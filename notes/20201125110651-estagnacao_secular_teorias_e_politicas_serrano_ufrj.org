@@ -1,6 +1,8 @@
 #+title: Estagnação Secular: Teorias e Políticas - Serrano (UFRJ)
 #+DATE: <2020-11-25 qua>
 #+ROAM_TAGS: AKB Financeirização "Distribuição pessoal da renda" "Estagnação secular" "Modelos de crescimento liderados pela demanda"
+#+ROAM_KEY: cite:serranoLongPeriodEffective1995
+#+ROAM_ALIAS: Estag_Serrano_AKB
 [[file:20201124202350-a_distribuicao_pessoal_da_renda_na_macroeconomia_liderada_pela_demanda_laura_carvalho_usp.org][A distribuição pessoal da renda na macroeconomia liderada pela demanda - Laura Carvalho (USP)]]
 * Keynes e as possibilidades econômicas para os nossos netos
 
@@ -43,3 +45,6 @@ Forte ambiguidade de investimento baixo por excesso potencial de capital em rela
 - Aumento dos lucros anormais e relação com diferencial de renda rural e urbana
 - q de Tobin (Bolsa) vira custo de oportunidade do capital
 - Financeirização tem mais relação com a distribuição do que com o investimento produtivo
+
+
+cite:serranoLongPeriodEffective1995
