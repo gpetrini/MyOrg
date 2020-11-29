@@ -1,0 +1,15 @@
+# ignore every file
+*.*
+
+# exceptions
+!.gitignore
+!README.md
+!*.md
+!*.py
+!*.org
+!*.tex
+!*.bib
+!*.sty
+!*.css
+!*.el
+
