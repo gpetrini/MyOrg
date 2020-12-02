@@ -1,7 +1,9 @@
-#+TITLE: Hofmann_2004: The determinants of bank credit in industrialized countries: do property prices matter?
-#+ROAM_KEY: cite:Hofmann_2004
+#+TITLE: hofmannDeterminantsBankCredit2004: The Determinants of Bank Credit in Industrialized Countries: Do Property Prices Matter?
+#+ROAM_KEY: cite:hofmannDeterminantsBankCredit2004
 #+ROAM_TAGS:
 Time-stamp: 2020-11-29
+- tags :: 
+
 
 * The determinants of bank credit in industrialized countries: do property prices matter?
   :PROPERTIES:
@@ -25,6 +27,11 @@ Time-stamp: 2020-11-29
 
 ** Backlinks
 
+
+
+*** Citations
+
+cite:arestisTreatingUSHousing2011
 
 * Specifics comments
 ** Main model
@@ -68,18 +75,5 @@ helps to uncover common dynamic relationships which might otherwise be obscured 
 
 
 
-#+TITLE: Title
-#+AUTHOR: Gabriel Petrini
-#+DATE: Date
-#+LANG: en
 
-* LaTeX headers                                         :noexport:ignore:
 
-* HTML headers                                         :noexport:ignore:
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/readtheorg/css/htmlize.css"/>
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/readtheorg/css/readtheorg.css"/>
-
-#+HTML_HEAD: <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-#+HTML_HEAD: <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-#+HTML_HEAD: <script type="text/javascript" src="http://www.pirilampo.org/styles/lib/js/jquery.stickytableheaders.min.js"></script>
-#+HTML_HEAD: <script type="text/javascript" src="http://www.pirilampo.org/styles/readtheorg/js/readtheorg.js"></script>
