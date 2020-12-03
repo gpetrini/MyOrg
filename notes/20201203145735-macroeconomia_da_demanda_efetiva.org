@@ -1,0 +1,157 @@
+#+OPTIONS: num:nil
+#+title: Macroeconomia da Demanda Efetiva
+#+AUTHOR: Gabriel Petrini
+#+DATE: 2º Semestre de 202
+#+LANG: pt_Br
+#+ROAM_TAGS: "Notas de Aula" "Demanda Efetiva" UFRJ
+
+
+* Introdução <2020-12-03 qui>
+
+** Conceitos
+
+- *Longo prazo:* Tempo para que o produto potencial não é dado
+  + Problema do investimento não é que é ao mesmo tempo e capacidade produtiva, mas sim que tem essas duas características em momentos diferentes
+
+** Princípio da demanda efetiva
+
+** Três grandes princípios e sínteses
+
+1. Excente
+2. Substituição (de fatores)
+3. Demanda Efetiva
+
+- *Síntese Neoclássica:* 2 + 3
+  - Saída via rigidezes de preços e salários
+  - Preços relativos expressão excasses relativa somente se parte do suposto do *pleno-emprego*
+  - Teoria do produto que não é compatível com pleno-emprego (Demanda Efetiva)
+- *Economia do Desenvolvimento:* 1 + 2
+  - Saída via escassez dos fatores de produção
+- *Projeto Sraffa-Garegnani:* 1 + 3
+
+   
+ 
+** Três elementos do esquema proposto
+
+1. Demanda efetiva no Longo Prazo
+   - Ajustamento da capacidade a tendência da demadna
+2. Taxa de juros monetária exógena
+   - Variável distributiva
+3. Tendência da inflação é de custos
+   - Conflito distributivo
+Análise do crescimento
+
+*** Demanda Efetiva a Longo Prazo
+
+    #+BEGIN_QUOTE
+Toda pessoa sem renda teria uma demanda absoluta por carruagens, mas não tem condições para pagar o quanto é cobrado por esse bem
+    #+END_QUOTE
+Demanda Efetiva e ajustamento da capacidade a tendência da demanda
+
+- Investimento produtivo privado é induzido pelo nível  e evolução da demanda 
+  + Mas continua sendo autônomo em relação ao fluxo circular da renda e curto prazo
+  + Empresa só investe um montante que adequa a capacidade à demanda efetiva esperada durante a vida útil do equipamento (é uma demanda derivada)
+  + Expectativa de demanda efetiva são revistas a partir da experiência 
+    - Princípio do ajuste do estoque de capital, acelerador flexível 
+  + Tendência de acumulação e crescimento depende do crescimento dos gastos autônomos que *não* criam capacidade para o setor produtivo privado
+
+
+- Papel central dos gastos autônomos que não criam capacidade
+
+*Hipótese:* Empresas adquirem capital fixo porque precisam utilizar
+- Não há dúvida dessa característica para o capital circulante (dura um único período produtivo)
+
+Essa discussão é importante para contextar a hipótese da austeridade uma vez que reduções na demanda efetiva a curto prazo possuem efeitos sobre o produto potencial no longo prazo.
+
+*** Abordagem da taxa de juros exógena 
+
+- Duas determinações monetarias da taxa de juros
+  + Keynes (Teoria Geral) oferta (exógena) e demanda por moeda
+    - Juros determinados pelo mercado
+  + Sraffa: moeda endógena (crédito)
+    - Taxa de juros de curto prazo fixada pela autoridade monetária
+    - Taxa longa de juros de longo prazo depende basicamente do "sentido do mercado" sobre a evolução futura fixada pelo Banco Central
+    - Bancos não são obrigados a emprestar a todos, mas apenas para quem acham que será rentável
+  + *Diferença:* Incerteza e especulação importam
+    - Mas são a respeito do comportamento do *Banco Central*
+    - Especulam sobre qual será a ação do Banco Central
+
+**** Implicações
+
+
+- Se o Banco Central tem uma meta para a taxa de juros nominal de curto prazo, compra e vende no mercado secundário *qualquer quantidade* de títulos públicos de curto prazo necessária para estabilziar o interbancário
+- Mesmo se a quantidade real de base desejada *diminui* o BaCen sempre que vende os títulos públicos necessários para a taxa de juros se manter
+- Protanto, o governo *nunca* quebra e pode sempre se financiar a taxa de juros definida pelo Banco Central
+- Nem o Banco Central nem o  Tesouro controlam os prazos dos títulos fora o usado para a política monetária. Também não controlam a composição entre títulos e base na carteira do setor privado. Também não controlam a demanda relativa por títulos pré e pós fixados nem a demanda por títulos indexados e são indexados a preço ou câmbio
+- As taxas de juros dos títulos longos seguem a tendência das taxas de juros de curto do Banco Central esperada pelo mercado
+- Esta taxa pode ser muito alta se o banco central quiser. Este financiamento *não* implica "monetização" nem em choque de inflação de demanda ou de custos (câmbio)
+- *Exceção parcial:* Euro
+  
+*Resumo:* Mercado não é capaz de forçar o governo a declarar default. Pressão do mercado é insuficiente.
+
+*** Tendência da inflação é de custos, causado por incompatibilidades distributivas
+
+- Nível geral de preços, inflação e aceleração da inflação
+  + Persistência: inércia, expectativas, conflitos
+    - Teoria estruturalista da inflação supunha uma queda dos salários e que os trabalhadores demandavam uma recomposição de compra e que isso geraria conflito distributivo
+      + Caso os trabalhadores aceitassem o salário real, encerraria a inflação
+- Inflação de demanda e de custos
+  + Inflação de demanda: demanda efetiva maior que o produto potencial
+  + Inflação de custos: aumento nominal dos preços de produção
+    - Uma expectativa de aumento de inflação no futuro em função de um possível aumento da demanda acima do produto potencial no futuro seria inflação de custo já que tal excesso não ocore no presente e houve aumento nos custos de produção
+
+** Alternativas ao Novo Consenso
+
+*** Novo Consenso
+
+- Produto potencial é dado por fatores de oferta
+- Tendência da Inflação é de demanda (NAIRU)
+- Regra de Taylor para taxa de juros (Taxa natural de juros)
+
+*** Macroeconomia da Demanda Efetiva
+
+- Produto potencial é afetado pela evolução da demanda (investimento induzido)
+- Inflação de custos por meio de conflito distributivo
+- Taxa de juros variável institucional e distributiva
+
+* Dois caminhos para a demanda efetiva <2020-12-03 qui> 
+
+** Demanda Efetiva e substituição de Fatores
+
+*** Substituição de fatores e tendência ao pleno-emprego
+
+- Muitos métodos alternativos com retornos constantes de escala
+- Relação inversa entre preço relativo (real) e uso do fator
+- Desemprego de um fator depende apenas do seu próprio preço relativo (rigidez real)
+  + Flexibilidade do salário real leva a pleno emprego do trabalho dado o estoque de capital
+  + Flexibilidade da taxa de juros de plena utilização da oferta de novo capital (poupança de pleno-emprego) dado o estoque de trabalho
+
+Se fosse uma economia de escambo, não haveria um problema de desequilíbrio de demanda e oferta agregada[fn::Oferta agregada como vontade coletiva de produzir e a demanda agregada como vontade coletiva de comprar produtos]. Em uma economia monetária, há uma separação entre o ato de produzir e de comprar. Como o pleno-emprego seria mantido em uma economia *não*-monetária?
+
+#+BEGIN_EXAMPLE
+$\Downarrow C \Rightarrow \Uparrow S^{\star} \Downarrow i \Rightarrow \Uparrow I^{\star}$
+#+END_EXAMPLE
+
+- É suposto que o investimento seja bastante sensível à taxa de juros
+*** Keynes e o equilíbrio abaixo do pleno emprego
+
+- Taxa de juros monetária e assimetria entre mercado de trabalho e mercado de capital novo (ou de produto)
+- "Primeiro postulado" no mercado de trabalho
+  + Empresas estão sempre na curva de demanda por trabalho e não na oferta de trabalho (?)
+    - Salários não são anti-cíclicos
+    - *Crítica:* Grau de utilização varia e adoção da hipótese de substuição dos fatores
+      + Dada a plena utilização do capital, como ampliar emprego?
+- Investimento e "Eficiência Marginal do Capital"
+- Keynes e  a Síntese Neoclássica (rigidez nominal)
+  + Keynes não aceitava o efeito Keynes
+    - Deflação aumenta a demanda agregada, mas isso não ocorreria: nada garante que o juro nominal siga na mesma direção que a taxa de juros real 
+  + Não há nenhum mecanismo monetário que faça que o investimento reaja a um desequilíbrio monetário entre investimento e poupança. Isso porque nunca existe um desequilíbrio *monetário* entre poupança e investimento ao partir do Princípio da Demanda Efetiva
+
+#+BEGIN_QUOTE
+Mantendo todos os demais pressupostos da teoria neoclássica, Keynes mostra que se a taxa de juros sair do valor de pleno-emprego, nada garante que voltará para lá. Isso porque não existe desequilíbrio entre investimento e poupança em termos nominais. Além de que o desemprego é resultado do mercado de produto e não do mercado de trabalho Além de que o desemprego é resultado do mercado de produto e não do mercado de trabalho.
+#+END_QUOTE
+
+Críticas a curva da oferta de trabalho em Keynes
+- Inclinação duvidosa
+- Posição estranha
+- Portanto não é utilizada
