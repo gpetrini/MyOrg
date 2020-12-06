@@ -1,5 +1,5 @@
 #+OPTIONS: num:nil
-#+title: Macroeconomia da Demanda Efetiva
+#+title: Macroeconomia da Demanda Efetiva na abordagem do excedente
 #+AUTHOR: Gabriel Petrini
 #+DATE: 2º Semestre de 202
 #+LANG: pt_Br
@@ -7,13 +7,63 @@
 
 
 * Introdução <2020-12-03 qui>
+** Apresentação
 
-** Conceitos
+*Objetivo:* Apresentar os elementos essenciais para a construção de um esquema analítico heterodoxo para a macroeconomia e análise de políticas econômicas em economias com governo e aberta em termos de comércio e fluxos de capital.
 
-- *Longo prazo:* Tempo para que o produto potencial não é dado
+O esquema proposto é baseado na retomada da abordagem clássica do excedente, proposta por Sraffa e Garegnani. Nele, o crescimento econômico é liderado pela demanda efetiva através do mecanismo do supermultiplicador, sujeito, a restrição de política econômica, com frequência a de balança de pagamentos.
+
+Já da dinâmica de inflação, cuja tendência é fundamentalmente explicável em termos de "inflação de custos", depende, por sua vez, dos termos de inércia e do conflito distributivo envolvendo salários, câmbio, juros e lucros. Taxas de juros e de câmbio são vistas como variáveis distributivas e não alocativas.
+
+Ao longo do curso, o esquema analítico proposto será comparado e contrastado com outras visões, tanto ortodoxas (Novo Consenso), quanto do pensamento heterodoxo (MMT).
+
+*** Conceitos
+
+- *Longo prazo:* Prazo no qual não é possível ignorar o efeito capacidade do investimento das empresas
   + Problema do investimento não é que é ao mesmo tempo e capacidade produtiva, mas sim que tem essas duas características em momentos diferentes
+  + Tempo para que o produto potencial não é dado
+** Três grandes princípios teóricos
+- Excedente
+- Substituição (de fatores)
+- Demanda efetiva
+**** Excedente VS Substituição de fatores
 
-** Princípio da demanda efetiva
+- Excedente (Economia política clássica e Marx)
+  + Remuneração dos proprietários tem limites teconológicos e sociais
+  + Concorrência $\Leftrightarrow$ mobilidade de capital
+    - Quanto maior a mobilidade, menor a dispersão das taxas de lucro
+      + Não estaria errada se a taxa de lucro for heterogênea, mas sim, se a taxa de lucro ter maior dispersão com aumento da mobilidade de capital
+- Substituição de fatores (direta e indireta)
+  + Neoclássicos ou marginalistas
+  + Oferta e demanda de fatores
+    - Preferência dos consumidores e donos dos fatores
+    - Tecnologia e conjunto de técnicas
+    - Dotações
+  + Concorrência $\Leftrightarrow$ número de agentes
+**** Duas abordagens da distribuição e dos preços relativos 
+***** Teorias neoclássicas dos preços e uso dos fatores
+- Simétricas (sempre o mesmo mecanismo)
+  + Uso do fator e seu preço são determinados *simultaneamente* pelos mecanismos de substituição
+- Escassez relativa dos fatores e produtividade marginal
+  + Tendência ao pleno emprego de todos os fatores com preço positivo
+
+***** Abordagem do excedente
+
+- Abundância de mão de obra
+- Teorias assimétricas
+  + Salário de subsistência
+  + Complementariedade
+- Separação entre remuneração e emprego dos vários "agentes de produção" 
+  + Não existe um mecanismo, por exemplo, que estabeleça uma relação entre salário e nível de emprego. Se o salário cair, por exemplo, nada garante que o imprego irá aumentar.
+**** Princípio da Demanda Efetiva
+
+- Produção limitada pela demanda efetiva agregada
+  + Efetiva no sentido de demanda rentável em termos monetários
+  + Poder de compra monetário aos preços que torna a produção lucrativa
+  + Não são os fatores de produção
+- Investimento determina a poupança (efetiva)
+- Taxa de juros *real* como fenômeno estritamente monetário
+  + E não se ajusta a uma taxa de juros natural
 
 ** Três grandes princípios e sínteses
 
@@ -21,16 +71,16 @@
 2. Substituição (de fatores)
 3. Demanda Efetiva
 
-- *Síntese Neoclássica:* 2 + 3
+- *Síntese Neoclássica:* 2 + 3 $\Rightarrow$ Contradição da economia ser limitada pela demanda e pela oferta
   - Saída via rigidezes de preços e salários
-  - Preços relativos expressão excasses relativa somente se parte do suposto do *pleno-emprego*
+  - Preços relativos expressão escassez relativa somente se parte do suposto do *pleno-emprego*
   - Teoria do produto que não é compatível com pleno-emprego (Demanda Efetiva)
 - *Economia do Desenvolvimento:* 1 + 2
   - Saída via escassez dos fatores de produção
 - *Projeto Sraffa-Garegnani:* 1 + 3
 
    
- 
+
 ** Três elementos do esquema proposto
 
 1. Demanda efetiva no Longo Prazo
