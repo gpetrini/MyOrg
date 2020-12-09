@@ -4,10 +4,7 @@
 #+LANG: pt_Br
 #+ROAM_TAGS: SFC-ABM ABM SFC "Macroeconomia Financeira" UFRJ "Notas de Aula"
 
-
-
-
-* Aula Introdutória <2020-12-02 qua>
+* Introdução ao curso <2020-12-02 qua>
 
 ** Introdução
 
@@ -20,3 +17,127 @@
 *** TODO [#B] Minsky (1977, 1992) 
 *** TODO [#A] Kindleberger (2005) (caps. 1 e 2) 
 *** TODO [#C] Ferri (2011) (caps. 2, 3)
+
+* Introdução: Contextualização e conceitos básicos <2020-12-09 qua> 
+** Objetivo
+
+- Apresentar premissar, questões e conceitos básicos, bem como delimitar o curso
+- Estrutura
+  + Premissas e conceitos básicos relacionados aos ciclos econômicos
+  + Alguns elementos e interpretações descritivas de crises financeiras
+  + Apresentação dos elementos da Hipótese da Instabilidade Financeira
+
+** Premissas e conceitos básicos
+- *Decisões locais, impactos sistêmicos:* sistema decentralizado de produção em economias mercantis. Desequilíbrio é a norma
+- *Moeda importa:* economias /monetárias/; a finalidade da produção é acumulação de capital (lucro como fim)
+- *Mundo permeado por incertezas fundamentais:* não se conhecem todas as distribuições de probabilidade relevantes
+- *Racionalidade limitada:* racionalidade local, parcial ou pelo menos agentes agindo de forma a atingir um ou mais objetivos
+- *Moeda fiduciária:* não há restrição física à quantidade de moeda que circula na economia
+- *Criação de moeda endógena:* maior parte da moeda em circularção é moeda bancária. Bancos comerciais criam moeda /ex nihilo/ via concessão de crédito
+- *Princípio da Demanda Efetiva:* a demanda é, na maior parte do tempo, a principal restrição à expansão da produção
+- *Heterogeneidade importa:* nada de agente representativo
+
+*** Ciclos econômicos: fases 
+
+Analiticamente, separa-se ciclos de tendência. Objetivo do curso é explicar as flutuações e não a tendência.
+
+Ascendente $\Rightarrow$ Pico $\Rightarrow$ Recessão $\Rightarrow$ Vale $\Rightarrow$ Ascendente $\Rightarrow \ldtos$
+
+*** Ciclos econômicos: impulso, propagação e amplificação
+
+- *Impulso:* eventos (em geral exógenos) que perturbam a atividade econômica
+- *Propagação:* mecanismos que contrabalanceiam e absorvem eventuais choques a que a economia tem sido submetida 
+- *Amplificação:* eventos ou mecanismos que magnificam um impulso inicial
+
+*** Explicações endógenas ou exógenas dos ciclos econômicos
+
+- *Exógenas:* Impulsos estocásticos à economia, o quais não podem ser previstos
+- *Endógenas:* Mecanismos internos ao sistema econômicos são responsáveis por gerar flutuações da atividade, tirando-a de uma trajetória de equilíbrio (ou não permitindo que ele seja atingido)
+*** Periodicidade do ciclo
+- Curtos (estoques) $\Rightarrow$ Ciclos de Kitichin
+- Investimento em máquinas e equipamentos $\Rightarrow$ Ciclos de Juglar (7-8 anos)
+- Investimento residencial $\Rightarrow$ Ciclos de Kuznets (cerca de 20 anos)
+- Ciclos tecnológicos $\Rightarrow$ Ondas de Kondratiev (cerca de 50 anos)
+*** Causas reais e/ou monetárias
+
+- Transações reais quase sempre tem contrapartida monetária
+  + Ambas as esferas estão, portanto, relacionadas
+    - Lado Financeiro tem transações que são puramente monetárias
+- Quais são os elementos geradores dos ciclos econômicos?
+  + Prevalece o lado real ou financeiro?
+  + Como identificar qual lado prevalece?
+- Os aspectos monetários financeiros funcionam como amplificador ou são a gênese dos ciclos (o lado real sendo amplificador)?
+- O fato é que qualquer teoria monetária do ciclo precisa explicar como o lado produtivo é afetado!
+  + As duas causas não precisam ser mutualmente excludentes
+
+
+*** Fechamentos, regras comportamentais e causalidades
+
+- *Regra comportamental:* estabelece relação entre variáveis, de caráter explicativo (causal)
+- *Fechamento:* Indica sentido da causalidade, sendo intrinsicamente ligado à teoria subjacente
+  + Uma mesma estrutura contábil é compatível com vários fechamentos dos modelos
+  + Um mesmo fechamento pode ser compatível com diferentes subconjuntos de regras comportamental
+
+** Crises financeiras
+*** Crises financeiras
+
+- As crises financeiras ocorrem quando parte dos ativos financeiros, de um ou mais mercados, perdem repentinamente uma grande parte do seu valor de mercado
+  + Geralmente relacionadas com elevado grau de alavancagem dos agentes
+- Geralmente (mas não necessariamente) coocorrem em fases em fases decencentes dos ciclos econômicos, embora nem todas contrações sejam acompanhadas por crises financeiras
+  + Nem sempre crise financeira implica recessão
+- Porém, depressões (contrações mais agudas da atividade econômica) geralmente são acompanhados de crises financeiras
+  + Fenômenos difíceis de estudar, pois são relativamente raros e idiossincráticos
+*** Elementos/mecanismos básicos 
+- Excesso de optimismo $\Rightarrow$ Expansão de crédito $\Rightarrow$ Inflação de ativos financeiros $\Rightarrow$ redução dos custos de capital $\Rightarrow$ mais investimento $\Rightarrow$ boom
+- Investimento não geram os lucros esperados $\Rightarrow$ Lucro como /turning point/ $\Rightarrow$ boom para burst
+- Investimento $\Rightarrow$ aumenta capacidade produtiva e produtividade $\Rightarrow$ preços se reduzem $\Rightarrow$ ciclos podem ocorrer sem inflação
+*** Tipos de crises financeiras
+- Crises inflacionárias
+- Cambial/crise da dívida externa (restrição externa)
+- Crise de dívida (privada ou pública)
+- Crise bancária
+*** Risco vs risco sistêmico
+
+- *Falácia de composição:* erro metodológico que consiste em generalizar para o todo elementos que são das unidades
+- *Riscos envolvidos em uma transação:* risco de contraparte, de crédito, de liquidez, de mercado, etc
+- *Riscos sistêmicos:* tendem a magnificar os riscos individuais por conta das externalidades, interconexões, interdependência, etc
+- $\therefore$ Risco individual ~!=~ Risco sistêmico
+*** Bolhas
+
+- Preços de ativos desviam fundamentalmente e sistematicamente dos "fundamentos"
+- São relativamente pouco frequentes e difíceis de identificar em um primeiro momento
+- Estouro de bolhas pode levar
+*** Alguns ingredientes comuns em crises financeiras 
+- Antes da crise eclodir
+  + Boom de crédito
+  + Euforia no mercado financeiro
+  + Mecanismo de preços/bolha em crises financeiras
+- Quando a crise eclode
+  + Contenção aguda da liquidez em muitos mercados financeiros
+  + Falência de bancos (crise bancária)
+  + Efeitos em cascata decorrentes das interconexões entre os agentes
+  + Coocorrência de crise cambial, crise de dívida, crise de inflação
+
+** Hipótese de Instabilidade Financeira 
+*** Teoria Minskiana e suas heranças
+
+- Minsky possui uma teoria do ciclo e da crise
+- Política econômica e teoria estão com frequência em sua obra
+  + Ênfase do curso em teoria
+- Investimento como /causa causans/ dos ciclos econômcios (em Keynes)
+- Teoria minskiana generaliza as implicações para o lado dos passivos
+  + Investimento precisa ser financiado, tendo implicações para o passivo das empresas *não-financeiras*
+  + O principal ponto do curso é que esse tipo de generalização é condição necessária, mas não suficiente, para explicar o papel do lado financeiro nos ciclos econômicos e nas crises
+
+**** Ciclos endógenos e o paradigma de Wall Street
+
+- Crises como fenômenos produzidos *endogenamente* pelo funcionamento regular das economias capitalistas
+  + O investimento determina o produto; as finanças determinam o investimento
+- *Paradigma de Wall Street:* mundo da dívida, do crédito, da avaliação da riqueza, da motivação financeira
+- *Importância do caráter intertemporal:* dinheiro hoje por promessas de pagamentos futuros
+
+**** Dinâmica dos balanços patrimoniais 
+- Teoria centrada na evolução dinâmica dos balanços patrimoniais
+  + Compromissos financeiros de hoje são provenientes da estrutura dos passivos herdados
+- Atividade econômica flutua porque o investimento flutua; investimento flutua porque as condições financeiras flutuam; a origem da instabilidade econômica seria, portanto, financeira
+
