@@ -166,12 +166,17 @@ Essa discussão é importante para contextar a hipótese da austeridade uma vez 
 
 * Dois caminhos para a demanda efetiva <2020-12-03 qui> 
 
-** Demanda Efetiva e substituição de Fatores
+** Demanda Efetiva e substituição de Fatores (via marginalismo)
 
 *** Substituição de fatores e tendência ao pleno-emprego
 
 - Muitos métodos alternativos com retornos constantes de escala
+  + Resultado de uma dedução teórica e não da validação empírica
 - Relação inversa entre preço relativo (real) e uso do fator
+  + Tais relações negativas são gerais
+    - Depende da hipótese do capital homogêneo
+      + Como se não houvesse preço relativo dado que o bem é um só
+    - Não é possível postular essa generalidade
 - Desemprego de um fator depende apenas do seu próprio preço relativo (rigidez real)
   + Flexibilidade do salário real leva a pleno emprego do trabalho dado o estoque de capital
   + Flexibilidade da taxa de juros de plena utilização da oferta de novo capital (poupança de pleno-emprego) dado o estoque de trabalho
@@ -183,6 +188,9 @@ $\Downarrow C \Rightarrow \Uparrow S^{\star} \Downarrow i \Rightarrow \Uparrow I
 #+END_EXAMPLE
 
 - É suposto que o investimento seja bastante sensível à taxa de juros
+
+Resumidamente, a tendência ao pleno-emprego depende tanto da substituição dos fatores quanto a flexibilidade do preço dos fatores. Keynes propõe um crítica em que um dos preços é juros (rígido).
+
 *** Keynes e o equilíbrio abaixo do pleno emprego
 
 - Taxa de juros monetária e assimetria entre mercado de trabalho e mercado de capital novo (ou de produto)
@@ -192,16 +200,101 @@ $\Downarrow C \Rightarrow \Uparrow S^{\star} \Downarrow i \Rightarrow \Uparrow I
     - *Crítica:* Grau de utilização varia e adoção da hipótese de substuição dos fatores
       + Dada a plena utilização do capital, como ampliar emprego?
 - Investimento e "Eficiência Marginal do Capital"
+  + Problema associado à taxa de juros decorre da relação inversa, geral e estável entre investimento e taxa de juros
+    - Tal relação não se verifica
 - Keynes e  a Síntese Neoclássica (rigidez nominal)
   + Keynes não aceitava o efeito Keynes
-    - Deflação aumenta a demanda agregada, mas isso não ocorreria: nada garante que o juro nominal siga na mesma direção que a taxa de juros real 
+    - Deflação aumenta a demanda agregada, mas isso não ocorreria: nada garante que o juro nominal siga na mesma direção que a taxa de juros real
+    - Salários monetários rígidos são necessários para economia se estabilizar (TG, Ch. 19)
   + Não há nenhum mecanismo monetário que faça que o investimento reaja a um desequilíbrio monetário entre investimento e poupança. Isso porque nunca existe um desequilíbrio *monetário* entre poupança e investimento ao partir do Princípio da Demanda Efetiva
+    - Não há porque a taxa de juros se ajustar a movimentos entre investimento e poupança
+      + Investimento é parte dos gastos e poupança é parte da renda
+  + Teoria dos fundos emprestáveis e teoria clássica da taxa de juros são similares
 
 #+BEGIN_QUOTE
 Mantendo todos os demais pressupostos da teoria neoclássica, Keynes mostra que se a taxa de juros sair do valor de pleno-emprego, nada garante que voltará para lá. Isso porque não existe desequilíbrio entre investimento e poupança em termos nominais. Além de que o desemprego é resultado do mercado de produto e não do mercado de trabalho Além de que o desemprego é resultado do mercado de produto e não do mercado de trabalho.
 #+END_QUOTE
+**** Problemas
+- Primeiro postulado no mercado de trabalho
+  + Função demanda por trabalho neoclássica
+    - *Inclinação:* Mesmo com capital homogêneo o salário real só tem que cair para o emprego aumentar quando o capital disponível esta plenamente utilizado
+      + Com Capital ocioso, não há retorno marginais decrescentes
+      + Com capital heterogêneo, nada garante que queda geral do salário real leve a escolha de uma técnica que aumente quantidade de trabalho direta e indiretamente necessariamente para produzir uma unidade de produto
+        - Crítica do Sraffa pelo lado da demanda
+    - *Posição:* Depende do tamanho da dotação de capital que é indeterminada com capital heterogêneo
+      + Crítica do Sraffa pelo lado da oferta
+- "Terceiro" postulado: função demanda por investimento neoclássica
+  + *Inclinação:* Mesmo com capital homogêneo a taxa real de juros só tem a cair para o investimento aumentar quando o trabalho esta plenamente empregado pois com Trabalho ocioso não há retorno marginais decrescentes
+    - Mesmo com Capital heterogêneo nada garante que a queda da taxa de juros o salário real leva a escolha de uma técnica que aumente a quantidade (ou valor?) de capital necessário para produzir uma unidade de produto
+  + *Posição:* Depende do tamanho da quantidade de trabalho realmente empregada
+  + Se juros acima da taxa de juros natural, investimento menor que poupança de pleno emprego. Mantida utilização ... (Ver Slides)
+- Kalecki já criticava Keynes
+  + Não leva em conta efeito capacidade do investimento
+  + Por conta do primeiro postulado e ideia empiricamente incorreta que o salário real é anticíclico
+    - Kalecki fugiu do primeiro postulado por meio de concorrência imperfeita
+      + Em trabalhos futuros abandonou essa estratégia para justificar a existência de /mark-up/
+  + Críticas Sraffianas atribuem tais problemas à visão marginalista de substituição dos fatores
 
-Críticas a curva da oferta de trabalho em Keynes
-- Inclinação duvidosa
-- Posição estranha
-- Portanto não é utilizada
+** Demanda Efetiva agregada e Excedente (Quesnay, Marx e Kalecki)
+
+*** Introdução
+
+- *Demanda efetiva setorial:* Produção de cada produto é determinada pela demanda aos preços que incluem um padrão mínimo de rentabilidade (/i.e./ demanda ao preço de produção/limite)
+  + Este mínimo fica acima da taxa de juros (custo financeiro e de oportunidade do capital)
+  + Empresas com custos inferiores ao da técnica dominante ("socialmente necessária") obtém rendas diferenciais
+- *Lei de Say:* No agregado, tudo que é produzido será vendido
+  + Poupança determina o inevstimento
+  + Não há relaçao inversa entre juros e investimento
+    - Há uma correlação positiva (aumento na taxa de juros leva a maior poupança potencial e investimento e também a maior taxa de juros)
+  + *Setor:* Demanda $\Rightarrow$ Produto $\Rightarrow$ Capital
+  + *Agregado:* Capital $\Rightarrow$ Capacidade $\Rightarrow$ Produto $\Rightarrow$ demanda agregada 
+    - Tratamento da decisão de investir e de poupar como sinônimos
+
+*** Marx e Quesnay e a crise de superprodução
+
+- Moeda e possibilidade de crise: "todos são obrigados a vender mas não a comprar"
+- As decisões de produzir introduzem poder de compra na economia que no agregado pode no máximo recuperar seus custos (salários).
+  + Qualquer nível positivo de atividade requer um gasto autônomo que comprem o excedente
+    - Seja investimento ou não
+    - "Os capitalistas ganham o que financiam"
+    - Autônomo em relação à decisão de produção $\Rightarrow$ injeção de poder de compra monetário
+    - Problema é estrutural $\Rightarrow$ superprodução
+      + Capitalistas querem reduzir custos (aumentar taxa de mais-valia), mas é necessário ter mais gasto autônomo coletivamente
+        - Excedente cada vez maior, mas o gasto autônomo coletivo não aumenta na mesma proporção
+      + Contradição entre produção e realização
+- *Setor:* Demanda $\Rightarrow$ produto $\Rightarrow$ Capacidade $\Rightarrow$ Capital
+- *Agregado:* Capital $\Rightarrow$ Capacidade $=$ produto $\neq$ demanda
+  + Nível de produto não determina demanda em uma economia capitalista
+  + Gasto autônomo pode ser qualquer nível
+
+Há, portanto, uma teoria do porquê de não valer a Lei de Say, mas não há uma teoria do produto
+
+*** Kalecki e o equilíbrio do produto com subutilização do capital 
+
+#+BEGIN_QUOTE
+Se trabalhadores gastam o que ganham, capitalistas ganham o que gastam
+#+END_QUOTE
+
+
+- *Setor:* Demanda $\Rightarrow$ produto $\Rightarrow$ Capacidade $\Rightarrow$ Capital
+- *Agregado:* Capital $\Rightarrow$ Capacidade $\neq$ produto $\Leftarrow$ Demanda  
+- Caráter dual do investimento: Ciclo e tendência
+  + *Agregado:* Capital $\Rightarrow$ Capacidade $\neq$ produto $\Leftarrow$ Consumo + Investimento 
+- Crescimento liderado pela demanda (Kalecki, Garegnani) $\Rightarrow$ ajustamento da capacidade à demanda
+  + *Setor:* Demanda $\Rightarrow$ produto $\Rightarrow$ Capacidade $\Rightarrow$ Capital
+  + *Agregado:* Tendência da Demanda $\Rightarrow$ produto $\Rightarrow$ Capacidade $\Rightarrow$ Capital
+
+*** Encaminhamentos
+
+- Abordagem do Excedente depende menos de fatores psicológicos
+  + Exemplo: como explicar crescimento em uma década com base em expectativas?
+- Tratar de movimentos estruturais
+- Não é somente uma teoria da negação, mas também é propositiva
+- Não é preciso supor que existe poder de compra autônomo equivalente ao produto potencial e que decidiu-se não gastá-lo
+  + Associação entre produto de pleno-emprego e montante de poder de compra equivalente para comprar esse produto
+  + Explicita problema da Demanda Efetiva em uma economia monetária
+  + A ordem não é o produto pontencial (físico) $\Rightarrow$ aumento poder de compra (monetário), mas sim o inverso
+#+BEGIN_QUOTE
+Se só existia $D$ na economia, de onde veio o $D'$? É preciso entender o fluxo circular da renda para compreender o nível agregado e não partir das hipóteses comportamentais. Deixe para a empiria mostrar as hipóteses comportamentais dado esse sistema estrutural. Não é necessário partir da teoria da preferência pela liquidez para se chegar à PDE. PDE não é um problema (/e.g./ teoria da crise), mas sim uma solução.
+#+END_QUOTE
+ 
