@@ -140,4 +140,167 @@ Ascendente $\Rightarrow$ Pico $\Rightarrow$ Recessão $\Rightarrow$ Vale $\Right
 - Teoria centrada na evolução dinâmica dos balanços patrimoniais
   + Compromissos financeiros de hoje são provenientes da estrutura dos passivos herdados
 - Atividade econômica flutua porque o investimento flutua; investimento flutua porque as condições financeiras flutuam; a origem da instabilidade econômica seria, portanto, financeira
+*** Dinâmica dos balanços patrimoniais
 
+- Compromissos de hoje são provenientes da estrutura dos passivos herdados que, por sua vez, transportam temporalmente as decisões passadas
+- Como se decide acumular ativos não financeiros por meio do investimento? Como será financiado?
+- Fluxo de caixa tem duplo propósito: financia o investimento e valida as dívidas pretéritas
+
+Atividade econômica flutua porque o investimento flutua; o investimento flutua VER SLIDES
+
+
+*OBS:* Saldo financeiro não pode incluir amortização da dívida
+*** Papel das expectativas
+
+Determinam as decisões de investimento, a oferta e a demanda de crédito:
+
+- Risco do emprestador: default
+- Risco do devedor: falência
+- Aporta-se um elemento de subjetividade à teoria
+
+
+*Problema essencial:* o investimento traz retornos incertos
+*** Elementos da demanda e determinação do lucro
+VER SLIDES
+- Determinação do lucro passa pelo investimento
+- Determinação do investimento depende do fluxo de caixa
+  + Ampliação do investimento de outras firmas amplia o fluxo de caixa no agregado $\Rightarrow$ falácia da composição
+*** Determinação do investimento
+VER SLIDES
+Papel das expectativas, da incerteza, da euforia e se manifestam por meio de aspectos financeiros. A teoria do investimento de Minksy é a de dois preços
+
+- Preço da demanda por investimento ($P_{K}$): preço que os empresários estão dispostos
+
+
+
+* Panorama das teorias: conexões reais-financeiras <2020-12-16 qua>
+
+** Conexões reais-financeiras nas teorias do ciclo
+
+- textcite:haberler_1946_Preliminary argumenta que a diferença entre as teorias é de *ênfase* dos mecanismos. Classificação:
+  + Teoria do ciclo monetário puro
+  + Teorias de sobreinvestimento
+    - Monetárias
+    - Não monetárias
+    - Derivadas da demanda (princípio da aceleração)
+  + Teorias de sobreendividamento e deflação
+  + Teorias de subconsumo
+  + Teorias psicológicas
+    - Otimismo, pessimismo, irracionalidade
+- Relações reais-financeiras tem uma tradição longa, mas possuem pouco protagonismo
+- São bidirecionais
+  + Choques gerados do lado real podem ser propagados pelos mecanismos financeiros, ampliando crises
+  + Os mercados financeiros podem ser fonte de choques, que se propagam para o lado real
+
+** Teoria do ciclo monetário puro cite:haberler_1946_purely
+
+A teoria começa a partir da definição de que
+
+$$
+MV = PY
+$$
+
+$$
+MV \Rightarrow PY
+$$
+*** Aumento na oferta de moeda nas expansões
+
+- *Premissa 1:* Moeda bancária constitui maior parte da moeda em circulação
+- *Premissa 2:* Concorrência bancária faz com que os bancos caminhem (quase simultaneamente) no mesmo sentido na expansão do crédito
+- Lado que contribui para a expansão da economia é o aumento da *oferta* de crédito
+- *Demanda* por crédito é induzida pela oferta
+  + Extensão dos prazos
+  + Menor rigor na seleção dos projetos/uso do dinheiro
+  + _Queda na taxa de juros_ (Principal fator)
+*** Aumento do crédito gera expansão da produção/demanda/renda
+
+- *Premissa 3:* Demanda exerce um papel indutor
+- Os grupos de agentes (comerciantes) muito sensiveis à taxa de juros são os principais tomadores de empréstimos
+*** Perpetuação da expansão do ciclo
+
+- Aumento da produção pressiona a capacidade produtiva, aumentando nível de preços
+  + Comerciaintes, que aumentam seus estoques, têm ganhos de capital e são estimulados a encomendar ainda mais, gerando um processo cumulativo de expansão
+    - Eventualmente, podem utilizar reservas para adquirir mais estoques, aumentando $V$
+*** Reversão da expansão
+- Limitações institucionais
+  + Na época, padrão-ouro
+- Haverá, de forma defasada em relação ao aumento de preços, elevação dos salários nominais
+  + Eleva demanda por moeda manual uma vez que são os comerciantes que demanda mais moeda bancária
+    - Reduzindo reservas bancárias $\Rightarrow$ redução da oferta de crédito (menor liquidez do setor bancário)
+  + Estabelece-se um processo cumulativo de sinal contrário, levando a economia a uma contração
+*** Quando cessa a reversão
+
+- Pagamento dos comerciantes vai reconstituindo as reservas
+- VER SLIDES
+
+** Completando a lista de textcite:claessens_2018_Frontiersa
+Na ortodoxoia, houve uma retomada do interesse nas finanças ao longo da década de 80
+- Bolhas racionais
+- Papel da moeda e dos bancos na economia
+- Mais recentemente, os modelos DSGE têm incluido imperfeições e fricções
+
+Não há menção à:
+- Godley e crips
+- Modelos SFC pós-Godley
+- Teoria pós-Keynesiana
+- Modelos AB financeiros
+
+** Teorias neoclássicas das relações entre lado real e financeiro
+
+textcite:claessens_2018_Frontiersa dividem em dois subgrupos
+
+- Teorias neoclássicas mais tradicionais: papel do *preço dos ativos* no consumo e investimento
+  + Mercados completos e com market clearing
+- Teorias com imperfeições financeiras e acrescentam mercados incompletos, que trazem outras implicações
+
+*** Preço dos ativos
+
+- Corresponde ao valor do fluxo de caixa esperado, trazidos a valor presente utilizando uma taxa de desconto
+  + Essa taxa de desconto incorporda diversos elementos
+    - Preferência dos indivíduos
+    - Riscos
+    - Fatores reais
+- Preço dos ativos atuam como *sinalizadores*, instruindo a alocação de recursos dos indivíduos e empresas
+  + Uma sinalização particularmente importante está relacionada ao fato de que os preços dos ativos incorporariam informações sobre a lucratividade e crescimento de renda futura
+- O preços dos ativos influenciam a demanda agregada por dois canais:
+  + Canal do Consumo: Efeito riqueza e/ou substituição via ganhos de capital, taxa de juros, Efeito-Pigou
+  + Canal do Investimento: custo de uso do capital (afetado pela taxa de juros real e pelo preço do capital), teorias do q de Tobin
+
+*Muito importante:* nesta visão, conexões reais-financeiras acontecem predominantemente via mecanismos de preço (incluindo taxa de juros)
+
+*** Imperfeições financeiras: mecanismos básicos
+
+- Tais "imperfeições financeiras" se originam nos problemas de assimetria de informação e de /enforcement/
+  + Pela assimetria de informação, os credores sabem menos sobre o retorno dos projetos de investimento que os demandandos por empréstimo
+  + Com isso surgem problemas de risco moral
+- A principal consequência é que os mercados se tornam incompletos: nem todos os projetos economicamente viáveis são financiados, podendo levar a racionamento de crédito
+  + Restrições ao gasto
+- Esses mecanismo operam pelo lado da *demanda* de crédito
+  + Diante desses problemas, os balanço dos agentes provêem informações relevantes para os emprestadores sobre a qualidade dos tomadores
+
+*** Modelos de acelerador financiro :ATTACH:
+:PROPERTIES:
+:ID:       bc1a1362-7866-43e4-be4d-27cea4057fd2
+:END:
+
+**** Lado da demanda
+
+[[attachment:_20201216_110832Captura de tela de 2020-12-16 11-05-29.png]]
+
+**** Lado da oferta :ATTACH:
+
+[[attachment:_20201216_110942Captura de tela de 2020-12-16 11-09-25.png]]
+
+*** Problemas do lado da oferta do sistema financeiro
+
+- São enfatizados os aspectos relacionados aos balanços das instituições financeiras
+  + Impactam /liquidez/ sistêmica e a disponibilidade de crédito para financiar o consumo e investimento
+- VER SLIDE
+- Três canais de influência da oferta nos ciclos e crises
+  + *Canal do crédito:* limitado aos bancos comerciais, afeta diretamente a quantidade e distribuição da liquidez no sistema econômico
+    - Um dos grandes responsávies pela transformação de maturidade
+    - Afeta a transmissão da política monetária
+  + *Capital bancário:* geralmente pró-cíclico, afeta a capacidade de /funding/ e a solvência das instituições, está sujeito à regulação, como por meio de índice mínimo de capital, e às flutuações no valor dos ativos/passivos bancário
+    - Exemplo: Em crises, a qualidade dos ativos bancários se deteriora, reduzindo a base de capital, afetando o poder de emprestar dos bancos
+  + *Alavancagem do sistema financeiro:* geralmente pró-cíclico
+    - Pode estimular bolhas e seu estouro
