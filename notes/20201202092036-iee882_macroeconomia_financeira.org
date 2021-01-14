@@ -304,3 +304,5 @@ textcite:claessens_2018_Frontiersa dividem em dois subgrupos
     - Exemplo: Em crises, a qualidade dos ativos bancários se deteriora, reduzindo a base de capital, afetando o poder de emprestar dos bancos
   + *Alavancagem do sistema financeiro:* geralmente pró-cíclico
     - Pode estimular bolhas e seu estouro
+
+* Panorama das regularidades empíricas: seminários <2021-01-06 qua>

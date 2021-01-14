@@ -298,3 +298,205 @@ Se trabalhadores gastam o que ganham, capitalistas ganham o que gastam
 Se só existia $D$ na economia, de onde veio o $D'$? É preciso entender o fluxo circular da renda para compreender o nível agregado e não partir das hipóteses comportamentais. Deixe para a empiria mostrar as hipóteses comportamentais dado esse sistema estrutural. Não é necessário partir da teoria da preferência pela liquidez para se chegar à PDE. PDE não é um problema (/e.g./ teoria da crise), mas sim uma solução.
 #+END_QUOTE
  
+
+* Produto, renda, gasto e investimento <2021-01-07 qui>
+
+** Ricardo e o "Princípio de Say"
+Produto $\Rightarrow$ Renda $\Rightarrow$ Gasto /agregado/
+
+Hipóteses:
+- Só se produz para comprar ou emprestar para alguém que vai comprar
+- Não há entesouramento
+  + Ninguém produz /um produto/ persistentemente se não há demanda efetiva para ele
+  + Opta-se por emprestar e ter rendimento por juros
+  + Poderia ocorrer um excesso parcial, mas não geral
+
+** Gasto e Renda
+
+Gasto agregado determina a renda
+
+#+BEGIN_EXPORT latex
+$$
+C + I = Y
+$$
+#+END_EXPORT
+substituindo o consumo, invertimento determina a poupança agregada
+
+#+BEGIN_EXPORT latex
+  $$
+  I = Y - C
+  $$
+#+END_EXPORT
+
+
+*** Exemplo
+
+- *Bens de capital:* $Y_{1} = I_{1} + I_{2}$
+- *Bens de consumo:* $Y_{2} = C_{1} + C_{2}$
+
+Gastos:
+
+#+BEGIN_EXPORT latex
+  $$
+C_{1} + C_{2} + I_{1} + I_{2} = Y_{1} + Y_{2}
+  $$
+
+  $$
+S = S_{1} + S_{2} = (Y_{1} - C_{1}) + (Y_{2} - C_{2}) = (I_{1} + I_{2} - C_{1}) + (C_{1} + C_{2} - C_{2}) = I
+  $$
+#+END_EXPORT
+
+*** Poupança e saldos financeiros
+
+$$
+Y = C + I + G_{c} + G_{i} = YD + T
+$$
+
+- Poupanças: $I + G_{i} = [(Y-T) - C] + [T - G_{c}]$
+- Saldos: $0 = ((Y-T) - (C+I)) + [T - (G_{i} + G_{c})]$
+
+*Importante:* Pouca informação pode ser tirada dessas agregações
+- Não permite fazer afirmações sobre fragilidade financeira
+  + Setor privado inclui famílias, bancos, firmas
+  + O mesmo vale para a discussão de financiamento
+
+** Financiamento do gasto
+
+*** Poder de compra monetário (MV)
+
+*** /Finance/ e /Funding/
+
+* Demanda efetiva, o Multiplicador e o investimento em capital circulante <2021-01-14 qui>
+
+** Demanda efetiva e produto
+
+Se a demanda efetiva (autônoma) for 100 e supondo:
+
+- Os custos são função da produção $Y$
+- Os lucros são resultados das *vendas*
+- Parcela dos lucros requerida $(1-\omega) = 0.5$
+
+Caso se produza 150 (mais que a demanda efetiva), os lucros realizados serão
+
+#+BEGIN_EXPORT latex
+  $$
+  P_e = D - \omega\cdot Y = 100 - .5\cdot 150 = 25
+  $$
+#+END_EXPORT
+
+Logo, a parcela dos lucros será
+
+#+BEGIN_EXPORT latex
+  $$
+\frac{P_{e}}{Y} = \frac{25}{150} = 0.1666 < 1-\omega = 0.5
+  $$
+#+END_EXPORT
+
+Caso se produza 80 (menos que a demanda efetiva)
+
+#+BEGIN_EXPORT latex
+  $$
+  P_e = D - \omega\cdot Y = 100 - .5\cdot 80 = 60
+  $$
+  $$
+\frac{P_{e}}{Y} = \frac{60}{80} = .75 < 1-\omega = 0.5
+  $$
+#+END_EXPORT
+
+No entanto, a concorrência entre capitais não permite que tal resultado seja sustentável.
+
+*** Conceitos
+
+- Preço de mercado e preço de produção (oferta)
+  + Demanda real é a demanda deflacionada pelos preços de mercado, a demanda efetiva é deflacionada pelos preços normais, ou seja, é a demanda lucrativa
+- Preços fixos ou flexíveis
+- Demanda real x Demanda efetiva
+  + Não necessariamente andam na mesma direção. Pode haver uma queda da demanda efetiva e aumento da demanda efetiva (liquidação de estoques e redução dos preços de mercado)
+  + Logo, demanda efetiva e demanda agregada não são sinônimos.
+    - Usualmente supõe-se que a demanda real determina a produção e, implicitamente, que os preços de mercado se ajustam rapidamente aos preços normais.
+    - Supõem-se, implicitamente, que as expectativas de curto prazo não estão exageradamente erradas.
+- Expectativas de curto prazo: Oferta = demanda efetiva esperada
+- Demanda efetiva determina o produto
+- Inflação de custos e de demanda
+
+** Gastos autônomos e induzidos
+
+#+BEGIN_EXPORT latex
+  $$
+  \text{Folha de sal} + \text{Lucros real.} = \text{Invest.} + \text{Consumo Aut.} + \text{Consumo induzido}
+  $$
+#+END_EXPORT
+
+Aumento da oferta, pagamento de rendas contratuais e consumo induzido dos salários. Induzidos pela *decisão de produção* das firmas.
+- Salários (custos) dependem da produção e não da demanda
+
+
+#+BEGIN_EXPORT latex
+  $$
+C_{w} = c_{w}\cdot\omega\cdot Y
+  $$
+#+END_EXPORT
+
+*Exemplo:*
+
+- $Y$ aumenta 100, $c_{w} = 0.8$, $\omega = 0.5$, $C_{w} = 40$
+
+$$50 + P = 40 \Rightarrow \frac{P}{Y} = -.1$$
+
+- Se $c_{w} = 1$ $\Rightarrow \frac{P}{Y} = 0$
+
+*Importante:* Gastos autônomos são necessários para qualquir nível positivo de produto seja lucrativo dada a *propensão marginal a gastar menor que 1*.
+- Supondo lucro efetivo como residual
+
+
+Supondo que existem gastos autônomos = 100
+
+
+- Se produzir 150, $D = 100 + .5\cdot 150 = 175$
+  + $P = 175 - .5\cdot 150$; $\frac{100}{150} = 0.66 > 1 - \omega$
+  + Sinalização de aumento da produção dada a existência de lucros anormais
+- Se produzir 250,
+  $$D = 100 + 125 = 225 \Rightarrow \frac{P}{Y} = 0.4$$
+
+Só existe um nível do produto que permite oferta igual à demanda e
+$$\frac{P}{Y} = 1 - \omega$$ fs
+
+#+BEGIN_EXPORT latex
+  $$
+D = Y, Y = \frac{100}{.5} = \frac{A}{1-\omega}
+  $$
+#+END_EXPORT
+
+
+Multiplicador como uma Lei de Say parcial? Não, pois quanto maior a propensão marginal a consumir, *maior* o impacto dos gastos autônomos (multiplicador)
+
+*** Multiplicador
+
+- Rendas contratuais e residuais
+- Kalecki e a distribuição funcional da renda
+- Keynes e a "Lei Psicológica Fundamental"
+  + Não é necessário fazer essa suposição. No capitalismo, a parcela dos salários na renda não será igual a unidade e, portanto, o consumo não será a totalidade da renda.
+- Gastos autônomos, induzidos e o multiplicador
+- Investimento e poupança
+  + *Memo:* Queda do consumo não aumenta a poupança agregada enquanto o investimento gera poupança
+  + Essa identidade vale sempre, não depende do equilíbrio macroeconômico
+    - Não precisa de um mecanismo de ajuste
+- Função consumo
+
+*** Função consumo
+
+- Consumo induzido pelo produto e pela renda (/ex/ transferências do governo)
+  + Transferências do governo, por exemplo, representam um consumo induzido pela renda e não pela produção, ou seja, não depende das decisões de produção. Logo, seria incluindo como autônomo do multiplicador que determinaria o equilíbrio da *produção*
+- Consumo induzido dos lucros
+  + Lucro passado ou esperado dado seu caráter *residual*, mas não é necessário induzir para elaborar o modelo.
+- Consumo autônomo (crédito ou redução dos ativos financeiros)
+  + Depende, por exemplo, da decisão do banco
+- Consumo dos juros da dívida pública
+- Consumo como função da riqueza?
+  + Propensão marginal a consumir no longo prazo se torna muito elevada. O que não for consumido agora será consumido em um período subsequente. A solução de longo prazo é uma tendência a propensão marginal a consumir igual a unidade. Além de que o consumo dos mais ricos será bastante superior a dos mais próximos.
+  + Como incluir a riqueza e bolha?
+  + Consumo de ganhos de capital? Isso como uma alternativa ao consumo como função da riqueza
+
+*OBS:* Apresentar em termos do equilíbrio da produção ajuda a explicar de onde vem o dinheiro em termos do fluxo circular da renda, ou seja, firmas conseguem acesso ao crédito. O restante é ingesão do poder de compra.
+
+*Pandemia:* Se a restrição fosse de oferta, haveria *excesso* de demanda no período subsequente. O que ocorreu foi a redução do consumo dos ricos que, diga-se, podem reduzir o consumo e o mesmo não vale para os não-ricos. Pode ter ocorreido também uma redução da propensão marginal a consumir a partir da renda contratual.

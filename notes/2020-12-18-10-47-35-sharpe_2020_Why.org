@@ -1,0 +1,34 @@
+#+TITLE: sharpe_2020_Why: Why Isn't Business Investment More Sensitive to Interest Rates? Evidence from Surveys
+#+ROAM_KEY: cite:sharpe_2020_Why
+Time-stamp: 2020-12-18
+- tags ::
+
+
+* Why Isn't Business Investment More Sensitive to Interest Rates? Evidence from Surveys
+  :PROPERTIES:
+  :Custom_ID: sharpe_2020_Why
+  :URL:
+  :AUTHOR:
+  :END:
+
+** FISH-5SS
+
+
+|---------------------------------------------+-----|
+| *Background*                                  |     |
+| *Supporting Ideas*                            |     |
+| *Purpose*                                     |     |
+| *Originality/value (Contribution)*            |     |
+| *Relevance*                                   |     |
+| *Design/methodology/approach*                 |     |
+| *Results*                                     |     |
+| *(Interesting) Findings*                      |     |
+| *Research limitations/implications (Critics)* |     |
+| *Uncategorized stuff*                         |     |
+| *5SS*                                         |     |
+|---------------------------------------------+-----|
+
+** Backlinks
+[[file:20201202092036-iee882_macroeconomia_financeira.org][IEE882 - Macroeconomia Financeira]]
+
+* Specifics comments

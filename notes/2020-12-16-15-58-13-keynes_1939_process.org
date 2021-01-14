@@ -14,19 +14,19 @@ Time-stamp: 2020-12-16
 ** FISH-5SS
 
 
-|---------------------------------------------+----------------------------------------------------------------------------|
-| *Background*                                  |                                                                            |
-| *Supporting Ideas*                            |                                                                            |
-| *Purpose*                                     | Provide a methodology and comparable statistics for savings and investment |
-| *Originality/value (Contribution)*            | Defines Capitual formation                                                 |
-| *Relevance*                                   |                                                                            |
-| *Design/methodology/approach*                 |                                                                            |
-| *Results*                                     |                                                                            |
-| *(Interesting) Findings*                      |                                                                            |
-| *Research limitations/implications (Critics)* |                                                                            |
-| *Uncategorized stuff*                         |                                                                            |
-| *5SS*                                         |                                                                            |
-|---------------------------------------------+----------------------------------------------------------------------------|
+|---------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| *Background*                                  |                                                                                                                                                                                                                                                              |
+| *Supporting Ideas*                            |                                                                                                                                                                                                                                                              |
+| *Purpose*                                     | Provide a methodology and comparable statistics for savings and investment                                                                                                                                                                                   |
+| *Originality/value (Contribution)*            | Defines Capital formation: constitutions of funds $\Rightarrow$ acquisition of capital goods $\Rightarrow$ gross investment. Next, defines capital goods: (i) equipaments; (ii) producers' material and (iii) durable equipament for consumers (/e.g./ houses) |
+| *Relevance*                                   |                                                                                                                                                                                                                                                              |
+| *Design/methodology/approach*                 |                                                                                                                                                                                                                                                              |
+| *Results*                                     |                                                                                                                                                                                                                                                              |
+| *(Interesting) Findings*                      |                                                                                                                                                                                                                                                              |
+| *Research limitations/implications (Critics)* |                                                                                                                                                                                                                                                              |
+| *Uncategorized stuff*                         |                                                                                                                                                                                                                                                              |
+| *5SS*                                         |                                                                                                                                                                                                                                                              |
+|---------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
 ** Backlinks
 [[file:20201203145735-macroeconomia_da_demanda_efetiva_na_abordagem_do_excedente.org][Macroeconomia da Demanda Efetiva na abordagem do excedente]]
