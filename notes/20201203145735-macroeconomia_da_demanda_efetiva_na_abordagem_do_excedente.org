@@ -366,7 +366,7 @@ $$
 
 *** /Finance/ e /Funding/
 
-* Demanda efetiva, o Multiplicador e o investimento em capital circulante <2021-01-14 qui>
+* Demanda efetiva, o Multiplicador e o investimento em capital circulante <2021-01-14 qui> e <2021-01-21 qui>
 
 ** Demanda efetiva e produto
 
@@ -500,3 +500,101 @@ Multiplicador como uma Lei de Say parcial? Não, pois quanto maior a propensão 
 *OBS:* Apresentar em termos do equilíbrio da produção ajuda a explicar de onde vem o dinheiro em termos do fluxo circular da renda, ou seja, firmas conseguem acesso ao crédito. O restante é ingesão do poder de compra.
 
 *Pandemia:* Se a restrição fosse de oferta, haveria *excesso* de demanda no período subsequente. O que ocorreu foi a redução do consumo dos ricos que, diga-se, podem reduzir o consumo e o mesmo não vale para os não-ricos. Pode ter ocorreido também uma redução da propensão marginal a consumir a partir da renda contratual.
+
+** Investimento em estoques
+
+- Ajuste ao equilíbrio de fluxos entre demanda e produto e desequilíbrio de estoques
+  + A crítica de Hicks ao multiplicador de Keynes só vale se há estoques excessivos
+    - Se não houver um efeito supermultiplicador explosivo, produto fica limitado pela oferta
+  + A análise de Keynes no capítulo 5 da TG: Investimento em estoques é induzido
+    - Porém, Keynes só trata do caso de um estado estacionário.
+    - No caso de crescimento, existe um supermultiplicador de capital circulante com investimento líquido positivo
+      + Mas ao contrário do que argumenta Hicks, não há motivo para a propensão marginal a gastar ser maior que um
+
+** Investimento em capital circulante
+
+_Capital Circulante:_ só pode ser utilizado em um único período de produção.
+- *Produzir:* Utilizar insumos (oferta)
+
+$$
+A, L \to X
+$$
+
+$$
+a_{11} = \frac{A}{X} \hspace{2cm} l = l_{1} = \frac{L}{X}
+$$
+
+
+- *Investir:* Comprar insumos (demanda)
+
+Suponha uma economia que só produz trigo, logo, só existe capital circulante.
+- *Viabilidade técnica:* $a_{11} < 1$
+  + Capaz de produzir mais produto do que requer como insumo
+- Seja $b_{1}$ o salário real, haverá excedente somente se
+
+$$
+a_{11} + l\cdot b_{1} < 1
+$$
+
+
+Seja $y$ a demanda final, temos o produto bruto como
+- *Equilíbrio:*
+$$
+X = y + a_{11}\cdot X = \frac{y}{(1-a_{11})}
+$$
+em que $a_{11}\cdot X$ é a reposição se insumos e
+
+- *Emprego total:*
+$$
+L = l\cdot X = l\cdot \frac{y}{1-a_{11}}
+$$
+- *Produtividade:* Produto /líquido/ por unidade de trabalho
+$$
+\frac{L}{y}
+$$
+- *Investimento em capital circulante:*
+  + Se economia estacionária, $g^{e} = 0$
+  + Insumo deve existir antes da produção e por isso é necessário que exista uma provisão ($g^{e}$)
+    - Não interessa se esta provisão esta certa ou errada, mas sim que existe e tem consequências
+$$
+I_{Kc} = a_{11}\cdot X + a_{11}\cdot (g^{e})
+$$
+
+- *Consumo dos trabalhadores:*
+$$
+Cw = cw\cdot b\cdot l \cdot X
+$$
+
+$$
+X  = \frac{Z}{(1 - a_{11}(1+g^{e}) - cw\cdot b\cdot l)}
+$$
+- Se o produto potencial é determinado pelo investimento, não existe nenhum limite do nível ao qual que a oferta se ajuste a demanda. No entanto,
+
+O denominador da expressão anterior é similar com a condição para que exista excedente de produção.
+
+** Investimento em capital fixo
+
+Em resumo, as conclusões do capital circulante se estendem para o capital fixo.
+Apesar de existirem outras explicações para o investimento, é preciso se atentar ao que é compatível ou não com a ideia de investimento induzido.
+
+*** Investimento e taxa de juros
+
+**** Neoclássicos (longo prazo)
+Investimento bruto é função do *nível* da taxa de juros mesmo quando ele é equivalente a taxa de lucro esperada e esta é igual a taxa de lucro realizada
+
+#+BEGIN_latex
+\begin{equation}
+I = a - b(i) \hspace{2cm} i = r = r^{e}
+\end{equation}
+#+END_latex
+***** Problemas
+- Inclinação: depende do efeito substituição entre capital e trabalho
+- Posição: depende de um montante de trabalho a ser empregado com o novo capital *dado*, senão não haverá retornos marginais decrescentes
+**** Heterodoxos (curto prazo)
+Investimento é função da diferença entre a taxa de lucro esperada e a taxa de juros
+
+#+BEGIN_latex
+\begin{equation}
+I = a - b(r^{e} - i) \hspace{2cm} \text{se } r^{e} = i \Rightarrow I = a
+\end{equation}
+#+END_latex

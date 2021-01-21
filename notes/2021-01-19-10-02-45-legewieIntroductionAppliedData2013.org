@@ -1,0 +1,32 @@
+#+TITLE: legewieIntroductionAppliedData2013: An Introduction to Applied Data Analysis with Qualitative Comparative Analysis
+#+ROAM_KEY: cite:legewieIntroductionAppliedData2013
+#+ROAM_TAGS: "Good Practices" Hands-on QCA
+Time-stamp: 2021-01-19
+
+
+* An Introduction to Applied Data Analysis with Qualitative Comparative Analysis
+  :PROPERTIES:
+  :Custom_ID: legewieIntroductionAppliedData2013
+  :END:
+
+** FISH-5SS
+
+
+|---------------------------------------------+--------------------------------------------------------------------------------------|
+| *Background*                                  |                                                                                      |
+| *Supporting Ideas*                            |                                                                                      |
+| *Purpose*                                     |                                                                                      |
+| *Originality/value (Contribution)*            |                                                                                      |
+| *Relevance*                                   |                                                                                      |
+| *Design/methodology/approach*                 |                                                                                      |
+| *Results*                                     |                                                                                      |
+| *(Interesting) Findings*                      |                                                                                      |
+| *Research limitations/implications (Critics)* |                                                                                      |
+| *Uncategorized stuff*                         | Includes some additional resources for QCA study and categorizes some contributions. |
+| *5SS*                                         |                                                                                      |
+|---------------------------------------------+--------------------------------------------------------------------------------------|
+
+** Backlinks
+
+
+* Specifics comments
