@@ -598,3 +598,9 @@ Investimento é função da diferença entre a taxa de lucro esperada e a taxa d
 I = a - b(r^{e} - i) \hspace{2cm} \text{se } r^{e} = i \Rightarrow I = a
 \end{equation}
 #+END_latex
+***** Críticas
+- Pasinetti e os projetos economicamente viáveis vs taxa básica de juros
+  + Restrita ao curto prazo
+- Juros e lucro andam na mesma direção
+  + Margens de lucro incorporam juros como custo financeiro e de oportunidade
+- Investimento induzido: Mesmo que o investimento  aumente, este aumento não vai se sustentar sem um aumento persistente da demanda efetiva agregada uma vez que cria capacidade ociosa não desejada

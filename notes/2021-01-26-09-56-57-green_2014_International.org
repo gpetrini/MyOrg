@@ -1,13 +1,15 @@
-#+TITLE: green_2014_Chapter: Chapter 9 - The Subprime Crisis
-#+ROAM_KEY: cite:green_2014_Chapter
+#+TITLE: green_2014_International: International Comparisons of Mortgages
+#+ROAM_KEY: cite:green_2014_International
 #+ROAM_TAGS:
-Time-stamp: 2021-01-25
-- tags :: financial crisis,House price forecasts,supply chain,underwriting
+Time-stamp: 2021-01-26
+- tags ::
 
 
-* Chapter 9 - The Subprime Crisis
+* International Comparisons of Mortgages
   :PROPERTIES:
-  :Custom_ID: green_2014_Chapter
+  :Custom_ID: green_2014_International
+  :URL:
+  :AUTHOR: [[file:/HDD/Org/notes/2021-01-25-16-58-36-green_2014_Chapter.org::*Backlinks][Backlinks]]
   :END:
 
 ** FISH-5SS
@@ -27,7 +29,15 @@ Time-stamp: 2021-01-25
 | *5SS*                                         |     |
 |---------------------------------------------+-----|
 
-** Backlink
+** Backlinks
 
 
 * Specifics comments
+
+* What's next?
+
+- textcite:lea_2010_International
+- textcite:badev_2014_Housing
+- textcite:lea_2010_Alternative
+- textcite:scanlon__DRAFT
+- textcite:diamondjr._1992_Qualitative
