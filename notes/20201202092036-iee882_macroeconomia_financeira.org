@@ -306,3 +306,189 @@ textcite:claessens_2018_Frontiersa dividem em dois subgrupos
     - Pode estimular bolhas e seu estouro
 
 * Panorama das regularidades empíricas: seminários <2021-01-06 qua>
+
+* Introdução à abordagem SFC <2021-01-27 qua>
+
+** Pontos Centrais
+
+- A abordagem SFC se trata de uma ferramenta analítica rigorosa e potencialmente poderoda por ser capaz de lidar com a intragração real e financeira
+- A característica mais (ver slides)
+- Compatível com diferentes /closures/
+
+** Definição e contextualização
+
+*** Definição de SFC
+
+Numa definição ampla, a abordagem SFC consistem na modelagem contabilmente rigorosa das dinâmicas dos balanços patrimoniais e de transações de todos os setores institucionais contidos em uma determinada economia (ou conjunto de economias).
+- Traços de teoria Kaldoriana
+
+*** Semelhanças com a escola de Yale
+
+Elementos da abordagem das /pitfalls/:
+- Precisão no tratamento do tempo
+- Rastreamento dos estoques
+- Muitos ativos e muitas taxas de retornos
+- Modela-se operações monetárias e financeiras
+- Respeitam-se restrições "walrasianas" e restrições de doma nas equações de portfólio
+
+** A contabilidade e os modelos SFC
+*** Lógica da abordagem
+
+Do ponto de vista mais geral, a abordagem SFC busca apreender implicações lógicas que derivam de características e/ou princípios econômicos e contábeis pouto controversos.
+- A ideia é que fazendo isso, poderia se monorar os problemas relacionados à imprecisão das estimativas de parâmetros estruturais do modelo
+  - A ideia é que fazendo isso, poderia se monorar os problemas relacionados à imprecisão das estimativas de parâmetros estruturais do modelo
+
+*** Princípios básicos
+
+- Toda transação tem uma contraparte
+- Partidas quádruplas
+  + Deriva da ideia de que toda transação possui duas pontas, cada qual com registros em partidas dobradas
+  + Considerando uma economia monetária, a maior parte dessas transações envolverá algum fluxo monetário/financeiro
+- Setores institucionais
+  + Agregam unidades econômicas com atributos/comportamento econômico similar
+  + Introduz alguma heterogeneidade de agentes. Caso contrário, as transações líquidas financeiras se anulam
+- Características institucionais de baixo nível
+  + Existe moeda e é aceita como meio de pagamento;
+  + Existem instrumentos para emprestar poder de compra
+
+*** Conta corrente vs Conta capital
+
+- *Conta corrente:* Registra as atividades de produção de bens e serviços, o processo de geração de renda e a distribuição de renda gerada
+- *Conta capital:* Ver slides
+*** Natriz de reavaliação
+
+A matriz de reavaliação está instrinsecamente ligada à caracterização do balanço patrimonial. Em /ativos financeiros/, macroeconomicamente, não há ganhos de capital sem perda de capital em algum lugar.
+- Valor de mercado é determinada pela transação da ponta
+- Se o imóvel valer mais, não há necessariamente em perda de capitais se não houver transações
+
+*** /Full integration matrix/
+
+A riqueza bruta e líquida de cada setor institucional estão fundamentalmente interconectadas e são integradas no tempo:
+
+Patrimômnio líquido inicial $\Rightarrow$ Acumulação de capital não financeiro, Poupança financeira e Ganhos de capital $\Rightarrow$ Patrimônio líquido final
+
+** Sintetizando: Integração real-financeira (ver slides)
+
+1. Contas-correntes $\Rightarrow$ Registram produção, renda, distribuição e alocação entre consumo e poupança
+2. Deduzindo-se da renda o consumo $\Rightarrow$ saldo final das contas correntes  = poupança
+3. Conta capital $\Rightarrow$ aquisição de ativos não financeiros é inferior ou superior à poupança? $\Rightarrow$ capacidade ou necessidade de financiamento
+4. Capacidade ou necessidade de financiamento conecta os lados "real" e financeiro da economia
+5. Conta financeira $\Rightarrow$ registra os empréstimos cedidos e tomados entre os diversos instrumentos financeiros
+6. Balanço patrimonial $\Rightarrow$ reflete os fluxos de investimento real e a aquisição de ativos/passivos financeiros (incluindo mudanças no valor dos ativos e dos passivos e aparecimento/desaparecimento de direitos/obrigações financeiras).
+
+** SFC, teoria e análise
+
+*** Da contabilidade às teorias
+
+- A formulação de um modelo SFC geralmente se inicia com a definição das matrizes de balanço e de transações
+  + A configuração da economia de que se trata depende do objeto de quem modela
+- Um passo posterior é estabelecer /reegras comportamentais/ e /closures/ para as variáveis do modelo
+  + Deve-se, calro, garantir sua coerência contábil
+    - Exemplo: as restrições orçamentárias devem ser válidas a cada período de tempo
+- Na abordagem SFC, é impossível ignorar o caráter monetário das economias contemporâneas
+  + Por outro lado, visões mais afeitas ao campo pós-keynesiano caracterizam a economia capitalista a partir da moeda, ainda que o grau de importância desse elemento seja nuançado
+    - Exemplo: noção de uma economia monetária da produção de Keynes e moeda endógena
+- A teoria keynesiana atribui papel importante à alocação de riqueza para os resultados econômicos
+  + Algumas interpretações enfatizam, por exemplo, que a decisão de alocação de riqueza influenciam decisivamente a demanda efetiva e, portanto, o nível de produto e de emprego
+    - A abordagem SFC permite lidar com estas questões de forma natural
+  + Os modelos mais canônicos ortodoxos praticamente não tratam da importância de estoques financeiros (com exceção talvez da dívida pública ou da quantidade de moeda)
+- Resultados não são isomórficos às decisões dos agentes que o geraram
+- Importância das interconexões setoriais como fator de restrição na economia
+  + O oposto do que ocorre com agentes representativos
+
+**** Mapeamento de ganhos/perdas de capita
+
+Ganhos de capital de um agente correspondem a perdas de capital de outros, o que não quer dizer que os ganhos de capital sejam economicamente neutros.
+- Exemplo: Na crise rencente da economia brasileira, houve perda de capital por parte das empresas, que estavam endividadas em dólar
+  + A contrapartida (ver slides)
+
+** Como fazer um modelo SFC
+*** Fazendo um modelo SFC
+
+1. Estabelecer estrutura contábil da economia: definição de setores institucionais, balanços patrimoniais, matriz de transações correntes e fluxos de fundos e reavaliação (ganhos de capital)
+2. Fizar um primeiro conjunto de relações comportamentais de cada setor institucional
+3. Estabelecer equações comportamentais para as transações não determinadas pela estrutura contábil da economia
+4. Resolver o modelo e analisar os resultados
+*** Estrutura básica
+
+1. Tempo
+2. Setores institucionais ($i$)
+3. Variáveis de estado dos setores institucionais
+4. Vetores de parâmetros macro
+5. Condições inciais
+6. Estrutura de interação
+7. Regras de decisão dos agentes
+8. Variáveis agregadas
+*** Solução do modelo
+Os modelos podem ser feitos tanto em tempo contínuo quanto discreto:
+
+1. Analítica: Mais robusta, mas menos frequente
+   a. Dificuldade: modelos devem ser de menor escala
+2. Numérica: Mais limitada, porém é adequada para modelo de qualquer tamanho
+3. Discursiva: pode ajudar a organizar a descrição de um fenômeno sem imposição de regras comportamentais
+**** Regras comportamentais típicas
+1. Determinação dos gastos: consumo e investimento
+2. Financiamento dos gastos e uso/fonte dos saldos
+3. Alocação de riqueza
+   a. Geralmente, segue-se o modelo de alocação de portfólio de Brainard-Tobin
+   b. Recentemente, Kemp-Benedict e Godin introduziram risco no esquema de alocação de portfólio de Tobin
+4. Oferta agregada
+5. Comportamento do sistema financeiro
+   a. Mesmo que o banco central não seja explicitamente modelado, a esmagadoria maioria dos modelos considera que o BC fixa a taxa de juros e que a quandidade de moeda-crédito é endógeno
+   b. Alguns modelos incluem racionamento de crédito por parte do sistema bancário
+
+** Fronteiras e limites
+
+- Nas especificações de como os mercados financeiros afetam o mercado de bens
+- Nas especificações de como operam o sistema financeiro, racionamento de crédito, etc
+
+No fundo, há potencialmente mauitas hipóteses comportamentais /ad hoc/ que deveriam ser mais bem justificadas do ponto de vista empírico/teórico, mas que perdem no emaranhado de equações dos modelos SFC
+
+*** Dependência de trajetória
+
+- O tempo realmente importa nos modelos SFC? para responder a essa pergunta, deve-se obervar se os modelos possuem dependência de trajetória
+  + Este não é o caso na maior parte dos modelos SFC
+- As soluções dos modelos geralmente é determinísticas: para um dado conjunto de parâmetros, o modelo converge para normas estoque-fluxo idênticas, mesmo com potenciais perturbações na trajetória
+
+Portanto, apesar de a trajetória ser contabilmente rigorosa, na maior parte dos usos atuais da ferramenta não se pode dizer, a rigor, que o tempo importa.
+
+*** Fluxos intra-setoriais
+
+Um problema intrínseco nos modelos SFC agregados é os dos fluxos intra-setoriais
+
+- Muitas transações financeiras ocorrem dentro de um mesmo setor institucional (por exemplo, mercado interbancário)
+- Ao tratar setores institucionais de forma agregada, deixa-se de lado problemas trazidos pela distribuição dos recursos e usos dentro daquele setor institucional
+
+Nem sempre isso será um problema, mas a resposta de muitas questões não podem prescindir da avaliação dessas distribuiçãões.
+**** Exemplo: Steindl (1952)
+
+Duas firmas, mesmo setor, mesma relação capital produto e mesma estrutura de custos. Suponha que ambas as firmas queiram inevstir o mesmo montante e que uma delas tem margem de lucro maior, de forma que os lucros retidos são maiores:
+
+|---------------+---------+---------+-------|
+|               | Firma 1 | Firma 2 | Total |
+| Investimento  |     -50 |     -50 |  -100 |
+| Lucro retido  |     +20 |     +80 |  +100 |
+|---------------+---------+---------+-------|
+| Saldo líquido |     -30 |     +30 |     0 |
+|---------------+---------+---------+-------|
+|               |         |         |       |
+
+** Resumo
+
+Arquitetura excelente para estudar conexões reais-finaceiras, mas para estudar o lado financeiro é importante desagregar
+
+Vantagens:
+- Pressupõe a importância das finanças
+- Pressupõe que os setores institucionais são interrelacionados
+- Permite abordar as interações reais-financeiras
+- É contabilmente rigoroso, ajudando a prevenir erros de lógica
+- Impões restrições lógicas
+- Permite estudar uma variedade enorme de tópicos
+- Possui caráter fortemente contábil, mas nem por isso é agnóstico do ponto de vista teórico
+Desvantagens:
+- É passível de muita /ad hocery/
+- Impede adequada análise de heterogeneidades emergentes dentre dos setores institucionais
+- Não permite tratar de fluxos intersetoriais
+- O equilíbrio do modelo não implica que todos os agentes estão em equilíbrio
+- Negligencia o papel da formação de redes
+- São excessivamente determinísticos e não permitem geração de crises financeiras sem mecanismo(s) /ad hoc/
