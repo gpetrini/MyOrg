@@ -312,7 +312,7 @@ textcite:claessens_2018_Frontiersa dividem em dois subgrupos
 ** Pontos Centrais
 
 - A abordagem SFC se trata de uma ferramenta analítica rigorosa e potencialmente poderoda por ser capaz de lidar com a intragração real e financeira
-- A característica mais (ver slides)
+- A característica mais importante da abordagem é uma caracterização mais completa do sistema econômico, com foco particular nos aspectos monetários e financeiros que permeiam a vida econômica.
 - Compatível com diferentes /closures/
 
 ** Definição e contextualização
@@ -354,7 +354,7 @@ Do ponto de vista mais geral, a abordagem SFC busca apreender implicações lóg
 *** Conta corrente vs Conta capital
 
 - *Conta corrente:* Registra as atividades de produção de bens e serviços, o processo de geração de renda e a distribuição de renda gerada
-- *Conta capital:* Ver slides
+- *Conta capital:* mostra como a poupança bruta da economia financia a formação bruta de capital fixo e a formação de estoques (aquisição de ativos não financeiros).
 *** Natriz de reavaliação
 
 A matriz de reavaliação está instrinsecamente ligada à caracterização do balanço patrimonial. Em /ativos financeiros/, macroeconomicamente, não há ganhos de capital sem perda de capital em algum lugar.
@@ -367,7 +367,7 @@ A riqueza bruta e líquida de cada setor institucional estão fundamentalmente i
 
 Patrimômnio líquido inicial $\Rightarrow$ Acumulação de capital não financeiro, Poupança financeira e Ganhos de capital $\Rightarrow$ Patrimônio líquido final
 
-** Sintetizando: Integração real-financeira (ver slides)
+** Sintetizando: Integração real-financeira
 
 1. Contas-correntes $\Rightarrow$ Registram produção, renda, distribuição e alocação entre consumo e poupança
 2. Deduzindo-se da renda o consumo $\Rightarrow$ saldo final das contas correntes  = poupança
@@ -400,7 +400,8 @@ Patrimômnio líquido inicial $\Rightarrow$ Acumulação de capital não finance
 
 Ganhos de capital de um agente correspondem a perdas de capital de outros, o que não quer dizer que os ganhos de capital sejam economicamente neutros.
 - Exemplo: Na crise rencente da economia brasileira, houve perda de capital por parte das empresas, que estavam endividadas em dólar
-  + A contrapartida (ver slides)
+  + A contrapartida foi o ganho de capital (em reais), dos credores dessas firmas.
+    - Houve perda líquida para a economia brasileira (menor velocidade de digestão da alta alavancagem das firmas) e talvez até para os credores (maior risco default).
 
 ** Como fazer um modelo SFC
 *** Fazendo um modelo SFC
@@ -464,14 +465,15 @@ Nem sempre isso será um problema, mas a resposta de muitas questões não podem
 
 Duas firmas, mesmo setor, mesma relação capital produto e mesma estrutura de custos. Suponha que ambas as firmas queiram inevstir o mesmo montante e que uma delas tem margem de lucro maior, de forma que os lucros retidos são maiores:
 
-|---------------+---------+---------+-------|
-|               | Firma 1 | Firma 2 | Total |
-| Investimento  |     -50 |     -50 |  -100 |
-| Lucro retido  |     +20 |     +80 |  +100 |
-|---------------+---------+---------+-------|
-| Saldo líquido |     -30 |     +30 |     0 |
-|---------------+---------+---------+-------|
-|               |         |         |       |
+|----------------------------------------+---------+---------+-------|
+|                                        | Firma 1 | Firma 2 | Total |
+|----------------------------------------+---------+---------+-------|
+| Investimento                           |     -50 |     -50 |  -100 |
+| Lucro retido                           |     +20 |     +80 |  +100 |
+| Necessidade de financiamento           |     +30 |     -30 |     0 |
+|----------------------------------------+---------+---------+-------|
+| Variação líquida de ativos financeiros |     -30 |     +30 |     0 |
+|----------------------------------------+---------+---------+-------|
 
 ** Resumo
 

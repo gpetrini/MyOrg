@@ -1,0 +1,180 @@
+#+OPTIONS: num:nil
+#+TITLE: Weekly Planner
+#+AUTHOR: Gabriel Petrini
+#+startup: shrink
+
+* Properties :noexport:
+* HTML headers                                         :noexport:ignore:
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/readtheorg/css/htmlize.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/readtheorg/css/readtheorg.css"/>
+
+#+HTML_HEAD: <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+#+HTML_HEAD: <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="http://www.pirilampo.org/styles/lib/js/jquery.stickytableheaders.min.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="http://www.pirilampo.org/styles/readtheorg/js/readtheorg.js"></script>
+
+* Codes
+
+#+begin_src elisp :exports code
+(defun org-archive-done-tasks ()
+  (interactive)
+  (org-map-entries
+   (lambda ()
+     (org-archive-subtree)
+     (setq org-map-continue-from (org-element-property :begin (org-element-at-point))))
+   "/DONE" 'tree))
+#+end_src
+
+#+RESULTS:
+
+* Atemporais
+#+BEGIN: columnview :maxlevel 5 :id local :hlines 2 :indent t
+| ITEM                                             | TODO | PRIORITY | TAGS       |
+|--------------------------------------------------+------+----------+------------|
+| Atemporais                                       |      | B        |            |
+|--------------------------------------------------+------+----------+------------|
+| \_  Pessoal                                      | TODO | B        | :noexport: |
+|--------------------------------------------------+------+----------+------------|
+| \_  Casa                                         | TODO | B        | :noexport: |
+| \_    Comprar limpa fogão                        | TODO | B        |            |
+| \_    Trocar forro fogão                         | TODO | B        |            |
+|--------------------------------------------------+------+----------+------------|
+| \_  Computador                                   | TODO | B        | :noexport: |
+| \_    Converter anotações para Org-roam          | TODO | C        |            |
+| \_    Corrigir senhas                            | TODO | C        |            |
+| \_    Emacs pt-Br                                | TODO | C        |            |
+|--------------------------------------------------+------+----------+------------|
+| \_  UFRJ                                         | TODO | B        | :noexport: |
+| \_    Notas slides aula Ítalo <2021-01-27 qua>   | TODO | C        |            |
+| \_    Notas slides aula Serrano <2021-01-22 sex> | TODO | C        |            |
+|--------------------------------------------------+------+----------+------------|
+| \_  PED                                          | TODO | B        | :noexport: |
+| \_    Ver resultado PED 1S2021                   | TODO | C        |            |
+|--------------------------------------------------+------+----------+------------|
+| \_  Tese                                         | TODO | B        | :noexport: |
+| \_    Checar se tese esta em A4                  | TODO | A        |            |
+|--------------------------------------------------+------+----------+------------|
+| \_  QCA                                          | TODO | B        | :noexport: |
+|--------------------------------------------------+------+----------+------------|
+| \_  Fapesp                                       | TODO | B        | :noexport: |
+|--------------------------------------------------+------+----------+------------|
+| \_  Cecon                                        | TODO | B        | :noexport: |
+| \_    Comprovante ADUNICAMP (RPPS)               | TODO | A        |            |
+|--------------------------------------------------+------+----------+------------|
+| \_  Orientações                                  | TODO | B        | :noexport: |
+| \_    Lorena                                     | TODO | B        |            |
+| \_      Criar repositório github                 | TODO | B        |            |
+| \_    Felipe                                     | TODO | B        |            |
+| \_      Responder mensagem sobre nota do projeto | TODO | B        |            |
+#+END
+
+** TODO Pessoal [0/0] :noexport:
+
+** TODO Casa [0/2] :noexport:
+
+*** TODO Comprar limpa fogão
+
+*** TODO Trocar forro fogão
+
+** TODO Computador [0/3] :noexport:
+
+*** TODO [#C] Converter anotações para Org-roam
+
+*** TODO [#C] Corrigir senhas [0/3]
+- [ ] Celular
+- [ ] Computador
+- [ ] Github
+
+*** TODO [#C] Emacs pt-Br
+
+** TODO UFRJ [0/2] :noexport:
+
+*** TODO [#C] Notas slides aula Ítalo <2021-01-27 qua>
+
+*** TODO [#C] Notas slides aula Serrano <2021-01-22 sex>
+
+** TODO PED [0/1] :noexport:
+
+*** TODO [#C] Ver resultado PED 1S2021
+
+
+** TODO Tese [0/1] :noexport:
+
+*** TODO [#A] Checar se tese esta em A4
+
+** TODO QCA [0/0] :noexport:
+
+** TODO Fapesp [0/0] :noexport:
+
+** TODO Cecon [0/1] :noexport:
+
+*** TODO [#A] Comprovante ADUNICAMP (RPPS)
+
+** TODO Orientações [0/3] :noexport:
+
+*** TODO Lorena [0/1]
+
+**** TODO Criar repositório github
+
+*** TODO Felipe [0/1]
+
+**** TODO Responder mensagem sobre nota do projeto
+
+* Currnt Week <2021-02-01 seg> - <2021-02-07 dom>
+#+BEGIN: columnview :maxlevel 4 :id local :hlines 2 :indent t
+| ITEM                                            | TODO | PRIORITY | TAGS       |
+|-------------------------------------------------+------+----------+------------|
+| Currnt Week <2021-02-01 seg> - <2021-02-07 dom> |      | B        |            |
+|-------------------------------------------------+------+----------+------------|
+| \_  Pessoal                                     | TODO | B        | :noexport: |
+| \_    Psicóloca                                 | TODO | B        |            |
+|-------------------------------------------------+------+----------+------------|
+| \_  Casa                                        | TODO | B        | :noexport: |
+| \_    Faxina                                    | TODO | B        |            |
+| \_    Tirar Lixo                                | TODO | B        |            |
+|-------------------------------------------------+------+----------+------------|
+| \_  Computador                                  | TODO | B        | :noexport: |
+|-------------------------------------------------+------+----------+------------|
+| \_  UFRJ                                        | TODO | B        | :noexport: |
+| \_    IEE 822                                   | TODO | B        |            |
+| \_      Ler cite:pyka_2005_AgentBased           | TODO | B        |            |
+| \_      Ler cite:delligatti_2010_Complex        | TODO | C        |            |
+| \_      Ler cite:farmer_2009_economy            | TODO | C        |            |
+|-------------------------------------------------+------+----------+------------|
+| \_  PED                                         | TODO | B        | :noexport: |
+|-------------------------------------------------+------+----------+------------|
+| \_  Tese                                        | TODO | B        | :noexport: |
+|-------------------------------------------------+------+----------+------------|
+| \_  QCA                                         | TODO | B        | :noexport: |
+|-------------------------------------------------+------+----------+------------|
+| \_  Fapesp                                      | TODO | B        | :noexport: |
+|-------------------------------------------------+------+----------+------------|
+| \_  Cecon                                       | TODO | B        | :noexport: |
+#+END:
+** TODO Pessoal [0/1] :noexport:
+*** TODO [#B] Psicóloca
+** TODO Casa [0/2] :noexport:
+*** TODO Faxina [0/2]
+- [ ] <2021-02-01 seg>
+- [ ] <2021-02-05 sex>
+*** TODO Tirar Lixo [0/3]
+- [ ] <2021-02-01 seg>
+- [ ] <2021-02-03 qua>
+- [ ] <2021-02-05 sex>
+
+** TODO Computador [0/0] :noexport:
+
+** TODO UFRJ [0/1] :noexport:
+*** TODO IEE 822 [0/3]
+**** TODO [#B] Ler cite:pyka_2005_AgentBased
+**** TODO [#C] Ler cite:delligatti_2010_Complex
+**** TODO [#C] Ler cite:farmer_2009_economy
+** TODO PED [0/0] :noexport:
+
+** TODO Tese [0/0] :noexport:
+
+** TODO QCA [0/0] :noexport:
+
+** TODO Fapesp [0/0] :noexport:
+
+** TODO Cecon [0/0] :noexport:

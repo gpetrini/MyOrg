@@ -366,7 +366,7 @@ $$
 
 *** /Finance/ e /Funding/
 
-* Demanda efetiva, o Multiplicador e o investimento em capital circulante <2021-01-14 qui> e <2021-01-21 qui>
+* Demanda efetiva, o Multiplicador e o investimento em capital circulante <2021-01-14 qui>
 
 ** Demanda efetiva e produto
 
@@ -572,14 +572,20 @@ $$
 
 O denominador da expressão anterior é similar com a condição para que exista excedente de produção.
 
-** Investimento em capital fixo
+*** Investimento em capital fixo
 
 Em resumo, as conclusões do capital circulante se estendem para o capital fixo.
 Apesar de existirem outras explicações para o investimento, é preciso se atentar ao que é compatível ou não com a ideia de investimento induzido.
 
-*** Investimento e taxa de juros
+*Investimento nas teorias heterodoxas:*
+- Taxa de juros, financiamento
+- Taxa de lucro
+- Progresso técnico
+- Investimento induzido
 
-**** Neoclássicos (longo prazo)
+* Investimento e taxa de juros <2021-01-28 qui>
+
+** Neoclássicos (longo prazo)
 Investimento bruto é função do *nível* da taxa de juros mesmo quando ele é equivalente a taxa de lucro esperada e esta é igual a taxa de lucro realizada
 
 #+BEGIN_latex
@@ -590,11 +596,11 @@ I = a - b(i) \hspace{2cm} i = r = r^{e}
 ***** Problemas
 - Inclinação: depende do efeito substituição entre capital e trabalho
 - Posição: depende de um montante de trabalho a ser empregado com o novo capital *dado*, senão não haverá retornos marginais decrescentes
-**** Heterodoxos (curto prazo)
+** Heterodoxos (curto prazo)
 Investimento é função da diferença entre a taxa de lucro esperada e a taxa de juros
 
 #+BEGIN_latex
-\begin{equation}
+\begin{equation }
 I = a - b(r^{e} - i) \hspace{2cm} \text{se } r^{e} = i \Rightarrow I = a
 \end{equation}
 #+END_latex
@@ -604,3 +610,162 @@ I = a - b(r^{e} - i) \hspace{2cm} \text{se } r^{e} = i \Rightarrow I = a
 - Juros e lucro andam na mesma direção
   + Margens de lucro incorporam juros como custo financeiro e de oportunidade
 - Investimento induzido: Mesmo que o investimento  aumente, este aumento não vai se sustentar sem um aumento persistente da demanda efetiva agregada uma vez que cria capacidade ociosa não desejada
+  + _OBS:_ ao longo da vida útil do equipamento
+  + Taxa de juros é uma condição *necessária* mas não suficiente para determinar o investimento. Montante é determinado pela demanda esperada.
+    - Se $r > i$, a demanda rentável não é efetiva
+    - Juros é uma restrição e não uma condição. Se não for atendida, não haverá investimento mas não o determino
+***** Crítica dicional mais geral válida também no curto prazo
+Determinação da taxa de lucro esperada
+$r^{e} = $ ((preço - custo)X(demanda))/(estoque de capital)
+
+Destes componentes, a margem e a demanda são esperadas enquanto o estoque de capital é objeto de decisão
+- Abaixo de uma margem mínima aceitável (taxa de juros equivalente) o investimento é zero
+- Acima da margem mínima aceitável nunca faz sentido investir mais que o necessário para atender a demanda esperada
+  + Qualquer aumento da demanda esperada aumento o estoque de capital esperado. O investimento induzido não depende genericamente da demanda e sim da *demanda efetiva rentável*
+  + Nenhum aumento de margem aumenta o estoque de capital desejado
+
+*Conclusão:* Investimento é uma função
+
+#+BEGIN_latex
+\begin{equation}
+\begin{cases}
+r^{e} > i \Rightarrow I = f(Y^{e}, K)\\
+r^{e} < i \Rightarrow 0
+\end{cases}
+\end{equation}
+#+END_latex
+Efeito de margem ou de juros é nulo ou muito assimétrico
+***** Formas alternativas em Keynes
+- Relacionar o investimento com a diferença entre a taxa de lucro esperada ($r^{e}$) e a taxa de juros básica ($i$)
+
+#+BEGIN_latex
+\begin{equation}
+r^{e} = \frac{Q^{t+1}}{P_{K}}
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+I = f(r^{e} - i)
+\end{equation}
+#+END_latex
+
+- Relacionar o investimento com a relação entre o preço de oferta e o preço de demanda dos bens de capital
+  + Investimento ocorre até o ponto em que o preço dos bens de capital e o preço de demanda se igualam
+  + Preço de oferta dos bens de capital = Custo de produção X (1 + /mark-up/)
+  + Preço de demanda dos bens de capital = massa de lucro esperada ou quase rendas ($Q^{e}/(1+i)$)
+  + No curto prazo, preço de oferta aumenta; retornos decrescentes da produção de bens de capital
+    - Eficiência marginal decrescentes e substituição entre fatores de produção
+  + No longo prazo, com aumento do estoque de capital, as quase-rendas caem porque existe capital em excesso em relação a força de trabalho plenamente empregada
+    - É argumentado que é a população aumenta o mercado, no entanto, não basta força de trabalho se não houver renda
+    - *Ambiguidade:* Estoque de capital não pode ser escasso em relação à demanda *e* à força de trabalho *ao mesmo tempo*
+***** Minsky
+
+Minsky opta pela segunda forma de apresentação e enfatiza as questões relativas a estrutura financeira na decisão de investimento
+
+- $P_{d} = Q_{t+1}/[(1+i)\cdot (1+\text{risco do tomador})]$
+- $P_{s} =P_{k}\cdot (1+\text{risco do emprestador})$
+
+Soma isso com a hipótese de riscos crescentes com financiamento externo à firma.
+Pode-se colocar essa expressão em termos de taxa de retorno esperada líquida de risco versus taxa de juros mais risco do emprestador (Kalecki)
+
+#+BEGIN_latex
+\begin{equation}
+r^{e} = \frac{\frac{Q_{t+1}}1+\text{Risco do Tomador}{}}{P_{k}} v.s. i + \text{Risco emprestador}
+\end{equation}
+#+END_latex
+
+[[../figs/iee898_minsky_Serrano.png]]
+****** Críticas
+*Endividamento:* Endividamento deveria ser em termos do estoque de capital e não investimento (fluxo).
+Só são equivalentes se no período anterior a firma já estava no limite de endividamento.
+Logo, em Minsky não pode ser restrição financeira e sim *determinante* (utilizam todo o endividamento que podem).
+******* Minsky e Tobin
+$P_{d}/P_{k}$ é o *q* de Tobin.
+Diferenças:
+
+- Keynes e Minsky: Incerteza fundamental
+- Tobin: Agentes racionais
+
+Em Tobin, coerentemente, $q>1$ determina se $K$ vai aumentar e não se $I$ vai aumentar.
+Em Keynes e Minsky, há uma confusão entre Eficiência Marginal do Capital (EMgK) e Eficiência Marginal do Investimento (EMgI)
+******* Keynes de Minsky
+******* Taxa de juros
+
+Preço de demanda é uma função de reta do estoque de moeda por conta do juros ser uma função inversa do estoque de meoda. Moeda exógena?
+Não há motivo trnsação e finance?
+Minsky se contradiz nesse livro uma vez que o BC não poderia ser o empregador de última instância com estoque de moeda exógena.
+******* Quase rendas esperadas ($Q$)
+
+$Q = (\text{preco - custo}\cdot \text{Demanda}$
+
+Minsky abandona investimento induzido (acelerador rígido de Hicks) por ser muito mecânico, mas no processo passa a ignorar totalmente:
+- Capacidade instalada
+- Demanda esperada
+******* Falácia da composição
+Investimento agregado como se fosse a soma do investimento de firmas representativas.
+*Falácia da composição:* Aumento do investimento agregado aumenta lucro retido agregado.
+Diferente firmas têm diferentes graus de endividamento efetivo e diferentes limites financeiros.
+*Conclusão:* Restrição financeira no agregado é assimétrica, pode ser importante numa crise de curto prazo.
+De modo geral, importa mais para determinar *quem* investe do que o montante de investimento agregado.
+O mais importante é que também não pode ser independente das expectativas sobre a demanda efetiva (das empresas ou banqueiros).
+
+- Pequenas empresas podem não investir, mas as grandes empresas irão $\Rightarrow$ Concentração e centralização de capitais
+- Raramente haverá restrição financeira no agregado
+  + No agregado, restrição financeira é assimétrica
+- Expectativa de demanda não se restringe às firmas apenas, mas também diz respeito aos *bancos*
+  + Bancos podem decidir não financiar por conta das expectativas da demanda efetiva (rentável) futura
+  + Sobrepõe o mais pessimista
+** Resumo
+
+Não há uma função inversa regullar entre investimento e taxa de juros, mas não implica que a rentabilidade deixe de ser importante.
+Além disso, é preciso especificar a taxa de lucro esperada.
+** Taxa de lucro realizada e taxa de lucro normal
+*** Taxa de lucro realizada em Kalecki
+
+Determinada pela observada, mas não é especificada qual taza de lucro
+$$
+r_{k} = \frac{P}{Y}\frac{Y}{Y^{*}}\frac{Y^{**}}{K} = (1-\omega)\cdot u\cdot R
+$$
+*** Taxa de lucro normal em Sraffa
+
+Com utilização normal da capacidade, a taxa de lucro normal determina as margens de lucro
+
+$$
+r_{s} = (1-\omega)R
+$$
+
+- A taxa de lucro esperada é a normal e não a realizada
+- No entanto, investimento produtivo não é uma função direta da taxa de lucro esperada
+- Não faz sentido um grau de utilização esperada da capacidade
+*** Resumo
+
+Investimento também não possui uma função regular com a taxa de lucro.
+O montante de investimento é determinado pela demanda efetiva rentável esperada.
+Rentabilidade é uma restrição e não um determinante.
+
+** Retomada: Demanda Efetiva agregada e Excedente (Quesnay, Marx e Kalecki); Investimento induzido; Margens de lucro e investimento; Financiamento e investimento
+
+1. *Produção* é determinada pela demanda aos preços que incluem um padrão mínimo de rentabilidade (demanda ao preço de produção/preço limite).
+   Este mínimo fica acima da taxa de juros (custo financeiro e de oportunidade do estoque de capital).
+   Empresas com custos inferiores ao da técnica dominante ("socialmente necessária") obtém rendas diferenciais.
+2. As decidões de produzir introduzem poder de compra monetário na economia que, no agragado, pode (no máximo) recuperar seus custos (salário).
+   Qualquer nível positivo de atividade requer um gasto autônomo que compre o excedente, seja em investimento ou não ("os capitalistas ganham o que financiam").
+3. EMpresas só investmentem no montante que adequa a capacidade à demanda efetiva esperada durante a vida útil do equipamento (investimento é uma demanda derivada)
+4. Expectativas de demanda efetiva são revisadas a partir da experiência (princípio do ajuste do estoque de capital, acelerador flexível).
+   Decisões vesus oportunidas de investimento
+5. Tendência de acumulação e crescimento depende do crescimento dos gastos autônomos que não geram capacidade produtiva
+6. Rentabilidade (taxa de lucro ao grau de utilização normal) é uma restrição e não um determinante do investimento. Acima deste mínimo, variações das margens brutas ou líquidas de lucro não afetam o investimento.
+   Implicações:
+   a. Aumento de margens brutas, desonerações e juros *não* tem impacto direto sobre o investimento
+7. Abaixo do mímino não há investimento, mas também não haverá produção
+8. *Financiamento:*  seu montante não é independente das expectativas de demanda; fora o curtíssimo prazo mais importante para definir *quem* investe do que *quanto* se investe (pequenas versus grandes empresas)
+9. Restrição financeira de cada empresa depende do estoque de capital próprio e não do fluxo de lucros retidos. A nível macroeconômico, os lucroes realizados e retidos são consequência dos investimento. O investimento de uma firma aumenta os lucros realizados (e retidos) das outras. Não existe "firma representativa".
+* Investimento induzido e o ajustamento da capacidade à demanda <2021-02-04 qui>
+
+** Investimento produtivo na visão Sraffiana
+
+*Garagnani (1962):* Os níveis de investimento produtivo numa posição de longo prazo dependem apenas da demanda efetiva esperada e de *inovações*.
+No entanto, investimento autônomo em inovações não é suficiente para garantir uma tendência de crescimento sustendado do investimento produtiva
+
+- Demanda efetiva esperada versus demanda efetiva realizada
+- *Exemplo:* o /boom dotcom/ nos EUA
