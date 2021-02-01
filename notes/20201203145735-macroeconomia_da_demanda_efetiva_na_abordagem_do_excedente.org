@@ -613,8 +613,8 @@ I = a - b(r^{e} - i) \hspace{2cm} \text{se } r^{e} = i \Rightarrow I = a
   + _OBS:_ ao longo da vida útil do equipamento
   + Taxa de juros é uma condição *necessária* mas não suficiente para determinar o investimento. Montante é determinado pela demanda esperada.
     - Se $r > i$, a demanda rentável não é efetiva
-    - Juros é uma restrição e não uma condição. Se não for atendida, não haverá investimento mas não o determino
-***** Crítica dicional mais geral válida também no curto prazo
+    - Juros é uma restrição e não uma condição. Se não for atendida, não haverá investimento mas não o determina
+***** Crítica adicional mais geral válida também no curto prazo
 Determinação da taxa de lucro esperada
 $r^{e} = $ ((preço - custo)X(demanda))/(estoque de capital)
 
@@ -717,12 +717,12 @@ O mais importante é que também não pode ser independente das expectativas sob
   + Sobrepõe o mais pessimista
 ** Resumo
 
-Não há uma função inversa regullar entre investimento e taxa de juros, mas não implica que a rentabilidade deixe de ser importante.
+Não há uma função inversa regular entre investimento e taxa de juros, mas não implica que a rentabilidade deixe de ser importante.
 Além disso, é preciso especificar a taxa de lucro esperada.
 ** Taxa de lucro realizada e taxa de lucro normal
 *** Taxa de lucro realizada em Kalecki
 
-Determinada pela observada, mas não é especificada qual taza de lucro
+Determinada pela observada, mas não é especificada qual taxa de lucro
 $$
 r_{k} = \frac{P}{Y}\frac{Y}{Y^{*}}\frac{Y^{**}}{K} = (1-\omega)\cdot u\cdot R
 $$
@@ -748,18 +748,18 @@ Rentabilidade é uma restrição e não um determinante.
 1. *Produção* é determinada pela demanda aos preços que incluem um padrão mínimo de rentabilidade (demanda ao preço de produção/preço limite).
    Este mínimo fica acima da taxa de juros (custo financeiro e de oportunidade do estoque de capital).
    Empresas com custos inferiores ao da técnica dominante ("socialmente necessária") obtém rendas diferenciais.
-2. As decidões de produzir introduzem poder de compra monetário na economia que, no agragado, pode (no máximo) recuperar seus custos (salário).
+2. As decisões de produzir introduzem poder de compra monetário na economia que, no agragado, pode (no máximo) recuperar seus custos (salário).
    Qualquer nível positivo de atividade requer um gasto autônomo que compre o excedente, seja em investimento ou não ("os capitalistas ganham o que financiam").
-3. EMpresas só investmentem no montante que adequa a capacidade à demanda efetiva esperada durante a vida útil do equipamento (investimento é uma demanda derivada)
+3. Empesas só investem no montante que adequa a capacidade à demanda efetiva esperada durante a vida útil do equipamento (investimento é uma demanda derivada)
 4. Expectativas de demanda efetiva são revisadas a partir da experiência (princípio do ajuste do estoque de capital, acelerador flexível).
-   Decisões vesus oportunidas de investimento
+   Decisões versus oportunidades de investimento
 5. Tendência de acumulação e crescimento depende do crescimento dos gastos autônomos que não geram capacidade produtiva
 6. Rentabilidade (taxa de lucro ao grau de utilização normal) é uma restrição e não um determinante do investimento. Acima deste mínimo, variações das margens brutas ou líquidas de lucro não afetam o investimento.
    Implicações:
    a. Aumento de margens brutas, desonerações e juros *não* tem impacto direto sobre o investimento
-7. Abaixo do mímino não há investimento, mas também não haverá produção
+7. Abaixo do mínimo não há investimento, mas também não haverá produção
 8. *Financiamento:*  seu montante não é independente das expectativas de demanda; fora o curtíssimo prazo mais importante para definir *quem* investe do que *quanto* se investe (pequenas versus grandes empresas)
-9. Restrição financeira de cada empresa depende do estoque de capital próprio e não do fluxo de lucros retidos. A nível macroeconômico, os lucroes realizados e retidos são consequência dos investimento. O investimento de uma firma aumenta os lucros realizados (e retidos) das outras. Não existe "firma representativa".
+9. Restrição financeira de cada empresa depende do estoque de capital próprio e não do fluxo de lucros retidos. A nível macroeconômico, os lucros realizados e retidos são consequência dos investimento. O investimento de uma firma aumenta os lucros realizados (e retidos) das outras. Não existe "firma representativa".
 * Investimento induzido e o ajustamento da capacidade à demanda <2021-02-04 qui>
 
 ** Investimento produtivo na visão Sraffiana

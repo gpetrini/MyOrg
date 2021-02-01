@@ -1,3 +1,4 @@
+#+STARTUP: overview
 #+OPTIONS: num:nil
 #+TITLE: Weekly Planner
 #+AUTHOR: Gabriel Petrini
@@ -12,20 +13,6 @@
 #+HTML_HEAD: <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 #+HTML_HEAD: <script type="text/javascript" src="http://www.pirilampo.org/styles/lib/js/jquery.stickytableheaders.min.js"></script>
 #+HTML_HEAD: <script type="text/javascript" src="http://www.pirilampo.org/styles/readtheorg/js/readtheorg.js"></script>
-
-* Codes
-
-#+begin_src elisp :exports code
-(defun org-archive-done-tasks ()
-  (interactive)
-  (org-map-entries
-   (lambda ()
-     (org-archive-subtree)
-     (setq org-map-continue-from (org-element-property :begin (org-element-at-point))))
-   "/DONE" 'tree))
-#+end_src
-
-#+RESULTS:
 
 * Atemporais
 #+BEGIN: columnview :maxlevel 5 :id local :hlines 2 :indent t
@@ -76,7 +63,7 @@
 
 *** TODO Trocar forro fogão
 
-** TODO Computador [0/3] :noexport:
+** TODO Computador [0/5] :noexport:
 
 *** TODO [#C] Converter anotações para Org-roam
 
@@ -85,7 +72,11 @@
 - [ ] Computador
 - [ ] Github
 
-*** TODO [#C] Emacs pt-Br
+*** TODO [#A] Aprender noweb
+
+*** TODO [#B] Substituição dentro de uma região
+
+*** TODO Transformar header em buffer tal como spacemacs
 
 ** TODO UFRJ [0/2] :noexport:
 
@@ -140,20 +131,38 @@
 | \_      Ler cite:pyka_2005_AgentBased           | TODO | B        |            |
 | \_      Ler cite:delligatti_2010_Complex        | TODO | C        |            |
 | \_      Ler cite:farmer_2009_economy            | TODO | C        |            |
+| \_      Aula Ítalo                              | TODO | B        |            |
+| \_    IEE 898                                   | TODO | B        |            |
+| \_      Aula Serrano                            | TODO | B        |            |
 |-------------------------------------------------+------+----------+------------|
 | \_  PED                                         | TODO | B        | :noexport: |
 |-------------------------------------------------+------+----------+------------|
 | \_  Tese                                        | TODO | B        | :noexport: |
+| \_    Pesquisar Dados LTV                       | WAIT | C        |            |
 |-------------------------------------------------+------+----------+------------|
 | \_  QCA                                         | TODO | B        | :noexport: |
+| \_    Revisão: Ch 3                             | TODO | B        |            |
+| \_    Revisão: Ch 4                             | TODO | B        |            |
+| \_    Revisão: Ch 5                             | TODO | B        |            |
+| \_    Ler Milestones Ch 1                       | STRT | B        |            |
 |-------------------------------------------------+------+----------+------------|
 | \_  Fapesp                                      | TODO | B        | :noexport: |
 |-------------------------------------------------+------+----------+------------|
 | \_  Cecon                                       | TODO | B        | :noexport: |
+|-------------------------------------------------+------+----------+------------|
+| \_  Artigos                                     | TODO | B        | :noexport: |
+| \_    VECM                                      | TODO | B        |            |
+| \_      Ler manuscrito                          | TODO | B        |            |
+| \_      Reunião Lucas                           | WAIT | B        |            |
 #+END:
-** TODO Pessoal [0/1] :noexport:
-*** TODO [#B] Psicóloca
-** TODO Casa [0/2] :noexport:
+** TODO Pessoal [0/2] :noexport:
+*** TODO [#B] Psicóloga
+*** TODO Pagar contas
+- [ ] Celular
+- [ ] Cartão de crédito
+- [ ] Psicóloga
+- [ ] Aluguel
+** TODO Casa [1/3] :noexport:
 *** TODO Faxina [0/2]
 - [ ] <2021-02-01 seg>
 - [ ] <2021-02-05 sex>
@@ -161,20 +170,39 @@
 - [ ] <2021-02-01 seg>
 - [ ] <2021-02-03 qua>
 - [ ] <2021-02-05 sex>
+*** DONE Lavar Roupa de cama
+CLOSED: [2021-02-01 seg 15:08]
 
 ** TODO Computador [0/0] :noexport:
 
-** TODO UFRJ [0/1] :noexport:
-*** TODO IEE 822 [0/3]
+** TODO UFRJ [0/2] :noexport:
+*** TODO IEE 822 [0/4]
 **** TODO [#B] Ler cite:pyka_2005_AgentBased
 **** TODO [#C] Ler cite:delligatti_2010_Complex
 **** TODO [#C] Ler cite:farmer_2009_economy
+**** TODO Aula Ítalo
+*** TODO IEE 898
+**** TODO Aula Serrano
 ** TODO PED [0/0] :noexport:
 
-** TODO Tese [0/0] :noexport:
+** TODO Tese [0/1] :noexport:
 
-** TODO QCA [0/0] :noexport:
+*** WAIT [#C] Pesquisar Dados LTV
+
+** TODO QCA [2/4] :noexport:
+
+*** DONE [#B] Revisão: Ch 3
+CLOSED: [2021-02-01 seg 17:12]
+*** DONE [#B] Revisão: Ch 4
+CLOSED: [2021-02-01 seg 19:30]
+*** TODO [#B] Revisão: Ch 5
+*** STRT [#B] Ler Milestones Ch 1
 
 ** TODO Fapesp [0/0] :noexport:
 
 ** TODO Cecon [0/0] :noexport:
+
+** TODO Artigos [0/1] :noexport:
+*** TODO VECM
+**** TODO Ler manuscrito
+**** WAIT Reunião Lucas

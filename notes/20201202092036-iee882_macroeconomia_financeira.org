@@ -435,7 +435,7 @@ Os modelos podem ser feitos tanto em tempo contínuo quanto discreto:
    b. Recentemente, Kemp-Benedict e Godin introduziram risco no esquema de alocação de portfólio de Tobin
 4. Oferta agregada
 5. Comportamento do sistema financeiro
-   a. Mesmo que o banco central não seja explicitamente modelado, a esmagadoria maioria dos modelos considera que o BC fixa a taxa de juros e que a quandidade de moeda-crédito é endógeno
+   a. Mesmo que o banco central não seja explicitamente modelado, a esmagadoria maioria dos modelos considera que o BC fixa a taxa de juros e que a quantidade de moeda-crédito é endógeno
    b. Alguns modelos incluem racionamento de crédito por parte do sistema bancário
 
 ** Fronteiras e limites
@@ -447,7 +447,7 @@ No fundo, há potencialmente mauitas hipóteses comportamentais /ad hoc/ que dev
 
 *** Dependência de trajetória
 
-- O tempo realmente importa nos modelos SFC? para responder a essa pergunta, deve-se obervar se os modelos possuem dependência de trajetória
+- O tempo realmente importa nos modelos SFC? para responder a essa pergunta, deve-se observar se os modelos possuem dependência de trajetória
   + Este não é o caso na maior parte dos modelos SFC
 - As soluções dos modelos geralmente é determinísticas: para um dado conjunto de parâmetros, o modelo converge para normas estoque-fluxo idênticas, mesmo com potenciais perturbações na trajetória
 
@@ -460,10 +460,10 @@ Um problema intrínseco nos modelos SFC agregados é os dos fluxos intra-setoria
 - Muitas transações financeiras ocorrem dentro de um mesmo setor institucional (por exemplo, mercado interbancário)
 - Ao tratar setores institucionais de forma agregada, deixa-se de lado problemas trazidos pela distribuição dos recursos e usos dentro daquele setor institucional
 
-Nem sempre isso será um problema, mas a resposta de muitas questões não podem prescindir da avaliação dessas distribuiçãões.
+Nem sempre isso será um problema, mas a resposta de muitas questões não podem prescindir da avaliação dessas distribuições.
 **** Exemplo: Steindl (1952)
 
-Duas firmas, mesmo setor, mesma relação capital produto e mesma estrutura de custos. Suponha que ambas as firmas queiram inevstir o mesmo montante e que uma delas tem margem de lucro maior, de forma que os lucros retidos são maiores:
+Duas firmas, mesmo setor, mesma relação capital produto e mesma estrutura de custos. Suponha que ambas as firmas queiram investir o mesmo montante e que uma delas tem margem de lucro maior, de forma que os lucros retidos são maiores:
 
 |----------------------------------------+---------+---------+-------|
 |                                        | Firma 1 | Firma 2 | Total |
@@ -477,7 +477,7 @@ Duas firmas, mesmo setor, mesma relação capital produto e mesma estrutura de c
 
 ** Resumo
 
-Arquitetura excelente para estudar conexões reais-finaceiras, mas para estudar o lado financeiro é importante desagregar
+Arquitetura excelente para estudar conexões reais-financeiras, mas para estudar o lado financeiro é importante desagregar
 
 Vantagens:
 - Pressupõe a importância das finanças
