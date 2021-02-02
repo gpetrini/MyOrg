@@ -399,3 +399,144 @@ It is worth mentioning that whenever a single condition is part of all sufficien
 However, this conclusion is valid only if the suffiency analysis is performed on a *fully specified truth table*.
 
 * Chapter 5: Parameters of fit
+** Defining a dn dealing with contradictory truth table rows
+
+Contradictory rows are those cases with same membership scores and *do not* share the same membership in outcome.
+Thus, it cannot be included in the minimization procedure.
+The following strategies could be employed in order to solve contradictions:
+
+- *Adding a condition:* This procedure may remove the contradiction as long as cases differs in the new added condition
+  + _CONS:_ Doubles the number of TT rows and increases the problem of *limited diversity*
+- *Respecify the definition of the population of interest:* Some case could be excluded or added based on theoretical arguments and not in /ad hoc/ contradiction solving motivation
+- *Respecify the outcome:* Recalibrating the outcome membership score may solve the contradiction, but this procedure must be theoretically driven
+
+During the process of *minimization*, there are mutually exclusive treatments of logically contradictory rows:
+- Exclude all of them
+- Include all of them since it makes the occurrence of the outcome possible
+  + _CONS:_ Covers cases that are not members of the outcome
+  + Make all inconsistent rows available for computer-generated assumptions about their outcome value in order to make the solution term more parsimonious
+
+Alternatively, it is possible to analyze how much, or to what degree, a given row deviates from a perfect set relation.
+This is the rationale behind the consistency measure.
+It is advisable to use consistency measure to guide wheter or not include a TT row into the logical minimization procedure.
+
+** Consistency of sufficient conditions
+
+The consistency of a sufficient condition $X$ for outcome $Y$ is mathematically expressed by dividing the numbers of cases where $X$ and $Y$ are present by the number of cases in which $X$ is present whether or not the outcome occurs.
+The *raw consistency* is the consistency measure refers to the truth table rows while the *solution consistency* refers to the entire solution.
+Thus, the crisp variant is:
+
+#+BEGIN_latex
+\begin{equation}
+Cons_{X,Y} = \frac{\text{Num. } X=1 \land \text{Num.} Y = 1}{\text{Num. } X=1}
+\end{equation}
+#+END_latex
+The crisp variant, however, is deficient since it gives equal weight to all cases below the diagonal.
+In other words, the distance between cases ant the diagonal is not considered.
+
+For fuzzy sets, the consistency measure is calculated as the sum of the minimum value across the membership score in $X$ and in $Y$ and divided by the sum of the membership values in $X$ across *all* cases:
+
+#+BEGIN_latex
+\begin{equation}
+Cons_{X \leq Y} = \frac{\sum \min{(X_{i}, Y_{i})}}{\sum X_{i}}
+\end{equation}
+#+END_latex
+Since considers all the cases, the fuzzy variant is more conservative and include how far the case is from the main diagonal.
+However, there is one particular shortcoming: does not take into account whether an inconsistent case is above or beloe the qualitative anchor of 0.5 both in $X$ and/or $Y$.
+Additionally, in fuzzy sets, not all inconsistent rows are automatically truly logically contradictory.
+
+That been said, which consistency cut to choose?
+The consistency threshold depend on the specific research context.
+The more precisa and strong the theoretical expectations, the higher the consistency that should be used.
+The lower the number of cases, the higher the consistency as well.
+
+** Coverage of sufficient conditions
+
+The *coverage* measure expresse the degree to which the consistent part of sufficiency condition $X$ overlaps with the outcome $Y$:
+#+BEGIN_latex
+\begin{equation}
+Cov_{X,Y} = \frac{\text{Num. } X=1 \land \text{Num.} Y = 1}{\text{Num. } Y=1}
+\end{equation}
+#+END_latex
+The fuzzy-set equivalent is:
+#+BEGIN_latex
+\begin{equation}
+Cov_{X \leq Y} = \frac{\sum \min{(X_{i}, Y_{i})}}{\sum Y_{i}}
+\end{equation}
+#+END_latex
+In summary, express how empirically important a subset relation is.
+Conditions with low coverage cover only a little of the outcome of interest, but that little might be huge theoretical or substantive importance.
+That is why there is no coverage threshold.
+
+It is important to point that coverage *increases* due to cases that are inconsistent with the statement of sufficiency.
+However, the coverage should be calculated for condition that have passed a threshold of consistency.
+
+Similar to the consistency measure, the coverage of each path is called *raw coverage* (CovR) while the coverage of a specific path is called *unique coverage* (CovU) and the solution term leads to the *solution coverage*.
+If there is no logically redundant path, all parts of the solution will have an *unique coverage* greater than zero.
+If logically redundant prime implicant are included, the unique converage will be zero.
+The CovU is calculated by subtracting from the solution coverage that is obtained by all paths except the one whose unique converage we are interested in.
+Suposing the following solution:
+
+#+begin_example
+~A~C + ~BC + F~D
+#+end_example
+the unique converage will be:
+#+begin_example
+CovU (~A~C) = CovS - Cov(~BC + F~D)
+#+end_example
+
+** Consistency of necessary conditions
+
+If a condition is necessary for the outcome, then no case may show the outcome without this condition.
+Thus:
+#+BEGIN_latex
+\begin{equation}
+Cons_{Nec, X,Y} = \frac{\text{Num. } X=1 \land \text{Num.} Y = 1}{\text{Num. } Y=1}
+\end{equation}
+#+END_latex
+while the fuzzy equivalent is:
+#+BEGIN_latex
+\begin{equation}
+Cons_{X \geq Y} = \frac{\sum \min{(X_{i}, Y_{i})}}{\sum Y_{i}}
+\end{equation}
+#+END_latex
+
+It is important to check if true logical contradictory exists and not rely on consistent level.
+For necessary conditions, a consistency threshold of at least 0.9 is advisable.
+
+** Coverage of necessary conditions
+
+The label coverage is misleading.
+If $X$ has passed the consistency test as a necessary condition, thus
+
+#+begin_quote
+$X$ is a superset of $Y$ and thus $X$ fully covers $Y$.
+In other words, by virtue of bein necessary, $X$ always fully covers all cases of membership in $Y$.
+#+end_quote
+In this sense, coverage of necessary conditions should be considered a measure of relevance or trivialness which crisp version is:
+#+BEGIN_latex
+\begin{equation}
+Cov_{Nec. X,Y} = \frac{\text{Num. } X = 1 \land \text{Num. } Y = 1}{\text{Num. X = 1}}
+\end{equation}
+#+END_latex
+while the fuzzy-equivalent is
+#+BEGIN_latex
+\begin{equation}
+Cov_{Nec., X \geq Y} = \frac{\sum \min{(X,Y)}}{\sum X}
+\end{equation}
+#+END_latex
+
+Two points are worth mentioning about the coverage formula.
+First, values for coverage necessity tend to be rather high.
+Unlike coverage sufficiency, in research practice, values far below 0.5 are rare and those close to 0 hardly ever seen.
+This suggests that when assessing the trivialness of necessary conditions, researchers should not be misled by seemingly high coverage values.
+
+** Issues related to consistency and coverage :ATTACH:
+- When using fuzzy-sets, we also advise paying close attention to which cases are true logical contradictions (TLC, see chapter 7), uniquely covered, and which one are not covered at all
+- With sufficiency, very low coverage values indicates that only a small portion of the outcome of interest is explained by that condition
+  + But could still be part of theoretical interest
+- Higher consistency values often come at the price of lower coverage values
+  + The more conditions that are combined, the more difficult membership it becomes
+
+#+CAPTION: XY plot - The tension between consistency and coverage of sufficient conditions
+[[file:../.attach/56/7cad9d-8821-47f8-93b2-37d6d5d15257/_20210202_183532screenshot.png]]
