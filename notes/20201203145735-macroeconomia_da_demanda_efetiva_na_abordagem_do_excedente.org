@@ -369,7 +369,24 @@ $$
 * Demanda efetiva, o Multiplicador e o investimento em capital circulante <2021-01-14 qui>
 
 ** Demanda efetiva e produto
+*** Introdução
+Retomando, fluxo de poder de compra monetário ($MV$) é igual ao gasto nominal que determina a renda nominal em uma economia monetária a nível macroeconômico.
+Além disso, não há nenhuma relação necessária com o produto uma vez que:
+- É real e a relação anterior é nominal
+- Existe variação de estoques
+Sendo assim, mantendo essa noção nominal, não obtém-se uma teoria monetária da produção[fn::Nos clássicos, a demanda era real e setorial.][fn::O ponto da demanda efetiva em Keynes é aquele que determina a produção, logo, é o ponto da demanda efetiva esperada e não demanda efetiva corrente.].
 
+Para compreender a relação dos gastos para produção é preciso incluir os preços relativos.
+Em uma economia capitalista, a produção tende a se ajustar à demanda rentável, à demanda aos preços de produção (ou normais ou "de oferta"), à demanda *efetiva*.
+Um nível de produção abaixo da demanda efetiva, apesar de retornar taxas de lucro maiores, não é viável persistentemente por conta da concorrência (potencial).
+Pontos acima deste, por outro lado, não são viáveis por estarem associados a uma taxa de lucro abaixo daquela impostas pelos custos de produção.
+Para além do produto potencial, haverá inflação de demanda e é medida pela diferença entre a demanda efetiva (a preços de mercado) e produto potencial.
+Consequentemente, a demanda não irá responder à demanda efetiva e haverá aumento dos preços de mercado, mas a inflação não será permanente (se a demanda permanecer a mesma).
+
+Se os preços, por exemplo, caem mais que os custos de produção, a margem de lucro será menor que a margem mínima requerida.
+O ajuste, no entanto, não será via aumento dos preços, mas sim via redução da produção (demanda tornou-se menos rentável aos custos de produção) até se ajustar à demanda efetiva.
+
+*** Exemplo
 Se a demanda efetiva (autônoma) for 100 e supondo:
 
 - Os custos são função da produção $Y$

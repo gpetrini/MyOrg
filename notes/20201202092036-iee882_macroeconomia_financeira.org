@@ -1,3 +1,4 @@
+#+OPTIONS: num:nil H:6 ':t
 #+title: IEE882 - Macroeconomia Financeira
 #+AUTHOR: Gabriel Petrini
 #+DATE: 2º Semestre 2020
@@ -494,3 +495,184 @@ Desvantagens:
 - O equilíbrio do modelo não implica que todos os agentes estão em equilíbrio
 - Negligencia o papel da formação de redes
 - São excessivamente determinísticos e não permitem geração de crises financeiras sem mecanismo(s) /ad hoc/
+
+* Características da abordagem Agent-Based <2021-02-03 qua>
+** Referências:
+- textcite:pyka_2005_AgentBased
+- textcite:delligatti_2010_Complex
+- textcite:farmer_2009_economy
+
+** Objetivos
+
+- Conceituar e oferecer um panorama da estrutura de modelos Agent-Based (ABM)
+- Estabelecer como essa classe de modelos constituem uma ferramenta para criar estruturas úteis para representação de economias complexas
+- Aplicação da ferramenta ABM em combinação com a abordagem SFC é adequada para lidar com processos financeiros em perspectiva macroeconômica
+
+** Sistemas complexos e os modelos Agent-Based Computacionais (ACE)
+Um sistema é definido como complexo se duas propriedades estiverem presentes cite:tesfatsionAgentBasedComputationalEconomics:
+
+- Existem unidades que *interagem*
+- Sistema deve apresentar *propriedades emergentes*
+  + Características que surgem a partir das interações dos agentes, sem ser propriedades inerentes aos indivíduos em si
+  + Ex: paradoxo da poupança
+
+*** Sistemas complexos adaptativos
+Sistemas complexos *adaptativos* podem incluir (ao menos):
+
+- *Entidades reativas:* diferentes condições ambientais geram subconjunto diferente de ação por parte dos agentes
+- *Entidades orientadas a objetivos:* pelo menos parte das ações dos agentes são direcionadas a um ou mais objetivos
+- *Entidades planejadoras:* unidades orientadas a objetivos que procuram alterar as condições do ambiente para atingir o resultado desejado
+
+Os ABM são capazes de representar sistemas complexos adaptativos:
+
+- Antítese da noção de agente representativos
+- Resultados agregados não isomórficos às decisões e interações que o geram
+  + Permite-se feedbacks e análise multinível (micro, meso e macro)
+    - Distribuições são um exemplo de características mesoeconômicas (ex: distribuição de alavancagem, modelos de trânsito)
+- Constituem uma forma de microdundamentar análises macro e incorporar as restrições sistêmicas às decisões micro, geralmente de forma integrada
+
+** Agent-Based Computation Economics (ACE)
+
+Os ABM quase nunca possuem solução analítica.
+São quase sempre apresentados na forma de um programa de computador.
+Há uma infinidade de possibilidade para implementação desses programas, incluindo diferentes paradigmas de programação:
+- Programação orientada a objeto
+- Programação por funções e matrizes
+
+** Fundamentos
+
+- Modelam-se processos de desequilíbrio
+- Abordagem /bottom-up/: agentes como unidade de decisão
+  + A garantia das identidades contábeis se dá pela inclusão das partidas quádruplas nas relações entre os agentes
+    - Isso não implica em uma imposição /top-down/
+    - Pode-se incluir chacagem para garantir que isso é válido no todo
+- Heterogeneidade (/ex ante/ e/ou /ex post/)
+  + Exemplo /ex post/: agentes iniciados igualmente e são diferentes ao fim da simulação
+- Racionalidade limitada, local, parcial
+- Possibilidade de decisões assíncronas
+- Interações endógenas, no tempo e no espaço
+- Agentes possuem incerteza efetiva (futuro é desconhecido e não se conhecem as distribuição de probabilidade relevantes)
+- Mecanismos de seleção pelo mercado
+
+** Estrutura, entradas e saídas dos ABM
+
+*** Estrutura do ABM
+
+- Tempo: $t=0,1,2,\ldots, T$
+- Agentes, cada qual com $N$ unidades
+- Variável de estado das unidades
+- Vetores de parâmetros microeconômico
+- Vetores de parâmetros macroeconômicos
+- Condições iniciais
+- Estrutura de interação
+- Regras de decisão dos agentes
+- Variáveis agregadas
+
+*** Estrutura da economia
+A estrutura da economia está relacionada à definição de:
+- Quais agentes incluir no modelo?
+- Quais os tipos de interação incluir?
+- Quais mercados incluir?
+
+A escolha da estrutura depende da pergunta que se quer responder.
+Exemplos:
+- Formação de redes relacionados ao mercado de crédito
+- Efeito de regras fiscais no crescimento
+- Explicação da convergência (ou não) entre países
+- Mecanismos de transmissão da política monetária
+
+*** Modelando o comportamento dos agentes
+
+Uma vez definida a estrutura da economia, é necessário explicitar as estruturas de interação e as regras de decisão dos agentes.
+Nesse ponto, entram mais fortemente as teorias e evidenciam-se as características mais amplas da abordagem:
+- Racionalidade limitada
+- Adoção de rotinas e regras de bolso
+- Processos cumulativos e interdependência
+
+Na formulação das regras comportamentais, pode-se:
+- Basear em teoria
+- Utilizar-se de evidência empírica no nível micro
+- Utilizar regras do tipo /what if/ (normativas)
+
+Teoria e aleatoriedade:
+- Relações estruturais, fundamentadas na teoria
+- Grau de importância de fatores aleatórios
+
+/Closures/ teóricos (sentido das relações causais) são incontornáveis.
+
+*** Entradas e saídas de ABM :ATTACH:
+
+[[file:../.attach/5d/ef8fc4-de09-4ba6-bc56-98c2e55a55fe/_20210203_113426screenshot.png]]
+
+**** Propriedades das saídas
+
+- Dependência de trajetória
+- Não ergodicidade
+- Não linearidades
+- Pontos de inflexão
+- Formação de redes e "efeito borboleta"
+
+** Análise dos resultados: validação
+
+Com frequência, os resultados do modelo são coletados e contrastados com fatos estilizados.
+Para isso, geralmente se avaliam as propriedades estatísticas das séries de Monte Calor geradas com a economia artificial.
+Isso pode ser entendido como uma forma de *avaliar robustez do modelo*.
+
+*** Exemplos de fatos estilizados (ver slides)
+
+Microeconômicos:
+- Dispersão da produtividade entre as firmas é grande e as diferenças são persistentes
+- Investimento é /lumpy/ e tende
+
+*** Análise de política econômica
+Os ABM são, com frequência, usados para análise de política econômicas.
+Nesse sentido, pode funcionar como um laboratório artificial, mas não implica em agnosticismo.
+
+** Exemplos (Ver slides)
+*** Modelo de segregação
+Premissas do modelo:
+- Existem dois tipos de agente
+- Espaço finito
+- Cada agente ocupa um espaço
+- Agentes ficam satisfeitos quando um percentual de agentes do mesmo tipo superam um determinado nível percentual (parâmetro)
+- Se eles estão insatisfeitos, procuram outro lugar (que esteja vazio)
+**** Resultados
+A segregação surge mesmo
+
+** Problemas, limitações e dificuldades
+- Dificuldade de analisar causalidade, de avaliar os mecanismos pertinentes e de apreender o significado econômico dos resultados
+- *Flexibilidade:* muitas espeficicações plausíveis. Fica mais difícil dar credibilidade os modelos
+- Muitas ferramentas para implementação, pouca convergência sobre os protocolos para modelar.
+- Parâmetros não observáveis
+- Nem sempre os modelos possuem coerência contábil
+- Complexo demais para não versados na literatura
+  + Diminui difusão potencial
+- /Closures/ teóricos muitas vezes em segunda plano e/ou ofucados pela complexidade dos modelos
+
+*** Sensibilidade dos resultados a condições iniciais
+Os problemas estão relacionados à calibragem e validação.
+A dificuldade maior é o custo computacional para varrer o espaço paramétrico.
+Recentemente, tem-se tentado driblas os problemas de potencial falta de robustez dos resultados por:
+- Utilização de técnicas econométricas
+- Aprendizado de mática
+- Design de experimento e meta-modelagem
+- Análise de sensibilidade global (Sobol)
+
+**** Custo computacional (ver slides)
+
+Imagine três parâmetros a, b, e c
+- Suponha que ${a,b,c} \in [0,1]$ e que deseja-se testar a robustez dos seus resultados para valores diferentes desses parâmetros
+- Se serão testadas adições incrementais de 0.1, resultando em 11 valores possíveis
+- Cada combinação precisar ser modelada $M$ vezes
+
+** Modelos AB-SFC
+
+- SFC disciplina os modeladores
+- SFC contribui para aumentar o realismo das estruturas dos ABM
+- Princípios da abordagem SFC são aplícáveis no nível micro
+  + Imposição do princípio da partidas quádruplas nos agentes
+- SFC destaca mais os aspectos financeiros e mais negligências na literatura ABM
+- ABM lida com a crítica de Lucas
+- ABM produzem propriedades emergentes
+- ABM aporta capacidade de lidar com sistemas complexos, mapeando as relações mútuas dos diferentes níveis analíticos de forma muito mais satisfatórias
+- As /distribuições/ passam a importar para os resultados agregados

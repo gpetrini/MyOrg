@@ -2,7 +2,6 @@
 #+OPTIONS: num:nil
 #+TITLE: Weekly Planner
 #+AUTHOR: Gabriel Petrini
-#+startup: shrink
 
 * Properties :noexport:
 * HTML headers                                         :noexport:ignore:
@@ -16,55 +15,58 @@
 
 * Atemporais
 #+BEGIN: columnview :maxlevel 5 :id local :hlines 2 :indent t
-| ITEM                                             | TODO | PRIORITY | TAGS       |
-|--------------------------------------------------+------+----------+------------|
-| Atemporais                                       |      | B        |            |
-|--------------------------------------------------+------+----------+------------|
-| \_  Pessoal                                      | TODO | B        | :noexport: |
-|--------------------------------------------------+------+----------+------------|
-| \_  Casa                                         | TODO | B        | :noexport: |
-| \_    Comprar limpa fogão                        | TODO | B        |            |
-| \_    Trocar forro fogão                         | TODO | B        |            |
-|--------------------------------------------------+------+----------+------------|
-| \_  Computador                                   | TODO | B        | :noexport: |
-| \_    Converter anotações para Org-roam          | TODO | C        |            |
-| \_    Corrigir senhas                            | TODO | C        |            |
-| \_    Emacs pt-Br                                | TODO | C        |            |
-|--------------------------------------------------+------+----------+------------|
-| \_  UFRJ                                         | TODO | B        | :noexport: |
-| \_    Notas slides aula Ítalo <2021-01-27 qua>   | TODO | C        |            |
-| \_    Notas slides aula Serrano <2021-01-22 sex> | TODO | C        |            |
-|--------------------------------------------------+------+----------+------------|
-| \_  PED                                          | TODO | B        | :noexport: |
-| \_    Ver resultado PED 1S2021                   | TODO | C        |            |
-|--------------------------------------------------+------+----------+------------|
-| \_  Tese                                         | TODO | B        | :noexport: |
-| \_    Checar se tese esta em A4                  | TODO | A        |            |
-|--------------------------------------------------+------+----------+------------|
-| \_  QCA                                          | TODO | B        | :noexport: |
-|--------------------------------------------------+------+----------+------------|
-| \_  Fapesp                                       | TODO | B        | :noexport: |
-|--------------------------------------------------+------+----------+------------|
-| \_  Cecon                                        | TODO | B        | :noexport: |
-| \_    Comprovante ADUNICAMP (RPPS)               | TODO | A        |            |
-|--------------------------------------------------+------+----------+------------|
-| \_  Orientações                                  | TODO | B        | :noexport: |
-| \_    Lorena                                     | TODO | B        |            |
-| \_      Criar repositório github                 | TODO | B        |            |
-| \_    Felipe                                     | TODO | B        |            |
-| \_      Responder mensagem sobre nota do projeto | TODO | B        |            |
+| ITEM                                                  | TODO | PRIORITY | TAGS       |
+|-------------------------------------------------------+------+----------+------------|
+| Atemporais                                            |      | B        |            |
+|-------------------------------------------------------+------+----------+------------|
+| \_  Pessoal                                           | TODO | B        | :noexport: |
+|-------------------------------------------------------+------+----------+------------|
+| \_  Casa                                              | TODO | B        | :noexport: |
+| \_    Comprar limpa fogão                             | TODO | B        |            |
+| \_    Trocar forro fogão                              | DONE | B        |            |
+|-------------------------------------------------------+------+----------+------------|
+| \_  Computador                                        | TODO | B        | :noexport: |
+| \_    Converter anotações para Org-roam               | TODO | C        |            |
+| \_    Corrigir senhas                                 | TODO | C        |            |
+| \_    Aprender noweb                                  | KILL | A        |            |
+| \_    Substituição dentro de uma região               | TODO | B        |            |
+| \_    Transformar header em buffer tal como spacemacs | TODO | B        |            |
+| \_    Syntax highlighting                             | TODO | B        |            |
+|-------------------------------------------------------+------+----------+------------|
+| \_  UFRJ                                              | TODO | B        | :noexport: |
+| \_    Notas slides aula Ítalo <2021-01-27 qua>        | TODO | C        |            |
+| \_    Notas slides aula Serrano <2021-01-22 sex>      | TODO | C        |            |
+|-------------------------------------------------------+------+----------+------------|
+| \_  PED                                               | TODO | B        | :noexport: |
+| \_    Ver resultado PED 1S2021                        | TODO | C        |            |
+|-------------------------------------------------------+------+----------+------------|
+| \_  Tese                                              | TODO | B        | :noexport: |
+| \_    Checar se tese esta em A4                       | TODO | A        |            |
+|-------------------------------------------------------+------+----------+------------|
+| \_  QCA                                               | TODO | B        | :noexport: |
+|-------------------------------------------------------+------+----------+------------|
+| \_  Fapesp                                            | TODO | B        | :noexport: |
+|-------------------------------------------------------+------+----------+------------|
+| \_  Cecon                                             | TODO | B        | :noexport: |
+| \_    Comprovante ADUNICAMP (RPPS)                    | TODO | A        |            |
+|-------------------------------------------------------+------+----------+------------|
+| \_  Orientações                                       | TODO | B        | :noexport: |
+| \_    Lorena                                          | TODO | B        |            |
+| \_      Criar repositório github                      | TODO | B        |            |
+| \_    Felipe                                          | TODO | B        |            |
+| \_      Responder mensagem sobre nota do projeto      | TODO | B        |            |
 #+END
 
-** TODO Pessoal [0/0] :noexport:
+** TODO Pessoal [0/0]
 
-** TODO Casa [1/2] :noexport:
+** TODO Casa [1/2]
 
 *** TODO Comprar limpa fogão
 
 *** DONE Trocar forro fogão
 CLOSED: [2021-02-02 ter 09:12]
 
-** TODO Computador [0/5] :noexport:
+** TODO Computador [1/6]
 
 *** TODO [#C] Converter anotações para Org-roam
 
@@ -73,36 +75,44 @@ CLOSED: [2021-02-02 ter 09:12]
 - [ ] Computador
 - [ ] Github
 
-*** TODO [#A] Aprender noweb
+*** KILL [#A] Aprender noweb
+CLOSED: [2021-02-03 qua 08:32]
 
 *** TODO [#B] Substituição dentro de uma região
 
 *** TODO Transformar header em buffer tal como spacemacs
 
-** TODO UFRJ [0/2] :noexport:
+*** TODO Syntax highlighting
 
-*** TODO [#C] Notas slides aula Ítalo <2021-01-27 qua>
+[[https://www.reddit.com/r/emacs/comments/lbkmmz/the_best_syntax_highlighting_in_a_pdf_youll_see_a/?utm_medium=android_app&utm_source=share][Link]]
 
-*** TODO [#C] Notas slides aula Serrano <2021-01-22 sex>
+** TODO UFRJ [2/3]
 
-** TODO PED [0/1] :noexport:
+*** DONE [#C] Notas slides aula Ítalo <2021-01-27 qua>
+CLOSED: [2021-02-03 qua 14:10]
+
+*** TODO [#C] Notas slides aula Ítalo <2021-02-03 qua>
+*** DONE [#C] Notas slides aula Serrano <2021-01-22 sex>
+CLOSED: [2021-02-03 qua 14:47]
+
+** TODO PED [0/1]
 
 *** TODO [#C] Ver resultado PED 1S2021
 
 
-** TODO Tese [0/1] :noexport:
+** TODO Tese [0/1]
 
 *** TODO [#A] Checar se tese esta em A4
 
-** TODO QCA [0/0] :noexport:
+** TODO QCA [0/0]
 
-** TODO Fapesp [0/0] :noexport:
+** TODO Fapesp [0/0]
 
-** TODO Cecon [0/1] :noexport:
+** TODO Cecon [0/1]
 
 *** TODO [#A] Comprovante ADUNICAMP (RPPS)
 
-** TODO Orientações [0/3] :noexport:
+** TODO Orientações [0/3]
 
 *** TODO Lorena [0/1]
 
@@ -119,22 +129,28 @@ CLOSED: [2021-02-02 ter 09:12]
 | Currnt Week <2021-02-01 seg> - <2021-02-07 dom> |      | B        |            |
 |-------------------------------------------------+------+----------+------------|
 | \_  Pessoal                                     | TODO | B        | :noexport: |
-| \_    Psicóloca                                 | TODO | B        |            |
+| \_    Psicóloga                                 | TODO | B        |            |
+| \_    Pagar contas                              | TODO | B        |            |
 |-------------------------------------------------+------+----------+------------|
 | \_  Casa                                        | TODO | B        | :noexport: |
 | \_    Faxina                                    | TODO | B        |            |
 | \_    Tirar Lixo                                | TODO | B        |            |
+| \_    Lavar Roupa de cama                       | DONE | B        |            |
+| \_    Consertar chuveiro                        | DONE | A        |            |
 |-------------------------------------------------+------+----------+------------|
 | \_  Computador                                  | TODO | B        | :noexport: |
+| \_    git                                       | TODO | B        |            |
+| \_    Backup                                    | DONE | B        |            |
 |-------------------------------------------------+------+----------+------------|
 | \_  UFRJ                                        | TODO | B        | :noexport: |
 | \_    IEE 822                                   | TODO | B        |            |
 | \_      Ler cite:pyka_2005_AgentBased           | TODO | B        |            |
 | \_      Ler cite:delligatti_2010_Complex        | TODO | C        |            |
-| \_      Ler cite:farmer_2009_economy            | TODO | C        |            |
+| \_      Ler cite:farmer_2009_economy            | DONE | C        |            |
 | \_      Aula Ítalo                              | TODO | B        |            |
 | \_    IEE 898                                   | TODO | B        |            |
 | \_      Aula Serrano                            | TODO | B        |            |
+| \_      Anotações Aula 04                       | WAIT | B        |            |
 |-------------------------------------------------+------+----------+------------|
 | \_  PED                                         | TODO | B        | :noexport: |
 |-------------------------------------------------+------+----------+------------|
@@ -142,9 +158,9 @@ CLOSED: [2021-02-02 ter 09:12]
 | \_    Pesquisar Dados LTV                       | WAIT | C        |            |
 |-------------------------------------------------+------+----------+------------|
 | \_  QCA                                         | TODO | B        | :noexport: |
-| \_    Revisão: Ch 3                             | TODO | B        |            |
-| \_    Revisão: Ch 4                             | TODO | B        |            |
-| \_    Revisão: Ch 5                             | TODO | B        |            |
+| \_    Revisão: Ch 3                             | DONE | B        |            |
+| \_    Revisão: Ch 4                             | DONE | B        |            |
+| \_    Revisão: Ch 5                             | DONE | B        |            |
 | \_    Ler Milestones Ch 1                       | STRT | B        |            |
 |-------------------------------------------------+------+----------+------------|
 | \_  Fapesp                                      | TODO | B        | :noexport: |
@@ -153,17 +169,18 @@ CLOSED: [2021-02-02 ter 09:12]
 |-------------------------------------------------+------+----------+------------|
 | \_  Artigos                                     | TODO | B        | :noexport: |
 | \_    VECM                                      | TODO | B        |            |
-| \_      Ler manuscrito                          | TODO | B        |            |
+| \_      Ler manuscrito                          | DONE | B        |            |
+| \_      Pequenas correções                      | TODO | B        |            |
 | \_      Reunião Lucas                           | WAIT | B        |            |
 #+END:
-** TODO Pessoal [0/2] :noexport:
+** Pessoal [0/2]
 *** TODO [#B] Psicóloga
 *** TODO Pagar contas
 - [ ] Celular
 - [ ] Cartão de crédito
 - [ ] Psicóloga
 - [ ] Aluguel
-** TODO Casa [2/4] :noexport:
+** Casa [2/4]
 *** TODO Faxina [0/2]
 - [X] <2021-02-01 seg>
 - [ ] <2021-02-05 sex>
@@ -176,35 +193,41 @@ CLOSED: [2021-02-01 seg 15:08]
 *** DONE [#A] Consertar chuveiro
 CLOSED: [2021-02-02 ter 18:43]
 - Valor: R$120.00
-** TODO Computador [0/2] :noexport:
+** Computador [1/2]
 
-*** TODO git [1/5]
+*** TODO git [2/5]
 - [X] Seg
-- [ ] Ter
+- [X] Ter
 - [ ] Qua
 - [ ] Qui
 - [ ] Sex
 
-*** TODO Backup
+*** DONE Backup
+CLOSED: [2021-02-02 ter 19:31]
 
-** TODO UFRJ [0/2] :noexport:
-*** TODO IEE 822 [1/4]
+** UFRJ [0/2]
+*** TODO IEE 822 [2/4]
 **** TODO [#B] Ler cite:pyka_2005_AgentBased
 - [ ] Fichar
 **** TODO [#C] Ler cite:delligatti_2010_Complex
 - [ ] Fichar
 **** DONE [#C] Ler cite:farmer_2009_economy
 CLOSED: [2021-02-02 ter 11:48]
-**** TODO Aula Ítalo
+**** DONE Aula Ítalo
+CLOSED: [2021-02-03 qua 14:11]
 *** TODO IEE 898
 **** TODO Aula Serrano
-** TODO PED [0/0] :noexport:
+**** DONE Anotações Aula 04
+CLOSED: [2021-02-03 qua 14:47]
+** PED [0/0]
 
-** TODO Tese [0/1] :noexport:
+** DONE Tese [1/1]
+CLOSED: [2021-02-03 qua 19:03]
 
-*** WAIT [#C] Pesquisar Dados LTV
+*** DONE [#C] Pesquisar Dados
+CLOSED: [2021-02-03 qua 19:03]
 
-** TODO QCA [3/4] :noexport:
+** QCA [3/4]
 
 *** DONE [#B] Revisão: Ch 3
 CLOSED: [2021-02-01 seg 17:12]
@@ -214,13 +237,17 @@ CLOSED: [2021-02-01 seg 19:30]
 CLOSED: [2021-02-02 ter 18:44]
 *** STRT [#B] Ler Milestones Ch 1
 
-** TODO Fapesp [0/0] :noexport:
+** Fapesp [0/0]
 
-** TODO Cecon [0/0] :noexport:
+** Cecon [0/0]
 
-** TODO Artigos [0/1] :noexport:
-*** TODO VECM [1/3]
+** DONE Artigos [1/1]
+CLOSED: [2021-02-03 qua 17:34]
+*** DONE VECM [3/3]
+CLOSED: [2021-02-03 qua 17:34]
 **** DONE Ler manuscrito
 CLOSED: [2021-02-01 seg 19:37]
-**** TODO Pequenas correções
-**** WAIT Reunião Lucas
+**** DONE Pequenas correções
+CLOSED: [2021-02-03 qua 17:33]
+**** DONE Reunião Lucas
+CLOSED: [2021-02-03 qua 17:33]
