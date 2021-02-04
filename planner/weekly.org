@@ -1,4 +1,4 @@
-#+STARTUP: overview
+#+STARTUP: overview hideblocks
 #+OPTIONS: num:nil
 #+TITLE: Weekly Planner
 #+AUTHOR: Gabriel Petrini
@@ -66,7 +66,7 @@
 *** DONE Trocar forro fogão
 CLOSED: [2021-02-02 ter 09:12]
 
-** TODO Computador [1/6]
+** TODO Computador [3/7]
 
 *** TODO [#C] Converter anotações para Org-roam
 
@@ -78,13 +78,16 @@ CLOSED: [2021-02-02 ter 09:12]
 *** KILL [#A] Aprender noweb
 CLOSED: [2021-02-03 qua 08:32]
 
-*** TODO [#B] Substituição dentro de uma região
+*** DONE [#B] Substituição dentro de uma região
+CLOSED: [2021-02-04 qui 08:17]
 
-*** TODO Transformar header em buffer tal como spacemacs
-
+*** DONE Transformar header em buffer tal como spacemacs
+CLOSED: [2021-02-03 qua 22:34]
+org-narrow and org-widen
 *** TODO Syntax highlighting
 
 [[https://www.reddit.com/r/emacs/comments/lbkmmz/the_best_syntax_highlighting_in_a_pdf_youll_see_a/?utm_medium=android_app&utm_source=share][Link]]
+*** TODO Default html headres (org-mode)
 
 ** TODO UFRJ [2/3]
 
@@ -198,7 +201,7 @@ CLOSED: [2021-02-02 ter 18:43]
 *** TODO git [2/5]
 - [X] Seg
 - [X] Ter
-- [ ] Qua
+- [X] Qua
 - [ ] Qui
 - [ ] Sex
 
