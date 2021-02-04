@@ -779,10 +779,199 @@ Rentabilidade é uma restrição e não um determinante.
 9. Restrição financeira de cada empresa depende do estoque de capital próprio e não do fluxo de lucros retidos. A nível macroeconômico, os lucros realizados e retidos são consequência dos investimento. O investimento de uma firma aumenta os lucros realizados (e retidos) das outras. Não existe "firma representativa".
 * Investimento induzido e o ajustamento da capacidade à demanda <2021-02-04 qui>
 
+** O ciclo, a tendência e o supermultiplicador
+*** Modelo geral
+
+Produto é dado por
+#+BEGIN_latex
+\begin{equation}
+Y = \frac{I + Z}{1-c}
+\end{equation}
+#+END_latex
+Supondo que o investimento é dado pelo princípio de ajuste do estoque de capital como
+#+BEGIN_latex
+\begin{equation}
+K^{e} = v\cdot Y^{e} \hspace{2cm} v = \frac{K}{Y^{*}}
+\end{equation}
+#+END_latex
+Dessa forma, o investimento líquido será determinado pelo processo pelo qual as firmas tentam adequar o estoque de capital existente ao desejado
+#+BEGIN_latex
+\begin{equation}
+I = \alpha (K^{d} - K_{t-1}) \Rightarrow I = \alpha (v\cdot Y^{e} - K_{t-1})
+\end{equation}
+#+END_latex
+
+*** Modelos de ciclo keynesianos
+
+- Nível de gasto autônomo dado ("ciclo puro")
+- Acelerador rígido
+- Condições de estabilidade
+- Acelerador flexível
+- Modelos não-lineares
+- No caso estável ou ciclo regular, capacidade se ajusta à demanda
+
+**** Modelo do acelerador rígido
+
+- $\alpha = 1$
+- $Y^{e} = Y_{t-1}$
+
+Logo
+$$
+K^{d} = v\cdot Y_{t-1}
+$$
+
+$$
+I = vY_{t-1} - K_{t-1}
+$$
+mas, $K_{t-1}$ é
+$$
+I = vY_{t-1} - vY_{t-2}
+$$
+Desse modo, temos
+#+BEGIN_latex
+\begin{equation}
+I = v\Delta Y_{t-1}
+\end{equation}
+#+END_latex
+Substituindo
+#+BEGIN_latex
+\begin{equation}
+Y = \frac{Z + \Delta Y_{t-1}}{1-c}
+\end{equation}
+#+END_latex
+Na expressão anterior, fica evidente o caráter dual do investimento.
+Se $Y_{t-2} = Y_{t-1}$, temos
+#+BEGIN_latex
+\begin{equation}
+Y = \frac{Z}{1-c} \hspace{2cm} K^{d} = v\frac{Z_{t-1}}{1-c}
+\end{equation}
+#+END_latex
+
+Neste modelo, o equilíbrio será estável se $v + c <1$ e instável caso contrário; apresentará ciclo regulares se $v+c=1$.
+Esta expressão pode ser compreendida como a propensão marginal a gastar menor que a unidade.
+
+** Condições necessárias para o ajustamento da capacidade à demanda
+
+- *Investimento induzido:* princípio de ajudes do estoque de capital;
+- *Gastos autônomos:* permite que o investimento (e posteriormente a capacidade produtiva) cresça mais ou menos rápido que os gastos autônomos, tornando o ajustamento da capacidade à demanda logicamente possível
+  + Evita o problema da instabilidade Harrodiana
+  + Não criam capacidade produtiva para o setor privado
+  + Demanda agregada aumenta em uma menor proporção que o investimento das firmas, logo, o investimento pode crescer mais que a demanda
+- *Propensão marginal a gastar menor que um:* Se caso os gastos induzidos pelo produto se tornarem maiores que a unidade, a produção nunca poderia se ajustar à demanda
+
+*** Atendendo às duas primeiras condições (ver slides)
+
+*Condição 1:* $\frac{I}{Y} = vg^{e}$
+- Por se tratar de uma economia em investimento e por ter tendência, deve-se apresentar taxa de investimento e não o nível
+*Condição 2:* Existe um componente autônomo da demanda que cresce à uma taxa exógena ($Z>0$)
+
+Como existe um gasto autônomo
+
+O nível de atividade na posição de longo prazo será dado por:
+
+#+BEGIN_latex
+\begin{equation}
+Y = \frac{Z}{1 - c - vg^{e}}
+\end{equation}
+#+END_latex
+
+No entanto, não é possível garantir que o grau efetiva de utilização da capacidade verificado na posição descrita acima seja necessariamente normal e que a taxa esperada seja igual a taxa efetiva de crescimento da economia.
+
+Considerando, por hipótese, que as expectativas sejam revistas na dimensão necessária e suficiente para permitir um processo estável de ajustamento, a taxa de crescimento esperada da tendência da demanda ($g^{e}$) congerge para $z$. A expressão anterior tenderia então a se transformar em:
+#+BEGIN_latex
+\begin{equation}
+Y^{*} = Y = \frac{Z}{1 - c - vz}
+\end{equation}
+#+END_latex
+
+*** Do acelerador rígido ao flexível
+*** Supermultiplicador com acelerador flexível
+Suporemos que $g^{e}$ é corrigida gradualmente à luz dos resultados realmente observados em termos de expectativas adaptativas da forma:
+#+BEGIN_latex
+\begin{equation}
+g^{e} = g^{e}_{-1} + x(g_{-1} - g^{e}_{-1})
+\end{equation}
+#+END_latex
+Note que supondo $x<1$ temos o equivalente ao acelerador flexível.
+Por outro lado, se for suposto que $x=1$, obtemos o acelerador rígido.
+Acatando então a hiótese de acelerador flexível, a taxa de investimento induzido fica determinada por:
+#+BEGIN_latex
+\begin{equation}
+\frac{I}{Y} = vg^{e} = v[xg_{-1} + (1-x)g^{e}_{-1}]
+\end{equation}
+#+END_latex
+Além disso, $x$ deve ser suficientemente pequeno para que na vizinhaça da posição de pleno ajustamento, a propensão marginal a gastar da economia se mantenha menor que 1.
+
+A partir do ajuste do investimento, podemos esclarecer que as pŕoprias posições de pleno ajustamento da capacidade em que o grau de utilização é o normal e a taxa de crescimento da economia é dada pela taxa de crescimento dos gastos autônomos é preciso assegurar que a propensão a gastar se mantenha menor que um.
+Para tanto, a propensão marginal a investir deve ser estritamente menor que a propensão marginal a poupar, para que o regime de crescimento seja de fato liderado pela demanda.
+Logo, o modelo requer estruturamente:
+#+BEGIN_latex
+\begin{equation}
+z < \frac{1-c}{v}
+\end{equation}
+#+END_latex
+Este é o limite imposto pelo lado da oferta e esta relacionado à distribuição de renda para além da qual existe inflação de demanda.
+Vale destacar que uma vez que a capacidade produtiva se ajusta, tal limite não é adequadamente medido pelo grau de utilização.
 ** Investimento produtivo na visão Sraffiana
 
 *Garagnani (1962):* Os níveis de investimento produtivo numa posição de longo prazo dependem apenas da demanda efetiva esperada e de *inovações*.
 No entanto, investimento autônomo em inovações não é suficiente para garantir uma tendência de crescimento sustendado do investimento produtiva
 
+*Cesaratto, Serrano e Stirati (2003):* No entanto, investimento autônomo em inovações não é suficiente para garantir uma tendência de crescimento sustentado do investimento produtivo.
+
 - Demanda efetiva esperada versus demanda efetiva realizada
 - *Exemplo:* o /boom dotcom/ nos EUA
+
+ #+CAPTION: Exemplo trigo azul
+| Se uma empresa produzir um produto diferente dos demais, com mesmos custos e rentabilidade, mas preferível pelos consumidores. A empresa não precisa que a demanda agregada aumente para aumentar sua produção. No limite, ganha participação de mercado às custas dos demais. |
+
+Em resumo, não deve-se incluir o investimento em inovações sem ajustar o investimento induzido.
+As firmas não inovadoras investem de acordo com seu /market-share/ que se reduz continuamente.
+*** Efeitos do progresso técnico no investimento a partir do supermultiplicador
+
+- Inovação de produto (bens de consumo): Poder de compra adicional
+- Inovação de processo:
+  + Vida útil do equipamento ($d$)
+  + Relações capital-produto ($v$)
+  + Produtividade do trabalho, parcela dos lucros
+
+Efeito nível versus efeito taxa de crescimento.
+- Para ser sustentável, é preciso criar um mercado final
+** Mudanças na distribuição e investimento
+- No supermultiplicador, mudanças na distribuição afetam o tamanho do multiplicador
+- Lei de Say e a poupança potencial
+- Kalecki, investimento como função da taxa de lucro realizada
+- Neokaleckianos
+  + /Wage-led/ predomina efeito utilização da capacidade
+  + /Profit-led/ predomina efeito da taxa de lucro
+*** Taxa de lucro realizada e taxa de lucro normal
+
+Em Kalecki, aumento da parcela dos lucros pode não afetar a taxa de lucro realizada
+- Isso se os trabalhadores poupam, a taxa de lucro realizada sempre aumenta quando aumenta a parcela dos lucros uma vez que os salários totais são custos e só o consumo dos trabalhadores gera receita
+
+#+BEGIN_latex
+\begin{equation}
+r_{k} = \frac{Z + I}{K} = (1-\omega)\frac{\frac{Z+I}{1-\omega}}{K}
+\end{equation}
+#+END_latex
+
+Para aumentar a possibilidade do investimento ser /profit-/ ou /wage-led/, Marglin e Badhuri usam a margem de lucro (ou taxa de lucro normal) em vez da realizada
+
+#+BEGIN_latex
+\begin{equation}
+\frac{I}{K} = a\cdot (1-\omega)R + b\cdot u + c
+\end{equation}
+#+END_latex
+**** Aspectos políticos (do pleno emprego) e econômicos
+
+Políticas progressistas (pleno emprego) seriam revertidas por causa da oposição das classes proprietárias.
+Esta reação não se dá diretamente através de uma redução de investimentos das empresas (oposto do que diz Streecj) e sim posteriormente como efeito da mudança para políticas de austeridade.
+**** Paradoxo do conflito em Kalecki
+
+Kalecki considera que em grande parte os aumentos de salário nominal reais são repassados aos preços e não afetam as margens de lucro.
+Em Kalecki, o investimento depende da taxa realizada de lucro que seria pouco afetada por mudanças nas margens de lucro.
+Portanto, tanto a reação quanto a própria natureza da oposição dos capitalistas às políticas progressistas são basicamente *indiretas* e *políticas* e não econômicas.
+**** Garagnani (ver slides)
+
+Variações de salários nominais podem reduzir margens de lucro e taxa de lucro normal (grau de utilização planejado) dependendo da taxa de juros e taxa de câmbio.
+Porém, montante de investimento privado é induzido e não depende diretamente do nível da taxa de lucro

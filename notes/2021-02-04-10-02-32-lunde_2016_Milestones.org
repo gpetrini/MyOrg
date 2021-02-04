@@ -1,0 +1,124 @@
+#+OPTIONS: num:nil H:6 ':t
+#+TITLE: lunde_2016_Milestones: Milestones in European housing finance
+#+ROAM_KEY: cite:lunde_2016_Milestones
+#+ROAM_TAGS: Institucions Finance Europe Dissertation "Comparative Analysis" Housing
+Time-stamp: 2021-02-04
+
+
+* Milestones in European housing finance
+  :PROPERTIES:
+  :Custom_ID: lunde_2016_Milestones
+  :URL:
+  :AUTHOR:
+  :END:
+
+** FISH-5SS
+
+
+|---------------------------------------------+-----|
+| *Background*                                  |     |
+| *Supporting Ideas*                            |     |
+| *Purpose*                                     |     |
+| *Originality/value (Contribution)*            |     |
+| *Relevance*                                   |     |
+| *Design/methodology/approach*                 |     |
+| *Results*                                     |     |
+| *(Interesting) Findings*                      |     |
+| *Research limitations/implications (Critics)* |     |
+| *Uncategorized stuff*                         |     |
+| *5SS*                                         |     |
+|---------------------------------------------+-----|
+
+** Backlinks
+[[file:2021-01-12-14-07-01-green_2005_American.org][green_2005_American: The American Mortgage in Historical and International Context]]
+[[file:2021-01-26-09-56-57-green_2014_International.org][green_2014_International: International Comparisons of Mortgages]]
+
+* Chapter 1 - Introduction: Milestones in European Housing Finance since 1989
+:PROPERTIES:
+:AUTHOR:   Jens Lunde and Christine Whitehead
+:END:
+
+** Introduction
+Some scholars blame the housing finance dysfunctionality as one of the main causes of the low recovery after the GFC.
+However, housing finance was seen as a good example of deregulation and privatization[fn::Due to lower interest rates, higher owner-occupation, etc.].
+As a general movement, there is a over-exposed risk in mortgage market.
+This pattern occurs even in heavily-regulated mortgage markets.
+Despite this regularity, there are still different *regulatory frameworks*, but the similarities are growing even faster.
+
+The authors state the 1989-2014 period is unique in which mortgage and house prices moved in parallel.
+
+** Defining housing finance
+In this section, the authors argue the "housing finance" definition is more broad than usual.
+*Conventional definition:* operation of mortgage markets in the form of housing loans or mortgage loans that enable consumers – owner‐occupiers and sometimes landlords –- to -­ borrow against the value of their housing asset.
+They state:
+  #+begin_quote
+However, housing finance is actually a much broader concept, including financing through the owners’ own resources (i.e. their equity) and – where
+relevant – financing by subsidies.
+The initial equity (down payment) is often seen as ensuring that the purchaser has a stake in the value of the property, thus reducing the risks faced by the mortgagee. Over time as the mortgage is paid down, as is a common family life‐cycle pattern and, especially if house prices rise, the owners’ equity increases and becomes the predominant source of housing finance for the property.
+  #+end_quote
+
+Next, the author point out that housing system were historically dominated by government provisions, subsidy and source of borrowing.
+More recently, government involvement has fallen (both production and provision) and been replaced by private source of finance.
+Other relevant change is the permission of equity withdraw at the time of raising a new mortgage and its uses not related to purchasing housing assets.
+Additionally, there is finance provision to developer (?) and this is related to *bank solvency* at the time of the GFC.
+
+** Countries
+
+The countries in the sample indicates the globalization dimension of the housing deregularization.
+They can be clusterised as follows:
+- *Anglo-Saxon (most market-oriented):* United Kingdom, Ireland and Australia
+- *Welfare countries:* Denmark, Finland, Iceland, Norway and Sweden; in a minor degree Netherlands, France and Belgium
+- *Central European corporatist system:* Germany and Austria
+- *Ex-communist countries:* Czech Republic, Hungary, Poland, Russia and Slovenia
+- *Southern European Countries:* Portugal, Spain and Turkey
+
+| *Dissertation:* This classification could be used as an expectactional path groups in both QCA and tsPanel. |
+
+** Trends in mortgage systems
+
+The authors refer to textcite:green_2010_Housing for an analysis of changes in the USA mortgage market.
+As a result of incentives, deregulation, liberalization, housing finance system become more efficient and housing access has increased.
+Some of this changes are:
+- Easier entry into owner occupation
+- Interest rates decrease
+- Increase of lifetime affordability
+- Removing government (!)
+- Increasing competition
+The authors also highlight that this changes occurred during a period of persistent interest rate decreases.
+Additionally, this period can be characterized as lower growth rates and higher house prices.
+
+** Mortgage debt and price increases - enabling each other?
+*** The expansion in mortgage debt
+They start this section pointing out textcite:jorda_2016_Great discoveries: the great mortgaging.
+Next, they highlight some results that shows the higher household debt is, the longer and deeper the recession is.
+cite:woodHousePricesPrivate2020 found similar results as well.
+
+Based on hypostat database, they present how mortgage debt and house prices moved together during the analyzed period.
+Netherlands is the country with higher mortgage to GDP ratio while Germany and Austria have the lowest one.
+The former is characterized by high LTV ratios; unconstrained tax reliefs for mortgages interests and a shift from public to private financing (social housing in particular).
+Further diversion (after GFC) of this ratio seens to be related more to GDP movements than to debt levels.
+One of the main changes is the increase of private commercial and mortgaging banking sector:
+
+#+begin_quote
+They slowly started to put in place the legal and institutional arrangements necessary for the introduction of mortgage financing and once in place, usually experienced rapid growth rates in outstanding mortgage debt – although from very low levels.
+#+end_quote
+Additionally, they argue that the mortgage interest rate decrease reduce the requirement downpayments, including lower income households in the market.
+At one hand, the house price increase has also increase the collateral against which to borrow.
+At the other, this increase worsened housing affordability, so households needed to borrow more and excluded lower income ones.
+
+| *Dissertation:* Since house prices increased, it is not reasonable to lower income households were the ones who speculated with houses. |
+
+*** Trends in house prices
+The author's explained this rapid house price increase with growing income --- which is at odds with higher income concentration ---, easier access to credit and *mainly* the relationship between house price rises and capacity to borrow.
+*** Bringing the two together
+They analyze some series in which highlights the following:
+- Countries with higher mortgage debt are those with higher house price inflation
+- Germany runs in the opposite direction: house price decrease and increase after the GFC
+- Belgium present a stability in house price, different from other countries
+
+| *Dissertation:* Is reasonable to relate the different patter *after* the GFC with the diversity in the institutional arrangements? Thus the increasing similarity at odds with this proposal? |
+
+* Chapter 2 - European Housing Finance Models in 1989 and 2014
+:PROPERTIES:
+:AUTHOR:   Jens Lunde and Christine Whitehead
+:END:
