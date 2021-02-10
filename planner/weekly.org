@@ -66,7 +66,7 @@
 *** DONE Trocar forro fogão
 CLOSED: [2021-02-02 ter 09:12]
 
-** TODO Computador [3/7]
+** TODO Computador [3/9]
 
 *** TODO [#C] Converter anotações para Org-roam
 
@@ -88,6 +88,11 @@ org-narrow and org-widen
 
 [[https://www.reddit.com/r/emacs/comments/lbkmmz/the_best_syntax_highlighting_in_a_pdf_youll_see_a/?utm_medium=android_app&utm_source=share][Link]]
 *** TODO Default html headres (org-mode)
+*** TODO Company-mode
+- [ ] Company-box
+- [ ] Company-tabnine
+- [ ] Company para R e python
+*** TODO olivetti
 
 ** TODO UFRJ [2/3]
 
@@ -186,10 +191,10 @@ PhD Student 29 Euros for 2 years
 ** Pessoal [0/2]
 *** TODO [#B] Psicóloga
 *** TODO Pagar contas
-- [ ] Celular
+- [X] Celular
 - [ ] Cartão de crédito
 - [ ] Psicóloga
-- [ ] Aluguel
+- [X] Aluguel
 ** Casa [2/5]
 *** TODO Faxina [1/2]
 - [X] <2021-02-01 seg>
@@ -210,7 +215,7 @@ CLOSED: [2021-02-02 ter 18:43]
 - [X] Seg
 - [X] Ter
 - [X] Qua
-- [ ] Qui
+- [X] Qui
 - [ ] Sex
 
 *** DONE Backup
@@ -242,8 +247,9 @@ CLOSED: [2021-02-03 qua 19:03]
 *** TODO LTV Jordà
 
 *** TODO Real estate share of bank lending (figure 3, Jordà)
+- [ ] Tabela
+- [ ] Cores por agrupamento
 
-[[https://juliasilge.com/blog/reorder-within/][Link]]
 ** QCA [4/4]
 
 *** DONE [#B] Revisão: Ch 3
@@ -269,3 +275,54 @@ CLOSED: [2021-02-01 seg 19:37]
 CLOSED: [2021-02-03 qua 17:33]
 **** DONE Reunião Lucas
 CLOSED: [2021-02-03 qua 17:33]
+
+* Currnt Week <2021-02-08 seg> - <2021-02-14 dom>
+** Pessoal [0/2]
+*** TODO [#B] Psicóloga
+*** TODO Pagar contas
+- [ ] Cartão de crédito <2021-02-10 qua>
+** Casa [1/5]
+*** TODO Faxina [1/2]
+- [ ] <2021-02-09 ter>
+- [ ] <2021-02-12 sex>
+*** TODO Tirar Lixo [0/3]
+- [ ] <2021-02-08 seg>
+- [ ] <2021-02-10 qua>
+- [ ] <2021-02-12 sex>
+*** TODO Lavar Roupa de cama <2021-02-08 seg>
+*** TODO Lavar Roupa <2021-02-12 sex>
+** Computador [1/2]
+
+*** TODO git [2/5]
+- [ ] Seg
+- [ ] Ter
+- [ ] Qua
+- [ ] Qui
+- [ ] Sex
+
+** UFRJ [0/2]
+*** TODO IEE 822 [0/3]
+**** TODO [#B] Ler cite:pyka_2005_AgentBased
+- [ ] Fichar
+**** TODO [#C] Ler cite:delligatti_2010_Complex
+- [ ] Fichar
+**** TODO Aula Ítalo
+*** TODO IEE 898
+**** TODO Aula Serrano
+**** TODO Anotações Aula <2021-02-04 qui>
+** PED [0/0]
+
+** Tese [1/3]
+
+
+** QCA [3/3]
+
+*** [#B] Revisão: Ch 6
+*** [#B] Revisão: Ch 7
+
+** Fapesp [0/0]
+
+** Cecon [0/0]
+
+** TODO Artigos [0/1]
+*** TODO VECM [3/3]

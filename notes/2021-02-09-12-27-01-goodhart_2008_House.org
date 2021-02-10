@@ -1,15 +1,15 @@
-#+TITLE: da_silva_teixeira_crescimento_2015: Crescimento liderado pela demanda na economia norte-americana nos anos 2000: uma an\'alise a partir do supermultiplicador sraffiano com inflac\~ao de ativos
-#+ROAM_KEY: cite:da_silva_teixeira_crescimento_2015
+#+TITLE: goodhart_2008_House: House prices, money, credit, and the macroeconomy (Oxford Review of Economic Policy)
+#+ROAM_KEY: cite:goodhart_2008_House
 #+ROAM_TAGS:
-Time-stamp: 2020-11-29
-- tags :: METADATA,REVISTO
+Time-stamp: 2021-02-09
+- tags ::
 
 
-* Crescimento liderado pela demanda na economia norte-americana nos anos 2000: uma an\'alise a partir do supermultiplicador sraffiano com inflac\~ao de ativos
+* House prices, money, credit, and the macroeconomy
   :PROPERTIES:
-  :Custom_ID: da_silva_teixeira_crescimento_2015
-  :URL: 
-  :AUTHOR: 
+  :Custom_ID: goodhart_2008_House
+  :URL:
+  :AUTHOR: [[file:/HDD/Org/notes/2021-02-09-11-52-43-mccarthy_2002_Monetary.org::*Backlinks][Backlinks]]
   :END:
 
 ** FISH-5SS
@@ -30,5 +30,7 @@ Time-stamp: 2020-11-29
 |---------------------------------------------+-----|
 
 ** Backlinks
-[[file:20201203145735-macroeconomia_da_demanda_efetiva_na_abordagem_do_excedente.org][Macroeconomia da Demanda Efetiva na abordagem do excedente]]
+[[file:20210210091758-house_prices.org][House Prices]]
+[[file:20210210092940-household_debt_and_bank_credit.org][Household debt and Bank credit]]
+
 * Specifics comments

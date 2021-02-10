@@ -676,3 +676,243 @@ Imagine três parâmetros a, b, e c
 - ABM produzem propriedades emergentes
 - ABM aporta capacidade de lidar com sistemas complexos, mapeando as relações mútuas dos diferentes níveis analíticos de forma muito mais satisfatórias
 - As /distribuições/ passam a importar para os resultados agregados
+
+* Acumulação de ativos não financeiros e instabilidade financeira <2021-02-10 qua>-<2021-02-24 qua>
+
+** Investimento induzido e o princípio do ajustamento do estoque de capital; Investimento induzido na visão de Minsky (tese de doutorado) <2021-02-10 qua>
+*** De onde vem a instabilidade do sistema capitalista?
+
+Majoritariamente, do investimento das empresas não-financeiras:
+- Pelas implicações oriundas do *financiamento* do investimento
+  + Redução da liquidez: ativo líquido $\Rightarrow$ ativo menos líquido
+  + Empréstimo
+  + Envolve escolhas de portfólio
+- Da incerteza que permeia a tomada de decisão, sendo que as expectativas estão sujeitas a alterações repentinas
+- Pelas interações entre as empresas que investem e seus financiadores
+  + Aceleração ao longo da expansão e desaceleração na desaceleração
+- Pela natureza monetária do sistema capitalista
+*** A visão de Minsky
+
+A visão de Minsky sobre a flutuação cíclica interliga aspectos institucionais, microeconômicos e macroeconômicos.
+A hipótese da instabilidade financeira (HIF) é a consolidação de um programa de pesquisa perene na vida de Minsky.
+*** Uma dualidade central
+
+- O investimento aumenta o ativo, pode aumentar a dívida, mas os fluxos de caixa futuros que ele pode gerar são *incertos*
+- Já a dívida possui desembolsos contratuais *precisamente estabelecidos*
+-  Se o investimento for crescentemente financiado por dívida, há um descasamento potencial entre os fluxos de caixa e os desembolsos necessários para honrar o serviço da dívida
+*** Um mecanismo genérico da HIF
+
+A instabilidade é gerada por:
+
+Maior otimismo $\Rightarrow$ Expansão do investimento $\Rightarrow$ Maior necessidade de financiamento por dívida $\Rightarrow$ maior endividamento (alavancagem) $\Rightarrow$ Maior fragilidade sistêmica $\Rightarrow$ Crise
+
+- Expansão de investimento está associada a estimação do fluxo de caixa.
+**** Corolários macroeconômicos
+- Maior dívida $\Rightarrow$ Maior endividamentio
+- Maior endividamento $\Rightarrow$ Maior fragilidade
+- Maior fragilidade $\Rightarrow$ Crise
+*** As complexidades
+
+Os complicadores macroeconômicos podem ser dinâmicos e interrelacionados.
+Exemplo:
+
+1. A expansão do investimento pode requerer elevação da dívida no curto prazo;
+   Molda a dinâmica do fluxo de caixa da unidade que investe;
+   Amplia o lucro agregado no curto prazo
+2. O crescimento da dívida pode ser requerido para investir, mas as obrigações financeiras dela decorrentes condicionam a capacidade de acumulação de ativos líquidos, afetando, paradoxalmente, a necessidade de recorrer a capital de terceiros no futuro
+3. Os fluxos de caixa são um fim em si mesmo, porém recursos para o investimento são a fonte primária de acumulação de ativos líquidos e permitem a validação das dívidas tomada no passado
+
+
+Outra parte esta associada a heterogeneidade dos agentes:
+
+- As *distribuições* do investimento, do fluxo de caixa e da dívida certamente afetam o resultados desses feedbacks no nível da firma
+- Talvez também afete a dinâmica das interrelações entre investimento-fluxo de caixa e dívida no agregado
+*** Centralidade do investimento das firmas
+
+Desde sua tese de doutorado, considerada o investimento empresarial como pença central do ciclo econômico:
+- Na tese de doutorado, ele trata do investimento induzido, dialogando diretamente com os modelos de multiplicador-acelerador
+- Mais tarde, dialoga diretamente com a teoria Keynesiana do investimento, elaborando a teoria dos dois preços
+
+Ambas teorias ressaltam a interrelação do investimento e seu financiamento, mas são qualitativamente diferentes.
+*** Breve incursão sobre os elementos na visão de Minsky já presentes em sua tese
+**** A tese de Minsky
+
+Intitulada "Investimento induzido e ciclos econômicos" e defendida em 1954.
+Já contia parte dos elementos fundadores do que serie o seu pensamento (refletindo a sua visão)?
+***** Centralidade do investimento e das finanças
+
+- A tese toda é articulada em torno do investimento (empresaria)
+- Se insere no contexto dos modelos multiplicador-acelerador e das intergaces com as teorias do ciclo econômico
+- Já trata da relação mútua entre investimento e aspectos financeiros de forma acoplada
+***** A importância dos fluxos de caixa (ver slides)
+
+Já existe na tese conceitos que aparecem posteiormente destacados em sua obra sobre a importância do fluxo de caixa:
+
+- Conecta o
+***** Estudo do ciclo econômico (ver slide)
+
+Minsky nunca se atreveu muito a tratar de crescimento econômico:
+
+- Na tese, dá indícidos de tomar a concepção de Schumpeter de que não é muito adequado separar ciclo e tendência
+- Posteriormente, diz explicitamente tratar de ciclos
+
+À parte essa questão mais estrutural, persistiu a preocupação com o estudo dos ciclos econômicos.
+Mais do que isso, aparentemente, procurou-se demonstrar a endogeneidade dos ciclos econômico.
+***** Inclusão de aspectos institucionais
+
+Toda obra de Minsky foi permeada por uma quase obsessão por olhar para o mundo como ele é, mapeando adequadamente o funcionamento das coisas no contexto histórico em que elas foram observadas.
+***** Importância dos balanços patrimoniais
+
+Os balanços patrimoniais são destacados na tese.
+Balizam a capacidade de financiamento da firma.
+Sua dinâmica sintetiza as condições de expansão e sobrevivência das firmas, através, por exeplo, do patrimônio liquido e da riqueza financeira das firmas.
+***** Micro e macro
+
+A tese se concentra no estudo do impacto da interação entre as forças de mercado e demanda agregafa na geração de ciclos econômicos:
+- São enfatizados aspectos relacionados à sobrevivência da firma, do impacto de entrantes, das estruturas de mercado
+- Os resultados que se procura analisar são mais macroeconômicos, conformados a partir da análise de das estruturas micro e meso.
+
+A heterogeneidade dos agentes é trazida à tona necessariamente.
+***** Interdependância entre agentes
+
+Este elemento já estava presente na tese
+
+Micro e macro + heterogeneidade + Interdependância $\Rightarrow$ paralelos claros à visão da economia como um sistema complexo adaptativo.
+***** Papel das expectativas
+
+Presente, mas de forma mais contida e menos destacado ao longo da tese.
+*** Investimento induzido e o princípio do ajustamento do estoque de capital
+***** Modelos de aceleração
+
+*Ideia principal:* O estoque de capital desejado dependo do nível de produção desejado, que por sua vez, depende do nível de demanda esperada.
+Logo, o investimento líquido depende da demanda esperada.
+***** O princípio da aceleração
+
+*Princípio acelerador:* Existe uma proporção *normal* entre o estoque nominal de capital existente e o valor da produção
+
+- Essa proporção pode ser interpretada como um *coeficiente técnico* de produção
+- $v$ é a relação capital-produto
+
+Assim, o estoque de capital desejado pelos empresários depende da expectativa de demanda
+
+#+BEGIN_latex
+\begin{equation}
+K = vY^{e}
+\end{equation}
+#+END_latex
+***** O princípio da aceleração e o investimento (líquido)
+
+O investimento líquido corresponde à variação do estoque de capital
+
+#+BEGIN_latex
+\begin{equation}
+I = \Delta K
+\end{equation}
+#+END_latex
+Supõe-se que a aquisição do estoque de capital é sempre rápida, de forma que o estoque de capital esteja sempre em conformidade com o desejado pelas empresas.
+
+#+BEGIN_latex
+\begin{equation}
+I = v\Delta Y^{e}
+\end{equation}
+#+END_latex
+Com frequênica, pressupõe-se alguma forma de expectativa adaptativa.
+Na forma mais simples: $Y^{e} = Y_{t-1}$.
+Tem-se que:
+#+BEGIN_latex
+\begin{equation}
+I = v\Delta Y
+\end{equation}
+#+END_latex
+
+Somando-se o investimento de reposição, pode-se over o investimento bruto:
+#+BEGIN_latex
+\begin{equation}
+I = v\Delta Y + \delta K_{t-1}
+\end{equation}
+#+END_latex
+Considerando essa equação de investimento no modelo de demanda agregada, integram-se o efeito multiplicador e o efeito acelerador.
+Em uma economia fechada e sem governo, supondo que $\delta = 0$:
+#+BEGIN_latex
+\begin{equation}
+Y = \frac{v}{s}\Delta Y + \frac{\overbrace{A}}{s}
+\end{equation}
+#+END_latex
+***** Princípio do ajustamento do estoque de capital
+
+O modelo de acelerador rígido é corretamente criticado porque o estoque de capital do início de um período não precisa corresponder ao desejado no período anterior pela firma: pode haver excesso de capacidade ou ainda a empresa não ter satisfeito toda a sua demanda por investimento.
+Além disso, implicaria ajustamente da capacidade muito mais rápido do que os que acontecem no mundo real.
+
+O princípio do ajustamente implica impor uma restrição para que o ajustamente no seja instantâneo
+
+#+BEGIN_latex
+\begin{equation}
+I^{L} = \beta (K^{*} - K_{t-1})
+\end{equation}
+#+END_latex
+O investimento líquido reage ao hiato entre o estoque de capital desejado e o estoque de capital efetivo.
+Dado $\beta$, tal reação será tão maior quanto mais amplo for este hiato.
+***** Grau de utilização da capacidade
+
+Dividindo o investimento bruto pelo estoque de capacidade defasado:
+
+#+BEGIN_latex
+\begin{equation}
+\frac{I}{K_{t-1}} = \beta \left(\frac{vY^{e}}{K_{t-1}} - 1\right) + \delta
+\end{equation}
+#+END_latex
+O grau de utilização esperado é dado por
+
+#+BEGIN_latex
+\begin{equation}
+u^{e} = \frac{vY^{e}}{K_{t-1}}
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+\frac{I}{K_{t-1}} = \beta(u^{e} - 1) + \beta
+\end{equation}
+#+END_latex
+***** Grau de utilização normal
+
+Muitos autores sublinham que as firmas planejam operar com capacidade ociosa.
+Considerando que o grau de utilização desejado é $u_{n}$, tem-se:
+#+BEGIN_latex
+\begin{equation}
+\frac{I}{K} = \beta(u^{e} - u_{n}) + \delta
+\end{equation}
+#+END_latex
+Logo, a taxa de investimento dependerá do desvio do grau de utilização do grau normal.
+*** Investimento induzido na visão de Minsky (tese de doutorado)
+***** Modelos de multiplicador-acelerador
+
+Na tese, Minsky não trata exatamente da versão discutida até o momento.
+Porém, nos interessa muito mais o conteúdo da discussão, que não se altera substancialmente na versão considerada.
+Nesse tipo de modelo, podem existir ciclos econômicos com as seguintes propriedades:
+- Convergência assintótica para o equilíbrio
+- Convergência com ciclos amortecidos
+- Ciclos explosivos
+- Trajetórias puramente explosivas
+
+É propriedade conhecida desse tipo de modelo que oscilações persistentes só ocorrem para combinações muito específicas de parâmetros.
+Uma alternativa a esse tipo de modelo era a imposição exógena de tetos e pisos com a trajetória do produto.
+Minsky estava insatisfeito com a inviabilidade prática de se explicar a recorrência endógena de ciclos.
+
+***** Um coeficiente flexível no acelerador flexível
+
+Minsky propôs um modelo de acelerador flexível com coeficiente acelerador flexível:
+- O coeficiente acelerador se altera pró-ciclicamente
+  + Possui certa semelhança aos modelos de supermultiplicador sraffiano
+- A diferença evidente em relação ao SSM é que as origens da flutuação de $\beta$ são relativas *aos balanços patrimoniais*, resultado da interaão entre investimento e seu financiamento e não a fatores reais (como no SSM)
+
+No entanto, como Minsky o faz tem problemas do ponto de vista teórico, mas a ideia parece boa.
+Esta formulação mostra a prevalência do ajustamento via quantidades.
+Ainda assim, desde que haja demanda, fatores preço afetam a taxa de investimento:
+- Parece consistente com a baixa relevância estatística de fatores financeiros afetando o investimento, mas ainda assim não ignora essa possibilidade (como o supermultiplicador)
+
+Além disso:
+- É flexível suficiente para comportar diversos regimes econômicos
+- Permite conectar o micro e o macro, o real e o financeiro de forma natural e não binária
+  + Permitiria lidar com a crítica de Lucas
+
+** Teoria dos dois preços <2021-02-24 qua>

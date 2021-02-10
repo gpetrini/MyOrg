@@ -1,0 +1,3 @@
+#+title: QCA Data
+
+[[file:20210210093026-qca_readings.org][QCA readings]]

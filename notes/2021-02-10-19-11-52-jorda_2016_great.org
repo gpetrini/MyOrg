@@ -1,15 +1,15 @@
-#+TITLE: da_silva_teixeira_crescimento_2015: Crescimento liderado pela demanda na economia norte-americana nos anos 2000: uma an\'alise a partir do supermultiplicador sraffiano com inflac\~ao de ativos
-#+ROAM_KEY: cite:da_silva_teixeira_crescimento_2015
+#+TITLE: jorda_2016_great: The great mortgaging: housing finance, crises and business cycles (Economic Policy)
+#+ROAM_KEY: cite:jorda_2016_great
 #+ROAM_TAGS:
-Time-stamp: 2020-11-29
-- tags :: METADATA,REVISTO
+Time-stamp: 2021-02-10
+- tags ::
 
 
-* Crescimento liderado pela demanda na economia norte-americana nos anos 2000: uma an\'alise a partir do supermultiplicador sraffiano com inflac\~ao de ativos
+* The great mortgaging: housing finance, crises and business cycles
   :PROPERTIES:
-  :Custom_ID: da_silva_teixeira_crescimento_2015
-  :URL: 
-  :AUTHOR: 
+  :Custom_ID: jorda_2016_great
+  :URL:
+  :AUTHOR:
   :END:
 
 ** FISH-5SS
@@ -30,5 +30,6 @@ Time-stamp: 2020-11-29
 |---------------------------------------------+-----|
 
 ** Backlinks
-[[file:20201203145735-macroeconomia_da_demanda_efetiva_na_abordagem_do_excedente.org][Macroeconomia da Demanda Efetiva na abordagem do excedente]]
+[[file:20210210185414-qca_data.org][QCA Data]]
+[[file:20210210191246-panel_data.org][Panel Data]]
 * Specifics comments

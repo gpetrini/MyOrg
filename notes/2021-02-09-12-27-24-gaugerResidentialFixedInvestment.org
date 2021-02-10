@@ -1,15 +1,15 @@
-#+TITLE: da_silva_teixeira_crescimento_2015: Crescimento liderado pela demanda na economia norte-americana nos anos 2000: uma an\'alise a partir do supermultiplicador sraffiano com inflac\~ao de ativos
-#+ROAM_KEY: cite:da_silva_teixeira_crescimento_2015
+#+TITLE: gaugerResidentialFixedInvestment: Residential Fixed Investment and the Macroeconomy: Has Deregulation Altered Key Relationships? ()
+#+ROAM_KEY: cite:gaugerResidentialFixedInvestment
 #+ROAM_TAGS:
-Time-stamp: 2020-11-29
-- tags :: METADATA,REVISTO
+Time-stamp: 2021-02-09
+- tags ::
 
 
-* Crescimento liderado pela demanda na economia norte-americana nos anos 2000: uma an\'alise a partir do supermultiplicador sraffiano com inflac\~ao de ativos
+* Residential Fixed Investment and the Macroeconomy: Has Deregulation Altered Key Relationships?
   :PROPERTIES:
-  :Custom_ID: da_silva_teixeira_crescimento_2015
-  :URL: 
-  :AUTHOR: 
+  :Custom_ID: gaugerResidentialFixedInvestment
+  :URL:
+  :AUTHOR: [[file:/HDD/Org/notes/2021-02-09-11-52-43-mccarthy_2002_Monetary.org::*Backlinks][Backlinks]]
   :END:
 
 ** FISH-5SS
@@ -30,5 +30,7 @@ Time-stamp: 2020-11-29
 |---------------------------------------------+-----|
 
 ** Backlinks
-[[file:20201203145735-macroeconomia_da_demanda_efetiva_na_abordagem_do_excedente.org][Macroeconomia da Demanda Efetiva na abordagem do excedente]]
+[[file:20210210184406-mortgage_interest_rate.org][Mortgage Interest rate]]
+[[file:20210210092103-residential_investment_determinants.org][Residential investment determinants]]
+
 * Specifics comments

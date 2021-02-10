@@ -1,0 +1,4 @@
+#+title: Residential investment determinants
+
+* Backlinks
+[[file:20210210091646-chpanel.org][Panel readings]]

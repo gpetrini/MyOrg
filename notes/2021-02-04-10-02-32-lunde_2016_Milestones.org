@@ -30,9 +30,7 @@ Time-stamp: 2021-02-04
 |---------------------------------------------+-----|
 
 ** Backlinks
-[[file:2021-01-12-14-07-01-green_2005_American.org][green_2005_American: The American Mortgage in Historical and International Context]]
-[[file:2021-01-26-09-56-57-green_2014_International.org][green_2014_International: International Comparisons of Mortgages]]
-
+[[file:20210210184827-institutional_comparisons.org][Institutional comparisons]]
 * Chapter 1 - Introduction: Milestones in European Housing Finance since 1989
 :PROPERTIES:
 :AUTHOR:   Jens Lunde and Christine Whitehead

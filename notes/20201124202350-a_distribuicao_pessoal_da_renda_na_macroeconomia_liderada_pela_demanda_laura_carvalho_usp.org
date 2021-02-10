@@ -1,6 +1,8 @@
 #+title: A distribuição pessoal da renda na macroeconomia liderada pela demanda - Laura Carvalho (USP)
 #+DATE: <2020-11-23 seg>
 #+ROAM_TAGS: "Distribuição pessoal da renda" "Modelos de crescimento liderados pela demanda" AKB
+* Backlinks
+[[file:20210210185551-akb.org][AKB]]
 
 * Distribuição funcional da renda e a demanda agregada
 
