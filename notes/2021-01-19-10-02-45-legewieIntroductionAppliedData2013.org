@@ -30,3 +30,4 @@ Time-stamp: 2021-01-19
 [[file:20210210185026-applied_qca.org][Applied QCA]]
 
 * Specifics comments
+[[file:20210210185414-qca_data.org][QCA Data]]

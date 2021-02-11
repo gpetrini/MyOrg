@@ -33,7 +33,7 @@ Time-stamp: 2021-02-09
 ** Backlinks
 [[file:20210210091758-house_prices.org][House Prices]]
 [[file:20210210092940-household_debt_and_bank_credit.org][Household debt and Bank credit]]
-[[file:20210210092103-residential_investment_determinants.org][Residential investment determinants]]
+[[file:20210210184827-institutional_comparisons.org][Institutional comparisons]][[file:20210210184910-manuals_and_best_practices.org][?Manuals and Best practices]][[file:20210210092103-residential_investment_determinants.org][Residential investment determinants]]
 
 ** Theoretical considerations
 The augmented Tobin model of housing investment incorporating the interest rate can be written as:

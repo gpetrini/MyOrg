@@ -975,3 +975,138 @@ Portanto, tanto a reação quanto a própria natureza da oposição dos capitali
 
 Variações de salários nominais podem reduzir margens de lucro e taxa de lucro normal (grau de utilização planejado) dependendo da taxa de juros e taxa de câmbio.
 Porém, montante de investimento privado é induzido e não depende diretamente do nível da taxa de lucro
+* Dinâmica da inflação e nivel de atividade <2021-02-11 qui>
+** Inflação de demanda e de custos
+
+*Inflação de custos:* aumento nominal dos preços de produção (preços de oferta)
+
+*Inflação de demanda:* Demanda efetiva maior que o produto potencial
+
+Tendência da inflação é de custos, causado por incompatibilidades distributivas.
+** Conflito, inércia e inflação
+
+Parte-se dos modelos com taxa de juros real exógena.
+Supondo um único bem
+
+#+BEGIN_latex
+\begin{equation}
+P = (1+r)aP + Wl
+\end{equation}
+#+END_latex
+em que $a$ e $l$ são dados pela tecnologia e representam, respectivamente, relação capital- e trabalho-produto bruto.
+Para que seja tecnicamente viável produzir um produto, é preciso que $a<1$.
+
+O custo necessário para entrar no mercado não é a folha-salarial, mas sim o capital adiantado e, por conta disso, a taxa de lucro recai sobre o custo do capital.
+A folha-salarial é resultado do excedente.
+Se o período de produção é mais curto que a data de pagamento dos salários, a taxa de lucro não incide sobre a folha-salarial e, portanto, não é incluída como custo a ser adiantado.
+
+O produto medido em termos reais do único produto que é produzido, é possível ver a distribuição como:
+#+BEGIN_latex
+\begin{equation}
+1  = (1+r)a + vl
+\end{equation}
+#+END_latex
+em que $v$ é o salário real.
+A taxa de lucro pode ser escrita como:
+#+BEGIN_latex
+\begin{equation}
+r = \frac{1-vl}{a} - 1
+\end{equation}
+#+END_latex
+expressa uma relação inversa entre salário real e taxa de lucro.
+
+A taxa de lucro será máxima quando o produto for zero, dada a técnica produtiva:
+#+BEGIN_latex
+\begin{equation}
+r_{max} = \frac{1-a}{a} = \frac{Y}{K}
+\end{equation}
+#+END_latex
+
+Se o salário for igual à produtividade, a taxa de lucro será zero.
+#+BEGIN_latex
+\begin{equation}
+v_{max} = \frac{1-a}{l} = \text{produtividade}
+\end{equation}
+#+END_latex
+A teoria neoclássica propõe que o salário seja igual a produtividade *marginal* que, por sua vez, é menor que a produtividade média[fn::Produtividade deve ser calculada em termos do produto líquido. $1-a$ expressa a quantidade de trabalho indireta e direta utilizada.].
+*** Inflação de custo
+
+Se a taxa de lucro desejada pelos capitalistas for incompatível com a taxa de salário desejada pelos trabalhadores.
+Se ocorrer, diz-se que é uma *incompatibilidade distributiva*.
+É importante que não é desejo da parcela do produto total, mas sim por *unidade* do produto.
+Se for parcela do produto total, haverá inflação de demanda.
+*** Modelo com taxa de lucro real exógena
+
+#+BEGIN_latex
+\begin{equation}
+P = (1+m)Wl
+\end{equation}
+#+END_latex
+em que $m$ a margem de lucro é fixo sobre os custos de reprodução do mesmo período.
+
+#+BEGIN_latex
+\begin{equation}
+P = \frac{1}{1-(1+r)a}Wl \Rightarrow m = \frac{1}{1-(1+r)a} - 1
+\end{equation}
+#+END_latex
+expresso dessa forma, explicita-se tanto a taxa de lucro quanto a tecnologia no mark-up real.
+Existem duas hipóteses implícitas:
+1. Mark-up é fixo e exógeno
+2. O aumento salarial em termos nominais desejado é obtido, mas o salário real não se altera e haverá inflação
+
+Com markup fixo, o salário real é a variável de ajuste.
+Suponha que os trabalhadores almejam um aumento salarial de $\omega$, os preços também irão aumentar $\omega$
+#+BEGIN_latex
+\begin{equation}
+P = (1+m)(1+\omega)W \Rightarrow \Delta P = \Delta W = \omega
+\end{equation}
+#+END_latex
+Logo, a inflação é decorrência do aumento do salário nominal acima da produtividade.
+
+| Dado que os salários reais não se alteram, por que os trabalhadores pediriam reajustes salariais? Além disso, existe conflito nesse modelo simplificado? Inflação é neutra em termos distributivos. |
+
+Se o aumento dos salários nominais for igual a inflação passada e integralmente repassado aos salários, obtém-se um modelo de inflação inercial.
+
+| Um exemplo é o diferencial do reajuste do salário passado médio em relação ao pico do salário nominal |
+
+Como solução, propunha-se o fim da indexação.
+Mesmo com heterogeneidade dos custos de trabalho, a taxa de lucro se mantém inalterada.
+Isso porque os ganhos reais de um grupo será às custas do outro.
+Nesse caso, o conflito é trabalhodor-trabalhador e não trabalhador-capitalista.
+Além disso, há questões de coordenação que podem contém elementos do tipo de equilíbrio de Nash.
+Nessa formulação, variações cambiais também não afetam a taxa de lucro[fn::A determinação do preço por markup é comum a todos os mercados, mesmo não sendo oligopólicos. Uma exceção é o mercado de commodities.].
+**** Margens nominais e reais
+
+Existe uma diferença entre uma taxa de lucro nominal e custos históricos; e lucro real e custos de reposição.
+Ambos serão iguais somente se não houve aumento dos custos.
+Se a taxa de crescimento dos custos (salário nominal) for positivo, pode ser que a margem de lucro real seja menor que a nominal.
+
+*** Custo histórico e custo de reposição
+
+#+BEGIN_latex
+\begin{equation}
+P = c_{hist}(1+m_{nom.})
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+P = c_{repo}(1+m_{real})
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+1+m_{real} = \frac{1+m_{nom.}}{1+\dot{c}}
+\end{equation}
+#+END_latex
+
+*** Determinantes da margem nominal
+
+- *Frenkel:* inflação esperada
+  #+BEGIN_latex
+\begin{equation}
+(1+m_{nom.}) = (1+m)(1+p^{e})
+\end{equation}
+  #+END_latex
+- *Pivetti:* Taxa de juros é o piso
+  + Mais observável e menos subjetiva
+  + Influência da política monetária e financeira sobre a distribuição e não apenas efeitos sobre nível de atividade
