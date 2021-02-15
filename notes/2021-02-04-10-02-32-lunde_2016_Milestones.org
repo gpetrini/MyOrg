@@ -1,6 +1,6 @@
 #+OPTIONS: num:nil H:6 ':t
 #+TITLE: lunde_2016_Milestones: Milestones in European housing finance
-#+ROAM_KEY: cite:lunde_2016_Milestones
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-bigblow.setup
 #+ROAM_TAGS: Institucions Finance Europe Dissertation "Comparative Analysis" Housing
 Time-stamp: 2021-02-04
 
@@ -120,3 +120,283 @@ They analyze some series in which highlights the following:
 :PROPERTIES:
 :AUTHOR:   Jens Lunde and Christine Whitehead
 :END:
+
+** Introduction
+
+|---------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <40>                                        | <50>                                                                                                                                                                                                                                                                                                                                                                  |
+| *Background*                                  | High public sector participation that falls after the deregulation                                                                                                                                                                                                                                                                                                    |
+| *Supporting Ideas*                            |                                                                                                                                                                                                                                                                                                                                                                       |
+| *Purpose*                                     | Overview the changes in housing financing system and compare 1989 with 2014                                                                                                                                                                                                                                                                                           |
+| *Originality/value (Contribution)*            |                                                                                                                                                                                                                                                                                                                                                                       |
+| *Relevance*                                   | It summarizes the main milestones in housing financing system which helps the elaboration of QCA model                                                                                                                                                                                                                                                                |
+| *Design/methodology/approach*                 | Questionnaries with other authors.                                                                                                                                                                                                                                                                                                                                    |
+| *Sample*                                      | 1989 and 2014 questions for all countries in the book.                                                                                                                                                                                                                                                                                                                |
+| *Results*                                     | The *milestones* are: family equity and ordinary bank loans relevance for housing funding declined since 1989; Equity withdraws have become more common while loan terms have been lengthened. Additionally, interest-only mortgages have become even more available; Deposits only funding method become the less common; In 2014, all countries used a LTV-type rule. |
+| *(Interesting) Findings*                      |                                                                                                                                                                                                                                                                                                                                                                       |
+| *Research limitations/implications (Critics)* |                                                                                                                                                                                                                                                                                                                                                                       |
+| *Uncategorized stuff*                         |                                                                                                                                                                                                                                                                                                                                                                       |
+| *5SS*                                         |                                                                                                                                                                                                                                                                                                                                                                       |
+|---------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+#+CAPTION: Questions
+|---------------------------------+-------------------------------|
+| Mortgage Market characteristics | Housing loans and lending     |
+|---------------------------------+-------------------------------|
+| Non-existent                    | Credit assessments            |
+| Highly regulated                | Rules to limit Mortgage loans |
+| Deregulation has been started   | Access to foreign currency    |
+| Liberalized                     | Funding method used           |
+|                                 | Incidence of credit risk      |
+|                                 | Mortgage type available       |
+|                                 | Interest rate determinants    |
+|                                 | Foreclosure process           |
+|---------------------------------+-------------------------------|
+
+** Mortgage systems
+
+*** The overall picture
+- High participation of public sector before and decreasing since the deregulation period
+- Restricted Loans are more rare while *remortgaging* and *equity withdraw* are widely accepted
+- More loans with longer terms and new instruments
+- Some of these changes have been reversed after the GFC
+
+
+#+begin_note
+Some Eastern European countries did not have a housing financing system prior to 1989.
+Thus, in a case-comparative paradigm, it may be needed start after 1989.
+It will depends on how relevant those Eastern European countries are for the study.
+#+end_note
+
+*** The decline in equity financing
+As a consequence of lower relevance of equity financing, households has been more leveraged and higher risks for both borrower and lenders.
+Austria, Germany and Hungary have some residuals of previous "funding model" in which some households have access to lower interest rates as long as they have saved for a period before (/Bausparkasel/).
+Other common-ground is the absence of downpayments requirements.
+
+#+begin_note
+The authors state that the removal of downpayment requeriments are a result of banking competition and deregularization, booming the housing buble.
+#+end_note
+Equity withdraws have become more common while loan terms have been lengthened.
+Additionally, interest-only mortgages have become even more available.
+Finally, some of this changes have been reversed after the GFC, mainly on equity withdraw and interest-only mortgages.
+
+*** Comparison
+#+CAPTION: Some changes influencing the size of household equity: 1989
+|----------------+--------------------------------+------------------+-----------------------------------|
+| Country        | Downpayment for the first loan | Max term (years) | Housing equity withdraw available |
+|----------------+--------------------------------+------------------+-----------------------------------|
+| Australia      | Yes                            |            25-30 | No                                |
+| Austria        | Yes                            |              Yes | No                                |
+| Belgium        | Yes                            |               20 | No                                |
+| Czech Republic | No                             |               15 | No                                |
+| Denmark        | No                             |               30 | Yes (post-1992)                   |
+| UK             | Yes (over 10%)                 |            20-25 | Implictly (on moving)             |
+| France         | Only some banks                |               25 | No                                |
+| Finland        | 20-30%                         |               15 | No                                |
+| Germany        | min 20%                        |               No | Yes, but rarely used              |
+| Hungary        | Yes                            |               35 | No                                |
+| Iceland        | Loosely enforced               |   25 (40 before) | No                                |
+| Ireland        | Yes                            |               25 | No                                |
+| Netherlands    | Yes                            |            25-30 | Second mortgages available        |
+| Nowrway        | 20%                            |               No | No                                |
+| Poland         | -                              |                - | No                                |
+| Portugal       | Yes                            |               25 | Yes                               |
+| Russia         | No                             |               No | No                                |
+| Spain          | Yes                            |               No | Yes                               |
+| Sweden         | Not in general                 |            50-60 | At a penalty                      |
+| Turkey         | -                              |            Short | -                                 |
+|----------------+--------------------------------+------------------+-----------------------------------|
+
+
+#+CAPTION: Some changes influencing the size of household equity: 2014
+|----------------+--------------------------------+-------------------+------------------------------------------|
+| Country        | Downpayment for the first loan |  Max term (years) | Housing equity withdraw available        |
+|----------------+--------------------------------+-------------------+------------------------------------------|
+| Australia      | 5% min                         |                30 | Yes                                      |
+| Austria        | No                             |                30 | No                                       |
+| Belgium        | No                             |                30 | No                                       |
+| Czech Republic | No                             |                30 | No                                       |
+| Denmark        | 5% (2015)                      |                30 | Yes                                      |
+| UK             | 20-25%                         | No (usually < 25) | Yes                                      |
+| France         | No                             |                25 | Yes (less than pre-2008)                 |
+| Finland        | No                             |                30 | No                                       |
+| Germany        | 20% min                        |                No | Yes                                      |
+| Hungary        | No                             |                30 | Yes (not common)                         |
+| Iceland        | Yes                            |                40 | Yes                                      |
+| Ireland        | Yes                            |                30 | Yes                                      |
+| Netherlands    | Guarantee                      |                30 | Yes                                      |
+| Nowrway        | 15%                            |                30 | Yes; 2nd and reversed mortgage available |
+| Poland         | 5%                             |                35 | Yes (credit line as well)                |
+| Portugal       | Yes                            |                No | Yes                                      |
+| Russia         | 45.9%                          |                50 | No                                       |
+| Spain          | Yes                            |                No | No                                       |
+| Sweden         | No (not in general)            |             50-60 | At a penalty                             |
+| Turkey         | -                              |        20 (avg 7) | -                                        |
+|----------------+--------------------------------+-------------------+------------------------------------------|
+** Funding the supply of mortgages
+
+Campbell (2012, apud, p. 17-19) proposes the following classification of mortgage systems:
+- deposit‐financed mortgage systems ::  bank/originator holds the loans on the balance sheet and uses deposits as the funding source
+- Securitised mortgage system :: where mortgages are packaged into pools and where repackaging can be used to form different bond types, to be sold to investors
+- Coverd bonds :: claims on the originator that are collateralised by pools of mortgages but where the underlying mortgages remain on the books of the originators
+
+In 1989, deposit and covered bonds were, respectively, the first and second most common funding method.
+After 25 year, only a few countries uses depositys only method as a funding method.
+#+begin_tip
+There were not a common "European funding method" in 1989
+#+end_tip
+#+begin_note
+Compare these movements with a transtion plot
+#+end_note
+Other relevant change is the present of covered bond in 18 countries while 26 out 28 EU countries have legislation about it.
+Additionally, *mortgage backed securities* were increased used from mid-1990 and is relevant for UK, Australia and Ireland.
+
+#+CAPTION: Funding methods used in 2014
+|----------------+-------------------+---------------+-----------------------------+---------------------------|
+| Country        | No market lending | Deposits only | Deposits and others methods | Covered and other methods |
+|----------------+-------------------+---------------+-----------------------------+---------------------------|
+| Australia      |                   | X             |                             |                           |
+| Austria        |                   |               | X                           | X                         |
+| Belgium        |                   | X             |                             |                           |
+| Czech Republic | X                 | X             |                             |                           |
+| Denmark        |                   |               |                             | X                         |
+| UK             |                   |               | X                           |                           |
+| France         |                   |               | X                           | X                         |
+| Finland        |                   | X             |                             |                           |
+| Germany        |                   |               |                             | X                         |
+| Hungary        | X                 | X             |                             |                           |
+| Iceland        |                   |               |                             | X                         |
+| Ireland        |                   | X             |                             |                           |
+| Netherlands    |                   | X             |                             |                           |
+| Norway         |                   |               | X                           |                           |
+| Poland         | X                 |               |                             |                           |
+| Portugal       |                   | X             |                             |                           |
+| Russia         | X                 | X             |                             |                           |
+| Spain          |                   |               | X                           | X                         |
+| Sweden         |                   |               | X                           | X                         |
+| Turkey         |                   |               |                             |                           |
+|----------------+-------------------+---------------+-----------------------------+---------------------------|
+
+#+CAPTION: Funding methods used in 2014
+|----------------+-------------------+---------------+-----------------------------+---------------------------|
+| Country        | No market lending | Deposits only | Deposits and others methods | Covered and other methods |
+|----------------+-------------------+---------------+-----------------------------+---------------------------|
+| Australia      | -                 |               | X                           | X                         |
+| Austria        | -                 |               | X                           | X                         |
+| Belgium        | -                 |               | X                           | X                         |
+| Czech Republic | -                 |               | X                           | X                         |
+| Denmark        | -                 |               |                             | X                         |
+| UK             | -                 |               | X                           | X                         |
+| France         | -                 |               | X                           | X                         |
+| Finland        | -                 |               | X                           | X                         |
+| Germany        | -                 |               | X                           | X                         |
+| Hungary        | -                 |               | X                           | X                         |
+| Iceland        | -                 |               | X                           | X                         |
+| Ireland        | -                 |               | X                           | X                         |
+| Netherlands    | -                 |               |                             | X                         |
+| Norway         | -                 |               | X                           | X                         |
+| Poland         | -                 |               | X                           | X                         |
+| Portugal       | -                 |               | X                           | X                         |
+| Russia         | -                 |               | X                           | X                         |
+| Spain          | -                 |               | X                           | X                         |
+| Sweden         | -                 |               | X                           | X                         |
+| Turkey         | -                 | X             |                             |                           |
+|----------------+-------------------+---------------+-----------------------------+---------------------------|
+
+#+begin_note
+The typical movement is: housing funding methods were typically public (or subsidized) and became more and more based on market priced deposits; capital markets fundings (/e.g./ mortgage backed and covered bonds).
+#+end_note
+** Mortgage characteristics
+
+The authors states that the mortgage differences have decreased as a result of competition and regulation.
+
+*** Credit assessment
+Besides being legally required in only 4 countries, it was a usual business practice in all sample.
+
+*** Property valuation and registration
+It was a common practice to use property value as a collateral, but was legally based only in 5 of them.
+In some countries, it would even affect the interest rate charged.
+In some cases (Finland, France and Germany), construction costs or even transaction was used instead of valuation.
+Now, all countries requires a *public registration*.
+
+*** Lending restrictions on access to a mortgage or housing loan
+When public sector had a prominent role in determining housing funding, budgets limits were the only way to restrict loan for a house purchase.
+Theses restriction are a results of usual business practices in which the LTV rule (normally 80%) was the most commonly used.
+In 2014, all countries used LTV rules.
+Downpayments requirements are another type of restriction for first-time buyer, buy its relevance is decreasing.
+DTI rules are also in use, but not legally required except for Hungary and Poland.
+#+BEGIN_tip
+Besides the absence of downpayments requirements, LTV caps may act like an indirect downpayment.
+Other relevant topic for the QCA model is the difference between standard business practice and legislation rules.
+#+END_tip
+
+*** Terms, currency employed and access to equity withdrawal
+The maximum term were not a legally requirement[fn::Today, the maximum term is only legally based in two countries.].
+In 1989, those caps were considerable diverse; while countries with no market mortgage system, the terms was generally short.
+Additionally, only Australia, Germany and Slovenia allowed to raise mortgages denominated in other currency (for owner-occupied only).
+However, this allowance increased until the GFC and now started to be reversed and even prohibited.
+
+Access to equity withdraw (by raising or extending a mortage) was highly restricted.
+Portugal and Spain was two exceptions, but besides it possibility, it was not commonly used due to cultural traditions.
+During theses 25 years, the equity withdraws had became more general, beeing possible in 14 countries in the sample.
+
+*** Credit risk and guarantees
+The respondents to the questionnaire noted that the lender generally carries the credit risk associated with a loan contract.
+The authors also points out that little has changed between 1989 and 2014.
+Additionally (p.29):
+
+#+begin_quote
+Sometimes – but not included in the questionnaire – borrowers have access to insurance to ensure that they will be have adequate income to continue payments on their mortgages in the event of illness or unemployment.
+#+end_quote
+
+
+*** How mortgage interest rates are determined
+
+One of the main change is the increase of number of loan types available.
+The length of when an interest rate can remain fixed still varies.
+In 2014, fixed interest rate period has been shortened and have the capability to determine the interest rate *individually* on loan in 7 countries.
+Generally, the interest rate for a single loan is equal to a reference index plus a margin (as determined by individual lender).
+It is not usual to the type of interest rate is influenced by any legal requirement.
+
+#+CAPTION: Fixed interest rate period in 2014 (years)
+|----------------+--------------------------------------------------------------------------------+-----------------------------|
+| Country        | Period that can be fixed                                                       | Estimates of average period |
+|----------------+--------------------------------------------------------------------------------+-----------------------------|
+| Australia      | 1-15                                                                           | 3                           |
+| Austria        | Short, Medium and Long                                                         | 1-7                         |
+| Belgium        | The duration of loan up to 30 years or variable with initial fixed rate period | Wide range                  |
+| Czech Republic | 1, 3, 5, 10, 15, 20, 30                                                        | 5                           |
+| Denmark        | 1-10 (ARM); 30 (FRM)                                                           | -                           |
+| UK             | 1-5                                                                            | 1-2                         |
+| France         | No restrictions                                                                | -                           |
+| Finland        | -                                                                              | 1 (LIBOR)                   |
+| Germany        | -                                                                              | -                           |
+| Hungary        | 3, 5, 10                                                                       | Mainly for state subsidized |
+| Iceland        | No restrictions                                                                | 3-5                         |
+| Ireland        | 1, 2, 3, 4 and 5                                                               | 3                           |
+| Netherlands    | 5-10                                                                           | 5-10                        |
+| Norway         | During the agreed period                                                       | 1-5 (62%); < 1 (22%)        |
+| Poland         | -                                                                              | -                           |
+| Portugal       | No                                                                             | No fixed                    |
+| Russia         | Whole period                                                                   | 15                          |
+| Spain          | No                                                                             | No fixed                    |
+| Sweden         | -                                                                              | -                           |
+| Turkey         | Possibly whole period                                                          | 5-10                        |
+|----------------+--------------------------------------------------------------------------------+-----------------------------|
+
+
+
+*** Foreclosures
+The use of foreclosure depends on the costs and efficiency of its mechanisms.
+For 1989, few respondants had the necessary information.
+In 2014, the average duration was 2-3 years.
+In all countries in the sample, the borrower is the responsable for the uncovered debt after the foreclosure.
+#+begin_note
+Even in 1989 most Eastern European countries had some private ownership and some sort of foreclosure system.
+#+end_note
+** Overview
+The main messages are:
+- Own equity funding declined while debt finance has grown
+- Number of financial instruments increased
+- Private funding mechanisms increased
+- Considerable convergence in how mortgage markets operates.

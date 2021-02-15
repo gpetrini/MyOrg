@@ -1,0 +1,18 @@
+#+TITLE: Weekly Journal
+#+STARTUP: folded
+* segunda, 15/02/2021
+:PROPERTIES:
+:CREATED:  20210215
+:END:
+** 10:12  Atualizando sistema e doom
+** 10:22  Checando Sage e DAC; reiniciando EMACS
+** 10:25  Iniciando a leitura: QCA milestones
+
+Leitura com pouco foco.
+** 11:52  Fim da leitura
+** 14:39  Fim descanso, retorno atividades
+Leve dor de cabeça
+** 16:33  Pausa para café da tarde
+** 17:08  Retornando
+** 17:34  Fim da leitura, início correção tabela latex (VECM)
+** 18:30  Fim correções latex, commitando trabalho
