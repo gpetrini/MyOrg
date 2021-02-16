@@ -1,0 +1,4 @@
+* Inbox
+** [ ]
+
+[[file:/HDD/Org/gtd/projects.org::+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-bigblow.setup]]

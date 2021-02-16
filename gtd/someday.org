@@ -1,0 +1,44 @@
+#+OPTIONS: num:nil toc:nil
+#+TITLE: Someday
+#+AUTHOR: Gabriel Petrini
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+TODO: TODO PROG WAIT ATTR | CANC KILL DONE
+
+* TODO Converter anotações para Org-roam :Dissertation:
+
+- [ ] Painel
+- [ ] Mortgaging
+- [ ] QCA readings
+- [ ] ABM readings
+- [ ] Notion
+- [ ] Blogdown
+* TODO [#C] Corrigir senhas [0/3]
+- [ ] Celular
+- [ ] Computador
+- [ ] Github
+
+* CANC Syntax highlighting
+CLOSED: [2021-02-16 ter 18:20]
+
+[[https://www.reddit.com/r/emacs/comments/lbkmmz/the_best_syntax_highlighting_in_a_pdf_youll_see_a/?utm_medium=android_app&utm_source=share][Link]]
+
+* WAIT Membership [[https://enhr.net/members/membership/][EMHR]] :Dissertation:
+PhD Student 29 Euros for 2 years
+* ATTR [#A] Comprovante ADUNICAMP (RPPS) :Research:
+
+* WAIT Criar repositório github :Orientacoes:Lorena:
+
+* WAIT Responder mensagem sobre nota do projeto :Orientacoes:Felipe:
+
+* TODO HTML setup file org-roam-export style css :Emacs:
+
+* TODO Instalar pandoc citeproc :Emacs:
+
+* TODO Startup: cl and dash packages :Emacs:
+
+* WAIT Uso reserva técnica :Bolsa:
+- [ ] Curso inglês?
+
+* TODO [#C] Remover heading com número da página org-noters :Emacs:
+
+* WAIT [#B] Dr Watson tese

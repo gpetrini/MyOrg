@@ -40,4 +40,6 @@ Leve dor e cabeça
 Estava vendo sobre GTD antes.
 ** 16:20 Café da tarde
 ** 16:47 Retorno
-** 17:44 Fim do trabalho proposto
+** 17:44 Fim do trabalho proposto, commitando
+** 17:54 Ininciando GTD
+** 18:49 Fim GTD, commitando mudanças

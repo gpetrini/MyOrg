@@ -1,0 +1,18 @@
+#+OPTIONS: num:nil toc:nil
+#+TITLE: Active Projects
+#+AUTHOR: Gabriel Petrini
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-bigblow.setup
+
+* QCA [100%] :Dissertation:
+
+* Panel [100%] :Dissertation:
+
+* ABM [100%] :Dissertation:
+
+* VECM [100%] :Article:
+
+* Orientações [100%]
+
+* Cecon [100%] :Group:
+
+* Blog :@free:
