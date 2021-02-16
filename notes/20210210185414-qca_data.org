@@ -1,3 +1,113 @@
+#+OPTIONS: toc:nil num:nil
 #+title: QCA Data
+#+AUTHOR: Gabriel Petrini
+#+ARCHIVE: ../archive/QCA.org::* Data
+#+TODO: READ SKIM PARTIAL WAIT MAYBE | REF REPORT DONE ARCH
+#+PROPERTY: COLUMNS  %8STATUS %7TODO(Decision) %15KEY(Bibtex key) %4YEAR  %7RELEVANCE %7IMPACT %4CITE
+#+PROPERTY: DECISION_ALL Read File Skip PartialRead
+#+PROPERTY: ZOTERO_ALL Yes No Partial Entry
+#+PROPERTY: STATUS_ALL Reading Searching Abandoned Finished Skimmed NotFound 404 Downloaded Filed
+#+PROPERTY: RELEVANCE_ALL High Regular Low None
+#+PROPERTY: IMPACT_ALL High Regular Low None
+#+PROPERTY: CITE_ALL Yes No Wait
+#+PROPERTY: YEAR_ALL
+#+PROPERTY: KEY_ALL
 
 [[file:20210210093026-qca_readings.org][QCA readings]]
+
+#+BEGIN: columnview :maxlevel 2 :id global
+| STATUS     | Decision | Bibtex key                 | YEAR | RELEVANCE | IMPACT | CITE |
+|------------+----------+----------------------------+------+-----------+--------+------|
+| Filed      | READ     |                            | 2017 | High      | Low    | Yes  |
+| Skimmed    | READ     | arena_2020_Macroprudential | 2020 | High      | Low    | Yes  |
+| Filed      | READ     | agnello_2020_Housinga      | 2019 | Regular   | Low    | Yes  |
+| Skimmed    | READ     | scanlon_2009_Mortgage      | 2009 | High      | Low    | Yes  |
+| Downloaded | SKIM     | andrews_2011_Housing       | 2011 | Regular   | Low    | Wait |
+| Skimmed    | READ     | dept_2008_Chapter          | 2008 | High      | Low    | Yes  |
+| Filed      | PARTIAL  | badev_2014_Housing         | 2014 | High      | Low    | Yes  |
+| Filed      | PARTIAL  |                            | 2006 | Low       | Low    | Yes  |
+#+END
+
+
+* READ [#A] [[https://hypo.org/ecbc/publication-news/v-ltv-matters/][The “V” in LTV and why it matters]]
+   :PROPERTIES:
+   :ZOTERO:   No
+   :YEAR:     2017
+   :STATUS:   Filed
+   :RELEVANCE: High
+   :IMPACT:   Low
+   :CITE:     Yes
+   :KEY:
+   :END:
+* READ [#A] Macroprudential Policies and House Prices in Europe
+   :PROPERTIES:
+   :ZOTERO:   Yes
+   :YEAR:     2020
+   :STATUS:   Skimmed
+   :RELEVANCE: High
+   :IMPACT:   Low
+   :CITE:     Yes
+   :KEY: arena_2020_Macroprudential
+   :END:
+* READ [#A] [[https://link.springer.com/article/10.1007%2Fs11146-019-09705-z][The Housing Cycle: What Role for Mortgage Market Development and Housing Finance?]]
+   :PROPERTIES:
+   :ZOTERO:   Yes
+   :YEAR:     2019
+   :STATUS:   Filed
+   :RELEVANCE: Regular
+   :IMPACT:   Low
+   :CITE:     Yes
+   :KEY:  agnello_2020_Housinga
+   :END:
+* READ [#A] Mortgage products and government policies to help troubled mortgagors: responses to the credit crisis
+   :PROPERTIES:
+   :ZOTERO:   Yes
+   :YEAR:     2009
+   :STATUS:   Skimmed
+   :RELEVANCE: High
+   :IMPACT:   Low
+   :CITE:     Yes
+   :KEY: scanlon_2009_Mortgage
+   :END:
+* READ [#C] THE CHANGING HOUSING CYCLE AND THE IMPLICATIONS FOR MONETARY POLICY
+   :PROPERTIES:
+   :ZOTERO:   Partial
+   :YEAR:     2008
+   :STATUS:   Skimmed
+   :RELEVANCE: High
+   :IMPACT:   Low
+   :CITE:     Yes
+   :KEY: dept_2008_Chapter
+   :END:
+* SKIM [#B] [[https://www.oecd-ilibrary.org/economics/housing-markets-and-structural-policies-in-oecd-countries_5kgk8t2k9vf3-en;jsessionid=CzhezboEQR19t7VomrNEWTv6.ip-10-240-5-161][Housing Markets and Structural Policies in OECD Countries]]
+   :PROPERTIES:
+   :ZOTERO:   Yes
+   :YEAR:     2011
+   :STATUS:   Downloaded
+   :RELEVANCE: Regular
+   :IMPACT:   Low
+   :CITE:     Wait
+   :KEY: andrews_2011_Housing
+   :END:
+* PARTIAL [#A]  Housing Finance Across Countries: New Data and Analysis
+   :PROPERTIES:
+   :ZOTERO:   Yes
+   :YEAR:     2014
+   :STATUS:   Filed
+   :RELEVANCE: High
+   :IMPACT:   Low
+   :CITE:     Yes
+   :KEY: badev_2014_Housing
+   :END:
+
+
+* PARTIAL [#C]  Evolution of the U.S. Housing Finance Syste
+   :PROPERTIES:
+   :ZOTERO:   Partial
+   :YEAR:     2006
+   :STATUS:   Filed
+   :RELEVANCE: Low
+   :IMPACT:   Low
+   :CITE:     Yes
+   :KEY:
+   :END:

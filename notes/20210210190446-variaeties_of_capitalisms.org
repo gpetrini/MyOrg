@@ -1,4 +1,326 @@
-#+title: Variaeties of Capitalisms
+#+OPTIONS: toc:nil num:nil
+#+title: Varieties of Capitalisms
+#+AUTHOR: Gabriel Petrini
 #+roam_alias: VoC
+#+ARCHIVE: ../archive/QCA.org::* Data
+#+TODO: READ SKIM PARTIAL WAIT MAYBE | REF REPORT DONE ARCH
+#+PROPERTY: COLUMNS  %8STATUS %7TODO(Decision) %15KEY(Reference) %7RELEVANCE
+#+PROPERTY: DECISION_ALL Read File Skip PartialRead
+#+PROPERTY: ZOTERO_ALL Yes No Partial Entry
+#+PROPERTY: STATUS_ALL Reading Searching Abandoned Finished Skimmed NotFound 404 Downloaded Filed
+#+PROPERTY: RELEVANCE_ALL High Regular Low None
+#+PROPERTY: IMPACT_ALL High Regular Low None
+#+PROPERTY: CITE_ALL Yes No Wait
+#+PROPERTY: YEAR_ALL
+#+PROPERTY: KEY_ALL
 
 [[file:20210210093026-qca_readings.org][QCA readings]]
+
+#+BEGIN: columnview :maxlevel 3 :id global
+| STATUS     | Decision | Reference                                          | RELEVANCE |
+|------------+----------+----------------------------------------------------+-----------|
+|            |          |                                                    |           |
+| Filed      | PARTIAL  | cite:hancke_2009_Debating                          | High      |
+| Filed      | READ     | cite:hallVarietiesCapitalismInstitutional2009      | High      |
+|            | READ     |                                                    |           |
+|            | READ     |                                                    |           |
+| Filed      | READ     |                                                    | High      |
+| Filed      | READ     | cite:blyth_2003_Same                               | High      |
+| Filed      | READ     | cite:fernandez_2016_Financialization               | High      |
+| Filed      | READ     | cite:fuller_2015_Who                               | Regular   |
+| Filed      | READ     | cite:blackwell_2019_Historicizing                  | High      |
+| Filed      | READ     | cite:hay_2005_Two                                  | Regular   |
+| Filed      | READ     |                                                    | High      |
+| Filed      | READ     |                                                    | High      |
+| Filed      | SKIM     | cite:hay_2020_Does                                 | High      |
+| Filed      | SKIM     | cite:hay_2004_Common                               | High      |
+| Filed      | SKIM     | cite:crouch_2005_Dialogue                          | High      |
+| Filed      | SKIM     | cite:setterfieldVarietiesCapitalismIncreasing2020a | Regular   |
+| Downloaded | PARTIAL  | cite:hallVarietiesCapitalismInstitutional2001      | Low       |
+| Filed      | MAYBE    |                                                    | High      |
+| Filed      | MAYBE    | cite:hardie_2013_Banks                             | Low       |
+| Filed      | REF      | cite:howell_2003_Varieties                         | Regular   |
+| Downloaded | REF      | cite:lapavitsas_2013_Financialisation              | Regular   |
+| Filed      | REF      | cite:baccaroRethinkingComparativePolitical2016     | Low       |
+| Downloaded | REF      | cite:behringer_2018_Varieties                      | Low       |
+|            | ARCH     |                                                    |           |
+| Filed      | ARCH     |                                                    | Low       |
+| Downloaded | ARCH     | cite:beck_2009_Financial                           | Low       |
+| Filed      | ARCH     | cite:broadberry_2005_Economic                      | Low       |
+#+END
+
+
+
+* Inbox
+* PARTIAL [#A] [[https://global.oup.com/academic/product/debating-varieties-of-capitalism-9780199569663?cc=us&lang=en&#][Debating Varieties of Capitalism]] (Colection)
+  :PROPERTIES:
+  :YEAR: 2009
+  :ZOTERO:   Yes
+  :STATUS:   Filed
+  :RELEVANCE: High
+  :IMPACT:   Regular
+  :CITE:     Yes
+  :KEY: cite:hancke_2009_Debating
+  :END:
+
+
+** READ [#B] [[https://doi.org/10.1017/S0007123409000672][Varieties of Capitalism and Institutional Complementarities in the Political Economy: An Empirical Analysis]]
+  :PROPERTIES:
+  :YEAR:     2009
+  :ZOTERO:   Yes
+  :STATUS:   Filed
+  :RELEVANCE: High
+  :IMPACT:   Regular
+  :CITE:     Yes
+  :KEY:  cite:hallVarietiesCapitalismInstitutional2009
+  :END:
+
+** READ [#C] Institutional Change in Varieties of Capitalism
+
+** READ [#A] Beyond Varieties of Capitalism, Bob Hancké, Martin Rhodes, and Mark Thatcher
+* READ [#A] [[https://link.springer.com/chapter/10.1057%2F9780230280441_1][Schwartz and Seabrooke - Varieties of Residential Capitalism in the International Political Economy: Old Welfare States and the New Politics of Housing]]
+  :PROPERTIES:
+  :YEAR:     2009
+  :ZOTERO:   Yes
+  :STATUS:   Filed
+  :RELEVANCE: High
+  :IMPACT:   Low
+  :CITE:     Yes
+  :END:
+* READ [#A] [[https://link.springer.com/article/10.1057/palgrave.cep.6110008][Same as it Never Was: Temporality and Typology in the Varieties of Capitalism]]
+  :PROPERTIES:
+  :YEAR: 2003
+  :ZOTERO:   Yes
+  :STATUS:   Filed
+  :RELEVANCE: High
+  :IMPACT:   High
+  :CITE:     Yes
+  :KEY: cite:blyth_2003_Same
+  :END:
+* READ [#A] [[https://doi.org/10.1177%2F1024529415623916][Financialization and housing: Between globalization and Varieties of Capitalism]]
+  :PROPERTIES:
+  :YEAR:     2016
+  :ZOTERO:   Yes
+  :STATUS:   Filed
+  :RELEVANCE: High
+  :IMPACT:   Low
+  :CITE:     Yes
+  :KEY:      cite:fernandez_2016_Financialization
+  :END:
+* READ [#B] [[https://doi.org/10.1177%2F0032329215571288][Who’s Borrowing? Credit Encouragement vs. Credit Mitigation in National Financial Systems ]]
+  :PROPERTIES:
+  :YEAR:     2015
+  :ZOTERO:   Yes
+  :STATUS:   Filed
+  :RELEVANCE: Regular
+  :IMPACT:   Low
+  :CITE:     Yes
+  :KEY:      cite:fuller_2015_Who
+  :END:
+* READ [#A] [[https://doi.org/10.1080/02673037.2018.1487037][Historicizing housing typologies: beyond welfare state regimes and varieties of residential capitalism]]
+  :PROPERTIES:
+  :YEAR: 2018
+  :ZOTERO:   Yes
+  :STATUS:   Filed
+  :RELEVANCE: High
+  :IMPACT:   Low
+  :CITE:     Yes
+  :KEY:  cite:blackwell_2019_Historicizing
+  :END:
+* READ [#B] [[https://link.springer.com/chapter/10.1057/9780230522725_6][Two Can Play at That Game … or Can They? Varieties of Capitalism, Varieties of Institutionalism]]
+  :PROPERTIES:
+  :YEAR: 2005
+  :ZOTERO:   Yes
+  :STATUS:   Filed
+  :RELEVANCE: Regular
+  :IMPACT:   Low
+  :CITE:     Yes
+  :KEY: cite:hay_2005_Two
+  :END:
+* READ [#C] [[https://www.econstor.eu/bitstream/10419/155335/1/880367393.pdf][Blackwell and Khol - Varieties of housing finance in historical perspective: The impact of mortgage finance systems on urban structures and homeownership]]
+  :PROPERTIES:
+  :YEAR:     2017
+  :ZOTERO:   Yes
+  :STATUS:   Filed
+  :RELEVANCE: High
+  :IMPACT:   Low
+  :CITE:     Yes
+  :END:
+
+
+* READ [#C] [[https://linkinghub.elsevier.com/retrieve/pii/S0049089X16304756][Guten and Navot - Varieties of indebtedness: Financialization and mortgage market institutions in Europe]]
+  :PROPERTIES:
+  :YEAR:     2018
+  :ZOTERO:   Yes
+  :TYPE:     Case
+  :STATUS:   Filed
+  :RELEVANCE: High
+  :IMPACT:   Regular
+  :CITE:     Yes
+  :END:
+
+
+* SKIM [#A] [[https://www.tandfonline.com/doi/full/10.1080/09692290.2019.1633382][ Does capitalism (still) come in varieties?]]
+  :PROPERTIES:
+  :YEAR:     2020
+  :ZOTERO:   Yes
+  :STATUS:   Filed
+  :RELEVANCE: High
+  :IMPACT:   Regular
+  :CITE:     Wait
+  :KEY:  cite:hay_2020_Does
+  :END:
+
+* SKIM [#B] [[https://www.tandfonline.com/doi/abs/10.1080/09692290420001672796][Common trajectories, variable paces, divergent outcomes? Models of European capitalism under conditions of complex economic interdependence]] :Convergence:
+  :PROPERTIES:
+  :YEAR:  2004
+  :ZOTERO:   Yes
+  :STATUS:   Filed
+  :RELEVANCE: High
+  :IMPACT:   Regular
+  :CITE:     Yes
+  :KEY:  cite:hay_2004_Common
+  :END:
+
+* SKIM [#A] [[https://doi.org/10.1093/SER/mwi015][Dialogue on ‘Institutional complementarity and political economy’]] :Complementarities:
+  :PROPERTIES:
+  :YEAR:     2005
+  :ZOTERO:   Yes
+  :STATUS:   Filed
+  :RELEVANCE: High
+  :IMPACT:   Regular
+  :CITE:     Yes
+  :KEY:      cite:crouch_2005_Dialogue
+  :END:
+* SKIM [#C] Varieties of capitalism, increasing income inequality and the sustainability of long-run growth
+  :PROPERTIES:
+  :YEAR:     2020
+  :ZOTERO:   Yes
+  :STATUS:   Filed
+  :RELEVANCE: Regular
+  :IMPACT:   High
+  :CITE:     Yes
+  :KEY: cite:setterfieldVarietiesCapitalismIncreasing2020a
+  :END:
+
+
+  - Do not include VoC theoretical discussion
+
+* PARTIAL [#B] Varieties of Capitalism: The Institutional Foundations of Comparative Advantage
+  :PROPERTIES:
+  :YEAR:     2001
+  :ZOTERO:   Yes
+  :STATUS:   Downloaded
+  :RELEVANCE: Low
+  :IMPACT:   High
+  :CITE:     Yes
+  :KEY:  cite:hallVarietiesCapitalismInstitutional2001
+  :END:
+
+*Part to read:* Chapter 1 - An Introduction to Varieties of Capitalism
+
+* MAYBE [#C] [[https://www.tandfonline.com/doi/abs/10.1080/09692290.2017.1403358?journalCode=rrip20][Blackwell and Khol - The origins of national housing finance systems: a comparative investigation into historical variations in mortgage finance regimes]]
+   :PROPERTIES:
+   :YEAR:     2017
+   :ZOTERO:   Yes
+   :TYPE:     Theory
+   :STATUS:   Filed
+   :RELEVANCE: High
+   :IMPACT:   Low
+   :CITE:     Yes
+   :END:
+
+* MAYBE [[https://doi.org/10.1017/S0043887113000221][Banks and the False Dichotomy in the Comparative Political Economy of Finance]]
+  :PROPERTIES:
+  :YEAR:  2013
+  :ZOTERO:   Yes
+  :STATUS:   Filed
+  :RELEVANCE: Low
+  :IMPACT:   Low
+  :CITE:     Wait
+  :KEY:  cite:hardie_2013_Banks
+  :END:
+
+* REF [[https://www.jstor.org/stable/4150162?seq=1#metadata_info_tab_contents][Varieties of Capitalism: And Then There Was One? ]] :Review:Reception:
+CLOSED: [2021-02-16 ter 17:33]
+  :PROPERTIES:
+  :YEAR:  2003
+  :ZOTERO:   Yes
+  :STATUS:   Filed
+  :RELEVANCE: Regular
+  :IMPACT:   Low
+  :CITE:     Wait
+  :KEY: cite:howell_2003_Varieties
+  :END:
+
+* REF [[https://doi.org/10.1093/cjres/rst019][Financialisation varied: a comparative analysis of advanced economies]]
+CLOSED: [2021-02-16 ter 15:42]
+  :PROPERTIES:
+  :YEAR:     2013
+  :ZOTERO:   Yes
+  :STATUS:   Downloaded
+  :RELEVANCE: Regular
+  :IMPACT:   Regular
+  :CITE:     Yes
+  :KEY:  cite:lapavitsas_2013_Financialisation
+  :END:
+* REF [[https://journals.sagepub.com/doi/abs/10.1177/0032329216638053][Rethinking Comparative Political Economy: The Growth Model Perspective]]
+CLOSED: [2021-02-16 ter 15:47]
+  :PROPERTIES:
+  :YEAR:     2016
+  :ZOTERO:   Yes
+  :STATUS:   Filed
+  :RELEVANCE: Low
+  :IMPACT:   Regular
+  :CITE:     Yes
+  :KEY:  cite:baccaroRethinkingComparativePolitical2016
+  :END:
+* REF [#C] Varieties of Capitalism and Growth Regimes
+CLOSED: [2021-02-16 ter 15:24]
+  :PROPERTIES:
+  :YEAR:     2018
+  :ZOTERO:   Yes
+  :STATUS:   Downloaded
+  :RELEVANCE: Low
+  :IMPACT:   Regular
+  :CITE:     Yes
+  :KEY:  cite:behringer_2018_Varieties
+  :END:
+
+* ARCH [[https://www.amazon.com.br/Regulation-School-Robert-Boyer/dp/0231065485][The Regulation School: A Critical Introduction ]]
+CLOSED: [2021-02-16 ter 15:38]
+* ARCH [[https://doi.org/10.1017/S0003055414000045][The Political Economy of Ownership: Housing Markets and the Welfare State]]
+CLOSED: [2021-02-16 ter 15:44]
+  :PROPERTIES:
+  :YEAR:     2014
+  :ZOTERO:   No
+  :STATUS:   Filed
+  :RELEVANCE: Low
+  :IMPACT:   Low
+  :CITE:     No
+  :KEY:
+  :END:
+* ARCH [[https://openknowledge.worldbank.org/bitstream/handle/10986/4154/WPS4943.pdf][Financial Institutions and Markets across Countries and over Time]] 
+CLOSED: [2021-02-16 ter 15:49]
+  :PROPERTIES:
+  :YEAR:     2009
+  :ZOTERO:   Yes
+  :STATUS:   Downloaded
+  :RELEVANCE: Low
+  :IMPACT:   Regular
+  :CITE:     No
+  :KEY:  cite:beck_2009_Financial
+  :END:
+
+* ARCH [[https://link.springer.com/chapter/10.1057/9780230522725_5][Economic Growth and the United States since 1870: A Quantitative Economic Analysis Incorporating Institutional Factors]]
+CLOSED: [2021-02-16 ter 16:12]
+  :PROPERTIES:
+  :YEAR:     2005
+  :ZOTERO:   Yes
+  :STATUS:   Filed
+  :RELEVANCE: Low
+  :IMPACT:   Low
+  :CITE:     No
+  :KEY:      cite:broadberry_2005_Economic
+  :END:
+

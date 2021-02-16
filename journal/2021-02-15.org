@@ -4,15 +4,40 @@
 :PROPERTIES:
 :CREATED:  20210215
 :END:
-** 10:12  Atualizando sistema e doom
-** 10:22  Checando Sage e DAC; reiniciando EMACS
-** 10:25  Iniciando a leitura: QCA milestones
+** 10:12 Atualizando sistema e doom
+** 10:22 Checando Sage e DAC; reiniciando EMACS
+** 10:25 Iniciando a leitura: QCA milestones
 
-Leitura com pouco foco.
-** 11:52  Fim da leitura
-** 14:39  Fim descanso, retorno atividades
-Leve dor de cabeça
-** 16:33  Pausa para café da tarde
-** 17:08  Retornando
-** 17:34  Fim da leitura, início correção tabela latex (VECM)
-** 18:30  Fim correções latex, commitando trabalho
+Leitura cm pouco foco.
+** 11:52 Fim da leitura
+
+- Mercado 79.57
+
+** 14:39 Fim descanso, retorno atividades
+Leve dor e cabeça
+** 16:33 Pausa para café da tarde
+** 17:08 Retornando
+** 17:34 Fim da leitura, início correção tabela latex (VECM)
+** 18:30 Fim correções latex, commitando trabalho
+** 18:36 Fim dos trabalhos
+
+- Buscar hamburguer raízes zen: 48.00
+- Ajustar doom?
+* terça, 16/02/2021
+:PROPERTIES:
+:CREATED:  20210216
+:END:
+** 08:20 Ajustando configurações org-journal, atualizando sistema, verificando sage e dac
+** 08:24 Comparando configuração com a do DT
+** 08:40 Faxina
+** 09:11 Banho e lente
+** 09:19 Procurando cl deprecated 
+** 09:27 Banho e lente
+** 09:51 Início trabalho: atualização leituras QCA
+** 12:40 Almoço
+** 14:11 Fim almoço
+** 14:28 Retorno trabalho
+Estava vendo sobre GTD antes.
+** 16:20 Café da tarde
+** 16:47 Retorno
+** 17:44 Fim do trabalho proposto

@@ -1,0 +1,44 @@
+#+TITLE: setterfieldVarietiesCapitalismIncreasing2020: Varieties of capitalism, increasing income inequality and the sustainability of long-run growth (2020, Cambridge Journal of Economics)
+#+ROAM_KEY: cite:setterfieldVarietiesCapitalismIncreasing2020
+#+ROAM_TAGS: reformism Kaleckian "Growth model" neoliberalization "Household debt" Inequality VoC
+Time-stamp: 2021-02-16
+- tags ::
+
+
+* Backlinks
+[[file:20210210190446-variaeties_of_capitalisms.org][Variaeties of Capitalisms]]
+
+[[file:20210210092940-household_debt_and_bank_credit.org][Household debt and Bank credit]]
+
+* FISH-5SS
+
+
+|---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <40>                                        | <50>                                                                                                                                                                                                              |
+| *Background*                                  | Inequality–debt–crisis nexus has received growing attention after the GFC. Debt both boosts consumption in the short-run, but it is not sustainable in the long-run. US and Germany have archetypes in VoC terms. |
+| *Supporting Ideas*                            | Emulation effects  and cascades expenditures.                                                                                                                                                                     |
+| *Purpose*                                     | Evaluate if the degree of liberalism affects the growth sustentability.                                                                                                                                           |
+| *Originality/value (Contribution)*            |                                                                                                                                                                                                                   |
+| *Relevance*                                   | VoC appear on the particularities of distributional regimes.                                                                                                                                                      |
+| *Design/methodology/approach*                 | Numerical analysis for US and UK using a Kaleckian growth model.                                                                                                                                                  |
+| *Results*                                     | Long run sustainable path requires a wide range o institutional reform                                                                                                                                            |
+| *(Interesting) Findings*                      |                                                                                                                                                                                                                   |
+| *Research limitations/implications (Critics)* |                                                                                                                                                                                                                   |
+| *Uncategorized stuff*                         | Presents an fully reformed US regime with low interest rates and public expenditures on infraestructure which produces robust and sustainable growth path in the long-run.                                        |
+| *5SS*                                         |                                                                                                                                                                                                                   |
+|---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+* Specifics comments
+ :PROPERTIES:
+ :Custom_ID: setterfieldVarietiesCapitalismIncreasing2020
+ :AUTHOR: Setterfield, M., & Kim, Y. K.
+ :JOURNAL: Cambridge Journal of Economics
+ :YEAR: 2020
+ :DOI:  http://dx.doi.org/10.1093/cje/bez067
+ :URL: https://academic.oup.com/cje/article/44/3/559/5736594
+ :END:
+
+
+* PDF Highlights:PROPERTIES:
+ :NOTER_DOCUMENT:
+ :END:

@@ -1,7 +1,7 @@
 #+OPTIONS: toc:nil num:nil
-#+title: Household debt and Bank credit
+#+title: QCA Theoretical Econimcs Foundations
 #+AUTHOR: Gabriel Petrini
-#+ARCHIVE: ../archive/Panel.org::* Household debt and Bank credit
+#+ARCHIVE: ../archive/QCA.org::* Data
 #+TODO: READ SKIM PARTIAL WAIT MAYBE | REF REPORT DONE ARCH
 #+PROPERTY: COLUMNS  %8STATUS %7TODO(Decision) %15KEY(Bibtex key) %4YEAR  %7RELEVANCE %7IMPACT %4CITE
 #+PROPERTY: DECISION_ALL Read File Skip PartialRead
@@ -13,19 +13,23 @@
 #+PROPERTY: YEAR_ALL
 #+PROPERTY: KEY_ALL
 
-[[file:20210210091646-chpanel.org][Panel readings]]
+[[file:20210210093026-qca_readings.org][QCA readings]]
 
 #+BEGIN: columnview :maxlevel 2 :id global
+| STATUS | Decision | Bibtex key     | YEAR | RELEVANCE | IMPACT | CITE |
+|--------+----------+----------------+------+-----------+--------+------|
+| Filed  | PARTIAL  | galan_2019_LTV | 2019 | Regular   | Low    | Yes  |
 #+END
 
-
-* PARTIAL [#A] HOUSEHOLD DEBT IN OECD COUNTRIES: STYLISED FACTS AND POLICY ISSUES
+* PARTIAL [#A] BEYOND THE LTV RATIO: NEW MACROPRUDENTIAL LESSONS FROM SPAIN
    :PROPERTIES:
    :ZOTERO:   Yes
-   :YEAR:     2016
+   :YEAR:     2019
    :STATUS:   Filed
    :RELEVANCE: Regular
    :IMPACT:   Low
    :CITE:     Yes
-   :KEY:  andre_2016_HOUSEHOLD
+   :KEY:  galan_2019_LTV
    :END:
+
+   *Reason:* Theoretical relevance of LTV ratios
