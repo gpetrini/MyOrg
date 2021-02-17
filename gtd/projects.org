@@ -7,12 +7,14 @@
 
 * QCA [100%] :Dissertation:
 
+** TODO Ler appêndice online manual QCA (chapter 8)
 * Panel [100%] :Dissertation:
 
 * ABM [100%] :Dissertation:
 
 * VECM [100%] :Article:
 
+** TODO Repensar data para escrever introdução VECM
 * Orientações [100%]
 
 * Cecon [100%] :Group:

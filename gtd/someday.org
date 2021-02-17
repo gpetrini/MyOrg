@@ -53,3 +53,6 @@ PhD Student 29 Euros for 2 years
 - Company?
 
 * TODO Ver Hydra :Emacs:
+* TODO Resolver lentidão Zotero :Computer:
+* TODO Org-noter: extrair página do texto e não do PDF :Emacs:
+* TODO Remover ref links do org-roam-server :Emacs:Org-roam:

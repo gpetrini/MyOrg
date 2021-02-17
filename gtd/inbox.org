@@ -3,8 +3,3 @@
 #+AUTHOR: Gabriel Petrini
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 * Tasks
-** TODO https://github.com/zzamboni/dot-doom
-** TODO Repensar data para escrever introdução VECM
-** TODO Criar issue org-noter
-** TODO Criar entrada de journal na tabela de leituras
-** TODO Ler appêndice online manual QCA (chapter 8)
