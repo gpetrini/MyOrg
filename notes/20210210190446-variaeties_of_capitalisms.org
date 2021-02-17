@@ -258,7 +258,7 @@ CLOSED: [2021-02-16 ter 15:42]
   :PROPERTIES:
   :YEAR:     2013
   :ZOTERO:   Yes
-  :STATUS:   Downloaded
+  :STATUS:   Finished
   :RELEVANCE: Regular
   :IMPACT:   Regular
   :CITE:     Yes
@@ -269,7 +269,7 @@ CLOSED: [2021-02-16 ter 15:47]
   :PROPERTIES:
   :YEAR:     2016
   :ZOTERO:   Yes
-  :STATUS:   Filed
+  :STATUS:   Finished
   :RELEVANCE: Low
   :IMPACT:   Regular
   :CITE:     Yes
@@ -280,7 +280,7 @@ CLOSED: [2021-02-16 ter 15:24]
   :PROPERTIES:
   :YEAR:     2018
   :ZOTERO:   Yes
-  :STATUS:   Downloaded
+  :STATUS:   NotFound
   :RELEVANCE: Low
   :IMPACT:   Regular
   :CITE:     Yes

@@ -3,6 +3,8 @@
 #+AUTHOR: Gabriel Petrini
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-bigblow.setup
 
+* Dissertation's general settings [100%]:Dissertation:
+
 * QCA [100%] :Dissertation:
 
 * Panel [100%] :Dissertation:

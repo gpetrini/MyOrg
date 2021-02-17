@@ -1,0 +1,249 @@
+#+TITLE: lapavitsas_2013_Financialisation: Financialisation varied: a comparative analysis of advanced economies (2013, Cambridge Journal of Regions, Economy and Society)
+#+OPTIONS: toc:nil num:nil
+#+ROAM_KEY: cite:lapavitsas_2013_Financialisation
+#+ROAM_TAGS:
+Time-stamp: 2021-02-17
+- tags ::
+
+
+* Backlinks
+
+[[file:20210210190446-variaeties_of_capitalisms.org][Varieties of Capitalisms]]
+
+[[file:20210210092940-household_debt_and_bank_credit.org][Household debt and Bank credit]]
+
+
+* FISH-5SS
+
+
+|---------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <40>                                        | <50>                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| *Background*                                  | "The relative size of the financial sector has increased significantly across advanced economies during the last three decades." (Lapavitsas and Powell 2013:359)                                                                                                                                                                                                                                                                           |
+| *Supporting Ideas*                            |                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| *Purpose*                                     | Evaluate if tithe diversity of financialized economies is due to institucional diversity                                                                                                                                                                                                                                                                                                                                                    |
+| *Originality/value (Contribution)*            |                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| *Relevance*                                   | Provides an overview of both firms, banks and household sector and clarify the meaning of "financialization". Regarding the dissertation, indicates the relevance of the changes in banking sector to financial, securatized and real estate; highlights some changes in household sector regarding housing and; indicates the importance of institutions in the comprehension of the consequences of financial sector.                     |
+| *Design/methodology/approach*                 | Classical Marxist approach: relations between production and financial sphere. Data: aggregate national accounts. Comparative analyze based on  time-series visualization.                                                                                                                                                                                                                                                                  |
+| *Sample*                                      | USA, the UK, France, Germany and Japan                                                                                                                                                                                                                                                                                                                                                                                                      |
+| *Results*                                     | Financianlization in firm sector is due to shift from production-related from financial assets which does not inhibit the appropriation of the production sphere; banking sector financialization is related to a change twoards FIRE sector and funding sources; household provision origineted from the capital markets have an increasing share of its disposable income and mortgages are relevant for the debts dynamics in US and UK. |
+| *(Interesting) Findings*                      | Points out that the bifurcation in household debt bifurcation is related to mortgage and housing provision for US and UK.                                                                                                                                                                                                                                                                                                                   |
+| *Research limitations/implications (Critics)* | Aggregate data does not allows for a proper analyze of the composition of banking sector asset and liability side. In this sense, textcite:jorda_2016_great contribution stands out.                                                                                                                                                                                                                                                        |
+| *Uncategorized stuff*                         | Presents some critiques to the VoC literature arguing that the ideal typologies emerges as the interactions of institutional background and policy making.                                                                                                                                                                                                                                                                                  |
+| *5SS*                                         | Institutions are relevant to understand the diversity in financialization while ideal typologies are insufficient to describe its changes.                                                                                                                                                                                                                                                                                                  |
+|---------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+* Specifics comments
+ :PROPERTIES:
+ :Custom_ID: lapavitsas_2013_Financialisation
+ :AUTHOR: Lapavitsas, C., & Powell, J.
+ :JOURNAL: Cambridge Journal of Regions, Economy and Society
+ :YEAR: 2013
+ :DOI:  http://dx.doi.org/10.1093/cjres/rst019
+ :URL: https://academic.oup.com/cjres/article-lookup/doi/10.1093/cjres/rst019
+ :END:
+
+
+* Extracted Annotations (17/02/2021 11:33:54)
+:PROPERTIES:
+ :NOTER_DOCUMENT: /HDD/PDFs/2013/lapavitsas_2013_Financialisation/lapavitsas_powell_2013_financialisatio.pdf
+ :END:
+
+"The relative size of the financial sector has increased significantly across advanced economies during the last three decades." (Lapavitsas and Powell 2013:359)
+
+Background (note on p.359)
+
+
+
+
+"there is no generally agreed meaning to the ter" (Lapavitsas and Powell 2013:359)
+
+"undamental tendencies: first, industrial (and commercial) enterprises have acquired capacity independently to engage in financial transactions in open markets; second, banks have re-directed their activities toward mediating in open markets and lending to individuals; third, workers and, more generally, households have come to rely on the financial system to meet basic needs, including pensions, housing, education and health." (Lapavitsas and Powell 2013:359)
+
+Tendencies in financialized economies. (note on p.359)
+
+
+
+
+"established that the trends of financialisation vary according to the historical, institutional and political relations in each country," (Lapavitsas and Powell 2013:360)
+
+Diversity according to institutional and historical paths. (note on p.360)
+
+
+
+
+"finance, is particularly susceptible to institutional and other influences" (Lapavitsas and Powell 2013:360)
+
+The financialization diversity is related to the institutional influence on financial dimension. (note on p.360)
+
+
+
+
+"USA, the UK, France, Germany and Japan" (Lapavitsas and Powell 2013:360)
+
+Sample (note on p.360)
+
+
+
+
+"In short, is there evidence of a shared overall shift toward financialisation among advanced capitalist economies that also reflects institutional and political differences?" (Lapavitsas and Powell 2013:360)
+
+Propose: the diversity of financialized economies is due to institucional diversity? (note on p.360)
+
+
+
+
+"classical Marxist political economy" (Lapavitsas and Powell 2013:360)
+
+Method. (note on p.360)
+
+
+
+
+"ssues also have a bearing on the established theoretical debates on varieties of capitalism" (Lapavitsas and Powell 2013:360)
+
+Dialogs with VoC literature. (note on p.360)
+
+
+
+
+"It is postulated that production and finance exhibit a two-way relationship, even if the sphere of production shapes the conduct of finance in the final instance." (Lapavitsas and Powell 2013:362)
+
+Argument defending the relevance of a Classical Marxist framework. (note on p.362)
+
+
+
+
+"with specific profit-making motives, not a nebulous realm into which capital seeks to escape when profitability is low in production." (Lapavitsas and Powell 2013:362)
+
+Critics on the capital disassociation with production. (note on p.362)
+
+
+
+
+"Financialisation in developing countries, for instance, has been driven by the opening of capital accounts, the import of foreign capital, the accumulation of foreign exchange reserves and the increasing establishment of foreign bank" (Lapavitsas and Powell 2013:364)
+
+Particularities of financialization in advanced economies. (note on p.364)
+
+
+
+
+"Zysman (1983) shifted the focus of this debate toward examining the interaction between governments and markets in delivering industrial change. Closely related are also Albert's (1991, 1993) influential depictions of Rhineland versus Anglo-Saxon capitalism. The implicit or explicit assumption in much of this literature is that finance plays a central role in determining the content and form of a capitalist economy." (Lapavitsas and Powell 2013:364)
+
+Dialogues with VoC literature. Main argument: finance plays a central role in determinend the content and the form of a capitalist economy. (note on p.364)
+
+
+
+
+"shortterm finance relying on the open market characterises the former, long-term finance relying on banks characterises the latter." (Lapavitsas and Powell 2013:364)
+
+Summarizes VoC typologies. (note on p.364)
+
+
+
+
+"Liberal Market Economies' are marked by short-term capital, deregulated labour markets, general education and interfirm competition, while 'Coordinated Market Economies' are marked by long-term capital, regulated labour markets, vocational training and inter-firm coordination." (Lapavitsas and Powell 2013:364)
+
+Main conclusion of Hall and Soskice.
+OBS: Focus on Firms and governments. (note on p.364)
+
+
+
+
+"This interaction occurs within an institutional context influenced by state policy making, resulting in systemic change that reflects the peculiarities of each countr" (Lapavitsas and Powell 2013:365)
+
+Critique to VoC: this patterns emerges by the interaction between institutional context and policy making. (note on p.365)
+
+
+
+
+"national accounts data" (Lapavitsas and Powell 2013:365)
+
+Source (note on p.365)
+
+
+
+
+"Financialisation of industrial (and commercial) enterprises can be expected to take the form of, first, a turn away from bank loans towards obtaining funds in open financial markets and, second, the accumulation of financial relative to other assets" (Lapavitsas and Powell 2013:365)
+
+This is the big picture of this section: an descrease of liabilities share and an increase of financial assets share on total assets.
+Next, the control for firms' size.
+(note on p.365)
+
+
+
+
+"For banks, financialisation can be expected to appear as an increase in the relative weight of lending to finance, insurance and real estate as well as to households. This would relate to the ability of financial institutions to extract profits in the sphere of circulation, even by deploying expropriating and predatory methods, including from the revenue of workers and households." (Lapavitsas and Powell 2013:370)
+
+This dimension of financialization dialogues with the QCA dissertation argument: Banks profits related to lending to finance, real estate and households (circulation sphere).
+This chage, however, does not inhibit the capacity to expropriate the production sector. (note on p.370)
+
+
+
+
+"shows a declining trend across the sample (except for Japan after 1987)." (Lapavitsas and Powell 2013:370)
+
+Decrease of depoistion as a source of funds. (note on p.370)
+
+
+
+
+"reliance of banks on open market funding." (Lapavitsas and Powell 2013:370)
+
+As a consequence, depends more on open market funding. (note on p.370)
+
+
+
+
+"scertaining the sources of bank funding, but the data do not allow it" (Lapavitsas and Powell 2013:370)
+
+Limitation (pointed out by the authors): the aggregative nature of the data do not allows to depeicts the source of bank funding. (note on p.370)
+
+
+
+
+"The ratio has the advantage of referring to the only lending category in the data that is solely for productive purposes, and which is less likely to have been securitised and thus taken off the balance sheet.2" (Lapavitsas and Powell 2013:371)
+
+In order to analyze banking changes, the authors isolate Finance, Insurance and Real Estate proposes to capture productive-motivation only. (note on p.371)
+
+
+
+
+"This aspect of financialisation emerges even more strongly when considering household balance sheets in the next section." (Lapavitsas and Powell 2013:371)
+
+Trends in household sector complements the movements in banking sector. (note on p.371)
+
+
+
+
+"For households, financialisation can be expected to appear as increasing acquisition of financial liabilities relative to ability to pay, captured by the ratio of total financial liabilities to gross disposable income of households." (Lapavitsas and Powell 2013:373)
+
+Household sector big picture: higher share of financial liabilities to disposable income.
+Ideia: evaluate if ABM reproduce this stilyzed fact. (note on p.373)
+
+
+
+
+"The most important factor that makes for both the increase and the bifurcation of household indebtedness is mortgage debt due to changing patterns of housing provision in each country." (Lapavitsas and Powell 2013:374)
+
+Really important: there is a biffurcation in the pattern due to mortgage debt related to housing provision in each countrie. (note on p.374)
+
+
+
+
+"It is striking that French household indebtedness, which has historically been quite low, also accelerated in the 2000s," (Lapavitsas and Powell 2013:374)
+
+Dispite France do not have unsecured consumer debt, its trajectory is similar to UK and US. (note on p.374)
+
+
+
+
+"Furthermore, in both the USA and the UK, household holdings of securities shifted away from government securities and towards nonfinancial and foreign bonds, though from a lower level in the UK." (Lapavitsas and Powell 2013:374)
+
+There is a shift in household portfolio for both US and UK, but this change is not relevant fo dissertation. (note on p.374)
+
+
+
+
+"Marxist analysis of the relationship between production and" (Lapavitsas and Powell 2013:375)
+
+The marxist framework shows up in the relation between production and finance sphere. (note on p.375)

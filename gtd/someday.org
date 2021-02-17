@@ -42,3 +42,14 @@ PhD Student 29 Euros for 2 years
 * TODO [#C] Remover heading com número da página org-noters :Emacs:
 
 * WAIT [#B] Dr Watson tese
+
+* TODO Compare configs :Emacs:
+
+- https://github.com/zzamboni/dot-doom
+- https://github.com/PythonNut/quark-emacs
+- http://pages.sachachua.com/.emacs.d/Sacha.html
+
+* TODO Ver por que Emacs fica lento depois de um tempo de uso :Emacs:
+- Company?
+
+* TODO Ver Hydra :Emacs:

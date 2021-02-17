@@ -43,3 +43,23 @@ Estava vendo sobre GTD antes.
 ** 17:44 Fim do trabalho proposto, commitando
 ** 17:54 Ininciando GTD
 ** 18:49 Fim GTD, commitando mudanças
+
+* quarta, 17/02/2021
+:PROPERTIES:
+:CREATED:  20210217
+:END:
+** 08:25 Conferindo DAC e Sage
+** 09:24 Banho e lente
+** 10:10 Ida Karina
+** 10:34 Fim config Emacs; Início dos trabalhos 
+** 11:57 Fim fichamento Lapavitsas
+** 12:01 Início leitura Baccaro
+** 12:46 Fim leitura Baccaro e pausa para começar a fazer almoço
+** 13:08 Fim Baccaro
+** 14:28 Fim almoço, início pequenos ajustes Emacs
+** 14:51 Retorno ao trabalho
+** 16:25 Fim leitura Howell, pausa
+** 17:07 Retorno fichamento
+** 17:34 Fim fichamento Howell, pequena pausa.
+** 17:42 Início leitura manual QCA
+** 18:33 Fim leitura manual QCA. Commitando trabalho 
