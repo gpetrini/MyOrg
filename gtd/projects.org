@@ -1,13 +1,15 @@
 #+OPTIONS: num:nil toc:nil
 #+TITLE: Active Projects
 #+AUTHOR: Gabriel Petrini
-#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-bigblow.setup
+#+SETUPFILE: /HDD/Org/org-html-themes/org/theme-bigblow-local.setup
 
 * Dissertation's general settings [100%]:Dissertation:
 
 * QCA [100%] :Dissertation:
 
 ** TODO Ler appêndice online manual QCA (chapter 8)
+** TODO Rascunhar estrutura do capítulo QCA com VoC
+** TODO Planejar escritas
 * Panel [100%] :Dissertation:
 
 * ABM [100%] :Dissertation:

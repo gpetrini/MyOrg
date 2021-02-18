@@ -2,9 +2,9 @@
 #+title: Macroeconomia da Demanda Efetiva na abordagem do excedente
 #+AUTHOR: Gabriel Petrini
 #+DATE: 2º Semestre de 202
+#+SETUPFILE: /HDD/Org/org-html-themes/org/theme-bigblow-local.setup
 #+LANG: pt_Br
 #+ROAM_TAGS: "Notas de Aula" "Demanda Efetiva" UFRJ
-
 
 * Introdução <2020-12-03 qui>
 ** Apresentação
@@ -1110,3 +1110,104 @@ P = c_{repo}(1+m_{real})
 - *Pivetti:* Taxa de juros é o piso
   + Mais observável e menos subjetiva
   + Influência da política monetária e financeira sobre a distribuição e não apenas efeitos sobre nível de atividade
+
+*** Conflito e inflação
+
+- Sylos Labini :: Todos os setores tem custo, repasse é sempre assimétrico
+  + Não apenas os /flex price/
+- Kaldor :: Inflação rastejante; explosão salarial
+  + Rastejante porque existia inflação de custo persistente;
+  + Existe um setor em que a produtividade cresce mais rápido e os sindicatos são fortes
+- Alta inflação :: Taxa de juros indexada ($i$) em função do preço em $t-1$
+- Dolarização :: $(1+m_{nom.}) = (1+e)(1+i^{*})(1+npe)$
+
+------
+** Inflação e nível de atividade
+
+*** Questões
+
+- Efeito de um aumento da demanda causa aumento do nível de preços, inflação ou aceleração da inflação?
+- Aumento dos salários
+
+*** Curva de Phillips
+
+Na curva de Phillips, pontos para além de $Un$ não há escassez de mão de obra, mas sim é o ponto ao qual que existe desemprego mas não zera a inflação salarial de custos.
+Lerner, por exemplo, distinguiu entre alto e baixo pleno emprego.
+Somente para além de $Un$ há excesso de demanda por trabalho.
+Além disso, a retórica de Friedman de que o Governo tentaria manter o nível de atividade persistentemente para além do pleno emprego não era compatível com as propostas keynesianas.
+
+*** Nível geral de preços, inflação e aceleração da inflação
+
+- Phillips :: Nível de atividade e inflação
+  + Inflação salarial pode ser de custo
+    - Alto e baixo pleno emprego (Abba Lerner)
+- Friedman-Phelps ::
+  + Inflação de demanda no alto pleno-emprego
+  + Hiato do produto e aceleração da inflação
+- Novo consenso :: núcleo da inflação é de demanda:
+  + Persistência completa dos choques
+  + Produto potencial dado pelo lado da oferta
+  + Choques de oferta são aleatórios
+- Inflação inercial :: Núcleo da inflação é de custos.
+  Demanda não tem grandes efeitos.
+  Choques de oferta não são aleatórios, mas a persistência vem da inércia e não do conflito.
+
+**** Persistência parcial ($a<1$)
+
+*** Histerese
+
+- Forte e fraca
+- Grau de utilização do capital: reverte à média
+- Taxa de desemprego aberta: histerese parcial
+
+Persistência parcial parece histerese forne na taxa de desemprego aberto
+
+Níveis de produto e emprego: Histerese forte
+
+**** Histerese no produto (investimento induzido)
+
+- Persistência total ::
+  + Aceleração da inflação é temporária
+  + Ganho do produto e capacidade é permanente
+- Persistência parcial ::
+  + Nível de inflação é temporária
+  + Ganho do produto e capacidade é permanente
+  + Apenas o nível geral de preços terá um aumento permanente
+
+Enquanto o grau de utilização estiver acima do normal, haverá inflação.
+Esta inflação será multiplicada pelo grau de inércia ($a$).
+Se a inércia for parcial, a inflação será zero no longo prazo, mas com um nível de produto maior uma vez que o produto potencial se ajusta ao corrente.
+
+Recentemente na literatura heterodoxo, alguns autores têm utilizado uma variação da NAIRU em que o conflito distributivo (via emprego) *acelera* a inflação.
+No entanto, o conflito distributivo nesses termos é explosivo.
+** Mercado de trabalho
+
+- Inflação esperada, situação do mercado de trabalho, outros elementos do conflito distributivo
+- Crescimento da produtividade
+  + Produtividade é endógena e segue o investimento
+- Ajustamento da Oferta de trabalho
+  + Movimento da oferta de trabalho se dá pelas possibilidades de emprego e não por conta do salário (teoria neoclássica)
+  + Oferta de trabalho se alterna também próximo ao pleno-emprego
+
+Implicações:
+- Curva de Phillips ampliada por conflito distributivo
+-
+*** Discussão sobre força de trabalho
+
+- Nível de emprego pode aumentar por conta de mais trabalhadores entrando na força de trabalho, ou seja, ajuste é por pessoas que não estavam procurando emprego
+- Deve ser observada a taxa de desemprego *por horas trabalhadas*
+  + Taxa de desemprego aberta não é um bom indicador
+  + Não fazer analogia com grau de utilização da capacidade e taxa de desemprego
+** Crescimento liderado pela demanda e restrito pela política econômica: resumo
+
+- Ajustamento da capacidade à demanda
+- Inflação de custos (margens nominais)
+- Persistência parcial
+- Taxa de desemprego persistente alta afeta conflito
+- Problema de balança de pagamento
+
+*** Alternativa ao Novo Consenso
+- Macro da demanda efetiva ::
+  + Produto potencial afetado pela evolução da demanda
+  + Inflação de custos e conglito distributivo
+  + Taxa de juros variável institucional e distributiva

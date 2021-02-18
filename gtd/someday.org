@@ -1,7 +1,7 @@
 #+OPTIONS: num:nil toc:nil
 #+TITLE: Someday
 #+AUTHOR: Gabriel Petrini
-#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+SETUPFILE: /HDD/Org/org-html-themes/org/theme-readtheorg-local.setup
 #+TODO: TODO PROG WAIT ATTR | CANC KILL DONE
 
 * TODO Converter anotações para Org-roam :Dissertation:
@@ -52,7 +52,11 @@ PhD Student 29 Euros for 2 years
 * TODO Ver por que Emacs fica lento depois de um tempo de uso :Emacs:
 - Company?
 
-* TODO Ver Hydra :Emacs:
+* DONE Ver Hydra :Emacs:
+CLOSED: [2021-02-17 qua 22:18]
+Não parece ser aplicável ao meu caso.
 * TODO Resolver lentidão Zotero :Computer:
 * TODO Org-noter: extrair página do texto e não do PDF :Emacs:
 * TODO Remover ref links do org-roam-server :Emacs:Org-roam:
+* TODO Install GCC emacs
+* TODO Pesquisar mu4e

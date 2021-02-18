@@ -1,6 +1,6 @@
 #+OPTIONS: num:nil H:6 ':t
 #+TITLE: lunde_2016_Milestones: Milestones in European housing finance
-#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-bigblow.setup
+#+SETUPFILE: /HDD/Org/org-html-themes/org/theme-bigblow-local.setup
 #+ROAM_TAGS: Institucions Finance Europe Dissertation "Comparative Analysis" Housing
 Time-stamp: 2021-02-04
 

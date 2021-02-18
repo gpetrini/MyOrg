@@ -49,11 +49,7 @@ Estava vendo sobre GTD antes.
 :CREATED:  20210217
 :END:
 ** 08:25 Conferindo DAC e Sage
-** 09:24 Banho e lente
-** 10:10 Ida Karina
-** 10:34 Fim config Emacs; Início dos trabalhos 
-** 11:57 Fim fichamento Lapavitsas
-** 12:01 Início leitura Baccaro
+**Baccaro
 ** 12:46 Fim leitura Baccaro e pausa para começar a fazer almoço
 ** 13:08 Fim Baccaro
 ** 14:28 Fim almoço, início pequenos ajustes Emacs
@@ -64,3 +60,20 @@ Estava vendo sobre GTD antes.
 ** 17:42 Início leitura manual QCA
 ** 18:33 Fim leitura manual QCA. Commitando trabalho 
 ** 18:34 Revendo inboxes
+** 18:41 Fim checkout GTD. Fim do expediente
+
+* quinta, 18/02/2021
+:PROPERTIES:
+:CREATED:  20210218
+:END:
+** 07:48 Fim café, pesquisando GCC emacs
+** 10:17 Lendo Serrano. Emacs gcc instalado antes disso.
+** 10:28 Pausas para ver mensagens
+** 10:39 Retorno para leitura de Serrano
+** 10:47 Fim leitura apostila Serrano
+** 11:03 Corrigindo PDF tools e retorno para leitura
+** 11:17 Retorno leitura
+** 11:27 Início preparo do almoço
+** 11:33 Retornando leitura
+** 12:17 Fim leitura Serrano; extraindo notas e começando almoço
+** 13:34 Corte de cabelo 
