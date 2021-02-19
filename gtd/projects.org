@@ -3,15 +3,17 @@
 #+AUTHOR: Gabriel Petrini
 #+SETUPFILE: /HDD/Org/org-html-themes/org/theme-bigblow-local.setup
 
-* Dissertation's general settings [100%]:Dissertation:
+* Dissertation's general settings [100%] :Dissertation:
 
 * QCA [100%] :Dissertation:
 
-** TODO Ler appêndice online manual QCA (chapter 8)
-** TODO Rascunhar estrutura do capítulo QCA com VoC
-** TODO Planejar escritas
+** TODO Ler appêndice online manual QCA (chapter 8) :Manual:
+** TODO Rascunhar estrutura do capítulo QCA com VoC :Writing:
+** TODO Planejar escritas :Writing:Planning:
+** TODO https://www.e-elgar.com/shop/usd/advanced-introduction-to-housing-studies-9781789908336.html :Dissertation:Readings:Institutions:Housing:
 * Panel [100%] :Dissertation:
 
+** TODO Ver Statista :Data:
 * ABM [100%] :Dissertation:
 
 * VECM [100%] :Article:

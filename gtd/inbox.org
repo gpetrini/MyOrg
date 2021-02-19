@@ -3,7 +3,3 @@
 #+AUTHOR: Gabriel Petrini
 #+SETUPFILE: /HDD/Org/org-html-themes/org/theme-readtheorg.setup
 * Tasks
-** TODO Pesquisar waiting for git at emacs start up
-** TODO Ver Statista
-** TODO https://www.e-elgar.com/shop/usd/advanced-introduction-to-housing-studies-9781789908336.html
-** TODO Garrafa Térmica

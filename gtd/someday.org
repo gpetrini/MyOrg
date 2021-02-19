@@ -17,11 +17,6 @@
 - [ ] Computador
 - [ ] Github
 
-* CANC Syntax highlighting
-CLOSED: [2021-02-16 ter 18:20]
-
-[[https://www.reddit.com/r/emacs/comments/lbkmmz/the_best_syntax_highlighting_in_a_pdf_youll_see_a/?utm_medium=android_app&utm_source=share][Link]]
-
 * WAIT Membership [[https://enhr.net/members/membership/][EMHR]] :Dissertation:
 PhD Student 29 Euros for 2 years
 * ATTR [#A] Comprovante ADUNICAMP (RPPS) :Research:
@@ -39,24 +34,27 @@ PhD Student 29 Euros for 2 years
 * WAIT Uso reserva técnica :Bolsa:
 - [ ] Curso inglês?
 
-* TODO [#C] Remover heading com número da página org-noters :Emacs:
+* WAIT [#C] Remover heading com número da página org-noters :Emacs:
+
+- Issue created
 
 * WAIT [#B] Dr Watson tese
+- Esperando resposta FAPESP
 
-* TODO Compare configs :Emacs:
+* TODO Compare configs [0/3] :Emacs:
 
-- https://github.com/zzamboni/dot-doom
-- https://github.com/PythonNut/quark-emacs
-- http://pages.sachachua.com/.emacs.d/Sacha.html
+- [X] https://github.com/zzamboni/dot-doom
+- [X] https://github.com/PythonNut/quark-emacs
+- [ ] http://pages.sachachua.com/.emacs.d/Sacha.html
 
 * TODO Ver por que Emacs fica lento depois de um tempo de uso :Emacs:
 - Company?
+- GCC fica levemente lento com company mode
 
-* DONE Ver Hydra :Emacs:
-CLOSED: [2021-02-17 qua 22:18]
-Não parece ser aplicável ao meu caso.
 * TODO Resolver lentidão Zotero :Computer:
 * TODO Org-noter: extrair página do texto e não do PDF :Emacs:
-* TODO Remover ref links do org-roam-server :Emacs:Org-roam:
-* TODO Install GCC emacs
-* TODO Pesquisar mu4e
+* TODO Remover ref links do org-roam-server :Emacs:OrgRoam:
+* TODO Pesquisar waiting for git at emacs start up :Emacs:
+* TODO Garrafa Térmica :@Home:
+* TODO mu4e filtrar contatos :Emacs:
+* TODO DT go to GTD files :Emacs:

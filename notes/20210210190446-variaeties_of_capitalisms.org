@@ -7,7 +7,7 @@
 #+PROPERTY: COLUMNS  %8STATUS %7TODO(Decision) %15KEY(Reference) %7RELEVANCE
 #+PROPERTY: DECISION_ALL Read File Skip PartialRead
 #+PROPERTY: ZOTERO_ALL Yes No Partial Entry
-#+PROPERTY: STATUS_ALL Reading Searching Abandoned Finished Skimmed NotFound 404 Downloaded Filed
+#+PROPERTY: STATUS_ALL Reading Searching Abandoned =Finished= Skimmed NotFound 404 Downloaded Zotero
 #+PROPERTY: RELEVANCE_ALL High Regular Low None
 #+PROPERTY: IMPACT_ALL High Regular Low None
 #+PROPERTY: CITE_ALL Yes No Wait
@@ -20,43 +20,46 @@
 | STATUS     | Decision | Reference                                          | RELEVANCE |
 |------------+----------+----------------------------------------------------+-----------|
 |            |          |                                                    |           |
-| Filed      | PARTIAL  | cite:hancke_2009_Debating                          | High      |
-| Filed      | READ     | cite:hallVarietiesCapitalismInstitutional2009      | High      |
+|            |          |                                                    |           |
+| Zotero     | PARTIAL  | cite:hancke_2009_Debating                          | High      |
+| Zotero     | READ     | cite:hallVarietiesCapitalismInstitutional2009      | High      |
 |            | READ     |                                                    |           |
 |            | READ     |                                                    |           |
-| Filed      | READ     |                                                    | High      |
-| Filed      | READ     | cite:blyth_2003_Same                               | High      |
-| Filed      | READ     | cite:fernandez_2016_Financialization               | High      |
-| Filed      | READ     | cite:fuller_2015_Who                               | Regular   |
-| Filed      | READ     | cite:blackwell_2019_Historicizing                  | High      |
-| Filed      | READ     | cite:hay_2005_Two                                  | Regular   |
-| Filed      | READ     |                                                    | High      |
-| Filed      | READ     |                                                    | High      |
-| Filed      | SKIM     | cite:hay_2020_Does                                 | High      |
-| Filed      | SKIM     | cite:hay_2004_Common                               | High      |
-| Filed      | SKIM     | cite:crouch_2005_Dialogue                          | High      |
-| Filed      | SKIM     | cite:setterfieldVarietiesCapitalismIncreasing2020a | Regular   |
+| Zotero     | READ     |                                                    | High      |
+| Zotero     | READ     | cite:blyth_2003_Same                               | High      |
+| Zotero     | READ     | cite:fernandez_2016_Financialization               | High      |
+| Zotero     | READ     | cite:fuller_2015_Who                               | Regular   |
+| Zotero     | READ     | cite:blackwell_2019_Historicizing                  | High      |
+| Zotero     | READ     | cite:hay_2005_Two                                  | Regular   |
+| Zotero     | READ     |                                                    | High      |
+| Zotero     | READ     |                                                    | High      |
+| Zotero     | SKIM     | cite:hay_2020_Does                                 | High      |
+| Zotero     | SKIM     | cite:hay_2004_Common                               | High      |
+| Zotero     | SKIM     | cite:crouch_2005_Dialogue                          | High      |
+| Zotero     | SKIM     | cite:setterfieldVarietiesCapitalismIncreasing2020a | Regular   |
 | Downloaded | PARTIAL  | cite:hallVarietiesCapitalismInstitutional2001      | Low       |
-| Filed      | MAYBE    |                                                    | High      |
-| Filed      | MAYBE    | cite:hardie_2013_Banks                             | Low       |
-| Filed      | REF      | cite:howell_2003_Varieties                         | Regular   |
-| Downloaded | REF      | cite:lapavitsas_2013_Financialisation              | Regular   |
-| Filed      | REF      | cite:baccaroRethinkingComparativePolitical2016     | Low       |
-| Downloaded | REF      | cite:behringer_2018_Varieties                      | Low       |
+| Zotero     | MAYBE    |                                                    | High      |
+| Zotero     | MAYBE    | cite:hardie_2013_Banks                             | Low       |
+| =Finished= | REF      | cite:howell_2003_Varieties                         | Regular   |
+| =Finished= | REF      | cite:lapavitsas_2013_Financialisation              | Regular   |
+| =Finished= | REF      | cite:baccaroRethinkingComparativePolitical2016     | Low       |
+| =Finished= | REF      | cite:behringer_2018_Varieties                      | Low       |
 |            | ARCH     |                                                    |           |
-| Filed      | ARCH     |                                                    | Low       |
+| Zotero     | ARCH     |                                                    | Low       |
 | Downloaded | ARCH     | cite:beck_2009_Financial                           | Low       |
-| Filed      | ARCH     | cite:broadberry_2005_Economic                      | Low       |
+| Zotero     | ARCH     | cite:broadberry_2005_Economic                      | Low       |
 #+END
 
 
 
 * Inbox
+** Post-Keynesian macroeconomic foundations for Comparative Political Economy
+
 * PARTIAL [#A] [[https://global.oup.com/academic/product/debating-varieties-of-capitalism-9780199569663?cc=us&lang=en&#][Debating Varieties of Capitalism]] (Colection)
   :PROPERTIES:
   :YEAR: 2009
   :ZOTERO:   Yes
-  :STATUS:   Filed
+  :STATUS:   Zotero
   :RELEVANCE: High
   :IMPACT:   Regular
   :CITE:     Yes
@@ -68,7 +71,7 @@
   :PROPERTIES:
   :YEAR:     2009
   :ZOTERO:   Yes
-  :STATUS:   Filed
+  :STATUS:   Zotero
   :RELEVANCE: High
   :IMPACT:   Regular
   :CITE:     Yes
@@ -82,7 +85,7 @@
   :PROPERTIES:
   :YEAR:     2009
   :ZOTERO:   Yes
-  :STATUS:   Filed
+  :STATUS:   Zotero
   :RELEVANCE: High
   :IMPACT:   Low
   :CITE:     Yes
@@ -91,7 +94,7 @@
   :PROPERTIES:
   :YEAR: 2003
   :ZOTERO:   Yes
-  :STATUS:   Filed
+  :STATUS:   Zotero
   :RELEVANCE: High
   :IMPACT:   High
   :CITE:     Yes
@@ -101,7 +104,7 @@
   :PROPERTIES:
   :YEAR:     2016
   :ZOTERO:   Yes
-  :STATUS:   Filed
+  :STATUS:   Zotero
   :RELEVANCE: High
   :IMPACT:   Low
   :CITE:     Yes
@@ -111,7 +114,7 @@
   :PROPERTIES:
   :YEAR:     2015
   :ZOTERO:   Yes
-  :STATUS:   Filed
+  :STATUS:   Zotero
   :RELEVANCE: Regular
   :IMPACT:   Low
   :CITE:     Yes
@@ -121,7 +124,7 @@
   :PROPERTIES:
   :YEAR: 2018
   :ZOTERO:   Yes
-  :STATUS:   Filed
+  :STATUS:   Zotero
   :RELEVANCE: High
   :IMPACT:   Low
   :CITE:     Yes
@@ -131,7 +134,7 @@
   :PROPERTIES:
   :YEAR: 2005
   :ZOTERO:   Yes
-  :STATUS:   Filed
+  :STATUS:   Zotero
   :RELEVANCE: Regular
   :IMPACT:   Low
   :CITE:     Yes
@@ -141,7 +144,7 @@
   :PROPERTIES:
   :YEAR:     2017
   :ZOTERO:   Yes
-  :STATUS:   Filed
+  :STATUS:   Zotero
   :RELEVANCE: High
   :IMPACT:   Low
   :CITE:     Yes
@@ -153,7 +156,7 @@
   :YEAR:     2018
   :ZOTERO:   Yes
   :TYPE:     Case
-  :STATUS:   Filed
+  :STATUS:   Zotero
   :RELEVANCE: High
   :IMPACT:   Regular
   :CITE:     Yes
@@ -164,7 +167,7 @@
   :PROPERTIES:
   :YEAR:     2020
   :ZOTERO:   Yes
-  :STATUS:   Filed
+  :STATUS:   Zotero
   :RELEVANCE: High
   :IMPACT:   Regular
   :CITE:     Wait
@@ -175,7 +178,7 @@
   :PROPERTIES:
   :YEAR:  2004
   :ZOTERO:   Yes
-  :STATUS:   Filed
+  :STATUS:   Zotero
   :RELEVANCE: High
   :IMPACT:   Regular
   :CITE:     Yes
@@ -186,7 +189,7 @@
   :PROPERTIES:
   :YEAR:     2005
   :ZOTERO:   Yes
-  :STATUS:   Filed
+  :STATUS:   Zotero
   :RELEVANCE: High
   :IMPACT:   Regular
   :CITE:     Yes
@@ -196,7 +199,7 @@
   :PROPERTIES:
   :YEAR:     2020
   :ZOTERO:   Yes
-  :STATUS:   Filed
+  :STATUS:   Zotero
   :RELEVANCE: Regular
   :IMPACT:   High
   :CITE:     Yes
@@ -224,7 +227,7 @@
    :YEAR:     2017
    :ZOTERO:   Yes
    :TYPE:     Theory
-   :STATUS:   Filed
+   :STATUS:   Zotero
    :RELEVANCE: High
    :IMPACT:   Low
    :CITE:     Yes
@@ -234,7 +237,7 @@
   :PROPERTIES:
   :YEAR:  2013
   :ZOTERO:   Yes
-  :STATUS:   Filed
+  :STATUS:   Zotero
   :RELEVANCE: Low
   :IMPACT:   Low
   :CITE:     Wait
@@ -246,7 +249,7 @@ CLOSED: [2021-02-16 ter 17:33]
   :PROPERTIES:
   :YEAR:  2003
   :ZOTERO:   Yes
-  :STATUS:   Filed
+  :STATUS:   =Finished=
   :RELEVANCE: Regular
   :IMPACT:   Low
   :CITE:     Wait
@@ -258,7 +261,7 @@ CLOSED: [2021-02-16 ter 15:42]
   :PROPERTIES:
   :YEAR:     2013
   :ZOTERO:   Yes
-  :STATUS:   Finished
+  :STATUS:   =Finished=
   :RELEVANCE: Regular
   :IMPACT:   Regular
   :CITE:     Yes
@@ -269,7 +272,7 @@ CLOSED: [2021-02-16 ter 15:47]
   :PROPERTIES:
   :YEAR:     2016
   :ZOTERO:   Yes
-  :STATUS:   Finished
+  :STATUS:   =Finished=
   :RELEVANCE: Low
   :IMPACT:   Regular
   :CITE:     Yes
@@ -280,7 +283,7 @@ CLOSED: [2021-02-16 ter 15:24]
   :PROPERTIES:
   :YEAR:     2018
   :ZOTERO:   Yes
-  :STATUS:   NotFound
+  :STATUS:   =Finished=
   :RELEVANCE: Low
   :IMPACT:   Regular
   :CITE:     Yes
@@ -294,7 +297,7 @@ CLOSED: [2021-02-16 ter 15:44]
   :PROPERTIES:
   :YEAR:     2014
   :ZOTERO:   No
-  :STATUS:   Filed
+  :STATUS:   Zotero
   :RELEVANCE: Low
   :IMPACT:   Low
   :CITE:     No
@@ -317,7 +320,7 @@ CLOSED: [2021-02-16 ter 16:12]
   :PROPERTIES:
   :YEAR:     2005
   :ZOTERO:   Yes
-  :STATUS:   Filed
+  :STATUS:   Zotero
   :RELEVANCE: Low
   :IMPACT:   Low
   :CITE:     No
