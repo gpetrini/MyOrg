@@ -3,10 +3,11 @@
 #+AUTHOR: Gabriel Petrini
 #+SETUPFILE: /HDD/Org/org-html-themes/org/theme-bigblow-local.setup
 
-* Dissertation's general settings [0%] :Dissertation:
+* Dissertation's general settings [33%] :Dissertation:
 ** TODO Verificar requisitos para qualificação
 ** TODO Autenticação github ([[https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/][Link]])
-** WAIT [#B] Dr Watson tese
+** DONE [#B] Dr Watson tese
+CLOSED: [2021-02-22 seg 19:03]
 - Esperando resposta FAPESP
 
 * QCA [0%] :Dissertation:
