@@ -37,7 +37,7 @@
 | Zotero     | SKIM     | cite:hay_2004_Common                               | High      |
 | Zotero     | SKIM     | cite:crouch_2005_Dialogue                          | High      |
 | Zotero     | SKIM     | cite:setterfieldVarietiesCapitalismIncreasing2020a | Regular   |
-| Downloaded | PARTIAL  | cite:hallVarietiesCapitalismInstitutional2001      | Low       |
+| =Finished= | PARTIAL  | cite:hallVarietiesCapitalismInstitutional2001      | High      |
 | Zotero     | MAYBE    |                                                    | High      |
 | Zotero     | MAYBE    | cite:hardie_2013_Banks                             | Low       |
 | =Finished= | REF      | cite:howell_2003_Varieties                         | Regular   |
@@ -213,8 +213,8 @@
   :PROPERTIES:
   :YEAR:     2001
   :ZOTERO:   Yes
-  :STATUS:   Downloaded
-  :RELEVANCE: Low
+  :STATUS:   =Finished=
+  :RELEVANCE: High
   :IMPACT:   High
   :CITE:     Yes
   :KEY:  cite:hallVarietiesCapitalismInstitutional2001

@@ -1,0 +1,19 @@
+#+TITLE: Weekly Journal
+#+STARTUP: folded
+* segunda, 22/02/2021
+:PROPERTIES:
+:CREATED:  20210222
+:END:
+** 14:14 Início Leitura VoC
+** 15:56 Pausa
+** 16:24 Abrindo emails
+** 16:34 Vendo resultado PED e acesso ao Statista
+** 16:47 Retorno leitura
+** 17:18 Pequena pausa
+** 17:22 Retorno leitura
+** 17:50 Fim leitura; início FISH
+** 18:10 Fim fichamento. Pesquisa da lentidão associada ao company-mode
+** 18:28 Fim teste company; revendo inbox e rss
+** 18:48 Criando template julia DrWatson
+** 19:02 Mensagem de aviso github
+** 19:11 Fim do expediante; git ssh abandonado

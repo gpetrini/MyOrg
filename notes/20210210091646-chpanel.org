@@ -1449,6 +1449,16 @@ where:
 
 *** READ [#A] Huang et al
 
+*** SKIM [#C] [[https://www.sciencedirect.com/science/article/abs/pii/S026156062100019X][Mortgage Spreads, Asset Prices, and Business Cycles in Emerging Countries]]
+  :PROPERTIES:
+  :YEAR: 2021
+  :ZOTERO:   Yes
+  :STATUS:   Filed
+  :RELEVANCE: Low
+  :IMPACT:   Low
+  :CITE:     Wait
+  :KEY: cite:horvath_2021_Mortgage
+  :END:
 
 ** Residential investment determinants
 

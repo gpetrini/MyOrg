@@ -3,22 +3,38 @@
 #+AUTHOR: Gabriel Petrini
 #+SETUPFILE: /HDD/Org/org-html-themes/org/theme-bigblow-local.setup
 
-* Dissertation's general settings [100%] :Dissertation:
+* Dissertation's general settings [0%] :Dissertation:
+** TODO Verificar requisitos para qualificação
+** TODO Autenticação github ([[https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/][Link]])
+** WAIT [#B] Dr Watson tese
+- Esperando resposta FAPESP
 
-* QCA [100%] :Dissertation:
+* QCA [0%] :Dissertation:
 
 ** TODO Ler appêndice online manual QCA (chapter 8) :Manual:
 ** TODO Rascunhar estrutura do capítulo QCA com VoC :Writing:
 ** TODO Planejar escritas :Writing:Planning:
 ** TODO https://www.e-elgar.com/shop/usd/advanced-introduction-to-housing-studies-9781789908336.html :Dissertation:Readings:Institutions:Housing:
-* Panel [100%] :Dissertation:
+** TODO Começar escrita primeira versão
+*** TODO Semana 1 (<2021-04-05 seg>): Introdução
+*** TODO Semana 2 (<2021-04-12 seg>): Metodologia QCA
+*** TODO Semana 3 (<2021-04-19 seg>): Motivação empírica
+*** TODO Semana 4 (<2021-04-26 seg>): Revisão da literatura teórica
+
+* Panel [0%] :Dissertation:
 
 ** TODO Ver Statista :Data:
+** TODO Ver equifax data
+** TODO https://www.sciencedirect.com/science/article/abs/pii/S026156062100019X
+** TODO Ler bloomberg ([[https://www.bloomberg.com/opinion/articles/2021-02-17/covid-housing-boom-is-even-bigger-than-imagined?utm_source=url_link][Link]])
 * ABM [100%] :Dissertation:
 
 * VECM [100%] :Article:
 
 ** TODO Repensar data para escrever introdução VECM
+
+* ABM dot-com [0/1] :@free:Article:
+** TODO Concentration, Stagnation and Inequality:An Agent-Based Approach
 * Orientações [100%]
 
 * Cecon [100%] :Group:

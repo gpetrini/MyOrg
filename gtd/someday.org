@@ -38,9 +38,6 @@ PhD Student 29 Euros for 2 years
 
 - Issue created
 
-* WAIT [#B] Dr Watson tese
-- Esperando resposta FAPESP
-
 * TODO Compare configs [0/3] :Emacs:
 
 - [X] https://github.com/zzamboni/dot-doom
