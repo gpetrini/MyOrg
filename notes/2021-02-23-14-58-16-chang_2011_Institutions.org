@@ -1,0 +1,213 @@
+#+TITLE: chang_2011_Institutions: Institutions and economic development: theory, policy and history (2011, Journal of Institutional Economics)
+#+OPTIONS: toc:nil num:nil
+#+ROAM_KEY: cite:chang_2011_Institutions
+#+ROAM_TAGS: Theoretical QCA Institucions
+Time-stamp: 2021-02-23
+- tags ::
+
+
+* Backlinks
+
+[[file:20210216121647-qca_theoretical_economics_foundations.org][QCA Theoretical Economics Foundations]]
+
+* FISH-5SS
+
+
+|---------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <40>                                        | <50>                                                                                                                                                                                                                                                                             |
+| *Background*                                  | Institutional economics have become more popular lately                                                                                                                                                                                                                          |
+| *Supporting Ideas*                            | The dominant view establishes that poor-institutional design implies poor economic performance.                                                                                                                                                                                  |
+| *Purpose*                                     | Critically evaluate the dominant discourse of the role of institutions to *development*                                                                                                                                                                                            |
+| *Originality/value (Contribution)*            | Systematize the conventional institutional view and presents some critics and some historical case studies counterfactual.                                                                                                                                                       |
+| *Relevance*                                   | Presents some critics of dominant view and proposes some way to analyze institutions without incurring in the voluntarism view nor the climate-culture approach.                                                                                                                 |
+| *Design/methodology/approach*                 | Review of both theoretical and empirical literature.                                                                                                                                                                                                                             |
+| *Results*                                     | Dominant view ignores the causal link from development to institutions, is based on cross-sectional evidence, assumes that institutions role will be similar across time and space.                                                                                              |
+| *(Interesting) Findings*                      | Same institutions may have different effect across countries and over time. The author contrast institutional form with functions of institutions. Additionally, provides some critics to institutions' quality measures used in empirical studies (bias and qualitative nature) |
+| *Research limitations/implications (Critics)* |                                                                                                                                                                                                                                                                                  |
+| *Uncategorized stuff*                         | This paper provides some insights to QCA analysis since it allows to institutional diversity and its implications.                                                                                                                                                               |
+| *5SS*                                         |                                                                                                                                                                                                                                                                                  |
+|---------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+* Specifics comments
+ :PROPERTIES:
+ :Custom_ID: chang_2011_Institutions
+ :AUTHOR: Chang, H.
+ :JOURNAL: Journal of Institutional Economics
+ :YEAR: 2011
+ :DOI:  http://dx.doi.org/10.1017/S1744137410000378
+ :URL: https://www.cambridge.org/core/journals/journal-of-institutional-economics/article/institutions-and-economic-development-theory-policy-and-history/483B04277F72313E9080AA3264997A93
+ :END:
+
+
+* Extracted Annotations (23/02/2021 15:50:52)
+:PROPERTIES:
+:NOTER_DOCUMENT: ../../PDFs/chang_2011_institutions.pdf
+ :END:
+"its neglect of the causality running from development to institutions, its inability to see the impossibility of a free market, and its belief that the freest market and the strongest protection of private property rights are best for economic development" (Chang 2011:474)
+
+Limitations of the dominant view of institutions (note on p.474)
+
+
+
+
+"Influenced by the broader revival of interest in institutions in economics, represented by the rise of New Institutional Economics in the 1980s, institutions started gaining popularity by the early 1990s as an explanation of international differences in economic development," (Chang 2011:474)
+
+Background: Institutional economics was a marginal topic and have become more popular. (note on p.474)
+
+
+
+
+"Since the late 1990s, the view that poor-quality institutions are the root cause of economic problems in developing countries has become widespread." (Chang 2011:474)
+
+Supporting ideas (to be contested): poor-institutions are the cause of development problems.
+*Limitation:* It ignores the causality from development to institutions. (note on p.474)
+
+
+
+
+"The pressure for the adoption of GSIs by developing countries also came from various bilateral, regional, and multilateral trade and investment agreements, which started mushrooming from the mid-1990s." (Chang 2011:475)
+
+Background: pressure to underdevelopment countries to adopt GSIs. (note on p.475)
+
+
+
+
+"Of course, the above discussion of external forces is not to say that there were no internal pressures for the adoption of GSIs in developing countries. GSIs are institutions that inherently favour the rich over the poor, capital over labour, and finance capital over industrial capital. Therefore, many rich people, especially financial capitalists, in developing countries have been very much in favour of GSIs." (Chang 2011:476)
+
+Internal pressure to adopt GSIs. (note on p.476)
+
+
+
+
+"Theoretical problems with the dominant discourse on institutions and economic development" (Chang 2011:476)
+
+This section is too off-topic regarding QCA chapter purposes. (note on p.476)
+
+
+
+
+"even the same institution in the same dose may be good for one country but bad for another. So, using the IPR example again, a level of protection of IPRs that may bring net benefit to a rich country may be harmful for a developing country." (Chang 2011:482)
+
+Same institutions may have different outcome across countries. (note on p.482)
+
+
+
+
+"Third, even in the same dose and in the same country, the same institution may promote growth at one point in time but not in another." (Chang 2011:483)
+
+The same institution may have different effects over time. (note on p.483)
+
+
+
+
+"I have shown that mainstream institutional theories have a highly problematic understanding of the relationship between institutions and economic development. First, they more or less ignore the impacts of economic development on institutions and focus exclusively on how institutions affect development. Second, they believe that institutions that provide a higher degree of business freedom and stronger protection of private property rights lead to higher growth, when there are many theories, including some neoclassical theories, which argue otherwise. Third, mainstream institutional theories wrongly see the relationship between institutions and economic development as linear and uniform across time and space. These are serious shortcoming for theories that purport to offer explanations of growth and structural change across the world over long periods of time." (Chang 2011:483)
+
+Summary of limitations of current discourse of the connections between institutions and development. (note on p.483)
+
+
+
+
+"To begin with, most of the evidence provided in the dominant discourse is from cross-section econometric studies. Very few studies look at the relationship between institutional changes and growth over time in the same country." (Chang 2011:484)
+
+Most of evidence is cross-sectional and do not include the relationship of institutional changes over time. (note on p.484)
+
+
+
+
+"but should include historical narratives and comparative historical studies." (Chang 2011:484)
+
+Alongside with econometrics (time-series), should include both historical narratives and comparative historical studies. (note on p.484)
+
+
+
+
+"By its very nature, the quality of an institution is very difficult, if not totally impossible, to quantify, in contrast to many 'policy' variables, such as the tariff rate or the rate of inflation. Therefore, institutional qualities are often measured by some indexes based on qualitative judgments." (Chang 2011:485)
+
+Interesting findings: institutions quality are difficult to measure because they have a qualitative nature.
+There is also an bias towards free-market policies in the calculated indexes. (note on p.485)
+
+
+
+
+"Moreover, many of these indexes are based on surveys among (especially foreign) businessmen and experts (e.g., academics or financial analysts), many of whom were trained in the USA. As a result, they have biases towards free-market policies and Anglo-American institutions" (Chang 2011:485)
+
+There is also the bias related to survey data (businessman and financial analysts) (note on p.485)
+
+
+
+
+"To begin with, it is questionable whether we can add up all kinds of different institutions into a composite concept and measure its quality." (Chang 2011:486)
+
+The author also questioned the composite concept of measure institutions. (note on p.486)
+
+
+
+
+"Moreover, in practice, these indexes usually mix up incompatible variables - they mix up variables that capture the differences in the forms of institutions (such as democracy, independent judiciary, absence of state ownership) and the functions that they perform (such as rule of law, respect for private property, government effectiveness, enforceability of contracts, maintenance of price stability, the restraint on corruption). However desirable it may be to have a comprehensive measure of institutional quality, it makes no sense to mix up the form variables and the function variables" (Chang 2011:486)
+
+There is also a limitation due to mixing *forms* and *functions* of institutions. (note on p.486)
+
+
+
+
+"In response to this confusion, some have argued that the function variables should therefore be preferred over the form variables (Aron, 2000)." (Chang 2011:486)
+
+Further reference for institutional function vs form (note on p.486)
+
+
+
+
+"The econometric studies that support the dominant discourse on the relationship between institutions and economic development assume, without much critical reflection, that the same relationship holds across countries. Insofar as the problem is recognized, dummy variables, especially 'regional' dummy variables (e.g., African dummy) are used to partly deal with it, but this is essentially an atheoretical approach. However, if the relationship differs across countries, it means, in statistical terms, that the 'homogeneity condition' is violated. This makes the parameters unstable and thereby the results sensitive to the sample." (Chang 2011:487)
+
+Including dummies representing institutional arrangements make the results sensitive to the sample. (note on p.487)
+
+
+
+
+"It is the assumption that institutions can be changed easily. However good the GSIs that the dominant discourse recommends may be, it would be a pie in the sky, if remoulding non-GSIs into GSIs, or importing GSIs into countries with missing institutions (e.g., some countries did not have patent laws before the TRIPS agreement) is very difficult." (Chang 2011:488)
+
+Dominant view implicitly assumes that institutions can be changed easily. (note on p.488)
+
+
+
+
+"Actually, some of them think that institutional changes are nigh impossible. They think that institutions are determined by immutable things such as climate and culture, so they cannot be changed, except through some epoch-making external shocks, like colonization." (Chang 2011:489)
+
+Otherwise, some scholars state that institutions are almost immutable (note on p.489)
+
+
+
+
+"However, it is not always, or even necessarily predominantly, because those who have (financial, political and ideological) power want to preserve those institutions that serve their interests that institutional changes are difficult to bring about." (Chang 2011:490)
+
+The relevance of power to preserve institutional changes. (note on p.490)
+
+
+
+
+"What they want and how they think they can best achieve it depend on who the people in question are. Thus seen, in refusing to introduce a GSI, a country may not be being 'irrational' or driven by the 'rational' choice of selfish rulers, as mainstream institutional economists are likely to think. It may be following its own notion of rationality, efficiency and justice. In this sense, the path-dependence in the process of institutional evolution operates at a more fundamental level than we normally think." (Chang 2011:491)
+
+However, self-interest and rationality are defined by history.
+The previous interpretation ignores the "constitutive" role of institutions. (note on p.491)
+
+
+
+
+"Second, insofar as some institutions have been deliberately designed and codified, they often contain rules that make changes difficult. Institutions are meant to be stable - otherwise they will have no use. So, if you are designing a new institution, you will make it sure that it cannot be changed too easily." (Chang 2011:491)
+
+Additionally, institutions are designed to be stable; otherwise they will have no use. (note on p.491)
+
+
+
+
+"Unless (at least enough of) its supporting institutions are correctly identified and installed at the same time, introducing a new institution may not bring about the desired outcomes." (Chang 2011:491)
+
+Complementary effects of institutions may not lead to desired outcomes. (note on p.491)
+
+
+
+
+"The point is that, even when we accept that a country's institutions (and culture that underlies them) are given, deliberate choices still matter because there are always elements in a country's cultural/institutional complex that are pulling in different directions. Depending on how people interpret their 'tradition', which aspects of it they choose to highlight, and which interpretation wins in political and ideological battles, a country could evolve into very different directions." (Chang 2011:493)
+
+The difficult to change institutions do not lead to a defense of climate-culture school.
+In summary, neither voluntarism nor climate-culture school. (note on p.493)

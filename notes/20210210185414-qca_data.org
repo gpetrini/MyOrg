@@ -3,7 +3,7 @@
 #+AUTHOR: Gabriel Petrini
 #+ARCHIVE: ../archive/QCA.org::* Data
 #+TODO: READ SKIM PARTIAL WAIT MAYBE | REF REPORT DONE ARCH
-#+PROPERTY: COLUMNS  %8STATUS %7TODO(Decision) %15KEY(Bibtex key) %4YEAR  %7RELEVANCE %7IMPACT %4CITE
+#+PROPERTY: COLUMNS  %FINISHED(Finished?){X} %7STATUS(Status) %15KEY(Reference) %7RELEVANCE
 #+PROPERTY: DECISION_ALL Read File Skip PartialRead
 #+PROPERTY: ZOTERO_ALL Yes No Partial Entry
 #+PROPERTY: STATUS_ALL Reading Searching Abandoned Finished Skimmed NotFound 404 Downloaded Filed
@@ -12,20 +12,21 @@
 #+PROPERTY: CITE_ALL Yes No Wait
 #+PROPERTY: YEAR_ALL
 #+PROPERTY: KEY_ALL
+#+PROPERTY: FINISHED_ALL "[ ]" "[X]"
 
 [[file:20210210093026-qca_readings.org][QCA readings]]
 
 #+BEGIN: columnview :maxlevel 2 :id global
-| STATUS     | Decision | Bibtex key                 | YEAR | RELEVANCE | IMPACT | CITE |
-|------------+----------+----------------------------+------+-----------+--------+------|
-| Filed      | READ     |                            | 2017 | High      | Low    | Yes  |
-| Skimmed    | READ     | arena_2020_Macroprudential | 2020 | High      | Low    | Yes  |
-| Filed      | READ     | agnello_2020_Housinga      | 2019 | Regular   | Low    | Yes  |
-| Skimmed    | READ     | scanlon_2009_Mortgage      | 2009 | High      | Low    | Yes  |
-| Downloaded | SKIM     | andrews_2011_Housing       | 2011 | Regular   | Low    | Wait |
-| Skimmed    | READ     | dept_2008_Chapter          | 2008 | High      | Low    | Yes  |
-| Filed      | PARTIAL  | badev_2014_Housing         | 2014 | High      | Low    | Yes  |
-| Filed      | PARTIAL  |                            | 2006 | Low       | Low    | Yes  |
+| Finished? | Status     | Reference                                                 | RELEVANCE |
+|-----------+------------+-----------------------------------------------------------+-----------|
+|           | Filed      |                                                           | High      |
+|           | Skimmed    | arena_2020_Macroprudential                                | High      |
+|           | Filed      | agnello_2020_Housinga                                     | Regular   |
+|           | Skimmed    | scanlon_2009_Mortgage                                     | High      |
+| [X]       | Finished   | cite:internationalmonetaryfund.reseachdept._2008_changing | High      |
+|           | Downloaded | andrews_2011_Housing                                      | Regular   |
+|           | Filed      | badev_2014_Housing                                        | High      |
+|           | Filed      |                                                           | Low       |
 #+END
 
 
@@ -69,15 +70,16 @@
    :CITE:     Yes
    :KEY: scanlon_2009_Mortgage
    :END:
-* READ [#C] THE CHANGING HOUSING CYCLE AND THE IMPLICATIONS FOR MONETARY POLICY
+* READ [#A] THE CHANGING HOUSING CYCLE AND THE IMPLICATIONS FOR MONETARY POLICY
    :PROPERTIES:
    :ZOTERO:   Partial
-   :YEAR:     2008
-   :STATUS:   Skimmed
+   :YEAR: citeyear:internationalmonetaryfund.reseachdept._2008_changing
+   :STATUS:   Finished
    :RELEVANCE: High
    :IMPACT:   Low
    :CITE:     Yes
-   :KEY: dept_2008_Chapter
+   :KEY: cite:internationalmonetaryfund.reseachdept._2008_changing
+   :FINISHED: [X]
    :END:
 * SKIM [#B] [[https://www.oecd-ilibrary.org/economics/housing-markets-and-structural-policies-in-oecd-countries_5kgk8t2k9vf3-en;jsessionid=CzhezboEQR19t7VomrNEWTv6.ip-10-240-5-161][Housing Markets and Structural Policies in OECD Countries]]
    :PROPERTIES:

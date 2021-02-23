@@ -2,52 +2,53 @@
 #+title: Varieties of Capitalisms
 #+AUTHOR: Gabriel Petrini
 #+roam_alias: VoC
-#+ARCHIVE: ../archive/QCA.org::* Data
+#+ARCHIVE: ../archive/QCA.org::* VoC
 #+TODO: READ SKIM PARTIAL WAIT MAYBE | REF REPORT DONE ARCH
-#+PROPERTY: COLUMNS  %8STATUS %7TODO(Decision) %15KEY(Reference) %7RELEVANCE
+#+PROPERTY: COLUMNS  %FINISHED(Finished?){X} %7TODO(Decision) %15KEY(Reference) %7RELEVANCE
 #+PROPERTY: DECISION_ALL Read File Skip PartialRead
 #+PROPERTY: ZOTERO_ALL Yes No Partial Entry
 #+PROPERTY: STATUS_ALL Reading Searching Abandoned =Finished= Skimmed NotFound 404 Downloaded Zotero
 #+PROPERTY: RELEVANCE_ALL High Regular Low None
 #+PROPERTY: IMPACT_ALL High Regular Low None
 #+PROPERTY: CITE_ALL Yes No Wait
+#+PROPERTY: FINISHED_ALL "[ ]" "[X]"
 #+PROPERTY: YEAR_ALL
 #+PROPERTY: KEY_ALL
 
 [[file:20210210093026-qca_readings.org][QCA readings]]
 
 #+BEGIN: columnview :maxlevel 3 :id global
-| STATUS     | Decision | Reference                                          | RELEVANCE |
-|------------+----------+----------------------------------------------------+-----------|
-|            |          |                                                    |           |
-|            |          |                                                    |           |
-| Zotero     | PARTIAL  | cite:hancke_2009_Debating                          | High      |
-| Zotero     | READ     | cite:hallVarietiesCapitalismInstitutional2009      | High      |
-|            | READ     |                                                    |           |
-|            | READ     |                                                    |           |
-| Zotero     | READ     |                                                    | High      |
-| Zotero     | READ     | cite:blyth_2003_Same                               | High      |
-| Zotero     | READ     | cite:fernandez_2016_Financialization               | High      |
-| Zotero     | READ     | cite:fuller_2015_Who                               | Regular   |
-| Zotero     | READ     | cite:blackwell_2019_Historicizing                  | High      |
-| Zotero     | READ     | cite:hay_2005_Two                                  | Regular   |
-| Zotero     | READ     |                                                    | High      |
-| Zotero     | READ     |                                                    | High      |
-| Zotero     | SKIM     | cite:hay_2020_Does                                 | High      |
-| Zotero     | SKIM     | cite:hay_2004_Common                               | High      |
-| Zotero     | SKIM     | cite:crouch_2005_Dialogue                          | High      |
-| Zotero     | SKIM     | cite:setterfieldVarietiesCapitalismIncreasing2020a | Regular   |
-| =Finished= | PARTIAL  | cite:hallVarietiesCapitalismInstitutional2001      | High      |
-| Zotero     | MAYBE    |                                                    | High      |
-| Zotero     | MAYBE    | cite:hardie_2013_Banks                             | Low       |
-| =Finished= | REF      | cite:howell_2003_Varieties                         | Regular   |
-| =Finished= | REF      | cite:lapavitsas_2013_Financialisation              | Regular   |
-| =Finished= | REF      | cite:baccaroRethinkingComparativePolitical2016     | Low       |
-| =Finished= | REF      | cite:behringer_2018_Varieties                      | Low       |
-|            | ARCH     |                                                    |           |
-| Zotero     | ARCH     |                                                    | Low       |
-| Downloaded | ARCH     | cite:beck_2009_Financial                           | Low       |
-| Zotero     | ARCH     | cite:broadberry_2005_Economic                      | Low       |
+| Finished? | Decision | Reference                                          | RELEVANCE |
+|-----------+----------+----------------------------------------------------+-----------|
+|           |          |                                                    |           |
+|           |          |                                                    |           |
+| [ ]       | PARTIAL  | cite:hancke_2009_Debating                          | High      |
+| [ ]       | READ     | cite:hallVarietiesCapitalismInstitutional2009      | High      |
+|           | READ     |                                                    |           |
+|           | READ     |                                                    |           |
+| [ ]       | READ     |                                                    | High      |
+| [ ]       | READ     | cite:blyth_2003_Same                               | High      |
+| [ ]       | READ     | cite:fernandez_2016_Financialization               | High      |
+| [ ]       | READ     | cite:fuller_2015_Who                               | Regular   |
+| [ ]       | READ     | cite:blackwell_2019_Historicizing                  | High      |
+| [ ]       | READ     | cite:hay_2005_Two                                  | Regular   |
+| [ ]       | READ     |                                                    | High      |
+| [ ]       | READ     |                                                    | High      |
+| [ ]       | SKIM     | cite:hay_2020_Does                                 | High      |
+| [ ]       | SKIM     | cite:hay_2004_Common                               | High      |
+| [ ]       | SKIM     | cite:crouch_2005_Dialogue                          | High      |
+| [X]       | SKIM     | cite:setterfieldVarietiesCapitalismIncreasing2020a | Regular   |
+| [X]       | PARTIAL  | cite:hallVarietiesCapitalismInstitutional2001      | High      |
+| [ ]       | MAYBE    |                                                    | High      |
+| [ ]       | MAYBE    | cite:hardie_2013_Banks                             | Low       |
+| [X]       | REF      | cite:howell_2003_Varieties                         | Regular   |
+| [X]       | REF      | cite:lapavitsas_2013_Financialisation              | Regular   |
+| [X]       | REF      | cite:baccaroRethinkingComparativePolitical2016     | Low       |
+| [X]       | REF      | cite:behringer_2018_Varieties                      | Low       |
+|           | ARCH     |                                                    |           |
+| [ ]       | ARCH     |                                                    | Low       |
+| [ ]       | ARCH     | cite:beck_2009_Financial                           | Low       |
+| [ ]       | ARCH     | cite:broadberry_2005_Economic                      | Low       |
 #+END
 
 
@@ -64,6 +65,7 @@
   :IMPACT:   Regular
   :CITE:     Yes
   :KEY: cite:hancke_2009_Debating
+  :FINISHED: [ ]
   :END:
 
 
@@ -76,6 +78,7 @@
   :IMPACT:   Regular
   :CITE:     Yes
   :KEY:  cite:hallVarietiesCapitalismInstitutional2009
+  :FINISHED: [ ]
   :END:
 
 ** READ [#C] Institutional Change in Varieties of Capitalism
@@ -89,6 +92,7 @@
   :RELEVANCE: High
   :IMPACT:   Low
   :CITE:     Yes
+  :FINISHED: [ ]
   :END:
 * READ [#A] [[https://link.springer.com/article/10.1057/palgrave.cep.6110008][Same as it Never Was: Temporality and Typology in the Varieties of Capitalism]]
   :PROPERTIES:
@@ -99,6 +103,7 @@
   :IMPACT:   High
   :CITE:     Yes
   :KEY: cite:blyth_2003_Same
+  :FINISHED: [ ]
   :END:
 * READ [#A] [[https://doi.org/10.1177%2F1024529415623916][Financialization and housing: Between globalization and Varieties of Capitalism]]
   :PROPERTIES:
@@ -109,6 +114,7 @@
   :IMPACT:   Low
   :CITE:     Yes
   :KEY:      cite:fernandez_2016_Financialization
+  :FINISHED: [ ]
   :END:
 * READ [#B] [[https://doi.org/10.1177%2F0032329215571288][Who’s Borrowing? Credit Encouragement vs. Credit Mitigation in National Financial Systems ]]
   :PROPERTIES:
@@ -119,6 +125,7 @@
   :IMPACT:   Low
   :CITE:     Yes
   :KEY:      cite:fuller_2015_Who
+  :FINISHED: [ ]
   :END:
 * READ [#A] [[https://doi.org/10.1080/02673037.2018.1487037][Historicizing housing typologies: beyond welfare state regimes and varieties of residential capitalism]]
   :PROPERTIES:
@@ -129,6 +136,7 @@
   :IMPACT:   Low
   :CITE:     Yes
   :KEY:  cite:blackwell_2019_Historicizing
+  :FINISHED: [ ]
   :END:
 * READ [#B] [[https://link.springer.com/chapter/10.1057/9780230522725_6][Two Can Play at That Game … or Can They? Varieties of Capitalism, Varieties of Institutionalism]]
   :PROPERTIES:
@@ -139,6 +147,7 @@
   :IMPACT:   Low
   :CITE:     Yes
   :KEY: cite:hay_2005_Two
+  :FINISHED: [ ]
   :END:
 * READ [#C] [[https://www.econstor.eu/bitstream/10419/155335/1/880367393.pdf][Blackwell and Khol - Varieties of housing finance in historical perspective: The impact of mortgage finance systems on urban structures and homeownership]]
   :PROPERTIES:
@@ -148,6 +157,7 @@
   :RELEVANCE: High
   :IMPACT:   Low
   :CITE:     Yes
+  :FINISHED: [ ]
   :END:
 
 
@@ -160,6 +170,7 @@
   :RELEVANCE: High
   :IMPACT:   Regular
   :CITE:     Yes
+  :FINISHED: [ ]
   :END:
 
 
@@ -172,6 +183,7 @@
   :IMPACT:   Regular
   :CITE:     Wait
   :KEY:  cite:hay_2020_Does
+  :FINISHED: [ ]
   :END:
 
 * SKIM [#B] [[https://www.tandfonline.com/doi/abs/10.1080/09692290420001672796][Common trajectories, variable paces, divergent outcomes? Models of European capitalism under conditions of complex economic interdependence]] :Convergence:
@@ -183,6 +195,7 @@
   :IMPACT:   Regular
   :CITE:     Yes
   :KEY:  cite:hay_2004_Common
+  :FINISHED: [ ]
   :END:
 
 * SKIM [#A] [[https://doi.org/10.1093/SER/mwi015][Dialogue on ‘Institutional complementarity and political economy’]] :Complementarities:
@@ -194,6 +207,7 @@
   :IMPACT:   Regular
   :CITE:     Yes
   :KEY:      cite:crouch_2005_Dialogue
+  :FINISHED: [ ]
   :END:
 * SKIM [#C] Varieties of capitalism, increasing income inequality and the sustainability of long-run growth
   :PROPERTIES:
@@ -204,6 +218,7 @@
   :IMPACT:   High
   :CITE:     Yes
   :KEY: cite:setterfieldVarietiesCapitalismIncreasing2020a
+  :FINISHED: [X]
   :END:
 
 
@@ -218,6 +233,7 @@
   :IMPACT:   High
   :CITE:     Yes
   :KEY:  cite:hallVarietiesCapitalismInstitutional2001
+  :FINISHED: [X]
   :END:
 
 *Part to read:* Chapter 1 - An Introduction to Varieties of Capitalism
@@ -231,6 +247,7 @@
    :RELEVANCE: High
    :IMPACT:   Low
    :CITE:     Yes
+  :FINISHED: [ ]
    :END:
 
 * MAYBE [[https://doi.org/10.1017/S0043887113000221][Banks and the False Dichotomy in the Comparative Political Economy of Finance]]
@@ -242,6 +259,7 @@
   :IMPACT:   Low
   :CITE:     Wait
   :KEY:  cite:hardie_2013_Banks
+  :FINISHED: [ ]
   :END:
 
 * REF [[https://www.jstor.org/stable/4150162?seq=1#metadata_info_tab_contents][Varieties of Capitalism: And Then There Was One? ]] :Review:Reception:
@@ -254,6 +272,7 @@ CLOSED: [2021-02-16 ter 17:33]
   :IMPACT:   Low
   :CITE:     Wait
   :KEY: cite:howell_2003_Varieties
+  :FINISHED: [X]
   :END:
 
 * REF [[https://doi.org/10.1093/cjres/rst019][Financialisation varied: a comparative analysis of advanced economies]]
@@ -266,6 +285,7 @@ CLOSED: [2021-02-16 ter 15:42]
   :IMPACT:   Regular
   :CITE:     Yes
   :KEY:  cite:lapavitsas_2013_Financialisation
+  :FINISHED: [X]
   :END:
 * REF [[https://journals.sagepub.com/doi/abs/10.1177/0032329216638053][Rethinking Comparative Political Economy: The Growth Model Perspective]]
 CLOSED: [2021-02-16 ter 15:47]
@@ -277,6 +297,7 @@ CLOSED: [2021-02-16 ter 15:47]
   :IMPACT:   Regular
   :CITE:     Yes
   :KEY:  cite:baccaroRethinkingComparativePolitical2016
+  :FINISHED: [X]
   :END:
 * REF [#C] Varieties of Capitalism and Growth Regimes
 CLOSED: [2021-02-16 ter 15:24]
@@ -288,6 +309,7 @@ CLOSED: [2021-02-16 ter 15:24]
   :IMPACT:   Regular
   :CITE:     Yes
   :KEY:  cite:behringer_2018_Varieties
+  :FINISHED: [X]
   :END:
 
 * ARCH [[https://www.amazon.com.br/Regulation-School-Robert-Boyer/dp/0231065485][The Regulation School: A Critical Introduction ]]
@@ -302,6 +324,7 @@ CLOSED: [2021-02-16 ter 15:44]
   :IMPACT:   Low
   :CITE:     No
   :KEY:
+  :FINISHED: [ ]
   :END:
 * ARCH [[https://openknowledge.worldbank.org/bitstream/handle/10986/4154/WPS4943.pdf][Financial Institutions and Markets across Countries and over Time]] 
 CLOSED: [2021-02-16 ter 15:49]
@@ -313,6 +336,7 @@ CLOSED: [2021-02-16 ter 15:49]
   :IMPACT:   Regular
   :CITE:     No
   :KEY:  cite:beck_2009_Financial
+  :FINISHED: [ ]
   :END:
 
 * ARCH [[https://link.springer.com/chapter/10.1057/9780230522725_5][Economic Growth and the United States since 1870: A Quantitative Economic Analysis Incorporating Institutional Factors]]
@@ -325,5 +349,6 @@ CLOSED: [2021-02-16 ter 16:12]
   :IMPACT:   Low
   :CITE:     No
   :KEY:      cite:broadberry_2005_Economic
+  :FINISHED: [ ]
   :END:
 

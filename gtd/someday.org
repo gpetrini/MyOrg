@@ -55,3 +55,6 @@ PhD Student 29 Euros for 2 years
 * TODO Garrafa Térmica :@Home:
 * TODO mu4e filtrar contatos :Emacs:
 * TODO DT go to GTD files :Emacs:
+* TODO Configurar Configurações como org :@Free:Computer:
+* TODO Instalar Manjaro :Computer:@Free:
+* TODO FIX: checkboxes org-roam-server :Emacs:OrgRoam:

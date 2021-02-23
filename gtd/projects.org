@@ -21,7 +21,8 @@ CLOSED: [2021-02-22 seg 19:03]
 *** TODO Semana 2 (<2021-04-12 seg>): Metodologia QCA
 *** TODO Semana 3 (<2021-04-19 seg>): Motivação empírica
 *** TODO Semana 4 (<2021-04-26 seg>): Revisão da literatura teórica
-
+** TODO Modelos [0/1]
+*** TODO Modelo QCA FMI
 * Panel [0%] :Dissertation:
 
 ** TODO Ver Statista :Data:

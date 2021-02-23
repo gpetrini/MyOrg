@@ -17,3 +17,24 @@
 ** 18:48 Criando template julia DrWatson
 ** 19:02 Mensagem de aviso github
 ** 19:11 Fim do expediante; git ssh abandonado
+
+* terça, 23/02/2021
+:PROPERTIES:
+:CREATED:  20210223
+:END:
+** 07:51 Sage, dac e org-table check-box
+** 08:02 Doom sync and upgrade; lavando louça enquanto isso
+** 08:07 Roupa de cama para lavar e fim série
+** 08:38 Faxina
+** 09:17 Banho e lente
+** 09:58 Início trabalho
+** 11:06 Pausa para estender roupa
+** 11:09 Máquina não terminou; pausa
+** 11:26 Retorno
+** 12:04 Almoço e roupa
+** 14:12 Retornando
+** 14:56 Início leitura Chang 
+** 16:10 Pausa da tarde
+** 16:40 Recolhendo roupa de cama
+** 16:53 Retomando
+** 17:34 Fim leitura Chang, início busca statista
