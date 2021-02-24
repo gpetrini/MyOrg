@@ -915,4 +915,269 @@ Além disso:
 - Permite conectar o micro e o macro, o real e o financeiro de forma natural e não binária
   + Permitiria lidar com a crítica de Lucas
 
+------
 ** Teoria dos dois preços <2021-02-24 qua>
+*** Introdução
+
+Teoria de dois preços é uma teoria de investimento da *firma*, estendida para o agregado
+
+- Inspirada no *Princípio do risco crescente*
+  + Associado ao tamanho da firma
+- Uma interpretação da Teoria Geral de Keynes
+- Flutuações econômicas provocadas pela dinâmica do investimento
+  + Instabilidade do investimento relacionada a questões expectacionais
+- Contra teorema Modigliani-Miller (irrelevância da estrutura de capital)
+*** Teoria dos dois preços e o q de Tobin
+
+Minskianos admitem que a teoria de dois preços guarda grande semelhanã com q de Tobin:
+- Portanto, ajustamento do investimento via preço
+- Teorias de dpos preços $\Rightarrow$ q de Tobin aumentado por risco do emprestador e do tomador
+- No entanto, muita ênfase nas expectativas subjetivas (incerteza) que balizam percepções de risco e expectativas de fluxo de caixa
+*** O preço de oferta
+
+- $P_{I}$ :: Preço de reposição do estoque de capital
+  + Induz o ofertante a vender um novo bem de capital
+    - Não considera bem de capital existente
+  + Inclui markup sobre o custo unitário de produção do bem de capital
+  + Inclui também o risco do emprestador relacionado ao financiamento do bem de capital
+    - Para uma firma qualquer, a capacidade de autofinanciamento é limitada
+    - A partir de certo ponto, faz-se necessário tomar capital de terceiros para investir
+- Risco do emprestador: Mais dívida $\Rightarrow$ maior risco de /default/
+  + Isso se refleteria no preço de reposição do estoque de capital
+*** O preço de demanda
+
+- Preço de demanda ($P_{K}$) :: Inclui estoque de capital existente
+  + Inclui mercado secundário do estoque de capital (pouco líquido)
+  + Capitalização dos rendimentos esperados de um ativo aumentado pelo risco do tomador
+  + Rendimento esperados: $Q$ incerto
+  + Política monetária afeta $P_{K}$
+    - Taxa de juros determinada no mercado monetário
+    - Afeta taxa de rendimento dos rendimentos esperados
+- Valor capitalizado ($C$) :: $\frac{\partial C}{\partial M} > 0 \hspace{2cm} \lim_{M\to infty} C < \infty$
+  + Política monetária expansionista aumenta a capitalização do capital
+  + $\frac{\partial P_{K}}{\partial M} > 0 \hspace{0.2cm}, \frac{\partial^{2}P_{K}}{\partial M^{2}} <0 \, \lim_{M\to \infty} P_{K} < \infty$
+    - Não é possível explorar a política monetária para estimular o investimento
+- Risco do tomador :: Expansão do ativo requer financiamento $\Rightarrow$ menor liquidez ou maior dívida $\Rightarrow$ Maior risco de falência (restrição de sobrevivência)
+  + Quanto maior dívida, maior pagamento do serviço da dívida. Não pagamento implica restrição de acesso ao crédito, interrompendo a capacidade de financiar investimento
+
+#+BEGIN_latex
+\begin{equation}
+P_{K} = \frac{Q_{1}}{\beta_{1}} + \ldots  + \frac{Q_{N}}{\beta_{N}}
+\end{equation}
+
+\begin{equation}
+\beta_{i} = 1 + r_{free} + BR
+\end{equation}
+#+END_latex
+
+*** Aspectos fundamentais
+
+- Rendimento esperado dos ativos é incerto e sujeito a avaliações subjetivas: passível de reavaliações repentinas, de acordo com a percepção dos capitalistas
+- Risco do tomador e risco do emprestador também refletem avaliações subjetivas
+- Para uma mesma quase-renda esperada, mudanças de expectativa alteram o nível do investimento
+- Risco maior é expectativa de rendimento não se confirmar e a margem de segurança ser insuficiente
+*** Conclusões: Firma representativa :ATTACH:
+:PROPERTIES:
+:ID:       0c7d104f-e2c2-4c4e-a698-c156b3db377b
+:END:
+
+Para expandir o investimento é preciso expandir a dívida, mas implicitamente supõe-se que o autofinanciamento não se altera
+- Altera-se a estrutura de capital por consequência
+- A alavancagem do financiamento do investimento sobre os ganhos esperados pode ser muito alta durante um período de diminuição da avarsão ao risco
+
+[[attachment:_20210224_100733screenshot.png]]
+*** Conclusões: Investimento agregado :ATTACH:
+:PROPERTIES:
+:ID:       7372abf0-19cd-4490-8220-9adc81c069da
+:END:
+
+
+[[attachment:_20210224_101820screenshot.png]]
+
+No agragado, o aumento do investimento aumenta a capacidade de autofinanciamento.
+Em parte, frustra o financiamento por dívida planejado pelas empresas e simultaneamente reforça a disposição de empresas e bancos de financiar por dívida novos aumentos do investimento.
+Em outras palavras, houve uma sobreestimativa do risco pelos bancos.
+Além disso, os ganhos das ações são maiores e os preços das ações responderão favoravelmente a isso.
+
+No entanto, Minsky retorna a análise para a firma representativa para estabelecer as conclusões gerais do modelo.
+Em linhas gerais, conclui que há uma geração de sobreendividamento.
+No agregado, porém, as quase-renda se alteram e aumenta.
+
+*** Reversão
+
+Ativos que eram tidos como líquido, é mostrada sua iliquidez evidente.
+
+*** O investimento e a estrutura de capital
+
+Investimento $\Rightarrow$ Dívida/estrutura de capital
+
+- Estrutura de capital :: composição de capital de terceiros e capital próprio
+- Na teoria de dois preços. a estrutura de capital é em grade medida afetada pelas decisões de investimento
+
+**** Generalizações: Como os agentes fecham os balanços
+
+Contalbimente, temos
+
+#+BEGIN_latex
+\begin{equation}
+\Delta CT + \Delta PL = \Delta ANF + \Delta AL
+\end{equation}
+#+END_latex
+
+#+BEGIN_latex
+\begin{equation}
+\Pi - I = \Delta AL - \Delta CT
+\end{equation}
+#+END_latex
+
+
+Com $PL$ patrimônio líquido; $CT$ capital de terceiros, $ANF$ ativos não financeiros, $AL$ ativos líquidos, $\Pi$ Lucros retidos.
+Fechamentos possívies:
+
+1. $I = \Pi - \Delta AL + \Delta CT$ (meta de liquidez nos balanços)
+2. $\Delta AL = \Pi  + \Delta CT - I$
+3. \Delta CT = \Delta AL + I - \Pi$
+4. \Pi = \Delta AL - \Delta CT + I$ (lucro retido em função dos balanços, logo, dividendo distribuído é o fechamento)
+
+A visão de Minsky reflete o terceiro tipo de fechamento (via capital de terceiros).
+O tipo de fechamento determina a relação de estrutura de capital e investimento.
+
+*** A estrutura de capital e os riscos
+
+O princípio do risco crescente implica maior composição de capital de terceiros é compatível com nível de risco maior.
+Portanto, no nível da firma, a teoria de dois preços implica um trade-off entre crescimento e margem de segurança.
+
+*** Teorias de dois preços e teorias de investimento
+
+Nas perspectivas de teorias de investimento, evidentemente, ajustamento via preços muito mais importante que ajustamento via quantidade:
+- Pouco respaldo empírico
+- Elementos comuns à teoria de investimento da tese, mas natureza distinta dos determinantes do investimento
+
+Investimento é central no processo de competição intercapitalista: ênfase nos aspectos expectatcionais eclipsa *fatores objetivos e estratégicos* que influenciam investimento no nível da firma:
+- Demanda esperada e demanda efetiva
+- Utilização da capacidade desejada
+- Concorrência: investimento da firma, mas termo não aparece em JMK!
+
+------
+** Dois preços e HIF
+*** Introdução
+
+- Em uma frase :: estabilidade suscita instabilidade.
+- Implicação :: Economias capitalistas não podem produzir pleno emprego sistematicamente e flutuações são inevitáveis por conta do desenvolvimento das forças financeiras.
+  + Economias capitalistas são inerentemente instáveis
+- Decorrência :: Paradoxo da tranquilidade
+- Embasamento teórico :: Teoria dos dois preços
+- Margens de segurança ::  Se estreitam na medida que o otimismo dos empresários acaba por suplantar o ceticismo dos banqueiros a respeito da capacidade dos tomadores para pagar os empréstimos no futuro
+*** Centralidade do investimento das firmas
+
+Grande parte das relações reais-financeiras passam pleo investimento, que é fundamentalmente determinado por motivos financeiros na teoria minskyana.
+
+#+begin_quote
+The focus should be on firms, not on households, and on investment...
+#+end_quote
+
+Alguns textos recentes estendem para outros setores institucionais:
+
+- Dívida das famílias: Palley (1994); Dutt (2006); Isaac and Kim (2013); Ryoo (2016); Cadarci (2018); D'Orazio (2019)
+- Setor bancários: Nikolaidi (2014); Gimet et al (2019)
+- Taxa de câmbio
+- Economias abertas: muito escasso em modelos formais
+*** Papel das expectativas
+
+Expectativas subjetivas são fundamentais na teoria de dois preços.
+Comportamento anticíclico da percepção de risco é destacado por muitos interpretes.
+Por um lado, ele desencadeia uma série de processos econômicos que vão conduzir à fragilidade e, eventualmente, à instabilidade.
+Por outro lado, para as expectativas levarem às conclusões da HIF, /os processos econômicos têm que ocorrer/ (investimento $\Rightarrow \ldots$ fragilidade):
+
+$\uparrow$ otimismo $\Rightarrow \downarrow$ percepçaõ de risco $\Rightarrow \uparrow$ investimento $\Rightarrow\uparrow$ dívida $\Rightarrow \downarrow$ Margem de segurança $\Rightarrow \uparrow$ fragilidade
+*** Papel das interações
+
+As interações entre os agentes -- em particular, das empresas não financeiras e dos agentes financeiros,incluindo bancos -- está no início da cadeia causal acima.
+A redução na percepção de risco, induz firmas a querer tomar mais emprestado e bancos a emprestar mais, ou seja, não adianta otimismo em uma ponta apenas.
+Esse elemento da interação e coordenação entre os agentes traz elementos relacionados a econoias complexas e adaptativas.
+Adicionalmente, a soma dos saldos financeiros de $n$ agentes de uma economia é zero.
+*** A tipologia minskiana
+Confrontamento /fluxo de caixa/ vs /compromissos financeiros/, Minsky criou uma tipologia para descrever três possíveis posições financeiras:
+
+- Hedge :: Espera-se que as quse-rendas deem conta de pagar os compromisso financeiros em cada período futuro.
+- Especulativo :: Em alguns períodos, espera-se que os desembolsos financeiros superem o fluxo de caixa.
+  Intertemporalmente sustentável, mas pode ter problemas de liquidez, visto que a firma precisa rolar a dívida.
+- Ponzi :: Tipo especial de unidade especulativa, para qual os compromissos financeiros podem ser cobertos pelo fluxo de caixa no curto prazo.
+  Espera-se que a situação mude no futuro.
+  Além da rolagem, necessidade de novos empréstimos para cobrir parcela de pagamento de juros não coberta pelo fluxo de caixa.
+*** Estrutura da dívida
+
+A estrutura da dívida influencia a distribuição dos desembolsos financeiros no tempo.
+Em geral, não basta endividamento alto para um empresa falir.
+É necessário que ela deixe de honrar seus compromissos financeiros em alguns pontos do tempo.
+
+Dívida de mais curto prazo $\Rightarrow$ Maior necessidade potencial de rolar dívida e margem mais estreita para flutuações de fluxo de caixa $\Rightarrow$ Maior vulnerabilidade às condições  econômicas vigentes.
+*** Fragilidade sistêmica
+
+- Escala financeira aplica-se a um projeto de investimento realizado
+- No tempo, cada unidade tem vários projetos de investimento efetivados
+- Cada unidade terá uma posição financeiroa média prevalecente, refletindo a composição do balanço, fluxos de caixa e estrutura do passivo
+- Agregando o percentual (ponderado) de firmas em cada um dos três estados financeiros, obtém-se o grau de fragilidade sistêmcia
+  + Quanto maior a incidência de firmas /hedge/, mais robusta está a economia
+  + Esta forma de agregação é conveniente pois permite comparação temporal
+*** Micro e macro (ver slide)
+
+A teoria minskyana certamente está interessada no resultado /sistêmico/, mas reconhece que são as unidades econômicas que tomam as decisões.
+A própria teoria dos dois preços
+*** O ciclo minskiano (p. 142-3, Minsky (1975, edição em português)) e deflação de dívida
+
+Resumidamente, os mecanismos são:
+- Encurtamento dos prazos da dívida
+- Aumento dos custos financeiros (aumento da taxa de juros)
+Geram aumento da preferência pela liquidez e deflação de dívidas que são amplificadas.
+
+- Próximo da teoria de Fisher: sobre endividamento e deflação geram um círculo vicioso no qual a queda nos preços aumenta a carga de juros real, levando a mais deflação.
+- Mecânica descrita por Fisher :: a partir de uma economia cujo estágio inicial é de sobre-endividamento, haverá tendência que leva à liquidação de dívidas que conduz a:
+  + Liquidação dos ativos
+  + Queda nos depósitos bancários, destruição de moeda e redução na sua velocidade de criculação
+  + Queda no nível de preços (TQM)
+  + Queda no patrimônio líquido das empresas $\Rightarrow$ falências
+  + Queda nos lucros
+  + Queda no produto, do comércio e do emprego
+  + Aumento do pessimismo e perda de confiança
+  + Entresouramento e queda adicional da velocidade de curculação da moeda
+  + Queda nos juros nominais, mas  com aumento dos juros reais (deflação)
+
+
+| Talvez essas explicações deflacionárias sejam mais datadas ou localizadas |
+
+**** Balance-sheet recession (ver slides)
+
+Desenvolvida por Koo:
+- Recessões provocadas por uma mudança de comportamento do setor privado quando bolhas de ativos estouram
+  + Objetivo passa a ser minimizar dívida em vez de maximizar lucro
+- Desvalorizaçaõ dos ativos, num contexto de forte endividamento, obriga os agentes a *aumentar seu saldo financeiro* e liquidar parte de suas dívidas, até que os ativos voltem a se valorizar e o patrimônio líquida se recupere
+- Necessidade de aumentar a poupança financeira drena a
+*** Implicações de política econômica
+
+Institucionalidade pós-guerra favorece a estabilidade, por um lado:
+- Big government
+- Big bank
+
+Por outro, sistema financeiro desenvolvido é incorrigivelmente propenso a crises.
+** Corolários da HIF (interpretações)
+
+*** Corolário 1 (microeconômico)
+
+Firmas devem se deparar com um /trade-off/ entre expansão e margem de segurança
+- Comum em muitas teorias
+-  Não evidente nos dados, ou observável em apenas alguns subgrupos de firmas
+
+*** Corolário 2 (fragilidade pró-cíclica) VER SLIDES
+
+Para as crises econômicas serem geradas endogenamente, a fragilidade financeira deve aumentar por motivos internos ao longo de expansões.
+Utilizando sua escalada de fragilidade, pode-se obter a fragilidade sistêmica agregando as firmas em seus respectivos estados financeiros:
+
+- Fragilidade pró-cíclica ::
+
+*** Corolário 3 (investimento $\Rightarrow$ endividamento $\Rightarrow$ alavancagem $\Rightarrow$ fragilidade, decorrência do segundo)
+
+No agregado, devem existir uma curva de investimento-endividamento e uma curva alavancagem-fragilidade financeira positivamente inclinadas.
+
+*** Corolário 4 (endividamento pró-cíclico no agregado, decorrência do terceiro)
+Indicador de endividamento serviria como uma proxy da fragilidade financeiro

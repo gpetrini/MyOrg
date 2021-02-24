@@ -3,13 +3,14 @@
 #+AUTHOR: Gabriel Petrini
 #+SETUPFILE: /HDD/Org/org-html-themes/org/theme-bigblow-local.setup
 
-* Dissertation's general settings [33%] :Dissertation:
+* Dissertation's general settings [25%] :Dissertation:
 ** TODO Verificar requisitos para qualificação
 ** TODO Autenticação github ([[https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/][Link]])
 ** DONE [#B] Dr Watson tese
 CLOSED: [2021-02-22 seg 19:03]
 - Esperando resposta FAPESP
 
+** TODO Ver edital cotutela França
 * QCA [0%] :Dissertation:
 
 ** TODO Ler appêndice online manual QCA (chapter 8) :Manual:
@@ -23,14 +24,28 @@ CLOSED: [2021-02-22 seg 19:03]
 *** TODO Semana 4 (<2021-04-26 seg>): Revisão da literatura teórica
 ** TODO Modelos [0/1]
 *** TODO Modelo QCA FMI
+** TODO https://www.youtube.com/watch?v=hYNIndMcvaA
+** TODO Fichar Green and Watcher
+** TODO Organizar leituras comparação institucional: Lea
+** TODO QCA plot idea: Typical duration of a foreclosure procedure in boxplot
+** TODO Data QCA: pós Basileia I
+** TODO [[https://www.bis.org/publ/qtrpdf/r_qt1309i.htm][Database for policy actions on housing markets]] :DATASET:
+** TODO [[https://www.ecb.europa.eu/pub/pdf/scpops/ecb.op220~47edfcc84d.en.pdf][The impact of lending standards on default rates of residential real estate loans ]] :PLOTS:
+** TODO [[http://www.finpolconsult.de/mediapool/16/169624/data/Housing_Finance/Europe/Low_Duebel_Sebag-Montefiori_EMF_Financial_Integration_03.pdf][Study on the Financial Integrationof European Mortgage Markets]] :DATASET:
 * Panel [0%] :Dissertation:
 
 ** TODO Ver Statista :Data:
 ** TODO Ver equifax data
 ** TODO https://www.sciencedirect.com/science/article/abs/pii/S026156062100019X
 ** TODO Ler bloomberg ([[https://www.bloomberg.com/opinion/articles/2021-02-17/covid-housing-boom-is-even-bigger-than-imagined?utm_source=url_link][Link]])
-* ABM [100%] :Dissertation:
+* ABM [0%] :Dissertation:
 
+** TODO Inequality, household debt and financial instability: An agent-based perspective
+** TODO Income inequality, consumer debt, and prudential regulation: An agent-based approach to study the emergence of crises and financial instability
+** TODO Completar anotações de aula Ítalo 24/02
+** TODO Lever Lavoie e Seccareccia (2001)
+** TODO Ler Manual Lavoie
+** TODO Ler artigo Pedrosa e Lang
 * VECM [100%] :Article:
 
 ** TODO Repensar data para escrever introdução VECM

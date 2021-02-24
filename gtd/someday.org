@@ -58,3 +58,4 @@ PhD Student 29 Euros for 2 years
 * TODO Configurar Configurações como org :@Free:Computer:
 * TODO Instalar Manjaro :Computer:@Free:
 * TODO FIX: checkboxes org-roam-server :Emacs:OrgRoam:
+* TODO [[https://www.elibrary-areaer.imf.org/Macroprudential/Pages/ChapterQuery.aspx][Macroprudential Policy Survey]] :DATASET:

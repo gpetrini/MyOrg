@@ -23,6 +23,20 @@
 | [X]       | Finished | cite:chang_2007_Institutional | High      |
 #+END
 
+* Inbox
+
+** [[https://academic.oup.com/oep/article-abstract/70/3/821/4948656?redirectedFrom=fulltext][Constraints on LTV as a macroprudential tool: a precautionary tale]] :LTV:
+
+** [[https://sci-hub.ren/https://doi.org/10.1146/annurev-financial-111914-041807][An Overview of Macroprudential Policy Tools]] :LTV:
+
+** [[https://www.bankofcanada.ca/wp-content/uploads/2017/11/fsr-november2017-bilyk.pdf][Analysis of Household Vulnerabilities using loan-level mortgage data]] :LTV:Calibration:
+
+** [[https://www.bis.org/publ/cgfs48.pdf][Operationalising the selection and application of macroprudential instruments]] :REF:
+
+** [[https://www.imf.org/en/Publications/WP/Issues/2016/12/31/Macroprudential-Policy-What-Instruments-and-How-to-Use-them-Lessons-From-Country-Experiences-25296][Macroprudential Policy : What Instruments and How to Use them? Lessons From Country Experiences]] :LTV:
+
+** [[https://www.sciencedirect.com/science/article/abs/pii/S1051137716300237][Housing finance and real-estate booms: A cross-country perspective]] :Data:
+
 * PARTIAL [#A] BEYOND THE LTV RATIO: NEW MACROPRUDENTIAL LESSONS FROM SPAIN
    :PROPERTIES:
    :ZOTERO:   Yes
