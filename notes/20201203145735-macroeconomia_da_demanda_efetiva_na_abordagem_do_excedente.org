@@ -1211,3 +1211,281 @@ Implicações:
   + Produto potencial afetado pela evolução da demanda
   + Inflação de custos e conglito distributivo
   + Taxa de juros variável institucional e distributiva
+--------
+* A abordagem da taxa de juros exógena: Economia fechada <2021-02-25 qui>
+** Três visões da taxa de juros
+
+*Neoclássica:*
+(1) Fenômeno real (poupança potencial e investimento)
+
+*Heterodoxa:* Fenômeno estritamente monetário
+(2) Oferta e demanda por moeda
+(3) Determinada institucionalidade (taxa de juros exógena)
+
+*Combinações:*
+- Síntese neoclássica :: (1+2)
+- Novo consenso :: (1+3)
+** Visão da síntese neoclássica
+*** Oferta e demanda por moeda
+
+_Antes de mais nada:_
+- O que é oferta de moeda?
+  + Basicamente, depósito à vista
+- O que é demanda por moeda? M/P?
+  + Depósitos à vista também!
+
+Logo, não faz sentido haver desequilíbrio no mercado monetário nos termos do modelo IS-LM.
+No mercado de bens, como um contra-exemplo, é fácil separar o que é produção e demanda por bens.
+*** A demanda por moeda
+
+*Demanda por moeda em Keynes (versão simplificada sem todos os motivos):*
+
+#+BEGIN_latex
+\begin{equation}
+\frac{M^{d}}{P} = hY - k(i - i^{e}_{t+1})
+\end{equation}
+#+END_latex
+- Motivo transação ($Y$)
+- Motivo especulação ($i, i^{e}$)
+  + Instável se $i^{e}$ varia muito
+  + Efeito especulação desaparece se $i^{e}_{t+1} = i$
+
+*Demanda por moeda na síntese neoclássica:*
+
+#+BEGIN_latex
+\begin{equation}
+\frac{M^{d}}{P} = hY - k(i)
+\end{equation}
+#+END_latex
+Taxa de juros esperada é a natural, logo, não haveria motivo para especulação.
+Estabiliza a demanda por moeda por consequência.
+*** A oferta de moeda
+
+Conceitos de Base ($H$) e Moeda ($M1$):
+
+- $M1 = DV + PMPP$
+- $H = RB + PMPP$
+
+
+Para simplificar, supondo $PMPP = 0$ (/e.g./ somente cartão):
+- Moeda exógena se $RB = \beta DV$
+- *Causalidade:* Reservas $\Rightarrow$ Empréstimos $\Rightarrow$ Depósitos
+- *Multiplicador monetário:*
+#+BEGIN_latex
+\begin{equation}
+\frac{M1}{H} = \frac{1}{\beta}
+\end{equation}
+#+END_latex
+Essa relação valeria para qualquer nível de produto na economia, ou seja, a LM é desenhada ao longo de todo campo produto x taxa de juros para uma dada oferta de moeda.
+Como consequência, o ajuste se já via taxa de juros.
+*** Determinação da taxa de juros
+
+#+BEGIN_latex
+\begin{equation}
+M^{S} = M^{D} \to \frac{\frac{H}{\beta}}{P} = hY - ki
+\end{equation}
+#+END_latex
+Logo, taxa de juros é negativamente inclinada
+*** Moeda exógena
+
+- Base exógena :: Reservas $\Rightarrow$ Empréstimos $\Rightarrow$ depósito
+  + Bancos emprestam tudo que podem (dado um multiplicador)
+  + Mercados de capitais perfeitos
+  + Número de tomadores solventes sem limites
+- Hipóteses extremas :: Existência de base monetária faz com que os bancos emprestem
+** Moeda endógena e taxa de juros exógena
+
+*Moeda endógena:* Hoje em dia bancos centrais não controlam oferta de moeda e sim a taxa de juros
+*** Visão tradicional
+
+- Moeda continua exógena :: Demanda por moeda instável
+  + Inovações financeiras
+  + Substitutos da moeda
+  + Muda velocidade "V"
+
+Banco central fixa taxa básica para evitar que a instabilidade da moeda torne taxa de juros muito instável.
+Recentemente, moeda endógena é aceita por economistas tradicionais e mais pragmáticos.
+*** Visão heterodoxa
+*Moeda endógena:* Característica estrutural da economia capitalista
+- Bancos não emprestam necessariamente "tudo que podem";
+- Bancos fixam spread e emprestam para clientes solventes que desejarem
+- Empréstimos $\Rightarrow$ depósitos
+  + Criada na medida que os clientes tomem empréstimos
+
+Demand-led? Não necessariamente! Nem toda demanda é atendida:
+- Racionamento de crédito
+- Clientes solventes: /Creditworthiness/ (Wolfson, 1996)
+*** Reservas
+
+Dado empréstimo e fração das reservas $\beta$:
+- Bancos determinam quanto precisam de reservas
+  + Alguns BC não determinam reservas compulsórias (Canadá)
+- Banco central acomoda
+- Empréstimos $\Rightarrow$ Depósitos $\Rightarrow$ Reservas
+*** Base monetária é totalmente endógena?
+
+A visão do *divisor* como um contraponto ao multiplicador bancário é bastante simplista porque a base monetária não é *totalmente* endógena:
+
+- Déficit público financiado por títulos
+- Variação de reservas internacionais
+- Banco Central pode se recusar a criar base (ainda que seja arriscado)
+  + Continua sendo discricionária
+*** Aumento exógeno da base monetária
+
+*Importante:* Não é por isso que bancos sairão emprestando
+- Ou muda $\beta$
+- ou (mais provável) destrói base no fim do dia
+
+No final das contas, base é endógena:
+- Não há multiplicador nem divisor, mas sim uma razão ex post
+
+*** VER SLIDES
+*** Horizontalistas e verticalistas
+**** Origens
+Qual o formato da curva de oferta de moeda (ou de crédito) no eixo juros-moeda?
+- Kaldor (1982) :: Horizontal, mudanças na oferta de moeda não afetaria a taxa de juros.
+  Para qualquer demanda haveria a mesma taxa de juros.
+**** Debate
+
+Longo debate na tradição pós-keynesiana
+- Estruturalistas :: Dow, Palley, Pollin, Wray, Cardim de Carvalho
+- Horizontalistas :: Moore, Lavoie, Rochon
+- Síntese :: Setterfield (2017)
+  + Horizontalistas:$i = f(Y)$
+  + Estruturalistas: $i \neq f(Y)$
+- Palley :: BC não acomoda quando aumenta $Y$ e há regra de Taylor
+
+
+**** Problema
+
+*Diferença entre moeda endógena e exógena:* Não se refere ao formato da curva de oferta de moeda.
+- Ideia de moeda endógena torna sem sentido desenhar curva de oferta de moeda independente da curva de demanda por moeda.
+- Nunca existe desequilíbrio entre oferta e demanda por moeda
+- Quando bancos emprestam e estes são depositados está se criando tanto oferta quanto demanda por moeda simultaneamente e necessariamente no mesmo montante
+
+Abandonar curvas de oferta e demanda e foco na taxa de juros: Abordagem da taxa de juros exógena
+**** Resolução?
+
+De todo modo, taxa de juros continua exógena e resultado de uma regra de política e não por meio de um mecanismo de mercado (tal como no modelo IS-LM).
+Mesmo se o banco central não acomode, continua sendo uma decisão exógena estabelecida institucionalmente (Lavoie 2005).
+
+**** Debate dos Spreads
+
+Spread privado é uma função do nível de atividade?
+
+#+BEGIN_latex
+\begin{equation}
+\rho = f(Y)
+\end{equation}
+#+END_latex
+
+- Estruturalistas fase 1 :: Pollin (1991); Carvalho (1993); Palley (1998)
+
+Nível de atividade maior:
+1. Piora indicador de liquidez dos bancos - risco do emprestador
+2. Risco crescente dos tomadores
+
+Spread por esses canais seria *pró-cíclico*.
+
+***** Problemas
+
+Falácia da composição:
+- Lavoie (1996) e a crítica do risco crescente do tomador :: Aumenta renda, aumenta lucro, não necessariamente aumenta risco (paradoxo da dívida)
+  + Relação dívida/lucro pode ficar constante
+- Deleidi (2020)  e a crítica ao risco do emprestador :: Não piora indicador de liquidez dos bancos com expansão (paradoxo da iliquidez)
+
+**** Retorno a teoria do portfólio
+
+Estruturalistas fase 2
+- Asensio (2017) :: Estoque e não fluxo de moeda
+- Palley (2017) :: Modelos de portfólio com moeda endógena e taxa de juros endógena
+  + Objetivo era obter uma LM positivamente inclinada, mas obtém uma negativamente inclinada
+
+***** Críticas
+
+- Deleidi (2020) :: Conceito de iliquidez relacionado a ideia neoclássica de escassez
+- Lavoe (2017) :: Modelo SFC, aumento de $Y$ vem de algum lugar; se for aumento, por exemplo, dos gastos do governo muda a quantidade de títulos e taxas de juros. Difícil
+- Lavoie and Reissl (2019) :: Crítica SFC a Asensio
+
+*** Abordagem da taxa de juros exógena
+**** Introdução
+
+Dois princípios:
+1. *Bancos _não_ são obrigados a emprestar:* Moeda endógena
+2. *Estado _não_ pode ser forçado a quebra na própria moeda:* Moeda estatal $\Rightarrow$ definição da taxa de juros
+Qual taxa de juros estamos falando?
+- Taxa básica de juros definida pela autoridade monetária (meta e efetiva)
+- Taxa dos títulos públicos de longo przo dependem da taxa básica
+- Spread dos empréstimos e títulos privados: ficados pelos bancos e mercados, influenciados pela taxa básica
+**** Taxa básica de juros definida pelo Banco Central
+
+Se bancos tem reservas abaixo de desejadas/obrigatórias:
+- Banco individual pode tomar emprestado no interbancário
+- Se sistema como um todo é deficitário, Banco Central opera nesse mercado interbancário (vários mecanismos) e garante a quantidade de reservas necessárias
+- Alternativa a taxa básica é juros zero
+- *Fixa preço:* taxa de juros (meta) e deixa quantidade decidida pelo público
+- Moeda estatal, importância do sistema de pagamentos e relação Tesouro-Banco Central
+
+Logo, Banco Central não é "apenas" o emprestador de última instância, mas sim o principal operador para que o sistema de pagamentos funcione.
+Além disso, o BC é o *monopolista* no mercado de reservas, ou seja, define unidirecionalmente os preço das reservar (juros) no nível que quiser.
+- Ex: 20% do PIB norte-americano é transacionado diariamente
+**** Evoluções institucionais
+
+Simplificam a forma que o BC atinge a meta e opera o sistema de pagamentos.
+
+- Modelo do corredor (overdraft, crédito pré-aprovado) :: Canadá, Nova Zelândia e Estados Unidos
+  + Pessoas tem uma reserva pré-aprovada com os bancos; bancos com o banco central a taxa do /overnight/ (e não a uma taxa diferente da meta)
+- EUA :: Reservas remuneradas e redesconto não punitivo
+  + Piso :: Abaixo da meta, empresta-se para o banco central
+  + Teto :: Acima da meta, compensa tomar emprestado diretamente com o banco central
+
+#+begin_example
+Se juros = 2%, BC empresta à 2.5% e remunera a 1.5%
+#+end_example
+**** Taxas de títulos públicos de longo prazo
+
+Teoria da escolha do porfólio: títulos dependem da oferta e demanda por títulos e a taxa de juros irá refletir isso
+- Os agentes podem ter preferências sobre certos títulos, mas o efeito das expectativas se sobressai
+- Visão irrealista e estática
+- Pode haver especulação ao longo do tempo
+
+Não há motivos para que a taxa de longo prazo tenha uma trajetória descolada da taxa de curto e das expectativas da taxa de curto no futuro
+- Título de dois anos: substituto potencial próximo duas aplicações seguidas em títulos de um ano.
+- Taxa de longo segue um padrão similar a uma média móvel da taxa de curto e as esperadas
+- Não há razões para que as expectativas convirjam a taxa de juros natural como afirmam alguns teóricos mainstream
+- Influencia tanto comunicando as ações de política econômica e por meio de compra de ativos
+  + Por consequência, os agentes ajustam o portfólio e não o inverso como estabelece a teoria do portfólio
+  + O mercado não determina, mas reage
+
+*QE e a taxa de juros de longo prazo:* QE $\Rightarrow$ providenciar condições financeiras acomodativas por meio da redução da taxa de juros de longo prazo (Fiebiger and Lavoie, 2021)
+- Quem quiser comprar, compraria do banco central
+- Quem for vender, não venderia por uma taxa mais baixa que a do banco central
+
+*Taxa privada de longo ($\rho$):*
+#+BEGIN_latex
+\begin{equation}
+i_{LP}^{privada} = (1+\rho)i_{LP}^{publica}
+\end{equation}
+#+END_latex
+- Spread é sobre a taxa que capta empréstimo
+** Spread
+
+Spread não é função da renda.
+Abordagem da taxa de juros exógena: não é preciso a priori supor alguma relação sistemática entre nível de atividade e spread, apenas para justiticar a tradição de desenhar curvas de oferta e demanda por crédito.
+- Talvez isso seja mais adequado ao caso a caso e não para o geral
+
+Spread privado esta sujeito a um grande conjunto de variáveis diferentes.
+Questão empírica: Spread bancário pode ser anticíclico
+- Boom: inadimplência diminui, desemprego diminui
+- Spread e taxa de juros (a la Pivetti) afeta a taxa de lucro da economia
+- Restrição de crédito e não aumento de juros
+- Crédito pré-aprovado
+- Spread micro x médio
+- No Brasil: Spread e Bancos públicos
+** Retomada
+
+*Resumo:* Apenas não há mecanismos de mercado automático para mudar a taxa fixada institucionalmente:
+- Taxa de juros como variável institucional, política
+  + Não é decidida no vácuo
+- Tem consequências para a economia
+  + Continua sendo exogenamente determinada

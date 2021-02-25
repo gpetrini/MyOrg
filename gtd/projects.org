@@ -32,6 +32,23 @@ CLOSED: [2021-02-22 seg 19:03]
 ** TODO [[https://www.bis.org/publ/qtrpdf/r_qt1309i.htm][Database for policy actions on housing markets]] :DATASET:
 ** TODO [[https://www.ecb.europa.eu/pub/pdf/scpops/ecb.op220~47edfcc84d.en.pdf][The impact of lending standards on default rates of residential real estate loans ]] :PLOTS:
 ** TODO [[http://www.finpolconsult.de/mediapool/16/169624/data/Housing_Finance/Europe/Low_Duebel_Sebag-Montefiori_EMF_Financial_Integration_03.pdf][Study on the Financial Integrationof European Mortgage Markets]] :DATASET:
+** Variables ideas
+*** Decommodificaiton (DEC)
+
+DEC = ownership AND Mortgage Debt
+
+- Consider social rental?
+
+*** Consumer Friendly
+
+CONS = Reclosure AND Prepayment AND Equity withdraw AND higher typical loan term
+- Consider variable interest rate as a share of total loans?
+- Reclosure as a possible way to solve contradictions
+*** Preference to iliquity
+
+ILI = Max LTV - Typical LTV Vs LTV deviation from OECD average
+- Consider mortgage securitization?
+
 * Panel [0%] :Dissertation:
 
 ** TODO Ver Statista :Data:
@@ -57,3 +74,6 @@ CLOSED: [2021-02-22 seg 19:03]
 * Cecon [100%] :Group:
 
 * Blog :@free:
+
+* Bibliographical shinny app [0/0] :@free:
+** [[https://docs.ropensci.org/bib2df/][bib2df]]

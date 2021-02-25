@@ -4,6 +4,7 @@
 #+roam_alias: VoC
 #+ARCHIVE: ../archive/QCA.org::* VoC
 #+TODO: READ SKIM PARTIAL WAIT MAYBE | REF REPORT DONE ARCH
+#+PROPERTY: FINISHED_ALL "[ ]" "[X]"
 #+PROPERTY: COLUMNS  %FINISHED(Finished?){X} %7TODO(Decision) %15KEY(Reference) %7RELEVANCE
 #+PROPERTY: DECISION_ALL Read File Skip PartialRead
 #+PROPERTY: ZOTERO_ALL Yes No Partial Entry
@@ -11,7 +12,6 @@
 #+PROPERTY: RELEVANCE_ALL High Regular Low None
 #+PROPERTY: IMPACT_ALL High Regular Low None
 #+PROPERTY: CITE_ALL Yes No Wait
-#+PROPERTY: FINISHED_ALL "[ ]" "[X]"
 #+PROPERTY: YEAR_ALL
 #+PROPERTY: KEY_ALL
 
@@ -26,7 +26,7 @@
 | [ ]       | READ     | cite:hallVarietiesCapitalismInstitutional2009      | High      |
 |           | READ     |                                                    |           |
 |           | READ     |                                                    |           |
-| [ ]       | READ     |                                                    | High      |
+| [X]       | READ     | cite:schwartz_2009_Varietiesa                      | High      |
 | [ ]       | READ     | cite:blyth_2003_Same                               | High      |
 | [ ]       | READ     | cite:fernandez_2016_Financialization               | High      |
 | [ ]       | READ     | cite:fuller_2015_Who                               | Regular   |
@@ -38,13 +38,13 @@
 | [ ]       | SKIM     | cite:hay_2004_Common                               | High      |
 | [ ]       | SKIM     | cite:crouch_2005_Dialogue                          | High      |
 | [X]       | SKIM     | cite:setterfieldVarietiesCapitalismIncreasing2020a | Regular   |
-| [X]       | PARTIAL  | cite:hallVarietiesCapitalismInstitutional2001      | High      |
+| [X]       | DONE     | cite:hallVarietiesCapitalismInstitutional2001      | High      |
 | [ ]       | MAYBE    |                                                    | High      |
 | [ ]       | MAYBE    | cite:hardie_2013_Banks                             | Low       |
-| [X]       | REF      | cite:howell_2003_Varieties                         | Regular   |
-| [X]       | REF      | cite:lapavitsas_2013_Financialisation              | Regular   |
-| [X]       | REF      | cite:baccaroRethinkingComparativePolitical2016     | Low       |
-| [X]       | REF      | cite:behringer_2018_Varieties                      | Low       |
+| [X]       | DONE     | cite:howell_2003_Varieties                         | Regular   |
+| [X]       | DONE     | cite:lapavitsas_2013_Financialisation              | Regular   |
+| [X]       | DONE     | cite:baccaroRethinkingComparativePolitical2016     | Low       |
+| [X]       | DONE     | cite:behringer_2018_Varieties                      | Low       |
 |           | ARCH     |                                                    |           |
 | [ ]       | ARCH     |                                                    | Low       |
 | [ ]       | ARCH     | cite:beck_2009_Financial                           | Low       |
@@ -88,11 +88,12 @@
   :PROPERTIES:
   :YEAR:     2009
   :ZOTERO:   Yes
-  :STATUS:   Zotero
+  :STATUS:   =Finished=
   :RELEVANCE: High
   :IMPACT:   Low
   :CITE:     Yes
-  :FINISHED: [ ]
+  :FINISHED: [X]
+  :KEY:      cite:schwartz_2009_Varietiesa
   :END:
 * READ [#A] [[https://link.springer.com/article/10.1057/palgrave.cep.6110008][Same as it Never Was: Temporality and Typology in the Varieties of Capitalism]]
   :PROPERTIES:
@@ -224,7 +225,8 @@
 
   - Do not include VoC theoretical discussion
 
-* PARTIAL [#B] Varieties of Capitalism: The Institutional Foundations of Comparative Advantage
+* DONE [#B] Varieties of Capitalism: The Institutional Foundations of Comparative Advantage
+CLOSED: [2021-02-25 qui 14:45]
   :PROPERTIES:
   :YEAR:     2001
   :ZOTERO:   Yes
@@ -262,7 +264,7 @@
   :FINISHED: [ ]
   :END:
 
-* REF [[https://www.jstor.org/stable/4150162?seq=1#metadata_info_tab_contents][Varieties of Capitalism: And Then There Was One? ]] :Review:Reception:
+* DONE [[https://www.jstor.org/stable/4150162?seq=1#metadata_info_tab_contents][Varieties of Capitalism: And Then There Was One? ]] :Review:Reception:
 CLOSED: [2021-02-16 ter 17:33]
   :PROPERTIES:
   :YEAR:  2003
@@ -275,7 +277,7 @@ CLOSED: [2021-02-16 ter 17:33]
   :FINISHED: [X]
   :END:
 
-* REF [[https://doi.org/10.1093/cjres/rst019][Financialisation varied: a comparative analysis of advanced economies]]
+* DONE [[https://doi.org/10.1093/cjres/rst019][Financialisation varied: a comparative analysis of advanced economies]]
 CLOSED: [2021-02-16 ter 15:42]
   :PROPERTIES:
   :YEAR:     2013
@@ -287,7 +289,7 @@ CLOSED: [2021-02-16 ter 15:42]
   :KEY:  cite:lapavitsas_2013_Financialisation
   :FINISHED: [X]
   :END:
-* REF [[https://journals.sagepub.com/doi/abs/10.1177/0032329216638053][Rethinking Comparative Political Economy: The Growth Model Perspective]]
+* DONE [[https://journals.sagepub.com/doi/abs/10.1177/0032329216638053][Rethinking Comparative Political Economy: The Growth Model Perspective]]
 CLOSED: [2021-02-16 ter 15:47]
   :PROPERTIES:
   :YEAR:     2016
@@ -299,7 +301,7 @@ CLOSED: [2021-02-16 ter 15:47]
   :KEY:  cite:baccaroRethinkingComparativePolitical2016
   :FINISHED: [X]
   :END:
-* REF [#C] Varieties of Capitalism and Growth Regimes
+* DONE [#C] Varieties of Capitalism and Growth Regimes
 CLOSED: [2021-02-16 ter 15:24]
   :PROPERTIES:
   :YEAR:     2018

@@ -54,3 +54,18 @@
 ** 16:20 Café da tarde
 ** 17:10 Retornando
 ** 17:51 Fichamento abandonado; buscando referências
+** 18:57 Fim do expediente; gtd e git
+* quinta, 25/02/2021
+:PROPERTIES:
+:CREATED:  20210225
+:END:
+** 08:00 Atualização; sage e dac
+** 08:31 Louça; banho e lente
+** 09:42 Iniciando trabalho
+Bastante tempo elaborando o projeto zotero
+** 12:00 Fim leitura
+
+Leitura bastante dispersa, mas com várias ideias para a tese
+** 19:11 Commit e fim do expediante
+
+- Checando possibilidade de importar do grupo do zotero
