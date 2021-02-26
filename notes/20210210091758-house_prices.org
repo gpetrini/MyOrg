@@ -1,3 +1,5 @@
 #+title: House Prices
 
 [[file:20210210091646-chpanel.org][Panel readings]]
+
+* ARCH [#C] [[https://www.kansascityfed.org/PUBLICAT/ECONREV/PDF/2q07rapp.pdf][Rappaport - A Guide to Aggregate House Price Measures]] :USA:HousePrices:

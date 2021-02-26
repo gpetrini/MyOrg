@@ -1,2 +1,287 @@
 #+title: Institutional comparisons
+#+roam_alias: InstComp
+#+ARCHIVE: ../archive/QCA.org::* Institutional comparisons
+#+TODO: READ SKIM PARTIAL WAIT MAYBE REF | REPORT DONE ARCH
+#+PROPERTY: FINISHED_ALL "[ ]" "[X]"
+#+PROPERTY: COLUMNS  %FINISHED(Finished?){X} %TODO(Decision) %ITEM(File) %15KEY(Reference) %7RELEVANCE
+#+PROPERTY: DECISION_ALL Read File Skip PartialRead
+#+PROPERTY: ZOTERO_ALL Yes No Partial Entry
+#+PROPERTY: STATUS_ALL Reading Searching Abandoned =Finished= Skimmed NotFound 404 Downloaded Zotero
+#+PROPERTY: RELEVANCE_ALL High Regular Low None
+#+PROPERTY: IMPACT_ALL High Regular Low None
+#+PROPERTY: CITE_ALL Yes No Wait
+#+PROPERTY: YEAR_ALL
+#+PROPERTY: KEY_ALL
+
 [[file:20210210093026-qca_readings.org][QCA readings]]
+
+
+#+BEGIN: columnview :maxlevel 3 :id global
+| Finished? | Decision | File                                                                                                                                                      | Reference                                       | RELEVANCE |
+|-----------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------+-----------|
+|           | READ     | [[file:2021-02-26-12-04-45-klyuev_2010_Housing.org][klyuev_2010_Housing: Is Housing Wealth an ``ATM''?: International Trends (2010, )]]                                                                         | cite:klyuev_2010_Housing                        | High      |
+| [ ]       | READ     | [[file:2021-01-12-14-07-01-green_2005_American.org][green_2005_American: The American Mortgage in Historical and International Context]]                                                                        | cite:greenAmericanMortgageHistorical2005        | High      |
+| [ ]       | READ     | [[file:2021-02-26-10-46-43-green_2010_Housinga.org][green_2010_Housinga: The Housing Finance Revolution (2010, )]]                                                                                              | cite:green_2010_Housinga                        | High      |
+|           | READ     | [[file:2021-02-26-12-01-05-coles_2000_Mortgage.org][coles_2000_Mortgage: Mortgage Markets: Why US and EU Markets Are So Different (2000, Housing Studies)]]                                                     | cite:coles_2000_Mortgage                        | High      |
+|           | READ     | courchaneComparisonCanadianResidential2002: A Comparison of U.S. and Canadian Residential Mortgage Markets (2002, Econometrics Working Papers)]]:CAN:EUA: | cite:courchaneComparisonCanadianResidential2002 | Regular   |
+| [ ]       | READ     | [[file:2021-02-26-11-47-02-gartner_2012_White.org][gartner_2012_White: White Picket Finance: The Remaking of the U.S. Mortgage Market, 1932-1960 (2012, )]]                                                    | cite:garther_2012_White                         | Regular   |
+|           | SKIM     | [[https://journals.sagepub.com/doi/10.1179/102452909X12506915718111][Dixon and Sorsa - Institutional Change and the Financialisation of Pensions in Europe]]                                                                     |                                                 | Low       |
+| [ ]       | SKIM     | [[http://www.empirica-international.de/mediapool/16/169624/data/Housing_Finance/Europe/Duebel_VdP_Fixed-Rate_Mortgages_and_Prepayment_in_Europe_05.pdf][Duebel - Fixed-rate Mortgages and Prepayment in Europe (mimeo)]]                                                                                            | cite:                                           | Low       |
+|           | WAIT     | [[file:2021-02-26-10-17-47-cho_2007_180.org][cho_2007_180: 180 Years' Evolution of the US Mortgage Banking System: Lessons for Emerging Mortgage Markets (2007, )]]                                      | cite:cite:cho_2007_180                          | Regular   |
+|           | WAIT     | [[https://escholarship.org/content/qt41d5k3bd/qt41d5k3bd.pdf][Quigley - Federal Credit and Insurance Programs: Housing]]                                                                                                  |                                                 | Regular   |
+|           | REF      | [[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.360.2923&rep=rep1&type=pdf][Miles - The UK mortgage market: Taking a longer-term view]]                                                                                                 |                                                 | Low       |
+|           | ARCH     | [[https://www.imf.org/en/Publications/WP/Issues/2016/12/30/Deposit-Protection-Arrangements-A-Survey-1875][Kyei - Deposit Protection Arrangements : A Survey]]                                                                                                         |                                                 | High      |
+|           | ARCH     | [[http://policydialogue.org/files/publications/Determinants_of_Banking_Crises.pdf][Demirgüç-Kunt and Detragiache - The Determinants of Banking Crises in Developing and Developed Countries]]                                                  |                                                 | High      |
+|           | ARCH     | [[https://www.nber.org/papers/w25653][Jordà et al - The Total Risk Premium Puzzle]]                                                                                                               | cite:jorda_2019_Total                           | Low       |
+|           | ARCH     | [[https://pdfs.semanticscholar.org/9157/92055cd5691d9b31ed46556407d50003e310.pdf][Cheng et al - The Real Estate Risk Premium Puzzle: A Solution]]                                                                                             |                                                 |           |
+|           | ARCH     | [[http://feweb.uvt.nl/pdf/brounen/shilling.pdf][Shilling - Is There a Risk Premium Puzzle in Real Estate?]]                                                                                                 |                                                 | Low       |
+|           | ARCH     | [[https://escholarship.org/uc/item/4x0357n0;][Jaffee - Reforming the U.S. Mortgage Market Through Private Market Incentives]]                                                                             |                                                 |           |
+|           | ARCH     | [[https://www.aeaweb.org/articles?id=10.1257/jep.11.3.139][Benston and Kaufman  - FIDICIA After Five Years]]                                                                                                           |                                                 | Low       |
+|           | ARCH     | [[https://www.jstor.org/stable/24825878?seq=1][Wachter - The limits of the housing finance system]]                                                                                                        |                                                 | Regular   |
+|           | ARCH     | [[https://www.jstor.org/stable/24833781?seq=1][Order - The U.S. Mortgage Market: A Model of Dueling Charters]]                                                                                             |                                                 | Low       |
+|           | ARCH     | [[https://www.nbs.sk/_img/Documents/PUBLIK/muc0070.pdf][IMF - Mortgages in Europe]]                                                                                                                                 |                                                 | Regular   |
+#+END
+* READ [#A] [[file:2021-02-26-12-04-45-klyuev_2010_Housing.org][klyuev_2010_Housing: Is Housing Wealth an ``ATM''?: International Trends (2010, )]]
+:PROPERTIES:
+:YEAR:  citeyear*:klyuev_2010_Housing
+:ZOTERO:   Yes
+:STATUS:   Zotero
+:RELEVANCE: High
+:IMPACT:   Low
+:CITE:     Yes
+:KEY: cite:klyuev_2010_Housing
+:END:
+* READ [#A] [[file:2021-01-12-14-07-01-green_2005_American.org][green_2005_American: The American Mortgage in Historical and International Context]]
+:PROPERTIES:
+:YEAR:  citeyear*:greenAmericanMortgageHistorical2005
+:ZOTERO:   Yes
+:STATUS:   Reading
+:RELEVANCE: High
+:IMPACT:   Regular
+:CITE:     Yes
+:KEY: cite:greenAmericanMortgageHistorical2005
+:FINISHED: [ ]
+:END:
+* READ [#A] [[file:2021-02-26-10-46-43-green_2010_Housinga.org][green_2010_Housinga: The Housing Finance Revolution (2010, )]]
+:PROPERTIES:
+:YEAR:  citeyear*:green_2010_Housinga
+:ZOTERO:   Yes
+:STATUS:   Reading
+:RELEVANCE: High
+:IMPACT:   Regular
+:CITE:     Yes
+:KEY: cite:green_2010_Housinga
+:FINISHED: [ ]
+:END:
+* READ [#A] [[file:2021-02-26-12-01-05-coles_2000_Mortgage.org][coles_2000_Mortgage: Mortgage Markets: Why US and EU Markets Are So Different (2000, Housing Studies)]] :USA:EU:
+:PROPERTIES:
+:YEAR:  citeyear*:coles_2000_Mortgage
+:ZOTERO:   Yes
+:STATUS:   Zotero
+:RELEVANCE: High
+:IMPACT:   Low
+:CITE:     Yes
+:KEY: cite:coles_2000_Mortgage
+:END:
+
+* READ [#A] courchaneComparisonCanadianResidential2002: A Comparison of U.S. and Canadian Residential Mortgage Markets (2002, Econometrics Working Papers)]]:CAN:EUA:
+:PROPERTIES:
+:YEAR:  citeyear*:courchaneComparisonCanadianResidential2002
+:ZOTERO:   Yes
+:STATUS:   Zotero
+:RELEVANCE: Regular
+:IMPACT:   Low
+:CITE:     Wait
+:KEY: cite:courchaneComparisonCanadianResidential2002
+:END:
+* READ [#C] [[file:2021-02-26-11-47-02-gartner_2012_White.org][gartner_2012_White: White Picket Finance: The Remaking of the U.S. Mortgage Market, 1932-1960 (2012, )]] :USA:
+:PROPERTIES:
+:YEAR:  citeyear*:garther_2012_White
+:ZOTERO:   Partial
+:STATUS:   Zotero
+:RELEVANCE: Regular
+:IMPACT:   Regular
+:CITE:     Wait
+:KEY: cite:garther_2012_White
+:FINISHED: [ ]
+:END:
+* SKIM [#C] [[https://journals.sagepub.com/doi/10.1179/102452909X12506915718111][Dixon and Sorsa - Institutional Change and the Financialisation of Pensions in Europe]] :PensionFunds:REFS:
+   :PROPERTIES:
+   :YEAR:     2009
+   :ZOTERO:   Yes
+   :TYPE:     Theory
+   :STATUS:   Filed
+   :RELEVANCE: Low
+   :IMPACT:   Low
+   :CITE:     Wait
+   :END:
+
+#+BEGIN_SRC bibtex
+@Article{Dixon_Pension_2009,
+  author       = {Dixon, Adam D. and Sorsa, Ville-Pekka},
+  title	       = {Institutional Change and the Financialisation of Pensions in Europe},
+  year	       = {2009},
+  volume       = {13},
+  number       = {4},
+  month	       = {Dec},
+  pages	       = {347–367},
+  doi	       = {10.1179/102452909x12506915718111},
+  url	       = {http://dx.doi.org/10.1179/102452909X12506915718111},
+  journal      = {Competition & Change},
+  publisher    = {SAGE Publications}
+}
+#+END_SRC
+
+* SKIM [#C] [[http://www.empirica-international.de/mediapool/16/169624/data/Housing_Finance/Europe/Duebel_VdP_Fixed-Rate_Mortgages_and_Prepayment_in_Europe_05.pdf][Duebel - Fixed-rate Mortgages and Prepayment in Europe (mimeo)]]
+:PROPERTIES:
+:YEAR:  citeyear*:
+:ZOTERO:   No
+:STATUS:   Downloaded
+:RELEVANCE: Low
+:IMPACT:   Low
+:CITE:     Wait
+:KEY: cite:
+:FINISHED: [ ]
+:END:
+* WAIT [#A] [[file:2021-02-26-10-17-47-cho_2007_180.org][cho_2007_180: 180 Years' Evolution of the US Mortgage Banking System: Lessons for Emerging Mortgage Markets (2007, )]]
+:PROPERTIES:
+:YEAR: citeyear*:cho_2007_180
+:ZOTERO:   Yes
+:STATUS:   Zotero
+:RELEVANCE: Regular
+:IMPACT:   Low
+:CITE:     Wait
+:KEY: cite:cite:cho_2007_180
+:END:
+* WAIT [#C] [[https://escholarship.org/content/qt41d5k3bd/qt41d5k3bd.pdf][Quigley - Federal Credit and Insurance Programs: Housing]] :USA:
+   :PROPERTIES:
+   :YEAR:     2006
+   :ZOTERO:   Yes
+   :TYPE:     Case
+   :STATUS:   Downloaded
+   :RELEVANCE: Regular
+   :IMPACT:   Low
+   :CITE:     Yes
+   :COUNTRY: US
+   :END:
+* REF [#C] [[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.360.2923&rep=rep1&type=pdf][Miles - The UK mortgage market: Taking a longer-term view]]
+   :PROPERTIES:
+   :YEAR:    2004
+   :ZOTERO:   Yes
+   :TYPE:     Case
+   :STATUS:   Filed
+   :RELEVANCE: Low
+   :IMPACT:   Regular
+   :CITE:     Wait
+   :END:
+
+   #+BEGIN_SRC bibtex
+   #+END_SRC
+
+* ARCH [[https://www.imf.org/en/Publications/WP/Issues/2016/12/30/Deposit-Protection-Arrangements-A-Survey-1875][Kyei - Deposit Protection Arrangements : A Survey]] :Deposits:
+CLOSED: [2021-02-26 sex 10:20]
+   :PROPERTIES:
+   :YEAR:     1995
+   :ZOTERO:   Yes
+   :TYPE:     Case
+   :STATUS:   NotFound
+   :RELEVANCE: High
+   :IMPACT:   Low
+   :CITE:     Yes
+   :END:
+* ARCH [[http://policydialogue.org/files/publications/Determinants_of_Banking_Crises.pdf][Demirgüç-Kunt and Detragiache - The Determinants of Banking Crises in Developing and Developed Countries]] :Developing:
+CLOSED: [2021-02-26 sex 10:20]
+   :PROPERTIES:
+   :YEAR: 1998
+   :ZOTERO:   Yes
+   :TYPE:     Empirical
+   :STATUS:   Skimmed
+   :RELEVANCE: High
+   :IMPACT:   Low
+   :CITE:     Yes
+   :END:
+
+* ARCH [#A] [[https://www.nber.org/papers/w25653][Jordà et al - The Total Risk Premium Puzzle]] :OFFTopic:
+CLOSED: [2021-02-26 sex 11:02]
+:PROPERTIES:
+:YEAR:  citeyear*:jorda_2019_Total:
+:ZOTERO:   Entry
+:STATUS:   Abandoned
+:RELEVANCE: Low
+:IMPACT:   High
+:CITE:     No
+:KEY: cite:jorda_2019_Total
+:END:
+
+* ARCH [#C] [[https://pdfs.semanticscholar.org/9157/92055cd5691d9b31ed46556407d50003e310.pdf][Cheng et al - The Real Estate Risk Premium Puzzle: A Solution]] :OFFTopic:PUZZLE:
+* ARCH [#B] [[http://feweb.uvt.nl/pdf/brounen/shilling.pdf][Shilling - Is There a Risk Premium Puzzle in Real Estate?]] :PUZZLE:
+   CLOSED: [2020-10-02 sex 18:13]
+   :PROPERTIES:
+   :YEAR:     2003
+   :ZOTERO:   Entry
+   :TYPE:     Thechnical
+   :STATUS:   Filed
+   :RELEVANCE: Low
+   :IMPACT:   Low
+   :CITE:     No
+   :END:
+* ARCH [[https://escholarship.org/uc/item/4x0357n0;][Jaffee - Reforming the U.S. Mortgage Market Through Private Market Incentives]]
+CLOSED: [2021-02-26 sex 11:06]
+
+* ARCH [[https://www.aeaweb.org/articles?id=10.1257/jep.11.3.139][Benston and Kaufman  - FIDICIA After Five Years]] :OFFTopic:FDICIA:USA:
+CLOSED: [2021-02-26 sex 11:08]
+   :PROPERTIES:
+   :YEAR:     1997
+   :ZOTERO:   Yes
+   :TYPE:     Case
+   :STATUS:   Filed
+   :RELEVANCE: Low
+   :IMPACT:   Regular
+   :CITE:     Wait
+   :END:
+
+* ARCH [#C] [[https://www.jstor.org/stable/24825878?seq=1][Wachter - The limits of the housing finance system]]
+CLOSED: [2021-02-26 sex 11:41]
+   :PROPERTIES:
+   :YEAR:     1990
+   :ZOTERO:   Entry
+   :TYPE:     Case
+   :STATUS:   Filed
+   :RELEVANCE: Regular
+   :IMPACT:   Low
+   :CITE:     Wait
+   :END:
+
+   #+BEGIN_SRC bibtex
+
+   #+END_SRC
+
+* ARCH [#C] [[https://www.jstor.org/stable/24833781?seq=1][Order - The U.S. Mortgage Market: A Model of Dueling Charters]]
+CLOSED: [2021-02-26 sex 11:42]
+   :PROPERTIES:
+   :YEAR:    2000
+   :ZOTERO:   Entry
+   :TYPE:     Theory
+   :STATUS:   Filed
+   :RELEVANCE: Low
+   :IMPACT:   Low
+   :CITE:     Wait
+   :END:
+
+   #+BEGIN_SRC bibtex
+
+   #+END_SRC
+
+* ARCH [#B] [[https://www.nbs.sk/_img/Documents/PUBLIK/muc0070.pdf][IMF - Mortgages in Europe]]
+CLOSED: [2021-02-26 sex 11:52]
+   :PROPERTIES:
+   :YEAR:     2000
+   :ZOTERO:   Partial
+   :TYPE:     Review
+   :STATUS:   Filed
+   :RELEVANCE: Regular
+   :IMPACT:   Low
+   :CITE:     Wait
+   :END:
+
+*Zotero file:* muc0070.pdf

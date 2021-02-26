@@ -30,6 +30,16 @@
 #+END
 
 
+* READ [#B] Lea - International Comparison of Mortgage Product :QCA:
+   :PROPERTIES:
+   :YEAR:     2010
+   :ZOTERO:   Partial
+   :TYPE:     Thechnical
+   :STATUS:   Downloaded
+   :RELEVANCE: High
+   :IMPACT:   Low
+   :CITE:     Wait
+   :END:
 * READ [#A] [[https://hypo.org/ecbc/publication-news/v-ltv-matters/][The “V” in LTV and why it matters]]
    :PROPERTIES:
    :ZOTERO:   No
@@ -91,6 +101,17 @@
    :CITE:     Wait
    :KEY: andrews_2011_Housing
    :END:
+* PARTIAL [#A] [[file:2021-02-26-11-34-13-bover_2018_distribution.org][bover_2018_distribution: The distribution of debt across euro-area countries: the role of individual characteristics, institutions, and credit conditions (2018, 44th issue (June 2016) of the International Journal of Central Banking)]]
+:PROPERTIES:
+:YEAR:  citeyear*:bover_2018_distribution
+:ZOTERO:
+:STATUS:
+:RELEVANCE:
+:IMPACT:
+:CITE:
+:KEY: cite:bover_2018_distribution
+:FINISHED: [ ]
+:END:
 * PARTIAL [#A]  Housing Finance Across Countries: New Data and Analysis
    :PROPERTIES:
    :ZOTERO:   Yes
@@ -103,7 +124,19 @@
    :END:
 
 
-* PARTIAL [#C]  Evolution of the U.S. Housing Finance Syste
+* PARTIAL [#A] [[https://www.ecb.europa.eu/pub/pdf/scpops/ecbocp101.pdf][European Central Bank - Housing Finance in the Euro Area]] :INBOX:LOANS:DATA:
+:PROPERTIES:
+:YEAR:     2009
+:ZOTERO:   Partial
+:STATUS:   Filed
+:RELEVANCE: High
+:IMPACT:   Regular
+:CITE:     Yes
+:KEY: cite:
+:END:
+
+*Zotero file:* ecbocp101.pdf
+* PARTIAL [#C]  Evolution of the U.S. Housing Finance System
    :PROPERTIES:
    :ZOTERO:   Partial
    :YEAR:     2006
@@ -113,3 +146,42 @@
    :CITE:     Yes
    :KEY:
    :END:
+
+* ARCH [#B] [[https://www.bde.es/f/webbde/INF/MenuHorizontal/SobreElBanco/Conferencias/2017/papers/171005_15.30-17.00_1_ZIMMERMANN_paper.pdf][Zimmermann - Breaking Banks? Bank Profitability and Monetary Policy]] :OFFTopic:Banking:MonetaryPolicy:DATA:
+CLOSED: [2021-02-26 sex 11:10]
+   :PROPERTIES:
+   :YEAR:     2017
+   :ZOTERO:   Yes
+   :TYPE:     Empirical
+   :STATUS:   Filed
+   :RELEVANCE: Regular
+   :IMPACT:   Regular
+   :CITE:     Wait
+   :END:
+
+* ARCH [#B] [[https://www.oecd-ilibrary.org/docserver/5kgk8t2k9vf3-en.pdf?expires=1601577774&id=id&accname=guest&checksum=ACA0089C73178336532B9AB2C723EFC2][Andrews et al - Housing Markets and Structural Policiesin OECD Countries]] :OFFTopic:Construction:TAX:
+CLOSED: [2021-02-26 sex 12:12]
+   :PROPERTIES:
+   :YEAR:     2011
+   :ZOTERO:   Yes
+   :TYPE:     Empirical
+   :STATUS:   Filed
+   :RELEVANCE: Regular
+   :IMPACT:   Low
+   :CITE:     Wait
+   :END:
+
+FIX BIB
+
+#+BEGIN_SRC bibtex
+@Article{Andrews_OECD_2011,
+  year	       = {2011},
+  month	       = {Jan},
+  issn	       = {1815-1973},
+  doi	       = {10.1787/5kgk8t2k9vf3-en},
+  url	       = {http://dx.doi.org/10.1787/5kgk8t2k9vf3-en},
+  journal      = {OECD Economics Department Working Papers},
+  publisher    = {Organisation for Economic Co-Operation and
+                  Development (OECD)}
+}
+#+END_SRC

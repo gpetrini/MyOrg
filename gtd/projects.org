@@ -55,6 +55,19 @@ ILI = Max LTV - Typical LTV Vs LTV deviation from OECD average
 ** TODO Ver equifax data
 ** TODO https://www.sciencedirect.com/science/article/abs/pii/S026156062100019X
 ** TODO Ler bloomberg ([[https://www.bloomberg.com/opinion/articles/2021-02-17/covid-housing-boom-is-even-bigger-than-imagined?utm_source=url_link][Link]])
+** [[https://academic.oup.com/jeea/article-abstract/18/4/2013/5573386?redirectedFrom=fulltext][Hoffman and Stewen - Holes in the Dike: The Global Savings Glut, U.S. House Prices, and the Long Shadow of Banking Deregulation]] :HousePrices:Panel:INBOX:
+
+** TODO The Housing Cycle: What Role for Mortgage Market Development and Housing Finance? :INBOX:
+** [[https://www.imf.org/~/media/Websites/IMF/imported-full-text-pdf/external/pubs/ft/wp/2008/_wp08224.ashx][IMF - Systemic Banking Crises: A New Database]] :INBOX:DATA:
+   :PROPERTIES:
+   :YEAR: 2008
+   :ZOTERO:   Yes
+   :TYPE:     Thechnical
+   :STATUS:   Downloaded
+   :RELEVANCE: High
+   :IMPACT:   High
+   :CITE:     Yes
+   :END:
 * ABM [0%] :Dissertation:
 
 ** TODO Inequality, household debt and financial instability: An agent-based perspective
@@ -63,6 +76,33 @@ ILI = Max LTV - Typical LTV Vs LTV deviation from OECD average
 ** TODO Lever Lavoie e Seccareccia (2001)
 ** TODO Ler Manual Lavoie
 ** TODO Ler artigo Pedrosa e Lang
+** [[https://academic.oup.com/jeea/article-abstract/2/6/1148/2280932?redirectedFrom=fulltext][Ehrmann and Worms - Bank Networks and Monetary Policy Transmission]] :OFF:NETWORK:ABM:
+   :PROPERTIES:
+   :YEAR:     2004
+   :ZOTERO:   Yes
+   :TYPE:     Theory
+   :STATUS:   Filed
+   :RELEVANCE: Regular
+   :IMPACT:   Low
+   :CITE:     Wait
+   :END:
+
+#+BEGIN_SRC bibtex
+@Article{Ehrmann_2004,
+  author       = {Ehrmann, Michael and Worms, Andreas},
+  title	       = {Bank Networks and Monetary Policy Transmission},
+  year	       = {2004},
+  volume       = {2},
+  number       = {6},
+  month	       = {Dec},
+  pages	       = {1148–1171},
+  doi	       = {10.1162/1542476042813904},
+  url	       = {http://dx.doi.org/10.1162/1542476042813904},
+  journal      = {Journal of the European Economic Association},
+  publisher    = {Oxford University Press (OUP)}
+}
+#+END_SRC
+
 * VECM [100%] :Article:
 
 ** TODO Repensar data para escrever introdução VECM

@@ -1,0 +1,45 @@
+#+TITLE: sa_2014_CAPITAL: CAPITAL INFLOWS, FINANCIAL STRUCTURE AND HOUSING BOOMS: Capital Inflows, Financial Structure and Housing Booms (2014, Journal of the European Economic Association)
+#+OPTIONS: toc:nil num:nil
+#+ROAM_KEY: cite:sa_2014_CAPITAL
+#+ROAM_TAGS:
+Time-stamp: 2021-02-26
+- tags ::
+
+
+* Backlinks
+[[file:20210210190632-panel_theoretical_foundations.org][Panel Theoretical foundations]]
+
+
+* FISH-5SS
+
+
+|---------------------------------------------+-----|
+| <40>                                        |<50> |
+| *Background*                                  |     |
+| *Supporting Ideas*                            |     |
+| *Purpose*                                     |     |
+| *Originality/value (Contribution)*            |     |
+| *Relevance*                                   |     |
+| *Design/methodology/approach*                 |     |
+| *Results*                                     |     |
+| *(Interesting) Findings*                      |     |
+| *Research limitations/implications (Critics)* |     |
+| *Uncategorized stuff*                         |     |
+| *5SS*                                         |     |
+|---------------------------------------------+-----|
+
+* Specifics comments
+ :PROPERTIES:
+ :Custom_ID: sa_2014_CAPITAL
+ :AUTHOR: S\'a, Filipa, Towbin, P., & Wieladek, T.
+ :JOURNAL: Journal of the European Economic Association
+ :YEAR: 2014
+ :DOI:  http://dx.doi.org/10.1111/jeea.12047
+ :URL: https://academic.oup.com/jeea/article-lookup/doi/10.1111/jeea.12047
+ :END:
+
+
+* PDF Highlights
+:PROPERTIES:
+ :NOTER_DOCUMENT:
+ :END:

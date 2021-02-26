@@ -37,6 +37,64 @@
 
 ** [[https://www.sciencedirect.com/science/article/abs/pii/S1051137716300237][Housing finance and real-estate booms: A cross-country perspective]] :Data:
 
+* READ [#A] [[https://academic.oup.com/ser/advance-article/doi/10.1093/ser/mwaa030/5913145][Kohl - Too much mortgage debt? The effectof housing financialization on housing supply and residential capital formation]] :DIRECTIONALS:
+   :PROPERTIES:
+   :YEAR:     2020
+   :ZOTERO:   Yes
+   :TYPE:     Case
+   :STATUS:   Filed
+   :RELEVANCE: High
+   :IMPACT:   Low
+   :CITE:     Yes
+   :END:
+
+#+BEGIN_SRC bibtex
+@Article{Kohl_2020,
+  author       = {Kohl, Sebastian},
+  title	       = {Too much mortgage debt? The effect of housing financialization on housing supply and residential capital formation},
+  year	       = {2020},
+  month	       = {Sep},
+  doi	       = {10.1093/ser/mwaa030},
+  url	       = {http://dx.doi.org/10.1093/ser/mwaa030},
+  journal      = {Socio-Economic Review},
+  publisher    = {Oxford University Press (OUP)}
+}
+#+END_SRC
+
+* READ [#A] [[https://onlinelibrary.wiley.com/doi/abs/10.1111/jmcb.12188][Wachter - The Housing and Credit Bubbles in the United States and Europe: A Comparison]]
+   :PROPERTIES:
+   :YEAR:     2015
+   :ZOTERO:   Yes
+   :TYPE:     Empirical
+   :STATUS:   Filed
+   :RELEVANCE: High
+   :IMPACT:   Regular
+   :CITE:     Yes
+   :END:
+
+* READ [#A] Institutions and economic development: theory, policy and history
+:PROPERTIES:
+:YEAR:  citeyear*:chang_2011_Institutions
+:ZOTERO:   Yes
+:STATUS:   Finished
+:RELEVANCE: High
+:IMPACT:   High
+:CITE:     Yes
+:KEY: cite:chang_2011_Institutions
+:FINISHED: [X]
+:END:
+
+* READ [#A] [[file:2021-02-26-11-49-16-jorda_2015_Betting.org][jorda_2015_Betting: Betting the house (2015, Journal of International Economics)]] :DIRECTIONALS:
+:PROPERTIES:
+:YEAR:  citeyear*:jorda_2015_Betting
+:ZOTERO:   Yes
+:STATUS:   Zotero
+:RELEVANCE: High
+:IMPACT:   High
+:CITE:     Yes
+:KEY: cite:jorda_2015_Betting
+:END:
+
 * PARTIAL [#A] BEYOND THE LTV RATIO: NEW MACROPRUDENTIAL LESSONS FROM SPAIN
    :PROPERTIES:
    :ZOTERO:   Yes
@@ -51,18 +109,6 @@
 
    *Reason:* Theoretical relevance of LTV ratios
 
-
-* READ [#A] Institutions and economic development: theory, policy and history
-:PROPERTIES:
-:YEAR:  citeyear*:chang_2011_Institutions
-:ZOTERO:   Yes
-:STATUS:   Finished
-:RELEVANCE: High
-:IMPACT:   High
-:CITE:     Yes
-:KEY: cite:chang_2011_Institutions
-:FINISHED: [X]
-:END:
 
 * PARTIAL [#A] Institutional change and economic development
 :PROPERTIES:
@@ -80,3 +126,39 @@
 *Parts to read:* Chapter 2 - Understanding the relationship between institutions and economic development: some key theoretical issues
 
 *Reason:* Theoretical fundaments to diversity in institutional arrangement $\Rightarrow$ multiple outcomes
+
+* PARTIAL [#A] [[http://www.actuaries.org/CTTEES_TFRISKCRISIS/Documents/turner_review.pdf][Turner - A Regulatory Response to the Global Banking Crisis]] :DIRECTIONALS:BASEL:SAMPLE:
+   :PROPERTIES:
+   :YEAR:     2009
+   :ZOTERO:   Partial
+   :TYPE:     Case
+   :STATUS:   Skimmed
+   :RELEVANCE: High
+   :IMPACT:   Regular
+   :CITE:     Yes
+   :COUNTRY: UK,USA
+   :END:
+
+* SKIM [#B] [[file:2021-02-26-10-30-31-sa_2014_CAPITAL.org][sa_2014_CAPITAL: CAPITAL INFLOWS, FINANCIAL STRUCTURE AND HOUSING BOOMS: Capital Inflows, Financial Structure and Housing Booms]] :DIRECTIONALS:Panel:DATA:
+:PROPERTIES:
+:YEAR:  citeyear*:sa_2014_CAPITAL
+:ZOTERO:   Yes
+:STATUS:   Zotero
+:RELEVANCE: Regular
+:IMPACT:   Low
+:CITE:     Wait
+:KEY: cite:sa_2014_CAPITAL
+:FINISHED: [ ]
+:END:
+
+* SKIM [#B] [[file:2021-02-26-11-20-18-lacour-little_2010_Homea.org][lacour-little_2010_Homea: Home Equity Extraction by Homeowners: 2000-2006 (2010, Journal of Real Estate Research)]] :DIRECTIONALS:DATA:USA:
+:PROPERTIES:
+:YEAR:  citeyear*:lacour-little_2010_Homea
+:ZOTERO:   Entry
+:STATUS:   Zotero
+:RELEVANCE: Low
+:IMPACT:   Low
+:CITE:     Wait
+:KEY: cite:lacour-little_2010_Homea
+:FINISHED: [ ]
+:END:

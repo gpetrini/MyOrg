@@ -1,0 +1,45 @@
+#+TITLE: klyuev_2010_Housing: Is Housing Wealth an ``ATM''?: International Trends (2010, )
+#+OPTIONS: toc:nil num:nil
+#+ROAM_KEY: cite:klyuev_2010_Housing
+#+ROAM_TAGS:
+Time-stamp: 2021-02-26
+- tags :: Australia,Canada,econometric model,home equity withdrawal (HEW),household saving rate,housing wealth,mortgage markets,United Kingdom (UK),United States (US)
+
+
+* Backlinks
+
+[[file:20210216121647-qca_theoretical_economics_foundations.org][QCA Theoretical Economics Foundations]]
+
+* FISH-5SS
+
+
+|---------------------------------------------+-----|
+| <40>                                        |<50> |
+| *Background*                                  |     |
+| *Supporting Ideas*                            |     |
+| *Purpose*                                     |     |
+| *Originality/value (Contribution)*            |     |
+| *Relevance*                                   |     |
+| *Design/methodology/approach*                 |     |
+| *Results*                                     |     |
+| *(Interesting) Findings*                      |     |
+| *Research limitations/implications (Critics)* |     |
+| *Uncategorized stuff*                         |     |
+| *5SS*                                         |     |
+|---------------------------------------------+-----|
+
+* Specifics comments
+ :PROPERTIES:
+ :Custom_ID: klyuev_2010_Housing
+ :AUTHOR: Klyuev, V., & Mills, P.
+ :JOURNAL:
+ :YEAR: 2010
+ :DOI:  http://dx.doi.org/10.1002/9781444317978.ch3
+ :URL: https://onlinelibrary.wiley.com/doi/abs/10.1002/9781444317978.ch3
+ :END:
+
+
+* PDF Highlights
+:PROPERTIES:
+ :NOTER_DOCUMENT:
+ :END:

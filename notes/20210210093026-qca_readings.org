@@ -1,3 +1,21 @@
 #+title: QCA readings
 
 [[file:20210210092453-phd_dissertation_readings.org][PhD Dissertation readings]]
+
+
+* [[file:20210210184827-institutional_comparisons.org][Institutional comparisons]]
+
+
+
+
+* [[file:20210210184910-manuals_and_best_practices.org][Manuals and Best practices]]
+
+* [[file:20210210185026-applied_qca.org][Applied QCA]]
+
+* [[file:20210210185414-qca_data.org][QCA Data]]
+
+* [[file:20210210190446-variaeties_of_capitalisms.org][Varieties of Capitalisms]]
+
+* [[file:20210216101138-qca_literature_review.org][QCA Literature Review]]
+
+* [[file:20210216121647-qca_theoretical_economics_foundations.org][QCA Theoretical Economics Foundations]]

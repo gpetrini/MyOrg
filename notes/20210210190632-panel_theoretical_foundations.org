@@ -1,2 +1,29 @@
 #+title: Panel Theoretical foundations
 [[file:20210210091646-chpanel.org][Panel readings]]
+
+* READ [#A] [[https://www.aeaweb.org/articles?id=10.1257/aer.20150501][Knoll et al - No Price Like Home: Global House Prices, 1870-2012]]
+   :PROPERTIES:
+   :YEAR:     2017
+   :ZOTERO:   Yes
+   :TYPE:     Empirical
+   :STATUS:   Filed
+   :RELEVANCE: High
+   :IMPACT:   Regular
+   :CITE:     Yes
+   :END:
+
+
+* SKIM [#C] [[https://www.jstor.org/stable/44103516?seq=1][Malpezzi and Wachter - The Role of Speculation in Real Estate Cycles]]
+   :PROPERTIES:
+   :YEAR:     2005
+   :ZOTERO:   Entry
+   :TYPE:     Theory
+   :STATUS:   Filed
+   :RELEVANCE: Low
+   :IMPACT:   Low
+   :CITE:     Wait
+   :END:
+
+   #+BEGIN_SRC bibtex
+
+   #+END_SRC
