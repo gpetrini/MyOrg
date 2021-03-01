@@ -1,6 +1,5 @@
 #+title: QCA readings
 
-[[file:20210210092453-phd_dissertation_readings.org][PhD Dissertation readings]]
 
 
 * [[file:20210210184827-institutional_comparisons.org][Institutional comparisons]]

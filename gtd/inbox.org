@@ -4,3 +4,12 @@
 #+SETUPFILE: /HDD/Org/org-html-themes/org/theme-readtheorg.setup
 * Tasks
 ** TODO [[https://www.ecb.europa.eu/pub/pdf/other/euhousingmarketsen.pdf][Structuralfactors in the euhousing markets]]
+** TODO Criar IDs nas anotações
+** TODO Função para criar IDs (ver org-roam)
+** TODO Como incluir IDs nos templates
+** TODO Incluir readings.org no capture e refile
+** TODO Inlcluir tags de relevância e importância
+** TODO Ver documentação org-roam V2
+** TODO Acessar rapidamente arquivos GTD
+** TODO Configurar org-protocol :Emacs:
+** TODO Configurar emacsclient :Emacs:

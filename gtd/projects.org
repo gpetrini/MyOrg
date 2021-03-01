@@ -3,19 +3,22 @@
 #+AUTHOR: Gabriel Petrini
 #+SETUPFILE: /HDD/Org/org-html-themes/org/theme-bigblow-local.setup
 
-* Dissertation's general settings [25%] :Dissertation:
+* Dissertation's general settings [50%] :Dissertation:
 ** TODO Verificar requisitos para qualificação
 ** TODO Autenticação github ([[https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/][Link]])
 ** DONE [#B] Dr Watson tese
 CLOSED: [2021-02-22 seg 19:03]
 - Esperando resposta FAPESP
 
-** TODO Ver edital cotutela França
-* QCA [0%] :Dissertation:
+** DONE Ver edital cotutela França
+CLOSED: [2021-02-28 dom 19:16]
+* QCA [14%] :Dissertation:
 
 ** TODO Ler appêndice online manual QCA (chapter 8) :Manual:
-** TODO Rascunhar estrutura do capítulo QCA com VoC :Writing:
-** TODO Planejar escritas :Writing:Planning:
+** DONE Rascunhar estrutura do capítulo QCA com VoC :Writing:
+CLOSED: [2021-02-28 dom 19:16]
+** DONE Planejar escritas :Writing:Planning:
+CLOSED: [2021-02-28 dom 19:16]
 ** TODO https://www.e-elgar.com/shop/usd/advanced-introduction-to-housing-studies-9781789908336.html :Dissertation:Readings:Institutions:Housing:
 ** TODO Começar escrita primeira versão
 *** TODO Semana 1 (<2021-04-05 seg>): Introdução
@@ -49,9 +52,10 @@ CONS = Reclosure AND Prepayment AND Equity withdraw AND higher typical loan term
 ILI = Max LTV - Typical LTV Vs LTV deviation from OECD average
 - Consider mortgage securitization?
 
-* Panel [0%] :Dissertation:
+* Panel [20%] :Dissertation:
 
-** TODO Ver Statista :Data:
+** DONE Ver Statista :Data:
+CLOSED: [2021-02-28 dom 19:17]
 ** TODO Ver equifax data
 ** TODO https://www.sciencedirect.com/science/article/abs/pii/S026156062100019X
 ** TODO Ler bloomberg ([[https://www.bloomberg.com/opinion/articles/2021-02-17/covid-housing-boom-is-even-bigger-than-imagined?utm_source=url_link][Link]])

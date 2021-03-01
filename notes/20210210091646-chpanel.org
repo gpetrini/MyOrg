@@ -18,7 +18,6 @@
 * Backlinks
 
 
-[[file:20210210092453-phd_dissertation_readings.org][PhD Dissertation readings]]
 
 
 * [#A] Survey

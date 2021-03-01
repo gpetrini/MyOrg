@@ -1,1 +1,6 @@
 #+title: PhD Dissertation readings
+
+
+[[file:20210210100407-abm_readings.org][ABM Readings]]
+[[file:20210210093026-qca_readings.org][QCA readings]]
+[[file:20210210091646-chpanel.org][Panel readings]]
