@@ -1,0 +1,857 @@
+#+OPTIONS: num:nil
+#+TITLE:  Readings List
+#+AUTHOR: Gabriel Petrini
+#+LANG: en
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-bigblow.setup
+#+TODO: READ SKIM PARTIAL WAIT MAYBE REF | REPORT DONE ARCH
+#+PROPERTY: FINISHED_ALL "[ ]" "[X]"
+#+PROPERTY: COLUMNS  %FINISHED(Finished?){X} %TODO(Decision) %ITEM(File) %TAG
+
+* How to maintain?
+
+** Html shortcuts
+
+Keyboard shortcuts to save time and boost your productivity:
+
+| Shortcut | What it does                      |
+|----------+-----------------------------------|
+| =?= or =h=   | Access the *dashboard*              |
+| =n=        | Move to the *next* main heading     |
+| =p=        | Move to the *previous* main heading |
+| =b=        | Scroll up                         |
+| =<=        | Scroll to top                     |
+| =>=        | Scroll to bottom                  |
+| =-=        | Collapse all                      |
+| =+=        | Expand all                        |
+| =r=        | Go to next task in list           |
+| =R=        | Go to previous task in list       |
+| =q=        | Stop reviewing the list of tasks  |
+| =g=        | Reload the page                   |
+
+** Naming
+Each entry must be included with the following elements:
+
+- Title (Year) - Title
+- Decision
+- Url described with the entry info
+
+** Categories description
+
+Instruction for each category
+
+- Inbox :: Add a tag related to a prior classification topic (/e.g./ Dissertation chapter, paper, method, etc)
+- Dissertation :: Add a tag related to a chapter. Entries are organized in themes and not in chapters
+  + Why? :: Same entry can be used for more than one purpose
+  + How? :: Each subheading is a *phantom file* so it only makes reference for the topic
+  + Next? :: After determine the topic, create an org-roam-file entry
+- Journal frontier overview :: Add a tag with journal abbreviation and keywords in other tags
+- Courses :: Create subheadings regarding course topic
+- Papers :: Add a tag related to the section planed to include the reading
+- Orientation :: Decision entry regards how student should read
+- Lectures :: Readings regarding lecture planning and to answer questions. Each entry must have a tag whether is a =fundamental=, =critique=, =empirical counterfactual= and =overview=
+
+** Decision dictionary
+
+Deciding whether to read:
+
+#+CAPTION: Reading decision
+| TODO    | Description                                                                  |
+|---------+------------------------------------------------------------------------------|
+| READ    | Read the full file                                                           |
+| SKIM    | Read only for results, methods, sample report                                |
+| PARTIAL | Read only some sections/chapter. Specify which part to read                  |
+| WAIT    | Waiting for other readings to decide how to read. Specify reason for waiting |
+| MAYBE   | Only if recommended by others/free time. Set priority flag                   |
+| REF     | Quick read to citation reasons (usually, canonical papers)                   |
+
+
+After reading:
+
+#+CAPTION: After reading classification
+| DONE   | Description                             |
+|--------+-----------------------------------------|
+| REPORT | FISH-5SS table report only              |
+| DONE   | Full report                             |
+| ARCH   | Archived (do not read for this project) |
+
+
+** Steps
+
+*Organization:*
+1. Review [[id:4283d93a-d870-40c9-bbb6-f3cbff0b3a1a][Inbox]]
+2. Refile
+3. Run archive
+4. Read
+
+*After read:*
+1. Update status
+2. Compile html file
+3. Commit
+
+* Inbox
+:PROPERTIES:
+:ID:       4283d93a-d870-40c9-bbb6-f3cbff0b3a1a
+:END:
+#+begin_note
+*Description:* Captured entries
+#+end_note
+** [[https://academic.oup.com/jeea/article-abstract/2/6/1148/2280932?redirectedFrom=fulltext][Ehrmann and Worms - Bank Networks and Monetary Policy Transmission]] :OFF:NETWORK:ABM:
+
+** [[https://www.cfainstitute.org/en/research/foundation/2009/the-shadow-banking-system-and-hyman-minskys-economic-journey][McCulley (2010)]] :Inbox:ABM:NewNarrative:
+** Inequality, household debt and financial instability: An agent-based perspective :ABM:
+** Income inequality, consumer debt, and prudential regulation: An agent-based approach to study the emergence of crises and financial instability :ABM:
+** Post-Keynesian macroeconomic foundations for Comparative Political Economy :VoC:QCA:
+
+** [[https://academic.oup.com/oep/article-abstract/70/3/821/4948656?redirectedFrom=fulltext][Constraints on LTV as a macroprudential tool: a precautionary tale]] :LTV:QCA:
+
+** [[https://sci-hub.ren/https://doi.org/10.1146/annurev-financial-111914-041807][An Overview of Macroprudential Policy Tools]] :LTV:QCA:
+
+** [[https://www.bankofcanada.ca/wp-content/uploads/2017/11/fsr-november2017-bilyk.pdf][Analysis of Household Vulnerabilities using loan-level mortgage data]] :LTV:Calibration:QCA:
+
+** [[https://www.bis.org/publ/cgfs48.pdf][Operationalising the selection and application of macroprudential instruments]] :REF:QCA:
+
+** [[https://www.imf.org/en/Publications/WP/Issues/2016/12/31/Macroprudential-Policy-What-Instruments-and-How-to-Use-them-Lessons-From-Country-Experiences-25296][Macroprudential Policy : What Instruments and How to Use them? Lessons From Country Experiences]] :LTV:QCA:
+
+** [[https://www.sciencedirect.com/science/article/abs/pii/S1051137716300237][Housing finance and real-estate booms: A cross-country perspective]] :Data:QCA:
+* Dissertation
+
+** [[file:../notes/20210216101138-qca_literature_review.org][QCA Literature Review]] :QCA:
+#+begin_note
+*Description:* QCA exclusively readings
+#+end_note
+
+** [[file:../notes/20210210191017-panel_manuals.org][Panel Manuals]] :Panel:
+
+#+begin_note
+*Description:* Panel exclusively readings
+#+end_note
+
+** [[file:../notes/20210210100407-abm_readings.org][ABM Readings]] :ABM:
+#+begin_note
+*Description:* ABM exclusively readings
+#+end_note
+** [[file:../notes/20210210184827-institutional_comparisons.org][Institutional comparisons]] :Institutional:
+
+*** READ [#A] [[file:2021-02-26-12-04-45-klyuev_2010_Housing.org][klyuev_2010_Housing: Is Housing Wealth an ``ATM''?: International Trends (2010, )]] :QCA:
+:PROPERTIES:
+:YEAR:     citeyear***:klyuev_2010_Housing
+:ZOTERO:   Yes
+:STATUS:   Zotero
+:RELEVANCE: High
+:IMPACT:   Low
+:CITE:     Yes
+:KEY:      cite:klyuev_2010_Housing
+:END:
+*** READ [#A] [[file:2021-01-12-14-07-01-green_2005_American.org][green_2005_American: The American Mortgage in Historical and International Context]] :QCA:
+:PROPERTIES:
+:YEAR:     citeyear***:greenAmericanMortgageHistorical2005
+:ZOTERO:   Yes
+:STATUS:   Reading
+:RELEVANCE: High
+:IMPACT:   Regular
+:CITE:     Yes
+:KEY:      cite:greenAmericanMortgageHistorical2005
+:FINISHED: [ ]
+:END:
+*** READ [#A] [[file:2021-02-26-10-46-43-green_2010_Housinga.org][green_2010_Housinga: The Housing Finance Revolution (2010, )]] :QCA:
+:PROPERTIES:
+:YEAR:     citeyear***:green_2010_Housinga
+:ZOTERO:   Yes
+:STATUS:   Reading
+:RELEVANCE: High
+:IMPACT:   Regular
+:CITE:     Yes
+:KEY:      cite:green_2010_Housinga
+:FINISHED: [ ]
+:END:
+*** READ [#A] [[file:2021-02-26-12-01-05-coles_2000_Mortgage.org][coles_2000_Mortgage: Mortgage Markets: Why US and EU Markets Are So Different (2000, Housing Studies)]] :USA:EU:QCA:
+:PROPERTIES:
+:YEAR:     citeyear***:coles_2000_Mortgage
+:ZOTERO:   Yes
+:STATUS:   Zotero
+:RELEVANCE: High
+:IMPACT:   Low
+:CITE:     Yes
+:KEY:      cite:coles_2000_Mortgage
+:END:
+
+*** READ [#A] courchaneComparisonCanadianResidential2002: A Comparison of U.S. and Canadian Residential Mortgage Markets (2002, Econometrics Working Papers)]]:CAN:EUA: :QCA:
+:PROPERTIES:
+:YEAR:     citeyear***:courchaneComparisonCanadianResidential2002
+:ZOTERO:   Yes
+:STATUS:   Zotero
+:RELEVANCE: Regular
+:IMPACT:   Low
+:CITE:     Wait
+:KEY:      cite:courchaneComparisonCanadianResidential2002
+:END:
+*** READ [#C] [[file:2021-02-26-11-47-02-gartner_2012_White.org][gartner_2012_White: White Picket Finance: The Remaking of the U.S. Mortgage Market, 1932-1960 (2012, )]] :USA:QCA:
+:PROPERTIES:
+:YEAR:     citeyear***:garther_2012_White
+:ZOTERO:   Partial
+:STATUS:   Zotero
+:RELEVANCE: Regular
+:IMPACT:   Regular
+:CITE:     Wait
+:KEY:      cite:garther_2012_White
+:FINISHED: [ ]
+:END:
+*** SKIM [#C] [[https://journals.sagepub.com/doi/10.1179/102452909X12506915718111][Dixon and Sorsa - Institutional Change and the Financialisation of Pensions in Europe]] :PensionFunds:REFS:QCA:
+:PROPERTIES:
+:YEAR:     2009
+:ZOTERO:   Yes
+:TYPE:     Theory
+:STATUS:   Filed
+:RELEVANCE: Low
+:IMPACT:   Low
+:CITE:     Wait
+:END:
+
+#+BEGIN_SRC bibtex
+                  @Article{Dixon_Pension_2009,
+                    author       = {Dixon, Adam D. and Sorsa, Ville-Pekka},
+                    title	       = {Institutional Change and the Financialisation of Pensions in Europe},
+                    year	       = {2009},
+                    volume       = {13},
+                    number       = {4},
+                    month	       = {Dec},
+                    pages	       = {347–367},
+                    doi	       = {10.1179/102452909x12506915718111},
+                    url	       = {http://dx.doi.org/10.1179/102452909X12506915718111},
+                    journal      = {Competition & Change},
+                    publisher    = {SAGE Publications}
+                  }
+#+END_SRC
+
+*** SKIM [#C] [[http://www.empirica-international.de/mediapool/16/169624/data/Housing_Finance/Europe/Duebel_VdP_Fixed-Rate_Mortgages_and_Prepayment_in_Europe_05.pdf][Duebel - Fixed-rate Mortgages and Prepayment in Europe (mimeo)]] :QCA:
+:PROPERTIES:
+:YEAR:     citeyear***:
+:ZOTERO:   No
+:STATUS:   Downloaded
+:RELEVANCE: Low
+:IMPACT:   Low
+:CITE:     Wait
+:KEY:      cite:
+:FINISHED: [ ]
+:END:
+*** WAIT [#A] [[file:2021-02-26-10-17-47-cho_2007_180.org][cho_2007_180: 180 Years' Evolution of the US Mortgage Banking System: Lessons for Emerging Mortgage Markets (2007, )]] :QCA:
+:PROPERTIES:
+:YEAR:     citeyear***:cho_2007_180
+:ZOTERO:   Yes
+:STATUS:   Zotero
+:RELEVANCE: Regular
+:IMPACT:   Low
+:CITE:     Wait
+:KEY:      cite:cite:cho_2007_180
+:END:
+*** WAIT [#C] [[https://escholarship.org/content/qt41d5k3bd/qt41d5k3bd.pdf][Quigley - Federal Credit and Insurance Programs: Housing]] :USA:QCA:
+:PROPERTIES:
+:YEAR:     2006
+:ZOTERO:   Yes
+:TYPE:     Case
+:STATUS:   Downloaded
+:RELEVANCE: Regular
+:IMPACT:   Low
+:CITE:     Yes
+:COUNTRY:  US
+:END:
+*** REF [#C] [[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.360.2923&rep=rep1&type=pdf][Miles - The UK mortgage market: Taking a longer-term view]] :QCA:
+:PROPERTIES:
+:YEAR:     2004
+:ZOTERO:   Yes
+:TYPE:     Case
+:STATUS:   Filed
+:RELEVANCE: Low
+:IMPACT:   Regular
+:CITE:     Wait
+:END:
+
+#+BEGIN_SRC bibtex
+#+END_SRC
+
+*** ARCH [[https://www.imf.org/en/Publications/WP/Issues/2016/12/30/Deposit-Protection-Arrangements-A-Survey-1875][Kyei - Deposit Protection Arrangements : A Survey]] :Deposits:QCA:
+CLOSED: [2021-02-26 sex 10:20]
+:PROPERTIES:
+:YEAR:     1995
+:ZOTERO:   Yes
+:TYPE:     Case
+:STATUS:   NotFound
+:RELEVANCE: High
+:IMPACT:   Low
+:CITE:     Yes
+:END:
+*** ARCH [[http://policydialogue.org/files/publications/Determinants_of_Banking_Crises.pdf][Demirgüç-Kunt and Detragiache - The Determinants of Banking Crises in Developing and Developed Countries]] :Developing:QCA:
+CLOSED: [2021-02-26 sex 10:20]
+:PROPERTIES:
+:YEAR:     1998
+:ZOTERO:   Yes
+:TYPE:     Empirical
+:STATUS:   Skimmed
+:RELEVANCE: High
+:IMPACT:   Low
+:CITE:     Yes
+:END:
+
+*** ARCH [#A] [[https://www.nber.org/papers/w25653][Jordà et al - The Total Risk Premium Puzzle]] :OFFTopic:QCA:
+CLOSED: [2021-02-26 sex 11:02]
+:PROPERTIES:
+:YEAR:     citeyear***:jorda_2019_Total:
+:ZOTERO:   Entry
+:STATUS:   Abandoned
+:RELEVANCE: Low
+:IMPACT:   High
+:CITE:     No
+:KEY:      cite:jorda_2019_Total
+:END:
+
+*** ARCH [#C] [[https://pdfs.semanticscholar.org/9157/92055cd5691d9b31ed46556407d50003e310.pdf][Cheng et al - The Real Estate Risk Premium Puzzle: A Solution]] :OFFTopic:PUZZLE:QCA:
+*** ARCH [#B] [[http://feweb.uvt.nl/pdf/brounen/shilling.pdf][Shilling - Is There a Risk Premium Puzzle in Real Estate?]] :PUZZLE:QCA:
+CLOSED: [2020-10-02 sex 18:13]
+:PROPERTIES:
+:YEAR:     2003
+:ZOTERO:   Entry
+:TYPE:     Thechnical
+:STATUS:   Filed
+:RELEVANCE: Low
+:IMPACT:   Low
+:CITE:     No
+:END:
+*** ARCH [[https://escholarship.org/uc/item/4x0357n0;][Jaffee - Reforming the U.S. Mortgage Market Through Private Market Incentives]] :QCA:
+CLOSED: [2021-02-26 sex 11:06]
+
+*** ARCH [[https://www.aeaweb.org/articles?id=10.1257/jep.11.3.139][Benston and Kaufman  - FIDICIA After Five Years]] :OFFTopic:FDICIA:USA:QCA:
+CLOSED: [2021-02-26 sex 11:08]
+:PROPERTIES:
+:YEAR:     1997
+:ZOTERO:   Yes
+:TYPE:     Case
+:STATUS:   Filed
+:RELEVANCE: Low
+:IMPACT:   Regular
+:CITE:     Wait
+:END:
+
+*** ARCH [#C] [[https://www.jstor.org/stable/24825878?seq=1][Wachter - The limits of the housing finance system]] :QCA:
+CLOSED: [2021-02-26 sex 11:41]
+:PROPERTIES:
+:YEAR:     1990
+:ZOTERO:   Entry
+:TYPE:     Case
+:STATUS:   Filed
+:RELEVANCE: Regular
+:IMPACT:   Low
+:CITE:     Wait
+:END:
+
+#+BEGIN_SRC bibtex
+
+#+END_SRC
+
+*** ARCH [#C] [[https://www.jstor.org/stable/24833781?seq=1][Order - The U.S. Mortgage Market: A Model of Dueling Charters]] :QCA:
+CLOSED: [2021-02-26 sex 11:42]
+:PROPERTIES:
+:YEAR:     2000
+:ZOTERO:   Entry
+:TYPE:     Theory
+:STATUS:   Filed
+:RELEVANCE: Low
+:IMPACT:   Low
+:CITE:     Wait
+:END:
+
+#+BEGIN_SRC bibtex
+
+#+END_SRC
+
+*** ARCH [#B] [[https://www.nbs.sk/_img/Documents/PUBLIK/muc0070.pdf][IMF - Mortgages in Europe]] :QCA:
+CLOSED: [2021-02-26 sex 11:52]
+:PROPERTIES:
+:YEAR:     2000
+:ZOTERO:   Partial
+:TYPE:     Review
+:STATUS:   Filed
+:RELEVANCE: Regular
+:IMPACT:   Low
+:CITE:     Wait
+:END:
+
+*Zotero file:* muc0070.pdf
+** Mortgage market particularities :Mortgage:
+*** READ [#A] [[https://academic.oup.com/ser/advance-article/doi/10.1093/ser/mwaa030/5913145][Kohl - Too much mortgage debt? The effectof housing financialization on housing supply and residential capital formation]] :DIRECTIONALS:QCA:
+   :PROPERTIES:
+   :YEAR:     2020
+   :ZOTERO:   Yes
+   :TYPE:     Case
+   :STATUS:   Filed
+   :RELEVANCE: High
+   :IMPACT:   Low
+   :CITE:     Yes
+   :END:
+
+#+BEGIN_SRC bibtex
+@Article{Kohl_2020,
+  author       = {Kohl, Sebastian},
+  title	       = {Too much mortgage debt? The effect of housing financialization on housing supply and residential capital formation},
+  year	       = {2020},
+  month	       = {Sep},
+  doi	       = {10.1093/ser/mwaa030},
+  url	       = {http://dx.doi.org/10.1093/ser/mwaa030},
+  journal      = {Socio-Economic Review},
+  publisher    = {Oxford University Press (OUP)}
+}
+#+END_SRC
+
+*** READ [#A] [[https://onlinelibrary.wiley.com/doi/abs/10.1111/jmcb.12188][Wachter - The Housing and Credit Bubbles in the United States and Europe: A Comparison]] :QCA:
+   :PROPERTIES:
+   :YEAR:     2015
+   :ZOTERO:   Yes
+   :TYPE:     Empirical
+   :STATUS:   Filed
+   :RELEVANCE: High
+   :IMPACT:   Regular
+   :CITE:     Yes
+   :END:
+
+*** READ [#A] Institutions and economic development: theory, policy and history :QCA:
+:PROPERTIES:
+:YEAR:  citeyear***:chang_2011_Institutions
+:ZOTERO:   Yes
+:STATUS:   Finished
+:RELEVANCE: High
+:IMPACT:   High
+:CITE:     Yes
+:KEY: cite:chang_2011_Institutions
+:FINISHED: [X]
+:END:
+
+*** READ [#A] [[file:2021-02-26-11-49-16-jorda_2015_Betting.org][jorda_2015_Betting: Betting the house (2015, Journal of International Economics)]] :DIRECTIONALS:QCA:
+:PROPERTIES:
+:YEAR:  citeyear***:jorda_2015_Betting
+:ZOTERO:   Yes
+:STATUS:   Zotero
+:RELEVANCE: High
+:IMPACT:   High
+:CITE:     Yes
+:KEY: cite:jorda_2015_Betting
+:END:
+
+*** PARTIAL [#A] BEYOND THE LTV RATIO: NEW MACROPRUDENTIAL LESSONS FROM SPAIN :QCA:
+   :PROPERTIES:
+   :ZOTERO:   Yes
+   :YEAR:     2019
+   :STATUS:   Filed
+   :RELEVANCE: Regular
+   :IMPACT:   Low
+   :CITE:     Yes
+   :KEY:  cite:galan_2019_LTV
+   :FINISHED: [ ]
+   :END:
+
+   ***Reason:*** Theoretical relevance of LTV ratios
+
+
+*** PARTIAL [#A] Institutional change and economic development :QCA:
+:PROPERTIES:
+:YEAR:     citeyear***:chang_2007_Institutional
+:ZOTERO:   Yes
+:STATUS:   Finished
+:RELEVANCE: High
+:IMPACT:   High
+:CITE:     Yes
+:KEY:      cite:chang_2007_Institutional
+:FINISHED: [X]
+:END:
+
+
+***Parts to read:*** Chapter 2 - Understanding the relationship between institutions and economic development: some key theoretical issues
+
+***Reason:*** Theoretical fundaments to diversity in institutional arrangement $\Rightarrow$ multiple outcomes
+
+*** PARTIAL [#A] [[http://www.actuaries.org/CTTEES_TFRISKCRISIS/Documents/turner_review.pdf][Turner - A Regulatory Response to the Global Banking Crisis]] :DIRECTIONALS:BASEL:SAMPLE:QCA:
+   :PROPERTIES:
+   :YEAR:     2009
+   :ZOTERO:   Partial
+   :TYPE:     Case
+   :STATUS:   Skimmed
+   :RELEVANCE: High
+   :IMPACT:   Regular
+   :CITE:     Yes
+   :COUNTRY: UK,USA
+   :END:
+
+*** SKIM [#B] [[file:2021-02-26-10-30-31-sa_2014_CAPITAL.org][sa_2014_CAPITAL: CAPITAL INFLOWS, FINANCIAL STRUCTURE AND HOUSING BOOMS: Capital Inflows, Financial Structure and Housing Booms]] :DIRECTIONALS:Panel:DATA:QCA:
+:PROPERTIES:
+:YEAR:  citeyear***:sa_2014_CAPITAL
+:ZOTERO:   Yes
+:STATUS:   Zotero
+:RELEVANCE: Regular
+:IMPACT:   Low
+:CITE:     Wait
+:KEY: cite:sa_2014_CAPITAL
+:FINISHED: [ ]
+:END:
+
+*** SKIM [#B] [[file:2021-02-26-11-20-18-lacour-little_2010_Homea.org][lacour-little_2010_Homea: Home Equity Extraction by Homeowners: 2000-2006 (2010, Journal of Real Estate Research)]] :DIRECTIONALS:DATA:USA:QCA:
+:PROPERTIES:
+:YEAR:  citeyear*:lacour-little_2010_Homea
+:ZOTERO:   Entry
+:STATUS:   Zotero
+:RELEVANCE: Low
+:IMPACT:   Low
+:CITE:     Wait
+:KEY: cite:lacour-little_2010_Homea
+:FINISHED: [ ]
+:END:
+** [[file:../notes/20210210190446-variaeties_of_capitalisms.org][Varieties of Capitalisms]] :VoC:
+
+*** PARTIAL [#A] [[https://global.oup.com/academic/product/debating-varieties-of-capitalism-9780199569663?cc=us&lang=en&#][Debating Varieties of Capitalism]] (Colection)
+  :PROPERTIES:
+  :YEAR: 2009
+  :ZOTERO:   Yes
+  :STATUS:   Zotero
+  :RELEVANCE: High
+  :IMPACT:   Regular
+  :CITE:     Yes
+  :KEY: cite:hancke_2009_Debating
+  :FINISHED: [ ]
+  :END:
+
+
+****** READ [#B] [[https://doi.org/10.1017/S0007123409000672][Varieties of Capitalism and Institutional Complementarities in the Political Economy: An Empirical Analysis]]
+  :PROPERTIES:
+  :YEAR:     2009
+  :ZOTERO:   Yes
+  :STATUS:   Zotero
+  :RELEVANCE: High
+  :IMPACT:   Regular
+  :CITE:     Yes
+  :KEY:  cite:hallVarietiesCapitalismInstitutional2009
+  :FINISHED: [ ]
+  :END:
+
+****** READ [#C] Institutional Change in Varieties of Capitalism
+
+****** READ [#A] Beyond Varieties of Capitalism, Bob Hancké, Martin Rhodes, and Mark Thatcher
+*** READ [#A] [[https://link.springer.com/chapter/10.1057%2F9780230280441_1][Schwartz and Seabrooke - Varieties of Residential Capitalism in the International Political Economy: Old Welfare States and the New Politics of Housing]]
+  :PROPERTIES:
+  :YEAR:     2009
+  :ZOTERO:   Yes
+  :STATUS:   =Finished=
+  :RELEVANCE: High
+  :IMPACT:   Low
+  :CITE:     Yes
+  :FINISHED: [X]
+  :KEY:      cite:schwartz_2009_Varietiesa
+  :END:
+*** READ [#A] [[https://link.springer.com/article/10.1057/palgrave.cep.6110008][Same as it Never Was: Temporality and Typology in the Varieties of Capitalism]]
+  :PROPERTIES:
+  :YEAR: 2003
+  :ZOTERO:   Yes
+  :STATUS:   Zotero
+  :RELEVANCE: High
+  :IMPACT:   High
+  :CITE:     Yes
+  :KEY: cite:blyth_2003_Same
+  :FINISHED: [ ]
+  :END:
+*** READ [#A] [[https://doi.org/10.1177%2F1024529415623916][Financialization and housing: Between globalization and Varieties of Capitalism]]
+  :PROPERTIES:
+  :YEAR:     2016
+  :ZOTERO:   Yes
+  :STATUS:   Zotero
+  :RELEVANCE: High
+  :IMPACT:   Low
+  :CITE:     Yes
+  :KEY:      cite:fernandez_2016_Financialization
+  :FINISHED: [ ]
+  :END:
+*** READ [#B] [[https://doi.org/10.1177%2F0032329215571288][Who’s Borrowing? Credit Encouragement vs. Credit Mitigation in National Financial Systems ]]
+  :PROPERTIES:
+  :YEAR:     2015
+  :ZOTERO:   Yes
+  :STATUS:   Zotero
+  :RELEVANCE: Regular
+  :IMPACT:   Low
+  :CITE:     Yes
+  :KEY:      cite:fuller_2015_Who
+  :FINISHED: [ ]
+  :END:
+*** READ [#A] [[https://doi.org/10.1080/02673037.2018.1487037][Historicizing housing typologies: beyond welfare state regimes and varieties of residential capitalism]]
+  :PROPERTIES:
+  :YEAR: 2018
+  :ZOTERO:   Yes
+  :STATUS:   Zotero
+  :RELEVANCE: High
+  :IMPACT:   Low
+  :CITE:     Yes
+  :KEY:  cite:blackwell_2019_Historicizing
+  :FINISHED: [ ]
+  :END:
+*** READ [#B] [[https://link.springer.com/chapter/10.1057/9780230522725_6][Two Can Play at That Game … or Can They? Varieties of Capitalism, Varieties of Institutionalism]]
+  :PROPERTIES:
+  :YEAR: 2005
+  :ZOTERO:   Yes
+  :STATUS:   Zotero
+  :RELEVANCE: Regular
+  :IMPACT:   Low
+  :CITE:     Yes
+  :KEY: cite:hay_2005_Two
+  :FINISHED: [ ]
+  :END:
+*** READ [#C] [[https://www.econstor.eu/bitstream/10419/155335/1/880367393.pdf][Blackwell and Khol - Varieties of housing finance in historical perspective: The impact of mortgage finance systems on urban structures and homeownership]]
+  :PROPERTIES:
+  :YEAR:     2017
+  :ZOTERO:   Yes
+  :STATUS:   Zotero
+  :RELEVANCE: High
+  :IMPACT:   Low
+  :CITE:     Yes
+  :FINISHED: [ ]
+  :END:
+
+
+*** READ [#C] [[https://linkinghub.elsevier.com/retrieve/pii/S0049089X16304756][Guten and Navot - Varieties of indebtedness: Financialization and mortgage market institutions in Europe]]
+  :PROPERTIES:
+  :YEAR:     2018
+  :ZOTERO:   Yes
+  :TYPE:     Case
+  :STATUS:   Zotero
+  :RELEVANCE: High
+  :IMPACT:   Regular
+  :CITE:     Yes
+  :FINISHED: [ ]
+  :END:
+
+
+*** SKIM [#A] [[https://www.tandfonline.com/doi/full/10.1080/09692290.2019.1633382][ Does capitalism (still) come in varieties?]]
+  :PROPERTIES:
+  :YEAR:     2020
+  :ZOTERO:   Yes
+  :STATUS:   Zotero
+  :RELEVANCE: High
+  :IMPACT:   Regular
+  :CITE:     Wait
+  :KEY:  cite:hay_2020_Does
+  :FINISHED: [ ]
+  :END:
+
+*** SKIM [#B] [[https://www.tandfonline.com/doi/abs/10.1080/09692290420001672796][Common trajectories, variable paces, divergent outcomes? Models of European capitalism under conditions of complex economic interdependence]] :Convergence:
+  :PROPERTIES:
+  :YEAR:  2004
+  :ZOTERO:   Yes
+  :STATUS:   Zotero
+  :RELEVANCE: High
+  :IMPACT:   Regular
+  :CITE:     Yes
+  :KEY:  cite:hay_2004_Common
+  :FINISHED: [ ]
+  :END:
+
+*** SKIM [#A] [[https://doi.org/10.1093/SER/mwi015][Dialogue on ‘Institutional complementarity and political economy’]] :Complementarities:
+  :PROPERTIES:
+  :YEAR:     2005
+  :ZOTERO:   Yes
+  :STATUS:   Zotero
+  :RELEVANCE: High
+  :IMPACT:   Regular
+  :CITE:     Yes
+  :KEY:      cite:crouch_2005_Dialogue
+  :FINISHED: [ ]
+  :END:
+*** SKIM [#C] Varieties of capitalism, increasing income inequality and the sustainability of long-run growth
+  :PROPERTIES:
+  :YEAR:     2020
+  :ZOTERO:   Yes
+  :STATUS:   Zotero
+  :RELEVANCE: Regular
+  :IMPACT:   High
+  :CITE:     Yes
+  :KEY: cite:setterfieldVarietiesCapitalismIncreasing2020a
+  :FINISHED: [X]
+  :END:
+
+
+  - Do not include VoC theoretical discussion
+
+*** DONE [#B] Varieties of Capitalism: The Institutional Foundations of Comparative Advantage
+CLOSED: [2021-02-25 qui 14:45]
+  :PROPERTIES:
+  :YEAR:     2001
+  :ZOTERO:   Yes
+  :STATUS:   =Finished=
+  :RELEVANCE: High
+  :IMPACT:   High
+  :CITE:     Yes
+  :KEY:  cite:hallVarietiesCapitalismInstitutional2001
+  :FINISHED: [X]
+  :END:
+
+***Part to read:*** Chapter 1 - An Introduction to Varieties of Capitalism
+
+*** MAYBE [#C] [[https://www.tandfonline.com/doi/abs/10.1080/09692290.2017.1403358?journalCode=rrip20][Blackwell and Khol - The origins of national housing finance systems: a comparative investigation into historical variations in mortgage finance regimes]]
+   :PROPERTIES:
+   :YEAR:     2017
+   :ZOTERO:   Yes
+   :TYPE:     Theory
+   :STATUS:   Zotero
+   :RELEVANCE: High
+   :IMPACT:   Low
+   :CITE:     Yes
+  :FINISHED: [ ]
+   :END:
+
+*** MAYBE [[https://doi.org/10.1017/S0043887113000221][Banks and the False Dichotomy in the Comparative Political Economy of Finance]]
+  :PROPERTIES:
+  :YEAR:  2013
+  :ZOTERO:   Yes
+  :STATUS:   Zotero
+  :RELEVANCE: Low
+  :IMPACT:   Low
+  :CITE:     Wait
+  :KEY:  cite:hardie_2013_Banks
+  :FINISHED: [ ]
+  :END:
+
+*** DONE [[https://www.jstor.org/stable/4150162?seq=1#metadata_info_tab_contents][Varieties of Capitalism: And Then There Was One? ]] :Review:Reception:
+CLOSED: [2021-02-16 ter 17:33]
+  :PROPERTIES:
+  :YEAR:  2003
+  :ZOTERO:   Yes
+  :STATUS:   =Finished=
+  :RELEVANCE: Regular
+  :IMPACT:   Low
+  :CITE:     Wait
+  :KEY: cite:howell_2003_Varieties
+  :FINISHED: [X]
+  :END:
+
+*** DONE [[https://doi.org/10.1093/cjres/rst019][Financialisation varied: a comparative analysis of advanced economies]]
+CLOSED: [2021-02-16 ter 15:42]
+  :PROPERTIES:
+  :YEAR:     2013
+  :ZOTERO:   Yes
+  :STATUS:   =Finished=
+  :RELEVANCE: Regular
+  :IMPACT:   Regular
+  :CITE:     Yes
+  :KEY:  cite:lapavitsas_2013_Financialisation
+  :FINISHED: [X]
+  :END:
+*** DONE [[https://journals.sagepub.com/doi/abs/10.1177/0032329216638053][Rethinking Comparative Political Economy: The Growth Model Perspective]]
+CLOSED: [2021-02-16 ter 15:47]
+  :PROPERTIES:
+  :YEAR:     2016
+  :ZOTERO:   Yes
+  :STATUS:   =Finished=
+  :RELEVANCE: Low
+  :IMPACT:   Regular
+  :CITE:     Yes
+  :KEY:  cite:baccaroRethinkingComparativePolitical2016
+  :FINISHED: [X]
+  :END:
+*** DONE [#C] Varieties of Capitalism and Growth Regimes
+CLOSED: [2021-02-16 ter 15:24]
+  :PROPERTIES:
+  :YEAR:     2018
+  :ZOTERO:   Yes
+  :STATUS:   =Finished=
+  :RELEVANCE: Low
+  :IMPACT:   Regular
+  :CITE:     Yes
+  :KEY:  cite:behringer_2018_Varieties
+  :FINISHED: [X]
+  :END:
+
+*** ARCH [[https://www.amazon.com.br/Regulation-School-Robert-Boyer/dp/0231065485][The Regulation School: A Critical Introduction ]]
+CLOSED: [2021-02-16 ter 15:38]
+*** ARCH [[https://doi.org/10.1017/S0003055414000045][The Political Economy of Ownership: Housing Markets and the Welfare State]]
+CLOSED: [2021-02-16 ter 15:44]
+  :PROPERTIES:
+  :YEAR:     2014
+  :ZOTERO:   No
+  :STATUS:   Zotero
+  :RELEVANCE: Low
+  :IMPACT:   Low
+  :CITE:     No
+  :KEY:
+  :FINISHED: [ ]
+  :END:
+*** ARCH [[https://openknowledge.worldbank.org/bitstream/handle/10986/4154/WPS4943.pdf][Financial Institutions and Markets across Countries and over Time]]
+CLOSED: [2021-02-16 ter 15:49]
+  :PROPERTIES:
+  :YEAR:     2009
+  :ZOTERO:   Yes
+  :STATUS:   Downloaded
+  :RELEVANCE: Low
+  :IMPACT:   Regular
+  :CITE:     No
+  :KEY:  cite:beck_2009_Financial
+  :FINISHED: [ ]
+  :END:
+
+*** ARCH [[https://link.springer.com/chapter/10.1057/9780230522725_5][Economic Growth and the United States since 1870: A Quantitative Economic Analysis Incorporating Institutional Factors]]
+CLOSED: [2021-02-16 ter 16:12]
+  :PROPERTIES:
+  :YEAR:     2005
+  :ZOTERO:   Yes
+  :STATUS:   Zotero
+  :RELEVANCE: Low
+  :IMPACT:   Low
+  :CITE:     No
+  :KEY:      cite:broadberry_2005_Economic
+  :FINISHED: [ ]
+  :END:
+
+** [[file:../notes/20210210092103-residential_investment_determinants.org][Residential investment determinants]] :Residential:
+** [[file:../notes/20210210092940-household_debt_and_bank_credit.org][Household debt and Bank credit]] :Debt:
+*** PARTIAL [#A] HOUSEHOLD DEBT IN OECD COUNTRIES: STYLISED FACTS AND POLICY ISSUES :OECD:Panel:
+   :PROPERTIES:
+   :ZOTERO:   Yes
+   :YEAR:     2016
+   :STATUS:   Filed
+   :RELEVANCE: Regular
+   :IMPACT:   Low
+   :CITE:     Yes
+   :KEY:  andre_2016_HOUSEHOLD
+   :END:
+** [[file:../notes/20210210184406-mortgage_interest_rate.org][Mortgage Interest rate]] :Interest:
+** [[file:../notes/20210210091758-house_prices.org][House Prices]] :Prices:
+*** ARCH [#C] [[https://www.kansascityfed.org/PUBLICAT/ECONREV/PDF/2q07rapp.pdf][Rappaport - A Guide to Aggregate House Price Measures]] :USA:HousePrices:
+** New Narrative :NewNarrative:
+** Data :Data:
+
+* Journals frontier overview
+
+#+CAPTION: Journal abbreviations
+| Journal full name | Abbreviation | Link |
+|-------------------+--------------+------|
+|                   |              |      |
+
+#+begin_note
+*Note:* No subheadings!
+#+end_note
+* Courses
+
+** IEE 822: [[file:../notes/20201202092036-iee882_macroeconomia_financeira.org][IEE882 - Macroeconomia Financeira]]
+
+*** DONE [[file:../notes/2021-03-01-10-56-42-lavoie_2001_Minsky.org][lavoie_2001_Minsky: Minsky's financial fragility hypothesis: a missing macroeconomic link? (2001, )]]
+CLOSED: [2021-03-02 ter 18:15]
+*** Ler Manual Lavoie
+*** DONE [[file:../notes/2021-03-02-10-54-46-pedrosa_2021_what.org][pedrosa_2021_what: To what extent does aggregate leverage determine financial fragility? New insights from an agent-based stock-flow consistent model (2021, )]]
+CLOSED: [2021-03-02 ter 18:16]
+** IEE 898: [[file:../notes/20201203145735-macroeconomia_da_demanda_efetiva_na_abordagem_do_excedente.org][Macroeconomia da Demanda Efetiva na abordagem do excedente]]
+* Papers
+
+** VECM (2020-2021)
+
+** ABM-dot-com (2021-?)
+* Orientation
+** Lorena (2021)
+** Felipe (2021)
+* Lectures
+* Off office
+* Improvements
+
+** Capture
+
+** Refire

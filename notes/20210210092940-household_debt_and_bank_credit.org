@@ -19,13 +19,3 @@
 #+END
 
 
-* PARTIAL [#A] HOUSEHOLD DEBT IN OECD COUNTRIES: STYLISED FACTS AND POLICY ISSUES
-   :PROPERTIES:
-   :ZOTERO:   Yes
-   :YEAR:     2016
-   :STATUS:   Filed
-   :RELEVANCE: Regular
-   :IMPACT:   Low
-   :CITE:     Yes
-   :KEY:  andre_2016_HOUSEHOLD
-   :END:

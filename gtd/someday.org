@@ -56,7 +56,9 @@ PhD Student 29 Euros for 2 years
 * TODO mu4e filtrar contatos :Emacs:
 * TODO DT go to GTD files :Emacs:
 * TODO Configurar Configurações como org :@Free:Computer:
-* TODO Instalar Manjaro :Computer:@Free:
+* CANC Instalar Manjaro :Computer:@Free:
+CLOSED: [2021-03-02 ter 17:13]
 * TODO FIX: checkboxes org-roam-server :Emacs:OrgRoam:
 * TODO [[https://www.elibrary-areaer.imf.org/Macroprudential/Pages/ChapterQuery.aspx][Macroprudential Policy Survey]] :DATASET:
 * TODO Ver https://www.reddit.com/r/emacs/comments/lttvwh/orgpopup_take_notes_in_cool_way/?utm_medium=android_app&utm_source=share :Emacs:
+* TODO Org-citeproc :Emacs:

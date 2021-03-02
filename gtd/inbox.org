@@ -13,3 +13,6 @@
 ** TODO Acessar rapidamente arquivos GTD
 ** TODO Configurar org-protocol :Emacs:
 ** TODO Configurar emacsclient :Emacs:
+** TODO Install nouveau driver
+** TODO Tags template in capture :Emacs:
+** TODO Braindump them :Emacs:

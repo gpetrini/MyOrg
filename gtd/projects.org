@@ -74,39 +74,7 @@ CLOSED: [2021-02-28 dom 19:17]
    :END:
 * ABM [0%] :Dissertation:
 
-** TODO Inequality, household debt and financial instability: An agent-based perspective
-** TODO Income inequality, consumer debt, and prudential regulation: An agent-based approach to study the emergence of crises and financial instability
 ** TODO Completar anotações de aula Ítalo 24/02
-** TODO Lever Lavoie e Seccareccia (2001)
-** TODO Ler Manual Lavoie
-** TODO Ler artigo Pedrosa e Lang
-** [[https://academic.oup.com/jeea/article-abstract/2/6/1148/2280932?redirectedFrom=fulltext][Ehrmann and Worms - Bank Networks and Monetary Policy Transmission]] :OFF:NETWORK:ABM:
-   :PROPERTIES:
-   :YEAR:     2004
-   :ZOTERO:   Yes
-   :TYPE:     Theory
-   :STATUS:   Filed
-   :RELEVANCE: Regular
-   :IMPACT:   Low
-   :CITE:     Wait
-   :END:
-
-#+BEGIN_SRC bibtex
-@Article{Ehrmann_2004,
-  author       = {Ehrmann, Michael and Worms, Andreas},
-  title	       = {Bank Networks and Monetary Policy Transmission},
-  year	       = {2004},
-  volume       = {2},
-  number       = {6},
-  month	       = {Dec},
-  pages	       = {1148–1171},
-  doi	       = {10.1162/1542476042813904},
-  url	       = {http://dx.doi.org/10.1162/1542476042813904},
-  journal      = {Journal of the European Economic Association},
-  publisher    = {Oxford University Press (OUP)}
-}
-#+END_SRC
-
 * VECM [100%] :Article:
 
 ** TODO Repensar data para escrever introdução VECM
@@ -118,6 +86,7 @@ CLOSED: [2021-02-28 dom 19:17]
 * Cecon [100%] :Group:
 
 * Blog :@free:
-
+** Tabela latex
+** Programas para desenho de diagramas
 * Bibliographical shinny app [0/0] :@free:
 ** [[https://docs.ropensci.org/bib2df/][bib2df]]

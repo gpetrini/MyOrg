@@ -14,3 +14,26 @@ Resolvendo questão do cartão do banco antes disso.
 - Descanso
 ** 18:42 Encerrando leitura Pedrosa e Lang; Skimming Lavoie (2020)
 ** 18:56 Fim do expediente
+* terça, 02/03/2021
+:PROPERTIES:
+:CREATED:  20210302
+:END:
+** 08:11 Sage e Dac
+** 08:14 Louça e faxina
+** 09:00 Banho e lente
+** 09:39 Banho e lente
+
+Antes, tentativa de habilitar *wayland*
+
+- Desintalado driver da NVDIA
+** 10:06 Retomando leitura Pedrosa and Lang
+** 10:53 Fim leitura Pedrosa and Lang; Fichando
+** 11:30 Pausa: maça, responder Lorena e extender roupa
+** 12:02 Retomando: selecionando equações relavantes e instalando mathpix
+** 12:23 Almoço
+** 13:42 Louça
+** 13:51 Instalando Drivers NVidia
+** 14:39 Retomando: Leitura Lavoie
+** 15:45 Fim leitura Lavoie; entendendo org-roam structure
+** 16:38 Pausa
+** 16:59 Retornando: Criando readings list
