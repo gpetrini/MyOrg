@@ -1489,3 +1489,232 @@ Questão empírica: Spread bancário pode ser anticíclico
   + Não é decidida no vácuo
 - Tem consequências para a economia
   + Continua sendo exogenamente determinada
+
+* A abordagem da taxa de juros exógena na economia aberta: críticas ao Mundell-Fleming e ao trilema <2021-03-04 qui>
+** Modelo Mundell-Fleming
+
+*** Versão de curto prazo - Keynesiana
+
+- Preços e salários nominais fixos
+- Produto pode não estar no potencial
+- Existe espaço para política macroeconômica levar ao pleno emprego
+
+Hipóteses adicionais:
+- IS: Taxa real de juros
+- LM: Taxa nominal de juros
+- Preços fixos e expectativa de inflação nula
+  + Caso contrárilo, fica mais difícil de chegar ao equilíbrio
+#
+
+- LM :: Taxa de juros doméstica
+  + Oferta e demanda por moeda
+  + Oferta é, em princípio, exógena
+- IS :: Relação juros e investimento
+  + Inclui exportações líquidas
+- BP :: Mobilidade perfeita de fluxos de capital
+  + Horizontal :: Oferta infinatamente elástica de devisas para qualquer $i>i^{*}$
+    - Implícito: expectativas de variação do câmbio igual a zero
+
+
+*** Eficácia relativa das políticas
+
+Depende do regime cambial adotado.
+Resultados:
+
+- Câmbio fixo :: Política Monetária ineficaz e política fiscal eficaz em levar economia ao pleno emprego
+- Câmbio flexível :: Política Monetária eficaz e política fiscal ineficaz em levar a economia ao pleno emprego
+
+*** Modelo Mundell-Fleming e IS-LM-BP
+
+- Mobilidade Imperfeita dos fluxos de capitais :: Resultados mudam um pouco com a BP positivamente inclinada;
+  + "Grau" de imperfeição do mercado
+    - Elevada mobilidade ou forte integração financeira
+    - Baixa mobilidade de capital ou baixa integração financeira
+
+Questão: BP é mais inclinada ou menos que a LM.
+Expansão da economia aumenta mais rápido a taxa de juros internacional (BP) ou a taxa de juros doméstica (LM)?
+
+Críticas à mobilidade:
+- Substitutibilidade imperfeita dos ativos
+- Ausência de atomismo
+- Assimetrias de informação
+
+*** Conclusão: IS-LM-BP com "mobilidade imperfeita" e o Mundell-Fleming
+
+1.Mais razoável a BP positivamente inclinada
+ + Mas não significa mobilidade imperfeita, e sim mercado de capitais internacional imperfeito
+2. Resultados mudam se LM é mais ou menos inclinada que BP
+
+Questões em aberto
+- medida do grau de mobilidade?
+- Parâmetros da LM?
+
+** Proposta
+
+IS-LM-BP é bom arcabouço para entender economias do mundo hoje com alto grau de abertura financeira?
+Não.
+
+- Abandonar LM na economia aberta
+- Como já foi feito na economia fechada
+- Sugestões para tratar dos temas de economia aberta com mais realismo baseados na ideia de taxa de juros exógena
+
+*** Câmbio fixo
+
+a. Spreads crescentes e racionamento de crédito
+b. Expectativas de desvalorização
+c. Taxa de juros exógena e intervenções não-esterilizadas
+d. Entrada de Fluxos de capitais, variações de reserva e expansão do crédito
+e. Assimetrias
+
+**** Spreads crescentes e racionamento de crédito :ATTACH:
+:PROPERTIES:
+:ID:       54c40946-9009-4133-8f02-c1cfa6c3c394
+:END:
+
+
+Mundell-Fleming: irrealista
+- Mesmo com perfeita mobilidade de capitais
+- Supõe que qualquer déficit em trasações correntes será sempre financiado, e a taxa de juros constante
+
+[[attachment:_20210304_160519screenshot.png]]
+
+**** Expectativas de desvalorização
+- Hipótese de total credibilidade do regime de câmbio fixo
+- Dúvidas sobre sustentabilidade do câmbio fixo
+- Expectativas de desvalorização deslocam BP
+- País perde reservas (finítas)
+  + Ou tem que aumentar a taxa de juros
+**** Expectativas de desvalorização
+
+Crítica de Lavoie (2000) ao mecanismo:
+
+Reservas Internacionais → taxa de juros doméstica via mudança na oferta de moeda
+
+BP → Reservas internacionais → Base → M1 → i
+
+Intervenções não-esterilizadas?
+- Como BC controla taxa de juros, mecanismo não faz sentido
+- Reservas internacionais → Base → Títulos públicos (ou algum outro mecanismo para fixar taxa de juros)
+- Se BC fixa câmbio e controla taxa básica de juros, esterilização é automática
+- Autonomia de fixar taxa básica de juros mesmo com câmbio fixo
+**** Entrada de fluxos de capital, variação de reservas e expansão do crédito
+
+- Fluxos de capitais :: não afeta diretamente nem taxa de juros nem crédito
+- Currency Board :: Bancos criam crédito
+  + Necessidade de Reservas Bancárias
+  + Governo capta crédito no exterior, se quiser manter “lastro”
+  + Resultado em geral é endividamento público externo
+  + Mesmo que empréstimo tenha sido na moeda doméstica e para atividades com baixo coeficiente importado
+  + Vários problemas com esse esquema
+    + Mas taxa de juros continua exógena
+
+***** Empricamente
+
+Canal de Fluxos de capitais para crédito
+
+- Condições externas melhores
+- Diminuição do spread
+- Abre espaço para diminuição da taxa básicaa de juros
+- Aumento do crédito
+
+(ex. Brasil pós 2003)
+**** Assimetrias
+
+1. Acima ou abaixo da BP
+   a. Limite para acúmulo das reservas?
+      a. Distributivo: Transferências com custo fiscal divida interna
+   b. Mas há limite para perda de reservas
+2. Políticas contracionaistas e expansionistas
+   a. Importações e déficit em Transações Correntes são função da renda/produto
+   b. Restrição externa
+
+*** Câmbio flexível
+Críticas câmbio fixo se aplicam também à versão de câmbio flexível.
+Mas outros problemas aparecem no câmbio flexível.
+
+a) Câmbio e preços
+b) Taxa de juros exógena
+c) Desvalorização contracionista
+d) expectativas cambiais exógenas
+e) Flutuação cambial "limpa"
+
+**** Câmbio e preços
+
+Desvalorização afetaria tradables e mudaria Índice de preços.
+Muda resultados de eficácia relativa de politicas macro:
+- Política monetária Expansionista :: aumenta oferta de moeda, desvaloriza câmbio, diminui M/P e Perde eficácia plena
+- Política Fiscal Expansionista :: Aumenta taxa de juros, valoriza câmbio, Aumenta M/P e ganha eficácia
+
+Resultados se invertem se desvalorização detonar um processo de inflação permanente
+**** Taxa de juros exógena
+
+Taxa de juros abaixo da internacional $\Rightarrow$ desvalorização cambial
++ E volta ao equilíbrio pelas exportações líquidas
++ DA e produto expandem, aumentando a taxa de juros (moeda exógena)
++ Processo ocorre até que i = i*
++ Inverso vale se i > i*
+
+Mas se taxa de juros é exógena, mecanismo deixa de funcionar
+
+Política fiscal:
+- Expansão dos gastos não aumenta taxa de juros
+- Não gera valorização cambial. Política não é ineficaz.
+- Política monetária expansionista
+- Levaria a valorizações continuas
+- Pois juros não voltaria a i = i*
+
+Política monetária contracionista:
+- Valorização sem fim
+- Ou até que BC decida mudar autonomamente taxa de juros
+
+**** Desvalorização contracionista
+Efeitos do câmbio sobre a DA:
+- Câmbio desvalorizado aumenta exportações (?)
+- Mas câmbio desvalorizado diminui propensão a consumir (parcela salarial na renda)
+- Empresas endividadas em moeda estrangeira reforçam esse efeito: Desvalorização cambial pode levar a crise financeira
+
+Mundell-Fleming ignora esses efeitos.
+Não é certo efeito expansionista da desvalorização.
+
+**** Expectativas cambiais exógenas
+Hipótese Irrealista: taxa de variação cambial esperada é exógena
+No modelo a taxa de câmbio se ajusta endogenamente.
+Hipótese só faria sentido se o ajuste das exportações líquidas e BTC fosse mais rápido do que o ajuste da Conta Financeira
+- Modelo pensado na época de Bretton Woods: Controle de K de CP
+- Mas não faz o menor sentido nos dias de hoje
+- Fluxos de K rápidos e ajuste nas X líquidas lentos
+- Uma desvalorização não corrige modelo; mas seqüência
+- Difícil imaginar que expectativas não mudam
+- Se E(e) depende de câmbio no passado...
+- Modelo fica instável
+
+**** Flutuação cambial "limpa" não existe
+
+Câmbio flexível torna o modelo violentamente instável sujeito a valorizações ou desvalorizações cambiais cumulativas
+Duas conclusões:
+1. MF com câmbio flexível e ideia que ajuste via exportações liquidas não é instrumento útil de política
+econômica
+2. No mundo real não existe flutuação limpa: BC age tanto no diferencial de juros quanto comprando e vendendo reservas
+
+"medo de flutuar" x "medo de que a flutuação não pare"
+
+**** Conclusão
+
+Irrealista: taxa de juros básica determinada por oferta de moeda exógena na economia fechada é mais inadequada na economia aberta Intervenções não esterilizadas são na prática a exceção e não a "regra do jogo".
+Definição da Política econômica "adequada"
+- Não depende do regime cambial, nem diz respeito a politica mais eficaz
+
+Problema é livre mobilidade de capitais: tira graus de liberdade das políticas expansionistas, impede uma flutuação limpa e torna difícil manter câmbio fixo.
+Mas mesmo em economia aberta com mobilidade de K as taxa juros é exógena, institucionalmente fixada pelo BC.
+Há restrições e consequências, mas não há mecanismo endógeno automático que ajuste essa taxa
+
+** Dilemma, Trilemma, Quadrilemma: no problema
+- Trilemma :: País não pode manter a taxa de câmbio fixa, mobilidade de capital e política monetária ativa
+- Dilemma :: Rey (2013, 2016)
+
+Mesmo com cambio flexível não há autonomia de politica monetária.
+
+Quadrilemma:
+- Aizenman :: Reservas
+- Steiner :: "Relaxing the trilemma" e intervenção no mercado cambial.
+- Frankel :: Systematic managed floating.

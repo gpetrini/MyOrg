@@ -16,3 +16,5 @@
 ** TODO Install nouveau driver
 ** TODO Tags template in capture :Emacs:
 ** TODO Braindump them :Emacs:
+** TODO Modelo Keynes com eutanásia do rentista
+** TODO Rodar dados PIB

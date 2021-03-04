@@ -1,3 +1,5 @@
 #+title: Mortgage Interest rate
 
 [[file:20210210091646-chpanel.org][Panel readings]]
+
+[[file:20210216121647-qca_theoretical_economics_foundations.org][QCA Theoretical Economics Foundations]]

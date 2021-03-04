@@ -12,7 +12,7 @@ CLOSED: [2021-02-22 seg 19:03]
 
 ** DONE Ver edital cotutela França
 CLOSED: [2021-02-28 dom 19:16]
-* QCA [14%] :Dissertation:
+* QCA [13%] :Dissertation:
 
 ** TODO Ler appêndice online manual QCA (chapter 8) :Manual:
 ** DONE Rascunhar estrutura do capítulo QCA com VoC :Writing:
@@ -35,22 +35,7 @@ CLOSED: [2021-02-28 dom 19:16]
 ** TODO [[https://www.bis.org/publ/qtrpdf/r_qt1309i.htm][Database for policy actions on housing markets]] :DATASET:
 ** TODO [[https://www.ecb.europa.eu/pub/pdf/scpops/ecb.op220~47edfcc84d.en.pdf][The impact of lending standards on default rates of residential real estate loans ]] :PLOTS:
 ** TODO [[http://www.finpolconsult.de/mediapool/16/169624/data/Housing_Finance/Europe/Low_Duebel_Sebag-Montefiori_EMF_Financial_Integration_03.pdf][Study on the Financial Integrationof European Mortgage Markets]] :DATASET:
-** Variables ideas
-*** Decommodificaiton (DEC)
-
-DEC = ownership AND Mortgage Debt
-
-- Consider social rental?
-
-*** Consumer Friendly
-
-CONS = Reclosure AND Prepayment AND Equity withdraw AND higher typical loan term
-- Consider variable interest rate as a share of total loans?
-- Reclosure as a possible way to solve contradictions
-*** Preference to iliquity
-
-ILI = Max LTV - Typical LTV Vs LTV deviation from OECD average
-- Consider mortgage securitization?
+** TODO Gráfico de Variedades de capitalismo residencial
 
 * Panel [20%] :Dissertation:
 
@@ -81,6 +66,8 @@ CLOSED: [2021-02-28 dom 19:17]
 
 * ABM dot-com [0/1] :@free:Article:
 ** TODO Concentration, Stagnation and Inequality:An Agent-Based Approach
+
+* Super e taxa de lucro :Article:@free:
 * Orientações [100%]
 
 * Cecon [100%] :Group:

@@ -6,8 +6,10 @@
 #+TODO: READ SKIM PARTIAL WAIT MAYBE REF | REPORT DONE ARCH
 #+PROPERTY: FINISHED_ALL "[ ]" "[X]"
 #+PROPERTY: COLUMNS  %FINISHED(Finished?){X} %TODO(Decision) %ITEM(File) %TAG
+#+EXCLUDE_TAGS: ARCHIVE
 
-* How to maintain?
+
+* How to?
 
 ** Html shortcuts
 
@@ -29,15 +31,10 @@ Keyboard shortcuts to save time and boost your productivity:
 | =g=        | Reload the page                   |
 
 ** Naming
-Each entry must be included with the following elements:
+- url :: Follow org-clipling capture template.
+- non-url :: Authors (Year) - Title
+** Categories instructions
 
-- Title (Year) - Title
-- Decision
-- Url described with the entry info
-
-** Categories description
-
-Instruction for each category
 
 - Inbox :: Add a tag related to a prior classification topic (/e.g./ Dissertation chapter, paper, method, etc)
 - Dissertation :: Add a tag related to a chapter. Entries are organized in themes and not in chapters
@@ -80,8 +77,10 @@ After reading:
 *Organization:*
 1. Review [[id:4283d93a-d870-40c9-bbb6-f3cbff0b3a1a][Inbox]]
 2. Refile
-3. Run archive
-4. Read
+3. Set custom ID according to zotero bibtex key
+4. Define reading sequence and sort
+5. Run archive
+6. Read
 
 *After read:*
 1. Update status
@@ -95,6 +94,7 @@ After reading:
 #+begin_note
 *Description:* Captured entries
 #+end_note
+** <2021-03-04 qui> [[https://doi.org/10.1177%2F0010414008325433][The Logic of Historical Explanation in the Social Sciences - James Mahoney, E...]] :Lorena:
 ** [[https://academic.oup.com/jeea/article-abstract/2/6/1148/2280932?redirectedFrom=fulltext][Ehrmann and Worms - Bank Networks and Monetary Policy Transmission]] :OFF:NETWORK:ABM:
 
 ** [[https://www.cfainstitute.org/en/research/foundation/2009/the-shadow-banking-system-and-hyman-minskys-economic-journey][McCulley (2010)]] :Inbox:ABM:NewNarrative:
@@ -113,6 +113,7 @@ After reading:
 ** [[https://www.imf.org/en/Publications/WP/Issues/2016/12/31/Macroprudential-Policy-What-Instruments-and-How-to-Use-them-Lessons-From-Country-Experiences-25296][Macroprudential Policy : What Instruments and How to Use them? Lessons From Country Experiences]] :LTV:QCA:
 
 ** [[https://www.sciencedirect.com/science/article/abs/pii/S1051137716300237][Housing finance and real-estate booms: A cross-country perspective]] :Data:QCA:
+** [[https://www.elibrary-areaer.imf.org/Macroprudential/Pages/ChapterQuery.aspx][Macroprudential Policy Survey]] :Data:
 * Dissertation
 
 ** [[file:../notes/20210216101138-qca_literature_review.org][QCA Literature Review]] :QCA:
@@ -130,9 +131,40 @@ After reading:
 #+begin_note
 *Description:* ABM exclusively readings
 #+end_note
+
+** Theoretical foundations of institutions
+*** READ [#A] Institutions and economic development: theory, policy and history :QCA:
+:PROPERTIES:
+:YEAR:  citeyear***:chang_2011_Institutions
+:ZOTERO:   Yes
+:STATUS:   Finished
+:RELEVANCE: High
+:IMPACT:   High
+:CITE:     Yes
+:KEY: cite:chang_2011_Institutions
+:FINISHED: [X]
+:END:
+
+*** PARTIAL [#A] Institutional change and economic development :QCA:
+:PROPERTIES:
+:YEAR:     citeyear***:chang_2007_Institutional
+:ZOTERO:   Yes
+:STATUS:   Finished
+:RELEVANCE: High
+:IMPACT:   High
+:CITE:     Yes
+:KEY:      cite:chang_2007_Institutional
+:FINISHED: [X]
+:END:
+
+
+*Parts to read:* Chapter 2 - Understanding the relationship between institutions and economic development: some key theoretical issues
+
+*Reason:* Theoretical fundaments to diversity in institutional arrangement $\Rightarrow$ multiple outcomes
+
 ** [[file:../notes/20210210184827-institutional_comparisons.org][Institutional comparisons]] :Institutional:
 
-*** READ [#A] [[file:2021-02-26-12-04-45-klyuev_2010_Housing.org][klyuev_2010_Housing: Is Housing Wealth an ``ATM''?: International Trends (2010, )]] :QCA:
+*** READ [#A] [[file:../notes/2021-02-26-12-04-45-klyuev_2010_Housing.org][klyuev_2010_Housing: Is Housing Wealth an ``ATM''?: International Trends (2010, )]] :QCA:
 :PROPERTIES:
 :YEAR:     citeyear***:klyuev_2010_Housing
 :ZOTERO:   Yes
@@ -266,10 +298,10 @@ After reading:
 :CITE:     Wait
 :END:
 
-#+BEGIN_SRC bibtex
-#+END_SRC
 
-*** ARCH [[https://www.imf.org/en/Publications/WP/Issues/2016/12/30/Deposit-Protection-Arrangements-A-Survey-1875][Kyei - Deposit Protection Arrangements : A Survey]] :Deposits:QCA:
+
+
+*** ARCH [[https://www.imf.org/en/Publications/WP/Issues/2016/12/30/Deposit-Protection-Arrangements-A-Survey-1875][Kyei - Deposit Protection Arrangements : A Survey]] :Deposits:QCA:ARCHIVE:
 CLOSED: [2021-02-26 sex 10:20]
 :PROPERTIES:
 :YEAR:     1995
@@ -343,9 +375,8 @@ CLOSED: [2021-02-26 sex 11:41]
 :CITE:     Wait
 :END:
 
-#+BEGIN_SRC bibtex
 
-#+END_SRC
+
 
 *** ARCH [#C] [[https://www.jstor.org/stable/24833781?seq=1][Order - The U.S. Mortgage Market: A Model of Dueling Charters]] :QCA:
 CLOSED: [2021-02-26 sex 11:42]
@@ -359,9 +390,8 @@ CLOSED: [2021-02-26 sex 11:42]
 :CITE:     Wait
 :END:
 
-#+BEGIN_SRC bibtex
 
-#+END_SRC
+
 
 *** ARCH [#B] [[https://www.nbs.sk/_img/Documents/PUBLIK/muc0070.pdf][IMF - Mortgages in Europe]] :QCA:
 CLOSED: [2021-02-26 sex 11:52]
@@ -376,7 +406,31 @@ CLOSED: [2021-02-26 sex 11:52]
 :END:
 
 *Zotero file:* muc0070.pdf
-** Mortgage market particularities :Mortgage:
+** [[file:../notes/20210210184406-mortgage_interest_rate.org][Mortgage Interest rate and market particularities]] :Mortgage:
+*** PARTIAL [#A] <2021-03-03 qua> [[https://www.ecb.europa.eu/pub/pdf/scpops/ecbocp101.pdf][Housing Finance in the Euro area]] :QCA:Mortgage:LTV:DIRECTIONALS:
+:PROPERTIES:
+:CUSTOM_ID: ECB_2009_Housing
+:END:
+
+*Part to read:*
+- Chapter 3
+- Chapter 4
+- Chapter 6
+*** PARTIAL [#A] BEYOND THE LTV RATIO: NEW MACROPRUDENTIAL LESSONS FROM SPAIN :QCA:
+   :PROPERTIES:
+   :ZOTERO:   Yes
+   :YEAR:     2019
+   :STATUS:   Filed
+   :RELEVANCE: Regular
+   :IMPACT:   Low
+   :CITE:     Yes
+   :KEY:  cite:galan_2019_LTV
+   :FINISHED: [ ]
+   :END:
+
+   *Reason:* Theoretical relevance of LTV ratios
+
+
 *** READ [#A] [[https://academic.oup.com/ser/advance-article/doi/10.1093/ser/mwaa030/5913145][Kohl - Too much mortgage debt? The effectof housing financialization on housing supply and residential capital formation]] :DIRECTIONALS:QCA:
    :PROPERTIES:
    :YEAR:     2020
@@ -412,19 +466,7 @@ CLOSED: [2021-02-26 sex 11:52]
    :CITE:     Yes
    :END:
 
-*** READ [#A] Institutions and economic development: theory, policy and history :QCA:
-:PROPERTIES:
-:YEAR:  citeyear***:chang_2011_Institutions
-:ZOTERO:   Yes
-:STATUS:   Finished
-:RELEVANCE: High
-:IMPACT:   High
-:CITE:     Yes
-:KEY: cite:chang_2011_Institutions
-:FINISHED: [X]
-:END:
-
-*** READ [#A] [[file:2021-02-26-11-49-16-jorda_2015_Betting.org][jorda_2015_Betting: Betting the house (2015, Journal of International Economics)]] :DIRECTIONALS:QCA:
+*** READ [#A] [[file:../notes/2021-02-26-11-49-16-jorda_2015_Betting.org][jorda_2015_Betting: Betting the house (2015, Journal of International Economics)]] :DIRECTIONALS:QCA:
 :PROPERTIES:
 :YEAR:  citeyear***:jorda_2015_Betting
 :ZOTERO:   Yes
@@ -434,38 +476,6 @@ CLOSED: [2021-02-26 sex 11:52]
 :CITE:     Yes
 :KEY: cite:jorda_2015_Betting
 :END:
-
-*** PARTIAL [#A] BEYOND THE LTV RATIO: NEW MACROPRUDENTIAL LESSONS FROM SPAIN :QCA:
-   :PROPERTIES:
-   :ZOTERO:   Yes
-   :YEAR:     2019
-   :STATUS:   Filed
-   :RELEVANCE: Regular
-   :IMPACT:   Low
-   :CITE:     Yes
-   :KEY:  cite:galan_2019_LTV
-   :FINISHED: [ ]
-   :END:
-
-   ***Reason:*** Theoretical relevance of LTV ratios
-
-
-*** PARTIAL [#A] Institutional change and economic development :QCA:
-:PROPERTIES:
-:YEAR:     citeyear***:chang_2007_Institutional
-:ZOTERO:   Yes
-:STATUS:   Finished
-:RELEVANCE: High
-:IMPACT:   High
-:CITE:     Yes
-:KEY:      cite:chang_2007_Institutional
-:FINISHED: [X]
-:END:
-
-
-***Parts to read:*** Chapter 2 - Understanding the relationship between institutions and economic development: some key theoretical issues
-
-***Reason:*** Theoretical fundaments to diversity in institutional arrangement $\Rightarrow$ multiple outcomes
 
 *** PARTIAL [#A] [[http://www.actuaries.org/CTTEES_TFRISKCRISIS/Documents/turner_review.pdf][Turner - A Regulatory Response to the Global Banking Crisis]] :DIRECTIONALS:BASEL:SAMPLE:QCA:
    :PROPERTIES:
@@ -479,7 +489,7 @@ CLOSED: [2021-02-26 sex 11:52]
    :COUNTRY: UK,USA
    :END:
 
-*** SKIM [#B] [[file:2021-02-26-10-30-31-sa_2014_CAPITAL.org][sa_2014_CAPITAL: CAPITAL INFLOWS, FINANCIAL STRUCTURE AND HOUSING BOOMS: Capital Inflows, Financial Structure and Housing Booms]] :DIRECTIONALS:Panel:DATA:QCA:
+*** SKIM [#B] [[file:../nots/2021-02-26-10-30-31-sa_2014_CAPITAL.org][sa_2014_CAPITAL: CAPITAL INFLOWS, FINANCIAL STRUCTURE AND HOUSING BOOMS: Capital Inflows, Financial Structure and Housing Booms]] :DIRECTIONALS:Panel:DATA:QCA:
 :PROPERTIES:
 :YEAR:  citeyear***:sa_2014_CAPITAL
 :ZOTERO:   Yes
@@ -491,7 +501,7 @@ CLOSED: [2021-02-26 sex 11:52]
 :FINISHED: [ ]
 :END:
 
-*** SKIM [#B] [[file:2021-02-26-11-20-18-lacour-little_2010_Homea.org][lacour-little_2010_Homea: Home Equity Extraction by Homeowners: 2000-2006 (2010, Journal of Real Estate Research)]] :DIRECTIONALS:DATA:USA:QCA:
+*** SKIM [#C] [[file:../notes/2021-02-26-11-20-18-lacour-little_2010_Homea.org][lacour-little_2010_Homea: Home Equity Extraction by Homeowners: 2000-2006 (2010, Journal of Real Estate Research)]] :DIRECTIONALS:DATA:USA:QCA:
 :PROPERTIES:
 :YEAR:  citeyear*:lacour-little_2010_Homea
 :ZOTERO:   Entry
@@ -814,18 +824,26 @@ CLOSED: [2021-02-16 ter 16:12]
    :CITE:     Yes
    :KEY:  andre_2016_HOUSEHOLD
    :END:
-** [[file:../notes/20210210184406-mortgage_interest_rate.org][Mortgage Interest rate]] :Interest:
+*** PARTIAL [#A] <2021-03-03 qua> [[https://www.ecb.europa.eu/pub/pdf/scpops/ecbocp101.pdf][Housing Finance in the Euro area]] :QCA:Mortgage:LTV:DIRECTIONALS:
+:PROPERTIES:
+:CUSTOM_ID: ECB_2009_Housing
+:END:
+
+*Part to read:*
+- Chapter 2
+- Chapter 5
 ** [[file:../notes/20210210091758-house_prices.org][House Prices]] :Prices:
 *** ARCH [#C] [[https://www.kansascityfed.org/PUBLICAT/ECONREV/PDF/2q07rapp.pdf][Rappaport - A Guide to Aggregate House Price Measures]] :USA:HousePrices:
 ** New Narrative :NewNarrative:
 ** Data :Data:
 
-* Journals frontier overview
+* Journals
 
 #+CAPTION: Journal abbreviations
-| Journal full name | Abbreviation | Link |
-|-------------------+--------------+------|
-|                   |              |      |
+| Journal full name              | Abbreviation | Link |
+|--------------------------------+--------------+------|
+| Cambridge Journal of Economics | CJE          | [[https://academic.oup.com/cje][CJE]]  |
+|                                |              |      |
 
 #+begin_note
 *Note:* No subheadings!
@@ -850,8 +868,3 @@ CLOSED: [2021-03-02 ter 18:16]
 ** Felipe (2021)
 * Lectures
 * Off office
-* Improvements
-
-** Capture
-
-** Refire

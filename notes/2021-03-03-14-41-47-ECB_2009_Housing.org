@@ -1,0 +1,49 @@
+#+TITLE: ECB_2009_Housing: Housing finance in the euro area (2009, Occasional Paper Series)
+#+OPTIONS: toc:nil num:nil
+#+ROAM_KEY: cite:ECB_2009_Housing
+#+ROAM_TAGS: Institucions Housing Mortgages Europe Dissertation QCA
+Time-stamp: 2021-03-03
+- tags :: bank competition,bank funding,bankruptcy,banks,cost of funding (of banks),cost of housing loans,debt service,ECB monetary policy,foreclosure,household debt,household survey,housing finance,insolvency,loan maturity,loan-to-value ratio,monetary policy transmission,mortgage,mortgage covered bond,mortgage equity withdrawal,mortgage interest rate spread,redemption scheme,rental market,retail deposits,securitisation,taxation,US housing market crisis
+
+
+* Backlinks
+
+[[file:20210210184827-institutional_comparisons.org][Institutional comparisons]]
+[[file:20210216121647-qca_theoretical_economics_foundations.org][QCA Theoretical Economics Foundations]]
+[[file:20210210184406-mortgage_interest_rate.org][Mortgage Interest rate]]
+[[file:20210210092940-household_debt_and_bank_credit.org][Household debt and Bank credit]]
+
+
+* FISH-5SS
+
+
+|---------------------------------------------+-----|
+| <40>                                        |<50> |
+| *Background*                                  |     |
+| *Supporting Ideas*                            |     |
+| *Purpose*                                     |     |
+| *Originality/value (Contribution)*            |     |
+| *Relevance*                                   |     |
+| *Design/methodology/approach*                 |     |
+| *Results*                                     |     |
+| *(Interesting) Findings*                      |     |
+| *Research limitations/implications (Critics)* |     |
+| *Uncategorized stuff*                         |     |
+| *5SS*                                         |     |
+|---------------------------------------------+-----|
+
+* Specifics comments
+ :PROPERTIES:
+ :Custom_ID: ECB_2009_Housing
+ :AUTHOR: K\"ohler-Ulbrich, Petra, Asimakopoulos, Y., Doyle, N., Magono, R., Zachary, M., Walko, Z., Stoess, E., …
+ :JOURNAL: Occasional Paper Series
+ :YEAR: 2009
+ :DOI:
+ :URL: https://ideas.repec.org/p/ecb/ecbops/2009101.html
+ :END:
+
+
+* PDF Highlights
+:PROPERTIES:
+ :NOTER_DOCUMENT: ~/Zotero/storage/T7MAE9VX/Köhler-Ulbrich et al. - 2009 - Housing finance in the euro area.pdf
+ :END:

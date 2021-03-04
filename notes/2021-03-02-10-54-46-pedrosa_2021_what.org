@@ -48,6 +48,9 @@ Time-stamp: 2021-03-02
 - Why not G as a function of Y (Eq 20)?
   + Additionaly, is un an observable variable for the government? (note on p.58)
 - Why follow the average? Is it reasonable that the incumbent have a better technological element? (note on p.61)
+- Does the fixed F parameter underestimate the Minskyan regime?
+  + Why? Because it replace firms that went out the market by average firms
+  + Should not track which firms stays?
 
 ** Equations
 

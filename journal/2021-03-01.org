@@ -37,3 +37,26 @@ Antes, tentativa de habilitar *wayland*
 ** 15:45 Fim leitura Lavoie; entendendo org-roam structure
 ** 16:38 Pausa
 ** 16:59 Retornando: Criando readings list
+* quarta, 03/03/2021
+:PROPERTIES:
+:CREATED:  20210303
+:END:
+** 08:09 Update; sage e dac
+** 08:22 Louça e guargar roupa
+** 08:36 Banho e lente
+** 14:31 Iniciando leitura
+** 16:35 Pausa
+** 17:09 Retorno
+** 17:58 Fim da leitura
+* quinta, 04/03/2021
+:PROPERTIES:
+:CREATED:  20210304
+:END:
+** 08:43 Atualização do sistema; sage e dac
+** 09:07 Banho e lente
+** 09:50 Iniciando trabalhos: anotações das ideias
+** 10:29 Maçã e busca por org e importação latex
+** 11:18 Leitura Manual QCA
+** 12:31 Fim leitura manual QCA, pesquisa de software elaboration sequence
+** 12:48 Almoço
+** 13:50 Louça e malas

@@ -1181,3 +1181,444 @@ No agregado, devem existir uma curva de investimento-endividamento e uma curva a
 
 *** Corolário 4 (endividamento pró-cíclico no agregado, decorrência do terceiro)
 Indicador de endividamento serviria como uma proxy da fragilidade financeiro
+
+* Investimento, fluxo de caixa e dinâmica da alavancagem: regime minskiano ou paradoxo da dívida? <2021-03-03 qua>
+
+** Lavoie e Seccarecia (2001) e Lavoie (2020)
+*** Elo macroeconômico perdido
+
+Minky pós-tese: ciclo de negócios + reinterpretação da análise do investimento em Keynes sob incerteza fundamental
+- Constructo microeconômico com hipótese de limite ao autofinanciamento
+- Maior investimento $\Rightarrow$ Maior endividamento
+*** HIF e fundos emprestáveis
+
+Partindo da teoria de dois preços:
+- Minsky considera que o fluxo de caixa aumento quando o investimento se expande, mas não incorpora na análise
+- Noção de que expansões de atividade econômica levariam a maior fragilidade estavam em sua tese e no artigo da AER
+
+Essas noções são baseadas no princípio de fundos emprestáveis:
+- Excesso de poupança ex ante $\Rightarrow$ pagamento de dívida (poupança ex post)
+- No entanto, seguindo Keynes e Kalecki: problema de realização $\Rightarrow$ excesso de poupança será emprestado por bancos para outras empresas
+
+Minsky supões que:
+
+#+BEGIN_latex
+\begin{equation}
+\frac{\Uparrow L}{\uparrow K}
+\end{equation}
+#+END_latex
+mesmo que as taxas de juros não aumentem.
+No entanto, Minky não explica o porquê $L$ cresce mais rápido que $K$ a nível macroeconômico.
+
+*** Teoria kaleckiana do Lucro
+
+No esquema tridepartamental, denota-se o investimento como $I$, o consumo dos capitalistas como $C_{c}$, consumo dos trabalhadores $C_{w}$, produto como $Y$, lucro como $P$ e salário $W$:
+
+|------------------------+-------------------------------+--------------------------------------+-------|
+| Dep. I Bens de capital | Dep. II (Consumo capitalista) | Dep. III (Consumo dos trabalhadores) | Total |
+|------------------------+-------------------------------+--------------------------------------+-------|
+| $P_{1}$                | $P_2$                         | $P_{3}$                              | $P$   |
+| $W_{1}$                | $W_{2}$                       | $W_{3}$                              | $W$   |
+| $I$                    | $C_{c}$                       | $C_{w}$                              | $Y$   |
+|------------------------+-------------------------------+--------------------------------------+-------|
+
+Partindo da hipótese de que trabalhadores gastam o que ganham, da identidade acima e fazendo algumas manipulações algébricas:
+#+BEGIN_latex
+\begin{equation}
+C_{w} = W
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+P_{1} + P_{2} + P_{3} = W_{1} + W_{2} + P_{1} + P_{2}
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+P = C_{c} + I
+\end{equation}
+#+END_latex
+
+Essa mesma equação pode ser demonstrada de forma mais simples é pelo PIB pela ótica da demanda:
+#+BEGIN_latex
+\begin{equation}
+Y = C + I = W + P
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+I = P
+\end{equation}
+#+END_latex
+Os capitalistas podem decidir o quando gastar (mas não o fazem como classe dada a concorrência), mas não o quanto lucram.
+Assim, a causalidade só pode ser:
+#+BEGIN_latex
+\begin{equation}
+I \Rightarrow P
+\end{equation}
+#+END_latex
+
+Assim, Minky ignora tal relação ao supor que os fluxos disponíveis são constantes dado um aumento no investimento.
+
+**** Extensões
+Lucro depende do investimento, do superávit em conta corrente e do déficit do governo
+
+#+BEGIN_latex
+\begin{equation}
+P - T = C_{c} + I + (G-T) + (X-M) - S_{w}
+\end{equation}
+#+END_latex
+
+Teoria kaleckiana depende do princípio da demanda efetiva.
+
+** Toporowski e as implicações monetárias
+
+Teoria dos lucros de Kalecki mostra como as despedas de investimento aumentam o fluxo de caixa.
+Mesmo que o aumento do investimento implique aumento do endividamento, também implica aumento da liquidez e dos depósitos bancários mantidos pelas empresas.
+
+*** Implicações monetárias
+
+- Moeda endógena
+- Expansão do crédito expande liquidez da economia
+- Se investimento é finnanciado por dívida, liquidez se expande
+  + Logo, investimento financiado por dívida aumenta liquidez do sistema
+
+Problema não trivial: empresas que estão gastando com $I$ não necessariamente são aquelas capturando a liquidez adicional criada pelo investimento.
+
+** Prova de conceito: um modelo SFC simples
+
+*** Balanço patrimonial
+
+|--------------------+-----------+-----------+--------+-------|
+|                    | Famílias  | Firmas    | Bancos | $sum$ |
+|--------------------+-----------+-----------+--------+-------|
+| Capital fixo       |           | $+K$      |        | $+K$  |
+| Depósitos          | $+D$      |           | $-D$   | $0$   |
+| Ações              | $+p_{s}S$ | $-p_{s}S$ |        | $0$   |
+| Empréstimos        |           | $-L$      | $+L$   | $0$   |
+| Patrimônio Líquido | $+V$      | $+V_{f}$  | $0$    | $+K$  |
+|--------------------+-----------+-----------+--------+-------|
+
+*** Matriz de fluxo de fundos
+
+|                         | Famílias      | Corrente Firmas | Capital Firmas | Corrente Bancos | Capital Bancos | $\sum$ |
+| Consumo                 | $-C$          | $+C$            |                |                 |                |      0 |
+| Investimento            |               | $+I$            | $-I$           |                 |                |      0 |
+| Salários                | $W$           | $-W$            |                |                 |                |      0 |
+| Lucro líquido           | $+FD$         | $-F$            | $+FU$          |                 |                |      0 |
+| Juros sobre empréstimos |               | $-iL$           |                | $+iL$           |                |      0 |
+| Juros sobre depósitos   | $iD$          |                 |                | $-iD$           |                |      0 |
+|-------------------------+---------------+-----------------+----------------+-----------------+----------------+--------|
+| Subtotal                | $SAV_{h}$     | 0               | $FU - I$       | 0               | 0              |      0 |
+|-------------------------+---------------+-----------------+----------------+-----------------+----------------+--------|
+| $\Delta$ Empréstimo     |               |                 | $+\Delta L$    |                 | $-\Delta L$    |      0 |
+| $\Delta$ Depósito       | $-\Delta D$   |                 |                |                 | $+\Delta D$    |      0 |
+| $\Delta$ Ações          | $-\Delta p_s$ |                 | $+\Delta p_s$  |                 |                |      0 |
+|-------------------------+---------------+-----------------+----------------+-----------------+----------------+--------|
+*** Definições importantes
+
+ - Grau de utilização da capacidade :: $u = \frac{Y}{Y^{*}} \leftrightarrow \frac{Y}{K} = \frac{u}{v}$
+ - Decomposição de Weisskopf (1979) :: $r = \pi\frac{u}{v}$
+*** Equações
+**** Consumo e poupança das famílias
+
+Função consumo do tipo ciclo de vida
+
+#+BEGIN_latex
+\begin{equation}
+C = (1-s_{h})YD_{h} + c_{v}V_{r}
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+YD_{h} = W_{s} + FD + iD
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+SAV_{h} = YD_{h} - C = s_{h}(W_{s} + FD + iD) - c_{v}V_{r}
+\end{equation}
+#+END_latex
+
+Substituindo recursivamente:
+#+BEGIN_latex
+\begin{equation}
+SAV_{h} = s_{h}[(1-\pi)Y + (1-s_{f})(F - iL) + iD] - c_{v}V_{r}
+\end{equation}
+#+END_latex
+em que $s_f$ é a parcela do lucro retido após o pagamento dos juros.
+
+
+Como bancos não acumulam riqueza, temos que $L = D$, assim:
+#+BEGIN_latex
+\begin{equation}
+SAV_{h} = s_{h}[(1-\pi)Y + (1-s_{f})(F - iL) + iL] - c_{v}V_{r}
+\end{equation}
+#+END_latex
+
+Extendendo essa equação para taxa, normalizando pelo estoque de capital.
+Como as famílias não investem, o saldo financeiro equilave à poupança das famílias:
+#+BEGIN_latex
+\begin{equation}
+\frac{S_{h}}{K} = \frac{s_{h}[(1-\pi)Y + (1-s_{f})(F - iL) + iD] - c_{v}V_{r}}{K}
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+\frac{S_{h}}{K} = s_{h}[\left(\frac{u}{v} - r\right) + (1-s_{f})(r - il) + il] - c_{v}v_{r}
+\end{equation}
+#+END_latex
+em que:
+- $l$ :: endividamento das firmas (L/K)
+- $v_{r}$ :: relação riqueza/capital das firmas
+**** Poupança das firmas
+
+
+A poupança das famílias corresponde ao lucro retido
+#+BEGIN_latex
+\begin{equation}
+S_{f} = s_{f}(F - iL)
+\end{equation}
+#+END_latex
+Normalizando pelo estoque de capital
+#+BEGIN_latex
+\begin{equation}
+\frac{S_{f}}{K} = s_{f}{r - il}
+\end{equation}
+#+END_latex
+**** Popupança total
+
+#+BEGIN_latex
+\begin{equation}
+g^{s} = \frac{S_{h} + S_{f}}{K}
+\end{equation}
+#+END_latex
+
+Substituindo, temos
+
+#+BEGIN_latex
+\begin{equation}
+g^{s} = [s_{f}(1-s_{h})\pi + s_{h}]\frac{u}{v} - s_{f}(1-s_{h})il - c_{v}v_{r}
+\end{equation}
+#+END_latex
+**** Alocação de porfólio das famílias
+
+#+BEGIN_latex
+\begin{equation}
+v_{r} = \frac{V}{K} = \frac{D + p_{s}S}{K}
+\end{equation}
+#+END_latex
+Suponha que as famílias escolham uma proporção fixa da riqueza para manter na forma de depósitos ($\kappa_{d}$) e ações ($\kappa_{s}$)[fn:: Alternativamente, poderia-se incluir o rendimento relativo de cada ativo]:
+#+BEGIN_latex
+\begin{equation}
+\kappa_{s} + \kappa_{d} = 1
+\end{equation}
+#+END_latex
+
+#+BEGIN_latex
+\begin{equation}
+D = \kappa_{d}v_{r}K
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+p_{s}S = (1-\kappa_{d})v_{r}K
+\end{equation}
+#+END_latex
+
+Lembrando que $D = L$, pode-se resolver para $p_{s}^{*}$, ou seja, o ajuste é via preços:
+#+BEGIN_latex
+\begin{equation}
+p_{s} = \frac{1-\kappa_{d}}{\kappa_{d}}\frac{L}{S}
+\end{equation}
+#+END_latex
+e o mais importante:
+#+BEGIN_latex
+\begin{equation}
+v_{r} = \drac{D}{\kappa_{d}K} = \frac{I}{\kappa_{d}}
+\end{equation}
+#+END_latex
+Há, portanto, uma interdependência entre o endividamento das firmas ($D = L$) e alocação de portfólio das famílias.
+**** Função investimento
+
+Determinantes:
+- Espírito animal $\gamma_{0}$
+- Grau de utilização da capacidade (captura efeito acelerador)
+- Serviço da dívida ($il$)
+- Valorização das firmas (tipo Q de tobin)
+
+#+BEGIN_latex
+\begin{equation}
+g^{i} = \frac{I}{K} = \gamma_{0} + \gamma_{u}u - \gamma_{i}il + \gamma_{v}v_{r}
+\end{equation}
+#+END_latex
+**** Equilíbrio de curto prazo
+
+Equilíbrio no mercado de bens:
+#+BEGIN_latex
+\begin{equation}
+g^{s} = g^{i}
+\end{equation}
+#+END_latex
+Resolvendo para $u$:
+#+BEGIN_latex
+\begin{equation}
+u^{*} = \frac{\gamma_{0} + [s_{f}(1-s_{h}) - \gamma_{l}]il + [c_{v} + \gamma_{v}/\kappa_{d}]l}{[s_{f}(1-s_{h})\pi + s_{h}]/v - \gamma_{u}}
+\end{equation}
+#+END_latex
+em que o denominador é a condição de estabilidade keynesiana, ou seja, expansão do investimento precisa gerar um produto adicional maior que a poupança; ou ainda, se não for válida, não garante-se lei de Say.
+*** Efeitos parciais
+
+|-------------------------------------------+---------------|
+| Mudança variável                          | Efeito em $u$ |
+|-------------------------------------------+---------------|
+| $\downarrow \kappa_{d} = \upparrow v_{r}$ | +             |
+| $\uparrow \pi$                            | -             |
+| $\uparrow i$                              | $\pm$         |
+| $\uparrow l$                              | $\pm$         |
+|-------------------------------------------+---------------|
+
+
+Lance Taylor:
+- Demanda debt-led :: $\frac{\partial u^{*}}{\partial l} > 0$
+- Demanda debt-burdened :: $\frac{\partial u^{*}}{\partial l} < 0$
+
+Esse efeito ambíguo decorre dos efeitos da taxa de juros sobre a renda disponível das famílias e serviço da dívida para as famílias.
+Também está associado ao Q de Tobin.
+*** Restrição orçamentária das firmas
+
+A restição orçamentário das firmas requer que:
+#+BEGIN_latex
+\begin{equation}
+FU - I + \Delta L + p_{s}\Delta D
+\end{equation}
+#+END_latex
+
+Já considerando as equações comportamentais, o fechamento da conta capital é:
+#+BEGIN_latex
+\begin{equation}
+I = xI + s_{f}(\pi Y - iL) + \Delta L
+\end{equation}
+#+END_latex
+em que:
+- $x$ :: proporção do investimento financiamento por novas emissão de ações
+  + Normalmente é muito pequeno ou até negativo (EUA) por conta da recompra de ações (firmas grandes principalmente).
+- $\Delta L$ :: Variação da dívida, podendo ser escrita como $\Delta L = g_{L}\cdot L$
+
+Normalizando pelo estoque de capital
+#+BEGIN_latex
+\begin{equation}
+g^{i} = xg^{i} + s_{f}(r - il) + g_{L}l
+\end{equation}
+#+END_latex
+Um truque matemático:
+#+BEGIN_latex
+\begin{equation}
+l = \frac{L}{K} = ln l = ln L - ln K \Rightarrow \frac{\Delta l}{l} = \frac{\Delta L}{L} - \frac{\Delta K}{K}
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+\frac{\Delta l}{l} = g_{L} - g^{i} \Rightarrow g_{L} = g_{l} + g^{i}
+\end{equation}
+#+END_latex
+Logo, a taxa de crescimento do endividamento ($g_{l}$) é dado pela taxa de cresciemtndo da dívida descontada a taxa de crescimento do investimento.
+
+Prosseguindo com a substituição, tem-se
+#+BEGIN_latex
+\begin{equation}
+g^{i} = xg^{i} + s_{f}(r - il) + \left(g_{l} + g^{i}\right)l
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+g_{l} = g^{i}(1-x) + (s_{f}i - g^{i})l - s_{f}\frac{\pi u}{v}
+\end{equation}
+#+END_latex
+
+
+Supondo estabilidade, a derivada parcial do endividamento em relação ao grau de utilização da capacidade ajuda analisar o impacto do ciclo econômico no endividamento na vizinhança do equilíbrio ($g_{l}$ = 0):
+
+#+BEGIN_latex
+\begin{equation}
+\frac{\partial g_{l}}{\partial u} = \gamma_{u}(1-x-l) - s_{f}\frac{\pi}{v}
+\end{equation}
+#+END_latex
+
+
+- Regime Minskiano :: $\Uparrow u \to \uparrow g^{i} \uparrow l$
+- Regime Steindliano (paradoxo da dívida) :: $\Uparrow u \to \uparrow g^{i} \downarrow l$
+
+Como o impacto do grau de utilização da capacidade na trajetória do endividamento é ambíguo, regime minskiano não é garantido.
+No supermultiplicador, por outro lado, o regime minskiano não pode ocorrer.
+*** Retomando (Ver slides)
+
+QUando se considera devidamente a demanda efetiva, de forma plausível, pode-se obter tanto um regime de endividamento agregado minskiano quanto steindliano:
+- Na interpretação de Lavoie e Seccareccia, a devida inclusão da equação kaleckiana do lucro coloca em xeque a generalidade da HIF
+- O modelo acima
+
+** Crítia de Steindl e Toporowski
+
+*** Macroecnomia não é suficiente
+
+Uma segunda leva de estudos tenta mostrar que macroeconomia não é suficiente para estudar fragilidade financeira:
+
+- Distribuição (e as heterogeneidade que explicam) os lucros e dívida importam para dinâmica sistêmica
+  + Está explícito pelo menos desde Steindl (1952)
+  + Mais recentemente, Toporowski (SOAS) recuperou essa ideia
+- O problema pode ser muito bem colocado a partir da arquitetura da HIF
+*** Fluxos intre-setoriais: retomando exemplo Steindl (1952)
+
+Duas firmas, mesmo setor, mesma relação capital produto e mesma estrutura de custos. Suponha que ambas as firmas queiram investir o mesmo montante e que uma delas tem margem de lucro maior, de forma que os lucros retidos são maiores:
+
+|----------------------------------------+---------+---------+-------|
+|                                        | Firma 1 | Firma 2 | Total |
+|----------------------------------------+---------+---------+-------|
+| Investimento                           |     -50 |     -50 |  -100 |
+| Lucro retido                           |     +20 |     +80 |  +100 |
+| Necessidade de financiamento           |     +30 |     -30 |     0 |
+|----------------------------------------+---------+---------+-------|
+| Variação líquida de ativos financeiros |     -30 |     +30 |     0 |
+|----------------------------------------+---------+---------+-------|
+
+**** Heterogeneidade, distribuição e fragilidade
+
+No esquema acima, por mais que no agregado não tenha havido aumento da dívida líquida do setor das firmas:
+
+- Se ambas tiverem a mesma estrutura de financiamento, teria havido aumento da fragilidade da firma, concomitante à redução da gragilidade da outra: efeito sistêmico líquido não é óbvio
+- Se a firma 2 tivesse mais compromisso que a firma 1, a distribução de lucro favoreceria a robustez financeira: recebeu mais quem precisava pagar mais dívida
+- Se a firma 1 tivesse mais compromisso financeiro que a firma 2, a distribuição de lucro favoreceria a fragilidade financeira: quem precisava de mais recurso para pagar recebeu menos
+
+Toporowski: é o endividamento líquido da firma individual que é o indicador crítico de fragilidade financeira, e não a nível agregado como propõe Minsky.
+*** Feedback dinâmicos
+
+- Interação entre fluxo de caixa e balanço patrimonial é complexa
+- Estaticamente, tipologia minskiana contrasta fluxo de caixa a compromissos financeiros
+- Porem, estrutura dos balanços depende do próprio fluxo de caixa (que vai afetar o compromisso financeiro no futuro): efeito cumulativos
+
+** Prova de conceito: um modelo AB-SFC (Pedrosa e Lang, 2021)
+
+
+Motivação:
+
+- Desenvolver hipótese de Steindl-Toporowski
+- Lado da oferta frequentemente negligenciano nos modelos minskianos formais a la teoria evolucionista
+  + Motor Schumpeteriano com heterogeneidade e estrutura da dívida
+    - Motor Schumpeteriano é o que cria heterogeneidade na capacidade de capturar lucro
+    - Não supõe-se que a dívida é sempre rolada
+- Remediar o caráter excessivamente agregativo de modelos da HIF com demanda efetiva
+
+
+Resultados:
+- Heterogeneidade dos balanços :: emerge do modelo
+  + Decorrente do braço schumpteriano (capturar lucro)
+  + Inicialmente inicializadas como iguais
+- Persistência da alavancagem :: Autocorrelação elevada do endividamento
+- Ondas longas de fragilidade financeira :: Coexistência de firmas minskianas e steindlianas
+  + Para uma parcela das firmas, expansão do investimento não se expressa na perda de segurança das firmas
+  + Corolário 1 não necessariamente se aplica
+- Distribuição do endividamento decorre das menos alavancadas :: Explica melhor o que acontece com o endidamento agregado
+- Fragilidade financeira pró-ciclica :: Efeitos no curto prazo decorrente de ciclos reais (e não financeiras); no longo prazo depende do balanço entre firmas minskianas e steindliandas
+  + Atende corolário 2
+  + Depende da estrutura de competição e distribuição do lucro (longo prazo)
+- Endividamento agregado não é uma boa proxy para fragilidade financeira :: Modelo micro-macro é necessário
