@@ -12,8 +12,12 @@ CLOSED: [2021-02-22 seg 19:03]
 
 ** DONE Ver edital cotutela França
 CLOSED: [2021-02-28 dom 19:16]
-* QCA [13%] :Dissertation:
-
+* QCA [11%] :Dissertation:
+** TODO Ler seção 9.2.3 manual QCA
+** TODO Ler sobre QCA em dois estágios
+** TODO Organizar dados em uma tabela
+*** TODO Dados brutos
+*** TODO Fonte
 ** TODO Ler appêndice online manual QCA (chapter 8) :Manual:
 ** DONE Rascunhar estrutura do capítulo QCA com VoC :Writing:
 CLOSED: [2021-02-28 dom 19:16]
@@ -30,7 +34,7 @@ CLOSED: [2021-02-28 dom 19:16]
 ** TODO https://www.youtube.com/watch?v=hYNIndMcvaA
 ** TODO Fichar Green and Watcher
 ** TODO Organizar leituras comparação institucional: Lea
-** TODO QCA plot idea: Typical duration of a foreclosure procedure in boxplot
+** IDEA QCA plot idea: Typical duration of a foreclosure procedure in boxplot
 ** TODO Data QCA: pós Basileia I
 ** TODO [[https://www.bis.org/publ/qtrpdf/r_qt1309i.htm][Database for policy actions on housing markets]] :DATASET:
 ** TODO [[https://www.ecb.europa.eu/pub/pdf/scpops/ecb.op220~47edfcc84d.en.pdf][The impact of lending standards on default rates of residential real estate loans ]] :PLOTS:
@@ -69,8 +73,16 @@ CLOSED: [2021-02-28 dom 19:17]
 
 * Super e taxa de lucro :Article:@free:
 * Orientações [100%]
-
+** Lorena
+*** IDEA Conferir se alternativa QCA é viável
+** Felipe
+*** WAIT Responder mensagem
 * Cecon [100%] :Group:
+
+** Nota 016 [0%]
+
+*** Conferir PMS
+Verificar se volume ou receita
 
 * Blog :@free:
 ** Tabela latex

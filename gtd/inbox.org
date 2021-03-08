@@ -18,3 +18,6 @@
 ** TODO Braindump them :Emacs:
 ** TODO Modelo Keynes com eutanásia do rentista
 ** TODO Rodar dados PIB
+** TODO Ler 9.2.3 Manual QCA
+** TODO Criar Source data frame
+** TODO Criar subheading de dados e outro para archive

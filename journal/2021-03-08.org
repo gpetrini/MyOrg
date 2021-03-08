@@ -1,0 +1,14 @@
+#+TITLE: Weekly Journal
+* segunda, 08/03/2021
+:PROPERTIES:
+:CREATED:  20210308
+:END:
+#+STARTUP: folded
+** 07:52 Atualização; sage e dac
+** 07:55 Academia
+** 11:54 Fim dados cecon; aguardando resposta PPZ; alimentando inbox
+** 14:06 Organização e git ssh
+** 15:42 Café da tarde
+** 16:03 Fim café da tarde
+** 16:13 Retorno leitura
+** 17:12 Louça

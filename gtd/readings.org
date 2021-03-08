@@ -94,6 +94,8 @@ After reading:
 #+begin_note
 *Description:* Captured entries
 #+end_note
+** <2021-03-08 seg> [[https://www.tandfonline.com/doi/abs/10.1080/00036846.2021.1885613][Forecasts of growth in US residential investment: accuracy gains from consume...]] :Panel:Residential:
+** <2021-03-05 sex> [[https://www.ecb.europa.eu/pub/financial-stability/fsr/special/html/ecb.fsrart202005_01~762d09d7a2.en.html][Trends in residential real estate lending standards and implications for fina...]] :QCA:DATA:DIRECTIONALS:
 ** <2021-03-04 qui> [[https://doi.org/10.1177%2F0010414008325433][The Logic of Historical Explanation in the Social Sciences - James Mahoney, E...]] :Lorena:
 ** [[https://academic.oup.com/jeea/article-abstract/2/6/1148/2280932?redirectedFrom=fulltext][Ehrmann and Worms - Bank Networks and Monetary Policy Transmission]] :OFF:NETWORK:ABM:
 
@@ -854,9 +856,11 @@ CLOSED: [2021-02-16 ter 16:12]
 
 *** DONE [[file:../notes/2021-03-01-10-56-42-lavoie_2001_Minsky.org][lavoie_2001_Minsky: Minsky's financial fragility hypothesis: a missing macroeconomic link? (2001, )]]
 CLOSED: [2021-03-02 ter 18:15]
-*** Ler Manual Lavoie
+*** ARCH Ler Manual Lavoie
+CLOSED: [2021-03-08 seg 14:05]
 *** DONE [[file:../notes/2021-03-02-10-54-46-pedrosa_2021_what.org][pedrosa_2021_what: To what extent does aggregate leverage determine financial fragility? New insights from an agent-based stock-flow consistent model (2021, )]]
 CLOSED: [2021-03-02 ter 18:16]
+*** READ Custódio et al
 ** IEE 898: [[file:../notes/20201203145735-macroeconomia_da_demanda_efetiva_na_abordagem_do_excedente.org][Macroeconomia da Demanda Efetiva na abordagem do excedente]]
 * Papers
 

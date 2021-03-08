@@ -60,3 +60,8 @@ Antes, tentativa de habilitar *wayland*
 ** 12:31 Fim leitura manual QCA, pesquisa de software elaboration sequence
 ** 12:48 Almoço
 ** 13:50 Louça e malas
+* sexta, 05/03/2021
+:PROPERTIES:
+:CREATED:  20210305
+:END:
+** 09:45 Atualização; Sage e Dac
