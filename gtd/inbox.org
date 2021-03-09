@@ -21,3 +21,7 @@
 ** TODO Ler 9.2.3 Manual QCA
 ** TODO Criar Source data frame
 ** TODO Criar subheading de dados e outro para archive
+** TODO Checar tema da aula do Summa e avisar ao Luiz
+** TODO Corrigir conflitos no refs.bib do projeto fapesp
+
+Procurar script do vim
