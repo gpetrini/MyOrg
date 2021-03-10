@@ -1622,3 +1622,148 @@ Resultados:
   + Atende corolário 2
   + Depende da estrutura de competição e distribuição do lucro (longo prazo)
 - Endividamento agregado não é uma boa proxy para fragilidade financeira :: Modelo micro-macro é necessário
+
+* Estrutura de capital <2021-03-10 qua>
+** Literatura da estrutura de capital
+
+As teorias da estrutura de capital estudam como as firmas /financiam/ ou /deveriam financiar/ suas operações.
+Diferente de estrutura da dívida, que trata da escolha de maturidade e preferência de instrumentos.
+Apesar do caráter aparentemente singelo do problema, o problema se manifesta de forma complexa e há pouco consenso a respeito dos determinantes da estrutura de capital.
+Financiamento do investimento passa pela composição da estrutura de capital $\Rightarrow$ conexão real-financeira.
+Duas teorias se destacam:
+- Teoria do /pecking order/ :: em função do problema da seleção adversa, as firmas preferem se financiar:
+  1. Utilizando recursos próprios
+  2. Se os recursos próprios forem insuficientes, por dívida
+  3. Se os recursos própróprios + dívidas forem insuficientes, /eventualmente/ por ações
+- Teoria do /trade-off/ :: firmas procuram balancear os ganhos tributários advindos da alavancagem com o peso morto proveniente do maior risco de insolvência que vem da maior alavancagem
+  + Premissa subjacente: a maximização dos ganhos transcende a firma em si, pois todos os investidores são incluídos na conta
+** Teorema de Modigliani-Miller
+
+Ambas as teorias descendem o teorema de Modigliani-Miller, que, partindo de uma economia com mercados completos e eficientes, em que não existem impostos, custos de falência e nenhuma assimetria de informação, /preconizada a irrelevância da estrutura de capital no valor de mercado de uma companhia/.
+O problema central é a escolha do financiamento por dívida ou por ações, para um dado fluxo de caixa esperado.
+No fundo, a escolha da estrutura de financiamento afetaria apenas a distribuição dos fluxos de caixa entre dividendo e juros.
+Modelo de caráter normativo, mas abriu portas para perguntas posteriores.
+** Teorias do /Trade-off/
+
+As estruturas tributárias dos países geralmente implicam que o pagamento de juros por parte das empresas gera deduções da base de cálculo do imposto de renda devido.
+Suponha que a alíquota marginal seja do imposto de renda sobre o lucro das firmas seja de 20%:
+- Se a alavancagem é nula, cada real ganho gera R$ 0.80 a ser distribuído na forma de dividendo
+- Se a alavancagem for tal que gere R$ 0.30 de desembolso financeiro por real gerado, os 20% incidirão sobre R$ 0.70. Portanto, cada ganho real pela empresa geraria R$0.86 de pagamento de dividendo
+  + Esse é o benefício da dívida
+
+Problema: Para gerar fluxo de caixa mais elevado para os investidores, é necessário maior dívida.
+Maior dívida implica maior risco de falência.
+- Dìvida como disciplina aos problemas de agência
+
+*** Estática e dinâmica
+
+- Versões estáticas :: otimização somente em um período
+- Versões dinâmicas :: considera-se otimização inter-temporal. Desvios em relação à meta são gradualmente eliminados ao longo do tempo.
+  + Implica que a alavancagem deve ser reversível à média $\Rightarrow$ não deveria ter raíz unitaŕia
+  + Como ocorre essa reversão à média não é exatamente claro: poderia ser por emissão/aquisição de ações, redução/aumento do investimento ou por ajustamento da taxa de retenção de lucro:
+#+BEGIN_latex
+\begin{equation}
+\dot l = (1-x-l)g^{i} - s_{f}(r-il)
+\end{equation}
+#+END_latex
+** Teorias do pecking order
+
+As teorias do /pecking order/ geralmente são explicadas a partir do problema de assimetria de informação.
+Pode ser derivados a partir de:
+- Modelos de seleção adversa $\Rightarrow$ proprietários/gerentes têm informações sobre o valor dos ativos, embora os financiadores não
+- Modelos de custo de agência $\Rightarrow$ conflito entre proprietários/gerentes
+- em geral, modelos simples
+
+A implicação mais controversa à preferência de emissão de dívida em relação à de ações.
+Pode-se dizer que esta teoria não é incompatível com a existência de metas para variáveis do balanço.
+As teorias do pecking order guardam muita semelhança ao que a maior parte dos PKs consideram do ponto de vista teórico.
+** Definição de alavancagem
+
+Market-based (/foward-looking/):
+
+#+BEGIN_latex
+\begin{equation}
+\Lambda_{mb} = \frac{\text{Valor de mercado da dívida total}}{\text{Valor de mercado do PL} + \text{Valor de mercado da dívida total}}
+\end{equation}
+#+END_latex
+
+Book (custo histórico):
+#+BEGIN_latex
+\begin{equation}
+\Lambda_{b} = \frac{\text{Dívida total (histórico)}}{\text{Valor histórico dos ativos}}
+\end{equation}
+#+END_latex
+** Teorias e predições
+
+
+*** Relações entre alavancagem e lucratividade
+
+- Trade-off :: ambígua, porém com viés de prever relação *positiva*
+  + Firmas mais lucrativas ganhariam mais com a disciplina imposta por endividamento elevado, evitando os problemas de agência evitando os problemas de agência decorrentes do maior montante de fluxo de caixas livres
+- Pecking-order :: prevê relação *negativa*
+
+*** Relação entre alavancagem e tamanho/idade
+
+- Trade-off :: Maior endividamento para firmas mais maduras e maiores
+  + Firmas mais velhas e maiores, menor custo de agência e menor risco de default
+- Pecking-order :: Menor endividamento para firmas mais maduras e maiores
+  + Firmas mais antigas acumulam maior lucros
+
+*** Relação entre alavancagem e crescimento
+
+- Trade-off :: relação negativa
+  + Quanto maior o crescimento esperado da firma, menor deve ser a alavancagem
+  + Reduz-se o problema de agência decorrente do potencial excesso de fluxos de caixa
+- Pecking-order :: relação positiva
+  + Crescimento $\Rightarrow$ maior necessidade de recursos $\Rightarrow$ maior necessidade de financiamento por dívida
+
+
+*** Relação entre alavancagem e impostos
+
+- Trade-off :: Positivo
+  + Eleva-se o benefício proveniente da dedução dos juros na base de cálculo dos impostos sobre os lucros
+- Pecking-order :: Positivo
+  + Maiores alíquotas de imposto sobre os lucros reduzem a capacidade de autofinanciamento
+** Fatores que afetam a alavancagem de forma mais robusta
+
+*** Firmas de capital aberto nos EUA
+
+1. As empresas que competem sem setores em que a empresa mediana tem alta alavancagem tendem a ter alta alavancagem
+2. As empresas que têm alta relação entre o mercado e o valor contábil tendem a ter níveis baixos de alavancagem
+3. As empresas que possuem mais ativos tangíveis tendem a ter alavancagem maior
+4. As empresas que têm mais lucros tendem a ter alavancagem menor
+5. As empresas maiores (medidas pelos ativos contábeis) tendem a ter alavancagem mais alta
+6. Quando se espera que a inflação seja alta, as empresas tendem a ter alavancagem mais alta
+
+** Estrutura de capital: Fatos estilizados
+
+1. Alavancagem agregada é estacionária em longos períodos
+2. Ao longo dos últimos 50 anos, os índices marcados a mercado giraram em torno de 32%
+   a. Este índice flutuou pouco
+3. No nível agregado, o investimento são muito próximos do autofinanciamento
+   a. Este não é o caso para as firmas pequenas
+4. No agregado, o díficit de financiamento é muito próximo da emissão de dívida. Há evidência disso para firmas grandes de capital aberto quanto fechado. No caso de firmas pequenas de capital aberto, o hiato de financiamento é geralmente coberto pela emissão de ações
+5. No agregado, a relação dividendo sobre ativos totais possui trajetória suave para todos os tipos de firmas
+   a. A taxa de dividendo é razoavelmente estável
+   b. Firmas grandes pagam mais dividendo que as pequenas
+6. Nos últimos 50 anos, reduziu-se drasticamente a detenção direta de títulos privados por parte das famílias, com aumento correspondente na intermediação financeira
+7. As famílias vêm sendo ofertantes líquidas de ações desde os anos 60. As corporações têm sido compradoras líquidas de ações desde os anos 80.
+   a. A maior parte das ações é detida por intermediários principalmente (seguradoras, fundos mútuos e de pensa)
+8. As empresas frequentemente ajustam suas dívidas. O hiato de financiamento tem algum papel nessas decisões. Porém, os fatores transversais tradicionais são mais importantes do que o déficit de financiamento
+9. Depois de um IPO, emissões de ações são mais importantes para as pequenas empresas do que para as grandes. Muitas grandes empresas raramente emitem novas ações em quantias significativas. Porém, quando fazem, as emissões podem ser grandes. Muitas pequenas empresas emitem ações com bastante frequência
+10. O endividamento das empresas é reversível à média da firma. A velocidade de reversão é objeto de debate
+11. No nível agregado, a reversão à média da alavancagem ocorre principalmente por meio de ações no mercado de dívida
+12. Fusões e aquisições são motivos mais comuns para saída do que falências e liquidações
+13. As condições de mercado têm algum efeito sobre as decisões de alavancagem. A magnitude e a durabilidade desses efeitos são objeto de debate
+
+** Conclusão
+
+A literatura sobre a estrutura de capital já explorou, com vasto repertório empírico, diversos elementos importantes para fazer teorias de fragilidade/instabilidade financeira.
+
+Três questões sobre essa literatura:
+1. Não precisa de fundamento neoclássico
+2. Teleologia excessiva por parte das firmas: em que medida elas realmente definem sua estrutura de capital?
+3. Relacionando, o baixo nível de integração de considerações de equilíbrio/desequilíbrio geral
+
+Suscinta-se a possibilidade de se explorar uma diversidade enorme de configurações com pressupostos e teorias mais robustas.
+Inclui-se a possibilidade de explorar mais robustez dos resultados minskianos considerando diferentes cenários no que tange as decisões de estrutura de capital.

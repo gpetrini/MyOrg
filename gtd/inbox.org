@@ -25,3 +25,4 @@
 ** TODO Corrigir conflitos no refs.bib do projeto fapesp
 
 Procurar script do vim
+** TODO Pesquisar literatura de estrutura de capital para os bancos $\Rightarrow$ Fundamentação teórica QCA

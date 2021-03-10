@@ -94,6 +94,9 @@ After reading:
 #+begin_note
 *Description:* Captured entries
 #+end_note
+** <2021-03-10 qua> [[https://www.cambridge.org/core/journals/journal-of-financial-and-quantitative-analysis/article/abs/determinants-of-capital-structure-capital-marketoriented-versus-bankoriented-institutions/0F08AA876248523B3D84E645178323DB][The Determinants of Capital Structure: Capital Market-Oriented versus Bank-Or...]] :CapitalStructure:DIRECTIONALS:QCA:
+** <2021-03-10 qua> [[https://www.brookings.edu/wp-content/uploads/2016/06/0129_capital_primer_elliott.pdf]] :QCA:DIRECTIONALS:CapitalStructure:
+** <2021-03-10 qua> [[http://faculty.haas.berkeley.edu/ross_levine/regulation.htm][Regulation Data]] :DATA:QCA:
 ** <2021-03-08 seg> [[https://www.tandfonline.com/doi/abs/10.1080/00036846.2021.1885613][Forecasts of growth in US residential investment: accuracy gains from consume...]] :Panel:Residential:
 ** <2021-03-05 sex> [[https://www.ecb.europa.eu/pub/financial-stability/fsr/special/html/ecb.fsrart202005_01~762d09d7a2.en.html][Trends in residential real estate lending standards and implications for fina...]] :QCA:DATA:DIRECTIONALS:
 ** <2021-03-04 qui> [[https://doi.org/10.1177%2F0010414008325433][The Logic of Historical Explanation in the Social Sciences - James Mahoney, E...]] :Lorena:
@@ -122,7 +125,9 @@ After reading:
 #+begin_note
 *Description:* QCA exclusively readings
 #+end_note
-
+*** READ [#A] [[https://ideas.repec.org/a/spr/qualqt/v53y2019i3d10.1007_s11135-018-0805-7.html][Schneider (2019) - Two-step QCA revisited: the necessity of context conditions]]
+*** READ [#A] [[https://journals.sagepub.com/doi/10.1177/0010414008325433][Mahoney et al (2009) - The Logic of Historical Explanation in the Social Sciences]]
+*** READ [#B] [[https://link.springer.com/article/10.1007/s11135-019-00893-7][Haesebrouck (2020) - An alternative update of the two-step QCA procedure]]
 ** [[file:../notes/20210210191017-panel_manuals.org][Panel Manuals]] :Panel:
 
 #+begin_note
@@ -870,6 +875,7 @@ CLOSED: [2021-03-02 ter 18:16]
 * Orientation
 ** Lorena (2021)
 ** Felipe (2021)
+*** [[https://onlinelibrary.wiley.com/doi/abs/10.1111/meca.12251][The financialization of the non‐financial corporation. A critique to the fina...]] :Orientacoes:Felipe:
 * Lectures
 * Off office
 
