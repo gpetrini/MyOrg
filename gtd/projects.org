@@ -12,7 +12,13 @@ CLOSED: [2021-02-22 seg 19:03]
 
 ** DONE Ver edital cotutela França
 CLOSED: [2021-02-28 dom 19:16]
-* QCA [11%] :Dissertation:
+
+* Fapesp
+** TODO Corrigir conflitos no refs.bib do projeto fapesp
+
+Procurar script do vim
+
+* QCA [10%] :Dissertation:
 ** TODO Ler seção 9.2.3 manual QCA
 ** TODO Ler sobre QCA em dois estágios
 ** TODO Organizar dados em uma tabela
@@ -41,6 +47,8 @@ CLOSED: [2021-02-28 dom 19:16]
 ** TODO [[http://www.finpolconsult.de/mediapool/16/169624/data/Housing_Finance/Europe/Low_Duebel_Sebag-Montefiori_EMF_Financial_Integration_03.pdf][Study on the Financial Integrationof European Mortgage Markets]] :DATASET:
 ** TODO Gráfico de Variedades de capitalismo residencial
 
+** TODO Criar Source data frame
+** TODO Pesquisar literatura de estrutura de capital para os bancos $\Rightarrow$ Fundamentação teórica QCA
 * Panel [20%] :Dissertation:
 
 ** DONE Ver Statista :Data:
@@ -64,9 +72,15 @@ CLOSED: [2021-02-28 dom 19:17]
 * ABM [0%] :Dissertation:
 
 ** TODO Completar anotações de aula Ítalo 24/02
-* VECM [100%] :Article:
+* VECM [0%] :Article:
 
 ** TODO Repensar data para escrever introdução VECM
+
+** TODO Pesquisar método utilizado por Poterba
+
+** TODO Ajustar gráfico centrado nas crises
+
+** TODO Corrigir seção 3
 
 * ABM dot-com [0/1] :@free:Article:
 ** TODO Concentration, Stagnation and Inequality:An Agent-Based Approach
@@ -74,15 +88,28 @@ CLOSED: [2021-02-28 dom 19:17]
 * Super e taxa de lucro :Article:@free:
 * Orientações [100%]
 ** Lorena
-*** IDEA Conferir se alternativa QCA é viável
+*** KILL Conferir se alternativa QCA é viável
+CLOSED: [2021-03-14 dom 17:03]
 ** Felipe
 *** WAIT Responder mensagem
 * Cecon [100%] :Group:
 
 ** Nota 016 [0%]
 
-*** Conferir PMS
-Verificar se volume ou receita
+
+*** TODO Escrever parágrafo explicando gráfico
+
+*** TODO Checar weekly tracker
+
+*** TODO Remover violin plots espelhados
+
+*** TODO Checar dados de variação de política de restrição
+
+**** Conferir Irlanda
+
+*** TODO Adicionar linha horizontal
+
+*** TODO Criar base estatística
 
 * Blog :@free:
 ** Tabela latex

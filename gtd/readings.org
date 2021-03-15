@@ -94,31 +94,6 @@ After reading:
 #+begin_note
 *Description:* Captured entries
 #+end_note
-** <2021-03-10 qua> [[https://www.cambridge.org/core/journals/journal-of-financial-and-quantitative-analysis/article/abs/determinants-of-capital-structure-capital-marketoriented-versus-bankoriented-institutions/0F08AA876248523B3D84E645178323DB][The Determinants of Capital Structure: Capital Market-Oriented versus Bank-Or...]] :CapitalStructure:DIRECTIONALS:QCA:
-** <2021-03-10 qua> [[https://www.brookings.edu/wp-content/uploads/2016/06/0129_capital_primer_elliott.pdf]] :QCA:DIRECTIONALS:CapitalStructure:
-** <2021-03-10 qua> [[http://faculty.haas.berkeley.edu/ross_levine/regulation.htm][Regulation Data]] :DATA:QCA:
-** <2021-03-08 seg> [[https://www.tandfonline.com/doi/abs/10.1080/00036846.2021.1885613][Forecasts of growth in US residential investment: accuracy gains from consume...]] :Panel:Residential:
-** <2021-03-05 sex> [[https://www.ecb.europa.eu/pub/financial-stability/fsr/special/html/ecb.fsrart202005_01~762d09d7a2.en.html][Trends in residential real estate lending standards and implications for fina...]] :QCA:DATA:DIRECTIONALS:
-** <2021-03-04 qui> [[https://doi.org/10.1177%2F0010414008325433][The Logic of Historical Explanation in the Social Sciences - James Mahoney, E...]] :Lorena:
-** [[https://academic.oup.com/jeea/article-abstract/2/6/1148/2280932?redirectedFrom=fulltext][Ehrmann and Worms - Bank Networks and Monetary Policy Transmission]] :OFF:NETWORK:ABM:
-
-** [[https://www.cfainstitute.org/en/research/foundation/2009/the-shadow-banking-system-and-hyman-minskys-economic-journey][McCulley (2010)]] :Inbox:ABM:NewNarrative:
-** Inequality, household debt and financial instability: An agent-based perspective :ABM:
-** Income inequality, consumer debt, and prudential regulation: An agent-based approach to study the emergence of crises and financial instability :ABM:
-** Post-Keynesian macroeconomic foundations for Comparative Political Economy :VoC:QCA:
-
-** [[https://academic.oup.com/oep/article-abstract/70/3/821/4948656?redirectedFrom=fulltext][Constraints on LTV as a macroprudential tool: a precautionary tale]] :LTV:QCA:
-
-** [[https://sci-hub.ren/https://doi.org/10.1146/annurev-financial-111914-041807][An Overview of Macroprudential Policy Tools]] :LTV:QCA:
-
-** [[https://www.bankofcanada.ca/wp-content/uploads/2017/11/fsr-november2017-bilyk.pdf][Analysis of Household Vulnerabilities using loan-level mortgage data]] :LTV:Calibration:QCA:
-
-** [[https://www.bis.org/publ/cgfs48.pdf][Operationalising the selection and application of macroprudential instruments]] :REF:QCA:
-
-** [[https://www.imf.org/en/Publications/WP/Issues/2016/12/31/Macroprudential-Policy-What-Instruments-and-How-to-Use-them-Lessons-From-Country-Experiences-25296][Macroprudential Policy : What Instruments and How to Use them? Lessons From Country Experiences]] :LTV:QCA:
-
-** [[https://www.sciencedirect.com/science/article/abs/pii/S1051137716300237][Housing finance and real-estate booms: A cross-country perspective]] :Data:QCA:
-** [[https://www.elibrary-areaer.imf.org/Macroprudential/Pages/ChapterQuery.aspx][Macroprudential Policy Survey]] :Data:
 * Dissertation
 
 ** [[file:../notes/20210216101138-qca_literature_review.org][QCA Literature Review]] :QCA:
@@ -138,6 +113,14 @@ After reading:
 #+begin_note
 *Description:* ABM exclusively readings
 #+end_note
+
+*** READ [#A] Income inequality, consumer debt, and prudential regulation: An agent-based approach to study the emergence of crises and financial instability :ABM:
+
+*** READ [#A] Inequality, household debt and financial instability: An agent-based perspective :ABM:
+*** WAIT [#C] [[https://www.cfainstitute.org/en/research/foundation/2009/the-shadow-banking-system-and-hyman-minskys-economic-journey][McCulley (2010)]] :Inbox:ABM:NewNarrative:
+*** MAYBE [#C] [[https://academic.oup.com/jeea/article-abstract/2/6/1148/2280932?redirectedFrom=fulltext][Ehrmann and Worms - Bank Networks and Monetary Policy Transmission]] :OFF:NETWORK:ABM:
+
+*** MAYBE [#C] [[https://sci-hub.ren/https://doi.org/10.1146/annurev-financial-111914-041807][An Overview of Macroprudential Policy Tools]] :LTV:QCA:ABM:
 
 ** Theoretical foundations of institutions
 *** READ [#A] Institutions and economic development: theory, policy and history :QCA:
@@ -519,6 +502,12 @@ CLOSED: [2021-02-26 sex 11:52]
 :KEY: cite:lacour-little_2010_Homea
 :FINISHED: [ ]
 :END:
+*** SKIM [#B] [[https://academic.oup.com/oep/article-abstract/70/3/821/4948656?redirectedFrom=fulltext][Constraints on LTV as a macroprudential tool: a precautionary tale]] :LTV:QCA:
+
+*** PARTIAL [#C] [[https://www.bis.org/publ/cgfs48.pdf][Operationalising the selection and application of macroprudential instruments]] :REF:QCA:
+
+*** SKIM <2021-03-10 qua> [[https://www.brookings.edu/wp-content/uploads/2016/06/0129_capital_primer_elliott.pdf]] :QCA:DIRECTIONALS:CapitalStructure:
+*** SKIM <2021-03-10 qua> [[https://www.cambridge.org/core/journals/journal-of-financial-and-quantitative-analysis/article/abs/determinants-of-capital-structure-capital-marketoriented-versus-bankoriented-institutions/0F08AA876248523B3D84E645178323DB][The Determinants of Capital Structure: Capital Market-Oriented versus Bank-Or...]] :CapitalStructure:DIRECTIONALS:QCA:
 ** [[file:../notes/20210210190446-variaeties_of_capitalisms.org][Varieties of Capitalisms]] :VoC:
 
 *** PARTIAL [#A] [[https://global.oup.com/academic/product/debating-varieties-of-capitalism-9780199569663?cc=us&lang=en&#][Debating Varieties of Capitalism]] (Colection)
@@ -819,7 +808,11 @@ CLOSED: [2021-02-16 ter 16:12]
   :FINISHED: [ ]
   :END:
 
+*** Post-Keynesian macroeconomic foundations for Comparative Political Economy :VoC:QCA:
+
 ** [[file:../notes/20210210092103-residential_investment_determinants.org][Residential investment determinants]] :Residential:
+*** MAYBE <2021-03-08 seg> [[https://www.tandfonline.com/doi/abs/10.1080/00036846.2021.1885613][Forecasts of growth in US residential investment: accuracy gains from consume...]] :Panel:Residential:
+*** WAIT [#B] <2021-03-05 sex> [[https://www.ecb.europa.eu/pub/financial-stability/fsr/special/html/ecb.fsrart202005_01~762d09d7a2.en.html][Trends in residential real estate lending standards and implications for fina...]] :QCA:DATA:DIRECTIONALS:
 ** [[file:../notes/20210210092940-household_debt_and_bank_credit.org][Household debt and Bank credit]] :Debt:
 *** PARTIAL [#A] HOUSEHOLD DEBT IN OECD COUNTRIES: STYLISED FACTS AND POLICY ISSUES :OECD:Panel:
    :PROPERTIES:
@@ -839,11 +832,18 @@ CLOSED: [2021-02-16 ter 16:12]
 *Part to read:*
 - Chapter 2
 - Chapter 5
+*** PARTIAL [#C] [[https://www.bankofcanada.ca/wp-content/uploads/2017/11/fsr-november2017-bilyk.pdf][Analysis of Household Vulnerabilities using loan-level mortgage data]] :LTV:Calibration:QCA:
+
 ** [[file:../notes/20210210091758-house_prices.org][House Prices]] :Prices:
 *** ARCH [#C] [[https://www.kansascityfed.org/PUBLICAT/ECONREV/PDF/2q07rapp.pdf][Rappaport - A Guide to Aggregate House Price Measures]] :USA:HousePrices:
+*** READ [#B] [[https://www.sciencedirect.com/science/article/abs/pii/S1051137716300237][Housing finance and real-estate booms: A cross-country perspective]] :Data:QCA:DIRECTIONALS:Panel:
 ** New Narrative :NewNarrative:
 ** Data :Data:
 
+*** WAIT [#C] <2021-03-10 qua> [[http://faculty.haas.berkeley.edu/ross_levine/regulation.htm][Regulation Data]] :DATA:QCA:
+*** WAIT [#C] [[https://www.imf.org/en/Publications/WP/Issues/2016/12/31/Macroprudential-Policy-What-Instruments-and-How-to-Use-them-Lessons-From-Country-Experiences-25296][Macroprudential Policy : What Instruments and How to Use them? Lessons From Country Experiences]] :LTV:QCA:ABM:SCENARIOS:
+
+*** WAIT [[https://www.elibrary-areaer.imf.org/Macroprudential/Pages/ChapterQuery.aspx][Macroprudential Policy Survey]] :Data:Institutional:Panel:QCA:
 * Journals
 
 #+CAPTION: Journal abbreviations

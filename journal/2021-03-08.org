@@ -36,3 +36,15 @@
 ** 17:53 Retornando
 ** 18:16 Ajustando referências macroimobiliária
 ** 19:03 Anotando ideias e encerrando trabalhos; git commit
+* quinta, 11/03/2021
+:PROPERTIES:
+:CREATED:  20210311
+:END:
+** 09:36 Atualização; sage e dac
+** 10:06 Cecon
+* sexta, 12/03/2021
+:PROPERTIES:
+:CREATED:  20210312
+:END:
+** 10:01 Leitura Artigo VEC
+** 11:09 Retorno a nota do Cecon

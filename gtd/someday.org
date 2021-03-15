@@ -64,3 +64,9 @@ CLOSED: [2021-03-02 ter 17:13]
 * Vincular ao social path
 * TODO Criar pacote python com funções encontradas na internet
 ** Vincular ao social-paths?
+* TODO Criar IDs nas anotações :Emacs:OrgRoam:
+* TODO Função para criar IDs (ver org-roam) :Emacs:OrgRoam:
+* TODO [[https://www.ecb.europa.eu/pub/pdf/other/euhousingmarketsen.pdf][Structuralfactors in the euhousing markets]] :Emacs:OrgRoam:
+** TODO Como incluir IDs nos templates
+* TODO Ver documentação org-roam V2 :Emacs:OrgRoam:
+* TODO Criar subheading de dados e outro para archive :Emacs:Readings:

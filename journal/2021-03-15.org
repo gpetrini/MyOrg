@@ -1,0 +1,11 @@
+#+TITLE: Weekly Journal
+* segunda, 15/03/2021
+:PROPERTIES:
+:CREATED:  20210315
+:END:
+#+STARTUP: folded
+** 09:41 Atualizando o sistema, sage e dac
+** 10:05 Reiniciando o computador e compilando emacs
+** 14:29 Correção VECM seção 3
+** 16:56 Fim correções VECM; Início cecon
+** 18:42 Fim do expediente. git commit

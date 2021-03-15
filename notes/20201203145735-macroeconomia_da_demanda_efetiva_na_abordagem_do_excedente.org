@@ -1718,3 +1718,216 @@ Quadrilemma:
 - Aizenman :: Reservas
 - Steiner :: "Relaxing the trilemma" e intervenção no mercado cambial.
 - Frankel :: Systematic managed floating.
+
+* Abordagem da taxa de juros em economia aberta: criticas aos teoremas de taxa de juros <2021-03-11 qui>
+
+** Equação geral e mercado de câmbio
+
+A taxa do câmbio é determinado pelo excesso de demanda/oferta no mercado de câmbio.
+Esse mercado de câmbio no modelo é expresso por uma equação derivada do balanço de pagamentos.
+
+#+BEGIN_latex
+\begin{equation}
+BP_{t} = CA_{t} + KA_{t} + FA_{t} = 0
+\end{equation}
+#+END_latex
+
+#+BEGIN_latex
+\begin{equation}
+FA_{t} = F_{LR} + F_{SR} - \Delta R
+\end{equation}
+#+END_latex
+- $F_{LR}$: Fluxos de longo prazo ("autônomos" em relação ao diferencial de juros)
+- $F_{SR}$: são os fluxos de curto prazo influenciados pelo diferencial de juros (inclui a variação na posição dos bancos que atuam no mercado de câmbio)
+- $\Delta R$: corresponde a variação de reservas decorrente de intervenções do BC
+
+
+Reescrevendo o fluxo de curto-prazo como função do *diferencial de juros*:
+
+#+BEGIN_latex
+\begin{equation}
+F_{SR} = \gamma\left(\frac{(1+i_{t})}{(1+i^{*})(1+\rho)\left(\frac{E^{e}_{t+1}}{E}\right)}-1\right)
+\end{equation}
+#+END_latex
+
+Se definirmos a taxa de câmbio como a variável endógena e a isolarmos:
+
+#+BEGIN_latex
+\begin{equation}
+\frac{E^{e}_{t+1}}{E_{t}} = \frac{\left(\frac{(1+i_{t})}{(1+i^{*})(1+\rho)\left(\frac{E^{e}_{t+1}}{E}\right)}\right)}{1+\left(\frac{\Delta R - CA - KA - F_{LR}}{\gamma}\right)}
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+E_{t} = \frac{E^{e}_{t+1}\left(1+\left(\frac{\Delta R - CA - KA - F_{LR}}{\gamma}\right)\right)}{\left(\frac{(1+i_{t})}{(1+i^{*})(1+\rho)\left(\frac{E^{e}_{t+1}}{E}\right)}\right)}
+\end{equation}
+#+END_latex
+
+** Teoremas da paridade da macro convencional
+
+Como já visto, além da mobilidade perfeita do capital em economia aberta, a macroeconomia /mainstream/ adota a hipótese de substutibilidade perfeita de capital.
+- Ativos domésticos e estrangeiros são substitutos perfeitos
+
+No modelo, isso equivale a:
+
+$\gamma \to \infty; \pho\to0$
+- Fluxos de longo prazo perdem importância
+de modo que
+
+#+BEGIN_latex
+\begin{equation}
+\frac{E^{e}_{t+1}}{E_{t}} = \frac{(1+i)}{(1+i^{*})}
+\end{equation}
+#+END_latex
+
+*** Paridade coberta
+
+No modelo Mundell-Fleming (estático), não há expectativa de variação cambial:
+
+#+BEGIN_latex
+\begin{equation}
+E^{e}_{t+1} = E_{t}
+\end{equation}
+#+END_latex
+com isso, chega-se a BP horizontal:
+#+BEGIN_latex
+\begin{equation}
+i_{t} = i^{*}_{t}
+\end{equation}
+#+END_latex
+
+Com a hipótese da substitutibilidade perfeita de capital e expectativa estática da variação do câmbio, chegamos a uma taxa  de juros doméstica determinada à taxa de juros internacional:
+- É a base do suposto "Trilema" para a política monetária
+- O ajuste em caso de choques vai depender do regime de câmbio:
+  + Câmbio fixo :: ajuste via LM (oferta de moeda)
+  + Câmbio flexível :: ajuste via IS (exportações líquidas)
+
+*** Paridade descoberta
+
+Reintroduzindo às expectativas, tem-se a paridade descoberta
+#+BEGIN_latex
+\begin{equation}
+\frac{E^{e}_{t+1}}{E_{t}} = \frac{(1+i)}{(1+i^{*})}
+\end{equation}
+#+END_latex
+Se $i>i^{*}$, então pela hipótese de substitutibilidade perfeita $E^{e}> E$ (erradamente interpretado como uma hipótese de não-arbitragem)
+
+Com expectativa dada e não dependente do câmbio corrente, a taxa de juros aqui pode ser entendida como determinada novamente pela taxa de juros internacional e a variação esperada da taxa de juros.
+Novamente, entende-se que a política monetária perde autonomia perde autonomia (trilema).
+
+#+BEGIN_latex
+\begin{equation}
+(1+i) = (1+i^{*})\frac{E^{e}}{E}
+\end{equation}
+#+END_latex
+
+*** Determinantes da expectativa cambial
+
+Agentes acreditam que vale a paridade do poder de compra no longo prazo.
+A variação esperada do câmbio é dada pela diferença nas taxas de inflação doméstica e estrangeira:
+
+#+BEGIN_latex
+\begin{equation}
+\frac{E^{e}}{E} = \frac{(1+\pi)}{(1+\pi^{*})}
+\end{equation}
+#+END_latex
+
+Se juntarmos a paridade descoberta com a paridade de compra, chegamos a paridade da taxa real de
+juros:
+#+BEGIN_latex
+\begin{equation}
+\frac{(1+i)}{(1+\pi)} = \frac{(1+i^{*})}{(1+\pi^{*})}
+\end{equation}
+#+END_latex
+A taxa (nominal) de juros se torna endógena à inflação doméstica e taxa real de juros internacional
+
+*** Resumo
+- Substitutabilidade perfeita de capitais + expectativa exógena de variação do câmbio = paridade descoberta da taxa de juros
+- Paridade descoberta da taxa de juros + paridade do poder de compra = paridade da taxa de juros real
+
+Problemas empíricos (Lavoie, 2000 e Sarno, 2005):
+- Hipótese de substitutabilidade perfeita de capitais pouco realista (risco-país)
+- Taxa de câmbio costuma apreciar quando diferencial de juros é positivo (“UIP failure” e carry trade)
+- Taxa de câmbio real é geralmente uma variável não estacionária (PPP costuma não valer empiricamente)
+- E mesmo que valesse, pode-se dizer que a causalidade é do câmbio para os preços
+- Expectativa de câmbio tem caráter estabilizador, o que não parece realista (haveria um equilíbrio de longo prazo)
+
+** Interpretação alternativa para dinâmica câmbio juros
+*** Alterando hipóteses do modelo
+
+1. Mercado internacional de capitais é imperfeito:
+   a. Não há mobilidade perfeita de capitais (regulação, tributação, etc.)
+   b. Ativos domésticos e internacionais não são substitutos perfeitos (há por exemplo o risco-país capturado pelo EMBI, CDS...)
+   c. Logo, não há entrada infinita de capitais se o diferencial de juros for positivo
+   d. $\gamma \not \infty; \pho \neq 0$
+2. A expectativa de variação do câmbio é “elástica”: ou seja, a expectativa presente do câmbio não é independente de observações passadas
+   a. Se apreciou, agentes podem esperar que continue apreciando
+   b. Se depreciou, agentes podem esperar que continue depreciando
+   c. Choques exógenos podem reverter essa tendência
+   d. Dinâmica do câmbio torna-se muito mais instável
+3. Taxa de juros é exógena e flutuação do câmbio é suja
+   a. Taxa de juros doméstica não é endógena como no modelo Mundell-Fleming
+   b. Como não há substitutibilidade perfeita, não há paridade descoberta de juros
+   c. A dinâmica do câmbio impõe limites à política monetária, mas Banco Central pode alterar essa dinâmica intervindo com juros ou reservas
+   d. Não existe um regime puro de câmbio fixo ou flutuante: regime de “flutuações administradas” (Frankel, 2019)
+
+
+#+BEGIN_latex
+\begin{equation}
+E^{e}_{t+1} = E^{e}_{t} + \beta(E_{t-1} - E^{e}_{t}) \Rightarrow \sum_{j=i}^{\infty} \beta(\beta-1)^{j-1}E_{t-j}
+\end{equation}
+#+END_latex
+Para simplificar a exposição, vamos assumir β = 1. Isso é equivalente a assumir que para j > 1 as a taxa de câmbio era constante (expectativas adaptativas “ingênuas”).
+
+#+BEGIN_latex
+\begin{equation}
+E^{e}_{t+1} = E_{t-1}
+\end{equation}
+#+END_latex
+As expectativas podem ser modeladas de forma mais complexas, incluindo choques de expectativas de curto prazo, por exemplo (ver Lavoie e Daigle, 2011)
+
+Reescrevendo a equação geral
+
+#+BEGIN_latex
+\begin{equation}
+E_{t} = \frac{E_{t-1}\left(1+\left(\frac{\Delta R - CA - KA - F_{LR}}{\gamma}\right)\right)}{\left(\frac{(1+i_{t})}{(1+i^{*})(1+\rho)\left(\frac{E^{e}_{t+1}}{E}\right)}\right)}
+\end{equation}
+#+END_latex
+Esta equação define a dinâmica do câmbio de acordo com a abordagem proposta:
+- A taxa de juros doméstica é exogenamente fixada pelo Banco Central
+- Os fluxos de longo prazo importam na determinação dessa trajetória
+- É uma equação em diferença de primeiro grau homogênea
+- A trajetória tende a ser instável (Banco Central pode suavizar)
+- Não há um câmbio de equilíbrio de longo prazo: a partir de uma situação de equilíbrio, um choque vai iniciar um processo contínuo de variação cambial
+
+** O Piso para a Taxa de Juros
+Iremos definir o piso para a taxa de juros doméstica como sendo aquela taxa que zera a variação da taxa de câmbio (tudo o mais constante), isto é, $E_{t} = E_{t-1}$:
+#+BEGIN_latex
+\begin{equation}
+i^{floor} = [(1+i^{*})(1+\rho)][\frac{1}{\gamma}(\Delta R - CA - KA - F_{LR})] -1
+\end{equation}
+#+END_latex
+O piso de referência para a taxa de juros dependerá positivamente do juros internacional e
+do risco-país.
+- Fluxos de longo prazo positivo (por exemplo, balança comercial favorável), tendem a reduzir esse piso
+- Intervenções do BC vendendo reservas no mercado de câmbio também auxiliam a reduzir a o piso para a política monetária
+
+** Limites assimétricos para a política monetária
+
+
+Se o BC mantém $i>I^{floor}$ indefinidamente, um processo permanente de apreciação cambial vai ocorrer. Para conter esse processo, o BC pode acumular reservas e não há limite para se acumular reservas.
+É mais complicado se o BC quiser manter $i<i^{floor}$. Neste caso, um processo de depreciação cambial terá início. Para conter esse processo, o BC precisa se desfazer de reservas, contudo o seu estoque de reservas é limitado. Logo, a posição abaixo do piso pode não ser uma opção.
+
+** Liquidez internacional e taxa de juros
+
+O risco-país $rho_{t$} foi até o momento assumido como exógeno
+
+- Mas a literatura empírica aponta que grande parte desse movimento do risco-país é endógena às condições de liquidez internacional
+- Variáveis como preço de commodities, juros internacionais e volatilidade de mercados internacionais explicam grande parte desse movimento comum das séries de risco-país
+- Esse é um resultado similar ao que alguns autores Novo-Keynesianos identificam como uma dependência da política monetária interna às condições internacionais de liquidez
+- Rey (2016) renomeia o trilema como um dilema. Ou seja, num contexto de livre mobilidade de capitais, as condições de crédito doméstica serão determinadas por essas condições externas (resultado similar a uma taxa de juros doméstica endógena). Por isso a necessidade de controle de capitais para a política monetária voltar a ter autonomia
+- Mas nós já vimos pela nossa equação que as condições internacionais afetam o piso de referência para a taxa de juros, mas que o BC pode muito bem fixar a taxa de juros em outro patamar (claro que há limites)
+
+** Flutuação suja e intervenção do Banco Central
+
+** Mercados futuros, especulação e intervenção do BC nesses mercados
