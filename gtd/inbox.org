@@ -3,3 +3,4 @@
 #+AUTHOR: Gabriel Petrini
 #+SETUPFILE: /HDD/Org/org-html-themes/org/theme-readtheorg.setup
 * Tasks
+** TODO Pesquisar como otimizar insync no ubuntu

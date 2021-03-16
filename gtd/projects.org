@@ -94,22 +94,34 @@ CLOSED: [2021-03-14 dom 17:03]
 *** WAIT Responder mensagem
 * Cecon [100%] :Group:
 
-** Nota 016 [0%]
+** Nota 016 [22%]
 
 
 *** TODO Escrever parágrafo explicando gráfico
 
 *** TODO Checar weekly tracker
 
-*** TODO Remover violin plots espelhados
+*** DONE Remover violin plots espelhados
+CLOSED: [2021-03-16 ter 17:24]
 
 *** TODO Checar dados de variação de política de restrição
 
 **** Conferir Irlanda
 
-*** TODO Adicionar linha horizontal
+*** DONE Adicionar linha horizontal
+CLOSED: [2021-03-16 ter 17:24]
 
 *** TODO Criar base estatística
+
+*** TODO Identificar data de início das ondas
+
+- [ ] Ver como selecionar pontos de inflexão
+
+  =infl <- c(FALSE, diff(diff(out)>0)!=0)=
+
+*** TODO Suavizar de acordo com o script do Marcelo
+
+*** TODO Ver páginas indicadas pelo PPZ
 
 * Blog :@free:
 ** Tabela latex
