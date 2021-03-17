@@ -1767,3 +1767,230 @@ Três questões sobre essa literatura:
 
 Suscinta-se a possibilidade de se explorar uma diversidade enorme de configurações com pressupostos e teorias mais robustas.
 Inclui-se a possibilidade de explorar mais robustez dos resultados minskianos considerando diferentes cenários no que tange as decisões de estrutura de capital.
+
+* Sustentabilidade do endividamento e a tipologia minskiana <2021-03-17 qua>
+** Introdução
+
+Mensuração de fragilidade financeira, desenvolvendo a escala de fragilidade de Minsky:
+- Escala de fragilidade engenhosa, com significados subexplorados
+- Dificuldade de como adaptar o conceito a estudos empíricos
+- Trata-se, no fundo, de um conceito de sustentabilidade patrimonial
+
+Aplicações empíricas recentes:
+- Mostra pouca aderência a HIF
+- Ressalta heterogeneidades (distribuições) ocultadas nas versões mais agregadas da HIF
+** Escala da fragilidade financeira na definição de Minsky
+
+Conceito de sustentabilidade dos balanços patrimoniais: dívida não pode superar ativos, ou a sobrevivência econômica da unidade é afetada.
+- *Ênfase de Minsky:* descasamento temporal potencial entre fluxo de caixa (incerto) e compromissos financeiros (certos)
+- A princípio, aplicável a qualquer unidade econômica
+- Escala de fragilidade: hedge $\Rightarrow$ especulativo $\Rightarrow$ Ponzi
+
+*** Hedge
+
+Os fluxos de caixa /esperado/ de uma unidadesuperam, com alguma folga, os pagamentos contratuais das dívidas em aberto
+- Conceito claramente intertemporal
+- Esse tipo de unidade econômica consegue acumular recursos financeiros $\Rightarrow$ geralmente possui boa liquidez no balanço
+- Há pouca suscetibilidade às condições de mercado, principalmente em relação à taxa de juros. Só uma quebra tremenda de expectativas ameaçaria a sobrevivência desse tipo de unidade.
+**** Exemplo
+- Por hipótese :: taxa de juros anual de empréstimo 5%
+- Taxa de desconto :: 1
+- Investimento :: R$10000, metade financiado por dívida
+- Compromisso financeiro :: R$260,83 por período
+- Valor presente :: R$20000. Líquido :: R$9739,15
+- Tipo de firma :: hedge
+
+*** Especulativo
+
+Em /alguns períodos/, as saídas de caixa para saldar dívida superam as entradas.
+Nesse sentido,
+
+**** Exemplo
+:PROPERTIES:
+:ID:       0aef4ef8-31ac-4d3c-aedf-eb70e9c67335
+:END:
+- Por hipótese :: taxa de juros anual de empréstimo 5%
+- Taxa de desconto :: 1
+- Fluxo de caixa :: R$50 nos três primeiros anos. R$250 nos quatro próximos. R$1450 nos anos seguintes
+- Investimento :: R$10000, metade financiado por dívida
+- Compromisso financeiro :: R$260,83 por período
+- Valor presente :: R$20000. Líquido :: R$9739,15
+- Tipo de firma :: Especulativo
+
+*** Ponzi
+
+A unidade Ponzi é um tipo especial de firma especulativa, para a qual os fluxos de caixa esperados de curto prazo não cobrem sequer o pagamento de juros.
+Logo, a firma deve buscar empréstimos inclusive para rolar o pagamento dos juros.
+Firma Ponzi não é inviável necessariamente.
+De fato, sua operação está condicionada ao fato de que os agentes esperem que o valor presente líquido de seus projetos seja positivo.
+Porém, há maior suscetibilidade às variações das condições de mercado.
+
+**** Exemplo
+- Por hipótese :: taxa de juros anual de empréstimo 5%
+- Taxa de desconto :: 1
+- Fluxo de caixa :: zero nos três primeiros anos. R$100 nos dez próximos. R$2714,29 nos anos seguintes
+- Investimento :: R$10000, metade financiado por dívida
+- Compromisso financeiro :: R$260,83 por período
+- Valor presente :: R$20000. Líquido :: R$9739,15
+- Tipo de firma :: Ponzi
+*** Agregando projeto em uma unidade
+
+Imagine que uma mesma unidade tenha no balanço os três projetos de investimento anteriores.
+Firma Hedge.
+
+[[file:../figs/2021_03_17_IEE882.png]]
+*** O que afeta a fragilidade financeira?
+Alguns elementos que afetam a fragilidade financeira:
+- Estrutura da dívida: dívida mais de curto prazo, mais fragilidade
+  + Problemas aparece eclipsado na discussão do paradoxo da dívida
+- Fluxo de caixa: quanto maior expectativa do fluxo de caixa (taxa de lucro maior), menor fragilidade
+- Distribuição temporal do fluxo de caixa: projeto de mais longa maturação, maior fragilidade
+- Menor financiamento por dívida: menor fragilidade
+- Menor taxa de juros: menor fragilidade
+- Pode ser interpretada para qualquer projeto de investimento (real ou financeiro)
+- Cada unidade econômica possui projetos de investimento superpostos no passado
+- Agregando todos os projetos efetivados por uma unidade econômica, pode-se obter o estado financeiro desta unidade
+- Agregando o financeiro de todas as unidades de um setor, obteríamos o grau de fragilidade desse setor
+** Formalização do Foley
+
+A formalização da tipologia minskiana por Foley (2003) é, no fundo, uma interpretação que avança na compreensão da escala de fragilidade financeira e da fragilidade financeira em si.
+Ela contribui de três formas:
+- Formula o problema claramente em termos da sustentabilidade da dívida
+- Inclui explicitamente o investimento no tratamento
+- Retira parte da subjetividade que torna proibitivo aplicações empíricas da escala
+
+Trata-se de uma versão condensada da dinâmica do balanço de pagamento patrimonial, que pode ser expandida.
+Além disso, há simplificações analíticas que podem ser relaxadas.
+*** Lendo a partir da contabilidade
+
+|--------+----------|
+| Ativos | Passivos |
+|--------+----------|
+| K      | CT       |
+| AL     | PL       |
+|--------+----------|
+em que:
+- CT :: capital de terceiros
+- PL :: Patrimônio líquido
+- K :: estoque de capital (proxy de todos os ativos não financeiros)
+- AL :: Ativos líquidos (financeiros)
+
+#+BEGIN_latex
+\begin{equation}
+\Delta CT + \Delta PL = \Delta K + \Delta AL
+\end{equation}
+#+END_latex
+**** Variação do passivo
+
+#+BEGIN_latex
+\begin{equation}
+\Delta CT_{t} + \Delta PL_{t} = \Delta s p_{s} + NL - AM + CG + F_{u}
+\end{equation}
+#+END_latex
+em que:
+- $\Delta D = NL - AM$ :: variação da dívida é igual aos novos empréstimos ($NL$) menos amortizações (AM). Essa rúbrica é afetada pela estrutura da dívida, sujeita aos instrumentos de financiamento disponíveis no mercado
+- CG :: ganhos de capital, que podem vir de ativos financeiros detidos pelo agente, desvalorização de passivos marcados a mercado, bem como de reavaliações dos ativos não financeiros detidos
+- $F_{u}$ :: lucro líquido (de impostos, despesas financeiras, depreciação) retido
+
+***** Extendendo lucro retido
+
+#+BEGIN_latex
+\begin{equation}
+F_{u} = \Pi + nAL - \delta K_{t-1} - iD_{t-1} - F_{d} - T_{t}
+\end{equation}
+#+END_latex
+em que:
+- $\Pi$ :: Lucro operacional bruto
+- n :: taxa média de juros do ativo líquido
+- $\delta$ :: taxa média de depreciação
+- K :: Estoque de capital no início do período
+- iD :: pagamento de juros sobre a dívida
+- Fd :: Lucros distribuídos (dividendos)
+- T :: imposto de renda sobre o lucro
+**** Variação do ativo
+
+#+BEGIN_latex
+\begin{equation}
+\Delta ANF + \Delta AL = I - \delta K_{t-1} + \Delta AL_{t}
+\end{equation}
+#+END_latex
+A rigor, o investimento bruto inclui P&D.
+Porém, P&D só aumenta o estoque de ativos se alterar o /goodwill/ ou gerar alguma patente.
+**** Dinâmica do balanço patrimonial
+
+#+BEGIN_latex
+\begin{equation}
+\Deta s p_{s} + NL - AM + GG + \Pi + nAL - iD - F_{d} - T = I + \Delta AL
+\end{equation}
+#+END_latex
+
+Na formulação do Foley, $\Delta s = CG = F_{d} = T = 0$
+
+#+BEGIN_latex
+\begin{equation}
+NL - AM + \Pi + nAL - iD = I + \Delta AL
+\end{equation}
+#+END_latex
+Além disso, ele trata da dívida líquida de ativos financeiros e agrega todo o serviço financeiro (amortização + pagamento de juros).
+$D$, portanto, representa a dívida líquida de ativos financeiros:
+#+BEGIN_latex
+\begin{equation}
+\Deta D + \Pi = I + rD
+\end{equation}
+#+END_latex
+Finalmente, para tempo contínuo:
+#+BEGIN_latex
+\begin{equation}
+\dot D + \Pi = I + rD
+\end{equation}
+#+END_latex
+
+Os três estados financeiros:
+- Hedge :: $\Pi > I + rD$, de forma que $\dot D <0$. O fluxo de caixa da firma cobre o investimento e o serviço da dívida, logo, há ou redução da dívida ou aumento do ativo líquido
+- Especulativo :: $\Pi \geq rD \land \Pi < I + rD$, o que implica $\dot D \geq 0$. O fluxo de caixa cobre o serviço da dívida, mas parte do investimento é financiado por dívida ou redução do ativo líquido. Ainda assim, o patrimônio líquido sobre. Se houver racionamento de crédito a firma consegue cortar investimento, o que confere a esta firma uma certa margem de segurança
+- Ponzi :: $\Pi < rD$ de forma que $\dot D > I$. O patrimônio líquido cai. A firma Ponzi deve convencer os credores de que gerará receitas nos futuros.
+**** Em taxas de crescimento
+
+Se supusermos uma trajetória de crescimento estável, em que os ativos da firma cresçam a uma taxa constante, $A(t) = A_{0}\exp^{g}$.
+Passando a versão básica do modelo para taxas de crescimento, temos que:
+#+BEGIN_latex
+\begin{equation}
+D(t) = \left(D_{0} -\frac{g-\rho}{g-r}A_{0}\exp^{rt}\right) + \frac{g-\rho}{g-r}A_{0}\exp^{gt}
+\end{equation}
+#+END_latex
+Em vez de tratar do nível da dívida, é conveniente tratar da dinâmica da alavancagem ($\phi = D/A$):
+#+BEGIN_latex
+\begin{equation}
+\phi(t) = \phi^{*} + (\phi_{0} - \phi^{*})\exp^{(r-g)t}
+\end{equation}
+#+END_latex
+onde:
+#+BEGIN_latex
+\begin{equation}
+\phi^{*} = \frac{g-\rho}{g-i}
+\end{equation}
+#+END_latex
+e $\rho$ é o ROA; $r$ é o serviço da dívida sobre o ativo total.
+Quando a firma fica insolvente ($\phi>1$)?
+- Caso 1 :: quando $g>r$ quando $t\to\infty$, $\lim_{t\infty}(\phi_{0} - \phi^{\star})\exp^{(r-g)t} = 0$. Logo, $\phi \to \phi^{\star}$
+  + Caso $\phi^{\star} > 1$ haverá instabilidade
+  + Caso $r>g$ quando $\phi^{0} > \phi^{\star}$ - Instabilidade
+  + Neste caso, é preciso relacionar taxa de lucro e a taxa de crescimento
+    - Hedge :: Se $\rho > g \Leftrightarrow \rho > g > r, \phi^{\star} < 0$
+    - Ponzi :: Se $r> \rho$ e $\phi^{\star} > 1$ dado $g> \rho$
+    - Especulativo :: $\rho > r$ (logo, $g > \rho> r$). Há incentivo para aumentar $g$, o que implica algum aumento da dívida para ampliar $I$. Assintóticamente, a taxa de crescimento da dívida é a mesma do crescimento dos ativos.
+- Caso 2 :: se $r>g$, o segundo termo domina e, a princípio, poderíamos convergir para $\phi \pm \infty$
+  + Dado $r>g$, o denominador de $\phi^{\star}$ é negativo
+  + Para onde converge depende do sinal de $\phi_{0}$ em relação a $\phi^{\star}$
+** Aspectos empíricos: caso dos EUA
+*** Objetivo
+
+Confrontar os corolários das diversas interpretações da teoria  minskiana com os dados.
+Pergunta central: quão bem indicadores de alavancagem aproximam a fragilidade financeira?
+Estratégias empíricas:
+- aproximar a teoria minskiana o máximo possível
+- séries longas
+- evitar dropar pontos de dados
+- micro e macro
+- análise de tendência
+- economia dos EUA escolhida por conta de maior disponibilidade de dados
