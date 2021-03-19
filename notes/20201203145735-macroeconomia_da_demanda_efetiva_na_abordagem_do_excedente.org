@@ -1931,3 +1931,132 @@ O risco-país $rho_{t$} foi até o momento assumido como exógeno
 ** Flutuação suja e intervenção do Banco Central
 
 ** Mercados futuros, especulação e intervenção do BC nesses mercados
+
+* O Novo Consenso e a alternativa do supermultiplicador sraffiano em economias fechadas e abertas <2021-03-18 qui>
+
+** Modelo do Novo Consenso para economia fechada e remendos
+
+*** O Modelo do Novo Consenso
+
+Três equações:
+1. Curva IS
+2. Curva de Phillips Aceleracionista
+3. Regra de Política Monetária
+
+Além disso,
+- Produto potencial exógeno e independente da demanda agregada: $Y^{\star} = F(K,L)$
+- Taxa natural de juros:
+  + Produto igual ao produto de pleno-emprego
+  + Equilibra investimento e poupança de pleno-emprego
+  + Relação inversa entre consumo e investimento no longo-prazo
+  + Compatível com inflação estável
+
+*** Remendos ao modelo do Novo Consenso
+
+- Estagnação secular
+  + Poupança potencial ($S^{\star}$) e desigualdade estrutural; Investimento e crescimento populacional
+  + Taxa natural real é negativa
+- Fricções financeiras (/financial wedge/)
+  + Aumento do /spread/ financeiro (empréstimos, títulos, /equity premium/) e desalavancagem das famílias
+  + Taxa natural real é positiva mas neutra, de política é negativa
+- Limite zero da taxa de juros
+  + Case sem wedge :: $i - \pi = r_{n} < 0 \Rightarrow i < r_{n} + \pi$
+  + Casom com wedge :: $i - \pi = r_{n} -f < 0 \Rightarrow i < r_{n} + \pi -f$
+- Fim da maldição aceleracionista
+** Crítica ao arcabouço teórico do modelo do Novo Consenso remendado
+*** Taxa de juros natural (secular) negativa
+
+- Estagnação secular: Taxa natural real negativa?
+- Produto marginal do capital negativo: aumento do estoque de capital reduz produto?
+- Consumo futuro é preferível ao presente?
+- Curva não vai abaixo de zero
+- Taxa nominal negativa?
+  + Palley (2019), Di Bucchianico (2020): dinheiro, bens e ativos existentes não teriam remuneraçãonominal negativa
+  + Política monetária não convencional ($i<0$) não resolve
+*** Estagnação secular e fricções financeiras
+
+- Problemas com a posição da curva de investimento:
+  + Petri (2013; 2015)
+    - Produto marginal decrescente do capital implica outro fator é fixo: força de trabalho em pleno emprego
+    - Mas na estanação, há desemprego do trabalho
+  + Investimento não pode ser função do produto potencial se a taxa de juros maior que a natural. Fatores que afetam o produto potencial também não
+  + Capacidade e poupança de pleno emprego tmabém é endógena
+- Problemas com inclinação da curva de investimento:
+  + Teóricos: Garagnani (1978-9) - funções bem comportadas?
+  + Empíricos: difícil encontrar elasticidade-juros do investimento produtivo significativa
+** A alternativa do Supermultiplicador Sraffiano em economia fechada e a estagnação
+
+Abandonar elasticidade-juros do investimento:
+- Substituir por acelerador flexível:
+  + $I = v(d+g^{e})Y$
+  + $g^{e} = xg_{-1} + (1-x)g^{e}_{-1}
+
+Abandonar substituição dos fatores:
+
+#+BEGIN_latex
+\begin{equation}
+Y^{\star} = \min(K/v, N/l)
+\end{equation}
+#+END_latex
+
+
+Parcela salarial é função de /financial wedge/
+#+BEGIN_latex
+\begin{equation}
+\omega = 1 - v(r+f)
+\end{equation}
+#+END_latex
+
+
+Produto e capacidade:
+#+BEGIN_latex
+\begin{equation}
+\frac{K}{v} = Y^{\sltar} = Y = \frac{A_{0} - \alpha(r+f_{a}) + G}{1 - (1-v(r+f_{i})(1-t)) - v(d+z)}
+\end{equation}
+#+END_latex
+
+*** Implicações
+- Taxa "natural" é que o Banco Centra fixar (Aspromourgos (2007))
+- Não há trade-off de longo-prazo entre consumo e investimento
+- Keynes: I $\Rightarrow$ S; Super: I $\Rightarrow S^{\star}$
+- Estagnação:
+  + Wage-share caiu
+  + Gastos do governo estagnados (Fair (2018), Cynamon and Fazzari (2018))
+  + Bolhas alavancadas e recessão (Jordà et all (2015), Mian and Sufi (2015))
+  + Histerese e efeitos da demanda no longo prazo (Stirati el all (2020))
+- Modelo ainda pode incluir a curva de Phillips aumentada pelo conflito
+  + Com baixo poder de barganha dos trabalhadores, não é aceleracionista
+    - Serrano (2019), Summa e Braga (2020)
+
+** Modelo do novo consenso para economia aberta
+
+Quatro equações:
+1. Curva IS (+ exportações líquidas dependendo do câmbio real)
+2. Curva de Phillips aceleracionista (neutralidade da economia aberta)
+3. Regra de política monetária (não deve considerar taxa de câmbio)
+4. Paridade descoberta de juros + Expectativas racionais de Paridade de Poder de Compra (PPP) $\Rightarrow$ Paridade de juros real
+
+Além disso,
+- Produto potencial exógeno, independente da demanda agregada
+- Resultados muito parecidos com os da economa fechada
+
+** A alternativa do Supermultiplicador Sraffiano em economia aberta
+
+Summa (2016) com quatro equações:
+1. "Curva IS" (Juros e gastos autônomos, acelerador flexível)
+2. "Curva de Phillips" (inércia parcial e câmbio não neutro)
+3. Regra de política monetária (juros nominal e meta de inflação)
+4. Câmbio - juros (taxa de juros exógena, expectativas elásticas e substutibilidade imperfeita)
+
+Resultados:
+- BC controla inflação com variação do câmbio nominal
+- Taxa de juros nominal (e real) depende da meta de inflação, da inflação externa, da taxa de juros internacional + risco país
+  + Banco Central perde mais um grau de liberdade para fixar taxa de juros com meta de inflação, interdependência com variáveis externa
+- Produto e capacidade dependem da meta de inflação, da inflação externa, da taxa de juros internacional + risco paíse
+
+*** Pivetti (2019, p. 175)
+
+#+begin_quote
+Finally, interest rates are often dictated to this or that country by the need to check outflows of funds incompatible with the exchange-rate policy and regime chosen by its authorities.
+In sum, as has already been stressed in section 2 above, interest-rate determination can be properly described in terms of sets of objectives and constraints, on the action of the monetary authorities, which have different weights both among the various countries and for a specific country at different times.
+#+end_quote

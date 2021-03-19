@@ -94,6 +94,7 @@ After reading:
 #+begin_note
 *Description:* Captured entries
 #+end_note
+** <2021-03-19 sex> [[http://saeb.feaa.uaic.ro/index.php/saeb/article/view/1480][House Price Shock and Business Cycle: The French Case | Saad | Scientific Ann...]] :Panel:HousePrices:BusinessCycle:
 * Dissertation
 
 ** [[file:../notes/20210216101138-qca_literature_review.org][QCA Literature Review]] :QCA:
@@ -814,6 +815,7 @@ CLOSED: [2021-02-16 ter 16:12]
 *** MAYBE <2021-03-08 seg> [[https://www.tandfonline.com/doi/abs/10.1080/00036846.2021.1885613][Forecasts of growth in US residential investment: accuracy gains from consume...]] :Panel:Residential:
 *** WAIT [#B] <2021-03-05 sex> [[https://www.ecb.europa.eu/pub/financial-stability/fsr/special/html/ecb.fsrart202005_01~762d09d7a2.en.html][Trends in residential real estate lending standards and implications for fina...]] :QCA:DATA:DIRECTIONALS:
 ** [[file:../notes/20210210092940-household_debt_and_bank_credit.org][Household debt and Bank credit]] :Debt:
+*** READ [#A] [[https://www.oxfordhandbooks.com/view/10.1093/oxfordhb/9780199640935.001.0001/oxfordhb-9780199640935-e-025][Systemic Risk in Banking: An Update - Oxford Handbooks]] :QCA:Banking:
 *** PARTIAL [#A] HOUSEHOLD DEBT IN OECD COUNTRIES: STYLISED FACTS AND POLICY ISSUES :OECD:Panel:
    :PROPERTIES:
    :ZOTERO:   Yes

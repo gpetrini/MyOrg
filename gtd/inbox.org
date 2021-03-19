@@ -4,4 +4,6 @@
 #+SETUPFILE: /HDD/Org/org-html-themes/org/theme-readtheorg.setup
 * Tasks
 ** TODO Pesquisar como otimizar insync no ubuntu
-** TODO Checar se o script feito para o Zotero ainda esta ativo
+** TODO Pesquisar economática no github
+** TODO Ver sobre componente principal
+** TODO Ver Lattice LSD

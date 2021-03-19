@@ -92,40 +92,24 @@ CLOSED: [2021-02-28 dom 19:17]
 CLOSED: [2021-03-14 dom 17:03]
 ** Felipe
 *** WAIT Responder mensagem
+*** TODO Ver sobre componente principal
 * Cecon [100%] :Group:
 
-** Nota 016 [40%]
+** Nota 016 [20%]
 
 
 *** TODO Escrever parágrafo explicando gráfico
 
-*** DONE Checar weekly tracker
-CLOSED: [2021-03-17 qua 16:44]
+*** DONE Criar base estatística
+CLOSED: [2021-03-19 sex 17:20]
 
-*** DONE Remover violin plots espelhados
-CLOSED: [2021-03-16 ter 17:24]
-
-*** KILL Checar dados de variação de política de restrição
-CLOSED: [2021-03-17 qua 16:44]
-
-**** Conferir Irlanda
-
-*** DONE Adicionar linha horizontal
-CLOSED: [2021-03-16 ter 17:24]
-
-*** STRT Criar base estatística
-
-*** STRT Identificar data de início das ondas
-
-- [ ] Ver como selecionar pontos de inflexão
-
-  =infl <- c(FALSE, diff(diff(out)>0)!=0)=
-
-*** TODO Suavizar de acordo com o script do Marcelo
+- Ver se é possível criar abas no excel por países com groupby
 
 *** TODO Ver páginas indicadas pelo PPZ
 
-*** TODO Incluir logo no gráfico de serviços
+*** TODO Remover pontos boxplots
+
+*** TODO Inline results
 
 * Blog :@free:
 ** Tabela latex

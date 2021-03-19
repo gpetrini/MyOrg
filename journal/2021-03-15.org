@@ -14,3 +14,8 @@
 :CREATED:  20210316
 :END:
 ** 18:28 Fim do expediente. git commit
+* quinta, 18/03/2021
+:PROPERTIES:
+:CREATED:  20210318
+:END:
+** 11:33 Fim reestruturação do capítulo do Cecon; Correções VECM

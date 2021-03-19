@@ -5,13 +5,9 @@
 *** [[http://cachestocaches.com/feed][Cache to caches]]
 ** economics                                                    :economics:
 *** [[https://voxeu.org/feed/recent/rss.xml][VOXeu]]
-*** [[http://eyeonhousing.org/tag/macroeconomics/feed/][Eye on Housing]]
-*** [[https://macroblog.typepad.com/macroblog/atom.xml][Fred Atlanta]]
-*** [[https://www.economist.com/united-states/rss.xml][The Economist USA]]
-*** [[https://www.economist.com/the-americas/rss.xml][The Economist Americas]]
-*** [[https://www.economist.com/china/rss.xml][The Economist China]]
-** programming                                                  :programming:
+** programming :programming:
 *** [[https://programminghistorian.org/feed.xml][programming historian]]
+*** [[http://feeds.feedburner.com/RBloggers?format=xml][R-blogers]]
 ** PhD                                                          :phd:
 *** [[http://feeds.feedburner.com/posgraduando?format=xml][Pós Graduando]]
 * Journals                                                           :elfeed:

@@ -1,0 +1,116 @@
+#+OPTIONS: num:nil
+#+title: ASE/RoSE/FfSE meeting on journal publishing
+#+date: <2021-03-19 sex>
+#+author: Amitava Dutt, Roberto Veneziani
+#+LANG: en
+
+[[file:20210319130612-workshops.org][Workshops]]
+
+
+* Write your paper
+
+** The ideal structure
+
+- Introduction :: say what you are going to say
+- Main text :: say it
+- Conclusions :: say that you've said it
+
+** Shorter is -- ceteris paribus -- better
+
+#+begin_quote
+How much do I have to do and time do I have to spend for the amount of *insigh* I'll recieve
+#+end_quote
+
+
+- Think of writing like sculpting: take a big chunck of material out there and then start sculpting away
+- Put secondary, but still relevant material in the Appendix (/e.g./ certain proofs)
+- Put secondary and only marginally relevant material in an Addendum to the published online (/e.g./ robustness check, special cases, proof of independence of axioms, code)
+
+** Clearly state your key contribution
+
+What is different, new and original?
+This should be clear in the Abstract and after at most the first three pages of the paper.
+
+** Write carefully
+
+- Quality of the writing
+- Structure
+- Headers and titles not in english
+- Check the paper and check again
+- Write well, if not elegantly
+- Choose the right language: read papers in your field
+- Show awareness of the literature (classic and recent)
+  + Do not cite only the recent literature
+
+** Major offense nr 1 - Plagiarism and self-plagiarism
+
+- Typical offenses: blatant copy and paste, translations, movements across fields
+  + Similarity software
+  + Borderline cases
+- Be careful in referencing others and clarity your contribution
+- Self-plagearism is also really problematic
+* Get your paper out
+** Circulate and get feedback
+
+- Present your paper in your department and to your peers
+- Go to conferences and seminars
+- Send your paper to experts in the field: worst case scenario you do not get any feedback
+** Only finished papers, please
+
+
+- Only evaluated paper and not in progress paper
+* Aim well!
+** Get the info...
+
+- Journals statistics :: turnaround time, rejection rate, etc
+- Editorial board :: people in your field and/or sympathetic to your approach/topic/methodology.
+- If in doubt *contact the editors* :: it saves everyone's time if you ask whether the topic is within the journal's remit
+- Be on the lookout of special issue
+** ... then choose ...
+
+- The only battle that is lost for sure is the one that is not fought: if you not in a hurry to publish, start aiming high
+- Do not submit randomly
+- A good strategy is to identify the audience and then submit to a journal that reaches that audience
+** ... and clearly signal that you've chosen wisely
+
+Cite relevant papers appeared in the relevant journal
+** Major offense nr.2 - multiple submissions
+* The submission process
+
+** Read, think, then read again
+
+- Read the instructions (/e.g./ rules of anonymising the paper and length)
+  + Saves time
+- For online submission: check carefully the pdf/html version. It is your responsibility to make sure that everything is Ok
+- No need to write cover letters starting that you are submitting a paper
+  + If you allowed to suggest referees, you might as well do it: finding referees is always a challenge.
+  + But it is wise not to suggest your material grandfather and it is even wiser not to request that the paper be sent to someone
+
+** Be patient but not too patient
+
+- Do not contact Editors after 3 weeks. Usually, yours is not the only paper under review
+- But if it takes too long, you should contact the editor. Papers do not fall through the cracks
+- The golden rule of the stock of five papers
+
+* After you get the news
+
+** The R & R verdict
+
+- Read the decision message and the referee reports *carefully*. And if something is not clear, contact the editors
+- Provide a detailed reply to the referees & Editors explaining all of the changes made (and not made)
+- Do your best to incorporate all suggestions.
+  + If you disagree with some comments, indicates how you dealt with it in the paper. Maybe you need to strength the argument
+- Do not be confrontational
+- Take your time to revise the paper but do not take too long. Check any deadlines and contact the editors if necessary
+- If the reports point in opposite directions, or contain factual mistakes that make the revision difficult: contact editors
+
+** The dreaded rejection
+
+- If the paper is rejected, move on.
+  + The decision is irreversible
+- The refereeing process is not a voting mechanism
+- Take into account the referees' comments even if you send the paper otherwise
+- You may encounter the same referees
+** A final, friendly suggestion
+
+- If you are sent an article to review, ACCEPT the invitation and the "do a good job and do it by the deadline given to you".
