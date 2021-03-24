@@ -21,7 +21,7 @@
 PhD Student 29 Euros for 2 years
 * ATTR [#A] Comprovante ADUNICAMP (RPPS) :Research:
 
-* ATTR Criar repositório github :Orientacoes:Lorena:
+* TODO Criar repositório github :Orientacoes:Lorena:
 
 * TODO HTML setup file org-roam-export style css :Emacs:
 
