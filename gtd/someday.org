@@ -23,8 +23,6 @@ PhD Student 29 Euros for 2 years
 
 * WAIT Criar repositório github :Orientacoes:Lorena:
 
-* WAIT Responder mensagem sobre nota do projeto :Orientacoes:Felipe:
-
 * TODO HTML setup file org-roam-export style css :Emacs:
 
 * TODO Instalar pandoc citeproc :Emacs:
@@ -38,12 +36,6 @@ PhD Student 29 Euros for 2 years
 
 - Issue created
 
-* TODO Compare configs [0/3] :Emacs:
-
-- [X] https://github.com/zzamboni/dot-doom
-- [X] https://github.com/PythonNut/quark-emacs
-- [ ] http://pages.sachachua.com/.emacs.d/Sacha.html
-
 * TODO Ver por que Emacs fica lento depois de um tempo de uso :Emacs:
 - Company?
 - GCC fica levemente lento com company mode
@@ -54,14 +46,11 @@ PhD Student 29 Euros for 2 years
 * TODO Pesquisar waiting for git at emacs start up :Emacs:
 * TODO Garrafa Térmica :@Home:
 * TODO mu4e filtrar contatos :Emacs:
-* TODO DT go to GTD files :Emacs:
 * TODO Configurar Configurações como org :@Free:Computer:
 * CANC Instalar Manjaro :Computer:@Free:
 CLOSED: [2021-03-02 ter 17:13]
 * TODO FIX: checkboxes org-roam-server :Emacs:OrgRoam:
-* TODO Ver https://www.reddit.com/r/emacs/comments/lttvwh/orgpopup_take_notes_in_cool_way/?utm_medium=android_app&utm_source=share :Emacs:
 * TODO Org-citeproc :Emacs:
-* TODO Vincular ao social path
 * TODO Criar pacote python com funções encontradas na internet
 ** Vincular ao social-paths?
 * TODO Criar IDs nas anotações :Emacs:OrgRoam:

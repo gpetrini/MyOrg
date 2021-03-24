@@ -109,22 +109,13 @@ CLOSED: [2021-03-14 dom 17:03]
 - Análise :: Foco na suficiência e necesidade; menos na equação minimizada
 
 ** Felipe
-*** WAIT Responder mensagem
-*** TODO Ver sobre componente principal
-*** TODO Pesquisar economática no github
 *** TODO Ver sobre componente principal
 * Cecon [100%] :Group:
 
-** Nota 016 [0%]
+** Nota 016 [42%]
 
 
 *** TODO Escrever parágrafo explicando gráfico
-
-*** TODO Ver páginas indicadas pelo PPZ
-
-*** TODO Remover pontos boxplots
-
-*** TODO Inline results
 
 *** TODO Gráficos dos estados brasileiros
 
@@ -143,6 +134,15 @@ CLOSED: [2021-03-14 dom 17:03]
 - [[https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/codebook.md][codebook]]
 
 *** WAIT Colocar Logo na tabela do auxílio emergencial
+*** DONE Inline results
+CLOSED: [2021-03-24 qua 09:50]
+
+*** DONE Remover pontos boxplots
+CLOSED: [2021-03-24 qua 09:49]
+
+*** DONE Ver páginas indicadas pelo PPZ
+CLOSED: [2021-03-24 qua 09:49]
+
 * Blog :@free:
 ** Tabela latex
 ** Programas para desenho de diagramas

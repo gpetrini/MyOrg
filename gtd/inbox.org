@@ -4,3 +4,6 @@
 #+SETUPFILE: /HDD/Org/org-html-themes/org/theme-readtheorg.setup
 * Tasks
 ** TODO Aceitar parecer Economia e Sociedade
+** TODO Ver gcc emacs grupo telegram
+** TODO Ver possibilidade do proficiência com diploma do VM
+** TODO Set token with magit
