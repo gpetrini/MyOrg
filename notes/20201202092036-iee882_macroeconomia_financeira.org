@@ -1994,3 +1994,179 @@ Estratégias empíricas:
 - micro e macro
 - análise de tendência
 - economia dos EUA escolhida por conta de maior disponibilidade de dados
+
+* Interconexão setoriais, agregados e formação de redes <2021-03-26 sex>
+
+VER SLIDES
+
+** Definição do problema e perguntas
+
+*Definição:* instabilidade financeira é um fenômeno relativamente raro, de potencial pernicioso considerável, de manifestação macroeconômica, decorrente do acumúmulo de fragilidade financeira, a qual não necessariamente poderá ser observada confiavelmente por meio de agregados macroeconômicos.
+
+Perguntas em aberto:
+- Sob que condições a fragilidade financeira se acumula?
+- O aumento da fragilidade financeira é intrínseco aos ciclos econômicos? Se não, sob que circunstâncias um aumento de fragilidade torna mais provável crises financeiras?
+-
+** Macroeconomia e fragilidade financeira
+*** Fechamentos do modelo
+
+Resultados dos modelos micro-macro estão sujeitos ao fechamento macroeconômico.
+Exemplo:
+- Pecking-order e trade-off podem resultar em diferentes trajetórias de endividamento para cada fechamento
+
+Modelos micro-macro tendem a não reconhecer explicitamente esse problema.
+O ponto central é:
+- Macrodinâmica informa muito bem sobre *leis de movimento* do capitalistmo
+- Micro-macro dinâmica permite analisar mudança endógena de forma mais satisfatória
+*** Implicação da interdependência entre setores institucionais
+
+Os setores institucionais são interdependentes.
+Felizmente, isso esta bem colocado por Minsky e Godley.
+
+Em Godley (1999), a análise da economia norte-americana se valeu principalmente de um identidade contábil básica de uma economia aberta:
+
+#+BEGIN_latex
+\begin{equation}
+NL_{g} + NL_{p} + NL_{e} = 0
+\end{equation}
+#+END_latex
+A partir de atribuição de causalidades (via interpretaçção das informações + demanda como propulsora da produção), muitos acreditam que Godley antecipou alguns dos principais elementos das crises vindouras.
+No fundo, o pressuposto de Godley é o mesmo que de Minsky: uma curva de endividamento-fragilidade financeira positivamente inclinada.
+Já vimos que não é geral.
+
+Heterogeneidade importa: com muita frequência o problema ocorre de forma muito localizada.
+*** Os modelos PK-SFC
+
+A literatura SFC trata dessa questão $\Rightarrow$ frequentemente diz-se que esses modelos podem "gerar" crises financeiras.
+Resumindo: quem está tentando lidar com o problema não o está resolvendo, porque parte de premissa equivocada sobre possibilidade de estudar fragilidade financeira de forma agregada e ainda tem questões teóricas muito complicadas.
+*** Hierarquia de dívidas
+
+As interconexões entre os setores institucionais, demonstrada a partir da contabilidade, mostram que o endividamento setorial é interdependente.
+Os próprios modelos SFC registram isso muito bem.
+Mas a partir disso tomam a hipótese minskiana como válida: pensam ainda no setor das firmas.
+
+Pode ser mais amplo $\Rightarrow$ endividamento público vs privado.
+Mais recentemente, aparecem inclusive evidências demonstrando que a desalavancagem do setor privado propele endividamento do setor público.
+Estatização indireta da dívida privada.
+
+O problema é que nem todas as dívidas são iguais.
+Governos nacionais soberanos emitem moeda em sua própria dívida e fixam a taxa de juros: "bonûs" da forma de configuração do sistema produtivo, monetário e financeiro internacional.
+Austeridade pode envolver troca de dívida pública por dívida privada.
+*** Maior das hierarquias: endividamento externo
+
+Problemas relacionados a economia aberta e estrição externa eram pouco ressaltadas por Minsky, são pouco ressaltadas na literatura minskiana e não se falou quase nada sobre isso no curso.
+Por isso mesmo, cabe ressaltar que restrição externa acontece e pode ser explicado por meios microeconômicos.
+** Envididamento agregado e fragilidade financeira
+
+*** Por que alavancagem não é fragilidade financeira?
+
+Em que medida indicadores de alavancagem agregada podem apontar para a evolução da fragilidade financeira?
+- Um pouco: endividamento aumentando sempre que dar indício de que algum processo insustentável está acontecendo
+- Considerando hierarquia das dívidas:
+  + Endividamento crescendo no setor das famílias parece pior que o endividamento crescendo no setor das firmas.
+    Agregado tende a importar mais.
+  + Endividamento do setor das firmas não costuma chegar a ser trágico de um ponto de vista macro $\Rightarrow$ muito mecanismo de ajuste e agregado tende a importar menos
+  + Endividamento público absorve o privado
+  + Endividamento externo: muito sujeito a questões estruturais e decisões de política econômica
+
+*** Exemplo de uma transição e mudança de fragilidade: recompra de ações
+
+Recompra de ações por caixa existente. Acionistas não alavancados.
+
+#+CAPTION: Acionistas
+|----------------+--------------|
+| Ativo          | Passivo + PL |
+|----------------+--------------|
+| Ações   -100   |              |
+| Depósitos +100 |              |
+|----------------+--------------|
+
+#+CAPTION: Empresa
+|----------------+--------------|
+| Ativo          | Passivo + PL |
+|----------------+--------------|
+| Depósitos -100 |              |
+|                | PL - 100     |
+|----------------+--------------|
+
+Recompra de ações por caixa existente. Acionistas alavancados. Usar dinheiro para pagar dívida.
+
+#+CAPTION: Acionistas
+|----------------+--------------|
+| Ativo          | Passivo + PL |
+|----------------+--------------|
+| Ações   -100   |              |
+| Depósitos +100 |              |
+| Depósitos -100 |              |
+|                | Dívida -100  |
+|----------------+--------------|
+
+#+CAPTION: Empresa
+|----------------+--------------|
+| Ativo          | Passivo + PL |
+|----------------+--------------|
+| Depósitos -100 |              |
+|                | PL - 100     |
+|----------------+--------------|
+
+#+CAPTION: Banco
+|-------------+----------------|
+| Ativo       | Passivo + PL   |
+|-------------+----------------|
+| Dívida -100 |                |
+|             | Depósito - 100 |
+|-------------+----------------|
+
+Acionista: menos frágil. Banco menos frágil. Firma mais frágil.
+O saldo líquido do que acontece com a fragilidade financeira do sistema depende da condição inicial do agente.
+
+**** Conclusão
+
+- Transações econômicas mudam a distribuição da fragilidade
+- Transações parecidas
+** Fragilidade financeira e ciclo
+
+O aumento da fragilidade financeira é intrínseco aos ciclos de atividade econômica?
+- Não. Como colocar o problema dessa forma parece exagerado
+- Ciclos podem muito bem ter origens reais e ter repercursão financeira
+- Turning points que acontecem a partir de questões financeiras parecem ser pouco mais raros
+- Repercursão financeira às vezes piora substancialmente a recessão, tornando-as também mais longevas.
+** Como acontecem os episódios de instabilidade?
+*** Liquidez, fragilidade financeira, crise e política econômica
+
+- Fragilidade $\neq$ instabilidade
+- Canal do juros evocado por Minsky parece ser menos importante: racionamento de crédito por quantidade é muito mais importante.
+- Crises têm um aspecto em comum importante: elevação forte da aversão ao risco $\Rightarrow$ quebra de liquidez de maior parte dos ativos
+- Contexto: Bancos centrais e quantitative easing $\Rightarrow$ Crise financeira clássica?
+** Redes financeiras
+
+Para capturar realmente fragilidade financeira, deve-se observar o fenômeno com foco mais microeconômico.
+Além das questões de distribuição da dívida e dos fluxos de caixa, há a questão das formações de redes financeiras.
+
+Redes financeiras $\Rightarrow$
+*** Caracterização
+
+- Nós :: atores financeiros
+- Links :: contratos ou outras relações entre agentes
+- Redes multiplex :: múltiplas camadas
+
+Estruturas das redes financeiras são mutáveis no tempo.
+** Mensagens do curso a partir de Minsky/literatura minskiana
+
+- Muitas questões perspicazes, formuladas de forma interessante
+- Formulações, contudo, precisam de muito avanço e de muito mais procura por consenso
+- O que é bom?
+  + Micro-macro
+  + Importância do setor financeiro
+  + Interconexões entre setores institucionais
+  + Riqueza institucional
+  + Incorporação da estrutura temporal que relacionaos fluxos de caixa e os desembolsos financeiros na macro
+- O que não é tão bom?
+  + A macro/algumas hipóteses comportamentais
+  + Exagero na importância das finanças como causador de ciclo e de crise
+  + A herança keynesiana de que a relação real-financeira se dá a partir do investimento empresarial
+  + Sobre expectativas, misturar visão de mundo com nível de abstração
+  + Sobre interpretações: o raio minskianizador
+- Para estudar economia: relacionar questões abstratas e concretas. É necessário conhecer teoria e evidência
+- Conhecimento técnico: fundamental e incontornável. O problema não se encerra ai, tampouco deve ser contornado com argumentos pouco convincentes
+- Acoplar demanda efetiva + insights pós-keynesianos sobre finanças + heterogeneidade $\Rightarrow$ incipiente

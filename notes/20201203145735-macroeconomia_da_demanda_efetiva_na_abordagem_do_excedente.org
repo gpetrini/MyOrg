@@ -2060,3 +2060,175 @@ Resultados:
 Finally, interest rates are often dictated to this or that country by the need to check outflows of funds incompatible with the exchange-rate policy and regime chosen by its authorities.
 In sum, as has already been stressed in section 2 above, interest-rate determination can be properly described in terms of sets of objectives and constraints, on the action of the monetary authorities, which have different weights both among the various countries and for a specific country at different times.
 #+end_quote
+
+* A Política Fiscal na Macroeconomia da Demanda Efetiva <2021-03-25 qui>
+
+** Setor público
+
+- Economia: Dividir entre setor público e privado
+  + Arbitrário
+  + Brasil: Definição de setor público *não financeiro*
+    - Inclui Banco Central
+    - Exclui BNDES, BB e Caixa
+
+
+*** Identidade do setor público
+
+#+BEGIN_latex
+\begin{equation}
+G + F = T + \Delta H + \Delta D
+\end{equation}
+#+END_latex
+
+** Conceito de déficit público
+
+#+BEGIN_latex
+\begin{equation}
+\overbrace{G - T + Tr + iD_{-1}}^{Acima} = \underbrace{\Delta H + \Delta D}_{Abaixo}
+\end{equation}
+#+END_latex
+
+- Acima da linha :: Gasto com o setor privado
+- Abaixo da linha :: Forma de financiamento
+
+
+Variação de estoque = fluxo real + mudança no valor do estoque inicial
+- Fluxos = Variação do estoque + perda no valor do estoque inicial
+- Moeda = Fluxo de emissão de moeda
+  + Variação do estoque de moeda real que é possuído pelo setor privado
+  + Desvalorização do estoque inicial de moeda
+- Perda de valor:
+  + Estoque de moeda:  $\frac{H_{-1}}{P_{-1}}\frac{\pi}{1+\pi}$
+  + Estoque de dívida: $\frac{D_{-1}}{P_{-1}}\frac{\pi}{1+\pi}$
+
+
+EQUACAO
+- Déficit nominal :: NSFP
+  + Quanto maior inflação, maior o déficit nominal
+- Déficit real :: Imposto inlacionário
+- Déficit operacional :: Contabilizar a desvalorização da dívida pública como ganho de capital
+- Abaixo da linha :: Variações reais no estoque da dívida
+- Acima da linha :: Fluxo de gastos menos receita bruta de impostos
+- Déficit mede o que? ::
+  + Acima da linha :: Impacto do governo da demanda agregada
+  + Abaixo da linha :: Variação da dívida?
+
+** Gastos, déficit público e impacto na Demanda Agregada
+
+* Finanças Funcionais e MMT: Uma avaliação a partir da teoria do supermultiplicador <2021-04-01 qui>
+
+** Finanças Funcionais (Abba Lerner e W. Vickrey)
+
+Núcleo teórico:
+- Demanda efetiva no curto prazo (produto potencial neoclássico)
+- Inflação de custo e conflito
+- Moeda estatal (mas moeda exógena)
+
+*** Modelo de Lerner
+
+- Síntese neoclássica sem obstáculos monetários ao Pleno-Emprego (neoclássico)
+- Governo deve fazer políticas que sejam funcionais para levar ao Pleno Emprego (parábola da direção do carro)
+- Função de investimento neoclássica (curva IS)
+- Moeda exógena (curva LM)
+- Inflação de demanda e inflação de conflito ("low Full Employment", "High full employment")
+
+*** Recomendações de política econômica
+
+- Políticas keynesianas de gasto para atingir produto de pleno emprego (monetária e fiscal)
+  + Evitar desemprego e inflação de demanda
+  + Se gasto total é inadequado (produto abaixo/acima do potencial)
+  + Três maneiras do governo controlá-lo
+    - Gastar mais (ou menos)
+    - Induzir pessoas a gastar mais (ou menos): mudar renda disponível por transferências ou impostos
+    - Induzir público a gastar mais (ou menos) variando taxa de juros
+- Política de renda para inflação de custos
+- Não há uma política ótima, deve se adequar aos problemas e situações específicas
+
+*** Resumo
+- Governo nunca quebra e sua própria moeda
+  + Governo sempre tem como emitir sua própria moeda no montante necessário para alcançar o nível de gastos compatível com o produto potencial
+  + Não precisa cobrar impostos ou emitir títulos para gastar
+- Finanças devem ser funcionais para atingir o pleno emprego
+- Desfaz-se a ideia convencional que o governo toma emprestado para poder gastar
+  + Governo precisa apenas emitir moeda para poder gastar
+  + Emissão de títulos: importante para controlar a taxa de juros (e parcela do gasto privado)
+- Tamanho da dívida doméstica e do estoque de moeda é subsidiário nas finanças funcionais
+- Resultado de ações que devem ser levados em conta para prevenir inflação de demanda e desemprego
+
+** Modern Money Theory (Wray, Mosler e Mitchell)
+
+Núcleo teórico:
+
+- Demanda efetiva no curto prazo (foco na instabilidade -- Minsky, pouca discussão sobre produto potencial)
+- Moeda estatal, moeda endógena + Tesouro
+- Inflação de custo e conflito
+
+*** Recomendações de política econômica
+
+- Governo deve  levar economia ao pleno emprego
+- Taxa de juros zero
+- Importância do empregador de última instância (JG) para estabilizar emprego e inflação
+- Câmbio flexível para economia aberta
+- Soberania em economia aberta
+  + Conseguir fazerpolítica de ELR
+
+** Teoria do supermultiplicador
+*** Introdução
+
+Núcleo teórico:
+- Demanda efetiva (Garagnani)
+- Moeda estatal, taxa de juros exógena e moeda endógena (Pivetti e Cesaratto)
+- Inflação de custo e conflito (Stiratti)
+
+Modelo e teoria:
+- Supermultiplicador: modelo e teoria
+  + Modelo: Simplificação, solução analítica, estática comparativa
+  + Teoria: Demanda efetiva no longo prazo, inflação de custo-conflito e taxa de juros exógena
+    - /Policy-constrained demand-led growth/
+    - Restrições e assimetrias em economia aberta
+    - Recomendações de política econômica
+- Skott et al (2020)
+  + Finanças funcionais incompatível com Supermultiplicador
+  + Regra proposta de que crescimento dos gastos deve ser constante
+*** Demanda efetiva no longo prazo
+
+- Abandonar função neoclássica de Lerner e investimento produtivo autônomo de Minsky
+  + Problema: fatores financeiros como determinantes macroeconômicos do investimento e não restrição microeconômica de quem vai investir
+- Investimento produtivo totalmente induzido, adequar capacidadea demanda esperada
+- Ciclo e crescimento (produto potencial)
+- Gasto especulativo é o residencial: 'Bolhas úteis alavancadas', endividamento e gastos autônmos, relação com taxa de juros
+- Salário do JG como importante gasto autônomo
+
+*** Inflação de custo e conflito
+
+- MMT tem inflação de custo, mas é aceleracionista?
+- Conflict-augmented Phillips curve (aceleracionsita ou não depende de poder de barganha dos trabalhadores)
+- Inflação de conflito e Empregador de Última Instância
+- Mais próximo de Lerner: curva de Phillips com conflito, podendo ser aceleracionista com alto poder de barganha dos trabalhadores.
+
+*** Economia aberta
+- Lerner: pouco desenvolvido, Bretton Woods e pouca importância dos fluxos financeiros.
+- MMT: Câmbio Flexível garante “Soberania”: fazer politica de JG e taxa de juros zero.
+- Problemas (Vernengo e Caldentey (2020), Serrano e Summa (2015):
+  + Assimetrias e instabilidade do câmbio flexível
+  + recomendação de Flutuação suja e discricionariedade na manipulação da taxa de juros
+  + Desvalorização contracionista
+
+*** Implicações para a política econômica
+
+- Assimetrias e restrição para fixar taxa de juros exógena em economia aberta
+- Pessimismo sobre efeito juros (real) no crescimento dos gastos autônomos
+- Desvalorizações cambiais são contracionistas
+- Política fiscal (tendência x ciclo): super-big government
+  + Implicações para estabilidade financeira: endividamento público x privado
+- Inflação de conflito e políticas de renda
+- Mais parecido com as diretrizes das Finanças Funcionais de Lerner
+  + Discricionariedade e não regras
+  + Tinbergen (incompatibilidade de metas e instrumentos)
+
+** Lara-Resende
+
+- Princípios teóricos do MMT
+- Modelo neoclássico, Novo Consenso (inflação de demanda, taxa natural de juros)
+- Elementos ecléticos incompatíveis com MMT: TFNP, Dominância Fiscal, Bem-estar
+- Regra de juros e crescimento: taxa natural de juros e ajuste fiscal permanente

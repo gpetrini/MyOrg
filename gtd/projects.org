@@ -3,9 +3,8 @@
 #+AUTHOR: Gabriel Petrini
 #+SETUPFILE: /HDD/Org/org-html-themes/org/theme-bigblow-local.setup
 
-* Dissertation's general settings [50%] :Dissertation:
+* Dissertation's general settings [66%] :Dissertation:
 ** TODO Verificar requisitos para qualificação
-** TODO Autenticação github ([[https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/][Link]])
 ** DONE [#B] Dr Watson tese
 CLOSED: [2021-02-22 seg 19:03]
 - Esperando resposta FAPESP
@@ -72,30 +71,26 @@ CLOSED: [2021-02-28 dom 19:17]
 * ABM [0%] :Dissertation:
 
 ** TODO Pesquisar lattice LSD
-* VECM [14%] :Article:
+* VECM [20%] :Article:
 
-
-** STRT Lucas: fundamentação econômica das defasagens; autonomia da taxa própria em relação ao investimento residencial (Marcar)
-** WAIT Como citar o SoC
 ** WAIT Refazer figura 1 no python com parte para torna gray scale
 ** WAIT PDF com todos os gráficos que não foram utilizados para o Franklin
 ** HOLD Problema: não esta discutindo especulação e bolhas
 ** WAIT Testar para o fim de 2019
 *** Pós envio ao Franklin
 *** Rever data com a quebra estrutural
-** KILL Incluir meses do SoC
-CLOSED: [2021-03-23 ter 15:11]
-* ABM dot-com [0/1] :@free:Article:
-** TODO Concentration, Stagnation and Inequality:An Agent-Based Approach
 * MKKS model [0/2]
 
 ** WAIT Reunião com Ítalo
 
 ** TODO Ver repositório
 
-* Super e taxa de lucro :Article:@free:
+* ABM dot-com [0/1] :@free:Article:
+** TODO Concentration, Stagnation and Inequality:An Agent-Based Approach
 * Orientações [100%]
 ** Lorena
+*** TODO Responder e-mail
+*** TODO Criar repositório github
 *** KILL Conferir se alternativa QCA é viável
 CLOSED: [2021-03-14 dom 17:03]
 *** PROJ Ideia de estrutura de QCA <2021-03-20 sáb>
@@ -107,33 +102,39 @@ CLOSED: [2021-03-14 dom 17:03]
 - Fuzzy :: A variável pode ser calibrada de acordo com a distância da respectiva capital
 - Direcionais :: Todos contribuiriam para o resultado
 - Análise :: Foco na suficiência e necesidade; menos na equação minimizada
+*** PROJ Ideia de estrutura de QCA <2021-03-29 seg>
+
+As variáveis explicativas são as mesmas do heading anterior, a diferença é o design do modelo.
+A ideia é fazer mais de um QCA em subperíodos diferentes e selecionar os conflitos relevantes a partir do processo de minimização.
+Estes QCA não têm um fim por si só, o propósito é apenas reduzir o número de dimensões.
+Os subperíodos devem ser selecionados por critérios históricos.
+Caso não exista um critério bem definido, pode-se utilizar testes de quebra estrutural como proxy.
+Com os casos relevantes selecionados, analiza-se a necessidade e suficiência deles para com o resultado.
+O processo de minimização nesta etapa é menos relevante.
+
+Para conseguir estruturar este QCA, propõe-se os seguintes dataframes:
+- Descrição dos conflitos :: Inclui as informações relevantes de cada conflito como ano de início e fim, duração, países envolvidos e subperíodo ao qual pertence.
+  + Sugere-se que cada conflito possua um código e uma descrição mais detalhada
+  + A duração serviria para propóstos de programação apenas
+  + O subperíodo também pode ser utilizado para filtrar os meta-QCAs
+  + Esta tabela pode dar uma sugestão de narrativa dos capítulos anteriores.
+- Países e os conflitos :: Os países são os títulos das linhas, os conflitos são as colunas e as entradas apresentam a distância deste conflito da capital
+- Variáveis macroeconômicas :: Países e anos com variáveis macroeconômicas. Esta tabela deve incluir o resultado e, se for útil, outras variáveis macroeconômicas de interesse.
+- Meta-QCAs :: É a junção das informações anteriores a partir de filtros estabelecidos. Pode-se elaborar uma função para gerar tais tabelas. O objetvo final é gerar vetores com os nomes de conflitos relavantes (para ausência e presença do resultado) para então estimar o modelo completo.
 
 ** Felipe
-*** TODO Ver sobre componente principal
 * Cecon [100%] :Group:
 
-** Nota 016 [42%]
+** Nota 016 [50%]
 
 
-*** TODO Escrever parágrafo explicando gráfico
 
-*** TODO Gráficos dos estados brasileiros
+*** TODO Incluir contrafactual weekly tracker
 
-**** TODO Vacina
 
-**** TODO Tipo de isolamento social
+*** TODO Procurar google mobility index (ver se estado ou não) - mesma base geográfica
 
-- Como identificar quais medidas foram adotadas nos estados?
-- Adaptar dataframe do google
-- [[https://github.com/OxCGRT/Brazil-covid-policy][Dataset]]
-- [[https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/codebook.md][codebook]]
-
-**** TODO Mobilidade média nas diferentes fases da pandemia
-
-*** TODO Gráfico com tipos de isolamento com cor de background
-- [[https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/codebook.md][codebook]]
-
-*** WAIT Colocar Logo na tabela do auxílio emergencial
+*** IDEA Gráfico com número de países que restringiram entrada de brasileiros
 *** DONE Inline results
 CLOSED: [2021-03-24 qua 09:50]
 

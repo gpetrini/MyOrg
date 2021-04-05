@@ -87,6 +87,24 @@ After reading:
 2. Compile html file
 3. Commit
 
+* Next
+*** <2021-04-05 seg> to <2021-04-20 ter>
+**** READ [#A] [[https://www.nber.org/papers/w21486][Leveraged Bubbles (Jordà et. all, 2015)]]
+
+**** READ [#A] [[https://www.oxfordhandbooks.com/view/10.1093/oxfordhb/9780199640935.001.0001/oxfordhb-9780199640935-e-025][Systemic Risk in Banking: An Update - Oxford Handbooks]] :QCA:Banking:
+**** PARTIAL [#B] <2021-04-05 seg> [[https://journals.sagepub.com/doi/10.1177/1024529415623916][Financialization and housing: Between globalization and Varieties of Capitali...]] :QCA:VoC:Financialization:
+**** PARTIAL [#B] [[file:../notes/2021-02-26-11-49-16-jorda_2015_Betting.org][jorda_2015_Betting: Betting the house (2015, Journal of International Economics)]] :DIRECTIONALS:QCA:
+:PROPERTIES:
+:YEAR:  citeyear***:jorda_2015_Betting
+:ZOTERO:   Yes
+:STATUS:   Zotero
+:RELEVANCE: High
+:IMPACT:   High
+:CITE:     Yes
+:KEY: cite:jorda_2015_Betting
+:END:
+
+**** SKIM [#C] [[https://www.cambridge.org/core/journals/journal-of-financial-and-quantitative-analysis/article/abs/determinants-of-capital-structure-capital-marketoriented-versus-bankoriented-institutions/0F08AA876248523B3D84E645178323DB][The Determinants of Capital Structure: Capital Market-Oriented versus Bank-Or...]] :CapitalStructure:DIRECTIONALS:QCA:
 * Inbox
 :PROPERTIES:
 :ID:       4283d93a-d870-40c9-bbb6-f3cbff0b3a1a
@@ -94,7 +112,7 @@ After reading:
 #+begin_note
 *Description:* Captured entries
 #+end_note
-** <2021-03-19 sex> [[http://saeb.feaa.uaic.ro/index.php/saeb/article/view/1480][House Price Shock and Business Cycle: The French Case | Saad | Scientific Ann...]] :Panel:HousePrices:BusinessCycle:
+** <2021-04-05 seg> [[https://www.quantamagazine.org/the-hard-lessons-of-modeling-the-coronavirus-pandemic-20210128][Quanta Magazine]] :Cecon:COVID:
 * Dissertation
 
 ** [[file:../notes/20210216101138-qca_literature_review.org][QCA Literature Review]] :QCA:
@@ -102,8 +120,8 @@ After reading:
 *Description:* QCA exclusively readings
 #+end_note
 *** READ [#A] [[https://ideas.repec.org/a/spr/qualqt/v53y2019i3d10.1007_s11135-018-0805-7.html][Schneider (2019) - Two-step QCA revisited: the necessity of context conditions]]
-*** READ [#A] [[https://journals.sagepub.com/doi/10.1177/0010414008325433][Mahoney et al (2009) - The Logic of Historical Explanation in the Social Sciences]]
-*** READ [#B] [[https://link.springer.com/article/10.1007/s11135-019-00893-7][Haesebrouck (2020) - An alternative update of the two-step QCA procedure]]
+*** READ [#C] [[https://link.springer.com/article/10.1007/s11135-019-00893-7][Haesebrouck (2020) - An alternative update of the two-step QCA procedure]]
+*** READ [#C] [[https://journals.sagepub.com/doi/10.1177/0010414008325433][Mahoney et al (2009) - The Logic of Historical Explanation in the Social Sciences]]
 ** [[file:../notes/20210210191017-panel_manuals.org][Panel Manuals]] :Panel:
 
 #+begin_note
@@ -155,16 +173,6 @@ After reading:
 
 ** [[file:../notes/20210210184827-institutional_comparisons.org][Institutional comparisons]] :Institutional:
 
-*** READ [#A] [[file:../notes/2021-02-26-12-04-45-klyuev_2010_Housing.org][klyuev_2010_Housing: Is Housing Wealth an ``ATM''?: International Trends (2010, )]] :QCA:
-:PROPERTIES:
-:YEAR:     citeyear***:klyuev_2010_Housing
-:ZOTERO:   Yes
-:STATUS:   Zotero
-:RELEVANCE: High
-:IMPACT:   Low
-:CITE:     Yes
-:KEY:      cite:klyuev_2010_Housing
-:END:
 *** READ [#A] [[file:2021-01-12-14-07-01-green_2005_American.org][green_2005_American: The American Mortgage in Historical and International Context]] :QCA:
 :PROPERTIES:
 :YEAR:     citeyear***:greenAmericanMortgageHistorical2005
@@ -218,6 +226,16 @@ After reading:
 :CITE:     Wait
 :KEY:      cite:garther_2012_White
 :FINISHED: [ ]
+:END:
+*** SKIM [#C] [[file:../notes/2021-02-26-12-04-45-klyuev_2010_Housing.org][klyuev_2010_Housing: Is Housing Wealth an ``ATM''?: International Trends (2010, )]] :QCA:
+:PROPERTIES:
+:YEAR:     citeyear***:klyuev_2010_Housing
+:ZOTERO:   Yes
+:STATUS:   Zotero
+:RELEVANCE: High
+:IMPACT:   Low
+:CITE:     Yes
+:KEY:      cite:klyuev_2010_Housing
 :END:
 *** SKIM [#C] [[https://journals.sagepub.com/doi/10.1179/102452909X12506915718111][Dixon and Sorsa - Institutional Change and the Financialisation of Pensions in Europe]] :PensionFunds:REFS:QCA:
 :PROPERTIES:
@@ -511,6 +529,18 @@ CLOSED: [2021-02-26 sex 11:52]
 *** SKIM <2021-03-10 qua> [[https://www.cambridge.org/core/journals/journal-of-financial-and-quantitative-analysis/article/abs/determinants-of-capital-structure-capital-marketoriented-versus-bankoriented-institutions/0F08AA876248523B3D84E645178323DB][The Determinants of Capital Structure: Capital Market-Oriented versus Bank-Or...]] :CapitalStructure:DIRECTIONALS:QCA:
 ** [[file:../notes/20210210190446-variaeties_of_capitalisms.org][Varieties of Capitalisms]] :VoC:
 
+*** READ [#A] <2021-04-05 seg> [[https://journals.sagepub.com/doi/10.1177/1024529415623916][Financialization and housing: Between globalization and Varieties of Capitali...]] :QCA:VoC:Financialization:
+*** READ [#A] [[https://doi.org/10.1080/02673037.2018.1487037][Historicizing housing typologies: beyond welfare state regimes and varieties of residential capitalism]]
+  :PROPERTIES:
+  :YEAR: 2018
+  :ZOTERO:   Yes
+  :STATUS:   Zotero
+  :RELEVANCE: High
+  :IMPACT:   Low
+  :CITE:     Yes
+  :KEY:  cite:blackwell_2019_Historicizing
+  :FINISHED: [ ]
+  :END:
 *** PARTIAL [#A] [[https://global.oup.com/academic/product/debating-varieties-of-capitalism-9780199569663?cc=us&lang=en&#][Debating Varieties of Capitalism]] (Colection)
   :PROPERTIES:
   :YEAR: 2009
@@ -561,17 +591,6 @@ CLOSED: [2021-02-26 sex 11:52]
   :KEY: cite:blyth_2003_Same
   :FINISHED: [ ]
   :END:
-*** READ [#A] [[https://doi.org/10.1177%2F1024529415623916][Financialization and housing: Between globalization and Varieties of Capitalism]]
-  :PROPERTIES:
-  :YEAR:     2016
-  :ZOTERO:   Yes
-  :STATUS:   Zotero
-  :RELEVANCE: High
-  :IMPACT:   Low
-  :CITE:     Yes
-  :KEY:      cite:fernandez_2016_Financialization
-  :FINISHED: [ ]
-  :END:
 *** READ [#B] [[https://doi.org/10.1177%2F0032329215571288][Who’s Borrowing? Credit Encouragement vs. Credit Mitigation in National Financial Systems ]]
   :PROPERTIES:
   :YEAR:     2015
@@ -581,17 +600,6 @@ CLOSED: [2021-02-26 sex 11:52]
   :IMPACT:   Low
   :CITE:     Yes
   :KEY:      cite:fuller_2015_Who
-  :FINISHED: [ ]
-  :END:
-*** READ [#A] [[https://doi.org/10.1080/02673037.2018.1487037][Historicizing housing typologies: beyond welfare state regimes and varieties of residential capitalism]]
-  :PROPERTIES:
-  :YEAR: 2018
-  :ZOTERO:   Yes
-  :STATUS:   Zotero
-  :RELEVANCE: High
-  :IMPACT:   Low
-  :CITE:     Yes
-  :KEY:  cite:blackwell_2019_Historicizing
   :FINISHED: [ ]
   :END:
 *** READ [#B] [[https://link.springer.com/chapter/10.1057/9780230522725_6][Two Can Play at That Game … or Can They? Varieties of Capitalism, Varieties of Institutionalism]]
@@ -605,7 +613,7 @@ CLOSED: [2021-02-26 sex 11:52]
   :KEY: cite:hay_2005_Two
   :FINISHED: [ ]
   :END:
-*** READ [#C] [[https://www.econstor.eu/bitstream/10419/155335/1/880367393.pdf][Blackwell and Khol - Varieties of housing finance in historical perspective: The impact of mortgage finance systems on urban structures and homeownership]]
+*** READ [#B] [[https://www.econstor.eu/bitstream/10419/155335/1/880367393.pdf][Blackwell and Khol - Varieties of housing finance in historical perspective: The impact of mortgage finance systems on urban structures and homeownership]]
   :PROPERTIES:
   :YEAR:     2017
   :ZOTERO:   Yes
@@ -837,8 +845,14 @@ CLOSED: [2021-02-16 ter 16:12]
 *** PARTIAL [#C] [[https://www.bankofcanada.ca/wp-content/uploads/2017/11/fsr-november2017-bilyk.pdf][Analysis of Household Vulnerabilities using loan-level mortgage data]] :LTV:Calibration:QCA:
 
 ** [[file:../notes/20210210091758-house_prices.org][House Prices]] :Prices:
-*** ARCH [#C] [[https://www.kansascityfed.org/PUBLICAT/ECONREV/PDF/2q07rapp.pdf][Rappaport - A Guide to Aggregate House Price Measures]] :USA:HousePrices:
 *** READ [#B] [[https://www.sciencedirect.com/science/article/abs/pii/S1051137716300237][Housing finance and real-estate booms: A cross-country perspective]] :Data:QCA:DIRECTIONALS:Panel:
+*** SKIM <2021-03-19 sex> [[http://saeb.feaa.uaic.ro/index.php/saeb/article/view/1480][House Price Shock and Business Cycle: The French Case | Saad | Scientific Ann...]] :Panel:HousePrices:BusinessCycle:France:
+*** ARCH [#C] [[https://www.kansascityfed.org/PUBLICAT/ECONREV/PDF/2q07rapp.pdf][Rappaport - A Guide to Aggregate House Price Measures]] :USA:HousePrices:
+
+** [[file:../notes/20210405101242-bubbles_and_aggregate_demand.org][Bubbles and aggregate demand]]
+
+*** READ [#A] [[https://www.nber.org/papers/w21486][Leveraged Bubbles (Jordà et. all, 2015)]]
+
 ** New Narrative :NewNarrative:
 ** Data :Data:
 
@@ -876,8 +890,10 @@ CLOSED: [2021-03-02 ter 18:16]
 ** ABM-dot-com (2021-?)
 * Orientation
 ** Lorena (2021)
+*** <2021-03-31 qua> [[https://patrickmello.com/uploads/2021/03/Mello-2021-GUP-Ch-1.pdf]] :QCA:Lorena:
 ** Felipe (2021)
 *** [[https://onlinelibrary.wiley.com/doi/abs/10.1111/meca.12251][The financialization of the non‐financial corporation. A critique to the fina...]] :Orientacoes:Felipe:
+*** <2021-03-31 qua> [[https://www.datacamp.com/community/tutorials/pca-analysis-r][PCA Analysis in R - DataCamp]] :PCA:Felipe:Orientacoes:
 * Lectures
 * Off office
 

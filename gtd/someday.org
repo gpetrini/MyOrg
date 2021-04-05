@@ -60,3 +60,4 @@ CLOSED: [2021-03-02 ter 17:13]
 * TODO Ver documentação org-roam V2 :Emacs:OrgRoam:
 * TODO Criar subheading de dados e outro para archive :Emacs:Readings:
 * TODO Pesquisar como otimizar insync no ubuntu :Computer:
+* TODO Testar EXM

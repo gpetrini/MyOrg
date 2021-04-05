@@ -7,3 +7,13 @@
 ** 18:35 Fim do expendiente
 
 Nenhum outro registro hoje.
+* quarta, 24/03/2021
+:PROPERTIES:
+:CREATED:  20210324
+:END:
+** 19:12 Fim expediente. Fiquei aguardando PPZ
+* quinta, 25/03/2021
+:PROPERTIES:
+:CREATED:  20210325
+:END:
+** 09:11 Sage e atualizações
