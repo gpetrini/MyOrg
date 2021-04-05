@@ -3,31 +3,21 @@
 #+AUTHOR: Gabriel Petrini
 #+SETUPFILE: /HDD/Org/org-html-themes/org/theme-bigblow-local.setup
 
-* Dissertation's general settings [66%] :Dissertation:
+* Dissertation's general settings [0%] :Dissertation:
 ** TODO Verificar requisitos para qualificação
-** DONE [#B] Dr Watson tese
-CLOSED: [2021-02-22 seg 19:03]
-- Esperando resposta FAPESP
-
-** DONE Ver edital cotutela França
-CLOSED: [2021-02-28 dom 19:16]
 
 * Fapesp
 ** TODO Corrigir conflitos no refs.bib do projeto fapesp
 
 Procurar script do vim
 
-* QCA [10%] :Dissertation:
+* QCA [0%] :Dissertation:
 ** TODO Ler seção 9.2.3 manual QCA
 ** TODO Ler sobre QCA em dois estágios
 ** TODO Organizar dados em uma tabela
 *** TODO Dados brutos
 *** TODO Fonte
 ** TODO Ler appêndice online manual QCA (chapter 8) :Manual:
-** DONE Rascunhar estrutura do capítulo QCA com VoC :Writing:
-CLOSED: [2021-02-28 dom 19:16]
-** DONE Planejar escritas :Writing:Planning:
-CLOSED: [2021-02-28 dom 19:16]
 ** TODO https://www.e-elgar.com/shop/usd/advanced-introduction-to-housing-studies-9781789908336.html :Dissertation:Readings:Institutions:Housing:
 ** TODO Começar escrita primeira versão
 *** TODO Semana 1 (<2021-04-05 seg>): Introdução
@@ -48,10 +38,8 @@ CLOSED: [2021-02-28 dom 19:16]
 
 ** TODO Criar Source data frame
 ** TODO Pesquisar literatura de estrutura de capital para os bancos $\Rightarrow$ Fundamentação teórica QCA
-* Panel [20%] :Dissertation:
+* Panel [0%] :Dissertation:
 
-** DONE Ver Statista :Data:
-CLOSED: [2021-02-28 dom 19:17]
 ** TODO Ver equifax data
 ** TODO https://www.sciencedirect.com/science/article/abs/pii/S026156062100019X
 ** TODO Ler bloomberg ([[https://www.bloomberg.com/opinion/articles/2021-02-17/covid-housing-boom-is-even-bigger-than-imagined?utm_source=url_link][Link]])
@@ -79,18 +67,27 @@ CLOSED: [2021-02-28 dom 19:17]
 ** WAIT Testar para o fim de 2019
 *** Pós envio ao Franklin
 *** Rever data com a quebra estrutural
-* MKKS model [0/2]
+* MKKS model [0/3]
 
-** WAIT Reunião com Ítalo
+** TODO Ler tese Minsky
 
-** TODO Ver repositório
+** TODO Endogeneizar $rho_u$
+
+** TODO Ajustar equações dos bancos
+
+- Separar capital de giro e investimento
 
 * ABM dot-com [0/1] :@free:Article:
 ** TODO Concentration, Stagnation and Inequality:An Agent-Based Approach
-* Orientações [100%]
+* Orientações [0%]
 ** Lorena
-*** TODO Responder e-mail
-*** TODO Criar repositório github
+*** DONE Criar repositório github
+CLOSED: [2021-04-05 seg 18:25]
+*** DONE Responder e-mail
+CLOSED: [2021-04-05 seg 18:24]
+
+- Sugestões de leitura incluída no pull request
+
 *** KILL Conferir se alternativa QCA é viável
 CLOSED: [2021-03-14 dom 17:03]
 *** PROJ Ideia de estrutura de QCA <2021-03-20 sáb>
@@ -123,9 +120,9 @@ Para conseguir estruturar este QCA, propõe-se os seguintes dataframes:
 - Meta-QCAs :: É a junção das informações anteriores a partir de filtros estabelecidos. Pode-se elaborar uma função para gerar tais tabelas. O objetvo final é gerar vetores com os nomes de conflitos relavantes (para ausência e presença do resultado) para então estimar o modelo completo.
 
 ** Felipe
-* Cecon [100%] :Group:
+* Cecon [0%] :Group:
 
-** Nota 016 [50%]
+** Nota 016 [0%]
 
 
 
@@ -135,14 +132,6 @@ Para conseguir estruturar este QCA, propõe-se os seguintes dataframes:
 *** TODO Procurar google mobility index (ver se estado ou não) - mesma base geográfica
 
 *** IDEA Gráfico com número de países que restringiram entrada de brasileiros
-*** DONE Inline results
-CLOSED: [2021-03-24 qua 09:50]
-
-*** DONE Remover pontos boxplots
-CLOSED: [2021-03-24 qua 09:49]
-
-*** DONE Ver páginas indicadas pelo PPZ
-CLOSED: [2021-03-24 qua 09:49]
 
 * Blog :@free:
 ** Tabela latex
