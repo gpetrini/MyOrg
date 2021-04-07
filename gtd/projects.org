@@ -71,6 +71,10 @@ Procurar script do vim
 
 ** TODO Ler tese Minsky
 
+*** TODO Capítulo 6
+
+*** TODO Capítulo 9
+
 ** TODO Endogeneizar $rho_u$
 
 ** TODO Ajustar equações dos bancos
@@ -120,6 +124,14 @@ Para conseguir estruturar este QCA, propõe-se os seguintes dataframes:
 - Meta-QCAs :: É a junção das informações anteriores a partir de filtros estabelecidos. Pode-se elaborar uma função para gerar tais tabelas. O objetvo final é gerar vetores com os nomes de conflitos relavantes (para ausência e presença do resultado) para então estimar o modelo completo.
 
 ** Felipe
+
+*** TODO Pesquisar como incluir dimensão tempora no PCA
+
+*** TODO Analizar dados
+
+*** TODO Marcar reunião
+
+- Mencionar que precisamos contatar o Mariano em algum momento
 * Cecon [0%] :Group:
 
 ** Nota 016 [0%]
@@ -130,6 +142,10 @@ Para conseguir estruturar este QCA, propõe-se os seguintes dataframes:
 
 
 *** TODO Procurar google mobility index (ver se estado ou não) - mesma base geográfica
+
+*** TODO Mobilidade para o estado e para a cidade de São Paulo
+
+*** TODO Checar quando houve queda no índice da OCDE e quando foram adotadas as medidas de isolamento
 
 *** IDEA Gráfico com número de países que restringiram entrada de brasileiros
 
