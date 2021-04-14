@@ -21,11 +21,8 @@
 PhD Student 29 Euros for 2 years
 * ATTR [#A] Comprovante ADUNICAMP (RPPS) :Research:
 
-* TODO Criar repositório github :Orientacoes:Lorena:
 
 * TODO HTML setup file org-roam-export style css :Emacs:
-
-* TODO Instalar pandoc citeproc :Emacs:
 
 * TODO Startup: cl and dash packages :Emacs:
 
@@ -45,11 +42,9 @@ PhD Student 29 Euros for 2 years
 * TODO Remover ref links do org-roam-server :Emacs:OrgRoam:
 * TODO Pesquisar waiting for git at emacs start up :Emacs:
 * TODO Garrafa Térmica :@Home:
-* TODO mu4e filtrar contatos :Emacs:
 * TODO Configurar Configurações como org :@Free:Computer:
 * CANC Instalar Manjaro :Computer:@Free:
 CLOSED: [2021-03-02 ter 17:13]
-* TODO FIX: checkboxes org-roam-server :Emacs:OrgRoam:
 * TODO Org-citeproc :Emacs:
 * TODO Criar pacote python com funções encontradas na internet
 ** Vincular ao social-paths?
@@ -59,5 +54,3 @@ CLOSED: [2021-03-02 ter 17:13]
 ** TODO Como incluir IDs nos templates
 * TODO Ver documentação org-roam V2 :Emacs:OrgRoam:
 * TODO Criar subheading de dados e outro para archive :Emacs:Readings:
-* TODO Pesquisar como otimizar insync no ubuntu :Computer:
-* TODO Testar EXM

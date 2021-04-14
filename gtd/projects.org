@@ -59,10 +59,8 @@ Procurar script do vim
 * ABM [0%] :Dissertation:
 
 ** TODO Pesquisar lattice LSD
-* VECM [20%] :Article:
+* VECM [0%] :Article:
 
-** WAIT Refazer figura 1 no python com parte para torna gray scale
-** WAIT PDF com todos os gráficos que não foram utilizados para o Franklin
 ** HOLD Problema: não esta discutindo especulação e bolhas
 ** WAIT Testar para o fim de 2019
 *** Pós envio ao Franklin
@@ -134,20 +132,7 @@ Para conseguir estruturar este QCA, propõe-se os seguintes dataframes:
 - Mencionar que precisamos contatar o Mariano em algum momento
 * Cecon [0%] :Group:
 
-** Nota 016 [0%]
-
-
-
-*** TODO Incluir contrafactual weekly tracker
-
-
-*** TODO Procurar google mobility index (ver se estado ou não) - mesma base geográfica
-
-*** TODO Mobilidade para o estado e para a cidade de São Paulo
-
-*** TODO Checar quando houve queda no índice da OCDE e quando foram adotadas as medidas de isolamento
-
-*** IDEA Gráfico com número de países que restringiram entrada de brasileiros
+** Nota 017 [0%]
 
 * Blog :@free:
 ** Tabela latex
