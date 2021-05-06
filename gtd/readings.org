@@ -88,23 +88,6 @@ After reading:
 3. Commit
 
 * Next
-*** <2021-04-05 seg> to <2021-04-20 ter>
-**** READ [#A] [[https://www.nber.org/papers/w21486][Leveraged Bubbles (Jordà et. all, 2015)]]
-
-**** READ [#A] [[https://www.oxfordhandbooks.com/view/10.1093/oxfordhb/9780199640935.001.0001/oxfordhb-9780199640935-e-025][Systemic Risk in Banking: An Update - Oxford Handbooks]] :QCA:Banking:
-**** PARTIAL [#B] <2021-04-05 seg> [[https://journals.sagepub.com/doi/10.1177/1024529415623916][Financialization and housing: Between globalization and Varieties of Capitali...]] :QCA:VoC:Financialization:
-**** PARTIAL [#B] [[file:../notes/2021-02-26-11-49-16-jorda_2015_Betting.org][jorda_2015_Betting: Betting the house (2015, Journal of International Economics)]] :DIRECTIONALS:QCA:
-:PROPERTIES:
-:YEAR:  citeyear***:jorda_2015_Betting
-:ZOTERO:   Yes
-:STATUS:   Zotero
-:RELEVANCE: High
-:IMPACT:   High
-:CITE:     Yes
-:KEY: cite:jorda_2015_Betting
-:END:
-
-**** SKIM [#C] [[https://www.cambridge.org/core/journals/journal-of-financial-and-quantitative-analysis/article/abs/determinants-of-capital-structure-capital-marketoriented-versus-bankoriented-institutions/0F08AA876248523B3D84E645178323DB][The Determinants of Capital Structure: Capital Market-Oriented versus Bank-Or...]] :CapitalStructure:DIRECTIONALS:QCA:
 * Inbox
 :PROPERTIES:
 :ID:       4283d93a-d870-40c9-bbb6-f3cbff0b3a1a
@@ -112,6 +95,21 @@ After reading:
 #+begin_note
 *Description:* Captured entries
 #+end_note
+** <2021-05-03 seg> [[https://academic.oup.com/oxrep/article/24/1/1/5140987][Housing markets and the economy: the assessment | Oxford Review of Economic P...]] :Panel:StilyzedFacts:Results:
+** <2021-05-03 seg> [[https://www.tandfonline.com/doi/abs/10.1080/08965803.2020.1840897?journalCode=rjer20][House Price Dynamics and Bank Herding: European Empirical Evidence: Journal o...]] :ABM:Results:Empirical:StilyzedFacts:
+** <2021-05-03 seg> [[https://www.tandfonline.com/doi/abs/10.1080/14616718.2015.1048091?journalCode=reuj20][Mortgage equity withdrawal and institutional settings: an exploratory analysi...]] :Literature:QCA:Introduction:Results:
+** <2021-05-03 seg> [[https://academic.oup.com/rof/article/17/1/1/1582371][Mortgage Market Design* | Review of Finance | Oxford Academic]] :QCA:Mortgage:HouseMarket:Review:Literature:
+** <2021-05-03 seg> [[https://academic.oup.com/jeea/article/11/suppl_1/101/2316498][Housing Finance and Monetary Policy | Journal of the European Economic Associ...]] :QCA:Introduction:Context:Results:
+** <2021-05-03 seg> [[https://academic.oup.com/rof/article/10/3/321/1606865][Financial Accelerator: Evidence from International Housing Markets | Review o...]] :ABM:Empirical:Results:
+** <2021-05-03 seg> [[https://www.sciencedirect.com/science/article/abs/pii/S1051137709000552?via%3Dihub][Macroeconomic determinants of international housing markets - ScienceDirect]] :Panel:Results:Empirical:
+** <2021-05-03 seg> [[https://link.springer.com/article/10.1007/s10901-021-09848-7][EU housing markets before financial crisis of 2008: The role of institutional...]] :Institutional:HouseMarket:Europe:
+** <2021-05-03 seg> [[https://library.oapen.org/bitstream/handle/20.500.12657/48448/9780198863960.pdf?sequence=1#page=130]] :Lorena:
+** <2021-05-03 seg> [[https://www.emerald.com/insight/content/doi/10.1108/INTR-09-2020-0529/full/html][Qualitative comparative analysis in the information systems discipline: a lit...]] :QCA:BestPractices:
+** <2021-05-03 seg> [[Agent-based modelling for public policy: A housing market example]] :ABM:Baseline:
+** <2021-05-03 seg> [[https://www.ecb.europa.eu/pub/pdf/other/euhousingmarketsen.pdf]] :QCA:DATA:Empirical:
+** <2021-04-23 sex> [[https://www.tandfonline.com/doi/pdf/10.1080/13876988.2021.1878458]] :Lorena:QCA:Covid:
+** <2021-04-23 sex> [[https://doi.org/10.36898/001c.21987][Can Google Trends Improve Housing Market Forecasts? | Published in Curiosity:...]] :HouseMarket:HousePrices:Forecast:Empirical:Expectation:
+** <2021-04-22 qui> [[https://paulgp.github.io/papers/Heterogeneous_Real_Estate_Agents_and_the_Housing_Cycle.pdf]] :Empirical:ABM:HouseMarket:
 ** <2021-04-05 seg> [[https://www.quantamagazine.org/the-hard-lessons-of-modeling-the-coronavirus-pandemic-20210128][Quanta Magazine]] :Cecon:COVID:
 * Dissertation
 
@@ -129,17 +127,254 @@ After reading:
 #+end_note
 
 ** [[file:../notes/20210210100407-abm_readings.org][ABM Readings]] :ABM:
+
+
+ Usefull links
+- [[http://jasss.soc.surrey.ac.uk/8/1/5.html][JASS - Journal of Artificial Societies and Social Simulation]]
+- [[http://www2.econ.iastate.edu/classes/econ308/tesfatsion/sylVIITrento.LT.htm][VII Trento Summer School ]]
+- [[http://www.brettparris.com/abm/][Brettparis]]
+- [[https://www.comses.net/resources/education/][Educational Materials]]
+- [[http://www2.econ.iastate.edu/tesfatsi/ace.htm][ABM Repo]]
+- [[http://www2.econ.iastate.edu/tesfatsi/abmread.htm#Readings][ABM for new users]]
+- [[https://www.complexityexplorer.org/courses/101-introduction-to-agent-based-modeling-spring-2020/segments/9191?summary][Intro to ABM Course]]
+- [[http://www2.econ.iastate.edu/tesfatsi/publish.htm][Journals]]
+- [[http://www2.econ.iastate.edu/classes/econ308/tesfatsion/syl308.htm][Syllabus for Economics 308]]
+
 #+begin_note
 *Description:* ABM exclusively readings
 #+end_note
 
+*** READ [#A] <2021-05-06 qui> [[https://www.sciencedirect.com/science/article/pii/S1574002118300066?via%3Dihub][Agent-Based Macroeconomics - ScienceDirect]] :ABM:Survey:
+- Ler 4.3
+- Ler 4.5
+- Rever itens grifados
+*** READ [#A] [[https://www.sciencedirect.com/science/article/abs/pii/S0165188999000226][LeBaron - Agent-based computational finance: Suggested readings and early research]] :ABM:Survey:
+
+*** READ [#A] [[https://apo.org.au/sites/default/files/resource-files/2015-09/apo-nid173221.pdf][Carstensen - An agent-based model of the housing marketSteps toward a computationaltoolforpolicy analysis]] :Survey:ABM:
+
+
 *** READ [#A] Income inequality, consumer debt, and prudential regulation: An agent-based approach to study the emergence of crises and financial instability :ABM:
 
+*** READ [#A] [[http://hdl.handle.net/10419/38760][Dieci and Westerhoff - A simple model of a speculative housing market]] :ABM:HouseMarket:HousePrices:Speculation:ToBase:ToDialog:
+
+
 *** READ [#A] Inequality, household debt and financial instability: An agent-based perspective :ABM:
-*** WAIT [#C] [[https://www.cfainstitute.org/en/research/foundation/2009/the-shadow-banking-system-and-hyman-minskys-economic-journey][McCulley (2010)]] :Inbox:ABM:NewNarrative:
+*** READ [#B] [[https://link.springer.com/article/10.1007/s10614-007-9104-4][Fagiolo et al - A Critical Guide to Empirical Validation of Agent-Based Models in Economics: Methodologies, Procedures, and Open Problems]] :Validation:ABM:
+    :PROPERTIES:
+    :YEAR:     2007
+    :ZOTERO:   Entry
+    :TYPE:     Thechnical
+    :STATUS:   Filed
+    :RELEVANCE: Regular
+    :IMPACT:   High
+    :CITE:     Yes
+    :END:
+
+    #+BEGIN_SRC bibtex
+@Article{Fagiolo_2007,
+  author       = {Fagiolo, Giorgio and Moneta, Alessio and Windrum,
+                  Paul},
+  title	       = {A Critical Guide to Empirical Validation of
+                  Agent-Based Models in Economics: Methodologies,
+                  Procedures, and Open Problems},
+  year	       = 2007,
+  volume       = 30,
+  number       = 3,
+  month	       = {Sep},
+  pages	       = {195–226},
+  issn	       = {1572-9974},
+  doi	       = {10.1007/s10614-007-9104-4},
+  url	       = {http://dx.doi.org/10.1007/s10614-007-9104-4},
+  journal      = {Computational Economics},
+  publisher    = {Springer Science and Business Media LLC}
+}
+    #+END_SRC
+
+*** PARTIAL [#A] [[https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2850414][Baptista et al - Macroprudential Policy in an Agent-Based Model of the UK Housing Market]] :ToBase:UK:HouseMarket:ABM:
+*** PARTIAL [#A] [[http://jasss.soc.surrey.ac.uk/23/4/5.html][Yun and Moon - Housing Market Agent-Based Simulation with Loan-To-Value and Debt-To-Income]] :HouseMarket:ABM:ToBase:
+    :PROPERTIES:
+    :YEAR:     2020
+    :ZOTERO:   Entry
+    :TYPE:     Theory
+    :STATUS:   Filed
+    :RELEVANCE: High
+    :IMPACT:   Regular
+    :CITE:     Yes
+    :END:
+
+*** PARTIAL [#A] [[http://jasss.soc.surrey.ac.uk/17/1/19.html][Özbaş - Modeling and Simulation of the Endogenous Dynamics of Housing Market Cycles]] :ABM:HouseMarket:Istanbul:ToBase:
+    :PROPERTIES:
+    :YEAR:     2014
+    :ZOTERO:   Entry
+    :TYPE:     Theory
+    :STATUS:   Filed
+    :RELEVANCE: High
+    :IMPACT:   Low
+    :CITE:     Yes
+    :END:
+
+    #+BEGIN_SRC bibtex
+@Article{_zba__2014,
+  author       = {Özbaş, Birnur and Özgün, Onur and Barlas, Yaman},
+  title	       = {Modeling and Simulation of the Endogenous Dynamics
+                  of Housing Market Cycles},
+  year	       = 2014,
+  volume       = 17,
+  number       = 1,
+  issn	       = {1460-7425},
+  doi	       = {10.18564/jasss.2353},
+  url	       = {http://dx.doi.org/10.18564/jasss.2353},
+  journal      = {Journal of Artificial Societies and Social
+                  Simulation},
+  publisher    = {Journal of Artificial Societies and Social
+                  Simulation}
+}
+
+
+    #+END_SRC
+
+*** PARTIAL [#A] [[https://www.tandfonline.com/doi/abs/10.1080/14697688.2020.1733058][Laliotis - An agent-based model for the assessment of LTV caps]] :LTV:ABM:ToBase:ToDialog:
+
+
+*** PARTIAL [#C] [[https://link.springer.com/article/10.1007/s10614-007-9097-z][Cirillo et al - Validating and Calibrating Agent-Based Models: A Case Study]] :Validation:ABM:
+    :PROPERTIES:
+    :YEAR:     2007
+    :ZOTERO:   Entry
+    :TYPE:     Case
+    :STATUS:   Filed
+    :RELEVANCE: Regular
+    :IMPACT:   Low
+    :CITE:     Wait
+    :END:
+
+    #+BEGIN_SRC bibtex
+@Article{Bianchi_2007,
+  author       = {Bianchi, Carlo and Cirillo, Pasquale and Gallegati, Mauro and Vagliasindi, Pietro A.},
+  title	       = {Validating and Calibrating Agent-Based Models: A Case Study},
+  year	       = {2007},
+  volume       = {30},
+  number       = {3},
+  month	       = {Jul},
+  pages	       = {245–264},
+  issn	       = {1572-9974},
+  doi	       = {10.1007/s10614-007-9097-z},
+  url	       = {http://dx.doi.org/10.1007/s10614-007-9097-z},
+  journal      = {Computational Economics},
+  publisher    = {Springer Science and Business Media LLC}
+}
+    #+END_SRC
+
+*** SKIM [#A] [[https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2018375][Geanakoplos et al - Getting at Systemic Risk Via an Agent-Based Model of the Housing Market]] :ABM:HouseMarket:SystemicRisk:
+    :PROPERTIES:
+    :YEAR:     2012
+    :ZOTERO:   Yes
+    :TYPE:     Theory
+    :STATUS:   Filed
+    :RELEVANCE: Regular
+    :IMPACT:   High
+    :CITE:     Yes
+    :END:
+
+    #+BEGIN_SRC bibtex
+@Article{Geanakoplos_2012,
+  author       = {Geanakoplos, John and Axtell, Robert and Farmer,
+                  J. Doyne and Howitt, Peter and Conlee, Benjamin and
+                  Goldstein, Jonathan and Hendrey, Matthew and Palmer,
+                  Nathan M. and Yang, Chun-Yi},
+  title	       = {Getting at Systemic Risk Via an Agent-Based Model of
+                  the Housing Market},
+  year	       = 2012,
+  issn	       = {1556-5068},
+  doi	       = {10.2139/ssrn.2018375},
+  url	       = {http://dx.doi.org/10.2139/ssrn.2018375},
+  journal      = {SSRN Electronic Journal},
+  publisher    = {Elsevier BV}
+}
+
+
+    #+END_SRC
+*** SKIM [#C] [[http://www2.econ.iastate.edu/classes/econ308/tesfatsion/SFIStockOverview.LT.pdf][Tesfatsion - Overview of theSanta Fe Artificial Stock Market Model]] :Survey:ABM:SantaFe:Quick:
+    :PROPERTIES:
+    :YEAR:
+    :ZOTERO:   Partial
+    :TYPE:     Other
+    :STATUS:   Filed
+    :RELEVANCE: Low
+    :IMPACT:   Low
+    :CITE:     No
+    :END:
+
+
+
+*** SKIM [#C] [[https://www.econstor.eu/handle/10419/202878][Cokayne - The effects of macroprudential policies on house price cycles in an agent-based model of the Danish housing market]] :ABM:HousePrices:Denmark:
+*** MAYBE [#A] <2021-05-06 qui> [[https://doi.org/10.1057/eej.2016.2][Elements of Dynamic Economic Modeling: Presentation and Analysis | SpringerLink]] :ABM:Technical:Mathematics:
 *** MAYBE [#C] [[https://academic.oup.com/jeea/article-abstract/2/6/1148/2280932?redirectedFrom=fulltext][Ehrmann and Worms - Bank Networks and Monetary Policy Transmission]] :OFF:NETWORK:ABM:
 
 *** MAYBE [#C] [[https://sci-hub.ren/https://doi.org/10.1146/annurev-financial-111914-041807][An Overview of Macroprudential Policy Tools]] :LTV:QCA:ABM:
+
+*** MAYBE [#D] [[https://link.springer.com/article/10.1057/jos.2010.3][Macal and North - Tutorial on agent-based modelling and simulation]] :ABM:Tutorial:
+   :PROPERTIES:
+   :YEAR:     2010
+   :ZOTERO:   Yes
+   :TYPE:     Review
+   :STATUS:   Filed
+   :RELEVANCE: Low
+   :IMPACT:   Low
+   :CITE:     Yes
+   :END:
+
+   #+BEGIN_SRC bibtex
+@Article{Macal_2010,
+  author       = {Macal, C M and North, M J},
+  title	       = {Tutorial on agent-based modelling and simulation},
+  year	       = {2010},
+  volume       = {4},
+  number       = {3},
+  month	       = {Sep},
+  pages	       = {151–162},
+  issn	       = {1747-7786},
+  doi	       = {10.1057/jos.2010.3},
+  url	       = {http://dx.doi.org/10.1057/jos.2010.3},
+  journal      = {Journal of Simulation},
+  publisher    = {Informa UK Limited}
+}
+   #+END_SRC
+*** WAIT [#C] [[https://www.cfainstitute.org/en/research/foundation/2009/the-shadow-banking-system-and-hyman-minskys-economic-journey][McCulley (2010)]] :Inbox:ABM:NewNarrative:
+*** WAIT [#D] [[http://www2.econ.iastate.edu/tesfatsi/SFISTOCKDetailed.LT.htm][Tesfatsion - Detailed Notes on th Santa Fe Artificial Stock Market (ASM) Model]] :StockPrices:SantaFe:
+   :PROPERTIES:
+   :YEAR:     2012
+   :ZOTERO:   Partial
+   :TYPE:     Manual
+   :STATUS:   Filed
+   :RELEVANCE: Regular
+   :IMPACT:   Low
+   :CITE:     No
+   :END:
+
+
+*** WAIT [#D] [[http://jasss.soc.surrey.ac.uk/21/1/2.html][A Minimal Agent-Based Model Reproduces the Overall Topology of Interbank Networks]] :ABM:Banking:Network:
+
+*** WAIT [#E] [[https://arxiv.org/abs/2009.06914][Evans et al - The impact of social influence in Australian real-estate: market forecasting with a spatial agent-based model]] :Spatial:HouseMarket:
+
+*** SKIM [#A] [[https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2252Link][Arthur et al - Asset Pricing Under Endogenous Expectations in an Artificial Stock Market]] :ABM:SantaFe:AssetPrices:Bubbles:Expectations:
+    :PROPERTIES:
+    :YEAR:     1996
+    :ZOTERO:   Yes
+    :TYPE:     Theory
+    :STATUS:   Filed
+    :RELEVANCE: Low
+    :IMPACT:   High
+    :CITE:     Yes
+    :END:
+
+
+*** SKIM [#B] [[https://link.springer.com/article/10.1007/s11403-019-00238-5][Ozel et al - Macroeconomic implications of mortgage loan requirements: an agent-based approach]] :Mortgage:ABM:ToBase:
+
+*** SKIM [#C] [[http://jasss.soc.surrey.ac.uk/12/1/3.html][Filatova et al - Agent-Based Urban Land Markets: Agent's Pricing Behavior, Land Prices and Urban Land Use Change]] :ABM:Land:Urban:
+
+*** SKIM [#B] [[http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.130.6439][LeBaron - Building the santa fe artificial stock market]] :ABM:ToBase:ToReview:StockPrices:SantaFe:
+
+
 
 ** Theoretical foundations of institutions
 *** READ [#A] Institutions and economic development: theory, policy and history :QCA:
@@ -863,14 +1098,18 @@ CLOSED: [2021-02-16 ter 16:12]
 * Journals
 
 #+CAPTION: Journal abbreviations
-| Journal full name              | Abbreviation | Link |
-|--------------------------------+--------------+------|
-| Cambridge Journal of Economics | CJE          | [[https://academic.oup.com/cje][CJE]]  |
-|                                |              |      |
+| Journal full name                  | Abbreviation | Link |
+|------------------------------------+--------------+------|
+| Cambridge Journal of Economics     | CJE          | [[https://academic.oup.com/cje][CJE]]  |
+| Contributions to Political Economy | CPE          | [[https://academic.oup.com/cpe/advance-article/doi/10.1093/cpe/bzab002/6257799?login=true][CPE]]  |
 
 #+begin_note
 *Note:* No subheadings!
 #+end_note
+
+
+** <2021-05-04 ter> [[https://academic.oup.com/cpe/advance-article-abstract/doi/10.1093/cpe/bzab002/6257799][Surplus Approach, Institutions, And Economic Formations | Contributions to Po...]] :Sraffian:OffOffice:CPE:
+
 * Courses
 
 ** IEE 822: [[file:../notes/20201202092036-iee882_macroeconomia_financeira.org][IEE882 - Macroeconomia Financeira]]

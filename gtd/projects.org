@@ -6,11 +6,6 @@
 * Dissertation's general settings [0%] :Dissertation:
 ** TODO Verificar requisitos para qualificação
 
-* Fapesp
-** TODO Corrigir conflitos no refs.bib do projeto fapesp
-
-Procurar script do vim
-
 * QCA [0%] :Dissertation:
 ** TODO Ler seção 9.2.3 manual QCA
 ** TODO Ler sobre QCA em dois estágios
@@ -26,7 +21,6 @@ Procurar script do vim
 *** TODO Semana 4 (<2021-04-26 seg>): Revisão da literatura teórica
 ** TODO Modelos [0/1]
 *** TODO Modelo QCA FMI
-** TODO https://www.youtube.com/watch?v=hYNIndMcvaA
 ** TODO Fichar Green and Watcher
 ** TODO Organizar leituras comparação institucional: Lea
 ** IDEA QCA plot idea: Typical duration of a foreclosure procedure in boxplot
@@ -38,24 +32,12 @@ Procurar script do vim
 
 ** TODO Criar Source data frame
 ** TODO Pesquisar literatura de estrutura de capital para os bancos $\Rightarrow$ Fundamentação teórica QCA
+** TODO Incluir PCA e MCA na análise?
+- Permite analizar no tempo
+- Mais robusto
 * Panel [0%] :Dissertation:
+** TODO Reunir dados
 
-** TODO Ver equifax data
-** TODO https://www.sciencedirect.com/science/article/abs/pii/S026156062100019X
-** TODO Ler bloomberg ([[https://www.bloomberg.com/opinion/articles/2021-02-17/covid-housing-boom-is-even-bigger-than-imagined?utm_source=url_link][Link]])
-** [[https://academic.oup.com/jeea/article-abstract/18/4/2013/5573386?redirectedFrom=fulltext][Hoffman and Stewen - Holes in the Dike: The Global Savings Glut, U.S. House Prices, and the Long Shadow of Banking Deregulation]] :HousePrices:Panel:INBOX:
-
-** TODO The Housing Cycle: What Role for Mortgage Market Development and Housing Finance? :INBOX:
-** [[https://www.imf.org/~/media/Websites/IMF/imported-full-text-pdf/external/pubs/ft/wp/2008/_wp08224.ashx][IMF - Systemic Banking Crises: A New Database]] :INBOX:DATA:
-   :PROPERTIES:
-   :YEAR: 2008
-   :ZOTERO:   Yes
-   :TYPE:     Thechnical
-   :STATUS:   Downloaded
-   :RELEVANCE: High
-   :IMPACT:   High
-   :CITE:     Yes
-   :END:
 * ABM [0%] :Dissertation:
 
 ** TODO Pesquisar lattice LSD
@@ -65,9 +47,17 @@ Procurar script do vim
 ** WAIT Testar para o fim de 2019
 *** Pós envio ao Franklin
 *** Rever data com a quebra estrutural
-* MKKS model [0/3]
+** TODO Alterar "resultados esperados" na tabela 9
+** TODO Checar sinais da relação de cointegração
+*** Comparar Girardi e Pariboni
+** TODO Corrigir equação matricial
+** TODO Corrigir interpretação de Granger
+*** Ver slides Rosângela
+** TODO Melhorar figura 2
+** TODO Checar gravidade dos erros não serem normais
+* MKKS model [1/3]
 
-** TODO Ler tese Minsky
+** DONE Ler tese Minsky
 
 *** DONE Capítulo 6
 CLOSED: [2021-04-14 qua 15:32]
@@ -84,45 +74,25 @@ CLOSED: [2021-04-14 qua 15:32]
 ** TODO Concentration, Stagnation and Inequality:An Agent-Based Approach
 * Orientações [0%]
 ** Lorena
-*** DONE Criar repositório github
-CLOSED: [2021-04-05 seg 18:25]
-*** DONE Responder e-mail
-CLOSED: [2021-04-05 seg 18:24]
+*** TODO Dados das distâncias
+**** DONE Dados da capitais
+CLOSED: [2021-04-16 sex 14:24]
+**** WAIT Dados dos conflitos
+**** WAIT Calcular distâncias
+*** TODO Reunião <2021-04-26 seg>
 
-- Sugestões de leitura incluída no pull request
-
-*** KILL Conferir se alternativa QCA é viável
-CLOSED: [2021-03-14 dom 17:03]
-*** PROJ Ideia de estrutura de QCA <2021-03-20 sáb>
-
-- Casos :: Países
-- Variáveis :: Conflitos de acordo com alguma periodização (/e.g./ Guerra da Coreia)
-- Resultado :: Tendência da distribuição no período de análise
-- Tempo :: Se houver sobreposição dos conflitos, pode ser o caso de dividir em mais de um QCA ou agregar as variáveis
-- Fuzzy :: A variável pode ser calibrada de acordo com a distância da respectiva capital
-- Direcionais :: Todos contribuiriam para o resultado
-- Análise :: Foco na suficiência e necesidade; menos na equação minimizada
-*** PROJ Ideia de estrutura de QCA <2021-03-29 seg>
-
-As variáveis explicativas são as mesmas do heading anterior, a diferença é o design do modelo.
-A ideia é fazer mais de um QCA em subperíodos diferentes e selecionar os conflitos relevantes a partir do processo de minimização.
-Estes QCA não têm um fim por si só, o propósito é apenas reduzir o número de dimensões.
-Os subperíodos devem ser selecionados por critérios históricos.
-Caso não exista um critério bem definido, pode-se utilizar testes de quebra estrutural como proxy.
-Com os casos relevantes selecionados, analiza-se a necessidade e suficiência deles para com o resultado.
-O processo de minimização nesta etapa é menos relevante.
-
-Para conseguir estruturar este QCA, propõe-se os seguintes dataframes:
-- Descrição dos conflitos :: Inclui as informações relevantes de cada conflito como ano de início e fim, duração, países envolvidos e subperíodo ao qual pertence.
-  + Sugere-se que cada conflito possua um código e uma descrição mais detalhada
-  + A duração serviria para propóstos de programação apenas
-  + O subperíodo também pode ser utilizado para filtrar os meta-QCAs
-  + Esta tabela pode dar uma sugestão de narrativa dos capítulos anteriores.
-- Países e os conflitos :: Os países são os títulos das linhas, os conflitos são as colunas e as entradas apresentam a distância deste conflito da capital
-- Variáveis macroeconômicas :: Países e anos com variáveis macroeconômicas. Esta tabela deve incluir o resultado e, se for útil, outras variáveis macroeconômicas de interesse.
-- Meta-QCAs :: É a junção das informações anteriores a partir de filtros estabelecidos. Pode-se elaborar uma função para gerar tais tabelas. O objetvo final é gerar vetores com os nomes de conflitos relavantes (para ausência e presença do resultado) para então estimar o modelo completo.
-*** TODO Pedir dados de distância via Lucas
-**** Pesquisar se existem pacotes
+- Calcular o inverso da distância ao quadrado
+  + Checar o preenchimento dos dados faltantes
+    - Países que não o ISO
+    - Latitude da Korea
+      + Checar se OSM
+- Incluir conflitos repetitivos
+  + Excluir *colunas com NA*
+  + Multiplicar pelo vetor de repetição após a transformação
+- Filtrar países
+  + Sugestão: OCDE
+- Rodar análise de componente principal
+- Mostrar modelo QCA
 
 ** Felipe
 
@@ -133,12 +103,21 @@ Para conseguir estruturar este QCA, propõe-se os seguintes dataframes:
 *** TODO Marcar reunião
 
 - Mencionar que precisamos contatar o Mariano em algum momento
-* Cecon [0%] :Group:
-
-** Nota 017 [0%]
-
 * Blog :@free:
 ** Tabela latex
 ** Programas para desenho de diagramas
 * Bibliographical shinny app [0/0] :@free:
 ** [[https://docs.ropensci.org/bib2df/][bib2df]]
+* Stylized Factbook
+
+** TODO Texto do Kaldor como exemplo
+
+** TODO Definir Journals relevantes
+
+** TODO Definir um critério para o artigo ser selecionado
+
+** TODO Criar arquivo de macro
+
+*** TODO Linkar na documentação
+
+*** TODO Criar seções com código JEL

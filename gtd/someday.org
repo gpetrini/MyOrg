@@ -33,24 +33,10 @@ PhD Student 29 Euros for 2 years
 
 - Issue created
 
-* TODO Ver por que Emacs fica lento depois de um tempo de uso :Emacs:
-- Company?
-- GCC fica levemente lento com company mode
-
-* TODO Resolver lentidão Zotero :Computer:
 * TODO Org-noter: extrair página do texto e não do PDF :Emacs:
 * TODO Remover ref links do org-roam-server :Emacs:OrgRoam:
-* TODO Pesquisar waiting for git at emacs start up :Emacs:
-* TODO Garrafa Térmica :@Home:
 * TODO Configurar Configurações como org :@Free:Computer:
-* CANC Instalar Manjaro :Computer:@Free:
-CLOSED: [2021-03-02 ter 17:13]
 * TODO Org-citeproc :Emacs:
-* TODO Criar pacote python com funções encontradas na internet
-** Vincular ao social-paths?
-* TODO Criar IDs nas anotações :Emacs:OrgRoam:
 * TODO Função para criar IDs (ver org-roam) :Emacs:OrgRoam:
-* TODO [[https://www.ecb.europa.eu/pub/pdf/other/euhousingmarketsen.pdf][Structuralfactors in the euhousing markets]] :Emacs:OrgRoam:
-** TODO Como incluir IDs nos templates
 * TODO Ver documentação org-roam V2 :Emacs:OrgRoam:
 * TODO Criar subheading de dados e outro para archive :Emacs:Readings:
