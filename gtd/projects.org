@@ -41,28 +41,29 @@
 * ABM [0%] :Dissertation:
 
 ** TODO Pesquisar lattice LSD
+
+** TODO Estruturar modelo
+
+** TODO Modelar governo e banco
+
+** TODO Modelar firmas não construtoras
+
+** TODO Mdelar firmas construtoras
+
+** TODO Modelar famílias
+
+** TODO Modelar casas
+
+** TODO Modelar preço das casas
 * VECM [0%] :Article:
 
-** HOLD Problema: não esta discutindo especulação e bolhas
 ** WAIT Testar para o fim de 2019
 *** Pós envio ao Franklin
 *** Rever data com a quebra estrutural
-** TODO Alterar "resultados esperados" na tabela 9
-** TODO Checar sinais da relação de cointegração
-*** Comparar Girardi e Pariboni
-** TODO Corrigir equação matricial
-** TODO Corrigir interpretação de Granger
-*** Ver slides Rosângela
-** TODO Melhorar figura 2
-** TODO Checar gravidade dos erros não serem normais
-* MKKS model [1/3]
-
-** DONE Ler tese Minsky
-
-*** DONE Capítulo 6
-CLOSED: [2021-04-14 qua 15:32]
-
-*** TODO Capítulo 9
+** TODO Juntar figura 4 com a 7
+** TODO Et. all em itálico
+** TODO Corrigir referências
+* MKKS model [0/3]
 
 ** TODO Endogeneizar $rho_u$
 
@@ -70,39 +71,32 @@ CLOSED: [2021-04-14 qua 15:32]
 
 - Separar capital de giro e investimento
 
+** TODO Adaptar diagrama
+
+- [ ] Sem dole do governo para as famílias
+- [ ] Governo consome direto das firmas
+- [ ] Não tem loan credit market
+  + [ ] Sem heterogeneidade dos bancos
+- [ ] Sem new firms
+- [ ] Banco central implícito (manter)
+
 * ABM dot-com [0/1] :@free:Article:
 ** TODO Concentration, Stagnation and Inequality:An Agent-Based Approach
 * Orientações [0%]
 ** Lorena
-*** TODO Dados das distâncias
-**** DONE Dados da capitais
-CLOSED: [2021-04-16 sex 14:24]
-**** WAIT Dados dos conflitos
-**** WAIT Calcular distâncias
-*** TODO Reunião <2021-04-26 seg>
-
-- Calcular o inverso da distância ao quadrado
-  + Checar o preenchimento dos dados faltantes
-    - Países que não o ISO
-    - Latitude da Korea
-      + Checar se OSM
-- Incluir conflitos repetitivos
-  + Excluir *colunas com NA*
-  + Multiplicar pelo vetor de repetição após a transformação
-- Filtrar países
-  + Sugestão: OCDE
-- Rodar análise de componente principal
-- Mostrar modelo QCA
+*** TODO Calibragem das distâncias
+*** TODO Calibragem das demais variáveis
+*** TODO Rodar modelo
+*** TODO Análise do modelo
 
 ** Felipe
 
-*** TODO Pesquisar como incluir dimensão tempora no PCA
+*** TODO Comentar monografia
 
-*** TODO Analizar dados
+*** TODO Comentar motivos das variáveis
 
-*** TODO Marcar reunião
+*** TODO Enfatizar as equações dos PCAs
 
-- Mencionar que precisamos contatar o Mariano em algum momento
 * Blog :@free:
 ** Tabela latex
 ** Programas para desenho de diagramas
@@ -113,6 +107,8 @@ CLOSED: [2021-04-16 sex 14:24]
 ** TODO Texto do Kaldor como exemplo
 
 ** TODO Definir Journals relevantes
+
+*** TODO Importar [[https://www.hetecon.net/resources/journal-rankings/][Tabela]]
 
 ** TODO Definir um critério para o artigo ser selecionado
 

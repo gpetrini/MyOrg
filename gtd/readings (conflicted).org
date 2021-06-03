@@ -3,7 +3,7 @@
 #+AUTHOR: Gabriel Petrini
 #+LANG: en
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-bigblow.setup
-#+TODO: READ SKIM PARTIAL WAIT MAYBE REF INPROGRESS | REPORT DONE ARCH
+#+TODO: READ SKIM PARTIAL WAIT MAYBE REF | REPORT DONE ARCH
 #+PROPERTY: FINISHED_ALL "[ ]" "[X]"
 #+PROPERTY: COLUMNS  %FINISHED(Finished?){X} %TODO(Decision) %ITEM(File) %TAG
 #+EXCLUDE_TAGS: ARCHIVE
@@ -65,12 +65,11 @@ Deciding whether to read:
 After reading:
 
 #+CAPTION: After reading classification
-| DONE      | Description                                |
-|-----------+--------------------------------------------|
-| INPROGRESS | Papers that were read but not reported yet |
-| REPORT    | FISH-5SS table report only                 |
-| DONE      | Full report                                |
-| ARCH      | Archived (do not read for this project)    |
+| DONE   | Description                             |
+|--------+-----------------------------------------|
+| REPORT | FISH-5SS table report only              |
+| DONE   | Full report                             |
+| ARCH   | Archived (do not read for this project) |
 
 
 ** Steps
@@ -97,12 +96,6 @@ After reading:
 *Description:* Captured entries
 #+end_note
 :OffOffice:IncomeDistribution:ThirlwallLaw:Development:meca:
-** [#A] <2021-06-02 qua> [[http://www.lem.sssup.it/WPLem/files/2017-30.pdf]] :ABM:Canonical:ToBase:Spatial:
-** <2021-06-02 qua> [[https://cepr.org/active/publications/discussion_papers/dp.php?dpno=16196][Centre for Economic Policy Research]] :HousePrices:InterestRate:Survey:Panel:ABM:
-** <2021-05-27 qui> [[https://link.springer.com/chapter/10.1007/978-3-030-62070-7_13][Labour Markets and Income Distribution | SpringerLink]] :Sraffian:OffOffice:LaborMarket:ClassStrugle:
-** <2021-05-27 qui> [[https://www.tandfonline.com/doi/abs/10.1080/02673037.2021.1928005?journalCode=chos20][Returning to the intermediary turn: rethinking the significance of estate age...]] :ABM:Empirical:StilyzedFacts:RealEstateAgents:
-** <2021-05-27 qui> [[http://rcea.org/wp-content/uploads/2021/05/Chowdhury.pdf]] :Panel:TimeSeries:MSVAR:UK:InterestRate:
-** <2021-05-25 ter> [[https://www.tandfonline.com/doi/full/10.1080/09538259.2021.1923282][Punishment or Forgiveness? Loan Modifications in Private Label Residential Mo...]] :Mortgage:USA:Foreclosure:DebtForgiveness:Secutiritization:
 ** <2021-05-11 ter> [[https://www.researchgate.net/profile/Stefano-Di-Bucchianico/publication/351359936_Inequality_household_debt_ageing_and_bubbles_A_model_of_demand-side_Secular_Stagnation/links/6093ecf392851c490fbc88e0/Inequality-household-debt-ageing-and-bubbles-A-model-of-demand-side-Secular-Stagnation.pdf]] :Bubbles:Sraffian:HousePrices:
 ** <2021-05-10 seg> [[https://www.oxfordhandbooks.com/view/10.1093/oxfordhb/9780199640935.001.0001/oxfordhb-9780199640935-e-023][Residential Mortgages - Oxford Handbooks]] :Mortgage:InternationalComparison:
 ** <2021-05-03 seg> [[https://academic.oup.com/oxrep/article/24/1/1/5140987][Housing markets and the economy: the assessment | Oxford Review of Economic P...]] :Panel:StilyzedFacts:Results:
@@ -138,9 +131,6 @@ After reading:
 
 ** [[file:../notes/20210210100407-abm_readings.org][ABM Readings]] :ABM:
 
-*Chapter goals:* Relates the financial and spatial dimension of the housing market and connects to the house price mechanisms in order to explain how asset inflation affects the business cycle.
-
-*Empirical motivation:* No consensuns on the causes of the recent GFC episode: leverage? interest rates? leniency? speculation? The new narrative is just a reflection about that discenssus and highlights the relevance of agents heterogeinity.
 
  Usefull links
 - [[http://jasss.soc.surrey.ac.uk/8/1/5.html][JASS - Journal of Artificial Societies and Social Simulation]]
@@ -157,17 +147,10 @@ After reading:
 *Description:* ABM exclusively readings
 #+end_note
 
-*** DONE [#A] [[https://www.aeaweb.org/articles?id=10.1257/aer.102.3.53][Getting at Systemic Risk via an Agent-Based Model of the Housing Market - Ame...]] :ABM:Residential:HouseMarket:Baseline:
-CLOSED: [2021-05-20 qui 17:27]
-*** DONE [#A] [[https://link.springer.com/chapter/10.1007/978-3-642-31301-1_6][Integrating the housing market into an agent-based economic model | SpringerLink]] :ABM:ToBase:
-CLOSED: [2021-05-20 qui 17:28]
-*** READ [#A] [[https://apo.org.au/sites/default/files/resource-files/2014-05/apo-nid172196.pdf][An Agent-Based Model of the Housing Market Bubble in Metropolitan Washington, D.C]]
-*** READ [#A] [[http://www.economics-ejournal.org/economics/journalarticles/2014-8/][Housing market bubbles and business cycles in an agent-based credit economy]]
-*** READ [#A] [[https://link.springer.com/chapter/10.1007/978-3-642-54783-6_10][Who Creates Housing Bubbles? An Agent-Based Study | SpringerLink]] :HouseMarket:ABM:Speculation:Residential:
 *** READ [#A] [[https://journals.sagepub.com/doi/abs/10.1068/b120043p?casa_token=iKsuk1pmtAkAAAAA:bzgOy0fE1JrgOV7fZGp7CrnFnjh2wDx2BxaTr4h9s4LDcNp5SlqLaWMkXvwSKqSybhQvE-QP65K9][A Review of Urban Residential Choice Models Using Agent-Based Modeling - Qing...]] :ABM:Land:Survey:
 *** DONE [#A] [[https://doi.org/10.1016/j.compenvurbsys.2016.11.005][Endogenous rise and collapse of housing price: An agent-based model of the housing market]]
 CLOSED: [2021-05-17 seg 16:41]
-*** PARTIAL [#A] <2021-05-06 qui> [[https://www.sciencedirect.com/science/article/pii/S1574002118300066?via%3Dihub][Agent-Based Macroeconomics - ScienceDirect]] :ABM:Survey:
+*** READ [#A] <2021-05-06 qui> [[https://www.sciencedirect.com/science/article/pii/S1574002118300066?via%3Dihub][Agent-Based Macroeconomics - ScienceDirect]] :ABM:Survey:
 - Ler 4.3
 - Ler 4.5
 - Rever itens grifados
@@ -287,7 +270,35 @@ CLOSED: [2021-05-17 seg 16:41]
 }
     #+END_SRC
 
-*** SKIM [#B] [[https://www.aaai.org/Papers/Symposia/Spring/2009/SS-09-09/SS09-09-007.pdf]] :ABM:Spatial:Residential:
+*** SKIM [#A] [[https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2018375][Geanakoplos et al - Getting at Systemic Risk Via an Agent-Based Model of the Housing Market]] :ABM:HouseMarket:SystemicRisk:
+    :PROPERTIES:
+    :YEAR:     2012
+    :ZOTERO:   Yes
+    :TYPE:     Theory
+    :STATUS:   Filed
+    :RELEVANCE: Regular
+    :IMPACT:   High
+    :CITE:     Yes
+    :END:
+
+    #+BEGIN_SRC bibtex
+@Article{Geanakoplos_2012,
+  author       = {Geanakoplos, John and Axtell, Robert and Farmer,
+                  J. Doyne and Howitt, Peter and Conlee, Benjamin and
+                  Goldstein, Jonathan and Hendrey, Matthew and Palmer,
+                  Nathan M. and Yang, Chun-Yi},
+  title	       = {Getting at Systemic Risk Via an Agent-Based Model of
+                  the Housing Market},
+  year	       = 2012,
+  issn	       = {1556-5068},
+  doi	       = {10.2139/ssrn.2018375},
+  url	       = {http://dx.doi.org/10.2139/ssrn.2018375},
+  journal      = {SSRN Electronic Journal},
+  publisher    = {Elsevier BV}
+}
+
+
+    #+END_SRC
 *** SKIM [#C] [[http://www2.econ.iastate.edu/classes/econ308/tesfatsion/SFIStockOverview.LT.pdf][Tesfatsion - Overview of theSanta Fe Artificial Stock Market Model]] :Survey:ABM:SantaFe:Quick:
     :PROPERTIES:
     :YEAR:
@@ -334,7 +345,6 @@ CLOSED: [2021-05-17 seg 16:41]
   publisher    = {Informa UK Limited}
 }
    #+END_SRC
-*** WAIT [#A] [[https://www.annualreviews.org/doi/abs/10.1146/annurev.economics.012809.103822][Housing Bubbles: A Survey | Annual Review of Economics]] :Survey:Bubbles:StilyzedFacts:
 *** WAIT [#C] [[https://www.cfainstitute.org/en/research/foundation/2009/the-shadow-banking-system-and-hyman-minskys-economic-journey][McCulley (2010)]] :Inbox:ABM:NewNarrative:
 *** WAIT [#D] [[http://www2.econ.iastate.edu/tesfatsi/SFISTOCKDetailed.LT.htm][Tesfatsion - Detailed Notes on th Santa Fe Artificial Stock Market (ASM) Model]] :StockPrices:SantaFe:
    :PROPERTIES:
@@ -370,18 +380,7 @@ CLOSED: [2021-05-17 seg 16:41]
 
 *** SKIM [#B] [[http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.130.6439][LeBaron - Building the santa fe artificial stock market]] :ABM:ToBase:ToReview:StockPrices:SantaFe:
 
-*** REPORT Agent-based modeling: From individual residential choice to urban residential dynamics
-CLOSED: [2021-05-20 qui 10:46]
 
-- Migration
-
-*** REF Smith’s rent gap theory and local real estate dynamics: A multi-agent model
-
-- Gentrification
-
-*** REF Exploring the foreclosure contagion eﬀect using agent-based modeling
-
-- Contagion effect
 
 ** Theoretical foundations of institutions
 *** READ [#A] Institutions and economic development: theory, policy and history :QCA:
@@ -1147,4 +1146,4 @@ CLOSED: [2021-03-02 ter 18:16]
 * Lectures
 * Off office
 
-**
+** READ O andar do bêbado
