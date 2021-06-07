@@ -40,21 +40,12 @@
 
 * ABM [0%] :Dissertation:
 
-** TODO Pesquisar lattice LSD
+** TODO [#A] Modelar versão mais simples
 
-** TODO Estruturar modelo
+** TODO Pesquisar melhor sobre os hooks do LSD
 
-** TODO Modelar governo e banco
+** TODO [#C] Pesquisar lattice LSD
 
-** TODO Modelar firmas não construtoras
-
-** TODO Mdelar firmas construtoras
-
-** TODO Modelar famílias
-
-** TODO Modelar casas
-
-** TODO Modelar preço das casas
 * VECM [0%] :Article:
 
 ** WAIT Testar para o fim de 2019
@@ -73,7 +64,7 @@
 
 ** TODO Adaptar diagrama
 
-- [ ] Sem dole do governo para as famílias
+- [X] Sem dole do governo para as famílias
 - [ ] Governo consome direto das firmas
 - [ ] Não tem loan credit market
   + [ ] Sem heterogeneidade dos bancos
@@ -84,10 +75,12 @@
 ** TODO Concentration, Stagnation and Inequality:An Agent-Based Approach
 * Orientações [0%]
 ** Lorena
-*** TODO Calibragem das distâncias
-*** TODO Calibragem das demais variáveis
-*** TODO Rodar modelo
-*** TODO Análise do modelo
+*** STRT Calibragem das distâncias
+*** STRT Calibragem das demais variáveis
+*** STRT Rodar modelo
+*** STRT Análise do modelo
+*** TODO Refazer modelo excluindo EUA
+*** TODO Verificar necessidade de fazer teste de quebra estrutural
 
 ** Felipe
 
