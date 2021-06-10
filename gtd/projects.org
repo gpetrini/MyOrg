@@ -4,9 +4,91 @@
 #+SETUPFILE: /HDD/Org/org-html-themes/org/theme-bigblow-local.setup
 
 * Dissertation's general settings [0%] :Dissertation:
-** TODO Verificar requisitos para qualificação
+** TODO Marcar qualificação
+** TODO Nota fiscal computador
+- Como fazer com mais de um item?
 
-* QCA [0%] :Dissertation:
+* ABM [0%] :Dissertation:
+
+** TODO [#A] Modelar versão mais simples
+- [ ] Ver exportação de tabela no html
+  + Incluir slider css
+
+** TODO Pesquisar melhor sobre os hooks do LSD
+
+** TODO [#C] Pesquisar lattice LSD
+
+** TODO Modelo com crédito para as famílias
+
+** TODO Modelo com preço das casas pró-cíclico
+
+* MKKS model [0/3]
+
+** TODO Endogeneizar $rho_u$
+
+** TODO Ajustar equações dos bancos
+
+- Separar capital de giro e investimento
+
+** TODO Adaptar diagrama
+
+- [X] Sem dole do governo para as famílias
+- [ ] Governo consome direto das firmas
+- [ ] Não tem loan credit market
+  + [ ] Sem heterogeneidade dos bancos
+- [ ] Sem new firms
+- [ ] Banco central implícito (manter)
+
+* Orientações [0%]
+** Lorena
+*** STRT Calibragem das distâncias
+*** STRT Calibragem das demais variáveis
+*** STRT Rodar modelo
+*** STRT Análise do modelo
+*** STRT Refazer modelo excluindo EUA
+*** STRT Alterar resultado de interesse
+*** TODO Checar a hipótese da solução parcimoniosa (minimização)
+*** TODO Verificar necessidade de fazer teste de quebra estrutural
+
+** Felipe
+
+* ABM dot-com [0/1] :@free:Article:
+** TODO Concentration, Stagnation and Inequality:An Agent-Based Approach
+* Grupos
+** Teses
+*** TODO Ler projeto Júlia
+* Panel [0%] :Dissertation:
+** TODO Reunir dados
+
+* Blog :@free:
+** Tabela latex
+** Programas para desenho de diagramas
+* Bibliographical shinny app [0/0] :@free:
+** [[https://docs.ropensci.org/bib2df/][bib2df]]
+* Stylized Factbook
+
+** TODO Texto do Kaldor como exemplo
+
+** TODO Definir Journals relevantes
+
+*** TODO Importar [[https://www.hetecon.net/resources/journal-rankings/][Tabela]]
+
+** TODO Definir um critério para o artigo ser selecionado
+
+** TODO Criar arquivo de macro
+
+*** TODO Linkar na documentação
+
+*** TODO Criar seções com código JEL
+* VECM [0%] :Article:
+
+** WAIT Testar para o fim de 2019
+*** Pós envio ao Franklin
+*** Rever data com a quebra estrutural
+** TODO Juntar figura 4 com a 7
+** TODO Et. all em itálico
+** TODO Corrigir referências
+* [#C] QCA [0%] :Dissertation:
 ** TODO Ler seção 9.2.3 manual QCA
 ** TODO Ler sobre QCA em dois estágios
 ** TODO Organizar dados em uma tabela
@@ -35,78 +117,3 @@
 ** TODO Incluir PCA e MCA na análise?
 - Permite analizar no tempo
 - Mais robusto
-* Panel [0%] :Dissertation:
-** TODO Reunir dados
-
-* ABM [0%] :Dissertation:
-
-** TODO [#A] Modelar versão mais simples
-
-** TODO Pesquisar melhor sobre os hooks do LSD
-
-** TODO [#C] Pesquisar lattice LSD
-
-* VECM [0%] :Article:
-
-** WAIT Testar para o fim de 2019
-*** Pós envio ao Franklin
-*** Rever data com a quebra estrutural
-** TODO Juntar figura 4 com a 7
-** TODO Et. all em itálico
-** TODO Corrigir referências
-* MKKS model [0/3]
-
-** TODO Endogeneizar $rho_u$
-
-** TODO Ajustar equações dos bancos
-
-- Separar capital de giro e investimento
-
-** TODO Adaptar diagrama
-
-- [X] Sem dole do governo para as famílias
-- [ ] Governo consome direto das firmas
-- [ ] Não tem loan credit market
-  + [ ] Sem heterogeneidade dos bancos
-- [ ] Sem new firms
-- [ ] Banco central implícito (manter)
-
-* ABM dot-com [0/1] :@free:Article:
-** TODO Concentration, Stagnation and Inequality:An Agent-Based Approach
-* Orientações [0%]
-** Lorena
-*** STRT Calibragem das distâncias
-*** STRT Calibragem das demais variáveis
-*** STRT Rodar modelo
-*** STRT Análise do modelo
-*** TODO Refazer modelo excluindo EUA
-*** TODO Verificar necessidade de fazer teste de quebra estrutural
-
-** Felipe
-
-*** TODO Comentar monografia
-
-*** TODO Comentar motivos das variáveis
-
-*** TODO Enfatizar as equações dos PCAs
-
-* Blog :@free:
-** Tabela latex
-** Programas para desenho de diagramas
-* Bibliographical shinny app [0/0] :@free:
-** [[https://docs.ropensci.org/bib2df/][bib2df]]
-* Stylized Factbook
-
-** TODO Texto do Kaldor como exemplo
-
-** TODO Definir Journals relevantes
-
-*** TODO Importar [[https://www.hetecon.net/resources/journal-rankings/][Tabela]]
-
-** TODO Definir um critério para o artigo ser selecionado
-
-** TODO Criar arquivo de macro
-
-*** TODO Linkar na documentação
-
-*** TODO Criar seções com código JEL
