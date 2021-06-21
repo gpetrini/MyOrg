@@ -8,8 +8,60 @@
 ** TODO Nota fiscal computador
 - Como fazer com mais de um item?
 
+* SFC [28%]
+
+** DONE Procurar pacote de alterar cores
+CLOSED: [2021-06-16 qua 14:02]
+
+** TODO Parecerista A [63%]
+
+*** DONE Item 1
+CLOSED: [2021-06-16 qua 11:53]
+
+*** DONE Item 2
+CLOSED: [2021-06-16 qua 14:02]
+
+*** DONE Item 3
+CLOSED: [2021-06-16 qua 14:02]
+
+*** TODO Item 4
+
+*** TODO Item 5
+
+*** DONE Item 6
+CLOSED: [2021-06-16 qua 14:03]
+
+*** DONE Item 7
+CLOSED: [2021-06-16 qua 14:03]
+
+*** DONE Item 8
+CLOSED: [2021-06-16 qua 14:03]
+
+*** DONE Item 9
+CLOSED: [2021-06-16 qua 14:03]
+
+*** TODO Remover crédito para capitalistas
+
+*** TODO Nova função consumo
+
+** TODO Criar documento de resposta aos pareceristas
+
+** DONE Conferir se as simulações mudaram
+CLOSED: [2021-06-21 seg 16:57]
+
+** STRT Solução analítica com as novas variáveis
+
+** TODO Parecerista B
+
+*** TODO Pensar em novas simulações
+
+**** TODO Checar como esta em Mandarino et all (2020)
+
+** TODO Rodar análise de sensibilidade novamente com novo gasto capitalista
+
 * ABM [0%] :Dissertation:
 
+** TODO [#A] Difusion model
 ** TODO [#A] Modelar versão mais simples
 - [ ] Ver exportação de tabela no html
   + Incluir slider css
@@ -21,6 +73,19 @@
 ** TODO Modelo com crédito para as famílias
 
 ** TODO Modelo com preço das casas pró-cíclico
+
+* Orientações [0%]
+** Lorena
+*** STRT Calibragem das distâncias
+*** STRT Calibragem das demais variáveis
+*** STRT Rodar modelo
+*** STRT Análise do modelo
+*** STRT Refazer modelo excluindo EUA
+*** STRT Alterar resultado de interesse
+*** TODO Checar a hipótese da solução parcimoniosa (minimização)
+*** TODO Verificar necessidade de fazer teste de quebra estrutural
+
+** Felipe
 
 * MKKS model [0/3]
 
@@ -38,19 +103,6 @@
   + [ ] Sem heterogeneidade dos bancos
 - [ ] Sem new firms
 - [ ] Banco central implícito (manter)
-
-* Orientações [0%]
-** Lorena
-*** STRT Calibragem das distâncias
-*** STRT Calibragem das demais variáveis
-*** STRT Rodar modelo
-*** STRT Análise do modelo
-*** STRT Refazer modelo excluindo EUA
-*** STRT Alterar resultado de interesse
-*** TODO Checar a hipótese da solução parcimoniosa (minimização)
-*** TODO Verificar necessidade de fazer teste de quebra estrutural
-
-** Felipe
 
 * ABM dot-com [0/1] :@free:Article:
 ** TODO Concentration, Stagnation and Inequality:An Agent-Based Approach

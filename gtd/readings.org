@@ -97,6 +97,8 @@ After reading:
 *Description:* Captured entries
 #+end_note
 :OffOffice:IncomeDistribution:ThirlwallLaw:Development:meca:
+** <2021-06-21 seg> [[https://www.sciencedirect.com/science/article/pii/S105113772100036X][Housing and household consumption: An investigation of the wealth and collate...]] :Empirical:HousePrices:WealthEffect:Panel:Germany:
+** <2021-06-21 seg> [[https://apo.org.au/sites/default/files/resource-files/2021-06/apo-nid312736.pdf]] :HouseMarket:Australia:Report:
 ** [#A] <2021-06-02 qua> [[http://www.lem.sssup.it/WPLem/files/2017-30.pdf]] :ABM:Canonical:ToBase:Spatial:
 ** <2021-06-02 qua> [[https://cepr.org/active/publications/discussion_papers/dp.php?dpno=16196][Centre for Economic Policy Research]] :HousePrices:InterestRate:Survey:Panel:ABM:
 ** <2021-05-27 qui> [[https://link.springer.com/chapter/10.1007/978-3-030-62070-7_13][Labour Markets and Income Distribution | SpringerLink]] :Sraffian:OffOffice:LaborMarket:ClassStrugle:
@@ -161,7 +163,9 @@ After reading:
 CLOSED: [2021-05-20 qui 17:27]
 *** DONE [#A] [[https://link.springer.com/chapter/10.1007/978-3-642-31301-1_6][Integrating the housing market into an agent-based economic model | SpringerLink]] :ABM:ToBase:
 CLOSED: [2021-05-20 qui 17:28]
-*** READ [#A] [[https://apo.org.au/sites/default/files/resource-files/2014-05/apo-nid172196.pdf][An Agent-Based Model of the Housing Market Bubble in Metropolitan Washington, D.C]]
+*** READ <2021-06-11 sex> [[https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0129070][Endogenous Price Bubbles in a Multi-Agent System of the Housing Market]] :Spatial:ABM:Bubbles:HouseMarket:
+*** REPORT [#A] [[https://apo.org.au/sites/default/files/resource-files/2014-05/apo-nid172196.pdf][An Agent-Based Model of the Housing Market Bubble in Metropolitan Washington, D.C]]
+CLOSED: [2021-06-12 sáb 08:18]
 *** READ [#A] [[http://www.economics-ejournal.org/economics/journalarticles/2014-8/][Housing market bubbles and business cycles in an agent-based credit economy]]
 *** READ [#A] [[https://link.springer.com/chapter/10.1007/978-3-642-54783-6_10][Who Creates Housing Bubbles? An Agent-Based Study | SpringerLink]] :HouseMarket:ABM:Speculation:Residential:
 *** READ [#A] [[https://journals.sagepub.com/doi/abs/10.1068/b120043p?casa_token=iKsuk1pmtAkAAAAA:bzgOy0fE1JrgOV7fZGp7CrnFnjh2wDx2BxaTr4h9s4LDcNp5SlqLaWMkXvwSKqSybhQvE-QP65K9][A Review of Urban Residential Choice Models Using Agent-Based Modeling - Qing...]] :ABM:Land:Survey:
@@ -1091,6 +1095,7 @@ CLOSED: [2021-02-16 ter 16:12]
 *** SKIM <2021-03-19 sex> [[http://saeb.feaa.uaic.ro/index.php/saeb/article/view/1480][House Price Shock and Business Cycle: The French Case | Saad | Scientific Ann...]] :Panel:HousePrices:BusinessCycle:France:
 *** ARCH [#C] [[https://www.kansascityfed.org/PUBLICAT/ECONREV/PDF/2q07rapp.pdf][Rappaport - A Guide to Aggregate House Price Measures]] :USA:HousePrices:
 
+*** <2021-06-14 seg> [[https://www.sciencedirect.com/science/article/pii/S2325426221000139][Examining the determinants of housing prices and the influence of the spatial...]] :HousePrices:Spatial:Empirical:Panel:China:
 ** [[file:../notes/20210405101242-bubbles_and_aggregate_demand.org][Bubbles and aggregate demand]]
 
 *** READ [#A] [[https://www.nber.org/papers/w21486][Leveraged Bubbles (Jordà et. all, 2015)]]
