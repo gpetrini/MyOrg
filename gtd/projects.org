@@ -3,11 +3,16 @@
 #+AUTHOR: Gabriel Petrini
 #+SETUPFILE: /HDD/Org/org-html-themes/org/theme-bigblow-local.setup
 
-* Dissertation's general settings [0%] :Dissertation:
+* Dissertation's general settings [33%] :Dissertation:
 ** TODO Marcar qualificação
-** TODO Nota fiscal computador
-- Como fazer com mais de um item?
-** TODO Comprar periféricos
+** DONE Nota fiscal computador
+CLOSED: [2021-07-12 seg 11:56]
+** DONE Comprar periféricos
+CLOSED: [2021-07-12 seg 11:56]
+** TODO Scanear nota fiscal periféricos
+** TODO Adicionar Ítalo como co-orientador
+- [ ] Atualizar abntex
+** TODO Como definir os labels com repetição
 
 * SFC [28%]
 
@@ -77,16 +82,20 @@ CLOSED: [2021-06-21 seg 16:57]
 
 * Orientações [0%]
 ** Lorena
-*** STRT Calibragem das distâncias
-*** STRT Calibragem das demais variáveis
-*** STRT Rodar modelo
-*** STRT Análise do modelo
-*** STRT Refazer modelo excluindo EUA
-*** STRT Alterar resultado de interesse
-*** TODO Checar a hipótese da solução parcimoniosa (minimização)
-*** TODO Verificar necessidade de fazer teste de quebra estrutural
+
+*** TODO Discutir modelo final
+
+*** TODO Marcar reunião com Lucas
+
+*** TODO Propor cronograma de trabalho
 
 ** Felipe
+
+*** TODO Entender se é necessário retirar Capex
+
+*** TODO Plotar Capex contra PCs
+
+*** TODO Marcar reunião
 
 * MKKS model [0/3]
 

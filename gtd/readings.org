@@ -97,6 +97,13 @@ After reading:
 *Description:* Captured entries
 #+end_note
 :OffOffice:IncomeDistribution:ThirlwallLaw:Development:meca:
+** <2021-07-13 ter> [[https://www.tandfonline.com/doi/abs/10.1080/08965803.2021.1938917][Residential Housing Market and Bank Stability: Focusing on OECD and Emerging ...]] :Empirical:HousePrices:FinancialRisk:Panel:OECD:Australia:Banking:
+** <2021-07-01 qui> [[https://www.sciencedirect.com/science/article/abs/pii/S0264999315001777][Investment hysteresis and potential output: A post-Keynesian–Kaleckian agent-...]] :ToBase:ABM:Supermultiplier:NonResidentialInvestment:
+** <2021-07-01 qui> [[https://doi.org/10.1007/s40888-020-00200-w][Harrodian instability in decentralized economies: an agent-based approach | S...]] :ABM:Supermultiplier:ToBase:
+** <2021-07-01 qui> [[https://arxiv.org/abs/2009.06914][{2009.06914} The impact of social influence in Australian real-estate: market...]] :ABM:HouseMarket:Spatial:
+** <2021-06-30 qua> [[https://www.bancaditalia.it/pubblicazioni/temi-discussione/2021/2021-1338/en_tema_1338.pdf]] :ABM:Empirical:Italy:MacroPrudentialPolicy:HouseMarket:Calibration:SearchAlgorithm:
+** <2021-06-30 qua> [[https://ideas.repec.org/a/ecb/ecbbox/202100045.html][Euro area house price developments during the coronavirus pandemic]] :Europe:HousePrices:Empirical:COVID19:
+** <2021-06-30 qua> [[https://onlinelibrary.wiley.com/doi/abs/10.1002/mde.3393][Time‐varying impact of housing price fluctuations on banking financial risk -...]] :Empirical:TimeSeries:HousePrices:FinancialRisk:Banking:MacroPrudentialPolicy:
 ** <2021-06-21 seg> [[https://www.sciencedirect.com/science/article/pii/S105113772100036X][Housing and household consumption: An investigation of the wealth and collate...]] :Empirical:HousePrices:WealthEffect:Panel:Germany:
 ** <2021-06-21 seg> [[https://apo.org.au/sites/default/files/resource-files/2021-06/apo-nid312736.pdf]] :HouseMarket:Australia:Report:
 ** [#A] <2021-06-02 qua> [[http://www.lem.sssup.it/WPLem/files/2017-30.pdf]] :ABM:Canonical:ToBase:Spatial:
@@ -1110,11 +1117,14 @@ CLOSED: [2021-02-16 ter 16:12]
 * Journals
 
 #+CAPTION: Journal abbreviations
-| Journal full name                  | Abbreviation | Link |
-|------------------------------------+--------------+------|
-| Cambridge Journal of Economics     | CJE          | [[https://academic.oup.com/cje][CJE]]  |
-| Contributions to Political Economy | CPE          | [[https://academic.oup.com/cpe][cpe]]  |
-| Metroeconomica                     | meca         | [[https://onlinelibrary.wiley.com/journal/1467999x][meca]] |
+| Journal full name                           | Abbreviation | Link |
+|---------------------------------------------+--------------+------|
+| Cambridge Journal of Economics              | CJE          | [[https://academic.oup.com/cje][CJE]]  |
+| Contributions to Political Economy          | CPE          | [[https://academic.oup.com/cpe][cpe]]  |
+| Metroeconomica                              | meca         | [[https://onlinelibrary.wiley.com/journal/1467999x][meca]] |
+| Jornal of Economics Surveys                 | joes         | [[https://onlinelibrary.wiley.com/journal/14676419][joes]] |
+| Journal of Economic Dynamics and Control    | jedc         | [[https://www.journals.elsevier.com/journal-of-economic-dynamics-and-control][jedc]] |
+| Journal of Economic Behavior & Organization | jebo         | [[https://www.journals.elsevier.com/journal-of-economic-behavior-and-organization][jebo]] |
 
 #+begin_note
 *Note:* No subheadings!
