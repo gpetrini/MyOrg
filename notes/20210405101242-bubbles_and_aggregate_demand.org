@@ -1,5 +1,8 @@
+:PROPERTIES:
+:ID:       a6a37eb8-fe7c-4fe2-b2d2-3fe96d3eca04
+:END:
 #+title: Bubbles and aggregate demand
 
-[[file:20210210100407-abm_readings.org][ABM Readings]]
+[[id:673f4082-43a5-4f2a-a9c0-759304a2bb2c][ABM Readings]]
 
-[[file:20210210091646-chpanel.org][Panel readings]]
+[[id:96cca9b2-3b1c-4e2d-bf63-c2d8b032f096][Panel readings]]

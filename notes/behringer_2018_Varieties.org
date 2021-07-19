@@ -1,12 +1,14 @@
+:PROPERTIES:
+:ID:       afc761fd-1fd0-4a52-9c6d-5aaaf100982e
+:END:
 #+TITLE:  (2018, ): Varieties of capitalism and growth regimes: the role of income distribution
 #+OPTIONS: toc:nil num:nil
-#+ROAM_KEY: cite:
 Time-stamp: 2021-02-19
 - tags :: Functional income distribution,growth models,personal income distribution,varieties of capitalism,wage coordination
 
 * Backlinks
 
-[[file:20210210190446-variaeties_of_capitalisms.org][Varieties of Capitalisms]]
+[[id:91af4a64-81b2-42dc-a3bc-07a91329a989][Varieties of Capitalisms]]
 
 * FISH-5SS
 |---------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

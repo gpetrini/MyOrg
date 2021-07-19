@@ -1,16 +1,19 @@
+:PROPERTIES:
+:ID:       ad00f474-a52a-47c2-9cbe-329091e53954
+:ROAM_REFS: cite:internationalmonetaryfund.reseachdept._2008_changing
+:END:
 #+TITLE: internationalmonetaryfund.reseachdept._2008_changing: The changing housing cycle and the implications for monetary policy (2008)
 #+OPTIONS: toc:nil num:nil
-#+ROAM_KEY: cite:internationalmonetaryfund.reseachdept._2008_changing
-#+ROAM_TAGS: "Business cycle" "Monetary Policy" Institucions QCA Data
+#+filetags: Business_cycle Monetary_Policy Institucions QCA Data
 Time-stamp: 2021-02-23
 - tags ::
 
 
 * Backlinks
 
-[[file:20210210185414-qca_data.org][QCA Data]]
-[[file:20210210191246-panel_data.org][Panel Data]]
-[[file:20210216121647-qca_theoretical_economics_foundations.org][QCA Theoretical Economics Foundations]]
+[[id:a0a72c58-267d-4613-8579-dc795ab1c369][QCA Data]]
+[[id:0804a047-2448-46d4-827d-077842d4fb69][Panel Data]]
+[[id:8b0a5bce-ba2c-4779-b339-eca15899cb2b][QCA Theoretical Economics Foundations]]
 
 * FISH-5SS
 

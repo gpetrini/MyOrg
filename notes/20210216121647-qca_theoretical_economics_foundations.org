@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       8b0a5bce-ba2c-4779-b339-eca15899cb2b
+:END:
 #+OPTIONS: toc:nil num:nil
 #+title: QCA Theoretical Economics Foundations
 #+AUTHOR: Gabriel Petrini
@@ -13,7 +16,7 @@
 #+PROPERTY: YEAR_ALL
 #+PROPERTY: KEY_ALL
 #+PROPERTY: FINISHED_ALL "[ ]" "[X]"
-[[file:20210210093026-qca_readings.org][QCA readings]]
+[[id:b11d338b-f808-4958-bdb8-622f5eb6bdee][QCA readings]]
 
 #+BEGIN: columnview :maxlevel 2 :id global
 | Finished? | Status   | Reference                     | RELEVANCE |

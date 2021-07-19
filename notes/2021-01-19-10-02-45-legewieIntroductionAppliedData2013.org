@@ -1,6 +1,9 @@
+:PROPERTIES:
+:ID:       05e9a1fd-2e27-4a0f-97bb-27313dfbf378
+:ROAM_REFS: cite:legewieIntroductionAppliedData2013
+:END:
 #+TITLE: legewieIntroductionAppliedData2013: An Introduction to Applied Data Analysis with Qualitative Comparative Analysis
-#+ROAM_KEY: cite:legewieIntroductionAppliedData2013
-#+ROAM_TAGS: "Good Practices" Hands-on QCA
+#+filetags: Good_Practices Hands_on QCA
 Time-stamp: 2021-01-19
 
 
@@ -27,7 +30,7 @@ Time-stamp: 2021-01-19
 |---------------------------------------------+--------------------------------------------------------------------------------------|
 
 ** Backlinks
-[[file:20210210185026-applied_qca.org][Applied QCA]]
+[[id:a52ec098-3654-4fdb-b044-a3045f6362b2][Applied QCA]]
 
 * Specifics comments
-[[file:20210210185414-qca_data.org][QCA Data]]
+[[id:a0a72c58-267d-4613-8579-dc795ab1c369][QCA Data]]

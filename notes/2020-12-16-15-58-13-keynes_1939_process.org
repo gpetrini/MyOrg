@@ -1,6 +1,9 @@
+:PROPERTIES:
+:ID:       17321dc0-d339-431c-ac54-3b3205371da6
+:ROAM_REFS: cite:keynes_1939_process
+:END:
 #+TITLE: keynes_1939_process: The process of capital formation
-#+ROAM_KEY: cite:keynes_1939_process
-#+ROAM_TAGS: "General Theory" "Demanda Efetiva" UFRJ "Moderna Abordagem do Excedente"
+#+filetags: General_Theory Demanda_Efetiva UFRJ Moderna_Abordagem_do_Excedente
 Time-stamp: 2020-12-16
 
 
@@ -29,6 +32,6 @@ Time-stamp: 2020-12-16
 |---------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
 ** Backlinks
-[[file:20201203145735-macroeconomia_da_demanda_efetiva_na_abordagem_do_excedente.org][Macroeconomia da Demanda Efetiva na abordagem do excedente]]
+[[id:a405ebe8-05ae-41ec-86a2-87c1fdba4e18][Macroeconomia da Demanda Efetiva na abordagem do excedente]]
 
 * Specifics comments

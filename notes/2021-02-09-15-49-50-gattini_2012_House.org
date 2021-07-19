@@ -1,6 +1,8 @@
+:PROPERTIES:
+:ID:       db5df162-4be1-4333-8057-b35d870639ee
+:ROAM_REFS: cite:gattini_2012_House
+:END:
 #+TITLE: gattini_2012_House: House price responsiveness of housing investments across major European economies ()
-#+ROAM_KEY: cite:gattini_2012_House
-#+ROAM_TAGS:
 Time-stamp: 2021-02-09
 - tags ::
 
@@ -32,7 +34,7 @@ Time-stamp: 2021-02-09
 |---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
 ** Backlinks
-[[file:20210210091758-house_prices.org][House Prices]]
+[[id:0ea24981-6248-456e-9d8c-72348b08feeb][House Prices]]
 ** Specific comments
 
 Residential investment function is estimated as follows:

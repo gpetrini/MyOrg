@@ -1,6 +1,9 @@
+:PROPERTIES:
+:ID:       168aef39-93cd-49bc-b1d3-b8bc08d9d5c6
+:ROAM_REFS: cite:kindleberger_2005_Anatomy
+:END:
 #+TITLE: kindleberger_2005_Anatomy: Anatomy of a Typical Crisis
-#+ROAM_KEY: cite:kindleberger_2005_Anatomy
-#+ROAM_TAGS: "Financial crisis" UFRJ "Macroeconomia Financeira"
+#+filetags: Financial_crisis UFRJ Macroeconomia_Financeira
 Time-stamp: 2020-12-07
 
 
@@ -27,8 +30,8 @@ Time-stamp: 2020-12-07
 |---------------------------------------------+-----------------------------------------------------------------------|
 
 ** Backlinks
-[[file:20201202092036-iee882_macroeconomia_financeira.org][IEE882 - Macroeconomia Financeira]]
-[[file:2020-12-04-17-20-31-minsky1977FinancialInstabilityHypothesis.org][minsky1977FinancialInstabilityHypothesis: The Financial Instability Hypothesis: An Interpretation of Keynes and an Alternative to "Standard" Theory]]
+[[id:8234ec70-778d-4959-8ddb-c4c5bb53f0bc][IEE882 - Macroeconomia Financeira]]
+[[id:26b7b1f6-903e-48a9-beeb-5f433f1aa709][minsky1977FinancialInstabilityHypothesis: The Financial Instability Hypothesis: An Interpretation of Keynes and an Alternative to "Standard" Theory]]
 
 * Specifics comments
 ** The model

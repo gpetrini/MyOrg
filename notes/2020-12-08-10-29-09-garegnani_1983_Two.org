@@ -1,6 +1,9 @@
+:PROPERTIES:
+:ID:       415048db-7bae-48b3-afe4-ec2e0fc86fb5
+:ROAM_REFS: cite:garegnani_1983_Two
+:END:
 #+TITLE: garegnani_1983_Two: Two Routes to Effective Demand: a comment on Kregel
-#+ROAM_KEY: cite:garegnani_1983_Two
-#+ROAM_TAGS: "Moderna Abordagem do Excedente" "Demanda Efetiva" UFRJ
+#+filetags: Moderna_Abordagem_do_Excedente Demanda_Efetiva UFRJ
 Time-stamp: 2020-12-08
 
 
@@ -29,7 +32,7 @@ Time-stamp: 2020-12-08
 |---------------------------------------------+-----|
 
 ** Backlinks
-[[file:20201203145735-macroeconomia_da_demanda_efetiva_na_abordagem_do_excedente.org][Macroeconomia da Demanda Efetiva na abordagem do excedente]]
+[[id:a405ebe8-05ae-41ec-86a2-87c1fdba4e18][Macroeconomia da Demanda Efetiva na abordagem do excedente]]
 
 * Specifics comments
 

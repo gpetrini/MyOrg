@@ -1,7 +1,9 @@
+:PROPERTIES:
+:ID:       3e2adad0-4038-4dd3-a1f1-1a08d6a2a9c8
+:ROAM_REFS: cite:blackwell_2019_Historicizing
+:END:
 #+TITLE: blackwell_2019_Historicizing: Historicizing housing typologies: beyond welfare state regimes and varieties of residential capitalism (2019, Housing Studies)
 #+OPTIONS: toc:nil num:nil
-#+ROAM_KEY: cite:blackwell_2019_Historicizing
-#+ROAM_TAGS:
 Time-stamp: 2021-02-17
 - tags :: Housing,housing finance,path dependence,typologies,varieties of residential capitalism,welfare regimes
 

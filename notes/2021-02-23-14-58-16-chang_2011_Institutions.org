@@ -1,14 +1,17 @@
+:PROPERTIES:
+:ID:       fcac7797-0f2a-47df-a1c1-5d262bc417a6
+:ROAM_REFS: cite:chang_2011_Institutions
+:END:
 #+TITLE: chang_2011_Institutions: Institutions and economic development: theory, policy and history (2011, Journal of Institutional Economics)
 #+OPTIONS: toc:nil num:nil
-#+ROAM_KEY: cite:chang_2011_Institutions
-#+ROAM_TAGS: Theoretical QCA Institucions
+#+filetags: Theoretical QCA Institucions
 Time-stamp: 2021-02-23
 - tags ::
 
 
 * Backlinks
 
-[[file:20210216121647-qca_theoretical_economics_foundations.org][QCA Theoretical Economics Foundations]]
+[[id:8b0a5bce-ba2c-4779-b339-eca15899cb2b][QCA Theoretical Economics Foundations]]
 
 * FISH-5SS
 

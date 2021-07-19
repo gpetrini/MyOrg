@@ -1,17 +1,20 @@
+:PROPERTIES:
+:ID:       cf77944e-eb1b-44b8-87d3-660fb78a7c19
+:ROAM_REFS: cite:schwartz_2009_Varietiesa
+:END:
 #+TITLE: schwartz_2009_Varietiesa: Varieties of Residential Capitalism in the International Political Economy: Old Welfare States and the New Politics of Housing (2009)
 #+OPTIONS: toc:nil num:nil
-#+ROAM_KEY: cite:schwartz_2009_Varietiesa
-#+ROAM_TAGS: Housing "Welfare State" "International Political Economy" "Residential Capitalism" VoC
+#+filetags: Housing Welfare_State International_Political_Economy Residential_Capitalism VoC
 Time-stamp: 2021-02-25
 - tags :: European Monetary Union,Gross Domestic Product,Home Equity,Housing Market,Interest Rate
 
 
 * Backlinks
 
-[[file:20210210190446-variaeties_of_capitalisms.org][Varieties of Capitalisms]]
-[[file:20210210184827-institutional_comparisons.org][Institutional comparisons]]
-[[file:20210216121647-qca_theoretical_economics_foundations.org][QCA Theoretical Economics Foundations]]
-[[file:20210210190632-panel_theoretical_foundations.org][Panel Theoretical foundations]]
+[[id:91af4a64-81b2-42dc-a3bc-07a91329a989][Varieties of Capitalisms]]
+[[id:6367d2bd-7a1f-492f-9397-5003f5416ead][Institutional comparisons]]
+[[id:8b0a5bce-ba2c-4779-b339-eca15899cb2b][QCA Theoretical Economics Foundations]]
+[[id:fba28600-c7c8-4b1d-a4e3-138b051a18ec][Panel Theoretical foundations]]
 
 * FISH-5SS
 

@@ -1,6 +1,8 @@
+:PROPERTIES:
+:ID:       e4c9fa68-e2f5-4b6b-b65f-7ab5888abaf1
+:ROAM_REFS: cite:sutton_2017_Interestb
+:END:
 #+TITLE: sutton_2017_Interestb: Interest rates and house prices in the United States and around the world ()
-#+ROAM_KEY: cite:sutton_2017_Interestb
-#+ROAM_TAGS:
 Time-stamp: 2021-02-09
 - tags ::
 
@@ -33,8 +35,8 @@ Time-stamp: 2021-02-09
 |---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
 ** Backlinks
-[[file:20210210091758-house_prices.org][House Prices]]
-[[file:20210210184406-mortgage_interest_rate.org][Mortgage Interest rate]]
+[[id:0ea24981-6248-456e-9d8c-72348b08feeb][House Prices]]
+[[id:a2e20f56-b6f2-4e80-9cc4-2924ce487b21][Mortgage Interest rate]]
 ** US specific results
 
 - Changes in US house prices are highly persistent

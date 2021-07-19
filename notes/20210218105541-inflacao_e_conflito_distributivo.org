@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       d0fe39e2-973f-49ff-b693-bbf593fb8dcd
+:END:
 #+title: Inflação e Conflito Distributivo
 
-[[file:20201203145735-macroeconomia_da_demanda_efetiva_na_abordagem_do_excedente.org][Macroeconomia da Demanda Efetiva na abordagem do excedente]]
+[[id:a405ebe8-05ae-41ec-86a2-87c1fdba4e18][Macroeconomia da Demanda Efetiva na abordagem do excedente]]

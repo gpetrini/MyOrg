@@ -1,6 +1,8 @@
+:PROPERTIES:
+:ID:       9be7c061-c167-4539-adb2-c9076a27d9d1
+:ROAM_REFS: cite:green_2014_Chapter
+:END:
 #+TITLE: green_2014_Chapter: Chapter 9 - The Subprime Crisis
-#+ROAM_KEY: cite:green_2014_Chapter
-#+ROAM_TAGS:
 Time-stamp: 2021-01-25
 - tags :: financial crisis,House price forecasts,supply chain,underwriting
 
@@ -28,7 +30,7 @@ Time-stamp: 2021-01-25
 |---------------------------------------------+-----|
 
 ** Backlink
-[[file:20210210184827-institutional_comparisons.org][Institutional comparisons]]
+[[id:6367d2bd-7a1f-492f-9397-5003f5416ead][Institutional comparisons]]
 
 
 * Specifics comments

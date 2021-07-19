@@ -1,7 +1,10 @@
+:PROPERTIES:
+:ID:       7bb46600-b983-4e12-b7a8-d2072eea5f18
+:END:
 #+OPTIONS: num:nil H:6 ':t
 #+TITLE: lunde_2016_Milestones: Milestones in European housing finance
 #+SETUPFILE: /HDD/Org/org-html-themes/org/theme-bigblow-local.setup
-#+ROAM_TAGS: Institucions Finance Europe Dissertation "Comparative Analysis" Housing
+#+filetags: Institucions Finance Europe Dissertation Comparative_Analysis Housing
 Time-stamp: 2021-02-04
 
 
@@ -30,7 +33,7 @@ Time-stamp: 2021-02-04
 |---------------------------------------------+-----|
 
 ** Backlinks
-[[file:20210210184827-institutional_comparisons.org][Institutional comparisons]]
+[[id:6367d2bd-7a1f-492f-9397-5003f5416ead][Institutional comparisons]]
 * Chapter 1 - Introduction: Milestones in European Housing Finance since 1989
 :PROPERTIES:
 :AUTHOR:   Jens Lunde and Christine Whitehead

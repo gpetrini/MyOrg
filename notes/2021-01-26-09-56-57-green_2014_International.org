@@ -1,12 +1,14 @@
+:PROPERTIES:
+:ID:       4ef4b6c3-4d47-40fe-abd0-8d926ed586da
+:ROAM_REFS: cite:green_2014_International
+:END:
 #+TITLE: green_2014_International: International Comparisons of Mortgages
-#+ROAM_KEY: cite:green_2014_International
-#+ROAM_TAGS:
 Time-stamp: 2021-01-26
 - tags ::
 
 * Backlinks
 
-[[file:20210210184827-institutional_comparisons.org][Institutional comparisons]]
+[[id:6367d2bd-7a1f-492f-9397-5003f5416ead][Institutional comparisons]]
 
 
 * FISH-5SS

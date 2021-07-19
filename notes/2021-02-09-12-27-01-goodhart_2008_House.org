@@ -1,6 +1,8 @@
+:PROPERTIES:
+:ID:       85e7e65d-f141-45d5-9ba4-d02fb459a3e3
+:ROAM_REFS: cite:goodhart_2008_House
+:END:
 #+TITLE: goodhart_2008_House: House prices, money, credit, and the macroeconomy (Oxford Review of Economic Policy)
-#+ROAM_KEY: cite:goodhart_2008_House
-#+ROAM_TAGS:
 Time-stamp: 2021-02-09
 - tags ::
 
@@ -30,7 +32,7 @@ Time-stamp: 2021-02-09
 |---------------------------------------------+-----|
 
 ** Backlinks
-[[file:20210210091758-house_prices.org][House Prices]]
-[[file:20210210092940-household_debt_and_bank_credit.org][Household debt and Bank credit]]
+[[id:0ea24981-6248-456e-9d8c-72348b08feeb][House Prices]]
+[[id:73d3e2c0-e310-4311-9d86-71854b9c8d05][Household debt and Bank credit]]
 
 * Specifics comments

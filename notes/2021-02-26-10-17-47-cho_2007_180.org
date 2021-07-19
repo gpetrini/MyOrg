@@ -1,7 +1,12 @@
+:PROPERTIES:
+:ID:       ddd96089-0c0e-4959-a9d8-c9690a28e4b1
+:ROAM_REFS: cite:cho_2007_180
+:END:
 #+TITLE: cho_2007_180: 180 Years' Evolution of the US Mortgage Banking System: Lessons for Emerging Mortgage Markets (2007, )
+:PROPERTIES:
+:ID:       71787747-25ee-47bc-84de-d6d72526e203
+:END:
 #+OPTIONS: toc:nil num:nil
-#+ROAM_KEY: cite:cho_2007_180
-#+ROAM_TAGS:
 Time-stamp: 2021-02-26
 - tags :: mortgage banking and intermediation; housing affordability; risk management
 

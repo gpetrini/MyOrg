@@ -1,6 +1,8 @@
+:PROPERTIES:
+:ID:       955ed92e-9d8f-486a-b4e1-0a0569adcbc5
+:ROAM_REFS: cite:brochierStockflowRatiosParadox
+:END:
 #+TITLE: brochierStockflowRatiosParadox: Stock-flow ratios and the paradox of debt in canonical neo-kaleckian and supermultiplier models (, )
-#+ROAM_KEY: cite:brochierStockflowRatiosParadox
-#+ROAM_TAGS:
 Time-stamp: 2021-02-12
 - tags ::
 

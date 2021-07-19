@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       73d3e2c0-e310-4311-9d86-71854b9c8d05
+:END:
 #+OPTIONS: toc:nil num:nil
 #+title: Household debt and Bank credit
 #+AUTHOR: Gabriel Petrini
@@ -13,7 +16,7 @@
 #+PROPERTY: YEAR_ALL
 #+PROPERTY: KEY_ALL
 
-[[file:20210210091646-chpanel.org][Panel readings]]
+[[id:96cca9b2-3b1c-4e2d-bf63-c2d8b032f096][Panel readings]]
 
 #+BEGIN: columnview :maxlevel 2 :id global
 #+END

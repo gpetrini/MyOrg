@@ -1,9 +1,12 @@
+:PROPERTIES:
+:ID:       8234ec70-778d-4959-8ddb-c4c5bb53f0bc
+:END:
 #+OPTIONS: num:nil H:6 ':t
 #+title: IEE882 - Macroeconomia Financeira
 #+AUTHOR: Gabriel Petrini
 #+DATE: 2º Semestre 2020
 #+LANG: pt_Br
-#+ROAM_TAGS: SFC-ABM ABM SFC "Macroeconomia Financeira" UFRJ "Notas de Aula"
+#+filetags: SFC_ABM ABM SFC Macroeconomia_Financeira UFRJ Notas_de_Aula
 
 * Introdução ao curso <2020-12-02 qua>
 

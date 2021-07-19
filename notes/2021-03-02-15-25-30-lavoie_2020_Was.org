@@ -1,15 +1,18 @@
+:PROPERTIES:
+:ID:       970b352f-e40a-4a40-970c-5fde97538171
+:ROAM_REFS: cite:lavoie_2020_Was
+:END:
 #+TITLE: lavoie_2020_Was: Was Hyman Minsky a post-Keynesian economist? (2020, Review of Evolutionary Political Economy)
 #+OPTIONS: toc:nil num:nil
-#+ROAM_KEY: cite:lavoie_2020_Was
-#+ROAM_TAGS: "High Impact" "Financial Instability Hypothesis" Finance Housing Minsky
+#+filetags: High_Impact Financial_Instability_Hypothesis Finance Housing Minsky
 Time-stamp: 2021-03-02
 
 
 * Backlinks
 
-[[file:20210301104540-minskian_theory.org][Minskian theory]]
+[[id:8f8c3ff0-cd9b-4ead-b335-f205d869005a][Minskian theory]]
 
-[[file:20210301105212-investimento_fluxo_de_caixa_e_dinamica_da_alavancagem_regime_minskiano_ou_paradoxo_da_divida.org][Investimento, fluxo de caixa e dinâmica da alavancagem: regime minskiano ou paradoxo da dívida?]]
+[[id:5fb17212-0437-4d5a-bbd1-767f34f0e4d3][Investimento, fluxo de caixa e dinâmica da alavancagem: regime minskiano ou paradoxo da dívida?]]
 
 * FISH-5SS
 

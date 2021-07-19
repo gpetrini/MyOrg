@@ -1,6 +1,8 @@
+:PROPERTIES:
+:ID:       ffe5cc16-1385-43ed-9d96-c34c73819652
+:ROAM_REFS: cite:mccarthy_2002_Monetary
+:END:
 #+TITLE: mccarthy_2002_Monetary: Monetary Policy Transmission to Residential Investment
-#+ROAM_KEY: cite:mccarthy_2002_Monetary
-#+ROAM_TAGS:
 Time-stamp: 2021-02-09
 - tags ::
 
@@ -29,7 +31,7 @@ Time-stamp: 2021-02-09
 |---------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
 ** Backlinks
-[[file:20210210184406-mortgage_interest_rate.org][Mortgage Interest rate]]
+[[id:a2e20f56-b6f2-4e80-9cc4-2924ce487b21][Mortgage Interest rate]]
 
 ** Model and covariates
 

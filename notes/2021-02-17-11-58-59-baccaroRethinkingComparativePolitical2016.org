@@ -1,14 +1,16 @@
+:PROPERTIES:
+:ID:       cd1512c7-2ca5-418b-bf57-04d291e38649
+:ROAM_REFS: cite:baccaroRethinkingComparativePolitical2016
+:END:
 #+TITLE: baccaroRethinkingComparativePolitical2016: Rethinking Comparative Political Economy: The Growth Model Perspective (2016, Politics \& Society)
 #+OPTIONS: toc:nil num:nil
-#+ROAM_KEY: cite:baccaroRethinkingComparativePolitical2016
-#+ROAM_TAGS:
 Time-stamp: 2021-02-17
 - tags ::
 
 
 * Backlinks
 
-[[file:20210210190446-variaeties_of_capitalisms.org][Varieties of Capitalisms]]
+[[id:91af4a64-81b2-42dc-a3bc-07a91329a989][Varieties of Capitalisms]]
 
 * FISH-5SS
 

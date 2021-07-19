@@ -1,20 +1,23 @@
+:PROPERTIES:
+:ID:       b11d338b-f808-4958-bdb8-622f5eb6bdee
+:END:
 #+title: QCA readings
 
 
 
-* [[file:20210210184827-institutional_comparisons.org][Institutional comparisons]]
+* [[id:6367d2bd-7a1f-492f-9397-5003f5416ead][Institutional comparisons]]
 
 
 
 
-* [[file:20210210184910-manuals_and_best_practices.org][Manuals and Best practices]]
+* [[id:220b41fd-ba6a-4cb2-a475-833a749c4bdb][Manuals and Best practices]]
 
-* [[file:20210210185026-applied_qca.org][Applied QCA]]
+* [[id:a52ec098-3654-4fdb-b044-a3045f6362b2][Applied QCA]]
 
-* [[file:20210210185414-qca_data.org][QCA Data]]
+* [[id:a0a72c58-267d-4613-8579-dc795ab1c369][QCA Data]]
 
-* [[file:20210210190446-variaeties_of_capitalisms.org][Varieties of Capitalisms]]
+* [[id:91af4a64-81b2-42dc-a3bc-07a91329a989][Varieties of Capitalisms]]
 
-* [[file:20210216101138-qca_literature_review.org][QCA Literature Review]]
+* [[id:81e0d0b7-cecd-4869-a1be-3ca16bebe8fe][QCA Literature Review]]
 
-* [[file:20210216121647-qca_theoretical_economics_foundations.org][QCA Theoretical Economics Foundations]]
+* [[id:8b0a5bce-ba2c-4779-b339-eca15899cb2b][QCA Theoretical Economics Foundations]]

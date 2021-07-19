@@ -12,7 +12,8 @@ CLOSED: [2021-07-12 seg 11:56]
 ** TODO Scanear nota fiscal periféricos
 ** TODO Adicionar Ítalo como co-orientador
 - [ ] Atualizar abntex
-** TODO Como definir os labels com repetição
+** TODO Criar script para copiar tabelas e figuras dos scripts (link simbólico preferencialmente)
+- [ ] Pesquisar se tem como fazer com que o Latex reconheça pastas
 
 * SFC [28%]
 

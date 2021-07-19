@@ -1,5 +1,8 @@
+:PROPERTIES:
+:ID:       a2e20f56-b6f2-4e80-9cc4-2924ce487b21
+:END:
 #+title: Mortgage Interest rate
 
-[[file:20210210091646-chpanel.org][Panel readings]]
+[[id:96cca9b2-3b1c-4e2d-bf63-c2d8b032f096][Panel readings]]
 
-[[file:20210216121647-qca_theoretical_economics_foundations.org][QCA Theoretical Economics Foundations]]
+[[id:8b0a5bce-ba2c-4779-b339-eca15899cb2b][QCA Theoretical Economics Foundations]]

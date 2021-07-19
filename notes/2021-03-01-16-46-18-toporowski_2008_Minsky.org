@@ -1,16 +1,19 @@
+:PROPERTIES:
+:ID:       b22cda99-562b-4c54-84a7-bd0a488b22e7
+:ROAM_REFS: cite:toporowski_2008_Minsky
+:END:
 #+TITLE: toporowski_2008_Minsky: Minsky's 'induced investment and business cycles' (2008, Cambridge Journal of Economics)
 #+OPTIONS: toc:nil num:nil
-#+ROAM_KEY: cite:toporowski_2008_Minsky
-#+ROAM_TAGS: "Business cycle" Investment "Notas de Aula" Minsky
+#+filetags: Business_cycle Investment Notas_de_Aula Minsky
 Time-stamp: 2021-03-01
 - tags ::
 
 
 * Backlinks
 
-[[file:20210301104540-minskian_theory.org][Minskian theory]]
+[[id:8f8c3ff0-cd9b-4ead-b335-f205d869005a][Minskian theory]]
 
-[[file:20210301105212-investimento_fluxo_de_caixa_e_dinamica_da_alavancagem_regime_minskiano_ou_paradoxo_da_divida.org][Investimento, fluxo de caixa e dinâmica da alavancagem: regime minskiano ou paradoxo da dívida?]]
+[[id:5fb17212-0437-4d5a-bbd1-767f34f0e4d3][Investimento, fluxo de caixa e dinâmica da alavancagem: regime minskiano ou paradoxo da dívida?]]
 
 * FISH-5SS
 

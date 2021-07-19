@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       5fb17212-0437-4d5a-bbd1-767f34f0e4d3
+:END:
 #+title: Investimento, fluxo de caixa e dinâmica da alavancagem: regime minskiano ou paradoxo da dívida?
 
-[[file:20201202092036-iee882_macroeconomia_financeira.org][IEE882 - Macroeconomia Financeira]]
+[[id:8234ec70-778d-4959-8ddb-c4c5bb53f0bc][IEE882 - Macroeconomia Financeira]]

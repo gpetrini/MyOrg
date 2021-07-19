@@ -1,13 +1,15 @@
+:PROPERTIES:
+:ID:       70b0c24d-91ea-4601-9148-b2421f548d7d
+:ROAM_REFS: cite:sa_2014_CAPITAL
+:END:
 #+TITLE: sa_2014_CAPITAL: CAPITAL INFLOWS, FINANCIAL STRUCTURE AND HOUSING BOOMS: Capital Inflows, Financial Structure and Housing Booms (2014, Journal of the European Economic Association)
 #+OPTIONS: toc:nil num:nil
-#+ROAM_KEY: cite:sa_2014_CAPITAL
-#+ROAM_TAGS:
 Time-stamp: 2021-02-26
 - tags ::
 
 
 * Backlinks
-[[file:20210210190632-panel_theoretical_foundations.org][Panel Theoretical foundations]]
+[[id:fba28600-c7c8-4b1d-a4e3-138b051a18ec][Panel Theoretical foundations]]
 
 
 * FISH-5SS

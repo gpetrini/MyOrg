@@ -1,6 +1,9 @@
+:PROPERTIES:
+:ID:       e2ccfc8c-1a1e-483a-b73a-c13fdb74c886
+:ROAM_REFS: cite:haberler_1946_Preliminary
+:END:
 #+TITLE: haberler_1946_Preliminary: Preliminary Remarks
-#+ROAM_KEY: cite:haberler_1946_Preliminary
-#+ROAM_TAGS: "Macroeconomia Financeira" UFRJ
+#+filetags: Macroeconomia_Financeira UFRJ
 Time-stamp: 2020-12-15
 
 
@@ -29,7 +32,7 @@ Time-stamp: 2020-12-15
 |---------------------------------------------+-----|
 
 ** Backlinks
-[[file:20201202092036-iee882_macroeconomia_financeira.org][IEE882 - Macroeconomia Financeira]]
+[[id:8234ec70-778d-4959-8ddb-c4c5bb53f0bc][IEE882 - Macroeconomia Financeira]]
 
 * Specifics comments
 
@@ -58,4 +61,4 @@ Time-stamp: 2020-12-15
   + Explanation of the Depressions (downswing)
   + Explanation of the revival (lower-turing point)
   + Reasons given for recurrence, periodicity
-  + Internacional implication[[file:2020-12-15-16-01-20-haberler_1946_purely.org][haberler_1946_purely: The Purely Monetary Theory]]s
+  + Internacional implication[[id:a47af3a7-ea0d-4f0a-8fcb-370466b6e1d1][haberler_1946_purely: The Purely Monetary Theory]]s

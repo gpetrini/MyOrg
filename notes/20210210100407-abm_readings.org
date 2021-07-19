@@ -1,2 +1,5 @@
+:PROPERTIES:
+:ID:       673f4082-43a5-4f2a-a9c0-759304a2bb2c
+:END:
 #+title: ABM Readings
 

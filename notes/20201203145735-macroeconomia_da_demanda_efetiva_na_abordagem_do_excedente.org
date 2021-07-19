@@ -1,10 +1,13 @@
+:PROPERTIES:
+:ID:       a405ebe8-05ae-41ec-86a2-87c1fdba4e18
+:END:
 #+OPTIONS: num:nil
 #+title: Macroeconomia da Demanda Efetiva na abordagem do excedente
 #+AUTHOR: Gabriel Petrini
 #+DATE: 2º Semestre de 202
 #+SETUPFILE: /HDD/Org/org-html-themes/org/theme-bigblow-local.setup
 #+LANG: pt_Br
-#+ROAM_TAGS: "Notas de Aula" "Demanda Efetiva" UFRJ
+#+filetags: Notas_de_Aula Demanda_Efetiva UFRJ
 
 * Introdução <2020-12-03 qui>
 ** Apresentação

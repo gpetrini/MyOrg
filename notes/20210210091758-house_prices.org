@@ -1,4 +1,7 @@
+:PROPERTIES:
+:ID:       0ea24981-6248-456e-9d8c-72348b08feeb
+:END:
 #+title: House Prices
 
-[[file:20210210091646-chpanel.org][Panel readings]]
+[[id:96cca9b2-3b1c-4e2d-bf63-c2d8b032f096][Panel readings]]
 

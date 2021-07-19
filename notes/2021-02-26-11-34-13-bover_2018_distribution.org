@@ -1,14 +1,16 @@
+:PROPERTIES:
+:ID:       272a334c-616a-4d61-aaf7-12b09c8d8694
+:ROAM_REFS: cite:bover_2018_distribution
+:END:
 #+TITLE: bover_2018_distribution: The distribution of debt across euro-area countries: the role of individual characteristics, institutions, and credit conditions (2018, 44th issue (June 2016) of the International Journal of Central Banking)
 #+OPTIONS: toc:nil num:nil
-#+ROAM_KEY: cite:bover_2018_distribution
-#+ROAM_TAGS:
 Time-stamp: 2021-02-26
 - tags ::
 
 
 * Backlinks
 
-[[file:20210216121647-qca_theoretical_economics_foundations.org][QCA Theoretical Economics Foundations]]
+[[id:8b0a5bce-ba2c-4779-b339-eca15899cb2b][QCA Theoretical Economics Foundations]]
 
 * FISH-5SS
 

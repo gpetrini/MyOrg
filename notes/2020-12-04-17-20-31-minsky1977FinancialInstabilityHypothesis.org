@@ -1,7 +1,9 @@
+:PROPERTIES:
+:ID:       26b7b1f6-903e-48a9-beeb-5f433f1aa709
+:ROAM_REFS: cite:minsky1977FinancialInstabilityHypothesis
+:END:
 #+TITLE: minsky1977FinancialInstabilityHypothesis: The Financial Instability Hypothesis: An Interpretation of Keynes and an Alternative to "Standard" Theory
-#+ROAM_KEY: cite:minsky1977FinancialInstabilityHypothesis
-#+ROAM_TAGS:
-#+ROAM_TAGS: "Financial Instability Hypothesis" Minsky "Notas de Aula" "Macroeconomia Financeira" UFRJ
+#+filetags: Financial_Instability_Hypothesis Minsky Notas_de_Aula Macroeconomia_Financeira UFRJ
 Time-stamp: 2020-12-04
 
 
@@ -30,7 +32,7 @@ Time-stamp: 2020-12-04
 |---------------------------------------------+----------------------------------------------------------------------------------------------------|
 
 ** Backlinks
-[[file:20201202092036-iee882_macroeconomia_financeira.org][IEE882 - Macroeconomia Financeira]]
+[[id:8234ec70-778d-4959-8ddb-c4c5bb53f0bc][IEE882 - Macroeconomia Financeira]]
 
 * Specifics comments
 

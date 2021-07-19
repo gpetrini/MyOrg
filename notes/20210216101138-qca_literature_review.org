@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       81e0d0b7-cecd-4869-a1be-3ca16bebe8fe
+:END:
 #+OPTIONS: toc:nil num:nil
 #+title: QCA Literature Review
 #+AUTHOR: Gabriel Petrini
@@ -13,7 +16,7 @@
 #+PROPERTY: YEAR_ALL
 #+PROPERTY: KEY_ALL
 
-[[file:20210210093026-qca_readings.org][QCA readings]]
+[[id:b11d338b-f808-4958-bdb8-622f5eb6bdee][QCA readings]]
 
 #+BEGIN: columnview :maxlevel 2 :id global
 | STATUS   | Decision | Bibtex key                              | YEAR | RELEVANCE | IMPACT | CITE |

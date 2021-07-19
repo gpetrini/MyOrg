@@ -1,7 +1,9 @@
+:PROPERTIES:
+:ID:       6ade8d18-131b-43d4-b9e5-49cc79970f31
+:ROAM_REFS: cite:kindleberger_2005_Ch1
+:END:
 #+TITLE: kindleberger_2005_Ch1: Financial Crisis: A Hardy Perennial
-#+ROAM_KEY: cite:kindleberger_2005_Ch1
-#+ROAM_TAGS:
-#+ROAM_TAGS: "Financial crisis" UFRJ "Macroeconomia Financeira"
+#+filetags: Financial_crisis UFRJ Macroeconomia_Financeira
 Time-stamp: 2020-12-07
 
 
@@ -28,7 +30,7 @@ Time-stamp: 2020-12-07
 |---------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
 ** Backlinks
-[[file:20201202092036-iee882_macroeconomia_financeira.org][IEE882 - Macroeconomia Financeira]]
+[[id:8234ec70-778d-4959-8ddb-c4c5bb53f0bc][IEE882 - Macroeconomia Financeira]]
 ** Questions
 
 - Are Minskyan crisis a typology of Kindlebergian Manias?
@@ -102,4 +104,4 @@ b -> g -> b -> a0;
   + International lender of last resort?
   + Stability as a public good
   + *Dilemma:* Investors would knew that government would act in advance and be less cautious
-- *Monetarist view:* Financial crisis would not occur if money supply growth is sta[[file:2020-12-07-10-55-27-kindleberger_2005_Anatomy.org][kindleberger_2005_Anatomy: Anatomy of a Typical Crisis]]ble.
+- *Monetarist view:* Financial crisis would not occur if money supply growth is sta[[id:168aef39-93cd-49bc-b1d3-b8bc08d9d5c6][kindleberger_2005_Anatomy: Anatomy of a Typical Crisis]]ble.

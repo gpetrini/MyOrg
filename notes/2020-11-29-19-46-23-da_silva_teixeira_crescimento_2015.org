@@ -1,6 +1,8 @@
+:PROPERTIES:
+:ID:       ef89ccc8-4f8b-4352-91b6-14d2dfc83675
+:ROAM_REFS: cite:da_silva_teixeira_crescimento_2015
+:END:
 #+TITLE: da_silva_teixeira_crescimento_2015: Crescimento liderado pela demanda na economia norte-americana nos anos 2000: uma an\'alise a partir do supermultiplicador sraffiano com inflac\~ao de ativos
-#+ROAM_KEY: cite:da_silva_teixeira_crescimento_2015
-#+ROAM_TAGS:
 Time-stamp: 2020-11-29
 - tags :: METADATA,REVISTO
 
@@ -30,5 +32,5 @@ Time-stamp: 2020-11-29
 |---------------------------------------------+-----|
 
 ** Backlinks
-[[file:20201203145735-macroeconomia_da_demanda_efetiva_na_abordagem_do_excedente.org][Macroeconomia da Demanda Efetiva na abordagem do excedente]]
+[[id:a405ebe8-05ae-41ec-86a2-87c1fdba4e18][Macroeconomia da Demanda Efetiva na abordagem do excedente]]
 * Specifics comments

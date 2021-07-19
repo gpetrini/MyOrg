@@ -1,14 +1,17 @@
+:PROPERTIES:
+:ID:       a71ab0e8-2a4c-4930-8d93-9072d676fdab
+:ROAM_REFS: cite:hallVarietiesCapitalismInstitutional2001
+:END:
 #+TITLE: hallVarietiesCapitalismInstitutional2001: Varieties of capitalism: the institutional foundations of comparative advantage (2001, )
 #+OPTIONS: toc:nil num:nil
-#+ROAM_KEY: cite:hallVarietiesCapitalismInstitutional2001
-#+ROAM_TAGS: Theoretical QCA VoC
+#+filetags: Theoretical QCA VoC
 Time-stamp: 2021-02-22
 - tags :: Capitalism,Comparative advantage (International trade),Comparative economics,Competition; International,Institutional economics
 
 
 * Backlinks
 
-[[file:20210210190446-variaeties_of_capitalisms.org][Varieties of Capitalisms]]
+[[id:91af4a64-81b2-42dc-a3bc-07a91329a989][Varieties of Capitalisms]]
 
 * FISH-5SS
 

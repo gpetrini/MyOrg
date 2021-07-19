@@ -1,14 +1,17 @@
+:PROPERTIES:
+:ID:       cdbafc36-8a54-49c3-aad5-7368cf4e4599
+:ROAM_REFS: cite:howell_2003_Varieties
+:END:
 #+TITLE: howell_2003_Varieties: Varieties of Capitalism: And Then There Was One? (2003, Comparative Politics)
 #+OPTIONS: toc:nil num:nil
-#+ROAM_KEY: cite:howell_2003_Varieties
-#+ROAM_TAGS: VoC
+#+filetags: VoC
 Time-stamp: 2021-02-17
 - tags ::
 
 
 * Backlinks
 
-[[file:20210210190446-variaeties_of_capitalisms.org][Varieties of Capitalisms]]
+[[id:91af4a64-81b2-42dc-a3bc-07a91329a989][Varieties of Capitalisms]]
 
 * FISH-5SS
 

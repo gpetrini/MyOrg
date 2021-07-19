@@ -1,6 +1,8 @@
+:PROPERTIES:
+:ID:       6435db97-27f9-4aa7-9369-3778db1a3190
+:ROAM_REFS: cite:freitas_growth_2015
+:END:
 #+TITLE: freitas_growth_2015: Growth Rate and Level Effects, the Stability of the Adjustment of Capacity to Demand and the Sraffian Supermultiplier (2015, Review of Political Economy)
-#+ROAM_KEY: cite:freitas_growth_2015
-#+ROAM_TAGS:
 Time-stamp: 2021-02-12
 - tags :: METADATA,REVISTO
 

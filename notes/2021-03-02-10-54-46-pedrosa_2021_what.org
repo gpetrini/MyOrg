@@ -1,21 +1,24 @@
+:PROPERTIES:
+:ID:       9eecf0d0-8734-49f1-b0cd-a2e918c15c3b
+:ROAM_REFS: cite:pedrosa_2021_what
+:END:
 #+TITLE: pedrosa_2021_what: To what extent does aggregate leverage determine financial fragility? New insights from an agent-based stock-flow consistent model (2021, )
 #+OPTIONS: toc:nil num:nil
-#+ROAM_KEY: cite:pedrosa_2021_what
-#+ROAM_TAGS: "Reference Update" "High Relevance" Minsky "Good Practices" SFC-ABM "Financial Instability Hypothesis"
+#+filetags: Reference_Update High_Relevance Minsky Good_Practices SFC_ABM Financial_Instability_Hypothesis
 Time-stamp: 2021-03-02
 
 
 * Backlinks
 
-[[file:20210301104540-minskian_theory.org][Minskian theory]]
+[[id:8f8c3ff0-cd9b-4ead-b335-f205d869005a][Minskian theory]]
 
-[[file:20210301105212-investimento_fluxo_de_caixa_e_dinamica_da_alavancagem_regime_minskiano_ou_paradoxo_da_divida.org][Investimento, fluxo de caixa e dinâmica da alavancagem: regime minskiano ou paradoxo da dívida?]]
+[[id:5fb17212-0437-4d5a-bbd1-767f34f0e4d3][Investimento, fluxo de caixa e dinâmica da alavancagem: regime minskiano ou paradoxo da dívida?]]
 * FISH-5SS
 
 
 |---------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <40>                                        | <50>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| *Background*                                | K+S family models; Kaleckian profit-equation;[[file:2021-03-01-16-46-18-toporowski_2008_Minsky.org][toporowski_2008_Minsky: Minsky's 'induced investment and business cycles' (2008, Cambridge Journal of Economics)]]  proposal; Steindlian paradox of debt regime.                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| *Background*                                | K+S family models; Kaleckian profit-equation;[[id:b22cda99-562b-4c54-84a7-bd0a488b22e7][toporowski_2008_Minsky: Minsky's 'induced investment and business cycles' (2008, Cambridge Journal of Economics)]]  proposal; Steindlian paradox of debt regime.                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | *Supporting Ideas*                            | Peaking-order theory; Elastic labor supply; No empirical support for financial determinants of investment (Why to employ an accelerator-based function); Mark-up depends positively on market-share;                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | *Purpose*                                     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | *Originality/value (Contribution)*            | Exploration of the monetary implications of Kaleckian profit equation in a AB-SFC model; Proposes both a Financial instability index and a profit-debt concentration index;                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |

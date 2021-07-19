@@ -1,12 +1,14 @@
+:PROPERTIES:
+:ID:       9c90f229-3144-4e61-a5da-7280751add06
+:ROAM_REFS: cite:green_2005_American
+:END:
 #+TITLE: green_2005_American: The American Mortgage in Historical and International Context
-#+ROAM_KEY: cite:green_2005_American
-#+ROAM_TAGS:
 Time-stamp: 2021-01-12
 - tags ::
 
 
 * Backlinks
-[[file:20210210184827-institutional_comparisons.org][Institutional comparisons]]
+[[id:6367d2bd-7a1f-492f-9397-5003f5416ead][Institutional comparisons]]
 
 * FISH-5SS
 

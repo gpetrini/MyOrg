@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       22ee5416-d992-468d-b268-2fb5468d8e59
+:END:
 #+title: Workshops
 
-[[file:20210210185536-lectures_and_conferences.org][Lectures and Conferences]]
+[[id:8a45148b-2068-40b3-baf0-c76475b4e14f][Lectures and Conferences]]

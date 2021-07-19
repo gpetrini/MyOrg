@@ -1,6 +1,8 @@
+:PROPERTIES:
+:ID:       d5d1ffa0-b4a7-4535-b55c-0e14386f1836
+:ROAM_REFS: cite:fazzariDemandledGrowthAccommodating2020
+:END:
 #+TITLE: fazzariDemandledGrowthAccommodating2020: Demand-led growth and accommodating supply (2020, Cambridge Journal of Economics)
-#+ROAM_KEY: cite:fazzariDemandledGrowthAccommodating2020
-#+ROAM_TAGS:
 Time-stamp: 2021-02-13
 - tags ::
 

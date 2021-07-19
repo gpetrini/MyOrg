@@ -1,5 +1,8 @@
+:PROPERTIES:
+:ID:       5f74f931-ca6f-43ae-ae5b-64e544c9070d
+:ROAM_REFS: cite:sharpe_2020_Why
+:END:
 #+TITLE: sharpe_2020_Why: Why Isn't Business Investment More Sensitive to Interest Rates? Evidence from Surveys
-#+ROAM_KEY: cite:sharpe_2020_Why
 Time-stamp: 2020-12-18
 - tags ::
 
@@ -29,6 +32,6 @@ Time-stamp: 2020-12-18
 |---------------------------------------------+-----|
 
 ** Backlinks
-[[file:20201202092036-iee882_macroeconomia_financeira.org][IEE882 - Macroeconomia Financeira]]
+[[id:8234ec70-778d-4959-8ddb-c4c5bb53f0bc][IEE882 - Macroeconomia Financeira]]
 
 * Specifics comments

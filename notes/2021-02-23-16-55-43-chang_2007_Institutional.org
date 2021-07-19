@@ -1,7 +1,10 @@
+:PROPERTIES:
+:ID:       c5fc0f26-c146-4cc7-9765-4d47a18826f6
+:ROAM_REFS: cite:chang_2007_Institutional
+:END:
 #+TITLE: chang_2007_Institutional: Institutional change and economic development (2007)
 #+OPTIONS: toc:nil num:nil
-#+ROAM_KEY: cite:chang_2007_Institutional
-#+ROAM_TAGS: Institucions QCA Theoretical
+#+filetags: Institucions QCA Theoretical
 Time-stamp: 2021-02-23
 - tags :: Congresses,Economic development,Economic policy,Institutional economics
 
@@ -9,10 +12,10 @@ Time-stamp: 2021-02-23
 * Backlinks
 
 
-[[file:20210216121647-qca_theoretical_economics_foundations.org][QCA Theoretical Economics Foundations]]
+[[id:8b0a5bce-ba2c-4779-b339-eca15899cb2b][QCA Theoretical Economics Foundations]]
 * FISH-5SS
 
-/Note:/ This chapter is similar to textcite:chang_2011_Institutions (see [[file:2021-02-23-14-58-16-chang_2011_Institutions.org][file]]).
+/Note:/ This chapter is similar to textcite:chang_2011_Institutions (see [[id:fcac7797-0f2a-47df-a1c1-5d262bc417a6][file]]).
 So, this document will report only its differences.
 
 |---------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

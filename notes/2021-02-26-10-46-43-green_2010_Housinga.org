@@ -1,7 +1,9 @@
+:PROPERTIES:
+:ID:       785dbd5c-330a-47b2-bb06-b9ac75da8895
+:ROAM_REFS: cite:green_2010_Housinga
+:END:
 #+TITLE: green_2010_Housinga: The Housing Finance Revolution (2010, )
 #+OPTIONS: toc:nil num:nil
-#+ROAM_KEY: cite:green_2010_Housinga
-#+ROAM_TAGS:
 Time-stamp: 2021-02-26
 - tags ::
 

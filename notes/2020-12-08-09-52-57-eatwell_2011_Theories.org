@@ -1,6 +1,9 @@
+:PROPERTIES:
+:ID:       322e3bba-863a-4536-bee5-8dfe38c750a3
+:ROAM_REFS: cite:eatwell_2011_Theories
+:END:
 #+TITLE: eatwell_2011_Theories: Theories of Value, Output, and Employment
-#+ROAM_KEY: cite:eatwell_2011_Theories
-#+ROAM_TAGS: "Moderna Abordagem do Excedente" "Demanda Efetiva" UFRJ
+#+filetags: Moderna_Abordagem_do_Excedente Demanda_Efetiva UFRJ
 Time-stamp: 2020-12-08
 
 
@@ -29,7 +32,7 @@ Time-stamp: 2020-12-08
 |---------------------------------------------+------------------------------------------------------------------------------------------------------------|
 
 ** Backlinks
-[[file:20201203145735-macroeconomia_da_demanda_efetiva_na_abordagem_do_excedente.org][Macroeconomia da Demanda Efetiva na abordagem do excedente]]
+[[id:a405ebe8-05ae-41ec-86a2-87c1fdba4e18][Macroeconomia da Demanda Efetiva na abordagem do excedente]]
 
 * Specifics comments
 ** The object of analysis

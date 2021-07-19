@@ -1,2 +1,5 @@
+:PROPERTIES:
+:ID:       61b9fd54-d2b4-4a5f-9d42-616a22337397
+:END:
 #+title: Panel Manuals
-[[file:20210210091646-chpanel.org][Panel readings]]
+[[id:96cca9b2-3b1c-4e2d-bf63-c2d8b032f096][Panel readings]]

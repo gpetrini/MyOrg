@@ -1,14 +1,16 @@
+:PROPERTIES:
+:ID:       5f5e74f0-21ec-4371-bf2e-060c5140f0f3
+:ROAM_REFS: cite:serrano_2002_Conflito
+:END:
 #+TITLE: serrano_2002_Conflito: Conflito distributivo e inflac\~ao de custos (2002, )
 #+OPTIONS: toc:nil num:nil
-#+ROAM_KEY: cite:serrano_2002_Conflito
-#+ROAM_TAGS:
 Time-stamp: 2021-02-18
 - tags ::
 
 
 * Backlinks
 
-[[file:20210218105541-inflacao_e_conflito_distributivo.org][Inflação e Conflito Distributivo]]
+[[id:d0fe39e2-973f-49ff-b693-bbf593fb8dcd][Inflação e Conflito Distributivo]]
 
 * FISH-5SS
 

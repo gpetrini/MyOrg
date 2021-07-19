@@ -1,7 +1,13 @@
+:PROPERTIES:
+:ID:       15df7b4b-894c-4fee-99c7-12c8756ebd66
+:END:
 #+OPTIONS: num:nil ':t H:6
 #+TITLE: schneiderSetTheoreticMethodsSocial: Set-Theoretic Methods for the Social Sciences: A Guide to Qualitative Comparative Analysis
-#+ROAM_KEY: cite:schneiderSetTheoreticMethodsSocial
-#+ROAM_TAGS: "Set Theoretic Methods" BestPractices Manual QCA
+:PROPERTIES:
+:ID:       ced3546e-4f5e-4edb-a066-08235d955ecb
+:ROAM_REFS: cite:schneiderSetTheoreticMethodsSocial
+:END:
+#+filetags: Set_Theoretic_Methods BestPractices Manual QCA
 Time-stamp: 2021-02-01
 
 
@@ -29,7 +35,7 @@ Time-stamp: 2021-02-01
 
 ** Backlinks
 
-[[file:20210210184910-manuals_and_best_practices.org][Manuals and Best practices]]
+[[id:220b41fd-ba6a-4cb2-a475-833a749c4bdb][Manuals and Best practices]]
 * Chapter 3: Set relations
 :PROPERTIES:
 :PAGES:    56-90

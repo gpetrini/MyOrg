@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       a0a72c58-267d-4613-8579-dc795ab1c369
+:END:
 #+OPTIONS: toc:nil num:nil
 #+title: QCA Data
 #+AUTHOR: Gabriel Petrini
@@ -14,7 +17,7 @@
 #+PROPERTY: KEY_ALL
 #+PROPERTY: FINISHED_ALL "[ ]" "[X]"
 
-[[file:20210210093026-qca_readings.org][QCA readings]]
+[[id:b11d338b-f808-4958-bdb8-622f5eb6bdee][QCA readings]]
 
 #+BEGIN: columnview :maxlevel 2 :id global
 | Finished? | Status     | Reference                                                 | RELEVANCE |
@@ -101,7 +104,7 @@
    :CITE:     Wait
    :KEY: andrews_2011_Housing
    :END:
-* PARTIAL [#A] [[file:2021-02-26-11-34-13-bover_2018_distribution.org][bover_2018_distribution: The distribution of debt across euro-area countries: the role of individual characteristics, institutions, and credit conditions (2018, 44th issue (June 2016) of the International Journal of Central Banking)]]
+* PARTIAL [#A] [[id:272a334c-616a-4d61-aaf7-12b09c8d8694][bover_2018_distribution: The distribution of debt across euro-area countries: the role of individual characteristics, institutions, and credit conditions (2018, 44th issue (June 2016) of the International Journal of Central Banking)]]
 :PROPERTIES:
 :YEAR:  citeyear*:bover_2018_distribution
 :ZOTERO:

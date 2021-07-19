@@ -1,2 +1,5 @@
+:PROPERTIES:
+:ID:       0804a047-2448-46d4-827d-077842d4fb69
+:END:
 #+title: Panel Data
-[[file:20210210091646-chpanel.org][Panel readings]]
+[[id:96cca9b2-3b1c-4e2d-bf63-c2d8b032f096][Panel readings]]
