@@ -3,13 +3,14 @@
 #+AUTHOR: Gabriel Petrini
 #+SETUPFILE: /HDD/Org/org-html-themes/org/theme-bigblow-local.setup
 
-* Dissertation's general settings [33%] :Dissertation:
+* Dissertation's general settings [50%] :Dissertation:
 ** TODO Marcar qualificação
 ** DONE Nota fiscal computador
 CLOSED: [2021-07-12 seg 11:56]
 ** DONE Comprar periféricos
 CLOSED: [2021-07-12 seg 11:56]
-** TODO Scanear nota fiscal periféricos
+** DONE Scanear nota fiscal periféricos
+CLOSED: [2021-07-19 seg 16:47]
 ** TODO Adicionar Ítalo como co-orientador
 - [ ] Atualizar abntex
 ** TODO Criar script para copiar tabelas e figuras dos scripts (link simbólico preferencialmente)
@@ -80,6 +81,30 @@ CLOSED: [2021-06-21 seg 16:57]
 ** TODO Modelo com crédito para as famílias
 
 ** TODO Modelo com preço das casas pró-cíclico
+
+* Super ABM
+
+** TODO Implementar modelo concentual
+
+*** TODO Função investimento
+- [ ] Revisar h microeconômico
+
+*** TODO Produção
+
+*** TODO Crédito
+
+*** TODO Entrada e saída
+
+*** TODO Setup e go
+
+*** WAIT Mecanismo de endogeinização
+** TODO Rodar modelo com investimento agregado
+- [ ] Supermultiplicador
+- [ ] Neo-Kaleckiano
+
+** TODO Rodar modelo com um único tipo de firma
+
+** TODO Implementar mecanismo de endogeinização do tipo de investimento
 
 * Orientações [0%]
 ** Lorena

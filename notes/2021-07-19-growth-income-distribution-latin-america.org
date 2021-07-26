@@ -1,0 +1,36 @@
+:PROPERTIES:
+:ID:       1d89767e-24b6-479a-bf3b-884c28a3d9cb
+:END:
+#+title: Growth and income distribution in Latin America
+#+DATE: <2021-07-19 seg>
+#+filetags: ""Demand-led Workshop" Conferences UFRJ
+
+[[id:d40701f7-73e8-4957-8bb5-b265fb2ab389][Demand-led 2021 Workshop]]
+
+** Patieene Alves-Passoni: Determinants of growth in Mexico and Brazil between 2003 and 2018: a demand-led decomposition of growth using input-output tables
+
+Presents a decomposition procedure in which subtract the imports share of each sector in order to obtain the final demand.
+
+*** 2003-2008
+
+- Households consumption:
+  + Mexico: 50%
+  + Brazil: 70%
+- GCFC led the growth in both countries
+
+*** 2011-2014
+
+- Strategy to change the private's sector growth engine
+  + Stimulate private investment through incentives and interest rate cuts
+  + Stimulate exports through devaluation
+    - Brazil: households consumption led the growth
+
+** Fernando Villanueva Melo: Wage-led or Profit-led Economic Growth: The Case of Chile 1996-2017
+
+Chilian economy is wage-led.
+
+
+** Ramiro Alvarez and Ariel Dvoskin: Income Distribution Dynamics During the 1970’s in Argentina: A Classical-Structuralist Approach
+
+
+** Comments (German Feldman)

@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       ae889ba2-4425-4f8b-b0e7-779e8eb5b330
+:END:
+#+title: Balance of payments constraint growth and structural change
+#+DATE: <2021-07-19 seg>
+
+[[id:d40701f7-73e8-4957-8bb5-b265fb2ab389][Demand-led 2021 Workshop]]
+
+
+* Rafael de Acypreste and João Gabriel Oliveira: Structural Change and employment in an open economy: a structural change and economic dynamics approach
+
+* Lorenzo Nalin and Giuliano Yajima: Technological Lock-in Developing Countries: a Sraffian-Schumpeterian Framework
+
+* Marwil J. Dávila-Fernández and Serena Sordi: Thirlwall's law: Binding-constraint or centre-of-gravity? A possible Kaleckian solution
+
+* Comments: Florencia Medici

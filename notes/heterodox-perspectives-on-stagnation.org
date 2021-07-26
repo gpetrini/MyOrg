@@ -1,0 +1,55 @@
+:PROPERTIES:
+:ID:       3c918285-7392-4fd0-baff-734e94fd0720
+:END:
+#+title: Heterodox perspectives on Stagnation
+#+DATE: <2021-07-20 ter>
+
+[[id:d40701f7-73e8-4957-8bb5-b265fb2ab389][Demand-led 2021 Workshop]]
+
+* Stefano Di Bucchianico (Roma Tre): Inequality, household debt, ageing and bubbles: A model of demand-side Secular Stagnation
+
+** Rediscovery of Secular Stagnation
+
+- Slowdown of the population growth
+- Income inequality
+- Deleveraging
+- Financial bubbles
+
+** Negative interest rate policy
+
+Some PK questioned the natural rate of interest:
+- existence of a natural rate of interest
+- Internal critique: negative natural rate of interest is not consistent
+  + Cannot be used in neoclassical models
+
+** Proposal
+
+- Present a model in which all the previous elements is present without including natural rate of interest
+
+** Alternative model
+
+- Inequality and household debt:
+  + Workers react to discrepancies between current and target consumption level
+  + Differentiaite the number of people in each social class (Workers, Managers and Capitalists)
+
+#+BEGIN_latex
+\begin{equation}
+g^{C^{aw}} = g^{em} + g^{b^{w}}
+\end{equation}
+#+END_latex
+
+Stability:
+
+#+BEGIN_latex
+\begin{equation}
+g^{Z} + \phi + \psi > i
+\end{equation}
+#+END_latex
+
+Now, consumption depends on the emulation effect and house price, while house prices depends on discrepancies between supply and demand and on credit.
+
+* Andrea Borsato (BETA University of Strasbourg): An Agent-based Model for Secular Stagnation in the USA: Theory and Empirical Evidence
+
+* Comments
+
+** Discussant: Fabio Freitas (UFRJ) and Lidia Brochier (UFRJ)

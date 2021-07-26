@@ -1,0 +1,60 @@
+:PROPERTIES:
+:ID:       59b6982b-f318-4695-94a6-6c00a619f304
+:ROAM_ALIASES: pca_studies
+:END:
+#+title: Principal Component Analysis notes
+
+
+* Compute Principal Components
+
+* Results
+
+** Choosing the number of dimensions
+:PROPERTIES:
+:ID:       f6367345-8a35-4137-a760-2d96cff97f7d
+:END:
+
+PCA separates the data into its structure and residual
+
+- High percentage of inertia
+  + Note: The variation of the second PC is not related to the first.
+- Look for visible jump/gap in the barchart
+- Cross-validation: =estim_ncp=
+
+
+[[file:../figs/2021-07-22_PCA_Structure.png]]
+
+Looking to 10.000 PCA experiments with 4 independent variables and 100 individuals, 95% of the innertia obtained in the first 2 PC are less than 60.1%.
+So, for an PCA with 4 variables and 100 individual, there is structure in the estimated model if the cummulative inertia explained is higher than 60.1% in the two PC.
+
+** Transition formulas
+
+- Individuals are on the same side as their corresponding variables with high variables
+
+** Quality of representation ($cos^{2}$)
+
+- co2 for individuals :: The higher, the better
+  + cos2 close to one means that the angle is close to zero, so the point is well projected and the position of the point can be interpreted.
+- co2 for variables :: The higher, the better
+
+** Contributions to components
+
+This element computes what contribute the most to some dimention.
+So, if an individual or variable that contribute a lot (in %) it means that this dimension is composed mainly by this element.
+Consequently, without this, that dimention would be quite different.
+
+- Individuals with large coordinate contribute most
+- Variables highly correlated with the principal component contribute the most
+
+Thus, to evaluate the robustness of the estimation, remove the respective individual or variable and check how the dimension changed.
+
+** Qualitative variables
+
+First, a F-test is performed to check if the categorical variable is related to the dimention.
+Next, for each category, a Student's t test is performed and compares the average of the category with the general mean.
+Regarding the qualitative variable, it is calculated the variability ($R^{2}$ %) of the coordinates on the first dimention is explained by it.
+In relation to the categorical variables, it is shown how each variables have a positive or negative coordination.
+
+* Plotting
+
+* Prediction
