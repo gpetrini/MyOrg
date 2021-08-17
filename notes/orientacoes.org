@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       39f64278-760c-4e2b-8e31-a6a35c5397af
+:END:
+#+title: Orientações
+
+* Descrição
+
+Flag para indicar que se trata de uma orientação

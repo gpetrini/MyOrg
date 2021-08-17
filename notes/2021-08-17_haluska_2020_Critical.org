@@ -1,0 +1,96 @@
+:PROPERTIES:
+:ID: 20210817T092711
+:CAPTURED: [2021-08-17 09:27:11]
+:ROAM_REFS: cite:haluska_2020_Critical
+:END:
+#+TITLE: haluska_2020_Critical: A critical evaluation of some Kaleckian proposals to deal with the issue of convergence towards normal capacity utilization - (2020, ROKE)
+Time-stamp: 2021-08-17
+#+OPTIONS: toc:nil num:nil
+
+* Backlinks
+
+[[id:a405ebe8-05ae-41ec-86a2-87c1fdba4e18][Macroeconomia da Demanda Efetiva na abordagem do excedente]]
+
+[[id:6329d78d-e571-4163-b636-823a3508db8b][Capacity utilization controversy]]
+
+[[id:e42ca86d-529a-4cbe-bb16-fdb971b9c208][Sraffian Theory]]
+
+
+
+* FISH-5SS
+
+
+|---------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <40>                                        | <50>                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| *Background*                                  | There was an debate between Kurz and Ciccone regarding normal capacity utilization which was put aside and it is now recaptured                                                                                                                                                                                                                                                                                                  |
+| *Supporting Ideas*                            | Definition of normal capacity utilization, normal prices and normal profit rate as defined by Ciccone                                                                                                                                                                                                                                                                                                                            |
+| *Purpose*                                     | To reevaluate if the alternatives proposed by Kaleckian authors are compatible with the surplus approach                                                                                                                                                                                                                                                                                                                         |
+| *Originality/value (Contribution)*            | Presents some definition regarding normal capacity utilization which is depends on the average-to-peak demand ratio                                                                                                                                                                                                                                                                                                              |
+| *Relevance*                                   | Explicitly states which hypothesis are required in order to the alternatives to be valid                                                                                                                                                                                                                                                                                                                                         |
+| *Design/methodology/approach*                 | Review of theoretical literature                                                                                                                                                                                                                                                                                                                                                                                                 |
+| *Results*                                     | Some alternatives needs to assume that the range of values that normal/effective capacity utilization is large; others assumes that firms can achieve any desired profit rate which is nor related with the normal one; firms can operate above or below the normal level without any consequences; while some authores redefine the concept of normal capacity utilization and incur in some microeconomic theoretical problem. |
+| *(Interesting) Findings*                      | The normal capacity utilization for the whole economy may change even if all sectors stay at the same level due to sectoral composition change. If capacity utilization can accomodats conflicts claim (not income shares), usual models described by conflict claims is weakened.                                                                                                                                               |
+| *Research limitations/implications (Critics)* | This paper does not present some important concepts for the surplus approach such as *gravitation*, *competition* and the *fulled-adjusted position* per se.                                                                                                                                                                                                                                                                           |
+| *Uncategorized stuff*                         |                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| *5SS*                                         | The author review some alternatives regarding the convergence (or not) between effective and normal capacity utilization and most of them is not compatible with the surplus approach.                                                                                                                                                                                                                                           |
+|---------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+* Specifics comments
+
+** Different proposals regarding capacity utilization
+
+1. There is not a single desired utilization rate
+   a. Convergence towards the normal level is a final equilibrium, so should not be seem as a major concern
+   b. Additionally, capitalists consider a corridor in which does not trigger Harrodian instability
+   c. Problem: the size of the corridor is not large enough to ensure that capacity utilization as a closure in no Kaleckian strands
+2. Desired utilization rate is one of the firms' goal, all of them are mutually exclusive
+   a. Conflicts between managers, shareholders and workers
+      a. There is a target profit rate (desired profit share), target real wage (target wage share)
+   b. In this alternative, capitalists try to increase profitability by changing utilization rate not profit share (as usual in heterodox approaches). Thus, it could be always possible to mitigate the conflict by changing effective capacity utilization
+3. Normal capacity utilization converges to the effective one
+   a. The effects of the nearly past capacity utilization is longer than riquired for this approach
+   b. Additionally, this is not connect with average-to-peak ratio
+   c. Nikkiforos alternatives uses number of hours worked as endogenous variable which depends on
+      a. Wage differential between normal and extra hours
+      b. Capital output ratio
+      c. Opportunity cost of capital
+      d. Rate of return of scale
+      e. Hypothesis:
+         a. Average size of firm remains unchanged in the steady state
+         b. During the errors regarding expected growth rate, firms sizes changes
+         c. All firms are price takers
+      f. Critics:
+         a. Increasing return to scale cannot be generalized to all firms
+         b. Deconcentration process since firm size does not chance, implying a scenario similar to perfect competition once market increases while firms become insignificant
+
+** Different definitions of full capacity production
+
+- Economic :: Production that takes place under a normal work schedule (8h/5d)
+  + Some authors states that this is stationary by construction
+- Engineering :: Maximum production that can be achieved (24h/7d)
+  + Average workweek of capital
+    - However, does not capture the speed of operation of a plant
+    - Does not capture the number of workers per shift
+
+** Relation between normal prices, normal utilization and normal profit rate
+
+- For normal prices to prevail, production must be equal to effective demand at normal prices
+  + This does not mean that effective utilization rate is equal to the normal one
+- When prices are at the normal level, capacity utilization of the new installed equipment is equal to the normal one, the expected profit rate is equal to the normal one as well and equal across sectors
+  + The size of the newly installed capacity is defined according to expected demand in such way that expected utilization is equal to the normal one
+  + The normal capacity utilization correspond for new investment, not for the whole capital stock
+  + So, capacity utilization affects normal prices
+
+
+** Determinants of normal utilization
+
+- The size of the newly installed investment is defined in order to meet the peeks of demand expected during the lifetime of equipment
+  + Capitalists aim to be able to meet peeks in demand without losing market share
+- There is also opportunity costs, so capitalists do not want to hold unnecessary idle capacity
+- The *main* determinant of normal capacity utilization is the expected ratio between average and peaks in demand
+- It takes long periods of time for past utilization levels affect the desired one
+- Technology may explain the heterogeinity of margins of spare capacity between industries
+- Entry deterrence strategies may also influence the size of planned spare capacity
+- According to Ciccone, if effective capacity utilization keeps above the desired level, capitalists will increase capital stock and not the desired utilization while changes in the desired utilization level will be accompained by changes in the pattern of oscilations in demand
+  + In summary, $(u - u_{N}) \Rightarrow K$ while $\sigma Y \Rightarrow u_{N}$
+- The normal capacity utilization of the total economy is defined by the weigthed average of the normal utilization of all sectors. So, even if the normal utilization of the diferent sectors remains unchanged, the economy normal utilization may change due to sectoral composition

@@ -16,7 +16,7 @@ CLOSED: [2021-07-19 seg 16:47]
 ** TODO Criar script para copiar tabelas e figuras dos scripts (link simbólico preferencialmente)
 - [ ] Pesquisar se tem como fazer com que o Latex reconheça pastas
 
-* SFC [28%]
+* SFC [20%]
 
 ** DONE Procurar pacote de alterar cores
 CLOSED: [2021-06-16 qua 14:02]
@@ -66,6 +66,32 @@ CLOSED: [2021-06-21 seg 16:57]
 **** TODO Checar como esta em Mandarino et all (2020)
 
 ** TODO Rodar análise de sensibilidade novamente com novo gasto capitalista
+
+
+
+-----
+
+** TODO Simulações organizadas
+
+*** Assintóticas e burocráticas
+
+*** Gráfico da riqueza dos capitalistas
+
+**** Riqueza financeira líquida ou riqueza líquida
+
+**** Riqueza total e total líquida
+
+** TODO Recalcular normas
+
+*** Checar k e R
+
+*** Curto prazo tanto faz
+
+*** Longo prazo com 3 cenários
+
+**** Iguais e uma maior que outra (vice-versa)
+
+** TODO Ver JEL para housing
 
 * ABM [0%] :Dissertation:
 
@@ -123,6 +149,18 @@ CLOSED: [2021-06-21 seg 16:57]
 *** TODO Plotar Capex contra PCs
 
 *** TODO Marcar reunião
+
+*** TODO Ler Miranda e Mattos 2019
+
+*** TODO Ler Miranda e Mattos 2020
+
+*** TODO Estudar PCA
+
+* CE472 2021
+** TODO Pensar em formas de avaliação
+** TODO Pesquisar boletins
+** TODO Forms sobre interessados ANPEC
+** TODO Espaço para dúvidas
 
 * MKKS model [0/3]
 

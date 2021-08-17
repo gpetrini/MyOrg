@@ -215,7 +215,7 @@ Resumidamente, a tendência ao pleno-emprego depende tanto da substituição dos
   + Teoria dos fundos emprestáveis e teoria clássica da taxa de juros são similares
 
 #+BEGIN_QUOTE
-Mantendo todos os demais pressupostos da teoria neoclássica, Keynes mostra que se a taxa de juros sair do valor de pleno-emprego, nada garante que voltará para lá. Isso porque não existe desequilíbrio entre investimento e poupança em termos nominais. Além de que o desemprego é resultado do mercado de produto e não do mercado de trabalho Além de que o desemprego é resultado do mercado de produto e não do mercado de trabalho.
+Mantendo todos os demais pressupostos da teoria neoclássica, Keynes mostra que se a taxa de juros sair do valor de pleno-emprego, nada garante que voltará para lá. Isso porque não existe desequilíbrio entre investimento e poupança em termos nominais. Além de que o desemprego é resultado do mercado de produto e não do mercado de trabalho.
 #+END_QUOTE
 **** Problemas
 - Primeiro postulado no mercado de trabalho
