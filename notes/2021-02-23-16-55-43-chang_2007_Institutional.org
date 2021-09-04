@@ -1,6 +1,5 @@
 :PROPERTIES:
 :ID:       c5fc0f26-c146-4cc7-9765-4d47a18826f6
-:ROAM_REFS: cite:chang_2007_Institutional
 :END:
 #+TITLE: chang_2007_Institutional: Institutional change and economic development (2007)
 #+OPTIONS: toc:nil num:nil
@@ -35,7 +34,6 @@ So, this document will report only its differences.
 
 * Specifics comments
  :PROPERTIES:
- :Custom_ID: chang_2007_Institutional
  :AUTHOR: H. Chang
  :JOURNAL:
  :YEAR: 2007

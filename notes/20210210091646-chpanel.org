@@ -1565,4 +1565,3 @@ where:
 
 * References                                                         :ignore:
 
-bibliography:Panel.bib

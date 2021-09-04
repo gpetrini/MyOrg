@@ -1,0 +1,8 @@
+#+DESCRIPTION: Header
+#+SETUPFILE: ./themes/comfy_inline/comfy_inline.theme
+#+OPTIONS: num:nil ^:{} toc: t
+#+HTML_HEAD: <style> #content{max-width:1800px;}</style>
+#+HTML_HEAD: <style> p{max-width:800px;}</style>
+#+HTML_HEAD: <style> li{max-width:800px;}</style
+
+| [[file:index.org][HOME]] | [[./HouseKeeping/index.org][Housekeeping]] | [[file:./gtd/inbox.org][Inbox]] | [[file:./gtd/projects.org][Projects]] | [[file:./notes/index.org][Bibliographic notes]] | [[file:./gtd/readings.org][Reading list]] | [[./Lectures/index.org][Leactures]] | [[file:./KnowledgeBase/index.org][Knowledge Base]] | [[./Teaching/index.org][Teaching]] | [[file:OffOffice/index.org][Off Office]] |

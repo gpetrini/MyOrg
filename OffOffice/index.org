@@ -1,0 +1,10 @@
+#+TITLE: Off Office topics
+#+DESCRIPTION: OFFOFF - Some non-academia related notes
+#+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
+#+OPTIONS: num:nil ^:{} toc:nil
+#+INCLUDE: "../header.org"
+
+* Emacs showoffs
+
+
+* Books

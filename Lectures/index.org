@@ -1,0 +1,7 @@
+#+TITLE: Lectures
+#+DESCRIPTION: My personal lectures notes
+#+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
+#+OPTIONS: num:nil ^:{} toc: nil
+#+INCLUDE: "../header.org"
+
+

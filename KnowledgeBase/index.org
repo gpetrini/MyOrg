@@ -1,0 +1,41 @@
+#+TITLE: Knowledge Base
+#+DESCRIPTION: KB - Some technical notes for personal use
+#+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
+#+OPTIONS: num:nil ^:{} toc: nil
+#+INCLUDE: "../header.org"
+
+
+* Permanent notes
+
+A good point made by [[https://www.alexeyshmalko.com/how-i-note/][Alexey]] is:
+
+#+begin_quote
+It is useful to separate literature notes from permanent notes. Literature notes are not my ideas, and I do not necessarily agree with them, so it makes sense to keep them separate.
+#+end_quote
+
+
+* Econometrics
+
+** Cross-section
+
+** Time series
+
+** Panel data
+
+** Time series panel
+
+* Agent Based Modeling
+
+* Qualitative Comparative Analysis
+
+** LSD
+
+** NetLogo
+
+* LaTeX
+
+* Emacs
+
+** Org-mode
+
+* Linux

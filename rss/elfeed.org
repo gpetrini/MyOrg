@@ -1,3 +1,7 @@
+# #+SETUPFILE: /HDD/Org/org-html-themes/org/theme-bigblow.setup
+#+SETUPFILE: ../themes/confy_inline/confy_inline.theme
+#+OPTIONS: num:nil ^:{} toc:nil
+#+INCLUDE: "../header.org"
 * Blogs                                                              :elfeed:
 
 ** emacs                                                        :emacs:

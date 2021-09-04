@@ -1,9 +1,59 @@
 #+OPTIONS: num:nil toc:nil
 #+TITLE: Inbox
 #+AUTHOR: Gabriel Petrini
-#+SETUPFILE: /HDD/Org/org-html-themes/org/theme-readtheorg.setup
-* Tasks
-** TODO Aceitar parecer Economia e Sociedade
-** TODO Ver gcc emacs grupo telegram
+#+SETUPFILE: /HDD/Org/themes/comfy_inline/comfy_inline.theme
+#+OPTIONS: num:nil ^:{}
+#+INCLUDE: "../header.org"
+#+ATTR_HTML: :alt MyOrg :title Housekeeping :style float:left;margin-bottom:20px; :class banner
+https://praveenanuraj.com/wp-content/uploads/2020/02/GTD-METHODOLOGY-1-1024x493.png
+
+* How to process inbox
+
+
+* Reading inbox
+:PROPERTIES:
+:ID:       fe239a69-8d61-4860-b7a3-dece541e79c9
+:END:
+
+** <2021-08-02 seg> [[https://www.tandfonline.com/doi/abs/10.1080/1351847X.2021.1959366?journalCode=rejf20]] :Panel:HousePrices:TimeSeries:Europe:AssetPrices:
+** <2021-07-13 ter> [[https://www.tandfonline.com/doi/abs/10.1080/08965803.2021.1938917][Residential Housing Market and Bank Stability: Focusing on OECD and Emerging ...]] :Empirical:HousePrices:FinancialRisk:Panel:OECD:Australia:Banking:
+** <2021-07-01 qui> [[https://www.sciencedirect.com/science/article/abs/pii/S0264999315001777][Investment hysteresis and potential output: A post-Keynesian–Kaleckian agent-...]] :ToBase:ABM:Supermultiplier:NonResidentialInvestment:
+** <2021-07-01 qui> [[https://doi.org/10.1007/s40888-020-00200-w][Harrodian instability in decentralized economies: an agent-based approach | S...]] :ABM:Supermultiplier:ToBase:
+** <2021-07-01 qui> [[https://arxiv.org/abs/2009.06914][{2009.06914} The impact of social influence in Australian real-estate: market...]] :ABM:HouseMarket:Spatial:
+** <2021-06-30 qua> [[https://www.bancaditalia.it/pubblicazioni/temi-discussione/2021/2021-1338/en_tema_1338.pdf]] :ABM:Empirical:Italy:MacroPrudentialPolicy:HouseMarket:Calibration:SearchAlgorithm:
+** <2021-06-30 qua> [[https://ideas.repec.org/a/ecb/ecbbox/202100045.html][Euro area house price developments during the coronavirus pandemic]] :Europe:HousePrices:Empirical:COVID19:
+** <2021-06-30 qua> [[https://onlinelibrary.wiley.com/doi/abs/10.1002/mde.3393][Time‐varying impact of housing price fluctuations on banking financial risk -...]] :Empirical:TimeSeries:HousePrices:FinancialRisk:Banking:MacroPrudentialPolicy:
+** <2021-06-21 seg> [[https://www.sciencedirect.com/science/article/pii/S105113772100036X][Housing and household consumption: An investigation of the wealth and collate...]] :Empirical:HousePrices:WealthEffect:Panel:Germany:
+** <2021-06-21 seg> [[https://apo.org.au/sites/default/files/resource-files/2021-06/apo-nid312736.pdf]] :HouseMarket:Australia:Report:
+** [#A] <2021-06-02 qua> [[http://www.lem.sssup.it/WPLem/files/2017-30.pdf]] :ABM:Canonical:ToBase:Spatial:
+** <2021-06-02 qua> [[https://cepr.org/active/publications/discussion_papers/dp.php?dpno=16196][Centre for Economic Policy Research]] :HousePrices:InterestRate:Survey:Panel:ABM:
+** <2021-05-27 qui> [[https://link.springer.com/chapter/10.1007/978-3-030-62070-7_13][Labour Markets and Income Distribution | SpringerLink]] :Sraffian:OffOffice:LaborMarket:ClassStrugle:
+** <2021-05-27 qui> [[https://www.tandfonline.com/doi/abs/10.1080/02673037.2021.1928005?journalCode=chos20][Returning to the intermediary turn: rethinking the significance of estate age...]] :ABM:Empirical:StilyzedFacts:RealEstateAgents:
+** <2021-05-27 qui> [[http://rcea.org/wp-content/uploads/2021/05/Chowdhury.pdf]] :Panel:TimeSeries:MSVAR:UK:InterestRate:
+** <2021-05-25 ter> [[https://www.tandfonline.com/doi/full/10.1080/09538259.2021.1923282][Punishment or Forgiveness? Loan Modifications in Private Label Residential Mo...]] :Mortgage:USA:Foreclosure:DebtForgiveness:Secutiritization:
+** <2021-05-11 ter> [[https://www.researchgate.net/profile/Stefano-Di-Bucchianico/publication/351359936_Inequality_household_debt_ageing_and_bubbles_A_model_of_demand-side_Secular_Stagnation/links/6093ecf392851c490fbc88e0/Inequality-household-debt-ageing-and-bubbles-A-model-of-demand-side-Secular-Stagnation.pdf]] :Bubbles:Sraffian:HousePrices:
+** <2021-05-10 seg> [[https://www.oxfordhandbooks.com/view/10.1093/oxfordhb/9780199640935.001.0001/oxfordhb-9780199640935-e-023][Residential Mortgages - Oxford Handbooks]] :Mortgage:InternationalComparison:
+** <2021-05-03 seg> [[https://academic.oup.com/oxrep/article/24/1/1/5140987][Housing markets and the economy: the assessment | Oxford Review of Economic P...]] :Panel:StilyzedFacts:Results:
+** <2021-05-03 seg> [[https://www.tandfonline.com/doi/abs/10.1080/08965803.2020.1840897?journalCode=rjer20][House Price Dynamics and Bank Herding: European Empirical Evidence: Journal o...]] :ABM:Results:Empirical:StilyzedFacts:
+** <2021-05-03 seg> [[https://www.tandfonline.com/doi/abs/10.1080/14616718.2015.1048091?journalCode=reuj20][Mortgage equity withdrawal and institutional settings: an exploratory analysi...]] :Literature:QCA:Introduction:Results:
+** <2021-05-03 seg> [[https://academic.oup.com/rof/article/17/1/1/1582371][Mortgage Market Design* | Review of Finance | Oxford Academic]] :QCA:Mortgage:HouseMarket:Review:Literature:
+** <2021-05-03 seg> [[https://academic.oup.com/jeea/article/11/suppl_1/101/2316498][Housing Finance and Monetary Policy | Journal of the European Economic Associ...]] :QCA:Introduction:Context:Results:
+** <2021-05-03 seg> [[https://academic.oup.com/rof/article/10/3/321/1606865][Financial Accelerator: Evidence from International Housing Markets | Review o...]] :ABM:Empirical:Results:
+** <2021-05-03 seg> [[https://www.sciencedirect.com/science/article/abs/pii/S1051137709000552?via%3Dihub][Macroeconomic determinants of international housing markets - ScienceDirect]] :Panel:Results:Empirical:
+** <2021-05-03 seg> [[https://link.springer.com/article/10.1007/s10901-021-09848-7][EU housing markets before financial crisis of 2008: The role of institutional...]] :Institutional:HouseMarket:Europe:
+** <2021-05-03 seg> [[https://library.oapen.org/bitstream/handle/20.500.12657/48448/9780198863960.pdf?sequence=1#page=130]] :Lorena:
+** <2021-05-03 seg> [[https://www.emerald.com/insight/content/doi/10.1108/INTR-09-2020-0529/full/html][Qualitative comparative analysis in the information systems discipline: a lit...]] :QCA:BestPractices:
+** <2021-05-03 seg> Agent-based modelling for public policy: A housing market example :ABM:Baseline:
+** <2021-05-03 seg> [[https://www.ecb.europa.eu/pub/pdf/other/euhousingmarketsen.pdf]] :QCA:DATA:Empirical:
+** <2021-04-23 sex> [[https://www.tandfonline.com/doi/pdf/10.1080/13876988.2021.1878458]] :Lorena:QCA:Covid:
+** <2021-04-23 sex> [[https://doi.org/10.36898/001c.21987][Can Google Trends Improve Housing Market Forecasts? | Published in Curiosity:...]] :HouseMarket:HousePrices:Forecast:Empirical:Expectation:
+** <2021-04-22 qui> [[https://paulgp.github.io/papers/Heterogeneous_Real_Estate_Agents_and_the_Housing_Cycle.pdf]] :Empirical:ABM:HouseMarket:
+** <2021-04-05 seg> [[https://www.quantamagazine.org/the-hard-lessons-of-modeling-the-coronavirus-pandemic-20210128][Quanta Magazine]] :Cecon:COVID:
+* Writing inbox
+
+* Tasks inbox
+:PROPERTIES:
+:ID:       257e67c4-ac7c-489b-b4f3-8420f4b0a5e4
+:END:
+
 ** TODO Ver possibilidade do proficiência com diploma do VM
-** TODO Set token with magit

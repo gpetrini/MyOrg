@@ -3,12 +3,6 @@
 :END:
 #+OPTIONS: num:nil ':t H:6
 #+TITLE: schneiderSetTheoreticMethodsSocial: Set-Theoretic Methods for the Social Sciences: A Guide to Qualitative Comparative Analysis
-:PROPERTIES:
-:ID:       ced3546e-4f5e-4edb-a066-08235d955ecb
-:ROAM_REFS: cite:schneiderSetTheoreticMethodsSocial
-:END:
-#+filetags: Set_Theoretic_Methods BestPractices Manual QCA
-Time-stamp: 2021-02-01
 
 
 * Set-Theoretic Methods for the Social Sciences: A Guide to Qualitative Comparative Analysis

@@ -1,112 +1,49 @@
 #+OPTIONS: num:nil toc:nil
 #+TITLE: Active Projects
 #+AUTHOR: Gabriel Petrini
-#+SETUPFILE: /HDD/Org/org-html-themes/org/theme-bigblow-local.setup
+#+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
+#+OPTIONS: num:nil ^:{} toc:nil
+#+INCLUDE: "../header.org"
+#+EXCLUDE_TAGS: noexport ARCHIVE
+
+* Emacs
+
+** TODO Embed mathjax
+
+** TODO Resolve relative path in config
+
+** TODO Adapt notes
+
+*** TODO Convert mds
+
+*** TODO Convert Rmds
+
+** TODO Add SETUPFILE in org-roam template
 
 * Dissertation's general settings [50%] :Dissertation:
 ** TODO Marcar qualificação
-** DONE Nota fiscal computador
-CLOSED: [2021-07-12 seg 11:56]
-** DONE Comprar periféricos
-CLOSED: [2021-07-12 seg 11:56]
-** DONE Scanear nota fiscal periféricos
-CLOSED: [2021-07-19 seg 16:47]
-** TODO Adicionar Ítalo como co-orientador
-- [ ] Atualizar abntex
 ** TODO Criar script para copiar tabelas e figuras dos scripts (link simbólico preferencialmente)
 - [ ] Pesquisar se tem como fazer com que o Latex reconheça pastas
 
-* SFC [20%]
-
-** DONE Procurar pacote de alterar cores
-CLOSED: [2021-06-16 qua 14:02]
-
-** TODO Parecerista A [63%]
-
-*** DONE Item 1
-CLOSED: [2021-06-16 qua 11:53]
-
-*** DONE Item 2
-CLOSED: [2021-06-16 qua 14:02]
-
-*** DONE Item 3
-CLOSED: [2021-06-16 qua 14:02]
-
-*** TODO Item 4
-
-*** TODO Item 5
-
-*** DONE Item 6
-CLOSED: [2021-06-16 qua 14:03]
-
-*** DONE Item 7
-CLOSED: [2021-06-16 qua 14:03]
-
-*** DONE Item 8
-CLOSED: [2021-06-16 qua 14:03]
-
-*** DONE Item 9
-CLOSED: [2021-06-16 qua 14:03]
-
-*** TODO Remover crédito para capitalistas
-
-*** TODO Nova função consumo
-
-** TODO Criar documento de resposta aos pareceristas
-
-** DONE Conferir se as simulações mudaram
-CLOSED: [2021-06-21 seg 16:57]
-
-** STRT Solução analítica com as novas variáveis
-
-** TODO Parecerista B
-
-*** TODO Pensar em novas simulações
-
-**** TODO Checar como esta em Mandarino et all (2020)
-
-** TODO Rodar análise de sensibilidade novamente com novo gasto capitalista
+** TODO Adicionar Ítalo como co-orientador
+- [ ] Atualizar abntex
+** DONE Nota fiscal computador :ARCHIVE:
+CLOSED: [2021-07-12 seg 11:56]
+** DONE Comprar periféricos :ARCHIVE:
+CLOSED: [2021-07-12 seg 11:56]
+** DONE Scanear nota fiscal periféricos :ARCHIVE:
+CLOSED: [2021-07-19 seg 16:47]
+* SFC [0%]
 
 
 
------
+** WAIT Letter to peers
 
-** TODO Simulações organizadas
+** WAIT Review new norms
 
-*** Assintóticas e burocráticas
+** WAIT Simulate alternative capitalist consumption
 
-*** Gráfico da riqueza dos capitalistas
-
-**** Riqueza financeira líquida ou riqueza líquida
-
-**** Riqueza total e total líquida
-
-** TODO Recalcular normas
-
-*** Checar k e R
-
-*** Curto prazo tanto faz
-
-*** Longo prazo com 3 cenários
-
-**** Iguais e uma maior que outra (vice-versa)
-
-** TODO Ver JEL para housing
-
-* ABM [0%] :Dissertation:
-
-** TODO [#A] Difusion model
-** TODO [#A] Modelar versão mais simples
-- [ ] Ver exportação de tabela no html
-  + Incluir slider css
-
-** TODO Pesquisar melhor sobre os hooks do LSD
-
-** TODO [#C] Pesquisar lattice LSD
-
-** TODO Modelo com crédito para as famílias
-
-** TODO Modelo com preço das casas pró-cíclico
+** WAIT Highlight appendix A in red
 
 * Super ABM
 
@@ -134,21 +71,10 @@ CLOSED: [2021-06-21 seg 16:57]
 ** TODO Implementar mecanismo de endogeinização do tipo de investimento
 
 * Orientações [0%]
-** Lorena
+** Lorena (2021)
 
-*** TODO Discutir modelo final
 
-*** TODO Marcar reunião com Lucas
-
-*** TODO Propor cronograma de trabalho
-
-** Felipe
-
-*** TODO Entender se é necessário retirar Capex
-
-*** TODO Plotar Capex contra PCs
-
-*** TODO Marcar reunião
+** Felipe (2021)
 
 *** TODO Ler Miranda e Mattos 2019
 
@@ -157,14 +83,42 @@ CLOSED: [2021-06-21 seg 16:57]
 *** TODO Estudar PCA
 
 * CE472 2021
-** TODO Pensar em formas de avaliação
-** TODO Pesquisar boletins
-** TODO Forms sobre interessados ANPEC
-** TODO Espaço para dúvidas
+** TODO Corrigir lista 01
+** TODO Aula 08
+*** TODO Criar tarefa
+*** TODO Pedir gravação (Gustavo)
+
+** TODO Pensar em formas de avaliação pós primeira lista
+* Grupos de discussão de teses
+** TODO Apresentar modelo conceitual <2021-09-07 ter>
+*** TODO Revisar apresentação
+
+* VECM [0%] :Article:
+
+** WAIT Testar para o fim de 2019
+*** Pós envio ao Franklin
+*** Rever data com a quebra estrutural
+** TODO Juntar figura 4 com a 7
+** TODO Et. all em itálico
+** TODO Corrigir referências
+* ABM Spatial Housing [0%] :Dissertation:
+
+** TODO [#A] Difusion model
+** TODO [#A] Modelar versão mais simples
+- [ ] Ver exportação de tabela no html
+  + Incluir slider css
+
+** TODO Pesquisar melhor sobre os hooks do LSD
+
+** TODO [#C] Pesquisar lattice LSD
+
+** TODO Modelo com crédito para as famílias
+
+** TODO Modelo com preço das casas pró-cíclico
 
 * MKKS model [0/3]
 
-** TODO Endogeneizar $rho_u$
+** TODO Endogeneizar rho_u
 
 ** TODO Ajustar equações dos bancos
 
@@ -181,41 +135,36 @@ CLOSED: [2021-06-21 seg 16:57]
 
 * ABM dot-com [0/1] :@free:Article:
 ** TODO Concentration, Stagnation and Inequality:An Agent-Based Approach
-* Grupos
-** Teses
-*** TODO Ler projeto Júlia
-* Panel [0%] :Dissertation:
-** TODO Reunir dados
+* Blog Social paths :@free:
 
-* Blog :@free:
-** Tabela latex
-** Programas para desenho de diagramas
+*Description:* Gatther usefull stuff for academics
+
+** Latex table examples
+** Program to draw diagrams
 * Bibliographical shinny app [0/0] :@free:
+
+*Description:* Map heterodox publications and interactions
+
 ** [[https://docs.ropensci.org/bib2df/][bib2df]]
 * Stylized Factbook
 
-** TODO Texto do Kaldor como exemplo
+*Description:* Gather empirical stylized facts and respective references
 
-** TODO Definir Journals relevantes
+** TODO Kaldor quotation
 
-*** TODO Importar [[https://www.hetecon.net/resources/journal-rankings/][Tabela]]
+** TODO Define relevant journal
 
-** TODO Definir um critério para o artigo ser selecionado
+*** TODO Import [[https://www.hetecon.net/resources/journal-rankings/][Table]]
 
-** TODO Criar arquivo de macro
+*** TODO Define criteria
 
-*** TODO Linkar na documentação
 
-*** TODO Criar seções com código JEL
-* VECM [0%] :Article:
+** TODO Create file for macroeconomics
 
-** WAIT Testar para o fim de 2019
-*** Pós envio ao Franklin
-*** Rever data com a quebra estrutural
-** TODO Juntar figura 4 com a 7
-** TODO Et. all em itálico
-** TODO Corrigir referências
-* [#C] QCA [0%] :Dissertation:
+*** TODO Reference in README file
+
+*** TODO Create sections based on JEL codes
+* [#C] QCA [0%] :Dissertation:ARCHIVE:
 ** TODO Ler seção 9.2.3 manual QCA
 ** TODO Ler sobre QCA em dois estágios
 ** TODO Organizar dados em uma tabela
