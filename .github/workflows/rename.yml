@@ -11,8 +11,3 @@ jobs:
     - uses: actions/checkout@master
     - name: Copy the Readmes
       run: cp "index.org" "README.org"
-    - name: Commit files
-      run: |
-        git commit -m "update readme" -a
-    - name: Push changes
-      uses: ad-m/github-push-action@master
