@@ -3,28 +3,8 @@
 #+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
 #+OPTIONS: num:nil ^:{} toc:nil
 #+INCLUDE: "../header.org"
-#+ATTR_HTML: :alt MyOrg :title Bibnotes :style float:left;margin-bottom:20px; :class banner
-https://zacjones.io/static/4fe67686c57a48bbb19ddfeaca6cbc32/1fb14/doom.webp
-
-* Capturing literature notes
-
-I manage my bibliography with org-ref, ivy-bibtex, and org-roam-bibtex.
-I maintain a file per resource (book/article/paper/talk).
-All notes are in the same directory for simplicity.
-My references are manage by Zotero and are updated whenever I add a new entry.
-
-** Template
-
-Each bibliographic note is generated with 3 parts:
-- Backlinks :: Used to reference other notes (using org-roam)
-- FISH-5SS :: It is a quick [[https://posgraduando.com/fish-qtcr-5ss-leitura-artigos/][noting procedure]] in which I create a summary table (FISH) with one-sentence overview (5SS)
-- Specific comments :: Some topics that are too specific to be captured by FISH-5SS method
-- Paper highlights :: PDF highlights and comments extracted using Zotero's PDF.js utility
-
-** Naming files
-
-Since I use org-roam capture, naming files are easy.
-By default, I use the following pattern =%Y-%M-%d_bibtex_entry.org=.
+#+ATTR_HTML: :width 1080px :style float:center;margin-bottom:20px; :class banner
+http://phdcomics.com/comics/archive/phd031305s.gif
 
 
 * Papers

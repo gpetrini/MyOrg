@@ -5,6 +5,8 @@
 #+OPTIONS: num:nil ^:{} toc:nil
 #+INCLUDE: "../header.org"
 #+EXCLUDE_TAGS: noexport ARCHIVE
+#+ATTR_HTML: :alt MyOrg :title Projects :style float:left;margin-bottom:20px; :class banner
+https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 * Emacs
 

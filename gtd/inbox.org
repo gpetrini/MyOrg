@@ -4,10 +4,9 @@
 #+SETUPFILE: /HDD/Org/themes/comfy_inline/comfy_inline.theme
 #+OPTIONS: num:nil ^:{}
 #+INCLUDE: "../header.org"
-#+ATTR_HTML: :alt MyOrg :title Housekeeping :style float:left;margin-bottom:20px; :class banner
-https://praveenanuraj.com/wp-content/uploads/2020/02/GTD-METHODOLOGY-1-1024x493.png
+#+ATTR_HTML: :width 1080px :style float:left;margin-bottom:20px; :class banner
+https://i.pinimg.com/originals/fd/de/23/fdde2369da2feeaa95a469b0ff1dd3f5.gif
 
-* How to process inbox
 
 
 * Reading inbox

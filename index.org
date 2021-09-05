@@ -1,10 +1,25 @@
-#+TITLE: Welcome To My braindump
+#+TITLE: Welcome to myOrg
 #+SETUPFILE: ./themes/comfy_inline/comfy_inline.theme
-#+DESCRIPTION: My Notes - Emacs-based second brain
+#+DESCRIPTION: My Emacs-based braindump
 #+OPTIONS: num:nil ^:{} toc:nil
 #+INCLUDE: "./header.org"
-#+ATTR_HTML: :alt MyOrg :title Housekeeping :style float:left;margin-bottom:20px; :class banner
-[[file:./figs/braindump_logo.png]]
+#+ATTR_HTML: :width 240px :style float:center;margin-bottom:20px; :class banner
+https://i.imgur.com/PSlK5yB.png
+
+* Logo :ignore:
+
+#+begin_src R :results graphics file :file ./figs/logo.png :session logo :exports none
+library(hexSticker)
+imgurl <- "./figs/transparent_braindump.png"
+hexSticker::sticker(imgurl, package="myOrg", p_size=25, p_y = 1.5,
+                    s_x=1, s_y=.85, s_width=.95, filename="./figs/logo.png")
+#+end_src
+
+#+RESULTS:
+[[file:./figs/logo.png]]
+
+
+
 
 * Welcome
 
@@ -23,7 +38,19 @@ The notes are parsed by [[https://github.com/emacs-mirror/emacs/blob/master/lisp
 Here are my recent papers.
 
 
-* Current projects
+
+* Projects
+
+** Ongoing
+- Residential investment in SSM-SFC model :: Mater's thesis SFC model paper
+- Houses own-rate of interst VEC model :: Mater's thesis time series model paper
+- MKKS :: Minskian agent based model with financial accelerator
+- Rating agency QCA :: Country risk rating evaluation with QCA model
+
+
+** Someday?
+
+
 
 * Main Repos
 
@@ -37,7 +64,6 @@ Here are my recent papers.
 
 - [[https://github.com/gpetrini/][Github]]
 - Lattes
-
 
 
 * Q&A

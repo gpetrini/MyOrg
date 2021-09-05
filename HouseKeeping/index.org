@@ -1,12 +1,34 @@
 #+TITLE: HouseKeeping
 #+DESCRIPTION: HK - Housekeeping and how to
 #+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
-#+OPTIONS: num:nil ^:{} toc: nil
+#+OPTIONS: num:nil ^:{} toc:nil
 #+INCLUDE: "../header.org"
-#+ATTR_HTML: :alt MyOrg :title Housekeeping :style float:left;margin-bottom:20px; :class banner
-https://us.123rf.com/450wm/jpanudda/jpanudda1610/jpanudda161000051/67045954-top-view-of-office-desk-wireless-keyboard-and-mouse-notebook-mobile-phone-clock-eyeglasses-pen-and-p.jpg?ver=6
+#+ATTR_HTML: :width 1080px :style float:left;margin-bottom:20px; :class banner
+https://i.pinimg.com/originals/09/d1/f0/09d1f0be4c90048606aaf0bc82eed35a.gif
 
-* Knowladge base
+
+* Capturing literature notes
+
+I manage my bibliography with org-ref, ivy-bibtex, and org-roam-bibtex.
+I maintain a file per resource (book/article/paper/talk).
+All notes are in the same directory for simplicity.
+My references are manage by Zotero and are updated whenever I add a new entry.
+
+** Template
+
+Each bibliographic note is generated with 3 parts:
+- Backlinks :: Used to reference other notes (using org-roam)
+- FISH-5SS :: It is a quick [[https://posgraduando.com/fish-qtcr-5ss-leitura-artigos/][noting procedure]] in which I create a summary table (FISH) with one-sentence overview (5SS)
+- Specific comments :: Some topics that are too specific to be captured by FISH-5SS method
+- Paper highlights :: PDF highlights and comments extracted using Zotero's PDF.js utility
+
+** Naming files
+
+Since I use org-roam capture, naming files are easy.
+By default, I use the following pattern =%Y-%M-%d_bibtex_entry.org=.
+
+
+* Knowledge base
 
 - All notes must be under =notes= folder
   + This allows to use org-roam link facilities
