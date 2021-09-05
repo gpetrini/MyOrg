@@ -1,0 +1,2326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <!-- 2021-09-04 sáb 16:50 -->
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=utf-8" />
+  <meta name="viewport" content=
+  "width=device-width, initial-scale=1" />
+  <title>schneiderSetTheoreticMethodsSocial: Set-Theoretic Methods
+  for the Social Sciences: A Guide to Qualitative Comparative
+  Analysis</title>
+  <meta name="author" content="Gabriel Petrini" />
+  <meta name="generator" content="Org Mode" />
+  <style>
+  <![CDATA[
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  ]]>
+  </style>
+  <script type="text/x-mathjax-config">
+  <![CDATA[
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+  });
+  ]]>
+  </script>
+  <script src=
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+  <div id="content" class="content">
+    <h1 class="title">schneiderSetTheoreticMethodsSocial:
+    Set-Theoretic Methods for the Social Sciences: A Guide to
+    Qualitative Comparative Analysis</h1>
+    <div id="table-of-contents" role="doc-toc">
+      <h2>Table of Contents</h2>
+      <div id="text-table-of-contents" role="doc-toc">
+        <ul>
+          <li>
+            <a href=
+            "#schneiderSetTheoreticMethodsSocial">Set-Theoretic
+            Methods for the Social Sciences: A Guide to Qualitative
+            Comparative Analysis</a>
+            <ul>
+              <li><a href="#org77591ab">FISH-5SS</a></li>
+              <li><a href="#org3f42f6e">Backlinks</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#orgbedfc25">Chapter 3: Set relations</a>
+            <ul>
+              <li>
+                <a href="#orge808073">Sufficient conditions</a>
+                <ul>
+                  <li>
+                    <a href="#org0892c0b">Crisp-set</a>
+                    <ul>
+                      <li><a href="#org5548a92">Example</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#org767a317">Fuzzy
+                    sets&nbsp;&nbsp;&nbsp;<span class=
+                    "tag"><span class=
+                    "ATTACH">ATTACH</span></span></a>
+                    <ul>
+                      <li><a href="#org2ae6b83">Example</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#org4bc8b55">Necessary conditions</a>
+                <ul>
+                  <li>
+                    <a href="#orga222397">Crisp sets</a>
+                    <ul>
+                      <li><a href="#org716a08a">Example</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#org0eee2d5">Fuzzy
+                  sets&nbsp;&nbsp;&nbsp;<span class=
+                  "tag"><span class=
+                  "ATTACH">ATTACH</span></span></a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#orgbc31dc9">Causal complexity in
+                set-theoretic methods</a>
+                <ul>
+                  <li>
+                    <ul>
+                      <li><a href="#org6e4f68a">Defining causal
+                      complexity</a></li>
+                      <li><a href="#orgfe4ea7a">INUS and SUIN
+                      conditions</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#org27d6947">Chapter 4: Truth Tables</a>
+            <ul>
+              <li><a href="#org79ea457">What is a truth
+              table?</a></li>
+              <li>
+                <a href="#org5ed9e84">How to get from a data matrix
+                to truth table</a>
+                <ul>
+                  <li><a href="#org3cdcdc4">Crip sets</a></li>
+                  <li><a href="#org1db0e03">Fuzzy sets</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#orgae18c59">Analyzing truth tables</a>
+                <ul>
+                  <li><a href="#org0a5dda4">Matching similar
+                  conjunctions</a></li>
+                  <li><a href="#org318f2a0">Logically redundant
+                  prime implicants</a></li>
+                  <li><a href="#org2fed24b">Issues related to the
+                  analysis of the non-occurence of the
+                  outcome</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#org14d58dc">Chapter 5: Parameters of fit</a>
+            <ul>
+              <li><a href="#org815ca52">Defining a dn dealing with
+              contradictory truth table rows</a></li>
+              <li><a href="#orga239280">Consistency of sufficient
+              conditions</a></li>
+              <li><a href="#orgbd9eead">Coverage of sufficient
+              conditions</a></li>
+              <li><a href="#org54cc548">Consistency of necessary
+              conditions</a></li>
+              <li><a href="#org7103556">Coverage of necessary
+              conditions</a></li>
+              <li><a href="#org76725a7">Issues related to
+              consistency and
+              coverage&nbsp;&nbsp;&nbsp;<span class="tag"><span class="ATTACH">ATTACH</span></span></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="outline-container-schneiderSetTheoreticMethodsSocial"
+    class="outline-2">
+      <h2 id="schneiderSetTheoreticMethodsSocial">Set-Theoretic
+      Methods for the Social Sciences: A Guide to Qualitative
+      Comparative Analysis</h2>
+      <div class="outline-text-2" id=
+      "text-schneiderSetTheoreticMethodsSocial"></div>
+      <div id="outline-container-org77591ab" class="outline-3">
+        <h3 id="org77591ab">FISH-5SS</h3>
+        <div class="outline-text-3" id="text-org77591ab">
+          <table border="2" cellspacing="0" cellpadding="6" rules=
+          "groups" frame="hsides">
+            <colgroup>
+              <col class="org-left" />
+              <col class="org-left" />
+            </colgroup>
+            <tbody>
+              <tr>
+                <td class="org-left"><b>Background</b></td>
+                <td class="org-left">&nbsp;</td>
+              </tr>
+              <tr>
+                <td class="org-left"><b>Supporting Ideas</b></td>
+                <td class="org-left">&nbsp;</td>
+              </tr>
+              <tr>
+                <td class="org-left"><b>Purpose</b></td>
+                <td class="org-left">&nbsp;</td>
+              </tr>
+              <tr>
+                <td class="org-left"><b>Originality/value
+                (Contribution)</b></td>
+                <td class="org-left">&nbsp;</td>
+              </tr>
+              <tr>
+                <td class="org-left"><b>Relevance</b></td>
+                <td class="org-left">&nbsp;</td>
+              </tr>
+              <tr>
+                <td class="org-left">
+                <b>Design/methodology/approach</b></td>
+                <td class="org-left">&nbsp;</td>
+              </tr>
+              <tr>
+                <td class="org-left"><b>Results</b></td>
+                <td class="org-left">&nbsp;</td>
+              </tr>
+              <tr>
+                <td class="org-left"><b>(Interesting)
+                Findings</b></td>
+                <td class="org-left">&nbsp;</td>
+              </tr>
+              <tr>
+                <td class="org-left"><b>Research
+                limitations/implications (Critics)</b></td>
+                <td class="org-left">&nbsp;</td>
+              </tr>
+              <tr>
+                <td class="org-left"><b>Uncategorized
+                stuff</b></td>
+                <td class="org-left">&nbsp;</td>
+              </tr>
+              <tr>
+                <td class="org-left"><b>5SS</b></td>
+                <td class="org-left">&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div id="outline-container-org3f42f6e" class="outline-3">
+        <h3 id="org3f42f6e">Backlinks</h3>
+        <div class="outline-text-3" id="text-org3f42f6e"></div>
+      </div>
+    </div>
+    <div id="outline-container-orgbedfc25" class="outline-2">
+      <h2 id="orgbedfc25">Chapter 3: Set relations</h2>
+      <div class="outline-text-2" id="text-orgbedfc25"></div>
+      <div id="outline-container-orge808073" class="outline-3">
+        <h3 id="orge808073">Sufficient conditions</h3>
+        <div class="outline-text-3" id="text-orge808073"></div>
+        <div id="outline-container-org0892c0b" class="outline-4">
+          <h4 id="org0892c0b">Crisp-set</h4>
+          <div class="outline-text-4" id="text-org0892c0b">
+            <p><b>Definition:</b> Whenever the condition is present
+            across cases, the outcome is also present in these
+            cases (p. 57)</p>
+            <div class="latex" id="orga0361e9">
+              \begin{equation} X \subset Y \end{equation}
+            </div>
+            <p>In venn diagram’s terms, if <code>X</code> is a
+            sufficient condition for <code>Y</code>, the circle for
+            <code>X</code> is fully contained (subset) in the
+            circle of <code>Y</code>:</p>
+            <div class="latex" id="org29e4087">
+              \begin{equation} X \to Y \end{equation}
+            </div>
+            <p>Thus, if \(X\) is a sufficient condition, the
+            following could not happen</p>
+            <div class="latex" id="org7cd1bf1">
+              \begin{equation} X \to \neg Y \end{equation}
+            </div>
+            <p>If <code>X</code> is a sufficient condition, cases
+            with <code>Y</code> and <b>whithout</b> <code>X</code>
+            are not expected. Additionally, the condition
+            <code>~X</code> is <b>irrelevant</b> to state
+            sufficiency for <code>X</code> due to the
+            <b>asymmetry</b> in QCA. In summary, the sufficiency of
+            <code>X</code> is falsified if and only if there is
+            <b>simultaneous</b> cases members of <code>~X</code>
+            and <code>Y</code>.</p>
+            <table border="2" cellspacing="0" cellpadding="6"
+            rules="groups" frame="hsides">
+              <caption class="t-above">
+                <span class="table-number">Table 1:</span>
+                Sufficiency: stylized matrix (p. 59)
+              </caption>
+              <colgroup>
+                <col class="org-left" />
+                <col class="org-right" />
+                <col class="org-right" />
+                <col class="org-left" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col" class="org-left">Case</th>
+                  <th scope="col" class="org-right">Condition
+                  (X)</th>
+                  <th scope="col" class="org-right">Outcome
+                  (Y)</th>
+                  <th scope="col" class="org-left">Sufficiency of
+                  <code>X</code> for <code>Y</code>…</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="org-left">A</td>
+                  <td class="org-right">1</td>
+                  <td class="org-right">1</td>
+                  <td class="org-left">allowed</td>
+                </tr>
+                <tr>
+                  <td class="org-left">B</td>
+                  <td class="org-right">1</td>
+                  <td class="org-right">0</td>
+                  <td class="org-left">not allowed</td>
+                </tr>
+                <tr>
+                  <td class="org-left">C</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">1</td>
+                  <td class="org-left">irrelevant</td>
+                </tr>
+                <tr>
+                  <td class="org-left">D</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">0</td>
+                  <td class="org-left">irrelevant</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div id="outline-container-org5548a92" class="outline-5">
+            <h5 id="org5548a92">Example</h5>
+            <div class="outline-text-5" id="text-org5548a92">
+              <table border="2" cellspacing="0" cellpadding="6"
+              rules="groups" frame="hsides">
+                <caption class="t-above">
+                  <span class="table-number">Table 2:</span>
+                  Hypothetical data matrix with ten cases and
+                  set-membership scores in three conditions and the
+                  outcome (adapted from p. 61)
+                </caption>
+                <colgroup>
+                  <col class="org-left" />
+                  <col class="org-right" />
+                  <col class="org-right" />
+                  <col class="org-right" />
+                  <col class="org-right" />
+                  <col class="org-left" />
+                  <col class="org-left" />
+                  <col class="org-left" />
+                  <col class="org-left" />
+                  <col class="org-left" />
+                  <col class="org-left" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col" class="org-left">Cases</th>
+                    <th scope="col" class="org-right">A</th>
+                    <th scope="col" class="org-right">B</th>
+                    <th scope="col" class="org-right">C</th>
+                    <th scope="col" class="org-right">Y</th>
+                    <th scope="col" class="org-left">Suff.
+                    <code>A</code> for <code>Y</code>?</th>
+                    <th scope="col" class="org-left">Suff.
+                    <code>B</code> for <code>Y</code>?</th>
+                    <th scope="col" class="org-left">Suff.
+                    <code>C</code> for <code>Y</code>?</th>
+                    <th scope="col" class="org-left">Suff.
+                    <code>~A</code> for <code>Y</code>?</th>
+                    <th scope="col" class="org-left">Suff.
+                    <code>~B</code> for <code>Y</code>?</th>
+                    <th scope="col" class="org-left">Suff.
+                    <code>~C</code> for <code>Y</code>?</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="org-left">ARG</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">0</td>
+                    <td class="org-left">Not allowed</td>
+                    <td class="org-left">Not allowed</td>
+                    <td class="org-left">Not allowed</td>
+                    <td class="org-left">Irrelevant</td>
+                    <td class="org-left">Irrelevant</td>
+                    <td class="org-left">Irrelevant</td>
+                  </tr>
+                  <tr>
+                    <td class="org-left">PER</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">0</td>
+                    <td class="org-left">Not allowed</td>
+                    <td class="org-left">Irrelevant</td>
+                    <td class="org-left">Irrelevant</td>
+                    <td class="org-left">Irrelevant</td>
+                    <td class="org-left">Not allowed</td>
+                    <td class="org-left">Not allowed</td>
+                  </tr>
+                  <tr>
+                    <td class="org-left">BOL</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">0</td>
+                    <td class="org-left">Not allowed</td>
+                    <td class="org-left">Not allowed</td>
+                    <td class="org-left">Irrelevant</td>
+                    <td class="org-left">Irrelevant</td>
+                    <td class="org-left">Irrelevant</td>
+                    <td class="org-left">Not allowed</td>
+                  </tr>
+                  <tr>
+                    <td class="org-left">CHI</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">1</td>
+                    <td class="org-left">Irrelevant</td>
+                    <td class="org-left">Allowed</td>
+                    <td class="org-left">Irrelevant</td>
+                    <td class="org-left">Allowed</td>
+                    <td class="org-left">Irrelevant</td>
+                    <td class="org-left">Allowed</td>
+                  </tr>
+                  <tr>
+                    <td class="org-left">ECU</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">0</td>
+                    <td class="org-left">Not allowed</td>
+                    <td class="org-left">Irrelevant</td>
+                    <td class="org-left">Irrelevant</td>
+                    <td class="org-left">Irrelevant</td>
+                    <td class="org-left">Not allowed</td>
+                    <td class="org-left">Not allowed</td>
+                  </tr>
+                  <tr>
+                    <td class="org-left">BRZ</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">1</td>
+                    <td class="org-left">Irrelevant</td>
+                    <td class="org-left">Allowed</td>
+                    <td class="org-left">Allowed</td>
+                    <td class="org-left">Allowed</td>
+                    <td class="org-left">Irrelevant</td>
+                    <td class="org-left">Irrelevant</td>
+                  </tr>
+                  <tr>
+                    <td class="org-left">URU</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">1</td>
+                    <td class="org-left">Allowed</td>
+                    <td class="org-left">Irrelevant</td>
+                    <td class="org-left">Allowed</td>
+                    <td class="org-left">Irrelevant</td>
+                    <td class="org-left">Allowed</td>
+                    <td class="org-left">Irrelevant</td>
+                  </tr>
+                  <tr>
+                    <td class="org-left">PAR</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">1</td>
+                    <td class="org-left">Irrelevant</td>
+                    <td class="org-left">Not allowed</td>
+                    <td class="org-left">Allowed</td>
+                    <td class="org-left">Allowed</td>
+                    <td class="org-left">Allowed</td>
+                    <td class="org-left">Irrelevant</td>
+                  </tr>
+                  <tr>
+                    <td class="org-left">COL</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">1</td>
+                    <td class="org-left">Irrelevant</td>
+                    <td class="org-left">Irrelevant</td>
+                    <td class="org-left">Irrelevant</td>
+                    <td class="org-left">Allowed</td>
+                    <td class="org-left">Allowed</td>
+                    <td class="org-left">Allowed</td>
+                  </tr>
+                  <tr>
+                    <td class="org-left">VEN</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">0</td>
+                    <td class="org-left">Not allowed</td>
+                    <td class="org-left">Not allowed</td>
+                    <td class="org-left">Not allowed</td>
+                    <td class="org-left">Irrelevant</td>
+                    <td class="org-left">Irrelevant</td>
+                    <td class="org-left">Irrelevant</td>
+                  </tr>
+                  <tr>
+                    <td class="org-left">Sufficient?</td>
+                    <td class="org-right">-</td>
+                    <td class="org-right">-</td>
+                    <td class="org-right">-</td>
+                    <td class="org-right">-</td>
+                    <td class="org-left">No</td>
+                    <td class="org-left">No</td>
+                    <td class="org-left">No</td>
+                    <td class="org-left">Yes</td>
+                    <td class="org-left">No</td>
+                    <td class="org-left">No</td>
+                  </tr>
+                </tbody>
+              </table>
+              <pre class="example" id="orgd0632e8">
+Hint: first look for X, then to Y
+</pre>
+            </div>
+          </div>
+        </div>
+        <div id="outline-container-org767a317" class="outline-4">
+          <h4 id="org767a317">Fuzzy
+          sets&nbsp;&nbsp;&nbsp;<span class="tag"><span class=
+          "ATTACH">ATTACH</span></span></h4>
+          <div class="outline-text-4" id="text-org767a317">
+            <p>For sufficiency, each case’s fuzzy-set membership
+            score in X must be equal to or smaller than its
+            fuzzy-set membership in Y:</p>
+            <div class="latex" id="orge004655">
+              \begin{equation} X \leq Y \end{equation}
+            </div>
+            <p>Additionally, all cases with non-zero membership
+            score in the condition are relevant fot the test of
+            sufficiency, <span class="underline">regardless of
+            whether they are above or below 0.5</span>.</p>
+            <div id="org27ad800" class="figure">
+              <p><img src=
+              "../.attach/81/3405db-5ea6-4d49-9edf-48e55292479c/_20210201_155902screenshot.png"
+              alt="_20210201_155902screenshot.png" /></p>
+              <p><span class="figure-number">Figure 1:</span> XY
+              plot - distribuition of cases for sufficient
+              condition X</p>
+            </div>
+            <p>Similar to Crisp-sets, X must be a subset of outcome
+            to be considered as a sufficient condition.</p>
+          </div>
+          <div id="outline-container-org2ae6b83" class="outline-5">
+            <h5 id="org2ae6b83">Example</h5>
+            <div class="outline-text-5" id="text-org2ae6b83">
+              <table border="2" cellspacing="0" cellpadding="6"
+              rules="groups" frame="hsides">
+                <caption class="t-above">
+                  <span class="table-number">Table 3:</span>
+                  Hypothetical data matrix with fuzzy-set
+                  membership scores
+                </caption>
+                <colgroup>
+                  <col class="org-left" />
+                  <col class="org-right" />
+                  <col class="org-right" />
+                  <col class="org-right" />
+                  <col class="org-right" />
+                  <col class="org-right" />
+                  <col class="org-right" />
+                  <col class="org-right" />
+                  <col class="org-right" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col" class="org-left">Cases</th>
+                    <th scope="col" class="org-right">
+                    <code>A</code></th>
+                    <th scope="col" class="org-right">
+                    <code>B</code></th>
+                    <th scope="col" class="org-right">
+                    <code>C</code></th>
+                    <th scope="col" class="org-right">
+                    <code>~A</code></th>
+                    <th scope="col" class="org-right">
+                    <code>AB</code></th>
+                    <th scope="col" class="org-right">
+                    <code>~BC</code></th>
+                    <th scope="col" class="org-right">
+                    <code>Y</code></th>
+                    <th scope="col" class="org-right">
+                    <code>~Y</code></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="org-left">ARG</td>
+                    <td class="org-right">0.8</td>
+                    <td class="org-right">0.9</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">0.2</td>
+                    <td class="org-right">0.8</td>
+                    <td class="org-right">0.1</td>
+                    <td class="org-right">0.1</td>
+                    <td class="org-right">0.9</td>
+                  </tr>
+                  <tr>
+                    <td class="org-left">PER</td>
+                    <td class="org-right">0.7</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">0.3</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">0.2</td>
+                    <td class="org-right">0.8</td>
+                  </tr>
+                  <tr>
+                    <td class="org-left">BOL</td>
+                    <td class="org-right">0.6</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">0.1</td>
+                    <td class="org-right">0.4</td>
+                    <td class="org-right">0.4</td>
+                    <td class="org-right">0.0</td>
+                    <td class="org-right">0.3</td>
+                    <td class="org-right">0.7</td>
+                  </tr>
+                  <tr>
+                    <td class="org-left">CHI</td>
+                    <td class="org-right">0.3</td>
+                    <td class="org-right">0.9</td>
+                    <td class="org-right">0.2</td>
+                    <td class="org-right">0.7</td>
+                    <td class="org-right">0.3</td>
+                    <td class="org-right">0.1</td>
+                    <td class="org-right">0.6</td>
+                    <td class="org-right">0.4</td>
+                  </tr>
+                  <tr>
+                    <td class="org-left">ECU</td>
+                    <td class="org-right">0.9</td>
+                    <td class="org-right">0.1</td>
+                    <td class="org-right">0.3</td>
+                    <td class="org-right">0.1</td>
+                    <td class="org-right">0.1</td>
+                    <td class="org-right">0.3</td>
+                    <td class="org-right">0.4</td>
+                    <td class="org-right">0.6</td>
+                  </tr>
+                  <tr>
+                    <td class="org-left">BRZ</td>
+                    <td class="org-right">0.2</td>
+                    <td class="org-right">0.8</td>
+                    <td class="org-right">0.9</td>
+                    <td class="org-right">0.8</td>
+                    <td class="org-right">0.2</td>
+                    <td class="org-right">0.2</td>
+                    <td class="org-right">0.7</td>
+                    <td class="org-right">0.3</td>
+                  </tr>
+                  <tr>
+                    <td class="org-left">URU</td>
+                    <td class="org-right">0.9</td>
+                    <td class="org-right">0.2</td>
+                    <td class="org-right">0.8</td>
+                    <td class="org-right">0.1</td>
+                    <td class="org-right">0.2</td>
+                    <td class="org-right">0.8</td>
+                    <td class="org-right">0.8</td>
+                    <td class="org-right">0.2</td>
+                  </tr>
+                  <tr>
+                    <td class="org-left">PAR</td>
+                    <td class="org-right">0.2</td>
+                    <td class="org-right">0.3</td>
+                    <td class="org-right">0.7</td>
+                    <td class="org-right">0.8</td>
+                    <td class="org-right">0.2</td>
+                    <td class="org-right">0.7</td>
+                    <td class="org-right">0.9</td>
+                    <td class="org-right">0.1</td>
+                  </tr>
+                  <tr>
+                    <td class="org-left">COL</td>
+                    <td class="org-right">0.2</td>
+                    <td class="org-right">0.4</td>
+                    <td class="org-right">0.4</td>
+                    <td class="org-right">0.8</td>
+                    <td class="org-right">0.2</td>
+                    <td class="org-right">0.4</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">0</td>
+                  </tr>
+                  <tr>
+                    <td class="org-left">VEN</td>
+                    <td class="org-right">0.9</td>
+                    <td class="org-right">0.7</td>
+                    <td class="org-right">0.6</td>
+                    <td class="org-right">0.1</td>
+                    <td class="org-right">0.7</td>
+                    <td class="org-right">0.3</td>
+                    <td class="org-right">0.3</td>
+                    <td class="org-right">0.7</td>
+                  </tr>
+                  <tr>
+                    <td class="org-left">\(X\leq Y\)?</td>
+                    <td class="org-right">No</td>
+                    <td class="org-right">No</td>
+                    <td class="org-right">No</td>
+                    <td class="org-right">No</td>
+                    <td class="org-right">No</td>
+                    <td class="org-right">Yes</td>
+                    <td class="org-right">-</td>
+                    <td class="org-right">-</td>
+                  </tr>
+                  <tr>
+                    <td class="org-left">\(X\leq \neg Y\)?</td>
+                    <td class="org-right">No</td>
+                    <td class="org-right">No</td>
+                    <td class="org-right">No</td>
+                    <td class="org-right">No</td>
+                    <td class="org-right">Yes</td>
+                    <td class="org-right">No</td>
+                    <td class="org-right">-</td>
+                    <td class="org-right">-</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p><b>Conclusion:</b> \(\neg BC \to Y \hspace{2cm} AB
+              \to \neg Y\)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="outline-container-org4bc8b55" class="outline-3">
+        <h3 id="org4bc8b55">Necessary conditions</h3>
+        <div class="outline-text-3" id="text-org4bc8b55"></div>
+        <div id="outline-container-orga222397" class="outline-4">
+          <h4 id="orga222397">Crisp sets</h4>
+          <div class="outline-text-4" id="text-orga222397">
+            <p><b>Definition:</b> A condition <code>X</code> is
+            necessary if, whenever the outcome <code>Y</code> is
+            present, the condition is also present. Thus, no cases
+            with <code>Y</code> displays <code>~X</code>; on the
+            presence of <code>~X</code>, <code>Y</code> is
+            impossible.</p>
+            <table border="2" cellspacing="0" cellpadding="6"
+            rules="groups" frame="hsides">
+              <caption class="t-above">
+                <span class="table-number">Table 4:</span> Data
+                matrix - necessity
+              </caption>
+              <colgroup>
+                <col class="org-left" />
+                <col class="org-right" />
+                <col class="org-right" />
+                <col class="org-left" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col" class="org-left">Case</th>
+                  <th scope="col" class="org-right">Condition
+                  (X)</th>
+                  <th scope="col" class="org-right">Outcome
+                  (Y)</th>
+                  <th scope="col" class="org-left">Necessity of
+                  <code>X</code> for <code>Y</code>…</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="org-left">A</td>
+                  <td class="org-right">1</td>
+                  <td class="org-right">1</td>
+                  <td class="org-left">allowed</td>
+                </tr>
+                <tr>
+                  <td class="org-left">B</td>
+                  <td class="org-right">1</td>
+                  <td class="org-right">0</td>
+                  <td class="org-left">irrelevant</td>
+                </tr>
+                <tr>
+                  <td class="org-left">C</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">1</td>
+                  <td class="org-left">not allowed</td>
+                </tr>
+                <tr>
+                  <td class="org-left">D</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">0</td>
+                  <td class="org-left">irrelevant</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div id="outline-container-org716a08a" class="outline-5">
+            <h5 id="org716a08a">Example</h5>
+            <div class="outline-text-5" id="text-org716a08a">
+              <table border="2" cellspacing="0" cellpadding="6"
+              rules="groups" frame="hsides">
+                <caption class="t-above">
+                  <span class="table-number">Table 5:</span>
+                  Hypothetical data matrix with ten cases and
+                  set-membership scores in three conditions and the
+                  outcome (adapted from p. 61)
+                </caption>
+                <colgroup>
+                  <col class="org-left" />
+                  <col class="org-right" />
+                  <col class="org-right" />
+                  <col class="org-right" />
+                  <col class="org-right" />
+                  <col class="org-right" />
+                  <col class="org-right" />
+                  <col class="org-right" />
+                  <col class="org-right" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col" class="org-left">Cases</th>
+                    <th scope="col" class="org-right">A</th>
+                    <th scope="col" class="org-right">B</th>
+                    <th scope="col" class="org-right">C</th>
+                    <th scope="col" class="org-right">~A</th>
+                    <th scope="col" class="org-right">~B</th>
+                    <th scope="col" class="org-right">~C</th>
+                    <th scope="col" class="org-right">~A + C</th>
+                    <th scope="col" class="org-right">Y</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="org-left">ARG</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">0</td>
+                  </tr>
+                  <tr>
+                    <td class="org-left">PER</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">0</td>
+                  </tr>
+                  <tr>
+                    <td class="org-left">BOL</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">0</td>
+                  </tr>
+                  <tr>
+                    <td class="org-left">CHI</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">1</td>
+                  </tr>
+                  <tr>
+                    <td class="org-left">ECU</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">0</td>
+                  </tr>
+                  <tr>
+                    <td class="org-left">BRZ</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">1</td>
+                  </tr>
+                  <tr>
+                    <td class="org-left">URU</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">1</td>
+                  </tr>
+                  <tr>
+                    <td class="org-left">PAR</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">1</td>
+                  </tr>
+                  <tr>
+                    <td class="org-left">COL</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">1</td>
+                  </tr>
+                  <tr>
+                    <td class="org-left">VEN</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">0</td>
+                    <td class="org-right">1</td>
+                    <td class="org-right">0</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td class="org-left">Necessary?</td>
+                    <td class="org-right">No</td>
+                    <td class="org-right">No</td>
+                    <td class="org-right">No</td>
+                    <td class="org-right">No</td>
+                    <td class="org-right">No</td>
+                    <td class="org-right">No</td>
+                    <td class="org-right">Yes</td>
+                    <td class="org-right">-</td>
+                  </tr>
+                </tbody>
+              </table>
+              <pre class="example" id="org5e2fdef">
+Hint: first look for Y, then to X. If ~Y is present, it is irrelevant.
+</pre>
+              <p><b>Conclusion:</b> \(\neg A + C\) is necessary for
+              \(Y\) to occur.</p>
+            </div>
+          </div>
+        </div>
+        <div id="outline-container-org0eee2d5" class="outline-4">
+          <h4 id="org0eee2d5">Fuzzy
+          sets&nbsp;&nbsp;&nbsp;<span class="tag"><span class=
+          "ATTACH">ATTACH</span></span></h4>
+          <div class="outline-text-4" id="text-org0eee2d5">
+            <p>For necessity, each case’s fuzzy set membership
+            score in \(X\) must be equal or greater than its
+            fuzzy-set membership in the outcome. When it occur,
+            \(X\) is a superset of \(Y\):</p>
+            <div class="latex" id="org15a7eb8">
+              \begin{equation} X \supset Y \end{equation}
+            </div>
+            <p>All cases with non-zero membership in outcome are
+            relevant for the analysis of necessity.</p>
+            <div id="orgff756de" class="figure">
+              <p><img src=
+              "../.attach/a4/b0a9d1-879c-4ca6-9a17-3d96f941fbb7/_20210201_164610screenshot.png"
+              alt="_20210201_164610screenshot.png" /></p>
+              <p><span class="figure-number">Figure 2:</span> XY
+              plot - distribution of cases for necessary condition
+              X</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="outline-container-orgbc31dc9" class="outline-3">
+        <h3 id="orgbc31dc9">Causal complexity in set-theoretic
+        methods</h3>
+        <div class="outline-text-3" id="text-orgbc31dc9">
+          <ul class="org-ul">
+            <li>The number of cases should <b>not</b> be the
+            central argument in favor of using QCA
+              <ul class="org-ul">
+                <li>QCA could be applied in studies with a large
+                dataset</li>
+                <li>Theories and expectations about the underlying
+                causal processes.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div id="outline-container-org6e4f68a" class="outline-5">
+          <h5 id="org6e4f68a">Defining causal complexity</h5>
+          <div class="outline-text-5" id="text-org6e4f68a">
+            <p>Causal complexity has three main
+            characteristics:</p>
+            <ul class="org-ul">
+              <li>
+                <b>Equifinality:</b> presence of different,
+                mutually non-exclusive path for the same phenomenon
+                <ul class="org-ul">
+                  <li>Presence of sufficient but non-necessary
+                  condition implies equifinality</li>
+                </ul>
+              </li>
+              <li>
+                <b>Conjunctural causation:</b> The effect of a
+                single condition unfolds only in <b>combination</b>
+                with other
+                <ul class="org-ul">
+                  <li>Existence of necessary but non-sufficient
+                  condition implies conjunctural causation</li>
+                </ul>
+              </li>
+              <li>
+                <b>Causal asymmetry:</b> The absence of an outcome
+                is not necessarily equivalent to the negation of
+                the condition that explains the presence of it.
+                <ul class="org-ul">
+                  <li>DeMorgan’s Law is not necessarily valid
+                    <ul class="org-ul">
+                      <li>To be testable, it is needed to include
+                      all possible combinations (no logical
+                      reminders)</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-orgfe4ea7a" class="outline-5">
+          <h5 id="orgfe4ea7a">INUS and SUIN conditions</h5>
+          <div class="outline-text-5" id="text-orgfe4ea7a">
+            <p><b>INUS:</b> <b>I</b> nsufficient but <b>N</b>
+            ecessary parte of a condition which is itself <b>U</b>
+            nnecessary but <b>S</b> ufficient for the result</p>
+            <div class="latex" id="org482dd02">
+              \begin{equation} AB + \neg BC + D\neg F \to Y
+              \end{equation}
+            </div>
+            <p>In this case, condition <code>A</code> is
+            insufficient on its own but needed to form a sufficient
+            conjunction together with <code>B</code>. The
+            <b>sufficient</b> condition <code>AB</code> is not the
+            only path to the outcome (<i>i.e.</i> it is
+            unncecessary).</p>
+            <pre class="example" id="org28f677e">
+Hint: if a condition occurs together with other to produce the outcome, but it is not the only path, so it is an INUS conditon.
+</pre>
+            <p><b>SUIN:</b> <b>S</b> ufficient, but <b>U</b>
+            nnecessary part of a factor that is <b>I</b>
+            nsufficient, but a <b>N</b> ecessary for the
+            result.</p>
+            <div class="latex" id="orgc8af474">
+              \begin{equation} (A+B)\cdot (C + \neg D) \leftarrow Y
+              \end{equation}
+            </div>
+            <p>In this case, there are two necessary conditions
+            (A+B and C + ~D). Eache one element alone of the
+            condition is not necessary, but mutually substitutable
+            elements of necessary conditions for Y.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="outline-container-org27d6947" class="outline-2">
+      <h2 id="org27d6947">Chapter 4: Truth Tables</h2>
+      <div class="outline-text-2" id="text-org27d6947"></div>
+      <div id="outline-container-org79ea457" class="outline-3">
+        <h3 id="org79ea457">What is a truth table?</h3>
+        <div class="outline-text-3" id="text-org79ea457">
+          <p>In a Truth Table (TT), each row represents one of the
+          logically possible AND combinations between conditions.
+          The total number of rows is \(2^{2}\) in which \(k\) is
+          the number of conditions. Each row denotes a
+          <b>qualitatively different</b> combination of
+          conditions.</p>
+        </div>
+      </div>
+      <div id="outline-container-org5ed9e84" class="outline-3">
+        <h3 id="org5ed9e84">How to get from a data matrix to truth
+        table</h3>
+        <div class="outline-text-3" id="text-org5ed9e84"></div>
+        <div id="outline-container-org3cdcdc4" class="outline-4">
+          <h4 id="org3cdcdc4">Crip sets</h4>
+          <div class="outline-text-4" id="text-org3cdcdc4">
+            <ol class="org-ol">
+              <li>Write down all \(2^{k}\) logically possible
+              combination</li>
+              <li>Assign each case to a TT row
+                <ol class="org-ol">
+                  <li>Each case can belong to only onele TT row,
+                  but each row can contain more than one case</li>
+                </ol>
+              </li>
+              <li>Attribute to every TT row the outcome, which
+              denotes <b>sufficiency</b>
+                <ol class="org-ol">
+                  <li>1 indicates cases with given characteristics
+                  also show the outcome</li>
+                </ol>
+              </li>
+            </ol>
+            <table border="2" cellspacing="0" cellpadding="6"
+            rules="groups" frame="hsides">
+              <caption class="t-above">
+                <span class="table-number">Table 6:</span>
+                Hypothetical TT with 3 conditions
+              </caption>
+              <colgroup>
+                <col class="org-right" />
+                <col class="org-right" />
+                <col class="org-right" />
+                <col class="org-right" />
+                <col class="org-right" />
+                <col class="org-right" />
+                <col class="org-left" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col" class="org-right">Row</th>
+                  <th scope="col" class="org-right">A</th>
+                  <th scope="col" class="org-right">B</th>
+                  <th scope="col" class="org-right">C</th>
+                  <th scope="col" class="org-right">Y</th>
+                  <th scope="col" class="org-right">~Y</th>
+                  <th scope="col" class="org-left">Cases</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="org-right">1</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">1</td>
+                  <td class="org-right">0</td>
+                  <td class="org-left">COL</td>
+                </tr>
+                <tr>
+                  <td class="org-right">2</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">1</td>
+                  <td class="org-right">1</td>
+                  <td class="org-right">0</td>
+                  <td class="org-left">PAR</td>
+                </tr>
+                <tr>
+                  <td class="org-right">3</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">1</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">1</td>
+                  <td class="org-right">0</td>
+                  <td class="org-left">CHI</td>
+                </tr>
+                <tr>
+                  <td class="org-right">4</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">1</td>
+                  <td class="org-right">1</td>
+                  <td class="org-right">1</td>
+                  <td class="org-right">0</td>
+                  <td class="org-left">BRZ</td>
+                </tr>
+                <tr>
+                  <td class="org-right">5</td>
+                  <td class="org-right">1</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">1</td>
+                  <td class="org-left">PER, EC</td>
+                </tr>
+                <tr>
+                  <td class="org-right">6</td>
+                  <td class="org-right">1</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">1</td>
+                  <td class="org-right">1</td>
+                  <td class="org-right">0</td>
+                  <td class="org-left">URU</td>
+                </tr>
+                <tr>
+                  <td class="org-right">7</td>
+                  <td class="org-right">1</td>
+                  <td class="org-right">1</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">1</td>
+                  <td class="org-left">BOL</td>
+                </tr>
+                <tr>
+                  <td class="org-right">8</td>
+                  <td class="org-right">1</td>
+                  <td class="org-right">1</td>
+                  <td class="org-right">1</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">1</td>
+                  <td class="org-left">ARG, VEN</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div id="outline-container-org1db0e03" class="outline-4">
+          <h4 id="org1db0e03">Fuzzy sets</h4>
+          <div class="outline-text-4" id="text-org1db0e03">
+            <p>For fuzzy sets, it is usefull to consider the
+            concept of <b>property space</b>. Each set constitutes
+            one dimension of the property space: Based on set
+            membership in the conditions, each case has one
+            location in the <b>property space</b><sup><a id="fnr.1"
+            class="footref" href="#fn.1" role=
+            "doc-backlink">1</a></sup> which have \(2^{k}\) corners
+            that represents <b>ideal types</b>. The crutial point
+            is that, while each case has partial membership in all
+            rows, the is only one row in which its membership
+            exceeds the qualitative anchor of 0.5<sup><a id="fnr.2"
+            class="footref" href="#fn.2" role=
+            "doc-backlink">2</a></sup>.</p>
+            <table border="2" cellspacing="0" cellpadding="6"
+            rules="groups" frame="hsides">
+              <caption class="t-above">
+                <span class="table-number">Table 7:</span>
+                Fuzzy-set membership in ideal types for
+                hypothetical data matrix
+              </caption>
+              <colgroup>
+                <col class="org-left" />
+                <col class="org-right" />
+                <col class="org-right" />
+                <col class="org-left" />
+                <col class="org-left" />
+                <col class="org-right" />
+                <col class="org-left" />
+                <col class="org-left" />
+                <col class="org-right" />
+                <col class="org-right" />
+                <col class="org-right" />
+                <col class="org-right" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col" class="org-left">Case</th>
+                  <th scope="col" class="org-right">Conditions</th>
+                  <th scope="col" class="org-right">&nbsp;</th>
+                  <th scope="col" class="org-left">&nbsp;</th>
+                  <th scope="col" class="org-left">Ideal types</th>
+                  <th scope="col" class="org-right">&nbsp;</th>
+                  <th scope="col" class="org-left">&nbsp;</th>
+                  <th scope="col" class="org-left">&nbsp;</th>
+                  <th scope="col" class="org-right">&nbsp;</th>
+                  <th scope="col" class="org-right">&nbsp;</th>
+                  <th scope="col" class="org-right">&nbsp;</th>
+                  <th scope="col" class="org-right">&nbsp;</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="org-left">&nbsp;</td>
+                  <td class="org-right">A</td>
+                  <td class="org-right">B</td>
+                  <td class="org-left">C</td>
+                  <td class="org-left">ABC</td>
+                  <td class="org-right">AB~C</td>
+                  <td class="org-left">A~BC</td>
+                  <td class="org-left">A~B~C</td>
+                  <td class="org-right">~ABC</td>
+                  <td class="org-right">~AB~C</td>
+                  <td class="org-right">~A~BC</td>
+                  <td class="org-right">~A~B~C</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td class="org-left">VEN</td>
+                  <td class="org-right">0.9</td>
+                  <td class="org-right">0.7</td>
+                  <td class="org-left">0.6</td>
+                  <td class="org-left"><b>0.6</b></td>
+                  <td class="org-right">0.4</td>
+                  <td class="org-left">0.3</td>
+                  <td class="org-left">0.3</td>
+                  <td class="org-right">0.1</td>
+                  <td class="org-right">0.1</td>
+                  <td class="org-right">0.1</td>
+                  <td class="org-right">0.1</td>
+                </tr>
+                <tr>
+                  <td class="org-left">ECU</td>
+                  <td class="org-right">0.9</td>
+                  <td class="org-right">0.1</td>
+                  <td class="org-left">0.3</td>
+                  <td class="org-left">0.1</td>
+                  <td class="org-right">0.1</td>
+                  <td class="org-left">0.3</td>
+                  <td class="org-left"><b>0.7</b></td>
+                  <td class="org-right">0.1</td>
+                  <td class="org-right">0.1</td>
+                  <td class="org-right">0.1</td>
+                  <td class="org-right">0.1</td>
+                </tr>
+                <tr>
+                  <td class="org-left">HYPO</td>
+                  <td class="org-right">0.8</td>
+                  <td class="org-right">0.1</td>
+                  <td class="org-left"><span class=
+                  "underline">0.5</span></td>
+                  <td class="org-left">0.1</td>
+                  <td class="org-right">0.1</td>
+                  <td class="org-left"><b>0.5</b></td>
+                  <td class="org-left"><b>0.5</b></td>
+                  <td class="org-right">0.1</td>
+                  <td class="org-right">0.1</td>
+                  <td class="org-right">0.2</td>
+                  <td class="org-right">0.2</td>
+                </tr>
+              </tbody>
+            </table>
+            <p><b>MEMO:</b> Each TT row is a statement of
+            sufficiency. So, each TT row should considered a
+            sufficient conjunction for the outcome if each case’s
+            membership in this row is smaller than or equal to its
+            membership in the outcome. Additionally, it is
+            important to point out that this procedure does not
+            involve any conversion of fuzzy-sets into crisp
+            sets.</p>
+            <table border="2" cellspacing="0" cellpadding="6"
+            rules="groups" frame="hsides">
+              <caption class="t-above">
+                <span class="table-number">Table 8:</span>
+                Fuzzy-set membership in rows and outcome
+              </caption>
+              <colgroup>
+                <col class="org-left" />
+                <col class="org-right" />
+                <col class="org-right" />
+                <col class="org-right" />
+                <col class="org-right" />
+                <col class="org-right" />
+                <col class="org-right" />
+                <col class="org-right" />
+                <col class="org-right" />
+                <col class="org-right" />
+                <col class="org-right" />
+                <col class="org-right" />
+                <col class="org-right" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col" class="org-left">Case</th>
+                  <th scope="col" class="org-right">Conditions</th>
+                  <th scope="col" class="org-right">&nbsp;</th>
+                  <th scope="col" class="org-right">&nbsp;</th>
+                  <th scope="col" class="org-right">Ideal
+                  types</th>
+                  <th scope="col" class="org-right">&nbsp;</th>
+                  <th scope="col" class="org-right">&nbsp;</th>
+                  <th scope="col" class="org-right">&nbsp;</th>
+                  <th scope="col" class="org-right">&nbsp;</th>
+                  <th scope="col" class="org-right">&nbsp;</th>
+                  <th scope="col" class="org-right">&nbsp;</th>
+                  <th scope="col" class="org-right">&nbsp;</th>
+                  <th scope="col" class="org-right">Outcome</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="org-left">&nbsp;</td>
+                  <td class="org-right">A</td>
+                  <td class="org-right">B</td>
+                  <td class="org-right">C</td>
+                  <td class="org-right">ABC</td>
+                  <td class="org-right">AB~C</td>
+                  <td class="org-right">A~BC</td>
+                  <td class="org-right">A~B~C</td>
+                  <td class="org-right">~ABC</td>
+                  <td class="org-right">~AB~C</td>
+                  <td class="org-right">~A~BC</td>
+                  <td class="org-right">~A~B~C</td>
+                  <td class="org-right">Y</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td class="org-left">ARG</td>
+                  <td class="org-right">0.8</td>
+                  <td class="org-right">0.9</td>
+                  <td class="org-right">1</td>
+                  <td class="org-right"><b>0.8</b></td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">0.1</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">0.2</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">0.1</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">0.1</td>
+                </tr>
+                <tr>
+                  <td class="org-left">PER</td>
+                  <td class="org-right">0.7</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right"><b>0.7</b></td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">0.3</td>
+                  <td class="org-right">0.4</td>
+                </tr>
+                <tr>
+                  <td class="org-left">BOL</td>
+                  <td class="org-right">0.6</td>
+                  <td class="org-right">1</td>
+                  <td class="org-right">0.1</td>
+                  <td class="org-right">0.1</td>
+                  <td class="org-right"><b>0.6</b></td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">0.1</td>
+                  <td class="org-right">0.4</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">0.3</td>
+                </tr>
+                <tr>
+                  <td class="org-left">CHI</td>
+                  <td class="org-right">0.3</td>
+                  <td class="org-right">0.9</td>
+                  <td class="org-right">0.2</td>
+                  <td class="org-right">0.2</td>
+                  <td class="org-right">0.3</td>
+                  <td class="org-right">0.1</td>
+                  <td class="org-right">0.1</td>
+                  <td class="org-right">0.2</td>
+                  <td class="org-right"><b>0.7</b></td>
+                  <td class="org-right">0.1</td>
+                  <td class="org-right">0.1</td>
+                  <td class="org-right">0.6</td>
+                </tr>
+                <tr>
+                  <td class="org-left">ECU</td>
+                  <td class="org-right">0.9</td>
+                  <td class="org-right">0.1</td>
+                  <td class="org-right">0.3</td>
+                  <td class="org-right">0.1</td>
+                  <td class="org-right">0.1</td>
+                  <td class="org-right">0.3</td>
+                  <td class="org-right"><b>0.7</b></td>
+                  <td class="org-right">0.1</td>
+                  <td class="org-right">0.1</td>
+                  <td class="org-right">0.1</td>
+                  <td class="org-right">0.1</td>
+                  <td class="org-right">0.4</td>
+                </tr>
+                <tr>
+                  <td class="org-left">BRZ</td>
+                  <td class="org-right">0.2</td>
+                  <td class="org-right">0.8</td>
+                  <td class="org-right">0.9</td>
+                  <td class="org-right">0.2</td>
+                  <td class="org-right">0.1</td>
+                  <td class="org-right">0.2</td>
+                  <td class="org-right">0.1</td>
+                  <td class="org-right"><b>0.8</b></td>
+                  <td class="org-right">0.1</td>
+                  <td class="org-right">0.2</td>
+                  <td class="org-right">0.1</td>
+                  <td class="org-right">0.7</td>
+                </tr>
+                <tr>
+                  <td class="org-left">URU</td>
+                  <td class="org-right">0.9</td>
+                  <td class="org-right">0.2</td>
+                  <td class="org-right">0.8</td>
+                  <td class="org-right">0.2</td>
+                  <td class="org-right">0.2</td>
+                  <td class="org-right"><b>0.8</b></td>
+                  <td class="org-right">0.2</td>
+                  <td class="org-right">0.1</td>
+                  <td class="org-right">0.1</td>
+                  <td class="org-right">0.1</td>
+                  <td class="org-right">0.1</td>
+                  <td class="org-right">0.8</td>
+                </tr>
+                <tr>
+                  <td class="org-left">PAR</td>
+                  <td class="org-right">0.2</td>
+                  <td class="org-right">0.3</td>
+                  <td class="org-right">0.7</td>
+                  <td class="org-right">0.2</td>
+                  <td class="org-right">0.2</td>
+                  <td class="org-right">0.2</td>
+                  <td class="org-right">0.2</td>
+                  <td class="org-right">0.3</td>
+                  <td class="org-right">0.3</td>
+                  <td class="org-right"><b>0.7</b></td>
+                  <td class="org-right">0.3</td>
+                  <td class="org-right">0.9</td>
+                </tr>
+                <tr>
+                  <td class="org-left">COL</td>
+                  <td class="org-right">0.2</td>
+                  <td class="org-right">0.4</td>
+                  <td class="org-right">0.4</td>
+                  <td class="org-right">0.2</td>
+                  <td class="org-right">0.2</td>
+                  <td class="org-right">0.2</td>
+                  <td class="org-right">0.2</td>
+                  <td class="org-right">0.4</td>
+                  <td class="org-right">0.4</td>
+                  <td class="org-right">0.4</td>
+                  <td class="org-right"><b>0.6</b></td>
+                  <td class="org-right">1</td>
+                </tr>
+                <tr>
+                  <td class="org-left">VEN</td>
+                  <td class="org-right">0.9</td>
+                  <td class="org-right">0.7</td>
+                  <td class="org-right">0.6</td>
+                  <td class="org-right"><b>0.6</b></td>
+                  <td class="org-right">0.4</td>
+                  <td class="org-right">0.3</td>
+                  <td class="org-right">0.3</td>
+                  <td class="org-right">0.1</td>
+                  <td class="org-right">0.1</td>
+                  <td class="org-right">0.1</td>
+                  <td class="org-right">0.1</td>
+                  <td class="org-right">0.3</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td class="org-left">\(X \leq Y\)?</td>
+                  <td class="org-right">-</td>
+                  <td class="org-right">-</td>
+                  <td class="org-right">-</td>
+                  <td class="org-right">No</td>
+                  <td class="org-right">No</td>
+                  <td class="org-right">Yes</td>
+                  <td class="org-right">No</td>
+                  <td class="org-right">No</td>
+                  <td class="org-right">No</td>
+                  <td class="org-right">Yes</td>
+                  <td class="org-right">Yes</td>
+                  <td class="org-right">-</td>
+                </tr>
+              </tbody>
+            </table>
+            <table border="2" cellspacing="0" cellpadding="6"
+            rules="groups" frame="hsides">
+              <caption class="t-above">
+                <span class="table-number">Table 9:</span> TT
+                derived from hypothetical fuzzy-set data
+              </caption>
+              <colgroup>
+                <col class="org-right" />
+                <col class="org-right" />
+                <col class="org-right" />
+                <col class="org-right" />
+                <col class="org-right" />
+                <col class="org-left" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col" class="org-right">Rows</th>
+                  <th scope="col" class="org-right">Conditions</th>
+                  <th scope="col" class="org-right">&nbsp;</th>
+                  <th scope="col" class="org-right">&nbsp;</th>
+                  <th scope="col" class="org-right">Sufficient
+                  for</th>
+                  <th scope="col" class="org-left">Cases with</th>
+                </tr>
+                <tr>
+                  <th scope="col" class="org-right">&nbsp;</th>
+                  <th scope="col" class="org-right">A</th>
+                  <th scope="col" class="org-right">B</th>
+                  <th scope="col" class="org-right">C</th>
+                  <th scope="col" class="org-right">Y</th>
+                  <th scope="col" class="org-left">Membership
+                  \(\leq 0.5\) in row</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="org-right">1</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">1</td>
+                  <td class="org-left">COL (0.6)</td>
+                </tr>
+                <tr>
+                  <td class="org-right">2</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">1</td>
+                  <td class="org-right">1</td>
+                  <td class="org-left">PAR (0.7)</td>
+                </tr>
+                <tr>
+                  <td class="org-right">3</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">1</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">0</td>
+                  <td class="org-left">CHI (0.7)</td>
+                </tr>
+                <tr>
+                  <td class="org-right">4</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">1</td>
+                  <td class="org-right">1</td>
+                  <td class="org-right">0</td>
+                  <td class="org-left">BRZ (0.8)</td>
+                </tr>
+                <tr>
+                  <td class="org-right">5</td>
+                  <td class="org-right">1</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">0</td>
+                  <td class="org-left">PER (0.7), EC (0.7)</td>
+                </tr>
+                <tr>
+                  <td class="org-right">6</td>
+                  <td class="org-right">1</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">1</td>
+                  <td class="org-right">1</td>
+                  <td class="org-left">URU (0.8)</td>
+                </tr>
+                <tr>
+                  <td class="org-right">7</td>
+                  <td class="org-right">1</td>
+                  <td class="org-right">1</td>
+                  <td class="org-right">0</td>
+                  <td class="org-right">0</td>
+                  <td class="org-left">BOL (0.6)</td>
+                </tr>
+                <tr>
+                  <td class="org-right">8</td>
+                  <td class="org-right">1</td>
+                  <td class="org-right">1</td>
+                  <td class="org-right">1</td>
+                  <td class="org-right">0</td>
+                  <td class="org-left">ARG (0.8), VEN (0.6)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div id="outline-container-orgae18c59" class="outline-3">
+        <h3 id="orgae18c59">Analyzing truth tables</h3>
+        <div class="outline-text-3" id="text-orgae18c59">
+          <p><b>MEMO:</b> All rows that are linked to the outcome
+          value of 1 are the <b>sufficient</b> conditions. For the
+          analysis of <b>necessity</b>, the bottom-up procedure has
+          to be used. However, the TT does not play an important
+          role in the analysis of necessity.</p>
+        </div>
+        <div id="outline-container-org0a5dda4" class="outline-4">
+          <h4 id="org0a5dda4">Matching similar conjunctions</h4>
+          <div class="outline-text-4" id="text-org0a5dda4">
+            <ol class="org-ol">
+              <li>Create a Boolean expression of all those TT rows
+              that are connected to the outcome to be explained.
+                <ol class="org-ol">
+                  <li><b>Primitive expressions:</b> Conjuctions
+                  representing a TT row</li>
+                </ol>
+              </li>
+              <li>This formula is the most complex way to express
+              sufficiency</li>
+              <li>Start <b>logical minimization</b>
+              (Quine-McCluskey algorithm)
+                <ol class="org-ol">
+                  <li>If two TT rows differ in only one condition,
+                  so this condition is <i>logically redundant</i>
+                  and irrelevant for producing the outcome and thus
+                  can be <b>ommited</b>
+                    <ol class="org-ol">
+                      <li>The result is called <b>prime
+                      implicant</b></li>
+                    </ol>
+                  </li>
+                  <li>The resultant formula is <b>logically
+                  equivalent</b> to the most complex formula and to
+                  all imtermediate formulas</li>
+                </ol>
+              </li>
+              <li>Check if any primitive expression is covered by
+              mor then one <b>prime implicant</b>. If so, it could
+              be minimized again.</li>
+              <li>The final expression is (compared to the first
+              one):
+                <ol class="org-ol">
+                  <li>Logically equivalent</li>
+                  <li>Express the same information contained in the
+                  TT</li>
+                  <li>Do noto contradict each other, nor do they
+                  contradict the information in the TT</li>
+                  <li>Summaries the empirical information</li>
+                </ol>
+              </li>
+            </ol>
+            <pre class="example" id="org4edb4f2">
+~A~B~C + ~A~BC + ~AB~C + ~ABC + A~BC -&gt; Y
+
+~A~B + ~AB~C + ~ABC + A~BC -&gt; Y
+
+~A~B + ~AB + A~BC -&gt; Y
+
+~A + A~BC -&gt; Y
+
+~A + ~BC -&gt; Y
+</pre>
+            <table border="2" cellspacing="0" cellpadding="6"
+            rules="groups" frame="hsides">
+              <caption class="t-above">
+                <span class="table-number">Table 10:</span> Prime
+                implicant chart
+              </caption>
+              <colgroup>
+                <col class="org-left" />
+                <col class="org-left" />
+                <col class="org-left" />
+                <col class="org-left" />
+                <col class="org-left" />
+                <col class="org-left" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col" class="org-left">Prime
+                  implicants</th>
+                  <th scope="col" class="org-left">~A~B~C</th>
+                  <th scope="col" class="org-left">~A~BC</th>
+                  <th scope="col" class="org-left">~AB~C</th>
+                  <th scope="col" class="org-left">~ABC</th>
+                  <th scope="col" class="org-left">A~BC</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="org-left">~A</td>
+                  <td class="org-left">X</td>
+                  <td class="org-left">X</td>
+                  <td class="org-left">X</td>
+                  <td class="org-left">X</td>
+                  <td class="org-left">-</td>
+                </tr>
+                <tr>
+                  <td class="org-left">A~BC</td>
+                  <td class="org-left">-</td>
+                  <td class="org-left">-</td>
+                  <td class="org-left">-</td>
+                  <td class="org-left">-</td>
+                  <td class="org-left">X</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div id="outline-container-org318f2a0" class="outline-4">
+          <h4 id="org318f2a0">Logically redundant prime
+          implicants</h4>
+          <div class="outline-text-4" id="text-org318f2a0">
+            <p>Prime implicants can be defined as the end products
+            of the logical minimization process through pairwise
+            comparisons of conjunctions. A prime implicant is
+            logically redundant if all of the primitive expressions
+            are convred without it bein included in the solution
+            formula.</p>
+            <table border="2" cellspacing="0" cellpadding="6"
+            rules="groups" frame="hsides">
+              <caption class="t-above">
+                <span class="table-number">Table 11:</span> Prime
+                implicant chart
+              </caption>
+              <colgroup>
+                <col class="org-left" />
+                <col class="org-left" />
+                <col class="org-left" />
+                <col class="org-left" />
+                <col class="org-left" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col" class="org-left">Prime
+                  implicants</th>
+                  <th scope="col" class="org-left">Primitive
+                  expressions</th>
+                  <th scope="col" class="org-left">&nbsp;</th>
+                  <th scope="col" class="org-left">&nbsp;</th>
+                  <th scope="col" class="org-left">&nbsp;</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="org-left">&nbsp;</td>
+                  <td class="org-left">REP</td>
+                  <td class="org-left">RE~P</td>
+                  <td class="org-left">~REP</td>
+                  <td class="org-left">~R~EP</td>
+                </tr>
+                <tr>
+                  <td class="org-left">RE</td>
+                  <td class="org-left">X</td>
+                  <td class="org-left">X</td>
+                  <td class="org-left">&nbsp;</td>
+                  <td class="org-left">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td class="org-left">~RP</td>
+                  <td class="org-left">&nbsp;</td>
+                  <td class="org-left">&nbsp;</td>
+                  <td class="org-left">X</td>
+                  <td class="org-left">X</td>
+                </tr>
+                <tr>
+                  <td class="org-left">
+                    <del>EP</del> (Redundant)
+                  </td>
+                  <td class="org-left">X</td>
+                  <td class="org-left">&nbsp;</td>
+                  <td class="org-left">X</td>
+                  <td class="org-left">&nbsp;</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div id="outline-container-org2fed24b" class="outline-4">
+          <h4 id="org2fed24b">Issues related to the analysis of the
+          non-occurence of the outcome</h4>
+          <div class="outline-text-4" id="text-org2fed24b">
+            <p>In summary, set relations are <b>asymmetric</b> so
+            the analysis for the non-occurence of the outcome could
+            not be inferred from its presence. Thus, the analysis
+            should start again and another TT should be
+            constructed. As a reminder, DeMorgan’s law is not
+            necessarily valid and is only possible in a TT withot
+            contraditions nor logical reminders. It is worth
+            mentioning that whenever a single condition is part of
+            all sufficient path, then this condition must be
+            <b>necessary</b> for the out come. However, this
+            conclusion is valid only if the suffiency analysis is
+            performed on a <b>fully specified truth table</b>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="outline-container-org14d58dc" class="outline-2">
+      <h2 id="org14d58dc">Chapter 5: Parameters of fit</h2>
+      <div class="outline-text-2" id="text-org14d58dc"></div>
+      <div id="outline-container-org815ca52" class="outline-3">
+        <h3 id="org815ca52">Defining a dn dealing with
+        contradictory truth table rows</h3>
+        <div class="outline-text-3" id="text-org815ca52">
+          <p>Contradictory rows are those cases with same
+          membership scores and <b>do not</b> share the same
+          membership in outcome. Thus, it cannot be included in the
+          minimization procedure. The following strategies could be
+          employed in order to solve contradictions:</p>
+          <ul class="org-ul">
+            <li>
+              <b>Adding a condition:</b> This procedure may remove
+              the contradiction as long as cases differs in the new
+              added condition
+              <ul class="org-ul">
+                <li><span class="underline">CONS:</span> Doubles
+                the number of TT rows and increases the problem of
+                <b>limited diversity</b></li>
+              </ul>
+            </li>
+            <li><b>Respecify the definition of the population of
+            interest:</b> Some case could be excluded or added
+            based on theoretical arguments and not in <i>ad hoc</i>
+            contradiction solving motivation</li>
+            <li><b>Respecify the outcome:</b> Recalibrating the
+            outcome membership score may solve the contradiction,
+            but this procedure must be theoretically driven</li>
+          </ul>
+          <p>During the process of <b>minimization</b>, there are
+          mutually exclusive treatments of logically contradictory
+          rows:</p>
+          <ul class="org-ul">
+            <li>Exclude all of them</li>
+            <li>Include all of them since it makes the occurrence
+            of the outcome possible
+              <ul class="org-ul">
+                <li><span class="underline">CONS:</span> Covers
+                cases that are not members of the outcome</li>
+                <li>Make all inconsistent rows available for
+                computer-generated assumptions about their outcome
+                value in order to make the solution term more
+                parsimonious</li>
+              </ul>
+            </li>
+          </ul>
+          <p>Alternatively, it is possible to analyze how much, or
+          to what degree, a given row deviates from a perfect set
+          relation. This is the rationale behind the consistency
+          measure. It is advisable to use consistency measure to
+          guide wheter or not include a TT row into the logical
+          minimization procedure.</p>
+        </div>
+      </div>
+      <div id="outline-container-orga239280" class="outline-3">
+        <h3 id="orga239280">Consistency of sufficient
+        conditions</h3>
+        <div class="outline-text-3" id="text-orga239280">
+          <p>The consistency of a sufficient condition \(X\) for
+          outcome \(Y\) is mathematically expressed by dividing the
+          numbers of cases where \(X\) and \(Y\) are present by the
+          number of cases in which \(X\) is present whether or not
+          the outcome occurs. The <b>raw consistency</b> is the
+          consistency measure refers to the truth table rows while
+          the <b>solution consistency</b> refers to the entire
+          solution. Thus, the crisp variant is:</p>
+          <div class="latex" id="org21b9de8">
+            \begin{equation} Cons_{X,Y} = \frac{\text{Num. } X=1
+            \land \text{Num.} Y = 1}{\text{Num. } X=1}
+            \end{equation}
+          </div>
+          <p>The crisp variant, however, is deficient since it
+          gives equal weight to all cases below the diagonal. In
+          other words, the distance between cases ant the diagonal
+          is not considered.</p>
+          <p>For fuzzy sets, the consistency measure is calculated
+          as the sum of the minimum value across the membership
+          score in \(X\) and in \(Y\) and divided by the sum of the
+          membership values in \(X\) across <b>all</b> cases:</p>
+          <div class="latex" id="org25050fc">
+            \begin{equation} Cons_{X \leq Y} = \frac{\sum
+            \min{(X_{i}, Y_{i})}}{\sum X_{i}} \end{equation}
+          </div>
+          <p>Since considers all the cases, the fuzzy variant is
+          more conservative and include how far the case is from
+          the main diagonal. However, there is one particular
+          shortcoming: does not take into account whether an
+          inconsistent case is above or beloe the qualitative
+          anchor of 0.5 both in \(X\) and/or \(Y\). Additionally,
+          in fuzzy sets, not all inconsistent rows are
+          automatically truly logically contradictory.</p>
+          <p>That been said, which consistency cut to choose? The
+          consistency threshold depend on the specific research
+          context. The more precisa and strong the theoretical
+          expectations, the higher the consistency that should be
+          used. The lower the number of cases, the higher the
+          consistency as well.</p>
+        </div>
+      </div>
+      <div id="outline-container-orgbd9eead" class="outline-3">
+        <h3 id="orgbd9eead">Coverage of sufficient conditions</h3>
+        <div class="outline-text-3" id="text-orgbd9eead">
+          <p>The <b>coverage</b> measure expresse the degree to
+          which the consistent part of sufficiency condition \(X\)
+          overlaps with the outcome \(Y\):</p>
+          <div class="latex" id="orgbd0d500">
+            \begin{equation} Cov_{X,Y} = \frac{\text{Num. } X=1
+            \land \text{Num.} Y = 1}{\text{Num. } Y=1}
+            \end{equation}
+          </div>
+          <p>The fuzzy-set equivalent is:</p>
+          <div class="latex" id="org4ead21f">
+            \begin{equation} Cov_{X \leq Y} = \frac{\sum
+            \min{(X_{i}, Y_{i})}}{\sum Y_{i}} \end{equation}
+          </div>
+          <p>In summary, express how empirically important a subset
+          relation is. Conditions with low coverage cover only a
+          little of the outcome of interest, but that little might
+          be huge theoretical or substantive importance. That is
+          why there is no coverage threshold.</p>
+          <p>It is important to point that coverage
+          <b>increases</b> due to cases that are inconsistent with
+          the statement of sufficiency. However, the coverage
+          should be calculated for condition that have passed a
+          threshold of consistency.</p>
+          <p>Similar to the consistency measure, the coverage of
+          each path is called <b>raw coverage</b> (CovR) while the
+          coverage of a specific path is called <b>unique
+          coverage</b> (CovU) and the solution term leads to the
+          <b>solution coverage</b>. If there is no logically
+          redundant path, all parts of the solution will have an
+          <b>unique coverage</b> greater than zero. If logically
+          redundant prime implicant are included, the unique
+          converage will be zero. The CovU is calculated by
+          subtracting from the solution coverage that is obtained
+          by all paths except the one whose unique converage we are
+          interested in. Suposing the following solution:</p>
+          <pre class="example" id="orgb39957b">
+~A~C + ~BC + F~D
+</pre>
+          <p>the unique converage will be:</p>
+          <pre class="example" id="orgfc8a1fe">
+CovU (~A~C) = CovS - Cov(~BC + F~D)
+</pre>
+        </div>
+      </div>
+      <div id="outline-container-org54cc548" class="outline-3">
+        <h3 id="org54cc548">Consistency of necessary
+        conditions</h3>
+        <div class="outline-text-3" id="text-org54cc548">
+          <p>If a condition is necessary for the outcome, then no
+          case may show the outcome without this condition.
+          Thus:</p>
+          <div class="latex" id="org1895261">
+            \begin{equation} Cons_{Nec, X,Y} = \frac{\text{Num. }
+            X=1 \land \text{Num.} Y = 1}{\text{Num. } Y=1}
+            \end{equation}
+          </div>
+          <p>while the fuzzy equivalent is:</p>
+          <div class="latex" id="org62cc825">
+            \begin{equation} Cons_{X \geq Y} = \frac{\sum
+            \min{(X_{i}, Y_{i})}}{\sum Y_{i}} \end{equation}
+          </div>
+          <p>It is important to check if true logical contradictory
+          exists and not rely on consistent level. For necessary
+          conditions, a consistency threshold of at least 0.9 is
+          advisable.</p>
+        </div>
+      </div>
+      <div id="outline-container-org7103556" class="outline-3">
+        <h3 id="org7103556">Coverage of necessary conditions</h3>
+        <div class="outline-text-3" id="text-org7103556">
+          <p>The label coverage is misleading. If \(X\) has passed
+          the consistency test as a necessary condition, thus</p>
+          <blockquote>
+            <p>\(X\) is a superset of \(Y\) and thus \(X\) fully
+            covers \(Y\). In other words, by virtue of bein
+            necessary, \(X\) always fully covers all cases of
+            membership in \(Y\).</p>
+          </blockquote>
+          <p>In this sense, coverage of necessary conditions should
+          be considered a measure of relevance or trivialness which
+          crisp version is:</p>
+          <div class="latex" id="org284c875">
+            \begin{equation} Cov_{Nec. X,Y} = \frac{\text{Num. } X
+            = 1 \land \text{Num. } Y = 1}{\text{Num. X = 1}}
+            \end{equation}
+          </div>
+          <p>while the fuzzy-equivalent is</p>
+          <div class="latex" id="org0c805a0">
+            \begin{equation} Cov_{Nec., X \geq Y} = \frac{\sum
+            \min{(X,Y)}}{\sum X} \end{equation}
+          </div>
+          <p>Two points are worth mentioning about the coverage
+          formula. First, values for coverage necessity tend to be
+          rather high. Unlike coverage sufficiency, in research
+          practice, values far below 0.5 are rare and those close
+          to 0 hardly ever seen. This suggests that when assessing
+          the trivialness of necessary conditions, researchers
+          should not be misled by seemingly high coverage
+          values.</p>
+        </div>
+      </div>
+      <div id="outline-container-org76725a7" class="outline-3">
+        <h3 id="org76725a7">Issues related to consistency and
+        coverage&nbsp;&nbsp;&nbsp;<span class="tag"><span class=
+        "ATTACH">ATTACH</span></span></h3>
+        <div class="outline-text-3" id="text-org76725a7">
+          <ul class="org-ul">
+            <li>When using fuzzy-sets, we also advise paying close
+            attention to which cases are true logical
+            contradictions (TLC, see chapter 7), uniquely covered,
+            and which one are not covered at all</li>
+            <li>With sufficiency, very low coverage values
+            indicates that only a small portion of the outcome of
+            interest is explained by that condition
+              <ul class="org-ul">
+                <li>But could still be part of theoretical
+                interest</li>
+              </ul>
+            </li>
+            <li>Higher consistency values often come at the price
+            of lower coverage values
+              <ul class="org-ul">
+                <li>The more conditions that are combined, the more
+                difficult membership it becomes</li>
+              </ul>
+            </li>
+          </ul>
+          <div id="org295bc1c" class="figure">
+            <p><img src=
+            "../.attach/56/7cad9d-8821-47f8-93b2-37d6d5d15257/_20210202_183532screenshot.png"
+            alt="_20210202_183532screenshot.png" /></p>
+            <p><span class="figure-number">Figure 3:</span> XY plot
+            - The tension between consistency and coverage of
+            sufficient conditions</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footnotes">
+      <h2 class="footnotes">Footnotes:</h2>
+      <div id="text-footnotes">
+        <div class="footdef">
+          <sup><a id="fn.1" class="footnum" href="#fnr.1" role=
+          "doc-backlink">1</a></sup>
+          <div class="footpara" role="doc-footnote">
+            <p class="footpara">None condition should be calibrated
+            as 0.5 to this results be valid.</p>
+          </div>
+        </div>
+        <div class="footdef">
+          <sup><a id="fn.2" class="footnum" href="#fnr.2" role=
+          "doc-backlink">2</a></sup>
+          <div class="footpara" role="doc-footnote">
+            <p class="footpara">No matter how many fuzzy sets are
+            combined as long as none of them is calibrated as 0.5
+            (maximum ambiguity).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="postamble" class="status">
+    <p class="author">Author: Gabriel Petrini</p>
+    <p class="date">Created: 2021-09-04 sáb 16:50</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <!-- 2021-09-04 sáb 16:53 -->
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=utf-8" />
+  <meta name="viewport" content=
+  "width=device-width, initial-scale=1" />
+  <title>Manuals and Best practices</title>
+  <meta name="author" content="Gabriel Petrini" />
+  <meta name="generator" content="Org Mode" />
+  <style>
+  <![CDATA[
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  ]]>
+  </style>
+</head>
+<body>
+  <div id="content" class="content">
+    <h1 class="title">Manuals and Best practices</h1>
+    <table border="2" cellspacing="0" cellpadding="6" rules=
+    "groups" frame="hsides">
+      <colgroup>
+        <col class="org-left" />
+        <col class="org-left" />
+        <col class="org-left" />
+        <col class="org-right" />
+        <col class="org-left" />
+        <col class="org-left" />
+        <col class="org-left" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th scope="col" class="org-left">STATUS</th>
+          <th scope="col" class="org-left">Decision</th>
+          <th scope="col" class="org-left">Bibtex key</th>
+          <th scope="col" class="org-right">YEAR</th>
+          <th scope="col" class="org-left">RELEVANCE</th>
+          <th scope="col" class="org-left">IMPACT</th>
+          <th scope="col" class="org-left">CITE</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="org-left">Reading</td>
+          <td class="org-left">READ</td>
+          <td class="org-left">schneider_2012_SetTheoretic</td>
+          <td class="org-right">2012</td>
+          <td class="org-left">High</td>
+          <td class="org-left">High</td>
+          <td class="org-left">Yes</td>
+        </tr>
+        <tr>
+          <td class="org-left">Filed</td>
+          <td class="org-left">READ</td>
+          <td class="org-left">castro_2016_Generala</td>
+          <td class="org-right">2016</td>
+          <td class="org-left">High</td>
+          <td class="org-left">Low</td>
+          <td class="org-left">Yes</td>
+        </tr>
+        <tr>
+          <td class="org-left">Filed</td>
+          <td class="org-left">READ</td>
+          <td class="org-left">
+          pagliarinTrajectorybasedQualitativeComparative2020</td>
+          <td class="org-right">2020</td>
+          <td class="org-left">High</td>
+          <td class="org-left">Regular</td>
+          <td class="org-left">Yes</td>
+        </tr>
+        <tr>
+          <td class="org-left">Filed</td>
+          <td class="org-left">READ</td>
+          <td class="org-left">verweij_2020_Three</td>
+          <td class="org-right">2020</td>
+          <td class="org-left">High</td>
+          <td class="org-left">Regular</td>
+          <td class="org-left">Yes</td>
+        </tr>
+        <tr>
+          <td class="org-left">NotFound</td>
+          <td class="org-left">READ</td>
+          <td class="org-left">
+          berg-schlosserComparativeResearchDesign2009</td>
+          <td class="org-right">2009</td>
+          <td class="org-left">Regular</td>
+          <td class="org-left">Low</td>
+          <td class="org-left">Wait</td>
+        </tr>
+        <tr>
+          <td class="org-left">Skimmed</td>
+          <td class="org-left">READ</td>
+          <td class="org-left">
+          basurtoStructuringCalibrationQualitative2012</td>
+          <td class="org-right">2012</td>
+          <td class="org-left">Regular</td>
+          <td class="org-left">High</td>
+          <td class="org-left">Wait</td>
+        </tr>
+        <tr>
+          <td class="org-left">Skimmed</td>
+          <td class="org-left">READ</td>
+          <td class="org-left">thiem_2017_Conducting</td>
+          <td class="org-right">2016</td>
+          <td class="org-left">Regular</td>
+          <td class="org-left">Regular</td>
+          <td class="org-left">Yes</td>
+        </tr>
+        <tr>
+          <td class="org-left">Skimmed</td>
+          <td class="org-left">SKIM</td>
+          <td class="org-left">
+          wagemannTransparencyStandardsQualitative2015</td>
+          <td class="org-right">2015</td>
+          <td class="org-left">Regular</td>
+          <td class="org-left">Low</td>
+          <td class="org-left">Wait</td>
+        </tr>
+        <tr>
+          <td class="org-left">Reading</td>
+          <td class="org-left">PARTIAL</td>
+          <td class="org-left">
+          berg-schlosserQualitativeComparativeAnalysis2009</td>
+          <td class="org-right">2009</td>
+          <td class="org-left">Regular</td>
+          <td class="org-left">Reagular</td>
+          <td class="org-left">Yes</td>
+        </tr>
+        <tr>
+          <td class="org-left">Downloaded</td>
+          <td class="org-left">PARTIAL</td>
+          <td class="org-left">
+          raginComparativeMethodMoving2014</td>
+          <td class="org-right">1987</td>
+          <td class="org-left">Regular</td>
+          <td class="org-left">High</td>
+          <td class="org-left">Yes</td>
+        </tr>
+        <tr>
+          <td class="org-left">Downloaded</td>
+          <td class="org-left">WAIT</td>
+          <td class="org-left">
+          schneiderStandardsGoodPractice2010</td>
+          <td class="org-right">2010</td>
+          <td class="org-left">Regular</td>
+          <td class="org-left">Low</td>
+          <td class="org-left">Wait</td>
+        </tr>
+        <tr>
+          <td class="org-left">Downloaded</td>
+          <td class="org-left">WAIT</td>
+          <td class="org-left">radaelliWhatDidLeave2019a</td>
+          <td class="org-right">2019</td>
+          <td class="org-left">Regular</td>
+          <td class="org-left">Low</td>
+          <td class="org-left">Wait</td>
+        </tr>
+        <tr>
+          <td class="org-left">Searching</td>
+          <td class="org-left">WAIT</td>
+          <td class="org-left">&nbsp;</td>
+          <td class="org-right">2020</td>
+          <td class="org-left">Regular</td>
+          <td class="org-left">Regular</td>
+          <td class="org-left">Wait</td>
+        </tr>
+        <tr>
+          <td class="org-left">Skimmed</td>
+          <td class="org-left">REF</td>
+          <td class="org-left">
+          raginQualitativeComparativeAnalysis2009</td>
+          <td class="org-right">2009</td>
+          <td class="org-left">High</td>
+          <td class="org-left">High</td>
+          <td class="org-left">Yes</td>
+        </tr>
+        <tr>
+          <td class="org-left">Searching</td>
+          <td class="org-left">ARCH</td>
+          <td class="org-left">
+          gerritsEvaluationComplexInfrastructure2018</td>
+          <td class="org-right">2018</td>
+          <td class="org-left">Regular</td>
+          <td class="org-left">High</td>
+          <td class="org-left">Wait</td>
+        </tr>
+        <tr>
+          <td class="org-left">Skimmed</td>
+          <td class="org-left">ARCH</td>
+          <td class="org-left">amentaWhereBeginSurvey1994</td>
+          <td class="org-right">1994</td>
+          <td class="org-left">Low</td>
+          <td class="org-left">High</td>
+          <td class="org-left">Wait</td>
+        </tr>
+        <tr>
+          <td class="org-left">Skimmed</td>
+          <td class="org-left">ARCH</td>
+          <td class="org-left">&nbsp;</td>
+          <td class="org-right">2017</td>
+          <td class="org-left">Regular</td>
+          <td class="org-left">Regular</td>
+          <td class="org-left">No</td>
+        </tr>
+        <tr>
+          <td class="org-left">Downaloaded</td>
+          <td class="org-left">REF</td>
+          <td class="org-left">raginFuzzysetSocialScience2000</td>
+          <td class="org-right">2000</td>
+          <td class="org-left">Regular</td>
+          <td class="org-left">High</td>
+          <td class="org-left">Yes</td>
+        </tr>
+        <tr>
+          <td class="org-left">Filed</td>
+          <td class="org-left">REF</td>
+          <td class="org-left">&nbsp;</td>
+          <td class="org-right">1981</td>
+          <td class="org-left">Low</td>
+          <td class="org-left">Low</td>
+          <td class="org-left">Yes</td>
+        </tr>
+      </tbody>
+    </table>
+    <div id="outline-container-org34b9a5e" class="outline-2">
+      <h2 id="org34b9a5e"><span class="todo READ">READ</span>
+      Set-Theoretic Methods for the Social Sciences: A Guide to
+      Qualitative Comparative Analysis</h2>
+      <div class="outline-text-2" id="text-org34b9a5e"></div>
+    </div>
+    <div id="outline-container-org491e959" class="outline-2">
+      <h2 id="org491e959"><span class="todo READ">READ</span> A
+      General Approach to Panel Data Set-Theoretic
+      Research&nbsp;&nbsp;&nbsp;<span class="tag"><span class=
+      "Panel">Panel</span></span></h2>
+      <div class="outline-text-2" id="text-org491e959"></div>
+    </div>
+    <div id="outline-container-org3b3c7d2" class="outline-2">
+      <h2 id="org3b3c7d2"><span class="todo READ">READ</span>
+      Trajectory-based Qualitative Comparative Analysis: Accounting
+      for case-based time dynamics&nbsp;&nbsp;&nbsp;<span class=
+      "tag"><span class="Time">Time</span></span></h2>
+      <div class="outline-text-2" id="text-org3b3c7d2"></div>
+    </div>
+    <div id="outline-container-org24a5982" class="outline-2">
+      <h2 id="org24a5982"><span class="todo READ">READ</span> Three
+      strategies to track configurations over time with Qualitative
+      Comparative Analysis&nbsp;&nbsp;&nbsp;<span class=
+      "tag"><span class="Time">Time</span></span></h2>
+      <div class="outline-text-2" id="text-org24a5982"></div>
+    </div>
+    <div id="outline-container-org97990a5" class="outline-2">
+      <h2 id="org97990a5"><span class="todo READ">READ</span>
+      <a href=
+      "https://dx.doi.org/10.4135/9781452226569.n2">Berg-Schlosser
+      and De Meur - Comparative research design: Case and variable
+      selection</a>&nbsp;&nbsp;&nbsp;<span class="tag"><span class=
+      "Selection">Selection</span></span></h2>
+      <div class="outline-text-2" id="text-org97990a5"></div>
+    </div>
+    <div id="outline-container-org7a5c0ea" class="outline-2">
+      <h2 id="org7a5c0ea"><span class="todo READ">READ</span>
+      <a href="https://doi.org/10.1177/1525822X11433998">Basurto
+      and Speer - Structuring the calibration of qualitative data
+      as sets for Qualitative Comparative Analysis
+      (QCA)</a>&nbsp;&nbsp;&nbsp;<span class="tag"><span class=
+      "BestPractices">BestPractices</span></span></h2>
+      <div class="outline-text-2" id="text-org7a5c0ea"></div>
+    </div>
+    <div id="outline-container-org7a61685" class="outline-2">
+      <h2 id="org7a61685"><span class="todo READ">READ</span>
+      <a href="https://doi.org/10.1177%2F1098214016673902">Thiem -
+      Conducting Configurational Comparative Research With
+      Qualitative Comparative Analysis: A Hands-On Tutorial for
+      Applied Evaluation Scholars and
+      Practitioners</a>&nbsp;&nbsp;&nbsp;<span class=
+      "tag"><span class=
+      "BestPractices">BestPractices</span>&nbsp;<span class=
+      "BenchMark">BenchMark</span>&nbsp;<span class=
+      "HandsON">HandsON</span></span></h2>
+      <div class="outline-text-2" id="text-org7a61685"></div>
+    </div>
+    <div id="outline-container-org6a6eb22" class="outline-2">
+      <h2 id="org6a6eb22"><span class="todo SKIM">SKIM</span>
+      <a href="https://doi.org/10.5281/zenodo.893091">Wagemann and
+      Schneider - Transparency standards in qualitative comparative
+      analysis</a>&nbsp;&nbsp;&nbsp;<span class="tag"><span class=
+      "BestPractices">BestPractices</span></span></h2>
+      <div class="outline-text-2" id="text-org6a6eb22"></div>
+    </div>
+    <div id="outline-container-org5a18005" class="outline-2">
+      <h2 id="org5a18005"><span class="todo PARTIAL">PARTIAL</span>
+      <a href=
+      "https://us.sagepub.com/sites/default/files/upm-assets/23236_book_item_23236.pdf">
+      Berg-Schlosser, De Meur, Rihoux, and Ragin - Qualitative
+      Comparative Analysis (QCA) as an
+      approach</a>&nbsp;&nbsp;&nbsp;<span class="tag"><span class=
+      "Canonical">Canonical</span></span></h2>
+      <div class="outline-text-2" id="text-org5a18005">
+        <p><b>Reasons to read:</b> Point up the advantages and
+        characteristics of QCA methodology</p>
+      </div>
+    </div>
+    <div id="outline-container-orgcd5270b" class="outline-2">
+      <h2 id="orgcd5270b"><span class="todo PARTIAL">PARTIAL</span>
+      <a href=
+      "https://www.amazon.com.br/Comparative-Method-Qualitative-Quantitative-Strategies/dp/0520280032">
+      Ragin - The comparative method. Moving beyond qualitative and
+      quantitative strategies</a>&nbsp;&nbsp;&nbsp;<span class=
+      "tag"><span class="Canonical">Canonical</span></span></h2>
+      <div class="outline-text-2" id="text-orgcd5270b">
+        <p><b>Part to read:</b> Introduction <b>Reason:</b>
+        Presents QCA advantages and distinctiveness</p>
+      </div>
+    </div>
+    <div id="outline-container-org01101ca" class="outline-2">
+      <h2 id="org01101ca"><span class="todo WAIT">WAIT</span>
+      <a href=
+      "https://www.researchgate.net/deref/http%3A%2F%2Fdx.doi.org%2F10.1163%2F156913210X12493538729793">
+      Schneider and Wagemann - Standards of good practice in
+      qualitative comparative analysis (QCA) and
+      fuzzy-sets</a>&nbsp;&nbsp;&nbsp;<span class=
+      "tag"><span class="fsQCA">fsQCA</span>&nbsp;<span class=
+      "BestPractices">BestPractices</span></span></h2>
+      <div class="outline-text-2" id="text-org01101ca"></div>
+    </div>
+    <div id="outline-container-orge27230e" class="outline-2">
+      <h2 id="orge27230e"><span class="todo WAIT">WAIT</span>
+      <a href="https://doi.org/10.1057/s41304-017-0142-7">Radaelli
+      and Wagemann - What did I leave out? Omitted variables in
+      regression and qualitative comparative
+      analysis</a>&nbsp;&nbsp;&nbsp;<span class="tag"><span class=
+      "Estimation">Estimation</span>&nbsp;<span class=
+      "Ommited">Ommited</span>&nbsp;<span class=
+      "Comparison">Comparison</span></span></h2>
+      <div class="outline-text-2" id="text-orge27230e"></div>
+    </div>
+    <div id="outline-container-org399f0a6" class="outline-2">
+      <h2 id="org399f0a6"><span class="todo WAIT">WAIT</span>
+      Qualitative Comparative Analysis (QCA) Using R: A Gentle
+      Introduction</h2>
+      <div class="outline-text-2" id="text-org399f0a6"></div>
+    </div>
+    <div id="outline-container-orgfa4688c" class="outline-2">
+      <h2 id="orgfa4688c"><span class="done REF">REF</span>
+      <a href="https://dx.doi.org/10.4135/9781452226569.n5">Ragin -
+      Qualitative Comparative Analysis using Fuzzy Sets
+      (fsQCA)</a>&nbsp;&nbsp;&nbsp;<span class="tag"><span class=
+      "Manual">Manual</span></span></h2>
+      <div class="outline-text-2" id="text-orgfa4688c"></div>
+    </div>
+    <div id="outline-container-orgb2bb849" class="outline-2">
+      <h2 id="orgb2bb849"><span class="done ARCH">ARCH</span>
+      <a href=
+      "https://stefanverweij.eu/wp-content/uploads/2018/09/2018-Edward-Elgar-Gerrits-Verweij.pdf">
+      Gerrits and Verweij - The evaluation of complex
+      infrastructure projects</a>&nbsp;&nbsp;&nbsp;<span class=
+      "tag"><span class=
+      "BestPractices">BestPractices</span></span></h2>
+      <div class="outline-text-2" id="text-orgb2bb849"></div>
+    </div>
+    <div id="outline-container-org644c8cd" class="outline-2">
+      <h2 id="org644c8cd"><span class="done ARCH">ARCH</span>
+      <a href=
+      "https://doi.org/10.1177%2F0049124194023001002">Amenta and
+      Poulsen: Where to begin: A survey of five approaches to
+      selecting independent variables for qualitative-comparative
+      analysis</a>&nbsp;&nbsp;&nbsp;<span class="tag"><span class=
+      "BestPractices">BestPractices</span></span></h2>
+      <div class="outline-text-2" id="text-org644c8cd"></div>
+    </div>
+    <div id="outline-container-org00ad972" class="outline-2">
+      <h2 id="org00ad972"><span class="done ARCH">ARCH</span>
+      <a href=
+      "http://www.socsci.uci.edu/~cragin/fsQCA/software.shtml">Ragin
+      - User’s guide to Fuzzy-set / Qualitative Comparative
+      Analysis</a>&nbsp;&nbsp;&nbsp;<span class="tag"><span class=
+      "Software">Software</span></span></h2>
+      <div class="outline-text-2" id="text-org00ad972"></div>
+    </div>
+    <div id="outline-container-org2958417" class="outline-2">
+      <h2 id="org2958417"><span class="done REF">REF</span>
+      <a href="https://doi.org/10.2307/2110917">Cioffi-Revilla -
+      Fuzzy Sets and Models of International
+      Relations</a>&nbsp;&nbsp;&nbsp;<span class="tag"><span class=
+      "Fuzzy">Fuzzy</span>&nbsp;<span class=
+      "Mathematical">Mathematical</span></span></h2>
+      <div class="outline-text-2" id="text-org2958417">
+        <p><b>Reason to cite:</b> As an exemple of case study using
+        QCA (International relations)</p>
+      </div>
+    </div>
+  </div>
+  <div id="postamble" class="status">
+    <p class="author">Author: Gabriel Petrini</p>
+    <p class="date">Created: 2021-09-04 sáb 16:53</p>
+  </div>
+</body>
+</html>

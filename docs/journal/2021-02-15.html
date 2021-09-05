@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-08-28 sáb 17:12 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Weekly Journal</title>
+<meta name="author" content="Gabriel Petrini" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Weekly Journal</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgb5209a4">1. segunda, 15/02/2021</a>
+<ul>
+<li><a href="#org30a5ddb">1.1. 10:12 Atualizando sistema e doom</a></li>
+<li><a href="#orge43ae40">1.2. 10:22 Checando Sage e DAC; reiniciando EMACS</a></li>
+<li><a href="#org357df45">1.3. 10:25 Iniciando a leitura: QCA milestones</a></li>
+<li><a href="#org7750789">1.4. 11:52 Fim da leitura</a></li>
+<li><a href="#org5abb14f">1.5. 14:39 Fim descanso, retorno atividades</a></li>
+<li><a href="#orgad5398c">1.6. 16:33 Pausa para café da tarde</a></li>
+<li><a href="#org37b1708">1.7. 17:08 Retornando</a></li>
+<li><a href="#orga47b1bc">1.8. 17:34 Fim da leitura, início correção tabela latex (VECM)</a></li>
+<li><a href="#orga459e3a">1.9. 18:30 Fim correções latex, commitando trabalho</a></li>
+<li><a href="#org76e83b2">1.10. 18:36 Fim dos trabalhos</a></li>
+</ul>
+</li>
+<li><a href="#org8b3510e">2. terça, 16/02/2021</a>
+<ul>
+<li><a href="#org30c3b2e">2.1. 08:20 Ajustando configurações org-journal, atualizando sistema, verificando sage e dac</a></li>
+<li><a href="#orgb762f97">2.2. 08:24 Comparando configuração com a do DT</a></li>
+<li><a href="#org5692e98">2.3. 08:40 Faxina</a></li>
+<li><a href="#org1e3adb9">2.4. 09:11 Banho e lente</a></li>
+<li><a href="#org9c56759">2.5. 09:19 Procurando cl deprecated</a></li>
+<li><a href="#org330d968">2.6. 09:27 Banho e lente</a></li>
+<li><a href="#orged52511">2.7. 09:51 Início trabalho: atualização leituras QCA</a></li>
+<li><a href="#org4551e50">2.8. 12:40 Almoço</a></li>
+<li><a href="#org8b2f182">2.9. 14:11 Fim almoço</a></li>
+<li><a href="#org0255c3d">2.10. 14:28 Retorno trabalho</a></li>
+<li><a href="#orgfa84b3a">2.11. 16:20 Café da tarde</a></li>
+<li><a href="#org045b372">2.12. 16:47 Retorno</a></li>
+<li><a href="#orgbba5c59">2.13. 17:44 Fim do trabalho proposto, commitando</a></li>
+<li><a href="#org1391f8e">2.14. 17:54 Ininciando GTD</a></li>
+<li><a href="#org83a79eb">2.15. 18:49 Fim GTD, commitando mudanças</a></li>
+</ul>
+</li>
+<li><a href="#org7dbe6a1">3. quarta, 17/02/2021</a>
+<ul>
+<li><a href="#org9f1b6d7">3.1. 08:25 Conferindo DAC e Sage</a></li>
+<li><a href="#orge8096a3">3.2. 12:46 Fim leitura Baccaro e pausa para começar a fazer almoço</a></li>
+<li><a href="#orgec885a2">3.3. 13:08 Fim Baccaro</a></li>
+<li><a href="#orge06fd60">3.4. 14:28 Fim almoço, início pequenos ajustes Emacs</a></li>
+<li><a href="#org44d94eb">3.5. 14:51 Retorno ao trabalho</a></li>
+<li><a href="#org5003a0c">3.6. 16:25 Fim leitura Howell, pausa</a></li>
+<li><a href="#orgb188493">3.7. 17:07 Retorno fichamento</a></li>
+<li><a href="#orgfb1c601">3.8. 17:34 Fim fichamento Howell, pequena pausa.</a></li>
+<li><a href="#org356a320">3.9. 17:42 Início leitura manual QCA</a></li>
+<li><a href="#org3924b15">3.10. 18:33 Fim leitura manual QCA. Commitando trabalho</a></li>
+<li><a href="#orgc266367">3.11. 18:34 Revendo inboxes</a></li>
+<li><a href="#orge488190">3.12. 18:41 Fim checkout GTD. Fim do expediente</a></li>
+</ul>
+</li>
+<li><a href="#org911a08d">4. quinta, 18/02/2021</a>
+<ul>
+<li><a href="#orgc1cdbcf">4.1. 07:48 Fim café, pesquisando GCC emacs</a></li>
+<li><a href="#orgf6b873e">4.2. 10:17 Lendo Serrano. Emacs gcc instalado antes disso.</a></li>
+<li><a href="#org802c446">4.3. 10:28 Pausas para ver mensagens</a></li>
+<li><a href="#org98f9c4a">4.4. 10:39 Retorno para leitura de Serrano</a></li>
+<li><a href="#orgde43628">4.5. 10:47 Fim leitura apostila Serrano</a></li>
+<li><a href="#org2253dec">4.6. 11:03 Corrigindo PDF tools e retorno para leitura</a></li>
+<li><a href="#orgc510c7f">4.7. 11:17 Retorno leitura</a></li>
+<li><a href="#org8f1a181">4.8. 11:27 Início preparo do almoço</a></li>
+<li><a href="#org0072da9">4.9. 11:33 Retornando leitura</a></li>
+<li><a href="#org20eb253">4.10. 12:17 Fim leitura Serrano; extraindo notas e começando almoço</a></li>
+<li><a href="#org677a865">4.11. 13:34 Corte de cabelo</a></li>
+<li><a href="#orgf8dc3bc">4.12. 15:30 Aula Serrano</a></li>
+<li><a href="#org24d8918">4.13. 18:38 Fim aula Serrano</a></li>
+</ul>
+</li>
+<li><a href="#org80e7b36">5. sexta, 19/02/2021</a>
+<ul>
+<li><a href="#orgade346a">5.1. 08:47 Louça e faxina</a></li>
+<li><a href="#orgea38b4d">5.2. 11:52 Fim mu4e, faxina; sem trabalho</a></li>
+<li><a href="#org69ba7fc">5.3. 12:17 Fim faxina</a></li>
+<li><a href="#orgb189ab6">5.4. 14:21 Retorno trabalho</a></li>
+<li><a href="#org860ea10">5.5. 15:38 Fim leitura Behringer; recolhendo roupa</a></li>
+<li><a href="#org80994b3">5.6. 15:55 Respondendo mensagens whatsapp</a></li>
+<li><a href="#org03ac1aa">5.7. 16:06 Café da tarde</a></li>
+<li><a href="#orgce65a81">5.8. 16:20 Revisando inbox</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb5209a4" class="outline-2">
+<h2 id="orgb5209a4"><span class="section-number-2">1.</span> segunda, 15/02/2021</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org30a5ddb" class="outline-3">
+<h3 id="org30a5ddb"><span class="section-number-3">1.1.</span> 10:12 Atualizando sistema e doom</h3>
+</div>
+<div id="outline-container-orge43ae40" class="outline-3">
+<h3 id="orge43ae40"><span class="section-number-3">1.2.</span> 10:22 Checando Sage e DAC; reiniciando EMACS</h3>
+</div>
+<div id="outline-container-org357df45" class="outline-3">
+<h3 id="org357df45"><span class="section-number-3">1.3.</span> 10:25 Iniciando a leitura: QCA milestones</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+Leitura cm pouco foco.
+</p>
+</div>
+</div>
+<div id="outline-container-org7750789" class="outline-3">
+<h3 id="org7750789"><span class="section-number-3">1.4.</span> 11:52 Fim da leitura</h3>
+<div class="outline-text-3" id="text-1-4">
+<ul class="org-ul">
+<li>Mercado 79.57</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5abb14f" class="outline-3">
+<h3 id="org5abb14f"><span class="section-number-3">1.5.</span> 14:39 Fim descanso, retorno atividades</h3>
+<div class="outline-text-3" id="text-1-5">
+<p>
+Leve dor e cabeça
+</p>
+</div>
+</div>
+<div id="outline-container-orgad5398c" class="outline-3">
+<h3 id="orgad5398c"><span class="section-number-3">1.6.</span> 16:33 Pausa para café da tarde</h3>
+</div>
+<div id="outline-container-org37b1708" class="outline-3">
+<h3 id="org37b1708"><span class="section-number-3">1.7.</span> 17:08 Retornando</h3>
+</div>
+<div id="outline-container-orga47b1bc" class="outline-3">
+<h3 id="orga47b1bc"><span class="section-number-3">1.8.</span> 17:34 Fim da leitura, início correção tabela latex (VECM)</h3>
+</div>
+<div id="outline-container-orga459e3a" class="outline-3">
+<h3 id="orga459e3a"><span class="section-number-3">1.9.</span> 18:30 Fim correções latex, commitando trabalho</h3>
+</div>
+<div id="outline-container-org76e83b2" class="outline-3">
+<h3 id="org76e83b2"><span class="section-number-3">1.10.</span> 18:36 Fim dos trabalhos</h3>
+<div class="outline-text-3" id="text-1-10">
+<ul class="org-ul">
+<li>Buscar hamburguer raízes zen: 48.00</li>
+<li>Ajustar doom?</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org8b3510e" class="outline-2">
+<h2 id="org8b3510e"><span class="section-number-2">2.</span> terça, 16/02/2021</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org30c3b2e" class="outline-3">
+<h3 id="org30c3b2e"><span class="section-number-3">2.1.</span> 08:20 Ajustando configurações org-journal, atualizando sistema, verificando sage e dac</h3>
+</div>
+<div id="outline-container-orgb762f97" class="outline-3">
+<h3 id="orgb762f97"><span class="section-number-3">2.2.</span> 08:24 Comparando configuração com a do DT</h3>
+</div>
+<div id="outline-container-org5692e98" class="outline-3">
+<h3 id="org5692e98"><span class="section-number-3">2.3.</span> 08:40 Faxina</h3>
+</div>
+<div id="outline-container-org1e3adb9" class="outline-3">
+<h3 id="org1e3adb9"><span class="section-number-3">2.4.</span> 09:11 Banho e lente</h3>
+</div>
+<div id="outline-container-org9c56759" class="outline-3">
+<h3 id="org9c56759"><span class="section-number-3">2.5.</span> 09:19 Procurando cl deprecated</h3>
+</div>
+<div id="outline-container-org330d968" class="outline-3">
+<h3 id="org330d968"><span class="section-number-3">2.6.</span> 09:27 Banho e lente</h3>
+</div>
+<div id="outline-container-orged52511" class="outline-3">
+<h3 id="orged52511"><span class="section-number-3">2.7.</span> 09:51 Início trabalho: atualização leituras QCA</h3>
+</div>
+<div id="outline-container-org4551e50" class="outline-3">
+<h3 id="org4551e50"><span class="section-number-3">2.8.</span> 12:40 Almoço</h3>
+</div>
+<div id="outline-container-org8b2f182" class="outline-3">
+<h3 id="org8b2f182"><span class="section-number-3">2.9.</span> 14:11 Fim almoço</h3>
+</div>
+<div id="outline-container-org0255c3d" class="outline-3">
+<h3 id="org0255c3d"><span class="section-number-3">2.10.</span> 14:28 Retorno trabalho</h3>
+<div class="outline-text-3" id="text-2-10">
+<p>
+Estava vendo sobre GTD antes.
+</p>
+</div>
+</div>
+<div id="outline-container-orgfa84b3a" class="outline-3">
+<h3 id="orgfa84b3a"><span class="section-number-3">2.11.</span> 16:20 Café da tarde</h3>
+</div>
+<div id="outline-container-org045b372" class="outline-3">
+<h3 id="org045b372"><span class="section-number-3">2.12.</span> 16:47 Retorno</h3>
+</div>
+<div id="outline-container-orgbba5c59" class="outline-3">
+<h3 id="orgbba5c59"><span class="section-number-3">2.13.</span> 17:44 Fim do trabalho proposto, commitando</h3>
+</div>
+<div id="outline-container-org1391f8e" class="outline-3">
+<h3 id="org1391f8e"><span class="section-number-3">2.14.</span> 17:54 Ininciando GTD</h3>
+</div>
+<div id="outline-container-org83a79eb" class="outline-3">
+<h3 id="org83a79eb"><span class="section-number-3">2.15.</span> 18:49 Fim GTD, commitando mudanças</h3>
+</div>
+</div>
+
+<div id="outline-container-org7dbe6a1" class="outline-2">
+<h2 id="org7dbe6a1"><span class="section-number-2">3.</span> quarta, 17/02/2021</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org9f1b6d7" class="outline-3">
+<h3 id="org9f1b6d7"><span class="section-number-3">3.1.</span> 08:25 Conferindo DAC e Sage</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+**Baccaro
+</p>
+</div>
+</div>
+<div id="outline-container-orge8096a3" class="outline-3">
+<h3 id="orge8096a3"><span class="section-number-3">3.2.</span> 12:46 Fim leitura Baccaro e pausa para começar a fazer almoço</h3>
+</div>
+<div id="outline-container-orgec885a2" class="outline-3">
+<h3 id="orgec885a2"><span class="section-number-3">3.3.</span> 13:08 Fim Baccaro</h3>
+</div>
+<div id="outline-container-orge06fd60" class="outline-3">
+<h3 id="orge06fd60"><span class="section-number-3">3.4.</span> 14:28 Fim almoço, início pequenos ajustes Emacs</h3>
+</div>
+<div id="outline-container-org44d94eb" class="outline-3">
+<h3 id="org44d94eb"><span class="section-number-3">3.5.</span> 14:51 Retorno ao trabalho</h3>
+</div>
+<div id="outline-container-org5003a0c" class="outline-3">
+<h3 id="org5003a0c"><span class="section-number-3">3.6.</span> 16:25 Fim leitura Howell, pausa</h3>
+</div>
+<div id="outline-container-orgb188493" class="outline-3">
+<h3 id="orgb188493"><span class="section-number-3">3.7.</span> 17:07 Retorno fichamento</h3>
+</div>
+<div id="outline-container-orgfb1c601" class="outline-3">
+<h3 id="orgfb1c601"><span class="section-number-3">3.8.</span> 17:34 Fim fichamento Howell, pequena pausa.</h3>
+</div>
+<div id="outline-container-org356a320" class="outline-3">
+<h3 id="org356a320"><span class="section-number-3">3.9.</span> 17:42 Início leitura manual QCA</h3>
+</div>
+<div id="outline-container-org3924b15" class="outline-3">
+<h3 id="org3924b15"><span class="section-number-3">3.10.</span> 18:33 Fim leitura manual QCA. Commitando trabalho</h3>
+</div>
+<div id="outline-container-orgc266367" class="outline-3">
+<h3 id="orgc266367"><span class="section-number-3">3.11.</span> 18:34 Revendo inboxes</h3>
+</div>
+<div id="outline-container-orge488190" class="outline-3">
+<h3 id="orge488190"><span class="section-number-3">3.12.</span> 18:41 Fim checkout GTD. Fim do expediente</h3>
+</div>
+</div>
+
+<div id="outline-container-org911a08d" class="outline-2">
+<h2 id="org911a08d"><span class="section-number-2">4.</span> quinta, 18/02/2021</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orgc1cdbcf" class="outline-3">
+<h3 id="orgc1cdbcf"><span class="section-number-3">4.1.</span> 07:48 Fim café, pesquisando GCC emacs</h3>
+</div>
+<div id="outline-container-orgf6b873e" class="outline-3">
+<h3 id="orgf6b873e"><span class="section-number-3">4.2.</span> 10:17 Lendo Serrano. Emacs gcc instalado antes disso.</h3>
+</div>
+<div id="outline-container-org802c446" class="outline-3">
+<h3 id="org802c446"><span class="section-number-3">4.3.</span> 10:28 Pausas para ver mensagens</h3>
+</div>
+<div id="outline-container-org98f9c4a" class="outline-3">
+<h3 id="org98f9c4a"><span class="section-number-3">4.4.</span> 10:39 Retorno para leitura de Serrano</h3>
+</div>
+<div id="outline-container-orgde43628" class="outline-3">
+<h3 id="orgde43628"><span class="section-number-3">4.5.</span> 10:47 Fim leitura apostila Serrano</h3>
+</div>
+<div id="outline-container-org2253dec" class="outline-3">
+<h3 id="org2253dec"><span class="section-number-3">4.6.</span> 11:03 Corrigindo PDF tools e retorno para leitura</h3>
+</div>
+<div id="outline-container-orgc510c7f" class="outline-3">
+<h3 id="orgc510c7f"><span class="section-number-3">4.7.</span> 11:17 Retorno leitura</h3>
+</div>
+<div id="outline-container-org8f1a181" class="outline-3">
+<h3 id="org8f1a181"><span class="section-number-3">4.8.</span> 11:27 Início preparo do almoço</h3>
+</div>
+<div id="outline-container-org0072da9" class="outline-3">
+<h3 id="org0072da9"><span class="section-number-3">4.9.</span> 11:33 Retornando leitura</h3>
+</div>
+<div id="outline-container-org20eb253" class="outline-3">
+<h3 id="org20eb253"><span class="section-number-3">4.10.</span> 12:17 Fim leitura Serrano; extraindo notas e começando almoço</h3>
+</div>
+<div id="outline-container-org677a865" class="outline-3">
+<h3 id="org677a865"><span class="section-number-3">4.11.</span> 13:34 Corte de cabelo</h3>
+</div>
+<div id="outline-container-orgf8dc3bc" class="outline-3">
+<h3 id="orgf8dc3bc"><span class="section-number-3">4.12.</span> 15:30 Aula Serrano</h3>
+</div>
+<div id="outline-container-org24d8918" class="outline-3">
+<h3 id="org24d8918"><span class="section-number-3">4.13.</span> 18:38 Fim aula Serrano</h3>
+</div>
+</div>
+
+<div id="outline-container-org80e7b36" class="outline-2">
+<h2 id="org80e7b36"><span class="section-number-2">5.</span> sexta, 19/02/2021</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-orgade346a" class="outline-3">
+<h3 id="orgade346a"><span class="section-number-3">5.1.</span> 08:47 Louça e faxina</h3>
+<div class="outline-text-3" id="text-5-1">
+<p>
+Muito tempo ajustando mu4e (noite de ontem e manhã de hoje)
+</p>
+</div>
+</div>
+<div id="outline-container-orgea38b4d" class="outline-3">
+<h3 id="orgea38b4d"><span class="section-number-3">5.2.</span> 11:52 Fim mu4e, faxina; sem trabalho</h3>
+</div>
+<div id="outline-container-org69ba7fc" class="outline-3">
+<h3 id="org69ba7fc"><span class="section-number-3">5.3.</span> 12:17 Fim faxina</h3>
+</div>
+<div id="outline-container-orgb189ab6" class="outline-3">
+<h3 id="orgb189ab6"><span class="section-number-3">5.4.</span> 14:21 Retorno trabalho</h3>
+</div>
+<div id="outline-container-org860ea10" class="outline-3">
+<h3 id="org860ea10"><span class="section-number-3">5.5.</span> 15:38 Fim leitura Behringer; recolhendo roupa</h3>
+</div>
+<div id="outline-container-org80994b3" class="outline-3">
+<h3 id="org80994b3"><span class="section-number-3">5.6.</span> 15:55 Respondendo mensagens whatsapp</h3>
+</div>
+<div id="outline-container-org03ac1aa" class="outline-3">
+<h3 id="org03ac1aa"><span class="section-number-3">5.7.</span> 16:06 Café da tarde</h3>
+</div>
+<div id="outline-container-orgce65a81" class="outline-3">
+<h3 id="orgce65a81"><span class="section-number-3">5.8.</span> 16:20 Revisando inbox</h3>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Gabriel Petrini</p>
+<p class="date">Created: 2021-08-28 sáb 17:12</p>
+</div>
+</body>
+</html>

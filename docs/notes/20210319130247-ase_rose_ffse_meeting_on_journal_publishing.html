@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <!-- 2021-09-04 sáb 16:52 -->
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=utf-8" />
+  <meta name="viewport" content=
+  "width=device-width, initial-scale=1" />
+  <title>ASE/RoSE/FfSE meeting on journal publishing</title>
+  <meta name="author" content="Amitava Dutt, Roberto Veneziani" />
+  <meta name="generator" content="Org Mode" />
+  <style>
+  <![CDATA[
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  ]]>
+  </style>
+</head>
+<body>
+  <div id="content" class="content">
+    <h1 class="title">ASE/RoSE/FfSE meeting on journal
+    publishing</h1>
+    <div id="table-of-contents" role="doc-toc">
+      <h2>Table of Contents</h2>
+      <div id="text-table-of-contents" role="doc-toc">
+        <ul>
+          <li>
+            <a href="#orgbe6d56d">Write your paper</a>
+            <ul>
+              <li><a href="#org906ebe5">The ideal
+              structure</a></li>
+              <li><a href="#org9806905">Shorter is – ceteris
+              paribus – better</a></li>
+              <li><a href="#orgea0521d">Clearly state your key
+              contribution</a></li>
+              <li><a href="#orgb7049c1">Write carefully</a></li>
+              <li><a href="#org63c98d1">Major offense nr 1 -
+              Plagiarism and self-plagiarism</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#org776627a">Get your paper out</a>
+            <ul>
+              <li><a href="#org83d23d3">Circulate and get
+              feedback</a></li>
+              <li><a href="#org516d268">Only finished papers,
+              please</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#org522bbcc">Aim well!</a>
+            <ul>
+              <li><a href="#org71c28c5">Get the info…</a></li>
+              <li><a href="#orgeb1b47d">… then choose …</a></li>
+              <li><a href="#org484100d">… and clearly signal that
+              you’ve chosen wisely</a></li>
+              <li><a href="#orgc721452">Major offense nr.2 -
+              multiple submissions</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#orgebec066">The submission process</a>
+            <ul>
+              <li><a href="#orgf04d51d">Read, think, then read
+              again</a></li>
+              <li><a href="#org4739399">Be patient but not too
+              patient</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#org67d205b">After you get the news</a>
+            <ul>
+              <li><a href="#orga806272">The R &amp; R
+              verdict</a></li>
+              <li><a href="#org2630448">The dreaded
+              rejection</a></li>
+              <li><a href="#org29c548f">A final, friendly
+              suggestion</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="outline-container-orgbe6d56d" class="outline-2">
+      <h2 id="orgbe6d56d">Write your paper</h2>
+      <div class="outline-text-2" id="text-orgbe6d56d"></div>
+      <div id="outline-container-org906ebe5" class="outline-3">
+        <h3 id="org906ebe5">The ideal structure</h3>
+        <div class="outline-text-3" id="text-org906ebe5">
+          <dl class="org-dl">
+            <dt>Introduction</dt>
+            <dd>say what you are going to say</dd>
+            <dt>Main text</dt>
+            <dd>say it</dd>
+            <dt>Conclusions</dt>
+            <dd>say that you’ve said it</dd>
+          </dl>
+        </div>
+      </div>
+      <div id="outline-container-org9806905" class="outline-3">
+        <h3 id="org9806905">Shorter is – ceteris paribus –
+        better</h3>
+        <div class="outline-text-3" id="text-org9806905">
+          <blockquote>
+            <p>How much do I have to do and time do I have to spend
+            for the amount of <b>insigh</b> I’ll recieve</p>
+          </blockquote>
+          <ul class="org-ul">
+            <li>Think of writing like sculpting: take a big chunck
+            of material out there and then start sculpting
+            away</li>
+            <li>Put secondary, but still relevant material in the
+            Appendix (<i>e.g.</i> certain proofs)</li>
+            <li>Put secondary and only marginally relevant material
+            in an Addendum to the published online (<i>e.g.</i>
+            robustness check, special cases, proof of independence
+            of axioms, code)</li>
+          </ul>
+        </div>
+      </div>
+      <div id="outline-container-orgea0521d" class="outline-3">
+        <h3 id="orgea0521d">Clearly state your key
+        contribution</h3>
+        <div class="outline-text-3" id="text-orgea0521d">
+          <p>What is different, new and original? This should be
+          clear in the Abstract and after at most the first three
+          pages of the paper.</p>
+        </div>
+      </div>
+      <div id="outline-container-orgb7049c1" class="outline-3">
+        <h3 id="orgb7049c1">Write carefully</h3>
+        <div class="outline-text-3" id="text-orgb7049c1">
+          <ul class="org-ul">
+            <li>Quality of the writing</li>
+            <li>Structure</li>
+            <li>Headers and titles not in english</li>
+            <li>Check the paper and check again</li>
+            <li>Write well, if not elegantly</li>
+            <li>Choose the right language: read papers in your
+            field</li>
+            <li>Show awareness of the literature (classic and
+            recent)
+              <ul class="org-ul">
+                <li>Do not cite only the recent literature</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="outline-container-org63c98d1" class="outline-3">
+        <h3 id="org63c98d1">Major offense nr 1 - Plagiarism and
+        self-plagiarism</h3>
+        <div class="outline-text-3" id="text-org63c98d1">
+          <ul class="org-ul">
+            <li>Typical offenses: blatant copy and paste,
+            translations, movements across fields
+              <ul class="org-ul">
+                <li>Similarity software</li>
+                <li>Borderline cases</li>
+              </ul>
+            </li>
+            <li>Be careful in referencing others and clarity your
+            contribution</li>
+            <li>Self-plagearism is also really problematic</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="outline-container-org776627a" class="outline-2">
+      <h2 id="org776627a">Get your paper out</h2>
+      <div class="outline-text-2" id="text-org776627a"></div>
+      <div id="outline-container-org83d23d3" class="outline-3">
+        <h3 id="org83d23d3">Circulate and get feedback</h3>
+        <div class="outline-text-3" id="text-org83d23d3">
+          <ul class="org-ul">
+            <li>Present your paper in your department and to your
+            peers</li>
+            <li>Go to conferences and seminars</li>
+            <li>Send your paper to experts in the field: worst case
+            scenario you do not get any feedback</li>
+          </ul>
+        </div>
+      </div>
+      <div id="outline-container-org516d268" class="outline-3">
+        <h3 id="org516d268">Only finished papers, please</h3>
+        <div class="outline-text-3" id="text-org516d268">
+          <ul class="org-ul">
+            <li>Only evaluated paper and not in progress paper</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="outline-container-org522bbcc" class="outline-2">
+      <h2 id="org522bbcc">Aim well!</h2>
+      <div class="outline-text-2" id="text-org522bbcc"></div>
+      <div id="outline-container-org71c28c5" class="outline-3">
+        <h3 id="org71c28c5">Get the info…</h3>
+        <div class="outline-text-3" id="text-org71c28c5">
+          <dl class="org-dl">
+            <dt>Journals statistics</dt>
+            <dd>turnaround time, rejection rate, etc</dd>
+            <dt>Editorial board</dt>
+            <dd>people in your field and/or sympathetic to your
+            approach/topic/methodology.</dd>
+            <dt>If in doubt <b>contact the editors</b></dt>
+            <dd>it saves everyone’s time if you ask whether the
+            topic is within the journal’s remit</dd>
+            <dt>(no term)</dt>
+            <dd>Be on the lookout of special issue</dd>
+          </dl>
+        </div>
+      </div>
+      <div id="outline-container-orgeb1b47d" class="outline-3">
+        <h3 id="orgeb1b47d">… then choose …</h3>
+        <div class="outline-text-3" id="text-orgeb1b47d">
+          <ul class="org-ul">
+            <li>The only battle that is lost for sure is the one
+            that is not fought: if you not in a hurry to publish,
+            start aiming high</li>
+            <li>Do not submit randomly</li>
+            <li>A good strategy is to identify the audience and
+            then submit to a journal that reaches that
+            audience</li>
+          </ul>
+        </div>
+      </div>
+      <div id="outline-container-org484100d" class="outline-3">
+        <h3 id="org484100d">… and clearly signal that you’ve chosen
+        wisely</h3>
+        <div class="outline-text-3" id="text-org484100d">
+          <p>Cite relevant papers appeared in the relevant
+          journal</p>
+        </div>
+      </div>
+      <div id="outline-container-orgc721452" class="outline-3">
+        <h3 id="orgc721452">Major offense nr.2 - multiple
+        submissions</h3>
+      </div>
+    </div>
+    <div id="outline-container-orgebec066" class="outline-2">
+      <h2 id="orgebec066">The submission process</h2>
+      <div class="outline-text-2" id="text-orgebec066"></div>
+      <div id="outline-container-orgf04d51d" class="outline-3">
+        <h3 id="orgf04d51d">Read, think, then read again</h3>
+        <div class="outline-text-3" id="text-orgf04d51d">
+          <ul class="org-ul">
+            <li>Read the instructions (<i>e.g.</i> rules of
+            anonymising the paper and length)
+              <ul class="org-ul">
+                <li>Saves time</li>
+              </ul>
+            </li>
+            <li>For online submission: check carefully the pdf/html
+            version. It is your responsibility to make sure that
+            everything is Ok</li>
+            <li>No need to write cover letters starting that you
+            are submitting a paper
+              <ul class="org-ul">
+                <li>If you allowed to suggest referees, you might
+                as well do it: finding referees is always a
+                challenge.</li>
+                <li>But it is wise not to suggest your material
+                grandfather and it is even wiser not to request
+                that the paper be sent to someone</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="outline-container-org4739399" class="outline-3">
+        <h3 id="org4739399">Be patient but not too patient</h3>
+        <div class="outline-text-3" id="text-org4739399">
+          <ul class="org-ul">
+            <li>Do not contact Editors after 3 weeks. Usually,
+            yours is not the only paper under review</li>
+            <li>But if it takes too long, you should contact the
+            editor. Papers do not fall through the cracks</li>
+            <li>The golden rule of the stock of five papers</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="outline-container-org67d205b" class="outline-2">
+      <h2 id="org67d205b">After you get the news</h2>
+      <div class="outline-text-2" id="text-org67d205b"></div>
+      <div id="outline-container-orga806272" class="outline-3">
+        <h3 id="orga806272">The R &amp; R verdict</h3>
+        <div class="outline-text-3" id="text-orga806272">
+          <ul class="org-ul">
+            <li>Read the decision message and the referee reports
+            <b>carefully</b>. And if something is not clear,
+            contact the editors</li>
+            <li>Provide a detailed reply to the referees &amp;
+            Editors explaining all of the changes made (and not
+            made)</li>
+            <li>Do your best to incorporate all suggestions.
+              <ul class="org-ul">
+                <li>If you disagree with some comments, indicates
+                how you dealt with it in the paper. Maybe you need
+                to strength the argument</li>
+              </ul>
+            </li>
+            <li>Do not be confrontational</li>
+            <li>Take your time to revise the paper but do not take
+            too long. Check any deadlines and contact the editors
+            if necessary</li>
+            <li>If the reports point in opposite directions, or
+            contain factual mistakes that make the revision
+            difficult: contact editors</li>
+          </ul>
+        </div>
+      </div>
+      <div id="outline-container-org2630448" class="outline-3">
+        <h3 id="org2630448">The dreaded rejection</h3>
+        <div class="outline-text-3" id="text-org2630448">
+          <ul class="org-ul">
+            <li>If the paper is rejected, move on.
+              <ul class="org-ul">
+                <li>The decision is irreversible</li>
+              </ul>
+            </li>
+            <li>The refereeing process is not a voting
+            mechanism</li>
+            <li>Take into account the referees’ comments even if
+            you send the paper otherwise</li>
+            <li>You may encounter the same referees</li>
+          </ul>
+        </div>
+      </div>
+      <div id="outline-container-org29c548f" class="outline-3">
+        <h3 id="org29c548f">A final, friendly suggestion</h3>
+        <div class="outline-text-3" id="text-org29c548f">
+          <ul class="org-ul">
+            <li>If you are sent an article to review, ACCEPT the
+            invitation and the “do a good job and do it by the
+            deadline given to you”.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="postamble" class="status">
+    <p class="date">Date: 2021-03-19 sex 00:00</p>
+    <p class="author">Author: Amitava Dutt, Roberto Veneziani</p>
+    <p class="date">Created: 2021-09-04 sáb 16:52</p>
+  </div>
+</body>
+</html>
