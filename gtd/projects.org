@@ -22,22 +22,18 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 ** TODO Add SETUPFILE in org-roam template
 
-* Dissertation's general settings [50%] :Dissertation:
+** TODO Add logos url in configs
+
+* TODO Dissertation's general settings [50%] :Dissertation:
 ** TODO Marcar qualificação
 ** TODO Criar script para copiar tabelas e figuras dos scripts (link simbólico preferencialmente)
 - [ ] Pesquisar se tem como fazer com que o Latex reconheça pastas
 
 ** TODO Adicionar Ítalo como co-orientador
 - [ ] Atualizar abntex
-** DONE Nota fiscal computador :ARCHIVE:
-CLOSED: [2021-07-12 seg 11:56]
-** DONE Comprar periféricos :ARCHIVE:
-CLOSED: [2021-07-12 seg 11:56]
-** DONE Scanear nota fiscal periféricos :ARCHIVE:
-CLOSED: [2021-07-19 seg 16:47]
-* SFC [0%]
+* STRT SFC [0%]
 
-
+** STRT Incorporate Lucas suggestions
 
 ** WAIT Letter to peers
 
@@ -47,63 +43,74 @@ CLOSED: [2021-07-19 seg 16:47]
 
 ** WAIT Highlight appendix A in red
 
-* Super ABM
+* STRT Super ABM
 
-** TODO Implementar modelo concentual
+** TODO Review, comment and check
 
-*** TODO Função investimento
-- [ ] Revisar h microeconômico
+*** TODO Production
 
-*** TODO Produção
+*** TODO Firms-related functions
 
-*** TODO Crédito
+*** TODO Credit
 
-*** TODO Entrada e saída
+*** TODO Aggregation
 
-*** TODO Setup e go
+*** TODO Setup and go
 
-*** WAIT Mecanismo de endogeinização
-** TODO Ver extensão csv
-** TODO Rodar modelo com investimento agregado
-- [ ] Supermultiplicador
-- [ ] Neo-Kaleckiano
+*** WAIT Endogeinity mechanism
 
-** TODO Rodar modelo com um único tipo de firma
+** TODO To implement
 
-** TODO Implementar mecanismo de endogeinização do tipo de investimento
+*** TODO Entry and exit
 
-* Orientações [0%]
-** Lorena (2021)
+*** TODO Investment function endogeinization
+
+**** TODO Test simple heuristic
+
+**** TODO Test unfilled demand
+
+** TODO Check csv extension
+** TODO Run aggregate model
+- [ ] Sraffian supermultiplier
+- [ ] Neo-Kaleckian
 
 
-** Felipe (2021)
 
-*** TODO Ler Miranda e Mattos 2019
+* TODO Orientações [0%]
+** Dourado (2021)
 
-*** TODO Ler Miranda e Mattos 2020
 
-*** TODO Estudar PCA
+** Barros (2021)
 
-* CE472 2021
+*** TODO [[https://academic.oup.com/cje/article-abstract/28/5/719/1729948][Financialisation and the slowdown of accumulation]]
+
+*** TODO [[https://www.scielo.br/j/rep/a/JTNMBQRxKFkkkLbpDRzmcvG/?format=pdf&lang=pt][Finance-Led Growth Regime no brasil:  estatuto teórico, evidências empíricas  e consequências macroeconômicas]]
+*** TODO Read Miranda and Mattos 2019
+
+*** TODO Read Miranda and Mattos 2020
+
+
+* STRT CE472 2021
 ** TODO Corrigir lista 01
+*** TODO Similaridade de respostas
 ** TODO Aula 08
 *** TODO Criar tarefa
 *** TODO Pedir gravação (Gustavo)
 
 ** TODO Pensar em formas de avaliação pós primeira lista
-* Grupos de discussão de teses
+* STRT Grupos de discussão de teses
 ** TODO Apresentar modelo conceitual <2021-09-07 ter>
 *** TODO Revisar apresentação
 
-* VECM [0%] :Article:
+* WAIT VECM [0%] :Article:
 
 ** WAIT Testar para o fim de 2019
 *** Pós envio ao Franklin
 *** Rever data com a quebra estrutural
-** TODO Juntar figura 4 com a 7
-** TODO Et. all em itálico
-** TODO Corrigir referências
-* ABM Spatial Housing [0%] :Dissertation:
+** TODO Adjust introduction
+*** TODO Read Mason
+*** TODO Include Barba and Pivetti
+* WAIT ABM Spatial Housing [0%] :Dissertation:
 
 ** TODO [#A] Difusion model
 ** TODO [#A] Modelar versão mais simples
@@ -118,7 +125,7 @@ CLOSED: [2021-07-19 seg 16:47]
 
 ** TODO Modelo com preço das casas pró-cíclico
 
-* MKKS model [0/3]
+* WAIT MKKS model [0/3]
 
 ** TODO Endogeneizar rho_u
 
@@ -195,3 +202,14 @@ CLOSED: [2021-07-19 seg 16:47]
 ** TODO Incluir PCA e MCA na análise?
 - Permite analizar no tempo
 - Mais robusto
+
+* Archive :ARCHIVE:
+
+** Dissertation
+
+*** DONE Nota fiscal computador :ARCHIVE:
+CLOSED: [2021-07-12 seg 11:56]
+*** DONE Comprar periféricos :ARCHIVE:
+CLOSED: [2021-07-12 seg 11:56]
+*** DONE Scanear nota fiscal periféricos :ARCHIVE:
+CLOSED: [2021-07-19 seg 16:47]

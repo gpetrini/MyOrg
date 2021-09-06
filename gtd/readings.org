@@ -4,12 +4,15 @@
 #+LANG: en
 #+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
 #+INCLUDE: "../header.org"
-#+TODO: READ SKIM PARTIAL WAIT MAYBE REF INPROGRESS | REPORT DONE ARCH
+#+TODO: READ SKIM PARTIAL WAIT MAYBE RESULTS REF INPROGRESS | REPORT DONE ARCH
 #+PROPERTY: FINISHED_ALL "[ ]" "[X]"
 #+PROPERTY: COLUMNS  %FINISHED(Finished?){X} %TODO(Decision) %ITEM(File) %TAG
 #+EXCLUDE_TAGS: ARCHIVE noexport
 #+ATTR_HTML: :width 1080px :style float:left;margin-bottom:20px; :class banner
 https://i.pinimg.com/originals/ea/c9/83/eac9832cf6b1ad75af8ccc3ad3db1728.gif
+
+* Processing :noexport:
+
 
 * Journals
 
@@ -27,10 +30,10 @@ https://i.pinimg.com/originals/ea/c9/83/eac9832cf6b1ad75af8ccc3ad3db1728.gif
 
 
 
-** <2021-05-04 ter> [[https://academic.oup.com/cpe/advance-article-abstract/doi/10.1093/cpe/bzab002/6257799][Surplus Approach, Institutions, And Economic Formations | Contributions to Po...]] :Sraffian:OffOffice:CPE:
+** <2021-05-04 ter> [[https://academic.oup.com/cpe/advance-article-abstract/doi/10.1093/cpe/bzab002/6257799][Surplus Approach, Institutions, And Economic Formations]] :Sraffian:OffOffice:CPE:
 
 
-** <2021-05-07 sex> [[https://onlinelibrary.wiley.com/doi/abs/10.1111/meca.12335][Thirlwall’s law, uneven development, and income distribution - Sasaki - - Met...]]
+** <2021-05-07 sex> [[https://onlinelibrary.wiley.com/doi/abs/10.1111/meca.12335][Thirlwall’s law, uneven development, and income distribution - Sasaki]] :meca:
 
 * Dissertation
 
@@ -54,10 +57,13 @@ https://i.pinimg.com/originals/ea/c9/83/eac9832cf6b1ad75af8ccc3ad3db1728.gif
 - [[http://www2.econ.iastate.edu/classes/econ308/tesfatsion/syl308.htm][Syllabus for Economics 308]]
 
 
+
+*** READ [#A] Agent-based modelling for public policy: A housing market example :ABM:Baseline:ToBase:
 *** DONE [#A] [[https://www.aeaweb.org/articles?id=10.1257/aer.102.3.53][Getting at Systemic Risk via an Agent-Based Model of the Housing Market - Ame...]] :ABM:Residential:HouseMarket:Baseline:
 CLOSED: [2021-05-20 qui 17:27]
 *** DONE [#A] [[https://link.springer.com/chapter/10.1007/978-3-642-31301-1_6][Integrating the housing market into an agent-based economic model | SpringerLink]] :ABM:ToBase:
 CLOSED: [2021-05-20 qui 17:28]
+
 *** READ <2021-06-11 sex> [[https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0129070][Endogenous Price Bubbles in a Multi-Agent System of the Housing Market]] :Spatial:ABM:Bubbles:HouseMarket:
 *** REPORT [#A] [[https://apo.org.au/sites/default/files/resource-files/2014-05/apo-nid172196.pdf][An Agent-Based Model of the Housing Market Bubble in Metropolitan Washington, D.C]]
 CLOSED: [2021-06-12 sáb 08:18]
@@ -132,6 +138,8 @@ CLOSED: [2021-05-17 seg 16:41]
     :END:
 
 
+
+*** SKIM [#B] [[https://www.bancaditalia.it/pubblicazioni/temi-discussione/2021/2021-1338/en_tema_1338.pdf][MACROPRUDENTIAL POLICY ANALYSIS VIA AN AGENT BASED MODEL  OF THE REAL ESTATE SECTOR]] :ABM:Empirical:Italy:MacroPrudentialPolicy:HouseMarket:Calibration:SearchAlgorithm:ToCompare:
 *** SKIM [#B] [[https://www.aaai.org/Papers/Symposia/Spring/2009/SS-09-09/SS09-09-007.pdf]] :ABM:Spatial:Residential:
 *** SKIM [#C] [[http://www2.econ.iastate.edu/classes/econ308/tesfatsion/SFIStockOverview.LT.pdf][Tesfatsion - Overview of theSanta Fe Artificial Stock Market Model]] :Survey:ABM:SantaFe:Quick:
     :PROPERTIES:
@@ -204,6 +212,7 @@ CLOSED: [2021-05-20 qui 10:46]
 
 - Migration
 
+*** REF [#A] [[https://arxiv.org/abs/2009.06914][The impact of social influence in Australian real-estate: market...]] :ABM:HouseMarket:Spatial:ToBase:
 *** REF Smith’s rent gap theory and local real estate dynamics: A multi-agent model
 
 - Gentrification
@@ -213,6 +222,9 @@ CLOSED: [2021-05-20 qui 10:46]
 - Contagion effect
 
 ** [[file:../notes/20210210184406-mortgage_interest_rate.org][Mortgage Interest rate and market particularities]] :Mortgage:
+
+*** READ [#B] [[https://link.springer.com/article/10.1007/s10901-021-09848-7][EU housing markets before financial crisis of 2008: The role of institutional...]] :Institutional:HouseMarket:Europe:Results:StilyzedFacts:
+*** READ [#A] [[https://www.oxfordhandbooks.com/view/10.1093/oxfordhb/9780199640935.001.0001/oxfordhb-9780199640935-e-023][Residential Mortgages - Oxford Handbooks]] :Mortgage:InternationalComparison:ToBase:
 *** PARTIAL [#A] <2021-03-03 qua> [[https://www.ecb.europa.eu/pub/pdf/scpops/ecbocp101.pdf][Housing Finance in the Euro area]] :QCA:Mortgage:LTV:DIRECTIONALS:
 :PROPERTIES:
 :CUSTOM_ID: ECB_2009_Housing
@@ -271,6 +283,8 @@ CLOSED: [2021-05-20 qui 10:46]
 :KEY: cite:jorda_2015_Betting
 :END:
 
+*** PARTIAL [#C] [[https://www.bis.org/publ/cgfs48.pdf][Operationalising the selection and application of macroprudential instruments]] :REF:QCA:
+
 *** PARTIAL [#A] [[http://www.actuaries.org/CTTEES_TFRISKCRISIS/Documents/turner_review.pdf][Turner - A Regulatory Response to the Global Banking Crisis]] :DIRECTIONALS:BASEL:SAMPLE:QCA:
    :PROPERTIES:
    :YEAR:     2009
@@ -295,6 +309,8 @@ CLOSED: [2021-05-20 qui 10:46]
 :FINISHED: [ ]
 :END:
 
+
+*** SKIM [#D] [[https://apo.org.au/sites/default/files/resource-files/2021-06/apo-nid312736.pdf][HOUSING: TAMING THE ELEPHANT IN THE ECONOMY]] :HouseMarket:Australia:Report:Introduction:EmpiricalMotivation:
 *** SKIM [#C] [[file:../notes/2021-02-26-11-20-18-lacour-little_2010_Homea.org][lacour-little_2010_Homea: Home Equity Extraction by Homeowners: 2000-2006 (2010, Journal of Real Estate Research)]] :DIRECTIONALS:DATA:USA:QCA:
 :PROPERTIES:
 :YEAR:  citeyear*:lacour-little_2010_Homea
@@ -308,14 +324,20 @@ CLOSED: [2021-05-20 qui 10:46]
 :END:
 *** SKIM [#B] [[https://academic.oup.com/oep/article-abstract/70/3/821/4948656?redirectedFrom=fulltext][Constraints on LTV as a macroprudential tool: a precautionary tale]] :LTV:QCA:
 
-*** PARTIAL [#C] [[https://www.bis.org/publ/cgfs48.pdf][Operationalising the selection and application of macroprudential instruments]] :REF:QCA:
-
+*** SKIM [#D] [[https://www.ecb.europa.eu/pub/pdf/other/euhousingmarketsen.pdf][Structural factors in the EU housing market]] :DATA:Empirical:Results:HousePrices:HouseMarket:Renting:Mortgage:
 *** SKIM <2021-03-10 qua> [[https://www.brookings.edu/wp-content/uploads/2016/06/0129_capital_primer_elliott.pdf]] :QCA:DIRECTIONALS:CapitalStructure:
 *** SKIM <2021-03-10 qua> [[https://www.cambridge.org/core/journals/journal-of-financial-and-quantitative-analysis/article/abs/determinants-of-capital-structure-capital-marketoriented-versus-bankoriented-institutions/0F08AA876248523B3D84E645178323DB][The Determinants of Capital Structure: Capital Market-Oriented versus Bank-Or...]] :CapitalStructure:DIRECTIONALS:QCA:
+
+*** RESULTS [#D] [[https://www.tandfonline.com/doi/full/10.1080/09538259.2021.1923282][Punishment or Forgiveness? Loan Modifications in Private Label Residential Mo...]] :Mortgage:USA:Foreclosure:DebtForgiveness:Secutiritization:PolicyDiscussion:PotentialPartners:
+*** REF [#C] [[https://academic.oup.com/oxrep/article/24/1/1/5140987][Housing markets and the economy: the assessment]] :Panel:StilyzedFacts:Results:EmpiricalMotivation:
+
 ** [[file:../notes/20210210092103-residential_investment_determinants.org][Residential investment determinants]] :Residential:
+
+*** RESULTS [#C] [[https://www.sciencedirect.com/science/article/abs/pii/S1051137709000552?via%3Dihub][Macroeconomic determinants of international housing markets]] :Panel:Results:Empirical:
 *** MAYBE <2021-03-08 seg> [[https://www.tandfonline.com/doi/abs/10.1080/00036846.2021.1885613][Forecasts of growth in US residential investment: accuracy gains from consume...]] :Panel:Residential:
 *** WAIT [#B] <2021-03-05 sex> [[https://www.ecb.europa.eu/pub/financial-stability/fsr/special/html/ecb.fsrart202005_01~762d09d7a2.en.html][Trends in residential real estate lending standards and implications for fina...]] :QCA:DATA:DIRECTIONALS:
 ** [[file:../notes/20210210092940-household_debt_and_bank_credit.org][Household debt and Bank credit]] :Debt:
+
 *** READ [#A] [[https://www.oxfordhandbooks.com/view/10.1093/oxfordhb/9780199640935.001.0001/oxfordhb-9780199640935-e-025][Systemic Risk in Banking: An Update - Oxford Handbooks]] :QCA:Banking:
 *** PARTIAL [#A] HOUSEHOLD DEBT IN OECD COUNTRIES: STYLISED FACTS AND POLICY ISSUES :OECD:Panel:
    :PROPERTIES:
@@ -337,9 +359,15 @@ CLOSED: [2021-05-20 qui 10:46]
 - Chapter 5
 *** PARTIAL [#C] [[https://www.bankofcanada.ca/wp-content/uploads/2017/11/fsr-november2017-bilyk.pdf][Analysis of Household Vulnerabilities using loan-level mortgage data]] :LTV:Calibration:QCA:
 
+
+*** RESULTS [#C] [[https://www.tandfonline.com/doi/abs/10.1080/08965803.2021.1938917][Residential Housing Market and Bank Stability: Focusing on OECD and Emerging]] :Empirical:HousePrices:FinancialRisk:Panel:OECD:Asia:Banking:
+
+*** WAIT [#C] [[https://www.researchgate.net/profile/Stefano-Di-Bucchianico/publication/351359936_Inequality_household_debt_ageing_and_bubbles_A_model_of_demand-side_Secular_Stagnation/links/6093ecf392851c490fbc88e0/Inequality-household-debt-ageing-and-bubbles-A-model-of-demand-side-Secular-Stagnation.pdf][Inequality, household debt, ageing and bubbles: A model of demand-side Secular Stagnation]] :Bubbles:Sraffian:HousePrices:
+*** RESULTS [#D] [[https://academic.oup.com/rof/article/10/3/321/1606865][Financial Accelerator: Evidence from International Housing Markets | Review o...]] :ABM:Empirical:Results:DATA:StilyzedFacts:
 ** [[file:../notes/20210210091758-house_prices.org][House Prices]] :Prices:
 *** READ [#B] [[https://www.sciencedirect.com/science/article/abs/pii/S1051137716300237][Housing finance and real-estate booms: A cross-country perspective]] :Data:QCA:DIRECTIONALS:Panel:
 *** SKIM <2021-03-19 sex> [[http://saeb.feaa.uaic.ro/index.php/saeb/article/view/1480][House Price Shock and Business Cycle: The French Case | Saad | Scientific Ann...]] :Panel:HousePrices:BusinessCycle:France:
+*** SKIM [#D] [[https://www.tandfonline.com/doi/abs/10.1080/1351847X.2021.1959366?journalCode=rejf20][Credit composition and housing price dynamics: a disaggregation approach]] :Panel:HousePrices:TimeSeries:Europe:AssetPrices:
 *** ARCH [#C] [[https://www.kansascityfed.org/PUBLICAT/ECONREV/PDF/2q07rapp.pdf][Rappaport - A Guide to Aggregate House Price Measures]] :USA:HousePrices:
 
 *** <2021-06-14 seg> [[https://www.sciencedirect.com/science/article/pii/S2325426221000139][Examining the determinants of housing prices and the influence of the spatial...]] :HousePrices:Spatial:Empirical:Panel:China:
@@ -349,7 +377,9 @@ CLOSED: [2021-05-20 qui 10:46]
 
 ** New Narrative :NewNarrative:
 
-** Super ABM: Non-residential investiment related
+** Super ABM: Non-residential investment related
+
+*** READ [#A] [[https://doi.org/10.1007/s40888-020-00200-w][Harrodian instability in decentralized economies: an agent-based approach | S...]] :ABM:Supermultiplier:ToBase:
 
 * Papers
 
@@ -357,9 +387,12 @@ CLOSED: [2021-05-20 qui 10:46]
 * Lectures
 
 * Orientation
-** Lorena (2021)
-** Felipe (2021)
+** Dourado (2021)
+** Barros (2021)
 * Teaching
+* Chapters and books (general topics)
+
+** [[https://link.springer.com/chapter/10.1007/978-3-030-62070-7_13][Labour Markets and Income Distribution]] :Sraffian:OffOffice:LaborMarket:ClassStrugle:Book:
 * Archive :noexport:
 ** READ [[file:../notes/20210216101138-qca_literature_review.org][QCA Literature Review]] :QCA:ARCHIVE:
 *** READ [#A] [[https://ideas.repec.org/a/spr/qualqt/v53y2019i3d10.1007_s11135-018-0805-7.html][Schneider (2019) - Two-step QCA revisited: the necessity of context conditions]]
@@ -517,6 +550,12 @@ CLOSED: [2021-05-20 qui 10:46]
 
 
 
+
+
+
+*** ARCH [[https://www.tandfonline.com/doi/abs/10.1080/14616718.2015.1048091?journalCode=reuj20][Mortgage equity withdrawal and institutional settings: an exploratory analysi...]] :Literature:QCA:Introduction:Results:
+CLOSED: [2021-09-06 seg 11:24]
+*** ARCH [[https://academic.oup.com/rof/article/17/1/1/1582371][Mortgage Market Design* | Review of Finance | Oxford Academic]] :QCA:Mortgage:HouseMarket:Review:Literature:EmpiricalMotivation:
 
 *** ARCH [[https://www.imf.org/en/Publications/WP/Issues/2016/12/30/Deposit-Protection-Arrangements-A-Survey-1875][Kyei - Deposit Protection Arrangements : A Survey]] :Deposits:QCA:ARCHIVE:
 CLOSED: [2021-02-26 sex 10:20]
