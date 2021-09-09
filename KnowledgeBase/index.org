@@ -31,9 +31,14 @@ It is useful to separate literature notes from permanent notes. Literature notes
 
 ** LSD
 
+- [[id:b67d7a6b-bd61-45cd-909c-7d4e9b23268e][LSD and Emacs integration workflow]]
+
+
 ** NetLogo
 
 * LaTeX
+
+- [[id:2b461a80-7884-4cbc-8d00-62f0cd6719b0][Word count latex]]
 
 * Emacs
 
