@@ -13,3 +13,5 @@
 !*.css
 !*.el
 !*.html
+!*.setup
+!*.theme

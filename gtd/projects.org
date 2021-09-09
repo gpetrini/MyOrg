@@ -33,7 +33,10 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 - [ ] Atualizar abntex
 * STRT SFC [0%]
 
-** STRT Incorporate Lucas suggestions
+** TODO Include Nikkiforos-related footnote
+
+*** TODO Count word number
+
 
 ** WAIT Letter to peers
 
@@ -45,6 +48,7 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 * STRT Super ABM
 
+** TODO Rethink model strategy and objective
 ** TODO Review, comment and check
 
 *** TODO Production
@@ -82,9 +86,6 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 ** Barros (2021)
 
-*** TODO [[https://academic.oup.com/cje/article-abstract/28/5/719/1729948][Financialisation and the slowdown of accumulation]]
-
-*** TODO [[https://www.scielo.br/j/rep/a/JTNMBQRxKFkkkLbpDRzmcvG/?format=pdf&lang=pt][Finance-Led Growth Regime no brasil:  estatuto teórico, evidências empíricas  e consequências macroeconômicas]]
 *** TODO Read Miranda and Mattos 2019
 
 *** TODO Read Miranda and Mattos 2020
@@ -93,15 +94,10 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 * STRT CE472 2021
 ** TODO Corrigir lista 01
 *** TODO Similaridade de respostas
-** TODO Aula 08
-*** TODO Criar tarefa
-*** TODO Pedir gravação (Gustavo)
-
+*** TODO Perguntar reconsideração de justficativas
 ** TODO Pensar em formas de avaliação pós primeira lista
-* STRT Grupos de discussão de teses
-** TODO Apresentar modelo conceitual <2021-09-07 ter>
-*** TODO Revisar apresentação
-
+* STRT Dissertation group discussion
+** TODO Read Liliam's drafta
 * WAIT VECM [0%] :Article:
 
 ** WAIT Testar para o fim de 2019

@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       2b461a80-7884-4cbc-8d00-62f0cd6719b0
+:END:
+#+title: Word count latex
+
+Some ways to count the number of words in latex:
+
+* Bash
+
+#+begin_example bash
+pdftotex file.pdf - | wc -c
+#+end_example
+
+
+* Builtin emacs function
+
+In a =.tex= buffer, hit =M-x tex-count-words=
+
+* Comparisons
+
+- The bash alternative seems to overestimate the real number of words since include some words of references.
+  Some journals do not include them
+- Emacs builtin function count latex environment but not latex commands.
