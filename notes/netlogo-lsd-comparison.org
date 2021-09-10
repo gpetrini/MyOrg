@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       b58b37f4-080c-4af9-91d6-154e631a8f78
+:END:
+#+title: Netlogo-LSD comparison
+
+#+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
+#+OPTIONS: num:nil ^:{} toc:nil
+#+INCLUDE: '../header.org'
+
+* Procedures
+
+* Model structure
+
+* Input data

@@ -32,7 +32,8 @@ It is useful to separate literature notes from permanent notes. Literature notes
 ** LSD
 
 - [[id:b67d7a6b-bd61-45cd-909c-7d4e9b23268e][LSD and Emacs integration workflow]]
-
+- [[id:d7501d57-45a8-4332-8db9-2f0bbecc73de][LSD performance techniques]]
+- [[id:b58b37f4-080c-4af9-91d6-154e631a8f78][Netlogo-LSD comparison]]
 
 ** NetLogo
 

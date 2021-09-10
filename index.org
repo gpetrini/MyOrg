@@ -8,7 +8,7 @@ https://i.imgur.com/PSlK5yB.png
 
 * Logo :ignore:
 
-#+begin_src R :results graphics file :file ./figs/logo.png :session logo :exports none
+#+begin_src R :results graphics file :file ./figs/logo.png :session logo :exports none :dir .
 library(hexSticker)
 imgurl <- "./figs/transparent_braindump.png"
 hexSticker::sticker(imgurl, package="myOrg", p_size=25, p_y = 1.5,
