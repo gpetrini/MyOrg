@@ -23,3 +23,6 @@ https://i.pinimg.com/originals/fd/de/23/fdde2369da2feeaa95a469b0ff1dd3f5.gif
 
 * Writing inbox
 * Reding Inbox
+* Fleeting notes
+** WAIT [[https://ag91.github.io/blog/2021/07/25/org-roam-and-nyxt-taking-zettelkasten-notes-from-the-web/][Nyxt and org-roam]]
+** WAIT [[https://twitter.com/rodriguesjm6/status/1436355550388932614?s=09][Academic writing tips thread]]

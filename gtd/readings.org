@@ -11,9 +11,6 @@
 #+ATTR_HTML: :width 1080px :style float:left;margin-bottom:20px; :class banner
 https://i.pinimg.com/originals/ea/c9/83/eac9832cf6b1ad75af8ccc3ad3db1728.gif
 
-* Processing :noexport:
-
-
 * Journals
 
 *Description:* Readings to keep up with frontier
@@ -35,6 +32,9 @@ https://i.pinimg.com/originals/ea/c9/83/eac9832cf6b1ad75af8ccc3ad3db1728.gif
 
 ** <2021-05-07 sex> [[https://onlinelibrary.wiley.com/doi/abs/10.1111/meca.12335][Thirlwall’s law, uneven development, and income distribution - Sasaki]] :meca:
 
+* Working papers
+
+** <2021-09-14 ter> [[https://www.uni-bamberg.de/fileadmin/uni/fakultaeten/sowi_faecher/vwl/BERG/BERG_173.pdf]] :Consumption:Inequality:ABM:
 * Dissertation
 
 ** [[file:../notes/20210210100407-abm_readings.org][ABM Readings]] :ABM:
@@ -366,11 +366,12 @@ CLOSED: [2021-05-20 qui 10:46]
 *** RESULTS [#D] [[https://academic.oup.com/rof/article/10/3/321/1606865][Financial Accelerator: Evidence from International Housing Markets | Review o...]] :ABM:Empirical:Results:DATA:StilyzedFacts:
 ** [[file:../notes/20210210091758-house_prices.org][House Prices]] :Prices:
 *** READ [#B] [[https://www.sciencedirect.com/science/article/abs/pii/S1051137716300237][Housing finance and real-estate booms: A cross-country perspective]] :Data:QCA:DIRECTIONALS:Panel:
+*** READ <2021-06-14 seg> [[https://www.sciencedirect.com/science/article/pii/S2325426221000139][Examining the determinants of housing prices and the influence of the spatial...]] :HousePrices:Spatial:Empirical:Panel:China:
 *** SKIM <2021-03-19 sex> [[http://saeb.feaa.uaic.ro/index.php/saeb/article/view/1480][House Price Shock and Business Cycle: The French Case | Saad | Scientific Ann...]] :Panel:HousePrices:BusinessCycle:France:
 *** SKIM [#D] [[https://www.tandfonline.com/doi/abs/10.1080/1351847X.2021.1959366?journalCode=rejf20][Credit composition and housing price dynamics: a disaggregation approach]] :Panel:HousePrices:TimeSeries:Europe:AssetPrices:
 *** ARCH [#C] [[https://www.kansascityfed.org/PUBLICAT/ECONREV/PDF/2q07rapp.pdf][Rappaport - A Guide to Aggregate House Price Measures]] :USA:HousePrices:
 
-*** <2021-06-14 seg> [[https://www.sciencedirect.com/science/article/pii/S2325426221000139][Examining the determinants of housing prices and the influence of the spatial...]] :HousePrices:Spatial:Empirical:Panel:China:
+*** <2021-09-13 seg> [[https://voxeu.org/article/what-drives-house-prices-some-lessons-literature][What drives house prices: Some lessons from the literature]] :HousePrices:Vox:
 ** [[file:../notes/20210405101242-bubbles_and_aggregate_demand.org][Bubbles and aggregate demand]]
 
 *** READ [#A] [[https://www.nber.org/papers/w21486][Leveraged Bubbles (Jordà et. all, 2015)]]
@@ -379,6 +380,7 @@ CLOSED: [2021-05-20 qui 10:46]
 
 ** Super ABM: Non-residential investment related
 
+*** READ <2021-09-15 qua> [[https://doi.org/10.1007/s00191-021-00747-2][The age distribution of business firms]] :ABM:CapacityUtilization:Supermultiplier:
 *** READ [#A] [[https://doi.org/10.1007/s40888-020-00200-w][Harrodian instability in decentralized economies: an agent-based approach | S...]] :ABM:Supermultiplier:ToBase:
 
 * Papers
@@ -394,7 +396,7 @@ CLOSED: [2021-05-20 qui 10:46]
 
 ** [[https://link.springer.com/chapter/10.1007/978-3-030-62070-7_13][Labour Markets and Income Distribution]] :Sraffian:OffOffice:LaborMarket:ClassStrugle:Book:
 * Archive :noexport:
-** READ [[file:../notes/20210216101138-qca_literature_review.org][QCA Literature Review]] :QCA:ARCHIVE:
+** [[file:../notes/20210216101138-qca_literature_review.org][QCA Literature Review]] :QCA:ARCHIVE:
 *** READ [#A] [[https://ideas.repec.org/a/spr/qualqt/v53y2019i3d10.1007_s11135-018-0805-7.html][Schneider (2019) - Two-step QCA revisited: the necessity of context conditions]]
 *** READ [#C] [[https://link.springer.com/article/10.1007/s11135-019-00893-7][Haesebrouck (2020) - An alternative update of the two-step QCA procedure]]
 *** READ [#C] [[https://journals.sagepub.com/doi/10.1177/0010414008325433][Mahoney et al (2009) - The Logic of Historical Explanation in the Social Sciences]]

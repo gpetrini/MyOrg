@@ -24,6 +24,8 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 ** TODO Add logos url in configs
 
+** TODO Compile with gnutls
+
 * TODO Dissertation's general settings [50%] :Dissertation:
 ** TODO Marcar qualificação
 ** TODO Criar script para copiar tabelas e figuras dos scripts (link simbólico preferencialmente)
@@ -33,23 +35,23 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 - [ ] Atualizar abntex
 * STRT SFC [0%]
 
-** TODO Include Nikkiforos-related footnote
-
-*** TODO Count word number
-
 
 ** WAIT Letter to peers
 
 ** WAIT Review new norms
-
-** WAIT Simulate alternative capitalist consumption
 
 ** WAIT Highlight appendix A in red
 
 * STRT Super ABM
 
 ** TODO Rethink model strategy and objective
-** TODO Review, comment and check
+
+*** STRT Write mind map
+
+*** TODO Write equations
+
+*** TODO Read Caiani
+** TODO To implement, comment and create checkers
 
 *** TODO Production
 
@@ -63,8 +65,6 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 *** WAIT Endogeinity mechanism
 
-** TODO To implement
-
 *** TODO Entry and exit
 
 *** TODO Investment function endogeinization
@@ -73,7 +73,6 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 **** TODO Test unfilled demand
 
-** TODO Check csv extension
 ** TODO Run aggregate model
 - [ ] Sraffian supermultiplier
 - [ ] Neo-Kaleckian
@@ -82,7 +81,8 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 * TODO Orientações [0%]
 ** Dourado (2021)
-
+*** TODO Ler Parcial mono <2021-09-20 seg>
+*** TODO Discutir modelo Aidar <2021-09-20 seg>
 
 ** Barros (2021)
 
@@ -93,19 +93,21 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 * STRT CE472 2021
 ** TODO Corrigir lista 01
-*** TODO Similaridade de respostas
-*** TODO Perguntar reconsideração de justficativas
+*** TODO Zerar respostas iguais
+*** TODO Revisar
+** TODO Marcar discussão lista 01
+*** TODO Criar consulta
 ** TODO Pensar em formas de avaliação pós primeira lista
 * STRT Dissertation group discussion
-** TODO Read Liliam's drafta
 * WAIT VECM [0%] :Article:
 
 ** WAIT Testar para o fim de 2019
 *** Pós envio ao Franklin
 *** Rever data com a quebra estrutural
 ** TODO Adjust introduction
-*** TODO Read Mason
+*** TODO Note Mason
 *** TODO Include Barba and Pivetti
+*** TODO Include Cynamon and Fazzari
 * WAIT ABM Spatial Housing [0%] :Dissertation:
 
 ** TODO [#A] Difusion model
@@ -151,7 +153,7 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 *Description:* Map heterodox publications and interactions
 
 ** [[https://docs.ropensci.org/bib2df/][bib2df]]
-* Stylized Factbook
+* Stylized Factbook :@free:
 
 *Description:* Gather empirical stylized facts and respective references
 

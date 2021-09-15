@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       1abf10fa-dd13-4dad-a516-0cd81e8c90a0
+:END:
+#+title: Set java path correctly
+#+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
+#+OPTIONS: num:nil ^:{} toc:nil
+#+INCLUDE: '../header.org'
+
+[[https://itsfoss.com/set-java-home-ubuntu/][Source]]
+
+This tutorial indicates how to set java home path correctly.
+Basically:
+1. =readlink -f `which javac` | sed "s:/bin/javac::"=
+2. Export the result as: =export JAVA_HOME=result=
+3. Then =source ~./bashrc=
