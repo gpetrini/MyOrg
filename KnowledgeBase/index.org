@@ -6,7 +6,6 @@
 #+ATTR_HTML: :width 1080px :style float:left;margin-bottom:20px; :class banner
 https://science.nichd.nih.gov/confluence/download/attachments/141362226/phd112318s.gif?version=1&modificationDate=1548874515000&api=v2
 
-* Permanent notes
 
 A good point made by [[https://www.alexeyshmalko.com/how-i-note/][Alexey]] is:
 
@@ -25,10 +24,9 @@ It is useful to separate literature notes from permanent notes. Literature notes
 
 ** Time series panel
 
-* Agent Based Modeling
-
 * Qualitative Comparative Analysis
 
+* Agent Based Modeling
 ** LSD
 
 - [[id:b67d7a6b-bd61-45cd-909c-7d4e9b23268e][LSD and Emacs integration workflow]]
@@ -37,12 +35,26 @@ It is useful to separate literature notes from permanent notes. Literature notes
 
 ** NetLogo
 
+
 * LaTeX
 
 - [[id:2b461a80-7884-4cbc-8d00-62f0cd6719b0][Word count latex]]
+
+* Programming
+
+** Good practices
+
+- [[https://github.com/scunning1975/causal-inference-class/blob/master/Helpful%20stuff/CodeAndData.pdf][Code and Data for the Social Sciences: A practiner's guide]]
+
 
 * Emacs
 
 ** Org-mode
 
 * Linux
+
+* Academia-related
+
+- [[https://www.connectedpapers.com/][Site to check citation network]]
+- [[https://scite.ai/][Context citation check (paid)]]
+- [[https://podcasts.apple.com/us/podcast/within-between/id1517310439?i=1000485702801][Writing a paper: Processes, tips, and tricks for the (slightly) less organized]]

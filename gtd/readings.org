@@ -383,6 +383,32 @@ CLOSED: [2021-05-20 qui 10:46]
 *** READ <2021-09-15 qua> [[https://doi.org/10.1007/s00191-021-00747-2][The age distribution of business firms]] :ABM:CapacityUtilization:Supermultiplier:
 *** READ [#A] [[https://doi.org/10.1007/s40888-020-00200-w][Harrodian instability in decentralized economies: an agent-based approach | S...]] :ABM:Supermultiplier:ToBase:
 
+** Dot-com crisis
+
+*** INPROGRESS [#A] [[https://www.aeaweb.org/articles?id=10.1257/aer.99.4.1451][Technological Revolutions and Stock Prices]]
+
+*** READ [#A] [[https://psycnet.apa.org/record/1997-08992-001][Rational entrepreneurs or optimistic martyrs? Some considerations on technological regimes, corporate entries, and the evolutionary role of decision biases]]
+
+*** INPROGRESS [#A] [[http://rkaniel.simon.rochester.edu/papers/bubbletechnology.pdf][Technological innovation and real investment booms and busts]]
+
+*** READ [#B] [[https://timothyjohnson.web.illinois.edu/papers/JME_2007.pdf][Optimal learning and new technology bubbles]]
+
+*** INPROGRESS [[https://doi.org/10.1093/cje/bep028][The double bubble at the turn of the century: technological roots and structural implications]]
+
+*** RESULTS [#B] [[https://doi.org/10.1080/0953732032000046097][Bursting the dot.com "Bubble': A Case Study in Investor Behaviour]]
+
+*** RESULTS [#B] [[https://doi.org/10.1080/1369106032000152452][Inflating the bubble: examining dot-com investor behaviour]]
+
+*** RESULTS [#C] [[https://doi.org/10.1080/09537325.2020.1828577][The new great bubble in the technology industry?]]
+
+*** RESULTS [#B] [[https://doi.org/10.1080/23322039.2017.1411453][Speculative bubbles and contagion: Analysis of volatility’s clusters during the DotCom bubble based on the dynamic conditional correlation model]]
+
+*** SKIM [#B] [[https://www.sciencedirect.com/science/article/pii/S0022053115000034][Innovation by entrants and incumbents]]
+
+*** SKIM [#C] [[https://www.sciencedirect.com/science/article/pii/S0048733312000856][Incumbent performance in the face of a radical innovation: Towards a framework for incumbent challenger dynamics]]
+
+*** MAYBE [#B] [[https://pages.stern.nyu.edu/~eofek/DotComMania_JF_Final.pdf][DotCom Mania: The Rise and Fall of Internet Stock Prices]]
+
 * Papers
 
 ** VECM (2020-2021)

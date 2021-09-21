@@ -24,7 +24,6 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 ** TODO Add logos url in configs
 
-** TODO Compile with gnutls
 
 * TODO Dissertation's general settings [50%] :Dissertation:
 ** TODO Marcar qualificação
@@ -44,13 +43,18 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 * STRT Super ABM
 
+** TODO Bolhas de inovação
+
+- Expectativa de crescimento das firmas depende da expectativa de market-share
+  + Falácia de composição porque nem todas as firmas podem crescer seu market-share ao mesmo tempo
+- Como fazer com que firmas queiram copiar o comportamento das demais
+
 ** TODO Rethink model strategy and objective
 
 *** STRT Write mind map
 
 *** TODO Write equations
 
-*** TODO Read Caiani
 ** TODO To implement, comment and create checkers
 
 *** TODO Production
@@ -94,11 +98,56 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 * STRT CE472 2021
 ** TODO Corrigir lista 01
 *** TODO Zerar respostas iguais
-*** TODO Revisar
-** TODO Marcar discussão lista 01
-*** TODO Criar consulta
+*** TODO Atribuir notas
+*** TODO Perguntar o que fazer com plágio (questões de verdadeiro/falso)
+** TODO Discussão lista 01
 ** TODO Pensar em formas de avaliação pós primeira lista
 * STRT Dissertation group discussion
+* STRT Nikiforos econometric model response
+
+
+*Objetivo:* Como discutir ciclo a luz do supermultiplicador?
+
+** TODO Ver ciclo nos gastos autônomos
+
+** TODO Estabilidade dos parâmetros
+
+** TODO Taxa de investimento correta e recalcular relação
+
+** TODO Melhor modelo econométrico
+
+*** TODO Comparar uso do filtro
+
+- Importante não é variação cíclico de h, mas sim de patamar
+*** TODO Fazer com ciclo e sem ciclo
+** TODO Decompor investimento em estoque de capital (construção indústria), máquinas, equipamentos e estoques
+** TODO Investimento autônomo por acaso seguido de correção
+** TODO Impulso resposta pode não ser o melhor
+
+- Defasagens e efeito dual do investimento
+  + Demanda primeiro e capacidade depois
+- Nikiforos com IRF estatisticamente zero
+
+** TODO Testar impulso resposta
+
+** TODO Supermultiplicador e ciclo
+
+- Ciclo advem dos gastos autônomos
+- Testar ciclo do supermultiplicador e dos gastos autônomos a partir dos dados do Haluska
+  + Parâmetros mudam e isso explica o ciclo
+  + Ciclo não vem do ajustamento do estoque de capital
+  + Ciclos teóricos são mais regulares que os empíricos
+
+** TODO Plano de estimação
+
+*** TODO h correto com filtro
+
+*** TODO h correto sem filtro
+
+*** TODO Ciclos dos gastos autônomos e do supermultiplicador
+
+*** TODO Decompor componentes do investimento
+
 * WAIT VECM [0%] :Article:
 
 ** WAIT Testar para o fim de 2019
