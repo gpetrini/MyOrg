@@ -10,9 +10,11 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 * Emacs
 
-** TODO Embed mathjax
+** TODO Embed mathjax in css site
 
 ** TODO Resolve relative path in config
+
+How to adapt config for new computer?
 
 ** TODO Adapt notes
 
@@ -24,7 +26,9 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 ** TODO Add logos url in configs
 
+** TODO Implement org-cite syntax
 
+** TODO Fix emacs source list
 * TODO Dissertation's general settings [50%] :Dissertation:
 ** TODO Marcar qualificação
 ** TODO Criar script para copiar tabelas e figuras dos scripts (link simbólico preferencialmente)
@@ -32,6 +36,7 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 ** TODO Adicionar Ítalo como co-orientador
 - [ ] Atualizar abntex
+** TODO Ver possibilidade do proficiência com diploma do VM
 * STRT SFC [0%]
 
 
@@ -41,7 +46,7 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 ** WAIT Highlight appendix A in red
 
-* STRT Super ABM
+* STRT ABM dot-com SSM model
 
 ** TODO Bolhas de inovação
 
@@ -85,8 +90,6 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 * TODO Orientações [0%]
 ** Dourado (2021)
-*** TODO Ler Parcial mono <2021-09-20 seg>
-*** TODO Discutir modelo Aidar <2021-09-20 seg>
 
 ** Barros (2021)
 
@@ -96,17 +99,39 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 
 * STRT CE472 2021
-** TODO Corrigir lista 01
-*** TODO Zerar respostas iguais
-*** TODO Atribuir notas
-*** TODO Perguntar o que fazer com plágio (questões de verdadeiro/falso)
-** TODO Discussão lista 01
-** TODO Pensar em formas de avaliação pós primeira lista
+** TODO Escolher questões para corrigir macro 2
+** TODO Corrigir lista 02
+** TODO Aula capítulo 20
 * STRT Dissertation group discussion
+** TODO Review Mason paper
 * STRT Nikiforos econometric model response
 
 
 *Objetivo:* Como discutir ciclo a luz do supermultiplicador?
+
+** TODO Implementations TODOs
+
+
+*** TODO Export commom code (packages) into a script and load
+*** TODO Export cointegrarion results into external file
+
+*** TODO Download and calculate alternative capacity utilization
+*** TODO Estimate real values
+
+** TODO Response steps
+
+*** STRT Nominal Trend
+
+*** TODO Nominal Cycle
+
+*** TODO Nominal no filter
+
+*** TODO Real Trend
+
+*** TODO Real Cycle
+
+*** TODO Real no filter
+
 
 ** TODO Ver ciclo nos gastos autônomos
 
@@ -138,11 +163,10 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
   + Ciclo não vem do ajustamento do estoque de capital
   + Ciclos teóricos são mais regulares que os empíricos
 
-** TODO Plano de estimação
+** TODO Proposition plan
 
-*** TODO h correto com filtro
+After Nikiforos' response
 
-*** TODO h correto sem filtro
 
 *** TODO Ciclos dos gastos autônomos e do supermultiplicador
 
@@ -150,13 +174,8 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 * WAIT VECM [0%] :Article:
 
-** WAIT Testar para o fim de 2019
-*** Pós envio ao Franklin
-*** Rever data com a quebra estrutural
-** TODO Adjust introduction
-*** TODO Note Mason
-*** TODO Include Barba and Pivetti
-*** TODO Include Cynamon and Fazzari
+
+
 * WAIT ABM Spatial Housing [0%] :Dissertation:
 
 ** TODO [#A] Difusion model
@@ -189,8 +208,6 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 - [ ] Sem new firms
 - [ ] Banco central implícito (manter)
 
-* ABM dot-com [0/1] :@free:Article:
-** TODO Concentration, Stagnation and Inequality:An Agent-Based Approach
 * Blog Social paths :@free:
 
 *Description:* Gatther usefull stuff for academics

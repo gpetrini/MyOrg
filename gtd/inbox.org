@@ -8,29 +8,35 @@
 #+ATTR_HTML: :width 1080px :style float:left;margin-bottom:20px; :class banner
 https://i.pinimg.com/originals/fd/de/23/fdde2369da2feeaa95a469b0ff1dd3f5.gif
 
-
-
 * Tasks inbox
 :PROPERTIES:
 :ID:       257e67c4-ac7c-489b-b4f3-8420f4b0a5e4
 :END:
 
-** TODO Ver possibilidade do proficiência com diploma do VM
 * Writing inbox
-** TODO Koop_2018
-** TODO Ryoo_2010
-** TODO botte_2019
-** TODO tori_onaram_2018
-** TODO Fichar Perez (2009)
-** TODO Fish Pástor
-** TODO FISH DeMarzo
+** TODO [#A] Super ABM Introduction draft
+** TODO [#A] FISH [[https://voxeu.org/article/what-drives-house-prices-some-lessons-literature][What drives house prices: Lessons from the literature]]
+
+** TODO [#A] Fichar Perez (2009)
+** TODO [#A] FISH Cornell 2020
+** TODO [#B] Koop_2018
+** TODO [#B] Fish Pástor
+** TODO [#B] FISH DeMarzo
+** TODO [#C] botte_2019
+** TODO [#C] tori_onaram_2018
+
+
+* News Inbox
+** <2021-09-22 qua> [[https://voxeu.org/article/flattening-curve-pandemic-induced-revaluation-urban-real-estate][Flattening the curve: Pandemic-induced revaluation of urban real estate | VOX...]] :HouseSupply:PandemicRelated:
 * Reading Inbox
-** <2021-09-21 ter> [[https://voxeu.org/article/what-drives-house-prices-some-lessons-literature][What drives house prices: Lessons from the literature | VOX, CEPR Policy Portal]] :HousePrices:ReviewOfLiterature:
-** <2021-09-21 ter> [[https://www.morningstar.com/articles/1042387/are-disruptive-technologies-the-next-dot-com-bubble][Are Disruptive Technologies the Next Dot-com Bubble? | Morningstar]] :DotComCrisis:DisruptiveTechnologies:
-** <2021-09-21 ter> [[https://economics.ucr.edu/repec/ucr/wpaper/202113.pdf][On the Positive Slope of the Beveridge Curve inthe Housing Market]] :HousePrices:HousingMarket:BeveridgeCurve:
-** <2021-09-18 sáb> [[https://ideas.repec.org/p/inh/wpaper/2021-4.html][Regionally Heterogeneous Housing Cycles and Stabilization Policies]] :HousingCycle:ABM:Heterogeinity:Regional:PolicyOriented:
-:PROPERTIES:
-:ID:       fe239a69-8d61-4860-b7a3-dece541e79c9
-:END:
 * Fleeting notes
 ** WAIT [[https://ag91.github.io/blog/2021/07/25/org-roam-and-nyxt-taking-zettelkasten-notes-from-the-web/][Nyxt and org-roam]]
+** WAIT https://texample.net/tikz/examples/is-lm-diagram/
+** WAIT https://texample.net/tikz/examples/j-curve/
+** WAIT https://towardsdatascience.com/using-pgfplots-to-make-economic-graphs-in-latex-bcdc8e27c0eb
+** WAIT https://jackypacky.github.io/pgf-econ-graphs/guide.pdf
+** WAIT Github repo for heterodox journals
+** WAIT Note for expired release file (apt)
+** WAIT https://www.reddit.com/r/orgmode/comments/pw0z7k/orgcite_with_orgexport/?utm_medium=android_app&utm_source=share
+** WAIT https://systemcrafters.net/publishing-websites-with-org-mode/building-the-site/
+** WAIT https://asjadnaqvi.medium.com/
