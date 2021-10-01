@@ -208,7 +208,7 @@ CLOSED: [2021-05-20 qui 10:46]
 *** Innovative bubble ABM
 
 
-**** READ [#B] [[https://pubs.aeaweb.org/doi/pdfplus/10.1257/jep.4.2.13][Symposium on Bubbles]] :ReviewOfLiterature:Fundamentals:
+**** INPROGRESS [#B] [[https://pubs.aeaweb.org/doi/pdfplus/10.1257/jep.4.2.13][Symposium on Bubbles]] :ReviewOfLiterature:Fundamentals:
 
 **** PARTIAL [#A] [[Behavioral Rationality and Heterogeneous Expectations in Complex Economic Systems]] :Bubbles:Behavioral:Heterogeinity:
 

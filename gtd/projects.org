@@ -28,7 +28,6 @@ How to adapt config for new computer?
 
 ** TODO Implement org-cite syntax
 
-** TODO Fix emacs source list
 * TODO Dissertation's general settings [50%] :Dissertation:
 ** TODO Marcar qualificação
 ** TODO Criar script para copiar tabelas e figuras dos scripts (link simbólico preferencialmente)
@@ -40,7 +39,7 @@ How to adapt config for new computer?
 * STRT SFC [0%]
 
 
-** WAIT Letter to peers
+** STRT Letter to peers
 
 ** WAIT Review new norms
 
@@ -56,9 +55,12 @@ How to adapt config for new computer?
 
 ** TODO Rethink model strategy and objective
 
-*** STRT Write mind map
 
 *** TODO Write equations
+
+*** TODO Code strategy
+
+- Use flags or create functions for each sector?
 
 ** TODO To implement, comment and create checkers
 
@@ -76,17 +78,6 @@ How to adapt config for new computer?
 
 *** TODO Entry and exit
 
-*** TODO Investment function endogeinization
-
-**** TODO Test simple heuristic
-
-**** TODO Test unfilled demand
-
-** TODO Run aggregate model
-- [ ] Sraffian supermultiplier
-- [ ] Neo-Kaleckian
-
-
 
 * TODO Orientações [0%]
 ** Dourado (2021)
@@ -99,7 +90,23 @@ How to adapt config for new computer?
 
 
 * STRT CE472 2021
-** TODO Escolher questões para corrigir macro 2
+** STRT Escolher questões para corrigir macro 2
+
+*** Questões selecionadas
+
+- 1
+- 2
+- 7
+- 9
+- 10
+- 11
+- 13
+- 15
+- 17
+- 18
+
+*** WAIT Enviar ao Mariano
+
 ** TODO Corrigir lista 02
 ** TODO Aula capítulo 20
 * STRT Dissertation group discussion
@@ -112,15 +119,17 @@ How to adapt config for new computer?
 ** TODO Implementations TODOs
 
 
-*** TODO Export commom code (packages) into a script and load
-*** TODO Export cointegrarion results into external file
 
-*** TODO Download and calculate alternative capacity utilization
-*** TODO Estimate real values
+*** NO Estimate real values
+CLOSED: [2021-10-01 sex 11:24]
+
+*** TODO Revome diff of alternative capacity utilization with trend
 
 ** TODO Response steps
 
 *** STRT Nominal Trend
+
+**** TODO Alternative capacity utilization index
 
 *** TODO Nominal Cycle
 
@@ -132,6 +141,10 @@ How to adapt config for new computer?
 
 *** TODO Real no filter
 
+** TODO Check Nikiforos specifications
+
+- Benchmark model is in levels or in first differente?
+- Investment share has a unit root?
 
 ** TODO Ver ciclo nos gastos autônomos
 

@@ -1,0 +1,185 @@
+:PROPERTIES:
+:ID:       669465fc-f4fb-4569-ae8c-6ff779c6b05c
+:END:
+#+title: IEE859 - Teoria do valor e preços (Prof. Franklin Serrano)
+#+subtitle: Distribuição e Preços Relativos na Abordagem do Excedente
+#+DATE: 2º Semestre de 2021
+#+LANGUAGE: pt_br
+#+OPTIONS: num:nil ^:{} toc:nil
+#+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
+#+INCLUDE: '../header.org'
+#+filetags: :UFRJ:Notas_de_Aula:Demanda_Efetiva:Modelos_de_crescimento_liderados_pela_demanda:Moderna_Abordagem_do_Excedente:SraffianTheory:ModenSurplusApproach:EffectiveDemand:LecturesNotes:
+
+* Introdução ao curso <2021-09-30 qui>
+
+** Retomada da abordagem do excedente
+
+
+O projeto de pesquisa proposto a partir da retomada da abordagem clássica do excedente proposta por Sraffa e Garegnani trata das relações entre distribuição e preços relativos.
+
+- Para Marx e Sraffa, a definição de "Economia Política Clássica" é uma forma de análise que utiliza a noção de *excedente*.
+  - Marx descreve isso em "Teoria da Mais-Valia", escrito antes, mas publicado postumamente
+    - O trabalho é a fonte do valor de troca e não do valor de uso
+  - Sraffa denominou de "Teoria objetiva do valor"
+- O projeto de pesquisa de Sraffa parte da HPE ao mesmo tempo que torna a HPE mais clara
+
+
+** Complementariedade dos fatores de produção
+
+- Não é razoável supor que existe produtividade marginal. O produto só será produzido quando ambos os fatores serem utilizados
+  - Como consequência, o conflito distributivo e determinação do poder de barganha e da estrutura salarial são relevantes
+    - _Exemplo:_ Em um trabalho acadêmico dificilmente é possível atribuir quem contribuiu com o que (execução/ideia)
+  - *Problema da redução:* Dificuldade de reduzir a uma medida de trabalho homogênea via coeficientes técnicos na teoria da distribuição
+    - Seria um equivalente a uma "teoria do capital humana heterodoxa"
+    - Maior qualificação da mão-de-obra não é suficiente para gerar os postos de trabalho, mas sim a Demanda Efetiva
+      - Permitiria ter prioridade na contratação salarial, mas não ter mais emprego
+
+** Preços e custos de produção
+
+- Tanto na teoria clássica quanto na teoria neoclássica, os preços são iguais aos custos de produção
+  - Uma das diferenças é que na teoria neoclássica, os preços refletem escassez dos fatores
+  - Isso não é o mesmo que uma reapresentação da contabilidade nacional
+  - Outra difrença é importante é em relação à teoria da *distribuição*
+  - _Exemplo da metáfora do diamante e da água:_
+    - Clássicos: Diamante é mais caro porque os custos de produção são maiores para extraí-lo do que água apesar de ser menos útil
+      - Condições técnicas de produção e da distribuição determinam a forma como o excedente é distribuído
+      - Quantidades produzidas tem que pagar estes preços de produção.
+        Não é relevante os motivos/utilidade para gerar essa demanda
+      - Adequa-se a produção à quem tem dinheiro para pagar.
+        - Exemplo: Todos podem ter uma demanda (potencial) por bens de luxo, mas somente poucos podem pagar por este bem a preços que tornam essa produção rentável.
+    - Neoclássicos: Nada impõe que o diamante não é útil. Além disso, a dotação relativo dos fatores é diferente.
+      - Existe um leilão de uma quantidade fixa
+  - Em resumo, a teoria dos preços relativos dependem necessariamente da teoria da *distribuição*
+
+* Sraffa antes de 1960
+:PROPERTIES:
+:ID:       9610fd16-ec5c-472c-9cb0-9c6222156e32
+:END:
+
+** Referências
+
+- Piero Sraffa, 1926 “The laws of returns under competitive conditions”, Economic Journal, Economic Journal, December , 1926
+- Piero Sraffa, 1931 “D2/4 Lecture Notes on the Advanced Theory of Value, 1928-31”, Trinity College, Cambridge
+- Saverio Fratini, 2016 “Sraffa on the Degeneration of the Notion of Cost” Centro Sraffa Working Papers, n. 21, August 2016
+- Pierangelo Garegnani, 2005 "On a turning point in Sraffa's theoretical and interpretative position in the late 1920s ," European Journal of the History of Economic Thought, , vol. 12(3), pages 453-492, September.
+
+** Equilíbrio geral e parcial
+
+- Em um modelo de equilíbrio geral, a demanda de um bem depende da demanda dos outros bens também
+  - Dominância diagonal :: A demanda de um bem depender principalmente do próprio preço
+    - Achava-se que era suficiente supor dominância diagonal para poder existir um equilíbrio *parcial*
+    - Atualmente, chama-se de axioma fraco das preferências reveladas (ou algo próximo disso)
+    - Supõe-se que não há problemas no equilíbrio geral
+  - No entanto, o aumento do preço relativo de um bem não implica necessariamente que o a demanda de outro bem irá aumentar.
+    Isso porque é possível que possa afetar o custo de outro bem.
+    - Em um modelo de equilíbrio parcial, na teoria neoclássica, há efeito substituição e renda.
+      No entanto, em um modelo de equilíbrio *geral* (em que todos os que consomem necessariamente produzem algo), a renda de um agente também depende do que este agente produz.
+      - Em equilíbrio geral, o efeito renda pode ter qualquer efeito
+
+** Curva de oferta de longo prazo de concorrência perfeita
+
+Em equilíbrio parcial, Sraffa concluiu que a curva de oferta de longo prazo (em concorrência perfeita) é horizontal e não *positivamente* inclinada.
+- O custo é crescente dado um aumento da demanda uma vez que o estoque de capital (no curto prazo) é dado
+  - Retorno decrescente
+- No longo prazo, o estoque de capital não é mais constante.
+  Portanto, os custos são constantes (para um setor individual).
+- Para ter como resultado inequívoco que o aumento dos custos de fatores de setor só vai afetá-lo se supor que estes fatores são específicos
+- Se houver retornos crescentes (e, por consequência custos decrescentes), haverá monopólio no longo prazo
+  - A forma que Marshall superou essa questão é supor que *ao nível da firma* não há retornos de escala
+    - Os retornos crescentes são *externos* (externalidades) à firma.
+      Quando as empresas, de modo geral, aumentam a produção (por conta da indivisibilidade), haverá retornos crescentes.
+      - _Exemplo:_ Quanto mais firmas utilizam um trem, maior será a economia
+    - Sraffa afirma que essa alternativa é mais limitada
+      - Pode existir economias de escala externas às empresas e ao *setor*
+      - _Exemplo:_ Se outros setores usarem o mesmo trem, poderiam ser beneficiadas. Para a solução de Marshall ser válida, precisaria ser externa à firma e *interna* ao setor.
+- A curva de longo prazo ser horizontal não implica preços deixarem de refletir escassez relativa
+  - O motivo do porque isso ocorre na teoria neoclássica é que a dotação *total* (de equilíbrio geral) é limitada
+  - A curva de longo prazo geral da economia é *positivamente* inclinada
+- Se, em equilíbrio parcial, a curva de oferta é horizontal no longo prazo, a demanda determina a produção e a oferta determina os custos.
+- Para conciliar custos decrescentes para a empresa sem incorrer em monopólio, Sraffa (1926) propõe *concorrência imperfeita* para reabilitar a teoria de equilíbrio parcial
+
+** Equilíbrio parcial e predominância da teoria Marshalliana
+
+- Houve uma certa noção de que o instrumental proposto por Marshall era uma forma neutra de se avaliar mercados isolados
+- Sraffa passou a ser mais relevante porque era uma forma de tornar a saída de Marshall mais realista
+- Posteriormente, Sraffa (1930) propõe que a teoria Marshalliana deveria ser abandonada
+  - Concorrência imperfeita é insuficiente para incluir realismo a essa teoria
+
+** Curva de demanda negativamente inclinada e a curva de demanda quebrada
+
+- A demanda de um bem depende da reação dos concorrentes.
+  Se não reagirem a uma redução do preço, será elástica; se reagirem será inelástica em relação à quantidade.
+- Uma forma de resolver esse problema poderia ser via teoria dos jogos, mas não consegui-se
+  - Isso seria para encontrar em que momento a curva de demanda seria quebrada
+- O problema, portanto, não é a curva de demanda de mercado, mas sim a curva de demanda da *firma*
+  - A demanda de cada firma depende da reação de cada um dos concorrentes
+  - Alguns autores propuseram que poderia existir um cartel colusivo
+  - Noção de concorrência neoclássica enquanto dependente do *número de firmas*
+    - Não é razoável, no entanto, supor que o número de firmas é fixo
+  - Existe um elemento de *indeterminação* na teoria de _organização industrial_ em que a curva de demanda da firma é subjetiva
+
+
+** Preço limite e renda diferencial
+:PROPERTIES:
+:ID:       95c70823-73fa-4bcd-90bd-ba0d49d8b0c5
+:END:
+
+
+- A renda (lucro) de determinado agente é dado pelo entrante potencial
+- O lucro extra-normal se dá não porque o preço deste produto é elevado, mas sim pelo custos (diferenciais) do produtor inframarginal é mais elevado
+- Aumentar os preços induziria aumentar a entrada de concorrentes; mas uma vez definido o preço pelo produtor inframarginal, os lucros do produtor com a técnica dominante será maior
+  - Mobilidade de capitais pode significar tanto mais firmas entrarem em determinado setor quanto capacidade de replicar a técnica superior.
+  - _Exemplo:_ Demandante de um produto é indiferente se foi produzido com custos maiores ou não, mas toma a decisão em função do preço
+    - O preço é alto porque os custos dos rivais é mais elevado e não os custos são elevados porque o preço é mais alto
+    - Exemplo de Ricardo sobre renda da terra e preços
+    - O que é relevante para determinar a margem de lucro são os custos e não os preços
+- Alguns autores, sobretudo Kaleckianos, atribuem que a teoria do valor deixa de ser válida na medida que o capitalisto tornou-se mais desenvolvido (monopolista)
+
+** Rumo a uma teoria objetiva dos preços relativos e custos de produção
+
+- Sraffa percebeu que poderia apresentar os custos de produção a partir de uma medida física, sem precisar utilizar alguma forma subjetiva.
+- Parte dessa mudança é a percepção de que o custo pode ser material (matéria-prima, bens salários) e não subjetivo (relacionado a sacrifício)
+
+* Produção de mercadorias por meio de mercadorias: determinação da taxa de lucro e preços relativos em sistemas de capital circulante
+:PROPERTIES:
+:ID:       8149d38f-b940-4d80-9a13-ebf1cc7fc2cb
+:END:
+
+
+* A explicação monetária da distribuição
+:PROPERTIES:
+:ID:       9b80fea3-18f7-4b5f-88b9-7905f61cbff3
+:END:
+
+* Concorrência e gravitação
+
+
+* Renda
+:PROPERTIES:
+:ID:       237ef9ec-3dfc-4814-946a-9f471f29f4cc
+:END:
+
+* Produção conjunta e capital fixo em Sraffa
+:PROPERTIES:
+:ID:       2d5e92fb-82b2-49f4-aea8-425a9ff157d4
+:END:
+
+* Fisiocratas & Smith
+:PROPERTIES:
+:ID:       2e53f53c-53ec-4a68-8e03-a4b752d3de72
+:END:
+
+* Ricardo
+:PROPERTIES:
+:ID:       00f9ac43-0729-4258-8cb0-1876c2cb50a7
+:END:
+
+* Mercadoria padrão
+:PROPERTIES:
+:ID:       8ea0b1ce-b7fc-4fd7-bd7c-93944168301e
+:END:
+
+* Marx depois de Sraffa
+:PROPERTIES:
+:ID:       a37fd324-12f2-4814-a90b-9093034ffa75
+:END:

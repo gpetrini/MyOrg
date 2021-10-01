@@ -13,6 +13,9 @@ https://i.pinimg.com/originals/fd/de/23/fdde2369da2feeaa95a469b0ff1dd3f5.gif
 :ID:       257e67c4-ac7c-489b-b4f3-8420f4b0a5e4
 :END:
 
+** TODO Responder dúvida André :PED:
+
+** TODO Criar atividade CE472 :PED:
 * Writing inbox
 ** TODO [#A] Super ABM Introduction draft
 ** TODO [#A] FISH [[https://voxeu.org/article/what-drives-house-prices-some-lessons-literature][What drives house prices: Lessons from the literature]]
@@ -29,6 +32,8 @@ https://i.pinimg.com/originals/fd/de/23/fdde2369da2feeaa95a469b0ff1dd3f5.gif
 * News Inbox
 ** <2021-09-22 qua> [[https://voxeu.org/article/flattening-curve-pandemic-induced-revaluation-urban-real-estate][Flattening the curve: Pandemic-induced revaluation of urban real estate | VOX...]] :HouseSupply:PandemicRelated:
 * Reading Inbox
+** <2021-09-29 qua> [[https://www.nber.org/papers/w15573][Lessons from the Great American Real Estate Boom and Bust of the 1920s | NBER]] :AssetBubbles:HousingBubbles:Comparasion:GreatRecession:GreatDepression:
+** <2021-09-29 qua> [[https://www.tandfonline.com/doi/abs/10.1080/14036096.2020.1758204][Towards a Typology of Housing Price Bubbles: A Literature Review: Housing, Th...]] :AssetBubbles:HousingBubbles:ReviewOfLiterature:Typology:
 * Fleeting notes
 ** WAIT [[https://ag91.github.io/blog/2021/07/25/org-roam-and-nyxt-taking-zettelkasten-notes-from-the-web/][Nyxt and org-roam]]
 ** WAIT https://texample.net/tikz/examples/is-lm-diagram/
@@ -40,3 +45,4 @@ https://i.pinimg.com/originals/fd/de/23/fdde2369da2feeaa95a469b0ff1dd3f5.gif
 ** WAIT https://www.reddit.com/r/orgmode/comments/pw0z7k/orgcite_with_orgexport/?utm_medium=android_app&utm_source=share
 ** WAIT https://systemcrafters.net/publishing-websites-with-org-mode/building-the-site/
 ** WAIT https://asjadnaqvi.medium.com/
+** WAIT git submodules
