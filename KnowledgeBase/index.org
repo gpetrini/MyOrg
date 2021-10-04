@@ -52,6 +52,10 @@ It is useful to separate literature notes from permanent notes. Literature notes
 
 ** Org-mode
 
+** Configs
+
+- [[https://emacs.zeef.com/ehartc][Gallery with usefull packages list]]
+
 * Linux
 
 * Academia-related

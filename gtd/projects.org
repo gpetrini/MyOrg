@@ -92,22 +92,25 @@ How to adapt config for new computer?
 * STRT CE472 2021
 ** STRT Escolher questões para corrigir macro 2
 
-*** Questões selecionadas
-
-- 1
-- 2
-- 7
-- 9
-- 10
-- 11
-- 13
-- 15
-- 17
-- 18
-
 *** WAIT Enviar ao Mariano
 
 ** TODO Corrigir lista 02
+
+*** DONE Grupo 01
+CLOSED: [2021-10-04 seg 14:58]
+*** DONE Grupo 02
+CLOSED: [2021-10-04 seg 15:33]
+*** DONE Grupo 07
+CLOSED: [2021-10-04 seg 16:27]
+*** DONE Grupo 09
+CLOSED: [2021-10-04 seg 17:55]
+*** DONE Grupo 10
+CLOSED: [2021-10-04 seg 17:56]
+*** TODO Grupo 11
+*** TODO Grupo 13
+*** TODO Grupo 15
+*** TODO Grupo 17
+*** TODO Grupo 18
 ** TODO Aula capítulo 20
 * STRT Dissertation group discussion
 ** TODO Review Mason paper
