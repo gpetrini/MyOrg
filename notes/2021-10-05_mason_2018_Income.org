@@ -1,0 +1,192 @@
+:PROPERTIES:
+:ID: 20211005T101910
+:CAPTURED: [2021-10-05 10:19:10]
+:ROAM_REFS: cite:mason_2018_Income
+:END:
+#+TITLE: mason_2018_Income: Income Distribution, Household Debt, and Aggregate Demand: a Critical Assessment - (2018, Levy Institute Working Paper No 901)
+#+filetags: :HousePrices:AssetBubble:Household_debt:Financial_crisis:Personal_Income_Distribution:Financial_Instability_Hypothesis:
+Time-stamp: 2021-10-05
+#+OPTIONS: toc:nil num:nil
+#+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
+#+OPTIONS: num:nil ^:{} toc:nil
+#+INCLUDE: '../header.org'
+
+
+* Backlinks
+
+
+[[id:96ccdc2f-bdc7-4c3b-8d70-401493fddfce][2021-02-13-15-53-39-mandarinoWorkersDebtfinancedConsumption2020a.org]]
+
+[[id:140b0945-65fb-431e-a087-22b140230539][A distribuição pessoal da renda na macroeconomia liderada pela demanda - Laura Carvalho (USP)]]
+
+* FISH-5SS
+
+
+|---------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <40>                                        | <50>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| *Background*                                  | During the period which led to the GFC, there was a spike in household debt relative to its income. Usually, the result is attributed to a shift towards a more unequal income distribution. Accordingly to authors who state this link, households' debt increases in order to keep up with the joneses.                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| *Supporting Ideas*                            | Discuss the consumption-smooth hypothesis in which credit is used as an intertemporal source of funding.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| *Purpose*                                     | Answer the following questions (retrieved from abstract)How much household borrowing finances consumption spending? How much has monetary consumption spending by households increased? How much of the rise in household debt-income ratios is attributable to increased borrowing? How is household debt distributed by income? And how has the distribution of consumption spending changed relative to the distribution of income?:                                                                                                                                                                                                                                                                                        |
+| *Originality/value (Contribution)*            | Clarify the relation between household consumption, debt and what are the drivers of the increasing indebtedness and in which income percentile this is more relevant.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| *Relevance*                                   | Evaluates what describes the evolution of household indebtedness and if there is empirical support for a Duesenberry-like relative consumption theory which is a common-place for heterodox interpretations for the GFC. Additionally, this article criticizes the orthodox theory of permanent income.                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| *Design/methodology/approach*                 | Causal narratives for the US after the WWII. No econometric estimation. The author uses some counterfactual to base his arguments.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| *Results*                                     | 1. Household debt is mainly driven by asset acquisition; 2. Interest rates and growth rates are the most relevant variables for HH debt-income ratios; 3. Household consumption is flat since the 80s; 4. Debt is holden mainly by the top of the distribution; and 5. Consumption inequality is tracked by income inequality.                                                                                                                                                                                                                                                                                                                                                                                                 |
+| *(Interesting) Findings*                      | Inputed and social consumption is included in household spending in national accounts. Wealth/GDP ratio in the US is most explained by capital gain and not by accumulation of wealth via savings.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| *Research limitations/implications (Critics)* | Probably does not track the top of distribution properly since some of the most rich households finance their spending using cash (not credit). There is also a qualification regarding credit consumption: credit-finance consumption does not necessarily mean increase in debt if households pay all the performing loans at once.                                                                                                                                                                                                                                                                                                                                                                                          |
+| *Uncategorized stuff*                         | Emphasizes the relevance of houses as collateral (as ATMs) used to access more credit. The author also argue that house price increase tended to remove some households out of the market, offsetting the loosing of lending standards. Economic savings used in national accounts is different from financial savings (which affects chances in households balance sheet). Cynamon and Fazzari (2015) paper does not have problems regarding where the income distribution is divided to analyze the indebtedness evolution. If more unequal income distribution is associated with rising debt, it occurred in luxury consumption among the rich  and not by debt-financed consumption among the bottom of the distribution. |
+| *5SS*                                         | The distribution-debt-income nexus is valid only during the housing boom episode.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+|---------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+* Specifics comments
+
+** Household expansions (in national accounts) that do not involve monetary outlays
+
+- Households include nonprofits
+- Homeowners are considered to rent to themselves
+- Third-party health insurance payments are considered household consumption
+- There are large imputed financial services
+- Pension funds are considered to be directly owned by their beneficiaries
+
+* PDF extraction
+
+
+
+"I conclude that the distribution-debt-demand story may have some validity if limited to the housing boom period of 2002-07, but does not fit the longer-term rise in household debt since 1980." (Mason 2018:2)
+
+"Debt-financed asset acquisition may or may not contribute to aggregate demand, but it does not make sense to think of it in terms of tradeoffs between current future consumption or as a substitute for consumption spending financed out of current income." (Mason 2018:4)
+
+"Changes in household debt-income ratios are driven mainly by the difference between interest and growth rates." (Mason 2018:4)
+
+"Household consumption spending has been flat since 1980" (Mason 2018:4)
+
+"but since they do not involve any money outlays by households it is logically impossible for them to affect household balance sheets." (Mason 2018:5)
+
+"Most debt is owed by households near the top of the income distribution" (Mason 2018:5)
+
+"the distribution of consumption spending has more or less tracked the distribution of income." (Mason 2018:5)
+
+"Stagnant incomes in the lower part of the distribution have not been compensated for by increased borrowing, but have simply led to stagnant living standards." (Mason 2018:5)
+
+"Rising household debt-income ratios are primarily due to the secular increase in interest rates" (Mason 2018:5)
+
+"And consumption demand has been supported by a mix of higher consumption spending among high-income households, and the" (Mason 2018:5)
+
+"increasing volume of social spending classified as private consumption in the national accounts." (Mason 2018:6)
+
+"For the housing boom period of 2002-07, the distribution-debt-demand story is more plausible." (Mason 2018:6)
+
+
+"Incurring debt then is equivalent to negative saving, and accumulating assets is equivalent to positive saving." (Mason 2018:7)
+
+"debt is mainly incurred to finance assets, not to finance current expenditure." (Mason 2018:7)
+
+"It finances assets that are strongly linked to the household's reproduction as a social and wage-earning unit." (Mason 2018:7)
+
+"typically involve a reduction in current consumption." (Mason 2018:8)
+
+"Since the most important form of household borrowing—the mortgage—involves both acquisition of an asset and a substantial down payment out of current income, higher household debt normally implies higher household saving." (Mason 2018:8)
+
+"For these reasons, household asset and debt positions normally expand together." (Mason 2018:8)
+
+"Consumption loans account for only 4 percent of household debt (See table 1)." (Mason 2018:8)
+
+"This positive relationship between debt and assets is present whether or not one controls for income." (Mason 2018:9)
+
+"On the contrary, since declining income makes households less able to afford the upfront costs of asset ownership, a fall in income will normally be associated with less borrowing, not more." (Mason 2018:9)
+
+"In particular, it is often claimed that during the housing boom period of the 2000s households "used their homes as ATMs," with cash-out refinancings or second mortgages generating funds for other purpose" (Mason 2018:9)
+
+"So the small fraction of household debt that takes the form of consumption loans is not necessarily informative about the extent to which consumption is financed by debt." (Mason 2018:9)
+
+"Note that the national accounts class all three of these uses as residential investment by households," (Mason 2018:10)
+
+"All else equal, this will produce some combination of higher mortgage debt and lower equity, without freeing any funds for consumption." (Mason 2018:10)
+
+"A closer look suggests that there were two distinct phases to the housing boom (see figure 1). In the first period, 2002-04, the large increase in funds flowing to households through mortgages was mainly due to equity extraction—annual net cash from refinancings, junior liens, and homeequity-based revolving credit balances increased by a total of 2.5 percent of GDP, while new mortgage lending rose by only 1 percent of GDP." (Mason 2018:12)
+
+"Meanwhile, on the uses side, new housing investment and brokers' fees and commissions, not surprisingly, rose more in the second period." (Mason 2018:12)
+
+"n this nnarrow sensee, housing crredit has nevver finan ced consump tion. On th e other hand , it is true thhat the net fllow of fundss to househollds throu gh housing ce became substantially more ppositive duriing the earlyy 2000s." (Mason 2018:13)
+
+"housing credit leads to increased consumption is prima facie plausible for this period" (Mason 2018:14)
+
+"About half the equity withdrawals in this period were, in effect, paying for the costs of the bubble itself—increased interest on past loans and transaction costs associated with the faster pace of sales" (Mason 2018:14)
+
+"key point here is how exceptional the housing bubble period was. During this period, it is true, there was a substantial increase in mortgage borrowing, which financed higher residential investment and, perhaps higher consumption spending as well. But this is a period of less than five years, and it was more than reversed in the years following the end of the boom." (Mason 2018:14)
+
+"Overall, we can say household borrow ing, it is plausible that during the 22000s, some significant ppart of the inncrease in fun ds flowing sehold s through housing creddit was availaable to finannce consumpption." (Mason 2018:15)
+
+
+"So if the goal is to explain the difference in household debt growth in the decades before and after 1980, the answer cannot involve any change in borrowing behavior." (Mason 2018:18)
+
+"combination of higher interest payments" (Mason 2018:18)
+
+"lower inflation" (Mason 2018:18)
+
+"The question is not why households borrowed more after 1980; they did not. The question is why the operation of the monetary system increased the value of already-" (Mason 2018:18)
+
+"incurred debt much more rapidly after 1980 than before." (Mason 2018:19)
+
+"The main message of the graph is that household borrowing has made no contribution to the long-term growth of household debt; if interest rates, inflation, and growth had been constant, then the actual pattern of household borrowing would have led to roughly stable debt-income ratios" (Mason 2018:19)
+
+
+"The increase in measured consumption spending as a share of GDP is entirely the result of spending by third parties—mainly government, but also employers—that is counted as household spending in the national accounts." (Mason 2018:21)
+
+"The economic saving used in the national accounts is distinct from the financial saving that results in changes in the household balance sheet." (Mason 2018:27)
+
+"Note that while these flows do not involve any monetary outlay by households and thus cannot affect household balance sheets or debt, they do all contribute to measured household saving." (Mason 2018:28)
+
+"The fact that adjustment can take place on the asset as well as the liability side is another reason there is no necessary connection between saving and debt growth." (Mason 2018:29)
+
+"In particular, the growth in recent decades in wealth relative to GDP in the US and elsewhere is explained mainly by capital gains on existing assets, not by faster accumulation of wealth via saving (Knibbe 2014; Naidu 2017)." (Mason 2018:29)
+
+"Most stories that link rising debt to increased income inequality imply that the largest rises in debt should be found lower down the income distribution" (Mason 2018:30)
+
+"valuating this claim depends, of course, on where the distribution is divided." (Mason 2018:30)
+
+[NOTE] This justify why using ABM model to discuss households indebtedness. (note on p.30)
+
+
+"Concretely, the rise in housing prices during the boom period tended to price lower-income households out of the housing market, offsetting the loosening of lending standards." (Mason 2018:31)
+
+"This is not surprising, when we recall that debt is mainly incurred to finance asset ownership." (Mason 2018:31)
+
+"First, household debt is mainly found in the upper-middle part of the income distribution. The majority of households in the bottom quintile report no debt, and this has been true of every year in the survey." (Mason 2018:33)
+
+"This is the natural result of the point stressed in section 2.1, that debt is incurred to finance asset ownership, not current expenditure." (Mason 2018:33)
+
+"Lack of assets among lower-income households is in part because they cannot get credit for these purchases; perhaps more important, all these purchases also involve significant out-of-pocket costs (down payments and so on)" (Mason 2018:33)
+
+"It is a less serious problem for stories like Cynamon and Fazzari (2015), which focus on the division between the top few percentiles and the bulk of the population." (Mason 2018:34)
+
+"Unlike the rest of the 1983-2013 period, this six-year stretch saw both a large increase in aggregate household debt and a downward shift in its distribution." (Mason 2018:34)
+
+"Finally, as discussed in section 3, there was no corresponding increase in aggregate demand from the household sector during this period (Mason and Jayadev 2015)." (Mason 2018:34)
+
+"The natural interpretation of these facts is that the mid-2000s' rise in household debt is not directly linked to income distribution but rather is explained by the housing bubble. Higher mortgage borrowing was both required and enabled by the rise in the prices of existing houses; increased mortgage borrowing in turn sustained the price rise (Mian and Sufi 2011)" (Mason 2018:34)
+
+"central claim in the debt-distribution-demand story is that lower-income households borrowed in order to maintain their expected standards of consumption, and/or to emulate the consumption of higher-income households. This implies that inequality in consumption should have increased by less than inequality in incomes." (Mason 2018:35)
+
+"Households normally report only cash outlays for consumption goods in the current period as consumption." (Mason 2018:36)
+
+"Most of these papers have found that changes in the distribution of consumption spending across income" (Mason 2018:36)
+
+"groups have generally tracked changes in the distribution of income." (Mason 2018:37)
+
+"If a mechanism is needed to explain rising consumption demand in the face of more unequal income in the period before 2007, it should focus on luxury consumption among the rich— perhaps driven by a wealth effect from capital gains—rather than on debt-financed consumption among the bottom 95 percent." (Mason 2018:38)
+
+"The great majority of household debt is incurred to finance asset positions, not current consumption." (Mason 2018:40)
+
+"Consumption inequality appears to have increased in line with income inequality." (Mason 2018:41)
+
+"he debt-distribution-demand story is most plausible if it is limited to the 2000s housing boom, and to the top third of the income distribution. It is not plausible if applied to the long-term rise in debt, or to the income distribution as a whole." (Mason 2018:41)
+
+Main message of the paper. (note on p.41)
+
+"We cannot analyze balance sheet variables as if they simply recorded income and expenditure flows. As a corollary to this, we should keep in mind that debt is used mainly to finance assets; consumption loans are much more important in orthodox theory than in the real world." (Mason 2018:42)
+
+"With respect to the long-term rise in household debt: This is a monetary phenomenon. Fundamentally, it is the result of higher interest rates and lower real income growth and inflation." (Mason 2018:42)
+
+"An example of this is Germany, which has both the lowest levels of household debt and the lowest levels of household wealth in the euro area (European Central Bank 2013)" (Mason 2018:43)
+
+Interesting (note on p.43)

@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       4d4959f4-a69b-4eef-9b02-cfa25dab5780
+:END:
+#+title: Expired release file
+#+filetags: :Linux:Debian:
+
+#+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
+#+OPTIONS: num:nil ^:{} toc:nil
+#+INCLUDE: '../header.org'
+
+If there is a package that is not possible to update due to expired release file (outdated release key), just run the following command to get others package update until the problem is solved
+
+#+begin_example sh
+sudo apt -o Acquire::Check-Valid-Until=false update
+#+end_example

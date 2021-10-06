@@ -38,8 +38,16 @@ It is useful to separate literature notes from permanent notes. Literature notes
 
 * LaTeX
 
+** General
+
 - [[id:2b461a80-7884-4cbc-8d00-62f0cd6719b0][Word count latex]]
+
+** Tikz
+
 - [[https://sites.google.com/site/kochiuyu/Tikz][Tikz Economics cookbooks]]
+- [[https://texample.net/tikz/examples/is-lm-diagram/][IS-LM diagram]]
+- [[https://texample.net/tikz/examples/j-curve/][J-curve]]
+- [[https://jackypacky.github.io/pgf-econ-graphs/guide.pdf][Economics PGF plots manual]]
 
 * Programming
 
@@ -47,16 +55,34 @@ It is useful to separate literature notes from permanent notes. Literature notes
 
 - [[https://github.com/scunning1975/causal-inference-class/blob/master/Helpful%20stuff/CodeAndData.pdf][Code and Data for the Social Sciences: A practiner's guide]]
 
+** Stata
+
+- [[https://asjadnaqvi.medium.com/][Stata Guide]]
 
 * Emacs
 
 ** Org-mode
 
+*** Org-cite
+
+- [[https://www.reddit.com/r/orgmode/comments/pw0z7k/orgcite_with_orgexport/?utm_medium=android_app&utm_source=share][Reddit thread about org-cite and org-export]]
+
+
+*** Ox-publish
+
+- [[https://systemcrafters.net/publishing-websites-with-org-mode/building-the-site/][System crafters slide show about how to publish and configure a site using org]]
+
 ** Configs
 
 - [[https://emacs.zeef.com/ehartc][Gallery with usefull packages list]]
 
-* Linux
+* Command-line related
+
+** Apt
+
+- [[id:4d4959f4-a69b-4eef-9b02-cfa25dab5780][Expired release file]]
+
+** git
 
 * Academia-related
 
