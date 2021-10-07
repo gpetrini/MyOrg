@@ -16,15 +16,11 @@ https://i.pinimg.com/originals/fd/de/23/fdde2369da2feeaa95a469b0ff1dd3f5.gif
 
 ** TODO Fix nvidia-driver ([[https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=994860][bugreport]])
 ** TODO Curso protocolo de segurança Moodle
-** TODO Conferir sistema de mongrafias e validar propostas
-*** DONE Lorena
-CLOSED: [2021-10-06 qua 18:34]
-*** WAIT Felipe
 ** TODO Comprar webcam
 ** TODO Comprar suporte gabinete
 
 - Conferindo peso suportado
-
+** TODO [[https://1drv.ms/u/s!AhhdMDsRteCzwEIDFAlWFdb145HV?e=OYUs4m][Pasta curso valor e preçooos - UFRJ]]
 * Writing inbox
 ** TODO [#A] Super ABM Introduction draft
 ** TODO [#A] FISH [[https://voxeu.org/article/what-drives-house-prices-some-lessons-literature][What drives house prices: Lessons from the literature]]

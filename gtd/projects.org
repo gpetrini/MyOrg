@@ -90,27 +90,6 @@ How to adapt config for new computer?
 
 
 * STRT CE472 2021
-** STRT Escolher questões para corrigir macro 2
-
-*** WAIT Enviar ao Mariano
-
-** TODO Corrigir lista 02
-
-*** DONE Grupo 01
-CLOSED: [2021-10-04 seg 14:58]
-*** DONE Grupo 02
-CLOSED: [2021-10-04 seg 15:33]
-*** DONE Grupo 07
-CLOSED: [2021-10-04 seg 16:27]
-*** DONE Grupo 09
-CLOSED: [2021-10-04 seg 17:55]
-*** DONE Grupo 10
-CLOSED: [2021-10-04 seg 17:56]
-*** TODO Grupo 11
-*** TODO Grupo 13
-*** TODO Grupo 15
-*** TODO Grupo 17
-*** TODO Grupo 18
 ** TODO Aula capítulo 20
 * STRT Dissertation group discussion
 ** TODO Review Mason paper
@@ -119,14 +98,6 @@ CLOSED: [2021-10-04 seg 17:56]
 
 *Objetivo:* Como discutir ciclo a luz do supermultiplicador?
 
-** TODO Implementations TODOs
-
-
-
-*** NO Estimate real values
-CLOSED: [2021-10-01 sex 11:24]
-
-*** TODO Revome diff of alternative capacity utilization with trend
 
 ** TODO Response steps
 
@@ -134,17 +105,24 @@ CLOSED: [2021-10-01 sex 11:24]
 
 **** TODO Alternative capacity utilization index
 
-*** TODO Nominal Cycle
+*** STRT Nominal Cycle
+**** TODO Alternative capacity utilization index
 
-*** TODO Nominal no filter
 
-*** TODO Real Trend
+*** STRT Nominal no filter
+**** TODO Alternative capacity utilization index
 
-*** TODO Real Cycle
 
-*** TODO Real no filter
+*** NO Real Trend
+CLOSED: [2021-10-07 qui 14:34]
 
-** TODO Check Nikiforos specifications
+*** NO Real Cycle
+CLOSED: [2021-10-07 qui 14:34]
+
+*** NO Real no filter
+CLOSED: [2021-10-07 qui 14:34]
+
+*** TODO Check Nikiforos specifications
 
 - Benchmark model is in levels or in first differente?
 - Investment share has a unit root?
@@ -169,7 +147,6 @@ CLOSED: [2021-10-01 sex 11:24]
   + Demanda primeiro e capacidade depois
 - Nikiforos com IRF estatisticamente zero
 
-** TODO Testar impulso resposta
 
 ** TODO Supermultiplicador e ciclo
 

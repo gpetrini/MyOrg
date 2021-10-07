@@ -51,7 +51,7 @@ O projeto de pesquisa proposto a partir da retomada da abordagem clássica do ex
       - Existe um leilão de uma quantidade fixa
   - Em resumo, a teoria dos preços relativos dependem necessariamente da teoria da *distribuição*
 
-* Sraffa antes de 1960
+* Sraffa antes de 1960 <2021-09-30 qui> e <2021-10-07 qui>
 :PROPERTIES:
 :ID:       9610fd16-ec5c-472c-9cb0-9c6222156e32
 :END:
@@ -140,11 +140,88 @@ Em equilíbrio parcial, Sraffa concluiu que a curva de oferta de longo prazo (em
 - Sraffa percebeu que poderia apresentar os custos de produção a partir de uma medida física, sem precisar utilizar alguma forma subjetiva.
 - Parte dessa mudança é a percepção de que o custo pode ser material (matéria-prima, bens salários) e não subjetivo (relacionado a sacrifício)
 
-* Produção de mercadorias por meio de mercadorias: determinação da taxa de lucro e preços relativos em sistemas de capital circulante
+
+** Implicações desta discussão para as teorias de crescimento liderados pela demanda
+
+- Não motivos para que --- dada a técnica produtiva relevante --- os retornos da produção não sejam constantes
+  - Retornos decrescentes de escala ocorreriam na presença de "regresso técnico" ou que a está sendo usada uma técnica produtiva pouco usual (má especificação dos insumos)
+  - Já retornos crescentes são bastante comuns uma vez que
+    - Existe indivisibilidade
+- Retomada aos clássicos:
+  - Definição dos prazos teóricos:
+    - Curto prazo é aquele que em que o preço que prevalesce é o de mercado
+    - Longo prazo é aquele em que prevalesce o preço normal que refletem os custos de produção
+      - Isso também ocorre na teoria neoclássica. Portanto, a diferença se dá principalmente no mercado de fatores e seus custos.
+        - No entanto, Sraffa conclui que não existe equilíbrio parcial dos fatores e, portanto, seria necessário lançar mão de um modelo de equilíbrio parcial.
+        - Para compreender os determinantes dos custos, é preciso compreender como se dá a distribuição do excedente.
+  - Não há como especificar um preço de equilíbrio uma vez que não é possível especificar curvas de oferta e demanda
+    - Exemplo de mercados perecíveis e possibilidade de armazenamento
+    - Pode existir bolhas
+      - Bolhas a partir de bens produzidos (que possuem custos de produção) tendem a estourar uma vez que haverá um excesso de produção
+
+
+** Resumo
+
+*** Críticas a teoria marshaliana do equilíbrio parcial
+
+- Curva de oferta de longo prazo de concorrência perfeita em equilíbrio parcial é horizontal
+- Custos crescentes:
+  - Incompatível com equilíbrio parcial e com equilíbrio de longo prazo
+  - Preço do fator: Incompatível com equilíbrio papcial
+  - Coeficientes técnicos: Incompatível com equilíbrio de longo prazo
+- Custos decrescentes:
+  - Economias internas à firma, mas externas ao setor: incompatível com concorrência perfeita
+  - Economias externa ao mercado: incompatível com equilíbrio parical
+- Concorrência imperfeita: problema da curva de demanda da firma negativamente inclinada
+  - Forma de conciliar os problemas anteriores com a teoria neoclássica
+  - No limite, a teoria neoclássica requeria uma curva de custos constantes.
+    Um dos motivos pelo qual Sraffa abandona a teoria marshaliana é tanto a subjetividade dos custos quanto a imposição de determinado comportamento dos custos (constantes).
+    - Portanto, neste momento Sraffa rompe com a teoria neoclássica da oferta. Adiante romperá com a demanda.
+
+*** As "primeiras equações" e mudança de interpretação da teoria do valor
+
+**** Dois tipos de teoria do valor
+- Ideia de dois tipos de teoria do valor: Trabalho ou utilidade
+- Explicação dos preços relativos das mercadorias: equilíbrio parcial, custo de produção e retornos constantes
+
+**** TODO Mudanças ao final de 1927 e as primeiras equações (VER Slides)
+
+- As primeiras equações e o caminho para a produção
+
+*** Degeneração da noção de custo (VER Slides)
+
+- Fisiocratas:
+- Valor se torna simétrico: iguala a utilidade (demanda) ao sacrifício (custo)
+  - Em função desse caráter subjetivo, rejeita também o equilíbrio geral
+
+**** Importância do princípio da substituição
+
+*** Críticas externas à teoria marginalista em geral (Ver slide)
+
+- Curva de oferta de fatores
+  - Desutilidade marginal do trabalho
+  - Parcimônia
+- Curva de demanda por fatores
+  - Depende de suposições sobre as técnicas
+
+
+* Produção de mercadorias por meio de mercadorias: determinação da taxa de lucro e preços relativos em sistemas de capital circulante <2021-10-07 qui> e <2021-10-14 qui>
 :PROPERTIES:
 :ID:       8149d38f-b940-4d80-9a13-ebf1cc7fc2cb
 :END:
 
+** Sraffa e o livro
+
+*Projeto:* Crítica a abordagem marginalista
+
+
+** Um livro, dois gráficos
+
+
+1. Relação inversa entre salário real e taxa de lucro
+2. Relação complexa entre preços relativos e taxa de lucro
+   1. Na teoria neoclássica, como os preços relativos também dependiam da taxa de lucro, isso gerava inconsistências internas
+   2. Dificuldades de mensurar o excedente físico e, assim, calcular a taxa de lucro
 
 * A explicação monetária da distribuição
 :PROPERTIES:
