@@ -8,13 +8,104 @@
 #+ATTR_HTML: :alt MyOrg :title Projects :style float:left;margin-bottom:20px; :class banner
 https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
+** TODO Configuração desktop
+
+*** TODO Sincronizar repositórios
+
+**** TODO Doom
+
+**** TODO PhD
+
+**** TODO gps_abntex
+
+**** TODO Org
+
+**** TODO Pesquisas
+
+**** TODO pysolve3
+
+**** TODO mkks
+
+*** TODO Instalar emacs-snapshot
+
+**** TODO Instalar doom
+
+**** TODO Criar branch
+
+**** TODO Conferir pastas
+
+**** TODO Testar tabnine
+
+*** TODO Instalar latex
+
+**** TODO Detectar pacote abntex
+
+**** TODO Criar links simbólicos tese
+
+*** TODO Sistema e programas
+
+**** TODO Insync
+
+***** TODO Conferir potenciais problemas de conflito
+
+**** TODO Darcula theme
+
+**** TODO Onlyoffice
+
+**** TODO git
+
+***** TODO Como salvar senha
+
+**** TODO PDFtools
+
+**** TODO LSD
+
+**** TODO Zotero
+
+***** TODO Automatizar atualização arquivo bib
+
+**** TODO Spotify
+
+**** TODO Telegram
+
+**** TODO Flameshoot
+
+**** TODO Stata
+
+**** TODO Zoom
+
+**** TODO Skype
+
+**** TODO R
+
+**** TODO Python
+
+***** TODO pysolve3
+
+**** TODO Internet banking
+
+**** TODO Detectar duas memórias
+
+**** TODO Criar /opt/
+
+**** TODO Backup hdd externo
+
+**** TODO Pcloud
+
+**** TODO Stacer
+
+**** TODO Vim
+
+**** TODO Configurar imagemagick
+
+**** TODO Conferir driver amd
+
+
+**** TODO Extensões gnome
+
 * Emacs
 
 ** TODO Embed mathjax in css site
-
-** TODO Resolve relative path in config
-
-How to adapt config for new computer?
 
 ** TODO Adapt notes
 
@@ -22,11 +113,13 @@ How to adapt config for new computer?
 
 *** TODO Convert Rmds
 
-** TODO Add SETUPFILE in org-roam template
-
 ** TODO Add logos url in configs
 
 ** TODO Implement org-cite syntax
+
+** TODO Implement bibtex-actions
+
+*** TODO Fix pdf find like helm
 
 * TODO Dissertation's general settings [50%] :Dissertation:
 ** TODO Marcar qualificação

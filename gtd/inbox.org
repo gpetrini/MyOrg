@@ -21,6 +21,7 @@ https://i.pinimg.com/originals/fd/de/23/fdde2369da2feeaa95a469b0ff1dd3f5.gif
 
 - Conferindo peso suportado
 ** TODO [[https://1drv.ms/u/s!AhhdMDsRteCzwEIDFAlWFdb145HV?e=OYUs4m][Pasta curso valor e preçooos - UFRJ]]
+** TODO Add RSS this month in org
 * Writing inbox
 ** TODO [#A] Super ABM Introduction draft
 ** TODO [#A] FISH [[https://voxeu.org/article/what-drives-house-prices-some-lessons-literature][What drives house prices: Lessons from the literature]]
