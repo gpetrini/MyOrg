@@ -18,9 +18,6 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 **** TODO gps_abntex
 
-**** TODO Org
-
-**** TODO Pesquisas
 
 **** TODO pysolve3
 
@@ -28,7 +25,8 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 *** TODO Instalar emacs-snapshot
 
-**** TODO Instalar doom
+**** TODO Dicionário
+
 
 **** TODO Criar branch
 
@@ -48,15 +46,13 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 ***** TODO Conferir potenciais problemas de conflito
 
-**** TODO Darcula theme
 
 **** TODO Onlyoffice
 
 **** TODO git
 
-***** TODO Como salvar senha
+***** TODO Como não perder histórico de versão
 
-**** TODO PDFtools
 
 **** TODO LSD
 
@@ -64,9 +60,6 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 ***** TODO Automatizar atualização arquivo bib
 
-**** TODO Spotify
-
-**** TODO Telegram
 
 **** TODO Flameshoot
 
@@ -84,24 +77,20 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 **** TODO Internet banking
 
-**** TODO Detectar duas memórias
 
-**** TODO Criar /opt/
 
 **** TODO Backup hdd externo
 
 **** TODO Pcloud
 
-**** TODO Stacer
 
-**** TODO Vim
 
 **** TODO Configurar imagemagick
 
-**** TODO Conferir driver amd
 
+*** TODO Extensões gnome
 
-**** TODO Extensões gnome
+*** TODO fly-pie
 
 * Emacs
 
