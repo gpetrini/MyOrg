@@ -223,6 +223,133 @@ Em equilíbrio parcial, Sraffa concluiu que a curva de oferta de longo prazo (em
    1. Na teoria neoclássica, como os preços relativos também dependiam da taxa de lucro, isso gerava inconsistências internas
    2. Dificuldades de mensurar o excedente físico e, assim, calcular a taxa de lucro
 
+** "Autosuficiência" e viabilidade
+
+*** Produção de trigo por meio de trigo
+
+
+- Economia muito simples que produz um único bem ($X_{1}$) o utiliza como insumo (capital circulante) ($A_{11}$)
+  - Capital circulante não é sinônimo de consumo intermediário
+    - A diferença é que o capital circulante pode ser usado uma única vez enquanto o capital fixo pode ser reutilizado
+- É preciso que exista uma relação técnica ($a_{11}$) tecnicamente viável ($a_{11}<1$). No entanto, esta condição não é suficiente uma vez que é preciso remunerar o trabalho ($b_{1}\cdot l$). Portanto, há uma *condição social*: $a_{11}  + b_{1}\cdot l$
+- Excedente mede o produto líquido da economia
+  - Preços em Sraffa não garantem reposição uma vez quando se considera investimento líquido
+  - Os preços que Sraffa descreve reflete os coeficientes técnicos
+  - É o resíduo dos custos aproximados de repor a produção
+
+#+BEGIN_latex
+\begin{equation}
+A_{11}, L_{1} \to X_{1}
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+a_{11}, l_{1} \to 1
+\end{equation}
+#+END_latex
+
+Produzirá excedente se
+
+#+BEGIN_latex
+\begin{equation}
+a_{11} + b_{1}\cdot l_{1} < 1
+\end{equation}
+#+END_latex
+neste caso, será um excedente em trigo ou em trabalho.
+
+Por outro lado, será uma economia de subsistência se
+#+BEGIN_latex
+\begin{equation}
+a_{11} + b_{1}\cdot l_{1} = 1
+\end{equation}
+#+END_latex
+
+
+A forma de mensuração do excedente não é o mais relevante, mas sim a representação do sistema econômico.
+Dada uma técnica produtiva relevante e uma variável distributiva exógena, é possível indicar a existência do excedente.
+O núcleo da teoria do excedente é indicar os elementos em comuns dos autores que partem da noção de excedente.
+
+
+O excedente é uma condição necessária para:
+- Divisão social do trabalho
+- Acumulação de capital
+  - Excedente permite existência de investimento líquido
+  - Excedente é condição necessária, mas não suficiente
+- Estratificação social
+  - O que muda entre sistemas econômicos é a regra de divisão do excedente
+
+*** Produção a partir de dois insumos e sem excedente
+
+Sabendo os coeficientes técnicos (necessários), é possível obter os preços relativos sem precisar discutir formato de curvas de oferta e demanda.
+Para uma economia de subsistência em que o coeficiente $a_{ij}$ já inclui salários (coeficiente aumentado):
+
+#+BEGIN_latex
+\begin{equation}
+\begin{cases}
+a_{11}\cdot p_{1} + a_{12}\cdot p_{2} = p_{1}\\
+a_{21}\cdot p_{2} + a_{22}\cdot p_{2} = p_{2}
+\end{cases}
+\end{equation}
+#+END_latex
+
+
+Supondo que as relações técnicas são dadas, qual o preço relativo?
+Por simplificação, é possível supor que um dos preços é unitário:
+
+#+BEGIN_latex
+\begin{equation}
+p_{1} = 1
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+\frac{p_{2}}{p_{1}} = \frac{a_{12}}{1-a_{22}} = \frac{a_{21}}{1-a_{11}}
+\end{equation}
+#+END_latex
+A implicação é que um setor não é independente do outro.
+Por exemplo, supondo que o setor 2 remunera os trabalhadores a um salário mais alto.
+Para este setor, pode não haver problemas.
+No entanto, para o outro setor os custos de obter o produto produzido pelo setor 2 serão maiores.
+O preço relativo precisa ser igual ao necessário para garantir a reprodução do sistema.
+Os preços relativos são tal que tudo que o setor 2 não utilizou para a sua própria produção tem que ser suficiente para que o outro setor compre.
+Dessa forma, é uma teoria objetiva e material das relações de troca.
+Um sistema sem excedente não possui grau de liberdade.
+
+
+#+BEGIN_latex
+\begin{equation}
+\frac{p_{2}}{p_{1}} = \frac{\text{Bens setor precisa de outro}}{\text{Excedente fisico deste setor}}
+\end{equation}
+#+END_latex
+Para dois bens, os preços relativos refletem a interdependência física entre os setores.
+Para mais de dois bens, esta relação não é tão direta.
+
+** Produção com excedente
+
+Se existir excedente, os preços não refletem apenas relações de troca, mas também distribuí-lo.
+Nada garante que o excedente físico de um setor ficará contido nele.
+Em um sistema econômico em que o excedente é distribuído via preços relativos, não há nenhuma garantia para onde o excedente irá ser deslocado.
+Por exemplo, se o preço relativo do segundo setor for muito mais elevado, este setor irá se apropriar mais do excedente uma vez que os custos dos insumos deste segundo setor para o primeiro setor será maior.
+
+Para a discussão da produtividade, é preciso incluir a discussão dos preços relativos.
+Se um setor for mais produtivo em termos físicos, pode levar ao erro se a mensuração da produtividade for via valor adicionado/trabalhador.
+Isso porque, se o preço relativo do outro setor for mais elevado, o valor adicionado será maior, mas a produtividade em termos físicos do outro setor é maior.
+
+Para que esta economia continue produzindo todos os bens necessários, a taxa de lucro *precisa* ser uniforme.
+Caso contrário e não havendo restrições, somente o bem com maiores taxas de lucro será produzido.
+
+
+Se a soma vertical dos coeficientes for menor que um, a soma horizontal pode ser distinta de setor a setor.
+Alguns setores serão superavitários enquanto outros deficitários (em termos físicos).
+
+
+*** Relação entre excedente e taxa de lucro
+
+
+
+
+
+
 * A explicação monetária da distribuição
 :PROPERTIES:
 :ID:       9b80fea3-18f7-4b5f-88b9-7905f61cbff3

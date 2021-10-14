@@ -8,37 +8,14 @@
 #+ATTR_HTML: :alt MyOrg :title Projects :style float:left;margin-bottom:20px; :class banner
 https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
-** TODO Configuração desktop
-
-*** TODO Sincronizar repositórios
-
-**** TODO Doom
-
-**** TODO PhD
-
-**** TODO gps_abntex
-
-
-**** TODO pysolve3
-
-**** TODO mkks
-
-*** TODO Instalar emacs-snapshot
-
-**** TODO Dicionário
-
-
-**** TODO Criar branch
-
-**** TODO Conferir pastas
-
-**** TODO Testar tabnine
+* TODO Configuração desktop
 
 *** TODO Instalar latex
 
-**** TODO Detectar pacote abntex
 
 **** TODO Criar links simbólicos tese
+
+**** TODO Instalar styles latex
 
 *** TODO Sistema e programas
 
@@ -47,48 +24,20 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 ***** TODO Conferir potenciais problemas de conflito
 
 
-**** TODO Onlyoffice
-
-**** TODO git
-
-***** TODO Como não perder histórico de versão
+**** WAIT Stata
 
 
-**** TODO LSD
-
-**** TODO Zotero
-
-***** TODO Automatizar atualização arquivo bib
-
-
-**** TODO Flameshoot
-
-**** TODO Stata
-
-**** TODO Zoom
-
-**** TODO Skype
-
-**** TODO R
-
-**** TODO Python
-
-***** TODO pysolve3
-
-**** TODO Internet banking
+**** WAIT Internet banking
 
 
 
-**** TODO Backup hdd externo
 
-**** TODO Pcloud
-
+**** WAIT Pcloud
 
 
-**** TODO Configurar imagemagick
 
 
-*** TODO Extensões gnome
+
 
 *** TODO fly-pie
 
@@ -110,7 +59,7 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 *** TODO Fix pdf find like helm
 
-* TODO Dissertation's general settings [50%] :Dissertation:
+* TODO Dissertation's general settings [0%] :Dissertation:
 ** TODO Marcar qualificação
 ** TODO Criar script para copiar tabelas e figuras dos scripts (link simbólico preferencialmente)
 - [ ] Pesquisar se tem como fazer com que o Latex reconheça pastas
@@ -118,6 +67,7 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 ** TODO Adicionar Ítalo como co-orientador
 - [ ] Atualizar abntex
 ** TODO Ver possibilidade do proficiência com diploma do VM
+** TODO Remove Ivette name
 * STRT SFC [0%]
 
 
