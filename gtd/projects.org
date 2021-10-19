@@ -10,36 +10,35 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 * TODO Configuração desktop
 
-*** TODO Instalar latex
+** TODO Instalar latex
 
 
-**** TODO Criar links simbólicos tese
+*** TODO Criar links simbólicos tese
 
-**** TODO Instalar styles latex
+*** TODO Instalar styles latex
 
-*** TODO Sistema e programas
+*** TODO Instalar language tools
 
-**** TODO Insync
-
-***** TODO Conferir potenciais problemas de conflito
-
-
-**** WAIT Stata
-
-
-**** WAIT Internet banking
-
-
-
-
-**** WAIT Pcloud
-
-
-
-
+** TODO Sistema e programas
 
 
 *** TODO fly-pie
+
+
+
+*** WAIT Pcloud
+
+
+
+
+
+
+*** WAIT Internet banking
+
+
+
+** WAIT Comprar webcam
+** WAIT Comprar adaptador segundo monitor
 
 * Emacs
 
@@ -85,31 +84,38 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
   + Falácia de composição porque nem todas as firmas podem crescer seu market-share ao mesmo tempo
 - Como fazer com que firmas queiram copiar o comportamento das demais
 
-** TODO Rethink model strategy and objective
-
-
-*** TODO Write equations
-
-*** TODO Code strategy
-
-- Use flags or create functions for each sector?
 
 ** TODO To implement, comment and create checkers
 
 *** TODO Production
 
+**** TODO Create checkers
+
 *** TODO Firms-related functions
+
+**** TODO Create checkers
 
 *** TODO Credit
 
+**** TODO Credit to households
+
+**** TODO Credit to firms
+**** TODO Create checkers
+**** TODO Banks
+
+*** TODO Labour market
+
 *** TODO Aggregation
 
-*** TODO Setup and go
+*** TODO Expectations
 
 *** WAIT Endogeinity mechanism
 
 *** TODO Entry and exit
 
+*** TODO Initialization
+
+*** WAIT Government
 
 * TODO Orientações [0%]
 ** Dourado (2021)
@@ -122,63 +128,21 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 
 * STRT CE472 2021
-** TODO Aula capítulo 20
 * STRT Dissertation group discussion
-** TODO Review Mason paper
+** TODO Read André's manuscript
 * STRT Nikiforos econometric model response
 
 
 *Objetivo:* Como discutir ciclo a luz do supermultiplicador?
 
 
-** TODO Response steps
-
-*** STRT Nominal Trend
-
-**** TODO Alternative capacity utilization index
-
-*** STRT Nominal Cycle
-**** TODO Alternative capacity utilization index
-
-
-*** STRT Nominal no filter
-**** TODO Alternative capacity utilization index
-
-
-*** NO Real Trend
-CLOSED: [2021-10-07 qui 14:34]
-
-*** NO Real Cycle
-CLOSED: [2021-10-07 qui 14:34]
-
-*** NO Real no filter
-CLOSED: [2021-10-07 qui 14:34]
-
-*** TODO Check Nikiforos specifications
-
-- Benchmark model is in levels or in first differente?
-- Investment share has a unit root?
-
 ** TODO Ver ciclo nos gastos autônomos
 
 ** TODO Estabilidade dos parâmetros
 
-** TODO Taxa de investimento correta e recalcular relação
 
-** TODO Melhor modelo econométrico
-
-*** TODO Comparar uso do filtro
-
-- Importante não é variação cíclico de h, mas sim de patamar
-*** TODO Fazer com ciclo e sem ciclo
 ** TODO Decompor investimento em estoque de capital (construção indústria), máquinas, equipamentos e estoques
 ** TODO Investimento autônomo por acaso seguido de correção
-** TODO Impulso resposta pode não ser o melhor
-
-- Defasagens e efeito dual do investimento
-  + Demanda primeiro e capacidade depois
-- Nikiforos com IRF estatisticamente zero
-
 
 ** TODO Supermultiplicador e ciclo
 

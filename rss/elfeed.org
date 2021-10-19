@@ -1,29 +1,25 @@
 #+SETUPFILE: ../themes/confy_inline/confy_inline.theme
 #+OPTIONS: num:nil ^:{} toc:nil
 #+INCLUDE: "../header.org"
-* Blogs                                                              :elfeed:
+* Blogs        :elfeed:
 
-** emacs                                                        :emacs:
-*** [[http://pragmaticemacs.com/feed/][Pragmaticemacs]]
-*** [[http://cachestocaches.com/feed][Cache to caches]]
-** economics                                                    :economics:
-*** [[https://voxeu.org/feed/recent/rss.xml][VOXeu]]
-** programming :programming:
-*** [[https://programminghistorian.org/feed.xml][programming historian]]
-*** [[http://feeds.feedburner.com/RBloggers?format=xml][R-blogers]]
-** PhD                                                          :phd:
-*** [[http://feeds.feedburner.com/posgraduando?format=xml][Pós Graduando]]
-* Journals                                                           :elfeed:
-** [[https://www.tandfonline.com/feed/rss/rrip20][Review of International Political Economy]]
-** [[https://www.tandfonline.com/feed/rss/mpke20][Journal of Post Keynesian Economics]]
-** [[https://onlinelibrary.wiley.com/feed/1467999x/most-recent][Metroeconomica]]
-** [[https://www.tandfonline.com/feed/rss/crpe20][Review of Political Economy]]
+** emacs       :emacs:
+*** [[https    ://blog.tecosaur.com/tmio/rss.xml][This month in Org]]
+** economics   :economics:
+*** [[https    ://voxeu.org/feed/recent/rss.xml][VOXeu]]
+** programming :programing:
+*** [[http     ://feeds.feedburner.com/RBloggers?format=xml][R-blogers]]
+** PhD         :phd:
+*** [[http     ://feeds.feedburner.com/posgraduando?format=xml][Pós Graduando]]
+* Journals     :journals:
+** [[https     ://www.tandfonline.com/feed/rss/rrip20][Review of International Political Economy]]
+** [[https     ://www.tandfonline.com/feed/rss/mpke20][Journal of Post Keynesian Economics]]
+** [[https     ://onlinelibrary.wiley.com/feed/1467999x/most-recent][Metroeconomica]]
+** [[https     ://www.tandfonline.com/feed/rss/crpe20][Review of Political Economy]]
 ** Cambridge Journal of Economics
-*** [[https://academic.oup.com/rss/site_5437/3298.xml][Latest issue]]
-*** [[https://academic.oup.com/rss/site_5437/advanceAccess_3298.xml][Advanced Access]]
-*** [[https://academic.oup.com/rss/site_5437/advanceAccess_3298.xml][Open Access]]
-** [[https://www.tandfonline.com/feed/rss/mjei20][Journal of Economic Issues]]
-** [[https://journals.sagepub.com/action/showFeed?ui=0&mi=ehikzz&ai=2b4&jc=usja&type=etoc&feed=rss][Urban Studies Journal]]
-** [[https://www.elgaronline.com/journalissuetocrss/journals/roke/roke-overview.xml][Review of Keynesian Economics]]
-** [[https://www.elgaronline.com/journalissuetocrss/journals/ejeep/ejeep-overview.xml][European Journal of Economics and Economic Policies]]
-** [[https://onlinelibrary.wiley.com/feed/15406229/most-recent][Real Estate Economics]]
+*** [[https    ://academic.oup.com/rss/site_5437/3298.xml][Latest issue]]
+*** [[https    ://academic.oup.com/rss/site_5437/advanceAccess_3298.xml][Advanced Access]]
+*** [[https    ://academic.oup.com/rss/site_5437/advanceAccess_3298.xml][Open Access]]
+** [[https     ://www.tandfonline.com/feed/rss/mjei20][Journal of Economic Issues]]
+** [[https     ://www.elgaronline.com/journalissuetocrss/journals/roke/roke-overview.xml][Review of Keynesian Economics]]
+** [[https     ://www.elgaronline.com/journalissuetocrss/journals/ejeep/ejeep-overview.xml][European Journal of Economics and Economic Policies]]

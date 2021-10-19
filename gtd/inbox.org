@@ -13,15 +13,8 @@ https://i.pinimg.com/originals/fd/de/23/fdde2369da2feeaa95a469b0ff1dd3f5.gif
 :ID:       257e67c4-ac7c-489b-b4f3-8420f4b0a5e4
 :END:
 
-
-** TODO Fix nvidia-driver ([[https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=994860][bugreport]])
 ** TODO Curso protocolo de segurança Moodle
-** TODO Comprar webcam
-** WAIT Comprar adaptador segundo monitor
-** TODO [[https://1drv.ms/u/s!AhhdMDsRteCzwEIDFAlWFdb145HV?e=OYUs4m][Pasta curso valor e preços - UFRJ]]
-** TODO Add RSS this month in org
-** TODO Conferir cancelamento office
-** TODO Comentar monografia Lorena
+** TODO Comentar sobre fundo multimercado
 * Writing inbox
 ** TODO [#A] Super ABM Introduction draft
 ** TODO [#A] FISH [[https://voxeu.org/article/what-drives-house-prices-some-lessons-literature][What drives house prices: Lessons from the literature]]
@@ -40,10 +33,11 @@ https://i.pinimg.com/originals/fd/de/23/fdde2369da2feeaa95a469b0ff1dd3f5.gif
 ** <2021-10-04 seg> [[https://www.clevelandfed.org/en/newsroom-and-events/publications/cfed-district-data-briefs/cfddb-20210929-strong-demand-limited-supply-and-rising-prices-the-economics-of-pandemic-era-housing.aspx][Strong Demand, Limited Supply, and Rising Prices: The Economics of Pandemic-E...]] :HousingBubbles:HouseSupply:
 ** <2021-09-22 qua> [[https://voxeu.org/article/flattening-curve-pandemic-induced-revaluation-urban-real-estate][Flattening the curve: Pandemic-induced revaluation of urban real estate | VOX...]] :HouseSupply:PandemicRelated:
 * Reading Inbox
+** <2021-10-18 seg> [[https://onlinelibrary.wiley.com/doi/full/10.1111/joes.12470][Neoclassical influences in agent‐based literature: A systematic review - Bran...]] :ReviewOfLiterature:AgentBasedModels:
 ** <2021-10-13 qua> [[https://www.tandfonline.com/doi/full/10.1080/10527001.2021.1985907][Full article: Thirty Years of Housing Research]] :HousingMarket:ReviewOfLiterature:HousingBubbles:
 ** <2021-09-29 qua> [[https://www.tandfonline.com/doi/abs/10.1080/14036096.2020.1758204][Towards a Typology of Housing Price Bubbles: A Literature Review: Housing, Th...]] :AssetBubbles:HousingBubbles:ReviewOfLiterature:Typology:
 * Fleeting notes
 ** WAIT [[https://ag91.github.io/blog/2021/07/25/org-roam-and-nyxt-taking-zettelkasten-notes-from-the-web/][Nyxt and org-roam]]
-** WAIT Github repo for heterodox journals
 ** WAIT Compatibilities between org-cite and org-ref-cite
 ** WAIT git submodules
+** WAIT A fundação (Isaac Asimov)
