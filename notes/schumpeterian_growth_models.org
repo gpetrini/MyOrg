@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       bf204d00-40bc-40ff-bd28-829072390a09
+:END:
+#+title: Schumpeterian growth models
+
+#+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
+
+#+OPTIONS: num:nil ^:{} toc:nil
+
+#+INCLUDE: ../header.org

@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       4833f2ca-f363-46ab-af66-6a526710742f
+:END:
+#+title: Innovation-led growth models
+
+#+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
+
+#+OPTIONS: num:nil ^:{} toc:nil
+
+#+INCLUDE: ../header.org
