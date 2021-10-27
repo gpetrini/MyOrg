@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       9b881b3e-17dc-489b-994f-74cc05a6c421
+:END:
+#+title: Financial Regulation
+
+#+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
+
+#+OPTIONS: num:nil ^:{} toc:nil
+
+#+INCLUDE: ../header.org

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       b8256b68-7058-498e-928f-9e913f5db263
+:END:
+#+title: Expectations
+
+#+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
+#+OPTIONS: num:nil ^:{} toc:nil
+#+INCLUDE: ../header.org

@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       49bd4d2f-3350-4a81-865b-fcd0f43c9330
+:END:
+#+title: Financialization
+
+#+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
+
+#+OPTIONS: num:nil ^:{} toc:nil
+
+#+INCLUDE: ../header.org

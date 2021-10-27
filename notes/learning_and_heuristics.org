@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       cdc7d683-cbb8-4611-805c-0e058411c9e2
+:END:
+#+title: Learning and Heuristics
+
+#+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
+#+OPTIONS: num:nil ^:{} toc:nil
+#+INCLUDE: ../header.org

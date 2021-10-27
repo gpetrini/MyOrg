@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       0fb81bfc-4e95-4099-8568-c55b704d6165
+:END:
+#+title: Externalities
+
+#+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
+#+OPTIONS: num:nil ^:{} toc:nil
+#+INCLUDE: ../header.org

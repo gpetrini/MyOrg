@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       67c15aaa-7b6e-4407-b2de-71570ce061f5
+:END:
+#+title: Financial Crises
+
+#+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
+
+#+OPTIONS: num:nil ^:{} toc:nil
+
+#+INCLUDE: ../header.org

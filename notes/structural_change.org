@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       c0616d75-5f03-4067-b1f7-6ff10d2c1285
+:END:
+#+title: Structural change
+
+#+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
+
+#+OPTIONS: num:nil ^:{} toc:nil
+
+#+INCLUDE: ../header.org

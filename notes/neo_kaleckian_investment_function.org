@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       83a06494-7cda-4825-8c30-2a53e9b02c91
+:END:
+#+title: neo-Kaleckian investment function
+
+#+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
+
+#+OPTIONS: num:nil ^:{} toc:nil
+
+#+INCLUDE: ../header.org

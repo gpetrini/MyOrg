@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       d2d3c0db-3b93-41eb-a572-fce40270c485
+:END:
+#+title: Harrodian instability
+
+#+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
+#+OPTIONS: num:nil ^:{} toc:nil
+#+INCLUDE: ../header.org

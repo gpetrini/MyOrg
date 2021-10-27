@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       e20ae018-ac3b-4b4e-8108-29f84b898745
+:END:
+#+title: Innovation bubble ABM
+
+#+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
+#+OPTIONS: num:nil ^:{} toc:nil
+#+INCLUDE: ../header.org
+
+Placeholder for papers related to ABM innovation bubble model in my PhD Dissertation.

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       9789613e-f409-4593-b958-a2c9c8283bb6
+:END:
+#+title: Agent Based Models
+
+#+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
+#+OPTIONS: num:nil ^:{} toc:nil
+#+INCLUDE: ../header.org

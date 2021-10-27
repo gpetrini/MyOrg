@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       d6f6bc83-b082-492a-8776-689614359fb6
+:END:
+#+title: Asset bubble
+
+#+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
+
+#+OPTIONS: num:nil ^:{} toc:nil
+
+#+INCLUDE: ../header.org
