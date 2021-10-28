@@ -11,7 +11,11 @@
 #+filetags: :UFRJ:Notas_de_Aula:Demanda_Efetiva:Modelos_de_crescimento_liderados_pela_demanda:Moderna_Abordagem_do_Excedente:SraffianTheory:ModenSurplusApproach:EffectiveDemand:LecturesNotes:
 #+PROPERTY:header-args python :results output html :eval never-export :session sraffa :exports both
 
+* Backlinks
 
+[[id:97ad0640-ea89-4ce4-8ae7-fa03dfa89645][Natural Prices]]
+
+[[id:e42ca86d-529a-4cbe-bb16-fdb971b9c208][Sraffian Theory]]
 
 * Introdução ao curso <2021-09-30 qui>
 
