@@ -9,7 +9,7 @@ Time-stamp: 2021-10-05
 #+OPTIONS: toc:nil num:nil
 #+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
 #+OPTIONS: num:nil ^:{} toc:nil
-#+INCLUDE: '../header.org'
+#+INCLUDE: ../header.org
 
 
 * Backlinks

@@ -4,7 +4,7 @@
 #+title: Capital production procedure in ABM
 #+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
 #+OPTIONS: num:nil ^:{} toc:nil
-#+INCLUDE: '../header.org'
+#+INCLUDE: ../header.org
 
 * Description
 
