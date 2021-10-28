@@ -14,30 +14,35 @@ https://i.pinimg.com/originals/fd/de/23/fdde2369da2feeaa95a469b0ff1dd3f5.gif
 :END:
 
 ** TODO Curso protocolo de segurança Moodle
-** TODO Comentar sobre fundo multimercado
+** TODO Fix no paragraph break with ignore tag in emacs-org
+
 * Writing inbox
-** TODO [#A] Super ABM Introduction draft
+** STRT [#A] Super ABM Introduction draft
+
+** TODO [#A] FISH Cornell 2020
 ** TODO [#A] FISH [[https://voxeu.org/article/what-drives-house-prices-some-lessons-literature][What drives house prices: Lessons from the literature]]
 
-** TODO [#A] Fichar Perez (2009)
-** TODO [#A] FISH Cornell 2020
-** TODO [#B] Koop_2018
 ** TODO [#B] Fish Pástor
 ** TODO [#B] FISH DeMarzo
+** TODO [#B] Koop_2018
 ** TODO [#C] botte_2019
-** TODO [#C] tori_onaram_2018
+** WAIT [#E] tori_onaram_2018
 
 
 * News Inbox
-** <2021-10-04 seg> [[https://apublica.org/2021/10/guedes-tem-offshore-milionaria-em-paraiso-fiscal/][Guedes tem offshore milionária em paraíso fiscal - Agência Pública]] :Brazil:Politics:
 ** <2021-10-04 seg> [[https://www.clevelandfed.org/en/newsroom-and-events/publications/cfed-district-data-briefs/cfddb-20210929-strong-demand-limited-supply-and-rising-prices-the-economics-of-pandemic-era-housing.aspx][Strong Demand, Limited Supply, and Rising Prices: The Economics of Pandemic-E...]] :HousingBubbles:HouseSupply:
 ** <2021-09-22 qua> [[https://voxeu.org/article/flattening-curve-pandemic-induced-revaluation-urban-real-estate][Flattening the curve: Pandemic-induced revaluation of urban real estate | VOX...]] :HouseSupply:PandemicRelated:
 * Reading Inbox
-** <2021-10-18 seg> [[https://onlinelibrary.wiley.com/doi/full/10.1111/joes.12470][Neoclassical influences in agent‐based literature: A systematic review - Bran...]] :ReviewOfLiterature:AgentBasedModels:
-** <2021-10-13 qua> [[https://www.tandfonline.com/doi/full/10.1080/10527001.2021.1985907][Full article: Thirty Years of Housing Research]] :HousingMarket:ReviewOfLiterature:HousingBubbles:
-** <2021-09-29 qua> [[https://www.tandfonline.com/doi/abs/10.1080/14036096.2020.1758204][Towards a Typology of Housing Price Bubbles: A Literature Review: Housing, Th...]] :AssetBubbles:HousingBubbles:ReviewOfLiterature:Typology:
+
+** <2021-10-26 ter> [[https://rc2e.com/timeseriesanalysis][14 Time Series Analysis | R Cookbook, 2nd Edition]] :TimeSeries:Technical:Econometrics:VAR:
+** <2021-10-26 ter> [[https://bookdown.org/ccolonescu/RPoE4/vec-and-var-models.html#estimating-a-var-model][Principles of Econometrics with R]] :TimeSeries:Technical:Econometrics:RStats:VAR:
+** <2021-10-26 ter> [[https://stackoverflow.com/questions/34073708/var-estimation-results-to-latex-by-stargazer][r - VAR Estimation Results to Latex by stargazer - Stack Overflow]] :Technical:TimeSeries:RStats:
+** <2021-10-26 ter> [[http://www.fsb.miamioh.edu/lij14/672_2014_s7.pdf]] :Technical:TimeSeries:
 * Fleeting notes
+** TODO Enhance LSD documentation snippet
 ** WAIT [[https://ag91.github.io/blog/2021/07/25/org-roam-and-nyxt-taking-zettelkasten-notes-from-the-web/][Nyxt and org-roam]]
 ** WAIT Compatibilities between org-cite and org-ref-cite
 ** WAIT git submodules
 ** WAIT A fundação (Isaac Asimov)
+** WAIT Create style journal git repository
+** WAIT Add personal entries for writing as in academic phrases package

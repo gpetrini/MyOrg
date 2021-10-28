@@ -3,10 +3,9 @@
 :END:
 #+title: Expired release file
 #+filetags: :Linux:Debian:
-
 #+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
 #+OPTIONS: num:nil ^:{} toc:nil
-#+INCLUDE: '../header.org'
+#+INCLUDE: ../header.org
 
 If there is a package that is not possible to update due to expired release file (outdated release key), just run the following command to get others package update until the problem is solved
 

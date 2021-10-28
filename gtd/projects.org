@@ -8,7 +8,286 @@
 #+ATTR_HTML: :alt MyOrg :title Projects :style float:left;margin-bottom:20px; :class banner
 https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
-* TODO Configuração desktop
+* Dissertation's general settings [0%] :Dissertation:
+** TODO Marcar qualificação
+** TODO Criar script para copiar tabelas e figuras dos scripts (link simbólico preferencialmente)
+- [ ] Pesquisar se tem como fazer com que o Latex reconheça pastas
+
+** TODO Adicionar Ítalo como co-orientador
+- [ ] Atualizar abntex
+** TODO Ver possibilidade do proficiência com diploma do VM
+** TODO Remove Ivette name
+
+** Discussed topics and ideas
+
+*** General topics
+- Construction sector aggregate
+- Finite demand for housing is not compatible with infinity households
+
+*** Innovation bubble model
+
+- Decide whether to focus on innovation of process (easier) or in products (most promissory)
+- Firm entry and exit could generate flexible investment share
+- Structural break as a source of composition fallacy
+  - Firm only knows its mean productivity, not for the whole economy
+
+* ABM dot-com SSM model :Article:@PhD:Chapter:
+
+** TODO Writing steps
+
+*** TODO Introduction
+
+**** TODO Quick overview of bubble literature
+
+**** TODO Define and introduce Perez topology and the "Big Market delusion"
+
+***** TODO Define Perez topology
+
+***** TODO Define Big market delusion
+
+**** TODO List relevant stylized facts not simulated by the literature
+
+***** TODO Stress K+S model
+
+***** TODO Stress MMM
+
+*** TODO Standard review of literature
+
+
+**** TODO What are the source of economic growth
+
+**** TODO How investment function is specificed
+
+**** WAIT Theoretical discussion about normal capacity utilization
+
+- Firm entry and exit as a source of flexible investment growth rate
+
+**** TODO Special attention for SSM papers and discussion with [cite/t:@nomaler_2021_Dbased]
+**** TODO SSM-enhanced stylized facts
+
+***** TODO Check which SSM Stylized facts K+S replicates
+***** TODO Check which SSM Stylized facts MMM replicates
+
+
+*** TODO Dot-com bubble related literature
+
+*** TODO Causal chain of arguments
+
+**** TODO Present arguments
+
+**** TODO Present symbolic model
+
+** TODO Readings steps
+
+*** TODO Brief discussion about bubbles (mainstream literature)
+*** TODO How to implement innovation in SSM
+
+*** TODO How to implement expectations in AB-SFC-SSM
+
+*** TODO Check product innovation in literature
+
+
+** TODO To implement, comment and create checkers
+*** TODO General
+**** TODO Define documentation snippets
+
+- Add latex flag
+
+*** TODO Production
+
+**** TODO Create checkers
+
+**** TODO Add sectoral divergence
+
+*** TODO Firms-related functions
+
+**** TODO Create checkers
+
+*** TODO Credit
+
+**** TODO Credit to firms
+**** TODO Create checkers
+**** TODO Banks
+
+*** TODO Labour market
+
+**** TODO Create checkers
+
+*** TODO Aggregation
+
+*** TODO Expectations
+
+*** TODO Entry and exit
+
+*** TODO Initialization
+
+*** WAIT Endogeinity mechanism
+
+*** WAIT Government
+
+* Nikiforos econometric model response :Article:
+
+
+*Objetivo:* Como discutir ciclo a luz do supermultiplicador?
+
+** TODO Para TD
+
+*** TODO [#A] Escrever relatório dos resultados
+
+
+**** TODO Escolher melhor modelo e escrever script python
+
+- Indicar que os resultados são robustos
+
+**** TODO Criticar uso da taxa de investimento errada
+
+- Somente mudar para a variável correta altera os resultados
+- Indicar que há indícios de que os resultados vão na direção da literatura empírica e teórica
+- Explicitar que Nikiforos está em desacordo com uma literatura mais ampla do que a do supermultiplicador
+  - Ver fatos estilizados para a economia norte-americana
+
+**** TODO Padronizar apresentação dos gráficos
+
+**** TODO Conferir alteração decomposição de Cholesky
+
+
+**** TODO Conferir interpretação IRF acumulada
+
+- Efeito sobre a variação ou nível?
+  - Ao que tudo indica, sobre a variação (já que a série está em primeira diferença)
+
+**** TODO Checar IRF com montecarlo
+
+**** STRT Apresentar dados utilizados
+
+**** TODO Testar inclusão de dummies
+
+*** TODO [#C] Apresentar literatura de fatos estilizados
+
+**** TODO Gráfico da relação do grau de utilização e taxa de investimento
+
+*** HOLD Esclarecimentos teóricos (Lucas e Summa)
+
+  - Discussão das defasagens (Kalecki) e o acelerador
+    - Demora para ter o efeito da oferta e não tão mecânico
+  - Super é uma teoria mais geral do que Nikiforos supõe (não é apenas a especificação de Freitas e Serrano)
+    - Este não é o melhor modelo, dentre outros motivos, porque possui uma variável não observável. Existem outras funções também compatíveis com o supermultiplicador
+    - Análise do plano <h, u> não é o melhor
+    - É possível ter um ciclo puxado pelo investimento autônomo, mas não o tempo todo
+  - Ciclo no supermultiplicador é mais explicado por variações nos gastos autônomos do que por variações na taxa de investimento
+** TODO Ver ciclo nos gastos autônomos
+
+** TODO Estabilidade dos parâmetros
+
+
+** TODO Decompor investimento em estoque de capital (construção indústria), máquinas, equipamentos e estoques
+** TODO Investimento autônomo por acaso seguido de correção
+
+** TODO Supermultiplicador e ciclo
+
+- Ciclo advem dos gastos autônomos
+- Testar ciclo do supermultiplicador e dos gastos autônomos a partir dos dados do Haluska
+  + Parâmetros mudam e isso explica o ciclo
+  + Ciclo não vem do ajustamento do estoque de capital
+  + Ciclos teóricos são mais regulares que os empíricos
+
+** TODO Proposition plan
+
+After Nikiforos' response
+
+
+*** TODO Ciclos dos gastos autônomos e do supermultiplicador
+
+*** TODO Decompor componentes do investimento
+* Orientações [0%] :Orientations:
+** Dourado (2021)
+*** TODO Comentar monografia completa
+SCHEDULED: <2021-11-01 seg 18:30-19:30>
+
+** Barros (2021)
+
+*** TODO Reunião
+SCHEDULED: <2021-10-29 sex 20:30-21:30>
+
+* CE472 2021 :Teaching:
+
+** TODO Corrigir lista 03
+
+*** TODO Definir questões para serem corrigidas
+
+*** TODO Definir template de correção
+* IEE859 - Teoria do valor e da distribuição :@Lectures:
+** TODO Ler Petri Capítulo 01
+*** TODO Seções 1.1 a 1.8 <2021-10-28 qui 09:00-12:00>-<2021-11-25 qui>
+
+* Dissertation group discussion :@Group:
+* SFC [0%] :Article:@Master:
+
+
+** STRT Letter to peers
+
+
+** WAIT Highlight appendix A in red
+
+** WAIT Implement grammar correction
+
+* WAIT VECM [0%] :Article:@Master:
+
+
+
+* WAIT ABM Spatial Housing [0%] :Dissertation:@PhD:
+
+** TODO [#A] Difusion model
+** TODO [#A] Modelar versão mais simples
+- [ ] Ver exportação de tabela no html
+  + Incluir slider css
+
+** TODO Pesquisar melhor sobre os hooks do LSD
+
+** TODO [#C] Pesquisar lattice LSD
+
+** TODO Modelo com crédito para as famílias
+
+** TODO Modelo com preço das casas pró-cíclico
+
+* WAIT MKKS model [0/3] :Article:
+
+** TODO Endogeneizar rho_u
+
+** TODO Ajustar equações dos bancos
+
+- Separar capital de giro e investimento
+
+** TODO Adaptar diagrama
+
+- [X] Sem dole do governo para as famílias
+- [ ] Governo consome direto das firmas
+- [ ] Não tem loan credit market
+  + [ ] Sem heterogeneidade dos bancos
+- [ ] Sem new firms
+- [ ] Banco central implícito (manter)
+
+* Emacs :@free:
+
+** TODO Embed mathjax in css site
+
+** TODO Adapt notes
+
+*** TODO Convert mds
+
+*** TODO Convert Rmds
+
+** TODO Add logos url in configs
+
+** TODO Implement org-cite syntax
+
+** TODO Implement bibtex-actions
+
+*** TODO Fix pdf find like helm
+
+** TODO Fix paragraph break line in sections with ignore heading
+
+* Configuração desktop :@free:
 
 ** TODO Instalar latex
 
@@ -38,165 +317,6 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 
 ** WAIT Comprar webcam
-** WAIT Comprar adaptador segundo monitor
-
-* Emacs
-
-** TODO Embed mathjax in css site
-
-** TODO Adapt notes
-
-*** TODO Convert mds
-
-*** TODO Convert Rmds
-
-** TODO Add logos url in configs
-
-** TODO Implement org-cite syntax
-
-** TODO Implement bibtex-actions
-
-*** TODO Fix pdf find like helm
-
-* TODO Dissertation's general settings [0%] :Dissertation:
-** TODO Marcar qualificação
-** TODO Criar script para copiar tabelas e figuras dos scripts (link simbólico preferencialmente)
-- [ ] Pesquisar se tem como fazer com que o Latex reconheça pastas
-
-** TODO Adicionar Ítalo como co-orientador
-- [ ] Atualizar abntex
-** TODO Ver possibilidade do proficiência com diploma do VM
-** TODO Remove Ivette name
-* STRT SFC [0%]
-
-
-** STRT Letter to peers
-
-** WAIT Review new norms
-
-** WAIT Highlight appendix A in red
-
-* STRT ABM dot-com SSM model
-
-** TODO Bolhas de inovação
-
-- Expectativa de crescimento das firmas depende da expectativa de market-share
-  + Falácia de composição porque nem todas as firmas podem crescer seu market-share ao mesmo tempo
-- Como fazer com que firmas queiram copiar o comportamento das demais
-
-
-** TODO To implement, comment and create checkers
-
-*** TODO Production
-
-**** TODO Create checkers
-
-*** TODO Firms-related functions
-
-**** TODO Create checkers
-
-*** TODO Credit
-
-**** TODO Credit to households
-
-**** TODO Credit to firms
-**** TODO Create checkers
-**** TODO Banks
-
-*** TODO Labour market
-
-*** TODO Aggregation
-
-*** TODO Expectations
-
-*** WAIT Endogeinity mechanism
-
-*** TODO Entry and exit
-
-*** TODO Initialization
-
-*** WAIT Government
-
-* TODO Orientações [0%]
-** Dourado (2021)
-
-** Barros (2021)
-
-*** TODO Read Miranda and Mattos 2019
-
-*** TODO Read Miranda and Mattos 2020
-
-
-* STRT CE472 2021
-* STRT Dissertation group discussion
-** TODO Read André's manuscript
-* STRT Nikiforos econometric model response
-
-
-*Objetivo:* Como discutir ciclo a luz do supermultiplicador?
-
-
-** TODO Ver ciclo nos gastos autônomos
-
-** TODO Estabilidade dos parâmetros
-
-
-** TODO Decompor investimento em estoque de capital (construção indústria), máquinas, equipamentos e estoques
-** TODO Investimento autônomo por acaso seguido de correção
-
-** TODO Supermultiplicador e ciclo
-
-- Ciclo advem dos gastos autônomos
-- Testar ciclo do supermultiplicador e dos gastos autônomos a partir dos dados do Haluska
-  + Parâmetros mudam e isso explica o ciclo
-  + Ciclo não vem do ajustamento do estoque de capital
-  + Ciclos teóricos são mais regulares que os empíricos
-
-** TODO Proposition plan
-
-After Nikiforos' response
-
-
-*** TODO Ciclos dos gastos autônomos e do supermultiplicador
-
-*** TODO Decompor componentes do investimento
-
-* WAIT VECM [0%] :Article:
-
-
-
-* WAIT ABM Spatial Housing [0%] :Dissertation:
-
-** TODO [#A] Difusion model
-** TODO [#A] Modelar versão mais simples
-- [ ] Ver exportação de tabela no html
-  + Incluir slider css
-
-** TODO Pesquisar melhor sobre os hooks do LSD
-
-** TODO [#C] Pesquisar lattice LSD
-
-** TODO Modelo com crédito para as famílias
-
-** TODO Modelo com preço das casas pró-cíclico
-
-* WAIT MKKS model [0/3]
-
-** TODO Endogeneizar rho_u
-
-** TODO Ajustar equações dos bancos
-
-- Separar capital de giro e investimento
-
-** TODO Adaptar diagrama
-
-- [X] Sem dole do governo para as famílias
-- [ ] Governo consome direto das firmas
-- [ ] Não tem loan credit market
-  + [ ] Sem heterogeneidade dos bancos
-- [ ] Sem new firms
-- [ ] Banco central implícito (manter)
-
 * Blog Social paths :@free:
 
 *Description:* Gatther usefull stuff for academics
@@ -226,6 +346,9 @@ After Nikiforos' response
 *** TODO Reference in README file
 
 *** TODO Create sections based on JEL codes
+* Style journal templates :@free:
+** TODO Create repo
+** TODO Document examples
 * [#C] QCA [0%] :Dissertation:ARCHIVE:
 ** TODO Ler seção 9.2.3 manual QCA
 ** TODO Ler sobre QCA em dois estágios

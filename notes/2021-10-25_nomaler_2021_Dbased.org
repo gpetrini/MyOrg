@@ -3,7 +3,7 @@
 :CAPTURED: [2021-10-25 18:19:08]
 :ROAM_REFS: cite:nomaler_2021_Dbased
 :END:
-#+TITLE: nomaler_2021_Dbased: R\&D-based economic growth in a supermultiplier model - (, Structural Change and Economic Dynamics)
+#+TITLE: nomaler_2021_Dbased: R\&D-based economic growth in a supermultiplier model - (2021, Structural Change and Economic Dynamics)
 Time-stamp: 2021-10-25
 #+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
 #+OPTIONS: num:nil ^:{} toc:nil

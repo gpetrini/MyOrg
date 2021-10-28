@@ -35,7 +35,9 @@ It is useful to separate literature notes from permanent notes. Literature notes
 
 ** NetLogo
 
+* [[id:e42ca86d-529a-4cbe-bb16-fdb971b9c208][Sraffian Theory]]
 
+** [[id:97ad0640-ea89-4ce4-8ae7-fa03dfa89645][Natural Prices]]
 * LaTeX
 
 ** General

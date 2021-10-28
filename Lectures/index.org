@@ -4,4 +4,10 @@
 #+OPTIONS: num:nil ^:{} toc: nil
 #+INCLUDE: "../header.org"
 
+This page holds my personal notes about lectures that I took in my masters and PhD.
+Please do not cite or quote.
+Use this at your own risk.
 
+* 2021
+
+** [[id:669465fc-f4fb-4569-ae8c-6ff779c6b05c][IEE859 - Teoria do valor e preços (Prof. Franklin Serrano)]] :UFRJ:PhD:

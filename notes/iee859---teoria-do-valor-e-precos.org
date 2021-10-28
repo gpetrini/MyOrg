@@ -7,8 +7,11 @@
 #+LANGUAGE: pt_br
 #+OPTIONS: num:nil ^:{} toc:nil
 #+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
-#+INCLUDE: '../header.org'
+#+INCLUDE: ../header.org
 #+filetags: :UFRJ:Notas_de_Aula:Demanda_Efetiva:Modelos_de_crescimento_liderados_pela_demanda:Moderna_Abordagem_do_Excedente:SraffianTheory:ModenSurplusApproach:EffectiveDemand:LecturesNotes:
+#+PROPERTY:header-args python :results output html :eval never-export :session sraffa :exports both
+
+
 
 * Introdução ao curso <2021-09-30 qui>
 
@@ -351,7 +354,240 @@ Alguns setores serão superavitários enquanto outros deficitários (em termos f
 
 
 
+** Produção com mais de um bem básico
 
+*** O modelo
+
+#+BEGIN_SRC python :results none
+import sympy as sp
+from sympy import pprint, latex, Eq, solve, solveset
+
+def mytex(lhs, rhs):
+    """
+    lhs: left hand side (symbol)
+    rhs: right hand side (expression)
+    """
+    import sympy as sp
+    resul = sp.latex(
+        sp.Eq(lhs, rhs),
+        mode = 'equation*',
+        mul_symbol = 'dot',
+        # symbol_names = latex_names
+    )
+    return sp.pprint(resul)
+
+p1, p2 = sp.symbols('p1, p2', positive = True) # Precos
+w, v, V, r, R = sp.symbols('w v V r R', nonnegative = True)
+
+a11, a12 = sp.symbols('a_11 a_12')
+a21, a22 = sp.symbols('a_21 a_22')
+l1, l2 = sp.symbols('l1 l2')
+#+END_SRC
+
+
+Considerando um modelo com dois bens básicos.
+Um deles (bem 2, pão) serão utilizado como bem salário e numerário.
+Supõe-se também que a cesta de bens dos trabalhadores é composta somente por este bem-salário.
+
+#+BEGIN_SRC python :results html
+a21 = a22 = 0
+_w = p2*v
+mytex(w, _w)
+#+END_SRC
+
+#+RESULTS:
+#+begin_export html
+\begin{equation*}w = p_{2} \cdot v\end{equation*}
+#+end_export
+
+Dadas as hipóteses, segue o conjunto de equações:
+#+BEGIN_SRC python
+_p1 = p1*a11*(1+r) + w*l1
+mytex(p1, _p1)
+_p2 = p1*a12*(1+r) + w*l2
+mytex(p2, _p2)
+mytex(w, _w)
+mytex(p2, 1)
+#+END_SRC
+
+#+RESULTS:
+#+begin_export html
+\begin{equation*}p_{1} = a_{11} \cdot p_{1} \cdot \left(r + 1\right) + l_{1} \cdot
+w\end{equation*}
+\begin{equation*}p_{2} = a_{12} \cdot p_{1} \cdot \left(r + 1\right) + l_{2} \cdot
+w\end{equation*}
+\begin{equation*}w = p_{2} \cdot v\end{equation*}
+\begin{equation*}p_{2} = 1\end{equation*}
+#+end_export
+
+
+*** Solução simultânea
+
+Com isso, é possível escrever o preço do bem 1 como:
+
+#+BEGIN_SRC python
+tmp_p1 = solve(_p1 - p1, p1)[0].simplify()
+mytex(tmp_p1, _p1)
+#+END_SRC
+
+#+RESULTS:
+#+begin_export html
+\begin{equation*}- \frac{l_{1} \cdot w}{a_{11} \cdot r + a_{11} - 1} = a_{11} \cdot
+ p_{1} \cdot \left(r + 1\right) + l_{1} \cdot w\end{equation*}
+#+end_export
+
+rearrumando:
+#+BEGIN_latex
+\begin{equation}
+p_{1} = \frac{v\cdot l_{1}}{1 - a_{11}\cdot (1 + r)}
+\end{equation}
+#+END_latex
+
+nesta equação, utiliza-se trabalho direto ($l_{1}$) e indireto ($a_{11}$)[fn:: O coeficiente $a_{11}$ é o custo estritamente necessário para se produzir o bem $1$ mesmo que o salário seja zero.].
+Além disso, um /mark-up/ positivo implica uma taxa de lucro positiva (e vice-versa).
+
+
+Em um caso em que o salário é zero, a taxa de lucro máxima dessa economia é dada por:
+#+BEGIN_latex
+\begin{equation}
+R_{v=0} = \frac{1 - a_{11}}{a_{11}}
+\end{equation}
+#+END_latex
+Este caso deixa evidente que é dada como o produto líquido ($1 - a_{11}$, o que excede a quantidade estritamente necessária) divido pelo estoque de capital.
+Também é possível expressar a produtividade do trabalho (valor adicionado/trabalhador) que, ao mesmo tempo, indica a taxa máxima de salário desta economia:
+#+BEGIN_latex
+\begin{equation}
+V = \frac{1 - a_{11}}{l_{1}}
+\end{equation}
+#+END_latex
+
+Estes casos indicam as possibilidades distributivas de determinada técnica produtiva.
+Se a técnica produtiva mudar, pode aumentar tanto a taxa de lucro máxima quanto a produtividade do trabalho.
+
+Continuando a substituição e deixando em função de $v$:
+#+BEGIN_latex
+\begin{equation}
+v = \frac{1}{\frac{l_{1}a_{12}(1+r)}{1 - a_{11}(1+r)} - l_{2}}
+\end{equation}
+#+END_latex
+
+
+*** Implicações
+
+
+No caso em que a taxa de lucro é zero, os preços relativos refletirão os custos diretos e indiretos de produzir tais mercadorias (dada uma técnica produtiva).
+Porém, se a taxa de lucro for positiva, os preços relativos *não* serão proporcionais aos uso de trabalho direto e indireto.
+Caso sejam proporcionais, *não* será compatível com uma taxa de lucro uniforme.
+A teoria do valor-trabalho não considerava a taxa de lucro como relevante para a determinação dos preços relativos.
+
+**** Exemplo
+
+Suponha um caso em que um produto (1) utiliza apenas trabalho direto e é finalizado em um período enquanto outro (2) utiliza trabalho direto e indireto e leva dois períodos para se concluir:
+
+#+BEGIN_latex
+\begin{equation}
+\begin{cases}
+p_{1} = l_{1}\cdot w\cdot (1+r)\\
+p_{2} = l_{2}\cdot a_{2}\cdot w \cdot (1 + r) + l_{2}\cdot b\cdot w (1 + r)
+\end{cases}
+\end{equation}
+#+END_latex
+
+Para Ricardo, por exemplo, os preços relativos seriam:
+#+BEGIN_latex
+\begin{equation}
+\frac{p_{1}}{p_{2}} = \frac{l_{1}}{l_{2}}
+\end{equation}
+#+END_latex
+O problema é que o produtor do primeiro bem (que leva um período por hipótese) terá uma taxa de lucro sempre maior que o segundo.
+A consequência é que a produção mais rápida terá uma taxa de retorno maior e o produto que utiliza trabalho indireto não será economicamente viável.
+
+Para ser compatível com uma taxa de lucro uniforme:
+#+BEGIN_latex
+\begin{equation}
+\begin{cases}
+p_{1} = l_{1}\cdot w\cdot (1+r)\\
+p_{2} = l_{2}\cdot a_{2}\cdot w \cdot (1 + r)^{2} + l_{2}\cdot b\cdot w (1 + r)
+\end{cases}
+\end{equation}
+#+END_latex
+Esse exemplo seria equivalente ao caso em que um dos insumo (trabalho indireto) é comprado de outro setor.
+A intuição é que o preço de um dos insumo terá a taxa de lucro do produtor imbutido.
+Ou seja, os preços relativos não são *independentes* da taxa de lucro.
+Por essa razão, os preços de relativos deixam de ser proporcionais ao uso de trabalho direto e indireto.
+Sendo assim, quando a taxa de lucro aumenta, o preço não será alterado igualmente entre os setores.
+
+Para Marx, os preços relativos eram distintos do valor-trabalho[fn::A teoria do valor-trabalho propõe que os preços relativos são proporcionais ao uso de trabalho direto e indireto na produção.].
+Como solução, aplicava o procedimento da transformação que iniciava estimando a taxa de lucro geral pela mais-valia e depois seguia-se imputando no cálculo dos preços.
+Em resumo, Marx --- nem Ricardo e somente Smith para uma economia em estágio primitivo --- não se baseava na teoria do valor-trabalho.
+
+*** De volta aos preços relativos
+
+Por fim, substituindo a expressão para salário real, obtém-se o preço relativo do primeiro bem:
+
+#+BEGIN_latex
+\begin{equation}
+p_{1} = \frac{\frac{1}{1 - a_{11}(1+r)}}{\frac{l_{1}a_{12}(1+r)}{1 - a_{11}(1+r)} - l_{2}}
+\end{equation}
+#+END_latex
+
+
+Portanto, os preços relativos são não dependem da taxa de lucro se esta for zero:
+#+BEGIN_latex
+\begin{equation}
+V_{r=0} = \frac{1}{l_{2} + \left(\frac{l_{1}}{1 - a_{11}}\right)a_{12}}
+\end{equation}
+#+END_latex
+Por outro lado, só haverá taxa de lucro enquanto existir excedente.
+
+** Preços relativos e distribuição de renda
+
+
+O preço relativo do bem 1 quando a taxa de lucro é zero ($r=0$) é dado por:
+#+BEGIN_latex
+\begin{equation}
+p_{1} = \frac{\frac{l_{1}}{1 - a_{11}}}{l_{2} + \left(\frac{l_{1}}{1 - a_{11}}\right)a_{12}}
+\end{equation}
+#+END_latex
+Neste caso, temos:
+#+BEGIN_latex
+\begin{equation}
+p_{1} = \frac{\text{Trabalho direta e indiretamente para produzir 1}}{\text{Trabalho direta e indiretamente para produzir 2}}
+\end{equation}
+#+END_latex
+
+Já quando há uma taxa de lucro positiva,
+#+BEGIN_latex
+\begin{equation}
+p_{1} = \frac{l_{1}}{(l_{1}a_{12} - l_{2}a_{11})(1+r) + l_{2}}
+\end{equation}
+#+END_latex
+O preço relativo irá depender da taxa de lucro se
+#+BEGIN_latex
+\begin{equation}
+l_{1}a_{12} \neq l_{2}a_{11}
+\end{equation}
+#+END_latex
+Analisando cada caso,
+#+BEGIN_latex
+\begin{equation}
+\frac{a_{12}}{l_{2}}
+\begin{Bmatrix}
+>\\=\\<
+\end{Bmatrix}
+\frac{a_{11}}{l_{1}}
+\end{equation}
+#+END_latex
+
+A implicação da mudança do preço relativo
+
+** A relação salário-lucros e os preços relativos
+
+** Discussão de Sraffa (1960) (PCMC)
+*** Capítulo 1
+*** Capítulo 2
+
+- A taxa máxima de lucro do Sraffa é a mesma que a taxa normal de lucro dos clássicos e de Marx
 
 * A explicação monetária da distribuição
 :PROPERTIES:
