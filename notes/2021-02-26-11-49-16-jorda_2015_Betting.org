@@ -3,13 +3,16 @@
 :ROAM_REFS: cite:jorda_2015_Betting
 :END:
 #+TITLE: jorda_2015_Betting: Betting the house (2015, Journal of International Economics)
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+#+hugo_section: notes
+#+HUGO_CATEGORIES: bibliographic
 #+OPTIONS: toc:nil num:nil
 Time-stamp: 2021-02-26
 - tags :: Credit,Financial crises,House prices,Leverage,Local projections,Monetary policy
 
 
 * Backlinks
-[[id:fba28600-c7c8-4b1d-a4e3-138b051a18ec][Panel Theoretical foundations]]
 
 * FISH-5SS
 

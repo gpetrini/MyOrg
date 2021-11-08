@@ -1,7 +1,7 @@
 :PROPERTIES:
-:ID:       4833f2ca-f363-46ab-af66-6a526710742f
+:ID:       9b80c1b4-d367-4fd5-9169-477cf6074596
 :END:
-#+title: Innovation-led growth models
+#+title: South Sea Bubble
 
 #+HUGO_AUTO_SET_LASTMOD: t
 #+hugo_base_dir: ~/BrainDump/
@@ -11,4 +11,3 @@
 #+HUGO_TAGS: placeholder
 
 #+OPTIONS: num:nil ^:{} toc:nil
-

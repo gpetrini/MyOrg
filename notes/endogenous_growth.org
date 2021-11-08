@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       5c617815-6d12-49eb-8f98-2459bc7f1810
+:END:
+#+title: Endogenous Growth
+
+#+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
+
+#+OPTIONS: num:nil ^:{} toc:nil
+
+#+INCLUDE: ../header.org

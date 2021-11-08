@@ -1,10 +1,8 @@
 :PROPERTIES:
-:ID:       ba38b5a2-8791-4203-bc69-6c205f96be3d
+:ID:       d1e7f9d2-e144-4f49-931e-5c0f3cd6d5c8
+:ROAM_ALIASES: "Autonomous Investment Bubble"
 :END:
 #+title: Overinvestment
 
-#+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
 
 #+OPTIONS: num:nil ^:{} toc:nil
-
-#+INCLUDE: ../header.org

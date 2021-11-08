@@ -2,7 +2,7 @@
 :ID:       a2e20f56-b6f2-4e80-9cc4-2924ce487b21
 :END:
 #+title: Mortgage Interest rate
-
-[[id:96cca9b2-3b1c-4e2d-bf63-c2d8b032f096][Panel readings]]
-
-[[id:8b0a5bce-ba2c-4779-b339-eca15899cb2b][QCA Theoretical Economics Foundations]]
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+#+hugo_section: notes
+#+HUGO_CATEGORIES: placeholder wiki

@@ -1,7 +1,7 @@
 :PROPERTIES:
-:ID:       4833f2ca-f363-46ab-af66-6a526710742f
+:ID:       8d3c092d-8546-4dc0-8a04-55d3d8a09191
 :END:
-#+title: Innovation-led growth models
+#+title: Dot Com crisis
 
 #+HUGO_AUTO_SET_LASTMOD: t
 #+hugo_base_dir: ~/BrainDump/
@@ -11,4 +11,3 @@
 #+HUGO_TAGS: placeholder
 
 #+OPTIONS: num:nil ^:{} toc:nil
-

@@ -1,0 +1,59 @@
+#+TITLE: Welcome to myOrg
+#+DESCRIPTION: My Emacs-based braindump
+#+OPTIONS: num:nil ^:{} toc:nil
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+#+hugo_section: gtd
+
+This site is created to track my personal notes.
+Since them may have errors, use with caution.
+This website is built from my [[https://orgmode.org/][org-mode notes]] (managed by [[https://github.com/org-roam/org-roam][org-roam]]).
+The notes are parsed by [[https://github.com/emacs-mirror/emacs/blob/master/lisp/org/ox-publish.el][ox-publish]] and are exposed using [[https://gitlab.com/OlMon/org-themes/-/tree/master/src/comfy_inline][comfy inline theme]].
+
+** Inspirations
+
+- [[https://braindump.jethro.dev/][Jethro's Braindump]]
+- [[https://www.alexeyshmalko.com/][Alexey Shmalko's (rasendubi) Braindump]]
+- [[https://distro.tube/][DistroTube]]
+
+* Recent papers
+Here are my recent papers.
+
+
+
+* Projects
+
+** Ongoing
+- Residential investment in SSM-SFC model :: Mater's thesis SFC model paper
+- Houses own-rate of interst VEC model :: Mater's thesis time series model paper
+- MKKS :: Minskian agent based model with financial accelerator
+- Rating agency QCA :: Country risk rating evaluation with QCA model
+
+
+** Someday?
+
+
+
+* Main Repos
+
+- [[https://github.com/gpetrini/pysolve3][pysolve3]] :: SFC solver written in python3
+- [[https://github.com/gpetrini/.doom.d][My Doom Emacs Config]] :: Doom emacs dotfiles
+- [[https://github.com/gpetrini/my_dotfiles][Dotfiles]] :: System-wide dotfiles
+- [[https://github.com/gpetrini/MyOrg][MyOrg]] :: This project
+- [[https://github.com/gpetrini/gps_abntex][gps_abntex]] :: abnTeX2 fork modified for my needs
+
+* Check me on the web
+
+- [[https://github.com/gpetrini/][Github]]
+- Lattes
+
+
+* Q&A
+
+** Why in English?
+** Why publishing?
+
+The reason is simple: version control with more than one device is hard.
+Now, I can access my notes whenever I want easily.
+Additional, it make simple to check my files using a cellphone.
+Finally, sharing notes helps you learn and makes sure you understand the topic.

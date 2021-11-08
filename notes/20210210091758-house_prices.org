@@ -2,6 +2,7 @@
 :ID:       0ea24981-6248-456e-9d8c-72348b08feeb
 :END:
 #+title: House Prices
-
-[[id:96cca9b2-3b1c-4e2d-bf63-c2d8b032f096][Panel readings]]
-
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+#+hugo_section: notes
+#+HUGO_CATEGORIES: placeholder

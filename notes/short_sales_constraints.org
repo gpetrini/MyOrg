@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       4dd9747a-0849-49bc-99dc-f226c5605270
+:END:
+#+title: Short sales constraints
+
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+
+#+hugo_section: notes
+
+#+HUGO_TAGS: placeholder definition
+
+#+OPTIONS: num:nil ^:{} toc:nil
+
+This kind of constraints reflects some frictions in options market in which the agent is not able to sell the financial asset imediatly.

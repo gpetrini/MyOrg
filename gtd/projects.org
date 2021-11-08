@@ -1,10 +1,15 @@
 #+OPTIONS: num:nil toc:nil
 #+TITLE: Active Projects
 #+AUTHOR: Gabriel Petrini
-#+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
 #+OPTIONS: num:nil ^:{} toc:nil
-#+INCLUDE: "../header.org"
 #+EXCLUDE_TAGS: noexport ARCHIVE
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+#+hugo_section: private
+#+HUGO_TAGS: workflow gtd
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+#+MACRO: todo @@html:<span class="todo">TODO</span>@@
 #+ATTR_HTML: :alt MyOrg :title Projects :style float:left;margin-bottom:20px; :class banner
 https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
@@ -62,7 +67,7 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 - Firm entry and exit as a source of flexible investment growth rate
 
-**** TODO Special attention for SSM papers and discussion with [cite/t:@nomaler_2021_Dbased]
+**** TODO Special attention for SSM papers and discussion with nomaler_2021_Dbased
 **** TODO SSM-enhanced stylized facts
 
 ***** TODO Check which SSM Stylized facts K+S replicates
@@ -135,9 +140,9 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 *** TODO [#A] Escrever relatório dos resultados
 
 
-**** TODO Escolher melhor modelo e escrever script python
+**** TODO Escolher melhor modelo e escrever script R
 
-- Indicar que os resultados são robustos
+***** TODO Comparar resultados com os do python
 
 **** TODO Criticar uso da taxa de investimento errada
 
@@ -146,9 +151,13 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 - Explicitar que Nikiforos está em desacordo com uma literatura mais ampla do que a do supermultiplicador
   - Ver fatos estilizados para a economia norte-americana
 
-**** TODO Padronizar apresentação dos gráficos
+**** TODO Padronizar apresentação dos gráficos e resultsados
 
-**** TODO Conferir alteração decomposição de Cholesky
+***** TODO Alinhar eixos y IRF
+
+***** TODO Ajustar largura gráfico fevd
+
+***** TODO Tabelas em Latex
 
 
 **** TODO Conferir interpretação IRF acumulada
@@ -156,15 +165,18 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 - Efeito sobre a variação ou nível?
   - Ao que tudo indica, sobre a variação (já que a série está em primeira diferença)
 
-**** TODO Checar IRF com montecarlo
 
 **** STRT Apresentar dados utilizados
 
 **** TODO Testar inclusão de dummies
 
+**** TODO Estimar outra ordenação de Cholesky
+
 *** TODO [#C] Apresentar literatura de fatos estilizados
 
 **** TODO Gráfico da relação do grau de utilização e taxa de investimento
+
+**** TODO Indicar que gastos autônomos possuem um componente cíclio
 
 *** HOLD Esclarecimentos teóricos (Lucas e Summa)
 
@@ -217,8 +229,6 @@ SCHEDULED: <2021-10-29 sex 20:30-21:30>
 
 *** TODO Definir template de correção
 * IEE859 - Teoria do valor e da distribuição :@Lectures:
-** TODO Ler Petri Capítulo 01
-*** TODO Seções 1.1 a 1.8 <2021-10-28 qui 09:00-12:00>-<2021-11-25 qui>
 
 * Dissertation group discussion :@Group:
 * SFC [0%] :Article:@Master:
@@ -226,10 +236,11 @@ SCHEDULED: <2021-10-29 sex 20:30-21:30>
 
 ** STRT Letter to peers
 
-
 ** WAIT Highlight appendix A in red
 
 ** WAIT Implement grammar correction
+
+** WAIT Create github repository
 
 * WAIT VECM [0%] :Article:@Master:
 
@@ -349,43 +360,12 @@ SCHEDULED: <2021-10-29 sex 20:30-21:30>
 * Style journal templates :@free:
 ** TODO Create repo
 ** TODO Document examples
-* [#C] QCA [0%] :Dissertation:ARCHIVE:
-** TODO Ler seção 9.2.3 manual QCA
-** TODO Ler sobre QCA em dois estágios
-** TODO Organizar dados em uma tabela
-*** TODO Dados brutos
-*** TODO Fonte
-** TODO Ler appêndice online manual QCA (chapter 8) :Manual:
-** TODO https://www.e-elgar.com/shop/usd/advanced-introduction-to-housing-studies-9781789908336.html :Dissertation:Readings:Institutions:Housing:
-** TODO Começar escrita primeira versão
-*** TODO Semana 1 (<2021-04-05 seg>): Introdução
-*** TODO Semana 2 (<2021-04-12 seg>): Metodologia QCA
-*** TODO Semana 3 (<2021-04-19 seg>): Motivação empírica
-*** TODO Semana 4 (<2021-04-26 seg>): Revisão da literatura teórica
-** TODO Modelos [0/1]
-*** TODO Modelo QCA FMI
-** TODO Fichar Green and Watcher
-** TODO Organizar leituras comparação institucional: Lea
-** IDEA QCA plot idea: Typical duration of a foreclosure procedure in boxplot
-** TODO Data QCA: pós Basileia I
-** TODO [[https://www.bis.org/publ/qtrpdf/r_qt1309i.htm][Database for policy actions on housing markets]] :DATASET:
-** TODO [[https://www.ecb.europa.eu/pub/pdf/scpops/ecb.op220~47edfcc84d.en.pdf][The impact of lending standards on default rates of residential real estate loans ]] :PLOTS:
-** TODO [[http://www.finpolconsult.de/mediapool/16/169624/data/Housing_Finance/Europe/Low_Duebel_Sebag-Montefiori_EMF_Financial_Integration_03.pdf][Study on the Financial Integrationof European Mortgage Markets]] :DATASET:
-** TODO Gráfico de Variedades de capitalismo residencial
-
-** TODO Criar Source data frame
-** TODO Pesquisar literatura de estrutura de capital para os bancos $\Rightarrow$ Fundamentação teórica QCA
-** TODO Incluir PCA e MCA na análise?
-- Permite analizar no tempo
-- Mais robusto
-
-* Archive :ARCHIVE:
-
-** Dissertation
-
-*** DONE Nota fiscal computador :ARCHIVE:
-CLOSED: [2021-07-12 seg 11:56]
-*** DONE Comprar periféricos :ARCHIVE:
-CLOSED: [2021-07-12 seg 11:56]
-*** DONE Scanear nota fiscal periféricos :ARCHIVE:
-CLOSED: [2021-07-19 seg 16:47]
+* Braindump
+** TODO FIX TODO syntax
+** TODO Update ABOUT
+** TODO Create Knowldge base
+** TODO Test org-html-themes
+** TODO Ox-hugo shortcodes
+** TODO Update housekeeping
+** TODO Create publications entry
+** TODO Create teaching section

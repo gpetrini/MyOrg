@@ -10,9 +10,9 @@ http://phdcomics.com/comics/archive/phd031305s.gif
 * Papers
 
 
-- [[id:20211025T181908][nomaler_2021_Dbased: R\&D-based economic growth in a supermultiplier model - (, Structural Change and Economic Dynamics)]]
-- [[id:20211027T155517][perez_2009_Double: The double bubble at the turn of the century: technological roots and structural implications - (2009, Cambridge Journal of Economics)]]
-- [[id:20211027T143328][russo_2021_Harrodian: Harrodian instability in decentralized economies: an agent-based approach - (2021, Economia Politica)]]
+- [[./2021-10-25_nomaler_2021_Dbased.org][Nomaler et al. (2021) - R&D-based economic growth in a supermultiplier model - (Structural Change and Economic Dynamics)]]
+-
+-
 
 
 * Books

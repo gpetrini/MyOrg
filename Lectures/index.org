@@ -1,7 +1,7 @@
 #+TITLE: Lectures
 #+DESCRIPTION: My personal lectures notes
 #+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
-#+OPTIONS: num:nil ^:{} toc: nil
+#+OPTIONS: num:nil ^:{} toc:nil
 #+INCLUDE: ../header.org
 
 This page holds my personal notes about lectures that I took in my masters and PhD.
@@ -10,4 +10,4 @@ Use this at your own risk.
 
 * 2021
 
-** [[file:../docs/notes/iee859---teoria-do-valor-e-precos.html]]
+** [[file:../notes/iee859---teoria-do-valor-e-precos.org][IEE 859 - Teoria do valor e preços]] :UFRJ:PhD:

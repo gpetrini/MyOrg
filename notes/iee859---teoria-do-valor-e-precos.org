@@ -6,16 +6,20 @@
 #+DATE: 2º Semestre de 2021
 #+LANGUAGE: pt_br
 #+OPTIONS: num:nil ^:{} toc:nil
-#+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
-#+INCLUDE: ../header.org
-#+filetags: :UFRJ:Notas_de_Aula:Demanda_Efetiva:Modelos_de_crescimento_liderados_pela_demanda:Moderna_Abordagem_do_Excedente:SraffianTheory:ModenSurplusApproach:EffectiveDemand:LecturesNotes:
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+#+hugo_section: lectures
+#+HUGO_TAGS: "sraffian_theory"  "ufrj" "modern-surplus-approach"
+#+HUGO_CATEGORIES: "Lecture notes"
 #+PROPERTY:header-args python :results output html :eval never-export :session sraffa :exports both
 
-* Backlinks
+* Tags
 
-[[id:97ad0640-ea89-4ce4-8ae7-fa03dfa89645][Natural Prices]]
+[[id:4fe0d267-ad06-4a8a-bc89-2ab6e37f6b61][Natural Prices]]
 
-[[id:e42ca86d-529a-4cbe-bb16-fdb971b9c208][Sraffian Theory]]
+[[id:35ff5292-f071-426c-a649-595c986ef2a6][Sraffian Theory]]
+
+[[id:fbb6c1d6-a334-4097-b763-82a15754b44a][Modern Surplus approach]]
 
 * Introdução ao curso <2021-09-30 qui>
 
@@ -215,7 +219,7 @@ Em equilíbrio parcial, Sraffa concluiu que a curva de oferta de longo prazo (em
   - Depende de suposições sobre as técnicas
 
 
-* Produção de mercadorias por meio de mercadorias: determinação da taxa de lucro e preços relativos em sistemas de capital circulante <2021-10-07 qui> e <2021-10-14 qui>
+* Produção de mercadorias por meio de mercadorias: determinação da taxa de lucro e preços relativos em sistemas de capital circulante <2021-10-07 qui> e <2021-10-28 qui>
 :PROPERTIES:
 :ID:       8149d38f-b940-4d80-9a13-ebf1cc7fc2cb
 :END:
@@ -451,7 +455,7 @@ nesta equação, utiliza-se trabalho direto ($l_{1}$) e indireto ($a_{11}$)[fn::
 Além disso, um /mark-up/ positivo implica uma taxa de lucro positiva (e vice-versa).
 
 
-Em um caso em que o salário é zero, a taxa de lucro máxima dessa economia é dada por:
+Em um caso em que o salário é zero, a taxa de lucro máxima dessa economia é dada por[fn::A taxa máxima de lucro do Sraffa é a mesma que a taxa normal de lucro dos clássicos e de Marx]:
 #+BEGIN_latex
 \begin{equation}
 R_{v=0} = \frac{1 - a_{11}}{a_{11}}
@@ -544,6 +548,61 @@ V_{r=0} = \frac{1}{l_{2} + \left(\frac{l_{1}}{1 - a_{11}}\right)a_{12}}
 #+END_latex
 Por outro lado, só haverá taxa de lucro enquanto existir excedente.
 
+** Modelo com bem não-básico que se reproduz (apêndice B)
+
+
+#+BEGIN_latex
+\begin{equation}
+\begin{cases}
+(1 + r) & = & \frac{1}{}\\
+\frac{p_{2}}{p_{1}} & = & p_{2}\\
+p_{2} & = & (1 + r)\cdot (a_{12} + b_{1}\cdot l_{2} + a_{22}\cdot p_{2})\\
+\end{cases}
+\end{equation}
+#+END_latex
+
+A primeira equação expressa que a taxa de lucro é determinada no mercado do bem-salário.
+Reescrevendo a equação do preço do bem não básico é possível ver uma espécie de "multiplicador de custos".
+Quanto maior o uso deste bem não-básico como seu *próprio insumo* ($a_{22}$), maior o preço relativo.
+
+#+BEGIN_latex
+\begin{equation}
+p_{2} = \left(\frac{1}{(1 - (1+r)\cdot a_{22})}\right)\cdot (1 + r)(a_{12} + b_{1}\cdot l_{2})
+\end{equation}
+#+END_latex
+
+A implicação é que tais bens serão relativamente mais caros.
+Pode-se argumentar que por esta razão são bens de luxo, podendo ser símbolo de status social[fn:: Exemplo: "Caviar é caro porque o esturjão produz pouca ova."].
+Vale a pena ressaltar que tais tipos de bem costumam ter pouca relevância econômica.
+
+Para que este multiplicador de custos seja maior que a unidade, é preciso que:
+#+BEGIN_latex
+\begin{equation*}
+(1 + r) < 1/a_{22}
+\end{equation*}
+#+END_latex
+#+BEGIN_latex
+\begin{equation*}
+ a_{11} + b_{1}\cdot l_{1} > a_{22}
+\end{equation*}
+#+END_latex
+Esta desigualdade expressa que a taxa de reprodução física dos bens básicos (custo unitário em termos físicos) deve ser menor que a dos não-básicos.
+Ou ainda, a taxa de lucro do sistema deve ser menor que a taxa de lucro dos bens não-básicos.
+Isso vale mesmo que o custo unitário físico for nulo.
+Se esta condição não for atendida, será indeterminado.
+
+
+Cabe enfatizar que tal como nos bens *produzíveis*, são os custos de produção que regulam os preços de mercado.
+Para bens *não-produzíveis* pode haver uma especulação mais persistente do que os produzíveis na ausência de alguma forma de *regulação*.
+
+*** Controvérsia com Newman
+
+- Taxa de um bem básico ser insumo dele mesmo provavelmente é bastante menor do que de um bem-não básico já que os bens básicos entram necessariamente na produção dos demais
+  - Justamente por ser um bem-básico o excedente deste setor costuma ser bem pequeno
+- Além disso, pelos bens não-básicos --- por não ser inter-conectados com os demais --- não formam um sistema individual
+  - Portanto, não afetam a taxa de lucro do sistema uma vez que não há feedback (justamente por ser não-básico)
+
+
 ** Preços relativos e distribuição de renda
 
 
@@ -585,13 +644,78 @@ Analisando cada caso,
 
 A implicação da mudança do preço relativo
 
-** A relação salário-lucros e os preços relativos
+** Trabalho comandado e redução a trabalho datado
 
-** Discussão de Sraffa (1960) (PCMC)
-*** Capítulo 1
-*** Capítulo 2
+*** Trabalho comandado
 
-- A taxa máxima de lucro do Sraffa é a mesma que a taxa normal de lucro dos clássicos e de Marx
+#+BEGIN_latex
+\begin{equation}
+p_{1} = w\cdot l_{1}\cdot (1 + r)
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+{p_{1}}{w} = l_{1}\cdot (1 + r)
+\end{equation}
+#+END_latex
+
+Trabalho comandado: Preço da mercadoria dividido pelo salário nominal
+- Utilizado como numerário pelo Smith
+  - É apenas uma medida de valor e não uma teoria
+- Consegue explicitar relação inversa entre salário real e taxa de lucro
+  - Quando a taxa de lucro é positiva, o trabalho comandado vai ser maior que o trabalho incorporado
+
+*** Redução a quantidade de trabalho datado (usando trabalho comandado)
+
+Voltando para o exemplo de produção de dois estágios (peixe e pedra)
+
+#+BEGIN_latex
+\begin{equation}
+p_{2} = l_{2}\cdot(1+r) + w\cdot (a_{12}\cdot l_{1})(1+r)^{2}
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+\frac{p_{2}}{w} = l_{2}\cdot(1+r) + (a_{12}\cdot l_{1})(1+r)^{2}
+\end{equation}
+#+END_latex
+
+Com isso, o preço da mercadoria é expresso como uma soma de trabalho direito e indiretamente utilizado ao grau do quanto é indireto (datado, capitalizado).
+Para obter isso, não é preciso supor que a técnica produtiva não muda.
+Expressando o recíproco, é possível mostrar a relação inversa entre salário real e lucro (para qualquer número de bens-salários):
+#+BEGIN_latex
+\begin{equation}
+\frac{w}{p_{2}} = \frac{1}{l_{2}\cdot(1+r) + (a_{12}\cdot l_{1})(1+r)^{2}}
+\end{equation}
+#+END_latex
+
+- Depende das condições de produção
+- É não-linear
+- Também exclui bens não-básicos
+  - O poder de compra dos trabalhadores para os bens não-básicos não é economicamente relevante porque não limita a taxa de lucro dos capitalistas já que não precisam desses bens não-básicos para sobreviverem
+
+Generalizando:
+#+BEGIN_latex
+\begin{equation}
+\frac{p_{i}}{w} = \sum_{1}^{n} \text{Quantitade de trabalho necessaria no processo j}^{j}
+\end{equation}
+#+END_latex
+em que $n$ é o insumo que só utiliza trabalho.
+
+** Reapresentação utilizando álgebra linear
+
+
+*** Teoremas de Perron-Frobenius
+
+** Sraffa (1960)
+
+*** Capítulo 3
+
+- Salário como parcela do produto (13)
+  - Produto líquido da economia enquanto numerário para assim construir a relação salário-lucro
+    - Uma das curvas possíveis
+-
+
 
 * A explicação monetária da distribuição
 :PROPERTIES:

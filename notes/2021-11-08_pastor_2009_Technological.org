@@ -1,0 +1,67 @@
+:PROPERTIES:
+:ID: 20211108T174226
+:CAPTURED: [2021-11-08 17:42:26]
+:ROAM_REFS: [cite:@pastor_2009_Technological]
+:END:
+#+TITLE: pastor_2009_Technological: Technological Revolutions and Stock Prices - (2009, American Economic Review)
+Time-stamp: 2021-11-08
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+
+#+hugo_section: notes
+
+#+HUGO_TAGS: technological_revolution "innovation_bubble" "dot-com-crisis" "selection_bias" "uncertainty" "technology_adoption"
+#+HUGO_CATEGORIES: "Mainstream"
+
+#+HUGO_DRAFT: true
+#+OPTIONS: num:nil ^:{} toc:nil
+#+BIBLIOGRPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+
+
+* Internal :noexport:
+
+*Reading status:* Partial
+* FISH-5SS
+
+|---------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <40>                                        | <50>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| *Background*                                  | Empirical motivation: Both railroad and [[id:8d3c092d-8546-4dc0-8a04-55d3d8a09191][Dot Com crisis]]                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| *Supporting Ideas*                            | [[id:abfc5875-3c94-4556-a396-ff75507eac1f][Technological revolution]]s tend to be followed by [[id:d6f6bc83-b082-492a-8776-689614359fb6][Asset bubble]]-like patterns. [[id:9ab985f1-543f-40b9-a2e7-4e64cd5d5e9e][Definitions]]: [[id:abfc5875-3c94-4556-a396-ff75507eac1f][Technological revolution]] is defined as large-scale adoption of a new technology. Technology has an intrinsic uncertainty regarding the future effects on future productive and this uncertainty is *time varying*. [[id:abfc5875-3c94-4556-a396-ff75507eac1f][Technological revolution]] are *discontinuous*.                                                                                                                                             |
+| *Purpose*                                     | This paper investigates the new technology *adoption decision*.                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| *Originality/value (Contribution)*            | Clarify why the stock prices of new technologies are initially more volatile and drop once the risk becomes systemic (implemented in large scale).                                                                                                                                                                                                                                                                                                                                                 |
+| *Relevance*                                   | This paper provides the link between [[id:e20ae018-ac3b-4b4e-8108-29f84b898745][Innovation bubble ABM]] and stock price volatility. Since there is intrinsic uncertainty in technology, there is a rationality in waiting for technological adoption.                                                                                                                                                                                                                                                                                           |
+| *Design/methodology/approach*                 | [[id:175002f6-69a8-4fa1-a7da-b76802ecc21e][General Equilibrium Model]] in which agents experiments the new technology in small-scale settings.                                                                                                                                                                                                                                                                                                                                                                                                  |
+| *Results*                                     | The bubble-like pattern is a result of /ex post/ [[id:eca9aba2-a614-4d75-be72-71447cd1dab8][Selection Bias]] since agents did not know at the time of the technological implementation if it would be profitable. The bubble in the stock prices of agents implementing the new technology must be more volatile. When implementation probability increases, stock prices decreases (due to an increase of discount rate). Additionally, the increase in the new economy stock prices is higher because of the higher relative volatility (beta). |
+| *(Interesting) Findings*                      | [[id:abfc5875-3c94-4556-a396-ff75507eac1f][Technological revolution]] reduces stock prices since incumbent firms will not implement the new technologies.                                                                                                                                                                                                                                                                                                                                                                                       |
+| *Research limitations/implications (Critics)* | As the authors point out, this model fails to predict the amount of investment required to accomplish [[id:abfc5875-3c94-4556-a396-ff75507eac1f][Technological revolution]]. Thus, a more integrate framework is needed.                                                                                                                                                                                                                                                                                                                        |
+| *Uncategorized stuff*                         | The new technology does not generates productivity gains immediately since agents find its is better to learn about the technology before adopting it (Such as the overinvestment in infrastructure during the [[id:8d3c092d-8546-4dc0-8a04-55d3d8a09191][Dot Com crisis]]).                                                                                                                                                                                                                                                                   |
+| *5SS*                                         | Stock prices in new technology economy is more volatile due to uncertainty, generating a bubble-like pattern. Since the new technology is implemented in a larger scale, the stock prices drop. Thus, agents may learn about the new technology before implementing.                                                                                                                                                                                                                               |
+|---------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+We develop a general equilibrium model in which stock prices of innovative firms exhibit "bubbles" during technological revolutions. In the model, the average productivity of a new technology is uncertain and subject to learning.
+During technological revolutions, the nature of this uncertainty changes from idiosyncratic to systematic.
+The resulting bubbles in stock prices are observable ex post but unpredictable ex ante, and they are most pronounced for technologies characterized by high uncertainty and fast adoption.
+We find empirical support for the model's predictions in 1830-1861 and 1992-2005 when the railroad and Internet technologies spread in the United States.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+
+
+* Annotations (zotero)
+
+
+
+
+* Additional Backlinks
+
+
+* References
+
+#+print_bibliography:

@@ -2,12 +2,14 @@
 #+TITLE:  Readings List
 #+AUTHOR: Gabriel Petrini
 #+LANG: en
-#+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
-#+INCLUDE: "../header.org"
 #+TODO: READ PARTIAL SKIM RESULTS WAIT MAYBE REF INPROGRESS | REPORT DONE ARCH
 #+PROPERTY: FINISHED_ALL "[ ]" "[X]"
 #+PROPERTY: COLUMNS  %FINISHED(Finished?){X} %TODO(Decision) %ITEM(File) %TAG
 #+EXCLUDE_TAGS: ARCHIVE noexport
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+#+hugo_section: gtd
+#+HUGO_TAGS: workflow gtd
 #+ATTR_HTML: :width 1080px :style float:left;margin-bottom:20px; :class banner
 https://i.pinimg.com/originals/ea/c9/83/eac9832cf6b1ad75af8ccc3ad3db1728.gif
 
@@ -351,17 +353,6 @@ Parts to read:
 
 *** PARTIAL [#C] [[https://www.bis.org/publ/cgfs48.pdf][Operationalising the selection and application of macroprudential instruments]] :REF:QCA:
 
-*** SKIM [#B] [[file:../nots/2021-02-26-10-30-31-sa_2014_CAPITAL.org][sa_2014_CAPITAL: CAPITAL INFLOWS, FINANCIAL STRUCTURE AND HOUSING BOOMS: Capital Inflows, Financial Structure and Housing Booms]] :DIRECTIONALS:Panel:DATA:QCA:
-:PROPERTIES:
-:YEAR:  citeyear***:sa_2014_CAPITAL
-:ZOTERO:   Yes
-:STATUS:   Zotero
-:RELEVANCE: Regular
-:IMPACT:   Low
-:CITE:     Wait
-:KEY: cite:sa_2014_CAPITAL
-:FINISHED: [ ]
-:END:
 
 
 *** SKIM [#B] [[https://academic.oup.com/oep/article-abstract/70/3/821/4948656?redirectedFrom=fulltext][Constraints on LTV as a macroprudential tool: a precautionary tale]] :LTV:QCA:
@@ -369,17 +360,6 @@ Parts to read:
 *** SKIM <2021-03-10 qua> [[https://www.brookings.edu/wp-content/uploads/2016/06/0129_capital_primer_elliott.pdf]] :QCA:DIRECTIONALS:CapitalStructure:
 *** SKIM <2021-03-10 qua> [[https://www.cambridge.org/core/journals/journal-of-financial-and-quantitative-analysis/article/abs/determinants-of-capital-structure-capital-marketoriented-versus-bankoriented-institutions/0F08AA876248523B3D84E645178323DB][The Determinants of Capital Structure: Capital Market-Oriented versus Bank-Or...]] :CapitalStructure:DIRECTIONALS:QCA:
 
-*** SKIM [#C] [[file:../notes/2021-02-26-11-20-18-lacour-little_2010_Homea.org][lacour-little_2010_Homea: Home Equity Extraction by Homeowners: 2000-2006 (2010, Journal of Real Estate Research)]] :DIRECTIONALS:DATA:USA:QCA:
-:PROPERTIES:
-:YEAR:  citeyear*:lacour-little_2010_Homea
-:ZOTERO:   Entry
-:STATUS:   Zotero
-:RELEVANCE: Low
-:IMPACT:   Low
-:CITE:     Wait
-:KEY: cite:lacour-little_2010_Homea
-:FINISHED: [ ]
-:END:
 *** SKIM [#D] [[https://apo.org.au/sites/default/files/resource-files/2021-06/apo-nid312736.pdf][HOUSING: TAMING THE ELEPHANT IN THE ECONOMY]] :HouseMarket:Australia:Report:Introduction:EmpiricalMotivation:
 *** SKIM [#D] [[https://www.ecb.europa.eu/pub/pdf/other/euhousingmarketsen.pdf][Structural factors in the EU housing market]] :DATA:Empirical:Results:HousePrices:HouseMarket:Renting:Mortgage:
 *** RESULTS [#D] [[https://www.tandfonline.com/doi/full/10.1080/09538259.2021.1923282][Punishment or Forgiveness? Loan Modifications in Private Label Residential Mo...]] :Mortgage:USA:Foreclosure:DebtForgiveness:Secutiritization:PolicyDiscussion:PotentialPartners:
@@ -429,14 +409,26 @@ Parts to read:
 
 ** [[file:../notes/20210405101242-bubbles_and_aggregate_demand.org][Bubbles and aggregate demand]] :Dissertation:
 
-*** READ [#A] [[https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.994.8229&rep=rep1&type=pdf][Asset Price Bubbles: A Selective Survey]] <2021-11-01 seg 09:00-12:00> :AssetBubble:ReviewOfLiterature:Survey:FinancialRisk:FinancialCrisis:
+*** INPROGRESS [#A] [[https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.994.8229&rep=rep1&type=pdf][Asset Price Bubbles: A Selective Survey]] <2021-11-01 seg 09:00-12:00> :AssetBubble:ReviewOfLiterature:Survey:FinancialRisk:FinancialCrisis:
 
 *** READ [#A] [[https://www.nber.org/papers/w21486][Leveraged Bubbles (Jordà et. all, 2015)]]
+
+*** READ [#A] [[https://www.nber.org/papers/w18398][Bubbles, Financial Crises, and Systemic Risk]] :StylizedFacts:FinancialCycles:FinancialRisk:FinancialCrisis:ReviewOfLiterature:
+DEADLINE: <2021-11-30 ter>
+
+*** READ [#B] [[https://www.nber.org/papers/w18905][Bubbles, Crises, and Heterogeneous Beliefs]] :AssetBubbles:Heterogeinity:FinancialCrisis:ReviewOfLiterature:
+DEADLINE: <2021-11-30 ter>
 
 *** PARTIAL [#A] [[https://www.imf.org/external/pubs/ft/wp/2015/wp1527.pdf][Asset Bubbles:Re-thinking Policy for the Age of Asset Management]] <2021-11-02 ter 09:00-12:00> :AssetBubble:FinancialStability:MacroPrudentialPolicy:PolicyDiscussion:
 *** INPROGRESS [#B] [[https://pubs.aeaweb.org/doi/pdfplus/10.1257/jep.4.2.13][Symposium on Bubbles]] :ReviewOfLiterature:Fundamentals:
 
-*** PARTIAL [#B] [[https://www.ecb.europa.eu/pub/pdf/scpwps/ecb.wp2336~8b1c61b9a9.en.pdf][Financial cycles, credit bubbles  and stabilization policies]] <2021-11-02 ter 15:15-18:15> :BusinessCycle:PolicyOriented:PolicyDiscussion:
+*** RESULTS [#A] [[https://www.sciencedirect.com/science/article/abs/pii/S1042957308000764][Liquidity and leverage - ScienceDirect]] :Empirical:Leverage:FinancialCycles:Canonical:StylizedFacts:AssetBubbles:Liquidity:
+
+*** SKIM [#B] [[https://www.bis.org/publ/work395.htm][The Financial Cycle and Macroeconomics: What Have We Learnt?]] :StylizedFacts:Canonical:FinancialCycles:
+
+*** SKIM [#C] [[https://www.journals.uchicago.edu/doi/abs/10.1086/378531][Overconfidence and Speculative Bubbles]] :AssetBubbles:Heterogeinity:Overconfidence:
+*** REPORT [#B] [[https://www.ecb.europa.eu/pub/pdf/scpwps/ecb.wp2336~8b1c61b9a9.en.pdf][Financial cycles, credit bubbles  and stabilization policies]] <2021-11-02 ter 15:15-18:15> :BusinessCycle:PolicyOriented:PolicyDiscussion:
+CLOSED: [2021-11-08 seg 11:22]
 
 ** Innovation Bubble
 

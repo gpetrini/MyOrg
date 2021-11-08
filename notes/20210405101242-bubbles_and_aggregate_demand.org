@@ -2,7 +2,7 @@
 :ID:       a6a37eb8-fe7c-4fe2-b2d2-3fe96d3eca04
 :END:
 #+title: Bubbles and aggregate demand
-
-[[id:673f4082-43a5-4f2a-a9c0-759304a2bb2c][ABM Readings]]
-
-[[id:96cca9b2-3b1c-4e2d-bf63-c2d8b032f096][Panel readings]]
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+#+hugo_section: notes
+#+HUGO_CATEGORIES: placeholder

@@ -1,7 +1,7 @@
 :PROPERTIES:
-:ID:       4833f2ca-f363-46ab-af66-6a526710742f
+:ID:       175002f6-69a8-4fa1-a7da-b76802ecc21e
 :END:
-#+title: Innovation-led growth models
+#+title: General Equilibrium Model
 
 #+HUGO_AUTO_SET_LASTMOD: t
 #+hugo_base_dir: ~/BrainDump/
@@ -11,4 +11,3 @@
 #+HUGO_TAGS: placeholder
 
 #+OPTIONS: num:nil ^:{} toc:nil
-

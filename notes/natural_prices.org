@@ -1,7 +1,11 @@
 :PROPERTIES:
-:ID:       97ad0640-ea89-4ce4-8ae7-fa03dfa89645
+:ID:       4fe0d267-ad06-4a8a-bc89-2ab6e37f6b61
 :END:
 #+title: Natural Prices
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+#+hugo_section: notes
+#+HUGO_TAGS: wiki definition
 
 [[id:9ab985f1-543f-40b9-a2e7-4e64cd5d5e9e][Definitions]]
 

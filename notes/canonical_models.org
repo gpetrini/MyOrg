@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       434076e6-3bce-497b-ade1-7f8e3fde763e
+:END:
+#+title: Canonical Models
+
+#+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
+
+#+OPTIONS: num:nil ^:{} toc:nil
+
+#+INCLUDE: ../header.org
+
+This is a placeholder for some cannonical models.

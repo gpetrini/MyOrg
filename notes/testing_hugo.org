@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       f4371d58-5193-4f42-b619-d27aaaf0cfdb
+:END:
+#+title: Testing Hugo
+
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+#+hugo_section: notes
+#+HUGO_TAGS: placeholder
+
+#+OPTIONS: num:nil ^:{} toc:nil
+
+Testing ox-hugo support.
+
+\(2+2\)
+
+#+BEGIN_latex
+\begin{equation}
+2+2
+\end{equation}
+#+END_latex

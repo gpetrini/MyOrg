@@ -1,7 +1,7 @@
 :PROPERTIES:
-:ID:       4833f2ca-f363-46ab-af66-6a526710742f
+:ID:       cb63370c-4a4c-49d0-84e6-4c8d878c2c25
 :END:
-#+title: Innovation-led growth models
+#+title: Countercyclical Capital Buffers
 
 #+HUGO_AUTO_SET_LASTMOD: t
 #+hugo_base_dir: ~/BrainDump/
@@ -11,4 +11,3 @@
 #+HUGO_TAGS: placeholder
 
 #+OPTIONS: num:nil ^:{} toc:nil
-

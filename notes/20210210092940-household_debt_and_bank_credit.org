@@ -15,8 +15,11 @@
 #+PROPERTY: CITE_ALL Yes No Wait
 #+PROPERTY: YEAR_ALL
 #+PROPERTY: KEY_ALL
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+#+hugo_section: notes
+#+HUGO_CATEGORIES: placeholder wiki
 
-[[id:96cca9b2-3b1c-4e2d-bf63-c2d8b032f096][Panel readings]]
 
 #+BEGIN: columnview :maxlevel 2 :id global
 #+END
