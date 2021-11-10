@@ -1,30 +1,18 @@
 :PROPERTIES:
 :ID: 20211103T164648
 :CAPTURED: [2021-11-03 16:46:48]
-:ROAM_REFS: cite:dosi_2010_Schumpeter
+:ROAM_REFS: @dosi_2010_Schumpeter
 :END:
 #+TITLE: dosi_2010_Schumpeter: Schumpeter meeting Keynes: a policy-friendly model of endogenous growth and business cycles - (2010, Journal of Economic Dynamics and Control)
 Time-stamp: 2021-11-03
-#+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
 #+OPTIONS: num:nil ^:{} toc:nil
-#+INCLUDE: ../header.org
-* Backlinks
-
-
-
-
-[[id:9789613e-f409-4593-b958-a2c9c8283bb6][Agent Based Models]]
-
-[[id:bf204d00-40bc-40ff-bd28-829072390a09][Schumpeterian growth models]]
-
-[[id:4833f2ca-f363-46ab-af66-6a526710742f][Innovation-led growth models]]
-
-[[id:434076e6-3bce-497b-ade1-7f8e3fde763e][Canonical Models]]
-
-[[id:5c617815-6d12-49eb-8f98-2459bc7f1810][Endogenous Growth]]
-
-[[id:478f823f-44e4-47c5-b723-163934a57a59][Business Cycles]]
-
+#+hugo_base_dir: ~/BrainDump/
+#+hugo_section: notes
+#+HUGO_TAGS: financial_bubbles innovation technological_revolution abm
+#+HUGO_CATEGORIES: Schumpeterian "Journal of Economic Dynamics and Control"
+#+PROPERTY:header-args R :results output drawer :eval never-export :session KS :exports both
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
 
 * FISH-5SS
 
@@ -58,14 +46,33 @@ This paper studies an agent-based model that bridges Keynesian theories of deman
 This Section present some primary analysis of the following experiments:
 
 
-|-------------------------------------+------+----------+---------+---------+--------|
-|-------------------------------------+------+----------+---------+---------+--------|
-| Variable                            | LSD  | Baseline | Minimum | Maximum | Type   |
-|-------------------------------------+------+----------+---------+---------+--------|
-| R&D investment propensity           | nu   |     0.04 |     0.0 |    0.15 | Linear |
-| R&D allocation to innovative search | xi   |      0.5 |     0.0 |    0.95 | Linear |
-| "Physical" scrapping age            | eta  |       20 |       5 |      40 | Linear |
-| Desired inventories                 | iota |     0.10 |     0.0 |     0.2 | Linear |
-| Planned utilization level           | u    |     0.75 |     0.6 |     0.9 | Linear |
-|-------------------------------------+------+----------+---------+---------+--------|
-|-------------------------------------+------+----------+---------+---------+--------|
+#+CAPTION: K-S (original model) stress test: Linear sensitivity analysis
+|--------+-------------------------------------+------+----------+-----+------+------|
+|--------+-------------------------------------+------+----------+-----+------+------|
+| File   | Variable                            | LSD  | Baseline | Min |  Max |  New |
+|--------+-------------------------------------+------+----------+-----+------+------|
+| S2.lsd | R&D investment propensity           | nu   |     0.04 | 0.0 |  0.1 | 0.08 |
+| S3.lsd | R&D allocation to innovative search | xi   |      0.5 | 0.0 | 0.95 |  0.7 |
+| S4.lsd | "Physical" scrapping age            | eta  |       20 |   5 |   40 |      |
+| S5.lsd | Desired inventories                 | iota |     0.10 | 0.0 |  0.2 |      |
+| S6.lsd | Planned utilization level           | u    |     0.75 | 0.7 |  0.9 |      |
+|--------+-------------------------------------+------+----------+-----+------+------|
+|--------+-------------------------------------+------+----------+-----+------+------|
+
+* Aditional Backlinks
+
+[[id:9789613e-f409-4593-b958-a2c9c8283bb6][Agent Based Models]]
+
+[[id:bf204d00-40bc-40ff-bd28-829072390a09][Schumpeterian growth models]]
+
+[[id:4833f2ca-f363-46ab-af66-6a526710742f][Innovation-led growth models]]
+
+[[id:434076e6-3bce-497b-ade1-7f8e3fde763e][Canonical Models]]
+
+[[id:5c617815-6d12-49eb-8f98-2459bc7f1810][Endogenous Growth]]
+
+[[id:478f823f-44e4-47c5-b723-163934a57a59][Business Cycles]]
+
+* References
+
+#+print_bibliography

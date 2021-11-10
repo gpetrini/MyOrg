@@ -1,0 +1,59 @@
+:PROPERTIES:
+:ID: 20211109T094429
+:CAPTURED: [2021-11-09 09:44:29]
+:ROAM_REFS: @cornell_2020_Big
+:END:
+#+TITLE: cornell_2020_Big: The Big Market Delusion: valuation and Investment Implications - (2020, Financial Analysts Journal)
+Time-stamp: 2021-11-09
+#+hugo_base_dir: ~/BrainDump/
+
+#+hugo_section: notes
+
+#+hugo_categories: "Financial Analysts Journal"
+#+HUGO_TAGS: 
+
+#+OPTIONS: num:nil ^:{} toc:nil
+#+BIBLIOGRPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+
+* FISH-5SS
+
+|---------------------------------------------+-----|
+| <40>                                        |<50> |
+| *Background*                                  |     |
+| *Supporting Ideas*                            |     |
+| *Purpose*                                     |     |
+| *Originality/value (Contribution)*            |     |
+| *Relevance*                                   |     |
+| *Design/methodology/approach*                 |     |
+| *Results*                                     |     |
+| *(Interesting) Findings*                      |     |
+| *Research limitations/implications (Critics)* |     |
+| *Uncategorized stuff*                         |     |
+| *5SS*                                         |     |
+|---------------------------------------------+-----|
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+In entrepreneurs’ minds, big markets offer the promise of easily scalable revenues that, coupled with profitability, can translate into large profits. This article examines how the “big market promise” affects business formation and financing, with a focus on the role of overconfidence on the part of both entrepreneurs and their financiers (venture capitalists and public equity) in creating a collective overpricing of companies in alleged big markets—and an inevitable correction. Three case studies illustrate this thesis—one in which the process has fully played out (1990s dot-com retail), one in which it has been unfolding for a while (online advertising), and one in which it is just beginning (the cannabis market). We suggest several lessons for investors, regulators, and businesses based on these case studies.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+
+
+* Annotations (zotero)
+
+
+
+
+* Additional Backlinks
+
+
+* References
+
+
+#+print_bibliography:

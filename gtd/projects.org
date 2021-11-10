@@ -42,11 +42,9 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 *** TODO Introduction
 
-**** TODO Quick overview of bubble literature
-
 **** TODO Define and introduce Perez topology and the "Big Market delusion"
 
-***** TODO Define Perez topology
+***** STRT Define Perez topology
 
 ***** TODO Define Big market delusion
 
@@ -81,6 +79,8 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 **** TODO Present arguments
 
 **** TODO Present symbolic model
+
+*** TODO Update to org-cite syntax
 
 ** TODO Readings steps
 
@@ -126,7 +126,7 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 *** TODO Initialization
 
-*** WAIT Endogeinity mechanism
+*** WAIT Expectational heterogeinity
 
 *** WAIT Government
 
@@ -142,7 +142,6 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 **** TODO Escolher melhor modelo e escrever script R
 
-***** TODO Comparar resultados com os do python
 
 **** TODO Criticar uso da taxa de investimento errada
 
@@ -170,13 +169,10 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 **** TODO Testar inclusão de dummies
 
-**** TODO Estimar outra ordenação de Cholesky
+**** TODO Plotar IRF e FEVD com lags alternativos
 
 *** TODO [#C] Apresentar literatura de fatos estilizados
 
-**** TODO Gráfico da relação do grau de utilização e taxa de investimento
-
-**** TODO Indicar que gastos autônomos possuem um componente cíclio
 
 *** HOLD Esclarecimentos teóricos (Lucas e Summa)
 

@@ -3,6 +3,8 @@
 :END:
 #+title: Agent Based Models
 
-#+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+#+hugo_section: notes
+#+HUGO_TAGS: placeholder
 #+OPTIONS: num:nil ^:{} toc:nil
-#+INCLUDE: ../header.org

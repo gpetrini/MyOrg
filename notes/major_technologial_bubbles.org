@@ -1,10 +1,15 @@
 :PROPERTIES:
-:ID:       5c617815-6d12-49eb-8f98-2459bc7f1810
+:ID:       d93f882e-acb9-4d3f-aa67-ace510eee393
+:ROAM_ALIASES: "Technological bubble"
 :END:
-#+title: Endogenous Growth
+#+title: Major Technologial Bubbles
 
 #+HUGO_AUTO_SET_LASTMOD: t
 #+hugo_base_dir: ~/BrainDump/
+
 #+hugo_section: notes
+
 #+HUGO_TAGS: placeholder
+#+HUGO_CATEGORIES: Definition
+
 #+OPTIONS: num:nil ^:{} toc:nil
