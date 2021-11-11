@@ -171,6 +171,8 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 **** TODO Plotar IRF e FEVD com lags alternativos
 
+**** TODO Corrigir código inline
+
 *** TODO [#C] Apresentar literatura de fatos estilizados
 
 

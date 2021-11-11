@@ -646,7 +646,12 @@ A implicação da mudança do preço relativo
 
 ** Trabalho comandado e redução a trabalho datado
 
-*** Trabalho comandado
+
+
+*** Trabalho comandado :ATTACH:
+:PROPERTIES:
+:ID:       64dd467a-8fb7-4f13-a13a-933529796b8b
+:END:
 
 #+BEGIN_latex
 \begin{equation}
@@ -665,7 +670,10 @@ Trabalho comandado: Preço da mercadoria dividido pelo salário nominal
 - Consegue explicitar relação inversa entre salário real e taxa de lucro
   - Quando a taxa de lucro é positiva, o trabalho comandado vai ser maior que o trabalho incorporado
 
-*** Redução a quantidade de trabalho datado (usando trabalho comandado)
+*** Redução a quantidade de trabalho datado (usando trabalho comandado) :ATTACH:
+:PROPERTIES:
+:ID:       fc165bc7-fb2b-4472-b4cb-6b2ad7da9d63
+:END:
 
 Voltando para o exemplo de produção de dois estágios (peixe e pedra)
 
@@ -702,20 +710,191 @@ Generalizando:
 #+END_latex
 em que $n$ é o insumo que só utiliza trabalho.
 
+
+[[attachment:_20211111_154307screenshot.png]]
+
+
 ** Reapresentação utilizando álgebra linear
 
 
 *** Teoremas de Perron-Frobenius
 
-** Sraffa (1960)
 
-*** Capítulo 3
+* Renda
+:PROPERTIES:
+:ID:       237ef9ec-3dfc-4814-946a-9f471f29f4cc
+:END:
 
-- Salário como parcela do produto (13)
-  - Produto líquido da economia enquanto numerário para assim construir a relação salário-lucro
-    - Uma das curvas possíveis
--
+** Introdução
 
+Supondo que o conceito clássico de concorrência (mobilidade de capitais, [[id:048efa50-0642-4bf9-adf1-7974b1624492][Classical competition]]) e coexistência de técnicas, a técnica dominante irá determinar os preços.
+Em síntese, o preço de determinada mercadoria depende dos custo dos concorrentes e não (apenas) dos próprios custos.
+O preço de produção, portanto, é determinado pelo capital regulador que depende da técnica socialmente necessária[fn::Fazendo uma analogia com a teoria marginalista, o preço seria determinado pelo custo médio do produtor marginal, e não pelo custo marginal.].
+
+
+Aqueles que adotam uma técnica superior (custo menor que o da técnica dominante), auferem lucros anormais.
+No caso de firmas que inovam de forma persistente [[[roam:Technological revolution]]], auferem lucros anormais de forma persistente, não sendo necessário alterar a teoria dos preços relativos.
+
+Tal relação, no entanto, é diferente para recursos naturais[fn:: Sraffa trada recursos naturais renováveis e não-renováveis da mesma forma no capítulo XI.].
+Isso porque não há a possibilidade irrestrita de a técnica dominante[fn::Isso pode ser estendido, por exemplo, para o case de segredo industrial.].
+A taxa de lucro, portanto, passaria a depender também da renda associada ao uso desse tipo de mercadoria.
+No caso clássico do modelo da renda da terra de Ricardo [[[id:b2250ff4-9bf2-419c-ab5b-51408c6f7ce8][Land prices]]], a renda da terra paga aos donos da terra igualará a taxa de lucro líquida de aluguéis entre capitalistas via concorrência [[[id:cec34086-7f97-42f0-8a74-dbd75eedac2e][Rent prices]]].
+
+** Renda diferencial "extensiva" (Tipo 1)
+
+*** Hipóteses
+
+#+BEGIN_latex
+\begin{equation}
+\begin{cases}
+t_{2} = \frac{T_{2}}{X_{2}}\\
+a_{12} \oplus l_{2} \oplus t_{2} \rightarrow 1
+\end{cases}
+\end{equation}
+#+END_latex
+
+- $t_{2}$ :: relação técnica terra-produto
+
+Suponha que exista três tipo de terra para produzir este bem ($T^{I\star}$, $T^{II\star}$ e $T^{III\star}$) em que III é a mais produtiva.
+Para a produção com o método III é preciso que a disponibilidade de terra:
+#+BEGIN_latex
+\begin{equation}
+T^{III\star} \geq t_{2}^{III}\cdot X_{2}
+\end{equation}
+#+END_latex
+Essa restrição indica qual é o máximo de produção viável usando esta técnica.
+Para atender um nível de demanda maior que este limite, é preciso utilizar outra técnica[fn::Isso não implica que existe uma lei geral de rendimentos decrescente. Também não há uma característica da agricultura ter rendimentos decrescentes e a indústria ter rendimentos crescentes. Ricardo estava supondo que o progresso técnico não evoluía com a mesma velocidade que a extensão da terra. Na teoria neoclássica, existe uma infinidade de métodos para usar os mesmos fatores.].
+
+*** Bens não-básicos
+
+#+BEGIN_latex
+\begin{equation}
+\begin{cases}
+p_{2} = (a_{12} + b_{1}l_{2})^{I}\cdot p_{1}\cdot (1+r)\\
+p_{2} = (a_{12} + b_{1}l_{2})^{II}\cdot p_{1}\cdot (1+r) + t_{2}\cdot\sigma^{II}\\
+p_{2} = (a_{12} + b_{1}l_{2})^{III}\cdot p_{1}\cdot (1+r) + t_{2}\cdot\sigma^{III}\\
+p_{1} = p_{1}
+\end{cases}
+\end{equation}
+#+END_latex
+
+Enquanto a terra III for abundante, não haverá renda deste espaço ($\sigma^{III} = 0$).
+Se outra terras menos produtivas começarem a ser ocupadas, surgirá um *diferencial de custos* (renda diferencial tipo 1, [[id:1577e614-b964-4b78-a601-f1062b373948][Extensive Differential Rent]]) que, regulado pela concorrência, será eliminado com pagamento da renda da terra.
+O pagamento da renda diferencial só surgirá se a terra mais produtiva for completamente utilizada.
+Em resumo, surgirá o pagamento de renda na terra de melhor qualidade ($\sgima^{III}> 0$) e o preço será regulado pelos custos da terra menos produtiva[fn::Não é necessariamente a que produz mais, mas sim a que tem menores custos.].
+
+Este sistema é completamente determinado.
+Para isso, a seguinte condição deve ser atendida:
+#+BEGIN_latex
+\begin{equation}
+\sigma^{I} \cdot \sigma^{II} \cdot \ldots \cdot \sigma^{N} = 0
+\end{equation}
+#+END_latex
+Para isso, é preciso que não exista renda para uma das terras (já que para as demais será não-nula).
+
+
+A renda determinada pela concorrência impor a taxa de lucro uniforme.
+Já, a taxa de lucro não terá uma relação com o bem não-básico.
+
+*** Bens básicos
+
+
+#+BEGIN_latex
+\begin{equation}
+\begin{cases}
+p_{1} = (a_{12} + b_{1}l_{2})^{I}\cdot p_{1}\cdot (1+r)\\
+p_{1} = (a_{12} + b_{1}l_{2})^{II}\cdot p_{1}\cdot (1+r) + t_{1}\cdot\sigma^{II}\\
+p_{1} = (a_{12} + b_{1}l_{2})^{III}\cdot p_{1}\cdot (1+r) + t_{1}\cdot\sigma^{III}\\
+p_{1} = p_{1}
+\end{cases}
+\end{equation}
+#+END_latex
+
+Seguindo:
+#+BEGIN_latex
+\begin{equation}
+\begin{cases}
+1 = (a_{12} + b_{1}l_{2})^{I}\cdot p_{1}\cdot (1+r)\\
+1 = (a_{12} + b_{1}l_{2})^{II}\cdot p_{1}\cdot (1+r) + t_{1}\cdot\sigma^{II}\\
+1 = (a_{12} + b_{1}l_{2})^{III}\cdot p_{1}\cdot (1+r) + t_{1}\cdot\sigma^{III}\\
+\end{cases}
+\end{equation}
+#+END_latex
+
+Neste caso, a taxa de lucro será determinada pela produção dos bens básicos.
+Assim, determina tanto a taxa de lucro quanto a renda diferencial.
+Basta lembrar a discussão entre Ricardo e Malthus em que afirmava-se que a renda da terra iria comprimir a taxa de lucro uma vez que o custo de produção do bem básico aumentaria.
+
+Em relação ao Ricardo, a contribuição de Sraffa é apontar que a ordenação da terra não pode ser desassociada da distribuição.
+Para a teoria clássica, esta questão da ordenação depender da taxa de lucro não gera nenhuma inconsistência.
+Isso vale para qualquer diferencial de custo.
+Já para a construção de uma função demanda por terra bem comportada negativamente relacionada ao seu preço, como na teoria marginalista, não é possível.
+
+*** Observação sobre a relação entre renda diferencial intensiva e preço
+
+A renda da terra não determina o preço, mas sim o oposto.
+O nível da renda da terra é elevado porque a taxa de lucro do bem produzido nela é elevado.
+
+** Renda diferencial intensiva (Tipo 2, [[id:d891bce2-de97-4f40-816a-aec7120092c9][Intensive Differential Rent]])
+
+Neste caso, diferentes métodos de produção coexistem em um mesmo espaço.
+A diferença em relação ao tipo 1 é que a renda será a mesma entre mesmas qualidades de terra.
+
+Suponha que a demanda efetiva por determinado bem aumente para um nível além daquele possível com o método de produção vigente.
+Para atender esse nível de demanda maior, é preciso que exista um método de produção que utilize menos unidades de terra por unidade de produto.
+Possivelmente, esse método de produção que produz mais tem custos maiores, caso contrário já seria utilizado anteriormente.
+
+Suponha três métodos de produção utilizado no mesmo espaço ($A$, $B$ e $C$).
+Sraffa argumenta que na medida que a terra for utilizada de forma intensiva, somente *duas* irão coexistir no *mesmo tipo de terra* e serem compatíveis com um nível de lucro  e de renda positivos[fn::A renda da terra extensiva pode estar associada a $N$ qualidades de terra.].
+Isso porque a renda da terra será igual para ambos os métodos.
+Vale pontuar que para que exista essa dualidade de métodos, é preciso que a terra seja escassa em relação a demanda efetiva.
+Desse modo, para os bens não-básicos:
+
+#+BEGIN_latex
+\begin{equation}
+\begin{cases}
+p_{1} = (a_{12} + b_{1}l_{2})^{A}\cdot p_{1}\cdot (1+r) + t^{A}\cdot\sigma\\
+p_{1} = (a_{12} + b_{1}l_{2})^{B}\cdot p_{1}\cdot (1+r) + t^{B}\cdot\sigma\\
+p_{1} = 1
+\end{cases}
+\end{equation}
+#+END_latex
+
+Resolvendo para a renda da terra:
+#+BEGIN_latex
+\begin{equation}
+\sigma = \frac{(((a_{12} + b_{1}l_{2})^{A} - (a_{12} + b_{1}l_{2})^{B})\cdot (1+r))}{t^{A} - t^{B}}
+\end{equation}
+#+END_latex
+Essa equação expressa que a renda é função do custo diferencial por hectare.
+Por fim, a renda do tipo II entraria no preço.
+
+Sraffa argumenta que é pouco provável que somente a renda tipo II exista, mas que é possível que somente a tipo I exista.
+Isso porque a existência somente da renda do tipo II supõe homogeneidade da qualidade da terra.
+Dito isso, é esperado que ambos os tipos coexistam na realidade.
+
+** Renda absoluta
+
+Os tipos de renda anteriores são provenientes de diferencial de custos.
+A renda absoluta, por outro lado, não tem associação com a concorrência, mas sim com fatores extra-econômicos.
+Além disso, não precisa supor coexistência de técnicas.
+
+#+BEGIN_latex
+\begin{equation}
+p_{1} = (a_{12} + b_{1}l_{2})^{I}\cdot p_{1}\cdot (1+r) + t\cdot\sigma_{Abs}
+\end{equation}
+#+END_latex
+Essa renda estaria no cálculo da determinação dos preços.
+É uma convenção que tal renda seja representada como fração do produto bruto.
+
+*** Marx
+
+Marx afirma que parte da mais-valia seria direcionada para a renda absoluta, enquanto não seria o caso para a renda diferencial.
+Vale apontar que Marx achava que a renda diferencial de Ricardo seria razoável apenas em condições restritas (ex: novas colônias).
+
+A renda absoluta em Marx está sujeita aos problemas do procedimento da transofrmação (adiante, [[roam:Marx depois de Sraffa]]).
+Além disso, afirma que existiria um limite superior para a renda absoluta.
+A consequência é que se a renda absoluta fosse muito elevada, o preço relativo na agricultura seria menor que os valores de produção.
 
 * A explicação monetária da distribuição
 :PROPERTIES:
@@ -724,11 +903,6 @@ em que $n$ é o insumo que só utiliza trabalho.
 
 * Concorrência e gravitação
 
-
-* Renda
-:PROPERTIES:
-:ID:       237ef9ec-3dfc-4814-946a-9f471f29f4cc
-:END:
 
 * Produção conjunta e capital fixo em Sraffa
 :PROPERTIES:
