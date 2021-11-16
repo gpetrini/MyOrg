@@ -1,0 +1,66 @@
+:PROPERTIES:
+:ID: 20211115T181643
+:CAPTURED: [2021-11-15 18:16:43]
+:ROAM_REFS: cite:ofek_2003_DotCom
+:mtime:    20211115213320 20211115181730
+:END:
+#+TITLE: ofek_2003_DotCom: DotCom Mania: the Rise and Fall of Internet Stock Prices - (2003, The Journal of Finance)
+Time-stamp: 2021-11-15
+#+hugo_base_dir: ~/BrainDump/
+
+#+hugo_section: notes
+
+#+hugo_categories: "The journal of Finance"
+#+HUGO_TAGS: "Asset bubbles" "Short sale restrictions"
+
+#+OPTIONS: num:nil ^:{} toc:nil
+#+BIBLIOGRPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+* FISH-5SS
+
+|---------------------------------------------+-----|
+| <40>                                        |<50> |
+| *Background*                                  |     |
+| *Supporting Ideas*                            |     |
+| *Purpose*                                     |     |
+| *Originality/value (Contribution)*            |     |
+| *Relevance*                                   |     |
+| *Design/methodology/approach*                 |     |
+| *Results*                                     |     |
+| *(Interesting) Findings*                      |     |
+| *Research limitations/implications (Critics)* |     |
+| *Uncategorized stuff*                         |     |
+| *5SS*                                         |     |
+|---------------------------------------------+-----|
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+This paper explores a model based on agents with heterogenous beliefs facing short sales restrictions, and its explanation for the rise, persistence, and eventual fall of Internet stock prices. First, we document substantial short sale restrictions for Internet stocks. Second, using data on Internet holdings and block trades, we show a link between heterogeneity and price e¡ects for Internet stocks.Third, arguing that lockup expirations are a loosening of the short sale constraint, we document average, long-run excess returns as low as À 33 percent for Internet stocks postlockup.We link the Internet bubble burst to the unprecedented level of lockup expirations and insider selling.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+
+
+* Annotations (zotero)
+
+
+
+* Additional Backlinks
+
+[[id:8d3c092d-8546-4dc0-8a04-55d3d8a09191][Dot Com crisis]]
+
+[[id:d1e7f9d2-e144-4f49-931e-5c0f3cd6d5c8][Autonomous Investment Bubble]]
+
+[[id:d6f6bc83-b082-492a-8776-689614359fb6][Asset bubble]]
+
+[[id:a3b9da87-5fcc-4e91-a3e7-65531ab57ad6][Heterogeneous expectations]]
+
+[[id:4dd9747a-0849-49bc-99dc-f226c5605270][Short sales constraints]]
+
+* References
+
+#+print_bibliography:

@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       aa9d846a-4b1f-4a8e-b015-76ec31d1d9d7
+:mtime:    20211115152639
+:END:
+#+title: Monetary theory of distribution
+
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+
+#+hugo_section: notes
+
+#+HUGO_TAGS: placeholder
+
+#+OPTIONS: num:nil ^:{} toc:nil
+

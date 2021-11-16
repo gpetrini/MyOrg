@@ -140,8 +140,18 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 *** TODO [#A] Escrever relatório dos resultados
 
 
-**** TODO Escolher melhor modelo e escrever script R
 
+**** TODO Tabelas pre-estimação
+
+***** TODO Raíz unitária
+
+- Corrigir starts
+
+***** TODO Cointegração
+
+***** TODO Número de lags
+
+***** TODO Ajustar posição da Fonte
 
 **** TODO Criticar uso da taxa de investimento errada
 
@@ -158,20 +168,15 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 ***** TODO Tabelas em Latex
 
-
-**** TODO Conferir interpretação IRF acumulada
-
-- Efeito sobre a variação ou nível?
-  - Ao que tudo indica, sobre a variação (já que a série está em primeira diferença)
-
-
-**** STRT Apresentar dados utilizados
+***** TODO Adicionar "Quarters" no título do eixo x
 
 **** TODO Testar inclusão de dummies
 
+**** TODO Testar mudança do número de runs e intervalo de confiança
+
 **** TODO Plotar IRF e FEVD com lags alternativos
 
-**** TODO Corrigir código inline
+**** TODO Ver necessida de citar autres dos testes de hipótese
 
 *** TODO [#C] Apresentar literatura de fatos estilizados
 
