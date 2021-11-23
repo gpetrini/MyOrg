@@ -48,20 +48,6 @@ https://i.pinimg.com/originals/ea/c9/83/eac9832cf6b1ad75af8ccc3ad3db1728.gif
 
 *Description:* ABM exclusively readings
 
-*Chapter goals:* Relates the financial and spatial dimension of the housing market and connects to the house price mechanisms in order to explain how asset inflation affects the business cycle.
-
-*Empirical motivation:* No consensuns on the causes of the recent GFC episode: leverage? interest rates? leniency? speculation? The new narrative is just a reflection about that discenssus and highlights the relevance of agents heterogeinity.
-
- Usefull links
-- [[http://jasss.soc.surrey.ac.uk/8/1/5.html][JASS - Journal of Artificial Societies and Social Simulation]]
-- [[http://www2.econ.iastate.edu/classes/econ308/tesfatsion/sylVIITrento.LT.htm][VII Trento Summer School ]]
-- [[http://www.brettparris.com/abm/][Brettparis]]
-- [[https://www.comses.net/resources/education/][Educational Materials]]
-- [[http://www2.econ.iastate.edu/tesfatsi/ace.htm][ABM Repo]]
-- [[http://www2.econ.iastate.edu/tesfatsi/abmread.htm#Readings][ABM for new users]]
-- [[https://www.complexityexplorer.org/courses/101-introduction-to-agent-based-modeling-spring-2020/segments/9191?summary][Intro to ABM Course]]
-- [[http://www2.econ.iastate.edu/tesfatsi/publish.htm][Journals]]
-- [[http://www2.econ.iastate.edu/classes/econ308/tesfatsion/syl308.htm][Syllabus for Economics 308]]
 
 *** General ABM
 
@@ -372,6 +358,7 @@ Parts to read:
 *** MAYBE <2021-03-08 seg> [[https://www.tandfonline.com/doi/abs/10.1080/00036846.2021.1885613][Forecasts of growth in US residential investment: accuracy gains from consume...]] :Panel:Residential:
 ** [[file:../notes/20210210092940-household_debt_and_bank_credit.org][Household debt and Bank credit]] :Debt:
 
+*** READ [#A] [[https://link.springer.com/article/10.1007/s43253-021-00061-4][Financialisation: continuity and change— introduction to the special issue | ...]] :Financialization:Housing:Mortgaging:ReviewOfLiterature:TheoreticalMotivation:
 *** READ [#A] [[https://www.oxfordhandbooks.com/view/10.1093/oxfordhb/9780199640935.001.0001/oxfordhb-9780199640935-e-025][Systemic Risk in Banking: An Update - Oxford Handbooks]] :QCA:Banking:
 *** PARTIAL [#A] HOUSEHOLD DEBT IN OECD COUNTRIES: STYLISED FACTS AND POLICY ISSUES :OECD:Panel:
    :PROPERTIES:
@@ -439,6 +426,19 @@ CLOSED: [2021-11-08 seg 11:22]
 
 - Could be interesting to discuss whether private or public innovation policy is sustainable.
 
+
+*** SKIM [#B]  [[https://doi.org/10.1007/s10614-005-6158-z][Evaluating Market Attractiveness: Individual Incentives Versus Industry Profitability]]
+
+*Reason:* May have some interesting modeling procedure for individual- and industry-level decisions
+
+*** SKIM [#A] [[https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2369806][Animal Spirits, Heterogeneous Expectations and the Emergence of Booms and Busts]]
+
+*Reason:* May provide empirical evidence for autonomous investment as a unsustainable process
+
+
+
+*** SKIM [#B] [[https://onlinelibrary.wiley.com/doi/10.1111/j.1467-6419.2012.00724.x][A SURVEY OF THE INNOVATION SURVEYS]]
+
 ** New Narrative :NewNarrative:
 
 ** Super ABM: Non-residential investment related
@@ -474,6 +474,60 @@ CLOSED: [2021-11-08 seg 11:22]
 *** INPROGRESS [#A] [[http://rkaniel.simon.rochester.edu/papers/bubbletechnology.pdf][Technological innovation and real investment booms and busts]]
 
 *** INPROGRESS [[https://doi.org/10.1093/cje/bep028][The double bubble at the turn of the century: technological roots and structural implications]]
+
+** Expectations formation
+
+*** READ [#A] [[https://www.sciencedirect.com/science/article/pii/S2214635021001350][Expectation formation in finance and macroeconomics: A review of new experimental evidence]] :Behavioral:Finance:Bubbles:Crashes:ExperimentalFinance:Learning:LearningToForecastExperiment:RationalExpectations:ReviewOfLiterature:
+
+*** READ [#A] [[https://www.aeaweb.org/articles?id=10.1257/aer.20151299][How Do Firms Form Their Expectations? New Survey Evidence]] :Beliefs:Empirical:InformationKnowledge:Speculation:Expectations:
+
+*** READ [#B] [[https://www.aeaweb.org/articles?id=10.1257/jel.20191434][Behavioral and Experimental Macroeconomics and Policy Analysis: A Complex Systems Approach]] :Behavioral:ExperimentalForecast:BoundedRationality:Heuristics:Survey:CoordinationFailure:OptimismWave:PessimismWave:Heterogeinity:Expectations:HeuristicSwitching:PolicyDiscussion:
+
+*** READ [#B] [[https://www.aeaweb.org/articles?id=10.1257/aer.20110306][Information Rigidity and the Expectations Formation Process: A Simple Framework and New Facts]] :Beliefs:LearningToForecastExperiment:InformationKnowledge:Learning:Results:StylizedFacts:Expectations:Speculation:
+
+*** READ [#C] [[https://www.sciencedirect.com/science/article/pii/S0165188917301033][Booms, busts and behavioural heterogeneity in stock prices]] :Behavioral:BoundedRationality:Heterogeinity:Expectations:StockPrices:FinancialCrisis:Results:HeuristicSwitching:
+
+*** PARTIAL [#A] [[https://www.sciencedirect.com/science/article/pii/S0165188900000282][Learning to speculate: Experiments with artificial and real agents]] :AgentBased:Experiments:Learning:SearchAlgorithm:Speculation:
+
+*** PARTIAL [#A] [[https://www.aeaweb.org/articles?id=10.1257/mic.4.4.35][Evolutionary Selection of Individual Expectations and Aggregate Outcomes in Asset Pricing Experiments]] :Beliefs:Communication:Equation:LearningToForecastExperiment:Speculation:AssetPrices:InformationKnowledge:Learning:ExperimentalForecast:HeuristicSwitching:TradingVolume:
+
+*** PARTIAL [#A] [[https://link.springer.com/article/10.1007%2Fs00191-011-0242-4][Evolutionary selection of expectations in positive and negative feedback markets]] :Equation:ToBase:ToCite:Expectations:HeuristicSwitching:
+
+
+*** PARTIAL [#B] [[https://www.sciencedirect.com/science/article/pii/S016518891000223X][The heterogeneous expectations hypothesis: Some evidence from the lab]] :Empirical:Experiments:Expectations:HeuristicSwitching:Results:Heterogeinity:Learning:
+
+*** PARTIAL [#B] [[https://www.sciencedirect.com/science/article/pii/S0304393213000810][‘Wait-and-See’ business cycles?]] :Results:BusinessCycle:FirmData:InvestmentPlan:US:CapitalAdjustmentCost:
+*** PARTIAL [#C] [[https://www.sciencedirect.com/science/article/pii/S0167268120302444][The expected price of keeping up with the Joneses]] :Inspiration:Expectations:Inequality:ToBase:SocialComparison:
+*** SKIM [#A] [[https://onlinelibrary.wiley.com/doi/full/10.1111/j.1756-8765.2008.01006.x][Homo Heuristicus: Why Biased Minds Make Better Inferences]] :DecisionMaking:Heuristics:Inferences:BoundedRationality:Results:Uncertainty:
+*** SKIM [#B] [[https://www.sciencedirect.com/science/article/pii/S0167268121002262][Heterogeneity in individual expectations, sentiment, and constant-gain learning]] :Expectations:ExperimentalForecast:Beliefs:Forecast:Results:OptimismWave:PessimismWave:Sentiment:
+
+*** SKIM [#C] [[https://www.sciencedirect.com/science/article/pii/S0167268112000546][Heterogeneous gain learning and the dynamics of asset prices]] :AssetPrices:Learning:Memory:ToBase:
+
+
+*** RESULTS [#A] [[https://www.journals.uchicago.edu/doi/10.1086/685965][Expectations and Investment]] :Expectations:Results:Extrapolative:InvestmentPlan:
+*** RESULTS [#A] [[https://doi.org/10.1093/rfs/hhaa121][Experience Does Not Eliminate Bubbles: Experimental Evidence]] :Expectations:LearningToForecastExperiment:Experiments:Results:
+*** RESULTS [#A] [[https://www.sciencedirect.com/science/article/pii/S0167268117303001][Can firms see into the future? Survey evidence from Germany]] :Germany:ExpectationFormation:FirmData:Learning:
+*** RESULTS [#A] [[https://www.boj.or.jp/en/research/wps_rev/wps_2017/data/wp17e09.pdf][Behavioral Biases in Firms’Growth Expectations]] :Results:Japan:Behavioral:Bias:Expectations:
+*** RESULTS [#B] [[https://ideas.repec.org/a/eee/eecrev/v79y2015icp297-325.html][Firm optimism and pessimism]] :OptimismWave:PessimismWave:Bias:FirmData:Results:Expectations:ExpectationsErrors:
+
+*** RESULTS [#B] [[https://ideas.repec.org/p/een/camaaa/2021-68.html][Initial beliefs uncertainty]] :Expectations:Results:ToMention:Bias:Beliefs:
+
+*** RESULTS [#C] [[https://www.sciencedirect.com/science/article/pii/S0165188917301616][Surprise, surprise – Measuring firm-level investment innovations]] :Germany:FirmData:InvestmentPlan:Survey:Results:
+
+*** RESULTS [#C] [[https://www.sciencedirect.com/science/article/pii/S0165188907000048][Price bubbles sans dividend anchors: Evidence from laboratory stock markets]] :Bubbles:AssetBubble:Experiments:ExperimentalForecast:
+
+*** RESULTS [#C] [[https://www.aeaweb.org/articles?id=10.1257/000282803322655392][Maps of Bounded Rationality: Psychology for Behavioral Economics]] :Canonical:Behavioral:DecisionMaking:Results:ToCite:
+
+*** RESULTS [#D] [[https://www.sciencedirect.com/science/article/pii/S0165188912002035][Are the representative agent’s beliefs based on efficient econometric models?]] :BoundedRationality:LearningToForecastExperiment:Forecast:Survey:Expectations:Heterogeinity:
+
+*** RESULTS [#E] [[https://www.tse-fr.eu/sites/default/files/TSE/documents/doc/wp/2018/wp_tse_882.pdf][Learning in Speculative Bubbles: An Experiment]] :Bubbles:Learning:LearningToForecastExperiment:Speculation:FinancialMarket:
+*** RESULTS [#E] [[https://epub.ub.uni-muenchen.de/41214/1/Buchheim_Link.pdf][The Effect of Disaggregate Information on theExpectation Formation of Firms]] :DisaggregateInformation:ExpectationFormation:Results:
+
+** [[id:52af04a6-37f1-4ff4-9eec-a1dd47efc224][Spatial Models]]
+
+*** READ [#B] [[https://www.arl-international.com/sites/default/files/dictionary/2021-09/gentrification.pdf][Gentrification]] :ReviewOfLiterature:Gentrification:Spatial:Geography:
+
+*** SKIM [#C] [[https://www.thecgo.org/research/a-primer-on-housing-finance-reform/][A Primer on Housing Finance Reform]] :PolicyOriented:PolicyDiscussion:GeographicDistribution:NewNarrative:
 
 * Papers
 

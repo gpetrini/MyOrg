@@ -17,25 +17,21 @@ https://i.pinimg.com/originals/fd/de/23/fdde2369da2feeaa95a469b0ff1dd3f5.gif
 
 ** TODO Curso protocolo de segurança Moodle
 ** TODO Fix no paragraph break with ignore tag in emacs-org
-** TODO Fix citar (or other package) not recognizing oc syntax
-** TODO Separar dia dos grupos :@PED:
-** TODO Marcar Dra Denise
-* Writing inbox
-** STRT [#A] Super ABM Introduction draft
 
+* Writing inbox
+
+** TODO FISH Ofek
 ** TODO [#A] FISH Cornell 2020
 ** TODO [#A] FISH [[https://voxeu.org/article/what-drives-house-prices-some-lessons-literature][What drives house prices: Lessons from the literature]]
 
 ** TODO [#B] Koop_2018
 ** TODO [#C] botte_2019
-** WAIT [#E] tori_onaram_2018
-
 
 * News Inbox
 ** <2021-10-04 seg> [[https://www.clevelandfed.org/en/newsroom-and-events/publications/cfed-district-data-briefs/cfddb-20210929-strong-demand-limited-supply-and-rising-prices-the-economics-of-pandemic-era-housing.aspx][Strong Demand, Limited Supply, and Rising Prices: The Economics of Pandemic-E...]] :HousingBubbles:HouseSupply:
 ** <2021-09-22 qua> [[https://voxeu.org/article/flattening-curve-pandemic-induced-revaluation-urban-real-estate][Flattening the curve: Pandemic-induced revaluation of urban real estate | VOX...]] :HouseSupply:PandemicRelated:
 * Reading Inbox
-** [[http://www.lem.sssup.it/WPLem/files/2021-35.pdf]] :Spatial:Agriculture:ABM:LandUse:LandPrice:EnvironmentalModel:
+** [#A] [[https://link.springer.com/article/10.1007/s43253-021-00061-4][Financialisation: continuity and change— introduction to the special issue | ...]] :Financialization:Housing:Mortgaging:ReviewOfLiterature:TheoreticalMotivation:
 ** TODO [[https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3960979][Multi-asset financial bubbles in an agent-based model with noise traders’ herding described by an n-vector Ising model]] :ABM:Asset:Bubble:IsingModel:Arbitrageurs:NoiseTraders:
 ** [#A] [[https://marcio.rbind.io/jmp/Santetti_GCRI.pdf][Growth, cycles, and residential investment]] :ResidentialInvestment:Empirical:US:SVAR:BusinessCycles:FunctionalIncomeDistribution:SraffianSupermultiplier:
 ** [[https://link.springer.com/article/10.1007/s43253-021-00050-7][The financialization of rented homes: continuity and change in housing financ...]] :HousingMarket:RentalMarket:Financialization:Concepts:Definition:ResidentialInvestment:
@@ -50,13 +46,6 @@ https://i.pinimg.com/originals/fd/de/23/fdde2369da2feeaa95a469b0ff1dd3f5.gif
 ** [[https://giacomorella.github.io/assets/tvp_rella.pdf][THEFED,HOUSING AND  HOUSEHOLD DEBT OVER TIME]] :Housing:ResidentialInvestment:HouseholdDebt:Empirical:MonetaryPolicy:
 * Fleeting notes
 ** TODO Enhance LSD documentation snippet
-** WAIT [[https://ag91.github.io/blog/2021/07/25/org-roam-and-nyxt-taking-zettelkasten-notes-from-the-web/][Nyxt and org-roam]]
-** WAIT Compatibilities between org-cite and org-ref-cite
 ** WAIT git submodules
-** WAIT A fundação (Isaac Asimov)
 ** WAIT Create style journal git repository
-** WAIT Add personal entries for writing as in academic phrases package
-** WAIT Testar grammarly API in emacs
-** WAIT Make ox-hugo print references
-** WAIT Update reference capture template
 ** WAIT Reference org-roam backlinks

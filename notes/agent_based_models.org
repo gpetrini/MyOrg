@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       9789613e-f409-4593-b958-a2c9c8283bb6
+:mtime:    20211123094448
+:ctime:    20211123094448
 :END:
 #+title: Agent Based Models
 
@@ -8,3 +10,15 @@
 #+hugo_section: notes
 #+HUGO_TAGS: placeholder
 #+OPTIONS: num:nil ^:{} toc:nil
+
+
+ Usefull links
+- [[http://jasss.soc.surrey.ac.uk/8/1/5.html][JASS - Journal of Artificial Societies and Social Simulation]]
+- [[http://www2.econ.iastate.edu/classes/econ308/tesfatsion/sylVIITrento.LT.htm][VII Trento Summer School ]]
+- [[http://www.brettparris.com/abm/][Brettparis]]
+- [[https://www.comses.net/resources/education/][Educational Materials]]
+- [[http://www2.econ.iastate.edu/tesfatsi/ace.htm][ABM Repo]]
+- [[http://www2.econ.iastate.edu/tesfatsi/abmread.htm#Readings][ABM for new users]]
+- [[https://www.complexityexplorer.org/courses/101-introduction-to-agent-based-modeling-spring-2020/segments/9191?summary][Intro to ABM Course]]
+- [[http://www2.econ.iastate.edu/tesfatsi/publish.htm][Journals]]
+- [[http://www2.econ.iastate.edu/classes/econ308/tesfatsion/syl308.htm][Syllabus for Economics 308]]

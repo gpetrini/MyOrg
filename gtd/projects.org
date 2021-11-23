@@ -137,46 +137,12 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 ** TODO Para TD
 
-*** TODO [#A] Escrever relatório dos resultados
+*** TODO Testar inclusão de dummies
 
 
+**** TODO Teste de quebra estrutural
 
-**** TODO Tabelas pre-estimação
-
-***** TODO Raíz unitária
-
-- Corrigir starts
-
-***** TODO Cointegração
-
-***** TODO Número de lags
-
-***** TODO Ajustar posição da Fonte
-
-**** TODO Criticar uso da taxa de investimento errada
-
-- Somente mudar para a variável correta altera os resultados
-- Indicar que há indícios de que os resultados vão na direção da literatura empírica e teórica
-- Explicitar que Nikiforos está em desacordo com uma literatura mais ampla do que a do supermultiplicador
-  - Ver fatos estilizados para a economia norte-americana
-
-**** TODO Padronizar apresentação dos gráficos e resultsados
-
-***** TODO Alinhar eixos y IRF
-
-***** TODO Ajustar largura gráfico fevd
-
-***** TODO Tabelas em Latex
-
-***** TODO Adicionar "Quarters" no título do eixo x
-
-**** TODO Testar inclusão de dummies
-
-**** TODO Testar mudança do número de runs e intervalo de confiança
-
-**** TODO Plotar IRF e FEVD com lags alternativos
-
-**** TODO Ver necessida de citar autres dos testes de hipótese
+**** TODO Teste de Zivot-Andrews
 
 *** TODO [#C] Apresentar literatura de fatos estilizados
 
@@ -226,11 +192,21 @@ SCHEDULED: <2021-10-29 sex 20:30-21:30>
 
 * CE472 2021 :Teaching:
 
+
+
 ** TODO Corrigir lista 03
+** TODO Cronograma lista 04
 
-*** TODO Definir questões para serem corrigidas
+*** TODO Mandar para o Mariano
 
-*** TODO Definir template de correção
+*** TODO Criar postagem
+
+** TODO Computar médias e quanto falta para fechar a nota
+
+** TODO Conferir desistências
+
+*** TODO Ver Alan Almeida Coelho
+
 * IEE859 - Teoria do valor e da distribuição :@Lectures:
 
 * Dissertation group discussion :@Group:

@@ -1,0 +1,58 @@
+:PROPERTIES:
+:ID: 20211118T090300
+:CAPTURED: [2021-11-18 09:03:00]
+:ROAM_REFS: cite:frank_2019_Gentrifizierung
+:mtime:    20211118090318
+:END:
+#+TITLE: frank_2019_Gentrifizierung: Gentrifizierung - (2018, )
+Time-stamp: 2021-11-18
+#+hugo_base_dir: ~/BrainDump/
+
+#+hugo_section: notes
+
+#+hugo_categories: journal
+#+HUGO_TAGS: 
+
+#+OPTIONS: num:nil ^:{} toc:nil
+#+BIBLIOGRPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+* FISH-5SS
+
+|---------------------------------------------+-----|
+| <40>                                        |<50> |
+| *Background*                                  |     |
+| *Supporting Ideas*                            |     |
+| *Purpose*                                     |     |
+| *Originality/value (Contribution)*            |     |
+| *Relevance*                                   |     |
+| *Design/methodology/approach*                 |     |
+| *Results*                                     |     |
+| *(Interesting) Findings*                      |     |
+| *Research limitations/implications (Critics)* |     |
+| *Uncategorized stuff*                         |     |
+| *5SS*                                         |     |
+|---------------------------------------------+-----|
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+
+#+END_ABSTRACT
+
+
+* Specific notes
+
+
+
+* Annotations (zotero)
+
+
+
+* Additional Backlinks
+
+
+* References
+
+
+#+print_bibliography:
