@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       8e9dd4a4-0f29-46d1-b8e4-5befe4df94cb
+:mtime:    20211130151826
+:END:
+#+title: Stylized Facts
+
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+
+#+hugo_section: notes
+
+#+HUGO_TAGS: placeholder
+
+#+OPTIONS: num:nil ^:{} toc:nil
+

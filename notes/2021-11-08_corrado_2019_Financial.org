@@ -2,6 +2,8 @@
 :ID: 20211108T104744
 :CAPTURED: [2021-11-08 10:47:44]
 :ROAM_REFS: [cite:@corrado_2019_Financial]
+:mtime:    20211130144320
+:ctime:    20211130144320
 :END:
 #+TITLE: corrado_2019_Financial: Financial cycles, credit bubbles and stabilization policies. - (2019, European Central Bank)
 Time-stamp: 2021-11-08
@@ -9,7 +11,7 @@ Time-stamp: 2021-11-08
 #+hugo_base_dir: ~/BrainDump/
 #+hugo_section: notes
 #+HUGO_TAGS: policy_oriented macroprudential_policies financial_bubbles
-#+HUGO_CATEGORIES: FISH Mainstream
+#+HUGO_CATEGORIES: Mainstream
 #+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
 #+cite_export: csl apa.csl
 #+OPTIONS: num:nil ^:{} toc:nil

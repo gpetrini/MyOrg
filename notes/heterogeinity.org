@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       95d640e3-9fbc-4861-b78b-ec28d55d571b
+:mtime:    20211129155153
+:END:
+#+title: Heterogeinity
+
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+
+#+hugo_section: notes
+
+#+HUGO_TAGS: placeholder
+
+#+OPTIONS: num:nil ^:{} toc:nil
+

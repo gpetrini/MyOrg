@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       36b6963e-78ab-4054-b6ab-0cf1700b015b
+:mtime:    20211129151918
+:END:
+#+title: Rational Inattention models
+
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+
+#+hugo_section: notes
+
+#+HUGO_TAGS: placeholder
+
+#+OPTIONS: num:nil ^:{} toc:nil
+

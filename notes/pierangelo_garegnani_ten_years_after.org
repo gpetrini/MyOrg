@@ -1,0 +1,93 @@
+:PROPERTIES:
+:ID:       9eb28c83-5ecc-4255-acd2-c8d1ca43e3c9
+:mtime:    20211125114816 20211125102720
+:ctime:    20211125102720
+:END:
+#+title: Pierangelo Garegnani, ten years after
+
+#+hugo_base_dir: ~/BrainDump/
+#+hugo_section: conferences
+#+HUGO_TAGS: conferences sraffian_theory
+#+OPTIONS: num:nil ^:{} toc:nil
+
+* Additional Backlinks
+
+* Garegnani's research lines ten years after
+
+** A neo-Ricardian Alternative to the Analytical
+
+*** Introduction
+
+Alternative microeconomics to [[id:64197f79-2ae4-42e2-8a48-2f6d4d0abea4][Environment Economics]] and [[id:59305429-23ac-4347-9326-1b3cce084f82][Ecological Economics]].
+Most heterodox economics had main contributed to *Macroeconomics and Finance* (Green investment and endogenous money).
+
+*** Ecological degradations as externalities
+
+Corrective policies are introduced in order to *internalize* negative [[id:0fb81bfc-4e95-4099-8568-c55b704d6165][Externalities]] as a result of production process.
+
+*** What does Ecological Economics do differently
+
+The substitutability between capital and labour is argued to be strong over weak sustainability.
+This relies on the marginalist assumption of dimmishing returns to increases of only one factor.
+
+*** Ecological Marxism (EM)
+
+Relies on Marx and Engels critiques of capitalism.
+Recently, ecological surplus is proposed
+
+** Girardi - Did capital strike? Redistribution, firm value and private investment during the 1981-1983 Frebch Socialist Experiment
+
+
+Does egalitarian redistribution stifle private investment?
+
+*** The 1981-1983 French Socialist experiment
+
+- Social-Communist coalition takes power
+- Pro-labor and egalitarian redistribution program
+  - Tax policy :: Wealth tax, income taxes on firms and high incomes
+  - Labor market :: Reduce of work-week and retirement age
+  - Nationalizations ::
+
+*** Capital strike
+
+[[id:49067155-9d3a-406f-919c-9c2db45f8348][Capital Strike]] hypothesis: Redistributive plataform $\Rightarrow$ lower expected profitability $\Rightarrow$ lower private investment.
+It is argued that there also other factors (most external) that could explain private investment decrease.
+
+*** Dataset
+
+
+- Stock market prices :: impact on expected profitability and its contributions
+
+*** Impact on expected profitability
+
+- Early survey on voting seen that a socialism win was not expected
+- Large negative effect on value of French firms
+  - US firms, for example, does not have this effect in the same period
+  - Firms listed in French does not had a negative
+  - Nationalization targets were the higher negative effect
+- Firms more exports oriented had larger share price decrease
+
+*** Macroeconomic effects of the French Socialist Experiments
+
+
+**** Synthetic Control analysis
+
+- Build a 'doppleganger' France as a optimally-weight average of other advanced economies
+- Outcome of interest
+  - Business investment
+  - Real GDP
+  - Equity values
+  - Inflation
+
+**** Firm-level DiD analysis
+
+
+- Financial statements for a sample of global public companies
+- Negative effect on profitability, but investment there were no sign of negative effect
+  - Investment stagnation was in line with other countries investment stagnation
+
+
+
+
+
+* Roundtable Garegnani's legacy ten years after

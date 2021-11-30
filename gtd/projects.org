@@ -3,14 +3,11 @@
 #+AUTHOR: Gabriel Petrini
 #+OPTIONS: num:nil ^:{} toc:nil
 #+EXCLUDE_TAGS: noexport ARCHIVE
-#+HUGO_AUTO_SET_LASTMOD: t
 #+hugo_base_dir: ~/BrainDump/
 #+hugo_section: private
 #+HUGO_TAGS: workflow gtd
 #+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
 #+cite_export: csl apa.csl
-#+MACRO: todo @@html:<span class="todo">TODO</span>@@
-#+ATTR_HTML: :alt MyOrg :title Projects :style float:left;margin-bottom:20px; :class banner
 https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 * Dissertation's general settings [0%] :Dissertation:
@@ -84,10 +81,14 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 ** TODO Readings steps
 
-*** TODO Brief discussion about bubbles (mainstream literature)
-*** TODO How to implement innovation in SSM
-
 *** TODO How to implement expectations in AB-SFC-SSM
+
+**** TODO What determines the type of market feedback?
+
+- Positive feedback markets generates bubbles, while negative do not
+  - Do [cite/t:@dosi_2020_RATIONAL] impose a negative feedback?
+
+*** TODO How to implement innovation in SSM
 
 *** TODO Check product innovation in literature
 
@@ -137,15 +138,7 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 ** TODO Para TD
 
-*** TODO Testar inclusão de dummies
-
-
-**** TODO Teste de quebra estrutural
-
-**** TODO Teste de Zivot-Andrews
-
-*** TODO [#C] Apresentar literatura de fatos estilizados
-
+*** TODO [#B] Conferir se a seleção dos lags precisa usar dataframe em diferença
 
 *** HOLD Esclarecimentos teóricos (Lucas e Summa)
 
@@ -156,6 +149,7 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
     - Análise do plano <h, u> não é o melhor
     - É possível ter um ciclo puxado pelo investimento autônomo, mas não o tempo todo
   - Ciclo no supermultiplicador é mais explicado por variações nos gastos autônomos do que por variações na taxa de investimento
+
 ** TODO Ver ciclo nos gastos autônomos
 
 ** TODO Estabilidade dos parâmetros
@@ -182,44 +176,31 @@ After Nikiforos' response
 *** TODO Decompor componentes do investimento
 * Orientações [0%] :Orientations:
 ** Dourado (2021)
-*** TODO Comentar monografia completa
-SCHEDULED: <2021-11-01 seg 18:30-19:30>
-
+*** TODO Defesa
+SCHEDULED: <2021-12-07 ter 14:00>
+*** TODO Homologação e inserção no sistema
 ** Barros (2021)
-
-*** TODO Reunião
-SCHEDULED: <2021-10-29 sex 20:30-21:30>
+*** TODO Defesa
+SCHEDULED: <2021-12-07 ter 10:00>
+*** TODO Homologação e inserção no sistema
 
 * CE472 2021 :Teaching:
 
+** TODO Criar tabela para notas da lista 04
 
-
-** TODO Corrigir lista 03
-** TODO Cronograma lista 04
-
-*** TODO Mandar para o Mariano
-
-*** TODO Criar postagem
-
-** TODO Computar médias e quanto falta para fechar a nota
-
-** TODO Conferir desistências
-
-*** TODO Ver Alan Almeida Coelho
+** TODO Fechar média e notas
 
 * IEE859 - Teoria do valor e da distribuição :@Lectures:
 
 * Dissertation group discussion :@Group:
+
+** TODO Ler dissertação Rafael Govêa
+SCHEDULED: <2021-12-06 seg 10:00>
 * SFC [0%] :Article:@Master:
 
 
-** STRT Letter to peers
 
-** WAIT Highlight appendix A in red
-
-** WAIT Implement grammar correction
-
-** WAIT Create github repository
+** WAIT Create github repository (git submodule)
 
 * WAIT VECM [0%] :Article:@Master:
 
@@ -259,7 +240,6 @@ SCHEDULED: <2021-10-29 sex 20:30-21:30>
 
 * Emacs :@free:
 
-** TODO Embed mathjax in css site
 
 ** TODO Adapt notes
 
@@ -267,84 +247,43 @@ SCHEDULED: <2021-10-29 sex 20:30-21:30>
 
 *** TODO Convert Rmds
 
-** TODO Add logos url in configs
-
-** TODO Implement org-cite syntax
-
-** TODO Implement bibtex-actions
-
-*** TODO Fix pdf find like helm
 
 ** TODO Fix paragraph break line in sections with ignore heading
 
+** TODO Fix citations in ox-export
+
+** TODO Implement citeproc-el to export to docx
+
+** TODO Fix hugo org-roam reference to backlinks
+
+** TODO Test elgant
+
 * Configuração desktop :@free:
 
-** TODO Instalar latex
+** TODO Latex
 
 
 *** TODO Criar links simbólicos tese
 
 *** TODO Instalar styles latex
 
-*** TODO Instalar language tools
-
-** TODO Sistema e programas
-
-
-*** TODO fly-pie
 
 
 
-*** WAIT Pcloud
-
-
-
-
-
-
-*** WAIT Internet banking
-
-
-
-** WAIT Comprar webcam
-* Blog Social paths :@free:
-
-*Description:* Gatther usefull stuff for academics
-
-** Latex table examples
-** Program to draw diagrams
 * Bibliographical shinny app [0/0] :@free:
 
 *Description:* Map heterodox publications and interactions
 
 ** [[https://docs.ropensci.org/bib2df/][bib2df]]
-* Stylized Factbook :@free:
-
-*Description:* Gather empirical stylized facts and respective references
-
-** TODO Kaldor quotation
-
-** TODO Define relevant journal
-
-*** TODO Import [[https://www.hetecon.net/resources/journal-rankings/][Table]]
-
-*** TODO Define criteria
-
-
-** TODO Create file for macroeconomics
-
-*** TODO Reference in README file
-
-*** TODO Create sections based on JEL codes
 * Style journal templates :@free:
 ** TODO Create repo
 ** TODO Document examples
+
 * Braindump
-** TODO FIX TODO syntax
-** TODO Update ABOUT
-** TODO Create Knowldge base
-** TODO Test org-html-themes
-** TODO Ox-hugo shortcodes
-** TODO Update housekeeping
-** TODO Create publications entry
-** TODO Create teaching section
+* TODO FIX TODO syntax
+* TODO Update ABOUT
+* TODO Create Knowldge base
+* TODO Update housekeeping
+* TODO Create publications entry
+* TODO Create teaching section
+** TODO Create factobook for stylized facts

@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       560fac35-1ffa-4fbd-ad75-49aafc4bbd5f
+:mtime:    20211130150956 20211129150604
+:ROAM_ALIASES: "General price inflation"
+:END:
+#+title: Inflation
+
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+
+#+hugo_section: notes
+
+#+HUGO_TAGS: placeholder
+
+#+OPTIONS: num:nil ^:{} toc:nil
+

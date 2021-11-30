@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID:       96240415-033d-47e3-ad23-b28f5dd83fa7
+:mtime:    20211126171924
+:END:
+#+title: Rebate rate
+
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+
+#+hugo_section: notes
+
+#+HUGO_TAGS: placeholder
+
+#+OPTIONS: num:nil ^:{} toc:nil
+
+
+According [cite/t:@ofek_2003_DotCom p. 1118], rebase rate is:
+
+#+begin_quote
+When an investor shorts a stock (i.e., the borrower), he must place a cash deposit equal to the proceeds of the shorted stock. That deposit carries an interest rate referred to as the rebate rate. When there is an ample supply of shares to short, the rebate closely re£ects the prevailing interest rate. However, when the supply is tight, the rebate rate will be lower. This lower rate re£ects compensation to the lender of the stock at the expense of the borrower, and thus can provide a mechanism for evening out demand and supply in the market. However, along with receiving a lower rate on their cash proceeds, the short investors (a) may also face a higher risk of having their shorts called, and (b) there is no guarantee one can find a substantial amount of stock to short at these rates. (See D’Avolio (2002), Gezcy et al. (2002), Jones and Lamont (2002), and Mitchell et al. (2002) for a discussion of these issues, albeit not for Internet stocks.)
+#+end_quote
+
+
+Additionally [cite:@ofek_2003_DotCom p. 1120]:
+
+#+begin_quote
+That is, the higher the short interest, the lower the rebate rate, the more likely to violate put^call parity, and presumably the more di⁄cult to ¢nd a significant number of shares to short sell.
+#+end_quote

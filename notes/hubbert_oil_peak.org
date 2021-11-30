@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       b7ecc652-8087-4dab-a3f4-a4e1cf4804be
+:mtime:    20211125160337
+:END:
+#+title: Hubbert Oil Peak
+
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+
+#+hugo_section: notes
+
+#+HUGO_TAGS: placeholder
+
+#+OPTIONS: num:nil ^:{} toc:nil
+

@@ -2,6 +2,8 @@
 :ID: 20211108T174226
 :CAPTURED: [2021-11-08 17:42:26]
 :ROAM_REFS: [cite:@pastor_2009_Technological]
+:mtime:    20211130155425
+:ctime:    20211130155425
 :END:
 #+TITLE: pastor_2009_Technological: Technological Revolutions and Stock Prices - (2009, American Economic Review)
 Time-stamp: 2021-11-08
@@ -15,7 +17,7 @@ Time-stamp: 2021-11-08
 
 #+HUGO_DRAFT: true
 #+OPTIONS: num:nil ^:{} toc:nil
-#+BIBLIOGRPHY: ~/Org/zotero_refs.bib
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
 #+cite_export: csl apa.csl
 
 

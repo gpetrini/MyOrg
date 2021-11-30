@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       64ac60c6-22a7-4dfd-a4c5-49e2946116b1
+:mtime:    20211130143634
+:END:
+#+title: Behavioral Finance
+
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+
+#+hugo_section: notes
+
+#+HUGO_TAGS: placeholder
+
+#+OPTIONS: num:nil ^:{} toc:nil
+

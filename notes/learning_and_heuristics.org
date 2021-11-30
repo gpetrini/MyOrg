@@ -1,8 +1,12 @@
 :PROPERTIES:
 :ID:       cdc7d683-cbb8-4611-805c-0e058411c9e2
+:mtime:    20211129150700
+:ctime:    20211129150700
 :END:
 #+title: Learning and Heuristics
 
-#+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
+
 #+OPTIONS: num:nil ^:{} toc:nil
-#+INCLUDE: ../header.org
+#+hugo_base_dir: ~/BrainDump/
+#+hugo_section: notes
+#+HUGO_TAGS: placeholder

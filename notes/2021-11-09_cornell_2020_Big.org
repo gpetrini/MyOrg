@@ -2,6 +2,8 @@
 :ID: 20211109T094429
 :CAPTURED: [2021-11-09 09:44:29]
 :ROAM_REFS: @cornell_2020_Big
+:mtime:    20211130155449
+:ctime:    20211130155449
 :END:
 #+TITLE: cornell_2020_Big: The Big Market Delusion: valuation and Investment Implications - (2020, Financial Analysts Journal)
 Time-stamp: 2021-11-09
@@ -13,7 +15,7 @@ Time-stamp: 2021-11-09
 #+HUGO_TAGS: 
 
 #+OPTIONS: num:nil ^:{} toc:nil
-#+BIBLIOGRPHY: ~/Org/zotero_refs.bib
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
 #+cite_export: csl apa.csl
 
 * FISH-5SS

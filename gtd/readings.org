@@ -106,11 +106,13 @@ https://i.pinimg.com/originals/ea/c9/83/eac9832cf6b1ad75af8ccc3ad3db1728.gif
 **** READ <2021-06-11 sex> [[https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0129070][Endogenous Price Bubbles in a Multi-Agent System of the Housing Market]] :Spatial:ABM:Bubbles:HouseMarket:
 ***** REPORT [#A] [[https://apo.org.au/sites/default/files/resource-files/2014-05/apo-nid172196.pdf][An Agent-Based Model of the Housing Market Bubble in Metropolitan Washington, D.C]]
 CLOSED: [2021-06-12 sáb 08:18]
+**** READ [#A] [[https://www.sciencedirect.com/science/article/pii/S0165188919301290][When speculators meet suppliers: Positive versus negative feedback in experimental housing markets]] :Construction:Building:ExpectationFormation:ExperimentalForecast:HousingBubble:Learning:RationalExpectations:Speculation:PositiveFeedbacks:HousingSupply:
+
+**** READ [#A] [[http://hdl.handle.net/10419/38760][Dieci and Westerhoff - A simple model of a speculative housing market]] :HouseMarket:HousePrices:ToBase:ToDialog:BusinessCycle:HousingCycle:ExpectationFormation:HousingBubble:
 **** READ [#A] [[http://www.economics-ejournal.org/economics/journalarticles/2014-8/][Housing market bubbles and business cycles in an agent-based credit economy]]
 **** READ [#A] [[https://link.springer.com/chapter/10.1007/978-3-642-54783-6_10][Who Creates Housing Bubbles? An Agent-Based Study | SpringerLink]] :HouseMarket:ABM:Speculation:Residential:
 **** READ [#A] [[https://journals.sagepub.com/doi/abs/10.1068/b120043p?casa_token=iKsuk1pmtAkAAAAA:bzgOy0fE1JrgOV7fZGp7CrnFnjh2wDx2BxaTr4h9s4LDcNp5SlqLaWMkXvwSKqSybhQvE-QP65K9][A Review of Urban Residential Choice Models Using Agent-Based Modeling - Qing...]] :ABM:Land:Survey:
 **** READ [#A] [[https://apo.org.au/sites/default/files/resource-files/2015-09/apo-nid173221.pdf][Carstensen - An agent-based model of the housing marketSteps toward a computationaltoolforpolicy analysis]] :Survey:ABM:
-**** READ [#A] [[http://hdl.handle.net/10419/38760][Dieci and Westerhoff - A simple model of a speculative housing market]] :ABM:HouseMarket:HousePrices:Speculation:ToBase:ToDialog:
 **** READ [#A] [[https://www.aaai.org/Papers/Symposia/Spring/2009/SS-09-09/SS09-09-007.pdf][An Agent-Based Model of the English Housing Market]] :ABM:Spatial:Residential:
 
 **** SKIM [#B] [[https://www.bancaditalia.it/pubblicazioni/temi-discussione/2021/2021-1338/en_tema_1338.pdf][MACROPRUDENTIAL POLICY ANALYSIS VIA AN AGENT BASED MODEL  OF THE REAL ESTATE SECTOR]] :ABM:Empirical:Italy:MacroPrudentialPolicy:HouseMarket:Calibration:SearchAlgorithm:ToCompare:
@@ -246,21 +248,6 @@ Parts to read:
 **** REF [[https://www.sciencedirect.com/science/article/pii/S0304405X18301016?casa_token=CQz1qOgjg4gAAAAA:m5z3beRi1jG9Zx0ajJgq2ZKOPEiAMeaO2Yy9XxB69hpzGiMIcQJ7Ip0g_bgYHWtNWZgqN7GnnA][Extrapolation and bubbles - ScienceDirect]] :HousePrices:Bubbles:Expectations:
 
 - Use as an example of Bubbles and fundamentals
-
-*** To classify
-
-
-**** READ [#A] Income inequality, consumer debt, and prudential regulation: An agent-based approach to study the emergence of crises and financial instability :ABM:
-
-
-**** READ [#A] Inequality, household debt and financial instability: An agent-based perspective :ABM:
-
-
-
-**** WAIT [#C] [[https://www.cfainstitute.org/en/research/foundation/2009/the-shadow-banking-system-and-hyman-minskys-economic-journey][McCulley (2010)]] :Inbox:ABM:NewNarrative:
-**** MAYBE [#C] [[https://academic.oup.com/jeea/article-abstract/2/6/1148/2280932?redirectedFrom=fulltext][Ehrmann and Worms - Bank Networks and Monetary Policy Transmission]] :OFF:NETWORK:ABM:
-
-**** MAYBE [#C] [[https://sci-hub.ren/https://doi.org/10.1146/annurev-financial-111914-041807][An Overview of Macroprudential Policy Tools]] :LTV:QCA:ABM:
 
 ** [[file:../notes/20210210184406-mortgage_interest_rate.org][Mortgage Interest rate and market particularities]] :Mortgage:
 
@@ -398,6 +385,8 @@ Parts to read:
 
 *** INPROGRESS [#A] [[https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.994.8229&rep=rep1&type=pdf][Asset Price Bubbles: A Selective Survey]] <2021-11-01 seg 09:00-12:00> :AssetBubble:ReviewOfLiterature:Survey:FinancialRisk:FinancialCrisis:
 
+*** READ [#A] [[https://onlinelibrary.wiley.com/doi/10.1111/joes.12023][A Review Of Bubbles And Crashes In Experimental Asset Markets]] :Survey:AssetBubble:ReviewOfLiterature:Expectations:ShortSaleConstraint:ExperimentalForecast:LearningToForecastExperiment:
+
 *** READ [#A] [[https://www.nber.org/papers/w21486][Leveraged Bubbles (Jordà et. all, 2015)]]
 
 *** READ [#A] [[https://www.nber.org/papers/w18398][Bubbles, Financial Crises, and Systemic Risk]] :StylizedFacts:FinancialCycles:FinancialRisk:FinancialCrisis:ReviewOfLiterature:
@@ -416,16 +405,30 @@ DEADLINE: <2021-11-30 ter>
 *** SKIM [#C] [[https://www.journals.uchicago.edu/doi/abs/10.1086/378531][Overconfidence and Speculative Bubbles]] :AssetBubbles:Heterogeinity:Overconfidence:
 *** REPORT [#B] [[https://www.ecb.europa.eu/pub/pdf/scpwps/ecb.wp2336~8b1c61b9a9.en.pdf][Financial cycles, credit bubbles  and stabilization policies]] <2021-11-02 ter 15:15-18:15> :BusinessCycle:PolicyOriented:PolicyDiscussion:
 CLOSED: [2021-11-08 seg 11:22]
+*** REF [[https://doi.org/10.1017/S0007680512000025][Dispelling the Myth of the Naive Investor during the British Railway Mania, 1845–1846]] :Mania:Railway:AssetBubble:
+*** REF [[https://onlinelibrary.wiley.com/doi/10.1111/ehr.12847][Squeezing the bears: cornering risk and limits on arbitrage during the ‘British bicycle mania’, 1896–8]] :Mania:Arbitrage:ShortSaleConstraint:AssetBubble:
 
 ** Innovation Bubble
 
+*** READ [#B] [[https://onlinelibrary.wiley.com/doi/10.1111/meca.12243][Demand-led growth with endogenous innovation]] :Innovation:AutonomousExpenditures:ResearchDevelopment:ToDialog:
 
-*** [#D] [[http://www.lem.sssup.it/WPLem/files/2020-32.pdf][Does mission-oriented funding stimulate private R&D? Evidence from military R&D forUS states]] :ResearchDevelopment:MissionOrientedPolicy:Innovation:InnovationPolicy:Military:Empirical:US:NationalDefense:Results:FurtherResearch:
+*Reason:* Paper to dialog with
 
+*** PARTIAL [#A] [[http://www.carlotaperez.org/pubs?s=tf&l=en&a=technologicalrevolutionsandfinancialcapital][Technological revolutions and financial capital: the dynamics of bubbles and golden ages]]
 
+**** READ [#C] Ch 4: The Propagation of Paradigms: Times of Installation, Times of Deployment
 
-- Could be interesting to discuss whether private or public innovation policy is sustainable.
+**** READ [#B] Ch 5: The Four Basic Phases of Each Surge of Development
 
+**** READ [#A] Ch 8: Maturity: Financial Capital Planting the Seeds of Turbulence at the End of the Previous Surge
+
+**** READ [#A] Ch 9: Irruption: The Love Affair of Financial Capital with the Technological Revolution
+
+**** READ [#A] Ch 10: Frenzy: Self-Sufficient Financial Capital Governing the Casino
+
+**** PARTIAL [#C] Ch 11: The Turning Point: Rethinking, Regulation and Changeover
+
+**** READ [#B] Ch 12: Synergy: Supporting the Expansion of the Paradigm across the Productive Structure
 
 *** SKIM [#B]  [[https://doi.org/10.1007/s10614-005-6158-z][Evaluating Market Attractiveness: Individual Incentives Versus Industry Profitability]]
 
@@ -439,6 +442,12 @@ CLOSED: [2021-11-08 seg 11:22]
 
 *** SKIM [#B] [[https://onlinelibrary.wiley.com/doi/10.1111/j.1467-6419.2012.00724.x][A SURVEY OF THE INNOVATION SURVEYS]]
 
+*** SKIM [#D] [[http://www.lem.sssup.it/WPLem/files/2020-32.pdf][Does mission-oriented funding stimulate private R&D? Evidence from military R&D forUS states]] :ResearchDevelopment:MissionOrientedPolicy:Innovation:InnovationPolicy:Military:Empirical:US:NationalDefense:Results:FurtherResearch:
+
+
+
+- Could be interesting to discuss whether private or public innovation policy is sustainable.
+
 ** New Narrative :NewNarrative:
 
 ** Super ABM: Non-residential investment related
@@ -449,9 +458,13 @@ CLOSED: [2021-11-08 seg 11:22]
 ** Dot-com crisis
 
 
+*** READ [#A] [[https://www.sciencedirect.com/science/article/pii/S004873331200162X][Economic crisis and innovation: Is destruction prevailing over accumulation?]] :InnovationInvestment:DotComCrisis:Survey:UK:
 *** READ [#A] [[https://psycnet.apa.org/record/1997-08992-001][Rational entrepreneurs or optimistic martyrs? Some considerations on technological regimes, corporate entries, and the evolutionary role of decision biases]]
 
 *** READ [#B] [[https://timothyjohnson.web.illinois.edu/papers/JME_2007.pdf][Optimal learning and new technology bubbles]]
+
+
+*** SKIM [#A] [[https://academic.oup.com/cje/article/34/1/185/1699623][Technological revolutions and techno-economic paradigms]] :TechnologicalChange:Paradigm:
 
 *** SKIM [#B] [[https://www.sciencedirect.com/science/article/pii/S0022053115000034][Innovation by entrants and incumbents]]
 
@@ -467,25 +480,25 @@ CLOSED: [2021-11-08 seg 11:22]
 
 *** MAYBE [#B] [[https://pages.stern.nyu.edu/~eofek/DotComMania_JF_Final.pdf][DotCom Mania: The Rise and Fall of Internet Stock Prices]]
 
+*** MAYBE [#B] [[https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0198807][Dynamics of investor spanning trees around dot-com bubble]]
+
 *** INPROGRESS [#A] [[https://www.aeaweb.org/articles?id=10.1257/aer.99.4.1451][Technological Revolutions and Stock Prices]]
 
 *** INPROGRESS [#A] [[https://www.tandfonline.com/doi/full/10.1080/0015198X.2020.1730655][The Big Market Delusion: Valuation and Investment Implications]]
 
 *** INPROGRESS [#A] [[http://rkaniel.simon.rochester.edu/papers/bubbletechnology.pdf][Technological innovation and real investment booms and busts]]
 
-*** INPROGRESS [[https://doi.org/10.1093/cje/bep028][The double bubble at the turn of the century: technological roots and structural implications]]
+*** REPORT [[https://doi.org/10.1093/cje/bep028][The double bubble at the turn of the century: technological roots and structural implications]]
+CLOSED: [2021-11-24 qua 17:18]
 
 ** Expectations formation
 
-*** READ [#A] [[https://www.sciencedirect.com/science/article/pii/S2214635021001350][Expectation formation in finance and macroeconomics: A review of new experimental evidence]] :Behavioral:Finance:Bubbles:Crashes:ExperimentalFinance:Learning:LearningToForecastExperiment:RationalExpectations:ReviewOfLiterature:
 
-*** READ [#A] [[https://www.aeaweb.org/articles?id=10.1257/aer.20151299][How Do Firms Form Their Expectations? New Survey Evidence]] :Beliefs:Empirical:InformationKnowledge:Speculation:Expectations:
+*** INPROGRESS [#A] [[https://www.aeaweb.org/articles?id=10.1257/aer.20110306][Information Rigidity and the Expectations Formation Process: A Simple Framework and New Facts]] :Beliefs:LearningToForecastExperiment:InformationKnowledge:Learning:Results:StylizedFacts:Expectations:Speculation:
 
-*** READ [#B] [[https://www.aeaweb.org/articles?id=10.1257/jel.20191434][Behavioral and Experimental Macroeconomics and Policy Analysis: A Complex Systems Approach]] :Behavioral:ExperimentalForecast:BoundedRationality:Heuristics:Survey:CoordinationFailure:OptimismWave:PessimismWave:Heterogeinity:Expectations:HeuristicSwitching:PolicyDiscussion:
+*** INPROGRESS [#B] [[https://www.aeaweb.org/articles?id=10.1257/jel.20191434][Behavioral and Experimental Macroeconomics and Policy Analysis: A Complex Systems Approach]] :Behavioral:ExperimentalForecast:BoundedRationality:Heuristics:Survey:CoordinationFailure:OptimismWave:PessimismWave:Heterogeinity:Expectations:HeuristicSwitching:PolicyDiscussion:
 
-*** READ [#B] [[https://www.aeaweb.org/articles?id=10.1257/aer.20110306][Information Rigidity and the Expectations Formation Process: A Simple Framework and New Facts]] :Beliefs:LearningToForecastExperiment:InformationKnowledge:Learning:Results:StylizedFacts:Expectations:Speculation:
-
-*** READ [#C] [[https://www.sciencedirect.com/science/article/pii/S0165188917301033][Booms, busts and behavioural heterogeneity in stock prices]] :Behavioral:BoundedRationality:Heterogeinity:Expectations:StockPrices:FinancialCrisis:Results:HeuristicSwitching:
+*** INPROGRESS [#C] [[https://www.sciencedirect.com/science/article/pii/S0165188917301033][Booms, busts and behavioural heterogeneity in stock prices]] :Behavioral:BoundedRationality:Heterogeinity:Expectations:StockPrices:FinancialCrisis:Results:HeuristicSwitching:
 
 *** PARTIAL [#A] [[https://www.sciencedirect.com/science/article/pii/S0165188900000282][Learning to speculate: Experiments with artificial and real agents]] :AgentBased:Experiments:Learning:SearchAlgorithm:Speculation:
 
@@ -505,6 +518,7 @@ CLOSED: [2021-11-08 seg 11:22]
 
 
 *** RESULTS [#A] [[https://www.journals.uchicago.edu/doi/10.1086/685965][Expectations and Investment]] :Expectations:Results:Extrapolative:InvestmentPlan:
+*** RESULTS [#A] [[https://www.sciencedirect.com/science/article/pii/S0165188909000293][Price stability and volatility in markets with positive and negative expectations feedback: An experimental investigation]] :CoordinationFailure:ExpectationFormation:ExperimentalFinance:PositiveFeedbacks:
 *** RESULTS [#A] [[https://doi.org/10.1093/rfs/hhaa121][Experience Does Not Eliminate Bubbles: Experimental Evidence]] :Expectations:LearningToForecastExperiment:Experiments:Results:
 *** RESULTS [#A] [[https://www.sciencedirect.com/science/article/pii/S0167268117303001][Can firms see into the future? Survey evidence from Germany]] :Germany:ExpectationFormation:FirmData:Learning:
 *** RESULTS [#A] [[https://www.boj.or.jp/en/research/wps_rev/wps_2017/data/wp17e09.pdf][Behavioral Biases in Firms’Growth Expectations]] :Results:Japan:Behavioral:Bias:Expectations:

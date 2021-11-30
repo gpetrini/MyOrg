@@ -2,6 +2,8 @@
 :ID: 20211108T181743
 :CAPTURED: [2021-11-08 18:17:43]
 :ROAM_REFS: cite:demarzo_2007_Technological
+:mtime:    20211130155459
+:ctime:    20211130155459
 :END:
 #+TITLE: demarzo_2007_Technological: Technological innovation and real investment booms and busts - (2007, Journal of Financial Economics)
 Time-stamp: 2021-11-08
@@ -15,7 +17,7 @@ Time-stamp: 2021-11-08
 
 #+HUGO_DRAFT: true
 #+OPTIONS: num:nil ^:{} toc:nil
-#+BIBLIOGRPHY: ~/Org/zotero_refs.bib
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
 #+cite_export: csl apa.csl
 
 

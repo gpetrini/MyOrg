@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       1f23f388-025b-4606-a626-f3cb1f827cf1
+:mtime:    20211130143711
+:END:
+#+title: Experimental Finance
+
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+
+#+hugo_section: notes
+
+#+HUGO_TAGS: placeholder
+
+#+OPTIONS: num:nil ^:{} toc:nil
+

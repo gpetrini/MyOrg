@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       669465fc-f4fb-4569-ae8c-6ff779c6b05c
-:mtime:    20211118180617 20211118165811 20211118155810
+:mtime:    20211125152503 20211118180617 20211118165811 20211118155810
 :ctime:    20211118155810
 :END:
 #+title: IEE859 - Teoria do valor e preços (Prof. Franklin Serrano)
@@ -724,7 +724,7 @@ em que $n$ é o insumo que só utiliza trabalho.
 * Renda da terra <2021-11-11 qui> e <2021-11-18 qui> 
 :PROPERTIES:
 :ID:       36424ec5-5e74-45fe-ac78-d57e7519c13a
-:mtime:    20211118180617 20211118170443 20211118160436
+:mtime:    20211125173558 20211125163117 20211125152503 20211118180617 20211118170443 20211118160436
 :ctime:    20211118160436
 :END:
 
@@ -984,14 +984,60 @@ Em uma situação de demanda efetiva por petróleo baixa, os países do Oriente 
 Já a indústria americana teria a rentabilidade assegurada junto de uma renda absoluta privada (em função da riqueza do subsolo ser privada nesse caso).
 No caso em que a demanda aumenta, outras regiões tem um aumento de produção, auferindo uma renda diferencial extensiva nestes países (e uma renda absoluta estatal).
 Se o aumento da demanda for de tal magnitude que o preço internacional seja acima do piso; haverá renda diferencial nos países da OPEP e nos EUA.
-Nete caso, o custo de produção do produtor marginal (que atende a demanda marginal) determinaria o preço.
+Neste caso, o custo de produção do produtor marginal (que atende a demanda marginal) determinaria o preço.
+
+*** Escassez e especulação
+
+- [[id:b7ecc652-8087-4dab-a3f4-a4e1cf4804be][Hubbert Oil Peak]] ou /Peak Demand/
+  - Este Pico de Hubbert diz que as propriedades de extração de um posso de petróleo seriam aplicadas para todo o setor
+  - Já o pico de demanda implica um pico de produção restringido pela demanda por petróleo
+- Especulação e bolhas
+  - Krugman e acumulação de estoques: Não havia indícios de bolha porque os estoques estavam aumentando
+  - Wray e mercados futuros
+  - Uma bolha não irá durar permanentemente para cima (ou para baixo) por conta da gravitação aos custos de produção
+- Preço spot esperado no futuro afeta tanto o preço foward quanto o future e o próprio spot no presente
+
+
 
 *** Fracking
+
+A revolução do folhelho (Fracking) nos EUA
+- Investimento inicial pequeno
+- Rapidez de entrada em operação (ou desligamento) dos poços
+- Custo de prospecção muito baixo
+- Efeitos ambientais bastante elevados
+- Custos de redução/aumento da produção baixos
+
+
+Como consequência, o nível de produção (de petróleo não convencional) aumentou bastante enquanto houve uma no comportamento dos países produtores de petróleo do oriente médio.
+No entanto, como os produtores americanos conseguem ampliar a produção, tais países perderiam market-share.
+Isso porque houve uma redução do preço piso pós revolução do shale.
+
+Recentemente, o poder da OPEP (mesmo com a Rússia) reduziu bastante enquanto a rentabilidade mínima dos produtores americanos passou a ser garantida sem precisar da colaboração da OPEP.
+Como consequência, a aliança automática entre EUA e Arábia Saudita deixou de ser a mesma.
+
+** Quase renda
+
+No capítulo que trata de renda, Sraffa também aborda máquinas que estão obsoletas (que não serão reproduzidas), mas que continuam sendo utilizada.
+Argumenta que geram quase-renda pelas renda que ainda podem propiciar.
+
+- Origina com Marshal e designa a massa de lucros do capital já instalado em contra posição do rendimento do novo investimento
+  - Marshall supõe que a distribuição do estoque de bens de capital é dada
+  - Uma vez instalado, não é possível alterar (fixo) e renderiam em função de sua escassez
+- Keynes, por outro lado, denomina quase-renda os lucros líquidos de cada período esperados do novo bem de capital instalado
+- Considerando que o preço de produção tem que remunerar o capital circulante e o taxa de lucro, Sraffa argumenta que o capital fixo deve ser remunerado (d + r) (discutido na aula seguinte)
+  - Isso gera o lucro normal sobre o estoque de capital total
+  - Supondo uma máquina muito obsoleta de modo que um método alternativo gere um custo de produção muito menor (e consequência o preço), não é possível aplicar a taxa de lucro normal a todo o estoque de capital, mas ao menos sobre o capital circulante
+    - Sendo esse o caso, o lucro subnormal sobre o capital fixo é considerado quase-renda
+      - Pode-se considerar um estoque de capital obsoleto, mas o capital circulante ainda será lucrativo
+  - Lucro unitário abaixo do normal no capital fixo de máquinas obsoletas
+    - Técnica (agora inferior) tem lucro abaixo do normal sobre o capital (fixo e circulante)
+    - Como consequência, nem todos estão utilizando a técnica dominante e, por consequência, nem todas as firmas terão uma taxa de lucro normal
 
 * A explicação monetária da distribuição
 :PROPERTIES:
 :ID:       9b80fea3-18f7-4b5f-88b9-7905f61cbff3
-:mtime:    20211118180713
+:mtime:    20211125172049 20211118180713
 :END:
 
 * Concorrência e gravitação
