@@ -1,6 +1,8 @@
 :PROPERTIES:
 :DECISION: Read
 :ID:       220b41fd-ba6a-4cb2-a475-833a749c4bdb
+:mtime:    20211202152739 20211013082514
+:ctime:    20210210184910
 :END:
 #+OPTIONS: toc:nil num:nil
 #+title: Manuals and Best practices

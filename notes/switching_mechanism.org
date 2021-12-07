@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       d6b88985-00f9-44dd-bcfa-5033fea9e73e
+:END:
+#+title: Switching Mechanism
+
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+
+#+hugo_section: notes
+
+#+HUGO_TAGS: placeholder
+
+#+OPTIONS: num:nil ^:{} toc:nil

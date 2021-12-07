@@ -2,6 +2,8 @@
 :ID: 20211103T164648
 :CAPTURED: [2021-11-03 16:46:48]
 :ROAM_REFS: @dosi_2010_Schumpeter
+:mtime:    20211202152739 20211110121633
+:ctime:    20211110121633
 :END:
 #+TITLE: dosi_2010_Schumpeter: Schumpeter meeting Keynes: a policy-friendly model of endogenous growth and business cycles - (2010, Journal of Economic Dynamics and Control)
 Time-stamp: 2021-11-03

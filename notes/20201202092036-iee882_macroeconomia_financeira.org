@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       8234ec70-778d-4959-8ddb-c4c5bb53f0bc
+:mtime:    20211202152741 20211013082514 20211202152738
+:ctime:    20201202092036
 :END:
 #+OPTIONS: num:nil H:6 ':t
 #+title: IEE882 - Macroeconomia Financeira
@@ -273,6 +275,10 @@ textcite:claessens_2018_Frontiersa dividem em dois subgrupos
 *Muito importante:* nesta visão, conexões reais-financeiras acontecem predominantemente via mecanismos de preço (incluindo taxa de juros)
 
 *** Imperfeições financeiras: mecanismos básicos
+:PROPERTIES:
+:mtime:    20211013082514
+:ctime:    20201202092036
+:END:
 
 - Tais "imperfeições financeiras" se originam nos problemas de assimetria de informação e de /enforcement/
   + Pela assimetria de informação, os credores sabem menos sobre o retorno dos projetos de investimento que os demandandos por empréstimo
@@ -974,6 +980,10 @@ P_{K} = \frac{Q_{1}}{\beta_{1}} + \ldots  + \frac{Q_{N}}{\beta_{N}}
 #+END_latex
 
 *** Aspectos fundamentais
+:PROPERTIES:
+:mtime:    20211202152741 20211013082514
+:ctime:    20201202092036
+:END:
 
 - Rendimento esperado dos ativos é incerto e sujeito a avaliações subjetivas: passível de reavaliações repentinas, de acordo com a percepção dos capitalistas
 - Risco do tomador e risco do emprestador também refletem avaliações subjetivas
@@ -982,6 +992,8 @@ P_{K} = \frac{Q_{1}}{\beta_{1}} + \ldots  + \frac{Q_{N}}{\beta_{N}}
 *** Conclusões: Firma representativa :ATTACH:
 :PROPERTIES:
 :ID:       0c7d104f-e2c2-4c4e-a698-c156b3db377b
+:mtime:    20211013082514
+:ctime:    20201202092036
 :END:
 
 Para expandir o investimento é preciso expandir a dívida, mas implicitamente supõe-se que o autofinanciamento não se altera
@@ -1811,6 +1823,8 @@ Nesse sentido,
 **** Exemplo
 :PROPERTIES:
 :ID:       0aef4ef8-31ac-4d3c-aedf-eb70e9c67335
+:mtime:    20211202152738 20211013082514
+:ctime:    20201202092036
 :END:
 - Por hipótese :: taxa de juros anual de empréstimo 5%
 - Taxa de desconto :: 1

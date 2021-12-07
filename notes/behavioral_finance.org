@@ -1,6 +1,7 @@
 :PROPERTIES:
 :ID:       64ac60c6-22a7-4dfd-a4c5-49e2946116b1
-:mtime:    20211130143634
+:mtime:    20211202152740 20211130143634
+:ctime:    20211130143634
 :END:
 #+title: Behavioral Finance
 

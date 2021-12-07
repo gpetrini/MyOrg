@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       26b7b1f6-903e-48a9-beeb-5f433f1aa709
 :ROAM_REFS: cite:minsky1977FinancialInstabilityHypothesis
+:mtime:    20211202152739 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE: minsky1977FinancialInstabilityHypothesis: The Financial Instability Hypothesis: An Interpretation of Keynes and an Alternative to "Standard" Theory
 #+filetags: Financial_Instability_Hypothesis Minsky Notas_de_Aula Macroeconomia_Financeira UFRJ

@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       227e8748-e0d1-4ff9-bffe-c0c7ac5d3063
 :ROAM_REFS: cite:lacour-little_2010_Homea
+:mtime:    20211202152739 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE: lacour-little_2010_Homea: Home Equity Extraction by Homeowners: 2000-2006 (2010, Journal of Real Estate Research)
 #+OPTIONS: toc:nil num:nil

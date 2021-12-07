@@ -2,6 +2,8 @@
 :ID: 20211026T184905
 :CAPTURED: [2021-10-26 18:49:05]
 :ROAM_REFS: cite:zezza_2008_US
+:mtime:    20211202152738 20211026184931
+:ctime:    20211026184931
 :END:
 #+TITLE: zezza_2008_US: US growth, the housing market, and the distribution of income - (2008, )
 Time-stamp: 2021-10-26

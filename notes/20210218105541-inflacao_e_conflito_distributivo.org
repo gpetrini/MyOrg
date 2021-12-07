@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       d0fe39e2-973f-49ff-b693-bbf593fb8dcd
+:mtime:    20211202152744 20211013082514
+:ctime:    20210218105541
 :END:
 #+title: Inflação e Conflito Distributivo
 

@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       4219c914-5147-45d3-9a03-b9614f11b3ad
 :ROAM_REFS: cite:gaugerResidentialFixedInvestment
+:mtime:    20211202152739 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE: gaugerResidentialFixedInvestment: Residential Fixed Investment and the Macroeconomy: Has Deregulation Altered Key Relationships? ()
 Time-stamp: 2021-02-09

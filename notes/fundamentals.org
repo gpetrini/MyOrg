@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       1a84049d-62ce-4f17-a492-cd1a6a74ebe9
+:END:
+#+title: Fundamentals
+
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+
+#+hugo_section: notes
+
+#+HUGO_TAGS: placeholder
+
+#+OPTIONS: num:nil ^:{} toc:nil

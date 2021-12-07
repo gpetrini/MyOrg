@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       fbb6c1d6-a334-4097-b763-82a15754b44a
+:mtime:    20211202152745 20211104182201
+:ctime:    20211104182201
 :END:
 #+title: Modern Surplus approach
 #+filetags: :SraffianTheory:

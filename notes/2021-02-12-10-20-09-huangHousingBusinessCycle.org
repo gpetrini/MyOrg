@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       c9d94b40-12a8-4c27-9f7f-5f69cf8ba081
 :ROAM_REFS: cite:huangHousingBusinessCycle
+:mtime:    20211202152744 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE: huangHousingBusinessCycle: Is Housing the Business Cycle? A Multi-resolution Analysis for OECD Countries (, )
 Time-stamp: 2021-02-12

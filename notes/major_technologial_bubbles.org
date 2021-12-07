@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       d93f882e-acb9-4d3f-aa67-ace510eee393
 :ROAM_ALIASES: "Technological bubble"
+:mtime:    20211202152744 20211109094838
+:ctime:    20211109094838
 :END:
 #+title: Major Technologial Bubbles
 

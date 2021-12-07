@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       5f25b412-0c68-42e0-b69c-f0c8a11c6145
+:mtime:    20211202152740 20211108184615
+:ctime:    20211108184615
 :END:
 #+title: Relative Wealth Effect
 

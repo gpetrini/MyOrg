@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       d6f6bc83-b082-492a-8776-689614359fb6
+:mtime:    20211202152744 20211108120654
+:ctime:    20211108120654
 :END:
 #+title: Asset bubble
 

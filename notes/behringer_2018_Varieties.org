@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       afc761fd-1fd0-4a52-9c6d-5aaaf100982e
+:mtime:    20211202152743 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE:  (2018, ): Varieties of capitalism and growth regimes: the role of income distribution
 #+OPTIONS: toc:nil num:nil

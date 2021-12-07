@@ -1,6 +1,7 @@
 :PROPERTIES:
 :ID:       bb809699-e4e4-4ee1-bc36-671d6a8a9d76
-:mtime:    20211126170529
+:mtime:    20211202152744 20211126170529
+:ctime:    20211126170602
 :END:
 #+title: Mania
 

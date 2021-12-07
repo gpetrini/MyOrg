@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       b2250ff4-9bf2-419c-ab5b-51408c6f7ce8
+:mtime:    20211202152743 20211111160721
+:ctime:    20211111160721
 :END:
 #+title: Land prices
 

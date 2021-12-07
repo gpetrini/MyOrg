@@ -1,6 +1,7 @@
 :PROPERTIES:
 :ID:       36b6963e-78ab-4054-b6ab-0cf1700b015b
-:mtime:    20211129151918
+:mtime:    20211202152739 20211129151918
+:ctime:    20211129155422
 :END:
 #+title: Rational Inattention models
 

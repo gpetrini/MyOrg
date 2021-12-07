@@ -2,6 +2,8 @@
 :ID: 20211026T210113
 :CAPTURED: [2021-10-26 21:01:13]
 :ROAM_REFS: cite:teixeira_2015_Crescimento
+:mtime:    20211202152738 20211026210119
+:ctime:    20211026210119
 :END:
 #+TITLE: teixeira_2015_Crescimento: Crescimento liderado pela demanda na economia norte-americana nos anos 2000: uma análise a partir do supermultiplicador sraffiano com inflação de ativos - (2015, )
 Time-stamp: 2021-10-26

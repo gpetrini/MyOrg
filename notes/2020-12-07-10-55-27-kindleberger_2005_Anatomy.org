@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       168aef39-93cd-49bc-b1d3-b8bc08d9d5c6
 :ROAM_REFS: cite:kindleberger_2005_Anatomy
+:mtime:    20211202152738 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE: kindleberger_2005_Anatomy: Anatomy of a Typical Crisis
 #+filetags: Financial_crisis UFRJ Macroeconomia_Financeira

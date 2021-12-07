@@ -1,6 +1,7 @@
 :PROPERTIES:
 :ID:       49067155-9d3a-406f-919c-9c2db45f8348
-:mtime:    20211125115519
+:mtime:    20211202152740 20211125115519
+:ctime:    20211125115519
 :END:
 #+title: Capital Strike
 

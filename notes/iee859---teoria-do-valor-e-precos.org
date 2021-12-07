@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       669465fc-f4fb-4569-ae8c-6ff779c6b05c
-:mtime:    20211125152503 20211118180617 20211118165811 20211118155810
+:mtime:    20211202152604 20211125152503 20211118180617 20211118165811 20211118155810
 :ctime:    20211118155810
 :END:
 #+title: IEE859 - Teoria do valor e preços (Prof. Franklin Serrano)
@@ -70,6 +70,8 @@ O projeto de pesquisa proposto a partir da retomada da abordagem clássica do ex
 * Sraffa antes de 1960 <2021-09-30 qui> e <2021-10-07 qui>
 :PROPERTIES:
 :ID:       9610fd16-ec5c-472c-9cb0-9c6222156e32
+:mtime:    20211202152742
+:ctime:    20211202152742
 :END:
 
 ** Referências
@@ -138,6 +140,8 @@ Em equilíbrio parcial, Sraffa concluiu que a curva de oferta de longo prazo (em
 ** Preço limite e renda diferencial
 :PROPERTIES:
 :ID:       95c70823-73fa-4bcd-90bd-ba0d49d8b0c5
+:mtime:    20211202152742
+:ctime:    20211202152742
 :END:
 
 
@@ -224,6 +228,8 @@ Em equilíbrio parcial, Sraffa concluiu que a curva de oferta de longo prazo (em
 * Produção de mercadorias por meio de mercadorias: determinação da taxa de lucro e preços relativos em sistemas de capital circulante <2021-10-07 qui> e <2021-10-28 qui>
 :PROPERTIES:
 :ID:       8149d38f-b940-4d80-9a13-ebf1cc7fc2cb
+:mtime:    20211202152740
+:ctime:    20211202152740
 :END:
 
 ** Sraffa e o livro
@@ -653,6 +659,8 @@ A implicação da mudança do preço relativo
 *** Trabalho comandado :ATTACH:
 :PROPERTIES:
 :ID:       64dd467a-8fb7-4f13-a13a-933529796b8b
+:mtime:    20211202152739
+:ctime:    20211202152739
 :END:
 
 #+BEGIN_latex
@@ -675,6 +683,8 @@ Trabalho comandado: Preço da mercadoria dividido pelo salário nominal
 *** Redução a quantidade de trabalho datado (usando trabalho comandado) :ATTACH:
 :PROPERTIES:
 :ID:       fc165bc7-fb2b-4472-b4cb-6b2ad7da9d63
+:mtime:    20211202152743
+:ctime:    20211202152743
 :END:
 
 Voltando para o exemplo de produção de dois estágios (peixe e pedra)
@@ -1037,38 +1047,210 @@ Argumenta que geram quase-renda pelas renda que ainda podem propiciar.
 * A explicação monetária da distribuição
 :PROPERTIES:
 :ID:       9b80fea3-18f7-4b5f-88b9-7905f61cbff3
-:mtime:    20211125172049 20211118180713
-:END:
-
-* Concorrência e gravitação
-
-
-* Renda
-:PROPERTIES:
-:ID:       237ef9ec-3dfc-4814-946a-9f471f29f4cc
+:mtime:    20211202152742 20211125172049 20211118180713
+:ctime:    20211202152742
 :END:
 
 * Produção conjunta e capital fixo em Sraffa
 :PROPERTIES:
 :ID:       2d5e92fb-82b2-49f4-aea8-425a9ff157d4
+:mtime:    20211202152604
+:ctime:    20211202152604
 :END:
+
+
+** Capital fixo
+
+
+*** Introdução
+
+Diferentemente do capital circulante, o capital fixo pode ser utilizado mais de uma vez.
+Suponha um método que produção que utiliza trigo e trator para a produção de um bem.
+Ao final do processo de produção, produz-se o bem e o "trator mais velho"[fn::Exceto o capital fixo utilizado que expira-se no mesmo período de produção. Neste caso, é tratado como capital circulante.].
+A diferença do trator nestes dois períodos é a depreciação no sentido econômico.
+
+Essa forma de explicação é a [[id:a67a2585-c090-4feb-aeb2-39e3a2d756e4][Produção Conjunta]] em que são produzidos mais de um bem em um mesmo processo de produção.
+A existência de capital fixo implica a produção de mais de um processo produtivo para um mesmo bem.
+Apesar desses diferentes processos de produção, a competição imporá um mesmo preço para este bem.
+Vale notar que esta forma de representar a tecnologia não precisa supor nenhuma hipótese /a priori/.
+Portanto, os bens de produção durável é tratado como os meios de produção vistos até então enquanto o capital fixo líquido de depreciação é analizado como decorrência da [[id:a67a2585-c090-4feb-aeb2-39e3a2d756e4][Produção Conjunta]].
+
+Também é possível representar um mercado secundário de bem de capital.
+Neste caso, produz-se mais de um bem.
+Um é o usualmente produzido e outro é o bem de capital obsoleto que, por sua vez, gerará uma receita.
+
+Vale pontuar que a [[id:224c836c-3b92-4d7c-abcd-00c128fabab6][Depreciação]] (quota de depreciação) na teoria neoclássica não é independente da distribuição.
+Isso porque o bem de capital depende dos preços relativos mesmo sendo homogêneo porque possuirão idadeis distintas.
+
+
+*** Método usual
+
+Importante indicar que não se aplica a taxa de lucro uniforme ao preço do capital fixo utilizado.
+Isso porque os processos produtivos que utilizam capital fixo teriam um preço relativo muito maior.
+A intuição econômica é que não é necessário comprar uma nova máquina a todo período.
+Sugere-se que:
+
+#+BEGIN_latex
+\begin{equation}
+(1+r)\cdot p_{k} \Rightarrow (\delta+r)\cdot p_{k}
+\end{equation}
+#+END_latex
+em que $\delta<1$.
+
+Considerando uma máquina ($m$) com efeciência constante cujo preço original é $p_{m0}$ e considerando uma vida útil de $n$ períodos, a taxa anual de depreciação será:
+#+BEGIN_latex
+\begin{equation}
+\delta_{m} = p_{m0}\frac{r(1+r)^{n}}{(1+r)^{n}-1}
+\end{equation}
+#+END_latex
+
+A fórmula indica que há uma divergência entre a cota anual de depreciação e $1/n$ (que seria esperado pela teoria do valor-trabalho).
+O problema é para uma taxa de lucro nula há uma indeterminação.
+Para resolver essa indeterminação é preciso utilizar a regra de L'Hospital.
+É possível apresentar a taxa de depreciação sem isso.
+
+**** Depreciação do capital fixo sem regra de L'Hospital
+
+Suponha um método de produção que utiliza trigo e trabalho para produzir a máquina $m$.
+Suponha tabmém que essa produção utiliza apenas capital circulante.
+
+#+BEGIN_latex
+\begin{equation}
+a_{11}p_{1}\cdot (1+r) + w\cdot l_{1} = p_{m}
+\end{equation}
+#+END_latex
+
+O objeto de interesse é encontrar o preço do bem produzido utilizando o capital fixo:
+#+BEGIN_latex
+\begin{equation}
+w\cdot l_{2} + p_{m}\cdot (\delta + r) = p_{2}
+\end{equation}
+#+END_latex
+
+
+Para calcular a depreciação, considere o capital fixo resultado de [[id:a67a2585-c090-4feb-aeb2-39e3a2d756e4][Produção Conjunta]] e suponha $n=3$[fn::Os preços da máquina são contábeis e não de mercado.]:
+#+BEGIN_latex
+\begin{equation}
+\begin{cases}
+a_{11}\cdot p_{1}\cdot (1+r) + w\cdot l_{1} = p_{1}\\
+ w\cdot l_{2} + p_{m0}(1+r) = p_{2} + p_{m1}}\\
+ w\cdot l_{2} + p_{m1}(1+r) = p_{2} + p_{m2}}\\
+p_{m2}(1+r) = p_{2}
+\end{cases}
+\end{equation}
+#+END_latex
+
+Com isso, é possível encontrar o preço da máquina utilizada a partir do último período útil.
+#+BEGIN_latex
+\begin{equation}
+p_{m2} = \frac{p_{2} - w\cdot l_{2}}{(1+r)}
+\end{equation}
+#+END_latex
+
+
+Continuando a substituição, encontra-se:
+#+BEGIN_latex
+\begin{equation}
+(\delta + r) = \frac{1+r}{1 + \frac{1}{1+r} + \frac{1}{(1+r)^{2}}}
+\end{equation}
+#+END_latex
+
+A partir disso, se $r=0 \rightarrow \delta = 1/3$ e $r>0 \rightarrow \delta < 1/3$
+
+Para $n$ períodos:
+#+BEGIN_latex
+\begin{equation}
+p_{m0}\left(\frac{1+r}{\sum_{i=0}^{n-1}\frac{1}{(1+r)^{i}}}\right) = p_{m0}\left(\frac{r(1+r)^{n}}{(1+r)^{n} - 1}\right) = p_{2}
+\end{equation}
+#+END_latex
+
+Vale indicar que essa equação se aplica para a situação em que supõe-se eficiência constante da máquina.
+Um caso mais geral deveria considerar eficiência distinta e a receita associada a venda da máquina.
+Independente desses casos mais específicos, *não será independente* da taxa de lucro.
+No caso da teoria neoclássica, não é possível explicar a taxa de lucro da economia por meio das quantidades de capital fixo[fn::Na teoria neoclássica, supõe-se que a depreciação é $1/n$ para qualquer valor positivo da taxa de lucro.].
+Portanto, a existência de capital fixo produzido por mercadorias amplificas os problemas da teoria neoclássica vistas no modelo somente com capital circulante.
+Já na moderna abordagem do excedente, é possível ter uma teoria completa cuja determinação da distribuição não depende da contribuição marginal dos fatores.
+
+
+Por fim, vale indicar que há uma diferença entre reposição (em termos físicos) e quota de depreciação (manutenção do valor do estoque de capital).
+A quota de depreciação, portanto, depende dos preços relativos e da distribuição.
+
+
+** Produção conjunta
+
+
+*** Introdução
+
+
+A teoria da produção conjunta ajuda a explicar situações em que não há produção simples do subproduto produzido.
+Ocorre [[id:a67a2585-c090-4feb-aeb2-39e3a2d756e4][Produção Conjunta]] quando mais de uma mercadoria (em termos líquidos) pode ser produzida conjuntamente por um mesmo processo[fn::O motivo pelo qual não trata-se de setores porque a categorização de um setor depende do que é produzido.].
+A implicação é que o sistema deixa de ser determinado uma vez que o número de equações é menor do que o de variáveis.
+A diferença é que além da receita do bem principal, também há a receita do subproduto.
+O preço deste bem adicional é determinado pela produção simples ao menos que a produção conjunta vigore.
+
+Caso seja produzido um pouco do produto que também é insumo (exemplo, energia) produtivo, mas não é produtor líquido deste bem, se assemelha à produção simples.
+O produto decorrerá da produção conjunta, mas o produto líquido é resultado da produção simples.
+Se a produção for separável, a produção conjunta pode ser tratada de forma similar à produção simples.
+
+
+**** Exemplos
+
+
+Observação: O caso aqui analisado não trata de subprodutos indesejados
+
+- Ônibus com pontos intermediários até a chegada em que não nenhuma rota que chega até esse ponto intermediário
+- Produção de cana de açúcar e energia elétrica como subproduto da queima do resíduo
+- Produção de trigo e feijão em um mesmo terreno com mesmos insumos
+
+*** Produção conjunta e demanda
+
+A existência de um segundo método em paralelo é preciso para que a demanda seja atendida.
+Em outras palavras, é preciso uma combinação dos métodos para que não exista super- ou sub-produção.
+Assim, é preciso não apenas ajustar o nível da produção à demanda efetiva, mas também a estrutura de produção.
+Se um dos processos produzisse só um dos bens, também permitiria o atendimento da demanda combinando com o outro método.
+Isso não será necessário se a demanda por esses bens, coincidentemente, for na mesma proporção do único processo de produção conjunta.
+Portanto, havendo produção conjunta é preciso ter mais de um processo não só para determinar os preços relativos, mas também o nível de demanda.
+
+
+Qualquer conjunto de produção conjunta, portanto, não seria capaz de atender qualquer composição da demanda.
+Isso não deixa de ser válido mesmo supondo retornos constantes de escala.
+Sendo assim, o efeito da demanda sobre os preços não depende só da escala, mas também da estrutura de produção.
+Por consequência, uma mudança grande da demanda gerará um efeito sobre os preços relativos que não é claro a priori.
+Pode ser que o sistema se ajuste ao nível da demanda com produção simples e, portanto, mudará os preços relativos.
+
+*** /Free disposal/
+
+Trata-se do não aproveitameto de um subproduto de produção conjunta por não ter valor econômico.
+Portanto, é uma superprodução em relação à demanda efetiva.
+Sendo assim, é possível descartar este bem a custo zero.
+
+* Concorrência e gravitação
+
 
 * Fisiocratas & Smith
 :PROPERTIES:
 :ID:       2e53f53c-53ec-4a68-8e03-a4b752d3de72
+:mtime:    20211202152738
+:ctime:    20211202152738
 :END:
 
 * Ricardo
 :PROPERTIES:
 :ID:       00f9ac43-0729-4258-8cb0-1876c2cb50a7
+:mtime:    20211202152640
+:ctime:    20211202152640
 :END:
 
 * Mercadoria padrão
 :PROPERTIES:
 :ID:       8ea0b1ce-b7fc-4fd7-bd7c-93944168301e
+:mtime:    20211202152741
+:ctime:    20211202152741
 :END:
 
 * Marx depois de Sraffa
 :PROPERTIES:
 :ID:       a37fd324-12f2-4814-a90b-9093034ffa75
+:mtime:    20211202152743
+:ctime:    20211202152743
 :END:

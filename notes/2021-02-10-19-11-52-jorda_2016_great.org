@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       6b79f253-8c53-4eaa-959b-d77a4dc99f5c
 :ROAM_REFS: cite:jorda_2016_great
+:mtime:    20211202152741 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE: jorda_2016_great: The great mortgaging: housing finance, crises and business cycles (Economic Policy)
 Time-stamp: 2021-02-10

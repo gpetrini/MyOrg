@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       17321dc0-d339-431c-ac54-3b3205371da6
 :ROAM_REFS: cite:keynes_1939_process
+:mtime:    20211202152738 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE: keynes_1939_process: The process of capital formation
 #+filetags: General_Theory Demanda_Efetiva UFRJ Moderna_Abordagem_do_Excedente

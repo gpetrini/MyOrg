@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       30a6801c-2b9a-4ae4-8ca5-376420420432
+:mtime:    20211202152739 20211108105511
+:ctime:    20211108105511
 :END:
 #+title: Financial cycles
 #+HUGO_AUTO_SET_LASTMOD: t

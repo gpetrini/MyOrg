@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       3ae4ec61-e3c3-4b0a-9e45-2633dab1e983
+:mtime:    20211202152739 20211013082514
+:ctime:    20210319130247
 :END:
 #+OPTIONS: num:nil
 #+title: ASE/RoSE/FfSE meeting on journal publishing

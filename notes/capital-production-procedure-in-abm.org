@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       37728df2-27c0-4f2a-b975-9b261087da1e
+:mtime:    20211202152739 20211028145229
+:ctime:    20211028145229
 :END:
 #+title: Capital production procedure in ABM
 #+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme

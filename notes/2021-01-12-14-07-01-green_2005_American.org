@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       9c90f229-3144-4e61-a5da-7280751add06
 :ROAM_REFS: cite:green_2005_American
+:mtime:    20211202152743 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE: green_2005_American: The American Mortgage in Historical and International Context
 Time-stamp: 2021-01-12

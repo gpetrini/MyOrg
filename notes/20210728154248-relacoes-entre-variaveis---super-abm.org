@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       d039014d-10b5-4611-a815-a54502000d8d
 :ROAM_ALIASES: relacoes_ch_super_abm
+:mtime:    20211202152744 20211013082514
+:ctime:    20210728154248
 :END:
 #+title: Relações entre variáveis: Super ABM
 

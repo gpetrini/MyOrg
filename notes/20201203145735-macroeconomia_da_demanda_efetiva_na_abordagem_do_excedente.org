@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       a405ebe8-05ae-41ec-86a2-87c1fdba4e18
+:mtime:    20211202152743 20211013082514 20211202152740
+:ctime:    20201203145735
 :END:
 #+OPTIONS: num:nil
 #+title: Macroeconomia da Demanda Efetiva na abordagem do excedente
@@ -1572,6 +1574,8 @@ e. Assimetrias
 **** Spreads crescentes e racionamento de crédito :ATTACH:
 :PROPERTIES:
 :ID:       54c40946-9009-4133-8f02-c1cfa6c3c394
+:mtime:    20211202152740 20211013082514
+:ctime:    20201203145735
 :END:
 
 

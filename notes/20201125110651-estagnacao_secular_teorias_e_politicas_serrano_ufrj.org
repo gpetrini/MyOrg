@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       14e9445e-264d-497d-a299-3586e50e137e
+:mtime:    20211202152738 20211013082514
+:ctime:    20201125110651
 :END:
 #+title: Estagnação Secular: Teorias e Políticas - Serrano (UFRJ)
 #+DATE: <2020-11-25 qua>

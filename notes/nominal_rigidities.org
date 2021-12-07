@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       3a5819f8-f58c-4776-9adb-4932513c55c5
+:mtime:    20211202152739 20211108110551
+:ctime:    20211108110551
 :END:
 #+title: Nominal rigidities
 

@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       758ac0d6-00dd-46a3-8e26-1063a246f38b
 :ROAM_REFS: cite:hofmannDeterminantsBankCredit2004
+:mtime:    20211202152741 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE: hofmannDeterminantsBankCredit2004: The Determinants of Bank Credit in Industrialized Countries: Do Property Prices Matter?
 Time-stamp: 2020-11-29

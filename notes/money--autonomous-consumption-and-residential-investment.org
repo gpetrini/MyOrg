@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       b7e5ba6b-66ba-44f8-9ed7-e8740a93d50d
+:mtime:    20211202152744 20211013082514
+:ctime:    20211013082514
 :END:
 #+title: Money, autonomous consumption and residential investment
 

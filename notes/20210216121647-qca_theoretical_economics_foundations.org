@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       8b0a5bce-ba2c-4779-b339-eca15899cb2b
+:mtime:    20211202152742 20211013082514
+:ctime:    20210216121647
 :END:
 #+OPTIONS: toc:nil num:nil
 #+title: QCA Theoretical Economics Foundations

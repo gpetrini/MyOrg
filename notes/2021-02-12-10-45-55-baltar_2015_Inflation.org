@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       a8ca7350-05c1-4155-8949-a682bffd7d05
 :ROAM_REFS: cite:baltar_2015_Inflation
+:mtime:    20211202152743 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE: baltar_2015_Inflation: Inflation and economic growth in an open developing country: the case of Brazil (2015, Cambridge Journal of Economics)
 Time-stamp: 2021-02-12

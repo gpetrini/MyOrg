@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       6ef8beba-8ad9-472c-b9e8-9a43aaeede90
 :ROAM_REFS: cite:ECB_2009_Housing
+:mtime:    20211202152741 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE: ECB_2009_Housing: Housing finance in the euro area (2009, Occasional Paper Series)
 #+OPTIONS: toc:nil num:nil

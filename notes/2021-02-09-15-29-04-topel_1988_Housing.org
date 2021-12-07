@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       ddf3f38b-df81-43e3-8508-14ec243a58d4
 :ROAM_REFS: cite:topel_1988_Housing
+:mtime:    20211202152745 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE: topel_1988_Housing: Housing Investment in the United States (Journal of Political Economy)
 Time-stamp: 2021-02-09

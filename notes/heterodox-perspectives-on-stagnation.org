@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       3c918285-7392-4fd0-baff-734e94fd0720
+:mtime:    20211202152739 20211013082514
+:ctime:    20211013082514
 :END:
 #+title: Heterodox perspectives on Stagnation
 #+DATE: <2021-07-20 ter>

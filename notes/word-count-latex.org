@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       2b461a80-7884-4cbc-8d00-62f0cd6719b0
+:mtime:    20211202152739 20211013082514
+:ctime:    20211013082514
 :END:
 #+title: Word count latex
 

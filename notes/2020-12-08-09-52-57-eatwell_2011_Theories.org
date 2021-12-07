@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       322e3bba-863a-4536-bee5-8dfe38c750a3
 :ROAM_REFS: cite:eatwell_2011_Theories
+:mtime:    20211202152739 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE: eatwell_2011_Theories: Theories of Value, Output, and Employment
 #+filetags: Moderna_Abordagem_do_Excedente Demanda_Efetiva UFRJ

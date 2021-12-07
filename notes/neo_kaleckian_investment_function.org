@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       83a06494-7cda-4825-8c30-2a53e9b02c91
+:mtime:    20211202152741 20211027145352
+:ctime:    20211027145352
 :END:
 #+title: neo-Kaleckian investment function
 

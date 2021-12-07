@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       4fe0d267-ad06-4a8a-bc89-2ab6e37f6b61
+:mtime:    20211202152740 20211104180838
+:ctime:    20211104180838
 :END:
 #+title: Natural Prices
 #+HUGO_AUTO_SET_LASTMOD: t

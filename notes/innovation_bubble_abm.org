@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       e20ae018-ac3b-4b4e-8108-29f84b898745
+:mtime:    20211202152745 20211108181120
+:ctime:    20211108181120
 :END:
 #+title: Innovation bubble ABM
 

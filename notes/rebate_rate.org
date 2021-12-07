@@ -1,6 +1,7 @@
 :PROPERTIES:
 :ID:       96240415-033d-47e3-ad23-b28f5dd83fa7
-:mtime:    20211126171924
+:mtime:    20211202152742 20211126171924
+:ctime:    20211126172320
 :END:
 #+title: Rebate rate
 

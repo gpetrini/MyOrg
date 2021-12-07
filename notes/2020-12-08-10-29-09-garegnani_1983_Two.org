@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       415048db-7bae-48b3-afe4-ec2e0fc86fb5
 :ROAM_REFS: cite:garegnani_1983_Two
+:mtime:    20211202152739 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE: garegnani_1983_Two: Two Routes to Effective Demand: a comment on Kregel
 #+filetags: Moderna_Abordagem_do_Excedente Demanda_Efetiva UFRJ

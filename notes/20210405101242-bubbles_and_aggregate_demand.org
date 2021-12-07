@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       a6a37eb8-fe7c-4fe2-b2d2-3fe96d3eca04
+:mtime:    20211202152743 20211104144255
+:ctime:    20210405101242
 :END:
 #+title: Bubbles and aggregate demand
 #+HUGO_AUTO_SET_LASTMOD: t

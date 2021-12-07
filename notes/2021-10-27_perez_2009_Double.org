@@ -2,6 +2,8 @@
 :ID: 20211027T155517
 :CAPTURED: [2021-10-27 15:55:17]
 :ROAM_REFS: cite:perez_2009_Double
+:mtime:    20211202152739 20211109164746
+:ctime:    20211109164746
 :END:
 #+TITLE: perez_2009_Double: The double bubble at the turn of the century: technological roots and structural implications - (2009, Cambridge Journal of Economics)
 Time-stamp: 2021-10-27

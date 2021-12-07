@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       5f5e74f0-21ec-4371-bf2e-060c5140f0f3
 :ROAM_REFS: cite:serrano_2002_Conflito
+:mtime:    20211202152740 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE: serrano_2002_Conflito: Conflito distributivo e inflac\~ao de custos (2002, )
 #+OPTIONS: toc:nil num:nil

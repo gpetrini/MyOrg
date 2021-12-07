@@ -1,7 +1,8 @@
 :PROPERTIES:
 :ID:       560fac35-1ffa-4fbd-ad75-49aafc4bbd5f
-:mtime:    20211130150956 20211129150604
+:mtime:    20211202152740 20211130150956 20211129150604
 :ROAM_ALIASES: "General price inflation"
+:ctime:    20211130150956
 :END:
 #+title: Inflation
 

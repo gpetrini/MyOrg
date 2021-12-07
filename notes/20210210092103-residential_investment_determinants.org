@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       1ca382d9-deed-416d-9b0e-f2eb30a23f09
+:mtime:    20211202152738 20211104144215
+:ctime:    20210210092103
 :END:
 #+title: Residential investment determinants
 #+HUGO_AUTO_SET_LASTMOD: t

@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       49c8fc6e-0953-4e5e-abe2-d40f64a37c09
 :ROAM_REFS: cite:pedrosaFirmsLeverageRatio
+:mtime:    20211202152740 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE: pedrosaFirmsLeverageRatio: Firms' leverage ratio and the Financial Instability Hypothesis (FIH): an empirical investigation for the United States economy (1970-2014) (, )
 Time-stamp: 2021-02-12

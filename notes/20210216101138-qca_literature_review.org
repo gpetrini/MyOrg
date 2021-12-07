@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       81e0d0b7-cecd-4869-a1be-3ca16bebe8fe
+:mtime:    20211202152741 20211013082514
+:ctime:    20210216101138
 :END:
 #+OPTIONS: toc:nil num:nil
 #+title: QCA Literature Review

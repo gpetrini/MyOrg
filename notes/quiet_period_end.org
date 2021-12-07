@@ -1,6 +1,7 @@
 :PROPERTIES:
 :ID:       ec072781-8bb4-4bef-b21f-69622337cf69
-:mtime:    20211126172854
+:mtime:    20211202152745 20211126172854
+:ctime:    20211126172854
 :END:
 #+title: Quiet Period End
 

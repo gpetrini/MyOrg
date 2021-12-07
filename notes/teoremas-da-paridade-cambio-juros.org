@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       15705441-bd07-46e1-b330-009ec57eb410
+:mtime:    20211202152738 20211013082514
+:ctime:    20211013082514
 :END:
 #+title: Teoremas da paridade câmbio-juros
 #+filetags: :OpenEconomy:MacroeconomiaAberta:

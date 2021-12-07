@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       ad00f474-a52a-47c2-9cbe-329091e53954
 :ROAM_REFS: cite:internationalmonetaryfund.reseachdept._2008_changing
+:mtime:    20211202152743 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE: internationalmonetaryfund.reseachdept._2008_changing: The changing housing cycle and the implications for monetary policy (2008)
 #+OPTIONS: toc:nil num:nil

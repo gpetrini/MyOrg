@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       858d3eb8-5989-4dc5-a1ac-748d6c4b13ac
+:mtime:    20211202152741 20211108164159
+:ctime:    20211108164159
 :END:
 #+title: Financial Accelerator Model
 

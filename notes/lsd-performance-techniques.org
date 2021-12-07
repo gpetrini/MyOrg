@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       d7501d57-45a8-4332-8db9-2f0bbecc73de
+:mtime:    20211202152744 20211013082514
+:ctime:    20211013082514
 :END:
 #+title: LSD performance techniques
 #+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme

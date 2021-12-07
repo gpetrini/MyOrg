@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       05e9a1fd-2e27-4a0f-97bb-27313dfbf378
 :ROAM_REFS: cite:legewieIntroductionAppliedData2013
+:mtime:    20211202152738 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE: legewieIntroductionAppliedData2013: An Introduction to Applied Data Analysis with Qualitative Comparative Analysis
 #+filetags: Good_Practices Hands_on QCA

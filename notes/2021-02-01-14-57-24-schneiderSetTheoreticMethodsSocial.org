@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       15df7b4b-894c-4fee-99c7-12c8756ebd66
+:mtime:    20211202152738 20211013082514
+:ctime:    20211013082514
 :END:
 #+OPTIONS: num:nil ':t H:6
 #+TITLE: schneiderSetTheoreticMethodsSocial: Set-Theoretic Methods for the Social Sciences: A Guide to Qualitative Comparative Analysis
@@ -74,6 +76,10 @@ In summary, the sufficiency of ~X~ is falsified if and only if there is *simulta
 |------+---------------+-------------+---------------------------|
 
 **** Example
+:PROPERTIES:
+:mtime:    20211013082514
+:ctime:    20211013082514
+:END:
 
 #+CAPTION: Hypothetical data matrix with ten cases and set-membership scores in three conditions and the outcome (adapted from p. 61)
 |-------------+---+---+---+---+----------------+----------------+----------------+-----------------+-----------------+-----------------|
@@ -155,6 +161,10 @@ Thus, no cases with ~Y~ displays ~~X~; on the presence of ~~X~, ~Y~ is impossibl
 
 
 **** Example
+:PROPERTIES:
+:mtime:    20211013082514
+:ctime:    20211013082514
+:END:
 
 #+CAPTION: Hypothetical data matrix with ten cases and set-membership scores in three conditions and the outcome (adapted from p. 61)
 |------------+----+----+----+----+----+----+--------+---|

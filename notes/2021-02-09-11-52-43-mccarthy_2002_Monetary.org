@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       ffe5cc16-1385-43ed-9d96-c34c73819652
 :ROAM_REFS: cite:mccarthy_2002_Monetary
+:mtime:    20211202152745 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE: mccarthy_2002_Monetary: Monetary Policy Transmission to Residential Investment
 Time-stamp: 2021-02-09

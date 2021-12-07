@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       a0a72c58-267d-4613-8579-dc795ab1c369
+:mtime:    20211202152743 20211013082514
+:ctime:    20210210185414
 :END:
 #+OPTIONS: toc:nil num:nil
 #+title: QCA Data

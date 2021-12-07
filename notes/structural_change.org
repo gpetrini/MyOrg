@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       c0616d75-5f03-4067-b1f7-6ff10d2c1285
+:mtime:    20211202152744 20211027160614
+:ctime:    20211027160614
 :END:
 #+title: Structural change
 

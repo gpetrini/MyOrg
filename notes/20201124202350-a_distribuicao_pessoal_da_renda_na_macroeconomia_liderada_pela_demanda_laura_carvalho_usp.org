@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       140b0945-65fb-431e-a087-22b140230539
+:mtime:    20211202152738 20211013082514
+:ctime:    20201124202350
 :END:
 #+title: A distribuição pessoal da renda na macroeconomia liderada pela demanda - Laura Carvalho (USP)
 #+DATE: <2020-11-23 seg>

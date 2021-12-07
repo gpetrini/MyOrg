@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       9eecf0d0-8734-49f1-b0cd-a2e918c15c3b
 :ROAM_REFS: cite:pedrosa_2021_what
+:mtime:    20211202152743 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE: pedrosa_2021_what: To what extent does aggregate leverage determine financial fragility? New insights from an agent-based stock-flow consistent model (2021, )
 #+OPTIONS: toc:nil num:nil

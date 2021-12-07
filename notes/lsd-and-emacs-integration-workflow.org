@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       b67d7a6b-bd61-45cd-909c-7d4e9b23268e
+:mtime:    20211202152744 20211013082514
+:ctime:    20211013082514
 :END:
 #+title: LSD and Emacs integration workflow
 

@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       e4c9fa68-e2f5-4b6b-b65f-7ab5888abaf1
 :ROAM_REFS: cite:sutton_2017_Interestb
+:mtime:    20211202152745 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE: sutton_2017_Interestb: Interest rates and house prices in the United States and around the world ()
 Time-stamp: 2021-02-09

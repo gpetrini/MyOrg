@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       d891bce2-de97-4f40-816a-aec7120092c9
+:mtime:    20211202152744 20211111173713
+:ctime:    20211111173713
 :END:
 #+title: Intensive Differential Rent
 

@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       b58b37f4-080c-4af9-91d6-154e631a8f78
+:mtime:    20211202152744 20211028144901
+:ctime:    20211028144901
 :END:
 #+title: Netlogo-LSD comparison
 

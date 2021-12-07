@@ -3,4 +3,6 @@
 :NOTER_DOCUMENT: ../../PDFs/Sharpe e Suarez - 2020 - Why Isn’t Business Investment More Sensitive to In.pdf
 :NOTER_PAGE: 16
 :ID:       99a4f0f8-a7a3-495a-a1f9-ef0b1e055a4f
+:mtime:    20211202152742 20211013082514
+:ctime:    20211013082514
 :END:

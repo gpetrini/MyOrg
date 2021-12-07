@@ -1,6 +1,7 @@
 :PROPERTIES:
 :ID:       aa9d846a-4b1f-4a8e-b015-76ec31d1d9d7
-:mtime:    20211115152639
+:mtime:    20211202152743 20211115152639
+:ctime:    20211115152639
 :END:
 #+title: Monetary theory of distribution
 

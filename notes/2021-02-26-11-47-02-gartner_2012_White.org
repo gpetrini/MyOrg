@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       6a4a0db7-6043-4fcb-b0ba-4dfa7c657bba
 :ROAM_REFS: cite:gartner_2012_White
+:mtime:    20211202152741 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE: gartner_2012_White: White Picket Finance: The Remaking of the U.S. Mortgage Market, 1932-1960 (2012, )
 #+OPTIONS: toc:nil num:nil

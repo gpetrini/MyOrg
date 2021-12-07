@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       6367d2bd-7a1f-492f-9397-5003f5416ead
 :ROAM_ALIASES: InstComp
+:mtime:    20211202152740 20211013082514
+:ctime:    20210210184827
 :END:
 #+title: Institutional comparisons
 #+ARCHIVE: ../archive/QCA.org::* Institutional comparisons

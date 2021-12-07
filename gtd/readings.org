@@ -35,13 +35,11 @@ https://i.pinimg.com/originals/ea/c9/83/eac9832cf6b1ad75af8ccc3ad3db1728.gif
 ** <2021-05-07 sex> [[https://onlinelibrary.wiley.com/doi/abs/10.1111/meca.12335][Thirlwall’s law, uneven development, and income distribution - Sasaki]] :meca:
 
 ** <2021-09-28 ter> [[https://onlinelibrary.wiley.com/doi/full/10.1111/meca.12355][A methodological problem in a supermultiplier model with too much acceleratio...]] :SraffianSupermultiplier:AutonomousExpenditures:Methodology:meca:
-** <2021-09-28 ter> [[https://onlinelibrary.wiley.com/doi/10.1111/meca.12354][Is autonomous demand really autonomous in the United States? An asymmetric fr...]] :SraffianSupermultiplier:AutonomousExpenditures:Empirical:TimeSeriesEconometrics:meca:
+** RESULTS [#A] [[https://onlinelibrary.wiley.com/doi/10.1111/meca.12354][Is autonomous demand really autonomous in the United States? An asymmetric fr...]] :SraffianSupermultiplier:Empirical:TimeSeriesEconometrics:meca:FrequencyDomainModel:Causalty:
 * Working papers/Conference papers
 
-** <2021-09-14 ter> [[https://www.uni-bamberg.de/fileadmin/uni/fakultaeten/sowi_faecher/vwl/BERG/BERG_173.pdf]] :Consumption:Inequality:ABM:
+** READ [#A] [[https://scholar.google.com.br/scholar_url?url=https://www.boeckler.de/pdf/v_2021_10_29_allain.pdf&hl=pt-BR&sa=X&d=13284360159044545796&ei=krmDYanFGoWN6rQPm5Wf4As&scisig=AAGBfm0_Qv-xMv_16uPe-ITBuvIxe0P3Tw&oi=scholaralrt&hist=0soJqxkAAAAJ:11446866960855446892:AAGBfm1xPxfIJvREPJhXA5Bb--edXNJorA&html=&folt=kw][A supermultiplier model with two non-capacity-generating autonomous demand components]] :SraffianSupermultiplier:
 
-** <2021-10-21 qui> [[https://www.ipe-berlin.org/fileadmin/institut-ipe/Dokumente/Working_Papers/ipe_working_paper_169.pdf]] :SraffianSupermultiplier:EnvironmentalModel:AutonomousExpenditures:EcologicalModel:
-** <2021-10-26 ter> [[A supermultiplier model with two non-capacity-generating autonomous demand components]] :SraffianSupermultiplier:AutonomousExpenditure:
 * Dissertation
 
 ** [[file:../notes/20210210100407-abm_readings.org][ABM Readings]] :ABM:
@@ -374,11 +372,14 @@ Parts to read:
 *** RESULTS [#D] [[https://academic.oup.com/rof/article/10/3/321/1606865][Financial Accelerator: Evidence from International Housing Markets | Review o...]] :ABM:Empirical:Results:DATA:StilyzedFacts:
 *** WAIT [#C] [[https://www.researchgate.net/profile/Stefano-Di-Bucchianico/publication/351359936_Inequality_household_debt_ageing_and_bubbles_A_model_of_demand-side_Secular_Stagnation/links/6093ecf392851c490fbc88e0/Inequality-household-debt-ageing-and-bubbles-A-model-of-demand-side-Secular-Stagnation.pdf][Inequality, household debt, ageing and bubbles: A model of demand-side Secular Stagnation]] :Bubbles:Sraffian:HousePrices:
 ** [[file:../notes/20210210091758-house_prices.org][House Prices]] :Prices:
+*** READ [#A] [[https://voxeu.org/article/what-drives-house-prices-some-lessons-literature][What drives house prices: Some lessons from the literature]] :HousePrices:Vox:
 *** READ [#B] [[https://www.sciencedirect.com/science/article/abs/pii/S1051137716300237][Housing finance and real-estate booms: A cross-country perspective]] :Data:QCA:DIRECTIONALS:Panel:
-*** READ <2021-06-14 seg> [[https://www.sciencedirect.com/science/article/pii/S2325426221000139][Examining the determinants of housing prices and the influence of the spatial...]] :HousePrices:Spatial:Empirical:Panel:China:
-*** SKIM <2021-03-19 sex> [[http://saeb.feaa.uaic.ro/index.php/saeb/article/view/1480][House Price Shock and Business Cycle: The French Case | Saad | Scientific Ann...]] :Panel:HousePrices:BusinessCycle:France:
+*** READ [[https://www.sciencedirect.com/science/article/pii/S2325426221000139][Examining the determinants of housing prices and the influence of the spatial...]] :HousePrices:Spatial:Empirical:Panel:China:
+*** SKIM [[http://saeb.feaa.uaic.ro/index.php/saeb/article/view/1480][House Price Shock and Business Cycle: The French Case | Saad | Scientific Ann...]] :Panel:HousePrices:BusinessCycle:France:
+*** SKIM [#C] [[https://link.springer.com/article/10.1007/s43253-021-00050-7][The financialization of rented homes: continuity and change in housing financ...]] :HousingMarket:RentalMarket:Financialization:Concepts:Definition:ResidentialInvestment:
+
 *** SKIM [#D] [[https://www.tandfonline.com/doi/abs/10.1080/1351847X.2021.1959366?journalCode=rejf20][Credit composition and housing price dynamics: a disaggregation approach]] :Panel:HousePrices:TimeSeries:Europe:AssetPrices:
-*** <2021-09-13 seg> [[https://voxeu.org/article/what-drives-house-prices-some-lessons-literature][What drives house prices: Some lessons from the literature]] :HousePrices:Vox:
+*** RESULTS [#C] [[https://www.sciencedirect.com/science/article/abs/pii/S0165176521004171][Consumption and housing net worth: Cross-country evidence - ScienceDirect]] :Housing:HouseholdConsumption:HouseholdWealth:HouseholdNetWorth:HousePrices:Empirical:OECD:AsymetricModel:
 *** ARCH [#C] [[https://www.kansascityfed.org/PUBLICAT/ECONREV/PDF/2q07rapp.pdf][Rappaport - A Guide to Aggregate House Price Measures]] :USA:HousePrices:
 
 ** [[file:../notes/20210405101242-bubbles_and_aggregate_demand.org][Bubbles and aggregate demand]] :Dissertation:
@@ -500,16 +501,16 @@ CLOSED: [2021-11-24 qua 17:18]
 
 *** INPROGRESS [#C] [[https://www.sciencedirect.com/science/article/pii/S0165188917301033][Booms, busts and behavioural heterogeneity in stock prices]] :Behavioral:BoundedRationality:Heterogeinity:Expectations:StockPrices:FinancialCrisis:Results:HeuristicSwitching:
 
-*** PARTIAL [#A] [[https://www.sciencedirect.com/science/article/pii/S0165188900000282][Learning to speculate: Experiments with artificial and real agents]] :AgentBased:Experiments:Learning:SearchAlgorithm:Speculation:
+*** READ [#A] [[https://link.springer.com/article/10.1007%2Fs00191-011-0242-4][Evolutionary selection of expectations in positive and negative feedback markets]] :Equation:ToBase:ToCite:Expectations:HeuristicSwitching:
+
 
 *** PARTIAL [#A] [[https://www.aeaweb.org/articles?id=10.1257/mic.4.4.35][Evolutionary Selection of Individual Expectations and Aggregate Outcomes in Asset Pricing Experiments]] :Beliefs:Communication:Equation:LearningToForecastExperiment:Speculation:AssetPrices:InformationKnowledge:Learning:ExperimentalForecast:HeuristicSwitching:TradingVolume:
-
-*** PARTIAL [#A] [[https://link.springer.com/article/10.1007%2Fs00191-011-0242-4][Evolutionary selection of expectations in positive and negative feedback markets]] :Equation:ToBase:ToCite:Expectations:HeuristicSwitching:
 
 
 *** PARTIAL [#B] [[https://www.sciencedirect.com/science/article/pii/S016518891000223X][The heterogeneous expectations hypothesis: Some evidence from the lab]] :Empirical:Experiments:Expectations:HeuristicSwitching:Results:Heterogeinity:Learning:
 
 *** PARTIAL [#B] [[https://www.sciencedirect.com/science/article/pii/S0304393213000810][‘Wait-and-See’ business cycles?]] :Results:BusinessCycle:FirmData:InvestmentPlan:US:CapitalAdjustmentCost:
+*** PARTIAL [#C] [[https://www.sciencedirect.com/science/article/pii/S0165188900000282][Learning to speculate: Experiments with artificial and real agents]] :AgentBased:Experiments:Learning:SearchAlgorithm:Speculation:
 *** PARTIAL [#C] [[https://www.sciencedirect.com/science/article/pii/S0167268120302444][The expected price of keeping up with the Joneses]] :Inspiration:Expectations:Inequality:ToBase:SocialComparison:
 *** SKIM [#A] [[https://onlinelibrary.wiley.com/doi/full/10.1111/j.1756-8765.2008.01006.x][Homo Heuristicus: Why Biased Minds Make Better Inferences]] :DecisionMaking:Heuristics:Inferences:BoundedRationality:Results:Uncertainty:
 *** SKIM [#B] [[https://www.sciencedirect.com/science/article/pii/S0167268121002262][Heterogeneity in individual expectations, sentiment, and constant-gain learning]] :Expectations:ExperimentalForecast:Beliefs:Forecast:Results:OptimismWave:PessimismWave:Sentiment:

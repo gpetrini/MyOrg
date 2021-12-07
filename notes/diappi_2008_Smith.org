@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       8da2a8cb-0ba8-4fbf-9b25-9e67a8dd3ec4
+:mtime:    20211202152742 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE:  (2008, ): Smith's rent gap theory and local real estate dynamics: A multi-agent model
 #+OPTIONS: toc:nil num:nil

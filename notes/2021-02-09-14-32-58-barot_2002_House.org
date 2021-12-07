@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       46327959-67f1-40df-8dc6-9e77c349fffa
 :ROAM_REFS: cite:barot_2002_House
+:mtime:    20211202152739 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE: barot_2002_House: House Prices and Housing Investment in Sweden and the UK: Econometric Analysis for the Period 1970\textendash 1998 (Review of Urban \& Regional Development Studies)
 Time-stamp: 2021-02-09

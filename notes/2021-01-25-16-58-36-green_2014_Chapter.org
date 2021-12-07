@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       9be7c061-c167-4539-adb2-c9076a27d9d1
 :ROAM_REFS: cite:green_2014_Chapter
+:mtime:    20211202152743 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE: green_2014_Chapter: Chapter 9 - The Subprime Crisis
 Time-stamp: 2021-01-25

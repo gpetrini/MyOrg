@@ -1,6 +1,7 @@
 :PROPERTIES:
 :ID:       576b10f4-300a-40b3-9764-3f1ae79c4054
-:mtime:    20211130153314
+:mtime:    20211202152740 20211130153314
+:ctime:    20211130153315
 :END:
 #+title: Taylor Rule
 

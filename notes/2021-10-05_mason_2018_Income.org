@@ -2,6 +2,8 @@
 :ID: 20211005T101910
 :CAPTURED: [2021-10-05 10:19:10]
 :ROAM_REFS: cite:mason_2018_Income
+:mtime:    20211202152738 20211028145137
+:ctime:    20211028145137
 :END:
 #+TITLE: mason_2018_Income: Income Distribution, Household Debt, and Aggregate Demand: a Critical Assessment - (2018, Levy Institute Working Paper No 901)
 #+filetags: :HousePrices:AssetBubble:Household_debt:Financial_crisis:Personal_Income_Distribution:Financial_Instability_Hypothesis:

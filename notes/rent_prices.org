@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       cec34086-7f97-42f0-8a74-dbd75eedac2e
+:mtime:    20211202152744 20211111160652
+:ctime:    20211111160652
 :END:
 #+title: Rent prices
 

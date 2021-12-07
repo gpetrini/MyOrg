@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       db5df162-4be1-4333-8057-b35d870639ee
 :ROAM_REFS: cite:gattini_2012_House
+:mtime:    20211202152744 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE: gattini_2012_House: House price responsiveness of housing investments across major European economies ()
 Time-stamp: 2021-02-09

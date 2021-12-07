@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       fba28600-c7c8-4b1d-a4e3-138b051a18ec
+:mtime:    20211202152745 20211013082514
+:ctime:    20210210190632
 :END:
 #+title: Panel Theoretical foundations
 [[id:96cca9b2-3b1c-4e2d-bf63-c2d8b032f096][Panel readings]]

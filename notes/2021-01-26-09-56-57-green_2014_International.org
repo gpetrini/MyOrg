@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       4ef4b6c3-4d47-40fe-abd0-8d926ed586da
 :ROAM_REFS: cite:green_2014_International
+:mtime:    20211202152740 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE: green_2014_International: International Comparisons of Mortgages
 Time-stamp: 2021-01-26

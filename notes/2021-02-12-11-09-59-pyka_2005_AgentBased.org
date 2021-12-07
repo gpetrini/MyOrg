@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       e1129598-922f-45b0-a4a0-57dc241b398f
 :ROAM_REFS: cite:pyka_2005_AgentBased
+:mtime:    20211202152745 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE: pyka_2005_AgentBased: Agent-Based Modelling: A Methodology for Neo-Schumpeterian Economics (2005, Discussion Paper Series)
 Time-stamp: 2021-02-12

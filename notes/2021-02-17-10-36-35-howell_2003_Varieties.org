@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       cdbafc36-8a54-49c3-aad5-7368cf4e4599
 :ROAM_REFS: cite:howell_2003_Varieties
+:mtime:    20211202152744 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE: howell_2003_Varieties: Varieties of Capitalism: And Then There Was One? (2003, Comparative Politics)
 #+OPTIONS: toc:nil num:nil

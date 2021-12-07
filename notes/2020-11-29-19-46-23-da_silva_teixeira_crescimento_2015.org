@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       ef89ccc8-4f8b-4352-91b6-14d2dfc83675
 :ROAM_REFS: cite:da_silva_teixeira_crescimento_2015
+:mtime:    20211202152745 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE: da_silva_teixeira_crescimento_2015: Crescimento liderado pela demanda na economia norte-americana nos anos 2000: uma an\'alise a partir do supermultiplicador sraffiano com inflac\~ao de ativos
 Time-stamp: 2020-11-29

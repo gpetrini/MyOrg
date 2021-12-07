@@ -1,6 +1,7 @@
 :PROPERTIES:
 :ID:       20e485e5-26da-4a12-aa07-6e7a9e024f0d
-:mtime:    20211130153156
+:mtime:    20211202152739 20211130153156
+:ctime:    20211130153156
 :END:
 #+title: Relative Absolute Deviation
 

@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       a47af3a7-ea0d-4f0a-8fcb-370466b6e1d1
 :ROAM_REFS: cite:haberler_1946_purely
+:mtime:    20211202152743 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE: haberler_1946_purely: The Purely Monetary Theory
 #+filetags: Macroeconomia_Financeira UFRJ

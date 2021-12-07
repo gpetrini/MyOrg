@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       70d36cbf-8564-41e2-9115-1411318faca7
 :ROAM_REFS: cite:setterfieldVarietiesCapitalismIncreasing2020
+:mtime:    20211202152741 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE: setterfieldVarietiesCapitalismIncreasing2020: Varieties of capitalism, increasing income inequality and the sustainability of long-run growth (2020, Cambridge Journal of Economics)
 #+filetags: reformism Kaleckian Growth_model neoliberalization Household_debt Inequality VoC

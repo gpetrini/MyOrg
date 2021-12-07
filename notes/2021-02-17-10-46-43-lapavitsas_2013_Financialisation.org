@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       6a9733aa-6d56-4986-8c51-330093feed42
 :ROAM_REFS: cite:lapavitsas_2013_Financialisation
+:mtime:    20211202152741 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE: lapavitsas_2013_Financialisation: Financialisation varied: a comparative analysis of advanced economies (2013, Cambridge Journal of Regions, Economy and Society)
 #+OPTIONS: toc:nil num:nil

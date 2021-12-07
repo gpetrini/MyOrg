@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       abfc5875-3c94-4556-a396-ff75507eac1f
+:mtime:    20211202152743 20211108181101
+:ctime:    20211108181101
 :END:
 #+title: Technological revolution
 

@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       fe80e1b8-d6ef-40ee-bbf3-e85901693248
+:END:
+#+title: Chartists
+
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+
+#+hugo_section: notes
+
+#+HUGO_TAGS: placeholder
+
+#+OPTIONS: num:nil ^:{} toc:nil

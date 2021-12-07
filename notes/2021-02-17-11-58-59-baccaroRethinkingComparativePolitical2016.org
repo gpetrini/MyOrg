@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       cd1512c7-2ca5-418b-bf57-04d291e38649
 :ROAM_REFS: cite:baccaroRethinkingComparativePolitical2016
+:mtime:    20211202152744 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE: baccaroRethinkingComparativePolitical2016: Rethinking Comparative Political Economy: The Growth Model Perspective (2016, Politics \& Society)
 #+OPTIONS: toc:nil num:nil

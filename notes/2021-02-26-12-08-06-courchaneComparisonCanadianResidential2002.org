@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       9a5df9c6-67f2-4a98-8fa2-32ec8c79d6f1
 :ROAM_REFS: cite:courchaneComparisonCanadianResidential2002
+:mtime:    20211202152742 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE: courchaneComparisonCanadianResidential2002: A Comparison of U.S. and Canadian Residential Mortgage Markets (2002, Econometrics Working Papers)
 #+OPTIONS: toc:nil num:nil

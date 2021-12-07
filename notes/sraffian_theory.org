@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       35ff5292-f071-426c-a649-595c986ef2a6
+:mtime:    20211202152739 20211104170641
+:ctime:    20211104170641
 :END:
 #+title: Sraffian Theory
 #+HUGO_AUTO_SET_LASTMOD: t

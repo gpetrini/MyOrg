@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       59b6982b-f318-4695-94a6-6c00a619f304
 :ROAM_ALIASES: pca_studies
+:mtime:    20211202152745 20211013082514 20211202152740
+:ctime:    20211013082514
 :END:
 #+title: Principal Component Analysis notes
 

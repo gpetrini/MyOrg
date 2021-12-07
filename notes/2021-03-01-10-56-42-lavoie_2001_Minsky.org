@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       f1aea361-6af4-4ca8-9909-03973dabc01c
 :ROAM_REFS: cite:lavoie_2001_Minsky
+:mtime:    20211202152745 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE: lavoie_2001_Minsky: Minsky's financial fragility hypothesis: a missing macroeconomic link? (2001, )
 #+OPTIONS: toc:nil num:nil

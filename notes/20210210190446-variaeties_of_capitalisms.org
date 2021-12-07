@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       91af4a64-81b2-42dc-a3bc-07a91329a989
 :ROAM_ALIASES: VoC
+:mtime:    20211202152742 20211013082514
+:ctime:    20210210190446
 :END:
 #+OPTIONS: toc:nil num:nil
 #+title: Varieties of Capitalisms

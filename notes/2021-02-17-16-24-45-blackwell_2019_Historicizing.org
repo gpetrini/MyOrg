@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       3e2adad0-4038-4dd3-a1f1-1a08d6a2a9c8
 :ROAM_REFS: cite:blackwell_2019_Historicizing
+:mtime:    20211202152739 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE: blackwell_2019_Historicizing: Historicizing housing typologies: beyond welfare state regimes and varieties of residential capitalism (2019, Housing Studies)
 #+OPTIONS: toc:nil num:nil

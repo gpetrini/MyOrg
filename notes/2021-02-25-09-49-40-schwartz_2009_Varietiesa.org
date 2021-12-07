@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       cf77944e-eb1b-44b8-87d3-660fb78a7c19
 :ROAM_REFS: cite:schwartz_2009_Varietiesa
+:mtime:    20211202152744 20211013082514 20211202152741
+:ctime:    20211013082514 20211202152741
 :END:
 #+TITLE: schwartz_2009_Varietiesa: Varieties of Residential Capitalism in the International Political Economy: Old Welfare States and the New Politics of Housing (2009)
 #+OPTIONS: toc:nil num:nil
@@ -62,6 +64,8 @@ Time-stamp: 2021-02-25
 *** Decommodification :ATTACH:
 :PROPERTIES:
 :ID:       76a3da6f-5ec6-4f5f-bf12-a28dd4623075
+:mtime:    20211202152741 20211013082514
+:ctime:    20211013082514
 :END:
 
 #+CAPTION: Figure 1 Relative deviation from average OECD levels of mortgage debt to GDP and owneroccupation prevailing 1992-2002 (percentage points)." (Schwartz and Seabrooke 2009:8)

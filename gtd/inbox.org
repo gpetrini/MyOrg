@@ -14,9 +14,19 @@ https://i.pinimg.com/originals/fd/de/23/fdde2369da2feeaa95a469b0ff1dd3f5.gif
 :PROPERTIES:
 :ID:       257e67c4-ac7c-489b-b4f3-8420f4b0a5e4
 :END:
+** TODO Agendar resposta aluna
+** TODO Reunião Felipe sobre modificações a serem incorporadas
+** TODO Inserir notas monografia no sistema
+*** Felipe: 8.5
+*** Lorena:
+** TODO Pagamento de contas
+- Aluguel
+- Psicóloga
+- Reserva de bancada
 
-** TODO Curso protocolo de segurança Moodle
-** TODO Presente de natal Karina
+** TODO Bloqueio do cartão de crédito
+
+** TODO Agendar terceira dose da vacina
 
 * Writing inbox
 
@@ -26,30 +36,27 @@ https://i.pinimg.com/originals/fd/de/23/fdde2369da2feeaa95a469b0ff1dd3f5.gif
 
 ** TODO FISH Hommes (2017)
 
+** TODO FISH Anufirev (2013)
+
+** TODO FISH Gennaioli
+
+** TODO FISH Govea (PhD Dissertation)
+
 ** TODO [#C] botte_2019
 ** TODO [#B] Kopp_2018
 ** TODO [#A] FISH Cornell 2020
 ** TODO [#A] FISH [[https://voxeu.org/article/what-drives-house-prices-some-lessons-literature][What drives house prices: Lessons from the literature]]
 
 * News Inbox
-** <2021-11-25 qui> [[https://www.ineteconomics.org/perspectives/blog/when-demand-shapes-supply][Institute for New Economic Thinking]] :SraffianSupermultiplier:
-** <2021-10-04 seg> [[https://www.clevelandfed.org/en/newsroom-and-events/publications/cfed-district-data-briefs/cfddb-20210929-strong-demand-limited-supply-and-rising-prices-the-economics-of-pandemic-era-housing.aspx][Strong Demand, Limited Supply, and Rising Prices: The Economics of Pandemic-E...]] :HousingBubbles:HouseSupply:
-** <2021-09-22 qua> [[https://voxeu.org/article/flattening-curve-pandemic-induced-revaluation-urban-real-estate][Flattening the curve: Pandemic-induced revaluation of urban real estate | VOX...]] :HouseSupply:PandemicRelated:
+
 * Reading Inbox
-** TODO [[https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3960979][Multi-asset financial bubbles in an agent-based model with noise traders’ herding described by an n-vector Ising model]] :ABM:Asset:Bubble:IsingModel:Arbitrageurs:NoiseTraders:
+** [[https://link.springer.com/article/10.1007/s43253-020-00004-5][Shiozawa, Yoshinori; Morioka, Masashi; Taniguchi, Kasuhisa: Microfoundations ...]] :BookReview:Methodological:
+** [[http://ccr.sigcomm.org/online/files/p83-keshavA.pdf][How to Read a Paper]] :WorkFlow:HowTo:
+** [[https://www.sciencedirect.com/science/article/pii/S0264837721006116][Land availability and housing price in China: Empirical evidence from nonline...]] :HousingMarket:HousePrices:China:LandUse:Empirical:NonLinearities:
 ** [#A] [[https://marcio.rbind.io/jmp/Santetti_GCRI.pdf][Growth, cycles, and residential investment]] :ResidentialInvestment:Empirical:US:SVAR:BusinessCycles:FunctionalIncomeDistribution:SraffianSupermultiplier:
-** [[https://link.springer.com/article/10.1007/s43253-021-00050-7][The financialization of rented homes: continuity and change in housing financ...]] :HousingMarket:RentalMarket:Financialization:Concepts:Definition:ResidentialInvestment:
-** [[https://scholar.google.com.br/scholar_url?url=https://www.boeckler.de/pdf/v_2021_10_30_morlin.pdf&hl=pt-BR&sa=X&d=9100481745112945592&ei=krmDYanFGoWN6rQPm5Wf4As&scisig=AAGBfm0wlP9vaQ1KLp66qx9C7U7KC9RmYw&oi=scholaralrt&hist=0soJqxkAAAAJ:11446866960855446892:AAGBfm1xPxfIJvREPJhXA5Bb--edXNJorA&html=&folt=kw][Growth and debt stability in a supermultiplier model with public expenditures and foreign trade]] :SraffianSupermultiplier:GovernmentDebt:OpenEconomy:
-** [[https://scholar.google.com.br/scholar_url?url=https://www.boeckler.de/pdf/v_2021_10_29_passos.pdf&hl=pt-BR&sa=X&d=8129997766101178270&ei=krmDYanFGoWN6rQPm5Wf4As&scisig=AAGBfm320xD-_x3L97YugxVpK9Q0kPybIw&oi=scholaralrt&hist=0soJqxkAAAAJ:11446866960855446892:AAGBfm1xPxfIJvREPJhXA5Bb--edXNJorA&html=&folt=kw][Growth theory and the growth models perspective: insights from the supermultiplier]] :SraffianSupermultiplier:
-** [#A] [[https://scholar.google.com.br/scholar_url?url=https://www.boeckler.de/pdf/v_2021_10_29_allain.pdf&hl=pt-BR&sa=X&d=13284360159044545796&ei=krmDYanFGoWN6rQPm5Wf4As&scisig=AAGBfm0_Qv-xMv_16uPe-ITBuvIxe0P3Tw&oi=scholaralrt&hist=0soJqxkAAAAJ:11446866960855446892:AAGBfm1xPxfIJvREPJhXA5Bb--edXNJorA&html=&folt=kw][A supermultiplier model with two non-capacity-generating autonomous demand components]] :AutonomousExpenditures:
-** [[https://scholar.google.com.br/scholar_url?url=https://www.boeckler.de/pdf/v_2021_10_30_goes.pdf&hl=pt-BR&sa=X&d=8626863616406343902&ei=krmDYanFGoWN6rQPm5Wf4As&scisig=AAGBfm1j1eexabE1rtdOkNnn0lKL0mCMTg&oi=scholaralrt&hist=0soJqxkAAAAJ:11446866960855446892:AAGBfm1xPxfIJvREPJhXA5Bb--edXNJorA&html=&folt=kw][Autonomous Demand and Output Determination: an Empirical Investigation for the US Economy]] :SraffianSupermultiplier:Empirical:US:
-** [[http://repository.kln.ac.lk/handle/123456789/23474][67 Years of Bibliometric Analysis on House Price Research]] :Housing:HousePrices:Empirical:Bibliometrics:HousingMarket:
-** [[https://www.sciencedirect.com/science/article/abs/pii/S0165176521004171][Consumption and housing net worth: Cross-country evidence - ScienceDirect]] :Housing:HouseholdConsumption:HouseholdWealth:HouseholdNetWorth:HousePrices:Empirical:OECD:AsymetricModel:
-** [[https://onlinelibrary.wiley.com/doi/full/10.1111/meca.12354][Is autonomous demand really autonomous in the United States? An asymmetric fr...]] :SraffianSupermultiplier:AutonomousExpenditures:Em:AsymetricModel:FrequencyDomainModel:Causalty:US:
-** [[https://onlinelibrary.wiley.com/doi/full/10.1111/meca.12360][Supermultipliers, ‘endogenous autonomous demand’ and functional finance - Sko...]] :SraffianSupermultiplier:AutonomousExpenditures:
-** [[https://giacomorella.github.io/assets/tvp_rella.pdf][THEFED,HOUSING AND  HOUSEHOLD DEBT OVER TIME]] :Housing:ResidentialInvestment:HouseholdDebt:Empirical:MonetaryPolicy:
+** [[https://giacomorella.github.io/assets/tvp_rella.pdf][THE FED,HOUSING AND  HOUSEHOLD DEBT OVER TIME]] :Housing:ResidentialInvestment:HouseholdDebt:Empirical:MonetaryPolicy:
+
 * Fleeting notes
 ** TODO Enhance LSD documentation snippet
 ** TODO git submodules
 ** WAIT Reference org-roam backlinks
-** WAIT Ver elgannt

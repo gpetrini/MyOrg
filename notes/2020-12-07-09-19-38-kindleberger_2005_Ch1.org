@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       6ade8d18-131b-43d4-b9e5-49cc79970f31
 :ROAM_REFS: cite:kindleberger_2005_Ch1
+:mtime:    20211202152741 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE: kindleberger_2005_Ch1: Financial Crisis: A Hardy Perennial
 #+filetags: Financial_crisis UFRJ Macroeconomia_Financeira

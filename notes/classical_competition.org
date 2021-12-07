@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       048efa50-0642-4bf9-adf1-7974b1624492
+:mtime:    20211202152738 20211111155942
+:ctime:    20211111155942
 :END:
 #+title: Classical competition
 

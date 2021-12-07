@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       73d3e2c0-e310-4311-9d86-71854b9c8d05
+:mtime:    20211202152741 20211104144018
+:ctime:    20210210092940
 :END:
 #+OPTIONS: toc:nil num:nil
 #+title: Household debt and Bank credit

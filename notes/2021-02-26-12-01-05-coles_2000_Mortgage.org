@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       11fa3680-0e2f-4b21-9451-4c2ed1d7417b
 :ROAM_REFS: cite:coles_2000_Mortgage
+:mtime:    20211202152738 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE: coles_2000_Mortgage: Mortgage Markets: Why US and EU Markets Are So Different (2000, Housing Studies)
 #+OPTIONS: toc:nil num:nil

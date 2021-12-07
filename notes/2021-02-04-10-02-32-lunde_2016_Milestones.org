@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       7bb46600-b983-4e12-b7a8-d2072eea5f18
+:mtime:    20211202152741 20211013082514
+:ctime:    20211013082514
 :END:
 #+OPTIONS: num:nil H:6 ':t
 #+TITLE: lunde_2016_Milestones: Milestones in European housing finance

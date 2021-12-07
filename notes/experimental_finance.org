@@ -1,6 +1,7 @@
 :PROPERTIES:
 :ID:       1f23f388-025b-4606-a626-f3cb1f827cf1
-:mtime:    20211130143711
+:mtime:    20211202152738 20211130143711
+:ctime:    20211130143711
 :END:
 #+title: Experimental Finance
 

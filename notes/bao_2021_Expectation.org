@@ -56,7 +56,8 @@ Recent studies also find a high level of consistency between findings from forec
 ** Main conclusions of each resent development
 :PROPERTIES:
 :ID:       ae13f209-d800-46a1-9b65-b7845847f263
-:mtime:    20211130151130
+:mtime:    20211202152743 20211130151130
+:ctime:    20211130154906
 :END:
 
 - Comparison between LtFE and LtO :: Convergence to REE is less likely and slower in LtO

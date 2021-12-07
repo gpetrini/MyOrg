@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       b22cda99-562b-4c54-84a7-bd0a488b22e7
 :ROAM_REFS: cite:toporowski_2008_Minsky
+:mtime:    20211202152744 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE: toporowski_2008_Minsky: Minsky's 'induced investment and business cycles' (2008, Cambridge Journal of Economics)
 #+OPTIONS: toc:nil num:nil

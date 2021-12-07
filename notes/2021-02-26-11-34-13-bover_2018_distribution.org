@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       272a334c-616a-4d61-aaf7-12b09c8d8694
 :ROAM_REFS: cite:bover_2018_distribution
+:mtime:    20211202152739 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE: bover_2018_distribution: The distribution of debt across euro-area countries: the role of individual characteristics, institutions, and credit conditions (2018, 44th issue (June 2016) of the International Journal of Central Banking)
 #+OPTIONS: toc:nil num:nil

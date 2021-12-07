@@ -1,6 +1,7 @@
 :PROPERTIES:
 :ID:       64197f79-2ae4-42e2-8a48-2f6d4d0abea4
-:mtime:    20211125104045
+:mtime:    20211202152740 20211125104045
+:ctime:    20211125104045
 :END:
 #+title: Environment Economics
 

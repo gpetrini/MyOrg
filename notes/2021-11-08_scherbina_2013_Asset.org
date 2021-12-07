@@ -2,6 +2,8 @@
 :ID: 20211108T160833
 :CAPTURED: [2021-11-08 16:08:33]
 :ROAM_REFS: [cite:@scherbina_2013_Asset]
+:mtime:    20211202152739 20211108165711
+:ctime:    20211108165711
 :END:
 #+TITLE: scherbina_2013_Asset: Asset Price Bubbles: a Selective Survey - (2013, IMF working paper)
 Time-stamp: 2021-11-08

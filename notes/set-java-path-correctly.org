@@ -1,5 +1,7 @@
 :PROPERTIES:
 :ID:       1abf10fa-dd13-4dad-a516-0cd81e8c90a0
+:mtime:    20211202152738 20211028145218
+:ctime:    20211028145218
 :END:
 #+title: Set java path correctly
 #+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme

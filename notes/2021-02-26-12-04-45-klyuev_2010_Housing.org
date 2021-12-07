@@ -1,6 +1,8 @@
 :PROPERTIES:
 :ID:       6aee030c-b4e2-4628-a9b3-29b374afa294
 :ROAM_REFS: cite:klyuev_2010_Housing
+:mtime:    20211202152741 20211013082514
+:ctime:    20211013082514
 :END:
 #+TITLE: klyuev_2010_Housing: Is Housing Wealth an ``ATM''?: International Trends (2010, )
 #+OPTIONS: toc:nil num:nil
