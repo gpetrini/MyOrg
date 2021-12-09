@@ -1,8 +1,5 @@
 :PROPERTIES:
-:ID:       d1e7f9d2-e144-4f49-931e-5c0f3cd6d5c8
-:ROAM_ALIASES: "Autonomous Investment Bubble"
-:mtime:    20211202152744 20211108183512
-:ctime:    20211108183512
+:ID:       5901b2ed-90d0-4b76-bafd-2e82d26e0388
 :END:
 #+title: Overinvestment
 

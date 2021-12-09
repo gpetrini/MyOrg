@@ -1,5 +1,5 @@
 :PROPERTIES:
-:ID:       560fac35-1ffa-4fbd-ad75-49aafc4bbd5f
+:ID:       7bf9c01a-c5aa-4984-a9a0-12dfa1e3e9c7
 :mtime:    20211202152740 20211130150956 20211129150604
 :ROAM_ALIASES: "General price inflation"
 :ctime:    20211130150956
@@ -14,4 +14,3 @@
 #+HUGO_TAGS: placeholder
 
 #+OPTIONS: num:nil ^:{} toc:nil
-

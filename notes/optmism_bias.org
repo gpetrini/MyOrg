@@ -1,7 +1,7 @@
 :PROPERTIES:
-:ID:       c41a871c-bfe1-470b-8c55-35650903af74
+:ID:       65283fb0-edd5-4472-b9e2-0e32542305b8
 :END:
-#+title: Experimental Finance
+#+title: Optmism bias
 
 #+HUGO_AUTO_SET_LASTMOD: t
 #+hugo_base_dir: ~/BrainDump/
@@ -11,4 +11,3 @@
 #+HUGO_TAGS: placeholder
 
 #+OPTIONS: num:nil ^:{} toc:nil
-

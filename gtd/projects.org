@@ -228,25 +228,20 @@ After Nikiforos' response
 
 * CE472 2021 :Teaching:
 
-** TODO Criar tabela para notas da lista 04
-
 ** TODO Fechar média e notas
 
 * IEE859 - Teoria do valor e da distribuição :@Lectures:
 
+** TODO [#C] Ler Garegnani 1990
+
 * Dissertation group discussion :@Group:
 
-** TODO Ler dissertação Rafael Govêa
-SCHEDULED: <2021-12-06 seg 10:00>
 * SFC [0%] :Article:@Master:
-
-
-
 ** WAIT Create github repository (git submodule)
 
 * WAIT VECM [0%] :Article:@Master:
 
-
+* Ratchet effect SSM paper :Article:@PhD:
 
 * WAIT ABM Spatial Housing [0%] :Dissertation:@PhD:
 
@@ -295,7 +290,6 @@ SCHEDULED: <2021-12-06 seg 10:00>
 
 ** TODO Implement citeproc-el to export to docx
 
-** TODO Fix hugo org-roam reference to backlinks
 
 * Configuração desktop :@free:
 
@@ -319,7 +313,6 @@ SCHEDULED: <2021-12-06 seg 10:00>
 ** TODO Document examples
 
 * Braindump
-** TODO FIX TODO syntax
 ** TODO Update ABOUT
 ** TODO Create Knowldge base
 ** TODO Update housekeeping

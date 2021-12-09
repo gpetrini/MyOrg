@@ -1,7 +1,5 @@
 :PROPERTIES:
-:ID:       478f823f-44e4-47c5-b723-163934a57a59
-:mtime:    20211202152740 20211109165639
-:ctime:    20211109165639
+:ID:       380b31ad-cdd5-4367-af2c-9ee199a085e7
 :END:
 #+title: Business Cycles
 

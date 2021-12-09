@@ -1,6 +1,5 @@
 :PROPERTIES:
-:ID:       4c3c1a5a-cebc-4260-8c16-64f7f3aa38d9
-:mtime:    20211129153715
+:ID:       ff336dbd-b570-4d73-b977-9e9b728fecc0
 :END:
 #+title: Information rigidity models
 

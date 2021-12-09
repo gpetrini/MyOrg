@@ -1,6 +1,5 @@
 :PROPERTIES:
 :ID:       97708408-32e2-4e6d-8ebb-71c78fb23389
-:mtime:    20211129150555
 :END:
 #+title: Information and Knowledge
 

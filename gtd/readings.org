@@ -194,7 +194,6 @@ CLOSED: [2021-05-20 qui 10:46]
 **** RESULTS [#A] <2021-09-22 qua> [[https://www.aeaweb.org/articles?id=10.1257/aer.101.5.2132][House Prices, Home Equity-Based Borrowing, and the US Household Leverage Cris...]] :HousePrices:HouseholdDebt:Leverage:
 **** MAYBE [#B] <2021-09-29 qua> [[https://www.tandfonline.com/doi/abs/10.1080/14036096.2020.1758204][Towards a Typology of Housing Price Bubbles: A Literature Review: Housing, Th...]] :AssetBubbles:HousingBubbles:ReviewOfLiterature:Typology:
 **** MAYBE [#C] <2021-09-22 qua> [[https://econpapers.repec.org/bookchap/eeemacchp/v2-1547.htm][Housing and Macroeconomics]] :HousingMarkets:ReviewOfLiterature:
-****
 
 *** Spatial Housing ABM
 **** READ [#A] <2021-10-21 qui> [[http://www.lem.sssup.it/WPLem/files/2021-35.pdf][AgriLOVE: agriculture, land-use andtechnical change in an evolutionary, agent-based model]] :AgentBasedModels:Land:SpatialModel:LandUse:Agriculture:TechnologicalChange:EnvironmentalModel:ClimateChange:
@@ -203,7 +202,8 @@ CLOSED: [2021-05-20 qui 10:46]
 *** Innovative bubble ABM
 
 
-**** PARTIAL [#A] [[Behavioral Rationality and Heterogeneous Expectations in Complex Economic Systems]] :Bubbles:Behavioral:Heterogeinity:
+**** READ [#A] [[https://doi.org/10.1007/s40888-020-00200-w][Harrodian instability in decentralized economies: an agent-based approach | S...]] :ABM:Supermultiplier:ToBase:
+**** PARTIAL [#A] Behavioral Rationality and Heterogeneous Expectations in Complex Economic Systems :Bubbles:Behavioral:Heterogeinity:
 
 Parts to read:
 
@@ -410,6 +410,7 @@ CLOSED: [2021-11-08 seg 11:22]
 *** REF [[https://onlinelibrary.wiley.com/doi/10.1111/ehr.12847][Squeezing the bears: cornering risk and limits on arbitrage during the ‘British bicycle mania’, 1896–8]] :Mania:Arbitrage:ShortSaleConstraint:AssetBubble:
 
 ** Innovation Bubble
+*** READ [[https://doi.org/10.1007/s00191-021-00747-2][The age distribution of business firms]] :ABM:CapacityUtilization:Supermultiplier:
 
 *** READ [#B] [[https://onlinelibrary.wiley.com/doi/10.1111/meca.12243][Demand-led growth with endogenous innovation]] :Innovation:AutonomousExpenditures:ResearchDevelopment:ToDialog:
 
@@ -443,6 +444,11 @@ CLOSED: [2021-11-08 seg 11:22]
 
 *** SKIM [#B] [[https://onlinelibrary.wiley.com/doi/10.1111/j.1467-6419.2012.00724.x][A SURVEY OF THE INNOVATION SURVEYS]]
 
+*** SKIM [#D] [[https://www.aeaweb.org/articles?id=10.1257/aer.97.4.1131][Barlevy - On the Cyclicality of Research and Development]]
+:PROPERTIES:
+:ID:       a17b7bf2-bcb1-4dc6-b7bd-81e22416bc08
+:END:
+
 *** SKIM [#D] [[http://www.lem.sssup.it/WPLem/files/2020-32.pdf][Does mission-oriented funding stimulate private R&D? Evidence from military R&D forUS states]] :ResearchDevelopment:MissionOrientedPolicy:Innovation:InnovationPolicy:Military:Empirical:US:NationalDefense:Results:FurtherResearch:
 
 
@@ -451,15 +457,9 @@ CLOSED: [2021-11-08 seg 11:22]
 
 ** New Narrative :NewNarrative:
 
-** Super ABM: Non-residential investment related
-
-*** READ <2021-09-15 qua> [[https://doi.org/10.1007/s00191-021-00747-2][The age distribution of business firms]] :ABM:CapacityUtilization:Supermultiplier:
-*** READ [#A] [[https://doi.org/10.1007/s40888-020-00200-w][Harrodian instability in decentralized economies: an agent-based approach | S...]] :ABM:Supermultiplier:ToBase:
-
 ** Dot-com crisis
 
 
-*** READ [#A] [[https://www.sciencedirect.com/science/article/pii/S004873331200162X][Economic crisis and innovation: Is destruction prevailing over accumulation?]] :InnovationInvestment:DotComCrisis:Survey:UK:
 *** READ [#A] [[https://psycnet.apa.org/record/1997-08992-001][Rational entrepreneurs or optimistic martyrs? Some considerations on technological regimes, corporate entries, and the evolutionary role of decision biases]]
 
 *** READ [#B] [[https://timothyjohnson.web.illinois.edu/papers/JME_2007.pdf][Optimal learning and new technology bubbles]]
@@ -495,15 +495,6 @@ CLOSED: [2021-11-24 qua 17:18]
 ** Expectations formation
 
 
-*** INPROGRESS [#A] [[https://www.aeaweb.org/articles?id=10.1257/aer.20110306][Information Rigidity and the Expectations Formation Process: A Simple Framework and New Facts]] :Beliefs:LearningToForecastExperiment:InformationKnowledge:Learning:Results:StylizedFacts:Expectations:Speculation:
-
-*** INPROGRESS [#B] [[https://www.aeaweb.org/articles?id=10.1257/jel.20191434][Behavioral and Experimental Macroeconomics and Policy Analysis: A Complex Systems Approach]] :Behavioral:ExperimentalForecast:BoundedRationality:Heuristics:Survey:CoordinationFailure:OptimismWave:PessimismWave:Heterogeinity:Expectations:HeuristicSwitching:PolicyDiscussion:
-
-*** INPROGRESS [#C] [[https://www.sciencedirect.com/science/article/pii/S0165188917301033][Booms, busts and behavioural heterogeneity in stock prices]] :Behavioral:BoundedRationality:Heterogeinity:Expectations:StockPrices:FinancialCrisis:Results:HeuristicSwitching:
-
-*** READ [#A] [[https://link.springer.com/article/10.1007%2Fs00191-011-0242-4][Evolutionary selection of expectations in positive and negative feedback markets]] :Equation:ToBase:ToCite:Expectations:HeuristicSwitching:
-
-
 *** PARTIAL [#A] [[https://www.aeaweb.org/articles?id=10.1257/mic.4.4.35][Evolutionary Selection of Individual Expectations and Aggregate Outcomes in Asset Pricing Experiments]] :Beliefs:Communication:Equation:LearningToForecastExperiment:Speculation:AssetPrices:InformationKnowledge:Learning:ExperimentalForecast:HeuristicSwitching:TradingVolume:
 
 
@@ -518,13 +509,9 @@ CLOSED: [2021-11-24 qua 17:18]
 *** SKIM [#C] [[https://www.sciencedirect.com/science/article/pii/S0167268112000546][Heterogeneous gain learning and the dynamics of asset prices]] :AssetPrices:Learning:Memory:ToBase:
 
 
-*** RESULTS [#A] [[https://www.journals.uchicago.edu/doi/10.1086/685965][Expectations and Investment]] :Expectations:Results:Extrapolative:InvestmentPlan:
 *** RESULTS [#A] [[https://www.sciencedirect.com/science/article/pii/S0165188909000293][Price stability and volatility in markets with positive and negative expectations feedback: An experimental investigation]] :CoordinationFailure:ExpectationFormation:ExperimentalFinance:PositiveFeedbacks:
 *** RESULTS [#A] [[https://doi.org/10.1093/rfs/hhaa121][Experience Does Not Eliminate Bubbles: Experimental Evidence]] :Expectations:LearningToForecastExperiment:Experiments:Results:
 *** RESULTS [#A] [[https://www.sciencedirect.com/science/article/pii/S0167268117303001][Can firms see into the future? Survey evidence from Germany]] :Germany:ExpectationFormation:FirmData:Learning:
-*** RESULTS [#A] [[https://www.boj.or.jp/en/research/wps_rev/wps_2017/data/wp17e09.pdf][Behavioral Biases in Firms’Growth Expectations]] :Results:Japan:Behavioral:Bias:Expectations:
-*** RESULTS [#B] [[https://ideas.repec.org/a/eee/eecrev/v79y2015icp297-325.html][Firm optimism and pessimism]] :OptimismWave:PessimismWave:Bias:FirmData:Results:Expectations:ExpectationsErrors:
-
 *** RESULTS [#B] [[https://ideas.repec.org/p/een/camaaa/2021-68.html][Initial beliefs uncertainty]] :Expectations:Results:ToMention:Bias:Beliefs:
 
 *** RESULTS [#C] [[https://www.sciencedirect.com/science/article/pii/S0165188917301616][Surprise, surprise – Measuring firm-level investment innovations]] :Germany:FirmData:InvestmentPlan:Survey:Results:
@@ -538,7 +525,13 @@ CLOSED: [2021-11-24 qua 17:18]
 *** RESULTS [#E] [[https://www.tse-fr.eu/sites/default/files/TSE/documents/doc/wp/2018/wp_tse_882.pdf][Learning in Speculative Bubbles: An Experiment]] :Bubbles:Learning:LearningToForecastExperiment:Speculation:FinancialMarket:
 *** RESULTS [#E] [[https://epub.ub.uni-muenchen.de/41214/1/Buchheim_Link.pdf][The Effect of Disaggregate Information on theExpectation Formation of Firms]] :DisaggregateInformation:ExpectationFormation:Results:
 
-** [[id:52af04a6-37f1-4ff4-9eec-a1dd47efc224][Spatial Models]]
+
+*** INPROGRESS [#B] [[https://www.aeaweb.org/articles?id=10.1257/jel.20191434][Behavioral and Experimental Macroeconomics and Policy Analysis: A Complex Systems Approach]] :Behavioral:ExperimentalForecast:BoundedRationality:Heuristics:Survey:CoordinationFailure:OptimismWave:PessimismWave:Heterogeinity:Expectations:HeuristicSwitching:PolicyDiscussion:
+:PROPERTIES:
+:ID:       d71147fb-86f4-40fc-83a4-56eb2cee72c9
+:END:
+
+** Spatial models
 
 *** READ [#B] [[https://www.arl-international.com/sites/default/files/dictionary/2021-09/gentrification.pdf][Gentrification]] :ReviewOfLiterature:Gentrification:Spatial:Geography:
 

@@ -1,0 +1,109 @@
+:PROPERTIES:
+:ROAM_REFS: @gennaioli_2016_Expectations
+:ID:   24b8691b-b306-4ef4-9504-3634a674ad6e
+:END:
+
+#+OPTIONS: num:nil ^:{} toc:nil
+#+TITLE: Gennaioli et al.: Expectations and Investment - (2016, NBER)
+#+hugo_base_dir: ~/BrainDump/
+#+hugo_section: notes
+#+hugo_categories: "NBER"
+#+HUGO_TAGS:
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+[cite/t:@gennaioli_2016_Expectations] conclude that CFOs expecations have a high explanatory power for describing planning and effective investment. Conventional investment theories does not overcome this result. They also find no evidence for the [[id:a3dc72f3-bb99-4601-b58e-cc12229748f8][Rational Expectations]] hypothesis and argue that a extrapolative behavior is more reasonable and parsimonious.
+
+** Background
+
+- The authors indicate that the lack of studies using [[id:9326692f-7fa9-439b-8f3c-a7fa2d18aef8][Expectations]] [[id:d0986877-a46e-4c2b-965a-a7bdf6aa952f][Survey Data]]
+- They argue that the usual problem attributed to [[id:d0986877-a46e-4c2b-965a-a7bdf6aa952f][Survey Data]] are, in reality, related to [[id:a3dc72f3-bb99-4601-b58e-cc12229748f8][Rational Expectations]] hypothesis
+
+** Supporting ideas
+
+The authors compare the explanatory role of expectations with most conventional theories:
+- [[id:6674acce-800f-489e-9ddc-ea48873dbf6e][Tobin's Q]] :: As previous studies had shown, [[id:6674acce-800f-489e-9ddc-ea48873dbf6e][Tobin's Q]] explanatory variable is weak
+  - Some authors suggest to use this model in first differences
+- The authors indicate the necessity to have information for all future periods in order to be applicable. Since this is not possible, the use an approximation $\frac{I^{P}}{K}   \approx \tau_{0} + \tau_{1}\frac{E(\Pi)}{K}$
+- Time-varying discount rates :: Discounts rates is supposed to be relevant for investment plans
+  - Main results still unaffected
+- Financing constraints :: Financially constraints firms are expected to invest more when cash flow increase
+  - Main results still unaffected while cash flow coefficient is not statitistically significant
+- Economic uncertainty :: High uncertainty $\Rightarrow$ low investment level
+  - Weak explanatory power (using stock price volatility as proxy)
+
+The authors also compare the results with those expected from [[id:ff336dbd-b570-4d73-b977-9e9b728fecc0][Informational Rigidities]] models.
+They argue that it is not reasonable to suppose that CFOs would just ignore past earnings information.
+The main point is that the extrapolative behavior is more parsimonious.
+
+
+** Contribution and purpose
+
+- The authors investigate whether  expectations can explain firms investment plans, and if so, if they are rational
+- The goal of the paper is to estimate if future profitability expectations and investment plans are related
+- Considering the theoretical implications of the results, the authors suggests to review how to specify [[id:6674acce-800f-489e-9ddc-ea48873dbf6e][Tobin's Q]] model
+
+** Relevance
+
+Considering the [[id:95265264-f61f-4cf5-8cdc-e590b2a47cb9][Innovation bubble ABM]] chapter:
+- This paper provides empirical evidence for how firms' expecations and investment are related
+- The authors themselfs indicates the possibility to investigate how expectational mistakes affects aggregate investment
+
+** Methodology (Design/Approach/Method)
+
+- *Sample:* CFO responses of non-financial US firms in the Duke University survey
+  - Large firms in general and those with negative earnings were removed
+  - Total of 1133 firms
+  - From 2005Q1-2012Q4
+  - The authors match some information with Compustat dataset for accounting variables
+  - For _Analystis Expectations_ the authors use Institutional Brokers’ Estimate System (IBES) dataset
+- *Proxy:* The authors use "CFOs' answers on earnings growth over the next 12 months as the main proxy for CFO expectations of future profitability" (p. 387)
+- In order to test if expectations are rational, they estimate a model in which realized earnings is a function of expected earnings
+  - If this is the case, the coefficient related to expected earnings is close to the unit and there would be not trend
+
+** Results
+
+- Expectations explain firms investment plans
+  - They also report that expectations have a superior explanatory power compared to traditional models (similar results reported by [cite/t:@kopp_2018_Determinants])
+  - This results holds both for aggregate and firm-level
+- Authors conclude that expectations are not rational
+  - Both firm-level and aggregate level expectational errors are predictable
+- Other relevant result is that expectations seem to be extrapolative, reflecting a [[id:29ce4a60-6429-44ef-a5b2-f48fba192d79][Behavior Bias]]
+  - When CFOs observe good news (in GDP trajectory, for instance) they expect similar realization would persist in the future
+    - Thus, do not correct the mean reversion
+  - Similar results are found in [[id:053144da-4f34-4a23-97cb-c5af4b600164][Behavioral Finance]] literature
+- [[id:a3dc72f3-bb99-4601-b58e-cc12229748f8][Rational Expectations]] model's results are negativelly correlated with actual data
+- At the aggregate level, the authors show that [[id:9326692f-7fa9-439b-8f3c-a7fa2d18aef8][Expectations]] does not seen to be just a *uninformative noise*
+- The authors also control for credit spread (credit availability) and still find the explanatory power of [[id:9326692f-7fa9-439b-8f3c-a7fa2d18aef8][Expectations]]
+- The authors also investigate whether is the case for reverse causality --- that is firms invest more then expectations move in the same direction afterwards.
+  - They argue that if this is the case, some of the correlation discusside before should not be observed
+
+
+** Interesting findings and uncategorized stuff
+
+- Expectations of aggregate stock returns and investor surveys are highly correlated
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+Using micro data from Duke University quarterly survey of Chief Financial Officers, we show that corporate investment plans as well as actual investment are well explained by CFOs’ expectations of earnings growth. The information in expectations data is not subsumed by traditional variables, such as Tobin’s Q or discount rates. We also show that errors in CFO expectations of earnings growth are predictable from past earnings and other data, pointing to extrapolative structure of expectations and suggesting that expectations may not be rational. This evidence, like earlier findings in finance, points to the usefulness of data on actual expectations for understanding economic behavior.
+#+END_ABSTRACT
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+[[id:2645660a-bff8-4f35-8bb9-c4de28e46ddd][Investment determination]]
+
+* References
+
+#+print_bibliography:

@@ -1,7 +1,7 @@
 :PROPERTIES:
-:ID:       c41a871c-bfe1-470b-8c55-35650903af74
+:ID:       0c6c78fd-8d22-4002-9c82-7ccd82af43f5
 :END:
-#+title: Experimental Finance
+#+title: Process Innovation
 
 #+HUGO_AUTO_SET_LASTMOD: t
 #+hugo_base_dir: ~/BrainDump/
@@ -11,4 +11,3 @@
 #+HUGO_TAGS: placeholder
 
 #+OPTIONS: num:nil ^:{} toc:nil
-

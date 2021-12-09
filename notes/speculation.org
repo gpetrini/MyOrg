@@ -1,7 +1,7 @@
 :PROPERTIES:
-:ID:       c41a871c-bfe1-470b-8c55-35650903af74
+:ID:       11044897-734e-47b1-9abd-b5d2a10cbaf0
 :END:
-#+title: Experimental Finance
+#+title: Speculation
 
 #+HUGO_AUTO_SET_LASTMOD: t
 #+hugo_base_dir: ~/BrainDump/
@@ -11,4 +11,3 @@
 #+HUGO_TAGS: placeholder
 
 #+OPTIONS: num:nil ^:{} toc:nil
-

@@ -1,7 +1,5 @@
 :PROPERTIES:
-:ID:       825c31e9-2336-4f96-b305-bce18cc46b96
-:mtime:    20211202152741 20211108105113
-:ctime:    20211108105113
+:ID:       2ebeee6d-b9bb-4bf7-b9e4-c9177af1db0f
 :END:
 #+title: Policy Oriented
 

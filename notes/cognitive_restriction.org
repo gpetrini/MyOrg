@@ -1,7 +1,7 @@
 :PROPERTIES:
-:ID:       c41a871c-bfe1-470b-8c55-35650903af74
+:ID:       38ef3b8c-65b7-4dab-aca1-6f94db9f4287
 :END:
-#+title: Experimental Finance
+#+title: Cognitive restriction
 
 #+HUGO_AUTO_SET_LASTMOD: t
 #+hugo_base_dir: ~/BrainDump/
@@ -11,4 +11,3 @@
 #+HUGO_TAGS: placeholder
 
 #+OPTIONS: num:nil ^:{} toc:nil
-

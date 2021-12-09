@@ -14,38 +14,31 @@ https://i.pinimg.com/originals/fd/de/23/fdde2369da2feeaa95a469b0ff1dd3f5.gif
 :PROPERTIES:
 :ID:       257e67c4-ac7c-489b-b4f3-8420f4b0a5e4
 :END:
-** TODO Agendar resposta aluna
 ** TODO Reunião Felipe sobre modificações a serem incorporadas
 ** TODO Inserir notas monografia no sistema
+DEADLINE: <2021-12-14 ter>
 *** Felipe: 8.5
-*** Lorena:
-** TODO Pagamento de contas
-- Aluguel
-- Psicóloga
-- Reserva de bancada
-
-** TODO Bloqueio do cartão de crédito
-
+*** Lorena: 10.0
 ** TODO Agendar terceira dose da vacina
 
+
+** WAIT Matrícula disciplina de seminários
+
+** TODO Informar Mariano sobre dois alunos que irão fazer a prova
+** TODO Criar nota para armazenar as reuniões sobre a tese
 * Writing inbox
 
-** TODO FISH Coibion (informational rigidity)
+** TODO [#A] FISH [[id:d71147fb-86f4-40fc-83a4-56eb2cee72c9][Hommes (2021)]]
 
-** TODO FISH Hommes (2021)
+** TODO [#B] FISH [[id:bda3aabe-a541-4988-a02c-02a26ae5eb8b][Archibugi]]
 
-** TODO FISH Hommes (2017)
 
-** TODO FISH Anufirev (2013)
-
-** TODO FISH Gennaioli
-
-** TODO FISH Govea (PhD Dissertation)
+** TODO [#B] Kopp_2018
+** TODO [#C] FISH Govea (PhD Dissertation)
 
 ** TODO [#C] botte_2019
-** TODO [#B] Kopp_2018
-** TODO [#A] FISH Cornell 2020
-** TODO [#A] FISH [[https://voxeu.org/article/what-drives-house-prices-some-lessons-literature][What drives house prices: Lessons from the literature]]
+** WAIT [#A] FISH Cornell 2020
+** WAIT [#A] FISH [[https://voxeu.org/article/what-drives-house-prices-some-lessons-literature][What drives house prices: Lessons from the literature]]
 
 * News Inbox
 

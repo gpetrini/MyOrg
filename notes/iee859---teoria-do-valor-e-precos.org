@@ -750,7 +750,7 @@ O preço de produção, portanto, é determinado pelo capital regulador que depe
 
 
 Aqueles que adotam uma técnica superior (custo menor que o da técnica dominante), auferem lucros anormais.
-No caso de firmas que inovam de forma persistente [[[id:abfc5875-3c94-4556-a396-ff75507eac1f][Technological revolution]]], auferem lucros anormais de forma persistente, não sendo necessário alterar a teoria dos preços relativos.
+No caso de firmas que inovam de forma persistente ([[id:8651d790-2079-4233-b8ba-a01e1ada53e8][Technological revolution]]), auferem lucros anormais de forma persistente, não sendo necessário alterar a teoria dos preços relativos.
 
 Tal relação, no entanto, é diferente para recursos naturais[fn:: Sraffa trada recursos naturais renováveis e não-renováveis da mesma forma no capítulo XI.].
 Isso porque não há a possibilidade irrestrita de a técnica dominante[fn::Isso pode ser estendido, por exemplo, para o case de segredo industrial.].

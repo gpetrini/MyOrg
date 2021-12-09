@@ -1,7 +1,5 @@
 :PROPERTIES:
-:ID:       bf204d00-40bc-40ff-bd28-829072390a09
-:mtime:    20211202152744 20211109165536
-:ctime:    20211109165536
+:ID:       66c2405e-46a7-48c3-b7e5-ecadb2466377
 :END:
 #+title: Schumpeterian growth models
 

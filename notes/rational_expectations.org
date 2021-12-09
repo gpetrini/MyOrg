@@ -1,7 +1,5 @@
 :PROPERTIES:
-:ID:       ba0764c1-4abf-4b96-b425-8233052594f1
-:mtime:    20211202152744 20211130150516
-:ctime:    20211130150516
+:ID:       a3dc72f3-bb99-4601-b58e-cc12229748f8
 :END:
 #+title: Rational Expectations
 

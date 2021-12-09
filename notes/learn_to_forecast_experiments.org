@@ -1,7 +1,5 @@
 :PROPERTIES:
-:ID:       1572f8ca-98df-4ec4-9bda-855c2617c1c8
-:mtime:    20211202152738 20211130145256
-:ctime:    20211130145256
+:ID:       88bb712d-d234-4e6c-a850-e3a55f5a30be
 :END:
 #+title: Learn to Forecast Experiments
 

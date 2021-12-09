@@ -1,6 +1,4 @@
 :PROPERTIES:
-:ID:       52af04a6-37f1-4ff4-9eec-a1dd47efc224
-:mtime:    20211202152740 20211013082514
-:ctime:    20210520100600
+:ID:       c204d428-440e-4e71-8688-03d40bdd4c76
 :END:
 #+title: Spatial Models

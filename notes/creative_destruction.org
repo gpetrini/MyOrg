@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       8a78794f-08bc-4a01-a176-599aeea1a679
+:END:
+#+title: Creative Destruction
+
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+
+#+hugo_section: notes
+
+#+HUGO_TAGS: placeholder
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+
+#+OPTIONS: num:nil ^:{} toc:nil
+
+Based on [cite/t:@archibugi_2013_Economic p. 304], Creative Destruction can be defined as:
+
+#+begin_quote
+Creative destruction is a regime of low cumulativeness and high technological opportunities, where entry and exit in technological areas is easy. Competition among companies is fierce and the role played by entrepreneurial spirits is crucial.
+#+end_quote

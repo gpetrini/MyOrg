@@ -1,7 +1,7 @@
 :PROPERTIES:
-:ID:       c41a871c-bfe1-470b-8c55-35650903af74
+:ID:       a55d9261-1b14-4483-bf2e-d21945192959
 :END:
-#+title: Experimental Finance
+#+title: Kalman Filter
 
 #+HUGO_AUTO_SET_LASTMOD: t
 #+hugo_base_dir: ~/BrainDump/
@@ -11,4 +11,3 @@
 #+HUGO_TAGS: placeholder
 
 #+OPTIONS: num:nil ^:{} toc:nil
-

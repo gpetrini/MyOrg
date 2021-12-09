@@ -71,7 +71,7 @@ Recent studies also find a high level of consistency between findings from forec
   - Higher interest rate leads to lower liquidity, but it does not affect asset price level alone
   - A strong [[id:576b10f4-300a-40b3-9764-3f1ae79c4054][Taylor Rule]] avoid coordination with trend followers, avoiding a self-fulfilling movement;
 - Results from laboratory vs from field :: The papers find consistency among real and simulated data
-  - There are also suppot for the [[id:4c3c1a5a-cebc-4260-8c16-64f7f3aa38d9][Information Rigidity Models]]
+  - There are also support for the [[id:ff336dbd-b570-4d73-b977-9e9b728fecc0][Information rigidity models]]
 - Laboratory results vs computational experiments :: Computational models perform better when agents follow a simple heuristic rule
 - Cognitive ability and forecasting :: Agents use simple heuristics when face complex environments
 

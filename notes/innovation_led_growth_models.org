@@ -1,7 +1,5 @@
 :PROPERTIES:
-:ID:       4833f2ca-f363-46ab-af66-6a526710742f
-:mtime:    20211202152740 20211108185219
-:ctime:    20211108185219
+:ID:       48ef7337-00ba-43c6-af2d-43723cb4387d
 :END:
 #+title: Innovation-led growth models
 
