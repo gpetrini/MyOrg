@@ -1,12 +1,12 @@
 :PROPERTIES:
 :ID:       ed384551-c7ba-492f-be69-15906157ef9d
-:mtime:    20211202152745 20211025182226
-:ctime:    20211025182226
 :END:
 #+title: Sraffian suppermultiplier growth model
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
 
-#+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
+#+hugo_section: notes
+
+#+HUGO_TAGS: placeholder
 
 #+OPTIONS: num:nil ^:{} toc:nil
-
-#+INCLUDE: ../header.org

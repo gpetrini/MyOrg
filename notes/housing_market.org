@@ -1,12 +1,13 @@
 :PROPERTIES:
-:ID:       67c15aaa-7b6e-4407-b2de-71570ce061f5
+:ID:       c5a6f54f-b92e-4deb-bc55-24d2a80b3c87
 :END:
-#+title: Financial Crises
+#+title: Housing Market
 
 #+HUGO_AUTO_SET_LASTMOD: t
 #+hugo_base_dir: ~/BrainDump/
+
 #+hugo_section: notes
+
 #+HUGO_TAGS: placeholder
 
 #+OPTIONS: num:nil ^:{} toc:nil
-

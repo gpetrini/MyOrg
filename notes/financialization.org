@@ -1,12 +1,13 @@
 :PROPERTIES:
 :ID:       49bd4d2f-3350-4a81-865b-fcd0f43c9330
-:mtime:    20211202152740 20211027171326
-:ctime:    20211027171326
 :END:
 #+title: Financialization
 
-#+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+
+#+hugo_section: notes
+
+#+HUGO_TAGS: placeholder
 
 #+OPTIONS: num:nil ^:{} toc:nil
-
-#+INCLUDE: ../header.org

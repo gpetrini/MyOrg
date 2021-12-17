@@ -1,12 +1,14 @@
 :PROPERTIES:
-:ID:       67c15aaa-7b6e-4407-b2de-71570ce061f5
+:ID:       8590c18f-5c98-47b7-b086-049261d4b850
 :END:
-#+title: Financial Crises
+#+title: Trocas Puras
 
 #+HUGO_AUTO_SET_LASTMOD: t
 #+hugo_base_dir: ~/BrainDump/
+
 #+hugo_section: notes
+
 #+HUGO_TAGS: placeholder
 
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
 #+OPTIONS: num:nil ^:{} toc:nil
-

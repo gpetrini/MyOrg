@@ -1,12 +1,14 @@
 :PROPERTIES:
-:ID:       67c15aaa-7b6e-4407-b2de-71570ce061f5
+:ID:       9f70b8e6-5318-4ccf-a1f6-8f647a4eab8a
 :END:
-#+title: Financial Crises
+#+title: Reswitching
 
 #+HUGO_AUTO_SET_LASTMOD: t
 #+hugo_base_dir: ~/BrainDump/
+
 #+hugo_section: notes
+
 #+HUGO_TAGS: placeholder
 
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
 #+OPTIONS: num:nil ^:{} toc:nil
-

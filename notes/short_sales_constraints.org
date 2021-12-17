@@ -1,7 +1,5 @@
 :PROPERTIES:
 :ID:       4dd9747a-0849-49bc-99dc-f226c5605270
-:mtime:    20211202152740 20211108163131
-:ctime:    20211108163131
 :END:
 #+title: Short sales constraints
 

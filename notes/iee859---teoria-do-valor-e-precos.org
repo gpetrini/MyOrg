@@ -1,7 +1,5 @@
 :PROPERTIES:
 :ID:       669465fc-f4fb-4569-ae8c-6ff779c6b05c
-:mtime:    20211202152604 20211125152503 20211118180617 20211118165811 20211118155810
-:ctime:    20211118155810
 :END:
 #+title: IEE859 - Teoria do valor e preços (Prof. Franklin Serrano)
 #+subtitle: Distribuição e Preços Relativos na Abordagem do Excedente
@@ -13,7 +11,9 @@
 #+hugo_section: lectures
 #+HUGO_TAGS: "sraffian_theory"  "ufrj" "modern-surplus-approach"
 #+HUGO_CATEGORIES: "Lecture notes"
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
 #+PROPERTY:header-args python :results output html :eval never-export :session sraffa :exports both
+
 
 * Tags
 
@@ -1044,20 +1044,12 @@ Argumenta que geram quase-renda pelas renda que ainda podem propiciar.
     - Técnica (agora inferior) tem lucro abaixo do normal sobre o capital (fixo e circulante)
     - Como consequência, nem todos estão utilizando a técnica dominante e, por consequência, nem todas as firmas terão uma taxa de lucro normal
 
-* A explicação monetária da distribuição
-:PROPERTIES:
-:ID:       9b80fea3-18f7-4b5f-88b9-7905f61cbff3
-:mtime:    20211202152742 20211125172049 20211118180713
-:ctime:    20211202152742
-:END:
-
 * Produção conjunta e capital fixo em Sraffa
 :PROPERTIES:
 :ID:       2d5e92fb-82b2-49f4-aea8-425a9ff157d4
 :mtime:    20211202152604
 :ctime:    20211202152604
 :END:
-
 
 ** Capital fixo
 
@@ -1177,6 +1169,10 @@ A quota de depreciação, portanto, depende dos preços relativos e da distribui
 
 
 ** Produção conjunta
+:PROPERTIES:
+:ID:       835a53d7-4d07-4ae7-b8c0-773acd586726
+:ROAM_ALIASES: "Joint production"
+:END:
 
 
 *** Introdução
@@ -1223,6 +1219,177 @@ Pode ser que o sistema se ajuste ao nível da demanda com produção simples e, 
 Trata-se do não aproveitameto de um subproduto de produção conjunta por não ter valor econômico.
 Portanto, é uma superprodução em relação à demanda efetiva.
 Sendo assim, é possível descartar este bem a custo zero.
+
+* Crítica sraffiana à teoria neoclássica
+
+** Introdução
+
+Na teoria marginalista (ou neoclássica) baseado no [[id:f586e1da-8626-42d0-90ae-c6e37cfcf775][Princípio da Substituição de Fatores]] a partir de um modelo de [[id:8590c18f-5c98-47b7-b086-049261d4b850][Trocas Puras]] com escassez.
+Com isso, seria capaz de obter os preços dos bens a partir da relação entre oferta e demanda e flexibilidade de preços.
+O [[id:f586e1da-8626-42d0-90ae-c6e37cfcf775][Princípio da Substituição de Fatores]] garante que os preços relativos dos bens reflitam essa escassez relativa.
+A relação entre oferta e demanda faz com que os preços mudem, mas não é o que garante o equilíbrio do mercado.
+Em resumo, os agentes trocam os bens produzidos por outros que lhe gerem uma maior utilidade.
+
+Essa lógica do modelo de [[id:8590c18f-5c98-47b7-b086-049261d4b850][Trocas Puras]] pode ser aplicado a um modelo com produção.
+A diferença é que é considerado como se houvesse uma troca pura indireta.
+Vale notar que os problemas a esse modelo não se restringe ao conceito de capital.
+Existem inconsistências associadas aos efeitos renda no [[id:175002f6-69a8-4fa1-a7da-b76802ecc21e][Modelo de Equilíbrio Geral]].
+
+
+A crítica sraffiana à teoria neoclássica diz respeito ao conceito de capital.
+A principal diferença desse fator é que é um bem produzido e isso independe se a economia está ou não em estado estacionário.
+Isso implica é que a demanda por esse bem decorre da aplicação e geração de lucro.
+Como consequência haverá uma tendência de taxa de lucro a uma taxa uniforme[fn::Terra e trabalho, por sua vez, não possuem uma tendência de uniformização. Por exemplo, não há nenhuma tendência para que trabalhadores que exercem funções diferentes tenham um mesmo salário.].
+Além disso, na teoria neoclássica, capital aparece em duas formas (bem de capital e fundo) distintas.
+
+Atualmente, os preços refletem os custos de produção.
+A principal diferença em relação às teorias não-marginalistas é que a distribuição é determinada endogenamente.
+Os coeficientes de produção, portanto, variarão enquanto a economia não estiver no pleno-emprego.
+Os custos de produção, portanto, irão refletir sua escassez relativa dos fatores.
+Portanto, o que é escasso é a dotação dos fatores e isso irá restringir a produção.
+Já o bem de capital, por ser produzido, tem a sua dotação endógena.
+Por isso é tão problemático na teoria marginalista.
+
+
+** Críticas teóricas do lado da demanda: reversão da intensidade de capital (trabalho) e retorno da técnica :ATTACH:
+:PROPERTIES:
+:ID:       c62b7aa4-3a86-4daa-924a-fcd7ab95b098
+:END:
+
+O [[id:f586e1da-8626-42d0-90ae-c6e37cfcf775][Princípio da Substituição de Fatores]] com técnicas alternativas implica escolhas de técnicas menos intensivas em trabalho quando o salário aumenta.
+O recíproco é válido para técnicas mais intensivas em capital.
+Consequentemente, há uma curva de demanda por fatores bem definida assim como uma relação inversa entre a intensidade dos fatores.
+Vale pontuar que uma função de produção é uma coleção ordenada de métodos de produção eficiente.
+
+No caso de dois bens e com excedente:
+#+BEGIN_latex
+\begin{equation}
+p_{1} = \frac{l_{1}}{(l_{1}a_{12} - l_{2}a_{12})(1+r) + l_{}}
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+w = \frac{1 - a_{11}(1+r)}{(l_{1}a_{12} - l_{2}a_{12})(1+r) + l_{}}
+\end{equation}
+#+END_latex
+
+Nesse caso, o preço relativos das mercadorias não será proporcional ao trabalho direto e indireto dado uma taxa de lucro positiva.
+Além disso, a relação salário-lucro não será linear.
+Portanto, com capital homogêneo é relevante avaliar a intensidade dos métodos de produção.
+
+Supondo que existam dois métodos com intensidade entre capital e trabalho distintos e que se cruzem em algum ponto.
+[[attachment:_20211216_163320screenshot.png]]
+
+
+Neste caso, quando o salário for maior que $w_{a}$, utiliza-se as técnicas menos intensivas em trabalho.
+No entanto, para salários abaixo de $w_{b}$ retorna-se à técnica menos intensiva em trabalho --- definido na literature como [[id:9f70b8e6-5318-4ccf-a1f6-8f647a4eab8a][Reswitching]].
+Portanto, em torno do ponto $b$ há uma reversão da intensidade de capital (e de trabalho).
+Em resumo, o preço do fator vai na direção oposta da intensidade de sua utilização.
+
+A reversão da intensidade do capital depende das curvas se cruzarem mais de uma vez.
+No entanto, é possível haver reversão da intensidade sem reversão da técnica.
+
+[[attachment:_20211216_164441screenshot.png]]
+
+A principal implicação é que as curvas de demanda por fatores podem ser positivamente inclinadas em alguns trechos.
+Outra implicação é que a possibilidade de retorno das mesmas técnicas mostra que não é possível medir intensidade de capital em termos físicos.
+
+** Críticas teóricas do lado da oferta: indeterminação da dotação de capital
+
+A tese do Garegnani é, em alguma medida, complementar ao livro do Sraffa por tratar elementos do lado da oferta.
+Em resumo, ele detecta os problemas da teoria neoclássica de tentar medida o capital de forma independente da distribuição.
+Para esta teoria, é estritamente necessário que o montante de capital seja independente da distribuição.
+
+Suponha dois bens de capital na dotação $Y_{2} = F(L, Q_{1}, Q_{2}))$.
+Neste caso, a dotação do bem de capital, medido em valor, é:
+#+BEGIN_latex
+\begin{equation}
+K = p_{1}\cdot Q_{1} + p_{2}\cdot Q_{2}
+\end{equation}
+#+END_latex
+Vale pontuar que a mensuração do estoque de capital da economia em valor, enquanto os outros fatores é real, não tem sentido econômico.
+Dito isso, suponha que o estoque de capital esta sendo medido em termos do bem 1:
+#+BEGIN_latex
+\begin{equation}
+K' = \frac{K}{p_{1}}= Q_{1} + \frac{p_{2}}{p_{1}}\cdot Q_{2}
+\end{equation}
+#+END_latex
+e fazendo o mesmo para o bem 2:
+#+BEGIN_latex
+\begin{equation}
+K'' = \frac{K}{p_{2}}= \frac{p_{1}{p_{2}}\cdot Q_{1} + Q_{2}
+\end{equation}
+#+END_latex
+
+Porém, se os preços relativos forem uma função (não-linear) da taxa de lucro, a dotação real de capital é indeterminada.
+Dessa forma, para encontrar o preço relativo dos bens é preciso determinar a taxa de lucro.
+No entanto, para determinar a taxa de lucro é preciso determinar os preços relativos.
+Dessa forma, a dotação inicial do estoque de capital não é compatível com a taxa de lucro uniforme.
+
+Sendo assim, o estoque de capital --- que determina a escassez relativa deste fator --- depende da taxa de lucro.
+Há, portanto, uma circularidade.
+Uma vez alterada a taxa de lucro, a dotação do estoque de capital (em termos reais) também se alterará.
+
+O problema da indeterminação implica na indefinição da dotação do estoque de capital em função do índice utilizado.
+Se aumentar o preço relativo em termo de 1, o estoque de capital pode aumentar.
+Mas se o mesmo estoque de capital for medido em termos de 2, pode ser menor.
+Dessa forma, a oferta de capital da economia é sensível ao numerário utilizado para medi-lo.
+
+Em resumo, o problema não é a impossibilidade de medir o estoque de capital, mas sim de utilizá-lo como forma de definir a escassez do estoque de capital e, assim, a taxa de lucro.
+A posição da curva de demanda de todos os outros fatores também fica indeterminada.
+Assim, não há um equilíbrio geral de longo prazo com a taxa de lucro uniforme.
+A única forma desse equilíbrio existir é que preços relativos e distribuição da renda sejam completamente independentes.
+
+*** Respostas neoclássicas
+
+- Retorno das ténicas e reversão da intensidade do capital seriam improváveis (Ferguson)
+  - Em termos de probabilidade teórica
+  - Empiricamente (insumo produto)
+  - Estas respostas não levam em conta qualquer impacto da taxa de lucro sobre os preços relativo
+- Indeterminação do capital seria pouco relevante
+  - Função de produção agregada é apenas uma simplificação
+    - Esta resposta confunde aggregação com o equilíbrio geral desagregado precisar de um capital único
+  - Versão modernas intertemporais do equilíbrio geral não requerem K
+- Mudança na noção de equilíbrio
+  - Hicks, Arrow-Debreu
+  - Mercados futuros completos e duas alternativas
+    - Equilíbrio intertemporal completo supõe a existência de mercados futuros para todas as mercadorias
+    - Supõe-se que os preços esperados é um dos pontos de equilíbrio
+  - Sequência de equilíbrios temporários
+    - Supõe-se que esse equilíbrio não é mais de longo prazo
+  - Com essa mudança não é necessário haver uma taxa de lucro uniforme na posição inicial
+
+** Mudança na dotação de equilíbrio
+
+** Críticas às versões intertemporais
+
+*** Críticas metodológicas das versões intertemporais
+
+**** Lado da oferta
+
+- Falta de persistência da dotação inicial
+
+**** Hipóteses adicionais
+
+- Coo tender a um equilíbrio datado se cada data defini novo mercado?
+  - Isso somado a falta de persistência da dotação inicial como um equilíbrio atrator
+    - Equilíbrio temporário exige previsão perfeita e unânime de preços spot no futuro
+    - Mercados futuros completos exigem previsão perfeita e unânime de preferências, dotações e tecnologia no futuro
+
+**** Lado da demanda
+
+- Qual a taxa natural de juros?
+- Modelos de horizonte infinito: dotação inicial perde importância e preços relativos se estabilizam com uma taxa de lucro uniforme
+- Reversão da intensidade do capital e retorno das técnicas
+
+Portanto, é discutível dizer que essas versões mais modernas superaram as críticas do Sraffa.
+
+* A explicação monetária da distribuição
+:PROPERTIES:
+:ID:       9b80fea3-18f7-4b5f-88b9-7905f61cbff3
+:mtime:    20211202152742 20211125172049 20211118180713
+:ctime:    20211202152742
+:END:
 
 * Concorrência e gravitação
 

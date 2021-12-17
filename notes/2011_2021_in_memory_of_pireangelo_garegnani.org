@@ -1,0 +1,40 @@
+:PROPERTIES:
+:ID:       2428467b-ee5e-4fb0-ba76-10f547ddbb8e
+:END:
+#+title: 2011-2021 In memory of Pireangelo Garegnani
+
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+
+#+hugo_section: conferences
+#+HUGO_TAGS: "Conference" "Sraffian Theory" "Modern surplus approach"
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+
+#+OPTIONS: num:nil ^:{} toc:nil
+
+
+* Pivetti: The surplus approach as ‘neo-Marxian’ political economy :noexport:
+SCHEDULED: <2021-12-14 ter 10:45>
+
+** 'Neo-Ricardian' vs 'neo-Maxists' political economy and the question of economic policy
+
+
+- Neo-Ricardian label must be abandoned since Ricardo does not provide a critic to capitalist system or a long-run policy recommendation
+
+** The relevance of Marx's analysis of the interrelationships between income distribution and the overall level of employment
+
+*** A critical theory of effective demand based on the circumstances that govern "the respective powers of combatants"
+
+** Marx's fundamental contradiction of capitalism in the light of the distinction between actual and normal rate of profit
+
+** Income distribution and technical change
+
+** On Mar's interpretation of capitalist development in the light of the actual experience of advanced capitalism
+
+* Petri: Capital, macroeconomics and perfect foresight :noexport:
+SCHEDULED: <2021-12-14 ter 11:45>
+
+** Introduction
+
+- [cite/t:@garegnani_1990_Quantity] is a more broad presentation of Garegnani's PhD dissertation
+  - The treatment of capital as a single factor in traditional approach meant to use an Aggregate Production Function would have been hard to maintain in front of Garegnani's discussion

@@ -1,7 +1,6 @@
-#+SETUPFILE: ../themes/confy_inline/confy_inline.theme
+#+TITLE: Elfeed rss
 #+OPTIONS: num:nil ^:{} toc:nil
-#+INCLUDE: "../header.org"
-* Blogs        :elfeed:
+* Blogs :elfeed:
 
 ** emacs       :emacs:
 *** [[https    ://blog.tecosaur.com/tmio/rss.xml][This month in Org]]
@@ -19,7 +18,6 @@
 ** Cambridge Journal of Economics
 *** [[https    ://academic.oup.com/rss/site_5437/3298.xml][Latest issue]]
 *** [[https    ://academic.oup.com/rss/site_5437/advanceAccess_3298.xml][Advanced Access]]
-*** [[https    ://academic.oup.com/rss/site_5437/advanceAccess_3298.xml][Open Access]]
 ** [[https     ://www.tandfonline.com/feed/rss/mjei20][Journal of Economic Issues]]
 ** [[https     ://www.elgaronline.com/journalissuetocrss/journals/roke/roke-overview.xml][Review of Keynesian Economics]]
 ** [[https     ://www.elgaronline.com/journalissuetocrss/journals/ejeep/ejeep-overview.xml][European Journal of Economics and Economic Policies]]

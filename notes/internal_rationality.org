@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       ed59cd6a-556c-4239-b523-8abe17d143f4
+:END:
+#+title: Internal Rationality
+
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+
+#+hugo_section: notes
+
+#+HUGO_TAGS: placeholder
+
+#+OPTIONS: num:nil ^:{} toc:nil
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+
+According to [cite/t:@hommes_2021_Behavioral p. 166]:
+#+begin_quote
+Agents are internally rational, that is, they maximize discounted expected utility under uncertainty over an infinite horizon given dynamically consistent subjective beliefs about the future. But agents may not be externally rational, that is, they may not know the true stochastic process for payoff relevant variables beyond their control.
+#+end_quote

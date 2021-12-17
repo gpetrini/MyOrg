@@ -1,7 +1,5 @@
 :PROPERTIES:
 :ID:       9789613e-f409-4593-b958-a2c9c8283bb6
-:mtime:    20211123094448
-:ctime:    20211123094448
 :END:
 #+title: Agent Based Models
 

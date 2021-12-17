@@ -1,12 +1,14 @@
 :PROPERTIES:
 :ID:       d21c21a8-1458-4ed9-b585-efb752d107b6
-:mtime:    20211202152744 20211025182244
-:ctime:    20211025182244
 :END:
 #+title: Demand-led growth models
 
-#+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
+
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+
+#+hugo_section: notes
+
+#+HUGO_TAGS: placeholder
 
 #+OPTIONS: num:nil ^:{} toc:nil
-
-#+INCLUDE: ../header.org

@@ -2,24 +2,24 @@
 :ID: 20211005T101910
 :CAPTURED: [2021-10-05 10:19:10]
 :ROAM_REFS: cite:mason_2018_Income
-:mtime:    20211202152738 20211028145137
-:ctime:    20211028145137
 :END:
 #+TITLE: mason_2018_Income: Income Distribution, Household Debt, and Aggregate Demand: a Critical Assessment - (2018, Levy Institute Working Paper No 901)
 #+filetags: :HousePrices:AssetBubble:Household_debt:Financial_crisis:Personal_Income_Distribution:Financial_Instability_Hypothesis:
 Time-stamp: 2021-10-05
-#+OPTIONS: toc:nil num:nil
-#+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+#+hugo_section: notes
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
 #+OPTIONS: num:nil ^:{} toc:nil
-#+INCLUDE: ../header.org
 
 
 * Backlinks
 
 
-[[id:96ccdc2f-bdc7-4c3b-8d70-401493fddfce][2021-02-13-15-53-39-mandarinoWorkersDebtfinancedConsumption2020a.org]]
+
 
 [[id:140b0945-65fb-431e-a087-22b140230539][A distribuição pessoal da renda na macroeconomia liderada pela demanda - Laura Carvalho (USP)]]
+
 
 * FISH-5SS
 

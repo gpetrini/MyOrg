@@ -1,7 +1,5 @@
 :PROPERTIES:
 :ID:       05b1426c-b748-4858-b937-adb441f10340
-:mtime:    20211202152738 20211130143814
-:ctime:    20211130143814
 :END:
 #+title: Review of Literature
 

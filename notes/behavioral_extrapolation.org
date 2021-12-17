@@ -1,7 +1,5 @@
 :PROPERTIES:
 :ID:       f37ac1bb-3de3-40a8-9224-c713e9b2e2e6
-:mtime:    20211202152745 20211108105919
-:ctime:    20211108105919
 :END:
 #+title: Behavioral extrapolation
 

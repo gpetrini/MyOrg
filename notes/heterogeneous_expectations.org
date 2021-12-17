@@ -1,7 +1,5 @@
 :PROPERTIES:
 :ID:       a3b9da87-5fcc-4e91-a3e7-65531ab57ad6
-:mtime:    20211202152743 20211108163323
-:ctime:    20211108163323
 :END:
 #+title: Heterogeneous expectations
 

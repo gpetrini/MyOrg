@@ -1,5 +1,6 @@
 :PROPERTIES:
 :ID:       c41a871c-bfe1-470b-8c55-35650903af74
+:ROAM_ALIASES: "Experimental Macroeconomics"
 :END:
 #+title: Experimental Finance
 

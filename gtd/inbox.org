@@ -13,36 +13,28 @@ https://i.pinimg.com/originals/fd/de/23/fdde2369da2feeaa95a469b0ff1dd3f5.gif
 * Tasks inbox
 :PROPERTIES:
 :ID:       257e67c4-ac7c-489b-b4f3-8420f4b0a5e4
+:agenda-group: @inbox
 :END:
-** TODO Reunião Felipe sobre modificações a serem incorporadas
-** TODO Inserir notas monografia no sistema
-DEADLINE: <2021-12-14 ter>
-*** Felipe: 8.5
-*** Lorena: 10.0
-** TODO Agendar terceira dose da vacina
+** WAIT Agendar terceira dose da vacina :@Personal:
+SCHEDULED: <2022-01-10 seg 10:35>
 
-
-** WAIT Matrícula disciplina de seminários
-
-** TODO Informar Mariano sobre dois alunos que irão fazer a prova
-** TODO Criar nota para armazenar as reuniões sobre a tese
+** TODO Criar nota para armazenar as reuniões sobre a tese :@PhD:
+** TODO See Tecosaur config :@free:
+** TODO Change typo highlighting :@free:
+** TODO Check Emacs tabs :@free:
 * Writing inbox
 
-** TODO [#A] FISH [[id:d71147fb-86f4-40fc-83a4-56eb2cee72c9][Hommes (2021)]]
+** STRT [#B] Kopp_2018
+** STRT [#C] FISH Govea (PhD Dissertation)
 
-** TODO [#B] FISH [[id:bda3aabe-a541-4988-a02c-02a26ae5eb8b][Archibugi]]
-
-
-** TODO [#B] Kopp_2018
-** TODO [#C] FISH Govea (PhD Dissertation)
-
-** TODO [#C] botte_2019
+** STRT [#C] botte_2019
 ** WAIT [#A] FISH Cornell 2020
 ** WAIT [#A] FISH [[https://voxeu.org/article/what-drives-house-prices-some-lessons-literature][What drives house prices: Lessons from the literature]]
 
 * News Inbox
 
 * Reading Inbox
+** [[http://www.storep.org/wp/wp-content/uploads/2021/11/WP-1-2021.pdf][The Negative Natural Rate of Interest in the Modern Theories of Liquidity Trap and Secular Stagnation: Back to Böhm-Bawerk via Samuelson]] :SraffianTheory:MonetaryPolicy:SecularStagnation:LiquidityTrap:
 ** [[https://link.springer.com/article/10.1007/s43253-020-00004-5][Shiozawa, Yoshinori; Morioka, Masashi; Taniguchi, Kasuhisa: Microfoundations ...]] :BookReview:Methodological:
 ** [[http://ccr.sigcomm.org/online/files/p83-keshavA.pdf][How to Read a Paper]] :WorkFlow:HowTo:
 ** [[https://www.sciencedirect.com/science/article/pii/S0264837721006116][Land availability and housing price in China: Empirical evidence from nonline...]] :HousingMarket:HousePrices:China:LandUse:Empirical:NonLinearities:
@@ -50,6 +42,3 @@ DEADLINE: <2021-12-14 ter>
 ** [[https://giacomorella.github.io/assets/tvp_rella.pdf][THE FED,HOUSING AND  HOUSEHOLD DEBT OVER TIME]] :Housing:ResidentialInvestment:HouseholdDebt:Empirical:MonetaryPolicy:
 
 * Fleeting notes
-** TODO Enhance LSD documentation snippet
-** TODO git submodules
-** WAIT Reference org-roam backlinks

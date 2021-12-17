@@ -1,7 +1,6 @@
 :PROPERTIES:
 :ID:       175002f6-69a8-4fa1-a7da-b76802ecc21e
-:mtime:    20211202152738 20211108175622
-:ctime:    20211108175622
+:ROAM_ALIASES: "Modelo de Equilíbrio Geral"
 :END:
 #+title: General Equilibrium Model
 

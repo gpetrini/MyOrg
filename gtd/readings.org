@@ -2,7 +2,7 @@
 #+TITLE:  Readings List
 #+AUTHOR: Gabriel Petrini
 #+LANG: en
-#+TODO: READ PARTIAL SKIM RESULTS WAIT MAYBE REF INPROGRESS | REPORT DONE ARCH
+#+TODO: READ PARTIAL SKIM RESULTS WAIT MAYBE REF STRT | REPORT DONE ARCH
 #+PROPERTY: FINISHED_ALL "[ ]" "[X]"
 #+PROPERTY: COLUMNS  %FINISHED(Finished?){X} %TODO(Decision) %ITEM(File) %TAG
 #+EXCLUDE_TAGS: ARCHIVE noexport
@@ -14,6 +14,9 @@
 https://i.pinimg.com/originals/ea/c9/83/eac9832cf6b1ad75af8ccc3ad3db1728.gif
 
 * Journals
+:PROPERTIES:
+:agenda-group: Jornal overview
+:END:
 
 *Description:* Readings to keep up with frontier
 
@@ -37,6 +40,9 @@ https://i.pinimg.com/originals/ea/c9/83/eac9832cf6b1ad75af8ccc3ad3db1728.gif
 ** <2021-09-28 ter> [[https://onlinelibrary.wiley.com/doi/full/10.1111/meca.12355][A methodological problem in a supermultiplier model with too much acceleratio...]] :SraffianSupermultiplier:AutonomousExpenditures:Methodology:meca:
 ** RESULTS [#A] [[https://onlinelibrary.wiley.com/doi/10.1111/meca.12354][Is autonomous demand really autonomous in the United States? An asymmetric fr...]] :SraffianSupermultiplier:Empirical:TimeSeriesEconometrics:meca:FrequencyDomainModel:Causalty:
 * Working papers/Conference papers
+:PROPERTIES:
+:agenda-group: Working papers
+:END:
 
 ** READ [#A] [[https://scholar.google.com.br/scholar_url?url=https://www.boeckler.de/pdf/v_2021_10_29_allain.pdf&hl=pt-BR&sa=X&d=13284360159044545796&ei=krmDYanFGoWN6rQPm5Wf4As&scisig=AAGBfm0_Qv-xMv_16uPe-ITBuvIxe0P3Tw&oi=scholaralrt&hist=0soJqxkAAAAJ:11446866960855446892:AAGBfm1xPxfIJvREPJhXA5Bb--edXNJorA&html=&folt=kw][A supermultiplier model with two non-capacity-generating autonomous demand components]] :SraffianSupermultiplier:
 
@@ -48,6 +54,9 @@ https://i.pinimg.com/originals/ea/c9/83/eac9832cf6b1ad75af8ccc3ad3db1728.gif
 
 
 *** General ABM
+:PROPERTIES:
+:agenda-group: ABM general reading
+:END:
 
 **** READ [#A] [[https://www.sciencedirect.com/science/article/abs/pii/S0165188999000226][LeBaron - Agent-based computational finance: Suggested readings and early research]] :ABM:Survey:
 **** READ [#B] [[https://link.springer.com/article/10.1007/s10614-007-9104-4][Fagiolo et al - A Critical Guide to Empirical Validation of Agent-Based Models in Economics: Methodologies, Procedures, and Open Problems]] :Validation:ABM:
@@ -99,6 +108,9 @@ https://i.pinimg.com/originals/ea/c9/83/eac9832cf6b1ad75af8ccc3ad3db1728.gif
 **** <2021-09-28 ter> [[http://dx.doi.org/10.1016/j.jedc.2010.10.003][The heterogeneous expectations hypothesis: Some evidence from the lab]] :Expectations:Learning:Bubbles:DotComCrisis:AssetPricing:Results:
 **** <2021-09-28 ter> [[http://www2.econ.iastate.edu/tesfatsi/LearnAlgorithms.LT.pdf][Learning Algorithm Illustrations:  From Simple to Deep]] :Expectations:Learning:
 *** Housing ABM
+:PROPERTIES:
+:agenda-group: Housing ABM
+:END:
 
 **** READ [#A] Agent-based modelling for public policy: A housing market example :ABM:Baseline:ToBase:
 **** READ <2021-06-11 sex> [[https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0129070][Endogenous Price Bubbles in a Multi-Agent System of the Housing Market]] :Spatial:ABM:Bubbles:HouseMarket:
@@ -196,10 +208,16 @@ CLOSED: [2021-05-20 qui 10:46]
 **** MAYBE [#C] <2021-09-22 qua> [[https://econpapers.repec.org/bookchap/eeemacchp/v2-1547.htm][Housing and Macroeconomics]] :HousingMarkets:ReviewOfLiterature:
 
 *** Spatial Housing ABM
+:PROPERTIES:
+:agenda-group: Spatial ABM
+:END:
 **** READ [#A] <2021-10-21 qui> [[http://www.lem.sssup.it/WPLem/files/2021-35.pdf][AgriLOVE: agriculture, land-use andtechnical change in an evolutionary, agent-based model]] :AgentBasedModels:Land:SpatialModel:LandUse:Agriculture:TechnologicalChange:EnvironmentalModel:ClimateChange:
 **** READ [#A] <2021-09-22 qua> [[https://academic.oup.com/qje/article/125/3/1253/1903664?login=true][Geographic Determinants of Housing Supply* | The Quarterly Journal of Economi...]] :HouseSupply:Spatial:Geography:
 **** RESULTS [#A] <2021-09-27 seg> [[https://www.sciencedirect.com/science/article/pii/S0378426621002685][Housing networks and driving forces - ScienceDirect]] :HousingMarket:HousePrices:Networks:Fundamentals:GrangerCausality:China:Australia:Connectivity:Spatial:SpatialABM:
 *** Innovative bubble ABM
+:PROPERTIES:
+:agenda-group: Innovation and ABM
+:END:
 
 
 **** READ [#A] [[https://doi.org/10.1007/s40888-020-00200-w][Harrodian instability in decentralized economies: an agent-based approach | S...]] :ABM:Supermultiplier:ToBase:
@@ -248,6 +266,9 @@ Parts to read:
 - Use as an example of Bubbles and fundamentals
 
 ** [[file:../notes/20210210184406-mortgage_interest_rate.org][Mortgage Interest rate and market particularities]] :Mortgage:
+:PROPERTIES:
+:agenda-group: Mortgage interest rate
+:END:
 
 *** READ [#A] <2021-10-13 qua> [[https://www.tandfonline.com/doi/full/10.1080/10527001.2021.1985907][Full article: Thirty Years of Housing Research]] :HousingMarket:ReviewOfLiterature:HousingBubbles:
 *** READ [#A] [[https://www.oxfordhandbooks.com/view/10.1093/oxfordhb/9780199640935.001.0001/oxfordhb-9780199640935-e-023][Residential Mortgages - Oxford Handbooks]] :Mortgage:InternationalComparison:ToBase:
@@ -337,11 +358,17 @@ Parts to read:
 *** REF [#C] [[https://academic.oup.com/oxrep/article/24/1/1/5140987][Housing markets and the economy: the assessment]] :Panel:StilyzedFacts:Results:EmpiricalMotivation:
 
 ** [[file:../notes/20210210092103-residential_investment_determinants.org][Residential investment determinants]] :Residential:
+:PROPERTIES:
+:agenda-group: Residential investment determinants
+:END:
 
 *** RESULTS [#C] [[https://www.sciencedirect.com/science/article/abs/pii/S1051137709000552?via%3Dihub][Macroeconomic determinants of international housing markets]] :Panel:Results:Empirical:
 *** WAIT [#B] <2021-03-05 sex> [[https://www.ecb.europa.eu/pub/financial-stability/fsr/special/html/ecb.fsrart202005_01~762d09d7a2.en.html][Trends in residential real estate lending standards and implications for fina...]] :QCA:DATA:DIRECTIONALS:
 *** MAYBE <2021-03-08 seg> [[https://www.tandfonline.com/doi/abs/10.1080/00036846.2021.1885613][Forecasts of growth in US residential investment: accuracy gains from consume...]] :Panel:Residential:
 ** [[file:../notes/20210210092940-household_debt_and_bank_credit.org][Household debt and Bank credit]] :Debt:
+:PROPERTIES:
+:agenda-group: Household debt
+:END:
 
 *** READ [#A] [[https://link.springer.com/article/10.1007/s43253-021-00061-4][Financialisation: continuity and change— introduction to the special issue | ...]] :Financialization:Housing:Mortgaging:ReviewOfLiterature:TheoreticalMotivation:
 *** READ [#A] [[https://www.oxfordhandbooks.com/view/10.1093/oxfordhb/9780199640935.001.0001/oxfordhb-9780199640935-e-025][Systemic Risk in Banking: An Update - Oxford Handbooks]] :QCA:Banking:
@@ -372,6 +399,9 @@ Parts to read:
 *** RESULTS [#D] [[https://academic.oup.com/rof/article/10/3/321/1606865][Financial Accelerator: Evidence from International Housing Markets | Review o...]] :ABM:Empirical:Results:DATA:StilyzedFacts:
 *** WAIT [#C] [[https://www.researchgate.net/profile/Stefano-Di-Bucchianico/publication/351359936_Inequality_household_debt_ageing_and_bubbles_A_model_of_demand-side_Secular_Stagnation/links/6093ecf392851c490fbc88e0/Inequality-household-debt-ageing-and-bubbles-A-model-of-demand-side-Secular-Stagnation.pdf][Inequality, household debt, ageing and bubbles: A model of demand-side Secular Stagnation]] :Bubbles:Sraffian:HousePrices:
 ** [[file:../notes/20210210091758-house_prices.org][House Prices]] :Prices:
+:PROPERTIES:
+:agenda-group: House prices
+:END:
 *** READ [#A] [[https://voxeu.org/article/what-drives-house-prices-some-lessons-literature][What drives house prices: Some lessons from the literature]] :HousePrices:Vox:
 *** READ [#B] [[https://www.sciencedirect.com/science/article/abs/pii/S1051137716300237][Housing finance and real-estate booms: A cross-country perspective]] :Data:QCA:DIRECTIONALS:Panel:
 *** READ [[https://www.sciencedirect.com/science/article/pii/S2325426221000139][Examining the determinants of housing prices and the influence of the spatial...]] :HousePrices:Spatial:Empirical:Panel:China:
@@ -383,8 +413,11 @@ Parts to read:
 *** ARCH [#C] [[https://www.kansascityfed.org/PUBLICAT/ECONREV/PDF/2q07rapp.pdf][Rappaport - A Guide to Aggregate House Price Measures]] :USA:HousePrices:
 
 ** [[file:../notes/20210405101242-bubbles_and_aggregate_demand.org][Bubbles and aggregate demand]] :Dissertation:
+:PROPERTIES:
+:agenda-group: Asset bubbles and aggregate demand
+:END:
 
-*** INPROGRESS [#A] [[https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.994.8229&rep=rep1&type=pdf][Asset Price Bubbles: A Selective Survey]] <2021-11-01 seg 09:00-12:00> :AssetBubble:ReviewOfLiterature:Survey:FinancialRisk:FinancialCrisis:
+*** STRT [#A] [[https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.994.8229&rep=rep1&type=pdf][Asset Price Bubbles: A Selective Survey]] <2021-11-01 seg 09:00-12:00> :AssetBubble:ReviewOfLiterature:Survey:FinancialRisk:FinancialCrisis:
 
 *** READ [#A] [[https://onlinelibrary.wiley.com/doi/10.1111/joes.12023][A Review Of Bubbles And Crashes In Experimental Asset Markets]] :Survey:AssetBubble:ReviewOfLiterature:Expectations:ShortSaleConstraint:ExperimentalForecast:LearningToForecastExperiment:
 
@@ -397,7 +430,7 @@ DEADLINE: <2021-11-30 ter>
 DEADLINE: <2021-11-30 ter>
 
 *** PARTIAL [#A] [[https://www.imf.org/external/pubs/ft/wp/2015/wp1527.pdf][Asset Bubbles:Re-thinking Policy for the Age of Asset Management]] <2021-11-02 ter 09:00-12:00> :AssetBubble:FinancialStability:MacroPrudentialPolicy:PolicyDiscussion:
-*** INPROGRESS [#B] [[https://pubs.aeaweb.org/doi/pdfplus/10.1257/jep.4.2.13][Symposium on Bubbles]] :ReviewOfLiterature:Fundamentals:
+*** STRT [#B] [[https://pubs.aeaweb.org/doi/pdfplus/10.1257/jep.4.2.13][Symposium on Bubbles]] :ReviewOfLiterature:Fundamentals:
 
 *** RESULTS [#A] [[https://www.sciencedirect.com/science/article/abs/pii/S1042957308000764][Liquidity and leverage - ScienceDirect]] :Empirical:Leverage:FinancialCycles:Canonical:StylizedFacts:AssetBubbles:Liquidity:
 
@@ -410,11 +443,11 @@ CLOSED: [2021-11-08 seg 11:22]
 *** REF [[https://onlinelibrary.wiley.com/doi/10.1111/ehr.12847][Squeezing the bears: cornering risk and limits on arbitrage during the ‘British bicycle mania’, 1896–8]] :Mania:Arbitrage:ShortSaleConstraint:AssetBubble:
 
 ** Innovation Bubble
+:PROPERTIES:
+:agenda-group: Innovation bubbles
+:END:
 *** READ [[https://doi.org/10.1007/s00191-021-00747-2][The age distribution of business firms]] :ABM:CapacityUtilization:Supermultiplier:
 
-*** READ [#B] [[https://onlinelibrary.wiley.com/doi/10.1111/meca.12243][Demand-led growth with endogenous innovation]] :Innovation:AutonomousExpenditures:ResearchDevelopment:ToDialog:
-
-*Reason:* Paper to dialog with
 
 *** PARTIAL [#A] [[http://www.carlotaperez.org/pubs?s=tf&l=en&a=technologicalrevolutionsandfinancialcapital][Technological revolutions and financial capital: the dynamics of bubbles and golden ages]]
 
@@ -456,8 +489,14 @@ CLOSED: [2021-11-08 seg 11:22]
 - Could be interesting to discuss whether private or public innovation policy is sustainable.
 
 ** New Narrative :NewNarrative:
+:PROPERTIES:
+:agenda-group: New narrative
+:END:
 
 ** Dot-com crisis
+:PROPERTIES:
+:agenda-group: Dot-Com crisis
+:END:
 
 
 *** READ [#A] [[https://psycnet.apa.org/record/1997-08992-001][Rational entrepreneurs or optimistic martyrs? Some considerations on technological regimes, corporate entries, and the evolutionary role of decision biases]]
@@ -483,16 +522,19 @@ CLOSED: [2021-11-08 seg 11:22]
 
 *** MAYBE [#B] [[https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0198807][Dynamics of investor spanning trees around dot-com bubble]]
 
-*** INPROGRESS [#A] [[https://www.aeaweb.org/articles?id=10.1257/aer.99.4.1451][Technological Revolutions and Stock Prices]]
+*** STRT [#A] [[https://www.aeaweb.org/articles?id=10.1257/aer.99.4.1451][Technological Revolutions and Stock Prices]]
 
-*** INPROGRESS [#A] [[https://www.tandfonline.com/doi/full/10.1080/0015198X.2020.1730655][The Big Market Delusion: Valuation and Investment Implications]]
+*** STRT [#A] [[https://www.tandfonline.com/doi/full/10.1080/0015198X.2020.1730655][The Big Market Delusion: Valuation and Investment Implications]]
 
-*** INPROGRESS [#A] [[http://rkaniel.simon.rochester.edu/papers/bubbletechnology.pdf][Technological innovation and real investment booms and busts]]
+*** STRT [#A] [[http://rkaniel.simon.rochester.edu/papers/bubbletechnology.pdf][Technological innovation and real investment booms and busts]]
 
 *** REPORT [[https://doi.org/10.1093/cje/bep028][The double bubble at the turn of the century: technological roots and structural implications]]
 CLOSED: [2021-11-24 qua 17:18]
 
 ** Expectations formation
+:PROPERTIES:
+:agenda-group: Expectations and Heuristics
+:END:
 
 
 *** PARTIAL [#A] [[https://www.aeaweb.org/articles?id=10.1257/mic.4.4.35][Evolutionary Selection of Individual Expectations and Aggregate Outcomes in Asset Pricing Experiments]] :Beliefs:Communication:Equation:LearningToForecastExperiment:Speculation:AssetPrices:InformationKnowledge:Learning:ExperimentalForecast:HeuristicSwitching:TradingVolume:
@@ -526,12 +568,11 @@ CLOSED: [2021-11-24 qua 17:18]
 *** RESULTS [#E] [[https://epub.ub.uni-muenchen.de/41214/1/Buchheim_Link.pdf][The Effect of Disaggregate Information on theExpectation Formation of Firms]] :DisaggregateInformation:ExpectationFormation:Results:
 
 
-*** INPROGRESS [#B] [[https://www.aeaweb.org/articles?id=10.1257/jel.20191434][Behavioral and Experimental Macroeconomics and Policy Analysis: A Complex Systems Approach]] :Behavioral:ExperimentalForecast:BoundedRationality:Heuristics:Survey:CoordinationFailure:OptimismWave:PessimismWave:Heterogeinity:Expectations:HeuristicSwitching:PolicyDiscussion:
-:PROPERTIES:
-:ID:       d71147fb-86f4-40fc-83a4-56eb2cee72c9
-:END:
 
 ** Spatial models
+:PROPERTIES:
+:agenda-group: Spatial models
+:END:
 
 *** READ [#B] [[https://www.arl-international.com/sites/default/files/dictionary/2021-09/gentrification.pdf][Gentrification]] :ReviewOfLiterature:Gentrification:Spatial:Geography:
 
@@ -542,10 +583,11 @@ CLOSED: [2021-11-24 qua 17:18]
 * Lectures
 
 * Orientation
-** Dourado (2021)
-** Barros (2021)
 * Teaching
 * General topics (not related to any major project)
+:PROPERTIES:
+:agenda-group: General topics
+:END:
 
 ** [#D] [[https://link.springer.com/chapter/10.1007/978-3-030-62070-7_13][Labour Markets and Income Distribution]] :Sraffian:OffOffice:LaborMarket:ClassStrugle:Book:
 

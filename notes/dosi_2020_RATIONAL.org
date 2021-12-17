@@ -1,0 +1,57 @@
+:PROPERTIES:
+:ID:       802205f4-ac6e-4190-9713-3f0e0e0555cc
+:ROAM_REFS: @dosi_2020_RATIONAL
+:END:
+#+title:
+#+OPTIONS: num:nil ^:{} toc:nil
+#+TITLE: Dosi, Napoletano, Roventini, Stiglitz, Treibich: RATIONAL HEURISTICS? EXPECTATIONS AND BEHAVIORS IN EVOLVING ECONOMIES WITH HETEROGENEOUS INTERACTING AGENTS - (2020-07, Econ Inq)
+#+hugo_base_dir: ~/BrainDump/
+#+hugo_section: notes
+#+hugo_categories: Econ Inq
+#+TAGS:
+#+HUGO_TAGS:
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+
+
+
+* FISH-5SS
+
+|---------------------------------------------+-----|
+| <40>                                        |<50> |
+| *Entry*                                       | *Description* |
+|---------------------------------------------+-----|
+| *Background*                                  |     |
+| *Supporting Ideas*                            |     |
+| *Purpose*                                     |     |
+| *Originality/value (Contribution)*            |     |
+| *Relevance*                                   |     |
+| *Design/methodology/approach*                 |     |
+| *Results*                                     |     |
+| *(Interesting) Findings*                      |     |
+| *Research limitations/implications (Critics)* |     |
+| *Uncategorized stuff*                         |     |
+| *5SS*                                         |     |
+|---------------------------------------------+-----|
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+* References
+
+#+print_bibliography:
+
+
+
+#+print_bibliography:

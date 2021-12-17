@@ -1,7 +1,5 @@
 :PROPERTIES:
 :ID:       8e9dd4a4-0f29-46d1-b8e4-5befe4df94cb
-:mtime:    20211202152742 20211130151826
-:ctime:    20211130151826
 :END:
 #+title: Stylized Facts
 

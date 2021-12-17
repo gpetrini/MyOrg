@@ -1,0 +1,141 @@
+:PROPERTIES:
+:ID:       62c7e917-940b-4381-9832-e28e358ce1ac
+:ROAM_REFS: @hommes_2021_Behavioral
+:END:
+#+title:
+#+OPTIONS: num:nil ^:{} toc:nil
+#+TITLE: Hommes: Behavioral and Experimental Macroeconomics and Policy Analysis: A Complex Systems Approach - (2021, J. Econ. Lit.)
+#+hugo_base_dir: ~/BrainDump/
+#+hugo_section: notes
+#+hugo_categories: "Journal of Economic Literature"
+#+TAGS: Computational Techniques,Fixed Income Securities,Keynesian,Post-Keynesian; Macro-Based Behavioral Economics: Role and Effects of Psychological; Emotional; Social; and Cognitive Factors on the Macro Economy; Equities,Review of Literature,Simulation Modeling; Design of Experiments: General; Micro-Based Behavioral Economics: Role and Effects of Psychological; Emotional; Social; and Cognitive Factors on Decision Making; General Aggregative Models: Keynes,Survey
+#+HUGO_TAGS:
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+[cite:@hommes_2021_Behavioral] provides an overview of the recent literature on [[id:053144da-4f34-4a23-97cb-c5af4b600164][Behavioral Finance]] finance, describing which [[id:cdc7d683-cbb8-4611-805c-0e058411c9e2][Learning and Heuristics]] procedures replicates relevant stylized facts on the financial markets such as [[id:628bc545-800c-4f2b-beb6-6933d381a2ad][Asset bubble]]s and [[id:29ce4a60-6429-44ef-a5b2-f48fba192d79][Behavior Bias]]. In general, simple heuristics perform better and market [[id:c5c9caae-7306-485e-ab15-bc579733407a][Feedback mechanisms]] affects the aggregate result of the system.
+
+** Background
+
+- After the [[id:3e89a992-4e51-4c36-94b9-80edf7ce3d4a][Great Recession]], [[id:0ded6f11-7638-483a-b9fb-2e1204b572be][Financial Frictions]] started to be added in new-Keynesian DSGE models [cite:@claessens_2018_Frontiersb see also];
+  - Still, those models assume standard [[id:a3dc72f3-bb99-4601-b58e-cc12229748f8][Rational Expectations]]-related hypothesis
+  - Most of them, until recently, argued that [[id:29ce4a60-6429-44ef-a5b2-f48fba192d79][Behavior Bias]] is vanished out in the aggregate level
+- Most studies do not consider [[id:c41a871c-bfe1-470b-8c55-35650903af74][Experimental Finance]] and laboratory results as a valid ressearch method
+
+
+
+** Supporting ideas
+
+- The author consider a [[id:4002418c-d54c-4355-857b-2dfc2444b779][Complex System]] composed by:
+  - [[id:9bb55103-022c-4b13-83cf-1ae264b5fcee][Non-linear model]]
+    - Leads to multiple-equilibria
+  - [[id:f8110b7b-dc7d-4b58-8fa5-4c8cae7a290c][Heterogenous Agents]]
+
+** Contribution and purpose
+
+[cite/t:@hommes_2021_Behavioral p. 152] himself propose a research question: "what is the aggregate behavior
+that a collection of adaptively behaving individuals will learn to coordinate on?"
+
+** Relevance
+
+For the [[id:95265264-f61f-4cf5-8cdc-e590b2a47cb9][Innovation bubble ABM]] chapter, this paper provide a [[id:05b1426c-b748-4858-b937-adb441f10340][Review of Literature]] for recent paper on [[id:053144da-4f34-4a23-97cb-c5af4b600164][Behavioral Finance]] and [[id:9326692f-7fa9-439b-8f3c-a7fa2d18aef8][Expectations]] formations. The motivation for reading this paper is not to describe New-Keynesian framework, but to understand how to model firms' expectational behavior.
+
+This paper also proved some [[id:2ebeee6d-b9bb-4bf7-b9e4-c9177af1db0f][Policy Oriented]] results in which evaluate the consequences of different expectational heuristics for both [[id:9036f78f-175e-4915-baae-c48b42996045][Fiscal Policy]] and [[id:7527ce86-4417-40d0-b238-b8f21faff261][Monetary Policy]].
+Considering the effects of interest rates, the author state that its increase can reduce positive feedback markets and reduced the trend-following behavior, stabilizing the system.
+Similarly, the system can be stabilized by adding more negative feedback.
+One example is the increase of housing supply elasticity as in [cite/t:@bao_2019_When].
+
+** Methodology (Design/Approach/Method)
+
+- Methodology :: Survey of recent literature focusing on the departure of the [[id:a3dc72f3-bb99-4601-b58e-cc12229748f8][Rational Expectations]] hypothesis and moving towards a [[id:f8110b7b-dc7d-4b58-8fa5-4c8cae7a290c][Heterogenous Agents]] perspective with [[id:c35474df-becc-4ac3-8370-d381ec5df2ab][Boundedly Rational]] behavior which allows to include [[id:cdc7d683-cbb8-4611-805c-0e058411c9e2][Learning and Heuristics]] procedure
+  - At odds with previous literature, this framework does not assume that agents behave optimally and do not have a infinite time horizon for optimization
+
+
+** Results
+
+Since this a survey of the literature, this section will point out the main results (and implications) of each strands.
+
+- Adaptative learning :: Agents behave as econometricians and update/learn its expectational parameters over time
+  - Stability on adaptative learning is a minimum requirement for [[id:a3dc72f3-bb99-4601-b58e-cc12229748f8][Rational Expectations]] Equilibrium
+  - Results
+    - [[id:ae75ff85-846a-4976-a534-a8ff102cc8b3][E-stability Principle]]
+    - Learning may induce endogenous [[id:380b31ad-cdd5-4367-af2c-9ee199a085e7][Business Cycles]] fluctuations
+    - Risk in Adaptative Learning with constant gain generates [[id:628bc545-800c-4f2b-beb6-6933d381a2ad][Asset bubble]] and crashes
+      - Rational bubble solutions are unstable under learning
+      - The [[id:628bc545-800c-4f2b-beb6-6933d381a2ad][Asset bubble]]'s is endogenous as long as risk estimate increase
+  - Some papers provide a microfundamentation for adaptative learning ([[id:ed59cd6a-556c-4239-b523-8abe17d143f4][Internal Rationality]])
+- Heterogeneous expectations (HAM) :: This model branch highlights the relevance of [[id:d6b88985-00f9-44dd-bcfa-5033fea9e73e][Switching Mechanism]] of [[id:9326692f-7fa9-439b-8f3c-a7fa2d18aef8][Expectations]] formation which leads to a [[id:e708fe89-4dff-4751-bf6b-78999dad4275][Evolutionary Selection]] of the better performing rule
+  - Results:
+    - Endogenous booms and bursts; bubbles and crashes
+    - High persistency
+    - Clustered volatility
+    - Fat tails
+    - Rational [[id:11044897-734e-47b1-9abd-b5d2a10cbaf0][Speculation]] is destabilzing [cite:@delong_1990_Positive]
+  - [[id:8872c932-846f-4b6b-9fea-21a912902aaf][Santa Fe Model]] uses a similar approach in which agents have heterogeneous beliefs and switch between [[id:aaecf5b0-903e-4cb7-9579-1f67c41a04a8][Fundamentalist]]s and [[id:fe80e1b8-d6ef-40ee-bbf3-e85901693248][Chartists]] [cite:see;@lebaron__Time; @arthur_1996_Asset; @tesfatsion__Santa]
+  - [cite/t:@brock_1997_Rational], for instance, assume that agents know the carrect [[id:1a84049d-62ce-4f17-a492-cd1a6a74ebe9][Fundamentals]], but have Heterogeneous beliefs [cite:similar to; @hommes_2017_Booms]
+    - In those models, [[id:aaecf5b0-903e-4cb7-9579-1f67c41a04a8][Fundamentalist]]s dominate when trending-following dominates as well
+    - Usually, bubbles are initialized by an exongenous shock in [[id:1a84049d-62ce-4f17-a492-cd1a6a74ebe9][Fundamentals]] (such as the [[id:8d3c092d-8546-4dc0-8a04-55d3d8a09191][Dot-Com crisis]]) and amplified by [[id:aaecf5b0-903e-4cb7-9579-1f67c41a04a8][Fundamentalist]]s.
+      - [cite/t:@dieci_2012_Simple; @baptista_2016_Macroprudential; @burnside_2016_Understanding; @bao_2015_When] extend this approach to the [[id:c5a6f54f-b92e-4deb-bc55-24d2a80b3c87][Housing Market]]
+  - [[id:c41a871c-bfe1-470b-8c55-35650903af74][Experimental Macroeconomics]] :: This approach allows to test the emergent macroeconomic behavior as a results of individual decision rules interactions
+    - Research questions from [[id:88bb712d-d234-4e6c-a850-e3a55f5a30be][Learn to Forecast Experiments]] (LtFE) and [[id:dfe69c29-9425-48b9-bf72-39b6a9ede338][Learn to Optmize Experiments]] (LtOE) literature ([cite/t:for differences between those approaches see @bao_2021_Expectation]):
+      - How individuals adapt its behavior
+      - Emergence of aggregate outcome
+      - Emergence (or not) of [[id:b44594c1-2c74-4ff4-b142-ed044b79ea5b][Coordination]]
+      - Convergence (or not) to [[id:a3dc72f3-bb99-4601-b58e-cc12229748f8][Rational Expectations]] Equilibrium (REE)
+        - [[id:b44594c1-2c74-4ff4-b142-ed044b79ea5b][Coordination]] on bubbles also exist
+    - Results:
+      - In general, agents were abble to coordinate even thought there was no commumication among them
+      - When there is no negative [[id:c5c9caae-7306-485e-ab15-bc579733407a][Feedback mechanisms]], there is a long lasting [[id:628bc545-800c-4f2b-beb6-6933d381a2ad][Asset bubble]]
+      - Results in positive and negative [[id:c5c9caae-7306-485e-ab15-bc579733407a][Feedback mechanisms]] are different
+        - In negative feedback, prices converges to [[id:1a84049d-62ce-4f17-a492-cd1a6a74ebe9][Fundamentals]] while in positive they deviate from them
+          - In positive feedback, agent coordinate quickly and persistently to the "wrong" direction while in negative feedback there is a persistent heterogeinity
+    - For a general discussion about the [cite/t: @anufriev_2012_Evolutionarya 's] model, see [[id:dd9fa53f-4487-4429-88d3-35fd290f14d2][Heuristic switching model]]
+
+
+A general results it the use of parsimonious learning rules and simple forecast heuristics seems to be more adequate in a [[id:4002418c-d54c-4355-857b-2dfc2444b779][Complex System]] since agents are [[id:c35474df-becc-4ac3-8370-d381ec5df2ab][Boundedly Rational]].
+
+** Interesting findings and uncategorized stuff
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+This survey discusses behavioral and experimental macroeconomics, emphasizing a complex systems perspective. The economy consists of boundedly rational heterogeneous agents who do not fully understand their complex environment and use simple decision heuristics. Central to our survey is the question of under which conditions a complex macro-system of interacting agents may or may not coordinate on the rational equilibrium outcome. A general finding is that under positive expectations feedback (strategic complementarity)—where optimistic (pessimistic) expectations can cause a boom (bust)—coordination failures are quite common. The economy is then rather unstable, and persistent aggregate fluctuations arise strongly amplified by coordination on trend-following behavior leading to (almost-)self-fulfilling equilibria. Heterogeneous expectations and heuristics switching models match this observed micro and macro behavior surprisingly well. We also discuss policy implications of this coordination failure on the perfectly rational aggregate outcome and how policy can help to manage the self-organization process of a complex economic system.
+#+END_ABSTRACT
+
+
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+[[id:9326692f-7fa9-439b-8f3c-a7fa2d18aef8][Expectations]]
+
+[[id:88bb712d-d234-4e6c-a850-e3a55f5a30be][Learn to Forecast Experiments]]
+
+[[id:cdc7d683-cbb8-4611-805c-0e058411c9e2][Learning and Heuristics]]
+
+[[id:dfe69c29-9425-48b9-bf72-39b6a9ede338][Learn to Optmize Experiments]]
+
+[[id:053144da-4f34-4a23-97cb-c5af4b600164][Behavioral Finance]]
+
+[[id:05b1426c-b748-4858-b937-adb441f10340][Review of Literature]]
+
+[[id:38ef3b8c-65b7-4dab-aca1-6f94db9f4287][Cognitive restriction]]
+
+[[id:c41a871c-bfe1-470b-8c55-35650903af74][Experimental Finance]]
+
+* References
+
+#+print_bibliography:
+
+
+
+#+print_bibliography:

@@ -10,13 +10,14 @@
 #+cite_export: csl apa.csl
 https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
-* Dissertation's general settings [0%] :Dissertation:
+* Dissertation's general settings [0%] :@PhD:@UNICAMP:
 ** TODO Marcar qualificação
 ** TODO Criar script para copiar tabelas e figuras dos scripts (link simbólico preferencialmente)
 - [ ] Pesquisar se tem como fazer com que o Latex reconheça pastas
 
 ** TODO Ver possibilidade do proficiência com diploma do VM
 
+** TODO Enhance LSD documentation snippet
 
 ** Discussed topics and ideas
 
@@ -31,7 +32,10 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 - Structural break as a source of composition fallacy
   - Firm only knows its mean productivity, not for the whole economy
 
-* ABM dot-com SSM model :Article:@PhD:Chapter:
+* ABM dot-com SSM model :@Article:@PhD:Chapter:
+:PROPERTIES:
+:agenda-group: Dot-Com ABM
+:END:
 
 ** TODO Writing steps
 
@@ -129,7 +133,10 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 *** WAIT Government
 
-* Nikiforos econometric model response :Article:
+* Nikiforos econometric model response :@Article:
+:PROPERTIES:
+:agenda-group: Nikiforos response
+:END:
 
 
 *Objetivo:* Como discutir ciclo a luz do supermultiplicador?
@@ -172,78 +179,55 @@ After Nikiforos' response
 *** TODO Ciclos dos gastos autônomos e do supermultiplicador
 
 *** TODO Decompor componentes do investimento
-* Orientações [0%] :Orientations:
-** Dourado (2021)
-*** Defesa
-**** Comentários Nathalie
+* Orientações [0%] :@Orientations:
+** TODO Corrigir versão final da monografia
 
-- Inclusão de literatura atual sobre os teoremas de paridade
-- Teoremas da paridade não é tão dicotômica
-  - Para mainstram e pós-Keynesiana tem interpretações distintas
-  - Sugestão: apresentar de forma mais abrangente. Isso permite discutir mais os determinantes de risco
-    - A principal diferença diz respeito ao fechamento
-- Nota de rodapé 12 para o texto
-- Falar primeiro do SMI, depois da hierarquia e, por fim, taxa de juros própria
-- Financeirização utilizada como integração financeira
-  - Não há tanto uma mudança entre banco comercial e financeiro (como colocado em Gutmann)
-  - Ver parte dos resultados da tese da Raquel Ramos
-- Período analisado pode ser mais problematizado dadas as particularidades das respostas à Covid
-  - Resposta contracíclica e mais rápida
-  - Texto BIS: Monetary policy response why it is different
-- Variáveis deveriam ser mais contextualizadas e deixar mais evidente qual seria a direção esperada
-- Aumento de pessoas físicas na bolsa brasileira poderia ser mais explorada
-- Poderia ter selecionado a entrada de não-residentes invés de fluxos de capitais para emergentes
-- Foco em variávies que explicam fluxos de capitais e mercados de derivativo
-- Diferencial de juros é uma combinação de interno e externo e não somente um desses elementos
-- Correlação poderia ser feita em variação dado o título da monografia
-
-
-*** TODO Homologação e inserção no sistema
-** Barros (2021)
-*** TODO Homologação e inserção no sistema
-*** Defesa
-
-**** Comentários André
-
-- Financeirização não está necessariamente associado a queda do investimento
-  - Citar mais Braga
-  - Literatura Pós-Keynesiana toma financeirização como idêntica ao share-holder value
-- Shareholder value poderia ter mais sobre Lazonick e O'Sulivan (mais peso aos clássicos)
-- Mencionar mais o aspecto da gerência e os eventuais conflitos
-- Discutir mais shareholder value no Brasil
-  - E o porquê tem mais isso no Brasil no período recente
-  - Um salto das economias centrais para o Brasil
-  - O porquê do Shareholder value no Brasil se a literatura aponta para outras formas de financeirização no Brasil
-- Por que o setor elétrico? Justificar o porquê
-
-**** Comentários Mariano
-
-- Como se definir financeirização ainda é uma questão em aberto
-- Justificar o porquê do setor e apontar algumas características desse setor
-  - Estruturação das redes de distribuição
-  - Perfil dos investimentos possíveis nesse período
-  - Isso explicaria o porquê do shareholder value nesse setor
-
-
-
-* CE472 2021 :Teaching:
+* CE472 2021 :@PED:
 
 ** TODO Fechar média e notas
 
 * IEE859 - Teoria do valor e da distribuição :@Lectures:
+:PROPERTIES:
+:agenda-group: Teoria do valor
+:END:
 
 ** TODO [#C] Ler Garegnani 1990
 
 * Dissertation group discussion :@Group:
 
 * SFC [0%] :Article:@Master:
+:PROPERTIES:
+:agenda-group: SFC residential investment
+:END:
 ** WAIT Create github repository (git submodule)
 
 * WAIT VECM [0%] :Article:@Master:
+:PROPERTIES:
+:agenda-group: VECM own rate
+:END:
 
-* Ratchet effect SSM paper :Article:@PhD:
+* Ratchet effect SSM paper [0/4]:@Article:@PhD:
+:PROPERTIES:
+:agenda-group: RatchetEffect
+:END:
+
+** TODO Implement analytical solution
+
+*** TODO Save objects using pickle package
+
+*** TODO Export common functions
+
+*** TODO Fix commutative assumption
+
+** TODO Generalize Daniel's script
+
+** TODO Meeting about first trials :@Meeting:
+SCHEDULED: <2021-12-16 qui 11:00>
 
 * WAIT ABM Spatial Housing [0%] :Dissertation:@PhD:
+:PROPERTIES:
+:agenda-group: Spatial housing ABM
+:END:
 
 ** TODO [#A] Difusion model
 ** TODO [#A] Modelar versão mais simples
@@ -259,6 +243,9 @@ After Nikiforos' response
 ** TODO Modelo com preço das casas pró-cíclico
 
 * WAIT MKKS model [0/3] :Article:
+:PROPERTIES:
+:agenda-group: MKKS model
+:END:
 
 ** TODO Endogeneizar rho_u
 
@@ -290,6 +277,7 @@ After Nikiforos' response
 
 ** TODO Implement citeproc-el to export to docx
 
+** TODO Fix =#+Results:= wrap to export latex properly
 
 * Configuração desktop :@free:
 
@@ -302,6 +290,9 @@ After Nikiforos' response
 
 
 
+** TODO git submodules
+
+** TODO Merge duplicate zotero entries
 
 * Bibliographical shinny app [0/0] :@free:
 
@@ -313,9 +304,18 @@ After Nikiforos' response
 ** TODO Document examples
 
 * Braindump
+:PROPERTIES:
+:agenda-group: Hugo blog
+:END:
 ** TODO Update ABOUT
 ** TODO Create Knowldge base
 ** TODO Update housekeeping
 ** TODO Create publications entry
 ** TODO Create teaching section
 ** TODO Create factobook for stylized facts
+
+** TODO Corrigir tema escuro
+
+** TODO Update FISH template (table -> heading)
+
+** TODO Add bibliography in placeholder entry

@@ -2,25 +2,19 @@
 :ID: 20211027T143328
 :CAPTURED: [2021-10-27 14:33:28]
 :ROAM_REFS: cite:russo_2021_Harrodian
-:mtime:    20211202152739 20211027155159
-:ctime:    20211027155159
 :END:
 #+TITLE: russo_2021_Harrodian: Harrodian instability in decentralized economies: an agent-based approach - (2021, Economia Politica)
-Time-stamp: 2021-10-27
-#+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
-#+OPTIONS: num:nil ^:{} toc:nil
-#+INCLUDE: ../header.org
 * Backlinks
 
 [[id:d2d3c0db-3b93-41eb-a572-fce40270c485][Harrodian instability]]
 
 [[id:9789613e-f409-4593-b958-a2c9c8283bb6][Agent Based Models]]
 
-[[id:b8256b68-7058-498e-928f-9e913f5db263][Expectations]]
+[[id:9326692f-7fa9-439b-8f3c-a7fa2d18aef8][Expectations]]
 
 [[id:0fb81bfc-4e95-4099-8568-c55b704d6165][Externalities]]
 
-[[id:e20ae018-ac3b-4b4e-8108-29f84b898745][Innovation bubble ABM]]
+[[id:95265264-f61f-4cf5-8cdc-e590b2a47cb9][Innovation bubble ABM]]
 
 [[id:cdc7d683-cbb8-4611-805c-0e058411c9e2][Learning and Heuristics]]
 
@@ -37,7 +31,7 @@ Time-stamp: 2021-10-27
 | *Simplifying hypothesis*                      | There is no technological progress. Since firm distribution is constant (as well as market-share), the author tests some distributional scenarios                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | *Purpose*                                     | Investigate the consequences for model properties when including expectational heterogeneity.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | *Originality/value (Contribution)*            | Harrodiaian instability is tamed by heterogeneous expectations, not using a different aggregate investment function. Additionally, this learning procedure may be more consistent with ABM approach.                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| *Relevance*                                   | This model provide an alternative to specify heterogeneity in ABM. For my dissertation, this could be a simple way to generate innovative bubbles. Since there is no technological progress in this model, [[id:e20ae018-ac3b-4b4e-8108-29f84b898745][Innovation bubble ABM]] could extend this contribution.                                                                                                                                                                                                                                                                                                                                                                                    |
+| *Relevance*                                   | This model provide an alternative to specify heterogeneity in ABM. For my dissertation, this could be a simple way to generate innovative bubbles. Since there is no technological progress in this model, [[id:95265264-f61f-4cf5-8cdc-e590b2a47cb9][Innovation bubble ABM]] could extend this contribution.                                                                                                                                                                                                                                                                                                                                                                               |
 | *Design/methodology/approach*                 | Agent based modeling with different expectational scenarios. Heterogeinity is introduced using idiosyncratic shocks. As a consequence of the modeling strategy, there is a *negative* feedback in the system that reduce the original positive feedback effect in Harrod model.                                                                                                                                                                                                                                                                                                                                                                       |
 | *Results*                                     | All scenarios are tested assuming a permanent wage increase departing from steady-state (effective capacity utilization equals to the desired one). (I) In the case with *homogeneous expectations*, Harrodian instability emerges and capacity utilization increases permanently. (II) After include *heterogeneous expectations*, endogeneity of capacity utilization is preserved while there is no instability. Agents do not achieve desired capacity utilization neither on average. (III) The author evaluate the presence of macroeconomic paradox by means of *between-simulations* comparisons. He reports both paradox of trifth and of costs. |
 | *(Interesting) Findings*                      | The mechanism for taming the instability is that optimistic ($g_{K} > g$) firms coexist with pessimist one ($g_{K} < g$). The author perform some econometric estimations in order to evaluate if there is a trend in capacity utilization rate and what are the instability ratio (number of periods that capacity utilization remained outside an specified corridor). He concludes that there is no trend and instability ratio is zero on average. Depending on expectational parameters, the model converges to the scenario with no hererogeinity.                                                                                            |

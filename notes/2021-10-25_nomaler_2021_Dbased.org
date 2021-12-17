@@ -2,15 +2,15 @@
 :ID: 20211025T181908
 :CAPTURED: [2021-10-25 18:19:08]
 :ROAM_REFS: cite:nomaler_2021_Dbased
-:mtime:    20211202152738 20211028144442
-:ctime:    20211028144442
 :END:
-#+TITLE: nomaler_2021_Dbased: R\&D-based economic growth in a supermultiplier model - (2021, Structural Change and Economic Dynamics)
-Time-stamp: 2021-10-25
-#+SETUPFILE: ../themes/comfy_inline/comfy_inline.theme
-#+OPTIONS: num:nil ^:{} toc:nil
-#+INCLUDE: ../header.org
-#+BIBLIOGRAPHY: ../zotero_refs.bib
+#+TITLE: nomaler_2021_Dbased: R&D-based economic growth in a supermultiplier model - (2021, Structural Change and Economic Dynamics)
+#+hugo_base_dir: ~/BrainDump/
+#+hugo_section: notes
+#+HUGO_CATEGORIES: "Structural Change and Economic Dynamics"
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+
+
 
 * Backlinks
 
