@@ -1,11 +1,10 @@
 :PROPERTIES:
-:ID:       66c2405e-46a7-48c3-b7e5-ecadb2466377
-:ROAM_ALIASES: "Schumpeterian model"
+:ID:       79290780-e39b-4457-a4a6-dfa869f508be
 :END:
-#+title: Schumpeterian growth models
-
+#+title: Keynes meets Schumpeter family
 #+HUGO_AUTO_SET_LASTMOD: t
 #+hugo_base_dir: ~/BrainDump/
 #+hugo_section: notes
 #+HUGO_TAGS: placeholder
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
 #+OPTIONS: num:nil ^:{} toc:nil

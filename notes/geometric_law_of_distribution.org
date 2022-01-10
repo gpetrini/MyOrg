@@ -1,11 +1,10 @@
 :PROPERTIES:
-:ID:       66c2405e-46a7-48c3-b7e5-ecadb2466377
-:ROAM_ALIASES: "Schumpeterian model"
+:ID:       8cdf72ff-1db7-49f8-8d7e-d0d903ff6865
 :END:
-#+title: Schumpeterian growth models
-
+#+title: Geometric Law of Distribution
 #+HUGO_AUTO_SET_LASTMOD: t
 #+hugo_base_dir: ~/BrainDump/
 #+hugo_section: notes
 #+HUGO_TAGS: placeholder
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
 #+OPTIONS: num:nil ^:{} toc:nil

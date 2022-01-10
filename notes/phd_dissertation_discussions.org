@@ -1,0 +1,93 @@
+:PROPERTIES:
+:ID:       a757b53b-d6e4-4e3f-9ddb-3d139686d392
+:END:
+#+title: PhD Dissertation Discussions
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+#+hugo_section: notes
+#+HUGO_TAGS: placeholder
+#+BIBLIOGRAPHY: /HDD/Org/zotero_refs.bib
+# #+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil
+
+* Introduction
+
+This node is an archive for discussed topics regarding my PhD Dissertation.
+Most of them are meeting notes.
+
+* General topics
+
+** Hypothesis
+
+- How to model workers productivity?
+  - Is it reasonable to suppose that we are modeling households and not workers?
+  - Populational growth make simulations dificult
+
+* [[id:95265264-f61f-4cf5-8cdc-e590b2a47cb9][Innovation bubble ABM]]
+
+
+** Possible topics
+
+- Decide whether to focus on innovation of process (easier) or in products (most promissory)
+  - Indicate future research agenda in the conclusion
+- Firm entry and exit could generate flexible investment share
+- Structural break as a source of composition fallacy
+  - Firm only knows its mean productivity, not for the whole economy
+- Include market-share expectation
+  - Firms do not know others' market-sahre, but may have an expectation about its own share
+  - Check [cite/t:@caiani_2016_Agent]
+- Dialogue with [cite/t:@nomaler_2021_Dbased]
+- Check which stylized facts do the KS model do not replicate
+- The dot-com crisis is an evidence that autonomous investment could not lead the business cycle harmless
+- Read more about Carlota Perez (innovation)
+- Check usefull bubbles [cite:@eatwell_2004_Usefull]
+- Present the limitation about asset bubbles
+
+
+** Model design
+
+
+** Hypothesis
+
+
+- The most important aspect of the model design regards the expectational mechanism
+  - Present a modeling strategy in which agents persists investing more even though its market-share shrinks
+    - Possibly imposing a larger investment plan horizon
+  - Firms merge expectations regarding the whole economy with its own sector
+  - The sum of market-share could not bt greater than one
+
+* Housing AB model
+
+** General topics
+
+- Check whether a finite housing demand is not incompatible with a infinite labour supply
+- Explicitly present how house prices affects the whole economy
+
+** Model design
+
+
+- Construction sector aggregate
+- Finite demand for housing is not compatible with infinity households
+- Try different interest rates
+
+** Hypothesis
+
+- How do households choose among houses and financial assets?
+- How do households decide where and when to move out?
+  - Rent above some threshould?
+- Do rich households buy houses with High Powered Cash?
+- Does the houses own rate of interest is a macro or microeconomic result?
+
+** Possible Topics
+
+
+- Allow govern expenditure grow at a different rate and induce financial instability endogenously
+  - Allow more scenarios (not only related to households)
+- Credit cycle is not endogenous if asset bubbles are exogenous
+- Discuss residential investment inclusion in other ABM
+
+* Spatial housing AB model
+
+** Model design
+
+- Is a fixed grid size incompatible with speculation as a results of speculation with land?

@@ -2,15 +2,28 @@
 :ID:       9789613e-f409-4593-b958-a2c9c8283bb6
 :END:
 #+title: Agent Based Models
-
+#+SUBTITLE: Overview
 #+HUGO_AUTO_SET_LASTMOD: t
 #+hugo_base_dir: ~/BrainDump/
+#+HUGO_CATEGORIES: "Literature Balance" "Dissertation writings"
 #+hugo_section: notes
-#+HUGO_TAGS: placeholder
+#+FILETAGS: placeholder ABM "Review of Literature"
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
 #+OPTIONS: num:nil ^:{} toc:nil
 
+* Introduction
 
- Usefull links
+
+This note is an overview of the main Macroeconomic Agent Based Models.
+Each of them will be indicated as:
+- KS :: Keynes meets Schumpeter [cite:@dosi_2010_Schumpeter]
+- CATS ::
+- EURACE ::
+- MMM ::
+
+
+*** Usefull links
+
 - [[http://jasss.soc.surrey.ac.uk/8/1/5.html][JASS - Journal of Artificial Societies and Social Simulation]]
 - [[http://www2.econ.iastate.edu/classes/econ308/tesfatsion/sylVIITrento.LT.htm][VII Trento Summer School ]]
 - [[http://www.brettparris.com/abm/][Brettparis]]
@@ -20,3 +33,55 @@
 - [[https://www.complexityexplorer.org/courses/101-introduction-to-agent-based-modeling-spring-2020/segments/9191?summary][Intro to ABM Course]]
 - [[http://www2.econ.iastate.edu/tesfatsi/publish.htm][Journals]]
 - [[http://www2.econ.iastate.edu/classes/econ308/tesfatsion/syl308.htm][Syllabus for Economics 308]]
+
+
+** Motivation
+
+The purpose of this note is to point the main feature of each model family out, such as:
+- What are the drivers of economic growth?
+- How non-residential investment is specified?
+- Is there any room for [[id:27df9b84-b199-482f-8197-bed51d7f1311][Autonomous Expenditures]]?
+- Is the model compatible with [[id:17febd95-234e-48c1-9063-5532f82f6020][Effective Demand]]?
+- Is it possible to include [[id:628bc545-800c-4f2b-beb6-6933d381a2ad][Asset bubble]]s?
+- What are the consequences of technological [[id:5901b2ed-90d0-4b76-bafd-2e82d26e0388][Overinvestment]]?
+
+
+Considering the objectives of [[id:95265264-f61f-4cf5-8cdc-e590b2a47cb9][Innovation bubble ABM]] chapter, this note present a [[id:05b1426c-b748-4858-b937-adb441f10340][Review of Literature]] and check what are the possible improvements to add the [[id:ed384551-c7ba-492f-be69-15906157ef9d][Sraffian suppermultiplier growth model]].
+Are there any [[id:8e9dd4a4-0f29-46d1-b8e4-5befe4df94cb][Stylized Facts]] that this closure replicates?
+Is this a more reasonable assumption?
+Considering the [[id:8d3c092d-8546-4dc0-8a04-55d3d8a09191][Dot-Com crisis]] episode, how this alternative closure deals with [[id:0c6c78fd-8d22-4002-9c82-7ccd82af43f5][Process Innovation]] and [[id:4db8e3cd-585a-435b-ae6a-df903e5bf7af][Product Innovation]]?
+
+Considering the [[id:5836de2d-5b59-42a5-ac90-c28bb5c4706b][Housing Agent Based Model]] chapter, this note also examine the possibilities to include the housing sector in those models.
+
+** Log
+
+- Note entry (<2022-01-05 qua>)
+- Adding KS information
+
+
+* Theoretical findings
+
+** Closure
+** Economic growth determinants
+
+** Non-residential investment specification
+
+** Compatibility with [[id:17febd95-234e-48c1-9063-5532f82f6020][Effective Demand]]
+
+** Household heterogeneity
+
+** [[id:628bc545-800c-4f2b-beb6-6933d381a2ad][Asset bubble]] possibility
+
+* Empirical findings
+** Macroeconomic evidence
+*** [[id:380b31ad-cdd5-4367-af2c-9ee199a085e7][Business Cycles]]
+
+** Microeconomic evidence
+** Evidence from the lab
+* Modeling approaches
+* Balance
+* Future work
+
+* References
+
+#+print_bibliography:

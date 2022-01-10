@@ -17,20 +17,6 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 ** TODO Ver possibilidade do proficiência com diploma do VM
 
-** TODO Enhance LSD documentation snippet
-
-** Discussed topics and ideas
-
-*** General topics
-- Construction sector aggregate
-- Finite demand for housing is not compatible with infinity households
-
-*** Innovation bubble model
-
-- Decide whether to focus on innovation of process (easier) or in products (most promissory)
-- Firm entry and exit could generate flexible investment share
-- Structural break as a source of composition fallacy
-  - Firm only knows its mean productivity, not for the whole economy
 
 * ABM dot-com SSM model :@Article:@PhD:Chapter:
 :PROPERTIES:
@@ -132,6 +118,8 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 *** WAIT Expectational heterogeinity
 
 *** WAIT Government
+*** TODO Review TODOs in code
+SCHEDULED: <2022-01-12 qua>
 
 * Nikiforos econometric model response :@Article:
 :PROPERTIES:
@@ -182,10 +170,6 @@ After Nikiforos' response
 * Orientações [0%] :@Orientations:
 ** TODO Corrigir versão final da monografia
 
-* CE472 2021 :@PED:
-
-** TODO Fechar média e notas
-
 * IEE859 - Teoria do valor e da distribuição :@Lectures:
 :PROPERTIES:
 :agenda-group: Teoria do valor
@@ -221,9 +205,6 @@ After Nikiforos' response
 
 ** TODO Generalize Daniel's script
 
-** TODO Meeting about first trials :@Meeting:
-SCHEDULED: <2021-12-16 qui 11:00>
-
 * WAIT ABM Spatial Housing [0%] :Dissertation:@PhD:
 :PROPERTIES:
 :agenda-group: Spatial housing ABM
@@ -242,7 +223,7 @@ SCHEDULED: <2021-12-16 qui 11:00>
 
 ** TODO Modelo com preço das casas pró-cíclico
 
-* WAIT MKKS model [0/3] :Article:
+* WAIT MKKS model [0/3] :@Article:
 :PROPERTIES:
 :agenda-group: MKKS model
 :END:
@@ -261,6 +242,10 @@ SCHEDULED: <2021-12-16 qui 11:00>
   + [ ] Sem heterogeneidade dos bancos
 - [ ] Sem new firms
 - [ ] Banco central implícito (manter)
+
+* WAIT QCA rating paper :@Article:@PhD:
+
+** Skim for results and related bibliography
 
 * Emacs :@free:
 
@@ -316,6 +301,5 @@ SCHEDULED: <2021-12-16 qui 11:00>
 
 ** TODO Corrigir tema escuro
 
-** TODO Update FISH template (table -> heading)
 
 ** TODO Add bibliography in placeholder entry

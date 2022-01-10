@@ -1,11 +1,10 @@
 :PROPERTIES:
-:ID:       66c2405e-46a7-48c3-b7e5-ecadb2466377
-:ROAM_ALIASES: "Schumpeterian model"
+:ID:       331ac477-5b3f-485e-b47e-be962ff9b5aa
 :END:
-#+title: Schumpeterian growth models
-
+#+title: Big Market Delusion
 #+HUGO_AUTO_SET_LASTMOD: t
 #+hugo_base_dir: ~/BrainDump/
 #+hugo_section: notes
 #+HUGO_TAGS: placeholder
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
 #+OPTIONS: num:nil ^:{} toc:nil

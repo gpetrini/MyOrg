@@ -1,0 +1,290 @@
+:PROPERTIES:
+:ID:       4cce24e4-fc3d-46fb-b250-f174d11ba688
+:END:
+#+title: Introduction to cpp
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+#+hugo_section: notes
+#+FILETAGS: cpp
+#+HUGO_CATEGORIES: KnowledgeBase Coding
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil
+
+
+* Sources
+
+- [[https://www.youtube.com/watch?v=OTroAxvRNbw&list=PL_c9BZzLwBRJVJsIfe97ey45V4LP_HXiG&index=3][Lean c++ playlist]]
+
+* Basic concepts
+
+** Namespaces
+
+Similar to R, cpp can have functions with the same name.
+In order to avoid conflits, the user must use a prefix to indicate where the function come from.
+
+#+begin_src cpp :eval no
+#include <iostream>
+
+
+init main(){
+    std::cout << "Hello world!";
+    return 0; /* Means that there is no errors */
+}
+#+end_src
+
+Similar to python, the user can import all code from a library.
+#+begin_src cpp :eval no
+using namespace std; // Using directive
+init main(){
+    cout << "Hello world!";
+    return 0;
+}
+#+end_src
+
+Alternatively, the user can specify a declaration which explicitly indicates which object to use:
+#+begin_src cpp :eval no
+using std::cout;
+init main(){
+    cout << "Hello world!";
+    return 0;
+}
+#+end_src
+
+** Console related
+
+*** cout
+
+=cout= is an object from =ostream= class that prints the result out in the console.
+
+*** cin
+
+This function receives the input from user.
+It can be an external file as well.
+
+#+begin_src cpp :eval no
+#include <iostream>
+
+
+init main(){
+    int x; // Just initializing the varaible
+    std::cout << "Insert a value for x";
+    std::cin >> x;
+    // Concatenating the string
+    std::cout << "x = " << x << std:endl;
+}
+
+#+end_src
+
+*** String concatenation
+
+
+#+begin_src cpp :eval no
+#include <iostream>
+
+
+init main(){
+    int x = 5;
+    std::cout << x;
+    // Concatenating the string
+    std::cout << "x = " << x << std:endl;
+    // Alternativelly
+    printf("x = %i\n", x); // "%i" indicates that this is an intiger
+}
+
+#+end_src
+** Operators
+
+*** Assign
+
+To assign a variable, the user must specify its type.
+
+#+begin_src cpp :eval no
+#include <iostream>
+
+
+init main(){
+    int x = 5;
+    std::cout << x;
+}
+
+#+end_src
+
+*** math operators
+
+Those operators are loaded using the cmath library
+
+#+begin_src cpp :eval no
+#include <cmath>
+
+int main (){
+    int x = 10 % 3; // remainder
+    int y = ceil(3.6); // Higher int value -> 4
+    int z = floor(3.5); // Lower int value -> 3
+    int w = trunc(3.5); // Drops the decimal point -> 3
+
+}
+#+end_src
+
+** Functions
+
+- The =main= function is started automatically
+  - It is called when the program is executed
+- =void= functions do not return values
+  - So, the user do not need to assign a variable
+
+*** Custom function
+
+When creating a custom function, the user must specify the data type in the input:
+
+#+begin_src cpp :eval no
+
+int multiply(int x, int y){
+    return x * y;
+}
+multiply(2,5);
+
+#+end_src
+
+** Data types
+*** "Integral"
+
+- =int= works in most case scenarios (at least 16 bits, but usually 32)
+  - =short= is limited to 16 bits
+  - =long= is at least 32 bits
+  - =long long= is at least 64 bits
+  - =sizeof()= prints the amount of bits that it is used
+- If using only positive number, use unsign variables (do not have the sign bit)
+*** "char"
+
+- =char= can store 8 bits
+*** Bool
+
+- =true= of =false= in lower case
+- =0= is false and all other variables are =true=
+- In order to print the bool use =std::boolaplha=
+
+#+begin_src cpp :eval no
+#include <iostream>
+
+int main(){
+    std::cout << std::bollalpha << false << std::endl;
+}
+#+end_src
+*** Float
+
+- float :: This is the least trustfull. It allows for 6 siginative digits
+  - Use only if have memory restrictions
+- double :: Allows scientific notation and uses 15 siginative digits
+- long double :: Uses 18 siginative digits
+- To print without scientific notation, use =cout << std::fixed=
+*** Constants
+
+- Symbolic constants are coded as =const int x = 5;=
+  - This is a read-only variable
+  - The convention is to use capital letter or prefix with k
+  - If not assign a value after declaration, it is not possible to change it after
+- Alternativelly, can define as =#define X 5=
+- =enum= constants work similarly but with a different syntax =enum {x = 10}=
+*** String
+
+Strings are from =#include <string>= class which have bult-in methods.
+However, =string= object is from =std::= namespace.
+The user can subset a string using =[index]= (0-indexed).
+String concatenation is done using =+= sign.
+
+When a string is assign using =cin=, just the first word is captured.
+In order to access user input strings use =getline(std::cin, var)=.
+TO get number, use =std::cin.getline(var)= instead.
+
+* Control flow
+
+** Branching
+
+*** If
+
+#+begin_src cpp :eval no
+if (expression) {
+    // code
+} else if (expression) {
+    // code
+} else {
+    // code
+}
+#+end_src
+
+*** Switch
+
+#+begin_src cpp :eval no
+switch (variable){ // variable must be integral type
+    case condition: // Cannot be an logical operator. Must be an specific value
+        // code
+        break;
+    case condition_2:
+        // code
+        break;
+    default: // Similar to else
+        // code
+        break;
+}
+#+end_src
+
+** Looping
+
+*** For loops
+
+#+begin_src cpp :eval no
+
+if (int i = 0; i < 10; i++){
+    // code
+}
+
+#+end_src
+
+*** While loops
+
+
+#+begin_src cpp :eval no
+
+int i = 0;
+while (i < 10){
+    // code
+    i++; //increases 1
+}
+
+#+end_src
+
+*** Do-while loops
+
+Do-while loops ensure that the code is evaluated at least once.
+
+#+begin_src cpp :eval no
+
+do{
+} while();
+
+#+end_src
+
+* Arrays and vectors
+
+- Arrays are static sized
+  - Size is defined at compilation time
+  - Arrays size is calculated with =sizeof(array)= which return the total size in bites
+    - To get the number of elements of an array, =sizeof(array)/sizeof(array[0])=
+  - When an array is passed into a function, it loses the propriety to know its size
+- Vectors, on the other side, can have a flexible size (dynamically sized)
+  - Differently from arrays, vectors know their size (=my_vector.size()=)
+- Templetized arrays are objects with arrays inside
+
+#+begin_src cpp :eval no
+int size = 10;
+int recorrds[size]; // plural name by convention
+int indexes[] = {10, 3, 5}; // If know the data already
+
+
+// When referencing the array, do not use []
+indexes[0]; // -> int 10
+indexes[0] = 10; // Can be updated
+
+std::vector<int> my_vector;
+
+#+end_src

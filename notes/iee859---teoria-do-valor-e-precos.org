@@ -1385,11 +1385,153 @@ A única forma desse equilíbrio existir é que preços relativos e distribuiç�
 Portanto, é discutível dizer que essas versões mais modernas superaram as críticas do Sraffa.
 
 * A explicação monetária da distribuição
-:PROPERTIES:
-:ID:       9b80fea3-18f7-4b5f-88b9-7905f61cbff3
-:mtime:    20211202152742 20211125172049 20211118180713
-:ctime:    20211202152742
-:END:
+
+** Introdução
+
+
+- No longo prazo, taxa de lucro esperada e efetiva são coerentes
+
+
+
+** Relação entre taxa de lucro e taxa de juros
+
+*** Abordagem neoclássica
+
+
+- Taxa de juros e taxa de lucro movem juntas no longo prazo
+  - Vale pontuar que a igualdade entre essas taxas deve ser considerada livre de risco
+    - Equivale a remuneração pura do capital
+- Taxa de lucro determina a taxa natural de juros (pleno emprego)
+  - Lado real da economia determina os aspectos monetários da economia
+  - Caso a taxa de juros seja distinta da taxa natural de juros, haverá inflação
+- Relação inversa de longo prazo entre taxa de juros e investimento (aprofundamento do capital)
+  - Associado ao [[id:f586e1da-8626-42d0-90ae-c6e37cfcf775][Princípio da Substituição de Fatores]]
+
+*** Abordagem clássica
+
+**** Smith e Ricardo
+
+- Diferença entre taxa de juros real e nominal associado ao "/risk and trouble/" do capital
+- Logo, taxa de juros é igual à taxa de lucro menos /risk and trouble/
+- Taxa de lucro e taxa de juros movem juntas no longo prazo
+  - Taxa de lucro determina taxa de juros
+  - Salário e tecnologia determinam a taxa lucro
+    - Na teoria neoclássica essa se determinação se dá pela oferta e demanda de fatores
+  - Não há relação causal entre juros e investimento
+  - Correlação positiva entre investimento e taxa de juros por meio da Lei de Say em que o investimento é determinado pela poupança de plena capacidade
+
+*** Taxa de juros como um fenômeno estritamente monetário
+
+**** Marx
+
+
+Para Marx, e outros autores, a taxa de juros é um fenômeno monetário e institucional.
+Portanto, não existe uma taxa natural de juros.
+Para ele, a taxa de lucro acrescida do lucro líquido do empreendimento é igual à mais-valia.
+Assim, o empresário trata parte do seu lucro como juros pago ao seu próprio capital.
+
+Para este autor,
+- Taxa geral de lucro determinaria um limite superior para a taxa de juros
+  - Em algumas passagens dá a entender que Marx considera que a taxa de lucro determina a taxa de juros tal como em Ricardo
+- Relação inversa entre taxa de lucro e taxa de juros, dado o salário real
+  - Mais-valia é determinada pelo salário real e pela tecnologia (produtividade)
+- Não há nenhuma relação causal com o investimento se a mais-valia for menor que a taxa de juros
+  - Isso não implica nenhum conflito entre juros e lucro
+
+***** Críticas
+
+Pivetti e Panico criticam a consistência entre mobilidade de capital e independência entre taxa de lucro e taxa de juros, diferença deveria refletir apenas o /risk and trouble/ de cada setor.
+
+- É razoável supor que a diferença entre juros e lucro é considerado como risco ou apenas uma fração do excedente?
+  - A literature seguiu chamar essa diferença de risco
+
+**** Keynes
+
+- Taxa de juros monetária determinada por oferta e demanda por moeda (incerteza, preferência pela liquidez)
+- Taxa de juros e de lucro se movem juntas no longo prazo
+  - Taxa de juros determina a taxa de lucro
+- Dada a relação inversa marginalista entre juros e investimento, altas taxas de juros causam desemprego a longo prazo
+  - Paradoxo da pobreza em meio a abundância: tendência a poupar muito a pleno-emprego e o retorno do investimento é muito baixo (dado o estoque de capital acumulado). Portanto, seria necessário ter uma taxa de juros baixa
+
+**** Parágrafo 44 de Sraffa (1960)
+
+***** Taxa de juros em Sraffa
+
+Duas determinações da taxa monetária de juros:
+- Keynes (Teoria Geral) com oferta exógena de moeda e demanda por moeda determinam a taxa de juros pelo mercado
+- Em Sraffa, a moeda é endógena
+  - Taxa de juros de curto prazo fixada pela autoridade monetária
+  - Taxa de juros de longo prazo depende basicamente do "sentimento do mercado" sobre a evolução futura da taxa fixada pelo Banco Central
+
+Diferença entre as duas abordagens: Incerteza e especulação importam, mas são distintas a respeito do comportamento do Banco Central em Sraffa.
+Em resumo, Sraffa discordava da teoria da preferência pela liquidez (que chamava de teoria da utilidade da moeda).
+Demais autores em Cambridge seguiram uma interpretação distinta da de Keynes.
+
+***** Sraffa e a relação entre salário real, taxa de lucro e taxa de juros
+
+- Taxa de lucro e taxa de juros se movem juntas
+- Não há nenhuma relação causal entre taxa de juros e investimento
+- Salário real tem dois limites: piso associado à subsistência e barganha por fração do excedente
+  - Quando o salário real é igual ao piso, salário determinaria a taxa de lucro e juros
+  - Quando o salário real é maior que o piso, taxa de lucro *pode* ser determinada pela taxa de juros (ou por outros fatores)
+    - Parte da literatura seguiu pela equação de Cambridge
+    - Também é possível que a barganha sobre dos trabalhadores seja relevante
+
+
+**** Panico (1988)
+
+Parte de uma síntese do capítulo 17 da Teoria Geral para a determinação da taxa de juros em Sraffa.
+Em seu modelo, grau de endividamento afeta as equações de preços relativos.
+O modelo de Panico expressa uma produção conjunta em que há receitas financeiras junto da produção líquida.
+No entanto, não são todos os tipos de custos que determinam os preços.
+Por exemplo, algumas empresas são credoras financeiramente.
+Além disso, o endividamento de determinado agente varia muito mais que a técnica produtiva dominante.
+Há, portanto, uma distinção entre os determinantes contábeis dos custos e os determinantes econômicos.
+Dessa forma, não é claro como o componente financeiro deve afetar a determinação dos preços e sua associação com a técnica dominante.
+Apesar dessa discussão, a taxa de juros continua sendo um custo financeiro e um custo de oportunidade.
+
+
+**** Pivetti (1991)
+
+- Dado o salário nominal e a técnica produtiva dominante, a taxa de juros determina a taxa nominal de lucro
+- Nível de salário nominal não afeta permanentemente a taxa de lucro
+- Não há conflito de longo prazo entre juros e lucro e sim de ambos com salário real
+  - Isso independente da estrutura de capital das empresas por se o custo imposto pela concorrência
+  - Se conseguir captar empréstimo a uma taxa menor, auferiria uma taxa de lucro maior sem afetar os preços
+- Considera custo de oportunidade e custo financeiro da taxa de juros
+- Rendas financeiras
+
+A taxa de juros relevante para Pivetti é a taxa de captação de um competidor marginal que precisa se financiar via capital de terceiros para produzir (conferir).
+
+***** Crítica aos pós Keynesianos
+
+- Crítica ao grau de monopólio
+  - Argumenta que não é a concorrência que determina os preços dado um grau de monopólio
+    - Isso porque a concorrência é relativa e não absoluta
+      - Determina quão maior/menor será os lucros em relação aos concorrentes
+  - Não fica claro o que ocorreria na concorrência plena
+- Há lucro realmente zero em Steindl?
+  - Em Steindl, a taxa de lucro é zero e não zero no sentido convencional (sem lucro anormal)
+- Pivetti associa os custos de prodção Sfraffianos com o princípio do custo total
+  - Vale notar que não aceitam nem rejeitam nenhuma teoria específica da distribuição porque não especifica qual é a taxa de lucro que entra na determinação do preço
+
+***** Resenhas
+
+- Serrano (1993) discute a necessidade dos salários nominais estarem acima do nível de susbsistência para que a relação seja invertida (de lucro para juros, para juros determinando lucro)
+  - Precisa levar em conta o sistema monetário vigente
+    - Golden money economy :: salário conversível em ouro produzido dentro do sistema sempre é a variável independente
+      - A taxa de juros só pode ser variável independente no caso de uma economia com moeda de curso forçado (/fiat money/)
+  - Mathew Smith aponta padrão ouro libra em que a taxa de juros era exógena como crítica a Serrano (1993)
+    - Serrano argumenta que há uma confusão entre ouro-libra no mundo real com as hipóteses de Smith, Ricardo e Marx
+- Ciccone (1985) argumenta que  mesmo na economia de moerda de curso forçado o que teria uma relação inversa com o salário real seria a taxa de juros real de juros depende da inflaçao e, portanto, não do nível mas da taxa de variação dos salários nominais
+  - Portanto, a relação não é tão unilateral como Pivetti coloca ao se considerar a variação dos salários nominais
+    - Dessa forma, depende da força relativa de cada uma das classes
+  - Pivetti (2007) responde que concorda com Serrano (1993), mas aponta que  em termos técnicnos e atualmente é mais fácil o Banco Central fixar a taxa de juros *real*
+- Schefold (1993) argumenta que a teoria de Pivetti seria válida somente se a taxa de crescimento for suficientemente baixa
+  - A taxa de juros é o piso para a taxa de lucro. A taxa de lucro é determinada pela equação de Cambridge
+    - Assim, a diferença entre a taxa de lucros e a taxa de juros, em geral, determina o lucro líquido do empreendimento (npe) que Pivetti ignora (reduz /risk and trouble/ setoriais apenas, $r = g/s_{k} = npe + i$)
+
+*** Inflação de custos e conflito distributivo
 
 * Concorrência e gravitação
 

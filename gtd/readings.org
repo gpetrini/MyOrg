@@ -29,16 +29,24 @@ https://i.pinimg.com/originals/ea/c9/83/eac9832cf6b1ad75af8ccc3ad3db1728.gif
 | Jornal of Economics Surveys                 | joes         | [[https://onlinelibrary.wiley.com/journal/14676419][joes]] |
 | Journal of Economic Dynamics and Control    | jedc         | [[https://www.journals.elsevier.com/journal-of-economic-dynamics-and-control][jedc]] |
 | Journal of Economic Behavior & Organization | jebo         | [[https://www.journals.elsevier.com/journal-of-economic-behavior-and-organization][jebo]] |
+| American Economic Journal: Macroeconomics   | aer          | [[https://www.aeaweb.org/journals/mac][mac]]  |
+| Jornal of Asian Economics                   | joae         | [[https://www.sciencedirect.com/journal/journal-of-asian-economics][joae]] |
 
 
 
-** <2021-05-04 ter> [[https://academic.oup.com/cpe/advance-article-abstract/doi/10.1093/cpe/bzab002/6257799][Surplus Approach, Institutions, And Economic Formations]] :Sraffian:OffOffice:CPE:
+** [[https://academic.oup.com/cpe/advance-article-abstract/doi/10.1093/cpe/bzab002/6257799][Surplus Approach, Institutions, And Economic Formations]] :Sraffian:OffOffice:CPE:
 
 
-** <2021-05-07 sex> [[https://onlinelibrary.wiley.com/doi/abs/10.1111/meca.12335][Thirlwall’s law, uneven development, and income distribution - Sasaki]] :meca:
+** [[https://onlinelibrary.wiley.com/doi/abs/10.1111/meca.12335][Thirlwall’s law, uneven development, and income distribution - Sasaki]] :meca:
 
-** <2021-09-28 ter> [[https://onlinelibrary.wiley.com/doi/full/10.1111/meca.12355][A methodological problem in a supermultiplier model with too much acceleratio...]] :SraffianSupermultiplier:AutonomousExpenditures:Methodology:meca:
+** [[https://onlinelibrary.wiley.com/doi/full/10.1111/meca.12355][A methodological problem in a supermultiplier model with too much acceleratio...]] :SraffianSupermultiplier:AutonomousExpenditures:Methodology:meca:
 ** RESULTS [#A] [[https://onlinelibrary.wiley.com/doi/10.1111/meca.12354][Is autonomous demand really autonomous in the United States? An asymmetric fr...]] :SraffianSupermultiplier:Empirical:TimeSeriesEconometrics:meca:FrequencyDomainModel:Causalty:
+** RESULTS [#B] [[https://www.aeaweb.org/articles?id=10.1257/mac.20190223][Becard and Gauthier (2021): Collateral Shocks]] :HouseholdDebt:BusinessCycle:Collateral:HouseholdConsumption:aer_mac:
+** RESULTS [#A] [[https://www.aeaweb.org/articles?id=10.1257/mac.20190306][Jungherr and Schott (2021): Slow Debt, Deep Recessions]] :Debt:FinancialRisk:Leverage:BusinessCycle:InvestmentPlan:MKKS:aer_mac:
+** PARTIAL [#A] [[https://onlinelibrary.wiley.com/doi/abs/10.1111/meca.12366][Hartley (2021): Episodic incidence of Harrodian instability and the Kaleckian growth model: A Markov-switching approach]] :meca:BayesianEstimation:Growth_Distribution:HarrodianInstability:SraffianSupermultiplier:KaleckianGrowthModel:
+** PARTIAL [#C] [[https://www.sciencedirect.com/science/article/abs/pii/S016518892100227X][Ciola et al (2021): Search for profits and business fluctuations: How does banks’ behaviour explain cycles?]] :jedc:AgentBasedModels:BusinessCycle:Banking:
+** SKIM [#B] [[https://www.sciencedirect.com/science/article/abs/pii/S1049007821001615][Luangaram and Thepmongkol (2021): Loan-to-Value Policy in a Bubble-Creation Economy]] :joae:LTV:AssetBubble:HousePrices:MacroPrudentialPolicy:RationalBubble:FinancialFriction:
+
 * Working papers/Conference papers
 :PROPERTIES:
 :agenda-group: Working papers
@@ -475,6 +483,11 @@ CLOSED: [2021-11-08 seg 11:22]
 
 
 
+*** SKIM [#B] [[https://www.sciencedirect.com/science/article/abs/pii/S1094202598900114][Doms and Dunne (1998): Capital Adjustment Patterns in Manufacturing Plants]] :StylizedFacts:InvestmentPlan:Empirical:Lumpiness:
+
+
+*Reason:* To access how the maximum capital growth rate is determined by supply-side conditions and how this contrast with SSM
+
 *** SKIM [#B] [[https://onlinelibrary.wiley.com/doi/10.1111/j.1467-6419.2012.00724.x][A SURVEY OF THE INNOVATION SURVEYS]]
 
 *** SKIM [#D] [[https://www.aeaweb.org/articles?id=10.1257/aer.97.4.1131][Barlevy - On the Cyclicality of Research and Development]]
@@ -523,8 +536,6 @@ CLOSED: [2021-11-08 seg 11:22]
 *** MAYBE [#B] [[https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0198807][Dynamics of investor spanning trees around dot-com bubble]]
 
 *** STRT [#A] [[https://www.aeaweb.org/articles?id=10.1257/aer.99.4.1451][Technological Revolutions and Stock Prices]]
-
-*** STRT [#A] [[https://www.tandfonline.com/doi/full/10.1080/0015198X.2020.1730655][The Big Market Delusion: Valuation and Investment Implications]]
 
 *** STRT [#A] [[http://rkaniel.simon.rochester.edu/papers/bubbletechnology.pdf][Technological innovation and real investment booms and busts]]
 
@@ -579,6 +590,10 @@ CLOSED: [2021-11-24 qua 17:18]
 *** SKIM [#C] [[https://www.thecgo.org/research/a-primer-on-housing-finance-reform/][A Primer on Housing Finance Reform]] :PolicyOriented:PolicyDiscussion:GeographicDistribution:NewNarrative:
 
 * Papers
+
+** QCA rating agencies
+
+*** SKIM [#E] [[https://www.aeaweb.org/articles?id=10.1257/mac.20190332][Beaudry and Willems (2021) - On the Macroeconomic Consequences of Over-Optimism]] :Results:QCA:IMF:Causalty:OptimismWave:Rating:
 
 * Lectures
 

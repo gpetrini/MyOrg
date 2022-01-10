@@ -1,11 +1,10 @@
 :PROPERTIES:
-:ID:       66c2405e-46a7-48c3-b7e5-ecadb2466377
-:ROAM_ALIASES: "Schumpeterian model"
+:ID:       4a658725-67a6-4a44-b4e1-c74282b52a0e
 :END:
-#+title: Schumpeterian growth models
-
+#+title: Permanent Income Hypothesis
 #+HUGO_AUTO_SET_LASTMOD: t
 #+hugo_base_dir: ~/BrainDump/
 #+hugo_section: notes
 #+HUGO_TAGS: placeholder
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
 #+OPTIONS: num:nil ^:{} toc:nil

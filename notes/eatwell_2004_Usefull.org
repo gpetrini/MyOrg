@@ -1,0 +1,128 @@
+:PROPERTIES:
+:ID:       df9f07f9-be68-4713-843a-7f6977e3557d
+:ROAM_REFS: @eatwell_2004_Usefull
+:END:
+#+title:
+#+OPTIONS: num:nil ^:{} toc:nil
+#+TITLE: Eatwell: Usefull Bubbles - (2004, Contributions to Political Economy)
+#+hugo_base_dir: ~/BrainDump/
+#+hugo_section: notes
+#+hugo_categories: "Contributions to Political Economy"
+#+TAGS:
+#+HUGO_TAGS:
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+[cite/t:@eatwell_2004_Usefull] argue that [[id:628bc545-800c-4f2b-beb6-6933d381a2ad][Asset bubble]] may produce some positive outcomes that would not occur otherwise.
+In summary, [[id:1cac371a-5856-4193-82e5-e7b8e8249df4][Financial Innovation]] and [[id:8651d790-2079-4233-b8ba-a01e1ada53e8][Technological revolution]] feed [[id:628bc545-800c-4f2b-beb6-6933d381a2ad][Asset bubble]]s which produce outcomes that would be irrational at the individual level.
+The individual irrational behavior produces aggregate improvement.
+Besides the negative impacts, new technologies persist.
+
+** Background and motivation
+
+This paper connects some [[id:628bc545-800c-4f2b-beb6-6933d381a2ad][Asset bubble]]s episodes such as the [[id:6e780bd9-492d-4942-95ba-a74e6e5c3dde][Tulip Mania]] [[id:9b80c1b4-d367-4fd5-9169-477cf6074596][South Sea Bubble]], [[id:e6b389a5-9aef-4ea2-a053-bbf84a4cb36c][Railroad Mania]], [[id:a2aba829-5803-4208-aacb-2b7119462213][Japanese Real Estate Boom]] and [[id:8d3c092d-8546-4dc0-8a04-55d3d8a09191][Dot-Com crisis]].
+
+** Supporting Ideas and hypothesis
+
+- This paper implicitly assumes that bubbles can start only if finance is allocated to them (similar to [cite/t:@perez_2009_Double])
+- [[id:628bc545-800c-4f2b-beb6-6933d381a2ad][Asset bubble]] are result of financial [[id:11044897-734e-47b1-9abd-b5d2a10cbaf0][Speculation]]. The real aspects of those episodes are not so relevant
+- The author base his reasoning in [cite/t:@keynes_1936_General] in which the financial market can be described as a beauty contest
+- In order to an [[id:628bc545-800c-4f2b-beb6-6933d381a2ad][Asset bubble]] start, investors must have [[id:a3b9da87-5fcc-4e91-a3e7-65531ab57ad6][Heterogeneous expectations]]. Otherwise, no transaction would occur
+- [[id:a3b9da87-5fcc-4e91-a3e7-65531ab57ad6][Heterogeneous expectations]] are also important to provide liquiidty to the financial market
+- It is assumed that [[id:1cac371a-5856-4193-82e5-e7b8e8249df4][Financial Innovation]]s are motivated by overcome the financial liquidity, feeding the bubble
+  - The author consider that [[id:1cac371a-5856-4193-82e5-e7b8e8249df4][Financial Innovation]] also generates the bubble in the first place
+  - It is assumed that financial assets are relativelly fixed in supply
+- This paper seems to implicitly assume that [[id:628bc545-800c-4f2b-beb6-6933d381a2ad][Asset bubble]]s induce [[id:b44594c1-2c74-4ff4-b142-ed044b79ea5b][Coordination]] among investors towards decision in projects that would not be profitable in normal times but generates positive outcome
+
+** Purpose
+
+- Argue that [[id:628bc545-800c-4f2b-beb6-6933d381a2ad][Asset bubble]]s can have positive outcome besides the negative effects on economic performance
+
+** Contribution
+
+- Indicates that [[id:628bc545-800c-4f2b-beb6-6933d381a2ad][Asset bubble]]s may induce an irrational behavior (at the individual level) that would not occur otherwise
+- This paper indicates some key aspects of the emergence of [[id:628bc545-800c-4f2b-beb6-6933d381a2ad][Asset bubble]]
+
+** Relevance
+
+For [[id:95265264-f61f-4cf5-8cdc-e590b2a47cb9][Innovation bubble ABM]] chapter, this paper helps to gather some information regarding the [[id:8d3c092d-8546-4dc0-8a04-55d3d8a09191][Dot-Com crisis]].
+Additionally, relates [[id:628bc545-800c-4f2b-beb6-6933d381a2ad][Asset bubble]] with [[id:8651d790-2079-4233-b8ba-a01e1ada53e8][Technological revolution]].
+
+
+** Methodology
+
+Review of historical events and causal narratives.
+
+** Results
+
+*** How beliefs affects asset prices
+
+- The price of a financial asset depends onf its expected future price
+- Those financial assets have relativelly fixed supply
+  - After the supply accommodating the demand, the bubble may deflate
+- Investors consider that the bubble will go on forever or they will have the knowledge to get out in time
+
+*** How can financial markets be stable
+
+
+- There are mechanism that reinforce agents heterogeneity, providing liquidity
+- Policy-markers regulates financial markets at some point
+- Market may be stable by convention
+
+*** Incentive to financial innovation
+
+- Liquidity constraints induce financial innovation
+- Those innovations mobilise finance to new technologies and/or new investors
+- Financial innovation and asset bubble may have a two-directional feedback
+
+*** Individual irrationality and aggregate transforming technologies
+
+- After the bubble burst, the economy had suffured a technological transformations that would not occur otherwise. This transformation was possible due to finance availability.
+  - Canals
+  - Railways
+  - Automobiles roads
+  - Internet
+  - Thus, this can alleviate social inefficiencies
+
+Individual irrationalities:
+- Irrational scale :: The scale of investment required in the new technologies is way above rational individual investment level
+- Public goods problem :: New technologies require the creating of a system which is impossible to achieve individually expecting the exclusive use of them
+  - Thus, it is simular to a public good
+- Myopic return :: Asset bubble make investors invest in companies which profits are positive after a long period of time because it is expected to higher profits in the future. Additionally, asset bubble induce investors to invest in companies that would never be profitable (and some may not be) or survive
+
+
+To sum up, [cite/t:@eatwell_2004_Usefull p. 46]:
+#+begin_quote
+The mania suppresses the fear of the scale of change and of the uncertainty of the future, it overcomes the isolation of the individual investor, and provides funds on a scale necessary to transform the economic infrastructure of society.
+#+end_quote
+
+
+** Interesting findings and not categorized stuff
+
+- The author points out that some of the positive effects of an asset bubble may (and are) achieved bu the State
+
+** Critics
+
+- [[id:1cac371a-5856-4193-82e5-e7b8e8249df4][Financial Innovation]] seems to be a necessary condition in order to start an [[id:628bc545-800c-4f2b-beb6-6933d381a2ad][Asset bubble]]
+  - However, the author argue that [[id:1cac371a-5856-4193-82e5-e7b8e8249df4][Financial Innovation]] can be also a consequence of an [[id:628bc545-800c-4f2b-beb6-6933d381a2ad][Asset bubble]]
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+This paper reproduces a lecture given by Joan Robinson to the British Council at the end of the Second World War. This lecture has not previously been published. The introduction sets it in historical perspective and outlines its significance. This is an important document representing, as it does, the thoughts of a prominent member of Keynes's circle (in Cambridge) at the time.
+#+END_ABSTRACT
+
+
+
+
+
+* References
+
+#+print_bibliography:

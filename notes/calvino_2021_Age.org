@@ -1,0 +1,105 @@
+:PROPERTIES:
+:ID:       be649bad-26b9-4dd0-82fb-752045f172d2
+:ROAM_REFS: @calvino_2021_Age
+:END:
+#+title:
+#+OPTIONS: num:nil ^:{} toc:nil
+#+TITLE: Calvino: The Age Distribution of Business Firms - (2021, Journal of Evolutionary Economics)
+#+hugo_base_dir: ~/BrainDump/
+#+hugo_section: notes
+#+hugo_categories: "Journal of Evolutionary Economics"
+#+FILETAGS:
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+[cite/t:@calvino_2021_Age] analyze the age log-distribution of French firms.
+In summary, report that a [[id:8cdf72ff-1db7-49f8-8d7e-d0d903ff6865][Geometric Law of Distribution]] is a good first approximation for aggregate age distribution; declining [[id:eaa94f65-0764-47fd-b3b5-89741fa51dda][Firm entry rate]]s and a lower probability to survival of young firms.
+More specific results highlight the deviating from the benchmark geometric distribution related to sectoral heterogeneity and different stages of sectoral life-cycle
+
+
+** Background and motivation
+
+- Few attention is given for firms' age distribution
+- Young firms are one of the sources of [[id:8a78794f-08bc-4a01-a176-599aeea1a679][Creative Destruction]] and radical [[id:8651d790-2079-4233-b8ba-a01e1ada53e8][Technological revolution]]
+
+** Supporting Ideas and hypothesis
+
+- Literature discuss the fitness of [[id:8cdf72ff-1db7-49f8-8d7e-d0d903ff6865][Geometric Law of Distribution]] in which the probability of survivor decrease over time
+  - There are more young firms than old one
+  - Formally, the frequency of firms with age $age$ can be described as $log(count_{i}) = \beta_{0} + \beta_{1}age_{i} + \varepsilon_{i}$ in which $\beta_{1}$ is expected to be negative
+- [[id:eaa94f65-0764-47fd-b3b5-89741fa51dda][Firm entry rate]]s change during the sector life-cycle [cite:@klepper_1996_Entry]
+  - At the begining of life-cycle, there are a higher rate of entrants with more [[id:4db8e3cd-585a-435b-ae6a-df903e5bf7af][Product Innovation]] with changing market-share
+  - In more mature sectors, in which the leader are more stablished, there is a lower entry level with more [[id:0c6c78fd-8d22-4002-9c82-7ccd82af43f5][Process Innovation]]
+
+** Purpose
+
+The purpose of this paper is to provide a better understanding of distribution of firms' ages.
+
+
+** Contribution
+
+- This paper estimate an empirical model considering a new dataset for French first which collects the information of all existing firms
+- This paper provide some evidence that allows to discuss in more depth the role of [[id:e40b4e38-246e-4c64-a159-83e811029644][New Entrant]]s in the industrial dynamics
+- Additionally, undertande the firms' age distribution allows to a better description for a sector life-cycle
+
+** Relevance
+
+For the [[id:95265264-f61f-4cf5-8cdc-e590b2a47cb9][Innovation bubble ABM]] chapter, this paper may provide some evidence regarding the convergence of capacity utilization rate to the normal level as suggested by [[id:a757b53b-d6e4-4e3f-9ddb-3d139686d392][PhD Dissertation Discussions]].
+Other relevant aspect relates the sector life-cycle and the frequency of [[id:0c6c78fd-8d22-4002-9c82-7ccd82af43f5][Process Innovation]] and [[id:4db8e3cd-585a-435b-ae6a-df903e5bf7af][Product Innovation]].
+
+** Methodology
+
+The author estimate an empirical model for France for 2008 (metropolitan area only and focusing on manufacturing and non-financial firms) and present an stochastic model in order to replicate the reported [[id:8e9dd4a4-0f29-46d1-b8e4-5befe4df94cb][Stylized Facts]].
+In the theoretical model, the author allows the possibility of firms entry and adds stochastic exit.
+Firm's age is supposed to be an emergent propriety determined by [[id:eaa94f65-0764-47fd-b3b5-89741fa51dda][Firm entry rate]]
+
+
+** Results
+
+The main result is the decline of [[id:eaa94f65-0764-47fd-b3b5-89741fa51dda][Firm entry rate]] with a lower probability of survivor of [[id:e40b4e38-246e-4c64-a159-83e811029644][New Entrant]]s (younger firms).
+The analytical model replicates the main [[id:8e9dd4a4-0f29-46d1-b8e4-5befe4df94cb][Stylized Facts]] reported by the author:
+- [[id:8cdf72ff-1db7-49f8-8d7e-d0d903ff6865][Geometric Law of Distribution]] is a good first approximation to describe aggregate age distribution
+- There are some deviation from the [[id:8cdf72ff-1db7-49f8-8d7e-d0d903ff6865][Geometric Law of Distribution]] in the aggregate level regarding firm ages (there are some breaks associated with historical episodes such as [[id:8121729f-1246-48f7-b8ff-5539223c1f32][Great Moderation]], [[id:a43aa39b-c318-4e35-9b9b-3557ce6a4b86][Great Depression]] and [[id:b0e0ff42-d4fd-4fea-bace-219ee43cb5df][I and II World Wars]])
+  - There is a flatter distribution of firms with 1-30 years and a steeper one for 30-50 years firms
+- In the more granular level, there are considerable heterogeneity of the log-distribution, deviating from the benchmark [[id:8cdf72ff-1db7-49f8-8d7e-d0d903ff6865][Geometric Law of Distribution]]
+  - Those distinction may be related to different life-cycle of each sector
+  - The more desegregated the data are, worse is the quality of the geometric fit
+  - The stage of the life-cycle of each sector affects economy's aggregage age log-distribution
+- It is reasonable to consider a constant entry rate (round 12%)
+- The structural break regarding firms's age distribution seems to be related to the lower survival of younger firms
+
+Considering the theoretical model:
+- Higher survival probability (keeping entry rate constant) does not change the distribution slope and similar results is found for a lower survival probability
+
+** Interesting findings and not categorized stuff
+
+- Similar declines in the [[id:eaa94f65-0764-47fd-b3b5-89741fa51dda][Firm entry rate]] are reported for other countries
+- Supposing that age distribution follows [[id:8cdf72ff-1db7-49f8-8d7e-d0d903ff6865][Geometric Law of Distribution]], younger firms are better fitted in the regression comparing older ones
+- The author also disccusses the implications for employment in which points out that sectors in the early-phases of the life-cycle are more labor-friendly
+
+** Critics
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+We investigate upon the shape and the determinants of the age distribution of business firms. By employing a novel dataset covering the population of French businesses, we highlight that a geometric law provides a reasonable approximation for the age distribution. However, relevant systematic deviations and sectoral heterogeneity appear. We develop a stochastic model of firm dynamics to explain the mechanisms behind this evidence and relate them to business dynamism. Results reveal a long-term decline in entry rates and lower survival probabilities of young firms. Our findings bear important implications for aggregate outcomes, notably employment growth.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+
+* Additional Backlinks
+
+* References
+
+
+#+print_bibliography:

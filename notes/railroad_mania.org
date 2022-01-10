@@ -1,11 +1,10 @@
 :PROPERTIES:
-:ID:       66c2405e-46a7-48c3-b7e5-ecadb2466377
-:ROAM_ALIASES: "Schumpeterian model"
+:ID:       e6b389a5-9aef-4ea2-a053-bbf84a4cb36c
 :END:
-#+title: Schumpeterian growth models
-
+#+title: Railroad Mania
 #+HUGO_AUTO_SET_LASTMOD: t
 #+hugo_base_dir: ~/BrainDump/
 #+hugo_section: notes
 #+HUGO_TAGS: placeholder
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
 #+OPTIONS: num:nil ^:{} toc:nil

@@ -6,6 +6,7 @@
 #+ATTR_HTML: :width 1080px :style float:left;margin-bottom:20px; :class banner
 #+HUGO_AUTO_SET_LASTMOD: t
 #+hugo_base_dir: ~/BrainDump/
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
 #+hugo_section: gtd
 #+HUGO_TAGS: workflow gtd
 https://i.pinimg.com/originals/fd/de/23/fdde2369da2feeaa95a469b0ff1dd3f5.gif
@@ -17,26 +18,27 @@ https://i.pinimg.com/originals/fd/de/23/fdde2369da2feeaa95a469b0ff1dd3f5.gif
 :END:
 ** WAIT Agendar terceira dose da vacina :@Personal:
 SCHEDULED: <2022-01-10 seg 10:35>
-
-** TODO Criar nota para armazenar as reuniões sobre a tese :@PhD:
-** TODO See Tecosaur config :@free:
-** TODO Change typo highlighting :@free:
-** TODO Check Emacs tabs :@free:
+** WAIT Ligar Unimed :@free:
+** TODO Mensagem Ítalo sobre cotutela
+SCHEDULED: <2022-01-06 qui>
+** TODO Conferir resultado PED :@PED:
+SCHEDULED: <2022-01-17 seg>
+** WAIT Resolver duplicados zotero :@free:
+** TODO Consistência entradas zotero :@free:
+** TODO Testar filetags ox-hugo :@free:
+SCHEDULED: <2022-01-10 seg>
+** TODO Atualizar Lattes
+SCHEDULED: <2022-01-31 seg>
 * Writing inbox
 
 ** STRT [#B] Kopp_2018
-** STRT [#C] FISH Govea (PhD Dissertation)
 
 ** STRT [#C] botte_2019
-** WAIT [#A] FISH Cornell 2020
 ** WAIT [#A] FISH [[https://voxeu.org/article/what-drives-house-prices-some-lessons-literature][What drives house prices: Lessons from the literature]]
-
 * News Inbox
 
 * Reading Inbox
 ** [[http://www.storep.org/wp/wp-content/uploads/2021/11/WP-1-2021.pdf][The Negative Natural Rate of Interest in the Modern Theories of Liquidity Trap and Secular Stagnation: Back to Böhm-Bawerk via Samuelson]] :SraffianTheory:MonetaryPolicy:SecularStagnation:LiquidityTrap:
-** [[https://link.springer.com/article/10.1007/s43253-020-00004-5][Shiozawa, Yoshinori; Morioka, Masashi; Taniguchi, Kasuhisa: Microfoundations ...]] :BookReview:Methodological:
-** [[http://ccr.sigcomm.org/online/files/p83-keshavA.pdf][How to Read a Paper]] :WorkFlow:HowTo:
 ** [[https://www.sciencedirect.com/science/article/pii/S0264837721006116][Land availability and housing price in China: Empirical evidence from nonline...]] :HousingMarket:HousePrices:China:LandUse:Empirical:NonLinearities:
 ** [#A] [[https://marcio.rbind.io/jmp/Santetti_GCRI.pdf][Growth, cycles, and residential investment]] :ResidentialInvestment:Empirical:US:SVAR:BusinessCycles:FunctionalIncomeDistribution:SraffianSupermultiplier:
 ** [[https://giacomorella.github.io/assets/tvp_rella.pdf][THE FED,HOUSING AND  HOUSEHOLD DEBT OVER TIME]] :Housing:ResidentialInvestment:HouseholdDebt:Empirical:MonetaryPolicy:
