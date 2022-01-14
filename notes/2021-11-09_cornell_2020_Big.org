@@ -9,7 +9,7 @@ Time-stamp: 2021-11-09
 #+hugo_section: notes
 
 #+hugo_categories: "Financial Analysts Journal"
-#+FILETAGS:
+#+FILETAGS: BigMarketDelusion AssetBubble Dot-ComCrisis
 
 #+OPTIONS: num:nil ^:{} toc:nil
 #+BIBLIOGRAPHY: ~/Org/zotero_refs.bib

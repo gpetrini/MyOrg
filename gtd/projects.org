@@ -80,7 +80,6 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 *** TODO Check product innovation in literature
 
-
 ** TODO To implement, comment and create checkers
 *** TODO General
 **** TODO Define documentation snippets
@@ -121,6 +120,8 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 *** TODO Review TODOs in code
 SCHEDULED: <2022-01-12 qua>
 
+** TODO Read [cite/t:@dosi_2020_RATIONAL] source code
+
 * Nikiforos econometric model response :@Article:
 :PROPERTIES:
 :agenda-group: Nikiforos response
@@ -142,6 +143,7 @@ SCHEDULED: <2022-01-12 qua>
     - Análise do plano <h, u> não é o melhor
     - É possível ter um ciclo puxado pelo investimento autônomo, mas não o tempo todo
   - Ciclo no supermultiplicador é mais explicado por variações nos gastos autônomos do que por variações na taxa de investimento
+
 
 ** TODO Ver ciclo nos gastos autônomos
 
@@ -190,7 +192,7 @@ After Nikiforos' response
 :agenda-group: VECM own rate
 :END:
 
-* Ratchet effect SSM paper [0/4]:@Article:@PhD:
+* Ratchet effect SSM paper [0/4] :@Article:@PhD:
 :PROPERTIES:
 :agenda-group: RatchetEffect
 :END:
@@ -201,9 +203,22 @@ After Nikiforos' response
 
 *** TODO Export common functions
 
-*** TODO Fix commutative assumption
+*** TODO Fix commutative assumption in sympy
 
 ** TODO Generalize Daniel's script
+
+*** WAIT Create function to generalize common plots
+
+*WAITING:* Daniel's first results to test the function
+
+* Case-Shiller index for São José dos Campos
+:PROPERTIES:
+:agenda-group: CaseShillerSJC
+:END:
+
+** TODO Select Housing Journals
+
+** TODO Read Augusto's report
 
 * WAIT ABM Spatial Housing [0%] :Dissertation:@PhD:
 :PROPERTIES:
@@ -293,13 +308,15 @@ After Nikiforos' response
 :agenda-group: Hugo blog
 :END:
 ** TODO Update ABOUT
-** TODO Create Knowldge base
+** TODO Create Knowledge base
 ** TODO Update housekeeping
 ** TODO Create publications entry
 ** TODO Create teaching section
-** TODO Create factobook for stylized facts
+** TODO Create factbook for stylized facts
 
 ** TODO Corrigir tema escuro
 
 
 ** TODO Add bibliography in placeholder entry
+
+** TODO [#A] Fix website to show code chunks

@@ -1,10 +1,10 @@
 :PROPERTIES:
-:ID:       bd858b50-6464-40f0-92ef-c4eddaa1af00
+:ID:       de34270e-0ae3-44b3-a344-a58d4a3d15d1
 :END:
-#+title: Geometric Law of Distribution
+#+title: Profit-Squeezing
 #+HUGO_AUTO_SET_LASTMOD: t
 #+hugo_base_dir: ~/BrainDump/
 #+hugo_section: notes
-#+HUGO_TAGS: placeholder
+#+FILETAGS: placeholder
 #+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
 #+OPTIONS: num:nil ^:{} toc:nil

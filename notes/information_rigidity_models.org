@@ -1,5 +1,5 @@
 :PROPERTIES:
-:ID:       ff336dbd-b570-4d73-b977-9e9b728fecc0
+:ID:       6bb6aa73-492d-4d22-be64-1465d2c1290e
 :END:
 #+title: Information rigidity models
 
@@ -8,7 +8,7 @@
 
 #+hugo_section: notes
 
-#+HUGO_TAGS: placeholder
+#+FILETAGS: placeholder
 
 #+OPTIONS: num:nil ^:{} toc:nil
 

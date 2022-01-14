@@ -1,0 +1,96 @@
+:PROPERTIES:
+:ID:       7d0a3859-5e17-44de-9de1-6d995914e986
+:ROAM_REFS: @anufriev_2022_Asseta
+:END:
+#+title:
+#+OPTIONS: num:nil ^:{} toc:nil
+#+TITLE: Anufriev, Chernulich, Tuinstra: Asset Price Volatility and Investment Horizons: An Experimental Investigation - (2022-01-01, Journal of Economic Behavior & Organization)
+#+hugo_base_dir: ~/BrainDump/
+#+hugo_section: notes
+#+hugo_categories: "Journal of Economic Behavior & Organization"
+#+FILETAGS: AssetPricing BehavioralFinance Expectations ExperimentalEconomics InvestmentHorizons
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+
+[cite/t:@anufriev_2022_Asseta] present a [[id:88bb712d-d234-4e6c-a850-e3a55f5a30be][Learn to Forecast Experiments]] with varying [[id:72b312d4-0004-496d-8889-b34766df2961][Investment Horizon]]s and initial price history.
+They report that larger [[id:72b312d4-0004-496d-8889-b34766df2961][Investment Horizon]]s reduce asset price volatility, extrapolating forecasts and [[id:628bc545-800c-4f2b-beb6-6933d381a2ad][Asset bubble]]s emergence.
+Additionally, converging initial price history generates less volatile asset prices independently from the [[id:72b312d4-0004-496d-8889-b34766df2961][Investment Horizon]] specification.
+Thus, [[id:72b312d4-0004-496d-8889-b34766df2961][Investment Horizon]] is a necessary but not a sufficient condition for [[id:628bc545-800c-4f2b-beb6-6933d381a2ad][Asset bubble]]s emergence.
+
+** Background and motivation
+
+- *Theoretical background:* [[id:88bb712d-d234-4e6c-a850-e3a55f5a30be][Learn to Forecast Experiments]]
+
+** Supporting Ideas and hypothesis
+
+*Supporting ideas:*
+- Asset mispricing is a common result in [[id:c41a871c-bfe1-470b-8c55-35650903af74][Experimental Finance]]
+  - This is related to positive [[id:c5c9caae-7306-485e-ab15-bc579733407a][Feedback mechanisms]] [cite:@delong_1990_Positive;@anufriev_2013_Evolutionary]
+- Short-term investment is mispricing
+
+*Hypothesis:*
+- Initial price history have a significant role on the price stability during the experiment
+- Price volatility will be higher with larger [[id:72b312d4-0004-496d-8889-b34766df2961][Investment Horizon]]s
+- The treatment with higher positive [[id:c5c9caae-7306-485e-ab15-bc579733407a][Feedback mechanisms]] would be more volatile thant the ones with short and larger [[id:72b312d4-0004-496d-8889-b34766df2961][Investment Horizon]]s (1 and 3 periods respectivelly)
+- Participants in longer [[id:72b312d4-0004-496d-8889-b34766df2961][Investment Horizon]]s would have a higher degree of trend extrapolation (check)
+  - Because with would have more dispersion and less [[id:b44594c1-2c74-4ff4-b142-ed044b79ea5b][Coordination]]
+- [[id:b44594c1-2c74-4ff4-b142-ed044b79ea5b][Coordination]] of expectatitions with longer [[id:72b312d4-0004-496d-8889-b34766df2961][Investment Horizon]] is lower compared with shorter ones
+
+
+** Purpose and Contribution
+
+- Add a time varying [[id:72b312d4-0004-496d-8889-b34766df2961][Investment Horizon]] and price history to [[id:88bb712d-d234-4e6c-a850-e3a55f5a30be][Learn to Forecast Experiments]]
+
+** Relevance
+
+For [[id:95265264-f61f-4cf5-8cdc-e590b2a47cb9][Innovation bubble ABM]] chapter, this paper provide empirical relevance of the effects of [[id:72b312d4-0004-496d-8889-b34766df2961][Investment Horizon]].
+Thus, it empirically access the possible mechanism to explain persistent [[id:628bc545-800c-4f2b-beb6-6933d381a2ad][Asset bubble]]s even thought firms face decreasing market-share (as proposed in [[id:624f5b97-8e6f-42f3-8bef-758aea417233][PhD Dissertation Discussions]]).
+
+Considering a [[id:484bff84-e388-479d-a220-99b5e2ed3a54][Regulation]] concerns, this paper suggests that reducing the possibility of short-term holds of an asset can reduce its price volatility.
+However, the authors point out that this could reduce the velocity that asset prices will reflect private informations.
+
+** Methodology
+
+[[id:c41a871c-bfe1-470b-8c55-35650903af74][Experimental Finance]] with 210 students from the University of Technology Sydney's Lab in 2018.
+Each group was treated with the one of following settings (with no heterogeneity within them):
+- 3 Varying [[id:72b312d4-0004-496d-8889-b34766df2961][Investment Horizon]] specifications
+- Converging or oscillating initial price history
+- Large [[id:72b312d4-0004-496d-8889-b34766df2961][Investment Horizon]] (3 periods) with stronger [[id:c5c9caae-7306-485e-ab15-bc579733407a][Feedback mechanisms]] (lower interest rate and dividends)
+
+Additionally, each participant received money accordingly to his/her performance and had qualitative information regarding the market.
+
+** Results
+
+- Asset price volatility decrease with higher [[id:72b312d4-0004-496d-8889-b34766df2961][Investment Horizon]]
+  - By reducing the strength of the positive [[id:c5c9caae-7306-485e-ab15-bc579733407a][Feedback mechanisms]] and extrapolative [[id:b44594c1-2c74-4ff4-b142-ed044b79ea5b][Coordination]] between investors
+    - A possible explanation is that there is a higher dispersion among predictions and past forecasts have a smaller effect
+  - This results holds even correcting for [[id:c5c9caae-7306-485e-ab15-bc579733407a][Feedback mechanisms]]
+- Experiments with more volatile initial price then to keep this volatility small until the end of the experiment regardless of [[id:72b312d4-0004-496d-8889-b34766df2961][Investment Horizon]]
+
+** Interesting findings and not categorized stuff
+
+
+** Critics
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+We study the effects of the investment horizon on asset price volatility using a Learning to Forecast laboratory experiment. We find that, for short investment horizons, participants coordinate on self-fulfilling trend-extrapolating predictions. Price deviations are then reinforced and amplified, possibly leading to large bubbles and crashes in asset prices. For longer investment horizons such bubbles do not emerge and price volatility tends to be lower. This is due to the fact that, for longer horizons, there is more dispersion in participants’ forecasts, and participants extrapolate trends in past prices to a lesser extent. We also show that, independent of the investment horizon, if the initial history of asset prices is already relatively stable before participants start their prediction task, price volatility remains small, with prices close to their fundamental values for the duration of the experiment.
+#+END_ABSTRACT
+
+
+
+* Additional Backlinks
+
+* References
+
+#+print_bibliography:

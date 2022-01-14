@@ -1,5 +1,5 @@
 :PROPERTIES:
-:ID:       ee3bbe84-16dd-4c96-975b-8dd1ce997eb1
+:ID:       5e6a2fc8-c385-42ec-b048-a3b02a91125f
 :END:
 #+title: Quasi-replicator
 #+HUGO_AUTO_SET_LASTMOD: t

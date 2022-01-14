@@ -1,10 +1,10 @@
 :PROPERTIES:
-:ID:       bd858b50-6464-40f0-92ef-c4eddaa1af00
+:ID:       f19dc90a-2d72-4b4a-9319-f2ed35ebae47
 :END:
-#+title: Geometric Law of Distribution
+#+title: Inatention Models
 #+HUGO_AUTO_SET_LASTMOD: t
 #+hugo_base_dir: ~/BrainDump/
 #+hugo_section: notes
-#+HUGO_TAGS: placeholder
+#+FILETAGS: placeholder
 #+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
 #+OPTIONS: num:nil ^:{} toc:nil

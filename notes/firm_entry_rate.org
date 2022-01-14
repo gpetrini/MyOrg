@@ -1,5 +1,5 @@
 :PROPERTIES:
-:ID:       eaa94f65-0764-47fd-b3b5-89741fa51dda
+:ID:       3e0f4303-0ee6-48e0-91f9-bee3465517d4
 :END:
 #+title: Firm entry rate
 #+HUGO_AUTO_SET_LASTMOD: t

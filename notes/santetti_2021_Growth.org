@@ -1,0 +1,195 @@
+:PROPERTIES:
+:ID:       9d5a9a25-3547-4034-be53-c8a62ec19ef6
+:ROAM_REFS: @santetti__Growth
+:END:
+#+title:
+#+OPTIONS: num:nil ^:{} toc:nil
+#+TITLE: Santetti: Growth, Cycles, and Residential Investment - (, )
+#+hugo_base_dir: ~/BrainDump/
+#+hugo_section: notes
+#+hugo_categories: Unpublished
+#+FILETAGS: ResidentialInvestment BusinessCycles
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+
+
+
+* FISH-5SS
+
+*TODO:* When this paper is published, update this note and link with the new reference.
+
+** 5SS
+
+[cite/t:@santetti_2021_Growth] proposes an empirical test for the [[id:18b0984e-d8db-4fc3-b002-e080c92bd007][neo-Goodwin model]] in which explicitly include capital accumulation.
+The author estimate an SVAR model for the US (1949-2020) and report a [[id:d0995978-0f50-4d11-a71e-477238903e19][Profit-Led]] demand regime with a distributive [[id:de34270e-0ae3-44b3-a344-a58d4a3d15d1][Profit-Squeezing]] regime; and that aggregate investment leads the business cycle.
+The author further desegregate investment and finds that Residential Investment [[id:fdc30f2d-7aa9-4327-ab12-3c59475223cb][Residential Investment]] leads the business cycle while non-Residential Investment lags it.
+It is also discussed why Residential Investment should not be considered an [[id:27df9b84-b199-482f-8197-bed51d7f1311][Autonomous Expenditures]] and that it is mainly produced by firms and not households.
+
+
+** Background and motivation
+
+- *Theoretical Background:* [[id:18b0984e-d8db-4fc3-b002-e080c92bd007][neo-Goodwinian model]]
+-
+
+
+** Supporting Ideas and hypothesis
+
+
+*** Supporting Ideas
+
+- [[id:fdc30f2d-7aa9-4327-ab12-3c59475223cb][Residential Investment]] leads the [[id:380b31ad-cdd5-4367-af2c-9ee199a085e7][Business Cycles]]
+- Reported [[id:380b31ad-cdd5-4367-af2c-9ee199a085e7][Business Cycles]] [[id:8e9dd4a4-0f29-46d1-b8e4-5befe4df94cb][Stylized Facts]] by [cite/t:@goodwin_1967_Growth]
+  - Counter-clockwise pattern in the $(u, \psi)$ and $(e, \psi)$ panes
+  - When labor market improves, it weakens profitability
+  - Economic activity leads the distributive variables
+- Labor market adjusts slower than goods market
+  - Workers bargain power increases with capacity utilization, bringing the cycle down as it tends to full capacity
+- The demand regime will depend on the sign of capacity utilization in respect to wage-share increase
+- Distributive regime depends on the sign of wage-share in respect to changes in employment rate
+- Most of the house construction are made by firms
+- House construction depends on
+  - Net migration, worker mobility and demographics
+  - Financial conditions (mortgage and rental rates)
+
+*** Hypothesis
+
+- Wage-share as a proxy for interest rates
+- It is supposed that if [[id:fdc30f2d-7aa9-4327-ab12-3c59475223cb][Residential Investment]] depends on some financial or demographic variable, it cannot be considered as autonomous
+- It is considered that the only evidence for the [[id:ed384551-c7ba-492f-be69-15906157ef9d][Sraffian suppermultiplier growth model]] is that non-residential investment is an induced expenditure and produce a counter-clockwise pattern in the ($u$, $g^{N}$) pane
+- Assumes an [[id:fe75d8ad-4d2a-4c6d-94d4-d55610598944][Accelerator Model]]-like in which investment depends on profit rate --- then, depends on $u$ and $(1 - \psi)$
+
+** Purpose and contribution
+
+- Include a capital accumulation dimension in the [[id:18b0984e-d8db-4fc3-b002-e080c92bd007][neo-Goodwinian model]]
+- Evaluate the relevance of [[id:fdc30f2d-7aa9-4327-ab12-3c59475223cb][Residential Investment]] in the [[id:380b31ad-cdd5-4367-af2c-9ee199a085e7][Business Cycles]]
+
+** Relevance
+
+- At the current stage (<2022-01-12 qua>), the main relevance of this paper is to understand the theoretical assumption of [cite/t:@nikiforos_2021_Sraffian] paper.
+- Considering a longer-term perspective, this paper is one of the empirical ones that discuss the [[id:ed384551-c7ba-492f-be69-15906157ef9d][Sraffian suppermultiplier growth model]]
+- Additionally, this is another paper that provides empirical results for the relevance of [[id:fdc30f2d-7aa9-4327-ab12-3c59475223cb][Residential Investment]] for the [[id:380b31ad-cdd5-4367-af2c-9ee199a085e7][Business Cycles]]
+
+
+** Methodology
+
+
+- *Sample:* US (1949-2020)
+- *Model:* SVAR
+- Variables are presented in log terms (except for employment rate) and employed Hamilton filter (TODO add reference) and indexed in 2012 (=100) values
+- 4 and 10 lags respectively
+- Rely on the visualization procedure presented in [cite:@nikiforos_2021_Sraffian]
+
+
+The author estimate two sets of SVAR models.
+The first one consider investment as an aggregate expenditure.
+Thus, he build the following system (omitted variables mean no contemporary effect)
+
+#+BEGIN_latex
+\begin{equation}
+u = u(u, g, \psi)
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+g = g(g, u, \psi)
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+e = e(e, u)
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+\psi = \psi(\psi, e)
+\end{equation}
+#+END_latex
+in which $u$ stands for capacity utilization (as proxy for the business cycle); $g$ as investment growth rate (as proxy for output growth); $e$ as employment rate; and $\psi$ as wage-share
+
+Next, he desegregates investment into Residential ($g^{R}$) and non-Residential ($g^{N}$)
+#+BEGIN_latex
+\begin{equation}
+g^{R} = g^{R}(g^{R}, g^{N}, \psi)
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+g^{N} = g^{N}(g^{N}, u, e)
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+u = u(u, g^{R}, \psi)
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+e = e(e, g^{R}, u)
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+\psi = \psi(\psi, g^{N}, e)
+\end{equation}
+#+END_latex
+
+** Results
+
+General results:
+- Clockwise pattern between investment and capacity utilization
+- [[id:de34270e-0ae3-44b3-a344-a58d4a3d15d1][Profit-Squeezing]] distributive regime
+- General results of the 4D-VAR holds for the 5D-VAR
+
+Specific results:
+- Aggregate investment response to capacity utilization :: initially negative, become positive and return to a negative relation
+- Capacity utilization and employment :: Employment increases with $u$ and $u$ decreases with $e$
+- Capacity utilization response to aggregate investment :: only positive response
+- Goodwinian results :: counter-clockwise of $u$ and $e$; and $e$ and $\psi$
+- Residential investment response to capacity utilization :: clockwise cycle (confirms SSM)
+- Non-Residential investment response to capacity utilization :: counter-clockwise cycle (confirms)
+
+
+** Interesting findings and not categorized stuff
+
+- The author points out the [[id:60476e6a-4541-433f-bfe9-de2106cd7deb][Leading Indicator of Remodeling Activity]] (LIRA) which is used to antecipate the [[id:380b31ad-cdd5-4367-af2c-9ee199a085e7][Business Cycles]] fluctuations of the housing sector.
+  The variables with the higher correlation and leading effect with [[id:38892e14-3e1b-45b0-b860-db23d1979148][House Improvement Expenditure]]s are:
+  - House Price Index
+  - Leading Economic Index
+  - Residential remodeling permits
+- House builder wait to the cycle peak to complete the construction
+- The author reports that [[id:fdc30f2d-7aa9-4327-ab12-3c59475223cb][Residential Investment]] is sensible to interest rates
+- The author finds that non-residential investment is positively correlated to interest rates
+  - It is argued that interest rates restores the labor market (TODO Check latter)
+
+** Critics
+
+- The author seems to mix the concept of exogenous and autonomous up
+  - When one argues that [[id:fdc30f2d-7aa9-4327-ab12-3c59475223cb][Residential Investment]] is an [[id:27df9b84-b199-482f-8197-bed51d7f1311][Autonomous Expenditures]] it does not means that it does not depend on any other variable as the author and [cite/t:@nikiforos_2018_Commentsa] argue
+- There are two results that validates the [[id:ed384551-c7ba-492f-be69-15906157ef9d][Sraffian suppermultiplier growth model]] (residential investment leading the cycle and non-residential investment as a induced expenditure)
+  - Since [[id:fdc30f2d-7aa9-4327-ab12-3c59475223cb][Residential Investment]] is not considered an autonomous expenditure, the author only considers the second result in favor of SSM
+- The author does not remove the first COVID-19 year. This possibly affects the results (unsure about which direction)
+- The author seems to mix the idea of house production (truly overtake by firms) with house demand (by households)
+  - None of the [[id:ed384551-c7ba-492f-be69-15906157ef9d][Sraffian suppermultiplier growth model]] authors advocate that houses are built by households
+- It is unclear why employment rate and wage-share depend on residential investment instead to non-residential
+  - It seems related to the "leadearship" of residential investment, but it would be more reasonable to be the opposite
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+The empirical literature on neo-Goodwinian models of growth and distribution still lacks an explicit treatment of capital accumulation. Further, and across different theoretical approaches, residential investment is seen as a critical driver of the business cycle. This paper addresses these two issues. First, through four- and five-dimensional Structural Vector Autoregressive (SVAR) models, cyclical trajectories derived from impulse-response functions confirm profit-led demand and profit-squeeze distribution regimes, in accordance with the cyclical stylized facts in the vein of Goodwin (1967). Second, aggregate investment is then split into its residential and nonresidential categories. Results confirm that residential investment leads the cycle, whereas nonresidential investment lags it. Finally, this study argues that residential investment is, in reality, undertaken by corporations—and not households—, and can therefore not be seen as autonomous to the business cycle, demographics, and financial variables.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+** Found references
+
+- [cite/t:@fisher_2007_Why]
+- [cite/t:@barbosa-filho_2008_Cycles]
+
+* Additional Backlinks
+
+* References
+
+#+print_bibliography:

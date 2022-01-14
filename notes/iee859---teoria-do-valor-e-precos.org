@@ -1531,7 +1531,362 @@ A taxa de juros relevante para Pivetti é a taxa de captação de um competidor 
   - A taxa de juros é o piso para a taxa de lucro. A taxa de lucro é determinada pela equação de Cambridge
     - Assim, a diferença entre a taxa de lucros e a taxa de juros, em geral, determina o lucro líquido do empreendimento (npe) que Pivetti ignora (reduz /risk and trouble/ setoriais apenas, $r = g/s_{k} = npe + i$)
 
-*** Inflação de custos e conflito distributivo
+** Inflação de custos e conflito distributivo
+
+*** Relação entre margem nominal e real de lucros :ATTACH:
+:PROPERTIES:
+:ID:       e022cdb4-422e-44eb-9eeb-d1a14084796f
+:END:
+
+
+Se as firmas definem os preços a partir de um mark-up sobre os custos, isso não garante que determina a distrubuição funcional da renda.
+Seja $B$ a produtividade do trabalho e $W$ o salário nominal.
+Assim, o custo histórico é dado por:
+
+#+BEGIN_latex
+\begin{equation}
+\frac{W_{-1}}{B}
+\end{equation}
+#+END_latex
+Se os salários crescem a $w$, o custo de reposição será $W/B$.
+Se salários nominais crescem em um único período ($w_{1}>0$), haverá inflação e a margem de lucro real ($m$) será temporariamente menor que a nominal ($n$).
+Sendo assim, sempre que os salários crescerem e a taxa de lucro nominal for a mesma, a taxa de lucro real será menor.
+Como consequência, não é garantido que as firmas irão determinar a distribuição.
+
+Nos [[id:3d19934f-ffed-49a7-9157-6dfd9ce44c66][neo-Kaleckian model]]s, assume-se que as firmas fixam a taxa de lucro real e que os preços irão aumentar no mesmo período que os salários nominais aumentam.
+
+
+
+[[attachment:_20220113_150839screenshot.png]]
+
+
+Organizando,
+
+#+BEGIN_latex
+\begin{equation}
+P = \frac{W_{-1}}{B}(1+n)
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+P = \frac{W}{B}(1+m)
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+m = \frac{1 + n}{1 + \Delta Custos}
+\end{equation}
+#+END_latex
+
+*** Preços relativos do custo histórico ao custo de reposição
+
+- Concorrência: uniformidade da taxa de lucro nominal + persistência das técnicas + variação do salário nominal
+  - Leva a convergência dos preços relativos e taxa de lucro real a custos de reposição
+
+**** Implicações (incompleto)
+
+- Piso da margem nominal = taxa de juros nominal
+  - Concorrência só iguala os retornos nominais
+
+** Incidência tributária, distribuição e conflito distributivo: uma análise Sraffiana
+
+*** Introdução
+
+Em qualquer abordagem, a análise de incidência depende de como são determinados os preços relativos e distribuição.
+
+Na teoria neoclássica, a análise de incidência depende das elasticidades de substituição de demanda e oferta (equilíbrio parcial).
+Como o produto é determinado simultaneamente em relação aos preços relativos e à distribuição, a análise de incidência tributaria se baseia na avaliação de eficiência (Pareto).
+Trata-se, portanto, uma noção de alocação e tributação ótima[fn::O único conflito distributivo aceitável para a teoria neoclássica é entre gerações.].
+
+A retomada da abordagem do excedente proposta por Sraffa e Garagnani oferece um arcabouço alternativo para análise de incidência tributária.
+Em outras palavras, a tributação implica uma análise distributiva.
+Assim, a análise da incidência tributária dependerá dos coeficientes técnicos e do fechamento assumido para a teoria da distribuição.
+
+Como na abordagem do excedente, a teoria da distribuição do produto é seperada da determinação da distribuição e preços relativos, não há qualquer relação (incompleto)
+
+*** Diferentes tipos de impostos no modelo do trigo
+
+De acordo com a OECD, existem seis grandes grupos de imposto:
+- Sobre a renda
+- Contribuições sociais
+- Tributos sobre a folha de pagamento das empresas
+- Tributos sobre a propriedade
+- Tributos sobre bens e serviços (principal foco da análise)
+- Outros tributos
+
+A análise da incidência normalmente foca nos tributos indiretos, que incidem sobre o consumo ou a produção.
+Para esta análise, o aspecto central para considera o tributo como "indireto" é determinar se o produto é considerado pelas empresas como parte do custo de produção da técnica dominante.
+Serão considerados como tributos indiretos: tributos sobre a venda de bens/serviços, sobre VA e tributos sobre a folha de salários.
+Tributos sobre lucro das empresas e contribuições pagas pelos trabalhadores *não* serão considerados neste exercício como tributos que afetam a equação de preço de produção.
+
+**** Modelo simples do trigo
+#+BEGIN_latex
+\begin{equation}
+PX = PaX(1+r) + PblX
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+P = Pa(1+r) + Pbl
+\end{equation}
+#+END_latex
+
+em que $b$ é a cesta de consumo dos trabalhadores e $l$ o coeficiente técnico do trabalho
+
+**** Tributo sobre as vendas
+
+#+BEGIN_latex
+\begin{equation}
+\frac{P}{1+t_{s}} = Pa(1+r) + Pbl
+\end{equation}
+#+END_latex
+
+A curva salário-lucro se torna:
+
+#+BEGIN_latex
+\begin{equation}
+b = \frac{\frac{1}{1+t_{s}} - a(1+r)}{l}
+\end{equation}
+#+END_latex
+
+Assim, o imposto reduz o excedente (salário e lucro real máximo), mas não é possível saber quem irá pagar esse imposto.
+Esse efeito é proporcional aos dois fatores.
+
+**** Tributo sobre valor adicionado
+
+
+#+BEGIN_latex
+\begin{equation}
+P = Pa(1+r(1+t_{va})) + Pbl(1+t_{va})
+\end{equation}
+#+END_latex
+
+
+A curva salário-lucro se torna:
+
+#+BEGIN_latex
+\begin{equation}
+b = \frac{\frac{1}{1+t_{va}} + \frac{b}{1+t_{va}}}{l}
+\end{equation}
+#+END_latex
+
+**** Folha de pagamento
+
+#+BEGIN_latex
+\begin{equation}
+\frac{P}{1+t_{s}} = Pa(1+r) + P\overline{b}l
+\end{equation}
+#+END_latex
+
+#+BEGIN_latex
+\begin{equation}
+P = Pa(1+r) + Pbl(1+t_{P})
+\end{equation}
+#+END_latex
+
+
+A curva salário-lucro se torna:
+
+#+BEGIN_latex
+\begin{equation}
+b = \frac{1 - a(1+r)}{l(1+t_{P})}
+\end{equation}
+#+END_latex
+
+O efeito é reduzir o salário real máximo, sem reduzir o excedente.
+
+*** Incidência nominal e real (casos extremos)
+
+**** Salário real exógeno
+
+A curva de salário lucro é
+
+
+#+BEGIN_latex
+\begin{equation}
+r^{\star}_{s} = Incompleto
+\end{equation}
+#+END_latex
+
+**** Taxa de lucro real/margem bruta exógena
+
+#+BEGIN_latex
+\begin{equation}
+b^{\star} = \frac{(\frac{1}{1+t_{s}} - a(1+\overline{r}))}{l}
+\end{equation}
+#+END_latex
+
+#+BEGIN_latex
+\begin{equation}
+\frac{\partial b^{\star}_{s}}{\partial t_{s}} < 0
+\end{equation}
+#+END_latex
+
+Neste caso, o imposto incide completamente sobre os trabalhadores.
+
+*** Incidência nominal e real: modelo de conflito distributivo Sraffiano (caso geral)
+
+**** Custo de reposição versus custo histórico do modelo do trigo
+
+Taxa de lucro real:
+#+BEGIN_latex
+\begin{equation}
+P = Pa(1+r)(1t_{s}) + Wl(1+t_{s})
+\end{equation}
+#+END_latex
+
+Taxa de lucro nominal desejada:
+#+BEGIN_latex
+\begin{equation}
+P = P_{-1}a(1+r_{k})(1t_{s}) + Wl(1+t_{s})
+\end{equation}
+#+END_latex
+
+Pode-se escrever a taxa de variação do salário nominal como função da distância entre o salário real desejado e o realizado (Hiato de aspiração como em  Okisho, (1977)):
+
+#+BEGIN_latex
+\begin{equation}
+\frac{W}{W_{-1}} = \frac{b_{w}}{b_{-1}}
+\end{equation}
+#+END_latex
+
+Substituindo:
+#+BEGIN_latex
+\begin{equation}
+W = b_{w}\cdot P_{--1}
+\end{equation}
+#+END_latex
+
+
+Continuando:
+
+#+BEGIN_latex
+\begin{equation}
+P = P_{-1}a(1+r_{k})(1t_{s}) + P_{-1}b_{w}l(1+t_{s})
+\end{equation}
+#+END_latex
+
+Para haver conflito distributivo, é preciso:
+#+BEGIN_latex
+\begin{equation}
+a(1+r_{k})(1+t_{s}) + b_{w}l(1+t_{s})> 1
+\end{equation}
+#+END_latex
+A expressão anterior indica que a taxa de lucro e cesta de salário dos trabalhadores são incompatíveis.
+Logo:
+
+#+BEGIN_latex
+\begin{equation}
+a(1+r_{k})(1+t_{s}) + b_{k}l(1+t_{s}) = 1
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+a(1+r_{w})(1+t_{s}) + b_{w}l(1+t_{s}) = 1
+\end{equation}
+#+END_latex
+
+
+Logo, a taxa de inflação de conflito será dada por:
+#+BEGIN_latex
+\begin{equation}
+1 + \hat{p} = a(1+r_{k})(1+t_{s}) + b_{w}(1+t_{s})
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+1 + \hat{p} = 1 + l(1+t_s)(b_{w} - b_{k})
+\end{equation}
+#+END_latex
+É importante notar que essa é uma inflação de custo e por conflito já que nada foi afirmado sobre o nível de produção.
+
+Como a inflação será constante e equivalente ao conflito, a variação dos preços será equivalente à variação dos salários nonimais:
+#+BEGIN_latex
+\begin{equation}
+1 + \hat{w} = \frac{P_{-1}b_{w}}{P_{2}b_{w}}
+\end{equation}
+#+END_latex
+
+Resolvendo para encontrar $b^{\star}$ e $r^{\star}$
+
+
+#+BEGIN_latex
+\begin{equation}
+b^{\star} = \frac{P_{-1}b_{w}}{P} = \frac{b_{w}}{{1+\hat{p}}} = \frac{b_{w}}{1 + l(1+t_{s})(b_{w} - b_{k})}
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+1 + r^{\star} = \frac{1 + r^{k}}{1 + l(1 + t_{s})(b_{w} - b_{k})}
+\end{equation}
+#+END_latex
+
+Neste caso, capitalistas e trabalhadores pagam uma parcela dos impostos.
+
+
+
+
+**** Resistência salarial
+
+Okisho introduz a incompatibilidade distributiva, mas não inclui nas suas equações a resistência salarial à inflação observada.
+A inflação observada (e não expectativas da inflação), e a sua reposição, são elementos centrais da barganha salarial.
+O quanto haverá de resistência vai depender do poder de barganha relativo das classes.
+
+Desse modo, com resistência salarial, a taxa de variação do salário nominal será dado por:
+#+BEGIN_latex
+\begin{equation}
+\frac{w}{w_{-1}} = \frac{b_{w}}{b_{-1}}P_{-1}(1 + x_{w}\cdot \hat{p}_{-1})
+\end{equation}
+#+END_latex
+Logo, o salário nominal será dado por $W = b_{w}P_{-1}(1+x_{w}\hat{p}_{-1})$.
+Isso implica que o salário nominal equivale à cesta desejada acrescida do repasse que conseguiu obter.
+Nas teorias aceleracionistas da inflação, supões que este repasse é total ($x_{w} = 1$).
+
+É importante pontuar é que na barganha, os agentes tentam repor as perdas reais efetivas e não antecipar as esperadas.
+Isso porque os agentes conseguirem acertar a inflação futura não quer dizer que irá conseguir reajustar sua renda.
+
+A taxa nominal de lucro com resistência será dada por:
+
+#+BEGIN_latex
+\begin{equation}
+1 + n = (1+r_{k})(1+x_{k}\hat{p}_{-1})
+\end{equation}
+#+END_latex
+A equação do conflito fica, portanto:
+#+BEGIN_latex
+\begin{equation}
+P = P_{-1}a(1+r_{k})(1+x_{k}\hat{p}_{-1})(1+t_{s}) + P_{-1}(1+x_{w}\hat{p}_{-1})b_{w}l(1 + t_{s})
+\end{equation}
+#+END_latex
+Enquanto a taxa de inflação será:
+#+BEGIN_latex
+\begin{equation}
+1 + \hat{p} = [a(1+r_{k})b_{w}l](1 + t_{s}) + [x_{k}a(1+r_{k}) + x_{w}b_{w}l](1 + t_{s})\hat{p}_{-1}
+\end{equation}
+#+END_latex
+
+A condição de convergência dada pela equação anterior é:
+#+BEGIN_latex
+\begin{equation}
+x_{k}a(1+r_{k}) + x_{w}b_{w}l < \frac{1}{1+t_{s}}
+\end{equation}
+#+END_latex
+
+É importante indicar que mesmo com $x_{k}$ e $x_{w} < 1$ pode gerar uma taxa de inflação explosiva.
+Quanto maior o conflito "básico" entre $b_{k}$ e $r_{k}$, menor devem ser as resistências a variações nos preços.
+Caso contrário, o resultado é uma taxa de inflação explosiva.
+Dados graus de não-aceitação de perda de renda, não haverá uma inflação finita que gerará uma distribuição estável.
+
+
+Partindo do modelo geral, é possível explorar diferentes fechamentos para distribuição (Incompleto).
+
+*** Implicações/desdobramentos
+
+- Análise de incidência tributária em um modelo com vários setores (ex: taxação de básicos e não-básicos; efeitos diretos e indiretos da tributação sobre a escolha da técnica, etc)
+- Impactos da incidência triubutária: diferença da tributação direta versus indireta (que passa pelos preços de produção) sobre a distribuição e a demanda agregada
+- Efeito da tributação e do gasto/investimento público na mediação do conflito (ex: desonerações, subisídios, provimento de "bens públicos")
+
+
 
 * Concorrência e gravitação
 

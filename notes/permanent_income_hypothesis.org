@@ -1,5 +1,5 @@
 :PROPERTIES:
-:ID:       4a658725-67a6-4a44-b4e1-c74282b52a0e
+:ID:       701434fb-497d-4da9-a78c-7dee02300b39
 :END:
 #+title: Permanent Income Hypothesis
 #+HUGO_AUTO_SET_LASTMOD: t

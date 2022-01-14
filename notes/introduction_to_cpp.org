@@ -264,18 +264,36 @@ do{
 
 #+end_src
 
-* Arrays and vectors
+*** Range based for loop
+
+- This type of for loop iterate through collections
+  - It is similar to foreach loop
+
+#+begin_src cpp :eval no
+
+int data[] = {1, 2, 3, 4, 5, 6};
+
+for (int n : data){
+    std::cout << n << std::endl;
+}
+#+end_src
+
+* Collections (Arrays and vectors)
 
 - Arrays are static sized
   - Size is defined at compilation time
   - Arrays size is calculated with =sizeof(array)= which return the total size in bites
     - To get the number of elements of an array, =sizeof(array)/sizeof(array[0])=
   - When an array is passed into a function, it loses the propriety to know its size
+    - Additionally, the array is passed as pointer
 - Vectors, on the other side, can have a flexible size (dynamically sized)
   - Differently from arrays, vectors know their size (=my_vector.size()=)
+  - Inside a function, vectors copy its elements
 - Templetized arrays are objects with arrays inside
 
 #+begin_src cpp :eval no
+#include <vector>
+
 int size = 10;
 int recorrds[size]; // plural name by convention
 int indexes[] = {10, 3, 5}; // If know the data already
@@ -288,3 +306,93 @@ indexes[0] = 10; // Can be updated
 std::vector<int> my_vector;
 
 #+end_src
+
+
+In order to change the variable inside a function, the user must use the =&= symbol:
+#+begin_src cpp :eval no
+
+print_vactor(std::vector <int> &data) // An arbitrary function
+#+end_src
+
+* Introduction to iostream (input and output)
+
+** General concepts
+
+- Console only takes data from the buffer after the user hits =Enter=
+- =input= from =ifstream= works similarly to =cin= in which receives inputs from a file
+  - The equivalent if valid for =ofstream=
+
+#+begin_src cpp :eval no
+
+input >> var
+
+output << user
+
+#+end_src
+
+** Writing to files
+
+#+begin_src cpp :eval no
+#include <fstream>
+#include <vector>
+
+int main(){
+    std::ofstream file; // creating a file
+    file.open('file_name.txt'); // alternativelly std::ofstream file ('file_name.txt')
+
+
+    if (file.is_open()){
+        std::cout << "File opened successfully";
+    }
+
+    file << "Input";
+
+    std::vector<std::string> inputs;
+    inputs.push_back("foo");
+    inputs.push_back("bar");
+
+    for (std::string word :: inputs){
+        file << word << std::endl;
+    }
+
+    file.close();
+}
+
+#+end_src
+
+** Reading from files
+#+begin_src cpp :eval no
+#include <fstream>
+#include <vector>
+
+int main(){
+    std::ifstream file;
+    file.open('file_name.txt'); // alternativelly std::ofstream file ('file_name.txt')
+
+    std:vector<std::string> words;
+    std::string input;
+    while (file >> input){ // return file
+        words.push_back(input); // It only get a single string. In order to get a whole sentence, use getline instead
+    }
+
+    file.close();
+}
+
+#+end_src
+
+* Functions and Constructors
+
+** Function
+
+** Method
+
+- A method is associated with an object
+
+** Static method
+- A method is associated with a class
+  - An object is an instance of an object
+
+** Construction
+
+- Does not have a return
+- It is triggered when an object is created

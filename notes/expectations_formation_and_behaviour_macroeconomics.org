@@ -25,18 +25,19 @@ The empirical reason for this is to mimic some pattern during the [[id:8d3c092d-
 ** Log
 
 - Entry initalization :: <2021-12-15 qua>
+- Adding new references :: Including [cite/t:@anufriev_2022_Asseta]
 
 
 * Theoretical findings
 
-- Information rigidity and inattention models (ADD BACKLINK) provide theoretical support for agents not be attentive to all information available [cite:@coibion_2018_How]
+- [[id:6bb6aa73-492d-4d22-be64-1465d2c1290e][Information rigidity models]] and [[id:f19dc90a-2d72-4b4a-9319-f2ed35ebae47][Inatention Models]] provide theoretical support for agents not be attentive to all information available [cite:@coibion_2018_How]
   - Thus, it is related to [[id:cdc7d683-cbb8-4611-805c-0e058411c9e2][Learning and Heuristics]] literature in which agents do not process all information in a [[id:4002418c-d54c-4355-857b-2dfc2444b779][Complex System]]
   - In other words, agents intentionally limit the number of variables they track
 - A [[id:f37ac1bb-3de3-40a8-9224-c713e9b2e2e6][Behavioral extrapolation]] heuristic is the most parsimonious way to estimate expectations [cite:@gennaioli_2016_Expectations]
   - At odds with information rigidity models, its is not reasonable to assume that agents will not be attentive to their past expectations
 - [[id:29ce4a60-6429-44ef-a5b2-f48fba192d79][Behavior Bias]] models associate deviations from the [[id:1a84049d-62ce-4f17-a492-cd1a6a74ebe9][Fundamentals]] as a results of a [[id:38ef3b8c-65b7-4dab-aca1-6f94db9f4287][Cognitive restriction]]. Thus, those models assume that agents are [[id:c35474df-becc-4ac3-8370-d381ec5df2ab][Boundedly Rational]]
 - Only [cite/t:@demarzo_2007_Technological] investigate the relation between [[id:628bc545-800c-4f2b-beb6-6933d381a2ad][Asset bubble]] and [[id:5901b2ed-90d0-4b76-bafd-2e82d26e0388][Overinvestment]] even when investments are not profitable
-  - They present a General Equilibrium (ADD BACKLINK) in which a Relative Wealth Effect (ADD BACKLINK) make risky investment persistent
+  - They present a [[id:175002f6-69a8-4fa1-a7da-b76802ecc21e][General Equilibrium Model]] in which a [[id:6f2f090f-256b-408a-94e6-6c1d1a0b3aae][Relative Wealth Effect]] make risky investment persistent
     - The main idea is a decreasing function of investors utility whith others wealth increase
     - Since resource are scarce, investors compete for them and wealth concern initiate endogenously
     - Thus, the modeling approach generates positive [[id:c5c9caae-7306-485e-ab15-bc579733407a][Feedback mechanisms]]
@@ -91,7 +92,7 @@ Thus, those models are a generalization of [[id:1a81aea9-3f06-4877-904e-5aa5ea05
 In the [[id:053144da-4f34-4a23-97cb-c5af4b600164][Behavioral Finance]] and [[id:c41a871c-bfe1-470b-8c55-35650903af74][Experimental Finance]] literature, [[id:dfe69c29-9425-48b9-bf72-39b6a9ede338][Learn to Optmize Experiments]] seems to focus more on quantities rather than prices (compared to [[id:88bb712d-d234-4e6c-a850-e3a55f5a30be][Learn to Forecast Experiments]]).
 However, both of then does not study how those behaviors affects real variables.
 
-- [[id:9326692f-7fa9-439b-8f3c-a7fa2d18aef8][Expectations]] amplifies the effects of Financial Crisis (ADD BACKLINK) [cite:@hommes_2017_Booms]
+- [[id:9326692f-7fa9-439b-8f3c-a7fa2d18aef8][Expectations]] amplifies the effects of [[id:67c15aaa-7b6e-4407-b2de-71570ce061f5][Financial Crises]] [cite:@hommes_2017_Booms]
 - Models that propose [[id:d6b88985-00f9-44dd-bcfa-5033fea9e73e][Switching Mechanisms]] generates bubbles depending on the market structure[fn::These results does not depend on the experiment type ([[id:88bb712d-d234-4e6c-a850-e3a55f5a30be][Learn to Forecast Experiments]] or [[id:dfe69c29-9425-48b9-bf72-39b6a9ede338][Learn to Optmize Experiments]]) or to the number of participants.]
   - Positive feedback :: Generates [[id:628bc545-800c-4f2b-beb6-6933d381a2ad][Asset bubble]]
   - Negative feedback :: Quickly converges to the [[id:1a84049d-62ce-4f17-a492-cd1a6a74ebe9][Fundamentals]]
@@ -103,8 +104,11 @@ However, both of then does not study how those behaviors affects real variables.
 - Long-run forecaster are usually better described by adaptative learning while short-run is better described by trend-extrapolation [cite:@bao_2021_Expectation]
 - When facing more complex environments, agents tend to use simpler heuristics [cite:@bao_2021_Expectation]
 - Bubbles are more likely when regards assets returns rather than prices [cite:@bao_2021_Expectation]
-- There are also suppot for the Information Rigidity Models (ADD BACKLINK) [cite:@bao_2021_Expectation]
-- Usually, bubbles are initialized by an exongenous shock in [[id:1a84049d-62ce-4f17-a492-cd1a6a74ebe9][Fundamentals]] (such as the [[id:8d3c092d-8546-4dc0-8a04-55d3d8a09191][Dot-Com crisis]]) and amplified by [[id:aaecf5b0-903e-4cb7-9579-1f67c41a04a8][Fundamentalist]]s.
+- There are also support for the [[id:6bb6aa73-492d-4d22-be64-1465d2c1290e][Information rigidity models]] [cite:@bao_2021_Expectation]
+- Usually, bubbles are initialized by an exogenous shock in [[id:1a84049d-62ce-4f17-a492-cd1a6a74ebe9][Fundamentals]] (such as the [[id:8d3c092d-8546-4dc0-8a04-55d3d8a09191][Dot-Com crisis]]) and amplified by [[id:aaecf5b0-903e-4cb7-9579-1f67c41a04a8][Fundamentalist]]s.
+- Asset price volatility decrease with [[id:72b312d4-0004-496d-8889-b34766df2961][Investment Horizon]] [cite:@anufriev_2022_Asseta]
+- Initial price history volatility is relevant for its future volatility --- the more converging it is at the beginning of the experiment, the less volatile it will be [cite:@anufriev_2022_Asseta]
+  - [[id:72b312d4-0004-496d-8889-b34766df2961][Investment Horizon]] is a necessary, but not a sufficient condition for the emergence of [[id:628bc545-800c-4f2b-beb6-6933d381a2ad][Asset bubble]]s
 
 
 
@@ -116,15 +120,18 @@ Among the replicated [[id:8e9dd4a4-0f29-46d1-b8e4-5befe4df94cb][Stylized Facts]]
 - Rational [[id:11044897-734e-47b1-9abd-b5d2a10cbaf0][Speculation]] is destabilzing [cite:@delong_1990_Positive]
 
 * Modeling approaches
+:PROPERTIES:
+:ID:       e6895c52-8970-4bc2-94e2-9af6925c260e
+:END:
 
 
 Regarding [[id:628bc545-800c-4f2b-beb6-6933d381a2ad][Asset bubble]] generating process, there are three main approaches:
 1. Generated by some sort of [[id:0ded6f11-7638-483a-b9fb-2e1204b572be][Financial Frictions]] (Information Rigidity, [[id:4dd9747a-0849-49bc-99dc-f226c5605270][Short sales constraints]])
 2. Unconventional utility functions (such in [cite/t:@demarzo_2007_Technological])
 3. Related to some soft of [[id:38ef3b8c-65b7-4dab-aca1-6f94db9f4287][Cognitive restriction]] or in [[id:cdc7d683-cbb8-4611-805c-0e058411c9e2][Learning and Heuristics]] procedures
-   1. This approach focus more on [[id:f8110b7b-dc7d-4b58-8fa5-4c8cae7a290c][Heterogenous Agents]] with a [[id:e708fe89-4dff-4751-bf6b-78999dad4275][Evolutionary Selection]] mechanism[fn::Note: [[id:4dd9747a-0849-49bc-99dc-f226c5605270][Short sales constraints]] also rely on Heterogeneous Expectations (ADD BACKLINK)]
+   1. This approach focus more on [[id:f8110b7b-dc7d-4b58-8fa5-4c8cae7a290c][Heterogenous Agents]] with a [[id:e708fe89-4dff-4751-bf6b-78999dad4275][Evolutionary Selection]] mechanism[fn::Note: [[id:4dd9747a-0849-49bc-99dc-f226c5605270][Short sales constraints]] also rely on Heterogeneous Expectations [[id:f8110b7b-dc7d-4b58-8fa5-4c8cae7a290c][Heterogenous Agents]]]
 
-Considering those compatibles with Agent Based Models (ADD BACKLINK), those with Heterogeneous Expectations (ADD BACKLINK) are more adequate.
+Considering those compatibles with [[id:9789613e-f409-4593-b958-a2c9c8283bb6][Agent Based Models]], those with [[id:a3b9da87-5fcc-4e91-a3e7-65531ab57ad6][Heterogeneous expectations]] are more adequate.
 Among them, there are models that evaluate the share of [[id:aaecf5b0-903e-4cb7-9579-1f67c41a04a8][Fundamentalist]]s and [[id:fe80e1b8-d6ef-40ee-bbf3-e85901693248][Chartists]] [cite:@ge_2017_Endogenous;@hommes_2017_Booms;@lebaron_1999_Time] while other use a [[id:d6b88985-00f9-44dd-bcfa-5033fea9e73e][Switching Mechanisms]] in which agents change the expectational updating rule.
 The modeling approach proposed by [cite:@brock_1997_Rational;@anufriev_2013_Evolutionary] are one of the most accepted among [[id:053144da-4f34-4a23-97cb-c5af4b600164][Behavioral Finance]] literature because it replicates some of financial market characteristics and endogenously generates [[id:628bc545-800c-4f2b-beb6-6933d381a2ad][Asset bubble]].
 In this strand, the emergence of [[id:628bc545-800c-4f2b-beb6-6933d381a2ad][Asset bubble]] depend on market feedback (see above).
@@ -136,6 +143,7 @@ In this strand, the emergence of [[id:628bc545-800c-4f2b-beb6-6933d381a2ad][Asse
   - The literature disagre with the explanations for this result
 - Regarding the relation between [[id:628bc545-800c-4f2b-beb6-6933d381a2ad][Asset bubble]] and [[id:9326692f-7fa9-439b-8f3c-a7fa2d18aef8][Expectations]], some authors highlight the relevance of [[id:4dd9747a-0849-49bc-99dc-f226c5605270][Short sales constraints]] [cite:@ofek_2003_DotCom] while other emphasizes the compositions of investors type/expectational rule [cite:@anufriev_2012_Evolutionarya; @brock_1997_Rational] or even the market feedback type [cite:@bao_2019_When]
 - Few works relates investment decisions with long-term plans. [cite/t:@pastor_2009_Technological], for instance, connects the investment decions regarding new technologies with the rational choice to wait for implementing it due to [[id:4a226c14-c204-4493-b5f9-e06aa06e2954][Uncertanty]]
+  - [cite/t:@anufriev_2022_Asseta] relate asset price volatility with [[id:72b312d4-0004-496d-8889-b34766df2961][Investment Horizon]]s and not with productivity capacity
 - None of the revised studies relates expectational errors with [[id:5901b2ed-90d0-4b76-bafd-2e82d26e0388][Overinvestment]] even thought it is not profitable
 
 
@@ -147,6 +155,7 @@ In this strand, the emergence of [[id:628bc545-800c-4f2b-beb6-6933d381a2ad][Asse
     - Do they extrapolate a sectoral growth to the whole economy or the opposite? :: There is no such study, but firms seems to have a extrapolative behavior. The causal relation is not clear
     - Do firms still invest even its market-share is constant or decreasing? :: There is no such study. [cite/t:@demarzo_2007_Technological] propose an unconventional approach in which risky investment are not ruled out. This approach does not seem to take off
   - Is it reasonable to assume that firms have a long-term planning? :: There are some mixed evidence. Some studies report that expectations have short-term effects while other highlight the discontinuity of innovations. Further research is required.
+    - <2022-01-13 qui> [cite/t:@anufriev_2022_Asseta] suggests that the longer [[id:72b312d4-0004-496d-8889-b34766df2961][Investment Horizon]], the lower the asset price volatility.
 - Do autonomous investment lead the [[id:380b31ad-cdd5-4367-af2c-9ee199a085e7][Business Cycles]] persistently? :: There is no such paper. Further research is required.
 - Does the behavioral component generate [[id:628bc545-800c-4f2b-beb6-6933d381a2ad][Asset bubble]]? :: Yes. [[id:d6b88985-00f9-44dd-bcfa-5033fea9e73e][Switching Mechanisms]] models and [[id:a3b9da87-5fcc-4e91-a3e7-65531ab57ad6][Heterogeneous expectations]] hypothesis support this statement.
 - Does autonomous investment have a positive feedback? :: Unclear. The only paper the explicitly deals with this complementarity is [cite/t:@demarzo_2007_Technological]

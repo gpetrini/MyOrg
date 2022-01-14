@@ -41,14 +41,14 @@ In general, the authors try to build a most evidence-driven model as possible in
 - Firms send "brochure" with price and productivity of the produced machines to consumption goods firms
   - Consumption goods firms only have access to a fraction of all capital goods producers
 - Capital goods growth rate could not exceed a maximum value [cite:@doms_1998_Capital]
-- Firms market-share follows a [[id:ee3bbe84-16dd-4c96-975b-8dd1ce997eb1][Quasi-replicator]] mechanism in which depends on it relative difference to average competitiveness
+- Firms market-share follows a [[id:5e6a2fc8-c385-42ec-b048-a3b02a91125f][Quasi-replicator]] mechanism in which depends on it relative difference to average competitiveness
   - Different from the traditional replicator mechanism this one allows for negative market-share values. Thus, it also detects the firms that will exit the market and, then recompute the actual market-share
 - New entrants are assumed to be smaller than incumbents
 - Government pay a unemployment benefit as a share of actual wage
 - Households expend their whole income in consumption
 
 There are some theoretical hypothesis:
-- Expansion investment follow an [[id:2ae052eb-f080-450d-a057-42304db8c61a][Accelerator Model]]
+- Expansion investment follow an [[id:fe75d8ad-4d2a-4c6d-94d4-d55610598944][Accelerator Model]]
 - There is information imperfection
 - Firms keep obsolete machines accordingly to its price and productivity considering a payback rule and its affects the replacement rule
   - [cite/t:@sraffa_1960_Production] may have an alternative to this behavioral rule
@@ -76,12 +76,12 @@ Afterwards, subsequent models consider this one as a benchmark to evaluate model
 
 ** Relevance
 
-This paper present the [[id:434076e6-3bce-497b-ade1-7f8e3fde763e][Canonical Models]] version of the [[id:79290780-e39b-4457-a4a6-dfa869f508be][Keynes meets Schumpeter family]].
+This paper present the [[id:434076e6-3bce-497b-ade1-7f8e3fde763e][Canonical Models]] version of the [[id:3ff828b3-ceb5-4a18-8ba8-19b647bad967][Keynes meets Schumpeter family]].
 Most of the subsequent [[id:9789613e-f409-4593-b958-a2c9c8283bb6][Agent Based Models]] refers to this one as a canonical version of a heterodox ABM.
 Thus, my own work is influenced by this approach.
 
 Considering the objectives of [[id:95265264-f61f-4cf5-8cdc-e590b2a47cb9][Innovation bubble ABM]] chapter, this paper provides some theoretical discusssion on how to deal with innovation.
-Additionally, since this model uses a simple [[id:2ae052eb-f080-450d-a057-42304db8c61a][Accelerator Model]], the idea is to implement [[id:ed384551-c7ba-492f-be69-15906157ef9d][Sraffian suppermultiplier growth model]] specification and check the possible improvements.
+Additionally, since this model uses a simple [[id:fe75d8ad-4d2a-4c6d-94d4-d55610598944][Accelerator Model]], the idea is to implement [[id:ed384551-c7ba-492f-be69-15906157ef9d][Sraffian suppermultiplier growth model]] specification and check the possible improvements.
 
 ** Methodology
 
@@ -141,7 +141,7 @@ In order to evaluate the feedbacks between different supply (Schumpeter) and dem
 - There are some implicity hypothesis, such as the replacement of old vintages
 - Some equations are not present in the paper (only in the code)
 - It is unclear if this model is fully SFC. There is no equation that specify where the dead firms' capital will go and how the new entrants capital is financed.
-- Since the authors use a simple [[id:2ae052eb-f080-450d-a057-42304db8c61a][Accelerator Model]] function, unemployment benefit may act as a floor to stabilize the model
+- Since the authors use a simple [[id:fe75d8ad-4d2a-4c6d-94d4-d55610598944][Accelerator Model]] function, unemployment benefit may act as a floor to stabilize the model
 
 Considering the objective of my PhD Dissertation, this model have the following internal limitations:
 - Since prices are countercyclical, there is no room for an [[id:628bc545-800c-4f2b-beb6-6933d381a2ad][Asset bubble]] leading economic growth

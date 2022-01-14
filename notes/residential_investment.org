@@ -1,10 +1,10 @@
 :PROPERTIES:
-:ID:       bd858b50-6464-40f0-92ef-c4eddaa1af00
+:ID:       fdc30f2d-7aa9-4327-ab12-3c59475223cb
 :END:
-#+title: Geometric Law of Distribution
+#+title: Residential Investment
 #+HUGO_AUTO_SET_LASTMOD: t
 #+hugo_base_dir: ~/BrainDump/
 #+hugo_section: notes
-#+HUGO_TAGS: placeholder
+#+FILETAGS: placeholder
 #+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
 #+OPTIONS: num:nil ^:{} toc:nil

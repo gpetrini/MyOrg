@@ -370,7 +370,10 @@ Parts to read:
 :agenda-group: Residential investment determinants
 :END:
 
+*** DONE [#A] [[https://marcio.rbind.io/jmp/Santetti_GCRI.pdf][Santetti (2021): Growth, cycles, and residential investment]] :ResidentialInvestment:Empirical:US:SVAR:BusinessCycles:FunctionalIncomeDistribution:SraffianSupermultiplier:
+CLOSED: [2022-01-12 qua 17:41]
 *** RESULTS [#C] [[https://www.sciencedirect.com/science/article/abs/pii/S1051137709000552?via%3Dihub][Macroeconomic determinants of international housing markets]] :Panel:Results:Empirical:
+*** RESULTS [#C] [[https://giacomorella.github.io/assets/tvp_rella.pdf][Rella (2021): THE FED,HOUSING AND  HOUSEHOLD DEBT OVER TIME]] :Housing:ResidentialInvestment:HouseholdDebt:Empirical:MonetaryPolicy:
 *** WAIT [#B] <2021-03-05 sex> [[https://www.ecb.europa.eu/pub/financial-stability/fsr/special/html/ecb.fsrart202005_01~762d09d7a2.en.html][Trends in residential real estate lending standards and implications for fina...]] :QCA:DATA:DIRECTIONALS:
 *** MAYBE <2021-03-08 seg> [[https://www.tandfonline.com/doi/abs/10.1080/00036846.2021.1885613][Forecasts of growth in US residential investment: accuracy gains from consume...]] :Panel:Residential:
 ** [[file:../notes/20210210092940-household_debt_and_bank_credit.org][Household debt and Bank credit]] :Debt:
@@ -413,6 +416,7 @@ Parts to read:
 *** READ [#A] [[https://voxeu.org/article/what-drives-house-prices-some-lessons-literature][What drives house prices: Some lessons from the literature]] :HousePrices:Vox:
 *** READ [#B] [[https://www.sciencedirect.com/science/article/abs/pii/S1051137716300237][Housing finance and real-estate booms: A cross-country perspective]] :Data:QCA:DIRECTIONALS:Panel:
 *** READ [[https://www.sciencedirect.com/science/article/pii/S2325426221000139][Examining the determinants of housing prices and the influence of the spatial...]] :HousePrices:Spatial:Empirical:Panel:China:
+*** SKIM [#A] [[https://www.sciencedirect.com/science/article/pii/S0264837721006116][Yii et all (2022): Land availability and housing price in China: Empirical evidence from nonline...]] :HousingMarket:HousePrices:China:LandUse:Empirical:NonLinearities:
 *** SKIM [[http://saeb.feaa.uaic.ro/index.php/saeb/article/view/1480][House Price Shock and Business Cycle: The French Case | Saad | Scientific Ann...]] :Panel:HousePrices:BusinessCycle:France:
 *** SKIM [#C] [[https://link.springer.com/article/10.1007/s43253-021-00050-7][The financialization of rented homes: continuity and change in housing financ...]] :HousingMarket:RentalMarket:Financialization:Concepts:Definition:ResidentialInvestment:
 
@@ -454,7 +458,8 @@ CLOSED: [2021-11-08 seg 11:22]
 :PROPERTIES:
 :agenda-group: Innovation bubbles
 :END:
-*** READ [[https://doi.org/10.1007/s00191-021-00747-2][The age distribution of business firms]] :ABM:CapacityUtilization:Supermultiplier:
+*** DONE [[https://doi.org/10.1007/s00191-021-00747-2][The age distribution of business firms]] :ABM:CapacityUtilization:Supermultiplier:
+CLOSED: [2022-01-12 qua 09:24]
 
 
 *** PARTIAL [#A] [[http://www.carlotaperez.org/pubs?s=tf&l=en&a=technologicalrevolutionsandfinancialcapital][Technological revolutions and financial capital: the dynamics of bubbles and golden ages]]
@@ -548,6 +553,7 @@ CLOSED: [2021-11-24 qua 17:18]
 :END:
 
 
+*** PARTIAL [#A] [[https://www.sciencedirect.com/science/article/pii/S0167268121004923?dgcid=raven_sd_via_email][Asset price volatility and investment horizons: An experimental investigation...]] :Expectations:AssetPrice:InvestmentDeterminations:AssetBubble:ExperimentalFinance:Results:
 *** PARTIAL [#A] [[https://www.aeaweb.org/articles?id=10.1257/mic.4.4.35][Evolutionary Selection of Individual Expectations and Aggregate Outcomes in Asset Pricing Experiments]] :Beliefs:Communication:Equation:LearningToForecastExperiment:Speculation:AssetPrices:InformationKnowledge:Learning:ExperimentalForecast:HeuristicSwitching:TradingVolume:
 
 
@@ -604,6 +610,7 @@ CLOSED: [2021-11-24 qua 17:18]
 :agenda-group: General topics
 :END:
 
+** [#C] [[http://www.storep.org/wp/wp-content/uploads/2021/11/WP-1-2021.pdf][Di Bucchianico (2021): The Negative Natural Rate of Interest in the Modern Theories of Liquidity Trap and Secular Stagnation: Back to Böhm-Bawerk via Samuelson]] :SraffianTheory:MonetaryPolicy:SecularStagnation:LiquidityTrap:
 ** [#D] [[https://link.springer.com/chapter/10.1007/978-3-030-62070-7_13][Labour Markets and Income Distribution]] :Sraffian:OffOffice:LaborMarket:ClassStrugle:Book:
 
 ** [#E] [[https://sep.org.br/anais/2019/Sessoes-Ordinarias/Sessao3.Mesas21_30/Mesa27/273.pdf][Miranda e Mattos (2019)]] :Financialization:Empirical:Brazil:FinancialStability:FinancialFragility:

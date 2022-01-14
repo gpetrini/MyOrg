@@ -1,5 +1,5 @@
 :PROPERTIES:
-:ID:       b66f2a6b-7daa-4028-ad72-dd20ab5c182c
+:ID:       48e49516-bdf2-4a72-9895-225d8fc06fc2
 :END:
 #+title: Transaction Costs
 #+HUGO_AUTO_SET_LASTMOD: t

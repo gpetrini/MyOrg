@@ -1,5 +1,5 @@
 :PROPERTIES:
-:ID:       a43aa39b-c318-4e35-9b9b-3557ce6a4b86
+:ID:       b1175914-e5ec-4a74-9c2b-84cec51f8558
 :END:
 #+title: Great Depression
 #+HUGO_AUTO_SET_LASTMOD: t

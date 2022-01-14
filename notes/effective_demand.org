@@ -1,5 +1,5 @@
 :PROPERTIES:
-:ID:       17febd95-234e-48c1-9063-5532f82f6020
+:ID:       bc6c94e5-1334-4b01-b49c-b98419bd122e
 :END:
 #+title: Effective Demand
 #+HUGO_AUTO_SET_LASTMOD: t

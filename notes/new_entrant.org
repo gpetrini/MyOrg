@@ -1,5 +1,5 @@
 :PROPERTIES:
-:ID:       e40b4e38-246e-4c64-a159-83e811029644
+:ID:       78cb5012-e338-4532-927f-b55971887e8e
 :END:
 #+title: New Entrant
 #+HUGO_AUTO_SET_LASTMOD: t

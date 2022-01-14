@@ -7,7 +7,7 @@
 #+hugo_base_dir: ~/BrainDump/
 #+HUGO_CATEGORIES: "Literature Balance" "Dissertation writings"
 #+hugo_section: notes
-#+FILETAGS: placeholder ABM "Review of Literature"
+#+FILETAGS: placeholder ABM ReviewOfLiterature
 #+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
 #+OPTIONS: num:nil ^:{} toc:nil
 
@@ -16,8 +16,8 @@
 
 This note is an overview of the main Macroeconomic Agent Based Models.
 Each of them will be indicated as:
-- KS :: Keynes meets Schumpeter [cite:@dosi_2010_Schumpeter]
-- CATS ::
+- KS :: [[id:3ff828b3-ceb5-4a18-8ba8-19b647bad967][Keynes meets Schumpeter family]] [cite:@dosi_2010_Schumpeter]
+- CATS :: [[id:88dc308c-ddfb-4216-9587-0085cd197621][CATS ABM family]]
 - EURACE ::
 - MMM ::
 
@@ -41,7 +41,7 @@ The purpose of this note is to point the main feature of each model family out, 
 - What are the drivers of economic growth?
 - How non-residential investment is specified?
 - Is there any room for [[id:27df9b84-b199-482f-8197-bed51d7f1311][Autonomous Expenditures]]?
-- Is the model compatible with [[id:17febd95-234e-48c1-9063-5532f82f6020][Effective Demand]]?
+- Is the model compatible with [[id:bc6c94e5-1334-4b01-b49c-b98419bd122e][Effective Demand]]?
 - Is it possible to include [[id:628bc545-800c-4f2b-beb6-6933d381a2ad][Asset bubble]]s?
 - What are the consequences of technological [[id:5901b2ed-90d0-4b76-bafd-2e82d26e0388][Overinvestment]]?
 
@@ -51,7 +51,7 @@ Are there any [[id:8e9dd4a4-0f29-46d1-b8e4-5befe4df94cb][Stylized Facts]] that t
 Is this a more reasonable assumption?
 Considering the [[id:8d3c092d-8546-4dc0-8a04-55d3d8a09191][Dot-Com crisis]] episode, how this alternative closure deals with [[id:0c6c78fd-8d22-4002-9c82-7ccd82af43f5][Process Innovation]] and [[id:4db8e3cd-585a-435b-ae6a-df903e5bf7af][Product Innovation]]?
 
-Considering the [[id:5836de2d-5b59-42a5-ac90-c28bb5c4706b][Housing Agent Based Model]] chapter, this note also examine the possibilities to include the housing sector in those models.
+Considering the [[id:63b1aea6-c7ca-4d77-8896-b170a907a2ef][Housing Agent Based Model]] chapter, this note also examine the possibilities to include the housing sector in those models.
 
 ** Log
 
@@ -66,7 +66,7 @@ Considering the [[id:5836de2d-5b59-42a5-ac90-c28bb5c4706b][Housing Agent Based M
 
 ** Non-residential investment specification
 
-** Compatibility with [[id:17febd95-234e-48c1-9063-5532f82f6020][Effective Demand]]
+** Compatibility with [[id:bc6c94e5-1334-4b01-b49c-b98419bd122e][Effective Demand]]
 
 ** Household heterogeneity
 

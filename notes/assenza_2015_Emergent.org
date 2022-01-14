@@ -8,7 +8,7 @@
 #+hugo_base_dir: ~/BrainDump/
 #+hugo_section: notes
 #+hugo_categories: "Journal of Economic Dynamics and Control"
-#+FILETAGS: "Agent Based Models" "Upstream-Downstream dynamics" "CATS model family"
+#+FILETAGS: AgentBasedModels Upstream-DownstreamDynamics CATSModelFamily
 #+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
 #+cite_export: csl apa.csl
 
@@ -19,7 +19,7 @@
 
 ** 5SS
 
-[cite/t:@assenza_2015_Emergent] enhance the [[id:a80af3a1-8d95-417e-8126-258391e3b79c][CATS ABM family]] by including both a capital and a credit market.
+[cite/t:@assenza_2015_Emergent] enhance the [[id:88dc308c-ddfb-4216-9587-0085cd197621][CATS ABM family]] by including both a capital and a credit market.
 This small-scale model can reproduce endogenous [[id:380b31ad-cdd5-4367-af2c-9ee199a085e7][Business Cycles]] with [[id:67c15aaa-7b6e-4407-b2de-71570ce061f5][Financial Crises]].
 The authors state that the model novelty are the main drivers of this pattern.
 However, the constant High Powered Money seems to be a more adequate candidate for the booms and bursts.
@@ -28,14 +28,14 @@ However, the constant High Powered Money seems to be a more adequate candidate f
 ** Background and motivation
 
 - Some small-scale models do not have capital goods modeled
-  - This is the case for the first [[id:175002f6-69a8-4fa1-a7da-b76802ecc21e][General Equilibrium Model]]s and [[id:a80af3a1-8d95-417e-8126-258391e3b79c][CATS ABM family]]
+  - This is the case for the first [[id:175002f6-69a8-4fa1-a7da-b76802ecc21e][General Equilibrium Model]]s and [[id:88dc308c-ddfb-4216-9587-0085cd197621][CATS ABM family]]
 
 
 ** Supporting Ideas and hypothesis
 
 
-- Labour and capital are homogeneous for simplicity
-  - There is no endogenous innovation process as in the [[id:79290780-e39b-4457-a4a6-dfa869f508be][Keynes meets Schumpeter family]]
+- Labor and capital are homogeneous for simplicity
+  - There is no endogenous innovation process as in the [[id:3ff828b3-ceb5-4a18-8ba8-19b647bad967][Keynes meets Schumpeter family]].
 - It is assumed that each firm has one capitalist owner. Thus, the number of the firms match the number of capitalists households
   - Capitalists households act as rentiers
 - When not employed, workers households dis-saves its net worth
@@ -44,9 +44,9 @@ However, the constant High Powered Money seems to be a more adequate candidate f
 - Capital-goods firms use only labor to produce
 - Consumption-goods are non-storable, thus those firms cannot use their inventories to meet demand
   - Capital goods, otherwise, are storable
-- There is no complete information and there is [[id:b66f2a6b-7daa-4028-ad72-dd20ab5c182c][Transaction Costs]]
-  - [[id:b66f2a6b-7daa-4028-ad72-dd20ab5c182c][Transaction Costs]] is included imposing a finite number of interactions among agents
-    - Consumption- and capital-goods firms have higher [[id:b66f2a6b-7daa-4028-ad72-dd20ab5c182c][Transaction Costs]] compared to labor market
+- There is no complete information and there is [[id:48e49516-bdf2-4a72-9895-225d8fc06fc2][Transaction Costs]]
+  - [[id:48e49516-bdf2-4a72-9895-225d8fc06fc2][Transaction Costs]] is included imposing a finite number of interactions among agents
+    - Consumption- and capital-goods firms have higher [[id:48e49516-bdf2-4a72-9895-225d8fc06fc2][Transaction Costs]] compared to labor market
 - Households sorts consumption-goods firms according to its prices and choose to buy from the one with lower price
   - If their demand is not fullfilled, they move on to the next in the queue
     - If their demand is not fullfilled even after visit all firms, they have involuntary savings
@@ -55,10 +55,10 @@ However, the constant High Powered Money seems to be a more adequate candidate f
   - Thus, household will always accept the offer
   - There is no hiring or firing costs
   - Vacancies are filled when a firm is visited by an unemployed household
-- Household consumption function follows [[id:4a658725-67a6-4a44-b4e1-c74282b52a0e][Permanent Income Hypothesis]]
+- Household consumption function follows [[id:701434fb-497d-4da9-a78c-7dee02300b39][Permanent Income Hypothesis]]
   - Consumption depends onf human and financial wealth and follows an adaptative algorithm
-  - At odds with neoclassical [[id:4a658725-67a6-4a44-b4e1-c74282b52a0e][Permanent Income Hypothesis]], households consider past income insted of expected income
-  - Marginal propensity to consume is a non-linear function of wealth as in [[id:d2589b6e-f7b7-4417-90dc-22cd7264dc1b][Carrolls's consumption function]]
+  - At odds with neoclassical [[id:701434fb-497d-4da9-a78c-7dee02300b39][Permanent Income Hypothesis]], households consider past income instead of expected income
+  - Marginal propensity to consume is a non-linear function of wealth as in [[id:c66dd680-5e52-432f-b2a1-afa7188199a7][Carrolls's consumption function]]
 - Both firms reacts to market signals in which compares its production with effective final demand as well as competitors' average price
   - It is assumed that average price is publicaly available
 - Firms set price in an adaptative manner depending if they seeting its price above or bellow the average. However, the amount that firms will change price is stochastic
@@ -72,21 +72,21 @@ However, the constant High Powered Money seems to be a more adequate candidate f
   - Bank is assumed to be risk-neutral
   - Policy rate is similar to the one apply to the risk-free firm (does not go bankrupt)
   - Banks distribute profits to capitalists households
-- The stock of High Powerd Money is constant over time
+- The stock of High Powered Money is constant over time
 
 ** Purpose
 
 To evaluate what are the consequences of the interaction between capital goods and credit grating in a small-scale [[id:9789613e-f409-4593-b958-a2c9c8283bb6][Agent Based Models]].
-The reason for this step foward is to add realism to the [[id:a80af3a1-8d95-417e-8126-258391e3b79c][CATS ABM family]].
+The reason for this step foward is to add realism to the [[id:88dc308c-ddfb-4216-9587-0085cd197621][CATS ABM family]].
 
 ** Contribution
 
-This model adds a stylized supply chain (upstream-downstream dynamics (INSERIR ID)) by including capital- and consumption-goods firms in the [[id:a80af3a1-8d95-417e-8126-258391e3b79c][CATS ABM family]].
+This model adds a stylized supply chain (upstream-downstream dynamics (INSERIR ID)) by including capital- and consumption-goods firms in the [[id:88dc308c-ddfb-4216-9587-0085cd197621][CATS ABM family]];
 
 
 ** Relevance
 
-This paper is one of the main references for [[id:a80af3a1-8d95-417e-8126-258391e3b79c][CATS ABM family]] which have a capital and credit market.
+This paper is one of the main references for [[id:88dc308c-ddfb-4216-9587-0085cd197621][CATS ABM family]] which have a capital and credit market.
 This could be consider a representative sample of this framework, providing a [[id:434076e6-3bce-497b-ade1-7f8e3fde763e][Canonical Models]].
 
 ** Methodology
@@ -96,7 +96,7 @@ The authors present an simulated [[id:9789613e-f409-4593-b958-a2c9c8283bb6][Agen
 
 ** Results
 
-- The interection between Capital and Credit markets with adaptative behavior is the main determinant of GDP volatility and implies endogenous [[id:380b31ad-cdd5-4367-af2c-9ee199a085e7][Business Cycles]] with [[id:67c15aaa-7b6e-4407-b2de-71570ce061f5][Financial Crises]]
+- The intersection between Capital and Credit markets with adaptative behavior is the main determinant of GDP volatility and implies endogenous [[id:380b31ad-cdd5-4367-af2c-9ee199a085e7][Business Cycles]] with [[id:67c15aaa-7b6e-4407-b2de-71570ce061f5][Financial Crises]]
   - And this result is an emergent property that occur in all simulations
   - Close to the collapse, there is an increase of debt and riskness of consumption-goods firms, be denied to recieve credit; reducing production and investment
 - Long-run GDP gravitates towards full-employment
@@ -123,7 +123,7 @@ The authors present an simulated [[id:9789613e-f409-4593-b958-a2c9c8283bb6][Agen
   - A more adequate alternative must have endogenous money supply
   - Thus, firms expansions reaches a financial ceiling so money flows from one agent to another, leaving the first credit constrained
 - It seems unreasonable to assume that firms change prices in a stochastic manner
-  - However, when innovation is endogenous, stochastic and affects labor cost (as in [[id:79290780-e39b-4457-a4a6-dfa869f508be][Keynes meets Schumpeter family]]), prices become stochastic as well
+  - However, when innovation is endogenous, stochastic and affects labor cost (as in [[id:3ff828b3-ceb5-4a18-8ba8-19b647bad967][Keynes meets Schumpeter family]]), prices become stochastic as well
 
 
 
@@ -147,7 +147,7 @@ Firms consider the average capital stock ($\bar K$) in their decision making:
 \end{equation}
 #+END_latex
 in which $\nu$ is a positive and smaller than one parameter and $\omega$ is the capacity utilization ratio.
-In this case, the history of capacity utilization ratio will influence the purchace of capital goods in the future.
+In this case, the history of capacity utilization ratio will influence the purchase of capital goods in the future.
 
 Considering both expansion and replacement investment, planned total investment is defined as:
 #+BEGIN_latex

@@ -1,5 +1,5 @@
 :PROPERTIES:
-:ID:       d2589b6e-f7b7-4417-90dc-22cd7264dc1b
+:ID:       c66dd680-5e52-432f-b2a1-afa7188199a7
 :END:
 #+title: Carrolls's consumption function
 #+HUGO_AUTO_SET_LASTMOD: t

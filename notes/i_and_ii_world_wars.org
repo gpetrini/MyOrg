@@ -1,5 +1,5 @@
 :PROPERTIES:
-:ID:       b0e0ff42-d4fd-4fea-bace-219ee43cb5df
+:ID:       493e3798-1640-44da-88f5-c83e20a12a24
 :END:
 #+title: I and II World Wars
 #+HUGO_AUTO_SET_LASTMOD: t

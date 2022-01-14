@@ -1,13 +1,12 @@
 :PROPERTIES:
-:ID:       a757b53b-d6e4-4e3f-9ddb-3d139686d392
+:ID:       624f5b97-8e6f-42f3-8bef-758aea417233
 :END:
 #+title: PhD Dissertation Discussions
 #+HUGO_AUTO_SET_LASTMOD: t
 #+hugo_base_dir: ~/BrainDump/
 #+hugo_section: notes
 #+HUGO_TAGS: placeholder
-#+BIBLIOGRAPHY: /HDD/Org/zotero_refs.bib
-# #+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
 #+OPTIONS: num:nil ^:{} toc:nil
 
 * Introduction
@@ -54,13 +53,57 @@ Most of them are meeting notes.
   - Present a modeling strategy in which agents persists investing more even though its market-share shrinks
     - Possibly imposing a larger investment plan horizon
   - Firms merge expectations regarding the whole economy with its own sector
-  - The sum of market-share could not bt greater than one
+  - The sum of market-share could not but greater than one
+
+** Implementation
+
+*** First version questions
+
+**** Which inventory variable should use?
+
+***** =Post_Production_Inventory= Equation
+
+***** Check which inventory in =End_Period_Inventory=
+***** Check which inventory in =End_Period_Inventory=
+***** ==__Check_Inventories= Equation
+**** Deflation and pricing
+***** In =Expansion_Investment= Equation, Capital goods should be deflated but =Capital_Goods_Price=?
+***** What is the difference between =Capital_Goods_Price= and price of the capital object =Capital_Obj_Price=
+**** Pointers
+***** =Nominal_Wage= should be at root or root -> next?
+**** Capital and innovation
+
+- Equation =Capital_Quantity= returns a lagged value. Does it means that when a lagged capital variable is used in another equation it is actually t-2?
+- Should the =Technological_Frontier= be the same across sectors?
+  - The same goes for =__Imitation= and =__Innovation=
+- Is the maximum capital growth rate based on a empirical reference?
+- Why in =Innovation_Workers= Equation the value is set to =RD_Workers= when is at the technological frontier?
+- =RD_Workers= Equation should be applied to all firms?
+**** Credit
+
+- Credit loans should be under bank or firms/households respectively?
+- Since [cite/t:@pedrosa_2021_What] model only have credit to firms, =Expected_Return_Consumption_Loan= should be similar to firm loans?
+  - And this should be the same for mortgage loan?
+  - What are the differences between =__idBank= and =__BankID= (=idBank= in the original)
+- How to include mortgages?
+- Which level for =__Bank_Draw= Equation?
+**** Production
+
+
+**** Accounting
+
+- Household consumption that defines its NFW should be nominal or real?
+- Should =Houlsehold_Opening_Deposits= include amortisation and interest deduction?
+**** General
+
+- Set parameters values programatically
+- It is fine to use =Variable = float V("Variable")=?
 
 * Housing AB model
 
 ** General topics
 
-- Check whether a finite housing demand is not incompatible with a infinite labour supply
+- Check whether a finite housing demand is not incompatible with a infinite labor supply
 - Explicitly present how house prices affects the whole economy
 
 ** Model design

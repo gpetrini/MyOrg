@@ -1,0 +1,67 @@
+:PROPERTIES:
+:ID:       38a1c9de-214a-423c-9c69-6c5ade77feae
+:ROAM_REFS: @hartley_2022_Episodic
+:END:
+#+title:
+#+OPTIONS: num:nil ^:{} toc:nil
+#+TITLE: Hartley: Episodic Incidence of Harrodian Instability and the Kaleckian Growth Model: A Markov‐switching Approach - (2022-02, Metroeconomica)
+#+hugo_base_dir: ~/BrainDump/
+#+hugo_section: notes
+#+hugo_categories: Metroeconomica
+#+FILETAGS:
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+
+** Background and motivation
+
+
+** Supporting Ideas and hypothesis
+
+
+** Purpose
+
+
+** Contribution
+
+
+** Relevance
+
+
+** Methodology
+
+
+** Results
+
+
+** Interesting findings and not categorized stuff
+
+
+** Critics
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+To assess the conditional stability properties of the Kaleckian growth framework in the medium-­run, I investigate behavioral corridors where investment will be unresponsive to departures of actual from desired utilization rates—­thus providing for the episodic incidence of Harrodian instability. I empirically assess this relationship using two-­state Markov-­Switching Structural Vector Auto-­Regression fit on non-­residential fixed investment and the rate of capacity utilization for the United States. To directly assess the relevance of a behavioral corridor for the cyclical dynamics of the endogenous variables, the probabilities governing the transition between hidden states are modelled as a time-­ varying function of gap between realized utilization rates and their long-­run average. Results suggest the response of investment to structural utilization shocks is highly regime-­dependent and predominantly occurs during business cycle downturns.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+* References
+
+
+
+#+print_bibliography:
