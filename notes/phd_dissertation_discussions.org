@@ -54,50 +54,70 @@ Most of them are meeting notes.
     - Possibly imposing a larger investment plan horizon
   - Firms merge expectations regarding the whole economy with its own sector
   - The sum of market-share could not but greater than one
+- Households should have financial relations with only one bank?
 
 ** Implementation
 
-*** First version questions
+*** First version questions <2022-01-14 sex>
 
-**** Which inventory variable should use?
-
-***** =Post_Production_Inventory= Equation
-
-***** Check which inventory in =End_Period_Inventory=
-***** Check which inventory in =End_Period_Inventory=
-***** ==__Check_Inventories= Equation
-**** Deflation and pricing
-***** In =Expansion_Investment= Equation, Capital goods should be deflated but =Capital_Goods_Price=?
-***** What is the difference between =Capital_Goods_Price= and price of the capital object =Capital_Obj_Price=
-**** Pointers
-***** =Nominal_Wage= should be at root or root -> next?
-**** Capital and innovation
-
-- Equation =Capital_Quantity= returns a lagged value. Does it means that when a lagged capital variable is used in another equation it is actually t-2?
-- Should the =Technological_Frontier= be the same across sectors?
-  - The same goes for =__Imitation= and =__Innovation=
-- Is the maximum capital growth rate based on a empirical reference?
-- Why in =Innovation_Workers= Equation the value is set to =RD_Workers= when is at the technological frontier?
-- =RD_Workers= Equation should be applied to all firms?
 **** Credit
+- What the difference between amortisation schedule, amortisation due, amortisation flow?
+- How to aggregate leverage? Total debt to total asset ratio or some other weight?
+- How does more than a loan change bank averate interest rate equation?
+- How to define household interest payment? Similar to firms?
+  - Same to mortgage?
+- How to calculate average interest rate?
+- Check household housekeeping debt servicing procedure
+- How to use =COUNT_HOOK= for bank to access household loans?
+  - How to add household id?
+  - How to add households loans in bank total credity supply equation?
+- How to estimate household probability to default when there is more than one loan?
+- What to do next after household are credit constrained? Prioritize some kind of loan?
+  - Banks grants consumption loans and then mortgage loans?
+  - Banks consider household gross or disposable income?
+- Should household interest rate be the same for mortgage and consumption loans?
+- Household income debt distribution index should use which variable?
+  - Current version uses disposable income
+- Households consumption loan change should use outstanding loan value or other variable?
+- Is DebtToSalesRatio correct in mkks?
+- In floating interest rate, aggred interest rate is the last interest rate proposed by bank to the firm?
 
-- Credit loans should be under bank or firms/households respectively?
-- Since [cite/t:@pedrosa_2021_What] model only have credit to firms, =Expected_Return_Consumption_Loan= should be similar to firm loans?
-  - And this should be the same for mortgage loan?
-  - What are the differences between =__idBank= and =__BankID= (=idBank= in the original)
-- How to include mortgages?
-- Which level for =__Bank_Draw= Equation?
-**** Production
+**** Accounting and aggregates
 
+- How to deduct household consumption to close GDP accounting when households are heterogeneous?
+- How to specify households end-of-period deposits? Using a fixing share? Residual variable?
+- How to check unfilled demand accounting with more than one sector?
+  - Same question for firm financial status incidence
+- Firm's competitiveness should be different between sectors?
+  - Firm's average competitiveness should use market or economy share?
+- How to check market share accounting with more than one sector? And how to update it?
+  - Same goes to market share rebase
+- How to implement revision firm sales with more than one sector?
+- Average markkup should have sectoral heterogeinity?
+- Aggregate firm productivity should follow economy or market-share?
+- Should firms financial fragility index have sectoral heterogeinity?
 
-**** Accounting
+**** Capital and Production (related to sectoral divergence)
 
-- Household consumption that defines its NFW should be nominal or real?
-- Should =Houlsehold_Opening_Deposits= include amortisation and interest deduction?
+- Aggregate capacity utilization should include only consumption goods sector?
+  - Hypothesis: Yes
+- Firms desired production should have sectoral divergence?
+  - Same question for effective production
+  - Same question for investment variables
+- Post production inventory should be opening or end-of-period deposits?
+  - Current version: lagged end-of-period inventories
+  - In sales equation, should be opening inventories or post production?
+
+**** Entry and exit
+- Household exit mechanism should be activated in the homogenous household version?
+  - Which contribution variable to generate?
+  - What to do with houses when households exit?
+  - How does it change household financial wealth accounting?
+
 **** General
 
-- Set parameters values programatically
-- It is fine to use =Variable = float V("Variable")=?
+- When CYCLE is required to get the SUM?
+- If all code is in a single file, LSD IDE can get description, variable use and used in?
 
 * Housing AB model
 
@@ -105,6 +125,7 @@ Most of them are meeting notes.
 
 - Check whether a finite housing demand is not incompatible with a infinite labor supply
 - Explicitly present how house prices affects the whole economy
+- Add Varieties of residential capitalism diagram discussion
 
 ** Model design
 

@@ -553,6 +553,8 @@ CLOSED: [2021-11-24 qua 17:18]
 :END:
 
 
+*** READ [#A] [[https://www.sciencedirect.com/science/article/pii/S0165188917301616][Surprise, surprise – Measuring firm-level investment innovations]] :Germany:FirmData:InvestmentPlan:Survey:Results:
+
 *** PARTIAL [#A] [[https://www.sciencedirect.com/science/article/pii/S0167268121004923?dgcid=raven_sd_via_email][Asset price volatility and investment horizons: An experimental investigation...]] :Expectations:AssetPrice:InvestmentDeterminations:AssetBubble:ExperimentalFinance:Results:
 *** PARTIAL [#A] [[https://www.aeaweb.org/articles?id=10.1257/mic.4.4.35][Evolutionary Selection of Individual Expectations and Aggregate Outcomes in Asset Pricing Experiments]] :Beliefs:Communication:Equation:LearningToForecastExperiment:Speculation:AssetPrices:InformationKnowledge:Learning:ExperimentalForecast:HeuristicSwitching:TradingVolume:
 
@@ -569,19 +571,10 @@ CLOSED: [2021-11-24 qua 17:18]
 
 
 *** RESULTS [#A] [[https://www.sciencedirect.com/science/article/pii/S0165188909000293][Price stability and volatility in markets with positive and negative expectations feedback: An experimental investigation]] :CoordinationFailure:ExpectationFormation:ExperimentalFinance:PositiveFeedbacks:
-*** RESULTS [#A] [[https://doi.org/10.1093/rfs/hhaa121][Experience Does Not Eliminate Bubbles: Experimental Evidence]] :Expectations:LearningToForecastExperiment:Experiments:Results:
-*** RESULTS [#A] [[https://www.sciencedirect.com/science/article/pii/S0167268117303001][Can firms see into the future? Survey evidence from Germany]] :Germany:ExpectationFormation:FirmData:Learning:
-*** RESULTS [#B] [[https://ideas.repec.org/p/een/camaaa/2021-68.html][Initial beliefs uncertainty]] :Expectations:Results:ToMention:Bias:Beliefs:
-
-*** RESULTS [#C] [[https://www.sciencedirect.com/science/article/pii/S0165188917301616][Surprise, surprise – Measuring firm-level investment innovations]] :Germany:FirmData:InvestmentPlan:Survey:Results:
-
 *** RESULTS [#C] [[https://www.sciencedirect.com/science/article/pii/S0165188907000048][Price bubbles sans dividend anchors: Evidence from laboratory stock markets]] :Bubbles:AssetBubble:Experiments:ExperimentalForecast:
-
-*** RESULTS [#C] [[https://www.aeaweb.org/articles?id=10.1257/000282803322655392][Maps of Bounded Rationality: Psychology for Behavioral Economics]] :Canonical:Behavioral:DecisionMaking:Results:ToCite:
 
 *** RESULTS [#D] [[https://www.sciencedirect.com/science/article/pii/S0165188912002035][Are the representative agent’s beliefs based on efficient econometric models?]] :BoundedRationality:LearningToForecastExperiment:Forecast:Survey:Expectations:Heterogeinity:
 
-*** RESULTS [#E] [[https://www.tse-fr.eu/sites/default/files/TSE/documents/doc/wp/2018/wp_tse_882.pdf][Learning in Speculative Bubbles: An Experiment]] :Bubbles:Learning:LearningToForecastExperiment:Speculation:FinancialMarket:
 *** RESULTS [#E] [[https://epub.ub.uni-muenchen.de/41214/1/Buchheim_Link.pdf][The Effect of Disaggregate Information on theExpectation Formation of Firms]] :DisaggregateInformation:ExpectationFormation:Results:
 
 

@@ -1588,7 +1588,73 @@ m = \frac{1 + n}{1 + \Delta Custos}
 - Piso da margem nominal = taxa de juros nominal
   - Concorrência só iguala os retornos nominais
 
-** Incidência tributária, distribuição e conflito distributivo: uma análise Sraffiana
+** Aspectos empíricos
+
+
+Observando os países desenvolvidos, nota-se mudanças no padrão de distribuição durante as seguintes fases:
+1. Era de Ouro (1946-1967)
+2. Explosão salarial e contestação (1968-1987): parcela salarial alta com taxa de lucro baixa
+3. Choque de juros de Volcker (1979): Aumento da taxa de juros acompanhado de uma parcela salarial reduzida
+
+No Brasil, houve inflação alta e taxa de juros indexada.
+
+*** Países avançados nos anos recentes
+
+
+Nos países avançados, observa-se taxa de juros reais e nominais reduzidas desde fins dos anos 1990[fn::
+Vale pontuar que a taxa de juro longa também se reduziu nesse período.].
+Porém, a parcela dos salários na renda não tendeu a aumentar.
+Isso poderia implicar em um movimento divergente entre taxa de juros e taxa de lucro.
+Argumenta-se que isso pode ser um problema para a teoria monetária da distribuição, mas isso também é para outras teorias  como a de Smith, Ricardo, Keynes e para a teoria econômica.
+
+
+*** Explicações neoclássicas
+
+- Lucro normal (competitiva)
+  - Se a taxa de lucro reduz, o preço relativos dos bens de capital cairiam também
+    - Associada a redução da queda dos preços dos serviços
+  - Alternativamente, argumenta-se que há uma elasticidade de substituição maior que a unidade (supondo uma função de produção Cobb-Douglas)
+    - Piketty utiliza outro conceito de capital, incluindo a dívida pública (já que faz parte da riqueza privada)
+  - Aumento da diferença entre juros e lucros (/equity premium/) associada a ausência de ativos seguros
+- Lucro anormal
+  - Associado a um maior poder de mercado das grandes empresas e menos concorrência
+    - Relacionado a fatores tecnológicos (empresas que se aproveitam de economia de escala e de rede)
+    - Enfraquecimento das políticas anti-trust e que induziriam a concorrência
+
+
+
+*** Explicações sraffianas
+
+- Aumento da taxa de lucro normal
+  - Maiores spreads bancários?
+    - Será que existe uma taxa nominal de /net of profits of enterpirese/ (risco geral) que subiu?
+  - Possível papel da bolsa de valores:
+    - Pivetti (redução dos juros e Quantitative Easeing)
+      - Custo de oportunidade do capital inclui os retornos financeiros
+        - Associado às políticas de reduções
+      - Pivetti argumenta que tal mudança é temporária
+      - No limite, é outra forma que a política monetária afeta a distribuição
+    - Shiller discute o baixo poder de barganha dos trabalhadores
+      - Curiosamente, isso validaria a teoria da distribuição do Marx em que o tamanho do excedente determina a taxa de lucro
+- Lucro anormal (Stirati, Pivetti): Mais renda
+  - Remuneração dos agentes (redistribuição dos lucros anormais)
+  - Mais monopólios privados (privatizações)
+  - Mais rendas de direito de propriedade (patentes, licenças, etc)
+    - Pode ter um efeito negativo sobre a distribuição, mas não afeta a variável distributiva base
+    - A persistência de rendas anormais fica mais longa
+    - Similar ao modelo da renda da terra em que este capitalista tem uma terra de qualidade superior de forma mais persistente
+
+
+**** Remuneração gerencial
+
+Essa discussão é inspirada a partir de salários de gerentes bastante elevados e, portanto, poderia explicar essa diferença entre juros e lucros
+
+- Esses salários tem uma parte indireta dos lucros
+- É possível que estes salários elevados não afetem os lucros na técnica relevante
+
+Algumas pondeções a essa análise considera:
+- Serrano argumenta que é mais razoável anualizar a perda relativa dos sindicatos.
+- Há dificuldade de classificar este tipo de renda (depende dos lucros também)** Incidência tributária, distribuição e conflito distributivo: uma análise Sraffiana
 
 *** Introdução
 
@@ -1890,7 +1956,35 @@ Partindo do modelo geral, é possível explorar diferentes fechamentos para dist
 
 * Concorrência e gravitação
 
+** Concorrência e o mecanismo de mercado
 
+- Mobilidade de capital versus o número de agentes
+  - Na teoria marginalista, o poder de mercado se reduz com o número de agentes ou com o grau de colusão
+    - No limite, a curva de demanda é horizontal em que não consegue determinar os preços (concorrência perfeita)
+    - Também depende da reação dos concorrentes
+  - Como há determinação simultânea entre preços e quantidades na teoria neoclássica, esse conceito de concorrência associado ao número de agentes se torna necessária
+  - Não precisa haver entrada efetiva de novas firmas. A concorrência potencial já pode ser o suficiente para impedir guerra de preços
+- Técnicas e não "empresas" determinam preços
+  - A concorrência impede a manutenção de taxas de lucro muito acima do normal na ausência de vantagens de produção
+    Não é necessário que todo o mercado utilize a técnica dominante, mas alguns produtores a utilizarem, torna-se insustentável manter preços muito acima dos custos de produção
+    - A convergência dos preços costuma ser mais rápido que a difusão da técnica produtiva
+- Inter-setorial e taxa de lucro uniforme
+  - Isso não implica que todas as empresas usam a técnica dominante
+  - Busca por lucros anormais não é incompatível com a gravitação
+  - Lucro anormal persistente depende da transformação desse lucro em rendas
+    - Gerando coexistência de técnicas, por exemplo
+- Inter-setorial e preços uniformes
+
+
+Concorrência nivela, mas não determina as variáveis distributivas nem diretamente o emprego dos "fatores".
+
+** O ponto da demanda efetiva ao preço normal
+
+- Preços de mercado são empíricos
+-
+
+
+** A literature sobre gravitação
 * Fisiocratas & Smith
 :PROPERTIES:
 :ID:       2e53f53c-53ec-4a68-8e03-a4b752d3de72

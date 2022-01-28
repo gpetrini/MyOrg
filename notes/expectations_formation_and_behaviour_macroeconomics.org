@@ -14,6 +14,7 @@
 
 This note contains an overview of the literature about [[id:9326692f-7fa9-439b-8f3c-a7fa2d18aef8][Expectations]] formation and some discussion on [[id:053144da-4f34-4a23-97cb-c5af4b600164][Behavioral Finance]].
 The idea is to summarize some conclusions to be further utilized in the [[id:95265264-f61f-4cf5-8cdc-e590b2a47cb9][Innovation bubble ABM]] chapter.
+This note focus on firm's expectation formation and extend to financial markets when not available.
 
 
 ** Motivation
@@ -38,7 +39,7 @@ The empirical reason for this is to mimic some pattern during the [[id:8d3c092d-
 - [[id:29ce4a60-6429-44ef-a5b2-f48fba192d79][Behavior Bias]] models associate deviations from the [[id:1a84049d-62ce-4f17-a492-cd1a6a74ebe9][Fundamentals]] as a results of a [[id:38ef3b8c-65b7-4dab-aca1-6f94db9f4287][Cognitive restriction]]. Thus, those models assume that agents are [[id:c35474df-becc-4ac3-8370-d381ec5df2ab][Boundedly Rational]]
 - Only [cite/t:@demarzo_2007_Technological] investigate the relation between [[id:628bc545-800c-4f2b-beb6-6933d381a2ad][Asset bubble]] and [[id:5901b2ed-90d0-4b76-bafd-2e82d26e0388][Overinvestment]] even when investments are not profitable
   - They present a [[id:175002f6-69a8-4fa1-a7da-b76802ecc21e][General Equilibrium Model]] in which a [[id:6f2f090f-256b-408a-94e6-6c1d1a0b3aae][Relative Wealth Effect]] make risky investment persistent
-    - The main idea is a decreasing function of investors utility whith others wealth increase
+    - The main idea is a decreasing function of investors utility with others wealth increase
     - Since resource are scarce, investors compete for them and wealth concern initiate endogenously
     - Thus, the modeling approach generates positive [[id:c5c9caae-7306-485e-ab15-bc579733407a][Feedback mechanisms]]
 
@@ -54,7 +55,7 @@ The empirical reason for this is to mimic some pattern during the [[id:8d3c092d-
 Most empirical studies using [[id:d0986877-a46e-4c2b-965a-a7bdf6aa952f][Survey Data]] focus on household and just a few of them analyze firms [cite:@coibion_2018_How;@gennaioli_2016_Expectations].
 
 - [cite/t:@coibion_2018_How] report that firms do not pay much attention to [[id:7bf9c01a-c5aa-4984-a9a0-12dfa1e3e9c7][General price inflation]] as they do to GDP or sectoral inflation
-  - Design: Managers response related to New Zeland firms (2013-2016)
+  - Design: Managers response related to New Zealand firms (2013-2016)
   - Firms updates their expectations more frequently when:
     - are in a more dynamic sector
     - there are more "bad news"
@@ -65,7 +66,7 @@ Most empirical studies using [[id:d0986877-a46e-4c2b-965a-a7bdf6aa952f][Survey D
 - [cite/t:@koga_2017_Behavioral]analyze how [[id:9326692f-7fa9-439b-8f3c-a7fa2d18aef8][Expectations]] affects investment decions in capacity expansion and R&D
   - Design: Japanese firms from 1989-2015
   - This is one of the few papers that relate [[id:65283fb0-edd5-4472-b9e2-0e32542305b8][Optmism bias]] and [[id:bcc9f9e2-34dc-4e1c-b00f-47d5de24c0a5][Negative bias]] with investment
-  - They find that optmism rises R&D while pessimism suppres it
+  - They find that optimism rises R&D while pessimism suppres it
   - They report that firms disagre more on industry demand than GDP
   - [[id:380b31ad-cdd5-4367-af2c-9ee199a085e7][Business Cycles]] fluctuations affect expectations on the short-run
   - Highly profitable firms are more optmistic while those with liquidity constraints are more pessimist
@@ -87,7 +88,7 @@ Most empirical studies using [[id:d0986877-a46e-4c2b-965a-a7bdf6aa952f][Survey D
 
 ** Evidence from the lab
 
-It is important to not that most studies that focus on investors' behavior investigate stock prices movements.
+It is important to note that most studies that focus on investors' behavior investigate stock prices movements.
 Thus, those models are a generalization of [[id:1a81aea9-3f06-4877-904e-5aa5ea051512][Asset-pricing models]].
 In the [[id:053144da-4f34-4a23-97cb-c5af4b600164][Behavioral Finance]] and [[id:c41a871c-bfe1-470b-8c55-35650903af74][Experimental Finance]] literature, [[id:dfe69c29-9425-48b9-bf72-39b6a9ede338][Learn to Optmize Experiments]] seems to focus more on quantities rather than prices (compared to [[id:88bb712d-d234-4e6c-a850-e3a55f5a30be][Learn to Forecast Experiments]]).
 However, both of then does not study how those behaviors affects real variables.
@@ -117,7 +118,7 @@ Among the replicated [[id:8e9dd4a4-0f29-46d1-b8e4-5befe4df94cb][Stylized Facts]]
 - High persistency
 - Clustered volatility
 - Fat tails
-- Rational [[id:11044897-734e-47b1-9abd-b5d2a10cbaf0][Speculation]] is destabilzing [cite:@delong_1990_Positive]
+- Rational [[id:11044897-734e-47b1-9abd-b5d2a10cbaf0][Speculation]] is destabilizing [cite:@delong_1990_Positive]
 
 * Modeling approaches
 :PROPERTIES:

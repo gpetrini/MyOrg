@@ -11,3 +11,5 @@
 #+HUGO_TAGS: placeholder
 
 #+OPTIONS: num:nil ^:{} toc:nil
+
+For a introduction to financial frictions in macroeconomics see [[http://econweb.umd.edu/~drechsel/teaching/index.htm][ECON 474 - University of Maryland]]

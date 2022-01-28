@@ -11,18 +11,28 @@
 https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 * Dissertation's general settings [0%] :@PhD:@UNICAMP:
+** TODO [#A] Selecionar lugares para doutorado sanduíche
+
 ** TODO Marcar qualificação
+*** TODO Conferir período máximo para defesa
 ** TODO Criar script para copiar tabelas e figuras dos scripts (link simbólico preferencialmente)
 - [ ] Pesquisar se tem como fazer com que o Latex reconheça pastas
 
 ** TODO Ver possibilidade do proficiência com diploma do VM
-
 
 * ABM dot-com SSM model :@Article:@PhD:Chapter:
 :PROPERTIES:
 :agenda-group: Dot-Com ABM
 :END:
 
+** TODO [#A] To evaluate
+
+*** TODO Stress KS and MKKS model with /ad hoc/ expected market-share increase
+
+**** TODO Experiments alternatives
+- This shock must be temporary and increase previous market-share by an high amount
+**** TODO Analyze and report
+- Explain the results even if they do not change
 ** TODO Writing steps
 
 *** TODO Introduction
@@ -54,6 +64,9 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 **** TODO SSM-enhanced stylized facts
 
 ***** TODO Check which SSM Stylized facts K+S replicates
+
+- Check inventories ratio
+
 ***** TODO Check which SSM Stylized facts MMM replicates
 
 
@@ -82,45 +95,37 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 ** TODO To implement, comment and create checkers
 *** TODO General
-**** TODO Define documentation snippets
+**** TODO Implement sectoral divergence in production functions and aggregates
+**** TODO Check how to count for both firms and household loans using hooks
+*** STRT Banks and respective checkers
+*** TODO Aggregates and respective checkers
+*** TODO Firm entry and exit
+**** WAIT How to adapt household entry and exit?
+*** TODO Capital goods sector and its respective checkers
+*** TODO Initialization script
+*** TODO Implement endogenous expectations mechanism routine
 
-- Add latex flag
+**** TODO Read [cite/t:@dosi_2020_RATIONAL] source code
 
-*** TODO Production
+** TODO Model run
 
-**** TODO Create checkers
+*** TODO Baseline model run
 
-**** TODO Add sectoral divergence
+*** TODO Run model with endogenous expectations
 
-*** TODO Firms-related functions
+** TODO Plots
+*** TODO Script to generate plots for baseline
+*** TODO Additional plots for endogenous mechanism
+** TODO Analyzes
 
-**** TODO Create checkers
+*** TODO Model with no expectational endogenous mechanism
 
-*** TODO Credit
+*** TODO Model with expectational endogenous mechanism
 
-**** TODO Credit to firms
-**** TODO Create checkers
-**** TODO Banks
+*** TODO Report model with endogenous expectations
 
-*** TODO Labour market
-
-**** TODO Create checkers
-
-*** TODO Aggregation
-
-*** TODO Expectations
-
-*** TODO Entry and exit
-
-*** TODO Initialization
-
-*** WAIT Expectational heterogeinity
-
-*** WAIT Government
-*** TODO Review TODOs in code
-SCHEDULED: <2022-01-12 qua>
-
-** TODO Read [cite/t:@dosi_2020_RATIONAL] source code
+** TODO Performance
+*** TODO Check cpp lists and how to employ them for households
 
 * Nikiforos econometric model response :@Article:
 :PROPERTIES:
@@ -128,58 +133,54 @@ SCHEDULED: <2022-01-12 qua>
 :END:
 
 
-*Objetivo:* Como discutir ciclo a luz do supermultiplicador?
-
-** TODO Para TD
-
-*** TODO [#B] Conferir se a seleção dos lags precisa usar dataframe em diferença
-
-*** HOLD Esclarecimentos teóricos (Lucas e Summa)
-
-  - Discussão das defasagens (Kalecki) e o acelerador
-    - Demora para ter o efeito da oferta e não tão mecânico
-  - Super é uma teoria mais geral do que Nikiforos supõe (não é apenas a especificação de Freitas e Serrano)
-    - Este não é o melhor modelo, dentre outros motivos, porque possui uma variável não observável. Existem outras funções também compatíveis com o supermultiplicador
-    - Análise do plano <h, u> não é o melhor
-    - É possível ter um ciclo puxado pelo investimento autônomo, mas não o tempo todo
-  - Ciclo no supermultiplicador é mais explicado por variações nos gastos autônomos do que por variações na taxa de investimento
+** TODO [#A] Escrever abstract e enviar ao Summa
+SCHEDULED: <2022-01-31 seg>
 
 
-** TODO Ver ciclo nos gastos autônomos
 
-** TODO Estabilidade dos parâmetros
-
-
-** TODO Decompor investimento em estoque de capital (construção indústria), máquinas, equipamentos e estoques
-** TODO Investimento autônomo por acaso seguido de correção
-
-** TODO Supermultiplicador e ciclo
-
-- Ciclo advem dos gastos autônomos
-- Testar ciclo do supermultiplicador e dos gastos autônomos a partir dos dados do Haluska
-  + Parâmetros mudam e isso explica o ciclo
-  + Ciclo não vem do ajustamento do estoque de capital
-  + Ciclos teóricos são mais regulares que os empíricos
-
-** TODO Proposition plan
-
-After Nikiforos' response
+** TODO [#B] Conferir se a seleção dos lags precisa usar dataframe em diferença
 
 
-*** TODO Ciclos dos gastos autônomos e do supermultiplicador
 
-*** TODO Decompor componentes do investimento
-* Orientações [0%] :@Orientations:
-** TODO Corrigir versão final da monografia
+** TODO [#B] Gráfico cíclico tal como no Nikiforos
+
+  - Indicar quais são estatisticamente significantes
+** TODO Gráfico ciclo dos gastos autônomos
+  - Por mais que ajuste do grau de utilização pode gerar ciclo, os ciclos dos gastos autônomos é mais relevante
+    - Gráficos com crescimento antes e depois da recessão tal como na dissertação
+
+*** WAIT Decompor investimento em estoque de capital (construção indústria), máquinas, equipamentos e estoques?
+** TODO Simular modelos alternativos
+
+** WAIT Revisão da literature sobre investimento residencial
+    - Perez-Montiel, ROPE, Maria Cristina, Fazzari
+
+** TODO Esclarecimentos metodologia adotada
+- Não fazemos a mesma coisa que o Nikiforos faz, separando o investimento
+  - Amostra diferente
+    - Justificar o porquê não pegamos a mesma amostra
+  - Modelo melhor e não o modelo do Nikiforos
+  - Indicar que foram rodadas outras versões, tentando replicar o mais próximo possível
+
+** Reunião <2022-01-28 sex>
+
+
+* Monografias [0%] :@Orientations:
+:PROPERTIES:
+:agenda-group: Monografias
+:END:
 
 * IEE859 - Teoria do valor e da distribuição :@Lectures:
 :PROPERTIES:
 :agenda-group: Teoria do valor
 :END:
 
-** TODO [#C] Ler Garegnani 1990
+* PED CE362
 
-* Dissertation group discussion :@Group:
+* WAIT Dissertation group discussion :@Group:
+:PROPERTIES:
+:agenda-group: PhDDiscussionGroup
+:END:
 
 * SFC [0%] :Article:@Master:
 :PROPERTIES:
