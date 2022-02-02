@@ -113,11 +113,23 @@ Most of them are meeting notes.
   - Which contribution variable to generate?
   - What to do with houses when households exit?
   - How does it change household financial wealth accounting?
+- Is hooks count still valid when households loans is active?
+- Which inventory variable to use when exiting?
+  - I assume it is end of period
+- While creating hooks between banks and firms, the count hook procedure includes households and need to change?
+- Regarding households entry
+  - Which variable to be set at the initial time?
 
 **** General
 
 - When CYCLE is required to get the SUM?
 - If all code is in a single file, LSD IDE can get description, variable use and used in?
+
+**** WAIT Houses
+
+- Where to define houses?
+- Which housekeeping to add?
+- How to hook to bank, household and builder?
 
 * Housing AB model
 

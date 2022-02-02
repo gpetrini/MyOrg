@@ -115,6 +115,59 @@ https://i.pinimg.com/originals/ea/c9/83/eac9832cf6b1ad75af8ccc3ad3db1728.gif
 **** MAYBE [#E] <2021-10-18 seg> [[https://onlinelibrary.wiley.com/doi/full/10.1111/joes.12470][Neoclassical influences in agent‐based literature: A systematic review - Bran...]] :ReviewOfLiterature:AgentBasedModels:
 **** <2021-09-28 ter> [[http://dx.doi.org/10.1016/j.jedc.2010.10.003][The heterogeneous expectations hypothesis: Some evidence from the lab]] :Expectations:Learning:Bubbles:DotComCrisis:AssetPricing:Results:
 **** <2021-09-28 ter> [[http://www2.econ.iastate.edu/tesfatsi/LearnAlgorithms.LT.pdf][Learning Algorithm Illustrations:  From Simple to Deep]] :Expectations:Learning:
+*** Innovative bubble ABM
+:PROPERTIES:
+:agenda-group: Innovation and ABM
+:END:
+
+
+
+**** READ [#A] [[https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0255537#references][Rzeszutek et al (2021): Managerial overconfidence in capital structure decisions and its link to aggregate demand: An agent-based model perspective]] :ToBase:ToDialog:Overconfidence:Expectations:AgentBasedModels:
+
+**** READ [#A] [[https://doi.org/10.1007/s40888-020-00200-w][Harrodian instability in decentralized economies: an agent-based approach | S...]] :ABM:Supermultiplier:ToBase:
+**** PARTIAL [#A] Behavioral Rationality and Heterogeneous Expectations in Complex Economic Systems :Bubbles:Behavioral:Heterogeinity:
+
+Parts to read:
+
+- Chapter 6: An asset pricing model with heterogeneous beliefs
+- Chapter 7: Empirical validation
+- Chapter 8: Laboratory experiments
+
+**** PARTIAL [#B] Animal Spirits HOW HUMAN PSYCHOLOGY DRIVES THE ECONOMY, AND WHY IT MATTERS FOR GLOBAL CAPITALISM
+
+Parts to read:
+- Chapter 11: Why Are Financial Prices and Corporate Investments So Volatile?
+
+**** SKIM [#A] [[https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2252Link][Arthur et al - Asset Pricing Under Endogenous Expectations in an Artificial Stock Market]] :ABM:SantaFe:AssetPrices:Bubbles:Expectations:
+    :PROPERTIES:
+    :YEAR:     1996
+    :ZOTERO:   Yes
+    :TYPE:     Theory
+    :STATUS:   Filed
+    :RELEVANCE: Low
+    :IMPACT:   High
+    :CITE:     Yes
+    :END:
+
+
+
+
+**** SKIM [#B] [[http://www2.econ.iastate.edu/tesfatsi/blake.SuggestedRead.pdf][Le Baron - Agent Based Computational Finance:  Suggested Readings andEarly Research]] :Bubbles:DotComCrisis:Networks:Fundamentals:ReviewOfLiterature:Expectations:ABM:
+**** SKIM [#C] [[http://www2.econ.iastate.edu/classes/econ308/tesfatsion/SFIStockOverview.LT.pdf][Tesfatsion - Overview of theSanta Fe Artificial Stock Market Model]] :Survey:ABM:SantaFe:Quick:
+    :PROPERTIES:
+    :YEAR:
+    :ZOTERO:   Partial
+    :TYPE:     Other
+    :STATUS:   Filed
+    :RELEVANCE: Low
+    :IMPACT:   Low
+    :CITE:     No
+    :END:
+
+
+**** REF [[https://www.sciencedirect.com/science/article/pii/S0304405X18301016?casa_token=CQz1qOgjg4gAAAAA:m5z3beRi1jG9Zx0ajJgq2ZKOPEiAMeaO2Yy9XxB69hpzGiMIcQJ7Ip0g_bgYHWtNWZgqN7GnnA][Extrapolation and bubbles - ScienceDirect]] :HousePrices:Bubbles:Expectations:
+
+- Use as an example of Bubbles and fundamentals
 *** Housing ABM
 :PROPERTIES:
 :agenda-group: Housing ABM
@@ -222,57 +275,6 @@ CLOSED: [2021-05-20 qui 10:46]
 **** READ [#A] <2021-10-21 qui> [[http://www.lem.sssup.it/WPLem/files/2021-35.pdf][AgriLOVE: agriculture, land-use andtechnical change in an evolutionary, agent-based model]] :AgentBasedModels:Land:SpatialModel:LandUse:Agriculture:TechnologicalChange:EnvironmentalModel:ClimateChange:
 **** READ [#A] <2021-09-22 qua> [[https://academic.oup.com/qje/article/125/3/1253/1903664?login=true][Geographic Determinants of Housing Supply* | The Quarterly Journal of Economi...]] :HouseSupply:Spatial:Geography:
 **** RESULTS [#A] <2021-09-27 seg> [[https://www.sciencedirect.com/science/article/pii/S0378426621002685][Housing networks and driving forces - ScienceDirect]] :HousingMarket:HousePrices:Networks:Fundamentals:GrangerCausality:China:Australia:Connectivity:Spatial:SpatialABM:
-*** Innovative bubble ABM
-:PROPERTIES:
-:agenda-group: Innovation and ABM
-:END:
-
-
-**** READ [#A] [[https://doi.org/10.1007/s40888-020-00200-w][Harrodian instability in decentralized economies: an agent-based approach | S...]] :ABM:Supermultiplier:ToBase:
-**** PARTIAL [#A] Behavioral Rationality and Heterogeneous Expectations in Complex Economic Systems :Bubbles:Behavioral:Heterogeinity:
-
-Parts to read:
-
-- Chapter 6: An asset pricing model with heterogeneous beliefs
-- Chapter 7: Empirical validation
-- Chapter 8: Laboratory experiments
-
-**** PARTIAL [#B] Animal Spirits HOW HUMAN PSYCHOLOGY DRIVES THE ECONOMY, AND WHY IT MATTERS FOR GLOBAL CAPITALISM
-
-Parts to read:
-- Chapter 11: Why Are Financial Prices and Corporate Investments So Volatile?
-
-**** SKIM [#A] [[https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2252Link][Arthur et al - Asset Pricing Under Endogenous Expectations in an Artificial Stock Market]] :ABM:SantaFe:AssetPrices:Bubbles:Expectations:
-    :PROPERTIES:
-    :YEAR:     1996
-    :ZOTERO:   Yes
-    :TYPE:     Theory
-    :STATUS:   Filed
-    :RELEVANCE: Low
-    :IMPACT:   High
-    :CITE:     Yes
-    :END:
-
-
-
-
-**** SKIM [#B] [[http://www2.econ.iastate.edu/tesfatsi/blake.SuggestedRead.pdf][Le Baron - Agent Based Computational Finance:  Suggested Readings andEarly Research]] :Bubbles:DotComCrisis:Networks:Fundamentals:ReviewOfLiterature:Expectations:ABM:
-**** SKIM [#C] [[http://www2.econ.iastate.edu/classes/econ308/tesfatsion/SFIStockOverview.LT.pdf][Tesfatsion - Overview of theSanta Fe Artificial Stock Market Model]] :Survey:ABM:SantaFe:Quick:
-    :PROPERTIES:
-    :YEAR:
-    :ZOTERO:   Partial
-    :TYPE:     Other
-    :STATUS:   Filed
-    :RELEVANCE: Low
-    :IMPACT:   Low
-    :CITE:     No
-    :END:
-
-
-**** REF [[https://www.sciencedirect.com/science/article/pii/S0304405X18301016?casa_token=CQz1qOgjg4gAAAAA:m5z3beRi1jG9Zx0ajJgq2ZKOPEiAMeaO2Yy9XxB69hpzGiMIcQJ7Ip0g_bgYHWtNWZgqN7GnnA][Extrapolation and bubbles - ScienceDirect]] :HousePrices:Bubbles:Expectations:
-
-- Use as an example of Bubbles and fundamentals
-
 ** [[file:../notes/20210210184406-mortgage_interest_rate.org][Mortgage Interest rate and market particularities]] :Mortgage:
 :PROPERTIES:
 :agenda-group: Mortgage interest rate

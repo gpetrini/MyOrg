@@ -29,8 +29,8 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 *** TODO Stress KS and MKKS model with /ad hoc/ expected market-share increase
 
-**** TODO Experiments alternatives
-- This shock must be temporary and increase previous market-share by an high amount
+
+
 **** TODO Analyze and report
 - Explain the results even if they do not change
 ** TODO Writing steps
@@ -97,12 +97,9 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 *** TODO General
 **** TODO Implement sectoral divergence in production functions and aggregates
 **** TODO Check how to count for both firms and household loans using hooks
-*** STRT Banks and respective checkers
-*** TODO Aggregates and respective checkers
-*** TODO Firm entry and exit
-**** WAIT How to adapt household entry and exit?
-*** TODO Capital goods sector and its respective checkers
 *** TODO Initialization script
+*** TODO Capital goods sector and its respective checkers
+*** TODO Households entry and exit
 *** TODO Implement endogenous expectations mechanism routine
 
 **** TODO Read [cite/t:@dosi_2020_RATIONAL] source code
@@ -133,24 +130,13 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 :END:
 
 
-** TODO [#A] Escrever abstract e enviar ao Summa
-SCHEDULED: <2022-01-31 seg>
+** STRT Gráfico ciclo dos gastos autônomos
 
+*** TODO [#A] Conferir datação das crises
 
-
-** TODO [#B] Conferir se a seleção dos lags precisa usar dataframe em diferença
-
-
-
-** TODO [#B] Gráfico cíclico tal como no Nikiforos
-
-  - Indicar quais são estatisticamente significantes
-** TODO Gráfico ciclo dos gastos autônomos
-  - Por mais que ajuste do grau de utilização pode gerar ciclo, os ciclos dos gastos autônomos é mais relevante
-    - Gráficos com crescimento antes e depois da recessão tal como na dissertação
-
-*** WAIT Decompor investimento em estoque de capital (construção indústria), máquinas, equipamentos e estoques?
 ** TODO Simular modelos alternativos
+
+** TODO [#C] Conferir se a seleção dos lags precisa usar dataframe em diferença
 
 ** WAIT Revisão da literature sobre investimento residencial
     - Perez-Montiel, ROPE, Maria Cristina, Fazzari
