@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       22f6f439-386e-4676-a2cb-1ac2276c996c
+:END:
+#+title: Stock-Flow Consistent
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+#+hugo_section: notes
+#+HUGO_TAGS: placeholder
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

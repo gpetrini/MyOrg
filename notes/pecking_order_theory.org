@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       982fde84-a2fc-4395-bfbf-0d39080a78a6
+:END:
+#+title: Pecking Order Theory
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+#+hugo_section: notes
+#+HUGO_TAGS: placeholder
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil
+
+According to this theory, firm prioritize 1) internal funds; 2) debt; and 3) new equity

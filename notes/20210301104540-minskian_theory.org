@@ -1,7 +1,5 @@
 :PROPERTIES:
 :ID:       8f8c3ff0-cd9b-4ead-b335-f205d869005a
-:mtime:    20211202152742 20211013082514
-:ctime:    20210301104540
 :END:
 #+title: Minskian theory
 

@@ -23,13 +23,43 @@
 ** Background and motivation
 
 
+Theoretical background:
+- Usually, neoclassical models rely on unrealistic cognitive hypothesis such as [[id:a3dc72f3-bb99-4601-b58e-cc12229748f8][Rational Expectations]]
+- [[id:53a4b8b1-50aa-4da9-9b7c-223c19316c13][Modigliani and Muller theorem]] in which firm's [[id:b58d5295-89dc-4dc3-b846-09c85962d6a8][Capital Structure]] is irrelevant for its performance
+
 ** Supporting Ideas and hypothesis
 
+- [[id:982fde84-a2fc-4395-bfbf-0d39080a78a6][Pecking Order Theory]] seems to be more related to overconfidence rather than asymmetric information
+- It is assumed that managers have three conflicting objectives
+  - Increase/maintain market-share
+  - Satisfies shareholders
+  - Satisfies bankers
+- Constant labour productivity
+- Consumption-goods firms expected sales is a weighted average between its past values and expected growth of demand
+  - Thus, it is an trend based expectational rule
+- Firm's markup depends on capacity utilization and market-share
+- Firms have [[id:69ab5bc8-170f-47fc-96fc-1df4b75a3f4a][Rigidity and Frictions]] to update its price
+- Firms updates its target market-share and capacity utilization according to ...
+- Investment function follows a rigid [[id:fe75d8ad-4d2a-4c6d-94d4-d55610598944][Accelerator Model]] with investment probabilities due to [[id:69ab5bc8-170f-47fc-96fc-1df4b75a3f4a][Rigidity and Frictions]]
+  - There is a threshold in which firms do not invest
+- Overconfidence is includes by an stochastic variable in the expected profit equation, affecting dividends distribution and thus, [[id:b58d5295-89dc-4dc3-b846-09c85962d6a8][Capital Structure]]
+- Firms decide an desired deposit level to them define the internal funds to finance investment
+- Authors try to emulate a [[id:982fde84-a2fc-4395-bfbf-0d39080a78a6][Pecking Order Theory]]
+- Firms may buy their equities back to keep total external debt constant to adjust its [[id:b58d5295-89dc-4dc3-b846-09c85962d6a8][Capital Structure]]
+  - Firms cannot buy back more than 25% of existing equity stock
+- There is an alternative [[id:5e6a2fc8-c385-42ec-b048-a3b02a91125f][Quasi-replicator]] in which firm's target market-share depends onf relative prices and relative capital stock (proxy firms size)
+- When a firm exit market, households buy it capital stock (with a discount factor) and scrap them to have liquidity back
+- A new entrant firm have a probability to be neutral or overconfident
+- Capital goods sector emulates a share of consumption goods productivity and is demand-determined
+  - Produce according to realized investment
+  - Additionally, do not retain prodits
+- Households buy all emitted share and central bank bills
+  - Households choose how to allocate equity according to firm's relative performance
+- Bank interest rate depends on policy rate, banking sector specific-term and firm-specific component that depends on firm's indebtedness
 
-** Purpose
+** Purpose and Contribution
 
-
-** Contribution
+This paper aims to connect firm's [[id:b58d5295-89dc-4dc3-b846-09c85962d6a8][Capital Structure]] and how overconfidence affects it and evaluate the macroeconomic consequences of this [[id:29ce4a60-6429-44ef-a5b2-f48fba192d79][Behavior Bias]].
 
 
 ** Relevance
@@ -40,17 +70,52 @@ Additionally, it provides some discussion on how to model capital goods sector.
 
 ** Methodology
 
+*** Model design
+
+- Hybrid [[id:22f6f439-386e-4676-a2cb-1ac2276c996c][Stock-Flow Consistent]] [[id:9789613e-f409-4593-b958-a2c9c8283bb6][Agent Based Models]] in which only consumption goods firms are heterogeneous
+- Aggregate households, capital-goods firms, banks and government
+- Consumption goods firms are heterogeneous regarding their [[id:b58d5295-89dc-4dc3-b846-09c85962d6a8][Capital Structure]]
+- There is also an equity market
+
+*** Overconfidence
+
+The authors define overconfidence when manager overestimate the value of a company.
+Consequently, perceive company's stock to be undervalued.
+Thus, prioritize internal funds since it considers external funds excessively costly.
+Overconfidence imply a tendency to choose more short-term financing.
+
+*** Calibration
+
+The model is calibrated for according to companies listed on the Warsaw Stock Exchange (WSE, Poland) for 2012-2019
 
 ** Results
 
-- Overconfident firms outperform in terms of investment and size, but become more financially fragile
+- Main Result :: Overconfident firms outperform in terms of investment and size, but become more financially fragile
+  - Overconfident firms have a lower net equity emission compared with neutral firms
+  - When firms default rate increase, bank increase average interest rate in order to prevend their capital adequacy ratio, affecting all kind of firms equally
+  - Overconfidence does not lead to a higher aggregate debt level
+- Flight to liquidity :: Increase households risk avertion, reallocating their portfolio away from equities towards safer assets
+  - Firms have an increase in debt holding
+  - Firms decrease investment
+  - Moderate increase in firms default rate
+  - Since overconfident use less external resources, they are less affected compared to neutral firms
+- Tighther monetary policy :: Increase in bank interest rate
+  - Firms arbitrage more in favor of equity rather than equity
+  - Decrease investment
+  - Overconfident have a higher debt ratio comparade to neutral firms
+- More Liquidity :: Reduce firms' financial fragility
+  - Decrease in firm's default rate not followed by an decrease in interest rate
+  - Higher liquidity ratio potentially stabilizes the economy
 
 ** Interesting findings and not categorized stuff
 
+- Considering [[id:63b1aea6-c7ca-4d77-8896-b170a907a2ef][Housing Agent Based Model]] chapter, households (or other agents) can buy exiting households houses with a discount factor
 
 ** Critics
 
 - As the authors point out, there is no innovation
+- It seems unreasonable to prioritize a desired deposits level and reduce investment plans when firms face a credit constraint.
+- It is assumed that larger firs have higher demand level in a [[id:5e6a2fc8-c385-42ec-b048-a3b02a91125f][Quasi-replicator]] equation. There is no further discussion about that
 
 ** Abstract
 
@@ -67,9 +132,11 @@ Objective This study aims to connect two strands of the psychology and economics
 
 [[id:053144da-4f34-4a23-97cb-c5af4b600164][Behavioral Finance]]
 
-[[id:9789613e-f409-4593-b958-a2c9c8283bb6][Agent Based Models]]
+[[id:8f8c3ff0-cd9b-4ead-b335-f205d869005a][Minskian theory]]
 
 [[id:5901b2ed-90d0-4b76-bafd-2e82d26e0388][Overinvestment]]
+
+
 
 
 * References
