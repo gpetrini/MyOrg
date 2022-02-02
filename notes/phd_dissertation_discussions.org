@@ -56,6 +56,35 @@ Most of them are meeting notes.
   - The sum of market-share could not but greater than one
 - Households should have financial relations with only one bank?
 
+
+** Analysis
+
+*** Ad hoc expectational shock
+
+
+In general, there is no persistent effects in terms of economic growth or regarding market structure.
+
+- The main effects are related to financial status of firms.
+- During the shock, there are more minskian firms and an increase in the share of Ponzi units.
+  - In the SSM scenario, minskian firms share converges to one and this trajectory does not change during the shock
+  - In the Kaleckian scenario, there is an increase in Ponzi units, but it decreases after the shock ceases
+- As expected, aggregate expected market-share is more than one.
+- Apparently, there is no significative firm entry-exit changes. Mean and median firms age remains the same after the shock. There is no structural break.
+- Investment lumpiness in the Kaleckian scenario remains the same while in the SSM scenario higher accumulation growth rates dominate
+- There are more Ponzi and speculative units in the SSM scenario
+- There are no significative change in technology-related variables such as productivity distribution
+- Capacity utilization rate is more volatile in both scenarios during shock.
+  - In the SSM scenario, it seems to have a non-stationary trend
+- At the end of simulation, aggregate sales bias is negative. Probably related to adaptative expectation rule that understatimate effective sales.
+- Credit rationing and floating banking interest rate have similar effects
+  - More minskian firms at the beginning of the shock
+  - Investment lumpiness is similar to baseline
+  - The only difference is the lower firms' in the floating interest rate scenario
+  - Temporarily higher Ponzi unit during the shock and a lower value after shock ends
+  - Capacity utilization rate has a higher amplitude
+    - It seems to have a persistently lower capacity utilization after shock in floating interest rate scenario
+
+
 ** Implementation
 
 *** First version questions <2022-01-14 sex>
