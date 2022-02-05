@@ -35,6 +35,8 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 - Explain the results even if they do not change
 ** TODO Writing steps
 
+*** TODO [#A] Update SFC tables
+
 *** TODO Introduction
 
 **** TODO Define and introduce Perez topology and the "Big Market delusion"
@@ -95,11 +97,21 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 ** TODO To implement, comment and create checkers
 *** TODO General
+**** TODO Change hooks for credit
+
+- =COUNT_HOOK= Count the number of hooks of the instance. So change the procedure to the respective object
+
 **** TODO Implement sectoral divergence in production functions and aggregates
-**** TODO Check how to count for both firms and household loans using hooks
+
+**** TODO Remove household capital contribution
+
+**** TODO Check model with accounting
 *** TODO Initialization script
+**** TODO cpp equations
+**** TODO Aggregate model
+**** TODO Initialize agents
 *** TODO Capital goods sector and its respective checkers
-*** TODO Households entry and exit
+*** TODO Households foreclosure procedure
 *** TODO Implement endogenous expectations mechanism routine
 
 **** TODO Read [cite/t:@dosi_2020_RATIONAL] source code
@@ -129,10 +141,6 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 :agenda-group: Nikiforos response
 :END:
 
-
-** STRT Gráfico ciclo dos gastos autônomos
-
-*** TODO [#A] Conferir datação das crises
 
 ** TODO Simular modelos alternativos
 

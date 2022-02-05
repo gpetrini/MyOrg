@@ -25,7 +25,6 @@ https://i.pinimg.com/originals/fd/de/23/fdde2369da2feeaa95a469b0ff1dd3f5.gif
 SCHEDULED: <2022-03-07 seg>
 * Writing inbox
 
-** TODO [#A] [cite:@rzeszutek_2021_Managerial] :ABM:ToBase:Expectations:Overconfidence:
 ** STRT [#B] Kopp_2018
 
 ** STRT [#C] botte_2019

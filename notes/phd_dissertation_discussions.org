@@ -46,6 +46,68 @@ Most of them are meeting notes.
 ** Model design
 
 
+
+*** STRT Bank pointers
+*** Financial housekeeping
+
+- Amortization schedule is define in the first year of loan creation
+  - It is assumed an constant amortization schedule
+- Amortization due is the amount that an agent must pay to bank and it could contrast with amortization schedule when there is not enough income
+  - This is why to separate these two variables
+- Amortization flow is used by banks to accumulate the received amortization payment
+
+*** TODO Define how to estimate household leverage
+
+- Market-base includes asset price change (may be interesting for the model with housing)
+- Book-leverage (for firms, at least) does not include asset price change
+
+*** TODO Bank benchmark interest rate
+
+- Discuss which interest rate bank consider as it benchmark
+  - This is an behavioral equation
+  - Could the the average interest rate with different spread or an spread in the policy rate
+
+*** TODO Household probability to default
+
+- Each household have a probability to default according to the number of financial instruments
+- Implement an LSD =FUNCTION=
+  - Adds a flag if it have or not a colateral
+  - Value must be overwritten
+
+*** TODO Household exit and foreclosure
+
+- Households do not leave the market. They still offer it labour force
+- There is no necessity to add an specific capital contribution to them
+- When foreclosure is implemented, the property of an asset (possibly houses) should change
+- During foreclosure procedure, it is required to define the order of default payment. This is a theoretical issue.
+  - The same applies for credit contraint
+
+*** WAIT Household financial stability
+
+- Household income debt distribution index should use ...
+
+*** WAIT Accounting
+
+- When GDP supply and Demand does not hold, it is deducted from ???
+
+
+*** WAIT Sectoral divergence
+
+- Averages
+  - Competitiveness
+  - Mark-up
+- Revision and rebase
+  - Market-share
+  - Sales
+- Financial fragility index
+- Capacity utilization
+- Desired and effective production
+
+*** WAIT Initialization
+
+- Variables to be estimated were defined according to:
+- Model calibration:
+
 ** Hypothesis
 
 
@@ -90,75 +152,20 @@ In general, there is no persistent effects in terms of economic growth or regard
 *** First version questions <2022-01-14 sex>
 
 **** Credit
-- What the difference between amortisation schedule, amortisation due, amortisation flow?
-- How to aggregate leverage? Total debt to total asset ratio or some other weight?
-- How does more than a loan change bank averate interest rate equation?
-- How to define household interest payment? Similar to firms?
-  - Same to mortgage?
-- How to calculate average interest rate?
-- Check household housekeeping debt servicing procedure
 - How to use =COUNT_HOOK= for bank to access household loans?
-  - How to add household id?
-  - How to add households loans in bank total credity supply equation?
-- How to estimate household probability to default when there is more than one loan?
-- What to do next after household are credit constrained? Prioritize some kind of loan?
-  - Banks grants consumption loans and then mortgage loans?
-  - Banks consider household gross or disposable income?
-- Should household interest rate be the same for mortgage and consumption loans?
-- Household income debt distribution index should use which variable?
-  - Current version uses disposable income
-- Households consumption loan change should use outstanding loan value or other variable?
-- Is DebtToSalesRatio correct in mkks?
-- In floating interest rate, aggred interest rate is the last interest rate proposed by bank to the firm?
+  - How to add households loans in bank total credit supply equation?
+  - HOOK dentro da instância de crédito
 
-**** Accounting and aggregates
 
-- How to deduct household consumption to close GDP accounting when households are heterogeneous?
-- How to specify households end-of-period deposits? Using a fixing share? Residual variable?
-- How to check unfilled demand accounting with more than one sector?
-  - Same question for firm financial status incidence
-- Firm's competitiveness should be different between sectors?
-  - Firm's average competitiveness should use market or economy share?
-- How to check market share accounting with more than one sector? And how to update it?
-  - Same goes to market share rebase
-- How to implement revision firm sales with more than one sector?
-- Average markkup should have sectoral heterogeinity?
-- Aggregate firm productivity should follow economy or market-share?
-- Should firms financial fragility index have sectoral heterogeinity?
-
-**** Capital and Production (related to sectoral divergence)
-
-- Aggregate capacity utilization should include only consumption goods sector?
-  - Hypothesis: Yes
-- Firms desired production should have sectoral divergence?
-  - Same question for effective production
-  - Same question for investment variables
-- Post production inventory should be opening or end-of-period deposits?
-  - Current version: lagged end-of-period inventories
-  - In sales equation, should be opening inventories or post production?
 
 **** Entry and exit
-- Household exit mechanism should be activated in the homogenous household version?
-  - Which contribution variable to generate?
-  - What to do with houses when households exit?
-  - How does it change household financial wealth accounting?
-- Is hooks count still valid when households loans is active?
 - Which inventory variable to use when exiting?
   - I assume it is end of period
 - While creating hooks between banks and firms, the count hook procedure includes households and need to change?
-- Regarding households entry
-  - Which variable to be set at the initial time?
 
-**** General
+**** Initialization
 
-- When CYCLE is required to get the SUM?
-- If all code is in a single file, LSD IDE can get description, variable use and used in?
-
-**** WAIT Houses
-
-- Where to define houses?
-- Which housekeeping to add?
-- How to hook to bank, household and builder?
+- Is required to estimate an aggregate SFC model?
 
 * Housing AB model
 
@@ -174,6 +181,16 @@ In general, there is no persistent effects in terms of economic growth or regard
 - Construction sector aggregate
 - Finite demand for housing is not compatible with infinity households
 - Try different interest rates
+
+
+*** Houses instances
+
+
+- Houses should be at the same level as HOUSEHOLDS and FIRMS
+- Include an flag to indicate if the house is fully built; If so, change its owner
+- It is possible to use static hooks for houses since it will not change
+
+*** Foreclosure procedure
 
 ** Hypothesis
 
