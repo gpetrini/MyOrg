@@ -415,8 +415,11 @@ CLOSED: [2022-01-12 qua 17:41]
 :PROPERTIES:
 :agenda-group: House prices
 :END:
+
 *** READ [#A] [[https://voxeu.org/article/what-drives-house-prices-some-lessons-literature][What drives house prices: Some lessons from the literature]] :HousePrices:Vox:
 *** READ [#B] [[https://www.sciencedirect.com/science/article/abs/pii/S1051137716300237][Housing finance and real-estate booms: A cross-country perspective]] :Data:QCA:DIRECTIONALS:Panel:
+*** READ [#B] [[https://doi.org/10.1080/08965803.2021.2014624][Campbell and Roskelley (2020): International Housing Returns around the Financial Crisis: Disentangling Credit Supply and Demand Shocks]] :CreditStandards:FinancialCrisis:GreatRecession:Empirical:MonetaryPolicy:InternationalHousePrices:TaylorRule:
+
 *** READ [[https://www.sciencedirect.com/science/article/pii/S2325426221000139][Examining the determinants of housing prices and the influence of the spatial...]] :HousePrices:Spatial:Empirical:Panel:China:
 *** SKIM [#A] [[https://www.sciencedirect.com/science/article/pii/S0264837721006116][Yii et all (2022): Land availability and housing price in China: Empirical evidence from nonline...]] :HousingMarket:HousePrices:China:LandUse:Empirical:NonLinearities:
 *** SKIM [[http://saeb.feaa.uaic.ro/index.php/saeb/article/view/1480][House Price Shock and Business Cycle: The French Case | Saad | Scientific Ann...]] :Panel:HousePrices:BusinessCycle:France:
@@ -425,7 +428,6 @@ CLOSED: [2022-01-12 qua 17:41]
 *** SKIM [#D] [[https://www.tandfonline.com/doi/abs/10.1080/1351847X.2021.1959366?journalCode=rejf20][Credit composition and housing price dynamics: a disaggregation approach]] :Panel:HousePrices:TimeSeries:Europe:AssetPrices:
 *** RESULTS [#C] [[https://www.sciencedirect.com/science/article/abs/pii/S0165176521004171][Consumption and housing net worth: Cross-country evidence - ScienceDirect]] :Housing:HouseholdConsumption:HouseholdWealth:HouseholdNetWorth:HousePrices:Empirical:OECD:AsymetricModel:
 *** ARCH [#C] [[https://www.kansascityfed.org/PUBLICAT/ECONREV/PDF/2q07rapp.pdf][Rappaport - A Guide to Aggregate House Price Measures]] :USA:HousePrices:
-
 ** [[file:../notes/20210405101242-bubbles_and_aggregate_demand.org][Bubbles and aggregate demand]] :Dissertation:
 :PROPERTIES:
 :agenda-group: Asset bubbles and aggregate demand

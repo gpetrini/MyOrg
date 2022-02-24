@@ -17,12 +17,15 @@ https://i.pinimg.com/originals/fd/de/23/fdde2369da2feeaa95a469b0ff1dd3f5.gif
 :agenda-group: @inbox
 :END:
 ** TODO Unimed :@free:
-*** TODO Cancelamento plano Piracicaba
-*** TODO Data de vencimento para dia 10
 *** TODO Conferir coparticipação nutricionista
+*** TODO Receber cheque
 ** TODO Ver vacina de tétano
 ** TODO Matrícula natação FEF
 SCHEDULED: <2022-03-07 seg>
+** TODO Marcar otorrinolaringologista (conferir exames)
+** TODO Marcar clinico geral
+** WAIT Marcar cardiologista
+
 * Writing inbox
 
 ** STRT [#B] Kopp_2018
@@ -33,6 +36,8 @@ SCHEDULED: <2022-03-07 seg>
 * News Inbox
 
 * Reading Inbox
+** TODO [#A] [[https://constructionphysics.substack.com/p/how-much-do-construction-costs-matter][How much do construction costs matter? Some factors that affect the price of ...]] :HousePrices:ConstructionCost:LandPrice:
+** TODO [#B] [[https://link.springer.com/article/10.1007/s00191-021-00732-9][Capability accumulation and product innovation: an agent-based perspective | ...]] :ABM:ProductInnovation:
 ** TODO [#A] [[https://doi.org/10.2307/2550657][The Acceleration Principle and the Theory of Investment: A Survey on JSTOR]] :Empirical:InvestmentDeterminants:AcceleratorModel:
 ** [[https://www.sciencedirect.com/science/article/pii/S0165188920300427][Bachmann (2020): What drives aggregate investment? Evidence from German survey data - ScienceD...]] :InvestmentDeterminants:
 ** TODO [#A] [[https://www.nber.org/papers/w29628][Macroeconomic Research, Present and Past | NBER]] :ReviewOfLiterature:Macroeconomics:
@@ -41,4 +46,5 @@ SCHEDULED: <2022-03-07 seg>
 ** TODO [#A] [[https://www.sciencedirect.com/science/article/pii/S0165188910001491][The financial accelerator in an evolving credit network - ScienceDirect]] :ABM:
 ** TODO [#A] Blecker and Taylor (2019, chapter 5)
 ** TODO [#D] [[https://academic.oup.com/cje/article-abstract/46/1/73/6372673?redirectedFrom=fulltext][Nikiforos (2022): Induced shifting involvements and cycles of growth and distribution]] :CapacityUtilization:
+
 * Fleeting notes

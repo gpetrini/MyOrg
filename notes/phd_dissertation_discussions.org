@@ -165,7 +165,12 @@ In general, there is no persistent effects in terms of economic growth or regard
 
 **** Initialization
 
-- Is required to estimate an aggregate SFC model?
+- Firms opening, post-sales, post-production, post-credit and end-period should be the same?
+  - Same question for firms deposits
+- Considering Reissl (2020), etaf in mkks is the beta1 in Reissl?
+  - It is required to estimate an SS value for households as well?
+- It is required to estimate household debt service as in firms?
+  - It is required to estimate a new etaf?
 
 * Housing AB model
 

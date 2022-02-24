@@ -37,6 +37,12 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 *** TODO [#A] Update SFC tables
 
+**** TODO Add households amortisation
+
+- Ver Fagundes
+
+**** TODO Remove household capital contribution from banks
+
 *** TODO Introduction
 
 **** TODO Define and introduce Perez topology and the "Big Market delusion"
@@ -97,20 +103,11 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 ** TODO To implement, comment and create checkers
 *** TODO General
-**** TODO Change hooks for credit
-
-- =COUNT_HOOK= Count the number of hooks of the instance. So change the procedure to the respective object
-
-**** TODO Implement sectoral divergence in production functions and aggregates
-
-**** TODO Remove household capital contribution
-
-**** TODO Check model with accounting
-*** TODO Initialization script
-**** TODO cpp equations
-**** TODO Aggregate model
-**** TODO Initialize agents
-*** TODO Capital goods sector and its respective checkers
+**** TODO Check SFC consistency
+***** TODO Back to Pedrosa's R equations
+****** TODO Define gZ to zero
+***** TODO Change SFC tables
+***** TODO Implement SFC aggregate equations with K sector
 *** TODO Households foreclosure procedure
 *** TODO Implement endogenous expectations mechanism routine
 
@@ -119,6 +116,10 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 ** TODO Model run
 
 *** TODO Baseline model run
+
+**** TODO Calibrate
+
+**** TODO Change equations in R script
 
 *** TODO Run model with endogenous expectations
 
@@ -135,6 +136,10 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 ** TODO Performance
 *** TODO Check cpp lists and how to employ them for households
+*** TODO Change value using purpurea
+*** TODO Move LSD internal files to Model.org
+*** TODO Import initial variables using org table in purpurea
+*** TODO Define macro pointers as in KS
 
 * Nikiforos econometric model response :@Article:
 :PROPERTIES:
@@ -186,6 +191,9 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 :PROPERTIES:
 :agenda-group: VECM own rate
 :END:
+
+
+** TODO
 
 * Ratchet effect SSM paper [0/4] :@Article:@PhD:
 :PROPERTIES:

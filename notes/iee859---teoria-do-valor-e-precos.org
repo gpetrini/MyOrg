@@ -1988,23 +1988,259 @@ Concorrência nivela, mas não determina as variáveis distributivas nem diretam
 * Fisiocratas & Smith
 :PROPERTIES:
 :ID:       2e53f53c-53ec-4a68-8e03-a4b752d3de72
-:mtime:    20211202152738
-:ctime:    20211202152738
 :END:
 
-* Ricardo
+
+
+
+
+** Cronologia da Economia Política Clássica
+
+Os principais contribuidores da [[id:1164c251-778b-4a42-a98b-f7e75d5a0743][Economia Política Clássica]] podem ser categorizados a partir da dedfinição de Marx (segundo a ordem cronológica):
+
+| Inglaterra | França       |
+|------------+--------------|
+| Petty      |              |
+|            | Boisguilbert |
+|            | Cantillon    |
+|            | Quesnay      |
+| Steuart    |              |
+|            | Turgout      |
+| Smith      |              |
+| Ricardo    |              |
+|            | Sismondi     |
+
+Normalmente, é categorizado em termos de filosofia política e pouco em termos de teoria econômica.
+Alguns autores de HPE costumam apresentar epsódios ainda mais antigos pelo simples motivo de ter mencionado algo relacionado à economia.
+Marx parte da cronologia acima por conta desses autores partirem do conceito de [[id:cd3b5fcc-d085-4b72-82b4-28d591c621f8][Excedente]] que permitiu analisar a economia de forma mais sistemática.
+
+William Petty, em particular, define o conceito de excedente (medido em cereais ou em trabalho)[fn::Petty tratava como sinônimo o conceito de excedente com a divisão social do trabalho.].
+Além disso, argumenta que o uso do excedente produtivo seria importante para o crescimento.
+Este autor faz uma distinção entre gastos produtivos (trabalho produtivo, investimento) e improdutivos (consumo).
+Inicialmente não era associado a acumulação de capital físico e posteriormente partiu-se para essa discussão em termos de crescimento.
+Passou-se a definir gasto produtivo como aquele que gera um maior crescimento econômico posterior.
+
+Cantillon, por sua vez, propôs uma espécie de modelo com um bem básico em uma economia dual (urbana e rural).
+A agricultura seria determinado pela oferta enquanto a demanda na cidade dependeria da parcela do excedente dispendido nela.
+Alguns autores interpretam que a cidade exporta o bem não-básico e importa o bem básico (similar ao multiplicador internacional de Harrod) ou que a cidade seria liderada pela demanda.
+O problema de demanda efetiva neste modelo é uma questão agregada e não setorial.
+Deve-se, portanto, distinguir a demanda efetiva setorial da demanda efetiva.
+Nos clássicos, com Lei de Say, a oferta se ajusta a demanda efetiva setorial, mas a nível agregado supõe-se que a demanda agregada se ajusta à oferta.
+
+Dentre os [[id:ba96160c-9347-473b-8db9-118f1705497a][Fisiocratas]], Quesnay avançou na interdependência setorial e a realização do [[id:cd3b5fcc-d085-4b72-82b4-28d591c621f8][Excedente]] a nível agregado.
+Tais temas foram retomados muito posteriormente por Marx.
+
+** Quesnay e a fisiocracia
+
+
+Boa parte das incompreensões está associado ao uso do termo "natural" que, para os fisiocratas, seria associado ao método científico.
+A implicação dessas teorias é o avanço da agricultura capitalista.
+Por outro lado, eram favoráveis ao despotismo legal em que o monarca seria legítmo se seguisse as leis "naturais".
+No limite, seria uma monarquia tecnocrática.
+Assim, trata-se de um reformismo que defendia a modernização da agricultura.
+
+As classes sociais eram:
+- Produtiva (trabalhadores e capitalistas agrícolas)
+- Estéril (trabalhadores, artesões comerciantes e donos de empresas manufatureiras)
+- Proprietária (donos da terra, o monarca e a igreja ("dizimistas"))
+
+A manufatura era estéril porque transformava, mas não criava o excedente.
+
+Na agricultura, havia vários tipos de técnica de cultivo
+- Subsistência (não gerava excedente)
+- /Petite Culture/ (menor escala e não explorada de forma capitalista)
+  - Quesnay argumentava que essa era a técnica predominante
+- /Grande Culture/ (gera um excedente muito maior)
+  - Quesnay argumentava que essa era a técnica predominante na Inglaterra
+  - Seria mais utilizado porque utilizava os meios de produção produzido (adiantamentos)
+    - Anuais (capital circulante que incluía folha salarial e insumos)
+    - Primitivos (reposição de capital fixo)
+    - Fundiários (mantém a fertilidade da terra realizado pelo Estado ou pelos proprietários)
+
+*** Produto líquido (/Produit Net/)
+
+
+O valor do excedente é entendido como gerado na agricultura.
+Defendia-se o uso de instrumentos produzidos pela manufatura.
+Este conceito de produto líquido tem sua origem em um excedente físico, mas é medido em valor de troca.
+Uma questão era a origem do excedente e outro o seu destino.
+
+
+#+begin_quote
+A origem, o princípio de todos os gastos, e de todas riquezas está na fertilidade da terra, mas não se pode multiplicar os produtos já que são transformações deles mesmos
+#+end_quote
+
+O destino do excedente, por sua vez, dependeria do sistema de preços.
+Além disso, tinham o conceito de preço fundamental que pode ser entendido como custos de produção que não inclui o excedente.
+O conceito de bom preço é acima do preço fundamental e tão favorável para a agricultura de modo que o excedente seja apropriado pela própria agricultura.
+Tais autores tinham clareza de que o valor adicionado setorial é um conceito distributivo e não associado a produtividade.
+
+Vale ressaltar, que não havia mobilidade inter-setorial (por motivos históricos e institucionais).
+Sendo assim, não faria muito sentido o conceito de taxa de lucro uniforme.
+No entanto, não fica claro se há taxa de lucro no excedente.
+Não há determinação da taxa de lucro setorial (dada inexistência de mobilidade setorial).
+
+** Smith
 :PROPERTIES:
 :ID:       00f9ac43-0729-4258-8cb0-1876c2cb50a7
 :mtime:    20211202152640
 :ctime:    20211202152640
 :END:
 
-* Mercadoria padrão
+- Em a Riqueza das nações, trata-se de um crescimento e aumento contínuo do excedente
+- Produtividade e taxa de investimento
+- Valor real e nominal, preço de mercado e preço natural, taxa de lucro uniforme
+  - Faz uma análise sistemática da gravitação dos preços de mercado
+- Trabalho incorporado versus trabalho comandado
+  - Poder de compra sobre trabalho como numerário
+  - Salário é uma quantidade física de trigo
+- Trabalho rude e primitivo e trabalho incorporado
+  - Neste estado, não haveria taxa de lucro e que as horas de trabalho necessária para produzir a mercadoria determinaria os preços relativo
+    - Isso deixa de ser verdade quando há acumulação de capital e, portanto, taxa de lucro
+- Excedente em valor em todos os setores lucro e renda
+- Todo o capital no agregado pode ser reduzido a salários (do mesmo período)
+
+Para Smith, o tamanho do mercado determinava o aumento da produtividade. No entanto, não significa que é determinado pela demanda efetiva agregada. Como utiliza Lei de Say, é o produto potencial que determina o tamanho do mercado.
+
+- Ricardo e Marx criticam a consistência com o conceito físico do excedente
+  - Teoria do /adding up/ entendido como soma de rendas naturais
+    - Portanto, não haveria uma relação inversa entre eles
+    - No entanto, é apenas uma descrição e não uma teoria dos preços naturais
+  - Trabalho comandado não é uma medida invariável
+  - Nem sempre há uma relação inversa entre salários e taxa de lucro
+  - Nova visão (O'Donnel e Vianello) indica consistência entre distribuição e o conceito de excedente. Evidências de consistência:
+    - Taxação
+    - Teoria da renda da terra
+    - Teoria da acumulação
+    - Para compreender, é preciso lembrar que a taxa de lucro inclui salário e renda (da terra)
+      - Renda da terra = excedente - salário* Ricardo
+
+* Mercadoria padrão de Sraffa
 :PROPERTIES:
 :ID:       8ea0b1ce-b7fc-4fd7-bd7c-93944168301e
 :mtime:    20211202152741
 :ctime:    20211202152741
 :END:
+
+** Introdução
+
+- Valor absoluto em Ricardo quando o numerário é invariável em relação à distribuição
+  - Seria uma mercadoria artificial que não gerasse distorções da curva de salário-lucro em função de mudança nos preços relativos
+- Seria uma composição média que os preços relativos, em média, não seria muito volátil
+  - Não usaria muito trabalho direto nem muito direto
+  - Ricardo supôs que o ouro seria uma boa aproximação
+  - Em resumo, o denominador não seria um problema para detectar a mudança dos preços relativos. Se os preços relativos se alteraram, seria porquê a mercadoria teve seu preço alterado e não o numerário
+  - Ricardo também procurava uma medida também invariável ao progresso técnico (invariável no tempo) e à distribuição
+- Sraffa propõe resolver esta questão do Ricardo
+- Valor de uso (utilidade, no sentido não-neoclássico) não tem nenhuma relação com valor de troca
+  - Valor de troca depende das condições de produção. Se não há utilidade, não será produzido
+
+** Para Sraffa
+
+- Medida invariável em relação à *técnica em uso*
+- Ricardo e Marx não levaram em conta a questão dos insumos
+  - Insumos básicos também possuíam composições diferentes
+  - Mercadorias possuem composições diferentes
+  - Uma média não cancelaria os efeitos. Seria necessário uma recorrência
+    - Deveria ocorrer nos insumo e essa é a maior dificuldade
+  - Seria um número índice que garantiria a recorrência
+- Quando a taxa de lucro for máxima, a proporção entre o produto líquido e o valor do capital é o mesmo para todos os produtos
+  - A razão será em valor e igual a $R$ e é igual a razão física
+    - Teria essa proporção exata em todas as etapas do processo (insumos)
+    - $R$ é um escalar que reflete a eficiência da economia e não depende da distribuição
+  - Supõe uma mercadoria com esta composição física
+- Fora da taxa de lucro máxima, a perda com a mudança dos preços relativos é idêntica ao ganho da taxa de salário positivo
+  - Seria o preço das demais mercadorias que teria que se alterar e não este número índice
+- É uma representação escalar do excedente que não muda com a distribuição
+
+** Mercadoria padrão (sistema $q$)
+
+- Calcula simultaneamente o $R$ e os pesos $q$
+  - Os pesos relativos $q$ somam 1
+  - Os $q$ de não-básicos são zero
+  - O suposto $R$ próprio dos não-básicos que não se reproduzem suposto maior que o $R$ do sistema (se estes são produzidos)
+- Se a cesta dos salários em mercadoria padrão for o eixo vertical da curva salário lucro, a curva será linear
+  - Se salário for pago antes a relação não é linear
+
+#+BEGIN_latex
+\begin{equation}
+Aq (1 + R) = q
+\end{equation}
+#+END_latex
+
+#+BEGIN_latex
+\begin{equation}
+r = R(1-w)
+\end{equation}
+#+END_latex
+- $r$ vale no sistema real se $w$ for medido em mercadoria padrão
+  - Medido em termos do produto líquido padrão
+
+** Trabalho comandado no sistema padrão
+
+
+#+BEGIN_latex
+\begin{equation}
+\frac{1}{w} = \frac{R}{R - r}
+\end{equation}
+#+END_latex
+
+Versão mais simples:
+
+
+#+BEGIN_latex
+\begin{equation}
+r = R(1 - b)/B
+\end{equation}
+#+END_latex
+
+#+BEGIN_latex
+\begin{equation}
+\frac{B}{b} = \frac{R}{R-r}
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+\frac{B}{b} = \frac{1}{1 - \frac{r}{R}}
+\end{equation}
+#+END_latex
+
+- Usar $r$ como variável independente
+- Medida invariável de valor (magnitude varia com $r$, mas não é independente dos preços relativos)
+
+
+** Sistema de Sraffa
+
+O sistema do Sraffa não é simultâneo, mas sim sequencialmente dado $r$ (medidos em mercadoria padrão).
+Preços e quantidades são determinados separadamente.
+Salário real em mercadorias medidos depois de conhecidos os preços relativos se $r$ é dado.
+
+#+BEGIN_latex
+\begin{equation}
+Aq(1 - R) = q
+\end{equation}
+#+END_latex
+
+Terms de trabalho datado:
+#+BEGIN_latex
+\begin{equation}
+L_{ij} (w) (1 + r)^{j}
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+L_{ij} (1 - r/R) (1 + r)^{j}
+\end{equation}
+#+END_latex
+
+** Mercadoria padrão e "taxa de mais valia" (Eatwell)
+
+
+Duas condições para medida invariável:
+- Preços relativos nela iguais os preços relativos vigentes
+- Valor do agregado do produto, salários e medidos de produção independentes da taxa de lucro ($r$)
+
+A taxa de
 
 * Marx depois de Sraffa
 :PROPERTIES:
@@ -2012,3 +2248,147 @@ Concorrência nivela, mas não determina as variáveis distributivas nem diretam
 :mtime:    20211202152743
 :ctime:    20211202152743
 :END:
+
+** Marx: Continuidade e ruptura
+
+- Materialismo para análise histórico enquanto a teoria econômica e analítica segue os clássicos ingleses
+  - Método dialético não é utilizado para a teoria econômica
+  - Outra estrutura emergiria novas relações sociais
+
+** Interpretação de Sraffa sobre Marx
+
+
+Teoria do valor como instrumento analítico para determinar a taxa de lucro independentemente dos preços relativos:
+
+- Mais-valia :: $s = tv - v$ (Tralho vivo - salário)
+- Taxa geral de lucro :: $r = \frac{s_{1} + s_{2}}{c_{1} + c_{2} + v_{1} + v_{2}}$
+- Preços de produção :: aplicado o procedimento da transformação
+  - Bem que tiver uma composição orgânica maior terá um preço relativo também maior
+
+  #+BEGIN_latex
+\begin{equation}
+p_{1} = (1 + r)(c_{1} + v_{1})
+p_{2} = (1 + r)(c_{2} + v_{2})
+\end{equation}
+  #+END_latex
+
+em que:
+- $Tv$ é tempo de trabalho vivo
+- $c$ é trabalho morto
+- $s$ mais-valia
+
+*Memo:* Somente trabalho vivo gera valor
+- Isso alerta para a redução  do valor a trabalho
+- Valor medido em horas trabalhadas de forma independente da distribuição e da tecnologia e que é o fator gerador de todas as rendas
+- Teoria do valor ajudaria a entender a distribuição no agragado
+
+*** Capital comercial
+
+A taxa geral de lucro:
+#+BEGIN_latex
+\begin{equation}
+Tv - V = r\cdot (C + V)
+\end{equation}
+#+END_latex
+se distingue com lucro comercial
+#+BEGIN_latex
+\begin{equation}
+Tv - V = r\cdot (C + V + KC)
+\end{equation}
+#+END_latex
+supondo que o comércio não gerava mais valia (similar a um não-básico)
+
+*** Lucro e juros
+
+#+BEGIN_latex
+\begin{equation}
+r = n + i
+\end{equation}
+#+END_latex
+em que $n$ é o lucro líquido do empreendedor
+
+#+BEGIN_latex
+\begin{equation}
+Tv - V = (n + i)\cdot (C + V) + (n+i)(KC)
+\end{equation}
+#+END_latex
+
+#+BEGIN_latex
+\begin{equation}
+n + i = \frac{Tv - V}{C + V + KC}
+\end{equation}
+#+END_latex
+
+*** Renda da Terra (absoluta)
+
+
+#+BEGIN_latex
+\begin{equation}
+Tv - V - X = (n + i)(C + V) + (n + i)(KC)
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+n + i = \frac{Tv - V - X}{C + V + KC}
+\end{equation}
+#+END_latex
+
+** Críticas sraffiana
+
+Problemas da teoria do valor e de lucro de Marx:
+- A taxa de lucro agregada é calculada em termos de valor, o que não permite o cálculo exato da taxa de lucro normal e dos preços de produção
+- Desvios entre valor e preços de produção e lucros e mais valia em geral não se compensam
+
+Motivos:
+- Meios de subsistência e meios de produção são comprados e vendidos aos preços de produção, o que implica na necessidade de se determinar simultaneamente a taxa de lucro e preços
+- Somente as condições de produção dos setores que produzem direita ou indiretamente os bens consumidos pelos trabalhadores afetam a taxa de lucro e os preços relativos (básicos). As condições de produção dos bens de lucro não afetam a taxa geral de lucro
+
+** Resumo
+
+Dados os métodos de produção em uso e o salário real:
+
+| Medido em   | Determinam a taxa de lucro e preços relativos | Autor                                    |
+|-------------+-----------------------------------------------+------------------------------------------|
+| Mercadorias | Sequencialmente                               | Ricardo (Trigo), Sraffa (Padrão)         |
+| Trabalho    | Independentemente                             | Ricardo (Princípios)                     |
+| Trabalho    | Sequencialmente                               | Marx                                     |
+| Trabalho    | simultaneamente                               | Dmitrieve, Borltiewcz, Garagnani, Sraffa |
+| Mercadorias | Simultaneamente                               | Von Charasoff, Shibata, Sraffa           |
+
+
+A forma de medir não é relevante.
+Muda apenas o grau de sofisticação.
+O que estas abordagens têm em comum é a teoria do excedente.
+
+** Implicações
+
+
+*** Lei de tendência a queda da taxa de lucro
+
+A teoria do valor trabalho e a [[id:238b93fb-f8ae-4309-9d8c-56f7e9f2f721][Lei de tendência]] a queda da taxa de lucro[fn::Para reduzir os custos com trabalho vivo, supõe-se que é necessário utilizar o método com mais trabalho morto.]:
+- Progresso técnico não reduz a taxa geral de lucro para um dado salário real (Okisho, 1960)
+
+Custos unitários:
+
+- $\frac{c_{b} + v_{b}}{t_{b}} < \frac{c_{a} + v_{a}}{t_{a}}$
+
+Taxa de lucro:
+
+#+BEGIN_latex
+\begin{equation}
+\frac{t}{c + v} = (1+r)
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+\frac{t_{b}}{c_{b} + v_{b}} > \frac{t_{a}}{c_{a} + v_{a}}
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+r_{b} > r_{a}
+\end{equation}
+#+END_latex
+
+O argumento de Marx de que o capitalismo não seria eterno não depende da noção da queda da taxa de lucro em função do progresso técnico.
+A lei de tendência não é também uma dedução da teoria do valor trabalho.
