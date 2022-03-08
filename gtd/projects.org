@@ -35,13 +35,6 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 - Explain the results even if they do not change
 ** TODO Writing steps
 
-*** TODO [#A] Update SFC tables
-
-**** TODO Add households amortisation
-
-- Ver Fagundes
-
-**** TODO Remove household capital contribution from banks
 
 *** TODO Introduction
 
@@ -60,9 +53,9 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 *** TODO Standard review of literature
 
 
-**** TODO What are the source of economic growth
+**** TODO What are the source of economic growth and How investment function is specificed
 
-**** TODO How investment function is specificed
+***** TODO Create table to summarize
 
 **** WAIT Theoretical discussion about normal capacity utilization
 
@@ -125,6 +118,7 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 ** TODO Plots
 *** TODO Script to generate plots for baseline
+**** TODO How to ensure that support function will not invade main files
 *** TODO Additional plots for endogenous mechanism
 ** TODO Analyzes
 
@@ -147,14 +141,12 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 :END:
 
 
-** TODO Simular modelos alternativos
 
-** TODO [#C] Conferir se a seleção dos lags precisa usar dataframe em diferença
 
 ** WAIT Revisão da literature sobre investimento residencial
     - Perez-Montiel, ROPE, Maria Cristina, Fazzari
 
-** TODO Esclarecimentos metodologia adotada
+** WAIT Esclarecimentos metodologia adotada
 - Não fazemos a mesma coisa que o Nikiforos faz, separando o investimento
   - Amostra diferente
     - Justificar o porquê não pegamos a mesma amostra
@@ -169,11 +161,6 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 :agenda-group: Monografias
 :END:
 
-* IEE859 - Teoria do valor e da distribuição :@Lectures:
-:PROPERTIES:
-:agenda-group: Teoria do valor
-:END:
-
 * PED CE362
 
 * WAIT Dissertation group discussion :@Group:
@@ -181,21 +168,24 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 :agenda-group: PhDDiscussionGroup
 :END:
 
-* SFC [0%] :Article:@Master:
+* TODO SFC [0%] :Article:@Master:
 :PROPERTIES:
 :agenda-group: SFC residential investment
 :END:
 ** WAIT Create github repository (git submodule)
+** TODO Convert .tex to .docx
+** TODO Grammar review
 
-* WAIT VECM [0%] :Article:@Master:
+* TODO VECM [0%] :Article:@Master:
 :PROPERTIES:
 :agenda-group: VECM own rate
 :END:
 
 
-** TODO
+** TODO New version
+DEADLINE: <2022-03-11 sex>
 
-* Ratchet effect SSM paper [0/4] :@Article:@PhD:
+* WAIT Ratchet effect SSM paper [0/4] :@Article:@PhD:
 :PROPERTIES:
 :agenda-group: RatchetEffect
 :END:
@@ -214,7 +204,7 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 *WAITING:* Daniel's first results to test the function
 
-* Case-Shiller index for São José dos Campos
+* WAIT Case-Shiller index for São José dos Campos
 :PROPERTIES:
 :agenda-group: CaseShillerSJC
 :END:

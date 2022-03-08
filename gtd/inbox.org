@@ -47,4 +47,5 @@ SCHEDULED: <2022-03-07 seg>
 ** TODO [#A] Blecker and Taylor (2019, chapter 5)
 ** TODO [#D] [[https://academic.oup.com/cje/article-abstract/46/1/73/6372673?redirectedFrom=fulltext][Nikiforos (2022): Induced shifting involvements and cycles of growth and distribution]] :CapacityUtilization:
 
+** WAIT [#D] [[https://www.tandfonline.com/doi/full/10.1080/01603477.2021.1969951][Full article: Rethinking inequality in the 21st century – inequality and hous...]] :ResidentialInvestment:Inequality:SFC:HouseholdWealth:
 * Fleeting notes
