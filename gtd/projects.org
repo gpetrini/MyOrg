@@ -193,6 +193,10 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 ** TODO Change font type in plots
 
+** TODO Export to docx
+
+*** TODO Check why equations, figures and tables are not exported
+
 ** TODO Test red font color without custom latex function
 
 * WAIT Ratchet effect SSM paper [0/4] :@Article:@PhD:
