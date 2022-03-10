@@ -20,6 +20,12 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 ** TODO Ver possibilidade do proficiência com diploma do VM
 
+** TODO Ver possibilidade de defender tese em inglês
+
+** TODO Checar preparativos para sanduíche
+
+*** TODO Teste de proficiência em inglês
+
 * ABM dot-com SSM model :@Article:@PhD:Chapter:
 :PROPERTIES:
 :agenda-group: Dot-Com ABM
@@ -141,7 +147,7 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 :END:
 
 
-
+** TODO Ver se haverá apresentação remota
 
 ** WAIT Revisão da literature sobre investimento residencial
     - Perez-Montiel, ROPE, Maria Cristina, Fazzari
@@ -162,6 +168,11 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 :END:
 
 * PED CE362
+:PROPERTIES:
+:agenda-group: PED
+:END:
+
+** TODO Ler apostila Aggio
 
 * WAIT Dissertation group discussion :@Group:
 :PROPERTIES:
@@ -172,18 +183,17 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 :PROPERTIES:
 :agenda-group: SFC residential investment
 :END:
-** WAIT Create github repository (git submodule)
-** TODO Convert .tex to .docx
-** TODO Grammar review
+
+** TODO Review before publishing
 
 * TODO VECM [0%] :Article:@Master:
 :PROPERTIES:
 :agenda-group: VECM own rate
 :END:
 
+** TODO Change font type in plots
 
-** TODO New version
-DEADLINE: <2022-03-11 sex>
+** TODO Test red font color without custom latex function
 
 * WAIT Ratchet effect SSM paper [0/4] :@Article:@PhD:
 :PROPERTIES:
@@ -313,3 +323,5 @@ DEADLINE: <2022-03-11 sex>
 ** TODO Add bibliography in placeholder entry
 
 ** TODO [#A] Fix website to show code chunks
+
+* WAIT RPPS in ABM
