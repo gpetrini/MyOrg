@@ -191,13 +191,39 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 :agenda-group: VECM own rate
 :END:
 
-** TODO Change font type in plots
 
-** TODO Export to docx
+** TODO Avisar na carta aos pareceristas que removemos a menção ao "first period"
+
+** TODO Pensar onde incluir figura 1
+
+** TODO Mudar fonte no mpl
+
+*** TODO IRF
+
+*** TODO FEVD
+
+
+*** Sources
+
+- [[https://stackoverflow.com/questions/16287921/python-matplotlib-change-axis-labels-legend-from-bold-to-regular-weight/30731054#30731054][Python matplotlib: Change axis labels/legend from bold to regular weight]]
+- [[https://stackoverflow.com/questions/33942210/consistent-fonts-between-matplotlib-and-latex][Consistent fonts between matplotlib and latex]]
+** TODO Rodar modelo com dados corrigidos
+
+*** STRT Teste de raíz unitária
+
+*** STRT Teste de cointegração
+
+*** STRT Estimação
+
+*** STRT IRF
+
+*** STRT FEVD
+
+*** TODO Robustez
+
+** WAIT Export to docx
 
 *** TODO Check why equations, figures and tables are not exported
-
-** TODO Test red font color without custom latex function
 
 * WAIT Ratchet effect SSM paper [0/4] :@Article:@PhD:
 :PROPERTIES:
