@@ -141,44 +141,6 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 *** TODO Import initial variables using org table in purpurea
 *** TODO Define macro pointers as in KS
 
-* Nikiforos econometric model response :@Article:
-:PROPERTIES:
-:agenda-group: Nikiforos response
-:END:
-
-
-** TODO Ver se haverá apresentação remota
-
-** WAIT Revisão da literature sobre investimento residencial
-    - Perez-Montiel, ROPE, Maria Cristina, Fazzari
-
-** WAIT Esclarecimentos metodologia adotada
-- Não fazemos a mesma coisa que o Nikiforos faz, separando o investimento
-  - Amostra diferente
-    - Justificar o porquê não pegamos a mesma amostra
-  - Modelo melhor e não o modelo do Nikiforos
-  - Indicar que foram rodadas outras versões, tentando replicar o mais próximo possível
-
-** Reunião <2022-01-28 sex>
-
-
-* Monografias [0%] :@Orientations:
-:PROPERTIES:
-:agenda-group: Monografias
-:END:
-
-* PED CE362
-:PROPERTIES:
-:agenda-group: PED
-:END:
-
-** TODO Ler apostila Aggio
-
-* WAIT Dissertation group discussion :@Group:
-:PROPERTIES:
-:agenda-group: PhDDiscussionGroup
-:END:
-
 * TODO SFC [0%] :Article:@Master:
 :PROPERTIES:
 :agenda-group: SFC residential investment
@@ -198,7 +160,7 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 ** TODO Mudar fonte no mpl
 
-*** TODO IRF
+*** STRT IRF
 
 *** TODO FEVD
 
@@ -207,7 +169,7 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 - [[https://stackoverflow.com/questions/16287921/python-matplotlib-change-axis-labels-legend-from-bold-to-regular-weight/30731054#30731054][Python matplotlib: Change axis labels/legend from bold to regular weight]]
 - [[https://stackoverflow.com/questions/33942210/consistent-fonts-between-matplotlib-and-latex][Consistent fonts between matplotlib and latex]]
-** TODO Rodar modelo com dados corrigidos
+** STRT Rodar modelo com dados corrigidos
 
 *** STRT Teste de raíz unitária
 
@@ -219,11 +181,42 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 *** STRT FEVD
 
-*** TODO Robustez
+*** STRT Robustez
 
 ** WAIT Export to docx
 
 *** TODO Check why equations, figures and tables are not exported
+
+* Nikiforos econometric model response :@Article:
+:PROPERTIES:
+:agenda-group: Nikiforos response
+:END:
+
+
+** TODO Ver se haverá apresentação remota
+
+** WAIT Revisão da literature sobre investimento residencial
+    - Perez-Montiel, ROPE, Maria Cristina, Fazzari
+
+** WAIT Esclarecimentos metodologia adotada
+- Não fazemos a mesma coisa que o Nikiforos faz, separando o investimento
+  - Amostra diferente
+    - Justificar o porquê não pegamos a mesma amostra
+  - Modelo melhor e não o modelo do Nikiforos
+  - Indicar que foram rodadas outras versões, tentando replicar o mais próximo possível
+
+
+
+* PED CE362
+:PROPERTIES:
+:agenda-group: PED
+:END:
+
+
+* WAIT Dissertation group discussion :@Group:
+:PROPERTIES:
+:agenda-group: PhDDiscussionGroup
+:END:
 
 * WAIT Ratchet effect SSM paper [0/4] :@Article:@PhD:
 :PROPERTIES:
@@ -271,6 +264,61 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 ** TODO Modelo com preço das casas pró-cíclico
 
+* Braindump
+:PROPERTIES:
+:agenda-group: Hugo blog
+:END:
+** TODO Update ABOUT
+** TODO Create Knowledge base
+** TODO Update housekeeping
+** TODO Create publications entry
+** TODO Create teaching section
+** TODO Create factbook for stylized facts
+
+** TODO Corrigir tema escuro
+
+
+** TODO Add bibliography in placeholder entry
+
+** TODO [#A] Fix website to show code chunks
+
+* Emacs :@free:
+
+
+** TODO Adapt notes
+
+*** TODO Convert mds
+
+*** TODO Convert Rmds
+
+
+** TODO Fix paragraph break line in sections with ignore heading
+
+
+** TODO Implement citeproc-el to export to docx
+
+** TODO Fix =#+Results:= wrap to export latex properly
+
+* Monografias [0%] :@Orientations:
+:PROPERTIES:
+:agenda-group: Monografias
+:END:
+
+* Configuração desktop :@free:
+
+** TODO Latex
+
+
+*** TODO Criar links simbólicos tese
+
+*** TODO Instalar styles latex
+
+
+
+** TODO git submodules
+
+** TODO Merge duplicate zotero entries
+
 * WAIT MKKS model [0/3] :@Article:
 :PROPERTIES:
 :agenda-group: MKKS model
@@ -295,38 +343,6 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 ** Skim for results and related bibliography
 
-* Emacs :@free:
-
-
-** TODO Adapt notes
-
-*** TODO Convert mds
-
-*** TODO Convert Rmds
-
-
-** TODO Fix paragraph break line in sections with ignore heading
-
-
-** TODO Implement citeproc-el to export to docx
-
-** TODO Fix =#+Results:= wrap to export latex properly
-
-* Configuração desktop :@free:
-
-** TODO Latex
-
-
-*** TODO Criar links simbólicos tese
-
-*** TODO Instalar styles latex
-
-
-
-** TODO git submodules
-
-** TODO Merge duplicate zotero entries
-
 * Bibliographical shinny app [0/0] :@free:
 
 *Description:* Map heterodox publications and interactions
@@ -335,23 +351,5 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 * Style journal templates :@free:
 ** TODO Create repo
 ** TODO Document examples
-
-* Braindump
-:PROPERTIES:
-:agenda-group: Hugo blog
-:END:
-** TODO Update ABOUT
-** TODO Create Knowledge base
-** TODO Update housekeeping
-** TODO Create publications entry
-** TODO Create teaching section
-** TODO Create factbook for stylized facts
-
-** TODO Corrigir tema escuro
-
-
-** TODO Add bibliography in placeholder entry
-
-** TODO [#A] Fix website to show code chunks
 
 * WAIT RPPS in ABM
