@@ -85,6 +85,14 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 **** TODO Present symbolic model
 
+***** TODO Change text to have no dividends from capital goods firms
+
+***** TODO Check coherence of households tax
+
+***** TODO Check if there is any deposits payments from banks
+
+***** TODO Check household disposable income and Net financial balance
+
 *** TODO Update to org-cite syntax
 
 ** TODO Readings steps

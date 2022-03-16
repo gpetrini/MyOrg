@@ -172,6 +172,11 @@ In general, there is no persistent effects in terms of economic growth or regard
 - It is required to estimate household debt service as in firms?
   - It is required to estimate a new etaf?
 
+**** Symbolic solution
+
+- Should household tax rate include interest on consumption loans?
+- Household consumption that depends on profits should be net of taxes?
+
 * Housing AB model
 
 ** General topics
