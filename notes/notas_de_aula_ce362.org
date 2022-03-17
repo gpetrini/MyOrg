@@ -1,0 +1,59 @@
+:PROPERTIES:
+:ID:       8eb3bc68-0c9a-4ac1-982a-391ac6a21bd8
+:END:
+#+title: Notas de Aula CE362
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+#+hugo_section: notes
+#+HUGO_CATEGORIES: Lectures
+#+BIBLIOGRAPHY: ~/Documents/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil
+
+
+* Apresentação do curso (<2022-03-17 qui>)
+:PROPERTIES:
+:PROFESSOR: Aggio
+:END:
+
+** Retomada de alguns conceitos de microeconomia I e rumo à microeconomia II
+
+Em microeconomia I é apresentada uma teoria da escolha em que supõe-se a racionalidade dos agentes.
+Para tanto, supõe-se:
+- Não circularidade
+- Transitividade
+
+
+Ampliando tal teoria para as decisões da firma, tratou-se de uma estrutura de mercado concorrencial com livre entrada e saída de capitias.
+Como consequência, há lucro econômico zero (sem lucros anormais).
+
+Em linhas gerais, o curso de microeconomia II abandonará estas hipóteses.
+
+
+** Conteúdo da disciplina
+
+- Estruturas de mercado não concorrênciais
+  - Monopólio
+    - Monopólio simples
+    - Discriminação no monopólio
+    - Mercado de fatores e monopsônios
+    - Monopólio natural
+    - Competição monopolística
+  - Oligopólio
+
+Além disso, será tratado de [[id:1fc2115e-9b3a-435c-b3d0-854f96f82c95][Teoria dos Jogos]] uma vez que parte do conteúdo trata da interdependência dos agentes.
+Adiante, aborda-se um modelo de [[id:175002f6-69a8-4fa1-a7da-b76802ecc21e][General Equilibrium Model]].
+
+* Monopólio (<2022-03-17 qui> - )
+
+** Introdução
+
+Um monopólio é uma empresa ofertante em um mercado.
+Um mercado, por sua vez, envolve um único bem ou serviço dada uma circunscrição espacial.
+Dentre as causas do monopólio, elenca-se:
+- Tecnologia
+  - Monopólio natural
+    - Supõe-se um custo fixo proporcionalmente muito maior
+- Institucionalizados
+- Patentes
+- Barreiras à entrada
+  - Monopsônio de determinado fator pode criar uma barreira à entrada
