@@ -26,6 +26,8 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 *** TODO Teste de proficiência em inglês
 
+** TODO Apêndice com classificação de Dawid e Gatti
+
 * ABM dot-com SSM model :@Article:@PhD:Chapter:
 :PROPERTIES:
 :agenda-group: Dot-Com ABM
@@ -85,15 +87,13 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 **** TODO Present symbolic model
 
-***** TODO Change text to have no dividends from capital goods firms
-
-***** TODO Check coherence of households tax
-
-***** TODO Check if there is any deposits payments from banks
-
 ***** TODO Check household disposable income and Net financial balance
 
 *** TODO Update to org-cite syntax
+
+*** TODO Calibration appendix table
+
+*** TODO Model structure appendix table as Dawid and Gatti
 
 ** TODO Readings steps
 
@@ -226,7 +226,7 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 :agenda-group: PhDDiscussionGroup
 :END:
 
-* WAIT Ratchet effect SSM paper [0/4] :@Article:@PhD:
+* WAIT Ratchet effect SSM paper [0/3] :@Article:@PhD:
 :PROPERTIES:
 :agenda-group: RatchetEffect
 :END:
@@ -244,6 +244,8 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 *** WAIT Create function to generalize common plots
 
 *WAITING:* Daniel's first results to test the function
+
+** TODO Test Ratchet effect with maximum consumption function (in levels)
 
 * WAIT Case-Shiller index for São José dos Campos
 :PROPERTIES:

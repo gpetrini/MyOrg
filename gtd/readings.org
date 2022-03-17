@@ -426,6 +426,8 @@ CLOSED: [2022-01-12 qua 17:41]
 *** SKIM [#C] [[https://link.springer.com/article/10.1007/s43253-021-00050-7][The financialization of rented homes: continuity and change in housing financ...]] :HousingMarket:RentalMarket:Financialization:Concepts:Definition:ResidentialInvestment:
 
 *** SKIM [#D] [[https://www.tandfonline.com/doi/abs/10.1080/1351847X.2021.1959366?journalCode=rejf20][Credit composition and housing price dynamics: a disaggregation approach]] :Panel:HousePrices:TimeSeries:Europe:AssetPrices:
+
+*** RESULTS [#A] [[https://www.sciencedirect.com/science/article/pii/S0939362522000334][A re-examination of housing bubbles: Evidence from European countries]] :HousePrices:HousingBubbles:AssetBubbles:HousingMarket:Europe:Panel:Empirical:
 *** RESULTS [#C] [[https://www.sciencedirect.com/science/article/abs/pii/S0165176521004171][Consumption and housing net worth: Cross-country evidence - ScienceDirect]] :Housing:HouseholdConsumption:HouseholdWealth:HouseholdNetWorth:HousePrices:Empirical:OECD:AsymetricModel:
 *** ARCH [#C] [[https://www.kansascityfed.org/PUBLICAT/ECONREV/PDF/2q07rapp.pdf][Rappaport - A Guide to Aggregate House Price Measures]] :USA:HousePrices:
 ** [[file:../notes/20210405101242-bubbles_and_aggregate_demand.org][Bubbles and aggregate demand]] :Dissertation:
