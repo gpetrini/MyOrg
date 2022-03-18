@@ -220,6 +220,7 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 :agenda-group: PED
 :END:
 
+** TODO Criar enquete sobre dias das monitorias
 
 * WAIT Dissertation group discussion :@Group:
 :PROPERTIES:
