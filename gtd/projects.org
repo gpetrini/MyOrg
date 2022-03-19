@@ -128,6 +128,20 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 **** TODO Change equations in R script
 
+***** TODO Include nominal depreciation rate in h equation?
+
+#+begin_example
+h ~ (g_k * v)/u + avg_dep_nom
+#+end_example
+
+
+***** TODO Include real depreciation in firms investment equation?
+
+#+begin_example
+If ~ h*S + Pk * Nominal_Dep
+#+end_example
+
+
 *** TODO Run model with endogenous expectations
 
 ** TODO Plots
