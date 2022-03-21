@@ -46,6 +46,7 @@ SCHEDULED: <2022-03-07 seg>
 ** TODO [#A] [[https://econpapers.repec.org/paper/pkewpaper/pkwp2201.htm][Jump and Stockhammer (2022): Building blocks of a heterodox business cycle theory]] :BusinessCycles:AcceleratorModel:Minskian:Goodwinian:FinancialCrisis:
 ** TODO [#A] [[https://onlinelibrary.wiley.com/doi/abs/10.1111/meca.12377][“The total movement of this disorder is its order”: Investment and utilizatio...]] :SraffianSupermultiplier:
 ** TODO [#A] [[https://www.sciencedirect.com/science/article/pii/S0165188910001491][The financial accelerator in an evolving credit network - ScienceDirect]] :ABM:
+** TODO [#A] [[http://www.postkeynesian.net/downloads/working-papers/PKWP2210.pdf][Learning from distant cousins? Post-Keynesian Economics, Comparative Political Economy and the growth models approach]] :ComparativePoliticalEconomy:ReviewOfLiterature:VarietiesOfCapitalistm:GrowthModels:
 ** TODO [#A] Blecker and Taylor (2019, chapter 5)
 ** TODO [#D] [[https://academic.oup.com/cje/article-abstract/46/1/73/6372673?redirectedFrom=fulltext][Nikiforos (2022): Induced shifting involvements and cycles of growth and distribution]] :CapacityUtilization:
 

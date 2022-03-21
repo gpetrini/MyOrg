@@ -126,6 +126,10 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 **** TODO Calibrate
 
+***** TODO Check why aggregate demand is being equal to zero
+
+****** TODO Compare with Italo's adjustments
+
 **** TODO Change equations in R script
 
 ***** TODO Include nominal depreciation rate in h equation?
