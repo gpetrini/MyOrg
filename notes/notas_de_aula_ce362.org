@@ -57,3 +57,144 @@ Dentre as causas do monopólio, elenca-se:
 - Patentes
 - Barreiras à entrada
   - Monopsônio de determinado fator pode criar uma barreira à entrada
+
+** Monopólio simples
+
+*** Hipóteses
+
+- Empresa oferta todas as unidades de um mesmo bem ou serviço ao mesmo preço
+  - Por consequência, não há [[id:f1570a85-af92-48fc-bb26-f7c60a77fb4e][Discriminação de preços]]
+- *Objetivo:* Maximizar lucro
+- Empresa é definidora de preço
+- Custo marginal não-negativo
+
+
+*** Lucros
+
+#+BEGIN_latex
+\begin{equation}
+\Pi = p\cdot q - C
+\end{equation}
+#+END_latex
+em que $\Pi$ é o lucro total, $p$ é o preço do bem, $q$ a quantidade e $C$ são os custos totais.
+Por ser definidora de preços, os preços dependem da quantidade produzida.
+#+BEGIN_latex
+\begin{equation}
+\Pi(q) = p(q)\cdot q - C(q)
+\end{equation}
+#+END_latex
+Vale pontuar que $p(q)$ é a função de demanda inversa.
+
+Maximizando a função objetivo:
+#+BEGIN_latex
+\begin{equation*}
+max_{q} \Pi = [p(q)\cdot q] - [C(q)]
+\end{equation*}
+#+END_latex
+Da função anterior, calcula-se a condição de primeira ordem (C.P.O):
+#+BEGIN_latex
+\begin{equation*}
+CPO = \frac{\delta \Pi}{\delta q} = 0
+\end{equation*}
+#+END_latex
+#+BEGIN_latex
+\begin{equation*}
+CPO = \frac{\delta p}{\delta q}\cdot q + p - \frac{\delta C}{\delta q}
+\end{equation*}
+#+END_latex
+#+BEGIN_latex
+\begin{equation*}
+\therefore RMg(q) = CMg(q)
+\end{equation*}
+#+END_latex
+
+Reescrevendo a função da receita marginal:
+#+BEGIN_latex
+\begin{equation}
+RMg(q) = \frac{\delta p}{\delta q}\cdot q + p
+\end{equation}
+#+END_latex
+uma vez que estamos tratando de um bem, é preciso que:
+#+BEGIN_latex
+\begin{equation*}
+p \geq 0 \hspace{2cm} q \geq 0
+\end{equation*}
+#+END_latex
+adicionalmente, supõe-se:
+#+BEGIN_latex
+\begin{equation*}
+\frac{\delta p}{\delta q} < 0
+\end{equation*}
+#+END_latex
+
+
+**** Análise gráfica
+
+****** Função de demanda linear
+
+#+BEGIN_latex
+\begin{equation}
+p(q) = a - b\cdot q, \hspace{1cm} a, b, > 0
+\end{equation}
+#+END_latex
+
+Neste caso, a receita total e marginal são:
+#+BEGIN_latex
+\begin{equation}
+R = (a - b\cdot q)\cdot q \hspace{2cm} RMg = a - 2\cdot b\cdot q
+\end{equation}
+#+END_latex
+
+****** Função demanda não-linear
+#+BEGIN_latex
+\begin{equation}
+p(q) = \frac{A}{1 + q}, A > 0
+\end{equation}
+#+END_latex
+Neste caso, a receita total e marginal são
+#+BEGIN_latex
+\begin{equation}
+R(q) = \frac{A}{1 + q}\cdot q \hspace{2cm} RMg(q) = \left(\frac{- A}{(1 + q)^{2}}\right)\cdot q + \frac{A}{1 + q} = \frac{A}{(1 + q)^{2}}
+\end{equation}
+#+END_latex
+Neste exemplo, a receita marginal é sempre não-nula
+
+#+begin_src gnuplot :results graphics file :file ../figs/2022_03_22_monopolio_exemplo_demanda_nao_linear.png
+reset
+
+set xrange [0:10]
+set xlabel "Quantidade"
+set ylabel "Preço"
+
+p(x) = 2/((1 + x))**2
+R(x) = 2/((1 + x))
+Cmg(x) = (.35)*x
+plot p(x) w lp lw 1, R(x) w lp lw 1, Cmg(x) w lp lw 1
+#+end_src
+
+#+RESULTS:
+[[file:../figs/2022_03_22_monopolio_exemplo_demanda_nao_linear.png]]
+
+Além disso, cabe pontuar que o custo médio pode ser obtido a partir da integral do custo marginal uma vez que o custo fixo, por definição, não varia com a quantidade produzida.
+
+*** Receita marginal e elasticidade-preço da demanda
+
+dividindo ambos os termos por $p$:
+#+BEGIN_latex
+\begin{equation}
+\frac{RMg(q)}{p} = \frac{\delta p}{\delta q}\frac{q}{p} + 1
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+RMg(q) = \left(1 - \frac{1}{|\varepsilon|}\right)\cdot p
+\end{equation}
+#+END_latex
+Importante lembrar que a elasticidade-preço da demanda depende do ponto da demanda.
+Dito isso,
+- Elasticidade-preço da demanda inelástica :: $0 < |\varepsilon| < 1 \Rightarrow RMg < p$
+- Elasticidade-preço da demanda elástica :: $|\varepsilon| > 1 \Rightarrow RMg > p$
+- Elasticidade-preço da demanda unitária :: $|\varepsilon| = 1 \Rightarrow RMg = 0$
+
+Desse modo, a empresa monopolista nunca operará no ramo em que a elasticidade-preço da demanda é inelástica.
+Isso porque é possível aumentar a receita diminuindo a quantidade produzida.
