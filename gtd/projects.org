@@ -221,16 +221,6 @@ If ~ h*S + Pk * Nominal_Dep
 
 ** TODO Ver se haverá apresentação remota
 
-** WAIT Revisão da literature sobre investimento residencial
-    - Perez-Montiel, ROPE, Maria Cristina, Fazzari
-
-** WAIT Esclarecimentos metodologia adotada
-- Não fazemos a mesma coisa que o Nikiforos faz, separando o investimento
-  - Amostra diferente
-    - Justificar o porquê não pegamos a mesma amostra
-  - Modelo melhor e não o modelo do Nikiforos
-  - Indicar que foram rodadas outras versões, tentando replicar o mais próximo possível
-
 
 
 * PED CE362
