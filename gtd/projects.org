@@ -228,10 +228,7 @@ If ~ h*S + Pk * Nominal_Dep
 :agenda-group: PED
 :END:
 
-** TODO Selecionar questões ANPEC (monopólio e monopsônio)
-
-- Últimos 5 anos
-
+** TODO Resolver lista de monopólio
 ** WAIT Divulgar resultado monitoria
 
 * WAIT Dissertation group discussion :@Group:
