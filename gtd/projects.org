@@ -172,7 +172,7 @@ If ~ h*S + Pk * Nominal_Dep
 :agenda-group: SFC residential investment
 :END:
 
-** TODO Review before publishing
+** TODO Adicionar lattes
 
 * TODO VECM [0%] :Article:@Master:
 :PROPERTIES:
@@ -221,7 +221,9 @@ If ~ h*S + Pk * Nominal_Dep
 
 ** TODO Ver se haverá apresentação remota
 
+** TODO Ajustar tamanho gráfico de ciclo
 
+*** TODO Criar gráfico similar para apêndice
 
 * PED CE362
 :PROPERTIES:
