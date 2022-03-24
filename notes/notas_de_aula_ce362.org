@@ -172,9 +172,6 @@ Cmg(x) = (.35)*x
 plot p(x) w lp lw 1, R(x) w lp lw 1, Cmg(x) w lp lw 1
 #+end_src
 
-#+RESULTS:
-[[file:../figs/2022_03_22_monopolio_exemplo_demanda_nao_linear.png]]
-
 Além disso, cabe pontuar que o custo médio pode ser obtido a partir da integral do custo marginal uma vez que o custo fixo, por definição, não varia com a quantidade produzida.
 
 *** Receita marginal e elasticidade-preço da demanda
@@ -198,3 +195,85 @@ Dito isso,
 
 Desse modo, a empresa monopolista nunca operará no ramo em que a elasticidade-preço da demanda é inelástica.
 Isso porque é possível aumentar a receita diminuindo a quantidade produzida.
+
+Prosseguindo,
+#+BEGIN_latex
+\begin{equation}
+\left(1 - \frac{1}{|\varepsilon|}\right)\cdot p = CMg
+\end{equation}
+#+END_latex
+Da equação anterior, é possível expressar o preço em termos de um regra de /mark-up/ cobre os custos marginais:
+#+BEGIN_latex
+\begin{equation}
+p = \frac{CMg}{\left(1 - \frac{1}{|\varepsilon|}\right)} \Rightarrow \mu = \frac{|\varepsilon|}{|\varepsilon| - 1} = \frac{1}{|\varepsilon| - 1}
+\end{equation}
+#+END_latex
+Consequentemente
+#+BEGIN_latex
+\begin{equation}
+p = (1 + \mu)\cdot CMg
+\end{equation}
+#+END_latex
+
+*** Eficiência no monopólio :grafico:
+
+Em monopólio, o preço é maior que o custo marginal para o ramo da demanda elástica.
+Comparando com o caso de concorrência perfeita, haveriam trocas mutualmente vantajosas.
+
+#+begin_src gnuplot :results graphics file :file ../figs/2022-03-24-markup-monopolio.png
+
+
+reset
+
+set xrange [0:10]
+set yrange [0:10]
+set xlabel "Quantidade"
+set ylabel "Preço"
+
+p(x) = 4 - .3*x
+RMg(x) = - .3*x + p(x)
+CMg(x) = (.5)*x
+plot p(x) w lp lw 1 title "Demanda Inversa", CMg(x) w lp lw 1 title "Custo Marginal", RMg(x) w lp lw 1 title "Receita Marginal"
+#+end_src
+
+#+RESULTS:
+[[file:../figs/2022-03-24-markup-monopolio.png]]
+
+
+
+Essa discussão pode ser exposta em termos do excedente do consumidor e do produtor.
+
+#+begin_src gnuplot :results graphics file :file ../figs/2022-03-24-excedente-monopolio.png
+
+reset
+
+set origin 0.0, 0.0
+set xrange [-10:10]
+set yrange [-10:10]
+set xlabel "Quantidade"
+set ylabel "Preco"
+
+p(x) = 4 - .3*x
+RMg(x) = - .3*x + p(x)
+CMg(x) = (.5)*x
+plot p(x) w lp lw 1 title "Demanda Inversa", CMg(x) w lp lw 1 title "Custo Marginal", RMg(x) w lp lw 1 title "Receita Marginal"
+#+end_src
+
+#+RESULTS:
+[[file:../figs/2022-03-24-excedente-monopolio.png]]
+
+Em concorrência perfeita em que o preço é igual ao custo marginal, o excedente do demandante (consumidor, neste caso) seria:
+#+BEGIN_latex
+\begin{equation}
+\int_{q=0}^{q=q(p=CMg)} P(q)
+\end{equation}
+#+END_latex
+enquanto o excedente do ofertante (produtor, neste caso):
+#+BEGIN_latex
+\begin{equation}
+\int_{q=0}^{q=q(p=CMg)} P(q) - CMg(q)
+\end{equation}
+#+END_latex
+
+A perda de excedente em comparação com a concorrência perfeita é definida como ônus do monopólio.
+Vale pontuar que o monopolista não irá ofertar ao preço da concorrência perfeita por não ser capaz de diferenciar preços.
