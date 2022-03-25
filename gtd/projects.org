@@ -221,17 +221,23 @@ If ~ h*S + Pk * Nominal_Dep
 
 ** TODO Ver se haverá apresentação remota
 
-** TODO Ajustar tamanho gráfico de ciclo
-
-*** TODO Criar gráfico similar para apêndice
+** TODO Reunir fichamentos investimento residencial
 
 * PED CE362
 :PROPERTIES:
 :agenda-group: PED
 :END:
+** WAIT Divulgar resultado monitoria
+** TODO Divuldar lista monopólio
 
 ** TODO Resolver lista de monopólio
-** WAIT Divulgar resultado monitoria
+
+** WAIT Resolver lista de teoria dos jogos
+** WAIT Resolver lista de oligopólio
+** WAIT Resolver lista de equilíbrio geral
+
+** WAIT Terminar lista teoria dos jogos
+** WAIT Criar lista Equilíbrio Geral
 
 * WAIT Dissertation group discussion :@Group:
 :PROPERTIES:

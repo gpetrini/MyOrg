@@ -2,7 +2,6 @@
 :ID:       9d5a9a25-3547-4034-be53-c8a62ec19ef6
 :ROAM_REFS: @santetti__Growth
 :END:
-#+title:
 #+OPTIONS: num:nil ^:{} toc:nil
 #+TITLE: Santetti: Growth, Cycles, and Residential Investment - (, )
 #+hugo_base_dir: ~/BrainDump/
