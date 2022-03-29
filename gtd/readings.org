@@ -468,6 +468,11 @@ CLOSED: [2021-11-08 seg 11:22]
 CLOSED: [2022-01-12 qua 09:24]
 
 
+
+
+*** PARTIAL [#A] [[https://www.sciencedirect.com/science/article/pii/S0165188922000409?dgcid=raven_sd_via_email][The cyclicality of entry and exit: The role of imperfect information]] :Empirical:EntryExit:DisaggregateInformation:US:BusinessCycles:CapacityUtilization:PlantDynamics:
+
+
 *** PARTIAL [#A] [[http://www.carlotaperez.org/pubs?s=tf&l=en&a=technologicalrevolutionsandfinancialcapital][Technological revolutions and financial capital: the dynamics of bubbles and golden ages]]
 
 **** READ [#C] Ch 4: The Propagation of Paradigms: Times of Installation, Times of Deployment
@@ -484,15 +489,15 @@ CLOSED: [2022-01-12 qua 09:24]
 
 **** READ [#B] Ch 12: Synergy: Supporting the Expansion of the Paradigm across the Productive Structure
 
-*** SKIM [#B]  [[https://doi.org/10.1007/s10614-005-6158-z][Evaluating Market Attractiveness: Individual Incentives Versus Industry Profitability]]
-
-*Reason:* May have some interesting modeling procedure for individual- and industry-level decisions
-
 *** SKIM [#A] [[https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2369806][Animal Spirits, Heterogeneous Expectations and the Emergence of Booms and Busts]]
 
 *Reason:* May provide empirical evidence for autonomous investment as a unsustainable process
 
 
+
+*** SKIM [#B]  [[https://doi.org/10.1007/s10614-005-6158-z][Evaluating Market Attractiveness: Individual Incentives Versus Industry Profitability]]
+
+*Reason:* May have some interesting modeling procedure for individual- and industry-level decisions
 
 *** SKIM [#B] [[https://www.sciencedirect.com/science/article/abs/pii/S1094202598900114][Doms and Dunne (1998): Capital Adjustment Patterns in Manufacturing Plants]] :StylizedFacts:InvestmentPlan:Empirical:Lumpiness:
 
@@ -567,6 +572,7 @@ CLOSED: [2021-11-24 qua 17:18]
 
 *** PARTIAL [#B] [[https://www.sciencedirect.com/science/article/pii/S016518891000223X][The heterogeneous expectations hypothesis: Some evidence from the lab]] :Empirical:Experiments:Expectations:HeuristicSwitching:Results:Heterogeinity:Learning:
 
+*** PARTIAL [#B] [[https://www.sciencedirect.com/science/article/pii/S0165188922000410?dgcid=raven_sd_via_email][Disciplining expectations and the forward guidance puzzle]] :ExpectationFormation:Empirical:Survey:Forecast:
 *** PARTIAL [#B] [[https://www.sciencedirect.com/science/article/pii/S0304393213000810][‘Wait-and-See’ business cycles?]] :Results:BusinessCycle:FirmData:InvestmentPlan:US:CapitalAdjustmentCost:
 *** PARTIAL [#C] [[https://www.sciencedirect.com/science/article/pii/S0165188900000282][Learning to speculate: Experiments with artificial and real agents]] :AgentBased:Experiments:Learning:SearchAlgorithm:Speculation:
 *** PARTIAL [#C] [[https://www.sciencedirect.com/science/article/pii/S0167268120302444][The expected price of keeping up with the Joneses]] :Inspiration:Expectations:Inequality:ToBase:SocialComparison:

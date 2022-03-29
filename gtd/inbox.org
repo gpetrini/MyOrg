@@ -37,6 +37,10 @@ SCHEDULED: <2022-03-07 seg>
 * News Inbox
 
 * Reading Inbox
+
+
+** TODO [[https://books.google.com.br/books?hl=pt-BR&lr=&id=-XxlEAAAQBAJ&oi=fnd&pg=PA27&dq=Agent+Based+Modeling&ots=OUKcwJRDUf&sig=BHVPaoeGYD2MegGeKOjy5ULQQnE#v=onepage&q=Agent%20Based%20Modeling&f=false][A Schelling-Opinion Model Based on Integration of Opinion Formation with Residential Segregation]] :ResidentialSegregation:ABM:SchellingModel:OpinionFormation:OpinionPolarization:
+** TODO [[https://www.tandfonline.com/doi/full/10.1080/00213624.2022.2020023][Boom, Bust, and Bitcoin: Bitcoin-Bubbles as Innovation Accelerators]] :BusinessCycles:FinancialInnovation:AssetBubble:Criptocurrency:TechnologicalAdoption:
 ** TODO [[https://www.emerald.com/insight/content/doi/10.1108/JERER-02-2021-0011/full/html][The housing cycle as shaped by prices and transactions: a tentative applicati...]] :HousePrices:BusinessCycles:CreditCycle:
 ** TODO [#A] [[https://constructionphysics.substack.com/p/how-much-do-construction-costs-matter][How much do construction costs matter? Some factors that affect the price of ...]] :HousePrices:ConstructionCost:LandPrice:
 ** TODO [#B] [[https://link.springer.com/article/10.1007/s00191-021-00732-9][Capability accumulation and product innovation: an agent-based perspective | ...]] :ABM:ProductInnovation:
