@@ -277,3 +277,183 @@ enquanto o excedente do ofertante (produtor, neste caso):
 
 A perda de excedente em comparação com a concorrência perfeita é definida como ônus do monopólio.
 Vale pontuar que o monopolista não irá ofertar ao preço da concorrência perfeita por não ser capaz de diferenciar preços.
+
+
+*** Exercícios
+
+**** Monopólio simples
+
+Considere:
+#+BEGIN_latex
+\begin{equation}
+p(q) = 100 - 2q
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+C(q) = 0,5q^{2}
+\end{equation}
+#+END_latex
+
+Determine:
+- Quantidade de produzida de máximo lucro
+- Preço de máximo lucro
+- Lucro
+- Ônus do monopólio
+
+
+***** Quantidade máxima
+
+#+BEGIN_latex
+\begin{equation}
+max \pi: p(q)\cdot q - .5q^{2}
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+\frac{d \pi}{d q} = \left(\frac{p(q)}{q}\cdot q + p(q)\right) - .5\cdot \frac{d q^{2}}{d q} = 0
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+100 - 4\cdot q - q = 0
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+q^{\star} = 20
+\end{equation}
+#+END_latex
+
+***** Preço de máximo lucro
+#+BEGIN_latex
+\begin{equation}
+p(q^{\star}) = 100 - 2\cdot q^{\star}
+\end{equation}
+#+BEGIN_latex
+\begin{equation}
+p(q^{\star}) = 100 - 2\cdot 20 = 60
+\end{equation}
+#+END_latex
+#+END_latex
+
+***** Lucro máximo
+
+#+BEGIN_latex
+\begin{equation}
+\pi^{\star} = p^{\star}\cdot q^{\star} - .5\cdot q^{\star2}
+\end{equation}
+#+END_latex
+Substituindo
+#+BEGIN_SRC python
+pi = (60 * 20) - .5*(20)**2
+print(pi)
+#+END_SRC
+
+#+RESULTS:
+: 1000.0
+
+***** Ônus do monopólio
+
+O ônus do monopólio é a área entre o preço de máximo lucro e o preço em concorrência perfeita.
+
+#+BEGIN_latex
+\begin{equation}
+\int_{q^{m}}^{q^{c}} (100 - 2q) - .5q
+\end{equation}
+#+END_latex
+
+O preço em concorrência perfeita é dado por:
+#+BEGIN_latex
+\begin{equation}
+p = CMg \Rightarrow 100 - 2q = q \Rightarrow p^{c} = \frac{100}{3}
+\end{equation}
+#+END_latex
+
+#+BEGIN_latex
+\begin{equation}
+\int_{20}^{\frac{100}{3}} (100 - 2q) - q \Rightarrow \int_{q^{m}}^{q^{c}} 100 - 3q
+\end{equation}
+#+END_latex
+
+#+BEGIN_latex
+\begin{equation}
+\int_{q^{m}}^{q^{c}} 100q - \frac{3}{2}\cdot q^{2}
+\end{equation}
+#+END_latex
+
+#+BEGIN_latex
+\begin{equation}
+(100\cdot \frac{100}{3} - 100\cdot 20) - \frac{3}{2}\left(\left(\frac{100}{3})^{2}\right) - \left(20^{2}\right)
+\end{equation}
+#+END_latex
+
+#+BEGIN_SRC python
+onus = (100*(100/3) - 100*20) - (3/2)*((100/3)**2 - 20**2)
+print(onus)
+#+END_SRC
+
+#+RESULTS:
+: 266.6666666666665
+
+***** Elasticidade no ponto de máximo lucro
+
+#+BEGIN_latex
+\begin{equation}
+\varepsilon = \frac{d q}{d p}\cdot \frac{p}{q} \Rightarrow \frac{d q}{d p}\cdot \frac{60}{20}
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+q = 50 - \frac{p}{2}
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+\frac{d q}{d p} = -\frac{1}{2}
+\end{equation}
+#+END_latex
+Logo:
+#+BEGIN_latex
+\begin{equation}
+\varepsilon = -\frac{3}{2}
+\end{equation}
+#+END_latex
+
+**** Caso mais genérico
+
+Considere uma função de demanda inversa $p(q)$ em que $\frac{d p}{dq} > 0$ e a seguinte função de custos:
+#+BEGIN_latex
+\begin{equation}
+C = F + c\cdot q
+\end{equation}
+#+END_latex
+com $F, c > 0$
+
+Neste caso,
+#+BEGIN_latex
+\begin{equation}
+CMg = c \hspace{2cm} CMe = \frac{F}{q} + c
+\end{equation}
+#+END_latex
+
+#+begin_src gnuplot :results graphics file :file ../figs/2022-03-29-exercicio-custos.png
+
+
+set xrange [0:10]
+
+CMe(x) = (10/x) + 2
+CMg(x) = 2
+
+plot CMe(x) w lp lw 1, CMg(x) w lp
+
+#+end_src
+
+#+RESULTS:
+[[file:../figs/2022-03-29-exercicio-custos.png]]
+
+* Teoria dos jogos
+
+* Oligopólio
+
+* Equilíbrio Geral
