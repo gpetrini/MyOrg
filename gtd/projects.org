@@ -221,7 +221,17 @@ If ~ h*S + Pk * Nominal_Dep
 
 ** TODO Ver se haverá apresentação remota
 
-** TODO Reunir fichamentos investimento residencial
+** TODO Conferir e completar referências
+
+** TODO Conferir numeração de figuras
+
+** WAIT Revisão geral e gramarly
+
+** WAIT Formatação
+
+** TODO Incluir equação como mathml
+
+** TODO Conferir formatação das tabelas
 
 * PED CE362
 :PROPERTIES:
