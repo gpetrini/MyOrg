@@ -219,18 +219,10 @@ If ~ h*S + Pk * Nominal_Dep
 :END:
 
 
-** TODO Ver se haverá apresentação remota
-
-
-** TODO Conferir numeração de figuras
 
 ** WAIT Revisão geral e gramarly
 
 ** WAIT Formatação
-
-** TODO Incluir equação como mathml
-
-** TODO Conferir formatação das tabelas
 
 ** WAIT Estimar modelo com grau de utilização sem log
 
@@ -238,10 +230,7 @@ If ~ h*S + Pk * Nominal_Dep
 :PROPERTIES:
 :agenda-group: PED
 :END:
-** WAIT Divulgar resultado monitoria
-** TODO Divuldar lista monopólio
-
-** TODO Resolver lista de monopólio
+** STRT Resolver lista de monopólio
 
 ** WAIT Resolver lista de teoria dos jogos
 ** WAIT Resolver lista de oligopólio
