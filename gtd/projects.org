@@ -221,16 +221,6 @@ If ~ h*S + Pk * Nominal_Dep
 
 ** TODO Ver se haverá apresentação remota
 
-** TODO Conferir e completar referências
-
-*** TODO Incluir Duesenberry
-
-*** TODO Incluir Kydland
-
-*** TODO Referências parágrafos novos seção empírica
-
-*** TODO Remover Goés e Deleidi
-
 
 ** TODO Conferir numeração de figuras
 
