@@ -449,8 +449,139 @@ plot CMe(x) w lp lw 1, CMg(x) w lp
 
 #+end_src
 
+
+**** Curva de demanda não linear
+
+Considere a seguinte curva de demanda não linear:
+#+BEGIN_latex
+\begin{equation}
+p(q) = \frac{200}{q + 1}
+\end{equation}
+#+END_latex
+com a seguinte curva de custos:
+#+BEGIN_latex
+\begin{equation}
+C(q) = 2q
+\end{equation}
+#+END_latex
+
+Determine a quantidade, preço e lucro máximo, elasticidade-preço da demanda e o ônus do monopólio.
+
+***** Quantidade
+
+#+BEGIN_latex
+\begin{equation}
+max \pi = p(q)\cdot q - C(q) \Rightarrow \frac{200}{q + i}\cdot q - 2q
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+\frac{d \pi}{d q} = -\frac{200}{(q + 1)^{2}}\cdot q + \frac{200}{q + 1} - 2 = 0
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+\frac{200(q + 1) - 200\cdot q}{(q + 1)^{2}} = 2
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+\frac{200}{(q + 1)^{2}} = 2 \Rightarrow \frac{1}{(1 + q)^{2}} = \frac{1}{100}
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+(1 + q)^{2} = 100 \Rightarrow q^{\star} = -11, 9
+\end{equation}
+#+END_latex
+
+***** Preço
+
+Supondo a quantidade produzida positiva apenas:
+#+BEGIN_latex
+\begin{equation}
+p(q = 9) = \frac{200}{9 + 1} = 20
+\end{equation}
+#+END_latex
+
+***** Lucro
+
+#+BEGIN_latex
+\begin{equation}
+\pi(q = 9) = 20\cdot 9 - 2\cdot 9 = 18 \cdot 9 =  162
+\end{equation}
+#+END_latex
+
+
+***** Elasticidade preço
+
+#+BEGIN_latex
+\begin{equation}
+\varepsilon = \frac{d q}{d p}\cdot \frac{p}{q} = -\frac{200}{(p)^{2}}\cdot \frac{20}{9} = -2\cdot \frac{5}{9}
+\end{equation}
+#+END_latex
+
+***** Ônus do monopólio
+
+Para obter o ônus do monopólio, é preciso encontar o preço e a quantidade em concorrência perfeita:
+#+BEGIN_latex
+\begin{equation}
+p^{c} = CMg = 2
+\end{equation}
+#+END_latex
+
+#+BEGIN_latex
+\begin{equation}
+q(p) = \frac{200}{p} - 1 \Rightarrow q(p = 2) = 99
+\end{equation}
+#+END_latex
+
+#+BEGIN_latex
+\begin{equation}
+DWL = \int_{q^{m}}^{q^{c}} p(q) - CMg
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+DWL = \int_{q^{m}}^{q^{c}} (\frac{200}{q + 1} - 2) dq = 200\cdot ln(q + 1) - 2q
+\end{equation}
+#+END_latex
+Substituindo:
+#+BEGIN_latex
+\begin{equation}
+200\cdot (ln(100) - ln(9)) - 2\cdot (99 - 9) = 200\cdot (ln(100) - ln(9)) - 180 \approx 301
+\end{equation}
+#+END_latex
+
+***** Análise gráfica
+
+#+begin_src gnuplot :results graphics file :file ../figs/2022-03-31-ex_demanda_nao_linear.png
+
+
+set xrange [0:100]
+set yrange [0:200]
+
+p(x) = (200)/(x + 1)
+RMg(x) = ((-200)/((x + 1)**2)*x) + p(x)
+CMg(x) = 2
+C(x) = 2*x
+Pi(x) = p(x)*x - C(x)
+
+plot p(x) lw 3, CMg(x) lw 3, RMg(x) lw 3, C(x) lw 3, Pi(x) lw 3
+#+end_src
+
 #+RESULTS:
-[[file:../figs/2022-03-29-exercicio-custos.png]]
+[[file:../figs/2022-03-31-ex_demanda_nao_linear.png]]
+
+
+*** Discriminação de preços em monopólio
+
+Discriminação de preços refere-se a uma estratégia das empresas capturarem maior parcela do excedente.
+São elas:
+- Discriminação perfeita (primeiro grau) :: em que a empresa conhece as preferências dos demandates
+- Discriminação entre grupos (terceiro grau) :: em que a empresa consegue distinguir entre os grupos de demanda
+- Discriminação entre grupos identificáveis :: os demandantes se identificam e a empresa oferece os preços de acordo com tal identificação
+- Discriminação entre grupos não indentificáveis :: em que a empresa só consegue avaliar a quantidade (pacotes) comprada de cada bem que induzem a autoidentificação
 
 * Teoria dos jogos
 
