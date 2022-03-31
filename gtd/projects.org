@@ -218,13 +218,10 @@ If ~ h*S + Pk * Nominal_Dep
 :agenda-group: Nikiforos response
 :END:
 
-
-
 ** WAIT Revisão geral e gramarly
 
 ** WAIT Formatação
 
-** WAIT Estimar modelo com grau de utilização sem log
 
 * PED CE362
 :PROPERTIES:
@@ -235,9 +232,6 @@ If ~ h*S + Pk * Nominal_Dep
 ** WAIT Resolver lista de teoria dos jogos
 ** WAIT Resolver lista de oligopólio
 ** WAIT Resolver lista de equilíbrio geral
-
-** WAIT Terminar lista teoria dos jogos
-** WAIT Criar lista Equilíbrio Geral
 
 * WAIT Dissertation group discussion :@Group:
 :PROPERTIES:
