@@ -28,6 +28,10 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 ** TODO Apêndice com classificação de Dawid e Gatti
 
+** TODO E-mail Rosângela sobre doutorado sanduíche
+
+** TODO Conferir tempo máximo de defesa na dac e ver necessidade de pedido para extender
+
 * ABM dot-com SSM model :@Article:@PhD:Chapter:
 :PROPERTIES:
 :agenda-group: Dot-Com ABM
@@ -195,20 +199,12 @@ If ~ h*S + Pk * Nominal_Dep
 
 - [[https://stackoverflow.com/questions/16287921/python-matplotlib-change-axis-labels-legend-from-bold-to-regular-weight/30731054#30731054][Python matplotlib: Change axis labels/legend from bold to regular weight]]
 - [[https://stackoverflow.com/questions/33942210/consistent-fonts-between-matplotlib-and-latex][Consistent fonts between matplotlib and latex]]
-** STRT Rodar modelo com dados corrigidos
 
-*** STRT Teste de raíz unitária
+** TODO Separar apêndices
 
-*** STRT Teste de cointegração
+** TODO Remover 10 lag nos testes de seleção da ordem do modelo
 
-*** STRT Estimação
-
-*** STRT IRF
-
-*** STRT FEVD
-
-*** STRT Robustez
-
+** TODO Ajustar menção lag FEVD
 ** WAIT Export to docx
 
 *** TODO Check why equations, figures and tables are not exported
@@ -227,12 +223,15 @@ If ~ h*S + Pk * Nominal_Dep
 :PROPERTIES:
 :agenda-group: PED
 :END:
+** TODO Instalar gambit
+** TODO Instalar e testar pacote Nash.jl
+*** TODO Verificar se é aplicável a estratégias puras
+
 ** STRT Resolver lista de monopólio
 
 ** WAIT Resolver lista de teoria dos jogos
 ** WAIT Resolver lista de oligopólio
 ** WAIT Resolver lista de equilíbrio geral
-
 * WAIT Dissertation group discussion :@Group:
 :PROPERTIES:
 :agenda-group: PhDDiscussionGroup

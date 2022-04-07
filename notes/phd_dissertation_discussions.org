@@ -152,30 +152,32 @@ In general, there is no persistent effects in terms of economic growth or regard
 *** First version questions <2022-01-14 sex>
 
 **** Credit
-- How to use =COUNT_HOOK= for bank to access household loans?
-  - How to add households loans in bank total credit supply equation?
-  - HOOK dentro da instância de crédito
+- How to use =COUNT_HOOK= for bank to access household loans and not firms and households?
 
 
 
 **** Entry and exit
 - Which inventory variable to use when exiting?
   - I assume it is end of period
-- While creating hooks between banks and firms, the count hook procedure includes households and need to change?
 
 **** Initialization
 
-- Firms opening, post-sales, post-production, post-credit and end-period should be the same?
-  - Same question for firms deposits
 - Considering Reissl (2020), etaf in mkks is the beta1 in Reissl?
   - It is required to estimate an SS value for households as well?
 - It is required to estimate household debt service as in firms?
   - It is required to estimate a new etaf?
 
-**** Symbolic solution
+**** Capital goods sector
 
-- Should household tax rate include interest on consumption loans?
-- Household consumption that depends on profits should be net of taxes?
+- Should I need to include canceled orders?
+  - Following K+S, cancelation procedure should include:
+    - Reduce the amount of replacement investment
+      - Reduce to zero
+        - Change expansion investment equation: EI = (EI - CANC + RI) * m2 (?)
+      - Shrink replacement investment: RI = (RI - CANC) * m2
+    - Recovered paid machines
+      - Add to gross profits for easy access?
+
 
 * Housing AB model
 

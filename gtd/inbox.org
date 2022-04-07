@@ -20,12 +20,11 @@ https://i.pinimg.com/originals/fd/de/23/fdde2369da2feeaa95a469b0ff1dd3f5.gif
 *** TODO Conferir coparticipação nutricionista
 *** TODO Receber cheque
 ** TODO Ver vacina de tétano
-** TODO Matrícula natação FEF
-SCHEDULED: <2022-03-07 seg>
 ** TODO Marcar otorrinolaringologista (conferir exames)
 ** TODO Marcar clinico geral
 ** WAIT Marcar cardiologista
 ** TODO FIX Insync notebook
+** TODO Depósito warren
 
 * Writing inbox
 
