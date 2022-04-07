@@ -585,6 +585,17 @@ São elas:
 
 * Teoria dos jogos
 
+** Introdução ao tema
+
+*** Definição
+
+A teoria dos jogos pode ser definida como a teoria dos modelos matemáticos que estuda a escolha de decisões ótimas sob condições de conflito.
+Diferente de um jogo de soma-zero, o objetivo de cada jogador é maximizar seu /pay-off/.
+Ao longo do da disciplina serão tratados jogos não-cooperativos.
+
+É importante destacar que a teoria dos jogos não pressupõe informação incompleta.
+Isso porque todos os agentes conhecem a matriz de payoffs ou a árvore de estratégias, assim como os jogadores e o menu de escolhas.
+
 * Oligopólio
 
 * Equilíbrio Geral
