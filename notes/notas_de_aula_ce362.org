@@ -596,6 +596,124 @@ Ao longo do da disciplina serão tratados jogos não-cooperativos.
 É importante destacar que a teoria dos jogos não pressupõe informação incompleta.
 Isso porque todos os agentes conhecem a matriz de payoffs ou a árvore de estratégias, assim como os jogadores e o menu de escolhas.
 
+** Jogos canônicos
+
+*** Dilema dos prisioneiros
+
+Este jogo possui um caráter de dilema por possuir um incentivo ao desvio.
+
+*** Batalha dos sexos
+
+#+CAPTION: Forma matrciaial
+|------------+------------+-------|
+|------------+------------+-------|
+|            | Luta livre | Ópera |
+|------------+------------+-------|
+| Luta livre | 2, 1       | 0, 0  |
+| Ópera      | 0, 0       | 1, 2  |
+|------------+------------+-------|
+|------------+------------+-------|
+
+Neste jogo há dois equilíbrios de Nash.
+
+*** Par ou impar
+
+#+CAPTION: Representação matricial
+|-------+-------+-------|
+|-------+-------+-------|
+|       | Par   | Ímpar |
+|-------+-------+-------|
+| Par   | 1 , 0 | 0 , 1 |
+| Ímpar | 0 , 1 | 1 , 1 |
+|-------+-------+-------|
+|-------+-------+-------|
+
+
+Neste jogo não há uma /best response/ em que sempre há um incentivo a não-cooperação (desviar).
+Além disso, não há solução na forma pura (sem equilíbrio de Nash).
+Se este jogo for repetido $N$, cada jogador terá chances iguais de vencer --- na ausência de um padrão (vício) --- e, consequentemente, ter iguais /payoffs/.
+
+** Estratégia dominante
+
+É um perfil de estratégia dominante é aquele em que o jogador irá sempre optar independentemente das escolhas do demais.
+Se o equilíbrio de Nash ocorrer nesta estratégia, chama-se de um equilíbrio de Nash em estratégias dominantes.
+
+#+CAPTION: Dilema dos prisioneiros com estratégias dominantes
+|--------------+----------+--------------|
+|--------------+----------+--------------|
+|              | Confessa | Não confessa |
+|--------------+----------+--------------|
+| Confessa     | -3, -3   | 0, -10       |
+| Não confessa | -10, 0   | -1, -1       |
+|--------------+----------+--------------|
+|--------------+----------+--------------|
+
+Vale pontuar que o resultado do jogo dependerá do tanto de vezes que esse jogo é jogado.
+O resultado também se alteraria se fosse possível acordar alguma estratégia.
+Tal tema será tratado na parte de oligopólico ao discutir carteis e colusão.
+
+*** Dominante e fracamente dominante
+
+Uma estratégia será estritamente dominantes se o /payoff/ for sempre maior que as outras estratégias.
+Caso exista uma estratégia com /payoff/ igual, será fracamente dominante.
+
+#+BEGIN_latex
+\begin{equation}
+\tag{Estritamente dominante}
+\Pi (s'_{i}, s_{-i}) > \Pi(s_{i}, s_{-i})
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+\tag{Fracamente dominante}
+\Pi (s'_{i}, s_{-i}) \geq \Pi(s_{i}, s_{-i})
+\end{equation}
+#+END_latex
+
+*Hipótese de racionalidade:*  cada jogador procura maximizar seus /payoffs/ e, portamo, não irá jogar uma estratégia estritamente dominada.
+Isso garante que tal estratégia não será jogada.
+
+**** Exemplo
+
+Considere uma empresa que decide se irá ou não lançar uma nova marca.
+A empresa que já esta no mercado deve decidir se aumenta ou não seus gastos com propaganda.
+
+#+CAPTION: Cenário 1
+|-----------+----------------+-------------|
+|-----------+----------------+-------------|
+|           | Aumenta gastos | Não aumenta |
+|-----------+----------------+-------------|
+| Lança     | 5, 5           | 7, 3        |
+| Não lança | 2, 4           | 2, 7        |
+|-----------+----------------+-------------|
+|-----------+----------------+-------------|
+
+
+#+CAPTION: Cenário 2
+|-----------+----------------+-------------|
+|-----------+----------------+-------------|
+|           | Aumenta gastos | Não aumenta |
+|-----------+----------------+-------------|
+| Lança     | 2, 5           | 7, 3        |
+| Não lança | 2, 4           | 2, 7        |
+|-----------+----------------+-------------|
+|-----------+----------------+-------------|
+
+Lançar um produto novo é uma estratégia estritamente dominante no cenário 1, mas fracamente dominante no cenário 2.
+
+** Equilíbrio de Nash em estratégias puras
+
+
+O conjunto das estratégias escolhidas pelos jogadores de um jogo constitui um equilíbrio de Nash se, para cada, jogador, a sua estratégia é ótima dadas as estratégias adotadas pelos outros jogadores.
+
+Todo equilíbrio em estratégias dominantes é um equilíbrio de Nash, mas nem todo equilíbrio de Nash é um equilíbrio em estratégias dominantes.
+Todo equilíbrio que é Pareto eficiente é um equilíbrio de Nash, mas o inverso não é válido.
+
+** Equilíbrio de Nash com estratégias mistas
+
+Dizemos que um jogados escolhe uma estratégia mista quando ele atribui probabilidades à escolha de cada estratégias.
+Um equilíbrio de Nash com estratégias mistas se dá quando cada jogador escolheu  uma estratégia mista que maximiza seu /payoff/ esperado dada a estratégia mista escolhida pelo outro jogador.
+
 * Oligopólio
 
 * Equilíbrio Geral
