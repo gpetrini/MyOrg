@@ -178,6 +178,17 @@ In general, there is no persistent effects in terms of economic growth or regard
     - Recovered paid machines
       - Add to gross profits for easy access?
 
+*** Reunião<2022-04-11 seg>
+
+- Como definir preço dos bens de consumo dados os custos de aquisição do bem de capital?
+  - Quantidade de capital? Custo de aquisição?
+- Como implementar cancelamento de investimento?
+- Como definir hooks dos bancos?
+- Quais foram os critérios para a inicialização sfc?
+- Alguns parâmetros estão com valores iniciais estranhos ($\alpha_{\pi}$, por exemplo)
+- Modelo não cresce
+  - Firmas não investem
+  - Acúmulo de estoques de bens de consumo dada redução das vendas
 
 * Housing AB model
 

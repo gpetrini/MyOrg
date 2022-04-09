@@ -32,6 +32,21 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 ** TODO Conferir tempo máximo de defesa na dac e ver necessidade de pedido para extender
 
+* Doutorado sanduíche [0%] :@PhD:@Berlin:
+:PROPERTIES:
+:agenda-group: Sanduiche
+:END:
+
+** TODO Escrever projeto
+
+** TODO Prova de proficiência
+
+*** TODO Se informar se o CEL aplica o TOEFL de graça
+
+** TODO Pedido ao Hein
+
+** TODO Reunir documentos
+
 * ABM dot-com SSM model :@Article:@PhD:Chapter:
 :PROPERTIES:
 :agenda-group: Dot-Com ABM
