@@ -52,53 +52,6 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 :agenda-group: Dot-Com ABM
 :END:
 
-** TODO To process
-
-*** TODO Change investment function
-
-Express investment as a function of expected growth rate instead of expected demand (in naive terms)
-
-*** TODO Separate flags to government and investment functions as in mkks
-
-*** TODO Test change $Z$ finance using a parameter
-
-
-- A percentage of accumulated wealth and the remaining as debt
-
-*** TODO Change calibration
-
-- First ensure balance matrix
-- Then flow of funds
-- Finally on behavioral equation
-
-**** TODO Estimate average nominal depreciation interativelly
-
-- First run the model without this procedure
-- Calculate the average value after some discart
-
-*** TODO Debug model explosion
-
-- Could be the case of unsufficient autonomous demand
-  - Government expenditures could affect diz
-
-*** TODO [#A] Merge capital and consumption goods
-
-**** TODO Create git submodule
-***** TODO Create git branch to have a greater control
-***** TODO Share with italo
-
-**** TODO Create immitation procedure
-
-**** TODO Remove any mention of the KG sector in the code
-
-**** WAIT Change text
-
-
-*** WAIT Reduce model volatility
-
-The mkks model have a higher volatility than the real world:
-- In the supermultiplier model, this could be even higher
-
 ** TODO [#A] To evaluate
 
 *** TODO Stress KS and MKKS model with /ad hoc/ expected market-share increase
@@ -149,6 +102,8 @@ The mkks model have a higher volatility than the real world:
 
 *** TODO Causal chain of arguments
 
+**** TODO [#A] Update SFC Tables
+
 **** TODO Present arguments
 
 **** TODO Present symbolic model
@@ -156,6 +111,8 @@ The mkks model have a higher volatility than the real world:
 ***** TODO Check household disposable income and Net financial balance
 
 *** TODO Update to org-cite syntax
+
+**** TODO See how to use equation label in org
 
 *** TODO Calibration appendix table
 
@@ -175,48 +132,65 @@ The mkks model have a higher volatility than the real world:
 *** TODO Check product innovation in literature
 
 ** TODO To implement, comment and create checkers
-*** TODO General
-**** TODO Check SFC consistency
-***** TODO Back to Pedrosa's R equations
-****** TODO Define gZ to zero
-***** TODO Change SFC tables
-***** TODO Implement SFC aggregate equations with K sector
-*** TODO Households foreclosure procedure
-*** TODO Implement endogenous expectations mechanism routine
 
-**** TODO Read [cite/t:@dosi_2020_RATIONAL] source code
+*** TODO [#A] Merge firms
+DEADLINE: <2022-04-22 sex>
+**** TODO Create git submodule
+***** TODO Create git branch to have a greater control
+***** TODO Share with italo
 
+**** TODO Create immitation procedure
+
+**** TODO Remove any mention of the KG sector in the code
+
+**** WAIT Change text
+
+
+*** TODO Separate mkks flags
+DEADLINE: <2022-04-22 sex>
+
+**** TODO Government flags
+
+**** TODO Investment flag
+
+**** TODO Export variables to R for easy access
+
+*** TODO Change investment function
+DEADLINE: <2022-04-29 sex>
+
+Express investment as a function of expected growth rate instead of expected demand (in naive terms)
+
+*** TODO Test change $Z$ finance using parameter
+- A percentage of accumulated wealth and the remaining as debt
+
+*** WAIT Change model calibration
+DEADLINE: <2022-05-06 sex>
+- First ensure balance matrix
+- Then flow of funds
+- Finally on behavioral equation
+
+**** TODO Estimate average nominal depreciation interativelly
+
+- First run the model without this procedure
+- Calculate the average value after some discart
+
+*** WAIT Reduce model volatility
+The mkks model have a higher volatility than the real world:
+- In the supermultiplier model, this could be even higher
 ** TODO Model run
 
 *** TODO Baseline model run
+DEADLINE: <2022-05-06 sex>
 
-**** TODO Calibrate
-
-***** TODO Check why aggregate demand is being equal to zero
-
-****** TODO Compare with Italo's adjustments
-
-**** TODO Change equations in R script
-
-***** TODO Include nominal depreciation rate in h equation?
-
-#+begin_example
-h ~ (g_k * v)/u + avg_dep_nom
-#+end_example
-
-
-***** TODO Include real depreciation in firms investment equation?
-
-#+begin_example
-If ~ h*S + Pk * Nominal_Dep
-#+end_example
-
+**** WAIT Reduce model volatility
+The mkks model have a higher volatility than the real world:
+- In the supermultiplier model, this could be even higher
 
 *** TODO Run model with endogenous expectations
+DEADLINE: <2022-06-03 sex>
 
 ** TODO Plots
 *** TODO Script to generate plots for baseline
-**** TODO How to ensure that support function will not invade main files
 *** TODO Additional plots for endogenous mechanism
 ** TODO Analyzes
 
