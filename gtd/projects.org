@@ -52,6 +52,53 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 :agenda-group: Dot-Com ABM
 :END:
 
+** TODO To process
+
+*** TODO Change investment function
+
+Express investment as a function of expected growth rate instead of expected demand (in naive terms)
+
+*** TODO Separate flags to government and investment functions as in mkks
+
+*** TODO Test change $Z$ finance using a parameter
+
+
+- A percentage of accumulated wealth and the remaining as debt
+
+*** TODO Change calibration
+
+- First ensure balance matrix
+- Then flow of funds
+- Finally on behavioral equation
+
+**** TODO Estimate average nominal depreciation interativelly
+
+- First run the model without this procedure
+- Calculate the average value after some discart
+
+*** TODO Debug model explosion
+
+- Could be the case of unsufficient autonomous demand
+  - Government expenditures could affect diz
+
+*** TODO [#A] Merge capital and consumption goods
+
+**** TODO Create git submodule
+***** TODO Create git branch to have a greater control
+***** TODO Share with italo
+
+**** TODO Create immitation procedure
+
+**** TODO Remove any mention of the KG sector in the code
+
+**** WAIT Change text
+
+
+*** WAIT Reduce model volatility
+
+The mkks model have a higher volatility than the real world:
+- In the supermultiplier model, this could be even higher
+
 ** TODO [#A] To evaluate
 
 *** TODO Stress KS and MKKS model with /ad hoc/ expected market-share increase

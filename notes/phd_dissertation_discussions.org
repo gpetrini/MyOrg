@@ -182,13 +182,19 @@ In general, there is no persistent effects in terms of economic growth or regard
 
 - Como definir preço dos bens de consumo dados os custos de aquisição do bem de capital?
   - Quantidade de capital? Custo de aquisição?
+  - OBS: Não imagino que a separação dos setores seja a fonte dos problemas
+    - Firmas de bens de consumo não estão SFC, de bens de capital sim
 - Como implementar cancelamento de investimento?
 - Como definir hooks dos bancos?
 - Quais foram os critérios para a inicialização sfc?
-- Alguns parâmetros estão com valores iniciais estranhos ($\alpha_{\pi}$, por exemplo)
+  - Alguns parâmetros estão com valores iniciais estranhos ($\alpha_{\pi}$, por exemplo)
+  - Existe alguma variável livre?
+  - A depender dos parâmetros a riqueza das famílias fica negativa
 - Modelo não cresce
   - Firmas não investem
   - Acúmulo de estoques de bens de consumo dada redução das vendas
+- Em termos agregados, preciso mudar algo dada a introdução do endividamento das famílias?
+  - Governo superavitário?
 
 * Housing AB model
 
