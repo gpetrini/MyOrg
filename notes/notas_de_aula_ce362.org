@@ -714,6 +714,8 @@ Todo equilíbrio que é Pareto eficiente é um equilíbrio de Nash, mas o invers
 Dizemos que um jogados escolhe uma estratégia mista quando ele atribui probabilidades à escolha de cada estratégias.
 Um equilíbrio de Nash com estratégias mistas se dá quando cada jogador escolheu  uma estratégia mista que maximiza seu /payoff/ esperado dada a estratégia mista escolhida pelo outro jogador.
 
+** Jogos sequenciais
+
 * Oligopólio
 
 * Equilíbrio Geral
