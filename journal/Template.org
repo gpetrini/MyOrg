@@ -1,5 +1,3 @@
-#+title: Template
-
 
 * Captures
 
@@ -50,6 +48,7 @@
 |----------+---------+---------------------+--------------+---------------------------------+-------------------------------------|
 | Decision | Options | Mutually exclusive? | 60s decision | Could I live with this outcome? | What it would like if it were easy? |
 |----------+---------+---------------------+--------------+---------------------------------+-------------------------------------|
+
 * Daily reflections
 
 ** What excited me?

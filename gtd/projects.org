@@ -252,20 +252,6 @@ DEADLINE: <2022-06-03 sex>
 
 ** WAIT Pensar modelo alternativo com controle dos gastos autônomos
 
-** TODO Nota de rodapé sobre grau de utilização com ln
-
-*** TODO Checar modelo sem nenhum logarítimo
-
-** TODO Melhorar tabela de cointegração
-
-** TODO Mudar labels do modelo (I para benchmark e II para antigo Keynesiano)
-
-*** TODO Conferir coesão do texto
-
-** TODO Melhorar gráficos cíclicos
-
-** TODO Corrigir título dos eixos do gráfico dos resultados
-
 ** TODO Enviar gráficos e tabelas para o Summa incluir na apresentação
 
 ** WAIT Revisão geral e gramarly
