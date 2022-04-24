@@ -570,9 +570,6 @@ Pi(x) = p(x)*x - C(x)
 plot p(x) lw 3, CMg(x) lw 3, RMg(x) lw 3, C(x) lw 3, Pi(x) lw 3
 #+end_src
 
-#+RESULTS:
-[[file:../figs/2022-03-31-ex_demanda_nao_linear.png]]
-
 
 *** Discriminação de preços em monopólio
 
@@ -582,6 +579,159 @@ São elas:
 - Discriminação entre grupos (terceiro grau) :: em que a empresa consegue distinguir entre os grupos de demanda
 - Discriminação entre grupos identificáveis :: os demandantes se identificam e a empresa oferece os preços de acordo com tal identificação
 - Discriminação entre grupos não indentificáveis :: em que a empresa só consegue avaliar a quantidade (pacotes) comprada de cada bem que induzem a autoidentificação
+
+** Monopsônio
+
+*** Introdução
+
+Trata-se de uma estrutura de mercado em que há um único demandante de determinado fator.
+
+*** Apresentação do problema de maximização
+
+Neste caso, o monopsonista se depara com uma curva de oferta do fator ($W(x)$).
+Supondo que esta firma esta em um mercado concorrencial, logo, é tomadora de preços.
+Neste caso, a firma precisa determinar o quanto irá produzir (utilizando o insumo $x$) dado que isso também influencia em seus custos totais.
+A função de lucro será:
+
+#+BEGIN_latex
+\begin{equation*}
+\Pi = \overline{p}\cdot q(x) - W(x)\cdot x
+\end{equation*}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+\frac{d \Pi}{d x} = \underbrace{p\cdot \frac{d q(x)}{d x}}_{RMgX} - \underbrace{\left(\frac{d W}{d x}\cdot x + w\right)}_{DMgX} = 0
+\end{equation}
+#+END_latex
+em que $DMgX$ é o dispêndio marginal e igual ao valor do produto marginal.
+Rearrumando, é possível apresentar em termos da elasticidade-preço da oferta ($\varepsilon^{s}$).
+#+BEGIN_latex
+\begin{equation}
+DMgX = w\cdot \left(1 + \frac{1}{\varepsilon^{s}}\right)
+\end{equation}
+#+END_latex
+Essa expressão indica que quanto menos inelástica a demanda pelo fator, maior o poder de mercado do monopsônio sobre o preço do fator.
+
+Considerando um caso em que a empresa é monopsonista do bem $x$ e em concorrência do bem $y$.
+
+| Preço de | x    | y       |
+|          | w(x) | $p_{y}$ |
+
+#+BEGIN_latex
+\begin{equation*}
+\Pi = p\cdot q(x, y) - w(x)\cdot x - p_{y}\cdot y
+\end{equation*}
+#+END_latex
+#+BEGIN_latex
+\begin{equation*}
+\frac{\partial \Pi}{\partial x} = p\cdot \frac{\partial q}{\partial x} - w\cdot \left(1 + \frac{1}{\varepsilon^{s}}\right) = 0
+\end{equation*}
+#+END_latex
+#+BEGIN_latex
+\begin{equation*}
+\frac{\partial \Pi}{\partial y} = p\cdot \frac{\partial q}{\partial y} - p_{y} = 0
+\end{equation*}
+#+END_latex
+
+No mercado concorrencial, o preço será igual a receita marginal enquanto no mercado monopsonista será igual ao despêndio marginal.
+
+#+BEGIN_latex
+\begin{equation*}
+\Pi = p(q)\cdot q(x) - w(x)\cdot x
+\end{equation*}
+#+END_latex
+#+BEGIN_latex
+\begin{equation*}
+\frac{d \Pi}{d x} = \underbrace{\left(\frac{d p}{d q}\cdot\frac{d q}{d x}\cdot q + p\cdot \frac{dq}{dx}\right)}_{RMgX} - \underbrace{\left(\right)}_{DMgX} = 0
+\end{equation*}
+#+END_latex
+
+*** Upstream e downstream
+
+Considere a empresa monopolista $B$ que utiliza o insumo $x$ cuja função lucro é:
+#+BEGIN_latex
+\begin{equation*}
+\Pi^{B} = p(b)\cdot b - p_{x}\cdot x
+\end{equation*}
+#+END_latex
+suponha que $x$ é ofertado pela empresa $A$ que também é monopolista.
+Neste caso, $B$ não é monopsonista de $A$.
+
+Considere a função preço:
+#+BEGIN_latex
+\begin{equation*}
+p_{b}(b) = 100 - b
+\end{equation*}
+#+END_latex
+em que a função de produção é $b = x$.
+Substituindo:
+
+#+BEGIN_latex
+\begin{equation*}
+\Pi^{B} = (100 - b(x))\cdot b(x) - p_{x}\cdot x
+\end{equation*}
+#+END_latex
+#+BEGIN_latex
+\begin{equation*}
+\frac{d \Pi^{B}}{d x} = 100\cdot \frac{d b}{d x} - 2\cdot b\cdot \frac{d b}{d x} - p_{x} = 0
+\end{equation*}
+#+END_latex
+#+BEGIN_latex
+\begin{equation*}
+x = 50 - \frac{p_{x}}{2} \Leftrightarrow p_{x} = 100 - 2\cdot x
+\end{equation*}
+#+END_latex
+
+A empresa $A$ irá observar essa demanda na maximização.
+Supondo custos marginais constantes ($c$) da empresa $A$.
+
+#+BEGIN_latex
+\begin{equation*}
+\Pi^{A} = p_{x}\cdot x - c\cdot x
+\end{equation*}
+#+END_latex
+#+BEGIN_latex
+\begin{equation*}
+\frac{d \Pi^{A}}{d x} = 100 - 4\cdot x - c = 0
+\end{equation*}
+#+END_latex
+#+BEGIN_latex
+\begin{equation*}
+x = 25 - \frac{c}{4}
+\end{equation*}
+#+END_latex
+
+Considerando que as duas empresas irão se unam.
+A maximização será:
+
+#+BEGIN_latex
+\begin{equation*}
+\Pi = (100 - b)\cdot b - c\cdot b
+\end{equation*}
+#+END_latex
+#+BEGIN_latex
+\begin{equation*}
+\frac{d \Pi}{d x} = 100 - 2\cdot x - c = 0
+\end{equation*}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+x = 50 - \frac{c}{2}
+\end{equation}
+#+END_latex
+
+Observa-se que a oferta será o dobro do caso com dois monopólios do que na situação verticalmente integrado.
+Isso porque não há extração do excedente da empresa ofertante do insumo ofertado.
+
+** Concorrência monopolística
+
+Trata-se de uma espécie de monopólio sobre um mercado particular com baixas barreiras a entrada.
+A distinção entre as firmas e que garante a persistência no mercado são as características intangíveis.
+Enquanto houver lucro econômico não nulo (lucro anormal), haverá incentivos a entrada de outras firmas.
+No longo prazo, a curva de demanda tende a ser mais horizontal porque existem alternativas.
+Consequentemente, o lucro econômico converge a zero ou fique menor que zero (se for o caso, sairá do mercado).
+A curva de demanda de longo prazo irá tangencial a curva de custo médio, com lucro econômico zero.
+Outra característica desse mercado é operar com excesso de capacidade já que trabalha aquém do custo médio.
 
 * Teoria dos jogos
 
