@@ -10,6 +10,7 @@
 #+hugo_base_dir: ~/BrainDump/
 #+hugo_section: gtd
 #+HUGO_TAGS: workflow gtd
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
 #+ATTR_HTML: :width 1080px :style float:left;margin-bottom:20px; :class banner
 https://i.pinimg.com/originals/ea/c9/83/eac9832cf6b1ad75af8ccc3ad3db1728.gif
 
@@ -34,6 +35,7 @@ https://i.pinimg.com/originals/ea/c9/83/eac9832cf6b1ad75af8ccc3ad3db1728.gif
 
 
 
+** READ [[https://onlinelibrary.wiley.com/doi/abs/10.1111/meca.12269][Harrodian instability in a post-Keynesian growth and distribution model]] :SraffianSupermultiplier:HarrodianInstability:
 ** [[https://academic.oup.com/cpe/advance-article-abstract/doi/10.1093/cpe/bzab002/6257799][Surplus Approach, Institutions, And Economic Formations]] :Sraffian:OffOffice:CPE:
 
 
@@ -383,6 +385,8 @@ CLOSED: [2022-01-12 qua 17:41]
 :agenda-group: Household debt
 :END:
 
+
+*** READ [#A] [cite:@avritzer_2022_Household]
 *** READ [#A] [[https://link.springer.com/article/10.1007/s43253-021-00061-4][Financialisation: continuity and change— introduction to the special issue | ...]] :Financialization:Housing:Mortgaging:ReviewOfLiterature:TheoreticalMotivation:
 *** READ [#A] [[https://www.oxfordhandbooks.com/view/10.1093/oxfordhb/9780199640935.001.0001/oxfordhb-9780199640935-e-025][Systemic Risk in Banking: An Update - Oxford Handbooks]] :QCA:Banking:
 *** PARTIAL [#A] HOUSEHOLD DEBT IN OECD COUNTRIES: STYLISED FACTS AND POLICY ISSUES :OECD:Panel:
