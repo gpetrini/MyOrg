@@ -1,0 +1,48 @@
+:PROPERTIES:
+:ID:       b82d29a3-0849-41c7-9369-fa6314ac23dd
+:END:
+#+title: 2022-04-26
+* Captures
+* TODOs refiles
+
+| TODO                            | Non-negotiable? | What is exciting about it? | It would make other stuff easier? | Would fight to achieve it? | 20/80? |
+|---------------------------------+-----------------+----------------------------+-----------------------------------+----------------------------+--------|
+| Documentar novas mudanças ROPE  | Não             | nada                       | pouco                             | não                        | não    |
+| Resolver lista teoria dos jogos | sim             | nada                       | sim                               | não                        | sim    |
+| Modificar funções modelo        | sim             | resolver inconsistencias   | sim                               | sim                        | sim    |
+
+* Breaking mind set
+*Triggers:*
+** Impossible situations (bullet points)
+** What is something in my immediate environment that I have never noticed?
+* Health and selfcare
+| Actions | Worst version of my self would do | Best version of my self would do | Effective action |
+|---------+-----------------------------------+----------------------------------+------------------|
+|         |                                   |                                  |                  |
+|---------+-----------------------------------+----------------------------------+------------------|
+| Score   |                                   |                                  |                  |
+* When bad things happen
+#+CAPTION: Cognitive distortions
+|-------+----------------------------+--------------------------+-----------------------------------------------|
+|-------+----------------------------+--------------------------+-----------------------------------------------|
+| Entry | What happened objectively? | What did I make it mean? | How would I confort someone in this situation |
+|-------+----------------------------+--------------------------+-----------------------------------------------|
+* Anxieties
+#+CAPTION: Anxiety tracker
+|---------------------------------------------------------------+--------------------------------+--------------------------------------------------|
+|---------------------------------------------------------------+--------------------------------+--------------------------------------------------|
+| Fears                                                         | Fixes                          | The outcome that I would bet on                  |
+|---------------------------------------------------------------+--------------------------------+--------------------------------------------------|
+| Não conseguir desenvolver um modelo com famílias heterogêneas | discutir com meus orientadores | Irei conseguir, mas com algumas hipóteses fortes |
+
+* Decision making and dilemmas
+#+CAPTION: Decision tracker
+|----------+---------+---------------------+--------------+---------------------------------+-------------------------------------|
+|----------+---------+---------------------+--------------+---------------------------------+-------------------------------------|
+| Decision | Options | Mutually exclusive? | 60s decision | Could I live with this outcome? | What it would like if it were easy? |
+|----------+---------+---------------------+--------------+---------------------------------+-------------------------------------|
+
+* Daily reflections
+** What excited me?
+** What drained me of energy?
+** What did I learn?

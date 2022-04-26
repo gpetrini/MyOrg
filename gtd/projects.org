@@ -135,27 +135,27 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 *** TODO [#A] Merge firms
 DEADLINE: <2022-04-22 sex>
-**** TODO Create git submodule
+**** DONE Create git submodule
 ***** TODO Create git branch to have a greater control
 ***** TODO Share with italo
 
-**** TODO Create immitation procedure
+**** DONE Create immitation procedure
 
-**** TODO Remove any mention of the KG sector in the code
+**** DONE Remove any mention of the KG sector in the code
 
 **** WAIT Change text
 
 
-*** TODO Separate mkks flags
+*** DONE Separate mkks flags
 DEADLINE: <2022-04-22 sex>
 
-**** TODO Government flags
+**** DONE Government flags
 
-**** TODO Investment flag
+**** DONE Investment flag
 
-**** TODO Export variables to R for easy access
+**** DONE Export variables to R for easy access
 
-*** TODO Change investment function
+*** DONE Change investment function
 DEADLINE: <2022-04-29 sex>
 
 Express investment as a function of expected growth rate instead of expected demand (in naive terms)
@@ -165,6 +165,7 @@ Express investment as a function of expected growth rate instead of expected dem
 
 *** WAIT Change model calibration
 DEADLINE: <2022-05-06 sex>
+
 - First ensure balance matrix
 - Then flow of funds
 - Finally on behavioral equation
@@ -220,23 +221,11 @@ DEADLINE: <2022-06-03 sex>
 :END:
 
 
+** TODO Documentar alterações com o Lucas
+
 ** TODO Avisar na carta aos pareceristas que removemos a menção ao "first period"
 
-** TODO Pensar onde incluir figura 1
-
-** TODO Mudar fonte no mpl
-
-*** STRT IRF
-
-*** TODO FEVD
-
-
-*** Sources
-
-- [[https://stackoverflow.com/questions/16287921/python-matplotlib-change-axis-labels-legend-from-bold-to-regular-weight/30731054#30731054][Python matplotlib: Change axis labels/legend from bold to regular weight]]
-- [[https://stackoverflow.com/questions/33942210/consistent-fonts-between-matplotlib-and-latex][Consistent fonts between matplotlib and latex]]
-
-** TODO Separar apêndices
+** STRT Pensar onde incluir figura 1
 
 ** TODO Remover 10 lag nos testes de seleção da ordem do modelo
 
@@ -244,7 +233,6 @@ DEADLINE: <2022-06-03 sex>
 ** WAIT Export to docx
 
 *** TODO Check why equations, figures and tables are not exported
-
 * Nikiforos econometric model response :@Article:
 :PROPERTIES:
 :agenda-group: Nikiforos response
@@ -252,23 +240,15 @@ DEADLINE: <2022-06-03 sex>
 
 ** WAIT Pensar modelo alternativo com controle dos gastos autônomos
 
-** TODO Enviar gráficos e tabelas para o Summa incluir na apresentação
 
-** WAIT Revisão geral e gramarly
-
-
-
-* PED CE362
+* TODO PED CE362
 :PROPERTIES:
 :agenda-group: PED
 :END:
-** TODO Instalar gambit
-** TODO Instalar e testar pacote Nash.jl
-*** TODO Verificar se é aplicável a estratégias puras
-
-** STRT Resolver lista de monopólio
-
 ** WAIT Resolver lista de teoria dos jogos
+** TODO Corrigir P1
+*** TODO Aggio
+*** TODO Zé Maria
 ** WAIT Resolver lista de oligopólio
 ** WAIT Resolver lista de equilíbrio geral
 * WAIT Dissertation group discussion :@Group:
