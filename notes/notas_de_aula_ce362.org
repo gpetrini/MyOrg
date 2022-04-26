@@ -6,7 +6,7 @@
 #+hugo_base_dir: ~/BrainDump/
 #+hugo_section: notes
 #+HUGO_CATEGORIES: Lectures
-#+BIBLIOGRAPHY: ~/Documents/Org/zotero_refs.bib
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
 #+OPTIONS: num:nil ^:{} toc:nil
 
 
@@ -740,21 +740,53 @@ Outra característica desse mercado é operar com excesso de capacidade já que 
 *** Definição
 
 A teoria dos jogos pode ser definida como a teoria dos modelos matemáticos que estuda a escolha de decisões ótimas sob condições de conflito.
-Diferente de um jogo de soma-zero, o objetivo de cada jogador é maximizar seu /pay-off/.
+Diferente de um jogo de soma-zero, o objetivo de cada jogador é maximizar seu /pay-off/.[fn::Nesta família de jogos (denominados de não cooperativos), não existe um mecanismo explícito de cooperação.]
 Ao longo do da disciplina serão tratados jogos não-cooperativos.
 
 É importante destacar que a teoria dos jogos não pressupõe informação incompleta.
 Isso porque todos os agentes conhecem a matriz de payoffs ou a árvore de estratégias, assim como os jogadores e o menu de escolhas.
 
+Trata-se, portanto, de uma coleção de modelos de interações estratégicas interdependentes.
+
+*** Elementos de um jogo (simultâneo) e convenções
+
+Partindo do caso do jogo simultâneo:
+
+- Existem N jogadores
+- Cada jogador possui $m_{i}$ perfis estratégicos
+- Cada jogador possui um retorno esperado dada todos os demais perfis estratégicos ($M = {m_{j}}_{j\neq 1}$) onde: $\pi_{i} = \pi_{i}(m_{i}, M)$
+- As escolhas são simultâneas
+- Informação completa
+  - Cada jogador tem conhecimento da estrutura do modelo, bem como os payoffs e as funções de retorno
+    - Note que é diferente de informação perfeita
+- Hipótese de conhecimento comum sobre racionalidade
+  - Esta hipótese de auto-referência garante a solução
+- Todo jogo pode ser representado em uma matriz de resultados
+
 ** Jogos canônicos
 
 *** Dilema dos prisioneiros
 
+Existem duas estrategias possíveis (confessar e não confessar).
+A estrutura de payoffs é:
+
+#+CAPTION: Matriz de resultados do dilema dos prisioneiros
+|              | Confessa | Não Confessa |
+|--------------+----------+--------------|
+| Confessa     | -5, -5   | 0, -10       |
+| Não Confessa | -10, 0   | -1, -1       |
+
+
+
 Este jogo possui um caráter de dilema por possuir um incentivo ao desvio.
+Esta falha de coordenação implica um equilíbrio não Pareto eficiente.
+Além disso, a estratégia Confessa é dominante para os dois jogadores.
+Logo, há um equilíbrio em estratégias estritamente dominantes.
+Este equilíbrio, além disso, é Pareto dominado.
 
 *** Batalha dos sexos
 
-#+CAPTION: Forma matrciaial
+#+CAPTION: Forma matricial
 |------------+------------+-------|
 |------------+------------+-------|
 |            | Luta livre | Ópera |
@@ -858,6 +890,8 @@ O conjunto das estratégias escolhidas pelos jogadores de um jogo constitui um e
 
 Todo equilíbrio em estratégias dominantes é um equilíbrio de Nash, mas nem todo equilíbrio de Nash é um equilíbrio em estratégias dominantes.
 Todo equilíbrio que é Pareto eficiente é um equilíbrio de Nash, mas o inverso não é válido.
+
+** Escolha sob risco e utilidade von-Newman
 
 ** Equilíbrio de Nash com estratégias mistas
 
