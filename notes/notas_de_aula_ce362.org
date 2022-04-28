@@ -43,7 +43,7 @@ Em linhas gerais, o curso de microeconomia II abandonará estas hipóteses.
 Além disso, será tratado de [[id:1fc2115e-9b3a-435c-b3d0-854f96f82c95][Teoria dos Jogos]] uma vez que parte do conteúdo trata da interdependência dos agentes.
 Adiante, aborda-se um modelo de [[id:175002f6-69a8-4fa1-a7da-b76802ecc21e][General Equilibrium Model]].
 
-* Monopólio (<2022-03-17 qui> - )
+* Monopólio (<2022-03-17 qui> - <2022-04-21 qui>)
 
 ** Introdução
 
@@ -733,7 +733,7 @@ Consequentemente, o lucro econômico converge a zero ou fique menor que zero (se
 A curva de demanda de longo prazo irá tangencial a curva de custo médio, com lucro econômico zero.
 Outra característica desse mercado é operar com excesso de capacidade já que trabalha aquém do custo médio.
 
-* Teoria dos jogos
+* Teoria dos jogos (<2022-04-26 ter> - )
 
 ** Introdução ao tema
 
@@ -901,5 +901,26 @@ Um equilíbrio de Nash com estratégias mistas se dá quando cada jogador escolh
 ** Jogos sequenciais
 
 * Oligopólio
+
+** Definindo oligopólio e sua importância
+
+- Monopólios são raros enquanto os mercados observados por poucas empresas são comuns
+  - Uma característica da concorrência oligopólica é a presença de propaganda
+  - Também possui elementos de interação estratégicas
+
+** Indicadores
+
+*** Índice de concentração
+
+*Herfindhal-Hirschman (HHI):* soma do quadrado do /market-share/:
+#+BEGIN_latex
+\begin{equation}
+HHI = \sum s_{i}^{2}
+\end{equation}
+#+END_latex
+- $HHI < 100$ indica um mercado muito competitivo
+- $100 < HHI < 1$ indica um mercado pouco concentrado
+- $1000 < HHI < 1800$ moderado
+- $HHI > 1800$ concentrado e se torna visível ao CADE
 
 * Equilíbrio Geral
