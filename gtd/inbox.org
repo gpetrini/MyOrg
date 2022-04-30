@@ -23,8 +23,7 @@ https://i.pinimg.com/originals/fd/de/23/fdde2369da2feeaa95a469b0ff1dd3f5.gif
 ** TODO Marcar otorrinolaringologista (conferir exames)
 ** TODO Marcar clinico geral
 ** WAIT Marcar cardiologista
-
-* Writing inbox
+** Writing inbox
 
 ** STRT [#B] Kopp_2018
 
@@ -34,8 +33,6 @@ https://i.pinimg.com/originals/fd/de/23/fdde2369da2feeaa95a469b0ff1dd3f5.gif
 * News Inbox
 
 * Reading Inbox
-
-
 ** TODO [#A]  [[https://onlinelibrary.wiley.com/doi/abs/10.1111/meca.12269][Harrodian instability in a post-Keynesian growth and distribution model]] :SraffianSupermultiplier:HarrodianInstability:
 ** TODO [#A] [cite:@avritzer_2022_Household]
 ** TODO [[https://books.google.com.br/books?hl=pt-BR&lr=&id=-XxlEAAAQBAJ&oi=fnd&pg=PA27&dq=Agent+Based+Modeling&ots=OUKcwJRDUf&sig=BHVPaoeGYD2MegGeKOjy5ULQQnE#v=onepage&q=Agent%20Based%20Modeling&f=false][A Schelling-Opinion Model Based on Integration of Opinion Formation with Residential Segregation]] :ResidentialSegregation:ABM:SchellingModel:OpinionFormation:OpinionPolarization:

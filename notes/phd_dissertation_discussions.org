@@ -196,6 +196,51 @@ In general, there is no persistent effects in terms of economic growth or regard
 - Em termos agregados, preciso mudar algo dada a introdução do endividamento das famílias?
   - Governo superavitário?
 
+*** Reunião <2022-05-02 seg>
+
+
+**** Famílias
+- Amortização deve entrar na renda disponível das famílias?
+- Alterar quais variáveis serão determinadas exogenamente no início da simulação altera a equação de títulos do governo das familias?
+**** Firmas
+
+- Qual variável de estoques das firmas utilizar na equação de revisão de vendas?
+- O que seria o serviço da dívida/fluxo de caixa normal
+
+**** Bancos
+
+
+- Como corrigir problema dos ponteiros na equação de depósitos dos bancos?
+
+**** Aggregados e SFC
+
+- Como estimar a taxa de juros média?
+  - Atual: Ponderado pela dívida no balanço dos bancos
+- Estimação do supermultiplicador deve utilizar o PIB nominal ou real?
+- Como aggregar alavancagem?
+
+**** Inicialização
+
+- Rever serviço da dívida das famílias
+
+**** Calibragem
+
+- Quando começar a estimar os valores médios?
+- Quais variávies foram calculadas fora do get_init.R?
+- Ainda não esta claro como escolher quais variáveis estimadas exogenamente
+  - Quais as implicações de deixar a dívida do governo como resíduo?
+  - Quais outras variáveis se alteram se determinar o ativo das famílias?
+  - Sugestões da equações de depósitos das famílias?
+    - Parcela dos ativos ou da riqueza líquida?
+- Como calibrou:
+  - Parcela da riqueza na forma dos depósitos?
+  - Amortização do estoque de capital?
+- Por que iniciou um número de vintages menor que $\kappa$?
+
+**** Técnico
+
+- Como criar as variávies para os maiores objetos?
+
 * Housing AB model
 
 ** General topics
