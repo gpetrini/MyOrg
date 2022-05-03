@@ -910,7 +910,7 @@ Um equilíbrio de Nash com estratégias mistas se dá quando cada jogador escolh
 
 ** Indicadores
 
-*** Índice de concentração
+*** Índice de concentração (HHI)
 
 *Herfindhal-Hirschman (HHI):* soma do quadrado do /market-share/:
 #+BEGIN_latex
@@ -922,5 +922,63 @@ HHI = \sum s_{i}^{2}
 - $100 < HHI < 1$ indica um mercado pouco concentrado
 - $1000 < HHI < 1800$ moderado
 - $HHI > 1800$ concentrado e se torna visível ao CADE
+
+** Colusão tácita
+
+Para que haja liderança em preços:
+- Definir o líder
+- Entender o critério utilizado por ele para definir o preço
+- A disperção dos concorrentes em aceitar esta liderança
+
+*** Limites à colusão
+
+Se for perfeita, $RMg < P$ e $RMg = CMg$ no equilíbrio.
+Logo os consumidores reagem aos aumentos de preços.
+
+A colusão é sujeita a desvios dos participantes: existiriam um mecanismo de punição que tornasse a colusão eficiente?
+- Difícil observar os preços de outras firmas
+- a demanda é instável
+- players podem ter objetivos diferentes
+
+
+** Modelos canônicos
+
+*** Cournot
+
+Hipóteses:
+
+- Todas as empresas produzem produtos homogêneos
+- O preço de mercado é o mesmo para todas as firmas, logo, elas competem em *quantidade* (novidade)
+  - A escala produtiva é o que confere poder de mercado
+- Trata-se de um jogo simultâneo: as firmas decidem conjuntamente.
+  - Em um jogo repetido, elas decidem a cada período
+
+*Corolário:* converge ao equilíbrio de Nash.
+
+Procedimento:
+- Avaliar os efeito sobre o lucro de uma firma dada uma variação da quantidade desta mesma firma
+- Considera a receita marginal uma vez que o preço é dado pelo mercado
+
+#+BEGIN_latex
+\begin{equation}
+\pi_{i} = p(Q)\cdot q_{i} - C'_{i}(q_{i})
+\end{equation}
+#+END_latex
+
+A receita marginal depende de uma quantidade que é a solução para os $n$ jogadores produzindo $q_{i}$:
+#+BEGIN_latex
+\begin{equation}
+p(Q) - CMg = |p'(Q)\cdot q_{i}|
+\end{equation}
+#+END_latex
+
+**** Duopólio
+
+Duas firmas com custo $c$ e sem diferenciação de produto e com o mesmo grupo de consumidores.
+Se cada um busca o melhor, a solução é quando se iguala as curvas de máximo lucro dada a reação do outro jogador.
+
+*** Bertrand
+
+*** Stackelberg
 
 * Equilíbrio Geral
