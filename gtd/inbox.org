@@ -48,6 +48,7 @@ https://i.pinimg.com/originals/fd/de/23/fdde2369da2feeaa95a469b0ff1dd3f5.gif
 ** TODO [#A] [[https://www.sciencedirect.com/science/article/pii/S0165188910001491][The financial accelerator in an evolving credit network - ScienceDirect]] :ABM:
 ** TODO [#A] [[http://www.postkeynesian.net/downloads/working-papers/PKWP2210.pdf][Learning from distant cousins? Post-Keynesian Economics, Comparative Political Economy and the growth models approach]] :ComparativePoliticalEconomy:ReviewOfLiterature:VarietiesOfCapitalistm:GrowthModels:
 ** TODO [#A] Blecker and Taylor (2019, chapter 5)
+** TODO [#B] [[https://www.cesifo.org/DocDL/cesifo1_wp9730.pdf][Alternative Measures for the Global Financial Cycle: Do They Make a Difference?]] :GreatFinancialCrisis:AssetBubble:CapitalFlows:FinancialCrisis:StilizedFacts:
 ** TODO [#D] [[https://academic.oup.com/cje/article-abstract/46/1/73/6372673?redirectedFrom=fulltext][Nikiforos (2022): Induced shifting involvements and cycles of growth and distribution]] :CapacityUtilization:
 
 ** WAIT [#D] [[https://www.tandfonline.com/doi/full/10.1080/01603477.2021.1969951][Full article: Rethinking inequality in the 21st century – inequality and hous...]] :ResidentialInvestment:Inequality:SFC:HouseholdWealth:
