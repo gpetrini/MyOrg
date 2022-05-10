@@ -245,12 +245,22 @@ DEADLINE: <2022-06-03 sex>
 :PROPERTIES:
 :agenda-group: PED
 :END:
-** WAIT Resolver lista de teoria dos jogos
 ** TODO Corrigir P1
-*** TODO Aggio
+*** STRT Aggio
 *** TODO Zé Maria
-** WAIT Resolver lista de oligopólio
-** WAIT Resolver lista de equilíbrio geral
+** STRT Aula de exercícios monopólio
+** TODO Aula de exercícios oligopólio
+
+Preparar slides em função da lista
+
+
+** TODO Listas
+
+*** TODO Corrigir lista de monopólio (alunos)
+*** WAIT Corrigir lista de teoria dos jogos (alunos)
+*** STRT Resolver lista de oligopólio
+**** TODO Definir data de entrega
+*** WAIT Resolver lista de equilíbrio geral
 * WAIT Dissertation group discussion :@Group:
 :PROPERTIES:
 :agenda-group: PhDDiscussionGroup
