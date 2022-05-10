@@ -940,6 +940,15 @@ A colusão é sujeita a desvios dos participantes: existiriam um mecanismo de pu
 - a demanda é instável
 - players podem ter objetivos diferentes
 
+*** Apresentação
+
+Partindo do modelo de colusão, as firmas de forma tácita ou intencional se juntam.
+Podem estão maximizar o lucro *conjunto*:
+#+BEGIN_latex
+\begin{equation*}
+\sum_{j-1}^{n} \pi_{j} = P(Q)\sum_{j-1}^{n}q_{j} - \sum_{j-1}^{n} C_{j}(q_{j})
+\end{equation*}
+#+END_latex
 
 ** Modelos canônicos
 
@@ -954,6 +963,7 @@ Hipóteses:
   - Em um jogo repetido, elas decidem a cada período
 
 *Corolário:* converge ao equilíbrio de Nash.
+No entanto, não é Pareto superior porque existe incentivo ao desvio.
 
 Procedimento:
 - Avaliar os efeito sobre o lucro de uma firma dada uma variação da quantidade desta mesma firma
@@ -972,13 +982,42 @@ p(Q) - CMg = |p'(Q)\cdot q_{i}|
 \end{equation}
 #+END_latex
 
+A firma age como monopolista no trecho do mercado que lhe resta.
+Supõe-se que os demais farão o mesmo.
+
+Cournot definiu uma regra de comportamento que também é uma regra de interação
+
 **** Duopólio
 
 Duas firmas com custo $c$ e sem diferenciação de produto e com o mesmo grupo de consumidores.
 Se cada um busca o melhor, a solução é quando se iguala as curvas de máximo lucro dada a reação do outro jogador.
 
-*** Bertrand
+Em qualquer  nível de produção $Q$, a demanda se reparte, logo, a demanda de um é residual em relação ao outro.
+
 
 *** Stackelberg
+
+**** Introdução
+
+Trata-se de um jogo sequencial que há uma firma que lidera (decisão de *quantidade*) tenho em vista que a firma seguidora também é maximizadora.
+O procedimento consiste em primeiro encontrar a quantidade da firma seguidora (que esta em função da quantidade prodzida pela empresa líder).
+Dada essa informação, a empresa líder decidirá o quanto produzir.
+Vale pontuar que o seguidor produzirá menos do que em um jogo de Cournot.
+
+**** Exercício - Barreira a entrada com excesso de capacidade
+
+Para encontrar o equilíbrio de Nash, vamos fazer os seguintes cálculos:
+- Suponha que a firma $i$ está sozinha no mercado
+- O lucro de $i$ é maximizado escolhendo uma quantidade $q_{i}$
+- Suponha que esses valores estão todos em valor presente, de forma que os VPL dos dois casos anteriores seriam
+  - Unidade grande
+  - Unidade pequena
+- Agora suponha que ambas as firmas estão no mercado (produção total é a soma das produções individuais)
+- Resolvendo o sistema dada as funções de reação (calculando a CPO)
+
+*** Bertrand
+
+
+
 
 * Equilíbrio Geral
