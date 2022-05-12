@@ -259,8 +259,15 @@ Preparar slides em função da lista
 *** TODO Corrigir lista de monopólio (alunos)
 *** WAIT Corrigir lista de teoria dos jogos (alunos)
 *** STRT Resolver lista de oligopólio
-**** TODO Definir data de entrega
 *** WAIT Resolver lista de equilíbrio geral
+
+** TODO Apresentações
+
+*** TODO Teoria dos jogos
+
+**** TODO Testar proporções do jogo Bayesiano
+
+**** TODO Conferir dilema dos prisioneiros
 * WAIT Dissertation group discussion :@Group:
 :PROPERTIES:
 :agenda-group: PhDDiscussionGroup
