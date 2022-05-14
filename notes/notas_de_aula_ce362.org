@@ -815,6 +815,7 @@ Neste jogo não há uma /best response/ em que sempre há um incentivo a não-co
 Além disso, não há solução na forma pura (sem equilíbrio de Nash).
 Se este jogo for repetido $N$, cada jogador terá chances iguais de vencer --- na ausência de um padrão (vício) --- e, consequentemente, ter iguais /payoffs/.
 
+
 ** Estratégia dominante
 
 É um perfil de estratégia dominante é aquele em que o jogador irá sempre optar independentemente das escolhas do demais.
