@@ -222,14 +222,35 @@ DEADLINE: <2022-06-03 sex>
 
 ** TODO Conferir carta aos pareceristas após mudanças
 
-* Nikiforos econometric model response :@Article:
-:PROPERTIES:
-:agenda-group: Nikiforos response
-:END:
+* TODO Mudança
 
-** WAIT Pensar modelo alternativo com controle dos gastos autônomos
+** TODO Procurar carreto
 
+** TODO Lever as coisas na casa da Karina
 
+*** TODO Mesa
+
+*** TODO Computador
+
+*** TODO Cadeira
+
+*** TODO Ventilador
+
+*** TODO Microondas
+
+*** TODO Roupas
+
+*** TODO Coisas de cozinha
+
+** TODO Contratar pintor
+
+** TODO Vender móveis
+
+- Cama
+- Criado-mudo
+- Puff
+
+** TODO Agendar vistoria
 * TODO PED CE362
 :PROPERTIES:
 :agenda-group: PED
@@ -255,6 +276,14 @@ Preparar slides em função da lista
 **** TODO Testar proporções do jogo Bayesiano
 
 **** TODO Conferir dilema dos prisioneiros
+* WAIT Nikiforos econometric model response :@Article:
+:PROPERTIES:
+:agenda-group: Nikiforos response
+:END:
+
+** WAIT Pensar modelo alternativo com controle dos gastos autônomos
+
+
 * WAIT Dissertation group discussion :@Group:
 :PROPERTIES:
 :agenda-group: PhDDiscussionGroup
