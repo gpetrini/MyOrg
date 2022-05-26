@@ -220,19 +220,8 @@ DEADLINE: <2022-06-03 sex>
 :agenda-group: VECM own rate
 :END:
 
+** TODO Conferir carta aos pareceristas após mudanças
 
-** TODO Documentar alterações com o Lucas
-
-** TODO Avisar na carta aos pareceristas que removemos a menção ao "first period"
-
-** STRT Pensar onde incluir figura 1
-
-** TODO Remover 10 lag nos testes de seleção da ordem do modelo
-
-** TODO Ajustar menção lag FEVD
-** WAIT Export to docx
-
-*** TODO Check why equations, figures and tables are not exported
 * Nikiforos econometric model response :@Article:
 :PROPERTIES:
 :agenda-group: Nikiforos response
@@ -246,9 +235,9 @@ DEADLINE: <2022-06-03 sex>
 :agenda-group: PED
 :END:
 ** TODO Corrigir P1
-*** STRT Aggio
+*** DONE Aggio
+CLOSED: [2022-05-24 ter 19:13]
 *** TODO Zé Maria
-** STRT Aula de exercícios monopólio
 ** TODO Aula de exercícios oligopólio
 
 Preparar slides em função da lista
@@ -256,8 +245,6 @@ Preparar slides em função da lista
 
 ** TODO Listas
 
-*** TODO Corrigir lista de monopólio (alunos)
-*** WAIT Corrigir lista de teoria dos jogos (alunos)
 *** STRT Resolver lista de oligopólio
 *** WAIT Resolver lista de equilíbrio geral
 
