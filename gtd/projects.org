@@ -220,7 +220,25 @@ DEADLINE: <2022-06-03 sex>
 :agenda-group: VECM own rate
 :END:
 
+** TODO Rascunhar e-mail
+
+** TODO Pensar sobre o título
+
+*** TODO Se mudar, lembrar de alterar o título da seção 4.1
+
+** TODO Definir trecho sobre resultado persistente vec
+
+** TODO Definir versão final da figura 1
+
+** TODO Incluir trecho apêndice
+
+** TODO Revisar
+
 ** TODO Conferir carta aos pareceristas após mudanças
+
+*** TODO Atualizar notas de rodapé
+
+** TODO Tirar hifenização
 
 * TODO Mudança
 
