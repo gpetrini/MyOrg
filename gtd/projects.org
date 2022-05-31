@@ -47,6 +47,8 @@ https://pbs.twimg.com/media/DGR_4QDUIAAEnsE.jpg:large
 
 ** TODO Reunir documentos
 
+** TODO Qualificação
+
 * ABM dot-com SSM model :@Article:@PhD:Chapter:
 :PROPERTIES:
 :agenda-group: Dot-Com ABM
@@ -219,24 +221,6 @@ DEADLINE: <2022-06-03 sex>
 :PROPERTIES:
 :agenda-group: VECM own rate
 :END:
-
-** TODO Rascunhar e-mail
-
-** TODO Pensar sobre o título
-
-*** TODO Se mudar, lembrar de alterar o título da seção 4.1
-
-** TODO Definir trecho sobre resultado persistente vec
-
-** TODO Definir versão final da figura 1
-
-** TODO Incluir trecho apêndice
-
-** TODO Revisar
-
-** TODO Conferir carta aos pareceristas após mudanças
-
-*** TODO Atualizar notas de rodapé
 
 ** TODO Tirar hifenização
 
