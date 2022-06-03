@@ -283,6 +283,18 @@ Preparar slides em função da lista
 :agenda-group: Nikiforos response
 :END:
 
+** TODO Conferir se Nikiforos inclui estoques
+
+*** TODO Citar modelo de Kalecki sobre acelerador com estoque
+
+** TODO Remover respostas diretas ao paper de Nikiforos
+
+- Artigo de Nikiforos como um esboço metodológico ainda não publicado
+  - Insight metodológico em que fizemos alterações
+- Maior diálogo com neo-kaleckianos
+
+*** HOLD Citar referências sobre ciclos
+
 ** WAIT Pensar modelo alternativo com controle dos gastos autônomos
 
 
