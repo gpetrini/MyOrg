@@ -1021,4 +1021,4 @@ Para encontrar o equilíbrio de Nash, vamos fazer os seguintes cálculos:
 
 
 
-* Equilíbrio Geral
+* Equilíbrio Geral com trocas puras
