@@ -1018,7 +1018,125 @@ Para encontrar o equilíbrio de Nash, vamos fazer os seguintes cálculos:
 
 *** Bertrand
 
+**** Modelo com diferenciação de bens
 
+
+***** Exemplo
+
+Suponha as seguintes funções de demanda:
+
+\begin{equation*}
+\begin{align*}
+ q_{1}^{D} & = 100 - p_{1} + p_{2}\\
+ q_{2}^{D} & = 120 + p_{1} - 2\cdot p_{2}
+\end{align*}
+\end{equation*}
+
+Considere ainda as seguintes funções consumo:
+
+\begin{equation*}
+\begin{align*}
+  C_{1}(q_{1})& = 10\cdot q_{1}^{s}\\
+  C_{2}(q_{2})& = 10\cdot q_{2}^{s}
+\end{align*}
+\end{equation*}
+
+Supondo que não há restrição do mercado de bens:
+\begin{equation*}
+\begin{align*}
+ q_{1}^{D} & = q_{1}^{s}\\
+ q_{2}^{D} & = q_{2}^{s}
+\end{align*}
+\end{equation*}
+
+Cada firma irá maximizar lucro considerando que a concorrente irá tomar a melhor decisão para si.
+Partindo para a empresa 1:
+\begin{equation*}
+\begin{align*}
+ \pi_{1} & = p_{1}\cdot q_{1}^{d} - C_{1}(q_{1}^{s})\\
+  & = p_{1}(100 - p_{1} + p_{2}) - 10\cdot q_{1}^{d}\\
+  & = p_{1}(100 - p_{1} + p_{2}) - 10\cdot (100 - p_{1} + p_{2})
+\end{align*}
+\end{equation*}
+
+A condição de primeira ordem é:
+\begin{equation*}
+\begin{align*}
+ CPO: \frac{\partial \pi_{1}}{\partial p_{1}} & = 0\\
+ 100 - 2\cdot p_{1} + p_{2} + 10 & = 0\\
+p_{1} & = 55 + \frac{p_{2}}{2}
+\end{align*}
+\end{equation*}
+
+O resultado acima é a função de melhor resposta para a firma 1 dada a decisão da empresa 2.
+Fazendo o mesmo para a empresa 2:
+\begin{equation*}
+\begin{align*}
+ \pi_{2} & = p_{2}\cdot q_{2}^{d} - C_{2}(q_{2}^{s})\\
+  & = p_{1}(120 + p_{1} - 2\cdot p_{2}) - 10\cdot q_{2}^{d}\\
+  & = p_{1}(120 + p_{1} -2\cdot p_{2}) - 10\cdot (120 + p_{1} - 2\cdot p_{2})
+\end{align*}
+\end{equation*}
+
+A condição de primeira ordem é:
+\begin{equation*}
+\begin{align*}
+ CPO: \frac{\partial \pi_{2}}{\partial p_{2}} & = 0\\
+ 120 - 4\cdot p_{2} + p_{1} + 20 & = 0\\
+p_{2} & = 35 + \frac{p_{1}}{4}
+\end{align*}
+\end{equation*}
+
+Resolvendo o sistema:
+\begin{equation*}
+\begin{cases}
+ p_{1} & = 55 + \frac{p_{2}}{2} \\
+ p_{2} & = 35 + \frac{p_{1}}{4}
+\end{cases}
+\end{equation*}
+
+\begin{equation*}
+\begin{align*}
+ p_{1} & = 55 + \frac{p_{2}}{2} \\
+  & = 55 + \frac{1}{2}\cdot (35 + \frac{p_{1}}{4}) \\
+  & = \frac{110 + 35}{2} + \frac{1}{8}\cdot p_{1}\\
+\frac{7}{8}\cdot p_{1} & = \frac{145}{2}\\
+p_{1} & = \frac{145}{2}\cdot\frac{8}{7}\\
+& = \frac{580}{7} > 0
+\end{align*}
+\end{equation*}
+
+Consequentemente, \(p_{2}\) será:
+\begin{equation*}
+\begin{align*}
+ p_{2} & = 35 + \frac{p_{1}}{4}\\
+& = 35 + \frac{580}{7}\frac{1}{4}\\
+& = 35 + \frac{145}{7}
+\end{align*}
+\end{equation*}
+
+
+****** Cartel em preços
+
+Como contrafactual, vamos analisar a situação em que as firmas formam um cartel de preços.
+Nesse caso,
+\begin{equation*}
+\begin{align*}
+ \pi & = p_{1}(100 - p_{1} + p_{2}) + p_{2}\cdot (120 + p_{1} - 2\cdot p_{2}) - CT\\
+\frac{\partial \pi}{\partial p_{1}} = 100 - 2\cdot p_{1} + 2\cdot p_{2}& = 0\\
+\frac{\partial \pi}{\partial p_{2}} = 130 + 2\cdot p_{1} - 4\cdot p_{2}& = 0\\
+\end{align*}
+\end{equation*}
+
+A solução desses sistema é:
+\begin{equation*}
+\begin{align*}
+ 230 - 2\cdot p_{2} & = 0\\
+p_{2} & = 115
+\end{align*}
+\end{equation*}
+
+Consequentemente, \(p_{1} = 165\).
 
 
 * Equilíbrio Geral com trocas puras
