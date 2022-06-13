@@ -241,6 +241,35 @@ In general, there is no persistent effects in terms of economic growth or regard
 
 - Como criar as variávies para os maiores objetos?
 
+*** Reunião após calibragem R
+
+**** Firmas
+
+- Rever dividendos caso firma esteja saindo (deveria ser = invés de ==?)
+- O SAV das firmas abaixo da linha deve incluir contribuição das famílias?
+- Informar merge dos estoques
+
+**** Famílias
+
+- Conferir consistência na equação dos gastos autônomos das famílias (=Autonomous_Consumption=)
+  - Conferir demanda por dívida (=Household_Consumption_Loan_Demand=)
+  - Renda disponível deve incluir amortization?
+- Conferir se o depósitos das famílias está consistente com a nova proposta de calibragem
+- Conferir se os títulos do governo na mão das famílias está consistente com a nova proposta de calibragem
+  - Verificar na equação dos bancos também
+- Conferir SAV_UP das famílias (=Household_Net_Financial_Balance=)
+
+**** Bancos
+
+- Conferir se é necessário alterar hooks dos bancos
+- Taxa de juros média dos bancos deve incluir juros para consumo ao avaliar concessão de crédito para as famílias?
+
+**** Agregado e checkers
+
+- Os vazamentos de demanda estão corretos ou devem incluir dívida das firmas também?
+- Taxa de crescimento inicial do PIB deve ser g_ss ou g_k
+  - Imagino que g_k
+
 * Housing AB model
 
 ** General topics
