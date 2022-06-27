@@ -1,9 +1,7 @@
 :PROPERTIES:
-:ID:       576b10f4-300a-40b3-9764-3f1ae79c4054
-:mtime:    20211202152740 20211130153314
-:ctime:    20211130153315
+:ID:       6761c999-7240-4954-b879-8d4cabdee9fc
 :END:
-#+title: Taylor Rule
+#+title: Genetic Algorithm
 
 #+HUGO_AUTO_SET_LASTMOD: t
 #+hugo_base_dir: ~/BrainDump/
@@ -12,4 +10,5 @@
 
 #+HUGO_TAGS: placeholder
 
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
 #+OPTIONS: num:nil ^:{} toc:nil

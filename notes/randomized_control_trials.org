@@ -1,9 +1,7 @@
 :PROPERTIES:
-:ID:       576b10f4-300a-40b3-9764-3f1ae79c4054
-:mtime:    20211202152740 20211130153314
-:ctime:    20211130153315
+:ID:       fa6ee1f5-e582-45cf-a38d-549025641933
 :END:
-#+title: Taylor Rule
+#+title: Randomized Control Trials
 
 #+HUGO_AUTO_SET_LASTMOD: t
 #+hugo_base_dir: ~/BrainDump/
@@ -12,4 +10,5 @@
 
 #+HUGO_TAGS: placeholder
 
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
 #+OPTIONS: num:nil ^:{} toc:nil

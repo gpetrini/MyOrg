@@ -248,6 +248,8 @@ In general, there is no persistent effects in terms of economic growth or regard
 - Rever dividendos caso firma esteja saindo (deveria ser = invés de ==?)
 - O SAV das firmas abaixo da linha deve incluir contribuição das famílias?
 - Informar merge dos estoques
+- Conferir o parâmetro de sensibilidade da distribuição dos dividendos
+  - A depender do valor de outras variáveis, não é possível estimar este parâmetro
 
 **** Famílias
 
@@ -258,11 +260,18 @@ In general, there is no persistent effects in terms of economic growth or regard
 - Conferir se os títulos do governo na mão das famílias está consistente com a nova proposta de calibragem
   - Verificar na equação dos bancos também
 - Conferir SAV_UP das famílias (=Household_Net_Financial_Balance=)
+- Conferir de renda das famílias deve ser incluído na inicialização
+  - O mesmo para consumo
 
 **** Bancos
 
 - Conferir se é necessário alterar hooks dos bancos
 - Taxa de juros média dos bancos deve incluir juros para consumo ao avaliar concessão de crédito para as famílias?
+- Hooks dos bancos continuando válidos após inclusão de crédito para as famílias?
+  - Ver =Bank_Firm_Production_Loan_Portfolio=
+- Conferir erro na função de depósito das firmas
+- Como assegurar que a renda de juros dos bancos proveniente do crédito das famílias é calculado no procedimento de serviço da dívida?
+- Como alterar títulos do governo mantidos pelos bancos?
 
 **** Agregado e checkers
 
