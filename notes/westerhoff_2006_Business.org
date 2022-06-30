@@ -1,0 +1,60 @@
+:PROPERTIES:
+:ID:       79d44a9c-2082-435a-93c5-e30ec0614cd7
+:ROAM_REFS: @westerhoff_2006_Business
+:END:
+#+OPTIONS: num:nil ^:{} toc:nil
+#+title: Westerhoff: Business Cycles, Heuristic Expectation Formation, and Contracyclical Policies - (2006, J. Public Econ. Theory)
+#+hugo_base_dir: ~/BrainDump/
+#+hugo_section: notes
+#+hugo_categories: J. Public Econ. Theory
+#+FILETAGS: [A],Accelerator Model,Business Cycles,Ch DotCom,DUE: Jul/22,Extrapolative Expectations,Heterogeneous Expectations,Heuristics switching,Policy Oriented,READ
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+
+** Background and motivation
+
+
+** Supporting Ideas and hypothesis
+
+
+** Purpose, Relevance, and Contribution
+
+
+** Methodology
+
+
+** Results
+
+
+** Interesting findings and not categorized stuff
+
+
+** Critics
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+We develop a simple Keynesian-type business cycle model in which agents use simple heuristics to predict national income. To be precise, the agents either form (destabilizing) extrapolative expectations or (stabilizing) regressive expectations, a decision which depends on the rules forecasting performance in the recent past. As it turns out, an unending evolutionary competition between the rules may generate endogenous complex business cycles. We also explore the effectiveness of some common governmental intervention strategies. Our model suggests that policy makers may be able to stabilize output fluctuations, yet due to system immanent nonlinearities this may prove to be quite difficult.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+* References
+
+
+
+#+print_bibliography:

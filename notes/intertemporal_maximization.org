@@ -1,11 +1,14 @@
 :PROPERTIES:
-:ID:       1fc2115e-9b3a-435c-b3d0-854f96f82c95
-:ROAM_ALIASES: "Game Theory"
+:ID:       e591bceb-1711-4795-9bbb-6f0d03ca5042
 :END:
-#+title: Teoria dos Jogos
+#+title: Intertemporal Maximization
+
 #+HUGO_AUTO_SET_LASTMOD: t
 #+hugo_base_dir: ~/BrainDump/
+
 #+hugo_section: notes
+
 #+HUGO_TAGS: placeholder
-#+BIBLIOGRAPHY: ~/Documents/Org/zotero_refs.bib
+
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
 #+OPTIONS: num:nil ^:{} toc:nil

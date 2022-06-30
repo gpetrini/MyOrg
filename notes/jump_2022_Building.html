@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-06-30 qui 11:30 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Jump, Stockhammer: Building Blocks of a Heterodox Business Cycle Theory - (2022, )</title>
+<meta name="author" content="Gabriel Petrini" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Jump, Stockhammer: Building Blocks of a Heterodox Business Cycle Theory - (2022, )</h1>
+
+
+
+<div id="outline-container-org0314dc4" class="outline-2">
+<h2 id="org0314dc4">FISH-5SS</h2>
+<div class="outline-text-2" id="text-org0314dc4">
+</div>
+<div id="outline-container-org61078e0" class="outline-3">
+<h3 id="org61078e0">5SS</h3>
+</div>
+
+
+<div id="outline-container-orgf8f7452" class="outline-3">
+<h3 id="orgf8f7452">Background and motivation</h3>
+</div>
+
+
+<div id="outline-container-orgdf4e0ff" class="outline-3">
+<h3 id="orgdf4e0ff">Supporting Ideas and hypothesis</h3>
+<div class="outline-text-3" id="text-orgdf4e0ff">
+<ul class="org-ul">
+<li><a href="accelerator_model.html#ID-fe75d8ad-4d2a-4c6d-94d4-d55610598944">Accelerator Model</a> focus on the destabilising role of business investment
+<ul class="org-ul">
+<li><a href="business_cycles.html#ID-380b31ad-cdd5-4367-af2c-9ee199a085e7">Business Cycles</a> emerge as a result of the interaction between Keynesian multiplier and the accelerator</li>
+</ul></li>
+<li><a href="neo_goodwin_model.html#ID-18b0984e-d8db-4fc3-b002-e080c92bd007">neo-Goodwinian model</a> focus on class strugle in which industrial reserve army generates wage pressures during booms, <a href="profit_squeezing.html#ID-de34270e-0ae3-44b3-a344-a58d4a3d15d1">Profit-Squeezing</a> and reduce investment
+<ul class="org-ul">
+<li>In the original Goodwin model, there is Say&rsquo;s law</li>
+</ul></li>
+<li><a href="minskian_growth_models.html#ID-dc850b34-d016-4e73-a3fd-96febaf8814f">Minskian Growth Models</a> focus on financial factors in which debt, asset prices and interest rates play a key role during the <a href="business_cycles.html#ID-380b31ad-cdd5-4367-af2c-9ee199a085e7">Business Cycles</a></li>
+<li><a href="momentum_trader_models.html#ID-83630ea6-2c23-417c-bb4b-926dcf9b3769">Momentum Trader Models</a> focus on <a href="heterogeneous_expectations.html#ID-a3b9da87-5fcc-4e91-a3e7-65531ab57ad6">Heterogeneous expectations</a> to explain the cyclical dynamics</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd2a6753" class="outline-3">
+<h3 id="orgd2a6753">Purpose, Relevance, and Contribution</h3>
+<div class="outline-text-3" id="text-orgd2a6753">
+<ul class="org-ul">
+<li>The paper aims to analysis heterodox <a href="demand_led_growth_models.html#ID-d21c21a8-1458-4ed9-b585-efb752d107b6">Demand-led growth models</a> with endogenous <a href="business_cycles.html#ID-380b31ad-cdd5-4367-af2c-9ee199a085e7">Business Cycles</a></li>
+<li>It could be argued that the <a href="innovation_bubble_abm.html#ID-95265264-f61f-4cf5-8cdc-e590b2a47cb9">Innovation bubble ABM</a> chapter is some sort of synthesis, since:
+<ul class="org-ul">
+<li>Have the destabilising and stabilising featrure of goods markets as in the <a href="accelerator_model.html#ID-fe75d8ad-4d2a-4c6d-94d4-d55610598944">Accelerator Model</a> using the <a href="sraffian_suppermultiplier_growth_model.html#ID-ed384551-c7ba-492f-be69-15906157ef9d">Sraffian suppermultiplier growth model</a></li>
+<li>Have <a href="heterogeneous_expectations.html#ID-a3b9da87-5fcc-4e91-a3e7-65531ab57ad6">Heterogeneous expectations</a> and <a href="expectations_formation_and_behaviour_macroeconomics.html#ID-8324a647-625d-4968-bc63-cf5209a2f1bf">Expectations formation and  Behavior macroeconomics</a> rule to induce business investment decisions as in <a href="momentum_trader_models.html#ID-83630ea6-2c23-417c-bb4b-926dcf9b3769">Momentum Trader Models</a></li>
+<li>Have financial interface due to production and consumption loans, allowing to discuss financial stability as in <a href="minskian_growth_models.html#ID-dc850b34-d016-4e73-a3fd-96febaf8814f">Minskian Growth Models</a> following Pedrosa &#38; Lang (<a href="#citeproc_bib_item_1">2021</a>)</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga9e2b68" class="outline-3">
+<h3 id="orga9e2b68">Methodology</h3>
+<div class="outline-text-3" id="text-orga9e2b68">
+<ul class="org-ul">
+<li><a href="review_of_literature.html#ID-05b1426c-b748-4858-b937-adb441f10340">Review of Literature</a> of the following models:
+<ul class="org-ul">
+<li><a href="accelerator_model.html#ID-fe75d8ad-4d2a-4c6d-94d4-d55610598944">Accelerator Model</a>
+<ul class="org-ul">
+<li>The Jacobian Matrix is:</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p>
+\[
+    J =
+</p>
+\begin{bmatrix}
+    a(c + \beta v - 1) & -\alpha\beta\\
+    \beta v & \beta
+\end{bmatrix} \hspace{2cm}
+sign(J) =
+\begin{bmatrix}
+    ? & - \\
+    + & -
+\end{bmatrix}
+<p>
+\]
+</p>
+
+<ul class="org-ul">
+<li><a href="neo_goodwin_model.html#ID-18b0984e-d8db-4fc3-b002-e080c92bd007">neo-Goodwinian model</a>s</li>
+</ul>
+<p>
+-<a href="minskian_growth_models.html#ID-dc850b34-d016-4e73-a3fd-96febaf8814f">Minskian Growth Models</a> of debt-cycle
+</p>
+<ul class="org-ul">
+<li><a href="momentum_trader_models.html#ID-83630ea6-2c23-417c-bb4b-926dcf9b3769">Momentum Trader Models</a></li>
+</ul>
+<ul class="org-ul">
+<li>In order to compare them, the authors propose a minimalistic system of ordinary differential equations to analyze the condition of stability and to generate endogenous <a href="business_cycles.html#ID-380b31ad-cdd5-4367-af2c-9ee199a085e7">Business Cycles</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org01515e0" class="outline-3">
+<h3 id="org01515e0">Results</h3>
+<div class="outline-text-3" id="text-org01515e0">
+<ul class="org-ul">
+<li>The analyzed models may have complementary elements &#x2014; they can be used together to evaluate a cycle &#x2014; but have competing mechanisms.
+<ul class="org-ul">
+<li>In summary, except for <a href="momentum_trader_models.html#ID-83630ea6-2c23-417c-bb4b-926dcf9b3769">Momentum Trader Models</a>, all models have a destabilising elements in the goods market. The distinction emrges in the stabilising market.</li>
+</ul></li>
+</ul>
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption class="t-above"><span class="table-number">Table 1:</span> Summary of the stabilising and destabilising forces (p. 20, Table 1)</caption>
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Model</th>
+<th scope="col" class="org-left">Goods Market</th>
+<th scope="col" class="org-left">Labour Market</th>
+<th scope="col" class="org-left">Financial Market</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><a href="accelerator_model.html#ID-fe75d8ad-4d2a-4c6d-94d4-d55610598944">Accelerator Model</a></td>
+<td class="org-left">destabilising and stabilising</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><a href="neo_goodwin_model.html#ID-18b0984e-d8db-4fc3-b002-e080c92bd007">neo-Goodwinian model</a></td>
+<td class="org-left">destabilising</td>
+<td class="org-left">stabilising</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><a href="minskian_growth_models.html#ID-dc850b34-d016-4e73-a3fd-96febaf8814f">Minskian Growth Models</a></td>
+<td class="org-left">destabilising</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">stabilising</td>
+</tr>
+
+<tr>
+<td class="org-left"><a href="momentum_trader_models.html#ID-83630ea6-2c23-417c-bb4b-926dcf9b3769">Momentum Trader Models</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">destabilising, stabilising</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org6b46a3a" class="outline-3">
+<h3 id="org6b46a3a">Interesting findings and not categorized stuff</h3>
+<div class="outline-text-3" id="text-org6b46a3a">
+<ul class="org-ul">
+<li>There are some <a href="minskian_growth_models.html#ID-dc850b34-d016-4e73-a3fd-96febaf8814f">Minskian Growth Models</a> in which interest rate increase are not required to trigger the recession</li>
+<li>The authors cite Westerhoff (<a href="#citeproc_bib_item_2">2006</a>; <a href="#citeproc_bib_item_3">Westerhoff &#38; Hohnisch, 2007</a>) which will be analyzed in the future
+<ul class="org-ul">
+<li><a href="westerhoff_2006_Business.html#ID-79d44a9c-2082-435a-93c5-e30ec0614cd7">Westerhoff: Business Cycles, Heuristic Expectation Formation, and Contracyclical Policies - (2006, J. Public Econ. Theory)</a></li>
+<li><a href="westerhoff_2007_Note.html#ID-7790cad7-c4fc-443f-8b5a-f9280e0cc3c2">Westerhoff, Hohnisch: A Note on Interactions-Driven Business Cycles - (2007-06, J Econ Interac Coord)</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb6c900d" class="outline-3">
+<h3 id="orgb6c900d">Critics</h3>
+</div>
+
+
+<div id="outline-container-orgc9e98b9" class="outline-3">
+<h3 id="orgc9e98b9">Abstract</h3>
+<div class="outline-text-3" id="text-orgc9e98b9">
+<div class="ABSTRACT" id="orgc491be0">
+<p>
+A key characteristic of heterodox theories of the business cycle is their focus on endogenous business cycle mechanisms. This paper provides an overview and comparison of four models in heterodox business cycle theory: multiplier-accelerator models, Goodwin models, Minskyan debt-cycle models, and momentum trader models. A representative model from each theory is formulated as a two-dimensional predator-prey system in continuous time, which allows us to identify the different stabilising and destabilising mechanisms. We argue that the theories are substantially competing, as they posit different mechanisms that explain cycles, but we also argue that these mechanisms are not mutually exclusive. We suggest that heterodox economists work towards a synthesis.
+</p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgccc0a20" class="outline-2">
+<h2 id="orgccc0a20">Specific notes</h2>
+</div>
+
+<div id="outline-container-org850e4a7" class="outline-2">
+<h2 id="org850e4a7">Annotations (zotero)</h2>
+</div>
+
+<div id="outline-container-org5ff083d" class="outline-2">
+<h2 id="org5ff083d">Additional Backlinks</h2>
+</div>
+
+<div id="outline-container-org4bf1c81" class="outline-2">
+<h2 id="org4bf1c81">References</h2>
+<div class="outline-text-2" id="text-org4bf1c81">
+<style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Pedrosa, Í., &#38; Lang, D. (2021). To what extent does aggregate leverage determine financial fragility? New insights from an agent-based stock-flow consistent model. <i>Journal of Evolutionary Economics</i>. <a href="https://doi.org/10.1007/s00191-021-00745-4">https://doi.org/10.1007/s00191-021-00745-4</a></div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Westerhoff, F. H. (2006). Business Cycles, Heuristic Expectation Formation, and Contracyclical Policies. <i>Journal of Public Economic Theory</i>, <i>8</i>(5), 821–838. <a href="https://doi.org/10.1111/j.1467-9779.2006.00290.x">https://doi.org/10.1111/j.1467-9779.2006.00290.x</a></div>
+  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>Westerhoff, F., &#38; Hohnisch, M. (2007). A note on interactions-driven business cycles. <i>Journal of Economic Interaction and Coordination</i>, <i>2</i>(1), 85–91. <a href="https://doi.org/10.1007/s11403-006-0017-4">https://doi.org/10.1007/s11403-006-0017-4</a></div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Gabriel Petrini</p>
+<p class="date">Created: 2022-06-30 qui 11:30</p>
+</div>
+</body>
+</html>

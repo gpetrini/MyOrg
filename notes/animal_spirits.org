@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       6b6297e3-22c8-4dc9-b4f6-49d0a6e5ee99
+:ROAM_ALIASES: "Autonomous Business Investment"
+:END:
+#+title: Animal Spirits
+
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+
+#+hugo_section: notes
+
+#+HUGO_TAGS: placeholder
+
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

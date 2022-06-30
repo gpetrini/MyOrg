@@ -1,0 +1,60 @@
+:PROPERTIES:
+:ID:       7790cad7-c4fc-443f-8b5a-f9280e0cc3c2
+:ROAM_REFS: @westerhoff_2007_Note
+:END:
+#+OPTIONS: num:nil ^:{} toc:nil
+#+TITLE: Westerhoff, Hohnisch: A Note on Interactions-Driven Business Cycles - (2007-06, J Econ Interac Coord)
+#+hugo_base_dir: ~/BrainDump/
+#+hugo_section: notes
+#+hugo_categories: J Econ Interac Coord
+#+FILETAGS: [A],Accelerator Model,Business Cycles,Ch DotCom,DUE: Jul/22,Heterogeneous Expectations,multiplier-accelerator models,READ,Sraffian Supermultiplier,TOCITE
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+
+** Background and motivation
+
+
+** Supporting Ideas and hypothesis
+
+
+** Purpose, Relevance, and Contribution
+
+
+** Methodology
+
+
+** Results
+
+
+** Interesting findings and not categorized stuff
+
+
+** Critics
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+* References
+
+
+
+#+print_bibliography:

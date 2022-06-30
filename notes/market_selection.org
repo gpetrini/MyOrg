@@ -1,11 +1,14 @@
 :PROPERTIES:
-:ID:       1fc2115e-9b3a-435c-b3d0-854f96f82c95
-:ROAM_ALIASES: "Game Theory"
+:ID:       8a0850d6-8b77-40a7-b080-4d5aa89da5b9
 :END:
-#+title: Teoria dos Jogos
+#+title: Market Selection
+
 #+HUGO_AUTO_SET_LASTMOD: t
 #+hugo_base_dir: ~/BrainDump/
+
 #+hugo_section: notes
+
 #+HUGO_TAGS: placeholder
-#+BIBLIOGRAPHY: ~/Documents/Org/zotero_refs.bib
+
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
 #+OPTIONS: num:nil ^:{} toc:nil
