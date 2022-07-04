@@ -1140,3 +1140,34 @@ Consequentemente, \(p_{1} = 165\).
 
 
 * Equilíbrio Geral com trocas puras
+
+** Modelo com dois agentes e dois bens
+
+Cada agente possui uma dotação medida em termos da quantidade de bens que possuem:
+\begin{align*}
+  \omega^{A} & = \omega^{A}_{X} + \omega_{Y}^{A}\\
+  \omega^{B} & = \omega^{B}_{X} + \omega_{Y}^{B}\\
+\end{align*}
+
+componto a oferta total desta economia:
+- Oferta do bem X :: \(\omega^{A}_{X} + \omega^{B}_{X}\)
+- Oferta do bem Y :: \(\omega^{A}_{Y} + \omega^{B}_{Y}\)
+
+
+O equilíbrio geral desta economia é definidocomo um conjunto {\(p_{X}, p_{Y}\)} tal que:
+\begin{align*}
+  X^{A} + X^{B} & = \omega^{A}_{X} + \omega^{B}_{X}\\
+  Y^{A} + Y^{B} & = \omega^{A}_{Y} + \omega^{B}_{Y}
+\end{align*}
+
+Neste modelo, os agentes tomarão suas decisões em função dos preços relativos dada as suas preferências (dada pela respectiva função utilidade).
+Para aceitar participar do processo de trocas, é preciso auferir um nível de utilidade ao menos tão bom quanto do seu nível inicial de utilidade (utilidade de reserva) dado por suas dotações.
+As decisões ótimas de cada agente estarão restringidas pela sua restrição orçamentária que, por sua vez, também depende dos preços relativos:
+
+\begin{align*}
+  p_{X}\cdot X^{A} + p_{Y}\cdot Y^{A} & = \omega^{A}_{X} + \omega^{A}_{Y}\\
+  p_{X}\cdot X^{B} + p_{Y}\cdot Y^{B} & = \omega^{B}_{X} + \omega^{B}_{Y}\\
+\end{align*}
+Caso os preços relativos sejam diferentes do equilíbrio geral, não será atendida a viabilidade econômica, gerando excesso de demanda/oferta.
+
+O noção de equilíbrio geral é de que existe um vetor de preços que garante que as trocas irão existir nos pontos de tangência das curvas de indiferença.
