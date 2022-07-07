@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       ca30a36c-1098-4d4e-8eaa-7a637228844c
+:END:
+#+title: Style tips for writing
+
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+
+#+hugo_section: notes
+
+#+HUGO_CATEGORIES: KnowledgeBase
+
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil
+
+* Indicate similarities in literature
+
+- "The X (approach) in the literature closest in spirit to ours is Y"

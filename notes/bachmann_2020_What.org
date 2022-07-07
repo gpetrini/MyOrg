@@ -1,0 +1,141 @@
+:PROPERTIES:
+:ID:       2ca718cf-64cd-4c57-93f0-67340ebadbab
+:ROAM_REFS: @bachmann_2020_What
+:END:
+#+title:
+#+OPTIONS: num:nil ^:{} toc:nil
+#+TITLE: Bachmann, Zorn: What Drives Aggregate Investment? Evidence from German Survey Data - (2020, J. Econ. Dyn. Control)
+#+hugo_base_dir: ~/BrainDump/
+#+hugo_section: notes
+#+hugo_categories: J. Econ. Dyn. Control
+#+FILETAGS: Aggregate demand shocks,Investment determinants,Investment dynamics,Narrative approach,Sentiment shocks,Survey data
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+
+** Background and motivation
+
+
+** Supporting Ideas and hypothesis
+
+- In order to identify the shocks, the authors impose correlation restrictions, assuming:
+  - Demand and technological shock must be strong and positivelly correlated to Sales and Technology responses
+  - Producer price should be positivelly correlated. There is some sort of [[id:05891dd4-6983-40a0-a0a9-5fccddf93009][Phillips curve]] assumption
+  - Technological shock affect producer prices negativelly
+  - If the observation violates one of the previous conditions, is not considered
+
+** Purpose, Relevance, and Contribution
+
+- Analyze the relevance of sales, technological factors ([[id:8651d790-2079-4233-b8ba-a01e1ada53e8][Technological revolution]]), finance, [[id:9326692f-7fa9-439b-8f3c-a7fa2d18aef8][Expectations]], and Macroeconomic policy for [[id:2645660a-bff8-4f35-8bb9-c4de28e46ddd][Investment determination]]
+- For the [[id:95265264-f61f-4cf5-8cdc-e590b2a47cb9][Innovation bubble ABM]] chapter, this paper is relevant to present some [[id:8e9dd4a4-0f29-46d1-b8e4-5befe4df94cb][Stylized Facts]] regarding investment decisions and investigates the role of [[id:9326692f-7fa9-439b-8f3c-a7fa2d18aef8][Expectations]]
+- This paper emphasize the relevance of [[id:d0986877-a46e-4c2b-965a-a7bdf6aa952f][Survey Data]] basing on [[id:3dfead51-0655-41df-b411-773c706215b1][Causal Narratives]]
+
+** Methodology
+
+- Sample: Manufacturing sector of Western [[id:1deb2168-629b-4bae-b34c-a74a3ce9c52f][German]] using firm-level investment [[id:d0986877-a46e-4c2b-965a-a7bdf6aa952f][Survey Data]]
+  - The date for non-Western [[id:1deb2168-629b-4bae-b34c-a74a3ce9c52f][German]] is less consistent
+- Method: The authors analyze the [[id:3dfead51-0655-41df-b411-773c706215b1][Causal Narratives]], that is, the motives reported by firms CEOs regarding investment
+  - Those agents also report how strongly those elements affect investment decisions
+  - It would be interesting to evaluate this data using QCA
+  - New order as proxies for sales
+
+
+#+CAPTION: Investment Determinants according to the survey
+| Investment determinants  | Strongly positive | Weakly positive | no influence | weakly negative | strongly negative |
+|--------------------------+-------------------+-----------------+--------------+-----------------+-------------------|
+| Sales and [[id:9326692f-7fa9-439b-8f3c-a7fa2d18aef8][Expectations]]   |                   |                 |              |                 |                   |
+| Finance                  |                   |                 |              |                 |                   |
+| Returns expectations     |                   |                 |              |                 |                   |
+| Technological factors    |                   |                 |              |                 |                   |
+| Macro Policy Environment |                   |                 |              |                 |                   |
+| Others                   |                   |                 |              |                 |                   |
+|--------------------------+-------------------+-----------------+--------------+-----------------+-------------------|
+| Decodification           |                +2 |              +1 |            0 |              -1 |                +2 |
+
+
+The proposed index is estimates accordingly to:
+
+#+NAME: index_sentiment_investment
+\begin{align*}
+X_{t}  & = \sum_{i}^{N} \omega_{i}\cdot x_{i}\\
+\omega_{i} & = \frac{inv}{\sum inv}
+\end{align*}
+
+
+
+** Results
+
+- Aggregate demand shocks explains investment and output fluctuations ([[id:380b31ad-cdd5-4367-af2c-9ee199a085e7][Business Cycles]])
+  - Removing aggregate demand shocks as a counterfactual, aggregate investment loses its cyclical properties
+- Technological factor is the most important determinant on average
+- Even changing the order of Choleski-decomposition, Sales still explain more of the investment fluctuations
+  - If technology is ordered first, its contribution increases
+- Demand and technology shocks are the only plausible candidate
+  - Finance, macroeconomic policy plays little role
+- Semi-aggregate results are similar to the aggregated ones
+- The authors argue that the demand shock effect could be related to [[id:6b6297e3-22c8-4dc9-b4f6-49d0a6e5ee99][Animal Spirits]] shocks since they are correlated with business sentiment data
+- When sales is a important factor, firms are more likelly to increse prices; when the technological factor is more relevant, they are more likely to decrease
+- The determinants of investment also explain industrial production
+- Estimating a VAR model as an alternative, the authors report:
+  - Negative and delayed effect of technology
+  - Strong and *persistent* effect of demand shocks
+
+
+Based on the proposed index in [[index_sentiment_investment]]:
+  - Technological effect is positive
+  - Finance and Macro policy are zero on average
+  - This index is correlated with each other and the [[id:380b31ad-cdd5-4367-af2c-9ee199a085e7][Business Cycles]]
+    - The correlation between sales and investment is the highest while with technology is lower (but still higher than the others)
+      - This is because sales is the most volatile one
+        - This result support the [[id:9f3340c8-5ba9-4ae5-886a-4fa49e88ebd4][Supermultiplier Models]] in which investment is volatile because demand is volatile
+    - There are assymetries in which Return and Sales are cyclical in terms of the negative effects
+      - This is because recessions are more severe while recoveries are more smooth
+  - Technological factors are not only maintenance and replacement
+    - Thus, this is at odds with the [[id:9f3340c8-5ba9-4ae5-886a-4fa49e88ebd4][Supermultiplier Models]] which stats an "crowding-out" effect of innovation
+    - This is more relevant in industries with higher innovative-content
+      - In summary, it is more important in technology-intensive activities
+  - Finance is more important for firms with external finance
+    - It also does not seems to be an independent driver of investment fluctuations since it depends on credit spreads
+  - Macroeconomic policy plays an small effect
+    - This variable does not correspond to GDP expectations
+
+** Interesting findings and not categorized stuff
+
+- The demand shock is not a result of misclassification of intra-industry expenditures
+
+** Critics
+
+- The identification strategy only allows to demand-led inflation
+  - The authors themselves report some results in the opposite direction, but discarted them
+- The authors argue that technological factors are the most relevant ones. However, during the paper, the find that demand shocks explain most of investment fluctuations and the technological factor explain a smaller share. So, why the authors state that technological factors are the most relevant?
+  - This is because its index is more positive while Sales is closer to zero?
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+The ifo Investment Survey asks firms in the German manufacturing sector about the importance of sales, technological factors, finance, return expectations, and macroeconomic policy for their investment activity in a given year. We show that these subjective investment determinants 1) capture economically what their labels suggest, and 2) have strong explanatory power for aggregate manufacturing investment growth fluctuations. In a second step, we use these determinants to identify aggregate demand and aggregate technology shocks and argue that the bulk of the variance of both aggregate manufacturing investment and output growth fluctuations (as much as approximately two thirds in both cases) is explained by aggregate demand shocks. Consistent with neoclassical views, however, technological factors are the most important investment determinant on average. © 2020 Elsevier B.V.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+[[id:9105d56e-c993-4882-ace0-8910644e9793][Bachmann and Elstner: Firm Optimism and Pessimism - (2015, Eur. Econ. Rev.)]]
+
+[[id:24b8691b-b306-4ef4-9504-3634a674ad6e][Gennaioli et al.: Expectations and Investment - (2016, NBER)]]
+
+* References
+
+
+
+#+print_bibliography:
