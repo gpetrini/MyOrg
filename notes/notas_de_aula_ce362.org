@@ -1140,3 +1140,24 @@ Consequentemente, \(p_{1} = 165\).
 
 
 * Equilíbrio Geral com trocas puras
+
+** Teoremas do Bem-Estar
+
+*** Introdução
+
+- Tratam da relação entre equilíbrio geral (competitivo) e eficiência alocativa (em termos de eficiência de Pareto)
+
+** Primeiro teorema
+
+- Os pontos de Equilíbrio Competitivo são Pareto-Eficientes
+  - Basta que exista razões que os agentes tenham razões para realizar trocas
+  - Não requer monotonicidade
+
+** Segundo teorema
+
+- Nem todo ponto que é Pareto Eficiente é um equilíbrio geral competitivo
+  - Condição: Convexidade
+    - Se as curvas de indiferença forem convexas, todo ponto Pareto eficiente é um equilíbrio geral
+  - Teorema: Quando todo ponto Pareto-Eficiente é candidato a Equilíbrio Geral, este equilíbrio pode ser obtido por meio uma redistribuição adequada das dotações
+  - A implicação em termos de políticas públicas é de que distribuição e eficiência podem ser separados
+    - Trata-se, portanto, de possibilidades de alocação
