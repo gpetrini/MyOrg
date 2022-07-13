@@ -4,9 +4,8 @@
 :mtime:    20211130155146 20211129160556 20211129150311
 :ctime:    20211129150311
 :END:
-
 #+OPTIONS: num:nil ^:{} toc:nil
-#+TITLE: How Do Firms Form Their Expectations? New Survey Evidence - (2018-09, Am. Econ. Rev.)
+#+title: How Do Firms Form Their Expectations? New Survey Evidence - (2018-09, Am. Econ. Rev.)
 #+hugo_base_dir: ~/BrainDump/
 #+hugo_section: notes
 #+hugo_categories: "American Economic Review"
