@@ -1,0 +1,226 @@
+:PROPERTIES:
+:ID:       b38afaa8-b90b-4a78-b287-db64c80a8e79
+:ROAM_REFS: @tevlin_2003_Explaining
+:END:
+#+title: Tevlin, Whelan: Explaining the Investment Boom of the 1990s - (2003, J. Money Credit Bank.)
+#+OPTIONS: num:nil ^:{} toc:nil
+#+hugo_base_dir: ~/BrainDump/
+#+hugo_section: notes
+#+hugo_categories: J. Money Credit Bank.
+#+FILETAGS: [A],Ch DotCom,Dot Com crisis,DUE: Ago/2022,Investment determinants,READ,Stylized Facts
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+Traditional [[id:fe75d8ad-4d2a-4c6d-94d4-d55610598944][Accelerator Model]] does not explain the investment booms during the 1990s ([[id:8d3c092d-8546-4dc0-8a04-55d3d8a09191][Dot-Com crisis]]).
+This is because they aggregate computer and non-computer expenditires together and consider depreciation as constant.
+When desegregating, the model performs better.
+Computer-related investment are more sensible to [[id:5d25d7e0-3de1-4225-b77e-e646f1ab0283][Cost of Capital]] (price effects) and are percieved as permanent effects due to [[id:8651d790-2079-4233-b8ba-a01e1ada53e8][Technological revolution]].
+In summary, the investment boom was mainly a replacement investment boom.
+
+** Background and motivation
+
+- Investment boom during the 90s for the US
+  - [[id:fe75d8ad-4d2a-4c6d-94d4-d55610598944][Accelerator Model]]s performs badly predicting this increase
+
+** Supporting Ideas and hypothesis
+
+- Models usually assume constant depreciation rates
+- [[id:8651d790-2079-4233-b8ba-a01e1ada53e8][Technological revolution]] is view as a permanent change for firms, and thus, affect their behavior
+- [[id:fe75d8ad-4d2a-4c6d-94d4-d55610598944][Accelerator Model]] uses partial adjustmen formula
+- Constant Elasticity Substitution production function, depending negativelly on [[id:5d25d7e0-3de1-4225-b77e-e646f1ab0283][Cost of Capital]] and positively on output on the long-run
+- It is assumed that deviations from the "frictionless optimal stock" (desired capital stock) is costly and represented by a quadatic function. Thus, the authors proposes an optimization problem to minimize these cost.
+- Real interest rate converges to mrginal productivity of capital.
+
+** Purpose, Relevance, and Contribution
+
+
+Regarding the [[id:95265264-f61f-4cf5-8cdc-e590b2a47cb9][Innovation bubble ABM]] chapter, this paper was selected in order to review some [[id:8e9dd4a4-0f29-46d1-b8e4-5befe4df94cb][Stylized Facts]] of the [[id:8d3c092d-8546-4dc0-8a04-55d3d8a09191][Dot-Com crisis]] and get some inspirations for the simulation experiments.
+
+- The separation between computer and non-computer investment could be related to expansion, replacement and R&D investment in the [[id:95265264-f61f-4cf5-8cdc-e590b2a47cb9][Innovation bubble ABM]] chapter
+- Depreciation is important in explaining the [[id:8d3c092d-8546-4dc0-8a04-55d3d8a09191][Dot-Com crisis]]. It could be argued that the [[id:3ff828b3-ceb5-4a18-8ba8-19b647bad967][Keynes meets Schumpeter family]] is driven by replacement investment, and thus, abble to reproduce this pattern.
+  - It could also be possible to include a variable depreciation as in [cite/t:@steindl_1976_Maturity]
+
+
+** Methodology
+
+- Desegregates computer and non-computer investment using ARDL model for the US
+
+** Results
+
+- From the analytical model, the formulation implies that the desired capital stock is a moving target. It is described by the weighted average of expected future desired capital stock.
+  - In some sense, this is similar to [[id:88dc308c-ddfb-4216-9587-0085cd197621][CATS ABM family]] functions.
+  - The results of the model specification indncates that the capital-biased technological change is independently from output and cost of capital.
+- When estimating the net investment rate, the results are better. This occurs because does not include the increasing depreciation rate.
+- [[id:5d25d7e0-3de1-4225-b77e-e646f1ab0283][Cost of Capital]] is relevant for computer investment (and usually not relevant for regular investment)
+  - This is because is percieved as a permanent effect for firms
+  - The relative price component is stronger than for other investment types
+
+** Interesting findings and not categorized stuff
+
+
+- The [[id:8d3c092d-8546-4dc0-8a04-55d3d8a09191][Dot-Com crisis]] was followed by a increase in labor productivity
+  - The following [[id:cd32d0a3-d949-417d-9ff0-ac661795211b][Productivity Paradox]] discuss the increase expenditures in [[id:a2154a52-5891-46a0-9986-2216d60f2119][ICT]] with labor productivity
+- Literature usually reports little room for [[id:5d25d7e0-3de1-4225-b77e-e646f1ab0283][Cost of Capital]] for aggregate investment and [[id:fe75d8ad-4d2a-4c6d-94d4-d55610598944][Accelerator Model]] performs well (mainly for the [[id:380b31ad-cdd5-4367-af2c-9ee199a085e7][Business Cycles]] estimations and gross [[id:2645660a-bff8-4f35-8bb9-c4de28e46ddd][Investment determination]])
+- Computer depreciates faster
+- Capital stock adjustment is slow (about 7% of total capital stock)
+- The authors evaluate the possibility of errors in computer price index. If this error is present, the elasticity would be larger.
+
+** Critics
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+Real equipment investment in the United States boomed in the 1990s, led by soaring investment in computers. We find that traditional aggregate econometric models completely fail to capture the magnitude of this growth-mainly because these models neglect to address two features that were crucial (and unique) to the 1990s’ investment boom. First, the pace at which firms replace depreciated capital increased. Second, investment was more sensitive to the cost of capital. We document that these two features stem from the special behavior of investment in computers and therefore propose a disaggregated approach. This produces an econometric model that successfully explains the 1990s’ equipment investment boom.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+
+** Capital adjustment formula
+
+
+Usually, traditional [[id:fe75d8ad-4d2a-4c6d-94d4-d55610598944][Accelerator Model]] uses a partial adjustment equation:
+
+\begin{align*}
+ \Delta K & = (1 - \lambda)(K^{\star} - K_{-1})\\
+K & = \lambda\cdot K_{-1} + (1 - \lambda)K^{\star}
+\end{align*}
+
+
+Assuming a infinite distributed lag function:
+
+\begin{align*}
+ K_{t} & = \sum_{r=0}^{\infty}(1 - \lambda)\lambda^{r}K^{\star}_{t-t}\\
+ & = \sum_{r=0}^{\infty}\gamma_{r}K_{t-r}^{\star}
+\Delta K & = \sum_{r=0}^{N}\gamma_{r}\Delta K^{\star}_{t-r} + \epsilon
+\end{align*}
+
+The last expression present the finite approximation.
+Assuming a CES productivity function:
+
+\begin{equation*}
+\Delta K = \sum_{r=0}^{N}\gamma_{r}\Delta Y_{t-r} - \sigma \sum_{r=0}^{N}\gamma_{r}\Delta C_{t-r} + \epsilon
+\end{equation*}
+
+in which \(C\) is the [[id:5d25d7e0-3de1-4225-b77e-e646f1ab0283][Cost of Capital]] and \(Y\) is the output.
+In fully [[id:fe75d8ad-4d2a-4c6d-94d4-d55610598944][Accelerator Model]]s, \(\sigma = 0\).
+Finally, when evaluating gross investment:
+\begin{equation*}
+\frac{\Delta K}{K} = \delta + \sum_{r=0}^{N}\gamma_{r}\Delta Y_{t-r} - \sigma \sum_{r=0}^{N}\gamma_{r}\Delta C_{t-r} + \epsilon
+\end{equation*}
+
+the depreciation (\(\delta\)) is just a constant coefficient
+
+** [[id:5d25d7e0-3de1-4225-b77e-e646f1ab0283][Cost of Capital]]
+
+Following the Hall-Jorgenson rental rate formula:
+
+\begin{equation*}
+C = P\left(R + \delta - \frac{\dot{P}}{P}\right)\left(\frac{1 - ITC - \tau\cdot DEP}{1 - \tau}\right)
+\end{equation*}
+
+in which \(P\) is the price of capital relative to price of product; \(R\) is the real interest rate; \(ITC\) is the investment tax credit (?); \(DEP\) is the present value of depreciation; and \(\tau\) is the marginal corporate income tax rate.
+
+* Annotations (zotero)
+
+#+begin_src emacs-lisp :eval no
+(while (search-forward "\u00ab" nil t)
+    (replace-match "``" nil t))
+
+(replace-string "\u00bb" "''")
+#+end_src
+
+``Real equipment investment in the United States boomed in the 1990s, led by soaring investment in computers.'' ([[zotero://select/library/items/PR8LFMDV][Tevlin e Whelan, 2003, p. 1]]) ([[zotero://open-pdf/library/items/GXFXUIGU?page=2&annotation=MIESX5LT][pdf]]) {BACKGROND}
+
+``First, the pace at which firms replace depreciated capital increased. Second, investment was more sensitive to the cost of capital.'' ([[zotero://select/library/items/PR8LFMDV][Tevlin e Whelan, 2003, p. 1]]) ([[zotero://open-pdf/library/items/GXFXUIGU?page=2&annotation=RZVAHUQ5][pdf]]) {RESULTS} Two distinctive features of the [[id:8d3c092d-8546-4dc0-8a04-55d3d8a09191][Dot-Com crisis]]: increasing depreciation and higher sensitivity to [[id:5d25d7e0-3de1-4225-b77e-e646f1ab0283][Cost of Capital]].
+
+``The investment boom underpinned the continuing strength of U.S. aggregate demand and has probably also had important supply-side effects, perhaps playing a role in the unusual late-cycle acceleration in labor productivity.'' ([[zotero://select/library/items/PR8LFMDV][Tevlin e Whelan, 2003, p. 1]]) ([[zotero://open-pdf/library/items/GXFXUIGU?page=2&annotation=PPIJT8DR][pdf]]) {FINDS} Consequences of the investment boom \(\\Rightarrow\) acceleration in labor productivity.
+
+``We demonstrate that they cannot. Although we examine the traditional, accelerator-style models that previous investment "horse race" studies have found best fit the data, we find that they completely fail to capture the magnitude of the 1990s' investment boom.”'' ([[zotero://select/library/items/PR8LFMDV][Tevlin e Whelan, 2003, p. 1]]) ([[zotero://open-pdf/library/items/GXFXUIGU?page=2&annotation=NNMRSNK8][pdf]]) {BACKGROUND} [[id:fe75d8ad-4d2a-4c6d-94d4-d55610598944][Accelerator Model]] fail to explain the increase of the [[id:8d3c092d-8546-4dc0-8a04-55d3d8a09191][Dot-Com crisis]] investment increase.
+
+``We demonstrate that a disaggregated approach, which models investment in computing and noncomputing equipment separately, successfully explains the behavior of investment in the 1990s.'' ([[zotero://select/library/items/PR8LFMDV][Tevlin e Whelan, 2003, p. 2]]) ([[zotero://open-pdf/library/items/GXFXUIGU?page=3&annotation=JTBHAN7R][pdf]]) {METHOD} Separate computer and non-computer investment. This could be related to investment in expansion and replacement in the [[id:95265264-f61f-4cf5-8cdc-e590b2a47cb9][Innovation bubble ABM]] model.
+
+``Most econometric models assume a constant depreciation rate and thus a stable relationship between the change in the capital stock and the level of investment.'' ([[zotero://select/library/items/PR8LFMDV][Tevlin e Whelan, 2003, p. 2]]) ([[zotero://open-pdf/library/items/GXFXUIGU?page=3&annotation=8WMWY3VK][pdf]]) {BACKGROUND} Most models assume constant amortisation rates.
+
+``We show that the increase in the depreciation rate was due to a shift in the composition of capital toward computers, which depreciate more rapidly than other types of equipment. Aggregate models do not capture this phenomenon, because, by definition, they ignore compositional mix-shifts.'' ([[zotero://select/library/items/PR8LFMDV][Tevlin e Whelan, 2003, p. 2]]) ([[zotero://open-pdf/library/items/GXFXUIGU?page=3&annotation=AMQ2HZEL][pdf]]) {RESULTS} The increasing depreciation rate in capital was generated by the change in the composition towards computer.
+
+``Computer investment is very sensitive to the cost of capital, far more so than investment in noncomputing equipment. As a result, rapid declines in computer prices played a crucial role in generating the investment boom of the 1990s. This result contrasts sharply with most of the empirical literature on aggregate investment, which typically finds very little response to cost variables.'' ([[zotero://select/library/items/PR8LFMDV][Tevlin e Whelan, 2003, p. 2]]) ([[zotero://open-pdf/library/items/GXFXUIGU?page=3&annotation=MRD4CH6V][pdf]]) {RESULTS} Computer investment is more sensible to [[id:5d25d7e0-3de1-4225-b77e-e646f1ab0283][Cost of Capital]] than regular investment. The literature usually reports little role in aggregated models.
+
+``e provide a plausible explanation for the different estimates of cost-of-capital elasticities that we observe: Firms respond more to shocks perceived as permanent than to those perceived as transitory, and shocks to computer prices usually result from technological innovations that are unlikely to be reversed.'' ([[zotero://select/library/items/PR8LFMDV][Tevlin e Whelan, 2003, p. 2]]) ([[zotero://open-pdf/library/items/GXFXUIGU?page=3&annotation=FXD9AHYK][pdf]]) {RESULTS; DESCRIPTION} Firms reacts to percieved permanent changes. [[id:8651d790-2079-4233-b8ba-a01e1ada53e8][Technological revolution]] is unreversable, thus permanent as well.
+
+``The traditional neo-Keynesian investment models used simple ad hoc specifications of the effects of adjustment costs, the most common being the partial adjustment approach, which assumed that firms move part of the way toward their optimal frictionless stock each period.'' ([[zotero://select/library/items/PR8LFMDV][Tevlin e Whelan, 2003, p. 3]]) ([[zotero://open-pdf/library/items/GXFXUIGU?page=4&annotation=37RSN3HA][pdf]]) {BACKGROUND} Traditional investment models uses a partial adjustment formula.
+
+``Of course, if the capital stock adjustment equation is correctly specified, then this differencing step is not necessary. However, the traditional literature largely predated cointegration methods and used stationarity-inducing transformations as a precaution against spurious regressions. In our empirical work, we will examine this issue formally.'' ([[zotero://select/library/items/PR8LFMDV][Tevlin e Whelan, 2003, p. 3]]) ([[zotero://open-pdf/library/items/GXFXUIGU?page=4&annotation=HCWNWGTR][pdf]]) {FINDS} The literature used the capital adjustment equation in differences in order to avoid econometric issues (they predated cointegration techniques).
+
+``Specifying a CES production function, K; is proportional to Y,/C?%, where Y, is output, C;, is the cost of capital, and o is the elasticity of substitution between capital and labor.'' ([[zotero://select/library/items/PR8LFMDV][Tevlin e Whelan, 2003, p. 3]]) ([[zotero://open-pdf/library/items/GXFXUIGU?page=4&annotation=DWYPQMFX][pdf]]) {HYPOTHESIS} CES production function in which capital depends negativelly on [[id:5d25d7e0-3de1-4225-b77e-e646f1ab0283][Cost of Capital]].
+
+([[zotero://select/library/items/PR8LFMDV][Tevlin e Whelan, 2003, p. 4]]) {INCLUDE} Include this equation and previous steps.
+
+``These sums have an intuitive interpretation since they describe the predicted longrun response of the capital stock to permanent unit shocks to output and the cost of capital.'' ([[zotero://select/library/items/PR8LFMDV][Tevlin e Whelan, 2003, p. 4]]) ([[zotero://open-pdf/library/items/GXFXUIGU?page=5&annotation=UJ5GHLV5][pdf]]) {DESCRIPTION} Interpretation of the coeficients.
+
+``Most empirical models assume a constant average rate of depreciation and estimate an equation for gross investment. In this case, approximating the log-difference of the capital stock with the growth rate, we get'' ([[zotero://select/library/items/PR8LFMDV][Tevlin e Whelan, 2003, p. 4]]) ([[zotero://open-pdf/library/items/GXFXUIGU?page=5&annotation=DCYQ7B4Y][pdf]]) {HYPOTHESIS} Most models assume a constant depreciation rate.
+
+``Previous empirical implementations of this model, estimated on data prior to the 1990s, have found that it provides a fairly good description of the cyclical behavior of investment.'' ([[zotero://select/library/items/PR8LFMDV][Tevlin e Whelan, 2003, p. 4]]) ([[zotero://open-pdf/library/items/GXFXUIGU?page=5&annotation=HMYZQ9UF][pdf]]) {RESULTS} [[id:05b1426c-b748-4858-b937-adb441f10340][Review of Literature]] indicates that the traditional [[id:fe75d8ad-4d2a-4c6d-94d4-d55610598944][Accelerator Model]] provides a good fit of the [[id:380b31ad-cdd5-4367-af2c-9ee199a085e7][Business Cycles]] and gross [[id:2645660a-bff8-4f35-8bb9-c4de28e46ddd][Investment determination]]
+
+``Indeed, comparisons of forecasting power have often favored the pure accelerator formulation (6 = 0) over models including the cost of capital.'' ([[zotero://select/library/items/PR8LFMDV][Tevlin e Whelan, 2003, p. 4]]) ([[zotero://open-pdf/library/items/GXFXUIGU?page=5&annotation=676FEGQ8][pdf]]) {RESULTS; FINDINGS} [[id:05b1426c-b748-4858-b937-adb441f10340][Review of Literature]] indicates more in favor of pure [[id:fe75d8ad-4d2a-4c6d-94d4-d55610598944][Accelerator Model]] since the [[id:5d25d7e0-3de1-4225-b77e-e646f1ab0283][Cost of Capital]] is close to zero. The authors indicate that in the microeconometric literature, the elasticity substitution is close to one.\\ [cite:[cite/t:@chirinko_1993_Business]] is a good reference for this.
+
+``In the rest of the paper, we explore the reasons for the traditional model's complete breakdown in the 1990s.'' ([[zotero://select/library/items/PR8LFMDV][Tevlin e Whelan, 2003, p. 5]]) ([[zotero://open-pdf/library/items/GXFXUIGU?page=6&annotation=JAR2EBVY][pdf]]) {MOTIVATION} Tradicional models breakdown in the 1990s.
+
+``Figure 3 illustrates how this step radically improves in-sample fit. It compares the residuals from our estimation of the gross investment (/,/K,---,) model, Equation (7), with the residuals from estimation of the net investment ((/,/K,_,) --- 6,) model, Equation (5). Once we do not have to account for the variations in the aggregate depreciation rate, we no longer have residuals that trend up over time and the recent net investment residuals, though still positive and relatively large, are not historically unprecedented.'' ([[zotero://select/library/items/PR8LFMDV][Tevlin e Whelan, 2003, p. 6]]) ([[zotero://open-pdf/library/items/GXFXUIGU?page=7&annotation=QKQ3GD8P][pdf]]) {RESULTS} When estimating the net investment rate, the results are better. This occurs because does not include the increasing depreciation rate.
+
+``and Oliner (1989, 1994) has shown that computers depreciate significantly faster than other types of equipment.'' ([[zotero://select/library/items/PR8LFMDV][Tevlin e Whelan, 2003, p. 6]]) ([[zotero://open-pdf/library/items/GXFXUIGU?page=7&annotation=W3QB8S9B][pdf]]) {FINDS} Computer depreciates faster.
+
+``complete model of gross investment expenditures in the 1990s must account for the differing behavior of investment in computing and noncomputing equipment.'' ([[zotero://select/library/items/PR8LFMDV][Tevlin e Whelan, 2003, p. 7]]) ([[zotero://open-pdf/library/items/GXFXUIGU?page=8&annotation=IPPRFZFA][pdf]]) {WRITING} The [[id:8d3c092d-8546-4dc0-8a04-55d3d8a09191][Dot-Com crisis]] indicates the relevance of deals with these two components of firms investment.
+
+``Declining computer prices tend to be large permanent shocks, related to technological improvements in the computer industry, and it is optimal for firms to react more to these shocks than to other shocks to the cost of capital, which tend to be more temporary and mean-reverting in nature.'' ([[zotero://select/library/items/PR8LFMDV][Tevlin e Whelan, 2003, p. 8]]) ([[zotero://open-pdf/library/items/GXFXUIGU?page=9&annotation=ETURD8KA][pdf]]) {RESULTS; DESCRIPTION} Why it is reasonable to assume that the higher sensitivity to computer price explain the 1990s boom? Because this reflects a permanent effect rather than a point one. Firms reacts to permanent changes.
+
+``Changes in the capital stock and deviations from the frictionless optimal stock both lead to costs that increase according to a simple quadratic function.'' ([[zotero://select/library/items/PR8LFMDV][Tevlin e Whelan, 2003, p. 8]]) ([[zotero://open-pdf/library/items/GXFXUIGU?page=9&annotation=SKA7PA5V][pdf]]) {HYPOTHESIS} It is assumed that deviations from the "frictionless optimal stock" (desired capital stock) is costly and represented by a quadatic function. Thus, the authors proposes an optimization problem to minimize these cost.
+
+``Thus, each period, the log of the capital stock adjusts toward the moving target, k; , which is a weighted average of expected future k; s. It can be shown that depends positively on o, implying that higher adjustment costs lead to a slower speed of adjustment towards k, .''' ([[zotero://select/library/items/PR8LFMDV][Tevlin e Whelan, 2003, p. 9]]) ([[zotero://open-pdf/library/items/GXFXUIGU?page=10&annotation=G2H3IVWY][pdf]]) {RESULTS} The formulation implies that the desired capital stock is a moving target. It is described by the weighted average of expected future desired capital stock. In some sense, this is similar to CATS (check) functions.
+
+``To give a concrete example of what , means, the stock of computing capital may tend to rise independently of output and the cost of capital if the structure of production changes in ways that facilitate increased usage of computers.'' ([[zotero://select/library/items/PR8LFMDV][Tevlin e Whelan, 2003, p. 9]]) ([[zotero://open-pdf/library/items/GXFXUIGU?page=10&annotation=3TNH3LFB][pdf]]) {RESULTS} The results of the model specification indncates that the capital-biased technological change is independently from output and cost of capital.
+
+``Suppose now we estimate Equation (17). The technology-bias variable, N,, cannot be observed, so this ends up in the error term. Thus, our estimating equation is'' ([[zotero://select/library/items/PR8LFMDV][Tevlin e Whelan, 2003, p. 10]]) ([[zotero://open-pdf/library/items/GXFXUIGU?page=11&annotation=ZGQ6HRJJ][pdf]]) {RESULTS} Since the technology-bias variable is not observable, it is a residual.
+
+``where P, is the price of capital relative to the price of output, R, is the real interest rate, ITC is the investment tax credit, DEP is the present'' ([[zotero://select/library/items/PR8LFMDV][Tevlin e Whelan, 2003, p. 10]]) ([[zotero://open-pdf/library/items/GXFXUIGU?page=11&annotation=USTZH9KW][pdf]]) {DEFINITION} [[id:5d25d7e0-3de1-4225-b77e-e646f1ab0283][Cost of Capital]] equation
+
+``The upper panels show that the computer cost of capital is highly nonstationary, exhibiting continuous rapid declines as a result of the remarkable pattern of falling purchase prices. The lower panels show that the relative stability of the noncomputer cost of capital comes from a combination of an uneven decline in the relative price of this equipment and a choppy pattern for the nonprice component.'' ([[zotero://select/library/items/PR8LFMDV][Tevlin e Whelan, 2003, p. 10]]) ([[zotero://open-pdf/library/items/GXFXUIGU?page=11&annotation=55SPJX58][pdf]]) {RESULTS} [[id:5d25d7e0-3de1-4225-b77e-e646f1ab0283][Cost of Capital]] for computer is non-stationary and its component of relative prices are stronger compared to non-computer capital
+
+``There are also good economic reasons to believe that the price and nonprice components of the cost of capital have different persistence properties. The pattern of declining relative prices for equipment comes from technological innovations in the equipment-producing industries, and it seems likely that once prices have fallen as a result of innovations, these price reductions will be permanent.'' ([[zotero://select/library/items/PR8LFMDV][Tevlin e Whelan, 2003, p. 12]]) ([[zotero://open-pdf/library/items/GXFXUIGU?page=13&annotation=X4SYLK3R][pdf]]) {DISCUSS} Since computers' relative prices depends on technological changes, it may be have more persistent effects.
+
+``contrast, real interest rates will, in the long run, be related to the marginal productivity of capital, which will be a stationary variable in most general equilibrium models.'' ([[zotero://select/library/items/PR8LFMDV][Tevlin e Whelan, 2003, p. 12]]) ([[zotero://open-pdf/library/items/GXFXUIGU?page=13&annotation=ZMYRTIAM][pdf]]) {HYPOTHESIS} Real interest rate converges to mrginal productivity of capital.
+
+``The estimated A of 0.93 implies relatively slow adjustment.'' ([[zotero://select/library/items/PR8LFMDV][Tevlin e Whelan, 2003, p. 13]]) ([[zotero://open-pdf/library/items/GXFXUIGU?page=14&annotation=2NR8R8AE][pdf]]) {FINDS} Capital stock slow adjustment.
+
+``coefficients on the cost of capital, though negative as expected, 1s quite small. The long-run elasticities are shown i'' ([[zotero://select/library/items/PR8LFMDV][Tevlin e Whelan, 2003, p. 13]]) ([[zotero://open-pdf/library/items/GXFXUIGU?page=14&annotation=Q3VFWW5Q][pdf]]) {RESULTS} Cost of capital parameters are small.
+
+``Nonetheless, this column contains an important result: The estimated long-run elasticity of the computer capital stock with respect to the cost of capital is ---1.6, nearly nine times the estimate from the aggregate model. Column 3 reports the results for noncomputing equipment; these are similar to the aggregate regression.'' ([[zotero://select/library/items/PR8LFMDV][Tevlin e Whelan, 2003, p. 13]]) ([[zotero://open-pdf/library/items/GXFXUIGU?page=14&annotation=A4QRJ5VP][pdf]]) {RESULTS} Computer sensitivity to cost of capital is way higher than non-computer investment.
+
+``One question about our large estimate of the elasticity of computer net investment with respect to its relative price is whether it could be affected by errors in the measurement of computer prices. The reasons to suspect that measurement error may be affecting this coefficient are twofold. First, the NIPA computer price index is a constant-quality series.'' ([[zotero://select/library/items/PR8LFMDV][Tevlin e Whelan, 2003, p. 14]]) ([[zotero://open-pdf/library/items/GXFXUIGU?page=15&annotation=NYTZVQV7][pdf]]) {FINDS} The authors evaluate the possibility of errors in computer price index. If this error is present, the elasticity would be larger.
+
+``prices. Specifically, falling computer prices played a crucial role in the investment boom of the 1990s.'' ([[zotero://select/library/items/PR8LFMDV][Tevlin e Whelan, 2003, p. 18]]) ([[zotero://open-pdf/library/items/GXFXUIGU?page=19&annotation=449XM3LQ][pdf]]) {RESULTS} Usually, prices do not matter for regular investment. However, for computer equipment it does.
+
+``We have shown that an increasing depreciation rate was of first-order importance in the extraordinary behavior of equipment investment in the 1990s.'' ([[zotero://select/library/items/PR8LFMDV][Tevlin e Whelan, 2003, p. 18]]) ([[zotero://open-pdf/library/items/GXFXUIGU?page=19&annotation=GW2JPHFC][pdf]]) {RESULTS} Depreciation is important in explaining the [[id:8d3c092d-8546-4dc0-8a04-55d3d8a09191][Dot-Com crisis]]. It could be argued that the [[id:3ff828b3-ceb5-4a18-8ba8-19b647bad967][Keynes meets Schumpeter family]] is driven by replacement investment, and thus, abble to reproduce this pattern.
+
+([[zotero://select/library/items/PR8LFMDV][Tevlin e Whelan, 2003, p. 18]]) {RESULTS; 5SS} Summary of the results.
+
+* Additional Backlinks
+
+- [[id:2645660a-bff8-4f35-8bb9-c4de28e46ddd][Investment determination]]
+- [[id:8d3c092d-8546-4dc0-8a04-55d3d8a09191][Dot-Com crisis]]
+- [[id:95265264-f61f-4cf5-8cdc-e590b2a47cb9][Innovation bubble ABM]]
+
+* References
+
+
+
+#+print_bibliography:

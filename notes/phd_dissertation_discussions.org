@@ -279,6 +279,59 @@ In general, there is no persistent effects in terms of economic growth or regard
 - Taxa de crescimento inicial do PIB deve ser g_ss ou g_k
   - Imagino que g_k
 
+*** Correções inconsistências do governo
+
+
+**** Primeira reunião
+
+- Os checkers estão corretos?
+- As equações dos títulos do governo estão corretos?
+- Como certificar sobre problemas de ordenamento?
+- A equação do pagamento de juros para os bancos teve que ser alterado. Existe alguma consequência?
+  - Antes era uma equação que retornava zero, mas os valores eram escritos nas equações de debt-servicing
+- Taxa de crescimento dos gastos autônomos deve incluir inflação?
+  - Z é nominal
+- Renda disponível das famílias não deve incluir amortização, certo?
+- Renda financeira líquida das famílias deve descontar amortização? Na versão atual não inclui
+  - O mesmo para SAVh
+- Checker das vendas nominalis deve incluir P&D?
+
+***** Mudanças
+
+- Fragmentar depósitos das famílias
+  - Dividendos devem ser correntes
+  - Pagamento de imposto é a última etapa
+  - Separar depósitos recebidos a partir de cada dividendo
+    - Primeiro das firmas, depois pagamento de juros e, por fim, dos bancos
+- Incluir amortização no consumo das famílias
+  - Diferenciar renda disponível contábil da renda disponível para consumo
+  - Incluir inflação esperada para estimar gastos autônomos nominais
+  - Consumo pode depender dos dividendos esperados, mas a renda disponível (contábel) não
+- Incluir P&D na produção agregada
+  - Deflacionar R&D nominal agregado pelos salários agregados
+- Modificar script R
+  - Incluir amortização para reestimar a propensão marginal a consumir
+
+**** Segunda reunião
+
+- Se propensão marginal a investir em P&D é zero, inconsistências somem
+  - Zerar impostos das firmas não tem o mesmo efeito
+- Parâmetro de pagamento de dividendos é negativo
+  - Talvez tenha algum problema com os dividendos
+  - Se sav_f for bastante grande (acima de 50%), este parâmetro se torna positivo
+  - Imposto elevado (perto de 60%) também torna positivo
+  - Parâmetro dos bancos acima de 1 ou negativo
+  - Se alavancagem (em termos do PIB nominal) == 1.4, os parâmetros dos bancos e das firmas ficam positivos e menores que 1 (ceteris paribus)
+    - Inconsistências do governo persistem e dos gastos autônomos surgem
+
+*** Lsd
+
+- Como acessar timeline?
+- Como incluir outras funções do cpp?
+  - Tentei uma que define T
+- Como se assegurar dos problemas de ordenamento?
+- Futuro: Como criar listas (eficiência)?
+
 * Housing AB model
 
 ** General topics
