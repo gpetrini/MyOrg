@@ -2,9 +2,8 @@
 :ID:       00e10890-5ec4-4a25-a6a7-e7486ae9b324
 :ROAM_REFS: @caminati_2019_Demand
 :END:
-#+title:
+#+title: Caminati, Sordi: Demand-led Growth with Endogenous Innovation - (2019, meca)
 #+OPTIONS: num:nil ^:{} toc:nil
-#+TITLE: Caminati, Sordi: Demand-led Growth with Endogenous Innovation - (2019, meca)
 #+hugo_base_dir: ~/BrainDump/
 #+HUGO_AUTO_SET_LASTMOD: t
 #+hugo_section: notes
@@ -29,7 +28,7 @@
 
 ** Supporting Ideas and hypothesis
 
-- The authors follows the supermultiplier approach in which [[id:d2d3c0db-3b93-41eb-a572-fce40270c485][Harrodian instability]] is tamed by means of [[id:27df9b84-b199-482f-8197-bed51d7f1311][Autonomous Expenditures]] as in [cite/t:@serrano_1995_Long; @lavoie_2016_Convergence; @freitas_2015_Growtha;@allain_2015_Tackling]
+- The authors follows the supermultiplier approach in which [[id:d2d3c0db-3b93-41eb-a572-fce40270c485][Harrodian instability]] is tamed by means of [[id:27df9b84-b199-482f-8197-bed51d7f1311][Autonomous Expenditures]] as in [cite/t:@serrano_1995_Long; @lavoie_2016_Convergenceb; @freitas_2015_Growth;@allain_2015_Tacklinga]
 - They suppose that innovation is proportional to capital stock size
   - They also assume that modernization expenditures depend on a update price
 - Competition ensure that firms will adopt innovation expenditures

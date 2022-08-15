@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       fc885239-66df-462d-b1b1-a1042c9a25bc
+:END:
+#+title: Kaldor-Verdoorn Law
+
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+
+#+hugo_section: notes
+
+#+HUGO_TAGS: placeholder
+
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil
