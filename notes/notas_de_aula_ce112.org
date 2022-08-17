@@ -1,0 +1,86 @@
+#+OPTIONS: num:nil ^:{} toc:nil
+:PROPERTIES:
+:ID:       1cd80b14-e921-4b3d-bcc4-0d83b45b03e1
+:END:
+#+title: #+title: Notas de Aula CE112
+
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+#+hugo_section: notes
+#+HUGO_CATEGORIES: Lectures
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+
+* Introdução ao Wolfram Mathematica
+:PROPERTIES:
+  :header-args:mathematica:          :session *mma-0* :tangle ~/PhD/Materias/2S2022/CE112_B/code/intro.nb
+  :END:
+
+** Expressões
+
+Além das expressões usuais, as seguintes operações podem ser realizadas:
+- multiplicação :: =*= ou spc
+- fatorial :: !
+- Exponenciação :: =^=
+- Logarítmo (base \(e\)) :: =Log[...]=
+- Exponencial :: =Exp[...]=
+- Valor absoluto :: =Abs[...]=
+- Comentário :: Entre =(*=  =*)=
+
+A convenção é de que os comandos se iniciam com letra maiúscula seguido do colchete.
+Como na matemática, os parênteses são utilizados para indicar a ordem das operações.
+
+É importante notar que o mathematica não arredonda os valores, a menos que seja explicitamente especificado.
+Normalmente, os resultados são representados na forma de frações que mais de aproximam do valor exato.
+Preferencialmente, usar frações. Caso contrário, o software tentará calcular o valor exato.
+
+#+begin_src mathematica :exports code
+Cos[4] == Cos[4.0] *( Returns true *)
+#+end_src
+
+A expressão decimal pode ser expressa por =N[...]=.
+
+** Resultados anteriores, variáveis e constantes
+
+Para utilizar o resultado da célula anterior, basta incluir o caracter =%=.
+Alternativamente, pode-se usar =Out[...]=.
+No entanto, o método anterior está sujeito às alterações da compilação do /notebook/.
+Uma outra forma é definir uma constante com o símbolo de =.
+Por convenção, constantes são definidas com letras minúsculas.
+
+Todo objeto que não for definido explicitamente é considerado uma expressão e é recalculado sempre que chamado.
+Para remover uma expressão, use =Clear[x,y]=.
+
+A atribuição com =:== é usado para não executar o cálculo no momento da criação do objeto.
+
+** Listas, vetores e matrizes
+
+Vetores e matrizes são organizados na forma de listas, indicadas por ={...}= cujos elementos são separados por vírgulas =,=.
+
+
+#+begin_src mathematica
+v1 = {3, 4}
+v2 = {5, 6}
+#+end_src
+
+#+RESULTS:
+:
+: Set::write: Tag Times in v2 {3, 4} is Protected.
+: {5, 6}
+
+Para acessar um elemento em específico, basta utilizar colchetes duplos (1-index based).
+
+#+begin_src mathematica :eval no
+v1 [[1]]
+#+end_src
+
+Para fazer a seleção de parte de uma lista, basta =[[1 ;; 5]]=.
+
+Algumas operações vetoriais são:
+- Produto vetorial :: =.=
+
+Matrizes são listas compostas:
+#+begin_src mathematica
+M := {{a, b}, {2c, 3a}}
+#+end_src
+
+Para visualizar, basta =MatrixForm[M]=.
