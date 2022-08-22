@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       d170861a-8318-4e3d-8d84-28f795578b98
+:END:
+#+title: Diagnostic Expectations
+
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+
+#+hugo_section: notes
+
+#+HUGO_TAGS: placeholder
+
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

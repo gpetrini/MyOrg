@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       b866dd1b-b7e5-464d-8c13-89cd220f1338
+:END:
+#+title: Selective Memory
+
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+
+#+hugo_section: notes
+
+#+HUGO_CATEGORIES: KnowledgeBase
+
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil
