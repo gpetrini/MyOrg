@@ -34,8 +34,9 @@ Normalmente, os resultados são representados na forma de frações que mais de 
 Preferencialmente, usar frações. Caso contrário, o software tentará calcular o valor exato.
 
 #+begin_src mathematica :exports code
-Cos[4] == Cos[4.0] *( Returns true *)
+Cos[4] == Cos[4.0]
 #+end_src
+
 
 A expressão decimal pode ser expressa por =N[...]=.
 
@@ -58,19 +59,19 @@ Vetores e matrizes são organizados na forma de listas, indicadas por ={...}= cu
 
 
 #+begin_src mathematica
-v1 = {3, 4}
-v2 = {5, 6}
+v1 = {3, 4}; (* Usa-se o ; por ser envolto no Print[...]*)
+v2 = {5, 6};
 #+end_src
 
 #+RESULTS:
-:
-: Set::write: Tag Times in v2 {3, 4} is Protected.
-: {5, 6}
+: 3
+
 
 Para acessar um elemento em específico, basta utilizar colchetes duplos (1-index based).
+Por conta da identação do =emacs=, usa-se um espaço depois do proiemro colchete.
 
 #+begin_src mathematica :eval no
-v1 [[1]]
+v1[ [1] ]
 #+end_src
 
 Para fazer a seleção de parte de uma lista, basta =[[1 ;; 5]]=.
@@ -80,7 +81,15 @@ Algumas operações vetoriais são:
 
 Matrizes são listas compostas:
 #+begin_src mathematica
-M := {{a, b}, {2c, 3a}}
+M := {{a, b}, {2c, 3a}};
+MatrixForm[M]
 #+end_src
 
+#+RESULTS:
+: MatrixForm[{{a, b}, {2*c, 3*a}}]
+
 Para visualizar, basta =MatrixForm[M]=.
+
+#+begin_src ein-mathematica
+1 + 1
+#+end_src
