@@ -1,0 +1,61 @@
+:PROPERTIES:
+:ID:       cd180aa2-b3b2-488e-a678-ef68bf86962f
+:ROAM_REFS: @pastor_2009_Technological
+:END:
+#+title:
+#+OPTIONS: num:nil ^:{} toc:nil
+#+TITLE: Pástor, Veronesi: Technological Revolutions and Stock Prices - (2009, Am. Econ. Rev.)
+#+hugo_base_dir: ~/BrainDump/
+#+hugo_section: notes
+#+hugo_categories: Am. Econ. Rev.
+#+FILETAGS: Asset Pricing,Bond Interest Rates; Information and Internet Services,Canada: 1913-,Canada: 1913-; Economic History: Transport; Trade; Energy; Technology; and Other Services: U.S.,Canada: Pre-1913; Economic History: Financial Markets and Institutions: U.S.,Canada: Pre-1913; Economic History: Transport; Trade; Energy; Technology; and Other Services: U.S.,Computer Software; Railroads and Other Surface Transportation; Economic History: Financial Markets and Institutions: U.S.,Trading volume
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+
+** Background and motivation
+
+
+** Supporting Ideas and hypothesis
+
+
+** Purpose, Relevance, and Contribution
+
+
+** Methodology
+
+
+** Results
+
+
+** Interesting findings and not categorized stuff
+
+
+** Critics
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+We develop a general equilibrium model in which stock prices of innovative firms exhibit "bubbles" during technological revolutions. In the model, the average productivity of a new technology is uncertain and subject to learning. During technological revolutions, the nature of this uncertainty changes from idiosyncratic to systematic. The resulting bubbles in stock prices are observable ex post but unpredictable ex ante, and they are most pronounced for technologies characterized by high uncertainty and fast adoption. We find empirical support for the model’s predictions in 1830-1861 and 1992-2005 when the railroad and Internet technologies spread in the United States. (JEL G12, L86, L92, N21, N22, N71, N72)
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+* References
+
+
+
+#+print_bibliography:
