@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       db24fe85-9afa-4dd2-b74b-b04bbe5043d0
+:END:
+#+title: #+title: Monetary Circuit
+
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+
+#+hugo_section: notes
+
+#+HUGO_TAGS: placeholder
+
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

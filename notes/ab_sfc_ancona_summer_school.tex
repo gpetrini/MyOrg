@@ -1,0 +1,521 @@
+% Created 2022-09-13 ter 14:27
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[top=3cm, bottom=2cm, left=3cm, right=2cm]{geometry}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage[theorems, skins]{tcolorbox}
+\usepackage[extrayear,uniquename=init,giveninits,justify,repeattitles,doi=false,isbn=false,url=true,maxcitenames=2,natbib=true,backend=biber]{biblatex}
+\addbibresource{/home/gpetrini/Org/zotero_refs.bib}
+\usepackage{url}
+\usepackage[cache=false]{minted}
+\usepackage[linktocpage,pdfstartview=FitH,colorlinks,
+linkcolor=blue,anchorcolor=blue,
+citecolor=blue,filecolor=blue,menucolor=blue,urlcolor=blue]{hyperref}
+\usepackage{attachfile}
+\usepackage{setspace}
+\usepackage{tikz}
+\author{Gabriel Petrini}
+\date{2022}
+\title{AB-SFC Ancona Summer School}
+\begin{document}
+
+\maketitle
+:ID:       5d7e6b7b-e8e8-4c2b-918d-9aa3c5734aea
+
+\section*{ABM: a tool for complex system - Gallegati}
+\label{sec:org8762c28}
+
+\begin{itemize}
+\item ABM generates system changes endogenously
+\begin{itemize}
+\item Adaptative evolving complex system
+\end{itemize}
+\item Focus on interaction rather than optmizing behaviour
+\item Emphasize opened and non-ergodic system
+\end{itemize}
+
+
+\section*{Introduction to R for ABM}
+\label{sec:orgf54ab53}
+
+\subsection*{Basic operations}
+\label{sec:org839d058}
+
+In R, \texttt{\%*\%} makes matriz multiplications.
+Product elements, by the other hand, is generated with \texttt{*}.
+
+\subsection*{Numerical solver}
+\label{sec:org9e4a3ee}
+
+
+
+\subsubsection*{Newton-type algorithm}
+\label{sec:org6ffedb0}
+
+In case of complex mathematical system, analytical solution is not possible.
+The alternative is to rely on numeric solution algorithms.
+
+The idea is that a very diffucult problem cam be solved approximating it with an easier one.
+Instead of the hard to solve non-linear problem, we can solve an easier linear problem using Taylor expansion (\(g(x) = f(x_{k}) + f'(x_{k})(x - x_{k})\)).
+Rearreaging, it is possible to find a proximation of \(f(x)\):
+
+\[ x_{t+ 1} = x_{k} -  \frac{F(x_{k})}{F'(x_{k})}\]
+
+This approach is limited, because the equation must be differentiable (at least once) and the derivative cannot be zero.
+In addition, it is a \textbf{linear} approach (in the nearboorhood of evaluation).
+
+
+\begin{enumerate}
+\item Specify an innitual guess (\(x_{k} = x_{0}\))
+\item Calculate the first step of the interation \(x_{k+ 1} = x_{k} - \frac{F(x_{k})}{F'(x_{k})}\)
+\item Check if \(|F(x_{k+1})| \leq \delta\)
+\begin{enumerate}
+\item To find the sollution, it should interact until the value of the function is close to zero.
+\end{enumerate}
+\end{enumerate}
+
+It is important to note that the initial guest is important.
+If there are more than one solution, the Newton method will only find one at a time (and not globally).
+
+\subsubsection*{The bisection method}
+\label{sec:org42b0445}
+
+
+\begin{enumerate}
+\item specify initual values \(x_{lower} \leq x_{upper}\) such as \(f(x^{lower}) < f(x^{upper})\)
+\item Compute the midpoint: \(x^{mid} = \frac{x^{lower} + x^{upper}}{2}\)
+\item Update the bound:
+\begin{enumerate}
+\item If \(f(x^{mid}) \cdot f(x^{upper}) < 0\) than \(x^{upper} = x^{mid}\). Do not change \(x^{lower}\)
+\item Otherwise \(x^{lower} = x^{mid}\). Do not change \(x^{upper}\)
+\end{enumerate}
+\item Calculate the value of the function is the midpoint: \(|f(x^{mid}| \leq \delta)\)
+\item If step 4 is true, get the final results, otherwise go back to step 2
+\end{enumerate}
+
+
+\begin{verbatim}
+[1] 2
+\end{verbatim}
+
+\subsubsection*{The secant method}
+\label{sec:org872615e}
+
+The ideia is that the \(f(x)\) is dificult to calculate.
+
+\section*{SFC modelling theory - Zezza}
+\label{sec:org1a7a1dc}
+
+\subsection*{A first principle}
+\label{sec:org466d982}
+
+\begin{itemize}
+\item Real wealth is accumulated over time with investment, and financial wealth (credit) with savings
+\begin{itemize}
+\item Must identify the sources of liquidity and expenditures and ensure that each payment from one sector is recorded as a receipts to other
+\end{itemize}
+\end{itemize}
+
+The SFC approach have some similarities with the \href{monetary_circuit.org}{Monetary Circuit} approach, however there are some drawbacks.
+For example, the latter does not includes capital goods payments or interest payment on loans.
+
+\subsection*{Principles of SFC}
+\label{sec:org08ea341}
+
+\begin{enumerate}
+\item Horizontal consistency
+\item Vertical consistency
+\item Flows-to-Stock consistency
+\item Stock (balance sheets) consistency
+\begin{enumerate}
+\item The financial liabilities of an agent of sector are the financial assets of some other agent or sector
+\item Net financial wealth for all sectores must be zero
+\item Wealth for the world as a whole is only composed of real assets
+\item Wealth for a single country is given by real wealth plus foreign assets, less foreign debt
+\end{enumerate}
+\item Stock-to-flows consistency
+\begin{enumerate}
+\item Stocks are accumulated for a purpose. So expenditure function must depend on accumulated wealth
+\begin{enumerate}
+\item Q: Does it implies the need to use New Cambridge equation?
+\item Otherwise, the stock will grow indefinetly
+\end{enumerate}
+\end{enumerate}
+\end{enumerate}
+
+If the model has a steady growth, all stock and flows must grow at same ratio.
+As a consequence, the ratios between variables will stabilize.
+We can look at stock-flow ratios for a economy to check (in)stability.
+
+\subsection*{SFC matrixes}
+\label{sec:org6165169}
+
+
+\subsubsection*{Transaction flow matrix}
+\label{sec:org75fcd6e}
+
+\begin{center}
+\begin{tabular}{lllllll}
+ & Households & Current Acc. (Firms) & Capital Acc. (Firms) & Banks & RoW & Total\\
+\hline
+\end{tabular}
+
+\end{center}
+
+\subsubsection*{Social Accounting Matrix}
+\label{sec:orgb80d04b}
+
+\begin{center}
+\begin{tabular}{lcccccccc}
+ & Production & Households & Non-financial firms & Financial firms & Government & RoW & Capital Accu. & Total\\
+\hline
+Production &  & \(C\) &  &  & \(G\) & \(E\) & \(I\) & \(Q\)\\
+Households & \(W\) &  & \(TRfh\) & \(TRbh\) & \(TRgh\) & \(TRwh\) &  & \(Y_{h}\)\\
+non-Financial firms & \(\Pi\) &  &  & \(TRbf\) & \(TRgf\) & \(TRwf\) &  & \(Y_{f}\)\\
+Financial firms &  & \(TRhb\) & \(TRfb\) &  & \(TRgb\) & \(TRwb\) &  & \(Yb\)\\
+Government & \(T\) & \(TRhg\) & \(TRfg\) & \(TRbg\) &  & \(TRwg\) &  & \(Y_{g}\)\\
+RoW & \(M\) & \(TRhw\) & \(TRfw\) & \(TRbw\) & \(TRbw\) &  &  & \(Y_{w}\)\\
+Capital Accu. &  & \(S_{h}\) & \(S_{f}\) & \(S_{b}\) & \(S_{g}\) & \(S_{w}\) &  & \(S\)\\
+Total & \(Q\) & \(Y_{h}\) & \(Y_{f}\) & \(Y_{b}\) & \(Y_{g}\) & \(Y_{w}\) & \(I\) & \\
+\end{tabular}
+
+\end{center}
+
+\subsubsection*{Flow of funds}
+\label{sec:orgb4d5397}
+
+\begin{center}
+\begin{tabular}{lllllll}
+ & Households & Non-financial firms & Financial firms & Government & RoW & Total\\
+\hline
+Real assets & \(I_h\) & \(I_f\) &  & \(I_{g}\) &  & \(+I\)\\
+Deposits &  &  &  &  &  & \\
+Loans &  &  &  &  &  & \\
+Government Bill &  &  &  &  &  & \\
+Equities &  &  &  &  &  & \\
+Foreign debt &  &  &  &  &  & \\
+Total & \(S_h\) & \(S_f\) & \(S_b\) & \(S_{g}\) & \(S_{w}\) & \(I\)\\
+\end{tabular}
+
+\end{center}
+
+\subsection*{Flows to stock consistency}
+\label{sec:orgc21ba7d}
+
+End-of-period o level of period is the previous stock value (at constant prices)  plus a flow
+
+\subsubsection*{Capital gains}
+\label{sec:orgb033ad5}
+
+At current prices, the change in sotck must take into account net capital gains.
+Start from the previous identity and multiply by the price:
+
+\[\Delta s_{t} = f_{t} + \Delta p\cdot s_{t-1}\]
+Dividing by the price
+\[\Delta S_{t} = F_{t} + \lambda\cdot S_{t-1}\]
+The last term defines net capital gains.\footnote{Zezza points out that the dot-com-crisis was a capital gains-led cycle.}
+
+
+\subsection*{Fundamental flows-to-stock links}
+\label{sec:org40a34cf}
+
+The stock of capital increases with net investment, for example:
+\begin{itemize}
+\item Household net financial assets increase with saving
+\item Government debt increases with government borrowing
+\item The net international position changes according to the current account balance
+\end{itemize}
+
+Note: According to Zezza, private sector have a positive balance due to uncertainty.
+In this sense, government bills is one of the safest assets.
+
+\subsection*{Closures}
+\label{sec:orga7a1b53}
+
+Once the SFC setup is complete, a nummber of model variables can be determined fom the identities implied by horizontal and vertical consistency.
+The determination of the residual variables will depend on the choice of a specific thepry: this part of model development is refered to as a ``closure''.
+
+\subsection*{Lab Exercise}
+\label{sec:org181566e}
+
+
+\subsubsection*{Recursive vs simultaneos models}
+\label{sec:orga71fb0e}
+
+
+The system:
+
+\begin{align*}
+ b_{11}y_{t} + b_{12}z_{t} & = f_{11}y_{t-1} + f_{12}z_{t-1} + \alpha_{1}\\
+ b_{21}y_{t} + b_{22}z_{t} & = f_{21}y_{t-1} + f_{22}z_{t-1} + \alpha_{2}
+\end{align*}
+Can be written in matrix form as
+\[BY_{t} = FY_{t-1} + A_{t}\]
+
+The model is recursive if the B matrix is triangular.
+In order to improve the chances to find a global solutions, modeling softwares rearrange model equations looking for triangular submatrices of B.
+
+Normaly, software try to make matrix \(B\) triangular.
+If it is not, implement interative methods.
+
+\subsubsection*{Model's structure}
+\label{sec:org222458c}
+
+
+\begin{center}
+\begin{tabular}{lccccccc}
+\hline
+ & Production & Workers & Capitalists & Firms (current) & Firms (Capital) & Banks & Total\\
+\hline
+Wages & \(-WB\) & \(+WB\) &  &  &  &  & 0\\
+Net profits & \(-PR\) &  &  & \(+PR\) &  &  & 0\\
+Depreciation & \(-DEP\) &  &  & \(+DEP\) &  &  & 0\\
+\hline
+GDP (income) & \([GDP]\) &  &  &  &  &  & \([GDP]\)\\
+\hline
+Interest on bonds &  &  & \(+i\cdot B_{c}\) & \(-i\cdot B\) &  & \(+i\cdot B_{b}\) & 0\\
+Firms Dividends &  &  & \(+DIV_{f}\) & \(-DIV_{f}\) &  &  & 0\\
+Bank Dividends &  &  & \(+DIV_{b}\) &  &  & \(-DIV_{b}\) & 0\\
+\hline
+Consumption & \(+C\) & \(C_{w}\) & \(C_{c}\) &  &  &  & 0\\
+Investment & \(+I\) &  &  &  & \(-I\) &  & \\
+Depreciation &  &  &  & \(-DEP\) & \(+DEP\) &  & \\
+\hline
+Change in bank deposits &  &  & \(-\Delta D\) &  &  & \(+\Delta D\) & \\
+Change in bonds &  &  & \(-\Delta B_{c}\) & \(+\Delta B_{f}\) &  & \(-\Delta B_{b}\) & \\
+\hline
+Total & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\end{tabular}
+
+\end{center}
+
+Note: depreciation is repeated twice in the flow of funds matrix.
+
+Assumptions:
+\begin{itemize}
+\item Assuming only bonds and money (banks deposits created by the banks)
+\begin{itemize}
+\item Firms finance investment by issuing bonds, demanded by banks and capitalists
+\end{itemize}
+\item Consumers do not save; so only capitalists are abble to buy bonds
+\item All profits are distrubuted to the owners of the firms
+\begin{itemize}
+\item There is no equities for simplicity
+\end{itemize}
+\item Income distribution will be exogenous
+\item 
+\end{itemize}
+
+
+\begin{center}
+\begin{tabular}{lccccc}
+\hline
+ & Workers & Capitalists & Firms & Banks & Total\\
+\hline
+Real capital &  &  & \(+K\) &  & \(+K\)\\
+Deposits &  & \(+D\) &  & \(-D\) & 0\\
+Bonds &  & \(+B_{f} + B_{b}\) & \(-B_{f}\) & \(-B_b\) & 0\\
+\hline
+Total & 0 & \(V_{c}\) & 0 & 0 & \(+K\)\\
+\hline
+\end{tabular}
+
+\end{center}
+
+As a consequence of balance-sheet, capitalists hold all the stock of real capital by means of bank deposits and bonds.
+
+\paragraph*{Identities}
+\label{sec:org17f67db}
+
+\begin{equation*}
+\begin{align*}
+ WB + PR + DEP & = Y + C + I\\
+ C_{c}+ S_{c} & = iB_{c} + DIV_{f} + DIV_{b}\\
+S_{c} & = \Delta D + \Delta B_{c}\\
+DIV_{f} & = PR - iB\\
+\Delta B & = I - DEP\\
+DIV_{b} & = iB_{b}\\
+\Delta D & = \Delta B_{b}
+\end{align*}
+\end{equation*}
+
+\paragraph*{Equilibrium}
+\label{sec:org68994e4}
+
+\begin{description}
+\item[{Good markets}] Investment-savings
+\item[{Financial markets}] Bonds and bank deposits (hidden equation)
+\end{description}
+
+\subsubsection*{Code}
+\label{sec:orge158ee7}
+\paragraph*{Libraries}
+\label{sec:orgbae0673}
+
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=]{r}
+library(sfcr)
+library(ggraph)
+\end{minted}
+
+Carregando pacotes exigidos: ggplot2
+
+\paragraph*{Equations}
+\label{sec:orgfa94973}
+
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=]{r}
+eqs <- sfcr::sfcr_set(
+               y ~ cons + i,
+               pr ~  y - wb - dep,
+               cw ~ wb,
+               sc ~ ibc + divf + divb - cc,
+               divf ~ pr - ibb,
+               divb ~ ibb,
+               yc ~ ibc + divf + divb,
+               ibc ~ r*bc[-1],
+               ibb ~ r*bb[-1],
+               cons ~ cw + cc,
+               wb ~ wshare * y,
+
+               ## vc ~ d + bc,
+               k ~ k[-1] + i  - depr*k[-1],
+               dep ~ depr*k[-1],
+               vc ~ vc[-1] + sc,
+
+               cc ~ pc1*yc + pc2*vc[-1],
+               b ~ b[-1] + i - dep,
+
+               ## Portfolio decision
+               bc ~ bc[-1] - bondssh*sc,
+               bb ~ b - bc,
+               d ~ bb,
+               bondssh ~ 0.8
+
+             )
+\end{minted}
+
+\paragraph*{Exogenous parameters}
+\label{sec:org50837d9}
+
+This is the initial calibration of the model.
+To do so, it is possible to choose a scale value (in this case, GDP).
+
+
+\begin{center}
+\begin{tabular}{lccccccc}
+\hline
+ & Production & Workers & Capitalists & Firms (current) & Firms (Capital) & Banks & Total\\
+\hline
+Wages & -60 (endog) & \(+WB\) &  &  &  &  & 0\\
+Net profits & -20 (residual) &  &  & \(+PR\) &  &  & 0\\
+Depreciation & -20 &  &  & \(+DEP\) &  &  & 0\\
+\hline
+GDP (income) & 100 (exog) &  &  &  &  &  & \([GDP]\)\\
+\hline
+Interest on bonds &  &  & \(+i\cdot B_{c}\) & \(-i\cdot B\) &  & \(+i\cdot B_{b}\) & 0\\
+Firms Dividends &  &  & \(+DIV_{f}\) & \(-DIV_{f}\) &  &  & 0\\
+Bank Dividends &  &  & \(+DIV_{b}\) &  &  & \(-DIV_{b}\) & 0\\
+\hline
+Consumption & \(+C\) & \(C_{w}\) & \(C_{c}\) &  &  &  & 0\\
+Investment & \(+I\) &  &  &  & \(-I\) &  & \\
+Depreciation &  &  &  & \(-DEP\) & \(+DEP\) &  & \\
+\hline
+Change in bank deposits &  &  & \(-\Delta D\) &  &  & \(+\Delta D\) & \\
+Change in bonds &  &  & \(-\Delta B_{c}\) & \(+\Delta B_{f}\) &  & \(-\Delta B_{b}\) & \\
+\hline
+Total & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\end{tabular}
+
+\end{center}
+
+
+\begin{center}
+\begin{tabular}{lccccc}
+\hline
+ & Workers & Capitalists & Firms & Banks & Total\\
+\hline
+Real capital &  &  & 100 (exog) &  & \(+K\)\\
+Deposits &  & 20 (residual) &  & -20 & 0\\
+Bonds &  & 80 (assuming fix share) & -100 (endog) & 20 & 0\\
+\hline
+Total & 0 & 100 (endog) & 0 & 0 & \(+K\)\\
+\hline
+\end{tabular}
+
+\end{center}
+
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=]{r}
+external <- sfcr::sfcr_set(
+                    y0 ~ 100,
+                    depr ~ 0.2,
+                    wshare ~ 0.6,
+                    pc1 ~ 0.25,
+                    pc2 ~ 0.15, ## adds up
+
+                    # Exogenous
+                    i ~ 20, ## Because of time constraints
+                    r ~ 0.1
+)
+
+
+init <- sfcr::sfcr_set(
+                    # Lagged values
+                    k ~ 100,
+                    vc ~ 100,
+                    bc ~ 80,
+                    b ~ 100,
+                  )
+\end{minted}
+
+\paragraph*{Baseline solution}
+\label{sec:org3f3f947}
+
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=]{r}
+growth <- sfcr::sfcr_baseline(
+  equations = eqs,
+  external = external,
+  periods = 10,
+  method = "Broyden"
+)
+as.data.frame(sfcr_get_blocks(growth))
+\end{minted}
+
+   endogenous block
+1     bondssh     1
+2         dep     2
+3           b     3
+4           k     4
+5         ibb     5
+6         ibc     6
+7        divb     7
+8           y     8
+9          pr     8
+10         cw     8
+11       divf     8
+12         yc     8
+13       cons     8
+14         wb     8
+15         cc     8
+16         sc     9
+17         bc    10
+18         bb    11
+19          d    12
+20         vc    13
+
+\href{uncertanty.org}{Uncertanty}
+\end{document}

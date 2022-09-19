@@ -1,0 +1,1465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-09-13 ter 14:28 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AB-SFC Ancona Summer School</title>
+<meta name="author" content="Gabriel Petrini" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">AB-SFC Ancona Summer School</h1>
+<p>
+:ID:       5d7e6b7b-e8e8-4c2b-918d-9aa3c5734aea
+</p>
+
+<div id="outline-container-org7dff1e8" class="outline-2">
+<h2 id="org7dff1e8">ABM: a tool for <a href="complex_system.html#ID-4002418c-d54c-4355-857b-2dfc2444b779">Complex System</a> - Gallegati</h2>
+<div class="outline-text-2" id="text-org7dff1e8">
+<ul class="org-ul">
+<li>ABM generates system changes endogenously
+<ul class="org-ul">
+<li>Adaptative evolving complex system</li>
+</ul></li>
+<li>Focus on interaction rather than optmizing behaviour</li>
+<li>Emphasize opened and non-ergodic system</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgc54a21b" class="outline-2">
+<h2 id="orgc54a21b">Introduction to R for ABM</h2>
+<div class="outline-text-2" id="text-orgc54a21b">
+</div>
+<div id="outline-container-org26d0348" class="outline-3">
+<h3 id="org26d0348">Basic operations</h3>
+<div class="outline-text-3" id="text-org26d0348">
+<p>
+In R, <code>%*%</code> makes matriz multiplications.
+Product elements, by the other hand, is generated with <code>*</code>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org912e22b" class="outline-3">
+<h3 id="org912e22b">Numerical solver</h3>
+<div class="outline-text-3" id="text-org912e22b">
+</div>
+<div id="outline-container-orgda9ad2b" class="outline-4">
+<h4 id="orgda9ad2b">Newton-type algorithm</h4>
+<div class="outline-text-4" id="text-orgda9ad2b">
+<p>
+In case of complex mathematical system, analytical solution is not possible.
+The alternative is to rely on numeric solution algorithms.
+</p>
+
+<p>
+The idea is that a very diffucult problem cam be solved approximating it with an easier one.
+Instead of the hard to solve non-linear problem, we can solve an easier linear problem using Taylor expansion (\(g(x) = f(x_{k}) + f'(x_{k})(x - x_{k})\)).
+Rearreaging, it is possible to find a proximation of \(f(x)\):
+</p>
+
+<p>
+\[ x_{t+ 1} = x_{k} -  \frac{F(x_{k})}{F'(x_{k})}\]
+</p>
+
+<p>
+This approach is limited, because the equation must be differentiable (at least once) and the derivative cannot be zero.
+In addition, it is a <b>linear</b> approach (in the nearboorhood of evaluation).
+</p>
+
+
+<ol class="org-ol">
+<li>Specify an innitual guess (\(x_{k} = x_{0}\))</li>
+<li>Calculate the first step of the interation \(x_{k+ 1} = x_{k} - \frac{F(x_{k})}{F'(x_{k})}\)</li>
+<li>Check if \(|F(x_{k+1})| \leq \delta\)
+<ol class="org-ol">
+<li>To find the sollution, it should interact until the value of the function is close to zero.</li>
+</ol></li>
+</ol>
+
+<p>
+It is important to note that the initial guest is important.
+If there are more than one solution, the Newton method will only find one at a time (and not globally).
+</p>
+</div>
+</div>
+
+<div id="outline-container-org477c83a" class="outline-4">
+<h4 id="org477c83a">The bisection method</h4>
+<div class="outline-text-4" id="text-org477c83a">
+<ol class="org-ol">
+<li>specify initual values \(x_{lower} \leq x_{upper}\) such as \(f(x^{lower}) < f(x^{upper})\)</li>
+<li>Compute the midpoint: \(x^{mid} = \frac{x^{lower} + x^{upper}}{2}\)</li>
+<li>Update the bound:
+<ol class="org-ol">
+<li>If \(f(x^{mid}) \cdot f(x^{upper}) < 0\) than \(x^{upper} = x^{mid}\). Do not change \(x^{lower}\)</li>
+<li>Otherwise \(x^{lower} = x^{mid}\). Do not change \(x^{upper}\)</li>
+</ol></li>
+<li>Calculate the value of the function is the midpoint: \(|f(x^{mid}| \leq \delta)\)</li>
+<li>If step 4 is true, get the final results, otherwise go back to step 2</li>
+</ol>
+
+
+<pre class="example">
+[1] 2
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orgd158395" class="outline-4">
+<h4 id="orgd158395">The secant method</h4>
+<div class="outline-text-4" id="text-orgd158395">
+<p>
+The ideia is that the \(f(x)\) is dificult to calculate.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org4df7dec" class="outline-2">
+<h2 id="org4df7dec">SFC modelling theory - Zezza</h2>
+<div class="outline-text-2" id="text-org4df7dec">
+</div>
+<div id="outline-container-org52c0565" class="outline-3">
+<h3 id="org52c0565">A first principle</h3>
+<div class="outline-text-3" id="text-org52c0565">
+<ul class="org-ul">
+<li>Real wealth is accumulated over time with investment, and financial wealth (credit) with savings
+<ul class="org-ul">
+<li>Must identify the sources of liquidity and expenditures and ensure that each payment from one sector is recorded as a receipts to other</li>
+</ul></li>
+</ul>
+
+<p>
+The SFC approach have some similarities with the <a href="monetary_circuit.html#ID-db24fe85-9afa-4dd2-b74b-b04bbe5043d0">Monetary Circuit</a> approach, however there are some drawbacks.
+For example, the latter does not includes capital goods payments or interest payment on loans.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7914b01" class="outline-3">
+<h3 id="org7914b01">Principles of SFC</h3>
+<div class="outline-text-3" id="text-org7914b01">
+<ol class="org-ol">
+<li>Horizontal consistency</li>
+<li>Vertical consistency</li>
+<li>Flows-to-Stock consistency</li>
+<li>Stock (balance sheets) consistency
+<ol class="org-ol">
+<li>The financial liabilities of an agent of sector are the financial assets of some other agent or sector</li>
+<li>Net financial wealth for all sectores must be zero</li>
+<li>Wealth for the world as a whole is only composed of real assets</li>
+<li>Wealth for a single country is given by real wealth plus foreign assets, less foreign debt</li>
+</ol></li>
+<li>Stock-to-flows consistency
+<ol class="org-ol">
+<li>Stocks are accumulated for a purpose. So expenditure function must depend on accumulated wealth
+<ol class="org-ol">
+<li>Q: Does it implies the need to use New Cambridge equation?</li>
+<li>Otherwise, the stock will grow indefinetly</li>
+</ol></li>
+</ol></li>
+</ol>
+
+<p>
+If the model has a steady growth, all stock and flows must grow at same ratio.
+As a consequence, the ratios between variables will stabilize.
+We can look at stock-flow ratios for a economy to check (in)stability.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0952f95" class="outline-3">
+<h3 id="org0952f95">SFC matrixes</h3>
+<div class="outline-text-3" id="text-org0952f95">
+</div>
+<div id="outline-container-org216146f" class="outline-4">
+<h4 id="org216146f">Transaction flow matrix</h4>
+<div class="outline-text-4" id="text-org216146f">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Households</td>
+<td class="org-left">Current Acc. (Firms)</td>
+<td class="org-left">Capital Acc. (Firms)</td>
+<td class="org-left">Banks</td>
+<td class="org-left">RoW</td>
+<td class="org-left">Total</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org2762428" class="outline-4">
+<h4 id="org2762428">Social Accounting Matrix</h4>
+<div class="outline-text-4" id="text-org2762428">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-center" />
+
+<col  class="org-center" />
+
+<col  class="org-center" />
+
+<col  class="org-center" />
+
+<col  class="org-center" />
+
+<col  class="org-center" />
+
+<col  class="org-center" />
+
+<col  class="org-center" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-center">Production</th>
+<th scope="col" class="org-center">Households</th>
+<th scope="col" class="org-center">Non-financial firms</th>
+<th scope="col" class="org-center">Financial firms</th>
+<th scope="col" class="org-center">Government</th>
+<th scope="col" class="org-center">RoW</th>
+<th scope="col" class="org-center">Capital Accu.</th>
+<th scope="col" class="org-center">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Production</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(C\)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(G\)</td>
+<td class="org-center">\(E\)</td>
+<td class="org-center">\(I\)</td>
+<td class="org-center">\(Q\)</td>
+</tr>
+
+<tr>
+<td class="org-left">Households</td>
+<td class="org-center">\(W\)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(TRfh\)</td>
+<td class="org-center">\(TRbh\)</td>
+<td class="org-center">\(TRgh\)</td>
+<td class="org-center">\(TRwh\)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(Y_{h}\)</td>
+</tr>
+
+<tr>
+<td class="org-left">non-Financial firms</td>
+<td class="org-center">\(\Pi\)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(TRbf\)</td>
+<td class="org-center">\(TRgf\)</td>
+<td class="org-center">\(TRwf\)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(Y_{f}\)</td>
+</tr>
+
+<tr>
+<td class="org-left">Financial firms</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(TRhb\)</td>
+<td class="org-center">\(TRfb\)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(TRgb\)</td>
+<td class="org-center">\(TRwb\)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(Yb\)</td>
+</tr>
+
+<tr>
+<td class="org-left">Government</td>
+<td class="org-center">\(T\)</td>
+<td class="org-center">\(TRhg\)</td>
+<td class="org-center">\(TRfg\)</td>
+<td class="org-center">\(TRbg\)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(TRwg\)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(Y_{g}\)</td>
+</tr>
+
+<tr>
+<td class="org-left">RoW</td>
+<td class="org-center">\(M\)</td>
+<td class="org-center">\(TRhw\)</td>
+<td class="org-center">\(TRfw\)</td>
+<td class="org-center">\(TRbw\)</td>
+<td class="org-center">\(TRbw\)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(Y_{w}\)</td>
+</tr>
+
+<tr>
+<td class="org-left">Capital Accu.</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(S_{h}\)</td>
+<td class="org-center">\(S_{f}\)</td>
+<td class="org-center">\(S_{b}\)</td>
+<td class="org-center">\(S_{g}\)</td>
+<td class="org-center">\(S_{w}\)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(S\)</td>
+</tr>
+
+<tr>
+<td class="org-left">Total</td>
+<td class="org-center">\(Q\)</td>
+<td class="org-center">\(Y_{h}\)</td>
+<td class="org-center">\(Y_{f}\)</td>
+<td class="org-center">\(Y_{b}\)</td>
+<td class="org-center">\(Y_{g}\)</td>
+<td class="org-center">\(Y_{w}\)</td>
+<td class="org-center">\(I\)</td>
+<td class="org-center">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org490a4db" class="outline-4">
+<h4 id="org490a4db">Flow of funds</h4>
+<div class="outline-text-4" id="text-org490a4db">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">Households</th>
+<th scope="col" class="org-left">Non-financial firms</th>
+<th scope="col" class="org-left">Financial firms</th>
+<th scope="col" class="org-left">Government</th>
+<th scope="col" class="org-left">RoW</th>
+<th scope="col" class="org-left">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Real assets</td>
+<td class="org-left">\(I_h\)</td>
+<td class="org-left">\(I_f\)</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">\(I_{g}\)</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">\(+I\)</td>
+</tr>
+
+<tr>
+<td class="org-left">Deposits</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Loans</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Government Bill</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Equities</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Foreign debt</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Total</td>
+<td class="org-left">\(S_h\)</td>
+<td class="org-left">\(S_f\)</td>
+<td class="org-left">\(S_b\)</td>
+<td class="org-left">\(S_{g}\)</td>
+<td class="org-left">\(S_{w}\)</td>
+<td class="org-left">\(I\)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb4e5c52" class="outline-3">
+<h3 id="orgb4e5c52">Flows to stock consistency</h3>
+<div class="outline-text-3" id="text-orgb4e5c52">
+<p>
+End-of-period o level of period is the previous stock value (at constant prices)  plus a flow
+</p>
+</div>
+
+<div id="outline-container-orgf0864dc" class="outline-4">
+<h4 id="orgf0864dc">Capital gains</h4>
+<div class="outline-text-4" id="text-orgf0864dc">
+<p>
+At current prices, the change in sotck must take into account net capital gains.
+Start from the previous identity and multiply by the price:
+</p>
+
+<p>
+\[\Delta s_{t} = f_{t} + \Delta p\cdot s_{t-1}\]
+Dividing by the price
+\[\Delta S_{t} = F_{t} + \lambda\cdot S_{t-1}\]
+The last term defines net capital gains.<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup>
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orge6133bd" class="outline-3">
+<h3 id="orge6133bd">Fundamental flows-to-stock links</h3>
+<div class="outline-text-3" id="text-orge6133bd">
+<p>
+The stock of capital increases with net investment, for example:
+</p>
+<ul class="org-ul">
+<li>Household net financial assets increase with saving</li>
+<li>Government debt increases with government borrowing</li>
+<li>The net international position changes according to the current account balance</li>
+</ul>
+
+<p>
+Note: According to Zezza, private sector have a positive balance due to <a href="uncertanty.html#ID-4a226c14-c204-4493-b5f9-e06aa06e2954">Uncertanty</a>.
+In this sense, government bills is one of the safest assets.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2185b0d" class="outline-3">
+<h3 id="org2185b0d">Closures</h3>
+<div class="outline-text-3" id="text-org2185b0d">
+<p>
+Once the SFC setup is complete, a nummber of model variables can be determined fom the identities implied by horizontal and vertical consistency.
+The determination of the residual variables will depend on the choice of a specific thepry: this part of model development is refered to as a &ldquo;closure&rdquo;.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga1ed902" class="outline-3">
+<h3 id="orga1ed902">Lab Exercise</h3>
+<div class="outline-text-3" id="text-orga1ed902">
+</div>
+<div id="outline-container-orgb140133" class="outline-4">
+<h4 id="orgb140133">Recursive vs simultaneos models</h4>
+<div class="outline-text-4" id="text-orgb140133">
+<p>
+The system:
+</p>
+
+\begin{align*}
+ b_{11}y_{t} + b_{12}z_{t} & = f_{11}y_{t-1} + f_{12}z_{t-1} + \alpha_{1}\\
+ b_{21}y_{t} + b_{22}z_{t} & = f_{21}y_{t-1} + f_{22}z_{t-1} + \alpha_{2}
+\end{align*}
+<p>
+Can be written in matrix form as
+\[BY_{t} = FY_{t-1} + A_{t}\]
+</p>
+
+<p>
+The model is recursive if the B matrix is triangular.
+In order to improve the chances to find a global solutions, modeling softwares rearrange model equations looking for triangular submatrices of B.
+</p>
+
+<p>
+Normaly, software try to make matrix \(B\) triangular.
+If it is not, implement interative methods.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb0b6251" class="outline-4">
+<h4 id="orgb0b6251">Model&rsquo;s structure</h4>
+<div class="outline-text-4" id="text-orgb0b6251">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-center" />
+
+<col  class="org-center" />
+
+<col  class="org-center" />
+
+<col  class="org-center" />
+
+<col  class="org-center" />
+
+<col  class="org-center" />
+
+<col  class="org-center" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-center">Production</th>
+<th scope="col" class="org-center">Workers</th>
+<th scope="col" class="org-center">Capitalists</th>
+<th scope="col" class="org-center">Firms (current)</th>
+<th scope="col" class="org-center">Firms (Capital)</th>
+<th scope="col" class="org-center">Banks</th>
+<th scope="col" class="org-center">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Wages</td>
+<td class="org-center">\(-WB\)</td>
+<td class="org-center">\(+WB\)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Net profits</td>
+<td class="org-center">\(-PR\)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(+PR\)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Depreciation</td>
+<td class="org-center">\(-DEP\)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(+DEP\)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">0</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">GDP (income)</td>
+<td class="org-center">\([GDP]\)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\([GDP]\)</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Interest on bonds</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(+i\cdot B_{c}\)</td>
+<td class="org-center">\(-i\cdot B\)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(+i\cdot B_{b}\)</td>
+<td class="org-center">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Firms Dividends</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(+DIV_{f}\)</td>
+<td class="org-center">\(-DIV_{f}\)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Bank Dividends</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(+DIV_{b}\)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(-DIV_{b}\)</td>
+<td class="org-center">0</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Consumption</td>
+<td class="org-center">\(+C\)</td>
+<td class="org-center">\(C_{w}\)</td>
+<td class="org-center">\(C_{c}\)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Investment</td>
+<td class="org-center">\(+I\)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(-I\)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Depreciation</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(-DEP\)</td>
+<td class="org-center">\(+DEP\)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Change in bank deposits</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(-\Delta D\)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(+\Delta D\)</td>
+<td class="org-center">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Change in bonds</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(-\Delta B_{c}\)</td>
+<td class="org-center">\(+\Delta B_{f}\)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(-\Delta B_{b}\)</td>
+<td class="org-center">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Total</td>
+<td class="org-center">0</td>
+<td class="org-center">0</td>
+<td class="org-center">0</td>
+<td class="org-center">0</td>
+<td class="org-center">0</td>
+<td class="org-center">0</td>
+<td class="org-center">0</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Note: depreciation is repeated twice in the flow of funds matrix.
+</p>
+
+<p>
+Assumptions:
+</p>
+<ul class="org-ul">
+<li>Assuming only bonds and money (banks deposits created by the banks)
+<ul class="org-ul">
+<li>Firms finance investment by issuing bonds, demanded by banks and capitalists</li>
+</ul></li>
+<li>Consumers do not save; so only capitalists are abble to buy bonds</li>
+<li>All profits are distrubuted to the owners of the firms
+<ul class="org-ul">
+<li>There is no equities for simplicity</li>
+</ul></li>
+<li>Income distribution will be exogenous</li>
+<li></li>
+</ul>
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-center" />
+
+<col  class="org-center" />
+
+<col  class="org-center" />
+
+<col  class="org-center" />
+
+<col  class="org-center" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-center">Workers</th>
+<th scope="col" class="org-center">Capitalists</th>
+<th scope="col" class="org-center">Firms</th>
+<th scope="col" class="org-center">Banks</th>
+<th scope="col" class="org-center">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Real capital</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(+K\)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(+K\)</td>
+</tr>
+
+<tr>
+<td class="org-left">Deposits</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(+D\)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(-D\)</td>
+<td class="org-center">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Bonds</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(+B_{f} + B_{b}\)</td>
+<td class="org-center">\(-B_{f}\)</td>
+<td class="org-center">\(-B_b\)</td>
+<td class="org-center">0</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Total</td>
+<td class="org-center">0</td>
+<td class="org-center">\(V_{c}\)</td>
+<td class="org-center">0</td>
+<td class="org-center">0</td>
+<td class="org-center">\(+K\)</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+As a consequence of balance-sheet, capitalists hold all the stock of real capital by means of bank deposits and bonds.
+</p>
+</div>
+
+<div id="outline-container-orgff685cb" class="outline-5">
+<h5 id="orgff685cb">Identities</h5>
+<div class="outline-text-5" id="text-orgff685cb">
+\begin{equation*}
+\begin{align*}
+ WB + PR + DEP & = Y + C + I\\
+ C_{c}+ S_{c} & = iB_{c} + DIV_{f} + DIV_{b}\\
+S_{c} & = \Delta D + \Delta B_{c}\\
+DIV_{f} & = PR - iB\\
+\Delta B & = I - DEP\\
+DIV_{b} & = iB_{b}\\
+\Delta D & = \Delta B_{b}
+\end{align*}
+\end{equation*}
+</div>
+</div>
+
+<div id="outline-container-orgb3757d9" class="outline-5">
+<h5 id="orgb3757d9">Equilibrium</h5>
+<div class="outline-text-5" id="text-orgb3757d9">
+<dl class="org-dl">
+<dt>Good markets</dt><dd>Investment-savings</dd>
+<dt>Financial markets</dt><dd>Bonds and bank deposits (hidden equation)</dd>
+</dl>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org61f9c05" class="outline-4">
+<h4 id="org61f9c05">Code</h4>
+<div class="outline-text-4" id="text-org61f9c05">
+</div>
+
+<div id="outline-container-orgd659b0f" class="outline-5">
+<h5 id="orgd659b0f">Libraries</h5>
+<div class="outline-text-5" id="text-orgd659b0f">
+<div class="org-src-container">
+<pre class="src src-R"><span style="color: #8be9fd;">library</span><span style="color: #8be9fd;">(</span>sfcr<span style="color: #8be9fd;">)</span>
+<span style="color: #8be9fd;">library</span><span style="color: #8be9fd;">(</span>ggraph<span style="color: #8be9fd;">)</span>
+</pre>
+</div>
+
+<p>
+Carregando pacotes exigidos: ggplot2
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga7caef5" class="outline-5">
+<h5 id="orga7caef5">Equations</h5>
+<div class="outline-text-5" id="text-orga7caef5">
+<div class="org-src-container">
+<pre class="src src-R">eqs <span style="color: #8be9fd;">&lt;-</span> sfcr::<span style="color: #50fa7b;">sfcr_set</span><span style="color: #8be9fd;">(</span>
+               y ~ cons <span style="color: #8be9fd;">+</span> i,
+               pr ~  y <span style="color: #8be9fd;">-</span> wb <span style="color: #8be9fd;">-</span> dep,
+               cw ~ wb,
+               sc ~ ibc <span style="color: #8be9fd;">+</span> divf <span style="color: #8be9fd;">+</span> divb <span style="color: #8be9fd;">-</span> cc,
+               divf ~ pr <span style="color: #8be9fd;">-</span> ibb,
+               divb ~ ibb,
+               yc ~ ibc <span style="color: #8be9fd;">+</span> divf <span style="color: #8be9fd;">+</span> divb,
+               ibc ~ r<span style="color: #8be9fd;">*</span>bc<span style="color: #8be9fd;">[</span><span style="color: #8be9fd;">-</span><span style="color: #bd93f9; font-weight: bold;">1</span><span style="color: #8be9fd;">]</span>,
+               ibb ~ r<span style="color: #8be9fd;">*</span>bb<span style="color: #8be9fd;">[</span><span style="color: #8be9fd;">-</span><span style="color: #bd93f9; font-weight: bold;">1</span><span style="color: #8be9fd;">]</span>,
+               cons ~ cw <span style="color: #8be9fd;">+</span> cc,
+               wb ~ wshare <span style="color: #8be9fd;">*</span> y,
+
+               <span style="color: #6272a4;">## </span><span style="color: #6272a4;">vc ~ d + bc,</span>
+               k ~ k<span style="color: #8be9fd;">[</span><span style="color: #8be9fd;">-</span><span style="color: #bd93f9; font-weight: bold;">1</span><span style="color: #8be9fd;">]</span> <span style="color: #8be9fd;">+</span> i  <span style="color: #8be9fd;">-</span> depr<span style="color: #8be9fd;">*</span>k<span style="color: #8be9fd;">[</span><span style="color: #8be9fd;">-</span><span style="color: #bd93f9; font-weight: bold;">1</span><span style="color: #8be9fd;">]</span>,
+               dep ~ depr<span style="color: #8be9fd;">*</span>k<span style="color: #8be9fd;">[</span><span style="color: #8be9fd;">-</span><span style="color: #bd93f9; font-weight: bold;">1</span><span style="color: #8be9fd;">]</span>,
+               vc ~ vc<span style="color: #8be9fd;">[</span><span style="color: #8be9fd;">-</span><span style="color: #bd93f9; font-weight: bold;">1</span><span style="color: #8be9fd;">]</span> <span style="color: #8be9fd;">+</span> sc,
+
+               cc ~ pc1<span style="color: #8be9fd;">*</span>yc <span style="color: #8be9fd;">+</span> pc2<span style="color: #8be9fd;">*</span>vc<span style="color: #8be9fd;">[</span><span style="color: #8be9fd;">-</span><span style="color: #bd93f9; font-weight: bold;">1</span><span style="color: #8be9fd;">]</span>,
+               b ~ b<span style="color: #8be9fd;">[</span><span style="color: #8be9fd;">-</span><span style="color: #bd93f9; font-weight: bold;">1</span><span style="color: #8be9fd;">]</span> <span style="color: #8be9fd;">+</span> i <span style="color: #8be9fd;">-</span> dep,
+
+               <span style="color: #6272a4;">## </span><span style="color: #6272a4;">Portfolio decision</span>
+               bc ~ bc<span style="color: #8be9fd;">[</span><span style="color: #8be9fd;">-</span><span style="color: #bd93f9; font-weight: bold;">1</span><span style="color: #8be9fd;">]</span> <span style="color: #8be9fd;">-</span> bondssh<span style="color: #8be9fd;">*</span>sc,
+               bb ~ b <span style="color: #8be9fd;">-</span> bc,
+               d ~ bb,
+               bondssh ~ <span style="color: #bd93f9; font-weight: bold;">0.8</span>
+
+             <span style="color: #8be9fd;">)</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org90d5ec8" class="outline-5">
+<h5 id="org90d5ec8">Exogenous parameters</h5>
+<div class="outline-text-5" id="text-org90d5ec8">
+<p>
+This is the initial calibration of the model.
+To do so, it is possible to choose a scale value (in this case, GDP).
+</p>
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-center" />
+
+<col  class="org-center" />
+
+<col  class="org-center" />
+
+<col  class="org-center" />
+
+<col  class="org-center" />
+
+<col  class="org-center" />
+
+<col  class="org-center" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-center">Production</th>
+<th scope="col" class="org-center">Workers</th>
+<th scope="col" class="org-center">Capitalists</th>
+<th scope="col" class="org-center">Firms (current)</th>
+<th scope="col" class="org-center">Firms (Capital)</th>
+<th scope="col" class="org-center">Banks</th>
+<th scope="col" class="org-center">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Wages</td>
+<td class="org-center">-60 (endog)</td>
+<td class="org-center">\(+WB\)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Net profits</td>
+<td class="org-center">-20 (residual)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(+PR\)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Depreciation</td>
+<td class="org-center">-20</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(+DEP\)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">0</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">GDP (income)</td>
+<td class="org-center">100 (exog)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\([GDP]\)</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Interest on bonds</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(+i\cdot B_{c}\)</td>
+<td class="org-center">\(-i\cdot B\)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(+i\cdot B_{b}\)</td>
+<td class="org-center">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Firms Dividends</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(+DIV_{f}\)</td>
+<td class="org-center">\(-DIV_{f}\)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Bank Dividends</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(+DIV_{b}\)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(-DIV_{b}\)</td>
+<td class="org-center">0</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Consumption</td>
+<td class="org-center">\(+C\)</td>
+<td class="org-center">\(C_{w}\)</td>
+<td class="org-center">\(C_{c}\)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Investment</td>
+<td class="org-center">\(+I\)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(-I\)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Depreciation</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(-DEP\)</td>
+<td class="org-center">\(+DEP\)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Change in bank deposits</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(-\Delta D\)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(+\Delta D\)</td>
+<td class="org-center">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Change in bonds</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(-\Delta B_{c}\)</td>
+<td class="org-center">\(+\Delta B_{f}\)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(-\Delta B_{b}\)</td>
+<td class="org-center">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Total</td>
+<td class="org-center">0</td>
+<td class="org-center">0</td>
+<td class="org-center">0</td>
+<td class="org-center">0</td>
+<td class="org-center">0</td>
+<td class="org-center">0</td>
+<td class="org-center">0</td>
+</tr>
+</tbody>
+</table>
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-center" />
+
+<col  class="org-center" />
+
+<col  class="org-center" />
+
+<col  class="org-center" />
+
+<col  class="org-center" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-center">Workers</th>
+<th scope="col" class="org-center">Capitalists</th>
+<th scope="col" class="org-center">Firms</th>
+<th scope="col" class="org-center">Banks</th>
+<th scope="col" class="org-center">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Real capital</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">100 (exog)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">\(+K\)</td>
+</tr>
+
+<tr>
+<td class="org-left">Deposits</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">20 (residual)</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">-20</td>
+<td class="org-center">0</td>
+</tr>
+
+<tr>
+<td class="org-left">Bonds</td>
+<td class="org-center">&#xa0;</td>
+<td class="org-center">80 (assuming fix share)</td>
+<td class="org-center">-100 (endog)</td>
+<td class="org-center">20</td>
+<td class="org-center">0</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Total</td>
+<td class="org-center">0</td>
+<td class="org-center">100 (endog)</td>
+<td class="org-center">0</td>
+<td class="org-center">0</td>
+<td class="org-center">\(+K\)</td>
+</tr>
+</tbody>
+</table>
+
+<div class="org-src-container">
+<pre class="src src-R">external <span style="color: #8be9fd;">&lt;-</span> sfcr::<span style="color: #50fa7b;">sfcr_set</span><span style="color: #8be9fd;">(</span>
+                    y0 ~ <span style="color: #bd93f9; font-weight: bold;">100</span>,
+                    depr ~ <span style="color: #bd93f9; font-weight: bold;">0.2</span>,
+                    wshare ~ <span style="color: #bd93f9; font-weight: bold;">0.6</span>,
+                    pc1 ~ <span style="color: #bd93f9; font-weight: bold;">0.25</span>,
+                    pc2 ~ <span style="color: #bd93f9; font-weight: bold;">0.15</span>, <span style="color: #6272a4;">## </span><span style="color: #6272a4;">adds up</span>
+
+                    <span style="color: #6272a4;"># </span><span style="color: #6272a4;">Exogenous</span>
+                    i ~ <span style="color: #bd93f9; font-weight: bold;">20</span>, <span style="color: #6272a4;">## </span><span style="color: #6272a4;">Because of time constraints</span>
+                    r ~ <span style="color: #bd93f9; font-weight: bold;">0.1</span>
+<span style="color: #8be9fd;">)</span>
+
+
+init <span style="color: #8be9fd;">&lt;-</span> sfcr::<span style="color: #50fa7b;">sfcr_set</span><span style="color: #8be9fd;">(</span>
+                    <span style="color: #6272a4;"># </span><span style="color: #6272a4;">Lagged values</span>
+                    k ~ <span style="color: #bd93f9; font-weight: bold;">100</span>,
+                    vc ~ <span style="color: #bd93f9; font-weight: bold;">100</span>,
+                    bc ~ <span style="color: #bd93f9; font-weight: bold;">80</span>,
+                    b ~ <span style="color: #bd93f9; font-weight: bold;">100</span>,
+                  <span style="color: #8be9fd;">)</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgbc90ec4" class="outline-5">
+<h5 id="orgbc90ec4">Baseline solution</h5>
+<div class="outline-text-5" id="text-orgbc90ec4">
+<div class="org-src-container">
+<pre class="src src-R">growth <span style="color: #8be9fd;">&lt;-</span> sfcr::<span style="color: #50fa7b;">sfcr_baseline</span><span style="color: #8be9fd;">(</span>
+  equations <span style="color: #8be9fd;">=</span> eqs,
+  external <span style="color: #8be9fd;">=</span> external,
+  periods <span style="color: #8be9fd;">=</span> <span style="color: #bd93f9; font-weight: bold;">10</span>,
+  method <span style="color: #8be9fd;">=</span> <span style="color: #f1fa8c;">"Broyden"</span>
+<span style="color: #8be9fd;">)</span>
+<span style="color: #50fa7b;">as.data.frame</span><span style="color: #8be9fd;">(</span><span style="color: #50fa7b;">sfcr_get_blocks</span><span style="color: #8be9fd;">(</span>growth<span style="color: #8be9fd;">))</span>
+</pre>
+</div>
+
+<p>
+   endogenous block
+1     bondssh     1
+2         dep     2
+3           b     3
+4           k     4
+5         ibb     5
+6         ibc     6
+7        divb     7
+8           y     8
+9          pr     8
+10         cw     8
+11       divf     8
+12         yc     8
+13       cons     8
+14         wb     8
+15         cc     8
+16         sc     9
+17         bc    10
+18         bb    11
+19          d    12
+20         vc    13
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">Zezza points out that the <a href="dot_com_crisis.html#ID-8d3c092d-8546-4dc0-8a04-55d3d8a09191">Dot-Com crisis</a> was a capital gains-led cycle.</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<p class="date">Date: 2022</p>
+<p class="author">Author: Gabriel Petrini</p>
+<p class="date">Created: 2022-09-13 ter 14:28</p>
+</div>
+</body>
+</html>
