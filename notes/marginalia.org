@@ -1,0 +1,12 @@
+
+* Expectations formation and  Behavior macroeconomics
+:PROPERTIES:
+:org-remark-file: expectations_formation_and_behaviour_macroeconomics.org
+:END:
+
+** empirical reason
+
+** empirical reason
+:PROPERTIES:
+:CATEGORY: review
+:END:
