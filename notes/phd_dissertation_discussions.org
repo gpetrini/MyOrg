@@ -18,9 +18,6 @@ Most of them are meeting notes.
 
 ** Hypothesis
 
-- How to model workers productivity?
-  - Is it reasonable to suppose that we are modeling households and not workers?
-  - Populational growth make simulations dificult
 
 * [[id:95265264-f61f-4cf5-8cdc-e590b2a47cb9][Innovation bubble ABM]]
 
@@ -326,10 +323,8 @@ In general, there is no persistent effects in terms of economic growth or regard
 
 *** Lsd
 
-- Como acessar timeline?
 - Como incluir outras funções do cpp?
   - Tentei uma que define T
-- Como se assegurar dos problemas de ordenamento?
 - Futuro: Como criar listas (eficiência)?
 
 * Housing AB model
