@@ -1,0 +1,61 @@
+:PROPERTIES:
+:ID:       25971878-8ea6-4d4d-b918-8314c345c4d0
+:ROAM_REFS: @cesaratto_2003_Technical
+:END:
+#+title:
+#+OPTIONS: num:nil ^:{} toc:nil
+#+TITLE: Cesaratto, Serrano, Stirati: Technical Change, Effective Demand and Employment - (2003, Rev. Polit. Econ.)
+#+hugo_base_dir: ~/BrainDump/
+#+hugo_section: notes
+#+hugo_categories: Rev. Polit. Econ.
+#+FILETAGS: DUE Oct/2022,Neo-Schumpeterian Economics,READ,Sraffian Supermultiplier,Sraffian Theory
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+
+** Background and motivation
+
+
+** Supporting Ideas and hypothesis
+
+
+** Purpose, Relevance, and Contribution
+
+
+** Methodology
+
+
+** Results
+
+
+** Interesting findings and not categorized stuff
+
+
+** Critics
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+Ricardo and Marx saw technological change as a possible cause of long-period unemployment. Neoclassical and Schumpeterian economists regard technological unem ployment as a transitory phenomenon. This paper argues that the capital critique (i) demolishes the neoclassical claim that market mechanisms will restore full employment whenever workers are displaced by technical change, and (ii) rehabilitates the old Ricardian argument that automatic compensation factors are generally absent. The neo-Schumpeterian notion of autonomous investment is also rejected, in favour of the view that, in the long period, all investment is induced. By extending Keynes’s theory of effective demand to the long period through a model based on the supermultiplier, this paper suggests that the ultimate engines of growth are located in the autonomous components of effective demand–exports, government spending and autonomous con sumption. Technical change plays a role in the accumulation process through its effects on consumption patterns and the material input requirements. However, the impact of technical change is now seen to depend upon circumstances such as income distribution, the availability of bank liquidity and exchange rate policy.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+* References
+
+
+
+#+print_bibliography:
