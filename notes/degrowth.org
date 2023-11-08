@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       4131f4fb-c8e6-4b6d-ba5a-bfe3ceb8076e
+:END:
+#+title: Degrowth
+
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+
+#+hugo_section: notes
+
+#+HUGO_TAGS: placeholder
+
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

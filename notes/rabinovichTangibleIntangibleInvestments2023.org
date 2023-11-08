@@ -1,0 +1,60 @@
+:PROPERTIES:
+:ID:       620d2ac2-340a-411f-8e8d-e531438f7b92
+:ROAM_REFS: @rabinovichTangibleIntangibleInvestments2023
+:END:
+#+title: Rabinovich: Tangible and Intangible Investments and Sales Growth of US Firms - (2023, Structural Change and Economic Dynamics)
+#+options: num:nil ^:{} toc:nil
+#+FILETAGS: Advertising,Ch DotCom,EMPIRICAL,Firm growth,Intangibles,Quantile regression,R&D,STYLIZEDFACTS
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+
+** Background and motivation
+
+
+** Supporting Ideas and hypothesis
+
+
+** Purpose, Relevance, and Contribution
+
+
+** Methodology
+
+
+** Results
+
+
+** Interesting findings and not categorized stuff
+
+
+** Critics
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+This article presents new insights into the evolving relation among different types of investments and the growth in sales of US nonfinancial listed firms during the 1979–2018 period. By means of quantile regressions, it is observed an increasing relevance over time of intangible investments vis-à-vis a stable or declining contribution of capital expenditure for all types of firms. However, the impact of different types of intangible investment differs depending on the kind of firm. Whereas advertising has a growing relevance on all types of firms except the top decile in growth distribution, the positive effects of research and development become increasingly concentrated in high-growth firms.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero) :ATTACH:
+:PROPERTIES:
+:ID:       b8cc5933-8553-450e-a152-d1317d708b68
+:END:
+
+* Additional Backlinks
+
+* References
+
+
+
+#+print_bibliography:

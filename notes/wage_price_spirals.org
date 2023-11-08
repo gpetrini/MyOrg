@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       d7b5b9d1-5c11-4311-9c7f-f61e2cc7dcfe
+:END:
+#+title: Wage-price spirals
+
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+
+#+hugo_section: notes
+
+#+HUGO_TAGS: placeholder
+
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

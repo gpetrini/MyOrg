@@ -327,6 +327,36 @@ In general, there is no persistent effects in terms of economic growth or regard
   - Tentei uma que define T
 - Futuro: Como criar listas (eficiência)?
 
+
+** KG indebtedness
+
+
+- Solve model numerically to get reasonable indebtedness level
+  - Add temporal lags
+    - Based on Kalecki
+    - Possibly on MMM
+  - Justify KG indebtedness
+    - Circulatting capital (workers) to have in advance to produce capital some periods ahead
+- Implies a temporal structure of costs
+  - How to use resources to finance workers?
+- This implies some changes in initialization
+  - It requires more lags to write down
+- KG firms could deliver the BK production smoothly as long as production is discrete (in accordance with the capital bunddle)
+
+** Investment decision
+
+- Make capital blocks (capital_modularity) evolve in time
+- Test if investment decisions with rigid accelerator does not explode in the absence of credit restriction
+  - It behaves as a flexible accelerator
+- If aggregate investment has a increasing lag structure, this would contradict the flexible-flexible accelerator model
+
+** Autonomous expenditure
+
+- Change autonomous component to government sector
+  - Reduces model complexity
+  - Easier to justify
+  - Does not defuse focus
+
 * Housing AB model
 
 ** General topics

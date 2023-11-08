@@ -2,9 +2,160 @@
 :ID:       3ff828b3-ceb5-4a18-8ba8-19b647bad967
 :END:
 #+title: Keynes meets Schumpeter family
-#+HUGO_AUTO_SET_LASTMOD: t
-#+hugo_base_dir: ~/BrainDump/
-#+hugo_section: notes
-#+HUGO_TAGS: placeholder
 #+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
 #+OPTIONS: num:nil ^:{} toc:nil
+
+* <2023-10-27 sex> Roventini's lecture on the K+S models
+
+** Introduction
+
+*** Motivations
+
+The puzzling dichotomy between growth and business cycles theory.
+Consequences:
+- [[id:66c2405e-46a7-48c3-b7e5-ecadb2466377][Schumpeterian growth models]] never meets Keynesian theory of [[id:bc6c94e5-1334-4b01-b49c-b98419bd122e][Effective Demand]] and aggregate [[id:380b31ad-cdd5-4367-af2c-9ee199a085e7][Business Cycles]]
+- A Peculiar schizophrenia between ??
+
+Briding short- and long-run dynamics in a model able to robustly replicate most relevant micro and macro [[id:8e9dd4a4-0f29-46d1-b8e4-5befe4df94cb][Stylized Facts]].
+
+
+** Model structure
+*** Time step
+
+1. Bank fix the maximum credit supply
+2. KG performs R&D, innovate and imitate
+3. CG fix production and investment
+4. Firms asks for credit
+5. Production begins and firms hire workers
+
+*** Technical change
+
+There is both [[id:4db8e3cd-585a-435b-ae6a-df903e5bf7af][Product Innovation]] and [[id:0c6c78fd-8d22-4002-9c82-7ccd82af43f5][Process Innovation]] because productivity of vintages improve them (product), while the production technique is a process innovation.
+The innovation is a two step stochastic process, in wich R&D is linked to innovation/imitation.
+
+The beta distribution is chosen because is very simple, but easily able to search the shapes (flexibility).
+The support of this distribution is the center of the current level of the technology.
+The idea is to have failures in the innovative process.
+Also, the goal is to have non-linearities with the step.
+
+*** Investment
+
+The payback replacement parameter indicates the likelly to replace the vintages.
+
+*** Financial Structure
+
+There is a financial hierarchy in which firms prioritize internal funds rather than external finance.
+The limit of credit is exogenously defined.
+
+- Fixed number of banks
+- Banks are heterogenous in their number of clients
+  - Draw from a Pareto distribution
+    - Input validation from the data
+- There is a capital adequacy ratio: multiple of the equity of the bank
+- There is an endogenous capital buffer: credit supply is reduced if the bank is fragile
+  - The higher the number of bad loans, the less willniness the bank is to lend credit
+- Bank allocate assuming a pecking-order base, ranking the firms according to their net worth
+  - In reallity, firmrs either get the total amount of credit and not a fraction of the requested value
+  - There is heterogeneous risk premium accirdubg to the credit class (\(q\)) togehter with a scalling parameter
+    - This define the interest rate
+
+*** Capital goods market
+
+
+Select the producer with lowest \(p_{i} + c_{i}^{1}b\) according to the information contained in the "brochures".
+This is price vs quality ratio.
+
+*** Consumption goods market
+
+- Imperfect competition: prices $\Rightarrow$ variable unit cost of production
+  - Note: prices do not clear the market. They can accumulate inventories
+- Market-share evolveca rcording to a "quasi" replicator dynamics (from evolutionary biology)
+  - This ensure the interactiona mong CG firms
+  - A spicie that is more fitted to the environment (more competitive), can survive (increase market-share)
+  - Otherwise, only firms with the lowest price would dominate the market
+    - The other assumption is that households have imperfect information to know the best price. This would explain why the best first do not dominates the market
+
+*** Entry and exit
+
+- Newest firm are smaller than those on the market
+
+** Empirical validation
+
+- Haldande and Turrell, 2018
+
+[[id:8e9dd4a4-0f29-46d1-b8e4-5befe4df94cb][Stylized Facts]]:
+- Self sustained, endogenous growth with endogenous business cycles
+  - The [[id:380b31ad-cdd5-4367-af2c-9ee199a085e7][Business Cycles]] is not periodic, but stochastic
+  - The Dickey-Fuller on the log and level
+- Correlation structure
+  - Consumption, net investment, and changes in inventories are procyclical and coincident variables
+  - Countercyclical unemployment
+  - Countercyclucal prices, procyclical inflation
+  - Countercyclical markups
+  - Total credit is pro-cyclical and coincident
+    - It is important that this amplify the business cycles
+- Fat tail growth distribution
+  - Not normal distribution of GDP (not Gausian)
+  - Tails are more important, indicating that [[id:380b31ad-cdd5-4367-af2c-9ee199a085e7][Business Cycles]] are a complex phenomena
+- Banking crises
+  - Bank profits and bank equity are procyclical
+  - Boom abd burst cycles in the credit
+- Large productivity dispersion among firms
+  - Mean productivity overtime is growing, but the second moment is positive and constant
+    - Not too much different, but persistent heterogeneous
+  - Inter-firm productivity differentials are persistent over time
+- Firm size distribution is right-skewed than log-normal distribution
+  - Coexistance of very few big firms together with a lot of small firms
+- Growth rate distribution of firms is fat tail (Subotin distribution)
+- Investment lumpiness
+  - A lot firms investment almost-zero together with a few investing a lot
+
+** Policy experiments
+
+*** Schumpeterian policy
+
+**** Changes in the techonological opportunity
+
+Changes of the mass of the Beta distribution governing new technological draws.
+*Results:* GDP growth rises, unemployment decrease with increasing technologia oclpportunities
+
+**** Search capabilities
+
+Changes in the parameters affecting R&D.
+*Results:* GDP growth rises, GDP volatility and unemployment fall as the R&D productivity increases.
+
+
+**** Changing appropriability conditions
+
+Includes a patent system.
+*Results:* reduce GDP growth raten and raise unemployment.
+Because the restrict other firm to innovate.
+The question is how much patent do you need.
+
+
+*** Competition policy
+
+**** Anti-trust policy
+
+Capital good firms with a market-share higher than a fixed threshold cannot add new customers.
+*Resulst:* Spurs GDP growth and it reduces both unemployment rate and output volatility.
+
+*** Keynesian policy
+
+**** Eliminate the public sector
+
+Keynesian policies are necessary to support sustained long-run economic growth.
+Schumpeterian policies are not enough to push the economy away from low growth trajectories.
+
+** Questions
+
+- Why KG firms prioritize R&D instead of production in case of credit restriction?
+  - There is a lot of inertia in R&D to catch-up
+  - It is much smaller than production
+- Is that strong to assume that KG firms now how CG invest in replacement investment?
+  - A: It is.
+- Why the newest firms are smaller than those on the market? Are you introducing a negative shock?
+- What if include lags in KG production?
+- What are the reception of the K+S among ortodox at the begining and do you have the impression the this changed?
+- In the first versions of the K+S, investment follows a sS model, but now seems to be using the accelerator on the paper, but a sS on the code.
+- When you tested the different investment function, did you still got investment lumpiness?

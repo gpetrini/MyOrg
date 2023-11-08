@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       ba9792be-60c0-4e5f-a936-7d9c008c8e8c
+:END:
+#+title: Hysteresis
+
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+
+#+hugo_section: notes
+
+#+HUGO_TAGS: placeholder
+
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

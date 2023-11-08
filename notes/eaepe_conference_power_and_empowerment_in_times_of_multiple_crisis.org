@@ -1,0 +1,77 @@
+:PROPERTIES:
+:ID:       fa780640-12a8-4800-a2a0-500a6a426037
+:END:
+#+title: EAEPE Conference: Power and Empowerment in times of multiple crisis
+#+date: 2023
+#+language: en
+#+bibliography: ~/Org/zotero_refs.bib
+#+options: num:nil ^:{} toc:nil
+
+* [R] Classical Theory and Policy Analysis
+
+** Lorenzo Di Domenico, Lorenzo Di Domenico, Grabriel Brondino, Davide Romaniello: Cost-Push Inflation and Monetary Policy: Does Raising the Policy Rate Work?
+
+
+*** Abstract
+
+The spectre of inflation is haunting Europe.
+From 2021, prices started to increase at rates not seen since the 1980s.
+The initial spark was a hike in energy prices currently being passed on to production costs.
+Accepting this diagnosis, what monetary policy stance should be adopted in this context?
+As is common knowledge, most central banks have chosen a monetary tightening, raising the policy rate.
+In this paper, we develop a Classical Keynesian framework to assess the effectiveness of this policy in curbing inflation.
+With this aim, we develop a Stock-Flow Consistent model which includes both the dimension determining quantities and that determining value.
+We distinguish between a transient price level increase and permanent changes in the inflation rate and claim that the interest rate can permanently affect the latter only if it influences the rate of change in money wages.
+To this effect, two channels stand out.
+A direct channel in which the interest rate affects income distribution through its effect on firms’ production costs and hence their pricing decisions.
+An indirect channel in which the interest rate may affect aggregate demand and unemployment, influencing workers’ bargaining position.
+On the one hand, we highlight that the rise in the interest rate per se only produces a level effect on prices.
+The sign of such effect depends on the input-output structure of the economy and the weight of imported goods in production and consumption.
+On the other hand, the potential impact of tightening monetary policies on the inflation rate depend on the contemporaneous effect on real wages and workers’ bargaining power.
+For instance, if the increase in interest rate leads to a reduction in real wages and workers react by trying to restore the previous real wage, the increase in the interest rate could generate a paradoxical increase in the inflation rate.
+The magnitude of the change in monetary wages, and thus in the inflation rate, will depend on the simultaneous effect on aggregate demand and unemployment rate.
+Contrary to mainstream analyses, in our framework, it is impossible to establish a functional relationship between the interest rate and inflation because the latter manifests the class struggle for income distribution.
+Finally, we assess the rationale of the ECB’s strategy of raising its policy rate.
+
+
+*** Personal notes
+
+**** Model
+
+- Includes Sraffian pricing equations and conflict claim
+
+
+
+*** Questions
+
+Some questions are based on the a previous version of the paper, without the SFC model.
+
+- The existence of credit-financed NCCAE would not also create a further effect of interest rate?
+  It could change the inter-class income distribution from workers to capitalists.
+  - If so, this could also affect even further the bargain power of the working class?
+    - This suggestion reminders me the hyper-multiplier model by Goes.
+  - If this is the case, it matters which is the leading NCCAE?
+    - If so, this approach opens a room to debate country-specific aspects of effectiveness of [[id:7527ce86-4417-40d0-b238-b8f21faff261][Monetary Policy]]? (For future research)
+  - This would be more related to the indirect effect
+- When considering a interest rate increase in the [[id:fbb6c1d6-a334-4097-b763-82a15754b44a][Modern Surplus approach]], the subsequent effects will depend on capitalists reactions. Does it implies a sequential model? (Technical question about implementation of the simulation)
+  - The linear programming approach (separate analytical stages) by Sraffa also seems adequate to be treated as sequential as well
+
+
+Based on presentation:
+
+- The paper is interesting and could be extended in a lot of directions, my suggestion will go on this directions
+- I would suggest to spend more time presenting the SFC structure of your model
+- I am not aware of many Sraffian-SFC models, I would suggest exploring it first in a closed-economy and them open it latter (Further work)
+  - It could explore how the results changes when opening the economy
+- The flow chart that you include clarify the main channels
+- How did you solve the model?
+  - Using SFCR would imply a simultaneous procedure
+- Depending on the leading NCCAE, I expect that the effect could change
+  - If interest rate affects asset prices, for example, you can have other aspects of the model
+  - Question, which is the NCCAE is the "active one"?
+- It could be relevant to model productivity growth rate?
+  - If so, maybe use Dumenil and Levy proposal of innovation in order to be closer to the classical view?
+
+** Gabriel Petrini Da Silveira, Lucas Teixeira, Ítalo Pedrosa: Dancing Without Music: Analyzing Investment Surges in an Agent-Based Stock-Flow Consistent Sraffian Supermultiplier (AB-SFC-Ssm) Model
+
+*** Suggestions
