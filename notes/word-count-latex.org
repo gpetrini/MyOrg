@@ -23,3 +23,4 @@ In a =.tex= buffer, hit =M-x tex-count-words=
 - The bash alternative seems to overestimate the real number of words since include some words of references.
   Some journals do not include them
 - Emacs builtin function count latex environment but not latex commands.
+
