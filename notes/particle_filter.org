@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       71cafa5c-248b-4045-a86e-ea8f5f8a027d
+:END:
+#+title: Particle Filter
+
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+
+#+hugo_section: notes
+
+#+HUGO_TAGS: placeholder
+
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

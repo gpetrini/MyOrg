@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       f6fc9768-c42c-44bc-a384-3f4cbe600dc6
+:END:
+#+title: Central Bank Digital Currency
+
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+
+#+hugo_section: notes
+
+#+HUGO_TAGS: placeholder
+
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

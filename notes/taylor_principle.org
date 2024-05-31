@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       6921ab97-2697-44f1-a1a8-9881d5c0d64a
+:END:
+#+title: Taylor Principle
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

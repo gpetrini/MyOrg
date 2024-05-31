@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       50f6fa96-b624-453e-a20a-6a9fef8dff15
+:END:
+#+title: Adjustment Costs
+
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

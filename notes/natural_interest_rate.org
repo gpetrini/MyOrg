@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       f58b904c-2230-440f-acbe-33bdebeca003
+:END:
+#+title: Natural interest rate
+
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

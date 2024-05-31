@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       154f5424-c0b8-4b05-adf6-59c799074190
+:END:
+#+title: Shopping Time
+
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

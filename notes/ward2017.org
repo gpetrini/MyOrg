@@ -1,0 +1,59 @@
+:PROPERTIES:
+:ID:       60a0901a-185c-45df-87a6-e5c30eb41088
+:ROAM_REFS: @ward2017
+:END:
+#+title:
+#+OPTIONS: num:nil ^:{} toc:nil
+#+TITLE: Ward, Jonathan: Data Assimilation for Agent-Based Models: Mathematical and Computational Challenges - (2017, )
+#+FILETAGS:
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+
+
+
+* FISH-5SS
+
+[[file:~/Zotero/storage/BCLRVSKU/Ward - Data Assimilation for Agent-Based Models.pdf][Paper]]
+
+** 5SS
+
+
+** Background and motivation
+
+
+** Supporting Ideas and hypothesis
+
+
+** Purpose, Relevance, and Contribution
+
+
+** Methodology
+
+
+** Results
+
+
+** Interesting findings and not categorized stuff
+
+
+** Critics
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+* References
+
+
+
+#+print_bibliography:

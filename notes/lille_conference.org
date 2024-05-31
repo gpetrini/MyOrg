@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       053d3098-c866-4150-8ec7-baa9f4f98e13
+:END:
+#+title: Lille Post-Keynesian Conference
+#+date: 2023
+
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil
+
+
+* (Un)stability I
+
+** Noël: Multiplier-accelerator growth model
+
+
+*** Context
+
+[[id:18b0984e-d8db-4fc3-b002-e080c92bd007][neo-Goodwinian model]] in which capital accumulation depends on retained profits, while real wages depends on a [[id:05891dd4-6983-40a0-a0a9-5fccddf93009][Phillips curve]] mechanism:
+\[\dot\omega = \phi(\ell)\]
+\[I = s\Pi\]
+In the first version of Goodwin's model, output is suply-driven, and cycles presents [[id:de34270e-0ae3-44b3-a344-a58d4a3d15d1][Profit-Squeezing]].
+
+** Income distribution, Demand Cycles, and Neoliberalism: is the 'Goodwin Pattern' valid for OECD countries
+
+* (Un)stability II
