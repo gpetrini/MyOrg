@@ -1,0 +1,106 @@
+:mtime:    20211202152741 20211013082514
+:ctime:    20211013082514
+:END:
+#+TITLE: kindleberger_2005_Ch1: Financial Crisis: A Hardy Perennial
+#+filetags: Financial_crisis UFRJ Macroeconomia_Financeira
+Time-stamp: 2020-12-07
+
+
+* Financial Crisis: A Hardy Perennial
+  :PROPERTIES:
+  :Custom_ID: kindleberger_2005_Ch1
+  :END:
+  
+** FISH-5SS
+
+
+|---------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| *Background*                                  |                                                                                                                                                                                                                                                                                                                                  |
+| *Supporting Ideas*                            |                                                                                                                                                                                                                                                                                                                                  |
+| *Purpose*                                     |                                                                                                                                                                                                                                                                                                                                  |
+| *Originality/value (Contribution)*            |                                                                                                                                                                                                                                                                                                                                  |
+| *Relevance*                                   |                                                                                                                                                                                                                                                                                                                                  |
+| *Design/methodology/approach*                 |                                                                                                                                                                                                                                                                                                                                  |
+| *Results*                                     |                                                                                                                                                                                                                                                                                                                                  |
+| *(Interesting) Findings*                      | Bubble definition (p. 13): "... Nonsustainable patterns of financial behavior, in that asset prices today are not consistent with asset prices at distant future dates".                                                                                                                                                         |
+| *Research limitations/implications (Critics)* |                                                                                                                                                                                                                                                                                                                                  |
+| *Uncategorized stuff*                         | Japan real estate crisis (1985-89) as a mania-crash without panic (belief that government would rescue). Followed by mania in other Nordic countries (1985-89) then in other Asian ("dragons") economies (1992-1997). States that Manias are preceded by economic expansion but the other way around does not occur necessarily. |
+| *5SS*                                         |                                                                                                                                                                                                                                                                                                                                  |
+|---------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+** Backlinks
+[[denote:20201202T092036][IEE882 - Macroeconomia Financeira]]
+** Questions
+
+- Are Minskyan crisis a typology of Kindlebergian Manias?
+  + Additionally, Kindleberger states that mainas are not frequent. That been said, are Minsky contribution too restricted?
+- Are credit in Kindleberger supply-constrained?
+
+* Specifics comments
+** Introduction
+The authors starts pointing out some patterns related to crises.
+Next, describes a bubble as an *non-sustainable pattern of price change which always implode*.
+Then, itemize some foreign exchange rate changes-related crises which were larger than the differences between countries inflation.
+The same applies to bank failures which were fewer and less integrated than today.
+However, after the mentioned financial crises were followed by a *systemic bank failure*.
+Kindleberger categorize these bank failures in three different waves, all of them related to rapid changes in economic activity:
+
+1. Beginning of 1980s
+   - Japan real estate bubble implosion led by increase money flow *from* Japan to other Asian countries
+     + Currency appreciation on that countries and subsequent increase of real estate prices there.
+2. Beginning of 1990s
+3. Second half of 1990s
+   - Ex: US economic boom $\Rightarrow$ increase on stock prices
+     + Decrease at the beginning of 200s
+
+Then, concludes:
+
+#+BEGIN_QUOTE
+The immense scope of the financial crashes in the last thirty years reflects in part that there are many more countries in the international financial economy and in part that data collection is more comprehensive. Despite the lack of perfect comparability across different time periods, the conclusion is unmistakable that financial failure has been more extensive and pervasive in the last thirty years than in any previous period.
+#+END_QUOTE
+
+** Manias and Credit
+
+In this section, Kindleberger presents a box with the top 10 financial crises which includes real estate mania in Japan, Nordic and Asian economies.
+Additionally, indicates that stock and real estate financial crises often occur together.
+Next, states that Mania are dramatic but *not* frequent.
+Relates Manias with the *expansion phase* of business cycle.
+The subsequent increases in real estate/stock prices contributes to increase in consumption and investment which leads to accelerating economic growth.
+This is followed by more optimistic forecast and asset prices increase.
+In summary, Macro-Manias are related with *economic euphoria* and credit bank credit is *plentful* while sort-term seeking investors also increase.   
+This euphoric phase is interupeted by an event which lead to end asset price increase and trigger a Ponzi units increase.
+Kindleberger states that during mania, asset prices decline *immedietly* with no end (no plateau).
+Then, selling rush accelerates debt deflation process (sell assets before further price decrease) and trigger the *panic* moment.
+Next, present the following pattern:
+
+#+begin_src dot :file ../figs/kindleberger_ch1_fig1.png
+digraph {
+a0 [label="Economic\nExpansion"]
+a [label="Mania/\nEuphoria"];
+b [label="Spending\nincrease"];
+c [label="Asset price\nincrease"];
+d [label="Bubble\nimplosion"];
+e [label="External\nevent"];
+e2 [label="Pro-cyclical Change\nincredit supply"];
+e3 [label="Book thesis"]
+f [label="Ponzi unit\nincrease"];
+g [label="Higher\nindebtedness"];
+h [label="Panic"]
+a2 [label="More credit"];
+a0 -> a -> a2 -> c -> b -> c -> d -> f -> h;
+e3 -> e -> e2 -> d;
+g -> a2 -> g -> f;
+b -> g -> b -> a0;
+    }
+#+end_src
+
+#+RESULTS:
+[[file:../figs/kindleberger_ch1_fig1.png]]
+
+** Policy implications
+
+- Proposes to moderate the surge in asset prices in order to reduce severity or likelihood of financial crisis or prevent asset prices to decline
+  + International lender of last resort?
+  + Stability as a public good
+  + *Dilemma:* Investors would knew that government would act in advance and be less cautious
+- *Monetarist view:* Financial crisis would not occur if money supply growth is sta[[denote:20201207T000000][kindleberger_2005_Anatomy: Anatomy of a Typical Crisis]]ble.

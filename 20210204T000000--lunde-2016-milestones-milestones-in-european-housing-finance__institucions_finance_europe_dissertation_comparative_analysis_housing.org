@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       7bb46600-b983-4e12-b7a8-d2072eea5f18
-:mtime:    20211202152741 20211013082514
 :ctime:    20211013082514
 :END:
 #+OPTIONS: num:nil H:6 ':t
@@ -34,7 +31,7 @@ Time-stamp: 2021-02-04
 |---------------------------------------------+-----|
 
 ** Backlinks
-[[id:6367d2bd-7a1f-492f-9397-5003f5416ead][Institutional comparisons]]
+[[denote:20210210T184827][Institutional comparisons]]
 * Chapter 1 - Introduction: Milestones in European Housing Finance since 1989
 :PROPERTIES:
 :AUTHOR:   Jens Lunde and Christine Whitehead

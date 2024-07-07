@@ -1,0 +1,76 @@
+:mtime:    20211202152739 20211013082514
+:ctime:    20211013082514
+:END:
+#+TITLE: barot_2002_House: House Prices and Housing Investment in Sweden and the UK: Econometric Analysis for the Period 1970\textendash 1998 (Review of Urban \& Regional Development Studies)
+Time-stamp: 2021-02-09
+- tags ::
+
+
+* House Prices and Housing Investment in Sweden and the UK: Econometric Analysis for the Period 1970\textendash 1998
+  :PROPERTIES:
+  :Custom_ID: barot_2002_House
+  :URL:
+  :AUTHOR:
+  :END:
+
+** FISH-5SS
+
+
+|---------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------|
+| *Background*                                  |                                                                                                                                                         |
+| *Supporting Ideas*                            |                                                                                                                                                         |
+| *Purpose*                                     | Investigate the differences and similarity for the Sweden and UK housing market.                                                                        |
+| *Originality/value (Contribution)*            | Evaluates if it would be possible to elaborate an single theory for housing.                                                                            |
+| *Relevance*                                   |                                                                                                                                                         |
+| *Design/methodology/approach*                 | ECM model based on a Stock-flow framework in which the interaction between demand and supply of structure determines the asset price.                   |
+| *Sample*                                      | UK and Sweden: 1970-1998                                                                                                                                |
+| *Results*                                     | For Sweden, income Granger Causes house prices while UK also presents and feedback relation.                                                            |
+| *(Interesting) Findings*                      |                                                                                                                                                         |
+| *Research limitations/implications (Critics)* |                                                                                                                                                         |
+| *Uncategorized stuff*                         | House prices trends are quite different between countries. The authors point out a ressurgence of Tobin'Q theory applied to explain housing investment. |
+| *5SS*                                         |                                                                                                                                                         |
+|---------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+** Backlinks
+[[denote:20210210T091758][House Prices]]
+[[denote:20210210T092940][Household debt and Bank credit]]
+[[denote:20210210T184827][Institutional comparisons]][[denote:20210210T184910][?Manuals and Best practices]][[denote:20210210T092103][Residential investment determinants]]
+
+** Theoretical considerations
+The augmented Tobin model of housing investment incorporating the interest rate can be written as:
+
+#+BEGIN_latex
+\begin{equation}
+q = \frac{PH}{PB}
+\end{equation}
+#+END_latex
+
+#+BEGIN_latex
+\begin{equation}
+\frac{IH}{H} = h (q(+), r(-))
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+H^{S} = IH + (1-\delta)H_{t-1}
+\end{equation}
+#+END_latex
+- $PH$ Market price
+- $PB$ Construction price
+- $r$ real interest rate (?)
+- $\delta$ depreciation
+
+In long-equilibrium, the value of Tobin’s q converges to 1
+** Estimation results
+#+CAPTION: Estimation results
+|-----------------------------------+----------------------------------+---------------------------------|
+| Granger causality test            | UK                               | Sweden                          |
+|-----------------------------------+----------------------------------+---------------------------------|
+| House prices and income           | Both                             | Income to house prices          |
+| House prices and financial wealth | Financial wealth to house prices | Prices to Financial Wealth      |
+| House prices and household debt   | Debt to house prices             | House prices to debt            |
+| House prices and interest rate    | Interest rate to house prices    | Interest rate to house prices   |
+| Tobin's Q and housing investment  | Tobin's Q to housing investment  | Tobin's Q to housing investment |
+|-----------------------------------+----------------------------------+---------------------------------|
+
+Our test results indicate that for both Sweden and the UK, Tobin’s q Granger causes housing investment because the construction industry bases its investment decisions on profitability as reflected by the q index.

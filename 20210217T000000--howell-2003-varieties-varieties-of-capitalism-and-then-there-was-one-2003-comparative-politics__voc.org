@@ -1,0 +1,381 @@
+:mtime:    20211202152744 20211013082514
+:ctime:    20211013082514
+:END:
+#+TITLE: howell_2003_Varieties: Varieties of Capitalism: And Then There Was One? (2003, Comparative Politics)
+#+OPTIONS: toc:nil num:nil
+#+filetags: VoC
+Time-stamp: 2021-02-17
+- tags ::
+
+
+* Backlinks
+
+[[denote:20210210T190446][Varieties of Capitalisms]]
+
+* FISH-5SS
+
+
+|---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <40>                                        | <50>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| *Supporting Ideas*                            | The resurgence of neoliberalism poses a challenge to any intellectual framework that posits the existence of distinct national models of capitalism and the persistence of nonmarket mechanisms of economic regulation                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| *Theorethical Background*                     | VoC tries to be an alternative to Orthodox TINA narrative. However, uses some of neoclassical instruments. Besides that, this literature seen to be influent and starts to establish an relative consensus in CPE. Additionally, VoC scholar argue that previous work empahise too much state and labor and less atention is paid to firms' central role. The VoC typology is developed in order to analyze how different institutional sets emerges to solve the coordination problem.                                                                                                                                                                                                                                             |
+| *Purpose*                                     | Critically review VoC, Nonliberalism capitalist and Models of capitalism approaches                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| *Originality/value (Contribution)*            | Systematize the similarities and differences of each alternative. Additionally, provides some critiques and drawbacks in VoC literature.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| *Relevance*                                   | Presentes a summari of VoC literature as well as some alternatives.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| *Design/methodology/approach*                 | Review of theoretical literature.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| *Results*                                     | VoC is a firm-centric approach in which coordination problems are the main issue. Additionally, presents the "institutional comparative advantages" in which capital mobility is central and acts throwout institutional arbitrage. VoC scholars states that globalization generates an increase of divergencies between ideal-types while similarities within groups increases. One interesting critic is about "residuals type" and how this dual divergence will occurr. Other critiques rely on the little role of the state, labour and the emphasis on continuity insted structural changes. Regarding dissertation objetives (QCA) the complementarity between institutions is a possible niche to dialogue with literature. |
+| *(Interesting) Findings*                      | The only role left to state is to persist the current institutional set and to induce private agents to coordenate. Additionally, some authors question the long-run viability of the divergence.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| *Research limitations/implications (Critics)* | No critics on the review. Critiques on VoC will be written in a appropriate document.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| *Uncategorized stuff*                         | There are some logical contradictions and interresting contrafactuals against VoC: countries with some ideal-typology do not share the same outcome (in terms of economic performance). Institutional arbitrage is at odds with empirical evidence: private agents try to change and not only adapted to a institutional set. VoC may not be an general framework, but restricted to the contemporary capitalist economies (1980-). VoC is an static framework (compare snapshots).                                                                                                                                                                                                                                                 |
+| *5SS*                                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+|---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+* Specifics comments
+ :PROPERTIES:
+ :Custom_ID: howell_2003_Varieties
+ :AUTHOR: Howell, C., Hall, P., Soskice, D., Streeck, W., Yamamura, K., & Coates, D.
+ :JOURNAL: Comparative Politics
+ :YEAR: 2003
+ :DOI:  http://dx.doi.org/10.2307/4150162
+ :URL: https://www.jstor.org/stable/10.2307/4150162?origin=crossref
+ :END:
+
+
+* Extracted Annotations (17/02/2021 16:22:08)
+:PROPERTIES:
+:NOTER_DOCUMENT: ../../PDFs/2003/howell_2003_Varieties/howell_etal_2003_varieties_of.pdf
+:NOTER_PAGE: 5
+ :END:
+
+"The discipline has reached a moment of theoretical synthesis, similar to that which existed around the concept of neocorporatism in the early 1980s, in which a series of discrete, incremental theoretical developments coalesce into a new theoretical paradigm" (Howell etal 2003:104)
+
+Emergence of a relative consensus. (note on p.104)
+
+
+"These distinct national capitalisms are quite resistant to pressures towards convergence upon a single model of capitalism" (Howell etal 2003:104)
+
+Do not converges (note on p.104)
+
+
+
+
+"Varieties of Capitalism, which contains the central theoretical statement of the approach, is reviewed here" (Howell etal 2003:104)
+
+Purpose of the review (note on p.104)
+
+
+
+
+"The resurgence of neoliberalism, most explicitly in the English-speaking world but also in countries like France and Italy where its hold had previously seemed weak, coupled with evidence of accelerating global economic integration, poses a challenge to any intellectual framework that posits the existence of distinct national models of capitalism and the persistence of nonmarket mechanisms of economic regulation" (Howell etal 2003:105)
+
+Background and counterfactual. (note on p.105)
+
+
+
+
+"comprehend the persistence of national divergence and the importance of nonmarket forms of economic regulation and to reject Margaret Thatcher's famous insistence that there is no alternative." (Howell etal 2003:105)
+
+Why particularities persists in the globalization era? (note on p.105)
+
+
+
+
+"nstitutions came to be understood as not simply refracting exogenous shocks but increasingly as having some independent power to structure the distribution of economic power and the interests and behavior of economic actors" (Howell etal 2003:105)
+
+Relevance and notion of institutions in VoC. (note on p.105)
+
+
+
+
+"oncept of path dependence and its implications in understanding and identifying both lock-in effects and moments of institutional openness" (Howell etal 2003:105)
+
+Path dependence. (note on p.105)
+
+
+
+
+""bringing capital back in."4 One emphasizes the central role played by employers in the construction and maintenance of industrial relations and welfare institutions and the resulting mutual gains of employers and trade unions that have permitted durable cross-class alliances." (Howell etal 2003:105)
+
+First approach to bring capital back (note on p.105)
+
+
+
+
+"dination, with or without the cooperation of labor, as an explanation of the behavior of economic actors and economic outcomes" (Howell etal 2003:106)
+
+2nd way to bring capital back (note on p.106)
+
+
+
+
+"These approaches all shared an emphasis upon national distinctiveness alongside a high degree of continuity within each country over time. In contrast, the influence within comparative political economy of theoretical currents that stressed an essential discontinuity over time in capitalist development, with some degree of convergence across countries at any particular time, waned" (Howell etal 2003:106)
+
+More continuity and less discontinuity. (note on p.106)
+
+
+
+
+"alternative approaches to political economy, which are criticized for overemphasizing the importance of both the state and labor" (Howell etal 2003:106)
+
+VoC compared to previous approaches: there was too much state and labor. (note on p.106)
+
+
+
+
+""a firm-centered political economy that regards companies as the crucial actors in a capitalist economy" (Hall and Soskice, eds., p. 6)." (Howell etal 2003:106)
+
+VoC and its firm-centric approach. (note on p.106)
+
+
+
+
+"importance of institutions lies primarily in their capacity to structure strategic interaction between economic actors and solve firms' coordination problems" (Howell etal 2003:106)
+
+The little role played by institutions in VoC: solve firm's coordination problems. (note on p.106)
+
+
+
+
+"Rather, there are likely to be interactions and complementarities among institutions, such that one set of institutions functions more effectively, or indeed may only function effectively, when accompanied by other institutions. The chapters are full of examples of these complementary institutions." (Howell etal 2003:107)
+
+Critic to VoC: some institutions may need complementarities.
+
+QCA could provide an operational tool to override the lack of relevance of institutions in VoC. (note on p.107)
+
+
+
+
+"Franzese points to the linkage between central bank independence and coordinated bargaining in the efficient management of inflation and unemployment. On the one hand, central bank credibility is most effective when bargaining is coordinated. On the other, independent central banks and coordinated bargaining are partial substitutes for each other, suggesting alternative paths to low inflation. Mares explains the preferences of employers for different types of social insurance in terms of their reliance on skilled labor and incidence of labor market risk.11 Estevez-Abe, Iversen, and Soskice also examine how different forms of social protection influence skill levels and internal labor markets. Particular forms of employment and wage protection have a differential impact upon investment in firmspecific, industry-specific, and general skills, which in turn explains the distribution of types of social policy across capitalist economies." (Howell etal 2003:107)
+
+How institutional complementarity appears in VoC seminal book. (note on p.107)
+
+
+
+
+"First, there is a tendency for institutions to reinforce each other, forming an interlocking ensemble spanning the spheres of industrial relations, the welfare state, and finance that is resistant to change" (Howell etal 2003:107)
+
+Consequence of institutional complementarity. (note on p.107)
+
+
+
+
+"two ideal-types, liberal market economies and coordinated market economies, each with a distinctive set of institutions that solves the coordination problems of firms in quite different ways." (Howell etal 2003:107)
+
+The ideal-types in VoC is based on how the solve the firms' coordination problem. (note on p.107)
+
+
+
+
+"They suggest there may be a "Mediterranean" type, but the discussion of alternatives to liberal market economies and coordinated market economies is perfunctory, and the emphasis upon institutional complementarities makes it unclear how effectively, for example, a coordinated system of corporate finance would function with a competitive labor market" (Howell etal 2003:108)
+
+The residual typology. (note on p.108)
+
+
+
+
+"The data presented on economic performance do not show one cluster of countries, the liberal market economies for example, as consistently outperforming another. Rather, each interlocking institutional set does different things with different degrees of success." (Howell etal 2003:108)
+
+Logical contradictions in VoC literature: same ideial-types do not share a same outcome in termos of economic performance (growth). (note on p.108)
+
+
+
+
+"Hall and Soskice propose that the concept of comparative institutional advantage replace the traditional cornerstone of neoclassical free trade theory, comparative economic advantage. The theory of comparative advantage, as the authors point out, has been challenged by capital mobility and intraindustry trade. Comparative institutional advantage points to the advantage countries have in particular sectors by virtue of their institutional configuration and the likelihood that capital will consider the advantages and disadvantages of institutions alongside simple factor endowments." (Howell etal 2003:109)
+
+Definition of comparative institutional advantage in contrast with usal comparative economic advantage. (note on p.109)
+
+
+
+
+"The varieties of capitalism approach is skeptical of convergence. The interlocking, interdependent nature of the institutional sets that it describes makes it likely that they will be resistant to change. Furthermore, since there is no single best set of institutions, states and private economic actors should not be expected to seek radical restructuring of their economie" (Howell etal 2003:109)
+
+The absense o convergence in VoC. (note on p.109)
+
+
+
+
+"institutional arbitrage is likely to consolidate difference rather than erode it." (Howell etal 2003:109)
+
+How the particulatirities are persistents? Institutional arbitrage. (note on p.109)
+
+
+
+
+"Convergence takes place within clusters but not between them." (Howell etal 2003:109)
+
+Dual convergence: Convergence between similar and divergence between differents. (note on p.109)
+
+
+
+
+"After all, if France and Italy are neither liberal nor coordinated market economies in the first place, is there any reason to expect them to converge on one of these two models?" (Howell etal 2003:110)
+
+How to deal with dual convergence in the presence of typological residuals? (note on p.110)
+
+
+
+
+"The great majority of chapters in this book and others using the varieties of capitalism framework use Germany as the prime example of a coordinated market economy. Germany is, however, "a moving target," and there is substantial evidence of a weakening of the coordinating institutions in both industrial relations and capital markets.18 It is thus questionable to what extent Germany can remain the poster child for an alternative to deregulated liberal market economies" (Howell etal 2003:110)
+
+Germany as a moving target. (note on p.110)
+
+
+
+
+"...the sort of state capacity that was historically required for the defense of nonliberal capitalism against regime incoherencea nd liberal erosion may no longer be in supply, for both domestic and international reasons....Today's second Great Transformation f the state, which in important respects appears to be a directr eversal of Polanyi's, would seem to amount not just to another wave of economic liberalization, but to a perhaps permanent dismantling of collective capacity to resist liberalization r bind it into and reconcile it with a nonliberal nstitutional ontex" (Howell etal 2003:111)
+
+Questionoing if divergence is sustainable in the long-run. (note on p.111)
+
+
+
+
+". The firmcentered political economy of the varieties of capitalism approach identifies a secondary role for states and is critical of earlier theoretical approachest hat assigned a central role to state action" (Howell etal 2003:111)
+
+The prior critic is due to lack of a relevant role for the State. (note on p.111)
+
+
+
+
+"Thus, states do not impose policies but rather induce private actors to act in their own interests by better coordinating their activities. In this task, those capacities usually associated with "strong" states are not necessarily the most valuable" (Howell etal 2003:111)
+
+How state acts in VoC: inducing private actor to coordenate. (note on p.111)
+
+
+
+
+"The close correspondence between a policy regime and the underlying institutional configuration of the political economy really only permits policies that accentuate the dominant form of coordination" (Howell etal 2003:112)
+
+The consequence of the little space of the state: it can only reinforce the dominant form of coordination. (note on p.112)
+
+
+
+
+"Labor is very much a minor actor in Varieties of Capitalism" (Howell etal 2003:113)
+
+No labor in VoC (note on p.113)
+
+
+
+
+"Trade unions often appear to exist only in order to solve collective action problems for employers and have little independent existence or histor" (Howell etal 2003:113)
+
+Unions only solves coordination problems. (note on p.113)
+
+
+
+
+"The danger of the perspective of Varieties of Capitalism is that it flattens history, explaining the failure of these more radical political economic projects as overdetermined, a restoration of equilibrium rather than a result of political conflict and the exercise of power in a contingent historical process. It is not clear what is gained by redefining the ubiquitous workplace conflict between employers and workers as a coordination problem. What is lost is the sense that power is exercised by actors with different interests and unequal resources and capacities" (Howell etal 2003:113)
+
+The limitations to treat class-strugles as a coordination problem. (note on p.113)
+
+
+
+
+"The Origins of Nonliberal Capitalism has a quite different theoretical thrust than Varieties of Capitalism. Its historical approach reintroduces politics into an overly functionalist account of political economy by identifying founding moments and lost alternatives and by exploring the political settlements and shifting coalitional bases that permit institutions to thrive" (Howell etal 2003:114)
+
+One alternative view to VoC. (note on p.114)
+
+
+
+
+"Varieties of Capitalism, which often appear more as snapshots that capture the organizing logic of contemporary political economies at a particular moment in time" (Howell etal 2003:114)
+
+VoC as an static framework. (note on p.114)
+
+
+
+
+"Many of the insights derived from the framework in Varieties of Capitalism also find confirmation here, and two scholars, Thelen and Vitols, contributed to both books" (Howell etal 2003:114)
+
+Dispite its divergences, this both approachs have some similar conclusions. (note on p.114)
+
+
+
+
+"4 The emphasis upon institutional interaction also leads several contributors to argue that welfare systems played a central role in the overall configuration of the political econom" (Howell etal 2003:115)
+
+The relevance of Welfare state (note on p.115)
+
+
+
+
+"The final important area of overlap with Varieties of Capitalism is the relative irrelevance of labor as an actor" (Howell etal 2003:115)
+
+Labor have little role here also. (note on p.115)
+
+
+
+
+"The Origins of Nonliberal Capitalism has a quite different theoretical thrust than Varieties of Capitalism by virtue of the centrality of state action, political conflict, and historical contingency in institutional construction, maintenance, and change." (Howell etal 2003:116)
+
+Differences with VoC; (note on p.116)
+
+
+
+
+"In these accounts, alliances between state elites and class and nonclass actors permit the construction of institutions, and states continuously have to recreate coalitions supporting these institutions. Thus, in The Origins of Nonliberal Capitalism, the causal arrows run not from a production regime to a set of supporting institutions, but in the opposite direction; the "historical causal sequence...extends from statebuilding through social policy and labor relations to the organization of production" (Streeck and Yamamura, eds., p. 14)" (Howell etal 2003:117)
+
+Reversing causality: from institutions to a production regime (note on p.117)
+
+
+
+
+"On the evidence provided by the contributors to The Origins of Nonliberal Capitalism, the centrality of the firm in Varieties of Capitalism may be more usefully understood as a historically specific reflection of contemporary economic conditions than as a more general theoretical statemen" (Howell etal 2003:117)
+
+VoC may not be a general statement: firm-centric approach correponds to the contemporaru economic conditions. (note on p.117)
+
+
+
+
+"In the course of exploring the interchange of ideas and institutions between Germany and Japan, Lehmbruch argues that the process of embedding institutions requires a shared cognitive framework. This "hegemonic discourse" selects certain institutions as more cognitively conceivable and feasible, imbuing them with greater legitimacy than others." (Howell etal 2003:118)
+
+There are some similarities with shared mental models framework. (note on p.118)
+
+
+
+
+"The Origins of Nonliberal Capitalism is bound to have little to say about the prospect of convergence among political economies at the beginning of the twentyfirst century. But the historical trajectory of Streeck's introductory chapter, with its emphasis upon the political preconditions of institutional development, does provide grounds for pessimism about the continued viability of national models of nonliberal capitalism" (Howell etal 2003:118)
+
+This alternative approach has little to say about convergence, but is pessimistic about sustaintability of nonliberal regimes. (note on p.118)
+
+
+
+
+"As noted above, there is a tendency in studies of varieties of capitalism for liberal market economies to appear as one-dimensional caricatures, refugees from an introductory economic textbook defined by their divergence from the coordinated market economy model rather than in their own terms. Throughout Models of Capitalism, by contrast, liberal market economies receive equal billing" (Howell etal 2003:120)
+
+In contrast with previous approaches, Models of Capitalists describe Liberal Market economis in its own terms and not as a negation of coordenated market. (note on p.120)
+
+
+
+
+"evidence from the 1970s and 1980s shows that British firms sought aggressively to change the institutions they faced, particularly in the sphere of industrial relations" (Howell etal 2003:120)
+
+Institutional arbitrage is at odd with empirical evidence: private actors try to change the institutionalset instead to move to anoter country. (note on p.120)
+
+
+
+
+"The second contribution of Models of Capitalism is its emphasis on the importance of the class context within which institutions operate" (Howell etal 2003:120)
+
+Other difference with VoC. (note on p.120)
+
+
+
+
+"Coates reminds the reader that institutions are a congealed form of social power, reflecting a particular moment or balance of power at the time of their construction" (Howell etal 2003:121)
+
+Institutions in Models of capitalism framework. (note on p.121)
+
+
+
+
+"The third corrective to institutional analysis that Coates provides is to focus attention upon the temporal dimension of capitalist developmen" (Howell etal 2003:121)
+
+Models of capitalism emphasizes the time dimention. (note on p.121)
+
+
+
+
+"What is required, in other words, is not simply institutional theory, but an institutional theory of capitalism. The intellectual promise of the varieties of capitalism approach opens up exciting new research agendas. The next step is to place its distinctive institutional analysis within a wider theoretical framework that incorporates historical trajectories, class relationships, and the development of capitalism as a global system." (Howell etal 2003:123)
+
+What should be the next steps according to the reviewer. (note on p.123)

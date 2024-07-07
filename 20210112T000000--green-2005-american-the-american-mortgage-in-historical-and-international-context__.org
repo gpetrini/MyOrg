@@ -1,0 +1,56 @@
+:mtime:    20211202152743 20211013082514
+:ctime:    20211013082514
+:END:
+#+TITLE: green_2005_American: The American Mortgage in Historical and International Context
+Time-stamp: 2021-01-12
+- tags ::
+
+
+* Backlinks
+[[denote:20210210T184827][Institutional comparisons]]
+
+* FISH-5SS
+
+
+|---------------------------------------------+-----|
+| *Background*                                  |     |
+| *Supporting Ideas*                            |     |
+| *Purpose*                                     |     |
+| *Originality/value (Contribution)*            |     |
+| *Relevance*                                   |     |
+| *Design/methodology/approach*                 |     |
+| *Results*                                     |     |
+| *(Interesting) Findings*                      |     |
+| *Research limitations/implications (Critics)* |     |
+| *Uncategorized stuff*                         |     |
+| *5SS*                                         |     |
+|---------------------------------------------+-----|
+
+
+* Specifics comments
+
+
+#+CAPTION: Mortgage terms across different countries
+|-----+-------------+---------+--------------+--------------+------------------------+----------------------+----------------------------------|
+|     | Typical LTV | Max LTV | 2nd Mortgage | Mortgage/GDP | Fixed term 10-20 years | Fixed term 20+ years | Repayment by fee-free redemption |
+|-----+-------------+---------+--------------+--------------+------------------------+----------------------+----------------------------------|
+| US  |         75% |     97% | A            |          69% | A                      | A                    | A                                |
+| DEN |         80% |     80% | A            |          70% | A                      | A                    | A                                |
+| FRA |         67% |    100% | L            |          25% | A                      | L                    | N                                |
+| GER |         67% |     80% | A            |          53% | L                      | L                    | N                                |
+| ITA |         55% |     80% | A            |          13% | L                      | L                    | N                                |
+| NTL |         90% |    115% | A            |         100% | A                      | L                    | N                                |
+| POR |         83% |     90% | A            |          51% | N                      | N                    | N                                |
+| SPA |         70% |    100% | A            |          42% | L                      | L                    | N                                |
+| UK  |         69% |    110% | A            |          69% | L                      | N                    | L                                |
+| JPN |         80% |     80% |              |          36% | A                      | A                    | L                                |
+| KOR |         40% |     75% | N            |          14% | L                      | N                    | A                                |
+| CAN |         65% |     90% | A            |          44% | N                      | N                    | N                                |
+| AUS |         63% |     80% | A            |          74% | N                      | N                    | L                                |
+|-----+-------------+---------+--------------+--------------+------------------------+----------------------+----------------------------------|
+
+* PDF highlights
+:PROPERTIES:
+:NOTER_DOCUMENT: ../../PDFs/Green e Wachter - 2005 - The American Mortgage in Historical and Internatio.pdf
+:NOTER_PAGE: 9
+:END:

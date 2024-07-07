@@ -1,0 +1,39 @@
+:mtime:    20211202152744 20211013082514
+:ctime:    20211013082514
+:END:
+#+TITLE: fazzariDemandledGrowthAccommodating2020: Demand-led growth and accommodating supply (2020, Cambridge Journal of Economics)
+Time-stamp: 2021-02-13
+- tags ::
+
+
+* Backlinks
+
+
+
+* FISH-5SS
+
+
+|---------------------------------------------+-----|
+| *Background*                                  |     |
+| *Supporting Ideas*                            |     |
+| *Purpose*                                     |     |
+| *Originality/value (Contribution)*            |     |
+| *Relevance*                                   |     |
+| *Design/methodology/approach*                 |     |
+| *Results*                                     |     |
+| *(Interesting) Findings*                      |     |
+| *Research limitations/implications (Critics)* |     |
+| *Uncategorized stuff*                         |     |
+| *5SS*                                         |     |
+|---------------------------------------------+-----|
+
+* Specifics comments
+ :PROPERTIES:
+ :Custom_ID: fazzariDemandledGrowthAccommodating2020
+ :NOTER_DOCUMENT: /home/gpetrini/Zotero/storage/FCTEY9AB/Fazzari et al. - 2020 - Demand-led growth and accommodating supply.pdf
+ :AUTHOR: Fazzari, S. M., Ferri, P., & Variato, A. M.
+ :JOURNAL: Cambridge Journal of Economics
+ :YEAR: 2020
+ :DOI:  http://dx.doi.org/10.1093/cje/bez055
+ :URL: https://academic.oup.com/cje/article/44/3/583/5714155
+ :END:

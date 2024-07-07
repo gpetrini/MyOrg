@@ -1,0 +1,37 @@
+:mtime:    20211202152741 20211013082514
+:ctime:    20211013082514
+:END:
+#+TITLE: goodhart_2008_House: House prices, money, credit, and the macroeconomy (Oxford Review of Economic Policy)
+Time-stamp: 2021-02-09
+- tags ::
+
+
+* House prices, money, credit, and the macroeconomy
+  :PROPERTIES:
+  :Custom_ID: goodhart_2008_House
+  :URL:
+  :AUTHOR: [[file:/HDD/Org/notes/2021-02-09-11-52-43-mccarthy_2002_Monetary.org::*Backlinks][Backlinks]]
+  :END:
+
+** FISH-5SS
+
+
+|---------------------------------------------+-----|
+| *Background*                                  |     |
+| *Supporting Ideas*                            |     |
+| *Purpose*                                     |     |
+| *Originality/value (Contribution)*            |     |
+| *Relevance*                                   |     |
+| *Design/methodology/approach*                 |     |
+| *Results*                                     |     |
+| *(Interesting) Findings*                      |     |
+| *Research limitations/implications (Critics)* |     |
+| *Uncategorized stuff*                         |     |
+| *5SS*                                         |     |
+|---------------------------------------------+-----|
+
+** Backlinks
+[[denote:20210210T091758][House Prices]]
+[[denote:20210210T092940][Household debt and Bank credit]]
+
+* Specifics comments

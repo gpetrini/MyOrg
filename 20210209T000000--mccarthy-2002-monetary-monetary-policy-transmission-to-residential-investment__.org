@@ -1,0 +1,92 @@
+:mtime:    20211202152745 20211013082514
+:ctime:    20211013082514
+:END:
+#+TITLE: mccarthy_2002_Monetary: Monetary Policy Transmission to Residential Investment
+Time-stamp: 2021-02-09
+- tags ::
+
+
+* Monetary Policy Transmission to Residential Investment
+  :PROPERTIES:
+  :Custom_ID: mccarthy_2002_Monetary
+  :END:
+
+** FISH-5SS
+
+
+|---------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| *Background*                                  | Residential investment volatility reduction is related to the deregulation in the housing finance system in the mid-1980s. As a consequence, mortgage markets are more connected to capital markets.                                        |
+| *Supporting Ideas*                            |                                                                                                                                                                                                                                             |
+| *Purpose*                                     | Investigate whether or not the monetary transmission mechanism channels have changed with these institutional breaks.                                                                                                                       |
+| *Originality/value (Contribution)*            |                                                                                                                                                                                                                                             |
+| *Relevance*                                   | This paper emphases the relevance of some institutional breaks for future empirical investigations.                                                                                                                                         |
+| *Design/methodology/approach*                 | The authors estimates both reduced and structural models to evaluate the response of housing market to a monetary policy shock. Estimation using GMM method.                                                                                |
+| *Results*                                     | The *magnitude* of the response to shock is similar to before the institutional break. The main difference is the *timming* of the response in which the housing market response is slower than before and more similar to the overall economy. |
+| *Sample*                                      | US: 1975-1985 and 1986-2000                                                                                                                                                                                                                 |
+| *(Interesting) Findings*                      | Quantitative financing constraint (?) has a smaller influence than before while pricing has become the rationaing mechanism.                                                                                                                |
+| *Research limitations/implications (Critics)* |                                                                                                                                                                                                                                             |
+| *Uncategorized stuff*                         |                                                                                                                                                                                                                                             |
+| *5SS*                                         | Page 146: "These results thus suggest that monetary policy is now transmitted to housing through pricing channels, rather than through quantitative financing restrictions, as was typical during the New Deal financing system era. "      |
+|---------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+** Backlinks
+[[denote:20210210T184406][Mortgage Interest rate]]
+
+** Model and covariates
+
+House price ($p^{d}$, demand):
+
+#+BEGIN_latex
+\begin{equation}
+p^{d} = p^{d}(h_{t}, c_{t}, u_{t})
+\end{equation}
+#+END_latex
+- $h_{t}$ housing stock
+- $u_{t}$ user cost
+- $c_{t}$ nondurable and services consumption (as a proxy for permanent income)
+
+House price ($p^{s}$, supply):
+#+BEGIN_latex
+\begin{equation}
+p^{s} = p^{s}((i_{t} - h_{t}), cc_{t})
+\end{equation}
+#+END_latex
+- $i_{t}$ log of residential investment
+- $cc_{t}$ construction cost index
+
+Equitlibrium condition:
+#+BEGIN_latex
+\begin{equation}
+p^{d^{*}} = p^{s^{*}} = p^{*}
+\end{equation}
+#+END_latex
+
+Residential investment equation
+
+#+BEGIN_latex
+\begin{equation}
+\Delta \frac{I}{H} = \lambda_{s} (p_{t-1} - p^{s}_{{t-1}}) + \theta_{0} + \theta_{1}\Delta p_{t} + \theta_{2} cc_{t} + \theta_{3} r + \theta_{4} \Delta p_{t}^{l} + \theta_{5} q_{t-1} + v_{t}
+\end{equation}
+#+END_latex
+- $r_{t}$ short term interest rate
+- $p^{l}$ land prices
+- $q_{t-1}$ quantity of new houses for sales
+- Only the first term is expected to be positive.
+
+  #+CAPTION: Residential investment estimation results (reduced form)
+  |-------------+----+----------------------+-----------------------------+--------------------+----------------------+------------------|
+  |             | EC | Home price inflation | Construction cost inflation | Real interest rate | Land price inflation | New homes supply |
+  |-------------+----+----------------------+-----------------------------+--------------------+----------------------+------------------|
+  | Full sample | +  | -                    | +                           | -                  | -                    | -                |
+  |   1975-1985 | +  | -                    | +                           | -                  | +                    | -                |
+  |   1986-2000 | +  | +                    | -                           | -                  | -                    | -                |
+  |-------------+----+----------------------+-----------------------------+--------------------+----------------------+------------------|
+
+  #+CAPTION: Residential investment estimation results (structural form)
+  |-------------+----+----------------------+-----------------------+--------------------+----------------------+------------------+-------------|
+  |             | EC | Home price inflation | Const. cost inflation | Real interest rate | Land price inflation | New homes supply | New deposit |
+  |-------------+----+----------------------+-----------------------+--------------------+----------------------+------------------+-------------|
+  | Full sample | +  | +                    | +                     | -                  | -                    | +                | +           |
+  |   1975-1985 | +  | +                    | -                     | -                  | +                    | -                | +           |
+  |   1986-2000 | +  | +                    | +                     | -                  | -                    | +                | -           |
+  |-------------+----+----------------------+-----------------------+--------------------+----------------------+------------------+-------------|

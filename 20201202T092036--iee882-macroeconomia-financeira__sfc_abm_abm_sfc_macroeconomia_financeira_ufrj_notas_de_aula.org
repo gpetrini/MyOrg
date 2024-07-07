@@ -1,0 +1,2186 @@
+:ctime:    20201202092036
+:END:
+#+OPTIONS: num:nil H:6 ':t
+#+title: IEE882 - Macroeconomia Financeira
+#+AUTHOR: Gabriel Petrini
+#+DATE: 2º Semestre 2020
+#+LANG: pt_Br
+#+filetags: SFC_ABM ABM SFC Macroeconomia_Financeira UFRJ Notas_de_Aula
+
+* Introdução ao curso <2020-12-02 qua>
+
+** Introdução
+
+- Ênfase na relação entre lado real e financeiro à partir de uma abordagem *minskyana*
+- Destaque à teoria da moeda endógena (moeda crédito)
+- As abordagens téoricas e analíticas serão complementadas com trabalhos empíricos recentes 
+
+** Para a próxima aula 
+
+*** TODO [#B] Minsky (1977, 1992) 
+*** TODO [#A] Kindleberger (2005) (caps. 1 e 2) 
+*** TODO [#C] Ferri (2011) (caps. 2, 3)
+
+* Introdução: Contextualização e conceitos básicos <2020-12-09 qua> 
+** Objetivo
+
+- Apresentar premissar, questões e conceitos básicos, bem como delimitar o curso
+- Estrutura
+  + Premissas e conceitos básicos relacionados aos ciclos econômicos
+  + Alguns elementos e interpretações descritivas de crises financeiras
+  + Apresentação dos elementos da Hipótese da Instabilidade Financeira
+
+** Premissas e conceitos básicos
+- *Decisões locais, impactos sistêmicos:* sistema decentralizado de produção em economias mercantis. Desequilíbrio é a norma
+- *Moeda importa:* economias /monetárias/; a finalidade da produção é acumulação de capital (lucro como fim)
+- *Mundo permeado por incertezas fundamentais:* não se conhecem todas as distribuições de probabilidade relevantes
+- *Racionalidade limitada:* racionalidade local, parcial ou pelo menos agentes agindo de forma a atingir um ou mais objetivos
+- *Moeda fiduciária:* não há restrição física à quantidade de moeda que circula na economia
+- *Criação de moeda endógena:* maior parte da moeda em circularção é moeda bancária. Bancos comerciais criam moeda /ex nihilo/ via concessão de crédito
+- *Princípio da Demanda Efetiva:* a demanda é, na maior parte do tempo, a principal restrição à expansão da produção
+- *Heterogeneidade importa:* nada de agente representativo
+
+*** Ciclos econômicos: fases 
+
+Analiticamente, separa-se ciclos de tendência. Objetivo do curso é explicar as flutuações e não a tendência.
+
+Ascendente $\Rightarrow$ Pico $\Rightarrow$ Recessão $\Rightarrow$ Vale $\Rightarrow$ Ascendente $\Rightarrow \ldtos$
+
+*** Ciclos econômicos: impulso, propagação e amplificação
+
+- *Impulso:* eventos (em geral exógenos) que perturbam a atividade econômica
+- *Propagação:* mecanismos que contrabalanceiam e absorvem eventuais choques a que a economia tem sido submetida 
+- *Amplificação:* eventos ou mecanismos que magnificam um impulso inicial
+
+*** Explicações endógenas ou exógenas dos ciclos econômicos
+
+- *Exógenas:* Impulsos estocásticos à economia, o quais não podem ser previstos
+- *Endógenas:* Mecanismos internos ao sistema econômicos são responsáveis por gerar flutuações da atividade, tirando-a de uma trajetória de equilíbrio (ou não permitindo que ele seja atingido)
+*** Periodicidade do ciclo
+- Curtos (estoques) $\Rightarrow$ Ciclos de Kitichin
+- Investimento em máquinas e equipamentos $\Rightarrow$ Ciclos de Juglar (7-8 anos)
+- Investimento residencial $\Rightarrow$ Ciclos de Kuznets (cerca de 20 anos)
+- Ciclos tecnológicos $\Rightarrow$ Ondas de Kondratiev (cerca de 50 anos)
+*** Causas reais e/ou monetárias
+
+- Transações reais quase sempre tem contrapartida monetária
+  + Ambas as esferas estão, portanto, relacionadas
+    - Lado Financeiro tem transações que são puramente monetárias
+- Quais são os elementos geradores dos ciclos econômicos?
+  + Prevalece o lado real ou financeiro?
+  + Como identificar qual lado prevalece?
+- Os aspectos monetários financeiros funcionam como amplificador ou são a gênese dos ciclos (o lado real sendo amplificador)?
+- O fato é que qualquer teoria monetária do ciclo precisa explicar como o lado produtivo é afetado!
+  + As duas causas não precisam ser mutualmente excludentes
+
+
+*** Fechamentos, regras comportamentais e causalidades
+
+- *Regra comportamental:* estabelece relação entre variáveis, de caráter explicativo (causal)
+- *Fechamento:* Indica sentido da causalidade, sendo intrinsicamente ligado à teoria subjacente
+  + Uma mesma estrutura contábil é compatível com vários fechamentos dos modelos
+  + Um mesmo fechamento pode ser compatível com diferentes subconjuntos de regras comportamental
+
+** Crises financeiras
+*** Crises financeiras
+
+- As crises financeiras ocorrem quando parte dos ativos financeiros, de um ou mais mercados, perdem repentinamente uma grande parte do seu valor de mercado
+  + Geralmente relacionadas com elevado grau de alavancagem dos agentes
+- Geralmente (mas não necessariamente) coocorrem em fases em fases decencentes dos ciclos econômicos, embora nem todas contrações sejam acompanhadas por crises financeiras
+  + Nem sempre crise financeira implica recessão
+- Porém, depressões (contrações mais agudas da atividade econômica) geralmente são acompanhados de crises financeiras
+  + Fenômenos difíceis de estudar, pois são relativamente raros e idiossincráticos
+*** Elementos/mecanismos básicos 
+- Excesso de optimismo $\Rightarrow$ Expansão de crédito $\Rightarrow$ Inflação de ativos financeiros $\Rightarrow$ redução dos custos de capital $\Rightarrow$ mais investimento $\Rightarrow$ boom
+- Investimento não geram os lucros esperados $\Rightarrow$ Lucro como /turning point/ $\Rightarrow$ boom para burst
+- Investimento $\Rightarrow$ aumenta capacidade produtiva e produtividade $\Rightarrow$ preços se reduzem $\Rightarrow$ ciclos podem ocorrer sem inflação
+*** Tipos de crises financeiras
+- Crises inflacionárias
+- Cambial/crise da dívida externa (restrição externa)
+- Crise de dívida (privada ou pública)
+- Crise bancária
+*** Risco vs risco sistêmico
+
+- *Falácia de composição:* erro metodológico que consiste em generalizar para o todo elementos que são das unidades
+- *Riscos envolvidos em uma transação:* risco de contraparte, de crédito, de liquidez, de mercado, etc
+- *Riscos sistêmicos:* tendem a magnificar os riscos individuais por conta das externalidades, interconexões, interdependência, etc
+- $\therefore$ Risco individual ~!=~ Risco sistêmico
+*** Bolhas
+
+- Preços de ativos desviam fundamentalmente e sistematicamente dos "fundamentos"
+- São relativamente pouco frequentes e difíceis de identificar em um primeiro momento
+- Estouro de bolhas pode levar
+*** Alguns ingredientes comuns em crises financeiras 
+- Antes da crise eclodir
+  + Boom de crédito
+  + Euforia no mercado financeiro
+  + Mecanismo de preços/bolha em crises financeiras
+- Quando a crise eclode
+  + Contenção aguda da liquidez em muitos mercados financeiros
+  + Falência de bancos (crise bancária)
+  + Efeitos em cascata decorrentes das interconexões entre os agentes
+  + Coocorrência de crise cambial, crise de dívida, crise de inflação
+
+** Hipótese de Instabilidade Financeira 
+*** Teoria Minskiana e suas heranças
+
+- Minsky possui uma teoria do ciclo e da crise
+- Política econômica e teoria estão com frequência em sua obra
+  + Ênfase do curso em teoria
+- Investimento como /causa causans/ dos ciclos econômcios (em Keynes)
+- Teoria minskiana generaliza as implicações para o lado dos passivos
+  + Investimento precisa ser financiado, tendo implicações para o passivo das empresas *não-financeiras*
+  + O principal ponto do curso é que esse tipo de generalização é condição necessária, mas não suficiente, para explicar o papel do lado financeiro nos ciclos econômicos e nas crises
+
+**** Ciclos endógenos e o paradigma de Wall Street
+
+- Crises como fenômenos produzidos *endogenamente* pelo funcionamento regular das economias capitalistas
+  + O investimento determina o produto; as finanças determinam o investimento
+- *Paradigma de Wall Street:* mundo da dívida, do crédito, da avaliação da riqueza, da motivação financeira
+- *Importância do caráter intertemporal:* dinheiro hoje por promessas de pagamentos futuros
+
+**** Dinâmica dos balanços patrimoniais 
+- Teoria centrada na evolução dinâmica dos balanços patrimoniais
+  + Compromissos financeiros de hoje são provenientes da estrutura dos passivos herdados
+- Atividade econômica flutua porque o investimento flutua; investimento flutua porque as condições financeiras flutuam; a origem da instabilidade econômica seria, portanto, financeira
+*** Dinâmica dos balanços patrimoniais
+
+- Compromissos de hoje são provenientes da estrutura dos passivos herdados que, por sua vez, transportam temporalmente as decisões passadas
+- Como se decide acumular ativos não financeiros por meio do investimento? Como será financiado?
+- Fluxo de caixa tem duplo propósito: financia o investimento e valida as dívidas pretéritas
+
+Atividade econômica flutua porque o investimento flutua; o investimento flutua VER SLIDES
+
+
+*OBS:* Saldo financeiro não pode incluir amortização da dívida
+*** Papel das expectativas
+
+Determinam as decisões de investimento, a oferta e a demanda de crédito:
+
+- Risco do emprestador: default
+- Risco do devedor: falência
+- Aporta-se um elemento de subjetividade à teoria
+
+
+*Problema essencial:* o investimento traz retornos incertos
+*** Elementos da demanda e determinação do lucro
+VER SLIDES
+- Determinação do lucro passa pelo investimento
+- Determinação do investimento depende do fluxo de caixa
+  + Ampliação do investimento de outras firmas amplia o fluxo de caixa no agregado $\Rightarrow$ falácia da composição
+*** Determinação do investimento
+VER SLIDES
+Papel das expectativas, da incerteza, da euforia e se manifestam por meio de aspectos financeiros. A teoria do investimento de Minksy é a de dois preços
+
+- Preço da demanda por investimento ($P_{K}$): preço que os empresários estão dispostos
+
+
+
+* Panorama das teorias: conexões reais-financeiras <2020-12-16 qua>
+
+** Conexões reais-financeiras nas teorias do ciclo
+
+- textcite:haberler_1946_Preliminary argumenta que a diferença entre as teorias é de *ênfase* dos mecanismos. Classificação:
+  + Teoria do ciclo monetário puro
+  + Teorias de sobreinvestimento
+    - Monetárias
+    - Não monetárias
+    - Derivadas da demanda (princípio da aceleração)
+  + Teorias de sobreendividamento e deflação
+  + Teorias de subconsumo
+  + Teorias psicológicas
+    - Otimismo, pessimismo, irracionalidade
+- Relações reais-financeiras tem uma tradição longa, mas possuem pouco protagonismo
+- São bidirecionais
+  + Choques gerados do lado real podem ser propagados pelos mecanismos financeiros, ampliando crises
+  + Os mercados financeiros podem ser fonte de choques, que se propagam para o lado real
+
+** Teoria do ciclo monetário puro cite:haberler_1946_purely
+
+A teoria começa a partir da definição de que
+
+$$
+MV = PY
+$$
+
+$$
+MV \Rightarrow PY
+$$
+*** Aumento na oferta de moeda nas expansões
+
+- *Premissa 1:* Moeda bancária constitui maior parte da moeda em circulação
+- *Premissa 2:* Concorrência bancária faz com que os bancos caminhem (quase simultaneamente) no mesmo sentido na expansão do crédito
+- Lado que contribui para a expansão da economia é o aumento da *oferta* de crédito
+- *Demanda* por crédito é induzida pela oferta
+  + Extensão dos prazos
+  + Menor rigor na seleção dos projetos/uso do dinheiro
+  + _Queda na taxa de juros_ (Principal fator)
+*** Aumento do crédito gera expansão da produção/demanda/renda
+
+- *Premissa 3:* Demanda exerce um papel indutor
+- Os grupos de agentes (comerciantes) muito sensiveis à taxa de juros são os principais tomadores de empréstimos
+*** Perpetuação da expansão do ciclo
+
+- Aumento da produção pressiona a capacidade produtiva, aumentando nível de preços
+  + Comerciaintes, que aumentam seus estoques, têm ganhos de capital e são estimulados a encomendar ainda mais, gerando um processo cumulativo de expansão
+    - Eventualmente, podem utilizar reservas para adquirir mais estoques, aumentando $V$
+*** Reversão da expansão
+- Limitações institucionais
+  + Na época, padrão-ouro
+- Haverá, de forma defasada em relação ao aumento de preços, elevação dos salários nominais
+  + Eleva demanda por moeda manual uma vez que são os comerciantes que demanda mais moeda bancária
+    - Reduzindo reservas bancárias $\Rightarrow$ redução da oferta de crédito (menor liquidez do setor bancário)
+  + Estabelece-se um processo cumulativo de sinal contrário, levando a economia a uma contração
+*** Quando cessa a reversão
+
+- Pagamento dos comerciantes vai reconstituindo as reservas
+- VER SLIDES
+
+** Completando a lista de textcite:claessens_2018_Frontiersa
+Na ortodoxoia, houve uma retomada do interesse nas finanças ao longo da década de 80
+- Bolhas racionais
+- Papel da moeda e dos bancos na economia
+- Mais recentemente, os modelos DSGE têm incluido imperfeições e fricções
+
+Não há menção à:
+- Godley e crips
+- Modelos SFC pós-Godley
+- Teoria pós-Keynesiana
+- Modelos AB financeiros
+
+** Teorias neoclássicas das relações entre lado real e financeiro
+
+textcite:claessens_2018_Frontiersa dividem em dois subgrupos
+
+- Teorias neoclássicas mais tradicionais: papel do *preço dos ativos* no consumo e investimento
+  + Mercados completos e com market clearing
+- Teorias com imperfeições financeiras e acrescentam mercados incompletos, que trazem outras implicações
+
+*** Preço dos ativos
+
+- Corresponde ao valor do fluxo de caixa esperado, trazidos a valor presente utilizando uma taxa de desconto
+  + Essa taxa de desconto incorporda diversos elementos
+    - Preferência dos indivíduos
+    - Riscos
+    - Fatores reais
+- Preço dos ativos atuam como *sinalizadores*, instruindo a alocação de recursos dos indivíduos e empresas
+  + Uma sinalização particularmente importante está relacionada ao fato de que os preços dos ativos incorporariam informações sobre a lucratividade e crescimento de renda futura
+- O preços dos ativos influenciam a demanda agregada por dois canais:
+  + Canal do Consumo: Efeito riqueza e/ou substituição via ganhos de capital, taxa de juros, Efeito-Pigou
+  + Canal do Investimento: custo de uso do capital (afetado pela taxa de juros real e pelo preço do capital), teorias do q de Tobin
+
+*Muito importante:* nesta visão, conexões reais-financeiras acontecem predominantemente via mecanismos de preço (incluindo taxa de juros)
+
+*** Imperfeições financeiras: mecanismos básicos
+:PROPERTIES:
+:mtime:    20211013082514
+:ctime:    20201202092036
+:END:
+
+- Tais "imperfeições financeiras" se originam nos problemas de assimetria de informação e de /enforcement/
+  + Pela assimetria de informação, os credores sabem menos sobre o retorno dos projetos de investimento que os demandandos por empréstimo
+  + Com isso surgem problemas de risco moral
+- A principal consequência é que os mercados se tornam incompletos: nem todos os projetos economicamente viáveis são financiados, podendo levar a racionamento de crédito
+  + Restrições ao gasto
+- Esses mecanismo operam pelo lado da *demanda* de crédito
+  + Diante desses problemas, os balanço dos agentes provêem informações relevantes para os emprestadores sobre a qualidade dos tomadores
+
+*** Modelos de acelerador financiro :ATTACH:
+:PROPERTIES:
+:ID:       bc1a1362-7866-43e4-be4d-27cea4057fd2
+:END:
+
+**** Lado da demanda
+
+[[attachment:_20201216_110832Captura de tela de 2020-12-16 11-05-29.png]]
+
+**** Lado da oferta :ATTACH:
+
+[[attachment:_20201216_110942Captura de tela de 2020-12-16 11-09-25.png]]
+
+*** Problemas do lado da oferta do sistema financeiro
+
+- São enfatizados os aspectos relacionados aos balanços das instituições financeiras
+  + Impactam /liquidez/ sistêmica e a disponibilidade de crédito para financiar o consumo e investimento
+- VER SLIDE
+- Três canais de influência da oferta nos ciclos e crises
+  + *Canal do crédito:* limitado aos bancos comerciais, afeta diretamente a quantidade e distribuição da liquidez no sistema econômico
+    - Um dos grandes responsávies pela transformação de maturidade
+    - Afeta a transmissão da política monetária
+  + *Capital bancário:* geralmente pró-cíclico, afeta a capacidade de /funding/ e a solvência das instituições, está sujeito à regulação, como por meio de índice mínimo de capital, e às flutuações no valor dos ativos/passivos bancário
+    - Exemplo: Em crises, a qualidade dos ativos bancários se deteriora, reduzindo a base de capital, afetando o poder de emprestar dos bancos
+  + *Alavancagem do sistema financeiro:* geralmente pró-cíclico
+    - Pode estimular bolhas e seu estouro
+
+* Panorama das regularidades empíricas: seminários <2021-01-06 qua>
+
+* Introdução à abordagem SFC <2021-01-27 qua>
+
+** Pontos Centrais
+
+- A abordagem SFC se trata de uma ferramenta analítica rigorosa e potencialmente poderoda por ser capaz de lidar com a intragração real e financeira
+- A característica mais importante da abordagem é uma caracterização mais completa do sistema econômico, com foco particular nos aspectos monetários e financeiros que permeiam a vida econômica.
+- Compatível com diferentes /closures/
+
+** Definição e contextualização
+
+*** Definição de SFC
+
+Numa definição ampla, a abordagem SFC consistem na modelagem contabilmente rigorosa das dinâmicas dos balanços patrimoniais e de transações de todos os setores institucionais contidos em uma determinada economia (ou conjunto de economias).
+- Traços de teoria Kaldoriana
+
+*** Semelhanças com a escola de Yale
+
+Elementos da abordagem das /pitfalls/:
+- Precisão no tratamento do tempo
+- Rastreamento dos estoques
+- Muitos ativos e muitas taxas de retornos
+- Modela-se operações monetárias e financeiras
+- Respeitam-se restrições "walrasianas" e restrições de doma nas equações de portfólio
+
+** A contabilidade e os modelos SFC
+*** Lógica da abordagem
+
+Do ponto de vista mais geral, a abordagem SFC busca apreender implicações lógicas que derivam de características e/ou princípios econômicos e contábeis pouto controversos.
+- A ideia é que fazendo isso, poderia se monorar os problemas relacionados à imprecisão das estimativas de parâmetros estruturais do modelo
+  - A ideia é que fazendo isso, poderia se monorar os problemas relacionados à imprecisão das estimativas de parâmetros estruturais do modelo
+
+*** Princípios básicos
+
+- Toda transação tem uma contraparte
+- Partidas quádruplas
+  + Deriva da ideia de que toda transação possui duas pontas, cada qual com registros em partidas dobradas
+  + Considerando uma economia monetária, a maior parte dessas transações envolverá algum fluxo monetário/financeiro
+- Setores institucionais
+  + Agregam unidades econômicas com atributos/comportamento econômico similar
+  + Introduz alguma heterogeneidade de agentes. Caso contrário, as transações líquidas financeiras se anulam
+- Características institucionais de baixo nível
+  + Existe moeda e é aceita como meio de pagamento;
+  + Existem instrumentos para emprestar poder de compra
+
+*** Conta corrente vs Conta capital
+
+- *Conta corrente:* Registra as atividades de produção de bens e serviços, o processo de geração de renda e a distribuição de renda gerada
+- *Conta capital:* mostra como a poupança bruta da economia financia a formação bruta de capital fixo e a formação de estoques (aquisição de ativos não financeiros).
+*** Natriz de reavaliação
+
+A matriz de reavaliação está instrinsecamente ligada à caracterização do balanço patrimonial. Em /ativos financeiros/, macroeconomicamente, não há ganhos de capital sem perda de capital em algum lugar.
+- Valor de mercado é determinada pela transação da ponta
+- Se o imóvel valer mais, não há necessariamente em perda de capitais se não houver transações
+
+*** /Full integration matrix/
+
+A riqueza bruta e líquida de cada setor institucional estão fundamentalmente interconectadas e são integradas no tempo:
+
+Patrimômnio líquido inicial $\Rightarrow$ Acumulação de capital não financeiro, Poupança financeira e Ganhos de capital $\Rightarrow$ Patrimônio líquido final
+
+** Sintetizando: Integração real-financeira
+
+1. Contas-correntes $\Rightarrow$ Registram produção, renda, distribuição e alocação entre consumo e poupança
+2. Deduzindo-se da renda o consumo $\Rightarrow$ saldo final das contas correntes  = poupança
+3. Conta capital $\Rightarrow$ aquisição de ativos não financeiros é inferior ou superior à poupança? $\Rightarrow$ capacidade ou necessidade de financiamento
+4. Capacidade ou necessidade de financiamento conecta os lados "real" e financeiro da economia
+5. Conta financeira $\Rightarrow$ registra os empréstimos cedidos e tomados entre os diversos instrumentos financeiros
+6. Balanço patrimonial $\Rightarrow$ reflete os fluxos de investimento real e a aquisição de ativos/passivos financeiros (incluindo mudanças no valor dos ativos e dos passivos e aparecimento/desaparecimento de direitos/obrigações financeiras).
+
+** SFC, teoria e análise
+
+*** Da contabilidade às teorias
+
+- A formulação de um modelo SFC geralmente se inicia com a definição das matrizes de balanço e de transações
+  + A configuração da economia de que se trata depende do objeto de quem modela
+- Um passo posterior é estabelecer /reegras comportamentais/ e /closures/ para as variáveis do modelo
+  + Deve-se, calro, garantir sua coerência contábil
+    - Exemplo: as restrições orçamentárias devem ser válidas a cada período de tempo
+- Na abordagem SFC, é impossível ignorar o caráter monetário das economias contemporâneas
+  + Por outro lado, visões mais afeitas ao campo pós-keynesiano caracterizam a economia capitalista a partir da moeda, ainda que o grau de importância desse elemento seja nuançado
+    - Exemplo: noção de uma economia monetária da produção de Keynes e moeda endógena
+- A teoria keynesiana atribui papel importante à alocação de riqueza para os resultados econômicos
+  + Algumas interpretações enfatizam, por exemplo, que a decisão de alocação de riqueza influenciam decisivamente a demanda efetiva e, portanto, o nível de produto e de emprego
+    - A abordagem SFC permite lidar com estas questões de forma natural
+  + Os modelos mais canônicos ortodoxos praticamente não tratam da importância de estoques financeiros (com exceção talvez da dívida pública ou da quantidade de moeda)
+- Resultados não são isomórficos às decisões dos agentes que o geraram
+- Importância das interconexões setoriais como fator de restrição na economia
+  + O oposto do que ocorre com agentes representativos
+
+**** Mapeamento de ganhos/perdas de capita
+
+Ganhos de capital de um agente correspondem a perdas de capital de outros, o que não quer dizer que os ganhos de capital sejam economicamente neutros.
+- Exemplo: Na crise rencente da economia brasileira, houve perda de capital por parte das empresas, que estavam endividadas em dólar
+  + A contrapartida foi o ganho de capital (em reais), dos credores dessas firmas.
+    - Houve perda líquida para a economia brasileira (menor velocidade de digestão da alta alavancagem das firmas) e talvez até para os credores (maior risco default).
+
+** Como fazer um modelo SFC
+*** Fazendo um modelo SFC
+
+1. Estabelecer estrutura contábil da economia: definição de setores institucionais, balanços patrimoniais, matriz de transações correntes e fluxos de fundos e reavaliação (ganhos de capital)
+2. Fizar um primeiro conjunto de relações comportamentais de cada setor institucional
+3. Estabelecer equações comportamentais para as transações não determinadas pela estrutura contábil da economia
+4. Resolver o modelo e analisar os resultados
+*** Estrutura básica
+
+1. Tempo
+2. Setores institucionais ($i$)
+3. Variáveis de estado dos setores institucionais
+4. Vetores de parâmetros macro
+5. Condições inciais
+6. Estrutura de interação
+7. Regras de decisão dos agentes
+8. Variáveis agregadas
+*** Solução do modelo
+Os modelos podem ser feitos tanto em tempo contínuo quanto discreto:
+
+1. Analítica: Mais robusta, mas menos frequente
+   a. Dificuldade: modelos devem ser de menor escala
+2. Numérica: Mais limitada, porém é adequada para modelo de qualquer tamanho
+3. Discursiva: pode ajudar a organizar a descrição de um fenômeno sem imposição de regras comportamentais
+**** Regras comportamentais típicas
+1. Determinação dos gastos: consumo e investimento
+2. Financiamento dos gastos e uso/fonte dos saldos
+3. Alocação de riqueza
+   a. Geralmente, segue-se o modelo de alocação de portfólio de Brainard-Tobin
+   b. Recentemente, Kemp-Benedict e Godin introduziram risco no esquema de alocação de portfólio de Tobin
+4. Oferta agregada
+5. Comportamento do sistema financeiro
+   a. Mesmo que o banco central não seja explicitamente modelado, a esmagadoria maioria dos modelos considera que o BC fixa a taxa de juros e que a quantidade de moeda-crédito é endógeno
+   b. Alguns modelos incluem racionamento de crédito por parte do sistema bancário
+
+** Fronteiras e limites
+
+- Nas especificações de como os mercados financeiros afetam o mercado de bens
+- Nas especificações de como operam o sistema financeiro, racionamento de crédito, etc
+
+No fundo, há potencialmente mauitas hipóteses comportamentais /ad hoc/ que deveriam ser mais bem justificadas do ponto de vista empírico/teórico, mas que perdem no emaranhado de equações dos modelos SFC
+
+*** Dependência de trajetória
+
+- O tempo realmente importa nos modelos SFC? para responder a essa pergunta, deve-se observar se os modelos possuem dependência de trajetória
+  + Este não é o caso na maior parte dos modelos SFC
+- As soluções dos modelos geralmente é determinísticas: para um dado conjunto de parâmetros, o modelo converge para normas estoque-fluxo idênticas, mesmo com potenciais perturbações na trajetória
+
+Portanto, apesar de a trajetória ser contabilmente rigorosa, na maior parte dos usos atuais da ferramenta não se pode dizer, a rigor, que o tempo importa.
+
+*** Fluxos intra-setoriais
+
+Um problema intrínseco nos modelos SFC agregados é os dos fluxos intra-setoriais
+
+- Muitas transações financeiras ocorrem dentro de um mesmo setor institucional (por exemplo, mercado interbancário)
+- Ao tratar setores institucionais de forma agregada, deixa-se de lado problemas trazidos pela distribuição dos recursos e usos dentro daquele setor institucional
+
+Nem sempre isso será um problema, mas a resposta de muitas questões não podem prescindir da avaliação dessas distribuições.
+**** Exemplo: Steindl (1952)
+
+Duas firmas, mesmo setor, mesma relação capital produto e mesma estrutura de custos. Suponha que ambas as firmas queiram investir o mesmo montante e que uma delas tem margem de lucro maior, de forma que os lucros retidos são maiores:
+
+|----------------------------------------+---------+---------+-------|
+|                                        | Firma 1 | Firma 2 | Total |
+|----------------------------------------+---------+---------+-------|
+| Investimento                           |     -50 |     -50 |  -100 |
+| Lucro retido                           |     +20 |     +80 |  +100 |
+| Necessidade de financiamento           |     +30 |     -30 |     0 |
+|----------------------------------------+---------+---------+-------|
+| Variação líquida de ativos financeiros |     -30 |     +30 |     0 |
+|----------------------------------------+---------+---------+-------|
+
+** Resumo
+
+Arquitetura excelente para estudar conexões reais-financeiras, mas para estudar o lado financeiro é importante desagregar
+
+Vantagens:
+- Pressupõe a importância das finanças
+- Pressupõe que os setores institucionais são interrelacionados
+- Permite abordar as interações reais-financeiras
+- É contabilmente rigoroso, ajudando a prevenir erros de lógica
+- Impões restrições lógicas
+- Permite estudar uma variedade enorme de tópicos
+- Possui caráter fortemente contábil, mas nem por isso é agnóstico do ponto de vista teórico
+Desvantagens:
+- É passível de muita /ad hocery/
+- Impede adequada análise de heterogeneidades emergentes dentre dos setores institucionais
+- Não permite tratar de fluxos intersetoriais
+- O equilíbrio do modelo não implica que todos os agentes estão em equilíbrio
+- Negligencia o papel da formação de redes
+- São excessivamente determinísticos e não permitem geração de crises financeiras sem mecanismo(s) /ad hoc/
+
+* Características da abordagem Agent-Based <2021-02-03 qua>
+** Referências:
+- textcite:pyka_2005_AgentBased
+- textcite:delligatti_2010_Complex
+- textcite:farmer_2009_economy
+
+** Objetivos
+
+- Conceituar e oferecer um panorama da estrutura de modelos Agent-Based (ABM)
+- Estabelecer como essa classe de modelos constituem uma ferramenta para criar estruturas úteis para representação de economias complexas
+- Aplicação da ferramenta ABM em combinação com a abordagem SFC é adequada para lidar com processos financeiros em perspectiva macroeconômica
+
+** Sistemas complexos e os modelos Agent-Based Computacionais (ACE)
+Um sistema é definido como complexo se duas propriedades estiverem presentes cite:tesfatsionAgentBasedComputationalEconomics:
+
+- Existem unidades que *interagem*
+- Sistema deve apresentar *propriedades emergentes*
+  + Características que surgem a partir das interações dos agentes, sem ser propriedades inerentes aos indivíduos em si
+  + Ex: paradoxo da poupança
+
+*** Sistemas complexos adaptativos
+Sistemas complexos *adaptativos* podem incluir (ao menos):
+
+- *Entidades reativas:* diferentes condições ambientais geram subconjunto diferente de ação por parte dos agentes
+- *Entidades orientadas a objetivos:* pelo menos parte das ações dos agentes são direcionadas a um ou mais objetivos
+- *Entidades planejadoras:* unidades orientadas a objetivos que procuram alterar as condições do ambiente para atingir o resultado desejado
+
+Os ABM são capazes de representar sistemas complexos adaptativos:
+
+- Antítese da noção de agente representativos
+- Resultados agregados não isomórficos às decisões e interações que o geram
+  + Permite-se feedbacks e análise multinível (micro, meso e macro)
+    - Distribuições são um exemplo de características mesoeconômicas (ex: distribuição de alavancagem, modelos de trânsito)
+- Constituem uma forma de microdundamentar análises macro e incorporar as restrições sistêmicas às decisões micro, geralmente de forma integrada
+
+** Agent-Based Computation Economics (ACE)
+
+Os ABM quase nunca possuem solução analítica.
+São quase sempre apresentados na forma de um programa de computador.
+Há uma infinidade de possibilidade para implementação desses programas, incluindo diferentes paradigmas de programação:
+- Programação orientada a objeto
+- Programação por funções e matrizes
+
+** Fundamentos
+
+- Modelam-se processos de desequilíbrio
+- Abordagem /bottom-up/: agentes como unidade de decisão
+  + A garantia das identidades contábeis se dá pela inclusão das partidas quádruplas nas relações entre os agentes
+    - Isso não implica em uma imposição /top-down/
+    - Pode-se incluir chacagem para garantir que isso é válido no todo
+- Heterogeneidade (/ex ante/ e/ou /ex post/)
+  + Exemplo /ex post/: agentes iniciados igualmente e são diferentes ao fim da simulação
+- Racionalidade limitada, local, parcial
+- Possibilidade de decisões assíncronas
+- Interações endógenas, no tempo e no espaço
+- Agentes possuem incerteza efetiva (futuro é desconhecido e não se conhecem as distribuição de probabilidade relevantes)
+- Mecanismos de seleção pelo mercado
+
+** Estrutura, entradas e saídas dos ABM
+
+*** Estrutura do ABM
+
+- Tempo: $t=0,1,2,\ldots, T$
+- Agentes, cada qual com $N$ unidades
+- Variável de estado das unidades
+- Vetores de parâmetros microeconômico
+- Vetores de parâmetros macroeconômicos
+- Condições iniciais
+- Estrutura de interação
+- Regras de decisão dos agentes
+- Variáveis agregadas
+
+*** Estrutura da economia
+A estrutura da economia está relacionada à definição de:
+- Quais agentes incluir no modelo?
+- Quais os tipos de interação incluir?
+- Quais mercados incluir?
+
+A escolha da estrutura depende da pergunta que se quer responder.
+Exemplos:
+- Formação de redes relacionados ao mercado de crédito
+- Efeito de regras fiscais no crescimento
+- Explicação da convergência (ou não) entre países
+- Mecanismos de transmissão da política monetária
+
+*** Modelando o comportamento dos agentes
+
+Uma vez definida a estrutura da economia, é necessário explicitar as estruturas de interação e as regras de decisão dos agentes.
+Nesse ponto, entram mais fortemente as teorias e evidenciam-se as características mais amplas da abordagem:
+- Racionalidade limitada
+- Adoção de rotinas e regras de bolso
+- Processos cumulativos e interdependência
+
+Na formulação das regras comportamentais, pode-se:
+- Basear em teoria
+- Utilizar-se de evidência empírica no nível micro
+- Utilizar regras do tipo /what if/ (normativas)
+
+Teoria e aleatoriedade:
+- Relações estruturais, fundamentadas na teoria
+- Grau de importância de fatores aleatórios
+
+/Closures/ teóricos (sentido das relações causais) são incontornáveis.
+
+*** Entradas e saídas de ABM :ATTACH:
+
+[[file:../.attach/5d/ef8fc4-de09-4ba6-bc56-98c2e55a55fe/_20210203_113426screenshot.png]]
+
+**** Propriedades das saídas
+
+- Dependência de trajetória
+- Não ergodicidade
+- Não linearidades
+- Pontos de inflexão
+- Formação de redes e "efeito borboleta"
+
+** Análise dos resultados: validação
+
+Com frequência, os resultados do modelo são coletados e contrastados com fatos estilizados.
+Para isso, geralmente se avaliam as propriedades estatísticas das séries de Monte Calor geradas com a economia artificial.
+Isso pode ser entendido como uma forma de *avaliar robustez do modelo*.
+
+*** Exemplos de fatos estilizados (ver slides)
+
+Microeconômicos:
+- Dispersão da produtividade entre as firmas é grande e as diferenças são persistentes
+- Investimento é /lumpy/ e tende
+
+*** Análise de política econômica
+Os ABM são, com frequência, usados para análise de política econômicas.
+Nesse sentido, pode funcionar como um laboratório artificial, mas não implica em agnosticismo.
+
+** Exemplos (Ver slides)
+*** Modelo de segregação
+Premissas do modelo:
+- Existem dois tipos de agente
+- Espaço finito
+- Cada agente ocupa um espaço
+- Agentes ficam satisfeitos quando um percentual de agentes do mesmo tipo superam um determinado nível percentual (parâmetro)
+- Se eles estão insatisfeitos, procuram outro lugar (que esteja vazio)
+**** Resultados
+A segregação surge mesmo
+
+** Problemas, limitações e dificuldades
+- Dificuldade de analisar causalidade, de avaliar os mecanismos pertinentes e de apreender o significado econômico dos resultados
+- *Flexibilidade:* muitas espeficicações plausíveis. Fica mais difícil dar credibilidade os modelos
+- Muitas ferramentas para implementação, pouca convergência sobre os protocolos para modelar.
+- Parâmetros não observáveis
+- Nem sempre os modelos possuem coerência contábil
+- Complexo demais para não versados na literatura
+  + Diminui difusão potencial
+- /Closures/ teóricos muitas vezes em segunda plano e/ou ofucados pela complexidade dos modelos
+
+*** Sensibilidade dos resultados a condições iniciais
+Os problemas estão relacionados à calibragem e validação.
+A dificuldade maior é o custo computacional para varrer o espaço paramétrico.
+Recentemente, tem-se tentado driblas os problemas de potencial falta de robustez dos resultados por:
+- Utilização de técnicas econométricas
+- Aprendizado de mática
+- Design de experimento e meta-modelagem
+- Análise de sensibilidade global (Sobol)
+
+**** Custo computacional (ver slides)
+
+Imagine três parâmetros a, b, e c
+- Suponha que ${a,b,c} \in [0,1]$ e que deseja-se testar a robustez dos seus resultados para valores diferentes desses parâmetros
+- Se serão testadas adições incrementais de 0.1, resultando em 11 valores possíveis
+- Cada combinação precisar ser modelada $M$ vezes
+
+** Modelos AB-SFC
+
+- SFC disciplina os modeladores
+- SFC contribui para aumentar o realismo das estruturas dos ABM
+- Princípios da abordagem SFC são aplícáveis no nível micro
+  + Imposição do princípio da partidas quádruplas nos agentes
+- SFC destaca mais os aspectos financeiros e mais negligências na literatura ABM
+- ABM lida com a crítica de Lucas
+- ABM produzem propriedades emergentes
+- ABM aporta capacidade de lidar com sistemas complexos, mapeando as relações mútuas dos diferentes níveis analíticos de forma muito mais satisfatórias
+- As /distribuições/ passam a importar para os resultados agregados
+
+* Acumulação de ativos não financeiros e instabilidade financeira <2021-02-10 qua>-<2021-02-24 qua>
+
+** Investimento induzido e o princípio do ajustamento do estoque de capital; Investimento induzido na visão de Minsky (tese de doutorado) <2021-02-10 qua>
+*** De onde vem a instabilidade do sistema capitalista?
+
+Majoritariamente, do investimento das empresas não-financeiras:
+- Pelas implicações oriundas do *financiamento* do investimento
+  + Redução da liquidez: ativo líquido $\Rightarrow$ ativo menos líquido
+  + Empréstimo
+  + Envolve escolhas de portfólio
+- Da incerteza que permeia a tomada de decisão, sendo que as expectativas estão sujeitas a alterações repentinas
+- Pelas interações entre as empresas que investem e seus financiadores
+  + Aceleração ao longo da expansão e desaceleração na desaceleração
+- Pela natureza monetária do sistema capitalista
+*** A visão de Minsky
+
+A visão de Minsky sobre a flutuação cíclica interliga aspectos institucionais, microeconômicos e macroeconômicos.
+A hipótese da instabilidade financeira (HIF) é a consolidação de um programa de pesquisa perene na vida de Minsky.
+*** Uma dualidade central
+
+- O investimento aumenta o ativo, pode aumentar a dívida, mas os fluxos de caixa futuros que ele pode gerar são *incertos*
+- Já a dívida possui desembolsos contratuais *precisamente estabelecidos*
+-  Se o investimento for crescentemente financiado por dívida, há um descasamento potencial entre os fluxos de caixa e os desembolsos necessários para honrar o serviço da dívida
+*** Um mecanismo genérico da HIF
+
+A instabilidade é gerada por:
+
+Maior otimismo $\Rightarrow$ Expansão do investimento $\Rightarrow$ Maior necessidade de financiamento por dívida $\Rightarrow$ maior endividamento (alavancagem) $\Rightarrow$ Maior fragilidade sistêmica $\Rightarrow$ Crise
+
+- Expansão de investimento está associada a estimação do fluxo de caixa.
+**** Corolários macroeconômicos
+- Maior dívida $\Rightarrow$ Maior endividamentio
+- Maior endividamento $\Rightarrow$ Maior fragilidade
+- Maior fragilidade $\Rightarrow$ Crise
+*** As complexidades
+
+Os complicadores macroeconômicos podem ser dinâmicos e interrelacionados.
+Exemplo:
+
+1. A expansão do investimento pode requerer elevação da dívida no curto prazo;
+   Molda a dinâmica do fluxo de caixa da unidade que investe;
+   Amplia o lucro agregado no curto prazo
+2. O crescimento da dívida pode ser requerido para investir, mas as obrigações financeiras dela decorrentes condicionam a capacidade de acumulação de ativos líquidos, afetando, paradoxalmente, a necessidade de recorrer a capital de terceiros no futuro
+3. Os fluxos de caixa são um fim em si mesmo, porém recursos para o investimento são a fonte primária de acumulação de ativos líquidos e permitem a validação das dívidas tomada no passado
+
+
+Outra parte esta associada a heterogeneidade dos agentes:
+
+- As *distribuições* do investimento, do fluxo de caixa e da dívida certamente afetam o resultados desses feedbacks no nível da firma
+- Talvez também afete a dinâmica das interrelações entre investimento-fluxo de caixa e dívida no agregado
+*** Centralidade do investimento das firmas
+
+Desde sua tese de doutorado, considerada o investimento empresarial como pença central do ciclo econômico:
+- Na tese de doutorado, ele trata do investimento induzido, dialogando diretamente com os modelos de multiplicador-acelerador
+- Mais tarde, dialoga diretamente com a teoria Keynesiana do investimento, elaborando a teoria dos dois preços
+
+Ambas teorias ressaltam a interrelação do investimento e seu financiamento, mas são qualitativamente diferentes.
+*** Breve incursão sobre os elementos na visão de Minsky já presentes em sua tese
+**** A tese de Minsky
+
+Intitulada "Investimento induzido e ciclos econômicos" e defendida em 1954.
+Já contia parte dos elementos fundadores do que serie o seu pensamento (refletindo a sua visão)?
+***** Centralidade do investimento e das finanças
+
+- A tese toda é articulada em torno do investimento (empresaria)
+- Se insere no contexto dos modelos multiplicador-acelerador e das intergaces com as teorias do ciclo econômico
+- Já trata da relação mútua entre investimento e aspectos financeiros de forma acoplada
+***** A importância dos fluxos de caixa (ver slides)
+
+Já existe na tese conceitos que aparecem posteiormente destacados em sua obra sobre a importância do fluxo de caixa:
+
+- Conecta o
+***** Estudo do ciclo econômico (ver slide)
+
+Minsky nunca se atreveu muito a tratar de crescimento econômico:
+
+- Na tese, dá indícidos de tomar a concepção de Schumpeter de que não é muito adequado separar ciclo e tendência
+- Posteriormente, diz explicitamente tratar de ciclos
+
+À parte essa questão mais estrutural, persistiu a preocupação com o estudo dos ciclos econômicos.
+Mais do que isso, aparentemente, procurou-se demonstrar a endogeneidade dos ciclos econômico.
+***** Inclusão de aspectos institucionais
+
+Toda obra de Minsky foi permeada por uma quase obsessão por olhar para o mundo como ele é, mapeando adequadamente o funcionamento das coisas no contexto histórico em que elas foram observadas.
+***** Importância dos balanços patrimoniais
+
+Os balanços patrimoniais são destacados na tese.
+Balizam a capacidade de financiamento da firma.
+Sua dinâmica sintetiza as condições de expansão e sobrevivência das firmas, através, por exeplo, do patrimônio liquido e da riqueza financeira das firmas.
+***** Micro e macro
+
+A tese se concentra no estudo do impacto da interação entre as forças de mercado e demanda agregafa na geração de ciclos econômicos:
+- São enfatizados aspectos relacionados à sobrevivência da firma, do impacto de entrantes, das estruturas de mercado
+- Os resultados que se procura analisar são mais macroeconômicos, conformados a partir da análise de das estruturas micro e meso.
+
+A heterogeneidade dos agentes é trazida à tona necessariamente.
+***** Interdependância entre agentes
+
+Este elemento já estava presente na tese
+
+Micro e macro + heterogeneidade + Interdependância $\Rightarrow$ paralelos claros à visão da economia como um sistema complexo adaptativo.
+***** Papel das expectativas
+
+Presente, mas de forma mais contida e menos destacado ao longo da tese.
+*** Investimento induzido e o princípio do ajustamento do estoque de capital
+***** Modelos de aceleração
+
+*Ideia principal:* O estoque de capital desejado dependo do nível de produção desejado, que por sua vez, depende do nível de demanda esperada.
+Logo, o investimento líquido depende da demanda esperada.
+***** O princípio da aceleração
+
+*Princípio acelerador:* Existe uma proporção *normal* entre o estoque nominal de capital existente e o valor da produção
+
+- Essa proporção pode ser interpretada como um *coeficiente técnico* de produção
+- $v$ é a relação capital-produto
+
+Assim, o estoque de capital desejado pelos empresários depende da expectativa de demanda
+
+#+BEGIN_latex
+\begin{equation}
+K = vY^{e}
+\end{equation}
+#+END_latex
+***** O princípio da aceleração e o investimento (líquido)
+
+O investimento líquido corresponde à variação do estoque de capital
+
+#+BEGIN_latex
+\begin{equation}
+I = \Delta K
+\end{equation}
+#+END_latex
+Supõe-se que a aquisição do estoque de capital é sempre rápida, de forma que o estoque de capital esteja sempre em conformidade com o desejado pelas empresas.
+
+#+BEGIN_latex
+\begin{equation}
+I = v\Delta Y^{e}
+\end{equation}
+#+END_latex
+Com frequênica, pressupõe-se alguma forma de expectativa adaptativa.
+Na forma mais simples: $Y^{e} = Y_{t-1}$.
+Tem-se que:
+#+BEGIN_latex
+\begin{equation}
+I = v\Delta Y
+\end{equation}
+#+END_latex
+
+Somando-se o investimento de reposição, pode-se over o investimento bruto:
+#+BEGIN_latex
+\begin{equation}
+I = v\Delta Y + \delta K_{t-1}
+\end{equation}
+#+END_latex
+Considerando essa equação de investimento no modelo de demanda agregada, integram-se o efeito multiplicador e o efeito acelerador.
+Em uma economia fechada e sem governo, supondo que $\delta = 0$:
+#+BEGIN_latex
+\begin{equation}
+Y = \frac{v}{s}\Delta Y + \frac{\overbrace{A}}{s}
+\end{equation}
+#+END_latex
+***** Princípio do ajustamento do estoque de capital
+
+O modelo de acelerador rígido é corretamente criticado porque o estoque de capital do início de um período não precisa corresponder ao desejado no período anterior pela firma: pode haver excesso de capacidade ou ainda a empresa não ter satisfeito toda a sua demanda por investimento.
+Além disso, implicaria ajustamente da capacidade muito mais rápido do que os que acontecem no mundo real.
+
+O princípio do ajustamente implica impor uma restrição para que o ajustamente no seja instantâneo
+
+#+BEGIN_latex
+\begin{equation}
+I^{L} = \beta (K^{*} - K_{t-1})
+\end{equation}
+#+END_latex
+O investimento líquido reage ao hiato entre o estoque de capital desejado e o estoque de capital efetivo.
+Dado $\beta$, tal reação será tão maior quanto mais amplo for este hiato.
+***** Grau de utilização da capacidade
+
+Dividindo o investimento bruto pelo estoque de capacidade defasado:
+
+#+BEGIN_latex
+\begin{equation}
+\frac{I}{K_{t-1}} = \beta \left(\frac{vY^{e}}{K_{t-1}} - 1\right) + \delta
+\end{equation}
+#+END_latex
+O grau de utilização esperado é dado por
+
+#+BEGIN_latex
+\begin{equation}
+u^{e} = \frac{vY^{e}}{K_{t-1}}
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+\frac{I}{K_{t-1}} = \beta(u^{e} - 1) + \beta
+\end{equation}
+#+END_latex
+***** Grau de utilização normal
+
+Muitos autores sublinham que as firmas planejam operar com capacidade ociosa.
+Considerando que o grau de utilização desejado é $u_{n}$, tem-se:
+#+BEGIN_latex
+\begin{equation}
+\frac{I}{K} = \beta(u^{e} - u_{n}) + \delta
+\end{equation}
+#+END_latex
+Logo, a taxa de investimento dependerá do desvio do grau de utilização do grau normal.
+*** Investimento induzido na visão de Minsky (tese de doutorado)
+***** Modelos de multiplicador-acelerador
+
+Na tese, Minsky não trata exatamente da versão discutida até o momento.
+Porém, nos interessa muito mais o conteúdo da discussão, que não se altera substancialmente na versão considerada.
+Nesse tipo de modelo, podem existir ciclos econômicos com as seguintes propriedades:
+- Convergência assintótica para o equilíbrio
+- Convergência com ciclos amortecidos
+- Ciclos explosivos
+- Trajetórias puramente explosivas
+
+É propriedade conhecida desse tipo de modelo que oscilações persistentes só ocorrem para combinações muito específicas de parâmetros.
+Uma alternativa a esse tipo de modelo era a imposição exógena de tetos e pisos com a trajetória do produto.
+Minsky estava insatisfeito com a inviabilidade prática de se explicar a recorrência endógena de ciclos.
+
+***** Um coeficiente flexível no acelerador flexível
+
+Minsky propôs um modelo de acelerador flexível com coeficiente acelerador flexível:
+- O coeficiente acelerador se altera pró-ciclicamente
+  + Possui certa semelhança aos modelos de supermultiplicador sraffiano
+- A diferença evidente em relação ao SSM é que as origens da flutuação de $\beta$ são relativas *aos balanços patrimoniais*, resultado da interaão entre investimento e seu financiamento e não a fatores reais (como no SSM)
+
+No entanto, como Minsky o faz tem problemas do ponto de vista teórico, mas a ideia parece boa.
+Esta formulação mostra a prevalência do ajustamento via quantidades.
+Ainda assim, desde que haja demanda, fatores preço afetam a taxa de investimento:
+- Parece consistente com a baixa relevância estatística de fatores financeiros afetando o investimento, mas ainda assim não ignora essa possibilidade (como o supermultiplicador)
+
+Além disso:
+- É flexível suficiente para comportar diversos regimes econômicos
+- Permite conectar o micro e o macro, o real e o financeiro de forma natural e não binária
+  + Permitiria lidar com a crítica de Lucas
+
+------
+** Teoria dos dois preços <2021-02-24 qua>
+*** Introdução
+
+Teoria de dois preços é uma teoria de investimento da *firma*, estendida para o agregado
+
+- Inspirada no *Princípio do risco crescente*
+  + Associado ao tamanho da firma
+- Uma interpretação da Teoria Geral de Keynes
+- Flutuações econômicas provocadas pela dinâmica do investimento
+  + Instabilidade do investimento relacionada a questões expectacionais
+- Contra teorema Modigliani-Miller (irrelevância da estrutura de capital)
+*** Teoria dos dois preços e o q de Tobin
+
+Minskianos admitem que a teoria de dois preços guarda grande semelhanã com q de Tobin:
+- Portanto, ajustamento do investimento via preço
+- Teorias de dpos preços $\Rightarrow$ q de Tobin aumentado por risco do emprestador e do tomador
+- No entanto, muita ênfase nas expectativas subjetivas (incerteza) que balizam percepções de risco e expectativas de fluxo de caixa
+*** O preço de oferta
+
+- $P_{I}$ :: Preço de reposição do estoque de capital
+  + Induz o ofertante a vender um novo bem de capital
+    - Não considera bem de capital existente
+  + Inclui markup sobre o custo unitário de produção do bem de capital
+  + Inclui também o risco do emprestador relacionado ao financiamento do bem de capital
+    - Para uma firma qualquer, a capacidade de autofinanciamento é limitada
+    - A partir de certo ponto, faz-se necessário tomar capital de terceiros para investir
+- Risco do emprestador: Mais dívida $\Rightarrow$ maior risco de /default/
+  + Isso se refleteria no preço de reposição do estoque de capital
+*** O preço de demanda
+
+- Preço de demanda ($P_{K}$) :: Inclui estoque de capital existente
+  + Inclui mercado secundário do estoque de capital (pouco líquido)
+  + Capitalização dos rendimentos esperados de um ativo aumentado pelo risco do tomador
+  + Rendimento esperados: $Q$ incerto
+  + Política monetária afeta $P_{K}$
+    - Taxa de juros determinada no mercado monetário
+    - Afeta taxa de rendimento dos rendimentos esperados
+- Valor capitalizado ($C$) :: $\frac{\partial C}{\partial M} > 0 \hspace{2cm} \lim_{M\to infty} C < \infty$
+  + Política monetária expansionista aumenta a capitalização do capital
+  + $\frac{\partial P_{K}}{\partial M} > 0 \hspace{0.2cm}, \frac{\partial^{2}P_{K}}{\partial M^{2}} <0 \, \lim_{M\to \infty} P_{K} < \infty$
+    - Não é possível explorar a política monetária para estimular o investimento
+- Risco do tomador :: Expansão do ativo requer financiamento $\Rightarrow$ menor liquidez ou maior dívida $\Rightarrow$ Maior risco de falência (restrição de sobrevivência)
+  + Quanto maior dívida, maior pagamento do serviço da dívida. Não pagamento implica restrição de acesso ao crédito, interrompendo a capacidade de financiar investimento
+
+#+BEGIN_latex
+\begin{equation}
+P_{K} = \frac{Q_{1}}{\beta_{1}} + \ldots  + \frac{Q_{N}}{\beta_{N}}
+\end{equation}
+
+\begin{equation}
+\beta_{i} = 1 + r_{free} + BR
+\end{equation}
+#+END_latex
+
+*** Aspectos fundamentais
+:PROPERTIES:
+:mtime:    20211202152741 20211013082514
+:ctime:    20201202092036
+:END:
+
+- Rendimento esperado dos ativos é incerto e sujeito a avaliações subjetivas: passível de reavaliações repentinas, de acordo com a percepção dos capitalistas
+- Risco do tomador e risco do emprestador também refletem avaliações subjetivas
+- Para uma mesma quase-renda esperada, mudanças de expectativa alteram o nível do investimento
+- Risco maior é expectativa de rendimento não se confirmar e a margem de segurança ser insuficiente
+*** Conclusões: Firma representativa :ATTACH:
+:PROPERTIES:
+:ID:       0c7d104f-e2c2-4c4e-a698-c156b3db377b
+:mtime:    20211013082514
+:ctime:    20201202092036
+:END:
+
+Para expandir o investimento é preciso expandir a dívida, mas implicitamente supõe-se que o autofinanciamento não se altera
+- Altera-se a estrutura de capital por consequência
+- A alavancagem do financiamento do investimento sobre os ganhos esperados pode ser muito alta durante um período de diminuição da avarsão ao risco
+
+[[attachment:_20210224_100733screenshot.png]]
+*** Conclusões: Investimento agregado :ATTACH:
+:PROPERTIES:
+:ID:       7372abf0-19cd-4490-8220-9adc81c069da
+:END:
+
+
+[[attachment:_20210224_101820screenshot.png]]
+
+No agragado, o aumento do investimento aumenta a capacidade de autofinanciamento.
+Em parte, frustra o financiamento por dívida planejado pelas empresas e simultaneamente reforça a disposição de empresas e bancos de financiar por dívida novos aumentos do investimento.
+Em outras palavras, houve uma sobreestimativa do risco pelos bancos.
+Além disso, os ganhos das ações são maiores e os preços das ações responderão favoravelmente a isso.
+
+No entanto, Minsky retorna a análise para a firma representativa para estabelecer as conclusões gerais do modelo.
+Em linhas gerais, conclui que há uma geração de sobreendividamento.
+No agregado, porém, as quase-renda se alteram e aumenta.
+
+*** Reversão
+
+Ativos que eram tidos como líquido, é mostrada sua iliquidez evidente.
+
+*** O investimento e a estrutura de capital
+
+Investimento $\Rightarrow$ Dívida/estrutura de capital
+
+- Estrutura de capital :: composição de capital de terceiros e capital próprio
+- Na teoria de dois preços. a estrutura de capital é em grade medida afetada pelas decisões de investimento
+
+**** Generalizações: Como os agentes fecham os balanços
+
+Contalbimente, temos
+
+#+BEGIN_latex
+\begin{equation}
+\Delta CT + \Delta PL = \Delta ANF + \Delta AL
+\end{equation}
+#+END_latex
+
+#+BEGIN_latex
+\begin{equation}
+\Pi - I = \Delta AL - \Delta CT
+\end{equation}
+#+END_latex
+
+
+Com $PL$ patrimônio líquido; $CT$ capital de terceiros, $ANF$ ativos não financeiros, $AL$ ativos líquidos, $\Pi$ Lucros retidos.
+Fechamentos possívies:
+
+1. $I = \Pi - \Delta AL + \Delta CT$ (meta de liquidez nos balanços)
+2. $\Delta AL = \Pi  + \Delta CT - I$
+3. \Delta CT = \Delta AL + I - \Pi$
+4. \Pi = \Delta AL - \Delta CT + I$ (lucro retido em função dos balanços, logo, dividendo distribuído é o fechamento)
+
+A visão de Minsky reflete o terceiro tipo de fechamento (via capital de terceiros).
+O tipo de fechamento determina a relação de estrutura de capital e investimento.
+
+*** A estrutura de capital e os riscos
+
+O princípio do risco crescente implica maior composição de capital de terceiros é compatível com nível de risco maior.
+Portanto, no nível da firma, a teoria de dois preços implica um trade-off entre crescimento e margem de segurança.
+
+*** Teorias de dois preços e teorias de investimento
+
+Nas perspectivas de teorias de investimento, evidentemente, ajustamento via preços muito mais importante que ajustamento via quantidade:
+- Pouco respaldo empírico
+- Elementos comuns à teoria de investimento da tese, mas natureza distinta dos determinantes do investimento
+
+Investimento é central no processo de competição intercapitalista: ênfase nos aspectos expectatcionais eclipsa *fatores objetivos e estratégicos* que influenciam investimento no nível da firma:
+- Demanda esperada e demanda efetiva
+- Utilização da capacidade desejada
+- Concorrência: investimento da firma, mas termo não aparece em JMK!
+
+------
+** Dois preços e HIF
+*** Introdução
+
+- Em uma frase :: estabilidade suscita instabilidade.
+- Implicação :: Economias capitalistas não podem produzir pleno emprego sistematicamente e flutuações são inevitáveis por conta do desenvolvimento das forças financeiras.
+  + Economias capitalistas são inerentemente instáveis
+- Decorrência :: Paradoxo da tranquilidade
+- Embasamento teórico :: Teoria dos dois preços
+- Margens de segurança ::  Se estreitam na medida que o otimismo dos empresários acaba por suplantar o ceticismo dos banqueiros a respeito da capacidade dos tomadores para pagar os empréstimos no futuro
+*** Centralidade do investimento das firmas
+
+Grande parte das relações reais-financeiras passam pleo investimento, que é fundamentalmente determinado por motivos financeiros na teoria minskyana.
+
+#+begin_quote
+The focus should be on firms, not on households, and on investment...
+#+end_quote
+
+Alguns textos recentes estendem para outros setores institucionais:
+
+- Dívida das famílias: Palley (1994); Dutt (2006); Isaac and Kim (2013); Ryoo (2016); Cadarci (2018); D'Orazio (2019)
+- Setor bancários: Nikolaidi (2014); Gimet et al (2019)
+- Taxa de câmbio
+- Economias abertas: muito escasso em modelos formais
+*** Papel das expectativas
+
+Expectativas subjetivas são fundamentais na teoria de dois preços.
+Comportamento anticíclico da percepção de risco é destacado por muitos interpretes.
+Por um lado, ele desencadeia uma série de processos econômicos que vão conduzir à fragilidade e, eventualmente, à instabilidade.
+Por outro lado, para as expectativas levarem às conclusões da HIF, /os processos econômicos têm que ocorrer/ (investimento $\Rightarrow \ldots$ fragilidade):
+
+$\uparrow$ otimismo $\Rightarrow \downarrow$ percepçaõ de risco $\Rightarrow \uparrow$ investimento $\Rightarrow\uparrow$ dívida $\Rightarrow \downarrow$ Margem de segurança $\Rightarrow \uparrow$ fragilidade
+*** Papel das interações
+
+As interações entre os agentes -- em particular, das empresas não financeiras e dos agentes financeiros,incluindo bancos -- está no início da cadeia causal acima.
+A redução na percepção de risco, induz firmas a querer tomar mais emprestado e bancos a emprestar mais, ou seja, não adianta otimismo em uma ponta apenas.
+Esse elemento da interação e coordenação entre os agentes traz elementos relacionados a econoias complexas e adaptativas.
+Adicionalmente, a soma dos saldos financeiros de $n$ agentes de uma economia é zero.
+*** A tipologia minskiana
+Confrontamento /fluxo de caixa/ vs /compromissos financeiros/, Minsky criou uma tipologia para descrever três possíveis posições financeiras:
+
+- Hedge :: Espera-se que as quse-rendas deem conta de pagar os compromisso financeiros em cada período futuro.
+- Especulativo :: Em alguns períodos, espera-se que os desembolsos financeiros superem o fluxo de caixa.
+  Intertemporalmente sustentável, mas pode ter problemas de liquidez, visto que a firma precisa rolar a dívida.
+- Ponzi :: Tipo especial de unidade especulativa, para qual os compromissos financeiros podem ser cobertos pelo fluxo de caixa no curto prazo.
+  Espera-se que a situação mude no futuro.
+  Além da rolagem, necessidade de novos empréstimos para cobrir parcela de pagamento de juros não coberta pelo fluxo de caixa.
+*** Estrutura da dívida
+
+A estrutura da dívida influencia a distribuição dos desembolsos financeiros no tempo.
+Em geral, não basta endividamento alto para um empresa falir.
+É necessário que ela deixe de honrar seus compromissos financeiros em alguns pontos do tempo.
+
+Dívida de mais curto prazo $\Rightarrow$ Maior necessidade potencial de rolar dívida e margem mais estreita para flutuações de fluxo de caixa $\Rightarrow$ Maior vulnerabilidade às condições  econômicas vigentes.
+*** Fragilidade sistêmica
+
+- Escala financeira aplica-se a um projeto de investimento realizado
+- No tempo, cada unidade tem vários projetos de investimento efetivados
+- Cada unidade terá uma posição financeiroa média prevalecente, refletindo a composição do balanço, fluxos de caixa e estrutura do passivo
+- Agregando o percentual (ponderado) de firmas em cada um dos três estados financeiros, obtém-se o grau de fragilidade sistêmcia
+  + Quanto maior a incidência de firmas /hedge/, mais robusta está a economia
+  + Esta forma de agregação é conveniente pois permite comparação temporal
+*** Micro e macro (ver slide)
+
+A teoria minskyana certamente está interessada no resultado /sistêmico/, mas reconhece que são as unidades econômicas que tomam as decisões.
+A própria teoria dos dois preços
+*** O ciclo minskiano (p. 142-3, Minsky (1975, edição em português)) e deflação de dívida
+
+Resumidamente, os mecanismos são:
+- Encurtamento dos prazos da dívida
+- Aumento dos custos financeiros (aumento da taxa de juros)
+Geram aumento da preferência pela liquidez e deflação de dívidas que são amplificadas.
+
+- Próximo da teoria de Fisher: sobre endividamento e deflação geram um círculo vicioso no qual a queda nos preços aumenta a carga de juros real, levando a mais deflação.
+- Mecânica descrita por Fisher :: a partir de uma economia cujo estágio inicial é de sobre-endividamento, haverá tendência que leva à liquidação de dívidas que conduz a:
+  + Liquidação dos ativos
+  + Queda nos depósitos bancários, destruição de moeda e redução na sua velocidade de criculação
+  + Queda no nível de preços (TQM)
+  + Queda no patrimônio líquido das empresas $\Rightarrow$ falências
+  + Queda nos lucros
+  + Queda no produto, do comércio e do emprego
+  + Aumento do pessimismo e perda de confiança
+  + Entresouramento e queda adicional da velocidade de curculação da moeda
+  + Queda nos juros nominais, mas  com aumento dos juros reais (deflação)
+
+
+| Talvez essas explicações deflacionárias sejam mais datadas ou localizadas |
+
+**** Balance-sheet recession (ver slides)
+
+Desenvolvida por Koo:
+- Recessões provocadas por uma mudança de comportamento do setor privado quando bolhas de ativos estouram
+  + Objetivo passa a ser minimizar dívida em vez de maximizar lucro
+- Desvalorizaçaõ dos ativos, num contexto de forte endividamento, obriga os agentes a *aumentar seu saldo financeiro* e liquidar parte de suas dívidas, até que os ativos voltem a se valorizar e o patrimônio líquida se recupere
+- Necessidade de aumentar a poupança financeira drena a
+*** Implicações de política econômica
+
+Institucionalidade pós-guerra favorece a estabilidade, por um lado:
+- Big government
+- Big bank
+
+Por outro, sistema financeiro desenvolvido é incorrigivelmente propenso a crises.
+** Corolários da HIF (interpretações)
+
+*** Corolário 1 (microeconômico)
+
+Firmas devem se deparar com um /trade-off/ entre expansão e margem de segurança
+- Comum em muitas teorias
+-  Não evidente nos dados, ou observável em apenas alguns subgrupos de firmas
+
+*** Corolário 2 (fragilidade pró-cíclica) VER SLIDES
+
+Para as crises econômicas serem geradas endogenamente, a fragilidade financeira deve aumentar por motivos internos ao longo de expansões.
+Utilizando sua escalada de fragilidade, pode-se obter a fragilidade sistêmica agregando as firmas em seus respectivos estados financeiros:
+
+- Fragilidade pró-cíclica ::
+
+*** Corolário 3 (investimento $\Rightarrow$ endividamento $\Rightarrow$ alavancagem $\Rightarrow$ fragilidade, decorrência do segundo)
+
+No agregado, devem existir uma curva de investimento-endividamento e uma curva alavancagem-fragilidade financeira positivamente inclinadas.
+
+*** Corolário 4 (endividamento pró-cíclico no agregado, decorrência do terceiro)
+Indicador de endividamento serviria como uma proxy da fragilidade financeiro
+
+* Investimento, fluxo de caixa e dinâmica da alavancagem: regime minskiano ou paradoxo da dívida? <2021-03-03 qua>
+
+** Lavoie e Seccarecia (2001) e Lavoie (2020)
+*** Elo macroeconômico perdido
+
+Minky pós-tese: ciclo de negócios + reinterpretação da análise do investimento em Keynes sob incerteza fundamental
+- Constructo microeconômico com hipótese de limite ao autofinanciamento
+- Maior investimento $\Rightarrow$ Maior endividamento
+*** HIF e fundos emprestáveis
+
+Partindo da teoria de dois preços:
+- Minsky considera que o fluxo de caixa aumento quando o investimento se expande, mas não incorpora na análise
+- Noção de que expansões de atividade econômica levariam a maior fragilidade estavam em sua tese e no artigo da AER
+
+Essas noções são baseadas no princípio de fundos emprestáveis:
+- Excesso de poupança ex ante $\Rightarrow$ pagamento de dívida (poupança ex post)
+- No entanto, seguindo Keynes e Kalecki: problema de realização $\Rightarrow$ excesso de poupança será emprestado por bancos para outras empresas
+
+Minsky supões que:
+
+#+BEGIN_latex
+\begin{equation}
+\frac{\Uparrow L}{\uparrow K}
+\end{equation}
+#+END_latex
+mesmo que as taxas de juros não aumentem.
+No entanto, Minky não explica o porquê $L$ cresce mais rápido que $K$ a nível macroeconômico.
+
+*** Teoria kaleckiana do Lucro
+
+No esquema tridepartamental, denota-se o investimento como $I$, o consumo dos capitalistas como $C_{c}$, consumo dos trabalhadores $C_{w}$, produto como $Y$, lucro como $P$ e salário $W$:
+
+|------------------------+-------------------------------+--------------------------------------+-------|
+| Dep. I Bens de capital | Dep. II (Consumo capitalista) | Dep. III (Consumo dos trabalhadores) | Total |
+|------------------------+-------------------------------+--------------------------------------+-------|
+| $P_{1}$                | $P_2$                         | $P_{3}$                              | $P$   |
+| $W_{1}$                | $W_{2}$                       | $W_{3}$                              | $W$   |
+| $I$                    | $C_{c}$                       | $C_{w}$                              | $Y$   |
+|------------------------+-------------------------------+--------------------------------------+-------|
+
+Partindo da hipótese de que trabalhadores gastam o que ganham, da identidade acima e fazendo algumas manipulações algébricas:
+#+BEGIN_latex
+\begin{equation}
+C_{w} = W
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+P_{1} + P_{2} + P_{3} = W_{1} + W_{2} + P_{1} + P_{2}
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+P = C_{c} + I
+\end{equation}
+#+END_latex
+
+Essa mesma equação pode ser demonstrada de forma mais simples é pelo PIB pela ótica da demanda:
+#+BEGIN_latex
+\begin{equation}
+Y = C + I = W + P
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+I = P
+\end{equation}
+#+END_latex
+Os capitalistas podem decidir o quando gastar (mas não o fazem como classe dada a concorrência), mas não o quanto lucram.
+Assim, a causalidade só pode ser:
+#+BEGIN_latex
+\begin{equation}
+I \Rightarrow P
+\end{equation}
+#+END_latex
+
+Assim, Minky ignora tal relação ao supor que os fluxos disponíveis são constantes dado um aumento no investimento.
+
+**** Extensões
+Lucro depende do investimento, do superávit em conta corrente e do déficit do governo
+
+#+BEGIN_latex
+\begin{equation}
+P - T = C_{c} + I + (G-T) + (X-M) - S_{w}
+\end{equation}
+#+END_latex
+
+Teoria kaleckiana depende do princípio da demanda efetiva.
+
+** Toporowski e as implicações monetárias
+
+Teoria dos lucros de Kalecki mostra como as despedas de investimento aumentam o fluxo de caixa.
+Mesmo que o aumento do investimento implique aumento do endividamento, também implica aumento da liquidez e dos depósitos bancários mantidos pelas empresas.
+
+*** Implicações monetárias
+
+- Moeda endógena
+- Expansão do crédito expande liquidez da economia
+- Se investimento é finnanciado por dívida, liquidez se expande
+  + Logo, investimento financiado por dívida aumenta liquidez do sistema
+
+Problema não trivial: empresas que estão gastando com $I$ não necessariamente são aquelas capturando a liquidez adicional criada pelo investimento.
+
+** Prova de conceito: um modelo SFC simples
+
+*** Balanço patrimonial
+
+|--------------------+-----------+-----------+--------+-------|
+|                    | Famílias  | Firmas    | Bancos | $sum$ |
+|--------------------+-----------+-----------+--------+-------|
+| Capital fixo       |           | $+K$      |        | $+K$  |
+| Depósitos          | $+D$      |           | $-D$   | $0$   |
+| Ações              | $+p_{s}S$ | $-p_{s}S$ |        | $0$   |
+| Empréstimos        |           | $-L$      | $+L$   | $0$   |
+| Patrimônio Líquido | $+V$      | $+V_{f}$  | $0$    | $+K$  |
+|--------------------+-----------+-----------+--------+-------|
+
+*** Matriz de fluxo de fundos
+
+|                         | Famílias      | Corrente Firmas | Capital Firmas | Corrente Bancos | Capital Bancos | $\sum$ |
+| Consumo                 | $-C$          | $+C$            |                |                 |                |      0 |
+| Investimento            |               | $+I$            | $-I$           |                 |                |      0 |
+| Salários                | $W$           | $-W$            |                |                 |                |      0 |
+| Lucro líquido           | $+FD$         | $-F$            | $+FU$          |                 |                |      0 |
+| Juros sobre empréstimos |               | $-iL$           |                | $+iL$           |                |      0 |
+| Juros sobre depósitos   | $iD$          |                 |                | $-iD$           |                |      0 |
+|-------------------------+---------------+-----------------+----------------+-----------------+----------------+--------|
+| Subtotal                | $SAV_{h}$     | 0               | $FU - I$       | 0               | 0              |      0 |
+|-------------------------+---------------+-----------------+----------------+-----------------+----------------+--------|
+| $\Delta$ Empréstimo     |               |                 | $+\Delta L$    |                 | $-\Delta L$    |      0 |
+| $\Delta$ Depósito       | $-\Delta D$   |                 |                |                 | $+\Delta D$    |      0 |
+| $\Delta$ Ações          | $-\Delta p_s$ |                 | $+\Delta p_s$  |                 |                |      0 |
+|-------------------------+---------------+-----------------+----------------+-----------------+----------------+--------|
+*** Definições importantes
+
+ - Grau de utilização da capacidade :: $u = \frac{Y}{Y^{*}} \leftrightarrow \frac{Y}{K} = \frac{u}{v}$
+ - Decomposição de Weisskopf (1979) :: $r = \pi\frac{u}{v}$
+*** Equações
+**** Consumo e poupança das famílias
+
+Função consumo do tipo ciclo de vida
+
+#+BEGIN_latex
+\begin{equation}
+C = (1-s_{h})YD_{h} + c_{v}V_{r}
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+YD_{h} = W_{s} + FD + iD
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+SAV_{h} = YD_{h} - C = s_{h}(W_{s} + FD + iD) - c_{v}V_{r}
+\end{equation}
+#+END_latex
+
+Substituindo recursivamente:
+#+BEGIN_latex
+\begin{equation}
+SAV_{h} = s_{h}[(1-\pi)Y + (1-s_{f})(F - iL) + iD] - c_{v}V_{r}
+\end{equation}
+#+END_latex
+em que $s_f$ é a parcela do lucro retido após o pagamento dos juros.
+
+
+Como bancos não acumulam riqueza, temos que $L = D$, assim:
+#+BEGIN_latex
+\begin{equation}
+SAV_{h} = s_{h}[(1-\pi)Y + (1-s_{f})(F - iL) + iL] - c_{v}V_{r}
+\end{equation}
+#+END_latex
+
+Extendendo essa equação para taxa, normalizando pelo estoque de capital.
+Como as famílias não investem, o saldo financeiro equilave à poupança das famílias:
+#+BEGIN_latex
+\begin{equation}
+\frac{S_{h}}{K} = \frac{s_{h}[(1-\pi)Y + (1-s_{f})(F - iL) + iD] - c_{v}V_{r}}{K}
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+\frac{S_{h}}{K} = s_{h}[\left(\frac{u}{v} - r\right) + (1-s_{f})(r - il) + il] - c_{v}v_{r}
+\end{equation}
+#+END_latex
+em que:
+- $l$ :: endividamento das firmas (L/K)
+- $v_{r}$ :: relação riqueza/capital das firmas
+**** Poupança das firmas
+
+
+A poupança das famílias corresponde ao lucro retido
+#+BEGIN_latex
+\begin{equation}
+S_{f} = s_{f}(F - iL)
+\end{equation}
+#+END_latex
+Normalizando pelo estoque de capital
+#+BEGIN_latex
+\begin{equation}
+\frac{S_{f}}{K} = s_{f}{r - il}
+\end{equation}
+#+END_latex
+**** Popupança total
+
+#+BEGIN_latex
+\begin{equation}
+g^{s} = \frac{S_{h} + S_{f}}{K}
+\end{equation}
+#+END_latex
+
+Substituindo, temos
+
+#+BEGIN_latex
+\begin{equation}
+g^{s} = [s_{f}(1-s_{h})\pi + s_{h}]\frac{u}{v} - s_{f}(1-s_{h})il - c_{v}v_{r}
+\end{equation}
+#+END_latex
+**** Alocação de porfólio das famílias
+
+#+BEGIN_latex
+\begin{equation}
+v_{r} = \frac{V}{K} = \frac{D + p_{s}S}{K}
+\end{equation}
+#+END_latex
+Suponha que as famílias escolham uma proporção fixa da riqueza para manter na forma de depósitos ($\kappa_{d}$) e ações ($\kappa_{s}$)[fn:: Alternativamente, poderia-se incluir o rendimento relativo de cada ativo]:
+#+BEGIN_latex
+\begin{equation}
+\kappa_{s} + \kappa_{d} = 1
+\end{equation}
+#+END_latex
+
+#+BEGIN_latex
+\begin{equation}
+D = \kappa_{d}v_{r}K
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+p_{s}S = (1-\kappa_{d})v_{r}K
+\end{equation}
+#+END_latex
+
+Lembrando que $D = L$, pode-se resolver para $p_{s}^{*}$, ou seja, o ajuste é via preços:
+#+BEGIN_latex
+\begin{equation}
+p_{s} = \frac{1-\kappa_{d}}{\kappa_{d}}\frac{L}{S}
+\end{equation}
+#+END_latex
+e o mais importante:
+#+BEGIN_latex
+\begin{equation}
+v_{r} = \drac{D}{\kappa_{d}K} = \frac{I}{\kappa_{d}}
+\end{equation}
+#+END_latex
+Há, portanto, uma interdependência entre o endividamento das firmas ($D = L$) e alocação de portfólio das famílias.
+**** Função investimento
+
+Determinantes:
+- Espírito animal $\gamma_{0}$
+- Grau de utilização da capacidade (captura efeito acelerador)
+- Serviço da dívida ($il$)
+- Valorização das firmas (tipo Q de tobin)
+
+#+BEGIN_latex
+\begin{equation}
+g^{i} = \frac{I}{K} = \gamma_{0} + \gamma_{u}u - \gamma_{i}il + \gamma_{v}v_{r}
+\end{equation}
+#+END_latex
+**** Equilíbrio de curto prazo
+
+Equilíbrio no mercado de bens:
+#+BEGIN_latex
+\begin{equation}
+g^{s} = g^{i}
+\end{equation}
+#+END_latex
+Resolvendo para $u$:
+#+BEGIN_latex
+\begin{equation}
+u^{*} = \frac{\gamma_{0} + [s_{f}(1-s_{h}) - \gamma_{l}]il + [c_{v} + \gamma_{v}/\kappa_{d}]l}{[s_{f}(1-s_{h})\pi + s_{h}]/v - \gamma_{u}}
+\end{equation}
+#+END_latex
+em que o denominador é a condição de estabilidade keynesiana, ou seja, expansão do investimento precisa gerar um produto adicional maior que a poupança; ou ainda, se não for válida, não garante-se lei de Say.
+*** Efeitos parciais
+
+|-------------------------------------------+---------------|
+| Mudança variável                          | Efeito em $u$ |
+|-------------------------------------------+---------------|
+| $\downarrow \kappa_{d} = \upparrow v_{r}$ | +             |
+| $\uparrow \pi$                            | -             |
+| $\uparrow i$                              | $\pm$         |
+| $\uparrow l$                              | $\pm$         |
+|-------------------------------------------+---------------|
+
+
+Lance Taylor:
+- Demanda debt-led :: $\frac{\partial u^{*}}{\partial l} > 0$
+- Demanda debt-burdened :: $\frac{\partial u^{*}}{\partial l} < 0$
+
+Esse efeito ambíguo decorre dos efeitos da taxa de juros sobre a renda disponível das famílias e serviço da dívida para as famílias.
+Também está associado ao Q de Tobin.
+*** Restrição orçamentária das firmas
+
+A restição orçamentário das firmas requer que:
+#+BEGIN_latex
+\begin{equation}
+FU - I + \Delta L + p_{s}\Delta D
+\end{equation}
+#+END_latex
+
+Já considerando as equações comportamentais, o fechamento da conta capital é:
+#+BEGIN_latex
+\begin{equation}
+I = xI + s_{f}(\pi Y - iL) + \Delta L
+\end{equation}
+#+END_latex
+em que:
+- $x$ :: proporção do investimento financiamento por novas emissão de ações
+  + Normalmente é muito pequeno ou até negativo (EUA) por conta da recompra de ações (firmas grandes principalmente).
+- $\Delta L$ :: Variação da dívida, podendo ser escrita como $\Delta L = g_{L}\cdot L$
+
+Normalizando pelo estoque de capital
+#+BEGIN_latex
+\begin{equation}
+g^{i} = xg^{i} + s_{f}(r - il) + g_{L}l
+\end{equation}
+#+END_latex
+Um truque matemático:
+#+BEGIN_latex
+\begin{equation}
+l = \frac{L}{K} = ln l = ln L - ln K \Rightarrow \frac{\Delta l}{l} = \frac{\Delta L}{L} - \frac{\Delta K}{K}
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+\frac{\Delta l}{l} = g_{L} - g^{i} \Rightarrow g_{L} = g_{l} + g^{i}
+\end{equation}
+#+END_latex
+Logo, a taxa de crescimento do endividamento ($g_{l}$) é dado pela taxa de cresciemtndo da dívida descontada a taxa de crescimento do investimento.
+
+Prosseguindo com a substituição, tem-se
+#+BEGIN_latex
+\begin{equation}
+g^{i} = xg^{i} + s_{f}(r - il) + \left(g_{l} + g^{i}\right)l
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+g_{l} = g^{i}(1-x) + (s_{f}i - g^{i})l - s_{f}\frac{\pi u}{v}
+\end{equation}
+#+END_latex
+
+
+Supondo estabilidade, a derivada parcial do endividamento em relação ao grau de utilização da capacidade ajuda analisar o impacto do ciclo econômico no endividamento na vizinhança do equilíbrio ($g_{l}$ = 0):
+
+#+BEGIN_latex
+\begin{equation}
+\frac{\partial g_{l}}{\partial u} = \gamma_{u}(1-x-l) - s_{f}\frac{\pi}{v}
+\end{equation}
+#+END_latex
+
+
+- Regime Minskiano :: $\Uparrow u \to \uparrow g^{i} \uparrow l$
+- Regime Steindliano (paradoxo da dívida) :: $\Uparrow u \to \uparrow g^{i} \downarrow l$
+
+Como o impacto do grau de utilização da capacidade na trajetória do endividamento é ambíguo, regime minskiano não é garantido.
+No supermultiplicador, por outro lado, o regime minskiano não pode ocorrer.
+*** Retomando (Ver slides)
+
+QUando se considera devidamente a demanda efetiva, de forma plausível, pode-se obter tanto um regime de endividamento agregado minskiano quanto steindliano:
+- Na interpretação de Lavoie e Seccareccia, a devida inclusão da equação kaleckiana do lucro coloca em xeque a generalidade da HIF
+- O modelo acima
+
+** Crítia de Steindl e Toporowski
+
+*** Macroecnomia não é suficiente
+
+Uma segunda leva de estudos tenta mostrar que macroeconomia não é suficiente para estudar fragilidade financeira:
+
+- Distribuição (e as heterogeneidade que explicam) os lucros e dívida importam para dinâmica sistêmica
+  + Está explícito pelo menos desde Steindl (1952)
+  + Mais recentemente, Toporowski (SOAS) recuperou essa ideia
+- O problema pode ser muito bem colocado a partir da arquitetura da HIF
+*** Fluxos intre-setoriais: retomando exemplo Steindl (1952)
+
+Duas firmas, mesmo setor, mesma relação capital produto e mesma estrutura de custos. Suponha que ambas as firmas queiram investir o mesmo montante e que uma delas tem margem de lucro maior, de forma que os lucros retidos são maiores:
+
+|----------------------------------------+---------+---------+-------|
+|                                        | Firma 1 | Firma 2 | Total |
+|----------------------------------------+---------+---------+-------|
+| Investimento                           |     -50 |     -50 |  -100 |
+| Lucro retido                           |     +20 |     +80 |  +100 |
+| Necessidade de financiamento           |     +30 |     -30 |     0 |
+|----------------------------------------+---------+---------+-------|
+| Variação líquida de ativos financeiros |     -30 |     +30 |     0 |
+|----------------------------------------+---------+---------+-------|
+
+**** Heterogeneidade, distribuição e fragilidade
+
+No esquema acima, por mais que no agregado não tenha havido aumento da dívida líquida do setor das firmas:
+
+- Se ambas tiverem a mesma estrutura de financiamento, teria havido aumento da fragilidade da firma, concomitante à redução da gragilidade da outra: efeito sistêmico líquido não é óbvio
+- Se a firma 2 tivesse mais compromisso que a firma 1, a distribução de lucro favoreceria a robustez financeira: recebeu mais quem precisava pagar mais dívida
+- Se a firma 1 tivesse mais compromisso financeiro que a firma 2, a distribuição de lucro favoreceria a fragilidade financeira: quem precisava de mais recurso para pagar recebeu menos
+
+Toporowski: é o endividamento líquido da firma individual que é o indicador crítico de fragilidade financeira, e não a nível agregado como propõe Minsky.
+*** Feedback dinâmicos
+
+- Interação entre fluxo de caixa e balanço patrimonial é complexa
+- Estaticamente, tipologia minskiana contrasta fluxo de caixa a compromissos financeiros
+- Porem, estrutura dos balanços depende do próprio fluxo de caixa (que vai afetar o compromisso financeiro no futuro): efeito cumulativos
+
+** Prova de conceito: um modelo AB-SFC (Pedrosa e Lang, 2021)
+
+
+Motivação:
+
+- Desenvolver hipótese de Steindl-Toporowski
+- Lado da oferta frequentemente negligenciano nos modelos minskianos formais a la teoria evolucionista
+  + Motor Schumpeteriano com heterogeneidade e estrutura da dívida
+    - Motor Schumpeteriano é o que cria heterogeneidade na capacidade de capturar lucro
+    - Não supõe-se que a dívida é sempre rolada
+- Remediar o caráter excessivamente agregativo de modelos da HIF com demanda efetiva
+
+
+Resultados:
+- Heterogeneidade dos balanços :: emerge do modelo
+  + Decorrente do braço schumpteriano (capturar lucro)
+  + Inicialmente inicializadas como iguais
+- Persistência da alavancagem :: Autocorrelação elevada do endividamento
+- Ondas longas de fragilidade financeira :: Coexistência de firmas minskianas e steindlianas
+  + Para uma parcela das firmas, expansão do investimento não se expressa na perda de segurança das firmas
+  + Corolário 1 não necessariamente se aplica
+- Distribuição do endividamento decorre das menos alavancadas :: Explica melhor o que acontece com o endidamento agregado
+- Fragilidade financeira pró-ciclica :: Efeitos no curto prazo decorrente de ciclos reais (e não financeiras); no longo prazo depende do balanço entre firmas minskianas e steindliandas
+  + Atende corolário 2
+  + Depende da estrutura de competição e distribuição do lucro (longo prazo)
+- Endividamento agregado não é uma boa proxy para fragilidade financeira :: Modelo micro-macro é necessário
+
+* Estrutura de capital <2021-03-10 qua>
+** Literatura da estrutura de capital
+
+As teorias da estrutura de capital estudam como as firmas /financiam/ ou /deveriam financiar/ suas operações.
+Diferente de estrutura da dívida, que trata da escolha de maturidade e preferência de instrumentos.
+Apesar do caráter aparentemente singelo do problema, o problema se manifesta de forma complexa e há pouco consenso a respeito dos determinantes da estrutura de capital.
+Financiamento do investimento passa pela composição da estrutura de capital $\Rightarrow$ conexão real-financeira.
+Duas teorias se destacam:
+- Teoria do /pecking order/ :: em função do problema da seleção adversa, as firmas preferem se financiar:
+  1. Utilizando recursos próprios
+  2. Se os recursos próprios forem insuficientes, por dívida
+  3. Se os recursos própróprios + dívidas forem insuficientes, /eventualmente/ por ações
+- Teoria do /trade-off/ :: firmas procuram balancear os ganhos tributários advindos da alavancagem com o peso morto proveniente do maior risco de insolvência que vem da maior alavancagem
+  + Premissa subjacente: a maximização dos ganhos transcende a firma em si, pois todos os investidores são incluídos na conta
+** Teorema de Modigliani-Miller
+
+Ambas as teorias descendem o teorema de Modigliani-Miller, que, partindo de uma economia com mercados completos e eficientes, em que não existem impostos, custos de falência e nenhuma assimetria de informação, /preconizada a irrelevância da estrutura de capital no valor de mercado de uma companhia/.
+O problema central é a escolha do financiamento por dívida ou por ações, para um dado fluxo de caixa esperado.
+No fundo, a escolha da estrutura de financiamento afetaria apenas a distribuição dos fluxos de caixa entre dividendo e juros.
+Modelo de caráter normativo, mas abriu portas para perguntas posteriores.
+** Teorias do /Trade-off/
+
+As estruturas tributárias dos países geralmente implicam que o pagamento de juros por parte das empresas gera deduções da base de cálculo do imposto de renda devido.
+Suponha que a alíquota marginal seja do imposto de renda sobre o lucro das firmas seja de 20%:
+- Se a alavancagem é nula, cada real ganho gera R$ 0.80 a ser distribuído na forma de dividendo
+- Se a alavancagem for tal que gere R$ 0.30 de desembolso financeiro por real gerado, os 20% incidirão sobre R$ 0.70. Portanto, cada ganho real pela empresa geraria R$0.86 de pagamento de dividendo
+  + Esse é o benefício da dívida
+
+Problema: Para gerar fluxo de caixa mais elevado para os investidores, é necessário maior dívida.
+Maior dívida implica maior risco de falência.
+- Dìvida como disciplina aos problemas de agência
+
+*** Estática e dinâmica
+
+- Versões estáticas :: otimização somente em um período
+- Versões dinâmicas :: considera-se otimização inter-temporal. Desvios em relação à meta são gradualmente eliminados ao longo do tempo.
+  + Implica que a alavancagem deve ser reversível à média $\Rightarrow$ não deveria ter raíz unitaŕia
+  + Como ocorre essa reversão à média não é exatamente claro: poderia ser por emissão/aquisição de ações, redução/aumento do investimento ou por ajustamento da taxa de retenção de lucro:
+#+BEGIN_latex
+\begin{equation}
+\dot l = (1-x-l)g^{i} - s_{f}(r-il)
+\end{equation}
+#+END_latex
+** Teorias do pecking order
+
+As teorias do /pecking order/ geralmente são explicadas a partir do problema de assimetria de informação.
+Pode ser derivados a partir de:
+- Modelos de seleção adversa $\Rightarrow$ proprietários/gerentes têm informações sobre o valor dos ativos, embora os financiadores não
+- Modelos de custo de agência $\Rightarrow$ conflito entre proprietários/gerentes
+- em geral, modelos simples
+
+A implicação mais controversa à preferência de emissão de dívida em relação à de ações.
+Pode-se dizer que esta teoria não é incompatível com a existência de metas para variáveis do balanço.
+As teorias do pecking order guardam muita semelhança ao que a maior parte dos PKs consideram do ponto de vista teórico.
+** Definição de alavancagem
+
+Market-based (/foward-looking/):
+
+#+BEGIN_latex
+\begin{equation}
+\Lambda_{mb} = \frac{\text{Valor de mercado da dívida total}}{\text{Valor de mercado do PL} + \text{Valor de mercado da dívida total}}
+\end{equation}
+#+END_latex
+
+Book (custo histórico):
+#+BEGIN_latex
+\begin{equation}
+\Lambda_{b} = \frac{\text{Dívida total (histórico)}}{\text{Valor histórico dos ativos}}
+\end{equation}
+#+END_latex
+** Teorias e predições
+
+
+*** Relações entre alavancagem e lucratividade
+
+- Trade-off :: ambígua, porém com viés de prever relação *positiva*
+  + Firmas mais lucrativas ganhariam mais com a disciplina imposta por endividamento elevado, evitando os problemas de agência evitando os problemas de agência decorrentes do maior montante de fluxo de caixas livres
+- Pecking-order :: prevê relação *negativa*
+
+*** Relação entre alavancagem e tamanho/idade
+
+- Trade-off :: Maior endividamento para firmas mais maduras e maiores
+  + Firmas mais velhas e maiores, menor custo de agência e menor risco de default
+- Pecking-order :: Menor endividamento para firmas mais maduras e maiores
+  + Firmas mais antigas acumulam maior lucros
+
+*** Relação entre alavancagem e crescimento
+
+- Trade-off :: relação negativa
+  + Quanto maior o crescimento esperado da firma, menor deve ser a alavancagem
+  + Reduz-se o problema de agência decorrente do potencial excesso de fluxos de caixa
+- Pecking-order :: relação positiva
+  + Crescimento $\Rightarrow$ maior necessidade de recursos $\Rightarrow$ maior necessidade de financiamento por dívida
+
+
+*** Relação entre alavancagem e impostos
+
+- Trade-off :: Positivo
+  + Eleva-se o benefício proveniente da dedução dos juros na base de cálculo dos impostos sobre os lucros
+- Pecking-order :: Positivo
+  + Maiores alíquotas de imposto sobre os lucros reduzem a capacidade de autofinanciamento
+** Fatores que afetam a alavancagem de forma mais robusta
+
+*** Firmas de capital aberto nos EUA
+
+1. As empresas que competem sem setores em que a empresa mediana tem alta alavancagem tendem a ter alta alavancagem
+2. As empresas que têm alta relação entre o mercado e o valor contábil tendem a ter níveis baixos de alavancagem
+3. As empresas que possuem mais ativos tangíveis tendem a ter alavancagem maior
+4. As empresas que têm mais lucros tendem a ter alavancagem menor
+5. As empresas maiores (medidas pelos ativos contábeis) tendem a ter alavancagem mais alta
+6. Quando se espera que a inflação seja alta, as empresas tendem a ter alavancagem mais alta
+
+** Estrutura de capital: Fatos estilizados
+
+1. Alavancagem agregada é estacionária em longos períodos
+2. Ao longo dos últimos 50 anos, os índices marcados a mercado giraram em torno de 32%
+   a. Este índice flutuou pouco
+3. No nível agregado, o investimento são muito próximos do autofinanciamento
+   a. Este não é o caso para as firmas pequenas
+4. No agregado, o díficit de financiamento é muito próximo da emissão de dívida. Há evidência disso para firmas grandes de capital aberto quanto fechado. No caso de firmas pequenas de capital aberto, o hiato de financiamento é geralmente coberto pela emissão de ações
+5. No agregado, a relação dividendo sobre ativos totais possui trajetória suave para todos os tipos de firmas
+   a. A taxa de dividendo é razoavelmente estável
+   b. Firmas grandes pagam mais dividendo que as pequenas
+6. Nos últimos 50 anos, reduziu-se drasticamente a detenção direta de títulos privados por parte das famílias, com aumento correspondente na intermediação financeira
+7. As famílias vêm sendo ofertantes líquidas de ações desde os anos 60. As corporações têm sido compradoras líquidas de ações desde os anos 80.
+   a. A maior parte das ações é detida por intermediários principalmente (seguradoras, fundos mútuos e de pensa)
+8. As empresas frequentemente ajustam suas dívidas. O hiato de financiamento tem algum papel nessas decisões. Porém, os fatores transversais tradicionais são mais importantes do que o déficit de financiamento
+9. Depois de um IPO, emissões de ações são mais importantes para as pequenas empresas do que para as grandes. Muitas grandes empresas raramente emitem novas ações em quantias significativas. Porém, quando fazem, as emissões podem ser grandes. Muitas pequenas empresas emitem ações com bastante frequência
+10. O endividamento das empresas é reversível à média da firma. A velocidade de reversão é objeto de debate
+11. No nível agregado, a reversão à média da alavancagem ocorre principalmente por meio de ações no mercado de dívida
+12. Fusões e aquisições são motivos mais comuns para saída do que falências e liquidações
+13. As condições de mercado têm algum efeito sobre as decisões de alavancagem. A magnitude e a durabilidade desses efeitos são objeto de debate
+
+** Conclusão
+
+A literatura sobre a estrutura de capital já explorou, com vasto repertório empírico, diversos elementos importantes para fazer teorias de fragilidade/instabilidade financeira.
+
+Três questões sobre essa literatura:
+1. Não precisa de fundamento neoclássico
+2. Teleologia excessiva por parte das firmas: em que medida elas realmente definem sua estrutura de capital?
+3. Relacionando, o baixo nível de integração de considerações de equilíbrio/desequilíbrio geral
+
+Suscinta-se a possibilidade de se explorar uma diversidade enorme de configurações com pressupostos e teorias mais robustas.
+Inclui-se a possibilidade de explorar mais robustez dos resultados minskianos considerando diferentes cenários no que tange as decisões de estrutura de capital.
+
+* Sustentabilidade do endividamento e a tipologia minskiana <2021-03-17 qua>
+** Introdução
+
+Mensuração de fragilidade financeira, desenvolvendo a escala de fragilidade de Minsky:
+- Escala de fragilidade engenhosa, com significados subexplorados
+- Dificuldade de como adaptar o conceito a estudos empíricos
+- Trata-se, no fundo, de um conceito de sustentabilidade patrimonial
+
+Aplicações empíricas recentes:
+- Mostra pouca aderência a HIF
+- Ressalta heterogeneidades (distribuições) ocultadas nas versões mais agregadas da HIF
+** Escala da fragilidade financeira na definição de Minsky
+
+Conceito de sustentabilidade dos balanços patrimoniais: dívida não pode superar ativos, ou a sobrevivência econômica da unidade é afetada.
+- *Ênfase de Minsky:* descasamento temporal potencial entre fluxo de caixa (incerto) e compromissos financeiros (certos)
+- A princípio, aplicável a qualquer unidade econômica
+- Escala de fragilidade: hedge $\Rightarrow$ especulativo $\Rightarrow$ Ponzi
+
+*** Hedge
+
+Os fluxos de caixa /esperado/ de uma unidadesuperam, com alguma folga, os pagamentos contratuais das dívidas em aberto
+- Conceito claramente intertemporal
+- Esse tipo de unidade econômica consegue acumular recursos financeiros $\Rightarrow$ geralmente possui boa liquidez no balanço
+- Há pouca suscetibilidade às condições de mercado, principalmente em relação à taxa de juros. Só uma quebra tremenda de expectativas ameaçaria a sobrevivência desse tipo de unidade.
+**** Exemplo
+- Por hipótese :: taxa de juros anual de empréstimo 5%
+- Taxa de desconto :: 1
+- Investimento :: R$10000, metade financiado por dívida
+- Compromisso financeiro :: R$260,83 por período
+- Valor presente :: R$20000. Líquido :: R$9739,15
+- Tipo de firma :: hedge
+
+*** Especulativo
+
+Em /alguns períodos/, as saídas de caixa para saldar dívida superam as entradas.
+Nesse sentido,
+
+**** Exemplo
+:PROPERTIES:
+:ID:       0aef4ef8-31ac-4d3c-aedf-eb70e9c67335
+:mtime:    20211202152738 20211013082514
+:ctime:    20201202092036
+:END:
+- Por hipótese :: taxa de juros anual de empréstimo 5%
+- Taxa de desconto :: 1
+- Fluxo de caixa :: R$50 nos três primeiros anos. R$250 nos quatro próximos. R$1450 nos anos seguintes
+- Investimento :: R$10000, metade financiado por dívida
+- Compromisso financeiro :: R$260,83 por período
+- Valor presente :: R$20000. Líquido :: R$9739,15
+- Tipo de firma :: Especulativo
+
+*** Ponzi
+
+A unidade Ponzi é um tipo especial de firma especulativa, para a qual os fluxos de caixa esperados de curto prazo não cobrem sequer o pagamento de juros.
+Logo, a firma deve buscar empréstimos inclusive para rolar o pagamento dos juros.
+Firma Ponzi não é inviável necessariamente.
+De fato, sua operação está condicionada ao fato de que os agentes esperem que o valor presente líquido de seus projetos seja positivo.
+Porém, há maior suscetibilidade às variações das condições de mercado.
+
+**** Exemplo
+- Por hipótese :: taxa de juros anual de empréstimo 5%
+- Taxa de desconto :: 1
+- Fluxo de caixa :: zero nos três primeiros anos. R$100 nos dez próximos. R$2714,29 nos anos seguintes
+- Investimento :: R$10000, metade financiado por dívida
+- Compromisso financeiro :: R$260,83 por período
+- Valor presente :: R$20000. Líquido :: R$9739,15
+- Tipo de firma :: Ponzi
+*** Agregando projeto em uma unidade
+
+Imagine que uma mesma unidade tenha no balanço os três projetos de investimento anteriores.
+Firma Hedge.
+
+[[file:../figs/2021_03_17_IEE882.png]]
+*** O que afeta a fragilidade financeira?
+Alguns elementos que afetam a fragilidade financeira:
+- Estrutura da dívida: dívida mais de curto prazo, mais fragilidade
+  + Problemas aparece eclipsado na discussão do paradoxo da dívida
+- Fluxo de caixa: quanto maior expectativa do fluxo de caixa (taxa de lucro maior), menor fragilidade
+- Distribuição temporal do fluxo de caixa: projeto de mais longa maturação, maior fragilidade
+- Menor financiamento por dívida: menor fragilidade
+- Menor taxa de juros: menor fragilidade
+- Pode ser interpretada para qualquer projeto de investimento (real ou financeiro)
+- Cada unidade econômica possui projetos de investimento superpostos no passado
+- Agregando todos os projetos efetivados por uma unidade econômica, pode-se obter o estado financeiro desta unidade
+- Agregando o financeiro de todas as unidades de um setor, obteríamos o grau de fragilidade desse setor
+** Formalização do Foley
+
+A formalização da tipologia minskiana por Foley (2003) é, no fundo, uma interpretação que avança na compreensão da escala de fragilidade financeira e da fragilidade financeira em si.
+Ela contribui de três formas:
+- Formula o problema claramente em termos da sustentabilidade da dívida
+- Inclui explicitamente o investimento no tratamento
+- Retira parte da subjetividade que torna proibitivo aplicações empíricas da escala
+
+Trata-se de uma versão condensada da dinâmica do balanço de pagamento patrimonial, que pode ser expandida.
+Além disso, há simplificações analíticas que podem ser relaxadas.
+*** Lendo a partir da contabilidade
+
+|--------+----------|
+| Ativos | Passivos |
+|--------+----------|
+| K      | CT       |
+| AL     | PL       |
+|--------+----------|
+em que:
+- CT :: capital de terceiros
+- PL :: Patrimônio líquido
+- K :: estoque de capital (proxy de todos os ativos não financeiros)
+- AL :: Ativos líquidos (financeiros)
+
+#+BEGIN_latex
+\begin{equation}
+\Delta CT + \Delta PL = \Delta K + \Delta AL
+\end{equation}
+#+END_latex
+**** Variação do passivo
+
+#+BEGIN_latex
+\begin{equation}
+\Delta CT_{t} + \Delta PL_{t} = \Delta s p_{s} + NL - AM + CG + F_{u}
+\end{equation}
+#+END_latex
+em que:
+- $\Delta D = NL - AM$ :: variação da dívida é igual aos novos empréstimos ($NL$) menos amortizações (AM). Essa rúbrica é afetada pela estrutura da dívida, sujeita aos instrumentos de financiamento disponíveis no mercado
+- CG :: ganhos de capital, que podem vir de ativos financeiros detidos pelo agente, desvalorização de passivos marcados a mercado, bem como de reavaliações dos ativos não financeiros detidos
+- $F_{u}$ :: lucro líquido (de impostos, despesas financeiras, depreciação) retido
+
+***** Extendendo lucro retido
+
+#+BEGIN_latex
+\begin{equation}
+F_{u} = \Pi + nAL - \delta K_{t-1} - iD_{t-1} - F_{d} - T_{t}
+\end{equation}
+#+END_latex
+em que:
+- $\Pi$ :: Lucro operacional bruto
+- n :: taxa média de juros do ativo líquido
+- $\delta$ :: taxa média de depreciação
+- K :: Estoque de capital no início do período
+- iD :: pagamento de juros sobre a dívida
+- Fd :: Lucros distribuídos (dividendos)
+- T :: imposto de renda sobre o lucro
+**** Variação do ativo
+
+#+BEGIN_latex
+\begin{equation}
+\Delta ANF + \Delta AL = I - \delta K_{t-1} + \Delta AL_{t}
+\end{equation}
+#+END_latex
+A rigor, o investimento bruto inclui P&D.
+Porém, P&D só aumenta o estoque de ativos se alterar o /goodwill/ ou gerar alguma patente.
+**** Dinâmica do balanço patrimonial
+
+#+BEGIN_latex
+\begin{equation}
+\Deta s p_{s} + NL - AM + GG + \Pi + nAL - iD - F_{d} - T = I + \Delta AL
+\end{equation}
+#+END_latex
+
+Na formulação do Foley, $\Delta s = CG = F_{d} = T = 0$
+
+#+BEGIN_latex
+\begin{equation}
+NL - AM + \Pi + nAL - iD = I + \Delta AL
+\end{equation}
+#+END_latex
+Além disso, ele trata da dívida líquida de ativos financeiros e agrega todo o serviço financeiro (amortização + pagamento de juros).
+$D$, portanto, representa a dívida líquida de ativos financeiros:
+#+BEGIN_latex
+\begin{equation}
+\Deta D + \Pi = I + rD
+\end{equation}
+#+END_latex
+Finalmente, para tempo contínuo:
+#+BEGIN_latex
+\begin{equation}
+\dot D + \Pi = I + rD
+\end{equation}
+#+END_latex
+
+Os três estados financeiros:
+- Hedge :: $\Pi > I + rD$, de forma que $\dot D <0$. O fluxo de caixa da firma cobre o investimento e o serviço da dívida, logo, há ou redução da dívida ou aumento do ativo líquido
+- Especulativo :: $\Pi \geq rD \land \Pi < I + rD$, o que implica $\dot D \geq 0$. O fluxo de caixa cobre o serviço da dívida, mas parte do investimento é financiado por dívida ou redução do ativo líquido. Ainda assim, o patrimônio líquido sobre. Se houver racionamento de crédito a firma consegue cortar investimento, o que confere a esta firma uma certa margem de segurança
+- Ponzi :: $\Pi < rD$ de forma que $\dot D > I$. O patrimônio líquido cai. A firma Ponzi deve convencer os credores de que gerará receitas nos futuros.
+**** Em taxas de crescimento
+
+Se supusermos uma trajetória de crescimento estável, em que os ativos da firma cresçam a uma taxa constante, $A(t) = A_{0}\exp^{g}$.
+Passando a versão básica do modelo para taxas de crescimento, temos que:
+#+BEGIN_latex
+\begin{equation}
+D(t) = \left(D_{0} -\frac{g-\rho}{g-r}A_{0}\exp^{rt}\right) + \frac{g-\rho}{g-r}A_{0}\exp^{gt}
+\end{equation}
+#+END_latex
+Em vez de tratar do nível da dívida, é conveniente tratar da dinâmica da alavancagem ($\phi = D/A$):
+#+BEGIN_latex
+\begin{equation}
+\phi(t) = \phi^{*} + (\phi_{0} - \phi^{*})\exp^{(r-g)t}
+\end{equation}
+#+END_latex
+onde:
+#+BEGIN_latex
+\begin{equation}
+\phi^{*} = \frac{g-\rho}{g-i}
+\end{equation}
+#+END_latex
+e $\rho$ é o ROA; $r$ é o serviço da dívida sobre o ativo total.
+Quando a firma fica insolvente ($\phi>1$)?
+- Caso 1 :: quando $g>r$ quando $t\to\infty$, $\lim_{t\infty}(\phi_{0} - \phi^{\star})\exp^{(r-g)t} = 0$. Logo, $\phi \to \phi^{\star}$
+  + Caso $\phi^{\star} > 1$ haverá instabilidade
+  + Caso $r>g$ quando $\phi^{0} > \phi^{\star}$ - Instabilidade
+  + Neste caso, é preciso relacionar taxa de lucro e a taxa de crescimento
+    - Hedge :: Se $\rho > g \Leftrightarrow \rho > g > r, \phi^{\star} < 0$
+    - Ponzi :: Se $r> \rho$ e $\phi^{\star} > 1$ dado $g> \rho$
+    - Especulativo :: $\rho > r$ (logo, $g > \rho> r$). Há incentivo para aumentar $g$, o que implica algum aumento da dívida para ampliar $I$. Assintóticamente, a taxa de crescimento da dívida é a mesma do crescimento dos ativos.
+- Caso 2 :: se $r>g$, o segundo termo domina e, a princípio, poderíamos convergir para $\phi \pm \infty$
+  + Dado $r>g$, o denominador de $\phi^{\star}$ é negativo
+  + Para onde converge depende do sinal de $\phi_{0}$ em relação a $\phi^{\star}$
+** Aspectos empíricos: caso dos EUA
+*** Objetivo
+
+Confrontar os corolários das diversas interpretações da teoria  minskiana com os dados.
+Pergunta central: quão bem indicadores de alavancagem aproximam a fragilidade financeira?
+Estratégias empíricas:
+- aproximar a teoria minskiana o máximo possível
+- séries longas
+- evitar dropar pontos de dados
+- micro e macro
+- análise de tendência
+- economia dos EUA escolhida por conta de maior disponibilidade de dados
+
+* Interconexão setoriais, agregados e formação de redes <2021-03-26 sex>
+
+VER SLIDES
+
+** Definição do problema e perguntas
+
+*Definição:* instabilidade financeira é um fenômeno relativamente raro, de potencial pernicioso considerável, de manifestação macroeconômica, decorrente do acumúmulo de fragilidade financeira, a qual não necessariamente poderá ser observada confiavelmente por meio de agregados macroeconômicos.
+
+Perguntas em aberto:
+- Sob que condições a fragilidade financeira se acumula?
+- O aumento da fragilidade financeira é intrínseco aos ciclos econômicos? Se não, sob que circunstâncias um aumento de fragilidade torna mais provável crises financeiras?
+-
+** Macroeconomia e fragilidade financeira
+*** Fechamentos do modelo
+
+Resultados dos modelos micro-macro estão sujeitos ao fechamento macroeconômico.
+Exemplo:
+- Pecking-order e trade-off podem resultar em diferentes trajetórias de endividamento para cada fechamento
+
+Modelos micro-macro tendem a não reconhecer explicitamente esse problema.
+O ponto central é:
+- Macrodinâmica informa muito bem sobre *leis de movimento* do capitalistmo
+- Micro-macro dinâmica permite analisar mudança endógena de forma mais satisfatória
+*** Implicação da interdependência entre setores institucionais
+
+Os setores institucionais são interdependentes.
+Felizmente, isso esta bem colocado por Minsky e Godley.
+
+Em Godley (1999), a análise da economia norte-americana se valeu principalmente de um identidade contábil básica de uma economia aberta:
+
+#+BEGIN_latex
+\begin{equation}
+NL_{g} + NL_{p} + NL_{e} = 0
+\end{equation}
+#+END_latex
+A partir de atribuição de causalidades (via interpretaçção das informações + demanda como propulsora da produção), muitos acreditam que Godley antecipou alguns dos principais elementos das crises vindouras.
+No fundo, o pressuposto de Godley é o mesmo que de Minsky: uma curva de endividamento-fragilidade financeira positivamente inclinada.
+Já vimos que não é geral.
+
+Heterogeneidade importa: com muita frequência o problema ocorre de forma muito localizada.
+*** Os modelos PK-SFC
+
+A literatura SFC trata dessa questão $\Rightarrow$ frequentemente diz-se que esses modelos podem "gerar" crises financeiras.
+Resumindo: quem está tentando lidar com o problema não o está resolvendo, porque parte de premissa equivocada sobre possibilidade de estudar fragilidade financeira de forma agregada e ainda tem questões teóricas muito complicadas.
+*** Hierarquia de dívidas
+
+As interconexões entre os setores institucionais, demonstrada a partir da contabilidade, mostram que o endividamento setorial é interdependente.
+Os próprios modelos SFC registram isso muito bem.
+Mas a partir disso tomam a hipótese minskiana como válida: pensam ainda no setor das firmas.
+
+Pode ser mais amplo $\Rightarrow$ endividamento público vs privado.
+Mais recentemente, aparecem inclusive evidências demonstrando que a desalavancagem do setor privado propele endividamento do setor público.
+Estatização indireta da dívida privada.
+
+O problema é que nem todas as dívidas são iguais.
+Governos nacionais soberanos emitem moeda em sua própria dívida e fixam a taxa de juros: "bonûs" da forma de configuração do sistema produtivo, monetário e financeiro internacional.
+Austeridade pode envolver troca de dívida pública por dívida privada.
+*** Maior das hierarquias: endividamento externo
+
+Problemas relacionados a economia aberta e estrição externa eram pouco ressaltadas por Minsky, são pouco ressaltadas na literatura minskiana e não se falou quase nada sobre isso no curso.
+Por isso mesmo, cabe ressaltar que restrição externa acontece e pode ser explicado por meios microeconômicos.
+** Envididamento agregado e fragilidade financeira
+
+*** Por que alavancagem não é fragilidade financeira?
+
+Em que medida indicadores de alavancagem agregada podem apontar para a evolução da fragilidade financeira?
+- Um pouco: endividamento aumentando sempre que dar indício de que algum processo insustentável está acontecendo
+- Considerando hierarquia das dívidas:
+  + Endividamento crescendo no setor das famílias parece pior que o endividamento crescendo no setor das firmas.
+    Agregado tende a importar mais.
+  + Endividamento do setor das firmas não costuma chegar a ser trágico de um ponto de vista macro $\Rightarrow$ muito mecanismo de ajuste e agregado tende a importar menos
+  + Endividamento público absorve o privado
+  + Endividamento externo: muito sujeito a questões estruturais e decisões de política econômica
+
+*** Exemplo de uma transição e mudança de fragilidade: recompra de ações
+
+Recompra de ações por caixa existente. Acionistas não alavancados.
+
+#+CAPTION: Acionistas
+|----------------+--------------|
+| Ativo          | Passivo + PL |
+|----------------+--------------|
+| Ações   -100   |              |
+| Depósitos +100 |              |
+|----------------+--------------|
+
+#+CAPTION: Empresa
+|----------------+--------------|
+| Ativo          | Passivo + PL |
+|----------------+--------------|
+| Depósitos -100 |              |
+|                | PL - 100     |
+|----------------+--------------|
+
+Recompra de ações por caixa existente. Acionistas alavancados. Usar dinheiro para pagar dívida.
+
+#+CAPTION: Acionistas
+|----------------+--------------|
+| Ativo          | Passivo + PL |
+|----------------+--------------|
+| Ações   -100   |              |
+| Depósitos +100 |              |
+| Depósitos -100 |              |
+|                | Dívida -100  |
+|----------------+--------------|
+
+#+CAPTION: Empresa
+|----------------+--------------|
+| Ativo          | Passivo + PL |
+|----------------+--------------|
+| Depósitos -100 |              |
+|                | PL - 100     |
+|----------------+--------------|
+
+#+CAPTION: Banco
+|-------------+----------------|
+| Ativo       | Passivo + PL   |
+|-------------+----------------|
+| Dívida -100 |                |
+|             | Depósito - 100 |
+|-------------+----------------|
+
+Acionista: menos frágil. Banco menos frágil. Firma mais frágil.
+O saldo líquido do que acontece com a fragilidade financeira do sistema depende da condição inicial do agente.
+
+**** Conclusão
+
+- Transações econômicas mudam a distribuição da fragilidade
+- Transações parecidas
+** Fragilidade financeira e ciclo
+
+O aumento da fragilidade financeira é intrínseco aos ciclos de atividade econômica?
+- Não. Como colocar o problema dessa forma parece exagerado
+- Ciclos podem muito bem ter origens reais e ter repercursão financeira
+- Turning points que acontecem a partir de questões financeiras parecem ser pouco mais raros
+- Repercursão financeira às vezes piora substancialmente a recessão, tornando-as também mais longevas.
+** Como acontecem os episódios de instabilidade?
+*** Liquidez, fragilidade financeira, crise e política econômica
+
+- Fragilidade $\neq$ instabilidade
+- Canal do juros evocado por Minsky parece ser menos importante: racionamento de crédito por quantidade é muito mais importante.
+- Crises têm um aspecto em comum importante: elevação forte da aversão ao risco $\Rightarrow$ quebra de liquidez de maior parte dos ativos
+- Contexto: Bancos centrais e quantitative easing $\Rightarrow$ Crise financeira clássica?
+** Redes financeiras
+
+Para capturar realmente fragilidade financeira, deve-se observar o fenômeno com foco mais microeconômico.
+Além das questões de distribuição da dívida e dos fluxos de caixa, há a questão das formações de redes financeiras.
+
+Redes financeiras $\Rightarrow$
+*** Caracterização
+
+- Nós :: atores financeiros
+- Links :: contratos ou outras relações entre agentes
+- Redes multiplex :: múltiplas camadas
+
+Estruturas das redes financeiras são mutáveis no tempo.
+** Mensagens do curso a partir de Minsky/literatura minskiana
+
+- Muitas questões perspicazes, formuladas de forma interessante
+- Formulações, contudo, precisam de muito avanço e de muito mais procura por consenso
+- O que é bom?
+  + Micro-macro
+  + Importância do setor financeiro
+  + Interconexões entre setores institucionais
+  + Riqueza institucional
+  + Incorporação da estrutura temporal que relacionaos fluxos de caixa e os desembolsos financeiros na macro
+- O que não é tão bom?
+  + A macro/algumas hipóteses comportamentais
+  + Exagero na importância das finanças como causador de ciclo e de crise
+  + A herança keynesiana de que a relação real-financeira se dá a partir do investimento empresarial
+  + Sobre expectativas, misturar visão de mundo com nível de abstração
+  + Sobre interpretações: o raio minskianizador
+- Para estudar economia: relacionar questões abstratas e concretas. É necessário conhecer teoria e evidência
+- Conhecimento técnico: fundamental e incontornável. O problema não se encerra ai, tampouco deve ser contornado com argumentos pouco convincentes
+- Acoplar demanda efetiva + insights pós-keynesianos sobre finanças + heterogeneidade $\Rightarrow$ incipiente

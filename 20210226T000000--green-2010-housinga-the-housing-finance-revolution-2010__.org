@@ -1,0 +1,46 @@
+:mtime:    20211202152741 20211013082514
+:ctime:    20211013082514
+:END:
+#+TITLE: green_2010_Housinga: The Housing Finance Revolution (2010, )
+#+OPTIONS: toc:nil num:nil
+Time-stamp: 2021-02-26
+- tags ::
+
+
+* Backlinks
+
+
+
+* FISH-5SS
+
+
+|---------------------------------------------+-----|
+| <40>                                        |<50> |
+| *Background*                                  |     |
+| *Supporting Ideas*                            |     |
+| *Purpose*                                     |     |
+| *Originality/value (Contribution)*            |     |
+| *Relevance*                                   |     |
+| *Design/methodology/approach*                 |     |
+| *Results*                                     |     |
+| *(Interesting) Findings*                      |     |
+| *Research limitations/implications (Critics)* |     |
+| *Uncategorized stuff*                         |     |
+| *5SS*                                         |     |
+|---------------------------------------------+-----|
+
+* Specifics comments
+ :PROPERTIES:
+ :Custom_ID: green_2010_Housinga
+ :AUTHOR: Green, R. K., & Wachter, S. M.
+ :JOURNAL:
+ :YEAR: 2010
+ :DOI:  http://dx.doi.org/10.1002/9781444317978.ch18
+ :URL: http://doi.wiley.com/10.1002/9781444317978.ch18
+ :END:
+
+
+* PDF Highlights
+:PROPERTIES:
+ :NOTER_DOCUMENT: /home/gpetrini/Zotero/storage/KDPI62DB/Green e Wachter - 2010 - The Housing Finance Revolution.pdf
+ :END:
