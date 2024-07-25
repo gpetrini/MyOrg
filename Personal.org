@@ -1,0 +1,12 @@
+#+title: Personal agenda
+
+* TODO Send e-mail extension to Andrea :@santanna:@bureaucracy:@email:
+
+* TODO [#C] Configure org-super-agenda :@personal:@free:
+* TODO [#C] Complete exporting notes to denote :@personal:@free:
+
+* TODO [#A] Enviar pedido adiamento :@capes:@santanna:@unicamp:@bureaucracy:
+* TODO [#A] Relatório de encerramento das atividades :@capes:@hwr:@unicamp:@bureaucracy:
+* TODO Review ROKE :@computer:@review:
+DEADLINE: <2024-09-09 seg>
+* STRT [#C] Ver pasta de ex-bolsistas CAPES :@free:@bureaucracy:@personal:
