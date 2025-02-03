@@ -1,0 +1,5 @@
+#+title: Technological Paradigms, Labour Creation and Destruction in a Multi-Sector Agent-Based Model
+#+date:       [2024-07-08 seg 18:09]
+#+filetags:   :agentbased:bib:ks:
+#+identifier: 20240708T180959
+#+reference:  dosi_2022_technological

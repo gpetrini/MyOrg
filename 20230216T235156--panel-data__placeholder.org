@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       0804a047-2448-46d4-827d-077842d4fb69
+:mtime:    20211202152738 20211013082514
+:ctime:    20210210191246
+:END:
+#+title:      Panel Data
+#+date:       [2023-02-16 qui 23:51]
+#+filetags:   :placeholder:
+#+identifier: 20230216T235156
+[[id:96cca9b2-3b1c-4e2d-bf63-c2d8b032f096][Panel readings]]

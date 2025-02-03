@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       11044897-734e-47b1-9abd-b5d2a10cbaf0
+:END:
+#+title:      Speculation
+#+date:       [2025-02-02 dom 11:58]
+#+filetags:   :placeholder:
+#+identifier: 20250202T115838
+#+OPTIONS: num:nil ^:{} toc:nil

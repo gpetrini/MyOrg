@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       3b63f993-32ce-4ba1-976e-99d4ebddf884
+:mtime:    20211202152739 20211027153620
+:ctime:    20211027153620
+:END:
+#+title:      Macroeconomic Paradoxes
+#+date:       [2025-02-02 dom 12:04]
+#+filetags:   :placeholder:
+#+identifier: 20250202T120452
+#+OPTIONS: num:nil ^:{} toc:nil
+
+
+Placeholder for paper that discuss some macroeconomics paradoxes such as:
+- Paradox of thrift
+- Paradox of costs

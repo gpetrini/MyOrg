@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       ae731152-5618-4c2e-a42e-7577fe53fe36
+:END:
+#+title:      consumer_sentiments
+#+date:       [2025-02-02 dom 12:16]
+#+filetags:   :placeholder:
+#+identifier: 20250202T121645
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

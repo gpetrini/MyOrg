@@ -1,0 +1,1161 @@
+#+title:      CE362
+#+date:       [2025-02-03 seg 18:24]
+#+filetags:   :lecture:
+#+identifier: 20250203T182403
+#+subtitle: Microeconomics
+#+HUGO_AUTO_SET_LASTMOD: t
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil
+
+
+* Apresentação do curso (<2022-03-17 qui>)
+:PROPERTIES:
+:PROFESSOR: Aggio
+:END:
+
+** Retomada de alguns conceitos de microeconomia I e rumo à microeconomia II
+
+Em microeconomia I é apresentada uma teoria da escolha em que supõe-se a racionalidade dos agentes.
+Para tanto, supõe-se:
+- Não circularidade
+- Transitividade
+
+
+Ampliando tal teoria para as decisões da firma, tratou-se de uma estrutura de mercado concorrencial com livre entrada e saída de capitias.
+Como consequência, há lucro econômico zero (sem lucros anormais).
+
+Em linhas gerais, o curso de microeconomia II abandonará estas hipóteses.
+
+
+** Conteúdo da disciplina
+
+- Estruturas de mercado não concorrênciais
+  - Monopólio
+    - Monopólio simples
+    - Discriminação no monopólio
+    - Mercado de fatores e monopsônios
+    - Monopólio natural
+    - Competição monopolística
+  - Oligopólio
+
+Além disso, será tratado de [[id:1fc2115e-9b3a-435c-b3d0-854f96f82c95][Teoria dos Jogos]] uma vez que parte do conteúdo trata da interdependência dos agentes.
+Adiante, aborda-se um modelo de [[id:175002f6-69a8-4fa1-a7da-b76802ecc21e][General Equilibrium Model]].
+
+* Monopólio (<2022-03-17 qui> - <2022-04-21 qui>)
+
+** Introdução
+
+Um monopólio é uma empresa ofertante em um mercado.
+Um mercado, por sua vez, envolve um único bem ou serviço dada uma circunscrição espacial.
+Dentre as causas do monopólio, elenca-se:
+- Tecnologia
+  - Monopólio natural
+    - Supõe-se um custo fixo proporcionalmente muito maior
+- Institucionalizados
+- Patentes
+- Barreiras à entrada
+  - Monopsônio de determinado fator pode criar uma barreira à entrada
+
+** Monopólio simples
+
+*** Hipóteses
+
+- Empresa oferta todas as unidades de um mesmo bem ou serviço ao mesmo preço
+  - Por consequência, não há [[id:f1570a85-af92-48fc-bb26-f7c60a77fb4e][Discriminação de preços]]
+- *Objetivo:* Maximizar lucro
+- Empresa é definidora de preço
+- Custo marginal não-negativo
+
+
+*** Lucros
+
+#+BEGIN_latex
+\begin{equation}
+\Pi = p\cdot q - C
+\end{equation}
+#+END_latex
+em que $\Pi$ é o lucro total, $p$ é o preço do bem, $q$ a quantidade e $C$ são os custos totais.
+Por ser definidora de preços, os preços dependem da quantidade produzida.
+#+BEGIN_latex
+\begin{equation}
+\Pi(q) = p(q)\cdot q - C(q)
+\end{equation}
+#+END_latex
+Vale pontuar que $p(q)$ é a função de demanda inversa.
+
+Maximizando a função objetivo:
+#+BEGIN_latex
+\begin{equation*}
+max_{q} \Pi = [p(q)\cdot q] - [C(q)]
+\end{equation*}
+#+END_latex
+Da função anterior, calcula-se a condição de primeira ordem (C.P.O):
+#+BEGIN_latex
+\begin{equation*}
+CPO = \frac{\delta \Pi}{\delta q} = 0
+\end{equation*}
+#+END_latex
+#+BEGIN_latex
+\begin{equation*}
+CPO = \frac{\delta p}{\delta q}\cdot q + p - \frac{\delta C}{\delta q}
+\end{equation*}
+#+END_latex
+#+BEGIN_latex
+\begin{equation*}
+\therefore RMg(q) = CMg(q)
+\end{equation*}
+#+END_latex
+
+Reescrevendo a função da receita marginal:
+#+BEGIN_latex
+\begin{equation}
+RMg(q) = \frac{\delta p}{\delta q}\cdot q + p
+\end{equation}
+#+END_latex
+uma vez que estamos tratando de um bem, é preciso que:
+#+BEGIN_latex
+\begin{equation*}
+p \geq 0 \hspace{2cm} q \geq 0
+\end{equation*}
+#+END_latex
+adicionalmente, supõe-se:
+#+BEGIN_latex
+\begin{equation*}
+\frac{\delta p}{\delta q} < 0
+\end{equation*}
+#+END_latex
+
+
+**** Análise gráfica
+
+****** Função de demanda linear
+
+#+BEGIN_latex
+\begin{equation}
+p(q) = a - b\cdot q, \hspace{1cm} a, b, > 0
+\end{equation}
+#+END_latex
+
+Neste caso, a receita total e marginal são:
+#+BEGIN_latex
+\begin{equation}
+R = (a - b\cdot q)\cdot q \hspace{2cm} RMg = a - 2\cdot b\cdot q
+\end{equation}
+#+END_latex
+
+****** Função demanda não-linear
+#+BEGIN_latex
+\begin{equation}
+p(q) = \frac{A}{1 + q}, A > 0
+\end{equation}
+#+END_latex
+Neste caso, a receita total e marginal são
+#+BEGIN_latex
+\begin{equation}
+R(q) = \frac{A}{1 + q}\cdot q \hspace{2cm} RMg(q) = \left(\frac{- A}{(1 + q)^{2}}\right)\cdot q + \frac{A}{1 + q} = \frac{A}{(1 + q)^{2}}
+\end{equation}
+#+END_latex
+Neste exemplo, a receita marginal é sempre não-nula
+
+#+begin_src gnuplot :results graphics file :file ../figs/2022_03_22_monopolio_exemplo_demanda_nao_linear.png
+reset
+
+set xrange [0:10]
+set xlabel "Quantidade"
+set ylabel "Preço"
+
+p(x) = 2/((1 + x))**2
+R(x) = 2/((1 + x))
+Cmg(x) = (.35)*x
+plot p(x) w lp lw 1, R(x) w lp lw 1, Cmg(x) w lp lw 1
+#+end_src
+
+Além disso, cabe pontuar que o custo médio pode ser obtido a partir da integral do custo marginal uma vez que o custo fixo, por definição, não varia com a quantidade produzida.
+
+*** Receita marginal e elasticidade-preço da demanda
+
+dividindo ambos os termos por $p$:
+#+BEGIN_latex
+\begin{equation}
+\frac{RMg(q)}{p} = \frac{\delta p}{\delta q}\frac{q}{p} + 1
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+RMg(q) = \left(1 - \frac{1}{|\varepsilon|}\right)\cdot p
+\end{equation}
+#+END_latex
+Importante lembrar que a elasticidade-preço da demanda depende do ponto da demanda.
+Dito isso,
+- Elasticidade-preço da demanda inelástica :: $0 < |\varepsilon| < 1 \Rightarrow RMg < p$
+- Elasticidade-preço da demanda elástica :: $|\varepsilon| > 1 \Rightarrow RMg > p$
+- Elasticidade-preço da demanda unitária :: $|\varepsilon| = 1 \Rightarrow RMg = 0$
+
+Desse modo, a empresa monopolista nunca operará no ramo em que a elasticidade-preço da demanda é inelástica.
+Isso porque é possível aumentar a receita diminuindo a quantidade produzida.
+
+Prosseguindo,
+#+BEGIN_latex
+\begin{equation}
+\left(1 - \frac{1}{|\varepsilon|}\right)\cdot p = CMg
+\end{equation}
+#+END_latex
+Da equação anterior, é possível expressar o preço em termos de um regra de /mark-up/ cobre os custos marginais:
+#+BEGIN_latex
+\begin{equation}
+p = \frac{CMg}{\left(1 - \frac{1}{|\varepsilon|}\right)} \Rightarrow \mu = \frac{|\varepsilon|}{|\varepsilon| - 1} = \frac{1}{|\varepsilon| - 1}
+\end{equation}
+#+END_latex
+Consequentemente
+#+BEGIN_latex
+\begin{equation}
+p = (1 + \mu)\cdot CMg
+\end{equation}
+#+END_latex
+
+*** Eficiência no monopólio :grafico:
+
+Em monopólio, o preço é maior que o custo marginal para o ramo da demanda elástica.
+Comparando com o caso de concorrência perfeita, haveriam trocas mutualmente vantajosas.
+
+#+begin_src gnuplot :results graphics file :file ../figs/2022-03-24-markup-monopolio.png
+
+
+reset
+
+set xrange [0:10]
+set yrange [0:10]
+set xlabel "Quantidade"
+set ylabel "Preço"
+
+p(x) = 4 - .3*x
+RMg(x) = - .3*x + p(x)
+CMg(x) = (.5)*x
+plot p(x) w lp lw 1 title "Demanda Inversa", CMg(x) w lp lw 1 title "Custo Marginal", RMg(x) w lp lw 1 title "Receita Marginal"
+#+end_src
+
+#+RESULTS:
+[[file:../figs/2022-03-24-markup-monopolio.png]]
+
+
+
+Essa discussão pode ser exposta em termos do excedente do consumidor e do produtor.
+
+#+begin_src gnuplot :results graphics file :file ../figs/2022-03-24-excedente-monopolio.png
+
+reset
+
+set origin 0.0, 0.0
+set xrange [-10:10]
+set yrange [-10:10]
+set xlabel "Quantidade"
+set ylabel "Preco"
+
+p(x) = 4 - .3*x
+RMg(x) = - .3*x + p(x)
+CMg(x) = (.5)*x
+plot p(x) w lp lw 1 title "Demanda Inversa", CMg(x) w lp lw 1 title "Custo Marginal", RMg(x) w lp lw 1 title "Receita Marginal"
+#+end_src
+
+#+RESULTS:
+[[file:../figs/2022-03-24-excedente-monopolio.png]]
+
+Em concorrência perfeita em que o preço é igual ao custo marginal, o excedente do demandante (consumidor, neste caso) seria:
+#+BEGIN_latex
+\begin{equation}
+\int_{q=0}^{q=q(p=CMg)} P(q)
+\end{equation}
+#+END_latex
+enquanto o excedente do ofertante (produtor, neste caso):
+#+BEGIN_latex
+\begin{equation}
+\int_{q=0}^{q=q(p=CMg)} P(q) - CMg(q)
+\end{equation}
+#+END_latex
+
+A perda de excedente em comparação com a concorrência perfeita é definida como ônus do monopólio.
+Vale pontuar que o monopolista não irá ofertar ao preço da concorrência perfeita por não ser capaz de diferenciar preços.
+
+
+*** Exercícios
+
+**** Monopólio simples
+
+Considere:
+#+BEGIN_latex
+\begin{equation}
+p(q) = 100 - 2q
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+C(q) = 0,5q^{2}
+\end{equation}
+#+END_latex
+
+Determine:
+- Quantidade de produzida de máximo lucro
+- Preço de máximo lucro
+- Lucro
+- Ônus do monopólio
+
+
+***** Quantidade máxima
+
+#+BEGIN_latex
+\begin{equation}
+max \pi: p(q)\cdot q - .5q^{2}
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+\frac{d \pi}{d q} = \left(\frac{p(q)}{q}\cdot q + p(q)\right) - .5\cdot \frac{d q^{2}}{d q} = 0
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+100 - 4\cdot q - q = 0
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+q^{\star} = 20
+\end{equation}
+#+END_latex
+
+***** Preço de máximo lucro
+#+BEGIN_latex
+\begin{equation}
+p(q^{\star}) = 100 - 2\cdot q^{\star}
+\end{equation}
+#+BEGIN_latex
+\begin{equation}
+p(q^{\star}) = 100 - 2\cdot 20 = 60
+\end{equation}
+#+END_latex
+#+END_latex
+
+***** Lucro máximo
+
+#+BEGIN_latex
+\begin{equation}
+\pi^{\star} = p^{\star}\cdot q^{\star} - .5\cdot q^{\star2}
+\end{equation}
+#+END_latex
+Substituindo
+#+BEGIN_SRC python
+pi = (60 * 20) - .5*(20)**2
+print(pi)
+#+END_SRC
+
+#+RESULTS:
+: 1000.0
+
+***** Ônus do monopólio
+
+O ônus do monopólio é a área entre o preço de máximo lucro e o preço em concorrência perfeita.
+
+#+BEGIN_latex
+\begin{equation}
+\int_{q^{m}}^{q^{c}} (100 - 2q) - .5q
+\end{equation}
+#+END_latex
+
+O preço em concorrência perfeita é dado por:
+#+BEGIN_latex
+\begin{equation}
+p = CMg \Rightarrow 100 - 2q = q \Rightarrow p^{c} = \frac{100}{3}
+\end{equation}
+#+END_latex
+
+#+BEGIN_latex
+\begin{equation}
+\int_{20}^{\frac{100}{3}} (100 - 2q) - q \Rightarrow \int_{q^{m}}^{q^{c}} 100 - 3q
+\end{equation}
+#+END_latex
+
+#+BEGIN_latex
+\begin{equation}
+\int_{q^{m}}^{q^{c}} 100q - \frac{3}{2}\cdot q^{2}
+\end{equation}
+#+END_latex
+
+#+BEGIN_latex
+\begin{equation}
+(100\cdot \frac{100}{3} - 100\cdot 20) - \frac{3}{2}\left(\left(\frac{100}{3})^{2}\right) - \left(20^{2}\right)
+\end{equation}
+#+END_latex
+
+#+BEGIN_SRC python
+onus = (100*(100/3) - 100*20) - (3/2)*((100/3)**2 - 20**2)
+print(onus)
+#+END_SRC
+
+#+RESULTS:
+: 266.6666666666665
+
+***** Elasticidade no ponto de máximo lucro
+
+#+BEGIN_latex
+\begin{equation}
+\varepsilon = \frac{d q}{d p}\cdot \frac{p}{q} \Rightarrow \frac{d q}{d p}\cdot \frac{60}{20}
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+q = 50 - \frac{p}{2}
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+\frac{d q}{d p} = -\frac{1}{2}
+\end{equation}
+#+END_latex
+Logo:
+#+BEGIN_latex
+\begin{equation}
+\varepsilon = -\frac{3}{2}
+\end{equation}
+#+END_latex
+
+**** Caso mais genérico
+
+Considere uma função de demanda inversa $p(q)$ em que $\frac{d p}{dq} > 0$ e a seguinte função de custos:
+#+BEGIN_latex
+\begin{equation}
+C = F + c\cdot q
+\end{equation}
+#+END_latex
+com $F, c > 0$
+
+Neste caso,
+#+BEGIN_latex
+\begin{equation}
+CMg = c \hspace{2cm} CMe = \frac{F}{q} + c
+\end{equation}
+#+END_latex
+
+#+begin_src gnuplot :results graphics file :file ../figs/2022-03-29-exercicio-custos.png
+
+
+set xrange [0:10]
+
+CMe(x) = (10/x) + 2
+CMg(x) = 2
+
+plot CMe(x) w lp lw 1, CMg(x) w lp
+
+#+end_src
+
+
+**** Curva de demanda não linear
+
+Considere a seguinte curva de demanda não linear:
+#+BEGIN_latex
+\begin{equation}
+p(q) = \frac{200}{q + 1}
+\end{equation}
+#+END_latex
+com a seguinte curva de custos:
+#+BEGIN_latex
+\begin{equation}
+C(q) = 2q
+\end{equation}
+#+END_latex
+
+Determine a quantidade, preço e lucro máximo, elasticidade-preço da demanda e o ônus do monopólio.
+
+***** Quantidade
+
+#+BEGIN_latex
+\begin{equation}
+max \pi = p(q)\cdot q - C(q) \Rightarrow \frac{200}{q + i}\cdot q - 2q
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+\frac{d \pi}{d q} = -\frac{200}{(q + 1)^{2}}\cdot q + \frac{200}{q + 1} - 2 = 0
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+\frac{200(q + 1) - 200\cdot q}{(q + 1)^{2}} = 2
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+\frac{200}{(q + 1)^{2}} = 2 \Rightarrow \frac{1}{(1 + q)^{2}} = \frac{1}{100}
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+(1 + q)^{2} = 100 \Rightarrow q^{\star} = -11, 9
+\end{equation}
+#+END_latex
+
+***** Preço
+
+Supondo a quantidade produzida positiva apenas:
+#+BEGIN_latex
+\begin{equation}
+p(q = 9) = \frac{200}{9 + 1} = 20
+\end{equation}
+#+END_latex
+
+***** Lucro
+
+#+BEGIN_latex
+\begin{equation}
+\pi(q = 9) = 20\cdot 9 - 2\cdot 9 = 18 \cdot 9 =  162
+\end{equation}
+#+END_latex
+
+
+***** Elasticidade preço
+
+#+BEGIN_latex
+\begin{equation}
+\varepsilon = \frac{d q}{d p}\cdot \frac{p}{q} = -\frac{200}{(p)^{2}}\cdot \frac{20}{9} = -2\cdot \frac{5}{9}
+\end{equation}
+#+END_latex
+
+***** Ônus do monopólio
+
+Para obter o ônus do monopólio, é preciso encontar o preço e a quantidade em concorrência perfeita:
+#+BEGIN_latex
+\begin{equation}
+p^{c} = CMg = 2
+\end{equation}
+#+END_latex
+
+#+BEGIN_latex
+\begin{equation}
+q(p) = \frac{200}{p} - 1 \Rightarrow q(p = 2) = 99
+\end{equation}
+#+END_latex
+
+#+BEGIN_latex
+\begin{equation}
+DWL = \int_{q^{m}}^{q^{c}} p(q) - CMg
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+DWL = \int_{q^{m}}^{q^{c}} (\frac{200}{q + 1} - 2) dq = 200\cdot ln(q + 1) - 2q
+\end{equation}
+#+END_latex
+Substituindo:
+#+BEGIN_latex
+\begin{equation}
+200\cdot (ln(100) - ln(9)) - 2\cdot (99 - 9) = 200\cdot (ln(100) - ln(9)) - 180 \approx 301
+\end{equation}
+#+END_latex
+
+***** Análise gráfica
+
+#+begin_src gnuplot :results graphics file :file ../figs/2022-03-31-ex_demanda_nao_linear.png
+
+
+set xrange [0:100]
+set yrange [0:200]
+
+p(x) = (200)/(x + 1)
+RMg(x) = ((-200)/((x + 1)**2)*x) + p(x)
+CMg(x) = 2
+C(x) = 2*x
+Pi(x) = p(x)*x - C(x)
+
+plot p(x) lw 3, CMg(x) lw 3, RMg(x) lw 3, C(x) lw 3, Pi(x) lw 3
+#+end_src
+
+
+*** Discriminação de preços em monopólio
+
+Discriminação de preços refere-se a uma estratégia das empresas capturarem maior parcela do excedente.
+São elas:
+- Discriminação perfeita (primeiro grau) :: em que a empresa conhece as preferências dos demandates
+- Discriminação entre grupos (terceiro grau) :: em que a empresa consegue distinguir entre os grupos de demanda
+- Discriminação entre grupos identificáveis :: os demandantes se identificam e a empresa oferece os preços de acordo com tal identificação
+- Discriminação entre grupos não indentificáveis :: em que a empresa só consegue avaliar a quantidade (pacotes) comprada de cada bem que induzem a autoidentificação
+
+** Monopsônio
+
+*** Introdução
+
+Trata-se de uma estrutura de mercado em que há um único demandante de determinado fator.
+
+*** Apresentação do problema de maximização
+
+Neste caso, o monopsonista se depara com uma curva de oferta do fator ($W(x)$).
+Supondo que esta firma esta em um mercado concorrencial, logo, é tomadora de preços.
+Neste caso, a firma precisa determinar o quanto irá produzir (utilizando o insumo $x$) dado que isso também influencia em seus custos totais.
+A função de lucro será:
+
+#+BEGIN_latex
+\begin{equation*}
+\Pi = \overline{p}\cdot q(x) - W(x)\cdot x
+\end{equation*}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+\frac{d \Pi}{d x} = \underbrace{p\cdot \frac{d q(x)}{d x}}_{RMgX} - \underbrace{\left(\frac{d W}{d x}\cdot x + w\right)}_{DMgX} = 0
+\end{equation}
+#+END_latex
+em que $DMgX$ é o dispêndio marginal e igual ao valor do produto marginal.
+Rearrumando, é possível apresentar em termos da elasticidade-preço da oferta ($\varepsilon^{s}$).
+#+BEGIN_latex
+\begin{equation}
+DMgX = w\cdot \left(1 + \frac{1}{\varepsilon^{s}}\right)
+\end{equation}
+#+END_latex
+Essa expressão indica que quanto menos inelástica a demanda pelo fator, maior o poder de mercado do monopsônio sobre o preço do fator.
+
+Considerando um caso em que a empresa é monopsonista do bem $x$ e em concorrência do bem $y$.
+
+| Preço de | x    | y       |
+|          | w(x) | $p_{y}$ |
+
+#+BEGIN_latex
+\begin{equation*}
+\Pi = p\cdot q(x, y) - w(x)\cdot x - p_{y}\cdot y
+\end{equation*}
+#+END_latex
+#+BEGIN_latex
+\begin{equation*}
+\frac{\partial \Pi}{\partial x} = p\cdot \frac{\partial q}{\partial x} - w\cdot \left(1 + \frac{1}{\varepsilon^{s}}\right) = 0
+\end{equation*}
+#+END_latex
+#+BEGIN_latex
+\begin{equation*}
+\frac{\partial \Pi}{\partial y} = p\cdot \frac{\partial q}{\partial y} - p_{y} = 0
+\end{equation*}
+#+END_latex
+
+No mercado concorrencial, o preço será igual a receita marginal enquanto no mercado monopsonista será igual ao despêndio marginal.
+
+#+BEGIN_latex
+\begin{equation*}
+\Pi = p(q)\cdot q(x) - w(x)\cdot x
+\end{equation*}
+#+END_latex
+#+BEGIN_latex
+\begin{equation*}
+\frac{d \Pi}{d x} = \underbrace{\left(\frac{d p}{d q}\cdot\frac{d q}{d x}\cdot q + p\cdot \frac{dq}{dx}\right)}_{RMgX} - \underbrace{\left(\right)}_{DMgX} = 0
+\end{equation*}
+#+END_latex
+
+*** Upstream e downstream
+
+Considere a empresa monopolista $B$ que utiliza o insumo $x$ cuja função lucro é:
+#+BEGIN_latex
+\begin{equation*}
+\Pi^{B} = p(b)\cdot b - p_{x}\cdot x
+\end{equation*}
+#+END_latex
+suponha que $x$ é ofertado pela empresa $A$ que também é monopolista.
+Neste caso, $B$ não é monopsonista de $A$.
+
+Considere a função preço:
+#+BEGIN_latex
+\begin{equation*}
+p_{b}(b) = 100 - b
+\end{equation*}
+#+END_latex
+em que a função de produção é $b = x$.
+Substituindo:
+
+#+BEGIN_latex
+\begin{equation*}
+\Pi^{B} = (100 - b(x))\cdot b(x) - p_{x}\cdot x
+\end{equation*}
+#+END_latex
+#+BEGIN_latex
+\begin{equation*}
+\frac{d \Pi^{B}}{d x} = 100\cdot \frac{d b}{d x} - 2\cdot b\cdot \frac{d b}{d x} - p_{x} = 0
+\end{equation*}
+#+END_latex
+#+BEGIN_latex
+\begin{equation*}
+x = 50 - \frac{p_{x}}{2} \Leftrightarrow p_{x} = 100 - 2\cdot x
+\end{equation*}
+#+END_latex
+
+A empresa $A$ irá observar essa demanda na maximização.
+Supondo custos marginais constantes ($c$) da empresa $A$.
+
+#+BEGIN_latex
+\begin{equation*}
+\Pi^{A} = p_{x}\cdot x - c\cdot x
+\end{equation*}
+#+END_latex
+#+BEGIN_latex
+\begin{equation*}
+\frac{d \Pi^{A}}{d x} = 100 - 4\cdot x - c = 0
+\end{equation*}
+#+END_latex
+#+BEGIN_latex
+\begin{equation*}
+x = 25 - \frac{c}{4}
+\end{equation*}
+#+END_latex
+
+Considerando que as duas empresas irão se unam.
+A maximização será:
+
+#+BEGIN_latex
+\begin{equation*}
+\Pi = (100 - b)\cdot b - c\cdot b
+\end{equation*}
+#+END_latex
+#+BEGIN_latex
+\begin{equation*}
+\frac{d \Pi}{d x} = 100 - 2\cdot x - c = 0
+\end{equation*}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+x = 50 - \frac{c}{2}
+\end{equation}
+#+END_latex
+
+Observa-se que a oferta será o dobro do caso com dois monopólios do que na situação verticalmente integrado.
+Isso porque não há extração do excedente da empresa ofertante do insumo ofertado.
+
+** Concorrência monopolística
+
+Trata-se de uma espécie de monopólio sobre um mercado particular com baixas barreiras a entrada.
+A distinção entre as firmas e que garante a persistência no mercado são as características intangíveis.
+Enquanto houver lucro econômico não nulo (lucro anormal), haverá incentivos a entrada de outras firmas.
+No longo prazo, a curva de demanda tende a ser mais horizontal porque existem alternativas.
+Consequentemente, o lucro econômico converge a zero ou fique menor que zero (se for o caso, sairá do mercado).
+A curva de demanda de longo prazo irá tangencial a curva de custo médio, com lucro econômico zero.
+Outra característica desse mercado é operar com excesso de capacidade já que trabalha aquém do custo médio.
+
+* Teoria dos jogos (<2022-04-26 ter> - )
+
+** Introdução ao tema
+
+*** Definição
+
+A teoria dos jogos pode ser definida como a teoria dos modelos matemáticos que estuda a escolha de decisões ótimas sob condições de conflito.
+Diferente de um jogo de soma-zero, o objetivo de cada jogador é maximizar seu /pay-off/.[fn::Nesta família de jogos (denominados de não cooperativos), não existe um mecanismo explícito de cooperação.]
+Ao longo do da disciplina serão tratados jogos não-cooperativos.
+
+É importante destacar que a teoria dos jogos não pressupõe informação incompleta.
+Isso porque todos os agentes conhecem a matriz de payoffs ou a árvore de estratégias, assim como os jogadores e o menu de escolhas.
+
+Trata-se, portanto, de uma coleção de modelos de interações estratégicas interdependentes.
+
+*** Elementos de um jogo (simultâneo) e convenções
+
+Partindo do caso do jogo simultâneo:
+
+- Existem N jogadores
+- Cada jogador possui $m_{i}$ perfis estratégicos
+- Cada jogador possui um retorno esperado dada todos os demais perfis estratégicos ($M = {m_{j}}_{j\neq 1}$) onde: $\pi_{i} = \pi_{i}(m_{i}, M)$
+- As escolhas são simultâneas
+- Informação completa
+  - Cada jogador tem conhecimento da estrutura do modelo, bem como os payoffs e as funções de retorno
+    - Note que é diferente de informação perfeita
+- Hipótese de conhecimento comum sobre racionalidade
+  - Esta hipótese de auto-referência garante a solução
+- Todo jogo pode ser representado em uma matriz de resultados
+
+** Jogos canônicos
+
+*** Dilema dos prisioneiros
+
+Existem duas estrategias possíveis (confessar e não confessar).
+A estrutura de payoffs é:
+
+#+CAPTION: Matriz de resultados do dilema dos prisioneiros
+|              | Confessa | Não Confessa |
+|--------------+----------+--------------|
+| Confessa     | -5, -5   | 0, -10       |
+| Não Confessa | -10, 0   | -1, -1       |
+
+
+
+Este jogo possui um caráter de dilema por possuir um incentivo ao desvio.
+Esta falha de coordenação implica um equilíbrio não Pareto eficiente.
+Além disso, a estratégia Confessa é dominante para os dois jogadores.
+Logo, há um equilíbrio em estratégias estritamente dominantes.
+Este equilíbrio, além disso, é Pareto dominado.
+
+*** Batalha dos sexos
+
+#+CAPTION: Forma matricial
+|------------+------------+-------|
+|------------+------------+-------|
+|            | Luta livre | Ópera |
+|------------+------------+-------|
+| Luta livre | 2, 1       | 0, 0  |
+| Ópera      | 0, 0       | 1, 2  |
+|------------+------------+-------|
+|------------+------------+-------|
+
+Neste jogo há dois equilíbrios de Nash.
+
+*** Par ou impar
+
+#+CAPTION: Representação matricial
+|-------+-------+-------|
+|-------+-------+-------|
+|       | Par   | Ímpar |
+|-------+-------+-------|
+| Par   | 1 , 0 | 0 , 1 |
+| Ímpar | 0 , 1 | 1 , 1 |
+|-------+-------+-------|
+|-------+-------+-------|
+
+
+Neste jogo não há uma /best response/ em que sempre há um incentivo a não-cooperação (desviar).
+Além disso, não há solução na forma pura (sem equilíbrio de Nash).
+Se este jogo for repetido $N$, cada jogador terá chances iguais de vencer --- na ausência de um padrão (vício) --- e, consequentemente, ter iguais /payoffs/.
+
+
+** Estratégia dominante
+
+É um perfil de estratégia dominante é aquele em que o jogador irá sempre optar independentemente das escolhas do demais.
+Se o equilíbrio de Nash ocorrer nesta estratégia, chama-se de um equilíbrio de Nash em estratégias dominantes.
+
+#+CAPTION: Dilema dos prisioneiros com estratégias dominantes
+|--------------+----------+--------------|
+|--------------+----------+--------------|
+|              | Confessa | Não confessa |
+|--------------+----------+--------------|
+| Confessa     | -3, -3   | 0, -10       |
+| Não confessa | -10, 0   | -1, -1       |
+|--------------+----------+--------------|
+|--------------+----------+--------------|
+
+Vale pontuar que o resultado do jogo dependerá do tanto de vezes que esse jogo é jogado.
+O resultado também se alteraria se fosse possível acordar alguma estratégia.
+Tal tema será tratado na parte de oligopólico ao discutir carteis e colusão.
+
+*** Dominante e fracamente dominante
+
+Uma estratégia será estritamente dominantes se o /payoff/ for sempre maior que as outras estratégias.
+Caso exista uma estratégia com /payoff/ igual, será fracamente dominante.
+
+#+BEGIN_latex
+\begin{equation}
+\tag{Estritamente dominante}
+\Pi (s'_{i}, s_{-i}) > \Pi(s_{i}, s_{-i})
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+\tag{Fracamente dominante}
+\Pi (s'_{i}, s_{-i}) \geq \Pi(s_{i}, s_{-i})
+\end{equation}
+#+END_latex
+
+*Hipótese de racionalidade:*  cada jogador procura maximizar seus /payoffs/ e, portamo, não irá jogar uma estratégia estritamente dominada.
+Isso garante que tal estratégia não será jogada.
+
+**** Exemplo
+
+Considere uma empresa que decide se irá ou não lançar uma nova marca.
+A empresa que já esta no mercado deve decidir se aumenta ou não seus gastos com propaganda.
+
+#+CAPTION: Cenário 1
+|-----------+----------------+-------------|
+|-----------+----------------+-------------|
+|           | Aumenta gastos | Não aumenta |
+|-----------+----------------+-------------|
+| Lança     | 5, 5           | 7, 3        |
+| Não lança | 2, 4           | 2, 7        |
+|-----------+----------------+-------------|
+|-----------+----------------+-------------|
+
+
+#+CAPTION: Cenário 2
+|-----------+----------------+-------------|
+|-----------+----------------+-------------|
+|           | Aumenta gastos | Não aumenta |
+|-----------+----------------+-------------|
+| Lança     | 2, 5           | 7, 3        |
+| Não lança | 2, 4           | 2, 7        |
+|-----------+----------------+-------------|
+|-----------+----------------+-------------|
+
+Lançar um produto novo é uma estratégia estritamente dominante no cenário 1, mas fracamente dominante no cenário 2.
+
+** Equilíbrio de Nash em estratégias puras
+
+
+O conjunto das estratégias escolhidas pelos jogadores de um jogo constitui um equilíbrio de Nash se, para cada, jogador, a sua estratégia é ótima dadas as estratégias adotadas pelos outros jogadores.
+
+Todo equilíbrio em estratégias dominantes é um equilíbrio de Nash, mas nem todo equilíbrio de Nash é um equilíbrio em estratégias dominantes.
+Todo equilíbrio que é Pareto eficiente é um equilíbrio de Nash, mas o inverso não é válido.
+
+** Escolha sob risco e utilidade von-Newman
+
+** Equilíbrio de Nash com estratégias mistas
+
+Dizemos que um jogados escolhe uma estratégia mista quando ele atribui probabilidades à escolha de cada estratégias.
+Um equilíbrio de Nash com estratégias mistas se dá quando cada jogador escolheu  uma estratégia mista que maximiza seu /payoff/ esperado dada a estratégia mista escolhida pelo outro jogador.
+
+** Jogos sequenciais
+
+* Oligopólio
+
+** Definindo oligopólio e sua importância
+
+- Monopólios são raros enquanto os mercados observados por poucas empresas são comuns
+  - Uma característica da concorrência oligopólica é a presença de propaganda
+  - Também possui elementos de interação estratégicas
+
+** Indicadores
+
+*** Índice de concentração (HHI)
+
+*Herfindhal-Hirschman (HHI):* soma do quadrado do /market-share/:
+#+BEGIN_latex
+\begin{equation}
+HHI = \sum s_{i}^{2}
+\end{equation}
+#+END_latex
+- $HHI < 100$ indica um mercado muito competitivo
+- $100 < HHI < 1$ indica um mercado pouco concentrado
+- $1000 < HHI < 1800$ moderado
+- $HHI > 1800$ concentrado e se torna visível ao CADE
+
+** Colusão tácita
+
+Para que haja liderança em preços:
+- Definir o líder
+- Entender o critério utilizado por ele para definir o preço
+- A disperção dos concorrentes em aceitar esta liderança
+
+*** Limites à colusão
+
+Se for perfeita, $RMg < P$ e $RMg = CMg$ no equilíbrio.
+Logo os consumidores reagem aos aumentos de preços.
+
+A colusão é sujeita a desvios dos participantes: existiriam um mecanismo de punição que tornasse a colusão eficiente?
+- Difícil observar os preços de outras firmas
+- a demanda é instável
+- players podem ter objetivos diferentes
+
+*** Apresentação
+
+Partindo do modelo de colusão, as firmas de forma tácita ou intencional se juntam.
+Podem estão maximizar o lucro *conjunto*:
+#+BEGIN_latex
+\begin{equation*}
+\sum_{j-1}^{n} \pi_{j} = P(Q)\sum_{j-1}^{n}q_{j} - \sum_{j-1}^{n} C_{j}(q_{j})
+\end{equation*}
+#+END_latex
+
+** Modelos canônicos
+
+*** Cournot
+
+Hipóteses:
+
+- Todas as empresas produzem produtos homogêneos
+- O preço de mercado é o mesmo para todas as firmas, logo, elas competem em *quantidade* (novidade)
+  - A escala produtiva é o que confere poder de mercado
+- Trata-se de um jogo simultâneo: as firmas decidem conjuntamente.
+  - Em um jogo repetido, elas decidem a cada período
+
+*Corolário:* converge ao equilíbrio de Nash.
+No entanto, não é Pareto superior porque existe incentivo ao desvio.
+
+Procedimento:
+- Avaliar os efeito sobre o lucro de uma firma dada uma variação da quantidade desta mesma firma
+- Considera a receita marginal uma vez que o preço é dado pelo mercado
+
+#+BEGIN_latex
+\begin{equation}
+\pi_{i} = p(Q)\cdot q_{i} - C'_{i}(q_{i})
+\end{equation}
+#+END_latex
+
+A receita marginal depende de uma quantidade que é a solução para os $n$ jogadores produzindo $q_{i}$:
+#+BEGIN_latex
+\begin{equation}
+p(Q) - CMg = |p'(Q)\cdot q_{i}|
+\end{equation}
+#+END_latex
+
+A firma age como monopolista no trecho do mercado que lhe resta.
+Supõe-se que os demais farão o mesmo.
+
+Cournot definiu uma regra de comportamento que também é uma regra de interação
+
+**** Duopólio
+
+Duas firmas com custo $c$ e sem diferenciação de produto e com o mesmo grupo de consumidores.
+Se cada um busca o melhor, a solução é quando se iguala as curvas de máximo lucro dada a reação do outro jogador.
+
+Em qualquer  nível de produção $Q$, a demanda se reparte, logo, a demanda de um é residual em relação ao outro.
+
+
+*** Stackelberg
+
+**** Introdução
+
+Trata-se de um jogo sequencial que há uma firma que lidera (decisão de *quantidade*) tenho em vista que a firma seguidora também é maximizadora.
+O procedimento consiste em primeiro encontrar a quantidade da firma seguidora (que esta em função da quantidade prodzida pela empresa líder).
+Dada essa informação, a empresa líder decidirá o quanto produzir.
+Vale pontuar que o seguidor produzirá menos do que em um jogo de Cournot.
+
+**** Exercício - Barreira a entrada com excesso de capacidade
+
+Para encontrar o equilíbrio de Nash, vamos fazer os seguintes cálculos:
+- Suponha que a firma $i$ está sozinha no mercado
+- O lucro de $i$ é maximizado escolhendo uma quantidade $q_{i}$
+- Suponha que esses valores estão todos em valor presente, de forma que os VPL dos dois casos anteriores seriam
+  - Unidade grande
+  - Unidade pequena
+- Agora suponha que ambas as firmas estão no mercado (produção total é a soma das produções individuais)
+- Resolvendo o sistema dada as funções de reação (calculando a CPO)
+
+*** Bertrand
+
+**** Modelo com diferenciação de bens
+
+
+***** Exemplo
+
+Suponha as seguintes funções de demanda:
+
+\begin{equation*}
+\begin{align*}
+ q_{1}^{D} & = 100 - p_{1} + p_{2}\\
+ q_{2}^{D} & = 120 + p_{1} - 2\cdot p_{2}
+\end{align*}
+\end{equation*}
+
+Considere ainda as seguintes funções consumo:
+
+\begin{equation*}
+\begin{align*}
+  C_{1}(q_{1})& = 10\cdot q_{1}^{s}\\
+  C_{2}(q_{2})& = 10\cdot q_{2}^{s}
+\end{align*}
+\end{equation*}
+
+Supondo que não há restrição do mercado de bens:
+\begin{equation*}
+\begin{align*}
+ q_{1}^{D} & = q_{1}^{s}\\
+ q_{2}^{D} & = q_{2}^{s}
+\end{align*}
+\end{equation*}
+
+Cada firma irá maximizar lucro considerando que a concorrente irá tomar a melhor decisão para si.
+Partindo para a empresa 1:
+\begin{equation*}
+\begin{align*}
+ \pi_{1} & = p_{1}\cdot q_{1}^{d} - C_{1}(q_{1}^{s})\\
+  & = p_{1}(100 - p_{1} + p_{2}) - 10\cdot q_{1}^{d}\\
+  & = p_{1}(100 - p_{1} + p_{2}) - 10\cdot (100 - p_{1} + p_{2})
+\end{align*}
+\end{equation*}
+
+A condição de primeira ordem é:
+\begin{equation*}
+\begin{align*}
+ CPO: \frac{\partial \pi_{1}}{\partial p_{1}} & = 0\\
+ 100 - 2\cdot p_{1} + p_{2} + 10 & = 0\\
+p_{1} & = 55 + \frac{p_{2}}{2}
+\end{align*}
+\end{equation*}
+
+O resultado acima é a função de melhor resposta para a firma 1 dada a decisão da empresa 2.
+Fazendo o mesmo para a empresa 2:
+\begin{equation*}
+\begin{align*}
+ \pi_{2} & = p_{2}\cdot q_{2}^{d} - C_{2}(q_{2}^{s})\\
+  & = p_{1}(120 + p_{1} - 2\cdot p_{2}) - 10\cdot q_{2}^{d}\\
+  & = p_{1}(120 + p_{1} -2\cdot p_{2}) - 10\cdot (120 + p_{1} - 2\cdot p_{2})
+\end{align*}
+\end{equation*}
+
+A condição de primeira ordem é:
+\begin{equation*}
+\begin{align*}
+ CPO: \frac{\partial \pi_{2}}{\partial p_{2}} & = 0\\
+ 120 - 4\cdot p_{2} + p_{1} + 20 & = 0\\
+p_{2} & = 35 + \frac{p_{1}}{4}
+\end{align*}
+\end{equation*}
+
+Resolvendo o sistema:
+\begin{equation*}
+\begin{cases}
+ p_{1} & = 55 + \frac{p_{2}}{2} \\
+ p_{2} & = 35 + \frac{p_{1}}{4}
+\end{cases}
+\end{equation*}
+
+\begin{equation*}
+\begin{align*}
+ p_{1} & = 55 + \frac{p_{2}}{2} \\
+  & = 55 + \frac{1}{2}\cdot (35 + \frac{p_{1}}{4}) \\
+  & = \frac{110 + 35}{2} + \frac{1}{8}\cdot p_{1}\\
+\frac{7}{8}\cdot p_{1} & = \frac{145}{2}\\
+p_{1} & = \frac{145}{2}\cdot\frac{8}{7}\\
+& = \frac{580}{7} > 0
+\end{align*}
+\end{equation*}
+
+Consequentemente, \(p_{2}\) será:
+\begin{equation*}
+\begin{align*}
+ p_{2} & = 35 + \frac{p_{1}}{4}\\
+& = 35 + \frac{580}{7}\frac{1}{4}\\
+& = 35 + \frac{145}{7}
+\end{align*}
+\end{equation*}
+
+
+****** Cartel em preços
+
+Como contrafactual, vamos analisar a situação em que as firmas formam um cartel de preços.
+Nesse caso,
+\begin{equation*}
+\begin{align*}
+ \pi & = p_{1}(100 - p_{1} + p_{2}) + p_{2}\cdot (120 + p_{1} - 2\cdot p_{2}) - CT\\
+\frac{\partial \pi}{\partial p_{1}} = 100 - 2\cdot p_{1} + 2\cdot p_{2}& = 0\\
+\frac{\partial \pi}{\partial p_{2}} = 130 + 2\cdot p_{1} - 4\cdot p_{2}& = 0\\
+\end{align*}
+\end{equation*}
+
+A solução desses sistema é:
+\begin{equation*}
+\begin{align*}
+ 230 - 2\cdot p_{2} & = 0\\
+p_{2} & = 115
+\end{align*}
+\end{equation*}
+
+Consequentemente, \(p_{1} = 165\).
+
+
+* Equilíbrio Geral com trocas puras
+
+** Teoremas do Bem-Estar
+
+*** Introdução
+
+- Tratam da relação entre equilíbrio geral (competitivo) e eficiência alocativa (em termos de eficiência de Pareto)
+
+** Primeiro teorema
+
+- Os pontos de Equilíbrio Competitivo são Pareto-Eficientes
+  - Basta que exista razões que os agentes tenham razões para realizar trocas
+  - Não requer monotonicidade
+
+** Segundo teorema
+
+- Nem todo ponto que é Pareto Eficiente é um equilíbrio geral competitivo
+  - Condição: Convexidade
+    - Se as curvas de indiferença forem convexas, todo ponto Pareto eficiente é um equilíbrio geral
+  - Teorema: Quando todo ponto Pareto-Eficiente é candidato a Equilíbrio Geral, este equilíbrio pode ser obtido por meio uma redistribuição adequada das dotações
+  - A implicação em termos de políticas públicas é de que distribuição e eficiência podem ser separados
+    - Trata-se, portanto, de possibilidades de alocação

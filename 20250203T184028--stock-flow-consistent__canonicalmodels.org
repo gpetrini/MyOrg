@@ -1,0 +1,6 @@
+#+title:      Stock-Flow Consistent
+#+date:       [2025-02-03 seg 18:40]
+#+filetags:   :canonicalmodels:
+#+identifier: 20250203T184028
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

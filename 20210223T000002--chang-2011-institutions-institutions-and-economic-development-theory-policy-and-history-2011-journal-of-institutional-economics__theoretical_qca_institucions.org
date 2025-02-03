@@ -1,16 +1,12 @@
-:mtime:    20211202152745 20211013082514
-:ctime:    20211013082514
-:END:
-#+TITLE: chang_2011_Institutions: Institutions and economic development: theory, policy and history (2011, Journal of Institutional Economics)
+#+TITLE: Chang (2011, JIE)
+#+subtitle: Institutions and economic development: theory, policy and history (2011, Journal of Institutional Economics)
 #+OPTIONS: toc:nil num:nil
-#+filetags: Theoretical QCA Institucions
-Time-stamp: 2021-02-23
-- tags ::
+#+filetags: :theoretical:qca:institution:bib:
+#+reference: chang_2011_Institutions
 
 
 * Backlinks
-
-[[denote:20210216T121647][QCA Theoretical Economics Foundations]]
+[[denote:20230216T235159][QCA Theoretical Economics Foundations]]
 
 * FISH-5SS
 

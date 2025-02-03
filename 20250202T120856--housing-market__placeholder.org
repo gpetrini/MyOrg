@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       c5a6f54f-b92e-4deb-bc55-24d2a80b3c87
+:END:
+#+title:      Housing Market
+#+date:       [2025-02-02 dom 12:08]
+#+filetags:   :placeholder:
+#+identifier: 20250202T120856
+#+OPTIONS: num:nil ^:{} toc:nil

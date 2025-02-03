@@ -150,8 +150,8 @@ Specific results:
 
 ** Interesting findings and not categorized stuff
 
-- The author points out the [[id:60476e6a-4541-433f-bfe9-de2106cd7deb][Leading Indicator of Remodeling Activity]] (LIRA) which is used to antecipate the [[id:380b31ad-cdd5-4367-af2c-9ee199a085e7][Business Cycles]] fluctuations of the housing sector.
-  The variables with the higher correlation and leading effect with [[id:38892e14-3e1b-45b0-b860-db23d1979148][House Improvement Expenditure]]s are:
+- The author points out the Leading Indicator of Remodeling Activity (LIRA) which is used to antecipate the [[id:380b31ad-cdd5-4367-af2c-9ee199a085e7][Business Cycles]] fluctuations of the housing sector.
+  The variables with the higher correlation and leading effect with House Improvement Expenditures are:
   - House Price Index
   - Leading Economic Index
   - Residential remodeling permits

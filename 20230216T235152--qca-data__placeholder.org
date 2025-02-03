@@ -1,0 +1,195 @@
+:PROPERTIES:
+:ID:       a0a72c58-267d-4613-8579-dc795ab1c369
+:mtime:    20211202152743 20211013082514
+:ctime:    20210210185414
+:END:
+#+OPTIONS: toc:nil num:nil
+#+title:      QCA Data
+#+date:       [2023-02-16 qui 23:51]
+#+filetags:   :placeholder:
+#+identifier: 20230216T235152
+#+AUTHOR: Gabriel Petrini
+#+ARCHIVE: ../archive/QCA.org::* Data
+#+TODO: READ SKIM PARTIAL WAIT MAYBE | REF REPORT DONE ARCH
+#+PROPERTY: COLUMNS  %FINISHED(Finished?){X} %7STATUS(Status) %15KEY(Reference) %7RELEVANCE
+#+PROPERTY: DECISION_ALL Read File Skip PartialRead
+#+PROPERTY: ZOTERO_ALL Yes No Partial Entry
+#+PROPERTY: STATUS_ALL Reading Searching Abandoned Finished Skimmed NotFound 404 Downloaded Filed
+#+PROPERTY: RELEVANCE_ALL High Regular Low None
+#+PROPERTY: IMPACT_ALL High Regular Low None
+#+PROPERTY: CITE_ALL Yes No Wait
+#+PROPERTY: YEAR_ALL
+#+PROPERTY: KEY_ALL
+#+PROPERTY: FINISHED_ALL "[ ]" "[X]"
+
+[[id:b11d338b-f808-4958-bdb8-622f5eb6bdee][QCA readings]]
+
+#+BEGIN: columnview :maxlevel 2 :id global
+| Finished? | Status     | Reference                                                 | RELEVANCE |
+|-----------+------------+-----------------------------------------------------------+-----------|
+|           | Filed      |                                                           | High      |
+|           | Skimmed    | arena_2020_Macroprudential                                | High      |
+|           | Filed      | agnello_2020_Housinga                                     | Regular   |
+|           | Skimmed    | scanlon_2009_Mortgage                                     | High      |
+| [X]       | Finished   | cite:internationalmonetaryfund.reseachdept._2008_changing | High      |
+|           | Downloaded | andrews_2011_Housing                                      | Regular   |
+|           | Filed      | badev_2014_Housing                                        | High      |
+|           | Filed      |                                                           | Low       |
+#+END
+
+
+* READ [#B] Lea - International Comparison of Mortgage Product :QCA:
+   :PROPERTIES:
+   :YEAR:     2010
+   :ZOTERO:   Partial
+   :TYPE:     Thechnical
+   :STATUS:   Downloaded
+   :RELEVANCE: High
+   :IMPACT:   Low
+   :CITE:     Wait
+   :END:
+* READ [#A] [[https://hypo.org/ecbc/publication-news/v-ltv-matters/][The “V” in LTV and why it matters]]
+   :PROPERTIES:
+   :ZOTERO:   No
+   :YEAR:     2017
+   :STATUS:   Filed
+   :RELEVANCE: High
+   :IMPACT:   Low
+   :CITE:     Yes
+   :KEY:
+   :END:
+* READ [#A] Macroprudential Policies and House Prices in Europe
+   :PROPERTIES:
+   :ZOTERO:   Yes
+   :YEAR:     2020
+   :STATUS:   Skimmed
+   :RELEVANCE: High
+   :IMPACT:   Low
+   :CITE:     Yes
+   :KEY: arena_2020_Macroprudential
+   :END:
+* READ [#A] [[https://link.springer.com/article/10.1007%2Fs11146-019-09705-z][The Housing Cycle: What Role for Mortgage Market Development and Housing Finance?]]
+   :PROPERTIES:
+   :ZOTERO:   Yes
+   :YEAR:     2019
+   :STATUS:   Filed
+   :RELEVANCE: Regular
+   :IMPACT:   Low
+   :CITE:     Yes
+   :KEY:  agnello_2020_Housinga
+   :END:
+* READ [#A] Mortgage products and government policies to help troubled mortgagors: responses to the credit crisis
+   :PROPERTIES:
+   :ZOTERO:   Yes
+   :YEAR:     2009
+   :STATUS:   Skimmed
+   :RELEVANCE: High
+   :IMPACT:   Low
+   :CITE:     Yes
+   :KEY: scanlon_2009_Mortgage
+   :END:
+* READ [#A] THE CHANGING HOUSING CYCLE AND THE IMPLICATIONS FOR MONETARY POLICY
+   :PROPERTIES:
+   :ZOTERO:   Partial
+   :YEAR: citeyear:internationalmonetaryfund.reseachdept._2008_changing
+   :STATUS:   Finished
+   :RELEVANCE: High
+   :IMPACT:   Low
+   :CITE:     Yes
+   :KEY: cite:internationalmonetaryfund.reseachdept._2008_changing
+   :FINISHED: [X]
+   :END:
+* SKIM [#B] [[https://www.oecd-ilibrary.org/economics/housing-markets-and-structural-policies-in-oecd-countries_5kgk8t2k9vf3-en;jsessionid=CzhezboEQR19t7VomrNEWTv6.ip-10-240-5-161][Housing Markets and Structural Policies in OECD Countries]]
+   :PROPERTIES:
+   :ZOTERO:   Yes
+   :YEAR:     2011
+   :STATUS:   Downloaded
+   :RELEVANCE: Regular
+   :IMPACT:   Low
+   :CITE:     Wait
+   :KEY: andrews_2011_Housing
+   :END:
+* PARTIAL [#A] [[id:272a334c-616a-4d61-aaf7-12b09c8d8694][bover_2018_distribution: The distribution of debt across euro-area countries: the role of individual characteristics, institutions, and credit conditions (2018, 44th issue (June 2016) of the International Journal of Central Banking)]]
+:PROPERTIES:
+:YEAR:  citeyear*:bover_2018_distribution
+:ZOTERO:
+:STATUS:
+:RELEVANCE:
+:IMPACT:
+:CITE:
+:KEY: cite:bover_2018_distribution
+:FINISHED: [ ]
+:END:
+* PARTIAL [#A]  Housing Finance Across Countries: New Data and Analysis
+   :PROPERTIES:
+   :ZOTERO:   Yes
+   :YEAR:     2014
+   :STATUS:   Filed
+   :RELEVANCE: High
+   :IMPACT:   Low
+   :CITE:     Yes
+   :KEY: badev_2014_Housing
+   :END:
+
+
+* PARTIAL [#A] [[https://www.ecb.europa.eu/pub/pdf/scpops/ecbocp101.pdf][European Central Bank - Housing Finance in the Euro Area]] :INBOX:LOANS:DATA:
+:PROPERTIES:
+:YEAR:     2009
+:ZOTERO:   Partial
+:STATUS:   Filed
+:RELEVANCE: High
+:IMPACT:   Regular
+:CITE:     Yes
+:KEY: cite:
+:END:
+
+*Zotero file:* ecbocp101.pdf
+* PARTIAL [#C]  Evolution of the U.S. Housing Finance System
+   :PROPERTIES:
+   :ZOTERO:   Partial
+   :YEAR:     2006
+   :STATUS:   Filed
+   :RELEVANCE: Low
+   :IMPACT:   Low
+   :CITE:     Yes
+   :KEY:
+   :END:
+
+* ARCH [#B] [[https://www.bde.es/f/webbde/INF/MenuHorizontal/SobreElBanco/Conferencias/2017/papers/171005_15.30-17.00_1_ZIMMERMANN_paper.pdf][Zimmermann - Breaking Banks? Bank Profitability and Monetary Policy]] :OFFTopic:Banking:MonetaryPolicy:DATA:
+CLOSED: [2021-02-26 sex 11:10]
+   :PROPERTIES:
+   :YEAR:     2017
+   :ZOTERO:   Yes
+   :TYPE:     Empirical
+   :STATUS:   Filed
+   :RELEVANCE: Regular
+   :IMPACT:   Regular
+   :CITE:     Wait
+   :END:
+
+* ARCH [#B] [[https://www.oecd-ilibrary.org/docserver/5kgk8t2k9vf3-en.pdf?expires=1601577774&id=id&accname=guest&checksum=ACA0089C73178336532B9AB2C723EFC2][Andrews et al - Housing Markets and Structural Policiesin OECD Countries]] :OFFTopic:Construction:TAX:
+CLOSED: [2021-02-26 sex 12:12]
+   :PROPERTIES:
+   :YEAR:     2011
+   :ZOTERO:   Yes
+   :TYPE:     Empirical
+   :STATUS:   Filed
+   :RELEVANCE: Regular
+   :IMPACT:   Low
+   :CITE:     Wait
+   :END:
+
+FIX BIB
+
+#+BEGIN_SRC bibtex
+@Article{Andrews_OECD_2011,
+  year	       = {2011},
+  month	       = {Jan},
+  issn	       = {1815-1973},
+  doi	       = {10.1787/5kgk8t2k9vf3-en},
+  url	       = {http://dx.doi.org/10.1787/5kgk8t2k9vf3-en},
+  journal      = {OECD Economics Department Working Papers},
+  publisher    = {Organisation for Economic Co-Operation and
+                  Development (OECD)}
+}
+#+END_SRC

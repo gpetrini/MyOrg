@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       4a226c14-c204-4493-b5f9-e06aa06e2954
+:END:
+#+title:      Uncertanty
+#+date:       [2025-02-02 dom 11:46]
+#+filetags:   :placeholder:
+#+identifier: 20250202T114632
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

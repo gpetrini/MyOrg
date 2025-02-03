@@ -1,0 +1,13 @@
+#+title:      Taylor Rule
+#+date:       [2025-02-03 seg 18:43]
+#+filetags:   :definition:monetary:policy:
+#+identifier: 20250203T184305
+
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+
+#+hugo_section: notes
+
+#+HUGO_TAGS: placeholder
+
+#+OPTIONS: num:nil ^:{} toc:nil

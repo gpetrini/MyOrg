@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       de34270e-0ae3-44b3-a344-a58d4a3d15d1
+:END:
+#+title:      Profit-Squeezing
+#+date:       [2025-02-02 dom 12:01]
+#+filetags:   :placeholder:
+#+identifier: 20250202T120140
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       2836f795-04c7-48aa-95c2-426d9268be5c
+:END:
+#+title:      Stock Prices
+#+date:       [2025-02-02 dom 11:57]
+#+filetags:   :placeholder:
+#+identifier: 20250202T115754
+#+OPTIONS: num:nil ^:{} toc:nil

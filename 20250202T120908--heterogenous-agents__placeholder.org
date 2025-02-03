@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       f8110b7b-dc7d-4b58-8fa5-4c8cae7a290c
+:END:
+#+title:      Heterogenous Agents
+#+date:       [2025-02-02 dom 12:09]
+#+filetags:   :placeholder:
+#+identifier: 20250202T120908
+#+OPTIONS: num:nil ^:{} toc:nil

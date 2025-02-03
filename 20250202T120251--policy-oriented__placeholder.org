@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       2ebeee6d-b9bb-4bf7-b9e4-c9177af1db0f
+:END:
+#+title:      Policy Oriented
+#+date:       [2025-02-02 dom 12:02]
+#+filetags:   :placeholder:
+#+identifier: 20250202T120251
+#+OPTIONS: num:nil ^:{} toc:nil

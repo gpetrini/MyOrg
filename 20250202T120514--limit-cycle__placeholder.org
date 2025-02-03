@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       8a9014e7-93ae-46bb-a5e6-51242080969c
+:END:
+#+title:      Limit Cycle
+#+date:       [2025-02-02 dom 12:05]
+#+filetags:   :placeholder:
+#+identifier: 20250202T120514
+#+OPTIONS: num:nil ^:{} toc:nil

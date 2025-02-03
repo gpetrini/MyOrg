@@ -1,0 +1,6 @@
+#+title:      Keynesian Multiplier
+#+date:       [2025-02-03 seg 18:02]
+#+filetags:   :canonicalmodels:definition:macroeconomic:
+#+identifier: 20250203T180258
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       ae75ff85-846a-4976-a534-a8ff102cc8b3
+:END:
+#+title:      E-stability Principle
+#+date:       [2025-02-02 dom 12:24]
+#+filetags:   :definition:
+#+identifier: 20250202T122408
+
+#+OPTIONS: num:nil ^:{} toc:nil
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+
+According to [cite/t:@hommes_2021_Behavioral p. 156]:
+#+begin_quote
+One of the main general results form the adaptive learning literature is the ­E-stability principle stating that an REE (i.e., a fixed point of the T-map) is locally stable under adaptive learning processes such as ordinary least squares (OLS), when it is a locally stable fixed point of the associated ordinary differential equation (ODE) [...] If an REE is not E-stable, then coordination of a large population of adaptive agents on such an equilibrium seems highly unlikely.
+#+end_quote

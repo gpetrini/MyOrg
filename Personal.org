@@ -6,6 +6,7 @@
 * TODO [#C] Complete exporting notes to denote :@personal:@free:
 
 * TODO [#A] Enviar pedido adiamento :@capes:@santanna:@unicamp:@bureaucracy:
+* TODO [#A] Checar se relatório de encerramento de atividades deve ser feito após prazo de extensão vencer :@capes:@santanna:@unicamp:@bureaucracy:
 * TODO [#A] Relatório de encerramento das atividades :@capes:@hwr:@unicamp:@bureaucracy:
 * TODO Review ROKE :@computer:@review:
 DEADLINE: <2024-09-09 seg>

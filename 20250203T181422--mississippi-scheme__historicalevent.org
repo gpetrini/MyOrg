@@ -1,0 +1,5 @@
+#+title:      Mississippi Scheme
+#+date:       [2025-02-03 seg 18:14]
+#+filetags:   :historicalevent:
+#+identifier: 20250203T181422
+#+OPTIONS: num:nil ^:{} toc:nil

@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       7bf9c01a-c5aa-4984-a9a0-12dfa1e3e9c7
+:mtime:    20211202152740 20211130150956 20211129150604
+:ROAM_ALIASES: "General price inflation"
+:ctime:    20211130150956
+:END:
+#+title:      Inflation
+#+date:       [2025-02-02 dom 12:08]
+#+filetags:   :placeholder:
+#+identifier: 20250202T120843
+#+OPTIONS: num:nil ^:{} toc:nil

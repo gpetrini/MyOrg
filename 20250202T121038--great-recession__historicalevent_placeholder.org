@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       3e89a992-4e51-4c36-94b9-80edf7ce3d4a
+:END:
+#+title:      Great Recession
+#+date:       [2025-02-02 dom 12:10]
+#+filetags:   :historicalevent:placeholder:
+#+identifier: 20250202T121038
+#+OPTIONS: num:nil ^:{} toc:nil

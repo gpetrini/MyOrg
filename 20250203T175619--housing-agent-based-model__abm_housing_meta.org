@@ -1,0 +1,7 @@
+#+title:      Housing Agent Based Model
+#+date:       [2025-02-03 seg 17:56]
+#+filetags:   :abm:housing:meta:
+#+identifier: 20250203T175619
+#+HUGO_TAGS: placeholder
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

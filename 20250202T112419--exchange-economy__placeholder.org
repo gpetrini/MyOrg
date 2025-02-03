@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       8590c18f-5c98-47b7-b086-049261d4b850
+:END:
+#+title:      Exchange Economy
+#+date:       [2025-02-02 dom 11:24]
+#+filetags:   :placeholder:
+#+identifier: 20250202T112419
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

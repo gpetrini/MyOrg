@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       48e49516-bdf2-4a72-9895-225d8fc06fc2
+:END:
+#+title:      Transaction Costs
+#+date:       [2025-02-02 dom 11:46]
+#+filetags:   :placeholder:
+#+identifier: 20250202T114645
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

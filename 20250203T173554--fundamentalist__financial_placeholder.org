@@ -1,0 +1,5 @@
+#+title:      Fundamentalist
+#+date:       [2025-02-03 seg 17:35]
+#+filetags:   :financial:placeholder:
+#+identifier: 20250203T173554
+#+OPTIONS: num:nil ^:{} toc:nil

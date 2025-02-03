@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       8872c932-846f-4b6b-9fea-21a912902aaf
+:END:
+#+title:      Santa Fe Model
+#+date:       [2025-02-02 dom 11:59]
+#+filetags:   :canonicalmodels:placeholder:
+#+identifier: 20250202T115929
+#+OPTIONS: num:nil ^:{} toc:nil

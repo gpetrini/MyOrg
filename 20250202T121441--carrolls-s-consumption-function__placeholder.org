@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       c66dd680-5e52-432f-b2a1-afa7188199a7
+:END:
+#+title:      carrolls_s_consumption_function
+#+date:       [2025-02-02 dom 12:14]
+#+filetags:   :placeholder:
+#+identifier: 20250202T121441
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

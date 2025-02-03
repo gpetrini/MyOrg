@@ -1,0 +1,5 @@
+#+title:      Financial Innovation
+#+date:       [2025-02-03 seg 17:33]
+#+filetags:   :placeholder:
+#+identifier: 20250203T173330
+#+OPTIONS: num:nil ^:{} toc:nil

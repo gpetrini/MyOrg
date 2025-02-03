@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       1ca382d9-deed-416d-9b0e-f2eb30a23f09
+:mtime:    20211202152738 20211104144215
+:ctime:    20210210092103
+:END:
+#+title:      Residential investment determinants
+#+date:       [2023-02-16 qui 23:51]
+#+filetags:   :placeholder:
+#+identifier: 20230216T235155
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+#+hugo_section: notes
+#+HUGO_CATEGORIES: placeholder
+
+* Backlinks

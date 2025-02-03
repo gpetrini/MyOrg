@@ -31,7 +31,10 @@ Time-stamp: 2021-02-09
 |---------------------------------------------+-----|
 
 ** Backlinks
-[[denote:20210210T184406][Mortgage Interest rate]]
-[[denote:20210210T092103][Residential investment determinants]]
+
+
+[[denote:20230216T235154][Mortgage Interest rate]]
+
+[[denote:20230216T235155][Residential investment determinants]]
 
 * Specifics comments

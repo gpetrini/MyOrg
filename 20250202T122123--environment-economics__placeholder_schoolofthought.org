@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       64197f79-2ae4-42e2-8a48-2f6d4d0abea4
+:mtime:    20211202152740 20211125104045
+:ctime:    20211125104045
+:END:
+#+title:      environment_economics
+#+date:       [2025-02-02 dom 12:21]
+#+filetags:   :placeholder:schoolofthought:
+#+identifier: 20250202T122123
+#+OPTIONS: num:nil ^:{} toc:nil

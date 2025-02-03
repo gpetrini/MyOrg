@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       1fc2115e-9b3a-435c-b3d0-854f96f82c95
+:ROAM_ALIASES: "Game Theory"
+:END:
+#+title:      Game Theory
+#+date:       [2025-02-02 dom 11:48]
+#+filetags:   :placeholder:
+#+identifier: 20250202T114849
+#+BIBLIOGRAPHY: ~/Documents/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

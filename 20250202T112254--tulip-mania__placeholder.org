@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       6e780bd9-492d-4942-95ba-a74e6e5c3dde
+:END:
+#+title:      Tulip Mania
+#+date:       [2025-02-02 dom 11:22]
+#+filetags:   :placeholder:
+#+identifier: 20250202T112254
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

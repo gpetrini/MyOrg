@@ -1,0 +1,4 @@
+#+title:      Genetic Algorithm
+#+date:       [2025-02-03 seg 17:46]
+#+filetags:   :algorithm:placeholder:
+#+identifier: 20250203T174635

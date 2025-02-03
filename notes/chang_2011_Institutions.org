@@ -1,0 +1,53 @@
+#+TITLE: Chang, Ha-Joon: Institutions and Economic Development: Theory, Policy and History - (2011, J. Institutional Econ.)
+#+OPTIONS: num:nil ^:{} toc:nil
+#+FILETAGS: J. Institutional Econ.
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+
+** Background and motivation
+
+
+** Supporting Ideas and hypothesis
+
+
+** Purpose, Relevance, and Contribution
+
+
+** Methodology
+
+
+** Results
+
+
+** Interesting findings and not categorized stuff
+
+
+** Critics
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+The article tries to advance our understanding of institutional economics by critically examining the currently dominant discourse on institutions and economic development. First, I argue that the discourse suffers from a number of theoretical problems – its neglect of the causality running from development to institutions, its inability to see the impossibility of a free market, and its belief that the freest market and the strongest protection of private property rights are best for economic development. Second, I point out that the supposed evidence showing the superiority of ‘liberalized’ institutions relies too much on cross-section econometric studies, which suffer from defective concepts, flawed measurements and heterogeneous samples. Finally, I argue that the currently dominant discourse on institutions and development has a poor understanding of changes in institutions themselves, which often makes it take unduly optimistic or pessimistic positions about the feasibility of institutional reform.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+* References
+
+
+
+#+print_bibliography:

@@ -4,7 +4,7 @@
 #+DATE: <2020-11-25 qua>
 #+filetags: AKB Financeirização Distribuição_pessoal_da_renda Estagnação_secular Modelos_de_crescimento_liderados_pela_demanda
 
-[[denote:20210210T185551][AKB]]
+[[denote:20230216T235148][AKB]]
 
 * Keynes e as possibilidades econômicas para os nossos netos
 

@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       59f9f300-39c1-42cc-9864-a720794f1c0f
+:mtime:    20211202152740 20211013082514
+:ctime:    20211013082514
+:END:
+#+title:      Heterodox Growth Models
+#+date:       [2025-02-02 dom 12:09]
+#+filetags:   :placeholder:
+#+identifier: 20250202T120931

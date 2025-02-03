@@ -1,0 +1,5 @@
+#+title:      Monetary Theory of Distribution
+#+date:       [2025-02-03 seg 18:17]
+#+filetags:   :distribution:monetary:sraffian:
+#+identifier: 20250203T181707
+#+OPTIONS: num:nil ^:{} toc:nil

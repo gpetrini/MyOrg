@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       a52ec098-3654-4fdb-b044-a3045f6362b2
+:mtime:    20211202152743 20211013082514
+:ctime:    20210210185026
+:END:
+#+title:      Applied QCA
+#+date:       [2023-02-16 qui 23:51]
+#+filetags:   :placeholder:
+#+identifier: 20230216T235151
+
+[[id:b11d338b-f808-4958-bdb8-622f5eb6bdee][QCA readings]]

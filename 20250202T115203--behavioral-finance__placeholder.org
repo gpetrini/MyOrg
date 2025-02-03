@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       053144da-4f34-4a23-97cb-c5af4b600164
+:END:
+#+title:      Behavioral Finance
+#+date:       [2025-02-02 dom 11:52]
+#+filetags:   :placeholder:
+#+identifier: 20250202T115203
+#+OPTIONS: num:nil ^:{} toc:nil

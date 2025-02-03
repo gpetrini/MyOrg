@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       628bc545-800c-4f2b-beb6-6933d381a2ad
+:END:
+#+title:      Asset bubble
+#+date:       [2025-02-02 dom 11:49]
+#+filetags:   :placeholder:
+#+identifier: 20250202T114928
+#+OPTIONS: num:nil ^:{} toc:nil

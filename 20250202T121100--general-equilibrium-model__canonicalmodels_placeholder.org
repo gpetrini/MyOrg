@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       175002f6-69a8-4fa1-a7da-b76802ecc21e
+:ROAM_ALIASES: "Modelo de Equilíbrio Geral"
+:END:
+#+title:      General Equilibrium Model
+#+date:       [2025-02-02 dom 12:11]
+#+filetags:   :canonicalmodels:placeholder:
+#+identifier: 20250202T121100
+#+OPTIONS: num:nil ^:{} toc:nil

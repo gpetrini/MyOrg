@@ -1,14 +1,40 @@
-#+title: Ysi projects related taskes
+#+title: Ysi projects related tasks
 
-* STRT Ask advancement for the accommodation :@hwr:@ysi:
 
-* TODO Send the link for the speakers :@unb:@ysi:
-* TODO Send the link for the speakers :@hwr:@ysi:
-* TODO Create advertisment bunner :@hwr:@ysi:
-* TODO Book the hotel for the speakers :@hwr:@ysi:
-* TODO Book the airbnb :@hwr:@ysi:
-* TODO <2024-08-05 seg> Select the participants :@hwr:@ysi:
-* TODO Select the participants :@ancona:@ysi:
-* TODO Buy my tickets :@hwr:@ysi:
-* TODO Talk about the fmm with Morlin :@FMM:@ysi:
-* TODO Check possibility of including Lucas :@hwr:@unicamp:@ysi:
+* WAIT Book the restaurant for the social dinner :@SantAnna:
+* WAIT Submit the invoices to YSI :@SantAnna:
+** WAIT Hotel
+** WAIT Social Dinner
+
+-----
+
+
+* TODO Reimburse organizers :@RIO:
+* TODO Create spreadsheet tab for reiumbursement :@RIO:
+* WAIT Submit the invoices to YSI :@RIO:
+** WAIT Hotel
+** WAIT Social Dinner
+
+-----
+
+* TODO Submit project idea :@DRUID:
+* TODO Include the Complexity working group :@DRUID:
+* TODO Reach the hosting institution :@DRUID:
+* TODO Create selection form :@DRUID:
+* TODO Publish the project :@DRUID:
+
+
+-----
+
+* TODO Write the call for papers on the project landing page :@Geneva:
+* TODO Open the call for papers by the end of January :@Geneva:
+
+
+
+-----
+
+* TODO Find organizers :@WEHIA:
+
+-----
+
+* TODO Create the special project :@FMM:

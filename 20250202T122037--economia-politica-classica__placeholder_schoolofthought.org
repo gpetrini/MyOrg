@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       1164c251-778b-4a42-a98b-f7e75d5a0743
+:ROAM_ALIASES: "Classical Political Economy"
+:END:
+#+title:      economia_politica_classica
+#+date:       [2025-02-02 dom 12:20]
+#+filetags:   :placeholder:schoolofthought:
+#+identifier: 20250202T122037
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

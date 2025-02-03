@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       97708408-32e2-4e6d-8ebb-71c78fb23389
+:END:
+#+title:      Information and Knowledge
+#+date:       [2025-02-02 dom 12:08]
+#+filetags:   :placeholder:
+#+identifier: 20250202T120824
+#+OPTIONS: num:nil ^:{} toc:nil

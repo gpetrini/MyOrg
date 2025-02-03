@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       e70b5b4e-047f-4bbc-9adb-033b3b2fdb7d
-:mtime:    20211202152745 20211013082514
-:ctime:    20211013082514
-:END:

@@ -1,0 +1,5 @@
+#+title:      Investment Rate, Growth, and the Accelerator Effect in the Supermultiplier Model: The Case of Brazil
+#+date:       [2025-02-03 seg 16:08]
+#+filetags:   :bib:brazil:empirical:supermultiplier:
+#+identifier: 20250203T160802
+#+reference:  braga_2020_Investment

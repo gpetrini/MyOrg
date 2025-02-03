@@ -1,0 +1,4 @@
+#+title: Effective Demand
+#+date:       [2024-07-08 seg 15:55]
+#+filetags:   :placeholder:
+#+identifier: 20240708T155553

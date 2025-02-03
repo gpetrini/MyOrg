@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       154f5424-c0b8-4b05-adf6-59c799074190
+:END:
+#+title:      Shopping Time
+#+date:       [2025-02-02 dom 11:58]
+#+filetags:   :placeholder:
+#+identifier: 20250202T115857
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

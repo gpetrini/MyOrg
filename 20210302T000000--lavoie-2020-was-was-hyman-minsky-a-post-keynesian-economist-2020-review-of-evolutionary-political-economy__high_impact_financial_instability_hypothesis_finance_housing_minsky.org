@@ -9,9 +9,11 @@ Time-stamp: 2021-03-02
 
 * Backlinks
 
-[[denote:20210301T104540][Minskian theory]]
 
-[[denote:20210301T105212][Investimento, fluxo de caixa e dinâmica da alavancagem: regime minskiano ou paradoxo da dívida?]]
+[[denote:20230216T235200][Minskian theory]]
+
+[[denote:20230216T235201][Investimento, fluxo de caixa e dinâmica da alavancagem: regime minskiano ou paradoxo da dívida?]]
+
 
 * FISH-5SS
 

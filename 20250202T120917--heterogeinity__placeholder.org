@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       95d640e3-9fbc-4861-b78b-ec28d55d571b
+:mtime:    20211129155153
+:END:
+#+title:      Heterogeinity
+#+date:       [2025-02-02 dom 12:09]
+#+filetags:   :placeholder:
+#+identifier: 20250202T120917
+#+OPTIONS: num:nil ^:{} toc:nil

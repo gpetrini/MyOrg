@@ -1,0 +1,5 @@
+#+title:      Monte Carlo Simulations
+#+date:       [2025-02-03 seg 18:18]
+#+filetags:   :computational:simulation:
+#+identifier: 20250203T181801
+#+OPTIONS: num:nil ^:{} toc:nil

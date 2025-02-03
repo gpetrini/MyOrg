@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       78cb5012-e338-4532-927f-b55971887e8e
+:END:
+#+title:      New Entrant
+#+date:       [2025-02-02 dom 12:03]
+#+filetags:   :placeholder:
+#+identifier: 20250202T120357
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

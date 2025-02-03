@@ -1,0 +1,6 @@
+#+title:      Learning Processes
+#+date:       [2025-02-03 seg 18:06]
+#+filetags:   :learning:
+#+identifier: 20250203T180625
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

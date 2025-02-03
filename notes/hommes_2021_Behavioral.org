@@ -33,7 +33,7 @@
 
 ** Supporting ideas
 
-- The author consider a [[id:4002418c-d54c-4355-857b-2dfc2444b779][Complex System]] composed by:
+- The author consider a [[denote:20240708T111511][Complex system]] composed by:
   - [[id:9bb55103-022c-4b13-83cf-1ae264b5fcee][Non-linear model]]
     - Leads to multiple-equilibria
   - [[id:f8110b7b-dc7d-4b58-8fa5-4c8cae7a290c][Heterogenous Agents]]
@@ -99,7 +99,7 @@ Since this a survey of the literature, this section will point out the main resu
     - For a general discussion about the [cite/t: @anufriev_2012_Evolutionarya 's] model, see [[id:dd9fa53f-4487-4429-88d3-35fd290f14d2][Heuristic switching model]]
 
 
-A general results it the use of parsimonious learning rules and simple forecast heuristics seems to be more adequate in a [[id:4002418c-d54c-4355-857b-2dfc2444b779][Complex System]] since agents are [[id:c35474df-becc-4ac3-8370-d381ec5df2ab][Boundedly Rational]].
+A general results it the use of parsimonious learning rules and simple forecast heuristics seems to be more adequate in a [[denote:20240708T111511][Complex system]] since agents are [[id:c35474df-becc-4ac3-8370-d381ec5df2ab][Boundedly Rational]].
 
 ** Interesting findings and uncategorized stuff
 

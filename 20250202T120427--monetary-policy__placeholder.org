@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       7527ce86-4417-40d0-b238-b8f21faff261
+:END:
+#+title:      Monetary Policy
+#+date:       [2025-02-02 dom 12:04]
+#+filetags:   :placeholder:
+#+identifier: 20250202T120427
+#+OPTIONS: num:nil ^:{} toc:nil

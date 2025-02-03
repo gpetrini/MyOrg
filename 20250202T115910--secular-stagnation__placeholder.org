@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       6122d315-64bb-4b43-b017-4cb746207f5a
+:END:
+#+title:      Secular Stagnation
+#+date:       [2025-02-02 dom 11:59]
+#+filetags:   :placeholder:
+#+identifier: 20250202T115910
+#+OPTIONS: num:nil ^:{} toc:nil

@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       95265264-f61f-4cf5-8cdc-e590b2a47cb9
+:END:
+#+title:      Innovation bubble ABM
+#+date:       [2025-02-02 dom 12:08]
+#+filetags:   :placeholder:
+#+identifier: 20250202T120807
+#+OPTIONS: num:nil ^:{} toc:nil
+
+Placeholder for papers related to ABM innovation bubble model in my PhD Dissertation.

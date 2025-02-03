@@ -1,0 +1,4 @@
+#+title:      Rent prices
+#+date:       [2025-02-03 seg 18:37]
+#+filetags:   :placeholder:rent:
+#+identifier: 20250203T183723

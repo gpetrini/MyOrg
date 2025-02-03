@@ -1,0 +1,4 @@
+#+title: Rational Expectations
+#+date:       [2024-07-08 seg 11:30]
+#+filetags:   :placeholder:
+#+identifier: 20240708T113039

@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       79deff5c-6966-4bce-969c-bb6d91cda15d
+:END:
+#+title:      Bayesian Prior
+#+date:       [2025-02-02 dom 11:51]
+#+filetags:   :placeholder:
+#+identifier: 20250202T115137
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

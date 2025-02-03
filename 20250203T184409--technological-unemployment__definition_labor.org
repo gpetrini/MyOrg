@@ -1,0 +1,6 @@
+#+title:      Technological Unemployment
+#+date:       [2025-02-03 seg 18:44]
+#+filetags:   :definition:labor:
+#+identifier: 20250203T184409
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

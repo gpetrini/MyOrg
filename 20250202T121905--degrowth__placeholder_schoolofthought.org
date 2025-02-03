@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       4131f4fb-c8e6-4b6d-ba5a-bfe3ceb8076e
+:END:
+#+title:      degrowth
+#+date:       [2025-02-02 dom 12:19]
+#+filetags:   :placeholder:schoolofthought:
+#+identifier: 20250202T121905
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

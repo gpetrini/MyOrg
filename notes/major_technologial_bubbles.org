@@ -1,7 +1,0 @@
-:PROPERTIES:
-:ID:       d93f882e-acb9-4d3f-aa67-ace510eee393
-:ROAM_ALIASES: "Technological bubble"
-:END:
-#+title: Major Technologial Bubbles
-
-#+OPTIONS: num:nil ^:{} toc:nil

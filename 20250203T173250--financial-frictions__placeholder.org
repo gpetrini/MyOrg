@@ -1,0 +1,7 @@
+#+title:      Financial Frictions
+#+date:       [2025-02-03 seg 17:32]
+#+filetags:   :placeholder:
+#+identifier: 20250203T173250
+#+OPTIONS: num:nil ^:{} toc:nil
+
+For a introduction to financial frictions in macroeconomics see [[http://econweb.umd.edu/~drechsel/teaching/index.htm][ECON 474 - University of Maryland]]

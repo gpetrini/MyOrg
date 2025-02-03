@@ -1,0 +1,6 @@
+#+title:      Reswitching
+#+date:       [2025-02-03 seg 18:37]
+#+filetags:   :definition:sraffian:
+#+identifier: 20250203T183745
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

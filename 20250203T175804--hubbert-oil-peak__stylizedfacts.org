@@ -1,0 +1,5 @@
+#+title:      Hubbert Oil Peak
+#+date:       [2025-02-03 seg 17:58]
+#+filetags:   :stylizedfacts:
+#+identifier: 20250203T175804
+#+OPTIONS: num:nil ^:{} toc:nil

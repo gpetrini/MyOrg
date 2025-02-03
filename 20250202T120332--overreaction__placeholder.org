@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       65384c33-1387-4c16-a522-586964c8888d
+:END:
+#+title:      Overreaction
+#+date:       [2025-02-02 dom 12:03]
+#+filetags:   :placeholder:
+#+identifier: 20250202T120332
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

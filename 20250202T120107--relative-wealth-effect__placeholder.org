@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       6f2f090f-256b-408a-94e6-6c1d1a0b3aae
+:mtime:    20211202152740 20211108184615
+:ctime:    20211108184615
+:END:
+#+title:      Relative Wealth Effect
+#+date:       [2025-02-02 dom 12:01]
+#+filetags:   :placeholder:
+#+identifier: 20250202T120107
+#+OPTIONS: num:nil ^:{} toc:nil

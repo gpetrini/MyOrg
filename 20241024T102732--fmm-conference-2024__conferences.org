@@ -1,0 +1,23 @@
+#+title:      FMM conference, 2024
+#+date:       [2024-10-24 qui 10:27]
+#+filetags:   :conferences:
+#+identifier: 20241024T102732
+
+
+* Muddy water macro (Fazzari)
+
+- Loanable funds
+  - Fallacy: Savers compete to own a greater share of ownership
+  - LF is not a teory of interest rate, but it closes the demand gap derived from a "fresh" act to save
+    - Consequently, the endogenous interest rate does not closes the demand gap
+  - The base interest rate is define at the assets markets
+- Fallacy of price adjustment clearing the market
+  - The Keynes and Pigou effect stablishes that aggregate demand fall when prices fall
+    - This is theoretically ambiguos
+  - However, deflation can be destabilizing
+    - Debt deflation
+    - Lower prices can lead to an expectation on further declines of prices
+  - Evidence: Aggregate demand does not change significantly when prices changes
+    - Nominal adjustment does not lead to self correction
+    - Policy recommendation: avoid deflation at all costs
+      - Even maistream authors recognizes that the price deflation is harmfull, which seems logically inconsistent

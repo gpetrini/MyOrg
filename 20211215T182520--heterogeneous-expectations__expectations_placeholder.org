@@ -1,0 +1,5 @@
+#+title:      Heterogeneous Expectations
+#+date:       [2021-12-15 qua 18:25]
+#+filetags:   :expectations:placeholder:
+#+identifier: 20211215T182520
+#+OPTIONS: num:nil ^:{} toc:nil

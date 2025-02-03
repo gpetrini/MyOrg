@@ -1,8 +1,0 @@
-:PROPERTIES:
-:ID:       f9a3f48f-2f77-4698-b626-ad6fdaa8f584
-:ROAM_ALIASES: RBC
-:END:
-#+title: Real Buisiness Cycle
-
-#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
-#+OPTIONS: num:nil ^:{} toc:nil

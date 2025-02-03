@@ -1,0 +1,14 @@
+#+title:      Sunk Costs
+#+date:       [2025-02-03 seg 18:41]
+#+filetags:   :microeconomics:
+#+identifier: 20250203T184135
+
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+
+#+hugo_section: notes
+
+#+HUGO_CATEGORIES: KnowledgeBase
+
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

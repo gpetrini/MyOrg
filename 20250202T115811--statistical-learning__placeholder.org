@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       ce6e335b-79ed-470c-be0d-600251ddf624
+:END:
+#+title:      Statistical Learning
+#+date:       [2025-02-02 dom 11:58]
+#+filetags:   :placeholder:
+#+identifier: 20250202T115811
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

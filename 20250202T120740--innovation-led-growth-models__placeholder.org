@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       48ef7337-00ba-43c6-af2d-43723cb4387d
+:END:
+#+title:      Innovation-led growth models
+#+date:       [2025-02-02 dom 12:07]
+#+filetags:   :placeholder:
+#+identifier: 20250202T120740
+#+OPTIONS: num:nil ^:{} toc:nil

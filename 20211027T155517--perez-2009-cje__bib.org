@@ -1,0 +1,144 @@
+#+title:      Perez (2009, CJE)
+#+date:       [2021-10-27 qua 15:55]
+#+filetags:   :bib:
+#+SUBTITLE: perez_2009_Double: The double bubble at the turn of the century: technological roots and structural implications - (2009, Cambridge Journal of Economics)
+#+OPTIONS: num:nil ^:{} toc:nil
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+#+identifier: 20211027T155517
+
+* FISH-5SS
+
+|---------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <40>                                        | <50>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| *Background*                                  | This article based on the concept of *Great Surge Development* described by this same author. She argues that these stages are a result of social and economic assimilation rather than the particularities of the embed technology (some kind of inertia).                                                                                                                                                                                                                                                                                                                                   |
+| *Supporting Ideas*                            | [[denote:20240708T151101][Major Technologial Bubbles]]  are a result of *assimilation of technological revolution* (see [cite:@pastor_2009_Technological]).                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| *Purpose*                                     | Distinguish innovative bubbles (Major Technological Bubbles (MTBs) in the original) as a special case of [[id:d6f6bc83-b082-492a-8776-689614359fb6][Asset bubble]]s which is determined by [[id:abfc5875-3c94-4556-a396-ff75507eac1f][Technological revolution]].                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| *Hypothesis*                                  | High mobility of finance is required in order to provide the resources of an declining paradigm to a emerging one. It is also assumed a [[denote:20240708T151322][Financialization]]-like mechanism in which during the exuberance period, firms tend to prioritize short-term projects with higher liquidity in order to generate higher returns; consequently reduces capital accumulation. Differently from financial bubbles, technological bubbles are most driven by real market opportunity (promising to yield extraordinary profits) than low interest rates (which attracts money into the cassino).          |
+| *Originality/value (Contribution)*            | Provides a causal narrative for the endogeinity of asset bubble (financial and technological).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| *Relevance*                                   | This paper has the necessary typology for technological bubble and contrast it with financial bubble.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| *Design/methodology/approach*                 | Causal narratives and time-series inspection (not econometrically) with special attention with the US                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| *Results*                                     | The author concludes that the dot-com bubble is connected to housing bubble since the first provides technological changes and credit for the second. MTBs is caused by *opportunity pull* rather than *easy credit push*. Differently from regular financial bubble, MTB are not necessarily related to an increase in stock market prices, but to a increase in the number of companies that engages this new opportunity, reflecting a process of [[id:d1e7f9d2-e144-4f49-931e-5c0f3cd6d5c8][Overinvestment]]. After the bubble burst, there are institutional (mainly financial) changes that allows the emergence of the next one. |
+| *(Interesting) Findings*                      | As the new paradigm becomes more common, uncertainty reduces. As a consequence, competition intensifies. One way to indicate the presence of a bubble is using Price to Earnings ratio and annual turnover ratio.                                                                                                                                                                                                                                                                                                                                                                           |
+| *Research limitations/implications (Critics)* | The author seems to base her argument on a loanables-funds-type mechanism in which dot-com bubble must burst in order to generate the necessary conditions (mainly liquidity) for the housing bubble. No mention about S&L crisis and its instituional consequences for housing market. Its seems that the results need a tendency towards financial profits. In other words, if technological boom had not decoupled from real economy it would be sustainable. Thus, it is assumed that technological change /per se/ could create  stable path if "cassino economy" not existed.           |
+| *Uncategorized stuff*                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| *5SS*                                         | Innovation and financial bubbles have different natures. The first is related to opportunity pull while the latter depends on easy credit push. Both of them are a result of the endogenous process of technological revolution which creates the necessary financial, institutional and technical conditions for the emergence of the next one.                                                                                                                                                                                                                                            |
+|---------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+This paper argues that the two boom and bust episodes of the turn of the century—the internet mania and crash of the 1990s and the easy liquidity boom and bust of the 2000s—are two distinct components of a single structural phenomenon.
+They are essentially the equivalent of 1929 developed in two stages, one centred on technological innovation, the other on financial innovation.
+Hence, the frequent references to that crash, to the 1930s and to Bretton Woods, are not simple journalistic metaphors for interpreting the ‘credit crunch’ and its solution, but rather the intuitive recognition of a fundamental similarity between those events and the current ones.
+The paper holds that such major boom and bust episodes are endogenous to the way in which the market economy evolves and assimilates successive technological revolutions.
+It will discuss why it occurred in two bubbles on this occasion; it examines the differences and continuities between the two episodes and presents an interpretation of their nature and consequences.
+#+END_ABSTRACT
+
+
+* Annotations (zotero) :noexport:
+
+
+"This paper proposes to distinguish major technology bubbles (MTBs) as a special class of bubbles that constitute a recurring endogenous phenomenon, caused by the way the market economy absorbs successive technological revolutions." (Perez 2009:2)
+
+[OBJ] Major Tech Bubbles as a special case. (note on p.2)
+"They are the result of opportunity pull rather than of easy credit push. But they are indeed bubbles. They are moments of Galbraithian irrationality, but, at least in terms of prefiguring the future value of some of the stocks involved, they also contain an element of rationality (see Pastor and Veronesi, 2004 [2006], 2005)." (Perez 2009:2)
+
+Differently from credit bubbles, MTB are opportunity pull rarher than easy creadit push. (note on p.2)
+"Section 3 analyses the reasons for the ELB to have followed in the wake of the NASDAQ collapse." (Perez 2009:2)
+
+ELB as a result of MTB 2000s bubble. (note on p.2)
+"But, as in any other bubble, asset inflation takes off when the actors in the financial markets clearly switch from seeking dividends to pursuing capital gains, which results in the paper economy decoupling from the real one." (Perez 2009:2)
+
+Bubblue origin according to the author: Dividends -> capital gains (note on p.2)
+"The process follows a basic stable sequence: irruption of the revolution, two or three decades of a turbulent installation period ending in a major bubble collapse, then a recomposition of the socio-institutional framework that regulates finance and sets the conditions for the final deployment period, a time of more organic growth that lasts until maturity and exhaustion are reached, setting the stage for the irruption of the next technological revolution (Perez, 2002 [2003], 2007)." (Perez 2009:3)
+
+Great surge of Development process: revolution -> turbulent instalation -> collapse -> recomposition -> deployment -> organic growth -> maturity and exhaustion -> ... (note on p.3)
+"It is the high mobility of finance that will then enable the reallocation of available funds from the established and mature technologies and industries to the emerging ones" (Perez 2009:3)
+
+Is there some loanable funds ideia? Creation needs destruction? (note on p.3)
+"The illusion is that there are high profits to be had with very low risk. This misperception has an objective fact at the root: after years of experimentation technological uncertainty has been reduced to a minimum." (Perez 2009:5)
+
+As the new paradigm becomes more common, uncertainty reduces. (note on p.5)
+"Competition intensifies as diffusion advances and objective market uncertainty is likely to increase, but the faith in the miracle of technology—strengthened by the growing capital gains in the stock market—creates an atmosphere of 'irrational exuberance'." (Perez 2009:5)
+
+All this process is followed by an irrational exuberance. (note on p.5)
+"After the fact it seems astonishing that people could believe that such extreme acceleration in the number of companies entering the race, counting on equally exaggerated growth in market value could be anything but a process of overinvestment and a bubble destined to collapse." (Perez 2009:5)
+
+More and more companies entering in the race reflects a process of overinvestment and bubble destined to collaps. (note on p.5)
+"The two defining characteristics of these MTBs are: (i) their concentration on the new technologies—especially the new infrastructural networks—and (ii) their decoupling from the real economy. The latter is typical of all bubbles; the former—in terms of a strong bias in investment—is what distinguishes an MTB from an ordinary excess liquidity one." (Perez 2009:6)
+
+Two characteristics of MTB: New technologies and decoupling from real economy. (note on p.6)
+"igure 5 shows the Shiller (2000 [2005] updated 2008) P/E ratio in the 1990s and in the 1920s. His measure is of inflation adjusted prices divided by the prior ten-year mean of inflation-adjusted earnings." (Perez 2009:8)
+
+[DEF] Shiller P/E ratio (note on p.8)
+"It is the switch to short-term gains during the bubble that attracts the necessary capital to be poured into the infrastructural networks of each revolution" (Perez 2009:11)
+
+Capital gains purpose creates the financial conditions to finance the expansion of each revolution (note on p.11)
+"But by this time, the financial world will have acquired the habit of being in control of investment and of getting constant high returns. Quarterly profits will have become the main measure and production companies will find themselves forced to avoid long term projects and to constantly deliver short term gains" (Perez 2009:11)
+
+After that, short-term gains will be prioritized. (note on p.11)
+"The significant amount of liquidity that became available for easing credit lent more fuel to the housing bubbles that had already begun to inflate during the internet mania." (Perez 2009:13)
+
+How dotcom bubble connects to housing bubble: easing credit (note on p.13)
+"It is clear that a boom needs to count on enough liquidity to be able to develop. The argument being put forth here is that, in the case of MTBs, opportunity pull plays a greater role than low interest rates or monetary expansion. Easy credit, rather than being the initial push factor unleashing the technology bubble, would act as a reinforcing response to the explosion of opportunities, leading to a positive feedback loop. In the case of most other bubbles, easy credit tends to be the initial unleashing mechanism. Thus, the asset inflation of the NASDAQ bubble was driven by the attraction of ICT, whereas that of the 2004-07 boom was driven by both low interest rates and abundant liquidity." (Perez 2009:18)
+
+Comparison between bubbles: MTB motivated by opportunity pull and reinforced by financial condition. (note on p.18)
+"The whole of the second boom was carried on the back of stretching to the limit the financial innovations that had already been introduced during installation and in the internet boom itself." (Perez 2009:20)
+
+MTB breeds the thecnological condition for the real estate boom epsiode. (note on p.20)
+"Dosi, G. and Lovallo, D. 1997. Rational entrepreneurs or optimistic martyrs? Some considerations on technological regimes, corporate entries and the evolutionary role of decision biases, pp. 236-63 in Garud, R., Nayyar, P., and Shapira, Z. (eds), Technological Innovation Oversights and Foresights, Cambridge/New York, Cambridge University Press" (Perez 2009:26)
+
+"Pastor, L. and Veronesi, P. 2004 [2006]. Was there a Nasdaq bubble in the late 1990s? Journal of Financial Economics, vol. 81, no. 1, July, 61-100 Pastor, L. and Veronesi, P. 2005. 'Technological Revolutions and Stock Prices', NBER Working Paper, no. 11876" (Perez 2009:27)
+
+* Specific notes
+
+** Great Surge of Development sequence
+
+
+1. Irruption of the (technological) revolution
+2. Turbulent installation period
+3. Major bubble collapse
+4. Recomposition of social-institutional framework $\Rightarrow$ financial regulation
+5. Final deployment period with organic growth
+6. Maturity and exhaustion associated with *irrational exuberance*
+7. Irruption of next revolution
+
+** Major technological bubbles and its measures
+
+Defining characteristics of MTBs:
+
+- Concentration on *new technologies* and strong bias in investment
+- Decoupling from real economy (as in financial bubbles)
+
+MTBs episodes:
+- Canal mania :: Number of acts approved
+- Railway mania :: Number of railways authorized
+- Second industrial revolution mania (?) :: -
+- Roaring twenties: ?
+- Internet mania $\Rightarrow$ housing bubble :: Number of IPOs
+
+
+* Additional Backlinks
+
+[[id:e20ae018-ac3b-4b4e-8108-29f84b898745][Innovation bubble ABM]]
+
+[[denote:20240708T174852][Structural change]]
+
+[[id:bf204d00-40bc-40ff-bd28-829072390a09][Schumpeterian growth models]]
+
+[[id:d6f6bc83-b082-492a-8776-689614359fb6][Asset bubble]]
+
+[[id:9b881b3e-17dc-489b-994f-74cc05a6c421][Financial Regulation]]
+
+[[id:1cac371a-5856-4193-82e5-e7b8e8249df4][Financial Innovation]]
+
+[[id:67c15aaa-7b6e-4407-b2de-71570ce061f5][Financial Crises]]
+
+[[id:abfc5875-3c94-4556-a396-ff75507eac1f][Technological revolution]]
+
+[[denote:20240708T151322][Financialization]]
+
+* References
+#+print_bibliography:

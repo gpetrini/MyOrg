@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       f19dc90a-2d72-4b4a-9319-f2ed35ebae47
+:END:
+#+title:      Inatention Models
+#+date:       [2025-02-02 dom 11:38]
+#+HUGO_AUTO_SET_LASTMOD: t
+#+identifier: 20250202T113854
+#+hugo_base_dir: ~/BrainDump/
+#+hugo_section: notes
+#+filetags:   :placeholder:
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

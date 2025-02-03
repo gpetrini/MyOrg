@@ -1,0 +1,5 @@
+#+title:      Nominal Rigidities
+#+date:       [2025-02-03 seg 18:21]
+#+filetags:   :rigidity:
+#+identifier: 20250203T182148
+#+OPTIONS: num:nil ^:{} toc:nil

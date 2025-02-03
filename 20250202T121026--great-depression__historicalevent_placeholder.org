@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       b1175914-e5ec-4a74-9c2b-84cec51f8558
+:END:
+#+title:      Great Depression
+#+date:       [2025-02-02 dom 12:10]
+#+filetags:   :historicalevent:placeholder:
+#+identifier: 20250202T121026
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

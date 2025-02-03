@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       0c6c78fd-8d22-4002-9c82-7ccd82af43f5
+:END:
+#+title:      Process Innovation
+#+date:       [2025-02-02 dom 12:03]
+#+filetags:   :placeholder:
+#+identifier: 20250202T120306
+#+OPTIONS: num:nil ^:{} toc:nil

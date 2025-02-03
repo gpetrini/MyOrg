@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       05557c68-06ae-4505-ae5f-0096879841a3
+:mtime:    20211129152405
+:END:
+#+title:      Bayesian learning
+#+date:       [2025-02-02 dom 11:50]
+#+filetags:   :placeholder:
+#+identifier: 20250202T115059
+#+OPTIONS: num:nil ^:{} toc:nil

@@ -1,0 +1,15 @@
+#+title:      Short sales constraints
+#+date:       [2025-02-03 seg 18:39]
+#+filetags:   :financial:trade:
+#+identifier: 20250203T183948
+
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+
+#+hugo_section: notes
+
+#+HUGO_TAGS: placeholder definition
+
+#+OPTIONS: num:nil ^:{} toc:nil
+
+This kind of constraints reflects some frictions in options market in which the agent is not able to sell the financial asset imediatly.

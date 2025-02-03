@@ -1,7 +1,0 @@
-:PROPERTIES:
-:ID:       44ed2438-0893-424a-8eb2-2745fa7ce85a
-:END:
-#+title: Calvo pricing setting
-
-#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
-#+OPTIONS: num:nil ^:{} toc:nil

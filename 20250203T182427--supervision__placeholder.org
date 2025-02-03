@@ -1,0 +1,8 @@
+#+title:      Supervision
+#+date:       [2025-02-03 seg 18:24]
+#+filetags:   :placeholder:
+#+identifier: 20250203T182427
+
+* Descrição
+
+Flag para indicar que se trata de uma orientação

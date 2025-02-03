@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       d7b5b9d1-5c11-4311-9c7f-f61e2cc7dcfe
+:END:
+#+title:      Wage-price spirals
+#+date:       [2025-02-02 dom 11:45]
+#+filetags:   :placeholder:
+#+identifier: 20250202T114538
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

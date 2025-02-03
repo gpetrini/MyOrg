@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       e591bceb-1711-4795-9bbb-6f0d03ca5042
+:END:
+#+title:      Intertemporal Maximization
+#+date:       [2022-06-30 qui 15:32]
+#+filetags:   :placeholder:
+#+identifier: 20220630T153213
+
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

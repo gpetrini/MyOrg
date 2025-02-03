@@ -1,0 +1,18 @@
+#+title:      Neo-Goodwin Model
+#+date:       [2025-02-03 seg 18:20]
+#+filetags:   :canonicalmodels:
+#+identifier: 20250203T182022
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil
+
+This [[id:434076e6-3bce-497b-ade1-7f8e3fde763e][Canonical Models]] based on the work of [cite/t:@goodwin_1967_Growth] rely on the following hypothesis:
+- Savings-driven investment
+- Conflict between capital and labor
+- When real wages goes up, it can dampen investment's profitability and reduce investment demand ([[id:de34270e-0ae3-44b3-a344-a58d4a3d15d1][Profit-Squeezing]])
+
+Following [cite/t:@jump_2022_Building] and adapting the notation, the state space model is:
+
+\begin{align*}
+  \frac{\dot{e}}{e} & = \frac{1 - \omega}{v} - (g_{A} + g_{N})\\
+  \frac{\dot{\omega}{\omega}} & = -(g_{A} + \gamma_{0w}) + \gamma_{1w}e
+\end{align*}

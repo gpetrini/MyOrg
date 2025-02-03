@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       d170861a-8318-4e3d-8d84-28f795578b98
+:END:
+#+title:      diagnostic_expectations
+#+date:       [2025-02-02 dom 12:19]
+#+filetags:   :placeholder:
+#+identifier: 20250202T121916
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

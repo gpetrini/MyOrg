@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       4e32140d-65a7-4d8b-a7a7-f7c8741571db
+:ROAM_ALIASES: EnKF
+:END:
+#+title:      ensemble_kalman_filter
+#+date:       [2025-02-02 dom 12:21]
+#+filetags:   :bayesian:calibration:
+#+identifier: 20250202T122100
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

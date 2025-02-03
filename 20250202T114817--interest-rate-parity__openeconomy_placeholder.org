@@ -1,0 +1,54 @@
+:PROPERTIES:
+:ID:       15705441-bd07-46e1-b330-009ec57eb410
+:mtime:    20211202152738 20211013082514
+:ctime:    20211013082514
+:END:
+#+title:      Interest Rate Parity
+#+date:       [2025-02-02 dom 11:48]
+#+filetags:   :openeconomy:placeholder:
+#+identifier: 20250202T114817
+
+* Backlinks
+
+[[id:39f64278-760c-4e2b-8e31-a6a35c5397af][Orientações]]
+
+[[id:7f564eeb-0296-470c-9d59-b42869b434f9][Monografia - Lorena]]
+
+
+* Lavoie (2015) - Open-economy macroeconomics <2021-08-17 ter>
+
+** Visão geral de alguns tópicos
+
+- Uma das implicações práticas dos teoremas da paridade é que o BC não é capaz de determinar a taxa de juros
+  + Existe um mecanismo endógeno que garante isso
+- Paridade da taxa de juros real pode ser decomposta em:
+  + Paridade do poder de compra
+  + Paridade descoberta
+  + Paridade coberta
+  + Hipótese do mercado futuro não-viesado
+- Normalmente, estes teoremas são utilizados para fechar o modelo
+  + Precisa ser válido para que outras relações continuem sendo válidas
+- Na visão cambista, a paridade coberta é sempre válida *por definição* e o BC é capaz de determinar a taxa de juros de curto prazo
+  + Taxa no mercado futuro não é determinada por forças de mercado
+- De modo geral, autores pós-Keynesianos enfatizam a importância tanto das expectativas quando da incerteza
+  + Recomendação de câmbio fixo ou flexível recaem sobre o que minora a incerteza
+  + A composição de agentes que formam expectativas de maneira distinta determina a taxa de câmbio
+    - Agentes que seguem a tendência VS seguem os fundamentos
+  + Outros enfatizam que o setor externo pode ser uma restrição ao crescimento doméstico se a política econômica ficar dependente do estoque de reserva
+  + Outra questão é se essas expectativas decorrem de fluxos (conta corrente) ou decisões de portfólio
+
+** Questões para se pensar
+
+- Taxa de juros determina a taxa de câmbio ou o inverso
+  + Essa questão explicita a importância da taxa de juros exógena
+
+** Sugestão de estrutura a partir da leitura indicada
+
+1. Definição dos teoremas
+2. Condições para que sejam válidos
+3. Determinantes da taxa nominal de câmbio a luz dos teoremas
+   a. Regime de câmbio fixo
+   b. Regime de câmbio flexível
+   c. Regime de câmbio misto
+4. Implicações de política econômica
+5. Questões em aberto

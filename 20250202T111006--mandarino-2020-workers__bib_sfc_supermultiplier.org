@@ -1,0 +1,55 @@
+#+OPTIONS: num:nil ^:{} toc:nil
+#+title:      mandarino_2020_Workers
+#+date:       [2025-02-02 dom 11:10]
+#+filetags:   :bib:sfc:supermultiplier:
+#+identifier: 20250202T111006
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+
+** Background and motivation
+
+
+** Supporting Ideas and hypothesis
+
+
+** Purpose, Relevance, and Contribution
+
+
+** Methodology
+
+
+** Results
+
+
+** Interesting findings and not categorized stuff
+
+
+** Critics
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+$<$section class="abstract"$><$p$>$This paper presents a supermultiplier stock–flow consistent model of economic growth led by debt-financed consumption of workers. In so doing it tries to shed light on the financial requirements of growth trajectories based on induced investment. The model explicitly derives the aggregate financial needs of both workers and firms and how these needs can be met by the banking sector – mapping out all the stock and flow implications of the assumed financial transactions for all sectors of the economy at hand. An analytic solution for the nature of the steady states of the model is then provided and its dynamic properties analysed by means of computer simulations.$<$/p$><$/section$>$
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+* References
+
+
+
+#+print_bibliography:

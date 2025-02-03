@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       29ce4a60-6429-44ef-a5b2-f48fba192d79
+:END:
+#+title:      Behavior Bias
+#+date:       [2025-02-02 dom 11:52]
+#+filetags:   :placeholder:
+#+identifier: 20250202T115214
+#+OPTIONS: num:nil ^:{} toc:nil

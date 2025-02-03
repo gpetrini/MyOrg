@@ -1,8 +1,0 @@
-:PROPERTIES:
-:ID:       5fb17212-0437-4d5a-bbd1-767f34f0e4d3
-:mtime:    20211202152740 20211013082514
-:ctime:    20210301105212
-:END:
-#+title: Investimento, fluxo de caixa e dinâmica da alavancagem: regime minskiano ou paradoxo da dívida?
-
-[[id:8234ec70-778d-4959-8ddb-c4c5bb53f0bc][IEE882 - Macroeconomia Financeira]]

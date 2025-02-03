@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       2645660a-bff8-4f35-8bb9-c4de28e46ddd
+:END:
+#+title:      Investment determination
+#+date:       [2025-02-02 dom 12:06]
+#+filetags:   :placeholder:
+#+identifier: 20250202T120625
+#+OPTIONS: num:nil ^:{} toc:nil

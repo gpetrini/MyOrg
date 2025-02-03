@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       5d25d7e0-3de1-4225-b77e-e646f1ab0283
+:END:
+#+title:      cost_of_capital
+#+date:       [2025-02-02 dom 12:17]
+#+filetags:   :placeholder:
+#+identifier: 20250202T121707
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

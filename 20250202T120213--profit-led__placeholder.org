@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       d0995978-0f50-4d11-a71e-477238903e19
+:END:
+#+title:      Profit-Led
+#+date:       [2025-02-02 dom 12:02]
+#+filetags:   :placeholder:
+#+identifier: 20250202T120213
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

@@ -1,0 +1,4 @@
+#+title:      Technological change
+#+date:       [2024-09-06 sex 15:04]
+#+filetags:   :placeholder:
+#+identifier: 20240906T150431

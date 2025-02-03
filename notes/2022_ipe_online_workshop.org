@@ -107,7 +107,7 @@ In summary, do you think that the evidence you showed and the SSM literature cou
 
 
 *Contribution:* There is little attention to commodity prices/market in CPE growth model perspective. This topic allows a dialogue with development economics.
-- So far, focus on dependend [[id:49bd4d2f-3350-4a81-865b-fcd0f43c9330][Financialization]] (debt-led) growth
+- So far, focus on dependend [[denote:20240708T151322][Financialization]] (debt-led) growth
 
 +---------+-----------------+--------------+-------------------+---------------------+----------------+--------------------+
 | Type    |        Consumption-led         |               Export-led                |           Investment-led            |

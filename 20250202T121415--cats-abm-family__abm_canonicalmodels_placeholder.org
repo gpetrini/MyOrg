@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       88dc308c-ddfb-4216-9587-0085cd197621
+:END:
+#+title:      cats_abm_family
+#+date:       [2025-02-02 dom 12:14]
+#+filetags:   :abm:canonicalmodels:placeholder:
+#+identifier: 20250202T121415
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

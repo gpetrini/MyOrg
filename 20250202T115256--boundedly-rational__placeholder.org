@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       c35474df-becc-4ac3-8370-d381ec5df2ab
+:END:
+#+title:      Boundedly Rational
+#+date:       [2025-02-02 dom 11:52]
+#+filetags:   :placeholder:
+#+identifier: 20250202T115256
+#+OPTIONS: num:nil ^:{} toc:nil

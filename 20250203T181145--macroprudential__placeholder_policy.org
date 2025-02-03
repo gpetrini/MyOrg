@@ -1,0 +1,6 @@
+#+title:      Macroprudential
+#+date:       [2025-02-03 seg 18:11]
+#+filetags:   :placeholder:policy:
+#+identifier: 20250203T181145
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

@@ -1,0 +1,4 @@
+#+title: Representative Agent hypothesis
+#+date:       [2024-07-08 seg 11:32]
+#+filetags:   :placeholder:
+#+identifier: 20240708T113226

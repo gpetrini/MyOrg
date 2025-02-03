@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       8a0850d6-8b77-40a7-b080-4d5aa89da5b9
+:END:
+#+title:      Market Selection
+#+date:       [2025-02-02 dom 12:04]
+#+filetags:   :placeholder:
+#+identifier: 20250202T120437
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

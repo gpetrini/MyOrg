@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       f6fc9768-c42c-44bc-a384-3f4cbe600dc6
+:END:
+#+title:      central_bank_digital_currency
+#+date:       [2025-02-02 dom 12:15]
+#+filetags:   :monetary:placeholder:policy:
+#+identifier: 20250202T121520
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

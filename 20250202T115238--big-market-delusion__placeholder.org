@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       331ac477-5b3f-485e-b47e-be962ff9b5aa
+:END:
+#+title:      Big Market Delusion
+#+date:       [2025-02-02 dom 11:52]
+#+filetags:   :placeholder:
+#+identifier: 20250202T115238
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

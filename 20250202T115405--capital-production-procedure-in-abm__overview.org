@@ -1,0 +1,93 @@
+:PROPERTIES:
+:ID:       37728df2-27c0-4f2a-b975-9b261087da1e
+:mtime:    20211202152739 20211028145229
+:ctime:    20211028145229
+:END:
+#+title:      Capital production procedure in ABM
+#+date:       [2025-02-02 dom 11:54]
+#+filetags:   :overview:
+#+identifier: 20250202T115405
+#+OPTIONS: num:nil ^:{} toc:nil
+
+* Description
+
+
+This file holds my personal notes about ABM for learning purposes.
+Please do not quote or cite.
+
+* UFRJ Micro-macro model (MMM)
+
+** Effective orders
+
+
+#+begin_src cpp :eval no
+EQUATION("Effective_Orders_Capital_Firm")
+/*
+Sector Variable
+,*/
+ v[0]=V("id_capital_goods_sector");
+ v[1]=V("Sum_Market_Share"); // This should not be always equals to one?
+ if (v[0]==1) //if it is capital goods sector
+  {
+  v[2]=V("Effective_Orders_Sector"); //value of effective orders of capital goods (since v[0] == 1)
+  for(
+      // Initializing:
+      v[3]=0,  //
+      v[4]=v[2], // Total value of effective orders
+      v[5]=0;  //
+      // Conditions:
+      (v[2]-v[3])>0
+          &&
+      v[5]<v[1];
+      // Updates:
+      v[4]=(v[2]-v[3]),
+      v[5]=v[6]
+  )
+    {
+   v[7]=v[5];
+   v[8]=0;
+   v[9]=0; // Total firms orders (accum. effective orders of each firm)
+   v[10]=0;
+   CYCLE(cur, "FIRMS")
+   {
+    v[11]=VS(cur, "Market_Share");
+    v[12]=VLS(cur, "Productive_Capacity", 1);
+    v[15]=VS(cur, "capital_goods_production_temporary");                                //firm's capital goods production
+     if (v[15]<v[12])
+     { //if firm's capital goods production is lower then the firm's maximum capacity
+     v[16]=VS(cur, "capital_goods_effective_orders_firm_temporary");                   //firm's effective orders temporary
+     v[17]=v[16]+v[4]*v[11]/(1-v[7]);                                                  //firm effective orders will be the temporary value plus the total value of effective orders multiplied by firm's market share, divided by
+     v[18]=max((min(v[17],v[12])),0);                                                  //firm's effective production can never be more then the maximum capacity nor negative
+     }
+     else
+     { //if firm's capital goods production is higher then the firm's maximum capacity
+     v[17]=VS(cur, "capital_goods_effective_orders_firm_temporary");                   //firm's effective orders temporary
+     v[18]=v[12];                                                                      //firm's effective production will be the maximum capacity
+     }
+    WRITES(cur, "capital_goods_effective_orders_firm_temporary", v[17]);                //writes the firm's capital goods effective orders
+    WRITES(cur, "capital_goods_production_temporary", v[18]);                           //writes the firm's capital goods production
+    v[10]=v[10]+v[18];                                                                  //sums up the production of each firm
+    v[19]=min(v[17],v[12]);                                                             //determines the firm's effecive orders, that can not be higher then the maximum capacity
+    v[9]=v[9]+v[19];                                                                    //sums up the effective orders of each firm
+     if (v[18]==v[12])                                                                 //if firm's production is equal to maximum capacity
+      v[20]=v[11];                                                                    //effective orders will be equal to firm's market share
+     else                                                                              //if firm's production is not equal to maximum capacity
+      v[20]=0;                                                                        //effective orders will be equal to zero
+    v[8]=v[8]+v[20];                                                                    //sums up the effective orders of each firm
+   }
+   v[3]=v[9];                                                                            //new value for v[3]
+   v[6]=v[8];                                                                            //new value for v[6]
+   }
+  } // Closes the for loop
+ else
+  //if it is not capital goods sector, results equals zero
+  v[20]=0;
+RESULT(v[20])
+#+end_src
+
+*** Questions :noexport:
+
+- Por que a soma do market-share precisa ser calculada? Não deveria ser igual a unidade sempre?
+
+
+* K+S

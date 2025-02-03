@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       d2c63975-da91-48b4-9a3a-3d3fef6e614a
+:END:
+#+title:      Innovation Diffusion
+#+date:       [2025-02-02 dom 12:07]
+#+filetags:   :placeholder:
+#+identifier: 20250202T120757
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

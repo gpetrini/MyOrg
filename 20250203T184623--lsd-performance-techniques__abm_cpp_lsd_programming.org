@@ -1,0 +1,34 @@
+#+title:      LSD performance techniques
+#+date:       [2025-02-03 seg 18:46]
+#+OPTIONS: num:nil ^:{} toc:nil
+#+INCLUDE: ../header.org
+#+filetags:   :abm:cpp:lsd:programming:
+#+identifier: 20250203T184623
+
+All credit goes to Lilian Rolim for all the hints bellow.
+
+* Repeated equations
+
+Consider a situation in which you have more than one type of agent using a similar procedure with a different function.
+Write one equation for each could be error prone and hard to support for long model.
+A suggestion is:
+
+- Create a function (in cpp) that generates a function for each of these agents every time the model is compiled
+  + The source could will not change
+  + See K+S example below
+
+
+** Example
+
+* Simulation performance
+
+** Reduce cycle numbers
+
+- When using a cycle, compute more than one operation at once to prevent bottlenecks
+- Avoid using cycle unnecessarily
+
+** Sorting
+
+- Store the agents position in a vector (using pointers)
+- Sort a vector is faster than sort an agent
+  + Even if using inside a cycle

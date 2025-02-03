@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       a1799151-e71a-473a-9b22-dfe0ea62aec0
+:END:
+#+title:      Econometric
+#+date:       [2025-02-02 dom 12:13]
+#+filetags:   :placeholder:
+#+identifier: 20250202T121337
+#+OPTIONS: num:nil ^:{} toc:nil

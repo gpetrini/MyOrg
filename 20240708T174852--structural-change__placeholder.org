@@ -1,0 +1,4 @@
+#+title:      Structural change
+#+date:       [2024-07-08 seg 17:48]
+#+filetags:   :placeholder:
+#+identifier: 20240708T174852

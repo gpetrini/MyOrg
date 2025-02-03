@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       cb63370c-4a4c-49d0-84e6-4c8d878c2c25
+:mtime:    20211202152744 20211108110356
+:ctime:    20211108110356
+:END:
+#+title:      countercyclical_capital_buffers
+#+date:       [2025-02-02 dom 12:17]
+#+filetags:   :placeholder:policy:
+#+identifier: 20250202T121719
+#+OPTIONS: num:nil ^:{} toc:nil

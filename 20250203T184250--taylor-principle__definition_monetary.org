@@ -1,0 +1,6 @@
+#+title:      Taylor Principle
+#+date:       [2025-02-03 seg 18:42]
+#+filetags:   :definition:monetary:
+#+identifier: 20250203T184250
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

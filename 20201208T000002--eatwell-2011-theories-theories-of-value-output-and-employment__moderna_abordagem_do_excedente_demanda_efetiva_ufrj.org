@@ -3,7 +3,7 @@
 :END:
 #+TITLE: eatwell_2011_Theories: Theories of Value, Output, and Employment
 #+filetags: Moderna_Abordagem_do_Excedente Demanda_Efetiva UFRJ
-Time-stamp: 2020-12-08
+#+identifier: 20201208T000002
 
 
 * Theories of Value, Output, and Employment

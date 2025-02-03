@@ -1,0 +1,6 @@
+#+title:      Firm Entry Rate
+#+date:       [2025-02-03 seg 17:34]
+#+filetags:   :placeholder:stylizedfacts:
+#+identifier: 20250203T173410
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

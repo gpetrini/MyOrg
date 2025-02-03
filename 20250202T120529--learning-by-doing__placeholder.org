@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       520c05a9-c0a3-4332-857c-4c559bd9c237
+:END:
+#+title:      Learning by Doing
+#+date:       [2025-02-02 dom 12:05]
+#+filetags:   :placeholder:
+#+identifier: 20250202T120529
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

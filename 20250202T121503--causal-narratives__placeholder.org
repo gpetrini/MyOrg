@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       3dfead51-0655-41df-b411-773c706215b1
+:END:
+#+title:      causal_narratives
+#+date:       [2025-02-02 dom 12:15]
+#+filetags:   :placeholder:
+#+identifier: 20250202T121503
+#+HUGO_TAGS: placeholder
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

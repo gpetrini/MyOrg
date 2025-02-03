@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       c5c9caae-7306-485e-ab15-bc579733407a
+:END:
+#+title:      Feedback mechanisms
+#+date:       [2025-02-02 dom 12:11]
+#+filetags:   :placeholder:
+#+identifier: 20250202T121139
+#+OPTIONS: num:nil ^:{} toc:nil
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+
+
+Considering [cite/t:@anufriev_2013_Evolutionary p. 666] paper both types of feedback mechanisms can be defined as:
+#+begin_quote
+A positive feedback system reinforces a change in input by responding to a perturbation in the same direction.
+In contrast, a negative feedback system reverses a change in input and responds to a perturbation in the opposite direction.
+#+end_quote

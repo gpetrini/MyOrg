@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       0fb81bfc-4e95-4099-8568-c55b704d6165
+:END:
+#+title:      Externalities
+#+date:       [2025-02-02 dom 11:40]
+#+filetags:   :placeholder:
+#+identifier: 20250202T114051
+#+OPTIONS: num:nil ^:{} toc:nil

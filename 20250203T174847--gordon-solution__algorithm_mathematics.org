@@ -1,0 +1,5 @@
+#+title:      Gordon Solution
+#+date:       [2025-02-03 seg 17:48]
+#+filetags:   :algorithm:mathematics:
+#+identifier: 20250203T174847
+#+OPTIONS: num:nil ^:{} toc:nil

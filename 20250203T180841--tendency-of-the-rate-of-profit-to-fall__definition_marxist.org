@@ -1,0 +1,6 @@
+#+title:      Tendency of the rate of profit to fall
+#+date:       [2025-02-03 seg 18:08]
+#+filetags:   :definition:marxist:
+#+identifier: 20250203T180841
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

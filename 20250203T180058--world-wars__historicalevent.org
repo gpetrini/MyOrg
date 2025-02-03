@@ -1,0 +1,6 @@
+#+title:      World Wars
+#+date:       [2025-02-03 seg 18:00]
+#+filetags:   :historicalevent:
+#+identifier: 20250203T180058
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

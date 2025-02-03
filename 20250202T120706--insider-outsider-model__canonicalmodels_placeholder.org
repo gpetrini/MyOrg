@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       2dd8722d-20ad-421b-852a-60d9753dacfd
+:END:
+#+title:      Insider-Outsider Model
+#+date:       [2025-02-02 dom 12:07]
+#+filetags:   :canonicalmodels:placeholder:
+#+identifier: 20250202T120706
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

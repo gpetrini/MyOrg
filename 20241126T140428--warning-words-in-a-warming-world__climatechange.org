@@ -1,0 +1,55 @@
+#+title:      Warning words in a warming world
+#+subtitle: Central bank communication and climate change
+#+date:       [2024-11-26 ter 14:04]
+#+filetags:   :climatechange:
+#+identifier: 20241126T140428
+#+signature:
+
+
+
+* FISH-5SS
+
+* 5SS
+
+* Background and motivation
+
+* Supporting Ideas and hypothesis
+
+* Purpose, Relevance, and Contribution
+
+- Novel dataset of central bank speeches (1986-2023)
+  - Most contributions uses BIS
+  - Other institutions does not have all speeches translated to English
+  - Contribution: complements the database with webscrapper from central bank websites
+- Analysis on climate-related communication
+- Structural topic model with two narratives:
+  - Green finance
+  - Climate-related financial risks
+- Portfolio analysis (US) and firm-specific [[denote:20241126T141520][Asset Prices]]
+  - Green-minus-dirty portfolio
+  - Focus on percentiles (25/75 and 10/90)
+  - For the firm-specific, focus on the interaction between the climate focus of the CB and some climate-related scores (emission, enviromental, and  emission)
+
+* Methodology
+
+- Dictionary-based approach
+  - Gives more control and transparency to handle the dataset
+  - Define a threshold to decide when to capture a speech with climate-related topics
+    - The decision is to simply capture whenever it is mentioned
+- Structural topic model
+  - Non-supervised algorithm and creates clusters
+  - Choose the number of topics based on the frontier between exclusivity and coherence of the corpus
+- Creates indicators of climate focus to run regressions
+
+* Results
+
+- Drivers of climate-related commnunication
+  - Institutional dimensions
+    - The stronger of CB supervision and independence, the more communication about climate related risks
+  - NGFS membership
+- Greener firms outperform dirtier firms when FED focuses more on climate-related issues (in terms of daily porfolio return)
+
+
+* Interesting findings and not categorized stuff
+
+* Critics

@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       f37ac1bb-3de3-40a8-9224-c713e9b2e2e6
+:END:
+#+title:      Behavioral extrapolation
+#+date:       [2025-02-02 dom 11:51]
+#+filetags:   :placeholder:
+#+identifier: 20250202T115151
+#+OPTIONS: num:nil ^:{} toc:nil
+
+Placeholder for models in which behavioral extrapolation mean the use of past information for future forecast.

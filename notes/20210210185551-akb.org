@@ -1,8 +1,0 @@
-:PROPERTIES:
-:ID:       990dd7fa-9759-4ab1-a0d2-5135894e41d9
-:mtime:    20211202152742 20211013082514
-:ctime:    20210210185551
-:END:
-#+title: AKB
-
-[[id:8a45148b-2068-40b3-baf0-c76475b4e14f][Lectures and Conferences]]

@@ -1,0 +1,6 @@
+#+title:      Structural Knowledge
+#+date:       [2025-02-03 seg 18:41]
+#+filetags:   :learning:
+#+identifier: 20250203T184101
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

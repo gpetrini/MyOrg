@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       1a81aea9-3f06-4877-904e-5aa5ea051512
+:END:
+#+title:      Asset-pricing models
+#+date:       [2025-02-02 dom 11:50]
+#+filetags:   :placeholder:
+#+identifier: 20250202T115011
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

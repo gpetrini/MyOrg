@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       80ba394b-777d-4faa-b848-715fb1977a76
+:END:
+#+title:      Calibration
+#+date:       [2025-02-02 dom 11:53]
+#+filetags:   :placeholder:
+#+identifier: 20250202T115312
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

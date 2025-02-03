@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       49067155-9d3a-406f-919c-9c2db45f8348
+:mtime:    20211202152740 20211125115519
+:ctime:    20211125115519
+:END:
+#+title:      Capital Strike
+#+date:       [2025-02-02 dom 11:54]
+#+filetags:   :placeholder:
+#+identifier: 20250202T115448
+#+OPTIONS: num:nil ^:{} toc:nil

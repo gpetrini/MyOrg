@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       fdc30f2d-7aa9-4327-ab12-3c59475223cb
+:END:
+#+title:      Residential Investment
+#+date:       [2025-02-02 dom 12:00]
+#+filetags:   :placeholder:
+#+identifier: 20250202T120045
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

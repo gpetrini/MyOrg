@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       d0fe39e2-973f-49ff-b693-bbf593fb8dcd
+:mtime:    20211202152744 20211013082514
+:ctime:    20210218105541
+:END:
+#+title:      Inflação e Conflito Distributivo
+#+date:       [2023-02-16 qui 23:51]
+#+filetags:   :placeholder:
+#+identifier: 20230216T235158
+
+[[id:a405ebe8-05ae-41ec-86a2-87c1fdba4e18][Macroeconomia da Demanda Efetiva na abordagem do excedente]]

@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       4d4959f4-a69b-4eef-9b02-cfa25dab5780
+:END:
+#+title:      expired-release-file
+#+date:       [2021-12-15 qua 19:31]
+#+filetags:   :computer:
+#+identifier: 20211215T193104
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump
+#+hugo_section: knowledge
+#+HUGO_CATEGORIES: Linux
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil\n
+
+If there is a package that is not possible to update due to expired release file (outdated release key), just run the following command to get others package update until the problem is solved
+
+#+begin_example sh
+sudo apt -o Acquire::Check-Valid-Until=false update
+#+end_example

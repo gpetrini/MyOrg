@@ -1,0 +1,6 @@
+#+title:      Generic Opinion Formation
+#+date:       [2025-02-03 seg 17:40]
+#+filetags:   :financial:placeholder:
+#+identifier: 20250203T174044
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

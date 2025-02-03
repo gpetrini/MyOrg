@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       3732f10b-eeac-401a-b9d1-f31f3b1766ba
+:END:
+#+title:      Welfare
+#+date:       [2025-02-02 dom 11:45]
+#+filetags:   :placeholder:
+#+identifier: 20250202T114511
+
+#+OPTIONS: num:nil ^:{} toc:nil

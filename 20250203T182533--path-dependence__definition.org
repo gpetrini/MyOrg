@@ -1,0 +1,5 @@
+#+title:      Path Dependence
+#+date:       [2025-02-03 seg 18:25]
+#+filetags:   :definition:
+#+identifier: 20250203T182533
+#+OPTIONS: num:nil ^:{} toc:nil

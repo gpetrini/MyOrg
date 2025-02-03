@@ -1,6 +1,3 @@
-:ctime:    20201203145735
-:END:
-#+OPTIONS: num:nil
 #+title: Macroeconomia da Demanda Efetiva na abordagem do excedente
 #+AUTHOR: Gabriel Petrini
 #+DATE: 2º Semestre de 202

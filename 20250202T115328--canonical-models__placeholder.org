@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       434076e6-3bce-497b-ade1-7f8e3fde763e
+:END:
+#+title:      Canonical Models
+#+date:       [2025-02-02 dom 11:53]
+#+filetags:   :placeholder:
+#+identifier: 20250202T115328
+#+OPTIONS: num:nil ^:{} toc:nil
+
+This is a placeholder for some cannonical models.

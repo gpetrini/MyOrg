@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       d7a6cf72-bf01-4f0a-b64c-d8275bc264e8
+:END:
+#+title:      Economic Forecasting with an Agent-Based Model
+#+date:       [2024-07-15 seg 10:02]
+#+filetags:   :agentbased:bib:datafriendly:empirical:forecast:
+#+identifier: 20240715T100237
+#+reference:  poledna_2023_economic
+

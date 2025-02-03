@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       4a0d81b7-57e0-4f47-820d-dc1e4cbf8d54
+:END:
+#+title:      Income Distribution
+#+date:       [2025-02-02 dom 11:38]
+
+#+identifier: 20250202T113822
+#+filetags:   :placeholder:
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

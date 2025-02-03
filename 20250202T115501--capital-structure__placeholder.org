@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       b58d5295-89dc-4dc3-b846-09c85962d6a8
+:END:
+#+title:      Capital Structure
+#+date:       [2025-02-02 dom 11:55]
+#+filetags:   :placeholder:
+#+identifier: 20250202T115501
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

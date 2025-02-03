@@ -1,0 +1,67 @@
+#+title:      Endogenous Technology Adoption and R&amp;D as Sources of Business Cycle Persistence
+#+date:       [2024-09-06 sex 16:15]
+#+filetags:   :bib:dsge:newkeynesian:technologicalchange:
+#+identifier: 20240906T161550
+#+reference:  anzoategui_2019_endogenous
+
+
+* FISH-5SS
+
+** 5SS
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+#+END_ABSTRACT
+
+
+
+** Background and motivation
+
+- *Theoretical Background:*
+-
+
+
+** Supporting Ideas and hypothesis
+
+
+*** Supporting Ideas
+
+
+*** Hypothesis
+
+
+** Purpose and contribution
+
+
+** Relevance
+
+- This is one of the few DSGE models that have [[denote:20240906T150431][Technological change]] together with deterministic growth
+  - As a consequence, this is a suitable for comparison with [[denote:20240906T150620][Agent Based Models]], in special with those with [[denote:20240708T155455][Schumpeterian growth models]] flavor
+
+
+** Methodology
+
+
+- *Sample:*
+- *Model:*
+- *Variables:*
+- *Shocks:*
+- *Validation:* The model is validated by contrasting the estimated results with some empirical regressions.
+  In addtion, the authors also perform some *historical decompostions* of the identified shocks
+  - Productivity growth of R&D expenditures (measured in terms of patents/researchers)
+  - Intensity of adoption of new technologies  (measured in terms of investment in new licenses)
+
+** Results
+
+General results:
+-
+
+Specific results:
+-
+
+** Interesting findings and not categorized stuff
+
+
+** Critics

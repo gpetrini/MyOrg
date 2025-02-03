@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       ea87d10c-b233-440a-a314-c0388969c422
+:END:
+#+title:      Replicator Dynamic
+#+date:       [2025-02-02 dom 12:00]
+#+filetags:   :placeholder:
+#+identifier: 20250202T120057
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

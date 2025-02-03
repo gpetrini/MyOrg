@@ -1,0 +1,128 @@
+#+title:      Institutional Change and Economic Development
+#+date:       [2025-02-03 seg 16:04]
+#+filetags:   :bib:institutions:theoretical:
+#+identifier: 20250203T160416
+#+reference:  chang_2007_Institutional
+
+* Backlinks
+
+[[denote:20230216T235159][QCA Theoretical Economics Foundations]]
+
+* FISH-5SS
+
+/Note:/ This chapter is similar to [cite:@chang_2011_Institutions] (see [[denote:20210223T000002][chang_2011_Institutions: Institutions and economic development: theory, policy and history (2011, Journal of Institutional Economics)]]).
+So, this document will report only its differences.
+
+|---------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <40>                                        | <50>                                                                                                                                                                                                                                          |
+| *Background*                                  | The discussion in this chapter is centered in development issues. Thus, the topics discussed here may no be directly applied to other cases. The institution function vs form, for instance, was regarding _function to generates development_. |
+| *Supporting Ideas*                            |                                                                                                                                                                                                                                               |
+| *Purpose*                                     |                                                                                                                                                                                                                                               |
+| *Originality/value (Contribution)*            | More focus on property rights discussion and its limitations.                                                                                                                                                                                 |
+| *Relevance*                                   | Presents a distinction (but no defining) institutional forms and institutional functions.                                                                                                                                                     |
+| *Design/methodology/approach*                 | Review of theoretical and empirical literature.                                                                                                                                                                                               |
+| *Results*                                     | Same function can be done by different forms; different forms may imply some function (even overlaping). The latter-commers hypothesis: late-developed countries can "import" better institutions from toher countries.                        |
+| *(Interesting) Findings*                      |                                                                                                                                                                                                                                               |
+| *Research limitations/implications (Critics)* |                                                                                                                                                                                                                                               |
+| *Uncategorized stuff*                         |                                                                                                                                                                                                                                               |
+| *5SS*                                         |                                                                                                                                                                                                                                               |
+|---------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+* Specifics comments
+ :PROPERTIES:
+ :AUTHOR: H. Chang
+ :JOURNAL:
+ :YEAR: 2007
+ :DOI:
+ :URL:
+ :END:
+
+
+* Extracted Annotations (23/02/2021 17:31:13)
+:PROPERTIES:
+ :NOTER_DOCUMENT: /home/gpetrini/Zotero/storage/XDTBVILH/Chang - 2007 - Institutional change and economic development.pdf
+:NOTER_PAGE: 41
+ :END:
+"One fundamental difficulty involved in the study of the relationship between institutions and economic development is that there is no widely accepted definition of institutions.2" (Chang 2007:40)
+
+No wider definition of institutions. (note on p.40)
+
+"The problem is that there are many different ways and different levels of abstraction in which the conceptual 'pie' may be cut." (Chang 2007:41)
+
+There are many levels of abstraction. (note on p.41)
+
+"Moreover, even if we can agree on the list of functions that are essential for economic development, this does not mean that we can agree on the exact kinds and forms of institutions that we need in order to fulfil those functions." (Chang 2007:41)
+
+Same functions may be executed by different institutional *forms*.
+
+It is worth noting that Chang's discussion is concerned with economic development. (note on p.41)
+
+"First, one institution could be serving more than one function." (Chang 2007:41)
+
+One institutions, more than one function. (note on p.41)
+
+"Second, there are many institutions that serve the same function, although they would all serve other functions as well, which may or may not overlap." (Chang 2007:41)
+
+Same function can be done by different institutions.
+
+There could have some overlaps. (note on p.41)
+
+"Third, the same function could be served by different institutions in different societies (or in the same society at different times)." (Chang 2007:42)
+
+Same function in different societies. (note on p.42)
+
+"Another big problem that dogs the current orthodox literature on institutions and development is its inability to clearly distinguish between the forms and the functions of institutions." (Chang 2007:42)
+
+Another difficult is to distinguish form and function of institutions. (note on p.42)
+
+"To put it another way, institutional forms may not matter that much, as the same function can be performed by different institutional forms, as I pointed out in the previous section." (Chang 2007:43)
+
+Same form can be performed by differente forms, so forms my not matter that much. (note on p.43)
+
+"Having made this caveat, it should be emphasized that currently the orthodox literature errs on the other side - that is, there is simply too much fixation with particular forms" (Chang 2007:43)
+
+Orthodox literature overfocus some particular forms. (note on p.43)
+
+"The proponents of the GSI argument believe that there are particular (mostly Anglo-American) forms of institutions that all countries have to adopt if they are to survive in the ever-globalizing world: political democracy; an independent judiciary; a professional bureaucracy, ideally with open and flexible recruitments; a small public-enterprise sector, supervised by a politically independent regulator; a developed stock market with rules that facilitate hostile M&A (mergers and acquisitions); a regime of financial regulation that encourages prudence and stability, through things like the politically-independent central bank and the BIS (Bank for International Settlements) capital adequacy ratio; a shareholder-oriented corporate governance system; labour market institutions that guarantee flexibility." (Chang 2007:43)
+
+Summary of GSI one-size-fits-all proposal. (note on p.43)
+
+"In the orthodox literature on institutions and development, property rights are accorded the most important role. It is because many of the developing and the transition economies lack a clearly-defined and secure private property rights system, it is argued, that the 'good' policies based on 'correct' theories recommended by orthodox economist have failed to work." (Chang 2007:44)
+
+The "property rights reductionism" (term defined by Rodrik 2004) (note on p.44)
+
+"Given the impossibility of aggregating all elements of a property rights system into a single measurable indicator, empirical studies tend to rely on subjective measures of the overall 'quality' of the property rights system." (Chang 2007:45)
+
+Measurement dificulty and survey-based bias. (note on p.45)
+
+"The orthodox discourse on property rights does not recognize all possible forms of property rights. It essentially recognizes only three types of property rights - open access, pure private ownership, and state ownership - while ignoring other important forms of property rights." (Chang 2007:45)
+
+Orthodox ignore other form of property rights.
+
+The author call it the "coverage problem" (note on p.45)
+
+"The orthodox literature on property rights is based on a rather simplistic and biased theory of property rights that glorifies private property rights. In this discourse, it is believed that all effective incentives have to be private and predominantly materialistic and therefore that no form of property rights other than private property rights can provide adequate incentive for good performance." (Chang 2007:46)
+
+Superiority of *private* property rights. (note on p.46)
+
+"The fact that some protection of property rights is good does not mean that more of it is always better. While it is probably true that a very weak protection of property rights is bad, too strong a protection may not be good either, as it can protect obsolete technologies and outmoded organizational forms. If that is the case, there may be an inverse-U-shaped relationship, where too weak a protection is not good but neither is too strong one. Or alternatively it may be that, as far as it is above a minimum threshold, the strength of property-rights protection may not matter too much. Whatever the exact relationship is, the relationship between the strength of propertyrights protection and economic development is not likely to be linear, contrary to what is assumed in orthodox theories." (Chang 2007:47)
+
+Non linear relation between strenght of property-rights protection and economic development. (note on p.47)
+
+"In the mainstream theories, once institutions are in place, they are seen as perpetuating certain patterns of human interaction. And as institutions are seen as being determined by immutable (or at least very-difficult-to-change) things like climate, resource endowment, and cultural tradition, these patterns become almost impossible to change, which introduces a 'fatalist' bias in the argument." (Chang 2007:48)
+
+The fatalist view. (note on p.48)
+
+"Now, at one level, persistence is what we should expect from institutions. Institutions are meant to be stable - otherwise they will have no use. And therefore some degree of self-reinforcing mechanism is inevitable when we look at the relationship between institutions and the economy. However, this view has a number of serious problems." (Chang 2007:48)
+
+Institution are stable by design. (note on p.48)
+
+"If we take institutions as 'technologies for social management', then there is a strong case for using the Gerschenkronian 'catching-up' framework in understanding institutional development in the developing countries. In other words, the late-developing countries can import institutions from the developed countries and thereby use 'better' institutions without paying for the same 'prices'." (Chang 2007:51)
+
+The "late-commers" hypothesis. (note on p.51)
+
+"Of course, institutional imitation is rarely enough, in the same way technological imitation is rarely enough, to guarantee a successful institutional development. More importantly, in the same way in which there are a lot of tacit elements in technology, there are a lot of tacit elements in institutions. So some formal institution that seems to be working well in an advanced country may be working well only because it is supported by a certain set of not-easily-observable informal institutions." (Chang 2007:52)
+
+This institutional imitation may not be enough.
+There may have some unobservable informal institutions that are not easy to implement.
+In summary, immitation + adaptation. (note on p.52)

@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       ba9792be-60c0-4e5f-a936-7d9c008c8e8c
+:END:
+#+title:      Hysteresis
+#+date:       [2025-02-02 dom 11:39]
+#+filetags:   :placeholder:
+#+identifier: 20250202T113930
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

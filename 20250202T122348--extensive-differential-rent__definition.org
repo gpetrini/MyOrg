@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       1577e614-b964-4b78-a601-f1062b373948
+:mtime:    20211202152738 20211111163341
+:ctime:    20211111163341
+:END:
+#+title:      Extensive Differential Rent
+#+date:       [2025-02-02 dom 12:23]
+#+filetags:   :definition:
+#+identifier: 20250202T122348
+#+OPTIONS: num:nil ^:{} toc:nil

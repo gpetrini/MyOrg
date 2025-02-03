@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       048efa50-0642-4bf9-adf1-7974b1624492
+:mtime:    20211202152738 20211111155942
+:ctime:    20211111155942
+:END:
+#+title:      classical_competition
+#+date:       [2025-02-02 dom 12:16]
+#+filetags:   :definition:placeholder:
+#+identifier: 20250202T121619
+#+OPTIONS: num:nil ^:{} toc:nil

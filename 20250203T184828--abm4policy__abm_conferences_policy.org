@@ -1,0 +1,47 @@
+#+title:      ABM4Policy
+#+date:       [2025-02-03 seg 18:48]
+#+filetags:   :abm:conferences:policy:
+#+identifier: 20250203T184828
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+options: num:nil ^:{} toc:nil
+
+* Introduction
+
+This node includes references for the ABM4Policy workshop focussed on [[id:80ba394b-777d-4faa-b848-715fb1977a76][Calibration]] techniques for [[id:9789613e-f409-4593-b958-a2c9c8283bb6][Agent Based Models]] in a [[id:2ebeee6d-b9bb-4bf7-b9e4-c9177af1db0f][Policy Oriented]] approach.
+
+* Monetary Toolkit
+
+** Poledna: Understanding Post-Pandemic Inflation Dynamics with a Behavioral Macroeconomic Model of the Canadian Economy
+
+
+Traditional models failed to predict the surge of [[id:7bf9c01a-c5aa-4984-a9a0-12dfa1e3e9c7][Inflation]]:
+- Supply-side is rudimentary
+- Inflation [[id:9326692f-7fa9-439b-8f3c-a7fa2d18aef8][Expectations]] are rational and anchored
+- Firms' price decisions are state- and time-invariant variable
+
+For Poledna, [[id:9789613e-f409-4593-b958-a2c9c8283bb6][Agent Based Models]] rely on different microfundations compared to traditional [[id:a07ba1bd-a5f0-4ce3-b3b6-e1899a4ceecb][DSGE]].
+
+This model is based on the [[id:88dc308c-ddfb-4216-9587-0085cd197621][CATS ABM family]], which is calibrated to match real data.
+Also aimed to depart from the [[id:a3dc72f3-bb99-4601-b58e-cc12229748f8][Rational Expectations]] framework in which there is a endogenous [[id:dd9fa53f-4487-4429-88d3-35fd290f14d2][Heuristic switching model]]-like model (also with [[id:cdc7d683-cbb8-4611-805c-0e058411c9e2][Learning and Heuristics]]).
+As a result, inflation can get de-anchored.
+
+In the conclusions, firms set prices based on simple heuristic rules: (i) cost push trend (wages, financing costs, other inputs), (ii) demand-pull (competitive markup), and (iii) expectations ([[id:7bf9c01a-c5aa-4984-a9a0-12dfa1e3e9c7][Inflation]] and growth).
+The inflation surges changed over time.
+In the begining, it was more cost-push and more demand-pulled after the recovering of the economy.
+Goods inflation helps to bring inflation back to the target.
+
+Q: What is happening in the ABM version that it is not present in the vintage model?
+A: Fiscal policy shock and behavioral change
+
+** Knicker: Post-COVID Inflation & the Monetary Policy Dilemma: An Agent-Based Scenario Analysis
+
+
+
+** Botta: Same old song: On the macroeconomic and distributional effects of leaving a Low Interest Rate Environment
+
+* Future of Finance
+
+
+** Gross - To Demand or Not to Demand: On Quantifying the Future Appetite for CBDC
+
+*Note:* CBDC means [[id:f6fc9768-c42c-44bc-a384-3f4cbe600dc6][Central Bank Digital Currency]]

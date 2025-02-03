@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       fa6ee1f5-e582-45cf-a38d-549025641933
+:END:
+#+title:      Randomized Control Trials
+#+date:       [2025-02-02 dom 12:01]
+#+filetags:   :placeholder:
+#+identifier: 20250202T120130
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

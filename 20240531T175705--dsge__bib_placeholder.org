@@ -1,0 +1,423 @@
+:PROPERTIES:
+:ID:       a07ba1bd-a5f0-4ce3-b3b6-e1899a4ceecb
+:END:
+#+title:      dsge
+#+date:       [2024-05-31 sex 17:57]
+#+filetags:   :bib:placeholder:
+#+identifier: 20240531T175705
+#+options: num:nil ^:{} toc:nil
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+
+* [[id:434076e6-3bce-497b-ade1-7f8e3fde763e][Canonical Models]]
+
+This entry departs especially from [cite/t:@gali_2015_monetary] and add some comments from [cite/t:@costajunior_2018_understanding].
+The note focus on the general assumptions and results of this class of models.
+Proofs and the formulas of them are set aside.
+
+** Classical Monetary Model [cite:@gali_2015_monetary chapter 02; @costajunior_2018_understanding chapter 02 ]
+
+*** Overview
+
+Assumption:
+
+- Closed economy
+- There is no [[id:50f6fa96-b624-453e-a20a-6a9fef8dff15][Adjustment Costs]]
+- No populational growth
+- Perfect competition
+  - Competitive supply and demand schedules can be derived
+  - Flexible prices in *all* markets
+    - No [[id:3a5819f8-f58c-4776-9adb-4932513c55c5][Nominal rigidities]]
+- There is only consumption goods, so no investment
+- Agents decisions accordingly to the [[id:e591bceb-1711-4795-9bbb-6f0d03ca5042][Intertemporal Maximization]] routine and have [[id:a3dc72f3-bb99-4601-b58e-cc12229748f8][Rational Expectations]]
+  - The intertemporal discount factor controls how agents prioritize a higher utility in the presence at the cost of a lower in the future
+- There is also discount bonds (\(B\)) and dividends \(D\), which dominates money (latter)
+- The solvency condition is imposed, so households cannot assume a Ponzi position
+- Household utility function is *seperable* and might face a preference shock
+- Households does not save
+  - \(C = Y\)
+- Wages are opportunity costs of leisure
+- Cobb-Douglas technology function
+- Inputs are *physically* equal
+
+
+*Note:* This class of model has some similarities with the [[id:f9a3f48f-2f77-4698-b626-ad6fdaa8f584][RBC]] models.
+
+*** Results
+
+- Equilibrium level for real variables (employment, output, real interest rate) are obtained independently from the [[id:7527ce86-4417-40d0-b238-b8f21faff261][Monetary Policy]]
+  - In other words, money is neutral in the *short-run*
+- Real variables fluctuates in response to technological shocks
+  - Specificly, whenever productivity increase, output and real wages increases
+  - The effect of productivity shocks on labor in ambiguos and depends on the strength of the [[id:9e67219a-7ba9-4a3b-bff6-2dd625d5f607][Income Effect]] (\(\sigma\)). \(\sigma < 1\): Increase in employment (substitution effect dominates)
+- Real variables are not affected by *preference* shocks
+  - Inflation and nominal interest rate are affected negatively
+  - Real interest rate (which is not a physical variabal) is also affected
+- The equilibrium value for the *nominal* values cannot be determined independently from the [[id:7527ce86-4417-40d0-b238-b8f21faff261][Monetary Policy]]
+- A [[id:7527ce86-4417-40d0-b238-b8f21faff261][Monetary Policy]] shock, for instance, only affects [[id:7bf9c01a-c5aa-4984-a9a0-12dfa1e3e9c7][General price inflation]] and the *nominal* interest rate
+  - Memo: the demand for money equation is specified only to close the model
+
+
+#+CAPTION: Shocks under the nominal interest rate rule (*short-run*)
+|----------------------+-------+-----------+-----------+-------+-----------+---------+-------+-----------+-------+-------|
+|----------------------+-------+-----------+-----------+-------+-----------+---------+-------+-----------+-------+-------|
+|                Shock | \(y\) | \(y^{n}\) | \(y^{g}\) | \(n\) | \(w - p\) | \(\pi\) | \(r\) | \(r^{n}\) | \(i\) | \(p\) |
+|                  <r> |  <c>  |    <c>    |    <c>    |  <c>  |    <c>    |   <c>   |  <c>  |    <c>    |  <c>  |  <c>  |
+|----------------------+-------+-----------+-----------+-------+-----------+---------+-------+-----------+-------+-------|
+| Monetary contraction |   0   |    ND     |    ND     |   0   |     0     |    -    |   +   |    ND     |   -   |  ND   |
+|       Discont factor |   0   |    ND     |    ND     |   0   |     0     |    +    |   +   |    ND     |   +   |  ND   |
+|        Technological |   +   |    ND     |    ND     |   -   |     +     |    -    |   -   |    ND     |   -   |  ND   |
+|----------------------+-------+-----------+-----------+-------+-----------+---------+-------+-----------+-------+-------|
+|----------------------+-------+-----------+-----------+-------+-----------+---------+-------+-----------+-------+-------|
+
+
+#+CAPTION: Shocks under the nominal interest rate rule (*long-run*)
+|----------------------+-------+-----------+-----------+-------+-----------+---------+-------+-----------+-------+-------|
+|----------------------+-------+-----------+-----------+-------+-----------+---------+-------+-----------+-------+-------|
+|                Shock | \(y\) | \(y^{n}\) | \(y^{g}\) | \(n\) | \(w - p\) | \(\pi\) | \(r\) | \(r^{n}\) | \(i\) | \(p\) |
+|                  <r> |  <c>  |    <c>    |    <c>    |  <c>  |    <c>    |   <c>   |  <c>  |    <c>    |  <c>  |  <c>  |
+|----------------------+-------+-----------+-----------+-------+-----------+---------+-------+-----------+-------+-------|
+| Monetary contraction |   0   |    ND     |    ND     |   0   |     0     |    -    |   +   |    ND     |   -   |  ND   |
+|       Discont factor |   0   |    ND     |    ND     |   0   |     0     |    0    |   0   |    ND     |   0   |  ND   |
+|        Technological |   +   |    ND     |    ND     |   -   |     +     |    -    |   -   |    ND     |   -   |  ND   |
+|----------------------+-------+-----------+-----------+-------+-----------+---------+-------+-----------+-------+-------|
+|----------------------+-------+-----------+-----------+-------+-----------+---------+-------+-----------+-------+-------|
+
+*** Special case: money in the utility function
+
+Usually, money one enters into the models as a unit of account.
+In most cases, [[id:a07ba1bd-a5f0-4ce3-b3b6-e1899a4ceecb][DSGE]] models describes cashless economies.
+Including money into the utility function is one way to introduce other properties of money.
+Generaly, money provides a transaction service, which depends on its purchasing power.
+For these specific reason, money enters into the utility function as real balances.
+
+Two main modifications are required in order to close the model.
+The first is on the utility function itself.
+The second is on the budget constraint.
+After this modifications, the problem of optimization faced by the households must be revisited.
+
+In this version of models, the nominal interest rate is the implicit price of transactional services provided by monetary balances.
+This can be interpreted as an opportunity costs of not holding bonds.
+
+The results of the model will depend if the utility function is separable in real balances.
+If it is, the equilibrium of real variables remains the same without any reference to the [[id:7527ce86-4417-40d0-b238-b8f21faff261][Monetary Policy]].
+In this case, the demand for money --- obtained from the optimization of the household problem --- can be seen as the supply of money that the central bank must provide in order to support the nominal interest rate in equilibrium.
+As before, monetary balances only affects the equilibrium of nominal variables and inflation.
+
+On the other hand, if the utility function is *not* separable in real balances, a few conclusions change.
+Specifically, both *labor supply* and the *Euler equation* (consumption) depends now on real balances.
+As a consequence, [[id:7527ce86-4417-40d0-b238-b8f21faff261][Monetary Policy]] is not longer neutral.
+Since it affects the labor supply, both employment and output depends on real balances.
+
+It is worth noting that part of the literature argue that the cashless money hypothesis is reasonable.
+For example, if the share of transaction services is small in comparisson to the whole economy, this can be neglectable.
+Other route of introducing money is by assuming the existance of [[id:154f5424-c0b8-4b05-adf6-59c799074190][Shopping Time]], assuming that a higher level of real balances reduces the time required to purchase goods.
+
+*Note:* depending on the values of some parameters, it is possible to obtain the same results as in the cashless economy case.
+
+
+
+** Basic New Keynesian model [cite:@gali_2015_monetary chapter 03; @costajunior_2018_understanding chapter 03 ]
+
+
+
+*** Overview and relevant equations
+
+In addition to the previous one, the additional assumptions are:
+- Imperfect competition in the goods market
+  - Firms produces differentiated goods
+    - This share some similarities with the monopolistic competition model
+  - This is represented by a continuum of goods
+- There is price stickness ([[id:69ab5bc8-170f-47fc-96fc-1df4b75a3f4a][Rigidity and Frictions]])
+  - In this case, a [[id:44ed2438-0893-424a-8eb2-2745fa7ce85a][Calvo pricing setting]] in which only a share of firms revise their prices at each time step
+    - If \(1 - \theta\) firms adjust their prices, \(\theta\) becomes an index of price stickness
+      - So \(\theta = 0\) implies no price rigidity, generating the same optimal mark-up (\mathcal{M}) in the monopolistic competition with flexible prices
+        - This is also called the desired (natural, frictionless) markup and it is assumed to be constante
+    - The current (log) price level is: \(p = \theta p_{t-1} + (1 - \theta) p^{\star}\)
+      - Variations in price level occurs because there are firms adjusting their prices above the aggregate average
+- Since there are differentiated goods, households need to decide on how to allocate their consumption:
+  - \(C_{i} \equiv \int_{0}^{1} C_{t}(i)^{1 - \frac{1}{\epsilon}} di\)^{\frac{\epsilon}{\epsilon - 1}}
+    - The general price index is obtained by applying a similar procedure
+    - The solution is: \(C_{t}(i) = \left(\frac{P_{t}(i)}{P}\right)^{-\epsilon} C_{t}\)
+      - \(\epsilon\) is the elasticity of substituion of different goods
+  - After computing the aggregate consumption, the financial constraint of the households is the same as before
+- All firms use the *same* technology
+  - So, when they revise their prices, all firms set the same price
+    - They face the same problem
+  - They also face the same isoelastic demand schedule
+- Firms always meet the demand for its good at the current price, requiring:
+  - Average price markup is sufficiently large
+  - Shifts in demand are not too large
+  - This is valid for all \(i\) firms and for all \(t\)
+- This class of models also rely on the ideia of [[id:8ca349f1-6a43-4ca1-ab5c-4adaa05cd415][Market Failures]]
+
+Denoting expected values as \(X^{e}_{t+1} = E(X_{t+1})\), and under the [[id:a3dc72f3-bb99-4601-b58e-cc12229748f8][Rational Expectations]] hypothesis, we can present the major system of equations for the NK model.
+
+New Keynesian [[id:05891dd4-6983-40a0-a0a9-5fccddf93009][Phillips curve]]:
+
+\[\pi = \beta \pi^{e}_{t+1} + \kappa \cdot y^{g}\]
+in which \(y^{g}\) is the output gap defined as \(y - y^{n}\).
+
+The *dynamic IS* (DIS) curve describes the evolution of output gap:
+
+\[y^{g} = -\frac{1}{\sigma}(i - \pi^{e}_{t+1} - r^{n}) + y^{g, e}_{t+1}\]
+in which \(r^{n}\) is the [[id:f58b904c-2230-440f-acbe-33bdebeca003][Natural interest rate]], which is the one that would prevail in case of flexible prices.
+In this equation, \(i - \pi^{e}_{t+1}\) is the expected real rate of interest (\(r^{e}_{t+1}\)).
+
+Assuming that both the technological and preference shocks follow a AR(1) process which the intensity (autocorrelation) described by \(\rho_{a}, \rho_{z}\):
+
+\[r^{n} = \pho - \sigma(1 - \rho_{a})\psi_{ya} a_{t} + (1 - \rho_{z})z\]
+
+
+With some algebric manipulations, it is possible to express the output gap in terms of deviation of the expected real interest rate with the natural interest rate:
+
+\[y^{g} = -\frac{1}{\sigma}\sum_{k = 0}^{\infty}(r^{e}_{t+k} - r^{n, e}_{t+k})\]
+
+Combining these first three equations, we get the *non-policy* block of equations for the NK model.
+In order to close the model, it is necessary to impose an equation for the nominal interest rate.
+
+One to impose this type of monetary rule is to follow a [[id:576b10f4-300a-40b3-9764-3f1ae79c4054][Taylor Rule]]-fashion equation:
+
+\[i = \pho + \psi_{\pi}\pi + \psi_{y^{g}}\y^{g} + \nu\]
+in which \(\nu\) is the exogenous monetary policy shock, assumed to follow an AR(1) process.
+
+
+*** Results
+
+**** General conclusions
+
+- An exogenous shock will impact output only if:
+  - Shifts preferences
+  - Leads to a deviation of the real interest rate (\(r\)) from the discount rate (\(\rho\))
+- The inflation varies negativelly with the \(\theta\) because it increase the composite parameter \(\lambda\) which measures the *negative* impact of the deviation of the current markup from the desired one (\(\hat \mu\))
+  - By solving the inflation equation forwardly, inflation will be positive when firms *expect* their average markup to be bellow the desired level: \(\pi = -\lambda \sum_{k=0}^{\infty}\beta^{k} E_{t}\left(\hat \mu_{t+k}\right)\)
+
+The following tables present the effects of each experiment.
+Unconclusive results and indicated with =?= and are followed by the results accordingly to the baseline calibration.
+
+#+CAPTION: Shocks under the nominal interest rate rule (*short-run*)
+|----------------------+-------+-----------+-----------+-------+-----------+---------+-------+-----------+-------+-------|
+|----------------------+-------+-----------+-----------+-------+-----------+---------+-------+-----------+-------+-------|
+|                Shock | \(y\) | \(y^{n}\) | \(y^{g}\) | \(n\) | \(w - p\) | \(\pi\) | \(r\) | \(r^{n}\) | \(i\) | \(p\) |
+|                  <r> |  <c>  |    <c>    |    <c>    |  <c>  |    <c>    |   <c>   |  <c>  |    <c>    |  <c>  |  <c>  |
+|----------------------+-------+-----------+-----------+-------+-----------+---------+-------+-----------+-------+-------|
+| Monetary contraction |   -   |     0     |     -     |   -   |     -     |    -    |   +   |     0     | ? (+) |   -   |
+|        Discount rate |   -   |     0     |     -     |   -   |     -     |    -    |   -   |     -     | ? (-) |   -   |
+|        Technological |   +   |     +     |     -     | ? (-) |     -     |    -    |   -   |     -     |   -   |   -   |
+|----------------------+-------+-----------+-----------+-------+-----------+---------+-------+-----------+-------+-------|
+|----------------------+-------+-----------+-----------+-------+-----------+---------+-------+-----------+-------+-------|
+
+
+#+CAPTION: Shocks under the nominal interest rate rule (*long-run*)
+|----------------------+-------+-----------+-----------+-------+-----------+---------+-------+-----------+-------+-------|
+|----------------------+-------+-----------+-----------+-------+-----------+---------+-------+-----------+-------+-------|
+|                Shock | \(y\) | \(y^{n}\) | \(y^{g}\) | \(n\) | \(w - p\) | \(\pi\) | \(r\) | \(r^{n}\) | \(i\) | \(p\) |
+|                  <r> |  <c>  |    <c>    |    <c>    |  <c>  |    <c>    |   <c>   |  <c>  |    <c>    |  <c>  |  <c>  |
+|----------------------+-------+-----------+-----------+-------+-----------+---------+-------+-----------+-------+-------|
+| Monetary contraction |   0   |     0     |     0     |   0   |     0     |    0    |   0   |     0     |   0   |   -   |
+|        Discount rate |   0   |     0     |     0     |   0   |     0     |    0    |   0   |     0     |   0   |   -   |
+|        Technological |   +   |     +     |     -     |   -   |     0     |    -    |   -   |     -     |   -   |   -   |
+|----------------------+-------+-----------+-----------+-------+-----------+---------+-------+-----------+-------+-------|
+|----------------------+-------+-----------+-----------+-------+-----------+---------+-------+-----------+-------+-------|
+
+**** Monetary contraction shock
+
+Considering a contrationary monetary policy shock under the interest rate monetary rule (no other shocks).
+Just to recap, neither [[id:f58b904c-2230-440f-acbe-33bdebeca003][Natural interest rate]] nor natural level of output depends on the monetary policy shock.
+
+- Real variables:
+  - Output declines
+    - Employment declines
+      - Depends positively on output
+    - Real wage declines
+      - Also as a result of employment decline
+    - Real interest rate *unambiguously* increase
+- Nominal variables
+  - Inflation declines
+  - Nominal interest rate
+    - Combines the direct effect of the shock and the induced reduction on output and inflation
+      - Results depends on the persistence of the shock (\(\rho_{\nu}\))
+        - If the persistent is high, it will *decline* due to the reduction of \(y\) and \(\pi\)
+          - Even by reducing the interest rate, the overall effect on output is still negative because it depends on the *real interest rate*, which *increases unambiguously*
+  - Natural rate of interest does not change
+
+
+**** Discount rate shock
+
+
+Considering a *reduction* in which the households attributes to *current* utility under the interest rate monetary rule (no other shocks).
+Same as before, the natural level of output does *not* depend on the preference shock.
+
+
+- Real variables:
+  - Reduction in consumption, so in output
+    - Reducing the output gap since the natural level of output is unchanged
+  - Reduction of employment
+  - Reduction of real wage
+  - Reduction of real interest rate
+- Nominal variables:
+  - Reduction in the natural rate of interest
+  - Reduction of inflation
+  - Reduction in the nominal interest rate
+    - Explaining the reduction in the real interest rate
+    - Because of reduction in both output and inflation
+
+**** Technological shock
+
+Considering a technological *improvement* under the interest rate monetary rule (no other shocks).
+
+- Real variables:
+  - Unambiguously reduces output gap
+  - Unambiguously increases output
+    - But less than it changes natural output
+      - Explaining the reduction in the output gap
+  - Ambiguous effects on employment
+  - Real interest rate declines
+    - Due the reduction of the nominal interest rate
+    - However, not equally to the natural rate
+- Nominal variables:
+  - Unambiguously reduces inflation
+  - Reduction in the nominal interest rate
+    - Because of reduction of inflation
+
+
+
+*** Comparisson with the Classical Monetary Model (CMM)
+
+The mechanisms that explain the fluctuation in both inflation and price level has little similarity with the Classical Monetary Model.
+In the basic NK model, inflation results from firms adjusting their prices, while in the CMM the pricel level is *independent* from nominal variables given the monetary policy in place.
+
+The natural level of output in the NK is lower on average than the one of MCC.
+This is a result of firms' market power.
+The response of the natural output to technological changes is the same.
+Similarly, the natural level of output is *independent* from the monetary policy and invatiant to preferences shocks.
+
+Differently from CMM, the presence of price stickness (\(\theta > 0\)) implies that the *equilibrium path* cannot be defined *independetly* of monetary policy.
+As a consequence, monetary policy is non-neutral in the short-run.
+
+
+
+** Basic New Keynesian model with wage stickness [cite:@gali_2015_monetary chapter 06; @costajunior_2018_understanding chapter 04 ]
+
+
+*** Overview and relevant equations
+
+Departing from the basic NK model:
+- Imperfect competition in the labor market
+  - This makes that the average real wage will not adjust in a 1:1 to the MRS
+- Households have monopoly power
+  - Allowing them setting their wage
+  - In this case, the natural wage markup is the one in the absence of wage frictioness
+- Households supply differetiated labor services
+  - Modeled similar to the monopolist competition in the firm sector
+    - Following a [[id:44ed2438-0893-424a-8eb2-2745fa7ce85a][Calvo pricing setting]]-flavor, a set of \(1 - \theta_{w}\) household set their wages
+      - \(w = \theta_{w} w_{-1} + (1 - \theta_{w}) w^{\star}\)
+  - A parameter (\(\epsilon_{w}\)) is introduced to reflect this elasticity of substitution among labor varieties
+- A key distinticion in the version is that househols now only decide regarding their allocation of consumption among different types of goods and interpemporally
+- The desired wage is a increasing function of future prices
+- A wage inflation function is obtained in a similar way of the [[id:05891dd4-6983-40a0-a0a9-5fccddf93009][Phillips curve]]
+
+This new [[id:05891dd4-6983-40a0-a0a9-5fccddf93009][Phillips curve]] is the following:
+
+\[\pi^{p} = \beta \pi^{p, e}_{t+1} - \lambda_{p}\hat \mu^{p}\]
+in which the superscript \(p\) is used to indicates if it refers to the price setting, while \(w\) will be use to denote the same for wage setting.
+
+Another inflation curve is also obtained for the wage-inflation:
+\[\pi^{w} = \beta \pi^{w, e}_{t+1} - \lambda_{w}\hat \mu^{w}\]
+
+
+The average markup (deviated from the SS) can be defined as:
+\[\hat \mu^{p} = - \frac{\alpha}{1 - \alpha} y^{g} - \omega^{g}\]
+
+After some algebric manipulations, it is possible to re-write the equation for price inflation as:
+\[\pi^{p} = \beta \pi^{p, e}_{t+1} + \aleph_{p} y^{g} + \lambda_{p}\omega^{g}\]
+in which \(\omega^{g}\) is the real wage gap, defined as the deviation of the real wage to the natural real wage.
+A similar approach is used for the wage inflation:
+
+\[\pi^{w} = \beta \pi^{w, e}_{t+1} + \aleph_{w} y^{g} - \lambda_{w}\omega^{g}\]
+
+The following *identity* is also used:
+
+\[\omega^{g} \equiv \omega_{-1} + \pi^{w} - \pi^{p} - \Delta \omega^{n}\]
+
+With the same dynamic IS curve as before, the non-policy block is finished.
+As in the previous model, a nominal interest rate is required to close the model.
+In general, there not a solution satisfying \(y^{g} = \pi^{p} = \pi^{w} = 0\).
+The author also discusses the issue of uniquiness and stability of the solution, which is not further included here.
+It is worth noting that the [[id:6921ab97-2697-44f1-a1a8-9881d5c0d64a][Taylor Principle]] helps with the stability.
+
+
+
+
+*** Results
+
+#+CAPTION: Shocks under the both wage and price rigidity (*short-run*), differences regarding the NK in bold
+|----------------------+-------+-----------+-----------+-------+-----------+---------+-------+-----------+-------+------------|
+|----------------------+-------+-----------+-----------+-------+-----------+---------+-------+-----------+-------+------------|
+|                Shock | \(y\) | \(y^{n}\) | \(y^{g}\) | \(n\) | \(w - p\) | \(\pi\) | \(r\) | \(r^{n}\) | \(i\) | \(pi^{w}\) |
+|                  <r> |  <c>  |    <c>    |    <c>    |  <c>  |    <c>    |   <c>   |  <c>  |    <c>    |  <c>  |    <c>     |
+|----------------------+-------+-----------+-----------+-------+-----------+---------+-------+-----------+-------+------------|
+| Monetary contraction |   -   |     0     |     -     |   -   |    *0*    |    -    |   +   |     0     |   +   |    *0*     |
+|        Discount rate |   -   |    *+*    |     -     |   -   |    *0*    |  *-/+*  |   -   |     -     |   -   |    *0*     |
+|        Technological |   +   |     +     |   *+/-*   | *+/-* |    *+*    |    -    |   -   |     -     |   -   | *-*        |
+|----------------------+-------+-----------+-----------+-------+-----------+---------+-------+-----------+-------+------------|
+|----------------------+-------+-----------+-----------+-------+-----------+---------+-------+-----------+-------+------------|
+
+
+#+CAPTION: Shocks under the both wage and price rigidity (*long-run*), differences regarding the NK in bold
+|----------------------+-------+-----------+-----------+-------+-----------+---------+-------+-----------+-------+------------|
+|----------------------+-------+-----------+-----------+-------+-----------+---------+-------+-----------+-------+------------|
+|                Shock | \(y\) | \(y^{n}\) | \(y^{g}\) | \(n\) | \(w - p\) | \(\pi\) | \(r\) | \(r^{n}\) | \(i\) | \(pi^{w}\) |
+|                  <r> |  <c>  |    <c>    |    <c>    |  <c>  |    <c>    |   <c>   |  <c>  |    <c>    |  <c>  |    <c>     |
+|----------------------+-------+-----------+-----------+-------+-----------+---------+-------+-----------+-------+------------|
+| Monetary contraction |   0   |     0     |     0     |   0   |     0     |    0    |   0   |     0     |   0   |    *0*     |
+|        Discount rate |   0   |     0     |     0     |   0   |     0     |    0    |   0   |     0     |   0   | *0*        |
+|        Technological |  *0*  |    *0*    |     -     |   -   |    *+*    |   *0*   |  *0*  |     -     |  *0*  | *-*        |
+|----------------------+-------+-----------+-----------+-------+-----------+---------+-------+-----------+-------+------------|
+|----------------------+-------+-----------+-----------+-------+-----------+---------+-------+-----------+-------+------------|
+
+*** Comparisson with the basic NK model
+
+As a general result, a stabilizing price inflation is no longer optimal.
+In comparisson, a negative monetary policy shock has a more mutted effect on wage inflation, explaining the lower real wage reaction, reducing the effect on price markups.
+Since the nominal interest rate is endogenous, and the inflation reaction is lower, the monetary policy reaction is moderate as well.
+As a consequence, this lower monetary policy response generates a persistent higher interest rate, affecting the output negativelly for longer.
+
+In the flexible wage scenario, the higher nominal interest rate generates a higher decrease in real wage, increasing the size of the effect on price inflation.
+As a consequence, monetary authority reacts more severely, reducing nominal interest rate and mutting the effect of output.
+
+* Implementation of DSGE models
+
+A few considerations regarding the dynare implementation of the models:
+
+- In dynare, the shock is a temporary change, not a permanent increase in a variable
+- Stock variables must be expressed considering the end-of-period notation
+- Eigenvalues are only meaningfull when the Steady-State is computed
+  - Conditions for stability in the neighborhood of the equilibrium
+    - As many eigenvalues greater than 1 as number of fowarding-looking variables in the system (necessary condition)
+- The QZ threshould check if the model admit a unique solution (CHECK)
+- The drop option only drops statistics for the computation of summary statistics
+  - In this sense, further filtering is required
+- To recover the level of the variables, simply: \(X = X_{SS}\cdot e^{\log(X / X_{SS})}\)
+  - The system in dynare is coded in terms of \(\log(X/X_{SS})\)
+    - This requires \(X_{SS} > 0\)
+- In order to reset a parameter, use set_param_value('label', value)
+  - Possibly in a for loop
+
+
+* Further considerations
+
+- Normally, technological (and other) shocks are modelled as an autoregressive process (first-order in general)
+- The natural level of output (\(y^{n}\)) is the level of output obtained in the absence of nominal rigidities
+  - A similar reasoning is applied to the natural rate of interest
+- Models are solved at the neighborhood of the *steady state*
+  - It is applied a log-linearization procedure
+- Differently from the neoclassical [[id:5c617815-6d12-49eb-8f98-2459bc7f1810][Endogenous Growth]] theory, [[id:f9a3f48f-2f77-4698-b626-ad6fdaa8f584][RBC]] models show that technological shock can also explain the [[id:380b31ad-cdd5-4367-af2c-9ee199a085e7][Business Cycles]], not only the long-run
+- Real interest rate is determined exclusivelly by the *real factors*
+- [[id:6921ab97-2697-44f1-a1a8-9881d5c0d64a][Taylor Principle]] recommends that the Central Bank adjusts the nominal interest rate more than proportionally than the change in [[id:7bf9c01a-c5aa-4984-a9a0-12dfa1e3e9c7][Inflation]]
+- The [[id:b83785c2-4df8-4f8e-98b2-9b0a4ba3a7c4][Euler Equation]] relates the marginal utility of consumption with relative prices of *intertemporal* consumption
+  - It can be used to show the intertemporal substitution effect
+- Althought dividends are mentioned in the book, it is unclear how they play a role
+- Some versions of the NK models specify an aggregation assumption to combine different goods into the aggregate consumption
+
+* Additional internal references
+

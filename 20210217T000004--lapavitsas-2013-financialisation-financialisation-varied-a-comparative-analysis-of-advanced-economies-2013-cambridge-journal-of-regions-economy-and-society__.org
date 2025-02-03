@@ -9,9 +9,10 @@ Time-stamp: 2021-02-17
 
 * Backlinks
 
-[[denote:20210210T190446][Varieties of Capitalisms]]
+[[denote:20230216T235157][Varieties of Capitalisms]]
 
-[[denote:20210210T092940][Household debt and Bank credit]]
+
+[[denote:20230216T235150][Household debt and Bank credit]]
 
 
 * FISH-5SS

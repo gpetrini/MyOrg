@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       3486cdab-14b2-4f06-8078-bd93823f2640
+:mtime:    20211202152739 20211108105042
+:ctime:    20211108105042
+:END:
+#+title:      Capital Requirement
+#+date:       [2025-02-02 dom 11:54]
+#+filetags:   :placeholder:
+#+identifier: 20250202T115430
+#+OPTIONS: num:nil ^:{} toc:nil

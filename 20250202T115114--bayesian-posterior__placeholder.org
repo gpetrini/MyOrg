@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       bccfb7d9-b18f-43ea-82aa-bd6444df8b69
+:END:
+#+title:      Bayesian Posterior
+#+date:       [2025-02-02 dom 11:51]
+#+filetags:   :placeholder:
+#+identifier: 20250202T115114
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

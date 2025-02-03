@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       b2250ff4-9bf2-419c-ab5b-51408c6f7ce8
+:mtime:    20211202152743 20211111160721
+:ctime:    20211111160721
+:END:
+#+title:      Land prices
+#+date:       [2025-02-02 dom 12:05]
+#+filetags:   :placeholder:
+#+identifier: 20250202T120545
+#+OPTIONS: num:nil ^:{} toc:nil

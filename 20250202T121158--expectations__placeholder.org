@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       9326692f-7fa9-439b-8f3c-a7fa2d18aef8
+:END:
+#+title:      Expectations
+#+date:       [2025-02-02 dom 12:11]
+#+filetags:   :placeholder:
+#+identifier: 20250202T121158
+#+OPTIONS: num:nil ^:{} toc:nil

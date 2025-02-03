@@ -1,0 +1,6 @@
+#+title:      Lucas' Island Model
+#+date:       [2025-02-03 seg 18:10]
+#+filetags:   :mainstream:
+#+identifier: 20250203T181036
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

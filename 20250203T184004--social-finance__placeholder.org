@@ -1,0 +1,14 @@
+#+title:      Social Finance
+#+date:       [2025-02-03 seg 18:40]
+#+filetags:   :placeholder:
+#+identifier: 20250203T184004
+
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+
+#+hugo_section: notes
+
+#+HUGO_TAGS: placeholder
+
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

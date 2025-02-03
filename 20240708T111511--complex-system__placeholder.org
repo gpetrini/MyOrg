@@ -1,0 +1,5 @@
+#+title:      Complex system
+#+date:       [2024-07-08 seg 11:15]
+#+filetags:   :placeholder:
+#+identifier: 20240708T111511
+

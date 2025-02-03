@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       b83785c2-4df8-4f8e-98b2-9b0a4ba3a7c4
+:END:
+#+title:      Euler Equation
+#+date:       [2024-05-29 qua 11:37]
+#+filetags:   :definition:
+#+identifier: 20240529T113728
+
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil

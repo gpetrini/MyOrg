@@ -1,0 +1,10 @@
+#+title:      Financial Cycles
+#+date:       [2025-02-03 seg 17:32]
+#+filetags:   :definition:placeholder:
+#+identifier: 20250203T173222
+#+OPTIONS: num:nil ^:{} toc:nil
+
+* Measurement and detection
+
+Usually, financial cycles are measured using Credit-to-GDP gap.
+By definition, it is the difference from actual Credit-to-GDP and its trend.

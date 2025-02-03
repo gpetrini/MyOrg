@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       38ef3b8c-65b7-4dab-aca1-6f94db9f4287
+:END:
+#+title:      cognitive_restriction
+#+date:       [2025-02-02 dom 12:16]
+#+filetags:   :placeholder:
+#+identifier: 20250202T121632
+#+OPTIONS: num:nil ^:{} toc:nil

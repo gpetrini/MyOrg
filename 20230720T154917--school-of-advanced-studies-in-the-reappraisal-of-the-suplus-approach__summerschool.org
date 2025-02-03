@@ -1,0 +1,835 @@
+:PROPERTIES:
+:ID:       b99f5b7c-1efd-4ca9-b229-89b02e18287c
+:END:
+#+options: num:nil ^:{} toc:nil
+#+title:      School of Advanced Studies in the Reappraisal of the Suplus Approach
+#+subtitle: Centro Sraffa Summer School
+#+filetags:   :summerschool:
+#+date:       [2023-07-20 qui 15:49]
+#+identifier: 20230720T154917
+#+bibliography: ~/Org/zotero_refs.bib
+
+* Ciccone: The classical theoretical framework: the concept of surplus
+
+It is the part of social product in which society can freely use without jeopardizing the repetition of the social productive process at the same scale.
+Thus, share of the product wich is not *necessary* in the above sense.
+The opposite counterpart is the necessary to reproduce the system, which wages is a central part of this share.
+
+A fundamental part of the surplus approach is to determine the determinants of real wage --- measured in terms of commodity.
+The amount of real wage that cannot fall bellow is called the *subsistence wages*.
+The latter is historically and institutionally determined.
+
+The social surplus is defined considering the following as exogenous:
+- social product in physical terms
+- The thecnical conditions of production
+- The basket of goods representing the subsistance wages
+
+The surplus is defined as a residual of the social output net of wages at the subsistance level.
+Then, it is split between profits and rent.
+
+Based on discussion with Malthus, Ricardo was able to remove rents from the definition of social surplus.
+But, Ricardo was concerned with the ratio between the profits with the capital that has entered.
+Afterwards, he moved to measure the rate of profit, expressed in *value* terms.
+The main implication is the necessity of a *price theory*.
+
+Regarding the possibility of real wages being higher than the subsistance level, Ricardo thinks that would be related to the "improved habits", while Marx considers the  amount that will not treat the capitalist system.
+
+
+In summary, it is possible to classify the Classical Surplus approach:
+- Core :: General characters
+- Outside core :: Depends on circumstances and historical elements.
+  - Techinical conditions, for example, cannot be treated in general manner.
+  - The same applies for the composition of the social surplus
+    - Which extends to the components of final demand
+* The marginalist analytical structure: factor supply and demand forces
+
+
+Data in the theory:
+- Consumer preferences
+- Thecnical conditions
+- Available quantities and factors of production
+
+** Direct factor substutability
+
+Considering a one-goods economy produced by means of labor and corn.
+So, the total product consist of corn.
+Alternative methods of production is represented by the combination of labor and corn (capital) advanced.
+
+Assuming a *continuity* between the combination of labor and corn.
+Also:
+- Constant returns to scale
+- Wages paid-post-factum
+- Capital entirely consumed in one cycle
+- Corn taken as net of reintegration
+- No choice between productivi and direct use of factors
+
+\begin{equation}
+C = F(L, K)
+\end{equation}
+
+Defining additional assumption
+\begin{equation}
+MP_{L} = \frac{\partial C}{\partial K}
+\end{equation}
+\begin{equation}
+K = \overline{K}
+\end{equation}
+
+In summary, the average and the marginal labor product is the same until it is possible to replicate the same proportion using the dominant technique.
+
+The decreasing aspect of the marginal labor output impose how much labor to employ given a real wage.
+Other alternatives will not be as profitable as in the case where \(MP_{L} = W_{0}\).
+As a consequence, the marginal labor product function gives the *labor demand*.
+Also, it determine the amount of profits and which technique to use.
+
+How the curve changes if the quantity of capital changes?
+The curve will shift to the right, changing the length of the horizontal line.
+This is because the return of scale is constant, the effective employed labor will depend on the ratio between capital and labor.
+
+The total demand function for labor for every wage rate, gives the equilibrium wage rate depends on the quantity of labor available.
+The theory assumes that the effective wage tends towards the equilibrium wage rate.
+The main arguments is *competition*.
+For example, if wage rate is higher than the equilibrium, some workers will not finds employment, offering a lower wage.
+It is important to note that competition is able to reach that because the *decreasing* demand for labor function.
+Otherwise, the wage rate would converge to a level with no economical sense (zero, for example).
+
+In the end, the wage rate, profit rate, total profit, and capital to labor ratio (technique) are determined *simultaneously*.
+
+Looking on the other side, analysing the marginal product of capital given the amount of labor.
+The most convenient amount of capital is that equalizes the marginal product to interest rate: \(ML_{K} = \pi\).
+However, the interest rate also depends on the *quantity* of capital.
+The decreasing \(MP_{K}\) is the demand curve for capital given a fixed amount of labor.
+The equilibrium interest rate will also depends on the intersection between the demand of capital, total capital and competition.
+
+In summary, the demand of capital and demand of labor affects each other.
+In the presence of alternative methods of production, the theory obtain a decreasing demand function of each factor.
+This is the *direct substutability* of factors.
+The two marginal products moves in opposite directions.
+As marginal labor productivity decreases, capital marginal output increases.
+So, the two curves are strictly *interdependent*.
+The same applies to the demand for labor and for capital.
+
+For example, if there is an increase of supply of labor (still holding the quantity of capital).
+As a consequence, the wage rate will *decrease* due to competition forces, hiring more labor.
+As a result, the marginal product of capital will *change* as well (because changes the demand function), changing the equilibrium *interest rates*, increasing it.
+In terms of marginal theory, it is state the capital has become relatively more scarce compared to labor, justifying the higher interest rate.
+However, there is not further feedback because the amount of capital remains unchanged in this example.
+
+** Indirect factor substutability
+
+The role of consumer preferences creates additional basis for decreasing factor demand curves.
+For example, consume can consume in variable proportions.
+In order to isolate this effect, assume that there is not alternative method of productions.
+The two methods are represented by two given different ratios of corn-capital to labor, so there is no marginal products.
+
+Considering the capital to labor ratio in the production of corn is 1/9, and the shirt production is more capital intense (K/L = 1).
+Assuming that the price of corn is the numeraire.
+
+\begin{align*}
+\frac{9}{10}L  \bigoplus \frac{1}{10}C \to & 1 C\\
+L  \bigoplus C \to & 1 S
+\end{align*}
+
+So, the system should be:
+\begin{align*}
+1 & \frac{9}{10}w  \bigoplus \frac{1}{10}(1 + r)\\
+p_{s} & w + (1 + r)
+\end{align*}
+
+
+If \(w = 0\), and \(r = R\):
+\begin{align*}
+1 & \frac{1}{10}(1 + R)\\
+p_{s} & (1 + R)
+\end{align*}
+The solution is that \(R = 900\%\), so \(p_{s} = 10\).
+If the optimum ratio of composition of corn and shirts \(D_{c}/D_{s} = 8\).
+It is important to indicate that corn is a basic good in this example.
+
+Considering, for example, a labor supply of \(10L\).
+If \(1L\) is necessary o produce \(1C\) (net), and \(2L\) for shirt:
+
+\begin{align*}
+1 D_{c} + 2 D_{c} & = 10\\
+D_{c} = 8 D_{s}
+\end{align*}
+
+To solve this system, \(D_{c} = 8\) and \(D_{s} = 1\), which corresponds to the optimal consumption ratio.
+
+Alternativelly, if \(R = 8\), \(w\) becomes \(1/9\).
+This distributional changes will affectts the relative prices.
+This is because each methods have a different capital to ratio ratio (relative to the other).
+The higher interest rate increase the demand for labor in the more labor intensity methods (check!):
+
+\(p_{s} = \frac{82}{9} < 10 = p_{s_{0}}\)
+Shirts become relativelly cheaper than before.
+As a consequence, the optimal basket will change in favor of shirts: \(D_{c}/D_{s} = 3 < 8\).
+
+\begin{align*}
+1 D_{c} + 2 D_{c} & = 10\\
+D_{c} = 3 D_{s}
+\end{align*}
+To solve this system, \(D_{c} = 6\) and \(D_{s} = 2\), which corresponds to the optimal consumption ratio.
+
+Thus,
+\begin{align*}
+K^{d}(R = 9) & = \frac{1}{9}D_{c} + \frac{10}{9}D_{s}\\
+ & = \frac{1}{9}8 + \frac{10}{9}1\\
+ & = 2\\
+K^{d}(R = 8) & = \frac{1}{9}D_{c} + \frac{10}{9}D_{s}\\
+ & = \frac{1}{9}6 + \frac{10}{9}2\\
+ & = \frac{29}{9} > 2
+\end{align*}
+
+So, an increase in interest rate induces a higher demand for capital as well given the flexible consumer preference.
+
+Additionally, a transfer of labor (from one sector to the other) will change the demand for capital because each sector has a different capital to labor ratio.
+Due to consumers demand goods in different proportions.
+So, the fundamental role of this provide an additional basis for the negative functions of factors demand.
+While, the fixed endowments provides the supply-side fundamental.
+
+* Analysis of value and the role of scarcity
+
+
+|----------------------+--------------------------------------+-------------------------------------|
+|----------------------+--------------------------------------+-------------------------------------|
+| Data                 | Neoclassical                         | Classical (Core)                    |
+|----------------------+--------------------------------------+-------------------------------------|
+|                      | Thechnical conditions of production  | Thechnical conditions of production |
+|                      | Consumer's preferences               | Real wages                          |
+|                      | Endowments of factors of productions | Output level (social product)       |
+|----------------------+--------------------------------------+-------------------------------------|
+| Endogenous variables |                                      |                                     |
+|----------------------+--------------------------------------+-------------------------------------|
+|                      | Relative prices                      | Relative prices                     |
+|                      | Rate of remunaration of factors      | Rate of profits                     |
+|                      | Quantities produced and exchanged    |                                     |
+|----------------------+--------------------------------------+-------------------------------------|
+|----------------------+--------------------------------------+-------------------------------------|
+
+So, the neoclassical determines relative prices, rate of remuneration and quantities altoghether.
+Also, the determination of prices also gives the determination of quantities.
+Additionally, distribution is also part of the determination of prices (and the other around).
+
+In classical analysis, the distribution is a result of social character (non-economical).
+Also, only one residual variable (wage rate or rate of profits) is determined
+
+** Relative prices in neoclassical theories
+
+In neoclassical thoery, all variables are determine dby forces of demand and supply, which face each other in the market.
+Equilibrium prices are determined by the equality of all of them in *all* markets.
+Demand and supply demand on prices.
+However, demand also depends on preferences, income, which depends on the endowments of production; supply dpends onf factors income, endowments and the system of prices.
+Thus, the prices ensure the equilibrium of an arbitrary set of endowments.
+
+** Relative prices in classical theories
+
+Relative prices are not determined by the demand-supply equalities.
+Quantities are given whend etermining prices.
+So, there is no *unique* relationship between prices and quantities.
+
+Prices do not depend on consumers' tates, but:
+- Thecnical conditions of prodution
+- Given real wage
+
+So, prices are determined exclusively by the conditions of *reprodutibility* of the commodity and the whole syste,
+No single commodity can be determined in *isolation* from the others.
+
+The innovation of classical theory (compared to pre-classical) was a shift from exchange to *production*.
+Production is the source of supply.
+The problemo f value becomes crucial when the surplus ceases to be conceived as only made of agricultural good (the existanec of profit rate).
+
+Thus, demand and supply act when the supply of a particullar commodity is temporarily scarce or super abundante.
+Temporary scarcity will raise the market value above the natural values.
+
+
+* Seminars
+
+** Luigi Pasinetti: Growth and Income distribution in a Normative Perspective
+
+*** From input-output analysis to Structural economics dynamics
+
+Uses a open Leontieff model:
+\begin{equation*}
+\mathbf{q} = \mathbf{A}\cdot \mathbf{q} + \mathbf{y}
+\end{equation*}
+The dynamic version of Leontieff model:
+
+#+begin_example
+net product = consumption + net investments
+#+end_example
+
+\begin{equation}
+y(t) = c N(t) + g A q(t)
+\end{equation}
+where \(N(t) = N(0)(1 + g)^{t}\)
+
+
+Which a system mantain the proportion of sectors.
+So, each sector grows at the same rate.
+It is insufficient because the composition of final demand changes.
+Also, technical progress cannot be included in this framework (new products and new methods of productions).
+
+In order to overcome, Pasinetti proposed *vertically integrated* sector.
+It is a imaginiary system whose net product is 1 unit of \(c\) only, while it gross product contaill all the comms directly and indirectly.
+
+Labor employed in vertical integrated sectors:
+
+\begin{equation}
+\ell(1 - A)^{-1} = \ell^{T} + \ell^{T}\cdot A + \ell^{T}A^{2} + \cdots = v^{T}
+\end{equation}
+
+INCLUDE PASSAGES
+
+Which allows to represent a single composite commodity.
+If there is technological change, it is possible to reconstruct a vector of one unit of productivity capacity with a new vector if vertically integrated labor.
+
+* Fratini: The notion of capital and the marginalist theory
+
+** The capitalist circuit
+
+\begin{equation}
+M-C-M'
+\end{equation}
+
+Profits:
+\begin{equation}
+\Pi = M' - M
+\end{equation}
+
+According to Marx, capital is never total spend, but always advanced again.
+In this sense, capital is not a input.
+The inputs are the capital goods, the labour services, the productive services of natural resources.
+
+Capital is an economic object of the same kind as costas and revelue.
+Thus, capital is an amount of *value*.
+
+Also, the rate of profits is not the *price of capital*.
+Profits are just a residual.
+
+** The marginalist theory and the factors of production
+
+There are two different conceptions of the production process:
+- Classical :: Production process is understood as a circular proccess
+  - The same commodities appear in both input and the output side
+- Marginalist :: The production process is a one-way avenue from the factor of production to the final outputs (consumption goods)
+  - The final objective is to satisfy consumer utility
+
+*** The marginalist theory and the factors of production
+
+
+In the classical approach there are three different kinds of social classes, associated with income (wage, profit, rent).
+In the  marginalist approach, the idea is upsidown.
+Since there are three kinds of income, there must be a different type of factor.
+From a marxist point of view, it is claimed is that social relations are converted to things; in which worker, landowner, and capitalists are transformed into labor, capital, and land.
+
+In the marginalist theory of distribution:
+- Production process employ factors of production.
+- Wage rate, interest rate, and rent are the price for the factors of production
+- Income from capital are not resitual, it is determined by the price (\(r\)) \(\times\) quantity (\(K\)) and are part of the costs of firms
+  - \(C = w\cdot L + r\cdot K + p\cdot N\)
+- Social classes disappear and the place is taken by economic agents: households and firms
+  - Households:
+    - Decide the consumption plans by utility maximization
+    - Are the owner of the factors of production (endowments)
+    - Sell the use of the factors to the firms
+    - Buy consumption goods to firms
+  - Firms:
+    - Decide the production plans by the profits maximization
+      - Profits are income of firms, and not of capitalists
+    - Hire the production factors from households
+    - Sell the consumption goods to the households
+
+On the one hands, the amount of profits is not proportional to the employment of capital.
+Firms's profits is not an income from capital.
+On the other hand, interest on capital is part of the costs (not a residual), bus a results of a price \(\times\) quantities multiplication.
+
+** Marginal productivity and income distribution
+
+*** The marginalist theory
+
+The marginalist theory o value is based on the following itmes:
+- Households preferences
+- Technical conditions of prodution (set of fasible production plans)
+- Endowments of production factors
+
+Given that, the theory explain relative prices of commodities and distribution in terms of equilibrium between supply and demand functions.
+Considering the initial state of a system and structural equations, the entire dynamics is determined by \(x_{t} = x(t, x_{0})\).
+An equilibrium, if it exists, is the state \(x^{\star}\) such that \(f_{j}(x^{\star}) = 0 \forall j = 1, 2, \ldots, N\).
+
+**** Market dynamics
+
+On each market:
+- Supply and demand depend on the price system (commodity and factor prices)
+- The price tends to rise when the demand exceeds the supply and to fall in the opposite case
+
+Lets assume \(N\) markets.
+Let \(\mathbf{p}\) be the price system:
+
+\begin{equation}
+\frac{d p_{n,t}}{dt} = h_{n}[x_{n}(p_{t}) - y_{n}(p_{n})]
+\end{equation}
+An equilibrium is a price vector such that the time derivatives is zero in every market.
+This is the case if the demand is equal to supply in each market.
+The determination of income distribution follow the same notion of the commodity system.
+
+The most complicated part of this theory is the representation of supply and demand for commodities and factors as functions of the price system.
+
+Also, the theory is interested in having inverse relationship between the relative employment of each of each inputs and its relative rate of remuneration.
+
+The *principle of diminishing marginal productivity* would allow us to achieve those results, but that principle cannot be used when capital is understood as a factor of production.
+
+**** The model with land and labor
+
+Assume just one commodity produced by means of land and labor.
+A constant returns to scale production function \(Y = F(N, L)\) is give.
+
+Let \(y\) and \(n\) be the output and the employment of land per unit of labour respectivelly, then technology can be represented by the function \(y = (n, 1) = f(n)\), assumed to be:
+- Differentiable
+- Increasing (marginal productivity)
+- Concave (diminishing marginal productivity)
+
+Let \(w\) and \(p\) be the *wage rate* and the *rent rate*, both expressed in terms of corn, then each firm employs land and labor in quantities that maximize its profits:
+\begin{equation}
+\pi = f(n) - w - \rho n
+\end{equation}
+The FOC is:
+\begin{equation}
+f'(n) - \rho = 0
+\end{equation}
+Which is sufficient because of the concavity of the function.
+This allows to determine the demand of land as a function of the rent rate
+
+According to the usual market mechanism, the market rent rate tends to fall whenever the available quantityes of land per labor is larger the effective employed land, and rise in the other way around.
+This is because of the relationship between demand and supply of factors.
+If \(\overline{n} > n\), \(\dot{p} = h[n(\rho) - \overline{n}\] < 0\).
+
+Wage rates, on the other hand, is determined as a residual of the not devoted to the payment of rents:
+\[(w^{\star} - F'_{L})\overline{L} = (\rho^{\star} - F'_{N})\overline{N}\]
+hence, \(F'_{N} = \rho^{\star}\) and \(F'_{L} = w^{\star}\)
+
+*NOTE:* Different from the classical perspective, wages and rent is not payed in advance, but only at the end of the period.
+
+
+So, the income distribution is a market phenomenon.
+- Distribution variables are understood as factors prices.
+- The equilibrium depend on the quantities available of the factors of production and on their demand functions.
+- Factor demand functions are based on the diminishing marginal productivity
+
+
+** The model with land and labor
+
+\[\pi = f(n) - w - \rho n\]
+
+The FOC is: \(f'(n) - \rho = 0\); which is the necessary and sufficient condition for optimal employment of land due to the concavity of \(f(n)\).
+This allows to build a demand function for land in terms of rent price: \(n = n^{d}(p)\).
+The equilibrium rate would be \(\rho^{\star}: n^{d}(\rho) = \overline{n}\).
+
+Once the equilibrium rent rate is determined, the wage rate is determineted as well.
+Wages are the part of net produt that is not devoted to payment or rents.
+\[w^{\star}L = F(\overline{N}, \overline{L}) - \rho^{\star}N \Leftrightarrow w^{\star} = f(n) - \rho^{\star}\overline{n}\]
+
+** Capital in the marginalist theory
+
+Considering the stationary one-commodity Solow model:
+
+- Net output :: \(Y = F(K, L)\), after the replacemnt of inputs
+- Gross output :: \(F(K, L) + K = G(K, L)\)
+
+Focusing on the net output in terms of labor: \(f(k) = F(k, 1)\)
+
+To maximize the profits, the foc is: \(f'(k) - r = 0\).
+It is important to not that \(r\) is numerical value, while \(k\) is a quantity of corn.
+As before, we can define a demand for capital in terms of interest rate: \(k = k^{d}(r) \)
+
+*** Model with two commodities
+
+The introduction of the additional commodity (in a vertically representation), it is required to introduce a price when determining the profits:
+\[\pi = f(m) - w - r\cdot p \cdot m\]
+in which \(m\) are the "meccano sets".
+
+
+Not, the foc is: \(f'(m) - r p = 0\)
+
+In this model (Swan's model), there is two notions of capital.
+It is important to note that capital is heterogeneous in terms of corn.
+- Physical capital (meccano sets)
+- Value Capital
+
+The main implication is that the other markets cannot ensure the adjustment:
+\[\frac{d k}{d r} = \frac{d p}{d r}m + p\frac{d m}{d r}\]
+So, there is two different effects:
+- Price Wicksell effect
+  - Make price maccano sets change
+- Real Wicksell effect
+  - Change in the employment of meccano sets
+
+Overall, the price effect is positive, while real effect is negative.
+So, it is not possible to state the total effect ex ante.
+
+** Heterogeneous capital goods and the re-switching
+
+The possibility of re-switching is sufficient to prove the value of capital goods cannot be considered as a quantity ...
+So, interest rates cannot be consider as the price of the "service of capital".
+Thus, capital cannot be considered as a factor of production.
+
+
+* Petri: The problem of value in the surplus theories and the limits of the measurement in labour embodied
+
+** Introduction
+
+The core: separate in the same sense in which multiplier determination of equilibrium income is separate from the rest of the macro theory, only needing autonomous expenditure and marginal propensity to consume, determinde in another part of the theory.
+
+- Data of the core or "profit rate calculating room":
+  - Real wages
+  - Quantities produced
+  - Technologies employed
+
+From them, the surplus, and the (the calculation problem) can be determined.
+
+Long-period method: prices gravitate around and torward normal prices associated with productions satisfying effectual demands.
+
+Real wages: We must recuperate importance of social ties to understand the economy.
+- Smith :: Perception of common groupinterest is universal and fundamental
+  - About stable difference wages: small or great trust which must be reposed in those who excerice them
+    - Importance of status of reputation is still waiting for insertion into the microeconomic theory of labor market
+- Surplus :: no supply-and-demand determination of income distribution, social-political interaction are indespensible to explain real wages
+  - It is also interest of the dominant class too not to compress wages below level needed to avoid desperate and "extravagant" act
+
+So, it is possible to take wage as given as a first approximation.
+However, can we continue to take as given when other data of the core change?
+- When quantities (ex: employments) changes, the mais observation is the rejection of marginal approach
+  - We do not have a general univocal connection between wages and employment
+- Raised by technical progress?
+  - It depends on historicall contex in general.
+    Study situation by situation (ex: US: increase in productivity while real wages remains stagnant)
+
+However, can we continue to take quantities as given when wages changes?
+- What happens to quantities is not subject to general laws
+- The principle of effective demand dpends to what happens to autonomous expenditiures and marginal propensity to consume
+
+What about the *composition* of consumer demand: little relevance of the neclassical substitution in the classical surplus.
+So, we do not know much to what happent to prices and incomes.
+
+Regarding production methods: is it legitimate to take them as given when quantities or wages changes?
+- Changes in quantities are not goint to alter normalproduction methods
+- Changes in wages can alter the optimal techical choices, but for the sign of the effect of this on rate of profit no ambiguty arises, the sign noes not change and only the effect on the rate of profits is smaller.
+
+In conclusion, changing only one date of the core at each time seems legitimate
+
+** The calculation problem
+
+The main problem is the danger of circularity.
+The effect of competition make prices converges to a cost plus rate of profit.
+We need price to detrmine the rate of profit and the rate of profits to determine prices.
+For example, producing one commodity by means of two inputs, we have a system with one equation (final goods) and two equations (price and rate of profit).
+
+Ricardo adopted thelabor theory of value as an approaximation for lack of better theory.
+Only true if \(r = 0\), but otherwise wrong because relative prices depends on r.
+\begin{align*}
+p_{1} & = w(1 + r)\\
+p_{2} & = w(1 + r)^{2}\\
+\frac{p_{2}}{p_{1}} = (1 + r)
+\end{align*}
+
+Ricardo argues the deviation are small, so could be negleted.
+So, values are independente of rate of profit, so the rate of profit can be determined.
+This is the cause because surplus and capital advanced is given.
+
+Latter, some "vulgar" economist tried to deny the conflict between income departing from Ricardo.
+
+
+*** Labor embodied
+
+
+If reate of profits is uniform, the organic composition of capital must be diffent in each sector.
+So, relative prices yielding a uniform rate of profits must differ from relative labor values.
+Departing from prices proportional to labor values, to rach uniform rate of profit, the price of goods earning the lower than average rate of profit (whigh organic composition than average), must increase relative to the value of their means of production.
+
+The function of these deviation of prices from labor values is, according to Marx, redistribute among several industrie the total social surplus ...
+
+Marx believes that the deviation compensate each other, so the redistribution does not chant the total which is redistributed.
+So, the total capital remains unchanged too.
+In addition, capital must also been measured at the prices that dveiate from the labor values.
+
+To Marx, there must be an average organic composition that does not require the price of the product to increase relative to the value of its means of prodution.
+This average cannot but be that of the social product, whose organic compostion is indeed the average one by definition.
+Error: relative values in it do not remain unchanged.
+
+In summary, Marx was wrong in specifically determining the rate of profits, but correct to claim that the rate of profits is determined.
+So, surplus approach is solid.
+
+NOTE: Even tough labor is not necessary, profit rate is still determined and class strugle still exists.
+So, even if value does not depend on labor, there still a conflict between classes.
+In this sense, it is unfair to state the sraffian approach eliminates fetishism, alienation, and exploitation.
+
+NOTE: Petri discuss what reamins valid in the first chapter of Capital.
+It is the impersolality of competition that generates fetishism.
+Alienation only require that labor is subordinated to capital, and not that value depends on labor.
+For explotaition, the rate of profits is positive because of the straight of capitalists over workers (Gengis Khan example).
+
+** Why first chapter of Capital so unclear?
+
+* Keynes’s theory of effective demand and alternative approaches to value and distribution
+
+** Keynes and the classical school
+
+The real object of Keynes' critique seems to be related to *marginalist* theory which claims the convergence to the full employment.
+The core of controversy between Keynes and the neoclassical thoery is the possibility of interest rate to ensure investment to adjust towards savings.
+
+
+** The controversy between Ricardo and Malthus
+
+Keynes seems to be mislead by his interpretation of the  controversy between Ricardo and Malthus on the possibility of "general glut of commodities", which is one of possible explanations of the confusion to merge the classical approach with the neoclassical theory.
+
+In Ricardo, the limit of demand to production was not the result of a analysis of the investment-saving process, but this is not an analysis.
+However, the adoption of Say's law in Ricardo does not make him to rule out the possibility of labor unemployment.
+In classical theory, for example, it is possible to get rid of Say's law, and still be compatible with the "core".
+
+** The Neoclassical analysis of the I-S process
+
+The flexibility of wage to lead to the full-employment of labor requires:
+- Notion of a demand ofr labor elastic with respect to the real wage rate
+- Investment adjusts to the changes in savings consequent of changes in employment
+
+The relevance of neoclassical theory of interest: Decreas (fulfil later)
+
+Keynes argue that investment does not adjust to savings.
+And the flexibility of wages is not enough to ensure this.
+
+MEMO: Keynes did not reject the negative relationship between the labor and wage rate.
+
+** The theory of effective demand
+
+** Keynes' theory of interest
+
+** Keynes' analysis of the I-S process
+
+** The rigidity of money wages
+
+** Concluding remarks
+
+* Ciccone: Sraffa's analysis of the price system and the wage–profit relation
+
+In Sraffa's subsistance system, the equations are independent from each other.
+So they are not interdependent.
+As long as it is a subsistance, it is not able to produce surplus, one of price equation is not independent.
+
+In the surplus system, what changed is the method of production, to say, of wheat.
+Assuming no rent, and wages at their subsistance level, that surplus would give rise to, and be material counterpart of, *profits*.
+
+Introducing the general rate of profit on capital advance in production processe, unifor under free capital mobility.
+Since the commodities are heterogeneous, the magnitude of \(r\) cannot be obtained by the ratio of surplus to the set of means of production.
+Additionally, capitalists are interested is how much value a production can yield.
+However, the values of commodities cannot be determined prior the determination of \(r\), which is what Ricardo tried to do.
+
+In a economy that produces \(k\) commodities producing surplus, the system of equations have \(k-1\) interdependent equations together with the unifor rate of profit.
+This is because all \(k\) equations are interdependent.
+
+Next, Sraffa considers wages paied post-factum:
+\begin{align*}
+(A_{a}p_{a} + \ldots + K_{a}p_{k})(1 + r) + L_{a}w
+\end{align*}
+Also, the total labor employed equal to one: \(L_{a} + \ldots + L_{k} = 1\).
+Then, he takes the net produt of whole economy as the composite commodit serving as mesure of values.
+This is done by putting equal to 1 the value of total net profits.
+Implications:
+- The wage rate coincides with the total amount of wages
+- Total wages are expressed as the wage share int the net produt (total income)
+
+As a consequention, there is \(k + 1\) equations compared with \(k + 2\) variables (prices, wages, and profit rate).
+So, the system have one degree of freedom.
+The result that Sraffa arise is the inverse relation between wage and profit rate.
+And this is the case independently of the commodity choosen to measure value.
+
+Alternativelly, Garegnani consider wage as a given physical basket even assuming that it can exceed the subsistence level.
+Still, the real wage is determined by social-historical circumstances.
+
+Real wage consisting of the set of given equations of \(g \leq k\) wage-goods as a composite commodity.
+Real wage rate: measure by given number \(w\) of uits of the wage-commodity.
+The price of wage-commmodity \(p_{\lambda}\) is the sum of values (\(\lambda_{a} + \ldots + \lambda_{g}\)), which from one unit of the wage commodity:
+\[p_{\lambda} = \lambda_{a} p_{a} + \ldots + \lambda_{g} p_{g} = 1\]
+
+Considering the wage-commodity as the srandard of prices, there are \(k+1\) equations which solve \(k\) (in terms of wage-commodity) prices and the profit rate.
+
+Considering the follwoing order:
+- \(a, \ldots, g\) :: wage goods
+- \(g+1, \ldots, h\) :: direct or inderect meand of production of wage-goods
+- \(a, \ldots, h\) :: goods entering either directly or indirectly into the wage
+- \(h+1, \ldots, k\) :: all remaining goods (luxury goods)
+  - They can also be means of production
+
+Looking only in the subset of consumption-goods and the composite commodity, the \(h+1\) equations are sufficient to define \(h+1\) unknows: the \(h\) prices for commodity goods and the profit rate.
+So, \(r\) is determined exclusively inside the production relations of wage-goods (if wage rate is physically given as in Garegnani).
+All the remaining equations are independently determined by the equations of commodities \(a-h\).
+
+
+A basic commodity is a commodity entering into the production of any commodity.
+In Sraffa's analysis, the \(w-r\) relation depends uniquely on the conditions ofproduction of basics goods.
+So, Garegnani set from \(a-h\) form the set of basic commodities if labor required by the production of any commodity.
+Which generates the same conclusion as Sraffa's.
+
+Regarding the \(w-r\) inverse relation, the Labor Theory of Value would be correct in the case where profits are nill.
+For any positive value of \(r\), the coincidence of relative prices and the quantities of labor  employed does not hold.
+
+Implications of the meaning and the role of normal prices:
+- Production methods are the dominant ones
+  - the methods relevant for the determination of prices is the cheapest among those in use and that are furthermore employed for a share of total output sufficient to regulate the price
+- This a condition of determining normal prices
+  - If only a small fraction of prodution uses it, it does not determines the natural prices
+- The application of effectivelly observable price and inputs is a matter of accounting
+  - It would be relevant to look at technical-economic necessity to observe the natural prices
+  - IO is more accounting than a theoretical approach for natural prices
+
+* Levrero: The 'standard commodity' and the linear wage–profit relation
+
+Ricardo looked for an invariable measure of value whose price does not change when distribution changes.
+However, it is not traceble in the real system and cannot be simply a commodity with a average "organic composition of capital", namely an average proportion of means of prodution to labor.
+
+In a real system, it not reasonable to assume that there is a commodity that have the "critical proportion" so its prices does not change when distribution change.
+However, departing from the real system, we can construct a stndard system in which the social product and the aggregate of the means of production are formed by the same commodities combined in the same proportion such that both product means of production are quantities of the same composite commodity.
+This composite commodity is obtained when the net rates of production of the commodities are equal:
+If:
+\[g_{a} = \frac{A - (A_{a} + \ldots + A_{k})}{A_{a} + \ldots + A_{k}} = g_{b} = \frac{B - (B_{a} + \ldots + B_{k})}{B_{a} + \ldots + B_{k}}\]
+
+To construct the standard commodity only considering industries that produce basic goods.
+
+On Sraffa, the standard system, it is used an algorithm:
+1. Check
+
+Following the Sraffa algorithm, achive the standard system by changing the size of each industry.
+To achieve it, apply the multipliear that modify the size of industry to have the net rate of reproduction for the two commodities equal to the standard ratio \(R\):
+\[\frac{A q_{a}}{(A_{a}q_{a} + A_{b}q_{b})} = \frac{B q_{b}}{(B_{a}q_{a} + B_{b} q_{b})} = 1 + R\]
+
+With this, it is possible to speak the ratio of the net product to means of production of the system wihtout the need to refer the prices:
+\[R = \frac{Q - K}{K} = \frac{Y}{K}\]
+\[r = R(1 - w)\]
+In the standard system, there is a *linear* wage-profit curve:
+\[w = 1 - \frac{r}{R}\]
+
+** Do we need to construct the standar commodity?
+
+ Not necessarily.
+ It is possible to departure from the real system and compute the prices using \(w = 0\) and calculate \(R\).
+
+* Stirati: Subsistence wage, surplus wage and Sraffa’s hint to a monetary determination of distribution
+
+** Classical wage theory
+
+Wage fund theory:
+\[w = WF_{0}/P\]
+in which \(WF_{0}\) is the wage fund, and \(P\) population.
+So, there is a decreasing relation between \(w\) and employment (\(P\) as a proxy), and a tendency to full employment.
+Population will grow so the real wage match the subsistance level.
+At the end, the decreasing demand and tendency to full employment still remains.
+However, the wage fund interpretation seems to not hold.
+
+
+** Alternative view
+
+*** Notion of subsistance
+
+Necessaries and conveniances become essential for habits.
+Subsistance minimum changes over time.
+
+
+* Trabucchi: Heterogeneous capital goods, substitutability and reproducibility
+
+** Capital and factor substitution
+
+In general, the neo-classical theory saw the exception of marginal product does not exist as special cases that does not affect the validity of the theory.
+However, this problem is more general.
+Means of production are designed to be employed in the productivity process.
+This specialize nature of capital generates this problem.
+The only to assure the capital substutability is necessary to treat capital as a "single quantity".
+
+The alternative of the neoclassical theory is to conceive capital equipment to be alterable with the number of other factors of production.
+So, to treat capital as single quantity, it is necessary to:
+a. All methods require the same productive factors, but different in the proportion of them
+b. Several methods of production are knwon
+c. Constant returns to scale
+
+In summary, the neoclassical theory *need* to have capital as a single quantity, otherwise, the substitutability will not work.
+
+** Reproducibility problem: the condition of uniform profit rate
+
+The center of gravitation cannot be achieved without a uniform profit rate.
+Otherwise, the system would depart from this positions by means of the forces of competition.
+And the uniform profit rate cannot be determined if the neoclassical have a set of heterogeneous of capital goods.
+
+** Walra's theory of capital
+
+Assume two consumption goods \(A\), and \(B\), produced with labor, land, and capital (\(K\) and \(K'\)):
+
+\begin{align*}
+D_{A} & = f_{A}(p_{a}, w, r, p_{k}, p_{k'})\\
+D_{B} & = f_{b}(p_{b}, w, r, p_{k}, p_{k'})\\
+\end{align*}
+
+
+\begin{align*}
+1 & = l_{a}w + t_{a}r + k_{a}p_{k} + k'_{a}p_{k}\\
+p_{b} & = l_{b}w + t_{b}r + k_{b}p_{k} + k'_{b}p_{k}\\
+S_{l} & = D_{a}l_{a} + D_{b}l_{b}\\
+S_{t} & = D_{a}t_{a} + D_{b}t_{b}\\
+S_{k} & = D_{a}k_{a} + D_{b}k_{b}\\
+S_{k'} & = D_{a}k'_{a} + D_{b}k'_{b}
+\end{align*}
+
+It is important to note that this system is denying the specialization of capital.
+But as discussed before, this is necessary for the indirec substitution mechanism.
+To complete the system, it necessary to also provide a production of capital goods:
+
+\[i_{k} = \frac{p_{k} - (\mu_{k} + v_{k})P_{k}}{P_{k}}\]
+in which \(P_{k}\) are the capitalizations of capital.
+
+Next, Walras introduces the uniform rate of return on the demand of all capital goods.
+However, this equations cannot give the level of interest rate.
+To overcome, Walras take into consideration the conditions of production of the capital goods.
+
+Taken together, these equations entails a uniform rate of net return on the supply price of all capital goods; they entail, therefore, that ...
+
+
+.
+.
+.
+Following Garegnani's paper, the rearranged system of equations does not generates a economics meaningful solution.
+Assuming that agents do not want to save in equilibrium.
+The only solution is when \(D_{k} = D_{k'} = 0\).
+In this case, system \(\alpha\) and system \(\beta\) are not connect anymore.
+System \(\alpha\) can determinate all unkwons, except interest rate (determined by system \(\beta\)).
+With the previous results, the system \(\beta\) have two equations to determined a single unknown, being overdetermined.
+
+However, even if savings are posits, the overdetermination still remains.
+This is because \(D_{k}\), and \(D_{k'}\) are not variables since they are determined by technical conditions in the stationary state.
+So, they vanish as unkwnon (techinically given).
+
+Alternativelly, if insteady of capital, production depends on different type o land.
+For example, if consumers prefers consumption from one of them, there is a rise of the remuneration of this type of land.
+Since the total amount of land is fixed, it is not a state of disequilibrium.
+However, the result would change if dealing with capital goods once they must be reproduced.
+This is because that only the capital goods which gives the highest rate of return willb e reproduced, changing the composition of capital stock.
+So, the rate of return must be equal in equilibrium.
+
+* Trezzini: The Keynesian hypothesis in the long run: general lines of the analyses of demand–led growth
+
+Apresentação do modelo de Harrod, Cambridge, Neo-Kaleckiano, e super.
+
+** Question
+
+- In Neo-Kaleckian model, if you have autonomous investment is that correct to state that productivity adjust to aggregate demand?
+- Why do you mean by the rejection on steady-state path in classical-keynesian approach?
+  - Normal position still generats an steady-state path or a steady-growth.
+- Perguntar sobre BMS (return of paradox of thrifts) in the long-run since SSM doesnt have
+  - Classical reabilitates?
+  - Quais são os mecanismos?
+
+* Pignalosa: The concept of normal capacity utilisation in the theory of accumulation
+
+The gravitation of market prices towards normal prices requires that output converge to effectual demand, not necessarily normal capacity utilization.
+The relevant capacity utilization in the long-run is that expected on newly installed capacity, which need not necessarily coincide with the degree of utilisation actually realised with the existing capital stock.
+
+
+** Question
+
+- If the normal rate of accumulation is not required to gravitate toward normal prices, in orders to the normal rate accumulation to not be a necessarily condition, it is required to assume that the adjustment of output to effective demand is faster than adjustment of effective capacity to the normal one?

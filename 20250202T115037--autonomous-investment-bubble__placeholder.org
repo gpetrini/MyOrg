@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       3c2f118c-329d-46c1-b76e-a8e080bc171e
+:END:
+#+title:      Autonomous Investment bubble
+#+date:       [2025-02-02 dom 11:50]
+#+filetags:   :placeholder:
+#+identifier: 20250202T115037
+#+OPTIONS: num:nil ^:{} toc:nil

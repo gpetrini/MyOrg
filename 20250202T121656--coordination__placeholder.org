@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       b44594c1-2c74-4ff4-b142-ed044b79ea5b
+:END:
+#+title:      coordination
+#+date:       [2025-02-02 dom 12:16]
+#+filetags:   :placeholder:
+#+identifier: 20250202T121656
+#+OPTIONS: num:nil ^:{} toc:nil
