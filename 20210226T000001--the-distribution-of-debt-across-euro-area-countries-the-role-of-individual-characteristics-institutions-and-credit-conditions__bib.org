@@ -1,0 +1,51 @@
+#+title:      The distribution of debt across euro-area countries: the role of individual characteristics, institutions, and credit conditions
+#+date:       [2021-02-26 sex 00:00]
+#+filetags:   :bib:
+#+identifier: 20210226T000001
+#+OPTIONS: toc:nil num:nil
+#+reference:  bover_2018_Distribution
+
+
+* Backlinks
+
+[[denote:20230216T235159][QCA Theoretical Economics Foundations]]
+
+[[denote:20250202T120251][Policy Oriented]]
+
+[[denote:20230216T235150][Household debt and Bank credit]]
+
+[[denote:20250204T190803][International Journal of Central Banking]]
+
+* FISH-5SS
+
+
+|---------------------------------------------+-----|
+| <40>                                        |<50> |
+| *Background*                                  |     |
+| *Supporting Ideas*                            |     |
+| *Purpose*                                     |     |
+| *Originality/value (Contribution)*            |     |
+| *Relevance*                                   |     |
+| *Design/methodology/approach*                 |     |
+| *Results*                                     |     |
+| *(Interesting) Findings*                      |     |
+| *Research limitations/implications (Critics)* |     |
+| *Uncategorized stuff*                         |     |
+| *5SS*                                         |     |
+|---------------------------------------------+-----|
+
+* Specifics comments
+ :PROPERTIES:
+ :Custom_ID: bover_2018_distribution
+ :AUTHOR: Bover, O., Casado, J. M., Costa, S., Caju, P. D., McCarthy, Y., Sierminska, E., Tzamourani, P., …
+ :JOURNAL: 44th issue (June 2016) of the International Journal of Central Banking
+ :YEAR: 2018
+ :DOI:
+ :URL: https://www.ijcb.org/journal/ijcb16q2a3.htm
+ :END:
+
+
+* PDF Highlights
+:PROPERTIES:
+ :NOTER_DOCUMENT: /HDD/PDFs/bover_etal_2018_the.pdf
+ :END:

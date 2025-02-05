@@ -21,7 +21,8 @@
 #+PROPERTY: YEAR_ALL
 #+PROPERTY: KEY_ALL
 #+PROPERTY: FINISHED_ALL "[ ]" "[X]"
-[[id:b11d338b-f808-4958-bdb8-622f5eb6bdee][QCA readings]]
+
+[[denote:20230216T235206][QCA]]
 
 #+BEGIN: columnview :maxlevel 2 :id global
 | Finished? | Status   | Reference                     | RELEVANCE |

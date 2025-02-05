@@ -1,5 +1,0 @@
-#+title:      Technological revolution
-#+date:       [2025-02-03 seg 18:43]
-#+filetags:   :placeholder:
-#+identifier: 20250203T184321
-

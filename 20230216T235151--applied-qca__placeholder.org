@@ -8,4 +8,4 @@
 #+filetags:   :placeholder:
 #+identifier: 20230216T235151
 
-[[id:b11d338b-f808-4958-bdb8-622f5eb6bdee][QCA readings]]
+[[denote:20230216T235206][QCA]]

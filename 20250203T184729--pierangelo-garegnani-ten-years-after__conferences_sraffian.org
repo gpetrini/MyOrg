@@ -12,12 +12,12 @@
 
 *** Introduction
 
-Alternative microeconomics to [[id:64197f79-2ae4-42e2-8a48-2f6d4d0abea4][Environment Economics]] and [[id:59305429-23ac-4347-9326-1b3cce084f82][Ecological Economics]].
+Alternative microeconomics to [[denote:20250202T122123][environment_economics]] and [[denote:20250202T122013][ecological_economics]].
 Most heterodox economics had main contributed to *Macroeconomics and Finance* (Green investment and endogenous money).
 
 *** Ecological degradations as externalities
 
-Corrective policies are introduced in order to *internalize* negative [[id:0fb81bfc-4e95-4099-8568-c55b704d6165][Externalities]] as a result of production process.
+Corrective policies are introduced in order to *internalize* negative [[denote:20250202T114051][Externalities]] as a result of production process.
 
 *** What does Ecological Economics do differently
 
@@ -44,7 +44,7 @@ Does egalitarian redistribution stifle private investment?
 
 *** Capital strike
 
-[[id:49067155-9d3a-406f-919c-9c2db45f8348][Capital Strike]] hypothesis: Redistributive plataform $\Rightarrow$ lower expected profitability $\Rightarrow$ lower private investment.
+[[denote:20250202T115448][Capital Strike]] hypothesis: Redistributive plataform $\Rightarrow$ lower expected profitability $\Rightarrow$ lower private investment.
 It is argued that there also other factors (most external) that could explain private investment decrease.
 
 *** Dataset

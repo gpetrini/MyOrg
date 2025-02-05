@@ -1,0 +1,4 @@
+#+title:      Cambridge Journal of Economics
+#+date:       [2025-02-04 ter 17:27]
+#+filetags:   :journal:
+#+identifier: 20250204T172746

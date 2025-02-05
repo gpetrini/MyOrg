@@ -1,0 +1,4 @@
+#+title:      Price Discrimination
+#+date:       [2025-02-02 dom 12:19]
+#+filetags:   :definition:microeconomics:
+#+identifier: 20250202T121943

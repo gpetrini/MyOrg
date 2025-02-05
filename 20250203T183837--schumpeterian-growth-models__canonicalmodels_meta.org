@@ -1,4 +1,0 @@
-#+title:      Schumpeterian growth models
-#+date:       [2025-02-03 seg 18:38]
-#+filetags:   :canonicalmodels:meta:
-#+identifier: 20250203T183837

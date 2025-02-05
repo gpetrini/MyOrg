@@ -1,4 +1,0 @@
-#+title:      Schumpeterian growth models
-#+date:       [2024-07-08 seg 15:54]
-#+filetags:   :placeholder:
-#+identifier: 20240708T155455

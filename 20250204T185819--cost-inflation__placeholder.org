@@ -1,0 +1,4 @@
+#+title:      Cost Inflation
+#+date:       [2025-02-04 ter 18:58]
+#+filetags:   :placeholder:
+#+identifier: 20250204T185819

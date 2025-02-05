@@ -1,0 +1,7 @@
+#+title:      Endogenous Growth
+#+date:       [2025-02-02 dom 12:12]
+#+filetags:   :placeholder:
+#+identifier: 20250202T121258
+#+OPTIONS: num:nil ^:{} toc:nil
+
+[[denote:20250202T115328][Canonical Models]]

@@ -1,9 +1,8 @@
-:PROPERTIES:
-:ID:       05891dd4-6983-40a0-a0a9-5fccddf93009
-:END:
 #+title:      Phillips curve
 #+date:       [2025-02-02 dom 12:03]
 #+filetags:   :placeholder:
 #+identifier: 20250202T120321
 #+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
 #+OPTIONS: num:nil ^:{} toc:nil
+
+[[denote:20240708T155703][Stylized Facts]]

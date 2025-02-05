@@ -12,6 +12,6 @@
 
 * Visualizing devices
 
-** [[id:380b31ad-cdd5-4367-af2c-9ee199a085e7][Business Cycles]]
+** [[denote:20240708T155635][Business Cycles]]
 
 - Correlational plots are used to evaluate if a variable lags, leads or is coincident with other (mainly output). In addition, the correlation sign reports if this variable is pro- or anti-cyclical.

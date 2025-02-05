@@ -1,0 +1,8 @@
+#+title:      General Equilibrium Model
+#+date:       [2025-02-02 dom 12:11]
+#+filetags:   :placeholder:
+#+identifier: 20250202T121100
+#+OPTIONS: num:nil ^:{} toc:nil
+
+[[denote:20250202T115328][Canonical Models]]
+[[denote:20250205T104529][Mainstream Models]]

@@ -1,4 +1,0 @@
-#+title:      Sraffian suppermultiplier growth model
-#+date:       [2024-07-07 dom 18:21]
-#+filetags:   :growthmodel:
-#+identifier: 20240707T182124

@@ -1,0 +1,555 @@
+#+OPTIONS: num:nil ':t H:6
+#+title:      Set-Theoretic Methods for the Social Sciences: A Guide to Qualitative Comparative Analysis
+#+date:       [2021-02-01 seg 00:00]
+#+filetags:   :bib:
+#+identifier: 20210201T000012
+#+reference:  schneider_2012_SetTheoretic
+
+
+* Set-Theoretic Methods for the Social Sciences: A Guide to Qualitative Comparative Analysis
+  :PROPERTIES:
+  :Custom_ID: schneiderSetTheoreticMethodsSocial
+  :END:
+
+** FISH-5SS
+
+
+|---------------------------------------------+-----|
+| *Background*                                  |     |
+| *Supporting Ideas*                            |     |
+| *Purpose*                                     |     |
+| *Originality/value (Contribution)*            |     |
+| *Relevance*                                   |     |
+| *Design/methodology/approach*                 |     |
+| *Results*                                     |     |
+| *(Interesting) Findings*                      |     |
+| *Research limitations/implications (Critics)* |     |
+| *Uncategorized stuff*                         |     |
+| *5SS*                                         |     |
+|---------------------------------------------+-----|
+
+** Backlinks
+
+[[denote:20230216T235212][QCA Literature Review]]
+
+[[denote:20230216T235153][Manuals and Best practices]]
+
+
+* Chapter 3: Set relations
+:PROPERTIES:
+:PAGES:    56-90
+:END:
+
+
+** Sufficient conditions
+
+*** Crisp-set
+
+*Definition:* Whenever the condition is present across cases, the outcome is also present in these cases (p. 57)
+#+BEGIN_latex
+\begin{equation}
+X \subset Y
+\end{equation}
+#+END_latex
+In venn diagram's terms, if ~X~ is a sufficient condition for ~Y~, the circle for ~X~ is fully contained (subset) in the circle of ~Y~:
+#+BEGIN_latex
+\begin{equation}
+X \to Y
+\end{equation}
+#+END_latex
+Thus, if $X$ is a sufficient condition, the following could not happen
+#+BEGIN_latex
+\begin{equation}
+X \to \neg Y
+\end{equation}
+#+END_latex
+If ~X~ is a sufficient condition, cases with ~Y~ and *whithout* ~X~ are not expected.
+Additionally, the condition ~~X~ is *irrelevant*  to state sufficiency for ~X~ due to the *asymmetry* in QCA.
+In summary, the sufficiency of ~X~ is falsified if and only if there is *simultaneous* cases members of ~~X~ and ~Y~.
+
+
+#+CAPTION: Sufficiency: stylized matrix (p. 59)
+|------+---------------+-------------+---------------------------|
+| Case | Condition (X) | Outcome (Y) | Sufficiency of ~X~ for ~Y~... |
+|------+---------------+-------------+---------------------------|
+| A    |             1 |           1 | allowed                   |
+| B    |             1 |           0 | not allowed               |
+| C    |             0 |           1 | irrelevant                |
+| D    |             0 |           0 | irrelevant                |
+|------+---------------+-------------+---------------------------|
+
+**** Example
+:PROPERTIES:
+:mtime:    20211013082514
+:ctime:    20211013082514
+:END:
+
+#+CAPTION: Hypothetical data matrix with ten cases and set-membership scores in three conditions and the outcome (adapted from p. 61)
+|-------------+---+---+---+---+----------------+----------------+----------------+-----------------+-----------------+-----------------|
+| Cases       | A | B | C | Y | Suff. ~A~ for ~Y~? | Suff. ~B~ for ~Y~? | Suff. ~C~ for ~Y~? | Suff. ~~A~ for ~Y~? | Suff. ~~B~ for ~Y~? | Suff. ~~C~ for ~Y~? |
+|-------------+---+---+---+---+----------------+----------------+----------------+-----------------+-----------------+-----------------|
+| ARG         | 1 | 1 | 1 | 0 | Not allowed    | Not allowed    | Not allowed    | Irrelevant      | Irrelevant      | Irrelevant      |
+| PER         | 1 | 0 | 0 | 0 | Not allowed    | Irrelevant     | Irrelevant     | Irrelevant      | Not allowed     | Not allowed     |
+| BOL         | 1 | 1 | 0 | 0 | Not allowed    | Not allowed    | Irrelevant     | Irrelevant      | Irrelevant      | Not allowed     |
+| CHI         | 0 | 1 | 0 | 1 | Irrelevant     | Allowed        | Irrelevant     | Allowed         | Irrelevant      | Allowed         |
+| ECU         | 1 | 0 | 0 | 0 | Not allowed    | Irrelevant     | Irrelevant     | Irrelevant      | Not allowed     | Not allowed     |
+| BRZ         | 0 | 1 | 1 | 1 | Irrelevant     | Allowed        | Allowed        | Allowed         | Irrelevant      | Irrelevant      |
+| URU         | 1 | 0 | 1 | 1 | Allowed        | Irrelevant     | Allowed        | Irrelevant      | Allowed         | Irrelevant      |
+| PAR         | 0 | 0 | 1 | 1 | Irrelevant     | Not allowed    | Allowed        | Allowed         | Allowed         | Irrelevant      |
+| COL         | 0 | 0 | 0 | 1 | Irrelevant     | Irrelevant     | Irrelevant     | Allowed         | Allowed         | Allowed         |
+| VEN         | 1 | 1 | 1 | 0 | Not allowed    | Not allowed    | Not allowed    | Irrelevant      | Irrelevant      | Irrelevant      |
+| Sufficient? | - | - | - | - | No             | No             | No             | Yes             | No              | No              |
+|-------------+---+---+---+---+----------------+----------------+----------------+-----------------+-----------------+-----------------|
+
+#+begin_example
+Hint: first look for X, then to Y
+#+end_example
+
+
+*** Fuzzy sets :ATTACH:
+:PROPERTIES:
+:ID:       813405db-5ea6-4d49-9edf-48e55292479c
+:END:
+ For sufficiency, each case's fuzzy-set membership score in X must be equal to or smaller than its fuzzy-set membership in Y:
+ #+BEGIN_latex
+\begin{equation}
+X \leq Y
+\end{equation}
+ #+END_latex
+Additionally, all cases with non-zero membership score in the condition are relevant fot the test of sufficiency, _regardless of whether they are above or below 0.5_.
+#+CAPTION: XY plot - distribuition of cases for sufficient condition X
+[[file:./.attach/81/3405db-5ea6-4d49-9edf-48e55292479c/_20210201_155902screenshot.png]]
+
+Similar to Crisp-sets, X must be a subset of outcome to be considered as a sufficient condition.
+
+
+**** Example
+
+#+CAPTION: Hypothetical data matrix with fuzzy-set membership scores
+|-----------------+-----+-----+-----+-----+-----+-----+-----+-----|
+| Cases           |   ~A~ |   ~B~ |   ~C~ |  ~~A~ |  ~AB~ | ~~BC~ |   ~Y~ |  ~~Y~ |
+|-----------------+-----+-----+-----+-----+-----+-----+-----+-----|
+| ARG             | 0.8 | 0.9 |   1 | 0.2 | 0.8 | 0.1 | 0.1 | 0.9 |
+| PER             | 0.7 |   0 |   0 | 0.3 |   0 |   0 | 0.2 | 0.8 |
+| BOL             | 0.6 |   1 | 0.1 | 0.4 | 0.4 | 0.0 | 0.3 | 0.7 |
+| CHI             | 0.3 | 0.9 | 0.2 | 0.7 | 0.3 | 0.1 | 0.6 | 0.4 |
+| ECU             | 0.9 | 0.1 | 0.3 | 0.1 | 0.1 | 0.3 | 0.4 | 0.6 |
+| BRZ             | 0.2 | 0.8 | 0.9 | 0.8 | 0.2 | 0.2 | 0.7 | 0.3 |
+| URU             | 0.9 | 0.2 | 0.8 | 0.1 | 0.2 | 0.8 | 0.8 | 0.2 |
+| PAR             | 0.2 | 0.3 | 0.7 | 0.8 | 0.2 | 0.7 | 0.9 | 0.1 |
+| COL             | 0.2 | 0.4 | 0.4 | 0.8 | 0.2 | 0.4 |   1 |   0 |
+| VEN             | 0.9 | 0.7 | 0.6 | 0.1 | 0.7 | 0.3 | 0.3 | 0.7 |
+| $X\leq Y$?      |  No |  No |  No |  No |  No | Yes |   - |   - |
+| $X\leq \neg Y$? |  No |  No |  No |  No | Yes |  No |   - |   - |
+|-----------------+-----+-----+-----+-----+-----+-----+-----+-----|
+
+*Conclusion:* $\neg BC \to Y \hspace{2cm} AB \to \neg Y$
+
+** Necessary conditions
+
+*** Crisp sets
+
+*Definition:* A condition ~X~ is necessary if, whenever the outcome ~Y~ is present, the condition is also present.
+Thus, no cases with ~Y~ displays ~~X~; on the presence of ~~X~, ~Y~ is impossible.
+
+#+CAPTION: Data matrix - necessity
+|------+---------------+-------------+-------------------------|
+| Case | Condition (X) | Outcome (Y) | Necessity of ~X~ for ~Y~... |
+|------+---------------+-------------+-------------------------|
+| A    |             1 |           1 | allowed                 |
+| B    |             1 |           0 | irrelevant              |
+| C    |             0 |           1 | not allowed             |
+| D    |             0 |           0 | irrelevant              |
+|------+---------------+-------------+-------------------------|
+
+
+**** Example
+:PROPERTIES:
+:mtime:    20211013082514
+:ctime:    20211013082514
+:END:
+
+#+CAPTION: Hypothetical data matrix with ten cases and set-membership scores in three conditions and the outcome (adapted from p. 61)
+|------------+----+----+----+----+----+----+--------+---|
+| Cases      |  A |  B |  C | ~A | ~B | ~C | ~A + C | Y |
+|------------+----+----+----+----+----+----+--------+---|
+| ARG        |  1 |  1 |  1 |  0 |  0 |  0 |      1 | 0 |
+| PER        |  1 |  0 |  0 |  0 |  1 |  1 |      0 | 0 |
+| BOL        |  1 |  1 |  0 |  0 |  0 |  1 |      0 | 0 |
+| CHI        |  0 |  1 |  0 |  1 |  0 |  1 |      1 | 1 |
+| ECU        |  1 |  0 |  0 |  0 |  1 |  1 |      0 | 0 |
+| BRZ        |  0 |  1 |  1 |  1 |  0 |  0 |      1 | 1 |
+| URU        |  1 |  0 |  1 |  0 |  1 |  0 |      1 | 1 |
+| PAR        |  0 |  0 |  1 |  1 |  1 |  0 |      1 | 1 |
+| COL        |  0 |  0 |  0 |  1 |  1 |  1 |      1 | 1 |
+| VEN        |  1 |  1 |  1 |  0 |  0 |  0 |      1 | 0 |
+|------------+----+----+----+----+----+----+--------+---|
+| Necessary? | No | No | No | No | No | No |    Yes | - |
+|------------+----+----+----+----+----+----+--------+---|
+
+#+begin_example
+Hint: first look for Y, then to X. If ~Y is present, it is irrelevant.
+#+end_example
+*Conclusion:* $\neg A + C$ is necessary for $Y$ to occur.
+
+*** Fuzzy sets :ATTACH:
+:PROPERTIES:
+:ID:       a4b0a9d1-879c-4ca6-9a17-3d96f941fbb7
+:END:
+
+For necessity, each case's fuzzy set membership score in $X$ must be equal or greater than its fuzzy-set membership in the outcome.
+When it occur, $X$ is a superset of $Y$:
+#+BEGIN_latex
+\begin{equation}
+X \supset Y
+\end{equation}
+#+END_latex
+All cases with non-zero membership in outcome are relevant for the analysis of necessity.
+
+#+CAPTION: XY plot - distribution of cases for necessary condition X
+[[file:./.attach/a4/b0a9d1-879c-4ca6-9a17-3d96f941fbb7/_20210201_164610screenshot.png]]
+
+** Causal complexity in set-theoretic methods
+
+- The number of cases should *not* be the central argument in favor of using QCA
+  + QCA could be applied in studies with a large dataset
+  + Theories and expectations about the underlying causal processes.
+
+**** Defining causal complexity
+
+Causal complexity has three main characteristics:
+
+- *Equifinality:* presence of different, mutually non-exclusive path for the same phenomenon
+  + Presence of sufficient but non-necessary condition implies equifinality
+- *Conjunctural causation:* The effect of a single condition unfolds only in *combination* with other
+  + Existence of necessary but non-sufficient condition implies conjunctural causation
+- *Causal asymmetry:* The absence of an outcome is not necessarily equivalent to the negation of the condition that explains the presence of it.
+  + DeMorgan's Law is not necessarily valid
+    - To be testable, it is needed to include all possible combinations (no logical reminders)
+
+**** INUS and SUIN conditions
+
+*INUS:* *I* nsufficient but *N* ecessary parte of a condition which is itself *U* nnecessary but *S* ufficient for the result
+
+#+BEGIN_latex
+\begin{equation}
+AB + \neg BC + D\neg F \to Y
+\end{equation}
+#+END_latex
+In this case, condition ~A~ is insufficient on its own but needed to form a sufficient conjunction together with ~B~.
+The *sufficient* condition ~AB~ is not the only path to the outcome (/i.e./ it is unncecessary).
+
+#+begin_example
+Hint: if a condition occurs together with other to produce the outcome, but it is not the only path, so it is an INUS conditon.
+#+end_example
+
+*SUIN:* *S* ufficient, but *U* nnecessary part of a factor that is *I* nsufficient, but a *N* ecessary for the result.
+#+BEGIN_latex
+\begin{equation}
+(A+B)\cdot (C + \neg D) \leftarrow Y
+\end{equation}
+#+END_latex
+In this case, there are two necessary conditions (A+B and C + ~D).
+Eache one element alone of the condition is not necessary, but mutually substitutable elements of necessary conditions for Y.
+
+* Chapter 4: Truth Tables
+:PROPERTIES:
+:PAGES:    91-115
+:END:
+
+
+** What is a truth table?
+
+In a Truth Table (TT), each row represents one of the logically possible AND combinations between conditions.
+The total number of rows is $2^{2}$ in which $k$ is the number of conditions.
+Each row denotes a *qualitatively different* combination of conditions.
+
+** How to get from a data matrix to truth table
+
+*** Crip sets
+1. Write down all $2^{k}$ logically possible combination
+2. Assign each case to a TT row
+   a. Each case can belong to only onele TT row, but each row can contain more than one case
+3. Attribute to every TT row the outcome, which denotes *sufficiency*
+   a. 1 indicates cases with given characteristics also show the outcome
+
+#+CAPTION: Hypothetical TT with 3 conditions
+|-----+---+---+---+---+----+----------|
+| Row | A | B | C | Y | ~Y | Cases    |
+|-----+---+---+---+---+----+----------|
+|   1 | 0 | 0 | 0 | 1 |  0 | COL      |
+|   2 | 0 | 0 | 1 | 1 |  0 | PAR      |
+|   3 | 0 | 1 | 0 | 1 |  0 | CHI      |
+|   4 | 0 | 1 | 1 | 1 |  0 | BRZ      |
+|   5 | 1 | 0 | 0 | 0 |  1 | PER, EC  |
+|   6 | 1 | 0 | 1 | 1 |  0 | URU      |
+|   7 | 1 | 1 | 0 | 0 |  1 | BOL      |
+|   8 | 1 | 1 | 1 | 0 |  1 | ARG, VEN |
+|-----+---+---+---+---+----+----------|
+
+*** Fuzzy sets
+
+For fuzzy sets, it is usefull to consider the concept of *property space*.
+Each set constitutes one dimension of the property space:
+Based on set membership in the conditions, each case has one location in the *property space*[fn:: None condition should be calibrated as 0.5 to this results be valid.] which have $2^{k}$ corners that represents *ideal types*.
+The crutial point is that, while each case has partial membership in all rows, the is only one row in which its membership exceeds the qualitative anchor of 0.5[fn::No matter how many fuzzy sets are combined as long as none of them is calibrated as 0.5 (maximum ambiguity).].
+
+#+CAPTION: Fuzzy-set membership in ideal types for hypothetical data matrix
+|------+------------+-----+-----+-------------+------+------+-------+------+-------+-------+--------|
+| Case | Conditions |     |     | Ideal types |      |      |       |      |       |       |        |
+|------+------------+-----+-----+-------------+------+------+-------+------+-------+-------+--------|
+|      |          A |   B |   C | ABC         | AB~C | A~BC | A~B~C | ~ABC | ~AB~C | ~A~BC | ~A~B~C |
+|------+------------+-----+-----+-------------+------+------+-------+------+-------+-------+--------|
+| VEN  |        0.9 | 0.7 | 0.6 | *0.6*         |  0.4 |  0.3 | 0.3   |  0.1 |   0.1 |   0.1 |    0.1 |
+| ECU  |        0.9 | 0.1 | 0.3 | 0.1         |  0.1 |  0.3 | *0.7*   |  0.1 |   0.1 |   0.1 |    0.1 |
+| HYPO |        0.8 | 0.1 | _0.5_ | 0.1         |  0.1 |  *0.5* | *0.5*   |  0.1 |   0.1 |   0.2 |    0.2 |
+|------+------------+-----+-----+-------------+------+------+-------+------+-------+-------+--------|
+
+*MEMO:* Each TT row is a statement of sufficiency.
+So, each TT row should considered a sufficient conjunction for the outcome if each case's membership in this row is smaller than or equal to its membership in the outcome.
+Additionally, it is important to point out that this procedure does not involve any conversion of fuzzy-sets into crisp sets.
+
+#+CAPTION: Fuzzy-set membership in rows and outcome
+|-------------+------------+-----+-----+-------------+------+------+-------+------+-------+-------+--------+---------|
+| Case        | Conditions |     |     | Ideal types |      |      |       |      |       |       |        | Outcome |
+|-------------+------------+-----+-----+-------------+------+------+-------+------+-------+-------+--------+---------|
+|             |          A |   B |   C |         ABC | AB~C | A~BC | A~B~C | ~ABC | ~AB~C | ~A~BC | ~A~B~C |       Y |
+|-------------+------------+-----+-----+-------------+------+------+-------+------+-------+-------+--------+---------|
+| ARG         |        0.8 | 0.9 |   1 |         *0.8* |    0 |  0.1 |     0 |  0.2 |     0 |   0.1 |      0 |     0.1 |
+| PER         |        0.7 |   0 |   0 |           0 |    0 |    0 |   *0.7* |    0 |     0 |     0 |    0.3 |     0.4 |
+| BOL         |        0.6 |   1 | 0.1 |         0.1 |  *0.6* |    0 |     0 |  0.1 |   0.4 |     0 |      0 |     0.3 |
+| CHI         |        0.3 | 0.9 | 0.2 |         0.2 |  0.3 |  0.1 |   0.1 |  0.2 |   *0.7* |   0.1 |    0.1 |     0.6 |
+| ECU         |        0.9 | 0.1 | 0.3 |         0.1 |  0.1 |  0.3 |   *0.7* |  0.1 |   0.1 |   0.1 |    0.1 |     0.4 |
+| BRZ         |        0.2 | 0.8 | 0.9 |         0.2 |  0.1 |  0.2 |   0.1 |  *0.8* |   0.1 |   0.2 |    0.1 |     0.7 |
+| URU         |        0.9 | 0.2 | 0.8 |         0.2 |  0.2 |  *0.8* |   0.2 |  0.1 |   0.1 |   0.1 |    0.1 |     0.8 |
+| PAR         |        0.2 | 0.3 | 0.7 |         0.2 |  0.2 |  0.2 |   0.2 |  0.3 |   0.3 |   *0.7* |    0.3 |     0.9 |
+| COL         |        0.2 | 0.4 | 0.4 |         0.2 |  0.2 |  0.2 |   0.2 |  0.4 |   0.4 |   0.4 |    *0.6* |       1 |
+| VEN         |        0.9 | 0.7 | 0.6 |         *0.6* |  0.4 |  0.3 |   0.3 |  0.1 |   0.1 |   0.1 |    0.1 |     0.3 |
+|-------------+------------+-----+-----+-------------+------+------+-------+------+-------+-------+--------+---------|
+| $X \leq Y$? |          - |   - |   - |          No |   No |  Yes |    No |   No |    No |   Yes |    Yes |       - |
+|-------------+------------+-----+-----+-------------+------+------+-------+------+-------+-------+--------+---------|
+
+
+#+CAPTION: TT derived from hypothetical fuzzy-set data
+|------+------------+---+---+----------------+------------------------------|
+| Rows | Conditions |   |   | Sufficient for | Cases with                   |
+|      |          A | B | C |              Y | Membership $\leq 0.5$ in row |
+|------+------------+---+---+----------------+------------------------------|
+|    1 |          0 | 0 | 0 |              1 | COL (0.6)                    |
+|    2 |          0 | 0 | 1 |              1 | PAR (0.7)                    |
+|    3 |          0 | 1 | 0 |              0 | CHI (0.7)                    |
+|    4 |          0 | 1 | 1 |              0 | BRZ (0.8)                    |
+|    5 |          1 | 0 | 0 |              0 | PER (0.7), EC (0.7)          |
+|    6 |          1 | 0 | 1 |              1 | URU (0.8)                    |
+|    7 |          1 | 1 | 0 |              0 | BOL (0.6)                    |
+|    8 |          1 | 1 | 1 |              0 | ARG (0.8), VEN (0.6)         |
+|------+------------+---+---+----------------+------------------------------|
+
+** Analyzing truth tables
+
+*MEMO:* All rows that are linked to the outcome value of 1 are the *sufficient* conditions.
+For the analysis of *necessity*, the bottom-up procedure has to be used.
+However, the TT does not play an important role in the analysis of necessity.
+
+*** Matching similar conjunctions
+
+1. Create a Boolean expression of all those TT rows that are connected to the outcome to be explained.
+   a. *Primitive expressions:* Conjuctions representing a TT row
+2. This formula is the most complex way to express sufficiency
+3. Start *logical minimization* (Quine-McCluskey algorithm)
+   a. If two TT rows differ in only one condition, so this condition is /logically redundant/ and irrelevant for producing the outcome and thus can be *ommited*
+      a. The result is called *prime implicant*
+   b. The resultant formula is *logically equivalent* to the most complex formula and to all imtermediate formulas
+4. Check if any primitive expression is covered by mor then one *prime implicant*. If so, it could be minimized again.
+5. The final expression is (compared to the first one):
+   a. Logically equivalent
+   b. Express the same information contained in the TT
+   c. Do noto contradict each other, nor do they contradict the information in the TT
+   d. Summaries the empirical information
+
+
+#+begin_example
+~A~B~C + ~A~BC + ~AB~C + ~ABC + A~BC -> Y
+
+~A~B + ~AB~C + ~ABC + A~BC -> Y
+
+~A~B + ~AB + A~BC -> Y
+
+~A + A~BC -> Y
+
+~A + ~BC -> Y
+#+end_example
+
+#+CAPTION: Prime implicant chart
+|------------------+--------+-------+-------+------+------|
+| Prime implicants | ~A~B~C | ~A~BC | ~AB~C | ~ABC | A~BC |
+|------------------+--------+-------+-------+------+------|
+| ~A               | X      | X     | X     | X    | -    |
+| A~BC             | -      | -     | -     | -    | X    |
+|------------------+--------+-------+-------+------+------|
+
+*** Logically redundant prime implicants
+
+Prime implicants can be defined as the end products of the logical minimization process through pairwise comparisons of conjunctions.
+A prime implicant is logically redundant if all of the primitive expressions are convred without it bein included in the solution formula.
+
+#+CAPTION: Prime implicant chart
+|------------------+-----------------------+------+------+-------|
+| Prime implicants | Primitive expressions |      |      |       |
+|------------------+-----------------------+------+------+-------|
+|                  | REP                   | RE~P | ~REP | ~R~EP |
+| RE               | X                     | X    |      |       |
+| ~RP              |                       |      | X    | X     |
+| +EP+ (Redundant)   | X                     |      | X    |       |
+|------------------+-----------------------+------+------+-------|
+
+*** Issues related to the analysis of the non-occurence of the outcome
+
+In summary, set relations are *asymmetric* so the analysis for the non-occurence of the outcome could not be inferred from its presence.
+Thus, the analysis should start again and another TT should be constructed.
+As a reminder, DeMorgan's law is not necessarily valid and is only possible in a TT withot contraditions nor logical reminders.
+It is worth mentioning that whenever a single condition is part of all sufficient path, then this condition must be *necessary* for the out come.
+However, this conclusion is valid only if the suffiency analysis is performed on a *fully specified truth table*.
+
+* Chapter 5: Parameters of fit
+** Defining a dn dealing with contradictory truth table rows
+
+Contradictory rows are those cases with same membership scores and *do not* share the same membership in outcome.
+Thus, it cannot be included in the minimization procedure.
+The following strategies could be employed in order to solve contradictions:
+
+- *Adding a condition:* This procedure may remove the contradiction as long as cases differs in the new added condition
+  + _CONS:_ Doubles the number of TT rows and increases the problem of *limited diversity*
+- *Respecify the definition of the population of interest:* Some case could be excluded or added based on theoretical arguments and not in /ad hoc/ contradiction solving motivation
+- *Respecify the outcome:* Recalibrating the outcome membership score may solve the contradiction, but this procedure must be theoretically driven
+
+During the process of *minimization*, there are mutually exclusive treatments of logically contradictory rows:
+- Exclude all of them
+- Include all of them since it makes the occurrence of the outcome possible
+  + _CONS:_ Covers cases that are not members of the outcome
+  + Make all inconsistent rows available for computer-generated assumptions about their outcome value in order to make the solution term more parsimonious
+
+Alternatively, it is possible to analyze how much, or to what degree, a given row deviates from a perfect set relation.
+This is the rationale behind the consistency measure.
+It is advisable to use consistency measure to guide wheter or not include a TT row into the logical minimization procedure.
+
+** Consistency of sufficient conditions
+
+The consistency of a sufficient condition $X$ for outcome $Y$ is mathematically expressed by dividing the numbers of cases where $X$ and $Y$ are present by the number of cases in which $X$ is present whether or not the outcome occurs.
+The *raw consistency* is the consistency measure refers to the truth table rows while the *solution consistency* refers to the entire solution.
+Thus, the crisp variant is:
+
+#+BEGIN_latex
+\begin{equation}
+Cons_{X,Y} = \frac{\text{Num. } X=1 \land \text{Num.} Y = 1}{\text{Num. } X=1}
+\end{equation}
+#+END_latex
+The crisp variant, however, is deficient since it gives equal weight to all cases below the diagonal.
+In other words, the distance between cases ant the diagonal is not considered.
+
+For fuzzy sets, the consistency measure is calculated as the sum of the minimum value across the membership score in $X$ and in $Y$ and divided by the sum of the membership values in $X$ across *all* cases:
+
+#+BEGIN_latex
+\begin{equation}
+Cons_{X \leq Y} = \frac{\sum \min{(X_{i}, Y_{i})}}{\sum X_{i}}
+\end{equation}
+#+END_latex
+Since considers all the cases, the fuzzy variant is more conservative and include how far the case is from the main diagonal.
+However, there is one particular shortcoming: does not take into account whether an inconsistent case is above or beloe the qualitative anchor of 0.5 both in $X$ and/or $Y$.
+Additionally, in fuzzy sets, not all inconsistent rows are automatically truly logically contradictory.
+
+That been said, which consistency cut to choose?
+The consistency threshold depend on the specific research context.
+The more precisa and strong the theoretical expectations, the higher the consistency that should be used.
+The lower the number of cases, the higher the consistency as well.
+
+** Coverage of sufficient conditions
+
+The *coverage* measure expresse the degree to which the consistent part of sufficiency condition $X$ overlaps with the outcome $Y$:
+#+BEGIN_latex
+\begin{equation}
+Cov_{X,Y} = \frac{\text{Num. } X=1 \land \text{Num.} Y = 1}{\text{Num. } Y=1}
+\end{equation}
+#+END_latex
+The fuzzy-set equivalent is:
+#+BEGIN_latex
+\begin{equation}
+Cov_{X \leq Y} = \frac{\sum \min{(X_{i}, Y_{i})}}{\sum Y_{i}}
+\end{equation}
+#+END_latex
+In summary, express how empirically important a subset relation is.
+Conditions with low coverage cover only a little of the outcome of interest, but that little might be huge theoretical or substantive importance.
+That is why there is no coverage threshold.
+
+It is important to point that coverage *increases* due to cases that are inconsistent with the statement of sufficiency.
+However, the coverage should be calculated for condition that have passed a threshold of consistency.
+
+Similar to the consistency measure, the coverage of each path is called *raw coverage* (CovR) while the coverage of a specific path is called *unique coverage* (CovU) and the solution term leads to the *solution coverage*.
+If there is no logically redundant path, all parts of the solution will have an *unique coverage* greater than zero.
+If logically redundant prime implicant are included, the unique converage will be zero.
+The CovU is calculated by subtracting from the solution coverage that is obtained by all paths except the one whose unique converage we are interested in.
+Suposing the following solution:
+
+#+begin_example
+~A~C + ~BC + F~D
+#+end_example
+the unique converage will be:
+#+begin_example
+CovU (~A~C) = CovS - Cov(~BC + F~D)
+#+end_example
+
+** Consistency of necessary conditions
+
+If a condition is necessary for the outcome, then no case may show the outcome without this condition.
+Thus:
+#+BEGIN_latex
+\begin{equation}
+Cons_{Nec, X,Y} = \frac{\text{Num. } X=1 \land \text{Num.} Y = 1}{\text{Num. } Y=1}
+\end{equation}
+#+END_latex
+while the fuzzy equivalent is:
+#+BEGIN_latex
+\begin{equation}
+Cons_{X \geq Y} = \frac{\sum \min{(X_{i}, Y_{i})}}{\sum Y_{i}}
+\end{equation}
+#+END_latex
+
+It is important to check if true logical contradictory exists and not rely on consistent level.
+For necessary conditions, a consistency threshold of at least 0.9 is advisable.
+
+** Coverage of necessary conditions
+
+The label coverage is misleading.
+If $X$ has passed the consistency test as a necessary condition, thus
+
+#+begin_quote
+$X$ is a superset of $Y$ and thus $X$ fully covers $Y$.
+In other words, by virtue of bein necessary, $X$ always fully covers all cases of membership in $Y$.
+#+end_quote
+In this sense, coverage of necessary conditions should be considered a measure of relevance or trivialness which crisp version is:
+#+BEGIN_latex
+\begin{equation}
+Cov_{Nec. X,Y} = \frac{\text{Num. } X = 1 \land \text{Num. } Y = 1}{\text{Num. X = 1}}
+\end{equation}
+#+END_latex
+while the fuzzy-equivalent is
+#+BEGIN_latex
+\begin{equation}
+Cov_{Nec., X \geq Y} = \frac{\sum \min{(X,Y)}}{\sum X}
+\end{equation}
+#+END_latex
+
+Two points are worth mentioning about the coverage formula.
+First, values for coverage necessity tend to be rather high.
+Unlike coverage sufficiency, in research practice, values far below 0.5 are rare and those close to 0 hardly ever seen.
+This suggests that when assessing the trivialness of necessary conditions, researchers should not be misled by seemingly high coverage values.
+
+** Issues related to consistency and coverage :ATTACH:
+- When using fuzzy-sets, we also advise paying close attention to which cases are true logical contradictions (TLC, see chapter 7), uniquely covered, and which one are not covered at all
+- With sufficiency, very low coverage values indicates that only a small portion of the outcome of interest is explained by that condition
+  + But could still be part of theoretical interest
+- Higher consistency values often come at the price of lower coverage values
+  + The more conditions that are combined, the more difficult membership it becomes
+
+#+CAPTION: XY plot - The tension between consistency and coverage of sufficient conditions
+[[file:./.attach/56/7cad9d-8821-47f8-93b2-37d6d5d15257/_20210202_183532screenshot.png]]

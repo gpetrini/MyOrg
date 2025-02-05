@@ -1,0 +1,87 @@
+#+title:      The Financial Instability Hypothesis: An Interpretation of Keynes and an Alternative to "Standard" Theory
+#+date:       [2020-12-04 sex 00:00]
+#+filetags:   :bib:canonicalmodels:financial:fixed:instability:minsky:
+#+identifier: 20201204T000000
+#+reference:  minsky_1977_Financial
+
+
+
+* The Financial Instability Hypothesis: An Interpretation of Keynes and an Alternative to "Standard" Theory
+  :PROPERTIES:
+  :Custom_ID: minsky1977FinancialInstabilityHypothesis
+  :URL: 
+  :AUTHOR: 
+  :END:
+
+** FISH-5SS
+
+
+|---------------------------------------------+----------------------------------------------------------------------------------------------------|
+| *Background*                                  |                                                                                                    |
+| *Supporting Ideas*                            | Financial Instability is a recurrent phenomena in capitalist economies                             |
+| *Purpose*                                     | Present the FIH and argue why it is more adequate to a capitalist economy than the standard theory |
+| *Originality/value (Contribution)*            | Presents the FIH as an interpretation of Keynes General Theory                                     |
+| *Relevance*                                   |                                                                                                    |
+| *Design/methodology/approach*                 |                                                                                                    |
+| *Results*                                     | FIH as an explanation to the business cycle                                                        |
+| *(Interesting) Findings*                      |                                                                                                    |
+| *Research limitations/implications (Critics)* |                                                                                                    |
+| *Uncategorized stuff*                         |                                                                                                    |
+| *5SS*                                         |                                                                                                    |
+|---------------------------------------------+----------------------------------------------------------------------------------------------------|
+
+** Backlinks
+[[denote:20201202T092036][IEE882 - Macroeconomia Financeira]]
+
+* Specifics comments
+
+** Introduction
+
+The author starts presenting some standar interpretations of textcite:keynesGeneralTheoryEmployment1936a General Theory as follows
+
+- Viner attributes GT novelty to wage and prices rigidities and to a varying money velocity coefficient
+  + Keynes rebuts and proposes an interpretation that is inconsistent with the standard IS-LM framework
+  + The Financial Instability Hypothesis (FIH) is argued to be more consistent with Keynes interpretation of cite:keynesGeneralTheoryEmployment1937 
+
+** Interpretation Of The General Theory In Light Of Keynes's Rebuttal To Professor Viner
+
+- Neoclassical: financial crisis are anomalies
+- Keynes: proposes an explanation of financial and output instability throughout *uncertainty*
+  + Focus on *investment decisions* and its financial usage
+  + To understand this topic it is necessarily to abbandon the village paradigm
+  + In *Wall street paradigm* money is a special type of bond that emerges as position in *capital assets* are *financed*
+    - Money as a veil between the "real asset and the wealth owner"
+    - Uncertainty and expectations affects the relative prices of *capital assets and financial instruments* as well as the relation between capital-asset price and the price of current output
+ 
+** The Financial Instability view of our economy 
+Looking throught the lenses of Wall street paradigm, cash flows are legacy of past contracts. That been said, Minsky focus on *business debt*. Next, the author states that profit flows depends on *scarcity of specific capital assets: _capital used to produce investment goods_*. Thus, profits depends on the *pace of investment*.
+
+#+BEGIN_QUOTE
+It follows that present acceptable liability structures reflect current speculations on the course of future investment
+#+END_QUOTE
+
+The same applier to equities share prices which are a result of capitalizing the expected residuals of cash flows. Additionaly, equity prices determines *market value of capital assets* and affects demand for investment goods. Thus, equity prices are relevant to explain firms investment. Next, Minsky discuss the inclusion of the government similar to Kalecki. This discussion can be summarized as follows:
+#+BEGIN_QUOTE
+The behavior of our economy therefore depends upon the pace of investment. In a capitalist economy the valuation that is placed upon capitalassets, which determines current investment, and the ability to fulfill contractual commitments, which determines financing possibilities, depend critically upon the pace of gross profits. Gross profits, in turn, are largely determined by investment. Thus the ability to debt finance new investment depends upon expectations that future investment will be high enough so that future cash flows willbe large enough for the debts that
+are issued today to be repaid or refinance.
+#+END_QUOTE
+
+In summary, investment determines both aggregate demand and debt structure. Thus, an economy with more private debt tend to be more vulnerable. The associated instability occurs from the uncertainty nature of the capitalist economy. As a consequence, *uncertainty* determines both income and employment.
+
+Next, Minsky explain the movement from a hedge debt structure units to a Ponzi one. This direction is associated with the incompability between stable growth and investment determinants. Additionaly, the author points out the relevance of *financial innovations*. In summary, an increase on finance availability increases the prices of *assets* relative to *current output* which leads to an increase on *investment*. 
+
+- *Hedge positions:* Cash flow are sufficient to meet debts
+  + Depends on normal functioning of output market
+- *Speculative positions:* Cash flow expects to meet debt commitment by rising funds with new debt
+  + Also depend on normal functioning of financial markets
+  + Vulnerabilities:
+    - Must meet market as they refinance debt $\Leftrightarrow$ interest rate increase could rise payments commitments 
+    - Assets are longer than they liabilities, an increase in both short and long run interest rate will lead to a *greater* fall in their asset market value than liabilities
+      + TODO: Perguntar
+    - Acceptables views on liabilities structures are subjectives
+- *Ponzi positions:* cash payment commitments are met by increasing outstanding debt  
+
+Thus, Minsky proposes an endogenous explanation for financial crises. One way to abort this result is through government intervation.
+
+
+

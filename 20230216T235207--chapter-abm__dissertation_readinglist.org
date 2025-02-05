@@ -1,0 +1,6 @@
+#+title:      Chapter ABM
+#+date:       [2023-02-16 qui 23:52]
+#+filetags:   :dissertation:readinglist:
+#+identifier: 20230216T235207
+
+[[denote:20230216T235205][PhD Dissertation Reading List]]

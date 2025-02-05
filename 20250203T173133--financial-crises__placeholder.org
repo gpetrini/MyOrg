@@ -1,0 +1,7 @@
+#+title:      Financial Crises
+#+date:       [2025-02-03 seg 17:31]
+#+filetags:   :placeholder:
+#+identifier: 20250203T173133
+#+OPTIONS: num:nil ^:{} toc:nil
+
+[[denote:20250205T110047][Historical Events]]

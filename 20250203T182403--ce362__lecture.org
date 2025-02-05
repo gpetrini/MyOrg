@@ -38,8 +38,8 @@ Em linhas gerais, o curso de microeconomia II abandonará estas hipóteses.
     - Competição monopolística
   - Oligopólio
 
-Além disso, será tratado de [[id:1fc2115e-9b3a-435c-b3d0-854f96f82c95][Teoria dos Jogos]] uma vez que parte do conteúdo trata da interdependência dos agentes.
-Adiante, aborda-se um modelo de [[id:175002f6-69a8-4fa1-a7da-b76802ecc21e][General Equilibrium Model]].
+Além disso, será tratado de [[denote:20250202T114849][Game Theory]] uma vez que parte do conteúdo trata da interdependência dos agentes.
+Adiante, aborda-se um modelo de [[denote:20250202T121100][General Equilibrium Model]].
 
 * Monopólio (<2022-03-17 qui> - <2022-04-21 qui>)
 
@@ -61,7 +61,7 @@ Dentre as causas do monopólio, elenca-se:
 *** Hipóteses
 
 - Empresa oferta todas as unidades de um mesmo bem ou serviço ao mesmo preço
-  - Por consequência, não há [[id:f1570a85-af92-48fc-bb26-f7c60a77fb4e][Discriminação de preços]]
+  - Por consequência, não há [[denote:20250202T121943][Price Discrimination]]
 - *Objetivo:* Maximizar lucro
 - Empresa é definidora de preço
 - Custo marginal não-negativo

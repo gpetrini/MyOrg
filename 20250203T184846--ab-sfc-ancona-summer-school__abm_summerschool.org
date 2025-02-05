@@ -138,7 +138,7 @@ The ideia is that the \(f(x)\) is dificult to calculate.
 - Real wealth is accumulated over time with investment, and financial wealth (credit) with savings
   - Must identify the sources of liquidity and expenditures and ensure that each payment from one sector is recorded as a receipts to other
 
-The SFC approach have some similarities with the [[id:db24fe85-9afa-4dd2-b74b-b04bbe5043d0][Monetary Circuit]] approach, however there are some drawbacks.
+The SFC approach have some similarities with the [[denote:20250203T181645][Monetary Circuit]] approach, however there are some drawbacks.
 For example, the latter does not includes capital goods payments or interest payment on loans.
 
 ** Principles of SFC
@@ -206,7 +206,7 @@ Start from the previous identity and multiply by the price:
 \[\Delta s_{t} = f_{t} + \Delta p\cdot s_{t-1}\]
 Dividing by the price
 \[\Delta S_{t} = F_{t} + \lambda\cdot S_{t-1}\]
-The last term defines net capital gains.[fn::Zezza points out that the [[id:8d3c092d-8546-4dc0-8a04-55d3d8a09191][Dot-Com crisis]] was a capital gains-led cycle.]
+The last term defines net capital gains.[fn::Zezza points out that the [[denote:20250203T172959][Dot-Com Crisis]] was a capital gains-led cycle.]
 
 
 ** Fundamental flows-to-stock links
@@ -216,7 +216,7 @@ The stock of capital increases with net investment, for example:
 - Government debt increases with government borrowing
 - The net international position changes according to the current account balance
 
-Note: According to Zezza, private sector have a positive balance due to [[id:4a226c14-c204-4493-b5f9-e06aa06e2954][Uncertanty]].
+Note: According to Zezza, private sector have a positive balance due to [[denote:20250202T114632][Uncertanty]].
 In this sense, government bills is one of the safest assets.
 
 ** Closures

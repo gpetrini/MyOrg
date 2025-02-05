@@ -10,13 +10,9 @@ Time-stamp: 2021-08-17
 
 * Backlinks
 
-[[id:a405ebe8-05ae-41ec-86a2-87c1fdba4e18][Macroeconomia da Demanda Efetiva na abordagem do excedente]]
+[[denote:20201203T145735][Macroeconomia da Demanda Efetiva na abordagem do excedente]]
 
-[[id:e42ca86d-529a-4cbe-bb16-fdb971b9c208][Sraffian Theory]]
-
-[[id:ed384551-c7ba-492f-be69-15906157ef9d][Sraffian suppermultiplier growth model]]
-
-[[id:d21c21a8-1458-4ed9-b585-efb752d107b6][Demand-led growth models]]
+[[denote:20250203T184155][Supermultiplier Models]]
 
 
 

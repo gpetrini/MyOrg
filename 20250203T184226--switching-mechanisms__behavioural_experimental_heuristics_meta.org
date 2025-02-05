@@ -2,21 +2,10 @@
 #+date:       [2025-02-03 seg 18:42]
 #+filetags:   :behavioural:experimental:heuristics:meta:
 #+identifier: 20250203T184226
-
-#+HUGO_AUTO_SET_LASTMOD: t
-#+hugo_base_dir: ~/BrainDump/
-
-#+hugo_section: notes
-
-#+HUGO_TAGS: placeholder
-
 #+OPTIONS: num:nil ^:{} toc:nil
 #+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
 
 * Heuristic switching model
-:PROPERTIES:
-:ID:       dd9fa53f-4487-4429-88d3-35fd290f14d2
-:END:
 
 
 [cite/t:@anufriev_2013_Evolutionary] extends [cite/t:@brock_1997_Rational] model proposing some simple heuristics in which agents switch among them according to its performance[fn::Recently, [cite/t:@dosi_2020_RATIONAL; @reissl_2021_Heterogeneousa] also adopted this approach.]
@@ -44,5 +33,5 @@ n_{rule,t} = \delta\cdot n_{rule,t-1} + (1-\delta)\cdot \frac{\exp{\gamma\cdot U
 #+END_latex
 with $\gamma \geq 0, \delta \leq 1$.
 
-In general, =str= leads to large [[id:628bc545-800c-4f2b-beb6-6933d381a2ad][Asset bubble]] while =aa= leads to oscillatory behavior.
+In general, =str= leads to large [[denote:20250202T114928][Asset bubble]] while =aa= leads to oscillatory behavior.
 Additionally, trend followers performs better in *positive feedback markets* and driven out by adaptative expectations in negative feedback markets.

@@ -11,11 +11,9 @@
 
 * Tags
 
-[[id:4fe0d267-ad06-4a8a-bc89-2ab6e37f6b61][Natural Prices]]
+[[denote:20250203T181935][Natural Prices]]
 
-[[id:35ff5292-f071-426c-a649-595c986ef2a6][Sraffian Theory]]
-
-[[id:fbb6c1d6-a334-4097-b763-82a15754b44a][Modern Surplus approach]]
+[[denote:20250203T181514][Modern Surplus Approach]]
 
 * Introdução ao curso <2021-09-30 qui>
 
@@ -62,11 +60,6 @@ O projeto de pesquisa proposto a partir da retomada da abordagem clássica do ex
   - Em resumo, a teoria dos preços relativos dependem necessariamente da teoria da *distribuição*
 
 * Sraffa antes de 1960 <2021-09-30 qui> e <2021-10-07 qui>
-:PROPERTIES:
-:ID:       9610fd16-ec5c-472c-9cb0-9c6222156e32
-:mtime:    20211202152742
-:ctime:    20211202152742
-:END:
 
 ** Referências
 
@@ -132,11 +125,6 @@ Em equilíbrio parcial, Sraffa concluiu que a curva de oferta de longo prazo (em
 
 
 ** Preço limite e renda diferencial
-:PROPERTIES:
-:ID:       95c70823-73fa-4bcd-90bd-ba0d49d8b0c5
-:mtime:    20211202152742
-:ctime:    20211202152742
-:END:
 
 
 - A renda (lucro) de determinado agente é dado pelo entrante potencial
@@ -220,11 +208,6 @@ Em equilíbrio parcial, Sraffa concluiu que a curva de oferta de longo prazo (em
 
 
 * Produção de mercadorias por meio de mercadorias: determinação da taxa de lucro e preços relativos em sistemas de capital circulante <2021-10-07 qui> e <2021-10-28 qui>
-:PROPERTIES:
-:ID:       8149d38f-b940-4d80-9a13-ebf1cc7fc2cb
-:mtime:    20211202152740
-:ctime:    20211202152740
-:END:
 
 ** Sraffa e o livro
 
@@ -651,11 +634,6 @@ A implicação da mudança do preço relativo
 
 
 *** Trabalho comandado :ATTACH:
-:PROPERTIES:
-:ID:       64dd467a-8fb7-4f13-a13a-933529796b8b
-:mtime:    20211202152739
-:ctime:    20211202152739
-:END:
 
 #+BEGIN_latex
 \begin{equation}
@@ -675,11 +653,6 @@ Trabalho comandado: Preço da mercadoria dividido pelo salário nominal
   - Quando a taxa de lucro é positiva, o trabalho comandado vai ser maior que o trabalho incorporado
 
 *** Redução a quantidade de trabalho datado (usando trabalho comandado) :ATTACH:
-:PROPERTIES:
-:ID:       fc165bc7-fb2b-4472-b4cb-6b2ad7da9d63
-:mtime:    20211202152743
-:ctime:    20211202152743
-:END:
 
 Voltando para o exemplo de produção de dois estágios (peixe e pedra)
 
@@ -726,11 +699,6 @@ em que $n$ é o insumo que só utiliza trabalho.
 *** Teoremas de Perron-Frobenius
 
 * Renda da terra <2021-11-11 qui> e <2021-11-18 qui> 
-:PROPERTIES:
-:ID:       36424ec5-5e74-45fe-ac78-d57e7519c13a
-:mtime:    20211125173558 20211125163117 20211125152503 20211118180617 20211118170443 20211118160436
-:ctime:    20211118160436
-:END:
 
 ** Introdução
 :PROPERTIES:
@@ -738,18 +706,18 @@ em que $n$ é o insumo que só utiliza trabalho.
 :ctime:    20211118160116
 :END:
 
-Supondo que o conceito clássico de concorrência (mobilidade de capitais, [[id:048efa50-0642-4bf9-adf1-7974b1624492][Classical competition]]) e coexistência de técnicas, a técnica dominante irá determinar os preços.
+Supondo que o conceito clássico de concorrência (mobilidade de capitais, [[denote:20250202T121619][classical_competition]]) e coexistência de técnicas, a técnica dominante irá determinar os preços.
 Em síntese, o preço de determinada mercadoria depende dos custo dos concorrentes e não (apenas) dos próprios custos.
 O preço de produção, portanto, é determinado pelo capital regulador que depende da técnica socialmente necessária[fn::Fazendo uma analogia com a teoria marginalista, o preço seria determinado pelo custo médio do produtor marginal, e não pelo custo marginal.].
 
 
 Aqueles que adotam uma técnica superior (custo menor que o da técnica dominante), auferem lucros anormais.
-No caso de firmas que inovam de forma persistente ([[id:8651d790-2079-4233-b8ba-a01e1ada53e8][Technological revolution]]), auferem lucros anormais de forma persistente, não sendo necessário alterar a teoria dos preços relativos.
+No caso de firmas que inovam de forma persistente ([[denote:20250203T184320][Technological revolution]]), auferem lucros anormais de forma persistente, não sendo necessário alterar a teoria dos preços relativos.
 
 Tal relação, no entanto, é diferente para recursos naturais[fn:: Sraffa trada recursos naturais renováveis e não-renováveis da mesma forma no capítulo XI.].
 Isso porque não há a possibilidade irrestrita de a técnica dominante[fn::Isso pode ser estendido, por exemplo, para o case de segredo industrial.].
 A taxa de lucro, portanto, passaria a depender também da renda associada ao uso desse tipo de mercadoria.
-No caso clássico do modelo da renda da terra de Ricardo [[[id:b2250ff4-9bf2-419c-ab5b-51408c6f7ce8][Land prices]]], a renda da terra paga aos donos da terra igualará a taxa de lucro líquida de aluguéis entre capitalistas via concorrência [[[id:cec34086-7f97-42f0-8a74-dbd75eedac2e][Rent prices]]].
+No caso clássico do modelo da renda da terra de Ricardo [[denote:20250202T120545][Land prices]], a renda da terra paga aos donos da terra igualará a taxa de lucro líquida de aluguéis entre capitalistas via concorrência [[denote:20250203T183723][Rent prices]].
 
 ** Renda diferencial "extensiva" (Tipo 1)
 
@@ -790,7 +758,7 @@ p_{1} = p_{1}
 #+END_latex
 
 Enquanto a terra III for abundante, não haverá renda deste espaço ($\sigma^{III} = 0$).
-Se outra terras menos produtivas começarem a ser ocupadas, surgirá um *diferencial de custos* (renda diferencial tipo 1, [[id:1577e614-b964-4b78-a601-f1062b373948][Extensive Differential Rent]]) que, regulado pela concorrência, será eliminado com pagamento da renda da terra.
+Se outra terras menos produtivas começarem a ser ocupadas, surgirá um *diferencial de custos* (renda diferencial tipo 1, [[denote:20250202T122348][Extensive Differential Rent]]) que, regulado pela concorrência, será eliminado com pagamento da renda da terra.
 O pagamento da renda diferencial só surgirá se a terra mais produtiva for completamente utilizada.
 Em resumo, surgirá o pagamento de renda na terra de melhor qualidade ($\sgima^{III}> 0$) e o preço será regulado pelos custos da terra menos produtiva[fn::Não é necessariamente a que produz mais, mas sim a que tem menores custos.].
 
@@ -850,7 +818,7 @@ Já para a construção de uma função demanda por terra bem comportada negativ
 A renda da terra não determina o preço, mas sim o oposto.
 O nível da renda da terra é elevado porque a taxa de lucro do bem produzido nela é elevado.
 
-** Renda diferencial intensiva (Tipo 2, [[id:d891bce2-de97-4f40-816a-aec7120092c9][Intensive Differential Rent]])
+** Renda diferencial intensiva (Tipo 2, [[denote:20250203T175955][Intensive Differential Rent]])
 
 Neste caso, diferentes métodos de produção coexistem em um mesmo espaço.
 A diferença em relação ao tipo 1 é que a renda será a mesma entre mesmas qualidades de terra.
@@ -907,7 +875,7 @@ Essa renda estaria no cálculo da determinação dos preços.
 Marx afirma que parte da mais-valia seria direcionada para a renda absoluta, enquanto não seria o caso para a renda diferencial.
 Vale apontar que Marx achava que a renda diferencial de Ricardo seria razoável apenas em condições restritas (ex: novas colônias).
 
-A renda absoluta em Marx está sujeita aos problemas do procedimento da transofrmação (adiante, [[id:a37fd324-12f2-4814-a90b-9093034ffa75][Marx depois de Sraffa]]).
+A renda absoluta em Marx está sujeita aos problemas do procedimento da transofrmação (adiante)
 Além disso, afirma que existiria um limite superior para a renda absoluta.
 A consequência é que se a renda absoluta fosse muito elevada, o preço relativo na agricultura seria menor que os valores de produção.
 
@@ -920,7 +888,7 @@ Já a renda da terra do tipo II --- em que métodos de produção coexistem --- 
 
 *** Renda da terra VS preço da terra
 
-- Preço da terra ([[id:b2250ff4-9bf2-419c-ab5b-51408c6f7ce8][Land prices]]): preço de demanda das futuras rendas capitalizadas
+- Preço da terra ([[denote:20250202T120545][Land prices]]): preço de demanda das futuras rendas capitalizadas
   - A especulação com a terra é mais rentável que a compra do terreno propriamente dito
     - O ganho de capital adviria da antecipação da escassez da terra
       - A especulação é sobre os prédios que já existem e, portanto, não há uma relação proporcional com a construção de novos prédios
@@ -992,7 +960,7 @@ Neste caso, o custo de produção do produtor marginal (que atende a demanda mar
 
 *** Escassez e especulação
 
-- [[id:b7ecc652-8087-4dab-a3f4-a4e1cf4804be][Hubbert Oil Peak]] ou /Peak Demand/
+- [[denote:20250203T175804][Hubbert Oil Peak]] ou /Peak Demand/
   - Este Pico de Hubbert diz que as propriedades de extração de um posso de petróleo seriam aplicadas para todo o setor
   - Já o pico de demanda implica um pico de produção restringido pela demanda por petróleo
 - Especulação e bolhas
@@ -1039,11 +1007,6 @@ Argumenta que geram quase-renda pelas renda que ainda podem propiciar.
     - Como consequência, nem todos estão utilizando a técnica dominante e, por consequência, nem todas as firmas terão uma taxa de lucro normal
 
 * Produção conjunta e capital fixo em Sraffa
-:PROPERTIES:
-:ID:       2d5e92fb-82b2-49f4-aea8-425a9ff157d4
-:mtime:    20211202152604
-:ctime:    20211202152604
-:END:
 
 ** Capital fixo
 
@@ -1055,17 +1018,17 @@ Suponha um método que produção que utiliza trigo e trator para a produção d
 Ao final do processo de produção, produz-se o bem e o "trator mais velho"[fn::Exceto o capital fixo utilizado que expira-se no mesmo período de produção. Neste caso, é tratado como capital circulante.].
 A diferença do trator nestes dois períodos é a depreciação no sentido econômico.
 
-Essa forma de explicação é a [[id:a67a2585-c090-4feb-aeb2-39e3a2d756e4][Produção Conjunta]] em que são produzidos mais de um bem em um mesmo processo de produção.
+Essa forma de explicação é a [[denote:20250203T183319][Joint production]] em que são produzidos mais de um bem em um mesmo processo de produção.
 A existência de capital fixo implica a produção de mais de um processo produtivo para um mesmo bem.
 Apesar desses diferentes processos de produção, a competição imporá um mesmo preço para este bem.
 Vale notar que esta forma de representar a tecnologia não precisa supor nenhuma hipótese /a priori/.
-Portanto, os bens de produção durável é tratado como os meios de produção vistos até então enquanto o capital fixo líquido de depreciação é analizado como decorrência da [[id:a67a2585-c090-4feb-aeb2-39e3a2d756e4][Produção Conjunta]].
+Portanto, os bens de produção durável é tratado como os meios de produção vistos até então enquanto o capital fixo líquido de depreciação é analizado como decorrência da [[denote:20250203T183319][Joint production]].
 
 Também é possível representar um mercado secundário de bem de capital.
 Neste caso, produz-se mais de um bem.
 Um é o usualmente produzido e outro é o bem de capital obsoleto que, por sua vez, gerará uma receita.
 
-Vale pontuar que a [[id:224c836c-3b92-4d7c-abcd-00c128fabab6][Depreciação]] (quota de depreciação) na teoria neoclássica não é independente da distribuição.
+Vale pontuar que a depreciação (quota de depreciação) na teoria neoclássica não é independente da distribuição.
 Isso porque o bem de capital depende dos preços relativos mesmo sendo homogêneo porque possuirão idadeis distintas.
 
 
@@ -1114,7 +1077,7 @@ w\cdot l_{2} + p_{m}\cdot (\delta + r) = p_{2}
 #+END_latex
 
 
-Para calcular a depreciação, considere o capital fixo resultado de [[id:a67a2585-c090-4feb-aeb2-39e3a2d756e4][Produção Conjunta]] e suponha $n=3$[fn::Os preços da máquina são contábeis e não de mercado.]:
+Para calcular a depreciação, considere o capital fixo resultado de [[denote:20250203T183319][Joint production]] e suponha $n=3$[fn::Os preços da máquina são contábeis e não de mercado.]:
 #+BEGIN_latex
 \begin{equation}
 \begin{cases}
@@ -1163,17 +1126,13 @@ A quota de depreciação, portanto, depende dos preços relativos e da distribui
 
 
 ** Produção conjunta
-:PROPERTIES:
-:ID:       835a53d7-4d07-4ae7-b8c0-773acd586726
-:ROAM_ALIASES: "Joint production"
-:END:
 
 
 *** Introdução
 
 
 A teoria da produção conjunta ajuda a explicar situações em que não há produção simples do subproduto produzido.
-Ocorre [[id:a67a2585-c090-4feb-aeb2-39e3a2d756e4][Produção Conjunta]] quando mais de uma mercadoria (em termos líquidos) pode ser produzida conjuntamente por um mesmo processo[fn::O motivo pelo qual não trata-se de setores porque a categorização de um setor depende do que é produzido.].
+Ocorre [[denote:20250203T183319][Joint production]] quando mais de uma mercadoria (em termos líquidos) pode ser produzida conjuntamente por um mesmo processo[fn::O motivo pelo qual não trata-se de setores porque a categorização de um setor depende do que é produzido.].
 A implicação é que o sistema deixa de ser determinado uma vez que o número de equações é menor do que o de variáveis.
 A diferença é que além da receita do bem principal, também há a receita do subproduto.
 O preço deste bem adicional é determinado pela produção simples ao menos que a produção conjunta vigore.
@@ -1218,16 +1177,16 @@ Sendo assim, é possível descartar este bem a custo zero.
 
 ** Introdução
 
-Na teoria marginalista (ou neoclássica) baseado no [[id:f586e1da-8626-42d0-90ae-c6e37cfcf775][Princípio da Substituição de Fatores]] a partir de um modelo de [[id:8590c18f-5c98-47b7-b086-049261d4b850][Trocas Puras]] com escassez.
+Na teoria marginalista (ou neoclássica) baseado no [[denote:20250203T183016][Factor substitution]] a partir de um modelo de [[denote:20250202T112419][Exchange Economy]] com escassez.
 Com isso, seria capaz de obter os preços dos bens a partir da relação entre oferta e demanda e flexibilidade de preços.
-O [[id:f586e1da-8626-42d0-90ae-c6e37cfcf775][Princípio da Substituição de Fatores]] garante que os preços relativos dos bens reflitam essa escassez relativa.
+O [[denote:20250203T183016][Factor substitution]] garante que os preços relativos dos bens reflitam essa escassez relativa.
 A relação entre oferta e demanda faz com que os preços mudem, mas não é o que garante o equilíbrio do mercado.
 Em resumo, os agentes trocam os bens produzidos por outros que lhe gerem uma maior utilidade.
 
-Essa lógica do modelo de [[id:8590c18f-5c98-47b7-b086-049261d4b850][Trocas Puras]] pode ser aplicado a um modelo com produção.
+Essa lógica do modelo de [[denote:20250202T112419][Exchange Economy]] pode ser aplicado a um modelo com produção.
 A diferença é que é considerado como se houvesse uma troca pura indireta.
 Vale notar que os problemas a esse modelo não se restringe ao conceito de capital.
-Existem inconsistências associadas aos efeitos renda no [[id:175002f6-69a8-4fa1-a7da-b76802ecc21e][Modelo de Equilíbrio Geral]].
+Existem inconsistências associadas aos efeitos renda no [[denote:20250202T121100][General Equilibrium Model]].
 
 
 A crítica sraffiana à teoria neoclássica diz respeito ao conceito de capital.
@@ -1246,11 +1205,8 @@ Por isso é tão problemático na teoria marginalista.
 
 
 ** Críticas teóricas do lado da demanda: reversão da intensidade de capital (trabalho) e retorno da técnica :ATTACH:
-:PROPERTIES:
-:ID:       c62b7aa4-3a86-4daa-924a-fcd7ab95b098
-:END:
 
-O [[id:f586e1da-8626-42d0-90ae-c6e37cfcf775][Princípio da Substituição de Fatores]] com técnicas alternativas implica escolhas de técnicas menos intensivas em trabalho quando o salário aumenta.
+O [[denote:20250203T183016][Factor substitution]] com técnicas alternativas implica escolhas de técnicas menos intensivas em trabalho quando o salário aumenta.
 O recíproco é válido para técnicas mais intensivas em capital.
 Consequentemente, há uma curva de demanda por fatores bem definida assim como uma relação inversa entre a intensidade dos fatores.
 Vale pontuar que uma função de produção é uma coleção ordenada de métodos de produção eficiente.
@@ -1276,7 +1232,7 @@ Supondo que existam dois métodos com intensidade entre capital e trabalho disti
 
 
 Neste caso, quando o salário for maior que $w_{a}$, utiliza-se as técnicas menos intensivas em trabalho.
-No entanto, para salários abaixo de $w_{b}$ retorna-se à técnica menos intensiva em trabalho --- definido na literature como [[id:9f70b8e6-5318-4ccf-a1f6-8f647a4eab8a][Reswitching]].
+No entanto, para salários abaixo de $w_{b}$ retorna-se à técnica menos intensiva em trabalho --- definido na literature como [[denote:20250203T183745][Reswitching]].
 Portanto, em torno do ponto $b$ há uma reversão da intensidade de capital (e de trabalho).
 Em resumo, o preço do fator vai na direção oposta da intensidade de sua utilização.
 
@@ -1399,7 +1355,7 @@ Portanto, é discutível dizer que essas versões mais modernas superaram as cr�
   - Lado real da economia determina os aspectos monetários da economia
   - Caso a taxa de juros seja distinta da taxa natural de juros, haverá inflação
 - Relação inversa de longo prazo entre taxa de juros e investimento (aprofundamento do capital)
-  - Associado ao [[id:f586e1da-8626-42d0-90ae-c6e37cfcf775][Princípio da Substituição de Fatores]]
+  - Associado ao [[denote:20250203T183016][Factor substitution]].
 
 *** Abordagem clássica
 
@@ -1528,9 +1484,6 @@ A taxa de juros relevante para Pivetti é a taxa de captação de um competidor 
 ** Inflação de custos e conflito distributivo
 
 *** Relação entre margem nominal e real de lucros :ATTACH:
-:PROPERTIES:
-:ID:       e022cdb4-422e-44eb-9eeb-d1a14084796f
-:END:
 
 
 Se as firmas definem os preços a partir de um mark-up sobre os custos, isso não garante que determina a distrubuição funcional da renda.
@@ -1547,7 +1500,7 @@ Se salários nominais crescem em um único período ($w_{1}>0$), haverá inflaç
 Sendo assim, sempre que os salários crescerem e a taxa de lucro nominal for a mesma, a taxa de lucro real será menor.
 Como consequência, não é garantido que as firmas irão determinar a distribuição.
 
-Nos [[id:3d19934f-ffed-49a7-9157-6dfd9ce44c66][neo-Kaleckian model]]s, assume-se que as firmas fixam a taxa de lucro real e que os preços irão aumentar no mesmo período que os salários nominais aumentam.
+Nos [[denote:20250203T182114][Neo Kaleckian Model]]s, assume-se que as firmas fixam a taxa de lucro real e que os preços irão aumentar no mesmo período que os salários nominais aumentam.
 
 
 
@@ -1980,9 +1933,6 @@ Concorrência nivela, mas não determina as variáveis distributivas nem diretam
 
 ** A literature sobre gravitação
 * Fisiocratas & Smith
-:PROPERTIES:
-:ID:       2e53f53c-53ec-4a68-8e03-a4b752d3de72
-:END:
 
 
 
@@ -1990,7 +1940,7 @@ Concorrência nivela, mas não determina as variáveis distributivas nem diretam
 
 ** Cronologia da Economia Política Clássica
 
-Os principais contribuidores da [[id:1164c251-778b-4a42-a98b-f7e75d5a0743][Economia Política Clássica]] podem ser categorizados a partir da dedfinição de Marx (segundo a ordem cronológica):
+Os principais contribuidores da [[denote:20250202T122037][Classical Political Economy]] podem ser categorizados a partir da dedfinição de Marx (segundo a ordem cronológica):
 
 | Inglaterra | França       |
 |------------+--------------|
@@ -2006,7 +1956,7 @@ Os principais contribuidores da [[id:1164c251-778b-4a42-a98b-f7e75d5a0743][Econo
 
 Normalmente, é categorizado em termos de filosofia política e pouco em termos de teoria econômica.
 Alguns autores de HPE costumam apresentar epsódios ainda mais antigos pelo simples motivo de ter mencionado algo relacionado à economia.
-Marx parte da cronologia acima por conta desses autores partirem do conceito de [[id:cd3b5fcc-d085-4b72-82b4-28d591c621f8][Excedente]] que permitiu analisar a economia de forma mais sistemática.
+Marx parte da cronologia acima por conta desses autores partirem do conceito de [[denote:20250202T121234][Social Surplus]] que permitiu analisar a economia de forma mais sistemática.
 
 William Petty, em particular, define o conceito de excedente (medido em cereais ou em trabalho)[fn::Petty tratava como sinônimo o conceito de excedente com a divisão social do trabalho.].
 Além disso, argumenta que o uso do excedente produtivo seria importante para o crescimento.
@@ -2021,7 +1971,7 @@ O problema de demanda efetiva neste modelo é uma questão agregada e não setor
 Deve-se, portanto, distinguir a demanda efetiva setorial da demanda efetiva.
 Nos clássicos, com Lei de Say, a oferta se ajusta a demanda efetiva setorial, mas a nível agregado supõe-se que a demanda agregada se ajusta à oferta.
 
-Dentre os [[id:ba96160c-9347-473b-8db9-118f1705497a][Fisiocratas]], Quesnay avançou na interdependência setorial e a realização do [[id:cd3b5fcc-d085-4b72-82b4-28d591c621f8][Excedente]] a nível agregado.
+Dentre os [[denote:20250203T173502][Physiocrats]], Quesnay avançou na interdependência setorial e a realização do [[denote:20250202T121234][Social Surplus]] a nível agregado.
 Tais temas foram retomados muito posteriormente por Marx.
 
 ** Quesnay e a fisiocracia
@@ -2075,11 +2025,6 @@ No entanto, não fica claro se há taxa de lucro no excedente.
 Não há determinação da taxa de lucro setorial (dada inexistência de mobilidade setorial).
 
 ** Smith
-:PROPERTIES:
-:ID:       00f9ac43-0729-4258-8cb0-1876c2cb50a7
-:mtime:    20211202152640
-:ctime:    20211202152640
-:END:
 
 - Em a Riqueza das nações, trata-se de um crescimento e aumento contínuo do excedente
 - Produtividade e taxa de investimento
@@ -2110,11 +2055,6 @@ Para Smith, o tamanho do mercado determinava o aumento da produtividade. No enta
       - Renda da terra = excedente - salário* Ricardo
 
 * Mercadoria padrão de Sraffa
-:PROPERTIES:
-:ID:       8ea0b1ce-b7fc-4fd7-bd7c-93944168301e
-:mtime:    20211202152741
-:ctime:    20211202152741
-:END:
 
 ** Introdução
 
@@ -2237,11 +2177,6 @@ Duas condições para medida invariável:
 A taxa de
 
 * Marx depois de Sraffa
-:PROPERTIES:
-:ID:       a37fd324-12f2-4814-a90b-9093034ffa75
-:mtime:    20211202152743
-:ctime:    20211202152743
-:END:
 
 ** Marx: Continuidade e ruptura
 
@@ -2359,7 +2294,7 @@ O que estas abordagens têm em comum é a teoria do excedente.
 
 *** Lei de tendência a queda da taxa de lucro
 
-A teoria do valor trabalho e a [[id:238b93fb-f8ae-4309-9d8c-56f7e9f2f721][Lei de tendência]] a queda da taxa de lucro[fn::Para reduzir os custos com trabalho vivo, supõe-se que é necessário utilizar o método com mais trabalho morto.]:
+A teoria do valor trabalho e a [[denote:20250203T180841][Tendency of the rate of profit to fall]] a queda da taxa de lucro[fn::Para reduzir os custos com trabalho vivo, supõe-se que é necessário utilizar o método com mais trabalho morto.]:
 - Progresso técnico não reduz a taxa geral de lucro para um dado salário real (Okisho, 1960)
 
 Custos unitários:

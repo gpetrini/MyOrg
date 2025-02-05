@@ -38,7 +38,7 @@
 ** Relevance
 
 - This is one of the few DSGE models that have [[denote:20240906T150431][Technological change]] together with deterministic growth
-  - As a consequence, this is a suitable for comparison with [[denote:20240906T150620][Agent Based Models]], in special with those with [[denote:20240708T155455][Schumpeterian growth models]] flavor
+  - As a consequence, this is a suitable for comparison with [[denote:20250202T114248][Agent Based Models]], in special with those with [[denote:20240708T155455][Schumpeterian growth models]] flavor
 
 
 ** Methodology

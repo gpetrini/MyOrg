@@ -1,8 +1,9 @@
-:PROPERTIES:
-:ID:       6674acce-800f-489e-9ddc-ea48873dbf6e
-:END:
 #+title:      Tobin's Q
 #+date:       [2025-02-02 dom 11:46]
 #+filetags:   :placeholder:
 #+identifier: 20250202T114657
 #+OPTIONS: num:nil ^:{} toc:nil
+
+[[denote:20250202T115328][Canonical Models]]
+
+[[denote:20250205T104529][Mainstream Models]]

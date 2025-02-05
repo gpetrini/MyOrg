@@ -1,8 +1,0 @@
-:PROPERTIES:
-:ID:       4db8e3cd-585a-435b-ae6a-df903e5bf7af
-:END:
-#+title:      Product Innovation
-#+date:       [2025-02-02 dom 12:01]
-#+filetags:   :placeholder:
-#+identifier: 20250202T120154
-#+OPTIONS: num:nil ^:{} toc:nil

@@ -1,0 +1,4 @@
+#+title:      Journal of International Economics
+#+date:       [2025-02-04 ter 19:20]
+#+filetags:   :journal:
+#+identifier: 20250204T192029

@@ -1,0 +1,4 @@
+#+title:      Securitization
+#+date:       [2025-02-04 ter 19:30]
+#+filetags:   :placeholder:
+#+identifier: 20250204T193057

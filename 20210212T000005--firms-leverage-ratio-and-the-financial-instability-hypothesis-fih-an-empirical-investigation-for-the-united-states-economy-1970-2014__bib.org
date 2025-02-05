@@ -1,0 +1,43 @@
+#+title:      Firms' leverage ratio and the Financial Instability Hypothesis (FIH): an empirical investigation for the United States economy (1970-2014)
+#+date:       [2021-02-12 sex 00:00]
+#+filetags:   :bib:
+#+identifier: 20210212T000005
+#+reference:  pedrosa_2019_Firms
+
+
+* Backlinks
+
+[[denote:20230216T235200][Minskian theory]]
+
+[[denote:20250204T173452][United States]]
+
+[[denote:20250204T172907][Empirical]]
+
+
+* FISH-5SS
+
+
+|---------------------------------------------+-----|
+| *Background*                                  |     |
+| *Supporting Ideas*                            |     |
+| *Purpose*                                     |     |
+| *Originality/value (Contribution)*            |     |
+| *Relevance*                                   |     |
+| *Design/methodology/approach*                 |     |
+| *Results*                                     |     |
+| *(Interesting) Findings*                      |     |
+| *Research limitations/implications (Critics)* |     |
+| *Uncategorized stuff*                         |     |
+| *5SS*                                         |     |
+|---------------------------------------------+-----|
+
+* Specifics comments
+ :PROPERTIES:
+ :Custom_ID: pedrosaFirmsLeverageRatio
+ :NOTER_DOCUMENT: ../../PDFs/Pedrosa - 2019 - Firms’ leverage ratio and the Financial Instabilit.pdf
+ :AUTHOR: Pedrosa, I.
+ :JOURNAL:
+ :YEAR:
+ :DOI:
+ :URL:
+ :END:

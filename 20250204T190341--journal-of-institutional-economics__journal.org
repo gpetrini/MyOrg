@@ -1,0 +1,4 @@
+#+title:      Journal of Institutional Economics
+#+date:       [2025-02-04 ter 19:03]
+#+filetags:   :journal:
+#+identifier: 20250204T190341

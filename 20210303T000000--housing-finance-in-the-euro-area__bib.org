@@ -1,0 +1,56 @@
+#+title:      Housing finance in the euro area
+#+date:       [2021-03-03 qua 00:00]
+#+OPTIONS: toc:nil num:nil
+#+filetags:   :bib:
+#+identifier: 20210303T000000
+#+reference:  ECB_2009_Housing
+
+* Backlinks
+
+[[denote:20250129T102626][Institutional Comparisons]]
+[[denote:20230216T235159][QCA Theoretical Economics Foundations]]
+[[denote:20230216T235154][Mortgage Interest rate]]
+[[denote:20230216T235150][Household debt and Bank credit]]
+[[denote:20250202T120427][Monetary Policy]]
+[[denote:20250204T192924][European Central Bank]]
+[[denote:20250204T192947][Loan to Value Ratio]]
+[[denote:20250203T173133][Financial Crises]]
+[[denote:20250204T173452][United States]]
+[[denote:20250204T193029][Bank Competition]]
+[[denote:20250204T193042][Foreclosure]]
+[[denote:20250204T193057][Securitization]]
+
+
+* FISH-5SS
+
+
+|---------------------------------------------+-----|
+| <40>                                        |<50> |
+| *Background*                                  |     |
+| *Supporting Ideas*                            |     |
+| *Purpose*                                     |     |
+| *Originality/value (Contribution)*            |     |
+| *Relevance*                                   |     |
+| *Design/methodology/approach*                 |     |
+| *Results*                                     |     |
+| *(Interesting) Findings*                      |     |
+| *Research limitations/implications (Critics)* |     |
+| *Uncategorized stuff*                         |     |
+| *5SS*                                         |     |
+|---------------------------------------------+-----|
+
+* Specifics comments
+ :PROPERTIES:
+ :Custom_ID: ECB_2009_Housing
+ :AUTHOR: K\"ohler-Ulbrich, Petra, Asimakopoulos, Y., Doyle, N., Magono, R., Zachary, M., Walko, Z., Stoess, E., …
+ :JOURNAL: Occasional Paper Series
+ :YEAR: 2009
+ :DOI:
+ :URL: https://ideas.repec.org/p/ecb/ecbops/2009101.html
+ :END:
+
+
+* PDF Highlights
+:PROPERTIES:
+ :NOTER_DOCUMENT: ~/Zotero/storage/T7MAE9VX/Köhler-Ulbrich et al. - 2009 - Housing finance in the euro area.pdf
+ :END:

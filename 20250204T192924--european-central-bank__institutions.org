@@ -1,0 +1,4 @@
+#+title:      European Central Bank
+#+date:       [2025-02-04 ter 19:29]
+#+filetags:   :institutions:
+#+identifier: 20250204T192924

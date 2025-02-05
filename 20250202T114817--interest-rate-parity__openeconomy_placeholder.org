@@ -1,18 +1,9 @@
-:PROPERTIES:
-:ID:       15705441-bd07-46e1-b330-009ec57eb410
-:mtime:    20211202152738 20211013082514
-:ctime:    20211013082514
-:END:
 #+title:      Interest Rate Parity
 #+date:       [2025-02-02 dom 11:48]
 #+filetags:   :openeconomy:placeholder:
 #+identifier: 20250202T114817
 
 * Backlinks
-
-[[id:39f64278-760c-4e2b-8e31-a6a35c5397af][Orientações]]
-
-[[id:7f564eeb-0296-470c-9d59-b42869b434f9][Monografia - Lorena]]
 
 
 * Lavoie (2015) - Open-economy macroeconomics <2021-08-17 ter>

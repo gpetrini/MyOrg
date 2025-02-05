@@ -1,0 +1,4 @@
+#+title:      Minskian Regime
+#+date:       [2025-02-04 ter 19:25]
+#+filetags:   :placeholder:
+#+identifier: 20250204T192508

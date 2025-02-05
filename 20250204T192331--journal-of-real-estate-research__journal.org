@@ -1,0 +1,4 @@
+#+title:      Journal of Real Estate Research
+#+date:       [2025-02-04 ter 19:23]
+#+filetags:   :journal:
+#+identifier: 20250204T192331

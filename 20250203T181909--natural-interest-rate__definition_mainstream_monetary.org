@@ -1,6 +1,8 @@
 #+title:      Natural Interest Rate
 #+date:       [2025-02-03 seg 18:19]
-#+filetags:   :definition:mainstream:monetary:
+#+filetags:   :definition:
 #+identifier: 20250203T181909
 #+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
 #+OPTIONS: num:nil ^:{} toc:nil
+
+[[denote:20250205T104529][Mainstream Models]]

@@ -1,0 +1,6 @@
+#+title:      Paradox of Debt
+#+date:       [2025-02-04 ter 19:25]
+#+filetags:   :placeholder:
+#+identifier: 20250204T192522
+
+[[denote:20250202T120452][Macroeconomic Paradoxes]]

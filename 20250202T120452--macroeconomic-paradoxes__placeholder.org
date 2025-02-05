@@ -10,6 +10,3 @@
 #+OPTIONS: num:nil ^:{} toc:nil
 
 
-Placeholder for paper that discuss some macroeconomics paradoxes such as:
-- Paradox of thrift
-- Paradox of costs

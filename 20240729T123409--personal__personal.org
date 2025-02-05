@@ -1,0 +1,16 @@
+#+title:      Personal
+#+date:       [2024-07-29 seg 12:34]
+#+filetags:   :personal:
+#+identifier: 20240729T123409
+
+* TODO Send e-mail extension to Andrea :@santanna:@bureaucracy:@email:
+
+* TODO [#C] Configure org-super-agenda :@personal:@free:
+* TODO [#C] Complete exporting notes to denote :@personal:@free:
+
+* TODO [#A] Enviar pedido adiamento :@capes:@santanna:@unicamp:@bureaucracy:
+* TODO [#A] Checar se relatório de encerramento de atividades deve ser feito após prazo de extensão vencer :@capes:@santanna:@unicamp:@bureaucracy:
+* TODO [#A] Relatório de encerramento das atividades :@capes:@hwr:@unicamp:@bureaucracy:
+* TODO Review ROKE :@computer:@review:
+DEADLINE: <2024-09-09 seg>
+* STRT [#C] Ver pasta de ex-bolsistas CAPES :@free:@bureaucracy:@personal:

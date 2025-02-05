@@ -13,10 +13,10 @@
 
 The puzzling dichotomy between growth and business cycles theory.
 Consequences:
-- [[id:66c2405e-46a7-48c3-b7e5-ecadb2466377][Schumpeterian growth models]] never meets Keynesian theory of [[id:bc6c94e5-1334-4b01-b49c-b98419bd122e][Effective Demand]] and aggregate [[id:380b31ad-cdd5-4367-af2c-9ee199a085e7][Business Cycles]]
+- [[denote:20240708T155455][Schumpeterian growth models]] never meets Keynesian theory of [[denote:20240708T155553][Effective Demand]] and aggregate [[denote:20240708T155635][Business Cycles]]
 - A Peculiar schizophrenia between ??
 
-Briding short- and long-run dynamics in a model able to robustly replicate most relevant micro and macro [[id:8e9dd4a4-0f29-46d1-b8e4-5befe4df94cb][Stylized Facts]].
+Briding short- and long-run dynamics in a model able to robustly replicate most relevant micro and macro [[denote:20240708T155703][Stylized Facts]].
 
 
 ** Model structure
@@ -30,7 +30,7 @@ Briding short- and long-run dynamics in a model able to robustly replicate most 
 
 *** Technical change
 
-There is both [[id:4db8e3cd-585a-435b-ae6a-df903e5bf7af][Product Innovation]] and [[id:0c6c78fd-8d22-4002-9c82-7ccd82af43f5][Process Innovation]] because productivity of vintages improve them (product), while the production technique is a process innovation.
+There is both [[denote:20240708T155825][Product Innovation]] and [[denote:20240708T155856][Process Innovation]] because productivity of vintages improve them (product), while the production technique is a process innovation.
 The innovation is a two step stochastic process, in wich R&D is linked to innovation/imitation.
 
 The beta distribution is chosen because is very simple, but easily able to search the shapes (flexibility).
@@ -83,9 +83,9 @@ This is price vs quality ratio.
 
 - Haldande and Turrell, 2018
 
-[[id:8e9dd4a4-0f29-46d1-b8e4-5befe4df94cb][Stylized Facts]]:
+[[denote:20240708T155703][Stylized Facts]]:
 - Self sustained, endogenous growth with endogenous business cycles
-  - The [[id:380b31ad-cdd5-4367-af2c-9ee199a085e7][Business Cycles]] is not periodic, but stochastic
+  - The [[denote:20240708T155635][Business Cycles]] is not periodic, but stochastic
   - The Dickey-Fuller on the log and level
 - Correlation structure
   - Consumption, net investment, and changes in inventories are procyclical and coincident variables
@@ -96,7 +96,7 @@ This is price vs quality ratio.
     - It is important that this amplify the business cycles
 - Fat tail growth distribution
   - Not normal distribution of GDP (not Gausian)
-  - Tails are more important, indicating that [[id:380b31ad-cdd5-4367-af2c-9ee199a085e7][Business Cycles]] are a complex phenomena
+  - Tails are more important, indicating that [[denote:20240708T155635][Business Cycles]] are a complex phenomena
 - Banking crises
   - Bank profits and bank equity are procyclical
   - Boom abd burst cycles in the credit

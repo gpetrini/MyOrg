@@ -1,0 +1,6 @@
+#+title:      International Demand-led Workshop
+#+date:       [2025-02-05 qua 10:23]
+#+filetags:   :conferences:
+#+identifier: 20250205T102306
+
+[[denote:20230216T235216][Conferences and Workshops]]

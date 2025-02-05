@@ -1,0 +1,34 @@
+#+title:      Residential Fixed Investment and the Macroeconomy: Has Deregulation Altered Key Relationships?
+#+date:       [2021-02-09 ter 00:00]
+#+filetags:   :bib:
+#+identifier: 20210209T000015
+#+reference:  gauger_2003_Residential
+
+
+* Residential Fixed Investment and the Macroeconomy: Has Deregulation Altered Key Relationships?
+
+** FISH-5SS
+
+
+|---------------------------------------------+-----|
+| *Background*                                  |     |
+| *Supporting Ideas*                            |     |
+| *Purpose*                                     |     |
+| *Originality/value (Contribution)*            |     |
+| *Relevance*                                   |     |
+| *Design/methodology/approach*                 |     |
+| *Results*                                     |     |
+| *(Interesting) Findings*                      |     |
+| *Research limitations/implications (Critics)* |     |
+| *Uncategorized stuff*                         |     |
+| *5SS*                                         |     |
+|---------------------------------------------+-----|
+
+** Backlinks
+
+
+[[denote:20230216T235154][Mortgage Interest rate]]
+
+[[denote:20230216T235155][Residential investment determinants]]
+
+* Specifics comments

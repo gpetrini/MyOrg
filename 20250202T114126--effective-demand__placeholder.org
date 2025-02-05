@@ -1,9 +1,0 @@
-:PROPERTIES:
-:ID:       bc6c94e5-1334-4b01-b49c-b98419bd122e
-:END:
-#+title:      Effective Demand
-#+date:       [2025-02-02 dom 11:41]
-#+filetags:   :placeholder:
-#+identifier: 20250202T114126
-#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
-#+OPTIONS: num:nil ^:{} toc:nil

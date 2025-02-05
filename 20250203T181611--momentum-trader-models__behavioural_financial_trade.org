@@ -29,10 +29,10 @@ Following [cite/t:@jump_2022_Building], this family of models can be presented a
     \end{bmatrix}
 \]
 
-- \(d^{f}\) :: [[id:aaecf5b0-903e-4cb7-9579-1f67c41a04a8][Fundamentalist]] demand for asset
-- \(d^{c}\) :: [[id:fe80e1b8-d6ef-40ee-bbf3-e85901693248][Chartists]] demand for asset
+- \(d^{f}\) :: [[denote:20250203T173554][Fundamentalist]]  demand for asset
+- \(d^{c}\) :: [[denote:20250202T121539][chartists]] demand for asset
 - \(\varphi\) :: Paremeter of responsiveness to signals
 - \(v\) :: Fundamental valeu
 - \(p\) :: log of asset price
 - \(\chi\) :: Paremeter of responsiveness to signals
-- \(\pi\) :: [[id:fe80e1b8-d6ef-40ee-bbf3-e85901693248][Chartists]] current perception of trend
+- \(\pi\) :: [[denote:20250202T121539][chartists]] current perception of trend

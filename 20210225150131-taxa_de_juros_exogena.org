@@ -1,8 +1,0 @@
-:PROPERTIES:
-:ID:       39c19376-d8a0-4f09-b402-fb1329de1d73
-:mtime:    20211202152739 20211013082514
-:ctime:    20210225150131
-:END:
-#+title: Taxa de juros exógena
-
-[[id:a405ebe8-05ae-41ec-86a2-87c1fdba4e18][Macroeconomia da Demanda Efetiva na abordagem do excedente]]

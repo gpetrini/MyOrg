@@ -1,0 +1,8 @@
+#+title:      Classical Political Economy
+#+date:       [2025-02-02 dom 12:20]
+#+filetags:   :schoolofthought:
+#+identifier: 20250202T122037
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil
+
+[[denote:20250203T181514][Modern Surplus Approach]]

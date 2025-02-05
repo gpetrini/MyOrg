@@ -34,7 +34,7 @@
 
 * Methodology
 
-- [[denote:20240906T150620][Agent Based Models]]: CATS with Knowledge Gap
+- [[denote:20250202T114248][Agent Based Models]]: CATS with Knowledge Gap
 - Contrasts a simulation without industrial policy and other with a variety of industrial policy
   - Pure R&D subsidity (RS): affecting \(A\) and \(z\)
   - Blended RS and Knowledge Diffusion: to affect \(\zeta\) and \(\gamma\)

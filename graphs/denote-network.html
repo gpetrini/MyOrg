@@ -1,171 +1,177 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Denote Explore Community Network</title>
     <style>
       body {
-          font-family: Arial, sans-serif;
-          margin: 0;
-          padding: 0;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 100vh;
-          background-color: #f8f8f8;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f8f8f8;
       }
 
       svg {
-          border: 0px solid #ccc;
-	  z-index: 1;
+        border: 0px solid #ccc;
+        z-index: 1;
       }
 
       .tooltip {
-          position: absolute;
-          background-color: white;
-          border: 1px solid #ddd;
-          border-radius: 8px;
-          padding: 15px;
-          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-          pointer-events: none;
-          line-height: 1.4;
-          max-width: 600px;
-	  z-index: 1000;
+        position: absolute;
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        pointer-events: none;
+        line-height: 1.4;
+        max-width: 600px;
+        z-index: 1000;
       }
 
       .lighter {
-	  color: #888;
+        color: #888;
       }
-      
+
       .tooltip .title {
-          font-weight: bold;
-          margin-bottom: 10px;
-	  font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-size: 28px;
       }
 
       .tooltip .keywords {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 5px;
-          margin-top: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        margin-top: 5px;
       }
 
       .tooltip .keywords span {
-          background-color: #e0e7ff;
-          color: #3b82f6;
-          padding: 2px 8px;
-          border-radius: 4px;
-          font-size: 18px;
+        background-color: #e0e7ff;
+        color: #3b82f6;
+        padding: 2px 8px;
+        border-radius: 4px;
+        font-size: 18px;
       }
 
       .tooltip .metadata {
-          margin-top: 10px;
-          font-size: 18px;
-          color: #333;
+        margin-top: 10px;
+        font-size: 18px;
+        color: #333;
       }
 
       .hidden {
-          display: none;
+        display: none;
       }
-      
+
       .info-button {
-	  position: fixed;
-	  top: 10px;
-	  left: 10px;
-	  width: 50px;
-	  height: 50px;
-	  background-color: #007BFF;
-	  color: white;
-	  font-size: 24px;
-	  font-weight: bold;
-	  text-align: center;
-	  line-height: 50px;
-	  border-radius: 25px;
-	  cursor: pointer;
-	  z-index: 1000;
-	  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-	  transition: transform 0.2s, box-shadow 0.2s;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        width: 50px;
+        height: 50px;
+        background-color: #007bff;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 25px;
+        cursor: pointer;
+        z-index: 1000;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        transition:
+          transform 0.2s,
+          box-shadow 0.2s;
       }
 
       .info-button:hover {
-	  transform: scale(1.1); /* Slightly enlarges on hover */
-	  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+        transform: scale(1.1); /* Slightly enlarges on hover */
+        box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
       }
 
       .info-button:active {
-	  transform: scale(0.95); /* Slightly shrinks when clicked */
-	  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow on click */
+        transform: scale(0.95); /* Slightly shrinks when clicked */
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow on click */
       }
 
       #info-button:hover .info-tooltip {
-	  display: block; /* Show on hover */
+        display: block; /* Show on hover */
       }
 
       .info-tooltip {
-	  position: absolute;
-	  top: 60px;
-	  left: 10px;
-	  background-color: white;
-	  color: black;
-	  border: 1px solid #ddd;
-	  border-radius: 8px;
-	  padding: 15px;
-	  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-	  max-width: 600px; /* Prevents it from growing too wide */
-	  overflow: auto;
-	  display: none;
-	  z-index: 99999;
+        position: absolute;
+        top: 60px;
+        left: 10px;
+        background-color: white;
+        color: black;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        max-width: 600px; /* Prevents it from growing too wide */
+        overflow: auto;
+        display: none;
+        z-index: 99999;
       }
-      
+
       .info-tooltip .title {
-	  font-weight: bold;
-	  margin-bottom: 10px;
-	  font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-size: 24px;
       }
 
       .info.tooltip .metadata {
-	  margin-top: 10px;
-	  font-size: 22px;
-	  color: #555;
+        margin-top: 10px;
+        font-size: 22px;
+        color: #555;
       }
 
       #keyword-chart svg {
-	  font-family: Arial, sans-serif;
+        font-family: Arial, sans-serif;
       }
 
       .legend-container .chart-container {
-	  margin-bottom: 10px;
-	  padding: 10px;
-	  border: 1px solid #ddd;
-	  border-radius: 8px;
-	  background-color: #f8f8f8;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #f8f8f8;
       }
-      
+
       .metadata-container {
-	  margin-bottom: 10px;
-	  padding: 10px;
-	  border: 1px solid #ddd;
-	  border-radius: 8px;
-	  background-color: #f8f8f8; /* Matches the existing tooltip and legend background */
-	  font-size: 18px; /* Matches the metadata text size */
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #f8f8f8; /* Matches the existing tooltip and legend background */
+        font-size: 18px; /* Matches the metadata text size */
       }
 
       .metadata {
-	  margin-bottom: 10px; /* Adjust spacing as needed */
-	  font-size: 18px; /* Optional: Adjust font size */
+        margin-bottom: 10px; /* Adjust spacing as needed */
+        font-size: 18px; /* Optional: Adjust font size */
       }
-
     </style>
   </head>
   <body>
     <!-- Info Button -->
-    <div id="info-button" class="info-button" title="Click for more information">ℹ</div>
+    <div
+      id="info-button"
+      class="info-button"
+      title="Click for more information"
+    >
+      ℹ
+    </div>
     <!-- Tooltip Container -->
     <div class="info-tooltip"></div>
-</div>
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script>
-      const data = {
+            const data = {
   "meta": {
     "directed": true,
     "type": "Community",
@@ -175,737 +181,571 @@
   },
   "nodes": [
     {
-      "id": "20201124T202350",
-      "signature": null,
-      "name": "A distribuição pessoal da renda na macroeconomia liderada pela demanda - Laura Carvalho (USP)",
-      "keywords": [
-        "distribuição",
-        "pessoal",
-        "da",
-        "renda",
-        "modelos",
-        "de",
-        "crescimento",
-        "liderados",
-        "pela",
-        "demanda",
-        "akb"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20201124T202350--a-distribuição-pessoal-da-renda-na-macroeconomia-liderada-pela-demanda-laura-carvalho-usp__distribuição_pessoal_da_renda_modelos_de_crescimento_liderados_pela_demanda_akb.org",
-      "degree": 0,
-      "backlinks": 0
-    },
-    {
       "id": "20201125T110651",
       "signature": null,
       "name": "Estagnação Secular: Teorias e Políticas - Serrano (UFRJ)",
       "keywords": [
         "akb",
-        "financeirização",
-        "distribuição",
-        "pessoal",
-        "da",
-        "renda",
-        "estagnação",
+        "conferences",
+        "financialization",
+        "fixed",
+        "incomedistribution",
         "secular",
-        "modelos",
-        "de",
-        "crescimento",
-        "liderados",
-        "pela",
-        "demanda"
+        "sraffian",
+        "stagnation"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20201125T110651--estagnação-secular-teorias-e-políticas-serrano-ufrj__akb_financeirização_distribuição_pessoal_da_renda_estagnação_secular_modelos_de_crescimento_liderados_pela_demanda.org",
+      "filename": "/home/gpetrini/Org/20201125T110651--estagnação-secular-teorias-e-políticas-serrano-ufrj__akb_conferences_financialization_fixed_incomedistribution_secular_sraffian_stagnation.org",
       "degree": 1,
-      "backlinks": 0
-    },
-    {
-      "id": "20201129T000000",
-      "signature": null,
-      "name": "hofmannDeterminantsBankCredit2004: The Determinants of Bank Credit in Industrialized Countries: Do Property Prices Matter?",
-      "keywords": [
-        ""
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20201129T000000--hofmanndeterminantsbankcredit2004-the-determinants-of-bank-credit-in-industrialized-countries-do-property-prices-matter__.org",
-      "degree": 2,
       "backlinks": 0
     },
     {
       "id": "20201202T092036",
       "signature": null,
-      "name": "IEE882 - Macroeconomia Financeira",
+      "name": "Macroeconomia Financeira",
       "keywords": [
-        "sfc",
         "abm",
-        "abm",
-        "sfc",
-        "macroeconomia",
-        "financeira",
-        "ufrj",
-        "notas",
-        "de",
-        "aula"
+        "fixed",
+        "lecture",
+        "sfc"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20201202T092036--iee882-macroeconomia-financeira__sfc_abm_abm_sfc_macroeconomia_financeira_ufrj_notas_de_aula.org",
+      "filename": "/home/gpetrini/Org/20201202T092036--macroeconomia-financeira__abm_fixed_lecture_sfc.org",
       "degree": 5,
       "backlinks": 5
     },
     {
-      "id": "20201203T145735",
-      "signature": null,
-      "name": "Macroeconomia da Demanda Efetiva na abordagem do excedente",
-      "keywords": [
-        "notas",
-        "de",
-        "aula",
-        "demanda",
-        "efetiva",
-        "ufrj"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20201203T145735--macroeconomia-da-demanda-efetiva-na-abordagem-do-excedente__notas_de_aula_demanda_efetiva_ufrj.org",
-      "degree": 3,
-      "backlinks": 3
-    },
-    {
       "id": "20201204T000000",
       "signature": null,
-      "name": "minsky1977FinancialInstabilityHypothesis: The Financial Instability Hypothesis: An Interpretation of Keynes and an Alternative to \"Standard\" Theory",
+      "name": "The Financial Instability Hypothesis: An Interpretation of Keynes and an Alternative to \"Standard\" Theory",
       "keywords": [
+        "bib",
+        "canonicalmodels",
         "financial",
+        "fixed",
         "instability",
-        "hypothesis",
-        "minsky",
-        "notas",
-        "de",
-        "aula",
-        "macroeconomia",
-        "financeira",
-        "ufrj"
+        "minsky"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20201204T000000--minsky1977financialinstabilityhypothesis-the-financial-instability-hypothesis-an-interpretation-of-keynes-and-an-alternative-to-standard-theory__financial_instability_hypothesis_minsky_notas_de_aula_macroeconomia_financeira_ufrj.org",
+      "filename": "/home/gpetrini/Org/20201204T000000--the-financial-instability-hypothesis-an-interpretation-of-keynes-and-an-alternative-to-standard-theory__bib_canonicalmodels_financial_fixed_instability_minsky.org",
       "degree": 2,
       "backlinks": 1
     },
     {
       "id": "20201207T000000",
       "signature": null,
-      "name": "kindleberger_2005_Anatomy: Anatomy of a Typical Crisis",
-      "keywords": [
-        "financial",
-        "crisis",
-        "ufrj",
-        "macroeconomia",
-        "financeira"
-      ],
+      "name": "Anatomy of a Typical Crisis",
+      "keywords": "",
       "type": "org",
-      "filename": "/home/gpetrini/Org/20201207T000000--kindleberger-2005-anatomy-anatomy-of-a-typical-crisis__financial_crisis_ufrj_macroeconomia_financeira.org",
-      "degree": 3,
-      "backlinks": 1
-    },
-    {
-      "id": "20201208T000002",
-      "signature": null,
-      "name": "eatwell_2011_Theories: Theories of Value, Output, and Employment",
-      "keywords": [
-        "moderna",
-        "abordagem",
-        "do",
-        "excedente",
-        "demanda",
-        "efetiva",
-        "ufrj"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20201208T000002--eatwell-2011-theories-theories-of-value-output-and-employment__moderna_abordagem_do_excedente_demanda_efetiva_ufrj.org",
-      "degree": 1,
+      "filename": "/home/gpetrini/Org/20201207T000000--anatomy-of-a-typical-crisis.org",
+      "degree": 2,
       "backlinks": 0
     },
     {
       "id": "20201208T000003",
       "signature": null,
-      "name": "garegnani_1983_Two: Two Routes to Effective Demand: a comment on Kregel",
+      "name": "Two Routes to Effective Demand: a comment on Kregel",
       "keywords": [
-        "moderna",
-        "abordagem",
-        "do",
-        "excedente",
-        "demanda",
-        "efetiva",
-        "ufrj"
+        "bib"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20201208T000003--garegnani-1983-two-two-routes-to-effective-demand-a-comment-on-kregel__moderna_abordagem_do_excedente_demanda_efetiva_ufrj.org",
+      "filename": "/home/gpetrini/Org/20201208T000003--two-routes-to-effective-demand-a-comment-on-kregel__bib.org",
       "degree": 1,
       "backlinks": 0
     },
     {
       "id": "20201215T000004",
       "signature": null,
-      "name": "haberler_1946_Preliminary: Preliminary Remarks",
+      "name": "Preliminary Remarks",
       "keywords": [
-        "macroeconomia",
-        "financeira",
-        "ufrj"
+        "bib"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20201215T000004--haberler-1946-preliminary-preliminary-remarks__macroeconomia_financeira_ufrj.org",
+      "filename": "/home/gpetrini/Org/20201215T000004--preliminary-remarks__bib.org",
       "degree": 1,
       "backlinks": 0
     },
     {
       "id": "20201216T000006",
       "signature": null,
-      "name": "keynes_1939_process: The process of capital formation",
+      "name": "The process of capital formation",
       "keywords": [
-        "general",
-        "theory",
-        "demanda",
-        "efetiva",
-        "ufrj",
-        "moderna",
-        "abordagem",
-        "do",
-        "excedente"
+        "bib"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20201216T000006--keynes-1939-process-the-process-of-capital-formation__general_theory_demanda_efetiva_ufrj_moderna_abordagem_do_excedente.org",
-      "degree": 1,
+      "filename": "/home/gpetrini/Org/20201216T000006--the-process-of-capital-formation__bib.org",
+      "degree": 0,
       "backlinks": 0
     },
     {
       "id": "20201218T000007",
       "signature": null,
-      "name": "sharpe_2020_Why: Why Isn't Business Investment More Sensitive to Interest Rates? Evidence from Surveys",
+      "name": "Why Isn't Business Investment More Sensitive to Interest Rates? Evidence from Surveys",
       "keywords": [
-        ""
+        "bib"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20201218T000007--sharpe-2020-why-why-isnt-business-investment-more-sensitive-to-interest-rates-evidence-from-surveys__.org",
+      "filename": "/home/gpetrini/Org/20201218T000007--why-isnt-business-investment-more-sensitive-to-interest-rates-evidence-from-surveys__bib.org",
       "degree": 1,
       "backlinks": 0
     },
     {
       "id": "20210112T000008",
       "signature": null,
-      "name": "green_2005_American: The American Mortgage in Historical and International Context",
+      "name": "The American Mortgage in Historical and International Context",
       "keywords": [
-        ""
+        "bib"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20210112T000008--green-2005-american-the-american-mortgage-in-historical-and-international-context__.org",
-      "degree": 0,
+      "filename": "/home/gpetrini/Org/20210112T000008--the-american-mortgage-in-historical-and-international-context__bib.org",
+      "degree": 1,
       "backlinks": 0
     },
     {
       "id": "20210119T000009",
       "signature": null,
-      "name": "legewieIntroductionAppliedData2013: An Introduction to Applied Data Analysis with Qualitative Comparative Analysis",
+      "name": "An Introduction to Applied Data Analysis with Qualitative Comparative Analysis",
       "keywords": [
-        "good",
-        "practices",
-        "hands",
-        "on",
-        "qca"
+        "bib",
+        "handson"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20210119T000009--legewieintroductionapplieddata2013-an-introduction-to-applied-data-analysis-with-qualitative-comparative-analysis__good_practices_hands_on_qca.org",
+      "filename": "/home/gpetrini/Org/20210119T000009--an-introduction-to-applied-data-analysis-with-qualitative-comparative-analysis__bib_handson.org",
       "degree": 2,
       "backlinks": 0
     },
     {
       "id": "20210125T000010",
       "signature": null,
-      "name": "green_2014_Chapter: Chapter 9 - The Subprime Crisis",
+      "name": "The Subprime Crisis",
       "keywords": [
-        ""
+        "bib",
+        "book"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20210125T000010--green-2014-chapter-chapter-9-the-subprime-crisis__.org",
-      "degree": 0,
+      "filename": "/home/gpetrini/Org/20210125T000010--the-subprime-crisis__bib_book.org",
+      "degree": 4,
       "backlinks": 0
     },
     {
       "id": "20210126T000011",
       "signature": null,
-      "name": "green_2014_International: International Comparisons of Mortgages",
+      "name": "International Comparisons of Mortgages",
       "keywords": [
-        "placeholder"
+        "bib",
+        "book"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20210126T000011--green-2014-international-international-comparisons-of-mortgages__placeholder.org",
-      "degree": 0,
+      "filename": "/home/gpetrini/Org/20210126T000011--international-comparisons-of-mortgages__bib_book.org",
+      "degree": 2,
       "backlinks": 0
     },
     {
       "id": "20210201T000012",
       "signature": null,
-      "name": "schneiderSetTheoreticMethodsSocial: Set-Theoretic Methods for the Social Sciences: A Guide to Qualitative Comparative Analysis",
+      "name": "Set-Theoretic Methods for the Social Sciences: A Guide to Qualitative Comparative Analysis",
       "keywords": [
-        ""
+        "bib"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20210201T000012--schneidersettheoreticmethodssocial-set-theoretic-methods-for-the-social-sciences-a-guide-to-qualitative-comparative-analysis__.org",
-      "degree": 1,
+      "filename": "/home/gpetrini/Org/20210201T000012--set-theoretic-methods-for-the-social-sciences-a-guide-to-qualitative-comparative-analysis__bib.org",
+      "degree": 2,
       "backlinks": 0
     },
     {
       "id": "20210204T000013",
       "signature": null,
-      "name": "lunde_2016_Milestones: Milestones in European housing finance",
+      "name": "Milestones in European housing finance",
       "keywords": [
-        "institucions",
-        "finance",
-        "europe",
-        "dissertation",
-        "comparative",
-        "analysis",
-        "housing"
+        "bib"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20210204T000013--lunde-2016-milestones-milestones-in-european-housing-finance__institucions_finance_europe_dissertation_comparative_analysis_housing.org",
-      "degree": 0,
+      "filename": "/home/gpetrini/Org/20210204T000013--milestones-in-european-housing-finance__bib.org",
+      "degree": 2,
       "backlinks": 0
     },
     {
       "id": "20210209T000014",
       "signature": null,
-      "name": "gattini_2012_House: House price responsiveness of housing investments across major European economies ()",
+      "name": "House price responsiveness of housing investments across major European economies",
       "keywords": [
-        ""
+        "bib"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20210209T000014--gattini-2012-house-house-price-responsiveness-of-housing-investments-across-major-european-economies__.org",
+      "filename": "/home/gpetrini/Org/20210209T000014--house-price-responsiveness-of-housing-investments-across-major-european-economies__bib.org",
       "degree": 1,
       "backlinks": 0
     },
     {
       "id": "20210209T000015",
       "signature": null,
-      "name": "gaugerResidentialFixedInvestment: Residential Fixed Investment and the Macroeconomy: Has Deregulation Altered Key Relationships? ()",
+      "name": "Residential Fixed Investment and the Macroeconomy: Has Deregulation Altered Key Relationships?",
       "keywords": [
-        ""
+        "bib"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20210209T000015--gaugerresidentialfixedinvestment-residential-fixed-investment-and-the-macroeconomy-has-deregulation-altered-key-relationships__.org",
+      "filename": "/home/gpetrini/Org/20210209T000015--residential-fixed-investment-and-the-macroeconomy-has-deregulation-altered-key-relationships__bib.org",
       "degree": 2,
       "backlinks": 0
     },
     {
       "id": "20210209T000016",
       "signature": null,
-      "name": "goodhart_2008_House: House prices, money, credit, and the macroeconomy (Oxford Review of Economic Policy)",
+      "name": "House prices, money, credit, and the macroeconomy",
       "keywords": [
-        ""
+        "bib"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20210209T000016--goodhart-2008-house-house-prices-money-credit-and-the-macroeconomy-oxford-review-of-economic-policy__.org",
+      "filename": "/home/gpetrini/Org/20210209T000016--house-prices-money-credit-and-the-macroeconomy__bib.org",
       "degree": 2,
       "backlinks": 0
     },
     {
       "id": "20210209T000017",
       "signature": null,
-      "name": "mccarthy_2002_Monetary: Monetary Policy Transmission to Residential Investment",
+      "name": "Monetary Policy Transmission to Residential Investment",
       "keywords": [
-        ""
+        "bib"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20210209T000017--mccarthy-2002-monetary-monetary-policy-transmission-to-residential-investment__.org",
+      "filename": "/home/gpetrini/Org/20210209T000017--monetary-policy-transmission-to-residential-investment__bib.org",
       "degree": 1,
       "backlinks": 0
     },
     {
       "id": "20210209T000018",
       "signature": null,
-      "name": "sutton_2017_Interestb: Interest rates and house prices in the United States and around the world ()",
+      "name": "Interest rates and house prices in the United States and around the world",
       "keywords": [
-        ""
+        "bib"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20210209T000018--sutton-2017-interestb-interest-rates-and-house-prices-in-the-united-states-and-around-the-world__.org",
+      "filename": "/home/gpetrini/Org/20210209T000018--interest-rates-and-house-prices-in-the-united-states-and-around-the-world__bib.org",
       "degree": 2,
       "backlinks": 0
     },
     {
       "id": "20210209T000019",
       "signature": null,
-      "name": "topel_1988_Housing: Housing Investment in the United States (Journal of Political Economy)",
+      "name": "Housing Investment in the United States",
       "keywords": [
-        ""
+        "bib"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20210209T000019--topel-1988-housing-housing-investment-in-the-united-states-journal-of-political-economy__.org",
+      "filename": "/home/gpetrini/Org/20210209T000019--housing-investment-in-the-united-states__bib.org",
       "degree": 1,
       "backlinks": 0
     },
     {
       "id": "20210210T000000",
       "signature": null,
-      "name": "jorda_2016_great: The great mortgaging: housing finance, crises and business cycles (Economic Policy)",
+      "name": "The great mortgaging: housing finance, crises and business cycles",
       "keywords": [
-        ""
+        "bib"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20210210T000000--jorda-2016-great-the-great-mortgaging-housing-finance-crises-and-business-cycles-economic-policy__.org",
+      "filename": "/home/gpetrini/Org/20210210T000000--the-great-mortgaging-housing-finance-crises-and-business-cycles__bib.org",
       "degree": 2,
       "backlinks": 0
     },
     {
       "id": "20210212T000001",
       "signature": null,
-      "name": "baltar_2015_Inflation: Inflation and economic growth in an open developing country: the case of Brazil (2015, Cambridge Journal of Economics)",
+      "name": "Inflation and economic growth in an open developing country: the case of Brazil",
       "keywords": [
-        ""
+        "bib"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20210212T000001--baltar-2015-inflation-inflation-and-economic-growth-in-an-open-developing-country-the-case-of-brazil-2015-cambridge-journal-of-economics__.org",
-      "degree": 0,
-      "backlinks": 0
-    },
-    {
-      "id": "20210212T000002",
-      "signature": null,
-      "name": "brochierStockflowRatiosParadox: Stock-flow ratios and the paradox of debt in canonical neo-kaleckian and supermultiplier models (, )",
-      "keywords": [
-        ""
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20210212T000002--brochierstockflowratiosparadox-stock-flow-ratios-and-the-paradox-of-debt-in-canonical-neo-kaleckian-and-supermultiplier-models__.org",
-      "degree": 0,
+      "filename": "/home/gpetrini/Org/20210212T000001--inflation-and-economic-growth-in-an-open-developing-country-the-case-of-brazil__bib.org",
+      "degree": 3,
       "backlinks": 0
     },
     {
       "id": "20210212T000003",
       "signature": null,
-      "name": "freitas_growth_2015: Growth Rate and Level Effects, the Stability of the Adjustment of Capacity to Demand and the Sraffian Supermultiplier (2015, Review of Political Economy)",
+      "name": "Growth Rate and Level Effects, the Stability of the Adjustment of Capacity to Demand and the Sraffian Supermultiplier",
       "keywords": [
-        ""
+        "bib"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20210212T000003--freitas-growth-2015-growth-rate-and-level-effects-the-stability-of-the-adjustment-of-capacity-to-demand-and-the-sraffian-supermultiplier-2015-review-of-political-economy__.org",
-      "degree": 0,
+      "filename": "/home/gpetrini/Org/20210212T000003--growth-rate-and-level-effects-the-stability-of-the-adjustment-of-capacity-to-demand-and-the-sraffian-supermultiplier__bib.org",
+      "degree": 3,
       "backlinks": 0
     },
     {
       "id": "20210212T000004",
       "signature": null,
-      "name": "huangHousingBusinessCycle: Is Housing the Business Cycle? A Multi-resolution Analysis for OECD Countries (, )",
+      "name": "Is Housing the Business Cycle? A Multi-resolution Analysis for OECD Countries (, )",
       "keywords": [
-        ""
+        "bib"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20210212T000004--huanghousingbusinesscycle-is-housing-the-business-cycle-a-multi-resolution-analysis-for-oecd-countries__.org",
-      "degree": 0,
+      "filename": "/home/gpetrini/Org/20210212T000004--is-housing-the-business-cycle-a-multi-resolution-analysis-for-oecd-countries__bib.org",
+      "degree": 2,
       "backlinks": 0
     },
     {
       "id": "20210212T000005",
       "signature": null,
-      "name": "pedrosaFirmsLeverageRatio: Firms' leverage ratio and the Financial Instability Hypothesis (FIH): an empirical investigation for the United States economy (1970-2014) (, )",
+      "name": "Firms' leverage ratio and the Financial Instability Hypothesis (FIH): an empirical investigation for the United States economy (1970-2014)",
       "keywords": [
-        ""
+        "bib"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20210212T000005--pedrosafirmsleverageratio-firms-leverage-ratio-and-the-financial-instability-hypothesis-fih-an-empirical-investigation-for-the-united-states-economy-1970-2014__.org",
-      "degree": 0,
+      "filename": "/home/gpetrini/Org/20210212T000005--firms-leverage-ratio-and-the-financial-instability-hypothesis-fih-an-empirical-investigation-for-the-united-states-economy-1970-2014__bib.org",
+      "degree": 3,
       "backlinks": 0
     },
     {
       "id": "20210212T000006",
       "signature": null,
-      "name": "pyka_2005_AgentBased: Agent-Based Modelling: A Methodology for Neo-Schumpeterian Economics (2005, Discussion Paper Series)",
+      "name": "Agent-Based Modelling: A Methodology for Neo-Schumpeterian Economics",
       "keywords": [
-        ""
+        "bib"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20210212T000006--pyka-2005-agentbased-agent-based-modelling-a-methodology-for-neo-schumpeterian-economics-2005-discussion-paper-series__.org",
-      "degree": 0,
+      "filename": "/home/gpetrini/Org/20210212T000006--agent-based-modelling-a-methodology-for-neo-schumpeterian-economics__bib.org",
+      "degree": 2,
       "backlinks": 0
     },
     {
       "id": "20210217T000001",
       "signature": null,
-      "name": "baccaroRethinkingComparativePolitical2016: Rethinking Comparative Political Economy: The Growth Model Perspective (2016, Politics \\& Society)",
+      "name": "Rethinking Comparative Political Economy: The Growth Model Perspective",
       "keywords": [
-        ""
+        "bib"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20210217T000001--baccarorethinkingcomparativepolitical2016-rethinking-comparative-political-economy-the-growth-model-perspective-2016-politics-\\-society__.org",
-      "degree": 1,
+      "filename": "/home/gpetrini/Org/20210217T000001--rethinking-comparative-political-economy-the-growth-model-perspective__bib.org",
+      "degree": 2,
       "backlinks": 0
     },
     {
       "id": "20210217T000002",
       "signature": null,
-      "name": "blackwell_2019_Historicizing: Historicizing housing typologies: beyond welfare state regimes and varieties of residential capitalism (2019, Housing Studies)",
+      "name": "Historicizing housing typologies: beyond welfare state regimes and varieties of residential capitalism",
       "keywords": [
-        ""
+        "bib"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20210217T000002--blackwell-2019-historicizing-historicizing-housing-typologies-beyond-welfare-state-regimes-and-varieties-of-residential-capitalism-2019-housing-studies__.org",
-      "degree": 0,
+      "filename": "/home/gpetrini/Org/20210217T000002--historicizing-housing-typologies-beyond-welfare-state-regimes-and-varieties-of-residential-capitalism__bib.org",
+      "degree": 4,
       "backlinks": 0
     },
     {
       "id": "20210217T000003",
       "signature": null,
-      "name": "howell_2003_Varieties: Varieties of Capitalism: And Then There Was One? (2003, Comparative Politics)",
+      "name": "Varieties of Capitalism: And Then There Was One?",
       "keywords": [
-        "voc"
+        "bib"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20210217T000003--howell-2003-varieties-varieties-of-capitalism-and-then-there-was-one-2003-comparative-politics__voc.org",
-      "degree": 1,
+      "filename": "/home/gpetrini/Org/20210217T000003--varieties-of-capitalism-and-then-there-was-one__bib.org",
+      "degree": 2,
       "backlinks": 0
     },
     {
       "id": "20210217T000004",
       "signature": null,
-      "name": "lapavitsas_2013_Financialisation: Financialisation varied: a comparative analysis of advanced economies (2013, Cambridge Journal of Regions, Economy and Society)",
+      "name": "Financialisation varied: a comparative analysis of advanced economies",
       "keywords": [
-        ""
+        "bib"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20210217T000004--lapavitsas-2013-financialisation-financialisation-varied-a-comparative-analysis-of-advanced-economies-2013-cambridge-journal-of-regions-economy-and-society__.org",
-      "degree": 2,
+      "filename": "/home/gpetrini/Org/20210217T000004--financialisation-varied-a-comparative-analysis-of-advanced-economies__bib.org",
+      "degree": 3,
       "backlinks": 0
     },
     {
       "id": "20210218T000000",
       "signature": null,
-      "name": "serrano_2002_Conflito: Conflito distributivo e inflac\\~ao de custos (2002, )",
+      "name": "Conflito distributivo e inflação de custos",
       "keywords": [
-        ""
+        "bib",
+        "mimeo"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20210218T000000--serrano-2002-conflito-conflito-distributivo-e-inflac\\ao-de-custos-2002__.org",
-      "degree": 1,
+      "filename": "/home/gpetrini/Org/20210218T000000--conflito-distributivo-e-inflação-de-custos__bib_mimeo.org",
+      "degree": 3,
       "backlinks": 0
     },
     {
       "id": "20210222T000000",
       "signature": null,
-      "name": "hallVarietiesCapitalismInstitutional2001: Varieties of capitalism: the institutional foundations of comparative advantage (2001, )",
+      "name": "Varieties of capitalism: the institutional foundations of comparative advantage",
       "keywords": [
-        "theoretical",
-        "qca",
-        "voc"
+        "bib",
+        "book"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20210222T000000--hallvarietiescapitalisminstitutional2001-varieties-of-capitalism-the-institutional-foundations-of-comparative-advantage-2001__theoretical_qca_voc.org",
-      "degree": 1,
+      "filename": "/home/gpetrini/Org/20210222T000000--varieties-of-capitalism-the-institutional-foundations-of-comparative-advantage__bib_book.org",
+      "degree": 5,
       "backlinks": 0
     },
     {
       "id": "20210223T000002",
       "signature": null,
-      "name": "Chang (2011, JIE)",
+      "name": "Institutions and economic development: theory, policy and history",
       "keywords": [
-        "theoretical",
-        "qca",
-        "institucions"
+        "bib"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20210223T000002--chang-2011-institutions-institutions-and-economic-development-theory-policy-and-history-2011-journal-of-institutional-economics__theoretical_qca_institucions.org",
-      "degree": 2,
+      "filename": "/home/gpetrini/Org/20210223T000002--institutions-and-economic-development-theory-policy-and-history__bib.org",
+      "degree": 4,
       "backlinks": 1
     },
     {
       "id": "20210223T000003",
       "signature": null,
-      "name": "internationalmonetaryfund.reseachdept._2008_changing: The changing housing cycle and the implications for monetary policy (2008)",
+      "name": "The changing housing cycle and the implications for monetary policy",
       "keywords": [
-        "business",
-        "cycle",
-        "monetary",
-        "policy",
-        "institucions",
-        "qca",
-        "data"
+        "bib"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20210223T000003--internationalmonetaryfundreseachdept-2008-changing-the-changing-housing-cycle-and-the-implications-for-monetary-policy-2008__business_cycle_monetary_policy_institucions_qca_data.org",
-      "degree": 3,
+      "filename": "/home/gpetrini/Org/20210223T000003--the-changing-housing-cycle-and-the-implications-for-monetary-policy__bib.org",
+      "degree": 7,
       "backlinks": 0
     },
     {
       "id": "20210226T000001",
       "signature": null,
-      "name": "bover_2018_distribution: The distribution of debt across euro-area countries: the role of individual characteristics, institutions, and credit conditions (2018, 44th issue (June 2016) of the International Journal of Central Banking)",
+      "name": "The distribution of debt across euro-area countries: the role of individual characteristics, institutions, and credit conditions",
       "keywords": [
-        ""
+        "bib"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20210226T000001--bover-2018-distribution-the-distribution-of-debt-across-euro-area-countries-the-role-of-individual-characteristics-institutions-and-credit-conditions-2018-44th-issue-june-2016-of-the-international-journal-of-central-banking__.org",
-      "degree": 1,
+      "filename": "/home/gpetrini/Org/20210226T000001--the-distribution-of-debt-across-euro-area-countries-the-role-of-individual-characteristics-institutions-and-credit-conditions__bib.org",
+      "degree": 4,
       "backlinks": 0
     },
     {
       "id": "20210226T000002",
       "signature": null,
-      "name": "cho_2007_180: 180 Years' Evolution of the US Mortgage Banking System: Lessons for Emerging Mortgage Markets (2007, )",
+      "name": "180 Years' Evolution of the US Mortgage Banking System: Lessons for Emerging Mortgage Markets",
       "keywords": [
-        ""
+        "bib"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20210226T000002--cho-2007-180-180-years-evolution-of-the-us-mortgage-banking-system-lessons-for-emerging-mortgage-markets-2007__.org",
-      "degree": 0,
+      "filename": "/home/gpetrini/Org/20210226T000002--180-years-evolution-of-the-us-mortgage-banking-system-lessons-for-emerging-mortgage-markets__bib.org",
+      "degree": 4,
       "backlinks": 0
     },
     {
       "id": "20210226T000003",
       "signature": null,
-      "name": "coles_2000_Mortgage: Mortgage Markets: Why US and EU Markets Are So Different (2000, Housing Studies)",
+      "name": "Mortgage Markets: Why US and EU Markets Are So Different",
       "keywords": [
-        ""
+        "bib"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20210226T000003--coles-2000-mortgage-mortgage-markets-why-us-and-eu-markets-are-so-different-2000-housing-studies__.org",
-      "degree": 0,
+      "filename": "/home/gpetrini/Org/20210226T000003--mortgage-markets-why-us-and-eu-markets-are-so-different__bib.org",
+      "degree": 1,
       "backlinks": 0
     },
     {
       "id": "20210226T000004",
       "signature": null,
-      "name": "courchaneComparisonCanadianResidential2002: A Comparison of U.S. and Canadian Residential Mortgage Markets (2002, Econometrics Working Papers)",
+      "name": "A Comparison of U.S. and Canadian Residential Mortgage Markets",
       "keywords": [
-        ""
+        "bib"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20210226T000004--courchanecomparisoncanadianresidential2002-a-comparison-of-us-and-canadian-residential-mortgage-markets-2002-econometrics-working-papers__.org",
-      "degree": 0,
+      "filename": "/home/gpetrini/Org/20210226T000004--a-comparison-of-us-and-canadian-residential-mortgage-markets__bib.org",
+      "degree": 3,
       "backlinks": 0
     },
     {
       "id": "20210226T000005",
       "signature": null,
-      "name": "gartner_2012_White: White Picket Finance: The Remaking of the U.S. Mortgage Market, 1932-1960 (2012, )",
+      "name": "White Picket Finance: The Remaking of the U.S. Mortgage Market, 1932-1960",
       "keywords": [
-        ""
+        "bib"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20210226T000005--gartner-2012-white-white-picket-finance-the-remaking-of-the-us-mortgage-market-1932-1960-2012__.org",
-      "degree": 0,
+      "filename": "/home/gpetrini/Org/20210226T000005--white-picket-finance-the-remaking-of-the-us-mortgage-market-1932-1960__bib.org",
+      "degree": 1,
       "backlinks": 0
     },
     {
       "id": "20210226T000006",
       "signature": null,
-      "name": "green_2010_Housinga: The Housing Finance Revolution (2010, )",
+      "name": "The Housing Finance Revolution",
       "keywords": [
-        ""
+        "bib"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20210226T000006--green-2010-housinga-the-housing-finance-revolution-2010__.org",
-      "degree": 0,
+      "filename": "/home/gpetrini/Org/20210226T000006--the-housing-finance-revolution__bib.org",
+      "degree": 3,
       "backlinks": 0
     },
     {
       "id": "20210226T000007",
       "signature": null,
-      "name": "jorda_2015_Betting: Betting the house (2015, Journal of International Economics)",
+      "name": "Betting the house",
       "keywords": [
-        ""
+        "bib"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20210226T000007--jorda-2015-betting-betting-the-house-2015-journal-of-international-economics__.org",
-      "degree": 0,
+      "filename": "/home/gpetrini/Org/20210226T000007--betting-the-house__bib.org",
+      "degree": 5,
       "backlinks": 0
     },
     {
       "id": "20210226T000008",
       "signature": null,
-      "name": "klyuev_2010_Housing: Is Housing Wealth an ``ATM''?: International Trends (2010, )",
+      "name": "Is Housing Wealth an ``ATM''?: International Trends",
       "keywords": [
-        ""
+        "bib"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20210226T000008--klyuev-2010-housing-is-housing-wealth-an-atm-international-trends-2010__.org",
-      "degree": 1,
+      "filename": "/home/gpetrini/Org/20210226T000008--is-housing-wealth-an-atm-international-trends__bib.org",
+      "degree": 3,
       "backlinks": 0
     },
     {
       "id": "20210226T000009",
       "signature": null,
-      "name": "lacour-little_2010_Homea: Home Equity Extraction by Homeowners: 2000-2006 (2010, Journal of Real Estate Research)",
-      "keywords": [
-        ""
-      ],
+      "name": "Home Equity Extraction by Homeowners: 2000-2006",
+      "keywords": "",
       "type": "org",
-      "filename": "/home/gpetrini/Org/20210226T000009--lacour-little-2010-homea-home-equity-extraction-by-homeowners-2000-2006-2010-journal-of-real-estate-research__.org",
-      "degree": 0,
+      "filename": "/home/gpetrini/Org/20210226T000009--home-equity-extraction-by-homeowners-2000-2006.org",
+      "degree": 1,
       "backlinks": 0
     },
     {
       "id": "20210301T000001",
       "signature": null,
-      "name": "lavoie_2001_Minsky: Minsky's financial fragility hypothesis: a missing macroeconomic link? (2001, )",
+      "name": "Minsky's financial fragility hypothesis: a missing macroeconomic link?",
       "keywords": [
-        ""
+        "bib"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20210301T000001--lavoie-2001-minsky-minskys-financial-fragility-hypothesis-a-missing-macroeconomic-link-2001__.org",
-      "degree": 2,
-      "backlinks": 0
-    },
-    {
-      "id": "20210301T000002",
-      "signature": null,
-      "name": "toporowski_2008_Minsky: Minsky's 'induced investment and business cycles' (2008, Cambridge Journal of Economics)",
-      "keywords": [
-        "business",
-        "cycle",
-        "investment",
-        "notas",
-        "de",
-        "aula",
-        "minsky"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20210301T000002--toporowski-2008-minsky-minskys-induced-investment-and-business-cycles-2008-cambridge-journal-of-economics__business_cycle_investment_notas_de_aula_minsky.org",
-      "degree": 2,
+      "filename": "/home/gpetrini/Org/20210301T000001--minskys-financial-fragility-hypothesis-a-missing-macroeconomic-link__bib.org",
+      "degree": 3,
       "backlinks": 0
     },
     {
       "id": "20210302T000000",
       "signature": null,
-      "name": "lavoie_2020_Was: Was Hyman Minsky a post-Keynesian economist? (2020, Review of Evolutionary Political Economy)",
+      "name": "Was Hyman Minsky a post-Keynesian economist?",
       "keywords": [
-        "high",
-        "impact",
-        "financial",
-        "instability",
-        "hypothesis",
-        "finance",
-        "housing",
-        "minsky"
+        "bib"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20210302T000000--lavoie-2020-was-was-hyman-minsky-a-post-keynesian-economist-2020-review-of-evolutionary-political-economy__high_impact_financial_instability_hypothesis_finance_housing_minsky.org",
-      "degree": 2,
+      "filename": "/home/gpetrini/Org/20210302T000000--was-hyman-minsky-a-post-keynesian-economist__bib.org",
+      "degree": 6,
       "backlinks": 0
     },
     {
       "id": "20210303T000000",
       "signature": null,
-      "name": "ECB_2009_Housing: Housing finance in the euro area (2009, Occasional Paper Series)",
+      "name": "Housing finance in the euro area",
       "keywords": [
-        "institucions",
-        "housing",
-        "mortgages",
-        "europe",
-        "dissertation",
-        "qca"
+        "bib"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20210303T000000--ecb-2009-housing-housing-finance-in-the-euro-area-2009-occasional-paper-series__institucions_housing_mortgages_europe_dissertation_qca.org",
-      "degree": 3,
+      "filename": "/home/gpetrini/Org/20210303T000000--housing-finance-in-the-euro-area__bib.org",
+      "degree": 11,
       "backlinks": 0
     },
     {
@@ -913,76 +753,84 @@
       "signature": null,
       "name": "Growth and income distribution in Latin America",
       "keywords": [
-        "\"\"demand-led",
-        "workshop\"",
-        "conferences",
-        "ufrj"
+        "conferences"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20210719T000001--growth-and-income-distribution-in-latin-america__\"\"demand-led_workshop\"_conferences_ufrj.org",
-      "degree": 0,
+      "filename": "/home/gpetrini/Org/20210719T000001--growth-and-income-distribution-in-latin-america__conferences.org",
+      "degree": 1,
       "backlinks": 0
     },
     {
       "id": "20211013T082514",
       "signature": null,
-      "name": "Financial Crisis: A Hardy Perennial - Kindleberger (2005)",
+      "name": "Financial Crisis: A Hardy Perennial",
       "keywords": [
-        "financialcrisis",
-        "macroeconomiafinanceira",
-        "ufrj"
+        "bib"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20211013T082514--financial-crisis-a-hardy-perennial-kindleberger-2005__financialcrisis_macroeconomiafinanceira_ufrj.org",
+      "filename": "/home/gpetrini/Org/20211013T082514--financial-crisis-a-hardy-perennial__bib.org",
       "degree": 2,
       "backlinks": 0
     },
     {
       "id": "20211025T000000",
       "signature": null,
-      "name": "nomaler_2021_Dbased: R&D-based economic growth in a supermultiplier model - (2021, Structural Change and Economic Dynamics)",
+      "name": "R&D-based economic growth in a supermultiplier model",
       "keywords": [
-        ""
+        "bib"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20211025T000000--nomaler-2021-dbased-rd-based-economic-growth-in-a-supermultiplier-model-2021-structural-change-and-economic-dynamics__.org",
-      "degree": 0,
+      "filename": "/home/gpetrini/Org/20211025T000000--rd-based-economic-growth-in-a-supermultiplier-model__bib.org",
+      "degree": 7,
       "backlinks": 0
     },
     {
       "id": "20211026T000001",
       "signature": null,
-      "name": "teixeira_2015_Crescimento: Crescimento liderado pela demanda na economia norte-americana nos anos 2000: uma análise a partir do supermultiplicador sraffiano com inflação de ativos - (2015, )",
+      "name": "Crescimento liderado pela demanda na economia norte-americana nos anos 2000: uma análise a partir do supermultiplicador sraffiano com inflação de ativos",
       "keywords": [
-        ""
+        "bib",
+        "mimeo"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20211026T000001--teixeira-2015-crescimento-crescimento-liderado-pela-demanda-na-economia-norte-americana-nos-anos-2000-uma-análise-a-partir-do-supermultiplicador-sraffiano-com-inflação-de-ativos-2015__.org",
-      "degree": 0,
+      "filename": "/home/gpetrini/Org/20211026T000001--crescimento-liderado-pela-demanda-na-economia-norte-americana-nos-anos-2000-uma-análise-a-partir-do-supermultiplicador-sraffiano-com-inflação-de-ativos__bib_mimeo.org",
+      "degree": 5,
       "backlinks": 0
     },
     {
       "id": "20211026T000002",
       "signature": null,
-      "name": "zezza_2008_US: US growth, the housing market, and the distribution of income - (2008, )",
+      "name": "US growth, the housing market, and the distribution of income",
       "keywords": [
-        ""
+        "bib"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20211026T000002--zezza-2008-us-us-growth-the-housing-market-and-the-distribution-of-income-2008__.org",
-      "degree": 0,
+      "filename": "/home/gpetrini/Org/20211026T000002--us-growth-the-housing-market-and-the-distribution-of-income__bib.org",
+      "degree": 4,
       "backlinks": 0
     },
     {
       "id": "20211027T155517",
       "signature": null,
-      "name": "Perez (2009, CJE)",
+      "name": "The double bubble at the turn of the century: technological roots and structural implications",
       "keywords": [
         "bib"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20211027T155517--perez-2009-cje__bib.org",
-      "degree": 3,
+      "filename": "/home/gpetrini/Org/20211027T155517--the-double-bubble-at-the-turn-of-the-century-technological-roots-and-structural-implications__bib.org",
+      "degree": 12,
+      "backlinks": 0
+    },
+    {
+      "id": "20211209T230231",
+      "signature": null,
+      "name": "Spatial Models",
+      "keywords": [
+        "placeholder"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20211209T230231--spatial-models__placeholder.org",
+      "degree": 0,
       "backlinks": 0
     },
     {
@@ -1019,20 +867,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20220630T153213--intertemporal-maximization__placeholder.org",
-      "degree": 0,
-      "backlinks": 0
-    },
-    {
-      "id": "20230216T235147",
-      "signature": null,
-      "name": "To what extent does aggregate leverage determine financial fragility?",
-      "keywords": [
-        "householdedebt"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20230216T235147--to-what-extent-does-aggregate-leverage-determine-financial-fragility__householdedebt.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 1,
+      "backlinks": 1
     },
     {
       "id": "20230216T235148",
@@ -1043,8 +879,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20230216T235148--akb__conferences.org",
-      "degree": 1,
-      "backlinks": 1
+      "degree": 3,
+      "backlinks": 2
     },
     {
       "id": "20230216T235149",
@@ -1055,8 +891,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20230216T235149--house-prices__placeholder.org",
-      "degree": 4,
-      "backlinks": 4
+      "degree": 8,
+      "backlinks": 8
     },
     {
       "id": "20230216T235150",
@@ -1067,8 +903,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20230216T235150--household-debt-and-bank-credit__placeholder.org",
-      "degree": 4,
-      "backlinks": 4
+      "degree": 10,
+      "backlinks": 10
     },
     {
       "id": "20230216T235151",
@@ -1079,7 +915,7 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20230216T235151--applied-qca__placeholder.org",
-      "degree": 1,
+      "degree": 2,
       "backlinks": 1
     },
     {
@@ -1091,7 +927,7 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20230216T235152--qca-data__placeholder.org",
-      "degree": 3,
+      "degree": 4,
       "backlinks": 3
     },
     {
@@ -1099,12 +935,13 @@
       "signature": null,
       "name": "Manuals and Best practices",
       "keywords": [
-        "placeholder"
+        "meta",
+        "readinglist"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20230216T235153--manuals-and-best-practices__placeholder.org",
-      "degree": 1,
-      "backlinks": 1
+      "filename": "/home/gpetrini/Org/20230216T235153--manuals-and-best-practices__meta_readinglist.org",
+      "degree": 3,
+      "backlinks": 2
     },
     {
       "id": "20230216T235154",
@@ -1115,8 +952,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20230216T235154--mortgage-interest-rate__placeholder.org",
-      "degree": 4,
-      "backlinks": 4
+      "degree": 11,
+      "backlinks": 11
     },
     {
       "id": "20230216T235155",
@@ -1127,8 +964,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20230216T235155--residential-investment-determinants__placeholder.org",
-      "degree": 2,
-      "backlinks": 2
+      "degree": 3,
+      "backlinks": 3
     },
     {
       "id": "20230216T235156",
@@ -1151,20 +988,20 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20230216T235157--varieties-of-capitalisms__placeholder.org",
-      "degree": 4,
-      "backlinks": 4
+      "degree": 9,
+      "backlinks": 7
     },
     {
       "id": "20230216T235158",
       "signature": null,
-      "name": "Inflação e Conflito Distributivo",
+      "name": "Inflation and Conflicting Claims",
       "keywords": [
         "placeholder"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20230216T235158--inflação-e-conflito-distributivo__placeholder.org",
-      "degree": 1,
-      "backlinks": 1
+      "filename": "/home/gpetrini/Org/20230216T235158--inflation-and-conflicting-claims__placeholder.org",
+      "degree": 2,
+      "backlinks": 2
     },
     {
       "id": "20230216T235159",
@@ -1175,8 +1012,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20230216T235159--qca-theoretical-economics-foundations__placeholder.org",
-      "degree": 6,
-      "backlinks": 6
+      "degree": 9,
+      "backlinks": 8
     },
     {
       "id": "20230216T235200",
@@ -1187,20 +1024,134 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20230216T235200--minskian-theory__placeholder.org",
+      "degree": 5,
+      "backlinks": 5
+    },
+    {
+      "id": "20230216T235202",
+      "signature": null,
+      "name": "Estagnação secular: teorieas e políticas",
+      "keywords": [
+        "conferences"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20230216T235202--estagnação-secular-teorieas-e-políticas__conferences.org",
+      "degree": 1,
+      "backlinks": 0
+    },
+    {
+      "id": "20230216T235204",
+      "signature": null,
+      "name": "Panel Data Chapter",
+      "keywords": [
+        "dissertation",
+        "readinglist"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20230216T235204--panel-data-chapter__dissertation_readinglist.org",
+      "degree": 2,
+      "backlinks": 1
+    },
+    {
+      "id": "20230216T235205",
+      "signature": null,
+      "name": "PhD Dissertation Reading List",
+      "keywords": [
+        "dissertation",
+        "outdated",
+        "readinglist"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20230216T235205--phd-dissertation-reading-list__dissertation_outdated_readinglist.org",
       "degree": 3,
       "backlinks": 3
     },
     {
-      "id": "20230216T235201",
+      "id": "20230216T235206",
       "signature": null,
-      "name": "Investimento, fluxo de caixa e dinâmica da alavancagem: regime minskiano ou paradoxo da dívida?",
+      "name": "Chapter QCA",
+      "keywords": [
+        "dissertation",
+        "readinglist"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20230216T235206--chapter-qca__dissertation_readinglist.org",
+      "degree": 8,
+      "backlinks": 7
+    },
+    {
+      "id": "20230216T235207",
+      "signature": null,
+      "name": "Chapter ABM",
+      "keywords": [
+        "dissertation",
+        "readinglist"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20230216T235207--chapter-abm__dissertation_readinglist.org",
+      "degree": 2,
+      "backlinks": 1
+    },
+    {
+      "id": "20230216T235208",
+      "signature": null,
+      "name": "Institutional Comparisons",
+      "keywords": [
+        "meta",
+        "placeholder"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20230216T235208--institutional-comparisons__meta_placeholder.org",
+      "degree": 9,
+      "backlinks": 8
+    },
+    {
+      "id": "20230216T235212",
+      "signature": null,
+      "name": "QCA Literature Review",
+      "keywords": [
+        "meta"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20230216T235212--qca-literature-review__meta.org",
+      "degree": 2,
+      "backlinks": 1
+    },
+    {
+      "id": "20230216T235213",
+      "signature": null,
+      "name": "Exogenous Interest Rate",
       "keywords": [
         "placeholder"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20230216T235201--investimento-fluxo-de-caixa-e-dinâmica-da-alavancagem-regime-minskiano-ou-paradoxo-da-dívida__placeholder.org",
-      "degree": 3,
-      "backlinks": 3
+      "filename": "/home/gpetrini/Org/20230216T235213--exogenous-interest-rate__placeholder.org",
+      "degree": 1,
+      "backlinks": 0
+    },
+    {
+      "id": "20230216T235216",
+      "signature": null,
+      "name": "Conferences and Workshops",
+      "keywords": [
+        "placeholder"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20230216T235216--conferences-and-workshops__placeholder.org",
+      "degree": 2,
+      "backlinks": 2
+    },
+    {
+      "id": "20230216T235217",
+      "signature": null,
+      "name": "Bubbles and Aggregate Demand",
+      "keywords": [
+        "mechanism"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20230216T235217--bubbles-and-aggregate-demand__mechanism.org",
+      "degree": 0,
+      "backlinks": 0
     },
     {
       "id": "20230628T172800",
@@ -1212,8 +1163,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20230628T172800--phd-dissertation-discussions__dissertation_meta.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 1,
+      "backlinks": 1
     },
     {
       "id": "20230720T154917",
@@ -1250,20 +1201,19 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20240529T113728--euler-equation__definition.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 1,
+      "backlinks": 1
     },
     {
       "id": "20240531T175705",
       "signature": null,
-      "name": "dsge",
+      "name": "DSGE",
       "keywords": [
-        "bib",
-        "placeholder"
+        "overview"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20240531T175705--dsge__bib_placeholder.org",
-      "degree": 0,
+      "filename": "/home/gpetrini/Org/20240531T175705--dsge__overview.org",
+      "degree": 20,
       "backlinks": 0
     },
     {
@@ -1275,23 +1225,7 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20240707T174859--varieties-of-capitalism-increasing-household-debt__householdedebt.org",
-      "degree": 0,
-      "backlinks": 0
-    },
-    {
-      "id": "20240707T175156",
-      "signature": null,
-      "name": "Variesties of Residential Capitalism",
-      "keywords": [
-        "housing",
-        "internationalpoliticaleconomy",
-        "residentialcapitalism",
-        "voc",
-        "welfarestate"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20240707T175156--variesties-of-residential-capitalism__housing_internationalpoliticaleconomy_residentialcapitalism_voc_welfarestate.org",
-      "degree": 0,
+      "degree": 2,
       "backlinks": 0
     },
     {
@@ -1303,7 +1237,19 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20240707T180119--a-critical-evaluation-of-some-kaleckian-proposals-to-deal-with-the-issue-of-convergence-towards-normal-capacity-utilization__householdedebt.org",
-      "degree": 0,
+      "degree": 1,
+      "backlinks": 0
+    },
+    {
+      "id": "20240707T180508",
+      "signature": null,
+      "name": "Macroeconomia da demanda efetiva na abordagem do excedente",
+      "keywords": [
+        "lecture"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20240707T180508--macroeconomia-da-demanda-efetiva-na-abordagem-do-excedente__lecture.org",
+      "degree": 3,
       "backlinks": 0
     },
     {
@@ -1319,18 +1265,6 @@
       "backlinks": 0
     },
     {
-      "id": "20240707T182124",
-      "signature": null,
-      "name": "Sraffian suppermultiplier growth model",
-      "keywords": [
-        "growthmodel"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20240707T182124--sraffian-suppermultiplier-growth-model__growthmodel.org",
-      "degree": 0,
-      "backlinks": 0
-    },
-    {
       "id": "20240707T182500",
       "signature": null,
       "name": "Demand-led growth models",
@@ -1339,8 +1273,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20240707T182500--demand-led-growth-models__meta.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 2,
+      "backlinks": 2
     },
     {
       "id": "20240707T182939",
@@ -1389,8 +1323,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20240708T113039--rational-expectations__placeholder.org",
-      "degree": 1,
-      "backlinks": 1
+      "degree": 3,
+      "backlinks": 3
     },
     {
       "id": "20240708T113226",
@@ -1425,20 +1359,20 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20240708T151322--financialization__placeholder.org",
-      "degree": 1,
-      "backlinks": 2
+      "degree": 2,
+      "backlinks": 3
     },
     {
       "id": "20240708T155455",
       "signature": null,
       "name": "Schumpeterian growth models",
       "keywords": [
-        "placeholder"
+        "canonicalmodels"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20240708T155455--schumpeterian-growth-models__placeholder.org",
-      "degree": 3,
-      "backlinks": 3
+      "filename": "/home/gpetrini/Org/20240708T155455--schumpeterian-growth-models__canonicalmodels.org",
+      "degree": 6,
+      "backlinks": 6
     },
     {
       "id": "20240708T155553",
@@ -1449,8 +1383,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20240708T155553--effective-demand__placeholder.org",
-      "degree": 1,
-      "backlinks": 1
+      "degree": 2,
+      "backlinks": 3
     },
     {
       "id": "20240708T155635",
@@ -1461,8 +1395,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20240708T155635--business-cycles__placeholder.org",
-      "degree": 1,
-      "backlinks": 3
+      "degree": 5,
+      "backlinks": 7
     },
     {
       "id": "20240708T155703",
@@ -1473,8 +1407,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20240708T155703--stylized-facts__placeholder.org",
-      "degree": 1,
-      "backlinks": 2
+      "degree": 3,
+      "backlinks": 4
     },
     {
       "id": "20240708T155825",
@@ -1485,8 +1419,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20240708T155825--product-innovation__placeholder.org",
-      "degree": 1,
-      "backlinks": 1
+      "degree": 2,
+      "backlinks": 2
     },
     {
       "id": "20240708T155856",
@@ -1497,8 +1431,20 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20240708T155856--process-innovation__placeholder.org",
-      "degree": 1,
-      "backlinks": 1
+      "degree": 2,
+      "backlinks": 2
+    },
+    {
+      "id": "20240708T164214",
+      "signature": null,
+      "name": "House Prices and Housing Investment in Sweden and the UK: Econometric Analysis for the Period 1970–1998",
+      "keywords": [
+        "bib"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20240708T164214--house-prices-and-housing-investment-in-sweden-and-the-uk-econometric-analysis-for-the-period-1970–1998__bib.org",
+      "degree": 7,
+      "backlinks": 0
     },
     {
       "id": "20240708T174852",
@@ -1580,6 +1526,18 @@
       "backlinks": 0
     },
     {
+      "id": "20240729T123409",
+      "signature": null,
+      "name": "Personal",
+      "keywords": [
+        "personal"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20240729T123409--personal__personal.org",
+      "degree": 0,
+      "backlinks": 0
+    },
+    {
       "id": "20240906T145727",
       "signature": null,
       "name": "Medium-Term Business Cycles",
@@ -1605,18 +1563,6 @@
       "filename": "/home/gpetrini/Org/20240906T150431--technological-change__placeholder.org",
       "degree": 2,
       "backlinks": 2
-    },
-    {
-      "id": "20240906T150620",
-      "signature": null,
-      "name": "Agent Based Models",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20240906T150620--agent-based-models__placeholder.org",
-      "degree": 3,
-      "backlinks": 3
     },
     {
       "id": "20240906T161550",
@@ -1682,8 +1628,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20241126T141520--asset-prices__placeholder.org",
-      "degree": 1,
-      "backlinks": 1
+      "degree": 2,
+      "backlinks": 2
     },
     {
       "id": "20241128T145039",
@@ -1759,8 +1705,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T113822--income-distribution__placeholder.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 1,
+      "backlinks": 1
     },
     {
       "id": "20250202T113854",
@@ -1811,18 +1757,6 @@
       "backlinks": 0
     },
     {
-      "id": "20250202T114126",
-      "signature": null,
-      "name": "Effective Demand",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250202T114126--effective-demand__placeholder.org",
-      "degree": 0,
-      "backlinks": 0
-    },
-    {
       "id": "20250202T114158",
       "signature": null,
       "name": "Accelerator Model",
@@ -1831,8 +1765,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T114158--accelerator-model__placeholder.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 1,
+      "backlinks": 1
     },
     {
       "id": "20250202T114221",
@@ -1843,8 +1777,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T114221--adjustment-costs__placeholder.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 1,
+      "backlinks": 1
     },
     {
       "id": "20250202T114248",
@@ -1857,8 +1791,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T114248--agent-based-models__abm_overview_placeholder.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 20,
+      "backlinks": 4
     },
     {
       "id": "20250202T114350",
@@ -1883,7 +1817,7 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T114420--agent-based-validation__abm_placeholder_validation.org",
-      "degree": 0,
+      "degree": 1,
       "backlinks": 0
     },
     {
@@ -1992,8 +1926,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T114928--asset-bubble__placeholder.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 2,
+      "backlinks": 4
     },
     {
       "id": "20250202T114954",
@@ -2004,8 +1938,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T114954--autonomous-expenditures__placeholder.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 1,
+      "backlinks": 1
     },
     {
       "id": "20250202T115011",
@@ -2148,8 +2082,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T115328--canonical-models__placeholder.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 4,
+      "backlinks": 4
     },
     {
       "id": "20250202T115405",
@@ -2232,8 +2166,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T115827--sraffian-theory__placeholder.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 4,
+      "backlinks": 4
     },
     {
       "id": "20250202T115838",
@@ -2256,8 +2190,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T115857--shopping-time__placeholder.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 1,
+      "backlinks": 1
     },
     {
       "id": "20250202T115910",
@@ -2268,8 +2202,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T115910--secular-stagnation__placeholder.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 1,
+      "backlinks": 1
     },
     {
       "id": "20250202T115929",
@@ -2293,8 +2227,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T120026--review-of-literature__placeholder.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 1,
+      "backlinks": 1
     },
     {
       "id": "20250202T120045",
@@ -2305,8 +2239,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T120045--residential-investment__placeholder.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 2,
+      "backlinks": 2
     },
     {
       "id": "20250202T120057",
@@ -2341,8 +2275,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T120119--regulation__placeholder.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 1,
+      "backlinks": 1
     },
     {
       "id": "20250202T120130",
@@ -2369,18 +2303,6 @@
       "backlinks": 0
     },
     {
-      "id": "20250202T120154",
-      "signature": null,
-      "name": "Product Innovation",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250202T120154--product-innovation__placeholder.org",
-      "degree": 0,
-      "backlinks": 0
-    },
-    {
       "id": "20250202T120213",
       "signature": null,
       "name": "Profit-Led",
@@ -2402,7 +2324,7 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T120232--productivity-paradox__paradox_placeholder.org",
-      "degree": 0,
+      "degree": 1,
       "backlinks": 0
     },
     {
@@ -2414,20 +2336,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T120251--policy-oriented__placeholder.org",
-      "degree": 0,
-      "backlinks": 0
-    },
-    {
-      "id": "20250202T120306",
-      "signature": null,
-      "name": "Process Innovation",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250202T120306--process-innovation__placeholder.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 1,
+      "backlinks": 1
     },
     {
       "id": "20250202T120321",
@@ -2438,8 +2348,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T120321--phillips-curve__placeholder.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 2,
+      "backlinks": 3
     },
     {
       "id": "20250202T120332",
@@ -2498,8 +2408,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T120427--monetary-policy__placeholder.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 5,
+      "backlinks": 9
     },
     {
       "id": "20250202T120437",
@@ -2522,8 +2432,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T120452--macroeconomic-paradoxes__placeholder.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 2,
+      "backlinks": 2
     },
     {
       "id": "20250202T120514",
@@ -2631,8 +2541,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T120740--innovation-led-growth-models__placeholder.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 1,
+      "backlinks": 1
     },
     {
       "id": "20250202T120757",
@@ -2655,8 +2565,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T120807--innovation-bubble-abm__placeholder.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 3,
+      "backlinks": 3
     },
     {
       "id": "20250202T120824",
@@ -2679,8 +2589,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T120843--inflation__placeholder.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 2,
+      "backlinks": 3
     },
     {
       "id": "20250202T120856",
@@ -2691,8 +2601,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T120856--housing-market__placeholder.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 7,
+      "backlinks": 7
     },
     {
       "id": "20250202T120908",
@@ -2861,14 +2771,12 @@
       "signature": null,
       "name": "Endogenous Growth",
       "keywords": [
-        "canonicalmodels",
-        "growthmodel",
         "placeholder"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20250202T121258--endogenous-growth__canonicalmodels_growthmodel_placeholder.org",
-      "degree": 0,
-      "backlinks": 0
+      "filename": "/home/gpetrini/Org/20250202T121258--endogenous-growth__placeholder.org",
+      "degree": 2,
+      "backlinks": 1
     },
     {
       "id": "20250202T121337",
@@ -2893,8 +2801,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T121415--cats-abm-family__abm_canonicalmodels_placeholder.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 1,
+      "backlinks": 1
     },
     {
       "id": "20250202T121441",
@@ -3112,12 +3020,13 @@
     {
       "id": "20250202T121943",
       "signature": null,
-      "name": "discriminacao_de_precos",
+      "name": "Price Discrimination",
       "keywords": [
-        "placeholder"
+        "definition",
+        "microeconomics"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20250202T121943--discriminacao-de-precos__placeholder.org",
+      "filename": "/home/gpetrini/Org/20250202T121943--price-discrimination__definition_microeconomics.org",
       "degree": 0,
       "backlinks": 0
     },
@@ -3137,14 +3046,13 @@
     {
       "id": "20250202T122037",
       "signature": null,
-      "name": "economia_politica_classica",
+      "name": "Classical Political Economy",
       "keywords": [
-        "placeholder",
         "schoolofthought"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20250202T122037--economia-politica-classica__placeholder_schoolofthought.org",
-      "degree": 0,
+      "filename": "/home/gpetrini/Org/20250202T122037--classical-political-economy__schoolofthought.org",
+      "degree": 1,
       "backlinks": 0
     },
     {
@@ -3284,8 +3192,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250203T172959--dot-com-crisis__historicalevent_placeholder.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 1,
+      "backlinks": 1
     },
     {
       "id": "20250203T173133",
@@ -3297,21 +3205,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250203T173133--financial-crises__historicalevent_placeholder.org",
-      "degree": 0,
-      "backlinks": 0
-    },
-    {
-      "id": "20250203T173134",
-      "signature": null,
-      "name": "Financial Crises",
-      "keywords": [
-        "historicalevent",
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250203T173134--financial-crises__historicalevent_placeholder.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 5,
+      "backlinks": 5
     },
     {
       "id": "20250203T173222",
@@ -3347,8 +3242,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250203T173330--financial-innovation__placeholder.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 1,
+      "backlinks": 1
     },
     {
       "id": "20250203T173349",
@@ -3359,8 +3254,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250203T173349--financial-regulation__placeholder.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 1,
+      "backlinks": 1
     },
     {
       "id": "20250203T173410",
@@ -3475,7 +3370,7 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250203T174925--heterodox-perspectives-on-stagnation__conferences_stagnation.org",
-      "degree": 0,
+      "degree": 2,
       "backlinks": 0
     },
     {
@@ -3526,8 +3421,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250203T175827--income-effect__definition.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 1,
+      "backlinks": 1
     },
     {
       "id": "20250203T175849",
@@ -3659,8 +3554,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250203T180327--keynes-meets-schumpeter-family__abm_meta.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 1,
+      "backlinks": 1
     },
     {
       "id": "20250203T180403",
@@ -3829,8 +3724,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250203T181334--market-failures__mainstream_rigidity.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 1,
+      "backlinks": 1
     },
     {
       "id": "20250203T181356",
@@ -3867,8 +3762,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250203T181514--modern-surplus-approach__schoolofthought_sraffian.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 2,
+      "backlinks": 2
     },
     {
       "id": "20250203T181543",
@@ -3947,8 +3842,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250203T181909--natural-interest-rate__definition_mainstream_monetary.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 2,
+      "backlinks": 2
     },
     {
       "id": "20250203T181935",
@@ -3996,8 +3891,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250203T182148--nominal-rigidities__rigidity.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 1,
+      "backlinks": 1
     },
     {
       "id": "20250203T182206",
@@ -4056,8 +3951,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250203T182443--overinvestment__placeholder.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 2,
+      "backlinks": 2
     },
     {
       "id": "20250203T182500",
@@ -4221,14 +4116,12 @@
       "signature": null,
       "name": "Real Buisiness Cycle",
       "keywords": [
-        "canonicalmodels",
-        "macroeconomic",
-        "mainstream"
+        "placeholder"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20250203T183616--real-buisiness-cycle__canonicalmodels_macroeconomic_mainstream.org",
-      "degree": 0,
-      "backlinks": 0
+      "filename": "/home/gpetrini/Org/20250203T183616--real-buisiness-cycle__placeholder.org",
+      "degree": 3,
+      "backlinks": 2
     },
     {
       "id": "20250203T183636",
@@ -4278,21 +4171,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250203T183803--rigidity-and-frictions__placeholder.org",
-      "degree": 0,
-      "backlinks": 0
-    },
-    {
-      "id": "20250203T183837",
-      "signature": null,
-      "name": "Schumpeterian growth models",
-      "keywords": [
-        "canonicalmodels",
-        "meta"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250203T183837--schumpeterian-growth-models__canonicalmodels_meta.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 1,
+      "backlinks": 1
     },
     {
       "id": "20250203T183856",
@@ -4378,8 +4258,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250203T184028--stock-flow-consistent__canonicalmodels.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 1,
+      "backlinks": 1
     },
     {
       "id": "20250203T184101",
@@ -4415,8 +4295,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250203T184155--supermultiplier-models__canonicalmodels_sraffian.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 7,
+      "backlinks": 5
     },
     {
       "id": "20250203T184210",
@@ -4455,8 +4335,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250203T184250--taylor-principle__definition_monetary.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 1,
+      "backlinks": 2
     },
     {
       "id": "20250203T184305",
@@ -4469,8 +4349,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250203T184305--taylor-rule__definition_monetary_policy.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 2,
+      "backlinks": 1
     },
     {
       "id": "20250203T184320",
@@ -4481,20 +4361,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250203T184320--technological-revolution__placeholder.org",
-      "degree": 0,
-      "backlinks": 0
-    },
-    {
-      "id": "20250203T184321",
-      "signature": null,
-      "name": "Technological revolution",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250203T184321--technological-revolution__placeholder.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 1,
+      "backlinks": 2
     },
     {
       "id": "20250203T184409",
@@ -4648,29 +4516,510 @@
       "signature": null,
       "name": "Calvo pricing setting",
       "keywords": [
-        "definition",
-        "mainstream"
+        "definition"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20250203T184910--calvo-pricing-setting__definition_mainstream.org",
+      "filename": "/home/gpetrini/Org/20250203T184910--calvo-pricing-setting__definition.org",
+      "degree": 2,
+      "backlinks": 2
+    },
+    {
+      "id": "20250204T113206",
+      "signature": null,
+      "name": "A distribuição pessoal da renda na macroeconomia liderada pela demanda",
+      "keywords": [
+        "akb",
+        "conferences",
+        "incomedistribution"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250204T113206--a-distribuição-pessoal-da-renda-na-macroeconomia-liderada-pela-demanda__akb_conferences_incomedistribution.org",
       "degree": 0,
       "backlinks": 0
+    },
+    {
+      "id": "20250204T113458",
+      "signature": null,
+      "name": "The Determinants of Bank Credit in Industrialized Countries: Do Property Prices Matter?",
+      "keywords": [
+        "bib",
+        "credit",
+        "fixed",
+        "houseprices"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250204T113458--the-determinants-of-bank-credit-in-industrialized-countries-do-property-prices-matter__bib_credit_fixed_houseprices.org",
+      "degree": 2,
+      "backlinks": 0
+    },
+    {
+      "id": "20250204T114059",
+      "signature": null,
+      "name": "Theories of Value, Output, and Employment",
+      "keywords": [
+        "fixed",
+        "lecture",
+        "sraffian"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250204T114059--theories-of-value-output-and-employment__fixed_lecture_sraffian.org",
+      "degree": 0,
+      "backlinks": 0
+    },
+    {
+      "id": "20250204T144517",
+      "signature": null,
+      "name": "Forecast",
+      "keywords": [
+        "placeholder"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250204T144517--forecast__placeholder.org",
+      "degree": 1,
+      "backlinks": 1
+    },
+    {
+      "id": "20250204T144556",
+      "signature": null,
+      "name": "Supply Chain",
+      "keywords": [
+        "placeholder"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250204T144556--supply-chain__placeholder.org",
+      "degree": 1,
+      "backlinks": 1
+    },
+    {
+      "id": "20250204T172746",
+      "signature": null,
+      "name": "Cambridge Journal of Economics",
+      "keywords": [
+        "journal"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250204T172746--cambridge-journal-of-economics__journal.org",
+      "degree": 3,
+      "backlinks": 3
+    },
+    {
+      "id": "20250204T172907",
+      "signature": null,
+      "name": "Empirical",
+      "keywords": [
+        "placeholder"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250204T172907--empirical__placeholder.org",
+      "degree": 5,
+      "backlinks": 5
+    },
+    {
+      "id": "20250204T172927",
+      "signature": null,
+      "name": "Brazil",
+      "keywords": [
+        "country",
+        "data"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250204T172927--brazil__country_data.org",
+      "degree": 1,
+      "backlinks": 1
+    },
+    {
+      "id": "20250204T173134",
+      "signature": null,
+      "name": "Review of Political Economy",
+      "keywords": [
+        "journal"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250204T173134--review-of-political-economy__journal.org",
+      "degree": 1,
+      "backlinks": 1
+    },
+    {
+      "id": "20250204T173324",
+      "signature": null,
+      "name": "OECD",
+      "keywords": [
+        "country",
+        "data"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250204T173324--oecd__country_data.org",
+      "degree": 3,
+      "backlinks": 3
+    },
+    {
+      "id": "20250204T173452",
+      "signature": null,
+      "name": "United States",
+      "keywords": [
+        "country",
+        "data"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250204T173452--united-states__country_data.org",
+      "degree": 7,
+      "backlinks": 6
+    },
+    {
+      "id": "20250204T173844",
+      "signature": null,
+      "name": "Politics and Society",
+      "keywords": [
+        "journal"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250204T173844--politics-and-society__journal.org",
+      "degree": 1,
+      "backlinks": 1
+    },
+    {
+      "id": "20250204T185459",
+      "signature": null,
+      "name": "Comparative Politics",
+      "keywords": [
+        "journal"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250204T185459--comparative-politics__journal.org",
+      "degree": 1,
+      "backlinks": 1
+    },
+    {
+      "id": "20250204T185819",
+      "signature": null,
+      "name": "Cost Inflation",
+      "keywords": [
+        "placeholder"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250204T185819--cost-inflation__placeholder.org",
+      "degree": 1,
+      "backlinks": 1
+    },
+    {
+      "id": "20250204T185949",
+      "signature": null,
+      "name": "International Trade",
+      "keywords": [
+        "placeholder"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250204T185949--international-trade__placeholder.org",
+      "degree": 1,
+      "backlinks": 1
+    },
+    {
+      "id": "20250204T190112",
+      "signature": null,
+      "name": "Seminal Work",
+      "keywords": [
+        "placeholder"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250204T190112--seminal-work__placeholder.org",
+      "degree": 1,
+      "backlinks": 1
+    },
+    {
+      "id": "20250204T190341",
+      "signature": null,
+      "name": "Journal of Institutional Economics",
+      "keywords": [
+        "journal"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250204T190341--journal-of-institutional-economics__journal.org",
+      "degree": 1,
+      "backlinks": 1
+    },
+    {
+      "id": "20250204T190636",
+      "signature": null,
+      "name": "IMF",
+      "keywords": [
+        "institutions",
+        "journal"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250204T190636--imf__institutions_journal.org",
+      "degree": 1,
+      "backlinks": 1
+    },
+    {
+      "id": "20250204T190803",
+      "signature": null,
+      "name": "International Journal of Central Banking",
+      "keywords": [
+        "journal"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250204T190803--international-journal-of-central-banking__journal.org",
+      "degree": 1,
+      "backlinks": 1
+    },
+    {
+      "id": "20250204T190950",
+      "signature": null,
+      "name": "Risk Management",
+      "keywords": [
+        "placeholder"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250204T190950--risk-management__placeholder.org",
+      "degree": 1,
+      "backlinks": 1
+    },
+    {
+      "id": "20250204T191045",
+      "signature": null,
+      "name": "International Real Estate Review",
+      "keywords": [
+        "journal"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250204T191045--international-real-estate-review__journal.org",
+      "degree": 1,
+      "backlinks": 1
+    },
+    {
+      "id": "20250204T191409",
+      "signature": null,
+      "name": "Housing Studies",
+      "keywords": [
+        "journal"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250204T191409--housing-studies__journal.org",
+      "degree": 1,
+      "backlinks": 1
+    },
+    {
+      "id": "20250204T192029",
+      "signature": null,
+      "name": "Journal of International Economics",
+      "keywords": [
+        "journal"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250204T192029--journal-of-international-economics__journal.org",
+      "degree": 1,
+      "backlinks": 1
+    },
+    {
+      "id": "20250204T192331",
+      "signature": null,
+      "name": "Journal of Real Estate Research",
+      "keywords": [
+        "journal"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250204T192331--journal-of-real-estate-research__journal.org",
+      "degree": 1,
+      "backlinks": 1
+    },
+    {
+      "id": "20250204T192508",
+      "signature": null,
+      "name": "Minskian Regime",
+      "keywords": [
+        "placeholder"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250204T192508--minskian-regime__placeholder.org",
+      "degree": 4,
+      "backlinks": 4
+    },
+    {
+      "id": "20250204T192522",
+      "signature": null,
+      "name": "Paradox of Debt",
+      "keywords": [
+        "placeholder"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250204T192522--paradox-of-debt__placeholder.org",
+      "degree": 5,
+      "backlinks": 4
+    },
+    {
+      "id": "20250204T192826",
+      "signature": null,
+      "name": "Minsky's induced investment and business cycles",
+      "keywords": [
+        "bib"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250204T192826--minskys-induced-investment-and-business-cycles__bib.org",
+      "degree": 5,
+      "backlinks": 0
+    },
+    {
+      "id": "20250204T192924",
+      "signature": null,
+      "name": "European Central Bank",
+      "keywords": [
+        "institutions"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250204T192924--european-central-bank__institutions.org",
+      "degree": 1,
+      "backlinks": 1
+    },
+    {
+      "id": "20250204T192947",
+      "signature": null,
+      "name": "Loan to Value Ratio",
+      "keywords": [
+        "placeholder"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250204T192947--loan-to-value-ratio__placeholder.org",
+      "degree": 1,
+      "backlinks": 1
+    },
+    {
+      "id": "20250204T193029",
+      "signature": null,
+      "name": "Bank Competition",
+      "keywords": [
+        "placeholder"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250204T193029--bank-competition__placeholder.org",
+      "degree": 1,
+      "backlinks": 1
+    },
+    {
+      "id": "20250204T193042",
+      "signature": null,
+      "name": "Foreclosure",
+      "keywords": [
+        "placeholder"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250204T193042--foreclosure__placeholder.org",
+      "degree": 1,
+      "backlinks": 1
+    },
+    {
+      "id": "20250204T193057",
+      "signature": null,
+      "name": "Securitization",
+      "keywords": [
+        "placeholder"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250204T193057--securitization__placeholder.org",
+      "degree": 1,
+      "backlinks": 1
+    },
+    {
+      "id": "20250204T193239",
+      "signature": null,
+      "name": "Structural Change and Economic Dynamics",
+      "keywords": [
+        "journal"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250204T193239--structural-change-and-economic-dynamics__journal.org",
+      "degree": 1,
+      "backlinks": 1
+    },
+    {
+      "id": "20250205T095839",
+      "signature": null,
+      "name": "Review of Evolutionary Political Economy",
+      "keywords": [
+        "journal"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250205T095839--review-of-evolutionary-political-economy__journal.org",
+      "degree": 1,
+      "backlinks": 1
+    },
+    {
+      "id": "20250205T095922",
+      "signature": null,
+      "name": "Post Keynesian Economics",
+      "keywords": [
+        "schoolofthought"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250205T095922--post-keynesian-economics__schoolofthought.org",
+      "degree": 1,
+      "backlinks": 1
+    },
+    {
+      "id": "20250205T100454",
+      "signature": null,
+      "name": "Review of Urban & Regional Development Studies",
+      "keywords": [
+        "journal"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250205T100454--review-of-urban-regional-development-studies__journal.org",
+      "degree": 1,
+      "backlinks": 1
+    },
+    {
+      "id": "20250205T102306",
+      "signature": null,
+      "name": "International Demand-led Workshop",
+      "keywords": [
+        "conferences"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250205T102306--international-demand-led-workshop__conferences.org",
+      "degree": 3,
+      "backlinks": 2
+    },
+    {
+      "id": "20250205T103035",
+      "signature": null,
+      "name": "Variesties of Residential Capitalism",
+      "keywords": [
+        "bib"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250205T103035--variesties-of-residential-capitalism__bib.org",
+      "degree": 5,
+      "backlinks": 0
+    },
+    {
+      "id": "20250205T103208",
+      "signature": null,
+      "name": "To what extent does aggregate leverage determine financial fragility?",
+      "keywords": [
+        "bib",
+        "householdedebt"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250205T103208--to-what-extent-does-aggregate-leverage-determine-financial-fragility__bib_householdedebt.org",
+      "degree": 4,
+      "backlinks": 0
+    },
+    {
+      "id": "20250205T104529",
+      "signature": null,
+      "name": "Mainstream Models",
+      "keywords": [
+        "schoolofthought"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250205T104529--mainstream-models__schoolofthought.org",
+      "degree": 4,
+      "backlinks": 4
     }
   ],
   "edges": [
     {
       "source": "20201125T110651",
       "target": "20230216T235148",
-      "weight": 1
-    },
-    {
-      "source": "20201129T000000",
-      "target": "20230216T235149",
-      "weight": 1
-    },
-    {
-      "source": "20201129T000000",
-      "target": "20230216T235150",
       "weight": 1
     },
     {
@@ -4689,13 +5038,8 @@
       "weight": 1
     },
     {
-      "source": "20201208T000002",
-      "target": "20201203T145735",
-      "weight": 1
-    },
-    {
       "source": "20201208T000003",
-      "target": "20201203T145735",
+      "target": "20250202T115827",
       "weight": 1
     },
     {
@@ -4704,13 +5048,13 @@
       "weight": 1
     },
     {
-      "source": "20201216T000006",
-      "target": "20201203T145735",
+      "source": "20201218T000007",
+      "target": "20201202T092036",
       "weight": 1
     },
     {
-      "source": "20201218T000007",
-      "target": "20201202T092036",
+      "source": "20210112T000008",
+      "target": "20230216T235208",
       "weight": 1
     },
     {
@@ -4724,8 +5068,53 @@
       "weight": 1
     },
     {
+      "source": "20210125T000010",
+      "target": "20250203T173133",
+      "weight": 1
+    },
+    {
+      "source": "20210125T000010",
+      "target": "20230216T235149",
+      "weight": 1
+    },
+    {
+      "source": "20210125T000010",
+      "target": "20250204T144517",
+      "weight": 1
+    },
+    {
+      "source": "20210125T000010",
+      "target": "20250204T144556",
+      "weight": 1
+    },
+    {
+      "source": "20210126T000011",
+      "target": "20230216T235208",
+      "weight": 1
+    },
+    {
+      "source": "20210126T000011",
+      "target": "20230216T235154",
+      "weight": 1
+    },
+    {
+      "source": "20210201T000012",
+      "target": "20230216T235212",
+      "weight": 1
+    },
+    {
       "source": "20210201T000012",
       "target": "20230216T235153",
+      "weight": 1
+    },
+    {
+      "source": "20210204T000013",
+      "target": "20230216T235208",
+      "weight": 1
+    },
+    {
+      "source": "20210204T000013",
+      "target": "20250202T120856",
       "weight": 1
     },
     {
@@ -4784,13 +5173,108 @@
       "weight": 1
     },
     {
+      "source": "20210212T000001",
+      "target": "20250204T172746",
+      "weight": 1
+    },
+    {
+      "source": "20210212T000001",
+      "target": "20250204T172907",
+      "weight": 1
+    },
+    {
+      "source": "20210212T000001",
+      "target": "20250204T172927",
+      "weight": 1
+    },
+    {
+      "source": "20210212T000003",
+      "target": "20250204T173134",
+      "weight": 1
+    },
+    {
+      "source": "20210212T000003",
+      "target": "20250203T184155",
+      "weight": 1
+    },
+    {
+      "source": "20210212T000003",
+      "target": "20250202T115328",
+      "weight": 1
+    },
+    {
+      "source": "20210212T000004",
+      "target": "20250204T173324",
+      "weight": 1
+    },
+    {
+      "source": "20210212T000004",
+      "target": "20250204T172907",
+      "weight": 1
+    },
+    {
+      "source": "20210212T000005",
+      "target": "20230216T235200",
+      "weight": 1
+    },
+    {
+      "source": "20210212T000005",
+      "target": "20250204T173452",
+      "weight": 1
+    },
+    {
+      "source": "20210212T000005",
+      "target": "20250204T172907",
+      "weight": 1
+    },
+    {
+      "source": "20210212T000006",
+      "target": "20250202T114248",
+      "weight": 1
+    },
+    {
+      "source": "20210212T000006",
+      "target": "20240708T155455",
+      "weight": 1
+    },
+    {
+      "source": "20210217T000001",
+      "target": "20250204T173844",
+      "weight": 1
+    },
+    {
       "source": "20210217T000001",
       "target": "20230216T235157",
       "weight": 1
     },
     {
+      "source": "20210217T000002",
+      "target": "20250202T120856",
+      "weight": 1
+    },
+    {
+      "source": "20210217T000002",
+      "target": "20230216T235150",
+      "weight": 1
+    },
+    {
+      "source": "20210217T000002",
+      "target": "20230216T235157",
+      "weight": 1
+    },
+    {
+      "source": "20210217T000002",
+      "target": "20250202T120045",
+      "weight": 1
+    },
+    {
       "source": "20210217T000003",
       "target": "20230216T235157",
+      "weight": 1
+    },
+    {
+      "source": "20210217T000003",
+      "target": "20250204T185459",
       "weight": 1
     },
     {
@@ -4804,8 +5288,23 @@
       "weight": 1
     },
     {
+      "source": "20210217T000004",
+      "target": "20240708T151322",
+      "weight": 1
+    },
+    {
       "source": "20210218T000000",
       "target": "20230216T235158",
+      "weight": 1
+    },
+    {
+      "source": "20210218T000000",
+      "target": "20250202T120843",
+      "weight": 1
+    },
+    {
+      "source": "20210218T000000",
+      "target": "20250204T185819",
       "weight": 1
     },
     {
@@ -4814,8 +5313,38 @@
       "weight": 1
     },
     {
+      "source": "20210222T000000",
+      "target": "20230216T235208",
+      "weight": 1
+    },
+    {
+      "source": "20210222T000000",
+      "target": "20250204T185949",
+      "weight": 1
+    },
+    {
+      "source": "20210222T000000",
+      "target": "20230216T235159",
+      "weight": 1
+    },
+    {
+      "source": "20210222T000000",
+      "target": "20250204T190112",
+      "weight": 1
+    },
+    {
       "source": "20210223T000002",
       "target": "20230216T235159",
+      "weight": 1
+    },
+    {
+      "source": "20210223T000002",
+      "target": "20250204T190341",
+      "weight": 1
+    },
+    {
+      "source": "20210223T000002",
+      "target": "20230216T235208",
       "weight": 1
     },
     {
@@ -4834,8 +5363,128 @@
       "weight": 1
     },
     {
+      "source": "20210223T000003",
+      "target": "20250202T120427",
+      "weight": 1
+    },
+    {
+      "source": "20210223T000003",
+      "target": "20230216T235150",
+      "weight": 1
+    },
+    {
+      "source": "20210223T000003",
+      "target": "20230216T235208",
+      "weight": 1
+    },
+    {
+      "source": "20210223T000003",
+      "target": "20250204T190636",
+      "weight": 1
+    },
+    {
       "source": "20210226T000001",
       "target": "20230216T235159",
+      "weight": 1
+    },
+    {
+      "source": "20210226T000001",
+      "target": "20250202T120251",
+      "weight": 1
+    },
+    {
+      "source": "20210226T000001",
+      "target": "20230216T235150",
+      "weight": 1
+    },
+    {
+      "source": "20210226T000001",
+      "target": "20250204T190803",
+      "weight": 1
+    },
+    {
+      "source": "20210226T000002",
+      "target": "20250204T191045",
+      "weight": 1
+    },
+    {
+      "source": "20210226T000002",
+      "target": "20230216T235154",
+      "weight": 1
+    },
+    {
+      "source": "20210226T000002",
+      "target": "20250204T173452",
+      "weight": 1
+    },
+    {
+      "source": "20210226T000002",
+      "target": "20250204T190950",
+      "weight": 1
+    },
+    {
+      "source": "20210226T000003",
+      "target": "20250204T191409",
+      "weight": 1
+    },
+    {
+      "source": "20210226T000004",
+      "target": "20250202T120856",
+      "weight": 1
+    },
+    {
+      "source": "20210226T000004",
+      "target": "20230216T235154",
+      "weight": 1
+    },
+    {
+      "source": "20210226T000004",
+      "target": "20250204T173452",
+      "weight": 1
+    },
+    {
+      "source": "20210226T000005",
+      "target": "20230216T235154",
+      "weight": 1
+    },
+    {
+      "source": "20210226T000006",
+      "target": "20250202T120856",
+      "weight": 1
+    },
+    {
+      "source": "20210226T000006",
+      "target": "20230216T235154",
+      "weight": 1
+    },
+    {
+      "source": "20210226T000006",
+      "target": "20250202T120119",
+      "weight": 1
+    },
+    {
+      "source": "20210226T000007",
+      "target": "20250204T192029",
+      "weight": 1
+    },
+    {
+      "source": "20210226T000007",
+      "target": "20250204T172907",
+      "weight": 1
+    },
+    {
+      "source": "20210226T000007",
+      "target": "20230216T235149",
+      "weight": 1
+    },
+    {
+      "source": "20210226T000007",
+      "target": "20250202T120427",
+      "weight": 1
+    },
+    {
+      "source": "20210226T000007",
+      "target": "20250203T173133",
       "weight": 1
     },
     {
@@ -4844,23 +5493,33 @@
       "weight": 1
     },
     {
+      "source": "20210226T000008",
+      "target": "20230216T235154",
+      "weight": 1
+    },
+    {
+      "source": "20210226T000008",
+      "target": "20250204T173324",
+      "weight": 1
+    },
+    {
+      "source": "20210226T000009",
+      "target": "20250204T192331",
+      "weight": 1
+    },
+    {
       "source": "20210301T000001",
       "target": "20230216T235200",
       "weight": 1
     },
     {
       "source": "20210301T000001",
-      "target": "20230216T235201",
+      "target": "20250204T192508",
       "weight": 1
     },
     {
-      "source": "20210301T000002",
-      "target": "20230216T235200",
-      "weight": 1
-    },
-    {
-      "source": "20210301T000002",
-      "target": "20230216T235201",
+      "source": "20210301T000001",
+      "target": "20250204T192522",
       "weight": 1
     },
     {
@@ -4870,7 +5529,27 @@
     },
     {
       "source": "20210302T000000",
-      "target": "20230216T235201",
+      "target": "20250204T192508",
+      "weight": 1
+    },
+    {
+      "source": "20210302T000000",
+      "target": "20250204T192522",
+      "weight": 1
+    },
+    {
+      "source": "20210302T000000",
+      "target": "20250202T120856",
+      "weight": 1
+    },
+    {
+      "source": "20210302T000000",
+      "target": "20250205T095839",
+      "weight": 1
+    },
+    {
+      "source": "20210302T000000",
+      "target": "20250205T095922",
       "weight": 1
     },
     {
@@ -4889,13 +5568,138 @@
       "weight": 1
     },
     {
+      "source": "20210303T000000",
+      "target": "20250202T120427",
+      "weight": 1
+    },
+    {
+      "source": "20210303T000000",
+      "target": "20250204T192924",
+      "weight": 1
+    },
+    {
+      "source": "20210303T000000",
+      "target": "20250204T192947",
+      "weight": 1
+    },
+    {
+      "source": "20210303T000000",
+      "target": "20250203T173133",
+      "weight": 1
+    },
+    {
+      "source": "20210303T000000",
+      "target": "20250204T173452",
+      "weight": 1
+    },
+    {
+      "source": "20210303T000000",
+      "target": "20250204T193029",
+      "weight": 1
+    },
+    {
+      "source": "20210303T000000",
+      "target": "20250204T193042",
+      "weight": 1
+    },
+    {
+      "source": "20210303T000000",
+      "target": "20250204T193057",
+      "weight": 1
+    },
+    {
+      "source": "20210719T000001",
+      "target": "20250205T102306",
+      "weight": 1
+    },
+    {
       "source": "20211013T082514",
       "target": "20201202T092036",
       "weight": 1
     },
     {
       "source": "20211013T082514",
-      "target": "20201207T000000",
+      "target": "20250203T173133",
+      "weight": 1
+    },
+    {
+      "source": "20211025T000000",
+      "target": "20250202T120807",
+      "weight": 1
+    },
+    {
+      "source": "20211025T000000",
+      "target": "20250203T184155",
+      "weight": 1
+    },
+    {
+      "source": "20211025T000000",
+      "target": "20240707T182500",
+      "weight": 1
+    },
+    {
+      "source": "20211025T000000",
+      "target": "20240708T155455",
+      "weight": 1
+    },
+    {
+      "source": "20211025T000000",
+      "target": "20250202T120740",
+      "weight": 1
+    },
+    {
+      "source": "20211025T000000",
+      "target": "20250204T193239",
+      "weight": 1
+    },
+    {
+      "source": "20211025T000000",
+      "target": "20230628T172800",
+      "weight": 1
+    },
+    {
+      "source": "20211026T000001",
+      "target": "20250202T120045",
+      "weight": 1
+    },
+    {
+      "source": "20211026T000001",
+      "target": "20250203T184155",
+      "weight": 1
+    },
+    {
+      "source": "20211026T000001",
+      "target": "20250204T173452",
+      "weight": 1
+    },
+    {
+      "source": "20211026T000001",
+      "target": "20241126T141520",
+      "weight": 1
+    },
+    {
+      "source": "20211026T000001",
+      "target": "20230216T235149",
+      "weight": 1
+    },
+    {
+      "source": "20211026T000002",
+      "target": "20250202T120856",
+      "weight": 1
+    },
+    {
+      "source": "20211026T000002",
+      "target": "20250202T113822",
+      "weight": 1
+    },
+    {
+      "source": "20211026T000002",
+      "target": "20250204T173452",
+      "weight": 1
+    },
+    {
+      "source": "20211026T000002",
+      "target": "20250203T184028",
       "weight": 1
     },
     {
@@ -4905,12 +5709,257 @@
     },
     {
       "source": "20211027T155517",
+      "target": "20250202T114928",
+      "weight": 2
+    },
+    {
+      "source": "20211027T155517",
+      "target": "20250203T184320",
+      "weight": 2
+    },
+    {
+      "source": "20211027T155517",
       "target": "20240708T151322",
       "weight": 2
     },
     {
       "source": "20211027T155517",
+      "target": "20250203T182443",
+      "weight": 1
+    },
+    {
+      "source": "20211027T155517",
+      "target": "20250204T172746",
+      "weight": 1
+    },
+    {
+      "source": "20211027T155517",
+      "target": "20250202T120807",
+      "weight": 1
+    },
+    {
+      "source": "20211027T155517",
       "target": "20240708T174852",
+      "weight": 1
+    },
+    {
+      "source": "20211027T155517",
+      "target": "20240708T155455",
+      "weight": 1
+    },
+    {
+      "source": "20211027T155517",
+      "target": "20250203T173349",
+      "weight": 1
+    },
+    {
+      "source": "20211027T155517",
+      "target": "20250203T173330",
+      "weight": 1
+    },
+    {
+      "source": "20211027T155517",
+      "target": "20250203T173133",
+      "weight": 1
+    },
+    {
+      "source": "20230216T235148",
+      "target": "20230216T235216",
+      "weight": 1
+    },
+    {
+      "source": "20230216T235151",
+      "target": "20230216T235206",
+      "weight": 1
+    },
+    {
+      "source": "20230216T235152",
+      "target": "20230216T235206",
+      "weight": 1
+    },
+    {
+      "source": "20230216T235153",
+      "target": "20230216T235206",
+      "weight": 1
+    },
+    {
+      "source": "20230216T235157",
+      "target": "20230216T235206",
+      "weight": 1
+    },
+    {
+      "source": "20230216T235157",
+      "target": "20230216T235208",
+      "weight": 1
+    },
+    {
+      "source": "20230216T235159",
+      "target": "20230216T235206",
+      "weight": 1
+    },
+    {
+      "source": "20230216T235202",
+      "target": "20230216T235148",
+      "weight": 1
+    },
+    {
+      "source": "20230216T235204",
+      "target": "20230216T235205",
+      "weight": 1
+    },
+    {
+      "source": "20230216T235206",
+      "target": "20230216T235205",
+      "weight": 1
+    },
+    {
+      "source": "20230216T235207",
+      "target": "20230216T235205",
+      "weight": 1
+    },
+    {
+      "source": "20230216T235208",
+      "target": "20230216T235206",
+      "weight": 1
+    },
+    {
+      "source": "20230216T235212",
+      "target": "20230216T235206",
+      "weight": 1
+    },
+    {
+      "source": "20230216T235213",
+      "target": "20250202T115827",
+      "weight": 1
+    },
+    {
+      "source": "20240531T175705",
+      "target": "20250202T115328",
+      "weight": 1
+    },
+    {
+      "source": "20240531T175705",
+      "target": "20250202T114221",
+      "weight": 1
+    },
+    {
+      "source": "20240531T175705",
+      "target": "20250203T182148",
+      "weight": 1
+    },
+    {
+      "source": "20240531T175705",
+      "target": "20220630T153213",
+      "weight": 1
+    },
+    {
+      "source": "20240531T175705",
+      "target": "20240708T113039",
+      "weight": 2
+    },
+    {
+      "source": "20240531T175705",
+      "target": "20250203T183616",
+      "weight": 2
+    },
+    {
+      "source": "20240531T175705",
+      "target": "20250202T120427",
+      "weight": 5
+    },
+    {
+      "source": "20240531T175705",
+      "target": "20250203T175827",
+      "weight": 1
+    },
+    {
+      "source": "20240531T175705",
+      "target": "20250202T120843",
+      "weight": 2
+    },
+    {
+      "source": "20240531T175705",
+      "target": "20250202T115857",
+      "weight": 1
+    },
+    {
+      "source": "20240531T175705",
+      "target": "20250203T183803",
+      "weight": 1
+    },
+    {
+      "source": "20240531T175705",
+      "target": "20250203T184910",
+      "weight": 2
+    },
+    {
+      "source": "20240531T175705",
+      "target": "20250203T181334",
+      "weight": 1
+    },
+    {
+      "source": "20240531T175705",
+      "target": "20250202T120321",
+      "weight": 3
+    },
+    {
+      "source": "20240531T175705",
+      "target": "20250203T181909",
+      "weight": 2
+    },
+    {
+      "source": "20240531T175705",
+      "target": "20250203T184305",
+      "weight": 1
+    },
+    {
+      "source": "20240531T175705",
+      "target": "20250203T184250",
+      "weight": 2
+    },
+    {
+      "source": "20240531T175705",
+      "target": "20250202T121258",
+      "weight": 1
+    },
+    {
+      "source": "20240531T175705",
+      "target": "20240708T155635",
+      "weight": 1
+    },
+    {
+      "source": "20240531T175705",
+      "target": "20240529T113728",
+      "weight": 1
+    },
+    {
+      "source": "20240707T174859",
+      "target": "20230216T235157",
+      "weight": 1
+    },
+    {
+      "source": "20240707T174859",
+      "target": "20230216T235150",
+      "weight": 1
+    },
+    {
+      "source": "20240707T180119",
+      "target": "20250203T184155",
+      "weight": 1
+    },
+    {
+      "source": "20240707T180508",
+      "target": "20250202T115827",
+      "weight": 1
+    },
+    {
+      "source": "20240707T180508",
+      "target": "20250203T181514",
+      "weight": 1
+    },
+    {
+      "source": "20240707T180508",
+      "target": "20230216T235158",
       "weight": 1
     },
     {
@@ -4964,6 +6013,46 @@
       "weight": 1
     },
     {
+      "source": "20240708T113039",
+      "target": "20250205T104529",
+      "weight": 1
+    },
+    {
+      "source": "20240708T164214",
+      "target": "20250204T172907",
+      "weight": 1
+    },
+    {
+      "source": "20240708T164214",
+      "target": "20230216T235149",
+      "weight": 1
+    },
+    {
+      "source": "20240708T164214",
+      "target": "20230216T235150",
+      "weight": 1
+    },
+    {
+      "source": "20240708T164214",
+      "target": "20230216T235208",
+      "weight": 1
+    },
+    {
+      "source": "20240708T164214",
+      "target": "20230216T235153",
+      "weight": 1
+    },
+    {
+      "source": "20240708T164214",
+      "target": "20230216T235155",
+      "weight": 1
+    },
+    {
+      "source": "20240708T164214",
+      "target": "20250205T100454",
+      "weight": 1
+    },
+    {
       "source": "20240708T175224",
       "target": "20240708T111511",
       "weight": 1
@@ -4975,7 +6064,7 @@
     },
     {
       "source": "20240906T145727",
-      "target": "20240906T150620",
+      "target": "20250202T114248",
       "weight": 1
     },
     {
@@ -4990,7 +6079,7 @@
     },
     {
       "source": "20240906T161550",
-      "target": "20240906T150620",
+      "target": "20250202T114248",
       "weight": 1
     },
     {
@@ -5005,7 +6094,112 @@
     },
     {
       "source": "20241210T130143",
-      "target": "20240906T150620",
+      "target": "20250202T114248",
+      "weight": 1
+    },
+    {
+      "source": "20250202T114248",
+      "target": "20250203T180327",
+      "weight": 1
+    },
+    {
+      "source": "20250202T114248",
+      "target": "20250202T121415",
+      "weight": 1
+    },
+    {
+      "source": "20250202T114248",
+      "target": "20250202T114954",
+      "weight": 1
+    },
+    {
+      "source": "20250202T114248",
+      "target": "20240708T155553",
+      "weight": 2
+    },
+    {
+      "source": "20250202T114248",
+      "target": "20250202T114928",
+      "weight": 2
+    },
+    {
+      "source": "20250202T114248",
+      "target": "20250203T182443",
+      "weight": 1
+    },
+    {
+      "source": "20250202T114248",
+      "target": "20250202T120807",
+      "weight": 1
+    },
+    {
+      "source": "20250202T114248",
+      "target": "20250202T120026",
+      "weight": 1
+    },
+    {
+      "source": "20250202T114248",
+      "target": "20250203T184155",
+      "weight": 1
+    },
+    {
+      "source": "20250202T114248",
+      "target": "20240708T155703",
+      "weight": 1
+    },
+    {
+      "source": "20250202T114248",
+      "target": "20250203T172959",
+      "weight": 1
+    },
+    {
+      "source": "20250202T114248",
+      "target": "20240708T155856",
+      "weight": 1
+    },
+    {
+      "source": "20250202T114248",
+      "target": "20240708T155825",
+      "weight": 1
+    },
+    {
+      "source": "20250202T114248",
+      "target": "20230216T235207",
+      "weight": 1
+    },
+    {
+      "source": "20250202T114248",
+      "target": "20240708T155635",
+      "weight": 1
+    },
+    {
+      "source": "20250202T114248",
+      "target": "20250202T114158",
+      "weight": 1
+    },
+    {
+      "source": "20250202T114420",
+      "target": "20240708T155635",
+      "weight": 1
+    },
+    {
+      "source": "20250202T120232",
+      "target": "20250202T120452",
+      "weight": 1
+    },
+    {
+      "source": "20250202T120321",
+      "target": "20240708T155703",
+      "weight": 1
+    },
+    {
+      "source": "20250202T121258",
+      "target": "20250202T115328",
+      "weight": 1
+    },
+    {
+      "source": "20250202T122037",
+      "target": "20250203T181514",
       "weight": 1
     },
     {
@@ -5019,617 +6213,756 @@
       "weight": 1
     },
     {
+      "source": "20250203T174925",
+      "target": "20250205T102306",
+      "weight": 1
+    },
+    {
+      "source": "20250203T174925",
+      "target": "20250202T115910",
+      "weight": 1
+    },
+    {
+      "source": "20250203T181909",
+      "target": "20250205T104529",
+      "weight": 1
+    },
+    {
+      "source": "20250203T183616",
+      "target": "20250205T104529",
+      "weight": 1
+    },
+    {
+      "source": "20250203T183616",
+      "target": "20250202T115328",
+      "weight": 1
+    },
+    {
+      "source": "20250203T184155",
+      "target": "20250202T115827",
+      "weight": 1
+    },
+    {
+      "source": "20250203T184155",
+      "target": "20240707T182500",
+      "weight": 1
+    },
+    {
+      "source": "20250203T184305",
+      "target": "20250202T120427",
+      "weight": 1
+    },
+    {
       "source": "20250203T184846",
       "target": "20240708T111511",
+      "weight": 1
+    },
+    {
+      "source": "20250203T184910",
+      "target": "20250205T104529",
+      "weight": 1
+    },
+    {
+      "source": "20250204T113458",
+      "target": "20230216T235149",
+      "weight": 1
+    },
+    {
+      "source": "20250204T113458",
+      "target": "20230216T235150",
+      "weight": 1
+    },
+    {
+      "source": "20250204T173452",
+      "target": "20250204T173324",
+      "weight": 1
+    },
+    {
+      "source": "20250204T192522",
+      "target": "20250202T120452",
+      "weight": 1
+    },
+    {
+      "source": "20250204T192826",
+      "target": "20250204T172746",
+      "weight": 1
+    },
+    {
+      "source": "20250204T192826",
+      "target": "20240708T155635",
+      "weight": 1
+    },
+    {
+      "source": "20250204T192826",
+      "target": "20230216T235200",
+      "weight": 1
+    },
+    {
+      "source": "20250204T192826",
+      "target": "20250204T192508",
+      "weight": 1
+    },
+    {
+      "source": "20250204T192826",
+      "target": "20250204T192522",
+      "weight": 1
+    },
+    {
+      "source": "20250205T102306",
+      "target": "20230216T235216",
+      "weight": 1
+    },
+    {
+      "source": "20250205T103035",
+      "target": "20230216T235154",
+      "weight": 1
+    },
+    {
+      "source": "20250205T103035",
+      "target": "20250202T120856",
+      "weight": 1
+    },
+    {
+      "source": "20250205T103035",
+      "target": "20230216T235157",
+      "weight": 1
+    },
+    {
+      "source": "20250205T103035",
+      "target": "20230216T235159",
+      "weight": 1
+    },
+    {
+      "source": "20250205T103035",
+      "target": "20230216T235204",
+      "weight": 1
+    },
+    {
+      "source": "20250205T103208",
+      "target": "20230216T235150",
+      "weight": 1
+    },
+    {
+      "source": "20250205T103208",
+      "target": "20230216T235200",
+      "weight": 1
+    },
+    {
+      "source": "20250205T103208",
+      "target": "20250204T192522",
+      "weight": 1
+    },
+    {
+      "source": "20250205T103208",
+      "target": "20250204T192508",
       "weight": 1
     }
   ]
 }
 
-      const width = 1440;
-      const height = 900;
-      const fontSize = 18;
-      const color = d3.scaleOrdinal(d3.schemeObservable10);
-      const links = data.edges; // Array of edges
-      const nodes = data.nodes; // Array of nodes
-      // Variable to hold the current minimum degree tag value
-      let minDegreeTag = 2;
+            const width = 1440;
+            const height = 900;
+            const fontSize = 18;
+            const color = d3.scaleOrdinal(d3.schemeObservable10);
+            const links = data.edges; // Array of edges
+            const nodes = data.nodes; // Array of nodes
+            // Variable to hold the current minimum degree tag value
+            let minDegreeTag = 2;
 
-      // Create a tooltip div
-      const tooltip = d3.select("body")
-	    .append("div")
-	    .attr("class", "tooltip hidden");
+            // Create a tooltip div
+            const tooltip = d3.select("body")
+      	    .append("div")
+      	    .attr("class", "tooltip hidden");
 
-      // Create a zoom behaviour
-      const zoom = d3.zoom()
-	    .scaleExtent([0.1, 4]) // Zoom scale limits
-	    .on("zoom", (event) => {
-		svgGroup.attr("transform", event.transform); // Apply zoom
-	    });
+            // Create a zoom behaviour
+            const zoom = d3.zoom()
+      	    .scaleExtent([0.1, 4]) // Zoom scale limits
+      	    .on("zoom", (event) => {
+      		svgGroup.attr("transform", event.transform); // Apply zoom
+      	    });
 
-      // Create the SVG container with zoom functionality
-      const svg = d3.select('body').append("svg")
-	    .attr("width", width)
-	    .attr("height", height)
-	    .attr("viewBox", [0, 0, width, height])
-	    .attr("style", "max-width: 100%; height: auto;")
-	    .call(zoom);
+            // Create the SVG container with zoom functionality
+            const svg = d3.select('body').append("svg")
+      	    .attr("width", width)
+      	    .attr("height", height)
+      	    .attr("viewBox", [0, 0, width, height])
+      	    .attr("style", "max-width: 100%; height: auto;")
+      	    .call(zoom);
 
-      const svgGroup = svg.append("g"); // Group to apply zoom transformations
-      const radiusScale = d3.scaleLinear()
-	    .domain(d3.extent(nodes, d => d.degree)) // Node degree range
-      .range([7, 30]); // Radius range for nodes
+            const svgGroup = svg.append("g"); // Group to apply zoom transformations
+            const radiusScale = d3.scaleLinear()
+      	    .domain(d3.extent(nodes, d => d.degree)) // Node degree range
+            .range([7, 30]); // Radius range for nodes
 
-      // Define a weight scale for edge stroke width (Keywords only)
-      const isKeywordType = data.meta.type === "Keywords";
-      const maxWeight = d3.max(links, d => d.weight || 1);
+            // Define a weight scale for edge stroke width (Keywords only)
+            const isKeywordType = data.meta.type === "Keywords";
+            const maxWeight = d3.max(links, d => d.weight || 1);
 
-      // Define the weight scale with interpolation
-      const weightScale = d3.scaleLinear()
-	    .domain([1, maxWeight]) // Map the range of weights
-	    .range(isKeywordType ? [2, 30] : [1, 1]); // Adjust the range
+            // Define the weight scale with interpolation
+            const weightScale = d3.scaleLinear()
+      	    .domain([1, maxWeight]) // Map the range of weights
+      	    .range(isKeywordType ? [2, 30] : [1, 1]); // Adjust the range
 
-      const arrowMarkers = svg.append("defs");
+            const arrowMarkers = svg.append("defs");
 
-      // Pre-calculate refX for edges
-      links.forEach((d, i) => {
-      const targetNode = nodes.find(node => node.id === d.target);
-      const targetRadius = isKeywordType ? 15 : radiusScale(targetNode.degree); // Use constant radius if isKeywordType is true
-      d.refX = targetRadius + 2; // Dynamically calculate refX for alignment, with padding
-      });
+            // Pre-calculate refX for edges
+            links.forEach((d, i) => {
+            const targetNode = nodes.find(node => node.id === d.target);
+            const targetRadius = isKeywordType ? 15 : radiusScale(targetNode.degree); // Use constant radius if isKeywordType is true
+            d.refX = targetRadius + 2; // Dynamically calculate refX for alignment, with padding
+            });
 
-      // Define arrow markers dynamically based on line weight
-      links.forEach((d, i) => {
-      arrowMarkers.append("marker")
-      .attr("id", `arrow-${i}`)
-      .attr("viewBox", "0 -5 10 10")
-      .attr("refX", d.refX) // Use the pre-calculated refX
-      .attr("refY", 0)
-      .attr("markerWidth", 10) // Adjust arrow size
-      .attr("markerHeight", 5) // Adjust arrow size
-      .attr("orient", "auto")
-      .append("path")
-      .attr("d", "M0,-5L10,0L0,5") // Arrow shape
-      .attr("fill", "#999")
-      .attr("stroke", "none");
-      });
+            // Define arrow markers dynamically based on line weight
+            links.forEach((d, i) => {
+            arrowMarkers.append("marker")
+            .attr("id", `arrow-${i}`)
+            .attr("viewBox", "0 -5 10 10")
+            .attr("refX", d.refX) // Use the pre-calculated refX
+            .attr("refY", 0)
+            .attr("markerWidth", 10) // Adjust arrow size
+            .attr("markerHeight", 5) // Adjust arrow size
+            .attr("orient", "auto")
+            .append("path")
+            .attr("d", "M0,-5L10,0L0,5") // Arrow shape
+            .attr("fill", "#999")
+            .attr("stroke", "none");
+            });
 
-      // Add links and use dynamically created markers
-      const link = svgGroup.append("g")
-      .attr("stroke", "#999")
-      .attr("stroke-opacity", 0.6)
-      // Binding and joining data
-      .selectAll("line")
-      .data(links)
-      .join("line")
-      // Styling the links
-      .attr("stroke-width", d => weightScale(d.weight || 1))
-      // Add arrow markers
-      .attr("marker-end", (d, i) => data.meta.directed ? `url(#arrow-${i})` : null)
-      
-      // Add hover interaction for edges
-      .on("mouseover", (event, d) => {
-      if (data.meta.type === "Keywords") { 
-      // Generate content for the tooltip
-      const tooltipContent = `
-      <div class="metadata">From: ${d.source.name}</div>
-      <div class="metadata">To: ${d.target.name}</div>
-      <div class="metadata">Weight: ${d.weight || 'undefined'}</div>
-      `;
-      tooltip
-      .classed("hidden", false)
-      .html(tooltipContent)
-      .style("left", (event.pageX + 10) + "px")
-      .style("top", (event.pageY + 10) + "px");
-      }
+            // Add links and use dynamically created markers
+            const link = svgGroup.append("g")
+            .attr("stroke", "#999")
+            .attr("stroke-opacity", 0.6)
+            // Binding and joining data
+            .selectAll("line")
+            .data(links)
+            .join("line")
+            // Styling the links
+            .attr("stroke-width", d => weightScale(d.weight || 1))
+            // Add arrow markers
+            .attr("marker-end", (d, i) => data.meta.directed ? `url(#arrow-${i})` : null)
+
+            // Add hover interaction for edges
+            .on("mouseover", (event, d) => {
+            if (data.meta.type === "Keywords") {
+            // Generate content for the tooltip
+            const tooltipContent = `
+            <div class="metadata">From: ${d.source.name}</div>
+            <div class="metadata">To: ${d.target.name}</div>
+            <div class="metadata">Weight: ${d.weight || 'undefined'}</div>
+            `;
+            tooltip
+            .classed("hidden", false)
+            .html(tooltipContent)
+            .style("left", (event.pageX + 10) + "px")
+            .style("top", (event.pageY + 10) + "px");
+            }
+            })
+            .on("mouseout", () => {
+            tooltip.classed("hidden", true);
+            });
+
+            // Add nodes
+            const node = svgGroup.append("g")
+            .attr("stroke", "none")
+            .selectAll("circle")
+            .data(nodes)
+            .join("circle")
+            .attr("r", d => isKeywordType ? 15 : radiusScale(d.degree))
+            .attr("fill", d => color(d.type))
+            .on("click", (event, d) => {
+            if (!isKeywordType) { // Only open hyperlink if isKeywordType is false
+            window.open(d.filename, "_blank");
+            }
+            })
+            .on("mouseover", (event, d) => {
+            // Check if the filename is an image or a PDF
+            const isImage = /\.(jpg|jpeg|png|gif|svg)$/i.test(d.filename);
+            const isPDF = /\.pdf$/i.test(d.filename);
+            // Generate tooltip content based on meta.type
+            const tooltipContent = data.meta.type === "Keywords"
+            ? `
+            <div class="title">${d.name}</div>
+            <div class="metadata">Degree: ${d.degree}</div>
+            `:
+            // Tooltip for other types
+            `
+            <div class="title">${d.name}</div>
+            <div class="metadata">ID: ${d.id.replace('T', '<span class="lighter">T</span>')}</div>
+            <div class="metadata">Degree: ${d.degree}, Backlinks: ${d.backlinks}</div>
+            <div class="metadata">Type: ${d.type}</div>
+            ${d.signature ? `<div class="metadata">Signature: ${d.signature}</div>` : ''}
+            <div class="keywords">${d.keywords && d.keywords.length > 0 ? d.keywords.map(keyword =>
+              `<span>${keyword}</span>`).join('') :
+              '<div class="metadata">No keywords</div>'}</div>
+            ${isImage
+            ? `<img src="${d.filename}" alt="${d.name}"
+      	  onload="if(this.naturalHeight > this.naturalWidth) this.style.maxHeight='500px';"
+      	  style="max-width: 100%; height: auto; margin-top: 10px;">`
+              : isPDF
+            ? `<iframe src="${d.filename}?toolbar=0&navpanes=0&scrollbar=0#view=FitH"
+      		 style="width: 100%; height: 500px; margin-top: 10px; border: none;"></iframe>`
+                : ''
+              }
+            `;
+          // Display the tooltip and set its initial content
+          tooltip
+              .classed("hidden", false)
+              .html(tooltipContent);
+
+          // Calculate tooltip dimensions
+          const tooltipNode = tooltip.node();
+          const tooltipWidth = tooltipNode.offsetWidth;
+          const tooltipHeight = tooltipNode.offsetHeight;
+
+          // Get viewport dimensions
+          const viewportWidth = window.innerWidth;
+          const viewportHeight = window.innerHeight;
+
+          // Calculate mouse position
+          let tooltipX = event.pageX + 10; // Default offset
+          let tooltipY = event.pageY + 10;
+
+          // Adjust position to fit within the viewport
+          if (tooltipX + tooltipWidth > viewportWidth) {
+              tooltipX = viewportWidth - tooltipWidth - 10; // Align with the right edge
+          }
+          if (tooltipY + tooltipHeight > viewportHeight) {
+              tooltipY = viewportHeight - tooltipHeight - 10; // Align with the bottom edge
+          }
+
+          // Set tooltip position
+          tooltip
+              .style("left", `${tooltipX}px`)
+              .style("top", `${tooltipY}px`);
       })
       .on("mouseout", () => {
-      tooltip.classed("hidden", true);
+          tooltip.classed("hidden", true);
       });
-
-      // Add nodes
-      const node = svgGroup.append("g")
-      .attr("stroke", "none")
-      .selectAll("circle")
-      .data(nodes)
-      .join("circle")
-      .attr("r", d => isKeywordType ? 15 : radiusScale(d.degree)) 
-      .attr("fill", d => color(d.type))
-      .on("click", (event, d) => {
-      if (!isKeywordType) { // Only open hyperlink if isKeywordType is false
-      window.open(d.filename, "_blank");
-      }
-      })
-      .on("mouseover", (event, d) => {
-      // Check if the filename is an image or a PDF
-      const isImage = /\.(jpg|jpeg|png|gif|svg)$/i.test(d.filename);
-      const isPDF = /\.pdf$/i.test(d.filename);
-      // Generate tooltip content based on meta.type
-      const tooltipContent = data.meta.type === "Keywords"
-      ? `
-      <div class="title">${d.name}</div>
-      <div class="metadata">Degree: ${d.degree}</div>
-      `:
-      // Tooltip for other types
-      `
-      <div class="title">${d.name}</div>
-      <div class="metadata">ID: ${d.id.replace('T', '<span class="lighter">T</span>')}</div>
-      <div class="metadata">Degree: ${d.degree}, Backlinks: ${d.backlinks}</div>
-      <div class="metadata">Type: ${d.type}</div>
-      ${d.signature ? `<div class="metadata">Signature: ${d.signature}</div>` : ''}
-      <div class="keywords">${d.keywords && d.keywords.length > 0 ? d.keywords.map(keyword =>
-        `<span>${keyword}</span>`).join('') :
-        '<div class="metadata">No keywords</div>'}</div>
-      ${isImage
-      ? `<img src="${d.filename}" alt="${d.name}" 
-	  onload="if(this.naturalHeight > this.naturalWidth) this.style.maxHeight='500px';"
-	  style="max-width: 100%; height: auto; margin-top: 10px;">`
-        : isPDF 
-      ? `<iframe src="${d.filename}?toolbar=0&navpanes=0&scrollbar=0#view=FitH"
-		 style="width: 100%; height: 500px; margin-top: 10px; border: none;"></iframe>`
-          : ''
-        }
-      `;
-    // Display the tooltip and set its initial content
-    tooltip
-        .classed("hidden", false)
-        .html(tooltipContent);
-
-    // Calculate tooltip dimensions
-    const tooltipNode = tooltip.node();
-    const tooltipWidth = tooltipNode.offsetWidth;
-    const tooltipHeight = tooltipNode.offsetHeight;
-
-    // Get viewport dimensions
-    const viewportWidth = window.innerWidth;
-    const viewportHeight = window.innerHeight;
-
-    // Calculate mouse position
-    let tooltipX = event.pageX + 10; // Default offset
-    let tooltipY = event.pageY + 10;
-
-    // Adjust position to fit within the viewport
-    if (tooltipX + tooltipWidth > viewportWidth) {
-        tooltipX = viewportWidth - tooltipWidth - 10; // Align with the right edge
-    }
-    if (tooltipY + tooltipHeight > viewportHeight) {
-        tooltipY = viewportHeight - tooltipHeight - 10; // Align with the bottom edge
-    }
-
-    // Set tooltip position
-    tooltip
-        .style("left", `${tooltipX}px`)
-        .style("top", `${tooltipY}px`);
-})
-.on("mouseout", () => {
-    tooltip.classed("hidden", true);
-});
-      // Add drag behavior
-      node.call(d3.drag()
-      .on("start", dragstarted)
-      .on("drag", dragged)
-      .on("end", dragended));
-
-      // Add labels for nodes with degree > minDegreeTag
-      const labels = svgGroup.append("g")
-      .selectAll("text")
-      .data(nodes.filter(d => d.degree > minDegreeTag)) // Filter nodes based on degree
-      .join("text")
-      .attr("dx", 10)
-      .attr("dy", ".35em")
-      .style("font-size", `${fontSize}px`)
-      .style("font-family", "Arial, sans-serif")
-      .style("fill", "#333")
-      .text(d => d.name);
-      
-      // Set up force simulation
-      const simulation = d3.forceSimulation(nodes)
-      .force("link", d3.forceLink(links).id(d => d.id).distance(20)) // Link force
-      .force("charge", d3.forceManyBody().strength(-20)) // Repel nodes
-      .force("center", d3.forceCenter(width / 2, height / 2)) // Centering force
-      .force("collide", d3.forceCollide(50)) // Spread out nodes
-      .force("x", d3.forceX(width / 2).strength(0.05)) // Keep nodes near center
-      .force("y", d3.forceY(height / 2).strength(0.05))
-      .on("tick", ticked);
-
-      // Update positions on each tick
-      function ticked() {
-      link
-      .attr("x1", d => d.source.x)
-      .attr("y1", d => d.source.y)
-      .attr("x2", d => {
-      const dx = d.target.x - d.source.x;
-      const dy = d.target.y - d.source.y;
-      const distance = Math.sqrt(dx * dx + dy * dy) || 1; // Avoid division by zero
-      const targetRadius = isKeywordType ? 15 : radiusScale(d.target.degree); 
-      const offsetX = (dx / distance) * targetRadius;
-      return d.target.x - offsetX;
-      })
-      .attr("y2", d => {
-      const dx = d.target.x - d.source.x;
-      const dy = d.target.y - d.source.y;
-      const distance = Math.sqrt(dx * dx + dy * dy) || 1; // Avoid division by zero
-      const targetRadius = radiusScale(d.target.degree); // Exact node radius
-      const offsetY = (dy / distance) * targetRadius;
-      return d.target.y - offsetY;
-      });
-
-      node
-      .attr("cx", d => d.x)
-      .attr("cy", d => d.y);
-
-      labels
-      .attr("x", d => d.x)
-      .attr("y", d => d.y);
-      }
-
-      // Drag event handlers
-      function dragstarted(event) {
-      if (!event.active) simulation.alphaTarget(0.3).restart();
-      event.subject.fx = event.subject.x;
-      event.subject.fy = event.subject.y;
-      }
-
-      function dragged(event) {
-      event.subject.fx = event.x;
-      event.subject.fy = event.y;
-      }
-
-      function dragended(event) {
-      if (!event.active) simulation.alphaTarget(0);
-      event.subject.fx = null;
-      event.subject.fy = null;
-      }
-
-      
-      const infoButton = document.getElementById("info-button");
-      const infoTooltip = document.querySelector(".info-tooltip");
-
-      // Generate Tooltip Content
-      function generateTooltipContent() {
-	  infoTooltip.innerHTML = "";
-
-	  // Add title
-	  const title = document.createElement("div");
-	  title.className = "title";
-	  title.textContent = `Denote ${data.meta.type} Network`;
-	  infoTooltip.appendChild(title);
-
-	  // Add metadata container
-	  const metadataContainer = document.createElement("div");
-	  metadataContainer.className = "metadata-container";
-
-	  if (data.meta.type === "Community") {
-	      const graphParameter = document.createElement("div");
-	      graphParameter.className = "metadata";
-	      graphParameter.textContent = `Regular expression: "${data.meta.parameters[0]}"`;
-	      metadataContainer.appendChild(graphParameter);
-	  }
-
-	  if (data.meta.type === "Keywords") {
-	      const graphParameter = document.createElement("div");
-	      graphParameter.className = "metadata";
-	      graphParameter.textContent = `Minimum links: ${data.meta.parameters}`;
-	      metadataContainer.appendChild(graphParameter);
-	  }
-
-	  if (data.meta.type === "Neighbourhood") {
-	      const graphParameter = document.createElement("div");
-	      graphParameter.className = "metadata";
-
-	      const rootLine = document.createElement("div");
-	      rootLine.textContent = `Root: ${data.meta.parameters[0]}`;
-	      rootLine.style.marginBottom = "5px";
-	      graphParameter.appendChild(rootLine);
-
-	      const depthLine = document.createElement("div");
-	      depthLine.textContent = `Depth: ${data.meta.parameters[1]}`;
-	      graphParameter.appendChild(depthLine);
-	      metadataContainer.appendChild(graphParameter);
-	  }
-
-	  // Number of nodes
-	  const nodeCount = document.createElement("div");
-	  nodeCount.className = "metadata";
-	  nodeCount.textContent = `${data.nodes.length} nodes`;
-	  metadataContainer.appendChild(nodeCount);
-
-	  // Number of edges
-	  const edgeCount = document.createElement("div");
-	  edgeCount.className = "metadata";
-	  edgeCount.textContent = `${data.edges.length} ${data.edges.length === 1 ? "edge" : "edges"}`;
-	  metadataContainer.appendChild(edgeCount);
-
-	  // Network Density
-	  const density = document.createElement("div");
-	  density.className = "metadata";
-	  const edges = data.edges.length;
-	  const nodes = data.nodes.length;
-	  if (nodes > 1) {
-	      // Number of actual edges divided by the possible edges
-	      const calculatedDensity = (2 * edges) / (nodes * (nodes - 1));
-	      density.textContent = `Density: ${calculatedDensity.toFixed(3)}`;
-	  } else {
-	      density.textContent = "Density: N/A (insufficient nodes)";
-	  }
-	  metadataContainer.appendChild(density);
-
-	  infoTooltip.appendChild(metadataContainer);
-
-	  // Calculate the number of singular nodes
-	  const singularNodeCount = data.nodes.filter(node => node.degree === 0).length;
-
-	  // Add a toggle button
-	  if (data.meta.type === "Community" && singularNodeCount !== 0) {
-	      const buttonContainer = document.createElement("div");
-	      buttonContainer.className = "metadata-container";
-
-	      const toggleButton = document.createElement("button");
-	      toggleButton.textContent = "Hide isolated nodes";
-	      toggleButton.style.marginTop = "10px";
-	      toggleButton.style.padding = "10px 20px";
-	      toggleButton.style.borderRadius = "5px";
-	      toggleButton.style.border = "1px solid #darkgrey";
-	      toggleButton.style.backgroundColor = "darkgrey";
-	      toggleButton.style.color = "white";
-	      toggleButton.style.cursor = "pointer";
-	      toggleButton.style.fontSize = "18px"; 
-
-	      // Toggle button click event
-	      toggleButton.addEventListener("click", () => {
-		  // Find all nodes with degree = 0
-		  const isolatedNodes = d3.selectAll("circle")
-			.filter(d => d.degree === 0);
-
-		  // Determine if they are currently visible
-		  const isVisible = isolatedNodes.style("display") !== "none";
-
-		  // Toggle their visibility
-		  isolatedNodes.style("display", isVisible ? "none" : "block");
-
-		  // Update the button text
-		  toggleButton.textContent = isVisible ? "Show Isolated Nodes" : "Hide Isolated Nodes";
-	      });
-
-	      // Create a comment element to display the count
-	      const singularNodeComment = document.createElement("div");
-	      singularNodeComment.className = "metadata";
-	      singularNodeComment.textContent = `${singularNodeCount} isolated notes`;
-
-	      // Append this comment above the toggle button
-	      buttonContainer.appendChild(singularNodeComment);
-
-	      buttonContainer.appendChild(toggleButton);
-	      infoTooltip.appendChild(buttonContainer); 
-	  }
-
-	  
-	  // Add legend container
-	  const legendContainer = document.createElement("div");
-	  legendContainer.className = "metadata-container";
-	  legendContainer.style.marginTop = "10px";
-
-	  const legendTitle = document.createElement("div");
-	  legendTitle.style.fontWeight = "bold";
-	  legendTitle.style.marginBottom = "10px";
-	  legendTitle.textContent = "File Types";
-	  legendContainer.appendChild(legendTitle);
-
-	  // Generate legend and bar chart dynamically for non-keyword types
-	  if (!isKeywordType) {
-	      const typeCounts = data.nodes.reduce((acc, node) => {
-		  acc[node.type] = (acc[node.type] || 0) + 1;
-		  return acc;
-	      }, {});
-
-	      const legendData = Object.entries(typeCounts).map(([type, count]) => ({
-		  type,
-		  count,
-	      }));
-
-	      legendData.forEach((entry) => {
-		  const legendItem = document.createElement("div");
-		  legendItem.style.display = "flex";
-		  legendItem.style.alignItems = "center";
-		  legendItem.style.marginBottom = "5px";
-
-		  const colorBox = document.createElement("div");
-		  colorBox.style.width = "15px";
-		  colorBox.style.height = "15px";
-		  colorBox.style.marginRight = "10px";
-		  colorBox.style.backgroundColor = d3.schemeObservable10[legendData.indexOf(entry)];
-		  legendItem.appendChild(colorBox);
-
-		  const text = document.createElement("span");
-		  text.style.fontSize = `${fontSize}px`;
-		  text.textContent = `${entry.type} (${entry.count})`;
-		  legendItem.appendChild(text);
-
-		  legendContainer.appendChild(legendItem);
-	      });
-
-	      infoTooltip.appendChild(legendContainer);
-
-      // Add keyword frequency chart container
-      const chartContainer = document.createElement("div");
-      chartContainer.className = "metadata-container"; // Match the metadata background style
-      chartContainer.style.marginTop = "10px"; // Add spacing between sections
-
-      const chartTitle = document.createElement("div");
-      chartTitle.style.fontWeight = "bold";
-      chartTitle.style.marginBottom = "10px";
-      chartTitle.textContent = "Keywords";
-      chartContainer.appendChild(chartTitle);
-
-      // Bar chart
-      const keywordCounts = data.nodes.reduce((acc, node) => {
-      (node.keywords || []).forEach((keyword) => {
-      acc[keyword] = (acc[keyword] || 0) + 1;
-      });
-      return acc;
-      }, {});
-
-      const keywordData = Object.entries(keywordCounts).map(([keyword, count]) => ({
-      keyword,
-      count,
-      }));
-
-      // Sort keywordData by count in descending order
-      keywordData.sort((a, b) => b.count - a.count);
-
-      // Define constants
-      const barHeight = 20; // Height of each bar
-      const barSpacing = 5; // Space between bars
-      const chartWidth = 400;
-      const margin = { top: 20, right: 20, bottom: 30, left: 20 }; // Initial margins
-
-      // Create a temporary SVG to measure label dimensions
-      const tempSVG = d3.select("body").append("svg").attr("class", "temp-svg");
-
-      // Calculate max label width for y-axis
-      const maxYLabelWidth = d3.max(keywordData, (d) => {
-      const textElement = tempSVG
-      .append("text")
-      .attr("class", "temp-text")
-      .style("font-size", `${fontSize}px`)
-      .text(d.keyword);
-      const textWidth = textElement.node().getBBox().width;
-      textElement.remove();
-      return textWidth;
-      });
-
-      // Calculate max label height for x-axis
-      const maxXLabelHeight = d3.max(keywordData, (d) => {
-      const textElement = tempSVG
-      .append("text")
-      .attr("class", "temp-text")
-      .style("font-size", `${fontSize}px`)
-      .text(d.count * 2);
-      const textHeight = textElement.node().getBBox().height;
-      textElement.remove();
-      return textHeight;
-      });
-      tempSVG.remove(); // Clean up the temporary SVG
-
-      // Update margins dynamically
-      margin.left = maxYLabelWidth + 20; // Add padding
-      margin.bottom = maxXLabelHeight + 10; // Add padding
-
-      // Compute chart height based on number of bars
-      const chartHeight = keywordData.length * (barHeight + barSpacing) + margin.top + margin.bottom;
-
-      // Update scales
-      const x = d3
-      .scaleLinear()
-      .domain([0, d3.max(keywordData, (d) => d.count)])
-      .range([0, chartWidth - margin.left - margin.right]);
-
-      const y = d3
-      .scaleBand()
-      .domain(keywordData.map((d) => d.keyword))
-      .range([0, keywordData.length * (barHeight + barSpacing)])
-      .padding(0.1); // Padding within the band
-
-      // Create SVG
-      const chartSVG = d3
-      .select(chartContainer)
-      .append("svg")
-      .attr("width", chartWidth)
-      .attr("height", chartHeight);
-
-      const chartGroup = chartSVG
-      .append("g")
-      .attr("transform", `translate(${margin.left}, ${margin.top})`);
-
-      // Add bars
-      chartGroup
-      .selectAll(".bar")
-      .data(keywordData)
-      .enter()
-      .append("rect")
-      .attr("class", "bar")
-      .attr("x", 0)
-      .attr("y", (d, i) => i * (barHeight + barSpacing)) // Use index to calculate position
-      .attr("width", (d) => x(d.count))
-      .attr("height", barHeight)
-      .attr("fill", "lightgrey");
-
-      // Add y-axis
-      chartGroup
-      .append("g")
-      .call(d3.axisLeft(y))
-      .selectAll("text")
-      .style("font-size", `${fontSize}px`);
-
-      // Add x-axis
-      const maxValue = d3.max(keywordData, d => d.count); // Get the maximum value
-      chartGroup
-      .append("g")
-      .attr("transform", `translate(0, ${chartHeight - margin.top - margin.bottom})`)
-      .call(d3.axisBottom(x).tickValues([0, maxValue])) // Set tick values to only 0 and max
-      .selectAll("text")
-      .style("font-size", `${fontSize}px`);
-
-      // Append the chart container to the tooltip or desired location
-      infoTooltip.appendChild(chartContainer);
-      }
-      }
-
-      // Toggle tooltip visibility on button click
-      infoButton.addEventListener("click", () => {
-      if (infoTooltip.style.display === "block") {
-      infoTooltip.style.display = "none";
-      } else {
-      generateTooltipContent();
-      infoTooltip.style.display = "block";
-      }
-      
-      });
-
-	
-      // Label density
-      // Add a slider element to the top-right corner
-      const sliderContainer = d3.select('body').append('div')
-	    .style('position', 'fixed')
-	    .style('top', '10px')
-	    .style('right', '10px')
-	    .style('z-index', '1000');
-
-      sliderContainer.append('label')
-    .text('Label density: ')
-    .style('margin-right', '10px');
-
-      const slider = sliderContainer.append('input')
-	    .attr('type', 'range')
-	    .attr('min', 0)
-	    .attr('max', d3.max(nodes, d => d.degree))
-	    .attr('value', minDegreeTag)
-	    .style('width', '150px')
-	    .on('input', function () {
-		minDegreeTag = d3.max(nodes, d => d.degree) - +this.value;
-		updateLabels();
-	    });
-
-      // Function to update labels based on the slider value
-      function updateLabels() {
-	  labels = svgGroup.selectAll('text')
-              .data(nodes.filter(d => d.degree > minDegreeTag), d => d.id)
-              .join(
-		  enter => enter.append('text')
-                      .attr('x', d => d.x)
-                      .attr('y', d => d.y)
-                      .attr('dx', 10)
-                      .attr('dy', '.35em')
-                      .style('font-size', `${fontSize}px`)
-                      .style('font-family', 'Arial, sans-serif')
-                      .style('fill', '#333')
-                      .text(d => d.name),
-		  update => update.attr('x', d => d.x).attr('y', d => d.y),
-		  exit => exit.remove()
-              );
-	  simulation.alpha(1).restart();
-      }
-
+            // Add drag behavior
+            node.call(d3.drag()
+            .on("start", dragstarted)
+            .on("drag", dragged)
+            .on("end", dragended));
+
+            // Add labels for nodes with degree > minDegreeTag
+            const labels = svgGroup.append("g")
+            .selectAll("text")
+            .data(nodes.filter(d => d.degree > minDegreeTag)) // Filter nodes based on degree
+            .join("text")
+            .attr("dx", 10)
+            .attr("dy", ".35em")
+            .style("font-size", `${fontSize}px`)
+            .style("font-family", "Arial, sans-serif")
+            .style("fill", "#333")
+            .text(d => d.name);
+
+            // Set up force simulation
+            const simulation = d3.forceSimulation(nodes)
+            .force("link", d3.forceLink(links).id(d => d.id).distance(20)) // Link force
+            .force("charge", d3.forceManyBody().strength(-20)) // Repel nodes
+            .force("center", d3.forceCenter(width / 2, height / 2)) // Centering force
+            .force("collide", d3.forceCollide(50)) // Spread out nodes
+            .force("x", d3.forceX(width / 2).strength(0.05)) // Keep nodes near center
+            .force("y", d3.forceY(height / 2).strength(0.05))
+            .on("tick", ticked);
+
+            // Update positions on each tick
+            function ticked() {
+            link
+            .attr("x1", d => d.source.x)
+            .attr("y1", d => d.source.y)
+            .attr("x2", d => {
+            const dx = d.target.x - d.source.x;
+            const dy = d.target.y - d.source.y;
+            const distance = Math.sqrt(dx * dx + dy * dy) || 1; // Avoid division by zero
+            const targetRadius = isKeywordType ? 15 : radiusScale(d.target.degree);
+            const offsetX = (dx / distance) * targetRadius;
+            return d.target.x - offsetX;
+            })
+            .attr("y2", d => {
+            const dx = d.target.x - d.source.x;
+            const dy = d.target.y - d.source.y;
+            const distance = Math.sqrt(dx * dx + dy * dy) || 1; // Avoid division by zero
+            const targetRadius = radiusScale(d.target.degree); // Exact node radius
+            const offsetY = (dy / distance) * targetRadius;
+            return d.target.y - offsetY;
+            });
+
+            node
+            .attr("cx", d => d.x)
+            .attr("cy", d => d.y);
+
+            labels
+            .attr("x", d => d.x)
+            .attr("y", d => d.y);
+            }
+
+            // Drag event handlers
+            function dragstarted(event) {
+            if (!event.active) simulation.alphaTarget(0.3).restart();
+            event.subject.fx = event.subject.x;
+            event.subject.fy = event.subject.y;
+            }
+
+            function dragged(event) {
+            event.subject.fx = event.x;
+            event.subject.fy = event.y;
+            }
+
+            function dragended(event) {
+            if (!event.active) simulation.alphaTarget(0);
+            event.subject.fx = null;
+            event.subject.fy = null;
+            }
+
+
+            const infoButton = document.getElementById("info-button");
+            const infoTooltip = document.querySelector(".info-tooltip");
+
+            // Generate Tooltip Content
+            function generateTooltipContent() {
+      	  infoTooltip.innerHTML = "";
+
+      	  // Add title
+      	  const title = document.createElement("div");
+      	  title.className = "title";
+      	  title.textContent = `Denote ${data.meta.type} Network`;
+      	  infoTooltip.appendChild(title);
+
+      	  // Add metadata container
+      	  const metadataContainer = document.createElement("div");
+      	  metadataContainer.className = "metadata-container";
+
+      	  if (data.meta.type === "Community") {
+      	      const graphParameter = document.createElement("div");
+      	      graphParameter.className = "metadata";
+      	      graphParameter.textContent = `Regular expression: "${data.meta.parameters[0]}"`;
+      	      metadataContainer.appendChild(graphParameter);
+      	  }
+
+      	  if (data.meta.type === "Keywords") {
+      	      const graphParameter = document.createElement("div");
+      	      graphParameter.className = "metadata";
+      	      graphParameter.textContent = `Minimum links: ${data.meta.parameters}`;
+      	      metadataContainer.appendChild(graphParameter);
+      	  }
+
+      	  if (data.meta.type === "Neighbourhood") {
+      	      const graphParameter = document.createElement("div");
+      	      graphParameter.className = "metadata";
+
+      	      const rootLine = document.createElement("div");
+      	      rootLine.textContent = `Root: ${data.meta.parameters[0]}`;
+      	      rootLine.style.marginBottom = "5px";
+      	      graphParameter.appendChild(rootLine);
+
+      	      const depthLine = document.createElement("div");
+      	      depthLine.textContent = `Depth: ${data.meta.parameters[1]}`;
+      	      graphParameter.appendChild(depthLine);
+      	      metadataContainer.appendChild(graphParameter);
+      	  }
+
+      	  // Number of nodes
+      	  const nodeCount = document.createElement("div");
+      	  nodeCount.className = "metadata";
+      	  nodeCount.textContent = `${data.nodes.length} nodes`;
+      	  metadataContainer.appendChild(nodeCount);
+
+      	  // Number of edges
+      	  const edgeCount = document.createElement("div");
+      	  edgeCount.className = "metadata";
+      	  edgeCount.textContent = `${data.edges.length} ${data.edges.length === 1 ? "edge" : "edges"}`;
+      	  metadataContainer.appendChild(edgeCount);
+
+      	  // Network Density
+      	  const density = document.createElement("div");
+      	  density.className = "metadata";
+      	  const edges = data.edges.length;
+      	  const nodes = data.nodes.length;
+      	  if (nodes > 1) {
+      	      // Number of actual edges divided by the possible edges
+      	      const calculatedDensity = (2 * edges) / (nodes * (nodes - 1));
+      	      density.textContent = `Density: ${calculatedDensity.toFixed(3)}`;
+      	  } else {
+      	      density.textContent = "Density: N/A (insufficient nodes)";
+      	  }
+      	  metadataContainer.appendChild(density);
+
+      	  infoTooltip.appendChild(metadataContainer);
+
+      	  // Calculate the number of singular nodes
+      	  const singularNodeCount = data.nodes.filter(node => node.degree === 0).length;
+
+      	  // Add a toggle button
+      	  if (data.meta.type === "Community" && singularNodeCount !== 0) {
+      	      const buttonContainer = document.createElement("div");
+      	      buttonContainer.className = "metadata-container";
+
+      	      const toggleButton = document.createElement("button");
+      	      toggleButton.textContent = "Hide isolated nodes";
+      	      toggleButton.style.marginTop = "10px";
+      	      toggleButton.style.padding = "10px 20px";
+      	      toggleButton.style.borderRadius = "5px";
+      	      toggleButton.style.border = "1px solid #darkgrey";
+      	      toggleButton.style.backgroundColor = "darkgrey";
+      	      toggleButton.style.color = "white";
+      	      toggleButton.style.cursor = "pointer";
+      	      toggleButton.style.fontSize = "18px";
+
+      	      // Toggle button click event
+      	      toggleButton.addEventListener("click", () => {
+      		  // Find all nodes with degree = 0
+      		  const isolatedNodes = d3.selectAll("circle")
+      			.filter(d => d.degree === 0);
+
+      		  // Determine if they are currently visible
+      		  const isVisible = isolatedNodes.style("display") !== "none";
+
+      		  // Toggle their visibility
+      		  isolatedNodes.style("display", isVisible ? "none" : "block");
+
+      		  // Update the button text
+      		  toggleButton.textContent = isVisible ? "Show Isolated Nodes" : "Hide Isolated Nodes";
+      	      });
+
+      	      // Create a comment element to display the count
+      	      const singularNodeComment = document.createElement("div");
+      	      singularNodeComment.className = "metadata";
+      	      singularNodeComment.textContent = `${singularNodeCount} isolated notes`;
+
+      	      // Append this comment above the toggle button
+      	      buttonContainer.appendChild(singularNodeComment);
+
+      	      buttonContainer.appendChild(toggleButton);
+      	      infoTooltip.appendChild(buttonContainer);
+      	  }
+
+
+      	  // Add legend container
+      	  const legendContainer = document.createElement("div");
+      	  legendContainer.className = "metadata-container";
+      	  legendContainer.style.marginTop = "10px";
+
+      	  const legendTitle = document.createElement("div");
+      	  legendTitle.style.fontWeight = "bold";
+      	  legendTitle.style.marginBottom = "10px";
+      	  legendTitle.textContent = "File Types";
+      	  legendContainer.appendChild(legendTitle);
+
+      	  // Generate legend and bar chart dynamically for non-keyword types
+      	  if (!isKeywordType) {
+      	      const typeCounts = data.nodes.reduce((acc, node) => {
+      		  acc[node.type] = (acc[node.type] || 0) + 1;
+      		  return acc;
+      	      }, {});
+
+      	      const legendData = Object.entries(typeCounts).map(([type, count]) => ({
+      		  type,
+      		  count,
+      	      }));
+
+      	      legendData.forEach((entry) => {
+      		  const legendItem = document.createElement("div");
+      		  legendItem.style.display = "flex";
+      		  legendItem.style.alignItems = "center";
+      		  legendItem.style.marginBottom = "5px";
+
+      		  const colorBox = document.createElement("div");
+      		  colorBox.style.width = "15px";
+      		  colorBox.style.height = "15px";
+      		  colorBox.style.marginRight = "10px";
+      		  colorBox.style.backgroundColor = d3.schemeObservable10[legendData.indexOf(entry)];
+      		  legendItem.appendChild(colorBox);
+
+      		  const text = document.createElement("span");
+      		  text.style.fontSize = `${fontSize}px`;
+      		  text.textContent = `${entry.type} (${entry.count})`;
+      		  legendItem.appendChild(text);
+
+      		  legendContainer.appendChild(legendItem);
+      	      });
+
+      	      infoTooltip.appendChild(legendContainer);
+
+            // Add keyword frequency chart container
+            const chartContainer = document.createElement("div");
+            chartContainer.className = "metadata-container"; // Match the metadata background style
+            chartContainer.style.marginTop = "10px"; // Add spacing between sections
+
+            const chartTitle = document.createElement("div");
+            chartTitle.style.fontWeight = "bold";
+            chartTitle.style.marginBottom = "10px";
+            chartTitle.textContent = "Keywords";
+            chartContainer.appendChild(chartTitle);
+
+            // Bar chart
+            const keywordCounts = data.nodes.reduce((acc, node) => {
+            (node.keywords || []).forEach((keyword) => {
+            acc[keyword] = (acc[keyword] || 0) + 1;
+            });
+            return acc;
+            }, {});
+
+            const keywordData = Object.entries(keywordCounts).map(([keyword, count]) => ({
+            keyword,
+            count,
+            }));
+
+            // Sort keywordData by count in descending order
+            keywordData.sort((a, b) => b.count - a.count);
+
+            // Define constants
+            const barHeight = 20; // Height of each bar
+            const barSpacing = 5; // Space between bars
+            const chartWidth = 400;
+            const margin = { top: 20, right: 20, bottom: 30, left: 20 }; // Initial margins
+
+            // Create a temporary SVG to measure label dimensions
+            const tempSVG = d3.select("body").append("svg").attr("class", "temp-svg");
+
+            // Calculate max label width for y-axis
+            const maxYLabelWidth = d3.max(keywordData, (d) => {
+            const textElement = tempSVG
+            .append("text")
+            .attr("class", "temp-text")
+            .style("font-size", `${fontSize}px`)
+            .text(d.keyword);
+            const textWidth = textElement.node().getBBox().width;
+            textElement.remove();
+            return textWidth;
+            });
+
+            // Calculate max label height for x-axis
+            const maxXLabelHeight = d3.max(keywordData, (d) => {
+            const textElement = tempSVG
+            .append("text")
+            .attr("class", "temp-text")
+            .style("font-size", `${fontSize}px`)
+            .text(d.count * 2);
+            const textHeight = textElement.node().getBBox().height;
+            textElement.remove();
+            return textHeight;
+            });
+            tempSVG.remove(); // Clean up the temporary SVG
+
+            // Update margins dynamically
+            margin.left = maxYLabelWidth + 20; // Add padding
+            margin.bottom = maxXLabelHeight + 10; // Add padding
+
+            // Compute chart height based on number of bars
+            const chartHeight = keywordData.length * (barHeight + barSpacing) + margin.top + margin.bottom;
+
+            // Update scales
+            const x = d3
+            .scaleLinear()
+            .domain([0, d3.max(keywordData, (d) => d.count)])
+            .range([0, chartWidth - margin.left - margin.right]);
+
+            const y = d3
+            .scaleBand()
+            .domain(keywordData.map((d) => d.keyword))
+            .range([0, keywordData.length * (barHeight + barSpacing)])
+            .padding(0.1); // Padding within the band
+
+            // Create SVG
+            const chartSVG = d3
+            .select(chartContainer)
+            .append("svg")
+            .attr("width", chartWidth)
+            .attr("height", chartHeight);
+
+            const chartGroup = chartSVG
+            .append("g")
+            .attr("transform", `translate(${margin.left}, ${margin.top})`);
+
+            // Add bars
+            chartGroup
+            .selectAll(".bar")
+            .data(keywordData)
+            .enter()
+            .append("rect")
+            .attr("class", "bar")
+            .attr("x", 0)
+            .attr("y", (d, i) => i * (barHeight + barSpacing)) // Use index to calculate position
+            .attr("width", (d) => x(d.count))
+            .attr("height", barHeight)
+            .attr("fill", "lightgrey");
+
+            // Add y-axis
+            chartGroup
+            .append("g")
+            .call(d3.axisLeft(y))
+            .selectAll("text")
+            .style("font-size", `${fontSize}px`);
+
+            // Add x-axis
+            const maxValue = d3.max(keywordData, d => d.count); // Get the maximum value
+            chartGroup
+            .append("g")
+            .attr("transform", `translate(0, ${chartHeight - margin.top - margin.bottom})`)
+            .call(d3.axisBottom(x).tickValues([0, maxValue])) // Set tick values to only 0 and max
+            .selectAll("text")
+            .style("font-size", `${fontSize}px`);
+
+            // Append the chart container to the tooltip or desired location
+            infoTooltip.appendChild(chartContainer);
+            }
+            }
+
+            // Toggle tooltip visibility on button click
+            infoButton.addEventListener("click", () => {
+            if (infoTooltip.style.display === "block") {
+            infoTooltip.style.display = "none";
+            } else {
+            generateTooltipContent();
+            infoTooltip.style.display = "block";
+            }
+
+            });
+
+
+            // Label density
+            // Add a slider element to the top-right corner
+            const sliderContainer = d3.select('body').append('div')
+      	    .style('position', 'fixed')
+      	    .style('top', '10px')
+      	    .style('right', '10px')
+      	    .style('z-index', '1000');
+
+            sliderContainer.append('label')
+          .text('Label density: ')
+          .style('margin-right', '10px');
+
+            const slider = sliderContainer.append('input')
+      	    .attr('type', 'range')
+      	    .attr('min', 0)
+      	    .attr('max', d3.max(nodes, d => d.degree))
+      	    .attr('value', minDegreeTag)
+      	    .style('width', '150px')
+      	    .on('input', function () {
+      		minDegreeTag = d3.max(nodes, d => d.degree) - +this.value;
+      		updateLabels();
+      	    });
+
+            // Function to update labels based on the slider value
+            function updateLabels() {
+      	  labels = svgGroup.selectAll('text')
+                    .data(nodes.filter(d => d.degree > minDegreeTag), d => d.id)
+                    .join(
+      		  enter => enter.append('text')
+                            .attr('x', d => d.x)
+                            .attr('y', d => d.y)
+                            .attr('dx', 10)
+                            .attr('dy', '.35em')
+                            .style('font-size', `${fontSize}px`)
+                            .style('font-family', 'Arial, sans-serif')
+                            .style('fill', '#333')
+                            .text(d => d.name),
+      		  update => update.attr('x', d => d.x).attr('y', d => d.y),
+      		  exit => exit.remove()
+                    );
+      	  simulation.alpha(1).restart();
+            }
     </script>
   </body>
 </html>

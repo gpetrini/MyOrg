@@ -1,0 +1,51 @@
+#+title:      Historicizing housing typologies: beyond welfare state regimes and varieties of residential capitalism
+#+date:       [2021-02-17 qua 00:00]
+#+filetags:   :bib:
+#+identifier: 20210217T000002
+#+OPTIONS: toc:nil num:nil
+#+reference:  blackwell_2019_Historicizing
+
+
+* Backlinks
+
+[[denote:20250202T120856][Housing Market]]
+
+[[denote:20230216T235150][Household debt and Bank credit]]
+
+[[denote:20230216T235157][Varieties of Capitalisms]]
+
+[[denote:20250202T120045][Residential Investment]]
+
+* FISH-5SS
+
+
+|---------------------------------------------+-----|
+| <40>                                          |<50> |
+| *Background*                                  |     |
+| *Supporting Ideas*                            |     |
+| *Purpose*                                     |     |
+| *Originality/value (Contribution)*            |     |
+| *Relevance*                                   |     |
+| *Design/methodology/approach*                 |     |
+| *Results*                                     |     |
+| *(Interesting) Findings*                      |     |
+| *Research limitations/implications (Critics)* |     |
+| *Uncategorized stuff*                         |     |
+| *5SS*                                         |     |
+|---------------------------------------------+-----|
+
+* Specifics comments
+ :PROPERTIES:
+ :Custom_ID: blackwell_2019_Historicizing
+ :AUTHOR: Blackwell, T., & Kohl, S.
+ :JOURNAL: Housing Studies
+ :YEAR: 2019
+ :DOI:  http://dx.doi.org/10.1080/02673037.2018.1487037
+ :URL: https://doi.org/10.1080/02673037.2018.1487037
+ :END:
+
+
+* PDF Highlights
+:PROPERTIES:
+ :NOTER_DOCUMENT: /HDD/PDFs/2019/blackwell_2019_Historicizing/blackwell_kohl_2019_historicizing.pdf
+ :END:

@@ -1,0 +1,4 @@
+#+title:      Spatial Models
+#+date:       [2021-12-09 qui 23:02]
+#+filetags:   :placeholder:
+#+identifier: 20211209T230231

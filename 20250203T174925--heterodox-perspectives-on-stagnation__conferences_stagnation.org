@@ -1,9 +1,14 @@
 #+title:      Heterodox Perspectives on Stagnation
+#+subtitle:   2021 Edition
 #+date:       [2025-02-03 seg 17:49]
-#+filetags:   :conferences:stagnation:
+#+filetags:   :conferences:
 #+identifier: 20250203T174925
 
-[[id:d40701f7-73e8-4957-8bb5-b265fb2ab389][Demand-led 2021 Workshop]]
+* Backlinks
+
+[[denote:20250205T102306][International Demand-led Workshop]]
+
+[[denote:20250202T115910][Secular Stagnation]]
 
 * Stefano Di Bucchianico (Roma Tre): Inequality, household debt, ageing and bubbles: A model of demand-side Secular Stagnation
 

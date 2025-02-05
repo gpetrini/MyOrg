@@ -1,0 +1,6 @@
+#+title:      Exogenous Interest Rate
+#+date:       [2023-02-16 qui 23:52]
+#+filetags:   :placeholder:
+#+identifier: 20230216T235213
+
+[[denote:20250202T115827][Sraffian Theory]]

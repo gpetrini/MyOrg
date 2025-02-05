@@ -1,0 +1,48 @@
+#+title:      House price responsiveness of housing investments across major European economies
+#+date:       [2021-02-09 ter 00:00]
+#+filetags:   :bib:
+#+identifier: 20210209T000014
+#+reference:  gattini_2012_Housea
+
+
+* House price responsiveness of housing investments across major European economies
+  :PROPERTIES:
+  :Custom_ID: gattini_2012_House
+  :URL:
+  :AUTHOR:
+  :END:
+
+** FISH-5SS
+
+
+|---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| *Background*                                  | Residential investment is way less analyzed than house prices                                                                                                                                               |
+| *Supporting Ideas*                            |                                                                                                                                                                                                             |
+| *Purpose*                                     |                                                                                                                                                                                                             |
+| *Originality/value (Contribution)*            |                                                                                                                                                                                                             |
+| *Relevance*                                   | Point out that previous empirical studies connecting costs shifters and residential investment are inconclusive and house prices is the main determinant of new houses (elasticity ranging from o.5 to 2.3) |
+| *Design/methodology/approach*                 | Error correction and country specific model                                                                                                                                                                 |
+| *Sample*                                      | Six European countries (1970 - 2009): Germany,  France,  Italy,  Spain,  the Netherlands and the United Kingdom                                                                                             |
+| *Variables*                                   | Real residential investment, Real GDP, Real long term interest rate and proxies for land prices                                                                                                             |
+| *Results*                                     | Germany has the strongest response to house prices while Italy show the lowest one                                                                                                                          |
+| *(Interesting) Findings*                      |                                                                                                                                                                                                             |
+| *Research limitations/implications (Critics)* |                                                                                                                                                                                                             |
+| *Uncategorized stuff*                         | Residential investment is highly inertial in some countries which may justify the lag selection order in VEC paper.                                                                                         |
+| *5SS*                                         |                                                                                                                                                                                                             |
+|---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+** Backlinks
+
+[[denote:20230216T235149][House Prices]]
+
+** Specific comments
+
+Residential investment function is estimated as follows:
+
+#+BEGIN_latex
+\begin{equation}
+RHI = RHI(GPD(+), INT (-), LAND(-))
+\end{equation}
+#+END_latex
+The authors report the expected sign in their estimations.
+LAND is computed using dwellings price and the deflator of residential investment.

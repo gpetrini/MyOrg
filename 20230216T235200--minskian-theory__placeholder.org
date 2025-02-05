@@ -1,9 +1,4 @@
-:PROPERTIES:
-:ID:       8f8c3ff0-cd9b-4ead-b335-f205d869005a
-:END:
 #+title:      Minskian theory
 #+date:       [2023-02-16 qui 23:52]
 #+filetags:   :placeholder:
 #+identifier: 20230216T235200
-
-[[id:673f4082-43a5-4f2a-a9c0-759304a2bb2c][ABM Readings]]
