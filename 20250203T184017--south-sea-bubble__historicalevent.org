@@ -3,3 +3,5 @@
 #+filetags:   :historicalevent:
 #+identifier: 20250203T184017
 #+OPTIONS: num:nil ^:{} toc:nil
+
+[[denote:20250205T110047][Historical Events]]

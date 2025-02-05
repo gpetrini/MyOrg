@@ -1,0 +1,70 @@
+#+OPTIONS: num:nil ^:{} toc:nil
+#+title:      Learning to Speculate: Experiments with Artificial and Real Agents
+#+date:       [2025-02-05 qua 17:31]
+#+filetags:   :bib:
+#+identifier: 20250205T173115
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+#+reference:  duffy_2001_Learning
+
+
+
+* FISH-5SS
+
+
+
+** Background and motivation
+
+
+** Supporting Ideas and hypothesis
+
+
+** Purpose
+
+
+** Contribution
+
+
+** Relevance
+
+
+** Methodology
+
+
+** Results
+
+
+** Interesting findings and not categorized stuff
+
+
+** Critics
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+This paper employs an artificial agent-based computational approach to understanding and designing laboratory environments in which to test Kiyotaki and Wright's search model of money. The behavioral rules of the artificial agents are modeled on the basis of prior evidence from human subject experiments. Simulations of the artificial agent-based model are conducted in two new versions of the Kiyotaki–Wright environment and yield some testable predictions. These predictions are examined using data from new, human subject experiments. The results are encouraging and suggest that artificial agent-based modeling may be a useful device for both understanding and designing human subject experiments.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+
+[[denote:20250205T154234][Journal of Economic Dynamics and Control]]
+
+[[denote:20250202T115838][Speculation]]
+
+[[denote:20250202T114248][Agent Based Models]]
+
+[[denote:20250202T122308][Experimental Finance]]
+
+[[denote:20250203T180559][Learning and Heuristics]]
+
+* References
+
+#+print_bibliography:
+

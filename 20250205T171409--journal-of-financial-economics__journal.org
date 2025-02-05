@@ -1,0 +1,4 @@
+#+title:      Journal of Financial Economics
+#+date:       [2025-02-05 qua 17:14]
+#+filetags:   :journal:
+#+identifier: 20250205T171409

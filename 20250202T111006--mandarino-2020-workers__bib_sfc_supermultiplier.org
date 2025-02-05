@@ -48,6 +48,10 @@ $<$section class="abstract"$><$p$>$This paper presents a supermultiplier stockâ€
 
 * Additional Backlinks
 
+[[denote:20250203T184028][Stock-Flow Consistent]]
+
+[[denote:20250203T184155][Supermultiplier Models]]
+
 * References
 
 

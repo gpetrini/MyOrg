@@ -1,0 +1,107 @@
+#+OPTIONS: num:nil ^:{} toc:nil
+#+title:      Economic Crisis and Innovation: Is Destruction Prevailing over Accumulation?
+#+date:       [2025-02-05 qua 15:34]
+#+filetags:   :bib:
+#+identifier: 20250205T153454
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+reference:  archibugi_2013_Economic
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+[cite/t:@archibugi_2013_Economic] discuss why innovation is more concentrated during the Great Recession. Analyzing UK firms, the validate the Creative Cummulation process in which past innovators firms continue to innovate while new innovator take advantages of new markets during recession. They also report that innovative persistence is more proeminent in the short-run than in the long-run.
+
+** Background
+
+The paper is motivated by the ununiformity distribution of firms' innovative activities after the [[denote:20250202T121038][Great Recession]] in the UK.
+Among all firms, a small share of them were leaning againt the wind and innovated more.
+
+
+** Supporting ideas
+
+The authors base their argument in two Schumpeterian concepts: [[denote:20250202T121805][creative_destruction]] and [[denote:20250202T121734][Creative Accumulation]].
+Accordingly to them, these two concepts summarize the main debates among two strands of Schumpeterian literature.
+The first (Schumpeterian models Mark II) assumes that innovation and [[denote:20250203T184320][Technological revolution]] are a cumulative [[denote:20250203T180559][Learning and Heuristics]] process in which previous sucessfull firms will be the ones who will continue to innovate (there is a strong [[denote:20250203T182533][Path Dependence]] effect and more related to [[denote:20250202T121734][Creative Accumulation]]).
+Thus, those firms will be the one who will innovate even during the recession.
+The other (Schumpeterian models Mark I) highlight the relevance of new entrants and how the treaten the already stablished firms, so, more related to [[denote:20250202T121805][creative_destruction]].
+Those firms may innovate due to more flexible structure, providing some advantages to them in facing new markets.
+
+
+** Contribution and purpose
+
+This paper aim to understand why innovation is more concentrated during the crisis.
+
+** Relevance
+
+For [[denote:20250202T120807][Innovation bubble ABM]] chapter, this paper is relevant because detect which firm type will innovate in different periods of the [[denote:20240708T155635][Business Cycles]].
+Other relevant aspect is to connect how innovation changes during the business cycle.
+
+
+One interesting aspect found in this paper is the non long-run innovation persistence.
+This could support the Sraffian supermultiplier implication that autonomous expenditures cannot lead the cycle.
+
+Considering a [[denote:20250202T120251][Policy Oriented]] perspective, the authors suggest the need to understand how to reward "winners" and how to select new innovatiors.
+
+** Methodology (Design/Approach/Method)
+
+The authors present some hypothesis to be tested further [cite:@archibugi_2013_Economic p. 365--6]:
+- Creative destruction or firm level accumulation? :: firms changes and becomes more concentrated in those ﬁrms that were already highly innovative before the crisis
+  - If confirmed, validates the [[denote:20250202T121734][Creative Accumulation]] strand
+- Firm-level characteristics and persistent innovation :: This hypothesis has two components
+  - Hypothesis 2 :: Increased investment in innovation during the crisis is more strongly correlated with two groups of firms: (a) those previously classified as great innovators and (b) those classified as fast growing new entrants.
+  - Hypothesis 3 :: Increase in investment in innovation before and during the crisis is positively associated with internal R&D, firm size and ﬁrm internal financial resources.
+- Innovation strategies during economic crises: a story of ambidexterity :: Firms that follow mixed strategies of exploitation and exploration – ambidextrous firms – are more likely to increase investment in innovation, and this positive relationship is of greater strength or relevance during the crisis compared with before.
+  - In summary, ambidexterity is this mixed behavior in which prioritize investment during downturns and expand innovation in the upswing
+    - It is a mix of exploitation and exploration
+
+
+Based on the previous theoretical discussion, they estimate an empirical model:
+
+- *Sample:* 2500 [[denote:20250205T153834][United Kingdom]] firms using [[denote:20250203T184210][Survey Data]] from 2002-2008
+- New entrants are those who entered in the market in January 2000
+- Great innovators are those with sales from new-to-market products
+- They included controls for IPR protection, if the firm operate outside UK and if a share of employees have a bachelor degree or above
+- Model: Heckman model
+
+
+** Results
+
+- They conclude that during the upswing of the [[denote:20240708T155635][Business Cycles]], innovation is more related to [[denote:20250202T121734][Creative Accumulation]] process
+  - However, during the crisis, new innovators innovate more compared to prior crisis scenario, taking advantages of new markets
+- The authors reports that persistence in innovation is a short-run fenomena while there is no evidence for long-run persistence
+- They validate the hypothesis related to [[denote:20250202T121734][Creative Accumulation]] concept
+- They find mixed results for ambidexterity
+
+
+** Interesting findings and uncategorized stuff
+
+- The authors consider more "dynamics" firms those who cannot survive without innovation
+- While describing firm-level characteristics, the authors indicates that [[denote:20240708T155825][Product Innovation]] may be more relevant than [[denote:20240708T155856][Process Innovation]] since the latter is rarer
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+The 2008 economic crisis has severely reduced the short-term willingness of firms to invest in innovation. But this reduction has not occurred uniformly and a few firms even increased their investment in spite of the adverse macroeconomic environment. This paper, based on the latest three waves of the UK Community Innovation Survey, compares drivers of innovation investment before and during the crisis. We find that the crisis led to a concentration of innovative activities within a small group of fast growing new firms and those firms already highly innovative before the crisis. The companies in pursuit of more explorative strategies towards new product and market developments are those to cope better with the crisis. © 2012 Elsevier B.V.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+[[denote:20250205T153446][Research Policy]]
+
+[[denote:20250202T120807][Innovation bubble ABM]]
+
+[[denote:20250202T120740][Innovation-led growth models]]
+
+* References
+
+#+print_bibliography:

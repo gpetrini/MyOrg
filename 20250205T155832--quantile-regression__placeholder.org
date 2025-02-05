@@ -1,0 +1,6 @@
+#+title:      Quantile Regression
+#+date:       [2025-02-05 qua 15:58]
+#+filetags:   :placeholder:
+#+identifier: 20250205T155832
+
+[[denote:20250204T172907][Empirical]]

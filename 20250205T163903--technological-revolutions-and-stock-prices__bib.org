@@ -1,0 +1,71 @@
+#+title:      Technological Revolutions and Stock Prices
+#+date:       [2025-02-05 qua 16:39]
+#+OPTIONS: num:nil ^:{} toc:nil
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+#+filetags:   :bib:
+#+identifier: 20250205T163903
+#+reference:  pastor_2009_Technological
+
+
+* Internal :noexport:
+
+*Reading status:* Partial
+* FISH-5SS
+
+|---------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <40>                                        | <50>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| *Background*                                  | Empirical motivation: Both railroad and [[denote:20250203T172959][Dot-Com Crisis]]                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| *Supporting Ideas*                            | [[denote:20250203T184320][Technological revolution]] tend to be followed by [[denote:20250202T114928][Asset bubble]]-like patterns. Definitions: Technological revolution is defined as large-scale adoption of a new technology. Technology has an intrinsic uncertainty regarding the future effects on future productive and this uncertainty is *time varying*. Technological revolution are *discontinuous*.                                                                                                                                            |
+| *Purpose*                                     | This paper investigates the new technology *adoption decision*.                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| *Originality/value (Contribution)*            | Clarify why the stock prices of new technologies are initially more volatile and drop once the risk becomes systemic (implemented in large scale).                                                                                                                                                                                                                                                                                                                                                 |
+| *Relevance*                                   | This paper provides the link between [[denote:20250202T120807][Innovation bubble ABM]] and stock price volatility. Since there is intrinsic uncertainty in technology, there is a rationality in waiting for technological adoption.                                                                                                                                                                                                                                                                                          |
+| *Design/methodology/approach*                 | [[denote:20250202T121100][General Equilibrium Model]] in which agents experiments the new technology in small-scale settings.                                                                                                                                                                                                                                                                                                                                                                                                 |
+| *Results*                                     | The bubble-like pattern is a result of /ex post/ [[denote:20250203T183856][Selection Bias]] since agents did not know at the time of the technological implementation if it would be profitable. The bubble in the stock prices of agents implementing the new technology must be more volatile. When implementation probability increases, stock prices decreases (due to an increase of discount rate). Additionally, the increase in the new economy stock prices is higher because of the higher relative volatility (beta). |
+| *(Interesting) Findings*                      | Technological revolution reduces stock prices since incumbent firms will not implement the new technologies.                                                                                                                                                                                                                                                                                                                                                                                       |
+| *Research limitations/implications (Critics)* | As the authors point out, this model fails to predict the amount of investment required to accomplish Technological revolution. Thus, a more integrate framework is needed.                                                                                                                                                                                                                                                                                                                        |
+| *Uncategorized stuff*                         | The new technology does not generates productivity gains immediately since agents find its is better to learn about the technology before adopting it (Such as the overinvestment in infrastructure during the [[denote:20250203T172959][Dot-Com Crisis]]).                                                                                                                                                                                                                                                                   |
+| *5SS*                                         | Stock prices in new technology economy is more volatile due to uncertainty, generating a bubble-like pattern. Since the new technology is implemented in a larger scale, the stock prices drop. Thus, agents may learn about the new technology before implementing.                                                                                                                                                                                                                               |
+|---------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+We develop a general equilibrium model in which stock prices of innovative firms exhibit "bubbles" during technological revolutions. In the model, the average productivity of a new technology is uncertain and subject to learning.
+During technological revolutions, the nature of this uncertainty changes from idiosyncratic to systematic.
+The resulting bubbles in stock prices are observable ex post but unpredictable ex ante, and they are most pronounced for technologies characterized by high uncertainty and fast adoption.
+We find empirical support for the model's predictions in 1830-1861 and 1992-2005 when the railroad and Internet technologies spread in the United States.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+
+
+* Annotations (zotero)
+
+
+
+
+* Additional Backlinks
+
+[[denote:20250203T184320][Technological revolution]]
+
+[[denote:20250202T120807][Innovation bubble ABM]]
+
+[[denote:20250203T172959][Dot-Com Crisis]]
+
+[[denote:20250203T183856][Selection Bias]]
+
+[[denote:20250202T114632][Uncertanty]]
+
+[[denote:20250205T163812][Technology Adoption]]
+
+[[denote:20250205T104529][Mainstream Models]]
+
+[[denote:20250205T163840][American Economic Review]]
+
+* References
+
+#+print_bibliography:

@@ -1,0 +1,179 @@
+#+title:      Emergent Dynamics of a Macroeconomic Agent Based Model with Capital and Credit
+#+date:       [2025-02-05 qua 15:43]
+#+filetags:   :bib:
+#+identifier: 20250205T154308
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+#+reference:  assenza_2015_Emergent;assenza_2015_Emergenta
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+[cite/t:@assenza_2015_Emergent] enhance the [[denote:20250202T121415][cats_abm_family]] by including both a capital and a credit market.
+This small-scale model can reproduce endogenous [[denote:20240708T155635][Business Cycles]] with [[denote:20250203T173133][Financial Crises]].
+The authors state that the model novelty are the main drivers of this pattern.
+However, the constant High Powered Money seems to be a more adequate candidate for the booms and bursts.
+
+
+** Background and motivation
+
+- Some small-scale models do not have capital goods modeled
+  - This is the case for the first [[denote:20250202T121100][General Equilibrium Model]]s and [[denote:20250202T121415][cats_abm_family]]
+
+
+** Supporting Ideas and hypothesis
+
+
+- Labor and capital are homogeneous for simplicity
+  - There is no endogenous innovation process as in the [[denote:20250203T180327][Keynes meets Schumpeter Family]]
+- It is assumed that each firm has one capitalist owner. Thus, the number of the firms match the number of capitalists households
+  - Capitalists households act as rentiers
+- When not employed, workers households dis-saves its net worth
+  - There is no unemployment benefits
+  - Households deposits is not remunerated
+- Capital-goods firms use only labor to produce
+- Consumption-goods are non-storable, thus those firms cannot use their inventories to meet demand
+  - Capital goods, otherwise, are storable
+- There is no complete information and there is [[denote:20250202T114645][Transaction Costs]]
+  - [[denote:20250202T114645][Transaction Costs]] is included imposing a finite number of interactions among agents
+    - Consumption- and capital-goods firms have higher [[denote:20250202T114645][Transaction Costs]] compared to labor market
+- Households sorts consumption-goods firms according to its prices and choose to buy from the one with lower price
+  - If their demand is not fullfilled, they move on to the next in the queue
+    - If their demand is not fullfilled even after visit all firms, they have involuntary savings
+  - Households do not spend their whole budget in the first firm
+- Wages are homogeneous among firms and households and unemployed households visit a random sample of firms
+  - Thus, household will always accept the offer
+  - There is no hiring or firing costs
+  - Vacancies are filled when a firm is visited by an unemployed household
+- Household consumption function follows [[denote:20250203T182626][Permanent Income Hypothesis]]
+  - Consumption depends onf human and financial wealth and follows an adaptative algorithm
+  - At odds with neoclassical [[denote:20250203T182626][Permanent Income Hypothesis]], households consider past income instead of expected income
+  - Marginal propensity to consume is a non-linear function of wealth as in [[denote:20250202T121441][carrolls_s_consumption_function]]
+- Both firms reacts to market signals in which compares its production with effective final demand as well as competitors' average price
+  - It is assumed that average price is publicaly available
+- Firms set price in an adaptative manner depending if they seeting its price above or bellow the average. However, the amount that firms will change price is stochastic
+  - Thus, it is a partial and assymetric mechanism. Firms do not change prices and quantities at the same time
+  - There is a minimum price that ensure that firms must covers its average cost
+- It is assumed that only a fraction ($\gamma$) of capital goods can be replaced
+- Firms use the average capital stock in their investment decisions
+- Banks grant credit to firms as long as they do not exceed certain leverage ratio
+  - Bank estimate individual bankruptcy ratio according to firm's leverage
+    - Thus, there are different interest rates for different firms in different periods
+  - Bank is assumed to be risk-neutral
+  - Policy rate is similar to the one apply to the risk-free firm (does not go bankrupt)
+  - Banks distribute profits to capitalists households
+- The stock of High Powered Money is constant over time
+
+** Purpose
+
+To evaluate what are the consequences of the interaction between capital goods and credit grating in a small-scale [[denote:20250202T114248][Agent Based Models]].
+The reason for this step foward is to add realism to the [[denote:20250202T121415][cats_abm_family]].
+
+** Contribution
+
+This model adds a stylized supply chain ([[denote:20250205T154745][Upstream-Downstream Dynamics]]) by including capital- and consumption-goods firms in the [[denote:20250202T121415][cats_abm_family]].
+
+
+** Relevance
+
+This paper is one of the main references for [[denote:20250202T121415][cats_abm_family]] which have a capital and credit market.
+This could be consider a representative sample of this framework, providing a [[denote:20250202T115328][Canonical Models.]]
+
+** Methodology
+
+The authors present an simulated [[denote:20250202T114248][Agent Based Models]] composed by workers and capitalists households, consumption- and capital-goods firms, and a bank.
+
+
+** Results
+
+- The intersection between Capital and Credit markets with adaptative behavior is the main determinant of GDP volatility and implies endogenous [[denote:20240708T155635][Business Cycles]] with [[denote:20250203T173133][Financial Crises]]
+  - And this result is an emergent property that occur in all simulations
+  - Close to the collapse, there is an increase of debt and riskness of consumption-goods firms, be denied to recieve credit; reducing production and investment
+- Long-run GDP gravitates towards full-employment
+- Consumption is less volatile than GDP which is less volatile than investment
+- All macroeconomic variables are coincident with GDP
+- When economy moves toward full-employment, capital goods price are pushed up (since production cannot meet demand since there is labor restriction)
+- The authors states that the microeconomic adaptative-behavior is the main determinant of correlations among macroeconomic variables
+  - However, this adaptative behavior must occur together with the capital and credit market in order to replicate the reported stylized facts
+  - They argue that this heuristic create [[denote:20250202T114051][Externalities]] which allows the emergence of the reported results
+
+
+** Interesting findings and not categorized stuff
+
+
+
+
+** Critics
+
+
+- It is unclear at are the economic driver of the model
+- As the authors themselves notice, the sorting mechanism imply a no branding fidelity
+- The hypothesis regarding firms sorting according to its price and households consumption function implies a defined negative demand curve for goods. There is no such evidence of such restrict hypothesis (see [[denote:20250204T114059][Theories of Value, Output, and Employment]])
+- Since High Powered Money is constant and exogenous, this seems to be the main reason of emergence of [[denote:20250203T173133][Financial Crises]]
+  - A more adequate alternative must have endogenous money supply
+  - Thus, firms expansions reaches a financial ceiling so money flows from one agent to another, leaving the first credit constrained
+- It seems unreasonable to assume that firms change prices in a stochastic manner
+  - However, when innovation is endogenous, stochastic and affects labor cost (as in [[denote:20250203T180327][Keynes meets Schumpeter Family]]), prices become stochastic as well
+
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+In this paper we present and discuss a Macroeconomic Agent-Based Model with Capital and Credit (CC-MABM) which builds upon the framework put forward by Delli Gatti et al. (2011). The novelty of this model with respect to the previous framework consists in the introduction of a stylized supply chain where upstream firms --- i.e. producers of capital goods (K-firms) --- supply a durable and sticky input (capital) to the downstream firms, who produce consumption goods (C-firms) to be sold to households. Both C-firms and K-firms resort to bank loans to satisfy their financing needs. There are two-way feedbacks between firms and markets which yield interesting emerging properties at the macro level. We show that the interaction of upstream and downstream firms and the evolution of their financial conditions --- in a nutshell: Capital and Credit --- are essential ingredients of a ``crisis'' i.e. a sizable slump followed by a long recovery.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+
+** Firms' investment function
+
+Firms consider the average capital stock ($\bar K$) in their decision making:
+
+#+BEGIN_latex
+\begin{equation}
+\bar{K}_{i,t-1} = \nu \bar{K}_{i,t-2} + (1- \nu)\omega_{i,t-1}\bar{K}_{i,t-1}
+\end{equation}
+#+END_latex
+in which $\nu$ is a positive and smaller than one parameter and $\omega$ is the capacity utilization ratio.
+In this case, the history of capacity utilization ratio will influence the purchase of capital goods in the future.
+
+Considering both expansion and replacement investment, planned total investment is defined as:
+#+BEGIN_latex
+\begin{equation}
+I_{i,t} = \left(\frac{1}{\bar{\omega}} + \frac{\delta}{\gamma}\right\bar{K}_{i,t-1} - K_{i,t}
+\end{equation}
+#+END_latex
+in which $\bar \omega$ is the desired long-run capacity utilization rate, $\delta$ is the depreciation ratio, and $\gamma$ is the replacement ratio.
+Thus, firms mus decide how much to invest and the desired capacity utilization ratio.
+
+Iterating, the current capital stock will be:
+#+BEGIN_latex
+\begin{equation}
+K_{i,t} = (1 - \delta\omega_{i,t-1})K_{i,t-1} + I_{i,t-1}
+\end{equation}
+#+END_latex
+
+According to [cite/t:@assenza_2015_Emergent p~. 12], when the available capital stock is greater than the desired level, firms can apply the desired capacity utilization level to all the capital stock.
+If there is insufficient capital stock, firms utilize them at full capacity.
+
+As [cite/t:@dawid_2018_Chapter p. 117] points out, there is any foward-looking behavior in this investment function.
+Firms consider past capital stock in a non-myopic manner.
+Differently from other [[denote:20250202T114248][Agent Based Models]], this model have a long run planning (in terms that not only consider near-future market fluctuation) since consider past information.
+In summary, this investment specification is based on long run estimates of capital requirements [cite:@dawid_2018_Chapter p. 137].
+The [[denote:20250203T184155][Supermultiplier Models]], on the other hand, imply a foward-looking behavior in order to adapt current production to expectations of final demand.
+
+* Additional Backlinks
+
+[[denote:20250202T120625][Investment determination]]
+
+[[denote:20250205T154234][Journal of Economic Dynamics and Control]]
+
+* References
+
+#+print_bibliography:

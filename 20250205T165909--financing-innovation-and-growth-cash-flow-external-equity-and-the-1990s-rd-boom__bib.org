@@ -1,0 +1,69 @@
+#+title:      Financing Innovation and Growth: Cash Flow, External Equity, and the 1990s R&D Boom
+#+date:       [2025-02-05 qua 16:59]
+#+filetags:   :bib:
+#+identifier: 20250205T165909
+#+options: num:nil ^:{} toc:nil
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+#+reference:  brown_2009_Financing
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+Young firms are more susceptible to financing than mature firms.
+In addition, they are responsible for most of the R&D boom ([[denote:20250203T172959][Dot-Com Crisis]]) in the 1990s.
+Thus, financing is a key channel in explaining R&D.
+
+** Background and motivation
+
+
+** Supporting Ideas and hypothesis
+
+
+** Purpose, Relevance, and Contribution
+
+
+** Methodology
+
+
+** Results
+
+
+** Interesting findings and not categorized stuff
+
+
+** Critics
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+The financing of R&D provides a potentially important channel to link finance and economic growth, but there is no direct evidence that financial effects are large enough to impact aggregate R&D. U.S. firms finance R&D from volatile sources: cash flow and stock issues. We estimate dynamic R&D models for high-tech firms and find significant effects of cash flow and external equity for young, but not mature, firms. The financial coefficients for young firms are large enough that finance supply shifts can explain most of the dramatic 1990s R&D boom, which implies a significant connection between finance, innovation, and growth.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+[[denote:20250205T125134][Journal of Finance]]
+
+[[denote:20250203T172959][Dot-Com Crisis]]
+
+[[denote:20250202T120807][Innovation bubble ABM]]
+
+[[denote:20250205T165524][Research and Development]]
+
+[[denote:20250204T172907][Empirical]]
+
+* References
+
+
+
+#+print_bibliography:

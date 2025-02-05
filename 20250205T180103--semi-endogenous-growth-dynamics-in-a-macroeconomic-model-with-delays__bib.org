@@ -1,0 +1,67 @@
+#+OPTIONS: num:nil ^:{} toc:nil
+#+title:      Semi-Endogenous Growth Dynamics in a Macroeconomic Model with Delays
+#+date:       [2025-02-05 qua 18:01]
+#+filetags:   :bib:
+#+identifier: 20250205T180103
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+#+reference:  hartwig_2022_Semiendogenous
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+
+** Background and motivation
+
+
+** Supporting Ideas and hypothesis
+
+
+** Purpose, Relevance, and Contribution
+
+- For the [[id:95265264-f61f-4cf5-8cdc-e590b2a47cb9][Innovation bubble ABM]] chapter, this paper was choosen in order to discuss the consequences of innovation in [[id:380b31ad-cdd5-4367-af2c-9ee199a085e7][Business Cycles]] and not exclusively as an driver of long-term growth.
+  - {DECISION} Note from the future reading. This model have a lot of neo-classical assumptions, making it incompatible with the proposed discussion.
+
+
+** Methodology
+
+
+** Results
+
+
+** Interesting findings and not categorized stuff
+
+
+** Critics
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+While explaining economic growth is still an open question in economics, it is widely recognized that innovation plays a leading role in its promotion. However, innovative activity involves both time delays and accumulation, and both are topics that neoclassical economics do not put an emphasis upon. If one introduces these features into a growth model and allows for imbalances between the demand and supply side of the economy, fluctuations are the result. This means that by introducing these mechanisms one can argue that investing in innovation can be both a driver for long-term growth as well as a reason for mid-term fluctuations. Hence, the growth dynamics arising from innovative activities have a more complicated pattern than neoclassical growth models can usually account for.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+[[denote:20250202T121258][Endogenous Growth]]
+
+[[denote:20250204T193239][Structural Change and Economic Dynamics]]
+
+[[denote:20240906T150431][Technological change]]
+
+[[denote:20250202T120807][Innovation bubble ABM]]
+
+* References
+
+
+
+#+print_bibliography:

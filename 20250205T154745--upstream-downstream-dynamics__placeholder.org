@@ -1,0 +1,4 @@
+#+title:      Upstream-Downstream Dynamics
+#+date:       [2025-02-05 qua 15:47]
+#+filetags:   :placeholder:
+#+identifier: 20250205T154745

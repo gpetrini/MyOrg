@@ -1,0 +1,123 @@
+#+OPTIONS: num:nil ^:{} toc:nil
+#+title:      Testing Keynes’ Aggregate Investment Function
+#+date:       [2025-02-05 qua 18:08]
+#+filetags:   :bib:
+#+identifier: 20250205T180824
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+#+reference:  harvey_2022_Testing
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+The author estimates empirically the determinants of aggregate investment ([[denote:20250202T115037][Autonomous Investment bubble]]) accordingly to Keynes by elaborating a forcast (For) variable.
+In summary, this is the most significant one.
+On the negative side, some methodological steps are unclear.
+
+** Background and motivation
+
+- The investment variable is the chosen one because it was the most important to [cite/t:@keynes_1936_Generala]
+
+** Supporting Ideas and hypothesis
+
+- Investment depends mainly on expectations
+  - Investment decrease due to the collapse of marginal efficiency of capital
+  - The other determinants are capital goods price (negativelly) and real interest rate (also negativelly)
+    - Keynes himself attributes more prominent role for the colapse of marginal efficiency of capital than interest rate increase.
+    - Capital (supply) price increases during the upturn.
+  - As usual in Keynesian approaches, investment is volatile because it is involved in an uncertain environment ([[denote:20250202T114632][Uncertanty]]).
+
+Investment determinants:
+
+\[Inv = Inv(For(+), Sur(+), Pk(-), r(-))\]
+
+
+** Purpose, Relevance, and Contribution
+
+For the [[denote:20250202T120807][Innovation bubble ABM]] chapter, this paper was chosen to provide some references for keynesian autonomous investment. Also, it may have some insights for the effects of expectations in determining aggregate investment.
+
+
+- Evaluate Keynes' proposal of determinants of aggregate investment empirically.
+  - In addition, indicate that it is possible to purpose an alternative to neo-classic economics
+- The relevance of the paper is to build two time series reflecting entrepreneur forecast and surprises
+  - The available data only inform the direction of entrepreneurs expectations
+  - The author argue that the proposed methodology also captures the state (not only the direction) of the economy
+- This could also be a paper to cite since deals with expectation frustrations
+  - And to inspire to build an surprise index
+
+** Methodology
+
+The author estimates empirically the determinants of aggregate investment ([[denote:20250202T115037][Autonomous Investment bubble]]) accordingly to Keynes by elaborating a forcast (For) variable as:
+
+  #+CAPTION: Forecast variable (normilized variables)
+  |--------------------------------------+-----+--------------------+--------------------------------------|
+  |--------------------------------------+-----+--------------------+--------------------------------------|
+  | Realized profit growth rated (Effec) | PMI | For (Effec. + PMI) | Interpretation                       |
+  |--------------------------------------+-----+--------------------+--------------------------------------|
+  |                                    0 |   0 |                  0 | Profits on avg, expect to not change |
+  |                                    1 |  -1 |                  0 | Profit above avg, expect to decline  |
+  |                                    1 |   0 |                  1 | Profits above avg, expected the same |
+  |                                      |     |                    |                                      |
+  |--------------------------------------+-----+--------------------+--------------------------------------|
+  |--------------------------------------+-----+--------------------+--------------------------------------|
+
+Surprises were formulated in a similar manner, by calculateing the difference between actual profit growth rate and the forecast for previous period.
+
+
+** Results
+
+- There is no evidence for real interest rate
+
+** Interesting findings and not categorized stuff
+
+- Forecasts are the most significant variable.
+- Regarding Keynes 'unjustified demand', the author argues that it occurs because expectations was too high, not that firms invested more than expected demand.
+
+** Critics
+
+- For some reason (not explained), the author assumes that profits --- not GDP growth or employment --- are the most relevant one for firms. The author also do not cite any reference in here.
+- It is unclear of with econometric method the author used
+- If the author includes both For and Sur, these two variables are not correlated?
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+In Keynes’ model, no variety of private sector spending plays a more critical role than investment. This is so because reaching full employment requires that it be large enough to offset the volume of saving that would be forthcoming at that level of economic activity, which occurs only rarely and by coincidence. Despite its key role, very few Post Keynesians have undertaken empirical studies of Keynes’ approach (as opposed to one based on Keynes). While I suspect that there are a number of reasons for this, perhaps the greatest stumbling block is one related to data: how do we measure not just investors’ expectations, but the difference between what was expected and what actually transpired? I believe I have developed a defensible solution to this problem, one that not only allows for a more direct test of Keynes’ theory but also offers tremendous support for it.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+#+FILETAGS: [A],Autonomus Investment,Business investment,Ch DotCom,DUE: Jul/22,EMPIRICAL,EXPECTATIONS,Keynes,Post Keynesian,READ
+
+[[denote:20250205T180642][Journal of Post-Keynesian Economics]]
+
+[[denote:20250202T115037][Autonomous Investment bubble]]
+
+[[denote:20250202T121158][Expectations]]
+
+[[denote:20250205T095922][Post Keynesian Economics]]
+
+[[denote:20250202T120807][Innovation bubble ABM]]
+
+[[denote:20250202T114350][Animal Spirits]]
+
+[[denote:20250202T120625][Investment determination]]
+
+[[denote:20240708T175224][Expectations Formation and Behaviour Macroeconomics]]
+
+[[denote:20250205T181146][How Do Firms Form Their Expectations? New Survey Evidence]]
+
+* References
+
+
+
+#+print_bibliography:

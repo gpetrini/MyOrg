@@ -1,0 +1,108 @@
+#+OPTIONS: num:nil ^:{} toc:nil
+#+title:      The Macroeconomic Expectations of Firms
+#+date:       [2025-02-05 qua 17:05]
+#+filetags:   :bib:
+#+identifier: 20250205T170500
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+#+reference:  candia_2022_Macroeconomic
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+[cite/t:@candia_2022_Macroeconomic] review the empirical evidence on the expectations formation of firms.
+In general, the surveys the base the analysis are focused on inflation.
+Firms expectations on inflation are distinct from households and professional forecasters.
+The non-zero correlation between short- and long-run inflation indicates that expectations are not so well anchored.
+Firms' attention to current inflation depends on the recent past inflation level.
+Regarding macroeconomic variables, firms form expectations jointly and those variables affects their decision.
+
+** Background and motivation
+
+- Due to data restrictions, there are few [[denote:20250203T184210][Survey Data]] about firms [[denote:20250202T121158][Expectations]]
+
+** Supporting Ideas and hypothesis
+
+- [[denote:20250202T120321][Phillips curve]]
+- [[denote:20250203T181036][Lucas' Island Model]]
+
+** Purpose and Contribution
+
+- There is an increasing interest in firms expectations formation. So this paper review some of the conclusion of the literature
+  - The new quantitative survey by Bank of France indicates this relevance
+- [[denote:20250202T120026][Review of Literature]] on the firms expectations formations and how the impact on their overall performance
+  - Mainly focus on empirical evidence
+
+** Relevance
+
+- For the [[denote:20250202T120807][Innovation bubble ABM]] chapter, the relevance of this paper is to provide some evidence on how firms form their expectations
+  - In general, there is little discussion about output growth or investment decisions. The only related topic is the aggregated variables do matter and affects their decision making
+    - How firms react to this variables depend on how they interpret the source of the shock
+- From a [[denote:20250202T120251][Policy Oriented]] perspective, this discussion is relevant since affects how monetary policy could act on Expectations
+
+** Methodology
+
+The paper contrast high-quality Survey Data (which follows some critereas)
+
+- Descriptive statistics
+- [[denote:20250202T120130][Randomized Control Trials]]
+- Analisys of [[denote:20250204T173452][United States]], Italy, New Zeland data mainly
+
+** Results
+
+- Firms expectations usually differ from households and professional forecasters
+- Short- and long-run inflation expectations are positivelly correlated
+  - If Expectations were well anchored, this correlation should close to zero
+- Firms form joint expectations between inflation and growth
+  - The authors interpret this result as consistent with a demand-side shock along Phillips curve
+- The accuracy of forecasts depends on the level of inflation
+  - Firms are less attentive to inflation in countries with lower inflation levels in the recent past
+    - Similar conclusion in [[denote:20250203T175849][Information Rigidity Models]] [cite:@coibion_2015_Informationa; @coibion_2018_How]
+
+** Interesting findings and not categorized stuff
+
+- The design of the survey matters
+  - Some questions about future inflation have few bins, so inflation may seen to be anchored
+  - In general, surveys are sector-specific and not so representative
+- In some cases, firms react better to industry-specific ("idiosyncratic") inflation than general inflation level
+
+** Critics
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+Using surveys of firms around the world, we review existing evidence on how firms form their macroeconomic expectations. Several facts stand out. First, the mean inflation forecasts of firms often deviate significantly from those of professional forecasters and households. Second, disagreement about inflation among firms is large. Third, firms often change their short-run and long-run inflation expectations jointly and by similar amounts. Fourth, firms in economies with a history of low and stable inflation are inattentive to inflation and monetary policy, but this is less true in countries with more volatile environments. Fifth, firms form expectations about inflation and the real economy jointly, but the way in which they do can differ widely across countries. Finally, we show that conditioning on firms’ inflation expectations generates a stable Phillips curve relationship. We also review evidence showing that exogenous variation in the macroeconomic expectations of firms affects their decisions.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+[[denote:20250204T172907][Empirical]]
+
+[[denote:20250202T121158][Expectations]]
+
+[[denote:20240708T175224][Expectations Formation and Behaviour Macroeconomics]]
+
+[[denote:20250202T113854][Inatention Models]]
+
+[[denote:20250203T172959][Dot-Com Crisis]]
+
+[[denote:20250203T184210][Survey Data]]
+
+
+
+
+* References
+
+
+
+#+print_bibliography:

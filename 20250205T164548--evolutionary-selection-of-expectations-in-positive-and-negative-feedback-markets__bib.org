@@ -1,0 +1,102 @@
+#+OPTIONS: num:nil ^:{} toc:nil
+#+title:      Evolutionary Selection of Expectations in Positive and Negative Feedback Markets
+#+date:       [2025-02-05 qua 16:45]
+#+filetags:   :bib:
+#+identifier: 20250205T164548
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+#+reference:  anufriev_2013_Evolutionary
+
+
+
+* FISH-5SS
+
+|-----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <40>                                          | <50>                                                                                                                                                                                                                                                                                                             |
+| *Entry*                                       | *Description*                                                                                                                                                                                                                                                                                                    |
+|-----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| *Background*                                  | [[denote:20250202T120908][Heterogenous Agents]] literature report that deviations from the [[denote:20250203T173614][Fundamentals]] (rejecting the [[denote:20240708T113039][Rational Expectations]] hypothesis and moving toward the [[denote:20250202T115256][Boundedly Rational]] models) are persistent and ledding to [[denote:20250202T114928][Asset bubble]].                                                                                 |
+| *Supporting Ideas*                            |                                                                                                                                                                                                                                                                                                                  |
+| *Purpose*                                     | Provide a *single* model that can deal with both positive and negative feedback markets.                                                                                                                                                                                                                         |
+| *Originality/value (Contribution)*            | This paper propose an general framework in order to have [[denote:20250202T121139][Feedback mechanisms]] reported in the [[denote:20250202T122308][Experimental Finance]] literature. This approach had been used recently by ABM, such as [cite/t:@dosi_2020_RATIONAL;@russo_2021_Harrodian].                                                                       |
+| *Relevance*                                   | For [[denote:20250202T120807][Innovation bubble ABM]], this paper provide an modeling approach to specify firms [[denote:20250202T121158][Expectations]]. One of the advantages of this proposal is that the modeler only needs to specify three parameters ($\eta, \beta, \delta$)                                                                                   |
+| *Design/methodology/approach*                 | This paper simulate a [[denote:20250203T184226][Switching Mechanisms]] in which [[denote:20250203T180559][Learning and Heuristics]] strategies changing over time considering its performance. This is a smaller version of [cite/t:@anufriev_2012_Evolutionarya].                                                                                                       |
+| *Results*                                     | In negative feedback markets, adaptive rule performs better and expectations converts quickly to the fundamentals; in positive feedback market, trending-following provide better results. In general, the proposed method fit with the laboratory experiments and performs better them a single heuristic only. |
+| *(Interesting) Findings*                      | Negative feedback is usually related to supply-driven markets; while positive feedbacks are related to [[denote:20250202T115838][Speculation]].                                                                                                                                                                                              |
+| *Research limitations/implications (Critics)* | One possible critic (somewhat reported by the authors) is that agents learn individually, not socially since the bet against "the" market.                                                                                                                                                                       |
+| *Uncategorized stuff*                         | The authors argue that a "valid" heuristic must be simple and accessible (intuitive to use) to the agent.                                                                                                                                                                                                        |
+| *5SS*                                         | This paper provide a general framework which report both positive and negative feedback markets. In summary, agents use a simple heuristic rule and change it accordingly to its performance. This approach fit the laboratory data very well, is robust and only needs to specify three parameters.             |
+|-----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+An economic environment is a feedback system, where the dynamics of aggregate variables depend on individual expectations and vice versa. The type of feedback mechanism is crucial for the aggregate outcome. Experiments with human subjects (Heemeijer et~al., J Econ Dyn Control 33:1052–1072, 2009) have shown that price converges to the fundamental level in a negative feedback environment but fails to do so under positive feedback. We present an explanation of these experimental results by means of a model of evolutionary switching between heuristics. Active heuristics are chosen endogenously, on the basis of their past performance. Under negative feedback an adaptive heuristic dominates explaining fast price convergence, whereas under positive feedback a trend-following heuristic dominates resulting in persistent price deviations and oscillations.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+
+
+** First-order heuristics
+
+In this simple version of [cite/t:@anufriev_2012_Evolutionarya], the authors propose two types of [[denote:20250203T180559][Learning and Heuristics]]:
+#+BEGIN_latex
+\begin{equation}
+\tag{adaptative}
+x^{e}_{t+1} = \omega x_{t} + (1-\omega)x_{t}^{e}
+\end{equation}
+#+END_latex
+#+BEGIN_latex
+\begin{equation}
+\tag{Trending}
+x^{e}_{t+1} = x_{t} + \gamma (x_{t} - x_{t-1})
+\end{equation}
+#+END_latex
+in which $x$ is the variable of interest (asset price, in this case); $\omega$ and $\gamma$ are weight parameters.
+
+
+** Heuristic switching model
+
+Each heuristic ($h$) is evaluated regarding its past performance ($U$):
+#+BEGIN_latex
+\begin{equation}
+U_{h,t} = -(x_{t} - x^{e}_{h,t})^{2} + \eta U_{h,t-1}
+\end{equation}
+#+END_latex
+in which $\eta$ is a persistency parameter.
+
+The share of heuristic ($n_{h}$) changes according to:
+#+BEGIN_latex
+\begin{equation}
+n_{h,t+1} = \delta n_{t} + (1-\delta)\frac{\exp(\beta U_{h})}{\sum_{h=1}^{H}\exp{\beta U_{h,t}}}
+\end{equation}
+#+END_latex
+in which $\delta$ is a memory parameter while $\beta$ is a intensity parameter. Accordingly to the authors (p. 674):
+#+begin_quote
+Positive values of $\delta$ capture the tendency of people to stick to their previously chosen rule despite the evidence that an alternative rule performs better. Such inertia is widely reported in experiments (Kahneman 2003) [...]
+If $\beta=0$ agents will not consider the differences in the performance of the heuristics at all; all heuristics will be given equal impacts.
+#+end_quote
+
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+[[denote:20250205T164522][Journal of Evolutionary Economics]]
+
+[[denote:20250202T115203][Behavioral Finance]]
+
+[[denote:20250202T122209][evolutionary_selection]]
+
+[[denote:20250202T122308][Experimental Finance]]
+
+[[denote:20250203T180644][Learn to Forecast Experiments]]
+
+** Related literature
+
+* References
+
+#+print_bibliography:

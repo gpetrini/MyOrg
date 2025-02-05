@@ -1,0 +1,89 @@
+#+OPTIONS: num:nil ^:{} toc:nil
+#+title:      Can Firms See into the Future? Survey Evidence from Germany
+#+date:       [2025-02-05 qua 16:07]
+#+filetags:   :bib:
+#+identifier: 20250205T160736
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+#+reference:  massenot_2018_Can
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+
+** Background and motivation
+
+
+** Supporting Ideas and hypothesis
+
+- [[denote:20250202T113854][Inatention Models]] and costly information update literature
+  - Forecast errors are costly because it affects firm's profits and inventories
+
+** Purpose and Contribution
+
+- This paper aim to investigate the determinants of firms [[denote:20250202T121158][Expectations]] and the role of [[denote:20250202T115151][Behavioral extrapolation]].
+
+** Relevance
+
+Considering the [[denote:20250202T120807][Innovation bubble ABM]] chapter, this paper can provide empirical evidence about how firms forms expectations.
+This paper also address the issue of [[denote:20250203T182443][Overinvestment]] and [[denote:20250202T120344][Optmism bias]] regarding firms profits.
+It is important to note that most literature focus on financial markets.
+
+This paper also highlight the potential amplification effect of [[denote:20250202T121158][Expectations]] on [[denote:20240708T155635][Business Cycles]]
+
+** Methodology
+
+- [[denote:20250203T184210][Survey Data]] of [[denote:20250205T161019][Germany]] firms of the manufacturing sector regarding its future business condition
+- Estimate a forecast error considering the expected - realized values. If it is positive, firms have [[denote:20250202T120344][Optmism bias]];
+- Analyze over-extrapolation in [[denote:20240708T155635][Business Cycles]] peak and troughs in more detail
+- Sample: Germany reunification period to access if firms' investment can antecipate reversals
+
+
+** Results
+
+- Expected and Realized variable move together
+- Expectation errors are positively correlated with past experience. Thus, firms have a [[denote:20250202T115151][Behavioral extrapolation]]
+  - Expectation lags business realization for about six months
+- Firms extrapolate more negative values than positive ones
+- Firms are optimistic before the downturn and pessimistic before the recovery
+- Firms expected that sales and prices move in the same direction; thus, they forecast demand shocks more often than supply shocks
+- More than seven centuries (!) to remove [[denote:20250202T115151][Behavioral extrapolation]]  bias
+- After a business improvement, firms become more optmistic and this result hold for both individual and aggregate shocks
+
+** Interesting findings and not categorized stuff
+
+
+** Critics
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+This paper presents new evidence on the expectation formation process of firms from a survey of the German manufacturing sector. First, firms become too optimistic after their business has improved, consistent with the over-extrapolation of their experience. Second, firms extrapolate improvements in their business more than deteriorations. Third, firms are more optimistic (pessimistic) than usual during business cycle peaks (troughs), suggesting that they do not anticipate reversals. Fourth, the German reunification provided a positive exogenous shock to the business of West German products. The industries most positively affected by the shock initially over-extrapolated the past downward trend just as much as the less affected industries, and thus failed to anticipate the reversal. Fifth, more overoptimistic firms subsequently report larger inventories and lower profits, suggesting that expectation errors entail (opportunity) costs. Sixth, older and larger firms show a smaller extrapolation bias, indicating that time and resources can alleviate the extrapolation bias. Seventh, firms that expect their business to improve tend to also expect their prices to increase, suggesting that firms mostly try to forecast demand shocks as opposed to supply shocks. Overall, these observations suggest that firms have a limited ability to anticipate changes in their activity and extrapolate their experience too much. © 2017 Elsevier B.V.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+
+* Additional Backlinks
+
+[[denote:20250205T160641][Journal of Economic Behavior & Organization]]
+
+[[denote:20250203T182443][Overinvestment]]
+
+[[denote:20250202T121158][Expectations]]
+
+[[denote:20250203T180559][Learning and Heuristics]]
+
+[[denote:20250205T161019][Germany]]
+
+* References
+
+
+
+#+print_bibliography:

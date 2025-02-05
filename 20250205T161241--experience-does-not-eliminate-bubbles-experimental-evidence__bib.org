@@ -1,0 +1,91 @@
+#+OPTIONS: num:nil ^:{} toc:nil
+#+title:      Experience Does Not Eliminate Bubbles: Experimental Evidence
+#+date:       [2025-02-05 qua 16:12]
+#+filetags:   :bib:
+#+identifier: 20250205T161241
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+reference:  kopanyi-peuker_2021_Experience
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+
+** Background and motivation
+
+
+** Supporting Ideas and hypothesis
+
+- According to the literature, it is expected that [[denote:20250202T114928][Asset bubble]] vanish with repeating trades/investor's experience
+- Higher cash-to-asset ratio induce more [[denote:20250202T114928][Asset bubble]]s
+
+** Purpose and Contribution
+
+- To evaluate if [[denote:20250202T114928][Asset bubble]]s disappear with participant's experience
+
+** Relevance
+
+Considering the [[denote:20250202T120807][Innovation bubble ABM]] chapter, this paper could provide empirical relevance to what would explain [[denote:20250202T114928][Asset bubble]] vanish.
+
+** Methodology
+
+- Follow [[denote:20250203T180644][Learn to Forecast Experiments]] design with three treatments related to investor's information (no information, some information and, full information) regarding the following structure:
+  - Call Market :: In the market with trade, investors know the [[denote:20250203T173614][Fundamentals]] at the end of the experiment
+  - LtF :: In the experiment following repeating [[denote:20250203T180644][Learn to Forecast Experiments]], participants have enough information to estimate the [[denote:20250203T173614][Fundamentals]] themselves
+  - Lower cash-to-asset ratio :: Call market experience with lower cash-to-asset ratio
+- Identical repeating markets
+  - Literature usually design different markets for long periods
+
+** Results
+
+- [[denote:20250202T114928][Asset bubble]] persists despite the investor's experience
+- Price does not converge to [[denote:20250203T173614][Fundamentals]] in the no-information treatment in both experiments
+- [[denote:20250203T180644][Learn to Forecast Experiments]] have a more bubble-shapped like pattern compared to Call Market design
+- Results may be related to cash-to-asset ratio
+- More accurate pricing in the lower cash-to-asset ratio treatment
+- LtF experiment can be explained using a level-k reasoning model
+- [[denote:20250202T114928][Asset bubble]] disapper with experience is less robust that is was previously expected
+
+** Interesting findings and not categorized stuff
+
+In a [[denote:20250202T120119][Regulation]] concerned perspective, if [[denote:20250202T114928][Asset bubble]] disappear when investor become more experienced, there is no need for monitor asset prices in markets with less experienced investors. New ones need more assistance
+
+** Critics
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+We study the role of investor experience in the formation of asset price bubbles. We conduct a call market experiment in which participants trade assets with each other and a learning-to-forecast experiment in which participants only forecast future prices (while trade based on these forecasts is computerized). Each experiment comprises three treatments varying the information that participants receive about the fundamental value. Each experimental market is repeated three times. Throughout, we observe sizable bubbles that persist despite participant experience. Our findings in the call market experiment contrast with those in the literature. Our findings in the learning-to-forecast experiment are novel.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+[[denote:20250202T121158][Expectations]]
+
+[[denote:20250202T122308][Experimental Finance]]
+
+[[denote:20250205T161816][The Review of Financial Studies]]
+
+[[denote:20250203T180559][Learning and Heuristics]]
+
+[[denote:20250203T180644][Learn to Forecast Experiments]]
+
+[[denote:20250202T114928][Asset bubble]]
+
+
+
+
+* References
+
+
+
+#+print_bibliography:

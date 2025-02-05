@@ -1,0 +1,130 @@
+#+OPTIONS: num:nil ^:{} toc:nil
+#+title:      Usefull Bubbles
+#+date:       [2025-02-05 qua 17:51]
+#+filetags:   :bib:
+#+identifier: 20250205T175125
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+#+reference:  eatwell_2004_Usefull
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+[cite/t:@eatwell_2004_Usefull] argue that [[denote:20250202T114928][Asset bubble]] may produce some positive outcomes that would not occur otherwise.
+In summary, [[denote:20250203T173330][Financial Innovation]] and [[denote:20250203T184320][Technological revolution]] feed Asset bubbles which produce outcomes that would be irrational at the individual level.
+The individual irrational behavior produces aggregate improvement.
+Besides the negative impacts, new technologies persist.
+
+** Background and motivation
+
+This paper connects some Asset bubbles episodes such as the [[denote:20250202T112254][Tulip Mania]] [[denote:20250203T184017][South Sea Bubble]], [[denote:20250203T183511][Railroad Mania]], [[denote:20250203T180122][Japanese real estate boom]] and [[denote:20250203T172959][Dot-Com Crisis]].
+
+** Supporting Ideas and hypothesis
+
+- This paper implicitly assumes that bubbles can start only if finance is allocated to them (similar to [cite/t:@perez_2009_Double])
+- Asset bubble are result of financial [[denote:20250202T115838][Speculation]]. The real aspects of those episodes are not so relevant
+- The author base his reasoning in [cite/t:@keynes_1936_General] in which the financial market can be described as a beauty contest
+- In order to an Asset bubble start, investors must have [[denote:20211215T182520][Heterogeneous Expectations]]. Otherwise, no transaction would occur
+- Heterogeneous expectations are also important to provide liquiidty to the financial market
+- It is assumed that Financial Innovations are motivated by overcome the financial liquidity, feeding the bubble
+  - The author consider that Financial Innovation also generates the bubble in the first place
+  - It is assumed that financial assets are relativelly fixed in supply
+- This paper seems to implicitly assume that Asset bubbles induce [[denote:20250202T121656][coordination]] among investors towards decision in projects that would not be profitable in normal times but generates positive outcome
+
+** Purpose
+
+- Argue that Asset bubbles can have positive outcome besides the negative effects on economic performance
+
+** Contribution
+
+- Indicates that Asset bubbles may induce an irrational behavior (at the individual level) that would not occur otherwise
+- This paper indicates some key aspects of the emergence of Asset bubble
+
+** Relevance
+
+For [[denote:20250202T120807][Innovation bubble ABM]] chapter, this paper helps to gather some information regarding the Dot-Com crisis.
+Additionally, relates Asset bubble with Technological revolution.
+
+
+** Methodology
+
+Review of historical events and causal narratives.
+
+** Results
+
+*** How beliefs affects asset prices
+
+- The price of a financial asset depends onf its expected future price
+- Those financial assets have relativelly fixed supply
+  - After the supply accommodating the demand, the bubble may deflate
+- Investors consider that the bubble will go on forever or they will have the knowledge to get out in time
+
+*** How can financial markets be stable
+
+
+- There are mechanism that reinforce agents heterogeneity, providing liquidity
+- Policy-markers regulates financial markets at some point
+- Market may be stable by convention
+
+*** Incentive to financial innovation
+
+- Liquidity constraints induce financial innovation
+- Those innovations mobilise finance to new technologies and/or new investors
+- Financial innovation and asset bubble may have a two-directional feedback
+
+*** Individual irrationality and aggregate transforming technologies
+
+- After the bubble burst, the economy had suffured a technological transformations that would not occur otherwise. This transformation was possible due to finance availability.
+  - Canals
+  - Railways
+  - Automobiles roads
+  - Internet
+  - Thus, this can alleviate social inefficiencies
+
+Individual irrationalities:
+- Irrational scale :: The scale of investment required in the new technologies is way above rational individual investment level
+- Public goods problem :: New technologies require the creating of a system which is impossible to achieve individually expecting the exclusive use of them
+  - Thus, it is simular to a public good
+- Myopic return :: Asset bubble make investors invest in companies which profits are positive after a long period of time because it is expected to higher profits in the future. Additionally, asset bubble induce investors to invest in companies that would never be profitable (and some may not be) or survive
+
+
+To sum up, [cite/t:@eatwell_2004_Usefull p. 46]:
+#+begin_quote
+The mania suppresses the fear of the scale of change and of the uncertainty of the future, it overcomes the isolation of the individual investor, and provides funds on a scale necessary to transform the economic infrastructure of society.
+#+end_quote
+
+
+** Interesting findings and not categorized stuff
+
+- The author points out that some of the positive effects of an asset bubble may (and are) achieved bu the State
+
+** Critics
+
+- Financial Innovation seems to be a necessary condition in order to start an Asset bubble
+  - However, the author argue that Financial Innovation can be also a consequence of an Asset bubble
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+This paper reproduces a lecture given by Joan Robinson to the British Council at the end of the Second World War. This lecture has not previously been published. The introduction sets it in historical perspective and outlines its significance. This is an important document representing, as it does, the thoughts of a prominent member of Keynes's circle (in Cambridge) at the time.
+#+END_ABSTRACT
+
+
+
+* Backlinks
+
+
+[[denote:20250203T173330][Financial Innovation]]
+
+[[denote:20250205T175101][Contributions to Political Economy]]
+
+[[denote:20250202T114928][Asset bubble]]
+
+
+* References
+
+#+print_bibliography:

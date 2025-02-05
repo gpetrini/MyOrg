@@ -1,0 +1,4 @@
+#+title:      Technology Adoption
+#+date:       [2025-02-05 qua 16:38]
+#+filetags:   :placeholder:
+#+identifier: 20250205T163812

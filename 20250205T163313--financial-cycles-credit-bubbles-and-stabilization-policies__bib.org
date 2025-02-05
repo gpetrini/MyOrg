@@ -1,0 +1,66 @@
+#+title:      Financial cycles, credit bubbles and stabilization policies
+#+date:       [2025-02-05 qua 16:33]
+#+filetags:   :bib:
+#+identifier: 20250205T163313
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+#+OPTIONS: num:nil ^:{} toc:nil
+#+reference:  corrado_2019_Financial
+
+* Internal :noexport:
+
+*Reading status:* Partial
+
+
+* FISH-5SS
+
+|---------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <40>                                        | <50>                                                                                                                                                                                                                                                                                                                                                                                               |
+| *Field*                                       | *Note*                                                                                                                                                                                                                                                                                                                                                                                               |
+| *Background*                                  | Nominal rigidities, financial frictions and spillover effects amplifies the effects of financial bubbles. Additionally, financial crisis seems to have permanent consequences comparing to regular crisis [cite:@reinhart_2011_Financial;@brunnermeier_2012_Bubbles].                                                                                                                              |
+| *Supporting Ideas*                            | Procyclicality of banking credit is relevant for [[denote:20250203T173222][Financial Cycles]] and policy making [cite:@adrian_2010_Liquidity;@borio_2012_Financial]. This is why there are so many studies that integrates business cycle and asset bubblues.                                                                                                                                                                  |
+| *Purpose*                                     | Build a model with financial bubble (supply-side; bank-related) and evaluate different [[denote:20250203T181204][Macroprudential Policies]] and compare different [[denote:20250203T173349][Financial Regulation]] alternatives.                                                                                                                                                                                                                         |
+| *Originality/value (Contribution)*            | This model provide an analytical framework in which asset bubble is endogenously generated.                                                                                                                                                                                                                                                                                                        |
+| *Relevance*                                   | For PhD dissertation, this manuscript provides some overview of mainstream analysis regarding asset bubbles.                                                                                                                                                                                                                                                                                       |
+| *Design/methodology/approach*                 | General equilibrium model in which [[denote:20250203T173330][Financial Innovation]] triggers the bubble while [[denote:20250202T115151][Behavioral extrapolation]] propagates it. Financial bubble is a supply-side phenomenon in which frictions in the banking sector allows bubble incorporation.                                                                                                                                                      |
+| *Results*                                     | Endogenous capital requirement performs better in order to mitigates asset bubbles effects rather than "leaning against the wind"                                                                                                                                                                                                                                                                  |
+| *Research limitations/implications (Critics)* | Only focus on financial [[denote:20250202T114928][Asset bubble]], since this is not a general-purpose paper, this is a minor critic.                                                                                                                                                                                                                                                                                           |
+| *Uncategorized stuff*                         | Credit-to-GDP gap provides the elements to build [[denote:20250202T121719][countercyclical_capital_buffers]] indexes. Borrowing constraints are other type of nominal rigidity [cite:@martin_2012_Economic]. Other potential mechanism for bubble generating is leaning dynamics [cite:@branch_2011_Learning,lansing_2010_Rational] and heterogeneous expectations [cite:@scheinkman_2003_Overconfidence;@xiong_2013_Bubbles]. |
+| *5SS*                                         | The authors build a general equilibrium model to evaluate the performance (in terms of wellfare) of different macroprudential policy and concludes that endogenous capital requirement is the best alternative. Financial bubbles are generated by financial innovation.                                                                                                                           |
+|---------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+This paper analyzes the eﬀects of several policy instruments for mitigating ﬁnancial bubbles generated in the banking sector.
+We augment a New Keynesian macroeconomic framework by endogenizing boundedly-rational expectations on asset values of loan portfolios, allow for interbank trading and show how a credit bubble can develop from a ﬁnancial innovation.
+We then evaluate the eﬃcacy of several policy instruments in counteracting ﬁnancial bubbles.
+We ﬁnd that an endogenous capital requirement reduces the impact of a ﬁnancial bubble signiﬁcantly while central bank intervention (“leaning against the wind”) proves to be less eﬀective.
+A welfare analysis ranks the policy reaction through an endogenous capital requirement highest.
+We therefore provide a rationale for the use of countercyclical capital buﬀers.
+#+END_ABSTRACT
+
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+
+[[denote:20250202T120251][Policy Oriented]]
+
+[[denote:20250203T173133][Financial Crises]]
+
+[[denote:20250203T181204][Macroprudential Policies]]
+
+[[denote:20250203T173222][Financial Cycles]]
+
+[[denote:20250204T192924][European Central Bank]]
+
+[[denote:20250205T104529][Mainstream Models]]
+
+* References
+#+print_bibliography:

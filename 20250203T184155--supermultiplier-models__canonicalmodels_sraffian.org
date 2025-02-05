@@ -1,9 +1,11 @@
 #+title:      Supermultiplier Models
 #+date:       [2025-02-03 seg 18:41]
-#+filetags:   :canonicalmodels:sraffian:
+#+filetags:   :placeholder:
 #+identifier: 20250203T184155
 #+OPTIONS: num:nil ^:{} toc:nil
 
 [[denote:20250202T115827][Sraffian Theory]]
 
 [[denote:20240707T182500][Demand-led growth models]]
+
+[[denote:20250202T115328][Canonical Models]]

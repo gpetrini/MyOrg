@@ -1,0 +1,11 @@
+#+title:      Monetary Theory of Distribution
+#+date:       [2025-02-03 seg 18:17]
+#+filetags:   :placeholder:
+#+identifier: 20250203T181707
+#+OPTIONS: num:nil ^:{} toc:nil
+
+[[denote:20250202T115827][Sraffian Theory]]
+
+[[denote:20250202T113822][Income Distribution]]
+
+[[denote:20230216T235213][Exogenous Interest Rate]]

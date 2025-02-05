@@ -1,0 +1,77 @@
+#+OPTIONS: num:nil ^:{} toc:nil
+#+title:      Belief Distortions and Macroeconomic Fluctuations
+#+date:       [2025-02-05 qua 16:57]
+#+filetags:   :bib:
+#+identifier: 20250205T165726
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+#+reference:  bianchi_2022_Belief
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+
+** Background and motivation
+
+
+** Supporting Ideas and hypothesis
+
+
+** Purpose, Relevance, and Contribution
+
+Regarding [[denote:20250202T120807][Innovation bubble ABM]] chapter, this paper was select to map stylized facts regarding macroeconomic fluctuations and expectations.
+However, this paper is out of the scope of the Dissertation.
+So only abstract, backlinks and highlights will be included.
+
+** Methodology
+
+
+** Results
+
+
+** Interesting findings and not categorized stuff
+
+
+** Critics
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+This paper combines a data-rich environment with a machine learning algorithm to provide new estimates of time-varying systematic expectational errors (belief distortions) embedded in survey responses. We find sizable distortions even for professional forecasters, with all respondent-types overweighting the implicit judgmental component of their forecasts relative to what can be learned from publicly available information. Forecasts of inflation and GDP growth oscillate between optimism and pessimism by large margins, with belief distortions evolving dynamically in response to cyclical shocks. The results suggest that artificial intelligence algorithms can be productively deployed to correct errors in human judgment and improve predictive accuracy.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+[[denote:20250205T163840][American Economic Review]]
+
+[[denote:20240708T155635][Business Cycles]]
+
+[[denote:20240708T175224][Expectations Formation and Behaviour Macroeconomics]]
+
+[[denote:20250202T121158][Expectations]]
+
+[[denote:20250203T180559][Learning and Heuristics]]
+
+[[denote:20240708T155703][Stylized Facts]]
+
+[[denote:20250203T181113][Machine Learning]]
+
+[[denote:20250202T115214][Behavior Bias]]
+
+[[denote:20250203T184210][Survey Data]]
+
+* References
+
+
+
+#+print_bibliography:

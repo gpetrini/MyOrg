@@ -1,0 +1,13 @@
+#+title: Workers’ Debt-Financed Consumption: A Supermultiplier Stock–Flow Consistent Model
+#+date:       [2025-02-05 qua 15:25]
+#+filetags:   :bib:
+#+identifier: 20250205T152555
+#+reference:  mandarino_2020_Workers
+
+* Backlinks
+
+[[denote:20250203T184155][Supermultiplier Models]]
+
+[[denote:20250203T184028][Stock-Flow Consistent]]
+
+[[denote:20230216T235150][Household debt and Bank credit]]

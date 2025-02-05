@@ -1,0 +1,67 @@
+#+OPTIONS: num:nil ^:{} toc:nil
+#+title:      Diagnostic Expectations and Credit Cycles
+#+date:       [2025-02-05 qua 12:51]
+#+filetags:   :bib:
+#+identifier: 20250205T125136
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+
+* Backlinks
+
+[[denote:20250205T125134][Journal of Finance]]
+
+[[denote:20250202T121916][diagnostic_expectations]]
+
+[[denote:20250203T173222][Financial Cycles]]
+
+[[denote:20250204T172907][Empirical]]
+
+[[denote:20250203T184226][Switching Mechanisms]]
+
+[[denote:20250202T121158][Expectations]]
+
+* FISH-5SS
+
+
+** 5SS
+
+
+** Background and motivation
+
+
+** Supporting Ideas and hypothesis
+
+
+** Purpose, Relevance, and Contribution
+
+
+** Methodology
+
+
+** Results
+
+
+** Interesting findings and not categorized stuff
+
+
+** Critics
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+We present a model of credit cycles arising from diagnostic expectations—a belief formation mechanism based on Kahneman and Tversky’s representativeness heuristic. Diagnostic expectations overweight future outcomes that become more likely in light of incoming data. The expectations formation rule is forward looking and depends on the underlying stochastic process, and thus is immune to the Lucas critique. Diagnostic expectations reconcile extrapolation and neglect of risk in a unified framework. In our model, credit spreads are excessively volatile, overreact to news, and are subject to predictable reversals. These dynamics can account for several features of credit cycles and macroeconomic volatility.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+* References
+
+
+
+#+print_bibliography:

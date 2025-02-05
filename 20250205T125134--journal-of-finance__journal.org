@@ -1,0 +1,4 @@
+#+title:      Journal of Finance
+#+date:       [2025-02-05 qua 12:51]
+#+filetags:   :journal:
+#+identifier: 20250205T125134

@@ -1,0 +1,196 @@
+#+title:      Frontiers in Growth Regimes Research: Theoretical Perspectives and Country Cases (2022)
+#+date:       [2025-02-05 qua 15:32]
+#+filetags:   :conferences:
+#+identifier: 20250205T153237
+#+subtitle: 2022
+#+HUGO_AUTO_SET_LASTMOD: t
+
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil
+
+* Backlinks
+
+[[denote:20250205T153226][IPE Workshop]]
+
+* [#D] "Growth regimes", "accumulation regimes", "modes of regulation" and "growth models". A critical review of some notions commonly found in various contributions to political economy - Bruno Amable (University of Geneva)
+
+* [#B] Varieties of growth regimes – a review of post-Keynesian perspectives - Eckhard Hein (Berlin School of Economics & Law, IPE)
+
+** Introduction
+
+- Clarify the different uses of demand and growth regimes in PKE
+  - Facilitate communication
+  - Main growth determinants in a [[denote:20240707T182500][Demand-led growth models]]
+  - Response of the equilibrium solution of a macroeconomic mode towards a change in model parameters of exogenous variables
+  - Empirical-historical analysis of the development paths of an economy over time and in comparison, including the co-existence of regimes
+- Long tradition in the research of demand and growth regimes in PKE is not only macro but also contains some political economy dimension
+
+** Demand-led growth regimes in post-Keynesian distribution and growth models
+
+
+| Pressupostions                       | Core Claims             |
+|--------------------------------------+-------------------------|
+| Realism                              | Non-neutrality of money |
+| Satisficing agents                   |                         |
+| Holism and organicism                |                         |
+| Economic core: production and growth |                         |
+| Political core: regulated markets    |                         |
+
+The paper focus on Kalecki-Steindl and in the [[denote:20250203T184155][Supermultiplier Models]] branches
+
+*** Kalecki-Steindl models: investment-led growth and different distribution-led regimes
+
+
+- Long-run is driven by firms' investment
+- The ratio
+
+** Changes of demand and growth regimes over time: from the 'golden age'
+
+* [#A] Housing cycles and growth models - Karsten Kohler (University of Leeds), Engelbert Stockhammer, Benjamin Tippet (King’s College London)
+
+** Introduction
+
+- Increasing interest in housing markets
+- Debt-financed consumption of households commonly indentified as major source; not on housing
+  - Debt-driven growth
+  - [[denote:20250202T115203][Behavioral Finance]] and [[denote:20250203T181356][Minskian Growth Models]]: endogenous housing cycles as driver of business cycles
+  - CPE: Housing institutions differ across countries
+
+**** Contribution
+
+Integrate housing in growth model perspective
+
+- House-price driven growth model
+- Emphasize the cyclicality of house price
+
+** Literature discussion
+
+*** Growth model literature: Debt-driven
+
+Focus on debt-financed consumption, often theorised as emulative behaviour.
+There as shortcomings:
+- Ignore collateral for credit
+- Ignores residential investment as a volatile component of private demand
+- Endogenous cyclicality not fully theorised
+
+
+
+
+** Synthesis framework
+
+
+- House prices are key-drivers in financial-led growth model
+- House pricecs are cyclical: endogenous cycles due to speculative behaviour
+- The intensity of housing cycles depends on institutions
+
+** Evidence
+
+
+*Method:* Turning point analysis to measure duration, amplitude and slope (intensity) of bubbles
+
+** Questions
+
+Thank you for your presentation.
+I am personally interested in similar topics and I also believe that literature should give more space for housing-related variables in a macroeconomic perspective.
+In addition, I also think that there are some open-questions in the literature that your paper can help to clarify and my comments are just a suggestion for further research topics (and a possible handshake).
+In your presentation, you mentioned the relevance of collateral for credit.
+Other empirical papers emphasize how mortgage share on banks balance-sheet increased (mainly Jordà and others).
+My question is: Considering a political economy perspective, who (banks?) benefits from this house price volatility? Do you think that house price volatility can explain this financial-side long-run trend?
+Based on Ricardo Summa question, do you think that it is possible to have a coherent theoretical model to replicate this different stylized facts for cycle and trend?
+In summary, do you think that the evidence you showed and the SSM literature could be a good match?
+
+* [#A] FDI-led growth in Comparative Political Economy and post-Keynesian economics - Ryan Woodgate (Berlin School of Economics & Law, IPE)
+
+* [#B] Dependency revisited: Capital flows, commodities, and growth models in emerging economies - Michael Schedelik, Christian May, Andreas Nölke (Goethe University Frankfurt), Alexandre de Podestá Gomes (Jacobs University Bremen)
+
+
+*Contribution:* There is little attention to commodity prices/market in CPE growth model perspective. This topic allows a dialogue with development economics.
+- So far, focus on dependend [[denote:20240708T151322][Financialization]] (debt-led) growth
+
++---------+-----------------+--------------+-------------------+---------------------+----------------+--------------------+
+| Type    |        Consumption-led         |               Export-led                |           Investment-led            |
++---------+-----------------+--------------+-------------------+---------------------+----------------+--------------------+
+| Subtype |   Wage-based    |  Debt-based  | Commodities-based | Manufacturing based |   FDI-Based    | Domestically-based |
++         +-----------------+--------------+-------------------+---------------------+----------------+--------------------+
+|         |     Brazil      | South-Africa |      Brazil       |        Korea        |     Mexico     |       China        |
++---------+-----------------+--------------+-------------------+---------------------+----------------+--------------------+
+
+
+This paper focus on /commodity-based/ export-led growth.
+From the literature review, there two most famous mechanisms:
+- Prebisch-Singer thesis: Declining terms of trade of commodities /vis-a-vis/ manufactured goods
+  - Demand mechanism: Lower income elasticities of demand for commodities than those for manufactures
+  - Supply mechanism: abundance of low-skilled labor inhibits that technologocial progress translate into rising real wages
+- Dutch disease: Real appreciation of the currency due to capital inflows and commodity revenues
+  - Spending effect: increased domestica income and spending are higher than prices and output in nontradable sectors
+  - Resource movemente effect: capital and labor move into commodity sectors
+
+Direct and indirect effects on growth:
+- Direct effects:
+  - Rising and declining export earnings
+- Indirect effects:
+  - Procyclical public finances
+  - Attraction of capital inflows leads to a commodity finance nexus
+    - Commodity price boom $\Rightarrow$ External financial position $\Rightarrow$ Capital inflows $\Rightarrow$ Exchange rate appreciation $\Rightarrow$ Dutch disease $\Rightarrow$ Commodities price boom $\Rightarrow$ ...
+
+* [#A] Measuring growth models and strategies: Tracing evolution by visualization - Arie Krampf (Academic College of Tel Aviv Yaffo), Barak Zur (Tel Aviv University)
+
+
+*Contribution:* there are some problems of measuring contribution to growth index (RCG)
+- Weakness: Cannot be used for comparing different periods or different countries
+
+Example: Contribution of consumption: \(\frac{c}{y}\cdot \frac{C}{Y} = \frac{\Delta C}{\Delta Y}\)
+
+Problems:
+- Zero growth
+  - For very small growth rates, the RCG is distorted upwards
+- Spillovers
+  - The procedure assumes that there are no spillovers, and the CG of each demand component is channeled to GDP growth directly
+- Dynamism
+  - The calculation of periodic average loose information regarding the variation of GDP growth rate and of the demand components' contribution-to-growth
+
+Alternative: The contributuion-to-Growth curves (DRCG)
+
+\begin{equation}
+\left(c\frac{C}{Y}\right) = A + \underbrace{B}_{\text{spillover factor}}
+\end{equation}
+\[B = \left(c \frac{C}{Y}\right)_{y = 0}\]
+
+- Do not assumes proportionality
+- Captures the
+
+* [#A] A supermultiplier demand-led growth accounting analysis applied to the Spanish economy (1998-2019) - Hector Labat (Université Sorbonne Paris Nord, Federal University of Rio de Janeiro), Ricardo Summa (Federal University of Rio de Janeiro, IPE)
+
+
+** Introduction
+
+*Objective:* To apply the [[denote:20250203T184155][Supermultiplier Models]] accounting for the Spanish economy.
+
+** [[denote:20250203T184155][Supermultiplier Models]] theory and [[denote:20240707T182500][Demand-led growth models]] accounting
+
+
+Similar to [cite/t:@freitas_2013_Pattern] and includes consumption out of public transfers and out of public wages as sources of public autonomous demand
+
+** Results
+
+- In terms of general contribution to growth, from 1998-2019, the public sector (1.09%) is the main institutional net contributor to growth, followed by the external sector (0.82%) and the private sector.
+- Stability to growth to \(g_{Z}\) provieded by both the components of exports and consumption out of public wages
+- Downwards trend of the supermultiplier, which contributed negativelly to growth in the whole period
+  - Private wage share and weak bargaining power
+  - Upward trend of the propensity to import
+  - Investment share and growth
+
+** Discussion with the literature
+
+* [#A] Demand and growth regimes of the BRICs countries – an autonomous demand growth perspective - Juan Manuel Campana, João Embova Vaz (Berlin School of Economics & Law, University of Technology of Compiegne), Eckhard Hein, Benjamin Jungmann (Berlin School of Economics & Law, IPE)
+
+
+Based on [cite/t:@freitas_2013_Pattern; @girardi_2016_Longrun], the authors stablish a systematic link between the national income/financial accounting and the growth drivers/economic policy levels of analysis by means of applying an autonomous demand growth perspective on the issue.
+
+The systematic analysis of Z provides ground for political economy and economic policy analysis (Morlin et al 2022)
+
+* [#C] In search of a growth model for Italy: The failed attempt of an export-led recovery strategy? - Alessandro Bramucci (Berlin School of Economics & Law, IPE)
+
+* [#C] Shedding light on Argentina’s macroeconomic trap: socioeconomic and macroeconomic policy regimes - Juan Ianni (Berlin School of Economics & Law, University of Technology of Compiegne)
+
+* Demand, growth, and the macroeconomic policy regime: Canada’s transition from export-led to debt-led private demand growth - Theodore Klassen (Berlin School of Economics & Law, University of Technology of Compiegne)

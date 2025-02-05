@@ -1,0 +1,4 @@
+#+title:      Journal of Economic Dynamics and Control
+#+date:       [2025-02-05 qua 15:42]
+#+filetags:   :journal:
+#+identifier: 20250205T154234

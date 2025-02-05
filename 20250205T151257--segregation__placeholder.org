@@ -1,0 +1,4 @@
+#+title:      Segregation
+#+date:       [2025-02-05 qua 15:12]
+#+filetags:   :placeholder:
+#+identifier: 20250205T151257

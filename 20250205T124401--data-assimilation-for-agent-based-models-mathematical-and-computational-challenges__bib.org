@@ -1,0 +1,57 @@
+#+OPTIONS: num:nil ^:{} toc:nil
+#+title:      Data Assimilation for Agent-Based Models: Mathematical and Computational Challenges
+#+date:       [2025-02-05 qua 12:44]
+#+filetags:   :bib:
+#+identifier: 20250205T124401
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+#+reference:  ward2017
+
+
+[[denote:20240314T120430][data_assimilation]]
+
+
+* FISH-5SS
+
+** 5SS
+
+
+** Background and motivation
+
+
+** Supporting Ideas and hypothesis
+
+
+** Purpose, Relevance, and Contribution
+
+
+** Methodology
+
+
+** Results
+
+
+** Interesting findings and not categorized stuff
+
+
+** Critics
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+* References
+
+
+
+#+print_bibliography:

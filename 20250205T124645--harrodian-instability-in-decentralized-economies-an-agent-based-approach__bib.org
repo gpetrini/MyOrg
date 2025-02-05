@@ -1,0 +1,161 @@
+#+title:      Harrodian instability in decentralized economies: an agent-based approach
+#+date:       [2025-02-05 qua 12:46]
+#+filetags:   :bib:
+#+identifier: 20250205T124645
+#+reference:  russo2021
+
+* Backlinks
+
+[[denote:20250205T124715][Economia Politica]]
+
+[[denote:20250202T120941][Harrodian instability]]
+
+[[denote:20250202T114248][Agent Based Models]]
+
+[[denote:20250202T121158][Expectations]]
+
+[[denote:20250202T114051][Externalities]]
+
+[[denote:20250202T120807][Innovation bubble ABM]]
+
+[[denote:20250203T180559][Learning and Heuristics]]
+
+[[denote:20250202T120452][Macroeconomic Paradoxes]]
+
+[[denote:20240707T182500][Demand-led growth models]]
+
+* FISH-5SS
+
+|---------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <40>                                        | <50>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| *Background*                                  | Most models tame Harrodian instability using different investment functions.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| *Supporting Ideas*                            | Harrodian instability is considered a demand externality. So, the coordination failure generates unstable paths since capitalists cannot internalize demand externalities associated with the new investment. This model use a [[denote:20250203T182114][Neo Kaleckian Model]] investment function.                                                                                                                                                                                                                                                                                                                                                              |
+| *Simplifying hypothesis*                      | There is no technological progress. Since firm distribution is constant (as well as market-share), the author tests some distributional scenarios                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| *Purpose*                                     | Investigate the consequences for model properties when including expectational heterogeneity.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| *Originality/value (Contribution)*            | Harrodiaian instability is tamed by heterogeneous expectations, not using a different aggregate investment function. Additionally, this learning procedure may be more consistent with ABM approach.                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| *Relevance*                                   | This model provide an alternative to specify heterogeneity in ABM. For my dissertation, this could be a simple way to generate innovative bubbles. Since there is no technological progress in this model, [[denote:20250202T120807][Innovation bubble ABM]] could extend this contribution.                                                                                                                                                                                                                                                                                                                                                                               |
+| *Design/methodology/approach*                 | Agent based modeling with different expectational scenarios. Heterogeinity is introduced using idiosyncratic shocks. As a consequence of the modeling strategy, there is a *negative* feedback in the system that reduce the original positive feedback effect in Harrod model.                                                                                                                                                                                                                                                                                                                                                                       |
+| *Results*                                     | All scenarios are tested assuming a permanent wage increase departing from steady-state (effective capacity utilization equals to the desired one). (I) In the case with *homogeneous expectations*, Harrodian instability emerges and capacity utilization increases permanently. (II) After include *heterogeneous expectations*, endogeneity of capacity utilization is preserved while there is no instability. Agents do not achieve desired capacity utilization neither on average. (III) The author evaluate the presence of macroeconomic paradox by means of *between-simulations* comparisons. He reports both paradox of trifth and of costs. |
+| *(Interesting) Findings*                      | The mechanism for taming the instability is that optimistic ($g_{K} > g$) firms coexist with pessimist one ($g_{K} < g$). The author perform some econometric estimations in order to evaluate if there is a trend in capacity utilization rate and what are the instability ratio (number of periods that capacity utilization remained outside an specified corridor). He concludes that there is no trend and instability ratio is zero on average. Depending on expectational parameters, the model converges to the scenario with no hererogeinity.                                                                                            |
+| *Research limitations/implications (Critics)* | Firm distribution and market structure is constant, so it is needed to understand the consequences for technological progress (assumed zero). Since market structure is assumed away, there is no entry-exit mechanism. So, new entrants could trigger Harrodian instability again.                                                                                                                                                                                                                                                                                                                                                                 |
+| *Uncategorized stuff*                         | The author indicates in fn 13 that variable depreciation rate could generate biases in capacity utilization. Thus, he uses a flexible depreciation rate.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| *5SS*                                         | This model propose to tame Harrodian instability by including heterogeneous expectations, so the positive feedbacks that leads to a unstable path are ruled away. The mechanism for this result is the coexistence of both optmistic and pessimistic firms in which generates different forecasts and reduce the demand externality problem.                                                                                                                                                                                                                                                                                                        |
+|---------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+Harrodian instability emerges in post-Keynesian models because of the cumulative feedback between demand and investments.
+This paper presents a novel approach to deal with Harrodian instability.
+The main contribution is methodological and lies in the different theoretical mechanism adopted to avoid unstable dynamics.
+While the common approach relies on aggregative investment functions, we emphasize the role of heterogeneity in expectations as a stabilization device.
+We int oduce a small-scale agent-based version of the so-called neo-Kaleckian model.
+The model features a parsimonious microfoundation of investment decisions.
+Agents have heterogeneous expectations about demand growth and set their investment expenditures in a decentralized way.
+Interactions occur through demand externalities.
+We present results for different scenarios.
+First, when heterogeneity is ruled out, Harrodian instability is shown to emerge as for the aggregate model.
+Instead, when heterogeneity is accounted for, a stable dynamics with endogenous fluctuations arises.
+At the same time, in this second scenario, all the Keynesian implications are preserved, including the presence of macroeconomic paradoxes.
+Sensitivity analysis confirms the general robustness of our results and the logical consistency of the model.
+#+END_ABSTRACT
+
+
+* Annotations (zotero) :noexport:
+
+"about demand growth and set their investment exs" (Russo 2021:1)
+
+"rates to a dynamic frame-t work in which investments have a capacity-creating effect. d shock, will increase (or decrease) their investment rates in order to adjust their capital stock to the new level of demand. However, as investments are a key component of aggregated demand, this will further amplify the initial shock, driving the economy away from the equilibrium." (Russo 2021:2)
+
+Harrodian instability (note on p.2)
+"sumed to modify their expectations about future des." (Russo 2021:2)
+
+"heterogeneous agents. These features are directly related toa the problem of H-I. on failure when firms use adaptive expectations to forecast future demand growth. In particular, H-I originates from entrepreneurs inability to internalize demand externalities associated with new investments" (Russo 2021:3)
+
+"some interesting patterns. As a first exercise, we simulate our economy removing e N-K model, i.e. H-I emerges when firms are allowed to adapt their expectations." (Russo 2021:3)
+
+"ndogeneityof utilization rates and the presence of the paradoxes of thrift and costs. tions are still linked to the evolution of demand, thus, avoiding the possibility of systematic forecasting mistakes" (Russo 2021:3)
+
+"ition underlying these results is rather simple: exist with pessimistic ones" (Russo 2021:3)
+
+"Hence, the endogeneity of U arises from a permanent collective failure to anticipate demand evolution. Entrepreneurs have to keep their forecasts fixed notwithstanding their sales steadily grow at a different rate. It seems more realistic instead to assume that, in the medium run, firms try to revise expectations adaptively. This implies a fourth differential equation" (Russo 2021:6)
+
+"Notice that the endogeneity of U is now lost since, at the equilibrium, utilization of capacity must be at the desired level. Furthermore, such new equilibrium is not stable anymore." (Russo 2021:6)
+
+"and demand growth bring about ever-rising (everdecreasing) levels of utilization. ectations lead to aggregate instability. This is a typical coordination failure (Cooper and John 1988)." (Russo 2021:6)
+
+"e model presented tative firm" (Russo 2021:7)
+
+", stability is restored as well as all the implications found in the canoni-g cal model. economic rationale (Palumbo and Trezzini 2003; Shaikh 2009; Skott 2012). In fact, it implies a sort of unrealistic satisficing behaviour: firms will respond passively to situations with excess of (shortage of) capacity." (Russo 2021:7)
+
+"of monetary policy (Duménil and Lévy 1999), the retenti" (Russo 2021:8)
+
+Sacanagem citar eles e não o Serrano como referência para gastos autônomos. (note on p.8)
+"poses strong requirements in termse of information and coordination among firms. ecessary for entrepreneurs to act as a "body", undertaking investment decisions in a cooperative fashion." (Russo 2021:8)
+
+Good way to stablish the paper motivation. (note on p.8)
+"We then study how such idiosyncratic shocks in the adaptive rule adopted by agents. del may affect its stability properties." (Russo 2021:9)
+
+"cient and the capital-to-output ratio are exogenous and homogeneous across firms. ) which drives differentials among agents in investments, capital stock and utilization rates." (Russo 2021:9)
+
+"ils that capital depreciation is endogenous and determined by demand condi-n tions. F acquire or scrap the desired amount of capital stock without constraints.13 This implies the following law of motion for capital:" (Russo 2021:10)
+
+"ge,t=ge,t−1+ (gi,t−1−ge,t−1)+i,t" (Russo 2021:10)
+
+Since this is a white noise, this implies that autonomous expenditures growth rate is, on average, zero? So investment is, unintentionally, fully induced? (note on p.10)
+"is stationary, the effect of shocks is te." (Russo 2021:11)
+
+Exactly, so the model is driven by some autonomous expenditure. If investment still have an autonomous component, this will be zero on average. (note on p.11)
+"demand, f stands for the individual market share and v is maximum capacity output. tions about competition and market selection mechanisms. Instead, we want to keep our model as simple as possible and therefore market shares are assumed to be constant and exogenous. In other words, simulations are performed imposing an invariant distribution of firm size.18 Nonetheless, we allow for three different specifications for the distribution of f:" (Russo 2021:12)
+
+"pendix for details). We let the economy grow in equilibrium for 10 steps ae" (Russo 2021:13)
+
+"the average utilization is significantly different from un general picture given so far: ys positive. Moreover, consistently with the "granular hypothesis" (Gabaix 2011), volatility appears to be positively related to the skewness of the firm size distribution. When market shares are Pareto-distributed, fluctuations are stronger than respectively in the Lognormal and in the baseline case" (Russo 2021:15)
+
+"ons, U almost never approaches either full-capacity or unreal-s istically low values. is not possible to reject the unit root hypothesis for U. The dynamics of U is thus path-dependent, being triggered by the accumulation of random shocks. Nevertheless, the presence of stochastic trends never leads to explosive patterns, as suggested by both T and the instability ratio." (Russo 2021:15)
+
+This is the case because expactation equation is a random walk, isn't it? (note on p.15)
+"In the previous sections two important results have been shown. Instability arises when agents are identical while it vanishes when micro-heterogeneity is introduced." (Russo 2021:16)
+
+Actually, instability vanishes because it is an "ssm" model in which the adjustment parameter is fixed with a random walk. Is this the case for a cointegrated system? gi and u are I(0)? Or ge and g are I(0)? (note on p.16)
+"Agents interact via the macroeconomic level since their decisions determine the formation of aggregate demand.2" (Russo 2021:17)
+
+The interaction mechanism, in this case, is indirect. Additionally, since the absence of HI is expectational dependent, this imply the necessity of non-rational expectations. And that is why the necessity of the psicological references. (note on p.17)
+"ation rates tend to be dispersed around the target level during the simulation. s not operate anymore as a destabilizing force, since adjustments in different directions occur contemporaneously." (Russo 2021:18)
+
+This is not the destabilizing component. (note on p.18)
+"stabilizing force, since adjustments in different directions occur contemporaneously. pacity and under-utilization brings about investment responses that are neither perfectly correlated nor uni-directional. It introduces a negative feedback in the system which breaks the self-reinforcing process underlying H-I" (Russo 2021:18)
+
+Summary of the argument: u > un and u note on p.18)
+"Carlo statistics (cf. Table 3) using firm-level data on utilization corroborate this idea. absolute deviation from un are positive and significant. The mean value of pooled observations for u is different from the target level, suggesting that agents do not achieve the target not even on average.2" (Russo 2021:18)
+
+In reality this is the case as well, however, this is a theoretical point. The main consequence is that agents try to adjust its capacity. If the acheive in a whole new story. (note on p.18)
+"For a sample size of N×T , we present the instability ratio in the fourth column. elow the threshold values. The ratio is larger than the one computed using macro data (cf. Table 2)." (Russo 2021:19)
+
+So... there is still instability (note on p.19)
+"osing capacity constraints is not by itself suf-s ficient to avoid Harrodian instability. may well converge to stochastic equilibria persistently close to full (or zero) capacity utilization." (Russo 2021:19)
+
+"arlo statistics for g and g are described in Table 4 to make more robust inference. estingly, demand expectations (third column) are not significantly different, on average, from this value and the mean prediction error (fourth column) tends to be relatively small. Such results are not surprising since, as already discussed, ge is modeled as an AR(1) process which includes g as time-drift." (Russo 2021:19)
+
+"conomict paradoxes should be studied by means of between-simulations comparisons. n of U under a 2% permanent shock (either on w or cp at t=10 ), vis-Ã -vis a counterfactual scenario in which everything has remained unaltered." (Russo 2021:20)
+
+"he parameter, space the slope of the trend is positive and the instability ratio is high. inks relatively to the adaptive one, the model converges to the case with homogeneous expectations described in Sect. 4.1" (Russo 2021:22)
+
+"n a decentralized world character- (Gigerenzer and Todd 1999; Dosi et al. 2003). Idual behaviours close to rationality may lead to undesired consequences at the aggregate level. Instead, as in our case, naive agents whose decisions are largely driven by random forces, may act as stabilizers." (Russo 2021:23)
+
+* Specific notes
+
+** Heterogeneous expectational rules (p. 10--11)
+
+#+BEGIN_latex
+\begin{equation}
+g^{e} = g^{e}_{-1} + \theta\cdot (g_{-1} - g^{e}_{-1}) + \varepsilon \,\, \varepsilon \sim N(0, \sigma)
+\end{equation}
+#+END_latex
+
+Considering this general equation, we have the following scenarios:
+- Identical firms with time-invariant expectations :: $\theta=0;\sigma=0$
+- Identical firms with adaptative learning :: $\theta \in (0,1);\sigma=0$
+- Heterogeneous firms with adaptive stochastic expectations :: $\theta \in (0,1);\sigma>0$. As a consequence, $g^{e}$ will fluctuate around a time-drift given by the evolution of $g$.
+- Heterogeneous firms with random walk expectations :: $\theta=0;\sigma>0$

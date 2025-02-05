@@ -1,0 +1,4 @@
+#+title:      Research and Development
+#+date:       [2025-02-05 qua 16:55]
+#+filetags:   :placeholder:
+#+identifier: 20250205T165524

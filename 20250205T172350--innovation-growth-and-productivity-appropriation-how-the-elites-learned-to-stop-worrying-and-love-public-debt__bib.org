@@ -1,0 +1,79 @@
+#+OPTIONS: num:nil ^:{} toc:nil
+#+title:      Innovation, Growth, and Productivity Appropriation. How the Elites Learned to Stop Worrying and Love Public Debt
+#+date:       [2025-02-05 qua 17:23]
+#+filetags:   :bib:
+#+identifier: 20250205T172350
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+#+reference:  didomenico_2022_Innovation
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+
+** Background and motivation
+
+
+** Supporting Ideas and hypothesis
+
+
+** Purpose, Relevance, and Contribution
+
+Regarding the [[denote:20250202T120807][Innovation bubble ABM]] chapter, this paper seems to be a good start to dialog with similar [[denote:20250202T114248][Agent Based Models]].
+However, this paper seems to be at early stages.
+Some hypothesis are unclear and need more discussion.
+For example, the different scenarios need a better explanation.
+The [[denote:20250203T184155][Supermultiplier Models]] investment function is not explicitly presented.
+For this reason, this paper will be read in a future version.
+
+** Methodology
+
+
+** Results
+
+
+** Interesting findings and not categorized stuff
+
+
+** Critics
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+In this study, we propose the exploration of the characteristics of the Sraffian- Supermultiplier model where technological change and autonomous demand, coming from the public sector, determine the macroeconomic dynamics. The growth rate of the economy is determined by the productivity growth path that frees up labor to be employed in the production of alternative goods, and the public sector that, if not willing to accept high unemployment, has to increase its expenditure and generate the necessary demand for achieving spread (macroeconomic) growth. Because of the dependency of technological change on the sales level (due to the possibilities this offers in terms of labor division) at the macro and meso dimension, in contrast to the majority of the Supermultiplier models, the long-run growth rate of our artificial economy is also affected by the income distribution (both functional and personal) which affects the level of the total demand and shapes its composition across sectors. For the purpose of our research, we develop a multi-sectoral macroeconomic Agent based - Stock Flow consistent model (AB-SFC). The model is grounded on a theoretical framework representing a monetary economy of production (e.g. Graziani, Lavoie) where the principle of effective demand determines the level of output, while innovation is characterized by a typical Schumpeterian process of creation and destruction. The functional income distribution is determined as in classical theory and results from the struggle between capitalists and workers. The markup fixed by companies over normal unit-cost of production determines the normal rate of profit. Money is endogenous and is injected into the system when banks grant loans to companies to finance investments or wages anticipation and Government expenditure is financed by issuing public bonds. We study the impact the yearly performances have on the long-run path of the economy. After showing that the process innovation represents a necessary but not sufficient element for economic growth (and also a possible source of economic instability) which requires a public state with a hands-on approach (that increases its debt every time an increase in productivity occurs and stabilizes the economy) to achieve macroeconomic growth, we study how different productivity gain appropriations (and therefore different distribution configuration) affect the future trend of productivity (and therefore the long-run growth rate of the economy) through changes in the level of aggregate volumes and their allocation between sectors.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+:PROPERTIES:
+:NOTER_DOCUMENT: /HDD/PDFs/di_domenico_russo_2022_innovation.pdf
+:NOTER_PAGE: 4
+:END:
+
+* Additional Backlinks
+
+[[denote:20250202T120807][Innovation bubble ABM]]
+
+[[denote:20250202T113822][Income Distribution]]
+
+[[denote:20250203T184155][Supermultiplier Models]]
+
+[[denote:20250203T184028][Stock-Flow Consistent]]
+
+[[denote:20250202T120941][Harrodian instability]]
+
+[[denote:20250202T114248][Agent Based Models]]
+
+[[denote:20250202T120740][Innovation-led growth models]]
+
+
+* References
+
+#+print_bibliography:

@@ -1,0 +1,79 @@
+#+OPTIONS: num:nil ^:{} toc:nil
+#+title:      Consumer Debt and Financial Fragility
+#+date:       [2025-02-05 qua 18:05]
+#+filetags:   :bib:
+#+identifier: 20250205T180534
+#+reference:  guttmann_2010_Consumer
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+
+** Background and motivation
+
+
+** Supporting Ideas and hypothesis
+
+
+** Purpose
+
+
+** Contribution
+
+
+** Relevance
+
+
+** Methodology
+
+
+** Results
+
+
+** Interesting findings and not categorized stuff
+
+
+** Critics
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+This article sheds light on a crucial aspect of the global crisis of 2007\textendash 2009: the steady increase of US consumer debt to precipitous levels over a quarter of century. That trend, fed by a combination of macro-economic, demographic, and political factors, intensified greatly in the 2000s when a series of financial innovations allowed American households to draw equity out of their homes while at the same time feeding an unprecedented housing boom. Those same new mechanisms of `structured' and `synthetic' finance mobilized a significant and steadily growing proportion of global savings and directed them into this super-bubble as the world's surplus countries came to fund America's debt-financed excess spending for perpetual reproduction of their surpluses. Anachronistic policy preferences among both surplus countries and the US prevented the proper functioning of various adjustment mechanisms before the inevitable financial-fragility dynamic took hold to burst the bubble and throw the global economy into a steep downturn. The persistence of these global imbalances bodes ill for the medium-term stability of the world economy and its recovery potential.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+[cite/t:@guttmann_2016_FinanceLed] shows how financial innovations were crucial for the housing boom of the 1990s' and how they intensify the "finance-led" aspect of the US economy.
+Institutional changes other than those presented in footnote XX (/e.g./ Depository Institutions Deregulation and Monetary Control Act of 1980, Depository Institutions Act of 1982) were crucial for boosting the housing finance.
+These banking deregulation acts, among other consequences, allowed "non-traditional" mortgages such as home-equity loans so homeowners can have access to more credit as their house equity increases.
+There were, for sure, other important financial innovations that explain the dynamics of the housing market (such as securitization).
+However, this topic is out of scope of this paper.
+For further details, see [cite/t:@guttmann_2016_FinanceLed].
+
+We leave the connection between houses-own rate of interest and financil innovation for future research.
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+[[denote:20230216T235150][Household debt and Bank credit]]
+
+[[denote:20250204T193057][Securitization]]
+
+[[denote:20250204T173452][United States]]
+
+[[denote:20250203T173133][Financial Crises]]
+
+[[denote:20250205T180416][International Review of Applied Economics]]
+
+* References
+
+
+
+#+print_bibliography:

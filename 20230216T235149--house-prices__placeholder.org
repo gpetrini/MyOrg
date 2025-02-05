@@ -1,8 +1,3 @@
-:PROPERTIES:
-:ID:       0ea24981-6248-456e-9d8c-72348b08feeb
-:mtime:    20211202152738 20211104144232
-:ctime:    20210210091758
-:END:
 #+title:      House Prices
 #+date:       [2023-02-16 qui 23:51]
 #+filetags:   :placeholder:

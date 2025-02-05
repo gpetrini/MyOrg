@@ -1,0 +1,6 @@
+#+title:      IPE Workshop
+#+date:       [2025-02-05 qua 15:32]
+#+filetags:   :conferences:
+#+identifier: 20250205T153226
+
+[[denote:20230216T235216][Conferences and Workshops]]

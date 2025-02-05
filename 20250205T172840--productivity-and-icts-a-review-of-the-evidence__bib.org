@@ -1,0 +1,69 @@
+#+OPTIONS: num:nil ^:{} toc:nil
+#+title:      Productivity and ICTs: A Review of the Evidence
+#+date:       [2025-02-05 qua 17:28]
+#+filetags:   :bib:
+#+identifier: 20250205T172840
+#+hugo_base_dir: ~/BrainDump/
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+#+reference:  draca_2009_Productivity
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+
+** Background and motivation
+
+
+** Supporting Ideas and hypothesis
+
+
+** Purpose, Relevance, and Contribution
+
+For the [[denote:20250202T120807][Innovation bubble ABM]] chapter, the idea for selecting this chapter is to gather some [[denote:20240708T155703][Stylized Facts]] regarding the [[denote:20250203T175927][Information, Technology, Communication]] sector and its relation with [[denote:20250202T120625][Investment determination]].
+
+** Methodology
+
+
+** Results
+
+
+** Interesting findings and not categorized stuff
+
+
+** Critics
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+Abstract. This article offers a guided tour to some of the main aspects of ICTs and productivity.
+It discusses a neoclassical theoretical framework that has bee
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+[[denote:20250202T120232][Productivity Paradox]]
+
+[[denote:20250203T172959][Dot-Com Crisis]]
+
+[[denote:20250203T175927][Information, Technology, Communication]]
+
+[[denote:20240708T155703][Stylized Facts]]
+
+[[denote:20250202T120026][Review of Literature]]
+
+* References
+
+
+
+#+print_bibliography:

@@ -1,0 +1,62 @@
+#+OPTIONS: num:nil ^:{} toc:nil
+#+title:      Firm Optimism and Pessimism
+#+date:       [2025-02-05 qua 15:51]
+#+filetags:   :bib:
+#+identifier: 20250205T155125
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+reference:  bachmann_2015_Firma
+
+
+
+* FISH-5SS
+
+|---------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <40>                                        | <50>                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| *Entry*                                       | *Description*                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+|---------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| *Background*                                  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| *Supporting Ideas*                            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| *Purpose*                                     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| *Originality/value (Contribution)*            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| *Relevance*                                   | For the policy evaluating, this paper provide some discussion in which pessimism/optmism could lead to factors missalocation (over/under employment).                                                                                                                                                                                                                                                                                                                             |
+| *Design/methodology/approach*                 | West German manufacturing firms using [[denote:20250203T184210][Survey Data]] from 1980 to 2010 from longidutinal consistency. They evaluate the impacts of [[denote:20250202T115214][Behavior Bias]] using a neoclassical [[denote:20250202T114511][Welfare]] framework. They classify optmistic/pessimistic firms if they have forecast errors statistically (at 5% level) different from zero. Expectational errors are measured as changes of capacity utilization. In order to subset the analyzed firms, the provide some prerequisite before including a firm. |
+| *Results*                                     | Larger and exporting firms tend to have more realistic [[denote:20250202T121158][Expectations]] while leveraged firms tend to be more optimistic. Thus, the authors report a positive correlation between leverage and tendency to optmism.                                                                                                                                                                                                                                                                  |
+| *(Interesting) Findings*                      | It is interesting to point out that the authors consider that potential output level may be less uncertain than actual product. This is reasonable since firms does not know its future demand, but have a better guest for its installed capital stock.                                                                                                                                                                                                                          |
+| *Research limitations/implications (Critics)* | In order to measure expectation errors (in terms of capacity utilization changes), they assume that potential output will remain unchanged. This assumption may be reasonable in the short-run only and maybe different accross sectors.                                                                                                                                                                                                                                          |
+| *Uncategorized stuff*                         | The utilized survey is voluntary, thus participants does not have an incentive to send signals to investors.                                                                                                                                                                                                                                                                                                                                                                      |
+| *5SS*                                         | The authors investigate whether firms present [[denote:20250202T115214][Behavior Bias]] by analyzing West German firms. They report a positive correlation between leverage and optimism while larger and exporter firms tend to be more realistic.                                                                                                                                                                                                                                                      |
+|---------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+This paper explores the question of whether firms have systematic expectation biases. Using microdata from the West German manufacturing subset of the IFO Business Climate Survey, we infer quarterly production growth rates at the firm level. We then combine this information with production growth expectations over a quarterly horizon to construct quantitative firm-specific expectation errors. Our findings show that at most one-third of our firms systematically over- or underpredict their production growth one-quarter ahead. Our findings further show that larger and exporting firms tend to have more realistic expectations, while firms with higher leverage are more prone to expectations that are biased towards optimism.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+** Prerequisites to include a firm :ATTACH:
+
+
+[[attachment:_20211209_154828screenshot.png]]
+
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+[[denote:20250202T115214][Behavior Bias]]
+
+[[denote:20250202T121158][Expectations]]
+
+[[denote:20250203T184210][Survey Data]]
+
+[[denote:20250202T120344][Optmism bias]]
+
+[[denote:20250205T155218][European Economic Review]]
+
+* References
+
+#+print_bibliography:

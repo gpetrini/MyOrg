@@ -1,0 +1,69 @@
+#+title:      Tangible and Intangible Investments and Sales Growth of US Firms
+#+date:       [2025-02-05 qua 15:59]
+#+filetags:   :bib:
+#+identifier: 20250205T155926
+#+options: num:nil ^:{} toc:nil
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+#+reference:  rabinovichTangibleIntangibleInvestments2023
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+
+** Background and motivation
+
+
+** Supporting Ideas and hypothesis
+
+
+** Purpose, Relevance, and Contribution
+
+
+** Methodology
+
+
+** Results
+
+
+** Interesting findings and not categorized stuff
+
+
+** Critics
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+This article presents new insights into the evolving relation among different types of investments and the growth in sales of US nonfinancial listed firms during the 1979–2018 period. By means of quantile regressions, it is observed an increasing relevance over time of intangible investments vis-à-vis a stable or declining contribution of capital expenditure for all types of firms. However, the impact of different types of intangible investment differs depending on the kind of firm. Whereas advertising has a growing relevance on all types of firms except the top decile in growth distribution, the positive effects of research and development become increasingly concentrated in high-growth firms.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero) :ATTACH:
+:PROPERTIES:
+:ID:       b8cc5933-8553-450e-a152-d1317d708b68
+:END:
+
+* Additional Backlinks
+
+[[denote:20240708T155703][Stylized Facts]]
+
+[[denote:20250205T155832][Quantile Regression]]
+
+[[denote:20250205T155855][Firm-level]]
+
+[[denote:20250204T173452][United States]]
+
+[[denote:20250204T193239][Structural Change and Economic Dynamics]]
+
+* References
+
+
+
+#+print_bibliography:

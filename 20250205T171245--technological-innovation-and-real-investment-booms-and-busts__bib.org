@@ -1,0 +1,60 @@
+#+title:      Technological innovation and real investment booms and busts
+#+date:       [2025-02-05 qua 17:12]
+#+filetags:   :bib:
+#+identifier: 20250205T171245
+#+reference:  demarzo_2007_Technological
+#+OPTIONS: num:nil ^:{} toc:nil
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+
+
+* Internal :noexport:
+
+*Reading status:* Partial
+
+* FISH-5SS
+
+|-----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---|
+| <40>                                          | <50>                                                                                                                                                                                                                                                                                                      |   |
+| *Background*                                  | [[denote:20250203T172959][Dot-Com Crisis]] and investment burst in the aftermatch. Similar episodes are the [[denote:20250203T181422][Mississippi Scheme]] and the [[denote:20250203T184017][South Sea Bubble]] which are both types of Technological revolution.                                                                                                                       |   |
+| *Supporting Ideas*                            | In those episodes, inverstors seems to ignore the risks involved in the [[denote:20250203T184320][Technological revolution]].
+| *Purpose*                                     | Investigate why some technologies attract [[denote:20250202T115037][Autonomous Investment bubble]]  even if it is not profitable (during long periods).                                                                                                                                                                               |   |
+| *Originality/value (Contribution)*            | Propose an [[denote:20250202T120107][Relative Wealth Effect]] to endogenize bubble-like pattern in risky investments.                                                                                                                                                                                                                |   |
+| *Relevance*                                   | This is a theoretical model for Autonomous Investment bubble in a not only financial manner.                                                                                                                                                                                                              |   |
+| *Design/methodology/approach*                 | Rational [[denote:20250202T121100][General Equilibrium Model]] in which agents marginal utility of income *decreases* with wealth of the others. As the authors put (p. 750): "the fear of being left behind makes agents act more like their neighbors."                                                                        |   |
+| *Results*                                     | [[denote:20250203T182443][Overinvestment]] is a result of Relative Wealth Effect (Keeping up with Joneses-like ) like utility function). Overinvestment increases with technology risk. Once inverstors expect to compete for scarce resources, wealth concerns arise *endogenously*. Risk-averse inverstors fear to be "priced-out". |   |
+| *(Interesting) Findings*                      | The authors highlight that those kind of Technological revolution will generate Overinvestment once it have *correlated investment opportunities*                                                                                                                                                         |   |
+| *Research limitations/implications (Critics)* | Rely on the ideia of constant potential output (indirect). That why the competition for scarce inputs takes place. Additionally, it is supposed that consumption goods prices increases with inverstors wealth, which triggers the relative wealth effect.                                                |   |
+| *Uncategorized stuff*                         |                                                                                                                                                                                                                                                                                                           |   |
+| *5SS*                                         | The authors purpose a model in which risky investment persistits --- even if not profitable --- due to relative wealth concerns endogenously generated. The riskier the technology, the greater is the fear of been left behind.                                                                          |   |
+|-----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---|
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+We investigate why new, high-risk technologies can attract excessive and often unproﬁtable investment. We develop an equilibrium model in which rational, risk-averse agents overinvest in a risky technology, possibly to the point that its expected return is negative. Overinvestment results from relative wealth concerns which arise endogenously from the imperfect tradability of future endowments. Competition over future consumption leads to an indirect utility for wealth with ‘‘keeping up with the Joneses’’ properties that can induce herding. Because overinvestment increases with the risk of the technology, our model can explain why new, risky technological innovations may promote investment bubbles.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+
+
+* Annotations (zotero)
+
+
+
+
+* Additional Backlinks
+
+- This is an example of what [cite/t:@scherbina_2013_Asset] called "non-standard preferences" to generate asset bubbles ([[denote:20250205T151619][Asset Price Bubbles: a Selective Survey]])
+- [[denote:20250202T120740][Innovation-led growth models]]
+- [[denote:20250205T171409][Journal of Financial Economics]]
+- [[denote:20250203T180226][Keeping up with Joneses]]
+- [[denote:20250205T104529][Mainstream Models]]
+
+* References
+
+
+#+print_bibliography:

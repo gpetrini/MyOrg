@@ -1,0 +1,4 @@
+#+title:      Bank of Japan
+#+date:       [2025-02-05 qua 17:33]
+#+filetags:   :institutions:
+#+identifier: 20250205T173352

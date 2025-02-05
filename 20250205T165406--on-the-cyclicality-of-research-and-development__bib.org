@@ -1,0 +1,63 @@
+#+OPTIONS: num:nil ^:{} toc:nil
+#+title:      On the Cyclicality of Research and Development
+#+date:       [2025-02-05 qua 16:54]
+#+filetags:   :bib:
+#+identifier: 20250205T165406
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+#+reference:  barlevy_2007_Cyclicality
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+
+** Background
+
+** Supporting ideas
+
+** Purpose
+
+
+** Contribution
+
+** Relevance
+
+
+*For reading:* This paper mais have some clarificatins regarding why firms persists investing in R&D during booms
+
+** Method
+
+** Results
+
+** Interesting finding and not categorized stuff
+
+** Research limitations
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+Economists have recently argued recessions play a useful role in fostering growth. Yet a major source of growth, R\&D, is procyclical. This paper argues one reason for procyclical R\&D is a dynamic externality inherent in R\&D that makes entrepreneurs short-sighted and concentrate their innovation in booms, even when it is optimal to concentrate it in recessions. Additional forces may imply that procyclical R\&D is desirable, but equilibrium R\&D is likely to be too procyclical, and macroeconomic shocks are likely to have overly persistent effects on output and make growth more costly than in the absence of such shocks.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+[[denote:20250205T163840][American Economic Review]]
+
+[[denote:20240708T155635][Business Cycles]]
+
+[[denote:20250204T172907][Empirical]]
+
+[[denote:20250205T165524][Research and Development]]
+
+* References
+
+#+print_bibliography:

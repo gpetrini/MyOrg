@@ -1,0 +1,78 @@
+#+title:      Asset Price Bubbles: a Selective Survey
+#+date:       [2025-02-05 qua 15:16]
+#+filetags:   :bib:
+#+identifier: 20250205T151619
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+#+OPTIONS: num:nil ^:{} toc:nil
+#+reference:  scherbina_2013_Asset
+
+* FISH-5SS
+
+|---------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <40>                                        | <50>                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| *Field*                                       | *Notes*                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| *Background*                                  | [[denote:20250202T114928][Asset bubble]]s are a frequent phenomenon and experiments reflect it.                                                                                                                                                                                                                                                                                                                                                                                    |
+| *Supporting Ideas*                            | [[denote:20250202T114928][Asset bubble]] is defining as the deviation of an asset price to its fundamentals.                                                                                                                                                                                                                                                                                                                                                                        |
+| *Purpose*                                     | This paper provide a review of the mainstream literature on asset bubbles.                                                                                                                                                                                                                                                                                                                                                                              |
+| *Originality/value (Contribution)*            | Provide the main common and contracting elements across modelling generations.                                                                                                                                                                                                                                                                                                                                                                          |
+| *Relevance*                                   | Categorize some models in classes so it is easy to understand the mainstream frontier. For the PhD dissertation, the first class of behavior models seems to be more interesting.                                                                                                                                                                                                                                                                       |
+| *Design/methodology/approach*                 | Review of literature (theoretical and empirical).                                                                                                                                                                                                                                                                                                                                                                                                       |
+| *Results*                                     | Early models depart from rational expectations hypothesis; while recent models abandon this assumption (at least one group of non-rational agents). New rational models, focus on incentives, market frictions ([[id:3a5819f8-f58c-4776-9adb-4932513c55c5][Nominal rigidities]]) and, non-standard preferences. Usually, asset bubbles are followed by volume trade increase (as well as turnover). Some authors ([cite:@delong_1990_Positive]) report that arbitrage does not stabilize the market. |
+| *(Interesting) Findings*                      | Recent models provide more information about bubbles (why it start, for how long why last and the consequences of arbitrage) rather than the mere existance of bubbles. For rational models, the common knowledge and asset lifetime are relevant for the model conclusion. If the required discount rate is greater than economy's growth rate, the bubble cannot persist.                                                                             |
+| *Research limitations/implications (Critics)* | As pointed out by the author, early rational models were not able to generate asset bubbles endogenously.                                                                                                                                                                                                                                                                                                                                               |
+| *Uncategorized stuff*                         | Some authors build a model in which the bubble is a function of the fundamentals alone ("intrinsic bubbles", early models). Have some references for the Dot-Com bubble.                                                                                                                                                                                                                                                                                |
+| *5SS*                                         | Recent "Rational" models show that the inclusion of rational expectations does not prevent bubbles to occur or burst. Experimental setting provide evidence for the absense of common knowledge of rationality (at least for a subset of agents) as a source of asset bubble arise.                                                                                                                                                                     |
+|---------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+Why do asset price bubbles continue to appear in various markets? This paper provides an overview of recent literature on bubbles, with significant attention given to behavioral models and rational models with frictions. Unlike the standard rational models, the new literature is able to model the common characteristics of historical bubble episodes and offer insights for how bubbles are initiated and sustained, the reasons they burst, and why arbitrage forces do not routinely step in to squash them. The latest U.S. real estate bubble is described in the context of this literature.
+#+END_ABSTRACT
+
+* Specific notes
+
+** Rational models
+
+- "One powerful conclusion is that when all agents are perfectly rational and all information is common knowledge, bubbles can exist for an infinitely-lived asset if the bubble’s rate of growth is equal to the discount rate." (p. 8)
+- "Diba and Grossman (1987) point out that in traditional rational models, which were discussed earlier, a bubble cannot be created but must already be present when the asset starts trading (again, consider the case of fiat money, where the intrinsic value of the asset is zero but it trades at a strictly positive price). In the behavioral models, a bubble may arise when prices overreact to a potentially informative signal about fundamentals." (p. 20)
+
+** Behavior models
+
+A common characteristic of these model class is the existance of at least one group with non-rational expectations:
+- Differences of opinion and short sale constraints :: This class of model assumes that agents have some kind of [[denote:20211215T182520][Heterogeneous Expectations]] diversity which together with [[id:4dd9747a-0849-49bc-99dc-f226c5605270][Short sales constraints]]. Since the agent (usually more pessimistic ones) is not able to sell the financial asset immediately, due to [[id:4dd9747a-0849-49bc-99dc-f226c5605270][Short sales constraints]], the asset price persists temporarily high. The bubble will deflate when this constraints cease or when expectations converge to a common value.
+  - Only generates positive asset inflation
+  - [[denote:20250203T183948][Short sales constraints]] could be included specifying a minimum trade period in which the agent must keep the financial asset before selling it.
+- Feedback trading :: This model class have a type of [[denote:20250202T115151][Behavioral extrapolation]] in which agents act as the future asset prices reflects only the previous values[fn::Empirical papers based on this focus on the role of media as an amplifying instrument. The most remarkable is Shiller (2002).]
+- Biased self-attribution :: This class model seems to have some kind of confirmation bias in which agent ignore noisy information if its enter in conflict with its privaet information
+- Representativeness heuristic :: Agents weight news differently. Attention-grabbing news have stronger effects than non-attention-grabbing ones.
+
+** Comparisons between Great Depression and Great Recession (p. 32)
+
+#+begin_quote
+As during the Roaring Twenties, the rise in housing prices was accompanied by a construction boom.
+Many new houses were built to supply the market with additional units of the overvalued asset, especially in the areas that experienced significant price increases.
+When the prices eventually began to fall, the unsold inventory of new housing was supplemented by the staggering number of foreclosures, exacerbating the fall in house prices.
+If the Great Depression is any indication, house prices are likely to remain low for a long time, until the housing demand finally catches up with the existing housing supply.
+#+end_quote
+
+
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+[[denote:20250202T121158][Expectations]]
+
+[[denote:20250202T122430][Financial Accelerator Model]]
+
+[[denote:20250203T184210][Survey Data]]
+
+[[denote:20250205T104529][Mainstream Models]]
+
+[[denote:20250204T190636][IMF]]
+
+* References :ignore:
+#+print_bibliography:
