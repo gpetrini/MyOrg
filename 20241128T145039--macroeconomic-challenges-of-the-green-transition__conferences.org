@@ -1,0 +1,19 @@
+#+title:      Macroeconomic challenges of the green transition
+#+subtitle: Univeristy of Pisa (Unipi)
+#+date:       [2024-11-28 qui 14:50]
+#+filetags:   :conferences:
+#+identifier: 20241128T145039
+
+[[denote:20230216T235216][Conferences and Workshops]]
+
+* Macroeconomic policies for rapid decarbonization, steady economic transition and employment creation (Lamperti)
+
+* Modelling the transition towads a green and fair economy (Arto)
+
+** Role of Integrated Assessment Models (IAM)
+
+** Overview of existing IAMs and their limitations
+
+** Macroeconomic and Financial Challenges in Developing countries' low-Carbon Transition: An IO-SFC modelling approach (Magacho)
+
+** Some thoughts on interindustry economic modelling (Bardazzi)

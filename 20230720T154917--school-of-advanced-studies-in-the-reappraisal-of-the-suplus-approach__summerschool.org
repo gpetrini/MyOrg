@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       b99f5b7c-1efd-4ca9-b229-89b02e18287c
-:END:
 #+options: num:nil ^:{} toc:nil
 #+title:      School of Advanced Studies in the Reappraisal of the Suplus Approach
 #+subtitle: Centro Sraffa Summer School
@@ -8,6 +5,8 @@
 #+date:       [2023-07-20 qui 15:49]
 #+identifier: 20230720T154917
 #+bibliography: ~/Org/zotero_refs.bib
+
+[[denote:20250206T151908][Summer Schools]]
 
 * Ciccone: The classical theoretical framework: the concept of surplus
 

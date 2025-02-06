@@ -1,0 +1,4 @@
+#+title:      Inequelity
+#+date:       [2025-02-06 qui 19:36]
+#+filetags:   :placeholder:
+#+identifier: 20250206T193631

@@ -1,9 +1,9 @@
-:PROPERTIES:
-:ID:       5db79e19-2b47-40e1-9b47-76b7d146732b
-:END:
 #+title:      Gibrat Law
 #+date:       [2025-02-02 dom 11:40]
 #+filetags:   :placeholder:
 #+identifier: 20250202T114015
 #+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
 #+OPTIONS: num:nil ^:{} toc:nil
+
+- [[denote:20240708T155703][Stylized Facts]]
+- [[denote:20250205T155855][Firm-level]]

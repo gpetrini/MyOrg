@@ -1,0 +1,7 @@
+#+title:      New Keynesian
+#+date:       [2025-02-06 qui 18:28]
+#+filetags:   :schoolofthought:
+#+identifier: 20250206T182828
+
+- [[denote:20250205T104529][Mainstream Models]]
+- [[denote:20250203T183803][Rigidity and Frictions]]

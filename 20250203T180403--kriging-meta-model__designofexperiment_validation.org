@@ -1,6 +1,0 @@
-#+title:      Kriging Meta Model
-#+date:       [2025-02-03 seg 18:04]
-#+filetags:   :designofexperiment:validation:
-#+identifier: 20250203T180403
-#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
-#+OPTIONS: num:nil ^:{} toc:nil

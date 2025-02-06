@@ -1,0 +1,9 @@
+#+title:      Quasi-replicator
+#+date:       [2025-02-03 seg 18:34]
+#+filetags:   :placeholder:
+#+identifier: 20250203T183408
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil
+
+- [[denote:20250202T114248][Agent Based Models]]
+- [[denote:20250206T191023][Market Competition]]

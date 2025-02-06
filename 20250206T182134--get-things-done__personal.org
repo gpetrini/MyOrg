@@ -1,0 +1,4 @@
+#+title:      Get Things Done
+#+date:       [2025-02-06 qui 18:21]
+#+filetags:   :personal:
+#+identifier: 20250206T182134

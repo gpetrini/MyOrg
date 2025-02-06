@@ -1,0 +1,38 @@
+#+title:      An Introduction to Applied Data Analysis with Qualitative Comparative Analysis
+#+date:       [2021-01-19 ter 00:00]
+#+filetags:   :bib:
+#+identifier: 20210119T000009
+#+reference:  legewie_2013_Introduction
+
+[[denote:20250206T192732][Hands-On]]
+
+* An Introduction to Applied Data Analysis with Qualitative Comparative Analysis
+  :PROPERTIES:
+  :Custom_ID: legewieIntroductionAppliedData2013
+  :END:
+
+** FISH-5SS
+
+
+|---------------------------------------------+--------------------------------------------------------------------------------------|
+| *Background*                                  |                                                                                      |
+| *Supporting Ideas*                            |                                                                                      |
+| *Purpose*                                     |                                                                                      |
+| *Originality/value (Contribution)*            |                                                                                      |
+| *Relevance*                                   |                                                                                      |
+| *Design/methodology/approach*                 |                                                                                      |
+| *Results*                                     |                                                                                      |
+| *(Interesting) Findings*                      |                                                                                      |
+| *Research limitations/implications (Critics)* |                                                                                      |
+| *Uncategorized stuff*                         | Includes some additional resources for QCA study and categorizes some contributions. |
+| *5SS*                                         |                                                                                      |
+|---------------------------------------------+--------------------------------------------------------------------------------------|
+
+** Backlinks
+
+[[denote:20230216T235151][Applied QCA]]
+
+[[denote:20230216T235152][QCA Data]]
+
+* Specifics comments
+

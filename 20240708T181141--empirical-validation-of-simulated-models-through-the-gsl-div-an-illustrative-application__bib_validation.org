@@ -1,5 +1,0 @@
-#+title: Empirical Validation of Simulated Models through the GSL-div: An Illustrative Application
-#+date:       [2024-07-08 seg 18:11]
-#+filetags:   :bib:validation:
-#+identifier: 20240708T181141
-#+reference:  Lamperti_2018_Empirical

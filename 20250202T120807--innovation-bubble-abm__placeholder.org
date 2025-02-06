@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       95265264-f61f-4cf5-8cdc-e590b2a47cb9
-:END:
 #+title:      Innovation bubble ABM
 #+date:       [2025-02-02 dom 12:08]
 #+filetags:   :placeholder:

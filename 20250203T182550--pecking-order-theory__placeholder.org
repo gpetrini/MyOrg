@@ -1,0 +1,12 @@
+#+title:      Pecking Order Theory
+#+date:       [2025-02-03 seg 18:25]
+#+filetags:   :placeholder:
+#+identifier: 20250203T182550
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil
+
+According to this theory, firm prioritize 1) internal funds; 2) debt; and 3) new equity
+
+[[denote:20250205T155855][Firm-level]]
+
+[[denote:20250202T121853][Definitions]]

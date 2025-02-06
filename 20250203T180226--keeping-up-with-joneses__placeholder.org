@@ -1,0 +1,11 @@
+#+title:      Keeping up with Joneses
+#+date:       [2025-02-03 seg 18:02]
+#+filetags:   :placeholder:
+#+identifier: 20250203T180226
+#+OPTIONS: num:nil ^:{} toc:nil
+
+[[denote:20250206T193631][Inequelity]]
+
+[[denote:20230216T235150][Household debt and Bank credit]]
+
+[[denote:20250206T193710][Consumption Function]]

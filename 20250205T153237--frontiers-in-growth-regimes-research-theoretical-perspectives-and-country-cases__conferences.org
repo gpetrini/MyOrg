@@ -10,7 +10,8 @@
 
 * Backlinks
 
-[[denote:20250205T153226][IPE Workshop]]
+- [[denote:20250205T153226][IPE Workshop]]
+- [[denote:20250202T120954][Growth Regime]]
 
 * [#D] "Growth regimes", "accumulation regimes", "modes of regulation" and "growth models". A critical review of some notions commonly found in various contributions to political economy - Bruno Amable (University of Geneva)
 

@@ -1,0 +1,4 @@
+#+title:      Open Economy
+#+date:       [2025-02-06 qui 18:17]
+#+filetags:   :placeholder:
+#+identifier: 20250206T181755

@@ -1,0 +1,10 @@
+#+title:      Economic Forecasting with an Agent-Based Model
+#+date:       [2024-07-15 seg 10:02]
+#+filetags:   :bib:
+#+identifier: 20240715T100237
+#+reference:  poledna_2023_economic
+
+- [[denote:20250202T114248][Agent Based Models]]
+- [[denote:20250204T144517][Forecast]]
+- [[denote:20250204T172907][Empirical]]
+- [[denote:20250202T121415][CATS ABM family]]

@@ -1,0 +1,68 @@
+#+title:      Industrial Policy in Times of Market Power
+#+date:       [2024-12-10 ter 13:01]
+#+filetags:   :seminar:
+#+identifier: 20241210T130143
+
+
+* 5SS
+
+* Background and motivation
+
+- Return of industrial policy (Specially after COVID-19)
+  - However, it does not takes place in vaccum: Increasing market-power
+    - Associate with higher mark-ups
+    - Knowledge diffusion and [[denote:20250202T120757][Innovation Diffusion]]
+  - Super-star firms
+  - What if industrial policy increases market power?
+  - What if market power restricts the effectiveness of industrial policy?
+- What policy mix can address both economic dynamism and not be constraint to market power?
+  - Reduction of dynamism: Declining firm entry, reduction of labor share, and increasing of markup
+
+* Supporting Ideas and hypothesis
+
+- Organization is the locus of Knowledge accumulation
+- Knowledge acts as a barrier to use new technologies
+
+* Purpose, Relevance, and Contribution
+
+- There is a knowledge gap since C-Firms do not have equal access to K-Goods technology
+  - Gap (\(G\)): Potential (notional) productivity (\(A\)) - accumulated knowledge (\(z\))
+    - \(G > 0\) Knowledge constraints (\(\gamma\))
+      - This parameter governs the actual productivity
+    - Otherwise, the actual productivity is equalto the potential one
+  - Firms also absorve knowledge externally
+
+* Methodology
+
+- [[denote:20250202T121415][CATS ABM family]] with Knowledge Gap
+- Contrasts a simulation without industrial policy and other with a variety of industrial policy
+  - Pure R&D subsidity (RS): affecting \(A\) and \(z\)
+  - Blended RS and Knowledge Diffusion: to affect \(\zeta\) and \(\gamma\)
+  - Adoption Policy (AP, restrict to policy budget):
+    - Basic: Capital replacement subsidy for small addopting firms
+    - Public research infrastructure
+    - Subsidies to innovators
+
+* Results
+
+- No-policy: Increasing mark-ups as a result of allocation effect due to a more biding Knowledge Constraint
+- RS: overall, modest effects
+  - On C-Firms
+    - Pure: no impact on Growth (discussed latter with cross-sectional analysis)
+      - Mechanism: used by firms to accumulate knowledge
+        - This could be a result of calibration because the Knowledge Gap is high
+        - Also, spill over effects might play a role
+        - Only large firms are affected
+    - Pro-imitation: boosts GDP growth and amplify market power
+    - Pro-adoption: drives growth and reduces market power
+  - On K-Firms:
+    - Pure: modest growth and no effect on market-power
+    - Pro-imitation: Increases market-power with growth boost (discussed latter with cross-sectional analysis)
+- Adoption Policy:
+  - BAP: no impact on growth, mild positive effect on market power
+  - KAP: no impact on growth, reverses the trend market power
+  - XX:
+
+* Interesting findings and not categorized stuff
+
+* Critics

@@ -1,0 +1,9 @@
+#+title:      Modigliani and Muller Theorem
+#+date:       [2025-02-03 seg 18:15]
+#+filetags:   :placeholder:
+#+identifier: 20250203T181543
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil
+
+[[denote:20250205T104529][Mainstream Models]]
+[[denote:20250206T193431][Theorems]]

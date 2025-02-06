@@ -1,5 +1,0 @@
-#+title:      Keeping up with Joneses
-#+date:       [2025-02-03 seg 18:02]
-#+filetags:   :consumption:householdedebt:inequality:
-#+identifier: 20250203T180226
-#+OPTIONS: num:nil ^:{} toc:nil

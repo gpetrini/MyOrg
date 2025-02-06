@@ -1,0 +1,6 @@
+#+title:      Climate Change
+#+date:       [2025-02-06 qui 19:39]
+#+filetags:   :placeholder:
+#+identifier: 20250206T193927
+
+[[denote:20250202T122013][Ecological Economics]]

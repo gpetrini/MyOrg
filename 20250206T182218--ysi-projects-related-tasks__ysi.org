@@ -1,0 +1,38 @@
+#+title:      Ysi projects related tasks
+#+date:       [2025-02-06 qui 18:22]
+#+filetags:   :ysi:
+#+identifier: 20250206T182218
+
+
+[[denote:20250206T182134][Get Things Done]]
+
+
+* TODO Reimburse organizers :@RIO:
+* TODO Create spreadsheet tab for reiumbursement :@RIO:
+* WAIT Submit the invoices to YSI :@RIO:
+** WAIT Hotel
+** WAIT Social Dinner
+
+-----
+
+* TODO Submit project idea :@DRUID:
+* TODO Include the Complexity working group :@DRUID:
+* TODO Reach the hosting institution :@DRUID:
+* TODO Create selection form :@DRUID:
+* TODO Publish the project :@DRUID:
+
+
+-----
+
+* TODO Write the call for papers on the project landing page :@Geneva:
+* TODO Open the call for papers by the end of January :@Geneva:
+
+
+
+-----
+
+* TODO Find organizers :@WEHIA:
+
+-----
+
+* TODO Create the special project :@FMM:

@@ -1,5 +1,0 @@
-#+title:      Information Rigidity Models
-#+date:       [2025-02-03 seg 17:58]
-#+filetags:   :information:placeholder:rigidity:
-#+identifier: 20250203T175849
-#+OPTIONS: num:nil ^:{} toc:nil

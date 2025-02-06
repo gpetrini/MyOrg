@@ -1,0 +1,13 @@
+#+title:      Particle Filter
+#+date:       [2025-02-03 seg 18:25]
+#+filetags:   :placeholder:
+#+identifier: 20250203T182500
+#+HUGO_TAGS: placeholder
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil
+
+[[denote:20250202T115312][Calibration]]
+
+[[denote:20240314T120430][Data Assimilation]]
+
+[[denote:20250202T120600][Kalman Filter]]

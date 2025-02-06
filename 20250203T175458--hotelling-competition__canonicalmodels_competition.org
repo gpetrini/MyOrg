@@ -1,6 +1,0 @@
-#+title:      Hotelling Competition
-#+date:       [2025-02-03 seg 17:54]
-#+filetags:   :canonicalmodels:competition:
-#+identifier: 20250203T175458
-#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
-#+OPTIONS: num:nil ^:{} toc:nil

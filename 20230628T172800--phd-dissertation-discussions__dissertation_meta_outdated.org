@@ -353,7 +353,7 @@ In general, there is no persistent effects in terms of economic growth or regard
   - Easier to justify
   - Does not defuse focus
 
-* Housing AB model
+* [[denote:20250203T175619][Housing Agent Based Model]]
 
 ** General topics
 

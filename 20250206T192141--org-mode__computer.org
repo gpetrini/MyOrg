@@ -1,0 +1,7 @@
+#+title:      Org Mode
+#+date:       [2025-02-06 qui 19:21]
+#+filetags:   :computer:
+#+identifier: 20250206T192141
+
+
+[[denote:20250206T192118][EMACS]]

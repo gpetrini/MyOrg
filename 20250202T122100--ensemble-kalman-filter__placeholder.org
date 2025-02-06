@@ -1,0 +1,12 @@
+#+title:      Ensemble Kalman Filter
+#+date:       [2025-02-02 dom 12:21]
+#+filetags:   :placeholder:
+#+identifier: 20250202T122100
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil
+
+[[denote:20250202T115312][Calibration]]
+
+[[denote:20250202T120600][Kalman Filter]]
+
+[[denote:20250206T182807][Bayesian Estimation]]

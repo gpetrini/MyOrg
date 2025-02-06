@@ -1161,7 +1161,7 @@ Além disso, a retórica de Friedman de que o Governo tentaria manter o nível d
 
 **** Persistência parcial ($a<1$)
 
-*** Histerese
+*** Histerese ([[denote:20250202T113930][Hysteresis]])
 
 - Forte e fraca
 - Grau de utilização do capital: reverte à média
@@ -1772,7 +1772,7 @@ E_{t} = \frac{E^{e}_{t+1}\left(1+\left(\frac{\Delta R - CA - KA - F_{LR}}{\gamma
 \end{equation}
 #+END_latex
 
-** Teoremas da paridade da macro convencional
+** Teoremas da paridade da macro convencional ([[denote:20250202T114817][Interest Rate Parity]])
 
 Como já visto, além da mobilidade perfeita do capital em economia aberta, a macroeconomia /mainstream/ adota a hipótese de substutibilidade perfeita de capital.
 - Ativos domésticos e estrangeiros são substitutos perfeitos

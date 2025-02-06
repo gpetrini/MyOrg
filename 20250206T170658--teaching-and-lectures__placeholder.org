@@ -1,0 +1,4 @@
+#+title:      Teaching and Lectures
+#+date:       [2025-02-06 qui 17:06]
+#+filetags:   :placeholder:
+#+identifier: 20250206T170658

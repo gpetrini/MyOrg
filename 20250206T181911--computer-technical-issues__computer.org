@@ -1,0 +1,4 @@
+#+title:      Computer Technical Issues
+#+date:       [2025-02-06 qui 18:19]
+#+filetags:   :computer:
+#+identifier: 20250206T181911

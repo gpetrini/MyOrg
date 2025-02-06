@@ -1,8 +1,0 @@
-#+title:      Productivity Paradox
-#+date:       [2025-02-02 dom 12:02]
-#+filetags:   :paradox:placeholder:
-#+identifier: 20250202T120232
-#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
-#+OPTIONS: num:nil ^:{} toc:nil
-
-[[denote:20250202T120452][Macroeconomic Paradoxes]]

@@ -1,10 +1,5 @@
-:PROPERTIES:
-:ID:       59305429-23ac-4347-9326-1b3cce084f82
-:mtime:    20211202152740 20211125104011
-:ctime:    20211125104011
-:END:
-#+title:      ecological_economics
+#+title:      Ecological Economics
 #+date:       [2025-02-02 dom 12:20]
-#+filetags:   :placeholder:schoolofthought:
+#+filetags:   :schoolofthought:
 #+identifier: 20250202T122013
 #+OPTIONS: num:nil ^:{} toc:nil

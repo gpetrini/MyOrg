@@ -1,7 +1,9 @@
 #+title:      Personal
 #+date:       [2024-07-29 seg 12:34]
-#+filetags:   :personal:
+#+filetags:   :gtd:
 #+identifier: 20240729T123409
+
+[[denote:20250206T182134][Get Things Done]]
 
 * TODO Send e-mail extension to Andrea :@santanna:@bureaucracy:@email:
 

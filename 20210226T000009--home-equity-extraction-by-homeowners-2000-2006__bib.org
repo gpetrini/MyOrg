@@ -1,0 +1,45 @@
+#+title:      Home Equity Extraction by Homeowners: 2000-2006
+#+date:       [2021-02-26 sex 00:00]
+#+filetags:   :bib:
+#+identifier: 20210226T000009
+#+OPTIONS: toc:nil num:nil
+#+reference:  lacour-little_2010_Home
+
+
+* Backlinks
+
+[[denote:20250204T192331][Journal of Real Estate Research]]
+
+* FISH-5SS
+
+
+|---------------------------------------------+-----|
+| <40>                                        |<50> |
+| *Background*                                  |     |
+| *Supporting Ideas*                            |     |
+| *Purpose*                                     |     |
+| *Originality/value (Contribution)*            |     |
+| *Relevance*                                   |     |
+| *Design/methodology/approach*                 |     |
+| *Results*                                     |     |
+| *(Interesting) Findings*                      |     |
+| *Research limitations/implications (Critics)* |     |
+| *Uncategorized stuff*                         |     |
+| *5SS*                                         |     |
+|---------------------------------------------+-----|
+
+* Specifics comments
+ :PROPERTIES:
+ :Custom_ID: lacour-little_2010_Homea
+ :AUTHOR: LaCour-Little}, M., Rosenblatt, E., & Yao, V.
+ :JOURNAL: Journal of Real Estate Research
+ :YEAR: 2010
+ :DOI:  http://dx.doi.org/10.1080/10835547.2010.12091265
+ :URL: https://www.tandfonline.com/doi/abs/10.1080/10835547.2010.12091265
+ :END:
+
+
+* PDF Highlights
+:PROPERTIES:
+ :NOTER_DOCUMENT:
+ :END:

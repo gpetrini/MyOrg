@@ -1,0 +1,4 @@
+#+title:      Consumption Function
+#+date:       [2025-02-06 qui 19:37]
+#+filetags:   :placeholder:
+#+identifier: 20250206T193710

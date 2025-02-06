@@ -1,0 +1,6 @@
+#+title:      Genetic Algorithm
+#+date:       [2025-02-03 seg 17:46]
+#+filetags:   :placeholder:
+#+identifier: 20250203T174635
+
+[[denote:20250206T193227][Mathematics and Algorithms]]

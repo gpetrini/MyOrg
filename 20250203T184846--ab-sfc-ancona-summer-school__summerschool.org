@@ -1,0 +1,1615 @@
+#+title:      AB-SFC Ancona Summer School
+#+date:       [2025-02-03 seg 18:48]
+#+filetags:   :summerschool:
+#+identifier: 20250203T184846
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ~/BrainDump/
+#+hugo_section: notes
+#+HUGO_CATEGORIES: Lectures
+#+PROPERTY: header-args: R  :session *ancona*
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+
+[[denote:20250206T151908][Summer Schools]]
+
+* ABM: a tool for [[denote:20240708T111511][Complex system]] - Gallegati
+
+- ABM generates system changes endogenously
+  - Adaptative evolving complex system
+- Focus on interaction rather than optmizing behaviour
+- Emphasize opened and non-ergodic system
+
+
+* Introduction to R for ABM
+
+** Basic operations
+
+#+BEGIN_SRC R
+A <- cbind(c(1, 4, 7), c(2, 5, 8), c(3, 6, 9))
+B <- pracma::randi(c(1, 6), 6, 6)
+#+END_SRC
+
+
+In R, =%*%= makes matriz multiplications.
+Product elements, by the other hand, is generated with =*=.
+
+** Numerical solver
+
+
+
+*** Newton-type algorithm
+
+In case of complex mathematical system, analytical solution is not possible.
+The alternative is to rely on numeric solution algorithms.
+
+The idea is that a very diffucult problem cam be solved approximating it with an easier one.
+Instead of the hard to solve non-linear problem, we can solve an easier linear problem using Taylor expansion (\(g(x) = f(x_{k}) + f'(x_{k})(x - x_{k})\)).
+Rearreaging, it is possible to find a proximation of \(f(x)\):
+
+\[ x_{t+ 1} = x_{k} -  \frac{F(x_{k})}{F'(x_{k})}\]
+
+This approach is limited, because the equation must be differentiable (at least once) and the derivative cannot be zero.
+In addition, it is a *linear* approach (in the nearboorhood of evaluation).
+
+
+1. Specify an innitual guess (\(x_{k} = x_{0}\))
+2. Calculate the first step of the interation \(x_{k+ 1} = x_{k} - \frac{F(x_{k})}{F'(x_{k})}\)
+3. Check if \(|F(x_{k+1})| \leq \delta\)
+   1. To find the sollution, it should interact until the value of the function is close to zero.
+
+It is important to note that the initial guest is important.
+If there are more than one solution, the Newton method will only find one at a time (and not globally).
+
+#+BEGIN_SRC R
+f <- function(x){x^2 - 1}
+df <- function(x){2x}
+Newton <- function(x0){
+  x1 <- x0 - (f(x0)/df(x0))
+  delta_x <- abs(x1 - x0)
+  delta_f <- abs(f(x1) - f(x0))
+}
+#+END_SRC
+
+*** The bisection method
+
+
+1. specify initual values \(x_{lower} \leq x_{upper}\) such as \(f(x^{lower}) < f(x^{upper})\)
+2. Compute the midpoint: \(x^{mid} = \frac{x^{lower} + x^{upper}}{2}\)
+3. Update the bound:
+   1. If \(f(x^{mid}) \cdot f(x^{upper}) < 0\) than \(x^{upper} = x^{mid}\). Do not change \(x^{lower}\)
+   2. Otherwise \(x^{lower} = x^{mid}\). Do not change \(x^{upper}\)
+4. Calculate the value of the function is the midpoint: \(|f(x^{mid}| \leq \delta)\)
+5. If step 4 is true, get the final results, otherwise go back to step 2
+
+
+#+BEGIN_SRC R
+f <- function(x){
+  x^2 - 1
+    }
+
+
+xl <- c()
+xl[1] = 2
+xu <- c()
+xu[1] = 3
+tol = 1e-6
+delta_fun = 10
+mid_point = 0
+k = 1
+delta_fun <- c()
+delta_fun = 2
+
+while(delta_fun[k] <= tol){
+
+  f_l[k] <- f(xl[k])
+  f_u[k] <- f(xu[k])
+  mid_point[k] <- (xl[k] + xu[k])/2
+  f_mid[k] <- f(mid_point[k])
+  res <- f_mid[k] * f_u[k]
+  if (res < 0){
+    xu[k+1] <- midpoint[k]
+    xl[k+1] <- xl[k+1]
+  } else {
+    xl[k+1] <- midpoint[k]
+    xu[k+1] <- xu[k+1]
+  }
+
+  delta_fun[k + 1] <- f_mid[k]
+  k = k + 1
+
+  if(k > 100){
+    print("Do not converged")
+    break
+  }
+
+}
+
+print(xl)
+#+END_SRC
+
+#+RESULTS:
+: [1] 2
+
+*** The secant method
+
+The ideia is that the \(f(x)\) is dificult to calculate.
+
+* SFC modelling theory - Zezza
+
+** A first principle
+
+- Real wealth is accumulated over time with investment, and financial wealth (credit) with savings
+  - Must identify the sources of liquidity and expenditures and ensure that each payment from one sector is recorded as a receipts to other
+
+The SFC approach have some similarities with the [[denote:20250203T181645][Monetary Circuit]] approach, however there are some drawbacks.
+For example, the latter does not includes capital goods payments or interest payment on loans.
+
+** Principles of SFC
+
+1. Horizontal consistency
+2. Vertical consistency
+3. Flows-to-Stock consistency
+4. Stock (balance sheets) consistency
+   1. The financial liabilities of an agent of sector are the financial assets of some other agent or sector
+   2. Net financial wealth for all sectores must be zero
+   3. Wealth for the world as a whole is only composed of real assets
+   4. Wealth for a single country is given by real wealth plus foreign assets, less foreign debt
+5. Stock-to-flows consistency
+   1. Stocks are accumulated for a purpose. So expenditure function must depend on accumulated wealth
+      1. Q: Does it implies the need to use New Cambridge equation?
+      2. Otherwise, the stock will grow indefinetly
+
+If the model has a steady growth, all stock and flows must grow at same ratio.
+As a consequence, the ratios between variables will stabilize.
+We can look at stock-flow ratios for a economy to check (in)stability.
+
+** SFC matrixes
+
+
+*** Transaction flow matrix
+
+|   | Households | Current Acc. (Firms) | Capital Acc. (Firms) | Banks | RoW | Total |
+|---+------------+----------------------+----------------------+-------+-----+-------|
+
+*** Social Accounting Matrix
+
+|                     | Production | Households | Non-financial firms | Financial firms | Government |    RoW    | Capital Accu. |   Total   |
+|---------------------+------------+------------+---------------------+-----------------+------------+-----------+---------------+-----------|
+| <l>                 |    <c>     |    <c>     |        <c15>        |      <c15>      |    <c>     |    <c>    |     <c15>     |    <c>    |
+| Production          |            |   \(C\)    |                     |                 |   \(G\)    |   \(E\)   |     \(I\)     |   \(Q\)   |
+| Households          |   \(W\)    |            |      \(TRfh\)       |    \(TRbh\)     |  \(TRgh\)  | \(TRwh\)  |               | \(Y_{h}\) |
+| non-Financial firms |   \(\Pi\)    |            |                     |    \(TRbf\)     |  \(TRgf\)  | \(TRwf\)  |               | \(Y_{f}\) |
+| Financial firms     |            |  \(TRhb\)  |      \(TRfb\)       |                 |  \(TRgb\)  | \(TRwb\)  |               |  \(Yb\)   |
+| Government          |   \(T\)    |  \(TRhg\)  |      \(TRfg\)       |    \(TRbg\)     |            | \(TRwg\)  |               | \(Y_{g}\) |
+| RoW                 |   \(M\)    |  \(TRhw\)  |      \(TRfw\)       |    \(TRbw\)     |  \(TRbw\)  |           |               | \(Y_{w}\) |
+| Capital Accu.       |            | \(S_{h}\)  |      \(S_{f}\)      |    \(S_{b}\)    | \(S_{g}\)  | \(S_{w}\) |               |   \(S\)   |
+| Total               |   \(Q\)    | \(Y_{h}\)  |      \(Y_{f}\)      |    \(Y_{b}\)    | \(Y_{g}\)  | \(Y_{w}\) |     \(I\)     |           |
+
+*** Flow of funds
+
+|                 | Households | Non-financial firms | Financial firms | Government | RoW       | Total  |
+|-----------------+------------+---------------------+-----------------+------------+-----------+--------|
+| Real assets     | \(I_h\)    | \(I_f\)             |                 | \(I_{g}\)  |           | \(+I\) |
+| Deposits        |            |                     |                 |            |           |        |
+| Loans           |            |                     |                 |            |           |        |
+| Government Bill |            |                     |                 |            |           |        |
+| Equities        |            |                     |                 |            |           |        |
+| Foreign debt    |            |                     |                 |            |           |        |
+| Total           | \(S_h\)    | \(S_f\)             | \(S_b\)         | \(S_{g}\)  | \(S_{w}\) | \(I\)  |
+
+** Flows to stock consistency
+
+End-of-period o level of period is the previous stock value (at constant prices)  plus a flow
+
+*** Capital gains
+
+At current prices, the change in sotck must take into account net capital gains.
+Start from the previous identity and multiply by the price:
+
+\[\Delta s_{t} = f_{t} + \Delta p\cdot s_{t-1}\]
+Dividing by the price
+\[\Delta S_{t} = F_{t} + \lambda\cdot S_{t-1}\]
+The last term defines net capital gains.[fn::Zezza points out that the [[denote:20250203T172959][Dot-Com Crisis]] was a capital gains-led cycle.]
+
+
+** Fundamental flows-to-stock links
+
+The stock of capital increases with net investment, for example:
+- Household net financial assets increase with saving
+- Government debt increases with government borrowing
+- The net international position changes according to the current account balance
+
+Note: According to Zezza, private sector have a positive balance due to [[denote:20250202T114632][Uncertanty]].
+In this sense, government bills is one of the safest assets.
+
+** Closures
+
+Once the SFC setup is complete, a nummber of model variables can be determined fom the identities implied by horizontal and vertical consistency.
+The determination of the residual variables will depend on the choice of a specific thepry: this part of model development is refered to as a "closure".
+
+** Lab Exercise
+
+
+*** Recursive vs simultaneos models
+
+
+The system:
+
+\begin{align*}
+ b_{11}y_{t} + b_{12}z_{t} & = f_{11}y_{t-1} + f_{12}z_{t-1} + \alpha_{1}\\
+ b_{21}y_{t} + b_{22}z_{t} & = f_{21}y_{t-1} + f_{22}z_{t-1} + \alpha_{2}
+\end{align*}
+Can be written in matrix form as
+\[BY_{t} = FY_{t-1} + A_{t}\]
+
+The model is recursive if the B matrix is triangular.
+In order to improve the chances to find a global solutions, modeling softwares rearrange model equations looking for triangular submatrices of B.
+
+Normaly, software try to make matrix \(B\) triangular.
+If it is not, implement interative methods.
+
+*** Model's structure
+
+
+|-------------------------+------------+-----------+---------------+-----------------+-----------------+---------------+-----------|
+|                         | Production |  Workers  |  Capitalists  | Firms (current) | Firms (Capital) |     Banks     |   Total   |
+|-------------------------+------------+-----------+---------------+-----------------+-----------------+---------------+-----------|
+| <l>                     |    <c>     |    <c>    |      <c>      |       <c>       |       <c>       |      <c>      |    <c>    |
+| Wages                   |  \(-WB\)   |  \(+WB\)  |               |                 |                 |               |     0     |
+| Net profits             |  \(-PR\)   |           |               |     \(+PR\)     |                 |               |     0     |
+| Depreciation            |  \(-DEP\)  |           |               |    \(+DEP\)     |                 |               |     0     |
+|-------------------------+------------+-----------+---------------+-----------------+-----------------+---------------+-----------|
+| GDP (income)            | \([GDP]\)  |           |               |                 |                 |               | \([GDP]\) |
+|-------------------------+------------+-----------+---------------+-----------------+-----------------+---------------+-----------|
+| Interest on bonds       |            |           | \(+i\cdot B_{c}\) |    \(-i\cdot B\)    |                 | \(+i\cdot B_{b}\) |     0     |
+| Firms Dividends         |            |           | \(+DIV_{f}\)  |  \(-DIV_{f}\)   |                 |               |     0     |
+| Bank Dividends          |            |           | \(+DIV_{b}\)  |                 |                 | \(-DIV_{b}\)  |     0     |
+|-------------------------+------------+-----------+---------------+-----------------+-----------------+---------------+-----------|
+| Consumption             |   \(+C\)   | \(C_{w}\) |   \(C_{c}\)   |                 |                 |               |     0     |
+| Investment              |   \(+I\)   |           |               |                 |     \(-I\)      |               |           |
+| Depreciation            |            |           |               |    \(-DEP\)     |    \(+DEP\)     |               |           |
+|-------------------------+------------+-----------+---------------+-----------------+-----------------+---------------+-----------|
+| Change in bank deposits |            |           |   \(-\Delta D\)    |                 |                 |   \(+\Delta D\)    |           |
+| Change in bonds         |            |           | \(-\Delta B_{c}\)  |  \(+\Delta B_{f}\)   |                 | \(-\Delta B_{b}\)  |           |
+|-------------------------+------------+-----------+---------------+-----------------+-----------------+---------------+-----------|
+| Total                   |     0      |     0     |       0       |        0        |        0        |       0       |     0     |
+|-------------------------+------------+-----------+---------------+-----------------+-----------------+---------------+-----------|
+
+Note: depreciation is repeated twice in the flow of funds matrix.
+
+Assumptions:
+- Assuming only bonds and money (banks deposits created by the banks)
+  - Firms finance investment by issuing bonds, demanded by banks and capitalists
+- Consumers do not save; so only capitalists are abble to buy bonds
+- All profits are distrubuted to the owners of the firms
+  - There is no equities for simplicity
+- Income distribution will be exogenous
+-
+
+
+|--------------+---------+--------------------+------------+----------+--------|
+|              | Workers |    Capitalists     |   Firms    |  Banks   | Total  |
+|--------------+---------+--------------------+------------+----------+--------|
+| <l>          |   <c>   |        <c>         |    <c>     |   <c>    |  <c>   |
+| Real capital |         |                    |   \(+K\)   |          | \(+K\) |
+| Deposits     |         |       \(+D\)       |            |  \(-D\)  |   0    |
+| Bonds        |         | \(+B_{f} + B_{b}\) | \(-B_{f}\) | \(-B_b\) |   0    |
+|--------------+---------+--------------------+------------+----------+--------|
+| Total        |    0    |     \(V_{c}\)      |     0      |    0     | \(+K\) |
+|--------------+---------+--------------------+------------+----------+--------|
+
+As a consequence of balance-sheet, capitalists hold all the stock of real capital by means of bank deposits and bonds.
+
+**** Identities
+
+\begin{equation*}
+\begin{align*}
+ WB + PR + DEP & = Y + C + I\\
+ C_{c}+ S_{c} & = iB_{c} + DIV_{f} + DIV_{b}\\
+S_{c} & = \Delta D + \Delta B_{c}\\
+DIV_{f} & = PR - iB\\
+\Delta B & = I - DEP\\
+DIV_{b} & = iB_{b}\\
+\Delta D & = \Delta B_{b}
+\end{align*}
+\end{equation*}
+
+**** Equilibrium
+
+- Good markets :: Investment-savings
+- Financial markets :: Bonds and bank deposits (hidden equation)
+
+*** Code
+:PROPERTIES:
+:header-args: R :results output drawer :eval never-export :session zezza :exports both
+:END:
+
+**** Libraries
+
+#+begin_src R
+library(sfcr)
+library(ggraph)
+#+end_src
+
+#+RESULTS:
+:results:
+Carregando pacotes exigidos: ggplot2
+:end:
+
+**** Equations
+
+#+begin_src R
+eqs <- sfcr::sfcr_set(
+               y ~ cons + i,
+               pr ~  y - wb - dep,
+               cw ~ wb,
+               sc ~ ibc + divf + divb - cc,
+               divf ~ pr - ibb,
+               divb ~ ibb,
+               yc ~ ibc + divf + divb,
+               ibc ~ r*bc[-1],
+               ibb ~ r*bb[-1],
+               cons ~ cw + cc,
+               wb ~ wshare * y,
+
+               ## vc ~ d + bc,
+               k ~ k[-1] + i  - depr*k[-1],
+               dep ~ depr*k[-1],
+               vc ~ vc[-1] + sc,
+
+               cc ~ pc1*yc + pc2*vc[-1],
+               b ~ b[-1] + i - dep,
+
+               ## Portfolio decision
+               bc ~ bc[-1] - bondssh*sc,
+               bb ~ b - bc,
+               d ~ bb,
+               bondssh ~ 0.8
+
+             )
+#+end_src
+
+#+RESULTS:
+:results:
+:end:
+
+**** Exogenous parameters
+
+This is the initial calibration of the model.
+To do so, it is possible to choose a scale value (in this case, GDP).
+
+
+|-------------------------+----------------+-----------+---------------+-----------------+-----------------+---------------+-----------|
+|                         |   Production   |  Workers  |  Capitalists  | Firms (current) | Firms (Capital) |     Banks     |   Total   |
+|-------------------------+----------------+-----------+---------------+-----------------+-----------------+---------------+-----------|
+| <l>                     |      <c>       |    <c>    |      <c>      |       <c>       |       <c>       |      <c>      |    <c>    |
+| Wages                   |  -60 (endog)   |  \(+WB\)  |               |                 |                 |               |     0     |
+| Net profits             | -20 (residual) |           |               |     \(+PR\)     |                 |               |     0     |
+| Depreciation            |      -20       |           |               |    \(+DEP\)     |                 |               |     0     |
+|-------------------------+----------------+-----------+---------------+-----------------+-----------------+---------------+-----------|
+| GDP (income)            |   100 (exog)   |           |               |                 |                 |               | \([GDP]\) |
+|-------------------------+----------------+-----------+---------------+-----------------+-----------------+---------------+-----------|
+| Interest on bonds       |                |           | \(+i\cdot B_{c}\) |    \(-i\cdot B\)    |                 | \(+i\cdot B_{b}\) |     0     |
+| Firms Dividends         |                |           | \(+DIV_{f}\)  |  \(-DIV_{f}\)   |                 |               |     0     |
+| Bank Dividends          |                |           | \(+DIV_{b}\)  |                 |                 | \(-DIV_{b}\)  |     0     |
+|-------------------------+----------------+-----------+---------------+-----------------+-----------------+---------------+-----------|
+| Consumption             |     \(+C\)     | \(C_{w}\) |   \(C_{c}\)   |                 |                 |               |     0     |
+| Investment              |     \(+I\)     |           |               |                 |     \(-I\)      |               |           |
+| Depreciation            |                |           |               |    \(-DEP\)     |    \(+DEP\)     |               |           |
+|-------------------------+----------------+-----------+---------------+-----------------+-----------------+---------------+-----------|
+| Change in bank deposits |                |           |   \(-\Delta D\)    |                 |                 |   \(+\Delta D\)    |           |
+| Change in bonds         |                |           | \(-\Delta B_{c}\)  |  \(+\Delta B_{f}\)   |                 | \(-\Delta B_{b}\)  |           |
+|-------------------------+----------------+-----------+---------------+-----------------+-----------------+---------------+-----------|
+| Total                   |       0        |     0     |       0       |        0        |        0        |       0       |     0     |
+|-------------------------+----------------+-----------+---------------+-----------------+-----------------+---------------+-----------|
+
+
+|--------------+---------+-------------------------+--------------+-------+--------|
+|              | Workers |       Capitalists       |    Firms     | Banks | Total  |
+|--------------+---------+-------------------------+--------------+-------+--------|
+| <l>          |   <c>   |           <c>           |     <c>      |  <c>  |  <c>   |
+| Real capital |         |                         |  100 (exog)  |       | \(+K\) |
+| Deposits     |         |      20 (residual)      |              |  -20  |   0    |
+| Bonds        |         | 80 (assuming fix share) | -100 (endog) |  20   |   0    |
+|--------------+---------+-------------------------+--------------+-------+--------|
+| Total        |    0    |       100 (endog)       |      0       |   0   | \(+K\) |
+|--------------+---------+-------------------------+--------------+-------+--------|
+
+#+begin_src R
+external <- sfcr::sfcr_set(
+                    y0 ~ 100,
+                    depr ~ 0.2,
+                    wshare ~ 0.6,
+                    pc1 ~ 0.25,
+                    pc2 ~ 0.15, ## adds up
+
+                    # Exogenous
+                    i ~ 20, ## Because of time constraints
+                    r ~ 0.1
+)
+
+
+init <- sfcr::sfcr_set(
+                    # Lagged values
+                    k ~ 100,
+                    vc ~ 100,
+                    bc ~ 80,
+                    b ~ 100,
+                  )
+#+end_src
+
+#+RESULTS:
+:results:
+:end:
+
+**** Baseline solution
+
+#+begin_src R :results table
+growth <- sfcr::sfcr_baseline(
+  equations = eqs,
+  external = external,
+  periods = 10,
+  method = "Broyden"
+)
+as.data.frame(sfcr_get_blocks(growth))
+#+end_src
+
+#+RESULTS:
+:results:
+   endogenous block
+1     bondssh     1
+2         dep     2
+3           b     3
+4           k     4
+5         ibb     5
+6         ibc     6
+7        divb     7
+8           y     8
+9          pr     8
+10         cw     8
+11       divf     8
+12         yc     8
+13       cons     8
+14         wb     8
+15         cc     8
+16         sc     9
+17         bc    10
+18         bb    11
+19          d    12
+20         vc    13
+:end:
+
+*** Handout
+
+#+begin_src R :tangle ~/PhD/Conferences/2022_Ancona_Summer_School/Lectures/petrini_handout.R :session exs :results graphics file :file ~/PhD/Conferences/2022_Ancona_Summer_School/Lectures/petrini_handout.pdf
+library(sfcr)
+library(ggraph)
+library(tidyr)
+
+
+eqs <- sfcr::sfcr_set(
+               y ~ cons + i,
+               pr ~  y - wb - dep,
+               cw ~ wb,
+               sc ~ ibc + divf + divb - cc,
+               divf ~ pr - ibb,
+               divb ~ ibb,
+               yc ~ ibc + divf + divb,
+               ibc ~ r*bc[-1],
+               ibb ~ r*bb[-1],
+               cons ~ cw + cc,
+               wb ~ wshare * y,
+
+               ## vc ~ d + bc,
+               k ~ k[-1] + i  - depr*k[-1],
+               dep ~ depr*k[-1],
+               vc ~ vc[-1] + sc,
+
+               cc ~ pc1*yc + pc2*vc[-1],
+               b ~ b[-1] + i - dep,
+
+               ## Portfolio decision
+               bc ~ bc[-1] - bondssh*sc,
+               bb ~ b - bc,
+               d ~ bb,
+               gk ~ beta0 + beta1*u + beta2*r,
+               u ~ y/(nu * k[-1]),
+               ## u ~ y/k[-1],
+               i ~ gk*k[-1]
+               )
+
+
+external <- sfcr::sfcr_set(
+                    depr ~ 0.2,
+                    wshare ~ 0.6,
+                    pc1 ~ 0.25,
+                    pc2 ~ 0.15, ## adds up
+
+                    # Exogenous
+                    ## i ~ 20, ## Because of time constraints
+                    r ~ 0.1,
+                    bondssh ~ 0.8,
+                    beta0 ~ 0.15,
+                    beta1 ~ 0.2,
+                    beta2 ~ -0.01,
+                    nu ~ 1.5 ## Capital-output ratio
+)
+
+
+init <- sfcr::sfcr_set(
+                    # Lagged values
+                    k ~ 100,
+                    vc ~ 100,
+                    bc ~ 80,
+                    b ~ 100,
+                  )
+
+
+exercise <- sfcr::sfcr_baseline(
+  equations = eqs,
+  external = external,
+  periods = 100,
+  initial = init,
+  method = "Broyden"
+)
+do_plot <- function(model, variables, plot = NULL) {
+  m1 <- model %>%
+    pivot_longer(cols = c(-period))
+
+  if (is.null(plot)) {
+    m2 <- filter(m1, name %in% variables)
+  }
+  else {
+    m2 <- filter(m1, name %in% plot)
+  }
+
+  m2 %>%
+    ggplot(aes(x = period, y = value)) +
+    geom_line(aes(linetype = name))
+}
+## exercise %>%
+
+##   ggplot()
+
+## exercise$u %>% plot(type = "line", main = "Capacity utilization")
+## exercise$gk %>% plot(type = "line", main = "Capital stock accumulation")
+
+
+shock1 <- sfcr_shock(sfcr_set(r ~ 0.12), 25, 100)
+
+scen_r <- sfcr_scenario(exercise, scenario=list(shock1), 100)
+scen_r$u %>% plot(type = "line", main = "Capacity utilization")
+#+end_src
+
+* An introduction to Agent-Based Macroeconomics - Russo
+
+** Introduction
+
+*** The economic crisis and the crisis of economics
+
+- The crisis arrived underdetected from the vast majority of economicsts
+- The justification for the poor forecasting performance of DSGE models is based on the fact that they just analize small deviations from a steady-state
+- One of the main drawbacks of mainstream macroeconomics is relaetd to the idea of disregarding the modelling of large crisis
+  - Denying the intrinsic nature of capitalism
+- The reaction of DSGE community have led to varios extensions regarding /financial frictions/, /heterogeneous agents/, and /bounded rationality/
+  - The alternative ABM can handle with this aspect all at once
+
+*** What is Agent-Based Macroeconomics?
+
+
+- ABM is a methodology for analysing complex system through simulation
+- Complex system are characterised by the emergence of *macro-properties* endogenously
+
+
+** Complexity
+
+*** Complex economic systems
+
+In a complex system, the whole is different from the sum of its part; accordingly:
+
+- We should not reduce the complexity of the whole economic system to the behavior of a single *Representative Agent*
+- Even when Heterogeneous Agents are considered, mainstream macro lacks an analysis of (decentralised) *interaction* (not mediated by the price system)
+- Moreover, in mainstream macro either the Representative Agent or Heterogeneous Agents are (almost always) fully rational (intertemporal optimisation under constraints), while Behavioural and Experimental Economics stressed that individuals are typically characterised by Bounded Rationality (à la Herbert Simon)
+  - Due to strong uncertainty in complex environments and cognitive and computational limitations, boundedly rational agents follow (relatively) simple rules of behaviour (heuristics)
+
+*** Agents' heterogeneity
+
+- Heterogeneous agents interact in different ways: direct vs. indirect interaction
+- Typically, agents match each other through *decentralised* interaction (no need for centralised devise like the Walrasian auctioneer)
+- The dispersed interaction of a multitude of heterogeneous micro-entities gives rise to the emergence of macro-propertie
+- Emergent properties in a complex system cannot be derived from the (even exact) knowledge of the behaviour of a single (non-representative) part of it: the micro-macro nexus
+
+** ABMs
+
+Major research projects:
+- CATS (Ancona-Milano) ::  from firm dynamics and financial fragility to macro analysis with decentralized markets and innovation/growth
+- K + S (Pisa Sant'Anna) :: from innovation dynamics to a macro setting with decentralised market interactions and financial factors
+- EURACE (Genova/Bielefeld) :: a large-scale AB-SFC model with many markets and a lot of modelling details
+- others :: also works by Rob Axtell, Jean-Phillippe Bouchaud, Doyne Farmer, Leigh Tesftasion
+
+*** Typical properties of macro ABMs
+
+- GDP tends to *self-organize* towards a growth path with endogenously generated fluctuations, such that business cycles are driven by the mechanics of the model rather than by properties of exogenous shocks
+- Macro ABMs typically generate *persistent heterogeneity* of agents, giving rise to stable population distributions of firm size, productivity, profitability, growth rate or household income and thereby can reproduce also empirical patterns with respect to (heavy/fat tail) distributions of such variables
+- Many macro ABMs are characterized by *non-linearities* (due to interaction), which generate dynamic processes with *positive feedbacks*. These properties are also the basis for endogenously generating extreme events, like crashes and economic crises
+
+
+** Toy model: implementing and simulating a simple ABM in R
+:PROPERTIES:
+:header-args: R :results output drawer :eval never-export :session russo :exports both
+:header-args: cpp :results output drawer :eval never-export :session russo_lsd :exports both
+:END:
+
+*** Model setup
+
+It is a simplified version of [cite:@delligatti_2010_Financial]:
+- Heterogeneous firms decide how much to invest on the basis of previous profits
+  - FIrms accumulate capital which is used to produce a homogeneous goods solt at a stochastic price
+- At the beginning, firms have an initial endowment of net worth \(A_{0}\)
+
+In every firm, each firm invests an amount proportional to past profits:
+
+\[I_{n,t} = \gamma\pi_{n, t-1}\]
+
+Then, firms accumulate capital:
+
+\[K = K_{-1} + I\]
+
+From the financial point of view, capital is covered by internal resources and external resources (\(B\)):
+
+\begin{equation}
+B = \begin{cases}
+K - A \text{if} K > A\\
+??
+\end{cases}
+\end{equation}
+
+Production is proportional to capital:
+\[Y = \phi K\]
+
+The price \(p\) is a stochastic variable.
+For simplicity, we assume a uniform distribution according to which each firm has a price picked at random from the inverval (0,2) plus a small positive drift.
+In addition, we also assume that firms sell *all* the produced output at the stochastic price.
+So, price reflects demand shocks.
+
+We assume that the cost of capital is a time-invariante parameter, uniforma across firms.
+Then, the profit is:
+
+\[\pi = p_{n}\cdot Y_{n} - r\cdot K_{n} = (p_{n}\cdot\phi - r)K_{n}\]
+which imply that dividends are proportional to the interest paid on the bank loan.
+
+Firms update their net worth:
+\[\Delta A_{n} = \pi_{n}\]
+
+If \(A_{n, +1} < 0\), them the firm goes bankrup and leaves the economy.
+We assume a one-to-noe replacement replacement mechanism according to which bankrupt firms are replaced by new entrants with an inital net worth to \(A_{0}\).
+
+*** Exogenenous parameter
+
+#+begin_src R
+Ni <- 100
+Time <- 100
+
+gamma <- 1.1
+phi <- 0.1
+r <- 0.1
+Pbar <- 0.01
+#+end_src
+
+#+RESULTS:
+:results:
+:end:
+
+*** Allocation variables and initial conditions
+
+#+begin_src R
+
+set.seed(15)
+A <- matrix(data = 1, ncol = 1, nrow = Ni)
+K <- matrix(data = 1, ncol = 1, nrow = Ni)
+B <- matrix(data = 0, ncol = 1, nrow = Ni)
+I <- matrix(data = 0, ncol = 1, nrow = Ni)
+P <- matrix(data = 0, ncol = 1, nrow = Ni)
+Y <- matrix(data = 0, ncol = 1, nrow = Ni)
+Z <- matrix(data = 2 * runif(Ni) + Pbar, ncol = 1, nrow = Ni) ## Profits: if zero, there is no investment
+
+## Aggregate variavles
+
+YY <- matrix(data = 0, ncol = 1, nrow = Time)
+AA <- matrix(data = 0, ncol = 1, nrow = Time)
+BB <- matrix(data = 0, ncol = 1, nrow = Time)
+lev <- matrix(data = 0, ncol = 1, nrow = Time)
+#+end_src
+
+#+RESULTS:
+:results:
+:end:
+
+*** Sequence of events
+
+#+begin_src R
+
+for (t in 2 : Time){
+  I <- gamma * Z
+  K <- K + I
+  Y <- phi * K
+  B <- K - A
+  B[B < 0] <- 0
+  P <- 2 * runif(Ni) + Pbar
+  Z <- P * Y - r * K
+  A <- A + Z
+  Z[A< 0] <- 0 # Entry condition
+  K[A<0] <- 1
+  A[A<0] <- 1
+  YY[t] <- sum(Y)
+  AA[t] <- sum(A)
+  BB[t] <- sum(B)
+  lev <- BB/AA
+}
+
+#+end_src
+
+#+RESULTS:
+:results:
+:end:
+
+*** Plots
+
+#+begin_src R
+## plot(2 : Time, YY[2 : Time], type = "l", ylim = range(YY[2:Time]), col = 1, ylab = "YY", xlab = "t")
+plot(2 : Time, BB[2 : Time], type = "l", ylim = range(BB[2:Time]), col = 1, ylab = "BB", xlab = "t")
+## plot(2 : Time, AA[2 : Time], type = "l", ylim = range(AA[2:Time]), col = 1, ylab = "AA", xlab = "t")
+#+end_src
+
+#+RESULTS:
+:results:
+:end:
+
+
+*** Exercise
+
+**** Plot a measure of financial leverage
+
+#+begin_src R :results figure
+
+plot(2 : Time, lev[2 : Time], type = "l", ylim = range(lev[2:Time]), col = 1, ylab = "Leverage", xlab = "t")
+#+end_src
+
+#+RESULTS:
+:results:
+:end:
+
+*** Modifications I: Depreciation
+
+Let's consider capital deprecitaion:
+- Insert the parameter delta, that is the depreciation rate, for instance, set \(\delta = 0.05\)
+- Let's also assume that there is no investment in case of negative profits
+- Plot the logarithm of aggregate production
+
+
+**** Exogenenous parameter
+
+#+begin_src R
+Ni <- 100
+Time <- 100
+
+gamma <- 2
+phi <- 0.1
+r <- 0.1
+Pbar <- 0.01
+delta <- 0.05
+#+end_src
+
+#+RESULTS:
+:results:
+:end:
+
+**** Allocation variables and initial conditions
+
+#+begin_src R
+
+set.seed(15)
+A <- matrix(data = 1, ncol = 1, nrow = Ni)
+K <- matrix(data = 1, ncol = 1, nrow = Ni)
+B <- matrix(data = 0, ncol = 1, nrow = Ni)
+I <- matrix(data = 0, ncol = 1, nrow = Ni)
+P <- matrix(data = 0, ncol = 1, nrow = Ni)
+Y <- matrix(data = 0, ncol = 1, nrow = Ni)
+Z <- matrix(data = 2 * runif(Ni) + Pbar, ncol = 1, nrow = Ni) ## Profits: if zero, there is no investment
+
+## Aggregate variavles
+
+YY <- matrix(data = 0, ncol = 1, nrow = Time)
+AA <- matrix(data = 0, ncol = 1, nrow = Time)
+BB <- matrix(data = 0, ncol = 1, nrow = Time)
+lev <- matrix(data = 0, ncol = 1, nrow = Time)
+#+end_src
+
+#+RESULTS:
+:results:
+:end:
+
+**** Sequence of events
+
+#+begin_src R
+
+for (t in 2 : Time){
+  I <- gamma * Z
+  I[I <0] <- 0 ## Before profits update
+  K <- (1 - delta) * K + I
+  Y <- phi * K
+  B <- K - A
+  B[B < 0] <- 0
+  P <- 2 * runif(Ni) + Pbar
+  Z <- P * Y - r * K
+  A <- A + Z
+  Z[A< 0] <- 0 # Entry condition
+  K[A<0] <- 1
+  A[A<0] <- 1
+  YY[t] <- sum(Y)
+  AA[t] <- sum(A)
+  BB[t] <- sum(B)
+  lev <- BB/AA
+}
+
+#+end_src
+
+#+RESULTS:
+:results:
+:end:
+
+**** Plots
+
+#+begin_src R :results figure
+
+plot(2 : Time, log(YY)[2 : Time], type = "l", ylim = range(log(YY)[2:Time]), col = 1, ylab = "g", xlab = "t")
+#+end_src
+
+#+RESULTS:
+:results:
+:end:
+
+*** Modifications II: Endogenous interest rate
+
+Let's assume that the interest rate is given by the following equation:
+
+\[ r = \overline{r} + \overline{r}(B/A_{-1})^{\overline{r}} \]
+
+
+**** Exogenenous parameter
+
+#+begin_src R
+Ni <- 100
+Time <- 100
+
+gamma <- 2
+phi <- 0.1
+rbar <- 0.075
+Pbar <- 0.01
+delta <- 0.05
+#+end_src
+
+#+RESULTS:
+:results:
+:end:
+
+**** Allocation variables and initial conditions
+
+#+begin_src R
+
+set.seed(15)
+A <- matrix(data = 1, ncol = 1, nrow = Ni)
+K <- matrix(data = 1, ncol = 1, nrow = Ni)
+B <- matrix(data = 0, ncol = 1, nrow = Ni)
+I <- matrix(data = 0, ncol = 1, nrow = Ni)
+P <- matrix(data = 0, ncol = 1, nrow = Ni)
+Y <- matrix(data = 0, ncol = 1, nrow = Ni)
+Z <- matrix(data = 2 * runif(Ni) + Pbar, ncol = 1, nrow = Ni) ## Profits: if zero, there is no investment
+
+## Aggregate variavles
+
+YY <- matrix(data = 0, ncol = 1, nrow = Time)
+AA <- matrix(data = 0, ncol = 1, nrow = Time)
+BB <- matrix(data = 0, ncol = 1, nrow = Time)
+lev <- matrix(data = 0, ncol = 1, nrow = Ni)
+r <- matrix(data = 0, ncol = 1, nrow = Ni)
+RR <- matrix(data = 0, ncol = 1, nrow = Time)
+#+end_src
+
+#+RESULTS:
+:results:
+:end:
+
+**** Sequence of events
+
+#+begin_src R
+
+for (t in 2 : Time){
+  I <- gamma * Z
+  I[I <0] <- 0 ## Before profits update
+  K <- (1 - delta) * K + I
+  Y <- phi * K
+  B <- K - A
+  B[B < 0] <- 0
+  P <- 2 * runif(Ni) + Pbar
+  r <- rbar + rbar*(B/A)^rbar
+  int <- r * B
+  Z <- P * Y - r * K
+  A <- A + Z
+  Z[A< 0] <- 0 # Entry condition
+  K[A<0] <- 1
+  A[A<0] <- 1
+  YY[t] <- sum(Y)
+  AA[t] <- sum(A)
+  BB[t] <- sum(B)
+  lev <- BB/AA
+  RR[t] <- sum(int)/sum(B)
+}
+
+#+end_src
+
+#+RESULTS:
+:results:
+:end:
+
+**** Plots
+
+#+begin_src R :results figure
+
+plot(2 : Time, RR[2 : Time], type = "l", ylim = range(RR[2:Time]), col = 1, ylab = "interest rate", xlab = "t")
+#+end_src
+
+#+RESULTS:
+:results:
+:end:
+
+
+*** Multiple simulations: monte carlo experiment
+:PROPERTIES:
+:header-args: R :results output drawer :eval never-export :session mc :exports both
+:header-args: cpp :results output drawer :eval never-export :session russo_lsd :exports both
+:END:
+
+
+**** Exogenenous parameter
+
+#+begin_src R
+Ni <- 100
+Time <- 1000
+MC <- 3
+
+gamma <- 2
+phi <- 0.1
+rbar <- 0.075
+Pbar <- 0.01
+delta <- 0.05
+#+end_src
+
+#+RESULTS:
+:results:
+:end:
+
+**** Allocation variables and initial conditions
+
+It is in
+
+#+begin_src R
+YY <- matrix(data = 0, ncol = MC, nrow = Time)
+AA <- matrix(data = 0, ncol = MC, nrow = Time)
+BB <- matrix(data = 0, ncol = MC, nrow = Time)
+LEV <- matrix(data = 0, ncol = MC, nrow = Time)
+#+end_src
+
+#+RESULTS:
+:results:
+:end:
+
+**** Sequence of events
+
+#+begin_src R
+
+set.seed(15)
+for (mc in 1 : MC){
+  A <- matrix(data = 1, ncol = 1, nrow = Ni)
+  K <- matrix(data = 1, ncol = 1, nrow = Ni)
+  B <- matrix(data = 0, ncol = 1, nrow = Ni)
+  I <- matrix(data = 0, ncol = 1, nrow = Ni)
+  P <- matrix(data = 0, ncol = 1, nrow = Ni)
+  Y <- matrix(data = 0, ncol = 1, nrow = Ni)
+  r <- matrix(data = 0, ncol = 1, nrow = Ni)
+  Z <- matrix(data = 2 * runif(Ni) + Pbar, ncol = 1, nrow = Ni) ## Profits: if zero, there is no investment
+
+  ## Aggregate variavles
+
+
+  for (t in 2 : Time){
+    I <- gamma * Z
+    I[I< 0 ] <- 0
+    K <- (1 - delta) * K + I
+    Y <- phi * K
+    B <- K - A
+    B[B < 0] <- 0 ## Self-financed firms
+    P <- 2 * runif(Ni) + Pbar
+    r <- rbar + rbar*(B/A)^rbar
+    Z <- P * Y - r * K
+    A <- A + Z
+    Z[A< 0] <- 0 # Entry condition
+    K[A<0] <- 1
+    A[A<0] <- 1
+    YY[t, mc] <- sum(Y)
+    AA[t, mc] <- sum(A)
+    BB[t, mc] <- sum(B)
+    LEV[t, mc] <- BB[t, mc]/AA[t, mc]
+  }
+}
+#+end_src
+
+#+RESULTS:
+:results:
+:end:
+
+**** Plot
+
+#+begin_src R
+plot(2 : Time, YY[2: Time, 1], type = 'l', ylim = range(0, max(YY)), col = 1, ylab = 'YY', xlab = 't')
+for(j in 2:MC){
+  lines (2 : Time, YY[2: Time, j], type = 'l', ylim = range(0, max(YY)), col = j)
+}
+#+end_src
+
+#+RESULTS:
+:results:
+:end:
+
+*** Sensitivity analysis
+
+Exploring the role of parameters on model dynamics for example, consider the parameter \(\overline{p}\):
+- set the initial value of the parameter to zero \(\overline{p} \leftarrow 0\)
+- Add this line of code just after the mc cycle
+
+  #+begin_example
+Pbar <- Pbar + 0.005
+  #+end_example
+
+- Add move =set.seed(15)= from outside to inside the =mc= cycle: this is very important to avoid that results are the effect of both changing random number and parameter values
+
+
+*** Implementing in LSD
+
+**** Technical requirements
+
+#+begin_src cpp :tangle ~/LSD/Work/ancona/fun_ancona.cpp
+//#define EIGENLIB  // uncomment to use Eigen linear algebra library
+
+#include "fun_head_fast.h"
+
+// do not add Equations in this area
+
+
+    object *AGG;
+    object *FMS;
+    object *FM;
+
+
+MODELBEGIN
+
+// insert your equations here, ONLY between the MODELBEGIN and MODELEND words
+
+
+#include "toy_model.cpp"
+
+MODELEND
+
+// do not add Equations in this area
+
+void close_sim( void )
+{
+    // close simulation special commands go here
+}
+#+end_src
+
+**** Equations
+
+#+begin_src cpp :tangle ~/LSD/Work/ancona/toy_model.cpp
+
+EQUATION( "__Initialize_Model" )
+/*
+  Desc: Technical variable to initialize agents and some initial conditions.
+  It is computed only once in the beginning of the simulation.
+  Must be the first variable in the list in model's setup.
+  Heterogeinity: -
+  Level: ECONOMY
+  After: First
+  LaTeX: -
+  Returns: PARAMETER
+  Literature Source:
+    -
+  Code Source:
+    - Pedrosa and Lang (2021): Init
+  Change log:
+    - First added 2022-02-09
+,*/
+
+    FMS  = SEARCH("FIRMS");  // NOTE: Points to the first object
+    FM  = SEARCH("FIRM");  // NOTE: Points to the first object
+    AGG  = SEARCH("ECONOMY");  // NOTE: Points to the first object
+
+    // Parameters
+    WRITES( FMS, "reinvested_profits",  2);
+    WRITES( FMS, "capital_productivity",  0.1);
+    WRITES( FMS, "base_rate",  0.075);
+    WRITES( FMS, "random_price_shift",  0.01);
+
+    // Lagged values
+    WRITELLS( FM, "Net_Worth", 1, 0, 1 );
+    WRITELLS( FM, "Capital", 1, 0, 1 );
+
+    // Not necessary to set equals to one
+    // WRITELLS( FM, "Debt", 0, 0, 1 );
+    // WRITELLS( FM, "Investment", 0, 0, 1 );
+    // WRITELLS( FM, "Price", 0, 0, 1 );
+    // WRITELLS( FM, "Production", 0, 0, 1 );
+
+
+    // WRITELLS( AGG, "Aggregate_Production", 0, 0, 1 );
+
+
+    ADDNOBJ_EXLS( FMS, "FIRM", VS(FMS, "number_firms") - 1, FM, 0 ); // add identical firms
+
+    CYCLES(FMS, cur, "FIRM"){
+        WRITELLS( cur, "Profits", 2 * uniform(0, 1) + VS(FMS, "random_price_shift"), 0, 1 );
+    }
+
+    FM = NULL;
+
+PARAMETER
+RESULT( 1 )
+
+EQUATION( "Price" )
+/*
+  Desc: -
+  Heterogeinity:
+  Level: FIRM
+  After:
+  LaTeX:
+  Returns:
+,*/
+    v[0] = 2 * uniform(0, 1);
+    v[1] = VS(PARENT, "random_price_shift");
+    v[2] = v[0] + v[1];
+
+RESULT( v[2] )
+
+
+EQUATION( "Investment" )
+/*
+  Desc: -
+  Heterogeinity:
+  Level: FIRM
+  After:
+  LaTeX:
+  Returns:
+  Status: STRT. TODO Add to lsd structure file
+,*/
+    v[0] = VS(PARENT, "reinvested_profits");
+    v[1] = VL("Profits", 1);
+    v[2] = v[0] * v[1];
+    v[2] = v[2] < 0 ? 0 : v[2];
+
+RESULT( v[2] )
+
+
+EQUATION( "Capital" )
+/*
+  Desc: -
+  Heterogeinity:
+  Level: FIRM
+  After:
+  LaTeX:
+  Returns:
+  Status: STRT. TODO Add to lsd structure file
+,*/
+    v[0] = VL("Capital", 1);
+    v[1] = V("Investment");
+    v[2] = VS(PARENT, "depreciation_rate");
+    v[3] = (1 - v[2])*v[0] + v[1];
+
+RESULT( v[3] )
+
+
+EQUATION( "Production" )
+/*
+  Desc: -
+  Heterogeinity:
+  Level: FIRM
+  After:
+  LaTeX:
+  Returns:
+,*/
+    v[0] = VL("Capital", 1);
+    v[1] = VS( PARENT, "capital_productivity");
+    v[2] = v[0] * v[1];
+
+RESULT( v[2] )
+
+
+EQUATION( "Debt" )
+/*
+  Desc: -
+  Heterogeinity:
+  Level: FIRM
+  After:
+  LaTeX:
+  Returns:
+,*/
+    v[0] = V("Capital");
+    v[1] = VL("Net_Worth", 1);
+    v[2] = v[0] - v[1];
+    v[2] = v[2] < 0 ? 0 : v[2]; // Self-financed firms
+
+RESULT( v[2] )
+
+
+EQUATION( "Profits" )
+/*
+  Desc: -
+  Heterogeinity: -
+  Level: FIRM
+  After:
+  LaTeX: \(Z\)
+  Returns:
+,*/
+    v[0] = V("Price");
+    v[1] = V("Production");
+    v[2] = V("Interest_Rate");
+    v[3] = V("Capital");
+    v[4] = v[0] * v[1] - v[2] * v[3];
+
+RESULT( v[4] )
+
+EQUATION( "Net_Worth" )
+/*
+  Desc: -
+  Heterogeinity: -
+  Level: FIRM
+  After:
+  LaTeX: \(A_{n}\)
+  Returns:
+,*/
+    v[0] = VL("Net_Worth", 1);
+    v[1] = V("Profits");
+    v[2] = v[0] + v[1];
+
+RESULT( v[2] )
+
+
+EQUATION( "__Check_Entry_Condition" )
+/*
+  Desc: Rewrite some variables
+  Heterogeinity:
+  Level:
+  After:
+  LaTeX:
+  Returns:
+  Status: STRT. TODO Add to lsd structure file
+,*/
+    v[0] = V("Net_Worth");
+    v[1] = V("Profits");
+    v[2] = V("Capital");
+    WRITE("Profits", v[0] < 0 ? 0 : v[1]);
+    WRITE("Capital", v[0] < 0 ? 1 : v[2]);
+    WRITE("Net_Worth", v[0] < 0 ? 1 : v[0]);
+
+RESULT( 1 )
+
+
+EQUATION( "Aggregate_Production" )
+/*
+  Desc: -
+  Heterogeinity:
+  Level:
+  After:
+  LaTeX:
+  Returns:
+  Status: STRT. TODO Add to lsd structure file
+,*/
+    v[0] = SUMS(FMS, "Production");
+
+RESULT( v[0] )
+
+EQUATION( "Aggregate_Leverage" )
+/*
+  Desc: -
+  Heterogeinity:
+  Level:
+  After:
+  LaTeX:
+  Returns:
+  Status: STRT. TODO Add to lsd structure file
+,*/
+    v[0] = SUMS(FMS, "Debt");
+    v[1] = SUMS(FMS, "Net_Worth");
+    v[2] = v[0]/v[1];
+
+RESULT( v[2] )
+
+EQUATION( "Interest_Rate" )
+/*
+  Desc: It introduces a financial accelerator dynamics
+  Heterogeinity:
+  Level:
+  After:
+  LaTeX:
+  Returns:
+  Status: STRT. TODO Add to lsd structure file
+,*/
+    v[0] = VS(PARENT, "base_rate");
+    v[1] = V("Leverage");
+    v[2] = v[0] + v[0]*pow(v[1], v[0]);
+
+RESULT(v[2])
+
+EQUATION( "Leverage" )
+/*
+  Desc: It introduces a financial accelerator dynamics
+  Heterogeinity:
+  Level:
+  After:
+  LaTeX:
+  Returns:
+  Status: STRT. TODO Add to lsd structure file
+,*/
+    v[0] = VL("Net_Worth", 1);
+    v[1] = V("Debt");
+    v[2] = v[1]/v[0];
+
+RESULT(v[2])
+#+end_src
+
+* An introduction to AB-SFC
+
+** Introduction
+
+AB-SFC are a class of macro models combining the bottom-up approach of the Agent-Based models with macroeconomic structure of SFC approach:
+- The macroeconomic structure is framed in the SFC accounting framework (SFC $\Rightarrow$ AB)
+  - SFC framework allows to enruse financial flows or balance sheet disequilibria are not overlooked in their existence and consequences
+  - Why is that important?: *Network* based financial accelerator: idiosuncratic shocks can well be the source of an epidemic diffusion of financial distress and this impacts the whole economy
+  - SFC framewrok allows to ensure financial flows or balance sheet disequilibria are not overlooked in its existence and consequences
+  - SFC framework allows to check for logical consistency
+- The financial and the monetary sustem are explicity and rigorously modelled (SFC $\Rightarrow$ AB)
+- Sectors are made of a multitude of heterogeneous interacting agents (AB $\Rightarrow$ SFC)
+  - Behaviour are depicted at the micro level
+  - Balance sheet interrelations occur at the micro level (interaction)
+  - Aggregate variables are the sum of the initial values
+    - It does not mean that emergence amount to summation, the elements of the sum results from interaction and heterogeneity (of behaviours or other characteristics as endowment)
+
+Why AB-SFC:
+- Representative agent and lack of financial detail restricts the analytical capacity fo the model
+
+*** [cite/t:@delligatti_2010_Financial]
+
+#+CAPTION: Balance sheet
+|   | Downstream     | Upstream       | Bank   | Total |
+|---+----------------+----------------+--------+-------|
+|   | - Trade credit | + Trade Credit |        |     0 |
+|   | - Loan         | - Loan         | + Loan |     0 |
+
+#+CAPTION: Flow of funds
+|              | Downstream | Upstream | Bank | Total |
+|--------------+------------+----------+------+-------|
+| Trade credit | - r TC     | + rTC    |      |     0 |
+| Loan         | -iLD       | -LU      | +iL  |     0 |
+
+- Downstream firms produce consumption goods and are pure borrowers: they borrow from upstream firms and from banks
+- Upstream firms supply intermediate inputs to D firms, and are borrowers and lenders at the same time: they borrow from banks and lend to D firms
+- The bankrupcy of a borrower affects the lender's balance sheet, which will record a non-performing loan
+- The response of the lender to bad debt will be an increase of the interest rate charged to all the other borrowers some will not change lenders
+- Net worths will decrease interest rates will rise further
+- New defaults lead to a self reinforcing dynamics
+- The lack of financial details and a non-comprehensive accouting framework determine the loss of intra and inter-sectoral influences
+- How many elements which may lead to the emergence of aggregate phenomena are lost?
+- Small accounting inconsistencies tend to build up over the limulation, rahter than bein absorved, lending to logically incohenrent flows and stocks evolutions
+
+Hypothesis:
+- Production is a funcion of net wroth
+- Interest rate is negative related with net worth and positively related with leveraged
+
+** Some limitations of the AB approach
+
+- Selection of the components
+  - Which sectors, which assets, which interactions
+  - Selection of the behavioral equations: which heuristics?
+  - Empirical foundations
+  - Difficulty in generalising, comparing
+  - Lack of standards
+  - Theoretical blind spots
+
+** TODO Validation
+
+1. Check robustness of results
+2. Proper empirical validation against real world data
+
+** Hybrid AB-SFC
+
+|----------------------+----------------------------------------------+--------|
+|----------------------+----------------------------------------------+--------|
+| Limitations          | ABSFC contribution                           | Impact |
+|----------------------+----------------------------------------------+--------|
+| Components           | Some help in selection the sectors           | +      |
+| Behavioral rules     | The accounting may force some choice         | +      |
+| Empirical foundation |                                              |        |
+| Generalization       | Help comparing, based on the macro structure | _      |
+| Standards            |                                              |        |
+| Theory               | ??                                           | +      |
+|----------------------+----------------------------------------------+--------|
+|----------------------+----------------------------------------------+--------|
+
+The solution may be to limit the role of heterogeinity, E.g. Botta et al. (2020, 2021), Reissl (2021); Pedrosa and Lang (2021) have all sector at the aggregate level but one.
+
+*** New difficultis
+
+- Theoretical coherence
+  - Heuristics as adaptative rules at the micro level
+  - Aggregate equation at the macro level
+- Hybrid inter sectoral interrelations
+- Calibrate balance
+  - The disperse interaction 'soften' the dynamics, with respect to aggergate variables
+- Important emerging elements might be lost!
+
+
+** Exercise: Toy model
+:PROPERTIES:
+:header-args: R :results output drawer :eval never-export :session sfc :exports both
+:header-args: cpp :results output drawer :eval never-export :session russo_lsd :exports both
+:END:
+
+#+CAPTION: Balance sheet
+|          | Households | Firms | Banks | Total  |
+|----------+------------+-------+-------+--------|
+| <l>      |    <c>     |  <c>  |  <c>  |  <c>   |
+| Debt     |            |  -B   |  + B  |   0    |
+| Deposits |            |       |       |        |
+| Capital  |            |  +K   |       |   +K   |
+|----------+------------+-------+-------+--------|
+| Networth |            |  +A   |       | +K + A |
+
+Not SFC
+
+#+CAPTION: Transacion flow
+|                  | Households | Firms (cur.) | Firms (cap.) |  Banks   |  Total   |
+| <l>              |    <c>     |     <c>      |     <c>      |   <c>    |   <c>    |
+|------------------+------------+--------------+--------------+----------+----------|
+| Investment       |            |      +I      |      -I      |          |    0     |
+| [GDP]            |            |      +Y      |              |          |    0     |
+| Profits          |            |      -Z      |      +Z      |          |    0     |
+| Interest on debt |            |              |     \(\)     |          |          |
+| \(\Delta B\)          |            |              |   \(+\Delta B\)   | \(-\Delta B\) |    0     |
+| \(\Delta A\)          |            |              |   \(-\Delta A\)   |    ?     | \(-\Delta A\) |
+
+*** Code
+
+
+**** Parameters
+
+#+begin_src R
+Time <- 100
+#Number of firms
+Ni <- 100
+
+
+#PARAMETER SETTING
+#Investment accelerator
+gamma <- 1.1
+#Capital productivity
+phi <- 0.1
+#Interest rate
+r <- 0.1
+#Random price constant
+Pbar <- 0.01
+
+
+#SEED
+set.seed(15)
+
+#+end_src
+
+#+RESULTS:
+:results:
+:end:
+
+**** Allocating varaibles
+
+#+begin_src R
+
+#ALLOCATING VARIABLES AND INITIAL CONDITIONS
+#Firms’ net worth
+A <- matrix(data=1,ncol=1,nrow=Ni)
+#Firms’ capital
+K <- matrix(data=1,ncol=1,nrow=Ni)
+#Firms’ debt
+B <- matrix(data=0,ncol=1,nrow=Ni)
+#Firms’ investment
+I <- matrix(data=0,ncol=1,nrow=Ni)
+#Stochastic price
+P <- matrix(data=0,ncol=1,nrow=Ni)
+#Firms’ production
+Y <- matrix(data=0,ncol=1,nrow=Ni)
+#Firms’ profit
+Z <- matrix(2*runif(Ni)+Pbar,ncol=1,nrow=Ni)
+#Aggregate production
+YY <- matrix(data=0,ncol=1,nrow=Time)
+#AGGREGATE DEBT
+BB <- matrix(data=0,ncol=1,nrow=Time)
+#AGGREGATE NETWORTH
+AA <- matrix(data=0,ncol=1,nrow=Time)
+BB <- matrix(data=0,ncol=1,nrow=Time)
+II <- matrix(data=0,ncol=1,nrow=Time)
+ZZ <- matrix(data=0,ncol=1,nrow=Time)
+KK <- matrix(data=0,ncol=1,nrow=Time)
+DAA <- matrix(data=0,ncol=1,nrow=Time)
+DBB <- matrix(data=0,ncol=1,nrow=Time)
+PYY <- matrix(data=0,ncol=1,nrow=Time)
+PII <- matrix(data=0,ncol=1,nrow=Time)
+#+end_src
+
+#+RESULTS:
+:results:
+:end:
+
+**** Sequence
+
+#+begin_src R
+
+#SEQUENCE OF EVENTS
+for (t in 2:Time) {
+  I <- gamma * Z #Investment choice
+  K <- K + I #Capital accumulation
+  Y <- phi * K #Production
+  B <- K - A #Debt
+  B[B<0] <- 0 #Self-financed firms
+  P <- 2*runif(Ni)+ Pbar #Stochastic price
+  Z <- P * Y - r * K #Profit
+  A <- A + Z #Net worth
+  Z[A<0] <- 0 #Entry condition
+  K[A<0] <- 1 #Entry condition
+  A[A<0] <- 1 #Entry condition
+  YY[t] <- sum(Y) #Aggregate production
+  BB[t] <- sum(B) #Aggregate DEBT
+  AA[t] <- sum(A) #Aggregate CAPITAL
+
+  KK[t] <- sum(K)
+  II[t] <- sum(I)
+  ZZ[t] <- sum(Z)
+  PYY[t] <- sum(P*Y)
+  PII[t] <- sum(P*I)
+  DAA[t] <-AA[t] - AA[t-1]
+  DBB[t] <-BB[t] - BB[t-1]
+
+
+}
+#+end_src
+
+#+RESULTS:
+:results:
+:end:
+
+**** SFC
+
+#+begin_src R
+
+## cur <- matrix(data=1,ncol=1,nrow=Ni)
+## cap <- matrix(data=1,ncol=1,nrow=Ni)
+## bank <- matrix(data=1,ncol=1,nrow=Ni)
+## prod <- matrix(data=1,ncol=1,nrow=Ni)
+
+
+  # Vertical
+  cur[t] <- (PYY[t] - r*KK[t] - ZZ[t])
+  cap[t] <- (-PII[t] + ZZ[t] + DBB[t] - DAA[t])
+  ## bank[t] <- (r*K[t] - (B[t] - B[t-1]))
+
+  # Horizontal
+  prod[t] <- r*KK[t] - DBB[t]
+
+#+end_src
+
+* Agent Based Macro: future and challenges

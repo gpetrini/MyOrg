@@ -1,0 +1,4 @@
+#+title:      Bayesian Estimation
+#+date:       [2025-02-06 qui 18:28]
+#+filetags:   :placeholder:
+#+identifier: 20250206T182807

@@ -1,0 +1,11 @@
+#+title:      Learn to Optmize Experiments
+#+date:       [2025-02-03 seg 18:07]
+#+filetags:   :placeholder:
+#+identifier: 20250203T180729
+#+OPTIONS: num:nil ^:{} toc:nil
+
+
+[[denote:20250202T122308][Experimental Finance]]
+
+
+[[denote:20250203T180559][Learning and Heuristics]]

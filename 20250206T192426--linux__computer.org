@@ -1,0 +1,7 @@
+#+title:      Linux
+#+date:       [2025-02-06 qui 19:24]
+#+filetags:   :computer:
+#+identifier: 20250206T192426
+
+
+[[denote:20250206T181911][Computer Technical Issues]]

@@ -1,0 +1,10 @@
+#+title:      Causes and Consequences of Hysteresis: Aggregate Demand, Productivity, and Employment
+#+date:       [2025-02-06 qui 18:55]
+#+filetags:   :bib:
+#+identifier: 20250206T185540
+#+reference:  dosi_2018_causes
+
+* Backlinks
+
+- [[denote:20250202T120706][Insider-Outsider Model]]
+- [[denote:20250203T180327][Keynes meets Schumpeter Family]]

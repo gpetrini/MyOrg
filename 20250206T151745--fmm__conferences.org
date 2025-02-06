@@ -1,0 +1,7 @@
+#+title:      FMM
+#+date:       [2025-02-06 qui 15:17]
+#+filetags:   :conferences:
+#+identifier: 20250206T151745
+
+
+[[denote:20230216T235216][Conferences and Workshops]]
