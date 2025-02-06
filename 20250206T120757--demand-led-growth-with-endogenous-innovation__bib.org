@@ -1,0 +1,158 @@
+#+title:      Demand-led Growth with Endogenous Innovation
+#+date:       [2025-02-06 qui 12:07]
+#+filetags:   :bib:
+#+identifier: 20250206T120757
+#+OPTIONS: num:nil ^:{} toc:nil
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+#+reference:  caminati_2019_Demand
+
+
+
+* FISH-5SS
+
+** 5SS
+
+[cite/t:@caminati_2019_Demand] present a Sraffian [[denote:20250203T184155][Supermultiplier Models]] with endogenous [[denote:20250205T165524][Research and Development]] in which long-term growth rate is wage-led without abandoning the convergence of capacity utilization to the normal level. To this end, the relate autonomous consumption and R&D expenditures with labour productivity growth rate which depends on the historically determined technological opportunities.
+
+
+** Background and motivation
+
+- Theoretical background :: Supermultiplier Models does not include R&D and Innovation
+- Historical background :: The authors relate this discussion with the recent laubor-saving innovations employed recently such as automation methods
+
+** Supporting Ideas and hypothesis
+
+- The authors follows the supermultiplier approach in which [[denote:20250202T120941][Harrodian instability]] is tamed by means of [[denote:20250202T114954][Autonomous Expenditures]] as in [cite/t:@serrano_1995_Long; @lavoie_2016_Convergenceb; @freitas_2015_Growth;@allain_2015_Tacklinga]
+- They suppose that innovation is proportional to capital stock size
+  - They also assume that modernization expenditures depend on a update price
+- Competition ensure that firms will adopt innovation expenditures
+- R&D is more persistent firm's expenditure and its is not ruled out by temporary low capacity utilization rate (as long as there is a positive expectation)
+- At odds with literature, the authors do not assume a direct feedback between output and labour productivity as in [[denote:20250203T180158][Kaldor-Verdoorn Law]]
+  - Instead, it is assumed that R&D generates labour-saving methods
+- They assume that R&D is restricted by the historically contingent technological opportunities ($g_{T}$) in which only a fraction is fully successfully implemented ([[id:0b678c1a-aa0a-48cd-9e72-97b9681725dd][see]])
+- The main argument for the endogenization of R&D (and capitalist consumption depends on productivity, apparently) is that market-power (competition?) forces capitalists invest in R&D, otherwise their profits would fall
+
+** Purpose
+
+** Contribution
+
+- Analytically, this paper explore the stability limits of the endogenization of Autonomous Expenditures
+
+** Relevance
+
+This paper dialogues with [[denote:20250202T120807][Innovation bubble ABM]] chapter since this is a first attempt to implement innovation in the Sraffian Supermultiplier Models.
+It could be cited in the introduction indicating the recent research convergence.
+
+Considering a [[denote:20250202T120251][Policy Oriented]] perspective, this paper provide a further discussion about feedbacks between functional income distribution and [[denote:20250203T184320][Technological revolution]].
+Since they report a wage-led economy, this can be extended for an evaluation of real wage effects on economic growth.
+Thus, this provid an interpretation for the [[denote:20250202T115910][Secular Stagnation]] in which lower growth rates, falling manufacturing employment and lower real wages are connected.
+
+
+** Methodology
+
+- Methodology :: The authors present a aggregated stylized model and solve it analytically
+  - Thus, do not employ vintage models (as in [cite/t:@dosi_2010_Schumpeter]) or [[denote:20250203T183319][Joint production]]
+- Approach :: First, they present a model in which R&D grows at a exogenous rate and, then, endogenize it
+  - As a suggestion for further research, the authors start to implement a [[denote:20250202T120514][Limit Cycle]] model
+    - When the gap between expectation and realized values increase, the more conservative will be the adjustment rule
+      - Providing caution to revise long-term expectations
+
+
+** Results
+
+- Model with exogenous R&D growth rate is similar to all Supermultiplier Models
+- An autonomous consumption is required in order to stabilize the model
+  - Is this a floor?
+  - And the same goes for ceiling for $g_{T}$
+- In the model with endogenous R&D, long-run economic growth is demand-led
+  - At odds with Supermultiplier Models, income distribution changes does not have a level effect only
+  - At odds with models with [[denote:20250203T182114][Neo Kaleckian Model]] investment function models, this result is not obtained with and endogenous capacity utilization
+- In order to be locally stable, the net rate of profit must be greater than the output growth rate
+  - If the value of productivity-adjusted autonomous consumption is high enough, profit rates will be higher than output growth rate
+- In the Steady State:
+  - Output and capital growth at the same rate as labour productivity
+  - Firms are force to modernize by means of competition
+  - Capacity utilization converges to the normal level
+
+** Interesting findings and not categorized stuff
+
+** Critics
+
+
+- Autonomous consumption specification is arbitrary and it is not better modeled as an exogenous growth rate.
+  - The authors do not provide any empirical support for the proposed equation ([[id:ac4b64ac-5ab2-44d7-bc9b-2687783cbd50][see]])
+  - They also does not provide any further theoretical discussion about the productivity-adjusted consumption parameter
+- It is unclear why $Z/K$ should be considered as a rate of technological obsolescence
+- Passages from equation 24 to 25 was not clear
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+This paper contributes to the recent macro-dynamics literature on demand-led growth, drawing upon the seminal idea that the implications of Harrodian instability may be tamed by a source of autonomous expenditure in the economy.
+Contrary to the other contributions in this literature, real autonomous expenditure is not growing at an exogenously given rate, and partly consists of a flow of profit-seeking R&D and innovation expenditures raising labour productivity through time.
+If the state of distribution, hence the wage share, is exogenously fixed and constant, the model gives rise to dynamics in a two dimensional state space, that may converge to, or give rise to a limit cycle around, an endogenous growth path.
+An exogenous rise of the profit share exerts negative effects on long-run growth and employment, showing that growth is wage led.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+
+
+
+** Autonomous consumption
+:PROPERTIES:
+:ID:       ac4b64ac-5ab2-44d7-bc9b-2687783cbd50
+:END:
+
+
+#+BEGIN_latex
+\begin{equation}
+E = e\cdot A
+\end{equation}
+#+END_latex
+
+in which $E$ is the autonomous consumption, $A$ is the labour productivity and $e$ is the productivity-adjusted consumption parameter
+
+** Labour productivity growth rate
+:PROPERTIES:
+:ID:       0b678c1a-aa0a-48cd-9e72-97b9681725dd
+:END:
+
+#+BEGIN_latex
+\begin{equation}
+g_{A} = g_{T}\cdot \left( 1 - \frac{1}{1+r_{A}} \right)
+\end{equation}
+#+END_latex
+in which $r_{A}$ is the productivity-adjusted R&D growth rate.
+
+** Modernization expenditure
+
+#+BEGIN_latex
+\begin{equation}
+Z = p_{z}\cdot g_{T}\cdot \left(1 - \frac{1}{1+r_{A}}\right)\cdot K
+\end{equation}
+#+END_latex
+in which $Z$ is the modernization expenditure and $\frac{Z}{K}$ is the so-called rate of technological obsolescence.
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+[[denote:20250205T175724][Metroeconomica]]
+
+[[denote:20240707T182500][Demand-led growth models]]
+
+[[denote:20250203T184155][Supermultiplier Models]]
+
+[[denote:20250205T165524][Research and Development]]
+
+[[denote:20250203T180158][Kaldor-Verdoorn Law]]
+
+[[denote:20250202T120740][Innovation-led growth models]]
+
+* References
+
+
+#+print_bibliography:

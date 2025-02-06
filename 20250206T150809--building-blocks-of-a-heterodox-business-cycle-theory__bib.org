@@ -1,0 +1,138 @@
+#+title:      Building Blocks of a Heterodox Business Cycle Theory
+#+date:       [2025-02-06 qui 15:08]
+#+filetags:   :bib:
+#+identifier: 20250206T150809
+#+OPTIONS: num:nil ^:{} toc:nil
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+#+reference:  calvertjump_2023_building
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+
+** Background and motivation
+
+
+** Supporting Ideas and hypothesis
+
+- [[denote:20250202T114158][Accelerator Model]] focus on the destabilising role of business investment
+  - [[denote:20240708T155635][Business Cycles]] emerge as a result of the interaction between Keynesian multiplier and the accelerator
+    - This model produces dumped cycles, converging to the target output ratio
+    - The Jacobian Matrix is:
+
+\[J =
+    \begin{bmatrix}
+        a(c + \beta v - 1) & -\alpha\beta\\
+        \beta v & \beta
+    \end{bmatrix} \hspace{2cm}
+    sign(J) =
+    \begin{bmatrix}
+        ? & - \\
+        + & -
+    \end{bmatrix}\]
+
+- [[denote:20250203T182022][Neo-Goodwin Model]] focus on class strugle in which industrial reserve army generates wage pressures during booms, [[denote:20250202T120140][Profit-Squeezing]] and reduce investment
+  - In the original Goodwin model, there is Say's law
+  - This model assumes a wage [[denote:20250202T120321][Phillips curve]]
+  - As accumulation rates decrease during the recession, employment rate also decreases, increasing profit rate and accumulation
+  - This model generates limited cycles
+
+\[J =
+    \begin{bmatrix}
+        0 & -\frac{v^{\star}}{\sigma}\\
+        \rho u^{\star} & 0
+    \end{bmatrix} \hspace{2cm}
+    sign(J) =
+    \begin{bmatrix}
+        0 & - \\
+        + & 0
+    \end{bmatrix}\]
+
+- [[denote:20250203T181356][Minskian Growth Models]] focus on financial factors in which debt, asset prices and interest rates play a key role during the Business Cycles
+  - During the boom, effective investment grows faster than retained profits, increasing debt
+    - Investment become more unstable, triggering the recession
+    - As a consequence, reduces the margins of safety
+  - It is supposed that investment is increasing with level of output (OK) and decreasing with level of Debt (To Check)
+- [[denote:20250203T181611][Momentum Trader Models]] focus on [[denote:20211215T182520][Heterogeneous Expectations]] to explain the cyclical dynamics
+  - In this model, there are [[denote:20250202T121539][chartists]] (forming extrapolative expectations) and [[denote:20250203T173554][Fundamentalist]] (anchoring to the [[denote:20250203T173614][Fundamentals]], forming expectations according to non-price related variables)
+    - Chartists have short time horizons while Fundamentalist focus on expected income streams rather than capital gains
+  - The authors argue that is required to have an [[denote:20250202T114657][Tobin's Q]] investment function or a consumption function with a wealth effect to trigger
+  - During the boom, Chartists' expectations make the asset prices to go up; Fundamentalist put a downward pressure.
+    - This continues until Fundamentalist demand overweight momentum traders
+
+** Purpose, Relevance, and Contribution
+
+- The paper aims to analysis heterodox [[denote:20240707T182500][Demand-led growth models]] with endogenous Business Cycles
+- It could be argued that the [[denote:20250202T120807][Innovation bubble ABM]] chapter is some sort of synthesis, since:
+  - Have the destabilising and stabilising featrure of goods markets as in the Accelerator Model using the [[denote:20250203T184155][Supermultiplier Models]]
+  - Have Heterogeneous expectations and [[denote:20240708T175224][Expectations Formation and Behaviour Macroeconomics]] rule to induce business investment decisions as in Momentum Trader Models
+    - In addition, this expectational mechanism can be trigger without an Tobin's Q function nor related to an Wealth effect
+  - Have financial interface due to production and consumption loans, allowing to discuss financial stability as in Minskian Growth Models following[cite:@pedrosa_2021_what]
+
+** Methodology
+
+- [[denote:20250202T120026][Review of Literature]] of the following models:
+  - Accelerator Model
+  - neo-Goodwinian models
+  -Minskian Growth Models of debt-cycle
+  - Momentum Trader Models
+- In order to compare them, the authors propose a minimalistic system of ordinary differential equations to analyze the condition of stability and to generate endogenous Business Cycles
+
+** Results
+
+- The analyzed models may have complementary elements --- they can be used together to evaluate a cycle --- but have competing mechanisms.
+  - In summary, except for Momentum Trader Models, all models have a destabilising elements in the goods market. The distinction emrges in the stabilising market.
+- Besides the distinctiveness of each model, the existence of some sort of [[denote:20250202T114350][Animal Spirits]] and adaptative [[denote:20250202T115151][Behavioral extrapolation]]
+
+
+#+CAPTION: Summary of the stabilising and destabilising forces (p. 20, Table 1)
+|------------------------+-------------------------------+---------------+----------------------------|
+|------------------------+-------------------------------+---------------+----------------------------|
+| Model                  | Goods Market                  | Labour Market | Financial Market           |
+|------------------------+-------------------------------+---------------+----------------------------|
+| Accelerator Model      | destabilising and stabilising |               |                            |
+| neo-Goodwinian model   | destabilising                 | stabilising   |                            |
+| Minskian Growth Models | destabilising                 |               | stabilising                |
+| Momentum Trader Models |                               |               | destabilising, stabilising |
+|------------------------+-------------------------------+---------------+----------------------------|
+|------------------------+-------------------------------+---------------+----------------------------|
+
+** Interesting findings and not categorized stuff
+
+- There are some Minskian Growth Models in which interest rate increase are not required to trigger the recession
+- The authors cite [cite/text:@westerhoff_2006_Business;@westerhoff_2007_Note] which will be analyzed in the future
+  - [[denote:20250206T143239][Business Cycles, Heuristic Expectation Formation, and Contracyclical Policies]]
+  - [[denote:20250206T144122][A Note on Interactions-Driven Business Cycles]]
+
+** Critics
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+A key characteristic of heterodox theories of the business cycle is their focus on endogenous business cycle mechanisms. This paper provides an overview and comparison of four models in heterodox business cycle theory: multiplier-accelerator models, Goodwin models, Minskyan debt-cycle models, and momentum trader models. A representative model from each theory is formulated as a two-dimensional predator-prey system in continuous time, which allows us to identify the different stabilising and destabilising mechanisms. We argue that the theories are substantially competing, as they posit different mechanisms that explain cycles, but we also argue that these mechanisms are not mutually exclusive. We suggest that heterodox economists work towards a synthesis.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+- [[denote:20250205T180642][Journal of Post-Keynesian Economics]]
+- [[denote:20250202T114158][Accelerator Model]]
+- [[denote:20240708T155635][Business Cycles]]
+- [[denote:20250203T182022][Neo-Goodwin Model]]
+- [[denote:20250203T181356][Minskian Growth Models]]
+
+* References
+
+
+
+#+print_bibliography:

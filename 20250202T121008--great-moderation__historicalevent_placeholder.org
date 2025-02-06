@@ -1,8 +1,0 @@
-:PROPERTIES:
-:ID:       8121729f-1246-48f7-b8ff-5539223c1f32
-:END:
-#+title:      Great Moderation
-#+date:       [2025-02-02 dom 12:10]
-#+filetags:   :historicalevent:placeholder:
-#+identifier: 20250202T121008
-#+OPTIONS: num:nil ^:{} toc:nil

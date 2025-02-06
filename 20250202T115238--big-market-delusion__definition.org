@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       331ac477-5b3f-485e-b47e-be962ff9b5aa
+:END:
+#+title:      Big Market Delusion
+#+date:       [2025-02-02 dom 11:52]
+#+filetags:   :definition:
+#+identifier: 20250202T115238
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil
+
+The main contribution of this paper is to define the concept of Big Market Delusion described as follows [cite:@cornell_2020_Big p. 15]:
+#+begin_quote
+The big market delusion arises when three ingredients come into play.
+The first is the existence of a big market, perceived or real, that draws in businesses intent on exploiting this market for growth and profit.
+The second component is overconfidence, a key behavioral characteristic possessed in disproportionate quantities by the entrepreneurs and venture capitalists (VCs) who are drawn to big markets, leading them to overestimate their chances of—and the payoff from—success.
+The final piece of the puzzle is pricing, whereby investors attach values to companies based on what others are paying for similar companies, allowing for a disconnect between a company’s stock price and its underlying fundamentals.
+#+end_quote

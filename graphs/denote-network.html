@@ -1,177 +1,171 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>Denote Explore Community Network</title>
     <style>
       body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-color: #f8f8f8;
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          background-color: #f8f8f8;
       }
 
       svg {
-        border: 0px solid #ccc;
-        z-index: 1;
+          border: 0px solid #ccc;
+	  z-index: 1;
       }
 
       .tooltip {
-        position: absolute;
-        background-color: white;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        padding: 15px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        pointer-events: none;
-        line-height: 1.4;
-        max-width: 600px;
-        z-index: 1000;
+          position: absolute;
+          background-color: white;
+          border: 1px solid #ddd;
+          border-radius: 8px;
+          padding: 15px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+          pointer-events: none;
+          line-height: 1.4;
+          max-width: 600px;
+	  z-index: 1000;
       }
 
       .lighter {
-        color: #888;
+	  color: #888;
       }
-
+      
       .tooltip .title {
-        font-weight: bold;
-        margin-bottom: 10px;
-        font-size: 28px;
+          font-weight: bold;
+          margin-bottom: 10px;
+	  font-size: 28px;
       }
 
       .tooltip .keywords {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 5px;
-        margin-top: 5px;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 5px;
+          margin-top: 5px;
       }
 
       .tooltip .keywords span {
-        background-color: #e0e7ff;
-        color: #3b82f6;
-        padding: 2px 8px;
-        border-radius: 4px;
-        font-size: 18px;
+          background-color: #e0e7ff;
+          color: #3b82f6;
+          padding: 2px 8px;
+          border-radius: 4px;
+          font-size: 18px;
       }
 
       .tooltip .metadata {
-        margin-top: 10px;
-        font-size: 18px;
-        color: #333;
+          margin-top: 10px;
+          font-size: 18px;
+          color: #333;
       }
 
       .hidden {
-        display: none;
+          display: none;
       }
-
+      
       .info-button {
-        position: fixed;
-        top: 10px;
-        left: 10px;
-        width: 50px;
-        height: 50px;
-        background-color: #007bff;
-        color: white;
-        font-size: 24px;
-        font-weight: bold;
-        text-align: center;
-        line-height: 50px;
-        border-radius: 25px;
-        cursor: pointer;
-        z-index: 1000;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-        transition:
-          transform 0.2s,
-          box-shadow 0.2s;
+	  position: fixed;
+	  top: 10px;
+	  left: 10px;
+	  width: 50px;
+	  height: 50px;
+	  background-color: #007BFF;
+	  color: white;
+	  font-size: 24px;
+	  font-weight: bold;
+	  text-align: center;
+	  line-height: 50px;
+	  border-radius: 25px;
+	  cursor: pointer;
+	  z-index: 1000;
+	  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+	  transition: transform 0.2s, box-shadow 0.2s;
       }
 
       .info-button:hover {
-        transform: scale(1.1); /* Slightly enlarges on hover */
-        box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+	  transform: scale(1.1); /* Slightly enlarges on hover */
+	  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
       }
 
       .info-button:active {
-        transform: scale(0.95); /* Slightly shrinks when clicked */
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow on click */
+	  transform: scale(0.95); /* Slightly shrinks when clicked */
+	  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow on click */
       }
 
       #info-button:hover .info-tooltip {
-        display: block; /* Show on hover */
+	  display: block; /* Show on hover */
       }
 
       .info-tooltip {
-        position: absolute;
-        top: 60px;
-        left: 10px;
-        background-color: white;
-        color: black;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        padding: 15px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        max-width: 600px; /* Prevents it from growing too wide */
-        overflow: auto;
-        display: none;
-        z-index: 99999;
+	  position: absolute;
+	  top: 60px;
+	  left: 10px;
+	  background-color: white;
+	  color: black;
+	  border: 1px solid #ddd;
+	  border-radius: 8px;
+	  padding: 15px;
+	  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	  max-width: 600px; /* Prevents it from growing too wide */
+	  overflow: auto;
+	  display: none;
+	  z-index: 99999;
       }
-
+      
       .info-tooltip .title {
-        font-weight: bold;
-        margin-bottom: 10px;
-        font-size: 24px;
+	  font-weight: bold;
+	  margin-bottom: 10px;
+	  font-size: 24px;
       }
 
       .info.tooltip .metadata {
-        margin-top: 10px;
-        font-size: 22px;
-        color: #555;
+	  margin-top: 10px;
+	  font-size: 22px;
+	  color: #555;
       }
 
       #keyword-chart svg {
-        font-family: Arial, sans-serif;
+	  font-family: Arial, sans-serif;
       }
 
       .legend-container .chart-container {
-        margin-bottom: 10px;
-        padding: 10px;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        background-color: #f8f8f8;
+	  margin-bottom: 10px;
+	  padding: 10px;
+	  border: 1px solid #ddd;
+	  border-radius: 8px;
+	  background-color: #f8f8f8;
       }
-
+      
       .metadata-container {
-        margin-bottom: 10px;
-        padding: 10px;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        background-color: #f8f8f8; /* Matches the existing tooltip and legend background */
-        font-size: 18px; /* Matches the metadata text size */
+	  margin-bottom: 10px;
+	  padding: 10px;
+	  border: 1px solid #ddd;
+	  border-radius: 8px;
+	  background-color: #f8f8f8; /* Matches the existing tooltip and legend background */
+	  font-size: 18px; /* Matches the metadata text size */
       }
 
       .metadata {
-        margin-bottom: 10px; /* Adjust spacing as needed */
-        font-size: 18px; /* Optional: Adjust font size */
+	  margin-bottom: 10px; /* Adjust spacing as needed */
+	  font-size: 18px; /* Optional: Adjust font size */
       }
+
     </style>
   </head>
   <body>
     <!-- Info Button -->
-    <div
-      id="info-button"
-      class="info-button"
-      title="Click for more information"
-    >
-      ℹ
-    </div>
+    <div id="info-button" class="info-button" title="Click for more information">ℹ</div>
     <!-- Tooltip Container -->
     <div class="info-tooltip"></div>
+</div>
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script>
-            const data = {
+      const data = {
   "meta": {
     "directed": true,
     "type": "Community",
@@ -1163,8 +1157,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20230628T172800--phd-dissertation-discussions__dissertation_meta_outdated.org",
-      "degree": 2,
-      "backlinks": 1
+      "degree": 3,
+      "backlinks": 2
     },
     {
       "id": "20230720T154917",
@@ -1321,8 +1315,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20240708T113039--rational-expectations__placeholder.org",
-      "degree": 6,
-      "backlinks": 7
+      "degree": 10,
+      "backlinks": 12
     },
     {
       "id": "20240708T113226",
@@ -1393,8 +1387,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20240708T155635--business-cycles__placeholder.org",
-      "degree": 13,
-      "backlinks": 22
+      "degree": 16,
+      "backlinks": 28
     },
     {
       "id": "20240708T155703",
@@ -1405,8 +1399,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20240708T155703--stylized-facts__placeholder.org",
-      "degree": 10,
-      "backlinks": 15
+      "degree": 12,
+      "backlinks": 17
     },
     {
       "id": "20240708T155825",
@@ -1626,8 +1620,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20241126T141520--asset-prices__placeholder.org",
-      "degree": 2,
-      "backlinks": 2
+      "degree": 3,
+      "backlinks": 3
     },
     {
       "id": "20241128T145039",
@@ -1715,8 +1709,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T113854--inatention-models__placeholder.org",
-      "degree": 4,
-      "backlinks": 5
+      "degree": 5,
+      "backlinks": 6
     },
     {
       "id": "20250202T113930",
@@ -1801,8 +1795,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T114350--animal-spirits__placeholder.org",
-      "degree": 1,
-      "backlinks": 1
+      "degree": 2,
+      "backlinks": 2
     },
     {
       "id": "20250202T114420",
@@ -1887,8 +1881,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T114657--tobins-q__placeholder.org",
-      "degree": 3,
-      "backlinks": 1
+      "degree": 4,
+      "backlinks": 2
     },
     {
       "id": "20250202T114817",
@@ -1924,8 +1918,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T114928--asset-bubble__placeholder.org",
-      "degree": 12,
-      "backlinks": 33
+      "degree": 16,
+      "backlinks": 40
     },
     {
       "id": "20250202T114954",
@@ -1960,8 +1954,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T115037--autonomous-investment-bubble__placeholder.org",
-      "degree": 3,
-      "backlinks": 5
+      "degree": 4,
+      "backlinks": 6
     },
     {
       "id": "20250202T115059",
@@ -2020,8 +2014,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T115203--behavioral-finance__placeholder.org",
-      "degree": 4,
-      "backlinks": 6
+      "degree": 8,
+      "backlinks": 11
     },
     {
       "id": "20250202T115214",
@@ -2032,20 +2026,20 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T115214--behavior-bias__placeholder.org",
-      "degree": 4,
-      "backlinks": 9
+      "degree": 6,
+      "backlinks": 11
     },
     {
       "id": "20250202T115238",
       "signature": null,
       "name": "Big Market Delusion",
       "keywords": [
-        "placeholder"
+        "definition"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20250202T115238--big-market-delusion__placeholder.org",
-      "degree": 0,
-      "backlinks": 0
+      "filename": "/home/gpetrini/Org/20250202T115238--big-market-delusion__definition.org",
+      "degree": 1,
+      "backlinks": 2
     },
     {
       "id": "20250202T115256",
@@ -2080,8 +2074,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T115328--canonical-models__placeholder.org",
-      "degree": 12,
-      "backlinks": 12
+      "degree": 13,
+      "backlinks": 13
     },
     {
       "id": "20250202T115405",
@@ -2176,8 +2170,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T115838--speculation__placeholder.org",
-      "degree": 4,
-      "backlinks": 4
+      "degree": 5,
+      "backlinks": 5
     },
     {
       "id": "20250202T115857",
@@ -2225,8 +2219,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T120026--review-of-literature__placeholder.org",
-      "degree": 4,
-      "backlinks": 4
+      "degree": 6,
+      "backlinks": 7
     },
     {
       "id": "20250202T120045",
@@ -2273,8 +2267,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T120119--regulation__placeholder.org",
-      "degree": 2,
-      "backlinks": 2
+      "degree": 3,
+      "backlinks": 3
     },
     {
       "id": "20250202T120130",
@@ -2334,8 +2328,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T120251--policy-oriented__placeholder.org",
-      "degree": 7,
-      "backlinks": 8
+      "degree": 9,
+      "backlinks": 10
     },
     {
       "id": "20250202T120321",
@@ -2346,8 +2340,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T120321--phillips-curve__placeholder.org",
-      "degree": 3,
-      "backlinks": 4
+      "degree": 4,
+      "backlinks": 5
     },
     {
       "id": "20250202T120332",
@@ -2358,8 +2352,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T120332--overreaction__placeholder.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 1,
+      "backlinks": 4
     },
     {
       "id": "20250202T120344",
@@ -2370,8 +2364,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T120344--optmism-bias__placeholder.org",
-      "degree": 4,
-      "backlinks": 6
+      "degree": 6,
+      "backlinks": 10
     },
     {
       "id": "20250202T120357",
@@ -2394,8 +2388,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T120415--negative-bias__placeholder.org",
-      "degree": 2,
-      "backlinks": 3
+      "degree": 3,
+      "backlinks": 5
     },
     {
       "id": "20250202T120427",
@@ -2478,8 +2472,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T120600--kalman-filter__placeholder.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 1,
+      "backlinks": 1
     },
     {
       "id": "20250202T120612",
@@ -2490,8 +2484,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T120612--investment-horizon__placeholder.org",
-      "degree": 1,
-      "backlinks": 4
+      "degree": 2,
+      "backlinks": 6
     },
     {
       "id": "20250202T120625",
@@ -2502,8 +2496,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T120625--investment-determination__placeholder.org",
-      "degree": 5,
-      "backlinks": 5
+      "degree": 8,
+      "backlinks": 10
     },
     {
       "id": "20250202T120638",
@@ -2563,8 +2557,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T120807--innovation-bubble-abm__placeholder.org",
-      "degree": 23,
-      "backlinks": 29
+      "degree": 30,
+      "backlinks": 38
     },
     {
       "id": "20250202T120824",
@@ -2587,8 +2581,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T120843--inflation__placeholder.org",
-      "degree": 7,
-      "backlinks": 9
+      "degree": 9,
+      "backlinks": 12
     },
     {
       "id": "20250202T120856",
@@ -2667,13 +2661,12 @@
       "signature": null,
       "name": "Great Moderation",
       "keywords": [
-        "historicalevent",
-        "placeholder"
+        "historicalevent"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20250202T121008--great-moderation__historicalevent_placeholder.org",
-      "degree": 0,
-      "backlinks": 0
+      "filename": "/home/gpetrini/Org/20250202T121008--great-moderation__historicalevent.org",
+      "degree": 2,
+      "backlinks": 1
     },
     {
       "id": "20250202T121026",
@@ -2723,8 +2716,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T121115--fiscal-policy__placeholder_policy.org",
-      "degree": 1,
-      "backlinks": 2
+      "degree": 2,
+      "backlinks": 3
     },
     {
       "id": "20250202T121139",
@@ -2735,8 +2728,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T121139--feedback-mechanisms__placeholder.org",
-      "degree": 2,
-      "backlinks": 2
+      "degree": 4,
+      "backlinks": 4
     },
     {
       "id": "20250202T121158",
@@ -2747,8 +2740,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T121158--expectations__placeholder.org",
-      "degree": 17,
-      "backlinks": 27
+      "degree": 22,
+      "backlinks": 32
     },
     {
       "id": "20250202T121234",
@@ -2834,8 +2827,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T121503--causal-narratives__placeholder.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 2,
+      "backlinks": 2
     },
     {
       "id": "20250202T121520",
@@ -2910,8 +2903,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T121656--coordination__placeholder.org",
-      "degree": 1,
-      "backlinks": 1
+      "degree": 2,
+      "backlinks": 2
     },
     {
       "id": "20250202T121707",
@@ -2961,8 +2954,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T121805--creative-destruction__definition_placeholder.org",
-      "degree": 2,
-      "backlinks": 4
+      "degree": 3,
+      "backlinks": 5
     },
     {
       "id": "20250202T121820",
@@ -3011,8 +3004,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T121916--diagnostic-expectations__placeholder.org",
-      "degree": 1,
-      "backlinks": 1
+      "degree": 2,
+      "backlinks": 4
     },
     {
       "id": "20250202T121943",
@@ -3111,8 +3104,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250202T122308--experimental-finance__placeholder.org",
-      "degree": 4,
-      "backlinks": 5
+      "degree": 6,
+      "backlinks": 8
     },
     {
       "id": "20250202T122348",
@@ -3188,8 +3181,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250203T172959--dot-com-crisis__placeholder.org",
-      "degree": 11,
-      "backlinks": 15
+      "degree": 12,
+      "backlinks": 17
     },
     {
       "id": "20250203T173133",
@@ -3200,8 +3193,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250203T173133--financial-crises__placeholder.org",
-      "degree": 11,
-      "backlinks": 12
+      "degree": 12,
+      "backlinks": 13
     },
     {
       "id": "20250203T173222",
@@ -3301,8 +3294,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250203T173614--fundamentals__financial_placeholder.org",
-      "degree": 4,
-      "backlinks": 9
+      "degree": 6,
+      "backlinks": 11
     },
     {
       "id": "20250203T174044",
@@ -3430,8 +3423,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250203T175849--information-rigidity-models__information_placeholder_rigidity.org",
-      "degree": 3,
-      "backlinks": 4
+      "degree": 7,
+      "backlinks": 9
     },
     {
       "id": "20250203T175927",
@@ -3576,8 +3569,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250203T180559--learning-and-heuristics__experimental_heuristics_learning.org",
-      "degree": 9,
-      "backlinks": 11
+      "degree": 10,
+      "backlinks": 12
     },
     {
       "id": "20250203T180625",
@@ -3602,8 +3595,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250203T180644--learn-to-forecast-experiments__experimental_forecast_learning.org",
-      "degree": 3,
-      "backlinks": 7
+      "degree": 6,
+      "backlinks": 11
     },
     {
       "id": "20250203T180729",
@@ -3615,8 +3608,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250203T180729--learn-to-optmize-experiments__experimental_learning.org",
-      "degree": 1,
-      "backlinks": 2
+      "degree": 2,
+      "backlinks": 3
     },
     {
       "id": "20250203T180841",
@@ -3641,8 +3634,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250203T180947--lucas-critique__definition_mainstream.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 1,
+      "backlinks": 2
     },
     {
       "id": "20250203T181036",
@@ -3732,8 +3725,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250203T181356--minskian-growth-models__canonicalmodels_financialcrisis.org",
-      "degree": 1,
-      "backlinks": 1
+      "degree": 2,
+      "backlinks": 2
     },
     {
       "id": "20250203T181422",
@@ -3943,8 +3936,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250203T182443--overinvestment__placeholder.org",
-      "degree": 5,
-      "backlinks": 8
+      "degree": 7,
+      "backlinks": 10
     },
     {
       "id": "20250203T182500",
@@ -4008,8 +4001,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250203T182723--plotting-and-data-visualization__placeholder_visualization.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 1,
+      "backlinks": 1
     },
     {
       "id": "20250203T182749",
@@ -4080,14 +4073,12 @@
       "signature": null,
       "name": "Rational Inattention models",
       "keywords": [
-        "behavioural",
-        "information",
-        "mainstream"
+        "placeholder"
       ],
       "type": "org",
-      "filename": "/home/gpetrini/Org/20250203T183555--rational-inattention-models__behavioural_information_mainstream.org",
-      "degree": 0,
-      "backlinks": 0
+      "filename": "/home/gpetrini/Org/20250203T183555--rational-inattention-models__placeholder.org",
+      "degree": 3,
+      "backlinks": 1
     },
     {
       "id": "20250203T183616",
@@ -4148,8 +4139,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250203T183803--rigidity-and-frictions__placeholder.org",
-      "degree": 1,
-      "backlinks": 1
+      "degree": 2,
+      "backlinks": 2
     },
     {
       "id": "20250203T183856",
@@ -4160,8 +4151,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250203T183856--selection-bias__behavioural.org",
-      "degree": 1,
-      "backlinks": 2
+      "degree": 2,
+      "backlinks": 3
     },
     {
       "id": "20250203T183912",
@@ -4172,8 +4163,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250203T183912--selective-memory__behavioural.org",
-      "degree": 0,
-      "backlinks": 0
+      "degree": 1,
+      "backlinks": 2
     },
     {
       "id": "20250203T183931",
@@ -4272,8 +4263,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250203T184155--supermultiplier-models__canonicalmodels_sraffian.org",
-      "degree": 15,
-      "backlinks": 15
+      "degree": 16,
+      "backlinks": 16
     },
     {
       "id": "20250203T184210",
@@ -4284,8 +4275,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250203T184210--survey-data__placeholder.org",
-      "degree": 8,
-      "backlinks": 11
+      "degree": 11,
+      "backlinks": 15
     },
     {
       "id": "20250203T184226",
@@ -4299,8 +4290,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250203T184226--switching-mechanisms__behavioural_experimental_heuristics_meta.org",
-      "degree": 6,
-      "backlinks": 9
+      "degree": 8,
+      "backlinks": 12
     },
     {
       "id": "20250203T184250",
@@ -4326,8 +4317,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250203T184305--taylor-rule__definition_monetary_policy.org",
-      "degree": 2,
-      "backlinks": 1
+      "degree": 3,
+      "backlinks": 2
     },
     {
       "id": "20250203T184320",
@@ -4338,8 +4329,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250203T184320--technological-revolution__placeholder.org",
-      "degree": 7,
-      "backlinks": 9
+      "degree": 8,
+      "backlinks": 10
     },
     {
       "id": "20250203T184409",
@@ -4583,8 +4574,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250204T172907--empirical__placeholder.org",
-      "degree": 10,
-      "backlinks": 10
+      "degree": 11,
+      "backlinks": 11
     },
     {
       "id": "20250204T172927",
@@ -4694,8 +4685,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250204T190112--seminal-work__placeholder.org",
-      "degree": 1,
-      "backlinks": 1
+      "degree": 3,
+      "backlinks": 3
     },
     {
       "id": "20250204T190341",
@@ -4984,8 +4975,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250205T104529--mainstream-models__schoolofthought.org",
-      "degree": 10,
-      "backlinks": 10
+      "degree": 11,
+      "backlinks": 11
     },
     {
       "id": "20250205T110047",
@@ -4996,8 +4987,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250205T110047--historical-events__placeholder.org",
-      "degree": 4,
-      "backlinks": 4
+      "degree": 5,
+      "backlinks": 5
     },
     {
       "id": "20250205T112724",
@@ -5235,8 +5226,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250205T154234--journal-of-economic-dynamics-and-control__journal.org",
-      "degree": 3,
-      "backlinks": 3
+      "degree": 4,
+      "backlinks": 4
     },
     {
       "id": "20250205T154308",
@@ -5271,8 +5262,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250205T155125--firm-optimism-and-pessimism__bib.org",
-      "degree": 6,
-      "backlinks": 0
+      "degree": 7,
+      "backlinks": 1
     },
     {
       "id": "20250205T155218",
@@ -5331,8 +5322,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250205T160641--journal-of-economic-behavior-organization__journal.org",
-      "degree": 1,
-      "backlinks": 1
+      "degree": 2,
+      "backlinks": 2
     },
     {
       "id": "20250205T160736",
@@ -5355,8 +5346,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250205T161019--germany__country.org",
-      "degree": 2,
-      "backlinks": 2
+      "degree": 3,
+      "backlinks": 3
     },
     {
       "id": "20250205T161241",
@@ -5427,8 +5418,8 @@
       ],
       "type": "org",
       "filename": "/home/gpetrini/Org/20250205T163840--american-economic-review__journal.org",
-      "degree": 4,
-      "backlinks": 4
+      "degree": 5,
+      "backlinks": 5
     },
     {
       "id": "20250205T163903",
@@ -5907,6 +5898,162 @@
       "filename": "/home/gpetrini/Org/20250205T181353--new-zeland__country.org",
       "degree": 1,
       "backlinks": 1
+    },
+    {
+      "id": "20250206T100825",
+      "signature": null,
+      "name": "Financial Analysts Journal",
+      "keywords": [
+        "journal"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250206T100825--financial-analysts-journal__journal.org",
+      "degree": 1,
+      "backlinks": 1
+    },
+    {
+      "id": "20250206T100924",
+      "signature": null,
+      "name": "The Big Market Delusion: valuation and Investment Implications",
+      "keywords": [
+        "bib"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250206T100924--the-big-market-delusion-valuation-and-investment-implications__bib.org",
+      "degree": 16,
+      "backlinks": 0
+    },
+    {
+      "id": "20250206T101627",
+      "signature": null,
+      "name": "Asset Price Volatility and Investment Horizons: An Experimental Investigation",
+      "keywords": [
+        "bib"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250206T101627--asset-price-volatility-and-investment-horizons-an-experimental-investigation__bib.org",
+      "degree": 13,
+      "backlinks": 0
+    },
+    {
+      "id": "20250206T102310",
+      "signature": null,
+      "name": "Sentiment shocks",
+      "keywords": [
+        "placeholder"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250206T102310--sentiment-shocks__placeholder.org",
+      "degree": 1,
+      "backlinks": 1
+    },
+    {
+      "id": "20250206T102320",
+      "signature": null,
+      "name": "Narrative Approach",
+      "keywords": [
+        "placeholder"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250206T102320--narrative-approach__placeholder.org",
+      "degree": 1,
+      "backlinks": 2
+    },
+    {
+      "id": "20250206T102344",
+      "signature": null,
+      "name": "What Drives Aggregate Investment? Evidence from German Survey Data",
+      "keywords": [
+        "bib"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250206T102344--what-drives-aggregate-investment-evidence-from-german-survey-data__bib.org",
+      "degree": 17,
+      "backlinks": 0
+    },
+    {
+      "id": "20250206T103734",
+      "signature": null,
+      "name": "NBER",
+      "keywords": [
+        "journal"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250206T103734--nber__journal.org",
+      "degree": 2,
+      "backlinks": 2
+    },
+    {
+      "id": "20250206T103752",
+      "signature": null,
+      "name": "Expectations and Investment",
+      "keywords": [
+        "bib"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250206T103752--expectations-and-investment__bib.org",
+      "degree": 12,
+      "backlinks": 3
+    },
+    {
+      "id": "20250206T104418",
+      "signature": null,
+      "name": "Journal of Behavioral and Experimental Finance",
+      "keywords": [
+        "journal"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250206T104418--journal-of-behavioral-and-experimental-finance__journal.org",
+      "degree": 1,
+      "backlinks": 1
+    },
+    {
+      "id": "20250206T104455",
+      "signature": null,
+      "name": "Expectation Formation in Finance and Macroeconomics: A Review of New Experimental Evidence",
+      "keywords": [
+        "bib"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250206T104455--expectation-formation-in-finance-and-macroeconomics-a-review-of-new-experimental-evidence__bib.org",
+      "degree": 15,
+      "backlinks": 0
+    },
+    {
+      "id": "20250206T105445",
+      "signature": null,
+      "name": "Overreaction and Diagnostic Expectations in Macroeconomics",
+      "keywords": [
+        "bib"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250206T105445--overreaction-and-diagnostic-expectations-in-macroeconomics__bib.org",
+      "degree": 25,
+      "backlinks": 0
+    },
+    {
+      "id": "20250206T110740",
+      "signature": null,
+      "name": "Information Rigidity and the Expectations Formation Process: A Simple Framework and New Facts",
+      "keywords": [
+        "bib"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250206T110740--information-rigidity-and-the-expectations-formation-process-a-simple-framework-and-new-facts__bib.org",
+      "degree": 16,
+      "backlinks": 2
+    },
+    {
+      "id": "20250206T112902",
+      "signature": null,
+      "name": "A Rational Route to Randomness",
+      "keywords": [
+        "bib"
+      ],
+      "type": "org",
+      "filename": "/home/gpetrini/Org/20250206T112902--a-rational-route-to-randomness__bib.org",
+      "degree": 3,
+      "backlinks": 0
     }
   ],
   "edges": [
@@ -7446,6 +7593,11 @@
       "weight": 1
     },
     {
+      "source": "20250202T121008",
+      "target": "20250205T110047",
+      "weight": 1
+    },
+    {
       "source": "20250202T121038",
       "target": "20250205T110047",
       "weight": 1
@@ -7608,6 +7760,16 @@
     {
       "source": "20250203T182403",
       "target": "20250202T121943",
+      "weight": 1
+    },
+    {
+      "source": "20250203T183555",
+      "target": "20250205T104529",
+      "weight": 1
+    },
+    {
+      "source": "20250203T183555",
+      "target": "20250202T121158",
       "weight": 1
     },
     {
@@ -9624,613 +9786,1184 @@
       "source": "20250205T181146",
       "target": "20250202T121158",
       "weight": 1
+    },
+    {
+      "source": "20250206T100924",
+      "target": "20250202T115238",
+      "weight": 2
+    },
+    {
+      "source": "20250206T100924",
+      "target": "20250202T114928",
+      "weight": 2
+    },
+    {
+      "source": "20250206T100924",
+      "target": "20250203T172959",
+      "weight": 2
+    },
+    {
+      "source": "20250206T100924",
+      "target": "20250203T173614",
+      "weight": 1
+    },
+    {
+      "source": "20250206T100924",
+      "target": "20250202T120344",
+      "weight": 1
+    },
+    {
+      "source": "20250206T100924",
+      "target": "20250202T120251",
+      "weight": 1
+    },
+    {
+      "source": "20250206T100924",
+      "target": "20250202T115214",
+      "weight": 1
+    },
+    {
+      "source": "20250206T100924",
+      "target": "20250202T115203",
+      "weight": 1
+    },
+    {
+      "source": "20250206T100924",
+      "target": "20250202T120807",
+      "weight": 1
+    },
+    {
+      "source": "20250206T100924",
+      "target": "20250202T121503",
+      "weight": 1
+    },
+    {
+      "source": "20250206T100924",
+      "target": "20250202T121805",
+      "weight": 1
+    },
+    {
+      "source": "20250206T100924",
+      "target": "20250203T182443",
+      "weight": 1
+    },
+    {
+      "source": "20250206T100924",
+      "target": "20250203T183856",
+      "weight": 1
+    },
+    {
+      "source": "20250206T100924",
+      "target": "20250202T121139",
+      "weight": 1
+    },
+    {
+      "source": "20250206T100924",
+      "target": "20250206T100825",
+      "weight": 1
+    },
+    {
+      "source": "20250206T100924",
+      "target": "20250204T190112",
+      "weight": 1
+    },
+    {
+      "source": "20250206T101627",
+      "target": "20250203T180644",
+      "weight": 1
+    },
+    {
+      "source": "20250206T101627",
+      "target": "20250202T120612",
+      "weight": 2
+    },
+    {
+      "source": "20250206T101627",
+      "target": "20250202T114928",
+      "weight": 1
+    },
+    {
+      "source": "20250206T101627",
+      "target": "20250202T121139",
+      "weight": 1
+    },
+    {
+      "source": "20250206T101627",
+      "target": "20250202T121656",
+      "weight": 1
+    },
+    {
+      "source": "20250206T101627",
+      "target": "20250202T120807",
+      "weight": 1
+    },
+    {
+      "source": "20250206T101627",
+      "target": "20230628T172800",
+      "weight": 1
+    },
+    {
+      "source": "20250206T101627",
+      "target": "20250202T120119",
+      "weight": 1
+    },
+    {
+      "source": "20250206T101627",
+      "target": "20241126T141520",
+      "weight": 1
+    },
+    {
+      "source": "20250206T101627",
+      "target": "20250202T121158",
+      "weight": 1
+    },
+    {
+      "source": "20250206T101627",
+      "target": "20250202T115203",
+      "weight": 1
+    },
+    {
+      "source": "20250206T101627",
+      "target": "20250202T122308",
+      "weight": 1
+    },
+    {
+      "source": "20250206T101627",
+      "target": "20250205T160641",
+      "weight": 1
+    },
+    {
+      "source": "20250206T102344",
+      "target": "20250202T120321",
+      "weight": 1
+    },
+    {
+      "source": "20250206T102344",
+      "target": "20250203T184320",
+      "weight": 1
+    },
+    {
+      "source": "20250206T102344",
+      "target": "20250202T121158",
+      "weight": 1
+    },
+    {
+      "source": "20250206T102344",
+      "target": "20250202T120625",
+      "weight": 2
+    },
+    {
+      "source": "20250206T102344",
+      "target": "20250202T120807",
+      "weight": 1
+    },
+    {
+      "source": "20250206T102344",
+      "target": "20240708T155703",
+      "weight": 1
+    },
+    {
+      "source": "20250206T102344",
+      "target": "20250203T184210",
+      "weight": 2
+    },
+    {
+      "source": "20250206T102344",
+      "target": "20250206T102320",
+      "weight": 2
+    },
+    {
+      "source": "20250206T102344",
+      "target": "20250205T161019",
+      "weight": 1
+    },
+    {
+      "source": "20250206T102344",
+      "target": "20250202T121503",
+      "weight": 1
+    },
+    {
+      "source": "20250206T102344",
+      "target": "20240708T155635",
+      "weight": 1
+    },
+    {
+      "source": "20250206T102344",
+      "target": "20250202T114350",
+      "weight": 1
+    },
+    {
+      "source": "20250206T102344",
+      "target": "20250203T184155",
+      "weight": 1
+    },
+    {
+      "source": "20250206T102344",
+      "target": "20250205T154234",
+      "weight": 1
+    },
+    {
+      "source": "20250206T102344",
+      "target": "20250206T102310",
+      "weight": 1
+    },
+    {
+      "source": "20250206T102344",
+      "target": "20250205T155125",
+      "weight": 1
+    },
+    {
+      "source": "20250206T102344",
+      "target": "20250206T103752",
+      "weight": 1
+    },
+    {
+      "source": "20250206T103752",
+      "target": "20240708T113039",
+      "weight": 1
+    },
+    {
+      "source": "20250206T103752",
+      "target": "20250202T121158",
+      "weight": 1
+    },
+    {
+      "source": "20250206T103752",
+      "target": "20250203T184210",
+      "weight": 1
+    },
+    {
+      "source": "20250206T103752",
+      "target": "20250202T114657",
+      "weight": 1
+    },
+    {
+      "source": "20250206T103752",
+      "target": "20250203T175849",
+      "weight": 1
+    },
+    {
+      "source": "20250206T103752",
+      "target": "20250202T120807",
+      "weight": 1
+    },
+    {
+      "source": "20250206T103752",
+      "target": "20250202T115214",
+      "weight": 1
+    },
+    {
+      "source": "20250206T103752",
+      "target": "20250202T115203",
+      "weight": 1
+    },
+    {
+      "source": "20250206T103752",
+      "target": "20250202T120625",
+      "weight": 1
+    },
+    {
+      "source": "20250206T103752",
+      "target": "20250206T103734",
+      "weight": 1
+    },
+    {
+      "source": "20250206T104455",
+      "target": "20240708T113039",
+      "weight": 1
+    },
+    {
+      "source": "20250206T104455",
+      "target": "20250203T180644",
+      "weight": 2
+    },
+    {
+      "source": "20250206T104455",
+      "target": "20250203T180729",
+      "weight": 1
+    },
+    {
+      "source": "20250206T104455",
+      "target": "20240708T155703",
+      "weight": 1
+    },
+    {
+      "source": "20250206T104455",
+      "target": "20250202T122308",
+      "weight": 2
+    },
+    {
+      "source": "20250206T104455",
+      "target": "20250202T120807",
+      "weight": 1
+    },
+    {
+      "source": "20250206T104455",
+      "target": "20250202T120251",
+      "weight": 1
+    },
+    {
+      "source": "20250206T104455",
+      "target": "20250202T115203",
+      "weight": 2
+    },
+    {
+      "source": "20250206T104455",
+      "target": "20250202T121115",
+      "weight": 1
+    },
+    {
+      "source": "20250206T104455",
+      "target": "20250202T114928",
+      "weight": 3
+    },
+    {
+      "source": "20250206T104455",
+      "target": "20250202T120843",
+      "weight": 1
+    },
+    {
+      "source": "20250206T104455",
+      "target": "20250203T184305",
+      "weight": 1
+    },
+    {
+      "source": "20250206T104455",
+      "target": "20250203T175849",
+      "weight": 1
+    },
+    {
+      "source": "20250206T104455",
+      "target": "20250206T104418",
+      "weight": 1
+    },
+    {
+      "source": "20250206T104455",
+      "target": "20250202T120026",
+      "weight": 1
+    },
+    {
+      "source": "20250206T105445",
+      "target": "20240708T113039",
+      "weight": 2
+    },
+    {
+      "source": "20250206T105445",
+      "target": "20250202T121916",
+      "weight": 3
+    },
+    {
+      "source": "20250206T105445",
+      "target": "20250203T183912",
+      "weight": 2
+    },
+    {
+      "source": "20250206T105445",
+      "target": "20250203T180947",
+      "weight": 2
+    },
+    {
+      "source": "20250206T105445",
+      "target": "20250202T120344",
+      "weight": 3
+    },
+    {
+      "source": "20250206T105445",
+      "target": "20250202T120415",
+      "weight": 2
+    },
+    {
+      "source": "20250206T105445",
+      "target": "20250203T182443",
+      "weight": 1
+    },
+    {
+      "source": "20250206T105445",
+      "target": "20250203T184226",
+      "weight": 2
+    },
+    {
+      "source": "20250206T105445",
+      "target": "20250202T120807",
+      "weight": 3
+    },
+    {
+      "source": "20250206T105445",
+      "target": "20250202T120332",
+      "weight": 4
+    },
+    {
+      "source": "20250206T105445",
+      "target": "20250202T113854",
+      "weight": 1
+    },
+    {
+      "source": "20250206T105445",
+      "target": "20250203T175849",
+      "weight": 1
+    },
+    {
+      "source": "20250206T105445",
+      "target": "20250206T103752",
+      "weight": 2
+    },
+    {
+      "source": "20250206T105445",
+      "target": "20240708T155635",
+      "weight": 3
+    },
+    {
+      "source": "20250206T105445",
+      "target": "20250202T114928",
+      "weight": 1
+    },
+    {
+      "source": "20250206T105445",
+      "target": "20250206T110740",
+      "weight": 2
+    },
+    {
+      "source": "20250206T105445",
+      "target": "20250202T115037",
+      "weight": 1
+    },
+    {
+      "source": "20250206T105445",
+      "target": "20250203T183803",
+      "weight": 1
+    },
+    {
+      "source": "20250206T105445",
+      "target": "20250202T120026",
+      "weight": 2
+    },
+    {
+      "source": "20250206T105445",
+      "target": "20250203T182723",
+      "weight": 1
+    },
+    {
+      "source": "20250206T105445",
+      "target": "20250202T120625",
+      "weight": 2
+    },
+    {
+      "source": "20250206T105445",
+      "target": "20250203T181356",
+      "weight": 1
+    },
+    {
+      "source": "20250206T105445",
+      "target": "20250203T173133",
+      "weight": 1
+    },
+    {
+      "source": "20250206T105445",
+      "target": "20250204T172907",
+      "weight": 1
+    },
+    {
+      "source": "20250206T105445",
+      "target": "20250206T103734",
+      "weight": 1
+    },
+    {
+      "source": "20250206T110740",
+      "target": "20250203T175849",
+      "weight": 2
+    },
+    {
+      "source": "20250206T110740",
+      "target": "20240708T113039",
+      "weight": 1
+    },
+    {
+      "source": "20250206T110740",
+      "target": "20250203T173614",
+      "weight": 1
+    },
+    {
+      "source": "20250206T110740",
+      "target": "20250202T120807",
+      "weight": 1
+    },
+    {
+      "source": "20250206T110740",
+      "target": "20240708T155635",
+      "weight": 2
+    },
+    {
+      "source": "20250206T110740",
+      "target": "20250202T120843",
+      "weight": 2
+    },
+    {
+      "source": "20250206T110740",
+      "target": "20250203T184210",
+      "weight": 1
+    },
+    {
+      "source": "20250206T110740",
+      "target": "20250203T183555",
+      "weight": 1
+    },
+    {
+      "source": "20250206T110740",
+      "target": "20250202T121008",
+      "weight": 1
+    },
+    {
+      "source": "20250206T110740",
+      "target": "20250202T120600",
+      "weight": 1
+    },
+    {
+      "source": "20250206T110740",
+      "target": "20250205T163840",
+      "weight": 1
+    },
+    {
+      "source": "20250206T110740",
+      "target": "20250202T121158",
+      "weight": 1
+    },
+    {
+      "source": "20250206T110740",
+      "target": "20250202T115838",
+      "weight": 1
+    },
+    {
+      "source": "20250206T110740",
+      "target": "20250203T180644",
+      "weight": 1
+    },
+    {
+      "source": "20250206T110740",
+      "target": "20250203T180559",
+      "weight": 1
+    },
+    {
+      "source": "20250206T112902",
+      "target": "20250202T115328",
+      "weight": 1
+    },
+    {
+      "source": "20250206T112902",
+      "target": "20250204T190112",
+      "weight": 1
+    },
+    {
+      "source": "20250206T112902",
+      "target": "20250203T184226",
+      "weight": 1
     }
   ]
 }
 
-            const width = 1440;
-            const height = 900;
-            const fontSize = 18;
-            const color = d3.scaleOrdinal(d3.schemeObservable10);
-            const links = data.edges; // Array of edges
-            const nodes = data.nodes; // Array of nodes
-            // Variable to hold the current minimum degree tag value
-            let minDegreeTag = 2;
+      const width = 1440;
+      const height = 900;
+      const fontSize = 18;
+      const color = d3.scaleOrdinal(d3.schemeObservable10);
+      const links = data.edges; // Array of edges
+      const nodes = data.nodes; // Array of nodes
+      // Variable to hold the current minimum degree tag value
+      let minDegreeTag = 2;
 
-            // Create a tooltip div
-            const tooltip = d3.select("body")
-      	    .append("div")
-      	    .attr("class", "tooltip hidden");
+      // Create a tooltip div
+      const tooltip = d3.select("body")
+	    .append("div")
+	    .attr("class", "tooltip hidden");
 
-            // Create a zoom behaviour
-            const zoom = d3.zoom()
-      	    .scaleExtent([0.1, 4]) // Zoom scale limits
-      	    .on("zoom", (event) => {
-      		svgGroup.attr("transform", event.transform); // Apply zoom
-      	    });
+      // Create a zoom behaviour
+      const zoom = d3.zoom()
+	    .scaleExtent([0.1, 4]) // Zoom scale limits
+	    .on("zoom", (event) => {
+		svgGroup.attr("transform", event.transform); // Apply zoom
+	    });
 
-            // Create the SVG container with zoom functionality
-            const svg = d3.select('body').append("svg")
-      	    .attr("width", width)
-      	    .attr("height", height)
-      	    .attr("viewBox", [0, 0, width, height])
-      	    .attr("style", "max-width: 100%; height: auto;")
-      	    .call(zoom);
+      // Create the SVG container with zoom functionality
+      const svg = d3.select('body').append("svg")
+	    .attr("width", width)
+	    .attr("height", height)
+	    .attr("viewBox", [0, 0, width, height])
+	    .attr("style", "max-width: 100%; height: auto;")
+	    .call(zoom);
 
-            const svgGroup = svg.append("g"); // Group to apply zoom transformations
-            const radiusScale = d3.scaleLinear()
-      	    .domain(d3.extent(nodes, d => d.degree)) // Node degree range
-            .range([7, 30]); // Radius range for nodes
+      const svgGroup = svg.append("g"); // Group to apply zoom transformations
+      const radiusScale = d3.scaleLinear()
+	    .domain(d3.extent(nodes, d => d.degree)) // Node degree range
+      .range([7, 30]); // Radius range for nodes
 
-            // Define a weight scale for edge stroke width (Keywords only)
-            const isKeywordType = data.meta.type === "Keywords";
-            const maxWeight = d3.max(links, d => d.weight || 1);
+      // Define a weight scale for edge stroke width (Keywords only)
+      const isKeywordType = data.meta.type === "Keywords";
+      const maxWeight = d3.max(links, d => d.weight || 1);
 
-            // Define the weight scale with interpolation
-            const weightScale = d3.scaleLinear()
-      	    .domain([1, maxWeight]) // Map the range of weights
-      	    .range(isKeywordType ? [2, 30] : [1, 1]); // Adjust the range
+      // Define the weight scale with interpolation
+      const weightScale = d3.scaleLinear()
+	    .domain([1, maxWeight]) // Map the range of weights
+	    .range(isKeywordType ? [2, 30] : [1, 1]); // Adjust the range
 
-            const arrowMarkers = svg.append("defs");
+      const arrowMarkers = svg.append("defs");
 
-            // Pre-calculate refX for edges
-            links.forEach((d, i) => {
-            const targetNode = nodes.find(node => node.id === d.target);
-            const targetRadius = isKeywordType ? 15 : radiusScale(targetNode.degree); // Use constant radius if isKeywordType is true
-            d.refX = targetRadius + 2; // Dynamically calculate refX for alignment, with padding
-            });
+      // Pre-calculate refX for edges
+      links.forEach((d, i) => {
+      const targetNode = nodes.find(node => node.id === d.target);
+      const targetRadius = isKeywordType ? 15 : radiusScale(targetNode.degree); // Use constant radius if isKeywordType is true
+      d.refX = targetRadius + 2; // Dynamically calculate refX for alignment, with padding
+      });
 
-            // Define arrow markers dynamically based on line weight
-            links.forEach((d, i) => {
-            arrowMarkers.append("marker")
-            .attr("id", `arrow-${i}`)
-            .attr("viewBox", "0 -5 10 10")
-            .attr("refX", d.refX) // Use the pre-calculated refX
-            .attr("refY", 0)
-            .attr("markerWidth", 10) // Adjust arrow size
-            .attr("markerHeight", 5) // Adjust arrow size
-            .attr("orient", "auto")
-            .append("path")
-            .attr("d", "M0,-5L10,0L0,5") // Arrow shape
-            .attr("fill", "#999")
-            .attr("stroke", "none");
-            });
+      // Define arrow markers dynamically based on line weight
+      links.forEach((d, i) => {
+      arrowMarkers.append("marker")
+      .attr("id", `arrow-${i}`)
+      .attr("viewBox", "0 -5 10 10")
+      .attr("refX", d.refX) // Use the pre-calculated refX
+      .attr("refY", 0)
+      .attr("markerWidth", 10) // Adjust arrow size
+      .attr("markerHeight", 5) // Adjust arrow size
+      .attr("orient", "auto")
+      .append("path")
+      .attr("d", "M0,-5L10,0L0,5") // Arrow shape
+      .attr("fill", "#999")
+      .attr("stroke", "none");
+      });
 
-            // Add links and use dynamically created markers
-            const link = svgGroup.append("g")
-            .attr("stroke", "#999")
-            .attr("stroke-opacity", 0.6)
-            // Binding and joining data
-            .selectAll("line")
-            .data(links)
-            .join("line")
-            // Styling the links
-            .attr("stroke-width", d => weightScale(d.weight || 1))
-            // Add arrow markers
-            .attr("marker-end", (d, i) => data.meta.directed ? `url(#arrow-${i})` : null)
-
-            // Add hover interaction for edges
-            .on("mouseover", (event, d) => {
-            if (data.meta.type === "Keywords") {
-            // Generate content for the tooltip
-            const tooltipContent = `
-            <div class="metadata">From: ${d.source.name}</div>
-            <div class="metadata">To: ${d.target.name}</div>
-            <div class="metadata">Weight: ${d.weight || 'undefined'}</div>
-            `;
-            tooltip
-            .classed("hidden", false)
-            .html(tooltipContent)
-            .style("left", (event.pageX + 10) + "px")
-            .style("top", (event.pageY + 10) + "px");
-            }
-            })
-            .on("mouseout", () => {
-            tooltip.classed("hidden", true);
-            });
-
-            // Add nodes
-            const node = svgGroup.append("g")
-            .attr("stroke", "none")
-            .selectAll("circle")
-            .data(nodes)
-            .join("circle")
-            .attr("r", d => isKeywordType ? 15 : radiusScale(d.degree))
-            .attr("fill", d => color(d.type))
-            .on("click", (event, d) => {
-            if (!isKeywordType) { // Only open hyperlink if isKeywordType is false
-            window.open(d.filename, "_blank");
-            }
-            })
-            .on("mouseover", (event, d) => {
-            // Check if the filename is an image or a PDF
-            const isImage = /\.(jpg|jpeg|png|gif|svg)$/i.test(d.filename);
-            const isPDF = /\.pdf$/i.test(d.filename);
-            // Generate tooltip content based on meta.type
-            const tooltipContent = data.meta.type === "Keywords"
-            ? `
-            <div class="title">${d.name}</div>
-            <div class="metadata">Degree: ${d.degree}</div>
-            `:
-            // Tooltip for other types
-            `
-            <div class="title">${d.name}</div>
-            <div class="metadata">ID: ${d.id.replace('T', '<span class="lighter">T</span>')}</div>
-            <div class="metadata">Degree: ${d.degree}, Backlinks: ${d.backlinks}</div>
-            <div class="metadata">Type: ${d.type}</div>
-            ${d.signature ? `<div class="metadata">Signature: ${d.signature}</div>` : ''}
-            <div class="keywords">${d.keywords && d.keywords.length > 0 ? d.keywords.map(keyword =>
-              `<span>${keyword}</span>`).join('') :
-              '<div class="metadata">No keywords</div>'}</div>
-            ${isImage
-            ? `<img src="${d.filename}" alt="${d.name}"
-      	  onload="if(this.naturalHeight > this.naturalWidth) this.style.maxHeight='500px';"
-      	  style="max-width: 100%; height: auto; margin-top: 10px;">`
-              : isPDF
-            ? `<iframe src="${d.filename}?toolbar=0&navpanes=0&scrollbar=0#view=FitH"
-      		 style="width: 100%; height: 500px; margin-top: 10px; border: none;"></iframe>`
-                : ''
-              }
-            `;
-          // Display the tooltip and set its initial content
-          tooltip
-              .classed("hidden", false)
-              .html(tooltipContent);
-
-          // Calculate tooltip dimensions
-          const tooltipNode = tooltip.node();
-          const tooltipWidth = tooltipNode.offsetWidth;
-          const tooltipHeight = tooltipNode.offsetHeight;
-
-          // Get viewport dimensions
-          const viewportWidth = window.innerWidth;
-          const viewportHeight = window.innerHeight;
-
-          // Calculate mouse position
-          let tooltipX = event.pageX + 10; // Default offset
-          let tooltipY = event.pageY + 10;
-
-          // Adjust position to fit within the viewport
-          if (tooltipX + tooltipWidth > viewportWidth) {
-              tooltipX = viewportWidth - tooltipWidth - 10; // Align with the right edge
-          }
-          if (tooltipY + tooltipHeight > viewportHeight) {
-              tooltipY = viewportHeight - tooltipHeight - 10; // Align with the bottom edge
-          }
-
-          // Set tooltip position
-          tooltip
-              .style("left", `${tooltipX}px`)
-              .style("top", `${tooltipY}px`);
+      // Add links and use dynamically created markers
+      const link = svgGroup.append("g")
+      .attr("stroke", "#999")
+      .attr("stroke-opacity", 0.6)
+      // Binding and joining data
+      .selectAll("line")
+      .data(links)
+      .join("line")
+      // Styling the links
+      .attr("stroke-width", d => weightScale(d.weight || 1))
+      // Add arrow markers
+      .attr("marker-end", (d, i) => data.meta.directed ? `url(#arrow-${i})` : null)
+      
+      // Add hover interaction for edges
+      .on("mouseover", (event, d) => {
+      if (data.meta.type === "Keywords") { 
+      // Generate content for the tooltip
+      const tooltipContent = `
+      <div class="metadata">From: ${d.source.name}</div>
+      <div class="metadata">To: ${d.target.name}</div>
+      <div class="metadata">Weight: ${d.weight || 'undefined'}</div>
+      `;
+      tooltip
+      .classed("hidden", false)
+      .html(tooltipContent)
+      .style("left", (event.pageX + 10) + "px")
+      .style("top", (event.pageY + 10) + "px");
+      }
       })
       .on("mouseout", () => {
-          tooltip.classed("hidden", true);
+      tooltip.classed("hidden", true);
       });
-            // Add drag behavior
-            node.call(d3.drag()
-            .on("start", dragstarted)
-            .on("drag", dragged)
-            .on("end", dragended));
-
-            // Add labels for nodes with degree > minDegreeTag
-            const labels = svgGroup.append("g")
-            .selectAll("text")
-            .data(nodes.filter(d => d.degree > minDegreeTag)) // Filter nodes based on degree
-            .join("text")
-            .attr("dx", 10)
-            .attr("dy", ".35em")
-            .style("font-size", `${fontSize}px`)
-            .style("font-family", "Arial, sans-serif")
-            .style("fill", "#333")
-            .text(d => d.name);
-
-            // Set up force simulation
-            const simulation = d3.forceSimulation(nodes)
-            .force("link", d3.forceLink(links).id(d => d.id).distance(20)) // Link force
-            .force("charge", d3.forceManyBody().strength(-20)) // Repel nodes
-            .force("center", d3.forceCenter(width / 2, height / 2)) // Centering force
-            .force("collide", d3.forceCollide(50)) // Spread out nodes
-            .force("x", d3.forceX(width / 2).strength(0.05)) // Keep nodes near center
-            .force("y", d3.forceY(height / 2).strength(0.05))
-            .on("tick", ticked);
-
-            // Update positions on each tick
-            function ticked() {
-            link
-            .attr("x1", d => d.source.x)
-            .attr("y1", d => d.source.y)
-            .attr("x2", d => {
-            const dx = d.target.x - d.source.x;
-            const dy = d.target.y - d.source.y;
-            const distance = Math.sqrt(dx * dx + dy * dy) || 1; // Avoid division by zero
-            const targetRadius = isKeywordType ? 15 : radiusScale(d.target.degree);
-            const offsetX = (dx / distance) * targetRadius;
-            return d.target.x - offsetX;
-            })
-            .attr("y2", d => {
-            const dx = d.target.x - d.source.x;
-            const dy = d.target.y - d.source.y;
-            const distance = Math.sqrt(dx * dx + dy * dy) || 1; // Avoid division by zero
-            const targetRadius = radiusScale(d.target.degree); // Exact node radius
-            const offsetY = (dy / distance) * targetRadius;
-            return d.target.y - offsetY;
-            });
-
-            node
-            .attr("cx", d => d.x)
-            .attr("cy", d => d.y);
-
-            labels
-            .attr("x", d => d.x)
-            .attr("y", d => d.y);
-            }
-
-            // Drag event handlers
-            function dragstarted(event) {
-            if (!event.active) simulation.alphaTarget(0.3).restart();
-            event.subject.fx = event.subject.x;
-            event.subject.fy = event.subject.y;
-            }
-
-            function dragged(event) {
-            event.subject.fx = event.x;
-            event.subject.fy = event.y;
-            }
-
-            function dragended(event) {
-            if (!event.active) simulation.alphaTarget(0);
-            event.subject.fx = null;
-            event.subject.fy = null;
-            }
-
-
-            const infoButton = document.getElementById("info-button");
-            const infoTooltip = document.querySelector(".info-tooltip");
-
-            // Generate Tooltip Content
-            function generateTooltipContent() {
-      	  infoTooltip.innerHTML = "";
-
-      	  // Add title
-      	  const title = document.createElement("div");
-      	  title.className = "title";
-      	  title.textContent = `Denote ${data.meta.type} Network`;
-      	  infoTooltip.appendChild(title);
-
-      	  // Add metadata container
-      	  const metadataContainer = document.createElement("div");
-      	  metadataContainer.className = "metadata-container";
-
-      	  if (data.meta.type === "Community") {
-      	      const graphParameter = document.createElement("div");
-      	      graphParameter.className = "metadata";
-      	      graphParameter.textContent = `Regular expression: "${data.meta.parameters[0]}"`;
-      	      metadataContainer.appendChild(graphParameter);
-      	  }
-
-      	  if (data.meta.type === "Keywords") {
-      	      const graphParameter = document.createElement("div");
-      	      graphParameter.className = "metadata";
-      	      graphParameter.textContent = `Minimum links: ${data.meta.parameters}`;
-      	      metadataContainer.appendChild(graphParameter);
-      	  }
-
-      	  if (data.meta.type === "Neighbourhood") {
-      	      const graphParameter = document.createElement("div");
-      	      graphParameter.className = "metadata";
-
-      	      const rootLine = document.createElement("div");
-      	      rootLine.textContent = `Root: ${data.meta.parameters[0]}`;
-      	      rootLine.style.marginBottom = "5px";
-      	      graphParameter.appendChild(rootLine);
-
-      	      const depthLine = document.createElement("div");
-      	      depthLine.textContent = `Depth: ${data.meta.parameters[1]}`;
-      	      graphParameter.appendChild(depthLine);
-      	      metadataContainer.appendChild(graphParameter);
-      	  }
-
-      	  // Number of nodes
-      	  const nodeCount = document.createElement("div");
-      	  nodeCount.className = "metadata";
-      	  nodeCount.textContent = `${data.nodes.length} nodes`;
-      	  metadataContainer.appendChild(nodeCount);
-
-      	  // Number of edges
-      	  const edgeCount = document.createElement("div");
-      	  edgeCount.className = "metadata";
-      	  edgeCount.textContent = `${data.edges.length} ${data.edges.length === 1 ? "edge" : "edges"}`;
-      	  metadataContainer.appendChild(edgeCount);
-
-      	  // Network Density
-      	  const density = document.createElement("div");
-      	  density.className = "metadata";
-      	  const edges = data.edges.length;
-      	  const nodes = data.nodes.length;
-      	  if (nodes > 1) {
-      	      // Number of actual edges divided by the possible edges
-      	      const calculatedDensity = (2 * edges) / (nodes * (nodes - 1));
-      	      density.textContent = `Density: ${calculatedDensity.toFixed(3)}`;
-      	  } else {
-      	      density.textContent = "Density: N/A (insufficient nodes)";
-      	  }
-      	  metadataContainer.appendChild(density);
-
-      	  infoTooltip.appendChild(metadataContainer);
-
-      	  // Calculate the number of singular nodes
-      	  const singularNodeCount = data.nodes.filter(node => node.degree === 0).length;
-
-      	  // Add a toggle button
-      	  if (data.meta.type === "Community" && singularNodeCount !== 0) {
-      	      const buttonContainer = document.createElement("div");
-      	      buttonContainer.className = "metadata-container";
-
-      	      const toggleButton = document.createElement("button");
-      	      toggleButton.textContent = "Hide isolated nodes";
-      	      toggleButton.style.marginTop = "10px";
-      	      toggleButton.style.padding = "10px 20px";
-      	      toggleButton.style.borderRadius = "5px";
-      	      toggleButton.style.border = "1px solid #darkgrey";
-      	      toggleButton.style.backgroundColor = "darkgrey";
-      	      toggleButton.style.color = "white";
-      	      toggleButton.style.cursor = "pointer";
-      	      toggleButton.style.fontSize = "18px";
-
-      	      // Toggle button click event
-      	      toggleButton.addEventListener("click", () => {
-      		  // Find all nodes with degree = 0
-      		  const isolatedNodes = d3.selectAll("circle")
-      			.filter(d => d.degree === 0);
-
-      		  // Determine if they are currently visible
-      		  const isVisible = isolatedNodes.style("display") !== "none";
-
-      		  // Toggle their visibility
-      		  isolatedNodes.style("display", isVisible ? "none" : "block");
-
-      		  // Update the button text
-      		  toggleButton.textContent = isVisible ? "Show Isolated Nodes" : "Hide Isolated Nodes";
-      	      });
-
-      	      // Create a comment element to display the count
-      	      const singularNodeComment = document.createElement("div");
-      	      singularNodeComment.className = "metadata";
-      	      singularNodeComment.textContent = `${singularNodeCount} isolated notes`;
-
-      	      // Append this comment above the toggle button
-      	      buttonContainer.appendChild(singularNodeComment);
-
-      	      buttonContainer.appendChild(toggleButton);
-      	      infoTooltip.appendChild(buttonContainer);
-      	  }
-
-
-      	  // Add legend container
-      	  const legendContainer = document.createElement("div");
-      	  legendContainer.className = "metadata-container";
-      	  legendContainer.style.marginTop = "10px";
-
-      	  const legendTitle = document.createElement("div");
-      	  legendTitle.style.fontWeight = "bold";
-      	  legendTitle.style.marginBottom = "10px";
-      	  legendTitle.textContent = "File Types";
-      	  legendContainer.appendChild(legendTitle);
-
-      	  // Generate legend and bar chart dynamically for non-keyword types
-      	  if (!isKeywordType) {
-      	      const typeCounts = data.nodes.reduce((acc, node) => {
-      		  acc[node.type] = (acc[node.type] || 0) + 1;
-      		  return acc;
-      	      }, {});
-
-      	      const legendData = Object.entries(typeCounts).map(([type, count]) => ({
-      		  type,
-      		  count,
-      	      }));
-
-      	      legendData.forEach((entry) => {
-      		  const legendItem = document.createElement("div");
-      		  legendItem.style.display = "flex";
-      		  legendItem.style.alignItems = "center";
-      		  legendItem.style.marginBottom = "5px";
-
-      		  const colorBox = document.createElement("div");
-      		  colorBox.style.width = "15px";
-      		  colorBox.style.height = "15px";
-      		  colorBox.style.marginRight = "10px";
-      		  colorBox.style.backgroundColor = d3.schemeObservable10[legendData.indexOf(entry)];
-      		  legendItem.appendChild(colorBox);
-
-      		  const text = document.createElement("span");
-      		  text.style.fontSize = `${fontSize}px`;
-      		  text.textContent = `${entry.type} (${entry.count})`;
-      		  legendItem.appendChild(text);
-
-      		  legendContainer.appendChild(legendItem);
-      	      });
-
-      	      infoTooltip.appendChild(legendContainer);
-
-            // Add keyword frequency chart container
-            const chartContainer = document.createElement("div");
-            chartContainer.className = "metadata-container"; // Match the metadata background style
-            chartContainer.style.marginTop = "10px"; // Add spacing between sections
-
-            const chartTitle = document.createElement("div");
-            chartTitle.style.fontWeight = "bold";
-            chartTitle.style.marginBottom = "10px";
-            chartTitle.textContent = "Keywords";
-            chartContainer.appendChild(chartTitle);
-
-            // Bar chart
-            const keywordCounts = data.nodes.reduce((acc, node) => {
-            (node.keywords || []).forEach((keyword) => {
-            acc[keyword] = (acc[keyword] || 0) + 1;
-            });
-            return acc;
-            }, {});
-
-            const keywordData = Object.entries(keywordCounts).map(([keyword, count]) => ({
-            keyword,
-            count,
-            }));
-
-            // Sort keywordData by count in descending order
-            keywordData.sort((a, b) => b.count - a.count);
-
-            // Define constants
-            const barHeight = 20; // Height of each bar
-            const barSpacing = 5; // Space between bars
-            const chartWidth = 400;
-            const margin = { top: 20, right: 20, bottom: 30, left: 20 }; // Initial margins
-
-            // Create a temporary SVG to measure label dimensions
-            const tempSVG = d3.select("body").append("svg").attr("class", "temp-svg");
-
-            // Calculate max label width for y-axis
-            const maxYLabelWidth = d3.max(keywordData, (d) => {
-            const textElement = tempSVG
-            .append("text")
-            .attr("class", "temp-text")
-            .style("font-size", `${fontSize}px`)
-            .text(d.keyword);
-            const textWidth = textElement.node().getBBox().width;
-            textElement.remove();
-            return textWidth;
-            });
-
-            // Calculate max label height for x-axis
-            const maxXLabelHeight = d3.max(keywordData, (d) => {
-            const textElement = tempSVG
-            .append("text")
-            .attr("class", "temp-text")
-            .style("font-size", `${fontSize}px`)
-            .text(d.count * 2);
-            const textHeight = textElement.node().getBBox().height;
-            textElement.remove();
-            return textHeight;
-            });
-            tempSVG.remove(); // Clean up the temporary SVG
-
-            // Update margins dynamically
-            margin.left = maxYLabelWidth + 20; // Add padding
-            margin.bottom = maxXLabelHeight + 10; // Add padding
-
-            // Compute chart height based on number of bars
-            const chartHeight = keywordData.length * (barHeight + barSpacing) + margin.top + margin.bottom;
-
-            // Update scales
-            const x = d3
-            .scaleLinear()
-            .domain([0, d3.max(keywordData, (d) => d.count)])
-            .range([0, chartWidth - margin.left - margin.right]);
-
-            const y = d3
-            .scaleBand()
-            .domain(keywordData.map((d) => d.keyword))
-            .range([0, keywordData.length * (barHeight + barSpacing)])
-            .padding(0.1); // Padding within the band
-
-            // Create SVG
-            const chartSVG = d3
-            .select(chartContainer)
-            .append("svg")
-            .attr("width", chartWidth)
-            .attr("height", chartHeight);
-
-            const chartGroup = chartSVG
-            .append("g")
-            .attr("transform", `translate(${margin.left}, ${margin.top})`);
-
-            // Add bars
-            chartGroup
-            .selectAll(".bar")
-            .data(keywordData)
-            .enter()
-            .append("rect")
-            .attr("class", "bar")
-            .attr("x", 0)
-            .attr("y", (d, i) => i * (barHeight + barSpacing)) // Use index to calculate position
-            .attr("width", (d) => x(d.count))
-            .attr("height", barHeight)
-            .attr("fill", "lightgrey");
-
-            // Add y-axis
-            chartGroup
-            .append("g")
-            .call(d3.axisLeft(y))
-            .selectAll("text")
-            .style("font-size", `${fontSize}px`);
-
-            // Add x-axis
-            const maxValue = d3.max(keywordData, d => d.count); // Get the maximum value
-            chartGroup
-            .append("g")
-            .attr("transform", `translate(0, ${chartHeight - margin.top - margin.bottom})`)
-            .call(d3.axisBottom(x).tickValues([0, maxValue])) // Set tick values to only 0 and max
-            .selectAll("text")
-            .style("font-size", `${fontSize}px`);
-
-            // Append the chart container to the tooltip or desired location
-            infoTooltip.appendChild(chartContainer);
-            }
-            }
-
-            // Toggle tooltip visibility on button click
-            infoButton.addEventListener("click", () => {
-            if (infoTooltip.style.display === "block") {
-            infoTooltip.style.display = "none";
-            } else {
-            generateTooltipContent();
-            infoTooltip.style.display = "block";
-            }
-
-            });
-
-
-            // Label density
-            // Add a slider element to the top-right corner
-            const sliderContainer = d3.select('body').append('div')
-      	    .style('position', 'fixed')
-      	    .style('top', '10px')
-      	    .style('right', '10px')
-      	    .style('z-index', '1000');
-
-            sliderContainer.append('label')
-          .text('Label density: ')
-          .style('margin-right', '10px');
-
-            const slider = sliderContainer.append('input')
-      	    .attr('type', 'range')
-      	    .attr('min', 0)
-      	    .attr('max', d3.max(nodes, d => d.degree))
-      	    .attr('value', minDegreeTag)
-      	    .style('width', '150px')
-      	    .on('input', function () {
-      		minDegreeTag = d3.max(nodes, d => d.degree) - +this.value;
-      		updateLabels();
-      	    });
-
-            // Function to update labels based on the slider value
-            function updateLabels() {
-      	  labels = svgGroup.selectAll('text')
-                    .data(nodes.filter(d => d.degree > minDegreeTag), d => d.id)
-                    .join(
-      		  enter => enter.append('text')
-                            .attr('x', d => d.x)
-                            .attr('y', d => d.y)
-                            .attr('dx', 10)
-                            .attr('dy', '.35em')
-                            .style('font-size', `${fontSize}px`)
-                            .style('font-family', 'Arial, sans-serif')
-                            .style('fill', '#333')
-                            .text(d => d.name),
-      		  update => update.attr('x', d => d.x).attr('y', d => d.y),
-      		  exit => exit.remove()
-                    );
-      	  simulation.alpha(1).restart();
-            }
+
+      // Add nodes
+      const node = svgGroup.append("g")
+      .attr("stroke", "none")
+      .selectAll("circle")
+      .data(nodes)
+      .join("circle")
+      .attr("r", d => isKeywordType ? 15 : radiusScale(d.degree)) 
+      .attr("fill", d => color(d.type))
+      .on("click", (event, d) => {
+      if (!isKeywordType) { // Only open hyperlink if isKeywordType is false
+      window.open(d.filename, "_blank");
+      }
+      })
+      .on("mouseover", (event, d) => {
+      // Check if the filename is an image or a PDF
+      const isImage = /\.(jpg|jpeg|png|gif|svg)$/i.test(d.filename);
+      const isPDF = /\.pdf$/i.test(d.filename);
+      // Generate tooltip content based on meta.type
+      const tooltipContent = data.meta.type === "Keywords"
+      ? `
+      <div class="title">${d.name}</div>
+      <div class="metadata">Degree: ${d.degree}</div>
+      `:
+      // Tooltip for other types
+      `
+      <div class="title">${d.name}</div>
+      <div class="metadata">ID: ${d.id.replace('T', '<span class="lighter">T</span>')}</div>
+      <div class="metadata">Degree: ${d.degree}, Backlinks: ${d.backlinks}</div>
+      <div class="metadata">Type: ${d.type}</div>
+      ${d.signature ? `<div class="metadata">Signature: ${d.signature}</div>` : ''}
+      <div class="keywords">${d.keywords && d.keywords.length > 0 ? d.keywords.map(keyword =>
+        `<span>${keyword}</span>`).join('') :
+        '<div class="metadata">No keywords</div>'}</div>
+      ${isImage
+      ? `<img src="${d.filename}" alt="${d.name}" 
+	  onload="if(this.naturalHeight > this.naturalWidth) this.style.maxHeight='500px';"
+	  style="max-width: 100%; height: auto; margin-top: 10px;">`
+        : isPDF 
+      ? `<iframe src="${d.filename}?toolbar=0&navpanes=0&scrollbar=0#view=FitH"
+		 style="width: 100%; height: 500px; margin-top: 10px; border: none;"></iframe>`
+          : ''
+        }
+      `;
+    // Display the tooltip and set its initial content
+    tooltip
+        .classed("hidden", false)
+        .html(tooltipContent);
+
+    // Calculate tooltip dimensions
+    const tooltipNode = tooltip.node();
+    const tooltipWidth = tooltipNode.offsetWidth;
+    const tooltipHeight = tooltipNode.offsetHeight;
+
+    // Get viewport dimensions
+    const viewportWidth = window.innerWidth;
+    const viewportHeight = window.innerHeight;
+
+    // Calculate mouse position
+    let tooltipX = event.pageX + 10; // Default offset
+    let tooltipY = event.pageY + 10;
+
+    // Adjust position to fit within the viewport
+    if (tooltipX + tooltipWidth > viewportWidth) {
+        tooltipX = viewportWidth - tooltipWidth - 10; // Align with the right edge
+    }
+    if (tooltipY + tooltipHeight > viewportHeight) {
+        tooltipY = viewportHeight - tooltipHeight - 10; // Align with the bottom edge
+    }
+
+    // Set tooltip position
+    tooltip
+        .style("left", `${tooltipX}px`)
+        .style("top", `${tooltipY}px`);
+})
+.on("mouseout", () => {
+    tooltip.classed("hidden", true);
+});
+      // Add drag behavior
+      node.call(d3.drag()
+      .on("start", dragstarted)
+      .on("drag", dragged)
+      .on("end", dragended));
+
+      // Add labels for nodes with degree > minDegreeTag
+      const labels = svgGroup.append("g")
+      .selectAll("text")
+      .data(nodes.filter(d => d.degree > minDegreeTag)) // Filter nodes based on degree
+      .join("text")
+      .attr("dx", 10)
+      .attr("dy", ".35em")
+      .style("font-size", `${fontSize}px`)
+      .style("font-family", "Arial, sans-serif")
+      .style("fill", "#333")
+      .text(d => d.name);
+      
+      // Set up force simulation
+      const simulation = d3.forceSimulation(nodes)
+      .force("link", d3.forceLink(links).id(d => d.id).distance(20)) // Link force
+      .force("charge", d3.forceManyBody().strength(-20)) // Repel nodes
+      .force("center", d3.forceCenter(width / 2, height / 2)) // Centering force
+      .force("collide", d3.forceCollide(50)) // Spread out nodes
+      .force("x", d3.forceX(width / 2).strength(0.05)) // Keep nodes near center
+      .force("y", d3.forceY(height / 2).strength(0.05))
+      .on("tick", ticked);
+
+      // Update positions on each tick
+      function ticked() {
+      link
+      .attr("x1", d => d.source.x)
+      .attr("y1", d => d.source.y)
+      .attr("x2", d => {
+      const dx = d.target.x - d.source.x;
+      const dy = d.target.y - d.source.y;
+      const distance = Math.sqrt(dx * dx + dy * dy) || 1; // Avoid division by zero
+      const targetRadius = isKeywordType ? 15 : radiusScale(d.target.degree); 
+      const offsetX = (dx / distance) * targetRadius;
+      return d.target.x - offsetX;
+      })
+      .attr("y2", d => {
+      const dx = d.target.x - d.source.x;
+      const dy = d.target.y - d.source.y;
+      const distance = Math.sqrt(dx * dx + dy * dy) || 1; // Avoid division by zero
+      const targetRadius = radiusScale(d.target.degree); // Exact node radius
+      const offsetY = (dy / distance) * targetRadius;
+      return d.target.y - offsetY;
+      });
+
+      node
+      .attr("cx", d => d.x)
+      .attr("cy", d => d.y);
+
+      labels
+      .attr("x", d => d.x)
+      .attr("y", d => d.y);
+      }
+
+      // Drag event handlers
+      function dragstarted(event) {
+      if (!event.active) simulation.alphaTarget(0.3).restart();
+      event.subject.fx = event.subject.x;
+      event.subject.fy = event.subject.y;
+      }
+
+      function dragged(event) {
+      event.subject.fx = event.x;
+      event.subject.fy = event.y;
+      }
+
+      function dragended(event) {
+      if (!event.active) simulation.alphaTarget(0);
+      event.subject.fx = null;
+      event.subject.fy = null;
+      }
+
+      
+      const infoButton = document.getElementById("info-button");
+      const infoTooltip = document.querySelector(".info-tooltip");
+
+      // Generate Tooltip Content
+      function generateTooltipContent() {
+	  infoTooltip.innerHTML = "";
+
+	  // Add title
+	  const title = document.createElement("div");
+	  title.className = "title";
+	  title.textContent = `Denote ${data.meta.type} Network`;
+	  infoTooltip.appendChild(title);
+
+	  // Add metadata container
+	  const metadataContainer = document.createElement("div");
+	  metadataContainer.className = "metadata-container";
+
+	  if (data.meta.type === "Community") {
+	      const graphParameter = document.createElement("div");
+	      graphParameter.className = "metadata";
+	      graphParameter.textContent = `Regular expression: "${data.meta.parameters[0]}"`;
+	      metadataContainer.appendChild(graphParameter);
+	  }
+
+	  if (data.meta.type === "Keywords") {
+	      const graphParameter = document.createElement("div");
+	      graphParameter.className = "metadata";
+	      graphParameter.textContent = `Minimum links: ${data.meta.parameters}`;
+	      metadataContainer.appendChild(graphParameter);
+	  }
+
+	  if (data.meta.type === "Neighbourhood") {
+	      const graphParameter = document.createElement("div");
+	      graphParameter.className = "metadata";
+
+	      const rootLine = document.createElement("div");
+	      rootLine.textContent = `Root: ${data.meta.parameters[0]}`;
+	      rootLine.style.marginBottom = "5px";
+	      graphParameter.appendChild(rootLine);
+
+	      const depthLine = document.createElement("div");
+	      depthLine.textContent = `Depth: ${data.meta.parameters[1]}`;
+	      graphParameter.appendChild(depthLine);
+	      metadataContainer.appendChild(graphParameter);
+	  }
+
+	  // Number of nodes
+	  const nodeCount = document.createElement("div");
+	  nodeCount.className = "metadata";
+	  nodeCount.textContent = `${data.nodes.length} nodes`;
+	  metadataContainer.appendChild(nodeCount);
+
+	  // Number of edges
+	  const edgeCount = document.createElement("div");
+	  edgeCount.className = "metadata";
+	  edgeCount.textContent = `${data.edges.length} ${data.edges.length === 1 ? "edge" : "edges"}`;
+	  metadataContainer.appendChild(edgeCount);
+
+	  // Network Density
+	  const density = document.createElement("div");
+	  density.className = "metadata";
+	  const edges = data.edges.length;
+	  const nodes = data.nodes.length;
+	  if (nodes > 1) {
+	      // Number of actual edges divided by the possible edges
+	      const calculatedDensity = (2 * edges) / (nodes * (nodes - 1));
+	      density.textContent = `Density: ${calculatedDensity.toFixed(3)}`;
+	  } else {
+	      density.textContent = "Density: N/A (insufficient nodes)";
+	  }
+	  metadataContainer.appendChild(density);
+
+	  infoTooltip.appendChild(metadataContainer);
+
+	  // Calculate the number of singular nodes
+	  const singularNodeCount = data.nodes.filter(node => node.degree === 0).length;
+
+	  // Add a toggle button
+	  if (data.meta.type === "Community" && singularNodeCount !== 0) {
+	      const buttonContainer = document.createElement("div");
+	      buttonContainer.className = "metadata-container";
+
+	      const toggleButton = document.createElement("button");
+	      toggleButton.textContent = "Hide isolated nodes";
+	      toggleButton.style.marginTop = "10px";
+	      toggleButton.style.padding = "10px 20px";
+	      toggleButton.style.borderRadius = "5px";
+	      toggleButton.style.border = "1px solid #darkgrey";
+	      toggleButton.style.backgroundColor = "darkgrey";
+	      toggleButton.style.color = "white";
+	      toggleButton.style.cursor = "pointer";
+	      toggleButton.style.fontSize = "18px"; 
+
+	      // Toggle button click event
+	      toggleButton.addEventListener("click", () => {
+		  // Find all nodes with degree = 0
+		  const isolatedNodes = d3.selectAll("circle")
+			.filter(d => d.degree === 0);
+
+		  // Determine if they are currently visible
+		  const isVisible = isolatedNodes.style("display") !== "none";
+
+		  // Toggle their visibility
+		  isolatedNodes.style("display", isVisible ? "none" : "block");
+
+		  // Update the button text
+		  toggleButton.textContent = isVisible ? "Show Isolated Nodes" : "Hide Isolated Nodes";
+	      });
+
+	      // Create a comment element to display the count
+	      const singularNodeComment = document.createElement("div");
+	      singularNodeComment.className = "metadata";
+	      singularNodeComment.textContent = `${singularNodeCount} isolated notes`;
+
+	      // Append this comment above the toggle button
+	      buttonContainer.appendChild(singularNodeComment);
+
+	      buttonContainer.appendChild(toggleButton);
+	      infoTooltip.appendChild(buttonContainer); 
+	  }
+
+	  
+	  // Add legend container
+	  const legendContainer = document.createElement("div");
+	  legendContainer.className = "metadata-container";
+	  legendContainer.style.marginTop = "10px";
+
+	  const legendTitle = document.createElement("div");
+	  legendTitle.style.fontWeight = "bold";
+	  legendTitle.style.marginBottom = "10px";
+	  legendTitle.textContent = "File Types";
+	  legendContainer.appendChild(legendTitle);
+
+	  // Generate legend and bar chart dynamically for non-keyword types
+	  if (!isKeywordType) {
+	      const typeCounts = data.nodes.reduce((acc, node) => {
+		  acc[node.type] = (acc[node.type] || 0) + 1;
+		  return acc;
+	      }, {});
+
+	      const legendData = Object.entries(typeCounts).map(([type, count]) => ({
+		  type,
+		  count,
+	      }));
+
+	      legendData.forEach((entry) => {
+		  const legendItem = document.createElement("div");
+		  legendItem.style.display = "flex";
+		  legendItem.style.alignItems = "center";
+		  legendItem.style.marginBottom = "5px";
+
+		  const colorBox = document.createElement("div");
+		  colorBox.style.width = "15px";
+		  colorBox.style.height = "15px";
+		  colorBox.style.marginRight = "10px";
+		  colorBox.style.backgroundColor = d3.schemeObservable10[legendData.indexOf(entry)];
+		  legendItem.appendChild(colorBox);
+
+		  const text = document.createElement("span");
+		  text.style.fontSize = `${fontSize}px`;
+		  text.textContent = `${entry.type} (${entry.count})`;
+		  legendItem.appendChild(text);
+
+		  legendContainer.appendChild(legendItem);
+	      });
+
+	      infoTooltip.appendChild(legendContainer);
+
+      // Add keyword frequency chart container
+      const chartContainer = document.createElement("div");
+      chartContainer.className = "metadata-container"; // Match the metadata background style
+      chartContainer.style.marginTop = "10px"; // Add spacing between sections
+
+      const chartTitle = document.createElement("div");
+      chartTitle.style.fontWeight = "bold";
+      chartTitle.style.marginBottom = "10px";
+      chartTitle.textContent = "Keywords";
+      chartContainer.appendChild(chartTitle);
+
+      // Bar chart
+      const keywordCounts = data.nodes.reduce((acc, node) => {
+      (node.keywords || []).forEach((keyword) => {
+      acc[keyword] = (acc[keyword] || 0) + 1;
+      });
+      return acc;
+      }, {});
+
+      const keywordData = Object.entries(keywordCounts).map(([keyword, count]) => ({
+      keyword,
+      count,
+      }));
+
+      // Sort keywordData by count in descending order
+      keywordData.sort((a, b) => b.count - a.count);
+
+      // Define constants
+      const barHeight = 20; // Height of each bar
+      const barSpacing = 5; // Space between bars
+      const chartWidth = 400;
+      const margin = { top: 20, right: 20, bottom: 30, left: 20 }; // Initial margins
+
+      // Create a temporary SVG to measure label dimensions
+      const tempSVG = d3.select("body").append("svg").attr("class", "temp-svg");
+
+      // Calculate max label width for y-axis
+      const maxYLabelWidth = d3.max(keywordData, (d) => {
+      const textElement = tempSVG
+      .append("text")
+      .attr("class", "temp-text")
+      .style("font-size", `${fontSize}px`)
+      .text(d.keyword);
+      const textWidth = textElement.node().getBBox().width;
+      textElement.remove();
+      return textWidth;
+      });
+
+      // Calculate max label height for x-axis
+      const maxXLabelHeight = d3.max(keywordData, (d) => {
+      const textElement = tempSVG
+      .append("text")
+      .attr("class", "temp-text")
+      .style("font-size", `${fontSize}px`)
+      .text(d.count * 2);
+      const textHeight = textElement.node().getBBox().height;
+      textElement.remove();
+      return textHeight;
+      });
+      tempSVG.remove(); // Clean up the temporary SVG
+
+      // Update margins dynamically
+      margin.left = maxYLabelWidth + 20; // Add padding
+      margin.bottom = maxXLabelHeight + 10; // Add padding
+
+      // Compute chart height based on number of bars
+      const chartHeight = keywordData.length * (barHeight + barSpacing) + margin.top + margin.bottom;
+
+      // Update scales
+      const x = d3
+      .scaleLinear()
+      .domain([0, d3.max(keywordData, (d) => d.count)])
+      .range([0, chartWidth - margin.left - margin.right]);
+
+      const y = d3
+      .scaleBand()
+      .domain(keywordData.map((d) => d.keyword))
+      .range([0, keywordData.length * (barHeight + barSpacing)])
+      .padding(0.1); // Padding within the band
+
+      // Create SVG
+      const chartSVG = d3
+      .select(chartContainer)
+      .append("svg")
+      .attr("width", chartWidth)
+      .attr("height", chartHeight);
+
+      const chartGroup = chartSVG
+      .append("g")
+      .attr("transform", `translate(${margin.left}, ${margin.top})`);
+
+      // Add bars
+      chartGroup
+      .selectAll(".bar")
+      .data(keywordData)
+      .enter()
+      .append("rect")
+      .attr("class", "bar")
+      .attr("x", 0)
+      .attr("y", (d, i) => i * (barHeight + barSpacing)) // Use index to calculate position
+      .attr("width", (d) => x(d.count))
+      .attr("height", barHeight)
+      .attr("fill", "lightgrey");
+
+      // Add y-axis
+      chartGroup
+      .append("g")
+      .call(d3.axisLeft(y))
+      .selectAll("text")
+      .style("font-size", `${fontSize}px`);
+
+      // Add x-axis
+      const maxValue = d3.max(keywordData, d => d.count); // Get the maximum value
+      chartGroup
+      .append("g")
+      .attr("transform", `translate(0, ${chartHeight - margin.top - margin.bottom})`)
+      .call(d3.axisBottom(x).tickValues([0, maxValue])) // Set tick values to only 0 and max
+      .selectAll("text")
+      .style("font-size", `${fontSize}px`);
+
+      // Append the chart container to the tooltip or desired location
+      infoTooltip.appendChild(chartContainer);
+      }
+      }
+
+      // Toggle tooltip visibility on button click
+      infoButton.addEventListener("click", () => {
+      if (infoTooltip.style.display === "block") {
+      infoTooltip.style.display = "none";
+      } else {
+      generateTooltipContent();
+      infoTooltip.style.display = "block";
+      }
+      
+      });
+
+	
+      // Label density
+      // Add a slider element to the top-right corner
+      const sliderContainer = d3.select('body').append('div')
+	    .style('position', 'fixed')
+	    .style('top', '10px')
+	    .style('right', '10px')
+	    .style('z-index', '1000');
+
+      sliderContainer.append('label')
+    .text('Label density: ')
+    .style('margin-right', '10px');
+
+      const slider = sliderContainer.append('input')
+	    .attr('type', 'range')
+	    .attr('min', 0)
+	    .attr('max', d3.max(nodes, d => d.degree))
+	    .attr('value', minDegreeTag)
+	    .style('width', '150px')
+	    .on('input', function () {
+		minDegreeTag = d3.max(nodes, d => d.degree) - +this.value;
+		updateLabels();
+	    });
+
+      // Function to update labels based on the slider value
+      function updateLabels() {
+	  labels = svgGroup.selectAll('text')
+              .data(nodes.filter(d => d.degree > minDegreeTag), d => d.id)
+              .join(
+		  enter => enter.append('text')
+                      .attr('x', d => d.x)
+                      .attr('y', d => d.y)
+                      .attr('dx', 10)
+                      .attr('dy', '.35em')
+                      .style('font-size', `${fontSize}px`)
+                      .style('font-family', 'Arial, sans-serif')
+                      .style('fill', '#333')
+                      .text(d => d.name),
+		  update => update.attr('x', d => d.x).attr('y', d => d.y),
+		  exit => exit.remove()
+              );
+	  simulation.alpha(1).restart();
+      }
+
     </script>
   </body>
 </html>

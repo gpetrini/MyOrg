@@ -1,0 +1,163 @@
+#+OPTIONS: num:nil ^:{} toc:nil
+#+title:      Business Cycles, Heuristic Expectation Formation, and Contracyclical Policies
+#+date:       [2025-02-06 qui 14:32]
+#+filetags:   :bib:
+#+identifier: 20250206T143239
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+#+reference:  westerhoff_2006_Business
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+The author present a simple macroeconomic model with heterogenous household adopting competing heuristic rules regarding expected income.
+Although the model is deterministic, there are endogenous business cycle.
+The compositiong of each heuristic rule changes in different points of the cycle, in which the costs of regressive rule may be neglictable.
+[[denote:20250202T121115][Fiscal Policy]] measure can stabilize the economy with limits, while ill-designed policy may increase volatility.
+
+** Background and motivation
+
+
+** Supporting Ideas and hypothesis
+
+- The author departures from boundedly rationality
+- This discussion is related to the [[denote:20250202T122209][Evolutionary Selection]] of expectational heuristics as pointed out by [[denote:20250206T122351][Darwinian Rational Expectations]]
+- In order to build the regressive expectational rule, agentes must know the full-employment level. Since this is costly, there is a cost associated with this more sophisticated method.
+- Compared with [[denote:20250203T184226][Switching Mechanisms]] employed by [cite/t:@dosi2020], there is no memory parameter.
+- This is a model without growth, so only steady state is evaluated.
+
+** Purpose, Relevance, and Contribution
+
+- For the [[denote:20250202T120807][Innovation bubble ABM]] chapter, this paper is important to discuss the effect of Heuristic switching models in generating business cycles
+  - In addition, this could be a simple way to represent aggregate models with Switching Mechanisms
+- For a [[denote:20250202T120251][Policy Oriented]] perspective, it is important to point the difficult of stabilizing [[denote:20240708T155635][Business Cycles]] fluctuation, since there are non-linearities.
+
+** Methodology
+
+- Multiple agents with Switching Mechanisms to predict income.
+  - The heuristic rule is choosen accordingly to the better fit (measured by the least quadratic error) following an logistic formula (similar to simple version of [cite/t:@brock_1997_Rational])
+
+The weight of each expectational rule depends on:
+
+\[  W_{t}^{e} = \frac{\exp{h\cdot A_{t}^{e}}}{\exp{A_{t}^{e}} + \exp{A_{t}^{r}}} \]
+
+in which \(h\) is the choice parameter, and \(A\) is the error quadratic measure.
+
+** Results
+
+- Endogenous Business Cycles emerges as a result of competing heuristics.
+- As long the model approaches to the full-employment level, both rule performs simillarly. However, since regressive rule is more costly, the extrapolative alternative becomes more attrative. Thus, the cost of this expectational rule is the mechanism which allows an heuristic change.
+- When including a countercyclicle policy --- in which Fiscal Policy reacts to differences in output ---, the economy becomes more stable. The reason for this is that it reduces the worst performance of extrapolative rule during turning points.
+
+** Interesting findings and not categorized stuff
+
+- The intensity choice parameter can be interpreted as a measure of rationality. Since the higher this is, more agents adopt the best fit rule.
+
+** Critics
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+We develop a simple Keynesian-type business cycle model in which agents use simple heuristics to predict national income. To be precise, the agents either form (destabilizing) extrapolative expectations or (stabilizing) regressive expectations, a decision which depends on the rules forecasting performance in the recent past. As it turns out, an unending evolutionary competition between the rules may generate endogenous complex business cycles. We also explore the effectiveness of some common governmental intervention strategies. Our model suggests that policy makers may be able to stabilize output fluctuations, yet due to system immanent nonlinearities this may prove to be quite difficult.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+
+
+* Annotations (zotero)
+
+
+"agents use simple heuristics to predict national income" ([[zotero://select/library/items/48K95QU6][Westerhoff, 2006, p. 821]]) ([[zotero://open-pdf/library/items/MHJVT6LB?page=1&annotation=5IE2HCBX][pdf]])
+
+[METHOD] Multiple agents with Switching Mechanisms to predict income.
+
+"Our model suggests that policy makers may be able to stabilize output fluctuations, yet due to system immanent nonlinearities this may prove to be quite difficult." ([[zotero://select/library/items/48K95QU6][Westerhoff, 2006, p. 821]]) ([[zotero://open-pdf/library/items/MHJVT6LB?page=1&annotation=VE66XVY4][pdf]])
+
+[CONTRIB] For a Policy Oriented perspective, it is important to point the dificult of stabilizing Business Cycles fluctuation.
+
+"However, complex output movements may also arise endogenously due to nonlinearities (for excellent surveys see, e.g., Gandolfo 1985, Puu 1989, Medio 1992, Day and Chen 1993, Day 1999 or Rosser 2000)." ([[zotero://select/library/items/48K95QU6][Westerhoff, 2006, p. 821]]) ([[zotero://open-pdf/library/items/MHJVT6LB?page=1&annotation=KL4UK4SY][pdf]])
+
+[LITERATURE] [[denote:20250202T120026][Review of Literature]] of business cycle fluctiations.
+
+"Our starting point is that people are boundedly rational in the sense of Simon (1955)." ([[zotero://select/library/items/48K95QU6][Westerhoff, 2006, p. 822]]) ([[zotero://open-pdf/library/items/MHJVT6LB?page=2&annotation=PLFBFMEM][pdf]])
+[HYPOTHESIS] Bounded rational expectations
+
+"These heuristics face a natural selection pressure, i.e. only well-performing rules survive." ([[zotero://select/library/items/48K95QU6][Westerhoff, 2006, p. 822]]) ([[zotero://open-pdf/library/items/MHJVT6LB?page=2&annotation=H5AKUTXB][pdf]])
+[BACKGROUND] This discussion is related to the [[denote:20250202T122209][Evolutionary Selection]] of expectational heuristics as pointed out by [[denote:20250206T122351][Darwinian Rational Expectations]]
+
+"Extrapolative expectations simply assume a continuation of the current trend and are thus likely to be destabilizing. Regressive expectations are often regarded as a stabilizing force since they add a negative feedback to the dynamics." ([[zotero://select/library/items/48K95QU6][Westerhoff, 2006, p. 822]]) ([[zotero://open-pdf/library/items/MHJVT6LB?page=2&annotation=N4MENBUD][pdf]])
+Description of the expectational rules.
+
+"A central finding is that movements in national income may arise endogenously due to a permanent competition between different heuristics." ([[zotero://select/library/items/48K95QU6][Westerhoff, 2006, p. 822]]) ([[zotero://open-pdf/library/items/MHJVT6LB?page=2&annotation=3MV6WH7A][pdf]])
+[RESULTS] Endogenous Business Cycles emerges as a result of competing heuristics.
+
+([[zotero://select/library/items/48K95QU6][Westerhoff, 2006, p. 823]])
+Average market expectation is a weighted mean of all the heuristic
+rules.
+
+"Extrapolative expectations may then be formalized as" ([[zotero://select/library/items/48K95QU6][Westerhoff, 2006, p. 824]]) ([[zotero://open-pdf/library/items/MHJVT6LB?page=4&annotation=FBP62Y7X][pdf]])
+The extrapolative rule is the same as an adaptative rule.
+
+"Accordingly, the agents expect the gap between the near full employment output level ̄ Y and the observed output level Y t−1 to be reduced by a factor 0 < c < 1." ([[zotero://select/library/items/48K95QU6][Westerhoff, 2006, p. 824]]) ([[zotero://open-pdf/library/items/MHJVT6LB?page=4&annotation=W8GFN4BY][pdf]])
+Regressive expectations, on the other hand, are ancored at the near full-employment leve.
+
+"For being able to do this, they first have to develop some general knowledge about how the economy works. The attractiveness of regressive expectations is thus modeled as" ([[zotero://select/library/items/48K95QU6][Westerhoff, 2006, p. 824]]) ([[zotero://open-pdf/library/items/MHJVT6LB?page=4&annotation=L8J5YIWR][pdf]])
+In order to build the regressive expectational rule, agentes must know the full-employment level. Since this is costly, there is a cost associated with this more sophisticated method.
+
+
+"Note that an increase in h may be interpreted as an increase in the rationality of the agents. For h = 0, the agents do not discriminate between the predictors and thus they split evenly between them. But if h goes to infinity, all agents select the predictor with the highest fitness." ([[zotero://select/library/items/48K95QU6][Westerhoff, 2006, p. 825]]) ([[zotero://open-pdf/library/items/MHJVT6LB?page=5&annotation=5CC7UDN5][pdf]])
+[FINDS] The intensity choice parameter can be interpreted as a mesure of rationality. Since the higher this is, more agents adopt the best fit rule.
+
+[RELATED] Compared with Switching Mechanisms employed by [cite/t:[cite/t:@dosi2020]], there is no memory parameter.
+
+"Moreover the initial conditions of our three-dimensional system are given as Y 1 = 10000, Y2 = 10000, and Y3 = 10001 (i.e. we slightly disturb the steady state in period t = 3).5" ([[zotero://select/library/items/48K95QU6][Westerhoff, 2006, p. 825]]) ([[zotero://open-pdf/library/items/MHJVT6LB?page=5&annotation=YY8MKHWT][pdf]])
+[HYPOTHESIS] This is a model without growth, so only steady state is evaluated.
+
+"Although the dynamics is entirely deterministic, we observe the emergence of expansions, followed by recessions. The sequence of booms and slumps is recurrent, but not periodic." ([[zotero://select/library/items/48K95QU6][Westerhoff, 2006, p. 825]]) ([[zotero://open-pdf/library/items/MHJVT6LB?page=5&annotation=I5PLV28M][pdf]])
+[RESULTS] Even thought the model is deterministic, there are endogenous business cycles.
+
+"Then the economy behaves stably and output approaches its near full employment level. But when output is close to ̄ Y , the prediction errors of both types of predictors become small. Since regressive expectation formation is relatively costly, the extrapolative predictor appears to be more attractive." ([[zotero://select/library/items/48K95QU6][Westerhoff, 2006, p. 827]]) ([[zotero://open-pdf/library/items/MHJVT6LB?page=7&annotation=5X25US2G][pdf]])
+[RESULTS] As long the model approaches to the full-employment level, both rule performs simillarly. However, since regressive rule is more costly, the extrapolative alternative becomes more attrative. Thus, the cost of this expectational rule is the mechanism which allows an heuristic change.
+
+"Output fluctuations are now more moderate." ([[zotero://select/library/items/48K95QU6][Westerhoff, 2006, p. 828]]) ([[zotero://open-pdf/library/items/MHJVT6LB?page=8&annotation=RHYFQRWT][pdf]])
+[RESULT] When including a countercyclicle policy --- in which Fiscal Policy reacts to differences in output ---, the economy becomes more stable. The reason for this is that it reduces the worst performance of extrapolative rule during turning points.
+
+"To sum up, simple and well-intended intervention policies may lead to a more stable economy, they may however also cause the opposite. This should give policy makers a clear warning: Governmental stabilization programs require careful analysis and monitoring." ([[zotero://select/library/items/48K95QU6][Westerhoff, 2006, p. 830]]) ([[zotero://open-pdf/library/items/MHJVT6LB?page=10&annotation=2S5SC9E9][pdf]])
+[RESULTS] Althought Fiscal Policy can stabilize the economy, ill-designed programs may also destabilize it.
+
+"Visual inspection reveals that when the rationality of the consumers is low, no fluctuations in business cycles appear. However, when h is larger than about 0.8, endogenous dynamics may emerge." ([[zotero://select/library/items/48K95QU6][Westerhoff, 2006, p. 832]]) ([[zotero://open-pdf/library/items/MHJVT6LB?page=12&annotation=4NQB62CE][pdf]])
+[RESULT] When agents rationality increase, the higher is the amplitude of business cycles.
+
+"Even for d = 0, endogenous changes in national income may appear." ([[zotero://select/library/items/48K95QU6][Westerhoff, 2006, p. 833]]) ([[zotero://open-pdf/library/items/MHJVT6LB?page=13&annotation=2IZX7Z6P][pdf]])
+[RESULTS] This endogenous pattern persist even if there is no cost for regressive rule.
+
+* Additional Backlinks
+
+[[denote:20250206T143225][Journal of Public Economic Theory]]
+
+[[denote:20250202T114158][Accelerator Model]]
+
+[[denote:20240708T155635][Business Cycles]]
+
+[[denote:20250202T120807][Innovation bubble ABM]]
+
+[[denote:20250202T115151][Behavioral extrapolation]]
+
+[[denote:20211215T182520][Heterogeneous Expectations]]
+
+[[denote:20250202T120251][Policy Oriented]]
+
+[[denote:20250203T184226][Switching Mechanisms]]
+
+* References
+
+
+
+#+print_bibliography:

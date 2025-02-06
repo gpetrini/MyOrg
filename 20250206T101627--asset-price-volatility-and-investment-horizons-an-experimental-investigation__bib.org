@@ -1,0 +1,103 @@
+#+OPTIONS: num:nil ^:{} toc:nil
+#+title:      Asset Price Volatility and Investment Horizons: An Experimental Investigation
+#+date:       [2025-02-06 qui 10:16]
+#+filetags:   :bib:
+#+identifier: 20250206T101627
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+#+reference:  anufriev_2022_Asseta;anufriev_2022_Asset
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+
+[cite/t:@anufriev_2022_Asseta] present a [[denote:20250203T180644][Learn to Forecast Experiments]] with varying [[denote:20250202T120612][Investment Horizon]]s and initial price history.
+They report that larger Investment Horizons reduce asset price volatility, extrapolating forecasts and [[denote:20250202T114928][Asset bubble]]s emergence.
+Additionally, converging initial price history generates less volatile asset prices independently from the Investment Horizon specification.
+Thus, Investment Horizon is a necessary but not a sufficient condition for Asset bubbles emergence.
+
+** Background and motivation
+
+- *Theoretical background:* Learn to Forecast Experiments
+
+** Supporting Ideas and hypothesis
+
+*Supporting ideas:*
+- Asset mispricing is a common result in Experimental Finance
+  - This is related to positive [[denote:20250202T121139][Feedback mechanisms]] [cite:@delong_1990_Positive;@anufriev_2013_Evolutionary]
+- Short-term investment is mispricing
+
+*Hypothesis:*
+- Initial price history have a significant role on the price stability during the experiment
+- Price volatility will be higher with larger Investment Horizons
+- The treatment with higher positive Feedback mechanisms would be more volatile thant the ones with short and larger Investment Horizons (1 and 3 periods respectivelly)
+- Participants in longer Investment Horizons would have a higher degree of trend extrapolation (check)
+  - Because with would have more dispersion and less [[denote:20250202T121656][coordination]]
+- Coordination of expectatitions with longer Investment Horizon is lower compared with shorter ones
+
+
+** Purpose and Contribution
+
+- Add a time varying Investment Horizon and price history to Learn to Forecast Experiments
+
+** Relevance
+
+For [[denote:20250202T120807][Innovation bubble ABM]] chapter, this paper provide empirical relevance of the effects of Investment Horizon.
+Thus, it empirically access the possible mechanism to explain persistent Asset bubbles even thought firms face decreasing market-share (as proposed in [[denote:20230628T172800][PhD Dissertation Discussions]])
+
+Considering a [[denote:20250202T120119][Regulation]] concerns, this paper suggests that reducing the possibility of short-term holds of an asset can reduce its price volatility.
+However, the authors point out that this could reduce the velocity that asset prices will reflect private informations.
+
+** Methodology
+
+Experimental Finance with 210 students from the University of Technology Sydney's Lab in 2018.
+Each group was treated with the one of following settings (with no heterogeneity within them):
+- 3 Varying Investment Horizon specifications
+- Converging or oscillating initial price history
+- Large Investment Horizon (3 periods) with stronger Feedback mechanisms (lower interest rate and dividends)
+
+Additionally, each participant received money accordingly to his/her performance and had qualitative information regarding the market.
+
+** Results
+
+- Asset price volatility decrease with higher Investment Horizon
+  - By reducing the strength of the positive Feedback mechanisms and extrapolative Coordination between investors
+    - A possible explanation is that there is a higher dispersion among predictions and past forecasts have a smaller effect
+  - This results holds even correcting for Feedback mechanisms
+- Experiments with more volatile initial price then to keep this volatility small until the end of the experiment regardless of Investment Horizon
+
+** Interesting findings and not categorized stuff
+
+
+** Critics
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+We study the effects of the investment horizon on asset price volatility using a Learning to Forecast laboratory experiment. We find that, for short investment horizons, participants coordinate on self-fulfilling trend-extrapolating predictions. Price deviations are then reinforced and amplified, possibly leading to large bubbles and crashes in asset prices. For longer investment horizons such bubbles do not emerge and price volatility tends to be lower. This is due to the fact that, for longer horizons, there is more dispersion in participants’ forecasts, and participants extrapolate trends in past prices to a lesser extent. We also show that, independent of the investment horizon, if the initial history of asset prices is already relatively stable before participants start their prediction task, price volatility remains small, with prices close to their fundamental values for the duration of the experiment.
+#+END_ABSTRACT
+
+
+
+* Additional Backlinks
+
+[[denote:20241126T141520][Asset Prices]]
+
+[[denote:20250202T121158][Expectations]]
+
+[[denote:20250202T115203][Behavioral Finance]]
+
+[[denote:20250202T122308][Experimental Finance]]
+
+[[denote:20250202T120612][Investment Horizon]]
+
+[[denote:20250205T160641][Journal of Economic Behavior & Organization]]
+
+* References
+
+#+print_bibliography:

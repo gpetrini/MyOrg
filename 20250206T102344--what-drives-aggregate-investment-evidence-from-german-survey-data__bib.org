@@ -1,0 +1,146 @@
+#+OPTIONS: num:nil ^:{} toc:nil
+#+title:      What Drives Aggregate Investment? Evidence from German Survey Data
+#+date:       [2025-02-06 qui 10:23]
+#+filetags:   :bib:
+#+identifier: 20250206T102344
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+#+reference:  bachmann_2020_What;bachmann_2020_Whata
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+
+** Background and motivation
+
+
+** Supporting Ideas and hypothesis
+
+- In order to identify the shocks, the authors impose correlation restrictions, assuming:
+  - Demand and technological shock must be strong and positivelly correlated to Sales and Technology responses
+  - Producer price should be positivelly correlated. There is some sort of [[denote:20250202T120321][Phillips curve]] assumption
+  - Technological shock affect producer prices negativelly
+  - If the observation violates one of the previous conditions, is not considered
+
+** Purpose, Relevance, and Contribution
+
+- Analyze the relevance of sales, technological factors ([[denote:20250203T184320][Technological revolution]]), finance, [[denote:20250202T121158][Expectations]], and Macroeconomic policy for [[denote:20250202T120625][Investment determination]]
+- For the [[denote:20250202T120807][Innovation bubble ABM]] chapter, this paper is relevant to present some [[denote:20240708T155703][Stylized Facts]] regarding investment decisions and investigates the role of Expectations
+- This paper emphasize the relevance of [[denote:20250203T184210][Survey Data]] basing on [[denote:20250206T102320][Narrative Approach]]
+
+** Methodology
+
+- Sample: Manufacturing sector of Western [[denote:20250205T161019][Germany]] using firm-level investment Survey Data
+  - The date for non-Western German is less consistent
+- Method: The authors analyze the [[denote:20250202T121503][causal_narratives]], that is, the motives reported by firms CEOs regarding investment
+  - Those agents also report how strongly those elements affect investment decisions
+  - It would be interesting to evaluate this data using QCA
+  - New order as proxies for sales
+
+
+#+CAPTION: Investment Determinants according to the survey
+| Investment determinants  | Strongly positive | Weakly positive | no influence | weakly negative | strongly negative |
+|--------------------------+-------------------+-----------------+--------------+-----------------+-------------------|
+| Sales and Expectations   |                   |                 |              |                 |                   |
+| Finance                  |                   |                 |              |                 |                   |
+| Returns expectations     |                   |                 |              |                 |                   |
+| Technological factors    |                   |                 |              |                 |                   |
+| Macro Policy Environment |                   |                 |              |                 |                   |
+| Others                   |                   |                 |              |                 |                   |
+|--------------------------+-------------------+-----------------+--------------+-----------------+-------------------|
+| Decodification           |                +2 |              +1 |            0 |              -1 |                +2 |
+
+
+The proposed index is estimates accordingly to:
+
+#+NAME: index_sentiment_investment
+\begin{align*}
+X_{t}  & = \sum_{i}^{N} \omega_{i}\cdot x_{i}\\
+\omega_{i} & = \frac{inv}{\sum inv}
+\end{align*}
+
+
+
+** Results
+
+- Aggregate demand shocks explains investment and output fluctuations ([[denote:20240708T155635][Business Cycles]])
+  - Removing aggregate demand shocks as a counterfactual, aggregate investment loses its cyclical properties
+- Technological factor is the most important determinant on average
+- Even changing the order of Choleski-decomposition, Sales still explain more of the investment fluctuations
+  - If technology is ordered first, its contribution increases
+- Demand and technology shocks are the only plausible candidate
+  - Finance, macroeconomic policy plays little role
+- Semi-aggregate results are similar to the aggregated ones
+- The authors argue that the demand shock effect could be related to [[denote:20250202T114350][Animal Spirits]] shocks since they are correlated with business sentiment data
+- When sales is a important factor, firms are more likelly to increse prices; when the technological factor is more relevant, they are more likely to decrease
+- The determinants of investment also explain industrial production
+- Estimating a VAR model as an alternative, the authors report:
+  - Negative and delayed effect of technology
+  - Strong and *persistent* effect of demand shocks
+
+
+Based on the proposed index in [[index_sentiment_investment]]:
+  - Technological effect is positive
+  - Finance and Macro policy are zero on average
+  - This index is correlated with each other and the Business Cycles
+    - The correlation between sales and investment is the highest while with technology is lower (but still higher than the others)
+      - This is because sales is the most volatile one
+        - This result support the [[denote:20250203T184155][Supermultiplier Models]] in which investment is volatile because demand is volatile
+    - There are assymetries in which Return and Sales are cyclical in terms of the negative effects
+      - This is because recessions are more severe while recoveries are more smooth
+  - Technological factors are not only maintenance and replacement
+    - Thus, this is at odds with the Supermultiplier Models which stats an "crowding-out" effect of innovation
+    - This is more relevant in industries with higher innovative-content
+      - In summary, it is more important in technology-intensive activities
+  - Finance is more important for firms with external finance
+    - It also does not seems to be an independent driver of investment fluctuations since it depends on credit spreads
+  - Macroeconomic policy plays an small effect
+    - This variable does not correspond to GDP expectations
+
+** Interesting findings and not categorized stuff
+
+- The demand shock is not a result of misclassification of intra-industry expenditures
+
+** Critics
+
+- The identification strategy only allows to demand-led inflation
+  - The authors themselves report some results in the opposite direction, but discarted them
+- The authors argue that technological factors are the most relevant ones. However, during the paper, the find that demand shocks explain most of investment fluctuations and the technological factor explain a smaller share. So, why the authors state that technological factors are the most relevant?
+  - This is because its index is more positive while Sales is closer to zero?
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+The ifo Investment Survey asks firms in the German manufacturing sector about the importance of sales, technological factors, finance, return expectations, and macroeconomic policy for their investment activity in a given year. We show that these subjective investment determinants 1) capture economically what their labels suggest, and 2) have strong explanatory power for aggregate manufacturing investment growth fluctuations. In a second step, we use these determinants to identify aggregate demand and aggregate technology shocks and argue that the bulk of the variance of both aggregate manufacturing investment and output growth fluctuations (as much as approximately two thirds in both cases) is explained by aggregate demand shocks. Consistent with neoclassical views, however, technological factors are the most important investment determinant on average. © 2020 Elsevier B.V.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+[[denote:20250205T154234][Journal of Economic Dynamics and Control]]
+
+[[denote:20250202T120625][Investment determination]]
+
+[[denote:20250203T184210][Survey Data]]
+
+[[denote:20250206T102310][Sentiment shocks]]
+
+[[denote:20250206T102320][Narrative Approach]]
+
+[[denote:20250205T155125][Firm Optimism and Pessimism]]
+
+[[denote:20250206T103752][Expectations and Investment]]
+
+* References
+
+
+
+#+print_bibliography:

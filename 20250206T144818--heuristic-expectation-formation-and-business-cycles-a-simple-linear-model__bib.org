@@ -1,0 +1,145 @@
+#+OPTIONS: num:nil ^:{} toc:nil
+#+title:      Heuristic Expectation Formation and Business Cycles: A Simple Linear Model
+#+date:       [2025-02-06 qui 14:48]
+#+filetags:   :bib:
+#+identifier: 20250206T144818
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+#+reference:  westerhoff_2008_Heuristic
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+The author includes [[denote:20250202T115151][Behavioral extrapolation]] in a [[denote:20250203T180258][Keynesian Multiplier]] to evaluate the effects of [[denote:20250202T121158][Expectations]] on the [[denote:20240708T155635][Business Cycles]].
+The model generats fluctuations triggerd by expectation formation.
+
+** Background and motivation
+
+- Business Cycles generated due to [[denote:20250202T121645][Consumer Sentiments]] or [[denote:20250202T114350][Animal Spirits]]
+- Since the model have non-linear characteristic, it is not reasonable to use [[denote:20240708T113039][Rational Expectations]]
+  - Instead, agents follow simple [[denote:20250203T180559][Learning and Heuristics]] rules
+
+** Supporting Ideas and hypothesis
+
+- Consumption depends on a [[denote:20250203T182626][Permanent Income Hypothesis]]-fashion in which the estimate a long-run income level
+  - The author also indicates the possibility of [[denote:20250202T121441][carrolls_s_consumption_function]]
+- The macroeconomic side of the model follow the Keynesian Multiplier
+  - Similar to [[denote:20250206T144122][A Note on Interactions-Driven Business Cycles]], agents also have optmistic or pessimistic states
+- The private investment depends both on a constant element ([[denote:20250202T115037][Autonomous Investment bubble]]) and on a random component
+- The proportion of each expectational rule is fixed, imposing a linearity in the model
+
+** Purpose, Relevance, and Contribution
+
+Regarding the [[denote:20250202T120807][Innovation bubble ABM]], this paper could provide a theoretical discussion on [[denote:20240708T175224][Expectations Formation and Behaviour Macroeconomics]] and Business Cycles.
+
+- This paper explore the role of Behavioral extrapolation on Business Cycles
+
+** Methodology
+
+- Numerical simulations for discrete time model
+  - It is unclear if the author use [[denote:20250203T181801][Monte Carlo Simulations]] procedure
+- The author increases the complexity of the model by: (i) including random investment; (ii) allowing consumers to learn (in the statistical sense) how to estimate the long-run income level.
+- There are two types of expectational rules (similar to [[denote:20250202T121539][chartists]] and [[denote:20250203T173554][Fundamentalist]] rules):
+  - Extrapolative, which follows an adaptative rule
+  - Regressive, in which long-run income level acts as an anchor
+- The long-run income level is predicted as a [[denote:20250202T115811][Statistical Learning]] (captured by \(d\)) with a component reflecting Animal Spirits (indicated by \(\varepsilon\)): \(\hat{Y} = d\hat{Y}_{t-1} + (1 - d)Y_{t-1} + \varepsilon\)
+
+** Results
+
+- In the special case with \(d=1\), the income level will be lower than the Keynesian Multiplier level if agents expect lower average income level
+  - Consequently, expectation formation affects the multiplier
+  - The stronger the regressive coefficient, the stronger are the fluctuation
+- Considering the scenario with random component of investment, the income does not converge to the fixed-equilibrium point
+- When agents learn about the future income level, there are fluctuations around the equilibrium point. However, when there are the Animal Spirits component, the deviation from the equilibrium last for longer time steps.
+
+** Interesting findings and not categorized stuff
+
+
+** Critics
+
+- In some sense, the canonical [[denote:20250203T184155][Supermultiplier Models]] also allows that expectation affects the multiplier, but not in a interactive way
+- The hypothesis regarding investment are quite simplistic and need further investigation
+  - As a result, this model does not properly discuss economic growth, only the level effects.
+- Regarding the contribution of the Innovation bubble ABM model, it could be interesting to investigation the effects of [[denote:20250203T184226][Switching Mechanisms]] procedure
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+We develop a Keynesian business cycle model to study how extrapolative and regressive expectation formation rules may affect fluctuations in economic activity. We find that simple expectation formation rules may have an impact on the level and the stability of the equilibrium income, the size of the multiplier and the resulting adjustment process after an exogenous shocks. Our model also reveals that national income may be influenced by how agents perceive their long-run average income.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+
+``We develop a Keynesian business cycle model to study how extrapolative and regressive expectation formation rules may affect fluctuations in economic activity.'' ([[zotero://select/library/items/Z2MU7FNM][Westerhoff, 2008, p. 47]]) ([[zotero://open-pdf/library/items/LFS9QQLK?page=1&annotation=KGMXRTLM][pdf]])
+{PURPOSE} Business Cycles, Behavioral extrapolation, Expectations formation and Behavior macroeconomics
+
+``According to Keynesian models, however, fluctuations in economic activity may furthermore be driven by changes in aggregate demand due to the instability of consumer and investor sentiment.'' ([[zotero://select/library/items/Z2MU7FNM][Westerhoff, 2008, p. 47]]) ([[zotero://open-pdf/library/items/LFS9QQLK?page=1&annotation=7N5FSBH2][pdf]])
+{BACKGROUND} Consumer Sentiments and [[denote:20250202T120941][Harrodian instability]],
+
+``Note that when economic variables evolve chaotically, it may become quite difficult to form rational expectations (Rosser, 1996).'' ([[zotero://select/library/items/Z2MU7FNM][Westerhoff, 2008, p. 47]]) ([[zotero://open-pdf/library/items/LFS9QQLK?page=1&annotation=MZJMQW6Y][pdf]])
+{BACKGROUND} Since the model has non-linearities, it is hard to support [[denote:20240708T113039][Rational Expectations]]
+
+``In fact, there exists a huge amount of empirical evidence, ranging from survey studies to laboratory experiments, stating that agents typically rely on relatively simple heuristics when having to predict future economic variables (Kahneman et al., 1986; Smith, 1991).'' ([[zotero://select/library/items/Z2MU7FNM][Westerhoff, 2008, p. 48]]) ([[zotero://open-pdf/library/items/LFS9QQLK?page=2&annotation=YM3ZWM6I][pdf]])
+{BACKGROUND} Agents follows [[denote:20250203T180559][Learning and Heuristics]] simple rules
+
+``The macroeconomic side of our model is represented by the multiplier model.'' ([[zotero://select/library/items/Z2MU7FNM][Westerhoff, 2008, p. 48]]) ([[zotero://open-pdf/library/items/LFS9QQLK?page=2&annotation=JLTQWPBU][pdf]])
+{HYPOTHESIS} Keynesian Multiplier
+
+``the agents consume a given fraction of their current expected income.'' ([[zotero://select/library/items/Z2MU7FNM][Westerhoff, 2008, p. 48]]) ([[zotero://open-pdf/library/items/LFS9QQLK?page=2&annotation=7XBAXNL8][pdf]])
+{HYPOTHESIS} Consumers follow a Permanent Income Hypothesis-fashion
+
+``We also consider the case in which agents hold optimistic or pessimistic beliefs concerning their long-run average income.'' ([[zotero://select/library/items/Z2MU7FNM][Westerhoff, 2008, p. 48]]) ([[zotero://open-pdf/library/items/LFS9QQLK?page=2&annotation=6487Z5J8][pdf]])
+{METHOD} The expectational mechanism rely on [[denote:20250203T174044][Generic Opinion Formation]] of consumers expectations.
+
+``For simplicity, investment fluctuates around a constant level I ̄'' ([[zotero://select/library/items/Z2MU7FNM][Westerhoff, 2008, p. 49]]) ([[zotero://open-pdf/library/items/LFS9QQLK?page=3&annotation=S9DYT5JK][pdf]])
+{HYPOTHESIS} Investment follows an white noise process.\\ {FUTURE} Future papers could enhance this model by changing this hypothesis, using, for instance, Sraffian suppermultiplier growth model
+
+``However, recent empirical evidence (Carroll et al., 1994; Souleles, 2004; or Doms and Morin, 2004) suggests that consumer expenditures are driven by consumer sentiment, thus confirming Keynes' suspicion that consumer 'attitudes' and 'animal spirits' may cause fluctuations in economic activity.'' ([[zotero://select/library/items/Z2MU7FNM][Westerhoff, 2008, p. 49]]) ([[zotero://open-pdf/library/items/LFS9QQLK?page=3&annotation=TY9PY3TV][pdf]])
+{HYPOTHESIS} Consumption fluctuates during the business cycle, following Consumer Sentiments or Carrolls's consumption function.
+
+``The average market expectation with respect to national income is defined as'' ([[zotero://select/library/items/Z2MU7FNM][Westerhoff, 2008, p. 49]]) ([[zotero://open-pdf/library/items/LFS9QQLK?page=3&annotation=BSRZ2438][pdf]])
+{HYPOTESIS} Similar to [cite/text:[cite/t:@westerhoff_2006_Business]], consumers make Behavioral extrapolation.\\ Extrapolative is similar to an adaptative rule, while regressive have some sort of anchor.
+
+``Finally, we have to specify how agents perceive their long-run average income level. Here we assume that agents behave as econometricians but are also influenced by Keynesian 'animal spirits'. Therefore, we write'' ([[zotero://select/library/items/Z2MU7FNM][Westerhoff, 2008, p. 50]]) ([[zotero://open-pdf/library/items/LFS9QQLK?page=4&annotation=TRQSALPC][pdf]])
+{HYPOTHESIS} Long-run income expectations have a Animal Spirits componente\\ {INCLUDE} Equation
+
+``The fixed point of our model is only equal to the well-know Keynesian multiplier solution I ̄/(1 - c) when Y ̄ = ˆ Y . Put differently, if the agents perceive a lower (higher) average income level, it will indeed be lower (higher) than the traditional multiplier solution. The size of the multiplier may also be affected by the agents' expectation formation. The stronger the impact of regressive expectations, the less strongly equilibrium income reacts to changes in autonomous expenditures I ̄.'' ([[zotero://select/library/items/Z2MU7FNM][Westerhoff, 2008, p. 51]]) ([[zotero://open-pdf/library/items/LFS9QQLK?page=5&annotation=QMEKKMN6][pdf]])
+{RESULTS} The output level will be exactly equal to the keynesian equilibrium if agents expected lower income level.\\ In addition, expectations affects the multiplier value.
+
+``All three scenarios display dampened output oscillations, i.e. output converges in the long run towards its steady-state value with decreasing amplitude. The cyclical behavior of the national income variable is, of course, triggered by the agents' boundedly rational expectation formation.'' ([[zotero://select/library/items/Z2MU7FNM][Westerhoff, 2008, p. 52]]) ([[zotero://open-pdf/library/items/LFS9QQLK?page=6&annotation=39BAXDEA][pdf]])
+{RESULTS} The model have dumpem oscillations, triggered by consumers expectations.
+
+``Since the system does not converge to a fixed point, the agents may not necessarily (quickly) recognize that they misperceive the true equilibrium value of national income.'' ([[zotero://select/library/items/Z2MU7FNM][Westerhoff, 2008, p. 52]]) ([[zotero://open-pdf/library/items/LFS9QQLK?page=6&annotation=B3N2FXR9][pdf]])
+{RESULTS} When investment has a random component, the model do not converge to the fixed point.
+
+``In the first panel, agents underestimate their 'normal' income level. In the following two panels, they seek to learn ˆ Y . And in fact, for d = 0.95, the agents quickly come up with a reasonable guess of ˆ Y .'' ([[zotero://select/library/items/Z2MU7FNM][Westerhoff, 2008, p. 53]]) ([[zotero://open-pdf/library/items/LFS9QQLK?page=7&annotation=7Z5G4X9C][pdf]])
+{METHOD} The agents have Statistical Learning when the parameter associated with long-run income level is close to one. In those scenarios, they quick estimate the true equilibrium value.
+
+``Onthe other hand, the bottom two panels show that 'animal spirits' may at least temporarily lead to larger misperceptions.'' ([[zotero://select/library/items/Z2MU7FNM][Westerhoff, 2008, p. 53]]) ([[zotero://open-pdf/library/items/LFS9QQLK?page=7&annotation=FRSR443L][pdf]])
+{RESULTS} The presence of Animal Spirits generates more persistent errors.
+
+``Since the fractions of both predictors are fixed, the model is linear.'' ([[zotero://select/library/items/Z2MU7FNM][Westerhoff, 2008, p. 54]]) ([[zotero://open-pdf/library/items/LFS9QQLK?page=8&annotation=GLAD3RZ3][pdf]])
+{HYPOTHESIS}
+
+* Additional Backlinks
+
+- [[denote:20250205T175724][Metroeconomica]]
+- [[denote:20250202T114158][Accelerator Model]]
+- [[denote:20250202T115037][Autonomous Investment bubble]]
+- [[denote:20211215T182520][Heterogeneous Expectations]]
+- [[denote:20250203T184226][Switching Mechanisms]]
+
+
+* References
+
+
+
+#+print_bibliography:

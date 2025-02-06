@@ -1,0 +1,4 @@
+#+title:      Journal of Economic Methodology
+#+date:       [2025-02-06 qui 12:23]
+#+filetags:   :journal:
+#+identifier: 20250206T122301

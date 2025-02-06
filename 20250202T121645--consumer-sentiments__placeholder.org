@@ -1,7 +1,4 @@
-:PROPERTIES:
-:ID:       ae731152-5618-4c2e-a42e-7577fe53fe36
-:END:
-#+title:      consumer_sentiments
+#+title:      Consumer Sentiments
 #+date:       [2025-02-02 dom 12:16]
 #+filetags:   :placeholder:
 #+identifier: 20250202T121645

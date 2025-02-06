@@ -1,8 +1,0 @@
-:PROPERTIES:
-:ID:       a7006830-b276-4a6a-8d2f-1b18b82131e3
-:END:
-#+title:      Verdoorn's Law
-#+date:       [2025-02-02 dom 11:46]
-#+filetags:   :placeholder:
-#+identifier: 20250202T114616
-#+OPTIONS: num:nil ^:{} toc:nil

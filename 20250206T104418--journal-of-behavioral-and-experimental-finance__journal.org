@@ -1,0 +1,4 @@
+#+title:      Journal of Behavioral and Experimental Finance
+#+date:       [2025-02-06 qui 10:44]
+#+filetags:   :journal:
+#+identifier: 20250206T104418

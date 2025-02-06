@@ -1,7 +1,4 @@
-:PROPERTIES:
-:ID:       758f05b0-3be3-4528-9fab-33ade963ad99
-:END:
-#+title:      darwainian_approach
+#+title:      Darwainian Approach
 #+date:       [2025-02-02 dom 12:18]
 #+filetags:   :placeholder:schoolofthought:
 #+identifier: 20250202T121820

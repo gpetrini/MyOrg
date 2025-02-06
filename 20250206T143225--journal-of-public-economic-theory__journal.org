@@ -1,0 +1,4 @@
+#+title:      Journal of Public Economic Theory
+#+date:       [2025-02-06 qui 14:32]
+#+filetags:   :journal:
+#+identifier: 20250206T143225

@@ -1,0 +1,122 @@
+#+title:      The Big Market Delusion: valuation and Investment Implications
+#+date:       [2025-02-06 qui 10:09]
+#+filetags:   :bib:
+#+identifier: 20250206T100924
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+#+reference:  cornell_2020_Big
+
+
+* FISH-5SS
+
+** 5SS
+
+[cite/t:@cornell_2020_Big] introduce the concept of [[denote:20250202T115238][Big Market Delusion]] which describe some patterns of  [[denote:20250202T114928][Asset bubble]]s episodes such as the [[denote:20250203T172959][Dot-Com Crisis]].
+Three ingredients must be present to trigger this phenomena: a big market promise; overconfidence; and overpricing (compared with [[denote:20250203T173614][Fundamentals]]).
+Usually, investors have a [[denote:20250202T120344][Optmism bias]], ignoring the potential competitors and justify thier decision based only on the potential growth of this market.
+
+
+
+** Background and motivation
+
+Since this is not an fully economic paper, but a [[denote:20250202T120251][Policy Oriented]] note, there are few theoretical backgrounds and the motivation in not that clear.
+
+** Supporting Ideas and hypothesis
+
+- Companies' market price value is associate with the potential market size in the future
+- As a consequence of Optmism bias, investors and those who provide funding ignore company's Fundamentals and price them unrealistic high due to this expected huge market
+- The implicit hypothesis of the paper is that if profitability is in accordance with firm's actual growth, its price will be in line with the Fundamentals
+- The authors support the existence of Optmism bias (overconfidence) as a [[denote:20250202T115214][Behavior Bias]] in [[denote:20250202T115203][Behavioral Finance]] literature
+- It is supposed that the potential market size will attract more competitors
+
+** Purpose
+
+
+
+** Contribution
+
+The main contribution of this paper is to define the concept of Big Market Delusion described as follows [cite:@cornell_2020_Big p. 15]:
+#+begin_quote
+The big market delusion arises when three ingredients come into play.
+The first is the existence of a big market, perceived or real, that draws in businesses intent on exploiting this market for growth and profit.
+The second component is overconfidence, a key behavioral characteristic possessed in disproportionate quantities by the entrepreneurs and venture capitalists (VCs) who are drawn to big markets, leading them to overestimate their chances of—and the payoff from—success.
+The final piece of the puzzle is pricing, whereby investors attach values to companies based on what others are paying for similar companies, allowing for a disconnect between a company’s stock price and its underlying fundamentals.
+#+end_quote
+
+
+** Relevance
+
+For the [[denote:20250202T120807][Innovation bubble ABM]] chapter, this paper provide a theoretical conception in order to define the fallacy when expected aggregate market-share exceeds the possible level.
+Since this chapter focus on the Dot-Com crisis, the other episodes will not be analyzed in depth.
+
+
+Thus, the value of this paper is to explain an Asset bubble-like patter associated with a potential big market based on the Big Market Delusion concept.
+This seems adequate to describe the Dot-Com crisis, for instance.
+
+** Methodology
+
+The authors present some [[denote:20250202T121503][causal_narratives]] and some date regarding the following cases:
+- Dot-Com crisis
+- Online advertising (2015)
+- Cannabis Market (2019-)
+
+
+** Results
+
+Since this is a paper based on Causal Narratives, the main results are related to the definition of Big Market Delusion:
+- Big Market :: Firms must be able to explore this market and generate profits
+  - Once profitable, the firms must be able to keep new entrants out
+  - This is more difficult in more competitive markets
+  - It does not need to be associated with a new market. [[denote:20250202T121805][creative_destruction]] may take place in which new entrants disrupts incumbents
+- Individual overconfidence and collective Irrationality :: Associated with Optmism bias
+- Overpricing :: Overpricing varies over time according to the degree of overconfidence, market size, uncertainty, and winner-takes-all markets
+  - Additionally, this overpricing is usually justified by the firm's recent growth
+- Blindness to competition :: Incumbents that justify their decisions arguing the potential market-size usually overestimate it, ignoring the potential effects of competition. This large market would accept both incumbents and new entrants.
+
+Next, the analytical elements will be applied to the Dot-Com crisis:
+- Big market :: The emergence of internet would allow access to a broader market due to e-commerce, attracting new companies
+- Prcing delusion :: Many young companies jumped directly to public listings. Thus, much of those public firms had characteristics of nascent companies with promisses of high profits
+- Follow up :: A massive drop of Bloomberg US Internet Index and NASDAQ followed by lots of firms runing of the market
+
+** Interesting findings and not categorized stuff
+
+- The authors point out that Asset bubbles are not necessarily bad (in similar terms with [cite/t:@eatwell_2004_Usefull]). Thus, they do not recommend to stop them.
+- The authors also discuss the implications of Big Market Delusion for each type of investors (momentum investors, value investors and valuation professionals)
+
+** Critics
+
+- In general, this paper seems to be describing Asset bubbles, not a specific phenomena
+  - However, its clarifies the conditions for [[denote:20250203T182443][Overinvestment]]  bubbles may occur
+- The authors do not elaborates the behavioral hypothesis associated with the Optmism bias and [[denote:20250203T183856][Selection Bias]]
+  - There is also an implicit positive [[denote:20250202T121139][Feedback mechanisms]] in which overpriced firms are the ones which attracts more investors
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+In entrepreneurs’ minds, big markets offer the promise of easily scalable revenues that, coupled with profitability, can translate into large profits.
+This article examines how the “big market promise” affects business formation and financing, with a focus on the role of overconfidence on the part of both entrepreneurs and their financiers (venture capitalists and public equity) in creating a collective overpricing of companies in alleged big markets—and an inevitable correction.
+Three case studies illustrate this thesis—one in which the process has fully played out (1990s dot-com retail), one in which it has been unfolding for a while (online advertising), and one in which it is just beginning (the cannabis market).
+We suggest several lessons for investors, regulators, and businesses based on these case studies.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+
+* Additional Backlinks
+
+[[denote:20250206T100825][Financial Analysts Journal]]
+
+[[denote:20250202T114928][Asset bubble]]
+
+[[denote:20250203T172959][Dot-Com Crisis]]
+
+[[denote:20250202T115238][Big Market Delusion]]
+
+[[denote:20250204T190112][Seminal Work]]
+
+
+
+* References
+
+#+print_bibliography:

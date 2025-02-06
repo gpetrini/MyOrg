@@ -1,0 +1,4 @@
+#+title:      Narrative Approach
+#+date:       [2025-02-06 qui 10:23]
+#+filetags:   :placeholder:
+#+identifier: 20250206T102320

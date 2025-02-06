@@ -1,0 +1,221 @@
+#+OPTIONS: num:nil ^:{} toc:nil
+#+title:      R&D-based Economic Growth in a Supermultiplier Model
+#+date:       [2025-02-06 qui 12:55]
+#+filetags:   :bib:
+#+identifier: 20250206T125503
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+#+reference:  nomaler2021
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+The authors present and extended version of the [[denote:20250203T184155][Supermultiplier Models]] with R&D partially endogenous and [[denote:20250202T114954][Autonomous Expenditures]] fully endogeneized.
+The ideia is to produce both capacity utilization and employment growth rate stable paths.
+In summary, they report a supply-led model in which aggregate demand only affects stability conditions and not determines the long-run growth rate.
+The smoothing consumption equations (workers' or government) ensure stability similarly to a [[denote:20250203T184701][New Cambridge]] procedure.
+
+** Background and motivation
+
+- Empirically, there is short- and medium-run fluctuations, but not secular trends of depression.
+- Many models R&D driven do not consider the demand side properly.
+
+** Supporting Ideas and hypothesis
+
+The Sraffian suppermultiplier growth model was chosen because it already has a stable capacity utilization, thus it is only required to stibilize the employment growth rate.
+There are reminescence of [[denote:20250202T120941][Harrodian instability]] in the Sraffian suppermultiplier growth model because the employment growth rate will stabilize only if Autonomous Expenditures grow at the same rate as productivity. Considering the [[denote:20250202T120807][Innovation bubble ABM]] model, this could be an interesting point to discuss if there are different results.
+
+- Consumption function has a smoothing mechanism resambling to New Cambridge equation
+- Adopting the [[denote:20250203T180158][Kaldor-Verdoorn Law]] implies that productivity depends onf capital accumulation ([[denote:20250202T120529][Learning by Doing]]). However, the authors argue, it does not generates a persistent effect on long-run growth rate.
+- R&D expenditure as a share of GDP.
+  - The share of R&D capital stock on total capital stock if fixed
+    - In some sense, this is similar to [cite/text:@freitas_2020_Baselinea] hypothesis to fix some expenditures share.
+    - Productivity growth rate depends on a exogenous component and on capital stock.
+  - Autonomous consumption depends on accumulated wealth.
+    - For some reason, the authors assume the accumulated wealth comes from wage income and not from profits income.
+    - Financial wealth depreciates. The reason for this is that it depends on total capital stock, which also depreciates.
+  - When including the government sector, it is assumed that return on government bonds are the same as on private rate of return.
+  - Government autonomous consumption depends of total private wealth.
+
+** Purpose, Relevance, and Contribution
+
+For the Innovation bubble ABM chapter, this paper is relevant since it include R&D in the Sraffian suppermultiplier growth model framework.
+The main distinctiveness it to allow demand-side variables play some role in the long-run.
+
+** Methodology
+
+
+- Numerical simulation and analytical resolution
+- Presents the Sraffian suppermultiplier growth model step-by-step in order to show that is not abble to produce stable employment paths.
+
+** Results
+
+- In the traditional Sraffian suppermultiplier growth model, a stable path of both capacity utilization and employment rate will exist if productivity grows at the same pace as autonomous expenditures growth rate.
+- The consumption smooth function guarantees the model stability
+  - Smooth mechanism: When employment rate decreases, wage income decreases as well, thus workers draw more from accumulated savings. This is the stabilizing mechanism of the model.
+- \(g_{Z}\) depends both on the marginal propensity to consume out of wealth and on the financial saving growth rate: \(g_{Z} = g_{\zeta_{w}} + g_{W}\)
+- Increases in marginal propensity to invest in R&D have a positive (but declining) effect on marginal propensity to invest and on R&D capital stock on total capital stock ratio.
+  - The higher the investment rate (R&D and expansion), the higher the share of workers wealth on total real wealth. The rationale remarks to a loanable funds, since the higher the investment rate, more firms must borrow from households to finance production.
+
+** Interesting findings and not categorized stuff
+
+- The authors recognize the possibility of productivity converging to autonomous expenditures growth rate.
+- If labor supply is endogenous (as in [cite:[cite/t:@pedrosa_2021_What]]), the productivity growth rate converges to the Autonomous Expenditures growth rate.
+  - In the following versions of the Innovation bubble ABM chapter, these may be a concern.
+
+
+** Critics
+
+- It is unclear why Autonomous Expenditures growth rate should be fully endogenized while productivity growth rate is allowed to have an autonomous component
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+We investigate how economic growth in a demand-driven economy with semi-endogenous productivity growth can be compatible with a stable employment path. Our model uses a Sraffian supermultiplier (SSM), and we endogenize the growth rate of autonomous demand, and semi-endogenize productivity growth. The basic model has a steady state that is consistent with a stable employment rate, and in which the growth rate is determined by R&D expenditures. Consumption smoothing (between periods of high and low employment) by workers is the mechanism that ensures that demand keeps up with productivity growth and that the growing economy is stable. We also introduce a version of the model where the burden for stabilization falls upon government fiscal policy. This also yields a stable growth path, although the parameter restrictions for stability are more demanding in this case.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+#+begin_src emacs-lisp
+(while (search-forward "\u00ab" nil t)
+    (replace-match "``" nil t))
+
+(replace-string "\u00bb" "''")
+#+end_src
+
+``Consumption smoothing (between periods of high and low employment) by workers is the mechanism that ensures that demand keeps up with productivity growth and that the growing economy is stable.» ([[zotero://select/library/items/NQX8H57U][Nomaler et al., 2021, p. 1]]) ([[zotero://open-pdf/library/items/U2A75ZDE?page=1&annotation=3569ALKP][pdf]])
+{RESULTS} Stability condition
+
+``These bounds imply sizeable short-to medium-run fluctuations, but not secular instability. Hence a dynamic theory of demand and growth must reflect this relative stability.» ([[zotero://select/library/items/NQX8H57U][Nomaler et al., 2021, p. 2]]) ([[zotero://open-pdf/library/items/U2A75ZDE?page=2&annotation=D8NYEXU4][pdf]])
+{BACKGROUND} Empirically, there is short- and medium-run fluctuations, but not secular trends of depression.
+
+``The choice for the supermultiplier model is primarily a convenience choice: the SSM model already generates a stable growth path for the rate of capacity utilization (through endogenous adjustments of h), and thus only the task of modelling a stable path for the employment rate remains.» ([[zotero://select/library/items/NQX8H57U][Nomaler et al., 2021, p. 2]]) ([[zotero://open-pdf/library/items/U2A75ZDE?page=2&annotation=94ZI4UCU][pdf]])
+{HYPOTHESIS} The Sraffian suppermultiplier growth model was chosen because it already has a stable capacity utilization, thus it is only required to stibilize the employment growth rate.
+
+``This is reminiscent of the notion of Harrodian instability, because these two exogenous rates will only equalize by chance.» ([[zotero://select/library/items/NQX8H57U][Nomaler et al., 2021, p. 2]]) ([[zotero://open-pdf/library/items/U2A75ZDE?page=2&annotation=Z27TQYMZ][pdf]])
+{MOTIVATION} There are reminescence of Harrodian instability in the Sraffian suppermultiplier growth model because the employment growth rate will stabilize only if Autonomous Expenditures grow at the same rate as productivity. Considering the Innovation bubble ABM model, this could be an interesting point to discuss if there are different results.
+
+``Many R&D-based growth models (certainly all of the ones cited in the paragraph above, although we will consider a few exceptions in the next section) ignore the demand side of the economy.» ([[zotero://select/library/items/NQX8H57U][Nomaler et al., 2021, p. 2]]) ([[zotero://open-pdf/library/items/U2A75ZDE?page=2&annotation=QKT5YWQZ][pdf]])
+{MOTIVATION} Many models R&D driven do not consider the demand side properly.
+
+``Brochier and Silva (2019) link autonomous consumption to the accumulated wealth of the workers, which is an approach that we will follow.» ([[zotero://select/library/items/NQX8H57U][Nomaler et al., 2021, p. 3]]) ([[zotero://open-pdf/library/items/U2A75ZDE?page=3&annotation=X22YADHB][pdf]])
+{HYPOTHESIS} Consumption fucation follows the New Cambridge equation as in [cite/t:[cite/t:@brochier_2018_Supermultiplier]].
+
+``Turning to the rate of productivity growth, Fazzari et al. (2020), Nah and Lavoie (2019b), and Palley (2019) all have endogenous labour productivity adjustment, which leads to convergence of productivity growth to the exogenous growth rate (of autonomous spending).» ([[zotero://select/library/items/NQX8H57U][Nomaler et al., 2021, p. 3]]) ([[zotero://open-pdf/library/items/U2A75ZDE?page=3&annotation=3UATKURA][pdf]])
+{LITERATURE} The authors recognize the possibility of productivity converging to autonomous expenditures growth rate.
+
+``Caminati and Sordi (2019) introduce R&D as a source of productivity growth. In their approach, the potential of a given amount of R&D to generate productivity growth decreases with the alreadyachieved level of productivity, and there are also decreasing returns to productivity-adjusted R&D.» ([[zotero://select/library/items/NQX8H57U][Nomaler et al., 2021, p. 3]]) ([[zotero://open-pdf/library/items/U2A75ZDE?page=3&annotation=7858QKHD][pdf]])
+{BACKLINK} [[denote:20250206T120757][Demand-led Growth with Endogenous Innovation]]
+
+``The inclusion of productivity growth is also often done by adding a Kaldor-Verdoorn learning effect (Allain, 2019; Brochier, 2020; Deleidi and Mazzucato, 2019; Nah and Lavoie, 2019b), in which, because of learning by doing, productivity growth depends (positively) on the capital accumulation rate or on the growth rate of output. However, the inclusion of the Kaldor-Verdoorn effect, even if it includes an exogenous component of productivity growth, has only a transitory effect on the capital accumulation rate» ([[zotero://select/library/items/NQX8H57U][Nomaler et al., 2021, p. 3]]) ([[zotero://open-pdf/library/items/U2A75ZDE?page=3&annotation=IE8L39DG][pdf]])
+{DISCUSS; HYPOTHESIS} Adopting the Kaldor-Verdoorn Law implies that productivity depends onf capital accumulation (Learning by Doing). However, the authors argue, it does not generates a persistent effect on long-run growth rate.
+
+``Finally, the supply of labour has also been proposed as endogenous. Fazzari et al. (2020) and Nah and Lavoie (2019a) argue that labour supply growth reacts to the employment rate, with high (low) employment rates causing faster (slower) growth of the labour force. Such a mechanism may arise if people base their decision to enter the labour market on the perceived probability of finding a job. With labour supply endogenized in this way, the employment rate will converge to a stable value when the economy grows at the exogenous rate of autonomous spending.'' ([[zotero://select/library/items/NQX8H57U][Nomaler et al., 2021, p. 3]]) ([[zotero://open-pdf/library/items/U2A75ZDE?page=3&annotation=XZYSWSY3][pdf]])
+{LITERATURE} If labor supply is endogenous (as in [cite:[cite/t:@pedrosa_2021_What]]), the productivity growth rate converges to the Autonomous Expenditures growth rate. {FUTURE} In the following versions of the Innovation bubble ABM chapter, these may be a concern.
+
+``We will now present our model in a step-by-step fashion.» ([[zotero://select/library/items/NQX8H57U][Nomaler et al., 2021, p. 3]]) ([[zotero://open-pdf/library/items/U2A75ZDE?page=3&annotation=4LAM69XX][pdf]])
+{METHOD} Presents the Sraffian suppermultiplier growth model step-by-step in order to show that is not abble to produce stable employment paths.
+
+``Like Freitas and Serrano, we assume that capital accumulation is a perpetual inventory process, with a fixed depreciation rate δ:» ([[zotero://select/library/items/NQX8H57U][Nomaler et al., 2021, p. 4]]) ([[zotero://open-pdf/library/items/U2A75ZDE?page=4&annotation=X5IAJB43][pdf]])
+{LITERATURE} For a discussion of this perpetual inventory process, see [[denote:20250206T125112][Explaining the Investment Boom of the 1990s]]
+
+``Z − gK and ̇ E/E = gZ − ρ. This implies that for any steady state values of u and E to exist, we must have» ([[zotero://select/library/items/NQX8H57U][Nomaler et al., 2021, p. 4]]) ([[zotero://open-pdf/library/items/U2A75ZDE?page=4&annotation=YCRUNYPP][pdf]])
+{RESULT} In the traditional Sraffian suppermultiplier growth model, a stable path of both capacity utilization and employment rate will exist if productivity grows at the same pace as autonomous expenditures growth rate.
+
+``n the model with semi-endogenous productivity growth, we start by assuming that a share τ of GDP is spent (out of profit income) on Research and Development (R&D), which we denote by :» ([[zotero://select/library/items/NQX8H57U][Nomaler et al., 2021, p. 4]]) ([[zotero://open-pdf/library/items/U2A75ZDE?page=4&annotation=8PYZ3HB9][pdf]])
+{HYPOTHESIS} R&D expenditure as a share of GDP.
+
+``(for most of our steady state calculations, we will assume = δ, i.e., R&D capital and fixed capital depreciate at the same rate, which will simplify the mathematics)» ([[zotero://select/library/items/NQX8H57U][Nomaler et al., 2021, p. 5]]) ([[zotero://open-pdf/library/items/U2A75ZDE?page=5&annotation=9GZSXLAL][pdf]])
+{HYPOTHESIS} R&D capital stock evolves similarly as regular capital stock.
+
+``Further, we define the ratio of the R&D-capital stock to the stock of fixed capital as» ([[zotero://select/library/items/NQX8H57U][Nomaler et al., 2021, p. 5]]) ([[zotero://open-pdf/library/items/U2A75ZDE?page=5&annotation=DKYUDRPE][pdf]])
+{HYPOTHESIS} Ratio of P&D to capital stock if fixed. It is not specified why.
+
+``Finally, we again follow the empirical literature in assuming that productivity growth results from R&D intensity (in our case intensity relative to the capital stock), more specifically, from the value of» ([[zotero://select/library/items/NQX8H57U][Nomaler et al., 2021, p. 5]]) ([[zotero://open-pdf/library/items/U2A75ZDE?page=5&annotation=FRUUE7BI][pdf]])
+{HYPOTHESIS} Productivity growth rate depends on a exogenous component and on capital stock.
+
+``The first idea that we will employ for endogenizing gZ is that private autonomous consumption depends on accumulated wealth.» ([[zotero://select/library/items/NQX8H57U][Nomaler et al., 2021, p. 5]]) ([[zotero://open-pdf/library/items/U2A75ZDE?page=5&annotation=Y2QYAIPS][pdf]])
+{HYPOTHESIS} Autonomous consumption depends on accumulated wealth.
+
+``deals with the more general model in which also accumulated wealth out of profit income is considered.» ([[zotero://select/library/items/NQX8H57U][Nomaler et al., 2021, p. 5]]) ([[zotero://open-pdf/library/items/U2A75ZDE?page=5&annotation=7W5GB54X][pdf]])
+{HYPOTHESIS; CRITICS} For some reason, the authors assume the accumulated wealth comes from wage income and not from profits income.
+
+``In this way, Ww is seen as an entitlement of the holders (wage earners) on the stock R + K. The term −δWw is included because the entitlement to R + K will depreciate with the stocks themselves, and we assume, for simplicity, that R&D capital and fixed capital depreciate at the same rate = δ.» ([[zotero://select/library/items/NQX8H57U][Nomaler et al., 2021, p. 5]]) ([[zotero://open-pdf/library/items/U2A75ZDE?page=5&annotation=9LJJTI7P][pdf]])
+{HYPOTHESIS} Financial wealth depreciates. The reason for this is that it depends on total capital stock, which also depreciates.
+
+``The general model has a corresponding wealth variable Wp, which represents assets held by profit earners. As the appendix shows, Ww + Wp = R + K.» ([[zotero://select/library/items/NQX8H57U][Nomaler et al., 2021, p. 5]]) ([[zotero://open-pdf/library/items/U2A75ZDE?page=5&annotation=DJ9X3EH2][pdf]])
+{RESULTS} The total financial wealth adds up with real stock. In the main version of the model, there is no wealth consumption out of profit recievers (!), but the represent the share of workers financial wealth on total real wealth.
+
+``The endogenization of gZ then proceeds by positing» ([[zotero://select/library/items/NQX8H57U][Nomaler et al., 2021, p. 5]]) ([[zotero://open-pdf/library/items/U2A75ZDE?page=5&annotation=E9XLKBT4][pdf]])
+{HYPOTHESIS} Then, the authors specify the autonomous expenditures as a share of financial wealth.
+
+``Our assumption is also that the variable ζw is a behavioural variable that serves to smooth (autonomous) consumption spending for changes in workers' income that result from changes in the employment rate» ([[zotero://select/library/items/NQX8H57U][Nomaler et al., 2021, p. 5]]) ([[zotero://open-pdf/library/items/U2A75ZDE?page=5&annotation=UCZBPZHX][pdf]])
+{HYPOTHESIS} The marginal propensity to consume out of workers wealth is a behavioral variable. It depends on deviations of normal employment rate and effective employment rate. This smoothness mechanism is similar to the implications of New Cambridge equation discussed in [cite/t:[cite/t:@teixeira_2015_Crescimento]]. \[\frac{\Delta \zeta_{w}}{\zeta_{w}} = \iota\cdot (\overline{E} - E)\]
+
+``When the employment rate drops below ̄ E, current labour income also falls below the satisfactory level (remember we assume a fixed real wage rate), and workers have to "compensate" by drawing to a larger extent on their accumulated wealth for consumption. This means that ζw will have to rise. Similarly, when employment rises above ̄ E, labour income is considered high, and there is less of a need for consumption out of accumulated wealth. Hence ζw will fall. We adopt the shorthand term "consumption smoothing" (James et al., 2007; Kim et al., 2014) for the idea specified by equation (13), which is a key mechanism in our model that proves to provide stability to the growth path in terms of ensuring a stable employment rate.» ([[zotero://select/library/items/NQX8H57U][Nomaler et al., 2021, p. 5]]) ([[zotero://open-pdf/library/items/U2A75ZDE?page=5&annotation=AN6RIH4Y][pdf]])
+{DESCRIPTION} Smooth mechanism: When employment rate decreases, wage income decreases as well, thus workers draw more from accumulated savings. This is the stabilizing mechanism of the model.
+
+``Let us start by writing the expression for gZ, which will give us two differential equations. Clearly, from Eq. (A4a), gZ = ( ̇ ζw/ζw) + ( ̇ Ww/Ww)» ([[zotero://select/library/items/NQX8H57U][Nomaler et al., 2021, p. 6]]) ([[zotero://open-pdf/library/items/U2A75ZDE?page=6&annotation=4B8HADQP][pdf]])
+{EQUATION} Now, \(g_{Z}\) depends both on the marginal propensity to consume out of wealth and on the financial saving growth rate:\\ \[g_{Z} = g_{\zeta_{w}} + g_{W}\]
+
+``The figure shows that all three of these steady state outcomes are concave functions of τ . In other words, increasing the rate of R&D spending as a fraction of GDP will have a positive but declining effect on the steady state values of the investment rate (h), the ratio of the R&D stock to the stock of fixed capital (\\), and, as a result of the latter, the rate of productivity growth.» ([[zotero://select/library/items/NQX8H57U][Nomaler et al., 2021, p. 6]]) ([[zotero://open-pdf/library/items/U2A75ZDE?page=6&annotation=2PR7UI48][pdf]])
+{RESULTS} Increases in marginal propensity to invest in R&D have a positive (but declining) effect on marginal propensity to invest and on R&D capital stock on total capital stock ratio.
+
+``The higher this share is, the more firms need to borrow from workers to fund investment, and hence the higher the steady state value of x.» ([[zotero://select/library/items/NQX8H57U][Nomaler et al., 2021, p. 6]]) ([[zotero://open-pdf/library/items/U2A75ZDE?page=6&annotation=B3YTK4MR][pdf]])
+{RESULTS} The higher the investment rate (R&D and expansion), the higher the share of workers wealth on total real wealth. The rationale remarks to a loanable funds, since the higher the investment rate, more firms must borrow from households to finance production.
+
+``As was already predicted above, all of these are supply-side parameters, and some (τ, ̄ ρ and φ) are directly related to technological change. Demand-side parameters, such as cw, ̄ E or even σ do not enter the expression for the long-run growth rate of the economy.» ([[zotero://select/library/items/NQX8H57U][Nomaler et al., 2021, p. 6]]) ([[zotero://open-pdf/library/items/U2A75ZDE?page=6&annotation=LAHN8SJL][pdf]])
+{RESULTS} Any demand-side variables determines long-run growth rate.
+
+``Inspection of the results of the grid search suggests that the parameters ι and γ play a crucial role in stability. In particular, we need a minimum value of the ratio ι/γ for the steady state to be stable.» ([[zotero://select/library/items/NQX8H57U][Nomaler et al., 2021, p. 7]]) ([[zotero://open-pdf/library/items/U2A75ZDE?page=7&annotation=R2CCN3D9][pdf]])
+{RESULTS} The stability requires that capital stock adjustment parameter (\(\gamma\)) and consumption sensititivity to employment discrepancies (\(\iota\)) to a narrow ratio.
+
+``This implies that ι needs to be relatively large for stability, and that larger values of γ require larger values of ι.» ([[zotero://select/library/items/NQX8H57U][Nomaler et al., 2021, p. 9]]) ([[zotero://open-pdf/library/items/U2A75ZDE?page=9&annotation=K24T63VP][pdf]])
+{RESULTS} For stability, \(\iota\) needs to be high, and implies a higher \(\gamma\)
+
+``However, we introduce a new parameter, 0 ≤ r ≤ 1, which measures the extent to which profits are redistributed. With the inclusion of this new parameter, workers will receive a share σ + rx(1 − σ ) of GDP, and profits earners a share (1 − σ )(1 − rx). It is easily seen that if r = 0 (i.e., no returns on accumulated savings), we have the model as it has been presented so far, while if r = 1, we have the expressions as firstly introduced in this paragraph (returns fully proportional to x).» ([[zotero://select/library/items/NQX8H57U][Nomaler et al., 2021, p. 10]]) ([[zotero://open-pdf/library/items/U2A75ZDE?page=10&annotation=TXZCIWE4][pdf]])
+{METHOD} Now, the authors evaluate if there is a parameter indicating how profits are redistributed.
+
+``In line with the previous section, we assume that the government has to pay interest on the bonds that it issues to fund outstanding debt G. For simplicity, we assume that this rate of return is equal to the private rate of return on invested capital (R&D capital R and fixed capital K).» ([[zotero://select/library/items/NQX8H57U][Nomaler et al., 2021, p. 11]]) ([[zotero://open-pdf/library/items/U2A75ZDE?page=11&annotation=WR3WXTDP][pdf]])
+{HYPOTHESIS} When including the government sector, it is assumed that return on government bonds are the same as on private rate of return.
+
+``First, we assume that government spending is proportional (by ζG) to the private wealth variable W:» ([[zotero://select/library/items/NQX8H57U][Nomaler et al., 2021, p. 11]]) ([[zotero://open-pdf/library/items/U2A75ZDE?page=11&annotation=A9GH5JXZ][pdf]])
+{HYPOTHESIS} Government autonomous consumption depends of total private wealth.
+
+``We then also need a behavioral rule for the spending fraction» ([[zotero://select/library/items/NQX8H57U][Nomaler et al., 2021, p. 12]]) ([[zotero://open-pdf/library/items/U2A75ZDE?page=12&annotation=6VPK2VJ3][pdf]])
+{HYPOTHESIS} Next, the behavioral parameter of government expenditure is similar to the smoothing mechanism of household consumption.
+
+``value for the variable D, and adjusts the tax rate to maintain this value (in the long run):» ([[zotero://select/library/items/NQX8H57U][Nomaler et al., 2021, p. 12]]) ([[zotero://open-pdf/library/items/U2A75ZDE?page=12&annotation=DDIN7LFW][pdf]])
+{HYPOTHESIS} In addition, they assume a long-run neutrla debt stock. They also assume that the tax growth rate is governed by this neutral debt.
+
+``The stability of the steady state in the model with a government seems more precarious than the model without a government that was presented above, i.e., government stabilization using fiscal policy is harder than with the private consumption smoothing stabilizer in the previous sections. One of the reasons for this is that whereas before we had two adjustment parameters (γ and ι) for which we needed particular values, we now have three such adjustment parameters: η, γ and ιG (and we also have ̄ D, which we fixed at zero for mathematical convenience).» ([[zotero://select/library/items/NQX8H57U][Nomaler et al., 2021, p. 13]]) ([[zotero://open-pdf/library/items/U2A75ZDE?page=13&annotation=4KH6SV2W][pdf]])
+{RESULTS} Now, the stability is harder to achieve since there is one more parameter to satisfy.
+
+``The magnitude of the growth rate is determined by supply-side parameters related to R&D and technical change. But demand is very important in this economy, because without adjustment of demand to the R&D-based growth rate, no stable path exists.» ([[zotero://select/library/items/NQX8H57U][Nomaler et al., 2021, p. 14]]) ([[zotero://open-pdf/library/items/U2A75ZDE?page=14&annotation=MUQWIRJJ][pdf]])
+{RESULTS} The model generates a supply-led growth in which demand only conditionates the adjustment mechanism.
+
+``Our model proposes that the equality of these two rates is obtained by consumption smoothing by wage earners (workers), who adjust their autonomous consumption spending as a fraction of their accumulated savings, in response to unemployment, and/or by government fiscal policy, where the government runs a temporary deficit (surplus) if the unemployment rate is high (low) and raises taxes to keep its long-run debt within bounds.'' ([[zotero://select/library/items/NQX8H57U][Nomaler et al., 2021, p. 14]]) ([[zotero://open-pdf/library/items/U2A75ZDE?page=14&annotation=FATAW6IY][pdf]])
+{DESCRIPTION} The adjustment mechanism rely on consumption adjustment (similar to New Cambridge equation) and [[denote:20250202T121115][Fiscal Policy]] triggered by disprepancies in unemployment rates.
+
+* Additional Backlinks
+
+[[denote:20250204T193239][Structural Change and Economic Dynamics]]
+
+[[denote:20250205T165524][Research and Development]]
+
+[[denote:20250203T184155][Supermultiplier Models]]
+
+[[denote:20250202T120740][Innovation-led growth models]]
+
+* References
+
+
+
+#+print_bibliography:

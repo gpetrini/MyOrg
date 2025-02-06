@@ -1,7 +1,4 @@
-:PROPERTIES:
-:ID:       e708fe89-4dff-4751-bf6b-78999dad4275
-:END:
-#+title:      evolutionary_selection
+#+title:      Evolutionary Selection
 #+date:       [2025-02-02 dom 12:22]
 #+filetags:   :placeholder:
 #+identifier: 20250202T122209

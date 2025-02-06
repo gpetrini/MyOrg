@@ -1,0 +1,100 @@
+#+OPTIONS: num:nil ^:{} toc:nil
+#+title:      Darwinian Rational Expectations
+#+date:       [2025-02-06 qui 12:23]
+#+filetags:   :bib:
+#+identifier: 20250206T122351
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+#+reference:  finestone_2022_Darwinian
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+[cite/t:@finestone_2022_Darwinian] propose a Darwinian rationality capable to restore the advantages of the [[denote:20240708T113039][Rational Expectations]] hypothesis.
+The author argues that the alternative approach have limiting features.
+The main conclusion is that Rational Expectations results emerges due to the bankrupt of firms, so the best forecast rules will persist.
+In summary, market selection is similar to [[denote:20250202T121820][Darwainian Approach]] of natural selection.
+
+
+** Background and motivation
+
+- Rational Expectations is very restrictive and seen as not justified by the literature
+  - The author argues that the original proposal of this hypothesis was more systematic than related to individual knowledge
+    - However, there are some evidence that Muth himself thought Rational Expectations was necessary because that was not enough rationality in the models as a response to Simon
+- The author argues that the persistent adoption of Rational Expectations is related to an methaphoric view of rationality, rather than an ontological one
+
+** Supporting Ideas and hypothesis
+
+- Rational Expectations is an symplified assumption in order to make the model treatable
+  - A consequence of this hypothesis is the model instantaneouslly converges to the equilibrium
+- The Darwainian Approach should have the following elements (with the economic equivalent):
+  - Variantion :: if all agents are heterogenous, there is no phenotypes to select
+  - Inheritance :: phenotypes persists across generations
+  - Differential reproductive success :: If there is uniform changes of success, there is no room for selection
+  - Stability :: To be selected, an characteristic must be stable over time
+  - Selective procedure :: Market bankruptcy
+- The proposed [[denote:20250202T120437][Market Selection]] does not require individual rationality, but a systematic one
+
+** Purpose, Relevance, and Contribution
+
+- Rational Expectations needs some sort of justification and the proposed interpretation complements the existing approaches
+- For the [[denote:20250202T120807][Innovation bubble ABM]] chapter, the paper is relevant for providing an theoretical discussion on rationality and heuristics
+  - A possible result is that [[denote:20250203T184226][Switching Mechanisms]] may have some similarities with the proposed alternative. The main distinction, however, it the the former does not posit an [[denote:20220630T153213][Intertemporal Maximization]]
+
+** Methodology
+
+- [[denote:20250202T121503][causal_narratives]] discussing the alternative approaches to justify Rational Expectations. The author analysis:
+  - [[denote:20250202T122049][educative_processes]]
+
+** Results
+
+- The proposed alternative does not require  either [[denote:20250203T184101][Structural Knowledge]] or [[denote:20250202T115811][Statistical Learning]]
+  - The Educative Processes approaches require both agents to have Structural Knowledge and to know that others also have it
+    - This is more related to [[denote:20250202T114849][Game Theory]]
+    - The author also argues that this proposal is incomplete, since require to provide a learning mechanism
+  - The [[denote:20250203T180625][Learning Processes]] alternative requires data accumulation and some algorithm to provide statistical inference
+    - There is also a literature that deals with the type of data and how agents are attentive to them ([[denote:20250202T113854][Inatention Models]])
+    - The authors argues that this proposal also goes towards the [[denote:20250203T180559][Learning and Heuristics]] literature, in which heuristics are some sort of learning process
+- Rational Expectations emerges since agents that do not bankrupt persist in the market. According to this:
+  - "[...] agents should be modeled as consistent reasonaers who will generally exploit arbitrage opportunities" [cite:@finestone_2022_Darwinian; p. 119]
+
+** Interesting findings and not categorized stuff
+
+
+** Critics
+
+- When considering more complex environments, better expectational rules --- in the statistical sense --- may perform worse [cite:@dosi_2020_Rational].
+  - To be precise, the results refer to no systematic errors, so the simple Learning and Heuristics procedures may be compatible with the Rational Expectations hypothesis
+- The main possible distinction between this Rational Expectations rehabilitation and the Switching Mechanisms is the absence of Intertemporal Maximization in the former.
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+The rational expectations hypothesis holds that agents should be modeled as not making systematic forecasting errors and has become a central model-building principle of modern economics. The hypothesis is often justified on the grounds that it coheres with the general methodological principle of economic rationality. In this article, I propose a novel Darwinian market justification for rational expectations which does not require either structural knowledge or statistical learning, as is commonly required in the economic literature. Rather, this Darwinian market account reconceives rationality as a market level phenomenon instead of as an individualistic property.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+[[denote:20250206T122301][Journal of Economic Methodology]]
+
+[[denote:20250203T180559][Learning and Heuristics]]
+
+[[denote:20250203T184226][Switching Mechanisms]]
+
+[[denote:20250202T120437][Market Selection]]
+
+[[denote:20250202T121820][darwainian_approach]]
+
+
+* References
+
+#+print_bibliography:

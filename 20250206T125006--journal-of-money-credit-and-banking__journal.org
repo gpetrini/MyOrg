@@ -1,0 +1,4 @@
+#+title:      Journal of Money, Credit and Banking
+#+date:       [2025-02-06 qui 12:50]
+#+filetags:   :journal:
+#+identifier: 20250206T125006

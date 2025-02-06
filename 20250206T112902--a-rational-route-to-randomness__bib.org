@@ -1,0 +1,58 @@
+#+OPTIONS: num:nil ^:{} toc:nil
+#+title:      A Rational Route to Randomness
+#+date:       [2025-02-06 qui 11:29]
+#+filetags:   :bib:
+#+identifier: 20250206T112902
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+#+reference:  brock_1997_Rational
+
+
+
+* FISH-5SS
+
+|---------------------------------------------+-----|
+| <40>                                        |<50> |
+| *Entry*                                       | *Description* |
+|---------------------------------------------+-----|
+| *Background*                                  |     |
+| *Supporting Ideas*                            |     |
+| *Purpose*                                     |     |
+| *Originality/value (Contribution)*            |     |
+| *Relevance*                                   |     |
+| *Design/methodology/approach*                 |     |
+| *Results*                                     |     |
+| *(Interesting) Findings*                      |     |
+| *Research limitations/implications (Critics)* |     |
+| *Uncategorized stuff*                         |     |
+| *5SS*                                         |     |
+|---------------------------------------------+-----|
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+The concept of adaptively rational equilibrium (A.R.E.) is introduced. Agents adapt their beliefs over time by choosing from a finite set of different predictor or expectations functions. Each predictor is a function of past observations and has a performance or fitness measure which is publicly available. Agents make a rational choice concerning the predictors based upon their past performance. This results in a dynamics across predictor choice which is coupled to the equilibrium dynamics of the endogenous variables. As a simple, but typical, example we consider a cobweb type demand-supply model where agents can choose between rational and naive expectations. In an unstable market with (small) positive information costs for rational expectations, a high intensity of choice to switch predictors leads to highly irregular equilibrium prices converging to a strange attractor. The irregularity of the equilibrium time paths is explained by the existence of a so-called homoclinic orbit and its associated complicated dynamical phenomena. Thus local instability and global complicated dynamics may be a feature of a fully rational notion of equilibrium.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+[[denote:20250202T115328][Canonical Models]]
+
+[[denote:20250204T190112][Seminal Work]]
+
+[[denote:20250203T184226][Switching Mechanisms]]
+
+
+* References
+
+#+print_bibliography:
+
+
+
+#+print_bibliography:

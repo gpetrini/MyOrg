@@ -1,0 +1,110 @@
+#+OPTIONS: num:nil ^:{} toc:nil
+#+title:      Information Rigidity and the Expectations Formation Process: A Simple Framework and New Facts
+#+date:       [2025-02-06 qui 11:07]
+#+filetags:   :bib:
+#+identifier: 20250206T110740
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+#+reference:  coibion_2015_Informationa
+
+
+
+* FISH-5SS
+
+|---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <40>                                        | <50>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| *Entry*                                       | *Description*                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| *Background*                                  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| *Supporting Ideas*                            | This paper base on the [[denote:20250203T175849][Information Rigidity Models]] framework in which intentional inatention provide some explanation for the departure from the [[denote:20240708T113039][Rational Expectations]] Equilibrium (REE). In those models, information update is infrequent or agents does not fully observe the real [[denote:20250203T173614][Fundamentals]] (signal extraction problem).                                                                                                                                                                                                                                                                                         |
+| *Purpose*                                     | The purpose of this paper is to investigate the economic meaning of the rejection of the Rational Expectations hypothesis.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| *Originality/value (Contribution)*            | The authors explicitly test whether the rejection of the Rational Expectations hypothesis is a results of the rejection of this hypothesis /per se/ or a rejection of the Full information assumption.                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| *Relevance*                                   | For the [[denote:20250202T120807][Innovation bubble ABM]], this paper presents some of the most recent models of information rigidity and test them econometrically. This results may be relevant to propose a model in which expectational errors vary during the [[denote:20240708T155635][Business Cycles]].                                                                                                                                                                                                                                                                                                                                                                 |
+| *Design/methodology/approach*                 | *Sample:* [[denote:20250202T120843][Inflation]] forecasters for US [[denote:20250203T184210][Survey Data]] (Survey of Professional Forecasters, SPF) from 1969 to 2014. They also estimate the model considering additional 11 countries. The authors also test whether the rejection of FIRE is restricted to professional forecasters and whether information rigidity is time-invariant.                                                                                                                                                                                                                                                                                       |
+| *Results*                                     | The authors reject the Full information assumption and does not reject the Rational Expectations considering informational rigidity. They also conclude that informational rigidity is present both in firms and consumer expectations, not only on professional forecasters. They report that heterogenous levels of estimation is not compatible with the Sticky-Information model (which updates all variables at once). The also find evidence for [[denote:20250203T183555][Rational Inattention models]]. One additional results is that information rigidity is state-dependent, so it is sensible to the moment of the Business Cycles. |
+| *(Interesting) Findings*                      | They report that the degree of Information Rigidity increased after the [[denote:20250202T121008][Great Moderation]] while it decreased from 1960 to 1980. Thus, tranquil times are related with higher informational rigidity.                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| *Research limitations/implications (Critics)* |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| *Uncategorized stuff*                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| *5SS*                                         | This paper tests if the rejection of Rational Expectations hypothesis is related to agents' rationaly of due to the absense of Full-Information set. They reject the Full Information assumption and confirm the Rational Expectations hypothesis accordingly to the Information Rigidity Literature.                                                                                                                                                                                                                                                                                                                   |
+|---------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+We propose a new approach to test the full-information rational expectations hypothesis which can identify whether rejections of the null arise from information rigidities.
+This approach quantifies the economic significance of departures from the null and the underlying degree of information rigidity.
+Applying this approach to US and international data of professional forecasters and other agents yields pervasive evidence consistent with the presence of information rigidities.
+These results therefore provide a set of stylized facts which can be used to calibrate imperfect information models.
+Finally, we document evidence of state-dependence in the expectations formation process.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+** Sticky-Information Model
+:PROPERTIES:
+:ID:       5a177b1d-7dde-4929-96da-3311ea501578
+:END:
+
+
+Considering a variavle $x$, its forecast $Fx$ and the degree of information rigidity $\lambda$:
+
+#+BEGIN_latex
+\begin{equation}
+x_{t+h} - F_{t}x_{t+h} = \frac{\lambda}{1-\lambda}(F_{t}x_{t+h} - F_{t-1}x_{t+h}) + v_{t+h,t}
+\end{equation}
+#+END_latex
+slow updating agents is presented by $\lambda>0$.
+
+
+Analyzed variables: GDP price deflator; Industrial production; Housing starts, and unemployment rate.
+
+It is important to note is that when agent update their Belief, the get full-information set [cite:@coibion_2015_Informationa p. 2663].
+
+** Noisy-Information Model
+:PROPERTIES:
+:ID:       4f305525-6879-442a-82de-48204410006d
+:END:
+
+
+#+BEGIN_latex
+\begin{equation}
+x_{t+h} - F_{t}x_{t+h} = \frac{\1-G}{G}(F_{t}x_{t+h} - F_{t-1}x_{t+h}) + v_{t+h,t}
+\end{equation}
+#+END_latex
+in which $G$ is a [[denote:20250202T120600][Kalman Filter]].
+Accordingly to [cite/t:@coibion_2015_Informationa p. 2651]:
+#+begin_quote
+The predictability of average forecast errors in the noisy-information model reflects the gradual adjustment of beliefs by all agents to new information.
+Because agents do not know whether the new information reflects noise or innovations to the variable being forecasted, they adjust their beliefs only gradually in response to shocks to fundamentals.
+#+end_quote
+
+
+Noisy-Information Model imply that degree of information rigidity should be decreasing considering the persistence of the forecasted series [cite:@coibion_2015_Informationa p. 2668].
+Analyzed variables: consumer price inflation, real GDP growth, interest rates, industrial production growth, and real consumption growth.
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+[[denote:20250205T163840][American Economic Review]]
+
+[[denote:20250202T121158][Expectations]]
+
+[[denote:20250203T175849][Information Rigidity Models]]
+
+[[denote:20250202T115838][Speculation]]
+
+[[denote:20240708T155635][Business Cycles]]
+
+[[denote:20250203T180644][Learn to Forecast Experiments]]
+
+[[denote:20250202T120843][Inflation]]
+
+[[denote:20250203T180559][Learning and Heuristics]]
+
+
+* References
+
+#+print_bibliography:

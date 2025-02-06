@@ -1,0 +1,4 @@
+#+title:      Financial Analysts Journal
+#+date:       [2025-02-06 qui 10:08]
+#+filetags:   :journal:
+#+identifier: 20250206T100825

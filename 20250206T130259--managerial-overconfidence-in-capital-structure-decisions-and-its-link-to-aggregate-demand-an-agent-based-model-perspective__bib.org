@@ -1,0 +1,145 @@
+#+OPTIONS: num:nil ^:{} toc:nil
+#+title:      Managerial Overconfidence in Capital Structure Decisions and Its Link to Aggregate Demand: An Agent-Based Model Perspective
+#+date:       [2025-02-06 qui 13:02]
+#+filetags:   :bib:
+#+identifier: 20250206T130259
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+#+reference:  rzeszutek_2021_Managerial
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+
+** Background and motivation
+
+
+Theoretical background:
+- Usually, neoclassical models rely on unrealistic cognitive hypothesis such as [[denote:20240708T113039][Rational Expectations]]
+- [[denote:20250203T181543][Modigliani and Muller Theorem]] in which firm's [[denote:20250202T115501][Capital Structure]] is irrelevant for its performance
+
+** Supporting Ideas and hypothesis
+
+- [[denote:20250203T182550][Pecking Order Theory]] seems to be more related to overconfidence rather than asymmetric information
+- It is assumed that managers have three conflicting objectives
+  - Increase/maintain market-share
+  - Satisfies shareholders
+  - Satisfies bankers
+- Constant labour productivity
+- Consumption-goods firms expected sales is a weighted average between its past values and expected growth of demand
+  - Thus, it is an trend based expectational rule
+- Firm's markup depends on capacity utilization and market-share
+- Firms have [[denote:20250203T183803][Rigidity and Frictions]] to update its price
+- Firms updates its target market-share and capacity utilization according to ...
+- Investment function follows a rigid [[denote:20250202T114158][Accelerator Model]] with investment probabilities due to Rigidity and Frictions
+  - There is a threshold in which firms do not invest
+- Overconfidence is includes by an stochastic variable in the expected profit equation, affecting dividends distribution and thus, Capital Structure
+- Firms decide an desired deposit level to them define the internal funds to finance investment
+- Authors try to emulate a Pecking Order Theory
+- Firms may buy their equities back to keep total external debt constant to adjust its Capital Structure
+  - Firms cannot buy back more than 25% of existing equity stock
+- There is an alternative [[denote:20250203T183408][Quasi-replicator]] in which firm's target market-share depends onf relative prices and relative capital stock (proxy firms size)
+- When a firm exit market, households buy it capital stock (with a discount factor) and scrap them to have liquidity back
+- A new entrant firm have a probability to be neutral or overconfident
+- Capital goods sector emulates a share of consumption goods productivity and is demand-determined
+  - Produce according to realized investment
+  - Additionally, do not retain prodits
+- Households buy all emitted share and central bank bills
+  - Households choose how to allocate equity according to firm's relative performance
+- Bank interest rate depends on policy rate, banking sector specific-term and firm-specific component that depends on firm's indebtedness
+
+** Purpose and Contribution
+
+This paper aims to connect firm's Capital Structure and how overconfidence affects it and evaluate the macroeconomic consequences of this [[denote:20250202T115214][Behavior Bias]].
+
+
+** Relevance
+
+For [[denote:20250202T120807][Innovation bubble ABM]] chapter, this paper provide some discussion regarding the effects of [[denote:20250203T182443][Overinvestment]].
+There is a possible dialogue between their model and mine.
+Additionally, it provides some discussion on how to model capital goods sector.
+
+** Methodology
+
+*** Model design
+
+- Hybrid [[denote:20250203T184028][Stock-Flow Consistent]] [[denote:20250202T114248][Agent Based Models]] in which only consumption goods firms are heterogeneous
+- Aggregate households, capital-goods firms, banks and government
+- Consumption goods firms are heterogeneous regarding their Capital Structure
+- There is also an equity market
+
+*** Overconfidence
+
+The authors define overconfidence when manager overestimate the value of a company.
+Consequently, perceive company's stock to be undervalued.
+Thus, prioritize internal funds since it considers external funds excessively costly.
+Overconfidence imply a tendency to choose more short-term financing.
+
+*** Calibration
+
+The model is calibrated for according to companies listed on the Warsaw Stock Exchange (WSE, Poland) for 2012-2019
+
+** Results
+
+- Main Result :: Overconfident firms outperform in terms of investment and size, but become more financially fragile
+  - Overconfident firms have a lower net equity emission compared with neutral firms
+  - When firms default rate increase, bank increase average interest rate in order to prevend their capital adequacy ratio, affecting all kind of firms equally
+  - Overconfidence does not lead to a higher aggregate debt level
+- Flight to liquidity :: Increase households risk avertion, reallocating their portfolio away from equities towards safer assets
+  - Firms have an increase in debt holding
+  - Firms decrease investment
+  - Moderate increase in firms default rate
+  - Since overconfident use less external resources, they are less affected compared to neutral firms
+- Tighther monetary policy :: Increase in bank interest rate
+  - Firms arbitrage more in favor of equity rather than equity
+  - Decrease investment
+  - Overconfident have a higher debt ratio comparade to neutral firms
+- More Liquidity :: Reduce firms' financial fragility
+  - Decrease in firm's default rate not followed by an decrease in interest rate
+  - Higher liquidity ratio potentially stabilizes the economy
+
+** Interesting findings and not categorized stuff
+
+- Considering [[denote:20230216T235207][Chapter ABM]] chapter, households (or other agents) can buy exiting households houses with a discount factor
+
+** Critics
+
+- As the authors point out, there is no innovation
+- It seems unreasonable to prioritize a desired deposits level and reduce investment plans when firms face a credit constraint.
+- It is assumed that larger firs have higher demand level in a Quasi-replicator equation. There is no further discussion about that
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+Objective This study aims to connect two strands of the psychology and economics literature, i.e., behavioural finance and agent-based macroeconomics, to assess the impact of managerial overconfidence at the micro and macro levels of the economy as a whole. Method We build a macroeconomic stock-flow consistent agent-based model that is calibrated for the specific case of Poland to explore whether the overconfidence of top corporate managers in the context of their initial capital structure decisions is detrimental for the firms being managed in this way, the financial market dynamics, and the selected macroeconomic indicators. We model heterogeneous firms with different capital structure decision criteria depending on their degree of managerial overconfidence. Our model also includes a complete macroeconomic closure with aggregated households, capital producers, banking, and a public sector. Results We find that firms with overconfident managers outperform in terms of investment and size but are also more fragile, thereby making them more likely to default. Finally, we run policy shocks and show that while investors’ flight to liquidity creates financial turmoil and increases the probability of default. Conclusions This paper contributes to the knowledge base by linking behavioural corporate finance and agent-based macroeconomics. In general, the excess overconfidence on the micro level, either an increase in the proportion of overconfident firms or a higher degree of overconfidence among managers, has a strong destabilizing impact on the economy as a whole on the macro level.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+[[denote:20250206T130152][Plos One]]
+
+[[denote:20250202T120427][Monetary Policy]]
+
+[[denote:20250202T114248][Agent Based Models]]
+
+[[denote:20250202T115203][Behavioral Finance]]
+
+[[denote:20230216T235200][Minskian theory]]
+
+[[denote:20250203T182443][Overinvestment]]
+
+
+* References
+
+
+
+#+print_bibliography:

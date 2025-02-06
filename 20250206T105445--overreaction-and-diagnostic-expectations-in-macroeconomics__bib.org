@@ -1,0 +1,211 @@
+#+OPTIONS: num:nil ^:{} toc:nil
+#+title:      Overreaction and Diagnostic Expectations in Macroeconomics
+#+date:       [2025-02-06 qui 10:54]
+#+filetags:   :bib:
+#+identifier: 20250206T105445
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+#+reference:  bordalo_2022_Overreaction;bordalo_2020_Overreaction
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+The authors present an alternative of the [[denote:20240708T113039][Rational Expectations]] hypothesis in order to explain macroeconomic volatility.
+Their proposal --- [[denote:20250202T121916][diagnostic_expectations]] --- rely on [[denote:20250203T183912][Selective Memory]] and it escapes from [[denote:20250203T180947][Lucas' Critique]].
+According to them, agents have [[denote:20250202T120344][Optmism bias]] and [[denote:20250202T120415][Negative bias]], neglecting/overweight the risks.
+This endogenous belief changing mechanism could reproduce some Minskian pattern and [[denote:20250203T182443][Overinvestment]], being a backup plan for the [[denote:20250203T184226][Switching Mechanisms]] in the [[denote:20250202T120807][Innovation bubble ABM]] chapter.
+
+** Background and motivation
+
+The main background of this paper is to provide an alternative to the Rational Expectations by using [[denote:20250202T120332][Overreaction]]. In addition:
+- Most of the volatility in the models with Rational Expectations are exogenously generated. However, there are some attempts to modify this canonical model:
+  - In order to use the Rational Expectations hypothesis, some authors included costs of acquiring or processing information ([[denote:20250202T113854][Inatention Models]] [[denote:20250203T175849][Information Rigidity Models]])
+    - According to them, agents underreact to news
+      - This could be a good hook for the Heuristic switching model
+  - Other alternatives rely on unconventional preferences (as discussed in [cite/t:@scherbina_2013_Asset]). The main mechanism depends on changes in marginal utility of consumption.
+    - As a drawback, those approaches are not verifiable
+  - Others use an Bayesian framework and stats that learning is slow or priors are wrong, explaining why Rational Expectations seems to fail.
+- If the error of a forecast could be predicted by the information that agents have, so the Rational Expectations hypothesis is not valid
+- As discussed in [[denote:20250206T103752][Expectations and Investment]], expectations are not uninformative noise.
+
+** Supporting Ideas and hypothesis
+
+- The authors provides some evidence for the existence of [[denote:20250202T120332][Overreaction]], which could be related to Overinvestment decisions.
+  - During booms, agents have an Optmism bias; during a recession, a Negative bias
+  - Overreaction changes during the [[denote:20240708T155635][Business Cycles]]
+- There are evidence that the Rational Expectations hypothesis does not hold, such as [[denote:20250202T114928][Asset bubble]] which has an excess of volatility
+- The authors discuss other type of test which evaluates if agents revisions predictes future errors as in [[denote:20250206T110740][Information Rigidity and the Expectations Formation Process: A Simple Framework and New Facts]].
+
+** Purpose, Relevance, and Contribution
+
+For the [[denote:20250202T120807][Innovation bubble ABM]] chapter, this work is important for indicating a possible way to specify persistent [[denote:20250202T115037][Autonomous Investment bubble]]. Thus, this is an alternative for the Heuristic switching model. If the latter procedure does not succeed, this could be an alternative.
+
+
+- The proposal of [[denote:20250202T121916][diagnostic_expectations]] rely on the idea of [[denote:20250203T183912][Selective Memory]]. In summary, memory is key in decision-making process.
+  - This approach is not as ad hoc as the adaptative expectations and can face [[denote:20250203T180947][Lucas' Critique]].
+    - This is because the coefficients are not exogenously given
+    - The authors exemplify with the situation in which an agent have to predict the color of someone hair based on information (nationality in this case).
+  - The formal model includes two components in the belief formation: rational forecast and a overweight to news. It is better developed in other papers [cite:@bordalo_2018_Diagnostic; @bordalo_2021_Diagnostic]
+  - *Mechanism:* Selective Memory can crowd out risks during good times and overweight them in bad times.
+  - The authors indicate the use of this methodology in the stock and credit market, and fewers papers discuss the Business Cycles.
+- Most of the mentioned papers that use this methodology for the Business Cycles, include it in the New Keynesian model by emphasizing [[denote:20250203T183803][Rigidity and Frictions]] (mainly in prices).
+
+** Methodology
+
+- [[denote:20250202T120026][Review of Literature]] and some [[denote:20250203T182723][Plotting and Data Visualization]]
+
+** Results
+
+- [[denote:20250202T120344][Optmism bias]] and [[denote:20250202T120332][Overreaction]] are positively correlated to [[denote:20250202T120625][Investment determination]]. The subsequent disappointment can explain [[denote:20240708T155635][Business Cycles]] fluctuations.
+- The [[denote:20250202T121916][diagnostic_expectations]] allows for reversal in beliefs
+  - The authors argue that this could generate a Minskian-like movement ([[denote:20250203T181356][Minskian Growth Models]]) as well as with [cite/t:@kindleberger_1996_Manias].
+    - If this is true, the [[denote:20250203T173133][Financial Crises]] would be preceded by an euphoric phase
+
+** Interesting findings and not categorized stuff
+
+- Regarding Plotting and Data Visualization, it could be interesting show a relation similar to Figure 1 between CFO expectations and investment plans (Source Duke University survey).
+
+** Critics
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+We present the case for the centrality of overreaction in expectations for addressing important challenges in finance and macroeconomics. First, non-rational expectations by market participants can be measured and modeled in ways that address some of the key challenges posed by the rational expectations revolution, most importantly the idea that economic agents are forward-looking. Second, belief overreaction can account for many long-standing empirical puzzles in macro and finance, which emphasize the extreme volatility and boom-bust dynamics of key time series, such as stock prices, credit, and investment. Third, overreaction relies on psychology and is disciplined by survey data on expectations. This suggests that relaxing the assumption of rational expectations is a promising strategy, helps theory and evidence go together, and offers a unified view of a great deal of data.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+
+#+begin_src emacs-lisp :eval no
+(while (search-forward "\u00ab" nil t)
+    (replace-match "``" nil t))
+
+(replace-string "\u00bb" "''")
+#+end_src
+
+#+RESULTS:
+
+``To account for some of this evidence, early models maintained rational belief formation, but introduced costs of acquiring or processing information (Sims 2003, Woodford 2003).'' ([[zotero://select/library/items/Z5BVPGGK][Bordalo et al., 2022, p. 2]]) ([[zotero://open-pdf/library/items/IT8VAIVH?page=3&annotation=UIGU2YXU][pdf]])
+{BACKGROUND} Costs of information is one way to test a weak version of Rational Expectations.
+
+``That is, beliefs are too optimistic in good times and too pessimistic in bad times, at the individual level and sometimes at the consensus level as well.'' ([[zotero://select/library/items/Z5BVPGGK][Bordalo et al., 2022, p. 2]]) ([[zotero://open-pdf/library/items/IT8VAIVH?page=3&annotation=ZB79WRVC][pdf]])
+{BACKGROUND} Empirical evidence towards overreaction ([[denote:20250202T120344][Optmism bias]] and [[denote:20250202T120415][Negative bias]]).
+
+``The rational expectations revolution put an end to this line of work. The key criticism is that adaptive expectations feature a particularly unrealistic kind of systematic error. According to what later became known as the Lucas critique (1976), adaptive expectations do not respond to regime changes.'' ([[zotero://select/library/items/Z5BVPGGK][Bordalo et al., 2022, p. 4]]) ([[zotero://open-pdf/library/items/IT8VAIVH?page=5&annotation=P9S5KDS6][pdf]])
+{BACKGROUND} The Rational Expectations revolution is associated with Lucas' Critique.
+
+``But it left several puzzling facts unexplained. In terms of economic outcomes, it had trouble accounting for the slow adjustment of some macroeconomic variables, such as wages or inflation, and for the excess volatility of other variables such as stock prices, interest rates or home prices.'' ([[zotero://select/library/items/Z5BVPGGK][Bordalo et al., 2022, p. 5]]) ([[zotero://open-pdf/library/items/IT8VAIVH?page=6&annotation=67ZSFF5L][pdf]])
+{FINDS} The excess volatility of house prices is incompatible with Rational Expectations hypothesis.
+
+``An early attempt to deal with slow adjustment included theories of rational inattention and information rigidities (Sims 2003, Woodford 2003, Mankiw and Reis 2002, Gabaix 2019), in which agents only partially update their beliefs as new information arrives, due to the cost of absorbing and processing news. Agents are rational, but thinking is costly. Because agents are rational, beliefs are attuned to the model of the economy. Because updating is costly, agents look forward but underreact to news. As a result, the reaction to a shock will be spread out over time, a result that helps a great deal with explaining rigidities in real variables.'' ([[zotero://select/library/items/Z5BVPGGK][Bordalo et al., 2022, p. 5]]) ([[zotero://open-pdf/library/items/IT8VAIVH?page=6&annotation=L9HMTNKJ][pdf]])
+{BACKGROUND} One alternative was to introduction informational costs as in the Inatention Models and Information rigidity models. According to them, the adjustment is slown and agent underreact to news. Regarding the Innovation bubble ABM model, this could be a good hook between models.
+
+``A vast body of tests using survey data on the forecasts made by households, professional forecasters, corporate managers, and professional investors nearly universally rejects this prediction.'' ([[zotero://select/library/items/Z5BVPGGK][Bordalo et al., 2022, p. 6]]) ([[zotero://open-pdf/library/items/IT8VAIVH?page=7&annotation=5NMXWK2C][pdf]])
+{RESULTS} Empirical evidence reports that forecast errors can be predicted by the information knowm by the agents, contradicting Rational Expectations.
+
+``One critique of such findings is that true expectations are unobservable (Prescott 1977), and measured expectations are distorted by a misunderstanding of the survey questions or low incentives for accuracy.'' ([[zotero://select/library/items/Z5BVPGGK][Bordalo et al., 2022, p. 7]]) ([[zotero://open-pdf/library/items/IT8VAIVH?page=8&annotation=68H5CX7G][pdf]])
+{DISCUSSION} Drawbacks about this sort of studies. True expectations are not observable, and the undertanding of the survey matters. However, as discussed in [[denote:20250206T103752][Expectations and Investment]], expectations are not uninformative noise.
+
+``If agents overreact, so they are too optimistic in good times and too pessimistic in bad times, then beliefs are excessively volatile, which translates into excessive volatility in individual decisions. If instead agents underreact so that they are not optimistic enough in good times and not pessimistic enough in bad times, then sluggish belief adjustment translates into sluggish decisions.'' ([[zotero://select/library/items/Z5BVPGGK][Bordalo et al., 2022, p. 8]]) ([[zotero://open-pdf/library/items/IT8VAIVH?page=9&annotation=WTJ27CFI][pdf]])
+{DISCUSSION} The main point is not if expectational errors are systematic or not, but it this errors have some economic meaning.
+
+([[zotero://select/library/items/Z5BVPGGK][Bordalo et al., 2022, p. 8]])
+{INCLUDE} It could be interesting to plot some date similar to this.
+
+``The second test for over vs. under-reaction of beliefs to news was developed by Coibion and Gorodnichenko (2012, 2015). Their key innovation is to measure "news" by the extent to which the agent revises the forecast for a fixed future date. The test then consists in assessing whether such forecast revision predicts the agent's future forecast error.'' ([[zotero://select/library/items/Z5BVPGGK][Bordalo et al., 2022, p. 9]]) ([[zotero://open-pdf/library/items/IT8VAIVH?page=10&annotation=HN2VB5D9][pdf]])
+{LITERATURE/DISCUSSION} The other type of test evaluates if agents revisions predictes future errors as in [[denote:20250206T110740][Information Rigidity and the Expectations Formation Process: A Simple Framework and New Facts]].
+
+``Panel B suggests that belief over-reaction can have significant economic consequences: current investment growth is strongly positively correlated with the current revision of the longterm growth variable. When the median analyst receives good news (and so do firm managers), current aggregate optimism increases and investment rises sharply, perhaps excessively so. Subsequent disappointment of overoptimistic beliefs may cause boom-bust investment cycles.'' ([[zotero://select/library/items/Z5BVPGGK][Bordalo et al., 2022, p. 11]]) ([[zotero://open-pdf/library/items/IT8VAIVH?page=12&annotation=A3F7FNJZ][pdf]])
+{RESULTS/IMPORTANT} So far, this is the most relevant result considering the scope of the Innovation bubble ABM chapter. It is argued that Optmism bias is positivelly correlated with investment decisions. The subsequent disappointment can explain Business Cycles fluctuations.
+
+``That is, individual analysts do not make optimal use of their own information, but rather overreact, which reveals a deeper problem than rational inattention.'' ([[zotero://select/library/items/Z5BVPGGK][Bordalo et al., 2022, p. 11]]) ([[zotero://open-pdf/library/items/IT8VAIVH?page=12&annotation=UIC8SH4Y][pdf]])
+{RESULTS/LITERATURE} THe result of BGMS (2020) is that agents do not make the optimal use of available information.
+
+``Over the last several years, we have developed one such model, called diagnostic expectations. This model puts psychology, and in particular selective memory, center stage (Gennaioli and Shleifer 2010; Bordalo, Coffman, Gennaioli, and Shleifer 2016; Bordalo, Gennaioli, and Shleifer 2018).'' ([[zotero://select/library/items/Z5BVPGGK][Bordalo et al., 2022, p. 12]]) ([[zotero://open-pdf/library/items/IT8VAIVH?page=13&annotation=4YLHLV8U][pdf]])
+{CONTRIBUTION} THe proposal of Diagnostic Expectations rely on the idea of selective memory. In summary, memory is key in decision-making process. Considering the Innovation bubble ABM chapter, this discussion can hooks to the alternative proposal of [[denote:20250203T184226][Switching Mechanisms]]
+
+``The resulting models of expectations can then be more flexible and less ad hoc than adaptive expectations, addressing the Lucas critique but also accounting for survey data.'' ([[zotero://select/library/items/Z5BVPGGK][Bordalo et al., 2022, p. 13]]) ([[zotero://open-pdf/library/items/IT8VAIVH?page=14&annotation=ELVYQSFB][pdf]])
+{CONTRIBUTION} The Diagnostic Expectations approach is not as ad hoc as the adaptative expectations and can face Lucas' Critique.
+
+``Suppose for instance that an agent must guess the hair color of a person coming from Ireland, so 𝑋𝑋 ∈ {𝑟𝑟𝑟𝑟𝑟𝑟, 𝑙𝑙𝑙𝑙𝑙𝑙ℎ𝑡𝑡, 𝑟𝑟𝑑𝑑𝑟𝑟𝑑𝑑}, and 𝐷𝐷 = 𝐼𝐼𝑟𝑟𝑙𝑙𝐼𝐼ℎ. As the agent thinks about the possibility that the hair color is 𝑋𝑋 = 𝑟𝑟𝑟𝑟𝑟𝑟, many examples of red-haired Irish come to mind. This occurs because Irish people are more similar to red hair than other populations, in the sense that red hair is relatively more frequent in Ireland than in the rest of the world. By contrast, as the agent thinks about the possibility that the hair color of an Irish is dark, 𝑋𝑋 = 𝑟𝑟𝑑𝑑𝑟𝑟𝑑𝑑, few examples of darkhaired Irish come to mind. Indeed, Irish people are much less similar to dark hair than other populations, in the sense that dark hair is relatively less frequent in Ireland than in the rest of the'' ([[zotero://select/library/items/Z5BVPGGK][Bordalo et al., 2022, p. 13]]) ([[zotero://open-pdf/library/items/IT8VAIVH?page=14&annotation=JE77AIRJ][pdf]])
+{EXAMPLE}
+
+``The model of diagnostic expectations can be used to formalize expectation formation in dynamic settings, as shown formally by Bordalo, Gennaioli, and Shleifer (2018). In that model, forward-looking expectations about an economic variable are based on two components: one component anchored to the rational forecast, and a second component that overweighs news'' ([[zotero://select/library/items/Z5BVPGGK][Bordalo et al., 2022, p. 14]]) ([[zotero://open-pdf/library/items/IT8VAIVH?page=15&annotation=HPVJ8AND][pdf]])
+{LITERATURE/CONTRIBUTION} The formal model includes two components in the belief formation: rational forecast and a overweight to news.
+
+``First, it can produce neglect or overweighting of tail-end downside risk depending on whether incoming news is good or bad. In good times, good states of the world come to mind and crowd out bad ones, leading to the neglect of tail risk. After a bad shock, bad states of the world come to mind and crowd out the retrieval of good states, leading to exaggerated tail risk.'' ([[zotero://select/library/items/Z5BVPGGK][Bordalo et al., 2022, p. 15]]) ([[zotero://open-pdf/library/items/IT8VAIVH?page=16&annotation=BCVV6USA][pdf]])
+{DISCUSSION} Selective memory can crowd out risks and good times and exagerate them in bad times.
+
+``Unlike for adaptive expectations, updating coefficients are not fixed but rather depend on the underlying reality and have a forward-looking component, addressing the Lucas cr it ique.'' ([[zotero://select/library/items/Z5BVPGGK][Bordalo et al., 2022, p. 16]]) ([[zotero://open-pdf/library/items/IT8VAIVH?page=17&annotation=8XCXVGTR][pdf]])
+{CONTRIBUTION} At odds with adaptative expectation, the coefficients are not fixed.
+
+``Third, the same mechanism produces systematic reversals in beliefs. Consider the case of an over-optimistic agent. When good news ceases to come in, the agent is no longer cued to oversample good outcomes from memory. As a result, beliefs cool down even in the absence of bad news, causing a sharp reversal that is not driven by bad fundamental news. Diagnostic expectations can generate large movements in beliefs and choices on the basis of small shocks, as well as sudden reversals in beliefs on the basis of past, but not contemporaneous, shocks.'' ([[zotero://select/library/items/Z5BVPGGK][Bordalo et al., 2022, p. 16]]) ([[zotero://open-pdf/library/items/IT8VAIVH?page=17&annotation=UXAFWFDW][pdf]])
+{CONTRIBUTION} The proposed model also allows for reversals in beliefs.
+
+``Bordalo, Gennaioli, La Porta, and Shleifer (2019) show that belief overreaction can account for this phenomenon: a firm's high recent earnings growth fuels excess optimism about its future earnings, which leads to an overvaluation and a future stock price correction as earnings expectations are disappointed. They show that a diagnostic expectations model with the reaction to news at about twice the rational level, can generate quantitatively realistic boom-bust cycles in expectations and stock prices at the firm level with a realistic process for actual earnings growth.'' ([[zotero://select/library/items/Z5BVPGGK][Bordalo et al., 2022, p. 18]]) ([[zotero://open-pdf/library/items/IT8VAIVH?page=19&annotation=G98L7GMR][pdf]])
+{LITERATURE} Evidence of the Diagnostic Expectations for the stock market.
+
+``In sum, overreaction to news helps account for and unify the evidence of excess volatility and return predictability in the stock and bond markets. Quantitatively, the volatility in measured expectations does a good job accounting for the excess volatility in asset prices.'' ([[zotero://select/library/items/Z5BVPGGK][Bordalo et al., 2022, p. 20]]) ([[zotero://open-pdf/library/items/IT8VAIVH?page=21&annotation=MEHV9B7D][pdf]])
+{RESULTS} Summary for the stock market.
+
+``Overreacting beliefs suggest a different account, consistent with the informal hypothesis of Minsky (1977) and Kindleberger (1978), as well as with Reinhart and Rogoff (2009). In the boom phase, excessive optimism and neglect of risk fuel asset price bubbles and an overexpansion of credit. When beliefs are systematically disappointed, this causes falling asset values, unsustainable liabilities, fire sales, and panics. As with stock market volatility, a single controlling parameter, the extent of overreaction, accounts for both the boom and the bust.'' ([[zotero://select/library/items/Z5BVPGGK][Bordalo et al., 2022, p. 20]]) ([[zotero://open-pdf/library/items/IT8VAIVH?page=21&annotation=8S2ZM7LP][pdf]])
+{FINDS} The authors argue that the Diagnostic Expectations is compatible with Minskian Growth Models of financial instability.
+
+``If in contrast crises are due to belief overreaction, they should be predictable -- again, say, based on leverage and valuations -- but the pre-crisis period should be associated with euphoria and the neglect of risk (Gennaioli, Shleifer, and Vishny 2015). Data on the predictability of crises as well as on the ex-ante perception of risk can thus distinguish alternative theories.'' ([[zotero://select/library/items/Z5BVPGGK][Bordalo et al., 2022, p. 21]]) ([[zotero://open-pdf/library/items/IT8VAIVH?page=22&annotation=I7WUGP82][pdf]])
+{FINDS} Financial crisis are somewhat predictable, but must be preceded by an euphoric phase.
+
+``Overreacting beliefs offer a way to trace the origin of financial crises to a three stages mechanism reminiscent of Kindleberger (1978). In the first stage, a positive "displacement" such as a technological/financial innovation, or a surge in investor demand, improves an asset's fundamental value. Due to overreaction, expectations become too optimistic, creating an asset price bubble. In the second phase, leverage expands. This effect is amplified by a key byproduct of overreacting beliefs: the neglect of downside tail risk (Gennaioli and Shleifer 2018; Gennaioli, Shleifer, and Vishny 2012, 2013). As a result, even typically risk-averse investors such as banks start to over-expand. In the third phase, beliefs are disappointed, which causes excessive optimism to wane and the asset price bubble to deflate. As risk perception rises, excessive leverage becomes evident, igniting a crisis. In this model, credit spreads are low before the crisis, consistent with the evidence, and the event triggering the crisis is not a negative shock, but the unwinding of the excess optimism created by overreaction to the original, positive shock.8'' ([[zotero://select/library/items/Z5BVPGGK][Bordalo et al., 2022, p. 22]]) ([[zotero://open-pdf/library/items/IT8VAIVH?page=23&annotation=E8ZDK44Q][pdf]])
+{EXAMPLE} How the proposed model relates to [cite/t:@kindleberger_1996_Manias] arguments.
+
+``The model is structurally estimated using firm level data, which crucially includes data on managers' expectations about their firms' profitability. This approach delivers three key results. First, managers' expectations overreact, and the estimated degree of overreaction is similar to that found in other datasets (i.e., two-fold). Second, the real business cycle model augmented by diagnostic expectations can match successfully untargeted firm-level, as well as sectoral cycles. Periods when expectations about a firm (or a sector) are over-optimistic, and firm level (sector level) investment is high, are systematically followed by reversals in which: i) credit spreads rise, ii) realized bond returns are low, and iii) investment growth is low. Third, the estimated model delivers large increases in aggregate credit spreads, such as the one observed in 2008, from mild reductions in aggregate productivity.'' ([[zotero://select/library/items/Z5BVPGGK][Bordalo et al., 2022, p. 24]]) ([[zotero://open-pdf/library/items/IT8VAIVH?page=25&annotation=43F35BW2][pdf]])
+{LITERATURE} Example of the application of the Diagnostic Expectations for the analysis of the Business Cycles.
+
+``This is only the beginning of the systematic assessment of the role of non-rational beliefs in business cycles fluctuations. One important step, for instance, is to connect beliefs with standard mechanisms for demand driven business cycles such as price rigidity. Bianchi, Ilut, and Saijo (2021) and L'Huillier, Singh, and Yoo (2021) address this question by developing methods to incorporate diagnostic expectations into workhorse New Keynesian models.'' ([[zotero://select/library/items/Z5BVPGGK][Bordalo et al., 2022, p. 24]]) ([[zotero://open-pdf/library/items/IT8VAIVH?page=25&annotation=94CQL6Q5][pdf]])
+{GAP/LITERATURE} The authors point out that the proposed model can be enhanced by the inclusion of standard mechanism of demand-driven business cyclces. The neoclassicals attempts of this taks rely on price rigidit as in the canonical New Keynesian models.
+
+``As a consequence, rational explanations of excess volatility must introduce exogenous variation in preferences or in risk (i.e. in required returns) to explain the data.'' ([[zotero://select/library/items/Z5BVPGGK][Bordalo et al., 2022, p. 25]]) ([[zotero://open-pdf/library/items/IT8VAIVH?page=26&annotation=CSQ6XAL8][pdf]])
+{RESULT} As a consequence of Rational Expectations, most of the volatitlity are exogenously generated.
+
+``One standard approach, which we call exotic preferences, stresses the role of time varying risk aversion.'' ([[zotero://select/library/items/Z5BVPGGK][Bordalo et al., 2022, p. 25]]) ([[zotero://open-pdf/library/items/IT8VAIVH?page=26&annotation=H6XURCGV][pdf]])
+{BACKGROUND} One approach is to argue that agent have exotics preferences, with varying risk aversion. As a consequence, valuation is very high during goods times. The main element of Business Cycles are due to changes in marginal utility of consumption.
+
+``These two approaches to resolving the volatility puzzles face closely related problems. First, neither marginal utilities nor long run or rare disaster risk can be measured in the data. These models are driven by unobservables, which can only be inferred from other market outcomes. Second, and more importantly, if we use survey expectations data to evaluate these theories, the evidence rejects both exotic preferences and time varying risk approaches.'' ([[zotero://select/library/items/Z5BVPGGK][Bordalo et al., 2022, p. 26]]) ([[zotero://open-pdf/library/items/IT8VAIVH?page=27&annotation=ZF3SHVYC][pdf]])
+{RESULTS} Both procedures are not observable and even if empirically test, evidence suggest to reject both of them.
+
+``Greenwood and Shleifer (2014)'' ([[zotero://select/library/items/Z5BVPGGK][Bordalo et al., 2022, p. 26]]) ([[zotero://open-pdf/library/items/IT8VAIVH?page=27&annotation=XMZW8HEM][pdf]])
+{LITERATURE} Reference to include and cite about this.
+
+``It shows that systematic forecast errors may arise within a Bayesian framework, provided: i) priors are wrong, and ii) learning is slow relative to the frequency of changes in fundamental parameters, such as persistence (Singleton 2021, Farmer, Nakamura, and Steinsson 2021).'' ([[zotero://select/library/items/Z5BVPGGK][Bordalo et al., 2022, p. 27]]) ([[zotero://open-pdf/library/items/IT8VAIVH?page=28&annotation=U63BB834][pdf]])
+{LITERATURE} Some scholars argue that is still possible to have systematic errors and still validate the Rational Expectations hypothesis by using a Bayesian framework. According to them, priors are wrong and learning is relativelly slow.
+
+* Additional Backlinks
+
+[[denote:20240708T155635][Business Cycles]]
+
+[[denote:20250202T120807][Innovation bubble ABM]]
+
+[[denote:20250204T172907][Empirical]]
+
+[[denote:20250202T120625][Investment determination]]
+
+[[denote:20250202T120332][Overreaction]]
+
+[[denote:20240708T113039][Rational Expectations]]
+
+[[denote:20250202T120026][Review of Literature]]
+
+[[denote:20250206T103734][NBER]]
+
+* References
+
+
+
+#+print_bibliography:

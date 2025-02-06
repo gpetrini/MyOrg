@@ -1,0 +1,89 @@
+#+OPTIONS: num:nil ^:{} toc:nil
+#+title:      Booms, Busts and Behavioural Heterogeneity in Stock Prices
+#+date:       [2025-02-06 qui 12:38]
+#+filetags:   :bib:
+#+identifier: 20250206T123801
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+cite_export: csl apa.csl
+#+reference:  hommes_2017_Booms
+
+
+
+* FISH-5SS
+
+|-----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <40>                                          | <50>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| *Entry*                                       | *Description*                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|-----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| *Background*                                  | The [[denote:20250202T115754][Stock Prices]] decrease in the aftermatch of the [[denote:20250202T121038][Great Recession]] may not exclusively related to a rational evaluation of the fundamental.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| *Supporting Ideas*                            | The authors compare the model's results with the so-called [[denote:20250203T174847][Gordon Solution]] as well as with the Campbell-Cochrane consumption-habit model. This paper dialogues with the [[denote:20250202T115203][Behavioral Finance]] literature.                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| *Purpose*                                     | To estimate how changes in [[denote:20250202T121158][Expectations]] can explain changes in Stock Prices.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| *Originality/value (Contribution)*            | The authors generalize the asset-pricing model for [[denote:20250202T120908][Heterogenous Agents]]. It is assumed that there is *mean-reversion* (Fundamentalists) agents while others expected a higher deviation from fundamentals (Chartists).                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| *Relevance*                                   | Considering the [[denote:20250202T120807][Innovation bubble ABM]] chapter, this paper provides some specification to model expectations and how it relates to formation of bubbles and with the [[denote:20240708T155635][Business Cycles]]. One of the main conclusions is that expectations amplifies the effects of financial crisis.                                                                                                                                                                                                                                                                                                                                                                             |
+| *Design/methodology/approach*                 | The paper proposes a theoretical model with [[denote:20250202T115256][Boundedly Rational]] agents and contrast it with the US case. The model is presented in terms of deviations from fundamentals. The authors also run [[denote:20250203T181801][Monte Carlo Simulations]] in order to evaluate the intensity of the [[denote:20250203T184226][Switching Mechanisms]]. The authors also provides an [[denote:20250202T121337][Econometric]] form for US (1950-2010s S&P500 index).                                                                                                                                                                                                                                                                                         |
+| *Hypothesis*                                  | It is assumed that whenever an alternative expectational rule performs best, it will be more frequently used. This does not mean that inverstors will alternates the expectational rule every period because they assume a persistence factor. In the first model, the authors assume that agents know the fundamental value of an asset. However, agents have different beliefs about the future deviations on fundamentals. Thus, the model heterogeinity regards the Expectations of future price. Other assumption is a constant expected discount factor. For the second model, this latter assumption is relaxed, allowing a time-varing risk premium. |
+| *Results*                                     | When the share of Chartists increase, the system become more unstable. For instance, [[denote:20250202T121539][chartists]] amplified the effects of the Dot Com crisis. Considering the econometrical experiment, they found that [[denote:20250203T173614][Fundamentals]] had little informative effect in the short run. In this model, bubbles ends *endogenously*. The explanation for this is that chartists overshoot the asset price, leading to a [[denote:20250203T173554][Fundamentalist]] regime. In summary, bubbles are triggered by [[denote:20250203T173614][Fundamentals]] and amplified by Expectations. Finally, the authors conclude the including heterogeinity improves model predictiveness.                                                           |
+| *(Interesting) Findings*                      | The Campbell-Cochrane model, reviewed in this paper, failed to predict both the financial crisis in the 1990s and the [[denote:20250203T172959][Dot-Com Crisis]].                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| *Research limitations/implications (Critics)* | The authors themselves indicates a possible limitation: the use of aggregate data for estimate individual behavior may not be adequate. Thus, as Agent Based framework could enhance this proposal.                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| *Uncategorized stuff*                         | The author points out a survey in which inverstors were aware of the overvaluation of the 2000s bubble (Shiller (200)).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|-----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+We estimate a behavioural heterogeneous agents model with boundedly rational traders who know the fundamental stock price, but disagree about the persistence of deviations from the fundamental. Some agents (fundamentalists) believe in mean-reversion of stock prices, while others (chartists) expect a continuation of the trend. Agents gradually switch between the two rules, based upon their relative performance, leading to self-reinforcing regimes of mean-reversion and trend-following. For the fundamental benchmark price we use two well-known models, the Gordon model with a constant risk premium and the Campbell-Cochrane consumption-habit model with a time-varying risk premium. We estimate a two-type switching model using U.S. stock prices until 2016Q4. The estimations show an improvement over representative agent models that is both statistically and economically significant. Our model suggests that behavioural regime switching strongly amplifies booms and busts, in particular, the dot-com bubble and the financial crisis in 2008.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+** Share of a expectational rule equation
+
+
+Considering $H$ expectational rules and a performance function $U$, the share of rule $h$ is defined by $\eta$ as:
+
+#+BEGIN_latex
+\begin{equation}
+\eta = \frac{\exp{\beta U_{h}}}{\sum_{i}^{H}\exp{\beta U_{i}}}
+\end{equation}
+#+END_latex
+in which $\beta$ capture the intensity of choice.
+In other words, agents [[denote:20250203T180559][Learning and Heuristics]] procedures depends on reinforcement and [[denote:20250202T122209][evolutionary_selection]] based on relative performance.
+
+The performance equation will depends on profits in price deviation ($\pi$) and on a memory parameter ($\omega$):
+#+BEGIN_latex
+\begin{equation}
+U_{h} = (1-\omega)\pi + \omega U_{t-1}
+\end{equation}
+#+END_latex
+Thus, the effect of past performance will decrease $\omega^{n}(1-\omega)$ over time.
+If a expectational rule ovecomes the other, more agents will use it.
+
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+[[denote:20250205T154234][Journal of Economic Dynamics and Control]]
+
+[[denote:20250203T184226][Switching Mechanisms]]
+
+[[denote:20250203T173133][Financial Crises]]
+
+[[denote:20211215T182520][Heterogeneous Expectations]]
+
+[[denote:20250202T115754][Stock Prices]]
+
+[[denote:20250202T115256][Boundedly Rational]]
+
+[[denote:20250202T121158][Expectations]]
+
+[[denote:20250202T115203][Behavioral Finance]]
+
+[[denote:20250202T121337][Econometric]]
+
+
+* References
+
+#+print_bibliography:
