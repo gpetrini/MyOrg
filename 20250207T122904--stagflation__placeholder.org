@@ -1,0 +1,4 @@
+#+title:      Stagflation
+#+date:       [2025-02-07 sex 12:29]
+#+filetags:   :placeholder:
+#+identifier: 20250207T122904

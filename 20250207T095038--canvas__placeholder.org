@@ -1,0 +1,6 @@
+#+title:      CANVAS
+#+date:       [2025-02-07 sex 09:50]
+#+filetags:   :placeholder:
+#+identifier: 20250207T095038
+
+[[denote:20250202T114248][Agent Based Models]] developed by [cite/t:@poledna_2023_economic]

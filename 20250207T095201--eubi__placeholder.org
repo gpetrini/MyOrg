@@ -1,0 +1,6 @@
+#+title:      EUBI
+#+date:       [2025-02-07 sex 09:52]
+#+filetags:   :placeholder:
+#+identifier: 20250207T095201
+
+[[denote:20250202T115328][Canonical Models]] [[denote:20250202T114248][Agent Based Models]] developed by DAWID 2018, DAWID 2019.

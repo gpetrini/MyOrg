@@ -1,0 +1,4 @@
+#+title:      Deflation
+#+date:       [2025-02-07 sex 12:30]
+#+filetags:   :placeholder:
+#+identifier: 20250207T123052

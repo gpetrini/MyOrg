@@ -1,0 +1,58 @@
+#+title:      Univesp
+#+date:       [2025-02-10 seg 21:02]
+#+filetags:   :placeholder:
+#+identifier: 20250210T210228
+
+* Quinzena 0: <2025-02-10 seg>
+
+- Planilha de alocação
+- Localizar os grupos
+- Definido o que é esperado em cada quinzena
+- Não está definido o produto final deste PI
+- Cada facilitador terá uma cerca de 6 grupos
+- Entre as quinzenas, haverá uma reunião de dúvidas no mesmo horário
+- Atividades:
+  - Localização dos grupos
+    - Identificar os DRPs de cada grupo
+#+caption: Localização dos grupos
+|---------+----------------------------------------------------------+--------------------------------+-------------+------------------------|
+|---------+----------------------------------------------------------+--------------------------------+-------------+------------------------|
+| Matéria |                           Link                           |              DRP               | Facilitador |       Supervisor       |
+|  <c10>  |                          <c20>                           |             <c32>            |    <c10>   |         <c10>          |
+|---------+----------------------------------------------------------+--------------------------------+-------------+------------------------|
+| PJI450  | https://ava.univesp.br/ultra/courses/_14087_1/cl/outline | DRP05-PJI450-SALA-001GRUPO-015 | 23228537@cursos.univesp.br            | magna.rocha@univesp.br |
+| PJI450  | https://ava.univesp.br/ultra/courses/_14087_1/cl/outline | DRP05-PJI450-SALA-001GRUPO-016 | 23228537@cursos.univesp.br            | magna.rocha@univesp.br |
+| PJI450  | https://ava.univesp.br/ultra/courses/_14087_1/cl/outline | DRP05-PJI450-SALA-001GRUPO-017 | 23228537@cursos.univesp.br            | magna.rocha@univesp.br |
+| PJI450  | https://ava.univesp.br/ultra/courses/_14087_1/cl/outline | DRP05-PJI450-SALA-001GRUPO-018 | 23228537@cursos.univesp.br            | magna.rocha@univesp.br |
+| PJI450  | https://ava.univesp.br/ultra/courses/_14087_1/cl/outline | DRP05-PJI450-SALA-001GRUPO-019 | 23228537@cursos.univesp.br            | magna.rocha@univesp.br |
+|---------+----------------------------------------------------------+--------------------------------+-------------+------------------------|
+|---------+----------------------------------------------------------+--------------------------------+-------------+------------------------|
+    - Se apresentar em cada um dos grupos
+    - Fazer reuniões quinzenais com as equipes
+      - Reuniões individuais de cada grupo (1h)
+      - Preferencialmente para o fim do dia
+        - "Profª, desde o início, em 2023, eu tenho me apresentado na quinzena zero e oferecido os horários disponíveis para orientação. Sempre peço 3 opções de horário e registro, como preferência, quem me envia primeiro, por e-mail. Os horários são sempre fixos para organização deles. Posso continuar desta maneira?"
+      - Reuniões devem ficar gravadas e é preferível que todos os participantes entrem de forma síncrona
+    - Definir alguns horários para ter as reuniões com os grupos
+    - Criar os fórums quinzenais (até <2025-02-14 sex>)
+      - Principal meio de comunicação (AVA)
+        - Usar e-mail com a supervisora
+        - Entrar na plataforma com recorrência
+      - Após abertura das salas pelo AVA
+    - Pergunta sobre bolsa
+
+* Quinzena 1
+* Quinzena 2
+* Quinzena 3
+* Quinzena 4
+* Quinzena 5
+* Quinzena 6
+* Quinzena 7
+
+* Relatórios
+
+** Relatório I
+
+Número de confirmação:
+- 8dc5e3e865584f3fb96d8c5f551c2746
+- ef329c38ac4548d49748e3b99a087ce6

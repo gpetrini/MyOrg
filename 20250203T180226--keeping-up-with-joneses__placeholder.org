@@ -8,4 +8,4 @@
 
 [[denote:20230216T235150][Household debt and Bank credit]]
 
-[[denote:20250206T193710][Consumption Function]]
+[[denote:20250207T101307][Behavioral Rules]]
