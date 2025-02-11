@@ -1,0 +1,98 @@
+#+title: Estratégias de aprendizagem para a mediação pedagógica na Educação a Distância
+#+date:       [2025-02-10 seg 17:19]
+#+filetags:   :univesp:
+#+identifier: 20250210T171943
+#+language: pt_BR
+
+[[denote:20250206T170658][Teaching and Lectures]]
+
+[[denote:20250210T210228][Univesp]]
+
+* Comunicação dialógica e estar junto virtual
+
+- Papel do facilitador também é fomentar as discussões
+- Importante evitar sensação de isolamento (distancia transacional)
+  - Dar boas vindas aos alunos e propor assuntos da semana
+- Aluno não conhece seu colegas e isso pode induzí-lo a ter uma participação mais tímida
+- Devolutivas mais propositivas
+- Sugerir formas de organização e disciplina
+  - Tal como se estivessem em sala de aula presencial
+- Estratégias de comunicação efetiva podem reduzir a ocorrência de conflitos
+  - Assim como inconsistência e falta de conhecimento da estrutura da univesp
+- Não criar forums
+- Rever conteúdo das semanas anteriores
+  - O prazo de entrega costuma ser de 2 semanas
+- Feedbacks (Entrevista com alunos de EaD | UFSCar)
+  - Ausência de resposta é reportado como um problema recorrente
+  - Bom indicar horários para responder dúvidas
+    - Especialmente se estiver em sincronia com as datas das tarefas
+    - Isso também reduz a ansiedade dos alunos
+  - Inconsistência entre devolutiva e informação da devolutiva
+    - Evitar generalização de devolutivas
+  - Tomar cuidado para descreditar o esforço do aluno
+  - Checar se algum aluno está ausente por bastante tempo
+    - Ter interesse pela agenda do aluno
+  - Clareza, iniciativa, e empatia ajuda o aluno a criar um vínculo com a disciplina
+    - Indicar que o aluno não é só um número
+  - Guiar forum para que a dinâmica dos alunos não fosse dispersada
+  - Interferir nos forums para indicar se o caminho está correto (mesmo que o aluno não tenha feito uma pergunta explícita)
+    - Por exemplo, notar quando o aluno deixou de abordar determinados temas
+  - Fazer um resumo sobre o que foi abordado no forum
+    - O grupo pode se sentir mais dirigido
+    - Isso remova a impressão de que o facilitador apenas leu o que foi discutido e não fez nada
+  - Lives como forma de diminuir a sensação de distância transacional
+
+* Material didático e metodologia
+
+- Metodologias ativas:
+  - Aluno no centro da aprendizagem (responsável pela própria aprendizagem)
+    - Isso difere da abordagem focada em conteúdo
+    - Experiência educadora deve refletir problemas ao entorno do aluno (escola, comunidade, etc)
+    - Espiral de aprendizagem dá ênfase no processo individual de cada aluno e suas interações
+    - Processo de construção do conhecimento por meio de esquemas que refletem referências internas já existentes
+    - Interações são importantes para zona de desenvolvimento proximal
+  - Aprendizagem baseada em problemas (ABP)
+    - Ênfase em problemas associados à comunidade e ao entorno do estudante
+    - O indivíduo passa a ser parte no processo de definição de soluções
+    - Passos:
+      1. Apresentar projeto enquanto problema
+      2. Identificação do questionamento-chave e definir o caminho a ser seguido
+      3. Impasse: Debate + análise = solução
+      4. Coleta e sistematização das ideias para resolução do problema
+      5. Definição das metas de aprendizado com base nas lacunas de conhecimento identificadas nas etapas anteriores
+      6. Análise individual para coleta de informação
+      7. Debater e compartilhar o que foi aprendido na análise individual (mediado pelo tutor)
+  - Ensino de ciências: métodos e técnicas (empírico-dedutivo)
+    - Exemplo: observar sol, medir temperatura, medir sombra (crinças pequenas); agrupamento de cartas com animais
+      - Aluno tenta inferir o que ocorrerá com fenêmeno a ser estudado
+    - Alunos devem debater e refletir o que está ocorrendo para que eles possam elaborar hipóteses
+      - Professores fazem perguntas para nortear o aprendizado dos alunos
+    - Alunos tem que aprender como eles devem se comportar para aprender
+    - Necessidade de estimular o aluno
+      - Não expressar como uma exigência acadêmica
+      - Ênfase na aula prática, com destaque para o não esperado como forma de instigar a reflexão
+        - Aluno aprende o que ele precisa saber (dados, por exemplo) para formular hipóteses e teorias
+      - Redução do número de horas expositivas
+    - Importante para que o estudante possa emular o método científico na sua forma de aprendizado
+  - Estratégia de projetos
+    - Leve em consideração a participação dos alunos
+      - Aluno não se desenvolve apenas na dimensão escolar
+    - Professor enquanto estrategista para mudar o rumo do projeto
+    - Temas selecionados pelos professores a partir de problemas identificados no entorno dos alunos
+      - Ênfase na transversalidade (temas comuns a mais de uma disciplina)
+    - Debates em que os alunos assumem diferentes perspectivas do problema (/ex:/ portugueses vs escravos africanos)
+      - Como resultado do trabalho, os alunos decidiram produzir uma história em quadrinhos
+  - TODO: Aprendizagem baseada em problemas
+- Projeto Integrador (PI):
+  - Facilitador: Orientar o desenvolvimento do PI
+  - Integrar teoria e prática
+    - Relacionar o que aprenderam com as disciplinas regulares na resolução de problemas
+  - Problema normalmente identificado após visita a campo
+  - Avaliação do PI
+    - Autoavaliação individual
+    - Autoavaliação em grupo
+    - Relatório parcial
+    - Relatório final
+    - Produção de vídeo sobre o projeto
+- Ideias:
+  - Designar um aluno enquanto secretário do grupo e revesando entre eles

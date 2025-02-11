@@ -1,0 +1,151 @@
+#+title:      Implications of Behavioral Rules in Agent-Based Macroeconomics
+#+date:       [2025-02-07 sex 09:44]
+#+filetags:   :bib:preprint:
+#+identifier: 20250207T094403
+#+reference:  dawid_2024_implications
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+The authors compare the [[denote:20250207T101307][Behavioral Rules]] regarding quantity and pricing decisions to different [[denote:20250202T114248][Agent Based Models]].
+They provide a general framework which allows the comparability among models.
+The results in terms of [[denote:20250204T144517][Forecast]]ing is not so distinct among models, but they differ considerably when evaluating in terms of shocks.
+All the [[denote:20250203T181801][Monte Carlo Simulations]] and estimations are performed under the [[denote:20250207T095038][CANVAS]] model by [cite/t:@poledna_2023_economic].
+
+
+** Background and motivation
+
+- Evaluate how different [[denote:20250207T101307][Behavioral Rules]] can affect the results models in terms of forecasting performancing and the shocks effects
+
+** Supporting Ideas and hypothesis
+
+- In order to arrive to the general framework, the authours make the following assumptions:
+  - The demand faced by firm \(i\) is expressed in terms of the aggregate demand and effective market-share
+  - Firms have [[denote:20250202T114632][Uncertanty]] about the market-share curve, so they estimate based on expected one
+  - Firms assume that it own price do not affect the average prices, but only its market share
+    - Firm size negligibility: the average price is a proxy by the competitors price
+  - Differentiability is condensed into a single variable
+  - Firms incur on fixed costs, form [[denote:20250202T121158][Expectations]] about the [[denote:20250207T115042][Marginal Costs]], and face [[denote:20250207T115110][Imperfect Competition]] as a result of good diferentiability
+    - The FoC of the profit maximization profit implies a markup over [[denote:20250207T115042][Marginal Costs]]
+      - The authors assume that the market share is determined *only* by the relative prices (in terms of aggregate prices)
+        - This allow to get rid of the elasticities and express the market-share in terms of sensitivities to relative prices
+  - There are no capacity constraints nor desired inventories
+  - The quantity decision changes depending whether firms have naive expectations about future demand (governed by a dummy)
+- Firms have naive expectations about the growth rate of market-shares and excess demand
+- Expectations about average price [[denote:20250202T120843][Inflation]] follows an AR(1) based on producer price index
+- Firms computs the expected [[denote:20250207T115042][Marginal Costs]] based on general inflation
+
+
+** Purpose, Relevance, and Contribution
+
+- This paper provide some highlights on how the expected market-shares might affect firms decisions
+  - It can be usefull to represent the [[denote:20250202T115037][Autonomous Investment bubble]] in the [[denote:20250202T120807][Innovation bubble ABM]] chapter
+    - One ideia is to replace the naive [[denote:20250202T121158][Expectations]] for the market-share by the [[denote:20250203T184226][Switching Mechanisms]]
+- This paper also makes clear some effects which are not commonly explicit
+  - This can be observed both in terms of the analytical form, but also in terms of the shocks
+
+** Methodology
+
+- Provide a general representation of quantity and prices [[denote:20250207T101307][Behavioral Rules]] in order to make them comparable
+- Simulations performed under the [[denote:20250207T095038][CANVAS]] model.
+- Model is calibrated according to [[denote:20250207T114527][Austria]]n data ([[denote:20250202T115312][Calibration]])
+- The authors represent the general equation by introducing dummies that are (de)activated whenever each channel is present
+- The following [[denote:20250207T101307][Behavioral Rules]] represents the following models:
+  - [[denote:20250202T121415][CATS ABM family]]
+  - [[denote:20250203T180327][Keynes meets Schumpeter Family]]
+  - [[denote:20250207T095038][CANVAS]]
+  - [[denote:20250207T095201][EUBI]]
+- The models are compared both in terms of [[denote:20250204T144517][Forecast]] capabilities and exogenous shocks (demand, costs, and technology)
+
+** Results
+
+The results will be discussed mainly in terms of the [[denote:20250203T180327][Keynes meets Schumpeter Family]] model in which I am more familiar with:
+
+- The market power channel (marke-share) implies a positive relantionship between mark-up and market-share (presents in [[denote:20250203T180327][Keynes meets Schumpeter Family]] and [[denote:20250207T095201][EUBI]])
+- In [[denote:20250203T180327][Keynes meets Schumpeter Family]] there is no direct Mechanisms between excess demand, competitors price and mark-up
+- There is a full pass-through from cost to price in the [[denote:20250203T180327][Keynes meets Schumpeter Family]]
+
+In terms [[denote:20250204T144517][Forecast]] capability, most models shows similar results in terms of [[denote:20250202T120843][Inflation]] (except for [[denote:20250202T121415][CATS ABM family]]).
+There is more distinction in terms of GDP growth, which reflects the naive [[denote:20250207T101307][Behavioral Rules]] for the expected demand (as in CATS and KS).
+
+The *demand shock* does not triggers inflation in the KS model.
+This is due to the lack of the labor market tightening in the [[denote:20250207T095038][CANVAS]] model (where experiments are performed).
+If this channel is present, there is likelly a negative effect on unemployment followed by wage inflation and passed-through prices.
+In addition, the KS model has a larger multiplier effected compared to [[denote:20250207T095038][CANVAS]] and [[denote:20250207T095201][EUBI]].
+
+*Cost-push* shock affects the KS model and has a [[denote:20250207T122904][Stagflation]]y aspect.
+More specificlly, it has moderate [[denote:20250202T120843][Inflation]].
+
+In terms of the *non-idiosyncratic technological shock*, all models present a *positive* effect on GDP.
+The KS is among the models with stronger effect.
+This model also shows the strongest [[denote:20250207T123052][Deflation]]ary effect due to the full pass-through.
+
+** Interesting findings and not categorized stuff
+
+- Whenever the mark-up is defined using the complete recursion (\(\delta^{rec}\) in their notation), it express changes in entire price-cost ratio and not only at the mark-up
+- Also in line with the discussion in [[denote:20240708T175224][Expectations Formation and Behaviour Macroeconomics]], the authors argue that the aggregate demand growth rate as a proxy for the firm-level growth rate
+
+
+** Critics
+
+- The authors are not capturing the indirect chanels of [[denote:20250203T180327][Keynes meets Schumpeter Family]] models
+  - Competitors price and unexpect demand affects the relative competiveness, which affects the market-share
+- The authors also do not consider the case for desired inventories
+  - This might not be a significative issue
+- Some other channels are missing because the simulations were performed under the same model ([[denote:20250207T095038][CANVAS]])
+  - The main consequence is the absence of the demand-pull channel in affecting [[denote:20250202T120843][Inflation]] in the [[denote:20250203T180327][Keynes meets Schumpeter Family]]
+    - This happens because the nominal wages are not updated due to price level increase
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+In this paper we examine the role of the design of behavioral rules in agent-based macroeconomic modeling. Based on clear theoretical foundations, we develop a general representation of the behavioral rules governing price and quantity decisions of firms and show how rules used in four main families of agent-based macroeconomic models can be interpreted as special cases of these general rules. We embed the four variations of these rules into a calibrated agent-based macroeconomic framework and show that they all yield qualitatively very similar dynamics in business-as-usual times. However, the impact of demand, cost, and productivity shocks differ substantially depending on which of the four variants of the price and quantity rules are used.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+Considering the above assumptions, the mark-up can be expressed as (ommiting the firm-specific index):
+
+\[\mu = \frac{s^{e} P^{e}}{\zeta^{e}c^{e}}\]
+
+In the interative form (dividing and replacing by previous mark-up), it means:
+
+Mark-Up: previous \(\mu \times\) exp. chg in market-share \(\times\) expec. chg avg price \(\times\) excess demand \(/\) exp. chg in marginal costs.
+
+After presenting the previous expression in terms of growh rates, the authors introduces dummies to indicates whenever a specif channel is present or not.
+The general expression for mark-up as:
+
+\begin{equation*}
+\mu_{i,t} = \left( \delta^{rec} + \mu_{i,t-1} \right)
+\frac{(1 + \delta^{s,\epsilon}_i \gamma_{i,t}^{s,\epsilon})
+(1 + \delta^{P^e} \pi_t^{P^e})
+(1 + \delta^{Q^D}_i \gamma_{i,t}^{Q^D} Q_{i,t}^{D})}
+{(1 + \delta^{c,\epsilon}_i \pi_{i,t}^{c,\epsilon})}
+- \delta^{rec}
+\end{equation*}
+
+The following table summarizes the comparability:
+
+ #+caption: Price-quantity [[denote:20250207T101307][Behavioral Rules]] in major ABM models
+|--------------------------------+--------------+-------------------+---------------+-----------------+-----------+---------------------------|
+|--------------------------------+--------------+-------------------+---------------+-----------------+-----------+---------------------------|
+|             Model              | Market power | Competitors price | Excess Demand | Cost absorption | Recursive | Naive output expectations |
+|--------------------------------+--------------+-------------------+---------------+-----------------+-----------+---------------------------|
+|              <c>               |     <c>      |        <c>        |      <c>      |       <c>       |    <c>    |            <c>            |
+|             [[denote:20250207T095038][CANVAS]]             |      0       |         0         |     cond.     |        0        |     1     |             1             |
+|        [[denote:20250202T121415][CATS ABM family]]         |      0       |         0         |     cond.     |        1        |     1     |             0             |
+|              [[denote:20250207T095201][EUBI]]              |      1       |         1         |       0       |        1        |     0     |             1             |
+| [[denote:20250203T180327][Keynes meets Schumpeter Family]] |      1       |         0         |       0       |        0        |     0     |             0             |
+|--------------------------------+--------------+-------------------+---------------+-----------------+-----------+---------------------------|
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+
+* References
