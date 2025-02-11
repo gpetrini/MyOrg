@@ -8,10 +8,6 @@
 
 
 * TODO Reimburse organizers :@RIO:
-* TODO Create spreadsheet tab for reiumbursement :@RIO:
-* WAIT Submit the invoices to YSI :@RIO:
-** WAIT Hotel
-** WAIT Social Dinner
 
 -----
 
@@ -33,6 +29,18 @@
 
 * TODO Find organizers :@WEHIA:
 
+* TODO Dinner per person 80 pounds or almost the fee (175)
+
+- Dinner + barbecue around 100 pounds
+- Ask management
+
+* TODO Reach Weiwei
+
+Weiwei Louise Wang Bendixen <w.l.w.bendixen@qmul.ac.uk>
+
+* TODO Criar form
+
 -----
+
 
 * TODO Create the special project :@FMM:
