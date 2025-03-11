@@ -94,5 +94,783 @@
     - Relatório parcial
     - Relatório final
     - Produção de vídeo sobre o projeto
+- Aprendizagem baseada em problemas (PBL)
+  - Estudo de um fenômeno a partir de problemas guiando pelo método científico
+    - Definição do problema a ser resolvido
+      - Tema geral definido de forma conjunta
+      - Eixo controlado
+        - Papel do professor tutor/observador
+    - Elaboração do método de trabalho
+      - Definição das formas de coletar e processar os dados
+      - Atuação em campo tem menor controle do tutor
+        - Tutor levanta mais questionamentos do que dar respostas ao problema
+    - Associar problema com a literatura e elaborar hipóteses
+      - Isso mostra a importância do conhecimento prévio
+    - Ênfase na transversalidade
+    - Criado para resolver lacunas no processo de aprendizagem
+      - Iniciado nas ciências médicas
+        - Aluno aprende como é ser médico (ex: anaminese)
 - Ideias:
   - Designar um aluno enquanto secretário do grupo e revesando entre eles
+
+* Avaliação: a importância do feedback
+
+** Feedback no EaD
+
+- Importância do feedback
+  - Reflexão do conteúdo
+  - Direcionar o processo de estudo e aprendizagem
+- Indicar como foi a compreensão do aluno sobre o conhecimento para que ele possa agir de acordo com essas novas informações
+- Evitar feedbacks motivacionais e forcar em feedbacks formativos
+  - Indicar o que poderia ser feito para que o trabalho fosse aprimorado e que possa desempenhar uma postura diferente se necessário
+    - Fomento de novas reflexões
+- Importante ajustar a linguagem ao modelo mental do aluno
+- Evitar feedbacks genéricos e ênfase em um feedback propositivo
+- Evaluation: avaliação da própria educação
+- Assessment: Avaliação da aprendizagem
+
+** Tipos e funções da avaliação de aprendizagem
+
+- Propósito de avaliação
+  - Somativa (classificatória)
+    - Certificar um dado conhecimento e definir o destino dos alunos com base no desempenho escolar
+      - Comparar desempenho e classificar alunos
+      - Ênfase nos resultados obtidos
+  - Formativa
+    - Fundamenta-se no processo de aprendizagem e no que foi ensinado
+    - Também incide sobre o professor e o ajuda a perceber quando ajustar as estratégias de ensino
+    - Exige observação e registro por parte do professor
+    - Também contém autoavaliação
+- Momento de avaliação
+  - Diagnóstica
+    - Identificar habilidades e competências dos alunos
+      - Identificação de interesses e apitidões
+  - Processual
+    - Ocorre ao longo do processo de ensino e aprendizagem
+    - Possui diferentes objetivos
+    - Realizada com diversos instrumentos
+  - Acumulativa (final)
+    - Realizada em momentos específicos
+- Definição de objetivos
+  - Exemplo: "Como desenvolver pensamento crítico?"
+    - Primeiro, é preciso identificar formas de poder avaliar se este objetivo foi concluído:
+      - Identificar problemas importantes?
+      - Reconhecer pressupostos essenciais?
+      - Avaliar evidências?
+        - Reconhecer esteriótipos e clichês
+        - Reconhecer adequação dos dados
+      - Extrair conclusões?
+
+
+** Tipos de avaliação em Educação a Distância
+
+- Contexto: É recorrente que universidades EaD recorram à avaliações de multipla escolha como forma de avaliar os alunos
+- Evaluation: avaliação de cursos (não discutido)
+- Assessment: avaliação da aprendizagem
+  - Como?
+    - Avaliação de sub-grupos
+    - Forúns de aprendizagem
+  - Quando?
+    - Entrada
+      - Medir se possuem conhecimentos necessários para realizar a disciplina
+      - Saber o quanto o aluno conhece sobre os conteúdos do curso
+        - O aluno poderia ser sugerido para um curso mais avançado
+    - Formativas (durante)
+      - Ocorre em vários momentos do curso
+        - Fóruns de discussão
+    - Somativas (final)
+      - Projeto Integrador?
+      - Comparar performance do aluno ao longo do tempo
+  - Quem?
+    - Autoavaliação
+      - Normalmente pouco usada. Pode ser interessante se bem desenhada
+    - Co-avaliação: Avaliação pelos pares
+      - Aluno pode avaliar o trabalho de um grupo, por exemplo
+    - Hetero-avaliação: avaliação realizada pelo professor
+  - O que?
+    - O professor lista um conjuto de possibilidades de questões que as plataformas oferecem
+    - Portfólios e projetos
+    - Questões objetivas e discursivas
+  - Relatórios
+    - Oferecem estatísticas sobrem o aprendizado do aluno
+    - Fornece dados para que o professor possa avaliar a consistências entre as formas de avaliação
+      - Só faz sentido em conjunto com as outras formas de avaliação
+
+
+*** Evaluation e Conceito Preliminar de Curso
+
+- Apresenta tendências e disparidades na avaliação dos cursos presenciais e a distância
+- O CPC considera fatores como desempenho dos estudantes no Enade, titulação e regime de trabalho dos docentes, infraestrutura e outros aspectos.
+- Nos cursos EaD, mais de 65% receberam conceito 3, o mínimo necessário para evitar intervenção externa.
+  - Mas pode indicar que muitas instituições tentam atingir apenas o mínimo
+- Instituições de excelência se recusam a oferecer EaD
+  - Dominados por grandes conglomerados educacionais
+    - Intensificando a mercantilização da educação
+
+** Competências
+
+- O conceito de competência vai além da ideia de conhecimento, englobando habilidades e atitudes dos educandos
+  - Trabalhado no projeto integrador, contando com diversos métodos de avaliação
+    - Relatório, vídeo, Autoavaliação, etc
+
+**** Construir compêtencias é viras as costas aos saberes ?
+
+  - No entanto, a contraposição entre conhecimento e competência deve ser vista com cuidado
+    - Focar na assimilação de habilidades e atitudes pode implicar menos tempo dedicado para obtenção de mais conhecimento
+      - Mas estas outras dimensões de competências também requer conhecimento prévio do educando
+    - Competência como "saber mobilizar" conhecimentos
+      - Ter o conhecimento pode estar associado a saber a teoria (descrição), mas ter as competências implica saber usar esta teoria (mecanismos)
+      - Estabelecer o problema antes de resolvê-lo
+      - Operacionalização dos saberes em situações complexas
+      - A falta de transferência de competências pode gerar impressões de que o conhecimento adquirido na vida escolar não tem usabilidade prática
+        - Essa impressão, ironicamente, mostra os problemas de um ensino focado apenas no conhecimento
+  - A combinação de todas as dimensões é fundamental para garantir a autonomia do educando (ora cidadão)
+  - Focar no desenvolvimento de competências pode requerer a diminuição de programas nacionais para que os alunos tenham tempo de aprendê-las
+    - Mas isso pode recair em questões de classe sobre para quem foram feito os currículos
+      - O foco deveria ser sobre aqueles que não conseguem aprender sozinhos
+    - Escola como além de ler, escrever, contar
+
+
+** Aprofundando o tema
+
+*** Processos de avaliação
+
+**** O professor e o ato avaliativo
+
+- Pouca instrumentalização para o professor realizar a prática avaliativa
+  - Para que avaliar?
+  - O que avaliar?
+  - Quando avaliar?
+  - Como avaliar?
+  - O que fazer a partir dos resultados da avaliação?
+- Inconsistência e dissociação entre a avaliação  e a proposta educacional do professor
+- Planejamento da avaliação
+  - Preparação > Aplicação > Análise e interpretação > Devolutiva
+
+**** Avaliação escolar e os desafios à prática docente
+
+- Como relacionar avaliação e o ensino?
+- Como definir os critérios avaliativos?
+- Ajustar avaliação para um instrumento que apoie a atividade docente
+- Diversificar instrumentos avaliativos
+- Contradições entre avaliação interna (definidas pelo corpo docente) e avaliação externa (definidas por instituições superiores)
+
+*** O que é avaliação em EaD?
+
+- EaD não é uma cópia virtual da educação tradicional
+  - Mediada por outros instrumentos, tecnologias
+  - Requer repensar o que é a avaliação neste novo formato de ensino
+  - Qualidade não é definida pela modalidade educativa
+    - No entanto, a modalidade à distância escancara mais problemas do que a presencial (dados os novos registros)
+- Conceito de avaliação trás a ideia de atribuição de valor
+  - Deveria ser singular
+    - Se o aluno teve todas as condições previamente, não teve um processo de desenvolvimento a partir da educação mesmo que tenha sido bem avaliado
+    - Trabalhar potencialidades por meio das tecnologicas
+      - Isso fica mais evidente na educação especial
+  - Integra dimensões qualitativas e quantitativas
+- Modo de utilizar uma tecnologia ou artefato pode afetar a forma de se expressar e refletir
+  - E isso gera modificações na própria tecnologia
+- Dilemas e tensões na avaliação online
+  - Ex: professor prepara o curso e o entrega para que outra pessoa o integre na plataforma utilizada
+    - Tecnologia como mero instrumento
+    - No entanto, a dimensão da tecnologia precisa ter contato com o pedagógico
+      - Ter o conhecimento para saber como estruturar o curso na plataforma utilizada
+  - Provas padronizadas vs. avaliações contextualizadas
+    - Provas padronizadas são relevantes para políticas públicas
+      - Elas fornecem dados importantes, apesar de possuírem falhas
+    - Avaliações contextualizadas fornecem informações relevantes para o processo formador do educando
+  - Reflexão sobre a prática vs. execução do ofício
+    - Treinamento para ofício a partir da concepção do formato mestre-aprendiz
+    - Não apenas o fazer, mas refletir sobre o fazer
+  - Em geral, esses pontos indicam a necessidade de conviver com multiplos modelos de avaliação
+    - Avaliação contínua e formativa convive com limitações legais e metodológicas
+      - No curto prazo, o professor pode atuar sobre as limitações metodológicas
+        - Reconhecer características das tecnologicas
+          - Especialmente os portifólios e ambientes pessoais de aprendizagem
+      - As limitações legais requerem outras entidades da sociedade
+
+
+* O feedback qualitativo
+
+Neste tema:
+
+- Estrutura do feedback
+- Importância das rubricas
+- Obs: contém partes repetidas do tema anterior (5)
+
+** O Feedback e sua Importância no Processo de Tutoria a Distância - Abreu-e-Lima e Alvez
+
+Resumo com auxílio de IA.
+
+*** Contexto e objetivo
+
+O artigo discute a importância do feedback na Educação a Distância (EaD), especialmente no papel dos tutores virtuais.
+Com o crescimento da EaD no Brasil, o tutor surge como um novo profissional essencial para o suporte aos alunos, garantindo um ensino de qualidade.
+O estudo revisa definições de feedback, apresenta modelos utilizados em uma universidade federal e analisa o impacto da linguagem nesse processo.
+
+
+*** Definição e Evolução do Feedback
+
+O feedback é um elemento central no ensino-aprendizagem e pode ser descrito como a informação dada ao estudante sobre seu desempenho.
+Ele evoluiu desde o behaviorismo de Skinner (1958), que via o feedback como um reforço imediato para moldar respostas corretas, até abordagens mais recentes que o consideram um processo interativo e formativo (Shute, 2008).
+Modelos modernos enfatizam o papel do feedback na construção do conhecimento, promovendo a autonomia do estudante.
+
+**** Feedback como via para autonomia do estudante e construção do conhecimento
+
+
+Os modelos modernos de feedback na Educação a Distância (EaD) vão além da simples correção de erros, adotando uma abordagem interativa e formativa.
+Eles buscam envolver o estudante ativamente no processo de aprendizagem, incentivando a reflexão e a autonomia.
+
+
+A autonomia do estudante é fortalecida quando:
+- O feedback não apenas informa o erro, mas ensina **como melhorar**.
+- O tutor age como **facilitador**, e não como fonte única do conhecimento.
+- O estudante é incentivado a **revisar suas respostas** e buscar soluções por conta própria.
+- Há um equilíbrio entre **sugestões e incentivos**, garantindo que o aluno não se sinta desmotivado.
+
+***** Feedback Formativo
+
+Segundo Shute (2008), o **feedback formativo** é aquele que fornece informações para modificar o pensamento ou comportamento do estudante, visando à melhoria contínua da aprendizagem.
+Diferente do feedback meramente corretivo, que apenas informa se uma resposta está certa ou errada, o formativo explica os motivos do erro e sugere estratégias para melhorias.
+
+
+Características principais:
+
+- **Foco na aprendizagem contínua**: incentiva o estudante a refletir sobre seus erros e acertos.
+- **Personalização**: adapta-se ao ritmo e às necessidades do aluno.
+- **Diálogo**: promove interações frequentes entre tutor e estudante.
+
+***** Tipos de Feedback Formativo
+
+Shute (2008) classifica o feedback formativo em dois tipos principais:
+- **Feedback Verificativo**: informa apenas se a resposta está correta ou errada, sendo mais utilizado para conteúdos objetivos.
+- **Feedback Elaborativo**: além de verificar a resposta, fornece explicações detalhadas e sugestões de melhoria.
+  - **Explicativo**: oferece a justificativa correta para uma resposta errada.
+  - **Indutivo**: encoraja o estudante a pensar sobre o erro e encontrar a resposta correta por si mesmo.
+  - **Reflexivo**: pede que o aluno reveja seu raciocínio e explique como chegou à resposta.
+
+***** Modelos Específicos de Feedback
+
+Os modelos modernos mais utilizados incluem:
+
+- Escada de Feedback :: Este modelo incentiva a autonomia, pois coloca o estudante no centro do processo de aprendizagem e segue quatro etapas:
+  1. **Esclarecer**: o tutor busca compreender as ideias do estudante, pedindo mais detalhes ou esclarecimentos.
+  2. **Valorizar**: destaca os pontos positivos da resposta do estudante.
+  3. **Questionar**: levanta questões que levam o estudante a refletir sobre sua resposta.
+  4. **Sugerir**: apresenta sugestões para que o aluno possa aprimorar seu conhecimento.
+- Feedback Sanduíche :: Esse modelo é amplamente usado em ambientes acadêmicos e empresariais, pois mantém a motivação do aluno.
+  1. Começa com um **elogio** para valorizar os acertos.
+  2. Em seguida, apresenta **sugestões** ou críticas construtivas.
+  3. Finaliza com um novo **elogio**, reforçando os aspectos positivos da resposta.
+- Feedback Socrático :: Baseia-se no método socrático de ensino, utilizando perguntas para levar o estudante a refletir sobre suas respostas. Em vez de fornecer respostas diretas, o tutor questiona o aluno, ajudando-o a chegar às conclusões por conta própria. Exemplo de perguntas no feedback socrático:
+  - "Como você chegou a essa conclusão?"
+  - "E se analisarmos esse conceito sob outra perspectiva?"
+  - "O que aconteceria se aplicássemos essa ideia a um contexto diferente?"
+
+
+*** O Papel da Linguagem no Feedback
+
+A comunicação escrita, predominante na EaD, pode gerar problemas de interpretação.
+Elementos como tom, clareza e organização da mensagem são cruciais.
+Estratégias como o uso adequado de emoticons, escolha cuidadosa das palavras e respeito à diversidade linguística ajudam a evitar ruídos na comunicação e garantir um feedback eficiente.
+
+*** Conteúdo e Ritmo do Feedback
+
+Além da forma, o conteúdo do feedback deve ser equilibrado entre informações corretivas e sugestões de melhoria. Ele pode ser:
+- **Diretivo** (indica o que precisa ser corrigido);
+- **Sugestivo** (oferece orientações para revisão e aprimoramento).
+
+O **tempo de resposta** também é um fator relevante. O feedback pode ser:
+- **Imediato**, útil para tarefas com respostas objetivas;
+- **Adiado**, mais indicado para processos que envolvem reflexão.
+
+Para evitar que os alunos se sintam desmotivados, recomenda-se um tempo de resposta de no máximo 24 horas.
+
+*** Lições Práticas
+
+- O feedback deve ser **claro, objetivo e respeitoso**, considerando o contexto e o perfil do aluno.
+- **Modelos estruturados** ajudam a garantir que o feedback seja bem recebido e aproveitado.
+- O tutor deve equilibrar **elogios e sugestões** para manter a motivação do estudante.
+- O **tempo e a constância** do feedback são essenciais para evitar desmotivação e melhorar a aprendizagem.
+
+
+** Conhecendo e Aplicando Rubricas em Avaliações - Biagiotti
+
+
+*** Contexto e Objetivo
+
+O artigo discute o uso de **rubricas** como ferramentas de avaliação na educação.
+Embora sua aplicação ainda seja limitada no Brasil, elas são amplamente utilizadas em países desenvolvidos para **avaliar processos e produtos educacionais**.
+O texto apresenta definições, características, aplicações e vantagens das rubricas, além de discutir seu papel na autoavaliação e no ensino a distância.
+
+*** Definição de Rubricas
+
+As rubricas são **esquemas explícitos** que classificam produtos ou comportamentos em diferentes níveis de desempenho.
+Elas podem ser usadas para avaliar:
+- Trabalhos escritos (redações, ensaios, pesquisas).
+- Apresentações orais.
+- Participação em atividades.
+- Autoavaliação e feedback.
+
+Rubricas devem ser **personalizadas** para cada tipo de tarefa e descrever **níveis graduais de desempenho**, garantindo que as expectativas de avaliação sejam claras.
+
+*** Características das Rubricas**
+
+Para serem eficazes, as rubricas devem possuir algumas características:
+- **Facilidade**: tornam mais simples a avaliação de trabalhos complexos.
+- **Objetividade**: reduzem a subjetividade da avaliação.
+- **Gradatividade**: descrevem níveis progressivos de desempenho.
+- **Transparência**: permitem que os alunos entendam como serão avaliados.
+- **Reutilização**: podem ser adaptadas para novas avaliações.
+- **Padronização**: garantem consistência entre avaliações feitas por diferentes professores.
+
+Além disso, existem **dois tipos principais de rubricas**:
+- **Holística**: avalia o trabalho como um todo. Exemplo: "A redação é bem estruturada e aborda o tema com profundidade."
+- **Analítica**: avalia diferentes aspectos separadamente. Exemplo: nota específica para gramática, outra para argumentação, outra para organização.
+
+*** Aplicações das Rubricas
+
+As rubricas podem ser aplicadas em diferentes contextos educacionais:
+- Autoavaliação:
+  - Permitem que os alunos revisem seus próprios trabalhos antes da entrega.
+  - Reduzem a subjetividade e tornam os critérios mais claros.
+  - Incentivam o diálogo entre alunos e professores.
+- Trabalhos em Grupo
+  - Podem incluir critérios individuais (desempenho de cada aluno) e coletivos (coesão do grupo).
+- Ciências Exatas
+  - Podem avaliar a execução de algoritmos e a resolução de problemas matemáticos.
+- Ensino a Distância
+  - Úteis para avaliar participação em fóruns, chats e atividades colaborativas.
+  - Alguns ambientes virtuais já incorporam rubricas em suas ferramentas de avaliação.
+
+*** Construção de Rubricas
+
+Para criar uma rubrica eficaz, o professor deve:
+1. **Definir os objetivos da avaliação** (o que se espera do aluno).
+2. **Criar níveis de desempenho claros** (exemplo: 0, 2, 4, 6, 8, 10).
+3. **Evitar escalas muito longas** (máximo de seis níveis para não gerar confusão).
+4. **Garantir que os critérios sejam compreensíveis para os alunos**.
+
+Rubricas bem estruturadas também facilitam o **feedback**, pois fornecem informações detalhadas sobre o desempenho do estudante.
+
+*** Vantagens e Desvantagens das Rubricas
+
+**** Vantagens
+
+- Tornam a avaliação **mais justa, transparente e confiável**.
+- Reduzem a variabilidade entre diferentes avaliadores.
+- Ajudam os alunos a **entender suas notas e melhorar seu desempenho**.
+
+**** Desvantagens
+
+- Demandam **tempo e esforço** para serem elaboradas corretamente.
+- A linguagem precisa ser clara para todos os alunos.
+- Requerem **revisão constante** para manter a precisão da avaliação.
+
+*** Conclusão
+
+As rubricas são ferramentas valiosas para tornar a avaliação mais **clara, justa e eficaz**.
+Elas ajudam professores e alunos a compreender melhor os critérios avaliativos e promovem um ensino mais transparente.
+Apesar das dificuldades na elaboração, seu uso pode transformar a forma como a avaliação educacional é conduzida, reduzindo a subjetividade e incentivando a autonomia dos estudantes.
+
+
+** Rubricas no Univesp
+
+- O uso de rubricas ajuda a uniformizar a correção de atividades
+  - Garante que os critérios sejam mais transparentes
+- A univesp também fornece rubricas institucionais
+
+#+caption: Exampleo de rubrica para atividade textual
+| CRITÉRIO                                        | VALOR TOTAL | DESCRITIVO DETALHADO                                                                                                                                                           | NOTA      |
+|-------------------------------------------------+-------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------|
+| Compreensão / argumentação com base no conteúdo | 4,0         | Não apresentou argumentos reflexivos fundamentados com base no conteúdo em estudo                                                                                              | 0 a 2     |
+|                                                 |             | Apenas parte das argumentações apresentadas foram fundamentadas com base no conteúdo em estudo, de forma correta                                                               | 2 a 3     |
+|                                                 |             | Todas as argumentações apresentadas foram fundamentadas com base no conteúdo em estudo, de forma correta                                                                       | 3 a 4     |
+| Resposta atendeu ao enunciado                   | 3,0         | Não atende a solicitação do enunciado da atividade / questão (resposta até está correta em termos teóricos, mas não responde ao que foi questionado no enunciado solicitado)   | 0 a 1,5   |
+|                                                 |             | Atende parcialmente o enunciado de forma correta, mas apenas parcialmente (resposta até está correta em termos de teóricos, mas não elucida totalmente o enunciado solicitado) | 1,5 a 2,5 |
+|                                                 |             | Apresentou corretamente a resolução solicitada no enunciado da atividade / questão (resposta apresentada elucida totalmente o questionamento apresentado)                      | 2,5 a 3   |
+| Raciocínio lógico-argumentativo                 | 3,0         | Não apresentou os aspectos argumentativos e lógicos de suas ideias e conclusões para resolução do problema                                                                     | 0 a 1     |
+|                                                 |             | Apresentou de forma parcial e/ou confusa os aspectos argumentativos e lógicos de suas ideias e conclusões para resolução do problema do enunciado                              | 1 a 2     |
+|                                                 |             | Apresentou de forma clara os aspectos argumentativos e lógicos de suas ideias e conclusões para resolução do problema do enunciado                                             | 2 a 3     |
+
+
+#+caption: Exampleo de rubrica para atividade objetiva
+| CRITÉRIO                           | VALOR TOTAL | DESCRITIVO DETALHADO                                                                                                                                                                                     | NOTA    |
+|------------------------------------+-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------|
+| Aplicação da teoria para a prática | 4,0         | Não apresentou explicação teórica dos passos seguidos durante a realização dos cálculos desenvolvidos                                                                                                    | 0 a 1   |
+|                                    |             | Apresentou corretamente explicação teórica dos passos seguidos durante a realização dos cálculos desenvolvidos                                                                                           | 1 a 3   |
+|                                    |             | Apresentou corretamente o passo a passo detalhado de todos os cálculos realizados para o desenvolvimento do problema, com base no conteúdo teórico em estudo                                             | 3 a 4   |
+| Resposta atendeu ao enunciado      | 3,0         | Resposta não atende a solicitação do enunciado da atividade / questão (resposta até está correta em termos de cálculo e lógica teórica, mas não responde ao que foi questionado no enunciado solicitado) | 0 a 1   |
+|                                    |             | Resposta atende parcialmente o enunciado de forma correta, mas apenas parcialmente (resposta até está correta em termos de cálculo e lógica teórica, mas não elucida totalmente o enunciado solicitado)  | 1 a 2,5 |
+|                                    |             | Apresentou corretamente a resolução solicitada no enunciado da atividade / questão (resposta apresentada elucida totalmente o questionamento apresentado)                                                | 2,5 a 3 |
+| Raciocínio lógico-argumentativo    | 3,0         | Não apresentou os aspectos argumentativos e lógicos de suas ideias e conclusões para resolução do problema.                                                                                              | 0 a 1   |
+|                                    |             | Apresentou de forma parcial e/ou confusa os aspectos argumentativos e lógicos de suas ideias e conclusões para resolução do problema do enunciado.                                                       | 1 a 2   |
+|                                    |             | Apresentou de forma clara os aspectos argumentativos e lógicos de suas ideias e conclusões para resolução do problema do enunciado                                                                       | 2 a 3   |
+
+** O aluno em educação a distância
+
+O vídeo discute algumas causas da sensação de entranhamento com o EaD
+
+- Presencial vs. distância:
+  - Ritmo diferente da modalidade presencial
+    - Perde o referencial espacial
+  - Não tem o mesmo convívio
+- Modelo:
+  - Cursos mais estruturados
+    - Mecânico e repetitivo
+    - Forma de orientação
+  - Material liberado de uma vez
+  - Formato iterativos
+    - Participar de fórums
+    - Desenvolver projetos
+- Tempo
+  - Requer mais organização dos próprios alunos
+    - Isso fica mais evidente com maior grau de assincronia
+
+* Semana de revisão e encerramento das disciplinas
+
+** O que são mapas conceituais (Psicologia da aprendizagem)
+
+- Proposições explicam relações conceituais
+- Mapa mental e mapa conceitual são distintos
+  - Uso de elementos visuais
+  - Tem um caráter idiosincrático
+  - Não tem uma carga de informação explícita
+    - Tem um componente subjetivo bem grande
+      - Possui uma menor eficiência por este motivo
+- Mapa conceitual:
+  - Conceitos indicados em caixas
+  - Flechas indicando a direção de leitura
+  - Proposições explicitam as relações conceituais (o que distingue de mapas mentais)
+    - Conceitos: regularidades percebidas em objetos e eventos
+    - Devem conter alto grau de clareza semântica (verbo)
+    - Erros podem ser identificados de forma mais clara
+  - Questão focal nortea a criação do mapa conceitual
+  - Facilita processamento sistêmico
+  - Permite correção e clareza do mapa conceitual
+
+** Como elaborar bons mapas conceituais
+
+Tipos de diagrama úteis com plantuml:
+- State diagram (tem começo e fim)
+- Sequence diagram
+- Class diagram
+
+#+begin_src plantuml :file ./figs/test_plantuml.png
+@startuml
+
+title Exemplo de Mapa Conceitual
+
+' Define nodes as classes (concepts)
+class "CIÊNCIAS DA NATUREZA" {
+}
+
+class "NASCIMENTO DA CIÊNCIA" {
+}
+class "MUDANÇAS CLIMÁTICAS" {
+}
+class "BIOÉTICA" {
+}
+class "UNIVERSO" {
+}
+class "CIÊNCIA" {
+}
+class "TECNOLOGIA" {
+}
+class "RAZÃO" {
+}
+class "FÉ" {
+}
+class "BIOLOGIA MOLECULAR" {
+}
+
+' Connect nodes with labels
+"CIÊNCIAS DA NATUREZA" --> "NASCIMENTO DA CIÊNCIA"
+"CIÊNCIAS DA NATUREZA" --> "MUDANÇAS CLIMÁTICAS" : "contempla o(as)(a)"
+"CIÊNCIAS DA NATUREZA" --> "BIOÉTICA"
+
+"NASCIMENTO DA CIÊNCIA" --> "UNIVERSO" : "inclui discussões sobre o(a)"
+"UNIVERSO" --> "RAZÃO" : "é compreendido pela"
+"UNIVERSO" --> "FÉ"
+
+"MUDANÇAS CLIMÁTICAS" --> "CIÊNCIA"
+"MUDANÇAS CLIMÁTICAS" --> "TECNOLOGIA" : "são decorrentes do avanço da"
+
+"BIOÉTICA" --> "BIOLOGIA MOLECULAR" : "está relacionada com o avanço da"
+
+@enduml
+#+end_src
+
+#+RESULTS:
+[[file:./figs/test_plantuml.png]]
+
+
+#+begin_src plantuml :file ./figs/Example_ConceptualMap.png
+@startmindmap
+
+title Examplo de mapa conceitual
+caption Utilizando classe de mapa mental do plantuml
+
+
++ Ciências da natureza
+
+++_ Comtempla
++++ Nascimento da ciência
+++++_ inclui discussões sobre o(a)
++++++ Universo
+++++++_ é compreendido pela
++++++++ Fé
++++++++ Razão
++++ Mudanças climáticas
+++++_ são decorrentes do avanço da
++++++ Ciência
++++++ Tecnologia
++++ Bioética
+++++_ está relacionada com o avanço da
++++++ Biologia molecular
+
+@endmindmap
+#+end_src
+
+#+RESULTS:
+[[file:./figs/Example_ConceptualMap.png]]
+
+
+** O que faço para melhorar meus mapas conceituais
+
+- Reconhecer a importância da organização hierárquica dos conceitos
+- Usar tabela de clareza proposicional
+  - Exportar proposições como texto e importar em uma tabela
+- Estabelecer uma questão focal
+  - O que ele responde?
+    - Como a disciplina ciências da natureza está organizada?
+
+
+** Tipos de mentais para a semana de revisão
+
+- Realizar reuniões síncronas e tirar dúvidas em tempo real
+- Criar formulário de dúvidas
+  - Categorizar principais dúvidas e preparar respostas
+- Elaborar um mapa conceitual da disciplina
+
+* Prova e outros instrumentos de acompanhamento
+
+** Texto-base: Conceitos Básicos sobre Avaliação das Aprendizagens
+
+- A avaliação é uma área central na reforma educativa em Portugal, baseada na Lei de Bases do Sistema Educativo de 1986.
+- O novo sistema de avaliação reforça a função formativa, a avaliação interna e externa, e a participação dos alunos e encarregados de educação.
+- A avaliação é uma atividade complexa e multifacetada, essencial para o sucesso do processo educativo.
+- Deve ser adaptada às necessidades dos alunos e ao contexto educativo, promovendo a igualdade de oportunidades e o sucesso escolar.
+
+*** Conceitos Fundamentais de Avaliação
+
+- A avaliação é vista como um processo de verificação de objetivos educacionais. Tipos de avaliação:
+  - **Avaliação Diagnóstica**: Identifica dificuldades no início da aprendizagem.
+    - Identifica conhecimentos prévios e dificuldades no início de novas aprendizagens.
+    - Pode ser usada para *orientar o ensino* e adaptá-lo às necessidades dos alunos.
+  - **Avaliação Formativa**: Acompanha o processo de ensino-aprendizagem, fornecendo feedback contínuo.
+    - Acompanha o processo de ensino-aprendizagem, fornecendo feedback contínuo.
+    - Visa regular o processo de ensino, detectando dificuldades e adaptando metodologias.
+    - *Não* deve ser usada para classificação, mas sim para melhorar a *aprendizagem*.
+  - **Avaliação Sumativa**: Faz um balanço final dos conhecimentos e competências adquiridas.
+    - Faz um balanço final dos conhecimentos e competências.
+    - Pode ser usada para *certificação* e decisões sobre *progressão* ou retenção dos alunos.
+    - Não se esgota na classificação, podendo ter uma expressão qualitativa.
+  - **Avaliação especializada:**
+    - Realizada por uma equipa multidisciplinar para alunos com necessidades educativas específicas.
+    - Resulta em um programa individualizado para o aluno.
+  - **Avaliação Aferida**
+    - Avaliação *externa* realizada por especialistas para controlar a *qualidade do sistema de ensino*.
+    - Não influencia as classificações dos alunos, mas avalia o cumprimento dos objetivos curriculares.
+
+*** Modalidades de Avaliação
+
+- **Avaliação Contínua vs. Pontual**: A contínua acompanha o processo de aprendizagem, enquanto a pontual ocorre em momentos específicos.
+- **Avaliação Explícita vs. Implícita**: A explícita é formal e reconhecida, enquanto a implícita é informal e não reconhecida pelos alunos.
+- **Avaliação Normativa vs. Criterial**: A normativa compara os alunos entre si, enquanto a criterial avalia o desempenho em relação a critérios pré-estabelecidos.
+
+*** Funções da Avaliação
+
+- **Certificação**: Garante que o aluno atingiu um determinado nível.
+- **Seleção**: Identifica alunos para prosseguimento de estudos ou vida ativa.
+- **Orientação**: Comunica resultados aos alunos, permitindo diagnósticos e planificações.
+- **Motivação**: Incentiva o empenho dos alunos nas tarefas.
+- **Classificação:**
+  - A classificação é uma forma rápida de comunicar resultados, mas pode gerar competição e conflitos.
+  - Deve ser usada com cuidado para não desmotivar os alunos.
+
+*** Intervenientes na Avaliação
+
+A avaliação pode envolver professores, alunos, pais e outros técnicos.
+- **Auto-avaliação**: Os alunos avaliam seu próprio desempenho, promovendo a responsabilização.
+- **Hetero-avaliação**: Avaliação feita por outros, como professores ou colegas.
+
+*** Tendências Futuras na Avaliação
+
+- A avaliação deve ser *diversificada*, incluindo métodos como ensaios, avaliações orais e portfólios.
+- Deve medir não apenas conhecimentos, mas também *habilidades* de pensamento superior, atitudes e valores.
+- A avaliação deve ser holística, sistemática e cumulativa, refletindo os progressos da aprendizagem.
+
+
+** Texto-base: Instrumentos de Avaliação – As Questões Constantes da Prática Docente
+
+- O texto aborda a importância dos instrumentos de avaliação no contexto educacional, destacando estudos de autores como Noll, De Cecco, Cronbach, Gromlund e Pophan.
+- A autora, Léa Depresbiteris, propõe uma reflexão sobre questões práticas relacionadas à elaboração e uso de instrumentos de avaliação, com foco na **capacitação de docentes**.
+- A avaliação deve ser diversificada, utilizando diferentes instrumentos e técnicas para captar as habilidades dos alunos em diversos contextos.
+- Os critérios de avaliação devem ser explícitos e coerentes com os objetivos de ensino, evitando a limitação do raciocínio e promovendo a autonomia do aluno.
+- A avaliação não deve se restringir à memorização, mas deve estimular raciocínios mais complexos e a resolução de problemas.
+
+*** Questões Centrais
+
+1. Somente os testes avaliam? Que outras formas de avaliação existem?
+   - **Outras Formas de Avaliação**: Além dos testes, existem observação, trabalhos de pesquisa, relatórios, entre outros. Essas formas devem ser planejadas e baseadas em critérios claros.
+2. Instrumentos de avaliação, baseados em objetivos, limitam o raciocínio do aluno?
+   - **Limitação do Raciocínio**: A limitação não está nos instrumentos, mas nos objetivos e conteúdos. Objetivos bem formulados podem estimular raciocínios complexos.
+3. É possível elaborar instrumentos diferentes para os mesmos objetivos?
+   - **Instrumentos Diferentes para Mesmos Objetivos**: Sim, é possível usar diferentes instrumentos (testes, trabalhos de pesquisa) para avaliar os mesmos objetivos, dependendo do tipo de avaliação (formativa ou somativa).
+4. Como estabelecer critérios para os instrumentos de avaliação?
+   - **Critérios de Avaliação**: Critérios devem ser claros, estáveis e corresponder ao estágio evolutivo do aluno. Eles ajudam a reduzir a subjetividade e a garantir uma avaliação justa.
+
+*** Técnicas e Instrumentos de Avaliação
+
+- **Testes de Aproveitamento Escolar**: Avaliam o *domínio cognitivo*, podendo ser objetivos (respostas pré-definidas) ou dissertativos (respostas elaboradas).
+- **Observação**: Pode ser sistemática (com objetivos definidos) ou assistemática (casual). Instrumentos incluem "check-list" e escalas de classificação.
+- **Interrogatório Oral**: Tradicional, mas sujeito a variações. Deve ser preparado e focado em objetivos claros.
+- **Discussão**: Avaliada em duas fases: desenvolvimento (observação) e resultado (relatório).
+- **Técnicas Sociométricas**: Avaliam preferências e relações dentro de um grupo.
+- **Técnicas Projetivas**: Captam respostas espontâneas e emocionais dos alunos.
+- **Registro Anedótico**: Anotações detalhadas sobre o comportamento do aluno em situações específicas.
+
+
+** Video-Base: Práticas de avaliação - Instrumentos Avaliativos
+
+*** Pressupostos associada às escolhas dos instrumentos avaliativos
+
+**** Planejamento da avaliação
+
+- Definir o que avaliar do currículo
+- Analisar as informações que precisam ser coletadas para basear o julgamento
+- Escolher os indicadores avaliativos
+- Definir as respostas apropriadas para cada indicador avaliativo
+- Registrar os  critérios avaliativos e, se possível, compartilhá-los com os alunos
+
+*** Tipos de instrumentos
+
+- Provas
+  - Precisa ser interpretada e não meramente corrigida
+  - Preparo para uma boa prova:
+    - Deve conter uma intencionalidade
+    - Manter coerência com os conteúdos e estratégias utilizadas
+    - Adequação das questões ao nível dos alunos
+    - Distribuição entre fáceis, médias e difíceis
+    - Contextualizar as questões ou aprensentá-las de forma a provocar o raciocínio
+- Seminários
+- Trabalhos de pesquisa
+- Resumo e/ou resenha
+- Exercícios em sala
+- Caderno e outros materiais
+- Portfólio
+  - Coleção de produções dos alunos que proporcionam evidências do progresso de aprendizagem do aluno
+  - Composto por:
+    - Anotações pessoais
+    - Experiências
+    - Trabalhos pontuais
+    - Representações visuais
+- Pautsas e registro de observação
+  - Instrumentos que organizam as informações que o professor obtém durante o processo de ensino-aprendizagem
+  - Instrumentos estruturados, previamente definidos ou originados da observação direta
+  - Permitem a objetivação da avaliação em processo
+- Auto-avaliação
+- Participação e/ou frequência nas aulas
+
+
+*** Análise dos resultados
+
+- O que o aluno está aprendendo?
+- O que o professor não está sendo capaz de ensinar?
+- Os objetivos propostos foram adequadamente atingidos?
+
+** Video-Base: Práticas de avaliação - Critérios
+
+
+- Princípio utilizado para julgar, apreciar, e comparar
+- Característica ou propriedade de um objetivo que permite atribuir-lhe um juízo de valor
+- Avaliação normativa:
+  - Desempenho do aluno é comparado a do grupo ao qual faz parte
+    - Parte de quem é considerado bom aluno e, a partir disso, definir como os demais devem ser corrigidas
+  - Tem o propósito de classificar e comparar
+  - Isso indica qual é o destino do aluno (progresso, reprova, exame)
+  - Isso pode gerar competição
+- Avaliação criteriada:
+  - Desempenho do aluno conforme critérios previamente definidos
+  - Informações identificam em que ponto do processo de aprendizagem o aluno se encontra
+  - Comparação do aluno consigo próprio
+
+
+*** Compartilhar os critérios de avaliação
+
+- Critério de realização:
+  - Quais são os passos que devem atingir para cumprir determinado objetivo
+  - Sugere-se que seja acordado com os alunos
+- Critérios de êxito:
+  - Critérios que explicitam o nível de exigência que indicam quando as aprendizagens estão satisfatórias ou não
+  - Sugere-se acordo com a equipe escolar
+
+** Provas regulares da univesp
+
+As provas regulares na Univesp são presenciais e bimestrais.
+
+Para os cursos de Engenharia de Computação e Engenharia de Produção, as provas são aplicadas durante a 8ª e a 9ª semanas do bimestre, enquanto que, para os cursos de Licenciaturas, Tecnologia em Gestão Pública e Bacharelados em Tecnologia da Informação e Ciência de Dados, elas acontecem na 9ª semana.
+
+As provas são aplicadas no Polo em que o aluno está matriculado, nos dias da semana e períodos do dia determinados para cada curso, a saber: pedagogia (2ª feira)
+
+* Revisão geral
+
+
+** Importância da autoavaliação
+
+*** A relevância do processo de autoavaliação institucional da universidade tecnológica para a configuração do bom professor
+
+**** Introdução
+
+- O artigo discute a concepção de "bom professor" a partir dos resultados da Autoavaliação Institucional em uma Universidade Tecnológica Federal Paranaense.
+- O estudo faz parte de uma dissertação de Mestrado em Educação e busca entender como os dados da autoavaliação podem contribuir para a formação de melhores professores.
+- A autoavaliação é vista como uma ferramenta para melhorar as condições de ensino e aprendizagem.
+
+**** Objetivo e metodologia
+
+- Revelar como os dados da autoavaliação institucional podem colaborar na configuração do "bom professor" universitário, especialmente na Educação Profissional e Tecnológica.
+- Utilização de relatórios de autoavaliação da UTFPR, com foco na avaliação dos docentes pelos discentes entre 2009 e 2011.
+- Análise de conteúdo dos comentários dos alunos sobre os professores considerados "bons".
+- Referenciais teóricos incluem Dias Sobrinho, Belloni, Cunha e Simões.
+
+**** Resultados e discussão
+
+- Os alunos destacam como características do "bom professor":
+  - Conhecimento profundo da disciplina.
+  - Planejamento de aulas com estratégias diversificadas.
+  - Aspectos afetivos, como paciência, bom humor e dedicação.
+- A autoavaliação institucional pode ser um instrumento formativo, ajudando a identificar pontos positivos e negativos no ensino.
+- Apenas 20% dos professores foram considerados "bons" pelos alunos, indicando a necessidade de melhorias na formação docente.
+- A autoavaliação deve ser vista como um processo contínuo e formativo, não apenas como um procedimento administrativo.
+- É necessário investir em políticas de formação pedagógica para os professores, especialmente os bacharéis, que muitas vezes não têm formação específica em educação.
+- A avaliação somativa, focada em classificação, é menos eficaz do que a avaliação formativa, que busca melhorar o desempenho docente.
+
+**** Conclusões
+
+- A autoavaliação institucional pode contribuir para a formação de um "bom professor" ao fornecer dados que orientem ações de melhoria no ensino.
+- A formação continuada dos professores deve ser sistemática e baseada nas necessidades identificadas pelos alunos.
+- A universidade deve assumir a dimensão pedagógica como parte essencial de sua missão, promovendo a profissionalização e a valorização dos docentes.
+
+
+*** A avaliação do ensino (Vídeo)
+
+- Autoavaliação deve ser contínua
+  - Permite avaliar como a trajetória da disciplina deve ser realizada
+  - Deve ser considerada em termos dos objetivos pretendidos em cada aula
+- Um possível instrumento seria a gravação das aulas
+  - Isso facilita a Autoavaliação do professor
+- Dar aula junto de outro professor também ajuda
+- Outro instrumento é o questionário de Autoavaliação feito pelos alunos
+
+*** Percurso do Facilitador de Aprendizagem Univesp

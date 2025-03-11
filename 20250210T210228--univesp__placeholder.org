@@ -14,19 +14,6 @@
 - Atividades:
   - Localização dos grupos
     - Identificar os DRPs de cada grupo
-#+caption: Localização dos grupos
-|---------+----------------------------------------------------------+--------------------------------+-------------+------------------------|
-|---------+----------------------------------------------------------+--------------------------------+-------------+------------------------|
-| Matéria |                           Link                           |              DRP               | Facilitador |       Supervisor       |
-|  <c10>  |                          <c20>                           |             <c32>            |    <c10>   |         <c10>          |
-|---------+----------------------------------------------------------+--------------------------------+-------------+------------------------|
-| PJI450  | https://ava.univesp.br/ultra/courses/_14087_1/cl/outline | DRP05-PJI450-SALA-001GRUPO-015 | 23228537@cursos.univesp.br            | magna.rocha@univesp.br |
-| PJI450  | https://ava.univesp.br/ultra/courses/_14087_1/cl/outline | DRP05-PJI450-SALA-001GRUPO-016 | 23228537@cursos.univesp.br            | magna.rocha@univesp.br |
-| PJI450  | https://ava.univesp.br/ultra/courses/_14087_1/cl/outline | DRP05-PJI450-SALA-001GRUPO-017 | 23228537@cursos.univesp.br            | magna.rocha@univesp.br |
-| PJI450  | https://ava.univesp.br/ultra/courses/_14087_1/cl/outline | DRP05-PJI450-SALA-001GRUPO-018 | 23228537@cursos.univesp.br            | magna.rocha@univesp.br |
-| PJI450  | https://ava.univesp.br/ultra/courses/_14087_1/cl/outline | DRP05-PJI450-SALA-001GRUPO-019 | 23228537@cursos.univesp.br            | magna.rocha@univesp.br |
-|---------+----------------------------------------------------------+--------------------------------+-------------+------------------------|
-|---------+----------------------------------------------------------+--------------------------------+-------------+------------------------|
     - Se apresentar em cada um dos grupos
     - Fazer reuniões quinzenais com as equipes
       - Reuniões individuais de cada grupo (1h)
@@ -41,8 +28,585 @@
       - Após abertura das salas pelo AVA
     - Pergunta sobre bolsa
 
+#+caption: Localização dos grupos
+|---------+----------------------------------------------------------+--------------------------------+-------------+------------------------|
+|---------+----------------------------------------------------------+--------------------------------+-------------+------------------------|
+| Matéria |                           Link                           |              DRP               | Facilitador |       Supervisor       |
+|  <c10>  |                          <c20>                           |             <c32>            |    <c10>   |         <c10>          |
+|---------+----------------------------------------------------------+--------------------------------+-------------+------------------------|
+| PJI450  | https://ava.univesp.br/ultra/courses/_14087_1/cl/outline | DRP05-PJI450-SALA-001GRUPO-015 | 23228537@cursos.univesp.br            | magna.rocha@univesp.br |
+| PJI450  | https://ava.univesp.br/ultra/courses/_14087_1/cl/outline | DRP05-PJI450-SALA-001GRUPO-016 | 23228537@cursos.univesp.br            | magna.rocha@univesp.br |
+| PJI450  | https://ava.univesp.br/ultra/courses/_14087_1/cl/outline | DRP05-PJI450-SALA-001GRUPO-017 | 23228537@cursos.univesp.br            | magna.rocha@univesp.br |
+| PJI450  | https://ava.univesp.br/ultra/courses/_14087_1/cl/outline | DRP05-PJI450-SALA-001GRUPO-018 | 23228537@cursos.univesp.br            | magna.rocha@univesp.br |
+| PJI450  | https://ava.univesp.br/ultra/courses/_14087_1/cl/outline | DRP05-PJI450-SALA-001GRUPO-019 | 23228537@cursos.univesp.br            | magna.rocha@univesp.br |
+|---------+----------------------------------------------------------+--------------------------------+-------------+------------------------|
+|---------+----------------------------------------------------------+--------------------------------+-------------+------------------------|
+
+** Criação de forúms dos grupos
+
+- Ferramenta do grupo, então precisa ser criado na sala do grupo
+- Preencher apenas título do fórum e deixar a descrição em branco
+  - Título é o título do grupo e incluir nome do facilitador para diferenciar
+- Não alterar as configurações para garantir a padronização
+- Depois, criar linha de discussão
+- Não é possível fazer correção ou exclusão das linhas de discussão
+- Colocar as atividades das quinzenas e indicar link para a reunião
+- Forúm também é um registro do trabalho dos facilitadores
+  - É recorrente que os alunos fazam reclamações via ouvidoria, então esse registro é importante
+  - Observar quando algum grupo está inativo
+  - Caso ninguém apareça na reunião, deixar registrado no forúm
+- É possível fazer uma inscrição no forúm para receber e-mails sempre que algum aluno responde
+
+
+** Inter-quinzena
+
+- Visita ao AVA
+  - Calendário do PI
+    - Início das atividades: <2025-02-17 seg>
+      - Nenhuma entrega a ser feita
+    - Quinzena 2: <2025-03-03 seg>
+      - Entrega do plano de ação <2025-03-11 ter>
+        - Delimitar subtema
+        - Devem ter feito a visita à instituição
+    - Orientar os alunos para não contar com o prazo de carência
+    - Datas de início são sugestões
+      - Alunos podem antecipar, mas não atrasar
+  - O AVA disponibiliza modelos das entregas
+  - Pedir para que os alunos levem o termo de autorização do uso da imagem, termo de entrevista
+    - Anexado no fim e não no corpo do texto
+  - Comum que os alunos utilizem o recurso de que não conseguem contato com o orientador
+  - As orientações para as entregas do projeto integrador
+- Especificidades do projeto integrador
+  - Ter uma visão geral do material das quinzenas
+  - Graduandos em pedagogia e já realizaram um PI anteriormente
+  - Objetivo geral:
+    - *Construir* um brinquedo com materiais de baixo custo e desenvolver um plano de aula que contextualize seu uso.
+      Espera-se que a construção se dê em conjunto com uma (um) professora(o) e uma turma de educação infantil.
+- Especificidades da quinzena 1
+  - Ver REA
+  - Reconhecer a importância do trabalho em equipe
+  - Definir cenário do projeto
+    - Não é necessário que todos possam fazer a visita
+  - Entender o contexto do projeto
+  - Iniciar o levantamento bibliográfico
+    - Os mesmos textos indicados pelos professores podem ser utilizados
+- Prioridades da quinzena 1
+  - Agendar primeira reunião com o grupo
+    - Usar collaborate da sala para agendar a primeira reunião
+      - Não usar collaborate do grupo, mas sim da sala
+    - Marcar acesso de convidados para criar link
+  - Criar fórums da quinzena do grupo
+    - Indicar objetivos da quinzena
+    - Enviar link para reunião
+    - Se ninguém aparecer, fazer a gravação com todas as orientações e disponibilizar
+      - Postar a gravação e indicar que ninguém apareceu
+      - Ficar ao menos 30 minutos na sala
+      - Trabalhos não orientados serão zerados
+  - Estou em outro fuso, como proceder?
+- Equipe de acessibilidade
+- Dúvidas gerais
+  - Perguntar hora aos alunos?
+    - Preferência nessa semana
+      - Preferência para a noite
+      - 19h-20h
+
 * Quinzena 1
+
+** Grupo 015 (<2025-02-20 qui>)
+
+- Iniciar gravação
+- Registrar presentes
+  - Viviane (Inspetora) - Educação infantil (Tietê)
+  - Deisiana (Creche) - Tietê (Não compareceu)
+- Breve introdução
+- Já trabalharam juntos antes?
+  - Ao menos duas pessoas
+- Estão geograficamente próximos?
+  - Ao menos duas pessoas
+- Definido cenário do projeto?
+  - Ainda não
+- Entendido o contexto do projeto?
+  - Ainda não
+- Levantamento bibliográfico?
+  - Sem comentários específicos
+- Como está a divisão de tarefas?
+- Horários para as próximas quinzenas
+  - Viviane: 19h sem preferência para dia de semana
+- Anotações
+  - Orientadora não comparecia (PI passado)
+  - Pouca adesão das demais pessoas
+    - O mesmo ocorreu no PI anterior
+      - Apenas 3 pessoas participaram
+  - Se sentiram perdidas no PI anterior
+  - Autoavaliação: fiz uma reunião com pouca estruturada
+
+
+** Grupo 016 (<2025-02-20 qui>)
+
+O PI tem como tema a educação infantil, especificamente, o brincar na construção socioafetiva da criança.
+A proposta é que o grupo construa um brinquedo com material de baixo custo e, a partir dele, desenvolva e aplique um plano de aula que contextualize o seu uso.
+Espera-se que a construção se dê em conjunto com o professor de uma turma da educação infantil.
+
+- Iniciar gravação
+- Registrar presentes
+  - Iasmin
+  - Rebeca
+  - Vanessa
+  - Vania
+  - Natalia - Gestão de RH
+- Breve introdução
+- Já trabalharam juntos antes?
+  - Sim
+- Estão geograficamente próximos?
+  - Sim
+- Definido cenário do projeto?
+  - Talvez com a mesma diretora
+- Entendido o contexto do projeto?
+  - Quebra cabeça de emoções
+  - Roleta de emoções
+- Levantamento bibliográfico?
+  - Fundamentos da educação infantil
+  - Pensamento computacional
+- Como está a divisão de tarefas?
+  - Tentar que todo mundo participe de todas as atividades
+- Horários para as próximas quinzenas
+  - Quarta às 21h
+- Anotações
+  - Primeira PI foi tranquila
+  - Assunto que está estudando em uma matéria
+  - Creche também ou só fundamental?
+    - Checar
+  - Sobrecarga no PI anterior
+    - Uma das participantes ficou com sobrecarga na escrita
+
+
+
+** Grupo 017 (<2025-02-21 sex>)
+
+O PI tem como tema a educação infantil, especificamente, o brincar na construção socioafetiva da criança.
+A proposta é que o grupo construa um brinquedo com material de baixo custo e, a partir dele, desenvolva e aplique um plano de aula que contextualize o seu uso.
+Espera-se que a construção se dê em conjunto com o professor de uma turma da educação infantil.
+
+- Iniciar gravação
+- Registrar presentes
+  - Ana Lúcia: Anhembí
+- Breve introdução
+- Já trabalharam juntos antes?
+- Estão geograficamente próximos?
+  - Algumas pessoas sim
+- Definido cenário do projeto?
+- Entendido o contexto do projeto?
+  - Pescaria das emoções
+    - Peixe de papelão, EVA
+- Levantamento bibliográfico?
+- Como está a divisão de tarefas?
+- Horários para as próximas quinzenas
+- Observações
+  - Duas pessoas trabalham em escolas
+    - Talvez dê para aplicar em uma delas
+      - Conversar com a diretora
+  - Já falaram sobre o projeto
+    - Ideia de consenso
+  - Alguns integrantes não responderam
+    - Juliane e Larissa
+
+** Grupo 018 (<2025-02-21 sex>)
+
+O PI tem como tema a educação infantil, especificamente, o brincar na construção socioafetiva da criança.
+A proposta é que o grupo construa um brinquedo com material de baixo custo e, a partir dele, desenvolva e aplique um plano de aula que contextualize o seu uso.
+Espera-se que a construção se dê em conjunto com o professor de uma turma da educação infantil.
+
+OBS: Ninguém compareceu.
+
+- Iniciar gravação
+- Registrar presentes
+- Breve introdução
+- Já trabalharam juntos antes?
+- Estão geograficamente próximos?
+- Definido cenário do projeto?
+- Entendido o contexto do projeto?
+- Levantamento bibliográfico?
+- Como está a divisão de tarefas?
+- Horários para as próximas quinzenas
+- Observações
+
+** Grupo 019 (<2025-02-21 sex>)
+
+O PI tem como tema a educação infantil, especificamente, o brincar na construção socioafetiva da criança.
+A proposta é que o grupo construa um brinquedo com material de baixo custo e, a partir dele, desenvolva e aplique um plano de aula que contextualize o seu uso.
+Espera-se que a construção se dê em conjunto com o professor de uma turma da educação infantil.
+
+OBS: Ninguém compareceu
+
+- Iniciar gravação
+- Registrar presentes
+- Breve introdução
+- Já trabalharam juntos antes?
+- Estão geograficamente próximos?
+- Definido cenário do projeto?
+- Entendido o contexto do projeto?
+- Levantamento bibliográfico?
+- Como está a divisão de tarefas?
+- Horários para as próximas quinzenas
+- Observações
+
 * Quinzena 2
+
+** Conteúdo
+
+*** Tópicos abordados
+
+- Importância da afetividade na formação do sujeito
+  - Como docente pode ajudar na construção de laços afetivos
+
+*** Objetivos
+
+- Interagir com a comunidade externa
+  - Coletar os dados necessários para a definição do tema e do problema do PI
+- Definir e estudar o contexto do problema
+  - O que está causando o problema ou a necessidade do contexto?
+  - Por que é importante solucionar este problema?
+  - Com quais sujeitos seria possível contar para a solução desse problema?
+- Criar o plano de ação para a solução do problema escolhido
+  - Avaliação:
+    - Descreveu o processo de escolha do local com detalhes?
+      - Quais outras alternativas? O que definiu a escolha do local?
+    - Descrição da conversa com a comunidade externa
+    - Identificação de possíveis problemas relacionados ao tema norteador
+    - Identificação do tema específico
+    - Descrição do planejamento das próximas atividades
+    - Adequação da norma da língua portuguesa
+
+
+*** Avaliação do projeto integrador
+
+- Metodologias ativas de aprendizagem:
+  - Design Thinking
+  - Metodologia baseada em problemas e por projetos
+- Plano de ação (15%)
+  - Organização do grupo
+  - Avaliado por meio das rúbricas de avaliação
+- Relatório Parcial (25%)
+  - Título provisório
+  - Introdução
+    - Cita o tema dentro do objetivo geral do trabalho
+  - Desenvolvimento (Metodologia)
+  - Referências
+    - Ênfase no relaciomento entre as disciplinas
+    - Indicar quais disciplinas foram utilizadas para a construção do relatório
+- Relatório Final (35%)
+  - Título
+  - Resumo
+  - Introdução
+  - Desenvolvimento
+    - Adequação à metodologia será considerada
+  - Resultado
+  - Considerações
+  - Referências
+  - OBS: Relatório final só será corrigido se houver entrega do vídeo (10%)
+- Autoavaliação (15%)
+
+*** Desenvolvimento afetivo
+
+- **Afetividade e Inteligência**: Segundo Piaget, inteligência e afetividade são indissociáveis e fundamentais para a conduta humana.
+  - Inteligência e afetividade fazem parte da conduta
+- **Estágio Sensório-Motor (0-2 anos)**: O bebê interage com o mundo através dos sentidos e desenvolve sentimentos instintivos ligados ao conforto, desconforto e sucesso/fracasso.
+  - Senso estético e do que é agradável e desagradável
+  - Início do pensamento pré-operatório e surgimento dos afetos intencionais.
+- **Estágio Pré-Operatório (2-6 anos)**: A criança desenvolve capacidade de representar o mundo através da fantasia, imitação e jogos simbólicos, mas sem pensamento lógico.
+  - Inteligência pré-representacional
+  - **Afetos no Pré-Operatório**: Nessa fase surgem simpatias e antipatias arbitrárias, baseadas em critérios simples, como vestimentas ou gostos similares.
+  - **Egocentrismo Infantil**: A criança ainda não compreende totalmente a perspectiva dos outros e tem dificuldades em compartilhar ou entender a noção de empréstimo.
+  - Afetos intuitivos
+- **Estágio Operatório Concreto (7-11 anos)**: O pensamento lógico começa a se desenvolver, permitindo à criança compreender regras e relações matemáticas de forma estruturada.
+  - **Cooperação e Regras**: Nesse estágio, a criança aprende a negociar, argumentar e aceitar normas coletivas, desenvolvendo um senso de justiça e trabalho conjunto.
+  - Afetos lógicos, tentativa de coerência por parte da criança
+  - Transição para pensamento lógico e começo da cooperação intelectual.
+- **Estágio Operatório Formal (a partir de 11 anos)**: O adolescente desenvolve pensamento abstrato, capacidade crítica e ideológica, ligando afetividade a ideais e valores.
+  - Desenvolvimento do pensamento formal e conexão da afetividade a ideais abstratos.
+- **Piaget e o Método Científico**: Piaget baseia suas teorias em observações empíricas e enfatiza a necessidade de mais pesquisas sobre a afetividade para aprofundar sua compreensão.
+
+*** O lúdico e a afetividade na educação infantil didáticos para o ensino: a prática docente e o planejamento didático
+
+- Importância da Afetividade: A afetividade desempenha um papel essencial na formação do sujeito e na mediação docente, promovendo um ambiente propício ao aprendizado.
+  - Piaget destaca a harmonia entre racionalidade e emoção
+  - Vygotsky afirma que a razão surge da emoção
+  - Wallon considera a afetividade central no desenvolvimento infantil
+- Afetividade e Cognição: A afetividade otimiza a interação entre sujeitos, retroalimenta a cognição e fortalece a motivação para o aprendizado.
+- Papel do Professor: Demonstrar envolvimento nas atividades lúdicas, observar e planejar cuidadosamente o ambiente de aprendizado são atitudes fundamentais para um ensino eficaz.
+  - Compromisso Político do Professor: *Se importar* com os alunos, planejar atividades e criar um ambiente inclusivo são ações que refletem a afetividade no ensino.
+- Ludicidade e Aprendizado: O jogo é um elemento central no desenvolvimento humano e está presente na cultura desde os primórdios
+  - Huizinga defende que a ludicidade é essencial para a aprendizagem (Homo Ludens)
+    - Jogos possuem regras rígidas e inegociáveis, mas podem ser aprendidas de forma mais leve
+  - Walter Benjamin é no momento de brincar que o aluno explora o espaço
+    - A brincadeira permite que as crianças ressignifiquem seu ambiente, desenvolvendo a criatividade e a imaginação
+    - Exploração sem a rigidez da estruturação
+  - O incentivo ao uso de fantasias e à confecção de brinquedos favorece a imaginação e o aprendizado espontâneo.
+
+***  O lúdico e a afetividade na educação infantil: Keite Melo
+
+A afetividade e a ludicidade são pilares fundamentais para o desenvolvimento integral da criança na educação infantil.
+
+O envolvimento pessoal e emocional do docente é crucial para a constituição de vínculos afetivos e para o sucesso do processo educativo.
+
+**** A Afetividade na Formação do Sujeito
+
+- Historicamente, a educação priorizou a racionalidade em detrimento das emoções.
+- Autores como Vygotsky, Wallon, Piaget e Freire destacam a importância das emoções no desenvolvimento humano.
+- A teoria de Wallon coloca a afetividade como central na constituição do sujeito, integrando corpo, razão e emoção.
+- A afetividade está diretamente relacionada à aprendizagem, sendo essencial para o sucesso educativo.
+
+**** Afetividade e Ludicidade – Diálogo para Educação Infantil
+
+- A ludicidade, associada a jogos e brincadeiras, é fundamental para o desenvolvimento infantil.
+- Para Leontiev, o brincar é a atividade principal da criança, promovendo mudanças psicológicas e sociais.
+- Johan Huizinga e Walter Benjamin destacam a importância do jogo e da brincadeira no desenvolvimento cultural, emocional e cognitivo.
+- A ludicidade e a afetividade estão inter-relacionadas, sendo essenciais para a educação infantil.
+
+**** Intervenções Docentes para Constituição da Afetividade Junto aos Alunos
+
+Estratégias para promover a afetividade e a ludicidade incluem:
+
+1. Contação de histórias afetivas
+2. Brincadeiras de faz de conta
+3. Dinâmicas de grupo cooperativas
+4. Espaços de escuta e diálogo
+5. Atividades sensoriais e artísticas
+6. Brincar junto aos estudantes
+7. Resgatar brincadeiras tradicionais
+8. Olhar nos olhos dos estudantes
+9. Explorar o ambiente externo
+10. Produzir brinquedos com os alunos
+11. Promover brincadeiras que simulem o cuidado com os colegas
+12. Cantar músicas e conversar durante cuidados diários
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*** Delimitação do tema e o desenho do problema
+
+**** Definição do problema
+
+- Hipóteses:
+  - Realizada e visita /in loco/
+  - Os dados foram coletados (falas e observações)
+    - Isso irá definir como identificar o problema
+      - "Foco no usuário" que utilizará o protótipo
+- Necessário:
+  - Definir local da realização para o desenvolvimento da tarefa
+    - Online, no polo
+  - Organizar os dados e informações coletadas na visita
+    - Uso do caderno de campo
+    - Compartilhar dados da entrevista com cada participante
+    - Dar sentido ao contexto geral
+      - Talvez tratar os dados
+  - Escolher quais problemas serão estudados na busca de soluções inovadoras
+- Esperado:
+  - Definição de uma pergunta: "Como podemos ... ?"
+    - Centrado no ser humano?
+    - Clareza na conclusão
+    - Relevância?
+    - Possível de ser resolvido?
+      - Condições de resolver dado prazo e estrutura?
+
+**** Organização de dados
+
+- Mapa da empatia
+  - Identificação do sujeito da ação
+    - O que o sujeito quer, pensa, sente, vê, fala e faz
+    - Identificar necessidades a partir da visita
+- Organização qualitativa em termos de categorias (tabulação)
+- Mapa conceitual
+
+** Reunião geral
+
+- Criar fórum sobre quinzena 02 de preferência até dia <2025-02-28 sex>
+- Participação nas lives é desejável, mas não obrigatório
+- Fórum da quinzena mais completo possível
+  - Indicar prazo de entrega
+- Pode ser uma readaptação, mas precisa ser construído
+- Se não tiver orientação, não deve ser avaliado
+  - Caso os alunos nunca comparecem nas reuniões
+  - Indicar no fórum de que não serão aceitos trabalhos em que o grupo não teve orientação
+  - Se ninguém do grupo comparecer, não terá correção
+- Se atentar para os casos em que membros dos grupos não estão participando do trabalho
+- Incluir para replicar conteúdo do fórum por e-mail
+- Brinquedo enquanto algo lúdico
+  - Jogo não foge do tema
+  - Quem costroi é o grupo e o professor
+    - Não é necessário que os alunos da turma construam o brinquedo
+    - É desejável que o professor participe, mas não é obrigatório
+      - Ouvir sugestões, por exemplo
+- Rubricas estão disponíveis (avaliação)
+  - Centro de notas
+  - Documentos e informações gerais
+    - Orientações para avaliação do projeto integrador
+- O levantamento bibliográfico é responsabilidade dos estudantes. O orientador pode mostrar como fazer.
+  - Kishimoto, Piaget, Bruner, Vygotsky auxiliam da compreensão do brincar.
+
+** Pauta
+
+*** Tópicos
+
+- Ler a rúbrica de correção do plano de ação
+- Tirar dúvidas sobre o plano de ação
+- Ler orientações para postagem do Plano de Ação
+  1. o AVA ainda ficará aberto para postagens durante o período de carência (entre os dias 12/03 e 16/03), usem esse prazo adicional apenas no caso de imprevistos;
+  2. apenas um integrante do grupo deve fazer a postagem dos trabalhos, pelo ícone "Entregas" na aba lateral da página da disciplina ou pela link das "Atribuições do grupo" na página do grupo;
+  3. todos os trabalhos devem estar no formato PDF seguindo os modelos disponibilizados pela Univesp na Documentação do PI em "Modelos de Documentos";
+  4. os alunos possuem no total três tentativas de postagem, mas não são obrigados a usar todas as tentativas;
+  5. após o envio das três tentativas o sistema fecha e não é possível enviar novo arquivo (mesmo que o último envio seja feito antes do encerramento do prazo final);
+  6. apenas uma tentativa do grupo será corrigida;
+  7. apenas o trabalho desenvolvido de forma colaborativa e com acompanhamento do orientador será avaliado;
+  8. ao concluir a entrega, se certifiquem que o arquivo foi enviado! Isso pode ser feito verificando se uma mensagem aparece em rosa no topo da página depois de clicar em Enviar
+- Reforçar a necessidade de visitar a escola antes de elaborar o plano de ação. Foco da visita:
+  - Apresentar a proposta do PI para a comunidade escolar
+  - Reforçar aos professores, coordenadores e diretor que o projeto precisará ser colocado em prática (em Abril)
+  - Sugerir que os alunos apliquem um questionário para ajudar a definir o público alvo e definir o problema que será abordado;
+
+*** Checks
+
+- Integração entre os membros do grupo?
+- Acompanhamento do material da segunda quinzena?
+- Ciência dos prazos referentes às entregas?
+- Interação com a comunidade externa?
+- Coleta de dados?
+- Identificação do problema a partir da interação com a comunidade externa?
+- Compreendido o contexto do problema?
+- Avaliado se o problema é factível de ser resolvido?
+  - Considerando prazos e estrutura da instituição?
+- Entrega do plano de ação? (11/03)
+  - Identificação de como as tarefas serão divididas?
+  - Identificação do local de atuação?
+
+** Grupo 015 <2025-03-05 Wed>
+
+- Participantes
+  - Deisiana
+  - Luciana
+  - Viviane
+  - Julia
+  - Valdirene
+  - Renata
+  - Michele
+- Grupo não definiu a escola
+- Consiguiram identificar todos, mas a comunicação parece falha
+  - Inconsistências durante a reunião
+
+
+** Grupo 016
+
+- Presentes
+  - Iasmin
+  - Ana Beatriz
+  - Rebeca
+  - Vania
+  - Aline
+- Grupo não definiu a escola que vão atuar, mas existem alternativas
+- Ao que tudo indica, o grupo possui algumas falhas na comunicação
+  - Isso emperrou a escolha da escola que irão atuar e discussão de outros assuntos pertinentes à quinzena
+- De modo geral, a reunião teve pouca interação com os alunos
+- Não foi definido qual brinquedo será construído
+- Os integrantes do grupo estão em contato
+  - Maior parte do grupo veio do PI anterior
+
+** Grupo 017
+
+- Presentes
+  - Ana Lúcia
+  - Bianca Samara
+  - Tatiane
+  - Amanda
+- Grupo está integrado
+- Apenas dois membros não foram identificados
+- Escola de atuação já foi definida
+- Definiram quem irá atuar
+- Pediram um parecer sobre o plano de ação antes da entrega oficial
+
+** Grupo 018 <2025-03-07 Fri>
+
+- Integração entre os membros do grupo?
+  - Grupo me relatou estar bem integrado
+  - Mas parece existir alguma falha de comunicação
+    - Alguns dos integrantes do grupo não estava a par da visita, por exemplo
+- Acompanhamento do material da segunda quinzena?
+  - Me informaram que estão acompanhando
+- Interação com a comunidade externa?
+  - Estão em contato com a escola
+- Identificação do problema a partir da interação com a comunidade externa?
+  - Ainda não foi feito
+- Avaliado se o problema é factível de ser resolvido?
+  - Considerando prazos e estrutura da instituição?
+
+** Grupo 019 <2025-03-07 Fri>
+
+*** Quinzena 01 (Reunião Bonus)
+
+
+O PI tem como tema a educação infantil, especificamente, o brincar na construção socioafetiva da criança.
+A proposta é que o grupo construa um brinquedo com material de baixo custo e, a partir dele, desenvolva e aplique um plano de aula que contextualize o seu uso.
+Espera-se que a construção se dê em conjunto com o professor de uma turma da educação infantil.
+
+- Breve introdução
+- Já trabalharam juntos antes?
+- Estão geograficamente próximos?
+- Definido cenário do projeto?
+- Entendido o contexto do projeto?
+- Levantamento bibliográfico?
+- Como está a divisão de tarefas?
+- Anotações
+  - Grupo bem integrado
+  - Grupo bem motivado
+    - Gerou debates sobre a profissão durante a reunião
+    - Ênfase em questões sociais
+
+
+*** Quinzena 02
+
+
+- Integração entre os membros do grupo?
+  - Grupo bem integrado com alguns membros mais participativos que outros
+- Acompanhamento do material da segunda quinzena?
+  - Aparentemente sim
+- Ciência dos prazos referentes às entregas?
+  - Sim
+- Interação com a comunidade externa?
+  - Estão em contato com a escola e a diretora foi solicita ao envolvimento com a Univesp
+- Coleta de dados?
+  - Não foi realizada. Definição do brinquedo a ser desenvolvido foi feita antes da visita.
+    - De todo modo, o problema que os integrantes do grupo levantaram é coerente com as necessidades da escola
+- Identificação do problema a partir da interação com a comunidade externa?
+  - Identificação do problema a partir das necessidades de um dos integrantes do grupo
+    - Em função disso, tema do grupo se relaciona também com a inclusão de alunos com autismo
+- Compreendido o contexto do problema?
+  - Sim
+- Entrega do plano de ação? (11/03)
+  - De modo geral, o grupo está bastante adiantado
+    - Foi feito um protótipo e apresentação de um vídeo para a diretora da escola
+- Status do trabalho
+  - Plano de ação completo
+  - Protótipo desenvolvido
+    - Irão utilizar um "vai e vem musical"
+  - Vídeo de demostração gravado
+
+
+** Inter-quinzena
+
+Correção:
+- Zerar nomes que não aparecem na entrega
+- Existe um campo para comentário interno que não é compartilhado com os alunos
+- Não ficou claro onde está localizado o campo de comentário para ser compartilhado aos alunos
+
 * Quinzena 3
 * Quinzena 4
 * Quinzena 5
@@ -56,3 +620,13 @@
 Número de confirmação:
 - 8dc5e3e865584f3fb96d8c5f551c2746
 - ef329c38ac4548d49748e3b99a087ce6
+
+** Relatório II
+
+Número de confirmação: 966090b824824439847e95cf5008fea2 (<2025-03-08 Sat>)
+
+* Emacs internals :noexport:
+
+# Local Variables:
+# jinx-languages: "pt_BR"
+# End:
