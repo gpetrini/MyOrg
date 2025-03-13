@@ -12,4 +12,4 @@
 !*.sty
 !*.css
 !*.el
-!*.html
+*.html
