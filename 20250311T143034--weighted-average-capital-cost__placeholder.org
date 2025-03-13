@@ -1,0 +1,4 @@
+#+title:      Weighted Average Capital Cost
+#+date:       [2025-03-11 ter 14:30]
+#+filetags:   :placeholder:
+#+identifier: 20250311T143034
