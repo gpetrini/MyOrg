@@ -8,6 +8,13 @@
 #+PROPERTY:header-args gnuplot :results output drawer :eval never-export
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-bigblow.setup
 
+
+* Turma A - Zé Maria
+
+- Notas de aula baseadas em Herriges
+- Grupos vão aprensentar seminários
+  - Regulação
+
 * Turma B - Camila
 
 - Data de provas definidas
@@ -281,6 +288,8 @@ dividindo ambos os termos por $p$:
 
 Uma vez que a receita marginal é menor que o preço, para ofertar uma unidade a mais, o monopólio deverar reduzir o preço.
 O elasticidade-prelo da demanda indica a sensibilidade ao qual o monopolista enfrenta.
+O monopolista opera sempre na margem elástica, caso contrário encontraria prejuízos.
+Nota-se que bens cujos padrões de consumo são bem estabelecidos, normalmente observa-se uma baixa elasticidade.
 
 #+BEGIN_latex
 \begin{equation}
@@ -682,6 +691,109 @@ Pi(x) = p(x)*x - C(x)
 plot p(x) lw 3, CMg(x) lw 3, RMg(x) lw 3, C(x) lw 3, Pi(x) lw 3
 #+end_src
 
+
+**** Apple Iphone
+
+Dados:
+
+Cenário base:
+#+begin_export latex
+\begin{align*}
+C_T & = Q^2 + 500 \\
+P  & = 150 - \frac{1}{2}Q
+\end{align*}
+#+end_export
+
+
+- Qual deve ser a quantidade ótima?
+#+begin_export latex
+\begin{align*}
+RMg & = \frac{\partial P(Q)Q}{\partial Q}
+RT & = (150 - 0.5Q)Q \\
+ & = 150 Q - 0.5 Q^2 \\
+RMg & = 150 - Q \\
+CMg & = 2Q \\
+RMg & = CMg \\
+150 - Q & = 2 Q \\
+Q & = \frac{150}{3}\\
+Q^\star & = 50
+\end{align*}
+#+end_export
+
+- Qual é o preço ótimo?
+
+#+begin_export latex
+\begin{align*}
+P^\star & = 150 - \frac{1}{2}Q^\star\\
+P^\star & = 125
+\end{align*}
+#+end_export
+
+- Qual é o lucro associado ao ponto ótimo?
+#+begin_export latex
+\begin{align*}
+\Pi^\star_{BAU} & = RT - CT
+ & = P^\star Q^\star - (Q^2 + 500) \\
+ & = 125 \cdot 50 - (50^2 + 500) \\
+ & = 3250
+\end{align*}
+#+end_export
+
+***** Redução dos custos variáveis
+
+Redução do custo variável em 50%:
+#+begin_export latex
+\begin{align*}
+C_{T,A} & = \frac{Q^2}{2} + 500 \\
+\end{align*}
+#+end_export
+
+
+- Qual deve ser a quantidade ótima?
+#+begin_export latex
+\begin{align*}
+RMg & = 150 - Q \\
+CMg & = Q \\
+RMg & = CMg \\
+150 - Q & = Q \\
+Q & = \frac{150}{2}\\
+Q^\star_{A} & = 75
+\end{align*}
+#+end_export
+
+- Qual é o preço ótimo?
+
+#+begin_export latex
+\begin{align*}
+P^\star & = 150 - \frac{1}{2}Q^\star\\
+P^\star & = ??
+\end{align*}
+#+end_export
+
+- Qual é o lucro associado ao ponto ótimo?
+#+begin_export latex
+\begin{align*}
+\Pi^\star_{BAU} & = RT - CT
+ & = P^\star Q^\star - (Q^2 + 500) \\
+ & = 125 \cdot 50 - (50^2 + 500) \\
+ & = 3250
+\end{align*}
+#+end_export
+
+***** Redução dos custos Fixos
+
+
+***** Avaliação
+
+|----------+------------+-------+-------|
+|----------+------------+-------+-------|
+| Cenário  | Quantidade | Preço | Lucro |
+|----------+------------+-------+-------|
+| BAU      |         50 |   125 |  3250 |
+| Corte CV |         75 |       |       |
+| Corte CF |            |       |       |
+|----------+------------+-------+-------|
+|----------+------------+-------+-------|
 
 *** Discriminação de preços em monopólio
 
