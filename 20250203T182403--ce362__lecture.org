@@ -3,48 +3,17 @@
 #+filetags:   :lecture:
 #+identifier: 20250203T182403
 #+subtitle: Microeconomics
+#+HUGO_AUTO_SET_LASTMOD: t
 #+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
 #+OPTIONS: num:nil ^:{} toc:nil
 
-* Turma B - Camila
 
-- Data de provas definidas
-- Não há reprova por falta
-
-** Estrutura do curso
-
-- Fase 1: Microeconomia I - Revisão
-- Fase 2: [[denote:20250202T121100][General Equilibrium Model]] e concorrência perfeita
-- Fase 3: Estruturas de mercado: Monopólio e oligopólio
-- Fase 4: Informação e interação estratégica: [[denote:20250202T114849][Game Theory]]
-
-
-* Apresentação do curso
+* Apresentação do curso (<2022-03-17 qui>)
+:PROPERTIES:
+:PROFESSOR: Aggio
+:END:
 
 ** Retomada de alguns conceitos de microeconomia I e rumo à microeconomia II
-
-Economia enquanto uma ciência da escolha uma vez que:
-- Recursos são limitados
-- Necessidades ilimitadas
-- Escolha implica trade-off e um custo de oportunidade
-
-Pressupostos sobre o processo da tomada de decisão:
-- Racionalidade
-  - Otimização
-  - Recursividade
-    - Agentes agem tal como os demais agentes fossem racionais
-  - Equilíbrio eficiente (em termos de Pareto)
-    - Assegurado pelo equilíbrio de preço
-      - Teoria do valor enquanto teoria do preço
-        - Sistema de preços relativos fornecem as informações necessárias para tomada de decisão
-          - Quando o sistema de preço não é suficiente, existem falhas de mercado
-- Consumidor otimiza sua função utilidade dada sua restrição orçamentária
-  - Decisão norteada pelo preço dos bens
-- Firma produz o máximo possível dado sua estrutura de custo
-  - Depende dos preços dos fatores de produção
-- Investidor maximiza retorno dado o risco
-- Empresa maximiza valor (preço de ações) dado o custo do capital ([[denote:20250311T143034][Weighted Average Capital Cost]])
-  - Retorno esperado pelo capital
 
 Em microeconomia I é apresentada uma teoria da escolha em que supõe-se a racionalidade dos agentes.
 Para tanto, supõe-se:
@@ -57,46 +26,6 @@ Como consequência, há lucro econômico zero (sem lucros anormais).
 
 Em linhas gerais, o curso de microeconomia II abandonará estas hipóteses.
 
-
-*** Teoria do Consumidor
-
-Restrição orçamentária:
-\[M = p_{x}X + p_{y}Y\]
-\[Y = \frac{M}{p_{y}} - \frac{p_{x}{p_y}} X]
-
-- Inclinação definida pelos preços relativos
-- Mudança na cesta de bens implica em uma alteração da inclinação da reta orçamentária
-
-*** Preferências
-
-- Substitutos perfeitos
-  - \(U(X, Y) = aX + bY\)
-  - Inclinação: \(-a/b\)
-- Complementares perfeitos
-  - \(U(X, Y) = \min{aX, bY}\) (Leontieff)
-- Cobb Douglas
-  - \(U(X, Y) = X^{a}Y^{b}\) (Curvas bem comportadas)
-    - Estritamente monotônica (preferível mais a menos)
-    - Estritamente convexas (uma combinação dos bens é preferível aos extremos)
-      - Bem que possui em menor quantidade é preferível
-      - É uma forma de expressar escassez
-      - TMS varia a depender do ponto que está na curva
-        - \(TMS = -\frac{Umg_{x}}{Umg_{y}}\)
-        - Obs: TMS equivalhe aos preços relativos no ponto de alocação ótima
-    - Ponto de tangência definido e único
-
-*** Escolha
-
-O consumidor escolhe a melhor cesta (maior utilidade) dada pela restrição orçamentária
-- Cobb-Douglas: Reta da curva de indiferença no ponto ótimo tem a mesma inclinação da reta orçamentária
-  - \(TMS = -UmgX/UmgY = px / py\)
-- Substitutos perfeitos:
-  - \(y = M/py, x = 0\) se \(py < px\) (ótimo de fronteira) \(TMS < px/py\)
-    - Utilidade relativa do bem x não está descrita na relação dos preços
-      - Por esta razão, aloca-se toda a renda para a aquisição do bem y
-  - \(x = M/px, y = 0\) se \(py > px\) (ótimo de fronteira) \(TMS > px/py\)
-  - [0; M/py] se px = py
-    - A proporção vai depender da TMS igual aos preços relativos
 
 ** Conteúdo da disciplina
 
@@ -112,7 +41,7 @@ O consumidor escolhe a melhor cesta (maior utilidade) dada pela restrição orç
 Além disso, será tratado de [[denote:20250202T114849][Game Theory]] uma vez que parte do conteúdo trata da interdependência dos agentes.
 Adiante, aborda-se um modelo de [[denote:20250202T121100][General Equilibrium Model]].
 
-* Monopólio
+* Monopólio (<2022-03-17 qui> - <2022-04-21 qui>)
 
 ** Introdução
 
@@ -802,7 +731,7 @@ Consequentemente, o lucro econômico converge a zero ou fique menor que zero (se
 A curva de demanda de longo prazo irá tangencial a curva de custo médio, com lucro econômico zero.
 Outra característica desse mercado é operar com excesso de capacidade já que trabalha aquém do custo médio.
 
-* Teoria dos jogos
+* Teoria dos jogos (<2022-04-26 ter> - )
 
 ** Introdução ao tema
 
