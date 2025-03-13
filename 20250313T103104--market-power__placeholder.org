@@ -1,0 +1,4 @@
+#+title:      Market Power
+#+date:       [2025-03-13 Thu 10:31]
+#+filetags:   :placeholder:
+#+identifier: 20250313T103104

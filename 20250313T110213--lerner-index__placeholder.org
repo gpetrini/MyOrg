@@ -1,0 +1,4 @@
+#+title:      Lerner Index
+#+date:       [2025-03-13 Thu 11:02]
+#+filetags:   :placeholder:
+#+identifier: 20250313T110213

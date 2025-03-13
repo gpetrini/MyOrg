@@ -5,6 +5,7 @@
 #+subtitle: Microeconomics
 #+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
 #+OPTIONS: num:nil ^:{} toc:nil
+#+PROPERTY:header-args gnuplot :results output drawer :eval never-export
 
 * Turma B - Camila
 
@@ -114,27 +115,51 @@ Adiante, aborda-se um modelo de [[denote:20250202T121100][General Equilibrium Mo
 
 * Monopólio
 
-** Introdução
+** Definição
 
 Um monopólio é uma empresa ofertante em um mercado.
 Um mercado, por sua vez, envolve um único bem ou serviço dada uma circunscrição espacial.
+Desse modo, é importante que não existam substitutos próximos.
+
+O monopolista possui [[denote:20250313T103104][Market Power]], mas não de forma irrestrita uma vez que suas decisões estão sujeitas às reações dos consumidores:
+- Efeito quantidade: produtor deixa de aumentar a receita ao diminuir a quantidade produzida, mesmo aumentando o preço
+- Efeito preço: produtor deixa de aumentar a receita ao diminuir o preço, mesmo aumentando a quantidade produzida
+
+** Causas do monopólio
+
+O importante para a determinação de um monopólio são as barreiras à entrada.
 Dentre as causas do monopólio, elenca-se:
-- Tecnologia
+- Controle de recursos escassos
+- Economias de escala
   - Monopólio natural
+    - Curva de custo médio de longo prazo é continuamente declinate
     - Supõe-se um custo fixo proporcionalmente muito maior
-- Institucionalizados
-- Patentes
-- Barreiras à entrada
-  - Monopsônio de determinado fator pode criar uma barreira à entrada
+      - Consegue barrar a entrada de novos concorrentes
+- Institucionalizados (Barreiras legais à entrada)
+  - Direitos de propriedade Intelectual (Patentes)
+    - Guarante lucro de monopólio por tempo determinado (20 anos em média)
+    - Podem ser usufruídos e transferidos
+  - Concessões governamentais
+- Externalidade de redes
+  - Custo fixo de uma inovação é bastante elevado, mas o custo marginal é baixo.
+  - O aumento do número de membros da rede aumenta o valor do objeto para todos (os que entram e os que já estavam na rede)
+    - Na medida que o novo produto/processo é difundido, seu valor é maior
+  - Cria [[denote:20250313T104140][Lock-in]] e swithcing costs
 
 ** Monopólio simples
+
 
 *** Hipóteses
 
 - Empresa oferta todas as unidades de um mesmo bem ou serviço ao mesmo preço
   - Por consequência, não há [[denote:20250202T121943][Price Discrimination]]
 - *Objetivo:* Maximizar lucro
+  - Determinantes do custo total não mudam (tecnologia e insumos de produção)
+    - Preços devem cobrir os custos de produção e, no longo prazo, os custos fixos
 - Empresa é definidora de preço
+  - Mas há restrição imposta pela reação dos consumidores
+    - Mudança nos preços desloca os consumidores com maior/menor propensão a pagar pelo bem, mas não todos os consumidores
+  - Em contraste com o caso competitivo, a curva de demanda que a firma enfrenta é perfeitamente elástica
 - Custo marginal não-negativo
 
 
@@ -163,12 +188,12 @@ max_{q} \Pi = [p(q)\cdot q] - [C(q)]
 Da função anterior, calcula-se a condição de primeira ordem (C.P.O):
 #+BEGIN_latex
 \begin{equation*}
-CPO = \frac{\delta \Pi}{\delta q} = 0
+CPO = \frac{\partial \Pi}{\partial q} = 0
 \end{equation*}
 #+END_latex
 #+BEGIN_latex
 \begin{equation*}
-CPO = \frac{\delta p}{\delta q}\cdot q + p - \frac{\delta C}{\delta q}
+CPO = \frac{\partial p}{\partial q}\cdot q + p - \frac{\partial C}{\partial q}
 \end{equation*}
 #+END_latex
 #+BEGIN_latex
@@ -180,7 +205,7 @@ CPO = \frac{\delta p}{\delta q}\cdot q + p - \frac{\delta C}{\delta q}
 Reescrevendo a função da receita marginal:
 #+BEGIN_latex
 \begin{equation}
-RMg(q) = \frac{\delta p}{\delta q}\cdot q + p
+RMg(q) = \frac{\partial p}{\partial q}\cdot q + p
 \end{equation}
 #+END_latex
 uma vez que estamos tratando de um bem, é preciso que:
@@ -192,7 +217,7 @@ p \geq 0 \hspace{2cm} q \geq 0
 adicionalmente, supõe-se:
 #+BEGIN_latex
 \begin{equation*}
-\frac{\delta p}{\delta q} < 0
+\frac{\partial p}{\partial q} < 0
 \end{equation*}
 #+END_latex
 
@@ -228,7 +253,7 @@ R(q) = \frac{A}{1 + q}\cdot q \hspace{2cm} RMg(q) = \left(\frac{- A}{(1 + q)^{2}
 #+END_latex
 Neste exemplo, a receita marginal é sempre não-nula
 
-#+begin_src gnuplot :results graphics file :file ../figs/2022_03_22_monopolio_exemplo_demanda_nao_linear.png
+#+begin_src gnuplot :results graphics file :file ./figs/2022_03_22_monopolio_exemplo_demanda_nao_linear.png
 reset
 
 set xrange [0:10]
@@ -248,9 +273,14 @@ Além disso, cabe pontuar que o custo médio pode ser obtido a partir da integra
 dividindo ambos os termos por $p$:
 #+BEGIN_latex
 \begin{equation}
-\frac{RMg(q)}{p} = \frac{\delta p}{\delta q}\frac{q}{p} + 1
+\frac{RMg(q)}{p} = \frac{\partial p}{\partial q}\frac{q}{p} + 1
 \end{equation}
 #+END_latex
+
+
+Uma vez que a receita marginal é menor que o preço, para ofertar uma unidade a mais, o monopólio deverar reduzir o preço.
+O elasticidade-prelo da demanda indica a sensibilidade ao qual o monopolista enfrenta.
+
 #+BEGIN_latex
 \begin{equation}
 RMg(q) = \left(1 - \frac{1}{|\varepsilon|}\right)\cdot p
@@ -284,12 +314,24 @@ p = (1 + \mu)\cdot CMg
 \end{equation}
 #+END_latex
 
+O [[denote:20250313T110213][Lerner Index]] permite expressar a ideia de marge de lucro no equilíbrio (RMg = CMg) em função da elasticidade
+
+#+begin_export latex
+\begin{align*}
+L & = \frac{p - CMg}{p} \\
+ & = 1 - \frac{CMg}{p} \\
+ & = 1 - \left(1 = \frac{1}{|\varepsilon|}\right) \\
+L & = - \frac{1}{\varepsilon}
+\end{align*}
+#+end_export
+
+
 *** Eficiência no monopólio :grafico:
 
 Em monopólio, o preço é maior que o custo marginal para o ramo da demanda elástica.
 Comparando com o caso de concorrência perfeita, haveriam trocas mutualmente vantajosas.
 
-#+begin_src gnuplot :results graphics file :file ../figs/2022-03-24-markup-monopolio.png
+#+begin_src gnuplot :results graphics file :file ./figs/2022-03-24-markup-monopolio.png
 
 
 reset
@@ -306,13 +348,13 @@ plot p(x) w lp lw 1 title "Demanda Inversa", CMg(x) w lp lw 1 title "Custo Margi
 #+end_src
 
 #+RESULTS:
-[[file:../figs/2022-03-24-markup-monopolio.png]]
+[[file:./figs/2022-03-24-markup-monopolio.png]]
 
 
 
 Essa discussão pode ser exposta em termos do excedente do consumidor e do produtor.
 
-#+begin_src gnuplot :results graphics file :file ../figs/2022-03-24-excedente-monopolio.png
+#+begin_src gnuplot :results graphics file :file ./figs/2022-03-24-excedente-monopolio.png
 
 reset
 
@@ -329,7 +371,7 @@ plot p(x) w lp lw 1 title "Demanda Inversa", CMg(x) w lp lw 1 title "Custo Margi
 #+end_src
 
 #+RESULTS:
-[[file:../figs/2022-03-24-excedente-monopolio.png]]
+[[file:./figs/2022-03-24-excedente-monopolio.png]]
 
 Em concorrência perfeita em que o preço é igual ao custo marginal, o excedente do demandante (consumidor, neste caso) seria:
 #+BEGIN_latex
@@ -506,7 +548,7 @@ CMg = c \hspace{2cm} CMe = \frac{F}{q} + c
 \end{equation}
 #+END_latex
 
-#+begin_src gnuplot :results graphics file :file ../figs/2022-03-29-exercicio-custos.png
+#+begin_src gnuplot :results graphics file :file ./figs/2022-03-29-exercicio-custos.png
 
 
 set xrange [0:10]
@@ -624,7 +666,7 @@ Substituindo:
 
 ***** Análise gráfica
 
-#+begin_src gnuplot :results graphics file :file ../figs/2022-03-31-ex_demanda_nao_linear.png
+#+begin_src gnuplot :results graphics file :file ./figs/2022-03-31-ex_demanda_nao_linear.png
 
 
 set xrange [0:100]
@@ -643,11 +685,20 @@ plot p(x) lw 3, CMg(x) lw 3, RMg(x) lw 3, C(x) lw 3, Pi(x) lw 3
 *** Discriminação de preços em monopólio
 
 Discriminação de preços refere-se a uma estratégia das empresas capturarem maior parcela do excedente.
+Os preços podem ser diferenciados por outras razões que não estrutura de custos.
 São elas:
 - Discriminação perfeita (primeiro grau) :: em que a empresa conhece as preferências dos demandates
+  - Estratégia muito difícil de ser obtida, por essa razão utilizam meios indiretos de discriminar preço
+    - Tarifas escalonadas (diferentes preços para diferentes faixas)
+      - Exemplo: água e energia
+    - Descontos por volume
 - Discriminação entre grupos (terceiro grau) :: em que a empresa consegue distinguir entre os grupos de demanda
 - Discriminação entre grupos identificáveis :: os demandantes se identificam e a empresa oferece os preços de acordo com tal identificação
 - Discriminação entre grupos não indentificáveis :: em que a empresa só consegue avaliar a quantidade (pacotes) comprada de cada bem que induzem a autoidentificação
+
+Para que o monopolista possa extrair o máximo do excedente do consumidor, deve evitar a revenda.
+Vale pontuar que a discriminação de preços sempre beneficia o produtor, mas não necessariamente lesa o consumidor.
+Alguns tipos de discriminação entre grupos (ex: meia entrada) beneficiam o consumidor.
 
 ** Monopsônio
 
@@ -796,6 +847,8 @@ Isso porque não há extração do excedente da empresa ofertante do insumo ofer
 
 Trata-se de uma espécie de monopólio sobre um mercado particular com baixas barreiras a entrada.
 A distinção entre as firmas e que garante a persistência no mercado são as características intangíveis.
+Desse modo, os consumidores são restistentes a substituírem um bem pelo outro.
+
 Enquanto houver lucro econômico não nulo (lucro anormal), haverá incentivos a entrada de outras firmas.
 No longo prazo, a curva de demanda tende a ser mais horizontal porque existem alternativas.
 Consequentemente, o lucro econômico converge a zero ou fique menor que zero (se for o caso, sairá do mercado).
