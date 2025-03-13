@@ -6,6 +6,7 @@
 #+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
 #+OPTIONS: num:nil ^:{} toc:nil
 #+PROPERTY:header-args gnuplot :results output drawer :eval never-export
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-bigblow.setup
 
 * Turma B - Camila
 
