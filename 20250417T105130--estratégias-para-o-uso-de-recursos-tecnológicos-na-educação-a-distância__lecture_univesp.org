@@ -1,0 +1,499 @@
+#+title:      Estratégias para o uso de recursos tecnológicos na Educação a Distância
+#+date:       [2025-04-17 Thu 10:51]
+#+filetags:   :lecture:univesp:
+#+identifier: 20250417T105130
+
+* Inovações tecnológicas e suas implicações na educação
+
+** Objetivos
+
+- Compreender a relação entre tecnologia e educação como um processo histórico;
+- Identificar como as inovações tecnológicas impõem à escola a necessidade de transformação.
+
+** O desafio de reinventar a escola
+
+- Desenvolvimento da huminidade:
+  - Idade da pedra (coletores)
+  - Época agrícola
+  - Era industrial
+  - Época da inforção: aquisição, análise, processamento, recriação e comunidação da informação
+- Mudanças e de época e não época de mudanças
+  - Novas atividades
+  - Novos modos de ocupação
+  - Permanência de contradições e desigualdades
+- Aparecimento de novos problemas e novas diferenças e isso se reflete no ambiente escolar: necessidade de reinventar a escola
+  - Eixo extra escolar
+    - Novos sujeitos
+      - Modos de aprender e de se relacionar com a informação
+    - Novos recursos e tecnologias
+    - Novos apelos sociais e do mercado de trabalho
+  - Eixo escolar
+    - Fracasso escolar
+    - Elitização dos bens culturais
+    - Desafio da inclusão e inserção no mundo letrado
+    - Luta por uma escola democráticas e de qualidade
+  - Formas de reinventar
+    - Revisão de concepções, conteúdos e práticas pedagógicas
+    - Apropiação tecnológica na prática educacional
+    - Princípios: saber quantitativo para o saber qualitativo
+    - Meios: tranmissão do conhecumento à construção do conhecimento
+    - Metas: do cumprimento do programa à formação do ser como capaz de se inserir na sociedade
+
+
+** Tecnologia e educação: relações históricas, locais e mundializadas
+
+    - Artigo discute a informatização na educação, analisando aspectos conceituais e filosóficos de técnica e tecnologia
+    - Aborda as contradições e relações de poder na inserção de tecnologias no ambiente educacional
+    - Destaca a influência de metas globais de poder econômico e político na educação
+    - Defende a necessidade de participação ativa dos educadores para democratizar o acesso tecnológico
+
+*** Contexto Histórico
+
+**** Evolução conceitual
+
+     - Gregos entendiam técnica/tecnologia como parte de um contexto social e ético
+     - Revolução Industrial separou técnica (processos materiais) de tecnologia (conhecimento científico reproduzível)
+
+**** Revolução Tecnológica
+
+     - Século XX marcado por avanços em 5 eixos: informática, telecomunicações, biotecnologia, energias e materiais
+     - Conhecimento torna-se principal fator de produção na sociedade contemporânea
+
+*** Tecnologia na Educação
+
+**** Implementação histórica
+
+     - Década de 1950: primeiras inserções via "pacotes de instruções metodológicas"
+     - Década de 1980: intensificação dos debates sobre riscos e aplicações
+
+**** Desafios atuais
+
+     - Disparidade no acesso e uso entre regiões (Norte/Nordeste vs Sul/Sudeste)
+     - Escolas públicas com infraestrutura precária (quadro-negro e livro didático como principais recursos)
+
+*** Perspectivas Críticas
+
+**** Democratização vs Desigualdade
+
+     - Tecnologia pode ampliar ou reduzir desigualdades sociais
+     - Relatório da ONU/98 aponta que Internet tem aumentado disparidades no Brasil
+
+**** Papel dos Educadores
+
+     - Necessidade de envolvimento ativo dos professores no processo de implementação
+     - Risco de a educação ser conduzida por interesses externos se os educadores não se engajarem
+
+** Novas Competências Docentes Frente às Tecnologias Digitais Interativas
+
+*** Introdução
+
+A disseminação das tecnologias digitais impõe desafios à prática docente, exigindo uma (re)orientação do papel do professor frente a uma nova cultura de aprendizagem.
+A formação docente precisa contemplar a criticidade no uso das TIC, superando visões instrumentalistas e deterministas.
+A resistência ao uso da tecnologia decorre, muitas vezes, de insegurança e desconhecimento.
+
+*** Tecnologia Digital Interativa: Esclarecendo Conceitos
+
+- **Tecnologia**: Não deve ser vista apenas como ferramenta, mas como conhecimento incorporado em artefatos.
+- **Digital**: Transformação cultural e tecnológica que promove novas formas de comunicação e aprendizagem.
+- **Interatividade**: Capacidade de intervenção do sujeito em ambientes mediados digitalmente. Não se confunde com "interação", pois depende da mediação por meios eletrônicos.
+- **Tecnologia Digital Interativa**: Produção humana mediada por ferramentas tecnológicas com comunicação dialógica e feedback.
+
+*** Novas Competências Docentes Frente às TIC
+
+O papel do professor muda de transmissor para facilitador da aprendizagem. As competências exigidas são:
+
+**** Competência Intercultural
+
+Atenção às diferenças culturais dos estudantes e valorização da identidade cultural.
+
+**** Competência Tecnológica
+
+Domínio de ferramentas e integração crítica das TIC no processo pedagógico.
+
+**** Competências Didáticas
+
+- Criação de materiais e tarefas significativas.
+- Planejamento de ambientes de aprendizagem autorregulados.
+- Uso de múltiplos recursos e mídias.
+
+**** Competências Tutoriais
+
+- Comunicação empática e flexível.
+- Acompanhamento do processo de aprendizagem dos alunos.
+
+**** Competência Comunicacional
+
+- Domínio da linguagem digital.
+- Capacidade de criar e adaptar mensagens multimídia ao contexto educativo.
+- Consideração da afetividade nas interações virtuais.
+
+*** Design Pedagógico e Ambientes Virtuais
+
+Para o ensino a distância, o professor deve dominar a construção de uma arquitetura pedagógica com:
+
+1. Aspectos organizacionais
+2. Conteúdo e recursos
+3. Metodologias e avaliação
+4. Ambiente virtual adequado
+
+Destacam-se três perfis docentes:
+- Tutor (EAD)
+- Designer pedagógico (em equipe)
+- Docente presencial tradicional
+
+*** Redes Sociais e Dimensão Afetiva
+
+Redes sociais devem ser incorporadas pedagogicamente, explorando o potencial de colaboração e construção coletiva.
+A afetividade é essencial, especialmente em ambientes virtuais.
+
+*** Considerações Finais
+
+A mera introdução de tecnologias não garante inovação.
+É necessário superar tanto o determinismo tecnológico quanto a visão instrumentalista.
+O uso das TIC deve ser crítico e voltado ao processo de ensino-aprendizagem, reconhecendo o papel ativo do professor na mediação pedagógica com tecnologia.
+
+
+
+* Tecnologias na Educação: o papel do professor
+
+** Objetivos
+
+- Compreender o papel do professor na utilização de tecnologias na educação;
+- Identificar como as inovações e usos da tecnologia podem ser articulados ao currículo educacional.
+
+** Da Docência Presencial à Docência Online: Aprendizagens de Professores Universitários na Educação a Distância
+
+*** Introdução
+
+Este estudo investiga como ocorre a aprendizagem docente na transição da sala de aula presencial para a online.
+O foco são professores universitários que atuavam no ensino superior presencial e passaram a ser tutores em cursos de EAD.
+A pesquisa utiliza a metodologia da história oral temática, com entrevistas semiestruturadas de cinco docentes.
+A docência online requer ressignificação de práticas, devido às especificidades do tempo, espaço e interações na sala virtual.
+O estudo aponta para a importância da formação contínua e adaptação de saberes na nova modalidade.
+
+*** Mediação Pedagógica no Ciberespaço
+
+O ciberespaço é compreendido como um novo espaço social, marcado por dinâmicas inovadoras e práticas culturais próprias.
+A interatividade e velocidade da comunicação digital impõem novos desafios à mediação pedagógica.
+As tecnologias digitais se tornam recursos didático-pedagógicos, exigindo mediação humana e sensibilidade educacional.
+A EAD promove a autonomia do estudante e novas formas de organização do tempo e espaço de aprendizagem.
+Novos papéis docentes emergem, como tutor, conteudista, formador e responsável, caracterizando a polidocência.
+
+*** Competências Docentes para a Tutoria Online
+
+**** Competência Didático-Pedagógica
+
+Exige domínio do conteúdo e das estratégias de ensino voltadas ao público adulto.
+Inclui elaboração de materiais e planejamento da mediação pedagógica.
+
+**** Competência Tecnológica
+
+Implica domínio da plataforma virtual e das ferramentas de comunicação digital.
+Permite antecipação de dificuldades e promoção da interação.
+
+**** Competência Linguística
+
+Requer habilidades de leitura e escrita para comunicação clara e afetiva.
+É essencial para orientar os alunos e preservar relações interpessoais.
+
+**** Competência Social
+
+Relaciona-se à criação de um ambiente acolhedor e interativo.
+Considera a afetividade como motor da permanência dos alunos na EAD.
+
+**** Competência Intercultural
+
+Exige sensibilidade à diversidade cultural dos estudantes.
+Considera variáveis como origem regional, idioma e vivências educacionais.
+
+**** Competência Tutorial
+
+Abrange organização do tempo, retorno aos alunos, e elaboração de feedbacks.
+Inclui gestão das atividades e desenvolvimento de rotinas adequadas à EAD.
+
+**** Competência para a Aprendizagem
+
+Supõe a capacidade de identificar dificuldades de aprendizagem dos alunos.
+Busca intervenções pedagógicas que respeitem o tempo e contexto dos cursistas.
+
+*** Metodologia
+
+A pesquisa foi realizada em uma IES privada de Minas Gerais com forte atuação na EAD.
+Selecionaram-se cinco professores com experiência prévia no ensino presencial e posterior atuação online.
+As entrevistas foram conduzidas com base na história oral temática.
+As narrativas foram transcritas, analisadas e validadas pelos próprios participantes.
+
+*** Resultados e Discussão
+
+Os docentes relataram desafios com a ausência do contato físico com os alunos.
+Relataram dificuldades na expressão de afetividade e na mediação escrita.
+A leitura e escrita dos estudantes foram usadas como base para diagnóstico pedagógico.
+A diversidade cultural dos alunos foi apontada como elemento relevante na mediação.
+A organização do trabalho e elaboração de feedback foram destacadas como centrais na prática tutorial.
+A falta de tempo institucional levou muitos professores a realizarem atividades fora do horário contratado.
+O conhecimento prévio dos materiais didáticos foi considerado essencial, embora nem sempre garantido.
+A competência tecnológica foi adquirida na prática, com apoio institucional e entre pares.
+
+*** Considerações Finais
+
+A docência online exige ressignificação dos saberes construídos no ensino presencial.
+A mediação pedagógica demanda competências múltiplas e inter-relacionadas.
+A ausência física do aluno é um desafio, que deve ser enfrentado com afetividade e planejamento.
+A docência online bem-sucedida exige domínio do conteúdo, da linguagem, das tecnologias e da organização do trabalho.
+A formação docente para EAD deve ser contínua, crítica e sensível à realidade dos alunos.
+
+** A interação como indicador de qualidade na avaliação da educação a distância: um estudo de caso com docentes, tutores e discentes
+
+
+*** Resumo
+
+- Artigo analisa a interação em cursos EaD como indicador de qualidade, com foco na formação de professores
+- Estudo de caso no curso de Biologia EaD da UFT com 107 participantes (docentes, tutores e discentes)
+- Utilizou análise documental e questionários baseados nos Referenciais de Qualidade do MEC
+- Conclusão: interação predominante é reativa (e-mails, fóruns), com necessidade de maior interação mútua
+- Crítica à subjetividade dos critérios de avaliação do MEC para interação
+
+*** Contexto e Metodologia
+
+**** Educação a Distância no Brasil
+
+- Expansão da EaD no ensino superior brasileiro
+- DCNs destacam importância das TICs na formação docente
+- Foco na interação como elemento-chave de qualidade
+
+**** Métodos
+
+- Abordagem qualitativa (estudo de caso)
+- Análise de documentos oficiais e questionários aplicados a:
+  - 11 docentes (47% de resposta)
+  - 17 tutores (53% de resposta)
+  - 79 discentes (20% de resposta)
+- Categorias analisadas: faixa etária, tempo de atuação, tipos de interação, ferramentas utilizadas
+
+*** Resultados Principais
+
+**** Perfil dos Participantes
+
+- Discentes: maioria entre 18-30 anos ("geração conectada")
+- Docentes: maioria acima de 45 anos
+- Tutores: maioria entre 31-35 anos
+
+**** Tipos de Interação
+***** Interação Reativa (predominante)
+
+- E-mail: ferramenta mais utilizada, mas com respostas demoradas
+- Fóruns: uso limitado, com pouca participação ativa
+- AVA (Moodle): alto uso, mas subutilização de recursos interativos
+
+***** Interação Mútua (limitada)
+
+- Chats e videoconferências: baixa adesão
+- Dificuldades técnicas: infraestrutura precária em polos regionais
+
+**** Avaliação das Ferramentas
+
+- Melhores avaliadas: Moodle e encontros presenciais
+- Piores avaliadas: podcasts e portfólios
+- Demandas: mais aulas práticas e atualização de materiais didáticos
+
+*** Discussão e Conclusões
+
+**** Limitações Identificadas
+
+- Instrumento de Avaliação do MEC é subjetivo (não especifica critérios claros para interação)
+- Infraestrutura deficiente em polos regionais
+- Necessidade de maior capacitação docente para mediação digital
+
+**** Recomendações
+
+- Incluir critérios objetivos de interação mútua nas avaliações do MEC
+- Investir em infraestrutura tecnológica para polos
+- Promover formação continuada em mediação pedagógica digital
+- Ampliar uso de ferramentas síncronas (videoconferências, chats)
+
+
+** O Aluno na Educação a Distância (2014) | João Mattar
+
+
+- Presencial vs. distância:
+  - Ritmo diferente da modalidade presencial
+    - Perde o referencial espacial
+  - Não tem o mesmo convívio
+- Modelo:
+  - Cursos mais estruturados
+    - Mecânico e repetitivo
+    - Forma de orientação
+  - Material liberado de uma vez
+  - Formato iterativos
+    - Participar de fórums
+    - Desenvolver projetos
+- Tempo
+  - Requer mais organização dos próprios alunos
+    - Isso fica mais evidente com maior grau de assincronia
+
+* Estilos de aprendizagem e uso de diferentes mídias
+
+** Objetivos
+
+- Diferenciar e refletir sobre os estilos de aprendizagem no contexto da EAD;
+- Identificar como explorar e adequar mídias e recursos educacionais de acordo com os estilos de aprendizagem em um curso EaD.
+
+** Estilos de aprendizagem e educação a distância: perspectivas e contribuições
+
+*** Resumo
+
+Artigo explora a relação entre estilos de aprendizagem e EaD mediada por computador
+
+- Objetivo: discutir como as TICs podem potencializar diferentes dinâmicas de trabalho na EaD
+  - Foco no desenvolvimento de habilidades adaptativas para aprendizes
+- Conclusão: combinação entre estilos de aprendizagem e ferramentas tecnológicas amplia possibilidades educacionais
+
+*** Fundamentação Teórica
+
+**** Estilos de Aprendizagem (Principais Modelos)
+
+- Felder & Silverman (1987):
+  - Sensoriais (concretos) x Intuitivos (teóricos)
+  - Visuais (imagens) x Verbais (palavras)
+  - Ativos (experiência) x Reflexivos (internalização)
+  - Sequenciais (linear) x Globais ("insights")
+
+- Myers-Briggs (MBTI) - 16 tipos psicológicos:
+  - Extrovertidos x Introvertidos
+  - Sensoriais x Intuitivos
+  - Pensadores x Emocionais
+  - Julgadores x Perceptivos
+
+Kolb (1984) - 4 tipos:
+
+- Divergentes ("Por quê?")
+- Assimiladores ("O quê?")
+- Convergentes ("Como?")
+- Acomodadores ("E se?")
+
+**** Educação a Distância
+
+Definições: sistema flexível com separação física professor-aluno
+
+- Gerações históricas:
+  - 1ª (séc. XIX): material impresso + correio
+  - 2ª (1960s): rádio + TV educativa
+  - 3ª (1990s): redes telemáticas + internet
+- No Brasil: desde 1939 (cursos profissionalizantes)
+
+
+*** Metodologia
+
+- Abordagem teórico-conceitual
+- Revisão de modelos de estilos de aprendizagem
+- Análise de ferramentas TIC aplicáveis à EaD
+
+*** Resultados e Discussão
+
+**** Papel das TICs na EaD
+
+- Ferramentas analisadas:
+  - Assíncronas: e-mail, fóruns, materiais digitais
+  - Síncronas: chats, videoconferências
+- Benefícios:
+  - Flexibilidade temporal/espacial
+  - Personalização do aprendizado
+  - Desenvolvimento de habilidades do século XXI
+
+**** Relação com Estilos de Aprendizagem
+
+- Exemplos de adequação:
+  - Visuais: infográficos, videoaulas
+  - Ativos: simulações interativas
+  - Sequenciais: módulos com progressão linear
+  - Globais: mapas conceituais hiperlinkados
+- Desafios:
+  - Necessidade de design instrucional multifacetado
+  - Capacitação docente para mediação tecnológica
+
+*** Considerações Finais
+
+- EaD mediada por computador favorece desenvolvimento de múltiplas habilidades
+- Sistemas multimídia podem atender diversos estilos simultaneamente
+- Questões em aberto:
+  - Perfil dos alunos de EaD (nativos vs. imigrantes digitais)
+  - Eficácia comparativa entre modalidades
+  - Estratégias para desenvolvimento de habilidades específicas
+
+
+** As Mídias na Educação
+
+*** As mídias educam
+
+Estamos deslumbrados com o computador e a Internet e esquecemos o papel relevante da TV e do vídeo.
+A televisão educa de forma contínua e sedutora, influenciando crianças, jovens e adultos.
+Ela transmite informações, valores e modelos de comportamento.
+A escola, em contraste, costuma ser abstrata e cansativa.
+O discurso escolar muitas vezes é desorganizado e ineficaz diante da força dos meios de comunicação.
+Os meios de comunicação são competentes, constantes e reconhecidos interlocutores sociais.
+Eles influenciam profundamente a forma como crianças e jovens percebem o mundo.
+A escola precisa integrar e discutir os conteúdos midiáticos.
+A imagem, o jogo e o concreto devem ser valorizados junto ao abstrato e ao lógico.
+A educação deve equilibrar mídias e técnicas tradicionais.
+
+*** Integração das mídias à educação
+
+Devemos estabelecer pontes entre educadores e meios de comunicação.
+Educar os educadores para compreender os códigos e mensagens da mídia.
+A relação entre mídia e escola deve ser pensada em três níveis.
+
+- Nível organizacional: Uma escola participativa, menos autoritária, mais adaptada ao indivíduo. Comparar discurso e prática é essencial.
+- Nível de conteúdo: Trazer os temas da vida real para dentro da escola. Abordar os problemas reais dos jovens e do cotidiano.
+- Nível comunicacional: Incorporar linguagens audiovisuais e técnicas contemporâneas. Valorizar múltiplas formas de expressão e comunicação.
+
+*** Contribuições das tecnologias
+
+Tecnologias facilitam a transmissão da informação.
+Mas apenas o professor pode ajudar na interpretação e contextualização dos dados.
+As tecnologias desenvolvem habilidades sinestésicas e criadoras.
+O professor é quem adapta as tecnologias às situações de aprendizagem.
+As tecnologias representam diferentes formas de conhecer a realidade.
+Permitem integrar razão e emoção, dedução e indução, espaço e tempo.
+A educação deve formar consciência crítica.
+Isso se dá por meio da problematização da informação e da síntese reflexiva.
+A educação para a comunicação busca novas formas de expressão e de relações sociais.
+Deve ocorrer na família, escola e comunidade.
+
+*** Motivação e novas linguagens
+
+A escola deve adotar formatos atuais e envolventes.
+Trabalhos como entrevistas, vídeos, programas de rádio motivam os alunos.
+Usar códigos próximos da sensibilidade dos estudantes amplia o envolvimento.
+Mesmo a escrita pode ganhar novas dimensões com o uso do computador.
+
+*** O papel da família e da mídia
+
+Antes da escola, a criança já passou por processos educativos no lar e pela mídia.
+A televisão educa de forma emocional, sensorial e prazerosa.
+Mesmo na idade escolar, a mídia continua sendo uma influência central.
+A escola deve compreender e incorporar essas novas linguagens.
+
+*** Educação para os meios
+
+Deve começar já na alfabetização.
+É preciso ensinar os códigos da linguagem audiovisual desde cedo.
+As crianças chegam à escola com habilidades complexas ignoradas pelo currículo.
+A imagem deve ser parte central da aprendizagem, não apenas suporte.
+A escola deve valorizar os produtos culturais que as crianças já conhecem.
+Releituras, recriações e apropriações dos conteúdos midiáticos são estratégias eficazes.
+É importante manter a dimensão lúdica da mídia.
+A escola deve aprender a dialogar com o que as crianças valorizam.
+A partir disso, pode propor interações mais profundas e críticas com os conteúdos midiáticos.
+
+
+
+
+* Teoria Cognitiva da Aprendizagem Multimídia
+
+* Tecnologias para desenvolvimento de conteúdos didáticos
+
+* Objetos digitais de aprendizagem I
+
+* Objetos digitais de aprendizagem II
+
+* Recursos Educacionais Abertos

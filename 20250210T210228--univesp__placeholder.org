@@ -3,7 +3,9 @@
 #+filetags:   :placeholder:
 #+identifier: 20250210T210228
 
-* Quinzena 0: <2025-02-10 seg>
+* PJI450
+
+** Quinzena 0: <2025-02-10 seg>
 
 - Planilha de alocação
 - Localizar os grupos
@@ -29,20 +31,20 @@
     - Pergunta sobre bolsa
 
 #+caption: Localização dos grupos
-|---------+----------------------------------------------------------+--------------------------------+-------------+------------------------|
-|---------+----------------------------------------------------------+--------------------------------+-------------+------------------------|
-| Matéria |                           Link                           |              DRP               | Facilitador |       Supervisor       |
-|  <c10>  |                          <c20>                           |             <c32>            |    <c10>   |         <c10>          |
-|---------+----------------------------------------------------------+--------------------------------+-------------+------------------------|
-| PJI450  | https://ava.univesp.br/ultra/courses/_14087_1/cl/outline | DRP05-PJI450-SALA-001GRUPO-015 | 23228537@cursos.univesp.br            | magna.rocha@univesp.br |
-| PJI450  | https://ava.univesp.br/ultra/courses/_14087_1/cl/outline | DRP05-PJI450-SALA-001GRUPO-016 | 23228537@cursos.univesp.br            | magna.rocha@univesp.br |
-| PJI450  | https://ava.univesp.br/ultra/courses/_14087_1/cl/outline | DRP05-PJI450-SALA-001GRUPO-017 | 23228537@cursos.univesp.br            | magna.rocha@univesp.br |
-| PJI450  | https://ava.univesp.br/ultra/courses/_14087_1/cl/outline | DRP05-PJI450-SALA-001GRUPO-018 | 23228537@cursos.univesp.br            | magna.rocha@univesp.br |
-| PJI450  | https://ava.univesp.br/ultra/courses/_14087_1/cl/outline | DRP05-PJI450-SALA-001GRUPO-019 | 23228537@cursos.univesp.br            | magna.rocha@univesp.br |
-|---------+----------------------------------------------------------+--------------------------------+-------------+------------------------|
-|---------+----------------------------------------------------------+--------------------------------+-------------+------------------------|
+|---------+----------------------------------------------------------+--------------------------------+----------------------------+------------------------|
+|---------+----------------------------------------------------------+--------------------------------+----------------------------+------------------------|
+| Matéria |                           Link                           |              DRP               |        Facilitador         |       Supervisor       |
+|  <c10>  |                          <c20>                           |             <c32>              |           <c10>            |         <c10>          |
+|---------+----------------------------------------------------------+--------------------------------+----------------------------+------------------------|
+| PJI450  | https://ava.univesp.br/ultra/courses/_14087_1/cl/outline | DRP05-PJI450-SALA-001GRUPO-015 | 23228537@cursos.univesp.br | magna.rocha@univesp.br |
+| PJI450  | https://ava.univesp.br/ultra/courses/_14087_1/cl/outline | DRP05-PJI450-SALA-001GRUPO-016 | 23228537@cursos.univesp.br | magna.rocha@univesp.br |
+| PJI450  | https://ava.univesp.br/ultra/courses/_14087_1/cl/outline | DRP05-PJI450-SALA-001GRUPO-017 | 23228537@cursos.univesp.br | magna.rocha@univesp.br |
+| PJI450  | https://ava.univesp.br/ultra/courses/_14087_1/cl/outline | DRP05-PJI450-SALA-001GRUPO-018 | 23228537@cursos.univesp.br | magna.rocha@univesp.br |
+| PJI450  | https://ava.univesp.br/ultra/courses/_14087_1/cl/outline | DRP05-PJI450-SALA-001GRUPO-019 | 23228537@cursos.univesp.br | magna.rocha@univesp.br |
+|---------+----------------------------------------------------------+--------------------------------+----------------------------+------------------------|
+|---------+----------------------------------------------------------+--------------------------------+----------------------------+------------------------|
 
-** Criação de forúms dos grupos
+*** Criação de forúms dos grupos
 
 - Ferramenta do grupo, então precisa ser criado na sala do grupo
 - Preencher apenas título do fórum e deixar a descrição em branco
@@ -58,7 +60,7 @@
 - É possível fazer uma inscrição no forúm para receber e-mails sempre que algum aluno responde
 
 
-** Inter-quinzena
+*** Inter-quinzena
 
 - Visita ao AVA
   - Calendário do PI
@@ -110,9 +112,9 @@
       - Preferência para a noite
       - 19h-20h
 
-* Quinzena 1
+** Quinzena 1
 
-** Grupo 015 (<2025-02-20 qui>)
+*** Grupo 015 (<2025-02-20 qui>)
 
 - Iniciar gravação
 - Registrar presentes
@@ -141,7 +143,7 @@
   - Autoavaliação: fiz uma reunião com pouca estruturada
 
 
-** Grupo 016 (<2025-02-20 qui>)
+*** Grupo 016 (<2025-02-20 qui>)
 
 O PI tem como tema a educação infantil, especificamente, o brincar na construção socioafetiva da criança.
 A proposta é que o grupo construa um brinquedo com material de baixo custo e, a partir dele, desenvolva e aplique um plano de aula que contextualize o seu uso.
@@ -181,7 +183,7 @@ Espera-se que a construção se dê em conjunto com o professor de uma turma da 
 
 
 
-** Grupo 017 (<2025-02-21 sex>)
+*** Grupo 017 (<2025-02-21 sex>)
 
 O PI tem como tema a educação infantil, especificamente, o brincar na construção socioafetiva da criança.
 A proposta é que o grupo construa um brinquedo com material de baixo custo e, a partir dele, desenvolva e aplique um plano de aula que contextualize o seu uso.
@@ -210,7 +212,7 @@ Espera-se que a construção se dê em conjunto com o professor de uma turma da 
   - Alguns integrantes não responderam
     - Juliane e Larissa
 
-** Grupo 018 (<2025-02-21 sex>)
+*** Grupo 018 (<2025-02-21 sex>)
 
 O PI tem como tema a educação infantil, especificamente, o brincar na construção socioafetiva da criança.
 A proposta é que o grupo construa um brinquedo com material de baixo custo e, a partir dele, desenvolva e aplique um plano de aula que contextualize o seu uso.
@@ -230,7 +232,7 @@ OBS: Ninguém compareceu.
 - Horários para as próximas quinzenas
 - Observações
 
-** Grupo 019 (<2025-02-21 sex>)
+*** Grupo 019 (<2025-02-21 sex>)
 
 O PI tem como tema a educação infantil, especificamente, o brincar na construção socioafetiva da criança.
 A proposta é que o grupo construa um brinquedo com material de baixo custo e, a partir dele, desenvolva e aplique um plano de aula que contextualize o seu uso.
@@ -250,16 +252,16 @@ OBS: Ninguém compareceu
 - Horários para as próximas quinzenas
 - Observações
 
-* Quinzena 2
+** Quinzena 2
 
-** Conteúdo
+*** Conteúdo
 
-*** Tópicos abordados
+**** Tópicos abordados
 
 - Importância da afetividade na formação do sujeito
   - Como docente pode ajudar na construção de laços afetivos
 
-*** Objetivos
+**** Objetivos
 
 - Interagir com a comunidade externa
   - Coletar os dados necessários para a definição do tema e do problema do PI
@@ -278,7 +280,7 @@ OBS: Ninguém compareceu
     - Adequação da norma da língua portuguesa
 
 
-*** Avaliação do projeto integrador
+**** Avaliação do projeto integrador
 
 - Metodologias ativas de aprendizagem:
   - Design Thinking
@@ -306,7 +308,7 @@ OBS: Ninguém compareceu
   - OBS: Relatório final só será corrigido se houver entrega do vídeo (10%)
 - Autoavaliação (15%)
 
-*** Desenvolvimento afetivo
+**** Desenvolvimento afetivo
 
 - **Afetividade e Inteligência**: Segundo Piaget, inteligência e afetividade são indissociáveis e fundamentais para a conduta humana.
   - Inteligência e afetividade fazem parte da conduta
@@ -326,7 +328,7 @@ OBS: Ninguém compareceu
   - Desenvolvimento do pensamento formal e conexão da afetividade a ideais abstratos.
 - **Piaget e o Método Científico**: Piaget baseia suas teorias em observações empíricas e enfatiza a necessidade de mais pesquisas sobre a afetividade para aprofundar sua compreensão.
 
-*** O lúdico e a afetividade na educação infantil didáticos para o ensino: a prática docente e o planejamento didático
+**** O lúdico e a afetividade na educação infantil didáticos para o ensino: a prática docente e o planejamento didático
 
 - Importância da Afetividade: A afetividade desempenha um papel essencial na formação do sujeito e na mediação docente, promovendo um ambiente propício ao aprendizado.
   - Piaget destaca a harmonia entre racionalidade e emoção
@@ -343,27 +345,27 @@ OBS: Ninguém compareceu
     - Exploração sem a rigidez da estruturação
   - O incentivo ao uso de fantasias e à confecção de brinquedos favorece a imaginação e o aprendizado espontâneo.
 
-***  O lúdico e a afetividade na educação infantil: Keite Melo
+**** O lúdico e a afetividade na educação infantil: Keite Melo
 
 A afetividade e a ludicidade são pilares fundamentais para o desenvolvimento integral da criança na educação infantil.
 
 O envolvimento pessoal e emocional do docente é crucial para a constituição de vínculos afetivos e para o sucesso do processo educativo.
 
-**** A Afetividade na Formação do Sujeito
+***** A Afetividade na Formação do Sujeito
 
 - Historicamente, a educação priorizou a racionalidade em detrimento das emoções.
 - Autores como Vygotsky, Wallon, Piaget e Freire destacam a importância das emoções no desenvolvimento humano.
 - A teoria de Wallon coloca a afetividade como central na constituição do sujeito, integrando corpo, razão e emoção.
 - A afetividade está diretamente relacionada à aprendizagem, sendo essencial para o sucesso educativo.
 
-**** Afetividade e Ludicidade – Diálogo para Educação Infantil
+***** Afetividade e Ludicidade – Diálogo para Educação Infantil
 
 - A ludicidade, associada a jogos e brincadeiras, é fundamental para o desenvolvimento infantil.
 - Para Leontiev, o brincar é a atividade principal da criança, promovendo mudanças psicológicas e sociais.
 - Johan Huizinga e Walter Benjamin destacam a importância do jogo e da brincadeira no desenvolvimento cultural, emocional e cognitivo.
 - A ludicidade e a afetividade estão inter-relacionadas, sendo essenciais para a educação infantil.
 
-**** Intervenções Docentes para Constituição da Afetividade Junto aos Alunos
+***** Intervenções Docentes para Constituição da Afetividade Junto aos Alunos
 
 Estratégias para promover a afetividade e a ludicidade incluem:
 
@@ -393,9 +395,9 @@ Estratégias para promover a afetividade e a ludicidade incluem:
 
 
 
-*** Delimitação do tema e o desenho do problema
+**** Delimitação do tema e o desenho do problema
 
-**** Definição do problema
+***** Definição do problema
 
 - Hipóteses:
   - Realizada e visita /in loco/
@@ -419,7 +421,7 @@ Estratégias para promover a afetividade e a ludicidade incluem:
     - Possível de ser resolvido?
       - Condições de resolver dado prazo e estrutura?
 
-**** Organização de dados
+***** Organização de dados
 
 - Mapa da empatia
   - Identificação do sujeito da ação
@@ -428,7 +430,7 @@ Estratégias para promover a afetividade e a ludicidade incluem:
 - Organização qualitativa em termos de categorias (tabulação)
 - Mapa conceitual
 
-** Reunião geral
+*** Reunião geral
 
 - Criar fórum sobre quinzena 02 de preferência até dia <2025-02-28 sex>
 - Participação nas lives é desejável, mas não obrigatório
@@ -454,9 +456,9 @@ Estratégias para promover a afetividade e a ludicidade incluem:
 - O levantamento bibliográfico é responsabilidade dos estudantes. O orientador pode mostrar como fazer.
   - Kishimoto, Piaget, Bruner, Vygotsky auxiliam da compreensão do brincar.
 
-** Pauta
+*** Pauta
 
-*** Tópicos
+**** Tópicos
 
 - Ler a rúbrica de correção do plano de ação
 - Tirar dúvidas sobre o plano de ação
@@ -474,7 +476,7 @@ Estratégias para promover a afetividade e a ludicidade incluem:
   - Reforçar aos professores, coordenadores e diretor que o projeto precisará ser colocado em prática (em Abril)
   - Sugerir que os alunos apliquem um questionário para ajudar a definir o público alvo e definir o problema que será abordado;
 
-*** Checks
+**** Checks
 
 - Integração entre os membros do grupo?
 - Acompanhamento do material da segunda quinzena?
@@ -489,7 +491,7 @@ Estratégias para promover a afetividade e a ludicidade incluem:
   - Identificação de como as tarefas serão divididas?
   - Identificação do local de atuação?
 
-** Grupo 015 <2025-03-05 Wed>
+*** Grupo 015 <2025-03-05 Wed>
 
 - Participantes
   - Deisiana
@@ -504,7 +506,7 @@ Estratégias para promover a afetividade e a ludicidade incluem:
   - Inconsistências durante a reunião
 
 
-** Grupo 016
+*** Grupo 016
 
 - Presentes
   - Iasmin
@@ -520,7 +522,7 @@ Estratégias para promover a afetividade e a ludicidade incluem:
 - Os integrantes do grupo estão em contato
   - Maior parte do grupo veio do PI anterior
 
-** Grupo 017
+*** Grupo 017
 
 - Presentes
   - Ana Lúcia
@@ -533,7 +535,7 @@ Estratégias para promover a afetividade e a ludicidade incluem:
 - Definiram quem irá atuar
 - Pediram um parecer sobre o plano de ação antes da entrega oficial
 
-** Grupo 018 <2025-03-07 Fri>
+*** Grupo 018 <2025-03-07 Fri>
 
 - Integração entre os membros do grupo?
   - Grupo me relatou estar bem integrado
@@ -548,9 +550,9 @@ Estratégias para promover a afetividade e a ludicidade incluem:
 - Avaliado se o problema é factível de ser resolvido?
   - Considerando prazos e estrutura da instituição?
 
-** Grupo 019 <2025-03-07 Fri>
+*** Grupo 019 <2025-03-07 Fri>
 
-*** Quinzena 01 (Reunião Bonus)
+**** Quinzena 01 (Reunião Bonus)
 
 
 O PI tem como tema a educação infantil, especificamente, o brincar na construção socioafetiva da criança.
@@ -571,7 +573,7 @@ Espera-se que a construção se dê em conjunto com o professor de uma turma da 
     - Ênfase em questões sociais
 
 
-*** Quinzena 02
+**** Quinzena 02
 
 
 - Integração entre os membros do grupo?
@@ -600,18 +602,560 @@ Espera-se que a construção se dê em conjunto com o professor de uma turma da 
   - Vídeo de demostração gravado
 
 
-** Inter-quinzena
+*** Inter-quinzena
 
 Correção:
 - Zerar nomes que não aparecem na entrega
 - Existe um campo para comentário interno que não é compartilhado com os alunos
 - Não ficou claro onde está localizado o campo de comentário para ser compartilhado aos alunos
 
-* Quinzena 3
-* Quinzena 4
-* Quinzena 5
-* Quinzena 6
-* Quinzena 7
+** Quinzena 3
+
+*** Conteúdo
+
+**** Objetivos
+
+- Definir o título do trabalho
+- Fazer o levantamento bibliográfico
+- Refinamento de ideia
+- Desenvolvimento da solução
+
+**** Percurso histórico do brincar
+
+É uma constituição histórica
+- Brincar como imitação das atividades adultas
+- Crianças vistas como pequenos adultos e associadas à religião
+- A partir do renascimento, houve um maior foco ao desenvolvimento ao pensamento lógico
+  - Restrito às classes mais abastadas
+- Na revolução industrial, houve a produção em massa de brinquedos, mas dedicados ao um público menor
+- Na idade moderna passam a ser construídos brinquedos com intuitos pedagógicos
+- Na idade contemporânea, há o reconhecimento do brincar como inerente à infância
+  - Brinquedos industrializados se sobrepõem aos artesanais
+    - Brinquedo industrial é padronizado, os artesanais permitem que a criança possa ter uma maior interação e personalização
+  - Mais recentemente, existem mais atividades digitais que implicam excesso de dela
+    - Associado à mobilidade e à conexão contínua
+
+**** Design Thinking: Ideação
+
+- Brainstorming
+- Workshop de cocriação
+- Cardápio de ideias
+- Matriz de posicionamento
+*** Reuniões
+
+**** Reunião de Equipe
+
+**** Grupo 015
+
+Este grupo relatou algumas dificuldades na elaboração do plano de ação:
+- Indicou a falta de um suporte imediato
+  - Provavelmente sugerindo que eu participasse de algum grupo informal (não institucional)
+- Também pontuaram a falta de instrução em algumas situações
+  - Em especial, pouca clareza
+- Relataram que a diretora não tinha acesso ao PPP, adiando o início da atividade
+
+**** Grupo 016
+
+
+O grupo continuou avançando na elaboração do PI, incluindo:
+- Levantamento bibliográfico a partir do conteúdo disponível no AVA. Em especial, fundamento da educação II
+
+O grupo teve dificuldade em se reunir com a escola por falta de organização do próprio grupo:
+- Isso fez com que alterassem a escola que irão atuar assim como o tema do PI
+  - Irão trabalhar sobre mordidas na primeira infância por meio de quebra-cabeça de emoções
+    - A boa notícia é que este problema foi relatado pela própria diretora da creche, tornando o PI menos genérico e coerente ao design thinking
+  - A avaliação do plano de ação levou essas informações em consideração, mas penalizou o grupo com menos um ponto em virtude da falta de organização
+
+
+**** Grupo 017
+
+- Definição do título: Título no plano de ação estava bem desenvolvido
+- Levantamento bibliográfico:
+  - Vão começar a fazer o levantamento bibliográfico após a prova
+- Refinamento da ideia:
+  - Refinando junto com o levantamento bibliográfico
+- Desenvolvimento da solução:
+  - Alunos que estão mais próximos da escola começaram a fazer o brinquedo
+
+**** Grupo 018
+
+
+- Definição do título:
+  - Em andamento
+- Desenvolvimento da solução:
+  - Irão desenvolver um boliche de emoções
+    - Em reunião discutimos quais problemas podem ser resolvidos a partir do brinquedo proposto
+      - De modo geral, o grupo não pareceu ter nenhum problema em mente
+        - O foco dos desenvolvimentos foi centrado inteiramente no desenvolvimento do brinquedo
+    - O boliche está associado à discussão das emoções para gerar maior engajamento das crianças
+      - Foi relatado que os alunos tem uma relação forte com o filme "Divertidamente"
+- Refinamento da ideia:
+  - A partir de discussões com o grupo, foram evidenciados os seguintes problemas que podem estar relacionado com a atividade
+    - Compreensão dos sentimento de perder/ganhar um jogo
+    - Desenvolvimento de habilidades motoras
+    - Trabalhar paciência dos alunos
+      - Este Provavelmente será o caminho a ser desenvolvido
+        - Também se relaciona com o problema de exposição do tempo de tela
+          - Que também pode causar maior ansiedade, gerando um ciclo vicioso
+    - Vale pontuar que a escola tem o hábito de desenvolver atividade com a comunidade externa (pais) e os integrantes do grupo pretendem incluir isso no PI
+      - Alunos levarão os brinquedos para casa
+      - Desenvolverão uma ficha de protótipo de como brincar com os filhos
+      - Por consequência, reduz o tempo de tela fora da escola também
+- Levantamento bibliográfico:
+  - Levantamento bibliográfico em função do refinamento do tema
+
+**** Grupo 019
+
+O grupo continuou avançando na elaboração do PI, incluindo:
+- Criação do plano de aula
+- Levantamento bibliográfico a partir das sugestões do DEISA (?) e nos materiais existentes no AVA
+
+Em reunião, foram levantadas as seguintes questões:
+- Como assegurar que a criança vai participar da elaboração do brinquedo?
+  - Customização?
+- Como lidar com situações em que existem um número ímpar de alunos?
+  - R: Um dos professores aplicadores irão formar dupla com este aluno
+  - Como lidar com uma possível situação em que o aluno com autisto é isolado/se isola?
+
+** Quinzena 4
+
+
+*** Conteúdo
+
+
+**** Objetivos
+
+- Apresentar solução inicial
+  - Tema central do projeto
+  - Problema que querem solucionar
+  - Literatura: Conceitos principais que embasam o problema
+- Estruturar e entregar projeto parcial
+
+
+**** Cuidar, educar, brincar
+
+O vídeo indica outros momentos da vida (banho, refeições, etc) da criança que são importantes para o aprendizado.
+Representa a união entre o cuidar e o educar.
+O mesmo vale para o brincar.
+Em cada faixa-etária, as crinças podem aprender diferentes coisas por meio do brincas:
+- 0-2: aprendizado sobre a sensoriedade e habilidades motoras
+- 2-3: Imitação de outras pessoas, sem assumir papeis.
+- 3: Assumir papeis a partir do aprendizado da imitação (faz de conta)
+
+**** O brincar e o desenvolvimento integral da criança
+
+- Objetivos: Compreender a importância do brincar para a formação dos alunos e conquistar a socialização e o desenvolvimento psicossocial
+  - Brincar não é entretenimento, mas trabalhar as linguagens da vida em sociedade
+  - Brincar implica um domínio da linguagem simbólica e reconhecer o não-brincar
+    - Atribuindo novos significados à realidade
+  - Amplia diferentes linguagens
+  - Oportuniza inclusão
+
+**** O movimento do corpo infantil: uma linguagem da criança
+
+
+- A criança que dá sentido e significado ao brincado
+  - O professor apenas instiga e oferece os brinquedos
+- Movimento como forma da criança explorar o mundo
+- Escolarização se inicia no ensino fundamental, enquanto o ensino infantil trabalha os pilares que irão dar suporte à escolarização
+
+**** Protótipos
+
+- Utilizados na fase de desenvolvimento do conceito para gerar mais ideias
+  - Pensar em forma como alguém pode interagir com o conceito
+- Concretiza a ideia do grupo
+- Releva questões que a equipe deve responder
+- Comunicação externa sobre o conceito
+
+
+
+**** Post sobre quinzena
+
+
+Boa tarde pessoal, tudo bem?
+ 
+Iniciamos a Quinzena 4, cujos objetivos são:
+- Ampliar o conhecimento sobre a temática do PI e ter clareza sobre o que se espera como resultado dele.
+- Construir a solução inicial, coletar sugestões com a comunidade externa e escrever o relatório parcial.
+- Entregar Relatório Parcial  até 08/04, com carência até 13/04.
+
+
+Até o dia 08/04 vocês deverão postar a entrega de Relatório Parcial. Para evitar problemas, leia atentamente as orientações abaixo:
+1. o AVA ainda ficará aberto para postagens durante o período de carência (entre os dias 09/04 e 13/04), usem esse prazo adicional apenas no caso de imprevistos;
+2. apenas um integrante do grupo deve fazer a postagem dos trabalhos, pelo ícone "Entregas" na aba lateral da página da disciplina ou pela link das "Atribuições do grupo" na página do grupo;
+3. todos os trabalhos devem estar no formato PDF seguindo os modelos disponibilizados pela Univesp na Documentação do PI em "Modelos de Documentos";
+4. os alunos possuem no total três tentativas de postagem, mas não são obrigados a usar todas as tentativas;
+5. após o envio das três tentativas o sistema fecha e não é possível enviar novo arquivo (mesmo que o último envio seja feito antes do encerramento do prazo final);
+6. apenas uma tentativa do grupo será corrigida;
+7. apenas o trabalho desenvolvido de forma colaborativa e com acompanhamento do orientador será avaliado;
+8. ao concluir a entrega, se certifiquem que o arquivo foi enviado! Isso pode ser feito observando o seguinte
+   1. uma mensagem deve aparecer em rosa no topo da página assim que o aluno faz o envio do trabalho”
+   2. plataforma envia uma mensagem para o e-mail institucional Outlook do aluno que fez o envio, com a mensagem “seu trabalho foi recebido” e um número de protocolo (guardar esse número email!)."
+
+Além disso, gostaria de reforçar duas coisas:
+1. É importante vocês "testarem" o protótipo (brinquedo) para incluir um relato sobre isso no Relatório Parcial (na seção “2.5 Resultados preliminares: solução inicial”);
+2. Necessidade de anexar na entrega do Relatório parcial, o *Termo de Consentimento Livre e Esclarecido* e *Autorização do Uso de Imagem*.
+
+
+Para realizar esta entrega, os seguintes items devem estar bastante claros para o grupo:
+
+✅ Tema central do projeto
+✅ Problema que querem solucionar
+✅ Revisão da Literatura: Conceitos principais que embasam o problema
+
+Em nossa reunião, vamos discutir a estrutura do relatório parcial e as rúbricas de avaliação.
+Aqui vai o link para nossa reunião: LINK
+
+Conto com a presença de vocês!
+
+Qualquer dúvida, escrevam aqui nesta linha de discussão.
+
+
+Abs,
+
+Gabriel
+
+
+
+
+*** Reunião com coordenação
+
+- Materiais das quinzenas costumam ser suficientes
+- Mencionar data de entrega do relatório na postagem
+- Ver modelo postado
+- Grupos que não conseguiram autorizações, devem anexar no relatório parcial
+  - Se não houve essa entrega, deve ser descontado ao menos meio ponto
+- Esperando a supervisora responder sobre cidade ou DRP
+
+**** Reunião de dúvidas
+
+- Ver se a rubrica do relatório parcial está correta ou se está associado ao relatório final
+- Os alunos estão no começo da graduação e terão outros PIs até o fim da graduação
+
+*** Grupos
+
+**** Grupo 015
+
+Vamos retomar o que fizemos até aqui e checar se existem quaisquer lacunas:
+
+- Qual é o tema central do projeto?
+- Qual é o problema que querem solucionar?
+- Revisão da Literatura: Conceitos principais que embasam o problema
+- Apresentar solução inicial e estruturar o reletório parcial
+
+OBS: O grupo ainda não fez a reunião com a escola e não tem o tema definido
+- Aparentmente tiveram algum problema em se reunirem com a professora
+  - Isso emperra todas as etapas seguintes do projeto
+- Apenas uma aluna compareceu (Deisiana)
+
+**** Grupo 016
+
+Memo: Irão trabalhar sobre mordidas na primeira infância por meio de quebra-cabeça de emoções
+
+Vamos retomar o que fizemos até aqui e checar se existem quaisquer lacunas:
+
+- Qual é o tema central do projeto?
+- Qual é o problema que querem solucionar?
+- Revisão da Literatura: Conceitos principais que embasam o problema
+- Apresentar solução inicial e estruturar o reletório parcial
+
+OBS: Grupo muito pouco participativo
+- Membro mais ativo do grupo não esteve presente hoje e isso pode explicar a pouca interação
+- Não me responderam nenhuma das perguntas que fiz durante a reunião
+
+**** Grupo 017
+
+Memo: Pescaria dos sentimentos
+
+Vamos retomar o que fizemos até aqui e checar se existem quaisquer lacunas:
+
+- Qual é o tema central do projeto?
+- Qual é o problema que querem solucionar?
+- Revisão da Literatura: Conceitos principais que embasam o problema
+- Apresentar solução inicial e estruturar o reletório parcial
+
+OBS: Ninguém compareceu.
+
+**** TODO Grupo 018
+
+Memo: Boliche de emoções
+
+Vamos retomar o que fizemos até aqui e checar se existem quaisquer lacunas:
+
+- Qual é o tema central do projeto?
+- Qual é o problema que querem solucionar?
+- Revisão da Literatura: Conceitos principais que embasam o problema
+- Apresentar solução inicial e estruturar o reletório parcial
+
+OBS:
+- O grupo talvez tenha dificuldade em conseguir todas as autorizações a tempo em virtude da transferência de uma das participantes que trabalha na escola que irão atuar
+  - Perguntar Magda
+- De modo geral, as ideias do trabalho estão bem articuladas
+- O ponto mais frágil parece ser a identificação do problema por meio da interação com a escola
+  - Das interações que tive com o grupo, essa identificação pareceu ser de improviso.
+- Remarcar data da próxima reunião no google agenda e gerar novos links
+
+**** Grupo 019
+
+Vamos retomar o que fizemos até aqui e checar se existem quaisquer lacunas:
+
+- Qual é o tema central do projeto?
+- Qual é o problema que querem solucionar?
+- Revisão da Literatura: Conceitos principais que embasam o problema
+- Apresentar solução inicial e estruturar o reletório parcial
+
+-----
+
+Atualizações do grupo:
+
+- Entraram em contato com a diretora e planejam aplicar a aula no dia 25/04
+- Aprimoraram o brinquedo para dar mais ênfase ao desenvolvimento da percepção sensorial da criança e segurança
+  - Algumas partes do brinquedo serão levadas prontas (partes pequenas que podem ser engolidas)
+- Já fizeram alguns testes com o brinquedo e está funcionando
+- O grupo informou que irão trabalhar com músicas que a escola está habituada de trabalhar com os alunos
+- Memo: o grupo tinha desenvolvido um passo a passo sobre a montagem do brinquedo no plano de ação
+
+** Quinzena 5
+*** Conteúdo
+
+
+**** Objetivos: Análise dos resultados
+
+- [ ] Analisar as sugestões da comunidade externa
+  - A solução final foi realizada com base na necessidade da comunidade?
+  - É prática?
+  - É viável?
+- [ ] Atualizar plano de ação
+- [ ] Autoavaliação?
+  - Preciso refazer alguma etapa do projeto?
+  - O que mais preciso estudar?
+  - Preciso visitar novamente a escola?
+  - Já apresentei a solução para a comunidade?
+    - Quais foram as opniões da comunidade?
+- [ ] Construir solução final
+
+**** Currículo e cultura
+
+- Objetivo: refletir sobre a diversidade cultural reverberada no currículo, por meio dos conteúdos e das práticas cotidianas.
+- Currículo: não se restringe a uma lista de conhecimentos escolares, incluindo:
+  - Arquitetura escolar
+  - Tempo
+  - Organização da escola
+  - Procedimentos e concepções implícitas na linguagem e na abordagem
+- Cultura: lente de interpretação para ler, interpretar e, assim, intervir no mundo
+  - Diferenças identitárias não são estáveis ou lineares e sem contradições
+- Currículo multicultural:
+  - Multiculturalismo conservador se restringe à tolerância de outras culturas, mas não a valorização ou inclusão das diferenças
+    - Há uma hierarquização entre as culturas
+  - Multiculturalismo crítico
+    - Representação de raça, classe e gênero como resultado de lutas sociais mais amplas sobre símbolos e significações
+    - Como expor isso em sala de aula?
+      - Comparar manchetes para inferir a intenção da mídia
+      - Atividades como juri simulado
+
+**** Brincadeiras que valorizam as diferenças identitárias na Educação Infantil
+
+- Objetivos:
+  - Exaltar as diferenças identitárias na docência da educação infantil
+    - Evitar trazer diferenças a partir de um tratamento do "exótico" e não apenas em datas comemorativas
+  - Reconhecer brinquedos e brincadeiras de diversas subculturas do país
+  - Avaliar proposições de sensibilização para a inclusão na Educação infantil por meio da ludicidade
+    - Ludicidade impulsiona o conhecimento e apropriação da interculturalidade
+    - Importante reconhecer a influência e construção socio-histórico-cultural das origens indigenas e africanas das brincadeiras brasileiras
+- Avaliação das brincadeiras
+  - Utilização de linguagem capacitista?
+  - Plano de atividade inclui todos os estudantes?
+    - Inclusão de crianças neuroatípicas e as com deficiência?
+
+**** Recebi o /feedback/ e agora?
+
+- Preciso refazer alguma etapa do projeto?
+- O que mais preciso estudar?
+- Preciso visitar novamente a escola?
+- Já apresentei a solução para a comunidade?
+  - Quais foram as opniões da comunidade?
+
+*** Reunião com coordenação
+
+- Ainda consta rúbrica de avaliação do relatório final no AVA
+- Relatar que o grupo teve dificuldade em ter acesso às autorizações por dificuldades que a escola impôs (G019)
+  - Diretora não estava, mudança de telefone da escola, etc
+  - Na minha avaliação, o grupo fez o que estava ao alcance para conseguir a autorização, mas outras coisas os prejudicaram
+- Correção dos relatórios parciais
+  - Não houve correção do AVA
+  - Inserir de nota manual
+
+*** Reunião com os grupos
+
+
+
+**** Objetivos da quinzena (para alunos)
+
+- Analisar as sugestões da comunidade externa;
+- Atualizar o plano de ação (se necessário) e fazer plano de aula;
+- Construir a solução final.
+
+**** Notas
+
+| Grupo | Intro (1) | Obj (1) | Just (1) | Teoria (2) | Method (1.5) | Solucao (1.5) | ABNT (2) | Total |
+|-------+-----------+---------+----------+------------+--------------+---------------+----------+-------|
+|   015 |      0.75 |     0.5 |      0.5 |        1.0 |         1.25 |           0.5 |        2 |   6.5 |
+|   016 |         1 |       1 |        1 |          2 |          1.5 |           1.5 |      1.0 |    9. |
+|   017 |         1 |       1 |        1 |          2 |          1.0 |           1.5 |      1.5 |    9. |
+|   018 |         1 |       1 |        1 |          2 |          1.5 |           1.5 |        2 |   10. |
+|   019 |         1 |       1 |        1 |          2 |          1.5 |           1.5 |        1 |    9. |
+#+TBLFM: $9=$2+$3+$4+$5+$6+$7+$8
+
+**** Grupo 015
+
+***** Comentários sobre o relatório parcial
+
+NOTA: muito provavelmente entre 6 e 8
+
+- IMPORTANTE: Estou levando em consideração a dificuldade que o grupo teve em ter acesso à escola
+- Design thinking: estão investigando um problema identificado via conversa com a escola. (bom)
+  - Não mencionaram as metodologias sugeridas pela Univesp em nenhum momento
+- Usaram o padrão da ABNT (bom)
+- Conseguiram autorização da escola (bom)
+- Vocês não estão relacionando o problema (alfabetização matemática) com o tema norteador do PI (desenvolvimento socioafetivo da criança)
+- A atividade em questão (Bingo) tem basicamente nenhuma modificação em relação ao tradicional e não trata de temas associados ao tema norteador do PI
+  - MEMO: tema do PI é o desenvolvimento de um brinquedo para desenvolver a socioafetividade, não é o brinquedo em si
+  - MEMO: tema do projeto não é desenvolver um brinquedo, mas trabalhar temas associados ao desenvolvimento da socioafetividade por meio de um brinquedo
+    - Brinquedo é o meio, não o fim do projeto
+- Objetivos pouco detalhados
+  - Conscientização de quem? Das crianças, dos professores? Dos membros do grupo? da Comunidade externa?
+- Vocês escreveram uma justificativa sobre o porquê um brinquedo pedagógico é importante
+  - Pouco relacionaram com o desenvolvimento socioafetivo ou com o problema em questão (alfabetização matemática)
+- Fundamentação teórica: Não relacionaram o problema com o desenvolvimento socioafetivo da criança, mas sim, o porquê a alfabetização matemática é importante.
+- De modo geral, não fizeram nenhuma modificação ao bingo tradicional. Existiria alguma outra forma que poderia auxiliar na alfabetização matemática dos alunos?
+  - Por exemplo (pensando alto): invés de terem cartelas com os número, poderiam ter cartelas com algumas operações simples (1+1) ou vice-versa. Imagino que possam existir outras adaptações que possam se encaixar na proposta do PI.
+    - Outra ideia: fazer com que as duplas se revezem;
+    - Outra ideia: "bingo humano". A cartela é desenhada no chão, cada criança tem um número. Uma criança (ou mais) sorteia os números e precisa identificar a criança com o número correspondente.
+  - Reforço, até o momento, pouco foi mencionado sobre o desenvolvimento socioafetivo da criança.
+
+Sugestões importantes para o relatório final:
+
+- Vocês precisam definir uma data para atuarem na escola
+- Relacionar melhor o problema que vão investigar (alfabetização matemática) e o tema do PI (desenvolvimento socioafetivo)
+- Pensar em alguma adaptação que permita explorar melhor o problema. Como está, vocês não desenvolveram um brinquedo/brincadeira/atividade. Estão apenas aplicando algo já existente.
+- IMPORTANTE: Não é necessário fazer algo completamente novo ou do zero, mas é importante que vocês adaptem para investigar o problema em questão.
+
+OBS: Nenhum aluno compareceu à reunião
+**** Grupo 016
+
+***** Comentários sobre o relatório parcial
+
+NOTA: muito provavelmente entre 8 e 9 (cap imposto pela exigência de anexarem as autorizações)
+
+- Não anexaram as autorizações exigidas pela Univesp
+- Resumo está bom
+- Imagino que vocês podem omitir a menção sobre a divergência entre o relatório *final* e o plano de ação. Talvez uma nota de rodapé.
+  - Não tenho uma resposta definitiva a isso
+    - Vantagem: reflete o design thinking
+    - Desvantagem: não é uma informação necessária para o projeto final
+      - Normalmente, em um trabalho acadêmico é relatado o que foi feito e as prováveis lacunas do que é proposto
+        - O que não foi feito não costuma ser muito relevante
+- Estão tratando de um problema identificado pela interação com a comunidade externa
+  - A reincidência das mordidas evidencia a importância do problema
+- Descrição do brinquedo/brincadeira/atividade está bem feita
+- Objetivos específicos estão bem claros
+- Achei que a hipótese de trabalho bem elaborada
+  - HO: mordidas são normais
+  - H1: mordidas como resultado de comportamento agressivo
+- Relação com desenvolvimento socioafetivo:
+  - Parece estar indicado de forma mais implícita/indireta
+    - Percebido a partir das diferentes etapas do desenvolvimento infantil via identificação do comportamento
+    - Seria bom ter partes que em isso é mais explícito
+  - Encerram a discussão sobre personalidade, temperamento e desenvolvimento cognitivo e emendam para diretrizes da BNCC sem articularem bem os pontos
+- Me parece que parte da justificativa poderia ser tratada como fundamentação teórica
+  - Nesta mesma seção, poderia ter mais referência ao tema norteador do PI
+- O tempo verbal do texto me dá a entender que a aula já foi realizada. Se este for o caso, podemos discutir em reunião
+- ABNT:
+  - Sumário não está paginado
+  - Na página 11, vocês incluiram citações sem indicar as páginas
+    - Na mesma página, é preferível um texto estruturado do que listar citações
+    - Na mesma página, não indicaram página da tabela ou algum título/identificação desta tabela
+  - Na página 12, vocês incluiram citações sem indicar as páginas
+
+**** Grupo 017
+
+
+***** Comentários sobre o relatório parcial
+
+NOTA: muito provavelmente entre 8 e 10
+
+- Anexaram as autorizações exigidas pela Univesp
+- ABNT:
+  - Não atualizaram o número de folhas
+  - Página 7: não incluiram página da citação
+- Justificativa:
+  - O que quiseram dizer com fase de empatia Design Thinking?
+- Fundamentação teória: vocês descreveram bem as diferentes perspectivas do problema
+- Metodologia
+  - Descreveram melhor o brinquedo/brincadeira/atividade que irão desenvolver
+  - Deixaram explícito qual o problema que o grupo identificou em conversa com a escola?
+  - A forma como redigiram o texto também está pouco fluida. A impressão que dá é que combinaram um conjunto de instruções que estava disposto em uma lista. Sugiro que deem mais atenção à conexão com os problemas identificados com a escola e forma de expor o problema.
+    - Exemplo: seção 2.4.5
+- Resultados
+  - Nessa seção é a primeira vez que vocês indicam como identificaram o problema (primeiros dois parágrafos)
+    - Isso deveria aparecer antes (introdução e/ou justificativa e/ou metodologia)
+  - Nesta versão vocês indicaram melhor o que é a solução inicial e como vocês aplicaram e elencaram o que era esperado com essa atividade
+
+- Comentários internos:
+  - Tem um parágrafo da justificativa que soa como chatgpt
+  - O que quiseram dizer por "teoria do jogo"
+  - Teve pouca relação com os problemas que deveriam ser identificados em virtude da visita a campo (Metodologia)
+
+
+**** Grupo 018
+
+***** Comentários sobre o relatório parcial
+
+NOTA: muito provavelmente entre 8 e 10
+
+- Anexaram as autorizações exigidas pela Univesp
+- ABNT:
+- A introdução está bem construída e conduz o leitor à problemática de vocês
+  - Notem que a hipótese do tempo de exposição às telas aparece sem intermediações
+    - Imagino que após aplicarem os formulários, vão conseguir dar suporte a essa hipótese
+      - OBS: Notei que evidenciaram um relato de um dos pais por meio da Priscila
+    - Sugestão: na introdução, puxar alguma referência que permita o leitor entender o porque vocês acharem que essa hipótese pode ser uma boa pista
+  - Sugestão para o relatório final: escrever um parágrafo que antecipa a estrutura do relatório (seção x apresentará y, seção z mostra w, etc)
+    - Isso pode ser colocado logo após o último parágrafo da introdução
+- Justificativa:
+  - Deixaram explicitado que identificaram o problema por meio do contato com a escola
+  - Vocês conseguiram justificar a importância do trabalho de forma muito clara
+- Discussão teórica
+  - Na seção 2.4.2, é dito que as "evidências apontam", mas nenhum estudo é referenciado
+- Seção de metodologia está completa
+  - O mesmo vale para a seção da solução inicial
+- Questionários
+  - QUESTIONÁRIO PARA PAIS E RESPONSÁVEIS:
+    - Muito bem estruturado, de fácil entendimento e de rápida resposta
+    - Único problema potencial é que introduz um viés de resposta dos pais quererem responder enquanto "bons pais"
+      - Anonimizar
+      - Essas categorias de pergunta não parecem ser muito relevantes para o tema discutido
+    - Também pode existir um viés sobre a opinião sobre o projeto
+      - Com resposta não anonimizada, é esperado que mais pessoas respondam que gostaram do que efetivamente gostaram
+    - Sugestão de pergunta: quanto tempo você acha que deve ser adequado para que as crianças passem em frente às telas
+      - Isso poderia medir a noção que os pais têm sobre o que é o recomendado/letramento sobre o tema
+  - QUESTIONÁRIO PARA PROFESSORA
+    - Pergunta 2.6 me parece ser bastante importante
+
+**** Grupo 019
+
+NOTA: muito provavelmente entre 8 e 10
+
+Feedback sobre a nova versão do relatório parcial:
+- Correção gramatical
+- Não fizeram o upload das declarações necessárias
+- Omitiram parte da discussão instituicional
+  - OBS: Eu tinha comentado que parte desta discussão não fazia sentido na seção dos objetivos, mas sim da fundamentação teórica/justificativa
+    - Em resposta, os alunos simplesmente removeram essa discussão
+
+
+** Quinzena 6
+** Quinzena 7
 
 * Relatórios
 
@@ -624,6 +1168,12 @@ Número de confirmação:
 ** Relatório II
 
 Número de confirmação: 966090b824824439847e95cf5008fea2 (<2025-03-08 Sat>)
+
+
+
+** Relatório III
+
+Número de confirmação: 905279677d7b42158e7dcd3a8870014b (<2025-04-07 Mon>)
 
 * Emacs internals :noexport:
 

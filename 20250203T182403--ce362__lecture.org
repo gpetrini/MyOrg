@@ -14,6 +14,9 @@
 - Notas de aula baseadas em Herriges
 - Grupos vão aprensentar seminários
   - Regulação
+- Oligopólio apresentado antes de teoria dos jogos
+  - Modelos aprensentados em termos das curvas de reação
+- Sem data de prova definida
 
 * Turma B - Camila
 
@@ -330,7 +333,7 @@ O [[denote:20250313T110213][Lerner Index]] permite expressar a ideia de marge de
 \begin{align*}
 L & = \frac{p - CMg}{p} \\
  & = 1 - \frac{CMg}{p} \\
- & = 1 - \left(1 = \frac{1}{|\varepsilon|}\right) \\
+ & = 1 - \left(1 - \frac{1}{|\varepsilon|}\right) \\
 L & = - \frac{1}{\varepsilon}
 \end{align*}
 #+end_export

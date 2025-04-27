@@ -112,3 +112,5 @@ Considering the [[denote:20230216T235207][Chapter ABM]] chapter, this note also 
 * References
 
 #+print_bibliography:
+
+
