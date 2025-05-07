@@ -1155,6 +1155,16 @@ Feedback sobre a nova versão do relatório parcial:
 
 
 ** Quinzena 6
+
+
+*** Reunião com os grupos
+
+**** Grupo 015
+**** Grupo 016
+**** Grupo 017
+**** Grupo 018
+**** Grupo 019
+
 ** Quinzena 7
 
 * Relatórios
@@ -1174,6 +1184,12 @@ Número de confirmação: 966090b824824439847e95cf5008fea2 (<2025-03-08 Sat>)
 ** Relatório III
 
 Número de confirmação: 905279677d7b42158e7dcd3a8870014b (<2025-04-07 Mon>)
+
+
+
+** Relatório IV
+
+Número de confirmação: 35ef51e287084612bb354d6ae4717c6f (<2025-05-06 Tue>)
 
 * Emacs internals :noexport:
 

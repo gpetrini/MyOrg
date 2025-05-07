@@ -488,7 +488,138 @@ A partir disso, pode propor interações mais profundas e críticas com os conte
 
 
 
-* Teoria Cognitiva da Aprendizagem Multimídia
+* Teoria Cognitiva da Aprendizagem Multimídia (TCAM)
+
+** Mayer's Theory of Multimedia Learning
+
+- Combination of two learning theories:
+  - Information processing theory (IPT)
+  - Cognitive Load Theory (CLT)
+- Assumptions:
+  - Dual channel: different "devices" to process visual and audio inputs
+  - Bounded rationality: there is a limit of amount of information that humans can assimilate in one channel
+  - Humans engage in active learning: relevant information $\Rightarrow$ organized selected information $\Rightarrow$ coherent mental representation $\Rightarrow$ integrating mental representation into other Knowledge
+- People engage in 3 types of cognitive processing while learning and how to build multimedia learning materials:
+  - Extraneous: Reduce extraneous multimidia cognitive processing that does not serve the instructional goal
+    - Coherence principal: people learn better when extraneous information is removed
+      - Only include what is necessary
+    - Modality principal: Audio (narrative) and text with image is better than the video of the same information
+    - Redundancy principal: Graphics + Narration > Graphics + Narration + screen text
+      - Text include extraneous information
+    - Space/temporal continuity principal: Indicates wheter to include the information at the same time/place in order to share information
+  - Essential
+    - Signaling principal: People learn better with added cues to highlight key information (arrows, circles, etc)
+    - Segmenting principal: multimidia presentation should be short and focused in user-paced segments
+    - Pre-training principal: pre-teach vocabulary
+  - Generative: help to learn, organize and make sense of the topics discussed
+    - Voice principle: friendly human voice rather than a machine
+    - Personalization principal: keep voice conversational rather than formal or robotic
+    - Image principal: people does not necessarily learn better when the speaker's image is added to the screen (distraction)
+
+** Aprendizagem multimídia: explorando a teoria de richard mayer
+
+
+
+*** Introdução
+
+Richard Mayer: Pesquisa na interseção entre cognição, instrução e tecnologia
+
+Aprendizagem Multimídia:
+- Definição: Uso combinado de palavras (texto/fala) e imagens (gráficos/vídeos)
+- Baseada em três pressupostos:
+  - Canal duplo (visual e verbal)
+  - Capacidade limitada de processamento
+  - Aprendizagem ativa
+
+*** Os Princípios da Aprendizagem Multimídia
+
+- Princípio Multimídia ::  Alunos aprendem melhor com palavras + imagens do que apenas palavras
+- Princípio da Contiguidade Espacial ::  Palavras e imagens correspondentes devem estar próximas (mesma tela)
+- Princípio da Contiguidade Temporal ::  Apresentação simultânea de narração e animação (não sequencial)
+- Princípio da Coerência ::  Excluir informações irrelevantes para evitar sobrecarga cognitiva
+- Princípio da Sinalização ::  Destacar informações importantes e estruturar o conteúdo de forma clara
+- Princípio da Modalidade ::  Preferência por narração em vez de texto impresso em animações
+- Princípio da Redundância ::  Evitar repetição desnecessária (ex.: legendas em vídeos narrados)
+- Princípio da Personalização ::  Uso de linguagem conversacional para maior engajamento
+- Princípio da Voz ::  Narração em voz humana (não robótica) para melhor conexão emocional
+- Princípio da Imagem ::  Imagem do orador nem sempre melhora a aprendizagem
+
+*** Pesquisas em Andamento
+
+- Metodologia:
+  - Abordagem qualitativa (estudo de caso)
+  - Participantes ::  Licenciandos em Matemática (UEPB)
+  - Técnicas ::  Observação participante, questionários, entrevistas
+- Projetos:
+  - Aulas Virtuais na Plataforma Moodle
+    - Etapas:
+      - Pesquisa de conteúdos matemáticos
+      - Desenvolvimento de materiais multimídia
+      - Implementação na Moodle
+  - Histórias em Quadrinhos Digitais (ComicLife)
+    - Etapas:
+      - Criação de roteiros educacionais
+      - Produção de HQs com software especializado
+
+*** Comentários Finais
+
+- A teoria de Mayer oferece diretrizes práticas para educadores
+- Transformação do ensino através de tecnologias (não apenas melhoria)
+- Necessidade de repensar estratégias pedagógicas na era digital
+
+
+** Multimídia Interativa: Princípios e Ferramentas
+
+*** Introdução
+
+O artigo aborda a integração de teorias de cognição e aprendizagem em ambientes multimídia, com foco no desenvolvimento de conteúdo educacional digital.
+Destaca a importância de estratégias baseadas em evidências para reduzir a carga cognitiva e promover aprendizagem ativa, utilizando preferencialmente software livre.
+
+- Base Teórica:
+  - Teoria da Carga Cognitiva (Sweller, 1998) :: Analisa as demandas na memória de trabalho durante a instrução.
+- Modos e Modalidades de Mídia (Moreno & Mayer, 2007):
+  - Modos ::  Verbal (texto/fala) e não verbal (imagens/vídeos).
+  - Modalidades :: Visual (olhos) e auditiva (ouvidos).
+  - Multimodalidade :: Combinação de representações verbais e não verbais para otimizar o processamento cognitivo.
+
+*** Princípios e Ferramentas para Multimídia Educacional
+
+- Princípios Instrucionais (Clark & Mayer, 2008):
+  - Modalidade Auditiva: Preferência por narração em vez de texto visual para reduzir sobrecarga.
+  - Contiguidade: Sincronização temporal e espacial de palavras e imagens.
+  - Personalização: Uso de linguagem conversacional para aumentar o engajamento.
+  - Controle do Aluno: Permite ajustar o ritmo de aprendizagem (pausar, avançar).
+- Ferramentas e Estratégias:
+  - Ferramentas de Autoria:
+    - Viewlet Builder e Wink: Captura de telas com integração de áudio e anotações.
+    - Audacity: Edição de áudio para recursos educacionais (remover ruídos, mixar faixas).
+  - Recursos Multimídia:
+    - Áudio: Uso estratégico (complementar, sugestivo ou redundante).
+    - Vídeos: Indexação para facilitar acesso a segmentos específicos (projeto SACCA).
+    - Web Rádio: Possibilidade de interação e complementação com gráficos/textos.
+- Interatividade (Moreno & Mayer, 2007):
+  - Tipos: Dialogar, controlar, manipular, pesquisar e navegar.
+  - Objetivo: Promover processamento ativo do conteúdo, evitando sobrecarga cognitiva.
+
+*** Aplicações e Desafios
+
+Cenário de Implementação:
+
+- Disciplina EDU3375 – Computador na Educação (UFRGS): Capacitação de professores para uso de TIC com pedagogia ativa.
+- Resultados:
+  - Aceitação elevada de tutoriais multimodais (ex.: demonstrações passo a passo com áudio).
+  - Resistência a vídeos sem controle de navegação ou segmentação.
+- Desafios Identificados:
+  - Balancear suporte para iniciantes (evitando sobrecarga) e autonomia para avançados.
+  - Necessidade de mais pesquisas sobre níveis ideais de interatividade e suporte.
+
+*** Conclusões
+
+- Eficácia Limitada: Multimídia e interatividade não garantem aprendizagem sem engajamento cognitivo.
+- Recomendações:
+  - Seguir princípios baseados em evidências (ex.: modalidade auditiva, contiguidade).
+  - Priorizar ferramentas que permitam reciclagem e atualização de conteúdos.
+  - Futuro: Ampliar testes de teorias cognitivas em ambientes multimídia para aprimorar diretrizes de design instrucional.
 
 * Tecnologias para desenvolvimento de conteúdos didáticos
 
