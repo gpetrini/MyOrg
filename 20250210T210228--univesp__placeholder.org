@@ -1269,6 +1269,20 @@ Gabriel
 *** Reunião com os grupos
 
 **** Grupo 015
+***** Primeira versão
+Comentários gerais:
+
+- O grupo inclui as disciplinas que ajudaram a elaborar o projeto integrador (bom)
+- O desenvolvimento da centopeia numérica ajudou a atividade proposta ser diferente de um bingo convencional (bom)
+- A descrição de como a atividade foi construída e aplicada está bem clara
+- Menção às metodologias sugeridas pela Univesp: O grupo não mencionou em nenhum momento as metodologias sugeridas pela Univesp, como indicado nas correções (Design Thinking).
+- Relação explícita entre alfabetização matemática e desenvolvimento socioafetivo: Embora o relatório final tenha adicionado mais menções ao desenvolvimento socioafetivo, a conexão direta entre esse tema e a alfabetização matemática ainda não foi suficientemente explorada.
+  - Basicamente, o grupo adicionou as palavras "socioafetiva" e "socioafetividade", ou "desenvolvendo-se socio afetivamente" em algumas partes
+  - Na explicação de como a atividade foi realizada, isso ficou mais claro
+    - Especialmente quando mostram que as crianças com níveis de aprendizado diferente se ajudavam
+- Parte da discussão sobre desenvolvimento socioafetivo que está nas considerações finais deveria ser antecipado, suprindo as lacunas no desenvolvimento teório do texto (Seção 2)
+
+
 **** Grupo 016
 **** Grupo 017
 **** Grupo 018
