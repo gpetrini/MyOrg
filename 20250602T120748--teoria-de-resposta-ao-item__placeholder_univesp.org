@@ -1,0 +1,6 @@
+#+title:      Teoria de Resposta ao Item
+#+date:       [2025-06-02 Mon 12:07]
+#+filetags:   :placeholder:univesp:
+#+identifier: 20250602T120748
+
+Trata-se de um conjunto de modelos matemáticos que permite que os exames em larga escala possuam o mesmo nível de dificuldadade, mesmo se aplicado em períodos diferentes, garantindo a isonomia do exame.

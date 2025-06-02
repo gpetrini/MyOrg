@@ -1,0 +1,52 @@
+#+title:      Convergence in a Neo-Kaleckian Model with Endogenous Technical Progress and Autonomous Demand Growth
+#+date:       [2025-05-30 Fri 11:55]
+#+filetags:   :bib:
+#+identifier: 20250530T115559
+#+reference:  nah_2019_Convergence
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+[cite:@nah_2019_Role]
+
+** Background and motivation
+
+
+** Supporting Ideas and hypothesis
+
+
+** Purpose, Relevance, and Contribution
+
+
+** Methodology
+
+
+** Results
+
+
+** Interesting findings and not categorized stuff
+
+
+** Critics
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+This paper introduces technical progress along the lines of the Kaldor–Verdoorn law within a neo-Kaleckian model of growth and distribution that incorporates the Sraffian supermultiplier mechanism. The key features of the model include the interactive effects of endogenous technical progress, the non-capacity-creating demand component that grows at an exogenous rate and, in its long-run version, a Harrodian adjustment mechanism. It turns out that, whereas the model converges towards the normal rate of capacity utilization, the main tenets of the Keynesian model are still valid in the long run as well as in the short run in the sense that all of the average rates of accumulation, capacity utilization, and technical progress are lower during the traverse after the propensity to save or the share of profits goes up. The conditions under which the productivity regime can be wage-led are examined, and the possible effects of an exogenous technical shift are also discussed.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+
+
+* References

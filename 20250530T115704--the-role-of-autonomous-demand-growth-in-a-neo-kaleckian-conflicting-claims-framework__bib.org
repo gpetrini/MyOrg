@@ -1,0 +1,51 @@
+#+title:      The Role of Autonomous Demand Growth in a Neo-Kaleckian Conflicting-Claims Framework
+#+date:       [2025-05-30 Fri 11:57]
+#+filetags:   :bib:
+#+identifier: 20250530T115704
+#+reference:  nah_2019_Role
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+
+** Background and motivation
+
+
+** Supporting Ideas and hypothesis
+
+
+** Purpose, Relevance, and Contribution
+
+
+** Methodology
+
+
+** Results
+
+
+** Interesting findings and not categorized stuff
+
+
+** Critics
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+This paper incorporates the role of an independently growing autonomous demand component into a neo-Kaleckian model of growth and distribution where the distribution of income reacts to changes in the employment rate. A peculiar feature of these autonomous expenditures is that in contrast to investment they are non-capacity creating. The model combines the Sraffian multiplier, a conflicting-claims theory of inflation, a Harrodian instability mechanism and effects tied to the size of the reserve army of labor. The long-run version of the model converges conditionally to stable rates of employment and inflation, at the normal rate of capacity utilization. The model vindicates some of the main Keynesian or Kaleckian tenets, in the sense that an increase in the marginal propensity to save out of profits or in the bargaining power of firms generate lower average rates of capital accumulation and capacity utilization during the traverse.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+
+
+* References

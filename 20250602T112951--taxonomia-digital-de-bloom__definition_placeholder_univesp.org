@@ -1,0 +1,6 @@
+#+title:      Taxonomia Digital de Bloom
+#+date:       [2025-06-02 Mon 11:29]
+#+filetags:   :definition:placeholder:univesp:
+#+identifier: 20250602T112951
+
+[[denote:20250602T112541][Taxonomia de Bloom]]

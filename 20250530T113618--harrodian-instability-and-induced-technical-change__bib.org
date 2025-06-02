@@ -1,0 +1,70 @@
+#+title:      Harrodian Instability and Induced Technical Change
+#+date:       [2025-05-30 Fri 11:36]
+#+filetags:   :bib:
+#+identifier: 20250530T113618
+#+reference:  gallo__harrodian
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+This paper introduces productivity growth that is induced by chances in the wage-share on the [[denote:20250203T184155][Supermultiplier Models]].
+The argument is based on some marxist theories of labor market.
+The mechanism is the following: increasing labor costs (wage-share), induce firms to find more productive methods, afecting productivity itself.
+In the benchmark scenario, the populational growth is exogenously determined.
+One interesting result is that the wage-share becomes the [[denote:20250530T114803][Macroeconomic Closure]] of the model.
+An increase on wage-share impose a downward trend o in.
+
+
+
+** Background and motivation
+
+- As a background: check [cite:@nah_2019_Convergence]
+
+** Supporting Ideas and hypothesis
+
+
+** Purpose, Relevance, and Contribution
+
+- This paper is particularly relevant to support the [[denote:20230216T235207][Chapter ABM]], specially in respect to the wage-share trajectory
+  - At the first glance, this seems to be a possible macroeconomic equivalent of the [[denote:20230216T235207][Chapter ABM]]
+    - If this is the case, the observed downward trend in the simulations is expected rather than a potential error
+  - However, there are some differencies that might make the model be distinct than the [[denote:20230216T235207][Chapter ABM]]
+    - In the paper, the exogenously defined populational growth is the baseline scenario; while it is residual in my model (<2025-05-30 Fri>)
+    - There is autonomous government expenditures. It is expected that this do not change the overall result.
+    - There is no direct wage-share shock, requiring imposing other shocks into the model
+- It is important to not that, the [[denote:20230216T235207][Chapter ABM]] has idiosyncratic shocks on technology happening all the time
+  - If this is the case, it is equivalent to have indirect wage-share shocks affecting the baseline scenario (without exogenous shocks)
+
+
+** Methodology
+
+
+** Results
+
+
+** Interesting findings and not categorized stuff
+
+
+** Critics
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+This paper presents a demand-led growth model augmented with induced technical change to address the two Harrod’s problems in growth theory. Building on recent developments in the supermultiplier literature, we investigate how both Harrodian instability problems can be resolved through two complementary mechanisms: (1) autonomous, non-capacitycreating demand components growing at an exogenous rate, and (2) endogenous technical change responsive to income distribution. While existing supermultiplier models show how autonomous expenditures stabilize demand-led growth, we integrate induced technical change into the determination of the natural rate of growth. The model achieves twin stabilization through the interplay of two stabilizing mechanisms: the supermultiplier and induced technical change. On the one hand, demand shocks are absorbed via adjustments in the investment share, allowing capital accumulation to align with the exogenously determined growth rate of autonomous expenditures. On the other hand, labor market imbalances trigger productivity adjustments that reconcile natural and warranted growth through changes in the wage share. This dual adjustment mechanism allows the system to sustain normal capacity utilization and stable employment rates, while preserving demand-led growth outcomes. The results suggest that incorporating induced technical change enhances the supermultiplier’s capacity to address both of Harrod’s instability problems within a unified demand-led framework.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+
+
+* References
