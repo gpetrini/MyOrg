@@ -3,19 +3,660 @@
 #+filetags:   :univesp:
 #+identifier: 20250523T172238
 
-* Tema 0
 
-* Tema 2
+[[denote:20250206T170658][Teaching and Lectures]]
 
-* Tema 3
+[[denote:20250210T210228][Univesp]]
 
-* Tema 4
 
-* Tema 5
+* AVALIAÇÃO NA UNIVESP: TEORIA E PRÁTICA
 
-* Tema 6
+** O PROJETO PEDAGÓGICO DA UNIVESP
+O modelo pedagógico da Univesp é baseado em cinco eixos: ampliação do acesso, foco no estudante, interação, inclusão digital e formação profissional.
 
-* Tema 7
+A ação pedagógica integra teoria e prática, utilizando metodologias ativas como Aprendizagem Baseada em Problemas e Design Thinking.
+
+A avaliação deve refletir esses pilares, mostrando o percurso formativo dos estudantes e seu estado de aprendizagem.
+
+** PERFIL DO ALUNO
+
+Os estudantes da Univesp são economicamente, socialmente e culturalmente diversos, com maioria acima de 25 anos e oriunda de escolas públicas.
+
+O perfil dinâmico exige instrumentos avaliativos variados em formato e dificuldade, considerando diferentes estilos de aprendizagem.
+
+** OS PROCESSOS DE AVALIAÇÃO NA UNIVESP
+
+A avaliação é formativa e processual, incluindo atividades bimestrais e provas presenciais somativas.
+
+O Ambiente Virtual de Aprendizagem (AVA) permite monitoramento, feedback e geração de relatórios para ajustes no ensino.
+
+** A AVALIAÇÃO NA UNIVESP
+
+A nota final combina prova (60%) e atividades no AVA (40%), com questões elaboradas a partir dos objetivos de aprendizagem e conteúdos-base.
+
+Recomenda-se diversidade de tipos e graus de dificuldade nas questões, evitando "pegadinhas" e priorizando clareza.
+
+** GRAU DE DIFICULDADE DAS QUESTÕES
+
+A Taxonomia de Bloom classifica questões em níveis de complexidade: reconhecimento (fácil), compreensão/aplicação (intermediário) e análise/síntese/avaliação (difícil).
+
+Verbos como "identificar", "explicar" e "analisar" indicam o nível cognitivo exigido.
+
+** INDICAÇÕES PARA ELABORAÇÃO DE QUIZ
+
+Quizzes avaliam reconhecimento, com perguntas simples baseadas em videoaulas, 5 alternativas (1 correta) e feedback imediato com minutagem de referência.
+
+** QUESTÕES DE MÚLTIPLA ESCOLHA
+
+Devem ter enunciados claros e alternativas coerentes, evitando pistas e opiniões subjetivas.
+
+Tipos incluem resposta única, múltipla, verdadeiro/falso, lacunas, interpretação e asserção/razão.
+
+** A CORREÇÃO DE QUESTÕES
+
+Questões objetivas exigem rúbricas com justificativas para alternativas corretas e incorretas.
+
+Dissertativas requerem rubricas com critérios como domínio de conteúdo, clareza e norma culta.
+
+** QUESTÕES DISSERTATIVAS
+
+Avaliam habilidades como raciocínio lógico, análise e argumentação, mas demandam mais tempo para correção.
+
+Enunciados devem ser precisos, evitando perguntas vagas ou genéricas.
+
+** PROCEDIMENTOS PARA RESPOSTAS DISSERTATIVAS
+
+Orientações incluem esquematizar respostas, evitar opiniões não fundamentadas, revisar textos e atender ao solicitado.
+
+** RECOMENDAÇÕES FINAIS
+A avaliação deve ser formativa, com feedback prospectivo, privilegiando habilidades analíticas, criativas e práticas.
+
+A diversificação de instrumentos e a clareza nos critérios são essenciais para uma avaliação eficaz.
+* Tema 0: Esquentando os motores
+
+** Avaliação: da excelência à regulação das aprendizagens
+
+*** A avaliação no princípio da excelência e do êxito escolares
+
+O fracasso escolar é determinado por critérios institucionais e não apenas por deficiências objetivas.
+As normas de excelência são essenciais para a existência de avaliações, classificações e seleções.
+Essas normas transformam desigualdades reais em hierarquias escolares.
+O sistema escolar tende a ignorar ritmos de desenvolvimento diversos, reforçando desigualdades sociais.
+A repetência é usada como forma bruta de diferenciação, frequentemente ligada à classe social.
+A escola trata os efeitos das diferenças com meios rudimentares, sem abordá-las profundamente.
+
+*** Os procedimentos habituais de avaliação: obstáculos à mudança das práticas pedagógicas
+
+A avaliação tradicional consome a energia de alunos e professores, dificultando inovações.
+Estimula uma relação utilitarista com o saber, centrada em notas.
+Gera uma relação de força entre professor e aluno, dificultando cooperação.
+Favorece didáticas conservadoras e atividades previsíveis.
+Valoriza conhecimentos isolados em detrimento de competências complexas.
+Apresenta uma aparência de exatidão, mas com grande arbitrariedade.
+Apesar de não impedir toda inovação, constitui freio significativo que precisa ser enfrentado.
+
+*** A parcela de avaliação formativa em toda avaliação contínua
+
+A avaliação é formativa quando contribui para regular aprendizagens em curso.
+Essa regulação ocorre com base na observação e intervenções pedagógicas ajustadas.
+Toda ação educativa de duração significativa inclui formas rudimentares de avaliação formativa.
+
+*** A ideia de avaliação formativa
+
+Visa observar sistematicamente os alunos e ajustar intervenções para otimizar a aprendizagem.
+A avaliação formativa foca diretamente na gestão das aprendizagens.
+Ela integra práticas de regulação contínua com foco na individualização.
+
+*** Utilizar todos os recursos possíveis
+
+Avaliação formativa é definida por seus efeitos reguladores sobre as aprendizagens.
+Importa menos o método, mais o impacto que gera na aprendizagem.
+Inclui observação ampla e sistemática, não limitada à medição codificável.
+Intervenções pedagógicas podem abranger aspectos cognitivos, afetivos, sociais e materiais.
+A regulação se dá em três formas: retroativa, interativa e proativa.
+A didática deve ser concebida como um dispositivo de regulação contínua.
+
+*** Obstáculos a uma regulação eficaz
+
+O currículo foca mais conteúdos do que aprendizagem concreta.
+Há desconhecimento sobre mecanismos internos de aprendizagem.
+Faltam tempo e continuidade nas intervenções reguladoras.
+A regulação tende a se centrar no sucesso da tarefa, não da aprendizagem em si.
+Superar esses obstáculos exige aceitar a complexidade da prática pedagógica.
+
+*** Não mexa na minha avaliação! Uma abordagem sistêmica da mudança
+
+Mudanças pontuais não transformam o sistema de avaliação profundamente.
+Transformar a avaliação implica repensar o funcionamento da escola como um todo.
+A avaliação está no centro do sistema didático e é parte da identidade profissional dos docentes.
+
+*** Avaliação no centro de um octógono
+
+**** Relações entre famílias e escola
+
+A avaliação tradicional oferece segurança às famílias.
+Mudanças na avaliação podem gerar desconfiança e resistência dos pais.
+Sem diálogo, a inovação pode ser bloqueada pelas famílias.
+
+**** Organização das turmas e possibilidades de individualização
+
+A avaliação formativa requer regulação individualizada das aprendizagens.
+A estrutura do ensino secundário apresenta barreiras organizacionais à diferenciação.
+A escola primária possui mais flexibilidade para práticas diferenciadas.
+
+**** Didática e métodos de ensino
+
+A avaliação formativa se desenvolveu dentro de pedagogias diferenciadas.
+Atualmente busca-se sua reintegração à didática das disciplinas.
+Essa integração levará tempo e exige formação docente específica.
+
+**** Contrato didático, relação pedagógica e ofício de aluno
+
+A avaliação formativa exige nova relação entre professor e aluno.
+Os alunos devem sentir-se seguros para expor dificuldades reais.
+Manter a lógica seletiva enfraquece o potencial formativo da avaliação.
+
+**** Acordo, controle e política institucional
+
+A avaliação formativa precisa de uma cultura escolar coletiva.
+Requer colaboração entre docentes e mudanças organizacionais.
+Pode gerar mais controle institucional sobre a qualidade do ensino.
+
+**** Programas, objetivos e exigência
+
+Uma pedagogia diferenciada exige revisão e essencialização dos programas.
+A avaliação formativa expõe incoerências nos planos de estudo.
+Programas devem estar mais alinhados ao desenvolvimento real dos alunos.
+
+**** Sistema de seleção e orientação
+
+A avaliação formativa deveria ajudar o aluno a enfrentar a seleção.
+Idealmente, a seleção seria conduzida por agentes externos ao processo de ensino.
+Isso garantiria uma lógica cooperativa na orientação dos estudantes.
+
+**** Satisfações pessoais e profissionais
+
+A avaliação tradicional fornece segurança e estrutura ao professor.
+Mudar a avaliação pode ameaçar equilíbrios subjetivos e profissionais.
+Por outro lado, pode também renovar e estimular a prática docente.
+
+*** Abordagem sistêmica pode ser desmobilizadora?
+
+A abordagem sistêmica é essencial para compreender mudanças na educação.
+Mudanças reais exigem transformar a profissão docente e a organização escolar.
+Três estratégias são destacadas: autonomia institucional, cooperação docente e profissionalização.
+
+*** Conclusão: avaliação formativa, regulação, diferenciação – as mesmas questões, o mesmo combate
+
+Enquanto o ensino falhar em seus objetivos, a tensão entre lógica formativa e seletiva persistirá.
+A avaliação deve estar a serviço da pedagogia diferenciada.
+Separar avaliação formativa da didática compromete seu potencial transformador.
+A articulação entre avaliação, regulação e individualização é o verdadeiro desafio.
+
+
+
+** Caminho e descaminhos da avaliação educacional
+
+- Avaliação: Emissão de um julgamento baseado em critérios
+  - Dado isso, existem alguma consequência (aprovado, reprovado)
+- No Brasil, em particular, a avaliação é baseada em um sistema de reprovação, não de aprendizado
+  - Associando a escola como um mecanismo de ascensão social; fazendo com que a avaliação passou a ter características como um mecanismo de exclusãoe de seleção
+  - Isso ficou mais evidente com as avaliações externas (Ex. proval Brasil), o que compõe a nota do IDEB
+  - Ênfase no desempenho e não no aprendizado
+
+
+* Tema 1: Relatórios
+
+* Tema 2: A concepção de avaliação da Univesp
+
+** Questões gerais
+
+- Como é possível compreender a avaliação?
+- Quais são as funções da avaliação e seus tipos?
+- Como os instrumentos e os critérios podem ser considerados pertinentes para avaliar o processo de aprendizagem?
+
+** Processos de avaliação: Introduação ao tema
+
+**** O professor e o ato avaliativo
+
+- Pouca instrumentalização para o professor realizar a prática avaliativa
+  - Para que avaliar?
+  - O que avaliar?
+  - Quando avaliar?
+  - Como avaliar?
+  - O que fazer a partir dos resultados da avaliação?
+- Inconsistência e dissociação entre a avaliação  e a proposta educacional do professor
+- Planejamento da avaliação
+  - Preparação > Aplicação > Análise e interpretação > Devolutiva
+
+**** Avaliação escolar e os desafios à prática docente
+
+- Como relacionar avaliação e o ensino?
+- Como definir os critérios avaliativos?
+- Ajustar avaliação para um instrumento que apoie a atividade docente
+- Diversificar instrumentos avaliativos
+- Contradições entre avaliação interna (definidas pelo corpo docente) e avaliação externa (definidas por instituições superiores)
+
+
+** Tipos e funções da avaliação de aprendizagem
+
+- Propósito de avaliação
+  - Somativa (classificatória)
+    - Certificar um dado conhecimento e definir o destino dos alunos com base no desempenho escolar
+      - Comparar desempenho e classificar alunos
+      - Ênfase nos resultados obtidos
+  - Formativa
+    - Fundamenta-se no processo de aprendizagem e no que foi ensinado
+    - Também incide sobre o professor e o ajuda a perceber quando ajustar as estratégias de ensino
+    - Exige observação e registro por parte do professor
+    - Também contém autoavaliação
+- Momento de avaliação
+  - Diagnóstica
+    - Identificar habilidades e competências dos alunos
+      - Identificação de interesses e apitidões
+  - Processual
+    - Ocorre ao longo do processo de ensino e aprendizagem
+    - Possui diferentes objetivos
+    - Realizada com diversos instrumentos
+  - Acumulativa (final)
+    - Realizada em momentos específicos
+- Definição de objetivos
+  - Exemplo: "Como desenvolver pensamento crítico?"
+    - Primeiro, é preciso identificar formas de poder avaliar se este objetivo foi concluído:
+      - Identificar problemas importantes?
+      - Reconhecer pressupostos essenciais?
+      - Avaliar evidências?
+        - Reconhecer esteriótipos e clichês
+        - Reconhecer adequação dos dados
+      - Extrair conclusões?
+
+
+** Práticas de avaliação: critérios
+
+- Princípio utilizado para julgar, apreciar, e comparar
+- Característica ou propriedade de um objetivo que permite atribuir-lhe um juízo de valor
+- Avaliação normativa:
+  - Desempenho do aluno é comparado a do grupo ao qual faz parte
+    - Parte de quem é considerado bom aluno e, a partir disso, definir como os demais devem ser corrigidas
+  - Tem o propósito de classificar e comparar
+  - Isso indica qual é o destino do aluno (progresso, reprova, exame)
+  - Isso pode gerar competição
+- Avaliação criteriada:
+  - Desempenho do aluno conforme critérios previamente definidos
+  - Informações identificam em que ponto do processo de aprendizagem o aluno se encontra
+  - Comparação do aluno consigo próprio
+
+
+*** Compartilhar os critérios de avaliação
+
+- Critério de realização:
+  - Quais são os passos que devem atingir para cumprir determinado objetivo
+  - Sugere-se que seja acordado com os alunos
+- Critérios de êxito:
+  - Critérios que explicitam o nível de exigência que indicam quando as aprendizagens estão satisfatórias ou não
+  - Sugere-se acordo com a equipe escolar
+
+
+** O processo de avaliação no modelo Univesp
+
+- Avaliação é um processo mais amplo (para além da esfera escolar)
+- No contexto educacional, tem multiplas funções:
+  - Informar a família sobre o rendimento do aluno
+  - Informa o aluno sobre o próprio rendimento
+  - Informa o professor sobre o rendimento do aluno e do próprio rendimento
+  - Informa a sociedade sobre o papel da escola
+- Avaliação não só como um processo de seleção, mas também como uma forma de repensar o processo de ensino e aprendizagem
+- Avaliações na univesp:
+  - Disciplinas regulares
+    - Avaliação individual
+    - Atividades de acompanhamento ao longo do bimestre
+    - Prova final
+  - Projeto integrador
+  - Trabalho de conclusão de curso
+  - Estágio
+
+
+* Tema 3: Perfil do aluno Univesp e Avaliação
+
+** Vídeo: Perfil do aluno
+
+#+caption: Diferença entre exame e avaliação
+| Avaliação   | Exame           |
+|-------------+-----------------|
+| Não pontual | Pontual         |
+| Dinâmica    | Classificatório |
+| Inclusiva   | Seletivo        |
+
+- No vídeo, são tratados diferentes tipos de avaliação
+- Por que o perfil do aluno é relevante:
+  - Compreensão de aspectos fortes e fracos para adequar a sequência do ensino, permitindo que o processo de aprendizagem ocorra
+- Quem são os alunos (com base no vestibular de licenciatura de 2019):
+  - Majoritariamente mulheres
+  - Majoritariamente com mais de 25 anos
+  - Quase metade são casados
+  - Majoritariamente vindos da rede pública
+  - Mais da metade também trabalha
+  - Maior parte com renda entre 1-3 salários mínimos
+  - Quase a totalidade dos pais do candidato não possuem ensino superior
+
+* Tema 4: O modelo Univesp de elaboração de questões
+
+
+** A avaliação do ensino (Vídeo)
+
+- Autoavaliação deve ser contínua
+  - Permite avaliar como a trajetória da disciplina deve ser realizada
+  - Deve ser considerada em termos dos objetivos pretendidos em cada aula
+- Um possível instrumento seria a gravação das aulas
+  - Isso facilita a Autoavaliação do professor
+- Dar aula junto de outro professor também ajuda
+- Outro instrumento é o questionário de Autoavaliação feito pelos alunos
+
+
+
+** O modelo Univesp de elaboração de questões (Vídeo)
+
+*** O que é a questão para a Univesp?
+
+Instrumento avaliativo com dupla finalidade: promover a avaliação processual sob dois paradigmas da avaliação da aprendizagem: o formativo e o somativo.
+- finalidade formativa: atividades avaliativas ou exercícios de apoio que integram as semanas de conteúdo dos cursos/disciplinas.
+- finalidade somativa: questões utilizadas e aplicadas nas provas de fim de bimestre.
+
+*** O que se avalia por meio das questões?
+
+- a formação de habilidades e competências profissionais;
+- o atingimento dos objetivos de aprendizagem previstos;
+- a construção de conhecimentos específicos;
+- a formação de competências intelectuais (memorizar - compreender - aplicar - analisar - avaliar - criar).
+
+*** Princípios que norteiam a elaboração de questões na Univesp
+
+*** Processo com foco no aluno
+
+**** Na elaboração
+
+- o enunciado legível/inteligível, "claro";
+- questão/enunciado dialoga necessariamente com o conhecimento trabalhado/construído a partir dos recursos base que compõem a aula no AVA;
+  - Tem que se remeter ao conteúdo base (leitura obrigatória)
+- comando objetivo (enunciado x comando);
+
+***** Exemplo - Coleta de dados
+
+De acordo com a seguinte descrição:
+“o IBGE, quando coleta os dados sobre analfabetos, pergunta a cada brasileiro se ele é alfabetizado ou não. Os dados são, portanto, baseados nessas declarações...”
+
+essa pesquisa utiliza como instrumento de coleta de dados:
+A. Observação participante ou levantamento bibliográfico.
+B. Entrevistas ou estudos de caso.
+C. Questionários ou entrevistas.
+D. Questionários ou observação participante.
+E. Observação participante ou entrevistas.
+
+(Prova Univesp – Metodologia Científica – 2º Bimestre 2020)
+
+Nessa questão, o comando está implíclito. Para torná-lo explicito, deve-se adicionar: "Assinale a alternativa que apresenta o instrumento de coleta de dados descrito"
+
+***** Exemplo - Associação de colunas
+
+Associe as colunas, indicando a relação correta no que tange à citação de livros. Em seguida, assinale a alternativa correta:
+
+( A ) Autor ( ) EPU
+( B ) Título do livro ( ) 1986
+( C ) Cidade ( ) São Paulo
+( D ) Editora ( ) LÜDKE, Menga e ANDRÉ, Marli E.D.A.
+( E ) Ano de Publicação ( ) Pesquisas em educação: abordagens qualitativas
+
+A. D; E; C; A; B
+B. A; E; D; C; B
+C. E; A; B; D; C
+D. B; C; D; E; A
+E. C; B; E; A; D
+
+
+****** Observação
+
+Nessa questão, o enunciado se mistura com o próprio comando.
+
+**** Na aplicação
+
+Regras que envolvem a realização da avaliação mediada pelo instrumento avaliativo devem ser explicitadas e compartilhadas:
+
+tempo, condições, permissão para utilização de materiais adicionais, valor/peso, grau de dificuldade etc.
+
+**** Na correção
+
+Feedback:
+
+- fornecer resoluções orientadoras; critérios de comparação; apoio ao corretor e ao aluno.
+- retroalimentar tomadas de decisões que produzam (auto)regulação do processo educacional.
+- não deve reduzir-se à mera apresentação/reprodução de gabarito (dicotomia entre certo e errado).
+
+***** Resolução
+
+A resolução precisa ter uma chave de resolução em que está indicado ao aluno as razões pelas quais determinada atlernative é a correta.
+Em outras palavras, não é suficiente apenas reproduzir o gabarito.
+Além de indicar qual é a correta, outro forma é tentar indicar o porquê das demais não serem viáveis, tal como
+
+(b) reduz-se o conceito de signo a símbolo e apaga-se o caráter compartilhável do sistema linguístico;
+(c) caracteriza-se o sistema linguístico como repertório individual;
+(d) atribui-se à linguagem o significado impreciso de “concepção de mundo”;
+(e) atribui-se à linguagem o significado de “idioma materno”.
+
+*** Critérios (checklist)
+
+- O enunciado é claro/objetivo sobre o que o aluno deve fazer e como.
+- O enunciado estabelece uma relação dialógica com o aluno.
+- A questão remete o aluno à resolução de problema prático e à situação concreta, que endereça a prática profissional.
+- Existe um contexto e/ou referencial específico para que o estudante possa compreender o enunciado/comando e responder a questão.
+
+*** Formatos: quizzes, dissertativas e questões de múltipla escolha
+
+A diferença nos formatos que esses tipos admitem promove a variação no grau de complexidade das questões; nos modos de apresentação e proposição das questões; nos modos de considerar os diferentes estilos de aprendizagem; e nos distintos modos de mobilizar a capacidade de reflexão, análise e síntese.
+
+
+*** Processo com foco no aluno - Formatos
+
+As questões objetivas (de múltipla escolha) podem variar segundo o formato:
+- Objetiva clássica - de resposta única;
+- Objetiva - verdadeiro ou falso;
+- Objetiva - afirmação incompleta;
+- Objetiva - de resposta múltipla;
+- Objetiva - lacuna;
+- Objetiva - de interpretação;
+- Objetiva - asserção e razão;
+
+
+** Observações para o relatório
+
+Uma forma de que posso aplicar o curso da Univesp em minha formação é, por exemplo, deixar indicado o nível de dificuldade associado a cada uma das questões.
+Com isso, o aluno pode gerenciar melhor seu tempo de resposta de prova a depender dessa informação.
+Em minha prática docente, pude observar alunos que apresentaram dificuldades em resolver provas por erros de gestão de tempo, por exemplo.
+Obviamente, essa não é a única informação relavante para estar em uma prova (tal como discutido no tema 4), mas é algo que nunca teria pensado sem o curso da Univesp.
+
+* Tema 5: Funções intelectuais e graus de dificuldade na elaboração de questões
+
+** DONE Desafio
+
+Neste tema, ampliamos a consideração de critérios utilizados para a elaboração de questões, pensando, inclusive, no modo como fundamentam instrumentos de avaliação externa em larga escala. Nesta semana, propomos a realização de uma nova etapa no Desafio do Módulo.
+
+Vocês irão analisar UMA questão de ENADE a partir dos critérios de elaboração de questões que foram apresentados e discutidos ao longo do módulo até esta semana.
+
+Para tanto, acesse as Provas e Gabaritos-INEP.
+
+Nesse site estão disponíveis as provas relativas a todos os Cursos Superiores que participaram do ENADE desde a sua criação.
+
+Escolha um ano (2018 ou 2019) e, a partir da seleção de uma das provas, pince UMA questão para ser analisada com base nos referidos critérios. É interessante que você escolha uma questão aplicada em um curso próximo à sua área de formação.
+
+Com base em sua análise da questão escolhida e a partir dos critérios discutidos até aqui, CRIE uma checklist que possa ser utilizada na análise de outras questões.
+
+Poste sua análise e sua checklist como resposta ao fórum sobre o desafio da semana.
+
+** Taxonomia Digital de Bloom (Vídeo)
+
+- Essa taxonomia classifica diferentes níveis de cognição humana em pensamento, aprendizagem e compreensão
+- Sugerido para o desenvolvimento de planos de ensino, avaliações e estratégias de aula
+- Níveis mais baixos de cognição (ordem crescente) ou habilidades de conhecimento de nível inferior:
+  - Conhecimento
+  - Compreensão
+  - Aplicação
+  - Esse nível inclui
+    - Pensamento concreto, memorização e entendimento
+- Habilidades de pensamento de ordem superior envolve:
+  - Análise
+  - Síntese
+  - Avaliação
+  - Ess nível inclui
+    - Pensamento abstrato, crítico, metacognitivo e criativo
+- A revitalização da [[denote:20250602T112541][Taxonomia de Bloom]] envolve transformar os níveis em verbos associados às habilidades associadas a cada nível:
+  - Lembrar :: Listar, definir, saber, dizer
+  - Compreender :: Ctiar, descrever, reforçar, pedir
+  - Aplicar :: Organizar, usar, ilustrar, agir
+  - Analisar :: Examinar, dissecar, investigar, ordenar
+  - Avaliar :: Comparar, criticar, recomendar, testar
+  - Criar :: Desenhar, projetar, imaginar, inventar
+- Tendo em vista como a tecnologia pode afetar este modelo, foi criada a [[denote:20250602T112951][Taxonomia Digital de Bloom]], adicionando novos verbos, exemplo
+  - Criar :: Blogar, remixar, programar
+
+** Funções intelectuais na aprendizagem e Graus de dificuldade de questões (Vídeo)
+
+O grau de dificuldaded ded uma questão é estabelecido a partir da análise da relação entre objetivo de aprendizagem e função intelectual.
+É a partir dessa síntese (entre objetivo de aprendizagem e função intelectual) que o conteúdo a ser avaliado será apresentado ao aluno sobre forma de questão.
+
+|----------------+-------------------------------------------------------------------------------------------------+---------------------------------------------------+---------------------------------------------------|
+| Nível          | Definição                                                                                       | Amostra de verbos                                 | Classificação do grau de dificuldade              |
+| Reconhecimento | Recordar ou reconhecer informações, ideiais                                                     | Escreva, liste, rotule, nomeie, diga, defina      | Fácil                                             |
+| Compreensão    | Traduz, compreende ou interpreta informação com base no conhecimento prévio                     | Explique, resuma, parafraseies, descreva, ilustre | Intermediário                                     |
+| Aplicação      | Seleciona, transfere e susa dados para completar um problema ou tarefa com mínimo de supervisão | Use, resolva, demonstre, aplique, construa        | Intermediário                                     |
+| Análise        | Distinghel classifica e relaciona pressupostos, evidências ou estrutura de uma declaração       | Analise, categorize, compare, contraste, separe   | Difícil                                           |
+| Síntese        | Cria, integra e combina ideias                                                                  | Crie, planeje, elabore, desenvolva                | Difícil                                           |
+| Avaliação      | Aprecia, avalia ou critica com base em padrões e critérios específicos                          | Julgue, recomende, critique, justifique           | Difícil e recomendado para questões dissertativas |
+|----------------+-------------------------------------------------------------------------------------------------+---------------------------------------------------+---------------------------------------------------|
+
+Um dos onjetivos de identificar os graus de dificuldade é produzir coerência entre a trilha de aprendizagem e o processo de aprendizagem e o processo que avalia os resultados medidos por instrumentos avaliativos.
+
+** Texto conectando
+
+O que são funções intelectuais na aprendizagem e como tal conceito se faz relevante para a construção de instrumentos avaliativos baseados em questões?
+
+** Teoria de Resposta ao Item: os casos ENEM e ENADE (Vídeo)
+
+[[denote:20250602T120748][Teoria de Resposta ao Item]] pressupõe a realização de testes antes da prova.
+Cada questão ganha um peso, usado para ponderar o grau de dificuldade de forma inversamente proporcional (quantos mais alunos acertam, menor deve ser o grau de dificuldade).
+Uma das vantagens é que isso garante a comparabilidade entre as provas ao longo do tempo.
+
+Além disso, pressupõe-se que o candidato possa acertar itens com nível de dificuldade menor que o de sua proficiência, e errar questões com nível de maior dificuldade.
+O padrão de resposta do partricipante é considerado no cálculo do desempenho.
+
+** Texto conectando II
+
+Veja o vídeo e responda à seguinte questão: como um sistema de avaliação da aprendizagem em larga escala distingue-se daquele que se realiza no âmbito de um Curso Superior ofertado em Ensino a Distância?
+
+* Tema 6: Oficina 1 - elaboração, aplicação e avaliação de um Quiz como recurso avaliativo
+
+** DONE Desafio
+
+*** DONE Q01
+
+
+Pergunta:
+Qual é o principal objetivo da avaliação somativa?
+
+Respostas incorretas (4):
+A) Ajustar estratégias de ensino com base na observação dos alunos.
+B) Identificar os interesses e aptidões dos estudantes.
+C) Auxiliar o professor a planejar as aulas seguintes.
+D) Estimular a autoavaliação entre os estudantes.
+
+Resposta correta (1):
+E) Certificar o conhecimento e classificar os alunos com base no desempenho escolar.
+
+Feedback de acerto:
+A avaliação somativa tem como foco a certificação do conhecimento adquirido e a classificação dos alunos com base em seus resultados.
+
+
+
+
+*** DONE Q02
+
+
+Pergunta: Qual das opções descreve corretamente uma característica da avaliação formativa?
+
+Respostas incorretas (4):
+A) É realizada apenas no final do processo de ensino.
+B) Tem como objetivo principal classificar os estudantes.
+C) Utiliza exclusivamente provas padronizadas.
+D) Ignora a participação do professor no processo de avaliação.
+
+Resposta correta (1):
+E) Ajuda o professor a ajustar suas estratégias de ensino com base na observação contínua.
+
+Feedback de acerto:
+A avaliação formativa observa continuamente o processo de aprendizagem e permite que o professor ajuste suas estratégias conforme necessário.
+
+
+** Processos de Avaliação: Prática de avaliação - instrumentos (Vídeo)
+
+
+*** Pressupostos associada às escolhas dos instrumentos avaliativos
+
+**** Planejamento da avaliação
+
+- Definir o que avaliar do currículo
+- Analisar as informações que precisam ser coletadas para basear o julgamento
+- Escolher os indicadores avaliativos
+- Definir as respostas apropriadas para cada indicador avaliativo
+- Registrar os  critérios avaliativos e, se possível, compartilhá-los com os alunos
+
+*** Tipos de instrumentos
+
+- Provas
+  - Precisa ser interpretada e não meramente corrigida
+  - Preparo para uma boa prova:
+    - Deve conter uma intencionalidade
+    - Manter coerência com os conteúdos e estratégias utilizadas
+    - Adequação das questões ao nível dos alunos
+    - Distribuição entre fáceis, médias e difíceis
+    - Contextualizar as questões ou aprensentá-las de forma a provocar o raciocínio
+- Seminários
+- Trabalhos de pesquisa
+- Resumo e/ou resenha
+- Exercícios em sala
+- Caderno e outros materiais
+- Portfólio
+  - Coleção de produções dos alunos que proporcionam evidências do progresso de aprendizagem do aluno
+  - Composto por:
+    - Anotações pessoais
+    - Experiências
+    - Trabalhos pontuais
+    - Representações visuais
+- Pautas e registros de observação
+  - Instrumentos que organizam as informações que o professor obtém durante o processo de ensino-aprendizagem
+  - Instrumentos estruturados, previamente definidos ou originados da observação direta
+  - Permitem a objetivação da avaliação em processo
+- Auto-avaliação
+- Participação e/ou frequência nas aulas
+
+
+*** Análise dos resultados
+
+- O que o aluno está aprendendo?
+- O que o professor não está sendo capaz de ensinar?
+- Os objetivos propostos foram adequadamente atingidos?
+
+
+
+** Quiz como recurso avaliativo
+
+- Na Univesp, este um instrumento avaliativo direcionado às video-aulas
+- Relevância pedagógica:
+  - Aluno tem um /feedback/ imediato sobre seu desempenho
+  - Isso também gera dados importantes para os alunos
+  - É importante redirecionar onde o aluno pode revisitar os conteúdos para conseguir prosseguir em seu aprendizado
+- Elementos cruciais
+  - Foca, especialmente, no reconhecimento (a la [[denote:20250602T112951][Taxonomia Digital de Bloom]])
+  - Verbos de comando: nomeie, defina, diga, rotule
+
+* Tema 7: Oficina 2: elaboração, aplicação e avaliação das questões de múltipla escolha como recurso avaliativo
 
 * Tema 8
 

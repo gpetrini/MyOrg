@@ -255,6 +255,7 @@
 - Diversificar instrumentos avaliativos
 - Contradições entre avaliação interna (definidas pelo corpo docente) e avaliação externa (definidas por instituições superiores)
 
+
 *** O que é avaliação em EaD?
 
 - EaD não é uma cópia virtual da educação tradicional
