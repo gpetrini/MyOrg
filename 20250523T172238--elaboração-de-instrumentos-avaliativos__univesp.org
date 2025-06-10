@@ -658,6 +658,96 @@ A avaliação formativa observa continuamente o processo de aprendizagem e permi
 
 * Tema 7: Oficina 2: elaboração, aplicação e avaliação das questões de múltipla escolha como recurso avaliativo
 
-* Tema 8
 
-* Tema 9
+** DONE Desafio
+
+[[file:~/PhD/Univesp/2025/EDU340/Multipla_Escolha_Univesp.pdf][Desafio da semana]]
+
+*** DONE Q01
+*** DONE Q02
+
+
+** Elaborar, aplicar e avaliar/validar Questões de Múltipla Escolha (vídeo)
+
+- O vídeo apresenta o checklist para avaliar a elaboração da questão
+  - Aspectos gerais
+    - Precisa se basear nos materiais base
+    - Precisa ter uma referência
+    - Considera conteúdo de semanas diferentes (pensando em provas)
+  - Aspectos específicos
+    - Devem conter 5 alternativas (4 distratores)
+    - Deve ter o grau de dificuldade explícito de acordo com a [[denote:20250602T112541][Taxonomia de Bloom]]
+    - Evitar alternativas do tipo: todas estão corretas, todas são falsas
+    - Justifica faz parte da elaboração da questão
+  - A justificativa de questão do tipo "lacuna" pode ser feita a partir do trecho do texto
+
+** Elaborar e validar chaves de correção e feedback para questões de múltipla escolha (vídeo)
+
+- Formatos de questões
+  - Resposta única: Enunciado, uma afirmativa correta e as demais são distratoras
+  - Resposta múltipla: Enunciado, mails de uma afirmativa correta, mas com uma alternativa correta e as demais são distratoras
+  - Verdadeiro ou Falso: é uma variação do tipo resposta múltipla
+  - Informação incompleta: resposta selecionada pelo aluno completa um enunciado dado
+  - Lacuna: normalmente trabalha com fragmento de textos
+  - Interpretação: autoexplicativo
+  - Asserção/Razão: requer que o aluno construa uma relação de causalidade entre as afirmações
+
+** Instrumentos de Avaliação – As Questões Constantes da Prática Docente
+
+
+*** Algumas Palavras Iniciais
+
+O texto aborda instrumentos de avaliação educacional, destacando autores como Noll, De Cecco, Cronbach, Grounlund e Pophan.
+No Brasil, Vianna e Medeiros são referências na área.
+Os estudos focam na elaboração e análise de testes, com ênfase na formulação de questões e estatísticas para validade e fidedignidade.
+O artigo propõe discutir questões práticas levantadas durante a capacitação de docentes.
+
+*** Um Pouco da História dos Testes
+
+Os testes são os instrumentos mais antigos para verificação de conhecimentos, habilidades e comportamentos.
+Exemplos históricos incluem o imperador chinês Shun (2.205 a.C.) e Horace Mann, que propôs exames escritos e objetivos no século XIX.
+A docimologia, desenvolvida na França e Portugal, critica os métodos tradicionais de avaliação.
+Tyler (1949) sugeriu a inclusão de diversos procedimentos avaliativos, como escalas de atitude e inventários.
+
+*** Técnicas e Instrumentos de Avaliação
+
+- Testes de aproveitamento escola:
+  - Dividem-se em objetivos (respostas pré-definidas) e dissertativos (exigem raciocínio).
+  - Classificam-se em testes iniciais, de unidade e de resumo final, conforme a extensão do conteúdo.
+- Técnica de Observação:
+  - Pode ser sistemática (com objetivos definidos) ou assistemática (casual).
+  - Instrumentos incluem "check-list" e escalas de classificação.
+- Interrogatório oral
+  - Tradicional, mas sujeito a subjetividades.
+  - Deve ser preparado e promover comunicação cooperativa, evitando improvisação.
+- Discussão
+  - Avaliada em duas fases: observação do desempenho e relatório dos alunos.
+  - Técnicas complementares incluem sociometria, técnicas projetivas e registro anedótico.
+
+
+
+
+** Tentando Responder às Questões Levantadas
+
+- Somente os testes avaliam? Que outras formas de avaliação existem?
+  - Além de testes, existem observação, trabalhos de pesquisa, relatórios, etc.
+  - Requisitos básicos: fundamentação em objetivos explícitos, planejamento, instruções claras e critérios definidos.
+- Instrumentos de avaliação baseados em objetivos limitam a aprendizagem do aluno?
+  - A limitação ocorre quando objetivos são excessivamente operacionalizados.
+  - Objetivos devem ser significativos e estimular raciocínios complexos, não apenas memorização.
+- É possível elaborar instrumentos diferentes para os mesmos objetivos?
+  - Sim, como testes e trabalhos de pesquisa, dependendo do tipo de avaliação (formativa ou somativa).
+- Como estabelecer critérios para os instrumentos de avaliação?
+  - Critérios podem ser absolutos (baseados em objetivos) ou relativos (comparativos).
+  - Devem ser claros, estáveis e adequados ao estágio evolutivo do aluno.
+  - Cuidados: evitar subjetividade e autoritarismo, garantindo coerência com o ensino.
+
+*** Palavras Finais
+
+A avaliação deve utilizar diversos instrumentos, coerentes com os objetivos de ensino.
+Critérios explícitos e objetivos desafiadores são essenciais para evitar limitações na aprendizagem.
+O foco deve ser o desenvolvimento de raciocínios complexos, não apenas a memorização.
+
+* Tema 8: Oficina 3: elaboração, aplicação e avaliação das questões dissertativas como recurso avaliativo
+
+* Tema 9: Apresentação dos resultados das oficinas
