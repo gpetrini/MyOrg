@@ -750,4 +750,76 @@ O foco deve ser o desenvolvimento de raciocínios complexos, não apenas a memor
 
 * Tema 8: Oficina 3: elaboração, aplicação e avaliação das questões dissertativas como recurso avaliativo
 
+** Elaborar, aplicar e avaliar/validar Questões Dissertativas (Vídeo)
+
+*** Como elaborar questões dissertativas
+
+São questões adequadas para avaliar:
+
+- Funções intelectuais superiores
+- Raciocínio lógico
+- Capacidade de analisar, hierarquizar e sintetizar ideias
+- Justificativa das opiniões
+- Clareza de expressão
+- Manifestação da criatividade e originalidade
+- Organização de ideias
+
+*** Dificuldades na aplicação de avaliações dissertativas
+
+- Maior tempo de correção
+- Influência da subjetividade do professor
+- Dificuldade para avaliar o aprendizado de toda matéria
+- Interpretação adequada de seus propósitos pelos estudantes
+- Dificuldade para fornecer feedback específico e imediato
+
+*** Particularidades das questões dissertativas na Univesp
+
+- Foco no aprendizado do aluno
+- Selecionar conteúdo fundamental para o exercício profissional e dialogar com o conteúdo disponibilizado no AVA
+- Cada questão deve conter um enunciado, o comando e um parâmetro de correção junto da rubrica de correção
+- Enunciado claro e inteligível
+- Apresentar um comendo
+- Levar em consideração o objetivo de aprendizagem e função intelectual
+- A contextualização é importante para que os alunos não dependam da memória para a resolução da prova
+  - A capacidade de memorização é diferente da capacidade de análise e do aprendizado
+
+*** Checklist
+
+- Existe um contexto ou referencial específico para que o estudante possa entender a questão?
+- A questão requer reflexão e análise?
+- O comando do enunciado é claro sobre o que fazer e como?
+- A interpretação das questões dissertativas e a avaliação das respostar permitem avaliar como o aluno desempenha funções intelectuais superiores?
+- O ceonteúdo está focado no material base da disciplina?
+- As questões têm referência de conteúdo, texto, etc?
+- As questões avaliam conteúdos relativos a diferentes semanas do curso?
+
+*** O que evitar
+
+- Agregue os dados pontuais específicos que orientes os alunos a desenvolver a questão
+- Contextualizar
+- Perguntas tais como: O quê? Quando? Quem foi?
+- Não solicitar opinião pessoal
+- Evitar perguntas de sim ou não
+- Evitar perguntas vagas: reflita, comente
+
+*** Como realizar a aplicação
+
+O aluno deve ter informação sobre:
+
+- Tempo
+- Condições de aplicação
+- Permissão ou não para utilizar material adicional
+- Valor/peso
+- Grau de dificuldade
+- Aplicação é dada junto às questões objetivas
+
+*** Feedbacks
+
+- A resposta deve responder a questão perguntada
+- Deve estar bem escreita com clareza, objetividade e atendendo à norma culta
+- Tamanho da resposta pode ser indício de que não respondeu à pergunta
+- Fundamentação dos argumentos
+- Apresentar uma expectativa de resposta com base no comando do enunciado
+- Facilitador corrige a mesma questão e não a prova inteira
+
 * Tema 9: Apresentação dos resultados das oficinas
