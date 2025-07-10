@@ -1,0 +1,27 @@
+#+title:      Data Assimilation Meeting Minutes
+#+date:       [2025-07-10 qui 16:00]
+#+filetags:   :meeting:
+#+identifier: 20250710T160025
+
+* Defining the research question <2025-07-10 qui>
+
+- Code is ready and tested for a simple model
+  - Industry and Island model is ready
+- First paper to calibrate the model and not adjust the values using [[denote:20240314T120430][Data Assimilation]]
+- When there are interdependent parameter, the might have some problems in which the value goes to the right direction, but the parameter goes to the wrong direction
+  - It impose that it is better to select the parameters manually rather than callibrate all of them
+  - Any equation that have more than one parameter, this problem might happen
+  - One suggestion, is to focus on the relevant parameters which sensitivity analisys (from the papers)
+- Focus on the centralized labor-market (finance or energy) and variable number of firms
+  - Present the energy model as a new model
+  - Note: Finance is just for teaching, so it will be better to use the K+S-energy
+  - Likely calibrate with USA data using Sidneys work
+  - The energy sector and the climate box is different from the DSK model, but the way firms react to energy is the same as DSK
+    - It has a competition among the energy sector, not a centralized one
+    - The technical coefficient between E-, and C-firms are different
+    - The energy sector has circulatiry since it need capital goods and K-firms need energy
+- Add policy experiments:
+  - Public R&D: Based on a new frontier exogenous to the firms (easy to implement)
+  - Profit share among industries: differencial taxes can impact the share among firms (just a scenario analysis)
+  - Create a reservation bucket
+- Measure the similarity before and after turning on DA and apply the similarity protocol on that
