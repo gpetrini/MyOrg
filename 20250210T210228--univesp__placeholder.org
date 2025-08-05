@@ -1287,6 +1287,37 @@ Comentários gerais:
 **** Grupo 017
 **** Grupo 018
 **** Grupo 019
+
+* PJI500
+
+** Quinzena 0 [2025-08-04 Mon]
+
+*** Reunião com a coordenação (extraordinária)
+
+- Alunos estão no 5 semestre e já fizeram um PI anteriormente
+- Curos:
+  - Administração
+  - Engenharia de Produção
+  - Tecnologia em Processos Gerenciais
+- Tema: Mapeamento de processos em ambiente organizacional
+  - Objetivo: Criação de um protótipo que busquem soluções para problemas reais e recorrentes
+- Funções do Orientador
+  - Acompanhar grupos
+  - Mediação de conteúdo
+  - Mediar conflitos
+  - Avaliar trabalhos
+- Ações iniciais
+  - Apresentação breve
+  - Abrir um fórum em cada grupo e se apresentar
+  - Encontrar os grupos (4 a 6 grupos)
+    - DRP03-PJI500-SALA-001GRUPO-006
+    - DRP03-PJI500-SALA-001GRUPO-007
+    - DRP03-PJI500-SALA-001GRUPO-008
+    - DRP03-PJI500-SALA-001GRUPO-009
+    - DRP03-PJI500-SALA-001GRUPO-010
+  - Marcar primeira reunião síncrona ([2025-08-11 Mon]a [2025-08-24 Sun])
+    - Preferencialmente no período noturno
+
 * Relatórios
 
 ** Relatório I
