@@ -1,0 +1,15 @@
+#+title:      Trabalho com Projetos Integradores
+#+date:       [2025-08-09 Sat 11:27]
+#+filetags:   :univesp:
+#+identifier: 20250809T112751
+
+* Tema 2: Metodologias ativas de aprendizagem, PBL e Design Thinking
+
+** Metodologias ativas de aprendizagem
+
+Nesse vídeo, é discutido em que consiste a etapa final do PI em termos de como é avaliado.
+AO longo do vídeo, ressalva as rubricas de correção.
+
+- Instrumentos de avaliação
+  - Relatório final
+  - Vídeo de protótipo

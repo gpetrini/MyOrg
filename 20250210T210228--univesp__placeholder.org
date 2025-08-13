@@ -1318,6 +1318,94 @@ Comentários gerais:
   - Marcar primeira reunião síncrona ([2025-08-11 Mon]a [2025-08-24 Sun])
     - Preferencialmente no período noturno
 
+
+** Quinzena 1
+
+- Aluno deve se apropriar do conteúdo referente à quinzena I
+- Objetivo da quinzena:
+  - Análise do cenário de pesquisa
+  - Início do levantamento bibliográfico
+- Estimular a participação nos fóruns
+- Apresentação as etapas e avaliações do PI
+  - ênfase no relatório final e produção do vídeo
+- Definir com o grupo um dia e um horário para as reuniões
+- Sugestões de ações a serem desenvolvidas (items do plano de ação Q02):
+  - Pensar no problema/objetivo
+    - Associado a uma comunidade (escola, empresa, comércio, etc)
+  - Título provisório do trabalho
+  - Local a ser desenvolvido o PI
+  - Estudar o que está no AVA
+- Boas práticas:
+  - Incentivar uso de resumo e resenhas, ficha de citações com a ideia de facilitar a escrita do plano de ação
+  - Sugerir modelo de proposta individual disponível no AVA
+  - Enviar um resumo depois de cada reunião e incluir próximos passos
+
+*** TODO Assistir conteúdo Quinzena 01
+SCHEDULED: <2025-08-11 Mon 16:00-17:30>
+:PROPERTIES:
+:org-gcal-managed: org
+:calendar-id: c_c16eca421b987fdacfb0ae461df81f1b1bf2186448e9401ab3102dd74c8d0471@group.calendar.google.com
+:ETag:     "3509849603235262"
+:entry-id: t1qolnqjnrg5t7m5l1f1lnb8e4/c_c16eca421b987fdacfb0ae461df81f1b1bf2186448e9401ab3102dd74c8d0471@group.calendar.google.com
+:END:
+:org-gcal:
+:END:
+
+**** Mapeamento de processos
+
+Dicionário de símbolos:
+- Círculo: Operação
+  - Montagem e desmontagem
+  - Mudança intensional de características
+- Seta: Transporte
+  - Movimentação de materiais e pessoas entre locais de trabalho
+  - Deslocamento
+- Quadrado: Inspeção
+  - Exame para comparação em relação aos padrões estabelecidos
+- Letra D: Espera
+  - Aguarda por outros materiais ou pela ação seguinte do processo
+- Triângulo invertido: Armanezagem
+  - Retenção de material cuja remoção deve ser autorizada
+
+***** Ferramentas de descrição e análise
+
+- Mapofluxograma
+  - Mapeamento em planta
+- Diagrama de fluxo
+  - Contém uma descrição de cada etapa do processo em que cada etapa está associada a um símbolo específico
+  - Pode ser indicado a distância e tempo percorrido em cada etapa
+  - Uma sugestão de como comparar o que é proposto do que era executado é contabilizar número de processos e tempo estimado
+- Carta de processo
+  - A carta de processo tem a vantagem de poder indicar quais atividades são desempenhadas paralelamente (simultaneamente)
+  - Esta carta também pode contemplar mais de um processo
+- Carta de atividade
+  - Esta carta mostra o tempo das atividades que o operador utilizou para desempenhar determinado processo
+- Carta de operação
+  - Está pode indicar em maior detalhe a atividade a ser desempenhada (ex: mão esquerda e direita)
+- Roteiro de operação
+
+***** Resumo do projeto integrador
+
+- Na visita a campo, sugere-se que os alunos vão com questões pré-definidas
+- Existe um feedback de um avaliador externo (empresa)
+- Tema: mapeamento de processo em um ambiente organizacional
+  - Técnica criada para mapear visualmente os fluxos de trabalho e os processos
+  - Envolve a criação de um fluxograma de processo (dentre outras ferramentas)
+
+***** Concepção do projeto
+
+- Mapeamento de processos envolve dialogar com vários setores de uma empresa
+- O fluxo de informação pode ter uma direção reversa do processo de produção
+- O cliente não é exclusivamente um ator fora da empresa (pode ser outra etapa)
+- Este mapeamente é uma etapa no gerenciamento de negócios e de processos, permitindo
+  - Padronizar processos de trabalho
+  - Determinação de índices para medir desempenho
+  - Identificação de gargalos
+  - Maior assertividade ao delimitar funções e papeis
+  - Previsão de recursos e estimativas de custo mais eficientes
+  - Maior controle sobre processos
+  - Otimização de fluxos de trabalho
+
 * Relatórios
 
 ** Relatório I
@@ -1349,6 +1437,10 @@ Número de confirmação: 1bf3640711f44deca5a91fa0f40451fc (<2025-06-07 Sat>)
 ** Relatório VI
 
 Número de confirmação: a715270a618e4f0bbb6cac5469872828 (<2025-07-07 seg>)
+
+** Relatório Agosto
+
+Número de confirmação: 141d0184953e4dd59461a389bcb8d6d4 ([2025-08-09 Sat])
 * Emacs internals :noexport:
 
 # Local Variables:
