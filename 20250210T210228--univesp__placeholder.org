@@ -1441,6 +1441,16 @@ Número de confirmação: a715270a618e4f0bbb6cac5469872828 (<2025-07-07 seg>)
 ** Relatório Agosto
 
 Número de confirmação: 141d0184953e4dd59461a389bcb8d6d4 ([2025-08-09 Sat])
+
+** Relatório de Setembro
+
+- Comparaci às reuniões e assisti às gravações quando não estive sincronicamente
+- Abri as respectivas quinzenas
+- Realizei reuniões com os grupos e defini horários regulares para as reuniões
+- Atividades teóricas:
+  - Tema 03 da disciplina INT410
+  - Quinzena 2 PJI500
+
 * Emacs internals :noexport:
 
 # Local Variables:
