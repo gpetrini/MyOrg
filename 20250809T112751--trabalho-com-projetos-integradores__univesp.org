@@ -50,3 +50,225 @@ OBS: Link não está funcionando. Procurando pelo título do texto, não encontr
 Nas instruções do fórum, estava indicado para fazer em duplas.
 Por se tratar de uma atividade criada a 4 anos atrás, estou considerando que o enunciado não está atualizado e, por essa razão, optei por não respondê-lo.
 No entanto, respondi as questões de estudo que avaliei como satisfatórias para atestar a apreensão do material desigado.
+
+
+* Tema 4: Mediação pedagógica nos Projetos Integradores da Univesp - técnicas de comunicação e gestão da mediação no trabalho colaborativo
+
+** Desafio
+
+Propor solução:
+
+** Vídeo-base: Trabalho colaborativo (Senac)
+
+Estratégias para evitar conflitos:
+- Criar espaços para as pessoas se conhecerem
+- Construir acordos de convivência
+- Expressar com firmeza e amorosidade sobre o que desagrada
+- Confiança para mostrar vulnerabilidade, pedir ajuda e permitir erros
+- Valorizar esforços e acompanhar desempenho
+- Estimular o desenvolvimento integral das pessoas
+- Esclarecer condutas e entregas esperadas, criando um parâmetro ético
+
+** Vídeo-base: Resolução de conflitos (Senac)
+
+- Conflitos sugerem que mudanças devem acontecer
+  - Para que tais mudanças sejam construtivas, é preciso:
+    - Compreender cenários complexos
+    - Dialogar
+    - Negociar
+    - Resolver problemas
+  - Círculos restaurativos na resolução de conflitos:
+    - Reparação de danos
+    - Oportunidade de aprendizagem
+      - Reduzindo as chances de reincidência de conflitos
+    - Dialogo
+    - Participação voluntária
+    - Etapas:
+      - Conversas individuais para mapear os fatos
+      - Reflexão sobre o que é necessário acontecer para melhorar a situação
+      - Decisão tomada coletivamente
+      - Agendamento do círculo de discussão para escuta ativa e possibilidade de fala
+        - Permitindo uma visão sobre as causas e consequências do conflito
+          - Evidencia-se que todos foram responsáveis pelo conflito, mas com grau de participação distinto
+      - Invés de punições ou penas, estabelecer compromissos coletivos
+        - Esses protagonismo deve ser proporcional à contribuição para o conflito
+        - Gerando uma experiência de aprendizagem e de protagonismo
+
+** Texto-base: Administrando conflitos em projetos com equipes
+
+*** Resumo
+
+
+- Conflitos são inerentes às interações humanas devido à diversidade de opiniões, personalidades e necessidades.
+- Um conflito bem administrado pode evitar a deterioração das equipes e a entrega de um trabalho de baixa qualidade ("produto Frankenstein").
+- O artigo aborda a gestão de conflitos através da formação de equipes, Comunicação Não Violenta (CNV) e técnicas de negociação.
+
+
+*** Introdução
+
+- Visão histórica: Os conflitos eram vistos como disfuncionais (Administração Científica - Taylor, Fayol).
+- Novas perspectivas: Teoria das Relações Humanas (Mayo) e Interacionismo (De Dreu, Putnam) passaram a ver os conflitos como potencialmente benéficos, estimulando debates e curiosidade.
+- Objetivo: Apresentar referenciais teóricos e técnicas para transformar situações conflituosas em oportunidades de crescimento, mantendo a coesão da equipe e a qualidade da entrega.
+
+*** Conceituando o conflito
+
+- Origem: Latim ~conflictus~ (choque, embate).
+- Definição contemporânea: Existência de opiniões, posições ou necessidades divergentes ou incompatíveis.
+- O conflito é uma dificuldade a ser resolvida ou administrada, não necessariamente um problema.
+- A abordagem adotada define se ele será superado ou se transformará em uma condição para o desenvolvimento do trabalho.
+
+*** Formando uma equipe de trabalho
+
+
+Diferença crucial:
+- Grupo de trabalho: Soma de esforços individuais.
+- Equipe de trabalho: Sinergia multiplicadora de esforços com responsabilidade solidária e objetivos comuns.
+- Características de equipes bem-sucedidas (Chiavenato, 2015):
+  - Compromisso com objetivos compartilhados
+  - Busca de consenso
+  - Comunicação aberta e honesta
+  - Liderança compartilhada
+  - Clima de cooperação e confiança
+  - Valorização da diversidade
+  - Reconhecimento e resolução rápida de conflitos
+
+A formação de uma equipe é um "contrato" inicial que facilita a administração de diferenças.
+
+*** Tipos de conflitos
+
+- Conflito Interno (Intrapessoal): Dilemas pessoais (crenças, história, medos) que afetam o indivíduo e, consequentemente, a equipe.
+- Conflito Externo (Interpessoal): Ocorre na interação entre indivíduos.
+- Níveis de manifestação (Chiavenato, 2004):
+  - Percebido/Latente: Conflito sentido mas não declarado (ex.: "Guerra Fria").
+  - Experienciado/Velado: Gera sentimentos negativos (raiva, hostilidade) mas não é manifestado claramente. /Mais comum/.
+  - Manifestado/Aberto: Expresso abertamente através de interferência ativa ou passiva, podendo prejudicar a dinâmica do grupo.
+
+*** Situações geradoras de conflitos e possibilidades de resolução
+- Estratégia central: Comunicação aberta e escuta ativa.
+  - Etapa 1: Verificar expectativas (ex.: todos entendem objetivos, prazos, suas responsabilidades?).
+  - Etapa 2: Ouvir atentamente as respostas, praticando a escuta ativa.
+- Técnicas de Escuta Ativa (Moreira, 2018):
+  - Presencial: Linguagem corporal positiva (contato visual, acenos).
+  - Virtual: Netiqueta. Em ambos: sintetizar, estimular respostas, perguntar, parafrasear.
+- Técnicas para Feedback Eficaz:
+  - Planejar a reunião
+  - Tornar o clima favorável (comece pelos pontos positivos)
+  - Ser sincero, sem agredir
+  - Exemplificar com fatos concretos
+  - Abordar pontos negativos de forma construtiva
+  - Apresentar um plano de ações para correção
+- Dificuldade cultural (Fernando, 2018): Brasileiros podem ter tendência a evitar discordâncias explícitas ("não" vira "talvez").
+- Integração de novos membros: Focar nos membros originais para repassar objetivos e premissas. Criar novas regras básicas com a participação de todos se necessário.
+
+*** Lidando com pessoas em situações de conclito
+
+- Evitar rótulos como "pessoas difíceis". Técnicas adaptadas de Moreira (2018):
+  - Hostil/Agressivo:
+    - Dar tempo para se acalmar.
+    - Chamar pelo nome, ser firme, reforçar pacto de civilidade.
+    - Mostrar disponibilidade e levar a sério as colocações.
+  - Queixoso:
+    - Ouvir atentamente e reconhecer a importância do dito.
+    - Não concordar nem se desculpar automaticamente.
+    - Levar para o modo "solução de problemas" com perguntas específicas.
+  - Indiferente/Calado:
+    - Fazer perguntas abertas, curtas e diretas.
+    - Respeitar os silêncios.
+    - Informar os objetivos do grupo e perguntar qual sua contribuição.
+  - Negativista/Pessimista:
+    - Fazer comentários otimistas e realistas baseados em soluções passadas.
+    - Não discutir o pessimismo.
+    - Não forçar ações se a pessoa não se sentir pronta.
+  - "Sabe-tudo":
+    - Preparar-se bem com informações e regras institucionais.
+    - Ouvir com atenção, evitar excesso de explicações.
+    - Focar em fatos concretos e opiniões alternativas de forma descritiva.
+  - Inseguro/Hesitante:
+    - Conversar francamente sobre as reservas.
+    - Ajudar a resolver o problema enfatizando suas habilidades e competências.
+
+
+#+caption: Estilos de administração de conflitos
+| Estilo      | Assertividade | Cooperatividade | Descrição/Quando usar                                                                                     |
+|-------------+---------------+-----------------+-----------------------------------------------------------------------------------------------------------|
+| Competição  | Alta          | Baixa           | Impor seus interesses. Emergências, princípios importantes, beco sem saída.                               |
+| Acomodação  | Baixa         | Alta            | Sacrificar seus interesses pelo outro. Preservar harmonia, questão é mais importante para o outro.        |
+| Afastamento | Baixa         | Baixa           | Evitar o conflito. Custo do confronto > benefício, questões insignificantes, esfriar a cabeça.            |
+| Acordo      | Média         | Média           | Solução de meio-termo com concessões mútuas. Perdas para todos sem acordo, lados com mesma força.         |
+| Colaboração | Alta          | Alta            | Encontrar solução que satisfaça plenamente a todos. Interesses mútuos importantes, ambiente de confiança. |
+|             |               |                 |                                                                                                           |
+
+CONCLUSÃO
+
+*** Conclusão
+
+- Não existe uma estratégia única para mediar conflitos. O importante é conhecer e utilizar as estratégias existentes.
+- O desafio é encontrar a melhor estratégia para cada caso, em consonância com a equipe.
+- O foco deve estar nas pessoas, suas interações, potencialidades e no bem-estar coletivo.
+- Melhorar a convivência é imprescindível para a consecução de um trabalho verdadeiramente coletivo e colaborativo.
+
+* Tema 5: Mediação pedagógica no PI - técnicas de gestão do tempo no trabalho colaborativo
+
+** Vídeo-base: Gestão do tempo em projetos de PI
+
+- Fator humano é o mais elemento de desvios ao cronograma
+- Definições Equivocadas – de planejamento, de problemas, de objetivos ou de solução/prototipagem;
+- Comunicação ineficaz
+- Para evitar:
+  - Estimar a duração de cada etapa
+  - Estabelecer cronograma (univesp já o faz)
+    - Importante acompanhar este cronograma
+  - Oferecer feedbacks sobre as entregas e os relatórios
+    - Isso impede que alunos avancem no processo sem ter validação
+
+** Gerenciamento do Tempo em Projetos Integradores (Texto-Base)
+
+*** Introdução
+
+A metodologia de projetos exige administração do tempo para sincronia entre os membros da equipe.
+O objetivo é garantir entregas programadas nos prazos determinados.
+O orientador deve apoiar as equipes no desenvolvimento adequado das etapas e conclusão dos PIs no prazo.
+
+*** Como começar
+
+Etapas organizadas e sistematizadas auxiliam o gerenciamento de várias equipes.
+- Linha base do cronograma :: definir datas de início e término do projeto e garantir acesso a todos.
+- Estimar recursos :: pessoas, equipamentos, materiais e tempo, lembrando que o tempo é finito.
+- Planejamento de tempo :: sequenciar atividades, estimar recursos e durações, e desenvolver o cronograma.
+Cada atividade tem duração de uma quinzena.
+A equipe deve organizar as entregas respeitando os prazos previamente definidos.
+
+*** Cronograma por Quinzenas
+
+- 1ª Quinzena :: análise do cenário e levantamento bibliográfico.
+- 2ª Quinzena :: definição do problema e início do plano de ação.
+- 3ª Quinzena :: definição do título e desenvolvimento do protótipo.
+- 4ª Quinzena :: plano de ação e relatório parcial.
+- 5ª Quinzena :: análise dos resultados e referências bibliográficas.
+- 6ª Quinzena :: elaboração do resumo e considerações finais.
+- 7ª Quinzena :: revisão final, relatório completo e gravação do vídeo.
+
+*** Como auxiliar a equipe no gerenciamento do tempo
+
+O orientador deve controlar o cronograma das reuniões e acompanhar entregas.
+Atualizar o cronograma conforme avanços e coordenar replanejamentos em caso de atrasos.
+Usar o plano de ação como aliado para manter o grupo comprometido com o cronograma.
+
+*** O que pode interferir no gerenciamento do tempo
+
+- Definição apressada do problema :: pode comprometer o controle do tempo.
+- Pessoas :: principal fator de desvios; é preciso atenção à execução e entrega das atividades.
+- Má comunicação :: pode gerar caos no projeto; deve ser tratada com clareza e organização.
+- Uso inadequado de ferramentas :: conhecer Google Drive, OneDrive, Google Chat, Teams e Agenda ajuda a colaboração.
+- Feedbacks superficiais :: prejudicam o processo de melhoria.
+- Informações dispersas :: dificultam a linearidade e histórico do projeto.
+- Responsabilidade coletiva :: trabalho em PIs exige colaboração e respeito mútuo.
+
+*** Considerações finais
+
+Ninguém é produtivo o tempo todo.
+O adiamento de tarefas gera acúmulo de trabalho.
+Cada membro deve assumir sua responsabilidade.
+É essencial reservar tempo para relações pessoais, lazer e descanso.
+A concentração em cada atividade aumenta a qualidade do trabalho.
+Desconectar-se periodicamente permite compreender melhor o todo.

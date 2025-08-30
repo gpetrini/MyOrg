@@ -1340,8 +1340,8 @@ Comentários gerais:
   - Sugerir modelo de proposta individual disponível no AVA
   - Enviar um resumo depois de cada reunião e incluir próximos passos
 
-*** TODO Assistir conteúdo Quinzena 01
-SCHEDULED: <2025-08-11 Mon 16:00-17:30>
+*** DONE Assistir conteúdo Quinzena 01
+CLOSED: [2025-08-24 Sun 17:51] SCHEDULED: <2025-08-11 Mon 16:00-17:30>
 :PROPERTIES:
 :org-gcal-managed: org
 :calendar-id: c_c16eca421b987fdacfb0ae461df81f1b1bf2186448e9401ab3102dd74c8d0471@group.calendar.google.com
@@ -1406,6 +1406,159 @@ Dicionário de símbolos:
   - Maior controle sobre processos
   - Otimização de fluxos de trabalho
 
+
+** Quinzena 2
+
+*** Reunião com a coordenação (gravação)
+
+- Ao criar o resumo, disponibilizar o link da gravação
+- Se o grupo não aparecer, escrever no resumo que ninguém apareceu, disponibilizar gravação e agendar próxima reunião
+- Não deve ser utilizado uma empresa hipotética
+- Não deve ser coletado dados sem autorização da empresa
+  - As autorizações serão requeridas na quarta quinzena (entrega do relatório parcial)
+- Avaliar se faz sentido mapear determinado processo
+  - Exemplo da manicure que atende a domicilio por meio de uma plataforma (existe processo), gerenciamento de agendamento, deslocamento
+- Ações da quinzena (25/08 a 07/09):
+  - Interajam com a comunidade
+    - Apresentar carta de apresentação para a empresa que vão atuar
+  - Definam o problema
+  - Escrever e entregar plano de ação
+- Reforçar a importância de estudar o conteúdo do AVA
+  - Indicar que isso irá direcionar o trabalho
+- Agendar segunda reunião
+  - Entre 25/08 a 29/08 preferencialmente
+  - Apresentar rubricas de avaliação
+    - Indicar que se os grupos seguirem todas as recomendações, vão receber a nota máxima
+  - Abrir modelo do plano de ação
+- Auxiliar na distribuição de tarefas dentro do grupo
+- Acompanhar escrita do Plano de Ação
+
+*** DONE Assistir conteúdo Quinzena 02
+CLOSED: [2025-08-24 Sun 18:39] SCHEDULED: <2025-08-23 Sat>
+
+Observações: o conteúdo metodológico é igual ao do PI anterior.
+
+**** Gráficos de atividade (video aula)
+
+Serão considerados os seguintes gráficos de atividade:
+ - Gráficos homem-máquina
+   - Exemplo: compra de café em uma mercearia
+     - O gráfico vai identificar em uma forma visual cada ente envolvido e a respectiva operação
+       - Identifica-se quando o respectivo ente está em operação ou aguardando
+       - Identifica-se o tempo de cada operação e é possível listar o total de trabalho de todos ao final do ciclo
+ - Estudos de micromovimentos
+   - Registro das atividades na execução de uma tarefa que envolva homem e máquina no tempo normal de produção
+     - Exemplo: como as mãos estão sendo usadas ao operar uma máquina, tronco, etc
+ - Filmagem de operações
+   - Deve ser acordado com as partes para que elas operem no ritmo normal de operação
+
+**** Lean production (vídeo aula)
+
+- Objetivo:
+  - Identificar e reduzir desperdícios na linha de produção
+    - Valor: Aqulo que o cliente considera importante no momento específico
+    - Fluxo de valor: Soma de todas as fases que levam o produto da cadeia produtiva ao cliente
+    - Puxar: Nenhuma etapa deve ser repassada ao cliente ao menos que tenha sido demandada
+      - Produzir sob demanda
+    - Fluxo: Produção de cada parte do produto por vez
+      - Não produz para constituir estoque
+    - Perfeição: é preciso que todas as demais fases ocorram para identificar gargalos e realizar a eleminação progressiva do desperdício
+  - Aplicar os princípios da manufatura enxuta ao mapeamento de processos em um ambiente organizacional.
+  - Foco na redução de desperdícios.
+  - Criação de protótipo com base em desejabilidade, viabilidade e praticidade.
+- Etapas do Projeto (inspiradas no plano da disciplina)
+  - Análise do cenário atual.
+  - Planejamento e proposição do tema (problema relacionado aos desperdícios).
+  - Levantamento bibliográfico (Lean, Kaizen, Kanban, Poka-Yoke).
+  - Proposta de solução (protótipo inspirado em ferramentas Lean).
+  - Análise dos resultados.
+  - Finalização do protótipo, relatório e vídeo.
+- Conceitos Lean Aplicáveis
+  - Eliminação dos sete desperdícios:
+    - Sobreprodução, espera, transporte, processamento excessivo, inventário, movimento, defeitos.
+  - Ferramentas Lean:
+    - Kaizen (melhoria contínua).
+    - Kanban (fluxo puxado).
+    - Poka-Yoke (à prova de erros).
+  - Princípios:
+    - Qualidade imediata (zero defeito).
+    - Minimizar desperdícios.
+    - Flexibilidade produtiva.
+    - Relacionamento com fornecedores.
+- Resultados Esperados
+  - Processos mais eficientes, com menos desperdício.
+  - Aumento da qualidade, redução de custos e melhor adaptação ao cliente.
+  - Protótipo funcional com aplicação prática dos conceitos Lean.
+
+**** Por que mapear processos (Vídeo aula)
+
+Por que mapear?
+- Permite que a empresa conheça os processos atuais
+- Identificar oportunidades
+- Criar soluções ou otimização de processos
+- Aperfeiçoamento contínuo
+
+Exemplos fornecidos em aula:
+- Hierarquia típica de processos (pastas windows)
+  - Macroprocessos que parte da raíz do sistema até a home
+  - Permite que a empresa observe como os processos se desdobram e ter uma visão holistica
+    - Incluindo caieia de processos, visão operacional (fluxogramas e procedimentos operacionais)
+  - SIPOC é um tipo de diagrama que permite mapear esses processos:
+    - Quais são as entradas e saídas
+    - Início e término das operações
+    - Sequência de atividades
+    - Responsáveis pelas tarefas
+    - Quem são os clientes
+    - Sigla: Supplier, Input, Process, Output, Customer; Exemplos:
+      - S: Produção, Vendas, TI
+      - I: Ordem de produção, pedido de venda, Impressoras, Internet
+      - P: Faturamento
+      - O: Romaneio, Etiquetas, Relatórios, Aviso de Embarque
+      - C: Transportadora, área de expedição (outro processo), Contabilidade
+
+Óptica do cliente:
+- Nota: sempre identificar quem é o cliente (processo interno, outras firmas, etc)
+- Valores:
+  - Acessibilidade
+  - Qualidade
+  - Design
+  - Customização
+  - Ergonomia
+  - Diversidade de modelos
+  - Custo
+  - Prazo
+  - Inovação
+  - Atendimento
+
+Desperdício:
+- Atividades que consumem recursos, mas não agregam valor
+  - Isso inclui atividades não necessárias ou redundantes
+- Exemplos de desperdícios:
+  - Defeito (Inspeção e retrabalho)
+  - Espera
+  - Movimentações desnecessárias
+  - Atividades desnecessárias
+  - Estoque (gerenciamento, inspeção, etc)
+  - Transporte
+  - Excesso de produção
+
+
+*** Grupo 06
+*** Grupo 07
+*** Grupo 08
+
+- Estão pensando em atuar em um restaurante
+  - Talvez mapear a produção de um prato específico
+  - Ou de um período específico do restaurante
+  - Grupo mostrou objeção ao mapear maior número de processos possíveis
+
+*** Grupo 09
+*** Grupo 10
+
+*** Reunião com coordenação (tira-dúvida) ([2025-08-28 Thu])
+
+- De modo geral, nenhuma questão/atualização relevante
+
 * Relatórios
 
 ** Relatório I
@@ -1450,6 +1603,8 @@ Número de confirmação: 141d0184953e4dd59461a389bcb8d6d4 ([2025-08-09 Sat])
 - Atividades teóricas:
   - Tema 03 da disciplina INT410
   - Quinzena 2 PJI500
+  - Tema 04 e 05 da disciplina INT410
+  - Começando tema 06
 
 * Emacs internals :noexport:
 
