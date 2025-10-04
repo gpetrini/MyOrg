@@ -1559,6 +1559,150 @@ Desperdício:
 
 - De modo geral, nenhuma questão/atualização relevante
 
+
+
+** Quinzena 3
+
+*** Reunião com a coordenação [2025-09-04 Thu]
+
+**** Recados gerais
+
+- Nada de muito específico para registrar
+
+**** Informações sobre quinzena 03
+
+- Não há nenhuma entrega pervista, mas permite planejamento para a quinzena com entrega do relatório parcial
+- Prioridades da quinzena:
+  - Criar a linha de discussão, com os seguintes objetivos
+    - Definir o título definitivo do trabalho
+      - Breve (com no máximo 10 palavras)
+    - Pesquisar, na literatura, fontes confiávies sobre o tema
+      - Fazer o levantamento bibliográfrico sobre os principais autores que estudaram e analisaram os temas relacionados ao problema do PI
+        - Pesquisar na biblioteca da Univesp e outras bases de referência
+        - Sugerir o template de levantamento bibliográfico disponível no AVA
+        - Sugerir dar uma olhada na sessão desafio para a escrita do relatório parcial
+      - Conhecer as linguagnes de notação de processos
+        - Indicar o livro chamado BPMN disponível na "Minha Biblioteca" e recomendar capítulo 06
+      - Conhecer as ferramentas de notação de processos
+        - Softwares para modelagem do processo e uso de Arpo BPMN++ Modeler
+      - Conhecer processo de ideação (associado ao Design Thinking)
+    - Gerar e refinar ideias
+    - Inicar o desenvolvimento da solução
+      - Lembrando que a solução é o mapeamento do processo em si
+    - Estudar o conteúdo do AVA
+  - Correção do plano de ação (Prazo 14/09)
+  - Realizar 3ª reaunião
+    - Sugerir reunião de 15 a 19/09 em função das provas dos alunos
+      - Consultar com os grupos
+    - Fazer a devolutiva da correção do plano de ação
+    - Auxiliar no processo de levantamento bibliográfico e desenvolvimento do mapeamento dos processos
+
+**** Correção plano de ação
+
+*** Reunião com a coordenação [2025-09-11 Thu]
+
+Nada a relatar
+
+**** Informes gerais
+
+**** Dúvidas
+
+
+** Quinzena 4
+*** Reunião com a coordenação [2025-09-18 Thu]
+
+**** Informes gerais
+
+Os informes gerais são:
+- Participar das reuniões semanais
+- Acompanhar com frequência o Teams
+- Abrir nova linha de discussão na abertura de cada quinzena
+  - Informar link, data e horária com 24h de antecedência
+- Gravar todas as reunões
+- Deixar a gravação pública e postar o link no fórum
+- Responder aos fóruns
+
+**** Ações a serem desenvolvidas
+
+- Prioridades:
+  - Acompanhar escrita do relatório parcial
+  - Garantir a entrega do relatório parcial no prazo e no local correto do AVA
+    - Evitar usar o tempo de carência
+    - Lembrar da entrega do TCLE
+- Objetivos (prototipagem):
+  - Ampliar o conhecimento sobre a temática do PI e ter clareza sobre o uqe se espera como resultado dele
+  - Construir a solução inicial, coletar sugestões com a comunidade externa e escrever o relatório parcial
+  - Destacar a estrutura do relatório parcial
+  - Reforçar a importância de se estudar o conteúdo do AVA
+- Em reunião:
+  - Apresentar o modelo e rubricas de avaliação do relatório parcial
+  - Auxiliar na distribuição de tarefas dentro do grupo
+    - Usar o plano de ação como gui
+  - Garantir a entrega do relatório parcial
+- Ações dos alunos:
+  - Retomar a literatura e as leituras realizadas até o momento
+  - Decidir qual a melhor forma de mapear o processo com base em exemplos da literatura
+    - Usar casos e situações semelhantes aos propostos no PI
+    - Seção de desafio tem proposta individual
+  - Acompanhar sobre a metodologia "Tartaruga" e ler o respectivo artivo que é aplicado ao mapeamento de um processo
+  - Estruturar o relatório parcial
+    - Checar manual de metodologia da pesquisa científica
+  - Apresentar solução inicial à comunidade externa e coletar sugestões de melhoria
+
+**** Dúvidas
+
+*** Reunião com a coordenação [2025-09-25 Thu]
+
+**** Informes gerais
+
+- Persistir uso de comunicação pelo AVA e pelo e-mail
+- Insistir na necessidade da entrega do TCLE
+- Não aceitar entregas em outros locais do AVA que não o local indicado
+- No relatório, é preciso responder o relatório com mais detalhe e não replicar apenas quais são as obrigações do PI
+  - Não enviar cópia do relatório anterior
+  - Não quer superficialidade
+    - Não indicar que abriu quinzena, fez reunião, etc
+  - Atenção ao prazo de envio e não ocorrerá um lembrete nos meses seguintes
+  - Incluir maior menção às disciplinas cursadas na pós
+  - Incluir panorama geral sobre os grupos
+
+
+** Qunizena 5
+
+*** Reunião com a coordenação [2025-10-02 Thu]
+
+- Não serão aceitas entregas feitas no local errado
+- Os grupos que não enviaram o TCLE junto ao relatório parcial devem ser enviados para os orientadores por e-mail
+  - Arguardar instruções da coordenação nestes casos
+- Garantir checagem entre os nomes que estão na capa os integrantes do grupo
+- Açoẽs esperadas da quinta quinzena
+  - Apresentação do mapeamento à comunidade
+  - Estudar o AVA (ferramentas de gestão)
+  - Analisar sugestões:
+    - Analisar o feedback da comunidade externa e refinar a proposta de mapeamento
+      - Já apresentei a solução para a comunidade participante?
+      - Preciso refazer alguma etapa do projeto?
+      - O que mais preciso estudar?
+      - Precisamos visitar novamente o local onde desenvolvemos o projeto?
+      - O que a comunidade para a qual desenvolvemos o projeto pensa a respeito da proposta inicial?
+      - Nosso projeto causa impacto na realidade local?
+      - O formato de representação da solução é adequado? É claro?
+  - Reavaliar o cronograma de atividades previsto no plano de ação
+  - Repensar o mapeamento: atualizar o mapeamento com todas as alterações e justificativas
+    - Preferencialmente fazer uma comparação em relação ao mapeamento inicial
+- Ações dos orientadores:
+  - Abrir quinzena
+  - Corrigir relatórios parciais até o dia 15/10
+  - Auxiliar grupos a refletirem e aprimorar a solução inicial de acordo com o feedback da comunidade
+  - Oferecer feedback construtivo do relatório parcial para ajustes rumo à entrega final
+- Marcação da quinzena pode ser feita depois da correção dos relatórios
+- Boa prática das correções
+  - Caso os grupos usem IA, que usem de forma ética
+  - Verificar se o relatório parcial está alinhado ao tema norteador do PI
+  - Realizar a correção considerando as rúbricas de avaliação
+  - Enviar uma devolutiva aos grupos sinalizando eventuais pontos de melhoria
+    - Usar tom acolhedor e formativo
+
 * Relatórios
 
 ** Relatório I
@@ -1605,6 +1749,57 @@ Número de confirmação: 141d0184953e4dd59461a389bcb8d6d4 ([2025-08-09 Sat])
   - Quinzena 2 PJI500
   - Tema 04 e 05 da disciplina INT410
   - Começando tema 06
+  - Mencionar que pude avançar mais rápido porque já orientei PI anteriormente e existe redundância de materiais e vídeos
+
+Número de confirmação: 09316c50926147d4b1c086bccccadb67[2025-09-06 Sat]
+
+
+
+** Relatório de Outubro
+
+- Atividades práticas
+  - Comparaci às reuniões e assisti às gravações quando não estive sincronicamente
+  - Abri as respectivas quinzenas
+  - Realizei reuniões com os grupos
+  - Correção do plano de ação
+- Atividades teóricas:
+  - Tema 06 da disciplina INT410
+    - O primeiro vídeo-base não está sendo executado dentro do AVA, mas está disponível no youtube
+  - Quinzena 3 PJI500
+  - Tema 07 da disciplina INT410
+
+Número de confirmação: 09316c50926147d4b1c086bccccadb67[2025-09-06 Sat]
+
+
+** Relatório de Novembro
+- Atividades práticas
+  - Comparaci às reuniões e assisti às gravações quando não estive sincronicamente
+  - Abri as respectivas quinzenas
+  - Realizei reuniões com os grupos
+  - Feedback do plano de ação
+  - Correção e feedback do relatório parcial
+  - Mencionar que participou das reuniões e que ajustou o relatório parcial de acordo
+  - Mencionar que abri a quinzena no fim de semana invés de abrir na segunda-feira e notei que houve maior reação dos grupos em virtude disso
+    - Possivelmente os alunos tem mais tempo para olhar o AVA no fim de semana
+  - Incluir relatório sobre os grupos
+    - Mencionar que adiei a reunião para acomodar a data de prova dos grupos
+      - Alguns grupos aceitaram adiar e outros não se manifestaram e mantive o horário padrão
+    - Tenho dois grupos que estão bastante adiantados na elaboração do relatório parcial, mas o mapeamento do processo requeriu ajustes
+      - Fiz uma devolutiva antes da data de entrega indicando isso
+    - Um dos grupos mostrou insatisfação com a nota do plano de ação
+      - Tentei esclarecer as razões para a nota no fórum de discussão tendo em vista que os alunos não compareceram à reunião da quinzena 03
+      - Este mesmo grupo denota pouca engajamento no PI e planejamento sobre as ações a serem desempenhadas. Indiquei a necessidad de maior responsividade na reunião da quinzena 04
+    - Outro grupo está atuando em uma escola circense, o que requer certa criatividade para identificar os processos a serem mapeados. De modo geral, o grupo está conseguindo ajustar as particularidades da comunidade externa ao tema norteador do PI
+    - Dentre os grupos que fizeram o mapeamento antes da data de entrega do plano de ação, percebi que o mapeamento está bastante superficial e não seguindo as metodologias sugeridas no AVA. Isso sugere que não estão se apropriando do material teórico. Reforcei a necessidade de se estudar o AVA em reunião.
+- Atividades teóricas:
+  - Quinzena 4 PJI500
+  - Tema 08 da disciplina INT410
+- Relações com atividades práticas:
+  - A disciplina INT410 me ajudou na correção das entregas dos alunos. Tendo assistido ao tema 08, estou me preparando para a correção do relatório final também.
+- Observações:
+  - Alguns vídeos da quinzena 03 não estão sendo reprodizidos no AVA (ao menos no meu computador). No entanto, se abro no YouTube, o vídeo funciona normalmente.
+  - Tenho relatado pouco o conteúdo da disciplina INT410 nos relatórios mensais porque são bastante similares aos conteúdos das reuniões com a coordenação (informações sobre como funciona o PI, como deve ser corrigido, etc)
+    - Além disso, alguns dos vídeos são repetidos aos apresentados nas quinzenas quando descrevem o Design Thinking
 
 * Emacs internals :noexport:
 

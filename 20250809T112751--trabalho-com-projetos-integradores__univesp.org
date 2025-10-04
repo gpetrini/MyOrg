@@ -272,3 +272,101 @@ Cada membro deve assumir sua responsabilidade.
 É essencial reservar tempo para relações pessoais, lazer e descanso.
 A concentração em cada atividade aumenta a qualidade do trabalho.
 Desconectar-se periodicamente permite compreender melhor o todo.
+
+* TODO Tema 6: Laboratório de Orientação do PI na Univesp
+
+** Desafio
+
+- Diante do desafio de atuar como orientador de um Projeto Integrador, o que pode se apresentar como problema, obstáculo, dificuldade?
+  - Cada PI e cada tema norteador tem as suas particularidades. No PI das áreas de Administração, Negócios e Produção, por exemplo, os grupos relatam dificuldades em encontrar empresas/instituições/ambientes organizacionais para atuarem.
+- Como tal problema, desafio ou dificuldade poderia ser solucionado(a)?
+  - Tanto por meio de parcerias com a esfera pública (principalmente prefeituras) e privada (beneficiando também encontrar estágio)
+- Como essa solução poderia retroalimentar os processos pedagógicos e de gestão do trabalho acadêmico de modo a implementar melhorias ao PI-Univesp?
+  - Além de criar laços institucionais mais fortes e persistentes, ajudaria que o estudantes conseguissem encontrar locais para a realização do estágio e atuar no PI
+
+** Vídeo-base: Afinal, o que é Design Thinking? E quais são suas etapas fundamentais?
+
+
+Principais valores
+- Empatia
+- Colaboração
+- Experimentação
+
+Respectivos passos:
+- Uso da empatia para compreender o problema
+- Definir problema a ser resolvido
+- Ideação (brainstorming)
+- Prototipagem
+- Testagem
+
+** Vídeo-base: O que é Design Thinking? (Uso no Itau, inovação)
+
+- Modelo mental que permite criar soluções desejáveis pelo usuário
+  - Design como algo estratégico e não apenas estético
+  - Premissas:
+    - Empatia
+      - Entender contexto e necessidade
+    - Co-criação
+      - Junto do usuário
+    - Experimentação
+
+* TODO Tema 7: Oficina de Avaliação de Relatório Parcial
+
+
+
+** Vídeo-base: Avaliação do Projeto Integrador
+
+- No começo do vídeo, é apreserntada a trajetória do PI, nota de cada uma das entregas
+  - Apresentou-se o plano de ação
+    - Indentificou-se que o plano de ação possa ser usado para o orientador verificar a participação de cada membro do grupo
+  - Relatório parcial
+    - Apresentou-se a estrutura do relatório parcial
+  - Relatório final
+    - Apresentou-se a estrutura do relatório final
+  - Vídeo
+    - Apresentação da solução desenvolvida (breve)
+      - Onde foi resolvido?
+      - Qual foi o problema identificado?
+      - Como o problema foi desenvolvido?
+
+** Vídeo-base: Passo a passo de correção de relatório parcial
+
+- Estrutura do relatório parcial
+  - Título: frase curta que sintetiza o projeto
+  - Introdução
+    - Deve indicar as disciplinas cursadas que auxiliaram o desenvolvimento e do tema do projeto
+  - Desenvolvimento, indicando:
+    - Objetivos
+      - Esclarecer que não é a mesma coisa do tema norteador do PI (problema e tema são distintos)
+    - Problema a ser investigado
+    - Metodologia
+      - Especificar como utilizaram o design thinking
+        - Usaram entrevista, questionário, etc
+  - Referências
+    - Ajudar os alunos com normas da ABNT
+- Avaliação e correção:
+  - Nota é do grupo
+    - Caso a pessoal designada a determinada tarefa não a realizar, o grupo, como um todo, será penalizado
+      - Nestes casos, alguém deveria assumir esta responsabilidade
+  - Orientador deve fazer uma devolutiva detalhada indicando quais ajustes devem ser feitos e identificar por quais razões não atingiram a pontuação máxima em cada categoria
+  - Orientador não precisa necessariamente saber sobre o tema, mas sim, fazer as boas perguntas
+  - No vídeo, também foi apresentada as rubricas de correção
+  - Importante identificar se o grupo consegue articular conceitos, autores, e processos do PI
+    - Espcialmente na revisão da literatura
+
+* Tema 8: Avaliação do relatório final e vídeo de apresentação dos resultados do PI
+
+** Correção de relatório final e construção feeedbak para equipes (Vídeo)
+
+- Apresentado o cronograma de entrega e de avaliação das entregas finais
+- Apresentado o peso dessas correções
+- Lembrando que o trabalho só deve ser corrigido se for feita a entrega do link
+- O grupo deve levar em consideração o /feedback/ da comunidade externa para reavaliar a solução inicial para as próxima versão
+- Discutidas as rubricas de avaliação
+  - MEMO: Correção do relatório final deve considerar as adequações propostas ao relatório parcial
+
+* Tema 9: Webconferência de Revisão e Encerramento do Módulo (Vídeo)
+
+- Reunião discutiu dúvidas dos alunos
+- A ideia do PI na Univesp é recente
+  - Princípio de utilizar as disciplinas cursadas
