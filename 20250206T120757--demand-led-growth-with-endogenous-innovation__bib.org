@@ -5,7 +5,7 @@
 #+OPTIONS: num:nil ^:{} toc:nil
 #+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
 #+cite_export: csl apa.csl
-#+reference:  caminati_2019_Demand
+#+reference:  caminati_2019_demandled
 
 
 
@@ -13,7 +13,7 @@
 
 ** 5SS
 
-[cite/t:@caminati_2019_Demand] present a Sraffian [[denote:20250203T184155][Supermultiplier Models]] with endogenous [[denote:20250205T165524][Research and Development]] in which long-term growth rate is wage-led without abandoning the convergence of capacity utilization to the normal level. To this end, the relate autonomous consumption and R&D expenditures with labour productivity growth rate which depends on the historically determined technological opportunities.
+[cite/t:@caminati_2019_demandled] present a Sraffian [[denote:20250203T184155][Supermultiplier Models]] with endogenous [[denote:20250205T165524][Research and Development]] in which long-term growth rate is wage-led without abandoning the convergence of capacity utilization to the normal level. To this end, the relate autonomous consumption and R&D expenditures with labour productivity growth rate which depends on the historically determined technological opportunities.
 
 
 ** Background and motivation

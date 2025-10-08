@@ -5,7 +5,7 @@
 #+identifier: 20250206T105445
 #+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
 #+cite_export: csl apa.csl
-#+reference:  bordalo_2022_Overreaction;bordalo_2020_Overreaction
+#+reference:  @bordalo_2022_Overreaction;bordalo_2020_Overreaction
 
 
 

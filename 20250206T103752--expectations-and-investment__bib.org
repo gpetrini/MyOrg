@@ -5,7 +5,7 @@
 #+identifier: 20250206T103752
 #+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
 #+cite_export: csl apa.csl
-#+reference:  gennaioli_2016_Expectations
+#+reference:  gennaioli_2016_expectations
 
 
 
@@ -14,7 +14,7 @@
 
 ** 5SS
 
-[cite/t:@gennaioli_2016_Expectations] conclude that CFOs expecations have a high explanatory power for describing planning and effective investment. Conventional investment theories does not overcome this result. They also find no evidence for the [[denote:20240708T113039][Rational Expectations]] hypothesis and argue that a extrapolative behavior is more reasonable and parsimonious.
+[cite/t:@gennaioli_2016_expectations] conclude that CFOs expecations have a high explanatory power for describing planning and effective investment. Conventional investment theories does not overcome this result. They also find no evidence for the [[denote:20240708T113039][Rational Expectations]] hypothesis and argue that a extrapolative behavior is more reasonable and parsimonious.
 
 ** Background
 
