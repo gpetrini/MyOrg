@@ -1,0 +1,899 @@
+#+title:      Prática Supervisionada em EaD
+#+date:       [2025-11-18 Tue 18:34]
+#+filetags:   :univesp:
+#+identifier: 20251118T183405
+
+* Tema 2 - O espaço da prática supervisionada em EaD: o AVA
+
+** Quais são as tendências tecnológicas para educação? Dênia Falcão de Bittencourt
+
+*** Tendências Tecnológicas na Educação
+
+A internet e os computadores criaram novas formas de integração entre alunos e professores, com ambientes virtuais que promovem práticas efetivas tanto na Educação a Distância (EAD) quanto no ensino híbrido.
+As tecnologias digitais de comunicação e informação (TDIC) ampliam o acesso à informação e permitem a criação de novos espaços de aprendizagem.
+Essa revolução tecnológica transformou todos os aspectos da sociedade, incluindo o ensino, e favoreceu o surgimento de novos desafios educativos, como a necessidade de formação contínua e adaptação às mudanças rápidas.
+
+*** Potencial dos Ambientes Virtuais para a Aprendizagem
+
+Os ambientes virtuais são espaços sociais que podem aumentar as possibilidades de interação entre estudantes, colegas e professores.
+As TDIC democratizam a participação e ampliam o acesso a especialistas e recursos ao redor do mundo.
+Esse potencial está atrelado ao desafio de garantir inclusão digital, pois muitos ainda estão excluídos das possibilidades tecnológicas, criando desigualdades no acesso e desenvolvimento de competências.
+
+*** Educação e os Novos Modelos de Ensino
+
+A sociedade conectada exige uma educação que desenvolva aprendizes ativos e flexíveis, capazes de aprender continuamente.
+Ambientes virtuais permitem interações síncronas e assíncronas e o uso de multimídia, provocando maior estímulo e reconhecimento dos alunos pelos resultados alcançados.
+O ensino também se torna deslocalizado, com acesso a recursos de qualquer lugar do planeta, e o papel do professor envolve a gestão integrada de múltiplos espaços físicos e digitais.
+
+*** Ensino Híbrido: A Convergência dos Ambientes Presencial e Virtual
+
+O ensino híbrido combina o melhor dos ambientes presenciais e virtuais, ampliando recursos e oportunidades.
+Permite atender diferentes estilos e ritmos de aprendizagem, melhorar a produtividade, e integrar metodologias ativas.
+As TDIC mudam não só as práticas didáticas, mas também a forma de planejar, organizar, ofertar e avaliar a educação.
+
+*** Inovação na Educação: Espectro e Ferramentas
+
+Três dimensões caracterizam a inovação educativa: uso da tecnologia, ensino híbrido e personalização.
+Novas gerações de Ambientes Virtuais de Aprendizagem (AVA/LMS) buscam integração, flexibilidade e personalização, apoiando métodos inovadores como educação aberta, aprendizagem baseada em competências e o uso de recursos educacionais abertos (OER).
+Ecossistemas flexíveis e interoperáveis passam a ser recomendados para adaptar-se às necessidades dos alunos e das instituições.
+
+*** Tendências para AVA/LMS e Learning Analytics
+
+Os sistemas de gestão de aprendizagem (LMS) evoluem para se tornarem mais personalizados e interativos, integrando ferramentas diversas e dados para análise mais profunda do progresso dos alunos.
+Learning Analytics auxilia no desenvolvimento de aprendizagem adaptativa, permitindo identificar necessidades, riscos e intervenções efetivas para cada aluno.
+
+*** Inteligência Artificial e Personalização na Educação
+
+A inteligência artificial (IA) ganha espaço na educação por meio de tutores inteligentes, sistemas adaptativos e realidade virtual, personalizando o ensino conforme as características individuais dos estudantes.
+Apesar dos avanços, a adoção é lenta devido à falta de recursos e evidências sólidas.
+Espera-se que a IA promova abordagens individualizadas e acelere a compreensão sobre os processos de aprendizagem.
+
+
+** Quais são as tendências tecnológicas para educação? Dênia Falcão de Bittencourt
+
+*** Definição e Conceituação
+
+A tecnologia aplicada à educação evoluiu rapidamente, transformando métodos tradicionais de ensino.
+A combinação entre computação e comunicação originou novas formas de interação entre professores e alunos.
+A internet possibilita incorporar recursos como som, imagem, gráficos e vídeo à distância.
+Educação apoiada por internet demanda criação, envio e recebimento de diferentes tipos de informação.
+Novos cenários educacionais surgem pela interação de professor, aluno, tecnologia e ambiente.
+O ensino a distância baseou-se inicialmente nos sistemas CBT/CAI, que evoluíram para e-learning e m-learning.
+O autoestudo e os seminários web são componentes importantes desse modelo.
+O vídeo passou a ser utilizado para treinamento remoto via satélite.
+A educação a distância utiliza experiências do e-learning, criando ambientes inovadores de aprendizagem.
+É fundamental preparar profissionais para atuar em ambientes digitais e desenvolver metodologias de ensino inovadoras.
+
+*** Multimídia e Telemática na Educação a Distância
+
+Dois avanços principais embasam a EAD: multimídia e telemática.
+Multimídia integra vídeo, texto, gráficos, áudio e animações, facilitando diferentes formas de representação.
+Esses recursos ainda são subutilizados no contexto educacional, mas seu uso está crescendo.
+Telemática compreende comunicação à distância com o uso de computadores, proporcionando ferramentas como chats, videoconferências, e-mail e fóruns.
+O AVA pode ser pré-projetado ou customizado conforme as necessidades da instituição.
+O AVA reúne componentes multimídia, telemáticos e tecnológicos.
+
+*** Ambientes Virtuais de Aprendizagem (AVA)
+
+O AVA é um sistema tecnológico que disponibiliza recursos de interação e arquivos multimídia aos usuários.
+O AVA proporciona serviços interativos on-line para acesso à informação, ferramentas e administração de cursos.
+Neles, é possível apresentar temas, trocar informações e promover a aprendizagem por meio de avaliações e feedbacks sistemáticos.
+O AVA simula ambientes presenciais e cria espaços colaborativos para alunos, colegas e professores.
+Esses ambientes facilitam atualização rápida dos conteúdos de aprendizagem.
+O AVA organiza atividades, recursos de apoio, avaliações e favorece encontros virtuais entre alunos e professores.
+
+*** Características dos AVAs
+
+Toda a interação dos usuários é registrada no sistema, permitindo gestão eficiente dos processos de aprendizagem.
+O AVA exige fácil implementação, tem custos mais baixos e evita deslocamentos físicos.
+Permite colaboração, simulações, recursos de realidade virtual e jogos, aproximando a experiência virtual da real.
+Centraliza comunicação institucional e conteúdos programáticos, facilitando o acesso.
+Apoia um processo de educação a distância, ampliando oportunidades educacionais geograficamente dispersas.
+
+*** Características de Aprendizagem dos AVAs
+
+Ferramentas de comunicação como fóruns, chats, troca de arquivos, e-mail e blogs são essenciais.
+Serviços de vídeo e quadro digital trazem o suporte multimídia.
+Ferramentas de produtividade incluem marcadores, calendários, sistemas de ajuda e trabalho offline.
+Ferramentas que envolvem os estudantes abrangem trabalho em grupo, autoavaliação, comunidades e perfis estudantis.
+
+*** Características de Suporte dos AVAs
+
+Incluem autenticação, permissões, hospedagem, integração de registro e cursos, além de suporte automatizado, administração de notas e acompanhamento do aluno.
+Ferramentas de design curricular contemplam acessibilidade, compartilhamento de conteúdo, templates e padrões técnicos para interoperabilidade.
+
+*** Características Técnicas dos AVAs
+
+Compreendem os requisitos de hardware e software, navegadores, bases de dados, servidores UNIX/Windows, perfis da empresa, custos, versões, e opções extras.
+Disponibilidade de soluções de código aberto, compatibilidade com diversos dispositivos e serviços móveis (GSM, GPS, GPRS, EDGE, I-Mode).
+
+*** LMS Proprietário vs. Código Aberto
+
+Plataformas proprietárias restringem modificação e distribuição, exigindo pagamento de licenças.
+Plataformas de código aberto oferecem liberdade de modificação e uso, com vantagens como flexibilidade, personalização e integração.
+Por outro lado, podem demandar maior investimento em equipe técnica e manutenção.
+LMS de código aberto evoluem rapidamente graças à colaboração comunitária, e podem incluir plugins para ampliar suas funcionalidades.
+
+*** Escolha do Melhor AVA
+
+O mercado de AVAs é diverso, com opções proprietárias e abertas.
+Modularidade, personalização e recursos interativos são tendências atuais.
+Os critérios de avaliação incluem facilidade de uso, compatibilidade, funcionalidades, suporte a padrões e multilíngue.
+É essencial que o AVA suporte diferentes metodologias, recursos de aprendizagem adaptativos e integração com ferramentas web.
+
+*** Critérios e Metodologias de Avaliação dos AVAs
+
+Ambientes virtuais devem ser fáceis de usar, compatíveis com diferentes tecnologias e navegadores.
+Devem facilitar a comunicação (síncrona e assíncrona) e possibilitar trabalho individual ou em equipe.
+Gestão eficiente de usuários, atividades de aprendizagem e relatórios de desempenho são fundamentais.
+O desenvolvimento do curso deve ser flexível, com suporte a autores, múltiplos idiomas e padrões de e-learning.
+O sistema deve oferecer escalabilidade, administração segura e documentação acessível.
+
+*** Características Desejáveis e Boas Práticas
+
+AVA ideal deve ser de baixo custo, baseado em código aberto, universal, e de fácil ajuste às realidades institucionais.
+Precisa promover interação efetiva, apoio ao trabalho colaborativo, acompanhamento do aprendizado e flexibilidade metodológica.
+Facilita o acesso a múltiplos formatos de conteúdo, oferece exemplos interativos, feedback, avaliação, chat, fóruns e mural.
+Permite o acompanhamento do progresso do aluno, comparação de desempenho e comunicação integrada.
+Não existe uma tecnologia universalmente ideal; a escolha depende dos objetivos do projeto educacional.
+Tecnologias digitais bem aplicadas promovem ensino criativo, colaborativo e significativo.
+A avaliação constante do AVA e de sua metodologia é essencial para melhores resultados em EAD.
+
+
+* Tema 3 - Atividade Prática: tutorial BlackBoard (Desafio do Tema 2)
+
+Este tema apresenta o fórum de atividades, sem materiais adicionais.
+
+* Tema 4 - Como a gestão do Ambiente Virtual de Aprendizagem facilita a aprendizagem
+
+** Processos de comunicação e de gestão no ambiente virtual de aprendizagem (AVA) – proposta de alternativa para um programa de formação de professores - Aires et al
+
+*** Tema e Contexto
+
+O artigo analisa a comunicação entre participantes em um Ambiente Virtual de Aprendizagem (AVA) no curso de Pedagogia a Distância da UnB.
+A pesquisa baseia-se na pedagogia da autonomia de Paulo Freire, destacando a importância do diálogo no ensino remoto.
+O estudo tem natureza qualitativa, usando observação dos espaços virtuais e físicos do curso.
+
+*** Problema e Objetivos
+
+Foram identificadas dificuldades de comunicação no AVA, atribuídas a desatualizações e pouca dialogicidade dos espaços virtuais.
+O objetivo foi propor alternativas para aprimorar a interação e a participação entre os atores do processo de ensino-aprendizagem.
+
+*** Fundamentação Teórica
+
+O texto sustenta que EAD deve ser dialógica, baseada em cooperação e convivência, e não em transmissão assimétrica de conteúdo.
+Refere autores como Paulo Freire, Castells, Aparici e outros para discutir comunicação, uso crítico das tecnologias e desafios para a gestão democrática.
+Ressalta-se a importância de participação ativa de professores, estudantes e equipe administrativa para aprendizagem efetiva.
+
+*** Metodologia
+
+A análise se deu por inserção nos ambientes físico e virtual, reuniões, navegação nos links do curso, observação de interações e registros em diário de campo.
+Buscou-se mapear potencialidades e barreiras dos canais de comunicação existentes.
+
+*** Proposta de Intervenção
+
+O plano de intervenção previu atualização de conteúdos, redistribuição e criação de links, além da abertura de novos canais de comunicação para estimular participação.
+Foram implementados fóruns comunitários, mudança de nomenclaturas para maior acolhimento e reposicionamento de acessos estratégicos.
+O redesenho visou tornar o ambiente mais democrático, acolhedor e eficiente, ampliando a voz dos usuários.
+
+*** Considerações Finais
+
+A reestruturação do AVA possibilitou maior protagonismo dos atores do processo educativo, incentivando autonomia e participação.
+A aprendizagem em EAD de qualidade demanda diálogo, atualização constante dos canais comunicacionais e gestão democrática.
+Participação efetiva e comunicação dialógica são vistas como elementos centrais para o sucesso da educação a distância.
+
+
+** O fluxo de conhecimento na produção de ambientes virtuais de aprendizagem - Alarcon e Spanhol
+
+*** Tema e Objetivo
+
+O artigo analisa o fluxo de conhecimento na produção de Ambientes Virtuais de Aprendizagem (AVAs) aplicados à Educação a Distância (EaD).
+Investiga os processos e serviços na EaD, com foco no trabalho das equipes multidisciplinares envolvidas em projetos educacionais.
+Objetiva auxiliar equipes na gestão e compartilhamento de conhecimento para aprimorar qualidade e organização de processos e serviços.
+
+*** Fundamentação Inicial
+
+Destaca que a qualidade dos serviços EaD depende do contexto educacional e organizacional.
+Ressalta desafios de expansão no setor público e necessidade de capacitação e treinamento nas empresas privadas.
+Adota o modelo ADDIE como referência para produção de AVAs: Análise, Design, Desenvolvimento, Implementação e Avaliação.
+
+*** Tipos de Ambientes Virtuais
+
+Identifica diferentes tipos de AVAs, segundo estratégia de aprendizagem e design:
+- Ambientes colaborativos: foco na participação coletiva e compartilhamento de conhecimento.
+- Ambientes autônomos: estudante realiza atividades de modo independente com menos mediação do professor.
+- Ambientes de experiência: baseados em design centrado no usuário, com recursos imersivos e interativos.
+- Ambientes híbridos: combinam recursos virtuais e presenciais, permitindo flexibilidade ao estudante.
+- Ambientes adaptativos: usam técnicas de IA para personalizar ações do sistema ao perfil do estudante.
+- Ambientes inclusivos: promovem acessibilidade para usuários com deficiência visual ou auditiva.
+
+*** Modelo ADDIE
+
+O processo de produção dos AVAs é analisado segundo as cinco etapas do modelo ADDIE:
+- Análise: definição dos objetivos, perfil dos usuários e levantamento das necessidades educacionais.
+- Design: mapeamento de atividades, sequenciamento de conteúdos e escolha de mídias adequadas.
+- Desenvolvimento: criação do conteúdo de aprendizagem, exercícios, vídeos e interfaces.
+- Implementação: publicação dos objetos de aprendizagem e coleta de feedback dos alunos.
+- Avaliação: avaliação da aprendizagem, eficiência das atividades e identificação de melhorias futuras.
+
+*** Resultados e Discussão
+
+A produção de cursos EaD mudou de grandes formatos padronizados para cursos menores e atualizados constantemente.
+Equipes multidisciplinares atuam com autonomia e maior variabilidade nos processos, produzindo conteúdos “sob demanda”.
+Mapeamento do fluxo de conhecimento envolve entrada e saída de informações em cada etapa do ADDIE.
+O processo facilita o ajuste e atualização dos módulos conforme feedbacks para atingir os objetivos educacionais.
+
+*** Considerações Finais
+
+Organizações de EaD dependem de fluxos de conhecimento eficazes para produzir materiais e recursos de qualidade.
+Estímulo ao compartilhamento entre equipes é fundamental para melhorar processos e garantir desempenho competitivo.
+O fluxo de conhecimento apresentado pode ser implementado e ajustado conforme a obtenção de feedbacks e novas demandas.
+
+* Tema 5 - O trabalho colaborativo na mediação pedagógica
+
+** Videoaula - O trabalho colaborativo na mediação pedagógica
+
+- A educação à distância deve ser necessariamente colaborativa porque, diferente do modelo convencional, terá muitos atores envolvidos para uma mesma atividade
+  - No modelo convencional, parte significativa dessas atividades era desempenhada pelo professor
+    - Na Univesp existem, por exemplo, professor autor, professor formador, facilitador, supervisor de curso e de conteúdo, etc
+- A mediação na educação à distância estabelece formas de interação entre esses atores
+  - O mesmo se aplica para o caso da relação entre facilitador, coordenação, supervisão, etc
+  - O facilitador é o agente que terá um contato mais cotidiano com os alunos
+
+** Tecnologias para a colaboração
+
+*** Tema e Objetivo
+
+O artigo realiza uma análise crítica, dialética e histórica das tecnologias da informação e comunicação (TIC) e sua relação com educação e sociedade informatizada.
+
+*** Fundamentação Teórica
+
+Parte da perspectiva materialista-dialética, dialogando com autores como Vigotsky, Paulo Freire e Gramsci.
+Critica as interpretações pós-modernas e pós-estruturalistas, incluindo as visões idealistas de Habermas e Pierre Lévy, que tratam a tecnologia de maneira messiânica e determinista.
+
+*** Principais Discussões
+
+Questiona a existência de uma “Sociedade do Conhecimento” distinta da sociedade capitalista tradicional.
+Ressalta que mudanças efetivas nas relações sociais não acompanharam as inovações digitais difundidas como revolucionárias.
+Argumenta que avanços tecnológicos têm sido utilizados para reforçar hegemonias e não alteram, por si só, as estruturas do poder.
+
+*** Metodologia e Abordagem
+
+Apresenta análise crítica das fontes do conhecimento, significado de textos, discursos e práticas sociais intermedidas por TIC.
+Propõe abordagem dialética, compreendendo textos e tecnologias como produtos históricos, coletivos e de lutas de classes.
+
+*** Escrita, Hiperescrita e Práxis Social
+
+Analisa o surgimento e papel histórico das tecnologias da escrita e da hiperescrita.
+Explica que a escrita foi criada em resposta a demandas coletivas e assume nas sociedades modernas o papel de legitimar hegemonias de classe.
+Enfatiza que a verdadeira transformação social depende da práxis cotidiana e colaborativa, não apenas de mudanças técnicas.
+
+*** Crítica à Linearidade e ao Determinismo
+
+Rejeita visões que ligam linearidade ou potencial transformador das tecnologias apenas à estrutura técnica.
+Defende que colaboração e complexidade só emergem em interação com processos sociais amplos e lutas históricas, não por características intrínsecas das TIC.
+
+*** Considerações Finais
+
+Conclui que é impossível discutir a influência das tecnologias sem considerar sua construção histórica e sua função estratégica em contextos de luta de classes.
+Defende que abordagens dialéticas são fundamentais para superar explicações simplistas e tecnicistas sobre a sociedade contemporânea.
+
+
+** Mediação, colaboração e reflexão compartilhada em teletandem: apontamentos sobre os diferentes tipos de mediação no teletandem da UNAESP
+
+*** Tema e Objetivo
+
+O artigo discute mediação, colaboração e reflexão compartilhada no contexto do Teletandem da UNESP-FCLAr, modalidade colaborativa para aprendizagem de línguas estrangeiras a distância.
+Analisa como diferentes tipos de mediação (diários reflexivos e rodas de conversa presenciais) afetam os relatos e a reflexão dos participantes, e o papel do mediador.
+
+*** Fundamentação Teórica
+
+A aprendizagem em Teletandem é baseada em colaboração mútua, igualdade de oportunidades para uso das línguas, reciprocidade e autonomia dos participantes.
+O encontro em Tandem não exige necessariamente falantes nativos, bastando a proficiência na língua-alvo e o interesse mútuo pelo aprendizado.
+A mediação neste contexto é centrada não em ensinar, mas em promover reflexão crítica e autônoma sobre as próprias experiências, conectando aspectos linguísticos e culturais.
+
+*** Metodologia e Contexto
+
+Participantes interagem em pares (brasileiros e estrangeiros) utilizando recursos digitais (câmera, microfone, chat) para praticar línguas estrangeiras.
+Após as interações, há sessões de mediação conduzidas por mediadores, que podem ser por diários (individuais e assíncronos, via Moodle) ou rodas de conversa presenciais (coletivas).
+
+*** Modelos de Mediação e Suas Diferenças
+
+Os diários propiciam reflexão individual, relatos detalhados e feedbacks personalizados do mediador; a mediação presencial favorece a construção coletiva das impressões e amplia o engajamento dos participantes.
+Na mediação presencial, relatos se tornam espontâneos e surgem discussões coletivas, com maior colaboração para construção de sentido; no diário, a reflexão é mais profunda e centrada em si mesmo, mas menos interativa.
+
+*** O Papel do Mediador
+
+O mediador deve estimular diálogo, reflexão, autonomia dos aprendizes e colaborar na resolução de conflitos (linguísticos ou culturais), adaptando sua condução ao formato da mediação.
+No diário, o mediador foca no indivíduo; na roda de conversa, incentiva debate coletivo e discussão de temas comuns.
+
+*** Principais Resultados
+
+Os modos de mediação modificam tanto a qualidade das reflexões quanto o protagonismo e a colaboração entre os participantes.
+A mediação coletiva amplia as possibilidades de interação, compartilhamento de diferentes perspectivas e construção conjunta de conhecimentos.
+
+*** Considerações Finais
+
+O estudo recomenda explorar novas possibilidades de mediação e formação do mediador em Teletandem, pois o formato adotado influencia fortemente o desenvolvimento das competências linguísticas e interculturais.
+Mais pesquisas podem aprofundar o papel do mediador e o impacto de diferentes formatos de mediação nessa metodologia.
+
+** Desenvolvimento profissional docente na educação a distância: relatos de uma pesquisa participante
+
+*** Tema e Objetivo
+
+O artigo investiga o desenvolvimento profissional de professores e tutores de um curso de Pedagogia a distância em universidade pública.
+Busca compreender como ocorre esse desenvolvimento na EaD e identificar caminhos para melhorar o processo, diante das fragilidades das políticas públicas e do Sistema UAB.
+
+*** Fundamentação Teórica
+
+Discute a complexidade do desenvolvimento docente, considerando fatores históricos, sociais, institucionais, subjetivos e culturais.
+Aborda teorias sobre formação inicial, continuada e prática docente, ressaltando a importância da construção coletiva e reflexiva da identidade profissional e do conhecimento docente.
+
+*** Contexto da EaD e Políticas Públicas
+
+Destaca a expansão da EaD como estratégia para ampliar o acesso ao ensino superior, mas aponta críticas: crescimento não acompanhado da formação adequada dos docentes.
+No âmbito do Sistema UAB, identifica fragilidades nas políticas que dificultam o desenvolvimento profissional efetivo, além da recorrência de atuação precarizada dos tutores.
+
+*** Metodologia
+
+Trata-se de pesquisa participante com abordagem qualitativa, incluindo análise documental, entrevistas semiestruturadas, questionários e grupo focal.
+Os sujeitos são professores e tutores do curso pesquisado; a análise foca nos saberes necessários, identidades docentes e desafios enfrentados.
+
+*** Resultados
+
+Os principais saberes destacados são: domínio de tecnologias digitais (TDIC), conhecimento de conteúdo, e mediação pedagógica qualificada.
+Professores reconhecem desafios e defendem a necessidade de formação específica para EaD; tutores relatam dificuldades de reconhecimento, sobrecarga de trabalho e ausência de autonomia.
+Observa-se uma fragmentação de funções, baixa valorização institucional do tutor e lacunas na formação continuada e no reconhecimento profissional.
+
+*** Discussão
+
+O desenvolvimento profissional docente na EaD exige investimento institucional, formação continuada, colaboração e valorização do trabalho coletivo.
+O domínio tecnológico, por si só, é insuficiente: é necessário integrar saberes teóricos, práticos e tecnológicos a uma mediação pedagógica inovadora e colaborativa.
+As experiências analisadas revelam tanto potencial de engajamento e transformação quanto precariedade das condições de trabalho e reconhecimento.
+
+*** Considerações Finais
+
+A qualidade da EaD depende de docentes reconhecidos, bem formados e em permanente processo de formação crítica, reflexiva e colaborativa.
+Sugere-se maior compromisso institucional e políticas públicas para valorização de professores e tutores, o fortalecimento do trabalho coletivo e formação específica para os desafios da docência na EaD.
+
+** Mediação e tutoria: relações com a aprendizagem colaborativa
+
+*** Tema e Objetivo
+
+O artigo examina como a mediação tutorial contribui para a construção de aprendizagens colaborativas em cursos de especialização em EaD.
+Busca entender a percepção dos estudantes sobre o papel dos tutores e as dinâmicas de colaboração via fóruns no AVA.
+
+*** Fundamentação Teórica
+
+Destaca-se a necessidade de ir além do paradigma da transmissão de informações e valorizar abordagens interacionistas e colaborativas no ensino online.
+O tutor, mais do que facilitador, assume o papel de mediador ativo, promovendo a comunicação, colaboração e criatividade.
+Aprendizagem colaborativa exige ambientes virtuais organizados para interação, autoria e autonomia dos envolvidos.
+
+*** Metodologia
+
+Trata-se de um estudo de caso qualitativo com aplicação de questionário baseado em hipóteses levantadas sobre o papel do tutor.
+A amostra foi composta por estudantes de um curso de especialização da UNEB; a análise focou tanto as ações do próprio estudante quanto as intervenções dos tutores nos fóruns.
+
+*** Resultados
+
+Os estudantes reconhecem sua própria atuação colaborativa e participação em processos de aprendizagem compartilhada, ainda que identifiquem mais colaboração do que colaboração efetivamente estruturada.
+As intervenções dos tutores foram percebidas como limitadas: o papel de mediador necessário para aprendizagem colaborativa plena nem sempre foi reconhecido pelos alunos.
+Destaca-se que muito da colaboração se dá por iniciativa dos próprios estudantes e pela dinâmica coletiva nos fóruns.
+
+*** Discussão
+
+A atuação do tutor como mediador é essencial para potencializar a aprendizagem colaborativa, indo além da simples orientação.
+Os dados sugerem que a mediação tutorial, quando efetiva, precisa promover engajamento, mediação de conflitos, feedbacks construtivos e articulação entre conteúdos.
+Situações em que o tutor se limita ao apoio técnico ou à supervisão pouco agregam à dinâmica colaborativa dos grupos.
+
+*** Considerações Finais
+
+A mediação do tutor pode ser ampliada para garantir mais autoria, reflexão crítica e construção coletiva do conhecimento, consolidando uma EaD centrada na aprendizagem ativa.
+Propõe-se aprofundar pesquisas sobre estratégias e formação continuada do tutor para fortalecer seu papel mediador nos ambientes virtuais.
+
+* Tema 6 - Como fóruns temáticos e de dúvidas facilitam a aprendizagem
+
+** Videoaula - Como a mediação de fóruns temáticos e de dúvidas facilita a aprendizagem
+
+- O vídeo destaca que os debates também enfrentam dificuldades no presencial
+- Fóruns e debates são formas de avaliar e acompanhar a aprendizagem
+  - Como que os objetivos da aprendizagem estão sendo alcançados?
+  - Como as competências estão sendo desenvolvidas?
+  - Como planejar a recuperação da aprendizagem?
+  - A partir dessas interações, é possível coletar informações relevantes que podem ser utilizadas para ajustar o curso
+- Para tirar melhor proveito dos fóruns, é sugerido aos conteudistas à iniciarem a aula com uma situação problema/desafio
+  - Resolução é feita a partir da interação com os recursos
+    - Permitindo atingir objetivos de aprendizagem específicos
+      - Aluno se reconhece instrumentalizado para lidar com esses desafios
+        - Preferencialmente compartilhar a resolução com os demais via debate
+  - Também avalia-se como os alunos estão desenvolvendo competências
+    - Não é razoável supor que os alunos estão, desde o início, aptos a utilizar as ferramentas a serem apresentaas autonomamente
+
+** Mediação pedagógica na educação a distância: análise de práticas dialógicas em fóruns de discussão
+
+*** Tema e Objetivo
+
+O artigo analisa a mediação pedagógica em fóruns de discussão no ambiente virtual de um curso superior a distância da área de Hotelaria, buscando compreender como práticas dialógicas favorecem produções textuais colaborativas e relações educativas mais participativas.
+
+*** Fundamentação Teórica
+
+Parte de autores como Moore, Kearsley, Kenski, Masetto, Bakhtin e Pierre Lévy para discutir o papel do professor-mediador, destacando a importância de práticas dialógicas, feedbacks regulares e a promoção da autonomia e protagonismo dos alunos na EaD.
+O fórum é tratado como um gênero digital dialógico que, se bem usado, favorece compartilhamento, colaboração e construção coletiva do conhecimento.
+
+*** Metodologia
+
+Adota abordagem qualitativa, com netnografia e análise dialógica do discurso como métodos centrais, observando postagens em fóruns do AVA.
+Análise recai sobre duas turmas de graduação tecnológica em Hotelaria, observando interações entre docentes e discentes e as dinâmicas de mediação.
+
+*** Resultados e Análises
+
+A atuação docente nos fóruns é determinante para a participação dos alunos: posturas que estimulam desafios, dão voz ao estudante e incentivam a reflexão coletiva resultam em maior engajamento.
+Destacam-se diferentes estilos de mediação: motivador, animador e estrategista, combinando funções de gestor de sala virtual, dinamizador e provocador de debates.
+A ausência de uma mediação atenta ou o uso restrito do fórum a mensagens unidirecionais reduzem o potencial colaborativo do espaço.
+A eficácia da mediação é ampliada quando há abertura para múltiplas vozes, valorização das intervenções individuais, afetividade, feedbacks personalizados e desafios propostos à turma.
+
+*** Considerações Finais
+
+O fórum de discussão, quando mediado estrategicamente pelo docente, contribui para aproximação, engajamento e construção colaborativa do saber, sendo essencial para práticas de ensino inovadoras na EaD.
+O trabalho destaca a importância de professores e tutores conhecerem o grupo e adotarem estratégias diversificadas, planejando mediações que estimulem a participação ativa e a criação conjunta.
+Aponta para a necessidade de formação continuada dos mediadores para aprimorar o uso do gênero digital e enfrentar os desafios pedagógicos da EaD.
+
+
+** O Fórum de Discussão como Instrumento Avaliativo de Aprendizagem
+
+*** Tema e Objetivo
+
+O artigo analisa o fórum de discussão como instrumento avaliativo da aprendizagem em cursos de Educação a Distância online, a partir da percepção de estudantes e tutores.
+
+*** Fundamentação Teórica
+
+Destaca que os fóruns, inseridos nos Ambientes Virtuais de Aprendizagem, são espaços privilegiados para diálogo, troca de experiências e construção coletiva do conhecimento.
+A avaliação em EaD deve priorizar aspectos qualitativos, privilegiando processos contínuos, interativos e formativos, e valorizando a atuação ativa do tutor como mediador.
+
+*** Metodologia
+
+A pesquisa adota abordagem qualitativa com uso de questionário misto (perguntas abertas e fechadas) aplicado a tutores e alunos de diferentes cursos de pós-graduação na modalidade EaD.
+A análise dos dados empregou a técnica de Análise de Conteúdo para identificar critérios, atributos positivos e negativos do fórum como ferramenta avaliatória.
+
+*** Principais Resultados
+
+A maioria dos participantes considera o fórum uma boa ferramenta de avaliação, pois permite acompanhar o desenvolvimento dos alunos, estimular debates e identificar avanços na aprendizagem.
+Foram destacados como critérios fundamentais: participação, qualidade das interações, alinhamento ao tema e capacidade de argumentação.
+Como aspectos positivos, destacam-se a promoção do debate, a troca de experiências, o feedback formativo e o desenvolvimento da autonomia e da reflexão.
+Entre os aspectos negativos, figuram a mediação insuficiente por parte do tutor, propostas pouco instigantes e critérios de avaliação pouco claros.
+
+*** Discussão
+
+O sucesso do fórum como instrumento avaliativo depende de mediação ativa, critérios objetivos e propostas didáticas que promovam engajamento e construção coletiva.
+A avaliação via fórum deve ser compreendida como processo formativo contínuo, com clareza de critérios e feedbacks, acompanhando o percurso do aluno na construção do saber.
+
+*** Considerações Finais
+
+O fórum de discussão, quando bem planejado e mediado, favorece a aprendizagem dialógica e colaborativa na EaD, constituindo-se em importante instrumento para potencializar trocas, ampliar a reflexão e contribuir para uma avaliação formativa mais significativa.
+
+
+** A visão de tutores sobre o uso de fóruns em cursos a distância
+
+*** Tema e Objetivo
+
+O artigo investiga a visão de tutores sobre o uso do fórum de discussão em ambientes virtuais de aprendizagem na EaD, com foco nas estratégias de mediação tutorial e avaliação por meio desse recurso.
+
+*** Fundamentação Teórica
+
+Explora o fórum como ferramenta central de interação, troca de experiências e construção colaborativa do conhecimento na modalidade online.
+Destaca a importância do tutor como mediador, atuando em dimensões pedagógica, técnica, gerencial, tecnológica e socioafetiva.
+A participação assíncrona em fóruns permite flexibilidade, registro das contribuições e acompanhamento do percurso dos alunos.
+
+*** Metodologia
+
+A pesquisa é um estudo de caso qualitativo, com entrevistas semiestruturadas a nove tutores de uma universidade particular de São Paulo, de áreas e experiências diversas.
+Foram analisadas práticas de abertura, condução e fechamento de fóruns, métodos de avaliação e estratégias de mediação empregadas pelos tutores.
+
+*** Resultados e Discussão
+
+A maioria dos tutores utiliza o fórum frequentemente e monitora a participação dos alunos, ainda que ela seja facultativa em muitos cursos.
+Nem todos os alunos participam ativamente dos fóruns; há resistência e uso limitado à resolução de dúvidas por parte de alguns estudantes.
+Os tutores valorizam mensagens de abertura acolhedoras, uso de recursos multimídia, questionamentos instigadores e feedback individualizado para mobilizar a interação.
+Durante a mediação, estimular a participação entre os estudantes é visto como principal estratégia, além de comentários motivadores e conexão entre as ideias lançadas no fórum.
+
+*** Avaliação
+
+As principais dimensões avaliadas são a qualidade (mensagens significativas), a quantidade de interações, resposta a colegas e ao tutor, e aderência ao tema proposto.
+Sugere-se o uso de critérios claros de avaliação para garantir a efetividade da atividade e a compreensão dos objetivos pedagógicos pelos alunos.
+O fechamento ideal do fórum é marcado por um resumo das ideias discutidas, reconhecimento das participações e apresentação do próximo tema.
+
+*** Considerações Finais
+
+Os fóruns são reconhecidos como instrumentos eficazes na promoção de interação, mediação e aprendizagem colaborativa na EaD, desde que mediadores sejam proativos e as estratégias pedagógicas estejam bem delineadas.
+O sucesso do fórum depende de uma mediação ativa, criteriosa e do permanente estímulo à troca de ideias e ao protagonismo dos aprendizes, tornando o ambiente online mais democrático e formativo.
+
+
+* Tema 7 – Acompanhamento e Recuperação da Aprendizagem como focos da mediação da aprendizagem
+
+** Vídeo-aula: Acompanhamento e Recuperação da Aprendizagem como focos da mediação da aprendizagem
+
+- Metodologias ativas pressupõe diálogo e interação constante com os alunos para troca de experiências
+  - Definição de estratégicas pedagógicas
+  - Conhecer os recursos e potencializar a interação com eles
+  - Incentivar leitura de textos de apoio
+  - Não apenas o aluno, mas a mediação também precisa ser ativa
+- Uma das metas é que a avaliação de que os objetivos do curso não foram concluídos sejam percebidos apenas no final do curso
+  - Lembrando que o objetivo específico é o de aprendizagem
+- Caminhos para a recuperação de aprendizagem
+  - Checar se as dúvidas foram sanadas
+    - Levantar o que resultou em maiores dúvidas
+  - Acompanhar os efeitos das ações pedagógicas que visam a recuperação de aprendizagem
+
+** A Avaliação da Aprendizagem na EaD: Desafios e Possibilidades para a Mediação Pedagógica Virtual
+
+*** Tema e Objetivo
+
+O texto aborda os desafios e possibilidades da avaliação da aprendizagem na EaD, discutindo como a mediação pedagógica virtual deve ser planejada para potencializar processos formativos e a construção do conhecimento em ambientes digitais.
+
+*** Fundamentação Teórica
+
+Destaca a importância de uma avaliação alinhada à abordagem do Estar Junto Virtual, centrada no desenvolvimento de competências conceituais, procedimentais e atitudinais.
+A avaliação deve ser processual, contínua, dialógica e explícita, permitindo ao estudante analisar o próprio percurso de aprendizagem e identificar avanços e aspectos a aprimorar.
+Referenciais como Vygotsky e Gatti fundamentam a necessidade de avaliações diagnósticas, formativas e baseadas em contextos reais de aprendizagem.
+
+*** Critérios e Instrumentos de Avaliação
+
+Defende o uso de critérios claros, instrumentos variados (autoavaliação, projetos, atividades colaborativas, produção em wiki, fóruns), feedbacks individualizados e devolutivas que considerem valorizar, questionar e sugerir melhorias.
+Exemplos práticos mostram como as atividades avaliativas podem ser estruturadas em etapas, explicitando objetivos, critérios e pesos.
+Recomenda que a avaliação valorize a participação ativa, o empenho, a entrega pontual, a relevância dos argumentos e a colaboração do grupo.
+
+*** O Papel do Tutor Online
+
+O tutor deve acompanhar individualmente e em grupo a trajetória dos estudantes, analisando tanto o resultado quanto o processo.
+Cabe ao tutor orientar, esclarecer, propor intervenções formativas e oferecer devolutivas que valorizem conquistas, convidem à revisão e estimulem a autonomia.
+A formação do tutor requer conhecimento sobre instrumentos e critérios avaliativos próprios do AVA.
+
+*** Avaliação Formativa e Somativa
+
+Afirma que a prioridade da EaD deve ser a avaliação formativa, mesmo que a avaliação presencial e somativa também seja prevista pelas normas oficiais.
+Defende a integração entre avaliação formativa (contínua, qualitativa, mediada) e somativa (provas, trabalhos presenciais), visando à transformação de contextos e práticas educativas.
+
+*** Considerações Finais
+
+A avaliação na EaD deve ser vista como processo orgânico, que integra gestão, tutoria, comunicação e tecnologia ao projeto pedagógico.
+O objetivo é garantir que o estudante compreenda sua aprendizagem, desenvolva competências e participe ativamente do próprio percurso formativo.
+
+**  Avaliação Interativa-mediadora: um novo olhar para avaliar a aprendizagem em Educação Online (Seção 7.3)
+
+*** Tema e Objetivo
+
+O texto discute a avaliação da aprendizagem online a partir de um enfoque qualitativo, defendendo um modelo de avaliação interativa-mediadora fundamentado na interatividade e mediação pedagógica virtual. Foram analisados dois casos de cursos online (CEDERJ e Portugal) para compreender como práticas avaliativas podem promover aprendizagens significativas.
+
+*** Fundamentação Teórica
+
+Avaliação mediadora, interatividade e cibercultura são temas centrais, com referência a autores como Vygotsky, Hoffmann, Zabala, Pierre Lévy e Freire. A aprendizagem online é vista como processo coletivo, dialógico e contextualizado, que se beneficia de práticas avaliativas contínuas, transparentes e colaborativas.
+
+*** Desenho Didático e Mediação Docente
+
+Defende-se a criação de um desenho didático interativo flexível, que leve em conta o contexto dos alunos e permita múltiplos caminhos no AVA. O professor deve atuar como animador das inteligências coletivas, incentivando autoria, coautoria, participação em fóruns, wikis e atividades colaborativas, além de promover autoavaliação e coavaliação.
+
+*** Fases da Avaliação
+
+Explica o ciclo avaliativo em três fases: diagnóstica (identificação dos conhecimentos prévios), reguladora/formativa (acompanhar e ajustar o percurso) e final/somativa/integradora (reflexão sobre resultados e desenvolvimento de competências). Recomenda feedbacks constantes, intervenções personalizadas, e o uso de registros do AVA como instrumentos para avaliação qualitativa.
+
+*** Resultados dos Casos Estudados
+
+A proposta foi considerada exitosa nos dois contextos estudados. Mesmo em cursos de massa (mais de 300 alunos), atividades interativas foram possíveis graças à mediação ativa e uso diversificado dos recursos digitais (fóruns, grupos, WhatsApp). Destaca-se que o modelo é adaptável e recursivo, permitindo revisão constante da atuação docente e da prática avaliativa.
+
+*** Desafios e Considerações Finais
+
+O texto destaca os desafios institucionais e legislativos para implementação do modelo de avaliação interativa-mediadora, sobretudo pela prevalência da lógica quantitativa e de ensino massivo. Conclui que mudanças qualitativas exigem formação docente específica para EaD, desprendimento da tradição bancária e abertura para inovação e criatividade, com foco no desenvolvimento de competências e no aprender a aprender.
+
+
+** Acompanhamento de Alunos em Ambientes Virtuais de Aprendizagem Baseado em Sistemas Tutores Inteligentes
+
+*** Tema e Objetivo
+
+O artigo discute os desafios do acompanhamento de alunos em ambientes virtuais de aprendizagem (AVAs) na EaD e apresenta o desenvolvimento e avaliação de um protótipo de ferramenta que utiliza inteligência artificial para apoiar o tutor na supervisão e intervenção personalizada junto aos alunos.
+
+*** Fundamentação Teórica
+
+Os AVAs consolidaram-se no Brasil como principal plataforma de EaD, com o tutor assumindo funções centrais no acompanhamento, mediação e apoio ao aluno.
+Destaca-se o crescimento das turmas e da sobrecarga do tutor, além da importância da comunicação, interatividade e feedback para o aprendizado online.
+O texto aborda sistemas tutores inteligentes (STIs) e mineração de dados como soluções promissoras para otimizar a personalização e facilitar o acompanhamento de grandes volumes de estudantes.
+
+*** Metodologia
+
+Realizou-se entrevistas semiestruturadas com nove tutores de diferentes áreas e experiência em EaD, buscando mapear dificuldades, percepções e necessidades para o acompanhamento efetivo dos alunos em AVAs.
+A partir dos resultados, desenvolveu-se um protótipo web que integra algoritmos de classificação (Random Forest) e agrupamento (EM), proporcionando visualização gráfica e agrupamento de padrões de comportamento dos alunos.
+
+*** Principais Resultados
+
+O protótipo permitiu que tutores identificassem rapidamente alunos com desempenho fora do padrão, risco de evasão ou comportamento atípico, além de facilitar intervenções direcionadas por grupos.
+A ferramenta foi bem recebida, destacando-se como inovadora para análise de dados, manejo de turmas grandes e economia de tempo em tarefas repetitivas.
+Tutores enfatizaram o potencial de ferramentas baseadas em IA para aprimorar o feedback, motivar alunos com dificuldades e atuar preventivamente em situações de evasão.
+
+*** Considerações Finais
+
+A integração de inteligência artificial a ambientes virtuais potencializa o acompanhamento do tutor e pode transformar a aprendizagem a distância, tornando-a mais personalizada e eficiente.
+A pesquisa recomenda ampliar o desenvolvimento de ferramentas desse tipo, aprofundando as bases de dados e a validação de algoritmos, para potencializar a mediação humana, reduzir a impessoalidade e fomentar a aprendizagem ativa nos AVAs.
+
+* Tema 8 – Como a mediação coloca em interação professores e alunos
+
+** Videoaula - Como a mediação da relação entre conteudistas e alunos facilita a aprendizagem
+
+- Modelo hierárquico de mediação na Univesp:
+  - Aluno > Facilitador/Mediador > Supervisor > Professor-autor (Conteudista)
+  - Esse fluxo relata o fluxo de informação e de dúvidas
+  - Nas disciplinas regulares, existem lives de revisão com dúvidas enviadas previamente
+- Aluno é o principal autor no processo de aprendizagem, mas as particularidades da Univesp requer
+  - Flexibilidade
+  - Adaptação da metodologia convencional para o EaD
+  - Relevância do papel dos facilitadores e mediadores no ensino e na revisão do conteúdo
+  - Filtro de informações que chegam ao professor-autor
+
+** Como trabalha um facilitador
+
+
+- Responsável por levar um grupo de um ponto a outro
+  - Isso incluir ensino-aprendizagem, sendo
+    - Antes: Planejador, Projetista
+    - Piloto
+    - Preparador
+
+** As 8 principais falhas na gestão de facilitadores
+
+1. Seleção sem critérios
+2. Reforço na abordagem expositiva na formação
+3. Espaçamento excessivo entre formação e aplicação
+4. Falta de avaliação e feedback
+5. Desconexão com os resultados esperados do negócio
+6. Delargação da responsabilidade pela formatação do conteúdo
+   1. Separar papeis e funções entre conteudistas e facilitadores
+7. Carga horária (excessiva ou insuficiente)
+8. Falta de reconhecimento
+
+** Mediação docente online para colaboração: notas de uma pesquisa-formação na cibercultura
+
+*** Tema e Objetivo
+
+O artigo investiga a mediação docente online para colaboração em um curso de Licenciatura em Pedagogia a distância, analisando a atuação do tutor em fóruns de discussão e propondo o conceito de "mediação online para colaboração", em contraposição aos modelos instrucionistas presentes em muitos cursos massivos de EaD.
+
+*** Fundamentação Teórica
+
+A discussão baseia-se nos conceitos de cibercultura, interatividade e aprendizagem colaborativa, defendendo que a mediação docente deve promover autoria, diálogo, partilha e construção coletiva do conhecimento. Valoriza-se uma prática formativa aberta, inspirada em Freire, com forte ênfase em práticas discursivas que ultrapassem a comunicação unidirecional.
+
+*** Metodologia
+
+Foi adotada a pesquisa-formação na cibercultura, na qual o docente-reflete sobre sua própria prática em interação com os estudantes.
+A análise centrou-se em um fórum de discussão de uma disciplina ofertada em doze polos distintos, utilizando técnicas de análise de conversação e de redes sociais, aliando métodos qualitativos e quantitativos para mapear interações e participação.
+
+*** Resultados e Análises
+
+O estudo evidenciou que a mediação ativa do tutor, convidando todos a participarem e incentivando o diálogo genuíno entre cursistas, levou a um padrão de discussão mais profundo, com respostas encadeadas e construção coletiva de sentidos.
+As métricas de participação mostraram que o tutor não foi o centro da conversa, mas facilitador do diálogo.
+Mensagens sem respostas foram minimizadas por intervenções do tutor, valorizando e promovendo novas interações.
+O fórum analisado rompeu com o modelo instrucionista e se aproximou de práticas autorais e colaborativas, em que alunos dialogavam, conectando experiências e problematizando o uso das tecnologias no cotidiano escolar.
+
+*** Considerações Finais
+
+A mediação docente online para colaboração depende de práticas ativas, dialógicas e contextualizadas, visando à produção coletiva de conhecimento e à valorização das experiências dos alunos.
+O tutor deve evitar centrar o diálogo em si mesmo, atuar como provocador de reflexões, conectar narrativas e promover discussões plurais, fugindo de perguntas conteudistas e respostas padronizadas.
+O artigo recomenda uma educação online mais aberta, relacional e inspirada na cibercultura, capaz de formar aprendizes autônomos e críticos por meio da colaboração genuína.
+
+
+** Aprendizagem autônoma e colaborativa no sistema de tutoria virtual: estudo sobre a prática do tutor
+
+*** Tema e Objetivo
+
+O estudo analisa as competências necessárias aos professores-tutores para atuar na Educação a Distância (EaD), focando na prática da tutoria virtual e na promoção da aprendizagem autônoma e colaborativa.
+
+*** Fundamentação Teórica
+
+Discute-se o papel do tutor como mediador pedagógico, indo além do executor de tarefas, responsável por incentivar autonomia, interatividade, participação e criticidade dos alunos.
+Valoriza-se a abordagem dialógica, polifônica e sensível da comunicação online, fundamentada em autores como Vygotsky, Belloni, Levy e Delors.
+O tutor ideal alia competências técnicas, didáticas, formadoras, gerenciais e pessoais, sendo motivador, orientador, animador de comunidades virtuais, estrategista e facilitador de autoria coletiva.
+
+*** Metodologia
+
+A pesquisa é exploratório-descritiva, realizada por meio de revisão de literatura e entrevistas com professores-tutores de uma instituição privada do Rio de Janeiro.
+O instrumento utilizado foi um questionário com perguntas fechadas e abertas, aplicado online para garantir anonimato e liberdade de expressão
+
+** Docência compartilhada: a experiência de professores e tutores na ead
+
+*** Tema e Objetivo
+
+O texto investiga práticas docentes compartilhadas na EaD, explorando experiências de professores e tutores da UNISINOS e buscando compreender como a articulação entre esses profissionais pode superar a fragmentação do trabalho e potencializar o desenvolvimento profissional e a aprendizagem dos alunos.
+
+*** Fundamentação Teórica
+
+Discute os conceitos de docência compartilhada, trabalho colaborativo e formação continuada, fundamentando-se em autores como Sennett, Damiani, Boavida, Ponte e Freire.
+Diferencia cooperação, que pode ser hierárquica e fragmentada, de colaboração, que implica negociação coletiva, apoio mútuo e decisões compartilhadas como base para a docência coletiva.
+A pesquisa defende que práticas colaborativas ampliam saberes, promovem reflexão e favorecem a transformação das práticas pedagógicas e a constituição da identidade docente.
+
+*** Metodologia
+
+O estudo é de natureza exploratória, baseado em pesquisa qualitativa com triangulação de dados provenientes de entrevistas semiestruturadas e análise de documentos institucionais.
+Participaram sete
+
+** A mediação pedagógica e o sucesso de uma experiência educacional on-line
+
+*** Tema e Objetivo
+
+O artigo investiga a relação entre o sucesso de uma experiência educacional on-line e o grau de mediação pedagógica interativa realizada por docentes em cursos de pós-graduação a distância, com foco em uma disciplina de orientação de TCC.
+
+*** Fundamentação Teórica
+
+Conceitua educação on-line como fenômeno da cibercultura, destacando o papel das tecnologias digitais e dos Ambientes Virtuais de Aprendizagem (AVA) para promover interatividade, diálogo e construção coletiva do conhecimento.
+Enfatiza a importância do professor-mediador, inspirado em Vygotsky e Freire, para ultrapassar o mero transmissor de conteúdo, sendo agente de transformação e facilitador de aprendizagem plena.
+Critica projetos de educação de massa, nos quais a mediação pedagógica é fragilizada e reduzida ao suporte instrumental da tecnologia, comprometendo a qualidade do processo educativo.
+
+*** Metodologia
+
+O estudo foi realizado a partir da análise dos resultados de uma disciplina on-line de orientação de TCC em cursos de pós-graduação lato sensu a distância, envolvendo 403 alunos distribuídos em 16 cursos distintos e acompanhados por cinco professores-orientadores.
+O grau de mediação foi mensurado pela frequência de mensagens postadas pelos orientadores aos alunos, e a relação com o sucesso foi avaliada por meio de testes estatísticos (Qui-quadrado), considerando os TCCs recomendados ou não para defesa.
+
+*** Resultados e Discussão
+
+Os dados revelaram que orientadores que mantiveram maior frequência de interação (mais contato, feedbacks e mensagens mensais) apresentaram índices significativamente mais altos de sucesso na recomendação final dos TCCs.
+A interatividade mediada pelo professor contribuiu estatisticamente para melhores resultados acadêmicos, enquanto menor grau de interação esteve associado à menor aprovação.
+A pesquisa comprova que a mediação ativa, dialógica e contextualizada do professor é determinante para o êxito educacional em ambientes virtuais, superando abordagens autoinstrutivas centradas só em recursos digitais.
+
+*** Considerações Finais
+
+A mediação pedagógica, quando efetivamente praticada com interatividade e intencionalidade, é fator decisivo para o sucesso do ensino on-line.
+O artigo defende políticas de formação docente voltadas à atuação mediadora e crítica nos ambientes virtuais, alertando para os riscos de modelos tecnicistas que desprezam o contato humano e a construção coletiva do conhecimento.
+
+* Tema 9 – A presença da mediação em projetos e estágios
+
+** Videoaula - Como a mediação dos estágios facilita a aprendizagem (parte 1 e 2)
+
+- A concepção do projeto integrador está diretamente ligado com Design Thinking
+  - A rigor, isso permite uma aproximação ao tema através da elaboração e análise do problema
+  - Etapa transversal ao curso
+- O PI trás a solução aos conhecimentos produzidos
+  - Como consequência, envolve o desenvolvimento de competências
+    - Investigativa
+    - Resolução de problema
+    - Colaborativa
+    - Linguística
+    - Profissional
+    - Tecnológica
+  - Parte de uma metodologia ativa de aprendizagem
+- Papel do orientador no PI
+  - Garantir que o PI seja realizado de forma colaborativa
+  - Garantir que as etapas sejam concluídas
+- Mediação nos estágios
+  - Estágio não tem um tempo específico, mas sim um total de horas
+
+
+** Estágio supervisionado em letras: orientação nas modalidades presencial e a distância
+
+*** Tema e Objetivo
+
+O artigo analisa aproximações, distanciamentos e desafios da orientação de estágio supervisionado em cursos de Letras nas modalidades presencial e a distância, buscando compreender as especificidades, saberes mobilizados e adaptação de professores-orientadores na EaD.
+
+*** Fundamentação Teórica
+
+O texto adota a perspectiva da Linguística Aplicada Indisciplinar, defendendo a articulação entre teoria e prática e a necessidade de compartilhar experiências para evitar isolamento e excesso de tentativa e erro na formação do orientador de estágio.
+Trabalha conceitos de formação empírica, papel crítico-reflexivo do estágio e importância do diálogo com diferentes áreas do saber e com experiências tanto presenciais quanto online.
+
+*** Metodologia
+
+A pesquisa qualitativa envolveu quatro professores com experiência em orientação de estágio presencial e posterior atuação na EaD, que relataram suas vivências por vídeo, áudio ou texto, analisadas por Análise Textual Discursiva (ATD) para identificar categorias emergentes.
+
+*** Resultados e Discussão
+
+1. Orientar estágio se aprende principalmente na prática, com pouco suporte teórico-formativo específico, e a experiência em orientação presencial auxilia a migração para EaD.
+2. A tecnologia é fator crucial, exigindo letramento digital dos professores, mas, para muitos, a EaD permitiu até maior proximidade e acompanhamento dos alunos, superando barreiras de tempo e espaço.
+3. Apesar de dúvidas iniciais sobre a eficiência da EaD, elas tendem a ser superadas na experiência, comprovando o potencial da modalidade para formar bons professores.
+4. O orientador atua também como mediador de crises e conflitos dos estagiários, precisando adotar postura empática, tranquilizadora e promotora de colaboração entre os futuros docentes.
+
+*** Considerações Finais
+
+As diferenças mais marcantes entre orientação presencial e a distância dizem respeito aos procedimentos institucionais e à necessidade de domínio tecnológico, mais que à essência da função docente.
+O compartilhamento de experiências e o incentivo ao diálogo entre docentes são apontados como caminhos para aprimorar tanto a formação do orientador quanto a qualidade do estágio supervisionado em EaD.
+
+** Sistematização e operacionalização do estágio supervisionado na formação de professores a distância da UFPI
+
+*** Tema e Objetivo
+
+O artigo descreve a sistematização e operacionalização do estágio supervisionado na formação de professores em cursos de licenciatura a distância do CEAD-UFPI, analisando sua estrutura, regulamentação e desafios práticos na modalidade EaD.
+
+*** Fundamentação Teórica
+
+O estágio supervisionado é apresentado como componente obrigatório, decisivo para a formação crítica, reflexiva e para a articulação entre teoria e prática no contexto dos cursos de licenciatura.
+O texto fundamenta-se em legislações vigentes (LDBEN, resoluções do CNE e UFPI) e em autores que defendem uma formação docente ancorada na aproximação com a realidade escolar e na mediação didático-metodológica por meio das TICs.
+Destaca-se a importância da interação entre universidade, escola-campo e alunos para a vivência da profissionalização docente.
+
+*** Metodologia
+
+A pesquisa foi qualitativa e documental, realizada a partir da análise de Projetos Político-Pedagógicos, legislações federais e institucionais, além de documentos normativos do estágio da UFPI.
+O estudo ainda descreve práticas e rotinas administrativas a partir do funcionamento do estágio nos cursos de Ciências Biológicas, Filosofia, Matemática e Pedagogia.
+
+*** Estrutura e Operacionalização
+
+O estágio supervisionado nos cursos EaD segue as mesmas diretrizes e carga horária mínima dos presenciais, realizado em quatro etapas (a partir da segunda metade do curso), com atividades presenciais em escolas conveniadas.
+Há uma rede de coordenação envolvida (coordenadores de estágio, professores de disciplina, tutores presenciais e a distância, supervisores de campo), que orientam, acompanham e avaliam o desenvolvimento do aluno estagiário.
+O processo inclui etapas administrativas, articulação de convênios, acompanhamento prático in loco e uso de sistemas digitais (SIGAA) para registro e acompanhamento das atividades.
+
+*** Considerações Finais
+
+O estágio supervisionado na EaD se consolida como momento fundamental para o desenvolvimento de competências profissionais, articulação entre teoria e prática e aproximação vivencial com o campo de atuação docente.
+A mediação didático-metodológica, o planejamento institucional e a integração entre tecnologias e vivências práticas são fatores que permitem superar limites da distância, qualificando a formação de professores mesmo em configurações remotas.
+
+** A tutoria virtual no processo de ensino e aprendizagem de estudantes em estágio supervisionado em educação infantil
+
+*** Tema e Objetivo
+
+O artigo analisa o papel da tutoria virtual no processo de ensino e aprendizagem de estudantes em estágio supervisionado de Educação Infantil, no curso de Pedagogia a distância de uma universidade federal, buscando identificar as principais funções do tutor virtual e como sua atuação impacta a formação docente.
+
+*** Fundamentação Teórica
+
+A tutoria virtual é apresentada como elemento central para mediação entre estudantes, professores, conteúdo e a própria experiência do estágio, superando a visão burocrática para construir uma prática formativa, dialógica e reflexiva.
+O tutor é reconhecido como ponto de apoio e referência para o estudante, facilitando a compreensão de procedimentos, promovendo a reflexão sobre as experiências vividas no estágio e acolhendo dúvidas, expectativas e dificuldades dos alunos.
+Autores como Freire, Vygotsky, Pimenta e Lima fundamentam a importância do diálogo, da colaboração e da horizontalidade no processo de aprendizagem em EaD e no estágio supervisionado.
+
+*** Metodologia
+
+A pesquisa de abordagem qualitativa foi realizada com quatro tutoras virtuais da atividade de Estágio Supervisionado, através de questionários abertos, cujas respostas foram analisadas à luz do referencial teórico.
+
+*** Resultados e Discussão
+
+As tutoras apontaram a necessidade de atuar como mediadoras próximas, atentas à frequência, envolvimento e dificuldades dos estudantes, além de orientar na elaboração de registros reflexivos e na superação de questões técnicas e emocionais.
+Destacou-se a importância do diálogo constante e da realização de encontros coletivos (chats), que valorizam o compartilhamento de experiências entre estudantes de diferentes polos, promovendo aprendizagem colaborativa.
+O feedback individualizado foi identificado como fundamental para a correção de atividades, esclarecimento de normas e incentivo ao desenvolvimento acadêmico e pessoal dos estudantes.
+O tutor virtual é visto como corresponsável pela autonomia, motivação e integração do aluno, promovendo relações horizontais e abertura para o diálogo sincero.
+
+*** Considerações Finais
+
+A tutoria virtual é essencial para o sucesso formativo nos estágios da EaD, ressaltando a importância do reconhecimento, visibilidade e valorização do tutor como formador e mediador ativo.
+O trabalho do tutor deve ser pautado na sensibilidade e na criação de redes colaborativas, articulando a mediação entre teoria e prática, e estimulando o protagonismo dos estudantes na educação a distância.
+
+** Adoção da estratégia de mentoria fishbowl em projetos integradores em curso de graduação
+*** Tema e Objetivo
+
+O artigo relata a adoção da estratégia de mentoria FishbowlTM nos projetos integradores dos cursos da UNIVESP, demonstrando resultados e percepção dos estudantes quanto à atividade.
+
+*** Fundamentação Teórica
+
+O modelo didático-pedagógico da UNIVESP baseia-se em metodologias ativas, principalmente Aprendizagem Baseada em Problemas e Projetos (ABPP) e Design Thinking, valorizando protagonismo estudantil, colaboração e o desenvolvimento de soluções para problemas reais.
+
+*** Metodologia
+
+O FishbowlTM é uma sessão de mentoria na qual grupos de estudantes apresentam seus protótipos a especialistas externos (“mentores”), recebendo sugestões e críticas construtivas de profissionais experientes da área.
+A atividade foi implementada de forma presencial, virtual e híbrida, utilizando ferramentas como Google Hangouts para superar desafios de distância geográfica nos polos da instituição.
+
+*** Resultados e Discussão
+
+Estudantes relataram alto grau de satisfação com a dinâmica, destacando a importância de ouvir diferentes perspectivas, receber críticas e sugestões, e aprimorar seus projetos a partir das contribuições dos mentores.
+O FishbowlTM gerou novas ideias, expandiu a visão dos participantes sobre o próprio trabalho e favoreceu o desenvolvimento de soluções mais robustas e criativas.
+Os depoimentos ressaltam o papel formativo da atividade e sua adesão à proposta de aprendizagem colaborativa e inovadora promovida pela UNIVESP.
+O uso institucional dessa estratégia beneficiou centenas de estudantes em vários cursos de graduação, com resultados positivos tanto em licenciaturas quanto em engenharias.
+
+*** Considerações Finais
+
+A atividade FishbowlTM contribui significativamente para a formação acadêmica, trazendo especialistas para o circuito de aprendizagem, promovendo diálogo, escuta ativa, crítica construtiva e reflexão coletiva sobre projetos.
+O sucesso da experiência reforça a importância da mediação ativa, colaboração e aproximação entre estudantes e profissionais de mercado, consolidando a aprendizagem baseada em desafios reais no ensino superior a distância.
+
+** Analise dos benefícios da aprendizagem baseada em problemas (ABP) no desenvolvimento de projetos práticos no curso de engenharia da universidade virtual do estado de são paulo (UNIVESP)
+
+*** Tema e Objetivo
+
+O artigo analisa os benefícios da Aprendizagem Baseada em Problemas (ABP) e Design Thinking (DT) no desenvolvimento de projetos práticos nos cursos de Engenharia da UNIVESP, considerando a motivação dos alunos e o papel do professor mediador na formação de futuros engenheiros.
+
+*** Fundamentação Teórica
+
+Aponta que o ensino tradicional, centrado na transmissão de informação, tornou-se insuficiente diante das novas demandas do mercado e da sociedade.
+A ABP é entendida como metodologia ativa e colaborativa, que desafia alunos a resolver problemas reais, promovendo autonomia, criatividade e integração entre diferentes disciplinas.
+Destaca ainda o Design Thinking como abordagem centrada no ser humano, colaborativa e orientada à inovação prática, e valoriza o desenvolvimento das competências descritas por Delors: aprender a aprender, aprender a fazer, aprender a conviver e aprender a ser.
+
+*** Metodologia
+
+O estudo de caso foi realizado em um polo de EaD da UNIVESP, envolvendo 54 alunos divididos em grupos para desenvolvimento de Projetos Integradores, utilizando ABP e DT para identificar, analisar e solucionar problemas reais.
+A coleta de dados incluiu observação das atividades, análise de projetos, aplicação de entrevistas abertas e enquete sobre motivação e resultados.
+
+*** Resultados e Discussão
+
+Os projetos integradores elevaram a motivação dos alunos, favoreceram o trabalho colaborativo, a interdisciplinaridade e proporcionaram experiências vivenciais próximas ao mercado de trabalho.
+Destaca-se a importância da escuta ativa (empatia) com o usuário e da flexibilidade na negociação de soluções em grupo, além do papel central do professor mediador em orientar, estimular autonomia e articular conhecimentos das disciplinas.
+Foram identificadas dificuldades para implantar ABP, devido a resistências de docentes e discentes acostumados ao ensino tradicional, mas os ganhos em aprendizagem e envolvimento superaram essas barreiras segundo o relato dos participantes.
+
+*** Considerações Finais
+
+A ABP aliada ao Design Thinking mostrou-se eficaz para construção coletiva do conhecimento, desenvolvimento de habilidades práticas e preparação dos engenheiros para desafios reais, recomendando a adoção e a ampliação dessas metodologias em cursos superiores de Engenharia.

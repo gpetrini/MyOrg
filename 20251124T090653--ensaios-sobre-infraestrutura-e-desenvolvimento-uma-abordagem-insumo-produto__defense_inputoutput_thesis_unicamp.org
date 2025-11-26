@@ -1,0 +1,26 @@
+#+title:      Ensaios sobre infraestrutura e desenvolvimento: uma abordagem insumo-produto
+#+date:       [2025-11-24 Mon 09:06]
+#+filetags:   :defense:inputoutput:thesis:unicamp:
+#+identifier: 20251124T090653
+
+Autor: André Correia Bueno (Doug)
+
+- Importância da infraestrutura para o desenvolvimento econômico e social é consenso na literatura
+  - No entanto, não tem consenso na definição no conceito de infraestrutura
+    - O Trabalho utilizará o conceito de infraestrutura econômica
+- Caso brasileiro possui uma insuficiência de infraestrutura, podendo restringir o crescimento e desenvolvimento econômico
+  - Investimento em infraestrutura pode ser um vetor de dinamismo
+- Objetivo: Investigar as características estruturais do setor de infraestrutura e seu impacto no crescimento econômico
+
+
+* Ensaio 1
+
+Objetivo: Identificar agrupamento de infraestrutura para fazer uma análise exploratória das similaridades de infraestrutura entre os países
+- Análise de componentes principais para reduzir a dimensionalidade dos dados
+  - Usando método de Kaises (se autovalor é maior que um, é relevante)
+- Em seguida, algoritmo de clusterização K-means
+  - Indentificar padrões e caracterízticas dos setores
+
+
+* Ensaio 2
+* Ensaio 3

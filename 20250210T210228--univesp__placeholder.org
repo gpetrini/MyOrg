@@ -1703,6 +1703,81 @@ Os informes gerais são:
   - Enviar uma devolutiva aos grupos sinalizando eventuais pontos de melhoria
     - Usar tom acolhedor e formativo
 
+
+** Quinzena 6
+
+*** Reunião com a coordenação [2025-10-16 Thu]
+
+**** Ações a serem desenvolvidas
+
+- Pode ser uma quinzena de ajuste para os grupos mais atrasados
+- Pode ser uma forma dos grupos que estão adiantados seguirem ao trabalho
+- A avaliação colaborativa deve ser realizada na quinzena 07
+- Ações:
+  - Estudar o conteúdo do AVA
+    - Vídeo sobre avaliação do projeto integrador (mesmo vídeo da quinzena 02)
+    - Videoaula sobre produção de vídeo e acessar o REA
+  - Finalizar o mapeamento do processo
+    - Implementação da solução
+  - Iniciar a escrita do relatório final
+    - Lembrar que o mapeamento não precisa ser implementado
+    - Lembrar que a *entrega* será feita na quinzena 7
+    - Aprimirar as seções anteriores
+    - Relacionar o conteúdo de no mínimo 4 disciplinas estudadas ao longo do curso com o tema do projeto integrador
+      - Existe uma seção específica
+    - Manter os resultados preliminares, descrever as sugestões coletadas e incluir o mapeamento final
+      - Indicar qual foi o programa utilizado para gerar o mapeamento
+    - Escrever as considerações finais
+  - Iniciar a produção do vídeo
+    - Sugestão de criar um planejamento (roteiro, cenário, slides, vídeos extternos, animação, etc)
+    - Preencher a ficha técnica do vídeo
+      - Vídeo deve ser postado no YouTube em modo de exibição *pública*
+- Em reunião
+  - Apresentar os modelos e rubricas de avaliação do relatório final e do vídeo de apresentação
+  - Mencionar a realização da avaliação colaborativa (quinzena 07) e que todos deverão estar presentes
+    - Adiantando: o grupo irá definir 03 critérios e atribuirem notas a si mesmos
+  - Disponibilizar o link da reunião
+  - Resumo deve conter os próximos passos
+
+
+** Quinzena 7
+
+*** Reunião com a coordenação [2025-10-30 Thu]
+
+- Ações:
+  - Estudar conteúdo
+  - Finalizar a escrita do relatório final
+  - Finalizar o vídeo ded apresentação da solução
+    - Vídeo como não listado e link indicado na capa
+  - Realizar a avaliação colaborativa
+  - Realizaz as entregas finais e nos locais corretos
+    - Prazo: [2025-11-11 Tue]
+- Orientações:
+  - Abrir quinzena 07
+  - Agendar na primeira semana
+  - Realizar avaliação colaborativa de forma síncrona
+    - Caso nem todos estejam presentes, instruí-los de como realizarem de modo assíncrono
+  - Cobrar os termos aos alunos
+    - Foco no grupos 06 e 09
+    - Entregues pelo orientador
+      - Orientador insere no AVA (espaço: Ferramentas do Grupo > Troca de Arquivos)
+  - Pedir para indicarem qual programa utilizaram para o mapeamento
+  - Descrever como foi "testada" a solução
+    - Leia-se: apresentação e devolutivas
+
+
+*** Reunião com a coordenação [2025-11-06 Thu]
+
+- Entrega do relatório será feito pelo SEI
+  - Mas ainda não têm informação sobre como isso será feito
+  - Mencionar disciplinas no andamento das atividades
+- No ano seguinte, o AVA será substituído
+- Não iniciar a correção antes do dia 17/11
+- Quando os grupos enviarem as autorizações faltantes, é o orientador que deve fazer a inserção de troca de arquivos.
+- Os grupos devem retirar as declarações que estiverem nos relatórios
+  - Isso porquê será disponibilizado no repositório depois
+  - As entregas junto aos relatórios parciais
+
 * Relatórios
 
 ** Relatório I
