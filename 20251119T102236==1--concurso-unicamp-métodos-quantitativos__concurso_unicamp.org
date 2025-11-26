@@ -1,0 +1,5 @@
+#+title:      Concurso Unicamp - Métodos Quantitativos
+#+date:       [2025-11-19 Wed 10:22]
+#+filetags:   :concurso:unicamp:
+#+identifier: 20251119T102236
+#+signature:  1

@@ -1,0 +1,62 @@
+#+title:      Métodos Quantitativos Aplicados à Economia
+#+date:       [2025-11-19 Wed 10:23]
+#+filetags:   :ho341:unicamp:
+#+identifier: 20251119T102352
+#+signature:  1=2
+
+* TODO Indicadores socioeconômicos
+
+** Temas obrigatórios
+
+
+- Principais indicadores no Brasil
+- Evolução de indicadores socioeconômicos no Brasil,
+- Análise de dados univariada
+- Análise de dados bivariada
+- Representação espacial de indicadores
+
+* TODO Distâncias multivariadas
+
+* TODO Análise de agrupamento/conglomerado
+
+* TODO Análise de variância multivariada
+
+* TODO Análise de discriminante
+
+* TODO Componentes principais
+
+** Temas obrigatórios
+
+- Conceitos e objetivos
+- Obtenção dos componentes principais
+- Importância relativa de um componente principal
+- Correlação entre o componente principal e a variável
+- Componentes principais de variáveis padronizadas
+- Gráficos de componentes principais
+- Análise de agrupamento
+
+** Capítulos de livro
+
+** Exemplos de aulas
+
+- [[https://hedibert.org/wp-content/uploads/2015/02/AnaliseMultivariada-aula3.pdf][Hedibert - PCA]]
+- [[https://www.youtube.com/watch?v=U0x_rOOlrlg][Samuel Campos - PCA]]
+
+** Bases de dados
+
+** Scripts
+
+** Ideias
+
+- Mostrar intuição do PCA com dados sintéticos
+  - Visualização gráfica com elipsóides indicando desvio-padrão
+  - Setar indicando PCs
+- Motivação a partir do IDH
+
+* TODO Análise de correspondência e análise de correspondência canônica
+
+* TODO Análise de correlações canônicas
+
+* TODO Análise fatorial
+
+* TODO Processo de análise fatorial
