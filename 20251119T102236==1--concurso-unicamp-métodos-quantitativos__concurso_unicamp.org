@@ -3,3 +3,11 @@
 #+filetags:   :concurso:unicamp:
 #+identifier: 20251119T102236
 #+signature:  1
+#+language: pt_Br
+
+Esta nota aponta para as disciplinas referentes ao concurso à área de Métodos Quantitativos para o IE-Unicamp (1S/2026).
+
+- Prova Escrita :: [[denote:20251119T102305][1=1  Economia Matemática II]]
+- Prova Didática :: [[denote:20251119T102352][1=2  Métodos Quantitativos Aplicados à Economia]]
+
+* Possíveis questões

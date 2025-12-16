@@ -1,7 +1,7 @@
 #+OPTIONS: num:nil ^:{} toc:nil
 #+title:      CE112: Economic Mathematics II
-#+date:       [2025-02-03 seg 18:22]
-#+filetags:   :lecture:
+#+date:       [2025-02-03 Mon 18:22]
+#+filetags:   :lecture:ped:
 #+identifier: 20250203T182256
 
 #+BIBLIOGRAPHY: ~/Org/zotero_refs.bib

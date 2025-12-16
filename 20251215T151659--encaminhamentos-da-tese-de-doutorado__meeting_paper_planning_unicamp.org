@@ -1,0 +1,21 @@
+#+title:      Encaminhamentos da Tese de doutorado
+#+date:       [2025-12-15 Mon 15:16]
+#+filetags:   :meeting:paper:planning:unicamp:
+#+identifier: 20251215T151659
+
+* Reunião Lucas [2025-12-15 Mon]
+
+- Houve um certo concenso entre a banca de que poderiam ser extraídos mais de um artigo
+  - Um deles seria ter um modelo a ser vendido para o público ABM
+    - Provavelmente mais técnico e focar nas contribuições
+      - Restrições de crédito
+      - Nova função invesitmento
+      - Relevância da demanda para o crescimento
+    - Não são necessários os choques para validar o modelo
+      - No entantto, os choques possam ser interessantes para um público mais de macroeconomista
+  - Outro trataria na geração endógena de ciclo por meio do investimento em inovação
+    - Começar a partir de um modelo agregada e mostrar que o investimento inovativo não seria capaz de gerar ciclo
+    - Uma vez que o modelo é agentizado, mostrar que existem ciclos mesmo com o gasto autônomo crescendo a uma taxa fixa
+    - A partir disso, poderia ter a discussão da bolha de investimentto
+  - Outra possibilidade é tentar enfatizar exclusivamente na restrição de crédito
+    - Mas este talvez tenha uma independência mais incerta

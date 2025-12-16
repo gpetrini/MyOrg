@@ -1,0 +1,118 @@
+#+title:      Economia Matemática II
+#+date:       [2025-11-19 Wed 10:23]
+#+filetags:   :ce112:concurso:graduacao:unicamp:
+#+identifier: 20251119T102305
+#+signature:  1=1
+
+[[denote:20250206T170658][Teaching and Lectures]]
+
+* TODO Funções de várias variáveis reais [0%]
+
+Materiais:
+- Simon and Blume Ch 13
+
+** TODO Funções entre espaços euclidianos
+
+** TODO Gráficos de funções de duas variáveis
+
+** TODO Curvas de Nível
+
+** TODO Tipos Especiais de Funções
+
+** TODO Funções Contínuas
+
+** TODO Aplicações à Economia
+
+
+* TODO Derivada total [0%]
+
+Materiais:
+
+** TODO Interpretação Geométrica
+
+** TODO Aproximação Linear
+
+** TODO Funções de mais de duas variáveis
+
+** TODO Aplicações à Economia
+
+* TODO Regra da cadeia [0%]
+
+Materiais:
+
+** TODO Vetor tangente
+
+** TODO Derivação ao longo de uma curva: a regra da cadeia
+
+** TODO Aplicações à Economia
+
+
+* TODO Derivadas direcionais e gradientes [0%]
+
+Materiais:
+
+** TODO Derivadas Direcionais
+
+** TODO Vetor Gradiente
+
+** TODO Aplicações à Economia
+
+
+* TODO Funções explícitas [0%]
+
+Materiais:
+
+** TODO Aproximação por Diferenciais
+
+** TODO Regra da Cadeia
+
+** TODO Aplicações à Economia
+
+* TODO Derivadas de ordens superiores [0%]
+
+Materiais:
+
+** TODO Funções Continuamente Diferenciáveis
+
+** TODO Derivadas de segunda ordem e matriz Hessiana
+
+** TODO Aplicações à Economia
+
+* TODO Funções implícitas [0%]
+
+Materiais:
+
+** TODO Teorema da Função Implícita
+
+** TODO Aplicações em estática comparativa
+
+* TODO Formas quadráticas e matrizes definidas [0%]
+
+Materiais:
+
+** TODO Matrizes Simétricas Definidas
+
+** TODO Restrições Lineares e Matrizes Orladas
+
+
+* TODO Otimização não condicionada [0%]
+
+Materiais:
+
+** TODO Condições de Primeira e Segunda Ordem
+
+** TODO Máximo e Mínimos Globais
+
+** TODO Aplicações à Economia
+
+* TODO Otimização condicionada [0%]
+
+Materiais:
+
+** TODO Restrições de Igualdade e de Desigualdade
+
+** TODO Condições de Kuhn-Tucker
+
+** TODO Multiplicador de Lagrange
+
+** TODO Aplicações à Economia

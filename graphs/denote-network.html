@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Denote Explore Neighbourhood Network</title>
+    <title>Denote Explore Keywords Network</title>
     <style>
       body {
-          font-family: Arial, sans-serif;
+          font-family: sans-serif;
           margin: 0;
           padding: 0;
           display: flex;
@@ -36,7 +36,7 @@
       .lighter {
 	  color: #888;
       }
-      
+
       .tooltip .title {
           font-weight: bold;
           margin-bottom: 10px;
@@ -67,7 +67,7 @@
       .hidden {
           display: none;
       }
-      
+
       .info-button {
 	  position: fixed;
 	  top: 10px;
@@ -116,7 +116,7 @@
 	  display: none;
 	  z-index: 99999;
       }
-      
+
       .info-tooltip .title {
 	  font-weight: bold;
 	  margin-bottom: 10px;
@@ -130,7 +130,7 @@
       }
 
       #keyword-chart svg {
-	  font-family: Arial, sans-serif;
+	  font-family: sans-serif;
       }
 
       .legend-container .chart-container {
@@ -140,7 +140,7 @@
 	  border-radius: 8px;
 	  background-color: #f8f8f8;
       }
-      
+
       .metadata-container {
 	  margin-bottom: 10px;
 	  padding: 10px;
@@ -167,2056 +167,192 @@
     <script>
       const data = {
   "meta": {
-    "directed": true,
-    "type": "Neighbourhood",
-    "parameters": [
-      "20250203T180327",
-      2
-    ]
+    "directed": null,
+    "type": "Keywords",
+    "parameters": 2
   },
   "nodes": [
     {
-      "id": "20201202T092036",
-      "signature": null,
-      "name": "IEE882: Macroeconomia Financeira",
-      "keywords": [
-        "lecture"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20201202T092036--iee882-macroeconomia-financeira__lecture.org",
-      "degree": 1,
-      "backlinks": 0
+      "id": "placeholder",
+      "name": "placeholder",
+      "degree": 7
     },
     {
-      "id": "20210212T000006",
-      "signature": null,
-      "name": "Agent-Based Modelling: A Methodology for Neo-Schumpeterian Economics",
-      "keywords": [
-        "bib"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20210212T000006--agent-based-modelling-a-methodology-for-neo-schumpeterian-economics__bib.org",
-      "degree": 2,
-      "backlinks": 0
+      "id": "univesp",
+      "name": "univesp",
+      "degree": 2
     },
     {
-      "id": "20211025T000000",
-      "signature": null,
-      "name": "R&D-based economic growth in a supermultiplier model",
-      "keywords": [
-        "bib"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20211025T000000--rd-based-economic-growth-in-a-supermultiplier-model__bib.org",
-      "degree": 1,
-      "backlinks": 0
+      "id": "definition",
+      "name": "definition",
+      "degree": 4
     },
     {
-      "id": "20211027T155517",
-      "signature": null,
-      "name": "The double bubble at the turn of the century: technological roots and structural implications",
-      "keywords": [
-        "bib"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20211027T155517--the-double-bubble-at-the-turn-of-the-century-technological-roots-and-structural-implications__bib.org",
-      "degree": 1,
-      "backlinks": 0
+      "id": "country",
+      "name": "country",
+      "degree": 1
     },
     {
-      "id": "20230216T235207",
-      "signature": null,
-      "name": "Chapter ABM",
-      "keywords": [
-        "dissertation",
-        "readinglist"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20230216T235207--chapter-abm__dissertation_readinglist.org",
-      "degree": 2,
-      "backlinks": 2
+      "id": "data",
+      "name": "data",
+      "degree": 1
     },
     {
-      "id": "20240314T120430",
-      "signature": null,
-      "name": "Data Assimilation",
-      "keywords": [
-        "overview"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20240314T120430--data-assimilation__overview.org",
-      "degree": 1,
-      "backlinks": 0
+      "id": "monetary",
+      "name": "monetary",
+      "degree": 2
     },
     {
-      "id": "20240531T175705",
-      "signature": null,
-      "name": "DSGE",
-      "keywords": [
-        "overview"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20240531T175705--dsge__overview.org",
-      "degree": 1,
-      "backlinks": 0
+      "id": "policy",
+      "name": "policy",
+      "degree": 2
     },
     {
-      "id": "20240707T183450",
-      "signature": null,
-      "name": "Agent Based Summer School - Sant'Anna",
-      "keywords": [
-        "summerschool"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20240707T183450--agent-based-summer-school-santanna__summerschool.org",
-      "degree": 7,
-      "backlinks": 0
+      "id": "financial",
+      "name": "financial",
+      "degree": 2
     },
     {
-      "id": "20240708T155455",
-      "signature": null,
-      "name": "Schumpeterian growth models",
-      "keywords": [
-        "canonicalmodels"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20240708T155455--schumpeterian-growth-models__canonicalmodels.org",
-      "degree": 9,
-      "backlinks": 9
+      "id": "trade",
+      "name": "trade",
+      "degree": 1
     },
     {
-      "id": "20240708T155553",
-      "signature": null,
-      "name": "Effective Demand",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20240708T155553--effective-demand__placeholder.org",
-      "degree": 5,
-      "backlinks": 4
+      "id": "mainstream",
+      "name": "mainstream",
+      "degree": 1
     },
     {
-      "id": "20240708T155635",
-      "signature": null,
-      "name": "Business Cycles",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20240708T155635--business-cycles__placeholder.org",
-      "degree": 24,
-      "backlinks": 24
+      "id": "schoolofthought",
+      "name": "schoolofthought",
+      "degree": 1
     },
     {
-      "id": "20240708T155703",
-      "signature": null,
-      "name": "Stylized Facts",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20240708T155703--stylized-facts__placeholder.org",
-      "degree": 18,
-      "backlinks": 18
+      "id": "historicalevent",
+      "name": "historicalevent",
+      "degree": 1
     },
     {
-      "id": "20240708T155825",
-      "signature": null,
-      "name": "Product Innovation",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20240708T155825--product-innovation__placeholder.org",
-      "degree": 5,
-      "backlinks": 5
+      "id": "canonicalmodels",
+      "name": "canonicalmodels",
+      "degree": 1
     },
     {
-      "id": "20240708T155856",
-      "signature": null,
-      "name": "Process Innovation",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20240708T155856--process-innovation__placeholder.org",
-      "degree": 6,
-      "backlinks": 6
+      "id": "dissertation",
+      "name": "dissertation",
+      "degree": 2
     },
     {
-      "id": "20240708T174852",
-      "signature": null,
-      "name": "Structural change",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20240708T174852--structural-change__placeholder.org",
-      "degree": 1,
-      "backlinks": 1
+      "id": "outdated",
+      "name": "outdated",
+      "degree": 1
     },
     {
-      "id": "20240708T175224",
-      "signature": null,
-      "name": "Expectations Formation and Behaviour Macroeconomics",
-      "keywords": [
-        "meta"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20240708T175224--expectations-formation-and-behaviour-macroeconomics__meta.org",
-      "degree": 3,
-      "backlinks": 0
+      "id": "readinglist",
+      "name": "readinglist",
+      "degree": 1
     },
     {
-      "id": "20240708T180959",
-      "signature": null,
-      "name": "Technological Paradigms, Labour Creation and Destruction in a Multi-Sector Agent-Based Model",
-      "keywords": [
-        "bib"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20240708T180959--technological-paradigms-labour-creation-and-destruction-in-a-multi-sector-agent-based-model__bib.org",
-      "degree": 3,
-      "backlinks": 0
+      "id": "bib",
+      "name": "bib",
+      "degree": 2
     },
     {
-      "id": "20240715T100237",
-      "signature": null,
-      "name": "Economic Forecasting with an Agent-Based Model",
-      "keywords": [
-        "bib"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20240715T100237--economic-forecasting-with-an-agent-based-model__bib.org",
-      "degree": 1,
-      "backlinks": 0
+      "id": "mimeo",
+      "name": "mimeo",
+      "degree": 1
     },
     {
-      "id": "20240906T145727",
-      "signature": null,
-      "name": "Medium-Term Business Cycles",
-      "keywords": [
-        "bib"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20240906T145727--medium-term-business-cycles__bib.org",
-      "degree": 2,
-      "backlinks": 0
-    },
-    {
-      "id": "20240906T161550",
-      "signature": null,
-      "name": "Endogenous Technology Adoption and R&amp;D as Sources of Business Cycle Persistence",
-      "keywords": [
-        "bib"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20240906T161550--endogenous-technology-adoption-and-rampd-as-sources-of-business-cycle-persistence__bib.org",
-      "degree": 2,
-      "backlinks": 0
-    },
-    {
-      "id": "20250202T114015",
-      "signature": null,
-      "name": "Gibrat Law",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250202T114015--gibrat-law__placeholder.org",
-      "degree": 1,
-      "backlinks": 0
-    },
-    {
-      "id": "20250202T114051",
-      "signature": null,
-      "name": "Externalities",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250202T114051--externalities__placeholder.org",
-      "degree": 1,
-      "backlinks": 1
-    },
-    {
-      "id": "20250202T114158",
-      "signature": null,
-      "name": "Accelerator Model",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250202T114158--accelerator-model__placeholder.org",
-      "degree": 3,
-      "backlinks": 3
-    },
-    {
-      "id": "20250202T114248",
-      "signature": null,
-      "name": "Agent Based Models",
-      "keywords": [
-        "overview"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250202T114248--agent-based-models__overview.org",
-      "degree": 35,
-      "backlinks": 19
-    },
-    {
-      "id": "20250202T114420",
-      "signature": null,
-      "name": "Model Validation",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250202T114420--model-validation__placeholder.org",
-      "degree": 3,
-      "backlinks": 1
-    },
-    {
-      "id": "20250202T114645",
-      "signature": null,
-      "name": "Transaction Costs",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250202T114645--transaction-costs__placeholder.org",
-      "degree": 1,
-      "backlinks": 1
-    },
-    {
-      "id": "20250202T114928",
-      "signature": null,
-      "name": "Asset bubble",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250202T114928--asset-bubble__placeholder.org",
-      "degree": 2,
-      "backlinks": 2
-    },
-    {
-      "id": "20250202T114954",
-      "signature": null,
-      "name": "Autonomous Expenditures",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250202T114954--autonomous-expenditures__placeholder.org",
-      "degree": 1,
-      "backlinks": 1
-    },
-    {
-      "id": "20250202T115328",
-      "signature": null,
-      "name": "Canonical Models",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250202T115328--canonical-models__placeholder.org",
-      "degree": 2,
-      "backlinks": 2
-    },
-    {
-      "id": "20250202T120026",
-      "signature": null,
-      "name": "Review of Literature",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250202T120026--review-of-literature__placeholder.org",
-      "degree": 1,
-      "backlinks": 1
-    },
-    {
-      "id": "20250202T120057",
-      "signature": null,
-      "name": "Replicator Dynamic",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250202T120057--replicator-dynamic__placeholder.org",
-      "degree": 1,
-      "backlinks": 1
-    },
-    {
-      "id": "20250202T120232",
-      "signature": null,
-      "name": "Productivity Paradox",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250202T120232--productivity-paradox__placeholder.org",
-      "degree": 1,
-      "backlinks": 1
-    },
-    {
-      "id": "20250202T120251",
-      "signature": null,
-      "name": "Policy Oriented",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250202T120251--policy-oriented__placeholder.org",
-      "degree": 1,
-      "backlinks": 1
-    },
-    {
-      "id": "20250202T120321",
-      "signature": null,
-      "name": "Phillips curve",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250202T120321--phillips-curve__placeholder.org",
-      "degree": 1,
-      "backlinks": 0
-    },
-    {
-      "id": "20250202T120427",
-      "signature": null,
-      "name": "Monetary Policy",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250202T120427--monetary-policy__placeholder.org",
-      "degree": 1,
-      "backlinks": 1
-    },
-    {
-      "id": "20250202T120625",
-      "signature": null,
-      "name": "Investment determination",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250202T120625--investment-determination__placeholder.org",
-      "degree": 2,
-      "backlinks": 2
-    },
-    {
-      "id": "20250202T120706",
-      "signature": null,
-      "name": "Insider-Outsider Model",
-      "keywords": [
-        "canonicalmodels",
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250202T120706--insider-outsider-model__canonicalmodels_placeholder.org",
-      "degree": 1,
-      "backlinks": 1
-    },
-    {
-      "id": "20250202T120740",
-      "signature": null,
-      "name": "Innovation-led growth models",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250202T120740--innovation-led-growth-models__placeholder.org",
-      "degree": 1,
-      "backlinks": 1
-    },
-    {
-      "id": "20250202T120807",
-      "signature": null,
-      "name": "Innovation bubble ABM",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250202T120807--innovation-bubble-abm__placeholder.org",
-      "degree": 4,
-      "backlinks": 4
-    },
-    {
-      "id": "20250202T120931",
-      "signature": null,
-      "name": "Heterodox Growth Models",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250202T120931--heterodox-growth-models__placeholder.org",
-      "degree": 1,
-      "backlinks": 1
-    },
-    {
-      "id": "20250202T121100",
-      "signature": null,
-      "name": "General Equilibrium Model",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250202T121100--general-equilibrium-model__placeholder.org",
-      "degree": 2,
-      "backlinks": 2
-    },
-    {
-      "id": "20250202T121115",
-      "signature": null,
-      "name": "Fiscal Policy",
-      "keywords": [
-        "placeholder",
-        "policy"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250202T121115--fiscal-policy__placeholder_policy.org",
-      "degree": 1,
-      "backlinks": 1
-    },
-    {
-      "id": "20250202T121158",
-      "signature": null,
-      "name": "Expectations",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250202T121158--expectations__placeholder.org",
-      "degree": 2,
-      "backlinks": 2
-    },
-    {
-      "id": "20250202T121258",
-      "signature": null,
-      "name": "Endogenous Growth",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250202T121258--endogenous-growth__placeholder.org",
-      "degree": 1,
-      "backlinks": 1
-    },
-    {
-      "id": "20250202T121415",
-      "signature": null,
-      "name": "CATS ABM family",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250202T121415--cats-abm-family__placeholder.org",
-      "degree": 3,
-      "backlinks": 3
-    },
-    {
-      "id": "20250202T121441",
-      "signature": null,
-      "name": "carrolls_s_consumption_function",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250202T121441--carrolls-s-consumption-function__placeholder.org",
-      "degree": 1,
-      "backlinks": 1
-    },
-    {
-      "id": "20250202T121707",
-      "signature": null,
-      "name": "Cost of Capital",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250202T121707--cost-of-capital__placeholder.org",
-      "degree": 1,
-      "backlinks": 1
-    },
-    {
-      "id": "20250203T172959",
-      "signature": null,
-      "name": "Dot-Com Crisis",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250203T172959--dot-com-crisis__placeholder.org",
-      "degree": 2,
-      "backlinks": 2
-    },
-    {
-      "id": "20250203T173133",
-      "signature": null,
-      "name": "Financial Crises",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250203T173133--financial-crises__placeholder.org",
-      "degree": 1,
-      "backlinks": 1
-    },
-    {
-      "id": "20250203T175927",
-      "signature": null,
-      "name": "Information, Technology, Communication",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250203T175927--information-technology-communication__placeholder.org",
-      "degree": 1,
-      "backlinks": 1
-    },
-    {
-      "id": "20250203T180027",
-      "signature": null,
-      "name": "Investment Lumpiness",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250203T180027--investment-lumpiness__placeholder.org",
-      "degree": 1,
-      "backlinks": 0
-    },
-    {
-      "id": "20250203T180158",
-      "signature": null,
-      "name": "Kaldor-Verdoorn Law",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250203T180158--kaldor-verdoorn-law__placeholder.org",
-      "degree": 1,
-      "backlinks": 0
-    },
-    {
-      "id": "20250203T180327",
-      "signature": null,
-      "name": "Keynes meets Schumpeter Family",
-      "keywords": [
-        "meta"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250203T180327--keynes-meets-schumpeter-family__meta.org",
-      "degree": 14,
-      "backlinks": 8
-    },
-    {
-      "id": "20250203T180403",
-      "signature": null,
-      "name": "Kriging Meta Model",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250203T180403--kriging-meta-model__placeholder.org",
-      "degree": 1,
-      "backlinks": 1
-    },
-    {
-      "id": "20250203T181801",
-      "signature": null,
-      "name": "Monte Carlo Simulations",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250203T181801--monte-carlo-simulations__placeholder.org",
-      "degree": 2,
-      "backlinks": 2
-    },
-    {
-      "id": "20250203T182443",
-      "signature": null,
-      "name": "Overinvestment",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250203T182443--overinvestment__placeholder.org",
-      "degree": 1,
-      "backlinks": 1
-    },
-    {
-      "id": "20250203T182626",
-      "signature": null,
-      "name": "Permanent Income Hypothesis",
-      "keywords": [
-        "definition",
-        "mainstream"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250203T182626--permanent-income-hypothesis__definition_mainstream.org",
-      "degree": 1,
-      "backlinks": 1
-    },
-    {
-      "id": "20250203T183408",
-      "signature": null,
-      "name": "Quasi-replicator",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250203T183408--quasi-replicator__placeholder.org",
-      "degree": 2,
-      "backlinks": 1
-    },
-    {
-      "id": "20250203T183931",
-      "signature": null,
-      "name": "Sensitivity Analysis",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250203T183931--sensitivity-analysis__placeholder.org",
-      "degree": 1,
-      "backlinks": 1
-    },
-    {
-      "id": "20250203T184155",
-      "signature": null,
-      "name": "Supermultiplier Models",
-      "keywords": [
-        "canonicalmodels",
-        "sraffian"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250203T184155--supermultiplier-models__canonicalmodels_sraffian.org",
-      "degree": 3,
-      "backlinks": 3
-    },
-    {
-      "id": "20250203T184226",
-      "signature": null,
-      "name": "Switching Mechanisms",
-      "keywords": [
-        "meta"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250203T184226--switching-mechanisms__meta.org",
-      "degree": 1,
-      "backlinks": 1
-    },
-    {
-      "id": "20250203T184320",
-      "signature": null,
-      "name": "Technological revolution",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250203T184320--technological-revolution__placeholder.org",
-      "degree": 4,
-      "backlinks": 4
-    },
-    {
-      "id": "20250203T184409",
-      "signature": null,
-      "name": "Technological Unemployment",
-      "keywords": [
-        "definition"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250203T184409--technological-unemployment__definition.org",
-      "degree": 1,
-      "backlinks": 1
-    },
-    {
-      "id": "20250203T184828",
-      "signature": null,
-      "name": "ABM4Policy",
-      "keywords": [
-        "conferences"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250203T184828--abm4policy__conferences.org",
-      "degree": 1,
-      "backlinks": 0
-    },
-    {
-      "id": "20250204T114059",
-      "signature": null,
-      "name": "Theories of Value, Output, and Employment",
-      "keywords": [
-        "bib"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250204T114059--theories-of-value-output-and-employment__bib.org",
-      "degree": 1,
-      "backlinks": 1
-    },
-    {
-      "id": "20250204T192826",
-      "signature": null,
-      "name": "Minsky's induced investment and business cycles",
-      "keywords": [
-        "bib"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250204T192826--minskys-induced-investment-and-business-cycles__bib.org",
-      "degree": 1,
-      "backlinks": 0
-    },
-    {
-      "id": "20250205T095922",
-      "signature": null,
-      "name": "Post Keynesian Economics",
-      "keywords": [
-        "schoolofthought"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250205T095922--post-keynesian-economics__schoolofthought.org",
-      "degree": 1,
-      "backlinks": 1
-    },
-    {
-      "id": "20250205T124645",
-      "signature": null,
-      "name": "Harrodian instability in decentralized economies: an agent-based approach",
-      "keywords": [
-        "bib"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250205T124645--harrodian-instability-in-decentralized-economies-an-agent-based-approach__bib.org",
-      "degree": 1,
-      "backlinks": 0
-    },
-    {
-      "id": "20250205T153454",
-      "signature": null,
-      "name": "Economic Crisis and Innovation: Is Destruction Prevailing over Accumulation?",
-      "keywords": [
-        "bib"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250205T153454--economic-crisis-and-innovation-is-destruction-prevailing-over-accumulation__bib.org",
-      "degree": 3,
-      "backlinks": 0
-    },
-    {
-      "id": "20250205T154234",
-      "signature": null,
-      "name": "Journal of Economic Dynamics and Control",
-      "keywords": [
-        "journal"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250205T154234--journal-of-economic-dynamics-and-control__journal.org",
-      "degree": 2,
-      "backlinks": 2
-    },
-    {
-      "id": "20250205T154308",
-      "signature": null,
-      "name": "Emergent Dynamics of a Macroeconomic Agent Based Model with Capital and Credit",
-      "keywords": [
-        "bib"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250205T154308--emergent-dynamics-of-a-macroeconomic-agent-based-model-with-capital-and-credit__bib.org",
-      "degree": 16,
-      "backlinks": 0
-    },
-    {
-      "id": "20250205T154745",
-      "signature": null,
-      "name": "Upstream-Downstream Dynamics",
-      "keywords": [
-        "placeholder"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250205T154745--upstream-downstream-dynamics__placeholder.org",
-      "degree": 1,
-      "backlinks": 1
-    },
-    {
-      "id": "20250205T155926",
-      "signature": null,
-      "name": "Tangible and Intangible Investments and Sales Growth of US Firms",
-      "keywords": [
-        "bib"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250205T155926--tangible-and-intangible-investments-and-sales-growth-of-us-firms__bib.org",
-      "degree": 1,
-      "backlinks": 0
-    },
-    {
-      "id": "20250205T160736",
-      "signature": null,
-      "name": "Can Firms See into the Future? Survey Evidence from Germany",
-      "keywords": [
-        "bib"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250205T160736--can-firms-see-into-the-future-survey-evidence-from-germany__bib.org",
-      "degree": 1,
-      "backlinks": 0
-    },
-    {
-      "id": "20250205T162456",
-      "signature": null,
-      "name": "Schumpeter meeting Keynes: a policy-friendly model of endogenous growth and business cycles",
-      "keywords": [
-        "bib"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250205T162456--schumpeter-meeting-keynes-a-policy-friendly-model-of-endogenous-growth-and-business-cycles__bib.org",
-      "degree": 23,
-      "backlinks": 0
-    },
-    {
-      "id": "20250205T165406",
-      "signature": null,
-      "name": "On the Cyclicality of Research and Development",
-      "keywords": [
-        "bib"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250205T165406--on-the-cyclicality-of-research-and-development__bib.org",
-      "degree": 1,
-      "backlinks": 0
-    },
-    {
-      "id": "20250205T165726",
-      "signature": null,
-      "name": "Belief Distortions and Macroeconomic Fluctuations",
-      "keywords": [
-        "bib"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250205T165726--belief-distortions-and-macroeconomic-fluctuations__bib.org",
-      "degree": 2,
-      "backlinks": 0
-    },
-    {
-      "id": "20250205T172350",
-      "signature": null,
-      "name": "Innovation, Growth, and Productivity Appropriation. How the Elites Learned to Stop Worrying and Love Public Debt",
-      "keywords": [
-        "bib"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250205T172350--innovation-growth-and-productivity-appropriation-how-the-elites-learned-to-stop-worrying-and-love-public-debt__bib.org",
-      "degree": 1,
-      "backlinks": 0
-    },
-    {
-      "id": "20250205T172840",
-      "signature": null,
-      "name": "Productivity and ICTs: A Review of the Evidence",
-      "keywords": [
-        "bib"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250205T172840--productivity-and-icts-a-review-of-the-evidence__bib.org",
-      "degree": 1,
-      "backlinks": 0
-    },
-    {
-      "id": "20250205T173115",
-      "signature": null,
-      "name": "Learning to Speculate: Experiments with Artificial and Real Agents",
-      "keywords": [
-        "bib"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250205T173115--learning-to-speculate-experiments-with-artificial-and-real-agents__bib.org",
-      "degree": 1,
-      "backlinks": 0
-    },
-    {
-      "id": "20250205T174500",
-      "signature": null,
-      "name": "Aggregate Investment",
-      "keywords": [
-        "bib"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250205T174500--aggregate-investment__bib.org",
-      "degree": 1,
-      "backlinks": 0
-    },
-    {
-      "id": "20250205T174704",
-      "signature": null,
-      "name": "Economic Inquiry",
-      "keywords": [
-        "journal"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250205T174704--economic-inquiry__journal.org",
-      "degree": 1,
-      "backlinks": 1
-    },
-    {
-      "id": "20250205T174745",
-      "signature": null,
-      "name": "RATIONAL HEURISTICS? EXPECTATIONS AND BEHAVIORS IN EVOLVING ECONOMIES WITH HETEROGENEOUS INTERACTING AGENTS",
-      "keywords": [
-        "bib"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250205T174745--rational-heuristics-expectations-and-behaviors-in-evolving-economies-with-heterogeneous-interacting-agents__bib.org",
-      "degree": 4,
-      "backlinks": 0
-    },
-    {
-      "id": "20250205T174953",
-      "signature": null,
-      "name": "Technical Change, Effective Demand and Employment",
-      "keywords": [
-        "bib"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250205T174953--technical-change-effective-demand-and-employment__bib.org",
-      "degree": 2,
-      "backlinks": 0
-    },
-    {
-      "id": "20250206T102344",
-      "signature": null,
-      "name": "What Drives Aggregate Investment? Evidence from German Survey Data",
-      "keywords": [
-        "bib"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250206T102344--what-drives-aggregate-investment-evidence-from-german-survey-data__bib.org",
-      "degree": 2,
-      "backlinks": 0
-    },
-    {
-      "id": "20250206T104455",
-      "signature": null,
-      "name": "Expectation Formation in Finance and Macroeconomics: A Review of New Experimental Evidence",
-      "keywords": [
-        "bib"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250206T104455--expectation-formation-in-finance-and-macroeconomics-a-review-of-new-experimental-evidence__bib.org",
-      "degree": 1,
-      "backlinks": 0
-    },
-    {
-      "id": "20250206T105445",
-      "signature": null,
-      "name": "Overreaction and Diagnostic Expectations in Macroeconomics",
-      "keywords": [
-        "bib"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250206T105445--overreaction-and-diagnostic-expectations-in-macroeconomics__bib.org",
-      "degree": 1,
-      "backlinks": 0
-    },
-    {
-      "id": "20250206T110740",
-      "signature": null,
-      "name": "Information Rigidity and the Expectations Formation Process: A Simple Framework and New Facts",
-      "keywords": [
-        "bib"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250206T110740--information-rigidity-and-the-expectations-formation-process-a-simple-framework-and-new-facts__bib.org",
-      "degree": 1,
-      "backlinks": 0
-    },
-    {
-      "id": "20250206T120157",
-      "signature": null,
-      "name": "The Age Distribution of Business Firms",
-      "keywords": [
-        "bib"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250206T120157--the-age-distribution-of-business-firms__bib.org",
-      "degree": 3,
-      "backlinks": 0
-    },
-    {
-      "id": "20250206T121427",
-      "signature": null,
-      "name": "Forecasting in a Complex Environment: Machine Learning Sales Expectations in a Stock Flow Consistent Agent-Based Simulation Model",
-      "keywords": [
-        "bib"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250206T121427--forecasting-in-a-complex-environment-machine-learning-sales-expectations-in-a-stock-flow-consistent-agent-based-simulation-model__bib.org",
-      "degree": 1,
-      "backlinks": 0
-    },
-    {
-      "id": "20250206T123206",
-      "signature": null,
-      "name": "A Complexity View on the Future of Work. Meta-modelling Exploration of the Multi-Sector K+S Agent Based Model",
-      "keywords": [
-        "bib"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250206T123206--a-complexity-view-on-the-future-of-work-meta-modelling-exploration-of-the-multi-sector-ks-agent-based-model__bib.org",
-      "degree": 10,
-      "backlinks": 0
-    },
-    {
-      "id": "20250206T123801",
-      "signature": null,
-      "name": "Booms, Busts and Behavioural Heterogeneity in Stock Prices",
-      "keywords": [
-        "bib"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250206T123801--booms-busts-and-behavioural-heterogeneity-in-stock-prices__bib.org",
-      "degree": 1,
-      "backlinks": 0
-    },
-    {
-      "id": "20250206T125006",
-      "signature": null,
-      "name": "Journal of Money, Credit and Banking",
-      "keywords": [
-        "journal"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250206T125006--journal-of-money-credit-and-banking__journal.org",
-      "degree": 1,
-      "backlinks": 1
-    },
-    {
-      "id": "20250206T125112",
-      "signature": null,
-      "name": "Explaining the Investment Boom of the 1990s",
-      "keywords": [
-        "bib"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250206T125112--explaining-the-investment-boom-of-the-1990s__bib.org",
-      "degree": 14,
-      "backlinks": 1
-    },
-    {
-      "id": "20250206T125503",
-      "signature": null,
-      "name": "R&D-based Economic Growth in a Supermultiplier Model",
-      "keywords": [
-        "bib"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250206T125503--rd-based-economic-growth-in-a-supermultiplier-model__bib.org",
-      "degree": 1,
-      "backlinks": 0
-    },
-    {
-      "id": "20250206T130259",
-      "signature": null,
-      "name": "Managerial Overconfidence in Capital Structure Decisions and Its Link to Aggregate Demand: An Agent-Based Model Perspective",
-      "keywords": [
-        "bib"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250206T130259--managerial-overconfidence-in-capital-structure-decisions-and-its-link-to-aggregate-demand-an-agent-based-model-perspective__bib.org",
-      "degree": 1,
-      "backlinks": 0
-    },
-    {
-      "id": "20250206T130745",
-      "signature": null,
-      "name": "Growth, Cycles, and Residential Investment",
-      "keywords": [
-        "bib"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250206T130745--growth-cycles-and-residential-investment__bib.org",
-      "degree": 2,
-      "backlinks": 0
-    },
-    {
-      "id": "20250206T141849",
-      "signature": null,
-      "name": "Behavioral and Experimental Macroeconomics and Policy Analysis: A Complex Systems Approach",
-      "keywords": [
-        "bib"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250206T141849--behavioral-and-experimental-macroeconomics-and-policy-analysis-a-complex-systems-approach__bib.org",
-      "degree": 1,
-      "backlinks": 0
-    },
-    {
-      "id": "20250206T143239",
-      "signature": null,
-      "name": "Business Cycles, Heuristic Expectation Formation, and Contracyclical Policies",
-      "keywords": [
-        "bib"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250206T143239--business-cycles-heuristic-expectation-formation-and-contracyclical-policies__bib.org",
-      "degree": 1,
-      "backlinks": 0
-    },
-    {
-      "id": "20250206T144122",
-      "signature": null,
-      "name": "A Note on Interactions-Driven Business Cycles",
-      "keywords": [
-        "bib"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250206T144122--a-note-on-interactions-driven-business-cycles__bib.org",
-      "degree": 2,
-      "backlinks": 0
-    },
-    {
-      "id": "20250206T144818",
-      "signature": null,
-      "name": "Heuristic Expectation Formation and Business Cycles: A Simple Linear Model",
-      "keywords": [
-        "bib"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250206T144818--heuristic-expectation-formation-and-business-cycles-a-simple-linear-model__bib.org",
-      "degree": 1,
-      "backlinks": 0
-    },
-    {
-      "id": "20250206T150809",
-      "signature": null,
-      "name": "Building Blocks of a Heterodox Business Cycle Theory",
-      "keywords": [
-        "bib"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250206T150809--building-blocks-of-a-heterodox-business-cycle-theory__bib.org",
-      "degree": 1,
-      "backlinks": 0
-    },
-    {
-      "id": "20250206T185540",
-      "signature": null,
-      "name": "Causes and Consequences of Hysteresis: Aggregate Demand, Productivity, and Employment",
-      "keywords": [
-        "bib"
-      ],
-      "type": "org",
-      "filename": "/home/gpetrini/Org/20250206T185540--causes-and-consequences-of-hysteresis-aggregate-demand-productivity-and-employment__bib.org",
-      "degree": 2,
-      "backlinks": 0
+      "id": "book",
+      "name": "book",
+      "degree": 1
     }
   ],
   "edges": [
     {
-      "source": "20250206T185540",
-      "target": "20250202T120706",
-      "weight": 1
+      "source": "placeholder",
+      "target": "univesp",
+      "weight": 3
     },
     {
-      "source": "20250206T125503",
-      "target": "20250206T125112",
-      "weight": 1
+      "source": "definition",
+      "target": "placeholder",
+      "weight": 6
     },
     {
-      "source": "20250206T125112",
-      "target": "20250202T120807",
-      "weight": 1
+      "source": "definition",
+      "target": "univesp",
+      "weight": 2
     },
     {
-      "source": "20250206T125112",
-      "target": "20250203T172959",
-      "weight": 1
+      "source": "country",
+      "target": "data",
+      "weight": 3
     },
     {
-      "source": "20250206T125112",
-      "target": "20250202T120625",
-      "weight": 1
+      "source": "definition",
+      "target": "monetary",
+      "weight": 3
     },
     {
-      "source": "20250206T125112",
-      "target": "20250206T125006",
-      "weight": 1
+      "source": "monetary",
+      "target": "policy",
+      "weight": 2
     },
     {
-      "source": "20250206T125112",
-      "target": "20250203T175927",
-      "weight": 1
+      "source": "financial",
+      "target": "trade",
+      "weight": 2
     },
     {
-      "source": "20250206T125112",
-      "target": "20250202T120232",
-      "weight": 1
+      "source": "definition",
+      "target": "mainstream",
+      "weight": 3
     },
     {
-      "source": "20250206T125112",
-      "target": "20250202T121415",
-      "weight": 1
+      "source": "financial",
+      "target": "placeholder",
+      "weight": 3
     },
     {
-      "source": "20250206T125112",
-      "target": "20250203T184320",
-      "weight": 1
+      "source": "placeholder",
+      "target": "schoolofthought",
+      "weight": 6
     },
     {
-      "source": "20250206T125112",
-      "target": "20250202T121707",
-      "weight": 1
+      "source": "placeholder",
+      "target": "policy",
+      "weight": 3
     },
     {
-      "source": "20250206T125112",
-      "target": "20250202T114158",
-      "weight": 1
+      "source": "historicalevent",
+      "target": "placeholder",
+      "weight": 2
     },
     {
-      "source": "20250206T123206",
-      "target": "20250203T180403",
-      "weight": 1
+      "source": "canonicalmodels",
+      "target": "placeholder",
+      "weight": 2
     },
     {
-      "source": "20250206T123206",
-      "target": "20250203T181801",
-      "weight": 1
+      "source": "dissertation",
+      "target": "outdated",
+      "weight": 2
     },
     {
-      "source": "20250206T123206",
-      "target": "20250202T114420",
-      "weight": 1
+      "source": "dissertation",
+      "target": "readinglist",
+      "weight": 4
     },
     {
-      "source": "20250206T123206",
-      "target": "20230216T235207",
-      "weight": 1
+      "source": "bib",
+      "target": "mimeo",
+      "weight": 2
     },
     {
-      "source": "20250206T123206",
-      "target": "20250203T183931",
-      "weight": 1
-    },
-    {
-      "source": "20250206T123206",
-      "target": "20250202T120807",
-      "weight": 1
-    },
-    {
-      "source": "20250206T123206",
-      "target": "20250203T184320",
-      "weight": 1
-    },
-    {
-      "source": "20250206T123206",
-      "target": "20250203T184409",
-      "weight": 1
-    },
-    {
-      "source": "20250206T123206",
-      "target": "20250202T120057",
-      "weight": 1
-    },
-    {
-      "source": "20250205T174745",
-      "target": "20250202T121158",
-      "weight": 1
-    },
-    {
-      "source": "20250205T174745",
-      "target": "20250203T184226",
-      "weight": 1
-    },
-    {
-      "source": "20250205T174745",
-      "target": "20250205T174704",
-      "weight": 1
-    },
-    {
-      "source": "20250205T162456",
-      "target": "20250203T184320",
-      "weight": 1
-    },
-    {
-      "source": "20250205T162456",
-      "target": "20250205T154234",
-      "weight": 1
-    },
-    {
-      "source": "20250205T162456",
-      "target": "20250202T114928",
-      "weight": 1
-    },
-    {
-      "source": "20250205T162456",
-      "target": "20250203T181801",
-      "weight": 1
-    },
-    {
-      "source": "20250205T162456",
-      "target": "20250203T184155",
-      "weight": 1
-    },
-    {
-      "source": "20250205T162456",
-      "target": "20250202T120807",
-      "weight": 1
-    },
-    {
-      "source": "20250205T162456",
-      "target": "20250202T115328",
-      "weight": 1
-    },
-    {
-      "source": "20250205T162456",
-      "target": "20250202T120427",
-      "weight": 1
-    },
-    {
-      "source": "20250205T162456",
-      "target": "20250202T121115",
-      "weight": 1
-    },
-    {
-      "source": "20250205T162456",
-      "target": "20250202T121158",
-      "weight": 1
-    },
-    {
-      "source": "20250205T162456",
-      "target": "20250202T114158",
-      "weight": 1
-    },
-    {
-      "source": "20250205T162456",
-      "target": "20250203T183408",
-      "weight": 1
-    },
-    {
-      "source": "20250205T162456",
-      "target": "20250202T121100",
-      "weight": 1
-    },
-    {
-      "source": "20250205T162456",
-      "target": "20250202T120931",
-      "weight": 1
-    },
-    {
-      "source": "20250205T162456",
-      "target": "20250202T121258",
-      "weight": 1
-    },
-    {
-      "source": "20250205T162456",
-      "target": "20250202T120740",
-      "weight": 1
-    },
-    {
-      "source": "20250205T162456",
-      "target": "20250202T120251",
-      "weight": 1
-    },
-    {
-      "source": "20250205T154308",
-      "target": "20250205T154234",
-      "weight": 1
-    },
-    {
-      "source": "20250205T154308",
-      "target": "20250202T120625",
-      "weight": 1
-    },
-    {
-      "source": "20250205T154308",
-      "target": "20250203T184155",
-      "weight": 1
-    },
-    {
-      "source": "20250205T154308",
-      "target": "20250204T114059",
-      "weight": 1
-    },
-    {
-      "source": "20250205T154308",
-      "target": "20250202T114051",
-      "weight": 1
-    },
-    {
-      "source": "20250205T154308",
-      "target": "20250202T115328",
-      "weight": 1
-    },
-    {
-      "source": "20250205T154308",
-      "target": "20250205T154745",
-      "weight": 1
-    },
-    {
-      "source": "20250205T154308",
-      "target": "20250202T121441",
-      "weight": 1
-    },
-    {
-      "source": "20250205T154308",
-      "target": "20250203T182626",
-      "weight": 1
-    },
-    {
-      "source": "20250205T154308",
-      "target": "20250202T114645",
-      "weight": 1
-    },
-    {
-      "source": "20250205T154308",
-      "target": "20250202T121100",
-      "weight": 1
-    },
-    {
-      "source": "20250205T154308",
-      "target": "20250203T173133",
-      "weight": 1
-    },
-    {
-      "source": "20250205T154308",
-      "target": "20250202T121415",
-      "weight": 1
-    },
-    {
-      "source": "20250206T144122",
-      "target": "20250202T114248",
-      "weight": 1
-    },
-    {
-      "source": "20250206T130259",
-      "target": "20250202T114248",
-      "weight": 1
-    },
-    {
-      "source": "20250206T121427",
-      "target": "20250202T114248",
-      "weight": 1
-    },
-    {
-      "source": "20250205T173115",
-      "target": "20250202T114248",
-      "weight": 1
-    },
-    {
-      "source": "20250205T172350",
-      "target": "20250202T114248",
-      "weight": 1
-    },
-    {
-      "source": "20250205T162456",
-      "target": "20250202T114248",
-      "weight": 1
-    },
-    {
-      "source": "20250205T154308",
-      "target": "20250202T114248",
-      "weight": 1
-    },
-    {
-      "source": "20250205T124645",
-      "target": "20250202T114248",
-      "weight": 1
-    },
-    {
-      "source": "20250203T184828",
-      "target": "20250202T114248",
-      "weight": 1
-    },
-    {
-      "source": "20250203T183408",
-      "target": "20250202T114248",
-      "weight": 1
-    },
-    {
-      "source": "20250202T114420",
-      "target": "20250202T114248",
-      "weight": 1
-    },
-    {
-      "source": "20240906T161550",
-      "target": "20250202T114248",
-      "weight": 1
-    },
-    {
-      "source": "20240906T145727",
-      "target": "20250202T114248",
-      "weight": 1
-    },
-    {
-      "source": "20240715T100237",
-      "target": "20250202T114248",
-      "weight": 1
-    },
-    {
-      "source": "20240708T175224",
-      "target": "20250202T114248",
-      "weight": 1
-    },
-    {
-      "source": "20240707T183450",
-      "target": "20250202T114248",
-      "weight": 1
-    },
-    {
-      "source": "20240314T120430",
-      "target": "20250202T114248",
-      "weight": 1
-    },
-    {
-      "source": "20210212T000006",
-      "target": "20250202T114248",
-      "weight": 1
-    },
-    {
-      "source": "20201202T092036",
-      "target": "20250202T114248",
-      "weight": 1
-    },
-    {
-      "source": "20250202T114248",
-      "target": "20250202T114158",
-      "weight": 1
-    },
-    {
-      "source": "20250202T114248",
-      "target": "20230216T235207",
-      "weight": 1
-    },
-    {
-      "source": "20250202T114248",
-      "target": "20250203T172959",
-      "weight": 1
-    },
-    {
-      "source": "20250202T114248",
-      "target": "20250203T184155",
-      "weight": 1
-    },
-    {
-      "source": "20250202T114248",
-      "target": "20250202T120026",
-      "weight": 1
-    },
-    {
-      "source": "20250202T114248",
-      "target": "20250202T120807",
-      "weight": 1
-    },
-    {
-      "source": "20250202T114248",
-      "target": "20250203T182443",
-      "weight": 1
-    },
-    {
-      "source": "20250202T114248",
-      "target": "20250202T114928",
-      "weight": 1
-    },
-    {
-      "source": "20250202T114248",
-      "target": "20250202T114954",
-      "weight": 1
-    },
-    {
-      "source": "20250202T114248",
-      "target": "20250202T121415",
-      "weight": 1
-    },
-    {
-      "source": "20240708T180959",
-      "target": "20240708T174852",
-      "weight": 1
-    },
-    {
-      "source": "20240708T180959",
-      "target": "20250203T184320",
-      "weight": 1
-    },
-    {
-      "source": "20250206T120157",
-      "target": "20240708T155856",
-      "weight": 1
-    },
-    {
-      "source": "20250205T162456",
-      "target": "20240708T155856",
-      "weight": 1
-    },
-    {
-      "source": "20250205T153454",
-      "target": "20240708T155856",
-      "weight": 1
-    },
-    {
-      "source": "20250202T114248",
-      "target": "20240708T155856",
-      "weight": 1
-    },
-    {
-      "source": "20240707T183450",
-      "target": "20240708T155856",
-      "weight": 1
-    },
-    {
-      "source": "20250206T120157",
-      "target": "20240708T155825",
-      "weight": 1
-    },
-    {
-      "source": "20250205T153454",
-      "target": "20240708T155825",
-      "weight": 1
-    },
-    {
-      "source": "20250202T114248",
-      "target": "20240708T155825",
-      "weight": 1
-    },
-    {
-      "source": "20240707T183450",
-      "target": "20240708T155825",
-      "weight": 1
-    },
-    {
-      "source": "20250206T130745",
-      "target": "20240708T155703",
-      "weight": 1
-    },
-    {
-      "source": "20250206T125112",
-      "target": "20240708T155703",
-      "weight": 1
-    },
-    {
-      "source": "20250206T120157",
-      "target": "20240708T155703",
-      "weight": 1
-    },
-    {
-      "source": "20250206T104455",
-      "target": "20240708T155703",
-      "weight": 1
-    },
-    {
-      "source": "20250206T102344",
-      "target": "20240708T155703",
-      "weight": 1
-    },
-    {
-      "source": "20250205T174500",
-      "target": "20240708T155703",
-      "weight": 1
-    },
-    {
-      "source": "20250205T172840",
-      "target": "20240708T155703",
-      "weight": 1
-    },
-    {
-      "source": "20250205T165726",
-      "target": "20240708T155703",
-      "weight": 1
-    },
-    {
-      "source": "20250205T162456",
-      "target": "20240708T155703",
-      "weight": 1
-    },
-    {
-      "source": "20250205T155926",
-      "target": "20240708T155703",
-      "weight": 1
-    },
-    {
-      "source": "20250203T180158",
-      "target": "20240708T155703",
-      "weight": 1
-    },
-    {
-      "source": "20250203T180027",
-      "target": "20240708T155703",
-      "weight": 1
-    },
-    {
-      "source": "20250202T120321",
-      "target": "20240708T155703",
-      "weight": 1
-    },
-    {
-      "source": "20250202T114248",
-      "target": "20240708T155703",
-      "weight": 1
-    },
-    {
-      "source": "20250202T114015",
-      "target": "20240708T155703",
-      "weight": 1
-    },
-    {
-      "source": "20240708T175224",
-      "target": "20240708T155703",
-      "weight": 1
-    },
-    {
-      "source": "20240707T183450",
-      "target": "20240708T155703",
-      "weight": 1
-    },
-    {
-      "source": "20250206T150809",
-      "target": "20240708T155635",
-      "weight": 1
-    },
-    {
-      "source": "20250206T144818",
-      "target": "20240708T155635",
-      "weight": 1
-    },
-    {
-      "source": "20250206T144122",
-      "target": "20240708T155635",
-      "weight": 1
-    },
-    {
-      "source": "20250206T143239",
-      "target": "20240708T155635",
-      "weight": 1
-    },
-    {
-      "source": "20250206T141849",
-      "target": "20240708T155635",
-      "weight": 1
-    },
-    {
-      "source": "20250206T130745",
-      "target": "20240708T155635",
-      "weight": 1
-    },
-    {
-      "source": "20250206T125112",
-      "target": "20240708T155635",
-      "weight": 1
-    },
-    {
-      "source": "20250206T123801",
-      "target": "20240708T155635",
-      "weight": 1
-    },
-    {
-      "source": "20250206T110740",
-      "target": "20240708T155635",
-      "weight": 1
-    },
-    {
-      "source": "20250206T105445",
-      "target": "20240708T155635",
-      "weight": 1
-    },
-    {
-      "source": "20250206T102344",
-      "target": "20240708T155635",
-      "weight": 1
-    },
-    {
-      "source": "20250205T165726",
-      "target": "20240708T155635",
-      "weight": 1
-    },
-    {
-      "source": "20250205T165406",
-      "target": "20240708T155635",
-      "weight": 1
-    },
-    {
-      "source": "20250205T162456",
-      "target": "20240708T155635",
-      "weight": 1
-    },
-    {
-      "source": "20250205T160736",
-      "target": "20240708T155635",
-      "weight": 1
-    },
-    {
-      "source": "20250205T154308",
-      "target": "20240708T155635",
-      "weight": 1
-    },
-    {
-      "source": "20250205T153454",
-      "target": "20240708T155635",
-      "weight": 1
-    },
-    {
-      "source": "20250204T192826",
-      "target": "20240708T155635",
-      "weight": 1
-    },
-    {
-      "source": "20250202T114420",
-      "target": "20240708T155635",
-      "weight": 1
-    },
-    {
-      "source": "20250202T114248",
-      "target": "20240708T155635",
-      "weight": 1
-    },
-    {
-      "source": "20240708T175224",
-      "target": "20240708T155635",
-      "weight": 1
-    },
-    {
-      "source": "20240707T183450",
-      "target": "20240708T155635",
-      "weight": 1
-    },
-    {
-      "source": "20240531T175705",
-      "target": "20240708T155635",
-      "weight": 1
-    },
-    {
-      "source": "20250205T174953",
-      "target": "20240708T155553",
-      "weight": 1
-    },
-    {
-      "source": "20250202T114248",
-      "target": "20240708T155553",
-      "weight": 1
-    },
-    {
-      "source": "20240707T183450",
-      "target": "20240708T155553",
-      "weight": 1
-    },
-    {
-      "source": "20240708T155553",
-      "target": "20250205T095922",
-      "weight": 1
-    },
-    {
-      "source": "20250205T174953",
-      "target": "20240708T155455",
-      "weight": 1
-    },
-    {
-      "source": "20250205T162456",
-      "target": "20240708T155455",
-      "weight": 1
-    },
-    {
-      "source": "20240906T161550",
-      "target": "20240708T155455",
-      "weight": 1
-    },
-    {
-      "source": "20240906T145727",
-      "target": "20240708T155455",
-      "weight": 1
-    },
-    {
-      "source": "20240707T183450",
-      "target": "20240708T155455",
-      "weight": 1
-    },
-    {
-      "source": "20211027T155517",
-      "target": "20240708T155455",
-      "weight": 1
-    },
-    {
-      "source": "20211025T000000",
-      "target": "20240708T155455",
-      "weight": 1
-    },
-    {
-      "source": "20210212T000006",
-      "target": "20240708T155455",
-      "weight": 1
-    },
-    {
-      "source": "20250203T180327",
-      "target": "20240708T155455",
-      "weight": 1
-    },
-    {
-      "source": "20250203T180327",
-      "target": "20240708T155553",
-      "weight": 1
-    },
-    {
-      "source": "20250203T180327",
-      "target": "20240708T155635",
-      "weight": 1
-    },
-    {
-      "source": "20250203T180327",
-      "target": "20240708T155703",
-      "weight": 1
-    },
-    {
-      "source": "20250203T180327",
-      "target": "20240708T155825",
-      "weight": 1
-    },
-    {
-      "source": "20250203T180327",
-      "target": "20240708T155856",
-      "weight": 1
-    },
-    {
-      "source": "20240708T180959",
-      "target": "20250203T180327",
-      "weight": 1
-    },
-    {
-      "source": "20250202T114248",
-      "target": "20250203T180327",
-      "weight": 1
-    },
-    {
-      "source": "20250205T154308",
-      "target": "20250203T180327",
-      "weight": 1
-    },
-    {
-      "source": "20250205T162456",
-      "target": "20250203T180327",
-      "weight": 1
-    },
-    {
-      "source": "20250205T174745",
-      "target": "20250203T180327",
-      "weight": 1
-    },
-    {
-      "source": "20250206T123206",
-      "target": "20250203T180327",
-      "weight": 1
-    },
-    {
-      "source": "20250206T125112",
-      "target": "20250203T180327",
-      "weight": 1
-    },
-    {
-      "source": "20250206T185540",
-      "target": "20250203T180327",
-      "weight": 1
+      "source": "bib",
+      "target": "book",
+      "weight": 3
     }
   ]
 }
@@ -2301,10 +437,10 @@
       .attr("stroke-width", d => weightScale(d.weight || 1))
       // Add arrow markers
       .attr("marker-end", (d, i) => data.meta.directed ? `url(#arrow-${i})` : null)
-      
+
       // Add hover interaction for edges
       .on("mouseover", (event, d) => {
-      if (data.meta.type === "Keywords") { 
+      if (data.meta.type === "Keywords") {
       // Generate content for the tooltip
       const tooltipContent = `
       <div class="metadata">From: ${d.source.name}</div>
@@ -2328,7 +464,7 @@
       .selectAll("circle")
       .data(nodes)
       .join("circle")
-      .attr("r", d => isKeywordType ? 15 : radiusScale(d.degree)) 
+      .attr("r", d => isKeywordType ? 15 : radiusScale(d.degree))
       .attr("fill", d => color(d.type))
       .on("click", (event, d) => {
       if (!isKeywordType) { // Only open hyperlink if isKeywordType is false
@@ -2356,10 +492,10 @@
         `<span>${keyword}</span>`).join('') :
         '<div class="metadata">No keywords</div>'}</div>
       ${isImage
-      ? `<img src="${d.filename}" alt="${d.name}" 
+      ? `<img src="${d.filename}" alt="${d.name}"
 	  onload="if(this.naturalHeight > this.naturalWidth) this.style.maxHeight='500px';"
 	  style="max-width: 100%; height: auto; margin-top: 10px;">`
-        : isPDF 
+        : isPDF
       ? `<iframe src="${d.filename}?toolbar=0&navpanes=0&scrollbar=0#view=FitH"
 		 style="width: 100%; height: 500px; margin-top: 10px; border: none;"></iframe>`
           : ''
@@ -2413,10 +549,10 @@
       .attr("dx", 10)
       .attr("dy", ".35em")
       .style("font-size", `${fontSize}px`)
-      .style("font-family", "Arial, sans-serif")
+      .style("font-family", "sans-serif")
       .style("fill", "#333")
       .text(d => d.name);
-      
+
       // Set up force simulation
       const simulation = d3.forceSimulation(nodes)
       .force("link", d3.forceLink(links).id(d => d.id).distance(20)) // Link force
@@ -2436,7 +572,7 @@
       const dx = d.target.x - d.source.x;
       const dy = d.target.y - d.source.y;
       const distance = Math.sqrt(dx * dx + dy * dy) || 1; // Avoid division by zero
-      const targetRadius = isKeywordType ? 15 : radiusScale(d.target.degree); 
+      const targetRadius = isKeywordType ? 15 : radiusScale(d.target.degree);
       const offsetX = (dx / distance) * targetRadius;
       return d.target.x - offsetX;
       })
@@ -2476,7 +612,7 @@
       event.subject.fy = null;
       }
 
-      
+
       const infoButton = document.getElementById("info-button");
       const infoTooltip = document.querySelector(".info-tooltip");
 
@@ -2568,7 +704,7 @@
 	      toggleButton.style.backgroundColor = "darkgrey";
 	      toggleButton.style.color = "white";
 	      toggleButton.style.cursor = "pointer";
-	      toggleButton.style.fontSize = "18px"; 
+	      toggleButton.style.fontSize = "18px";
 
 	      // Toggle button click event
 	      toggleButton.addEventListener("click", () => {
@@ -2595,10 +731,10 @@
 	      buttonContainer.appendChild(singularNodeComment);
 
 	      buttonContainer.appendChild(toggleButton);
-	      infoTooltip.appendChild(buttonContainer); 
+	      infoTooltip.appendChild(buttonContainer);
 	  }
 
-	  
+
 	  // Add legend container
 	  const legendContainer = document.createElement("div");
 	  legendContainer.className = "metadata-container";
@@ -2778,10 +914,10 @@
       generateTooltipContent();
       infoTooltip.style.display = "block";
       }
-      
+
       });
 
-	
+
       // Label density
       // Add a slider element to the top-right corner
       const sliderContainer = d3.select('body').append('div')
@@ -2816,7 +952,7 @@
                       .attr('dx', 10)
                       .attr('dy', '.35em')
                       .style('font-size', `${fontSize}px`)
-                      .style('font-family', 'Arial, sans-serif')
+                      .style('font-family', 'sans-serif')
                       .style('fill', '#333')
                       .text(d => d.name),
 		  update => update.attr('x', d => d.x).attr('y', d => d.y),
