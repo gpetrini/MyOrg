@@ -6,22 +6,124 @@
 
 * TODO Indicadores socioeconômicos
 
+
+** Capítulos de livro
+
+- [cite/t:@jannuzzi_2017_indicadores] Ch 01 e Ch 03
+- [cite/t:@hairjr_2009_analise] Ch 02 (Análises uni e bivariadas)
+
 ** Temas obrigatórios
 
 
 - Principais indicadores no Brasil
-- Evolução de indicadores socioeconômicos no Brasil,
+- Evolução de indicadores socioeconômicos no Brasil
 - Análise de dados univariada
 - Análise de dados bivariada
 - Representação espacial de indicadores
 
+
+** Bases de dados e pacotes
+
+- geobr
+- BETS
+- PNADc
+- [[https://github.com/ipeaGIT/brverse][Pacotes de dados brasileiros]]
+
+** Scripts
+
+- [[https://rpubs.com/dinilson/844332][Taxa de Desemprego - PNADc]]
+- [[https://rfsaldanha.github.io/posts/persistent_heat.html][Exemplo de gráficos espaciais]]
+- [[https://files.cercomp.ufg.br/weby/up/118/o/NT_013.pdf][Introdução a pacotes PNADc, Survey e Convey]]
+- [[https://rpubs.com/gabriel-assuncao-ibge/pnadc][Pacote PNADc]]
+
+** Outros materiais
+
+- [[https://hedibert.org/wp-content/uploads/2015/02/AnaliseMultivariada-aula1.pdf][Análise exploratória multivariada]]
+
 * TODO Distâncias multivariadas
+
+** Temas obrigatórios
+
+- Conceitos e objetivos
+- Principais distâncias
+- Critérios para utilização
+- Similaridade e dissimilaridade.
+
+** Capítulos de livro
+
+- [cite/t:@manly_2024_multivariate] Ch 05
+
+** Outros materiais
+
+- [[https://hedibert.org/wp-content/uploads/2015/03/AnaliseMultivariada-aula10.pdf][Análise de correspondência - Hidebert]] Inclui slides de distância, similaridade e dissimilaridade
+- [[https://www.youtube.com/watch?v=iEQq3HfjgDg&list=PLmM_3MA2HWpZXwfy9vDz80VqlXkFz5S-E&index=23][Mahalanobis Distance]]
 
 * TODO Análise de agrupamento/conglomerado
 
+** Temas obrigatórios
+
+- Conceitos e objetivos, princípio básico
+- Funções de agrupamento
+- Classificação de processos de agrupamento
+- Algorítimos de agrupamento
+- Dendogramas
+
+** Capítulos de livro
+
+- [cite/t:@hardle_2024_applied] Ch 13
+  - Ver também 20.5
+- [cite/t:@hairjr_2009_analise] Ch 08
+- [cite/t:@johnson_2007_applied] Ch 12
+- [cite/t:@manly_2024_multivariate] Ch 09
+
+** Outros materiais
+
+- [[https://hedibert.org/wp-content/uploads/2015/03/AnaliseMultivariada-aula8.pdf][Análise de clusters - Hidebert]]
+- [[https://www.youtube.com/watch?v=kTWIf0pI8Oo&list=PLmM_3MA2HWpZXwfy9vDz80VqlXkFz5S-E&index=50&pp=iAQB][Distance Matrix - AMV]] até 52
+- [[https://www.youtube.com/watch?v=034xoVfBVzU][Análise de clusters - UFF]]
+
 * TODO Análise de variância multivariada
 
+** Temas obrigatórios
+
+- Conceitos e objetivos
+- Condições para realização da análise de variância multivariada
+- Testes de significância
+- Comparações múltiplas
+
+** Capítulos de livro
+
+- [cite/t:@hairjr_2009_analise] Ch 06
+- [cite/t:@morrison_2005_multivariate] Ch 03
+
+** Outros materiais
+
+- [[https://hedibert.org/wp-content/uploads/2015/02/AnaliseMultivariada-aula2.pdf][MANOVA - Hedibert]]
+- [[https://www.youtube.com/watch?v=AX8FW7hFBFw&list=PLmM_3MA2HWpZXwfy9vDz80VqlXkFz5S-E&index=34][MANOVA]]
+- [[https://www.youtube.com/watch?v=C3fum0vifIc&list=PLmM_3MA2HWpZXwfy9vDz80VqlXkFz5S-E&index=19][Mean vectors]]
+
 * TODO Análise de discriminante
+
+** Temas obrigatórios
+
+- Conceitos e objetivos;
+- Separação e classificação;
+- Funções de classificação;
+- Função discriminante linear e quadrática de Fisher
+- Análise de discriminante canônico
+
+** Capítulos de livro
+
+- [cite/t:@hardle_2024_applied] Ch 14 e 15
+- [cite/t:@hairjr_2009_analise] Ch 05
+- [cite/t:@manly_2024_multivariate] Ch 08
+- [cite/t:@morrison_2005_multivariate] Ch 04
+
+** Outros materiais
+
+- [[https://www.youtube.com/watch?v=-Rp2sOYaYvs&list=PLmM_3MA2HWpZXwfy9vDz80VqlXkFz5S-E&index=37][Discriminante linear]] 37 a 41
+- [[https://hedibert.org/wp-content/uploads/2015/03/AnaliseMultivariada-aula6.pdf][Análise de discriminante - Aula Hideberg]]
+- [[https://www.youtube.com/watch?v=rlZ6ROTupzk][Análise de discriminante UFF]]
 
 * TODO Componentes principais
 
@@ -37,10 +139,21 @@
 
 ** Capítulos de livro
 
-** Exemplos de aulas
+- [cite/t:@hardle_2024_applied] Ch 11
+- [cite/t:@manly_2024_multivariate] Ch 06
+- [cite/t:@johnson_2007_applied] Ch 08
 
-- [[https://hedibert.org/wp-content/uploads/2015/02/AnaliseMultivariada-aula3.pdf][Hedibert - PCA]]
-- [[https://www.youtube.com/watch?v=U0x_rOOlrlg][Samuel Campos - PCA]]
+** Outros materiais
+
+- [[https://hedibert.org/wp-content/uploads/2015/02/AnaliseMultivariada-aula3.pdf][Hedibert - PCA]] (Aula/Slides)
+- [[https://www.youtube.com/watch?v=U0x_rOOlrlg][Samuel Campos - PCA]] (Video/R) (UFF)
+- [[https://www.youtube.com/watch?v=7DQM7tfxVSU&list=PLmM_3MA2HWpZXwfy9vDz80VqlXkFz5S-E&index=45&pp=iAQB][PCA - AMV]]
+- [[https://www.youtube.com/watch?v=fkf4IBRSeEc&list=PLyJJh8JRWIZjLlyA4FU4mxChoMPKaicT1][PCA e SVD]]
+- [[https://www.youtube.com/watch?v=o_cAOa5fMhE][Vizualization - PCA and others]]
+- [[https://www.youtube.com/watch?v=5HNr_j6LmPc][Visualization PCA]]
+- [[https://github.com/mossr/machine_learning_book/blob/master/lectures/10%20Principal%20Components%20Analysis%20(cs229-notes10).pdf][PCA - Lecture Notes]]
+- [[https://www.youtube.com/watch?v=dhK8nbtii6I][Math behind PCA]]
+- [[https://sisl.github.io/ExpFamilyPCA.jl/dev/math/intro/][EPCA - Types of interpretations]]
 
 ** Bases de dados
 
@@ -55,8 +168,78 @@
 
 * TODO Análise de correspondência e análise de correspondência canônica
 
+** Temas obrigatórios
+
+- Conceitos e objetivos
+
+** Capítulos de livro
+
+- [cite/t:@hardle_2024_applied] Ch 15 e Ch 16
+- [cite/t:@hairjr_2009_analise] Ch 09
+- [cite/t:@greenacre_2007_correspondence]
+- [cite/t:@johnson_2007_applied] Ch 10?
+
+** Outros materiais
+
+- [[https://hedibert.org/wp-content/uploads/2015/03/AnaliseMultivariada-aula10.pdf][Análise de correspondência - Hidebert]]
+- [[https://www.youtube.com/watch?v=JOsB54GyOYY&list=PLmM_3MA2HWpZXwfy9vDz80VqlXkFz5S-E&index=48&pp=iAQB][Análise de correlação canônica - AMV]]
+
 * TODO Análise de correlações canônicas
+
+** Temas obrigatórios
+** Capítulos de livro
+
+- [cite/t:@manly_2024_multivariate] Ch 10
+** Outros materiais
+
+- [[https://hedibert.org/wp-content/uploads/2015/03/AnaliseMultivariada-aula7.pdf][CCA - Hidebert]]
+- [[https://www.youtube.com/watch?v=XQzKG511fNc][CCA]]
+- [[https://www.youtube.com/watch?v=IbWOQ5DSN2M][CCA - UFF]]
+- [[https://www.youtube.com/watch?v=Pul1BiXUda0][CCA - R]]
 
 * TODO Análise fatorial
 
+** Temas obrigatórios
+
+- Conceitos e objetivos
+- Tipos de fatores
+- Modelo fatorial ortogonal
+- Estatísticas associadas
+
+** Capítulos de livro
+
+- [cite/t:@manly_2024_multivariate] Ch 07
+- [cite/t:@hairjr_2009_analise] Ch 03
+- [cite/t:@hardle_2024_applied] Ch 12
+- [cite/t:@morrison_2005_multivariate] Ch 07
+- [cite/t:@johnson_2007_applied] Ch 09
+
+** Outros materiais
+
+- [[https://www.youtube.com/watch?v=8I6fs3WNFFU&list=PLmM_3MA2HWpZXwfy9vDz80VqlXkFz5S-E&index=56&pp=iAQB][FA - AMV]] até 57
+- [[https://hedibert.org/wp-content/uploads/2015/02/AnaliseMultivariada-aula4-part1.pdf][FA - Aula Hedibert]] pt1
+- [[https://www.youtube.com/watch?v=WiN0g_02AYo][FA - UFF]]
+- [[https://github.com/mossr/machine_learning_book/blob/master/lectures/9%20Factor%20Analysis%20(cs229-notes9).pdf][Factor Analysis - Lecture Notes]]
+- [[https://www.youtube.com/watch?v=WV_jcaDBZ2I&list=PLwJRxp3blEvaOTZfSKXysxRmi6gXJf5gP][Playlist Factor Analysis]] (indicação Marcelo)
+
 * TODO Processo de análise fatorial
+
+** Temas obrigatórios
+
+- Formulação, construção da matriz de correlação,
+- Determinação do método de análise
+- Determinação do número de fatores
+- Rotação dos fatores
+- Interpretação dos fatores
+- Cálculo dos escores fatoriais
+- Escolha das variáveis substitutas
+- Determinação do ajuste do modelo
+
+** Capítulos de livro
+
+
+- [cite/t:@morrison_2005_multivariate] Ch 07
+- [cite/t:@hairjr_2009_analise] Ch 03
+- [cite/t:@hardle_2024_applied] Ch 12
+- [cite/t:@manly_2024_multivariate] Ch 07
+- [cite/t:@johnson_2007_applied] Ch 09

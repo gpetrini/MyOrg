@@ -10,6 +10,8 @@
 
 Materiais:
 - Simon and Blume Ch 13
+- Guidorizzi Ch 08
+- Silverberg Ch 03
 
 ** TODO Funções entre espaços euclidianos
 
@@ -28,6 +30,10 @@ Materiais:
 
 Materiais:
 
+- Simon and Blume Ch 14
+- [[https://www.youtube.com/watch?v=gsUgDpGWk-M&list=PLHXZ9OQGMqxc_CvEy7xBKRQr6I214QJcd][Cálculo multivariado (playlist)]]
+- [[https://www.youtube.com/watch?v=RVwcBGzQcT8&list=PLMCRxGutHqflZoTY8JCm1GRzCdGXvZ3_S][Oxford Calculus]]
+
 ** TODO Interpretação Geométrica
 
 ** TODO Aproximação Linear
@@ -36,9 +42,13 @@ Materiais:
 
 ** TODO Aplicações à Economia
 
+
+
 * TODO Regra da cadeia [0%]
 
 Materiais:
+- Simon and Blume Ch 14
+- Guidorizzi Ch 12
 
 ** TODO Vetor tangente
 
@@ -50,6 +60,10 @@ Materiais:
 * TODO Derivadas direcionais e gradientes [0%]
 
 Materiais:
+- Stewart Ch 14
+- Simon and Blume Ch 14
+- Guidorizzi Ch 13
+- Ostaszewski Ch 13
 
 ** TODO Derivadas Direcionais
 
@@ -61,6 +75,7 @@ Materiais:
 * TODO Funções explícitas [0%]
 
 Materiais:
+- Ostaszewski Ch 14?
 
 ** TODO Aproximação por Diferenciais
 
@@ -71,6 +86,9 @@ Materiais:
 * TODO Derivadas de ordens superiores [0%]
 
 Materiais:
+- Chiang 09
+- [[https://www.youtube.com/watch?v=wCZ1VEmVjVo&pp=2AbDBw%3D%3D][Jacobiano]]
+- Guidorizzi Ch 14
 
 ** TODO Funções Continuamente Diferenciáveis
 
@@ -81,6 +99,7 @@ Materiais:
 * TODO Funções implícitas [0%]
 
 Materiais:
+- Simon and Blume Ch 15
 
 ** TODO Teorema da Função Implícita
 
@@ -89,6 +108,7 @@ Materiais:
 * TODO Formas quadráticas e matrizes definidas [0%]
 
 Materiais:
+- Simon and Blume Ch 16
 
 ** TODO Matrizes Simétricas Definidas
 
@@ -98,6 +118,9 @@ Materiais:
 * TODO Otimização não condicionada [0%]
 
 Materiais:
+- Simon and Blume Ch 17
+- Guidorizzi Ch 16
+- [[https://ocw.uci.edu/lectures/math_4_lec_15_math_for_economists.html][Mathematical Review]]
 
 ** TODO Condições de Primeira e Segunda Ordem
 
@@ -108,11 +131,24 @@ Materiais:
 * TODO Otimização condicionada [0%]
 
 Materiais:
+- Simon and Blume Ch 18
+- Simon and Blume Ch 19
+- Chiang 12
+- Chiang 13
+- Simon and Blume Ch 30.4
+- Stewart Ch 14
+- Silverberg Ch 7.4
+- Silverberg Ch 14?
+- Ostaszewski Ch 15
 
 ** TODO Restrições de Igualdade e de Desigualdade
 
 ** TODO Condições de Kuhn-Tucker
 
 ** TODO Multiplicador de Lagrange
+
+Materiais:
+
+- [[https://www.youtube.com/watch?v=Oc4p16QQ104&list=PLFU2umoZ7g9N9fKPz1ls_HGupvQh6RFyu&index=10][Lecture (Video)]]
 
 ** TODO Aplicações à Economia
