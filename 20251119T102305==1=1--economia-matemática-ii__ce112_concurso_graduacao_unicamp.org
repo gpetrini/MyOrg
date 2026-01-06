@@ -10,8 +10,8 @@
 
 Materiais:
 - Simon and Blume Ch 13
-- Guidorizzi Ch 08
 - Silverberg Ch 03
+- Guidorizzi Ch 07-09?
 
 ** TODO Funções entre espaços euclidianos
 
