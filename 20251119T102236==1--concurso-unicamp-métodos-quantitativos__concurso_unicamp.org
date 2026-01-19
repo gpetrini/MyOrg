@@ -10,4 +10,16 @@ Esta nota aponta para as disciplinas referentes ao concurso à área de Métodos
 - Prova Escrita :: [[denote:20251119T102305][1=1  Economia Matemática II]]
 - Prova Didática :: [[denote:20251119T102352][1=2  Métodos Quantitativos Aplicados à Economia]]
 
+* Comissão julgadora
+
+- Presidente: Ivette
+- Engenheiro elétrico: Leonardo Tomazeli Duarte (FCA/Unicamp)
+- Demógrafa/economista: Ana Maria Hermeto Camilo de Oliveira (UFMG)
+  - Graduação em ecomonia pela UFMG
+  - Mestrado e doutorado em Demografia pela UFMG
+- Macroeconomista/empirista: André Luiz Correa (Unesp, mas com formação na Unicamp)
+  - Orientado pelo Mariano
+- Economista social e do trabalho: Daniela Verzola Vaz  (Unifesp, mas com formação na Unicamp)
+  - Orientada pelo Hoffmann e pelo Zé Maria
+
 * Possíveis questões
