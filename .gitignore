@@ -7,10 +7,7 @@
 !*.md
 !*.py
 !*.org
-!*.tex
 !*.bib
-!*.sty
-!*.css
 !*.el
 *.html
 20250428T111630--clipboard__internal.org
