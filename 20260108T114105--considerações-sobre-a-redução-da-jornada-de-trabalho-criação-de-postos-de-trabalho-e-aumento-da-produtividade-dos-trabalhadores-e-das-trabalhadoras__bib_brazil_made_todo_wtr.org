@@ -1,0 +1,53 @@
+#+title:      Considerações Sobre a Redução Da Jornada de Trabalho: Criação de Postos de Trabalho e Aumento Da Produtividade Dos Trabalhadores e Das Trabalhadoras
+#+date:       [2026-01-08 Thu 11:41]
+#+filetags:   :bib:brazil:made:todo:wtr:
+#+identifier: 20260108T114105
+#+reference:  teixeira_2025_consideracoes
+
+[[denote:20260107T154800][Reading list]]
+
+[[denote:20260108T111817][Green ABM for Working Time Reduction]]
+
+* FISH-5SS
+
+
+** 5SS
+
+
+** Background and motivation
+
+
+** Supporting Ideas and hypothesis
+
+
+** Purpose, Relevance, and Contribution
+
+
+** Methodology
+
+
+** Results
+
+
+** Interesting findings and not categorized stuff
+
+
+** Critics
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+O texto busca qualificar o debate sobre possíveis impactos da redução da jornada de trabalho a partir da realização de simulações alternativas ao que é proposto por modelos ortodoxos. São considerados mecanismos de adaptação mais plausíveis, seja por meio do aumento da produtividade, novos postos de trabalho ou, de forma mais realista, uma combinação de ambos. Conclui-se que os efeitos econômicos da redução da jornada são determinados, principalmente, pela escolha dos mecanismos de transição e, portanto, pela correlação de forças e pela vontade política.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+
+
+* References

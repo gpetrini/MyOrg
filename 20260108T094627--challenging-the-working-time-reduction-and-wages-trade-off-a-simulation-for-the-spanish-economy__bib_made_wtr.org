@@ -1,0 +1,51 @@
+#+title:       Challenging the Working Time Reduction and Wages Trade-off: A Simulation for the Spanish Economy
+#+date:       [2026-01-08 Thu 09:46]
+#+filetags:   :bib:made:wtr:
+#+identifier: 20260108T094627
+#+reference:  cardenas_2021_challenging
+
+
+
+* FISH-5SS
+
+
+** 5SS
+
+
+** Background and motivation
+
+
+** Supporting Ideas and hypothesis
+
+
+** Purpose, Relevance, and Contribution
+
+
+** Methodology
+
+
+** Results
+
+
+** Interesting findings and not categorized stuff
+
+
+** Critics
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+This paper analyzes the effect of working time reduction (WTR) on the Spanish economy. Using microdata from the Economically Active Population Survey (EAPS) and the Wage Structure Survey (WSS), we estimate the changes in employment, worked hours, wages and salaries, and the labour share driven by a 5-hour reduction of the ordinary work week in full-time contracts (from 40 hours to 35 hours), without a wage reduction. According to our results, this WTR would mean the liberation of private sector hours that are equivalent to 1.2 million full-time jobs. To calculate job creation, we consider the occupations and technical conditions of production (based on the European Working Conditions Survey). Consequently, had the WTR taken place in 2017, it would have created 560 thousand jobs, thus causing the unemployment rate to fall by 2.6 p.p. Moreover, women are found to be the group most affected by this measure. As for the effect on wages, these would have increased by 3.7\%, implying a labour share increase of 2.1 p.p. Finally, we study the macroeconomic effects, through an extended version of the single-equations Bhaduri–Marglin model using quarterly data from 1995Q1 until 2017Q4. Our results show that a WTR of 5 hours leads to an increase of 1.4\% in GDP.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+
+
+* References

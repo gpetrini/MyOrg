@@ -1,0 +1,26 @@
+#+title: Reading list
+#+date:       [2026-01-07 Wed 15:48]
+#+filetags:   :meta:readinglist:
+#+identifier: 20260107T154800
+
+* Reading list
+
+#+BEGIN: denote-backlinks :excluded-dirs-regexp nil :sort-by-component nil :reverse-sort nil :id-only nil :this-heading-only nil :include-date nil :regexp "_todo"
+- [[denote:20260107T155135][Tax-Financed Green Policies and Income Inequality in an Agent-Based Model]]
+- [[denote:20260107T161554][Environmental Impacts of Productivity-Led Working Time Reduction]]
+- [[denote:20260108T113327][The Role of Labor in a Socio-Ecological Transition: Combining Post-Keynesian and Ecological Economics Perspectives]]
+- [[denote:20260108T113709][Marx, Keynes and the Future of Working Time]]
+- [[denote:20260108T113858][Post-Growth Transition, Working Time Reduction, and the Question of Profits]]
+- [[denote:20260108T114001][Does Labour Work? A Macroeconomic Perspective on Work Time Reduction]]
+- [[denote:20260108T114105][Considerações Sobre a Redução Da Jornada de Trabalho: Criação de Postos de Trabalho e Aumento Da Produtividade Dos Trabalhadores e Das Trabalhadoras]]
+#+END:
+
+* Previous reading list
+
+#+BEGIN: denote-links :regexp "_readinglist" :not-regexp nil :excluded-dirs-regexp nil :sort-by-component nil :reverse-sort nil :id-only nil :include-date nil
+- [[denote:20230216T235153][Manuals and Best practices]]
+- [[denote:20230216T235204][Panel Data Chapter]]
+- [[denote:20230216T235205][PhD Dissertation Reading List]]
+- [[denote:20230216T235206][Chapter QCA]]
+- [[denote:20230216T235207][Chapter ABM]]
+#+END:

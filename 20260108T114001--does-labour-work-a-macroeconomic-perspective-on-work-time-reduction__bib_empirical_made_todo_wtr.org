@@ -1,0 +1,53 @@
+#+title:       Does Labour Work? A Macroeconomic Perspective on Work Time Reduction
+#+date:       [2026-01-08 Thu 11:40]
+#+filetags:   :bib:empirical:made:todo:wtr:
+#+identifier: 20260108T114001
+#+reference:  pawlowski_2023_does
+
+[[denote:20260107T154800][Reading list]]
+
+[[denote:20260108T111817][Green ABM for Working Time Reduction]]
+
+* FISH-5SS
+
+
+** 5SS
+
+
+** Background and motivation
+
+
+** Supporting Ideas and hypothesis
+
+
+** Purpose, Relevance, and Contribution
+
+
+** Methodology
+
+
+** Results
+
+
+** Interesting findings and not categorized stuff
+
+
+** Critics
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+%^{abstract}
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+
+
+* References

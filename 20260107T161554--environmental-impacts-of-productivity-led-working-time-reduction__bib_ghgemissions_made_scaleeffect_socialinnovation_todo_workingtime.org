@@ -1,0 +1,53 @@
+#+title: Environmental Impacts of Productivity-Led Working Time Reduction
+#+date:       [2026-01-07 Wed 16:15]
+#+filetags:   :bib:ghgemissions:made:scaleeffect:socialinnovation:todo:workingtime:
+#+identifier: 20260107T161554
+#+reference:  cieplinski_2021_environmental
+
+[[denote:20260108T111817][Green ABM for Working Time Reduction]]
+
+[[denote:20260107T154800][Reading list]]
+
+* FISH-5SS
+
+
+** 5SS
+
+
+** Background and motivation
+
+
+** Supporting Ideas and hypothesis
+
+
+** Purpose, Relevance, and Contribution
+
+
+** Methodology
+
+
+** Results
+
+
+** Interesting findings and not categorized stuff
+
+
+** Critics
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+This contribution shows that a relevant curtailment of carbon emissions results from productivity-led working time reduction, i.e. increases in labour productivity converted into less working time. However, the interaction between working time reduction and GDP can constrain the achievement of emission reductions. To explore these interactions, we apply Eurogreen, a dynamic macro-simulation model, to France and compare three different scenarios: i. Working Time Reduction converts increases in labour productivity into more time affluence; ii. Global Working Time Reduction explores the effects on exports when working time reduction occurs also abroad; iii. Constrained Working Time Reduction additionally examines the impact of a binding fiscal rule. We find that the greater the performance in terms of emission reduction, the smaller the improvement in employment. Moreover, under working time reduction, changes in the sensitivity of wage to productivity growth affect the relationship between distribution and emission. The benefits in emissions reduction are still significant while the labour share increases with respect to the baseline.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+
+
+* References

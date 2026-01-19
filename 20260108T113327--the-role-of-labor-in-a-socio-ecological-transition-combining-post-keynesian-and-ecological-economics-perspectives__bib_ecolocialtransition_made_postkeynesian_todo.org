@@ -1,0 +1,53 @@
+#+title:      The Role of Labor in a Socio-Ecological Transition: Combining Post-Keynesian and Ecological Economics Perspectives
+#+date:       [2026-01-08 Thu 11:33]
+#+filetags:   :bib:ecolocialtransition:made:postkeynesian:todo:
+#+identifier: 20260108T113327
+#+reference:  strunk_2022_role
+
+[[denote:20260108T111817][Green ABM for Working Time Reduction]]
+
+[[denote:20260107T154800][Reading list]]
+
+* FISH-5SS
+
+
+** 5SS
+
+
+** Background and motivation
+
+
+** Supporting Ideas and hypothesis
+
+
+** Purpose, Relevance, and Contribution
+
+
+** Methodology
+
+
+** Results
+
+
+** Interesting findings and not categorized stuff
+
+
+** Critics
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+This article investigates the role of labor in post-Keynesian economics and proposes an integration with ecological macroeconomics. Although post-Keynesians have to date not engaged extensively with environmental limits, there is an increasing interest in modeling policy proposals by ecological economists. While ecological and post-Keynesian economists share many ways of conceptualizing labor that are distinct from the mainstream, it is unclear how these feed into modeling, since post-Keynesians model labor as a residual and not as a policy variable per se. In fact, post-Keynesians have traditionally focused on targeting employment via targeting aggregate goods demand, rather than targeting it directly. This paper argues that by complementing this demand-side view with post-Keynesian perspectives on labor supply, one can arrive at a post-Keynesian labor theory that offers entry points for ecological theorizing.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+
+
+* References

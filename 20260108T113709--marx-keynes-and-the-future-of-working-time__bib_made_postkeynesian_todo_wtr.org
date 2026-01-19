@@ -1,0 +1,53 @@
+#+title:      Marx, Keynes and the Future of Working Time
+#+date:       [2026-01-08 Thu 11:37]
+#+filetags:   :bib:made:postkeynesian:todo:wtr:
+#+identifier: 20260108T113709
+#+reference:  spencer_2024_marx
+
+[[denote:20260107T154800][Reading list]]
+
+[[denote:20260108T111817][Green ABM for Working Time Reduction]]
+
+* FISH-5SS
+
+
+** 5SS
+
+
+** Background and motivation
+
+
+** Supporting Ideas and hypothesis
+
+
+** Purpose, Relevance, and Contribution
+
+
+** Methodology
+
+
+** Results
+
+
+** Interesting findings and not categorized stuff
+
+
+** Critics
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+This paper re-examines the different visions of the future of working time offered by Marx and Keynes. While Marx and Keynes differed radically on some fundamental matters, they agreed that society would benefit from reducing work time. The idea of society using technology to curtail work hours was a central aspect of their respective visions of a better future. The paper compares Marx’s and Keynes’s visions. It also considers the fate of their visions as well as their relevance for modern debates on the future of work. The conclusion is that a critical political economy can learn from the different ideas of Marx and Keynes in supporting the case for reducing work hours in the present.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+
+
+* References
