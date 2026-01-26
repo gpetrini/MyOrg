@@ -686,7 +686,7 @@ O exemplo com a função de produção Cobb-Douglas em que capital e trabalho de
 
 
 
-* TODO Derivadas direcionais e gradientes [0%]
+* Derivadas direcionais e gradientes
 
 ** Informações :noexport:
 
@@ -1137,28 +1137,411 @@ Em conjunto, este instrumental fornece a linguagem para modelar a propagação d
 Ele também estabelece os fundamentos para métodos numéricos iterativos, como o algoritmo de Newton-Raphson, essenciais para a solução computacional de sistemas de equações de equilíbrio não-lineares.
 Dominar a transição da análise univariada para este quadro multivariado é, portanto, uma competência metodológica central para a construção e interpretação de modelos econômicos.
 
-* TODO Derivadas de ordens superiores [0%]
+* Derivadas de ordens superiores
 
+** Informações :noexport:
 Materiais:
 - Simon and Blume Ch 14.7
-- Retomar Guidorizzi para continuamente diferenciáveis
-- Chiang 09
-- [[https://www.youtube.com/watch?v=wCZ1VEmVjVo&pp=2AbDBw%3D%3D][Jacobiano]]
 - Guidorizzi Ch 14
+- Chiang 09
+- Retomar Guidorizzi para continuamente diferenciáveis
+- [[https://www.youtube.com/watch?v=wCZ1VEmVjVo&pp=2AbDBw%3D%3D][Jacobiano]]
 - Apêndice matemático Petri
 
-** TODO Funções Continuamente Diferenciáveis
+Tópicos:
+- Funções Continuamente Diferenciáveis
+- Derivadas de segunda ordem e matriz Hessiana
+- Aplicações à Economia
 
-** TODO Derivadas de segunda ordem e matriz Hessiana
+** Temas discutidos :noexport:
+:PROPERTIES:
+:ID:       a85eebfe-b3d0-4eaf-a70f-16029cb7f145
+:END:
 
-** TODO Aplicações à Economia
+- Derivadas parciais de ordems superiores:
+  - A igualdade entre derivadas parciais mistas nem sempre se aplica
+    - Para se aplicar, a função deve ser continuamente diferenciável
+  - Apresentada definição da classe \(C^{n}\)
+    - Uma função é dita desta classe se admitir todas as derivadas parciais de ordem \(n\)
+    - Se a função for da classe \(C^{2}\), então o teorema de Schwarz é válido
+      - Este teorema afirma que as derivadas parciais mistas são idênticas
+        - Isso implica que a ordem da diferenciação não é relevante
+      - No entanto, se for apenas diferenciável (não continuamente diferenciável), podem existir situações que esse teorema não se aplique
+      - Também conhecido como Schwarz-Young
+        - O Teorema de Young generaliza para além de derivadas segundas em que a ordem de diferenciação não importa para ordems superiores
+      - Este teorema implica que a matriz Hessiana é uma matriz *simétrica*
+  - Lembrar que uma função de \(n\) variáveis terá \(n^{2}\) derivadas parciais segundas
+- Funções continuamente diferenciáveis
+  - Primeiro apresenta a noção de continuamente diferenciável para uma variável e depois extende para ser continuamente diferenciável para várias variáveis
+  - Se for as derivadas forem diferenciávels, é possível calcular as derivadas de ordem superior
+- Matriz Hessiana:
+  - É a matriz que coleta as derivadas parciais de segunda ordem de modo que as derivadas segundas puras estão na diagonal principal
+    - Denotada como \(D^2f(\vec{x})\)
+- Aplicação da regra da cadeia para derivadas parciais de ordens superiores:
+  - Seja a seguinte função \(f(x,y)\), \(x = x(t)\) e \(y = y(t)\)
+    - Suponha que \(f\) seja \(C^{2}\)
+      - Isso permite que a derivada parcial de ordem 1 tenha seu próprio gradiente
+      - Utilizando a regra da cadeia:
+        - A derivada de segunda ordem em termos de x, por exemplo, é dada pela derivada segunda pura de x e x derivado em função de t; derivada mista em termos de y e y derivado em função de t
+    - Ao expressar a derivada de segunda ordem por meio da regra da cadeia, tem-se:
+      - \(g''(t) = \frac{\partial^{2} f}{\partial x^2}\frac{dx}{dt} + 2\cdot \frac{\partial^{2} f}{\partial x \partial y} (\frac{dx}{dt} + \frac{dy}{dt}) + \frac{\partial^{2} f}{\partial y^2} \frac{dy}{dt}\)
+- Aplicação em economia:
+  - Calculada a derivada segunda de uma função de produção Cobb-Douglas
+    - A derivada mista não é negativa
+    - As derivadas parciais puras são estritamente negativas para qualquer combinação de fatores
+- Outros tópicos:
+  - Ao discutir derivada de segunda ordem em uma função Cobb-Douglas, mencionar rendimentos marginais decrescentes
+    - Importante lembrar que os rendimentos marginais decrescentes ocorrem a partir de um ponto, e não para todos os pontos
+      - Pode ser interessante discutir que este ponto equivale ao limite em que a firma pode aplicar a técnica produtiva dominante
+  - A função é dita continuamente duplamente diferenciável se a derivada segunda for contínua
+    - Dito de outro modo, não é suficiente que a derivada segunda exista
+    - Existe uma diferença entre ser n-mente diferenciável e continuamente diferenciável
+      - A segunda exige que a derivada seja contínua enquanto a primeira exige apenas que a derivada exista
+  - Comumente, as funções mais utilizadas em economia são continuamente diferenciáveis
+  - Em termos de interpretação, a derivada segunda é comumente associada à aceleração (variação da variação)
+    - Se a derivada segunda é positiva, a inclinação tende a aumentar
+    - Está associada a curvatura do gráfico
+      - Associações com funções estritamente côncavas e estritamente convexas
+        - Estritamente côncava :: Definindo dois pontos M e N; o segmento de reta desta ficar *abaixo* dessa curva
+          - Derivada segunda é negativa para todo o intervalo
+        - Estritamente convexa :: Definindo dois pontos M e N; o segmento de reta desta ficar *acima* dessa curva
+          - Derivada segunda é positiva para todo o intervalo
+      - Esta discussão de convexidade/concavidade pode ser associada preferências por risco
+    - Os pontos em que a derivada muda de sinal são pontos de inflexão
 
-* TODO Funções implícitas [0%]
+
+** Resposta 06 :ignore:
+:PROPERTIES:
+:ID:       781223d9-04e7-4d0e-86d4-c1ff2ce7b300
+:END:
+
+A análise em economia, sobretudo a análise marginal, frequentemente estende-se para além dos efeitos de primeira ordem.
+Decisões de produção, consumo e investimento dependem não apenas da direção da variação (capturada pelo gradiente), mas também da sua curvatura.
+É a análise de segunda ordem que permite discriminar entre um máximo e um mínimo, formalizar a lei dos rendimentos marginais decrescentes e compreender a natureza das interações entre variáveis, como a complementaridade ou substitutibilidade entre fatores de produção, por exemplo.
+Em sistemas multivariados, que são o lugar-comum na modelagem econômica, este avanço analítico exige a compreensão das condições de diferenciabilidade contínua e o domínio da matriz Hessiana, objeto matricial que organiza as derivadas segundas.
+
+
+Considerando esses pontos, a exposição está organizada em quatro partes principais.
+Primeiramente, apresentam-se as classes de funções continuamente diferenciáveis, com destaque para a condição que assegura a simetria das derivadas mistas segundo o Teorema de Schwarz e sua generalização, o Teorema de Young.
+Em seguida, introduz-se a matriz Hessiana como o objeto que reúne todas as derivadas parciais de segunda ordem de uma função escalar e discute suas propriedades algébricas.
+Em terceiro lugar, aplica-se esse instrumental à análise de uma função de produção Cobb-Douglas com retornos constantes à escala, com o cálculo explícito de sua Hessiana e a interpretação de seus elementos.
+Por fim, destaca-se de forma sucinta a relação da Hessiana com problemas de otimização, concavidade e convexidade.
+Neste texto, vetores são indicados por uma seta sobrescrita, como em \(\vec{x}\), para distingui-los de escalares.
+
+
+A transição do cálculo de primeira ordem para o de segunda ordem exige a imposição de condições de regularidade mais fortes sobre a função.
+Uma função escalar \(f : D \subseteq \mathbb{R}^n \to \mathbb{R}\) é dita de classe \(C^1\) em um conjunto aberto \(U  \subseteq D\) se todas as suas derivadas parciais de primeira ordem são funções contínuas em \(U\).
+Esta condição é mais forte do que a mera existência das derivadas parciais.
+Para o estudo das derivadas segundas, a condição de regularidade é pertencer à classe \(C^2\).
+Uma função \(f\) é de classe \(C^2\) em \(U\) se todas as suas derivadas parciais de segunda ordem existem e são contínuas em \(U\).
+Esta condição implica, por sua vez, que todas as derivadas parciais de primeira ordem são diferenciáveis.
+
+Uma consequência imediata da condição de continuidade descrita anteriormente é a possibilidade de comutação na ordem de diferenciação para derivadas mistas.
+Este resultado é formalizado pelo Teorema de Schwarz.
+Especificamente, para uma função \(f\) de classe \(C^2\) e para quaisquer índices \(i\) e \(j\), tem-se a igualdade
+\[\frac{\partial^2 f}{\partial x_i \partial x_j} = \frac{\partial^2 f}{\partial x_j \partial x_i}\]
+em todo ponto de \(U\).
+Este teorema é um caso particular do Teorema de Young.
+O Teorema de Young, por sua vez, garante a independência da ordem de diferenciação das derivadas mistas de qualquer ordem \(k\), desde que a função seja de classe \(C^k\).
+Sendo assim, sob condições de suavidade típicas dos modelos econômicos, a ordem de avaliação dos efeitos cruzados entre variáveis é irrelevante.
+Esta propriedade permite organizar as derivadas segundas de forma simétrica e estruturada em uma matriz.
+
+A simetria das derivadas mistas permite organizar as derivadas segundas em uma estrutura matricial conveniente.
+Para uma função escalar \(f: \mathbb{R}^n \to \mathbb{R}\) de classe \(C^2\), as \(n^2\) derivadas parciais de segunda ordem podem ser dispostas em uma matriz \(n \times n\).
+Esta matriz é a matriz Hessiana de \(f\) no ponto \(\vec{x}\), denotada por \(D^2 f(\vec{x})\) ou \(H_f(\vec{x})\).
+Por força do Teorema de Schwarz, esta matriz é simétrica.
+A Hessiana pode ser interpretada de duas formas complementares.
+Uma delas é tratá-la como um operador que agrega as derivadas parciais segundas de uma função escalar multivariada; outra é apresentá-la como a jacobiana do operador gradiente, sob a condição de diferenciabilidade contínua de segunda ordem.
+Sua estrutura genérica é dada por:
+\begin{equation*}
+D^2 f(\vec{x}) =
+\begin{pmatrix}
+\dfrac{\partial^2 f}{\partial x_1^2}(\vec{x}) & \cdots & \dfrac{\partial^2 f}{\partial x_1 \partial x_n}(\vec{x}) \\
+\vdots & \ddots & \vdots \\
+\dfrac{\partial^2 f}{\partial x_n \partial x_1}(\vec{x}) & \cdots & \dfrac{\partial^2 f}{\partial x_n^2}(\vec{x})
+\end{pmatrix}.
+\end{equation*}
+Os elementos da diagonal principal, as derivadas segundas puras, medem a taxa marginal de variação da função em relação à própria variável.
+Os elementos fora da diagonal, as derivadas mistas, quantificam as interações cruzadas.
+Coletivamente, a Hessiana desempenha um papel central na caracterização da curvatura local de uma função multivariada.
+De forma mais simplificada, a Hessiana generaliza a noção de derivada segunda para o caso multivariado.
+
+Uma aplicação relevante da Hessiana surge na análise da variação de uma função ao longo de trajetórias.
+A regra da cadeia para derivadas segundas revela que a segunda variação da função composta depende tanto da curvatura intrínseca da superfície quanto da curvatura da própria trajetória no espaço de domínio.
+Fixada uma parametrização linear no domínio, a Hessiana induz uma forma quadrática que associa a cada vetor direcional uma medida da aceleração local da função nessa direção.
+Já do ponto de vista da aproximação por diferenciais, a Hessiana é o objeto que codifica o termo de segunda ordem na expansão de Taylor multivariada.
+Mais precisamente, para \(\vec{h}\) pequeno, pode-se escrever,
+\begin{equation*}
+f(\vec{x}_0 + \vec{h})
+\approx
+f(\vec{x}_0)
++
+\nabla f(\vec{x}_0) \cdot \vec{h}
++
+\frac{1}{2}\, \vec{h}^{\mathsf{T}} D^2 f(\vec{x}_0)\, \vec{h},
+\end{equation*}
+em que o termo de segunda ordem é o responsável pela curvatura local da função em torno de \(\vec{x}_0\) e está na base da análise de concavidade e convexidade, bem como da classificação de pontos críticos.
+Esta representação formaliza, em termos operacionais, a informação de curvatura sintetizada pela Hessiana.
+
+
+Para concretizar a interpretação econômica deste instrumental abstrato, considere a função de produção Cobb-Douglas com retornos constantes à escala, \(Y = F(K, L) = A K^{\alpha} L^{1-\alpha}\), com \(A > 0\) e \(0 < \alpha < 1\).
+Esta função é de classe \(C^{\infty}\) em seu domínio \((K,L) \in \mathbb{R}_{++}^2\).
+Como consequência, suas derivadas segundas são contínuas e o Teorema de Schwarz se aplica.
+Os produtos marginais, as derivadas primeiras, são
+\[F_K(K,L) = \alpha A K^{\alpha-1} L^{1-\alpha}, \quad F_L(K,L) = (1-\alpha) A K^{\alpha} L^{-\alpha}. \]
+As derivadas parciais de segunda ordem são obtidas pela diferenciação destas expressões.
+Calcula-se a Hessiana \(D^2 F(K,L)\) como:
+\begin{equation*}
+\frac{\partial^2 F}{\partial K^2} = \alpha (\alpha - 1) A K^{\alpha-2} L^{1-\alpha},
+\quad
+\frac{\partial^2 F}{\partial L^2} = -\alpha (1-\alpha) A K^{\alpha} L^{-\alpha-1},
+\end{equation*}
+\begin{equation*}
+\frac{\partial^2 F}{\partial K \partial L} = \alpha (1-\alpha) A K^{\alpha-1} L^{-\alpha},
+\quad
+\frac{\partial^2 F}{\partial L \partial K} = \alpha (1-\alpha) A K^{\alpha-1} L^{-\alpha}.
+\end{equation*}
+A igualdade das derivadas mistas é imediatamente verificada, o que confirma a simetria da Hessiana.
+Portanto,
+\begin{equation*}
+D^2 F(K,L) = A K^{\alpha-2} L^{-\alpha-1}
+\begin{pmatrix}
+\alpha(\alpha-1) L^2 & \alpha(1-\alpha) K L \\
+\alpha(1-\alpha) K L & -\alpha(1-\alpha) K^2
+\end{pmatrix}.
+\end{equation*}
+
+A interpretação econômica de cada elemento da Hessiana ilumina as hipóteses subjacentes à tecnologia de produção.
+As derivadas segundas puras são negativas para todos os valores de \(K, L > 0\), dado que \(\alpha (\alpha - 1) < 0\) e \(-\alpha (1-\alpha) < 0\).
+Esta negatividade formaliza o princípio dos rendimentos marginais decrescentes para cada fator, mantendo o outro constante.
+Esta hipótese implica que cada unidade adicional de um insumo gera um acréscimo menor na produção, mantidos os demais fatores constantes.
+
+
+O sinal da derivada mista também é crucial para classificar a relação técnica entre os fatores.
+Na função Cobb-Douglas, a derivada mista \(\partial^2 F / \partial K \partial L\) é estritamente positiva.
+Economicamente, isso significa que o produto marginal do capital, \(F_K\), é uma função crescente da quantidade de trabalho \(L\).
+Simetricamente, o produto marginal do trabalho, \(F_L\), é uma função crescente da quantidade de capital \(K\).
+Esta é a definição analítica de complementaridade local entre os fatores de produção.
+Um aumento na dotação de um insumo eleva a produtividade marginal do outro.
+A Cobb-Douglas, portanto, descreve uma tecnologia em que capital e trabalho são complementares na margem.
+
+Uma das relações mais importantes da Hessiana com a teoria econômica ocorre nos problemas de otimização.
+A condição de primeira ordem (gradiente nulo) identifica pontos candidatos a extremos.
+É a condição de segunda ordem que discrimina sua natureza, e esta condição é inteiramente governada pela matriz Hessiana no ponto crítico.
+Se a Hessiana for positiva definida, a forma quadrática associada é positiva em todas as direções, indicando curvatura convexa local e caracterizando um mínimo local.
+Se for negativa definida, a curvatura é côncava e o ponto é um máximo local.
+Se a matriz for indefinida, o ponto é uma sela.
+Em termos globais, a concavidade (convexidade) da função objetivo, verificada pela semidefinição negativa (positiva) da Hessiana em todo o domínio, garante que qualquer ponto crítico é um máximo (mínimo) global.
+Em economia, funções objetivo côncavas, associadas a Hessianas negativas semidefinidas, são particularmente importantes por simplificarem a análise de modelos de otimização.
+
+Em síntese, a análise de derivadas de ordem superior constitui um avanço necessário para além da análise marginal de primeira ordem ao capturar a curvatura e as interações de uma função multivariada.
+Sua aplicação requer a introdução das classes de funções \(C^1\) e \(C^2\), que exigem a continuidade das derivadas.
+O Teorema de Schwarz, garantido por essas condições de regularidade, assegura a simetria da matriz Hessiana.
+A Hessiana é o objeto central que reúne toda a informação sobre a curvatura de uma função escalar multivariada.
+Sua aplicação a uma função de produção Cobb-Douglas explicita formalmente a hipótese de rendimentos marginais decrescentes e revela a natureza complementar dos fatores produtivos nessa tecnologia.
+Por fim, a Hessiana fornece o critério definitivo de segunda ordem para a classificação dos pontos críticos em problemas de otimização.
+O domínio deste instrumental é, portanto, indispensável para uma compreensão rigorosa do comportamento, local e global, das funções que fundamentam a modelagem econômica quantitativa.
+
+* Funções implícitas
+
+** Informações :noexport:
 
 Materiais:
 - Simon and Blume Ch 15
 - Guidorizzi 12.2
 - Apêndice matemático Petri
+
+Temas:
+- Teorema da Função Implícita
+- Aplicações em estática comparativa
+
+** Temas discutidos :noexport:
+:PROPERTIES:
+:ID:       a48632db-b353-4cfd-8936-a8f1ade16462
+:END:
+
+- Contextualização ao tema:
+  - Em problemas econômicos, nem sempre é possível que as variáveis endógenas e exógenas estejam separadas
+    - \(G(x_{1}, \ldots, x_{n}, y) = 0\); neste caso, \(y\) é uma função implícita das demais variáveis
+    - Mesmo não sendo possível separar as variáveis endógenas das exógenas, as principais questões ecômicas continuam existindo: Como a mudança de uma variável exógena afeta a variável endógena? [Não incluir na resposta na forma de pergunta retórica]
+    - Também pode ser o caso em que trabalhar com a equação na forma explícita seja mais difícil do que utilizá-la na forma implícita
+  - Situação-problema: Considerar uma função de lucro em termos do nível nominal de produção (\(p\cdot f(x)\)) e custo variável (\(w\cdot x\))
+    - Neste exemplo, preço e salário são variáveis exógenas
+    - Como a firma é racional, ela escolherá o nível de produção \(x\) que satisfaça a condição de primeira ordem
+    - Não existe nenhuma razão para que a firma se restrinja para funções de produção que possam ser expressas de forma explícita
+    - Por esta razão, trabalha-se com a função de produção como uma função implícita de \(p\) e \(w\)
+- Introdução do instrumento:
+  - Diz-se que uma função \(F(x,y)\) define \(y\) implicitamente em termos de \(x\) quando \(F(x, g(x)) = 0\)
+    - Em seguida, toma-se a derivada em função de \(x\) em ambos os termos da equação
+      - Aplica-se a regra da cadeia em cada termo
+  - O mesmo pode ser dito se \(F(h(y), y) = 0\)
+  - A regra da cadeia pode ser utilizada para expressar uma relação explícita entre duas variáveis que definem implicitamente uma outra função \(F(x,y) = 0\)
+    - \(F(x, f(x)) = 0\)
+    - Para aplicar, \(F\) precisa ser diferenciável
+      - \(\frac{\partial F}{\partial x}\frac{dx}{dx} + \frac{\partial F}{\partial y}\frac{dy}{dx} = 0\)
+      - \(\frac{\partial F}{\partial x} + \frac{\partial F}{\partial y}\frac{dy}{dx} = 0\)
+      - \(\frac{dy}{dx} = - \frac{\frac{\partial F}{\partial x}}{\frac\frac{\partial F}{\partial y}}\)
+      - \(\frac{\partial F}{\partial y} \neq 0\)
+      - \(\frac{dy}{dx} = - \frac{F_{x}}{F_{y}}\)
+- Condições para que o Teorema da Função Implícita seja válido
+  - \(F\) definida em uma bola aberta em torno de \((a,b)\);
+  - \(F(a,b) = 0\)
+    - Deve existir um ponto de tal modo que essa igualdade seja válida
+    - As derivadas serão avaliadas em torno deste ponto
+  - \(F\) é diferenciável (\(F_{x}\) e \(F_{y}\)) são diferenciáveis com \(F_{y} \neq 0\)
+  - Antendidas essas condições, \(F(x,y) = 0\) define uma função implícita de \(y\) em termos de \(x\) perto do ponto \((a,b)\)
+    - Basicamente, existe uma função \(y(x)\) que tanto satisfaz \(F(x,y(x)) = 0\) em determinado ponto e é também diferenciável neste ponto
+  - A condição suficiente parace estar relacionada com o denominador ser diferente de zero
+    - A condição da existência de \(y(x)\) que resolve \(F = 0\) e né diference de zero neste ponto é uma condição suficiente para poder expressar implicitamente \(y\) em função de \(x\)
+    - De forma equivalente: \(y(x_0) = y_0\)
+  - Importante ressaltar que expressar \(F(x, y) = c\) não garante que esta função admite função implícita
+    - Normalmente, parte-se de um ponto que satisfassa essa igualdade e avalia as condições de pequenas variações das variáveis exógenas em termos da variável endógena definida implicitamente
+- Funções implícitas de mais de duas variáveis implícitas:
+  - Seja \(F(x, y, z) = 0\) diferenciável
+  - Pela regra da cadeia:
+    - \(\frac{\partial F}{\partial x}\frac{dx}{dx} + \frac{\partial F}{\partial y}\frac{dy}{dx} + \frac{\partial F}{\partial z}\frac{dz}{dx} = 0\)
+      - \(\frac{dx}{dx} = 1\)
+      - \(\frac{dy}{dx} = 0\)
+    - \(\frac{\partial z}{\partial x} = - \frac{F_{x}}{F_{z}}\)
+    - \(\frac{\partial z}{\partial y} = - \frac{F_{y}}{F_{z}}\)
+    - Anteção para a notação com \(\partial\)
+  - De forma equivalente, \(F(x, y, g(x,y)) = 0\)
+  - Alternativa: Funções implícitas de mais variáveis exógenas:
+    - Neste caso, \(F(\vec{x}, y) = 0\)
+      - Sendo assim, para avaliar o efeito de um \(x_{i}\) qualquer, parta utilizar o teorema da função implícita com os demais termos mantidos constantes
+- Interpretação geométrica do teorema da função implícita:
+  - Uma vez que os pontos satisfazem \(F(x,y) = c\), isto é, pertencem a determinada curva de nível, esta função \(F\) pode ser considerada implicitamente como o gráfico de uma variável \(y = f(x)\) na vizinhança do ponto
+    - A derivada dessa função (\(y'(x)\)) indica a inclinação da reta tangente neste ponto
+  - Caso a derivada de \(F(x,y)\) em termos de \(y\) (denominador) seja zero, mas a do numerador não; então tem-se \(x = x(y)\)
+    - Nesse caso particular, a reta tangente à curva de nível é paralela ao eixo \(y\)
+  - O pontos cuja a derivada parcial é não-nula são chamados de pontos regulares em \(C^{1}\)
+    - Se todos os pontos são regulares, então a curva de nível é uma curva regular (/manifold/ univariado)
+      - Sendo esses os casos, cada variável pode ser implicitamente expressa em termos das demais
+      - Neste caso, é uma função bem comportada e implica que a função possui uma reta tangente
+      - Para o caso de várias variáveis, chama-se de superfície regular em que o /manifold/ é \(n-1\)-variado
+- Relação entre o teorema da função implícita e gradiente:
+  - Memo: gradiente sempre aponta para a direção de maior variação
+  - Memo: gradiente é perpendicular à curva de nível
+    - Melhor dizendo, é perpendicular a reta tangente ao conto pertencente à curva de nível
+  - Para estabelecer esta relação, é preciso garantir que a função tenha uma reta tangente
+    - O Teorema da Função Implícita fornece a informação de que basta que um ponto (\(x_{0}, y_{0}\)) seja um ponto regular
+    - Se este ponto for regular, então o gradiente será perpendicular a reta tangente neste ponto
+    - A prova envolve mostrar que o vetor gradiente é não-nulo
+      - Isso é consequência direta das derivadas parciais não serem nulas neste ponto
+    - A derivada calculada por meio do Teorema da Função Implícita computa a inclinação da reta tangete neste ponto
+      - O vetor comporto por (1, derivada do Teorema da Função Implícita) é perpendicular ao vetor gradiante
+        - O produto escalar do gradiente e deste vetor é zero
+    - A interpretação geométrica fornece a intuição de que a função implícita pode ser escrita se a curva não é vertical neste ponto
+- Relação entre plano tangente e direrenciais:
+  - Recaptulando, a derivada calculada pelo Teorema da Função Implícita fornece a inclinação da curva de nível no ponto que é avaliada
+  - Utilizando a aprocimação por diferenciais, é possível encontrar o plano tangente a este ponto
+    - Para isso, basta encontrar a combinação linear dos diferenciais que não altera a curva de nível em questão:
+      - \(\frac{\partial F}{\partial x}(x_{0}, y_{0}) \Delta x + \frac{\partial F}{\partial y} (x_{0}, y_{0}) \Delta y = 0\)
+      - Em seguida, resolve-se para \(\Delta y/\Delta x\)
+  - Seja \(v\) o vetor que aponta para a não manter a mesma curva de nível, então o produto escalar entre este vetor e o vetor gradiente é zero
+    - Este vetor aponta para direção paralela a reta tangente no ponto desta função
+    - Este vetor é o espaço nulo neste ponto (/nullspace/)
+  - O mesmo raciocínio pode ser aplicado para mais dimensões
+    - A superfície de nível de uma função \(F(\vec{x})\) pode ser considerado um gráfico da função \(x_{i}\) em termos das demais variáveis ao redor de determinado ponto
+    - Tal como antes, o vetor gradiente é perpendicular ao hiperplano tangete desta superfície de nível
+    - Generalização:
+      - Seja uma função escalar de \(n\) variáveis e um ponto a ser avaliado, dado ao menos um ponto regular
+        - Então a função neste ponto apresenta a superfície de nível e ela pode ser considerada como uma função de \((n-1)\) variáveis na vizinhança deste ponto
+        - O vetor gradiente avaliado neste ponto é perpendicular a hiperplano tangente neste mesmo ponto
+        - Um vetor \(\vec{v}\) é tangente à curva de nível neste ponto se, e somente se, é um espaço nulo; implica que o produto escalar entre \(\vec{v}\) e o vetor gradiente resulta no vetor nulo
+- Sistemas de funções implícitas [Não consta no edital]:
+  - Para o caso em que \(F(x, y(x), z(x) = 0\) e \(G(x, y(x), z(x))\); para obter as derivadas parciais em termos de \(x\)
+    - É preciso montar um sistema de equações a partir da regra da cadeia
+    - Em seguida utiliza-se a regra de Cramer (ou qualquer outra forma de resolução) para obter a relação funcional de \(dy/dx\) e \(dz/dx\)
+      - Isso porque quando ambos as funções são iguais a zero, elas se interseccionam
+      - Nota-se que o sinal negativo é preservado
+      - A notação é a partir do determinante jacobiano: \(\frac{\partial (F, G)}{\partial (y, z)}\) para denotar a matriz
+  - Generalizando:
+    - \(\frac{dy}{dx} = - \frac{\frac{\partial (F, G)}{\partial (x, z)}}{\frac{\partial (F,G)}{\partial (y,z)}}\)
+      - Mnemônica: troca-se apenas o numerador, alternando apenas a variável de interesse por x
+    - Também é possível simplemente resolver o sistema de forma direta
+  - Recaptulação para sistemas lineares:
+    - Para que o sistema admita uma solução única:
+      - O número de equações seja igual ao número de variáveis endógenas E
+      - A matrix dos coeficientes  associados às variáveis endógenas seja não-singular
+        - Se esse for o caso, é possível inverter a matriz e calcular as variáveis endógenas em termos das variáveis exógenas de forma explícita
+    - O número de variáveis exógena passa a ser determinado residualmente
+    - As variáveis exógenas são tratadas de forma similar à constantes (RHS)
+    - Importante notar que o particionamento entre variáveis endógenas e exógenas pode não ter solução
+  - Sistemas não-lineares:
+    - Nestes casos, aplica-se o paradigma do cálculo:
+      - lineariza o sistema por meio das derivadas,
+      - aplica o teorema linear neste sistema linearizado
+      - mapeia os resultados de volta para o sistema não-linear
+    - Sejam as variáveis endógenas denotadas por \(\vec{y}\) e as exógenas por \(\vec{x}\)
+      - O número de variáveis endógenas deve ser o mesmo que o número de equações independentes (\(m\))
+      - Lineariza-se o sistema em torno de um ponto \((\vec{y}^{\star}, \vec{x}^{\star})\)
+        - Esta linearização é dada pelo somatório das derivadas parciais multiplicada pela variação (aproximação por diferenciais), avaliadas no ponto em questão
+      - O Teorema da Função Implícita permite resolver o sistema ao computar os diferenciais das variáveis endógenas em termos das variáveis exógenas
+        - A existência da solução requer que a matriz das derivadas parciais em termos das variáveis endógenas (matriz de coeficientes) seja não-singular
+          - Dado que este é um sistema linearizado, é possível inverter a matriz dos coeficientes e obter o valor dos diferenciais das variáveis endógenas em termos de variações das variáveis exógenas
+      - Decorrência desta solução é que o sistema não-linear pode ser expresso como um sistema de funções implícitas, ao menos na vizinhança do ponto analizado
+      - Também decorrência do resultado anterior, é possível computar as derivadas das equações endógenas em termos de uma variável exógena específica (\(x_{h}\))
+        - Para fazer isso, basta atribuir zero para todos os outros \(dx_{s}\) que não \(d_{h}\) e resolver o sistema em termos dos \(dy_{s}\)
+          - Alternativamente, pode-se aplicar a regra de Crammer
+    - Generalização:
+      - Seja um sistema de funções \(C^{1}\)
+      - Considere a possibilidade de que \(\vec{y}\) possam ser funções implícitas de \(\vec{x}\)
+      - Suponha que exista um ponto que seja solução do sistema
+      - Se o determinante da matriz dos coeficientes for não-singular avaliada neste mesmo ponto
+      - Então, existem funções \(C^{1}\) que podem ser expressas implicitamente por essas variáveis exógenas definidas em uma bola em torno de \(\vec{x}^{\star}\), de modo que:
+        - \(F_{k}(f_1(x), \ldots, f_m(x), x_1, \ldots, x_n) = c_k\) de \(1, \ldots, k, \ldots, m\) para todo \(\vec{x}\) nesta bola
+          - Cada função avaliada neste ponto em termos das variáveis exógenas terá o valor esperado
+      - Consequência do resultado anterior é que é possível calcular as derivadas parciais em termos de uma variável exógena específica ao tornar todas os demais diferenciais iguais a zero e resolver o sistema em termos dos diferenciais das variáveis endógenas
+- Aplicações em economia:
+  - Apresentar a TMS a partir de uma função de produção para trazer a intuição da utilização do Teorema da Função Implícita
+  - O Teorema da Função Implícita pode ser utilizado para calcular a inclinação de curvas de indiferenças em determinados pontos ou de uma isoquanta em uma função de produção
+    - Lembrando que mostra a movimentação na direção que se mantem na mesma curva
+    - No caso de uma função de produção, mede-se a taxa marginal de substituição técnica
+      - Mede o quanto de um produto deve ser produzido para compensar a perda de uma unidade do outro insumo enquanto o nível de produção é mantido constante
+  - Uma aplicação de sistemas de funções implícitas é dado pelo modelo IS-LM [Não incluir este exemplo pois não consta no edital]
+    - Consumo, investimento, e quantidade de moeda dependem da renda;
+- Aplicações em estática comparativa:
+  - O exemplo utilizado é em um modelo de equilíbrio geral de trocas puras
+    - Dois consumidores (A e B) com dois bens (x e y)
+    - De forma simples, consumidor \(A\) possui apenas o bem \(x\) \(e_{A} = (x,0)\); consumidor \(B\) tem apenas o bem \(y\), \(e_{B} = (0, y)\)
+    - Considere funções utilidade Cobb-Douglas para ambos
+      - Talvez simplificaria e diferenciaria do livro-texto se utilizar ao mesmo uma função quase-linear
+    - Considere os preços \(p_{x}\) e \(p_{y}\)
+    - Suponha que o consumidor queira consumir outra cesta que maximize a utilidade dada a restrição orçamentária
+    - Memo: em equilíbrio, as taxas marginais de substituição (avaliação interna do consumidor) deve ser igual aos preços relativos (dado pelo mercado, expressando escassez relativa)
+    - Dado que é uma economia de trocas puras, demanda em cada mercado deve ser igual à dotação (física)
+    - Organizando esse modelo em termos de um sistema, obtém-se seis variáveis e seis equações
+      - Defini-se um numerário
+      - Uma equação pode ser expressa em termos das demais (não é independente)
+      - Resulta-se em um sistema com 5 equações e 5 variáveis
+    - Definindo um valor inicial para a dotação, o sistema possui solução única
+    - Objetivo: mostrar o que acontece com as cestas se os consumidores possuirem outras dotações
+      - Mantendo a dotação do consumidor \(A\), qual seria o efeitos sobre alocação e preços relativos se a alocação do consumidor \(B\) fosse alterada marginamente
+      - Para isso, lineariza-se o sistema
+      - De acordo com o Teorema da Função Implícita, se este sistema linearizado pode ser resolvido em termos dos diferenciais, então é possível calcular as derivadas parciais das variáveis endógenas em termos das variáveis exógenas, neste caso, as dotações
+      - Em seguida, o sistema é rearrumado em termos de expressões de aversão relativa ao risco
+      - Depois, o sistema é resolvido por Cramer
+      - Em seguida, computa-se as derivadas parciais em termos da dotação que variou
+    - Conclusões para o exemplo específico do livro-texto:
+      - O aumento da dotação de um dos consumidores que, particularmente, significa aumentar a disponibilidade unicamente de um dos bens aumenta o preço relativo do outro bem
+        - Basicamente, o bem cuja dotação foi mantida constante, tornou-se relativamente mais escasso na margem
+      - Levou-se a um aumento do consumo do bem y pelo consumidor \(A\)
+    - OBS: Ajustar notação para incluir superescritos
+- Outros temas:
+  - Uma vez computada a relação implícita entre as variáveis, algumas expressões permitem apresentar a forma explícita entre elas
+    - Em alguns casos requer alguns algebrismos
+  - Em algumas situações, a função implícita de outra função não terá significado (isto é, \(dy/dx\) depende de \(y\))
+    - O Teorema da função implícita garante que este não será o caso
+  - Exemplos em que o Teorema da Função Implícita não se aplica
+    - Formas fechadas (como é o caso do círculo unitário)
+      - Em torno do limite de \(y = 0\), a derivada em relação a \(x\) seria vertical, tentendo ao infinito
+    - As derivadas parciais avaliadas em pontos que tornam a função nula geram um denominador nulo
+      - Devem existir valores dos argumentos que tornam \(F(x_0, y_0, z_0) = 0\) em que a derivada do denominador avaliada em \((x_0, y_0, z_0)\) seja diferente de zero
+  - Uma vez encontrada a derivada implícita, é possível utilizar a proximação por diferenciais para calcular o efeito sob a variável endógena:
+    - \(y_1 \approx y_0 + \frac{dy}{dx}(x_0)\Delta x\)
+  - Seria bom apresentar a relação entre plano tangente, aproximação por diferenciais e teorema da função implícita
+- Teorema da função inversa (opcional) [Não incluir na resposta]
 
 ** Rascunho :noexport:
 
@@ -1173,27 +1556,471 @@ e, portanto,
 
 Este resultado, derivado diretamente da regra da cadeia, generaliza-se para sistemas de equações e fornece o método para analisar como variáveis endógenas de equilíbrio respondem a choques exógenos em uma vasta gama de contextos, desde a derivação de curvas de oferta e demanda em microeconomia até o cálculo de multiplicadores em modelos macroeconômicos IS-LM ou de crescimento.
 
-** TODO Teorema da Função Implícita
+** Resposta 07 :ignore:
 
-** TODO Aplicações em estática comparativa
 
-* TODO Formas quadráticas e matrizes definidas [0%]
+Muitos problemas econômicos definem relações entre variáveis endógenas e exógenas por meio de equações implícitas, nas quais a separação analítica entre essas categorias não é possível.
+Esta situação é típica em condições de equilíbrio, em que as variáveis endógenas são determinadas como soluções de um conjunto de restrições comportamentais, tecnológicas e de mercado.
+O Teorema da Função Implícita garante a existência, a unicidade local e a diferenciabilidade, permitindo expressar, localmente,  um subconjunto de variáveis como funções diferenciáveis de outras.
+A capacidade de calcular as derivadas dessas funções implícitas constitui o núcleo operacional da análise de estática comparativa. Essa análise investiga sistematicamente como alterações em parâmetros ou variáveis exógenas afetam a posição de equilíbrio de um sistema econômico.
+No contexto específico de um modelo de equilíbrio geral, o Teorema da Função Implícita permite avaliar como pequenas variações nas dotações exógenas geram respostas diferenciáveis nas variáveis endógenas.
+
+A análise está dividida em três partes principais.
+Inicialmente, apresenta-se a formulação geral do Teorema da Função Implícita (TFI), fornecendo a base para o restante da análise.
+Em seguida, para aprofundar a compreensão, discute-se a interpretação geométrica do teorema, relacionando-o aos conceitos de superfícies de nível, gradientes e taxas marginais de substituição, o que fornece a intuição necessária à sua aplicação em economia.
+Posteriormente, a análise é estendida para sistemas multivariados. Nessa etapa, enfatiza-se a condição de invertibilidade local do sistema, fundamentada na não-singularidade da matriz Jacobiana associada às variáveis endógenas, o que mostra a transição do caso univariado ao geral.
+Por fim, aplica-se o aparato teórico a um exemplo numérico simplificado que representa um modelo de equilíbrio geral de trocas puras.
+A partir deste exemplo, realiza-se uma análise de estática comparativa, derivando o efeito de uma variação marginal na dotação inicial sobre o preço relativo de equilíbrio e a alocação final dos bens.
+Neste texto, vetores são representados por uma seta sobrescrita, como em \(\vec{x}\), para distingui-los de escalares.
+
+
+Para formalizar matematicamente a intuição do Teorema da Função Implícita, parte-se de uma função escalar \(F: U \subset \mathbb{R}^{2} \to \mathbb{R}\) de classe \(C^{1}\) em um conjunto aberto \(U\).
+A equação \(F(x, y) = 0\) define uma relação implícita entre as variáveis \(x\) e \(y\).
+Suponha que exista um ponto \((x_0, y_0) \in U\) tal que \(F(x_0, y_0) = 0\).
+O Teorema da Função Implícita estabelece que, se a derivada parcial de \(F\) em relação a \(y\) for não nula nesse ponto, isto é, se \(F_y(x_0, y_0) \neq 0\), então existem vizinhanças abertas \(V\) de \(x_0\) e \(W\) de \(y_0\) e uma função única \(\phi: V \to W\) de classe \(C^{1}\) tal que \(\phi(x_0) = y_0\) e \(F(x, \phi(x)) = 0\) para todo \(x \in V\).
+A diferenciabilidade de \(\phi\) permite calcular sua derivada.
+Diferenciando totalmente a identidade \(F(x, \phi(x)) = 0\) em relação a \(x\) e aplicando a regra da cadeia, obtém-se
+\[F_x(x, \phi(x)) + F_y(x, \phi(x)) \phi'(x) = 0.\]
+Portanto, a derivada da função implícita é dada por
+\[\phi'(x) = \frac{dy}{dx} = -\frac{F_x(x, y)}{F_y(x, y)}, \]
+avaliada no ponto \((x_0, y_0)\).
+A condição \(F_y \neq 0\) é essencial para garantir que o denominador não se anule, assegurando que a curva de nível \(F(x,y)=0\) não possui uma tangente vertical no ponto, permitindo que \(y\) seja expresso como uma função diferenciável de \(x\) localmente.
+
+A interpretação geométrica deste resultado liga-se diretamente ao gradiente de \(F\).
+A equação \(F(x, y) = 0\) define uma curva de nível no plano.
+O vetor gradiente \(\nabla F(x_0, y_0) = (F_x, F_y)\) é normal à curva de nível no ponto \((x_0, y_0)\).
+O vetor tangente à curva tem componentes \((1, dy/dx)\), e a condição de ortogonalidade \(\nabla F \cdot (1, dy/dx) = 0\) recupera exatamente a fórmula \(dy/dx = -F_x/F_y\).
+A não-nulidade de \(F_{y}\) permite resolver localmente para \(dy\) em termos de \(dx\), produzindo exatamente a inclinação local dada pelo teorema.
+Em economia, esta relação fundamenta o cálculo das taxas marginais de substituição técnica.
+Por exemplo, para uma função de produção definida por \(Y(K,L) = \bar{Y}\), a taxa marginal de substituição técnica é \(dL/dK = -(\partial Y/\partial K)/(\partial Y/\partial L)\), desde que \(\partial Y/\partial L \neq 0\).
+
+
+A generalização para uma única equação com \(n+1\) variáveis é direta.
+Seja \(F: U \subset \mathbb{R}^{n+1} \to \mathbb{R}\) de classe \(C^{1}\) e \(\vec{x} = (x_1, \dots, x_n)^\top\).
+A equação \(F(\vec{x}, y) = 0\) define \(y\) implicitamente em função de \(\vec{x}\) nas proximidades de um ponto \((\vec{x}_0, y_0)\) que satisfaz a equação, desde que \(F_y(\vec{x}_0, y_0) \neq 0\).
+Neste caso, existem vizinhanças abertas \(V\) de \(\vec{x}_0\) e \(W\) de \(y_0\), e uma função \(y = \phi(\vec{x})\) de classe \(C^{1}\) de \(V\) em \(W\), cujas derivadas parciais são dadas por
+\[\frac{\partial y}{\partial x_i} = -\frac{F_{x_i}(\vec{x}, y)}{F_y(\vec{x}, y)}, \quad i = 1, \dots, n.\]
+
+
+A extensão mais relevante para a modelagem econômica é a dos sistemas de equações.
+Considere agora um sistema de \(m\) equações definido por uma função \(F: U \subset \mathbb{R}^{n} \times \mathbb{R}^{m} \to \mathbb{R}^{m}\) de classe \(C^{1}\) em um aberto \(U\).
+O sistema é dado por \(F(\vec{x}, \vec{y}) = \vec{0}\), onde \(\vec{x} = (x_1, \dots, x_n)^\top\) denota o vetor de variáveis exógenas e \(\vec{y} = (y_1, \dots, y_m)^\top\) o vetor de variáveis endógenas.
+Assume-se a existência de um ponto \((\vec{x}_0, \vec{y}_0) \in U\) tal que \(F(\vec{x}_0, \vec{y}_0) = \vec{0}\).
+A condição análoga à \(F_y \neq 0\), e que é necessária e suficiente para a aplicação do TFI localmente, envolve a matriz Jacobiana de \(F\) em relação às variáveis endógenas, avaliada nesse ponto.
+Esta matriz, que contém as derivadas parciais das \(m\) equações em relação às \(m\) variáveis endógenas, é dada por
+\[
+J_{\vec{y}}F(\vec{x}_0, \vec{y}_0) = \left[ \frac{\partial F_i}{\partial y_j}(\vec{x}_0, \vec{y}_0) \right]_{m \times m}
+\]
+Se esta matriz for não-singular, ou seja, se \(\det(J_{\vec{y}}F(\vec{x}_0, \vec{y}_0)) \neq 0\), então existe uma função única \(\vec{\phi}\), definida e de classe \(C^{1}\) em torno de \(\vec{x}_0\), tal que \(\vec{\phi}(\vec{x}_0) = \vec{y}_0\) e \(F(\vec{x}, \vec{\phi}(\vec{x})) = \vec{0}\) para todo \(\vec{x}\) suficientemente próximo de \(\vec{x}_0\).
+A diferenciabilidade da função implícita \(\vec{\phi}\) permite calcular suas derivadas parciais.
+
+A derivada total da identidade \(F(\vec{x}, \vec{\phi}(\vec{x})) = \vec{0}\) fornece a relação fundamental para estática comparativa:
+\[
+\frac{\partial F}{\partial \vec{x}} d\vec{x} + \frac{\partial F}{\partial \vec{y}} d\vec{y} = \vec{0},
+\]
+onde as matrizes Jacobianas \(\frac{\partial F}{\partial \vec{x}}\) (de ordem \(m \times n\)) e \(\frac{\partial F}{\partial \vec{y}}\) (de ordem \(m \times m\)) são avaliadas no ponto de equilíbrio.
+Sob a condição de não-singularidade de \(\frac{\partial F}{\partial \vec{y}}\), pode-se resolver para o diferencial das variáveis endógenas:
+\[
+d\vec{y} = - \left[ \frac{\partial F}{\partial \vec{y}} \right]^{-1} \cdot \frac{\partial F}{\partial \vec{x}} \, d\vec{x}.
+\]
+Esta expressão matricial encapsula todos os efeitos de estática comparativa.
+O impacto marginal da variável exógena \(x_k\) sobre a variável endógena \(y_j\) é dado pelo elemento \((j,k)\) da matriz
+\[- \left[ \frac{\partial F}{\partial \vec{y}} \right]^{-1} \frac{\partial F}{\partial \vec{x}}\]
+A condição de não-singularidade da Jacobiana endógena é a generalização multidimensional da exigência de que o sistema possa ser resolvido localmente em termos de \(\vec{x}\) para as variáveis \(\vec{y}\).
+
+Para concretizar esses conceitos, aplica-se o TFI a um modelo de equilíbrio geral de trocas puras com dois bens, \(X\) e \(Y\), e dois consumidores, \(A\) e \(B\).
+Embora o sistema completo de equilíbrio envolva múltiplas equações para as condições de otimalidade e de mercado, foca-se, primeiramente, na equação reduzida do preço de equilíbrio $p$, obtida por substituir as demandas marshallianas.
+Esta abordagem é matematicamente e localmente equivalente, sob as hipóteses do TFI, ao tratamento do sistema completo $F(\vec{x}, \vec{y}) = \vec{0}$, pois a regularidade da Jacobiana endógena garante que a solução reduzida conserve as propriedades diferenciáveis previstas pelo teorema.
+Feita esta ressalva, as dotações iniciais são \(\vec{e}^A = (e_X^A, 0)\) e \(\vec{e}^B = (0, e_Y^B)\), com \(e_X^A, e_Y^B > 0\).
+As preferências são representadas por funções de utilidade Cobb-Douglas \(u^A(x_A, y_A) = x_A^{\alpha} y_A^{1-\alpha}\) e \(u^B(x_B, y_B) = x_B^{\beta} y_B^{1-\beta}\), com \(0 < \alpha, \beta < 1\).
+Toma-se o bem \(Y\) como numerário, definindo o preço relativo \(p = p_X / p_Y = p_X\).
+Neste contexto,  as variáveis endógenas são o preço relativo \(p = p_X\) e as cestas finais de cada agente.
+A restrição orçamentária de cada consumidor \(i\) é \(p e_X^{i} + e_Y^{i}\).
+
+A maximização da utilidade sob a restrição orçamentária, calculada utilizando o método dos multiplicadores de Lagrange, fornece as funções demanda:
+\[x_A^d = \alpha \frac{p\cdot e_X^A}{p}, \quad y_A^d = (1-\alpha) p e_X^A; \quad x_B^d = \frac{\beta e_Y^B}{p}, \quad y_B^d = (1-\beta) e_Y^B. \]
+A condição de equilíbrio de mercado para o bem \(X\) é \(x_A^d + x_B^d = e_X^A\), que, após substituição, resulta em:
+\[\alpha e_X^A + \frac{\beta e_Y^B}{p} = e_X^A \]
+Esta equação define implicitamente o preço de equilíbrio \(p\) em função das dotações exógenas \(e_X^A\) e \(e_Y^B\).
+Pode-se escrevê-la como:
+\[F(e_X^A, e_Y^B, p) \equiv \alpha e_X^A + \frac{\beta e_Y^B}{p} - e_X^A = 0\]
+A função \(F\) é de classe \(C^1\) para \(p > 0\).
+Suas derivadas parciais são
+\[ \frac{\partial F}{\partial p} = -\frac{\beta e_Y^B}{p^2}\]
+\[\frac{\partial F}{\partial e_Y^B} = \frac{\beta}{p}\]
+No ponto de equilíbrio, \(\frac{\partial F}{\partial p} \neq 0\).
+Portanto, o TFI assegura que \(p\) é uma função diferenciável de \(e_Y^B\) numa vizinhança do equilíbrio, com derivada:
+\[
+\frac{\partial p}{\partial e_Y^B} = -\frac{\frac{\partial F}{\partial e_Y^B}}{\frac{\partial F}{\partial p}} = -\frac{\frac{\beta}{p}}{-\frac{\beta e_Y^B}{p^2}} = \frac{p}{e_Y^B} > 0.
+\]
+O sinal positivo indica que um aumento na dotação total do bem \(Y\) eleva o preço relativo do bem \(X\).
+A intuição econômica é que um maior \(e_Y^B\) aumenta a renda do consumidor \(B\), que demanda o bem \(X\).
+Para restaurar o equilíbrio no mercado do bem \(X\), cuja oferta total \(e_X^A\) é fixa, o preço relativo de \(X\) deve aumentar para conter a demanda.
+
+O mesmo tipo de análise pode ser estendido ao caso em que aumenta-se marginalmente a dotação inicial do bem $X$ associado ao consumidor $A$.
+Pela definição de $F(e_X^A, e_Y^B, p) = \alpha e_X^A + \frac{\beta e_Y^B}{p} - e_X^A = 0$, temos
+\[
+\frac{\partial F}{\partial e_X^A} = \alpha - 1 = -(1-\alpha).
+\]
+Aplicando o teorema da função implícita,
+\[
+\frac{\partial p}{\partial e_X^A} = -\frac{\frac{\partial F}{\partial e_X^A}}{\frac{\partial F}{\partial p}} = -\frac{-(1-\alpha)}{-\frac{\beta e_Y^B}{p^2}} = -\frac{(1-\alpha) p^2}{\beta e_Y^B}.
+\]
+Dado que $(1-\alpha) > 0$, $p^2 > 0$, $\beta > 0$, e $e_Y^B > 0$, o sinal desta derivada é estritamente negativo:
+\[
+\frac{\partial p}{\partial e_X^A} = -\frac{(1-\alpha) p^2}{\beta e_Y^B} < 0.
+\]
+O sinal negativo indica que um aumento na dotação inicial do bem \(X\) (\(e_X^A\)) reduz o seu preço relativo \(p = p_X/p_Y\).
+A intuição econômica está diretamente associada à escassez relativa dos bens.
+Um aumento na oferta total do bem \(X\), mantida constante a dotação do bem \(Y\), torna o bem \(X\) relativamente mais abundante, pressionando seu preço relativo para baixo.
+
+De outro modo, as hipóteses simplificadoras aqui adotadas fazem com que a função do preço de equilíbrio admita uma função explícita
+\[p = \frac{\beta e_Y^B}{(1-\alpha) e_X^A}.\]
+Sendo assim, é possível contrastar os resultados obtidos anteriormente
+\[\frac{\partial p}{\partial e_X^A} = -\frac{\beta e_Y^B}{(1-\alpha) (e_X^A)^2} < 0.\]
+Tal como antes, a sensibilidade dos preços relativos a um incremento na oferta do bem \(X\) é estritamente negativa.
+Para coincidir com o resultado do teorema da função implícita, basta substituir a relação do preço relativo de equilíbrio no numerador e no denominador da expressão anterior.
+A mesma equivalência de resultados pode ser obtida em função da dotação do bem \(Y\)
+\[\frac{\partial p}{\partial e_Y^B} = \frac{\beta}{(1-\alpha) e_X^A} > 0.\]
+
+
+Vale destacar que é possível sofisticar esta análise, formalizando esta situação-problema no quadro mais geral do Teorema da Função Implícita para sistemas
+Como já mencionado, as variáveis endógenas completas são o preço relativo e as quatro equações das quantidades consumidas, ou seja, \(\vec{y} = (p, x_A, y_A, x_B, y_B)\).
+O equilíbrio é descrito por um sistema de cinco equações, agrupando as condições de primeira ordem para as funções de utilidade, duas restrições orçamentárias e o equilíbrio dos mercados.
+A segunda condição de equilíbrio de mercado torna-se redundante por força da Lei de Walras e, como consequência, pode ser desconsiderada uma vez que não é linearmente independente das demais equações.
+Este sistema define uma função implícita \(F(\vec{x}, \vec{y}) = \vec{0}\), em que \(\vec{x} = (e_X^A, e_Y^B)\) e \(\vec{y} = (p, x_A, y_A, x_B, y_B)\).
+A aplicação do TFI requer verificar que a matriz Jacobiana das derivadas de \(F\) em relação a \(\vec{y}\), que captura a estabilidade local, não seja singular no equilíbrio.
+Excetuando-se das soluções de canto, como é o caso deste exemplo, esta condição é tipicamente satisfeita.
+Uma vez verificado, o teorema garante a existência local de funções de equilíbrio diferenciáveis \(\vec{\phi}(e_X^A, e_Y^B)\) para todas as cinco variáveis endógenas.
+A relação diferencial \(d\vec{y} = - [\partial F/\partial \vec{y}]^{-1} (\partial F/\partial \vec{x}) d\vec{x}\) permite, então, calcular não apenas \(\partial p/\partial e_X^A\) e \(\partial p/\partial e_Y^B\), mas também os efeitos sobre as quantidades consumidas por cada agente.
+A análise anterior, portanto, é um caso particular deste sistema mais geral, no qual a equação reduzida para \(p\) foi obtida por substituir as demais relações de equilíbrio.
+Sendo assim, o exemplo numérico mais simplificado permite discutir os conceitos aqui apresentados sem perda de generalidade ou de clareza.
+
+Ao longo desta exposição, foi demonstrado como o Teorema da Função Implícita estrutura a análise local de sistemas econômicos definidos implicitamente.
+Resumidamente, o TFI é a base matemática da estática comparativa em economia.
+Sua condição central, a não-singularidade da matriz Jacobiana, garante a estabilidade local do sistema.
+Em outras palavras, o sistema de equações de equilíbrio deve definir localmente as variáveis endógenas de maneira única e diferenciável em função dos parâmetros exógenos.
+O exemplo numérico de um modelo de equilíbrio geral de trocas puras ilustra como pequenas alterações nas dotações propagam-se às variáveis endógenas definidas implicitamente.
+O domínio deste instrumental é, portanto, essencial para a modelagem e interpretação de fenômenos econômicos, sobretudo para a análise comparativa.
+
+
+
+
+* Formas quadráticas e matrizes definidas
+
+** Informações :noexport:
 
 Materiais:
 - Simon and Blume Ch 16
+- Chiang 11.3
 - Stewart 14.7
 - Apêndice matemático Petri
 
-** TODO Matrizes Simétricas Definidas
+Conteúdo:
+- Matrizes Simétricas Definidas
+- Restrições Lineares e Matrizes Orladas
 
-** TODO Restrições Lineares e Matrizes Orladas
+** Tópicos discutidos :noexport:
+:PROPERTIES:
+:ID:       4774ed65-e55a-428b-aa62-6d9582ad638f
+:END:
+:LOGBOOK:
+CLOCK: [2026-01-23 Fri 15:39]--[2026-01-23 Fri 16:04] =>  0:25
+CLOCK: [2026-01-23 Fri 14:47]--[2026-01-23 Fri 15:12] =>  0:25
+:END:
+
+- Contexto:
+  - Este tema abre a discussão sobre otimização
+    - A otimização de uma forma quadrática é a mais simples
+    - Reduz-se em estudar as propriedades matemáticas de uma matriz siméstrica
+  - As condições de segunda ordem são formas quadráticas
+- Formas quadráticas:
+  - \(Q(\vec{x}) = \sum_{i \leq j}a_{ij}x_{i}x_{j}\)
+  - \(Q(\vec{x}) = \vec{x}^{T}\cdot A\cdot\vec{x}\) como representação a partir de uma matriz simétrica \(A\)
+  - Exemplo:
+    - \(a_{11}x_{1}^{2} + a_{12}x_1x_2 + a_{22}x_2^2\)
+    - \((x_{1} x_{2}) \begin{pmatrix} a_{11} & 0.5 a_{12} \\ 0.5 a_{12} & a_{22} \end{pmatrix} (x_{1} x_{2})^{T} \)
+      - Obs: Escrevi como sendo vetor linha por ser mais rápido, mas deve ser expresso como vetor coluna
+      - O mesmo vale para uma função com três variáveis
+- Definição (/definiteness/) de formas quadráticas:
+  - Sempre assume zero no vetor nulo
+  - Suas características principais é quando o vetor de variáveis é não-nulo
+  - A discussão será sobre se o ponto associado ao vetor nulo é um ponto de máximo ou de mínimo
+  - Definições/classificações:
+    - Se uma forma quadrática sempre assume valores positivos, é dita definida positiva
+      - Em R2, tem uma forma similar a uma tigela com a abertura para cima
+    - Se sempre assume valores negativos, definida negativa
+      - Em R2, tem uma forma similar a uma tigela com a abertura para baixo
+    - Quando pode assumir ambos os valores, é dita indefinida
+      - Em R2, tem uma forma similar a uma sela
+    - Caso a função possa assumir o valor zero em um ponto diferente da origem, disse-se semi-definida positiva/negativa
+      - Em R2, tem uma forma similar a uma "telha invertida" sem semi-definida positiva; "telha" se semi-definida negativa
+      - Exemplo: Um quadrado perfeito é sempre positivo, mas pode assumir o valor zero quando \(x_{1} = a, x_{2} = -a\)
+- Matrizes simétricas definidas:
+  - A classificação de uma matrix simétrica será de acordo com a definição dessa matriz em sua forma quadrática \(A\)
+    - Positiva definida :: \(\vec{x}^{T}\cdot A\cdot\vec{x} > 0 \forall \vec{x} \neq 0\)
+    - Positiva semi-definida :: \(\vec{x}^{T}\cdot A\cdot\vec{x} \geq 0 \forall \vec{x} \neq 0\)
+    - Negativa definida :: \(\vec{x}^{T}\cdot A\cdot\vec{x} < 0 \forall \vec{x} \neq 0\)
+    - Negativa semi-definida :: \(\vec{x}^{T}\cdot A\cdot\vec{x} \leq 0 \forall \vec{x} \neq 0\)
+    - Indefinida :: se os sinais se alternam
+- Aplicação: Condições de segunda ordem de convexidade
+  - A forma de qualificar se um ponto crítico é máximo, mínimo ou ponto de sela, envolve avaliar a definição da matriz Hessiana neste ponto
+  - Extendendo esta ideia para concavidade, a função é dita côncava se a matriz Hessiana é negativa semi-definida em determinada região
+- Menores principais:
+  - Estão associados para o teste/algorítimo de avaliar a qualificação de uma forma quadrática
+  - Definição:
+    - Seja uma submatriz de \(A\) da ordem de \(k\times k\) em que removem-se \(k\) linhas e colunas. Essa matriz é denominada submatriz principal de \(A\)
+    - O determinante dessa matriz é denominado menor principal líder
+  - Obs: Uma matriz quadrada tem \(2^{n} - 1\) menores principais
+- Menores principais líderes:
+  - Submatrix principal líder de \(A)\): São um caso especial de menores principais em que removem-se sempre as últimas \(k\) linhas e colunas
+  - Os menores principais líderes de ordem \(k\) são os determinantes dessas submatrizes
+    - Serão denominados por \(A_{k}\) e \(|A_{k}|\) respectivamente (matriz e determinante desta submatriz)
+  - Uma matriz \(n\times n\) tem \(n\) menores principais líderes
+  - Relação com definitude das matrizes:
+    - Definida positiva :: Os sinais dos menores principais líderes são estritamente positivos
+    - Definida negativa :: Os sinais dos menores principais líderes seguem o padrão \((-1)^{k}\), excluindo-se o zero
+    - Indefinida :: Excluindo-se o zero, caso os menores principais líderes não se encaixem em nenhum desses padrões
+    - Casos especiais :: Caso os menores principais líderes possuam zero, não necessariamente torna-se semi-definida
+      - Em outras palavras, pode ser que seja indefinida
+      - Sendo este o caso, é preciso avaliar o sinal de todos os menores principais (não apenas dos líderes) e identificar se encaixam em:
+        - Semi-definida positiva :: Se todos os menores principais de \(A\) são não negativos
+        - Semi-definida negativa :: Se os menores principais de \(A\) ímpares são negativos; se os pares são positivos
+    - Exemplo para fixação: caso de uma matriz diagonal
+- Restrições lineares e matrizes orladas
+  - Relembrando que fazer a classificação de formas quadrátricas é o equivalente de determinar se o ponto crítico é um ponto máximo ou mínimo
+    - No entanto, o algoritimo de classificação só é válido se não existirem restrições
+      - Exemplo: Uma retrição pode tornar uma forma quadrática indefinida em definida
+  - Contexto: tendo em vista que a maioria das aplicações econômicas envolvem algum tipo de restrição, faz sentido analisar formas quadráticas nesse contexto
+  - Uma forma de resolver problemas desse tipo é substituir a restrição na forma quadrática e rearranjar
+    - Isso pode envolver deixar uma variável em termos da outra
+  - Uma forma mais geral é criar a matriz orlada
+    - Esta matriz é a matriz dos coeficientes envolta nas restrições lineares (adicionadas às linhas e às colunas) e preenchida por zeros
+    - Formalizando:
+      - Seja a forma matricial dada por: \(Q(\vec{x}) = \vec{x}^{T}A\vec{x}\)
+      - Em que se aplica a restrição linear \(B\), sendo uma matriz \(m\times n\) (\(B\vec{x} = 0\)), forma-se a seguinte matriz orlada \(H\):
+      - \(H \begin{pmatrix} 0_{m,m} & | & B_{m,n} \\\hline B^{T}_{m,n} & | & A_{n,n} \end{pmatrix}\)
+      - Neste caso, é um problema de \(n - m\) dimensões uma vez que são \(m\) equações (restrições) e \(n\) variáveis
+      - Para qualificar esta matriz, checa-se os últimos \(n - m\) menores principais líderes de \(H\), incluindo o \(det(H)\)
+        - Definida negativa: Se o sinal do determinante for dado por \((-1)^{n}\), e os sinais se alternam. O ponto \(\vec{x} = 0\) é um máximo global dada a restrição
+        - Definida positiva: Se o sinal dos determinante e de todos os últimos menores principais líderes tem o sinal de \((-1)^{m}\), sem alternância, então trata-se de um ponto de mínimo global, dada a restrição
+        - Indefinida: Se as condições anteriores são violadas por menores principais líderes não-nulos
+  - Entendido o escopo geral, segui-se para a discussão com uma restrição linear
+    - Vale pontuar que situações com uma restrição apenas podem ser comuns em economia (ex: soma de variáveis é zero)
+    - Por se tratar de um caso específico, é possível ter uma forma particular de tratar essa situação
+      - Se os \(n\) últimos principais líderes tem o mesmo sinal, é uma matriz definda positiva sob a restrição e o ponto é um mínimo restrito
+      - Se os \(n\) últimos principais líderes alternam o sinal, então é uma matriz definida negativa sob a restrição e o ponto é um máximo (dada a restrição)
+- Outros tópicos:
+  - A caracterização da matriz \(A\) pode ser utilizada para avaliar seções cônicas
+    - Dada a forma quadrátrica associada a uma curva de nível fixada
+      - Positiva definida: Elipse ou círculo
+      - Indefinida: Hipérbola
+      - Estritamente semi-definida positiva: linhas paralelas
+  - Forma é um caso específico em que todos os termos do polinômio tem o mesmo expoente (lembrando que considera-se a soma dos expoentes das variáveis)
+  - Para que a classificação da matriz seja informativa para discriminar os pontos críticos como mínimos e máximos, é preciso considerar apenas os casos definidos positivo e negativo, excluindo-se os casos semi- e in-definidos
+  - Outra forma de categorizar as matrizes é por meio das raízes características, encontradas a partir do autovalor (\(\lambda\)) e autovetor (\(\vec{u}\)): \(A\vec{u} = \lambda\vec{u}\)
+    - Neste caso, a matriz deve ser singular (determinante deve ser nulo)
+    - Encontra-se a equação característica da matriz \(A\)
+      - O polinômio será de grau \(n\) na variável \(\lambda\)
+      - Com a matriz \(A\) sendo simétrica, como é o caso da forma quadrática, as raízes características serão sempre valores reais
+      - Memo: substituindo um autovalor \(\lambda_{i}\) permite encontrar o autovetor equivalente (um dentre infinitos, dado que o sistema é homogêneo)
+        - Para encontrar o vetor, força-se uma normalização
+          - Uma forma de normalização é impor que a soma das variáveis ao quadrado é um (estão no círculo unitário)
+      - Encontrados os autovetores, pontua-se as seguintes propriedades
+        - O produto escalar de um mesmo autovetor é a unidade (dada a normalização imposta)
+        - O produto escalar de autovetores diferentes pode ser tomado como zero (são ortogonais)
+        - Combinando essas propriedades, os autovetores são vetores ortonormais
+      - Coletando os autovetores nas columas de uma matriz \(T\)
+        - Após transformações, é possível expressas a forma quadrática em termos de \(\vec{x}\) em termos de \(\vec{y}\)
+          - \(\vec{x}^{T}A\vec{x} = \vec{y}^{T}R\vec{y}\) em que \(R\) é a matriz diagonal dos autovalores
+          - Resumidamente, utiliza-se o procedimento de diagonalização da matriz
+            - Uma forma de ver o porquê se torna diagonal é que a multiplicação de um autovetor por ele mesmo é 1 (compondo a diagonal principal), enquanto a multiplicação cruzada é zero (elementos fora da diagonal principal sendo nulos)
+        - Como consequência, reescreve-se a forma quadrática de modo que apenas termos ao quadrado aparecem
+          - A condição de sinal se mantém preservada
+    - Relação com o sinal da forma quadrática:
+      - Definida positiva (negativa): Se todas as raízes características forem positivas (negativas)
+      - Positiva (negativa) semidefinda: se todas as raízes características forem não-negativas (não-positivas)
+      - Indefinida: se as raízes características tiverem sinais trocados
+      - Desvantagem: encotrar as raízes características pode ser mais trabalhoso do que computar os determinantes do menores principais líderes
+
+** Resposta :ignore:
+:PROPERTIES:
+:ID:       714a53f7-7e2e-4e56-bad9-de8605b66d65
+:END:
 
 
-* TODO Otimização não condicionada [0%]
+Muitos problemas econômicos, sobretudo na abordagem marginal, envolvem a otimização de funções objetivo sujeitas a restrições.
+As funções objetivo podem ser das mais variadas, como a maximização da utilidade, a minimização do custo e a escolha de portfólio.
+O mesmo vale para as restrições, sejam físicas, monetárias ou institucionais/regulatórias.
+O método padrão de otimização em economia envolve, primeiro, a identificação de pontos críticos, candidatos a ótimos locais, para, em seguida, qualificá-los analiticamente.
+Para tanto, primeiro encontram-se as condições necessárias de primeira ordem que exigem que o gradiente da função objetivo em determinado ponto seja nulo, o que gera condições de estacionariedade.
+Por mais que esta etapa permita vasculhar o domínio da função em pontos críticos, não é suficiente para distinguir máximos, mínimos e pontos de sela.
+A qualificação do ponto crítico é fornecida pelas condições suficientes de segunda ordem, que exigem a análise local do comportamento da função na vizinhança desse ponto.
+Essas condições de segunda ordem estão diretamente associadas às características de formas quadráticas e de matrizes definidas, tema da questão apresentada.
+
+
+Considerando este contexto mais amplo, a exposição será organizada de forma progressiva.
+Inicialmente, definem-se formalmente as formas quadráticas e os critérios de definitude para matrizes simétricas, estabelecendo sua ligação imediata com as condições de segunda ordem, a começar pela otimização irrestrita.
+Em seguida, apresentam-se dois métodos de classificação, o espectral baseado em autovalores e o baseado em menores principais, elucidando suas condições de equivalência e aplicabilidade.
+A terceira parte estende a teoria ao cenário de restrições lineares, introduzindo a noção de definitude restrita e desenvolvendo o teste completo para matrizes orladas.
+Finalmente, todos esses elementos serão integrados em um exemplo numérico simplificado, envolvendo a minimização de uma função de custo quadrática sujeita a uma restrição tecnológica linear.
+À luz deste exemplo, é possível avaliar a convexidade global da função de custo e a condição de segunda ordem para o ótimo restrito, interpretando os resultados à luz da teoria da produção.
+Por fim, são indicadas direções pelas quais problemas de otimização em economia podem ser tratados utilizando outros métodos fundamentados nos desenvolvimentos apresentados.
+
+Para fundamentar a análise, apresentam-se inicialmente as definições matemáticas centrais.
+Uma forma quadrática \(Q: \mathbb{R}^n \to \mathbb{R}\) é uma função homogênea de grau dois que pode ser escrita como:
+\[Q(\vec{x}) = \sum_{i=1}^n \sum_{j=1}^n a_{ij}\, x_i x_j\]
+Vale notar que para toda forma quadrática existe uma representação única com matriz simétrica \(A\) de ordem \(n\times n\):
+\[Q(\vec{x}) = \vec{x}^\top A \vec{x}\]
+A simetria de \(A\) é feita via \(A = 0.5\left(B + B^{\top}\right)\) para qualquer matriz \(B\) que represente \(Q\).
+Além disso, a simetria de \(A\) garante que todos os seus autovalores sejam reais.
+A classificação da matriz \(A\) quanto à sua definitude é determinada pelo sinal da forma quadrática em relação a vetores não nulos.
+Diz-se que \(A\) é positiva definida se \(\vec{x}^\top A \vec{x} > 0\) para todo \(\vec{x} \neq \vec{0}\).
+É negativa definida se \(\vec{x}^\top A \vec{x} < 0\) para todo \(\vec{x} \neq \vec{0}\).
+A matriz é positiva semidefinida se \(\vec{x}^\top A \vec{x} \geq 0\) para todo \(\vec{x}\) e se existe pelo menos um vetor não nulo \(\vec{v}\) tal que \(\vec{v}^\top A \vec{v} = 0\).
+Analogamente, é negativa semidefinida se \(\vec{x}^\top A \vec{x} \leq 0\) para todo \(\vec{x}\) com igualdade para algum \(\vec{v} \neq \vec{0}\).
+Finalmente, \(A\) é indefinida se existem vetores \(\vec{u}\) e \(\vec{w}\) tais que \(\vec{u}^\top A \vec{u} > 0\) e \(\vec{w}^\top A \vec{w} < 0\).
+
+A relevância das formas quadráticas na otimização pode ser melhor compreendida a partir da expansão de Taylor de segunda ordem.
+Para uma função \(f: \mathbb{R}^n \to \mathbb{R}\) duas vezes continuamente diferenciável em uma vizinhança de um ponto \(\vec{x}_{0}\), a aproximação quadrática é dada por:
+\[f(\vec{x}_0 + \vec{h}) \approx f(\vec{x}_0) + \nabla f(\vec{x}_0)^{\top}\vec{h} + \frac{1}{2} \vec{h}^\top H_f(\vec{x}_0) \vec{h}, \]
+
+em que a função é avaliada na direção \(\vec{h}\) próxima do ponto \(\vec{x}_{0}\) (\(\vec{h} = (\vec{x} - \vec{x}_{0})\)) e \(H_f(\vec{x}_0)\) é a matriz Hessiana de \(f\) avaliada em \(\vec{x}_{0}\).
+Para o caso específico em que o ponto de análise é um ponto crítico (onde \(\nabla f(\vec{x}_0) = \vec{0}\)), a aproximação se torna:
+\[f(\vec{x}_0 + \vec{h}) \approx f(\vec{x}_0) + \frac{1}{2} \vec{h}^\top H_f(\vec{x}_0) \vec{h}, \]
+Neste caso, o termo dominante na variação \(f(\vec{x}_0 + \vec{h}) - f(\vec{x}_0)\) é, portanto, a forma quadrática \(Q(\vec{h}) = \vec{h}^\top H_f(\vec{x}_0) \vec{h}\).
+O sinal desta forma quadrática, para todas as direções possíveis \(\vec{h}\), determina se \(f\) atinge um valor localmente menor, maior ou ambos em \(\vec{x}_0\).
+Se \(Q(\vec{h}) > 0\) para todo \(\vec{h} \neq \vec{0}\), então \(f(\vec{x}_0 + \vec{h}) > f(\vec{x}_0)\) e \(\vec{x}_0\) é um mínimo local estrito.
+Se \(Q(\vec{h}) < 0\) para todo \(\vec{h} \neq \vec{0}\), então \(\vec{x}_0\) é um máximo local estrito.
+Se \(Q(\vec{h})\) assume valores positivos e negativos, então \(\vec{x}_0\) é um ponto de sela.
+A definitude da forma quadrática \(Q\) é, assim, o análogo multivariado da condição de segunda derivada positiva (para mínimo) ou negativa (para máximo) do cálculo univariado.
+
+No contexto de otimização, as categorias de definitude correspondem diretamente às possíveis configurações de ótimos locais.
+Em aplicações econômicas mais gerais, nada garante que a função objetivo tenha forma quadrática, mas isso será o caso para a matriz Hessiana avaliada neste ponto crítico.
+Uma vez que situações econômicas envolvem funções continuamente diferenciáveis, a respectiva Hessiana será simétrica pelo Teorema de Schwarz para funções da classe \(C^{2}\).
+Vale pontuar que a condição de simetria garante que todos os autovalores de \(A\) são números reais, propriedade fundamental para a análise de seu sinal.
+Portanto, classificar a natureza de um ponto crítico reduz-se a determinar a definitude da matriz Hessiana.
+Como consequência, um ponto crítico \(\vec{x}_0\) de \(f\) é um mínimo local estrito se a Hessiana \(H_f(\vec{x}_0)\) for positiva definida; é um máximo local estrito se \(H_f(\vec{x}_0)\) for negativa definida; e é um ponto de sela se \(H_f(\vec{x}_0)\) for indefinida.
+Os casos de semidefinitude correspondem a situações em que o teste de segunda ordem é inconclusivo, e o ponto pode ser um ótimo não estrito ou um ponto de inflexão de ordem superior.
+
+
+Dois conjuntos principais de critérios permitem classificar a definitude de uma matriz simétrica \(A\).
+O primeiro baseia-se nos autovalores.
+Como \(A\) é simétrica, ela é diagonalizável por uma matriz ortogonal.
+Existe uma matriz \(P\) com \(P^{-1} = P^\top\) e uma matriz diagonal \(\Lambda = \text{diag}(\lambda_1, \dots, \lambda_n)\) tais que \(A = P \Lambda P^\top\).
+Os elementos diagonais \(\lambda_i\) são os autovalores reais de \(A\) e \(P\) é a matriz cujas colunas são os autovetores ortonormais.
+Desta representação canônica, a caracterização da definitude por meio de autovalores é direta.
+A matriz \(A\) é positiva definida se \(\lambda_i > 0\) para todo \(i\); é negativa definida se \(\lambda_i < 0\) para todo \(i\); é positiva semidefinida se \(\lambda_i \geq 0\) para todo \(i\) e existe \(j\) com \(\lambda_j = 0\); é negativa semidefinida se \(\lambda_i \leq 0\) para todo \(i\) e existe \(j\) com \(\lambda_j = 0\); e é indefinida se existem índices \(i, j\) com \(\lambda_i > 0\) e \(\lambda_j < 0\).
+
+O segundo critério baseia-se nos menores principais da matriz.
+Seja \(A_k\) a submatriz principal líder de ordem \(k\), formada pelas primeiras \(k\) linhas e \(k\) colunas de \(A\), e seja \(D_k = \det(A_k)\).
+Partindo dos menores principais líderes, a matriz \(A\) é positiva definida se e somente se \(D_k > 0\) para todo \(k = 1, \dots, n\).
+Estas são condições necessárias e suficientes para definitude estrita.
+Como contrapartida, é negativa definida se e somente se \((-1)^k D_k > 0\) para todo \(k\).
+Para a semidefinitude, o critério dos menores líderes é insuficiente; é necessário e suficiente que todos os menores principais (de todas as ordens) satisfaçam as condições de não-negatividade (ou de não-positividade com alternância de sinais).
+A matriz é positiva semidefinida se e somente se todos os seus menores principais são não negativos.
+É negativa semidefinida se e somente se todos os seus menores principais de ordem ímpar são não positivos e todos os de ordem par são não negativos.
+
+Uma vez entendidas as condições para qualificar um ponto crítico como máximo, mínimo ou de sela, pode-se seguir para situações com restrições, típicas de problemas econômicos.
+Ao longo dessa resposta, serão abordadas apenas restrições lineares e serão realizados os ajustes necessários para discriminar os pontos críticos nesses casos.
+Dito de outro modo, a qualificação de um ponto crítico deve considerar apenas as direções de variação viáveis, ou seja, que respeitam as restrições.
+Dadas \(m\) restrições lineares homogêneas e independentes, escritas como \(B\vec{x} = \vec{0}\), com \(B\) uma matriz \(m \times n\) de posto \(m\), o comportamento relevante da forma quadrática \(Q(\vec{x}) = \vec{x}^\top A \vec{x}\) é aquele restrito ao subespaço definido pelas restrições.
+Diz-se que \(A\) é positiva definida sob a restrição \(B\vec{x} = \vec{0}\) se \(\vec{x}^\top A \vec{x} > 0\) para todo \(\vec{x} \neq \vec{0}\) que satisfaça \(B\vec{x} = \vec{0}\), com definições análogas para as outras categorias.
+Este é o teste de segunda ordem para um problema de otimização com restrições lineares de igualdade.
+
+A ferramenta analítica para implementar esta verificação é a matriz orlada (ou bordada), projetando a forma quadrática no subespaço viável.
+Dadas a matriz \(A\) \((n \times n)\) e a matriz de restrições \(B\) \((m \times n)\), constrói-se a matriz simétrica aumentada \(H\) de ordem \((m+n)\):
+\[
+H = \begin{pmatrix} \mathbf{0}_{m \times m} & B \\ B^{\top} & A \end{pmatrix}.
+\]
+A definitude restrita de \(A\) é determinada pelos últimos \(n-m\) menores principais líderes da matriz \(H\).
+Seja \(H_k\) a submatriz principal líder de ordem \(k\) de \(H\).
+Para uma definitude positiva restrita, os determinantes de ordem \(2m+1_{}\) até \(n+m\) devem ter o sinal de \((-1)^m\).
+Para uma definitude negativa restrita, estes mesmos determinantes devem alternar de sinal, começando por \((-1)^{m+1}\).
+O caso particular de uma única restrição (\(m=1\)) é comum em aplicações econômicas e, por essa razão, será descrito em detalhes.
+Com \(B = \vec{b}^\top\) (um vetor linha), a matriz orlada é
+\[H = \begin{pmatrix} 0 & \vec{b}^\top \\ \vec{b} & A \end{pmatrix}\]
+Neste caso, \(A\) é positiva definida sob \(\vec{b}^\top\vec{x}=0\) se os \(n\) menores principais líderes de \(H\) tiverem o sinal \((-1)^{m} = -1\), ou seja, se forem negativos.
+É negativa definida sob a restrição de que, se esses menores principais líderes alternarem, começando pelo sinal  positivo.
+
+Com base nesse instrumental matemático, pode-se explorar uma situação-problema econômica para consolidar esses conceitos.
+Em seguida, analisa-se o caso de um modelo de minimização de custos de produção.
+Considere uma firma que utiliza dois insumos, trabalho (\(L\)) e capital (\(K\)), para produzir um único bem, sujeita a uma restrição tecnológica.
+A função de custo, que captura a despesa total com os fatores, é especificada como uma forma quadrática:
+\[C(L, K) = \frac{1}{2}L^2 + \frac{1}{2}K^2 + \frac{1}{4} LK\]
+Trata-se, portanto, de uma forma quadrática pura, cuja matriz Hessiana \(H_{C}\) é constante e independe do ponto \((L,K)\).
+Consequentemente, a análise de sua definitude é válida em todo o domínio, simplificando a exposição sem perda de rigor conceitual.
+
+
+Para fins didáticos e sem perda de generalidade, impõe-se uma restrição tecnológica linear:
+\[2L + K = \bar{Q}\]
+onde \(\bar{Q} > 0\) representa um nível de produção meta (físico), gerando uma isoquanta linear.
+O objetivo da firma é escolher \((L, K)\) para minimizar \(C(L, K)\) sujeito a essa restrição.
+
+
+A análise de segunda ordem começa por investigar a convexidade global da função de custo, que é determinada pela sua Hessiana.
+Calculando as derivadas parciais de segunda ordem, obtemos:
+\[
+H_C = \begin{pmatrix} \frac{\partial^2 C}{\partial L^2} & \frac{\partial^2 C}{\partial L \partial K} \\ \frac{\partial^2 C}{\partial K \partial L} & \frac{\partial^2 C}{\partial K^2} \end{pmatrix} = \begin{pmatrix} 1 & \frac{1}{4} \\ \frac{1}{4} & 1 \end{pmatrix}.
+\]
+Antes de considerar a restrição, aplica-se o critério dos menores principais líderes para classificar \(H_C\).
+Neste caso, \(D_1 = 1 > 0\) e \(D_2 = \det(H_C) = 1 \cdot 1 - (\frac{1}{4})^2 = \frac{15}{16} > 0\).
+Como todos os menores principais líderes são estritamente positivos, \(H_C\) é positiva definida.
+Isto significa que a função \(C\) é estritamente convexa em todo o \(\mathbb{R}^2\).
+A análise espectral, via autovalores, corrobora este resultado.
+Os autovalores são as raízes de:
+\begin{align*}
+\det(H_C - \lambda I)
+&= (1-\lambda)^2 - \left(\tfrac{1}{4}\right)^2 = 0\\
+&= 1 - 2\lambda + \lambda^2 - \tfrac{1}{16} = 0 \\
+&= \lambda^2 - 2\lambda + \tfrac{15}{16} = 0\\
+\lambda_{{1,2}} &= \frac{-(-1) \pm \sqrt{(-1)^2 - 1\cdot \tfrac{15}{16}}}{1} \\
+&= 1 \pm \sqrt{1 - \tfrac{15}{16}} = 1 \pm \sqrt{\tfrac{1}{16}} \\
+&= 1 \pm \tfrac{1}{4}
+\end{align*}
+que são \(\lambda_1 = \frac{3}{4}\) e \(\lambda_2 = \frac{5}{4}\).
+Ambos são estritamente positivos, confirmando a definitude positiva.
+Economicamente, a definitude positiva da Hessiana implica que a função tem custos marginais crescentes em qualquer direção no espaço dos insumos.
+
+Como esperado, a presença da restrição tecnológica altera o conjunto de escolhas viáveis.
+Para qualificar um ponto candidato a ótimo restrito, precisamos verificar a condição de segunda ordem no subespaço das variações viáveis, isto é, para vetores \((\Delta L, \Delta K)\) que satisfaçam a equação \(2\Delta L + \Delta K = 0\).
+Isto equivale a testar se \(H_C\) é positiva definida sob a restrição linear \(B = (2, 1)\).
+Constrói-se a matriz orlada correspondente:
+\[
+H = \begin{pmatrix} 0 & 2 & 1 \\ 2 & 1 & \frac{1}{4} \\ 1 & \frac{1}{4} & 1 \end{pmatrix}.
+\]
+Para uma única restrição (\(m=1\)), a matriz orlada \(H\) tem ordem \(n+1\).
+O critério para \(A\) ser positiva definida na restrição é que os últimos \(n - m = n - 1\) menores principais líderes de \(H\) tenham sinal \((-1)^{m}\).
+No caso \(m=1\), isso significa examinar os menores principais líderes de ordem \(2m + 1, \ldots, n+1\), e todos devem ser negativos.
+Para o caso específico de \(n = 2\), só há o determinante completo de \(H\) (ordem 3) a se verificar.
+Aplicando o método de Sarrus:
+\begin{align*}
+\det(H) & = \left(0 \cdot 1 \cdot 1 + 2 \cdot \frac{1}{4} \cdot 1 + 1 \cdot 2 \cdot \frac{1}{4}\right) - \left(1 \cdot 1 \cdot 1 + 2 \cdot 2 \cdot 1 + 0 \cdot \frac{1}{4} \cdot \frac{1}{4}\right) \\
+ & = \left(0 + \frac{1}{2} + \frac{1}{2}\right) - (1 + 4 + 0) \\
+ & = -4
+\end{align*}
+Obtém-se \(\det(H) = -4\), que possui o sinal \((-1)^m = (-1)^1 = -1\).
+Portanto, pelo critério da matriz orlada, a Hessiana \(H_C\) é positiva definida sob a restrição \(2L + K = \bar{Q}\).
+Conclui-se que qualquer ponto crítico que satisfaça a restrição será um mínimo local estrito para o problema de minimização de custo definido por esta restrição linear.
+A intuição econômica é que, mesmo quando forçada a operar ao longo de uma trajetória específica no espaço de insumos, a firma ainda enfrenta custos convexos ao longo dessa trajetória.
+O sinal negativo do determinante da matriz orlada é consistente com a curvatura positiva ("curvada para cima") da função de custo na direção viável.
+
+Em resumo, o instrumental matemático que trata das formas quadráticas e da definitude de matrizes simétricas fornece as condições de segunda ordem para otimização, tanto irrestrita quanto com restrições lineares.
+Essa relação entre a forma quadrática e a otimização fica evidenciada pela expansão de Taylor de segunda ordem, que destaca a Hessiana como o termo determinante para a classificação de pontos críticos.
+Os critérios baseados em autovalores e em menores principais oferecem métodos complementares para a classificação, enquanto a construção de matrizes orladas estende a análise ao contexto restrito, essencial para a modelagem em situações-problema economicamente relevantes.
+Neste texto, foi apresentada uma exemplificação numérica simplificada, contemplando os elementos essenciais para a compreensão dos conceitos discutidos.
+Por fim, cabe destacar que a compreensão e a classificação de formas quadráticas desempenham um papel central em problemas de otimização, sejam eles condicionados ou não.
+Este é o caso, por exemplo, do método dos multiplicadores de Lagrange, utilizado em otimizações com restrições.
+Sendo assim, os conceitos e aplicações aqui descritos são fundamentais na área de métodos quantitativos aplicados à economia.
+
+
+* NEXT Otimização não condicionada [0%]
 
 Materiais:
 - Simon and Blume Ch 17
 - Guidorizzi Ch 16
+- Chiang Ch 11
+- Parte de Simon and Blume Ch 30
 - [[https://ocw.uci.edu/lectures/math_4_lec_15_math_for_economists.html][Mathematical Review]]
 - Apêndice matemático Petri
 
@@ -1211,6 +2038,7 @@ Materiais:
 - Chiang 12
 - Chiang 13
 - Apêndice matemático Petri
+- Parte de Simon and Blume Ch 30
 - Simon and Blume Ch 30.4
 - Stewart 14.8
 - Ostaszewski Ch 15
@@ -2072,6 +2900,404 @@ Materiais:
       - Toda interpretação econômica depende da direção do choque.
       - O formalismo conecta teoria analítica, estática comparativa, dinâmica e métodos numéricos.
 
+* Derivadas de ordens superiores: roteiro de resposta
+
+1. Motivacao economica da analise de segunda ordem
+   - Analise marginal de primeira ordem identifica apenas a direcao local de variacao.
+   - Em problemas economicos, isso e insuficiente para:
+     - Classificar extremos (maximo \(\rightarrow\) minimo).
+     - Avaliar estabilidade de solucoes.
+     - Formalizar rendimentos marginais decrescentes.
+     - Caracterizar interacoes tecnicas entre variaveis.
+   - A informacao adicional necessaria esta contida nas derivadas de segunda ordem.
+   - *Refinamento de rigor:* deixar claro que a analise de segunda ordem envolve *curvatura local da funcao*
+
+2. Condicoes de regularidade
+   - Seja \( f : D \subseteq \mathbb{R}^n \rightarrow \mathbb{R} \).
+   - \( f \in C^1(U) \):
+     - As derivadas parciais de primeira ordem existem e sao continuas em \( U \).
+   - \( f \in C^2(U) \):
+     - Todas as derivadas parciais de segunda ordem existem e sao continuas em \( U \).
+     - Implica diferenciabilidade das derivadas de primeira ordem.
+   - *Refinamento de rigor:* explicitar que classe \(C^2\) e condicao suficiente para curvatura local consistente.
+
+3. Comutatividade das derivadas mistas
+   - Teorema de Schwarz:
+     - Se \( f \in C^2(U) \), entao
+       \[
+       \frac{\partial^2 f}{\partial x_i \partial x_j}
+       =
+       \frac{\partial^2 f}{\partial x_j \partial x_i}.
+       \]
+   - Interpretacao economica:
+     - Efeitos cruzados independe da ordem de avaliacao.
+   - Teorema de Young:
+     - Generaliza a comutatividade para derivadas de ordem \(k\), se \( f \in C^k \).
+   - *Refinamento de rigor:* explicitar que Young garante simetria sistematica para ordens de derivacao arbitrarias.
+
+4. Definicao da matriz Hessiana
+   - Para \( f \in C^2 \), define-se:
+     \[
+     D^2 f(\vec{x}) =
+     \begin{pmatrix}
+     \frac{\partial^2 f}{\partial x_1^2}(\vec{x}) & \cdots & \frac{\partial^2 f}{\partial x_1 \partial x_n}(\vec{x}) \\
+     \vdots & \ddots & \vdots \\
+     \frac{\partial^2 f}{\partial x_n \partial x_1}(\vec{x}) & \cdots & \frac{\partial^2 f}{\partial x_n^2}(\vec{x})
+     \end{pmatrix}.
+     \]
+   - Propriedades:
+     - Matriz \(n \times n\).
+     - Simetrica pelo Teorema de Schwarz.
+   - Leituras equivalentes:
+     - Agregador das derivadas segundas.
+     - Jacobiana do operador gradiente.
+   - *Refinamento de rigor:* explicitar que a Hessiana representa a **segunda variacao** do mapeamento.
+
+5. Interpretacao economica dos elementos
+   - Derivadas puras (diagonal):
+     - Medem como o efeito marginal de \(x_i\) varia com \(x_i\).
+     - Sinal negativo \(\rightarrow\) rendimentos marginais decrescentes.
+   - Derivadas mistas (fora da diagonal):
+     - Medem interacao entre variaveis.
+     - Sinal positivo \(\rightarrow\) complementaridade local.
+     - Sinal negativo \(\rightarrow\) substitutibilidade local.
+   - *Refinamento de rigor:* separar sinais de derivadas puras e mistas com leitura economica distinta.
+
+6. Hessiana como forma quadratica
+   - Para uma variacao linear \( \vec{h} \):
+     \[
+     Q(\vec{h}) = \vec{h}^{\mathsf T} D^2 f(\vec{x}_0) \vec{h}.
+     \]
+   - Esta forma mede a curvatura local de \(f\) na direcao \(\vec{h}\).
+   - *Refinamento de rigor:* validade condicionada a parametrizacao linear da trajetoria.
+
+7. Exemplo economico: funcao de producao Cobb-Douglas
+   - Funcao:
+     \[
+     F(K,L) = A K^{\alpha} L^{1-\alpha},
+     \quad A>0,\; 0<\alpha<1.
+     \]
+   - Dominio: \(\mathbb{R}_{++}^2\).
+   - \(F \in C^{\infty}\) \(\rightarrow\) Schwarz aplicavel.
+
+8. Derivadas de primeira ordem (produtos marginais)
+   - \(F_K = \alpha A K^{\alpha-1} L^{1-\alpha} \)
+   - \(F_L = (1-\alpha) A K^{\alpha} L^{-\alpha} \)
+
+9. Derivadas de segunda ordem
+   - Puras:
+     \[
+     F_{KK} = \alpha(\alpha-1) A K^{\alpha-2} L^{1-\alpha},
+     \quad
+     F_{LL} = -\alpha(1-\alpha) A K^{\alpha} L^{-\alpha-1}
+     \]
+   - Mistas:
+     \[
+     F_{KL} = F_{LK}
+     = \alpha(1-\alpha) A K^{\alpha-1} L^{-\alpha}
+     \]
+
+10. Propriedades economicas
+    - \(F_{KK}<0, F_{LL}<0\) \(\rightarrow\) rendimentos marginais decrescentes.
+    - \(F_{KL}>0\) \(\rightarrow\) complementaridade local entre fatores.
+
+11. Hessiana em forma matricial:
+    \[D^2F(K,L) = A K^{\alpha-2} L^{-\alpha-1} \begin{pmatrix} \alpha(\alpha-1)L^2 & \alpha(1-\alpha)KL \\ \alpha(1-\alpha)KL & -\alpha(1-\alpha)K^2 \end{pmatrix}. \]
+
+12. Concavidade e convexidade: regra operacional
+    - Hessiana negativa semidefinida:
+      - Funcao concava.
+      - Associada a maximos.
+    - Hessiana positiva semidefinida:
+      - Funcao convexa.
+      - Associada a minimos.
+    - *Mnemotecnica:* concava \(\rightarrow\) maximo, convexa \(\rightarrow\) minimo.
+
+13. Classificacao de pontos criticos
+    - \(\nabla f(\vec{x}^*) = \vec{0}\).
+    - Hessiana:
+      - Negativa definida \(\rightarrow\) maximo local.
+      - Positiva definida \(\rightarrow\) minimo local.
+      - Indefinida \(\rightarrow\) sela.
+
+14. Sintese final
+    - Segunda ordem \(\rightarrow\) curvatura e interações.
+    - Requer definição de funções continuamente diferenciais
+    - Teorema de Schwarz garante simetria da Hessiana
+    - Hessiana \(\rightarrow\) agregador completo da informacao de curvatura.
+    - Aplicação com Cobb-Douglas permite explicitar hipóteses de rendimentos marginais decrescentes
+    - Fornece critério para classificação de pontos críticos
+    - Permite avaliar comportamento local e global de funções
+
+* Teorema da função implícita: roteiro de resposta
+
+
+1) Muitos problemas econômicos são formulados por meio de equações implícitas
+   a. As variáveis endógenas não podem ser isoladas analiticamente
+   b. As condições de equilíbrio combinam restrições comportamentais, tecnológicas e de mercado
+   c. O equilíbrio é definido por um sistema do tipo
+      \[F(\vec{x}, \vec{y}) = \vec{0} \]
+      1. \(\vec{x}\): variáveis exógenas ou parâmetros
+      2. \(\vec{y}\): variáveis endógenas
+2) O TFI garante, localmente:
+   a. Existência do equilíbrio
+   b. Unicidade do equilíbrio
+   c. Diferenciabilidade das variáveis endógenas em relação às exógenas
+   d. Fundamentação matemática da estática comparativa
+3) Formulação escalar do TFI
+   a. Seja \(F: U \subset \mathbb{R}^2 \rightarrow \mathbb{R}\), \(F \in C^1(U)\)
+   b. Equação implícita:
+      \[F(x,y)=0 \]
+   c. Ponto de referência:
+      \[(x_0,y_0) \in U \quad \text{tal que} \quad F(x_0,y_0)=0 \]
+   d. Hipótese central:
+      \[F_y(x_0,y_0) \neq 0 \]
+   e. Conclusão: Existem vizinhanças abertas \(V\) de \(x_0\) e \(W\) de \(y_0\) e uma função
+      \[y = \phi(x), \quad \phi \in C^1(V) \]
+      \[\phi(x_0)=y_0, \quad F(x,\phi(x))=0 \;\; \forall x \in V \]
+4) Diferenciando totalmente \(F(x,\phi(x))=0\):
+    \[dF = F_x dx + F_y dy = 0 \]
+   a. Resolvendo para \(dy/dx\), avaliada no ponto \((x_0,y_0)\):
+       \[\frac{dy}{dx} = -\frac{F_x}{F_y} \]
+5) Interpretação geométrica
+   a. \(F(x,y)=0\) define uma curva de nível
+   b. O gradiente \(\nabla F = (F_x,F_y)\) é normal à curva
+   c. O vetor tangente local é \((1,dy/dx)\)
+   d. A condição \(\nabla F \cdot (1,dy/dx)=0\) recupera exatamente a expressão do TFI
+   e. Fundamenta taxas marginais de substituição técnica
+      a. Função de produção definida por \(Y(K,L) = \bar{Y}\),
+         a. \(dL/dK = -(\partial Y/\partial K)/(\partial Y/\partial L)\) desde que \(\partial Y/\partial L \neq 0\).
+6) Generalização: uma equação e múltiplas variáveis
+   a. Seja \(F: U \subset \mathbb{R}^{n+1} \rightarrow \mathbb{R}\), \(F \in C^1\)
+      - \(\vec{x}=(x_1,\dots,x_n)^\top\)
+      \[F(\vec{x},y)=0 \]
+   b. Condição:
+      \[F_y(\vec{x}_0,y_0) \neq 0 \]
+   c. Derivadas parciais da função implícita:
+      \[\frac{\partial y}{\partial x_i} = -\frac{F_{x_i}}{F_y} \]
+7) Sistemas de equações: caso relevante em economia
+   a. \(F: U \subset \mathbb{R}^n \times \mathbb{R}^m \rightarrow \mathbb{R}^m \)
+      a. \(\vec{x} \in \mathbb{R}^n\): variáveis exógenas
+      b. \(\vec{y} \in \mathbb{R}^m\): variáveis endógenas
+   b. Sistema: \(F(\vec{x},\vec{y})=\vec{0} \)
+8) Condição de aplicabilidade do TFI:
+   a. Jacobiana em relação às variáveis endógenas:
+   \[J_{\vec{y}}F(\vec{x}_0,\vec{y}_0) = \left[\frac{\partial F_i}{\partial y_j} \right]_{m\times m} \]
+   a. Hipótese central: \(\det(J_{\vec{y}}F)\neq 0 \)
+9) Diferenciação total do sistema
+   a. Diferenciando:
+   \[F(\vec{x},\vec{\phi}(\vec{x}))=\vec{0} \]
+   a. obtém-se:
+   \[\frac{\partial F}{\partial \vec{x}} d\vec{x} + \frac{\partial F}{\partial \vec{y}} d\vec{y} = \vec{0} \]
+10) Fórmula matricial da estática comparativa
+    a. Sob não-singularidade de \(\partial F/\partial \vec{y}\):
+    \[d\vec{y} = -\left[\frac{\partial F}{\partial \vec{y}} \right]^{-1} \frac{\partial F}{\partial \vec{x}} d\vec{x} \]
+    a. Cada elemento \((j,k)\) mede o impacto marginal de \(x_k\) sobre \(y_j\)
+    b. Esta expressão encapsula toda a estática comparativa local
+11) Aplicação: equilíbrio geral de trocas puras
+    a. Dois bens: \(X,Y\)
+    b. Dois consumidores: \(A,B\)
+    c. Dotações:
+       \[\vec{e}^A=(e_X^A,0), \quad \vec{e}^B=(0,e_Y^B) \]
+    d. Preferências Cobb–Douglas:
+       \[u^A=x_A^\alpha y_A^{1-\alpha}, \quad u^B=x_B^\beta y_B^{1-\beta} \]
+    e. Numerário: \(p_Y=1\), preço relativo \(p=p_X\)
+    f. Demanda e equação implícita do preço
+       a. Demandas:
+       \[x_A^d=\alpha e_X^A, \quad x_B^d=\frac{\beta e_Y^B}{p} \]
+       a. Equilíbrio no mercado de \(X\):
+       \[F(e_X^A,e_Y^B,p) \equiv \alpha e_X^A + \frac{\beta e_Y^B}{p} - e_X^A = 0 \]
+    g. Derivadas parciais relevantes
+        \[\frac{\partial F}{\partial p} = -\frac{\beta e_Y^B}{p^2} \quad\neq 0 \]
+        \[\frac{\partial F}{\partial e_Y^B} = \frac{\beta}{p} \quad \frac{\partial F}{\partial e_X^A} = -(1-\alpha) \]
+    h. Resultados de estática comparativa
+        \[\frac{\partial p}{\partial e_Y^B} = \frac{p}{e_Y^B} > 0 \]
+        \[\frac{\partial p}{\partial e_X^A} = -\frac{(1-\alpha)p^2}{\beta e_Y^B} < 0 \]
+    i. Interpretação econômica
+       a. Aumento em \(e_Y^B\) eleva a demanda por \(X\) → \(p\) aumenta
+       b. Aumento em \(e_X^A\) amplia a oferta relativa de \(X\) → \(p\) cai
+       c. Resultados consistentes com a função explícita do preço
+    j. Equivalência com a solução por derivação direta
+       \[\alpha e_X^A + \frac{\beta e_Y^B}{p} - e_X^A = 0 \]
+       \[p = \frac{\beta e_Y^B}{(1-\alpha)e_X^A} \]
+       a. Derivando diretamente:
+         \[\frac{\partial p}{\partial e_Y^B} = \frac{p}{e_Y^B} \quad \frac{\partial p}{\partial e_X^A} = -\frac{p}{e_X^A} \]
+       b. Substituindo \(p\) na segunda expressão:
+          \[\frac{\partial p}{\partial e_X^A} = -\frac{(1-\alpha)p^2}{\beta e_Y^B} \]
+12) Síntese conceitual
+    a. O TFI estrutura a análise local de equilíbrio
+    b. A estática comparativa é um problema de diferenciação total
+    c. A Jacobiana endógena governa estabilidade e sensibilidade
+    d. O exemplo reduzido preserva a generalidade do sistema completo
+
+
+
+* Formas quadráticas e matrizes definidas: Roteiro de resposta
+1. Motivação geral
+   1. Problemas econômicos envolvem otimização com ou sem restrições
+   2. Funções objetivo: utilidade, custo, portfólio
+   3. Restrições: físicas, monetárias, institucionais
+   4. Método padrão:
+      - Identificar pontos críticos
+      - Qualificar esses pontos
+2. Condições de primeira ordem
+   1. Pontos críticos satisfazem:
+      \( \nabla f(\vec{x}_0) = \vec{0} \)
+   2. Condição necessária
+   3. Garante estacionariedade
+   4. Não distingue máximo, mínimo ou sela
+3. Papel das condições de segunda ordem
+   1. Análise local na vizinhança do ponto crítico
+   2. Baseada em derivadas de segunda ordem
+   3. Associada a formas quadráticas
+   4. Associada a matrizes definidas
+4. Estrutura da exposição
+   1. Definição formal de formas quadráticas
+   2. Critérios de definitude para matrizes simétricas
+   3. Ligação com otimização irrestrita
+   4. Critérios via:
+      - Autovalores
+      - Menores principais
+   5. Extensão para restrições lineares
+   6. Introdução de definitude restrita
+   7. Uso de matriz orlada
+   8. Aplicação numérica em teoria da firma
+5. Definição de forma quadrática
+   1. Aplicação:
+      \( Q : \mathbb{R}^n \to \mathbb{R} \)
+   2. Homogênea de grau dois
+   3. Representação por somatório:
+      \[
+      Q(\vec{x}) = \sum_{i=1}^n \sum_{j=1}^n a_{ij} x_i x_j
+      \]
+   4. Representação matricial:
+      \[
+      Q(\vec{x}) = \vec{x}^\top A \vec{x}
+      \]
+6. Simetrização da matriz
+   1. Para qualquer matriz B:
+      \[
+      A = \frac{1}{2}(B + B^\top)
+      \]
+   2. Representação única da forma quadrática
+   3. Simetria não altera Q
+   4. Garante autovalores reais
+7. Definitude: definições
+   1. Positiva definida: \( \vec{x}^\top A \vec{x} > 0 \; \forall \vec{x} \neq \vec{0} \)
+   2. Negativa definida: \( \vec{x}^\top A \vec{x} < 0 \; \forall \vec{x} \neq \vec{0} \)
+   3. Positiva semidefinida: \( \vec{x}^\top A \vec{x} \ge 0 \) existe \( \vec{v} \neq 0 \) com igualdade
+   4. Negativa semidefinida: definição análoga
+   5. Indefinida: sinais opostos para vetores distintos
+8. Relação com expansão de Taylor
+   1. Função \( f \in C^2 \)
+   2. Aproximação:
+      \[f(\vec{x}_0 + \vec{h}) \approx f(\vec{x}_0) + \nabla f(\vec{x}_0)^\top \vec{h} + \frac{1}{2} \vec{h}^\top H_f(\vec{x}_0) \vec{h} \]
+   3. Em ponto crítico:
+      \[f(\vec{x}_0 + \vec{h}) \approx f(\vec{x}_0) + \frac{1}{2} \vec{h}^\top H_f(\vec{x}_0) \vec{h} \]
+9. Interpretação da forma quadrática
+   1. Termo dominante da variação local
+   2. Define sinal de:
+      \( f(\vec{x}_0 + \vec{h}) - f(\vec{x}_0) \)
+   3. Correspondências:
+      - Positiva definida \(\rightarrow\) mínimo local estrito
+      - Negativa definida \(\rightarrow\) máximo local estrito
+      - Indefinida \(\rightarrow\) ponto de sela
+   4. Extensão multivariada da derivada segunda
+10. Hessiana em problemas econômicos
+    1. Hessiana é simétrica (Teorema de Schwarz)
+    2. Autovalores reais
+    3. Classificar ponto crítico equivale a: classificar definitude da Hessiana
+    4. Semidefinitude: teste inconclusivo
+11. Critérios de classificação
+    1. Dois critérios principais
+    2. Equivalentes para matrizes simétricas
+    3. Escolha depende do contexto
+12. Critério espectral
+    1. Diagonalização:
+       \( A = P \Lambda P^\top \)
+    2. \( P \) ortogonal
+    3. \( \Lambda = \text{diag}(\lambda_1,\dots,\lambda_n) \)
+    4. Classificação:
+       - Todos \( \lambda_i > 0 \) \(\rightarrow\) positiva definida
+       - Todos \( \lambda_i < 0 \) \(\rightarrow\) negativa definida
+       - Mistura de sinais \(\rightarrow\) indefinida
+       - Zeros \(\rightarrow\) semidefinida
+13. Critério dos menores principais
+    1. \( A_k \): submatriz líder de ordem k
+    2. \( D_k = \det(A_k) \)
+    3. Positiva definida:
+       \( D_k > 0 \; \forall k \)
+    4. Negativa definida:
+       \( (-1)^k D_k > 0 \)
+    5. Semidefinitude:
+       exige todos os menores principais
+    6. Critério mais operacional em baixa dimensão
+14. Introdução de restrições lineares
+    1. Problemas econômicos típicos
+    2. Apenas direções viáveis importam
+    3. Restrições:
+       \( B\vec{x} = \vec{0} \)
+    4. Definitude restrita:
+       avaliação da forma quadrática no subespaço viável
+
+15. Definitude sob restrição
+    1. Positiva definida restrita:
+       \( \vec{x}^\top A \vec{x} > 0 \)
+       para todo \( \vec{x} \neq 0 \) tal que \( B\vec{x} = 0 \)
+    2. Analogia com condições de segunda ordem restritas
+16. Matriz orlada
+    1. Construção:
+       \[H = \begin{pmatrix} \mathbf{0}_{m \times m} & B \\ B^\top & A \end{pmatrix} \]
+    2. Matriz simétrica
+    3. Projeta a forma quadrática no espaço viável
+17. Critério da matriz orlada
+    1. Analisar menores principais líderes de H
+    2. Apenas os últimos \( n-m \)
+    3. Sinais dependem de m
+    4. Caso m = 1:
+       - Positiva definida restrita:
+         menores líderes negativos
+18. Aplicação econômica
+    1. Firma com dois insumos L e K
+    2. Minimização de custo
+    3. Função quadrática:
+       \[C(L,K) = \frac{1}{2}L^2 + \frac{1}{2}K^2 + \frac{1}{4}LK \]
+    4. Hessiana constante:
+       \[H_C = \begin{pmatrix} 1 & \frac{1}{4} \\ \frac{1}{4} & 1 \end{pmatrix} \]
+    5. Polinômio característico:
+       \[\det(H_C - \lambda I) = (1-\lambda)^2 - \left(\frac{1}{4}\right)^2 = \lambda^2 - 2\lambda + \frac{15}{16} \]
+    6. Autovalores:
+       \[\lambda_1 = \frac{3}{4}, \quad \lambda_2 = \frac{5}{4} \]
+    7. Hessiana positiva definida
+    8. Análise válida globalmente
+19. Restrição tecnológica
+    1. Restrição linear:
+       \[2L + K = \bar{Q} \]
+    2. Matriz da restrição:
+       \[B = \begin{pmatrix} 2 & 1 \end{pmatrix} \]
+    3. Define subespaço viável
+    4. Direções admissíveis satisfazem:
+       \( 2\Delta L + \Delta K = 0 \)
+    5. Vetor direcional genérico:
+       \[\vec{h} = \begin{pmatrix} t \\ -2t \end{pmatrix} \]
+20. Qualificação do ótimo restrito
+    1. Matriz orlada:
+       \[H = \begin{pmatrix} 0 & 2 & 1 \\ 2 & 1 & \frac{1}{4} \\ 1 & \frac{1}{4} & 1 \end{pmatrix} \]
+    2. Menor principal líder relevante:
+       \[\det \begin{pmatrix} 0 & 2 & 1 \\ 2 & 1 & \frac{1}{4} \\ 1 & \frac{1}{4} & 1 \end{pmatrix} < 0 \]
+    3. Sinal consistente com m = 1
+    4. Custo convexa ao longo da restrição
+    5. Mínimo local estrito sob a restrição
+21. Síntese final
+    1. Formas quadráticas fundamentam a análise de segunda ordem
+    2. Hessiana conecta matemática e intuição econômica
+    3. Autovalores e menores principais são critérios equivalentes
+    4. Matriz orlada estende o teste ao caso restrito
+    5. Instrumental central em métodos quantitativos em economia
+
+
+
+
 * Glossário
 
 - Classe \(C^{1}\) :: Funções que possuem derivadas parciais de *primeira ordem* contínuas em seu domínio
@@ -2080,6 +3306,8 @@ Materiais:
 - Função afim :: Equivalente à função polinomial do primeiro grau com a forma: \(f(x) = ax + b\). Trata-se de uma transformação linear
 - Funções transcendentares :: São funções que não podem ser expressas como solução de uma equação polinomial. Em outras palavras, não podem ser obtidas através de um número finito de operações algébricas
 - Gradiente descendente :: Dada uma função \( f: \mathbb{R}^n \to \mathbb{R} \), o objetivo é encontrar o mínimo global ou local de \(f\). Atualiza iterativamente os parâmetros na direção oposta ao gradiente da função, que indica a maior taxa de crescimento de \(f\). A regra de atualização é expressa por: \(\mathbf{w}_{k+1} = \mathbf{w}_k - \eta \nabla f(\mathbf{w}_k)\);  \(\eta\): taxa de aprendizado.
+- Multiplicador de Lagrange (interpretação) :: mede a variação no valor ótimo da função objetivo decorrente de um relaxamento marginal da restrição. Representa o preço-sombra do recurso escasso.
+- Preço-sombra :: Valor marginal implícito de um recurso escasso.
 - Produto escalar :: Formado pela multiplicação dos elementos dos vetores, subsequentemente somados. O resultado fornece um número real. Produto escalar é o caso particular de um produto interno.
 - Produto vetorial :: Sejam dois vetores \(\vec{a}\) e \(\vec{b}\) linearmente independenetes, o produto vetorial (denotado por \(\times\) ou \(\wedge\)) resulta em um vetor normal a esses dois. Resultado é um vetor, não um escalar.
   - Comprimento do produto vetorial :: Pode ser interpretado como a área do paralogramo formado pelos vetores \(\vec{a}\) e \(\vec{b}\)
@@ -2088,7 +3316,10 @@ Materiais:
 - Taxa Marginal de Transformação :: representa a quantidade de um bem que deve ser sacrificada para produzir uma unidade adicional de outro bem, mantendo constantes os recursos e a tecnologia disponíveis. Matematicamente, a TMT é expressa como a inclinação (em valor absoluto) da Fronteira de Possibilidades de Produção (FPP) em um ponto específico: \(\text{TMT}_{\vec{d}}(\vec{I}_0) = -\frac{\nabla F_2(\vec{I}_0)\cdot\vec{d}} {\nabla F_1(\vec{I}_0)\cdot\vec{d}}\)
   - TMT e FPP :: A TMT varia ao longo da FPP devido à lei dos rendimentos marginais decrescentes: à medida que mais recursos são alocados para a produção de um bem, a produtividade adicional obtida diminui
 - Teorema Clairaut-Schwarz :: A ordem das derivadas parciais *mistas* não importam para funções de classe \(C^{2}\). Como consequência, as derivadas mistas são iguais.
+  - Teorema de Young :: Garante a igualdade das derivadas parciais mistas sob hipóteses de regularidade mais fracas. Em geral, basta a existência das derivadas mistas e a continuidade de uma delas no ponto considerado.
 - Teorema do confronto :: Utilizado para computar o limite de uma função a partir da comparação de funções próximas com limites conhecidos.
 - Teorema de Euler para Funções Homogêneas :: Se uma função \(f(x_{1},...,x_{n})\) é homogênea de grau \(k\), então a soma de cada variável multiplicada pela sua derivada parcial correspondente é igual a \(k\) vezes a função original
+- Teorema de Weierstrass (valores extremos) :: Seja \(f : K \rightarrow \mathbb{R}\) uma função contínua definida em um conjunto \(K \subset \mathbb{R}^n\) compacto. Então \(f\) atinge um máximo e um mínimo globais em \(K\). O teorema assegura existência de extremos, mas não fornece sua localização nem critérios de unicidade.
+  - Ideia de conjunto compacto :: Intuitivamente, isso significa que o conjunto não se estende ao infinito e contém todos os seus pontos de fronteira.
 - Versor :: É o mesmo que vetor unitário. Definido em um espaço vetorial normado dotado de norma igual a um. Por consequência, o produto escalar de dois vetores unitários é equivalente ao cosseno do ângulo entre eles. Para normalizar um vetor, basta dividí-lo por sua norma.
 - Vetor normal à reta :: Dada uma equação de reta \(ax + by + c = 0\), \(\vec{n} = (a,b)\) é o vetor normal a essa reta. Dito de outro modo, o produto escalar entre (x,y) e \(\vec{n}\) é zero. Outra forma de calcular é a partir negativo do inverso da inclinação da reta tangente a essa curva (derivada). Depois, basta substituir a inclinação na equação da reta.
