@@ -13,11 +13,22 @@
 #+LATEX_HEADER: \let\oldsection\section
 #+LATEX_HEADER: \renewcommand{\section}{\clearpage\oldsection}
 #+LATEX_HEADER: \usepackage[brazil]{babel}
+#+LATEX_HEADER: \usepackage{soul}
+#+LATEX_HEADER: \usepackage{xcolor}
+#+LATEX_HEADER: \sethlcolor{yellow}
 
 
+* ETC :noexport:
 
+Avalie meu texto, sem modificá-lo, para que apresente elevado rigor matemático e econômico. Quero que destaque definições que poderiam estar mais claras ou mais precisas. Me ajude na articulação entre o encadeamento de ideias, a fluidez e a coesão do texto. Caso uma reestruturação o torne mais claro, diga. Avalie como incluir uma narrativa econômica coesa que possa tornar o texto mais bem estruturado.
 
+Quero que dê especial ênfase a potenciais erros matemáticos e econômicos.
 
+O público-alvo que lerá o texto é uma banca de um concurso público para professor doutor em economia na área de métodos quantitativos. Os membros da banca são doutores em economia e em engenharia elétrica. Não quero entrar em detalhes de engenharia elétrica, mas sim demonstrar profundo conhecimento em matemática e economia (nesta ordem).
+
+Também quero que avalie a coesão de notação ao longo da minha resposta. Quero que se atente para a consistência dos sinais e das desigualdades.
+Verifique se existem erros de interpretação matemáticos e econômicos, atentando-se para interpretações forçosas.
+Sua resposta não precisa estar em org-mode agora.
 
 * Observações :noexport:
 
@@ -38,47 +49,46 @@
 - Stewart 14.1-14.2
 - Guidorizzi Ch 08-09
 - Apêndice matemático Petri
-** Introdução
+
+** Resposta 01 :ignore:
 
 Os problemas econômicos, em sua maioria, podem ser especificados como dependentes de mais de uma variável independente.
 Este é o caso, por exemplo, da especificação da função de produção com múltiplos insumos, de funções utilidade dependentes de vários bens, de funções de custo que combinam diferentes fatores produtivos e, de forma não exaustiva, de funções de lucro que integram preços e quantidades em um único objeto analítico.
 Por esta razão, a variável econômica de interesse é modelada como função de um vetor de argumentos, e não mais de um único escalar, de modo que o aparato do cálculo diferencial e integral univariado torna-se insuficiente para capturar as interdependências entre variáveis e a geometria dos conjuntos de equilíbrio e de otimização.
 
-Surge, assim, a necessidade de ajustar o "mundo univariado" para dar conta da especificidade de funções de várias variáveis, generalizando noções fundamentais como limite e continuidade (agora formuladas em termos de bolas abertas em espaços euclidianos), desenvolvendo representações gráficas adequadas (superfícies e curvas de nível) e classificando tipos especiais de funções que preservam ou exploram estruturas algébricas relevantes.
+Surge, assim, a necessidade de ir além o "mundo univariado" para dar conta da especificidade de funções de várias variáveis, generalizando noções fundamentais como limite e continuidade (agora formuladas em termos de bolas abertas em espaços euclidianos), desenvolvendo representações gráficas adequadas (superfícies e curvas de nível) e classificando tipos especiais de funções que preservam ou exploram estruturas algébricas relevantes.
 Ao longo desta resposta, será feita a exemplificação econômica a partir da função de produção Cobb-Douglas, restringindo-se a uma abordagem marginalista sem perda de generalidade analítica para os objetivos da questão.
-A escolha desse recorte se dá pela possibilidade de discutir exemplos paradigmáticos que incluem questões como retornos à escala, substituição técnica entre fatores e, como discutido em outras partes do conteúdo programático da disciplina, propriedades de regularidade necessárias à análise de equilíbrio e de otimização.
+A escolha desse recorte se dá pela possibilidade de discutir exemplos paradigmáticos que incluem questões como retornos à escala, substituição técnica entre fatores e, como discutido em outras partes do conteúdo programático do edital, propriedades de regularidade necessárias à análise de equilíbrio e de otimização.
 
 A partir dessa perspectiva, o desenvolvimento teórico que se segue organiza-se em torno de alguns eixos centrais.
 Em primeiro lugar, descreve-se funções entre espaços euclidianos, apresentando a formulação de limites e continuidade para múltiplas variáveis.
 Em seguida, parte-se para discussão de como realizar análises de gráficos de funções de duas variáveis e de suas curvas de nível, com ênfase na interpretação econômica via isoquantas.
 Na sequência, a apresentação de tipos especiais de funções, destacando sua representação matricial quando pertinente.
 Por fim, articula-se esses elementos a partir de um exemplo numérico de modo a integrar os conceitos e ferramentas aqui discutidos.
+Ao longo da exposição, elementos de \(\mathbb{R}^{n}\) serão denotados por vetores com seta sobreescrita, como em \(\vec{x}\), enquanto quantidades escalares serão representadas sem essa notação.
 
-** Funções entre espaços euclidianos, limite e continuidade
 
-Apresenta-se, em geral, uma função de várias variáveis reais como uma aplicação \(f : D \subseteq \mathbb{R}^n \to \mathbb{R}^m\), em que \(\mathbb{R}^n\) e \(\mathbb{R}^m\) denotam os espaços euclidianos canônicos, isto é, os espaços vetoriais reais de dimensão \(n\) e \(m\) equipados com o produto interno usual e a norma euclidiana associada.
-Um ponto do domínio é um vetor \(x = (x_1,\dots,x_n)\) e a imagem é um vetor \(f(x) = (f_1(x),\dots,f_m(x))\), sendo cada componente \(f_j : D \to \mathbb{R}\) uma função escalar de \(n\) variáveis, o que permite analisar funções vetoriais por meio de suas coordenadas escalares.
+Para estabelecer uma base rigorosa, parte-se da definição central.
+Uma função de várias variáveis reais é uma aplicação \(f : D \subseteq \mathbb{R}^n \to \mathbb{R}^m\), em que \(\mathbb{R}^n\) e \(\mathbb{R}^m\) denotam os espaços euclidianos canônicos, isto é, os espaços vetoriais reais de dimensão \(n\) e \(m\) equipados com o produto interno usual e a norma euclidiana associada.
+Um ponto do domínio é um vetor \(\vec{x} = (x_1,\dots,x_n)\) e a imagem é um vetor \(f(\vec{x}) = (f_1(\vec{x}),\dots,f_m(\vec{x}))\), sendo cada componente \(f_j : D \to \mathbb{R}\) uma função escalar de \(n\) variáveis, o que permite analisar funções vetoriais por meio de suas coordenadas escalares.
+
 A estrutura euclidiana permite apresentar a noção de bola aberta, o que permite discutir limites para o espaço multivariado.
-Dito isso, para \(a \in \mathbb{R}^n\) e \(\delta > 0\), define-se a bola aberta centrada em \(a\) de raio \(\delta\) como \(B_\delta(a) = \{x \in \mathbb{R}^n : \|x - a\| < \delta\}\), que generaliza intervalos abertos unidimensionais para dimensões superiores.
-Com essa notação, o limite de uma função escalar \(f : D \subseteq \mathbb{R}^n \to \mathbb{R}\) em um ponto \(a\) é definido como \(\lim_{x \to a} f(x) = L\) se, para todo \(\varepsilon > 0\), existe \(\delta > 0\) tal que, para todo \(x \in D\) com \(0 < \|x-a\| < \delta\), tem-se \(|f(x) - L| < \varepsilon\).
-Uma condição crucial para a existência do limite é que ele deve ser único e independente do caminho de aproximação, ou seja, o valor \(L\) deve ser o mesmo qualquer que seja a direção ou trajetória pela qual \(x\) se aproxima de \(a\).
-Em outros termos, o limite deve existir e ser igual para toda sequência \((x_k)\) em \(D\) que converge para \(a\), garantindo assim que a função é bem comportada em todas as direções em torno do ponto.
-A mesma definição pode ser estendida para funções vetoriais (troca-se \(|\cdot|\) por \(||\cdot||\) em \(\mathbb{R}^{m}\))_{}, mantendo a condição de que a aproximação seja válida para todas as direções/sequências.
+Dito isso, para \(\vec{a} \in \mathbb{R}^n\) e \(\delta > 0\), define-se a bola aberta centrada em \(\vec{a}\) de raio \(\delta\) como \(B_\delta(\vec{a}) = \{\vec{x} \in \mathbb{R}^n : \|\vec{x} - \vec{a}\| < \delta\}\), que generaliza intervalos abertos unidimensionais para dimensões superiores.
+Com essa notação, o limite de uma função escalar \(f : D \subseteq \mathbb{R}^n \to \mathbb{R}\) em um ponto \(\vec{a}\) é definido como \(\lim_{\vec{x} \to \vec{a}} f(\vec{x}) = L\) se, para todo \(\varepsilon > 0\), existe \(\delta > 0\) tal que, para todo \(\vec{x} \in D\) com \(0 < \|\vec{x}-\vec{a}\| < \delta\), tem-se \(|f(\vec{x}) - L| < \varepsilon\).
+Uma condição crucial para a existência do limite é que ele deve ser único e independente do caminho de aproximação, ou seja, o valor \(L\) deve ser o mesmo qualquer que seja a direção ou trajetória pela qual \(\vec{x}\) se aproxima de \(\vec{a}\).
+Em outros termos, o limite deve existir e ser igual para toda sequência \((x_k)\) em \(D\) que converge para \(\vec{a}\), garantindo assim que a função é bem comportada em todas as direções em torno do ponto.
+A mesma definição pode ser estendida para funções vetoriais, mantendo a condição de que a aproximação seja válida para todas as direções/sequências.
 
 Em mãos da definição de limite, é possível falar de continuidade.
-Diz-se que uma função \(f : D \subseteq \mathbb{R}^n \to \mathbb{R}^m\) é contínua em um ponto \(a \in D\) se \(\lim_{x \to a} f(x) = f(a)\), isto é, se o valor de \(f\) no ponto coincide com o limite obtido pela aproximação de \(x\) a \(a\) ao longo de qualquer sequência de pontos em \(D\).
-Caso a função seja contínua para todo ponto \(a \in D\), diz-se que esta função é contínua em \(D\).
-Para funções escalares \(f : D \subseteq \mathbb{R}^n \to \mathbb{R}\), a continuidade garante que pequenas perturbações nas variáveis exógenas produzem apenas pequenas alterações nas variáveis endógenas.
-Como consequência, exclui-se saltos ou descontinuidades locais no comportamento da função.
-
+Diz-se que uma função \(f : D \subseteq \mathbb{R}^n \to \mathbb{R}^m\) é contínua em um ponto \(\vec{a} \in D\) se \(\lim_{\vec{x} \to \vec{a}} f(\vec{x}) = f(\vec{a})\), isto é, se o valor de \(f\) no ponto coincide com o limite obtido pela aproximação de \(\vec{x}\) a \(\vec{a}\) ao longo de qualquer sequência de pontos em \(D\).
+Caso a função seja contínua para todo ponto \(\vec{a} \in D\), diz-se que esta função é contínua em \(D\).
+Para funções escalares \(f : D \subseteq \mathbb{R}^n \to \mathbb{R}\), a continuidade garante que variações suficientemente pequenas nas variáveis exógenas implicam variações arbitrariamente pequenas na variável endógena, excluindo saltos locais no valor da função.
 
 Vale notar que para a maioria das aplicações em economia, assume-se que funções são contínuas em seus domínios, pois isso garante comportamento bem-comportado para toda a gama de escolhas ou tecnologias possíveis.
-No caso da Cobb-Douglas \(F(K,L) = A K^{\alpha} L^{\beta}\), com \(A>0\) e \(\alpha,\beta>0\), a continuidade decorre do fato de ser um produto de potências de funções contínuas em \(\mathbb{R}_{++}\), assegurando que variações marginais em capital (\(K\)) e trabalho (\(L\)) produzam respostas marginais bem definidas em \(Y\).
-Essa propriedade é indispensável para a utilização de derivadas parciais como medidas de produto marginal e para a formulação de condições de primeira ordem em problemas de maximização de lucro ou minimização de custo sob restrições tecnológicas.
+No caso da função Cobb-Douglas \(F(K,L) = A K^{\alpha} L^{\beta}\), com \(A>0\) e \(\alpha,\beta>0\), a continuidade decorre do fato de ser um produto de potências de funções contínuas em \(\mathbb{R}_{++}\), assegurando que variações marginais em capital (\(K\)) e trabalho (\(L\)) produzam respostas marginais bem definidas em \(Y\).
+Essa propriedade é indispensável para a utilização de derivadas parciais como medidas de produto marginal e para a formulação de condições de primeira ordem em problemas de maximização de lucro ou minimização de custo sob restrições.
 
-** Gráficos e curvas de nível
-
-Outro tema relevante é como representar funções multivariadas graficamente.
+Uma vez estabelecidas as propriedades básicas das funções multivariadas, é natural examinar como essas funções podem ser representadas e interpretadas geometricamente.
 Para funções escalares de duas variáveis \(f : D \subseteq \mathbb{R}^2 \to \mathbb{R}\), o gráfico é o conjunto \(\{(x,y,z) \in \mathbb{R}^3 : (x,y) \in D,\ z = f(x,y)\}\), que se interpreta como uma superfície no espaço tridimensional.
 A geometria dessa superfície sintetiza como o valor de \(f\) varia em resposta ao deslocamento do ponto \((x,y)\) no plano.
 Contudo, para análise qualitativa e econômica, muitas vezes é mais conveniente trabalhar com curvas de nível, definidas, para \(c \in \mathbb{R}\), como \(C_c = \{(x,y) \in D : f(x,y) = c\}\), isto é, conjuntos de pontos do domínio em que a função assume um mesmo valor.
@@ -96,38 +106,39 @@ Esta superfície reside no espaço \(\mathbb{R}^3\) cuja visualização ainda é
 No caso geral de \(n > 3\) variáveis, fala-se em hiper-superfícies de nível.
 Apesar de sua visualização direta ser impossível, essas entidades mantêm o mesmo sentido analítico.
 
+Além das propriedades topológicas e geométricas, certas funções distinguem-se por estruturas algébricas específicas que facilitam tanto a análise matemática quanto a interpretação econômica.
+É possível organizar essas funções em diferentes classes, conforme suas propriedades, partindo das estruturas mais simples em direção às mais complexas.
 
-** Tipos especiais de funções, formas quadráticas e polinômios
-
-Dentro do universo das funções de várias variáveis, certas classes especiais desempenham papéis fundamentais tanto na teoria matemática quanto nas aplicações econômicas, organizando-se segundo uma hierarquia de inclusão que parte das estruturas mais simples em direção às mais complexas.
-
-No nível mais básico encontram-se as **funções lineares** \(T : \mathbb{R}^n \to \mathbb{R}^m\), caracterizadas por preservarem a estrutura do espaço vetorial através das propriedades de aditividade \(T(x+y) = T(x) + T(y)\) e homogeneidade \(T(\lambda x) = \lambda T(x)\) para todos \(x,y \in \mathbb{R}^n\) e \(\lambda \in \mathbb{R}\).
+No nível mais básico encontram-se as funções lineares \(T : \mathbb{R}^n \to \mathbb{R}^m\), caracterizadas por preservarem a estrutura do espaço vetorial através das propriedades de aditividade \(T(x+y) = T(x) + T(y)\) e homogeneidade \(T(\lambda x) = \lambda T(x)\) para todos \(x,y \in \mathbb{R}^n\) e \(\lambda \in \mathbb{R}\).
 Uma consequência fundamental é que toda transformação linear admite representação matricial única \(T(x) = A x\), onde \(A\) é uma matriz \(m \times n\).
 Em economia, funções lineares modelam tecnologias com substituição perfeita entre insumos, como em \(F(K,L) = aK + bL\), cujas isoquantas são linhas retas refletindo taxa marginal de substituição constante.
-Generalizando esta classe, as **funções afins** da forma \(f(x) = T(x) + b\) (com \(T\) linear e \(b\) constante) incluem um termo independente, sendo úteis para representar funções de custo com componentes fixo e variável.
+Generalizando esta classe, as funções afins da forma \(f(x) = T(x) + b\) (com \(T\) linear e \(b\) constante) incluem um termo independente, sendo úteis para representar funções de custo com componentes fixo e variável.
 O gráfico de uma função afim em \(\mathbb{R}^2\) é um plano no espaço tridimensional, enquanto seu análogo em dimensões superiores constitui um hiperplano.
 
-A classe dos **polinômios em várias variáveis** engloba funções da forma \(P(x) = \sum_{|\alpha|\leq d} c_\alpha x_1^{\alpha_1} \cdots x_n^{\alpha_n}\), em que \(\alpha = (\alpha_1,\dots,\alpha_n)\) é um multi-índice de inteiros não negativos e \(d\) é o grau máximo.
+A classe dos polinômios em várias variáveis engloba funções da forma \(P(x) = \sum_{|\alpha|\leq d} c_\alpha x_1^{\alpha_1} \cdots x_n^{\alpha_n}\), em que \(\alpha = (\alpha_1,\dots,\alpha_n)\) é um multi-índice de inteiros não negativos e \(d\) é o grau máximo.
 Tanto as funções lineares quanto as afins constituem casos particulares dos polinômios de grau um.
-Dentro desta classe destacam-se as **formas quadráticas**, polinômios homogêneos de grau dois que podem ser escritos como \(Q(x) = x^\top A x\) com \(A\) simétrica \(n \times n\).
-Em duas variáveis, uma forma quadrática genérica é dada por \(Q(x,y) = a x^2 + 2b xy + c y^2\), com representação matricial que viabiliza o estudo de convexidade, definitude e propriedades geométricas por meio dos autovalores da matriz.
-Esta representação é particularmente relevante em economia ao analisar aproximações de segunda ordem de funções de produção, pois o Hessiano define uma forma quadrática que determina a natureza local do ponto e propriedades como concavidade.
+Dentro desta classe destacam-se as formas quadráticas, polinômios homogêneos de grau dois que podem ser escritos como \(Q(x) = x^\top A x\) com \(A\) simétrica \(n \times n\).
+Em duas variáveis, uma forma quadrática genérica é dada por \(Q(x,y) = a x^2 + 2b xy + c y^2\), com representação matricial que viabiliza o estudo de convexidade, definitude e propriedades geométricas por meio dos autovalores da matriz e dos menores principais.
+Esta representação é particularmente relevante em economia ao analisar aproximações de segunda ordem, pois o Hessiano define uma forma quadrática que determina a natureza local do ponto e propriedades como concavidade.
 
-Posicionando a **função Cobb-Douglas** \(F(K,L) = A K^{\alpha} L^{\beta}\) nesta hierarquia a título de exemplo, observa-se que ela **não** pertence estritamente a nenhuma das classes mencionadas, exceto no caso particular em que \(\alpha\) e \(\beta\) são inteiros não negativos — condição rara em aplicações econômicas onde os expoentes são geralmente números reais positivos.
-Com expoentes reais, a Cobb-Douglas é uma função transcendente que apenas compartilha certas propriedades com polinômios homogêneos.
-Vale notar que, quando \(\alpha\) e \(\beta\) são inteiros maiores que zero, a Cobb-Douglas pode ser um polinômio, mas isso geralmente implica em retornos não constantes à escala, já que a soma \(\alpha + \beta\) seria um inteiro maior ou igual a 2 no caso mais simples, caracterizando retornos crescentes à escala.
+A função Cobb-Douglas \(F(K,L) = A K^{\alpha} L^{\beta}\) não pertence, em geral, às classes de funções polinomiais ou quadráticas, pois seus expoentes são tipicamente números reais positivos.
+Trata-se, portanto, de uma função não polinomial, ainda que suave em seu domínio natural, que compartilha com os polinômios homogêneos propriedades estruturais relevantes, como a homogeneidade.
+Apenas em casos particulares, quando os expoentes são inteiros não negativos, a Cobb-Douglas se reduz a um polinômio, o que, contudo, não é típico em aplicações econômicas.
+Este caso atípico em que \(\alpha, \beta \geq 1\), caracteriza uma função de produção com retornos crescentes à escala.
 
-Distinta das classificações algébricas, a **homogeneidade** é uma propriedade que certas funções podem exibir independentemente de sua classe.
-Uma função \(f : \mathbb{R}^n_{+} \to \mathbb{R}\) é homogênea de grau \(r\) se satisfaz \(f(tx) = t^r f(x)\) para todo \(t > 0\) e todo \(x\) em seu domínio.
-Esta propriedade manifesta-se transversalmente: funções lineares são homogêneas de grau 1, formas quadráticas puras são homogêneas de grau 2, e a Cobb-Douglas é homogênea de grau \(r = \alpha + \beta\).
-Na Cobb-Douglas, a homogeneidade conecta-se diretamente ao conceito econômico de retornos à escala: \(r = 1\) corresponde a retornos constantes, \(r > 1\) a retornos crescentes, e \(r < 1\) a retornos decrescentes.
-Esta propriedade permite que a Cobb-Douglas herde ferramentas analíticas desenvolvidas para funções homogêneas em geral, como o teorema de Euler que relaciona uma função homogênea com suas derivadas parciais.
+Para além das classificações algébricas, algumas propriedades funcionais são transversais a diferentes classes de funções e possuem interpretação econômica direta.
+Uma função \(f : \mathbb{R}^n \to \mathbb{R}\) é homogênea de grau \(r\) se satisfaz \(f(tx) = t^r f(x)\) para todo \(t > 0\) e todo \(x\) em seu domínio.
+Em aplicações econômicas, usualmente considera-se \(D \subseteq \mathbb{R}^n_{+} \to \mathbb{R}\), refletindo a não negatividade dos argumentos.
+Esta propriedade manifesta-se nos tipos especiais de funções discutidas.
+Funções lineares, por exemplo, são homogêneas de grau 1; formas quadráticas puras são homogêneas de grau 2, e a Cobb-Douglas é homogênea de grau \(r = \alpha + \beta\).
+Na Cobb-Douglas, a homogeneidade conecta-se diretamente ao conceito econômico de retornos à escala em que \(r = 1\) corresponde a retornos constantes, \(r > 1\) a retornos crescentes, e \(r < 1\) a retornos decrescentes.
+Esta propriedade permite que a Cobb-Douglas herde ferramentas analíticas desenvolvidas para funções homogêneas, como o teorema de Euler para funções homogêneas.
+Esse teorema relaciona a função às suas derivadas parciais e fundamenta o resultado de exaustão do produto pela remuneração dos fatores sob retornos constantes à escala.
 
-Uma implicação importante desta estrutura é que todas as funções mencionadas — lineares, afins, polinomiais e a Cobb-Douglas em seu domínio — são **globalmente contínuas** em seus domínios naturais.
+Uma implicação importante desta estrutura é que todas as funções mencionadas são globalmente contínuas em seus domínios naturais.
 Para a Cobb-Douglas especificamente, a continuidade em \(\mathbb{R}^2_{++}\) decorre de ser composição de funções contínuas, garantindo que variações marginais em insumos produzam respostas marginais bem definidas no produto.
 Esta propriedade é indispensável para definir conceitos como produto marginal via derivadas parciais e para formular problemas de otimização com condições de primeira ordem bem comportadas, completando assim o arcabouço analítico necessário para a modelagem econômica com funções de várias variáveis.
 
-** Exemplo numérico
 
 De modo a consolidar e fixar os conceitos anteriores, apresenta-se um exemplo numérico.
 Considere a função de produção Cobb-Douglas \(F(K,L) = K^{0.5} L^{0.5}\), que é homogênea de grau \(0.5+0.5 = 1\) e, portanto, exibe retornos constantes à escala.
@@ -135,12 +146,11 @@ Para um par de insumos \((K,L) = (4,9)\), obtém-se
 \[
 F(4,9) = 4^{0.5} \cdot 9^{0.5} = 2 \cdot 3 = 6,
 \]
-de modo que 4 unidades de capital e 9 de trabalho geram 6 unidades de produto em unidades arbitrárias.
+de modo que 4 unidades de capital e 9 de trabalho geram 6 unidades de produto.
 Se ambos os insumos forem escalados por um fator \(t=2\), isto é, \((K',L') = (8,18)\), então
 \[
-F(8,18) = 8^{0.5} \cdot 18^{0.5} = (2\sqrt{2}) \cdot 3\sqrt{2} = 2\cdot 6 = 12,
+F(8,18) = 8^{0.5} \cdot 18^{0.5} = (2\sqrt{2}) \cdot 3\sqrt{2} = 6\cdot 2 = 12,
 \]
-
 que é exatamente o dobro do produto original, ilustrando numericamente a propriedade de retornos constantes à escala.
 As isoquantas dessa tecnologia são dadas por \(K^{0.5} L^{0.5} = Y\), ou, equivalentemente,
 \[
@@ -149,13 +159,11 @@ L = \frac{Y^2}{K},
 de modo que, para \(Y=6\), a isoquanta é o conjunto \(\{(K,L) : L = 36/K\}\), que contém, por exemplo, os pontos \((4,9)\) e \((9,4)\).
 Esses pares de insumos representam combinações alternativas de capital e trabalho que produzem o mesmo nível de produto, evidenciando a substituibilidade entre fatores e a estrutura de curvas de nível da função de produção.
 
-** Conclusão
-
 Em síntese, a formulação de funções de várias variáveis como aplicações entre espaços euclidianos, ancorada na definição de limite e continuidade, fornece o fundamento conceitual para o estudo rigoroso de superfícies, curvas de nível e propriedades de regularidade.
-As classes especiais de funções, quando analisadas por meio de representações matriciais, permitem caracterizar de forma precisa a estrutura local e global da função, com exemplo para a função Cobb-Douglas como exemplo central que, embora não pertença estritamente às classes de polinômios ou formas quadráticas, integra homogeneidade, retornos à escala e comportamento geométrico bem-comportado em uma estrutura funcional que tem se mostrado extremamente útil para modelagem econômica.
+As classes especiais de funções não são relevantes apenas por sua forma algébrica, mas porque determinam propriedades locais (como curvatura e diferenciabilidade) e globais (como homogeneidade e convexidade) fundamentais para análise econômica.
 Cabe pontuar que a aplicação de funções de várias variáveis não se restringem à teoria da firma ou à teoria do consumidor e, menos ainda, ao paradigma marginalista.
 Os exemplos acima apresentados foram utilizados para auxiliar na explicitação econômica de elementos matemáticos.
-
+Dessa forma, os conceitos de funções multivariadas, limites, continuidade e propriedades estruturais não constituem apenas formalismos matemáticos, mas instrumentos centrais capazes de acomodar diferentes contextos econômicos e traduzí-los em objetos analiticamente tratáveis.
 
 
 
@@ -291,48 +299,47 @@ Os exemplos acima apresentados foram utilizados para auxiliar na explicitação 
 
 ** Resposta 02 :ignore:
 
-*** Introdução
 
 Grande parte da análise em estática comparativa em economia consiste em estudar como o valor de uma variável endógena de equilíbrio responde a pequenas variações nos parâmetros ou variáveis exógenas.
 Em situações com múltiplas variáveis de decisão ou de estado, esse efeito total não pode ser descrito apenas por derivadas univariadas, pois alterações em um parâmetro se propagam por diversos canais que interagem entre si, como na propagação de choques em modelos de equilíbrio geral competitivo.
-
 Nesses casos, a variável de interesse é modelada por funções de várias variáveis reais (\(f : D \subseteq \mathbb{R}^n \to \mathbb{R}^m\), comumente com \(m = 1\)), e o conceito de derivada total fornece o instrumento adequado para capturar a taxa de variação de equilíbrio em relação a uma variável de estado, incorporando simultaneamente todas as dependências funcionais relevantes.
 Neste ponto, cabe distinguir as derivadas parciais das derivadas totais.
-Enquanto as derivadas parciais medem efeitos marginais “ceteris paribus”, a derivada total agrega os efeitos combinados de variações simultâneas em múltiplos argumentos.
+Enquanto as derivadas parciais medem efeitos marginais "ceteris paribus", a derivada total agrega os efeitos combinados de variações simultâneas em múltiplos argumentos.
 
-Neste texto, a exemplificação será realizada utilizando a função de produção do tipo Cobb-Douglas.
-Dessa forma, os conceitos discutidos podem ser apresentados de maneira sucinta e sem perda de generalidade, em consonância com os objetivos analíticos propostos.
-Além disso, a função Cobb-Douglas é amplamente utilizada em modelos de equilíbrio geral para analisar a propagação de choques e a interação entre mercados, servindo como referência canônica contra a qual outras tecnologias, como a função de Leontief com complementaridade perfeita, podem ser comparadas.
-Embora tais exemplos não abordem diretamente todos os tópicos da questão, sua compreensão depende dos conceitos que serão descritos a seguir, como derivadas parciais, diferencial total, plano tangente e aproximação linear, todos fundamentais para a análise em estática comparativa.
+
+
+Para organizar a exposição, procede-se da seguinte forma.
+Primeiro, apresentam-se as noções de derivada parcial, derivada total e diferencial total no contexto de funções reais de várias variáveis.
+Em seguida, discute-se a interpretação geométrica desses conceitos por meio de planos e hiperplanos tangentes.
+Por fim, tais instrumentos são aplicados à função de produção Cobb–Douglas, de modo a ilustrar sua utilização em exercícios de estática comparativa.
 Para evitar ambiguidades, o termo derivada total refere-se ao operador linear que descreve a sensibilidade local de uma função em relação aos seus argumentos, enquanto o termo diferencial total indica a variação aproximada do valor da função decorrente de pequenas mudanças exógenas e simultâneas em seus argumentos.
+Ao longo da exposição, elementos de \(\mathbb{R}^{n}\) serão denotados por vetores com seta sobreescrita, como em \(\vec{x}\), enquanto quantidades escalares serão representadas sem essa notação.
 
-*** Derivadas parciais e derivada total: leitura econômica marginalista
-
-Começando pelo ente matemático mais simples, considere uma função escalar \(f : D \subseteq \mathbb{R}^n \to \mathbb{R}\), em que o vetor \(x = (x_1,\dots,x_n)\) representa variáveis exógenas que influenciam uma variável endógena de interesse \(y = f(x)\).
-A derivada parcial de \(f\) em relação à coordenada \(x_i\) em um ponto \(a = (a_1,\dots,a_n)\) é definida, quando existir, por
-\[f_{x_i}(a) = \lim_{h \to 0} \frac{f(a_1,\dots,a_i + h,\dots,a_n) - f(a_1,\dots,a_i,\dots,a_n)}{h}, \]
+Começando pelo ente matemático mais simples, considere uma função escalar \(f : D \subseteq \mathbb{R}^n \to \mathbb{R}\), em que o vetor \(\vec{x} = (x_1,\dots,x_n)\) representa variáveis exógenas que influenciam uma variável endógena de interesse \(y = f(\vec{x})\).
+A derivada parcial de \(f\) em relação à coordenada \(x_i\) em um ponto \(\vec{a} = (a_1,\dots,a_n)\) é definida, quando existir, por
+\[f_{x_i}(\vec{a}) = \lim_{h \to 0} \frac{f(a_1,\dots,a_i + h,\dots,a_n) - f(a_1,\dots,a_i,\dots,a_n)}{\vec{h}}, \]
 mantendo-se constantes as demais variáveis.
-Do ponto de vista de estática comparativa, \(f_{x_i}(a)\) mede a taxa de variação instantânea de \(y\) em resposta a um pequeno aumento em \(x_i\), mantendo-se constantes os demais argumentos.
-Do ponto de vista econômico, sua interpretação como efeito ceteris paribus pressupõe que tais variações sejam admissíveis na estrutura do modelo.
+Do ponto de vista de estática comparativa, \(f_{x_i}(\vec{a})\) mede a taxa de variação instantânea de \(y\) em resposta a um pequeno aumento em \(x_i\), mantendo-se constantes os demais argumentos.
+Do ponto de vista econômico, sua interpretação como efeito /ceteris paribus/ pressupõe que tais variações sejam admissíveis na estrutura do modelo.
 
-É importante notar que a mera existência de derivadas parciais não garante a diferenciabilidade da função.
-Existem exemplos clássicos de funções em \(\mathbb{R}^2\) cujas derivadas parciais existem em um ponto, mas cuja aproximação linear por um plano não é adequada, de modo que a função não é diferenciável naquele ponto.
-Por outro lado, certas técnicas produtivas com complementaridade perfeita entre seus insumos, como a função de Leontief, ilustram uma situação ainda mais irregular, uma vez que as derivadas parciais não existem nos pontos de canto, embora da função seja contínua.
+A distinção entre esses conceitos torna-se particularmente relevante quando se passa da análise marginal isolada para a estrutura local da função como um todo.
+A existência de derivadas parciais em um ponto não é condição suficiente para a diferenciabilidade, pois a diferenciabilidade exige que a função seja localmente bem aproximada por uma aplicação linear, o que pode falhar mesmo quando as derivadas parciais estão bem definidas.
+Em economia, surgem situações ainda mais extremas, como técnicas produtivas com complementaridade perfeita entre insumos, representadas por funções do tipo Leontief, nas quais a não diferenciabilidade decorre da presença de quinas, com inexistência de derivadas parciais em pontos de canto.
 Essa característica evidencia os ganhos de se utilizar uma função do tipo Cobb-Douglas para exemplificar os conceitos aqui descritos.
 
-Quando todas as derivadas parciais \(f_{x_i}\) existem em uma vizinhança de \(a\) e são contínuas em \(a\), diz-se que \(f\) é de classe \(C^1\) em \(a\), o que é suficiente para garantir que \(f\) seja diferenciável em \(a\).
-A diferenciabilidade significa que existe uma aplicação linear \(L : \mathbb{R}^n \to \mathbb{R}\) tal que, para incrementos pequenos \(h\),
-\[f(a + h) = f(a) + L(h) + o(|h|), \]
-com \(o(|h|)/|h| \to 0\) quando \(h \to 0\).
+Quando todas as derivadas parciais \(f_{x_i}\) existem em uma vizinhança de \(\vec{a}\) e são contínuas em \(\vec{a}\), diz-se que \(f\) é de classe \(C^1\) em \(\vec{a}\), o que é suficiente para garantir que \(f\) seja diferenciável em \(\vec{a}\).
+A diferenciabilidade significa que existe uma aplicação linear \(L : \mathbb{R}^n \to \mathbb{R}\) tal que, para incrementos pequenos \(\vec{h}\),
+\[f(\vec{a} + \vec{h}) = f(\vec{a}) + L(\vec{h}) + o(|\vec{h}|), \]
+com \(o(|\vec{h}|)/|\vec{h}| \to 0\) quando \(\vec{h} \to 0\).
 Essa aplicação linear é dada por
-\[L(h) = \nabla f(a)\cdot h = \sum_{i=1}^n f_{x_i}(a), h_i, \]
-em que \(\nabla f(a) = (f_{x_1}(a),\dots,f_{x_n}(a))\) é o vetor gradiente, definido pelas derivadas parciais em termos de cada variável exógena.
+\[L(\vec{h}) = \nabla f(\vec{a})\cdot \vec{h} = \sum_{i=1}^n f_{x_i}(\vec{a})\cdot h_i, \]
+em que \(\nabla f(\vec{a}) = (f_{x_1}(\vec{a}),\dots,f_{x_n}(\vec{a}))\) é o vetor gradiente, definido pelas derivadas parciais em termos de cada variável exógena.
 
-Define-se, nesse contexto, o diferencial total de \(f\) em \(a\) como a forma linear
-\[df(a) = \sum_{i=1}^n f_{x_i}(a), dx_i, \]
+Define-se, nesse contexto, o diferencial total de \(f\) em \(\vec{a}\) como a forma linear
+\[df(\vec{a}) = \sum_{i=1}^n f_{x_i}(\vec{a})\cdot dx_i, \]
 onde \(dx_i\) representa um incremento infinitesimal em \(x_i\).
-Para incrementos pequenos \(h=(dx_1,\dots,dx_n)\), a variação de \(f\) é aproximada por
-\[f(a + h) - f(a) \approx df(a) = \sum_{i=1}^n f_{x_i}(a), dx_i, \]
+Para incrementos pequenos \(\vec{h}=(dx_1,\dots,dx_n)\), a variação de \(f\) é aproximada por
+\[f(\vec{a} + \vec{h}) - f(\vec{a}) \approx df(\vec{a}) = \sum_{i=1}^n f_{x_i}(\vec{a})\cdot dx_i, \]
 fornecendo uma decomposição de primeira ordem do efeito total de pequenas variações simultâneas nas variáveis explicativas.
 
 No caso da função de produção Cobb-Douglas de dois fatores,
@@ -341,50 +348,46 @@ as derivadas parciais em \((K_0,L_0)\) são
 \[F_{K}(K_0,L_0) = A \alpha K_0^{\alpha - 1} L_0^{1-\alpha}, \quad F_{L}(K_0,L_0) = A (1-\alpha) K_0^{\alpha} L_0^{-\alpha}, \]
 interpretadas como produto marginal do capital e do trabalho, respectivamente.
 O diferencial total em \((K_0,L_0)\) é
-\[dY = F_{K}(K_0,L_0), dK + F_{L}(K_0,L_0), dL, \]
+\[dY = F_{K}(K_0,L_0)\cdot dK + F_{L}(K_0,L_0)\cdot dL, \]
 que exprime a variação aproximada da produção em resposta a pequenas alterações simultâneas nos níveis de capital e trabalho.
 As elasticidades de produção em relação a \(K\) e \(L\) são dadas, respectivamente, por \(\alpha\) e \(1-\alpha\), o que reforça a interpretação dos expoentes como medidas de sensibilidade proporcional da produção aos insumos.
 Sob hipóteses usuais de concorrência perfeita e retornos constantes à escala, \(\alpha\) e \(1-\alpha\) coincidem com as participações de cada um dos fatores na renda, podendo ser interpretados como a contribuição relativa de cada insumo para o produto agregado.
 Por se tratar de uma função homogênea de grau 1, é possível utilizar o Teorema de Euler para funções homogêneas para verificar que as contribuições dos fatores exaurem o valor do produto.
 
-*** Interpretação geométrica: plano tangente e qualidade da aproximação
-
+Esses conceitos admitem ainda uma interpretação geométrica particularmente clara no caso bidimensional.
 No caso de duas variáveis, \(f : D \subseteq \mathbb{R}^2 \to \mathbb{R}\), a interpretação geométrica do diferencial total se dá em termos do plano tangente ao gráfico de \(f\) em um ponto \((x_0,y_0)\) onde a função é diferenciável.
 O gráfico de \(f\) é a superfície \({(x,y,z) : z = f(x,y)}\) em \(\mathbb{R}^3\), e a existência de derivadas parciais contínuas em uma vizinhança de \((x_0,y_0)\) garante a existência de um plano que aproxima bem essa superfície na vizinhança de \((x_0,y_0,f(x_0,y_0))\).
-
-A equação do plano tangente é
-\[z - f(x_0,y_0) = f_{x}(x_0,y_0),(x - x_0) + f_{y}(x_0,y_0),(y - y_0). \]
-Para \((x,y)\) próximo de ((x_0,y_0)), obtém-se a aproximação linear
-\[f(x,y) \approx f(x_0,y_0) + f_{x}(x_0,y_0),(x - x_0) + f_{y}(x_0,y_0),(y - y_0), \]
+Nesses termos, a equação do plano tangente é
+\[z - f(x_0,y_0) = f_{x}(x_0,y_0)\cdot(x - x_0) + f_{y}(x_0,y_0)\cdot(y - y_0). \]
+Para \((x,y)\) próximo de \((x_0,y_0)\), obtém-se a aproximação linear
+\[f(x,y) \approx f(x_0,y_0) + f_{x}(x_0,y_0)\cdot(x - x_0) + f_{y}(x_0,y_0)\cdot(y - y_0), \]
 em que o erro dessa aproximação tende a zero quando \((x,y)\to(x_0,y_0)\).
 Um vetor normal ao plano tangente é dado por \((f_{x}(x_0,y_0),f_{y}(x_0,y_0),-1)\), sendo a expressão afim da aplicação linear associada ao diferencial total em \((x_0,y_0)\).
 
 É essencial distinguir entre a mera existência de derivadas parciais e a diferenciabilidade.
 Mesmo que \(f_{x}(x_0,y_0)\) e \(f_{y}(x_0,y_0)\) existam, o plano acima pode não ser uma boa aproximação do gráfico na vizinhança, caso o termo de erro não seja assintoticamente pequeno em relação ao incremento.
 Somente quando \(f\) é diferenciável em \((x_0,y_0)\) o plano é verdadeiramente tangente e o diferencial total fornece uma aproximação linear robusta, condição para a validade de análises comparativas baseadas em variações marginais.
-No caso da função Cobb-Douglas, o plano tangente em \((K_0,L_0)\) traduz, de maneira geométrica, a combinação linear dos produtos marginais \(F_{K}(K_0,L_0)) e (F_{L}(K_0,L_0)\) como a aproximação da variação da produção para pequenas mudanças simultâneas em capital e trabalho.
+No caso da função Cobb-Douglas, o plano tangente em \((K_0,L_0)\) traduz, de maneira geométrica, a combinação linear dos produtos marginais \(F_{K}(K_0,L_0)\) e \(F_{L}(K_0,L_0)\) como a aproximação da variação da produção para pequenas mudanças simultâneas em capital e trabalho.
 
-*** Generalização para mais variáveis: gradiente e hiperplano tangente
 
 O raciocínio desenvolvido para o caso de duas variáveis estende-se diretamente a funções definidas em $\mathbb{R}^n$, sem a introdução de novos elementos conceituais.
-Nesse contexto, a derivada total de $f$ em um ponto $a \in D$ é o operador linear que associa a cada vetor de variações $h \in \mathbb{R}^n$ a taxa de variação local correspondente da função, sendo definida por
-\[Df(a)[h] = \nabla f(a)\cdot h = \sum_{i=1}^n f_{x_i}(a), h_i, \]
-em que $\nabla f(a)$ denota o gradiente avaliado no ponto de referência.
+Nesse contexto, a derivada total de $f$ em um ponto $\vec{a} \in D$ é o operador linear que associa a cada vetor de variações $\vec{h} \in \mathbb{R}^n$ a taxa de variação local correspondente da função, sendo definida por
+\[Df(\vec{a})[\vec{h}] = \nabla f(\vec{a})\cdot \vec{h} = \sum_{i=1}^n f_{x_i}(\vec{a})\cdot h_i, \]
+em que $\nabla f(\vec(a))$ denota o gradiente avaliado no ponto de referência \(\vec{a}\).
 
-Ao identificar o vetor $h$ com incrementos efetivos nas variáveis exógenas do modelo, isto é, $h = (dx_1,\dots,dx_n)$, obtém-se o diferencial total de $f$ em $a$,
-\[df(a) = \sum_{i=1}^n f_{x_i}(a), dx_i, \]
+Ao identificar o vetor $\vec{h}$ com incrementos efetivos nas variáveis exógenas do modelo, isto é, $\vec{h} = (dx_1,\dots,dx_n)$, obtém-se o diferencial total de $f$ em $\vec{a}$,
+\[df(\vec{a}) = \sum_{i=1}^n f_{x_i}(\vec{a})\cdot dx_i, \]
 o qual fornece uma aproximação de primeira ordem para a variação da variável endógena em resposta a pequenas mudanças simultâneas nos argumentos da função.
 Dessa forma, enquanto a derivada total expressa a estrutura local de sensibilidade da função, o diferencial total traduz essa estrutura em uma medida operacional do efeito agregado de choques ou variações exógenas nas variáveis explicativas.
 
-Do ponto de vista geométrico, o gráfico de $f$ é um subconjunto de $\mathbb{R}^{n+1}$, e a diferenciabilidade em $a$ assegura a existência de um hiperplano tangente que fornece a melhor aproximação afim do gráfico na vizinhança do ponto $(a,f(a))$.
+Essa intuição geométrica estende-se naturalmente ao caso de dimensão superior.
+Do ponto de vista geométrico, o gráfico de $f$ é um subconjunto de $\mathbb{R}^{n+1}$, e a diferenciabilidade em $\vec{a}$ assegura a existência de um hiperplano tangente que fornece a melhor aproximação afim do gráfico na vizinhança do ponto $(\vec{a},f(\vec{a}))$.
 A equação desse hiperplano é
-\[z - f(a) = \sum_{i=1}^n f_{x_i}(a),(x_i - a_i). \]
-
+\[z - f(\vec{a}) = \sum_{i=1}^n f_{x_i}(\vec{a}),(x_i - a_i). \]
+Essa formulação fornece a ponte conceitual entre a descrição analítica da derivada total e sua interpretação geométrica como hiperplano tangente.
 O gradiente sintetiza as derivadas parciais em cada direção coordenada, enquanto o hiperplano tangente expressa, em termos geométricos, a ideia de que a função é localmente bem aproximada por uma expressão linear em termos das variáveis exógenas.
 
-*** Exemplo numérico: efeito total em Cobb-Douglas via diferenciais
-
-Para evidenciar a aplicabilidade dos conceitos agora descritos, considere diretamente a função de produção Cobb–Douglas no caso particular
+Para tornar essa interpretação operacional, retoma-se agora o exemplo da função de produção Cobb–Douglas no caso particular
 \[F(K,L) = K^{\tfrac{1}{2}} L^{\tfrac{1}{2}}, \]
 que corresponde a \(\alpha = 1/2\) e implica retornos constantes à escala.
 A função é inicialmente avaliada em \((K_0,L_0) = (9,16)\).
@@ -399,28 +402,28 @@ Avaliando em \((9,16)\), obtém-se
 \[F_L(9,16) = \tfrac{1}{2}\cdot 9^{\tfrac{1}{2}}\cdot 16^{-\tfrac{1}{2}} = \tfrac{1}{2}\cdot 3\cdot \tfrac{1}{4} = \tfrac{3}{8}. \]
 
 O diferencial total da produção em \((9,16)\) é, portanto,
-\[dY = F_K(9,16), dK + F_L(9,16), dL = \tfrac{2}{3}, dK + \tfrac{3}{8}, dL. \]
+\begin{align*}
+dY & = F_K(9,16)\cdot dK + F_L(9,16)\cdot dL \\
+ & = \frac{2}{3}\cdot dK + \frac{3}{8}\cdot dL
+\end{align*}
 
 Suponha, em um experimento de estática comparativa, que o capital e o trabalho aumentem em uma unidade, isto é, \(\Delta K = 1\) e \(\Delta L = 1\).
 Identificando \(dK \approx \Delta K\) e \(dL \approx \Delta L\), a variação aproximada de primeira ordem da produção é
-\[\Delta Y \approx \tfrac{2}{3}\cdot 1 + \tfrac{3}{8}\cdot 1 = \tfrac{25}{24}. \]
+\[\Delta Y \approx \frac{2}{3}\cdot 1 + \frac{3}{8}\cdot 1 = \tfrac{25}{24} \]
 
 Assim, o novo nível de produção é aproximadamente
-\[Y \approx Y_0 + \Delta Y = 12 + \tfrac{25}{24}. \]
+\[Y \approx Y_0 + \Delta Y = 12 + \frac{25}{24}. \]
 Esse valor é bastante próximo do nível exato
-\[F(10,17) = \sqrt{170}, \]
-mostrando que o diferencial total fornece uma aproximação simples e computável manualmente para a variação do produto em torno do ponto de referência.
+\[F(10,17) = \sqrt{170}\]
+mostrando que o diferencial total fornece uma boa aproximação para a variação do produto em torno do ponto de referência.
 
 Nesse exemplo, o efeito total das variações conjuntas em \(K\) e \(L\) é obtido como a combinação linear dos produtos marginais, ponderados pelos incrementos dos fatores.
-Essa decomposição explicita, em termos diferenciais, como a estática comparativa pode ser operacionalizada de forma transparente e sem recorrer a cálculos numéricos complexos.
+Essa decomposição mostra explicitamente como a estática comparativa transforma variações simultâneas em múltiplas dimensões em um problema linear local, tornando operacional a análise de choques em modelos econômicos de maior complexidade.
 
-*** Considerações finais
-
-A derivada total em funções de várias variáveis oferece um quadro matemático robusto para analisar problemas de estática comparativa em que variáveis endógenas dependem simultaneamente de múltiplos argumentos.
-Do ponto de vista formal, a noção de gradiente, diferencial total e plano ou hiperplano tangente cristaliza a ideia de aproximação linear local, permitindo traduzir variações pequenas em insumos, preços ou parâmetros em variações correspondentes na produção, utilidade, custo, lucro ou renda, com controle explícito sobre o erro de aproximação.
-Com o intuito de fixar o que foi descrito, mostrou-se que a função de produção Cobb-Douglas exemplifica como se articulam, na análise de produtos marginais, a função de produção, as derivadas parciais \(F_{K}\) e \(F_{L}\), o diferencial total \(dY\) e a linearização em torno de um ponto, bem como os retornos à escala e os efeitos agregados de choques.
+Em síntese, a derivada total em funções de várias variáveis oferece um quadro matemático robusto para analisar problemas de estática comparativa em que variáveis endógenas dependem simultaneamente de múltiplos argumentos.
+Do ponto de vista formal, a noção de gradiente, diferencial total e plano ou hiperplano tangente cristaliza a ideia de aproximação linear local, permitindo traduzir variações pequenas nos argumentos da função com controle explícito sobre o erro de aproximação.
+Com o intuito de fixar o que foi descrito, utilizou-se a função de produção Cobb-Douglas.
 Apesar de sintético, o exemplo aqui apresentado pode ser generalizado para situações-problema mais complexas, como é o caso de modelos de equilíbrio geral, em que a análise da propagação de choques exógenos desempenha um papel fundamental.
-Vale notar que o instrumental aqui apresentado não se restringe à tradição marginalista, podendo ser facilmente aplicado em contextos heterodoxos, como, por exemplo, em modelos SFC, ABM, Insumo-Produto, entre outros.
 Embora frequentemente apresentado no contexto da teoria marginalista, o instrumental de derivadas parciais, diferenciais totais e aproximações lineares é matematicamente geral, podendo ser utilizado como ferramenta analítica em diferentes tradições e classes de modelos econômicos, incluindo modelos Stock-Flow Consistent, modelos baseados em agentes e modelos Insumo-Produto, sempre que se analisem variações locais em torno de um estado de referência.
 
 * Regra da cadeia
@@ -556,12 +559,11 @@ Esse é precisamente o tipo de raciocínio necessário em estática comparativa 
 
 ** Resposta 03 :ignore:
 
-*** Introdução
 
 Em modelos econômicos teóricos e aplicados, frequentemente busca-se compreender como uma variável endógena de interesse responde a variações em parâmetros exógenos ou a mudanças nas condições de contorno.
-Em contextos univariados, a derivada ordinária fornece uma resposta completa.
-No entanto, ambientes economicamente relevantes são intrinsecamente multivariados.
-A análise, portanto, não se limita a perturbações isoladas em uma única direção coordenada, mas envolve deslocamentos coordenados de múltiplos argumentos ao longo de trajetórias definidas por relações estruturais, tais como leis de movimento, identidades contábeis ou condições de equilíbrio.
+Em contextos univariados, a derivada ordinária fornece uma resposta completa para este problema.
+No entanto, questões economicamente relevantes são intrinsecamente multivariadas.
+A análise, portanto, não se limita a perturbações isoladas em uma única direção coordenada, mas envolve deslocamentos de múltiplos argumentos ao longo de trajetórias definidas por relações estruturais, tais como leis de movimento, identidades contábeis ou condições de equilíbrio.
 
 O cálculo diferencial de funções de várias variáveis fornece o arcabouço formal para este estudo.
 Dentro deste arcabouço, as derivadas parciais caracterizam a sensibilidade da função a variações em cada argumento individual, mantendo os demais constantes.
@@ -569,21 +571,20 @@ Geometricamente, elas medem taxas de variação ao longo de direções paralelas
 Contudo, para capturar o ajuste simultâneo de variáveis interdependentes, é necessário estudar o comportamento da função ao longo de curvas parametrizadas arbitrárias em seu domínio.
 
 O objetivo deste texto é construir, com rigor matemático, a ponte entre esses conceitos.
-Primeiramente, definimos formalmente curvas parametrizadas, vetores tangentes e o conceito de regularidade.
-Em seguida, demonstramos como a regra da cadeia pode ser elegantemente expressa como um produto escalar entre o gradiente da função e o vetor tangente à curva, fornecendo a taxa de variação da função ao longo de qualquer trajetória diferenciável.
-Para ilustrar a aplicação econômica deste formalismo, desenvolvemos um exemplo completo utilizando uma função de produção Cobb-Douglas, onde os insumos capital e trabalho são modelados como funções da taxa de juros e do tempo.
-A simplicidade algébrica do exemplo permite um tratamento manual claro, enquanto sua estrutura revela a decomposição de efeitos totais em contribuições marginais.
-Finalmente, posicionamos este instrumental como fundamento para técnicas analíticas mais avançadas, com destaque para o teorema da função implícita, essencial para a análise de estática comparativa em sistemas de equações que surgem em modelos microeconômicos, macroeconômicos e de equilíbrio geral.
+Primeiramente, define-se formalmente curvas parametrizadas, vetores tangentes e o conceito de regularidade.
+Em seguida, demonstra-se como a regra da cadeia pode ser expressa como um produto escalar entre o gradiente da função e o vetor tangente à curva, fornecendo a taxa de variação da função ao longo de qualquer trajetória diferenciável.
+Para ilustrar a aplicação econômica deste formalismo, desenvolve-se um exemplo completo utilizando uma função de produção Cobb-Douglas, onde os insumos capital e trabalho são modelados como funções da taxa de juros e do tempo.
+A simplicidade algébrica do exemplo permite explicitar os conceitos aqui discutidos.
+Finalmente, posiciona-se este instrumental como fundamento para técnicas analíticas mais avançadas, com destaque para o teorema da função implícita, essencial para a análise de estática comparativa.
 
-*** Curvas parametrizadas, vetor tangente e curvas regulares
-
-Para estabelecer uma base rigorosa, partimos da definição central.
+Para estabelecer uma base rigorosa, parte-se da definição central.
 Uma curva parametrizada em \(\mathbb{R}^n\) é uma função vetorial \(\gamma : I \to \mathbb{R}^n\), definida em um intervalo aberto \(I \subseteq \mathbb{R}\), dada por \(\gamma(t) = ( \gamma_1(t), \gamma_2(t), \dots, \gamma_n(t) )\), onde cada componente \(\gamma_j : I \to \mathbb{R}\) é uma função real.
-O parâmetro \(t \in I\) é frequentemente interpretado como tempo.
+Em aplicações econômicas, o parâmetro \(t \in I\) é frequentemente interpretado como tempo.
 
+A partir dessa definição, pode-se introduzir a noção de variação local da trajetória, fundamental para caracterizar deslocamentos ao longo do domínio da função.
 A noção de diferenciabilidade da curva é herdada da diferenciabilidade de suas componentes.
 Diz-se que a curva \(\gamma\) é diferenciável no ponto \(t_0 \in I\) se cada função componente \(\gamma_j\) é diferenciável em \(t_0\).
-Nesse caso, o vetor tangente a \(\gamma\) em \(t_0\) é definido por \(\gamma'(t_0) = ( \gamma_1'(t_0), \gamma_2'(t_0), \dots, \gamma_n'(t_0) ) \in \mathbb{R}^n\).
+Nesse caso, o vetor tangente a \(\gamma\) em \(t_0\) é definido por \(\gamma\prime(t_0) = ( \gamma_1\prime(t_0), \gamma_2\prime(t_0), \dots, \gamma_n\prime(t_0) ) \in \mathbb{R}^n\).
 
 A interpretação geométrica do vetor tangente surge do limite do vetor secante.
 Para \(h\) suficientemente pequeno, a razão \((\gamma(t_0 + h) - \gamma(t_0))/h\) aproxima-se de \(\gamma'(t_0)\), e a aproximação torna-se exata no limite quando \(h \to 0\).
@@ -591,19 +592,19 @@ A reta que passa por \(\gamma(t_0)\) com direção dada por \(\gamma'(t_0)\) é 
 
 Para evitar comportamentos que possam comprometer a análise, como pontos de canto ou pontos estacionários onde a velocidade escalar é nula, impõe-se uma condição de suavidade e não-degeneração.
 Uma curva parametrizada \(\gamma: I \to \mathbb{R}^n\) é dita regular (de classe \(C^1\)) se cada componente \(\gamma_j\) possui derivada primeira contínua em \(I\) e se \(\gamma'(t) \neq \vec{0}\) para todo \(t \in I\).
+Embora a diferenciabilidade seja suficiente para definir o vetor tangente em um ponto, impõe-se a seguir uma condição mais forte de regularidade.
 A condição de regularidade garante que a curva possui uma direção tangente única e não nula em todos os pontos, assegurando que a trajetória não possui segmentos estacionários.
-Por essas razões, consideraremos apenas curvas regulares.
+Por essas razões, considera-se apenas curvas regulares ao longo da resposta.
 
 
 
-*** Regra da cadeia e derivação ao longo de uma curva
-
-Com o conceito de curva parametrizada estabelecido, podemos apresentar a regra da cadeia e suas aplicações.
+Com o conceito de curva parametrizada estabelecido, pode-se apresentar a regra da cadeia e suas aplicações.
 Dada uma função escalar definida em \(\mathbb{R}^n\), a regra da cadeia permite calcular sua taxa de variação ao longo de uma trajetória específica.
 Sejam \(D \subset \mathbb{R}^n\) um conjunto aberto, \(f : D \to \mathbb{R}\) uma função diferenciável, e \(\gamma : I \to D\) uma curva parametrizada regular.
 A função composta \(g : I \to \mathbb{R}\) definida por \(g(t) = f(\gamma(t))\) descreve os valores de \(f\) restritos ao caminho \(\gamma\).
 
-A regra da cadeia fornece a estrutura para diferenciar \(g\).
+Estabelecida a estrutura geométrica da trajetória, o passo seguinte consiste em analisar como uma função escalar varia quando avaliada ao longo dessa curva.
+A regra da cadeia fornece, portanto, a estrutura para diferenciar \(g\).
 Se \(f\) é diferenciável em \(\gamma(t)\) e \(\gamma\) é diferenciável em \(t\), então a função composta \(g\) é diferenciável em \(t\) e sua derivada é dada por
 \[
 g'(t) = \sum_{j=1}^{n} \frac{\partial f}{\partial x_j}(\gamma(t)) \cdot \gamma_j'(t).
@@ -624,13 +625,10 @@ No caso particular de duas variáveis, onde \(f\) depende de \(x\) e \(y\), e es
 tornando explícita a decomposição da taxa de variação total na contribuição de cada canal marginal.
 
 
-*** Exemplo econômico: Cobb-Douglas com insumos dependentes de juros e tempo
-
-
-Para ilustrar a aplicação econômica do formalismo, consideremos uma função de produção Cobb-Douglas com retornos constantes à escala, \(Y = F(K, L) = \sqrt{K L}\).
-Suponha que os insumos capital e trabalho não sejam variáveis exógenas primitivas, mas sim funções de um parâmetro de política, a taxa de juros nominal \(r\), e do tempo \(t\).
+Para ilustrar a aplicação econômica do formalismo, considera-se uma função de produção Cobb-Douglas com retornos constantes à escala, \(Y = F(K, L) = \sqrt{K L}\).
+Supõe-se que os insumos capital e trabalho não sejam variáveis exógenas primitivas, mas sim funções de um parâmetro de política monetária, a taxa de juros nominal \(r\), e do tempo \(t\).
 Esta estrutura captura, de forma reduzida, a ideia de que os insumos evoluem sob influência conjunta das condições financeiras e de um processo autônomo de expansão.
-Especificamos formas funcionais simples que garantem positividade e tratabilidade analítica:
+Especifica-se, assim, formas funcionais simples que garantem positividade e tratabilidade analítica:
 \[K(r, t) = 4 + t^2 - r, \quad L(r, t) = 8 + 2t - r, \]
 com domínios restritos para que \(K > 0\) e \(L > 0\).
 O termo \(t^2\) em \(K\) pode representar um processo de acumulação de capital acelerado, enquanto o termo \(2t\) em \(L\) modela um ajuste linear do emprego ao longo do tempo.
@@ -639,7 +637,7 @@ A dependência negativa comum em \(r\) reflete o efeito inibidor de uma taxa de 
 A produção agregada torna-se, assim, uma função composta de \(r\) e \(t\):
 \[Y(r, t) = F(K(r,t), L(r,t)) = \sqrt{(4 + t^2 - r)(8 + 2t - r)}\]
 
-Diversos exercícios de política econômica e de previsão exigem o cálculo das sensibilidades \(\partial Y / \partial r\) e \(\partial Y / \partial t\).
+Diversos exercícios de política econômica podem ser esquematizados, exigindo o cálculo das sensibilidades \(\partial Y / \partial r\) e \(\partial Y / \partial t\).
 Para tanto, aplica-se a regra da cadeia.
 As derivadas parciais da função de produção são
 \[F_K(K, L) = \frac{1}{2} \sqrt{\frac{L}{K}} \quad \text{e} \quad F_L(K, L) = \frac{1}{2} \sqrt{\frac{K}{L}}. \]
@@ -650,8 +648,8 @@ Portanto, as derivadas parciais de \(Y\) são dadas por:
 \[\frac{\partial Y}{\partial r}(r, t) = F_K(K(r,t), L(r,t)) \cdot (-1) + F_L(K(r,t), L(r,t)) \cdot (-1) = -F_K - F_L, \]
 \[\frac{\partial Y}{\partial t}(r, t) = F_K(K(r,t), L(r,t)) \cdot (2t) + F_L(K(r,t), L(r,t)) \cdot 2 = 2t F_K + 2 F_L. \]
 
-Considere um ponto de referência arbitrário \((r_0, t_0) = (1, 1)\).
-Neste ponto, temos \(K_0 = 4\), \(L_0 = 9\), e \(Y_0 = \sqrt{4 \cdot 9} = 6\).
+Considerando um ponto de referência arbitrário \((r_0, t_0) = (1, 1)\).
+Neste ponto, tem-se \(K_0 = 4\), \(L_0 = 9\), e \(Y_0 = \sqrt{4 \cdot 9} = 6\).
 Os produtos marginais avaliados são
 \[F_K(4,9) = \frac{1}{2} \sqrt{\frac{9}{4}} = \frac{3}{4}, \quad F_L(4,9) = \frac{1}{2} \sqrt{\frac{4}{9}} = \frac{1}{3}. \]
 Substituindo na regra da cadeia:
@@ -663,26 +661,18 @@ Um aumento marginal na taxa de juros, mantido o tempo constante, reduz a produç
 Esta queda total decompõe-se em um efeito via redução do capital (\(-3/4\)) e um efeito via redução do trabalho (\(-1/3\)).
 Um aumento marginal no tempo, mantida a taxa de juros fixa, aumenta a produção a uma taxa de \(13/6\) unidades por unidade de \(t\), composta pelo efeito da expansão do capital (\(3/2\)) e do trabalho (\(2/3\)).
 
-Geometricamente, no espaço \((K, L)\), os vetores \((-1, -1)\) e \((2, 2)\) são os vetores tangentes às curvas definidas pela variação de \(r\) e \(t\), respectivamente, no ponto \((4,9)\).
+Geometricamente, no espaço \((K, L)\), os vetores \((-1, -1)\) e \((2, 2)\) correspondem às direções de variação dos vetores tangentes às curvas parametrizadas por \(r\) e \(t\), respectivamente, no ponto \((4,9)\).
 As derivadas calculadas são precisamente os produtos escalares destes vetores tangentes com o gradiente \(\nabla F(4,9) = (3/4, 1/3)\).
 A regra da cadeia, portanto, traduz a sensibilidade em relação aos parâmetros primários para uma análise no espaço dos insumos, decompondo o efeito total na contribuição de cada canal produtivo marginal.
-
-
-*** Extensões e menção a funções implícitas
+Esse resultado não é apenas um exercício de cálculo diferencial, mas constitui a base de métodos analíticos amplamente utilizados em economia teórica e aplicada.
 
 O formalismo apresentado ao longo desta resposta é fundação para técnicas analíticas centrais na modelagem econômica.
 Esse formalismo é central tanto em modelos de equilíbrio geral computável quanto em modelos SFC que fazem uso de análise de sensibilidade paramétrica em torno dos pontos de equilíbrio (por exemplo, estados estacionários).
 Em modelos SFC, em particular, os estados estacionários são determinados simultaneamente por identidades contábeis e relações comportamentais, de modo que a análise de sensibilidade pode ser avaliada ao longo de curvas que explicitam o rigor contábil desta modelagem.
-Em tais modelos, o equilíbrio é caracterizado por um sistema de equações da forma \(F(\mathbf{x}, \boldsymbol{\alpha}) = \mathbf{0}\), onde \(\mathbf{x}\) é um vetor de variáveis endógenas e \(\boldsymbol{\alpha}\) um vetor de parâmetros exógenos.
-A análise de sensibilidade paramétrica, que busca quantificar derivadas locais do tipo \(\partial x_i / \partial \alpha_j\), é formalmente realizada através da aplicação sistemática da regra da cadeia combinada com o teorema da função implícita.
-Este procedimento generaliza a ideia de derivação ao longo de uma curva para um contexto multidimensional, onde a curva é uma "superfície" definida implicitamente pelas condições de equilíbrio econômico e contábil.
-
-Em síntese, a articulação entre derivadas parciais, curvas parametrizadas, vetores tangentes e regra da cadeia oferece um quadro conceitual unificado para estudar como funções de várias variáveis se comportam ao longo de trajetórias economicamente relevantes.
-A regra da cadeia, por sua vez, foi apresentada não apenas como uma fórmula algébrica, mas como a operação geométrica fundamental de tomar o produto escalar entre o gradiente da função e o vetor tangente à curva, \(\nabla f \cdot \gamma'\).
+Estas aplicações ilustram que a articulação entre derivadas parciais, curvas parametrizadas, vetores tangentes e regra da cadeia oferece um quadro conceitual unificado para estudar como funções de várias variáveis se comportam ao longo de trajetórias economicamente relevantes.
 O exemplo com a função de produção Cobb-Douglas em que capital e trabalho dependem de juros e tempo ilustra como esse instrumental permite decompor a sensibilidade do produto em contribuições associadas a diferentes canais de propagação de choques, ao mesmo tempo em que prepara o terreno para extensões mais gerais envolvendo funções implícitas e sistemas de equações em macroeconomia teórica e aplicada.
-
-
-
+Esse mesmo conceito de derivada ao longo de curvas é central no método dos multiplicadores de Lagrange, no qual se avalia a variação da função objetivo restrita a uma curva definida pelas restrições.
+Dessa forma, a compreensão rigorosa da regra da cadeia em funções de várias variáveis é indispensável para a análise de sensibilidade, a estática comparativa e a formulação consistente de modelos econômicos dinâmicos e de equilíbrio.
 
 
 
@@ -2014,7 +2004,10 @@ Este é o caso, por exemplo, do método dos multiplicadores de Lagrange, utiliza
 Sendo assim, os conceitos e aplicações aqui descritos são fundamentais na área de métodos quantitativos aplicados à economia.
 
 
-* NEXT Otimização não condicionada [0%]
+* Otimização não condicionada
+
+
+** Informações :noexport:
 
 Materiais:
 - Simon and Blume Ch 17
@@ -2024,298 +2017,1336 @@ Materiais:
 - [[https://ocw.uci.edu/lectures/math_4_lec_15_math_for_economists.html][Mathematical Review]]
 - Apêndice matemático Petri
 
-** TODO Condições de Primeira e Segunda Ordem
+Temas:
+- Condições de Primeira e Segunda Ordem
+- Máximo e Mínimos Globais
+- Aplicações à Economia
 
-** TODO Máximo e Mínimos Globais
+** Tópicos discutidos :noexport:
+:PROPERTIES:
+:ID:       869f3ac6-23f8-4867-8585-19acc9f7648d
+:END:
+:LOGBOOK:
+CLOCK: [2026-01-27 Tue 17:02]--[2026-01-27 Tue 17:39] =>  0:37
+CLOCK: [2026-01-27 Tue 14:51]--[2026-01-27 Tue 16:37] =>  1:46
+CLOCK: [2026-01-27 Tue 13:56]--[2026-01-27 Tue 14:34] =>  0:38
+CLOCK: [2026-01-27 Tue 11:44]--[2026-01-27 Tue 12:19] =>  0:35
+:END:
 
-** TODO Aplicações à Economia
 
-* TODO Otimização condicionada [0%]
+- Contexto: Otimização é o centro em muitas análises econômicas
+  - Condições de primeira e segunda ordem para funções diferenciáveis
+  - Utilização de derivadas parciais multivariadas permite localizar valores críticos
+  - Mencionar que otimização  um caso particular da análise estática de equilíbrio
+    - Isso talvez pode ser interessante para fazer um encerramento
+    - Outro ponto para incluir nas conclusões é o caso da otimização condicionada
+- Definições de máximos e mínimos para uma função escalar multivariada
+  - Ponto é considerado máximo se não existem nenhum outro ponto que gere um resultado ao menos maior (\(F(x0) \geq F(x)\))
+    - Em termos mais precisos \(x0\) é um maximizador de \(F\) ou um ponto máximo
+  - Máximo estrito se não existir nenum outro ponto que resulte em um resultado maior
+  - Máximo local se for o máximo em uma bola, mas não para todo \(x\)
+    - Condição de máximo local estrito se aplica aqui: \(F(x0) > F(x) \forall x \neq x_{0}, B_{r}(X0) \cap U\)
+  - Para a definição de mínimo, basta inverter as desigualdades
+  - Definição envolve a utilização de bolas abertas com centro no ponto crítico
+  - Se as condições valares para todos os pontos no domínio na função e não apenas na vizinhança da bola aberta, então trata-se de um ponto de máximo/mínimo absoluto/global.
+  - Pontos máximos e mínimos de uma função são também denominados extremantes da função
+    - Importante: um ponto crítico pode não ser extremante
+      - Ponto crítico é aquele que as derivadas parciais são nulas
+      - Extremante é onde ocorre o extremo local ou absoluto
+- Condições de primeira ordem:
+  - O gradiente da função em determinado ponto deve ser nulo
+    - Em que este ponto deve ser um ponto interior do domínio da função
+    - Esta é a condição necessária para que o ponto seja um extremante da função
+    - Uma forma de demonstrar o mesmo ponto, considera-se a derivada parcial em que a outra coordenada é fixada no ponto crítico [não colocar isso na resposta]
+    - Se a função admite derivadas parciais em todos os pontos interiores do domínio, então os pontos que anulam o vetor gradiante são os únicos candidatos a extremantes locais de f
+      - Essa afirmação não se aplica a pontos de fronteira
+      - Devem ser avaliados separadamente
+      - Implicação importante: um ponto de fronteira pode ser extremante local sem que as derivadas parciais sejam nulas
+      - Por essa razão é importante mencionar conjunto aberto
+  - Se determinado ponto é um ponto de máximo/mínimo, o gradiente neste ponto é necessariamente zero
+  - O gradiente ser nulo torna este ponto um ponto crítico
+    - Qualificação depende da condição de segunda ordem
+  - Uma forma de encontrar os pontos críticos é resolver o sistema que iguala as derivadas parciais à zero
+  - Para conectar com os outros pontos do edital, seria bom ter uma frase ou duas sobre a interpretação geométrica da condição de primeira ordem
+    - A função tem um plano tangente nos pontos críticos e esse plano tangente deve ser horizontal aos outros eixos
+  - Uma forma intuitiva de apresentar essa condição é por meio de diferenciais
+    - Para que \(dz\) seja zero, ou seja, um ponto estácionário, é preciso que todas as derivadas parciais sejam nulas
+    - A partir dessa expressão, o vetor gradiente é extraído de forma direta
+    - Este também pode ser um gancho do porque seguir para a expansão de Taylor de segunda ordem
+    - Diferenciando posteriormente o diferencial, encontra-se a expressão não-matricial da Hessiana
+      - Em que os diferencias são tomados como constantes
+- Condições de segunda ordem:
+  - A ideia é uma generalização da condição de segunda ordem do caso univariado
+  - Constró-se a matriz Hessiana (de ordem \(n\times n\)) a partir das derivadas parciais segundas da função
+  - A Hessiana é avaliada nos pontos críticos
+    - Memo: Teorema de Young/Schwarts garante que as derivadas parciais segundas mistas são idênticas
+      - Isso faz com que a Hessiana seja uma matriz simétrica e admite uma forma quadrática
+  - Condições necessárias de segunda ordem:
+    - Para que o ponto crítico seja um máximo local, as derivadas segundas puras devem ser não-negativas
+    - Para que o ponto crítico seja um mínimo local, as derivadas segundas puras devem ser não-positivas
+    - Adicionar interpretação geométrica
+    - No entanto, não são suficientes para qualificar o ponto crítico
+  - Condições suficientes:
+    - Se a Hessiana é definida negativa, então o ponto crítico é um ponto de máximo
+    - Se a Hessiana é definida positiva, então trata-se de um ponto de mínimo
+    - Se a Hessiana é indefinida, trata-se de um ponto de sela
+      - Memo: O ponto de sela é um ponto que pode ter características de máximo em algumas direções e de mínimo em outras
+    - Importante: Isso permite que qualificar os pontos críticos como pontos máximos e mínimos locais
+    - A prova da condição suficiente se dá pela expansão de Taylor de segunda ordem, já incluso em uma resposta anterior
+      - Reaproveitar essa parte da resposta
+      - É apresentado com o resíduto, então trata-se do valor exato e não da aproximação
+        - O capítulo 30 mostra como lidar com este resíduo
+    - Em termos do encadeamento dos conceitos, apresenta-se as condições para que a função seja definida negativa em termos dos menores principais líderes; associando-se a um ponto de máximo
+      - O mesmo é feito para uma função definida positiva; associando-se a um ponto de mínimo
+      - Lembrando que a violação do padrão de sinais depende dos menores principais líderes não-nulos
+  - Condições necessárias:
+    - As condições necessárias são mais fracas/abrangentes do que as condições suficientes
+    - Resumidamente, substitui-se as desigualdades estritas por desigualdades "fracas" (permitem o zero)
+      - A exemplificação se dá pela função \(x^{4}\) que possui um ponto de máximo cuja derivada segunda é zero no ponto crítico
+        - Eventualmente utilizar outra função para exemplificar
+    - Em termos multivariados, basta analisar se a Hessiana é semidefinida positiva para mínimo e semidefinida negativa para máximo
+      - Se o ponto crítico é um máximo local, a Hessiana será necessariamente semidefinida negativa
+      - Memo: Para qualificar situação de semidefinição, é necessário avaliar todos os menores principais, não apenas os menores principais líderes
+        - Local mínimo se todos os menores principais da Hessiana forem não negativos (\(\geq 0\))
+        - Local máximo se os menores principais de ordem ímpar forem não-positivos (\leq 0) e os de ordem par forem não negativos (\(\geq 0\))
+    - Mencionar, como contraposição ao caso global, que está é uma avaliação na vizinhança do ponto crítico
+- Máximo e mínimos globais
+  - Discute-se condições suficientes para máximos e mínimos globais
+    - Diferentemente do caso univariado, não é suficiente que um ponto seja o único ponto crítico
+  - É preciso avaliar se a função é côncava para determinar se o ponto crítico é um ponto de máximo
+    - O equivalente para o caso de um mínimo global é que a função precisa ser convexa
+  - Concavidade:
+    - Matriz Hessiana é semidefinida negativa
+    - A diferença da função avaliada nos pontos é menor que a derivada avaliada na diferença dos pontos
+      - \(F(y) - F(x) \leq DF(y - x) \)
+        - A ponderação da função avaliada em determinados pontos é menor do que a função avaliada nos pontos ponderados [Intuição, não colocar na resposta]
+          - Linha que liga os dois pontos fica abaixo da curva
+      - Isso implica que se \(x^{*}\) é um ponto crítico, então \(F(y) \leq F(x)\)
+        - Logo, é um ponto de máximo
+    - Se a função é côncava e existe um ponto crítico, este ponto será um pondo de máximo global
+  - Convexidade:
+    - Matriz Hessiana é semidefinida positiva
+    - A diferença da função avaliada nos pontos é maior que a derivada avaliada na diferença dos pontos
+      - \(F(y) - F(x) \geq DF(y - x) \)
+    - Se a função é convexa e existe um ponto crítico, este ponto será um pondo de mínimo global
+  - Observação: A condição de segunda ordem avalia a definitude da matriz hessiana em um ponto
+    - O que foi discutido aqui diz respeito às propriedades mais gerais da função em termos de concavidade e convexidade na vizinhança de um ponto
+- Aplicação econômica
+  - Firma maximizadora de lucros
+    - Firma com uma função de produção que utiliza vários insumos para produzir um produto
+    - Apresentado em termos de uma função de produção genérica
+    - Toma-se o preço como dado e calcula-se a receita
+    - Introduz-se uma função de custo genérica, que depende dos mesmos insumos
+    - Assume-se que a firma utiliza ao menos uma parcela de cada insumo, de modo que o problema relevante pode ser restrito ao ortante positivo
+    - Diferencia a função \(F(x) = p\cdot Y(x) - C(x)\) e iguala a zero
+      - A condição de primeira ordem que a receita marginal de cada insumo deve se igualar ao custo marginal de cada insumo
+      - Assume-se que a firma enfrente uma função de custo unitário \(w_{i}\) constante
+        - \(\partial Y / \partial x_{i} = w_{i} / p\)
+    - A condição de segunda ordem requer que a função \(F\) seja semidefinida negativa
+      - Dado que o custo unitário é constante, a hessiana dos custos será zero
+      - Isso implica que a Hessiana da função de produção seja semidefinida negativa avaliada no ponto crítico
+        - Isso implica que a derivada segunda pura deve ser negativa para todos os insumos
+          - Essa afirmação decorre da matriz resultante ser uma matriz diagonal; se todas as derivadas puras forem negativas, observa-se a alternância de sinal para matrizes defindas negativas
+    - Este exemplo pode ser interpretado nos termos de decisão de insumos de uma empresa
+      - Insumos remunerados pelo salário e taxa de juros respectivamente
+      - Articular que a remuneração do insumo deve refletir a produtividade marginal
+    - Ideia de exercício para a prova: Propor equações genéricas e testar situações que gerem concavidade e convexidade e avaliar suas implicações para otimização
+      - A partir disso, pode-se puxar o gancho para indicar o porquê dos modelos assumirem concavidade
+        - Isso permite avaliar apenas as condições de primeira ordem
+      - Mencionar que situação parecida pode ser encontrada para uma empresa que produz mais de um produto
+      - Em Chiang, apresenta-se uma função custo em forma quadrática
+      - Dada uma função receita não-quadrática, a função resultante não é necessariamente quadrática
+      - Apresentar em termos de uma função de produção Cobb-Douglas e custos unitários constantes pode ser bastante complicado se apresentado de forma estritamente simbólica
+  - Monopolista discriminador:
+    - Monopolista se depara com dois mercados distintos e independentes (ex: doméstico e externo)
+    - Cada mercado terá sua função demanda inversa própria
+    - Custos dependem do total produzido em ambos os mercados
+    - Sabe-se que o monopolista irá produzir para ambos os mercados
+    - Elaborando o problema e encontrando as condições de primeira ordem: as receitas marginais de cada mercado devem ser iguais ao custo marginal (que depente do nível de produção)
+    - Em seguida, avalia-se a condição de segunda ordem
+  - Análise de mínimos quadrados (mencionar eventualmente na introdução)
+    - Interesse em se avaliar se as variáveis são linearmente relacionadas
+    - Ajusta-se uma equação que melhor associa as variáveis
+    - Apresenta-se uma equação que representa a distância agregada de cada ponto a reta e apresenta em termos de somatório
+    - Torna-se uma função em termos dos coeficientes
+    - A reta que proporciona o melhor ajuste é aquela que minimiza os erros quadrados
+- Observações:
+  - No exemplo numérico, incluir funções genéricas mas assumir que estamos trabalhando apenas com a classe C2
+  - Também é feita uma discussão (no Stewart) de funções em conjuntos fechados
+    - Este parece ser o caso mais pertinente de otimização condicionada
+    - No entanto, fornece a intuição do teste do valor extremo no caso multivariado
+      - Para o caso de uma função restrita a um conjuto fechado, basta contrastar a avaliação da função nos pontos críticos com os pontos extremos
+  - Condições de segunda ordem são suficientes, mas não necessárias
+    - Para serem necessárias, é preciso apresentá-las em termos de desigualdades fracas
+  - A forma que o Chiang aborda faz uso da apresentação de formas quadráticas
+    - Isso reforça a ideia de que os temas podem ser discutidos conjuntamente
+  - É possível apresentar a intuição da condição de segunda ordem em termos da curvatura da função ao redor dos pontos críticos
+  - Função côncava gera uma colina em todo seu domínimo
+    - Mnemônico para o roteiro de estudos: associar o acento ao formato [não incluir na resposta]
+    - Logo, concavidade/convexidade são conceitos globais
+  - Função convexa gera um vale em todo seu domínio
+    - Mnemômico para o roteiro de estudos: associar "v" ao formato [não incluir na resposta]
+  - Existe uma distinção entre máximo absoluto e máximo absoluto único
+    - O primeiro está associado à semi-definitude, enquanto o segundo à definitude estrita
+  - A negativa de uma função côncava a torna convexa
+    - A recíproca vale para convexa
+  - Soma de funções côncavas gera uma função côncava
+    - A recíproca vale para convexa
+  - Definição de concavidade e convexidade não pressupõe diferenciabilidade, mas diferenciabilidade permite expressá-las em termos de derivadas [não incluir na resposta]
+  - Conjuntos côncavos e convexos são discutidos por Chiang, mas não devem ser incluídos na resposta
+    - No entanto, isso pode ser útil para otimização condicionada
+  - Em oposição a ponto interior, tem-se ponto de fronteira
+** Resposta 09 :ignore:
+:PROPERTIES:
+:ID:       6203dc68-6db7-462f-85b9-eb7df2eb4c9a
+:END:
+:LOGBOOK:
+CLOCK: [2026-01-29 Thu 16:26]--[2026-01-29 Thu 16:44] =>  0:18
+CLOCK: [2026-01-29 Thu 15:18]--[2026-01-29 Thu 15:38] =>  0:20
+CLOCK: [2026-01-29 Thu 14:54]--[2026-01-29 Thu 15:13] =>  0:19
+CLOCK: [2026-01-29 Thu 13:53]--[2026-01-29 Thu 14:36] =>  0:43
+CLOCK: [2026-01-29 Thu 11:18]--[2026-01-29 Thu 12:15] =>  0:57
+CLOCK: [2026-01-29 Thu 10:37]--[2026-01-29 Thu 11:12] =>  0:35
+:END:
+
+A tomada de decisão ótima sob escassez é o problema central da economia, sobretudo na abordagem marginalista.
+Formalmente, isso se traduz na otimização de funções objetivo que representam, dentre outras, lucro, utilidade ou custo, sendo estas usualmente funções escalares multivariadas.
+O estudo das condições que caracterizam tais ótimos é, portanto, essencial.
+O tratamento desses problemas exige a caracterização de pontos críticos e a qualificação subsequente desses candidatos como máximos, mínimos ou pontos de sela.
+As condições de primeira ordem, baseadas na anulação do gradiente, identificam os pontos estacionários da função.
+As condições de segunda ordem, fundamentadas na análise da matriz Hessiana, determinam a natureza local desses pontos.
+A extensão para máximos e mínimos globais requer propriedades adicionais de concavidade ou convexidade da função em todo o domínio.
+Este conjunto de ferramentas é aplicado diretamente a problemas clássicos, incluindo a maximização de lucro por uma firma tomadora de preços, a discriminação de preços por um monopolista e a estimação por mínimos quadrados ordinários.
+
+A exposição está estruturada em quatro partes principais.
+Primeiramente, apresentam-se as definições formais de extremantes locais e globais para funções escalares de várias variáveis.
+Em seguida, desenvolvem-se as condições de primeira ordem para pontos críticos interiores, com sua interpretação geométrica em termos de planos tangentes horizontais.
+A terceira parte dedica-se às condições de segunda ordem, distinguindo critérios necessários e suficientes para a qualificação de pontos críticos, com ênfase na análise da definitude da matriz Hessiana.
+Finalmente, discutem-se as condições para extremos globais, via concavidade e convexidade, aplicando todo o aparato a um problema de maximização do lucro de uma firma com dois insumos.
+Neste texto, vetores são indicados por uma seta sobrescrita, como em \(\vec{x}\), para distingui-los de escalares.
+
+Seja \(f: U \subset \mathbb{R}^n \to \mathbb{R}\) uma função escalar definida em um conjunto aberto \(U\).
+Um ponto \(\vec{x}_0 \in U\) é um maximizador local de \(f\) se existe uma bola aberta \(B_r(\vec{x}_0) \subset U\) tal que \(f(\vec{x}_0) \geq f(\vec{x})\) para todo \(\vec{x} \in B_r(\vec{x}_0)\).
+O máximo local é estrito se \(f(\vec{x}_0) > f(\vec{x})\) para todo \(\vec{x} \in B_r(\vec{x}_0)\) com \(\vec{x} \neq \vec{x}_0\).
+O ponto \(\vec{x}_0\) é um maximizador global se \(f(\vec{x}_0) \geq f(\vec{x})\) para todo \(\vec{x} \in U\).
+As definições de minimizadores obtêm-se invertendo as desigualdades.
+Os pontos que satisfazem essas condições são denominados extremantes da função.
+Um ponto crítico é um candidato a extremante, mas pode não o ser, como ocorre em pontos de sela.
+
+A condição necessária de primeira ordem para que um ponto interior \(\vec{x}_0 \in U\) seja extremante local de uma função diferenciável \(f\) é que o gradiente de \(f\) seja nulo nesse ponto.
+Formalmente, se \(\vec{x}_0\) é um extremante local e \(f\) admite derivadas parciais em \(\vec{x}_0\), então
+\[\nabla f(\vec{x}_0) = \left( \frac{\partial f}{\partial x_1}(\vec{x}_0), \ldots, \frac{\partial f}{\partial x_n}(\vec{x}_0) \right)^\top = \vec{0}.\]
+Esta condição implica que a taxa de variação de \(f\) é nula em todas as direções coordenadas.
+Geometricamente, o plano tangente ao gráfico de \(f\) no ponto \((\vec{x}_0, f(\vec{x}_0))\) é horizontal, isto é, paralelo ao hiperplano das variáveis independentes.
+Em termos de diferenciais, a condição \(df = \sum_{i=1}^n \frac{\partial f}{\partial x_i} dx_i = 0\) para variações arbitrárias \(dx_i\) implica a anulação de cada derivada parcial.
+Os pontos que satisfazem \(\nabla f = \vec{0}\) são os únicos candidatos a extremantes locais interiores, embora pontos de fronteira possam ser extremantes sem satisfazer esta condição.
+
+A qualificação dos pontos críticos como máximos, mínimos ou pontos de sela requer a análise de segunda ordem.
+Para uma função \(f\) de classe \(C^2\) em \(U\), a matriz Hessiana \(H_f(\vec{x})\) é a matriz simétrica \(n \times n\) cujo elemento \((i,j)\) é \(\frac{\partial^2 f}{\partial x_i \partial x_j}(\vec{x})\).
+A simetria decorre do Teorema de Schwarz, que garante a igualdade das derivadas parciais mistas de funções \(C^2\).
+Além de ser simétrica, a matriz Hessiana pode ser expressa em termos de uma forma quadrática.
+A relevância das formas quadráticas na otimização pode ser melhor compreendida a partir da expansão de Taylor de segunda ordem.
+Para uma função \(f: \mathbb{R}^n \to \mathbb{R}\) duas vezes continuamente diferenciável em uma vizinhança de um ponto \(\vec{x}_{0}\), a aproximação quadrática é dada por:
+\[f(\vec{x}_0 + \vec{h}) \approx f(\vec{x}_0) + \nabla f(\vec{x}_0)^{\top}\vec{h} + \frac{1}{2} \vec{h}^\top H_f(\vec{x}_0) \vec{h}, \]
+
+em que a função é avaliada na direção \(\vec{h}\) próxima do ponto \(\vec{x}_{0}\)  em que \(\vec{h} = \vec{x} - \vec{x}_{0}\) é um vetor de deslocamento e \(H_f(\vec{x}_0)\) é a matriz Hessiana de \(f\) avaliada em \(\vec{x}_{0}\).
+Para o caso específico em que o ponto de análise é um ponto crítico (onde \(\nabla f(\vec{x}_0) = \vec{0}\)), a aproximação se torna:
+\[f(\vec{x}_0 + \vec{h}) \approx f(\vec{x}_0) + \frac{1}{2} \vec{h}^\top H_f(\vec{x}_0) \vec{h}, \]
+Neste caso, o termo dominante na variação \(f(\vec{x}_0 + \vec{h}) - f(\vec{x}_0)\) é, portanto, a forma quadrática \(Q(\vec{h}) = \vec{h}^\top H_f(\vec{x}_0) \vec{h}\).
+O sinal desta forma quadrática, para todas as direções possíveis \(\vec{h}\), determina se \(f\) atinge um valor localmente menor, maior ou ambos em \(\vec{x}_0\).
+
+
+Sendo assim, a definitude da matriz Hessiana determina o comportamento local da função.
+Por essas razões, as condições suficientes de segunda ordem estabelecem critérios baseados na definitude da Hessiana.
+Se \(H_f(\vec{x}_0)\) é definida negativa, então \(Q(\vec{h}) < 0\) para todo \(\vec{h} \neq \vec{0}\), implicando \(f(\vec{x}_0 + \vec{h}) < f(\vec{x}_0)\) para \(\vec{h}\) suficientemente pequeno (i.e., para \(\vec{x}\) na vizinhança de \(\vec{x}_{0}\)), garantindo que \(\vec{x}_0\) é um máximo local estrito.
+Se \(H_f(\vec{x}_0)\) é definida positiva, então \(\vec{x}_0\) é um mínimo local estrito.
+Se \(H_f(\vec{x}_0)\) é indefinida, existem direções em que \(f\) cresce e outras em que decresce, caracterizando um ponto de sela.
+A definitude da forma quadrática \(Q\) é, assim, o análogo multivariado da condição de segunda derivada positiva (para mínimo) ou negativa (para máximo) do cálculo univariado.
+
+
+Dois conjuntos principais de critérios permitem classificar a definitude de uma forma quadrática \(A\).
+O primeiro baseia-se nos autovalores.
+Como \(A\) é simétrica, ela é diagonalizável por uma matriz ortogonal.
+Existe uma matriz \(P\) com \(P^{-1} = P^\top\) e uma matriz diagonal \(\Lambda = \text{diag}(\lambda_1, \dots, \lambda_n)\) tais que \(A = P \Lambda P^\top\).
+Os elementos diagonais \(\lambda_i\) são os autovalores reais de \(A\) e \(P\) é a matriz cujas colunas são os autovetores ortonormais.
+Desta representação canônica, a caracterização da definitude por meio de autovalores é direta.
+A matriz \(A\) é positiva definida se \(\lambda_i > 0\) para todo \(i\); é negativa definida se \(\lambda_i < 0\) para todo \(i\); é positiva semidefinida se \(\lambda_i \geq 0\) para todo \(i\); é negativa semidefinida se \(\lambda_i \leq 0\) para todo \(i\); e é indefinida se existem índices \(i, j\) com \(\lambda_i > 0\) e \(\lambda_j < 0\).
+
+O segundo critério baseia-se nos menores principais da matriz.
+Seja \(A_k\) a submatriz principal líder de ordem \(k\), formada pelas primeiras \(k\) linhas e \(k\) colunas de \(A\), e seja \(D_k = \det(A_k)\).
+Partindo dos menores principais líderes, a matriz \(A\) é positiva definida se e somente se \(D_k > 0\) para todo \(k = 1, \dots, n\).
+Estas são condições necessárias e suficientes para definitude estrita.
+Como contrapartida, é negativa definida se e somente se \((-1)^k D_k > 0\) para todo \(k\).
+
+As condições necessárias de segunda ordem, por sua vez, são mais fracas do que as condições suficientes, uma vez que envolvem a semidefinitude da Hessiana.
+Se \(\vec{x}_0\) é um máximo local de uma função \(C^{2}\), então \(H_f(\vec{x}_0)\) é necessariamente semidefinida negativa.
+Se é um mínimo local, a Hessiana é necessariamente semidefinida positiva.
+A semidefinitude permite autovalores nulos, correspondentes a direções em que a curvatura é nula e a análise de segunda ordem é inconclusiva.
+Para a semidefinitude, o critério dos menores líderes é insuficiente; é necessário e suficiente que todos os menores principais (de todas as ordens) satisfaçam as condições de não-negatividade (ou de não-positividade com alternância de sinais).
+A Hessiana é semidefinida positiva se e somente se todos os seus menores principais são não negativos.
+É semidefinida negativa se e somente se os menores principais de ordem ímpar são não positivos e os de ordem par são não negativos.
+
+A passagem de ótimos locais para globais envolve propriedades da função em todo o seu domínio, notadamente a concavidade e a convexidade.
+Se \(f\) é de classe \(C^2\), a concavidade equivale à Hessiana ser semidefinida negativa em todo ponto do domínio.
+O resultado central é que, se \(f\) é côncava e \(\vec{x}_0\) é um ponto crítico interior, então \(\vec{x}_0\) é um máximo global.
+As definições e resultados análogos valem para funções convexas, com desigualdades invertidas, garantindo que os pontos críticos de funções convexas são mínimos globais.
+Estas são condições suficientes e economicamente fundamentais, pois muitos modelos são construídos sob a hipótese de concavidade da função objetivo, o que transforma a condição de primeira ordem \(\nabla f(\vec{x}) = \vec{0}\) em condição necessária e suficiente para um máximo global.
+Vale notar que, quando o domínio é compacto (fechado e limitado), o Teorema do Valor Extremo garante a existência de máximos e mínimos globais, mas não os localiza.
+Os pontos extremantes, neste caso, podem ocorrer em pontos interiores (onde as condições anteriores se aplicam) ou na fronteira do domínio, o que requer uma análise separada.
+
+
+Para consolidar o arcabouço teórico, analisa-se um problema de maximização de lucro de uma firma competitiva que emprega dois insumos, trabalho \(L\) e capital \(K\), para produzir um único bem.
+O exemplo servirá para demonstrar como as propriedades matemáticas da função objetivo determinam a natureza da solução ótima e a validade das condições de primeira ordem como suficientes.
+
+Considere uma tecnologia representada pela função de produção Cobb-Douglas \(Y(L,K) = L^{1/2}K^{1/2}\), que é homogênea de grau um e apresenta retornos constantes de escala.
+Para fins de simplificação, considere uma função de custo linear \(C(L,K) = wL + rK\).
+Por se tratar de um mercado competitivo, a firma é tomadora de preços.
+Sendo assim, o preço do produto é \(p = 2\), o salário do trabalho é \(w = 1\), e a taxa de remuneração do capital é \(r = 1\).
+A função lucro, definida no ortante positivo, é
+\[\pi(L, K) = p L^{1/2}K^{1/2} - wL - rK. \]
+\[\pi(L, K) = 2 L^{1/2}K^{1/2} - L - K. \]
+
+
+Antes de prosseguir, é relevante apresentar uma observação.
+Embora a formulação econômica inclua restrições de não-negatividade \((L \geq 0, K \geq 0\), o foco recai sobre soluções interiores onde tais restrições não são vinculantes/associadas.
+Se a solução ótima satisfizer \(L > 0\) e \(K > 0\), as condições de Kuhn-Tucker para o problema condicionado reduzem-se às condições de otimização não condicionada no interior do domínio.
+Portanto, embora o problema seja condicionado em sua formulação, a análise limita-se ao interior do domínio, onde o comportamento é equivalente ao de um problema não condicionado.
+Adota-se a hipótese de que a firma opera em um ponto interior.
+
+
+
+As condições de primeira ordem para um extremante local exigem que o gradiente se anule:
+\[\nabla \pi(L, K) = \vec{0} \]
+
+\begin{equation*}
+\begin{cases}
+\frac{\partial \pi}{\partial L} = L^{-1/2}K^{1/2} - 1 = 0, \\
+\frac{\partial \pi}{\partial K} = L^{1/2}K^{-1/2} - 1 = 0.
+\end{cases}
+\end{equation*}
+
+Estas equações expressam a igualdade entre o valor do produto marginal de cada fator e o respectivo preço.
+Manipulando algebricamente o sistema, da primeira equação isola-se \(L^{-1/2}K^{1/2} = 1\), e da segunda, \(L^{1/2}K^{-1/2} = 1\).
+A razão entre estas duas expressões fornece a relação técnica entre insumos: \(K/L = 1\), ou equivalentemente, \(K = L\).
+Substituindo em qualquer uma das equações, por exemplo, \(L^{-1/2}L^{1/2} = 1\), obtém-se a identidade \(1 = 1\).
+Consequentemente, qualquer combinação \((L, K)\) que satisfaça \(K = L\) é um ponto crítico da função lucro, configurando uma linha de pontos estacionários.
+Avaliando a função lucro ao longo desta linha, tem-se
+\[\pi(L, L) = 2 \sqrt{L \cdot L} - L - L = 2L - 2L = 0. \]
+
+O lucro máximo é nulo para todo \(L = K > 0\).
+Este resultado é uma manifestação direta do Teorema de Euler para funções homogêneas.
+Dado que \(Y(L,K)\) é homogênea de grau um, vale a identidade
+\[Y(L,K) = (\partial Y/\partial L)L + (\partial Y/\partial K)K\].
+Multiplicando ambos os lados pelo preço \(p=2\) e invocando as condições de primeira ordem avaliadas ao longo de \(L = K\) (\(\partial Y/\partial L = 1/2 L^{-1/2}K^{1/2} = 1/2\), \(\partial Y/\partial K = 1/2 L^{1/2}K^{-1/2} = 1/2\)), obtém-se \(2Y = L + K\).
+Portanto, a receita é integralmente exaurida no pagamento dos fatores, o que anula o lucro econômico.
+Dessa forma, não existe um maximizador estrito; cada ponto na linha de pontos críticos \(L = K > 0\) constitui um máximo global fraco.
+
+
+A análise das condições de segunda ordem esclarece a natureza deste resultado.
+A matriz Hessiana da função lucro, com \(p=2\), é
+\begin{equation*}
+H_{\pi}(L,K) = \begin{pmatrix}
+-\frac{1}{2} L^{-3/2}K^{1/2} &  \frac{1}{2} L^{-1/2}K^{-1/2} \\
+\frac{1}{2} L^{-1/2}K^{-1/2} & -\frac{1}{2} L^{1/2}K^{-3/2}
+\end{pmatrix}
+\end{equation*}
+
+O primeiro menor principal líder, \(\partial^2 \pi/\partial L^2 = -\frac{1}{2} L^{-3/2}K^{1/2}\), é negativo para \(L, K > 0\).
+O segundo menor principal líder da Hessiana é
+\begin{equation*}
+\det(H_{\pi}) = \left(-\frac{1}{2} L^{-3/2}K^{1/2}\right)\left(-\frac{1}{2} L^{1/2}K^{-3/2}\right) - \left(\frac{1}{2} L^{-1/2}K^{-1/2}\right)^2 = \frac{1}{4}(L^{-1}K^{-1}) - \frac{1}{4}(L^{-1}K^{-1}) = 0
+\end{equation*}
+
+A Hessiana é, pois, semidefinida negativa em todo o ortante positivo, mas nunca definida negativa.
+Esta característica é perfeitamente consistente com a ausência de unicidade do máximo local estrito.
+Dito de outra forma, a função é côncava, mas não estritamente côncava.
+A forma quadrática associada é nula para direções proporcionais ao vetor \((L, K)\), que é precisamente a direção ao longo da qual o lucro permanece constante.
+
+O exemplo apresentado representa o caso canônico de otimização sob concorrência perfeita com retornos constantes à escala e estrutura de custos não estritamente convexas.
+Como exercício de caráter ilustrativo, substitui-se a função de custo anterior por uma função côncava dada por \(C(L,K) = \sqrt{L} + \sqrt{K}\) para analisar  como a não-convexidade dos custos afeta a qualificação do ótimo.
+Para evidenciar que as condições de primeira ordem deixam de ser suficientes, são feitos alguns ajustes paramétricos mínimos, alterando o preço para \(p = 4\) de modo a amplificar a curvatura da receita em relação à do custo, mantendo o salário e os juros constantes.
+Nesse novo contexto, a função lucro é
+\[\tilde{\pi}(L,K) = 4 L^{1/2}K^{1/2} - \sqrt{L} - \sqrt{K}. \]
+
+As condições de primeira ordem para um máximo interior são
+\begin{equation*}
+\frac{\partial \tilde{\pi}}{\partial L} = 2 L^{-1/2}K^{1/2} - \frac{1}{2}L^{-1/2} = 0
+\end{equation*}
+\begin{equation*}
+\frac{\partial \tilde{\pi}}{\partial K} = 2 L^{1/2}K^{-1/2} - \frac{1}{2}K^{-1/2} = 0
+\end{equation*}
+
+Simplificando, obtém-se:
+\[2 K^{1/2} = \frac{1}{2} \quad \Rightarrow \quad K^{1/2} = \frac{1}{4} \quad \Rightarrow \quad K^{\star} = \frac{1}{16}, \]
+\[2 L^{1/2} = \frac{1}{2} \quad \Rightarrow \quad L^{1/2} = \frac{1}{4} \quad \Rightarrow \quad L^{\star} = \frac{1}{16}. \]
+
+Existe, portanto, um único ponto crítico: \((L^{\star}, K^{\star}) = (\frac{1}{16}, \frac{1}{16})\).
+Contudo, a Hessiana correspondente,
+\begin{equation*}
+H_{\tilde{\pi}}(L,K) = \begin{pmatrix}
+-L^{-3/2}K^{1/2} + \frac{1}{4}L^{-3/2} & L^{-1/2}K^{-1/2} \\
+L^{-1/2}K^{-1/2} & -L^{1/2}K^{-3/2} + \frac{1}{4}K^{-3/2}
+\end{pmatrix}
+\end{equation*}
+deve ser avaliada neste ponto.
+Calculando as derivadas segundas no ponto crítico, onde \(L = K = \frac{1}{16}\) e \(L^{-1/2} = K^{-1/2} = 4\), \(L^{-3/2} = K^{-3/2} = 64\):
+\[\frac{\partial^2 \tilde{\pi}}{\partial L^2} = - (64)\left(\frac{1}{4}\right) + \frac{1}{4}(64) = -16 + 16 = 0, \]
+\[\frac{\partial^2 \tilde{\pi}}{\partial K^2} = - \left(\frac{1}{4}\right)(64) + \frac{1}{4}(64) = -16 + 16 = 0, \]
+\[\frac{\partial^2 \tilde{\pi}}{\partial L \partial K} = (4)(4) = 16. \]
+Assim, a Hessiana no ponto crítico é
+\[H_{\tilde{\pi}}\left(\frac{1}{16}, \frac{1}{16}\right) = \begin{pmatrix} 0 & 16 \\ 16 & 0 \end{pmatrix}. \]
+
+O primeiro menor principal líder é zero.
+O determinante é \(\det = 0 \cdot 0 - 16 \cdot 16 < 0\).
+Uma Hessiana com o primeiro menor principal não negativo, mas com determinante negativo, é indefinida.
+Isto qualifica o ponto crítico como um ponto de sela, não um máximo.
+A função lucro \(\tilde{\pi}\) não é côncava, pois sua Hessiana não é semidefinida negativa.
+Consequentemente, as condições de primeira ordem, embora necessárias para um máximo interior, não são suficientes; o ponto que as satisfaz não é um extremante local.
+
+O contraste entre os dois casos destaca a importância fundamental da curvatura global da função objetivo.
+No primeiro exemplo, a combinação de uma função de produção côncava e homogênea com uma função de custo linear, um caso particular de convexidade, resulta em uma função lucro côncava, embora não estritamente côncava.
+Isso garante que as condições de primeira ordem sejam necessárias e suficientes para um máximo global.
+No segundo exemplo, a introdução de uma função de custo côncava elimina a concavidade global da função lucro.
+Nesse contexto, a solução do sistema de primeiras derivadas corresponde apenas a um ponto crítico de sela, o que exige a verificação das condições de segunda ordem para sua correta qualificação.
+Essa análise reforça que, em problemas de otimização não condicionada aplicados à economia, a suficiência das condições de primeira ordem e a existência de um máximo interior bem definido dependem fundamentalmente da concavidade da função objetivo.
+Por esse motivo, adota-se a hipótese de concavidade ou convexidade, conforme o caso, pois tal propriedade garante que o comportamento ótimo do agente seja plenamente caracterizado pelas condições de primeira ordem.
+
+O instrumental desenvolvido também se aplica a outros problemas econômicos canônicos.
+Exemplos incluem a discriminação de preços por um monopolista em mercados independentes, a imposição regulatória por um /policy maker/ e, em contexto econométrico, a estimação por mínimos quadrados ordinários, que busca minimizar a soma dos quadrados dos resíduos.
+Em todos esses casos, a estrutura analítica permanece a mesma.
+O procedimento inicia-se com as condições de primeira ordem para identificar candidatos, seguido da análise das condições de segunda ordem para qualificação local e da verificação de propriedades de concavidade ou convexidade para garantias globais.
+A análise de otimização não condicionada constitui, portanto, o fundamento para a formulação de problemas mais sofisticados com restrições, nos quais se empregam os métodos dos multiplicadores de Lagrange e a análise das matrizes hessianas orladas para avaliar problemas de otimização sujeitos a restrições econômicas, institucionais, físicas ou tecnológicas.
+
+* Otimização condicionada
+
+** Informações :noexport:
 
 Materiais:
 - Simon and Blume Ch 18
-- Simon and Blume Ch 19
+- Simon and Blume Ch 19 (Talvez não seja necessário)
+- Guidorizzi Ch 16.5-
 - Chiang 12
 - Chiang 13
 - Apêndice matemático Petri
 - Parte de Simon and Blume Ch 30
 - Simon and Blume Ch 30.4
 - Stewart 14.8
-- Ostaszewski Ch 15
-
-** TODO Restrições de Igualdade e de Desigualdade
-
-** TODO Condições de Kuhn-Tucker
-
-** TODO Multiplicador de Lagrange
-
-Materiais:
-
 - [[https://www.youtube.com/watch?v=Oc4p16QQ104&list=PLFU2umoZ7g9N9fKPz1ls_HGupvQh6RFyu&index=10][Lecture (Video)]]
 
-** TODO Aplicações à Economia
+Temas:
+- Restrições de Igualdade e de Desigualdade
+- Condições de Kuhn-Tucker
+- Multiplicador de Lagrange
+- Aplicações à Economia
 
+** Tópicos discutidos :noexport:
+:PROPERTIES:
+:ID:       20790538-ac06-4752-8ce5-ff001870a191
+:END:
+:LOGBOOK:
+CLOCK: [2026-01-30 Fri 10:22]--[2026-01-30 Fri 10:41] =>  0:19
+CLOCK: [2026-01-30 Fri 09:30]--[2026-01-30 Fri 10:09] =>  0:39
+CLOCK: [2026-01-29 Thu 19:02]--[2026-01-29 Thu 19:22] =>  0:20
+CLOCK: [2026-01-29 Thu 17:41]--[2026-01-29 Thu 18:55] =>  1:14
+CLOCK: [2026-01-28 Wed 18:14]--[2026-01-28 Wed 19:40] =>  1:26
+CLOCK: [2026-01-28 Wed 17:26]--[2026-01-28 Wed 18:12] =>  0:46
+CLOCK: [2026-01-28 Wed 16:06]--[2026-01-28 Wed 16:51] =>  0:45
+CLOCK: [2026-01-28 Wed 13:34]--[2026-01-28 Wed 14:35] =>  1:01
+CLOCK: [2026-01-28 Wed 11:44]--[2026-01-28 Wed 12:12] =>  0:28
+CLOCK: [2026-01-28 Wed 10:32]--[2026-01-28 Wed 11:29] =>  0:57
+:END:
+
+- Contexto:
+  - Gancho com economia como a ciência que estuda a alocação ótima de recursos escassos
+  - Na forma genérica, tem-se uma função objetivo e funções de restrição tanto de igualdade quanto de desigualdade
+    - Não negatividade é um exemplo de restrição de desigualdade
+    - Por convenção, foca-se na hipótese de não-positividade
+      - Então caso seja uma restrição de não-negatividade, torna-se \(-g_{i} \leq 0\)
+  - Otimização não condicionada está associada à independência entre as variáveis de escolha
+    - Otimizaão condicionada faz com que as variáveis de escolha não possam mais ser independentes
+      - Ex: O consumo de um bem implica na redução de outro bem dada a restrição orçamentária
+    - Como consequência, estreita-se o domínio e a imagem da função objetivo
+- Exemplos:
+  - Maximização da utilizade sujeito à restrição orçamentária
+    - Este exemplo pode ser sofisticado para ter horas trabalhadas e horas de lazer
+      - O total de horas não pode ultrapassar 24h, restringindo o número de horas trabalhadas e, por consequência, renda
+  - Maximização de lucro de uma firma competitiva
+    - Diferentemente do caso de restrição não-condicionada, impõe-se a restrição de lucro não-negativo
+    - Adiciona-se também restrição associada a disponibilidade de recursos
+- Restrições de igualdade:
+  - Exemplificado como a otimização de uma função objetivo genérica e associada à uma restrição de igualdade
+    - Por simplificação, ignora-se as restrições de não-negatividade
+  - Resolução geométrica:
+    - Desenha-se o conjunto de restrição
+    - Inclui-se as curvas de nível
+    - O objetivo da maximização é obter a combinação de argumentos que faça com que a função objetivo tangencie a restrição na curva de nível mais elevada
+    - Seja um ponto extremante, a inclinação da curva de nível neste ponto é a mesma que a inclinação da restrição
+      - Essa inclinação pode ser obtida por meio do Teorema da Função Implícita:
+        - \(- F_{x}(x0)/F_{y}(x0)\)
+        - \(- G_{x}(x0)/G_{y}(x0)\)
+        - \(F_{x}(x0)/G_{x}(x0) = F_{y}(x0)/G_{y}(x0)\)
+      - Considere que a expressão anterior é igual à \(\mu\), obtém-se o seguinte sistema:
+        - \(F_{x}(x0) - \mu G_{x}(x0) = 0\)
+        - \(F_{y}(x0) - \mu G_{y}(x0) = 0\)
+        - Tem-se três variáveis e duas equações
+          - A equação da própria restrição torna o sistema determinado (\(G(x) - c = 0\))
+          - Com isso, é possível escrever o sistema na forma Lagrangeana:
+            - \(\mathcal{L}(x, y, \mu) = F(x, y) - \mu (G(x, y) - c)\)
+          - A solução é obtida através das derivadas parciais em termos de cada incógnita e igualar à zero
+          - Importante: Sendo assim, tranformou-se o problema de otimização condicionada de duas variáveis em um problema de otimização não condicionada de três variáveis
+      - Qualificação da restrição: as derivadas parciais da função de retrição não podem ser zero no ponto extremante
+        - Se a restrição é linear, então essa qualificação será provavelmente respeitada
+        - Siginfica dizer que o ponto crítico não é um ponto crítico da função de restrição
+        - Sendo este o caso, existe um número real \(\mu\) tal que \((x^{\star}, y^{\star}, \mu^{\star}\) é ponto crítico da função Lagrangeana
+        - Sugere-se primeiro encontrar os pontos críticos da restrição e avaliar se eles atendem a restrição propriamente
+          - Se não atenderem à restrição, é possível utilizar o Lagrangeano
+          - Se atende, incluí-se este ponto junto dos demais candidatos obtidos pelo Lagrangeano
+  - Relação com gradientes:
+    - O método do multiplicador de Lagrange é um método que alinha vetores gradientes
+      - Esse alinhamento não precisa ser necessariamente na mesma direção
+      - Memo: O gradiente da função em um ponto é ortogonal à curva de nível, apontando para a direção de maior variação da função
+      - Os gradientes são multiplicações escalares entre si:
+        - \(\nabla F(\vec{x}) = \mu^{\star}\nabla G(\vec{x})\)
+  - A condição necessária para que um ponto pertercente ao conjunto deterlinado pela restrição seja um extremante local é que o sistema dado por \(\nabla F(\vec{x}) = \mu^{\star}\nabla G(\vec{x})\) e \(G(\vec{x}) = b\) seja compatível
+    - Os reais \(\mu\) que tornam o sistema compatível
+    - Prova: Considerando uma curva diferenciável \(\gamma\) que percorre ao longo da restrição
+      - A existência dessa curva é garantida pelo Teorema da Função Implícita
+      - Utilizando a regra da cadeia para explicitar a derivação ao longo da curva
+        - O produto escalar entre o gradiente da função objetivo na curva e a derivada da curva é zero
+          - \(\nabla f(\gamma(t_{o})) \gamma\prime(t_{0}) = 0\)
+          - Ortogonal à curva de nível
+          - O mesmo vale para o caso da curva ao longo da restrição (\(\nabla g(\gamma(t_{o})) \gamma\prime(t_{0}) = 0\))
+          - Logo, existe um \(\mu\) tal que \(\nabla f = \mu \nabla g\)
+    - Caso a função objetivo seja da classe \(C^{1}\) e o gradiente não é nulo, então a curva de nível que passa pelo ponto crítico é tangente à restrição
+      - Se o gradiente da função objetivo for nulo, nada pode-se afirmar em relação à tangência
+- Várias restrições de igualdade:
+  - Considere o caso de \(m\) restrições de igualdade
+  - Qualificação generalizada da restrição
+    - A qualificaço envolve a Matrix Jacobiana das restrições (\(m\times n\))
+    - Um ponto genérico \(\vec{x}\) é chamado de um ponto crítico  de \(\vec{h} = (h_{1}, \ldots, h_{m})\) se o posto da Jacobiana for menor que \(m\)
+    - O conjunto de restrições é não degenerado (atende a qualificação de restrição não degenerada) se o posto da Jacobiana no ponto \(\vec{x}\) é \(m\)
+      - Trata-se de uma condição de regularidade
+        - Restrição não ser qualificada significa que existem irregularidades de fronteira
+        - Também expresso em termos de arco qualificador
+      - O posto da Jacobiana diz o número máximo de restrições que podem estar ativas ao mesmo tempo
+  - Generalização:
+    - Considere o conjunto de restrição \(C_{h}\):
+      - \(C_{h} \equiv {\vec{x} : h_1(\vec{x} = a_1, \ldots, h_m(\vec{x}) = a_m)}\)
+    - Considere que as restrições não são degeneradas
+    - Então, existe \(\vec{\mu}\) tal que \((\vec{x}, \vec{\mu})\) é um ponto crítico do Lagrangeano:
+      - Em outras palavras, o ponto iguala às derivadas parciais em termos das variáveis e dos multiplicadores à zero
+      - Existe uma combinação linear entre o vetor gradiente da função objetivo e as funções de restrição
+  - Checando se as restrições são degeneradas:
+    - Monta-se a matriz Jacobiana e avalia-se as condições para que torne o posto menor que \(m\)
+    - Checa-se se essas condições também atendem às restrições
+    - Não atendendo a restrição, monta-se o Lagrangeano
+  - Outra forma de demonstrar o caso para várias restrições de igualdade é por meio do produto vetorial
+    - O produto vetorial entre os gradientes de duas restrições é não nulo [INCLUIR NA RESPOSTA]
+      - Em outros termos, esses vetores não são paralelos
+      - Calcula-se o produto vetorial entre \(\vec{g}\), \(\vec{h}\) e \(\vec{e}\) (base canônica)
+- Condições de segunda ordem [Não incluir na resposta]:
+  - O papel desempenhado pelos multiplicadores de lagrange não é o mesmo que o desempenhado pelos valores críticos em otimização não condicionada
+    - O que faz com que as condições de segunda ordem não devam ser analizados
+  - As novas condições equivalentes às condições de segunda ordem podem ser obtidas a partir da derivida do diferencial \(d^{2}z\)
+    - Lembrando que os diferenciais das variáveis de escolha não são mais independentes
+    - Não gera uma forma quadrática como no caso não condicionado
+      - No entanto, a restrição habilita expressas como uma forma quadrática
+  - Seguindo a exposição de Chiang, chega-se no Hessiano orlado
+    - Seria a forma quadrática sujeita à restrição
+  - Importante: Condição suficiente de segunda ordem não é necessária [incluir na resposta]
+    - Não satisfazer esses critérios não implica excluir que os pontos sejam extremantes
+    - Normalmente ou essa condição é satisfeita ou supõe-se que é satisfeita
+  -
+- Restrições de desigualdade:
+  - Notação: restrições de desigualdade serão denotadas por \(h\) e os multiplicadores associados serão denotados por \(\lambda\)
+  - Se o ponto em que a função objetivo ocorre na fronteira da restrição de igualdade, diz-se que a restrição está ativa
+    - Neste caso, os vetores gradientes da função objetivo e da restrição estão alinhados
+      - Então, os gradientes são multiplicações escalares moduladas por \(\lambda\)
+  - Nestes casos, o sinal do multiplicador é importante
+  - Para o caso em que a restrição está ativa, as funções devem apontar para uma mesma direção
+    - \(\nabla f = \lambda \nabla g\), com \(\lambda \geq 0\) necessariamente
+    - Por se tratar de um caso de fronteira, é possível utilizar a forma da função Lagrangeana
+      - Resolve-se tal como antes, também avaliando a qualificação da restrição
+  - Para o caso em que o ponto ótimo ocorre no interior da restrição, o ponto crítico deve ser um extremante local da função
+    - Dito de outra forma, avalia-se uma restrição não condicionada de \(f\)
+      - Avaliam-se os pontos críticos de \(f\) unicamente, dado que a restrição não está ativa
+      - Dito de outro modo, ainda pode-se utilizar a formulação de Lagrange, contanto que \(\lambda\) é zero necessariamente
+      - As restrições não ativadas não desempenham nenhum papel nas condições de primeira ordem
+    - Comparando com o caso anterior, partindo do ponto de fronteira, o gradiente das funções apontam para direções opostas
+    - De forma equivalente, diz-se que a restrição não está ativa
+  - Generalizando para ambos os casos, avaliam-se as condições de folga compelmentar (do inglês, /complementary slackness condition/, [checar se existe termo melhor])
+    - O produto do multiplicador pela restrição deve ser zero
+      - \(\lambda (g - c) = 0\); \(\lambda = 0\) ou \(g = c\)
+    - Implicação: Como não se sabe se a restrição estará ativa a priori ou não, não é possível utilizar \(\partial \mathcal{L} / \partial \lambda = 0\)
+      - Como substituição, este caso é bifurcado em dois em que a restrição pode estar ativa ou não
+      - Sendo assim, para o caso com duas variáveis, tem-se 5 equações
+        - As duas derivadas parciais em relação às duas variáveis
+        - A condição de folga complementar
+        - Multiplicador positivo
+        - Restrição de desigualdade propriamente dita (escrita sempre com \(g \leq b\))
+          - Atenção: está convenção é relevante
+      - Importante: a qualificação da restrição só precisa ser avaliada se a restrição estiver ativa
+      - Existe restrição sobre o sinal do multiplicador (não-negatividade)
+  - Observação: para o caso de minimização, os multiplicadores devem estar alinhados, mas com direções opostas (em contraste com a maximização)
+- Várias restrições de desigualdade:
+  - Considere uma função \(f\), e \(k\) restrições de desigualdade \(g\), ambos dependem de \(n\) variáveis
+  - Considere que as primeiras \(k_{0}\) estão ativas e as \(k - k_{0}\) demais não
+  - Suponha que as restrições \(k_{0}\) restrições ativas não são degeneradas
+    - Como consequência, o posto da matriz é \(k_{0}\)
+  - Nessas condições, existirão \(\lambda_{1}, \ldots, \lambda_{k}\) multiplicadores tais que:
+    - \(\partial \mathcal{L} / \partial x_{i} = 0, i = 1, \ldots, n\)
+    - \(\lambda_{j}(g_{j} - b_j) = 0, j = 1, \ldots, k\)
+    - \(\lambda_{j} \geq 0, j = 1, \ldots, k\)
+    - \(g_{j} \leq b_{j}, j = 1, \ldots, k\)
+    - Trata-se, portanto, de um sistema com \(n + 3k\) equações
+- Restrições mistas:
+  - Este caso reúne os dois anteriores em que as restrições de igualdade devem ser avaliadas se são degeneradas ou não junto com as desigualdades ativas
+  - No caso de \(n\) variáveis, \(m\) restrições de igualdade, \(k\) restrições de desigualdade, o problema envolve \(n + m + 3k\) equações
+- Minimização condicionada:
+  - As condições de primeira ordem são os mesmos que os casos de maximização
+  - A diferença recai sobre o sinal do multiplicador no caso de desigualdades
+  - Caso desejasse minimizar uma função dadas as mesmas restrições, a alteração seria sobre o sinal do multiplicador, precisando ser não-positivo
+  - Escreve-se o multiplicador da mesma forma
+  - No entanto, questões de minimização costumam estar associados à \(g \geq b\) invés de \(g \leq b\)
+    - Sendo este o caso, pode-se preservar as desigualdades como estão e avaliar casos em que os multiplicadores são *positivos*
+    - As condições de não-negatividade podem entrar no multiplicador diretamente
+    - Alternativamente, pode-se alterar \(f\) por \(-f\), mantendo todo o resto tal como em um problema de maximização
+      - Prefiro essa forma
+      - [CHECAR SE ALGUMA DESIGUALDADE DEVE SER INVERTIDA]
+- Formulação de Kuhn-Tucker:
+  - os problemas mais comuns em economia envolvem somenter estrições de desigualdade e conjuntos de restrições de não-negatividade
+  - Separa-se as restrições de não-negatividade das demais para permitir uma formulação especial do Lagrangeano \(\tilde{\mathcal{L}}\)
+  - Assume-se que as restrições não são degeneradas
+  - Associando os multiplicadores \(\nu\) às não negatividades para tornar essa formulação mais específica
+    - Tanto \(\lambda\) quanto \(\nu\) devem ser não-negativos
+    - As condições associadas aos \(\lambda\) se mantém as mesmas \((\lambda \cdot (g - c) = 0)\)
+    - As condições associadas às não-negatividade são \(\nu_{i}\cdot x_{i} = 0\)
+  - O Lagrangeano de Khun-Tucker não inclui às não negatividades de modo que \(\mathcal{L} = \tilde{\mathcal{L}} + \sum_{i=1}^{n}\nu_{i}x_{i}\)
+    - \(\partial \mathcal{L} / \partial x_{j} =  \partial \tilde{\mathcal{L}}/ \partial x_{j} + v_{j} = 0\)
+    - \(\partial \tilde{\mathcal{L}}/ \partial x_{j} = - v_{j}\)
+    - Como consequência:
+      - \(\partial \tilde{\mathcal{L}}/ \partial x_{j} \leq 0\) E \(x_{j} \partial \tilde{\mathcal{L}}/ \partial x_{j} = 0 \)
+    - Combinando todas as condições, existem quatro conjunto de situações:
+      - Derivada do Lagrangeano modificado em relação à variável deve ser não positiva
+      - Derivada do Lagrangeano modificado em relação ao multiplicador deve ser não negativa
+      - Produto entre a variável e a derivada do lagrangeano em relação à ela deve ser zero
+      - Produto entre o multiplicador e a derivada do lagrangeano em relação ao multiplicador deve ser zero
+      - O sistema torna-se \(n + k\) invés de \(n + 3k\)
+        - Isso porque as condições lógicas devem ser tomadas juntas
+    - Exemplo:
+      - Aplicação para o caso de maximização da utilidade
+    - Sob algumas hipóteses, a CPO dessa formulação pode ser suficiente ou até mesmo necessária e suficiente
+      - Para que as CPOs sejam condições necessárias se a restrição for qualificada
+      - Se as restrições formarem um conjunto convexo composto somente por restrições lineares, então as condições de Kuhn-Tucker serão válidas na solução ótima
+        - Não é necessário checar irregularidades de fronteira
+        - Isso porque tem-se associada à restrição de não-negatividade
+        - [IMPORTANTE] Isso pode ser uma forma de argumentar o porquê não será necessário avaliar as condições de segunda ordem no exemplo numérico
+      - Condições de suficiência (para maximização):
+        - Função objetivo é diferenciável e côncava no ortante não-negativo
+        - Cada função de restrição é diferenciável e convexa no ortante não-negativo
+          - Se as restrições forem lineares, esta condição será atendida
+        - O ponto crítico satisfaz as condições de máximo de Kuhn-Tucker
+        - Note que não é preciso qualificar a restrição
+        - Também é possível ampliar para o caso de quase-concavidade/convexidade
+    - Uma forma de interpretar essa formulação é por meio do caso de otimização de lucro [INCLUIR AO DISCUTIR O EXEMPLO]
+      - Existe o lucro marginal e o custo marginal associado à cada produto/recurso
+        - O lucro marginal de cada produto não deve ser maior que o custo marginal
+          - Não é permitida subimputação [entender]
+        - A folga complementar implica que se determinado produto é produzido, seu lucro marginal deve ser igual ao custo marginal imputado agregado
+        - Se o i-ésimo produto não for totalmente utilizado na solução ótima, seu preço-sombra sombra deve ser zero (decorrência da folga complementar)
+          - Complementarmente, se o preço-sombra for positivo, então ele é necessariamente um recurso totalmente utilizado
+          - No contexto de maximização de lucro de uma firma, o preço sombra indica o máximo que a firma estaria disposta a pagar por essa unidade adicional do insumo
+        - Implicação da folga complementar: Se a restrição não estiver ativa no ponto ótimo, então abrandá-la não terá efeito algum (por isso o multiplicador de lagrange associado é zero)
+          - Se abrandar a restrição não aumentar o lucro bruto, então a restrição é vinculadora
+- Aplicações econômicas:
+  - Maximizaão de uma função utilidade do tipo Cobb-Douglas restrita à restrição orçamentária
+    - Sofisticando para um problema em que a função utilidade não é homogênea de grau 1 e a restrição é um círculo
+      - Existe um ponto crítico que não satisfaz a restrição, então não viola a qualificação da restrição
+      - Apesar deste exemplo ter 6 candidatos a extremantes, por se tratar de uma otimização em um conjunto compacto, pode-se apenas substituir os pontos críticos e avaliá-los
+    - Outra sofisticação é incluir um racionamento em um dos bens (\(x \leq \bar X\))
+  - Maximização de vendas com publicidade
+    - Problema: Maximização das vendas de modo que o lucro não pode ser inferiror à \(m\)
+    - Adiciona-se um custo com publicidade \(a\)
+    - Seja \(C\) uma função que associa um custo ao nível de produção
+      - Supõe-se custo marginal crescente
+    - Receita cresce com publicidade \(\partial R / \partial a > 0\)
+    - Situação-problema: Marximizar vendas de modo que tanto a produção quanto os gastos com publicidade sejam não negativos
+      - Observação: Maximização da receita, não do lucro
+        - A restrição sobre o lucro é uma das restrições do problema de maximização
+    - Etapas:
+      - Monta-se o Lagrange (com atenção à consistência de sinal)
+      - Assumindo que as retrições não são degeneradas
+      - Neste caso, obtém-se que ambos os multiplicadores são positivos, logo as restrições estão ativas
+        - Assim, o lucro é idêntico ao limite inferior
+        - Obtém-se que o lucro marginal é negativo no ponto extremante
+        - Resultado: Nível de produção de equilíbrio é maior que o nível de produção no problema de otimização [entender]
+    - Observação: Este parece ser um exemplo interessante para aplicar a formulação de Khun-Tucker
+      - Como forma de modificação, pode-se pensar como outro tipo de custo
+    - Outra sofisticação poderia ser a introdução de restrição de capacidade à um máximo
+  - Efeito Averch-Johnson:
+    - Considere uma agência regulatória que impõe uma taxa de retorno justa à um monopolista de modo que o lucro líquido é suficiente para cobrir as operações
+      - Taxa de retorno deve ser maior que o custo de capital
+      - Se essa taxa de retorno for muito elevada, ela torna a restrição inativa (irrelevante)
+      - Resultado: o custo marginal do capital é maior que a receita marginal do produto
+        - Como consequência, firma substitui capital por trabalho e opera em um nível que o custo não é minimizado
+          - Ação regulatória distorce a proporção eficiente entre capital e trabalho
+  - Maximização da utilidade e demanda do consumidor [Apenas mencionar na resposta, sem resolver um exemplo específico]:
+    - Mostra-se como obter as demandas marshalianas
+    - Taxa marginal de substituição é igual aos preços relativos que é igual ao multiplicador de lagrange
+    - Nesse contexto, o multiplicador de Lagrange pode ser interpretado como a utilidade marginal do dinheiro
+      - Quando a utilidade é maximizada
+    - Além disso é possível expressar a inclinação da curva de indiferença
+      - Memo: preços relativos fornecem a inclinação da reta orçamentária
+    - Por se tratar de uma restrição linear, segue-se para o Hessiano aumentado
+      - Concluindo-se que se trata de um ponto de máximo
+    - Mencionar que é possível utilizar o teorema da função implícita para expressar as variáveis endógenas (quantidades e multiplicador) em termos das variáveis exógenas (preços e renda)
+      - Para avaliar como aumentos na renda afetam as outras variáveis, multiplica-se o Hessiano aumentado pela derivada das variáveis endógenas em termos da renda pela derivada em termos da variável exógena
+  - Minimização de custo sujeito à um nível de produção definido
+    - Custo definido como preços dos fatores multiplicados pelos coeficientes técnicos
+    - Sujeito à restrição de que \(Q = Q_{o}\)
+    - O multiplicador de lagrange fornecerá a combinação ótima de insumos
+      - Nesse contexto, é o custo marginal da produção no ponto ótimo
+    - Adiante, são apresentadas as rotas de expansão [talvez isso possa ser interessante de mencionar nas conclusões]
+      - Mantendo fixos os preços
+      - Mantendo fixa a relação entre os insumos
+      - Postula-se aumentos sucessivos do limite de produção que e traçar o efeito combinado do custo mínimo
+      - Rota de tangência é o lugar geométrico dos pontos de expansão
+      - Se admitir convexidade estrita, a rota de expansão pode ser dedudiza da condição de primeira ordem
+      - Observação: qualquer função de produção homogênea resultará em uma rota de expansão linear
+        - O grau da homogeneidade irá descrever o distanciamento das isoquantas
+        - Funções homotéticas (classe mais abrangente que homogêneas) também pode produzir esse resultado
+          - Em contexto de economia, a restrição é mais forte que em matemática (derivadas devem ser positivas)
+          - Implica monotonicidade
+- Máximos e mínimos sobre conjunto compacto [não sei se devo incluir]
+  - Conjunto compacto é fechado e limitado
+    - Conjunto limitado: se estiver contido em uma bola com centro na origem
+    - Conjunto fechado: se o conjunto complementar for aberto
+    - Exemplo: Conjunto inserido dentro de uma bola (podendo ser aberta) de raio \(r\)
+  - Teorema de Weierstrass
+    - Se a função for contínua em um conjunto compacto \(A\), então existem pontos dentro de \(A\) que a função assumirá valores máximo e mínimo
+    - Similar a ideia de que devem ser avaliados os pontos de fronteira
+    - O Teorema garante que tais pontos existem
+    - As condições de primeira ordem se aplicam unicamente as pontos interiores desse conjunto \(A\)
+    - O maior valor entre os pontos críticos e os pontos de fronteira, será o ponto máximo (análogo para o ponto mínimo)
+  - Racionamento em tempos de Guerra (obs, podendo ser adaptado para COVID)
+    - Sendo este o caso, pode-se avaliar uma função utilidade com quota de um bem específico
+      - Neste caso, raciona-se por meio de cupons (precisa de cupom, não de dinheiro para adquirir)
+        - Paga dois preços (cupom e o preço monetário)
+        - Introduz-se o preço do cupom
+        - Discute-se a diferença matemática e vinculadora da restrição orçamentária e de racionamento
+    - Ou restrição nos insumos em função das quarentenas (não mobilidade)
+  - Determinação de preço de pico (carga máxima)
+    - Aqui modela-se explicitamente restrições de capacidade
+    - Associa-se o atendimento de um mercado primário e depois atende-se o mercado secundário até o limite da capacidade (exemplo diurno e noturno)
+    - Custo de capacidade para o mercado secundário não são relevantes normalmente (já estão pagos pelo mercado primário)
+    - No entanto, pode ser que a demanda do mercado secundário exceda a capacidade
+      - Nestes casos, ambos os mercados devem ser levados em conta
+      - Isso me leva a crer que esse exemplo é bastante complicado para incluir na prova
+- Observações:
+  - O resultado usual de que o consumidor irá exaurir toda a renda é decorência da monotonicidade da função utilidade (não-saciedade)
+  - A avaliação do posto pode ser feita a partir de colunas linearmente independentes
+  - Caso o posto da matriz jacobiana seja menor que o número de restrições, ao menos uma não estará ativa
+  - A resolução de problemas de otimização com restrições de desigualdade podem ser facilitadas se começar pelas restrições de não negatividade e com os sinais dos multiplicadores
+  - O método de multiplicadores de Lagrange encontra extremantes *locais* sujeitos às condições impostas
+  - A forma com que Guidorizzi apresenta é definindo as retrições em termos de conjuntos
+    - Sempre avaliando se o gradiente da restrição não é nulo (no conjunto de restrição) e expressando que são os valores que tornam o respectivo sistema compatível
+      - Função objetivo definida no conjunto aberto
+    - Depois avalia-se se o ponto crítico é extremante ou não
+    - Também deve-se deixar evidente se a restrição é compacta ou não
+  - Caso o problema de otimização envolva formas quadráticas (tanto na função objetivo quanto na função de restrição), os autovetores da matriz simétrica são os multiplicadores de lagrange
+  - A forma de  provar o significado do multiplicador de lagrange por meio da regra da cadeia é [ISSO DEVE SER MELHORADO]:
+    - Computar a regra da cadeia em termos de variações da restrição
+      - Isso é possível pois existe uma relação implícita
+    - O que está sendo feito é a derivada das componentes na direção da restrição
+    - Como as derivadas parciais em termos das variáveis é zero, só é preciso avaliar a derivada do lagrangeano em termos da restrição
+      - O lagrangenado pode ser expresso como sendo uma função univariado ao longo de uma curva
+      - \(d \mathcal{L}^{\star} / d c = \partial \mathcal {L} / \partial c\) em que \(\mathcal{L}^{\star}(c)\)
+        - Como consequência: \( \partial \mathcal {L} / \partial c = \lambda(c)\)
+        - A restrição é a única variável exógena uma vez que os pontos ótimos são endógenos
+  - A vantagem do multiplicador de lagrange é que ele permite não ter que parametrizar a curva (checar)
+  - A restrição de igualdade pode ser pensada em termos de uma curva de nível
+    - O gradiente da restrição será perpendicular a essa curva de nível em um ponto
+    - Mais precisamente, a restrição é uma curva e não exatamente uma curva de nível uma vez que não está restrita a um plano
+    - Sendo assim, é uma curva de nível da superfície da restrição e não da função objetivo
+  - Máximo restrito nunca pode exceder o máximo incondicionado
+  - Em geral, o número de restrições deve ser menor que o número de variáveis de escolha
+    - Caso contrário, o domínio estaria restrito a um ponto, restringindo a possibilidade de escolha (grau de liberdade)
+  - Notação [não incluir na resposta]
+    - Chiang adota a notação de sinal inversa de Simon
+    - No entanto, para ter a interpretação do multiplicador a partir da regra da cadeia, é preciso utilizar a notação como em Chiang [aguardando]
+  - Também é possível representar o método de lagrange por meio do diferencial total
+    - Considerando o diferencial total da restrição:
+      - \(\dg = g_{x}dx + g_{y}dy = 0\), sendo igual à zero para indicar que respeita a restrição
+      - Essa relação torna \(dx\) e \(dy\) dependentes, não permitindo mais tomar diferenciais arbitrários
+    - No entanto, o método por diferenciais fornece apenas os valores críticos enquanto o método de lagrange fornece o valor do multiplicador
+  - Ao expressar o problema como sendo uma função implícita, obtem-se uma Hessiana orlada
+    - Para ter a mesma estrutura em relação às outras respostas, os multiplicadores devem ser as primeiras variáveis da função
+      - \(F_{\lambda} = 0\)
+      - O Jacobiano das variáveis endógenas (inclui-se os multiplicadores) é idêntico à Hessiana orlada
+  - Função Cobb-Douglas é um caso particular de uma função CES com \(\rho = 0\) com uma elasticidade de substituição unitária
+  - Em Chiang são discutidas funções objetivo inversas e funções máximo
+    - Resumidamente, funções máximo são aquelas que mapeam os valores máximos da função na medida que seus parâmetros variam
+    - Talvez esteja associado à rota de expansão
+    - No caso de uma função de produção, expressa-se os valores ótimos dos insumos em termos do salário e juros e do preço
+      - Substituindo na função lucro, obtém-se a função máximo do lucro
+      - Sendo assim, é possível obter os efeitos de variações de um dos insumos o lucro máximo
+        - Isso leva em conta a capacidade da firma substituir os insumos
+          - Implicação: Derivada da função lucro em relação ao salário (juros) é a negativa da função demanda por trabalho (capital)
+          - Essas condições são conhecidas como Lema de Hotelling
+            - Esta é outra manifestação do Teorema do Envelope
+              - Teorema do envelope estabelece que a derivada total da função máximo em termos da restrição é igual à derivada particial da função em termos dessa restrição
+                - Isso porque todas as outras variáveis estão no ótimo
+              - Isso ajuda a analisar a função em termos da restrição sem precisar resolver o problema de restrição propriamente dito
+            - Quando a função objetivo é parametrizada, a derivada total dessa função em termos da restrição é igual à derivada parcial do Lagrangeano em termos da restrição.
+      - O teorema do envelope ajuda na interpretação mais geral do significado do multiplicador de Lagrange [mencionar isso na resposta]
+        - Isso porque as variáveis endógenas pode ser expressas em termos da restrição (único parâmetro exógeno), obtendo a função valor máximo
+        - Em seguida, calcula o diferencial total em termos da restrição
+          - Como as CPOs são válidas, resta-se apenas o diferencial da função valor máximo em termos da restrição sendo igual ao valor do multiplicador de Lagrange
+            - Significado: taxa de variação do valor máximo da função objetivo quando a restrição varia
+  - Também foi discutida a condição de reciprocidade, mas não será detalhada
+  - Também é discutida dualidade
+    - Essencialmente, é a relação entre dois problemas de otimização. Se um exigir maximização (o primordial), o dual exigirá minimização
+    - Ex: Maximização da utilidade dada a renda vs minimização do dispêndio dada a utilidade
+
+** Resposta 10 :ignore:
+:PROPERTIES:
+:ID:       ddfa2a5c-c885-4246-b1ff-150c1df9b38c
+:END:
+:LOGBOOK:
+CLOCK: [2026-01-30 Fri 17:51]--[2026-01-30 Fri 18:41] =>  0:50
+CLOCK: [2026-01-30 Fri 14:09]--[2026-01-30 Fri 16:32] =>  2:23
+:END:
+
+A otimização condicionada constitui o arcabouço formal por meio do qual a teoria econômica modela decisões de alocação ótima sob escassez, sobretudo a partir da abordagem marginalista.
+Quando as variáveis de escolha não são independentes, mas sim submetidas a vínculos impostos pelas relações econômicas, a otimização passa a ser condicionada a um conjunto de restrições.
+Estas podem ser de igualdade, como uma restrição orçamentária que se exaure, ou de desigualdade, como limites de capacidade ou requisitos de não-negatividade.
+O tratamento matemático unificado para tais problemas é fornecido pelo método dos multiplicadores de Lagrange e por sua generalização para desigualdades, conhecida como condições de Kuhn-Tucker.
+Em todos esses casos, a solução ótima emerge da interação entre a forma da função objetivo e a geometria do conjunto de restrições.
+Ao longo desta exposição, adota-se a convenção de expressar restrições de desigualdade na forma de não-positividade, enquanto vetores serão denotados por setas sobreescritas, como em \(\vec{x}\), para diferenciá-los de escalares.
+
+A estrutura da exposição está organizada da seguinte forma.
+Primeiro, apresenta-se o método dos multiplicadores de Lagrange para restrições de igualdade, destacando a interpretação geométrica por meio de gradientes e o significado econômico do multiplicador.
+Na sequência, as condições de primeira ordem são generalizadas para restrições de desigualdade, utilizando as condições de Kuhn–Tucker e a folga complementar. São discutidos, ainda, os pressupostos de concavidade e convexidade que asseguram a suficiência dessas condições para caracterizar um extremante global.
+Na sequência, desenvolve-se um exemplo numérico de maximização da produção Cobb–Douglas, no qual se aplicam as condições de Kuhn–Tucker.
+Por fim, discute-se a extensão desse instrumental a outros contextos centrais da análise econômica, incluindo problemas de escolha sob restrições, de regulação e de equilíbrio geral.
+
+O problema de otimização condicionada com restrições de igualdade pode ser introduzido de forma geométrica.
+Dada uma função objetivo \( F(\vec{x}) \) de classe \( C^1 \) e uma restrição \( G(\vec{x}) = c \), procura-se o ponto na curva (ou superfície) definida por \( G(\vec{x}) = c \) que maximiza \( F \).
+Se \(\vec{x}^*\) é um extremante local e o gradiente \( \nabla G(\vec{x}^*) \) é não nulo (qualificação da restrição, adiante), então os vetores gradientes \( \nabla F(\vec{x}^*) \) e \( \nabla G(\vec{x}^*) \) são paralelos.
+Esta condição de paralelismo, que garante a tangência entre a curva de nível de \( F \) e a curva de restrição, é formalizada pela existência de um escalar \( \mu^* \) tal que \( \nabla F(\vec{x}^*) = \mu^* \nabla G(\vec{x}^*) \).
+
+
+A justificativa analítica emerge naturalmente da regra da cadeia.
+Suponha que a restrição defina implicitamente uma curva diferenciável \( \vec{\gamma}(t) \) que passa por \(\vec{x}^*\) no parâmetro \( t_0 \), isto é, \( G(\vec{\gamma}(t_{0})) = c \) e \( \vec{\gamma}(t_0) = \vec{x}^* \).
+A função \( F \) restrita a esta curva é \( f(t) = F(\vec{\gamma}(t)) \).
+Se \(\vec{x}^*\) é um extremante local restrito, então \( t_0 \) é um extremante local de \( f \), implicando \( f'(t_0) = 0 \).
+Pela regra da cadeia, \( f'(t_0) = \nabla F(\vec{\gamma}(t_0)) \cdot \vec{\gamma}\,'(t_0) = 0 \).
+Intuitivamente, isso significa que, no ponto ótimo restrito, qualquer deslocamento admissível ao longo da curva de restrição não pode aumentar o valor da função objetivo.
+Como o vetor tangente \(\vec{\gamma}\prime(t_0)\) representa precisamente essas direções admissíveis, o gradiente de \(F\) deve ser ortogonal a todas elas, caracterizando um ponto de tangência entre a curva de nível de \(F\) e a restrição.
+Se existisse alguma direção tangente admissível \(\vec{v}\) tal que \(\nabla F(\vec{x}^*) \cdot \vec{v} \neq 0\), seria possível aumentar ou diminuir \(F\) ao longo da curva, o que contradiz a otimalidade local.
+Similarmente, derivando a identidade \( G(\vec{\gamma}(t)) = c \), obtém-se \( \nabla G(\vec{\gamma}(t_0)) \cdot \vec{\gamma}\,'(t_0) = 0 \).
+Geometricamente, \(\nabla F\) é normal à superfície de nível de \(F\) enquanto \(\nabla G\) é normal à superfície de nível de \(G\).
+Portanto, ambos os gradientes são ortogonais ao vetor tangente \( \vec{\gamma}\,'(t_0) \).
+Assumindo que a restrição seja qualificada, os gradientes \( \nabla F(\vec{x}^*) \) e \( \nabla G(\vec{x}^*) \) são linearmente dependentes.
+
+Antes de prosseguir, é importante destacar que o conjunto de restrição \(G(\vec{x}) = c\) é dito qualificado em um ponto \(\vec{x}^\star\) se \(\nabla G(\vec{x}^\star) \neq \vec{0}\).
+No caso de múltiplas restrições de igualdade, a qualificação exige que os vetores gradientes das restrições ativas sejam linearmente independentes no ponto considerado.
+Essa condição garante a existência de um espaço tangente bem definido, que, localmente, pode ser parametrizado pela restrição, e a validade das condições de primeira ordem.
+Sob essa hipótese de qualificação, uma condição necessária para que \(\vec{x}^\star\) seja extremante local de \(F\) sujeito a \(G = c\) é a existência de \(\mu^\star \in \mathbb{R}\) tal que
+\[\nabla F(\vec{x}^\star) = \mu^\star \nabla G(\vec{x}^\star), \quad G(\vec{x}^\star) = c.\]
+é um sistema compatível.
+
+
+Esta condição, juntamente com a própria restrição, forma um sistema cujas soluções são candidatas a extremantes.
+A formalização algébrica introduz a Lagrangeana
+\[\mathcal{L}(\vec{x},\mu) = F(\vec{x}) - \mu(G(\vec{x}) - c),\]
+cujo sistema \(\nabla \mathcal{L}_{\vec{x}} = \vec{0}\), \(\partial \mathcal{L}/\partial \mu = 0\) reproduz \(\nabla F = \mu \nabla G\) e \(G = c\).
+O multiplicador de Lagrange \( \mu \) surge como uma variável auxiliar que permite incorporar a restrição diretamente na função Lagrangeana, transformando o problema condicionado em um problema de otimização não condicionada nas variáveis \( \vec{x} \) e \( \mu \).
+
+Para restrições de desigualdade da forma \( H(\vec{x}) \leq d \), a solução ótima pode ocorrer no interior do conjunto viável, onde \( H(\vec{x}) < d \), ou na fronteira, onde \( H(\vec{x}) = d \).
+No primeiro caso, a restrição é dita inativa e, localmente, o problema se assemelha a uma otimização não condicionada, com a condição de primeira ordem sendo simplesmente \( \nabla F(\vec{x}^*) = \vec{0} \).
+No segundo caso, a restrição é ativa e o problema se reduz a uma otimização com restrição de igualdade, mas com uma condição adicional sobre o sinal do multiplicador.
+
+As condições de Kuhn-Tucker unificam esses cenários.
+Para um problema de maximização \( \max F(\vec{x}) \) sujeito a \( H(\vec{x}) \leq d \), define-se o Lagrangeano \( \mathcal{L}(\vec{x}, \lambda) = F(\vec{x}) - \lambda (H(\vec{x}) - d) \), com \( \lambda \geq 0 \).
+As condições necessárias de primeira ordem, sob qualificação adequada da restrição ativa, são:
+
+\[
+\nabla \mathcal{L}_{\vec{x}}(\vec{x}^*, \lambda^*) = \vec{0}, \quad \lambda^* \geq 0, \quad H(\vec{x}^*) \leq d, \quad \text{e} \quad \lambda^* (H(\vec{x}^*) - d) = 0.
+\]
+
+A última equação corresponde à condição de folga complementar, unificando ambos os casos de vínculo das restrições.
+Se a restrição é inativa (\( H(\vec{x}^*) < d \)), então \( \lambda^* = 0 \); se é ativa (\( H(\vec{x}^*) = d \)), então \( \lambda^* \geq 0 \).
+Para maximização, o sinal não negativo de \( \lambda \) garante que \( \nabla F(\vec{x}^*) = \lambda^* \nabla H(\vec{x}^*) \) com \( \lambda^* \geq 0 \), indicando que os gradientes apontam na mesma direção.
+Em problemas com múltiplas restrições de desigualdade e igualdade, as condições se generalizam, incorporando um multiplicador para cada restrição.
+
+Quando o conjunto viável é convexo e definido por restrições lineares, as condições de qualificação usuais são automaticamente satisfeitas sempre que o conjunto viável possui interior não vazio.
+Nesse caso, não surgem irregularidades de fronteira relevantes e as condições de Kuhn–Tucker são plenamente aplicáveis, sem necessidade de verificações adicionais de regularidade local.
+Além disso, em problemas em que a função objetivo é côncava e as restrições de desigualdade são convexas, as condições de Kuhn–Tucker, juntamente com a qualificação das restrições, tornam-se necessárias e suficientes para caracterizar extremantes globais. Assim, dada a concavidade (convexidade) global do problema, a verificação das condições de segunda ordem é imediata, garantindo que qualquer extremante é ótimo.
+
+Vale pontuar que, em contextos de problemas econômicos, restrições de não-negatividade são bastante recorrentes.
+Isso motiva uma formulação alternativa das condições de Kuhn–Tucker, amplamente utilizada na teoria econômica.
+Considerando um problema de maximização \(F(\vec{x})\) sujeito a restrições de desigualdade \(G_i(\vec{x}) \leq 0\), \(i=1,\dots,k\), e de não negatividade \(\vec{x} \geq \vec{0}\).
+Neste caso, a Lagrangeana modificada de Kuhn–Tucker é definida como
+\[
+\tilde{\mathcal{L}}(\vec{x}, \vec{\lambda}) = F(\vec{x}) - \sum_{i=1}^k \lambda_i G_i(\vec{x}),
+\]
+onde \(\vec{\lambda} \geq \vec{0}\) é o vetor de multiplicadores associados às restrições \(G_i(\vec{x}) \leq 0\).
+
+As condições de primeira ordem na formulação modificada de Kuhn–Tucker para maximização são:
+\begin{align*}
+\frac{\partial \tilde{\mathcal{L}}}{\partial x_j}(\vec{x}^\star, \vec{\lambda}^\star) &\leq 0, \quad j = 1,\dots,n, \\
+x_j^\star &\geq 0, \quad j = 1,\dots,n, \\
+x_j^\star \cdot \frac{\partial \tilde{\mathcal{L}}}{\partial x_j}(\vec{x}^\star, \vec{\lambda}^\star) &= 0, \quad j = 1,\dots,n,
+\end{align*}
+complementadas pelas condições relativas às restrições \(G_i\):
+\begin{align*}
+G_i(\vec{x}^\star) &\leq 0, \quad i = 1,\dots,k, \\
+\lambda_i^\star &\geq 0, \quad i = 1,\dots,k, \\
+\lambda_i^\star \cdot G_i(\vec{x}^\star) &= 0, \quad i = 1,\dots,k.
+\end{align*}
+
+Esta formulação é estruturalmente mais compacta do que a formulação lagrangeana completa, pois não requer multiplicadores explícitos para as restrições de não-negatividade.
+As condições \(\partial \tilde{\mathcal{L}}/\partial x_j \leq 0\) capturam a ideia de que, no ótimo, o benefício marginal líquido (considerando o custo-sombra das restrições ativas) não pode ser positivo; se fosse, aumentar \(x_j\) aumentaria o valor da função objetivo.
+Nesses termos, a folga complementar das variáveis primais também adquire uma interpretação relevante.
+Se \(x_j^\star > 0\), então \(\partial \tilde{\mathcal{L}}/\partial x_j = 0\), indicando que o recurso \(j\) é utilizado até o ponto em que seu benefício marginal líquido se anula.
+Alternativamente, se \(x_j^\star = 0\), então \(\partial \tilde{\mathcal{L}}/\partial x_j \leq 0\), o que indica que o benefício marginal líquido é não-positivo, justificando a não-utilização do recurso.
+
+Para além da condição de alinhamento de gradientes, o multiplicador de Lagrange tem uma interpretação econômica fundamental, dada pelo Teorema do Envelope.
+Considere a função valor máximo \( V(c) = F(\vec{x}^*(c)) \), onde \( \vec{x}^*(c) \) é a solução do problema \( \max F(\vec{x}) \) sujeito a \( G(\vec{x}) = c \).
+Sob regularidade e qualificação, o ponto ótimo \(\vec{x}^\star(c)\) é uma função diferenciável de \(c\), e a regra da cadeia aplicada a \(\mathcal{L}(\vec{x}^\star(c),\mu^\star(c))\) mostra que \(dV/dc = \mu^\star(c)\).
+O multiplicador de Lagrange mede, assim, a taxa de variação do valor máximo da função objetivo quando o parâmetro da restrição é relaxado marginalmente.
+Em modelos econômicos, isso corresponde, por exemplo, à variação da utilidade máxima em resposta a um aumento de renda ou à variação do lucro máximo em resposta a uma elevação do limite de capacidade ou da disponibilidade de insumos, frequentemente interpretado como um preço-sombra.
+
+
+A seguir, apresenta-se um exemplo numérico que explicita esse instrumental, com ajustes graduais para ilustrar sua aplicação em um contexto econômico recente.
+Considere uma firma que produz um único bem a partir de trabalho \(L\) e capital \(K\), com tecnologia Cobb–Douglas
+\begin{equation*}
+Y(L,K) = L^{\frac{1}{2}} K^{\frac{1}{2}}
+\end{equation*}
+A firma encontra-se em uma estrutura de mercado competitiva, de modo que os preços dos fatores são exógenos e o preço do bem produzido é dado.
+Ao longo deste exemplo, considere o salário \(w = 2\), a taxa de juros \(r = 1\) e o preço do bem \(p = 1\).
+Neste caso, o custo operacional da firma é
+\begin{equation*}
+C(L,K) = 2L + K.
+\end{equation*}
+A firma possui um orçamento total fixo \(\bar{C} = 12\), que deve ser exaurido integralmente por restrições internas.
+O problema a ser otimizado é a maximização da produção
+\begin{equation*}
+\max_{L,K \geq 0} L^{\frac{1}{2}} K^{\frac{1}{2}}
+\quad \text{sujeito a} \quad
+2L + K = 12.
+\end{equation*}
+Vale pontuar que a restrição orçamentária é linear e possui gradiente constante e não nulo, de modo que é automaticamente qualificada em todo ponto do conjunto viável.
+
+Organizando a situação-problema por meio da função lagrangeana, tem-se:
+\begin{equation*}
+\mathcal{L}(L,K,\mu)
+= L^{\frac{1}{2}} K^{\frac{1}{2}} - \mu(2L + K - 12).
+\end{equation*}
+As condições de primeira ordem são
+\begin{equation*}
+\frac{1}{2} L^{-\frac{1}{2}} K^{\frac{1}{2}} - 2\mu = 0,
+\end{equation*}
+\begin{equation*}
+\frac{1}{2} L^{\frac{1}{2}} K^{-\frac{1}{2}} - \mu = 0,
+\end{equation*}
+\begin{equation*}
+2L + K = 12.
+\end{equation*}
+
+Da razão das duas primeiras equações, obtém-se \(K = L\).
+Como consequência, o multiplicador de Lagrange é \(\mu^* = \frac{1}{2}\) para todo \(K = L > 0\).
+Substituindo na restrição orçamentária,
+\begin{equation*}
+2L + L = 12
+\,\Rightarrow\,
+3L = 12
+\,\Rightarrow\,
+L^* = 4, \quad K^* = 4.
+\end{equation*}
+
+A produção máxima neste cenário é
+\begin{equation*}
+Y^* = (4)^{\frac{1}{2}} (4)^{\frac{1}{2}} = 4.
+\end{equation*}
+
+Para concluir este exemplo, é pertinente elucidar alguns aspectos relativos às condições de segunda ordem.
+Como a função Cobb–Douglas é estritamente côncava no ortante positivo e a restrição é linear, a função objetivo é globalmente côncava.
+Logo, as condições de primeira ordem são suficientes para caracterizar um máximo global.
+
+
+No cenário anterior, a firma não enfrentava limitações operacionais.
+Na sequência, são introduzidas normas regulatórias que permitem a incorporação de restrições de desigualdade, ilustrando, assim, as condições de Kuhn–Tucker.
+Em particular, o exemplo a seguir foi construído para destacar um caso menos trivial.
+Suponha agora que a firma enfrenta um custo sanitário adicional \(e = 1\) por trabalhador, financiado por um orçamento específico \(\bar{E} = 3\), que não pode ser transferido para o orçamento regular.
+Nesses termos, a restrição sanitária é \(L \leq 3\).
+
+O problema passa a depender de uma restrição de desigualdade de modo que
+\begin{equation*}
+\max_{L,K \geq 0} L^{\frac{1}{2}} K^{\frac{1}{2}}
+\quad \text{sujeito a} \quad
+2L + K = 12,
+\quad
+L \leq 3.
+\end{equation*}
+
+A solução da primeira situação-problema, \((4,4)\), viola a restrição sanitária, pois \(4 > 3\).
+Logo, a restrição de desigualdade será ativa no ótimo.
+
+A nova Lagrangeana é
+\begin{equation*}
+\mathcal{L}(L,K,\mu,\lambda)
+= L^{\frac{1}{2}} K^{\frac{1}{2}}
+- \mu(2L + K - 12)
+- \lambda(L - 3),
+\end{equation*}
+com \(\lambda \geq 0\).
+
+As condições de primeira ordem são
+\begin{equation*}
+\frac{1}{2} L^{-\frac{1}{2}} K^{\frac{1}{2}} - 2\mu - \lambda = 0,
+\end{equation*}
+\begin{equation*}
+\frac{1}{2} L^{\frac{1}{2}} K^{-\frac{1}{2}} - \mu = 0,
+\end{equation*}
+\begin{equation*}
+2L + K = 12,
+\end{equation*}
+com as condições complementares
+\begin{equation*}
+\lambda \geq 0, \quad L \leq 3, \quad \lambda(L - 3) = 0.
+\end{equation*}
+
+Como a restrição sanitária está ativa, impõe-se \(L = 3\).
+Da restrição orçamentária,
+\begin{equation*}
+2(3) + K = 12 \,\Rightarrow\, K = 6
+\end{equation*}
+
+Da condição em \(K\),
+\begin{equation*}
+\mu
+= \frac{1}{2} \cdot 3^{\frac{1}{2}} \cdot 6^{-\frac{1}{2}}
+= \frac{1}{2} \sqrt{\frac{3}{6}}
+= \frac{1}{2\sqrt{2}}.
+\end{equation*}
+
+Substituindo na condição em \(L\),
+\begin{equation*}
+\frac{1}{2} \cdot 3^{-\frac{1}{2}} \cdot 6^{\frac{1}{2}}
+- 2\mu - \lambda = 0
+\;\Rightarrow\;
+\frac{1}{2}\sqrt{2} - \frac{1}{\sqrt{2}} - \lambda = 0 \Rightarrow - \lambda = 0
+\end{equation*}
+o que implica \(\lambda = 0 \).
+Cabe ressaltar que \(\lambda = 0 \) não implica que a restrição correspondente seja inativa.
+A nulidade do multiplicador indica apenas que a restrição não é vinculante no sentido marginal, podendo, ainda assim, ser satisfeita com igualdade no ponto ótimo.
+Dito de outro modo, como \(L = 3\) a folga complementar não impõe \(\lambda = 0\).
+Sendo assim, a restrição só estaria inativa se \(L < 3\).
+
+Sendo assim, todas as condições de Kuhn–Tucker são satisfeitas.
+A solução ótima passa a ser
+\begin{equation*}
+L^{\dagger} = 3,
+\quad
+K^{\dagger} = 6,
+\quad
+\mu^{\dagger} = \frac{1}{2\sqrt{2}},
+\quad
+\lambda^{\dagger} = 0
+\end{equation*}
+
+De modo que a produção máxima é
+\begin{equation*}
+Y^{\dagger} = 3^{\frac{1}{2}} 6^{\frac{1}{2}} = \sqrt{18} < Y
+\end{equation*}
+
+Esse resultado permite retornar à interpretação econômica dos multiplicadores de Lagrange.
+O multiplicador \(\mu\) é o preço-sombra do orçamento total de custos, medindo o ganho marginal de produção ao relaxar-se a restrição orçamentária imposta à estrutura de custos.
+O multiplicador \(\lambda\) pode ser interpretado como o preço-sombra associado à restrição de gasto em EPI, medindo a variação marginal da produção máxima decorrente do relaxamento desse limite.
+No entanto, no ponto ótimo considerado, embora a restrição de EPI esteja satisfeita com igualdade, o multiplicador associado é nulo.
+Esse resultado, embora sutil, tem relevância conceitual significativa.
+Isso indica que, nesse ponto específico, o orçamento de EPI não é economicamente vinculante no sentido marginal.
+Em outras palavras, embora a restrição sanitária determine o ponto ótimo ao excluir soluções inviáveis, ela não exerce efeito marginal sobre o ótimo.
+Geometricamente, o alinhamento entre os gradientes da função objetivo e da restrição orçamentária total torna a restrição sanitária localmente redundante.
+Em termos econômicos, a restrição sanitária elimina do conjunto viável o ponto custo-eficiente, deslocando a firma para uma combinação de fatores inferior em termos produtivos.
+
+
+Neste ponto, é instrutivo considerar a hipótese de que a restrição sanitária seja inativa.
+Se \(L < 3\), então, pela condição de folga complementar, \(\lambda = 0\).
+As condições de primeira ordem reduzem-se, portanto, às do problema sem restrições sanitárias.
+A solução desse problema é \(L = K = 4\), o que viola a condição \(L \leq 3\).
+Logo, não existe uma solução ótima interior com a restrição sanitária inativa.
+
+
+O exemplo numérico desenvolvido ilustra a aplicação de problemas de otimização condicionada ao comportamento da firma, ajustando o exemplo canônico para explicitar o papel das restrições de desigualdade.
+Em especial, evidenciou-se a distinção entre restrições ativas e vinculantes.
+A simplicidade do exemplo não diminui o potencial analítico do instrumental apresentado, que se mostra aplicável a uma ampla gama de problemas econômicos.
+Na teoria do consumidor, a maximização de utilidade, sujeita à restrição orçamentária e a cotas quantitativas sobre certos bens, utiliza multiplicadores para interpretar a utilidade marginal da renda e o valor de relaxar restrições de racionamento, por exemplo.
+Na teoria da firma, problemas associados à restrição de capacidade produtiva e à produção multiplanta e multimercado também podem ser avaliados por meio dos métodos de multiplicadores de Lagrange.
+Em regulação econômica, como no problema de retorno justo sobre capital, restrições de taxa de retorno podem ser introduzidas como desigualdades, e o método de Kuhn–Tucker ajuda a caracterizar quando tais restrições se tornam efetivamente vinculantes e distorcem a combinação eficiente de fatores.
+Em equilíbrio geral, restrições de recursos agregados e a não negatividade de quantidades são integradas em um sistema de otimizações individuais, cujos multiplicadores estabelecem conexões diretas com preços de mercado e preços-sombra.
+
+Em síntese, o método dos multiplicadores de Lagrange e as condições de Kuhn–Tucker organizam, em um quadro unificado, a análise de extremantes locais de funções econômicas sujeitas a restrições de igualdade e de desigualdade.
+A qualificação das restrições garante que a informação de primeira ordem, expressa no alinhamento entre os gradientes da função objetivo e das restrições, é suficiente para caracterizar candidatos a extremantes, enquanto a concavidade da função objetivo e a convexidade do conjunto viável asseguram que tais candidatos são soluções globais.
+Os multiplicadores associados emergem naturalmente da aplicação da regra da cadeia e do Teorema do Envelope, conferindo interpretação econômica como taxas de variação do valor ótimo em relação aos parâmetros das restrições.
+Assim, a otimização condicionada oferece uma linguagem unificada para a análise de escolhas econômicas sob diversas formas de escassez, articulando rigor matemático, interpretação geométrica e significado econômico por meio dos multiplicadores, interpretados como preços-sombra.
 
 * Funções de várias variáveis: Roteiro de resposta
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
 
 1. Introdução e motivação econômica
-   - Problemas econômicos relevantes dependem, em geral, de múltiplas variáveis independentes
-     - Funções de produção com múltiplos insumos
-     - Funções utilidade dependentes de vários bens
-     - Funções de custo e de lucro envolvendo preços e quantidades
-   - A variável econômica de interesse passa a ser modelada como função de um vetor de argumentos
-   - O cálculo univariado é insuficiente para capturar interdependências e estruturas geométricas
-   - Necessidade do aparato do cálculo multivariado
-   - Delimitação metodológica
-     - Uso da função Cobb-Douglas como exemplo didático
-     - Abordagem marginalista adotada apenas por conveniência analítica
+   a. Aplicações econômicas: *múltiplos argumentos*
+      a. Várias variáveis dependentres
+      b. Funções de produção com múltiplos insumos
+      c. Funções utilidade dependentes de vários bens
+      d. Funções de custo e de lucro envolvendo preços e quantidades
+   b. A variável econômica de interesse passa a ser modelada como função de um *vetor de argumentos*
+   c. Cálculo univariado é *insuficiente*
+      a. Necessidade do aparato do cálculo multivariado
+   d. Delimitação metodológica
+      a. Uso da função Cobb-Douglas como exemplo didático
+      b. Abordagem marginalista adotada apenas por *conveniência analítica*
 2. Funções entre espaços euclidianos
-   - Definição geral
-     - Uma função de várias variáveis é uma aplicação
-       - $$ f : D \subseteq \mathbb{R}^n \to \mathbb{R}^m $$
-   - Interpretação
-     - Um ponto do domínio é um vetor
-       - $$ x = (x_1,\dots,x_n) $$
-     - A imagem é um vetor
-       - $$ f(x) = (f_1(x),\dots,f_m(x)) $$
-   - Caso típico em economia
-     - Funções escalares com $m=1$
-   - Estrutura euclidiana
-     - Produto interno usual
-     - Norma euclidiana $\|x\|$
+   a. Definição geral
+      a. Uma função de várias variáveis é uma *aplicação*
+         a. \( f : D \subseteq \mathbb{R}^n \to \mathbb{R}^m \)
+      b. Ponto do domínio: \(\vec{x} = (x_1,\dots,x_n) \)
+      c. Imagem: \( f(\vec{x}) = (f_1(\vec{x}),\dots,f_m(\vec{x}))\)
+      d. *Convenção notacional*: vetores em \(\mathbb{R}^{n}\) como em \(\vec{x}\), escalares em \(\mathbb{R}\)
+   b. Caso típico em economia
+      a. Funções escalares com $m=1$
+   c. Estrutura euclidiana
+      a. *Produto interno usual*
+      b. *Norma euclidiana* $\|x\|$
 3. Limite em várias variáveis
-   - Conceito fundamental
-     - A noção de limite exige controle da aproximação em todas as direções
-   - Definição de bola aberta
-     - Para $a \in \mathbb{R}^n$ e $\delta>0$
-       - $$ B_\delta(a) = \{x \in \mathbb{R}^n : \|x-a\| < \delta\} $$
-   - Definição de limite (função escalar)
-     - Diz-se que
-       - $$ \lim_{x \to a} f(x) = L $$
-     - se, para todo $\varepsilon>0$, existe $\delta>0$ tal que
-       - $$ 0 < \|x-a\| < \delta \Rightarrow |f(x)-L| < \varepsilon $$
-   - Propriedade essencial
-     - O limite deve ser independente do caminho de aproximação
-     - Deve coincidir para toda sequência que converge para $a$
-   - Extensão
-     - Para funções vetoriais, substitui-se o valor absoluto pela norma em $\mathbb{R}^m$
+   a. Conceito fundamental
+      a. A noção de limite exige controle da aproximação em *todas as direções*
+   b. Definição de *bola aberta*
+      a. Para $a \in \mathbb{R}^n$ e $\delta>0$
+         a. \(B_\delta(\vec{a}) = \{\vec{x} \in \mathbb{R}^n : \|\vec{x}-\vec{a}\| < \delta\}\)
+   c. Definição de limite (*função escalar*)
+      a. Diz-se que
+         a. \(\lim_{\vec{x} \to \vec{a}} f(\vec{x}) = L \)
+      b. se, para todo $\varepsilon>0$, existe $\delta>0$ tal que
+         a. \(0 < \|\vec{x}-\vec{a}\| < \delta \Rightarrow |f(\vec{x})-L| < \varepsilon\)
+   d. Propriedade essencial
+      a. O limite deve ser independente do *caminho de aproximação*
+      b. *Critério sequencial equivalente*: deve coincidir para toda *sequência que converge* para $\vec{a}$
+   e. Extensão
+      a. Para funções vetoriais, substitui-se o valor absoluto pela norma em $\mathbb{R}^m$
+   f. Função do bloco: evidenciar o que muda em relação ao univariado
 4. Continuidade
-   - Definição
-     - Uma função $f$ é contínua em $a$ se
-       - $$ \lim_{x \to a} f(x) = f(a) $$
-   - Continuidade no domínio
-     - Se a condição vale para todo $a \in D$, a função é contínua em $D$
-   - Interpretação econômica
-     - Pequenas variações nos argumentos geram pequenas variações no valor da função
-     - Exclusão de saltos e descontinuidades locais
-   - Exemplo: função Cobb-Douglas
-     - $$ F(K,L) = A K^\alpha L^\beta $$
-     - Com $A>0$ e $\alpha,\beta>0$
-     - Função contínua em $\mathbb{R}^2_{++}$
-     - Continuidade fundamenta o uso de derivadas parciais e otimização
-5. Gráficos de funções de duas variáveis
-   - Definição de gráfico
-     - Para $f : \mathbb{R}^2 \to \mathbb{R}$
-       - $$ \{(x,y,z) \in \mathbb{R}^3 : z = f(x,y)\} $$
-   - Interpretação geométrica
-     - Superfície no espaço tridimensional
-   - Limitação analítica
-     - Representação pouco prática para análise econômica aplicada
+   a. Definição
+      a. Uma função $f$ é contínua em $\vec{a}$ se
+         a. \(\lim_{\vec{x} \to \vec{a}} f(\vec{x}) = f(\vec{a})\)
+   b. Continuidade no *domínio*
+      a. Se a condição vale para todo $\vec{a} \in D$, a função é contínua em $D$
+   c. Interpretação econômica
+      a. Pequenas variações nos argumentos geram pequenas variações no valor da função
+      b. Exclusão de *saltos e descontinuidades locais*
+   d. Exemplo: função Cobb-Douglas
+      a. $$ F(K,L) = A K^\alpha L^\beta $$
+      b. Com $A>0$ e $\alpha,\beta>0$
+      c. Função contínua em $\mathbb{R}^2_{++}$
+      d. Continuidade fundamenta o uso de *derivadas parciais e otimização*
+5. Gráficos de funções de duas variáveis: motivação para introdução das curvas de nível
+   a. Definição de gráfico
+      a. Para $f : \mathbb{R}^2 \to \mathbb{R}$
+         a. \( \{(x,y,z) \in \mathbb{R}^3 : z = f(x,y)\}\)
+   b. Interpretação geométrica
+      a. Superfície no espaço tridimensional
+   c. Limitação analítica
+      a. Representação pouco prática para análise econômica aplicada
 6. Curvas de nível
-   - Definição
-     - Para $c \in \mathbb{R}$
-       - $$ C_c = \{(x,y) \in D : f(x,y) = c\} $$
-   - Interpretação geométrica
-     - Projeções das interseções da superfície com planos horizontais
-   - Aplicação econômica
-     - Curvas de nível de funções de produção correspondem a isoquantas
-   - Exemplo: Cobb-Douglas
-     - Isoquanta associada a $Y^\star$
-       - $$ A K^\alpha L^\beta = Y^\star $$
-     - Forma explícita
-       - $$ L = \left(\frac{Y^\star}{A}\right)^{1/\beta} K^{-\alpha/\beta} $$
-     - Propriedades
-       - Curvas estritamente decrescentes
-       - Substituição técnica entre fatores
-       - Inclinação relacionada à TMST
-   - Extensão
-     - Superfícies de nível em $\mathbb{R}^3$
-     - Hipersuperfícies de nível para $n>3$
+   a. Definição
+      a. Para $c \in \mathbb{R}$
+         a. \( C_c = \{(x,y) \in D : f(x,y) = c\} \)
+   b. Interpretação geométrica
+      a. *Projeções das interseções* da superfície com planos horizontais
+   c. Aplicação econômica
+      a. Curvas de nível de funções de produção correspondem a *isoquantas*
+   d. Exemplo: Cobb-Douglas
+      a. Isoquanta associada a $Y^\star$
+         a. \( A K^\alpha L^\beta = Y^\star \)
+      b. Forma explícita
+         a. \( L = \left(\frac{Y^\star}{A}\right)^{1/\beta} K^{-\alpha/\beta} \)
+      c. Propriedades
+         a. Curvas *estritamente decrescentes*
+         b. Substituição técnica entre fatores
+         c. Inclinação relacionada à TMST
+   e. Extensão
+      a. Superfícies de nível em $\mathbb{R}^3$
+      b. Hipersuperfícies de nível para $n>3$
 7. Tipos especiais de funções
-   - Funções lineares
-     - Definição
-       - $$ T(x+y)=T(x)+T(y) $$
-       - $$ T(\lambda x)=\lambda T(x) $$
-     - Representação matricial
-       - $$ T(x)=Ax $$
-     - Interpretação econômica
-       - Substituição perfeita entre insumos
-   - Funções afins
-     - Definição
-       - $$ f(x)=Ax+b $$
-     - Aplicação
-       - Funções de custo com componente fixo
-   - Polinômios multivariados
-     - Definição geral
-       - Um polinômio multivariado em $n$ variáveis é uma soma finita de monômios com coeficientes reais
-     - Representação formal
-       - \(P(x_1,\dots,x_n) = \sum_{\alpha \in \mathbb{N}^n,\;|\alpha|\le d} c_{\alpha}\, x_1^{\alpha_1}\cdots x_n^{\alpha_n}\)
-     - Interpretação dos termos
-       - O vetor $\alpha=(\alpha_1,\dots,\alpha_n)$ indica os expoentes de cada variável
-       - O grau total do monômio é dado por $|\alpha|=\alpha_1+\cdots+\alpha_n$
-     - Grau do polinômio
-       - O grau total é o maior $|\alpha|$ com $c_\alpha \neq 0$
-     - Interpretação econômica
-       - Aproximações locais de funções econômicas
-       - Termos de interação capturam efeitos conjuntos entre variáveis
-   - Formas quadráticas
-     - Polinômios homogêneos de grau dois
-     - Representação matricial
-       - $$ Q(x)=x^\top A x $$
-     - Aplicação econômica
-       - Hessiano
-       - Concavidade e convexidade
-       - Análise local de otimização
+   a. *Classes funcionais* impõem diferentes *restrições estruturais* à análise
+   b. Funções lineares
+      a. Definição
+         a. \(T(x+y)=T(x)+T(y)\) (*Aditividade*)
+         b. \(T(\lambda x)=\lambda T(x)\) (*Homogeneidade*)
+      b. *Admite* representação matricial
+         a. \(T(x)=Ax\)
+      c. Interpretação econômica
+         a. Substituição perfeita entre insumos
+   c. Funções afins
+      a. Definição
+         a. \( f(x)=Ax+b \)
+      b. Aplicação
+         a. Funções de custo com *componente fixo*
+   d. Polinômios multivariados
+      a. Definição geral
+         a. Um polinômio multivariado em $n$ variáveis é uma *soma finita de monômios* com coeficientes reais
+      b. Representação formal
+         a. \(P(x_1,\dots,x_n) = \sum_{\alpha \in \mathbb{N}^n,\;|\alpha|\le d} c_{\alpha}\, x_1^{\alpha_1}\cdots x_n^{\alpha_n}\)
+      c. Interpretação dos termos
+         a. O vetor $\vec{\alpha}=(\alpha_1,\dots,\alpha_n)$ indica os expoentes de cada variável
+         b. O grau total do monômio é dado por $|\alpha|=\alpha_1+\cdots+\alpha_n$
+      d. Grau do polinômio
+         a. O grau total é o maior $|\alpha|$ com $c_\alpha \neq 0$
+      e. Interpretação econômica
+         a. Aproximações locais de funções econômicas
+         b. Termos de interação capturam efeitos conjuntos entre variáveis
+   e. Formas quadráticas
+      a. Polinômios *homogêneos de grau dois*
+      b. Representação matricial
+         a. \(Q(\vec{x})=\vec{x}^\top A \vec{x}\)
+      c. *Aplicação econômica*
+         a. Hessiano
+         b. Concavidade e convexidade
+         c. Análise local de otimização
 8. A função Cobb-Douglas na hierarquia funcional
-   - Não é linear, afim ou polinomial em geral
-   - Caso especial
-     - Expoentes inteiros não negativos
-   - Propriedade central: homogeneidade
-     - Definição
-       - $$ f(tx)=t^r f(x), \quad t>0 $$
-     - Para Cobb-Douglas
-       - $$ r=\alpha+\beta $$
-   - Interpretação econômica
-     - Retornos à escala
-       - $r=1$: constantes
-       - $r>1$: crescentes
-       - $r<1$: decrescentes
-   - Implicação analítica
-     - Aplicação do teorema de Euler
-     - Continuidade global no domínio relevante
+   a. Não polinomial *suave*
+   b. Caso especial
+      a. Expoentes inteiros não negativos
+   c. Propriedade central: *homogeneidade* (propriedade compartilhada de outras classes)
+      a. Definição
+         - \( f(tx)=t^r f(x), \quad t>0 \)
+      b. Para Cobb-Douglas
+         - \( r=\alpha+\beta \)
+   d. Interpretação econômica
+      a. Retornos à escala
+         a. $r=1$: constantes
+         b. $r>1$: crescentes
+         c. $r<1$: decrescentes
+   e. Implicação analítica
+      a. Homogeneidade é condição suficiente para aplicação do teorema de Euler
+      b. Continuidade global no domínio relevante
 9. Exemplo numérico
-   - Função considerada
-     - $$ F(K,L)=K^{0.5}L^{0.5} $$
-   - Avaliação em um ponto
-     - $$ F(4,9)=6 $$
-   - Escalonamento dos insumos
-     - $$ F(8,18)=12 $$
-     - Ilustração de retornos constantes à escala
-   - Isoquanta
-     - $$ L=\frac{Y^2}{K} $$
-     - Para $Y=6$, $L=36/K$
-     - Combinações equivalentes de insumos
+   a. Função considerada
+      a. \( F(K,L)=K^{0.5}L^{0.5} \)
+   b. Avaliação em um ponto
+      a. \( F(4,9)=6 \)
+   c. Escalonamento dos insumos
+      a. \(F(8,18)=12\)
+      b. Ilustração de retornos constantes à escala
+   d. Isoquanta
+      a. \(L=\frac{Y^2}{K}\)
+      b. Para $Y=6$, $L=36/K$
+      c. Combinações equivalentes de insumos
 10. Conclusão
-    - Síntese conceitual
-      - Funções entre espaços euclidianos
-      - Limite e continuidade
-      - Curvas e superfícies de nível
-      - Classes funcionais e homogeneidade
-    - Observação final
-      - O aparato matemático é geral
-      - Exemplos econômicos têm função ilustrativa
+    a. Síntese conceitual
+       a. Funções entre espaços euclidianos
+       b. Limite e continuidade
+       c. Curvas e superfícies de nível
+       d. Classes funcionais e homogeneidade
+    b. Observação final
+       a. O aparato matemático é geral
+       b. Exemplos econômicos têm função ilustrativa
+       c. Conceitos não são apenas formalismos matemáticos
+          a. Instrumentos capazes de acomodar *diferentes situações econômicas*
+          b. Traduzí-las em objetos *analitcamente tratáveis*
 
 
 
 * Derivada total: Roteiro de resposta
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
 
-- Introdução e motivação em estática comparativa
-  - Análise de como variáveis endógenas de equilíbrio respondem a pequenas variações exógenas.
-  - Limitações das derivadas univariadas em contextos com múltiplas variáveis interdependentes.
-  - Distinção conceitual entre:
-    - Derivadas parciais (efeitos marginais ceteris paribus).
-    - Derivada total e diferencial total (efeitos conjuntos).
-  - Justificativa do uso da função Cobb–Douglas como exemplo canônico.
-
-- Derivadas parciais: definição e interpretação econômica
-  - Definição formal da derivada parcial:
-    \[f_{x_i}(a) = \lim_{h \to 0} \frac{f(a_1,\dots,a_i+h,\dots,a_n)-f(a)}{h} \]
-  - Interpretação como taxa marginal de variação local.
-  - Hipótese de admissibilidade ceteris paribus no modelo econômico.
-  - Observação:
-    - Existência de derivadas parciais não implica diferenciabilidade.
-    - Funções com complementaridade perfeita (Leontief).
-
-- Diferenciabilidade e derivada total
-  - Funções de classe \(C^1\):
-    - Derivadas parciais contínuas em uma vizinhança.
-  - Definição de diferenciabilidade:
-    \[f(a+h) = f(a) + L(h) + o(|h|) \]
-    - Com \(o(|h|/|h| \to 0\) quando \(h \to 0\)
-  - Aplicação linear associada:
-    \[L(h) = \nabla f(a)\cdot h = \sum_{i=1}^n f_{x_i}(a)\,h_i \]
-  - Definição do gradiente:
-    \[\nabla f(a) = (f_{x_1}(a),\dots,f_{x_n}(a)) \]
-
-- Diferencial total
-  - Definição formal:
-    \[df(a) = \sum_{i=1}^n f_{x_i}(a)\,dx_i \]
-  - Aproximação de primeira ordem:
-    \[f(a+h)-f(a) \approx df(a) \]
-  - Interpretação econômica:
-    - Efeito total de variações simultâneas nas variáveis exógenas.
-  - Memo: Derivada total é um operador linear aplicado a uma direção genérica, equanto o diferencial associa a direção com uma variação exógena e incremental
-    - Já a derivada direcial associa a direção a um vetor *unitário*
-
-- Exemplo central: função de produção Cobb–Douglas
-  - Definição geral:
-    \[F(K,L) = A K^\alpha L^{1-\alpha}, \quad A>0,\ 0<\alpha<1 \]
-  - Derivadas parciais:
-    \[F_K = A\alpha K^{\alpha-1}L^{1-\alpha}, \quad F_L = A(1-\alpha)K^\alpha L^{-\alpha} \]
-  - Interpretação como produtos marginais.
-  - Diferencial total da produção:
-    \[dY = F_K\,dK + F_L\,dL \]
-  - Elasticidades constantes:
-    - \(\alpha\) e \(1-\alpha\).
-  - Homogeneidade de grau 1 e Teorema de Euler.
-    - Contribuições marginais exaurem o valor do produto
-
-- Interpretação geométrica: plano tangente
-  - Gráfico de \(f : \mathbb{R}^2 \to \mathbb{R}\):
-    \((x,y,z)\) com \(z=f(x,y)\).
-  - Equação do plano tangente:
-    \[z - f(x_0,y_0) = f_x(x_0,y_0)(x-x_0) + f_y(x_0,y_0)(y-y_0) \]
-  - Aproximação linear local:
-    \[f(x,y) \approx f(x_0,y_0) + f_x(x_0,y_0)(x-x_0) + f_y(x_0,y_0)(y-y_0) \]
-  - Condição essencial:
-    - Diferenciabilidade garante qualidade da aproximação.
-
-- Generalização para \(\mathbb{R}^n\)
-  - Derivada total como operador linear:
-    \[Df(a)[h] = \nabla f(a)\cdot h \]
-  - Diferencial total:
-    \[df(a) = \sum_{i=1}^n f_{x_i}(a)\,dx_i \]
-  - Interpretação geométrica:
-    - Existência de hiperplano tangente em \(\mathbb{R}^{n+1}\).
-    \[z - f(a) = \sum_{i=1}^n f_{x_i}(a)(x_i-a_i) \]
-
-- Exemplo numérico explícito
-  - Função:
-    \[F(K,L) = K^{1/2}L^{1/2} \]
-  - Ponto de referência:
-    \((K_0,L_0)=(9,16)\), \(Y_0=12\).
-  - Produtos marginais:
-    \[F_K(9,16)=\tfrac{2}{3}, \quad F_L(9,16)=\tfrac{3}{8} \]
-  - Diferencial total:
-    \[dY = \tfrac{2}{3}dK + \tfrac{3}{8}dL \]
-  - Variações:
-    \(\Delta K=1,\ \Delta L=1\).
-  - Aproximação:
-    \[\Delta Y \approx \tfrac{25}{24} \]
-  - Comparação com o valor exato:
-    \[F(10,17)=\sqrt{170} \]
-
-- Síntese conceitual
-  - Derivadas parciais: efeitos marginais isolados.
-  - Derivada total: estrutura linear local de sensibilidade.
-  - Diferencial total: operacionalização do efeito agregado.
-  - Plano/hiperplano tangente: interpretação geométrica.
-  - Aplicabilidade geral:
-    - Equilíbrio geral.
-    - Modelos SFC, ABM, Insumo–Produto.
+1) Introdução e motivação em estática comparativa
+   a. Análise de como variáveis endógenas de *equilíbrio* respondem a pequenas *variações exógenas*.
+   b. Limitações das derivadas univariadas em contextos com múltiplas variáveis interdependentes.
+   c. Distinção conceitual entre:
+      a. Derivadas *parciais* (efeitos marginais ceteris paribus).
+      b. Derivada total e diferencial total (efeitos conjuntos).
+         a. Derivada total: *operador linear* descreve a *sensibilidade local* de uma função em relação aos seus argumentos
+         b. Diferencial total: *variação aproximada* da função decorrente de variações *exógenas* nos argumentos
+   d. Justificativa do uso da função Cobb–Douglas como exemplo canônico.
+2) Derivadas parciais: definição e interpretação econômica
+   a. Definição formal da derivada parcial: \(f_{x_i}(\vec{a}) = \lim_{\vec{h} \to 0} \frac{f(a_1,\dots,a_i+h,\dots,a_n)-f(\vec{a})}{\vec{h}} \)
+   b. Interpretação como taxa marginal de variação local.
+   c. Hipótese de *admissibilidade* ceteris paribus no modelo econômico.
+      a. A variáveis exógenas devem poder variar *independetemente*
+   d. Observação:
+      a. Existência de derivadas parciais não implica diferenciabilidade.
+      b. Funções com complementaridade perfeita (Leontief).
+      c. Isso releva as *vantagens* de um exemplo utilizando Cobb-Douglas
+3) Diferenciabilidade e derivada total
+   a. Funções de classe \(C^1\):
+      a. Derivadas parciais *contínuas* em uma *vizinhança*.
+   b. Definição de diferenciabilidade: \(f(a+h) = f(a) + L(h) + o(|h|) \)
+      a. Com \(o(|h|/|h|) \to 0\) quando \(h \to 0\)
+      b. Norma Euclidiana no \(\mathbb{R}^{{n}}\)
+      c. *Aproximação* linear (local)
+   c. Aplicação linear associada: \(L(vec{h}) = \nabla f(\vec{a})\cdot \vec{h} = \sum_{i=1}^n f_{x_i}(\vec{a})\cdot h_i \)
+   d. Definição do gradiente: \(\nabla f(\vec{a}) = (f_{x_1}(\vec{a}),\dots,f_{x_n}(\vec{a})) \)
+4) Diferencial total
+   a. Definição formal: \(df(\vec{a}) = \sum_{i=1}^n f_{x_i}(\vec{a})\cdot dx_i \)
+   b. Aproximação de primeira ordem: \(f(\vec{a}+\vec{h})-f(\vec{a}) \approx df(\vec{a})\)
+   c. Interpretação econômica:
+      a. Efeito total de variações simultâneas nas variáveis exógenas.
+      b. *Aproximação local* na vizinhança de um ponto (\(\vec{a}\))
+         a. Permite controle do erro pela distância de \(\vec{a}\) e \(\vec{a} + \vec{h}\)
+   d. Memo: Derivada total é um *operador linear* aplicado a uma direção genérica, equanto o diferencial associa a direção com uma *variação exógena* e incremental
+      a. Já a derivada direcial associa a direção a um vetor *unitário*
+5) Exemplo central: função de produção Cobb–Douglas
+   a. Definição geral: \(F(K,L) = A K^\alpha L^{1-\alpha}, \quad A>0,\ 0<\alpha<1 \)
+   b. Derivadas parciais: \(F_K = A\alpha K^{\alpha-1}L^{1-\alpha}, \quad F_L = A(1-\alpha)K^\alpha L^{-\alpha} \)
+   c. Interpretação como produtos marginais.
+   d. Diferencial total da produção: \(dY = F_K\,dK + F_L\,dL \)
+   e. Elasticidades constantes:
+      - \(\alpha\) e \(1-\alpha\).
+   f. Homogeneidade de grau 1 e Teorema de Euler para funções homogêneas.
+      - Contribuições marginais exaurem o valor do produto
+6) Interpretação geométrica: plano tangente
+   a. Gráfico de \(f : \mathbb{R}^2 \to \mathbb{R}\): \((x,y,z)\) com \(z=f(x,y)\)
+      a. Plano tangente só é válido quando há *diferenciabilidade*
+      b. *Unicidade* do plano tangente
+   b. Equação do plano tangente: \(z - f(x_0,y_0) = f_x(x_0,y_0)(x-x_0) + f_y(x_0,y_0)(y-y_0) \)
+   c. Aproximação linear local: \(f(x,y) \approx f(x_0,y_0) + f_x(x_0,y_0)(x-x_0) + f_y(x_0,y_0)(y-y_0)\)
+   d. Condição essencial:
+      - Diferenciabilidade garante qualidade da aproximação.
+7) Generalização para \(\mathbb{R}^n\)
+   a. Derivada total como operador linear: \(Df(\vec{a})[\vec{h}] = \nabla f(\vec{a})\cdot \vec{h} \)
+   b. Diferencial total: \(df(\vec{a}) = \sum_{i=1}^n f_{x_i}(\vec{a})\cdot dx_i \)
+   c. Interpretação geométrica:
+      - Existência de hiperplano tangente em \(\mathbb{R}^{n+1}\).
+        - \(z - f(\vec{a}) = \sum_{i=1}^n f_{x_i}(\vec{a})(x_i-a_i) \)
+8) Exemplo numérico explícito
+   a. Função: \(F(K,L) = K^{1/2}L^{1/2} \)
+   b. Ponto de referência: \((K_0,L_0)=(9,16)\), \(Y_0=12\).
+   c. Produtos marginais: \(F_K(9,16)=\frac{2}{3}, \quad F_L(9,16)=\frac{3}{8} \)
+   d. Diferencial total: \(dY = \tfrac{2}{3}dK + \tfrac{3}{8}dL \)
+   e. Variações: \(\Delta K=1,\ \Delta L=1\)
+   f. Aproximação: \(\Delta Y \approx \frac{25}{24} \)
+   g. Comparação com o valor exato: \(F(10,17)=\sqrt{170} \approx \sqrt{169} = 13 \approx 12 + \frac{25}{24}\)
+9) Síntese conceitual
+   a. Derivadas parciais: efeitos marginais *isolados*
+   b. Derivada total: estrutura linear *local de sensibilidade*
+   c. Diferencial total: *operacionalização* do efeito agregado
+   d. Plano/hiperplano tangente: *interpretação geométrica*
+   e. Aplicabilidade geral:
+      a. Equilíbrio geral.
+      b. Modelos SFC, ABM, Insumo–Produto.
 
 
 * Regra da cadeia: roteiro de resposta
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
 
 
 1. Contextualização do problema econômico:
@@ -2432,6 +3463,9 @@ Materiais:
 
 
 * Derivadas direcionais e vetor gradiente: roteiro de resposta
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
 
 1. Delimitar a motivação econômica e o problema geral
 
@@ -2655,6 +3689,9 @@ Materiais:
 
 
 * Funções explícitas: roteiro de resposta
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
 
 1. Delimitar a motivação econômica e o problema geral
 
@@ -2901,6 +3938,9 @@ Materiais:
       - O formalismo conecta teoria analítica, estática comparativa, dinâmica e métodos numéricos.
 
 * Derivadas de ordens superiores: roteiro de resposta
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
 
 1. Motivacao economica da analise de segunda ordem
    - Analise marginal de primeira ordem identifica apenas a direcao local de variacao.
@@ -2951,7 +3991,7 @@ Materiais:
    - Leituras equivalentes:
      - Agregador das derivadas segundas.
      - Jacobiana do operador gradiente.
-   - *Refinamento de rigor:* explicitar que a Hessiana representa a **segunda variacao** do mapeamento.
+   - Refinamento de rigor: explicitar que a Hessiana representa a segunda variacao do mapeamento.
 
 5. Interpretacao economica dos elementos
    - Derivadas puras (diagonal):
@@ -2961,7 +4001,7 @@ Materiais:
      - Medem interacao entre variaveis.
      - Sinal positivo \(\rightarrow\) complementaridade local.
      - Sinal negativo \(\rightarrow\) substitutibilidade local.
-   - *Refinamento de rigor:* separar sinais de derivadas puras e mistas com leitura economica distinta.
+   - Refinamento de rigor: separar sinais de derivadas puras e mistas com leitura economica distinta.
 
 6. Hessiana como forma quadratica
    - Para uma variacao linear \( \vec{h} \):
@@ -3030,6 +4070,9 @@ Materiais:
     - Permite avaliar comportamento local e global de funções
 
 * Teorema da função implícita: roteiro de resposta
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
 
 
 1) Muitos problemas econômicos são formulados por meio de equações implícitas
@@ -3133,6 +4176,10 @@ Materiais:
 
 
 * Formas quadráticas e matrizes definidas: Roteiro de resposta
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
+
 1. Motivação geral
    1. Problemas econômicos envolvem otimização com ou sem restrições
    2. Funções objetivo: utilidade, custo, portfólio
@@ -3298,15 +4345,289 @@ Materiais:
 
 
 
+* Otimizazção não condicionada: Roteiro de resposta
+:PROPERTIES:
+:ID:       da6dbaf4-1808-44d3-873e-53b82d9d2b1a
+:UNNUMBERED: t
+:END:
+
+1) Problemas de otimização na teoria econômica
+   a. A tomada de decisão sob escassez é formalizada como um problema de otimização
+   b. Funções objetivo típicas incluem:
+      a. Lucro
+      b. Utilidade
+      c. Custo
+   c. Essas funções são, em geral, escalares e multivariadas
+   d. A caracterização de soluções ótimas requer:
+      a. Identificação de pontos críticos
+      b. Qualificação desses pontos como máximos, mínimos ou selas
+      c. Condições adicionais para garantir otimalidade global
+2) Formulação geral do problema de otimização não condicionada
+   a. Seja \(f: U \subset \mathbb{R}^n \to \mathbb{R}\), com \(U\) aberto
+   b. Um ponto \(\vec{x}_0 \in U\) é:
+      a. Máximo local se existe \(r>0\) tal que
+         \[ f(\vec{x}_0) \ge f(\vec{x}), \;\; \forall \vec{x} \in B_r(\vec{x}_0) \]
+      b. Máximo local estrito se a desigualdade é estrita para \(\vec{x} \neq \vec{x}_0\)
+      c. Máximo global se
+         \[ f(\vec{x}_0) \ge f(\vec{x}), \;\; \forall \vec{x} \in U \]
+   c. Definições análogas valem para mínimos
+   d. Pontos que satisfazem essas propriedades são denominados extremantes
+3) Condições de primeira ordem (CPO)
+   a. Seja \(f\) diferenciável em \(U\)
+   b. Condição necessária para que \(\vec{x}_0\) seja extremante local interior:
+      \[ \nabla f(\vec{x}_0) = \vec{0} \]
+   c. Interpretação:
+      a. A variação de \(f\) é nula em todas as direções
+      b. O plano tangente ao gráfico de \(f\) é horizontal
+   d. Pontos que satisfazem a CPO são candidatos a extremantes
+   e. A CPO não é suficiente para caracterizar a natureza do ponto
+4) Condições de segunda ordem e Hessiana
+   a. Suponha \(f \in C^2(U)\)
+   b. A matriz Hessiana é:
+      \[ H_f(\vec{x}) = \left[\frac{\partial^2 f}{\partial x_i \partial x_j}\right] \]
+   c. A Hessiana é simétrica (Teorema de Schwarz)
+   d. A expansão de Taylor de segunda ordem em torno de \(\vec{x}_0\):
+   \begin{equation*} f(\vec{x}_0+\vec{h}) \approx f(\vec{x}_0) + \nabla f(\vec{x}_0)^\top \vec{h} + \frac{1}{2}\vec{h}^\top H_f(\vec{x}_0)\vec{h} \end{equation*}
+      a. Em pontos críticos:
+         \[ f(\vec{x}_0+\vec{h}) - f(\vec{x}_0) \approx \frac{1}{2}\vec{h}^\top H_f(\vec{x}_0)\vec{h} \]
+      b. O sinal da forma quadrática governa o comportamento local
+5) Definitude da Hessiana e classificação do ponto crítico
+   a. \(H_f(\vec{x}_0)\) definida negativa \(\rightarrow\) máximo local estrito
+   b. \(H_f(\vec{x}_0)\) definida positiva \(\rightarrow\) mínimo local estrito
+   c. \(H_f(\vec{x}_0)\) indefinida \(\rightarrow\) ponto de sela
+   d. Semidefinitude:
+      a. Necessária para máximos ou mínimos
+      b. Não suficiente para estritos
+   e. Direções associadas a autovalores nulos indicam curvatura zero
+6) Concavidade, convexidade e ótimos globais
+   a. Se \(f \in C^2(U)\):
+      a. \(f\) é côncava \(\Leftrightarrow\) \(H_f(\vec{x})\) é semidefinida negativa \(\forall \vec{x}\)
+      b. \(f\) é convexa \(\Leftrightarrow\) \(H_f(\vec{x})\) é semidefinida positiva
+   b. Resultado central:
+      a. Se \(f\) é côncava e \(\vec{x}_0\) é ponto crítico interior \(\rightarrow\) máximo global
+      b. Se \(f\) é convexa \(\rightarrow\) mínimos globais
+   c. Concavidade transforma a CPO em condição necessária e suficiente
+7) Aplicação: maximização de lucro com custos lineares
+   a. Tecnologia Cobb–Douglas:
+      \[ Y(L,K) = L^{1/2}K^{1/2} \]
+   b. Retornos constantes à escala (homogeneidade de grau um)
+   c. Custos:
+      \[ C(L,K) = wL + rK \]
+   d. Preços dados:
+      a. \(p=2\), \(w=1\), \(r=1\)
+   e. Função lucro:
+      \[ \pi(L,K) = 2L^{1/2}K^{1/2} - L - K \]
+8) Natureza condicionada do problema
+   a. Restrições econômicas:
+      \[ L \ge 0,\; K \ge 0 \]
+   b. Formulação original é um problema de Kuhn–Tucker
+   c. Hipótese de solução interior:
+      a. \(L>0\), \(K>0\)
+      b. Restrições não vinculantes
+   d. No interior, o problema comporta-se como não condicionado
+9) Condições de primeira ordem do lucro
+   a. Gradiente:
+   \begin{equation*}
+         \begin{cases}
+         L^{-1/2}K^{1/2} - 1 = 0 \\
+         L^{1/2}K^{-1/2} - 1 = 0
+         \end{cases}
+   \end{equation*}
+   a. Implicação:
+      \[ K = L \]
+   b. Conjunto contínuo de pontos críticos
+   c. Avaliação do lucro:
+      \[ \pi(L,L) = 0 \]
+   d. Lucro máximo nulo ao longo de toda a reta \(L=K>0\)
+10) Interpretação via Teorema de Euler
+    a. Para funções homogêneas de grau um:
+       \[ Y = Y_L L + Y_K K \]
+    b. Avaliando nas CPO:
+       \[ 2Y = L + K \]
+    c. Receita exaurida no pagamento dos fatores
+    d. Lucro econômico máximo igual a zero
+    e. Máximos globais fracos e não estritos
+11) Hessiana do lucro no primeiro caso
+    a. Hessiana:
+       \begin{equation*} H_\pi(L,K)= \begin{pmatrix} -\frac12 L^{-3/2}K^{1/2} & \frac12 L^{-1/2}K^{-1/2} \\ \frac12 L^{-1/2}K^{-1/2} & -\frac12 L^{1/2}K^{-3/2} \end{pmatrix} \end{equation*}
+    b. Menores principais:
+       a. Primeiro < 0
+       b. Determinante = 0
+    c. Hessiana semidefinida negativa
+    d. Lucro côncavo, mas não estritamente
+    e. Direção \((L,K)\) gera forma quadrática nula
+12) Segundo exemplo: custos côncavos
+    a. Função de custo:
+       \[ C(L,K)=\sqrt{L}+\sqrt{K} \]
+    b. Preço ajustado:
+       \[ p=4 \]
+    c. Função lucro:
+       \[ \tilde{\pi}(L,K)=4L^{1/2}K^{1/2}-\sqrt{L}-\sqrt{K} \]
+13) Condições de primeira ordem no segundo caso
+    a. Sistema:
+       \[\begin{cases} 2L^{-1/2}K^{1/2}-\frac12L^{-1/2}=0 \\ 2L^{1/2}K^{-1/2}-\frac12K^{-1/2}=0 \end{cases} \]
+    b. Solução única:
+    \[ L^\star=K^\star=\frac{1}{16} \]
+14) Hessiana e qualificação do ponto crítico
+    a. Hessiana avaliada no ponto crítico:
+       \[H_{\tilde{\pi}}= \begin{pmatrix} 0 & 16 \\ 16 & 0 \end{pmatrix} \]
+    b. Determinante negativo
+    c. Hessiana indefinida
+    d. Ponto crítico é ponto de sela
+    e. CPO não são suficientes
+15) Síntese conceitual
+    a. Custos convexos + tecnologia côncava \(\rightarrow\) lucro côncavo
+    b. Custos côncavos podem destruir a concavidade do lucro
+    c. Sem concavidade global:
+       a. CPO deixam de ser suficientes
+       b. Pontos críticos podem não ser ótimos
+    d. A hipótese de concavidade é central na teoria microeconômica
+
+
+* Otimização condicionada: Roteiro de resposta
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
+
+1) Motivação econômica e enquadramento analítico
+   a) Problemas centrais da teoria econômica envolvem escolhas ótimas sob escassez.
+   b) A escassez manifesta-se por meio de vínculos que restringem o conjunto de decisões admissíveis.
+   c) Esses vínculos podem assumir a forma:
+      - de igualdades (ex.: restrição orçamentária exaurida);
+      - de desigualdades (ex.: limites regulatórios, capacidades, não-negatividade).
+   d) A otimização condicionada fornece o arcabouço formal para analisar tais decisões.
+   e) O método dos multiplicadores de Lagrange e sua generalização pelas condições de Kuhn–Tucker unificam o tratamento desses problemas.
+   f) A solução ótima emerge da interação entre:
+      - a forma da função objetivo;
+      - a geometria do conjunto viável;
+      - a natureza (ativa ou não) das restrições.
+2) Convenções formais adotadas
+   a) Restrições de desigualdade são expressas na forma de não-positividade.
+   b) Vetores são denotados por letras com seta, como \( \vec{x} \), para distingui-los de escalares.
+   c) Assume-se diferenciabilidade suficiente das funções envolvidas (classe \( C^1 \) ou superior).
+3) Problema com restrição de igualdade: formulação geométrica
+   a) Seja \( F(\vec{x}) \) a função objetivo e \( G(\vec{x}) = c \) a restrição.
+   b) O problema consiste em maximizar \( F \) sobre a superfície definida por \( G = c \).
+   c) Um extremante restrito ocorre quando não existe deslocamento admissível ao longo da restrição que aumente \( F \).
+4) Interpretação geométrica via curvas parametrizadas
+   a) Suponha que a restrição defina localmente uma curva diferenciável \( \vec{\gamma}(t) \).
+   b) A função objetivo restrita é \( f(t) = F(\vec{\gamma}(t)) \).
+   c) Se \( \vec{x}^* = \vec{\gamma}(t_0) \) é um extremante restrito, então \( f'(t_0) = 0 \).
+   d) Pela regra da cadeia:
+      \[f'(t_0) = \nabla F(\vec{\gamma}(t_0)) \cdot \vec{\gamma}\,'(t_0). \]
+   e) O vetor tangente \( \vec{\gamma}\,'(t_0) \) representa todas as direções admissíveis localmente.
+   f) Logo, a condição de otimalidade implica que o gradiente de \( F \) é ortogonal a todas essas direções.
+5) Papel da restrição e qualificação
+   a) Diferenciando a identidade \( G(\vec{\gamma}(t)) = c \):
+      \[\nabla G(\vec{\gamma}(t_0)) \cdot \vec{\gamma}\,'(t_0) = 0. \]
+   b) Assim, tanto \(\nabla F\) quanto \( \nabla G \) são ortogonais ao mesmo vetor tangente.
+   c) Se \(\nabla G(\vec{x}^*) \neq \vec{0}\), a restrição é dita qualificada.
+   d) Sob qualificação, o espaço tangente é bem definido.
+   e) Consequentemente, os vetores \(\nabla F(\vec{x}^*) \) e \( \nabla G(\vec{x}^*) \) são linearmente dependentes:
+      \[\nabla F(\vec{x}^*) = \mu^* \nabla G(\vec{x}^*). \]
+6) Formalização algébrica: Lagrangeana
+   a) Define-se a Lagrangeana:
+      \[\mathcal{L}(\vec{x},\mu) = F(\vec{x}) - \mu(G(\vec{x}) - c). \]
+   b) As condições de primeira ordem reproduzem:
+      - o alinhamento de gradientes;
+      - a própria restrição.
+   c) O multiplicador \(\mu\) surge como variável auxiliar.
+
+7) Interpretação econômica do multiplicador
+   a) Pelo Teorema do Envelope:
+      \[\frac{dV}{dc} = \mu^*, \]
+   b) O multiplicador mede o ganho marginal da função objetivo ao relaxar a restrição.
+   c) Economicamente, \( \mu \) é um preço-sombra.
+8) Introdução de restrições de desigualdade
+   a) Considere \( H(\vec{x}) \leq d \).
+   b) A solução pode ocorrer:
+      - no interior (restrição inativa);
+      - na fronteira (restrição ativa).
+   c) As condições de Kuhn–Tucker unificam ambos os casos.
+9) Condições de Kuhn–Tucker
+   a) Lagrangeana:
+      \[\mathcal{L}(\vec{x},\lambda) = F(\vec{x}) - \lambda(H(\vec{x}) - d), \quad \lambda \geq 0\]
+   b) Condições:
+      - \( \nabla_{\vec{x}} \mathcal{L} = \vec{0} \);
+      - \( H(\vec{x}^*) \leq d \);
+      - \( \lambda^* \geq 0 \);
+      - \( \lambda^*(H(\vec{x}^*) - d) = 0 \).
+   c) A última é a condição de folga complementar.
+
+10) Ponto conceitual crítico: ativo não implica vinculante
+    a) Erro comum: identificar restrição ativa com multiplicador positivo.
+    b) Correto:
+       - restrição ativa \( \iff \) satisfeita com igualdade;
+       - vinculante no sentido marginal \( \iff \) multiplicador não nulo.
+    c) É possível — e economicamente relevante — que:
+       - \( H(\vec{x}^*) = d \);
+       - \( \lambda^* = 0 \).
+    d) Isso indica ausência de efeito marginal, não ausência de efeito geométrico.
+
+11) Exemplo econômico: firma Cobb–Douglas sem restrição sanitária
+    a) Tecnologia:
+       \[Y(L,K) = L^{1/2}K^{1/2}. \]
+    b) Custos: \( C = 2L + K \).
+    c) Insumos: \(w = 2\), \(r = 1\)
+    d) Preço: \(p = 1\)
+    e) Restrição orçamentária: \( 2L + K = 12 \).
+    f) Solução:
+       \[L^* = K^* = 4, \quad Y^* = 4. \]
+
+12) Introdução da restrição sanitária
+    a) Restrição sanitária: \(eL \leq E \).
+       a) Custo por trabalhador \((e)\): 1
+       b) Orçamento específico: \(E = 3\)
+    b) A solução anterior torna-se inviável.
+    c) A restrição sanitária é ativa no ótimo.
+
+13) Problema com restrição sanitária
+    a) O problema passa a ser:
+       \[\max_{L,K} \; Y(L,K) \quad \text{sujeito a} \quad 2L + K = 12, \quad eL \leq E. \]
+14) Solução com Kuhn–Tucker
+    a) Impõe-se \( L = 3 \).
+    b) Da restrição orçamentária: \( K = 6 \).
+    c) Multiplicadores:
+       \begin{equation*}
+       \mu^* = \frac{1}{2\sqrt{2}}, \quad \lambda^* = 0.
+       \end{equation*}
+    d) Produção:
+       \begin{equation*}
+       Y^\dagger = \sqrt{18} < 4.
+       \end{equation*}
+15) Interpretação econômica do caso \( \lambda = 0 \)
+    a) A restrição sanitária elimina o ponto custo-eficiente original.
+    b) Contudo, no novo ótimo:
+       - deslocamentos marginais da restrição sanitária não aumentam \( Y \).
+    c) Geometricamente:
+       - o gradiente da função objetivo já está alinhado com a restrição orçamentária;
+       - a restrição sanitária é localmente redundante.
+    d) Economicamente:
+       - a restrição afeta o nível de produção;
+       - mas não exerce efeito marginal no ponto ótimo.
+16) Síntese final
+    a) A otimização condicionada organiza escolhas sob escassez.
+    b) A qualificação das restrições garante validade das condições de primeira ordem.
+    c) A concavidade assegura suficiência global.
+    d) Multiplicadores emergem como preços-sombra.
+    e) O caso de restrição ativa com multiplicador nulo evidencia sofisticação analítica e domínio conceitual.
+
 * Glossário
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
 
 - Classe \(C^{1}\) :: Funções que possuem derivadas parciais de *primeira ordem* contínuas em seu domínio
   - Classe \(C^{2}\) :: Incluem funções com derivadas parciais de *segunda* ordem que são contínuas. Permite aplicar o Teorema de Schwarz (derivadas mistas iguais).
 - Diferencial Vs. Derivada total :: O diferencial é uma *aproximação linear* da função para pequenas variações em suas variáveis independentes em torno de um ponto. A derivada total indica a taxa de variação de uma função em termos de uma variável considerando os efeitos diretos e indiretos
+- Extremante :: Ponto do domínio de uma função no qual ela atinge um máximo ou um mínimo (local ou global). Trata-se, portanto, de um ponto definido pelo comportamento comparativo dos valores da função em sua vizinhança ou em todo o domínio. Todo extremante interior diferenciável é um ponto crítico, mas nem todo ponto crítico é um extremante.
 - Função afim :: Equivalente à função polinomial do primeiro grau com a forma: \(f(x) = ax + b\). Trata-se de uma transformação linear
+- Funções homotéticas :: Transformação monotonicamente crescente de uma função homogênea, isto é, \(f(x) = g(h(x))\), onde \(h\) é homogênea e \(g\) é estritamente crescente. Equivalente­mente, suas curvas de nível são expansões radiais umas das outras.
 - Funções transcendentares :: São funções que não podem ser expressas como solução de uma equação polinomial. Em outras palavras, não podem ser obtidas através de um número finito de operações algébricas
 - Gradiente descendente :: Dada uma função \( f: \mathbb{R}^n \to \mathbb{R} \), o objetivo é encontrar o mínimo global ou local de \(f\). Atualiza iterativamente os parâmetros na direção oposta ao gradiente da função, que indica a maior taxa de crescimento de \(f\). A regra de atualização é expressa por: \(\mathbf{w}_{k+1} = \mathbf{w}_k - \eta \nabla f(\mathbf{w}_k)\);  \(\eta\): taxa de aprendizado.
 - Multiplicador de Lagrange (interpretação) :: mede a variação no valor ótimo da função objetivo decorrente de um relaxamento marginal da restrição. Representa o preço-sombra do recurso escasso.
+- Posto de matriz :: número máximo de linhas ou colunas linearmente independentes que ela possui, determinado pela quantidade de linhas não nulas em sua forma escalonada reduzida por linhas.
+  - Observação :: Nunca pode exceder o número da menor dimensão
 - Preço-sombra :: Valor marginal implícito de um recurso escasso.
 - Produto escalar :: Formado pela multiplicação dos elementos dos vetores, subsequentemente somados. O resultado fornece um número real. Produto escalar é o caso particular de um produto interno.
 - Produto vetorial :: Sejam dois vetores \(\vec{a}\) e \(\vec{b}\) linearmente independenetes, o produto vetorial (denotado por \(\times\) ou \(\wedge\)) resulta em um vetor normal a esses dois. Resultado é um vetor, não um escalar.
@@ -3319,7 +4640,19 @@ Materiais:
   - Teorema de Young :: Garante a igualdade das derivadas parciais mistas sob hipóteses de regularidade mais fracas. Em geral, basta a existência das derivadas mistas e a continuidade de uma delas no ponto considerado.
 - Teorema do confronto :: Utilizado para computar o limite de uma função a partir da comparação de funções próximas com limites conhecidos.
 - Teorema de Euler para Funções Homogêneas :: Se uma função \(f(x_{1},...,x_{n})\) é homogênea de grau \(k\), então a soma de cada variável multiplicada pela sua derivada parcial correspondente é igual a \(k\) vezes a função original
+- Teorema do Envelope :: Sob condições de regularidade, a derivada do valor ótimo de um problema de otimização em relação a um parâmetro é igual à derivada parcial da função objetivo em relação a esse parâmetro, avaliada no ponto ótimo.
+  - Implicação :: As variações induzidas nos argumentos escolhidos endogenamente não contribuem para essa derivada.
 - Teorema de Weierstrass (valores extremos) :: Seja \(f : K \rightarrow \mathbb{R}\) uma função contínua definida em um conjunto \(K \subset \mathbb{R}^n\) compacto. Então \(f\) atinge um máximo e um mínimo globais em \(K\). O teorema assegura existência de extremos, mas não fornece sua localização nem critérios de unicidade.
   - Ideia de conjunto compacto :: Intuitivamente, isso significa que o conjunto não se estende ao infinito e contém todos os seus pontos de fronteira.
 - Versor :: É o mesmo que vetor unitário. Definido em um espaço vetorial normado dotado de norma igual a um. Por consequência, o produto escalar de dois vetores unitários é equivalente ao cosseno do ângulo entre eles. Para normalizar um vetor, basta dividí-lo por sua norma.
 - Vetor normal à reta :: Dada uma equação de reta \(ax + by + c = 0\), \(\vec{n} = (a,b)\) é o vetor normal a essa reta. Dito de outro modo, o produto escalar entre (x,y) e \(\vec{n}\) é zero. Outra forma de calcular é a partir negativo do inverso da inclinação da reta tangente a essa curva (derivada). Depois, basta substituir a inclinação na equação da reta.
+
+* Variáveis locais :noexport:
+
+# Local Variables:
+# eval: (setq-local org-latex-text-markup-alist
+#        '((bold . "\\hl{%s}")
+#          (italic . "\\emph{%s}")
+#          (underline . "\\underline{%s}")
+#          (code . "\\texttt{%s}")))
+# End:
