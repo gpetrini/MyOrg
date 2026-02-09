@@ -1,0 +1,73 @@
+#+title:      Minutas MADE
+#+date:       [2026-02-06 Fri 19:50]
+#+filetags:   :made:meeting:
+#+identifier: 20260206T195047
+
+
+* Onboarding [2026-02-06 Fri]
+
+** Estrutura do MADE e forma de trabalho
+
+- Hierarquia:
+  - Diretoria
+    - Coordenadores de área/acadêmica (professores)
+      - Cuidado, feminista
+      - Macro
+    - Professores pesquisadores: Rafael, Patieene, Marina (talvez eu)
+      - Grau de autonomia
+    - Bolsistas
+    - Pessoas chave para atender demandas (Zé + Clara Saliba)
+- Administração
+  - Projetos
+  - Acomponhamento de relatórios
+  - Pagamentos
+- Reunições
+  - Pesquisa
+  - Discutir trabalho
+- Planilha de pesquisa
+  - Lista de pesquisadores
+  - Foco em produtos/filas de publicações
+  - Nem toda pesquisa é um projeto
+  - Atualizações em reunião
+- Formulário de publicação para deixar documentada versão
+- Sistema de acompanhamento
+  - Reunião 1 mês antes de completas 6 meses
+    - Relatório desenvolvido ao longo do período
+    - Acompanhamento
+  - Possibilidade de renovação
+  - Programação de um ano
+- Formulário link de recibo de bolsa
+  - Gerar nota com valor que foi acordado
+  - Sempre dia 25
+  - Informações do tomador de serviço
+  - Pode ser antecipado a depender do fim de semana (recesso)
+- Congressos
+  - Pode ter ajuda de custo
+- Recesso:
+  - 10 dias úteis por semestre
+  - Precisa ser comunicado com 1 mês em conversa com o sênior
+  - Descrição do grupo para período de recesso
+    - Lembrar o grupo a data de recesso
+    - A partir do primeiro semestre
+- Pastas do drive:
+  - Passar propriedade para o MADE
+  - Colocar MADE no github
+- Dúvidas:
+  - Representar MADE Sant'Anna?
+  - Virar pesquisador associado
+- Reunião com Giba dia 12/02
+
+** Informações do contratante
+
+Segue as informações para emissão de nota:
+
+DADOS DO TOMADOR DE SERVIÇO
+- ⁠Nome/Razão Social: INSTITUTO INCUBE
+- ⁠⁠CPF/CNPJ: 38.659.852/0001-68
+- ⁠⁠Endereço: RUA SCIPIÃO, 506 - VILA ROMANA - CEP: 05047-060
+- ⁠⁠Município: São Paulo
+- ⁠⁠UF: SP
+- ⁠⁠Inscrição Municipal: 6.708.462-1
+- ⁠⁠E-mail: Jessica Terra <jessica@incube.org.br>
+
+*Descrição da nota: Serviços prestados ao Made no Mês vigente, e os dados da conta com chave pix*

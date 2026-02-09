@@ -18,6 +18,7 @@
 #+LATEX_HEADER: \sethlcolor{yellow}
 
 
+
 * ETC :noexport:
 
 Avalie meu texto, sem modificá-lo, para que apresente elevado rigor matemático e econômico. Quero que destaque definições que poderiam estar mais claras ou mais precisas. Me ajude na articulação entre o encadeamento de ideias, a fluidez e a coesão do texto. Caso uma reestruturação o torne mais claro, diga. Avalie como incluir uma narrativa econômica coesa que possa tornar o texto mais bem estruturado.
@@ -317,7 +318,7 @@ Ao longo da exposição, elementos de \(\mathbb{R}^{n}\) serão denotados por ve
 
 Começando pelo ente matemático mais simples, considere uma função escalar \(f : D \subseteq \mathbb{R}^n \to \mathbb{R}\), em que o vetor \(\vec{x} = (x_1,\dots,x_n)\) representa variáveis exógenas que influenciam uma variável endógena de interesse \(y = f(\vec{x})\).
 A derivada parcial de \(f\) em relação à coordenada \(x_i\) em um ponto \(\vec{a} = (a_1,\dots,a_n)\) é definida, quando existir, por
-\[f_{x_i}(\vec{a}) = \lim_{h \to 0} \frac{f(a_1,\dots,a_i + h,\dots,a_n) - f(a_1,\dots,a_i,\dots,a_n)}{\vec{h}}, \]
+\[f_{x_i}(\vec{a}) = \lim_{h \to 0} \frac{f(a_1,\dots,a_i + h,\dots,a_n) - f(a_1,\dots,a_i,\dots,a_n)}{h}, \]
 mantendo-se constantes as demais variáveis.
 Do ponto de vista de estática comparativa, \(f_{x_i}(\vec{a})\) mede a taxa de variação instantânea de \(y\) em resposta a um pequeno aumento em \(x_i\), mantendo-se constantes os demais argumentos.
 Do ponto de vista econômico, sua interpretação como efeito /ceteris paribus/ pressupõe que tais variações sejam admissíveis na estrutura do modelo.
@@ -585,7 +586,6 @@ A partir dessa definição, pode-se introduzir a noção de variação local da 
 A noção de diferenciabilidade da curva é herdada da diferenciabilidade de suas componentes.
 Diz-se que a curva \(\gamma\) é diferenciável no ponto \(t_0 \in I\) se cada função componente \(\gamma_j\) é diferenciável em \(t_0\).
 Nesse caso, o vetor tangente a \(\gamma\) em \(t_0\) é definido por \(\gamma\prime(t_0) = ( \gamma_1\prime(t_0), \gamma_2\prime(t_0), \dots, \gamma_n\prime(t_0) ) \in \mathbb{R}^n\).
-
 A interpretação geométrica do vetor tangente surge do limite do vetor secante.
 Para \(h\) suficientemente pequeno, a razão \((\gamma(t_0 + h) - \gamma(t_0))/h\) aproxima-se de \(\gamma'(t_0)\), e a aproximação torna-se exata no limite quando \(h \to 0\).
 A reta que passa por \(\gamma(t_0)\) com direção dada por \(\gamma'(t_0)\) é a reta tangente à trajetória naquele ponto.
@@ -785,77 +785,69 @@ Tópicos:
 ** Resposta 04 :ignore:
 
 
-A análise quantitativa em economia envolve frequentemente a investigação da sensibilidade de variáveis endógenas a variações em parâmetros e condições exógenas.
+A análise quantitativa em economia envolve frequentemente a investigação da *sensibilidade* de variáveis endógenas a variações em *parâmetros* e condições exógenas.
 Em estruturas unidimensionais, a derivada ordinária fornece uma medida completa e unívoca desta relação.
-Contudo, a modelagem de sistemas econômicos exige a consideração de espaços de estados multidimensionais, nos quais as relações funcionais dependem de múltiplos argumentos que se ajustam de forma simultânea.
-A análise marginal, portanto, transcende o cálculo de efeitos isolados, capturados pelas derivadas parciais, para abarcar o estudo da resposta funcional a combinações lineares específicas de variações em seus argumentos.
+Contudo, a modelagem de sistemas econômicos exige a consideração de espaços de estados multidimensionais, nos quais as relações funcionais dependem de *múltiplos argumentos* que se ajustam de forma simultânea.
+A análise marginal economicamente relevante, portanto, transcende o cálculo de efeitos isolados, capturados pelas derivadas parciais, para abarcar o estudo da *resposta funcional* a *combinações lineares específicas* de variações em seus argumentos.
 
-Este é o domínio conceitual da derivada direcional, que generaliza o operador de diferenciação para qualquer direção no espaço de estados.
-O vetor gradiente emerge como o objeto matemático que sintetiza toda a informação marginal local.
-O rigor deste arcabouço fundamenta a análise de estática comparativa em modelos complexos e a caracterização de condições de otimalidade em problemas com restrições.
+Este é o *domínio conceitual* da derivada direcional, que generaliza o operador de diferenciação para *qualquer direção* no espaço de estados.
+O *vetor gradiente* emerge como o _objeto matemático_ que sintetiza toda a *informação marginal local*.
+O rigor deste arcabouço fundamenta a análise de *estática comparativa* em modelos complexos e a caracterização de condições de otimalidade em problemas com restrições.
 Para fins de notação, símbolos vetoriais serão distinguidos por uma seta, como em \(\vec{x}\), para diferenciá-los de escalares.
 
-O objetivo desta exposição é triplo.
-Primeiro, apresenta-se a definição de derivada direcional em \(\mathbb{R}^n\) via limite, estabelecendo-a como a generalização natural do conceito de derivada parcial e discutindo as condições para sua existência.
-Segundo, introduz-se o vetor gradiente a partir da noção de diferenciabilidade, permitindo relacionar uma função a todas as derivadas direcionais possívies.
-Terceiro, explorar-se a interpretação geométrica do gradiente, que o situa como vetor normal às superfícies de nível da função, revelando as direções de variação nula e máxima.
-Quarto, ilustrar a operacionalidade deste instrumental mediante um exemplo econômico baseado numa função de produção Cobb-Douglas, onde será calculada a sensibilidade do produto a um perfil específico de ajustes marginais nos insumos.
+Esta exposição é estruturada da seguinte forma.
+Primeiro, apresenta-se a *definição* de derivada direcional em \(\mathbb{R}^n\) _via limite_, estabelecendo-a como a *generalização* natural do conceito de derivada parcial e discutindo as condições para sua existência.
+Segundo, introduz-se o _vetor gradiente_ a partir da noção de diferenciabilidade, permitindo relacionar uma função a *todas as derivadas direcionais* possívies.
+Terceiro, explorar-se a *interpretação geométrica* do gradiente, que o situa como *vetor normal* às superfícies de nível da função, revelando as direções de variação nula e máxima.
+Quarto, _ilustrar_ a operacionalidade deste instrumental mediante um exemplo econômico baseado numa função de produção Cobb-Douglas, onde será calculada a sensibilidade do produto a um perfil específico de ajustes marginais nos insumos.
 A exposição concluirá posicionando estes conceitos como pilares para métodos numéricos e analíticos amplamente utilizados em economia.
 
 
-Para formalizar matematicamente a intuição da variação em uma direção arbitrária, parte-se de uma função escalar \(f : D \subseteq \mathbb{R}^n \to \mathbb{R}\) e de um ponto interior \(\vec{x}_0 \in D\) no qual se deseja analisar o comportamento local.
-O interesse reside em medir a taxa de variação de \(f\) quando seu argumento se desloca a partir de \(\vec{x}_0\) não ao longo de um eixo coordenado, mas sim seguindo uma trajetória especificada por um vetor direção \(\vec{v} \in \mathbb{R}^n \setminus \{\vec{0}\}\).
-Para que esta medida de taxa de variação seja independente da magnitude do vetor escolhido, adota-se a convenção de se trabalhar com a versão normalizada (unitária) deste vetor.
-Define-se, portanto, o versor na direção de \(\vec{v}\) como \(\vec{u} = \vec{v}/\|\vec{v}\|\), satisfazendo por construção \(\|\vec{u}\| = 1\).
-A trajetória pode ser parametrizada por \(\vec{x}(h) = \vec{x}_0 + h\vec{u}\), onde o parâmetro escalar \(h \in \mathbb{R}\) controla o deslocamento ao longo da reta.
-A derivada direcional de \(f\) no ponto \(\vec{x}_0\), na direção do vetor unitário \(\vec{u}\), é definida como o limite – quando este existe – da taxa média de variação ao longo desta trajetória:
+Para formalizar matematicamente a _intuição_ da variação em uma direção arbitrária, parte-se de uma *função escalar* \(f : D \subseteq \mathbb{R}^n \to \mathbb{R}\) e de um *ponto interior* \(\vec{x}_0 \in D\) no qual se deseja analisar o comportamento local.
+O _interesse_ reside em medir a taxa de variação de \(f\) quando seu argumento se desloca a partir de \(\vec{x}_0\) não ao longo de um eixo coordenado, mas sim seguindo uma *trajetória especificada* por um *vetor direção* \(\vec{v} \in \mathbb{R}^n \setminus \{\vec{0}\}\).
+Para que esta medida de taxa de variação seja *independente da magnitude* do vetor escolhido, adota-se a _convenção_ de se trabalhar com a versão *normalizada* (unitária) deste vetor.
+Define-se, portanto, o *versor* na direção de \(\vec{v}\) como \(\vec{u} = \vec{v}/\|\vec{v}\|\), satisfazendo por construção \(\|\vec{u}\| = 1\).
+A trajetória pode ser *parametrizada* por \(\vec{x}(h) = \vec{x}_0 + h\vec{u}\), onde o parâmetro escalar \(h \in \mathbb{R}\) _controla o deslocamento_ ao longo da reta.
+A derivada direcional de \(f\) no ponto \(\vec{x}_0\), na direção do vetor unitário \(\vec{u}\), é definida como o limite – _quando este existe_ – da *taxa média de variação* ao longo desta trajetória:
 \[
 D_{\vec{u}} f(\vec{x}_0) = \frac{\partial f}{\partial \vec{u}}(\vec{x}_0) = \lim_{h \to 0} \frac{f(\vec{x}_0 + h\vec{u}) - f(\vec{x}_0)}{h}.
 \]
-É crucial observar que a existência deste limite não é garantida para uma função arbitrária \(f\) e uma direção arbitrária \(\vec{u}\); a derivada direcional pode existir em algumas direções e não em outras, independentemente da existência das derivadas parciais.
-Quando ela existe, seu valor quantifica a taxa instantânea de variação de \(f\) em \(\vec{x}_0\) quando o argumento se move na direção e sentido de \(\vec{u}\).
-Vale pontuar que se \(\vec{u}\) é escolhido como o \(i\)-ésimo vetor da base canônica de \(\mathbb{R}^n\), denotado \(\vec{e}_i\), a definição é equivalente à derivada parcial, isto é, \(D_{\vec{e}_i} f(\vec{x}_0) = \frac{\partial f}{\partial x_i}(\vec{x}_0)\).
-Deste modo, a derivada direcional constitui uma generalização da noção de derivada parcial, estendendo o âmbito da análise de sensibilidade para qualquer direção no espaço.
+É crucial observar que a existência deste limite *não é garantida* para uma função arbitrária \(f\) e uma direção arbitrária \(\vec{u}\); a derivada direcional pode existir em _algumas direções_ e não em outras, *independentemente* da existência das _derivadas parciais_.
+Quando esta derivada existe, seu valor quantifica a *taxa instantânea de variação* de \(f\) em \(\vec{x}_0\) quando o *argumento* se move na _direção e sentido_ de \(\vec{u}\)_{}.
+Vale pontuar que se \(\vec{u}\) é escolhido como o \(i\)-ésimo vetor da *base canônica* de \(\mathbb{R}^n\), denotado \(\vec{e}_i\), a definição é *equivalente* à _derivada parcial_, isto é, \(D_{\vec{e}_i} f(\vec{x}_0) = \frac{\partial f}{\partial x_i}(\vec{x}_0)\).
+Deste modo, a derivada direcional constitui uma *generalização* da noção de derivada parcial, estendendo o âmbito da *análise de sensibilidade* para qualquer direção no espaço.
 
-Por simplicidade, a resposta irá se restringir aos casos em que a função \(f\) é diferenciável ao longo de todo seu domínio.
-A condição de diferenciabilidade garante que o comportamento local de \(f\) é suficientemente regular, de modo que ele pode ser aproximado de maneira ótima por uma transformação linear acrescida de um termo de erro, sendo este termo de erro assintaticamente zero.
-Nos casos de uma função deferenciável, a variação em uma direção arbitrária \(\vec{u}\) pode ser expressa como sendo o produto escalar entre essa direção e o vetor gradiente.
-Este vetor gradiente, denotado por \(\nabla f(\vec{x}_0)\), agrega todas as derivadas parciais de primeira ordem:
+Por simplicidade, a resposta irá se restringir aos casos em que a função \(f\) é *diferenciável* ao longo de todo seu domínio.
+A condição de diferenciabilidade garante que o comportamento local de \(f\) é _suficientemente regular_, de modo que ele pode ser *aproximado* de maneira ótima por uma *transformação linear* acrescida de um termo de erro, sendo este termo de erro _assintaticamente zero_.
+Nos casos de uma função deferenciável, a variação em uma direção arbitrária \(\vec{u}\) pode ser expressa como sendo o *produto escalar* entre essa direção e o *vetor gradiente*.
+Este vetor gradiente, denotado por \(\nabla f(\vec{x}_0)\), _agrega_ todas as derivadas parciais de primeira ordem:
 \[
 \nabla f(\vec{x}_0) = \left( \frac{\partial f}{\partial x_1}(\vec{x}_0), \frac{\partial f}{\partial x_2}(\vec{x}_0), \dots, \frac{\partial f}{\partial x_n}(\vec{x}_0) \right).
 \]
-A expressão \(f(\vec{x}_0 + \vec{u}) \approx f(\vec{x}_0) + \nabla f(\vec{x}_0) \cdot \vec{u}\) constitui a melhor aproximação linear da função na vizinhança de \(\vec{x}_0\).
-É esta propriedade de linearização local, intrínseca à diferenciabilidade, que fundamenta a ligação direta e computável entre o gradiente e as derivadas direcionais.
-No entanto, vale notar que a derivada direcional pode existir em funções não diferenciáveis, mas o mesmo não vale para a relação entre gradiente e a direção da derivada direcional.
-
-Considerando o caso particular de um incremento \(\vec{v}\) parametrizado como \(\vec{v} = h\cdot \vec{u}\), com \(h\) escalar, é possível calcular o seguinte limite quando \(h\to 0\):
-\[
-\lim_{h \to 0} \frac{f(\vec{x}_0 + h\vec{u}) - f(\vec{x}_0)}{h} = \nabla f(\vec{x}_0) \cdot \vec{u} + \lim_{h \to 0} \frac{o(|h|)}{h}.
-\]
-em que \(o(|h|)\) é o erro da aproximação linear, sendo assintoticamente igual à zero.
-O lado esquerdo é, por definição, a derivada direcional \(D_{\vec{v}} f(\vec{x}_0)\):
-\[
-D_{\vec{v}} f(\vec{x}_0) = \nabla f(\vec{x}_0) \cdot \vec{v}.
-\]
+A expressão \(f(\vec{x}_0 + \vec{u}) \approx f(\vec{x}_0) + \nabla f(\vec{x}_0) \cdot \vec{u}\) constitui a melhor *aproximação linear* da função na *vizinhança* de \(\vec{x}_0\).
+É esta _propriedade de linearização local_, intrínseca à *diferenciabilidade*, que fundamenta a *ligação* direta e computável entre o _gradiente_ e as _derivadas direcionais_.
 Desse modo, para uma função diferenciável, a derivada direcional em qualquer direção \(\vec{u}\) não apenas existe, mas pode ser calculada como o produto escalar entre o gradiente no ponto e o versor da direção.
-A complexidade inerente ao cálculo de um limite é encapsulada no gradiente, que uma vez determinado, permite obter a sensibilidade da função em infinitas direções com uma operação algébrica trivial.
+Sob *diferenciabilidade*, portanto, toda a _informação de primeira ordem_ da função é *sintetizada* no vetor gradiente, de modo que as *derivadas direcionais* podem ser obtidas _sem novos cálculos_ de limite, apenas por meio de um produto escalar.
+No entanto, vale notar que a existência de derivadas parciais em um ponto não garante nem a existência de _todas_ as *derivadas direcionais*, nem a *diferenciabilidade* da função.
+Em funções *não diferenciáveis*, derivadas direcionais podem existir _isoladamente_, mas não admitem representação linear uniforme *via gradiente*.
 
-Além da simplicidade algébrica, a derivada parcial possui uma interpretação geométrica bastante importante.
-Recordando a identidade do produto escalar, \(\vec{a} \cdot \vec{b} = \|\vec{a}\| \|\vec{b}\| \cos \theta\), onde \(\theta\) é o ângulo entre os vetores, e notando que \(\|\vec{v}\|=1\), tem-se:
+Além da simplicidade algébrica, a derivada direcional possui uma *interpretação geométrica* importante.
+Recordando a _identidade do produto escalar_, \(\vec{a} \cdot \vec{b} = \|\vec{a}\| \|\vec{b}\| \cos \theta\), onde \(\theta\) é o ângulo entre os vetores, e notando que \(\|\vec{u}\|=1\), tem-se:
 \[
-D_{\vec{v}} f(\vec{x}_0) = \|\nabla f(\vec{x}_0)\| \cos \theta.
+D_{\vec{u}} f(\vec{x}_0) = \|\nabla f(\vec{x}_0)\| \cos \theta.
 \]
-Desta forma, a derivada direcional é a projeção escalar do vetor gradiente sobre a direção \(\vec{v}\).
-Sendo assim, o valor máximo possível para a derivada direcional é \(\|\nabla f(\vec{x}_0)\|\), e este máximo é atingido exatamente quando \(\cos \theta = 1\), ou seja, quando \(\theta = 0\) e o vetor direção \(\vec{v}\) aponta na mesma direção e sentido do gradiente.
-Portanto, o vetor gradiente \(\nabla f(\vec{x}_0)\) aponta na direção de maior crescimento local da função \(f\), e sua norma fornece a taxa máxima desse crescimento.
+Desta forma, a derivada direcional é a *projeção escalar* do _vetor gradiente_ sobre a _direção_ \(\vec{u}\).
+Sendo assim, o valor máximo possível para a derivada direcional é \(\|\nabla f(\vec{x}_0)\|\), e este máximo é atingido exatamente quando \(\cos \theta = 1\), ou seja, quando \(\theta = 0\) e o vetor direção \(\vec{u}\) aponta na _mesma direção_ e sentido do *gradiente*.
+Portanto, o vetor gradiente \(\nabla f(\vec{x}_0)\) aponta na direção de *maior crescimento local* da função \(f\), e sua *norma* fornece a _taxa máxima desse crescimento_.
 
-Além disso, a derivada direcional é nula quando \(\cos \theta = 0\), isto é, quando \(\theta = \pi/2\) e o vetor \(\vec{v}\) é ortogonal ao gradiente.
-O conjunto de todas as direções ortogonais a \(\nabla f(\vec{x}_0)\) define o plano tangente à superfície de nível que passa por \(\vec{x}_0\), definida por \(f(\vec{x}) = f(\vec{x}_0)\).
-Conclui-se que o vetor gradiente é normal (perpendicular) a estas superfícies de nível.
-Em termos econômicos, se \(f\) representa uma função objetivo (como utilidade ou lucro), mover-se na direção do gradiente significa seguir o caminho de mais íngreme ascensão, enquanto mover-se em uma direção ortogonal ao gradiente significa permanecer, em primeira ordem, no mesmo nível da função (por exemplo, ao longo de uma isoquanta ou curva de indiferença).
+Além disso, a derivada direcional é *nula* quando \(\cos \theta = 0\), isto é, quando \(\theta = \pi/2\) e o vetor \(\vec{u}\) é *ortogonal* ao gradiente.
+Essa observação geométrica permite caracterizar todas as direções em que a função não varia, em primeira ordem.
+O conjunto de todas as direções ortogonais a \(\nabla f(\vec{x}_0)\) define o *plano tangente* à _superfície de nível_ que passa por \(\vec{x}_0\), definida por \(f(\vec{x}) = f(\vec{x}_0)\).
+Em termos analíticos, que o *vetor gradiente é ortogonal* a estas superfícies de nível.
+Em termos econômicos, isso implica que se \(f\) representa uma função objetivo (como uma função de produção ou utilidade), mover-se na direção do gradiente significa seguir o caminho de mais íngreme ascensão, enquanto mover-se em uma direção ortogonal ao gradiente significa *permanecer*, em primeira ordem, no _mesmo nível da função_ (por exemplo, ao longo de uma isoquanta ou curva de indiferença).
 
 
-Para ilustrar a aplicação e a interpretação econômica deste instrumento, considera-se um exemplo com uma função de produção Cobb-Douglas com retornos constantes à escala.
+Para *ilustrar* a aplicação e a interpretação econômica deste instrumento, considera-se um exemplo com uma função de produção Cobb-Douglas com _retornos constantes à escala_.
 Especificamente, seja \(Y = F(K, L) = K^{\alpha}L^{1-\alpha}\).
 Por simplicidade, fixa-se \(\alpha = 1/2\), resultando em \(F(K, L) = \sqrt{KL}\).
 Os produtos marginais do capital e do trabalho são, respectivamente:
@@ -863,27 +855,27 @@ Os produtos marginais do capital e do trabalho são, respectivamente:
 F_K(K, L) = \frac{1}{2} K^{-1/2} L^{1/2} = \frac{1}{2}\sqrt{\frac{L}{K}}, \quad
 F_L(K, L) = \frac{1}{2} K^{1/2} L^{-1/2} = \frac{1}{2}\sqrt{\frac{K}{L}}.
 \]
-O vetor gradiente da função de produção é, portanto,
+O _vetor gradiente_ da função de produção é, portanto,
 \[
 \nabla F(K, L) = \left( \frac{1}{2}\sqrt{\frac{L}{K}},\; \frac{1}{2}\sqrt{\frac{K}{L}} \right).
 \]
 Seleciona-se para análise um ponto factível e simétrico no espaço dos insumos, \((K_0, L_0) = (4, 4)\).
 Nesta combinação, o nível de produção é \(Y_0 = F(4,4) = \sqrt{4 \times 4} = 4\).
-O gradiente avaliado neste ponto é:
+O gradiente avaliado _neste ponto_ é:
 \[
 \nabla F(4,4) = \left( \frac{1}{2}\sqrt{\frac{4}{4}},\; \frac{1}{2}\sqrt{\frac{4}{4}} \right) = \left( \frac{1}{2} \cdot 1,\; \frac{1}{2} \cdot 1 \right) = \left( \frac{1}{2},\; \frac{1}{2} \right).
 \]
-A norma deste gradiente, que fornece a máxima taxa de crescimento local do produto, é:
+A *norma deste gradiente*, que fornece a máxima taxa de crescimento local do produto, é:
 \[
 \|\nabla F(4,4)\| = \sqrt{ \left(\frac{1}{2}\right)^2 + \left(\frac{1}{2}\right)^2 } = \sqrt{ \frac{1}{4} + \frac{1}{4} } = \sqrt{ \frac{1}{2} } = \frac{\sqrt{2}}{2}.
 \]
 
-Suponha agora um cenário de política ou uma conjuntura na qual os insumos capital e trabalho não evoluem de forma isolada, mas sofrem ajustes marginais conjuntos.
+Suponha agora um *cenário* de política ou uma conjuntura na qual os insumos capital e trabalho não evoluem de forma isolada, mas sofrem *ajustes marginais conjuntos*.
 Por exemplo, imagine uma política que induza, na margem, uma variação no estoque de capital três unidades para cada quatro unidades de variação no nível de emprego.
-Este perfil de ajuste é representado pelo vetor de deslocamento \(\vec{v} = (3, 4)\).
-Para utilizar a fórmula da derivada direcional, é necessário trabalhar com o versor unitário correspondente.
+Este perfil de ajuste é representado pelo _vetor de deslocamento_ \(\vec{v} = (3, 4)\).
+Para utilizar a fórmula da derivada direcional, é necessário trabalhar com o *versor unitário* correspondente.
 A norma de \(\vec{v}\) é \(\|\vec{v}\| = \sqrt{3^2 + 4^2} = \sqrt{25} = 5\), logo o versor é \(\vec{u} = \vec{v}/\|\vec{v}\| = (3/5, 4/5)\).
-A sensibilidade direcional do produto a este choque composto é calculada como:
+A *sensibilidade direcional* do _produto_ a este _choque_ composto é calculada como:
 \[
 D_{\vec{u}} F(4,4) = \nabla F(4,4) \cdot \vec{u} = \left( \frac{1}{2}, \frac{1}{2} \right) \cdot \left( \frac{3}{5}, \frac{4}{5} \right) = \frac{1}{2} \cdot \frac{3}{5} + \frac{1}{2} \cdot \frac{4}{5}.
 \]
@@ -894,27 +886,27 @@ Portanto,
 \[
 D_{\vec{u}} F(4,4) = \frac{7}{10}.
 \]
-O valor positivo e finito desta derivada direcional, \(0.7\), indica que um deslocamento infinitesimal a partir da cesta \((K,L)=(4,4)\) na direção definida por \(\vec{u}\) gera um aumento no produto.
-Sua magnitude quantifica a taxa instantânea desta resposta: para cada unidade de deslocamento na direção \(\vec{u}\) no espaço dos insumos, o produto aumenta, em primeira ordem, \(0.7\) unidades.
-É instrutivo contrastar este resultado com a direção de crescimento máximo, dada pelo versor do gradiente \(\vec{u}_{\text{max}} = \nabla F / \|\nabla F\| = (1/2, 1/2) / (\sqrt{2}/2) = (1/\sqrt{2}, 1/\sqrt{2})\).
+O valor positivo e finito desta derivada direcional indica que um deslocamento infinitesimal a partir da cesta \((K,L)=(4,4)\) na direção definida por \(\vec{u}\) gera um _aumento no produto_.
+Sua magnitude quantifica a *taxa instantânea* desta resposta: para cada _unidade de deslocamento na direção_ \(\vec{u}\) no espaço dos insumos, o _produto aumenta_, em primeira ordem, \(0.7\) unidades.
+É instrutivo _contrastar_ este resultado com a direção de *crescimento máximo*, dada pelo versor do gradiente \(\vec{u}_{\text{max}} = \nabla F / \|\nabla F\| = (1/2, 1/2) / (\sqrt{2}/2) = (1/\sqrt{2}, 1/\sqrt{2})\).
 A derivada direcional nesta direção é exatamente \(\|\nabla F(4,4)\| = \sqrt{2}/2\).
-Comparando os valores, observa-se que a derivada direcional na direção da política \((7/10 = 0.7)\) é ligeiramente superior à taxa máxima teórica.
+Comparando os valores, observa-se que a derivada direcional na direção do cenário hipotético \((0.7)\) é ligeiramente *inferior* à taxa máxima teórica.
 O cálculo confirma que a direção da política \((3,4)\) é quase, mas não exatamente, a direção de crescimento mais íngreme, e que seu efeito marginal sobre o produto é quantitativamente próximo do máximo possível.
 
-Em contrapartida, é possível identificar direções que, localmente, não alteram o nível de produção.
-Estas são as direções tangentes à isoquanta que passa pelo ponto \((4,4)\).
-Para encontrar uma tal direção, basta encontrar um vetor \(\vec{w} = (w_1, w_2)\) ortogonal ao gradiente, ou seja, que satisfaça \(\nabla F(4,4) \cdot \vec{w} = 0\).
+Em _contrapartida_, é possível identificar direções que, localmente, *não alteram* o nível de produção.
+Estas são as _direções tangentes_ à isoquanta que passa pelo ponto \((4,4)\).
+Para encontrar uma tal direção, basta encontrar um vetor \(\vec{w} = (w_1, w_2)\) *ortogonal ao gradiente*, ou seja, que satisfaça \(\nabla F(4,4) \cdot \vec{w} = 0\).
 Dado \(\nabla F(4,4) = (1/2, 1/2)\), a condição é \((1/2)w_1 + (1/2)w_2 = 0\), que simplifica para \(w_1 + w_2 = 0\).
 Uma escolha simples e intuitiva é \(\vec{w} = (1, -1)\).
-Um deslocamento na direção de \(\vec{w}\) representa um movimento ao longo da isoquanta, mantendo o produto constante em uma aproximação linear.
+Um deslocamento na direção de \(\vec{w}\) representa um *movimento ao longo da isoquanta*, mantendo o produto constante em uma aproximação linear.
 
-Esta análise explicita como o instrumental de derivada direcional e gradiente permite decompor um choque vetorial qualquer em uma componente que afeta o valor da função (projetada na direção do gradiente) e uma componente que a deixa inalterada (na direção ortogonal).
-Este exemplo mostra como, a partir dos produtos marginais (o gradiente), podemos avaliar quantitativamente o impacto de qualquer política que afete os insumos de forma combinada, separando a componente que altera o produto daquela que apenas realoca os insumos ao longo de uma isoquanta.
+Esta análise explicita como o instrumental de derivada direcional e gradiente permite *decompor um choque* vetorial qualquer em uma componente que *afeta o valor da função* (projetada na direção do gradiente) e uma componente que a deixa *inalterada* (na direção ortogonal ao gradiente).
+Este exemplo mostra como, a partir dos produtos marginais, pode-se avaliar quantitativamente o impacto de qualquer política que afete os insumos de forma combinada, separando a componente que altera o produto daquela que apenas realoca os insumos ao longo de uma isoquanta.
 
 Para fins de conclusão, vale destacar que a relevância operacional dos instrumentos aqui descritos em economia é substancial.
-Na estática comparativa teórica, o vetor gradiente é central na formulação das condições de primeira ordem em problemas de otimização com restrições, conforme estabelecido pelo método dos multiplicadores de Lagrange.
-Em métodos computacionais, a noção de gradiente generaliza-se para a matriz Jacobiana, que é o componente fundamental de algoritmos como o de Newton-Raphson, utilizado para encontrar soluções de equilíbrio em sistemas de equações não-lineares.
-Desta forma, o domínio dos conceitos de derivada direcional e vetor gradiente fornece a linguagem analítica precisa para investigar sensibilidade e otimização em espaços multidimensionais, constituindo um pilar metodológico para os métodos quantitativos em economia.
+Na estática comparativa teórica, o vetor gradiente é central tanto na formulação das condições de primeira ordem em problemas de otimização não condicionada quanto em problemas com restrições, conforme estabelecido pelo método dos multiplicadores de Lagrange.
+Em métodos computacionais, a noção de gradiente generaliza-se para a *matriz Jacobiana*, que é o componente fundamental de algoritmos como o de _Newton-Raphson_, utilizado para encontrar soluções de equilíbrio em sistemas de equações não-lineares.
+Desta forma, o domínio dos conceitos de derivada direcional e vetor gradiente fornece a *linguagem analítica* para investigar *sensibilidade*, *otimização e solução numérica* de modelos econômicos em alta dimensão.
 
 * Funções explícitas
 
@@ -975,41 +967,46 @@ Temas:
 
 
 ** Resposta 05 :ignore:
+:PROPERTIES:
+:ID:       ccc1dcfa-7852-463c-9fb1-3ce377eeea5b
+:END:
 
-A análise quantitativa em economia dedica-se frequentemente a estudar como variáveis de interesse respondem a mudanças em suas condições determinantes.
+A análise quantitativa em economia dedica-se frequentemente a estudar como variáveis de interesse respondem a mudanças em suas *condições determinantes*.
 Quando há uma única variável endógena, a derivada univariada fornece uma medida completa e local dessa sensibilidade.
-No entanto, os problemas econômicos típicos são inerentemente multidimensionais, envolvendo um conjunto de variáveis endógenas que dependem de múltiplos fatores explicativos.
+No entanto, os problemas econômicos típicos são inerentemente _multidimensionais_, envolvendo um conjunto de variáveis endógenas que dependem de múltiplos fatores explicativos.
 Modelos macroeconômicos microfundamentados, como os de equilíbrio geral ou os baseados em agentes, ilustram essa complexidade.
 De forma não excludente, funções de produção com múltiplos produtos também se enquadram nessa categoria.
 
-Nesses contextos, a relação funcional é descrita por uma aplicação que mapeia um vetor de argumentos para outro de resultados.
+Nesses contextos, a _relação funcional_ é descrita por uma *aplicação* que mapeia um _vetor de argumentos_ para outro de resultados.
 Formalmente, considere uma aplicação \(\vec{F} : D \subseteq \mathbb{R}^n \to \mathbb{R}^m\).
 Ela associa a cada vetor de argumentos \(\vec{x} = (x_1, \dots, x_n)\) um vetor de resultados \(\vec{y} = (F_1(\vec{x}), \dots, F_m(\vec{x}))\).
-O estudo da variação local de \(\vec{y}\) em resposta a um pequeno deslocamento em \(\vec{x}\) a partir de um ponto de referência \(\vec{x}_0\) constitui o cerne da análise marginal multivariada.
-Esta análise é fundamental para a estática comparativa, que busca prever a direção e a magnitude das mudanças nas variáveis endógenas após um choque exógeno.
+O estudo da *variação local* de \(\vec{y}\) em resposta a um _pequeno deslocamento_ (em norma) em \(\vec{x}\) a partir de um ponto de referência \(\vec{x}_0\) constitui o cerne da *análise marginal* multivariada.
+Esta análise é fundamental para a *estática comparativa*, que busca prever a direção e a magnitude das mudanças nas variáveis endógenas após um choque exógeno.
 
 Esta exposição apresenta de forma sistemática esse instrumental, integrando a teoria matemática à aplicação econômica.
-Inicialmente, são apresentados os fundamentos teóricos, incluindo as definições de diferenciabilidade e da matriz jacobiana.
-É discutido como a Jacobiana representa a melhor aproximação linear do sistema não linear original em uma vizinhança de um ponto.
-Na sequência, a operacionalidade do diferencial total é demonstrada por meio de um exemplo econômico.
-O exemplo considera uma firma com tecnologia multiproduto, o que permite calcular como um choque nos insumos de produção se propaga, em primeira ordem, aos níveis de produção de diferentes bens.
-Posteriormente, o formalismo é integrado à regra da cadeia, ampliando seu alcance analítico.
-Tal integração é fundamental para modelar situações em que os argumentos diretos da função são determinados por outras variáveis, como ocorre quando insumos evoluem ao longo do tempo em resposta a variáveis primitivas.
+Inicialmente, são apresentados os fundamentos teóricos, incluindo as definições de *diferenciabilidade* e da *matriz jacobiana*.
+É discutido como a Jacobiana representa a _melhor aproximação linear_ do sistema *não linear* original em uma _vizinhança_ de um ponto.
+Na sequência, a operacionalidade do *diferencial total* é demonstrada por meio de um exemplo econômico.
+O exemplo considera uma firma com *tecnologia multiproduto*, o que permite calcular como um _choque_ nos insumos de produção se *propaga*, em primeira ordem, aos *níveis de produção* de diferentes bens.
+Posteriormente, o formalismo é integrado à *regra da cadeia*, ampliando seu alcance analítico.
+Tal integração é fundamental para modelar situações em que os argumentos diretos da função são determinados por *outras variáveis*, como ocorre quando insumos evoluem ao longo do tempo em resposta a variáveis primitivas.
 Por fim, o arcabouço é situado no contexto mais amplo dos métodos quantitativos em economia.
 Para fins de notação, símbolos vetoriais serão distinguidos por uma seta, como em \(\vec{x}\), para diferenciá-los dos símbolos escalares.
 
-A base teórica para todo este desenvolvimento repousa na noção de diferenciabilidade, que formaliza a ideia de suavidade local necessária a uma boa aproximação linear.
-Diz-se que uma função vetorial \(\vec{F} : \mathbb{R}^n \to \mathbb{R}^m\) é diferenciável em um ponto \(\vec{x}_0\) se existe uma transformação linear \(L : \mathbb{R}^n \to \mathbb{R}^m\) tal que a variação da função satisfaça
+A base teórica para todo este desenvolvimento repousa na noção de *diferenciabilidade*, que formaliza a ideia de suavidade local necessária a uma *boa aproximação linear*.
+Diz-se que uma função vetorial \(\vec{F} : \mathbb{R}^n \to \mathbb{R}^m\) é diferenciável em um ponto \(\vec{x}_0\) se existe uma *transformação linear* \(L : \mathbb{R}^n \to \mathbb{R}^m\) tal que
 \[
 \lim_{\vec{h} \to \vec{0}} \frac{\|\vec{F}(\vec{x}_0 + \vec{h}) - \vec{F}(\vec{x}_0) - L(\vec{h})\|}{\|\vec{h}\|} = 0.
 \]
-Quando esta condição é válida, o termo \(\vec{F}(\vec{x}_0 + \vec{h}) - \vec{F}(\vec{x}_0) - L(\vec{h})\) é denotado por \(o(\|\vec{h}\|)\), indicando que ele tende a zero mais rapidamente do que \(\|\vec{h}\|\).
-Uma consequência fundamental deste conceito é que, se \(\vec{F}\) é diferenciável em \(\vec{x}_0\), então cada uma das \(m\) funções componentes de \(\vec{F}\), \(F_i\), é individualmente diferenciável.
-A transformação linear \(L\) pode então ser representada de forma única por uma matriz quando expressa nas bases canônicas dos espaços \(\mathbb{R}^n\) e \(\mathbb{R}^m\).
+isto é, \(L\) fornece a melhor aproximação linear de \(\vec{F}\) na vizinhança de \(\vec{x}_{0}\).
+Equivalentemente, o erro da aproximação linear é de ordem \(o(\|\vec{h}\|)\), isto é, torna-se desprezível em relação à \(\|\vec{h}\|\) quando \(\vec{h} \to \vec{0}\).
+Uma *consequência* fundamental deste conceito é que, se \(\vec{F}\) é diferenciável em \(\vec{x}_0\), então cada uma das \(m\) *funções componentes* de \(\vec{F}\), \(F_i\), é *individualmente diferenciável*.
+A transformação linear \(L\) pode então ser representada de forma única por uma *matriz* quando expressa nas bases canônicas dos espaços \(\mathbb{R}^n\) e \(\mathbb{R}^m\).
 
-Esta representação matricial é a matriz jacobiana, denotada por \(D\vec{F}(\vec{x}_0)\).
-A matriz resultante é de ordem \(m \times n\) cuja entrada na linha \(i\) e na coluna \(j\) é precisamente a derivada parcial \(\partial F_i / \partial x_j\) avaliada no ponto \(\vec{x}_0\).
-Assim, a Jacobiana agrega todos os efeitos marginais do sistema, organizando os gradientes de cada função componente em suas linhas.
+Esta representação matricial é a *matriz jacobiana*, denotada por \(D\vec{F}(\vec{x}_0)\).
+A matriz resultante é de _ordem_ \(m \times n\) cuja entrada na linha \(i\) e na coluna \(j\) é precisamente a derivada parcial \(\partial F_i / \partial x_j\) _avaliada no ponto_ \(\vec{x}_0\).
+Assim, a Jacobiana agrega todos os *efeitos marginais* do _sistema_.
+Cada linha da Jacobiana corresponde ao gradiente da função componente \(F_{i}\), escrito como vetor linha, consistente com a identificação de \(D\vec{F}(\vec{x}_{0})\) como operador linear de \(\mathbb{R}^{n}\) em \(\mathbb{R}^{m}\):
 \begin{equation*}
 D\vec{F}(\vec{x}_0) =
 \begin{pmatrix}
@@ -1019,20 +1016,20 @@ D\vec{F}(\vec{x}_0) =
 \end{pmatrix}.
 \end{equation*}
 
-Para um vetor de perturbação \(\vec{h} = (\Delta x_1, \dots, \Delta x_n)\) suficientemente pequeno, a propriedade de diferenciabilidade garante que a variação no vetor de resultados é bem aproximada pela aplicação linear da matriz jacobiana sobre este incremento.
-Esta aproximação linear, cujo valor é dado pela aplicação do diferencial total ao incremento \(\vec{h}\), é expressa por
+Para um *vetor de perturbação* \(\vec{h} = (\Delta x_1, \dots, \Delta x_n)\) suficientemente pequeno, a propriedade de _diferenciabilidade_ *garante* que a variação no vetor de resultados é *bem aproximada* pela aplicação linear da matriz jacobiana sobre este incremento.
+Esta _aproximação linear_, cujo _valor_ é dado pela aplicação do *diferencial* total ao incremento \(\vec{h}\), é expressa por
 \[
-\vec{F}(\vec{x}_0 + \vec{h}) - \vec{F}(\vec{x}_0) \approx D\vec{F}(\vec{x}_0) \, \vec{h}.
+\vec{F}(\vec{x}_0 + \vec{h}) - \vec{F}(\vec{x}_0) \approx D\vec{F}(\vec{x}_0) \cdot \vec{h}.
 \]
-O lado direito, \(D\vec{F}(\vec{x}_0) \, \vec{h}\), fornece uma aproximação de primeira ordem para a variação conjunta de todas as variáveis \(F_i\) em resposta a um vetor genérico de choques \(\vec{h}\) aplicado aos argumentos.
+O lado direito, \(D\vec{F}(\vec{x}_0) \cdot \vec{h}\), fornece uma *aproximação de primeira ordem* para a variação conjunta de _todas as variáveis_ \(F_i\) em resposta a um vetor genérico de *choques* \(\vec{h}\) aplicado aos argumentos.
 
 Para ilustrar a aplicação econômica e operacional deste arcabouço, passamos a um exemplo numérico.
-Considere uma firma que utiliza dois insumos primários, capital físico \(K\) e trabalho \(L\), para produzir dois bens finais distintos.
-As tecnologias de produção para cada bem são representadas por funções Cobb-Douglas com retornos constantes à escala, porém com intensidades de fatores distintas.
+Considere uma firma que utiliza dois insumos primários, capital físico \(K\) e trabalho \(L\), para produzir dois *bens finais distintos*.
+As tecnologias de produção para cada bem são representadas por funções Cobb-Douglas com retornos constantes à escala, porém com _intensidades de fatores distintas_.
 Especificamente, as funções são dadas por
 \[Y_1 = F_1(K,L) = K^{\frac{1}{2}} L^{\frac{1}{2}} \quad \text{e} \quad Y_2 = F_2(K,L) = K^{\frac{1}{3}} L^{\frac{2}{3}}. \]
 O vetor de produção é \(\vec{Y} = \vec{F}(K,L) = (F_1(K,L), F_2(K,L))\).
-A matriz jacobiana deste sistema de produção, que consolida todos os produtos marginais, é calculada diretamente das derivadas parciais:
+A *matriz jacobiana* deste sistema de produção, que consolida todos os produtos marginais, é calculada diretamente das derivadas parciais:
 \begin{equation*}
 D\vec{F}(K,L) =
 \begin{pmatrix}
@@ -1041,23 +1038,22 @@ D\vec{F}(K,L) =
 \end{pmatrix}.
 \end{equation*}
 
-Selecionamos o ponto \((K_0,L_0)=(1,1)\) para análise.
-Neste ponto, os níveis de produção são \(Y_1^0=1\) e \(Y_2^0=1\), e a Jacobiana avaliada assume a forma particularmente simples:
+Selecionamos o ponto \((K_0,L_0)=(10,10)\) para análise.
+Neste ponto, os níveis de produção são \(Y_1^0=10\) e \(Y_2^0=10\), e a Jacobiana avaliada assume a forma particularmente simples:
 \begin{equation*}
-D\vec{F}(1,1)=
+D\vec{F}(10,10)=
 \begin{pmatrix}
 \dfrac{1}{2} & \dfrac{1}{2} \\
 \dfrac{1}{3} & \dfrac{2}{3}
 \end{pmatrix}.
 \end{equation*}
 
-Considere agora um choque pequeno e assimétrico nos insumos, representado pelo vetor
-\[\Delta \vec{I} = (\Delta K,\Delta L)=\left(\dfrac{1}{2},\dfrac{1}{4}\right)\]
-Trata-se de um deslocamento local em torno do ponto de referência, com variações proporcionais distintas entre capital e trabalho.
+Considere agora um _choque pequeno_ e *assimétrico* nos insumos, representado pelo vetor
+\[\vec{h} = (\Delta K,\Delta L)=\left(\dfrac{1}{2},\dfrac{1}{4}\right)\]
+Trata-se de um *deslocamento local* em torno do ponto de referência, com variações proporcionais distintas entre capital e trabalho.
 O diferencial total fornece uma aproximação linear para o impacto desse choque combinado sobre o vetor de produção:
 \begin{equation*}
-\Delta \vec{Y} \approx
-= D\vec{F}(1,1)\,\Delta \vec{I}
+\Delta \vec{Y} \approx D\vec{F}(10,10)\cdot \vec{h}
 =
 \begin{pmatrix}
 \dfrac{1}{2} & \dfrac{1}{2} \\
@@ -1079,26 +1075,30 @@ O diferencial total fornece uma aproximação linear para o impacto desse choque
 \end{pmatrix}.
 \end{equation*}
 Assim, obtemos \(\Delta Y_1 \approx 3/8\) e \(\Delta Y_2 \approx 1/3\).
-Cada componente do diferencial total corresponde à soma ponderada dos produtos marginais, em que os pesos refletem os incrementos efetivos de cada insumo.
-Este cálculo ilustra como a estática comparativa multivariada decompõe a variação total de cada variável endógena em contribuições marginais associadas a diferentes fatores.
+Cada _componente do diferencial total_ corresponde à *soma ponderada* dos produtos marginais, em que os _pesos_ refletem os *incrementos* efetivos de cada insumo.
+Este cálculo ilustra como a estática comparativa multivariada _decompõe_ a variação total de cada variável endógena em *contribuições marginais* associadas a diferentes fatores.
 
-Além disso, a estrutura da Jacobiana fornece informações sobre as possibilidades locais de transformação entre os dois bens.
-A Taxa Marginal de Transformação (TMT) entre os produtos, que mede o /trade-off/ produtivo, não é constante e depende da direção específica em que os insumos são ajustados.
-Fixados o ponto \(\vec{I}_0=(1,1)\) e um vetor direcional \(\vec{d}\), considere a curva parametrizada \(\gamma(t)=\vec{I}_0+t\vec{d}\), que descreve uma trajetória específica de variação conjunta dos insumos.
-A variação local dos produtos ao longo dessa trajetória é dada por
-\[\frac{dF_i}{dt}\Big|_{t=0}=\nabla F_i(\vec{I}_0)\cdot\vec{d}, \quad i=1,2. \]
-A razão
-\[\text{TMT}_{\vec{d}}(\vec{I}_0) = -\frac{\nabla F_2(\vec{I}_0)\cdot\vec{d}}{\nabla F_1(\vec{I}_0)\cdot\vec{d}} \]
-define uma taxa marginal de transformação local e direcional, válida apenas no entorno de \(\vec{I}_0\) e condicionada à trajetória considerada.
+Além do diferencial total, a regra da cadeia para funções entre espaços de dimensão arbitrária também se estende de forma direta.
+Considere uma função \(\vec{F}:\mathbb{R}^{n}\to\mathbb{R}^{m}\) e uma curva diferenciável \(\vec{\gamma}:\mathbb{R}\to\mathbb{R}^{n}\).
+A função composta \(\vec{g}:\mathbb{R}\to\mathbb{R}^{m}\), definida por \(\vec{g}(t) = \vec{F}(\vec{\gamma}(t))\), é diferenciável, e sua derivada pode ser obtida combinando as derivadas parciais de \(\vec{F}\) com a derivada de \(\vec{\gamma}\).
+Em termos de componentes, a derivada do \(i\)-ésimo componente é dada por
+\[g_{i}'(t) = \sum_{j=1}^{n} \frac{\partial f_{i}}{\partial x_{j}}(\vec{\gamma}(t))\,\gamma'_{j}(t), \]
 
-Por fim, considere que os insumos evoluem ao longo do tempo segundo trajetórias lineares
-\[K(t)=1+\dfrac{1}{2}t, \quad L(t)=1+\dfrac{1}{4}t, \]
-de modo que \(K(0)=L(0)=1\).
-As taxas de variação instantâneas são \(K'(0)=1/2\) e \(L'(0)=1/4\).
-Aplicando a regra da cadeia em sua forma matricial, obtemos:
+de modo que, coletando todas as componentes, obtemos a forma matricial
+\[D(\vec{F}\circ\vec{\gamma})(t) = D\vec{F}(\vec{\gamma}(t))\,\gamma'(t). \]
+Mais geralmente, se \(\vec{\gamma}:\mathbb{R}^{s}\to\mathbb{R}^{n}\) for diferenciável, com \(\vec{s}^{\star}\in\mathbb{R}^{s}\) e \(\vec{x}=\vec{\gamma}(\vec{s}^{\star})\in\mathbb{R}^{n}\), então a jacobiana da composição \(\vec{G} = \vec{F}\circ\vec{\gamma}\) em \(\vec{s}^{\star}\) verifica
+\[D\vec{G}(\vec{s}^{\star}) = D(\vec{F}\circ\vec{\gamma})(\vec{s}^{\star}) = D\vec{F}(\vec{x})\cdot D\vec{\gamma}(\vec{s}^{\star}), \]
+isto é, a derivada do mapeamento composto é dada pelo produto das derivadas dos mapeamentos envolvidos, avaliadas nos pontos adequados.
+
+
+Feita esta observação sobre a regra da cadeia, ajusta-se o exemplo numério anterior de modo que os insumos evoluem ao longo do tempo segundo trajetórias lineares
+\[K(t)=10+\dfrac{1}{2}t, \quad L(t)=10+\dfrac{1}{4}t, \]
+de modo que \(K(0)=L(0)=10\).
+As taxas de *variação instantâneas* são \(K'(0)=1/2\) e \(L'(0)=1/4\).
+Aplicando a _regra da cadeia_ em sua forma matricial, obtemos:
 \begin{equation*}
 \frac{d\vec{Y}}{dt}(0)
-= D\vec{F}(1,1)\,\frac{d\vec{I}}{dt}(0)
+= D\vec{F}(10,10)\,\frac{d\vec{\gamma}}{dt}(0)
 =
 \begin{pmatrix}
 \dfrac{1}{2} & \dfrac{1}{2} \\
@@ -1115,16 +1115,16 @@ Aplicando a regra da cadeia em sua forma matricial, obtemos:
 \end{pmatrix}
 \end{equation*}
 Portanto, no instante \(t=0\), a produção do bem 1 cresce a uma taxa de \(3/8\), enquanto a do bem 2 cresce a uma taxa de \(1/3\).
-Este resultado evidencia como a regra da cadeia combina a sensibilidade tecnológica capturada pela Jacobiana com a dinâmica assimétrica dos insumos.
+A regra da cadeia permite, portanto, decompor a variação temporal dos produtos em uma componente tecnológica, dada pela Jacobiana, e uma componente dinâmica, dada pelas taxas de variação dos insumos.
 
 
-O diferencial total e a matriz jacobiana, portanto, constituem a base analítica fundamental para a investigação de sistemas econômicos multivariados.
-Sua relevância manifesta-se em três níveis operacionais principais.
-O primeiro é a linearização local de sistemas não-lineares, procedimento cujo centro está na construção e interpretação da matriz jacobiana.
-O segundo é a execução da análise de estática comparativa, realizada por meio do cálculo do diferencial total \(D\vec{F}(\vec{x}_0) \, \Delta \vec{x}\).
-O terceiro é o rastreamento da propagação de choques em modelos com estrutura hierárquica, formalizado pela regra da cadeia matricial \(D(\vec{F} \circ \vec{A}) = (D\vec{F}) (D\vec{A})\), que permite decompor os efeitos totais em canais intermediários.
-Em conjunto, este instrumental fornece a linguagem para modelar a propagação de distúrbios em redes de interdependência econômica e para calcular medidas de sensibilidade multidirecionais.
-Ele também estabelece os fundamentos para métodos numéricos iterativos, como o algoritmo de Newton-Raphson, essenciais para a solução computacional de sistemas de equações de equilíbrio não-lineares.
+À luz do desenvolvimento precedente, pode-se sintetizar o papel analítico do diferencial total e da matriz jacobiana na análise de sistemas econômicos multivariados.
+A relevância destes conceitos manifesta-se em três níveis operacionais principais.
+O primeiro é a *linearização local* de sistemas não-lineares, procedimento cujo centro está na construção e interpretação da matriz jacobiana.
+O segundo é a execução da *análise de estática comparativa*, realizada por meio do cálculo do diferencial total.
+O terceiro é o rastreamento da *propagação de choques* em modelos com estrutura hierárquica, formalizado pela regra da cadeia matricial, que permite decompor os efeitos totais em canais intermediários.
+Em conjunto, este instrumental fornece a linguagem para modelar a *propagação de distúrbios* em redes de _interdependência econômica_ e para calcular medidas de *sensibilidade multidirecionais*.
+Ele também estabelece os fundamentos para _métodos numéricos iterativos_, como o algoritmo de Newton-Raphson, essenciais para a solução computacional de sistemas de equações de equilíbrio não-lineares.
 Dominar a transição da análise univariada para este quadro multivariado é, portanto, uma competência metodológica central para a construção e interpretação de modelos econômicos.
 
 * Derivadas de ordens superiores
@@ -1206,10 +1206,9 @@ Tópicos:
 :END:
 
 A análise em economia, sobretudo a análise marginal, frequentemente estende-se para além dos efeitos de primeira ordem.
-Decisões de produção, consumo e investimento dependem não apenas da direção da variação (capturada pelo gradiente), mas também da sua curvatura.
+Decisões de produção, consumo e investimento dependem não apenas da direção da variação (capturada pelo gradiente), mas também da intensidade e da forma com que essas variações se acumulam (capturada pela curvatura local).
 É a análise de segunda ordem que permite discriminar entre um máximo e um mínimo, formalizar a lei dos rendimentos marginais decrescentes e compreender a natureza das interações entre variáveis, como a complementaridade ou substitutibilidade entre fatores de produção, por exemplo.
-Em sistemas multivariados, que são o lugar-comum na modelagem econômica, este avanço analítico exige a compreensão das condições de diferenciabilidade contínua e o domínio da matriz Hessiana, objeto matricial que organiza as derivadas segundas.
-
+Em sistemas multivariados, que são o lugar-comum na modelagem econômica, este avanço analítico exige a compreensão das condições de diferenciabilidade contínua e o domínio da utilização da matriz Hessiana, objeto matricial que organiza as derivadas segundas.
 
 Considerando esses pontos, a exposição está organizada em quatro partes principais.
 Primeiramente, apresentam-se as classes de funções continuamente diferenciáveis, com destaque para a condição que assegura a simetria das derivadas mistas segundo o Teorema de Schwarz e sua generalização, o Teorema de Young.
@@ -1218,13 +1217,12 @@ Em terceiro lugar, aplica-se esse instrumental à análise de uma função de pr
 Por fim, destaca-se de forma sucinta a relação da Hessiana com problemas de otimização, concavidade e convexidade.
 Neste texto, vetores são indicados por uma seta sobrescrita, como em \(\vec{x}\), para distingui-los de escalares.
 
-
-A transição do cálculo de primeira ordem para o de segunda ordem exige a imposição de condições de regularidade mais fortes sobre a função.
+Para que a análise de segunda ordem seja bem definida e operacionalizável, é necessário explicitar as condições de regularidade impostas às funções econômicas consideradas.
 Uma função escalar \(f : D \subseteq \mathbb{R}^n \to \mathbb{R}\) é dita de classe \(C^1\) em um conjunto aberto \(U  \subseteq D\) se todas as suas derivadas parciais de primeira ordem são funções contínuas em \(U\).
-Esta condição é mais forte do que a mera existência das derivadas parciais.
+Vale notar que esta condição é mais forte do que a mera existência das derivadas parciais.
 Para o estudo das derivadas segundas, a condição de regularidade é pertencer à classe \(C^2\).
 Uma função \(f\) é de classe \(C^2\) em \(U\) se todas as suas derivadas parciais de segunda ordem existem e são contínuas em \(U\).
-Esta condição implica, por sua vez, que todas as derivadas parciais de primeira ordem são diferenciáveis.
+Esta condição implica, por sua vez, que todas as derivadas parciais de primeira ordem são continuamente diferenciáveis.
 
 Uma consequência imediata da condição de continuidade descrita anteriormente é a possibilidade de comutação na ordem de diferenciação para derivadas mistas.
 Este resultado é formalizado pelo Teorema de Schwarz.
@@ -1234,15 +1232,15 @@ em todo ponto de \(U\).
 Este teorema é um caso particular do Teorema de Young.
 O Teorema de Young, por sua vez, garante a independência da ordem de diferenciação das derivadas mistas de qualquer ordem \(k\), desde que a função seja de classe \(C^k\).
 Sendo assim, sob condições de suavidade típicas dos modelos econômicos, a ordem de avaliação dos efeitos cruzados entre variáveis é irrelevante.
-Esta propriedade permite organizar as derivadas segundas de forma simétrica e estruturada em uma matriz.
+Como será explicitado adiante, esta propriedade permite organizar as derivadas segundas de forma simétrica e estruturada em uma forma quadrátrica associada, quando avaliada entre vetores direcionais.
 
-A simetria das derivadas mistas permite organizar as derivadas segundas em uma estrutura matricial conveniente.
+Sob essas condições de regularidade, torna-se natural reunir as derivadas de segunda ordem em um único objeto matricial.
 Para uma função escalar \(f: \mathbb{R}^n \to \mathbb{R}\) de classe \(C^2\), as \(n^2\) derivadas parciais de segunda ordem podem ser dispostas em uma matriz \(n \times n\).
 Esta matriz é a matriz Hessiana de \(f\) no ponto \(\vec{x}\), denotada por \(D^2 f(\vec{x})\) ou \(H_f(\vec{x})\).
 Por força do Teorema de Schwarz, esta matriz é simétrica.
-A Hessiana pode ser interpretada de duas formas complementares.
-Uma delas é tratá-la como um operador que agrega as derivadas parciais segundas de uma função escalar multivariada; outra é apresentá-la como a jacobiana do operador gradiente, sob a condição de diferenciabilidade contínua de segunda ordem.
-Sua estrutura genérica é dada por:
+Essa estrutura matricial admite interpretações complementares, tanto do ponto de vista analítico quanto geométrico.
+Uma das interpretações é tratá-la como um operador que agrega as derivadas parciais segundas de uma função escalar multivariada; outra é apresentá-la como a jacobiana do operador gradiente, sob a condição de diferenciabilidade contínua de segunda ordem.
+Essa identificação permite escrever explicitamente a Hessiana como a matriz:
 \begin{equation*}
 D^2 f(\vec{x}) =
 \begin{pmatrix}
@@ -1256,11 +1254,11 @@ Os elementos fora da diagonal, as derivadas mistas, quantificam as interações 
 Coletivamente, a Hessiana desempenha um papel central na caracterização da curvatura local de uma função multivariada.
 De forma mais simplificada, a Hessiana generaliza a noção de derivada segunda para o caso multivariado.
 
-Uma aplicação relevante da Hessiana surge na análise da variação de uma função ao longo de trajetórias.
-A regra da cadeia para derivadas segundas revela que a segunda variação da função composta depende tanto da curvatura intrínseca da superfície quanto da curvatura da própria trajetória no espaço de domínio.
-Fixada uma parametrização linear no domínio, a Hessiana induz uma forma quadrática que associa a cada vetor direcional uma medida da aceleração local da função nessa direção.
-Já do ponto de vista da aproximação por diferenciais, a Hessiana é o objeto que codifica o termo de segunda ordem na expansão de Taylor multivariada.
-Mais precisamente, para \(\vec{h}\) pequeno, pode-se escrever,
+Uma aplicação relevante da Hessiana surge na análise da variação local de uma função em resposta a deslocamentos no espaço de domínio.
+Quando a função é avaliada ao longo de uma trajetória parametrizada, a regra da cadeia mostra que a variação de segunda ordem depende da estrutura de curvatura da própria função e da direção considerada.
+Em particular, quando o deslocamento é linear, a Hessiana induz uma forma quadrática que associa a cada vetor direcional uma medida da variação de segunda ordem da função nessa direção.
+Do ponto de vista operacional, essa informação aparece como o termo de segunda ordem na expansão de Taylor multivariada.
+Mais precisamente, para \(\vec{h}\) pequeno, pode-se escrever, como aproximação local de segunda ordem,
 \begin{equation*}
 f(\vec{x}_0 + \vec{h})
 \approx
@@ -1280,7 +1278,7 @@ Como consequência, suas derivadas segundas são contínuas e o Teorema de Schwa
 Os produtos marginais, as derivadas primeiras, são
 \[F_K(K,L) = \alpha A K^{\alpha-1} L^{1-\alpha}, \quad F_L(K,L) = (1-\alpha) A K^{\alpha} L^{-\alpha}. \]
 As derivadas parciais de segunda ordem são obtidas pela diferenciação destas expressões.
-Calcula-se a Hessiana \(D^2 F(K,L)\) como:
+Calcula-se a matriz Hessiana \(D^2 F(K,L)\) como:
 \begin{equation*}
 \frac{\partial^2 F}{\partial K^2} = \alpha (\alpha - 1) A K^{\alpha-2} L^{1-\alpha},
 \quad
@@ -1294,15 +1292,15 @@ Calcula-se a Hessiana \(D^2 F(K,L)\) como:
 A igualdade das derivadas mistas é imediatamente verificada, o que confirma a simetria da Hessiana.
 Portanto,
 \begin{equation*}
-D^2 F(K,L) = A K^{\alpha-2} L^{-\alpha-1}
+D^2 F(K,L) = A K^{\alpha-2} L^{-\alpha-1}\cdot\alpha(1 - \alpha)
 \begin{pmatrix}
-\alpha(\alpha-1) L^2 & \alpha(1-\alpha) K L \\
-\alpha(1-\alpha) K L & -\alpha(1-\alpha) K^2
+- L^2 &  K L \\
+ K L & - K^2
 \end{pmatrix}.
 \end{equation*}
 
 A interpretação econômica de cada elemento da Hessiana ilumina as hipóteses subjacentes à tecnologia de produção.
-As derivadas segundas puras são negativas para todos os valores de \(K, L > 0\), dado que \(\alpha (\alpha - 1) < 0\) e \(-\alpha (1-\alpha) < 0\).
+As derivadas segundas puras são negativas para todos os valores de \(K, L > 0\), dado que o termo em evidência é estritamente positivo para no domínio da função.
 Esta negatividade formaliza o princípio dos rendimentos marginais decrescentes para cada fator, mantendo o outro constante.
 Esta hipótese implica que cada unidade adicional de um insumo gera um acréscimo menor na produção, mantidos os demais fatores constantes.
 
@@ -1315,7 +1313,7 @@ Esta é a definição analítica de complementaridade local entre os fatores de 
 Um aumento na dotação de um insumo eleva a produtividade marginal do outro.
 A Cobb-Douglas, portanto, descreve uma tecnologia em que capital e trabalho são complementares na margem.
 
-Uma das relações mais importantes da Hessiana com a teoria econômica ocorre nos problemas de otimização.
+Uma das relações mais importantes da Hessiana em economia ocorre nos problemas de otimização.
 A condição de primeira ordem (gradiente nulo) identifica pontos candidatos a extremos.
 É a condição de segunda ordem que discrimina sua natureza, e esta condição é inteiramente governada pela matriz Hessiana no ponto crítico.
 Se a Hessiana for positiva definida, a forma quadrática associada é positiva em todas as direções, indicando curvatura convexa local e caracterizando um mínimo local.
@@ -1331,7 +1329,7 @@ A Hessiana é o objeto central que reúne toda a informação sobre a curvatura 
 Sua aplicação a uma função de produção Cobb-Douglas explicita formalmente a hipótese de rendimentos marginais decrescentes e revela a natureza complementar dos fatores produtivos nessa tecnologia.
 Por fim, a Hessiana fornece o critério definitivo de segunda ordem para a classificação dos pontos críticos em problemas de otimização.
 O domínio deste instrumental é, portanto, indispensável para uma compreensão rigorosa do comportamento, local e global, das funções que fundamentam a modelagem econômica quantitativa.
-
+A Hessiana constitui, assim, o elo formal entre a análise matemática de segunda ordem e a interpretação econômica da curvatura, da complementaridade e da otimização.
 * Funções implícitas
 
 ** Informações :noexport:
@@ -1549,22 +1547,25 @@ Este resultado, derivado diretamente da regra da cadeia, generaliza-se para sist
 ** Resposta 07 :ignore:
 
 
-Muitos problemas econômicos definem relações entre variáveis endógenas e exógenas por meio de equações implícitas, nas quais a separação analítica entre essas categorias não é possível.
-Esta situação é típica em condições de equilíbrio, em que as variáveis endógenas são determinadas como soluções de um conjunto de restrições comportamentais, tecnológicas e de mercado.
-O Teorema da Função Implícita garante a existência, a unicidade local e a diferenciabilidade, permitindo expressar, localmente,  um subconjunto de variáveis como funções diferenciáveis de outras.
-A capacidade de calcular as derivadas dessas funções implícitas constitui o núcleo operacional da análise de estática comparativa. Essa análise investiga sistematicamente como alterações em parâmetros ou variáveis exógenas afetam a posição de equilíbrio de um sistema econômico.
+Muitos problemas econômicos definem relações entre variáveis endógenas e exógenas por meio de equações implícitas, nas quais a separação analítica entre essas categorias não é evidente ou possível.
+Esta situação é típica em condições de equilíbrio, em que as variáveis endógenas são determinadas como soluções de um conjunto de restrições comportamentais, contábeis, tecnológicas e de mercado.
+Estes são casos típicos em que se recorre ao Teorema da Função Implícita.
+Mais precisamente, o teorema garante a existência local de funções que resolvem o sistema de equações implícitas em termos de um subconjunto de variáveis, preservando unicidade e diferenciabilidade.
+A capacidade de calcular as derivadas dessas funções implícitas constitui o núcleo operacional da análise de estática comparativa.
+Essa análise investiga como alterações em parâmetros ou variáveis exógenas afetam a posição de equilíbrio de um sistema econômico.
 No contexto específico de um modelo de equilíbrio geral, o Teorema da Função Implícita permite avaliar como pequenas variações nas dotações exógenas geram respostas diferenciáveis nas variáveis endógenas.
 
-A análise está dividida em três partes principais.
+A exposição está dividida em três partes principais.
 Inicialmente, apresenta-se a formulação geral do Teorema da Função Implícita (TFI), fornecendo a base para o restante da análise.
 Em seguida, para aprofundar a compreensão, discute-se a interpretação geométrica do teorema, relacionando-o aos conceitos de superfícies de nível, gradientes e taxas marginais de substituição, o que fornece a intuição necessária à sua aplicação em economia.
-Posteriormente, a análise é estendida para sistemas multivariados. Nessa etapa, enfatiza-se a condição de invertibilidade local do sistema, fundamentada na não-singularidade da matriz Jacobiana associada às variáveis endógenas, o que mostra a transição do caso univariado ao geral.
+Posteriormente, a análise é estendida para sistemas multivariados.
+Nessa etapa, enfatiza-se a condição de invertibilidade local do sistema, fundamentada na não-singularidade da matriz Jacobiana associada às variáveis endógenas, o que mostra a transição do caso univariado ao geral.
 Por fim, aplica-se o aparato teórico a um exemplo numérico simplificado que representa um modelo de equilíbrio geral de trocas puras.
 A partir deste exemplo, realiza-se uma análise de estática comparativa, derivando o efeito de uma variação marginal na dotação inicial sobre o preço relativo de equilíbrio e a alocação final dos bens.
 Neste texto, vetores são representados por uma seta sobrescrita, como em \(\vec{x}\), para distingui-los de escalares.
 
-
-Para formalizar matematicamente a intuição do Teorema da Função Implícita, parte-se de uma função escalar \(F: U \subset \mathbb{R}^{2} \to \mathbb{R}\) de classe \(C^{1}\) em um conjunto aberto \(U\).
+Para fixar os conceitos, inicia-se a exposição pela versão escalar do teorema, que contém a intuição essencial e simplifica a exposição formal.
+Dito isso, considere uma função escalar \(F: U \subset \mathbb{R}^{2} \to \mathbb{R}\) de classe \(C^{1}\) em um conjunto aberto \(U\).
 A equação \(F(x, y) = 0\) define uma relação implícita entre as variáveis \(x\) e \(y\).
 Suponha que exista um ponto \((x_0, y_0) \in U\) tal que \(F(x_0, y_0) = 0\).
 O Teorema da Função Implícita estabelece que, se a derivada parcial de \(F\) em relação a \(y\) for não nula nesse ponto, isto é, se \(F_y(x_0, y_0) \neq 0\), então existem vizinhanças abertas \(V\) de \(x_0\) e \(W\) de \(y_0\) e uma função única \(\phi: V \to W\) de classe \(C^{1}\) tal que \(\phi(x_0) = y_0\) e \(F(x, \phi(x)) = 0\) para todo \(x \in V\).
@@ -1580,9 +1581,11 @@ A interpretação geométrica deste resultado liga-se diretamente ao gradiente d
 A equação \(F(x, y) = 0\) define uma curva de nível no plano.
 O vetor gradiente \(\nabla F(x_0, y_0) = (F_x, F_y)\) é normal à curva de nível no ponto \((x_0, y_0)\).
 O vetor tangente à curva tem componentes \((1, dy/dx)\), e a condição de ortogonalidade \(\nabla F \cdot (1, dy/dx) = 0\) recupera exatamente a fórmula \(dy/dx = -F_x/F_y\).
+Essa expressão fornece a inclinação local da curva de nível \(F(x,y) = 0\) no ponto considerado.
 A não-nulidade de \(F_{y}\) permite resolver localmente para \(dy\) em termos de \(dx\), produzindo exatamente a inclinação local dada pelo teorema.
 Em economia, esta relação fundamenta o cálculo das taxas marginais de substituição técnica.
 Por exemplo, para uma função de produção definida por \(Y(K,L) = \bar{Y}\), a taxa marginal de substituição técnica é \(dL/dK = -(\partial Y/\partial K)/(\partial Y/\partial L)\), desde que \(\partial Y/\partial L \neq 0\).
+O sinal negativo explicita o /trade-off/ econômico em que para manter o nível de produção constante, um aumento marginal de um fator exige a redução do outro.
 
 
 A generalização para uma única equação com \(n+1\) variáveis é direta.
@@ -1592,15 +1595,17 @@ Neste caso, existem vizinhanças abertas \(V\) de \(\vec{x}_0\) e \(W\) de \(y_0
 \[\frac{\partial y}{\partial x_i} = -\frac{F_{x_i}(\vec{x}, y)}{F_y(\vec{x}, y)}, \quad i = 1, \dots, n.\]
 
 
-A extensão mais relevante para a modelagem econômica é a dos sistemas de equações.
+A aplicação mais relevante do TFI para a modelagem econômica é a dos sistemas de equações implícitos.
 Considere agora um sistema de \(m\) equações definido por uma função \(F: U \subset \mathbb{R}^{n} \times \mathbb{R}^{m} \to \mathbb{R}^{m}\) de classe \(C^{1}\) em um aberto \(U\).
 O sistema é dado por \(F(\vec{x}, \vec{y}) = \vec{0}\), onde \(\vec{x} = (x_1, \dots, x_n)^\top\) denota o vetor de variáveis exógenas e \(\vec{y} = (y_1, \dots, y_m)^\top\) o vetor de variáveis endógenas.
 Assume-se a existência de um ponto \((\vec{x}_0, \vec{y}_0) \in U\) tal que \(F(\vec{x}_0, \vec{y}_0) = \vec{0}\).
-A condição análoga à \(F_y \neq 0\), e que é necessária e suficiente para a aplicação do TFI localmente, envolve a matriz Jacobiana de \(F\) em relação às variáveis endógenas, avaliada nesse ponto.
-Esta matriz, que contém as derivadas parciais das \(m\) equações em relação às \(m\) variáveis endógenas, é dada por
+A condição análoga à \(F_y \neq 0\), e que é necessária e suficiente para a aplicação do TFI localmente, envolve a matriz Jacobiana de \(F\) em relação às variáveis endógenas \(\vec{y}\), avaliada nesse ponto.
+Esta matriz, cujos elementos são as derivadas parciais da \(i\)-ésima equação em relação à \(j\)-ésima variável endógena, é dada por
 \[
-J_{\vec{y}}F(\vec{x}_0, \vec{y}_0) = \left[ \frac{\partial F_i}{\partial y_j}(\vec{x}_0, \vec{y}_0) \right]_{m \times m}
+J_{\vec{y}}F(\vec{x}_0, \vec{y}_0) = \left[ \frac{\partial F_i}{\partial y_j}(\vec{x}_0, \vec{y}_0) \right]_{i=1,\ldots,n;j=1, \ldots,m}
 \]
+
+
 Se esta matriz for não-singular, ou seja, se \(\det(J_{\vec{y}}F(\vec{x}_0, \vec{y}_0)) \neq 0\), então existe uma função única \(\vec{\phi}\), definida e de classe \(C^{1}\) em torno de \(\vec{x}_0\), tal que \(\vec{\phi}(\vec{x}_0) = \vec{y}_0\) e \(F(\vec{x}, \vec{\phi}(\vec{x})) = \vec{0}\) para todo \(\vec{x}\) suficientemente próximo de \(\vec{x}_0\).
 A diferenciabilidade da função implícita \(\vec{\phi}\) permite calcular suas derivadas parciais.
 
@@ -1614,16 +1619,14 @@ Sob a condição de não-singularidade de \(\frac{\partial F}{\partial \vec{y}}\
 d\vec{y} = - \left[ \frac{\partial F}{\partial \vec{y}} \right]^{-1} \cdot \frac{\partial F}{\partial \vec{x}} \, d\vec{x}.
 \]
 Esta expressão matricial encapsula todos os efeitos de estática comparativa.
-O impacto marginal da variável exógena \(x_k\) sobre a variável endógena \(y_j\) é dado pelo elemento \((j,k)\) da matriz
-\[- \left[ \frac{\partial F}{\partial \vec{y}} \right]^{-1} \frac{\partial F}{\partial \vec{x}}\]
-A condição de não-singularidade da Jacobiana endógena é a generalização multidimensional da exigência de que o sistema possa ser resolvido localmente em termos de \(\vec{x}\) para as variáveis \(\vec{y}\).
+O impacto marginal da variável exógena \(x_k\) sobre a variável endógena \(y_j\) é dado pelo elemento \((j,k)\) dessa matriz.
+A condição de não-singularidade da Jacobiana das variáveis endógenas é a generalização multidimensional da exigência de que o sistema possa ser resolvido localmente em termos de \(\vec{x}\) para as variáveis \(\vec{y}\).
 
 Para concretizar esses conceitos, aplica-se o TFI a um modelo de equilíbrio geral de trocas puras com dois bens, \(X\) e \(Y\), e dois consumidores, \(A\) e \(B\).
-Embora o sistema completo de equilíbrio envolva múltiplas equações para as condições de otimalidade e de mercado, foca-se, primeiramente, na equação reduzida do preço de equilíbrio $p$, obtida por substituir as demandas marshallianas.
-Esta abordagem é matematicamente e localmente equivalente, sob as hipóteses do TFI, ao tratamento do sistema completo $F(\vec{x}, \vec{y}) = \vec{0}$, pois a regularidade da Jacobiana endógena garante que a solução reduzida conserve as propriedades diferenciáveis previstas pelo teorema.
-Feita esta ressalva, as dotações iniciais são \(\vec{e}^A = (e_X^A, 0)\) e \(\vec{e}^B = (0, e_Y^B)\), com \(e_X^A, e_Y^B > 0\).
+Embora o sistema completo de equilíbrio envolva múltiplas equações para as condições de otimalidade e de mercado, foca-se, primeiramente, na equação reduzida do preço de equilíbrio $p$, obtida substituindo nas condições de equilíbrio de mercado as funções demanda ótimas obtidas a partir dos problemas de maximização individuais dos consumidores.
+Adotada essa simplificação, as dotações iniciais são \(\vec{e}^A = (e_X^A, 0)\) e \(\vec{e}^B = (0, e_Y^B)\), com \(e_X^A, e_Y^B > 0\).
 As preferências são representadas por funções de utilidade Cobb-Douglas \(u^A(x_A, y_A) = x_A^{\alpha} y_A^{1-\alpha}\) e \(u^B(x_B, y_B) = x_B^{\beta} y_B^{1-\beta}\), com \(0 < \alpha, \beta < 1\).
-Toma-se o bem \(Y\) como numerário, definindo o preço relativo \(p = p_X / p_Y = p_X\).
+Toma-se o preço do bem \(Y\) como numerário, definindo o preço relativo \(p = p_X / p_Y = p_X\).
 Neste contexto,  as variáveis endógenas são o preço relativo \(p = p_X\) e as cestas finais de cada agente.
 A restrição orçamentária de cada consumidor \(i\) é \(p e_X^{i} + e_Y^{i}\).
 
@@ -1656,42 +1659,38 @@ Aplicando o teorema da função implícita,
 \[
 \frac{\partial p}{\partial e_X^A} = -\frac{\frac{\partial F}{\partial e_X^A}}{\frac{\partial F}{\partial p}} = -\frac{-(1-\alpha)}{-\frac{\beta e_Y^B}{p^2}} = -\frac{(1-\alpha) p^2}{\beta e_Y^B}.
 \]
-Dado que $(1-\alpha) > 0$, $p^2 > 0$, $\beta > 0$, e $e_Y^B > 0$, o sinal desta derivada é estritamente negativo:
-\[
-\frac{\partial p}{\partial e_X^A} = -\frac{(1-\alpha) p^2}{\beta e_Y^B} < 0.
-\]
-O sinal negativo indica que um aumento na dotação inicial do bem \(X\) (\(e_X^A\)) reduz o seu preço relativo \(p = p_X/p_Y\).
+Dado que $(1-\alpha) > 0$, $p^2 > 0$, $\beta > 0$, e $e_Y^B > 0$, o sinal desta derivada é estritamente negativo.
+Esse sinal negativo indica que um aumento na dotação inicial do bem \(X\) (\(e_X^A\)) reduz o seu preço relativo \(p = p_X/p_Y\).
 A intuição econômica está diretamente associada à escassez relativa dos bens.
 Um aumento na oferta total do bem \(X\), mantida constante a dotação do bem \(Y\), torna o bem \(X\) relativamente mais abundante, pressionando seu preço relativo para baixo.
 
-De outro modo, as hipóteses simplificadoras aqui adotadas fazem com que a função do preço de equilíbrio admita uma função explícita
+Neste exemplo específico, a estrutura funcional permite ir além da análise implícita.
+As hipóteses simplificadoras aqui adotadas fazem com que a função do preço de equilíbrio admita uma função explícita
 \[p = \frac{\beta e_Y^B}{(1-\alpha) e_X^A}.\]
 Sendo assim, é possível contrastar os resultados obtidos anteriormente
 \[\frac{\partial p}{\partial e_X^A} = -\frac{\beta e_Y^B}{(1-\alpha) (e_X^A)^2} < 0.\]
 Tal como antes, a sensibilidade dos preços relativos a um incremento na oferta do bem \(X\) é estritamente negativa.
-Para coincidir com o resultado do teorema da função implícita, basta substituir a relação do preço relativo de equilíbrio no numerador e no denominador da expressão anterior.
+Para recuperar o resultado do TFI, basta substituir o preço relativo de equilíbrio no numerador e no denominador.
 A mesma equivalência de resultados pode ser obtida em função da dotação do bem \(Y\)
 \[\frac{\partial p}{\partial e_Y^B} = \frac{\beta}{(1-\alpha) e_X^A} > 0.\]
 
 
 Vale destacar que é possível sofisticar esta análise, formalizando esta situação-problema no quadro mais geral do Teorema da Função Implícita para sistemas
-Como já mencionado, as variáveis endógenas completas são o preço relativo e as quatro equações das quantidades consumidas, ou seja, \(\vec{y} = (p, x_A, y_A, x_B, y_B)\).
+Como já mencionado, as variáveis endógenas são o preço relativo e as quatro equações das quantidades consumidas, ou seja, \(\vec{y} = (p, x_A, y_A, x_B, y_B)\).
 O equilíbrio é descrito por um sistema de cinco equações, agrupando as condições de primeira ordem para as funções de utilidade, duas restrições orçamentárias e o equilíbrio dos mercados.
 A segunda condição de equilíbrio de mercado torna-se redundante por força da Lei de Walras e, como consequência, pode ser desconsiderada uma vez que não é linearmente independente das demais equações.
 Este sistema define uma função implícita \(F(\vec{x}, \vec{y}) = \vec{0}\), em que \(\vec{x} = (e_X^A, e_Y^B)\) e \(\vec{y} = (p, x_A, y_A, x_B, y_B)\).
 A aplicação do TFI requer verificar que a matriz Jacobiana das derivadas de \(F\) em relação a \(\vec{y}\), que captura a estabilidade local, não seja singular no equilíbrio.
 Excetuando-se das soluções de canto, como é o caso deste exemplo, esta condição é tipicamente satisfeita.
-Uma vez verificado, o teorema garante a existência local de funções de equilíbrio diferenciáveis \(\vec{\phi}(e_X^A, e_Y^B)\) para todas as cinco variáveis endógenas.
-A relação diferencial \(d\vec{y} = - [\partial F/\partial \vec{y}]^{-1} (\partial F/\partial \vec{x}) d\vec{x}\) permite, então, calcular não apenas \(\partial p/\partial e_X^A\) e \(\partial p/\partial e_Y^B\), mas também os efeitos sobre as quantidades consumidas por cada agente.
-A análise anterior, portanto, é um caso particular deste sistema mais geral, no qual a equação reduzida para \(p\) foi obtida por substituir as demais relações de equilíbrio.
-Sendo assim, o exemplo numérico mais simplificado permite discutir os conceitos aqui apresentados sem perda de generalidade ou de clareza.
+A análise anterior, portanto, é um caso particular deste sistema mais geral, no qual a equação reduzida para \(p\) foi obtida via redução do sistema por eliminação das variáveis endógenas.
+Sendo assim, o exemplo numérico mais simplificado permite discutir os conceitos aqui apresentados sem perda de rigor analítico ou de clareza.
 
+Cabe, por fim, sintetizar os principais pontos discutidos.
 Ao longo desta exposição, foi demonstrado como o Teorema da Função Implícita estrutura a análise local de sistemas econômicos definidos implicitamente.
 Resumidamente, o TFI é a base matemática da estática comparativa em economia.
-Sua condição central, a não-singularidade da matriz Jacobiana, garante a estabilidade local do sistema.
-Em outras palavras, o sistema de equações de equilíbrio deve definir localmente as variáveis endógenas de maneira única e diferenciável em função dos parâmetros exógenos.
+Sua condição central, a não-singularidade da matriz Jacobiana das variáveis endógenas, garante a estabilidade local do sistema.
 O exemplo numérico de um modelo de equilíbrio geral de trocas puras ilustra como pequenas alterações nas dotações propagam-se às variáveis endógenas definidas implicitamente.
-O domínio deste instrumental é, portanto, essencial para a modelagem e interpretação de fenômenos econômicos, sobretudo para a análise comparativa.
+O domínio deste instrumental é, portanto, essencial para a modelagem e interpretação de fenômenos econômicos, sobretudo para compreender a resposta dos pontos de equilíbrio do sistema à perturbações exógenas, elemento central da análise comparativa.
 
 
 
@@ -3096,168 +3095,165 @@ Assim, a otimização condicionada oferece uma linguagem unificada para a análi
 * Funções de várias variáveis: Roteiro de resposta
 :PROPERTIES:
 :UNNUMBERED: t
+:ID:       ce64d6f0-feba-47ae-ae86-8163cd44d139
 :END:
 
-1. Introdução e motivação econômica
-   a. Aplicações econômicas: *múltiplos argumentos*
-      a. Várias variáveis dependentres
-      b. Funções de produção com múltiplos insumos
-      c. Funções utilidade dependentes de vários bens
-      d. Funções de custo e de lucro envolvendo preços e quantidades
-   b. A variável econômica de interesse passa a ser modelada como função de um *vetor de argumentos*
-   c. Cálculo univariado é *insuficiente*
-      a. Necessidade do aparato do cálculo multivariado
-   d. Delimitação metodológica
-      a. Uso da função Cobb-Douglas como exemplo didático
-      b. Abordagem marginalista adotada apenas por *conveniência analítica*
-2. Funções entre espaços euclidianos
-   a. Definição geral
-      a. Uma função de várias variáveis é uma *aplicação*
-         a. \( f : D \subseteq \mathbb{R}^n \to \mathbb{R}^m \)
-      b. Ponto do domínio: \(\vec{x} = (x_1,\dots,x_n) \)
-      c. Imagem: \( f(\vec{x}) = (f_1(\vec{x}),\dots,f_m(\vec{x}))\)
-      d. *Convenção notacional*: vetores em \(\mathbb{R}^{n}\) como em \(\vec{x}\), escalares em \(\mathbb{R}\)
-   b. Caso típico em economia
-      a. Funções escalares com $m=1$
-   c. Estrutura euclidiana
-      a. *Produto interno usual*
-      b. *Norma euclidiana* $\|x\|$
-3. Limite em várias variáveis
-   a. Conceito fundamental
-      a. A noção de limite exige controle da aproximação em *todas as direções*
-   b. Definição de *bola aberta*
-      a. Para $a \in \mathbb{R}^n$ e $\delta>0$
-         a. \(B_\delta(\vec{a}) = \{\vec{x} \in \mathbb{R}^n : \|\vec{x}-\vec{a}\| < \delta\}\)
-   c. Definição de limite (*função escalar*)
-      a. Diz-se que
-         a. \(\lim_{\vec{x} \to \vec{a}} f(\vec{x}) = L \)
-      b. se, para todo $\varepsilon>0$, existe $\delta>0$ tal que
-         a. \(0 < \|\vec{x}-\vec{a}\| < \delta \Rightarrow |f(\vec{x})-L| < \varepsilon\)
-   d. Propriedade essencial
-      a. O limite deve ser independente do *caminho de aproximação*
-      b. *Critério sequencial equivalente*: deve coincidir para toda *sequência que converge* para $\vec{a}$
-   e. Extensão
-      a. Para funções vetoriais, substitui-se o valor absoluto pela norma em $\mathbb{R}^m$
-   f. Função do bloco: evidenciar o que muda em relação ao univariado
-4. Continuidade
-   a. Definição
-      a. Uma função $f$ é contínua em $\vec{a}$ se
-         a. \(\lim_{\vec{x} \to \vec{a}} f(\vec{x}) = f(\vec{a})\)
-   b. Continuidade no *domínio*
-      a. Se a condição vale para todo $\vec{a} \in D$, a função é contínua em $D$
-   c. Interpretação econômica
+1. Introduzir a motivação econômica
+   a. Anunciar que aplicações econômicas podem ter *múltiplos argumentos* (variáveis independentes)
+   b. Listar exemplos
+      a. Funções de produção com múltiplos insumos
+      b. Funções utilidade dependentes de vários bens
+      c. Funções de custo e de lucro envolvendo preços e quantidades
+   c. Explicitar que a variável econômica de interesse é modelada como função de um *vetor de argumentos*
+   d. Explicitar que cálculo univariado é *insuficiente*
+2. Evidenciar necessidade de ir além do univariado, generalizando
+   a. Mencionar generalização de limite e continuidade: Formulados em termos de bolas abertas
+   b. Mencionar representações gráficas adequadas
+   c. Mencionar classificação de tipos de funções
+   d. Explicitar delimitação metodológica/didática
+      a. Usar função Cobb-Douglas como exemplo didático
+      b. Evidenciar que não há perda de generalidade analítica
+      c. Destacar que permite discutir:
+         - Retornos à escala
+         - Substituição técnica entre os fatores
+         - Propriedades de regularidade e continuidade
+3. Explicitar estrutura da resposta
+   a) Descrever funções entre espaços euclidianos
+      1. Apresentar limite e continuidade multivariada
+   b) Apresentar como representar graficamente (2 vars)
+      1. Curvas de nível com interpretação econômia via isoquantas
+   c) Apresentar tipos especiais de funções
+      1. Destacar representação matricial quando pertinente
+   d) Exemplo numérico para fixar e integrar conceitos
+   e) *Notação:* Elementos do \(\mathbb{R}^{n}\) denotados como \(\vec{x}\) para distinguir de escalares
+4. Apresentar funções entre espaços euclidianos
+   a. _Transição_: base teórica rigorosa \(\Rightarrow\) definição central
+   b. *Definição* geral: função de várias variáveis é uma _aplicação_ \( f : D \subseteq \mathbb{R}^n \to \mathbb{R}^m \)
+      a. \(\mathbb{R}^{n}\) e \(\mathbb{R}^{m}\) são *espaços euclidianos canônicos*
+         - Espaços vetoriais dotados de:
+           - Produto interno usual
+           - Normal euclidiana associada
+      b. Um ponto do domínio: \(\vec{x} = (x_1,\dots,x_n) \)
+      c. Imagem: \( \vec{f}(\vec{x}) = (f_1(\vec{x}),\dots,f_m(\vec{x}))\)
+         - Cada componente de \(\vec{f}\) é uma *função escalar*
+           - Permite analisar *funções vetoriais* com _coordenadas escalares_
+5. Apresentar de *bolas abertas* \(\rightarrow\) limites
+   a. _Transição_: Estrutura euclidiana permite apresentar bola aberta; bola aberta permite apresentar limite
+   b. Definição: para $a \in \mathbb{R}^n$ e $\delta>0$
+      a. Centrada em \(\vec{a}\) e de raio \(\delta\)
+      b. \(B_\delta(\vec{a}) = \{\vec{x} \in \mathbb{R}^n : \|\vec{x}-\vec{a}\| < \delta\}\)
+   c. Importância: generalizar *intervalos abertos* para dimensões superiores
+   d. *Limite* para _função escalar_ é definido em um *ponto* \(vec{a}\) \(\lim_{\vec{x} \to \vec{a}} f(\vec{x}) = L \)
+      a. se, para todo $\varepsilon>0$, existe $\delta>0$ tal que \(0 < \|\vec{x}-\vec{a}\| < \delta \Rightarrow |f(\vec{x})-L| < \varepsilon\)
+      b. \(\forall\) bola aberta centrada em \(\vec{a}\) suficientemente pequena, os valores da função permanecem *arbitrariamente próximas do limite*
+   e. Explicitar condição fundamental
+      a. O limite deve ser independente do *caminho de aproximação* que \(\vec{x}\) se aproxima de \(\vec{a}\)
+      b. *Critério sequencial equivalente*: deve coincidir para toda *sequência* \((x_{k})\) que converge para $\vec{a}$
+   f. Generalizar para *funções vetoriais*: substituir valor absoluto pela norma em $\mathbb{R}^m$
+6. Continuidade
+   a. _Transição_: Em mãos da notação de limite, é possível falar em continuidade
+   b. Definição: uma função $f: D \subseteq \mathbb{R}^{n} \to \mathbb{R}^{m}$ é contínua em $\vec{a} \in D$ se \(\lim_{\vec{x} \to \vec{a}} \vec{f}(\vec{x}) = \vec{f}(\vec{a})\)
+      a. Valor de \(f\) no ponto coincide limite
+   c. Continuidade no *domínio*: Se a condição vale para todo $\vec{a} \in D$, a função é contínua em $D$
+   d. Interpretação econômica para *funções escalares*
       a. Pequenas variações nos argumentos geram pequenas variações no valor da função
       b. Exclusão de *saltos e descontinuidades locais*
-   d. Exemplo: função Cobb-Douglas
-      a. $$ F(K,L) = A K^\alpha L^\beta $$
-      b. Com $A>0$ e $\alpha,\beta>0$
-      c. Função contínua em $\mathbb{R}^2_{++}$
-      d. Continuidade fundamenta o uso de *derivadas parciais e otimização*
-5. Gráficos de funções de duas variáveis: motivação para introdução das curvas de nível
-   a. Definição de gráfico
-      a. Para $f : \mathbb{R}^2 \to \mathbb{R}$
-         a. \( \{(x,y,z) \in \mathbb{R}^3 : z = f(x,y)\}\)
-   b. Interpretação geométrica
-      a. Superfície no espaço tridimensional
-   c. Limitação analítica
-      a. Representação pouco prática para análise econômica aplicada
-6. Curvas de nível
-   a. Definição
-      a. Para $c \in \mathbb{R}$
-         a. \( C_c = \{(x,y) \in D : f(x,y) = c\} \)
-   b. Interpretação geométrica
-      a. *Projeções das interseções* da superfície com planos horizontais
-   c. Aplicação econômica
-      a. Curvas de nível de funções de produção correspondem a *isoquantas*
-   d. Exemplo: Cobb-Douglas
-      a. Isoquanta associada a $Y^\star$
-         a. \( A K^\alpha L^\beta = Y^\star \)
-      b. Forma explícita
-         a. \( L = \left(\frac{Y^\star}{A}\right)^{1/\beta} K^{-\alpha/\beta} \)
+7. Exemplo aplicação em economia I
+   a. Mencionar que comumente utilizam-se funções *contínuas* em todo seu domínio
+      a. Implicação: garante funções bem comportadas
+   b. Exemplo: função Cobb-Douglas $F(K,L) = A K^\alpha L^\beta$; $A>0$ e $\alpha,\beta>0$
+      a. Continuidade decorre de ser _produto de funções_ contínuas em $\mathbb{R}^2_{++}$
+         - Permite que o produto marginal seja bem definido
+         - Fundamenta o uso de *derivadas parciais e otimização*
+8. Gráficos de funções de duas variáveis: motivação para introdução das curvas de nível
+   a. _Transição_: estabelecidas as *propriedades básicas* é natural examinar como as funções podem ser representadas graficamente
+   b. Definição de gráfico para funções *escalares* de duas variáveis $f : \mathbb{R}^2 \to \mathbb{R}$: conjunto \( \{(x,y,z) \in \mathbb{R}^3 : z = f(x,y)\}\)
+   c. Interpretação geométrica
+      a. Como o valor de \(f\) variam _em resposta_ à deslocamentos no plano \((x,y)\)
+      b. Superfície no espaço tridimensional
+   d. Limitação analítica: representação pouco prática para análise econômica aplicada
+   e. Justificar: mais conveniente trabalhar com curvas de nível
+   f. Definição de curvas de nível: para $c \in \mathbb{R}$, o conjunto \( C_c = \{(x,y) \in D : f(x,y) = c\} \)
+   g. Interpretação geométrica
+      a. Conjunto de pontos que a função assume o mesmo valor
+      b. *Projeções das interseções* da superfície com planos horizontais
+      c. Fornece retrato da *topografia* da função
+9. Aplicação econômica II
+   a. Curvas de nível de funções de produção correspondem a *isoquantas*: combinação de fatores que geram o _mesmo nível_ de produto
+   b. Exemplo: Cobb-Douglas \( A K^\alpha L^\beta = Y^\star \)
+      a. Isoquanta associada a $Y^\star > 0$
+      b. Forma explícita: \( L = \left(\frac{Y^\star}{A}\right)^{1/\beta} K^{-\alpha/\beta} \)
       c. Propriedades
-         a. Curvas *estritamente decrescentes*
-         b. Substituição técnica entre fatores
-         c. Inclinação relacionada à TMST
-   e. Extensão
-      a. Superfícies de nível em $\mathbb{R}^3$
-      b. Hipersuperfícies de nível para $n>3$
-7. Tipos especiais de funções
-   a. *Classes funcionais* impõem diferentes *restrições estruturais* à análise
-   b. Funções lineares
-      a. Definição
-         a. \(T(x+y)=T(x)+T(y)\) (*Aditividade*)
-         b. \(T(\lambda x)=\lambda T(x)\) (*Homogeneidade*)
-      b. *Admite* representação matricial
-         a. \(T(x)=Ax\)
-      c. Interpretação econômica
-         a. Substituição perfeita entre insumos
-   c. Funções afins
-      a. Definição
-         a. \( f(x)=Ax+b \)
-      b. Aplicação
-         a. Funções de custo com *componente fixo*
-   d. Polinômios multivariados
-      a. Definição geral
-         a. Um polinômio multivariado em $n$ variáveis é uma *soma finita de monômios* com coeficientes reais
-      b. Representação formal
-         a. \(P(x_1,\dots,x_n) = \sum_{\alpha \in \mathbb{N}^n,\;|\alpha|\le d} c_{\alpha}\, x_1^{\alpha_1}\cdots x_n^{\alpha_n}\)
-      c. Interpretação dos termos
-         a. O vetor $\vec{\alpha}=(\alpha_1,\dots,\alpha_n)$ indica os expoentes de cada variável
-         b. O grau total do monômio é dado por $|\alpha|=\alpha_1+\cdots+\alpha_n$
-      d. Grau do polinômio
-         a. O grau total é o maior $|\alpha|$ com $c_\alpha \neq 0$
-      e. Interpretação econômica
-         a. Aproximações locais de funções econômicas
-         b. Termos de interação capturam efeitos conjuntos entre variáveis
-   e. Formas quadráticas
-      a. Polinômios *homogêneos de grau dois*
-      b. Representação matricial
-         a. \(Q(\vec{x})=\vec{x}^\top A \vec{x}\)
-      c. *Aplicação econômica*
-         a. Hessiano
-         b. Concavidade e convexidade
-         c. Análise local de otimização
-8. A função Cobb-Douglas na hierarquia funcional
-   a. Não polinomial *suave*
-   b. Caso especial
-      a. Expoentes inteiros não negativos
-   c. Propriedade central: *homogeneidade* (propriedade compartilhada de outras classes)
-      a. Definição
-         - \( f(tx)=t^r f(x), \quad t>0 \)
-      b. Para Cobb-Douglas
-         - \( r=\alpha+\beta \)
-   d. Interpretação econômica
-      a. Retornos à escala
-         a. $r=1$: constantes
-         b. $r>1$: crescentes
-         c. $r<1$: decrescentes
-   e. Implicação analítica
-      a. Homogeneidade é condição suficiente para aplicação do teorema de Euler
-      b. Continuidade global no domínio relevante
-9. Exemplo numérico
-   a. Função considerada
-      a. \( F(K,L)=K^{0.5}L^{0.5} \)
-   b. Avaliação em um ponto
-      a. \( F(4,9)=6 \)
-   c. Escalonamento dos insumos
-      a. \(F(8,18)=12\)
-      b. Ilustração de retornos constantes à escala
-   d. Isoquanta
-      a. \(L=\frac{Y^2}{K}\)
-      b. Para $Y=6$, $L=36/K$
-      c. Combinações equivalentes de insumos
-10. Conclusão
-    a. Síntese conceitual
-       a. Funções entre espaços euclidianos
-       b. Limite e continuidade
-       c. Curvas e superfícies de nível
-       d. Classes funcionais e homogeneidade
-    b. Observação final
-       a. O aparato matemático é geral
-       b. Exemplos econômicos têm função ilustrativa
-       c. Conceitos não são apenas formalismos matemáticos
-          a. Instrumentos capazes de acomodar *diferentes situações econômicas*
-          b. Traduzí-las em objetos *analitcamente tratáveis*
+         - Curvas *estritamente decrescentes* \(\Rightarrow\) Substituição técnica entre fatores
+         - Inclinação no *ponto* relacionada à TMST \(\Leftarrow\) Teorema da Função Implícita
+10. Generalizar curvas de nível para ordens superiores
+    a. _Transição:_ Uma vez entendidas curvas de nível \(\Rightarrow\) estendido para ordens superiores
+    b. Superfícies de nível em $\mathbb{R}^3$: \( S_c = \{(x,y,z) \in D : f(x,y,z) = c\} \)
+       a. Visualização gráfica ainda é acessível
+    c. Hipersuperfícies de nível para $n>3$
+       a. Mantém mesmo sentido analítico
+11. Tipos especiais de funções
+    a. _Transição_: Além das propriedades topológicas e geométricas \(\Rightarrow\) distinção por classes \(\Rightarrow\) facilitam a *análise matemática* e interpretação econômica
+       a. *Classes funcionais* impõem diferentes *restrições estruturais* à análise
+    b. Organizar as funções por suas *propriedade*, partindo das _estruturas_ mais simples
+12. Funções lineares
+    a. _Transição:_ No nível mais básico \(\Rightarrow\) funções lineares (\(T: \mathbb{R}^{n}\to \mathbb{R}^{m}\)) \(\Rightarrow\) preservam a estrutura do espaço vetorial dadas as *propriedades*:
+       a. \(T(x+y)=T(x)+T(y)\) (*Aditividade*)
+       b. \(T(\lambda x)=\lambda T(x)\) (*Homogeneidade*)
+    b. *Admite* representação matricial
+       a. \(T(x)=Ax\)
+    c. Interpretação econômica
+       a. Substituição perfeita entre insumos
+    d. Generalização: Funções afins
+       a. Definição: \( f(x)=T(x)+b \) com \(b\) constante
+       b. Adimitem representação matricial \(Ax + b\)
+       c. Aplicação: Funções de custo com *componente fixo*
+13. Polinômios multivariados englobam funções na forma \(P(x_1,\dots,x_n) = \sum_{\alpha \in \mathbb{N}^n,\;|\alpha|\le d} c_{\alpha}\, x_1^{\alpha_1}\cdots x_n^{\alpha_n}\)
+    a. Um polinômio multivariado em $n$ variáveis é uma *soma finita de monômios* com coeficientes reais
+    b. O vetor $\vec{\alpha}=(\alpha_1,\dots,\alpha_n)$ é um *multi-índice* de _inteiros_ não negativos
+    c. O grau total é o maior $|\alpha|$ com $c_\alpha \neq 0$
+       a. Funções lineares são casos particulares de polinômios de grau 1
+    d. Destacar *Formas quadráticas*
+       a. Polinômios *homogêneos de grau dois*
+       b. Em duas variáveis: \(Q(x,y) = ax^{2} + 2bxy + cy^{2}\)
+       c. Representação matricial: \(Q(\vec{x})=\vec{x}^\top A \vec{x}\) com \(A\) simétrica
+          - Viabiliza estudo convexidade e definitude
+            - Por meio de autovalores e menores principais
+          - Expansões de segunda ordem
+          - Hessiano gera uma forma quadrática
+          - Análise *local* de otimização
+14. Discussão econômica III: função Cobb-Douglas na classificação funcional
+    a. Não polinomial *suave*
+    b. Compartilha *homogeneidade* com os polinômios homogêneos
+    c. No geral, não pertence às funções polinomiais
+       a. Exceção: Expoentes inteiros não negativos (atípico) \(\alpha + \beta > 1\) \(\Rightarrow\) retornos crescentes à escala
+15. Homogeneidade: propriedades _transversais_ às diferentes classes de funções
+    a. Definição: \( f(tx)=t^r f(x), \quad t>0 \) e \(\forall x \in D\)
+       a. Funções lineares: homogêneas de grau 1
+       b. Formas quadráticas: homogêneas de grau 2
+       c. Para Cobb-Douglas: \( r=\alpha+\beta \); $r=1$ constantes, $r>1$ crescentes, $r<1$: decrescentes
+    b. Implicação analítica: Homogeneidade é condição suficiente para aplicação do teorema de Euler
+       a. Relaciona as funções às derivadas parciais
+       b. Exaustão do produto
+16. Continuidade das funções
+    a. _Transição_ uma características importante dessas classes é continuidade em _domínios naturais_
+    b. Cobb-Douglas: Continuidade em \(R_{++}\) \(\Leftarrow\) composição de funções contínuas
+       1. Permite definir produto marginal \(\Rightarrow\) respostas bem comportadas
+       2. Formular problemas de otimização e CPOs
+17. Exemplo numérico
+    a. Função considerada: \( F(K,L)=K^{0.5}L^{0.5} \) homogênea de grau 1
+    b. Avaliação em um ponto\( F(4,9)=6 \)
+    c. Escalonamento dos insumos \(F(8,18)=12\)
+       a. Ilustração de retornos constantes à escala
+    d. Isoquanta: \(L=\frac{Y^2}{K}\)
+       a. Para $Y=6$, $L=36/K$
+       b. Combinações equivalentes de insumos
+18. Conclusão
+    a. Funções entre espaços euclidianos \(\Leftarrow\) limite e continuidade \(\Rightarrow\) estudo de superfícies, curvas de nível
+    b. Classes funcionais e homogeneidade \(\Rightarrow\) determinam propriedades locais e globais
+       a. Homogeneidade, convexidade, curvatura, diferenciabilidade
+    c. O aparato matemático é geral \(\Rightarrow\) não apenas teoria da firma ou marginalista
+    d. Instrumentos capazes de acomodar *diferentes situações econômicas* \(\Rightarrow\) traduzí-las em objetos *analitcamente tratáveis*
 
 
 
@@ -3266,912 +3262,773 @@ Assim, a otimização condicionada oferece uma linguagem unificada para a análi
 :UNNUMBERED: t
 :END:
 
-1) Introdução e motivação em estática comparativa
-   a. Análise de como variáveis endógenas de *equilíbrio* respondem a pequenas *variações exógenas*.
-   b. Limitações das derivadas univariadas em contextos com múltiplas variáveis interdependentes.
-   c. Distinção conceitual entre:
-      a. Derivadas *parciais* (efeitos marginais ceteris paribus).
-      b. Derivada total e diferencial total (efeitos conjuntos).
-         a. Derivada total: *operador linear* descreve a *sensibilidade local* de uma função em relação aos seus argumentos
-         b. Diferencial total: *variação aproximada* da função decorrente de variações *exógenas* nos argumentos
-   d. Justificativa do uso da função Cobb–Douglas como exemplo canônico.
-2) Derivadas parciais: definição e interpretação econômica
-   a. Definição formal da derivada parcial: \(f_{x_i}(\vec{a}) = \lim_{\vec{h} \to 0} \frac{f(a_1,\dots,a_i+h,\dots,a_n)-f(\vec{a})}{\vec{h}} \)
-   b. Interpretação como taxa marginal de variação local.
-   c. Hipótese de *admissibilidade* ceteris paribus no modelo econômico.
+1. Introdução e motivação em estática comparativa
+   a. _Abertura_: Grande parte de estática comparativa \(\Rightarrow\) variáveis endógenas de *equilíbrio* respondem a pequenas *variações exógenas*.
+   b. Limitações das derivadas *parciais*: não capturam efeitos simultâneos
+   c. Em contextos  multivariados: _derivadas totais_ fornecem o intrumento adequado $\Rightarrow$ incorporar _dependências funcionais simultaneamente_
+   d. Contrastar com derivadas parciais: \(D_{f}\) agrega efeitos combinados de variações simultâneas
+      a. Nota: Choques podem se propagar por diferentes canais
+2. Estrutura da resposta:
+   a. Apresentar _definições_ de derivadas parciais, derivada total e diferencial total no contexto multivariado
+   b. *Interpretação Geométrica* por meio de planos e hiperplanos tangentes
+   c. *Estender* para ordens superiores, fazendo os devidos ajustes
+   d. Explicitar que quando pertinente, serão apresentados exemplos econômicos, encerrando com um exemplo numérico
+   e. Mencionar parágrafo de síntese e outros aplicações desses instrumentos
+3. Esclarecimentos e notações
+   a. Enunciar que tais menções são para *evitar ambiguidades*
+      a. Distinção conceitual entre derivada total \(D_{f}\) e diferencial total \(df\)
+         a. Derivada total \(Df(\vec{a})\): *operador linear* descreve a *sensibilidade local* de uma função em relação aos seus argumentos
+         b. Diferencial total \(df = Df(\vec{a})[d\vec{x}]\): aplicação deste operador linear a um incremento específico
+      b. Enunciar que elemento que corresponde aos items do edital é o diferencial total, mas o termo derivada total será usada de forma intercambiável dada às referências do edital
+   b. Notação: _Elementos_ no \(\mathbb{R}^{n}\) como \(\vec{x}\) para distinguir de escalares
+4. Derivadas parciais: definição e interpretação econômica
+   a. _Abertura_: Começar pelo _ente matemático_ mais simples: derivadas parciais
+   b. Anunciar que serão avaliados os casos de funções escalares \(f: \mathbb{R}^{n}\to \mathbb{R}\)
+   c. Evidenciar que as variáveis exógenas são \(\vec{x}\)
+   d. Indicar que a derivada é avaliada no _ponto_ \(\vec{a}\)
+   e. Definir formalmente: \(f_{x_i}(\vec{a}) = \lim_{h \to 0} \frac{f(a_1,\dots,a_i+h,\dots,a_n)-f(\vec{a})}{h} \)
+      a. Interpretação como taxa marginal de variação local de \(f\) quando \(x_{i}\) varia avaliada em \(\vec{a}\) com *demais constantes*
+   f. Mencionar hipótese de *admissibilidade* ceteris paribus no modelo econômico.
       a. A variáveis exógenas devem poder variar *independetemente*
-   d. Observação:
-      a. Existência de derivadas parciais não implica diferenciabilidade.
-      b. Funções com complementaridade perfeita (Leontief).
-      c. Isso releva as *vantagens* de um exemplo utilizando Cobb-Douglas
-3) Diferenciabilidade e derivada total
-   a. Funções de classe \(C^1\):
-      a. Derivadas parciais *contínuas* em uma *vizinhança*.
-   b. Definição de diferenciabilidade: \(f(a+h) = f(a) + L(h) + o(|h|) \)
-      a. Com \(o(|h|/|h|) \to 0\) quando \(h \to 0\)
-      b. Norma Euclidiana no \(\mathbb{R}^{{n}}\)
-      c. *Aproximação* linear (local)
-   c. Aplicação linear associada: \(L(vec{h}) = \nabla f(\vec{a})\cdot \vec{h} = \sum_{i=1}^n f_{x_i}(\vec{a})\cdot h_i \)
-   d. Definição do gradiente: \(\nabla f(\vec{a}) = (f_{x_1}(\vec{a}),\dots,f_{x_n}(\vec{a})) \)
-4) Diferencial total
-   a. Definição formal: \(df(\vec{a}) = \sum_{i=1}^n f_{x_i}(\vec{a})\cdot dx_i \)
-   b. Aproximação de primeira ordem: \(f(\vec{a}+\vec{h})-f(\vec{a}) \approx df(\vec{a})\)
-   c. Interpretação econômica:
-      a. Efeito total de variações simultâneas nas variáveis exógenas.
-      b. *Aproximação local* na vizinhança de um ponto (\(\vec{a}\))
-         a. Permite controle do erro pela distância de \(\vec{a}\) e \(\vec{a} + \vec{h}\)
-   d. Memo: Derivada total é um *operador linear* aplicado a uma direção genérica, equanto o diferencial associa a direção com uma *variação exógena* e incremental
-      a. Já a derivada direcial associa a direção a um vetor *unitário*
-5) Exemplo central: função de produção Cobb–Douglas
-   a. Definição geral: \(F(K,L) = A K^\alpha L^{1-\alpha}, \quad A>0,\ 0<\alpha<1 \)
-   b. Derivadas parciais: \(F_K = A\alpha K^{\alpha-1}L^{1-\alpha}, \quad F_L = A(1-\alpha)K^\alpha L^{-\alpha} \)
-   c. Interpretação como produtos marginais.
-   d. Diferencial total da produção: \(dY = F_K\,dK + F_L\,dL \)
-   e. Elasticidades constantes:
-      - \(\alpha\) e \(1-\alpha\).
-   f. Homogeneidade de grau 1 e Teorema de Euler para funções homogêneas.
-      - Contribuições marginais exaurem o valor do produto
-6) Interpretação geométrica: plano tangente
-   a. Gráfico de \(f : \mathbb{R}^2 \to \mathbb{R}\): \((x,y,z)\) com \(z=f(x,y)\)
-      a. Plano tangente só é válido quando há *diferenciabilidade*
-      b. *Unicidade* do plano tangente
-   b. Equação do plano tangente: \(z - f(x_0,y_0) = f_x(x_0,y_0)(x-x_0) + f_y(x_0,y_0)(y-y_0) \)
-   c. Aproximação linear local: \(f(x,y) \approx f(x_0,y_0) + f_x(x_0,y_0)(x-x_0) + f_y(x_0,y_0)(y-y_0)\)
-   d. Condição essencial:
-      - Diferenciabilidade garante qualidade da aproximação.
-7) Generalização para \(\mathbb{R}^n\)
-   a. Derivada total como operador linear: \(Df(\vec{a})[\vec{h}] = \nabla f(\vec{a})\cdot \vec{h} \)
-   b. Diferencial total: \(df(\vec{a}) = \sum_{i=1}^n f_{x_i}(\vec{a})\cdot dx_i \)
-   c. Interpretação geométrica:
-      - Existência de hiperplano tangente em \(\mathbb{R}^{n+1}\).
-        - \(z - f(\vec{a}) = \sum_{i=1}^n f_{x_i}(\vec{a})(x_i-a_i) \)
-8) Exemplo numérico explícito
-   a. Função: \(F(K,L) = K^{1/2}L^{1/2} \)
-   b. Ponto de referência: \((K_0,L_0)=(9,16)\), \(Y_0=12\).
-   c. Produtos marginais: \(F_K(9,16)=\frac{2}{3}, \quad F_L(9,16)=\frac{3}{8} \)
-   d. Diferencial total: \(dY = \tfrac{2}{3}dK + \tfrac{3}{8}dL \)
-   e. Variações: \(\Delta K=1,\ \Delta L=1\)
-   f. Aproximação: \(\Delta Y \approx \frac{25}{24} \)
-   g. Comparação com o valor exato: \(F(10,17)=\sqrt{170} \approx \sqrt{169} = 13 \approx 12 + \frac{25}{24}\)
-9) Síntese conceitual
-   a. Derivadas parciais: efeitos marginais *isolados*
-   b. Derivada total: estrutura linear *local de sensibilidade*
-   c. Diferencial total: *operacionalização* do efeito agregado
-   d. Plano/hiperplano tangente: *interpretação geométrica*
-   e. Aplicabilidade geral:
-      a. Equilíbrio geral.
-      b. Modelos SFC, ABM, Insumo–Produto.
+5. Preâmbulo para diferencial total: diferenciabilidade
+   a. _Abertura_: Distinção entre efeitos isolados e combinados é relevante para análise da *estrutura local* da função
+      a. Mencionar que isso é fundamental para estática comparativa
+   b. Explicitar que existência de derivadas parciais *em um ponto* _não_ implica diferenciabilidade
+   c. Diferenciabilidade requer que afunção seja bem aproximada por uma _aplicação linear_
+   d. Função pode não ser diferenciável mesmo se for _contínua e bem definida_
+      a. Ilustrar com o caso da função Leontieff: função não é diferenciável nas quinas/cantos das isoquantas
+      b. Justificar uso da função Cobb–Douglas ao longo da resposta
+6. Diferenciabilidade e diferencial total
+   a. Derivadas parciais \(f_{x}\) existem e são contínuas na vizinhança de \(\vec{a}\)
+      a. Diz-se que a função é de classe \(C^{1}\)
+      b. Condição suficiente para serem diferenciáveis
+   b. Definição de diferenciabilidade: existe uma *aplicação linear* \(L: \mathbb{R}^{n} \to \mathbb{R}\) que para pequenos incrementos de \(\vec{h}\):
+      a. \(f(a+h) = f(a) + L(h) + o(|h|) \)
+      b. Com \(o(|h|)/|h| \to 0\) quando \(h \to 0\)
+      c. Aplicação linear associada: \(L(vec{h}) = \nabla f(\vec{a})\cdot \vec{h} = \sum_{i=1}^n f_{x_i}(\vec{a})\cdot h_i \)
+      d. *Aproximação* linear (local)
+      e. Definição do gradiente: \(\nabla f(\vec{a}) = (f_{x_1}(\vec{a}),\dots,f_{x_n}(\vec{a})) \)
+   c. Evidenciar que a aproximação linear local permite estudar o comportamento da função na vizinhança de \(\vec{a}\)
+7. Diferencial total
+   a. _Abertura_: Define-se, nesse contexto, o diferencial de \(f\), \(df\), em \(\vec{a}\) como
+      a. Definição formal: \(df(\vec{a}) = \sum_{i=1}^n f_{x_i}(\vec{a})\cdot dx_i \)
+   b. Para pequenos incrementos \(\vec{h} = (dx_{1}, \ldots, dx_{n})\), a variação da função é aproximada
+      a. Aproximação de primeira ordem: \(f(\vec{a}+\vec{h})-f(\vec{a}) \approx df(\vec{a})\)
+      b. Interpretação: decomposição de primeira ordem do efeito total de pequenas variações nas variáveis explicativas
+      c. Observação: Permite controle do erro pela distância de \(\vec{a}\) e \(\vec{a} + \vec{h}\)
+8. Exemplo simbólico: função de produção Cobb–Douglas
+   a. _Abertura:_ Para explicitar o conteúdo econômico dos conceitos matemáticos introduzidos, recorre-se
+   b. Função de produção: \(F(K,L) = A K^\alpha L^{1-\alpha}, \quad A>0,\ 0<\alpha<1 \)
+      a. Enunciar insumos
+   c. Derivadas parciais: \(F_K = A\alpha K^{\alpha-1}L^{1-\alpha}, \quad F_L = A(1-\alpha)K^\alpha L^{-\alpha} \)
+   d. Interpretação como produtos marginais.
+   e. Diferencial total da produção: \(dY = F_K\,dK + F_L\,dL \)
+9. Interpretação geométrica: plano tangente
+   a. _Abertura_: Estes elementos possuem interpretação geométrica direta
+   b. Anunciar que será introduzido caso bidimensional primeiro \(f: D \subseteq \mathbb{R}^{2} \to \mathbb{R}\)
+      a. Interpretação: plano tangente de \(f\) em um ponto *diferenciável*
+         a. Garantida pela existência de derivadas parciais contínuas no ponto \((x_{0},y_{0})\)
+      b. Gráfico de \(f\) é a superfície \((x,y,z): z=f(x,y)\) em \(\mathbb{R}^{3}\)
+   c. Equação do plano tangente de \(f\): \(z - f(x_0,y_0) = f_x(x_0,y_0)(x-x_0) + f_y(x_0,y_0)(y-y_0) \)
+   d. Evidenciar aproximação linear local: \(f(x,y) \approx f(x_0,y_0) + f_x(x_0,y_0)(x-x_0) + f_y(x_0,y_0)(y-y_0)\)
+      a. Para pontos \((x,y) \approx (x_{0},y_{0})\); erro de aproximação tende à zero
+   e. Um vetor normal ao plano tangente: \((f_{x}(x_{0},y_{0}), f_{y}(x_{0},y_{0}), -1\)
+      a. Vetor gradiente determina orientação do plano tangente
+10. Reforçar importância de diferenciabilidade
+    a. Mesmo que as derivadas parciais existam, o plano pode não ser uma boa aproximação linear
+    b. Condição essencial: diferenciabilidade garante qualidade da aproximação.
+       - Nesses casos, \(\epsilon \to 0\)
+       - Diferencial oferece uma boa aproximação
+    c. Retomar para caso Cobb-Douglas
+       a. Plano tangente em \((K_{0}, L_{0})\) traduz a combinação linear dos produtos marginais como aproximação de variações na produção
+11. Generalização para \(\mathbb{R}^n\)
+    a. Mencionar que da forma que o diferencial total foi apresentado, já é compatível para o \(\mathbb{R}^n\)
+    b. Indicar que faltam ajustes na interpretação geométric
+    c. Interpretação geométrica:
+       - Existência de hiperplano tangente em \(\mathbb{R}^{n+1}\).
+         - \(z - f(\vec{a}) = \sum_{i=1}^n f_{x_i}(\vec{a})(x_i-a_i) \)
+         - Ponte entre descrição analítica do diferencial total e interpretação geométrica
+       - Vetor gradiente fornece as derivadas parciais em cada direção coordenada
+       - Hiperplano tangente fornece uma boa aproximação local de primeira ordem
+12. Exemplo numérico explícito
+    a. Função: \(F(K,L) = K^{1/2}L^{1/2} \)
+    b. Ponto de referência: \((K_0,L_0)=(9,16)\), \(Y_0=12\).
+    c. Produtos marginais: \(F_K(9,16)=\frac{2}{3}, \quad F_L(9,16)=\frac{3}{8} \)
+    d. Diferencial total: \(dY = \tfrac{2}{3}dK + \tfrac{3}{8}dL \)
+    e. Variações: \(\Delta K=1,\ \Delta L=1\)
+    f. Aproximação: \(\Delta Y \approx \frac{25}{24} \)
+    g. Novo valor da função: \(Y\prime \approx Y_{0} + \Delta Y\)
+    h. Comparação com o valor exato: \(F(10,17)=\sqrt{170} \approx \sqrt{169} = 13 \approx 12 + \frac{25}{24}\)
+13. Síntese conceitual
+    a. _Abertura_ Diferencial total oferece um quadro matemático robusto, base para estática comparativa
+    b. Gradiente, diferencial total e hiperplano tangente cristalizaam a ideia de aproximação linear
+    c. Mencionar que utilizou-se Cobb-Douglas para fixar os conceitos
+       a. Mesmo simples, oferece todos os elementoos necessários
+       b. Pode ser facilmente sofisticado: Equilíbrio Geral
+       c. Aplicabilidade além da abordagem marginalista: SFC, ABM, IO
+          a. Analisam variações locais em torno de pontos de referência
 
 
 * Regra da cadeia: roteiro de resposta
 :PROPERTIES:
 :UNNUMBERED: t
+:ID:       032d776f-0a85-43f7-9ec6-6813acbb8983
 :END:
 
 
 1. Contextualização do problema econômico:
-   - Interesse em analisar como uma variável endógena responde a variações em parâmetros exógenos.
-   - Em ambientes multivariados, variações relevantes ocorrem ao longo de trajetórias no espaço das variáveis, e não apenas ao longo de eixos coordenados.
-   - Limitação do caso univariado: a derivada ordinária não captura ajustes coordenados.
-   - Objetivo: conectar derivadas parciais, curvas parametrizadas, vetores tangentes e regra da cadeia, com aplicação econômica.
-
-2. Definição de curva parametrizada:
-   - Uma curva parametrizada em $\mathbb{R}^n$ é uma função
-     \[\gamma : I \subset \mathbb{R} \to \mathbb{R}^n, \quad \gamma(t) = (\gamma_1(t), \ldots, \gamma_n(t)). \]
-   - O parâmetro $t$ pode ser interpretado como tempo ou como um parâmetro abstrato.
-
-3. Diferenciabilidade e vetor tangente:
-   - A curva é diferenciável em $t_0$ se cada componente $\gamma_j(t)$ é diferenciável em $t_0$.
-   - O vetor tangente é definido por
-     \[\gamma'(t_0) = (\gamma_1'(t_0), \ldots, \gamma_n'(t_0)). \]
-   - Interpretação geométrica via limite do vetor secante:
-     \[\frac{\gamma(t_0 + h) - \gamma(t_0)}{h} \to \gamma'(t_0), \quad h \to 0. \]
-
-4. Curvas regulares:
-   - A curva $\gamma$ é regular (classe $C^1$) se:
-     \[\gamma'(t) \neq \mathbf{0}, \quad \forall t \in I. \]
-   - A regularidade garante a existência de uma direção tangente bem definida em todos os pontos.
-
-5. Função composta ao longo de uma curva:
-   - Seja $f : D \subset \mathbb{R}^n \to \mathbb{R}$ uma função diferenciável.
-   - Seja $\gamma : I \to D$ uma curva regular.
-   - Define-se a função composta
-     \[g(t) = f(\gamma(t)). \]
-
-6. Regra da cadeia (forma analítica):
-   - A derivada de $g(t)$ é dada por
-     \[g'(t) = \sum_{j=1}^n \frac{\partial f}{\partial x_j}(\gamma(t)) \cdot \gamma_j'(t). \]
-
-7. Regra da cadeia (forma vetorial):
-   - O gradiente de $f$ é
-     \[\nabla f(\gamma(t)) = \left(\frac{\partial f}{\partial x_1}(\gamma(t)), \ldots, \frac{\partial f}{\partial x_n}(\gamma(t)) \right). \]
-   - A derivada ao longo da curva é
-     \[g'(t) = \nabla f(\gamma(t)) \cdot \gamma'(t). \]
-
+   a. _Abertura:_ Em modelos econômicos, busca-se analisar como uma variável endógena responde a variações em parâmetros exógenos
+   b. Contextualizar: Funções multivariadas em que os argumentos dependem de outras funções
+   c. Contextualizar: Análise pode estar interessada em efeitos combinados ao longo de trajetórias *economicamente relevantes* (definições de equilíbrio, consistência contábil, etc)
+      a. Evidenciar diferentes canais de transmissão de choques
+      b. Capturar efeitos simultâneos
+   d. Limitação derivadas parciais: restrito à variações *paralelas* aos *eixos coordenados*
+   e. Objetivo: conectar derivadas parciais, curvas parametrizadas, vetores tangentes e regra da cadeia, com aplicação econômica.
+2. Estrutura da resposta:
+   a. _Abertura_: Contexto anterior posiciona a relevância analítica da regra da cadeia
+      a. Compreensão deva importância depende de outros elementos a serem apresentados
+   b. Definição de curvas parametrizadas, vetores tangentes e regularidade
+   c. Demonstrar que a regra da cadeia pode ser expressa como variação ao longo de curvas _diferenciáveis_
+      a. Relacionar com produto escalar \(\nabla f(\gamma(t)) \cdot \gamma\prime(t)\)
+   d. Ilustrar aplicação econômica com função Cobb-Dougas
+      a. \(K(r,t), L(r,t)\)
+   e. Sintetizar discussão e apontar outras aplicações das ferramentas
+3. Definição de curva parametrizada:
+   a. _Abertura_: Para estabelecer uma base rigorosa, partece da definição central
+   b. Uma curva parametrizada em $\mathbb{R}^n$ é uma função _vetorial_
+      - \(\gamma : I \to \mathbb{R}^n\) definida no *intervalo aberto_ \(I \subseteq \mathbb{R}\) dada por  \(\gamma(t) = (\gamma_1(t), \ldots, \gamma_n(t))\)
+      - Cada componente de \(\gamma\) é uma função real \(\gamma_{j}: I \to \mathbb{R}\)
+      - \(t \in I\) é um parâmetro
+        - Pode ser interpretado como tempo ou como um parâmetro abstrato.
+4. Diferenciabilidade:
+   a. _Abertura:_ A partir dessa definição, pode-se introduzir a noção de \(\Delta (loc)\) da trajetória
+      a. Caracteriza deslocamentos no domínio da função
+   b. A curva é diferenciável em $t_0 \in I$ se cada componente $\gamma_j(t)$ é *diferenciável* em $t_0$.
+      a. Herdada das componentes
+   c. A curva sendo diferenciável $\Rightarrow$ vetor tangente é bem definido
+      a. \(\gamma'(t_0) = (\gamma_1'(t_0), \ldots, \gamma_n'(t_0)) \in \mathbb{R}^{n} \)
+   d. Interpretação geométrica via *limite* do vetor *secante*: \(\frac{\gamma(t_0 + h) - \gamma(t_0)}{h} \to \gamma'(t_0), \quad h \to 0. \)
+      a. Reta passa por \(\gamma(t_{0})\) com direção \(\gamma\prime(t_{0})\) é \(\tan\) à trajetória no ponto
+5. Curvas regulares:
+   a. _Abertura_: Para evitar comportamentos que possam comprometer a análise
+      a. Ex: Cantos e pontos estacionários onde a velocidade escalar é nula
+      b. Impõe-se condição de suavidade e não-degeneração
+   b. A curva $\gamma$ é *regular* (classe $C^1$) se:
+      a. Cada componente \(\gamma_{j}\) possui derivada primeira contínua em \(I\)
+      b. \(\gamma'(t) \neq \vec{0}, \quad \forall t \in I.\)
+   c. Evidenciar que _diferenciabilidade_ é *suficiente* para definir vetor tangente
+      a. Regularidade é uma condição mais forte
+      b. A regularidade *garante* a existência de uma *única direção tangente* bem definida em todos os pontos.
+   d. Relevância de \(\gamma\prime(t) \neq \vec{0}\):
+      a. Evita segmentos *estacionários*
+      b. Garante direção *tangente única* e não nula ao longo da trajetória
+      c. Isso justifica a restrtição à curvas regulares ao longo da *resposta*
+6. Função *composta* ao longo de uma curva:
+   a. _Abertura_: Com o conceito de curvas paramétricas regulares estabelecido, pode-se \(\ldots\) regra da cadeia
+   b. Seja $f : D \subseteq \mathbb{R}^n \to \mathbb{R}$ uma função *diferenciável*.
+      a. Regra da cadeia permite calcular a derivada ao longo de uma trajetória específica
+   c. Seja $\gamma : I \to D$ uma curva *regular*.
+   d. Define-se a função *composta* \(g: I \to \mathbb{R}; g(t) = f(\gamma(t)). \)
+      a. Descreve valores de \(f\) restritos ao caminho \(\gamma(t)\)
+7. Regra da cadeia (*forma analítica*):
+   a. _Abertura_: Estabelecidos os conceitos necessários, o passo seguinte é analizar como a função varia ao longo da curva
+   b. Regra da cadeia fornece estrutura para calcular \(g\prime(t)\)
+      a. \(f\) é diferenciável em \(\gamma(t)\); \(\gamma(t)\) diferenciável em \(t\) $\Rightarrow$ \(g\) é diferenciável em \(t\) dada por
+         - \(g'(t) = \sum_{j=1}^n \frac{\partial f}{\partial x_j}(\gamma(t)) \cdot \gamma_j'(t) \)
+   c. Soma pode ser expressa como produto escalar de \(\nabla f\) e \(\gamma\prime(t)\)
+      a. Interpretação: Identidade $\Rightarrow$ *projeção* do gradiente de \(f\) sobre a direção de movimento instantânea
+      b. Pondera \(\delta\) pela velocidade de variação ao longo da trajetória
+         a. Qualquer trajetória relevante, não apenas paralelo aos eixos coordenados
 8. Caso bidimensional:
-   - Se $f = f(x,y)$, com $x = x(t)$ e $y = y(t)$, então
-     \[\frac{d}{dt} f(x(t), y(t)) = \frac{\partial f}{\partial x} \frac{dx}{dt} + \frac{\partial f}{\partial y} \frac{dy}{dt}. \]
-
-9. Definição da função de produção:
-   - Tecnologia Cobb-Douglas com retornos constantes:
-     \[F(K,L) = \sqrt{K L}. \]
-
-10. Insumos como funções de parâmetros:
-    - Taxa de juros $r$ e tempo $t$.
-    - Funções dos insumos:
-      \[K(r,t) = 4 + t^2 - r, \quad L(r,t) = 8 + 2t - r. \]
-
-11. Função composta da produção:
-    - Produção como função de $(r,t)$:
-      \[Y(r,t) = \sqrt{(4 + t^2 - r)(8 + 2t - r)}. \]
-
-12. Derivadas parciais da tecnologia:
-    - Produtos marginais:
-      \[F_K(K,L) = \frac{1}{2} \sqrt{\frac{L}{K}}, \quad F_L(K,L) = \frac{1}{2} \sqrt{\frac{K}{L}}. \]
-
-13. Derivadas dos insumos:
-    - Em relação a $r$:
-      \[\frac{\partial K}{\partial r} = -1, \quad \frac{\partial L}{\partial r} = -1. \]
-    - Em relação a $t$:
-      \[\frac{\partial K}{\partial t} = 2t, \quad \frac{\partial L}{\partial t} = 2. \]
-
-14. Regra da cadeia aplicada:
-    - Sensibilidade em relação a $r$:
-      \[\frac{\partial Y}{\partial r} = -F_K - F_L. \]
-    - Sensibilidade em relação a $t$:
-      \[\frac{\partial Y}{\partial t} = 2t F_K + 2 F_L. \]
-
-15. Avaliação em um ponto de referência:
-    - Escolha do ponto:
-      \[(r_0, t_0) = (1,1). \]
-    - Valores dos insumos:
-      \[K_0 = 4, \quad L_0 = 9. \]
-    - Produção:
-      \[Y_0 = \sqrt{4 \cdot 9} = 6. \]
-
-16. Produtos marginais no ponto:
-    - Avaliações:
-      \[F_K(4,9) = \frac{3}{4}, \quad F_L(4,9) = \frac{1}{3}. \]
-
-17. Sensibilidades numéricas:
-    - Em relação a $r$:
-      \[\frac{\partial Y}{\partial r}(1,1) = -\frac{3}{4} - \frac{1}{3} = -\frac{13}{12}. \]
-    - Em relação a $t$:
-      \[\frac{\partial Y}{\partial t}(1,1) = 2 \cdot \frac{3}{4} + 2 \cdot \frac{1}{3} = \frac{13}{6}. \]
-
-18. Interpretação econômica:
-    - A variação em $r$ reduz $Y$ via contração simultânea de $K$ e $L$.
-    - A variação em $t$ eleva $Y$ via expansão simultânea de $K$ e $L$.
-    - Cada termo corresponde a um produto marginal ponderado pela variação do insumo.
-
-19. Interpretação geométrica:
-    - Vetores tangentes no espaço $(K,L)$:
-      \[\gamma_r'(1,1) = (-1,-1), \quad \gamma_t'(1,1) = (2,2). \]
-    - Gradiente da tecnologia:
-      \[\nabla F(4,9) = \left(\frac{3}{4}, \frac{1}{3}\right). \]
-    - Produtos escalares:
-      \[\nabla F \cdot \gamma_r' = -\frac{13}{12}, \quad \nabla F \cdot \gamma_t' = \frac{13}{6}. \]
-
-20. Extensão para funções implícitas:
-    - Equilíbrio definido por:
-      \[F(\mathbf{x}, \boldsymbol{\alpha}) = \mathbf{0}. \]
-    - Análise local em torno de $(\mathbf{x}^*, \boldsymbol{\alpha}^*)$.
-    - Sensibilidades locais:
-      \[\frac{\partial x_i}{\partial \alpha_j}. \]
-    - Instrumental: regra da cadeia + teorema da função implícita.
-    - Aplicações em modelos SFC e de equilíbrio geral.
+   a. _Abertura_: Neste caso, a expressão se reduz à
+   b. Se $f = f(x,y)$, com $x = x(t)$ e $y = y(t)$, então
+   c. \(\frac{d}{dt} f(x(t), y(t)) = \frac{\partial f}{\partial x} \frac{dx}{dt} + \frac{\partial f}{\partial y} \frac{dy}{dt}. \)
+9. Exemplo numérico:
+   a. Tecnologia Cobb-Douglas com retornos constantes: \(F(K,L) = \sqrt{K L}. \)
+      a. \(K, L > 0\), não são primitivas
+   b. Insumos como funções de parâmetros:
+      a. Taxa de juros nominal $r$ e tempo $t$
+      b. Funções dos insumos:
+         - Capital: \(K(r,t) = 4 + t^2 - r\)
+           - Justificativa: processo de acumulação de capital *acelerado* (\(t^{2}\));
+         - Trabalho: \( L(r,t) = 8 + 2t - r\)
+           - Justificativa: \(2t\) reflete o ajuste *linear* do emprego ao longo do tempo
+         - Interpretação juros: Tefeito *inibidor* em ambos os insumos
+         - Incluir condições financeiras e processo _autônomo_ de acumulação
+         - Função composta da produção:
+           - Produção como função de $(r,t)$: \(Y(r,t) = \sqrt{(4 + t^2 - r)(8 + 2t - r)}. \)
+   c. Derivadas parciais da tecnologia:
+      a. Produtos marginais: \(F_K(K,L) = \frac{1}{2} \sqrt{\frac{L}{K}}, \quad F_L(K,L) = \frac{1}{2} \sqrt{\frac{K}{L}}. \)
+   d. Derivadas dos insumos:
+      a. Em relação a $r$: \(\frac{\partial K}{\partial r} = -1, \quad \frac{\partial L}{\partial r} = -1. \)
+      b. Em relação a $t$: \(\frac{\partial K}{\partial t} = 2t, \quad \frac{\partial L}{\partial t} = 2. \)
+   e. Aplicar Regra da cadeia:
+      a. Sensibilidade em relação a $r$: \(\frac{\partial Y}{\partial r} = -F_K - F_L. \)
+      b. Sensibilidade em relação a $t$: \(\frac{\partial Y}{\partial t} = 2t F_K + 2 F_L. \)
+   f. Avaliar em um *ponto de referência*:
+      a. Escolha da *direção*: \((r_0, t_0) = (1,1). \)
+      b. Valores dos insumos: \(K_0 = 4, \quad L_0 = 9. \)
+      c. Produção: \(Y_0 = \sqrt{4 \cdot 9} = 6.\)
+   g. Produtos marginais no ponto:
+      a. Avaliações: \(F_K(4,9) = \frac{3}{4}, \quad F_L(4,9) = \frac{1}{3}. \)
+   h. Sensibilidades numéricas:
+      a. Em relação a $r$: \(\frac{\partial Y}{\partial r}(1,1) = -\frac{3}{4} - \frac{1}{3} = -\frac{13}{12}. \)
+      b. Em relação a $t$: \(\frac{\partial Y}{\partial t}(1,1) = 2 \cdot \frac{3}{4} + 2 \cdot \frac{1}{3} = \frac{13}{6}. \)
+      c. Tratam-se de *canais de propagação*: efeito via trabalho e via capital
+   i. Interpretação econômica:
+      a. A variação em $r$ reduz $Y$ via contração simultânea de $K$ e $L$.
+      b. A variação em $t$ eleva $Y$ via expansão simultânea de $K$ e $L$.
+      c. Cada termo corresponde a um produto marginal ponderado pela variação do insumo.
+   j. Interpretação geométrica:
+      a. Vetores tangentes no espaço dos insumos $(K,L)$: \(\gamma_r'(1,1) = (-1,-1), \quad \gamma_t'(1,1) = (2,2). \)
+         a. Esse vetores indicam *direção* dos vetores tangentes *induzidos* pelas parametrizações em termos de \(r\) e \(t\)
+      b. Gradiente da tecnologia: \(\nabla F(4,9) = \left(\frac{3}{4}, \frac{1}{3}\right). \)
+      c. Produtos escalares: \(\nabla F \cdot \gamma_r' = -\frac{13}{12}, \quad \nabla F \cdot \gamma_t' = \frac{13}{6}. \)
+      d. Interpretação: Produto escalar como *projeção* do vetor gradiente sobre o vetor *tangente*
+         a. Efeito *total marginal* sobre o produto dados todos os *canais de transmissão induzidos* pela variável exógena
+         b. Alternativa: *Sensibilidade* estrutural dada pela variação do parãmetro exógeno ao longo da trajetória economicamente relevante
+         c. Traduz sensibilidade em relação dos parâmetros primários para o espaço dos insumo
+10. Síntese e extensão:
+    a. _Abertura_: Ao longo da exposição, evidenciou como a regra da cadeia pode expressar variações ao longo de trajetórias
+    b. Sendo necessário: curvas paramétricas, vetores tangentes, regularidade
+    c. Enfatizar curva relevante economicamente
+    d. Exemplo numérico permite evidenciar aplicabilidade econômica sem perder clareza, podendo ser generalizado
+    e. Regra da cadeia é base para métodos mais sofisticados
+       a. Central para o método dos *multiplicadores de Lagrange*
+          a. Comportamento da função ao longo da curva que define a restrição
+    f. Aplicações em modelos contemporâneos (SFC)
+       a. Sensibilidade do sistema avaliada ao longo de trajetórias economicamente relevantes
+          a. Identidades contábeis
+          b. Calibragem via parametrização de normas
+    g. Aplicações em grafos
+       a. Variações locais dos nós e propagação das variações ao longo das conexões
+    h. Encerramento: Fundamentais para análise de sensibilidade, estática comparativa e modelos caracterizados por pontos de equilíbrio
+       a. Essenciais para métodos quantitativos em economia
 
 
 * Derivadas direcionais e vetor gradiente: roteiro de resposta
 :PROPERTIES:
 :UNNUMBERED: t
+:ID:       652c7d9d-7ff3-4677-a57d-f8bff712b136
 :END:
 
-1. Delimitar a motivação econômica e o problema geral
-
-   *Objetivo:* situar a análise de sensibilidade econômica em espaços multidimensionais e justificar a necessidade de derivadas direcionais.
-
-   - Introduzir a análise quantitativa em economia como estudo de sensibilidade de variáveis endógenas a mudanças exógenas.
-   - Comparar o caso unidimensional, no qual a derivada ordinária é suficiente, com o caso multidimensional.
-   - Enfatizar que, em modelos econômicos realistas, múltiplos argumentos variam simultaneamente.
-   - Destacar que derivadas parciais capturam apenas variações isoladas, mantendo os demais argumentos fixos.
-   - Argumentar que políticas e choques econômicos relevantes envolvem combinações lineares de variações.
-   - Concluir que a análise marginal requer instrumentos capazes de lidar com direções arbitrárias no espaço.
-
-2. Formalizar o objeto matemático de análise
-
-   *Objetivo:* definir rigorosamente o tipo de função e o espaço no qual a análise será conduzida.
-
-   - Definir função escalar \(f : D \subseteq \mathbb{R}^n \to \mathbb{R}\).
-   - Identificar \(\vec{x}\) como vetor de argumentos econômicos.
-   - Fixar \(\vec{x}_0 \in D\) como ponto de referência da análise local.
-   - Ressaltar que o interesse está no comportamento local da função.
-   - Estabelecer notação vetorial com seta para evitar ambiguidades.
-
-3. Enfatizar o caráter local da análise marginal
-
-   *Objetivo:* explicitar que derivadas direcionais são conceitos estritamente locais.
-
-   - Introduzir deslocamentos infinitesimais em torno de \(\vec{x}_0\).
-   - Rejeitar interpretações globais da função.
-   - Relacionar a análise à estática comparativa local.
-   - Destacar que resultados dependem simultaneamente do ponto e da direção.
-
-4. Definir formalmente a derivada direcional
-
-   *Objetivo:* apresentar a definição matemática via limite e estabelecer seu escopo.
-
-   - Introduzir vetor direção \(\vec{v} \in \mathbb{R}^n \setminus \{\vec{0}\}\).
-   - Definir o versor associado \(\vec{u} = \vec{v}/\|\vec{v}\|\).
-   - Parametrizar a trajetória como \(\vec{x}(h) = \vec{x}_0 + h\vec{u}\).
-   - Definir a derivada direcional como:
-     \[
-     D_{\vec{u}} f(\vec{x}_0)
-     =
-     \lim_{h \to 0}
-     \frac{f(\vec{x}_0 + h\vec{u}) - f(\vec{x}_0)}{h}.
-     \]
-   - Ressaltar que a existência do limite não é garantida.
-   - Destacar que a derivada direcional pode existir sem diferenciabilidade.
-   - Mostrar que derivadas parciais são casos particulares:
-     \[
-     D_{\vec{e}_i} f(\vec{x}_0) = \frac{\partial f}{\partial x_i}(\vec{x}_0).
-     \]
-
-5. Introduzir a hipótese de diferenciabilidade
-
-   *Objetivo:* estabelecer a condição que garante regularidade suficiente da função.
-
-   - Restringir a análise a funções diferenciáveis.
-   - Definir diferenciabilidade como existência de uma aproximação linear ótima.
-   - Escrever a expansão local:
-     \[
-     f(\vec{x}_0 + \vec{h})
-     =
-     f(\vec{x}_0) + L(\vec{h}) + o(\|\vec{h}\|).
-     \]
-   - Ressaltar que o termo de erro é assintoticamente nulo.
-   - Destacar que diferenciabilidade é condição suficiente para derivadas direcionais bem comportadas.
-
-6. Definir o vetor gradiente
-
-   *Objetivo:* agregar toda a informação marginal local em um único objeto.
-
-   - Definir o gradiente como:
-     \[
-     \nabla f(\vec{x}_0)
-     =
-     \left(
-     \frac{\partial f}{\partial x_1}(\vec{x}_0),
-     \dots,
-     \frac{\partial f}{\partial x_n}(\vec{x}_0)
-     \right).
-     \]
-   - Interpretar o gradiente como vetor de produtos marginais.
-   - Ressaltar dependência do ponto \(\vec{x}_0\).
-
-7. Relacionar derivada direcional e gradiente
-
-   *Objetivo:* demonstrar a equivalência operacional sob diferenciabilidade.
-
-   - Partir da definição de derivada direcional.
-   - Substituir a expansão linear na definição do limite.
-   - Obter:
-     \[
-     D_{\vec{u}} f(\vec{x}_0)
-     =
-     \nabla f(\vec{x}_0) \cdot \vec{u}.
-     \]
-   - Ressaltar que o cálculo do limite é encapsulado no gradiente.
-   - Enfatizar que uma vez conhecido o gradiente, derivadas direcionais são triviais.
-
-8. Interpretar geometricamente a derivada direcional
-
-   *Objetivo:* conectar cálculo diferencial e geometria.
-
-   - Recordar a identidade do produto escalar:
-     \[
-     \vec{a} \cdot \vec{b}
-     =
-     \|\vec{a}\| \|\vec{b}\| \cos \theta.
-     \]
-   - Obter:
-     \[
-     D_{\vec{u}} f(\vec{x}_0)
-     =
-     \|\nabla f(\vec{x}_0)\| \cos \theta.
-     \]
-   - Interpretar como projeção do gradiente na direção \(\vec{u}\).
-   - Identificar o valor máximo como \(\|\nabla f(\vec{x}_0)\|\).
-
+1. Introdução Geral
+   a. _Abertura_ Estática comparativa \(\mapsto \Delta (endo^{\star}) \leftarrow \Delta (exo)s\)
+   b. Comparar o caso _unidimensional_, derivada ordinária é _suficiente_
+   c. Modelos são tipicamente multivariados
+      a. Caso multivariado: usam \(\partial\) para capturar sensibilidade à efeitos isolados
+   d. Contraste: _múltiplos argumentos_ variam *simultaneamente*.
+      a. Choques combinações lineares de efeitos
+2. Introdução específica
+   a. _Abertura_: Preâmbulo mostra domínio conceitual da derivada parcial
+   b. Generalizam operador de diferenciação para qualquer direção
+   c. Ampliam-se os instrumentos (não mais restrito aos eixos coordenados)
+   d. Surge \(\nabla f\) como objeto que sintetiza informação de primeira ordem
+      a. Exposição irá relacionar estes dois conceitos
+   e. Justificativa: fundamenta análise de estática comparativa
+      a. Também é fundamentção para caracterização de condições de otimalidade
+   f. Explicitar notação: objetos no \(\mathbb{R}^{n}\) como \(\vec{x} \ne\) escalares
+3. Estrutura:
+   a. Definição de derivada direcional em \(\mathbb{R}^{n}\) via limite
+      a. Evidenciar derivadas parciais como casos particulares
+   b. Introdução vetor gradiente \(\leftarrow\) diferenciabilidade
+      a. Condições de existência
+      b. Permite computar em todas as direções
+   c. Interpretação geométrica: \(\nabla f \rightarrow \tan f(\vec{x}) = c\)
+      a. Revela direções de variação máxima e nula
+   d. Exemplo numérico: Cobb-Douglas com ajustes marginais nos insumos
+   e. Síntese e extensões
+4. Formalizar o objeto matemático de análise
+   a. _Abertura_: Para formalizar a intuição matemática de derivadas parciais, considere \(\ldots\)
+   b. Definir função escalar \(f : D \subseteq \mathbb{R}^n \to \mathbb{R}\)
+   c. E um ponto interior \(\vec{x}_0 \in D\) como _ponto de referência_ da *análise local*.
+   d. Interesse: Taxa de veriação quando argumento varia em qualquer direção, não apenas paralelo a um eixo coordenado
+      a. Vetor direção: \(\vec{v} \in \mathbb{R}^n \setminus \{\vec{0}\}\)
+   e. Adotar convenção de normalização para ser independente da magnitude do vetor
+      a. Definir o *versor associado* \(\vec{u} = \vec{v}/\|\vec{v}\| \Rightarrow |\vec{u}\| = 1\)
+   f. A trajetória pode ser parametrizada como  \(\vec{x}(h) = \vec{x}_0 + h\vec{u}\).
+      a. Escalar \(h \in \mathbb{R}\) controla deslocamento
+   g. Derivada direcional de \(f\) em \(\vec{x}_{0}\) na direção de \(\vec{u}\) é dada pelo limite: \(D_{\vec{u}} f(\vec{x}_0) = \lim_{h \to 0} \frac{f(\vec{x}_0 + h\vec{u}) - f(\vec{x}_0)}{h}. \)
+   h. Interpretação: Txa média de variação ao longo da trajetória
+5. Qualificações da derivada direcional
+   a. _Abertura_: Ressaltar que a existência do limite não é garantida para uma direção arbitrária
+      a. Pode existir em algumas direções
+   b. Mostrar que derivadas parciais são *casos particulares*: \(D_{\vec{e}_i} f(\vec{x}_0) = \frac{\partial f}{\partial x_i}(\vec{x}_0). \)
+      a. Derivada direcional generaliza derivadas parciais
+   c. Destacar que a derivada direcional pode existir em \(\vec{x}_{0}\) *sem diferenciabilidade* da função
+   d. Derivada parcial não garante derivada direcional em qualquer direção
+6. Introduzir a hipótese de *diferenciabilidade*
+   a. _Abertura:_ As qualificações anteriores motiva restringir análise para funções diferenciávies em todo seu domínio
+   b. Diferenciabilidade garante que \(f\) pode ser aproximada por um operador linear
+   c. Definir _diferenciabilidade_ como existência de uma *aproximação linear ótima*.
+   d. Escrever a expansão local: \(f(\vec{x}_0 + \vec{u}) = f(\vec{x}_0) + L(\vec{u}) + o(\|\vec{u}\|). \)
+      a. Ressaltar que o termo de erro é _assintoticamente nulo_.
+   e. Operador linear é o produto escalar entre \(\delta_{s}\) e o vetor direção
+7. Apresentar gradiente
+   a. _Abertura_ Este vetor das \(\delta_{s}\), denotado por \(\nabla f\), é o vetor gradiente
+   b. Definir o gradiente como: \(\nabla f(\vec{x}_0) = \left(\frac{\partial f}{\partial x_1}(\vec{x}_0), \dots, \frac{\partial f}{\partial x_n}(\vec{x}_0) \right). \)
+   c. Sob diferenciabilidade, \(f(\vec{x}_{0} + \vec{u}) \approx f(\vec{x}_{0}) + \nabla f(\vec{x}_{0})\cdot \vec{u}\)
+      a. Melhor aproximação linear de 1a ordem na vizinhança de \(\vec{x}_{0}\)
+   d. Diferenciabilidade permite associar gradiente às derivadas direcionais \(D_{\vec{u}} f(\vec{x}_0) = \nabla f(\vec{x}_0) \cdot \vec{u}\)
+      a. Permite que as derivadas direcionais existem para quaisquer direções
+      b. Uma vez conhecido o gradiente, derivadas direcionais são triviais, _eliminando a necessidade de novos cálculos de limite_.
+   e. Derivadas direcionais podem existir sem diferenciabilidade, mas *apenas* sob _diferenciabilidade_ admitem *representação via gradiente*.
+8. Interpretar *geometricamente* a derivada direcional
+   a. _Abertura_: Além da simplicidade algébrica, as derivadas direcionais possuem interpretação geométrica direta
+   b. Recordar a identidade do *produto escalar*: \(\vec{a} \cdot \vec{b} = \|\vec{a}\| \|\vec{b}\| \cos \theta. \)
+   c. Obter: \(D_{\vec{u}} f(\vec{x}_0) = \|\nabla f(\vec{x}_0)\| \cos \theta. \)
+      a. Evidenciar que \(\vec{u}\) é unitário
+   d. Interpretar como *projeção escalar* do gradiente na direção \(\vec{u}\).
 9. Identificar direções de crescimento máximo e nulo
-
-   *Objetivo:* caracterizar propriedades fundamentais do gradiente.
-
-   - Mostrar que o crescimento máximo ocorre quando \(\vec{u}\) é paralelo ao gradiente.
-   - Mostrar que a derivada direcional é nula quando \(\vec{u}\) é ortogonal ao gradiente.
-   - Definir superfícies de nível \(f(\vec{x}) = c\).
-   - Concluir que o gradiente é normal às superfícies de nível.
-
-10. Construir o exemplo econômico
-
-    *Objetivo:* ilustrar os conceitos com uma tecnologia econômica concreta.
-
-    - Definir função Cobb–Douglas:
-      \[
-      F(K,L) = K^{1/2}L^{1/2}.
-      \]
-    - Interpretar como tecnologia com retornos constantes à escala.
-
-11. Calcular o gradiente da função de produção
-
-    *Objetivo:* explicitar os produtos marginais.
-
-    - Calcular:
-      \[
-      F_K = \frac{1}{2}\sqrt{\frac{L}{K}},
-      \quad
-      F_L = \frac{1}{2}\sqrt{\frac{K}{L}}.
-      \]
-    - Escrever:
-      \[
-      \nabla F(K,L)
-      =
-      \left(
-      \frac{1}{2}\sqrt{\frac{L}{K}},
-      \frac{1}{2}\sqrt{\frac{K}{L}}
-      \right).
-      \]
-
-12. Fixar ponto de referência simples
-
-    *Objetivo:* facilitar cálculo e interpretação.
-
-    - Escolher \((K_0,L_0)=(4,4)\).
-    - Calcular:
-      \[
-      F(4,4)=4,
-      \quad
-      \nabla F(4,4) = \left(\frac{1}{2},\frac{1}{2}\right).
-      \]
-    - Calcular a norma:
-      \[
-      \|\nabla F(4,4)\|=\frac{\sqrt{2}}{2}.
-      \]
-
-13. Introduzir um choque direcional composto
-
-    *Objetivo:* representar ajustes conjuntos dos insumos.
-
-    - Definir vetor de política \(\vec{v}=(3,4)\).
-    - Calcular o versor:
-      \[
-      \vec{u}=\left(\frac{3}{5},\frac{4}{5}\right).
-      \]
-
-14. Calcular a derivada direcional
-
-    *Objetivo:* executar a análise de sensibilidade direcional.
-
-    - Calcular:
-      \[
-      D_{\vec{u}}F(4,4)
-      =
-      \left(\frac{1}{2},\frac{1}{2}\right)
-      \cdot
-      \left(\frac{3}{5},\frac{4}{5}\right)
-      =
-      \frac{7}{10}.
-      \]
-    - Interpretar como taxa marginal de crescimento do produto.
-    - Comparar com a taxa máxima \(\sqrt{2}/2\).
-
-15. Sintetizar o encadeamento lógico do método
-
-    *Objetivo:* reconstruir a lógica analítica completa, evitando omissões conceituais.
-
-    - Diferenciabilidade \(\Rightarrow\) existência de aproximação linear local.
-      - Sem diferenciabilidade não há gradiente bem definido.
-    - Diferenciabilidade \(\Rightarrow\) gradiente.
-      - O gradiente agrega todas as derivadas parciais.
-    - Gradiente \(\Rightarrow\) derivadas direcionais.
-      - Derivadas direcionais são projeções do gradiente.
-    - Direção \(\Rightarrow\) interpretação econômica.
-      - Choques compostos são vetores no espaço de estados.
-    - Ortogonalidade \(\Rightarrow\) variação nula.
-      - Movimentos ao longo de isoquantas.
-    - Gradiente \(\Rightarrow\) base da otimização.
-      - Condições de primeira ordem e métodos numéricos.
-    - Síntese final:
-      - Toda análise é local.
-      - Toda sensibilidade depende da direção.
-      - O gradiente é o núcleo analítico da estática comparativa multivariada.
+   a. _Abertura_: Além disso, a expressão anterior permite elucidar o significado do vetor gradiente e o comportamento da função em outras direções
+   b. Mostrar que o _crescimento máximo_ ocorre quando \(\vec{u}\) é *paralelo* ao gradiente.
+      a. Identificar o *valor máximo* como \(\|\nabla f(\vec{x}_0)\|\).
+      b. De forma equivalente, mínima no sentido oposto
+   c. Mostrar que a derivada direcional é _nula_ quando \(\vec{u}\) é *ortogonal* ao gradiente.
+      a. Permite caracterizar todas as direções que a função não varia
+      b. Conjunto de direções ortogonais ao \(\nabla f\) define o plano tangente da superfície de nível \(f(\vec{x}_{0}) = c\).
+10. Intuição de direção de otimalidade:
+    a. _Abertura_: Em contexto de otimização em que \(f\) é uma função objetivo
+    b. Mover-se na direção de \(\nabla f \Rightarrow f(\vec{x}\prime) = c_{1} > c\)
+    c. Mover-se na direção, mas sentido oposto de \(\nabla f \Rightarrow f(\vec{x}\prime) = c_{1} < c\)
+    d. Mover-se ortogonalmente, \(f(\vec{x}\prime) = c\)
+    e. _Encerramento_: Intuição básica que fundamenta algoritmos de otimização
+       a. Posiciona relevância do gradiente
+11. Construir o exemplo econômico
+    a. Definir função Cobb–Douglas: \(F(K,L) = K^{1/2}L^{1/2}. \)
+       a. Com \(A = 1, \alpha = 1/2\)
+    b. Calcular o gradiente da função de produção
+       - Calcular: \(F_K = \frac{1}{2}\sqrt{\frac{L}{K}}, \quad F_L = \frac{1}{2}\sqrt{\frac{K}{L}}. \)
+       - Escrever: \(\nabla F(K,L) = \left(\frac{1}{2}\sqrt{\frac{L}{K}}, \frac{1}{2}\sqrt{\frac{K}{L}} \right). \)
+    c. Fixar ponto de referência simples
+       - Escolher \((K_0,L_0)=(4,4)\).
+       - Calcular: \(F(4,4)=4, \quad \nabla F(4,4) = \left(\frac{1}{2},\frac{1}{2}\right). \)
+       - Calcular a norma: \(\|\nabla F(4,4)\|=\frac{\sqrt{2}}{2}. \)
+    d. Introduzir um choque direcional composto (cenário)
+       - Definir _vetor de política_ \(\vec{v}=(3,4)\).
+         - Insumos sofrem ajustes marginais conjuntos
+       - Calcular o *versor*: \(\vec{u}=\left(\frac{3}{5},\frac{4}{5}\right). \)
+         - \(\|\vec{v}\| = 5\)
+    e. Calcular a derivada direcional
+       - Calcular: \(D_{\vec{u}}F(4,4) = \left(\frac{1}{2},\frac{1}{2}\right) \cdot \left(\frac{3}{5},\frac{4}{5}\right) = \frac{7}{10}. \)
+       - Interpretar como *taxa marginal de crescimento* do produto.
+       - Instrutivo  *Comparar* com a taxa _máxima_ \(\sqrt{2}/2\).
+    f. Calcular derivada que preserva na curva de nível
+       a. Direções \(\vec{w}\) que não alteram o nível de produção
+       b. Encontrar \(\nabla f(\vec{x_{0}}) \cdot \vec{w} = 0\)
+          a. Um vetor possível: \(w_{1} + w_{2} = 0 \Rightarrow (1, -1)_{}\)
+          b. Versor: \((1/\sqrt{2}, -1/\sqrt{2})\)
+          c. Direção ao longo da isoquanta \(F(4,4) = 4\)
+12. Síntese:
+    a. _Abertura_: \(D_{\vec{u}} f\) e \(\nabla f\) permitem avaliar o comportamento da função em qualquer direção
+    b. Generalizou-se derivadas parciais além de deslocamentos paralelos aos eixos coordenados
+    c. Importância da diferenciabilidade para existência de \(D_{\vec{u}} f \forall \vec{u}\)
+    d. Interpretação do gradiente como direção de maior variação da função
+       - Derivadas direcionais são projeções do gradiente.
+    e. Buscou-se evidenciar a operacionalidade a partir de exemplo numérico
+13. Extensões:
+    a. _Abertura_: Importância desses elementos para outras aplicações, sobretudo \(\nabla f\)
+    b. Gradiente: núcleo de métodos de otimização
+       a. Multiplicadores de Lagrange encontra a combinação linear de \(\nabla f\) para encontrar \(\vec{x}^{\star}\)
+       b. Em sistemas de equações, \(\nabla f\) é generalizado matricialmente pela Jacobiana
+          a. Fundamental para métodos interativos de resolução de sistemas não-lineares como Newton-Raphson
+    c. _Encerramento_: Fundamentais para formalizar, analisar e interpretar modelos econômicos multivariados
+       a. Essenciais para análise de sensibilidade e estática comparativa
+          a. Elementos centrais em métodos quantitativos aplicados à economia
 
 
 * Funções explícitas: roteiro de resposta
 :PROPERTIES:
 :UNNUMBERED: t
+:ID:       094053cc-e184-4778-9079-de0c11852c31
 :END:
 
 1. Delimitar a motivação econômica e o problema geral
-
-    *Objetivo:* situar o problema econômico e justificar o uso de ferramentas multivariadas.
-
-   - Introduzir a análise quantitativa em economia \(\Rightarrow\) estudo de respostas marginais.
-   - Comparar caso univariado vs. multivariado.
-   - Enfatizar que a análise é local e marginal.
-   - Contextualizar em modelos macroeconômicos e tecnológicos.
-   - Destacar que múltiplas endógenas exigem formalismo vetorial.
-
+   a. Introduzir a estática comparativa \(\mapsto \Delta (endo^{\star}) \leftarrow \Delta (exo)\)
+   b. Comparar caso univariado: derivada oferece medida de sensibilidade completa
+   c. Modelos relevantes são tipicamente _multivariados_
+      a. Envolvem múltiplas variáveis endógenas \(\leftarrow\) múltiplas variáveis explicativas
+   d. Exemplificar com firma multiproduto (tratável)
+      a. Será utilizado para evidenciar operacionalidade econômica
+   e. Listar sistemas de variáveis endógenas _contemporâneos_: SFC, ABM, DSGE
 2. Formalizar o objeto matemático de análise
-
-    *Objetivo:* definir rigorosamente o tipo de função analisada.
-
-   - Definir aplicação vetorial \(\vec{F}: D \subseteq \mathbb{R}^n \to \mathbb{R}^m\).
-   - Identificar \(\vec{x}\) como vetor de argumentos.
-   - Identificar \(\vec{y}=\vec{F}(\vec{x})\) como vetor de resultados.
-   - Ressaltar distinção entre dimensão do domínio e do contradomínio.
-   - Fixar notação vetorial com seta.
-
-3. Enfatizar o caráter local da análise marginal
-
-    *Objetivo:* explicitar que toda análise ocorre em torno de um ponto de referência.
-
-   - Introduzir ponto-base \(\vec{x}_0\).
-   - Destacar deslocamentos pequenos \(\vec{h}\).
-   - Evitar interpretação global da função.
-   - Relacionar diretamente à estática comparativa.
-
-4. Definir diferenciabilidade de forma rigorosa
-
-    *Objetivo:* estabelecer a condição matemática central do método.
-
-   - Definir diferenciabilidade pela existência de um operador linear \(L:\mathbb{R}^n\to\mathbb{R}^m\).
-   - Exigir que
-     \begin{equation*}
-     \lim_{\|\vec{h}\|\to 0}
-     \frac{\|\vec{F}(\vec{x}_0+\vec{h})-\vec{F}(\vec{x}_0)-L(\vec{h})\|}
-          {\|\vec{h}\|}=0
-     \end{equation*}
-   - Escrever a expansão local como
-     \begin{equation*}
-     \vec{F}(\vec{x}_0+\vec{h})
-     =
-     \vec{F}(\vec{x}_0)+L(\vec{h})+o(\|\vec{h}\|)
-     \end{equation*}
-   - Ressaltar unicidade do operador linear.
-   - Destacar que diferenciabilidade é mais forte que derivadas parciais isoladas.
-   - Enfatizar caráter local da definição.
-
+   a. _Abertura:_ Neste contexto multivariado, relação funcional \(\mapsto\) aplicação que (exo)s \(\mapsto\) (endo)s
+   b. Fixar notação vetorial com seta.
+   c. Definir aplicação vetorial \(\vec{F}: D \subseteq \mathbb{R}^n \to \mathbb{R}^m\).
+   d. Identificar \(\vec{x}\) como vetor de argumentos.
+   e. Identificar \(\vec{y}= (F_{1}(\vec{x}), \ldots, F_{m}(\vec{x})) \) como vetor de resultados.
+   f. Cerne estática comparativa: estudo variação local na vizinhança de \(\vec{x}_{0}^{\star}\) dado pequenos deslocamentos
+      a. Prever direção e magnitude \((exo)s \mapsto (endo)s\)
+3. Estrutura:
+   a. Introduzir condições necessárias: definição de diferenciabilidade
+   b. Apresentar Jacobiana e sua relação com _aproximação linear_
+   c. Apresentação do diferencial total
+   d. Exemplificação dos conceitos por meio de um exemplo numérico
+   e. Introdução da regra da cadeia extendida para sistemas por meio do exemplo
+      a. Evidenciar regra da cadeia como derivada ao longo de uma curva
+   f. Síntese e direcionamentos
+4. Definir diferenciabilidade
+   a. _Abertura:_ Condição necessária para aplicabilidade repousa no conceito de diferenciabilidade
+   b. Diz-se que é diferenciável em um ponto \(\vec{x}_{0}\) quando existe um operador linear \(L:\mathbb{R}^n\to\mathbb{R}^m\) tal que:
+      \begin{equation*}
+      \lim_{\|\vec{h}\|\to 0}
+      \frac{\|\vec{F}(\vec{x}_0+\vec{h})-\vec{F}(\vec{x}_0)-L(\vec{h})\|}
+           {\|\vec{h}\|}=0
+      \end{equation*}
+   c. Enfatizar que \(L\) é a melhor aproximação linear na vizinhança de \(\vec{x}_{0}\)
+   d. Consequência: Cada componente de \(\vec{F}\) é diferenciável
+   e. Operador linear pode ser escrito como uma matriz única nas bases canônicas \(\mathbb{R}^{n}\) e \(\mathbb{R}^{m}\)
+   f. Ressaltar unicidade do operador linear.
+   g. Destacar que diferenciabilidade é mais forte que derivadas parciais isoladas.
 5. Relacionar diferenciabilidade à Jacobiana
-
-    *Objetivo:* conectar suavidade local à representação matricial.
-
-   - Mostrar que diferenciabilidade \(\Rightarrow\) existência da Jacobiana.
-   - Identificar a Jacobiana como a matriz associada ao operador linear \(L\).
-   - Ressaltar dependência da Jacobiana do ponto \(\vec{x}_0\).
-   - Destacar interpretação como melhor aproximação linear.
-
-6. Definir formalmente a matriz Jacobiana
-
-    *Objetivo:* apresentar a estrutura e interpretação da Jacobiana.
-
-   - Definir
-     \begin{equation*}
-     D\vec{F}(\vec{x}_0)
-     =
-     \begin{pmatrix}
-     \partial F_1/\partial x_1 & \cdots & \partial F_1/\partial x_n \\
-     \vdots & \ddots & \vdots \\
-     \partial F_m/\partial x_1 & \cdots & \partial F_m/\partial x_n
-     \end{pmatrix}_{\vec{x}=\vec{x}_0}
-     \end{equation*}
-   - Precisar que cada linha é o gradiente de \(F_i\).
-   - Ressaltar papel organizador dos efeitos marginais.
-
-7. Introduzir o diferencial total
-
-    *Objetivo:* operacionalizar a aproximação linear.
-
-   - Definir vetor de choques \(\vec{h}=\Delta\vec{x}\).
-   - Escrever
-     \begin{equation*}
-     \vec{F}(\vec{x}_0+\vec{h})-\vec{F}(\vec{x}_0)
-     \approx
-     D\vec{F}(\vec{x}_0)\vec{h}
-     \end{equation*}
-   - Enfatizar aproximação de primeira ordem.
-   - Destacar necessidade de \(\|\vec{h}\|\) pequeno.
-
-8. Interpretar economicamente o diferencial total
-
-    *Objetivo:* conectar matemática e estática comparativa.
-
-   - Interpretar cada linha como resposta de uma endógena.
-   - Interpretar entradas de \(\vec{h}\) como magnitudes dos choques.
-   - Enfatizar decomposição marginal dos efeitos.
-   - Evitar interpretação causal global.
-
-9. Construir o exemplo econômico multiproduto
-
-    *Objetivo:* ilustrar o formalismo com tecnologia econômica concreta.
-
-   - Definir firma com dois insumos \(K,L\).
-   - Definir dois bens finais.
-   - Especificar tecnologias Cobb–Douglas:
-     \begin{equation*}
-     F_1(K,L)=K^{1/2}L^{1/2},
-     \quad
-     F_2(K,L)=K^{1/2}L^{1/2}
-     \end{equation*}
-   - Destacar retornos constantes à escala.
-
-10. Calcular a Jacobiana da tecnologia
-
-    *Objetivo:* mostrar cálculo explícito das derivadas parciais.
-
-    - Calcular produtos marginais:
+   a. _Abertura_: Esta representação matricial, denotada por \(D\vec{F}\) é o produto escalar entre Jacobiana e vetor deslocamento
+   b. Matriz resultante é de ordem \(m\times n\)
+   c. Ressaltar avaliação da Jacobiana do ponto \(\vec{x}_0\)
+   d. Cada linha é o vetor gradiente do componente da função
+   e. Mostrar que diferenciabilidade \(\Rightarrow\) existência da Jacobiana.
+   f. Identificar a Jacobiana como a matriz associada ao operador linear \(L\).
+   g. Destacar interpretação como melhor aproximação linear.
+      a. Agrega todos os efeitos marginais do sistema
+      b. Sensibilidade do sistema às variáveis de estado
+   h. Definir
       \begin{equation*}
-      \frac{\partial F_i}{\partial K}
+      D\vec{F}(\vec{x}_0)
       =
-      \frac{1}{2}\frac{\sqrt{L}}{\sqrt{K}},
+      \begin{pmatrix}
+      \partial F_1/\partial x_1 & \cdots & \partial F_1/\partial x_n \\
+      \vdots & \ddots & \vdots \\
+      \partial F_m/\partial x_1 & \cdots & \partial F_m/\partial x_n
+      \end{pmatrix}_{\vec{x}=\vec{x}_0}
+      \end{equation*}
+6. Introduzir o diferencial total
+   a. _Abertura:_ Para um vetor de perturbação \(\ldots\) a diferenciabilidade garante aproximação linear pela Jacobiana
+   b. Definir vetor de choques \(\vec{h}=\Delta\vec{x}\) arbitrariamente pequenos
+   c. Escrever
+      \begin{equation*}
+      \vec{F}(\vec{x}_0+\vec{h})-\vec{F}(\vec{x}_0)
+      \approx
+      D\vec{F}(\vec{x}_0)\vec{h}
+      \end{equation*}
+   d. Enfatizar RHS aproximação de primeira ordem.
+   e. Destacar necessidade de \(\|\vec{h}\|\) pequeno.
+   f. Mencionar identidade com a aproximação linear de cada componente de \(\vec{F}\), agrupado
+7. Construir o exemplo econômico multiproduto
+   a. Definir firma com dois insumos \(K,L\).
+      a. Tornar explícito que as tecnologias têm intensidades fatoriais distintas
+   b. Definir dois bens finais.
+   c. Especificar tecnologias Cobb–Douglas:
+      \begin{equation*}
+      F_1(K,L)=K^{1/2}L^{1/2},
       \quad
-      \frac{\partial F_i}{\partial L}
-      =
-      \frac{1}{2}\frac{\sqrt{K}}{\sqrt{L}},
-      \quad i=1,2
+      F_2(K,L)=K^{1/3}L^{2/3}
       \end{equation*}
-    - Organizar resultados na Jacobiana simbólica.
 
-11. Fixar ponto de referência simples
-
-    *Objetivo:* facilitar cálculo manual e interpretação local.
-
-    - Escolher \((K_0,L_0)=(1,1)\).
-    - Calcular
-      \begin{equation*}
-      F_i(1,1)=1,
-      \quad
-      \nabla F_i(1,1)=\left(\frac{1}{2},\frac{1}{2}\right)
-      \end{equation*}
-    - Avaliar a Jacobiana no ponto.
-
-12. Introduzir choque pequeno e assimétrico
-
-    *Objetivo:* respeitar hipótese de localidade.
-
-    - Definir
-      \begin{equation*}
-      \Delta\vec{I}=
-      \left(\frac{1}{2},\frac{1}{4}\right)
-      \end{equation*}
-    - Interpretar como deslocamento local.
-
-13. Aplicar o diferencial total
-
-    *Objetivo:* executar a estática comparativa multivariada.
-
-    - Calcular
-      \begin{equation*}
-      D\vec{F}(1,1)\Delta\vec{I}
-      =
-      \begin{pmatrix}
-      1/2 & 1/2 \\
-      1/2 & 1/2
-      \end{pmatrix}
-      \begin{pmatrix}
-      1/2 \\ 1/4
-      \end{pmatrix}
-      =
-      \begin{pmatrix}
-      3/8 \\ 3/8
-      \end{pmatrix}
-      \end{equation*}
-    - Interpretar cada variação como efeito marginal aproximado.
-
-14. Definir a TMT de forma direcional
-
-    *Objetivo:* evitar interpretações incorretas da TMT.
-
-    - Introduzir vetor direcional \(\vec{d}\).
-    - Definir curva \(\gamma(t)=\vec{I}_0+t\vec{d}\).
-    - Definir derivadas direcionais
-      \begin{equation*}
-      \frac{dF_i}{dt}\Big|_{t=0}
-      =
-      \nabla F_i(\vec{I}_0)\cdot\vec{d}
-      \end{equation*}
-    - Definir
-      \begin{equation*}
-      \text{TMT}_{\vec{d}}(\vec{I}_0)
-      =
-      -\frac{\nabla F_2(\vec{I}_0)\cdot\vec{d}}
-            {\nabla F_1(\vec{I}_0)\cdot\vec{d}}
-      \end{equation*}
-    - Ressaltar dependência de ponto e direção.
-    - Negar interpretação como FPP global.
-
-15. Sintetizar o encadeamento lógico do método
-
-    *Objetivo:* reconstruir a lógica matemática e econômica completa, evitando omissões conceituais.
-
-    - Diferenciabilidade \(\Rightarrow\) aproximação linear local.
-      - Diferenciabilidade em \(\vec{x}_0\) \(\Rightarrow\) existência de uma aproximação linear única
-        - Destacar que continuidade de derivadas é condição suficiente, mas não necessária.
-        - Ressaltar que sem diferenciabilidade não existe Jacobiana bem definida.
-        - Enfatizar o caráter estritamente local da aproximação.
-    - Aproximação linear \(\Rightarrow\) Jacobiana.
-      - Aproximação linear \(\Rightarrow\) definição da matriz Jacobiana \(D\vec{F}(\vec{x}_0)\).
-        - Lembrar que a Jacobiana representa um operador linear, não apenas uma coleção de derivadas.
-        - Precisar que cada linha é o gradiente de uma função componente.
-        - Notar que a Jacobiana depende do ponto de avaliação.
-    - Jacobiana \(\Rightarrow\) diferencial total.
-      - Jacobiana \(\Rightarrow\) diferencial total como aproximação de primeira ordem.
-        - Escrever explicitamente: \(\Delta\vec{Y} \approx D\vec{F}(\vec{x}_0)\Delta\vec{x}\).
-        - Ressaltar que termos de ordem superior são desprezados.
-        - Indicar que a validade depende de \(\|\Delta\vec{x}\|\) pequeno.
-    - Diferencial total \(\Rightarrow\) estática comparativa.
-      - Diferencial total \(\Rightarrow\) estática comparativa multivariada.
-        - Interpretar como resposta conjunta das endógenas a choques vetoriais.
-        - Enfatizar que os efeitos marginais são avaliados mantendo o ponto-base fixo.
-        - Evitar interpretação global ou válida para grandes variações.
-    - Vetores direcionais \(\Rightarrow\) derivadas ao longo de trajetórias específicas.
-      - Introduzir explicitamente curvas \(\gamma(t)=\vec{x}_0+t\vec{d}\).
-      - Interpretar \(\nabla F_i(\vec{x}_0)\cdot\vec{d}\) como variação direcional.
-      - Ressaltar dependência da direção \(\vec{d}\).
-    - Vetores direcionais \(\Rightarrow\) TMT local.
-      - Derivadas direcionais \(\Rightarrow\) definição rigorosa da TMT local.
-        - Precisar que a TMT é uma razão entre variações direcionais, não entre níveis.
-        - Destacar que a TMT não é uma propriedade global da tecnologia.
-        - Condicionar a TMT simultaneamente ao ponto e à direção considerada.
-    - Regra da cadeia \(\Rightarrow\) propagação hierárquica.
-      - Escrever formalmente: \(D(\vec{F}\circ\vec{A}) = D\vec{F}\,D\vec{A}\).
-      - Interpretar como decomposição de efeitos diretos e indiretos.
-      - Destacar a compatibilidade dimensional das matrizes envolvidas.
-    - Jacobiana \(\Rightarrow\) base dos métodos iterativos.
-      - Relacionar a linearização local ao método de Newton–Raphson.
-      - Lembrar que o método atualiza soluções usando a inversa da Jacobiana.
-      - Enfatizar que convergência depende de propriedades locais do sistema.
-    - Síntese final:
-      - Toda a análise é local, condicional ao ponto de referência.
-      - Toda interpretação econômica depende da direção do choque.
-      - O formalismo conecta teoria analítica, estática comparativa, dinâmica e métodos numéricos.
+   d. Calcular a Jacobiana da tecnologia
+      a. Calcular produtos marginais:
+         \[D\vec{F}(K,L) = \begin{pmatrix} \dfrac{1}{2} K^{-\frac{1}{2}} L^{\frac{1}{2}} & \dfrac{1}{2} K^{\frac{1}{2}} L^{-\frac{1}{2}} \\ \dfrac{1}{3} K^{-\frac{2}{3}} L^{\frac{2}{3}} & \dfrac{2}{3} K^{\frac{1}{3}} L^{-\frac{1}{3}} \end{pmatrix}. \]
+      b. Organizar resultados na Jacobiana simbólica.
+   e. Fixar ponto de referência simples
+      a. Escolher \((K_0,L_0)=(10,10)\).
+      b. Computar \(Y_1^0=10\) e \(Y_2^0=10\)
+      c. Calcular
+         \[D\vec{F}(1,1)= \begin{pmatrix} \dfrac{1}{2} & \dfrac{1}{2} \\ \dfrac{1}{3} & \dfrac{2}{3} \end{pmatrix}. \]
+      d. Avaliar a Jacobiana no ponto.
+   f. Introduzir choque pequeno e assimétrico
+      a. Definir
+         \begin{equation*}
+         \Delta\vec{h}=
+         \left(\frac{1}{2},\frac{1}{4}\right)
+         \end{equation*}
+      b. Interpretar como deslocamento local.
+   g. Aplicar o diferencial total
+      a. *Objetivo:* executar a estática comparativa multivariada.
+      b. Calcular
+         \begin{equation*}
+         \Delta \vec{Y} \approx D\vec{F}(1,1)\cdot \vec{h} =
+         \begin{pmatrix} \dfrac{1}{2} & \dfrac{1}{2} \\
+         \dfrac{1}{3} & \dfrac{2}{3} \end{pmatrix}
+         \begin{pmatrix} \dfrac{1}{2} \\
+         \dfrac{1}{4} \end{pmatrix} =
+         \begin{pmatrix} \dfrac{1}{4}+\dfrac{1}{8} \\
+         \dfrac{1}{6}+\dfrac{1}{6} \end{pmatrix} =
+         \begin{pmatrix} \dfrac{3}{8} \\
+          \dfrac{1}{3} \end{pmatrix}.
+          \end{equation*}
+      c. Resultado: \(\Delta Y_1 \approx 3/8\) e \(\Delta Y_2 \approx 1/3\).
+      d. Interpretar cada variação como efeito marginal aproximado.
+         - Soma ponderada dos pontos marginais
+8. Estender regra da Cadeia
+   a. _Abertura:_ A extensão da regra da cadeia para o \(\mathbb{R}^{n}\to \mathbb{R}^m\) é direta
+   b. Seja \(\gamma: \mathbb{R} \to \mathbb{R}^{n}\)
+   c. A função composta \(g(t) = F(\gamma(t))\) é diferenciável de \(\mathbb{R}\to \mathbb{R}^m\)
+   d. Derivada do componente \(i\): \(g\prime(t)_{i} = \sum_{j} \frac{\partial f_{i}}{\partial x_{j}}(\gamma(t))\gamma\prime(t)\)
+   e. Coletando todas as componentes: \(D(\vec{F} \circ \vec{\gamma}) = D\vec{F}(\vec{\gamma}(t))\cdot \gamma\prime(t)\)
+   f. Pode ser estendida ainda mais com \(\gamma: \mathbb{R}^{s}\to \mathbb{R}^{n}\)
+      a. \(\vec{s}^{\star} \in \mathbb{R}^{s}\)
+      b. \(\vec{x} = \gamma(\vec{s}^{\star}) \in \mathbb{R}^{n}\)
+   g. Jacobiana dessa matriz será: \(D\vec{G}(s^{\star}) = D(\vec{F} \circ \vec{\gamma})(\vec{s}^{\star}) = D\vec{F}(\vec{x})D\vec{\gamma}(\vec{s})\)
+      a. Interpretação: derivada do mapeamento composto é dada pelo produto das derivadas dos mapeamentos envolvidos
+         a. Avaliados nos pontos adequados
+9. Retomar exemplo numérico e associar à regra da cadeia
+   a. _Abertura_: A simplificade do exemplo numérico permite tornar os insumos como dependentes de outras variáveis
+   b. Por simplificadade, considerar que dependem do tempo (curva parametrizada regular):
+      a. \(K(t)=10+\dfrac{1}{2}t, \quad L(t)=10+\dfrac{1}{4}t, \)
+      b. Avaliar variação instantânea \(K\prime = 1/2\) e \(L\prime = 1/4\)
+      c. Avaliar no instante \(t= 0\)
+   c. Explicitar \(\vec{\gamma}\prime = (1/2, 1/4)\).
+   d. Computar derivada: \(D\vec{g}(t) = D\vec{F}(\vec{\gamma}(t)) \vec{\gamma}\prime(t))\)
+   e. Resultado: \((3/8, 1/3\) (por simplicidade)
+   f. Interpretação: Avaliação dos choques sobre o sistema ao longo de uma curva regular
+10. Sintetizar o encadeamento lógico do método
+    a. _Abertura_: À luz do desenvolvimento precedente, ponde-se sintetizar papel analítico do \(dF\) e \(DF\) em sistemas econômicos multivariados
+    b. Manifesta-se em três níveis operacionais
+       a. Linearização local de sistemas não-lineares \(\leftarrow\) Jacobiana
+       b. Análise estática comparativa \(\leftarrow\) diferencial total
+       c. Rastreamento e propagação de choques em modelos com estrutura hierárquica \(\leftarrow\) regra da cadeia
+          a. Decompõe efeitos totais em canais intermediários
+          b. Avaliação ao longo de uma curva
+    c. Manifestar aplicabilidade em sistemas de funções implícitas
+       a. Atendidas condições necessárias, o mesmo pode ser feito para funções implícitas
+    d. Relevância geral:
+       a. Linguagem para modelar propagação de distúrbios em redes de interdependência econômica
+       b. Calcular sensibilidade multidirecional
+    e. Extensões:
+       a. No edital: Jacobiana utilizada no Teorema da função implícita e otimização
+       b. Além: Métodos iterativos como Newton-Raphson que dependem da jacobiana para solução numérica de sistemas não-lineares
+    f. _Encerramento_: Fornece instrumental essencial para formulação e interpretação de modelos econômicos multivariados
 
 * Derivadas de ordens superiores: roteiro de resposta
 :PROPERTIES:
 :UNNUMBERED: t
 :END:
 
-1. Motivacao economica da analise de segunda ordem
-   - Analise marginal de primeira ordem identifica apenas a direcao local de variacao.
-   - Em problemas economicos, isso e insuficiente para:
-     - Classificar extremos (maximo \(\rightarrow\) minimo).
-     - Avaliar estabilidade de solucoes.
-     - Formalizar rendimentos marginais decrescentes.
-     - Caracterizar interacoes tecnicas entre variaveis.
-   - A informacao adicional necessaria esta contida nas derivadas de segunda ordem.
-   - *Refinamento de rigor:* deixar claro que a analise de segunda ordem envolve *curvatura local da funcao*
-
-2. Condicoes de regularidade
-   - Seja \( f : D \subseteq \mathbb{R}^n \rightarrow \mathbb{R} \).
-   - \( f \in C^1(U) \):
-     - As derivadas parciais de primeira ordem existem e sao continuas em \( U \).
-   - \( f \in C^2(U) \):
-     - Todas as derivadas parciais de segunda ordem existem e sao continuas em \( U \).
-     - Implica diferenciabilidade das derivadas de primeira ordem.
-   - *Refinamento de rigor:* explicitar que classe \(C^2\) e condicao suficiente para curvatura local consistente.
-
+1. Motivação econômica da análise de _segunda ordem_
+   a. Análise marginal de _primeira ordem_ identifica apenas a *direção local* de variação
+   b. Em problemas econômicos, isso é insuficiente para:
+      - *Classificar extremos* (máximo \(\rightarrow\) mínimo).
+      - Avaliar _estabilidade_ de soluções
+      - Formalizar _rendimentos marginais decrescentes_
+      - Caracterizar _interações técnicas_ entre variaveis.
+   c. A informação adicional necessária está contida nas derivadas de segunda ordem.
+   d. *Refinamento de rigor:* deixar claro que a analise de segunda ordem envolve *curvatura local da função*
+2. Condições de *regularidade*
+   a. Seja \( f : D \subseteq \mathbb{R}^n \rightarrow \mathbb{R} \).
+   b. \( f \in C^1(U) \):
+      - As derivadas parciais de primeira ordem existem e são continuas em \( U \).
+   c. \( f \in C^2(U) \):
+      - Todas as derivadas parciais de segunda ordem existem e são continuas em \( U \).
+      - Implica diferenciabilidade das derivadas de primeira ordem.
+   d. *Refinamento de rigor:* explicitar que classe \(C^2\) é *condição suficiente* para curvatura local consistente.
 3. Comutatividade das derivadas mistas
-   - Teorema de Schwarz:
-     - Se \( f \in C^2(U) \), entao
-       \[
-       \frac{\partial^2 f}{\partial x_i \partial x_j}
-       =
-       \frac{\partial^2 f}{\partial x_j \partial x_i}.
-       \]
-   - Interpretacao economica:
-     - Efeitos cruzados independe da ordem de avaliacao.
-   - Teorema de Young:
-     - Generaliza a comutatividade para derivadas de ordem \(k\), se \( f \in C^k \).
-   - *Refinamento de rigor:* explicitar que Young garante simetria sistematica para ordens de derivacao arbitrarias.
-
-4. Definicao da matriz Hessiana
-   - Para \( f \in C^2 \), define-se:
-     \[
-     D^2 f(\vec{x}) =
-     \begin{pmatrix}
-     \frac{\partial^2 f}{\partial x_1^2}(\vec{x}) & \cdots & \frac{\partial^2 f}{\partial x_1 \partial x_n}(\vec{x}) \\
-     \vdots & \ddots & \vdots \\
-     \frac{\partial^2 f}{\partial x_n \partial x_1}(\vec{x}) & \cdots & \frac{\partial^2 f}{\partial x_n^2}(\vec{x})
-     \end{pmatrix}.
-     \]
-   - Propriedades:
-     - Matriz \(n \times n\).
-     - Simetrica pelo Teorema de Schwarz.
-   - Leituras equivalentes:
-     - Agregador das derivadas segundas.
-     - Jacobiana do operador gradiente.
-   - Refinamento de rigor: explicitar que a Hessiana representa a segunda variacao do mapeamento.
-
-5. Interpretacao economica dos elementos
-   - Derivadas puras (diagonal):
-     - Medem como o efeito marginal de \(x_i\) varia com \(x_i\).
-     - Sinal negativo \(\rightarrow\) rendimentos marginais decrescentes.
-   - Derivadas mistas (fora da diagonal):
-     - Medem interacao entre variaveis.
-     - Sinal positivo \(\rightarrow\) complementaridade local.
-     - Sinal negativo \(\rightarrow\) substitutibilidade local.
-   - Refinamento de rigor: separar sinais de derivadas puras e mistas com leitura economica distinta.
-
-6. Hessiana como forma quadratica
-   - Para uma variacao linear \( \vec{h} \):
-     \[
-     Q(\vec{h}) = \vec{h}^{\mathsf T} D^2 f(\vec{x}_0) \vec{h}.
-     \]
-   - Esta forma mede a curvatura local de \(f\) na direcao \(\vec{h}\).
-   - *Refinamento de rigor:* validade condicionada a parametrizacao linear da trajetoria.
-
-7. Exemplo economico: funcao de producao Cobb-Douglas
-   - Funcao:
-     \[
-     F(K,L) = A K^{\alpha} L^{1-\alpha},
-     \quad A>0,\; 0<\alpha<1.
-     \]
-   - Dominio: \(\mathbb{R}_{++}^2\).
-   - \(F \in C^{\infty}\) \(\rightarrow\) Schwarz aplicavel.
-
-8. Derivadas de primeira ordem (produtos marginais)
-   - \(F_K = \alpha A K^{\alpha-1} L^{1-\alpha} \)
-   - \(F_L = (1-\alpha) A K^{\alpha} L^{-\alpha} \)
-
-9. Derivadas de segunda ordem
-   - Puras:
-     \[
-     F_{KK} = \alpha(\alpha-1) A K^{\alpha-2} L^{1-\alpha},
-     \quad
-     F_{LL} = -\alpha(1-\alpha) A K^{\alpha} L^{-\alpha-1}
-     \]
-   - Mistas:
-     \[
-     F_{KL} = F_{LK}
-     = \alpha(1-\alpha) A K^{\alpha-1} L^{-\alpha}
-     \]
-
-10. Propriedades economicas
-    - \(F_{KK}<0, F_{LL}<0\) \(\rightarrow\) rendimentos marginais decrescentes.
-    - \(F_{KL}>0\) \(\rightarrow\) complementaridade local entre fatores.
-
-11. Hessiana em forma matricial:
-    \[D^2F(K,L) = A K^{\alpha-2} L^{-\alpha-1} \begin{pmatrix} \alpha(\alpha-1)L^2 & \alpha(1-\alpha)KL \\ \alpha(1-\alpha)KL & -\alpha(1-\alpha)K^2 \end{pmatrix}. \]
-
-12. Concavidade e convexidade: regra operacional
-    - Hessiana negativa semidefinida:
-      - Funcao concava.
-      - Associada a maximos.
-    - Hessiana positiva semidefinida:
-      - Funcao convexa.
-      - Associada a minimos.
-    - *Mnemotecnica:* concava \(\rightarrow\) maximo, convexa \(\rightarrow\) minimo.
-
-13. Classificacao de pontos criticos
-    - \(\nabla f(\vec{x}^*) = \vec{0}\).
-    - Hessiana:
-      - Negativa definida \(\rightarrow\) maximo local.
-      - Positiva definida \(\rightarrow\) minimo local.
+   a. Teorema de Schwarz:
+      - Se \( f \in C^2(U) \), então \(\frac{\partial^2 f}{\partial x_i \partial x_j} = \frac{\partial^2 f}{\partial x_j \partial x_i}. \)
+   b. Interpretação econômica:
+      - _Efeitos cruzados_ independe da *ordem* de avaliação.
+   c. Teorema de Young:
+      - *Generaliza* a comutatividade para derivadas de ordem \(k\), se \( f \in C^k \).
+   d. *Refinamento de rigor:* explicitar que Young garante _simetria_ para _ordens_ de derivação *arbitrarias*
+4. _Definição_ da matriz Hessiana
+   a. Para \( f \in C^2 \), define-se:
+      \[
+      D^2 f(\vec{x}) =
+      \begin{pmatrix}
+      \frac{\partial^2 f}{\partial x_1^2}(\vec{x}) & \cdots & \frac{\partial^2 f}{\partial x_1 \partial x_n}(\vec{x}) \\
+      \vdots & \ddots & \vdots \\
+      \frac{\partial^2 f}{\partial x_n \partial x_1}(\vec{x}) & \cdots & \frac{\partial^2 f}{\partial x_n^2}(\vec{x})
+      \end{pmatrix}.
+      \]
+   b. Propriedades:
+      - Matriz \(n \times n\).
+      - *Simétrica* pelo Teorema de Schwarz.
+   c. Leituras equivalentes:
+      - _Agregador_ das derivadas segundas.
+      - _Jacobiana_ do operador gradiente.
+   d. Refinamento de rigor: explicitar que a Hessiana representa a segunda variação do mapeamento.
+   e. Hessiana como *forma quadrática*
+      a. Para uma variação linear \( \vec{h} \): \(Q(\vec{h}) = \vec{h}^{\mathsf T} D^2 f(\vec{x}_0) \vec{h}. \)
+      b. Esta forma mede a *curvatura local* de \(f\) na _direção_ \(\vec{h}\).
+5. Relação com a _expansão de Taylor_ de segunda ordem
+   a. Para \(f \in C^{2}\), a Hessiana aparece como o coeficiente do termo quadrático na expansão de Taylor multivariada
+   b. Formalmente: \(f(\vec{x}_0 + \vec{h}) \approx f(\vec{x}_0) + \nabla f(\vec{x}_0) \cdot \vec{h} + \frac{1}{2}\, \vec{h}^{\mathsf{T}} D^2 f(\vec{x}_0)\cdot \vec{h}, \)
+   c. Isso justifica a interpretação da Hessiana como operador de segunda variação local.
+6. Exemplo econômico: funcao de producao Cobb-Douglas
+   a. Função: \(F(K,L) = A K^{\alpha} L^{1-\alpha}, \quad A>0,\; 0<\alpha<1. \)
+   b. Domínio: \(\mathbb{R}_{++}^2\).
+   c. \(F \in C^{\infty}\) \(\rightarrow\) Schwarz aplicavel.
+   d. Derivadas de primeira ordem (produtos marginais)
+      - \(F_K = \alpha A K^{\alpha-1} L^{1-\alpha} \)
+      - \(F_L = (1-\alpha) A K^{\alpha} L^{-\alpha} \)
+   e. Derivadas de segunda ordem
+      - Puras: \(F_{KK} = \alpha(\alpha-1) A K^{\alpha-2} L^{1-\alpha}, \quad F_{LL} = -\alpha(1-\alpha) A K^{\alpha} L^{-\alpha-1} \)
+      - Mistas: \(F_{KL} = F_{LK} = \alpha(1-\alpha) A K^{\alpha-1} L^{-\alpha} \)
+   f. Propriedades econômicas
+      - \(F_{KK}<0, F_{LL}<0\) \(\rightarrow\) rendimentos marginais decrescentes.
+      - \(F_{KL}>0\) \(\rightarrow\) *complementaridade* local entre fatores.
+   g. Hessiana em forma matricial: \(D^2F(K,L) = A K^{\alpha-2} L^{-\alpha-1}\cdot \alpha\cdot (1 - \alpha) \begin{pmatrix} -L^2 & KL \\ KL & -K^2 \end{pmatrix}. \)
+7. *Concavidade e convexidade*: regra operacional
+   a. Hessiana _negativa_ semidefinida:
+      - Função *côncava*
+      - Associada a *máximos*
+   b. Hessiana _positiva_ semidefinida:
+      - Função *convexa*
+      - Associada a *mínimos.*
+   c. *Mnemotecnica:* côncava \(\land\) \(\rightarrow\) máximo, convexa \(\lor\)\(\rightarrow\) mínimo.
+   d. Concavidade/convexidade *global* exige que a Hessiana seja _semidefinida_ em *todo o domínio*
+   e. Avaliação pontual da Hessiana fornece apenas informação *local.*
+8. Classificação de pontos críticos
+   a. \(\nabla f(\vec{x}^*) = \vec{0}\).
+   b. Hessiana:
+      - Negativa definida \(\rightarrow\) máximo local.
+      - Positiva definida \(\rightarrow\) mínimo local.
       - Indefinida \(\rightarrow\) sela.
-
-14. Sintese final
-    - Segunda ordem \(\rightarrow\) curvatura e interações.
-    - Requer definição de funções continuamente diferenciais
-    - Teorema de Schwarz garante simetria da Hessiana
-    - Hessiana \(\rightarrow\) agregador completo da informacao de curvatura.
-    - Aplicação com Cobb-Douglas permite explicitar hipóteses de rendimentos marginais decrescentes
-    - Fornece critério para classificação de pontos críticos
-    - Permite avaliar comportamento local e global de funções
+      - Se a Hessiana for semidefinida (determinante nulo), o teste de segunda ordem é inconclusivo.
+        - É necessário avaliar todos os menores principais e não somente os menores principais líderes
+9. Síntese final
+   a. Segunda ordem \(\rightarrow\) curvatura e interações.
+   b. Requer definição de funções continuamente diferenciais
+   c. Teorema de Schwarz garante simetria da Hessiana
+   d. Hessiana \(\rightarrow\) agregador completo da informação de curvatura.
+   e. Aplicação com Cobb-Douglas permite explicitar hipóteses de rendimentos marginais decrescentes
+   f. Fornece critério para classificação de pontos críticos
+   g. Permite avaliar comportamento local e global de funções
 
 * Teorema da função implícita: roteiro de resposta
 :PROPERTIES:
 :UNNUMBERED: t
+:ID:       f638ee5d-6e61-4f1e-9ec6-0e3d7cac0461
 :END:
 
 
-1) Muitos problemas econômicos são formulados por meio de equações implícitas
-   a. As variáveis endógenas não podem ser isoladas analiticamente
-   b. As condições de equilíbrio combinam restrições comportamentais, tecnológicas e de mercado
-   c. O equilíbrio é definido por um sistema do tipo
-      \[F(\vec{x}, \vec{y}) = \vec{0} \]
-      1. \(\vec{x}\): variáveis exógenas ou parâmetros
-      2. \(\vec{y}\): variáveis endógenas
-2) O TFI garante, localmente:
-   a. Existência do equilíbrio
-   b. Unicidade do equilíbrio
-   c. Diferenciabilidade das variáveis endógenas em relação às exógenas
-   d. Fundamentação matemática da estática comparativa
-3) Formulação escalar do TFI
-   a. Seja \(F: U \subset \mathbb{R}^2 \rightarrow \mathbb{R}\), \(F \in C^1(U)\)
-   b. Equação implícita:
-      \[F(x,y)=0 \]
-   c. Ponto de referência:
-      \[(x_0,y_0) \in U \quad \text{tal que} \quad F(x_0,y_0)=0 \]
-   d. Hipótese central:
-      \[F_y(x_0,y_0) \neq 0 \]
-   e. Conclusão: Existem vizinhanças abertas \(V\) de \(x_0\) e \(W\) de \(y_0\) e uma função
-      \[y = \phi(x), \quad \phi \in C^1(V) \]
-      \[\phi(x_0)=y_0, \quad F(x,\phi(x))=0 \;\; \forall x \in V \]
-4) Diferenciando totalmente \(F(x,\phi(x))=0\):
-    \[dF = F_x dx + F_y dy = 0 \]
-   a. Resolvendo para \(dy/dx\), avaliada no ponto \((x_0,y_0)\):
-       \[\frac{dy}{dx} = -\frac{F_x}{F_y} \]
-5) Interpretação geométrica
-   a. \(F(x,y)=0\) define uma curva de nível
-   b. O gradiente \(\nabla F = (F_x,F_y)\) é normal à curva
-   c. O vetor tangente local é \((1,dy/dx)\)
-   d. A condição \(\nabla F \cdot (1,dy/dx)=0\) recupera exatamente a expressão do TFI
-   e. Fundamenta taxas marginais de substituição técnica
+1. Motivar: Problemas econômicos são formulados por meio de equações implícitas
+   a. Ilustrar: separação entre endógena e exógena não é analiticamente evidente
+   b. Exemplificar: condições de equilíbrio \(\Leftarrow\) restrições comportamentais, tecnológicas e de mercado
+   c. Enunciar: casos típicos do uso do TFI
+   d. Resumir TFI: garante existência _local_ de variávies de funções que resolvem as funções implícitas em termos de outras variáveis
+   e. Destacar: Capacidade de calcular derivadas \(\Rightarrow\) núcleo operacional da estática comparativa
+   f. Exemplificar GE: \(\Delta \omega \Rightarrow \Delta x_{s}\)
+2. Estrutura da resposta
+   a. Apresentar TFI \(\to\) base para o restante da análise
+   b. Interpretação geométrica \(\to\) superfície de nível, \(\nabla f\), taxas marginais
+   c. Estender para *sistemas* multivariados \(\leftarrow\) invertibilidade local do sistema \(\leftarrow\) \(det(J)\neq 0\) (não sing.)
+   d. Exemplificar com um GE simplificado de _trocas puras_ \(\Rightarrow\) estática comparativa
+   e. Explicitar notação: objetos do \(\mathbb{R}^{n}\) como \(\vec{x} \neq\) escalares
+3. Formulação escalar do TFI
+   a. _Abertura_: para fixar os conceitos \(\to\) versão escalar do TFI contém a _intuição_ essencial e simplifica
+   b. Seja \(F: U \subset \mathbb{R}^2 \rightarrow \mathbb{R}\), \(F \in C^1(U)\), conjunto _aberto_ \(U\)
+   c. Equação implícita: \(F(x,y)=0 \)
+   d. Existência de ponto de referência: \((x_0,y_0) \in U \quad \text{tal que} \quad F(x_0,y_0)=0 \)
+   e. TFI estabelece: \(F_y(x_0,y_0) \neq 0 \) então existem:
+      a. Vizinhanças abertas \(V\) de \(x_0\) e \(W\) de \(y_0\) e uma função
+         - \(y = \phi(x), \quad \phi \in C^1(V) \)
+         - \(\phi(x_0)=y_0, \quad F(x,\phi(x))=0 \;\; \forall x \in V \)
+      b. Garante diferenciabilidade de \(\phi\), permitindo calcular \(\phi\prime\)
+   f. Diferenciando totalmente \(F(x,\phi(x))=0\) utilizando *regra da cadeia*
+      a. \(dF = F_x dx + F_y dy = 0 \)
+      b. Resolvendo para \(dy/dx\), avaliada no ponto \((x_0,y_0)\): \(\phi\prime(x) = \frac{dy}{dx} = -\frac{F_x}{F_y} \)
+      c. Condição \(F_{y}\neq 0\) garante que a curva de nível \(F(x,y) = 0\) não possua _tangente vertical_
+4. Interpretação geométrica
+   a. _Transição_: Interpretação geométrica liga TFI ao _gradiente_
+   b. \(F(x,y)=0\) define uma curva de nível
+   c. O gradiente \(\nabla F = (F_x,F_y)\) é normal à curva de nível *no ponto*
+   d. O vetor tangente local é \((1,dy/dx)\)
+   e. A _condição de ortogonalidade_ \(\nabla F \cdot (1,dy/dx)=0\) recupera exatamente a expressão do TFI \(dy/dx = -F_{y}/F_{x}\)
+   f. Não nulidade \(F_{y}\neq 0\) permite resolver \(dy \sim dx\)
+      a. Gera _inclinação local_ dada pelo TFI
+   g. Exemplifcar em econoia: Fundamenta taxas marginais de substituição técnica
       a. Função de produção definida por \(Y(K,L) = \bar{Y}\),
          a. \(dL/dK = -(\partial Y/\partial K)/(\partial Y/\partial L)\) desde que \(\partial Y/\partial L \neq 0\).
-6) Generalização: uma equação e múltiplas variáveis
-   a. Seja \(F: U \subset \mathbb{R}^{n+1} \rightarrow \mathbb{R}\), \(F \in C^1\)
-      - \(\vec{x}=(x_1,\dots,x_n)^\top\)
-      \[F(\vec{x},y)=0 \]
-   b. Condição:
-      \[F_y(\vec{x}_0,y_0) \neq 0 \]
-   c. Derivadas parciais da função implícita:
-      \[\frac{\partial y}{\partial x_i} = -\frac{F_{x_i}}{F_y} \]
-7) Sistemas de equações: caso relevante em economia
-   a. \(F: U \subset \mathbb{R}^n \times \mathbb{R}^m \rightarrow \mathbb{R}^m \)
+         b. Sinal negativo \(\equiv\) /trade-off/ \(Y cte \leftrightarrow  (\uparrow K \leftrightarrow \downarrow L)\)
+5. Generalização: uma equação e múltiplas variáveis (\(n+1\))
+   a. _Abertura:_ Generalização para \(n+1\) é direta
+   b. Seja \(F: U \subset \mathbb{R}^{n+1} \rightarrow \mathbb{R}\), \(F \in C^1\); \(\vec{x}=(x_1,\dots,x_n)^\top\)
+   c. A Equação \(F(\vec{x},y)=0 \) defini \(y \sim \vec{x} \Leftrightarrow F_y(\vec{x}_0,y_0) \neq 0 \)
+      a. Existem vizinhanças abertas \(V\) de \(vec{x}_{0}\) e \(W\) de \(y_{0}\) e uma função \(\phi(\vec{x})\) de classe \(C^{1}: V \to W\) e diferenciável
+      b. Derivadas parciais da função implícita: \(\frac{\partial y}{\partial x_i} = -\frac{F_{x_i}}{F_y}\)
+6. Introduzir sistemas de equações _implícitos_: aplicação relevante do TFI em economia
+   a. \(F: U \subset \mathbb{R}^n \times \mathbb{R}^m \rightarrow \mathbb{R}^m \) de classe \(C^{1}\) em \(U\) aberto
       a. \(\vec{x} \in \mathbb{R}^n\): variáveis exógenas
       b. \(\vec{y} \in \mathbb{R}^m\): variáveis endógenas
-   b. Sistema: \(F(\vec{x},\vec{y})=\vec{0} \)
-8) Condição de aplicabilidade do TFI:
-   a. Jacobiana em relação às variáveis endógenas:
-   \[J_{\vec{y}}F(\vec{x}_0,\vec{y}_0) = \left[\frac{\partial F_i}{\partial y_j} \right]_{m\times m} \]
-   a. Hipótese central: \(\det(J_{\vec{y}}F)\neq 0 \)
-9) Diferenciação total do sistema
-   a. Diferenciando:
-   \[F(\vec{x},\vec{\phi}(\vec{x}))=\vec{0} \]
-   a. obtém-se:
-   \[\frac{\partial F}{\partial \vec{x}} d\vec{x} + \frac{\partial F}{\partial \vec{y}} d\vec{y} = \vec{0} \]
-10) Fórmula matricial da estática comparativa
-    a. Sob não-singularidade de \(\partial F/\partial \vec{y}\):
-    \[d\vec{y} = -\left[\frac{\partial F}{\partial \vec{y}} \right]^{-1} \frac{\partial F}{\partial \vec{x}} d\vec{x} \]
-    a. Cada elemento \((j,k)\) mede o impacto marginal de \(x_k\) sobre \(y_j\)
-    b. Esta expressão encapsula toda a estática comparativa local
-11) Aplicação: equilíbrio geral de trocas puras
-    a. Dois bens: \(X,Y\)
-    b. Dois consumidores: \(A,B\)
-    c. Dotações:
-       \[\vec{e}^A=(e_X^A,0), \quad \vec{e}^B=(0,e_Y^B) \]
-    d. Preferências Cobb–Douglas:
-       \[u^A=x_A^\alpha y_A^{1-\alpha}, \quad u^B=x_B^\beta y_B^{1-\beta} \]
-    e. Numerário: \(p_Y=1\), preço relativo \(p=p_X\)
-    f. Demanda e equação implícita do preço
-       a. Demandas:
-       \[x_A^d=\alpha e_X^A, \quad x_B^d=\frac{\beta e_Y^B}{p} \]
-       a. Equilíbrio no mercado de \(X\):
-       \[F(e_X^A,e_Y^B,p) \equiv \alpha e_X^A + \frac{\beta e_Y^B}{p} - e_X^A = 0 \]
-    g. Derivadas parciais relevantes
-        \[\frac{\partial F}{\partial p} = -\frac{\beta e_Y^B}{p^2} \quad\neq 0 \]
-        \[\frac{\partial F}{\partial e_Y^B} = \frac{\beta}{p} \quad \frac{\partial F}{\partial e_X^A} = -(1-\alpha) \]
-    h. Resultados de estática comparativa
-        \[\frac{\partial p}{\partial e_Y^B} = \frac{p}{e_Y^B} > 0 \]
-        \[\frac{\partial p}{\partial e_X^A} = -\frac{(1-\alpha)p^2}{\beta e_Y^B} < 0 \]
-    i. Interpretação econômica
-       a. Aumento em \(e_Y^B\) eleva a demanda por \(X\) → \(p\) aumenta
-       b. Aumento em \(e_X^A\) amplia a oferta relativa de \(X\) → \(p\) cai
-       c. Resultados consistentes com a função explícita do preço
-    j. Equivalência com a solução por derivação direta
-       \[\alpha e_X^A + \frac{\beta e_Y^B}{p} - e_X^A = 0 \]
-       \[p = \frac{\beta e_Y^B}{(1-\alpha)e_X^A} \]
-       a. Derivando diretamente:
-         \[\frac{\partial p}{\partial e_Y^B} = \frac{p}{e_Y^B} \quad \frac{\partial p}{\partial e_X^A} = -\frac{p}{e_X^A} \]
-       b. Substituindo \(p\) na segunda expressão:
-          \[\frac{\partial p}{\partial e_X^A} = -\frac{(1-\alpha)p^2}{\beta e_Y^B} \]
-12) Síntese conceitual
-    a. O TFI estrutura a análise local de equilíbrio
-    b. A estática comparativa é um problema de diferenciação total
+      c. Sistema: \(F(\vec{x},\vec{y})=\vec{0} \)
+   b. Assume-se um ponto \((\vec{x}_{0}, \vec{y}_{0}) \in U\) que resolve o sistema
+   c. Condição de aplicabilidade *local* do TFI \(\approx F_{y}\neq 0\) *necessária* e *suficiente*:
+      a. Depende da jacobiana em relação às variáveis endógenas _no ponto_:
+      b. Montar jacobiana: \(J_{\vec{y}}F(\vec{x}_0,\vec{y}_0) = \left[\frac{\partial F_i}{\partial y_j} \right]_{i=1,\ldots, n; j=1, \ldots, m} \)
+      c. Hipótese central: \(\det(J_{\vec{y}}F)\neq 0 \equiv\)  não-singular
+         a. Implicação: Existe uma função _única_, definida e de classe \(C^{1}\) em torno do ponto que \(\vec{\phi}(\vec{x}_{0}) = \vec{y}_{0}) \Rightarrow F(\vec{x}, \vec{\phi}(\vec{x})) = \vec{0} \forall \vec{x} \approx \vec{x}_{0}\)
+         b. Diferenciabilidade de \(\phi\) permite calcular a _derivada parcial_
+7. Evidenciar como calcular a derivada e como associar com _estática comparativa_
+   1. Calcular a derivada total da identidade \(F(\vec{x},\vec{\phi}(\vec{x}))=\vec{0}\)
+   2. Obter: \(\frac{\partial F}{\partial \vec{x}} d\vec{x} + \frac{\partial F}{\partial \vec{y}} d\vec{y} = \vec{0} \)
+   3. Explicitar fórmula matricial da estática comparativa:
+      - \(d\vec{y} = -\left[\frac{\partial F}{\partial \vec{y}} \right]^{-1} \frac{\partial F}{\partial \vec{x}} d\vec{x} \)
+   4. Coondição: Sob não-singularidade de \(\partial F/\partial \vec{y}\):
+      1. Sistema pode ser _resolvido localmente_ em termos de \(vec{x}\)
+   5. Associar com estática comparativa
+      1. Cada elemento \((j,k)\) mede o impacto marginal de \(x_k\) sobre \(y_j\)
+         - Atenção para os subíndices: \(y \to\) linhas
+      2. Expressão encapsula toda a estática comparativa local
+      3. A expressão independe da existência de forma fechada para \(\vec{y}(\vec{x})\)
+8. Aplicação: equilíbrio geral de trocas puras
+   a. _Abertura_: Para concretizar conceitos, aplica-se TFI em GE trocas puras
+   b. Dois bens: \(X,Y\)
+   c. Dois consumidores: \(A,B\)
+   d. Ressalvar: Sistema envolve várias equações; será analisado um caso mais simples com eliminação das variáveis
+   e. Dotações: \(\vec{e}^A=(e_X^A,0), \quad \vec{e}^B=(0,e_Y^B) \)
+   f. Preferências Cobb–Douglas: \(u^A=x_A^\alpha y_A^{1-\alpha}, \quad u^B=x_B^\beta y_B^{1-\beta} \)
+   g. Numerário: \(p_Y=1\), preço relativo \(p=p_X\)
+   h. Restrição orçamentária: \(pe^{i}_{X} + e^{i}_{Y}\) para o consumidor \(i\) dadas as simplificações
+   i. Demanda e equação implícita do preço
+      a. Demandas para \(X\): \(x_A^d=\alpha e_X^A, \quad x_B^d=\frac{\beta e_Y^B}{p} \)
+      b. Demandas para \(Y\): \(y_A^d=(1 - \alpha)\cdot p e_X^A, \quad y_B^d=(1 - \beta) e_Y^B \)
+      c. Memo para todos: \(x^{d}_{i} = \frac{\alpha}{\alpha + \beta}\frac{RO}{p_{x}}\) (frac do gasto \(\times\) renda real)
+      d. Equilíbrio no mercado de \(X\):
+         - \(x_{A}^{d} + X_{B}^{d} = e_{X}^{A} + e_{X}^{B} \Rightarrow \alpha e_X^A + \frac{\beta e_Y^B}{p} = e_X^A \)
+         - Forma implícita: \(F(e_X^A,e_Y^B,p) \equiv \alpha e_X^A + \frac{\beta e_Y^B}{p} - e_X^A = 0 \)
+           - Classe \(C^{1} \forall p > 0\)
+   j. Derivadas parciais relevantes
+      a. \(\frac{\partial F}{\partial p} = -\frac{\beta e_Y^B}{p^2} \quad\neq 0 \)
+         - Assegura aplicar TFI
+      b. \(\frac{\partial F}{\partial e_Y^B} = \frac{\beta}{p}\)
+   k. Resultados de estática comparativa (interpretação econômica)
+      a. \(\frac{\partial p}{\partial e_Y^B} = \frac{p}{e_Y^B} > 0 \)
+      b. Aumento em \(e_Y^B\) eleva a demanda por \(X\) → \(p\) aumenta
+9. Evidenciar que o mesmo pode ser feito em relação à \(e_{X}^{A}\)
+   a. \(\frac{\partial F}{\partial e_X^A} = -(1-\alpha) \)
+   b. \(\frac{\partial p}{\partial e_X^A} = -\frac{(1-\alpha)p^2}{\beta e_Y^B} < 0 \)
+   c. Aumento em \(e_X^A\) amplia a oferta relativa de \(X\) → \(p\) cai
+      a. Evidenciar relação com escassez relativa dos bens
+   d. Resultados consistentes com a função explícita do preço
+10. Equivalência com a solução por derivação direta
+    a. Evidenciar que simplificações permitem função explícita
+       a. \(\alpha e_X^A + \frac{\beta e_Y^B}{p} - e_X^A = 0 \)
+       b. \(p = \frac{\beta e_Y^B}{(1-\alpha)e_X^A} \)
+       c. \(\frac{\partial p}{\partial e_X^A} = -\frac{\beta e_Y^B}{(1-\alpha) (e_X^A)^2} < 0.\)
+       d. \(\frac{\partial p}{\partial e_Y^B} = \frac{\beta}{(1-\alpha) e_X^A} > 0.\)
+    b. Preserva-se a relação de sinais
+    c. A coincidência com os resultados da TFI podem ser obtidos substituindo a definição d preço de equilíbrio
+11. Estender possibilidades para sistemas
+    a. Endógenas: \(\vec{y} = (p, x_{A}, y_{A}, x_{B}, y_{B})\)
+    b. Exógenas: \(vec{x} = (e_{X}^{A}, e_{Y}^{B})\)
+    c. Equilíbrio (5 eq): CPO utilidade, restrições orçamentárias, equilíbrio dos mercados
+    d. Lei de Walras torna uma das equações de equilíbrio dispensáveis
+    e. Defini-se uma função implícita \(F(\vec{x}, \vec{y}) = 0\)
+    f. Condição para TFI requer jacobiana das endógenas seja não-singular
+       a. Estabilidade local
+       b. Excluindo soluções de canto, costuma ser satisfeita
+    g. Evidenciar que exemplo é um caso simplificado obtido pela eliminação de variáveis endógenas
+       a. Sem perda de rigor ou clareza
+12. Síntese conceitual
+    a. O TFI estrutura a análise local de equilíbrio de sistemas definidos implicitamente
+    b. TFI é a base matemática da estática comparativa
     c. A Jacobiana endógena governa estabilidade e sensibilidade
-    d. O exemplo reduzido preserva a generalidade do sistema completo
+    d. O exemplo reduzido preserva a generalidade do sistema completo (pequenas variações nas exo \(\to\) endo)
+    e. _Encerramento_: dominar este instrumento é essencial para modelar e interpretar sistemas econômicos
+       a. Destacar reposta de pontos do equilíbrio à perturbações exógenas (centro estática comparativa)
+13. Memo: O TFI garante, localmente:
+    a. Existência do equilíbrio
+    b. Unicidade do equilíbrio
+    c. Diferenciabilidade das variáveis endógenas em relação às exógenas
+    d. Fundamentação matemática da estática comparativa
 
 
 
@@ -4649,6 +4506,9 @@ Assim, a otimização condicionada oferece uma linguagem unificada para a análi
 
 * Variáveis locais :noexport:
 
+* Footnotes
+
+[fn:1]
 # Local Variables:
 # eval: (setq-local org-latex-text-markup-alist
 #        '((bold . "\\hl{%s}")
