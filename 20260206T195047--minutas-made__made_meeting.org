@@ -71,3 +71,65 @@ DADOS DO TOMADOR DE SERVIÇO
 - ⁠⁠E-mail: Jessica Terra <jessica@incube.org.br>
 
 *Descrição da nota: Serviços prestados ao Made no Mês vigente, e os dados da conta com chave pix*
+
+
+* Onboarding pesquisa [2026-02-12 Thu]
+
+** Temática
+
+- Impactos redução da jornada de trabalho
+  - Grupo já em andamento
+  - Como integrar o grupo
+  - Linhas
+    - Mapeamento dos argumentos (pro e contra)
+    - Tentativa de aplicação para o caso Brasileiro
+    - Estimativa empírica
+    - Elaboração de modelo simulável extensão do ABM verde
+      - Testar diferente políticas
+        - Explorar implicações ambientas de diferentes jornadas
+          - Estágios:
+            - Modelo que tenha horas de trabalho como variável de escolha ou disputa (sem a parte verde)
+              - Avaliação de impactos sócio-econômicos
+              - Combina com outras partes do projeto
+              - Calibrar de forma representativa
+            - Depois tentar ver como adequar parte verde
+      - Tratar redução da jornada como fonte de disputa
+        - Salário efetivo depende de salário desejado das firmas e dos trabalhadores
+          - Modulada pela taxa dos trabalhadores
+        - Incluir jornada desejada de trabalhadores e das firmas
+          - Jornada efetiva como objeto de conflito a depender de poder de barganha
+            - Podendo ser modulada da taxa de desemprego
+        - Ter efeito produtividade
+        - Pensar em alguma especificação
+          - Logistica
+          - Quanto maior a jornada, menor a produtividade
+            - Efeitos em direções opostas
+            - Cair jornada, pode afetar positivamente a produtividade, aumentando produto
+      - Sugestão:
+        - Partir do K+S sem capital
+          - Produtividade poderia dependedr das horas de trabalho e inovação
+        - Exercício analítico
+      - Resultado: desigualdade das horas de trabalho (Gini)
+        - Pode ter um trade-off, pode ser o caso de piorar a distribuição de salários para melhor distribuição da jornada
+      - Cenário possível: governo impõe teto
+        - Aumenta salário mínimo
+        - Viola teto de horas com horas extras
+        - Talvez testar firmas reagindo com aumento de markup
+          - Markup exógeno e comum entre as firmas por simplificação
+
+** Frequência e fluxo de trabalho
+
+
+- Ir para São Paulo com frequência (a definir)
+  - MADE paga passagem
+- Integração com Samuel (graduação)
+  - Treinar (me substituir? rs)
+  - Pensar como treinar
+    - Mencionar sobre summer school
+
+** Outros
+
+- Mencionar possibilidade de integrar dados com modelos via LSD
+  - Isso pode ser interessante
+  - Focado em calibragem
+- Produtos do MADE são subutilizados
