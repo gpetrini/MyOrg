@@ -133,3 +133,27 @@ DADOS DO TOMADOR DE SERVIÇO
   - Isso pode ser interessante
   - Focado em calibragem
 - Produtos do MADE são subutilizados
+
+* Planejamento Samuel [2026-02-23 Mon]
+:PROPERTIES:
+:ID:       144059a9-0cf5-43f9-8260-db157dcdef82
+:END:
+
+
+- ABM com ênfase no mercado de trabalho, para discutir redução da jornada
+- Depois pensar como integrar a parte verde depois
+- Orientar Samuel presencialmente (mentoria)
+  - Foco com o objetivo geral do modelo
+  - Mentoria em paralelo
+- Samuel ficará com a jornada de trabalho
+  - Aproveitar começo para ensinar
+- Fazer planejamento de trabalho conjunto (nessas primeiras semanas) (TODO)
+- Compartilhar material da Marica (TODO)
+  - Selecionar ponto de partida mais promissor (selecionar configuração do modelo da Marica)
+  - Perguntar
+- Proposta: tratar redução da jornada de trabalho como pivot do conflito distributivo
+  - Alternativas: hipótese de horas extras
+- Ver Drive compartilhado sobre redução da jornada (TODO)
+- TODO: olhar abstracts e para selecionar o modelo da Marica
+- TODO: Ajustar pastas no drive para sincronizar com o computador
+  - Garantir que pasta .git será ignorado

@@ -1,9 +1,11 @@
-#+title:       Challenging the Working Time Reduction and Wages Trade-off: A Simulation for the Spanish Economy
+#+title:      Challenging the Working Time Reduction and Wages Trade-off: A Simulation for the Spanish Economy
 #+date:       [2026-01-08 Thu 09:46]
 #+filetags:   :bib:made:wtr:
 #+identifier: 20260108T094627
 #+reference:  cardenas_2021_challenging
 
+
+[[denote:20260108T111817][Green ABM for Working Time Reduction]]
 
 
 * FISH-5SS
@@ -11,27 +13,92 @@
 
 ** 5SS
 
+The paper evaluates the effects of WTR on employment (private sector) and real GDP for the Spanish economy for 2017. The findings rely on a two step procedures, starting from microdata in order to estimate the effects over labor creation than, evaluating the macroeconomic impacts. The authors report that there is no need to reduce wages in order to compensante for the WTR measurement, as the increase in the wage-share would lead to an increase in GDP.
 
 ** Background and motivation
+
+- There is a historically decline in the working hours, which a desaccelerating pace
+  - Workers are no longer able to get WTR in negotiations
+- Longer working hours are associated with fatigue effects
+- WTR is correlated with leisure satisfaction
+- WTR could foster gender equality by reducing the distribution between paid and unpaid working time
+  - Increasing the participation of women
+  - Free paid working hours from men
+- WTR might increase labor productivity:
+  - Psychological factors (concentration)
+  - Motivational factors
+  - Organizational effect (requires redesign of work distribution)
+- There is no consensus about the effects of working hours to employment
+  - Negative: Increase in the hourly wages increase costs, which decreases production and the level of employment
+    - Lower capital operating time (capacity utilization), which reduces investment
+      - Counterargument: Increase in the shift-work to compensate for WTR
+    - Firm would prefer to extending overtime instead of hiring new workers
+      - If it is true, it would not create new jobs
+    - The increase of unit labor cost, affects the demand for labor negativelly, followed by an increase in inflation
+      - This could further worsen the competitiveness and have negative impacts over GDP and employment
+  - Positive: The final effect over GDP depends on the response of wage increase
+    - That is why adopting the [cite:@bhaduri_1990_unemployment] is relevant
 
 
 ** Supporting Ideas and hypothesis
 
+- The main hypothesis is that the increase of wage-share (due to WTR) would increase GDP if the economy is wage-led
+  - [cite/t:@pawlowski_2023_doesa] found that the effects over wage-share are not significant; the increase in GDP has another underlying mechanism
+- Assumes that the increase in productivity due to WTR does not offsets the demand for labor
+
 
 ** Purpose, Relevance, and Contribution
 
+- First paper that uses the [[denote:20250203T182114][Neo Kaleckian Model]] approach to estimate the macroeconomics effects of [[denote:20260326T110324][Working Time Reduction]]
 
-** Methodology
+** Methodology and data
 
+- Simulation for the Spanish economy using survey data
+  - Evaluates the impact of a 5 hour reduction (in a week) without reduction in wages
+- To evaluate the job creation, uses information on occupation and technical conditions of production (European Working Conditions Survey)
+  - The gross liberalized hours is calculated by computing the total working time by workers who current work between 35-45h and set it as 35h
+    - This is the amount of hours that each worker will no longer work
+    - Then, multiply this liberalized hours by the number of employers affected by this measurement
+    - Next, divide by the new stablish working hours to obtaing the Full-Time Equivalent (FTE)
+  - Next, evaluate wheter this FTE will actually be fulfilled by new jobs
+    - In order to do so, the authors created an index of substitutability based on production conditions
+      - Contains: complexity of the task, automatic speed of machine, tasks rotation
+      - This allow to identify which occupations will need to create more jobs
+        - Higher dependence implies the need to create more jobs in order to mantain the production level constant (also the use of capital)
+        - Task rotation allow to infer about internal reorganization
+  - Given the amount of jobs created, it is possible to estimate the unemployment rate
+  - Next, the study estimate the effects over wage-share, which is mainly driven by the newly created jobs
+    - Keeping the same labor compensation and the decline in the working hours, it is possible to compute the hourly wage and, thus, the new labor income
+- Macroeconomic effects estimated using the [cite/t:@bhaduri_1990_unemployment] model, reporting an increase on GDP
+  - This macroeconomic effect is captured by a extended time series estimation (1955-2017)
+- Simulation (scenario analysis) performed in two steps:
+  - Firms with more than \(X\) (10) workers are obliged to adopt the WTR
+  - After some amount of time (2 years), all firms will follow this new setting
 
 ** Results
 
+- Supports the hypothesis of work-sharing
+  - The [[denote:20260326T110324][Working Time Reduction]] is equivalent than the liberation of certain amount of full-time jobs
+- Women are the most affected by WTR
+- Wages increases, increasing the wage-share as a consequence
+- Companies would extend the working hours of the underemployed before hiring new workers
+- Reduce is not a necessary complementary action together with WTR, as the wage-share increase would genenerate a positive impact on GDP
 
 ** Interesting findings and not categorized stuff
 
+- The increase of retirement age might revert the WTR
+- The French experiment (which servers as a benchmark) suggests that training might be relevant for the job creation
+- It would be important to evaluate if the increase in the labor productivity due to WTR could make firms not willing to hire more workers (not a result from a cost channel)
+  - This effect might be important in [[denote:20250202T120740][Innovation-led growth models]] as in the [cite/t:@dosi_2018_effects]
+  - The authors report a strong accelerator effect, while the wage-share effect over investment is not statistically significant
+  - The household debt effect over investment is argued to be associated with high residential investment in the analyzed period
 
-** Critics
 
+** Critics and questions
+
+- The study does not consider self-employed. Would it be the case that self-employed might reduce the positive effects of WTR?
+  - The argument to discard this groups is that they are not influenced by the legislation
+- One of the advantages of the ABM is to define a behavioural rule to indicate how companies will react, rather than using the procedure as in the paper
 
 ** Abstract
 

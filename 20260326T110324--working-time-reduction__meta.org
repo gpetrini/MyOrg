@@ -1,0 +1,4 @@
+#+title:       Working Time Reduction
+#+date:       [2026-03-26 Thu 11:03]
+#+filetags:   :meta:
+#+identifier: 20260326T110324

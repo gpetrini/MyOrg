@@ -16,8 +16,20 @@
 
 ** Background and motivation
 
+- This paper addresses how both Marx and Keynes have similarities in terms of the goal of [[denote:20260326T110324][Working Time Reduction]]
+  - Both author agrees that [[denote:20260326T110324][Working Time Reduction]] would benefit society
+  - Both agrees that [[denote:20240906T150431][Technological change]] would be one of the major mechanisms in which the WTR would be possible
+  - There is also the ideia to change regular work into meaningful and life enhancing work
+- The main motivation is that this could give some insights on how to address the topics in current debates
+  - It also give some ideias why the implementation of WTR is difficult in practice
+
 
 ** Supporting Ideas and hypothesis
+
+- Marx and Keynes did not considered the relevance of unpaid working time
+- Both did not considered the consequences of distribution among workers
+  - Full timers might work less, so part-timers could work more
+  - This might also generate a redistribution of unpaid working time
 
 
 ** Purpose, Relevance, and Contribution

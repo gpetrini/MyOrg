@@ -1,0 +1,45 @@
+#+title:       Meeting Minutes
+#+date:       [2026-03-19 Thu 16:27]
+#+filetags:   :meeting:meta:
+#+identifier: 20260319T162701
+
+* Modelos de Aprendizado de Máquina na análise de Políticas Públicas no combate à Insegurança Alimentar e Nutricional
+
+** Ivette [2026-03-19 Thu]
+
+- Algumas aplicações de ML não consideram expansão das amostras
+- Desafio metodológico em obter a variância dado os pesos amostrais
+  - Existem funções do pacote do IBGE que implementam isso
+  - Obtendo a variância, pode-se utilizar os dados da PNADc em uma série de modelos
+- Decidir nível de desagregação: UF ou base toda?
+- Existem pacotes python mais novos que talvez tenham resolvido o problema
+- Data: Este semestre
+- Aplicação de modelos que não estão no pacote do IBGE
+
+* Orientações
+
+** Carolina Paiva Hackmann :mestrado:
+
+*** Alinhamento [2026-03-25 Wed]
+
+- Esclarecer perspectivas
+- Consolidar se é de interesse das partes
+- Estudo de eventos
+  - Feito com modelo econométrico de volatilidade
+    - Dummy se anúncio aumenta volatilidade
+  - Big data
+    - Intraday -> Momento da mudança
+    - Já feito para mercados agrícolas
+    - Encaixe com trabalho da Carol
+  - Possibilidade de coorientar
+- Criar espaço de compartilhamento
+- Dissertação sem viajar
+- Propor cronograma de entregas
+  - Exemplo: Meados segundo semestre
+- Reuniões quinzenais
+  - Mapear capítulo 01
+- Selecionar literatura
+- Dados:
+  - CME não term muita liquidez
+  - Para os dados brasileiros, as séries não são muito longas
+  - Dificuldade em encontrar dados da bolsa

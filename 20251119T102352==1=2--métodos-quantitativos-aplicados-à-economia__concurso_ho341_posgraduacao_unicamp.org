@@ -4,6 +4,17 @@
 #+identifier: 20251119T102352
 #+signature:  1=2
 
+* ETC :noexport:
+:PROPERTIES:
+:ID:       47e86603-ff3b-466b-afb4-d80534d5572b
+:END:
+
+Crie uma aula didática e abrangente que integre todos os conceitos dessas fontes. Inclua: componentes-chave, relações entre componentes, árvores de decisão para aplicação e casos extremos em que a estrutura falha. A aula deve manter consistência de notação e rigor matemático elevado. Contextualize com problemas economicamente relevantes. Os slides devem ter poucos textos, mas sem forçar analogias. Público-alvo é composto por pós-graduandos em economia. Estilo acadêmico com foco em clareza e definições. Inclua exemplos economicamente relevantes.
+
+
+Quero uma apresentação em estilo acadêmico com elevado rigor matemático e consistência entre as notações sobre [ASSUNTO]. O público-alvo são pós-graduandos em economia. Deixe evidente as hipóteses e premissas para que o método possa ser aplicado. Adicione um slide de objetivos pedagógicos. Adicione slides de situações-problema economicamente relevantes. Quero exemplos que permitam os alunos a entender a intuição do método. Deixe explicitado quando o método falha e quando o pesquisador precisa tomar alguma decisão a respeito. Evidencie como qualificar o que foi estimado. Padrão formal. Inclua necessariamente:
+
+
 * TODO Indicadores socioeconômicos
 
 
@@ -82,7 +93,7 @@
 - [[https://www.youtube.com/watch?v=kTWIf0pI8Oo&list=PLmM_3MA2HWpZXwfy9vDz80VqlXkFz5S-E&index=50&pp=iAQB][Distance Matrix - AMV]] até 52
 - [[https://www.youtube.com/watch?v=034xoVfBVzU][Análise de clusters - UFF]]
 
-* TODO Análise de variância multivariada
+* Análise de variância multivariada
 
 ** Temas obrigatórios
 
@@ -102,7 +113,7 @@
 - [[https://www.youtube.com/watch?v=AX8FW7hFBFw&list=PLmM_3MA2HWpZXwfy9vDz80VqlXkFz5S-E&index=34][MANOVA]]
 - [[https://www.youtube.com/watch?v=C3fum0vifIc&list=PLmM_3MA2HWpZXwfy9vDz80VqlXkFz5S-E&index=19][Mean vectors]]
 
-* TODO Análise de discriminante
+* STRT Análise de discriminante
 
 ** Temas obrigatórios
 
@@ -124,10 +135,19 @@
 - [[https://www.youtube.com/watch?v=-Rp2sOYaYvs&list=PLmM_3MA2HWpZXwfy9vDz80VqlXkFz5S-E&index=37][Discriminante linear]] 37 a 41
 - [[https://hedibert.org/wp-content/uploads/2015/03/AnaliseMultivariada-aula6.pdf][Análise de discriminante - Aula Hideberg]]
 - [[https://www.youtube.com/watch?v=rlZ6ROTupzk][Análise de discriminante UFF]]
+- https://hastie.su.domains/ISLR2/Slides/Ch4_Classification.pdf
+- https://online.stat.psu.edu/stat505/lesson/13
+- https://www.ime.unicamp.br/~cnaber/aula_AD_Ana_Multi_P2_2S_2020.pdf
 
-* TODO Componentes principais
+* STRT Componentes principais
+:PROPERTIES:
+:ID:       2a1c4da4-4035-42dd-8216-7583e10f2dd2
+:END:
 
 ** Temas obrigatórios
+:PROPERTIES:
+:ID:       f2650a43-a9d4-4184-9adc-e12ce2dafd2f
+:END:
 
 - Conceitos e objetivos
 - Obtenção dos componentes principais
@@ -138,14 +158,21 @@
 - Análise de agrupamento
 
 ** Capítulos de livro
+:PROPERTIES:
+:ID:       4ace4a9e-1628-4ae4-baec-4da7c1a8c786
+:END:
 
 - [cite/t:@hardle_2024_applied] Ch 11
 - [cite/t:@manly_2024_multivariate] Ch 06
 - [cite/t:@johnson_2007_applied] Ch 08
 
 ** Outros materiais
+:PROPERTIES:
+:ID:       fc17cadf-424c-4408-8eec-3e961c236e92
+:END:
 
 - [[https://hedibert.org/wp-content/uploads/2015/02/AnaliseMultivariada-aula3.pdf][Hedibert - PCA]] (Aula/Slides)
+- PCAtools (Cran)
 - [[https://www.youtube.com/watch?v=U0x_rOOlrlg][Samuel Campos - PCA]] (Video/R) (UFF)
 - [[https://www.youtube.com/watch?v=7DQM7tfxVSU&list=PLmM_3MA2HWpZXwfy9vDz80VqlXkFz5S-E&index=45&pp=iAQB][PCA - AMV]]
 - [[https://www.youtube.com/watch?v=fkf4IBRSeEc&list=PLyJJh8JRWIZjLlyA4FU4mxChoMPKaicT1][PCA e SVD]]
@@ -154,17 +181,184 @@
 - [[https://github.com/mossr/machine_learning_book/blob/master/lectures/10%20Principal%20Components%20Analysis%20(cs229-notes10).pdf][PCA - Lecture Notes]]
 - [[https://www.youtube.com/watch?v=dhK8nbtii6I][Math behind PCA]]
 - [[https://sisl.github.io/ExpFamilyPCA.jl/dev/math/intro/][EPCA - Types of interpretations]]
+- https://www.statlearning.com/resources-second-edition
+- PCA + K-means: https://stats.stackexchange.com/questions/183236/what-is-the-relation-between-k-means-clustering-and-pca
+- PCA + Kmeans: https://rpubs.com/Musthofa_S/777722
+- PCA + K-means (pt): https://www.kaggle.com/code/gomes555/an-lise-multivariada-pca-e-kmeans
+- PCA + K-means com detalhamento de gráficos: https://rpubs.com/Databaas/1197541
+- Como agrupar PCA: https://www.uv.es/visualstats/vista-frames/help/lecturenotes/lecture13/princomp-example.html
 
 ** Bases de dados
+:PROPERTIES:
+:ID:       2cdecf80-7753-47ec-be82-7643cce515b2
+:END:
 
-** Scripts
 
 ** Ideias
+:PROPERTIES:
+:ID:       bcb3d6d3-4ad2-4d4a-8f90-f4b0c304ee70
+:END:
 
 - Mostrar intuição do PCA com dados sintéticos
   - Visualização gráfica com elipsóides indicando desvio-padrão
   - Setar indicando PCs
 - Motivação a partir do IDH
+
+** Tópicos discutidos: PCA
+:PROPERTIES:
+:ID:       8db5da04-93ab-4574-9a33-7089a4792c7a
+:END:
+
+1. Hipóteses gerais
+   1. Nenhuma hipótese específica é feita sobre os dados, exceto que média e covariância existem
+   2. Normalização dos dados também decorre das dimensões estarem medindo aspectos diferentes
+   3. Não é necessário assumir uma distribuição normal multivariada
+      1. No entanto, PCAs desenvolvidos a partir dessas distribuições normais multivariadas possuem interpretações úteis (elipsóides de densidade constante)
+2. Definição de componentes principais
+   1. Análise multivariada mais simples
+      1. Parte de \(p\) variáveis e encontra combinações que gerem índices
+         1. Não correlacionados
+            1. Implica que estão medindo dimensões diferentes
+         2. Ordenados em termos de importância para variância dos dados
+         3. Estes índices são os componentes principais
+      2. Utilizado para redução da dimensionalidade
+         1. A contribuição de alguns desses índices é negligenciável
+            1. Os \(K\) PC tem quase tanta informação do que todas as \(P\) variáveis, com \(K < P\)
+         2. Foco em possuir interpretabilidade
+            1. Permite evidenciar relações que não estavam claras
+   2. Visualização do conceito de PCA (2 variáveis)
+      1. Apresenta um gráfico de dispersão
+      2. Normaliza os dados
+         1. Importância: Dados têm peso igual na análise
+         2. Isso enfatiza que a escolha dos eixos também é arbitrária
+            1. Como exemplo, os autores fazem regressões para comparar qual delas captura melhor a resposta do eixo X em função do Y [não incluir]
+         3. Estimar uma curva que é o mais próximo possível de todos os pontos
+            1. Esta curva é a descrição do primeiro PC
+               1. Sugere a escolha de um novo eixo para esse gráfico
+               2. \(Z_{1} = c_{1}X_{1} + c_{2}X_{2}, 0 < c_{1}, c_{2} < 1\)
+               3. O segundo eixo seria perpendicular a este, e passaria necessariamente por \((0,0)\)
+                  1. Este representa o segundo PC: \(Z_{2} = b_{1}X_{1} - b_{2}X_{2}\)
+      3. Tipicamente, o 1 PC é uma soma ponderada das variáveis
+         1. Coeficientes precisam somar 1
+      4. Segundo PC é a diference entre uma coleção de variáveis
+      5.
+   3. PCA nem sempre funciona
+      1. Isso ocorre se as variáveis forem não correlacionadas
+      2. Melhores resultados ocorrem quando é fortemente correlacionados
+   4. Redução da dimensionalidade
+      1. Está associado com redundância nos dados
+      2. Dimensões diferentes capturando elementos comuns
+3. PC populacionais
+   1. PC são combinações lineares específicas dos vetores aleatórios
+      1. Geometricamente, essas combinações representam seleção de um novo sistema de coordenadas
+         1. Obtidas ao rotacional o sistema principal
+      2. Novos eixos representam direções de maior variabilidade
+   2. Dependem somente da matriz de correlação \(\sum\)
+      1. A matriz de covariância pode ser utilizada para recompor a variância de \(PC_{i}\) como os autovetores multiplicando (pre e pós) \(\sum\)
+      2. Covariância é obtida pelos componentes \(i\) e \(k\) dos autovetores
+4. PCAs derivados de populações normais multivariadas
+   1. A densidade dessas distribuições é constante na elipsóide centrada na média
+   2. Se \(\lambda_{1}\) é o maior autovalor, então eixo principal da elipsóide é na direção do autovetor associado \(e_{1}\)
+   3. Os PCs estão nas direções dos eixos das elipsóides de densidade constante
+      1. Qualquer ponto no eixo da elipsoide terá coordenadas proporcionais ao autovetor
+   4. Os PCs são obtidos ao rotacionar os eixos de modo que coincidam com as elipsóides de densidade constante
+5. Análise de variação amostral por meio de PCA
+   1. Os procedimentos são similares ao caso populacional, focando na variância amostral
+6. Procedimentos para PCA
+   1. O primeiro PC é a combinação das variáveis que varia o máximo possível entre as observações
+      1. Condicionado à soma dos quadrados dos coeficientes seja unitária
+      2. Como consequência, a variância desse PC é a maior possível
+   2. O segundo PC é encontrado da mesma forma, adicionando a condição de que seja não correlacionado ao primeiro (correlação nula)
+   3. Repete-se o mesmo para os demais, de modo que possuam a maior variância possível e sejam não correlacionados com os PCs anteriores
+      1. \(Var(a_{i} X\) s.a. \(a_{i}\prime a_{i} = 1\) e \(Cov(a_{i}X, a_{j}X) = 0 for K < i\)
+      2. Memo: O PC é uma combinação linear que atende as condições anteriores
+   4. O número de PCs é idêntico ao número de variáveis
+   5. Encontrar os PCs envolve encontrar os autovalores da matriz de covariância
+      1. Memo: Diagonal princial é a variância e os elementos fora da Diagonal principal são a covariância
+      2. A variância dos PCs é dado pelos autovalores
+      3. Não é possível que os autovalores sejam negativos dada a natureze da matriz de covariância
+      4. Seja \(Var(Z) = \lambda \Rightarrow \) os coeficientes das restrições são os componentes do autovetor respectivo ajustado de modo que a sua soma ao quadrado seja unitária
+      5. A soma dos autovalores equivale ao traço da matriz, que fornece a soma das variâncias
+         1. Soma das variâncias dos PCs equivale à soma da variância dos dados originais
+         2. Como consequência, encapsulam toda a variância dos dados
+      6. Lembrando que os dados foram normalizados, a variância será unitária por construção
+         1. Os PCs podem ser recuperados da matriz de correlação
+         2. O traço será necessariamente igual ao número de variáveis
+   6. Etapas:
+      1. Normalizar os dados
+         1. Não normalizar faria com que as variáveis com maior variância dominariam a análise
+      2. Calcular matriz de covariância
+      3. Encontrar os autovalores e autovetores correspondentes
+         1. Esses componentes permitem escrever a expressão para os componentes principais
+         2. Esses componentes podem ser negativos, mas não os autovalores
+      4. Descartar PCs que contribuem pouco para a variância
+   7. Interpretação:
+      1. O valor do autovalor indica a porcentagem explicada da variância quando dividido pela variância total (soma dos autovalores)
+      2. Outra forma é comparar com os dados originais
+         1. Sabendo que os dados estão normalizados, o PC mede quantas vezes mais é a variância em relação ao original
+      3. A análise pode ser feita ao nível da observação
+         1. Normaliza-se esse dado então multiplicar cada variável pelos respectivos componentes do autovetor
+            1. Gera um valor para cada PC (resultado do produto escalar)
+      4. Cada componente do autovetor \(e_{ik}\) mede a importância da variável \(k\) para o PC \(i\), independentemente das outras variáveis
+         1. \(e_{ik}\) é proporcional ao coeficiente de correlação de \(PC_{i}\) e \(X_{k}\)
+            1. Coeficiente de correlação depende dos componentes dos autovetores e da variância
+         2. Medem apenas a contribuição univariada de uma variável \(X\) para um PC
+            1. Não indica a importância de \(X_{k}\) para um PC frente às demais variáveis
+            2. Por essa razão, aconselha-se olhar apenas para os componentes e não para as correlações
+   8. PCA entre grupos
+      1. Foram feitas comparações da média e do desvio-padrão dos PCs
+      2. Aplicou-se o teste de Levene para desvio de medianas
+7. Número de PCs
+   1. Não existe resposta definitiva
+      1. Utilizar proporção da variância explicada
+      2. Utilizar interpretabilidade dos componentes
+   2. Componentes associados com autovalores próximos de zero podem sugerir dependência linear nos dados
+   3. Uma forma de visualizar é um screeplot
+      1. Ordenando os autovalores dos maiores para os menores contra o número do PC
+      2. Procurar por um cotovelo nesse gráfico
+   4. Outra forma é manter apenas os autovalores com valores acima de 1
+      1. Implica que explicam ao menos mais do que \(1/p\) da variância
+   5. Nenhuma dessas heurísticas devem ser aplicadas indiscriminadamente
+8. Interpretação dos PCs amostrais
+   1. O valor absoluto do PC indica o tamanho da projeção do vetor (normalizado) no autovetor unitário associado
+   2. Resultado de trasladar a origem do sistema de coordenadas original para a média e depois rotacionar até que o gráfico passe pela direção de maior variância
+   3. Caso os autovetores seja idênticos, a representação geométrica está associada ao uma elipse de distância constante
+      1. Variância é homogênea em todas as direções
+9. Gráficos de PCs
+   1. Gráficos de PCs podem dar indicativos de hipóteses de normalidade
+      1. É importante checar a normalidade dos PCs antes de utilizá-los em outras aplicações
+      2. Diagramas de dispersão entre os primeiros PCs ou Q-Q para cada PC
+   2. O último PC pode ajudar a identificar observações suspeitas
+      1. Ele ajuda a identificar quão bem o primeiro se ajusta aos dados
+      2. Diagramas de dispersão entre os últimos PCs ou Q-Q para cada PC
+10. Inferência em amostras grandes
+    1. É preciso assumir que os autovalores são distintos e positivos
+    2. Mesmo que a hipótese de distribuição normal multivariada seja violada, os intervalos de confiança podem indicar a incerteza dos autovalores e dos autovetores
+    3. Para amostras grandes, os autovalores são independentemente distribuídos
+    4. Os autovetores são normalmente distribuidos sobre os autovetores populacionais correspondentes
+       1. Os componentes desses vetores são correlacionados e essa correlação depende da separação dos autovalores e do tamanho da amostra
+11. Qualidade dos PCs
+    1. Constroi-se um gráfico de elipse para os primeiros dois PCs
+       1. Elipse construída com base em um determinado nível de confiança
+          1. Valor de fronteira é dado por uma chi-quadrado
+          2. Os pontos fora dessa elipse podem indicar observações problemáticas, necessida seguir para a segunda etapa
+    2. Constrói-se um gráfico T2 com os últimos \(p-2\) PCs
+       1. O gráfico deve estar contido no intervalo de erro
+12. PCA com dados faltantes
+    1. A alternativa para PCA é incluir a covariância pareada dos casos completos (PairCov)
+       1. Ou da matriz de correlação (PairCorr)
+    2. A diferença em relação às etapas anteriores é computar a Matriz usando apenas os valores observados para cada par de variáveis
+    3. A hipótese implícita é que os dados faltantes são aleatórios
+       1. Ausência de correlação entre dados faltantes e variáveis observadas
+    4. A desvantagem é que pode gerar uma matriz que não é positiva-definida, o que permite que alguns autovalores sejam negativos
+       1. Dimensões com autovalores negativos não devem ser interpretados
+13. Etc:
+    1. O sinal dos coeficientes dos PCs podem estar reversos a depender da forma de implementação
+       1. Livro do Mainly usa R
+    2. Alguns pacotes de PCA podem estar computando os PCs se normalizando-os para que tenham variância unitária
+    3. Caso a matriz de covariância seja diagonal, não há nenhum ganho de se utilizar PCA
+    4. Diagnósticos de PC também podem ajudar para analisar a qualidade de regressões multivariadas
+
 
 * TODO Análise de correspondência e análise de correspondência canônica
 
@@ -181,8 +375,11 @@
 
 ** Outros materiais
 
+- Vídeo: https://youtu.be/UxsvTSG-pTc?si=hc85RW1j_YGnBifG
 - [[https://hedibert.org/wp-content/uploads/2015/03/AnaliseMultivariada-aula10.pdf][Análise de correspondência - Hidebert]]
-- [[https://www.youtube.com/watch?v=JOsB54GyOYY&list=PLmM_3MA2HWpZXwfy9vDz80VqlXkFz5S-E&index=48&pp=iAQB][Análise de correlação canônica - AMV]]
+- https://gavinsimpson.github.io/physalia-multivariate/02-tuesday/slides.html#9
+- Ver vídeo FactoMiner:  https://www.youtube.com/watch?v=vP4korRby0Q
+- https://www.ime.unicamp.br/~cnaber/aula_AC_Ana_Multi_2S_2020.pdf
 
 * TODO Análise de correlações canônicas
 
@@ -192,12 +389,16 @@
 - [cite/t:@manly_2024_multivariate] Ch 10
 ** Outros materiais
 
+- https://www.maxturgeon.ca/w20-stat7200/slides/canonical-correlation-analysis.pdf
+- [[https://www.youtube.com/watch?v=JOsB54GyOYY&list=PLmM_3MA2HWpZXwfy9vDz80VqlXkFz5S-E&index=48&pp=iAQB][Análise de correlação canônica - AMV]]
 - [[https://hedibert.org/wp-content/uploads/2015/03/AnaliseMultivariada-aula7.pdf][CCA - Hidebert]]
 - [[https://www.youtube.com/watch?v=XQzKG511fNc][CCA]]
 - [[https://www.youtube.com/watch?v=IbWOQ5DSN2M][CCA - UFF]]
 - [[https://www.youtube.com/watch?v=Pul1BiXUda0][CCA - R]]
+- https://kups.ub.uni-koeln.de/78788/1/CCA.pdf
+- https://zia207.quarto.pub/canonical-correlation%20-analysis.html
 
-* TODO Análise fatorial
+* Análise fatorial
 
 ** Temas obrigatórios
 
@@ -221,8 +422,10 @@
 - [[https://www.youtube.com/watch?v=WiN0g_02AYo][FA - UFF]]
 - [[https://github.com/mossr/machine_learning_book/blob/master/lectures/9%20Factor%20Analysis%20(cs229-notes9).pdf][Factor Analysis - Lecture Notes]]
 - [[https://www.youtube.com/watch?v=WV_jcaDBZ2I&list=PLwJRxp3blEvaOTZfSKXysxRmi6gXJf5gP][Playlist Factor Analysis]] (indicação Marcelo)
+- https://zia207.quarto.pub/factor-analysis.html
 
-* TODO Processo de análise fatorial
+
+* Processo de análise fatorial
 
 ** Temas obrigatórios
 

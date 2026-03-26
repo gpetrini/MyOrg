@@ -1,0 +1,116 @@
+#+title:      Does Labour Work? A Macroeconomic Perspective on Work Time Reduction
+#+date:       [2026-01-08 Thu 11:40]
+#+filetags:   :bib:empirical:made:wtr:
+#+identifier: 20260108T114001
+#+reference:  pawlowski_2023_does
+
+[[denote:20260108T111817][Green ABM for Working Time Reduction]]
+
+* FISH-5SS
+
+
+** 5SS
+
+[cite/t:@pawlowski_2023_doesa] presents empirical evidence (panel SVAR) in favor of the work-sharing hypothesis, in which a decrease in working hours also decrease unemployment. In addition, they show the positive effects on growth, but the mechanism is not by means of change in the wage-share. The authors also report that low-income OECD countries have a larger effect over growth and unemployment, but those same countries are the ones with higher working hours.
+
+
+** Background and motivation
+
+- As a background, they starts positioning the debate historically, in which child labor was still disseminated
+- Focus both on neoclassical and [[denote:20250205T095922][Post Keynesian Economics]] perspectives
+  - In either cases, [[denote:20240906T150431][Technological change]] constrains growth
+  - In neoclassical terms, it is only a matter of increase of the labor cost
+    - So it increases real wage, which offsets any potential positive effects on output
+    - In interest rate increases to control inflation, unemployment would be even larger
+    - Overall, the wage-share increases
+- Most papers focus on microeconomics effects, while the macroeconomic aspects are not clear
+
+** Supporting Ideas and hypothesis
+
+- The authors hypothesize that  [[denote:20260326T110324][Working Time Reduction]] would increase real GDP growth, reduce unemployment and *increase* wage-share
+- Negative health effects associated with longer working hours
+- Increase in satisfaction correlated with shorter working hours
+- Productivity tends to increase with reducing working hours
+- Not all [[denote:20260326T110324][Working Time Reduction]] are the same
+  - This could be achieved by reducing working hours or by increasing the time in education
+  - A relevant one is work sharing: Decrease in working hours that decrease unemployment
+- The underlying hypothesis is that the effects [[denote:20260326T110324][Working Time Reduction]] can be compensated with more workers
+  - As a consequence, unemployment is expected to decrease
+  - One important assumption is that there is no negative effect over the real compensation of workers
+    - On the contrary, the wages seems to increase
+- Reduction in the working hours, increases productivity as it reduces work-related injuries
+
+** Purpose, Relevance, and Contribution
+
+- [[denote:20250204T172907][Empirical]] paper focused on the macroeconomic effects of [[denote:20260326T110324][Working Time Reduction]]
+
+
+** Methodology
+
+- Country-level [[denote:20230216T235156][Panel Data]]; SVAR model
+  - Balanced panel with 18 [[denote:20250204T173324][OECD]] countries from 2000 to 2021
+  - Variables: Work hours, GDP growth, unemployment and wage-share
+    - Working hours considers only effective working hours
+    - Also evaluates working hours by sex and economics activity
+- Neoclassical identification: Growth, unemployment, wage-share, working hour
+  - Production contemporaneously affects unemployment and wages
+  - Unemployment only affect wages
+  - Wages is not contemporaneous to the other variables (production is driven by supply)
+- Post-Keynesian ordering: Wage-share, Growth, unemployment, working hour
+- Working time cannot affect the current value of the other variables
+- Dummy variables capture both the financial crisis and the Covid-19 pandemic
+
+
+** Results
+
+- [[denote:20260326T110324][Working Time Reduction]] increases GDP growth, reduces unemployment; functional [[denote:20250202T113822][Income Distribution]] remains unchanged
+  - This result holds for the neoclassical ordering as
+  - A decrease in working hours also impacts the working hours negatively
+- Effects over GDP growth and unemployment are larger for low-income groups
+  - However, those countries are the ones that work more; so there is a diminishing return effect for WTR
+  - The effects over wage-share remains not significant for both groups
+- Evidence towards the work-sharing hypothesis
+- Besides the positive effect on growth, the expected mechanism is not operative as the wage-share channel is not significant
+
+** Interesting findings and not categorized stuff
+
+- [[denote:20260326T110324][Working Time Reduction]] policies might affect unemployment rate by changing the composition of the labor force
+  - Ex: Spending more time with education, would also decrease the labor force.
+- The definition of wage-share depends national income rather than on the value of production within the nation's borders
+  - WID defines as in the first approach
+  - Besides that, the authors opt to use the standard definition to be more consistent with the theoretical model
+- SVAR cannot be estimated, but rather, identified by means of the estimated VAR model
+  - This estimation based on a VAR is not interpretable
+- The Impulse Response Function is the Jacobian of the endogenous variables in terms of the structural shocks
+
+
+** Critics and questions
+
+- It is unclear why working hours cannot have any contemporaneous effects, regardless of the theoretical approach
+- The working hours might no be an endogenous variable
+  - It might be more relevant to treat it as an institutional variable
+  - Thus, they are not modeling a policy change
+  - In the end of the work, the authors themselves recognize that the working hours could be modeled as a permanent exogenous shock
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+We conduct an empirical study on work time reduction and its accompanying macroeconomic outcomes across countries. Specifically, we frame the analysis in the context of  neoclassical and post-Keynesian economic theory, and their differing predictions on work  time reduction, real GDP growth, unemployment and functional distribution. We employ  a structural vector autoregression (SVAR) analysis on country-level quarterly panel data.  Modelling structural relationships between our macroeconomic variables, we find that a  negative shock to work time induces growth, reduces unemployment and leaves functional  inequality unaffected during the years to follow. Thus, we corroborate the positive effects  of work time reduction described in the literature.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+
+
+* References
+:PROPERTIES:
+:ID:       e48e9d43-522f-4beb-9bf5-b5a4d5b4a958
+:END:
+
+- Check Calmfors and Hoel, 1988

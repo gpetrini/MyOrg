@@ -1,0 +1,70 @@
+#+title:      Machine Learning Models in Evidence Production for Public Policies
+#+subtitle: Analysis of the Bolsa Família Program as an Instrument to Combat Hunger
+#+date:       [2026-03-17 Tue 14:17]
+#+filetags:   :datadriven:development:machinelearning:projects:research:
+#+identifier: 20260317T141722
+
+* FISH-5SS
+
+** 5SS
+
+** Background and motivation
+
+- This is a project written by Luna and Canul-Reich and submited to Faepex (More Women in Research).
+- Increase in computational power enlarges the uses of ML methods
+- Without proper training and interpretation, GenAI might lead to miss-applications of AI tools
+- AI and ML have a high performance, but faces a low level of interpretability
+  - The explainability of those tools might be more relevant than results per se in the public debate
+  - An parameter in a complex AI model has no interpretability (at odds with econometrics)
+
+** Supporting Ideas and hypothesis
+
+- Hunger and food insecurity are persistent problems in Latin America
+  - There is a recent fluke in the increase of hunger
+  - This intesifies (and is intesified) by the strong inequality
+- Brazil and Mexico share similarity in terms of the trajectory of nutritional and food insecurity
+
+** Purpose, Relevance, and Contribution
+
+- Food and nutricional insecurity
+- Use interpretable ML and explainable AI to generate *evidence*
+- Scope: Bolsa Família as a case study
+- Targets generating evidences assisting public policies
+- Originality: Analysis of income transfer program and IAN via ML
+- Objectives: Evaluate the potential benefits of AI in the production of interpretable empirical evidence
+  - Mapping the AIs being used for public-policies guidance decisions
+  - Classify the proposed methods among the existing alternatives in the literature
+  - How changes in the investments in the PBF are associated with IAN in Brazilian municipalities? (PNADc)
+
+** Methodology
+
+- Interdisciplinary, tightening the institutional relationship between entities
+  - Increases the presence of women in the debate
+- Explainable AI
+- Interpretable ML
+- Municipality date will be retrieved from PNADc and combined with information from the Census
+- Starting with decision tree and Random Forests
+  - Interpretable techniques (LIME) is be then applied to the results
+
+** Expected Results
+
+** Questions and critics
+
+- Unclear why 2023
+- It would be interresting to map (if any) differences after the recreation of PBF (post Auxílio Brasil)
+
+** Interesting findings and not categorized stuff
+
+- I tried in the past to use Decision Trees an XGBoost to generate interpretable calibration configurations
+  - XGboost are less likelly to be interpretable (unless without proper finetunning)
+  - Random Forest seems to be less interpretable than Decision Trees
+- Understandable models are the ones that humans can understand without further methods or aids
+  - Explainable models needs more structure to be interpretable
+    - LIME allows the interpretation of explainable models
+    - It only generates approximations about the model predictions
+    - A kriging meta-model is an explainable model by means of surface responses
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+#+END_ABSTRACT
