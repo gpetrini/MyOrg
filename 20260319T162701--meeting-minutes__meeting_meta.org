@@ -43,3 +43,108 @@
   - CME não term muita liquidez
   - Para os dados brasileiros, as séries não são muito longas
   - Dificuldade em encontrar dados da bolsa
+
+** Thiago Barros :IC:
+
+*** Alinhamento[2026-03-31 Tue]
+
+- Aluno mostrou  interesse por ABM por parecer uma abordagem mais realista
+  - Em alguma medida, deu a impressão de que poderia ser uma oposição à econometria
+    - Foi discutido que não é o caso
+- Em especial, o aluno tem interesse em analisar mobilidade social entre gerações
+  - Dentre os temas, destacou-se o interesse em distribuição de renda
+  - Foi mencionada a dificuldade em tratar de questões geracionais
+- Foi sugerido que o aluno refletisse melhor sobre o objetivo do projeto
+- O aluno foi consultado sobre as linguagens de programação que teria maior facilidade, destacando R e python (nessa ordem)
+  - Foi mencionado que existem modelos que estão implementados em outras linguagens
+- Ficou combinado que iriamos adicionar textos básicos para que o aluno esteja a par da metodologia
+- O aluno irá levantar fatos estilizados sobre Brasil para então discutí-los via ABM
+  - Foi pensado em listar alguns MWE (ver nota seguinte)
+  - O aluno também deve definir o período de análise e mapear os mecanismos a serem discutidos
+- Para a próxima reunião, ficou concordado definir a perrgunta de pesquisa e o período de análise
+*** Definição da ideia e objetivo do projeto [2026-04-07 Tue]
+
+- Sugestões:
+  - Partir do modelo sugarscape em que políticas distributivas são pensadas em termos da disponibilidade, acesso e uso de recursos
+    - Seria possível pensar uma política de valorização real do salário mínimo como um menos consumo dos recursos na cauda inferior
+    - Seria possível introduzir políticas redistributivas
+    - Pensar também em políticas de mobilidade social (educação ampliando visão)
+    - Recursos
+      - Livro-texto: https://greenteapress.com/complexity2/thinkcomplexity2.pdf
+      - Código: https://github.com/AllenDowney/ThinkComplexity2/blob/master/notebooks/chap09.ipynb
+    - Considerações:
+      - Pontos positivos:
+        - Simplicidade de execução
+        - Modelo canônico na literatura ABM
+        - Permite aprender elementos mais a fundo
+        - Possui discussão de distribuição de renda no modelo original
+        - Eventualmente permitiria calibragem inspirada no Brasil
+          - Definir probabilidade de morte
+          - Definir choque a partir do momento que o Gini atingiu valores similares aos do Brasil
+      - Pontos negativos:
+        - Excessivamente simplista e indiretamente econômico
+        - Desenho fiscal não está disponível
+          - https://ar5iv.labs.arxiv.org/html/2501.08573
+          - https://greenteapress.com/complexity/html/thinkcomplexity012.html
+          - https://pmc.ncbi.nlm.nih.gov/articles/PMC10453640/ (talvez)
+          - https://link.springer.com/article/10.1140/epjb/e2020-10308-x (talvez)
+          - https://juliadynamics.github.io/AgentsExampleZoo.jl/dev/examples/taxsystem/
+        - Implementado majoritariamente em netlogo, com algumas aplicações em python e menos em R
+  - Modelos cinéticos (Yard-Sale ou Bortzmann)
+    - Estes modelos são ainda mais simplistas, mas permitem maior desenho de política econômica
+    - Poucos deles possuem código disponível
+    - Alguns modelos são especificados (e calibrados) a partir de uma teoria neoclássica
+    - Affine Wealth Model:
+      - Parece uma extensão interessante e passível de ser calibrável, mas não encontrei o código em nenhum lugar
+        - O artigo é bastante pesado em termos matemáticos
+  - Modelo da Laura Carvalho com Di Guilmi: https://link.springer.com/article/10.1007/s00191-019-00628-9
+    - Intuição econômica mais clara, mas é um modelo maior
+    - Esse é o modelo que mais permitiria tratar de elementos distributivos
+    - Já possui um exercício de política fiscal (zera imposto sobre salários)
+    - Código sob requisição (provavelmente em matlab)
+      - Eu tenho uma versão eventualmente mais simplificada que inclui UBI (mas em LSD)
+        - Paper que repliquei: Carvalho L, Di Guilmi C (2014) Income inequality and macroeconomic instability: a stock-flow consistent approach with heterogeneous agents. CAMA Working Papers 2014-60 Centre for Applied Macroeconomic Analysis, Crawford School of Public Policy, The Australian National University
+        - Esta versão mais simplificada não tem governo (foi adicionado quando fizemos o trabalho de OIDT)
+          - Precisaria encontrar o código em LSD e ver como implementar em R
+      - Provavelmente é um modelo que tem bastante estrutura (parte heterogênea tem papel menos)
+
+* Pós-Graduação
+
+** HO341 - Métodos Quantitativos aplicados à economia
+
+*** Planejamento da disciplina [2026-03-31 Tue]
+
+- Presentes:
+  - Rosângela Balini
+- No passado, a disciplina era focada em inferência e indicadores socioeconômicos
+  - Estatística descritiva
+  - Inferência
+  - Estimadores
+  - Intervalos de confiança
+  - Regressão linear simples
+- Sugestão de reprensar o curso em função das áreas de concentração
+  - Tratar de regressão multivariada, indicadores socioeconômicos e uso de base de dados
+  - Talvez o perfil dos alunos não permita avançar em termos de testes de hipótese
+- Preparar os alunos para utilizarem bases de dados, consultando professores de diferentes áreas de concentração
+  - Padrões de desenvolvimento: Célio e Ana Rosa
+  - Economia Social e do Trabalho: Carol Baltar
+  - Regional: Fernando Macedo
+  - História econômica: Nelson
+  - Agrícola
+- Foi sugerido também a construção de mapas
+
+
+* Burocracias :@unicamp:
+
+** Credenciamento na Pós-Graduação
+
+- Presentes:
+  - Rosângela Balini
+- Todos os professores participam da Pós-Graduação
+  - Alguns estão credeciados como permanentes enquanto outros estão como colaboradores
+    - Tomar cuidado para que eu ao menos esteja credenciado como colaborador
+- Foi argumentado que o foco é ter um quadro estável em cada quadriênio
+  - Também foi mencionado que essa distinção pouco importa
+    - Uma coisa é o credenciamento para a Capes e outra é o vínculo com a Unicamp
+- O oferecimento das eletivas pode ser feita para os dois programas
+- Poucos professores estão cadastrados nos dois programas
