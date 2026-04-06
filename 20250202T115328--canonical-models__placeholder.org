@@ -1,10 +1,29 @@
-:PROPERTIES:
-:ID:       434076e6-3bce-497b-ade1-7f8e3fde763e
-:END:
 #+title:      Canonical Models
 #+date:       [2025-02-02 dom 11:53]
 #+filetags:   :placeholder:
 #+identifier: 20250202T115328
 #+OPTIONS: num:nil ^:{} toc:nil
 
-This is a placeholder for some cannonical models.
+This is a placeholder for some canonical models.
+
+#+BEGIN: denote-backlinks :excluded-dirs-regexp nil :sort-by-component nil :reverse-sort nil :id-only nil :this-heading-only nil :include-date nil :regexp "_canonicalmodels"
+- [[denote:20201204T000000][The Financial Instability Hypothesis: An Interpretation of Keynes and an Alternative to "Standard" Theory]]
+- [[denote:20210212T000003][Growth Rate and Level Effects, the Stability of the Adjustment of Capacity to Demand and the Sraffian Supermultiplier]]
+- [[denote:20240531T175705][DSGE]]
+- [[denote:20240906T163156][Shocks and Frictions in US Business Cycles: A Bayesian DSGE Approach]]
+- [[denote:20250202T114657][Tobin's Q]]
+- [[denote:20250202T121100][General Equilibrium Model]]
+- [[denote:20250202T121258][Endogenous Growth]]
+- [[denote:20250202T122430][Financial Accelerator Model]]
+- [[denote:20250203T175458][Hotelling Competition]]
+- [[denote:20250203T180258][Keynesian Multiplier]]
+- [[denote:20250203T181356][Minskian Growth Models]]
+- [[denote:20250203T182022][Neo-Goodwin Model]]
+- [[denote:20250203T182114][Neo Kaleckian Model]]
+- [[denote:20250203T183616][Real Buisiness Cycle]]
+- [[denote:20250203T184155][Supermultiplier Models]]
+- [[denote:20250205T154308][Emergent Dynamics of a Macroeconomic Agent Based Model with Capital and Credit]]
+- [[denote:20250205T162456][Schumpeter meeting Keynes: a policy-friendly model of endogenous growth and business cycles]]
+- [[denote:20250206T112902][A Rational Route to Randomness]]
+- [[denote:20250207T095201][EUBI]]
+#+END:

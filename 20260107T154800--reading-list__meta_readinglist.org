@@ -5,12 +5,10 @@
 
 * Reading list
 
-#+BEGIN: denote-backlinks :excluded-dirs-regexp nil :sort-by-component nil :reverse-sort nil :id-only nil :this-heading-only nil :include-date nil :regexp "_todo"
+#+BEGIN: denote-backlinks :excluded-dirs-regexp nil :sort-by-component nil :reverse-sort nil :id-only nil :this-heading-only nil :include-date nil :regexp "_todo" :not-regexp "_journal"
 - [[denote:20260107T155135][Tax-Financed Green Policies and Income Inequality in an Agent-Based Model]]
 - [[denote:20260107T161554][Environmental Impacts of Productivity-Led Working Time Reduction]]
-- [[denote:20260108T113327][The Role of Labor in a Socio-Ecological Transition: Combining Post-Keynesian and Ecological Economics Perspectives]]
 - [[denote:20260108T113709][Marx, Keynes and the Future of Working Time]]
-- [[denote:20260108T113858][Post-Growth Transition, Working Time Reduction, and the Question of Profits]]
 - [[denote:20260108T114105][Considerações Sobre a Redução Da Jornada de Trabalho: Criação de Postos de Trabalho e Aumento Da Produtividade Dos Trabalhadores e Das Trabalhadoras]]
 #+END:
 
@@ -22,4 +20,51 @@
 - [[denote:20230216T235205][PhD Dissertation Reading List]]
 - [[denote:20230216T235206][Chapter QCA]]
 - [[denote:20230216T235207][Chapter ABM]]
+#+END:
+
+
+* Journals reading list
+
+#+BEGIN: denote-links :regexp "_journal"
+- [[denote:20250204T172746][Cambridge Journal of Economics]]
+- [[denote:20250204T173134][Review of Political Economy]]
+- [[denote:20250204T173844][Politics and Society]]
+- [[denote:20250204T185459][Comparative Politics]]
+- [[denote:20250204T190341][Journal of Institutional Economics]]
+- [[denote:20250204T190636][IMF]]
+- [[denote:20250204T190803][International Journal of Central Banking]]
+- [[denote:20250204T191045][International Real Estate Review]]
+- [[denote:20250204T191409][Housing Studies]]
+- [[denote:20250204T192029][Journal of International Economics]]
+- [[denote:20250204T192331][Journal of Real Estate Research]]
+- [[denote:20250204T193239][Structural Change and Economic Dynamics]]
+- [[denote:20250205T095839][Review of Evolutionary Political Economy]]
+- [[denote:20250205T100454][Review of Urban & Regional Development Studies]]
+- [[denote:20250205T124715][Economia Politica]]
+- [[denote:20250205T125134][Journal of Finance]]
+- [[denote:20250205T153446][Research Policy]]
+- [[denote:20250205T154234][Journal of Economic Dynamics and Control]]
+- [[denote:20250205T155218][European Economic Review]]
+- [[denote:20250205T160641][Journal of Economic Behavior & Organization]]
+- [[denote:20250205T161816][The Review of Financial Studies]]
+- [[denote:20250205T163840][American Economic Review]]
+- [[denote:20250205T164522][Journal of Evolutionary Economics]]
+- [[denote:20250205T171409][Journal of Financial Economics]]
+- [[denote:20250205T174704][Economic Inquiry]]
+- [[denote:20250205T175101][Contributions to Political Economy]]
+- [[denote:20250205T175724][Metroeconomica]]
+- [[denote:20250205T180203][Economia e Sociedade]]
+- [[denote:20250205T180416][International Review of Applied Economics]]
+- [[denote:20250205T180642][Journal of Post Keynesian Economics]]
+- [[denote:20250206T100825][Financial Analysts Journal]]
+- [[denote:20250206T103734][NBER]]
+- [[denote:20250206T104418][Journal of Behavioral and Experimental Finance]]
+- [[denote:20250206T122301][Journal of Economic Methodology]]
+- [[denote:20250206T125006][Journal of Money, Credit and Banking]]
+- [[denote:20250206T130152][Plos One]]
+- [[denote:20250206T141536][Journal of Economic Literature]]
+- [[denote:20250206T143225][Journal of Public Economic Theory]]
+- [[denote:20250206T143903][Journal of Economic Interaction and Coordination]]
+- [[denote:20260403T142933][Ecological Economics]]
+- [[denote:20260403T171728][European Journal of Economics and Economic Policies: Intervention]]
 #+END:

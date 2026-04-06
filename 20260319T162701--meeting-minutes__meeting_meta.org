@@ -107,6 +107,15 @@
         - Esta versão mais simplificada não tem governo (foi adicionado quando fizemos o trabalho de OIDT)
           - Precisaria encontrar o código em LSD e ver como implementar em R
       - Provavelmente é um modelo que tem bastante estrutura (parte heterogênea tem papel menos)
+  - Modelos do netlogo (não publicados)
+    - Modelo netlogo que trata dessas questões: https://www.modelingcommons.org/browse/one_model/7645#model_tabs_browse_info
+      - Modelo funciona no navegador
+      - Talvez fosse o caso de adicionar cálculo do Gini e implementar outras formas de taxação
+      - Este modelo permite tratar de gerações (aparentemente)
+    - Modelo de microsimulação sem interação: https://www.comses.net/codebases/57ed3c4d-4e0a-452f-8963-bb215aa33614/releases/1.0.0/
+    - Modelo com subsídios: https://www.comses.net/codebases/883171d8-1dcc-4740-992b-2d7f785a9194/releases/1.0.0/
+    - Modelo focado em taxação: https://www.modelingcommons.org/browse/one_model/5997#model_tabs_browse_nlw
+      - Este parece ser dos modelos mais promissores
 
 * Pós-Graduação
 

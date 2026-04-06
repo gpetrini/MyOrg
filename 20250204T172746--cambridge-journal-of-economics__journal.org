@@ -2,3 +2,12 @@
 #+date:       [2025-02-04 ter 17:27]
 #+filetags:   :journal:
 #+identifier: 20250204T172746
+
+
+#+BEGIN: denote-backlinks :excluded-dirs-regexp nil :sort-by-component nil :reverse-sort nil :id-only nil :this-heading-only nil :include-date nil :not-regexp "_todo"
+- [[denote:20210212T000001][Inflation and economic growth in an open developing country: the case of Brazil]]
+- [[denote:20211027T155517][The double bubble at the turn of the century: technological roots and structural implications]]
+- [[denote:20240707T182939][Demand-led growth and accommodating supply]]
+- [[denote:20250204T192826][Minsky's induced investment and business cycles]]
+- [[denote:20260107T154800][Reading list]]
+#+END:

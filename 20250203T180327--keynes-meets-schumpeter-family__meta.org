@@ -1,9 +1,10 @@
 #+title:      Keynes meets Schumpeter Family
-#+date:       [2025-02-03 seg 18:03]
+#+date:       [2025-02-03 Mon 18:03]
 #+filetags:   :meta:
 #+identifier: 20250203T180327
 #+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
 #+OPTIONS: num:nil ^:{} toc:nil
+
 
 * <2023-10-27 sex> Roventini's lecture on the K+S models
 

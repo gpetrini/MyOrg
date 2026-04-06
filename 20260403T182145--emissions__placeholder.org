@@ -1,0 +1,6 @@
+#+title:      Emissions
+#+date:       [2026-04-03 Fri 18:21]
+#+filetags:   :placeholder:
+#+identifier: 20260403T182145
+
+This page also refers to Green House Emissions (GH emissions) and carbon emissions.

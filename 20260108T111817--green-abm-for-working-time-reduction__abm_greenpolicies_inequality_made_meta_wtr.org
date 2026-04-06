@@ -3,9 +3,38 @@
 #+filetags:   :abm:greenpolicies:inequality:made:meta:wtr:
 #+identifier: 20260108T111817
 
+*Important:* This is a hardlink (generated with =ln=) from =gpetrini= personal file system.
+Potential conflicts will arise if not properly managed from all sides (PC, server, and git).
+
 * Backlinks
 
 #+BEGIN: denote-backlinks :excluded-dirs-regexp nil :sort-by-component nil :reverse-sort nil :id-only nil :this-heading-only nil :include-date nil :not-regexp "_todo"
+- [[denote:20260107T161554][Environmental Impacts of Productivity-Led Working Time Reduction]]
 - [[denote:20260108T094627][Challenging the Working Time Reduction and Wages Trade-off: A Simulation for the Spanish Economy]]
+- [[denote:20260108T113327][The Role of Labor in a Socio-Ecological Transition: Combining Post-Keynesian and Ecological Economics Perspectives]]
+- [[denote:20260108T113858][Post-Growth Transition, Working Time Reduction, and the Question of Profits]]
 - [[denote:20260108T114001][Does Labour Work? A Macroeconomic Perspective on Work Time Reduction]]
 #+END:
+
+* Brain dumps
+
+- One ideia is to repeat the scatter plot from [cite/t:@cieplinski_2021_environmental] between effective and desired working hours
+- It is important to think if it is reasonable to assume if workers are willing to change wage gains (due to productivity) into more free time
+- Since we will have a closed-economy, we might have only positive effects in terms of GDP
+
+
+* To keep in mind
+
+- Capital good firms hire workers paying the sectoral average wage
+  - Changing how wages are defined on this sector, might affect all firms at once
+- Bonuses are paid if the net profit rate is above an exogenously given rate (=Pi2rateAvg=) and paid as a fraction \(\psi_6\) of net profits
+  - We can turn off this by setting either \(\psi_{6}\) to zero (safier) or setting =Pi2rateAvg= to very high value (possibly leading to spikes)
+- Workers apply up to \(\omega_{U} = 10\) firms at a time
+  - Unsure if this parameter is relevant for the WTR scenario
+- If unemployed, all workers recieve the same benefit (either unemployment benefit or subsistence wage)
+- In addition to the reserve wage (requested wage in the code), there is also the satisfaction wage (=_wS=)
+- The definition of the minimum wage differs from the institutional one
+  - Minimum wage is considered on the matemathical sense (a numeric floor that is never updates)
+- The baseline runs consider the simplest financial sector possible
+- For simplicity, we assume a fixed number of firms
+  - It is possible to relax this assumption, but the financing of the new net entrants should be better calibrated [opinion]

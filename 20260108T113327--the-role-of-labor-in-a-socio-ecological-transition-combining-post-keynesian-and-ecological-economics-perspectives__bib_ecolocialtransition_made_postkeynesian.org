@@ -1,0 +1,84 @@
+#+title:      The Role of Labor in a Socio-Ecological Transition: Combining Post-Keynesian and Ecological Economics Perspectives
+#+date:       [2026-01-08 Thu 11:33]
+#+filetags:   :bib:ecolocialtransition:made:postkeynesian:
+#+identifier: 20260108T113327
+#+reference:  strunk_2022_role
+
+[[denote:20260108T111817][Green ABM for Working Time Reduction]]
+
+Journal: [[denote:20260403T171728][European Journal of Economics and Economic Policies: Intervention]]
+
+* FISH-5SS
+
+
+** 5SS
+
+
+** Background and motivation
+
+- There is no unifying [[denote:20250205T095922][Post Keynesian Economics]] theory of labor
+  - It is normally a residual from the demand-side (from goods market)
+    - Thus, labor market is not a market in a Walrasian sense
+  - Labor suply, for instance, is not even modeled
+  - This might be due to the fact that those theories often focus on macroeconomic aspects, while labor market has many microeconomic determinants
+- It proposes that [[denote:20250205T095922][Post Keynesian Economics]] and [[denote:20250202T122013][Ecological Economics]] have commonalities in rejecting some assumptions of [[denote:20250205T104529][Mainstream Models]]
+  - However, when accessing the labor market [[denote:20250202T122013][Ecological Economics]] often uses neoclassical assumptions
+- GDP = Employment x Labor productivity x working hours $\Rightarrow$ Employment = GDP / (Labor Productivity x Working Hours)
+  - To employment to be kept constant while productivity grows, either GDP needs to increase or working hours need to be reduced ([[denote:20260326T110324][Working Time Reduction]])
+- [[denote:20250202T122013][Ecological Economics]] often point out a [[denote:20260403T173536][Productivity Trap]] in which a higher productivity growth that is not followed by an increase in output would necessarily generate an increase in unemployment
+
+** Supporting Ideas and hypothesis
+
+
+** Purpose, Relevance, and Contribution
+
+- This paper aims to offer a [[denote:20250205T095922][Post Keynesian Economics]] labor theory to further integrate into [[denote:20250202T122013][Ecological Economics]] macroeconomic modeling
+  - One key ideia of [[denote:20250202T122013][Ecological Economics]] is decoupling labor and income (as in UBI)
+- This paper seems to offer a handshake between different schools of thoughts rather than propoasing something new
+  - It also connects with other heterodox propoasals, such as the Job Guarantee and the Green New Deal
+  - For building a Green WRT-ABM, it does not seems very relevant ([2026-04-03 Fri])
+
+
+** Methodology
+
+- Review of literature, evaluating elements from the [[denote:20250205T095922][Post Keynesian Economics]] could enrich the ecological economic discussion
+
+
+** Results
+
+- Determination of labor demand: Involuntary unemployment as a result of lack of [[denote:20240708T155553][Effective Demand]]
+- Determination of labor supply: Social necessity to work
+  - Income is derived from wages, so people need to work in order to survive as an opposition between work and leisure
+    - As a contrast, workers face a take-it-or-leave-it instead of a negatiating scenario
+  - This is the behavioral aspect of the theory in which there is a hierarchy of needs and consumption is specified in terms of satisfaction and emulation
+    - So work is a social necessity, not a vital one
+- Supply and demand interactions:
+  - Hobbesian production: Labor contracts are a power relationship
+    - A fair and Walrasian negotiation would only occur during full employment
+    - This allows for the modeling in terms of [[denote:20230216T235158][Inflation and Conflicting Claims]]
+  - Mediating policies: institutions and policies can change the bargain power between classes
+
+** Interesting findings and not categorized stuff
+
+- When moving towards a green AB-WTR model, it should be considered that higher working hours also mean higher energy costs
+
+
+** Critics
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+This article investigates the role of labor in post-Keynesian economics and proposes an integration with ecological macroeconomics. Although post-Keynesians have to date not engaged extensively with environmental limits, there is an increasing interest in modeling policy proposals by ecological economists. While ecological and post-Keynesian economists share many ways of conceptualizing labor that are distinct from the mainstream, it is unclear how these feed into modeling, since post-Keynesians model labor as a residual and not as a policy variable per se. In fact, post-Keynesians have traditionally focused on targeting employment via targeting aggregate goods demand, rather than targeting it directly. This paper argues that by complementing this demand-side view with post-Keynesian perspectives on labor supply, one can arrive at a post-Keynesian labor theory that offers entry points for ecological theorizing.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+
+
+* References

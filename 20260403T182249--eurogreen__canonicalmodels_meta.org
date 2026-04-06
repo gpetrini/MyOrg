@@ -1,0 +1,4 @@
+#+title:      Eurogreen
+#+date:       [2026-04-03 Fri 18:22]
+#+filetags:   :canonicalmodels:meta:
+#+identifier: 20260403T182249

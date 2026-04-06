@@ -2,3 +2,11 @@
 #+date:       [2025-02-05 qua 17:57]
 #+filetags:   :journal:
 #+identifier: 20250205T175724
+
+
+#+BEGIN: denote-backlinks :excluded-dirs-regexp nil :sort-by-component nil :reverse-sort nil :id-only nil :this-heading-only nil :include-date nil :not-regexp "_todo"
+- [[denote:20250205T175842][Episodic Incidence of Harrodian Instability and the Kaleckian Growth Model: A Markov-switching Approach]]
+- [[denote:20250206T120757][Demand-led Growth with Endogenous Innovation]]
+- [[denote:20250206T144818][Heuristic Expectation Formation and Business Cycles: A Simple Linear Model]]
+- [[denote:20260107T154800][Reading list]]
+#+END:

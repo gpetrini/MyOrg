@@ -1,0 +1,92 @@
+#+title:      Environmental Impacts of Productivity-Led Working Time Reduction
+#+date:       [2026-01-07 Wed 16:15]
+#+filetags:   :bib:ghgemissions:made:scaleeffect:socialinnovation:workingtime:
+#+identifier: 20260107T161554
+#+reference:  cieplinski_2021_environmental
+
+[[denote:20260108T111817][Green ABM for Working Time Reduction]]
+
+
+* FISH-5SS
+
+
+** 5SS
+
+
+** Background and motivation
+
+- There is a positive correlation between working time and environmental degradation
+
+
+** Supporting Ideas and hypothesis
+
+- [[denote:20260326T110324][Working Time Reduction]] achieved in terms of labor productivity increase
+- Interaction between WRT and GDP performance might prevent better results in terms of [[denote:20260403T182145][Emissions]]
+- Productivity-led WTR implies that the growth rate of WTR should be proportional to productivity growth: \(g_{WTR} = -g_{A}\)
+- The model has several worker groups, different industries, and uses IO tables
+- Workers accept to trade all potential increases in their wages due to productivity gains by more free time, keeping the output per worker constant
+  - This would lead to a higher scale effect
+  - This is further abandoned
+
+** Purpose, Relevance, and Contribution
+
+- This paper connects the discussion of [[denote:20260326T110324][Working Time Reduction]] with carbon [[denote:20260403T182145][Emissions]]
+- Regarding building a [[denote:20260108T111817][Green ABM for Working Time Reduction]], this paper offers a good starting point on how to implement a WTR modelling design ([2026-04-03 Fri])
+  - This paper also presents a simplified version of the model, highlighting the results in terms of wage bill growth, which are very likelly to be the ones that will occur in the [[denote:20250205T162456][Schumpeter meeting Keynes: a policy-friendly model of endogenous growth and business cycles]]
+
+
+** Methodology
+
+- [[denote:20260403T182249][Eurogreen]] for France ([[denote:20250204T173324][OECD]]), comparing with different scenarios:
+  - Higher time affluence
+    - WTR proportional to the increase in the labor productivity
+    - Time affluence could lead to less ecofriendly choices (for example, travelling)
+    - In this scenario, labor productivity is not passed through higher wages, but only into fewer working hours
+  - WTR implemented world-wide, capturing the exports channel
+    - Modeled in terms a contraction in exports
+    - This scenario evaluates whether the effects from WTR are results on changes in the trade balance
+  - Constrained WTR by means of binding [[denote:20250202T121115][Fiscal Policy]] rule
+    - On top of the world-wide WTR, following the European fiscal policy rule
+
+** Results
+
+- WTR reduces [[denote:20260403T182145][Emissions]] while improves the employment conditions
+  - A decrease in domestic prices increases exports, which offsets the environmental benefits (scenario 1)
+  - The worsening in the employment conditions are due to the more restrict [[denote:20250202T121115][Fiscal Policy]] rule (scenario 3), which is triggered by an increasing defict due to a decrease in exports (scenario 2)
+    - Therefore, there might be a conflict between social and environmental goals
+  - It shows that a social innovation might be as efficient as a [[denote:20250202T120757][Innovation Diffusion]] alternative
+- Sensitivity of wage to productivity affects the relationship between [[denote:20250202T113822][Income Distribution]] and [[denote:20260403T182145][Emissions]]
+- The WTR scenario in which workers accept not increasing their wages, shows a decrease in the wage share due to a decrease in the wage bill
+  - An increase in the hourly wages revert this trend
+- Gini decreases as there are more employed workers
+
+** Interesting findings and not categorized stuff
+
+- [[denote:20260326T110324][Working Time Reduction]] was implemented in France, but not effective impact on working hours (compensated with overtime)
+- [[denote:20260326T110324][Working Time Reduction]] could also conteract the inequality in terms of working hours
+  - One ideia is to repeat the scatter plot between effective and desired working hours
+- The idea that a technological solution might solve the environmental issue might be infhered from the amount of funds dedicated to [[denote:20240906T150431][Technological change]] rather than other solutions
+
+
+** Critics and questions
+
+- Properly understand the decline of the wage bill growth rate
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+This contribution shows that a relevant curtailment of carbon emissions results from productivity-led working time reduction, i.e. increases in labour productivity converted into less working time. However, the interaction between working time reduction and GDP can constrain the achievement of emission reductions. To explore these interactions, we apply Eurogreen, a dynamic macro-simulation model, to France and compare three different scenarios: i. Working Time Reduction converts increases in labour productivity into more time affluence; ii. Global Working Time Reduction explores the effects on exports when working time reduction occurs also abroad; iii. Constrained Working Time Reduction additionally examines the impact of a binding fiscal rule. We find that the greater the performance in terms of emission reduction, the smaller the improvement in employment. Moreover, under working time reduction, changes in the sensitivity of wage to productivity growth affect the relationship between distribution and emission. The benefits in emissions reduction are still significant while the labour share increases with respect to the baseline.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+
+- Journal: [[denote:20260403T142933][Ecological Economics]]
+
+* References

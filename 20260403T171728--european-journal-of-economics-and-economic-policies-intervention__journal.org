@@ -1,0 +1,9 @@
+#+title:      European Journal of Economics and Economic Policies: Intervention
+#+date:       [2026-04-03 Fri 17:17]
+#+filetags:   :journal:
+#+identifier: 20260403T171728
+
+
+#+BEGIN: denote-backlinks :excluded-dirs-regexp nil :sort-by-component nil :reverse-sort nil :id-only nil :this-heading-only nil :include-date nil :not-regexp "_todo"
+- [[denote:20260108T113327][The Role of Labor in a Socio-Ecological Transition: Combining Post-Keynesian and Ecological Economics Perspectives]]
+#+END:

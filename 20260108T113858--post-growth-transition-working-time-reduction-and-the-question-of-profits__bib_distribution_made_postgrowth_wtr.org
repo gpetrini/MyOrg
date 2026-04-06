@@ -1,0 +1,127 @@
+#+title:      Post-Growth Transition, Working Time Reduction, and the Question of Profits
+#+date:       [2026-01-08 Thu 11:38]
+#+filetags:   :bib:distribution:made:postgrowth:wtr:
+#+identifier: 20260108T113858
+#+reference:  oberholzer_2023_postgrowth
+
+[[denote:20260108T111817][Green ABM for Working Time Reduction]]
+
+[[denote:20260403T142933][Ecological Economics]]
+
+* FISH-5SS
+
+
+** 5SS
+
+
+** Background and motivation
+
+- [[denote:20260326T110324][Working Time Reduction]] reduce the trade-off between growth rate and unemployment
+- The accounting perspective in the post-growth literature is the one most linked to the WTR
+
+** Supporting Ideas and hypothesis
+
+- There is a minimum profit rate that ensure private production
+- It is required that non-profit-driven sectors accounts for the majority of the employment share so the public sector can stabilize the economy
+- The profitability condition is guided by the budget deficits and government bonds issuance
+- If [[denote:20260326T110324][Working Time Reduction]] is proportional to the wage increase, the total working hours is shared among more workers
+  - If a complete profit squeeze is not enough to ensure full-employment, so it is necessary to reduce working hours more proportionally than the wage, reducing the income per worker
+- The author adopts a investment-led growth regime
+  - Investment, on the other side, depends on profitability and on effective demand
+  - Profits causes investment; if profits is zero, investment will be zero
+    - As capitalists invests in order to have profits
+- There is a complete harmony between profit-squeeze, WTR and post-growth regime
+- Differently from a [[denote:20250205T095922][Post Keynesian Economics]] perspective, profitability does not affects the level of profits, but its existance
+- There is an [[denote:20250202T114954][Autonomous Expenditures]] on consumption
+  - However, it is colapsed into a function in terms of wealth which is defined as a share of the total capital stock of the economy (\(C = \mu K\))
+  - This specification is imposed to guarantee the minimum profitability aspect into the model
+
+** Purpose, Relevance, and Contribution
+
+- The [[denote:20250202T122037][Classical Political Economy]] aspect regarding the profit rate is one of the main contributions of the paper
+  - If wages increases higher than productivity, the profit rate would have a declining trend
+  - This, the growth rate of wages impact the profit rates, which drives the limits of economic growth
+  - This profit rate does not need to be equivalent to the economy risk-free interest rate
+- Relevance: This paper clarifies some mechanisms on how to model a macroeconomic WTR model
+- Given the insufficiently of WTR to foster a post-growth transition alone, the paper also outlines some other possibilities to achieve this result
+  - The existance of socially-oriented production might prevent the negative impacts over ouput before reaching full employment (as in the base model)
+  - This removes the profitability condition in order to achieve full employment (profit rate is no longer a decisive variable)
+  - While employing workers, the public sector tight the labor market, increasing the wages and reducing the profitability in the private sector
+  - It transforms a crowd-out effect into desired (temporary) unemployment
+  - One way to prevent this effect to became unsustainable (as private sector might reduce investment faster), the public sector should run into deficits in order to ensure a certain return for the private sector by means of public debt issuance
+    - This debt creates demand, but do not finance production (it is different than loans), which might end up on high inflation
+
+** Methodology
+
+- Theoretical analytical macroeconomic model
+- The author follows a [[denote:20250202T122037][Classical Political Economy]] perspective, linking back to the [[denote:20250206T193130][Marxist]] theory of profits
+  - \(g_{K} = (pr - pr_{min})^{\alpha}(W/Y)^{(1-\alpha)}\)
+  - Profit rate defined as the profits to fixed and circulating capital: \(pr = P/(K + W)\)
+  - Wages dependes on a subsistance level, level of employment (in terms of work), and labor productivity
+- Given that the number of workers is stable, the amount of work can only be increased by increasing the number of working hours
+
+** Results
+
+- [[denote:20260326T110324][Working Time Reduction]] is not sufficient to generate stable post-growth trajectory
+- In fact, [[denote:20260326T110324][Working Time Reduction]] treats the stability, so other policy measurements are required
+  - This includes public investment, affecting the private sector profit rate
+  - The public sector would act on the non-profitable activities, while determining the viable profit rate of the private sector
+- \(L = \delta (b g_A + c K + d w\)
+  - \(b\) increases with \(\alpha\)
+  - \(c > 0\)
+  - \(d\) is negative for large \(\alpha\) and positive for smaller \(\alpha\) and high effective profit rate
+- Effects over employment level under WTR and constant productivity:
+  - A demand-led regime (d > 0) has a positive impact on labor input (L)
+    - Even thought this scenario increases wages and reduce profits, \(d\) can become negative
+  - The \(d < 0\) scenario impose a negative impact over labor input as the profitability affects investment viability
+    - Even with decreasing labor input, wages continue to increase as the labor market is more tight
+  - With \(d \le 0\), total wages declines, investment becomes negative, affecting output negatively
+  - Overall, WTR per se has an unstable effect over the economy
+- Effects considering positive productivity
+  - Given the hypothesis, productivity also affects profitability
+  - It relaxes the trade-off between profits and effective demand
+    - As a consequence, the economy continues to grow
+  - If WTR is proprotional to the productivity growth, it generates an stable non-growing output
+    - However, the origins of the productivity increase might prevent the stable trajectory to occur
+    - In addtion, there is no guarantee that wages will follow productivity
+
+
+** Interesting findings and not categorized stuff
+
+- The ideia with post-growth economy is to stabilize the output in such a way that there is stability and good living standard alongside with the resource limit
+- Instead of using the number of workers in the production function, it uses labor input
+  - Labor input, on the other hand, is equivalent to the number of workers times the total working hours
+- For determining the wage, it consider the total amount of work (not workers) available
+  - This implies that the conventional unemployment rate must be revisited
+- The effect of productivity on the level of employment is ambiguous
+  - While it requires less work to produce the same amount; it also allow for an increase in the production costs with an increase in the profit rate
+  - The employment-effect tend to compensante the labor-saving aspect if the profit rate importance for investment (\(\alpha\)) is large
+
+
+** Critics
+
+- The investment-led aspect is crucial for the sake of the argument
+  - If the economy is investment-led, a complete profit-squeeze would reduce investment to zero which would be compatible with a post-growth regime
+  - However, if the economy is demand-led, an increase in the public investment might induce further investment expenditures, which blocks the post-growth result
+  - The author is aware with this possibility
+- The consumption function reassambles a [[denote:20250203T184701][New Cambridge]] specification
+
+
+
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+The ecological macroeconomics literature has developed models, which outline the transition from today's growth-dependent economies to post-growth systems where output can be stabilized to limit resource consumption while good living conditions and high employment are ensured. Working time reduction plays a pivotal role in those transitional strategies to relax the trade-off between economic growth and unemployment. This analysis contributes to the research by developing a macroeconomic model where, in contrast to the existing models, a sufficient profit rate is the precondition of any private-sector economic activity. It is shown that under such assumptions working time reduction is not enough to stabilize output but is a threat to macroeconomic stability. To make the post-growth transition successful, working time reduction must go along with supporting economic policies and macroeconomic governance including public investment, which controls the private-sector profit rate to avoid instability and unemployment.
+#+END_ABSTRACT
+
+
+* Specific notes
+
+* Annotations (zotero)
+
+* Additional Backlinks
+
+
+
+* References
