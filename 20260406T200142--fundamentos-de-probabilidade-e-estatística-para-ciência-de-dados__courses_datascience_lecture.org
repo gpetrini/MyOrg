@@ -1,0 +1,47 @@
+#+title:      Fundamentos de Probabilidade e Estatística para Ciência de Dados
+#+date:       [2026-04-06 Mon 20:01]
+#+filetags:   :courses:datascience:lecture:
+#+identifier: 20260406T200142
+
+* Aula inaugural [2026-04-06 Mon]
+:PROPERTIES:
+:ID:       ad09986a-bdf5-4263-913d-bdafdc57bf4e
+:END:
+
+- Mencionados textos do professor-autor no Medium
+  - História da probabilidade
+- Mencionado canal no Telegram
+- Atividades online
+  - Sexta-feira é aula de revisão
+  - Monitorias são aulas para tirar dúvidas
+- Planejado ter uma aula por dia
+- Curso ficará aberto por um tempo
+  - Em versões anteriores, ficou disponível por ao menos 2 anos
+  - Ao menos um ano com o curso aberto
+- Seria um equivalente ao curso de 2 semestre
+- Pré-requisitos matemáticos (como utilizar para calcular probabilidade)
+  - Derivada
+  - Integral
+  - Cálculo será feito com o Wolfram
+- Estrutura do curso
+  - Probabilidades (2-3 semanas)
+    - Teorema de Bayes, momentos centrais, Teorema Central do Limite
+    - Entendendo até a aula 12, é possível entender todo o curso
+      - Aulas 11 e 12 são as mais pesadas
+  - Inferência
+    - Estimação (máximo verossimilhança), bootstraping, testes de hipótese, inferência Bayesiana
+  - Modelagem e aprendizado supervisionado
+    - Modelos de regressão
+    - Ajuste de Modelos e Regularização
+    - Aprendizado supervisionado
+    - Classificação
+- Os materiais serão disponibilizados todos os dias
+  - No meio do curso, a disponibilização será mais espaçada
+- Curso tem data para terminar, mas poderá ser estendido se necessário
+- Sugestões:
+  - Tentar assistir as aulas de forma sincronizada
+    - Enviar dúvidas para monitoria
+  - Entrar na plataforma para registrar presença
+    - Não há provas, apenas presença
+    - Não precisa entregar o curso ao final
+  - Reservar 1h-1h30 para estudar
