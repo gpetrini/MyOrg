@@ -1,0 +1,16 @@
+#+title: GTD Inbox file
+* Anotar leitura livre de uma Senhora Toma Chá
+:PROPERTIES:
+:ID: b5acb587-07ff-40a9-b340-db5ec9dd8779
+:ORG_GTD_CAPTURED_AT: [2026-04-06 Mon 20:17]
+:END:
+* All of Statistics como um livro de consulta
+:PROPERTIES:
+:ID: bd2ec0b9-1bb9-4793-85c6-7ef294ae9083
+:ORG_GTD_CAPTURED_AT: [2026-04-06 Mon 20:18]
+:END:
+* Planejar como resolver listas de exercícios curso USP
+:PROPERTIES:
+:ID: b051e6c7-caa1-477c-8538-5a10e014a8ba
+:ORG_GTD_CAPTURED_AT: [2026-04-06 Mon 20:22]
+:END:
