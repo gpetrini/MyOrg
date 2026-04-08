@@ -15,7 +15,7 @@
 - Existem pacotes python mais novos que talvez tenham resolvido o problema
 - Data: Este semestre
 - Aplicação de modelos que não estão no pacote do IBGE
-
+  
 * Orientações
 
 ** Carolina Paiva Hackmann :mestrado:
@@ -116,6 +116,32 @@
     - Modelo com subsídios: https://www.comses.net/codebases/883171d8-1dcc-4740-992b-2d7f785a9194/releases/1.0.0/
     - Modelo focado em taxação: https://www.modelingcommons.org/browse/one_model/5997#model_tabs_browse_nlw
       - Este parece ser dos modelos mais promissores
+- Decisões:
+  - Será utilizado o modelo de Carvalho e Di Guilmi
+  - Pergunta: Análise dos efeitos da valorização real do salário mínimo sobre a distribuição de renda
+    - Eventualmente incluir discussões sobre a inclusão do Programa Bolsa Família
+    - Objetivos específicos precisam ser definidos
+  - Sugestões de leitura:
+    - Ler ABM da Laura
+    - Ler modelo Laura com Gini
+    - Ler dissertação da Lilian (tese trata de conflito distributivo)
+- Sugestão de estrutura:
+  - Resumo
+  - Introdução
+    - Apresentar problema
+    - Contextualizar com Brasil
+    - Explicitar hipótese de trabalho
+      - Indicar como a literatura Brasileira respauda hipótese de trabalho
+  - Objetivos
+  - Metodologia
+  - Cronograma
+  - Referências
+- Tarefas:
+  - Enviar textos para o Thiago
+  - Acompnhar como o Thiago está desenvolvendo o projeto
+  - Data limite para projeto é 13 de Maio
+  - Próxima reunião [2026-04-24 sex]
+    - Local Gemap
 
 * Pós-Graduação
 
@@ -157,3 +183,18 @@
     - Uma coisa é o credenciamento para a Capes e outra é o vínculo com a Unicamp
 - O oferecimento das eletivas pode ser feita para os dois programas
 - Poucos professores estão cadastrados nos dois programas
+
+** Procedimentos para contratação
+
+- Deve entrar em pauta da contratação no dia 24/04. Se for favorável (provável)
+- Deve ir para a reunião do CADE no dia 02/06
+- Se for favorável, deve ir para CPDI (sobre contratação em dedicação exclusiva) no dia 24/06
+- Depois da reunião do CPDI, deve ser encaminhado para a reunião do DGRH
+  - Evitar viagens longas
+    - Terei 10 dias corrigos para apresentar todos os exames
+    - Aparentemente não é possível entregar por procuração
+    - Em conversa com a Rosângela foi mencionada a possibilidade de ir para a Summer School
+  - DGRH não segue o calendário acadêmico
+  - Exames tem validade de 3 meses
+- Nomeação está prevista para setembro/agosto
+  - Cancelamento do CNPJ deve ser antes da nomeação
