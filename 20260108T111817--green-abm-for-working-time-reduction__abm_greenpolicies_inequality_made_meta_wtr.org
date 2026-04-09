@@ -38,3 +38,85 @@ Potential conflicts will arise if not properly managed from all sides (PC, serve
 - The baseline runs consider the simplest financial sector possible
 - For simplicity, we assume a fixed number of firms
   - It is possible to relax this assumption, but the financing of the new net entrants should be better calibrated [opinion]
+
+* Evaluating the modified K+S-labor
+
+** Comparison with [cite/t:@rodrigues_2025_taxfinanced]
+
+- Capital good firms have access to credit
+- There is no social class distinction among households
+  - Firms would be able to pay dividends, but the parameter is usually set to zero
+- Households does not hold any financial assets
+- It is possible to have multiple banks
+- Government does not purchase any goods, only pay for unemployment benefits and training
+- There is no indirect workers
+  - There is also no distinction between direct and R&D workers
+- R&D expenses are based on past sales, not on past profits
+- The mark-up of the capital goods sector is also exogenous
+- The wage bargaining rely on a matching protocol rather on a weighted average
+  - The different flags will affect how firms and workers prioritize the existing agents in their interaction
+  - The unemployment rate enters into the model in terms of the probability of searching for a new job (while still employed)
+  - The wage offered by the firms it the one that guarantee that the enough number of applicants will be hired
+    - While workers accept the offers that are the highest
+  - It might be the case that firms cut *nominal* wages under the competitive regime
+- Investment function is a also a flexible accelerator but the flexibility comes from the expected demand not being myopic
+  - There are some internal debates whether the neo-Kaleckian or the SSM investment function would be suitable for ABMs (discuss)
+- The cost function of the consumption goods sector does not consider the price of machines, only labor costs
+- As a side note, some authors started to use the non-linear competitiveness function [cite:@reissl_2025_dsk] as it generates  control
+  - Over the years, the also changed how to compute the unfilled demad (if it is in terms of relative or absolute unfilled demand)
+- The wage is not uniform across all workers from the same firm (never realized that)
+
+** Changes in respect to their baseline [cite:@dosi_2020_labouraugmented]
+
+- FlagFireOrder (4 -> 5) :: Firing order
+  - Before :: fire if sufficient payback is achieved ("American mode")
+  - Now :: always fire when contract ends ("Brazilian mode")
+- FlagSearchMode (1 -> 0) :: from only searching when unemployed to always searching
+- FlagTax (0 -> 2) :: Households pay taxes over wages and atypical profits (before: no household tax)
+- Number of banks (10 -> 1) :: Single bank scenario
+- LambdaChg (3 -> 2) :: Max credit multiple
+- Lambda0 (1000 -> 0) :: credit limit initial absolute floor
+- alphaB (100 -> 0.8) :: Pareto distribution shape parameter defining bank size heterogeneity (>0)
+- muBonds (0.5 -> 0.0) :: sovereign bonds spread (mark-down over central bank prime rate) ([0,1])
+- muDeb (0.3 -> 0) :: bank spread (mark-up) on debt (over central bank prime rate) (>=0)
+- muRes/muResChg (0.5 -> 1) :: central bank spread (mark-down) on reserves (pre/post-change) ([0,1])
+- rTchg (0.01 -> 0.005) :: Policy rate (from no free entry configuration)
+- omegaPreChg (2 -> 5) :: avg. # job applications per worker in pre/post-change firm after regime change (>0)
+- psi6 (0.2 -> 0) :: share of firm free cash flow paid as bonus in top consumption-good firms ([0,1])
+- wCap (11 -> 10) :: wage change multiple cap on offers, requests and adjustments (>=0, 0=no cap) (likelly for calibration purposes)
+- Fixed number of firms :: 50 K-firms, 200 C-firms
+- mu1 (0.1 -> 0.05) :: K-firms mark-up
+- n1 (8 -> 4) :: number of periods before removing a K-firm from the market due to low market-share
+- b (4 -> 3) :: Replacement investment coefficient
+
+** Results [[file:~/LSD/Work/Made/ABM-WTR/R/data/reports/20260408T143002--no-wtr-aggr-mean__lsd_results.pdf][Aggregate plots]]
+
+The results consider 100 monte carlo runs without changing the code:
+- GDP growth reduces considerably after the regime change
+- Government sector runs into superavits under the competitive scenario
+  - Likelly related to the absent of taxes on workers (common characteristic in all K+S)
+- There are some spikes associated with the government sector and real wage
+- There is a large and persistent credit gap
+- Low unemployment rate, but under reasonable ranges (different from the original Fordist regime)
+- Wage share stable over time; similar among regimes
+- Inequality increases after the regime change
+  - Gini levels are not realistic
+- Imitation and innovation success rates follow the same declining path of the K+S
+- Decrease in the market concentration and, as a consequence, of the mark-up
+- Increasing volatility after the regime change and, as a consequence, the likelihood of crises
+- Capacity utilizarion remains high and close to the full capacity utilization rate (general feature of the laubor augmented K+S models)
+- Considerably higher inflation after regime change (K+S are typically deflationary)
+- Very low governmement debt to GDP ratio
+- Almost zero credit supply to GDP ratio (different from the time series plots)
+  - The firms' debt stock increase, so it is likelly an error on the script that generates the plots
+
+** Sensitivity Analysis
+
+- Unemployment (decreasing importance/sign):
+  - tauT (+): tenure learning factor for employed workers
+  - omegaU (-): average number of job applications by unemployed worker
+  - omega3 (+): competitiveness parameter associated with quality
+- GDP growth (decreasing importance/sign):
+  - tauT (-): tenure learning factor for employed workers
+  - alpha2 (+): Beta distribution parameters for imitation drawing
+  - Tr (0/-): number of periods a worker stay in firm before retiring

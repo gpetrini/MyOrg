@@ -25,6 +25,8 @@
 
 ** Methodology
 
+- The social structure follows [cite/t:@rolim_2023_income]
+
 
 ** Results
 
@@ -51,3 +53,5 @@
 
 
 * References
+
+- [cite:@reissl_2025_dsk; @lamperti_2018_faraway]
