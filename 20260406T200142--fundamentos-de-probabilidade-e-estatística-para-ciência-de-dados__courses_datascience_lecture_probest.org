@@ -1,0 +1,195 @@
+#+title:      Fundamentos de Probabilidade e Estatística para Ciência de Dados
+#+date:       [2026-04-06 Mon 20:01]
+#+filetags:   :courses:datascience:lecture:probest:
+#+identifier: 20260406T200142
+#+PROPERTY:header-args python :results output drawer :eval never-export :exports both
+
+* Dados do curso
+
+- Professor: Francisco A. Rodrigues (USP)
+- Período: 20261S
+
+* Aula inaugural [2026-04-06 Mon]
+:PROPERTIES:
+:ID:       ad09986a-bdf5-4263-913d-bdafdc57bf4e
+:END:
+
+- Mencionados textos do professor-autor no Medium
+  - História da probabilidade
+- Mencionado canal no Telegram
+- Atividades online
+  - Sexta-feira é aula de revisão
+  - Monitorias são aulas para tirar dúvidas
+- Planejado ter uma aula por dia
+- Curso ficará aberto por um tempo
+  - Em versões anteriores, ficou disponível por ao menos 2 anos
+  - Ao menos um ano com o curso aberto
+- Seria um equivalente ao curso de 2 semestre
+- Pré-requisitos matemáticos (como utilizar para calcular probabilidade)
+  - Derivada
+  - Integral
+  - Cálculo será feito com o Wolfram
+- Estrutura do curso
+  - Probabilidades (2-3 semanas)
+    - Teorema de Bayes, momentos centrais, Teorema Central do Limite
+    - Entendendo até a aula 12, é possível entender todo o curso
+      - Aulas 11 e 12 são as mais pesadas
+  - Inferência
+    - Estimação (máximo verossimilhança), bootstraping, testes de hipótese, inferência Bayesiana
+  - Modelagem e aprendizado supervisionado
+    - Modelos de regressão
+    - Ajuste de Modelos e Regularização
+    - Aprendizado supervisionado
+    - Classificação
+- Os materiais serão disponibilizados todos os dias
+  - No meio do curso, a disponibilização será mais espaçada
+- Curso tem data para terminar, mas poderá ser estendido se necessário
+- Sugestões:
+  - Tentar assistir as aulas de forma sincronizada
+    - Enviar dúvidas para monitoria
+  - Entrar na plataforma para registrar presença
+    - Não há provas, apenas presença
+    - Não precisa entregar o curso ao final
+  - Reservar 1h-1h30 para estudar
+
+* Introdução à teoria das probabilidades
+
+
+** Introdução
+
+- Formulação matemática de probabilidade depende de teoria dos conjuntos
+  - União (\(\cup\)): \(A\cup B=\{x\,\mid\, x \in A \text{ e/ou } x \in B\}\)
+    - Também inclui a ocorrência de ambos
+  - Intersecção (\(\cap\)): \(A\cap B=\{x\,\mid\, x \in A \text{ e } x \in B\}\)
+  - Complementar (\(A^{c}\) ou \(B \setminus A\)): \(A^{c} = \{x \in B | x \notin A\}\)
+  - Exemplos:
+    - Evento A ocorre, mas B não ocorre: \(A \cap \overline{B}\)
+    - Nenhum evento ocorre: \((A \cup B)^{c}\)
+- Experimento aleatório: Experimento que pode ser repetido inúmeras vezes sob as *mesmas condições*, sendo o resultado incerto
+- Definições:
+  - Espaço amostral (\(\Omega\)): Representa o conjunto de todas as *saídas* possíveis de um experimento aleatório
+    - Exemplo: dado (\(1 \ldots 6\))
+  - Evento (\(A\)): Subconjunto do espaço amostral
+  - Evento impossível (\(\emptyset\)): evento que nunca ocorre (conjunto vazio)
+    - Exemplo (dado): \(\{x > 6 | x \in \Omega\}\)
+  - Evento mutuamente excludente: \(A \cap B = \emptyset\)
+
+** Axiomas de probabilidade
+
+Dadas as definições anteriores, a função \(P(\cdot)\) é denominada probabilidade se satisfazer:
+- \(0 \leq P(\cdot) \leq 1, \quad \forall A \in \Omega \)
+- \(P(\Omega) = 1\)
+- Se \(A_{1}, A_{2}, \ldots \) forem mutualmente excludentes,
+  - \(P(\Cup_{i=1}^{\infty} A_i) = P(A_1 \cup A_2 \cup \ldots) = \sum^{\infty}P(A_i)\)
+- Probabilidade clássica :: Se um experimento aleatório tiver \(n(\Omega)\) resultados mutuamente exclusivos e igualmente possı́veis, e se um evento \(A\) conter \(n(A)\) desses resultados, a probabilidade de ocorrência desse evento é definida por:
+  - \(P(A) = n(A)/n(\Omega) = |A| / |\Omega|\)
+- Interpretação frequentista :: A probabilidade de um evento é igual à sua frequência de ocorrência em um grande número de experimentos:
+  - \(P(A) = \lim_{n\to \infty} n_A/n\)
+  - \(n_{A}\): número de vezes que o evento A ocorre em n experimentos.
+  - Essa interpretação permite realizar simulações
+- Probabilidade da união de dois eventos: \(P(A \cup B) = P(A) + P(B) - P(A \cap B)\)
+  - \(\equiv P(A \cup B^{c}) \cup P(A \cap B) \cup P( A^{c} \cup B )\)
+  - Como não possuem intersecção, torna-se a soma das probabilidades em que \(P(A) = P(A \cup B^{c}) + P(A \cap B)\)
+  - O termo negativo evita a dupla contagem
+- Teoremas:
+  - \(P(A) = 1 - P(A^{c})\)
+  - Se \(A \subset B\), então \(P(A) \leq P(B)\)
+    - \(B = A \cup (A^{c} \cap B)\)
+
+** Simulações
+:PROPERTIES:
+:header-args:python: :session *probs*
+:END:
+
+
+#+begin_src python
+import random
+import numpy as np
+
+n = 20
+urna = np.arange(1,n+1)
+valor = 9
+freq_evol = 0 # contador
+freq_evolucao = []
+ns = 2000
+
+random.seed(123)
+
+for i in range(1,ns + 1):
+  ficha = random.choice(urna)
+  if(ficha > valor):
+    freq_evol = freq_evol + 1
+  freq_evolucao.append(freq_evol / i)
+
+print('Frequencia:', freq_evol/ns)
+print('Probabilidade exata:', len(range(valor+1, n+1))/n)
+#+end_src
+
+#+RESULTS:
+:results:
+Frequencia: 0.5505
+Probabilidade exata: 0.55
+:end:
+
+#+begin_src python :results output raw
+import matplotlib.pyplot as plt
+
+# Configurações do arquivo e dados
+fig_lab = "./figs/convergencia_prob.pdf"
+prob_exata = (n - valor) / n
+simulacoes = np.arange(1, ns + 1)
+
+# Geração do gráfico
+plt.figure(figsize=(8, 5))
+plt.plot(simulacoes, freq_evolucao, label="Simulada", color="blue", linewidth=1.5)
+plt.axhline(y=prob_exata, label="Exata", color="red", linestyle="--", linewidth=2)
+
+plt.xlabel("Número de Simulações")
+plt.ylabel("Frequência Relativa")
+plt.legend()
+plt.tight_layout()
+
+# Exportação conforme diretriz
+plt.savefig(fig_lab)
+plt.close()
+
+print(f"[[file:{fig_lab}]]")
+#+end_src
+
+#+RESULTS:
+[[file:./figs/convergencia_prob.pdf]]
+
+* Probabilidade condicional e Teorema de Bayes
+
+** Probabilidade condicional
+
+Sejam dois eventos \(A\) e \(B\) de uma mesmo espaço amostral \(\Omega\).
+A probabilidade condicional de \(A\) dado que \(B\) ocorreu é dada por:
+
+\[P(A|B) = \frac{P(A \cap B)}{P(B)} = \frac{P(A, B)}{P(B)} \quad P(B) > 0\]
+
+Intuitivamente, é definido como a probabilidade de \(A\) ocorrer dado que o espaço amostral ficou delimitado à B.
+A probabilidade de \(A\) ocorrer é dada por \(A \cap B\).
+
+Exemplo: Se \(A\) é a probabilidade de sair \(2\) e \(B\) são os números pares de \(1 \ldots 10\):
+
+\[P(A|B) = \frac{P(A \cap B)}{P(B)} = \frac{\frac{1}{10}}{\frac{5}{10}} = 0.2\]
+
+O exercício com a tabela de contagem é bastante útil para aplicar diretamente a probabilidade condicional.
+
+** Eventos independentes
+
+Os eventos \(A\) e \(B\) são eventos independentes se, e somente se:
+
+\[P(A \cap B) = P(A) P(B) \Leftrightarrow P(A | B) = P(A) \Leftrightarrow P(B | A) = P(B)\]
+\[P(A|B) = P(A \cap B)/ P(B) = P(A) \Rightarrow P(A \cap B) = P(A) P(B)\]
+
+Em outros termos, a ocorrência de \(B\) não altera a probabilidade de \(A\).
+Tais propriedades permite testar se dois eventos são independentes.
+
+** Teorema de Bayes
+
+
+De acordo com o próprio Bayes, inferência de dados nada mais é do que a revisão de uma probabilidade (opinião metódica) com novas informações relevantes.
+
+*** Partição do espaço amostral (17 min)
