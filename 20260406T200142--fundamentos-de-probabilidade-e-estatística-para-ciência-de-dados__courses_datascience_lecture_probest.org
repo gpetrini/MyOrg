@@ -83,9 +83,11 @@ Dadas as definições anteriores, a função \(P(\cdot)\) é denominada probabil
   - \(P(\Cup_{i=1}^{\infty} A_i) = P(A_1 \cup A_2 \cup \ldots) = \sum^{\infty}P(A_i)\)
 - Probabilidade clássica :: Se um experimento aleatório tiver \(n(\Omega)\) resultados mutuamente exclusivos e igualmente possı́veis, e se um evento \(A\) conter \(n(A)\) desses resultados, a probabilidade de ocorrência desse evento é definida por:
   - \(P(A) = n(A)/n(\Omega) = |A| / |\Omega|\)
+  - Só é válida se os eventos forem equiprováveis
 - Interpretação frequentista :: A probabilidade de um evento é igual à sua frequência de ocorrência em um grande número de experimentos:
   - \(P(A) = \lim_{n\to \infty} n_A/n\)
   - \(n_{A}\): número de vezes que o evento A ocorre em n experimentos.
+  - Não é uma definição tão rigorosa porque é necessário provar que o limite existe
   - Essa interpretação permite realizar simulações
 - Probabilidade da união de dois eventos: \(P(A \cup B) = P(A) + P(B) - P(A \cap B)\)
   - \(\equiv P(A \cup B^{c}) \cup P(A \cap B) \cup P( A^{c} \cup B )\)
@@ -192,4 +194,302 @@ Tais propriedades permite testar se dois eventos são independentes.
 
 De acordo com o próprio Bayes, inferência de dados nada mais é do que a revisão de uma probabilidade (opinião metódica) com novas informações relevantes.
 
-*** Partição do espaço amostral (17 min)
+*** Partição do espaço amostral
+
+- Partição: Considere alguns eventos \(B_{1}, \ldots, B_{n}\) que formam a partição do espalo amostral \(\Omega\):
+  - Intersecção entre eles é vazio (\(B_{i} \cap B_{j} = \empty\))
+  - Unição desses eventos é o espaço amostral (\(\cup_{i}^{n} B_{i} = \Omega\))
+  - Todos tem \(P(B_{i}) \geq 0\)
+  - Exemplo: Pensar em um quebra-cabeça
+- Considere agora outro evento (\(A\)) composto por partes dessas partições
+  - \(A = (A \cap B_{1}) \cup (A \cap B_{2}) \cup \ldots (A \cap B_{n})\)
+  - O teorema é que se \(A\) for um evento do espaço amostral \(\Omega\), ele pode ser escrito tomando as partições desse espaço amostral
+    - \(A = A \cup_{i}^{n} B_{i} \Rightarrow P(A) = P(A \cup_{i}^{n} B_{i})\)
+    - Como esses eventos são mutuamente exclusivos
+    - \(P(A) = \sum P(A \cap B_{i})\)
+    - \(P(A \cap B_{i}) = P(A | B_{i}) \cdot P(B_{i}))\)
+    - \(P(A) = \sum_{i=1}^{n} P(A | B_{i}) \cdot P(B_{i}))\)
+- Teorema da probabilidade total: \(P(A) = \sum_{i=1}^{n} P(A | B_{i}) \cdot P(B_{i}))\)
+
+** Demonstração do Teorema de Bayes
+
+A partir da probabilidade total, pode-se anunciar o Teorema de Bayes.
+Seja \(B_{1}, \ldots, B_{n}\) as partições de um espaço amostral; seja \(A\) um evento deste espaço amostral, então:
+
+\[P(B_{i} | A) = \frac{P(A | B_{i}) P(B_{i}){{\sum_{j=1}^{n} P(A | B_{j}) \cdot P(B_{j})} \equiv \frac{P(A \cap B_{i})}{P(A)}\]
+
+Com isso, a informação de que \(A\) ocorreu atualiza a probabilidade de que o evento \(B_{i}\) possa ocorrer.
+
+* Variáveis aleatórias
+** Introdução
+
+Considere o lançamento de uma moeda por vezes sucessivas.
+Considere ainda que exista uma observação específica de interesse (ex: número de caras).
+Associe, em seguida, as probabilidades (\(p\) e \(1 - p\)) associadas a cada uma das possibilidades.
+Neste caso, está definindo o valor da variável aleatória para cada saída do experimento.
+Sendo assim, associa-se a cada saída à reta real a cada elemento do espaço amostral.
+
+Convenção: Utiliza-se letras maísculas para denotar as variáveis aleatórias, enquanto as letras minúsculas são os valores dessas V.A.s.
+Sendo assim, existe uma diferença entre o que será medido (variável aleatória (\(P(X \geq y)\))) e do valor observado (não aleatório, \(P(x \geq y)\), incorreto).
+
+Resumidamente, uma variável aleatória é uma função que mapeia cada elemento do espaço amostral na reta real.
+
+** Tipos de variáveis aleatórias
+
+- Variáveis aleatórias discretas: Valores possíveis assumem valores discretos (podem ser listados, mesmo que a lista seja infinita).
+  - Função discreta de probabilidade: associa a cada valor da VA a respectiva probabilidade (distribuição de probabilidade)
+    - \(P(X = x_{i}) = p(x_{i})\)
+    - \(\sum^{n}_{i} p(x_{i}) \equiv 1\)
+    - Também chamada de Função Massa de Probabilidade
+- Variável aleatória contínua: Se existir uma função de densidade de probabilidade (fdp) de \(X\) que satisfaça:
+  - \(f(x) \geq 0 \forall x \in \mathbb{R}\)
+  - \(\int_{-\infty}^{\infty} f(x) dx = 1\)
+  - \(P(a \leq X \leq b) = \int_{a}^{b} f(x) dx \quad -\infty < a < b < \infty\)
+  - \(f(x)\) é uma função com valores estritamente positivos e com área unitária
+
+** Probabilidade condicional
+
+Seja \(X\) uma variável aleatória (discreta ou contínua).
+A probabilidade condicional de que \(X \in S\) dado que \(X \in V\) é dada por:
+
+\[P(X \in S | X \in V) = \frac{P(X \in S \cap X \in V)}{P(X \in V)}\]
+em que \(S\) e \(V\) são regiões da reta real.
+
+*** Exemplo
+
+Seja \(X\) uma variável aleatória cuja f.d.p. é:
+
+\[f(x) = \begin{cases} 2x \quad 0 < x < 1 \\ 0 \quad \text{ c.c. } \end{cases}\]
+
+Calcule \(P(X > \frac12 | X > \frac14)\):
+
+- A interseccção entre as duas regiões é dado por \(P(X > \frac12)\)
+- \(P(X > \frac12) \Rightarrow X^{2}\) avaliado entre \(1\) e \(\frac12\): \(\frac34\)
+- \(P(X > \frac14) \Rightarrow X^{2}\) avaliado entre \(1\) e \(\frac14\): \(15/16\)
+- \(P(X > \frac12 | X > \frac14) = P(X > \frac12 \cap X > \frac14)/P(X > \frac14) = \frac34/15/16 = 4/5\)
+
+* Esperança e variância
+
+** Valor esperado
+
+- Variável aleatória discreta: \(E[X] = \sum^{\infty}_{i=1} x_{i}P(X = x_{i})\)
+  - Exemplo: O valor esperado da face de um dado é \(3.5\) que, por sua vez, não é um valor discreto
+    - De forma equivalente, é o valor médio observado considerando um número grande de simulações
+  - Outro tipo de aplicação seria o cálculo do lucro médio sob incerteza
+  - Função de variável aleatória discreta (\(g(x)\)): \(E[g(X)] = \sum^{\infty}_{i=1} g(x_i)P(X = x_{i})\)
+    - Exemplo: \(g(X) = X^{2} \Rightarrow E[g(X)] = \sum x^2 P(x_i)\)
+- Variável aleatória contínua: \(E[X] = \int_{-\infty}^{\infty}x f(x)dx\)
+  - Função de variável aleatória continua (\(g(x)\)): \(E[g(X)] = \int_{-\infty}^{\infty}g(x) f(x)dx\)
+- Notar que a esperança retorna o valor esperado e não é, por consequência, restrito às mesmas condições de uma probabilidade
+
+*** Propriedades
+
+- Se \(X = c\), então o valor esperado é constante (\(E[X] = c\))
+- Se \(g(X) = cX\), então o valor esperado é constante (\(E[cX] = cE[X]\))
+- Se \(g(X) = aX + b\), então o valor esperado é constante (\(E[aX] = aE[X] + b\))
+- Exemplo: Seja \(E[X] = 2\). Calcule \(E[2X + 1] = \).
+  - Resposta: \(2E[X] + 1 = 5\)
+
+** Momento estatístico
+
+Seja uma \(X\) uma variável aleatória discreta.
+O momento estatístico de ordem \(n\) é dado por:
+
+\[E[X^{n}] = \sum^{\infty}_{i=1} X^{n}P(X = x_{i})\]
+
+Já para o caso de uma variável aleatória contínua:
+\[E[X^{n}] = \int_{-\infty}^{\infty} x^n f(x)dx\]
+
+** Momento central
+
+O momento central de ordem \(n\) é dado por:
+
+\[\mu_{n} = E[(X - E[X])^{n}] = \sum (x_{i} - E[X])^{n} P(X = x_{i})\]
+
+\[\mu_{n} = E[(X - E[X])^{n}] = \int_{-\infty}^{\infty} (x - E[X])^{n}f(x)dx\]
+
+
+
+Chama-se momento central por centralizar a variável aleatória em torno da média.
+
+** Variância
+
+A variância é o segundo momento central, dado por:
+\[V(X) = \sigma^{2} = E[(X - E[X])^{2}]\]
+enquanto o desvio-padrão (\(\sigma\)) é a raíz da variância.
+Sendo assim, a variância é a média das distâncias Euclidianas em relação à média.
+De forma equivalente:
+\[V(X) = E[X^{2}] - E^{2}[X]\]
+
+\[V(g(X)) = E[g(X)^{2}] - E^{2}[g(X)]\]
+
+
+Propriedades:
+
+\[V(aX + b) = a^{2} V(X)\]
+
+Exemplo: \(V(2X + 5) = 4V(X)\). Seja \(V(X) = 4 \Rightarrow V(2X + 5) = 16\).
+* Função de Distribuição acumulada
+** Definição
+
+A função de distribuição acumulada (\(F(X)\))  de uma variável aleatória é definida por: \(F(x) = P(X \leq x)\).
+- Para o caso discreto: \(F(x) = P(X \leq x) = \sum_{x_i \leq x} P(X = x_i)\) (somar até o valor).
+- Para o caso contínuo: \(F(x) = P(X \leq x) = \int_{-\infty}^{x} f(s)ds\).
+- Alguns intervalos devem ser definidos para computar (e plotar) a acdf.
+  - Apesar a distribuição poder assumir valores discretos, a função de distribuição é um valor contínuo
+- Vale notar que também pode ser referida como função de distribuição.
+  - Notar também que existe diferença entre distribuição de probabilidade (maepeia espaço amostral à probabilidades) da função de distribuição (que mapeia a probabilidade de forma acumulada).
+    - Isso permite calcular derivadas, por exemplo, dado que \(X\) assume valores contínuos
+      - A função, por sua vez, é descontínua dado que possui intervalos abertos
+
+Propriedades:
+- \(0 \leq F(X) \leq 1\)
+- \(F(X)\) é não decrescente
+- \(\lim_{x \to -\infty} F(X) = 0\)
+- \(\lim_{x \to \infty} F(X) = 1\)
+- Calculando a função densidade de probabilidade (pdf)
+  - Caso discreto: \(P( a \leq X \leq b ) = F(b) - F(a)\)
+  - Caso contínuo: \(f(x) = \frac{d}{dx} F(x)\)
+    - Usando o teorema do valor médio da integração: \(\int_{x}^{x + \Delta x} f(s) ds = f(c) + \Delta x\)
+* Modelos probabilísticos discretos
+** Introdução
+
+
+Diferentemente de um modelo determinístico, um modelo aleatório indica a probabilidade de estar em determinado estado.
+Uma vez que o experimento aleatório é repetido um número grande de vezes, emerge-se um padrão que, por sua vez, permite calcular a probabilidade associada a cada evento.
+Ao longo desta aula, está sendo usado o termo modelo e distribuição de forma equivalente.
+
+** Distribuição uniforme discreta
+
+Uma variável aleatória \(X\) segue uma distribuição/modelo uniforme se atribui a mesma probabilidade de todos os eventos discretos ocorrerem.
+A distribuição de probabilidade é dada por:
+\(P(X = x) = 1/n\) em que \(n = 1 + (b - a)/c\)
+
+- Esperança: \(E[X] = (a + b)/2\)
+- Variância: \(V(X) = c^{2}(n^{2}-1)/12\)
+  - Em que \(c\) é o tamanho (constante) do incremento (\(c = (b-a)/(n-1)\))
+
+** Distribuição de Bernoulli
+
+Diz-se que uma variável aleatória segue o modelo de Bernoulli se atribui \(0\) ao fracasso de um evento e \(1\) ao sucesso.
+Adotando a convenção de que a probabilidade de sucesso é denotado por \(p\), a distribuição de probabilidade é dada por:
+\(P(X = k) = p^k(1 - p)^{1-k} \quad k = 0,1\)
+Neste caso, ocorre apenas uma ocorrência.
+
+- Esperança: \(E[X] = p\)
+- Variância: \(V(X) = p(1-p)\)
+
+** Distribuição de Binomial
+
+Esta é a generalização da distribuição de Bernoulli com \(n\) repetições, ou seja, é um processo estocástico de Bernoulli.[fn:processo-estocastico]
+Propriedades:
+- Cada tentativa pode ser atribuída como sucesso ou falha da mesma forma
+- Probabilidade de sucessão se mantém constante
+  - Isso equivale ao experimento ser com reposição (garante que \(p\) seja constante)
+- Tentativas são independentes
+
+A probabilidade de obter \(k\) sucessos em \(n\) repetições é dado por: \(P(X = k) = C^{k}_{n} p^k(1 - p)^{n-k} \quad k = 0,1\).
+Em que \(C^{k}_{n}\) é a combinação de \(n\) elementos tomados de \(k\) em \(k\):
+\(C^k_n = \frac{n!}{(n-k)k!}\).
+Neste caso, a ordem dos experimentos não é relevante.
+Caso o número de sucessos seja condicional (em termos de "pelo menos", "entre", etc), utiliza-se o somátória em termos de \(k\).
+
+- Esperança: \(E[X] = np\)
+- Variância: \(V(X) = np(1-p)\)
+- Interpretação: \(P(X = k)\) representa a probabilidade de obter \(k\) sucessos em \(n\) tentativas
+
+[fn:processo-estocastico]: Processo probabilístico repetido ao longo do tempo.
+
+** Distribuição de Poisson
+
+Uma variável aleatória discreta \(X\) segue o modelo de Poisson com taxa \(\lambda >0\) se:
+\(P(X = k) = \frac{e^{-\lambda} \lambda^k}{k!} \quad k = 0, 1, \ldots,\)
+
+Essa é uma distribuição quando possui informação sobre a taxa de ocorrência (capturado por \(\lambda\)) enquanto \(k\) caputura o número de ocorrências.
+Tipicamente, representa fenômenos em que a probabilidade aumenta com o número de repetições (quanto mais tempo espera-se pelo ônibus, maior a chance do ônibus chegar).
+
+- Esperança: \(E[X] = \lambda\)
+- Variância: \(V(X) = \lambda\)
+
+*** Lei dos eventos raros
+
+Estabelece a relação entre a distribuição binomial e a distribuição de Poisson.
+Quando o número de repetições converge ao infinito e a taxa de ocorrência é constante (\(\lambda = np\)), a distribuição Binomial converge para a distribuição de Poisson.
+Isso se deve porquê \(\lambda = np\), com \(\lambda\) sendo constante e \(n \to \infty\), tem-se que \(p \to 0\).
+Por essa razão, trata-se de uma relação com eventos raros.
+
+** Distribuição geométrica
+
+Trata-se de uma distribuição em que observa-se a primeira ocorrência de sucesso.
+
+\(P(X = k) = p(1 - p)^{k-1} \quad k = 1,2,3,\ldots\)
+
+Neste caso, \(X\) representar o número de falhas até o primeiro sucesso.
+Sendo assim, é o número de experimentos, não de sucessos.
+Em R, é preciso incluir o zero até \(k-1\) para encontrar pelo menos \(k\) repetições.
+
+
+- Esperança: \(E[X] = 1/p\)
+- Variância: \(V(X) = (1-p)/p^{2}\)
+- Interpretação: \(P(X = k)\) representa a probabilidade do primeiro sucesso ocorrer no experimento \(k\)
+
+** Distribuição binomial negativa
+
+Seja \(X\) o número de repetições necessárias a fim de que ocorram exatamente \(r\) sucessos de modo que o \(r\)-ésimo sucesso ocorra na \(k\)-ésima tentativa.
+
+\[P(X = k) = {k-1}\choose{r-1} p^{r-1}(1 - p)^{k-r}p, \quad k = r, r+1, \ldots\]
+
+Neste caso, a última repetição (\(k\)) é necessariamente um sucesso.
+
+De forma mais intuitiva, esse modelo indica o caso em que a última observação é necessariamente um sucesso, enquanto as anteriores podem ser sucesso ou falha.
+
+
+- Interpretação: \(P(X = k)\) representa a probabilidade de serem necessários \(k\) experimentos para obter \(n\) sucessos; \(n-1\) sucessos ocorreram em \(k-1\) tentativas anteriores e o \(n-\)ésimo sucesso ocorre na tentativa \(k\).
+  - Exemplo: Time de futebol vencer determinada série em \(n\) partidas (em que é um número menor do que o número total de partidas)
+
+** Distribuição hipergeométrica
+
+Considere um conjunto de \(N\) objetos, dos quais \(N_{1}\) são do tipo 1 e os demais são do tipo 2.
+Para um sorteio de \(n\) objetos (\(n < N\)) *sem* reposição, seja \(X\) a variável aleatória que define o número de
+objetos do tipo 1 sorteados.
+Então, a probabilidade de sortearmos \(k\) objetos do tipo 1:
+
+
+\[P(X = k) = \frac{{N_1}\choose{k}}{{N} {N - N_1}\choose{n - k}}{{N}\choose{n}}, \quad k = 0, 1, \ldots, n\]
+
+- Interpretação: \(P(X = k)\) representa a probabilidade de obter \(k\) sucessos em \(n\) tentativas sem repetição
+
+** Exercícios
+
+*** Questão 01
+
+Uma urna tem 20 bolas pretas e 30 brancas. Retiram-se 25 bolas com reposição. Qual a probabilidade de que:
+
+a) 2 sejam pretas?
+b) pelo menos 3 sejam pretas?
+
+Este é o caso de um modelo binomial em que o evento de interesse é o de retirar uma bola preta.
+Repete-se 25 vezes com reposição.
+Para computar o caso de que pelo menos \(k\) ocorrências equivale ao somátorio de \(P(X \geq k)\).
+De forma equivalente, basta calcular \(1 - P(X < k)\) em que \(k\) não está incluído.
+
+*** Questão 03
+
+Ao escrever sua tese de doutorado, um aluno cometeu diversos erros tipográficos.
+Ele verificou que, em média, há \(\lambda = 0.5\) erros por página, ou seja, um erro a cada duas páginas.
+Assumindo que a distribuição dos erros segue o modelo de Poisson, calcule a probabilidade de que há, pelo menos, um erro em uma página qualquer dessa tese.
+
+Neste caso, está evidenciado que trata-se de uma distribuição de Poisson em que \(P(X \geq 1)\).
+O que é o mesmo de \(1 - P(X < 1)\).
+
+*** Questão 05
+
+Numa urna há 40 bolas brancas e 60 pretas.
+Retiram-se 20 bolas.
+Qual a probabilidade de que ocorram no mínimo 2 bolas brancas, considerando as extrações:
+
+a) sem reposição
+b) com reposição
+
+O caso sem reposição é típico de um caso de hipergeométrica.
+Já o caso com reposição é a distribuição binomial.

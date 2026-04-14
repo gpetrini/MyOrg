@@ -120,3 +120,321 @@ The results consider 100 monte carlo runs without changing the code:
   - tauT (-): tenure learning factor for employed workers
   - alpha2 (+): Beta distribution parameters for imitation drawing
   - Tr (0/-): number of periods a worker stay in firm before retiring
+
+* Including working hours
+
+In order to move towards the intensive form, some variables need to be refactored in termos of working hours.
+One simple solution is to assume that the benchmark model corresponds to a normalized intensive form in which the normalized working hours corresponds to 100% (1).
+As a consequence, introducing WTR would imply to change this worker-specific variable to be \(<1\).
+One advantage of this approach is that it does not need to reconfigure many parts of the model, which also allows for a strict comparison with the preceding versions.
+A drawback is that the empirical comparability is not as straight forward.
+A common issue, regardless of the implementation scheme, is that we cannot (in a simple way) redefine the model in terms of weekly working hours, which prevents the introduction of other mechanisms found in the literature.
+
+Another complementar ideia is to create a variable to track the total wage received.
+This would make easier to consider class disctinctions as well as wage premiums (R&D, for example).
+
+It would be better to change the name of variables the least as possible.
+As a workaround, adds a interpretation map file to complement on how to translate between model versions.
+
+As a sanity check, every FIXME removal should have an associated commit message.
+
+** FIXME list
+
+
+#+BEGIN_SRC shell :dir ~/LSD/Work/Made/ABM-WTR :exports results :results raw
+grep -n "FIXME" *.h | while IFS=: read -r file line comment; do
+    echo "- [[file:~/LSD/Work/Made/ABM-WTR/$file::${line}][$file ${line}]] ${comment#*FIXME}"
+done
+#+END_SRC
+
+#+RESULTS:
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_bank.h::297][fun_KS_bank.h 297]] : In the standard K+S model, households do not hold deposits.
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_bank.h::319][fun_KS_bank.h 319]] : In the standard K+S model, households do not access to credit.
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_bank.h::372][fun_KS_bank.h 372]] : In the standard K+S model, households do not hold deposits.
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_bank.h::392][fun_KS_bank.h 392]] : In the standard K+S model, households do not access to credit.
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_capital.h::21][fun_KS_capital.h 21]] : This should be refactored in terms of working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_capital.h::175][fun_KS_capital.h 175]] : This should be refactored in terms of working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_capital.h::229][fun_KS_capital.h 229]] : This should be refactored in terms of working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_capital.h::318][fun_KS_capital.h 318]] : This should be refactored in terms of working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_capital.h::329][fun_KS_capital.h 329]] : This should be refactored in terms of working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_capital.h::338][fun_KS_capital.h 338]] : This should be refactored in terms of working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_capital.h::348][fun_KS_capital.h 348]] : This should be refactored in terms of working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_capital.h::451][fun_KS_capital.h 451]] : This should be refactored in terms of working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_capital.h::520][fun_KS_capital.h 520]] : This should be refactored in terms of working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_capital.h::544][fun_KS_capital.h 544]] : Unsure if it is necessary to refactor in terms of working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_capital.h::564][fun_KS_capital.h 564]] : Unsure if it is necessary to refactor in terms of working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_capital.h::587][fun_KS_capital.h 587]] : It needs to be refactored in terms of working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_class.h::31][fun_KS_class.h 31]] : Add the hour component
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_class.h::39][fun_KS_class.h 39]] : Add the hour component?
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_consumption.h::232][fun_KS_consumption.h 232]] : It requires the inclusion of working hours as a decision variable
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_consumption.h::313][fun_KS_consumption.h 313]] : It requires the inclusion of working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_consumption.h::496][fun_KS_consumption.h 496]] : Unclear if it needed to be redifined in terms of working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_consumption.h::529][fun_KS_consumption.h 529]] : It needs to be redefined in terms of working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_consumption.h::537][fun_KS_consumption.h 537]] : It needs to be redefined in terms of working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_consumption.h::589][fun_KS_consumption.h 589]] : Unclear if it needs to be redefined in terms of working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_consumption.h::597][fun_KS_consumption.h 597]] : Unclear if it needs to be redefined in terms of working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_consumption.h::605][fun_KS_consumption.h 605]] : Unclear if it needs to be redefined in terms of working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_consumption.h::636][fun_KS_consumption.h 636]] : It needs to be carefull on how the firm-level variable is implemented
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_consumption.h::644][fun_KS_consumption.h 644]] : It needs to be carefull on how the firm-level variable is implemented
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_consumption.h::653][fun_KS_consumption.h 653]] : It needs to be carefull on how the firm-level variable is implemented
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_consumption.h::713][fun_KS_consumption.h 713]] : Double check if it is necessary to adjust this equation
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_consumption.h::810][fun_KS_consumption.h 810]] : Double check if it is necessary to adjust this equation
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_consumption.h::819][fun_KS_consumption.h 819]] : Double check if it is necessary to adjust this equation
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_consumption.h::828][fun_KS_consumption.h 828]] : This variable should be able to count in terms of working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_consumption.h::837][fun_KS_consumption.h 837]] : This variable should be able to count in terms of working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_consumption.h::846][fun_KS_consumption.h 846]] : This variable should be able to count in terms of working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_consumption.h::854][fun_KS_consumption.h 854]] : This variable should be able to count in terms of working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_country.h::22][fun_KS_country.h 22]] : It would be better to split the deposits in case they will be implemented
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_country.h::68][fun_KS_country.h 68]] : It would consider the hourly wages and a reference working hour
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_country.h::140][fun_KS_country.h 140]] : It would consider the working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_country.h::149][fun_KS_country.h 149]] : This equation should change in case households save
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_country.h::157][fun_KS_country.h 157]] : This equation should change in case households save
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_country.h::231][fun_KS_country.h 231]] : This equation should change in case households save
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_country.h::320][fun_KS_country.h 320]] : This equation could be reclycled in order to ensure WTR change
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_country.h::393][fun_KS_country.h 393]] : The initialization should consider the overall changes in the model
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_financial.h::147][fun_KS_financial.h 147]] : In case of inclusion of household credits, this should be considered as well
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_financial.h::170][fun_KS_financial.h 170]] : In case of inclusion of household credits, this should be considered as well
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_financial.h::308][fun_KS_financial.h 308]] : In case of inclusion of household credits, this should be considered as well
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_financial.h::356][fun_KS_financial.h 356]] : In case of inclusion of household credits, this should be considered as well
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_firm1.h::22][fun_KS_firm1.h 22]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_firm1.h::231][fun_KS_firm1.h 231]] : Double check if this equation should change due to the inclusion of working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_firm1.h::314][fun_KS_firm1.h 314]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_firm1.h::398][fun_KS_firm1.h 398]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_firm1.h::406][fun_KS_firm1.h 406]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_firm1.h::421][fun_KS_firm1.h 421]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_firm1.h::461][fun_KS_firm1.h 461]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_firm1.h::471][fun_KS_firm1.h 471]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_firm2.h::130][fun_KS_firm2.h 130]] : Double check if the competitiveness should take the working hours in consideration
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_firm2.h::221][fun_KS_firm2.h 221]] : Double check if this equation should change due to the inclusion of working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_firm2.h::328][fun_KS_firm2.h 328]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_firm2.h::399][fun_KS_firm2.h 399]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_firm2.h::497][fun_KS_firm2.h 497]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_firm2.h::573][fun_KS_firm2.h 573]] : Double check if the inclusion of working hours affects this variable
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_firm2.h::596][fun_KS_firm2.h 596]] : Double check if the inclusion of working hours affects this variable
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_firm2.h::642][fun_KS_firm2.h 642]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_firm2.h::836][fun_KS_firm2.h 836]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_firm2.h::950][fun_KS_firm2.h 950]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_firm2.h::959][fun_KS_firm2.h 959]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_firm2.h::968][fun_KS_firm2.h 968]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_firm2.h::1028][fun_KS_firm2.h 1028]] : Double check if this equation should change due to the inclusion of working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_firm2.h::1084][fun_KS_firm2.h 1084]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_firm2.h::1101][fun_KS_firm2.h 1101]] : Double check if this equation should change due to the inclusion of working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_firm2.h::1197][fun_KS_firm2.h 1197]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_firm2.h::1221][fun_KS_firm2.h 1221]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_firm2.h::1241][fun_KS_firm2.h 1241]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_firm2.h::1264][fun_KS_firm2.h 1264]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_firm2.h::1285][fun_KS_firm2.h 1285]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_firm2.h::1303][fun_KS_firm2.h 1303]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_labor.h::21][fun_KS_labor.h 21]] : It will need to have a reference working time.
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_labor.h::32][fun_KS_labor.h 32]] : This should be refactored in terms of working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_labor.h::99][fun_KS_labor.h 99]] : This should be refactored in terms of working hours (depending on how wages are redifined)
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_labor.h::125][fun_KS_labor.h 125]] : Unclear on how to set this variable when the intensive form is implemented
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_labor.h::150][fun_KS_labor.h 150]] : It will need to have a reference working time.
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_labor.h::168][fun_KS_labor.h 168]] : This should be refactored in terms of working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_labor.h::183][fun_KS_labor.h 183]] : The underlying equation should be refactored in terms of working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_labor.h::191][fun_KS_labor.h 191]] : It should be refactored in terms of working hours (considering the actually worked and the available hours)
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_labor.h::231][fun_KS_labor.h 231]] : This should be refactored in terms of working hours (depending on how wages are redifined)
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_labor.h::255][fun_KS_labor.h 255]] : This should be refactored in terms of working hours (depending on how skill are redifined)
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_labor.h::334][fun_KS_labor.h 334]] : This should be refactored in terms of working hours (depending on how wages are redifined)
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_stats.h::231][fun_KS_stats.h 231]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_stats.h::255][fun_KS_stats.h 255]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_stats.h::270][fun_KS_stats.h 270]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_stats.h::417][fun_KS_stats.h 417]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_stats.h::426][fun_KS_stats.h 426]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_stats.h::443][fun_KS_stats.h 443]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_stats.h::452][fun_KS_stats.h 452]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_stats.h::549][fun_KS_stats.h 549]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_stats.h::561][fun_KS_stats.h 561]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_stats.h::583][fun_KS_stats.h 583]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_stats.h::591][fun_KS_stats.h 591]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_stats.h::601][fun_KS_stats.h 601]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_stats.h::613][fun_KS_stats.h 613]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_stats.h::622][fun_KS_stats.h 622]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_stats.h::641][fun_KS_stats.h 641]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_stats.h::659][fun_KS_stats.h 659]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_stats.h::674][fun_KS_stats.h 674]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_stats.h::848][fun_KS_stats.h 848]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_stats.h::869][fun_KS_stats.h 869]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_stats.h::889][fun_KS_stats.h 889]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_stats.h::918][fun_KS_stats.h 918]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_support.h::473][fun_KS_support.h 473]] : It will be necessary to adjust the how wage is used in this function
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_support.h::534][fun_KS_support.h 534]] : It might be necessary to check how to handle skills in the intensive form
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_support.h::561][fun_KS_support.h 561]] : This functions will need to be adjusted in order to comtemplate the decisions in terms of working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_support.h::644][fun_KS_support.h 644]] : This functions will need to be adjusted in order to comtemplate the decisions in terms of working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_support.h::692][fun_KS_support.h 692]] : This functions will need to be adjusted in order to comtemplate the decisions in terms of working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_support.h::768][fun_KS_support.h 768]] : This functions will need to be adjusted in order to comtemplate the decisions in terms of working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_support.h::861][fun_KS_support.h 861]] : This functions might need to be adjusted depending on how skills are defined
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_support.h::1013][fun_KS_support.h 1013]] : This functions might need to be adjusted depending on how skills are defined
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::39][fun_KS_test.h 39]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::59][fun_KS_test.h 59]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::81][fun_KS_test.h 81]] : It should consider Household deposits as well
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::120][fun_KS_test.h 120]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::136][fun_KS_test.h 136]] : It should consider Household deposits as well
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::151][fun_KS_test.h 151]] : It should consider Household deposits as well
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::162][fun_KS_test.h 162]] : It should consider Household savings as well
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::166][fun_KS_test.h 166]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::178][fun_KS_test.h 178]] : It should consider Household deposits as well
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::316][fun_KS_test.h 316]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::326][fun_KS_test.h 326]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::338][fun_KS_test.h 338]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::372][fun_KS_test.h 372]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::696][fun_KS_test.h 696]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::717][fun_KS_test.h 717]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::720][fun_KS_test.h 720]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::722][fun_KS_test.h 722]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::724][fun_KS_test.h 724]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::769][fun_KS_test.h 769]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::775][fun_KS_test.h 775]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::780][fun_KS_test.h 780]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::785][fun_KS_test.h 785]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::799][fun_KS_test.h 799]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::801][fun_KS_test.h 801]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::803][fun_KS_test.h 803]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::805][fun_KS_test.h 805]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::809][fun_KS_test.h 809]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::811][fun_KS_test.h 811]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::813][fun_KS_test.h 813]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::815][fun_KS_test.h 815]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::819][fun_KS_test.h 819]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::821][fun_KS_test.h 821]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::823][fun_KS_test.h 823]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::825][fun_KS_test.h 825]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::827][fun_KS_test.h 827]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::829][fun_KS_test.h 829]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::831][fun_KS_test.h 831]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::834][fun_KS_test.h 834]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::836][fun_KS_test.h 836]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::839][fun_KS_test.h 839]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::841][fun_KS_test.h 841]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::843][fun_KS_test.h 843]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::845][fun_KS_test.h 845]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::847][fun_KS_test.h 847]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::849][fun_KS_test.h 849]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::851][fun_KS_test.h 851]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::853][fun_KS_test.h 853]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::855][fun_KS_test.h 855]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::857][fun_KS_test.h 857]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::859][fun_KS_test.h 859]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::861][fun_KS_test.h 861]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::863][fun_KS_test.h 863]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::865][fun_KS_test.h 865]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::867][fun_KS_test.h 867]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::869][fun_KS_test.h 869]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::871][fun_KS_test.h 871]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::873][fun_KS_test.h 873]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::888][fun_KS_test.h 888]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::890][fun_KS_test.h 890]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::892][fun_KS_test.h 892]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::894][fun_KS_test.h 894]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::898][fun_KS_test.h 898]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::900][fun_KS_test.h 900]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::902][fun_KS_test.h 902]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::904][fun_KS_test.h 904]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::906][fun_KS_test.h 906]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::909][fun_KS_test.h 909]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::941][fun_KS_test.h 941]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::945][fun_KS_test.h 945]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::949][fun_KS_test.h 949]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::957][fun_KS_test.h 957]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::965][fun_KS_test.h 965]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::968][fun_KS_test.h 968]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::971][fun_KS_test.h 971]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::978][fun_KS_test.h 978]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::981][fun_KS_test.h 981]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::984][fun_KS_test.h 984]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::991][fun_KS_test.h 991]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::996][fun_KS_test.h 996]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1000][fun_KS_test.h 1000]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1003][fun_KS_test.h 1003]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1054][fun_KS_test.h 1054]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1058][fun_KS_test.h 1058]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1089][fun_KS_test.h 1089]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1098][fun_KS_test.h 1098]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1100][fun_KS_test.h 1100]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1102][fun_KS_test.h 1102]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1104][fun_KS_test.h 1104]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1106][fun_KS_test.h 1106]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1116][fun_KS_test.h 1116]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1121][fun_KS_test.h 1121]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1123][fun_KS_test.h 1123]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1130][fun_KS_test.h 1130]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1132][fun_KS_test.h 1132]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1134][fun_KS_test.h 1134]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1136][fun_KS_test.h 1136]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1149][fun_KS_test.h 1149]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1153][fun_KS_test.h 1153]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1184][fun_KS_test.h 1184]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1190][fun_KS_test.h 1190]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1195][fun_KS_test.h 1195]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1205][fun_KS_test.h 1205]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1208][fun_KS_test.h 1208]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1295][fun_KS_test.h 1295]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1300][fun_KS_test.h 1300]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1327][fun_KS_test.h 1327]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1364][fun_KS_test.h 1364]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1369][fun_KS_test.h 1369]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1371][fun_KS_test.h 1371]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1386][fun_KS_test.h 1386]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1388][fun_KS_test.h 1388]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1390][fun_KS_test.h 1390]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1396][fun_KS_test.h 1396]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1398][fun_KS_test.h 1398]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1412][fun_KS_test.h 1412]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1414][fun_KS_test.h 1414]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1416][fun_KS_test.h 1416]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1418][fun_KS_test.h 1418]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1420][fun_KS_test.h 1420]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1422][fun_KS_test.h 1422]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1424][fun_KS_test.h 1424]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1439][fun_KS_test.h 1439]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1445][fun_KS_test.h 1445]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1447][fun_KS_test.h 1447]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1493][fun_KS_test.h 1493]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1512][fun_KS_test.h 1512]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1517][fun_KS_test.h 1517]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1520][fun_KS_test.h 1520]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1527][fun_KS_test.h 1527]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1534][fun_KS_test.h 1534]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1537][fun_KS_test.h 1537]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1677][fun_KS_test.h 1677]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1679][fun_KS_test.h 1679]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1681][fun_KS_test.h 1681]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1683][fun_KS_test.h 1683]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1693][fun_KS_test.h 1693]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1743][fun_KS_test.h 1743]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1880][fun_KS_test.h 1880]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1899][fun_KS_test.h 1899]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1934][fun_KS_test.h 1934]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1970][fun_KS_test.h 1970]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1972][fun_KS_test.h 1972]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1987][fun_KS_test.h 1987]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1989][fun_KS_test.h 1989]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1991][fun_KS_test.h 1991]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1994][fun_KS_test.h 1994]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::1996][fun_KS_test.h 1996]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::2006][fun_KS_test.h 2006]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::2008][fun_KS_test.h 2008]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::2010][fun_KS_test.h 2010]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::2012][fun_KS_test.h 2012]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::2014][fun_KS_test.h 2014]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::2016][fun_KS_test.h 2016]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::2018][fun_KS_test.h 2018]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::2020][fun_KS_test.h 2020]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::2029][fun_KS_test.h 2029]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::2110][fun_KS_test.h 2110]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::2114][fun_KS_test.h 2114]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::2125][fun_KS_test.h 2125]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_test.h::2129][fun_KS_test.h 2129]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_vintage.h::23][fun_KS_vintage.h 23]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_vintage.h::50][fun_KS_vintage.h 50]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_vintage.h::105][fun_KS_vintage.h 105]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_worker.h::21][fun_KS_worker.h 21]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_worker.h::48][fun_KS_worker.h 48]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_worker.h::163][fun_KS_worker.h 163]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_worker.h::194][fun_KS_worker.h 194]] : Double check if this equation should change due to the inclusion of working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_worker.h::288][fun_KS_worker.h 288]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_worker.h::406][fun_KS_worker.h 406]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_worker.h::440][fun_KS_worker.h 440]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_worker.h::448][fun_KS_worker.h 448]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_worker.h::470][fun_KS_worker.h 470]] : This should be adjusted in order to consider working hours
+- [[file:~/LSD/Work/Made/ABM-WTR/fun_KS_worker.h::492][fun_KS_worker.h 492]] : This should be adjusted in order to consider working hours
