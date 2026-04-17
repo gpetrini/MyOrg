@@ -1,0 +1,13 @@
+#+title:      Change Point Detection
+#+date:       [2026-04-17 Fri 15:01]
+#+filetags:   :method:placeholder:statistics:timeseries:
+#+identifier: 20260417T150104
+
+This technicque consists of detecting changes in the statistical properties of the time series (similar to structural breaks).
+This is further use back into time series segmentation, which groups them in terms of similar properties.
+
+Approaches:
+
+- Offline detection :: The ideia is to detect change points that already occurred.
+  It requires the information of the entire data beforehand.
+- Online detection :: Applies the CPD in real time.

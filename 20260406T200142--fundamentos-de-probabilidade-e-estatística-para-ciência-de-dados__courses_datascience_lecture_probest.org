@@ -493,3 +493,93 @@ b) com reposição
 
 O caso sem reposição é típico de um caso de hipergeométrica.
 Já o caso com reposição é a distribuição binomial.
+
+* Modelos probabilísticos contínuos
+
+Lembrando que esses modelos informam qual é a distribuição de determinada variável aleatória.
+Isso permite combinar exercícios com diferentes distribuições.
+Exemplo: Uma variável aleatória segue uma distribuição normal; qual é a probabilidade de que determinado item em uma linha de produção seja o primeiro rejeitado em uma sequência de \(n\) ocorrências (distribuição geométrica).
+Seria o caso de que \(P(X < x)\) e \(P(Y = k)\) (combinando modelos fdp discretas com modelos discretos).
+
+** Distribuição uniforme
+
+Uma variável aleatória contínua segue uma distribuição uniforme se sua função densidade de probabilidade possui uma probabilidade constante em um intervalo fechado \(\[a,b\]\).
+Intervalos com um mesmo comprimento terão a mesma probabilidade.
+
+- Esperança: \(E[X] = (a + b)/2\)
+- Variância: \(V(X) = (b-a)^2/12\)
+  - Em que \(c\) é o tamanho (constante) do incremento (\(c = (b-a)/(n-1)\))
+
+** Distribuição normal
+
+Uma variável aleatória contínua que tome todos os valores na reta real segue uma distribuição Gaussiana se sua função densidade de probabilidade possui a seguinte forma:
+
+\[f(x) = \frac{1}{\sigma\sqrt{2\pi}}\exp \left[-\frac{1}{2}\left(frac{x - \mu}{\sigma}\right)^{2}\right], \quad -\infty < x < \infty\]
+- Esperança: \(E[X] = \mu\)
+- Variância: \(V(X) = \sigma^{2}\)
+- Propriedades:
+  - Simétrica em relação à \(\mu\)
+  - \(f(x) \to 0\) quando \(x \to \pm \infty\)
+  - O valor máximo de \(f(x)\) ocorre quando \(x = \mu\)
+
+Se \(X \sym \mathbb{N}(\mu, \sigma^{2})\), então se \(Y = aX + b\), então:
+\[Y \sym \mathbb{N}(a\mu + b, a^{2}\sigma^{2})\]
+
+O mesmo raciocínio se aplica para definir a normal padronizada: \(Z \sym \mathbb{N}(0,1)\) em que \(Z = \frac{X -\mu}{\sigma}\).
+Para computar \(P(a \leq X \leq b) \int_{a}^{b} f(x)dx\) quando \(X\) segue uma distribuição normal, pode não ter valor exato, então adota-se o método de resolução numérica.
+Sendo assim, transforma-se \(X\) em \(Z\) a compara com o valor já tabelado de modo que \(P\left(\frac{a - \mu}{\sigma} \leq Z \leq \frac{b - \mu}{\sigma} \right)\).
+
+Exemplo: Se \(X \sym \mathbb{N}(\mu = 165, \sigma^{2} = 9)\), calcule \(P(X < 162)\):
+
+\[P(X < 162) = P\left(Z < \frac{162 - 165}{\sqrt{9}}\right) = P(Z < -1)\]
+
+Olhando os dados tabelados, \(P(Z < -1) = 0.158\) dado que essas tabelas indicam a probabilidade \(< a\), sendo a área abaixo da curva normal até o ponto \(a\), sem incluí-lo.
+Em programação, utiliza-se funções que retornam CDF (distribuição acumulada, \(F(a)\)).
+
+Para os casos \(P(X > b)\), faz-se \(1 - P(X < b)\).
+Com \(P(a \leq X \leq b) = P(X \leq b) - P(X \leq a)\)
+
+** Distribuição exponencial
+
+Uma variável aleatória \(X\) segue o modelo exponencial se sua função de densidade de probabilidade é dada por:
+
+
+\[f(x) = \lambda \exp{-\lambda x}, x \geq 0; 0 c.c. \quad \lambda > 0\]
+
+
+- Quando \(x = 0, f(x) = \lambda\)
+  - Quando maior \(\lambda\), maior o decaimento
+  - Interpretação é a de taxa de "emissão"
+  - O tempo de espera segue um modelo exponencial
+    - Como consequência, implica que o sistema não tem memória
+    - Não é possível prever o futuro a partir dos dados do passado
+    - Também são chamados de sistemas Markovianos
+    - \(P(X > t + s | X > s) = P(X > t)\)
+- Esperança: \(E[X] = 1/\lambda\)
+  - Sabendo qual é o tempo de vida médio \(E[X]\), pode-se obter o \(\lambda\) como consequência
+- Variância: \(V(X) = 1/\lambda^{2}}\)
+
+** Distribuição gamma
+
+
+Uma variável aleatória \(X\) segue o modelo gamma se sua função de densidade de probabilidade é dada por:
+
+\[f(x) = \frac{\lambda^{\alpha}}{\Gamma(\alpha)}x^{\alpha-1} e^{-\lambda x} \quad \lambda, \alpha > 0, x \geq 0; 0 c.c.\]
+em que
+\[\Gamma(\alpha) = \int_{0}^{\infty} t^{\alpha-1} \exp^{-t}dt\]
+
+Se \(\alpha\) for inteiro positivo, equivale à distribuição de Erlang.
+A distribuição de Erlang corresponde a soma de \(\alpha\) variáveis aleatórias independentemente distribuídas que, por sua vez, seguem a distribuição exponencial.
+
+- Esperança: \(E[X] = \alpha/\lambda\)
+- Variância: \(V(X) = \alpha/\lambda^{2}}\)
+
+** Outras distribuições
+
+- Distribuição chi-quadrado :: Resultante de soma de \(k\) variáveis aleatórias independentes com distribuição zero e desvio-padrão unitário, possuindo \(k\) grau de liberdade.
+  - \[X = \sum^k Z_{i}^{2}\]
+  - \[X \sym \chi^{2}_{k} \]
+- Distribuição beta :: Trata-se dos casos em que a variável aleatória contínua é limitada entre 0 e 1
+  - Possui uma função Beta que atua como constante de normalização
+  - Utilização, por exemplo, quando a V.A. é representada por porcentagens de ocorrências
+- T de student :: Esta distribuição se aproxima de uma distribuição normal quando se aumenta os graus de liberdade

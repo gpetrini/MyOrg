@@ -121,6 +121,12 @@ The results consider 100 monte carlo runs without changing the code:
   - alpha2 (+): Beta distribution parameters for imitation drawing
   - Tr (0/-): number of periods a worker stay in firm before retiring
 
+* Known issues
+
+- Some negative values on the capital goods sector
+- Inconsistent finance in the capital goods sector
+- High profit rate in the consumption goods sector
+
 * Including working hours
 
 In order to move towards the intensive form, some variables need to be refactored in termos of working hours.
