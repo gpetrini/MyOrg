@@ -583,3 +583,615 @@ A distribuição de Erlang corresponde a soma de \(\alpha\) variáveis aleatóri
   - Possui uma função Beta que atua como constante de normalização
   - Utilização, por exemplo, quando a V.A. é representada por porcentagens de ocorrências
 - T de student :: Esta distribuição se aproxima de uma distribuição normal quando se aumenta os graus de liberdade
+
+* Variáveis aleatórias multidimensionais
+
+** Introdução
+
+Seja \(\epsilon\) um experimento aleatório associado a um espaço amostral \(\Omega\).
+Sejam \(X_{1} = X_{1}(\omega), X_{2} = X_{2}(\omega), \ldots\), funções que associam um número real  a cada resultado \(\omega \in \Omega\).
+Denominamos vetor aleatório o conjunto \(X = [X_{1}, X_{2}, \ldots]\).
+Sendo assim, invés de associar cada ponto no espaço amostral à reta real, associa-se a um espaço \(n\)-dimensional.
+
+
+Sejam \(X\) e \(Y\) variáveis aleatórias associadas a um espaço amostral \(\Omega\).
+O par \((X,Y)\) será uma variável aleatória discreta bidimensional se os valores possíveis forem finitos ou infinito enumeráveis.
+A cada resultado possíve associamos um número
+
+\[p(x_{i},y_{j}) = P(X = x_{i}, Y = y_{j})\]
+Esta é a distribuição de probabilidade conjunta discreta, satisfazendo:
+- \(0 \leq P(X = x_{i}, Y = y_{j}) \leq 1 \forall i,j, = 1, 2, \ldots\)
+- \(\sum_{i}^{\infty} \sum_{j}^{\infty} P(X = x_i, Y = y_j) = 1\)
+
+Estendendo para o caso contínuo, tem-se que \((X,Y)\) devem tomar todos os valores possíveis em algum conjunto não enumerável de modo que a função densidadede probabilidade conjunta satisfaz:
+
+- \(f(x,y) \geq 0 \forall (x,y) \in \mathbb{R}^{2}\)
+- \(\int_{-\infty}^{\infty} \int_{-\infty}^{\infty} f(x,y)dxdy = 1\)
+
+** Distribuição de probabilidade marginal
+
+Seja \((X, Y)\) uma variável aleatória discreta bidimensional.
+Sendo assim, a distribuição de probabilidade marginal de \(X\) é dada por:
+
+\[P(X = x_{i}) = \sum_{j=1}^{\infity} P(X = x_i, Y = y_j)\]
+
+enquanto a de \(Y\) é:
+\[P(Y = y_{j}) = \sum_{i=1}^{\infity} P(X = x_i, Y = y_j)\]
+
+Como exemplo, tome a distribuição de probabilidade conjunta discreta:
+
+| \(X_{1}, X_{2}\) | 0    | 1    |
+|          0 | 9/21 | 5/21 |
+|          1 | 5/21 | 2/21 |
+
+
+A distribuição de probabilidade marginal é dada por:
+
+
+|    \(X_{1}, X_{2}\) | 0     | 1    | \(P(X_{1} = x)\) |
+|             0 | 9/21  | 5/21 | 14/21         |
+|             1 | 5/21  | 2/21 | 7/21          |
+| \(P(X_{2} = x)\) | 14/21 | 7/21 | 1             |
+
+Interpretação \(P(X_{2} = 1)\): \(P(X_{2} = 1, X_{1} = 0) + P(X_{2} = 1, X_{1} = 1) = 7/21\)
+Sendo assim, é a probabilidade quando fixa-se uma das variáveis enquanto as demais podem variar livremente.
+
+No caso contínuo, temos:
+
+\[f_x(x) = \int_{-\infty}^{\infty} f(x,y)dy\]
+\[f_y(y) = \int_{-\infty}^{\infty} f(x,y)dx\]
+
+Isso permite, por exemplo, calcular \(P(a \leq X \leq b)\) a partir da densidade marginal de \(X\):
+
+\[P(a \leq X \leq b) = \int_{a}^{b} f_{x}(x)dx\]
+Sendo assim, é possível avaliar a probabilidade de apenas uma das variáveis a partir da função densidade de probabilidade marginal.
+
+** Probabilidade condicional
+:LOGBOOK:
+CLOCK: [2026-04-20 Mon 10:37]--[2026-04-20 Mon 11:29] =>  0:52
+:END:
+
+Seja o vetor aleatório bidimensional \((X,Y)\).
+A probabilidade condicional de \(X = x\) dado que \(Y = y\) é dada por:
+
+\[P(X = x, Y = y) = \frac{P(X = x, Y = y)}{P(Y = y)} \quad P(Y = y) > 0\]
+
+Sendo assim, é a função de densidade de probabilidade conjunta dividida pela função de densidade marginal.
+
+|    \(X_{1}, X_{2}\) | 0     | 1    | \(P(X_{1} = x)\) |
+|             0 | 9/21  | 5/21 | 14/21         |
+|             1 | 5/21  | 2/21 | 7/21          |
+| \(P(X_{2} = x)\) | 14/21 | 7/21 | 1             |
+
+Calculando que \(P(X_{1} = x | X_{2} = y)\), tem-se:
+
+|                                     | X2 = 0     | X2 = 1    |
+| \(P(X1 = 0  \text{ dado } X2 = x)\) | 9/21/14/21 | 5/21/7/21 |
+| \(P(X1 = 1  \text{ dado } X2 = x)\) | 5/21/14/21 | 2/21/7/21 |
+
+
+Para o caso contínuo, temos:
+
+\[f_{X|Y}(x | Y = y) = \frac{f(x, y)}{f_Y(y)} \quad f_Y(y) > 0\]
+
+Para uma situação em que \(X\) varia entre \([0,1]\), tem-se:
+\[P(X \geq \frac12 | Y = y) = \int_{\frac12}^{1}f_{X|Y}(x|y)dx = \int_{\frac12}^{1} \frac{f(x,y)}{f_Y(y)} dx \]
+
+** Independência
+
+As variáveis aleatórias são independentes se, para cada caso:
+- Discreto :: \(P(X = x_i, Y = y_j) = P(X = x_i)P(Y = y_j) \forall i\neq j\)
+- Contínuio :: \(f(x,y) = f_X(x)f_Y(y) \forall (x,y) \in \mathbb{R}^{2}\)
+
+Caso elas sejam idependentes, não é possível utilizar nenhuma delas para predizer a outra.
+
+* Esperança e variância condicionais (caso multivariado)
+
+** Esperança de um vetor aleatório
+
+Seja \(g(X,Y)\) uma função das variáveis aleatórias \(X\) e \(Y\)
+
+- Caso discreto :: \(E(g(X,Y)) = \sum^{\infty}_{i=1}\sum^{\infty}_{j=1}g(x_i, y_j)P(X = x_i, Y = y_j)\)
+- Caso contíuo :: \(E(g(X,Y)) = \int^{\infty}_{-\infty}\int^{\infty}_{-\infty}g(x_i, y_j)P(X = x_i, Y = y_j)dxdy\)
+  - Em que \(P(\dot)\) é a função densidade de probabilidade
+- Propriedades:
+  - Se \(X\) e \(Y\) forem independentes, então \(E[XY] = E[X]E[Y]\)
+    - No entanto, a volta não é válida (a identidade da multiplicação não defini independência)
+
+*** Esperança condicional
+
+
+- Caso discreto: \(E[X | Y = y] = \sum^{\infty}_{i=1} x_{i}P(X = x_{i} | Y = y)\)
+- Caso contínuo: \(E[X | Y = y] = \int_{-\infty}^{\infty}x f_{X|Y}(x|y)dx\)
+- Em que \(P(X = x_{i} | Y = y)\) e \(f_{X|Y}(x|y)\) são probabilidades condicionais
+  - Memo: \(f_{X|Y}(x|y) = f(X,Y)/f_{Y}(Y)\)
+
+*** Lei da esperança total
+
+\[E(X) = E(E(X | Y))\]
+
+- Caso discreto: \(E(X) = \sum_{y} E(X | Y = y) P(Y = y)\)
+  - Exemplo discutido: Trabalhador tem vários caminhos, mas alguns deles retorna ao ponto inicial
+    - Sendo assim, a esperança aparece também na probabilidade desses caminhos que envolvem o retorno
+  - Sendo assim, mostra-se como pode estender o cômputo da esperança total para o caso multivariado
+    - Raciocínio similar foi utilizado ao aplicar o Teorema de Bayes
+
+** Variância de um vetor aleatório
+
+Tal como no caso univariado,
+
+\[V[g(X,Y)] = E[g(X, Y)^{2}] - E^{2}[g(X, Y)]\]
+
+- Propriedades:
+  - Se \(X\) e \(Y\) forem independentes, então \(V(X + Y) = V(X) + V(Y)\)
+
+*** Variância condicional
+
+\[V[X|Y] = E[X^{2} | Y] - E^{2}[X | Y]\]
+
+** Covariância
+
+Sejam \(X\) e \(Y\) variáveis aleatórias, a covariância entre elas é dada por:
+
+\[Cov(X, Y) = E((X - E(X))(Y - E(Y))) = E(XY) - E(X)E(Y)\]
+
+A covariância mostra a relação entre duas variáveis.
+
+Caso sejam independentes, a covariância é nula.
+Note que:
+\[Cov(X, X) = E((X - E(X))(X - E(X))) = E(X^{2}) - E^{2}(X) = V(X)\]
+
+** Correlação de Pearson
+
+Essencialmente, é a covariância normalizada pela multiplicação dos desvios-padrão:
+
+\[\rho_{X,Y} = \frac{cov(X,Y)}{\sqrt{V(X)V(Y)}} = \frac{cov(X,Y)}{\sigma_X \sigma_Y}\]
+
+Como consequência, a covariância é remapeada entre \[[-1,1]\].
+
+Caso seja calculado para uma *amostra* de dados, tem-se o coeficiente de Pearson (\(r\)), com as mesmas delimitações da correlação populacional.
+
+É importante destacar que a correlação de Pearson só é capaz de capturar relações *lineares*.
+Além disso, esse coeficiente não mede a inclinação.
+Caso a inclinação seja nula, o coeficiente de Pearson será zero; caso contrário, pode assumir qualquer outro valor.
+Por fim, vale lembrar que não mede causalidade (apenas correlação).
+
+** Distribuição normal multivariada
+
+Uma vez definida a correlação de Pearson, é possível apresentar a distribuição normal multivariada.
+
+#+begin_src latex
+\begin{equation}
+f(\mathbf{x}) = \frac{1}{\sqrt{(2\pi)^k |\boldsymbol{\Sigma}|}} \exp\left( -\frac{1}{2} \underbrace{(\mathbf{x} - \boldsymbol{\mu})' \boldsymbol{\Sigma}^{-1} (\mathbf{x} - \boldsymbol{\mu})}_{\text{Distância de Mahalanobis}^2} \right)
+\end{equation}
+#+end_src
+
+em que::
+- \(\mu\) é o vetor de médias
+- \(\boldsymbol{\Sigma}\) é a matriz de covariância
+  - Ao longo da diagonal principal, tem-se a variância de cada variável
+  - Fora da diagonal principal, tem-se as covariâncias
+
+OBS: A função densidade de probabilidade conjunta pode ser também avaliada como curvas de nível.
+A inclinação das curvas de nível será dada pela correlação enquanto as variâncias individuais regulam o espaçamentos entre os níveis.
+A relação entre as variâncias, por sua vez, dará informação sobre qual direção as curvas de nível serão mais alongadas.
+* Simulação de Monte Carlo
+:PROPERTIES:
+:header-args:python: :session *MC* :results output :exports both
+:END:
+
+** Introdução
+
+
+A ideia da simulação de Monte-Carlo é reproduzir um experimento aleatório no computador.
+Dito de outro modo, é um método para gerar números aleatórios com base em determinada função de probabilidade.
+
+*** Gereção de números aleatórios
+
+No método chamada Linear Congruential Generator, nós geramos uma sequência de números pseudo-aleatórios através da relação de recorrência:
+$$X_{n+1} = (aX_n + c) \mod m$$
+onde $X_0$ é a semente, \(m\), \(a\) e \(c\) são inteiros maiores do que zero.
+A sequência obtida satisfaz  $0 \leq X_i \leq m$.
+Para gerar o número no intervalo [0,1], usamos $$U_n = X_n/m.$$
+
+#+begin_src python
+import numpy as np
+import matplotlib.pyplot as plt
+
+# função para gerar os números aleatórios
+def random(Xi, a, c, m):
+    Xii = (a*Xi + c)%m
+    return Xii
+
+# constantes
+a = 11; c = 0; m = 16
+X0 = 1 # semente do gerador
+n = 20 # quantidade de números a serem gerados
+Xi = X0 # inicia a sequência de números
+X = [X0] # armazena os números gerados
+for i in range(n):
+    Xi = random(Xi,a,c,m)
+    X.append(Xi)
+print(X)
+# mostra a sequência gerada
+s = np.arange(0, len(X))
+plt.figure(figsize=(8,5))
+plt.bar(s,X, color = 'gray')
+plt.xlabel('n', fontsize = 20)
+plt.ylabel('x',fontsize = 20)
+plt.savefig('./figs/MC1.svg')
+plt.show(True)
+# mostra o histograma da sequência gerada
+plt.figure(figsize=(8,5))
+plt.hist(X, bins='auto', color = 'gray',
+         histtype='bar', ec='black')
+plt.xlabel('x', fontsize = 20)
+plt.ylabel('P(x)',fontsize = 20)
+plt.savefig('./figs/MC2.svg')
+plt.show(True)
+#+end_src
+
+#+RESULTS:
+:results:
+[1, 11, 9, 3, 1, 11, 9, 3, 1, 11, 9, 3, 1, 11, 9, 3, 1, 11, 9, 3, 1]
+:end:
+
+Notamos que a sequência é periódica, sendo que $[1, 11, 9, 3]$ se repete.
+Ou seja, não temos um bom gerador de números aleatórios, pois podemos prever o próximo número se descobrir a sequência.
+Para resolver esse problema, temos o seguinte teorema, demonstrado no livro The Art Of Computer Programming (Donald Knuth).
+
+O gerador pseudo-aleatório linear produz uma sequência aperiódica se as seguintes condições forem satisfeitas:
+- \(X_{n+1}_{} = (aX_n + c)\mod m, \quad U_n = X_n/m.\)
+- Se $q$ é um número primo que divide $m$, então ele divide $b=a-1$.
+  - OBS: \(q\) não está definido ainda
+- Se $m$ é múltiplo de 4, então $b=a-1$ deve ser múltiplo de 4.
+- O único inteiro que divide exatamente $m$ e $c$ é  valor um.
+
+Simulando com valores que satisfazem essas condições:
+
+#+begin_src python
+import numpy as np
+import matplotlib.pyplot as plt
+
+# função que gera os números aleatórios
+def random(Xi, a, c, m):
+    Xii = (a*Xi + c)%m
+    return Xii
+
+# constantes
+a = 7**5; c = 0; m = 2**31 - 1
+X0 = 1 # semente do gerador
+n = 500 # quantidade de números a serem gerados
+Xi = 1 # inicia sequência
+X = [X0] # armazena os números gerados
+for i in range(n):
+    Xi = random(Xi,a,c,m)
+    X.append(Xi/m)
+# mostra a sequência gerada
+s = np.arange(0, len(X))
+plt.figure(figsize=(8,5))
+plt.bar(s,X, color = 'gray')
+plt.xlabel('n', fontsize = 20)
+plt.ylabel('u',fontsize = 20)
+plt.savefig('.figs/MC3.svg')
+plt.show(True)
+# mostra o histograma da sequência gerada
+plt.figure(figsize=(8,5))
+plt.hist(X, bins='auto', color = 'gray',
+         histtype='bar', ec='black',density='True')
+plt.xlabel('u', fontsize = 20)
+plt.ylabel('P(u)',fontsize = 20)
+plt.savefig('.figs/MC4.svg')
+plt.show(True)
+#+end_src
+
+#+RESULTS:
+:results:
+:end:
+
+Sendo assim, foi possível gerar números aleatórios que seguem uma distribuição próxima à uniforme.
+A partir disso, tem-se um gerador de números aleatórios para gerar outras simulações e distribuições.
+Partindo de um caso que tem uma urna com bolas brancas e pretas, existem formas complementares de realizar o experimento.
+É possível fazer um sorteio uniforme em que se o valor obtido for menor do que \(p\) (proporção de brancas), então a bola sorteada é branca; preta caso contrário.
+
+#+begin_src python
+import random
+import numpy as np
+import matplotlib.pyplot as plt
+# inicia a semente do gerador aleatório
+np.random.seed(10)
+
+vp = [] # lista que armazena a fração de ocorrências
+vsim = [] # armazena o número de simulações
+Nmax = 1000 # numero máximo de simulações
+p = 0.6 # probabilidade de sair uma bola branca
+for nsim in np.arange(1,Nmax,1):
+    n = 0 # número de bolas brancas retiradas
+    for i in range(1,nsim):
+        if(np.random.uniform(0,1)<p):
+            # se o valor sorteado é menor do que p
+            n = n + 1
+    vp.append(n/nsim)
+    vsim.append(nsim)
+
+plt.figure(figsize=(8,6))
+plt.plot(vsim, vp, linestyle='-', color="gray",
+         linewidth=2,label = 'Valor simulado')
+plt.axhline(y=p, color='black', linestyle='--',
+            label = 'Valor teórico')
+plt.ylabel("Fração de bolas brancas", fontsize=20)
+plt.xlabel("Número de simulações", fontsize=20)
+plt.xlim([0.0, Nmax])
+plt.ylim([0.0, 1.0])
+plt.legend(fontsize=15)
+plt.savefig('./figs/sim1_MC.svg')
+plt.show(True)
+#+end_src
+
+#+RESULTS:
+:results:
+:end:
+
+Esse tipo de raciocínio pode ser extendido para mais de \(n\) categorias, sempre sorteando um valor aleatório a partir de uma distribuição uniforme e compara com a probabilidade teórica.
+
+Outro tipo de aplicação é o cálculo do valor de \(\pi\) em que a probabilidade é definida em termos da porcentagem da área de um círculo em relação à área do quadrado que o sobrescreve.
+Essa probabilidade será de \(\pi/4\).
+Neste caso, pertencer ao círculo, tem-se \(P(X^{2} + Y^{2} < R^{2})\)
+
+#+begin_src python
+import numpy as np
+import matplotlib.pyplot as plt
+
+R = 1
+x = np.linspace(-R, R, 100)
+y = np.linspace(-R, R, 100)
+X, Y = np.meshgrid(x,y)
+F = X**2 + Y**2 - 1
+plt.figure(figsize=(6,6))
+plt.contour(X,Y,F,[0])
+plt.grid(True)
+
+# Seleciona pontos aleatórios
+for i in range(0,1000):
+    x = np.random.uniform(-1,1)
+    y = np.random.uniform(-1,1)
+    if(x**2 + y**2 < R**2):
+        plt.plot(x,y,'o', color="gray")
+    else:
+        plt.plot(x,y,'o', color="black")
+plt.savefig("./figs/pi_approx_mc.svg")
+plt.show()
+#+end_src
+
+#+RESULTS:
+:results:
+:end:
+
+#+begin_src python
+n = 10000
+count_inside = 0
+for i in np.arange(0,n):
+    x = np.random.uniform(-1,1)
+    y = np.random.uniform(-1,1)
+    if( x**2 + y**2 < 1):
+        count_inside = count_inside + 1
+pi = 4*count_inside/n
+print("Value of pi:", pi)
+#+end_src
+
+#+RESULTS:
+:results:
+Value of pi: 3.15104
+:end:
+
+*** Semente de geração de números aleatórios
+
+Sempre que a definição da semente for declarada, o gerador de números aleatórios é reinicializado.
+Isso permite que o experimento seja reproduzível.
+
+** Cálculo de integrais
+
+Podemos calcular integrais numericamente usando números aleatórios.
+Temos:
+$\theta = \int_{0}^{1} g(u)du = \int_{0}^{1} 1\cdot g(u)du = \int_{0}^{1} f(u) g(u)du = E[g(U)]$
+onde $U$ tem distribuição uniforme em $[0,1]$:
+\begin{equation}
+f(u) =
+\begin{cases}
+1, \quad 0 \leq u \leq 1\\
+0 \quad \mbox{caso contrário}.
+\end{cases}
+\end{equation}
+
+Assim, podemos calcular $\theta$ numericamente:
+$\lim_{n \rightarrow \infty} \sum_{i=1}^{n}\frac{g(U_i)}{n} = E[g(U)] = \theta$
+
+Sendo assim, a integral é numericamente aproximada de uma soma que considera números aleatórios.
+Vamos considerar um exemplo: $\theta = \int_{0}^{1}(x+1)dx = 1.5$
+
+#+begin_src python
+import numpy as np
+# função a ser integrada
+def g(x):
+    f = x + 1
+    return f
+n = 1000 # número de valores sorteados
+theta = 0
+for i in range(n):
+    # sorteia um valor uniformemente em [0,1]
+    u = np.random.uniform(0,1)
+    theta = theta + g(u)
+# calcula a média de theta
+theta = theta/n
+print("Integral: ", theta)
+#+end_src
+
+#+RESULTS:
+:results:
+Integral:  1.495987295919095
+:end:
+
+No caso geral, temos as seguinte integral:
+$\theta = \int_{a}^{b} g(u) du$
+se fizermos $y = \frac{u-a}{b-a}$, temos $du = (b-a)dy$.
+Basicamente, faz-se a troca de variáveis de modo à fazer a normalização min-max dos limites da integral, retornando ao caso anterior.
+Assim,
+$\theta = \int_{a}^{b} g(u) du = \int_{0}^{1} g[(b-a)y + a](b-a) dy = \int_{0}^{1} h(y) dy$,
+onde $h(y) = (b-a)g[(b-a)y + a]$.
+$\theta = E[h(Y)]$.
+Vamos considerar um exemplo:
+$\theta = \int_{2}^{4}(x+1)dx = 8$
+
+#+begin_src python
+import numpy as np
+import matplotlib.pyplot as plt
+
+# função a ser integrada
+def g(x):
+    g = x + 1
+    return g
+
+def h(y,a,b):
+    val = (b-a)*g(a+(b-a)*y)
+    return val
+
+valor_teorico = 8
+a = 2; b = 4 # limites de integração
+Nmax = 1000 # número máximo de simulacoes
+vtheta = []
+vn = []
+for n in range(1,Nmax):
+    theta = 0
+    for i in range(n):
+        u = np.random.uniform(0,1)
+        # calcula theta
+        theta = theta + h(u,a,b)
+    # calcula o valor médio de theta
+    theta = theta/n
+    vtheta.append(theta)
+    vn.append(n)
+# mostra os resultados
+plt.figure(figsize=(8,6))
+plt.plot(vn, vtheta, linestyle='-', color="gray",
+         linewidth=2,label = 'Valor simulado')
+plt.axhline(y=valor_teorico, color='black',
+            linestyle='--', label = 'Valor teórico')
+plt.ylabel('E[g(U)]', fontsize=20)
+plt.xlabel("Número de simulações", fontsize=20)
+plt.legend(fontsize = 15)
+plt.savefig("./figs/Int2_MC.svg")
+plt.show(True)
+#+end_src
+
+#+RESULTS:
+:results:
+:end:
+
+No caso em que um dos limites de integração é infinito, procedemos da seguinte maneira:
+$\theta = \int_{0}^{\infty} g(u) du$
+definindo: $y = 1/(x+1)$ temos $dy = y^2 dx$.
+Então
+$\theta = \int_{0}^{\infty} g(u) du = \int_{0}^{1}g(\frac{1}{y} - 1)\frac{dy}{y^2} = \int_{0}^{1}h(y)dy$
+onde
+$h(y) = \frac{g(1/y-1)}{y^2}$
+$\theta = E[h(Y)]$.
+
+Vamos calcular:
+$\theta = \int_{0}^{\infty} e^{-x}dx = 1$
+
+#+begin_src python
+import random
+import numpy as np
+import matplotlib.pyplot as plt
+
+# função a ser integrada
+def g(x):
+    f = np.exp(-x)
+    return f
+
+def h(y):
+    val = g(1/y -1)/y**2
+    return val
+
+valor_teorico = 1
+Nmax = 1000 # número máximo de simulações
+vtheta = []
+vn = []
+# realiza a simulação
+for n in range(1,Nmax):
+    theta = 0
+    for i in range(n):
+        u = np.random.uniform(0,1)
+        # calcula theta
+        theta = theta + h(u)
+    # calcula o valor médio de theta
+    theta = theta/n
+    vtheta.append(theta)
+    vn.append(n)
+# mostra os resultados
+plt.figure(figsize=(8,6))
+plt.plot(vn, vtheta, linestyle='-', color="gray",
+         linewidth=2,label = 'Valor simulado')
+plt.axhline(y=valor_teorico, color='black',
+            linestyle='--', label = 'Valor teórico')
+plt.ylabel('E[g(U)]', fontsize=20)
+plt.xlabel("Número de simulações", fontsize=20)
+plt.legend(fontsize = 15)
+plt.savefig("./figs/int3_MC.svg")
+plt.show(True)
+#+end_src
+
+#+RESULTS:
+:results:
+:end:
+
+** Integrais múltiplas
+
+Exemplo: Calcule a integral a seguir usando números aleatórios.
+$$
+\theta = \int_0^2 \int_1^2 \left(\frac{x^2y}{3} + y^2\right)dydx = 6
+$$
+
+#+begin_src python
+import numpy as np
+import matplotlib.pyplot as plt
+
+# função a ser integrada
+def g(x,y):
+    g = (x**2)*y/3 + (y**2)
+    return g
+
+def h(z,w,a, b, c , d):
+    h = (b-a)*(d-c)*g(z*(b-a)+a,w*(d-c)+ c)
+    return h
+
+valor_teorico = 6
+Nmax = 1000 # número máximo de simulações
+vtheta = []
+vn = []
+# intevalos de integração
+a = 0; b = 2; c = 1; d = 2
+for n in range(1,Nmax):
+    theta = 0
+    for i in range(n):
+        u1 = np.random.uniform(0,1)
+        u2 = np.random.uniform(0,1)
+        theta = theta + h(u1,u2,a,b,c,d)
+    # calcula o valor médio de theta
+    theta = theta/n
+    vtheta.append(theta)
+    vn.append(n)
+# mostra os resultados
+plt.figure(figsize=(8,6))
+plt.plot(vn, vtheta, linestyle='-', color="gray",
+         linewidth=2,label = 'Valor simulado')
+plt.axhline(y=valor_teorico, color='black',
+            linestyle='--', label = 'Valor teórico')
+plt.ylabel('E[g(U)]', fontsize=20)
+plt.xlabel("Número de simulações", fontsize=20)
+plt.legend(fontsize = 15)
+plt.savefig("./figs/int4_MC.svg")
+plt.show(True)
+#+end_src
+
+** Simulando variáveis aleatórias

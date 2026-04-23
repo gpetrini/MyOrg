@@ -157,3 +157,67 @@ DADOS DO TOMADOR DE SERVIÇO
 - TODO: olhar abstracts e para selecionar o modelo da Marica
 - TODO: Ajustar pastas no drive para sincronizar com o computador
   - Garantir que pasta .git será ignorado
+
+* Levantamentos da evolução do ABM [2026-04-24 Fri]
+
+** Pré-reunião
+:PROPERTIES:
+:ID:       f3706aca-d0e2-4846-a4de-db036f77951e
+:END:
+
+- Samuel:
+  - Avançamos no aprendizado do LSD
+    - Conseguimos replicar um paper do Zero e fazer uma simulação de Monte Carlo e análise de sensibilidade
+    - Também fizemos um overview sobre o modelo da Marica e mostrei alguns resultados mais gerais
+  - Comentar que Lamperti autorizou alunos da graduação se inscreverem na summer school de Pisa
+- Avaliação do modelo da Marica tropicalizado
+  - Comparação com [cite/t:@rodrigues_2025_taxfinanced]
+    - Firmas de bens de capital possuem acesso a crédito no mercado financeiro.
+    - Ausência de distinção de classe social entre as famílias.
+    - Possibilidade de pagamento de dividendos pelas firmas, embora o parâmetro seja usualmente definido como zero.
+    - Famílias não detêm ativos financeiros na estrutura atual.
+    - Estrutura bancária permite a coexistência de múltiplos bancos (desativado nas simulações).
+    - Gastos governamentais restritos ao pagamento de seguro-desemprego e treinamento, sem consumo de bens.
+    - Inexistência de trabalhadores indiretos e de distinção funcional entre trabalhadores de produção e R&D.
+    - Despesas de R&D determinadas com base nas vendas passadas, em detrimento dos lucros retidos.
+    - Exogeneidade do mark-up no setor de bens de capital.
+    - Negociação salarial baseada em protocolo de matching
+    - Taxa de desemprego influenciando a probabilidade de busca por novos empregos por trabalhadores já ocupados.
+    - Oferta salarial das firmas dimensionada para garantir a contratação do volume necessário de candidatos.
+    - Aceitação, por parte dos trabalhadores, das ofertas com maior valor nominal.
+    - Possibilidade de redução de salários nominais sob o regime competitivo.
+    - Função de investimento baseada em acelerador flexível, com expectativas de demanda não míopes.
+    - Função de custo no setor de bens de consumo restrita aos custos laborais, desconsiderando o preço das máquinas.
+    - Heterogeneidade salarial entre trabalhadores dentro de uma mesma firma.
+  - Resultados gerais:
+    - Redução do ritmo de crescimento do PIB após a alteração do regime.
+    - Superávits governamentais no cenário competitivo
+    - Persistência de hiato de crédito elevado e utilização da capacidade próxima ao limite pleno.
+    - Estabilidade do wage share entre os regimes, acompanhada de elevação dos índices de desigualdade (Gini).
+    - Elevação da volatilidade macroeconômica e da probabilidade de crises no regime pós-mudança.
+    - Pressão inflacionária superior no novo regime em comparação à natureza tipicamente deflacionária do K+S original.
+    - Sensibilidade do desemprego: relação positiva com o fator de aprendizado por permanência (tauT) e parâmetros de qualidade (omega3); relação negativa com a intensidade de busca de emprego (omegaU).
+    - Sensibilidade do crescimento do PIB: impacto positivo de parâmetros de imitação (alpha2) e negativo do fator de aprendizado (tauT).
+  - De modo geral, essa família de modelos se importa menos com o lado da demanda
+    - Exemplo: famílias não costuam ser taxadas
+      - Ao incluir imposto sobre os trabalhadores, o governo passa a acumular ativos
+  - Independente da estratégia de inclusão do número de horas trabalhadas, o modelo é estruturado para ser trimestral
+    - Torná-lo mensal ou semanal será bastante custoso (mas possível)
+- Avaliação de como incorporar horas trabalhadas em um ABM
+  - Estou avaliando o K+S da Marica, mas poderia dar continuidade ao ABM verde do Made sem problema algum
+    - Caso a ideia seja ir por ai, seria necessário reimplementar o procedimento de match do mercado de trabalho
+  - A nível de teste, estou pensando em adicionar horas trabalhadas normalizadas (i.e. introduzir de modo que seja igual a 1 para tornar comparável com o modelo da Marica)
+    - Depois, essas horas trabalhadas normalizadas podem ser endogenizadas da forma que acharmos melhor
+    - Isso também permite fazer um choque simples para testar como o modelo se comportaria se as horas fossem diminuídas igualmente
+      - Como contrafactual, isso permite avaliar qual é o papel da heterogeneidade depois
+    - A forma que a mudança no número de horas trabalhadas ocorrerá em relação ao valor de referência (1)
+      - Dessa forma, evita recalibrar o modelo todo por uma simples alteração que não é o núcleo do nosso argumento por enquanto (calibragrem pode ser feita depois)
+      - A lado ruim é que não existe uma comparabilidade imediada dos resutlados (mas passível de ser apresentada ex-post)
+  - Uma etapa da pesquisa que será importante é entender em que medida o número de horas trabalhadas é uma variável de decisão
+    - Em alguns casos, será apenas uma adequação contábil (ex: taxa de desemprego)
+    - Em outros, essa inclusão não é tão trivial (ex: firmas contratam horas ou trabalhadores?)
+    - Também não está evidente sobre qual é o grau de publicidade das informações (trabalhadores saberão que firmas se importam com horas trabalhadas?)
+  - Entrei em contato com o pessoal da UniPi (Eurogreen), mas não tive resposta
+    - Também procurei por algum ABM que tivesse o mercado de trabalho formulado em termos de horas trabalhadas, mas não obtive sucesso (mais próximos: [cite/t:@guerini_2018_noa] ou Worksim (JASSS))
+
+** Pós-reunião
