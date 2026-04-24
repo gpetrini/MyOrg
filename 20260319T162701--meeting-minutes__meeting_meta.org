@@ -142,6 +142,18 @@
   - Data limite para projeto é 13 de Maio
   - Próxima reunião [2026-04-24 sex]
     - Local Gemap
+*** Acompanhamento do andamento da Pesquisa [2026-04-24 sex]
+:PROPERTIES:
+:ID:       7c994881-9c8c-4acc-9e70-46ce4fa439ca
+:END:
+
+- O aluno avançou bastante na leitura dos modelos, levantando questões sobre especificações
+- Teve certa dificuldade em identificar se o tema da pesquisa era em termos da distribuição funcional ou pessoal da renda
+  - Sugeri foco na distribuição pessoal
+- Demonstrou maior interesse no modelo mais sofisticado da Laura
+- Pediu ajuda com a descrição da seção de metodologia
+- Proposta de nova versão entre 04 e 08
+  - Caso não puder sextas, seria melhor terças ou quintas
 
 * Pós-Graduação
 

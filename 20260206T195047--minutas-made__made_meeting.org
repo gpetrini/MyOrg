@@ -221,3 +221,44 @@ DADOS DO TOMADOR DE SERVIÇO
     - Também procurei por algum ABM que tivesse o mercado de trabalho formulado em termos de horas trabalhadas, mas não obtive sucesso (mais próximos: [cite/t:@guerini_2018_noa] ou Worksim (JASSS))
 
 ** Pós-reunião
+
+- Conversar com Samuel sobre possibilidade de ir para Pisa
+  - Seria bom ter uma resposta rápida para garantir uma passagem mais barata
+- Trabalhar com extensões do modelo Russo
+- A ideia seria ter salários por hora trabalhada homogêneos em cada firma (mas heterogêneos entre firmas)
+  - A heterogeneidade será dada pelas horas trabalhadas que serão heterogêneas
+  - A princípio, manter trabalhadores sem heterogeneidade de skill
+    - Um dos argumentos é que é uma variável não tão facilmente observada
+    - Questão importante: o que permitirá gerar heterogeneidade?
+      - A sugestão do Giba é inicializar os trabalhadores com heterogeneidade em termos de preferências entre horas trabalhadas e renda
+- A variável relevante é o número de horas trabalhadas
+  - A economia possui determinada dotação de horas de trabalha e isso é, no estágio atual, mediado pelo número médio de horas trablhadas e número de trabalhadores
+  - Trabalhadores e firmas irão tomar decisões em termos de horas trabalhadas
+  - Não existe uma discretização de horas trabalhadas entre vintages
+    - Ideia: um trabalhador poderá trabalhar determinado tanto de horas em cada vintage
+- O trabalhador passará a ter um foco duplo
+  - Salário por hora trabalhada
+  - Quantidade de horas trabalhadas
+  - O objetivo do trabalhador poderá ser de atingir determinado número de horas trabalhadas dado esse mix de salário-hora e hora
+    - Ideia é similar à uma função utilidade com distribuição exógena de preferências
+    - Isso poderá tornar o matching mais difícil
+- Começar a modelar a economia em que o governo ainda não regula as horas trabalhadas
+  - Isso também servirá de argumento para as discussões que sugerem firmas e trabalhadores negociarem livremente o número de horas trabalhadas
+- O modelo em termosd e horas trabalhadas adiciona a riqueza de mensurar diferentes estados de desemprego
+  - No caso sem horas trabalhadas, esse é um estado binário
+  - Também permite a discussão que baixo desemprego não é necessariamente bom se estiver associado a uma redução dos salários
+- Adotar regime com mercado de trabalho competitivo
+  - TODO: Testar se existe uma forma de rodar o modelo competitivo sem uma transição.
+  - Única forma de regulamentação adicionada será em termos das horas trabalhadas
+- Potenciais mecanismos de endogenização da relação entre produtividade e horas trabalhadas
+  - Na forma atual, supor o coeficiente de produto por horas trabalhadas como constante; depois ajustar
+  - Endogenização via frustração de horas trabalhadas
+  - Learn-by-doing (similar ao da márica)
+  - Descanso
+- Questões a serem tratadas futuramente:
+  - Associação entre produtividade e esforço
+    - Se um trabalhador trabalha um número aquém de horas, poderá se esforçar menos e, por consequência, ter um rendimento menor
+    - O esforço decorreria dessa frustração
+  - Endividamento das famílias pode ser um elemento adicional para enfraquecer o poder de barganha dos trabalhadores
+    - Trabalhadores podem aceitar determinado trabalho porque permite ter acesso à crédito ou para rolar dívida
+      - Ver texto Giba, Mark e Kim
