@@ -1,0 +1,8 @@
+#+title:       Simpson's Paradox
+#+date:       [2026-04-28 Tue 10:14]
+#+filetags:   :paradox:statistics:
+#+identifier: 20260428T101440
+
+This paradox describes the situation in which the relationship between groups of data is different than looking at the data as a whole.
+
+[[wikipedia:Simpson%27s_paradox][Wiki Page]]

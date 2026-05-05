@@ -224,7 +224,7 @@ DADOS DO TOMADOR DE SERVIÇO
 
 - Conversar com Samuel sobre possibilidade de ir para Pisa
   - Seria bom ter uma resposta rápida para garantir uma passagem mais barata
-- Trabalhar com extensões do modelo Russo
+  - Trabalhar com extensões do modelo Russo
 - A ideia seria ter salários por hora trabalhada homogêneos em cada firma (mas heterogêneos entre firmas)
   - A heterogeneidade será dada pelas horas trabalhadas que serão heterogêneas
   - A princípio, manter trabalhadores sem heterogeneidade de skill
@@ -244,7 +244,7 @@ DADOS DO TOMADOR DE SERVIÇO
     - Isso poderá tornar o matching mais difícil
 - Começar a modelar a economia em que o governo ainda não regula as horas trabalhadas
   - Isso também servirá de argumento para as discussões que sugerem firmas e trabalhadores negociarem livremente o número de horas trabalhadas
-- O modelo em termosd e horas trabalhadas adiciona a riqueza de mensurar diferentes estados de desemprego
+- O modelo em termos de horas trabalhadas adiciona a riqueza de mensurar diferentes estados de desemprego
   - No caso sem horas trabalhadas, esse é um estado binário
   - Também permite a discussão que baixo desemprego não é necessariamente bom se estiver associado a uma redução dos salários
 - Adotar regime com mercado de trabalho competitivo
@@ -262,3 +262,42 @@ DADOS DO TOMADOR DE SERVIÇO
   - Endividamento das famílias pode ser um elemento adicional para enfraquecer o poder de barganha dos trabalhadores
     - Trabalhadores podem aceitar determinado trabalho porque permite ter acesso à crédito ou para rolar dívida
       - Ver texto Giba, Mark e Kim
+
+* Problemas atuais na implementação [2026-05-08 Fri]
+
+** Pré-reunião
+
+*** Pautas gerais
+
+
+*** TODO Determinação do número de horas trabalhadas
+
+*** Determinação de alocação trabalho por vintages
+
+A transição para a forma intensiva exige a distinção operacional entre a margem extensiva e a margem intensiva.
+A margem extensiva controla a admissão e a demissão de objetos computacionais (mediados por Lscale, parâmetro de modularidade).
+A margem intensiva controla a flutuação das horas trabalhadas pelos indivíduos alocados.
+A especificação original corrigia hiatos de capacidade produtiva (por trabalhador em cada vintage) diretamente via margem extensiva.
+Implicações de adotar a mesma lógica na forma intensiva:
+- A firma incorre em entesouramento de trabalho ao contratar mais trabalhadores antes de elevar as horas dos funcionários atualmente contratados.
+- A firma impõe a demissão/descarte de trabalhadores antes de reduzir as horas trabalhadas.
+
+Decisões:
+- Fixação da jornada de trabalho no contrato da firma (atual)
+  - Implicação: Anula a operação da margem intensiva no curto prazo. A variável de horas efetivas (_Hemployed) torna-se um fator estático, atrelado à jornada exigida (_HDes2).
+  - A firma perde a capacidade de amortecer choques de demanda sem alterar o estoque de indivíduos.
+  - Todo o ajuste de capacidade produtiva é compulsoriamente transferido para a margem extensiva.
+  - A demissão será executada quando o excesso de capacidade da safra superar a contribuição exata de um objeto operando na jornada fixa.
+- Calcular a capacidade de produção do quadro de funcionários sob cenários de contorno (limites mínimos e máximos, podendo ser heterogêneos à nível da firma).
+  - O limite superior de capacidade assume a operação de todos os indivíduos sob a restrição do parâmetro HExh.
+  - O limite inferior de capacidade assume a operação de todos os indivíduos sob a restrição do parâmetro HMin.
+  - A regra de demissão exige que a demanda seja inferior à capacidade calculada no piso de horas.
+  - A regra de contratação exige que a demanda seja superior à capacidade calculada no teto de horas.
+  - A contratação passa a cobrir apenas o déficit remanescente após a exaustão da margem intensiva.
+  - A restrição previne variações na rotatividade decorrentes de choques de demanda.
+  - Choques de demanda passam a ser absorvidos primariamente pela variável de horas individuais.
+  - Problema: Perde-se a possibilidade de atribuir heterogeneidade às firmas em função das horas trabalhadas desejadas
+    - Alternativamente, pode-se heterogeneizar também em termos dos limites em que a firma opera.
+      - Desvantagem: São mais parâmetros para serem definidos
+  - Essa forma permitiria, futuramente, especificar horas extras
+  - Talvez fosse o caso de ter essa forma condicional modulada por um parâmetro

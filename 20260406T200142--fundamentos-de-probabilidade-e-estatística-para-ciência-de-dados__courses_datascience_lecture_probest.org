@@ -1195,3 +1195,375 @@ plt.show(True)
 #+end_src
 
 ** Simulando variáveis aleatórias
+
+Seja \(X\) uma variável aleatória com função de distribuição acumulada \(F_{X}(X) = P(X \leq x)\) em que \(F_{X}\) é estritamente não-decrescente.
+Se, \(u \leq F_{X}(x) \leftrightarrow F^{-1}(u) \leq x\) em que \(F^{-1}\) existe.
+Para encontrar a variável aleatória \(Y = F^{-1}_{X}(U)\) que tem a mesma distribuição que \(X\) e \(U\) tem distribuição uniforme.
+Se \(F_{x}(x) = u\), então:
+
+\[P( Y \leq x ) = F_{x}(x)\]
+
+Somente se a inversa \(Y = F^{-1}_{X}(U)\) tiver a mesma distriuição que \(X\).
+
+Para simular uma variável aleatória \(X\), gera-se \(n\) valores que seguem uma distribuição uniforme e calcula-se:
+
+\[x_{i} = F^{-1}_{x}(u_i)\]
+
+Ou seja, calcula-se o inverso sa distribuição acumulada de \(X\) (\(F_{X}(X) = P(X \leq x)\)).
+Ao repetir esse valor \(n\) vezes, obtém-se \(n\) valores de \(X\).
+
+Aplicando para o caso em que \(X\) segue uma distribuição exponencial e encontrando sua função acumulada inversa:
+
+#+begin_src python
+import numpy as np
+import matplotlib.pyplot as plt
+
+lbd = 2 # parâmetro do modelo exponencial
+n = 1000 # número de valores gerados
+X = [] # lista que armazena os valores
+for i in range(0,n):
+    u = np.random.uniform(0,1)
+    x = -(1/lbd)*np.log(1 - u)
+    X.append(x)
+# mostra a distribuição dos dados gerados
+plt.figure(figsize=(8,5))
+plt.hist(X, bins='auto', color = 'lightgray',
+         histtype='bar', ec='black',density = True)
+# mostra a curva teórica
+y = np.linspace(0, np.max(X), 100)
+f = lbd*np.exp(-lbd*y)
+plt.plot(y,f,'--', color = 'black')
+plt.xlabel('x', fontsize = 20)
+plt.ylabel('f(x)',fontsize = 20)
+plt.savefig('./figs/MC-exp.svg')
+plt.show(True)
+#+end_src
+
+#+RESULTS:
+:results:
+:end:
+
+Em que o histograma apresenta uma aproximação de uma função densidade de probabilidade.
+
+*Exemplo:* Simule a distribuição a seguir usando o método da transformação inversa:
+$$
+f(x) = \begin{cases}
+3x^2, \quad 0 < x  <1,\\
+0, \quad \text{caso contrário.}
+\end{cases}
+$$
+A distribuição acumulada de $X$:
+$$
+F_X(x) = \int_{-\infty}^x 3s^2ds = \int_{0}^x 3s^2ds = x^3.
+$$
+Logo, a inversa da distribuição acumulada:
+$$
+\begin{aligned}
+x &= F_X^{-1}(u)\\
+F(x) &= F_X(F_X^{-1}(u))\\
+x^3 &= u\\
+x  &= u^{1/3}.
+\end{aligned}
+$$
+
+#+begin_src python
+import numpy as np
+import matplotlib.pyplot as plt
+
+n = 1000 # número de valores gerados
+X = [] # armazena os valores
+for i in range(0,n):
+    u = np.random.uniform(0,1)
+    x = u**(1/3)
+    X.append(x)
+# mostra a distribuição dos dados gerados
+plt.figure(figsize=(8,5))
+plt.hist(X, bins='auto', color = 'lightgray',
+         histtype='bar', ec='black',density = True)
+# mostra a curva teórica
+y = np.linspace(0, np.max(X), 100)
+f = 3*y**2
+plt.plot(y,f,'--', color = 'black')
+plt.xlabel('x', fontsize = 20)
+plt.ylabel('f(x)',fontsize = 20)
+plt.show()
+#+end_src
+
+#+RESULTS:
+:results:
+:end:
+
+* Análise exploratória de dados
+:PROPERTIES:
+:header-args:python: :session *desc* :results output :exports both
+:END:
+
+** Visualizações
+
+- Gráfico de frequência :: Usado para contagem
+- Histograma :: Similar ao gráfico de frequência, mas ajustado para que a área seja unitária
+- Gráfico de pizza :: Permite expressar proporções e, no python, evidenciar uma das parcelas
+- Gráfico de dispersão :: Permite analisar ao menos duas variáveis
+- Gráfico de calor :: As cores irão definir a terceira variável (intensidade)
+
+** Medidas de posição
+
+- Moda :: Retorna o elemento mais comum (reflete tendência central); importante para dados nominais
+- Média :: Somatório normalizado pelo número de elementos
+- Mediana :: Retorna valor central (pós ordenamento)
+  - A mediana é mais robusta à pontos extremos em relação à média
+  - Medidas que dependem da média serão afetadas por valores extremos
+  - Média e mediana são distintas para distribuições de probabilidade
+    - Serão próximas para distribuições simétricas
+- Percentil :: Indica posição relativa dentro de um conjunto de dados (dividido em 100 partes)
+  - Mediana é o percentil 50
+
+
+#+caption:: Descrição box-plot
+file:figs/20260428T100137--desc-boxplot__fig_lecture_statistics.png
+
+** Medidas de dispersão
+
+- Variância :: É a média da distância Euclidiana de um ponto em relação à média; mede dispersão em relação à média
+- Amplitude :: Diferença entre o máximo e o mínimo
+
+** Correlação
+
+Vamos considerar alguns casos para vermos como se comporta o coeficiente de correlação de Pearson de acordo com diferentes tendências entre as variáveis $X$ e $Y$.
+
+#+begin_src python
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.stats import pearsonr
+np.random.seed(13)
+
+# Generate data from a normal distribution
+N = 100
+X = np.random.normal(0, 1, N)  # Mean 0, standard deviation 1
+
+for sigma in np.arange(0, 6, 1):
+    error = np.random.normal(0, sigma, N)
+    Y = 2 * X + error
+    corr, p_value = pearsonr(X, Y)
+
+    plt.figure(figsize=(8, 4))
+    plt.xlim(-3.5,3.5)
+    plt.ylim(-13,13)
+    plt.plot(X, Y, 'o', color='gray', markersize=8,
+             markerfacecolor='gray',
+             markeredgecolor='black')
+    plt.xlabel("X", fontsize=15)
+    plt.ylabel("Y", fontsize=15)
+    corr = int(corr * 100) / 100
+    string = 'corr = ' + str(corr) + '\nsigma = ' + str(sigma)
+    plt.text(-3,8, string, fontsize=15)
+    plt.show()
+#+end_src
+
+#+RESULTS:
+:results:
+:end:
+
+Na medida que a dispersão aumenta, a correlação de Pearson diminui.
+
+Quando existe mais do que uma variável, pode-se utilizar uma matriz de correlação (feita par a par).
+
+#+begin_src python
+import pandas as pd
+import matplotlib.pyplot as plt
+
+csv_url = 'https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data'
+col_names = ['Sepal_Length','Sepal_Width','Petal_Length','Petal_Width','Class']
+data =  pd.read_csv(csv_url, names = col_names)
+
+# remove a última coluna
+data = data.drop(data.columns[-1],axis=1)
+corr = data.corr()
+#Plot Correlation Matrix using Matplotlib
+plt.figure(figsize=(7, 5))
+plt.imshow(corr, cmap='Blues', interpolation='none', aspect='auto')
+plt.colorbar()
+plt.xticks(range(len(corr)), corr.columns, rotation='vertical')
+plt.yticks(range(len(corr)), corr.columns);
+plt.suptitle('Correlation between variables', fontsize=15, fontweight='bold')
+plt.grid(False)
+plt.show()
+#+end_src
+
+#+RESULTS:
+:results:
+:end:
+
+Também é possível combinar um gráfico de dispersão com as respectivas distribuições (via método de Kernel).
+
+#+begin_src python
+import seaborn as sns
+sns.pairplot(data,
+                 markers="+",
+                 diag_kind="kde",
+                 kind='reg',
+                 plot_kws={'line_kws':{'color':'#aec6cf'},
+                           'scatter_kws': {'alpha': 0.7,
+                                           'color': 'red'}},
+                 corner=True);
+plt.show()
+#+end_src
+
+#+RESULTS:
+:results:
+:end:
+
+Esses dados permitem visualizar o [[denote:20260428T101440][Simpson's Paradox]].
+
+Já a correlação de Spearman que usa a ordenação das variáveis invés dos dados brutos.
+Depois, calcula-se o coeficiente de Pearson entre os dados ordenados.
+Como consequência, é mais robusto à outliers.
+Sendo assim, a correlação de Spearman mede relação de crescimento.
+Logo, Spearman mede uma relação monotônica enquanto Pearson mede uma relação linear.
+
+#+begin_src python
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.stats import pearsonr, spearmanr
+
+N = 100
+x = np.linspace(1, 50000, N)
+z = np.log(x)
+
+plt.plot(x, z)
+plt.xlabel("x",fontsize = 20)
+plt.ylabel("Log(X)", fontsize = 20)
+corr, p_value = pearsonr(x, z)
+corrs, p_values = spearmanr(x, z)
+corr = int(corr*100)/100
+corrs = int(corrs*100)/100
+string = 'Pearson corr. = '+ str(corr)
+plt.text(20000,3, string, fontsize=15)
+string = 'Spearman corr. = '+ str(corrs)
+plt.text(20000,1, string, fontsize=15)
+plt.show()
+print("Pearson:",corr)
+print("Spearman:",corrs)
+#+end_src
+
+#+RESULTS:
+:results:
+Pearson: 0.72
+Spearman: 0.99
+:end:
+
+** Análise de componentes principais
+
+Parte-se da matriz de covariância dos dados para então diagonalizá-la usando o método SVD.
+O resultado é uma matriz de covariância diagonal.
+Para tanto, calcula-se os autovalores dessa matriz diagonal de modo que os respectivos autovetores (ordenados) serão os novos eixos ortogonais.
+Multiplicando os valores originais pelos respectivos autovetores, obtém-se a projeção desses dados nos novos eixos.
+
+#+begin_src python
+import numpy as np
+
+def pca_matrix_diagonalization(X, n_components):
+    # Calculate the covariance matrix
+    covariance_matrix = np.cov(X, rowvar=False)
+
+    # Calculate eigenvalues and eigenvectors
+    eigenvalues, eigenvectors = np.linalg.eig(covariance_matrix)
+
+    # Sort eigenvalues and eigenvectors in descending order
+    sorted_indices = np.argsort(eigenvalues)[::-1]
+    eigenvalues = eigenvalues[sorted_indices]
+    eigenvectors = eigenvectors[:, sorted_indices]
+
+    # Select the top n_components eigenvectors
+    principal_components = eigenvectors[:, :n_components]
+
+    # Project the data onto the principal components
+    projected_data = X @ principal_components
+
+    return projected_data, eigenvalues, eigenvectors
+
+import pandas as pd
+from sklearn.preprocessing import StandardScaler
+from sklearn.decomposition import PCA
+import matplotlib.pyplot as plt
+import numpy as np
+
+csv_url = 'https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data'
+col_names = ['Sepal_Length','Sepal_Width','Petal_Length','Petal_Width','Class']
+data =  pd.read_csv(csv_url, names = col_names)
+
+# Prepare the data
+data = data.to_numpy()
+nrow, ncol = data.shape
+y = data[:, -1]
+X = data[:, 0:ncol - 1]
+
+# Standardize the features
+scaler = StandardScaler().fit(X)
+X_scaled = scaler.transform(X)
+
+# Project the data using pca_matrix_diagonalization
+projected_data, eigenvalues, eigenvectors = pca_matrix_diagonalization(X_scaled, 2)
+
+# Visualize the projected data
+plt.figure(figsize=(6, 4))
+for label in np.unique(y):
+    plt.scatter(projected_data[y == label, 0], projected_data[y == label, 1], label=label, s=50)
+plt.xlabel("First Component", fontsize=15)
+plt.ylabel("Second Component", fontsize=15)
+plt.xticks(color='k', size=10)
+plt.yticks(color='k', size=10)
+plt.legend()
+plt.show()
+
+#+end_src
+
+#+RESULTS:
+:results:
+:end:
+
+Usando as bibliotecas do python:
+
+#+begin_src python
+import matplotlib.pyplot as plt
+from sklearn.decomposition import PCA
+from sklearn.preprocessing import StandardScaler
+
+# Assuming 'data' is your DataFrame as in the provided code
+# and X and y are already defined (features and classes)
+
+# Standardize the features
+scaler = StandardScaler().fit(X)
+X_scaled = scaler.transform(X)
+
+# Apply PCA
+pca = PCA(n_components=2)
+pca_result = pca.fit_transform(X_scaled)
+
+# Create the scatter plot, coloring by class
+plt.figure(figsize=(6, 4))
+for label in np.unique(y):
+    plt.scatter(pca_result[y == label, 0], pca_result[y == label, 1], label=label, s=50)
+plt.xlabel("First Component", fontsize=15)
+plt.ylabel("Second Component", fontsize=15)
+plt.xticks(color='k', size=10)
+plt.yticks(color='k', size=10)
+plt.legend()
+# plt.show()
+
+pca = PCA().fit(X)
+plt.figure(figsize=(6,4))
+ncomp = np.arange(1, np.shape(X)[1]+1)
+# mostra a variância acumulada
+plt.plot(ncomp, np.cumsum(pca.explained_variance_ratio_), 'ro-')
+plt.xlabel('number of components', fontsize=15)
+plt.ylabel('cumulative explained variance', fontsize=15);
+plt.xticks(color='k', size=10)
+plt.yticks(color='k', size=10)
+plt.grid(True)
+plt.show()
+#+end_src
+
+#+RESULTS:
+:results:
+:end:
