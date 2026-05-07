@@ -1,0 +1,45 @@
+#+options: toc:nil
+#+title:       Materiais sobre métodos quantitativos multivariados
+#+date:       [2026-05-07 Thu 08:48]
+#+filetags:   :lecture:meta:
+#+identifier: 20260507T084824
+#+bibliography: ~/Org/zotero_refs.bib
+
+* Livros
+
+- [[https://www.statlearning.com/][An Introduction to Statistical Learning [ISLR] (R e Python)]]
+- [[https://databookuw.com/databook.pdf][Data Driven Science & Engineering (tem cluster e redução de dimensionalidade)]]
+- [cite/t:@hardle_2024_applied]
+
+* Slides
+
+- [[https://hastie.su.domains/ISLR2/Slides/][ISL em R (slides)]]
+- [[https://github.com/cibelerusso/AnaliseMultivariadaEAprendizadoNaoSupervisionado/tree/master][Analise Multivariada E Aprendizado Nao Supervisionado (majoritariamente em python, com videos [gosto bastante])]]
+
+* Ementas
+
+- [[https://hedibert.org/wp-content/uploads/2026/03/analisemultivariada2015.pdf][Análise multivariada -  Hedibert Freitas Lopes (2015, Insper)]]
+- [[https://www.ime.unicamp.br/~cnaber/Material_AM_2S_2020.htm][ME 731 - Métodos em Análise Multivariada (IMECC, 2021)]]
+- [[https://www.professores.uff.br/samuelcampos/analise-multivariada/][Análise Multivariada - Samuel Campos (UFF)]]
+
+* Repositórios e códigos
+
+- [[https://github.com/cibelerusso/AnaliseMultivariadaEAprendizadoNaoSupervisionado/tree/master][Analise Multivariada E Aprendizado Nao Supervisionado (majoritariamente em python, com videos [gosto bastante])]]
+- [[https://github.com/ipeaGIT/brverse][brverse - Lista de pacotes de R para acesso a dados brasileiros]]
+- [[https://github.com/NickCH-K/EconometricsSlides][NickCH - Econometric slides]]
+- [[https://github.com/mossr/machine_learning_book/tree/master][Machine Learning Book (em Julia)]]
+- [[https://sisl.github.io/ExpFamilyPCA.jl/dev/math/intro/][Exponential family principal component analysis (EPCA, em Julia)]]
+- [[https://rfsaldanha.github.io/posts/persistent_heat.html][Persistent heats in Brazil (para mapas)]]
+- [[https://rfsaldanha.github.io/microdatasus/][microdatasus]]
+- [[https://rfsaldanha.github.io/brpop/][brpop: Brazilian population estimates]]
+
+* Vídeos
+
+- [[https://www.youtube.com/watch?v=fkf4IBRSeEc&list=PLyJJh8JRWIZjLlyA4FU4mxChoMPKaicT1][PCA (usando SVD em python)]]
+- [[https://www.youtube.com/watch?v=To6O7ilTyl8&list=PLmM_3MA2HWpZXwfy9vDz80VqlXkFz5S-E][Applied Multivariate Analysis (em R, gosto bastante)]]
+- [[https://www.youtube.com/watch?v=o_cAOa5fMhE][Latent Space Visualisation: PCA, t-SNE, UMAP (usa o Manin)]]
+- [[https://www.youtube.com/@SpartacanUsuals/playlists][Canal com bons materiais de revisão de econometria + R]]
+
+* Referências :ignore:
+
+#+print_bibliography:
