@@ -1,10 +1,31 @@
+#+options: toc:nil
 #+title:      Minutas MADE
 #+date:       [2026-02-06 Fri 19:50]
 #+filetags:   :made:meeting:
 #+identifier: 20260206T195047
+#+bibliography: ~/Org/zotero_refs.bib
 
+* Latex header :ignore:
 
-* Onboarding [2026-02-06 Fri]
+#+latex_header: \usepackage{lmodern}
+#+latex_header: \usepackage[T1]{fontenc}
+#+latex_header: \usepackage[utf8]{inputenc}
+#+latex_header: \usepackage{ebgaramond}     % Fonte principal
+#+latex_header: \usepackage[protrusion=true, expansion=true, final]{microtype}
+#+latex_header: \usepackage[scaled]{beramono}
+#+latex_header: \usepackage[scaled]{helvet}
+#+latex_header: \usepackage{amsmath}
+#+latex_header: \usepackage{amsfonts}
+#+latex_header: \usepackage{amssymb}
+#+latex_header: \usepackage{amsthm}
+#+latex_header: \usepackage[utf8]{inputenc}
+#+latex_header: \usepackage{newunicodechar}
+#+latex_header: \newunicodechar{≤}{\ensuremath{\leq}}
+#+latex_header: \newunicodechar{≥}{\ensuremath{\geq}}
+#+latex_header: \newunicodechar{→}{\ensuremath{\to}}
+#+latex_header: \usepackage{pgfgantt}
+
+* Onboarding [2026-02-06 Fri] :noexport:
 
 ** Estrutura do MADE e forma de trabalho
 
@@ -73,7 +94,7 @@ DADOS DO TOMADOR DE SERVIÇO
 *Descrição da nota: Serviços prestados ao Made no Mês vigente, e os dados da conta com chave pix*
 
 
-* Onboarding pesquisa [2026-02-12 Thu]
+* Onboarding pesquisa [2026-02-12 Thu] :noexport:
 
 ** Temática
 
@@ -134,7 +155,7 @@ DADOS DO TOMADOR DE SERVIÇO
   - Focado em calibragem
 - Produtos do MADE são subutilizados
 
-* Planejamento Samuel [2026-02-23 Mon]
+* Planejamento Samuel [2026-02-23 Mon] :noexport:
 :PROPERTIES:
 :ID:       144059a9-0cf5-43f9-8260-db157dcdef82
 :END:
@@ -158,7 +179,7 @@ DADOS DO TOMADOR DE SERVIÇO
 - TODO: Ajustar pastas no drive para sincronizar com o computador
   - Garantir que pasta .git será ignorado
 
-* Levantamentos da evolução do ABM [2026-04-24 Fri]
+* Levantamentos da evolução do ABM [2026-04-24 Fri] :noexport:
 
 ** Pré-reunião
 :PROPERTIES:
@@ -263,16 +284,254 @@ DADOS DO TOMADOR DE SERVIÇO
     - Trabalhadores podem aceitar determinado trabalho porque permite ter acesso à crédito ou para rolar dívida
       - Ver texto Giba, Mark e Kim
 
-* Problemas atuais na implementação [2026-05-08 Fri]
 
-** Pré-reunião
-
-*** Pautas gerais
+* HourInt: avanços e estado da implementação [2026-05-08 Fri]
 
 
-*** TODO Determinação do número de horas trabalhadas
+** Recapitulação
 
-*** Determinação de alocação trabalho por vintages
+- Realizei o planejamento da implementação do modelo com milestones melhor definidas
+  - Identifiquei a maior parte das mudanças que devem ir para cada milestone (tomou tempo, mas agora isso é agilizado)
+- Modelo está sendo refatorado em termos de jornada de trabalho padronizada (=NormHours=)
+  - A ideia é explicitar a jornada de trabalho que está implícita no modelo
+  - A normalização (para tornar em unitária) serve para evitar necessidade de recalibragem. Isso gera uma jornada nocional
+    - Essa foi a mesma forma que o pessoal do Eurogreen migrou para a forma intensiva
+- Como resultado, o modelo estará na forma intensiva
+  - No entanto, existem partes do modelo que deverão continuar na forma extensiva (exemplo: demissão)
+  - Outras partes do modelo estão na forma extensiva, mas precisamos pensar se queremos implementar a margem intensiva (adiante)
+- Rascunhada endogeinização da jornada por agentes e matching
+
+*** Estado mais recente das simulações (remoção de skills e mudança na regra de contratação/demissão)
+
+
+**** Mudanças em relação à configuração arquivada
+
+- =flagFireOrder= (todos) :: payback → salário como critério de demissão
+- =flagFireRule= (3 → 5) :: mantida a regra brasileira (demissão sempre ao fim do contrato)
+- =flagTax= (2 → 0) :: eliminação do imposto sobre renda do trabalhador
+- =flagLearn1=, =flagWorkerLBU=, =flagWorkerSkProd= :: learning e habilidades desativados
+- =flagWageOffer= (0 → 1) :: firmas consideram salário requisitado pelo trabalhador
+- =flagHireSeq= e variantes :: prioridade para firmas com salário mais alto
+- =epsilon= (0.02 → 0.1) :: limiar mais alto para troca de emprego
+- =phiChg= (0.2 → 0.4) :: reposição de benefício preservada no pós-change
+- =omegaU= (10 → 5) :: redução no número de aplicações por trabalhador desempregado
+
+**** Problemas identificados
+
+- Desemprego persistentemente elevado :: causa incerta — regra de demissão (=flagFireRule=) vs. calibração [FIXME]
+- Regime change :: ausência de quebra estrutural; diferenças apenas marginais
+- Arrecadação fiscal :: converge para zero em relação ao PIB [FIXME]
+- Dívida pública/PIB :: elevada (~2500%), provavelmente pela redução de impostos [FIXME]
+- Demanda de crédito/PIB :: superior a 100% [FIXME]
+- Gini / spread salarial :: próximo de zero; ausência de habilidades como causa possível [FIXME]
+- Tenure :: muito baixo; possível efeito da =flagFireRule = 5= [FIXME]
+- Mark-up :: tendência presente, mas em nível compatível [DEBUG]
+
+**** Diagnóstico transversal
+
+O problema de Gini migrou entre configurações: elevado e irrealista na configuração arquivada; nulo na configuração atual pela ausência de heterogeneidade salarial (esperada).
+Instabilidade fiscal e de crédito persiste nas duas versões, com intensidades distintas.
+A =flagFireRule = 5= é o candidato mais provável para o elevado desemprego.
+
+
+**** Próximos passos (stress test planejado)
+
+Pode ser o caso de melhorar esses problemas via calibragem, no entanto, pode ser que a calibragem fique defasada após as próximas mudanças.
+Por essa razão, acho que é o caso de fazer essa análise em paralelo (provavelmente com a ajuda do Samuel).
+
+- =flagFireRule= :: testar valores 3 e 5 separadamente
+- =epsilon= :: (0.02 → 0.1) — limiar para troca de emprego
+- =phi= :: (0.1 → 0.5) — reposição de benefício
+- =Ts= / =TsChg= :: número de períodos para salário requisitado ([0,4])
+- =Tc= :: (1…8) — parâmetro identificado como mais sensível em testes preliminares
+
+
+** Avanços, convenções, e hipóteses
+
+*** Convenção salarial
+
+- Variáveis sem sufixo =J= armazenam taxas por hora (=_w=, =w1avg=, =w2avg=, =_w2avg=).
+- Variáveis com sufixo =J= armazenam ganhos por período/jornada (=w1avgJ=, =_w2avgJ=, =w2avgJ=).
+- A renda por período de um trabalhador é sempre =_w × _Hemployed= (calculado inline).
+- A convenção resolve ambiguidades presentes em =_W2=, =_c2=, =_quits2= e =quits1=, que anteriormente misturavam interpretações horárias e por período.
+
+*** Condição de desligamento voluntário reformulada
+
+- Trabalhadores se desligam quando =_w × _Hemployed ≤ wU × NormHours=.
+  - Ambas as variáveis são taxas horárias; =NormHours= é a jornada padrão usada pelo governo para o cálculo do benefício.
+  - Em HourInt (=_Hemployed = NormHours=), a condição simplifica para =_w ≤ wU=.
+- A ideia é que o trabalhador não compara simplemente o salário-hora, mas sim a massa salarial total
+
+*** Variáveis intensivas em horas no setor 1 (espelho do setor 2)
+
+Introduzidas em =fun_KS_firm1.h= e =fun_KS_capital.h=:
+- =_HDes1= (Firm1): jornada desejada — exógena em HourInt (=NormHours=); a ser endogenizada em HourBarg.
+  - Em HourBarg, deve se tornar uma equação e ser escrita condicionalmente ao choque.
+- =_L1dH=, =_L1dRDH= (Firm1): demanda por trabalho em horas (= headcount × =_HDes1=).
+- =L1dH=, =L1dRDH= (Capital): agregados setoriais.
+- =L1H= (Capital): horas trabalhadas no setor — calculado via =CYCLE= direto sobre =Wrk1=.
+  - Restrição: objetos =Wrk1= residem sob =Capital= (não sob =Firm1=) e não carregam identificador da firma empregadora.
+  - Por consequência, =L1H= não pode ser calculado via =SUM("_L1H")= e =_w1avg= delega para o agregado setorial =w1avg=.
+  - Implicação: heterogeneidade de horas desejadas e trabalhadas no setor de bens de capital irá requerer outra rodada de refatoração (não deve demorar)
+- =JO1H= (Capital): vagas em aberto em horas (= =JO1 × NormHours=).
+  - A restrição relevante é o número de trabalhadores que poderão ser contratados (oferta de trabalho fixa).
+    - No entanto, o número de horas trabalhadas vai dizer quantos trabalhadores contratar
+    - Ideia: é mais simples fazer um trabalhador trabalhar por mais horas do que "formas" novos trabalhadores
+
+
+*** Variáveis salariais por firma no setor 1
+
+- =_w1avg= e =_w1avgJ= adicionadas a =Firm1= (espelho de =_w2avg= / =_w2avgJ= em =Firm2=).
+- =_w1avg= delega para =w1avg=; em HourBarg um campo de ID de firma deverá ser adicionado ao objeto =Wrk1= em =hire_worker=.
+- =_w1avgJ = _w1avg × _HDes1= (usa =_HDes1=, não =NormHours=; robusto a WTR).
+
+*** Médias setoriais refeitas com ponderação por horas
+
+- =w2oAvg= (Consumption): ponderada por =_L2dH= (horas demandadas), denominador =L2dH=.
+- =w2avg=, =w2realAvg= (Consumption): ponderadas por =_L2H= (horas trabalhadas), denominador =L2H=.
+- =w1avg= (Capital): =CYCLE= direto sobre =Wrk1= acumulando =_w × _Hemployed= / total =_Hemployed=.
+- =w1avgJ= (Capital): refatorado para =WHTAVE("_w1avgJ", "_L1") / L1= (ponderação por headcount; horas gerariam termo quadrático sem interpretação).
+Em =NormHours=1=, todas as formas ponderadas por horas são numericamente idênticas às anteriores.
+A ideia nessa ponderação é garantir que firmas com salário-hora maiores não estejam sobre-representadas na média, mas sim o salário médio dada a jornada de cada firma
+
+Em paralelo, introduz-se uma nova variável: =w2oMaxJ=.
+Esta variável representa a melhor oportunidade de renda por período.
+Mantida distinta de =w2oMax= (taxa horária máxima): em HourBarg a firma que maximiza a renda por período pode diferir da que maximiza a taxa horária.
+
+Da forma que o modelo está especificado, o setor de bens de capital possui um salário homogêneo que, por sua vez, reflete o salário máximo do setor de bens de consumo (hipótese herdada do K+S).
+Sendo assim, cabe decidir se:
+- Este setor terá salários heterogêneos
+  - Requer refatoração dado que todas as firmas desse setor partilham de um mesmo pool de aplicações e a distribuição salarial e alocação dos trabalhadores é top-down
+    - Imagino que esse top-down seja para garantir que este setor nunca estará sem mão-de-obra (motor do modelo)
+- Manter homogeneos, mas usar o maior salário-hora
+- Manter homogeneos, mas usar o maior salário total (=w2oMaxJ=)
+
+*** Formas de custo unitário diferenciadas por contexto
+
+- Equações de firma (=_c2=): forma por período =_w2avgJ / (AeVint × _HDes2)= — decomposição explícita de salário e horas.
+- Comparações entre setores (=_Atau=, =_supplier=): forma horária =w2avg / Atau= — horas se cancelam no ratio.
+- Hipótese implícita: Assume-se que a duração da jornada não se altera intra-periodo (a comparação entre as vintages/suppliers considera que o custo unitário não tem alteração com a jornada)
+  - Isso se deve porque as firmas de bens de consumo possuem acesso à informação em que algumas variáveis são defesadas
+  - Essa não foi uma hipótese pensada, mas podemos discutir o quão razoável é
+  - De alguma maneira, isso poderia refletir alguma forma de rigidez contratual (com as firmas de bens de capital assumindo o risco)
+
+*** Teto de horas em =hires1= e padrão de /proxy/
+
+Teto de contratação refatorado: =ceil(JO1H / (Lscale × AVE("_HDes1")))=.
+Onde headcount aparece em expressões que devem escalar com o tempo de trabalho, introduz-se =double NormH = NormHours= e =double LH = L × NormH=.
+Em HourBarg apenas a linha de atribuição de =NormH= muda.
+Aplicado a: =hires1=, =_Q1e= e =_Atau= em =fun_KS_firm1.h=.
+
+** Especificação em desenvolvimento: contrato de trabalho (HourBarg)
+
+Baseado em =docs/Equations.org=.
+
+*** Inicialização das horas-alvo
+
+Firmas e trabalhadores inicializam as horas-alvo via distribuição normal truncada:
+
+$$H^{T}_{i} = \max(H_{min}, \min(H^{Norm} + \mathcal{N}(\epsilon_{i} \mid 0, \sigma^{2}_{H}), H_{max}))$$
+
+Quando $\sigma^{2}_{H} = 0$ o modelo recai na forma intensiva normalizada sem barganha, preservando compatibilidade com HourInt.
+
+*** Índice de Insatisfação do Trabalhador
+
+Trabalhadores avaliam ofertas de emprego por um Índice de Insatisfação assimétrico $\mathcal{I}_{w,f}$:
+
+$$\mathcal{I}_{w,f} = \theta_{H,w}\,\mathcal{P}_{H} + (1 - \theta_{H,w})\left(\frac{w^{T}_{w} H^{T}_{w} - w_{f} H^{O}_{f}}{\bar{w}_{F}\,\bar{H}_{F}}\right)$$
+
+onde a penalidade de horas assimétrica $\mathcal{P}_{H}$ é:
+
+$$\mathcal{P}_{H} = \begin{cases} (1 - \tau_{w})\left(\dfrac{H^{O}_{f} - H^{T}_{w}}{\bar{H}_{F}}\right)^{2} & H^{O}_{f} > H^{T}_{w} \\ \tau_{w}\left(\dfrac{H^{T}_{w} - H^{O}_{f}}{\bar{H}_{F}}\right)^{2} & H^{O}_{f} \le H^{T}_{w} \end{cases}$$
+
+- $\tau_{w} \in [0,1]$: preferência por trabalho ("workaholic" → $\tau_{w} \to 1$).
+- $\theta_{H,w}$: peso relativo entre horas e renda na avaliação da oferta.
+- $w^{T}_{w} = W^{T}_{w,t} / H^{T}_{w}$: salário-hora desejado derivado do alvo de renda.
+- $W^{T}_{w,t}$: média móvel de $T_{M}$ períodos da renda passada (efeito histerese para desempregados).
+
+*Propriedades:* penaliza sobre-emprego menos do que sub-emprego para trabalhadores com $\tau_w$ elevado; a métrica é sensível ao mercado pois usa $\bar{H}_{F}$ (média setorial) como normalizador.
+
+*Variantes formuladas (a decidir):*
+- Desvio relativo ao alvo individual — componente de renda estacionário, mas pode aceitar horas irrealistas.
+- Distância assimétrica normalizada — zera a penalidade para propostas de renda acima do alvo.
+- Desvio percentual logarítmico — estabiliza a variância sob crescimento real contínuo.
+
+*Risco de dominância do termo de renda:* o suporte de horas é limitado ($[H^{Min}, H^{Max}]$) mas os salários reais crescem continuamente; ao longo do tempo o componente de renda tende a dominar $\theta_{H,w}$, anulando a preferência por horas.
+
+*Extensões possíveis:* índice de estresse cumulativo por excesso de horas (burn-out); efeito de renda relativa em relação à mediana.
+
+*** Contrato desejado das firmas
+
+Horas-alvo (total) da firma derivadas da demanda esperada e produtividade:
+
+$$H^{T,G}_{f} = \frac{Q^{e}_{f}}{A_{f,t}}$$
+
+- Firmas só contratam candidatos dispostos a trabalhar ao menos $H^{T}_{f}$ horas (ajustar variável).
+- Oferta salarial enviada a esses candidatos; aceitação baseada no índice de insatisfação.
+- IMPORTANTE: firmas podem flexibilizar as horas ou fixam a jornada contratualmente?
+
+*** Questões em aberto na especificação
+
+- Qual variante do Índice de Insatisfação adotar (desvio relativo, assimétrico ou logarítmico)?
+- Como tratar o efeito de dominância do termo de renda ao longo do tempo?
+- Distribuição inicial de $\theta_{H,w}$ e $\tau_{w}$: uniforme ou outra?
+- O modelo deve permitir flexibilização de horas pelas firmas ou manter jornada fixa em contrato?
+- Fila de prioridade para aceitação de ofertas (qual trabalhador escolhe primeiro)?
+
+** Questões em aberto
+
+*** [HELP PRIORITY] Natureza da restrição de horas desejadas (=_HDes=)
+
+/Arquivo:/ =fun_KS_labor.h:43=
+
+=_HDes= representa uma restrição rígida de oferta ou um alvo flexível sujeito a horas extras?
+A margem intensiva não impõe um limite físico fixo: trabalhadores podem realizar horas extras sob condições específicas.
+Alternativa: calcular =_HDes= implicitamente via comportamento de renda-alvo (=_HDes = W^T_w / w_ofertado=), implicando curva de oferta de trabalho com inclinação negativa ao nível individual.
+Pressupostos vigentes: sem efeito substituição; comportamento de renda-alvo.
+
+*** Homogeneidade intra-firma e heterogeneidade inter-firma
+
+A configuração atual não garante homogeneidade salarial dentro da firma.
+
+*Intra-firma:* trabalhadores contratados em períodos distintos recebem o =_w2o= vigente no momento da contratação.
+A indexação periódica aplica o mesmo fator =1 + dAb + 0.5 × _dA2b= a todos os incumbentes, preservando as diferenças históricas entre cohorts de contratação.
+Não há mecanismo que iguale os salários dentro da firma.
+- Devemos ter alguma sincronia de atualização salaria?
+  - A alternativa é que todos os trabalhadores recebem o mesmo salário que os novos contratados (sempre que houver uma contratação)
+  - Isso elimina uma heterogeneidade entre cohort
+  - Se for uma atualização meramente salarial, não vejo nenhuma questão
+    - Caso tenha também uma atualização de jornada (o que eu imagino que seja razoável), acredito que seria consistente ter uma nova rodada de avaliação em que o trabalhador (já contratado) pode decidir por sair da empresa dado que terá um novo contrato laboral
+
+*Inter-firma:* a indexação usa =_dA2b= (crescimento de produtividade da firma), de modo que firmas com trajetórias de produtividade distintas divergem salarialmente ao longo do tempo.
+A heterogeneidade inter-firma é estrutural e cresce com o tempo.
+
+
+*** [HELP] Regra de demissão
+
+- Atualmente, as firmas demitem os trabalhadores cujos contratos estão vencidos, independentemente de outras condições (chamada de Regra Brasileira pelo pessoal de Pisa).
+- Como consequência, a taxa de desemprego está consideravelmente mais elevada do que em outros cenários.
+- Alterar a duração do periodo e o número de empresas ao qual o trabalhador aplica pode reduzir, mas não a patamares razoáveis.
+- Uma alternativa seria demitir os funcionários se as firmas enfrentarem prejuízos (regra italiada) ou se a demanda for aquém da esperada
+  - Isso tende a gerar uma taxa de desemprego consideravelmente menor
+  - Essas duas regras já estão implementadas
+- Também seria possível avaliar outra regra que combina as anteriores
+  - Não demitir o trabalhador se o contrato ainda está em vigência (adiciona alguma rigidez)
+  - Só demite os trabalhadores cujo contrato está vencido E se a firma enfrenta prejuízos/demanda reduzida
+
+
+
+*** [HELP / EDGECASE] Margem intensiva ignorada em =__dLdVint=
+
+**** Resumo
+
+A equação =__dLdVint= usa =DELETE(cur1)= para demissões (margem extensiva), ignorando a margem intensiva.
+Antes de descartar um objeto, o modelo deveria verificar se reduzir =_Hemployed= ao mínimo ainda resulta em excesso de capacidade.
+*Decisão pendente:* regime rígido (somente margem extensiva, abordagem atual) ou esgotamento da margem intensiva antes do descarte.
+Note que decisão similar deve ser adotada em relação às contratações: aumentar a jornada ou contratar mais trabalhadores a uma jornada fixa?
+
+
+
+**** Detalhamento
 
 A transição para a forma intensiva exige a distinção operacional entre a margem extensiva e a margem intensiva.
 A margem extensiva controla a admissão e a demissão de objetos computacionais (mediados por Lscale, parâmetro de modularidade).
@@ -301,3 +560,182 @@ Decisões:
       - Desvantagem: São mais parâmetros para serem definidos
   - Essa forma permitiria, futuramente, especificar horas extras
   - Talvez fosse o caso de ter essa forma condicional modulada por um parâmetro
+
+*** Salário mínimo como piso de renda versus taxa horária
+
+- O governo não regula as horas diretamente nessa primeira versão, mas afeta as decisões das firmas via salário mínimo.
+  - Ao impor um salário mínimo, remove o piso salarial como variável livre da firma.
+  - Implicação: Não é inteiramente verdade que não existira nenhum tipo de efeito regulação quando as firmas negociam livremente a duração da jornada
+- Decisão: o governo deve impor renda total mínima (como no Brasil) ou taxa horária mínima?
+
+
+
+*** [HELP] Consequências de trabalhadores alocados a múltiplos vintages
+
+/Arquivo:/ =fun_KS_support.h:470=
+
+O que ocorre se trabalhadores só puderem estar em um vintage por vez?
+Avaliar implicações para =_alloc2= e para a alocação de horas entre vintages.
+
+Permitir que trabalhadores sejam alocados para mais de uma vintage vai impor algumas refatorações (tenho que pensar melhor como implementar).
+A princípio, imagino que seria o caso de que cada trabalhador tem um número de horas que foi contratado.
+Dado isso, deve alocar essas horas entre as vintages.
+No entanto, requer algumas decisões:
+- Para quais vintages o trabalhador vai (imagino que primeiro para as melhores/mais novas)
+- Qual trabalhador vai para determinada vintage?
+  - Como não temos mais skill, essa decisão se torna um pouco mais complicada
+  - Como os trabalhadores são demitidos uma vez que o contrato é encerrado, uma forma seria alocar os que estão prestes a serem demitidos para as piores vintages
+  - Note que uma alocação aleatória não é tão trivial. Um trabalhador pode ser, aleatoriamente, alocado para uma vintage que precisa de menos horas.
+
+
+*** [HELP] Definição da taxa de desemprego na margem intensiva
+
+
+Questão em aberto: a oferta de trabalho deve considerar o limite físico máximo de horas ou as horas desejadas?
+
+Situação atual: =LsH= utiliza as horas desejadas como proxy da oferta de trabalho ("notional labor supply").
+O valor efetivo pode superar esse nível se o modelo permitir horas extras — nesse caso, =LsH= funciona como referência comportamental, não como teto biológico.
+
+Definição padrão na literatura: horas desejadas dado o salário real oferecido.
+Isso implica computar as horas desejadas de forma implícita via renda-alvo:
+
+$$H^{Des}_{w} = \frac{W^{T}_{w}}{w^{offer}}$$
+
+Consequência: curva de oferta de trabalho com inclinação potencialmente negativa no nível individual.
+
+Alternativa: limite físico máximo como teto de oferta.
+Questão subsidiária: qual métrica captura melhor o debate sobre redução da jornada?
+
+
+- Para determinar a taxa de desemprego, precisamos definir a oferta de trabalho
+  - No entanto, não é razoável definir a oferta de mão de obra com base em uma jornada fisiológica (limite máximo de trabalho)
+  - A alternativa é calcular em termos de horas trabalhadas desejadas do trabalhador
+    - A rigor, não é a mesma definição usual de horas trabalhadas uma vez que não é definida dado um salário real ofertado
+  - Uma consequência é que o nível de emprego pode ser maior que a oferta de trabalho (trabalhadores com jornadas acimda da desejada) sem que isso implique em restrições na produção (pelo contrário)
+
+
+
+*** Viés de distribuição por =Lscale= [ESTRUTURAL]
+
+- O parâmetro =Lscale= comprime todos os indivíduos de um mesmo objeto computacional a uma jornada idêntica.
+- Essa estrutura suprime a dispersão efetiva das horas ofertadas e introduz viés determinístico na distribuição da renda do trabalho.
+- Implicação: a variância da renda individual é subestimada enquanto =Lscale > 1= e as jornadas permanecerem homogêneas dentro do objeto.
+
+
+*** Escala de horas e interpretação da normalização
+
+- Variáveis que dividem por horas normalizadas podem exigir multiplicação posterior para preservar dimensionalidade.
+- Alternativa: declarar o modelo integralmente expresso em termos normalizados e interpretar os resultados dessa forma.
+  - Alta probabilidade de que a escolha produza apenas um deslocamento de nível (shift), sem implicação qualitativa.
+
+
+*** [HELP] Jornada mínima para produção de máquinas e definição de tempo de trabalho no setor K
+
+/Arquivo:/ =fun_KS_firm1.h:248=
+
+Existe uma jornada mínima abaixo da qual a firma do setor capital não consegue produzir máquinas?
+Como a jornada deve ser operacionalizada para o setor K?
+
+** Pressupostos vigentes com impacto em HourInt / HourBarg
+
+- Ofertas salariais em termos horários
+- Todos os trabalhadores de uma firma trabalham exatamente =_HDes2= horas; divergências individuais emergem apenas em HourBarg (=fun_KS_consumption.h:800=, =fun_KS_firm2.h:1351=).
+- Pagamento de benefícios (seguro desemprego) distribuído por trabalhador (headcount), não proporcional às horas (=fun_KS_country.h:72=).
+- Horas se cancelam no ratio custo unitário somente quando pagamento salarial e utilização de máquina compartilham a mesma jornada H (=fun_KS_firm1.h:26=, =fun_KS_firm2.h:601=).
+- Oferta de trabalho restrita por =_HDes= sem efeito substituição; comportamento de renda-alvo (=fun_KS_labor.h:54,55=).
+- Demanda de horas calculada usando =_HDes= (desejado); =UsH= usa horas desejadas como denominador (=fun_KS_labor.h:299=).
+- Produtividade da safra independe das horas trabalhadas (=fun_KS_vintage.h:23=); relaxada em HourProd.
+- Regime rígido em =__dLdVint=: demissões executadas via margem extensiva sem esgotar margem intensiva (=fun_KS_vintage.h:85=).
+
+** FIXMEs pendentes no marco HourInt :noexport:
+
+*** Contratação e demissão
+
+- =fires1= (=fun_KS_capital.h:182=): reformular demissões do setor 1 em termos de horas.
+- =hires2= (=fun_KS_consumption.h:218,248,250=): horas como variável de decisão; teto de vagas em horas (=_JO2H=); consistência do tipo de saída.
+- =hires2= — contratação mínima (=fun_KS_consumption.h:275=): definir como garantir contratação de montante mínimo de horas.
+- =_fires2= (=fun_KS_firm2.h:500=): reformular demissões do setor 2 para horas.
+- Funções de suporte =hire_worker=, =fire_worker= (=fun_KS_support.h:413,495,577,623,695=): ajustar para pagamento e registro em termos horários.
+
+*** Alocação de trabalho por vintage
+
+- =_alloc2= (=fun_KS_firm2.h:303,330=): ajustar para horas; demanda adicional de trabalho como possível chave para o problema de alocação.
+- =__toUseVint= / =_c2= (=fun_KS_firm2.h:390=): =__toUseVint= armazena headcount de máquinas; para alocação parcial por jornada deve armazenar horas por vintage. Requer mudanças coordenadas em =_alloc2= e =__Qvint=.
+- =__dLdVint= (=fun_KS_vintage.h:52=): refatoração exige decisão teórica (ver Questões em aberto).
+- =HWorkers= (=fun_KS_class.h:40=): campo de horas equivalentes no struct do vintage ainda sem implementação.
+- =move_worker= (=fun_KS_support.h:469=): avaliar consequências de trabalhadores restritos a um vintage por vez.
+
+*** Oferta de trabalho e salário
+
+- =_w2o= (=fun_KS_firm2.h:649,765=): ajustar oferta salarial para horas; incorporar jornada na oferta e no conjunto global de ofertas.
+- =_L2vac= (=fun_KS_firm2.h:1010=): adicionar equivalente em horas para taxa de vagas (=_L2vacH=).
+- =_w2avg= (=fun_KS_firm2.h:1317,1329=): contador de trabalhadores deve ser em horas; não é robusto a jornadas heterogêneas entre trabalhadores da mesma firma.
+- =_HDes= / =LsH= (=fun_KS_labor.h:43,51=): avaliar se horas desejadas constituem restrição rígida; possível curva de oferta backward-bending via renda-alvo.
+
+*** Trabalhadores
+
+Várias equações em =fun_KS_worker.h= (linhas 21, 47, 136, 277, 293, 392, 424, 431, 441): ajustar registro de horas no portfólio de aplicações, aceitação de oferta e contagem de períodos empregados.
+
+*** Estatísticas
+
+- =fun_KS_stats.h= (linhas 214, 410, 523, 555, 565, 577, 596, 604, 623, 638, 794, 814, 833, 861): adicionar equivalentes em horas para múltiplas variáveis (emprego, salário, utilização). Linhas 814 e 833 requerem verificação prévia se formulação horária é relevante.
+- =sV2avg= (=fun_KS_consumption.h:298=): ajustar média de habilidades por safra para horas.
+
+** Passos futuros por milestone
+
+#+begin_export latex
+\begin{ganttchart}[today=5]{1}{18}
+  \ganttgroup[progress=20]{Implementação}{1}{15} \\
+  \ganttbar[progress=80]{BasRefact}{1}{2} \\
+  \ganttbar[progress=80]{HourtInt}{2}{6} \\
+  \ganttbar[progress=30]{HourBarg}{4}{9} \\
+  \ganttbar[progress=0]{HourProd}{9}{13} \\
+  \ganttbar[progress=0]{Scen}{7}{15} \\
+  \ganttbar[progress=0]{Calib}{12}{18} \\
+\end{ganttchart}
+#+end_export
+
+
+
+*** HourBarg
+
+**** Endogenização de =_HDes= (ambos os setores)
+
+- =_HDes2= (Firm2): endogenizado como alvo de barganha por firma (=fun_KS_firm2.h:987,993=).
+- =_HDes1= (Firm1): idem (=fun_KS_firm1.h:428=).
+- Preferências dos trabalhadores: inicializar via distribuição uniforme; endogenizar via comportamento de renda-alvo (=fun_KS_country.h:591-592=, =fun_KS_labor.h:96=).
+
+**** Correção arquitetural em =Wrk1=
+
+- Adicionar campo de ID de firma ao objeto =Wrk1= em =hire_worker=.
+- Substituir delegação de =_w1avg= por =CYCLES= filtrado por firma (=fun_KS_firm1.h:468,482=).
+- =JO1H=: substituir =NormHours= global por =_HDes1= por firma (=fun_KS_capital.h:51=).
+
+**** Contratação, oferta e aceitação em horas
+
+- =hires1=: substituir =AVE("_HDes1")= pelo valor por firma (=fun_KS_capital.h:240=); adicionar verificação de aceite do par (salário-hora, jornada) via índice de insatisfação (=fun_KS_capital.h:242=).
+- Consistência do salário mínimo em horas em =hires2= (=fun_KS_firm2.h:666,759=).
+- Adicionar =fires2H= e =JO2H= se necessário (=fun_KS_consumption.h:466,683=).
+
+**** Heterogeneidade de jornadas em médias e custos
+
+- =_w2avgJ=: substituir =_HDes2= pela média das horas individuais efetivas (=fun_KS_firm2.h:1355,388=).
+- =_w2avg= (firma): ponderar por horas individuais trabalhadas (=fun_KS_firm2.h:1327=).
+- =_c2=: substituir jornada estimada pelas horas efetivas por trabalhador (=fun_KS_firm2.h:587=).
+- =_Atau= / =_supplier=: substituir =w2avg= pela média ponderada de =_w2avgJ / _HDes2= por firma (=fun_KS_firm1.h:29=).
+- =w1avgJ= em Firm1: substituir média setorial pela renda por período em nível de firma (=fun_KS_firm1.h:83,106,135,338,415,552,564=).
+- =LsH=: substituir =NormHours= pelas horas agregadas efetivas quando jornadas por trabalhador forem heterogêneas (=fun_KS_firm1.h:56=).
+
+**** Alocação de trabalho por vintage
+
+- =__dLdVint=: tornar relevante quando horas puderem variar; exige resolução da decisão teórica em Questões em aberto (=fun_KS_vintage.h:53=).
+
+*** HourProd
+
+- =Btau= / =Atau=: re-expressar em forma horária quando horas afetarem produtividade (=fun_KS_firm1.h:58,403=, =fun_KS_firm2.h:604=).
+- Verificar necessidade de refatoração em =fun_KS_firm2.h:1147= e =fun_KS_stats.h:795=.
+- Pressupostos de produtividade por safra (=fun_KS_vintage.h:25,184=): revisar e possivelmente relaxar.
+
+*** HourExtra
+
+- =fun_KS_vintage.h:135=: vintage como fonte potencial para implementação de horas extras.
