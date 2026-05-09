@@ -739,3 +739,110 @@ Várias equações em =fun_KS_worker.h= (linhas 21, 47, 136, 277, 293, 392, 424,
 *** HourExtra
 
 - =fun_KS_vintage.h:135=: vintage como fonte potencial para implementação de horas extras.
+
+** Deliberações pós-reunião
+
+
+*** Concepções mais gerais
+
+- Tentar pensar o modelo em termos de horas trabalhadas o máximo possível
+  - Isso implica em ir em direção à margem intensiva e, eventualmente, ter a firma oferecendo jornadas diferentes
+  - Uma forma de ter esse tipo de heterogeneidade implementada é ter propostas de renovação
+    - Oferece-se a possibilidade de extensão de jornada para aqueles trabalhadores já contratados
+    - Caso seja insuficiente, recorre-se à mão-de-obra "externa"
+- Uma redução da jornada de trabalho tambpem pode estar associado à possibilidade de ter maior disponibilidade para aumentar a qualificação mesmo enquanto empregado
+- No limite, o ajuste via jornada decorre do efeito sobre a demanda sendo ecoada no mercado de trabalho
+
+*** Determinações sobre condições de demissão
+
+- Caso a demanda enfrentada pela firma seja similar ao período anterior, manter o mesmos trabalhadores contratados
+- Separar demissão voluntária (firma decide demitir por outras razões que não demanda) da involuntário (demissão por queda na demanda esperada)
+  - Para a demissão involuntária, uma regra simples seria demitir aleatoriamente
+    - R: Não é necessário incorrer nessa simplicidade pois existem outras regras de ordenamento que são simples e razoáveis
+- Propor dois regimes de contratação:
+  - Contratos de longa duração: Firmas possuem contratos de duração mais longa com trabalhadores que tem maior produtividade (são trabalhadores que dão retorno a longo prazo para a firma)
+    - Demissões desses trabalhadores envolveriam custos (provavelmente proporcionais ao salário acordado)
+  - Contratos de curta duração: São contratos condicionados a aumentos não prospectados da demanda
+    - Seriam contratos que não possuem custos de demissão
+    - Esses trabalhadores seriam os que estão mais sujeitos à search on-the-job
+  - Discussão associada com labor hoarding
+- Em nível mais geral, não deve-se adotar nenhuma das regras pré-elaboardas no LSD
+  - Me parece ser uma regra (ITA) com rigidez imposta pela duração heterogênea dos contratos
+  - Talvez exista uma regra mais próxima do que a ITA
+- IMPORTANTE: Uma vez desligados os skills, não é tão trivial contratar os trabalhadores que são mais produtivos
+- IDEIA: Contrato tem a duração de um período produtivo e oferecesse a possibilidade de renovação
+- IDEIA: Permitir a coexistência de diferentes regimes de trabalhado
+  - Invés dessa ser um parâmetro global, pode ser um parâmetro associado à cada trabalhador
+    - Como fallback, pode-se incluir default negativo para retornar ao caso global.
+- No limite, a firma arbitra entre contratos de longo e curto prazo
+  - Seria uma uma combinação convexa entre demissão e deslocamento
+
+*** Relação entre produtividade, horas trabalhadas e afastamento
+
+- Não há necessidade de computar a produtividade hora a hora, mas sim, a produtividade média
+- Computa-se o decaimento da produtividade (líquido do learn by doing)
+- Pode-se discutir o afastamento do trabalho (similar a ideia do burn-out) avaliando se o trabalhador teve jornadas conseguitivas muito desgastantes por X períodos
+  - Sendo este o caso, pode estar afastado do mercado
+    - Esse afastamento pode-se dar pela continuidade desse contrato pela firma em até \(X\) períodos
+      - Após esse tempo, é um gasto assumido pelo governo ("INSS")
+  - Ref: Smith menciona o lado negativo do esforço repetitivo sobre a destresa
+
+
+*** Heterogeneidade salarial intra-firma
+
+- Caso a negociação salarial seja individual, deixar heterogêna
+- Caso seja coletiva, deve ser sincronizada
+
+
+
+*** Definição da taxa de desemprego
+
+- Devem ser consideradas três taxas:
+  - Headcount/headcount
+  - Horas efetivas/desejadas
+  - A nível do trabalhador
+
+*** Questões em aberto
+
+- Não foi definido se a firma possui uma jornada de trabalho fixa e opera com horas extras
+  - Particularmente, essa parece ser a forma de mais fácil implementação
+- Não está exatamente claro qual é a materialidade da jornada de trabalho desejada do trabalhador
+  - No limite, não existe margem para que essa jornada desejada seja informação relevante para a negociação salarial
+- Também não está claro que é razoável ter uma continuidade de jornadas
+  - De forma mais realista, pode-se esperar que as firmas operem com o máximo da jornada
+  - Alternativamente, pode-se pensar que existe part-time e full-time
+  - Vantagem dessa jornada infinitezimal é que permite explicitar o nível de desemprego desmascarado por ser binário
+- Também não está clara a condicionalidade da hora extra
+  - Parte dessa flata de clareza é a existência de um estoque voluntário de produtos
+    - Não havendo custo de carregamento ou estratágia intertemporal, sempre é melhor para firma desovar os estoques antes de contratar mais horas
+      - Exemplo: caso a firma espere que o preço do bem irá aumentar, pode fazer sentido aguardar a desova dos estoques
+        - A decisão depende do quanto haverá perda de market-share (unfillled demand) vs aumento da receita unitária
+        - Caso o custo de produzir uma unidade adicional seja inferior a receita marginal, é vantajoso para a firma produzir
+    - Sendo assim, contratam-se horas adicionais (hora-extra) somente se a demanda efetiva supera a demanda esperada após a desova dos estoques
+  - Desse modo, está sendo definida uma Peacking order (Estoques > horas-extras)
+  - Não foi decidido se deve existir um salário de reserva associado à hora extra
+  - Um argumanto a favor da hora extra é dizer que não há tempo para contratar novos trabalhadores, e, por conta disso, opta-se pela extensão da jornada
+    - Uma questão que não foi discutida é quem será oferecida essa extensão da jornada
+
+*** Novas questões e expansões
+
+- Seria interessante incluir informalidade do mercado de trabalho
+  - Alguns trabalhadores estariam compelidos a irem ao mercado informal
+  - As firmas em regime informal podem estar sujeitas à multas
+  - Essa informalidade seria uma discussão muito relevante a nível de Brasil
+- Efeitos macroeconômicos sobre gênero
+  - Debate seria a redução da jornada sem que isso seja justificado para disponibilizar as horas para o cuidado
+    - Sem efeito estrutural sobre a tripla jornada
+- Pensar na possibilidade de as firmas terem comportamento heterogênexo por questões estruturais
+  - Seria similar à estrutura do modelo da Marica em que existem firmas reguladas e não reguladas
+    - Somente as firmas reguladas estão sob gerência do Estado
+    - Trabalhador decide qual firma irá trabalhar
+      - Decisão leva em conta horas trabalhadas
+      - Ideia similar a "PJ recebe mais" (não pagam impostos)
+  - A ideia é discutir que WTR sem considerar informalidade é incompleto
+    - Talvez WTR no setor formal tenha efeitos sobre o informal
+    - Talvez seja o caso de introduzir mais elementos para que o setor informal não tenha uma vantagem persistente
+      - Afastamento por horas em excesso pode ser mais relevante nesses casos
+      - Trabalhadores que trabalham mais horas enviam menos aplicações (porque depende de horas trabalhadas)
+        - Aumenta a probabilidade de permanecerem no mesmo setor
+- Da forma que está, horas não trabalhadas não tem impacto algum no modelo

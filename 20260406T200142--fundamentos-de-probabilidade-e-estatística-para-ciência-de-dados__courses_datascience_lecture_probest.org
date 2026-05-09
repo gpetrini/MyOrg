@@ -1567,3 +1567,1005 @@ plt.show()
 #+RESULTS:
 :results:
 :end:
+
+* Estimação pontual
+
+** Introdução
+
+A ideia geral é fazer uma inferência sobre algum parâmetro populacional (propriedades da população) a partir de uma amostra da população.
+A estimação pontual é sobre o valor do parâmetro propriamente dito.
+Outros temas associados se referem ao intervalo de confiança (determinação do intervalo que contém o parâmetro) e teste de hipótese.
+
+Exemplo: Imagine que sabe-se que existe uma urna com determinado número de bolas conhecido. A partir de uma retirada sem reposição, como inferir a quantidade de determinada cor.
+Neste caso, dado um parâmetro que determina a probabilidade de retirada de uma bola, estima-se a probabilidade da sequência de retirada ser observada.
+A independência das retiradas permite multiplicar as probabilidades em função deste parâmetro.
+Varia-se o valor destes parâmetro e indentifica-se qual é o mais provável.
+Este processo é denominado de estimação por máxima verossimilhança.
+
+
+** Estimação — Definições
+
+1. Um *parâmetro* é uma medida para descrever uma característica da população.
+2. Uma *amostra aleatória* é uma coleção de variáveis aleatórias \(X_1, X_2, \ldots, X_n\) independentes e identicamente distribuídas (iid).
+3. Seja uma amostra aleatória \(X_1, X_2, \ldots, X_n\) de uma população. Uma *estatística* é uma função de \(X_1, X_2, \ldots, X_n\).
+4. Um *estimador* é uma estatística usada para estimar um parâmetro da população.
+
+** Função de verossimilhança
+
+*Definição:* Seja \(X_1, X_2, \ldots, X_n\) uma amostra aleatória obtida de uma distribuição de probabilidade *conhecida* com parâmetros \(\theta_1, \ldots, \theta_k\).
+Suponha que observamos \(X_1 = x_1, X_2 = x_2, \ldots, X_n = x_n\). Então:
+
+- Se as variáveis \(X_1, X_2, \ldots, X_n\) são *discretas*, a função de verossimilhança é:
+
+\[L(\theta;\, x) = L(\theta_1, \theta_2, \ldots, \theta_k;\, x_1, \ldots, x_n) = \prod_{i=1}^{n} P(X_i = x_i;\, \theta_1, \theta_2, \ldots, \theta_k) \]
+
+- Se as variáveis aleatórias são *contínuas*, a função de verossimilhança é o produto das funções marginais:
+
+\[L(\theta;\, x) = L(\theta_1, \theta_2, \ldots, \theta_k;\, x_1, \ldots, x_n) = \prod_{i=1}^{n} f(x_i;\, \theta_1, \theta_2, \ldots, \theta_k) \]
+
+*OBS:* Como \(x\) é medido, a função de máxima verossimilhança é em função de \(\theta\).
+
+*** Log-verossimilhança
+
+- Para maximizar a função de verossimilhança, derivamos em relação aos parâmetros \(\theta\) e igualamos o resultado a zero.
+  - Encontra-se o \(\theta\) mais provável, ponto de máximo
+- Como a função é definida em termos de um produtório, usa-se a função logaritmo para transformar produtos em somas:
+
+\[\ell(\theta;\, x) = \log\bigl(L(\theta;\, x)\bigr) \]
+
+- Usa-se a base \(e\) (\(\log(x) = \ln(x)\)), mas outras bases também podem ser usadas.
+
+*** Estimador de máxima verossimilhança
+
+*Definição:* O estimador de máxima verossimilhança \(\hat{\theta}\) é definido por:
+
+\[\hat{\theta} = \operatorname{argmax}_{\theta \in \Theta}\; \ell(\theta;\, x) \]
+
+onde \(\Theta\) é o espaço dos parâmetros.
+Argmax retorna a posição (valor) onde encontra-se o máximo da função.
+
+
+**** Exemplo (Normal)
+
+Suponha que temos uma população cuja variável de interesse segue uma distribuição Gaussiana com média \(\mu\) e variância \(\sigma^2\). Encontre os estimadores de máxima verossimilhança para a média e a variância.
+
+
+A partir da população, sorteamos uma amostra aleatória \(\{X_1, X_2, \ldots, X_n\}\). Como os elementos são i.i.d., a função densidade de probabilidade conjunta é:
+
+\[f(x_1, x_2, \ldots, x_n;\, \mu, \sigma^2) = \prod_{i=1}^{n} f(x_i;\, \mu, \sigma^2) = \prod_{i=1}^{n} \frac{1}{\sqrt{2\pi}\,\sigma} \exp\!\left(-\frac{(x_i - \mu)^2}{2\sigma^2}\right) \]
+
+A função de verossimilhança é:
+
+\[L(\theta;\, x) = (\sigma^2)^{-n/2}\,(2\pi)^{-n/2} \exp\!\left(-\frac{1}{2\sigma^2} \sum_{i=1}^{n}(x_i - \mu)^2\right) \]
+
+Calculando o logaritmo:
+
+\[\ell(\theta;\, x) = -\frac{n}{2}\log(\sigma^2) - \frac{n}{2}\log(2\pi) - \frac{1}{2\sigma^2}\sum_{i=1}^{n}(x_i - \mu)^2 \]
+
+***** Solução: Normal (Estimador da média)
+
+Derivando com relação a \(\mu\) e igualando a zero:
+
+\[\frac{\partial}{\partial \mu}\,\ell(\theta;\, x) = \sum_{i=1}^{n} \frac{x_i - \mu}{\sigma^2} = 0 \]
+
+Resolvendo:
+
+\[\sum_{i=1}^{n}(x_i - \hat{\mu}) = 0 \implies \sum_{i=1}^{n} x_i - n\hat{\mu} = 0 \]
+
+Portanto, o estimador para a média populacional é:
+
+\[\hat{\mu} = \frac{\sum_{i=1}^{n} X_i}{n} = \bar{X} \]
+
+Sendo assim, a média amostral é a melhor medida para encontrar a média populacional.
+
+***** Solução: Normal (Estimador da variância)
+
+Derivando com relação a \(\sigma^2\) e igualando a zero:
+
+\[\frac{\partial}{\partial \sigma^2}\,\ell(\theta;\, x) = -\frac{n}{2\sigma^2} + \frac{1}{2(\sigma^2)^2}\sum_{i=1}^{n}(x_i - \mu)^2 = 0 \]
+
+Resolvendo, o estimador de máxima verossimilhança da variância é:
+
+\[\hat{\sigma}^2 = \frac{\sum_{i=1}^{n}(X_i - \bar{X})^2}{n} \]
+
+onde foi usado o estimador \(\bar{X}\) para a média \(\mu\).
+O estimador \(\hat{\sigma}^2\) é a variância amostral.
+
+Como será discutido mais adiante, este é um estimador *viesado*, mas assintoticamente não viesado.
+
+***** Estimador de máxima verossimilhança — Resumo: Modelo Normal
+
+O EMV para o modelo normal:
+
+- *Média \(\mu\):*
+
+\[\hat{\mu} = \frac{\sum_{i=1}^{n} X_i}{n} = \bar{X} \]
+
+- *Variância \(\sigma^2\):*
+
+\[\hat{\sigma}^2 = \frac{\sum_{i=1}^{n}(X_i - \bar{X})^2}{n} \]
+
+
+**** Exemplo: Distribuição Exponencial
+
+
+*Exemplo:* Determine o estimador de máxima verossimilhança para uma amostra obtida de uma população que segue o modelo exponencial com parâmetro \(\theta\).
+
+A função de densidade de probabilidade da distribuição exponencial:
+
+\[f(x) = \begin{cases} \theta e^{-\theta x}, & x \geq 0 \\ 0, & x < 0 \end{cases} \]
+
+A função de verossimilhança para \(\{X_1, X_2, \ldots, X_n\}\) com \(X_i \sim \mathrm{Exponencial}(\theta)\):
+
+\[L(\theta;\, x) = \prod_{i=1}^{n} \theta e^{-\theta x_i} = \theta^n \exp\!\left(-\theta \sum_{i=1}^{n} x_i\right) \]
+
+O logaritmo da verossimilhança:
+
+\[\ell(\theta;\, x) = n\log\theta - \theta\sum_{i=1}^{n} x_i \]
+
+Derivando e igualando a zero:
+
+\[\frac{\partial}{\partial\theta}\,\ell(\theta;\, x) = \frac{n}{\theta} - \sum_{i=1}^{n} x_i = 0 \]
+
+Portanto, o estimador de máxima verossimilhança é:
+
+\[\hat{\theta} = \frac{n}{\sum_{i=1}^{n} x_i} \]
+\[\hat{\theta} = \frac{1}{\bar{x}} \]
+
+**** Exemplo: Binomial
+
+Cada elemento da amostra é uma realização de uma distribuição binomial com parâmetro \(\theta = p\) (probabilidade de sucesso):
+
+\[X_i \sim \mathrm{Binomial}(m,\, \theta), \quad i = 1, 2, \ldots, n \]
+
+onde \(m\) é o número de experimentos (conhecido) e \(n\) é o tamanho da amostra.
+
+A função de verossimilhança é:
+
+\[L(\theta;\, x) = C_i \cdot \theta^{\sum_{i=1}^n x_i} \cdot (1-\theta)^{\sum_{i=1}^n (m - x_i)} \]
+
+onde \(C_i = \prod_{i=1}^{n}\binom{m}{x_i}\) não depende de \(\theta\). O logaritmo da verossimilhança:
+
+\[\ell(\theta;\, x) = \log C_i + \left(\sum_{i=1}^{n} x_i\right)\log\theta + \left(\sum_{i=1}^{n}(m - x_i)\right)\log(1-\theta) \]
+
+Derivando e igualando a zero:
+
+\[\frac{\partial}{\partial\theta}\,\ell(\theta;\, x) = \frac{\sum_{i=1}^n x_i}{\theta} - \frac{nm - \sum_{i=1}^n x_i}{1-\theta} = 0 \]
+
+Resolvendo:
+
+\[\hat{\theta} = \frac{1}{nm}\sum_{i=1}^{n} X_i \]
+
+
+
+*** Propriedades
+
+*Definição:* Um estimador \(\hat{\theta}\) para o parâmetro populacional \(\theta\) é *não viesado* (ou não viciado) se:
+
+\[E[\hat{\theta}] = \theta \]
+
+**** Não viés da média amostral
+
+*Exemplo:* A média amostral \(\bar{X}\) é um estimador não viesado para \(\mu\), pois:
+
+\[E[\bar{X}] = E\!\left[\frac{\sum_{i=1}^n X_i}{n}\right] = \frac{1}{n}\sum_{i=1}^n E[X_i] = \frac{n\mu}{n} = \mu \]
+
+pois \(E[X_i] = \mu\) para \(i = 1, 2, \ldots, n\).
+
+**** Viés do EMV da variância
+
+O estimador de máxima verossimilhança da variância \(\hat{\sigma}^2\) possui valor esperado:
+
+\[E[\hat{\sigma}^2] = \sigma^2 \cdot \frac{n-1}{n} \neq \sigma^2 \]
+
+Portanto, o EMV da variância populacional é *viesado*.
+
+
+Um estimador não viesado da variância populacional é a *variância amostral*:
+
+\[s^2 = \frac{\sum_{i=1}^{n}(X_i - \bar{X})^2}{n-1} \]
+
+pois \(E[s^2] = \sigma^2\).
+
+
+O estimador \(\hat{\sigma}^2\) fornece um valor menor do que a variância populacional. Para \(n = 2\):
+
+\[E[\hat{\sigma}^2] = \frac{\sigma^2}{2} \]
+
+Para \(n\) grande, \(\hat{\sigma}^2\) é um bom estimador para \(\sigma^2\), pois:
+
+\[\lim_{n \to \infty} E[\hat{\sigma}^2] = \lim_{n \to \infty} \frac{n-1}{n}\,\sigma^2 = \sigma^2 \]
+
+Nesse caso, \(\hat{\sigma}^2\) é dito *assintoticamente não viesado*.
+
+**** Estimador assintoticamente não viesado
+
+*Definição:* Um estimador \(\hat{\theta}_n = \hat{\theta}_n(X_1, \ldots, X_n)\) é *assintoticamente não viesado* se:
+
+\[\lim_{n \to \infty} E[\hat{\theta}_n] = \theta \]
+
+**** Consistência
+
+*Definição:* Uma sequência de estimadores \(\hat{\theta}_n = \hat{\theta}_n(X_1, \ldots, X_n)\) é *consistente* se:
+
+\[\lim_{n \to \infty} P\bigl\{|\hat{\theta}_n - \theta| > \varepsilon\bigr\} = 0 \]
+
+para todo \(\varepsilon > 0\). Equivalentemente:
+
+\[\lim_{n \to \infty} E[\hat{\theta}_n] = \theta \qquad \text{e} \qquad \lim_{n \to \infty} V[\hat{\theta}_n] = 0 \]
+
+*** Propriedades do EMV
+
+O estimador de máxima verossimilhança possui propriedades importantes:
+
+- *Consistência assintótica:* converge em probabilidade para o parâmetro verdadeiro:
+
+\[\lim_{n \to \infty} P\bigl\{|\hat{\theta}_n - \theta| > \varepsilon\bigr\} = 0 \]
+
+Quando aumentamos o tamanho da amostra, a probabilidade de o estimador estar próximo do parâmetro populacional aumenta.
+
+
+- *Assintoticamente não viesado:*
+
+\[\lim_{n \to \infty} E[\hat{\theta}] = \theta \]
+
+- *Equivariância:* se \(\hat{\theta}\) é o estimador de \(\theta\), então \(g(\hat{\theta})\) é o estimador de \(g(\theta)\).
+
+
+- *Assintoticamente normal:*
+
+\[\frac{\hat{\theta} - \theta}{\widehat{\mathrm{se}}} \sim \mathcal{N}(0,\,1) \]
+
+onde \(\widehat{\mathrm{se}} = \sqrt{V(\hat{\theta})}\) é o erro padrão.
+
+- *Assintoticamente ótimo e eficiente:* para amostras grandes, é o estimador com menor variância dentre todos os estimadores possíveis.
+
+** Exemplo — Distribuição discreta com parâmetro \(\theta\)
+
+*Problema:* Seja \(X\) uma variável aleatória discreta com distribuição:
+
+| \(X\)          | \(0\)    | \(1\)   | \(2\)        | \(3\)       |
+|----------------+----------+---------+--------------+-------------|
+| \(P(X = x_i)\) | \(2\theta/3\) | \(\theta/3\) | \(2(1-\theta)/3\) | \((1-\theta)/3\) |
+
+Uma amostra obtida é \(x = \{0, 1, 3, 2, 1, 0, 2, 1, 3, 2\}\). Qual é o EMV para \(\theta\)?
+
+
+A função de verossimilhança para a amostra \(x = \{0, 1, 3, 2, 1, 0, 2, 1, 3, 2\}\) (2 zeros, 3 uns, 3 doses, 2 três):
+
+\[L(\theta;\, x) = \left(\frac{2\theta}{3}\right)^{\!2} \left(\frac{\theta}{3}\right)^{\!3} \left(\frac{2(1-\theta)}{3}\right)^{\!3} \left(\frac{1-\theta}{3}\right)^{\!2} \]
+
+O logaritmo da verossimilhança:
+
+\[\ell(\theta;\, x) = 2\log\!\frac{2\theta}{3} + 3\log\!\frac{\theta}{3} + 3\log\!\frac{2(1-\theta)}{3} + 2\log\!\frac{1-\theta}{3} \]
+
+Derivando e igualando a zero:
+
+\[\frac{d}{d\theta}\,\ell(\theta;\, x) = \frac{5}{\theta} - \frac{5}{1-\theta} = 0 \]
+
+Resolvendo:
+
+\[\hat{\theta} = 0{,}5 \]
+
+Este é o valor mais provável de \(\theta\) que foi usado para gerar os dados observados.
+
+
+* Teoremas Limites
+
+** Introdução
+
+*Teorema:* Seja \(X\) uma variável aleatória com esperança \(E[X] = \mu\) e variância \(V(X) = \sigma^2\).
+Seja \(\bar{X}\) a média amostral calculada a partir de \(n\) amostras independentes e identicamente distribuídas de \(X\), \(X_1, X_2, \ldots, X_n\), onde \(E[X_i] = \mu\) e \(V(X_i) = \sigma^2\), \(i = 1, 2, \ldots, n\).
+Então,
+\[E[\bar{X}] = \mu\]
+\[V(\bar{X}) = \frac{\sigma^2}{n}\]
+
+Dito de outra forma, quando aumenta-se o valor da amostra, a variância de \(\bar{x}\) converge a zero, ou seja, o estimador converge para o valor populacional.
+
+Importante pontuar que são \(n\) amostras, o que é diferente de ser um amostra com \(n\) elementos.
+
+Ao realizar um histograma da média, obtém-se uma distribuição aproximadamente normal.
+Isso se deve porque uma estimação pontual depende da amostra, mas quando essa amostragem é repetida \(n\) vezes, a média das médias se aproxima do estimador populacional.
+
+
+** Prova
+
+Para provarmos esse teorema:
+\[E[\bar{X}] = E\!\left[\frac{\sum_{i=1}^{n} X_i}{n}\right] = \frac{\sum_{i=1}^{n} E[X_i]}{n} = \frac{n\mu}{n} = \mu\]
+No caso da variância:
+\[V(\bar{X}) = V\!\left(\frac{\sum_{i=1}^{n} X_i}{n}\right) = \sum_{i=1}^{n} V\!\left(\frac{X_i}{n}\right) = \sum_{i=1}^{n} \frac{V(X_i)}{n^2} = \sum_{i=1}^{n} \frac{\sigma^2}{n^2} = \frac{n\sigma^2}{n^2} = \frac{\sigma^2}{n}\]
+Portanto, quando aumentamos o tamanho da amostra, a média amostral converge para a média populacional, enquanto que a variância da média amostral diminui.
+
+** Teorema Central do Limite: Enunciado completo
+
+*Teorema:* Seja uma amostra aleatória \((X_1, X_2, \ldots, X_n)\) retirada de uma população descrita pela variável aleatória \(X\), com média \(E[X_i] = \mu\), \(i = 1, 2, \ldots, n\), e variância \(V(X_i) = \sigma^2\), ou seja, uma sequência de variáveis aleatórias independentes e identicamente distribuídas.
+A distribuição amostral de \(\bar{X}\) aproxima-se, para \(n\) grande, de uma distribuição normal com média \(E[\bar{X}] = \mu\) e variância \(V(\bar{X}) = \sigma^2/n\).
+
+Importante que não é preciso dizer nada sobre a distribuição da população.
+
+** Lindeberg–Lévy
+
+*Teorema:* Suponha que \(\{X_1, X_2, \ldots, X_n\}\) é uma sequência de variáveis aleatórias independentes e identicamente distribuídas com média \(E[X_i] = \mu\) e variância \(V(X_i) = \sigma^2 < \infty\).
+Então, quando \(n \to \infty\), as variáveis aleatórias \(\sqrt{n}(\bar{X}_n - \mu)\) convergem para uma distribuição normal \(\mathcal{N}(0, \sigma^2)\).
+\[\sqrt{n}(\bar{X}_n - \mu) \xrightarrow{d} \mathcal{N}(0, \sigma^2)\]
+
+\(\xrightarrow{d} \) denota convergir em distribuição.
+
+** Corolário
+
+*Corolário:* Seja \(\{X_1, X_2, \ldots, X_n\}\) uma amostra de uma população \(X\) com média \(\mu\) e variância \(\sigma^2 < \infty\).
+Então,
+\[Z = \frac{\bar{X} - \mu}{\sigma/\sqrt{n}} \sim \mathcal{N}(\mu = 0,\, \sigma^2 = 1)\]
+
+Ideia: Dada uma população (com distribuição desconhecida), retira-se várias amostrar de tamanho \(n\).
+A distribuição das médias de cada uma das amostras segue uma distribuição aproximadamente normal quando \(n\) é grande.
+Neste caso, a média das médias é centrada na média populacional e com desvio-padrão dado por \(\sigma/\sqrt{n}\).
+
+Sendo assim, o TCL explica o porquê é \(Z\) segue uma distribuição normal e o porque de se utilizar \(\sigma/\sqrt{n}\).
+
+** Código Python
+
+#+begin_src python
+import scipy.stats as stats
+import matplotlib.pyplot as plt
+import numpy as np
+import random as random
+np.random.seed(42)
+
+# número de elementos em cada amostra
+vn = [1, 2, 4, 8, 10, 20, 50, 100]
+S = 10000  # número de amostras
+mu = 2  # média populacional
+# gera a população
+pop = np.random.exponential(mu, 20000)
+#pop = np.random.uniform(0, 2*mu, 20000)
+
+plt.figure(figsize=(12, 16))
+plt.subplots_adjust(hspace=0.5)
+aux = 0  # variavel auxiliar
+for n in vn:  # varia o tamanho da amostra
+    vmean = []
+    for s in range(0, S):
+        # seleciona s amostras de tamanho n
+        X = random.choices(pop, k=n)
+        # armazena a média da amostra
+        vmean.append(np.mean(X))
+    # mostra o histograma
+    plt.subplot(4, 2, aux + 1)
+    aux = aux + 1
+    plt.hist(x=vmean, bins=50, color='gray',
+             alpha=0.7, rwidth=0.85, density=True,
+             label='n = ' + str(n))
+    plt.xlabel(r'$\bar{X}$', fontsize=15)
+    plt.ylabel('Frequência normalizada', fontsize=14)
+    plt.legend()
+    plt.xlim(0, 10)
+    # Mostra a curva normal ajustada
+    xmin, xmax = min(vmean), max(vmean)
+    lnspc = np.linspace(xmin, xmax, len(vmean))
+    m, s = stats.norm.fit(vmean)  #
+    pdf_g = stats.norm.pdf(lnspc, m, s)
+    plt.plot(lnspc, pdf_g, label="Normal", color='black')
+plt.savefig('TCL_exp.svg')
+plt.show(True)
+#+end_src
+
+
+Os histogramas mostram a distribuição da média amostral \(\bar{X}\) para diferentes tamanhos de amostra (\(n = 1, 2, 4, 8, 10, 20, 50, 100\)), com a curva normal ajustada sobreposta.
+À medida que \(n\) cresce, a distribuição da média amostral se aproxima de uma normal, independentemente da distribuição original da população (no caso, exponencial).
+
+Sendo assim, quando o tamanho da amostra é pequeno, aproxima-se da distribuição orignal dos dados.
+Mas quanto o tamanho da amostra é grande, converge-se em probabilidade para uma normal.
+
+** Exemplo 1
+
+A ideia deste exemplo é mostrar como o Teorema Central do Limite pode ser utilizado.
+
+*Exemplo:* Seja a variável aleatória com distribuição de probabilidade:
+\[P(X = 3) = 0{,}5;\quad P(X = 6) = 0{,}3;\quad P(X = 8) = 0{,}2\]
+Uma amostra com 50 observações é sorteada dessa distribuição.
+Qual é a probabilidade de que a média amostral é maior do que 5?
+
+
+*Solução:* Temos:
+\[E[X] = \mu = \sum_i x_i P(X = x_i) = 3(0{,}5) + 6(0{,}3) + 8(0{,}2) = 4{,}9\]
+De maneira similar:
+\[V(X) = \sigma^2 = E[X^2] - E[X]^2 = 3^2(0{,}5) + 6^2(0{,}3) + 8^2(0{,}2) - 4{,}9^2 = 4{,}09\]
+Vamos calcular \(P(\bar{X} > 5)\):
+\[P(\bar{X} > 5) = P\!\left(\frac{\bar{X} - \mu}{\sigma/\sqrt{n}} > \frac{5 - \mu}{\sigma/\sqrt{n}}\right) = P\!\left(Z > \frac{5 - 4{,}9}{\sqrt{4{,}09/50}}\right) = P(Z > 0{,}34) = 1 - P(Z < 0{,}34) = 0{,}36\]
+Notem que como a distribuição da média amostral tende a uma normal, usamos a distribuição normal padronizada.
+
+
+#+begin_src python
+from IPython.display import display, Math
+import scipy.stats as st
+import numpy as np
+np.random.seed(2011)
+
+# calcula o momento de ordem m
+def M(X, P, m):
+    En = 0
+    for i in range(0, len(X)):
+        En = En + (X[i]**m) * P[i]
+    return En
+
+# valores de X e P(X=x)
+X = [3, 6, 8]
+P = [0.5, 0.3, 0.2]
+E = M(X, P, 1)   # valor esperado
+E2 = M(X, P, 2)  # segundo momento
+V = E2 - E**2    # variância
+print("Esperança:", M(X, P, 1))
+print("Variância:", V)
+
+# Cálculo do valor teórico
+n = 50     # tamanho da amostra
+xbar = 5   # média amostral do problema
+z = (xbar - E) / (np.sqrt(V/n))
+print('z = ', z)
+p = 1 - st.norm.cdf(z)
+print('Valor teórico:')
+display(Math(r'P(\bar{X} <' + str(xbar) + ')=' + str(p)))
+
+# realiza a simulação
+ns = 1000  # número de simulações
+vx = []    # armazena a média amostral
+for s in range(0, ns):
+    # gera a amostra
+    A = np.random.choice(X, n, p=P)
+    # armazena a média amostral
+    vx.append(np.mean(A))
+nmaior = 0  # número de resultados > xbar
+for i in range(0, len(vx)):
+    # verifica se a média amostral é maior do que xbar
+    if(vx[i] > xbar):
+        nmaior = nmaior + 1
+freq = nmaior / len(vx)
+print('Valor simulado:')
+display(Math(r'P(\bar{X} <' + str(xbar) + ')=' + str(freq)))
+#+end_src
+
+** Exemplo 2
+
+*Exemplo:* O tempo que um cliente gasta em um banco, em minutos, segue o modelo exponencial com parâmetro igual a \(1/5\).
+Observando-se uma amostra aleatória de 50 pessoas que passaram pelo banco, qual será a probabilidade de que a média dessa amostra não ultrapasse 6 minutos?
+
+
+*Solução:* Como o tempo \(X\) segue o modelo exponencial, temos que
+\[E[X] = 1/\lambda = 5 \text{ minutos}\]
+\[V(X) = 1/\lambda^2 = 25 \text{ minutos}^2\]
+Calculando a probabilidade pedida:
+\[P(\bar{X} < 6) = P\!\left(\frac{\bar{X} - \mu}{\sigma/\sqrt{n}} < \frac{6 - \mu}{\sigma/\sqrt{n}}\right) = P\!\left(Z < \frac{6 - 5}{\sqrt{25/50}}\right) = P(Z < 1{,}41) = 0{,}92\]
+Portanto, há uma probabilidade de 92% de que o tempo médio dentre 50 clientes, sorteados de forma aleatória, seja menor do que seis minutos.
+
+** TCL para proporções
+
+No caso em que a variável aleatória é binária, o Teorema Central do Limite pode ser adaptado para o caso de proporções (binários).
+Seja \(\{X_1, X_2, \ldots, X_n\}\) uma amostra aleatória independente e identicamente distribuída onde:
+\[P(X_i = 1) = p \qquad P(X_i = 0) = 1 - p\]
+O número de sucessos é dado pela soma das variáveis aleatórias,
+\[S_n = \sum_{i=1}^{n} X_i\]
+Assim, temos que \(\bar{X} = S_n/n\).
+Com isso, usando os resultados anteriores, obtemos:
+\[Z = \frac{\bar{X} - \mu}{\sigma/\sqrt{n}} \sim \mathcal{N}(\mu = 0,\, \sigma^2 = 1)\]
+onde \(\mu = p\) e \(\sigma^2 = p(1-p)\) são a esperança e variância da distribuição de Bernoulli, respectivamente.
+Portanto,
+\[Z = \frac{\bar{X} - p}{\sqrt{p(1-p)/n}} \sim \mathcal{N}(\mu = 0,\, \sigma^2 = 1)\]
+
+** Exemplo 3
+
+*Exemplo:* Suponha que \(p = 70\%\) dos alunos de uma escola são mulheres.
+Coletamos uma amostra de 100 pessoas e calculamos a proporção de mulheres na amostra.
+Qual é a probabilidade de que tal proporção difira de \(p\) em menos de \(0{,}05\)?
+
+
+*Solução:* A probabilidade pedida:
+\[P(|\bar{X} - p| < 0{,}05) = P(-0{,}05 < \bar{X} - p < 0{,}05)\]
+\[= P\!\left(\frac{-0{,}05}{\sqrt{p(1-p)/n}} < \frac{\bar{X} - p}{\sqrt{p(1-p)/n}} < \frac{0{,}05}{\sqrt{p(1-p)/n}}\right)\]
+\[= P\!\left(\frac{-0{,}05}{\sqrt{0{,}7(1-0{,}7)/100}} < Z < \frac{0{,}05}{\sqrt{0{,}7(1-0{,}7)/100}}\right)\]
+\[= P(-1{,}09 < Z < 1{,}09) = P(Z < 1{,}09) - P(Z < -1{,}09) = 0{,}725\]
+Portanto, dentre 1000 amostras de tamanho 100 que coletarmos, aproximadamente 720 delas diferirão da proporção \(p\) em menos de \(0{,}05\).
+
+* Lei dos Grandes Números
+
+** Contexto histórico
+
+No século XVI, em seu livro sobre jogos de azar, Gerolamo Cardano (1501–1576) afirmou que a acurácia de experimentos estatísticos tende a aumentar com o número de tentativas.
+Por exemplo, se lançamos uma moeda justa e calculamos a probabilidade de sair cara, essa probabilidade deve se aproximar cada vez mais do valor \(0{,}5\) na medida em que aumentarmos o número de lançamentos.
+
+** Código Python
+
+#+begin_src python
+import numpy as np
+import matplotlib.pyplot as plt
+np.random.seed(2011)
+
+p = 0.5    # probabilidade de sair cara
+Ns = 10000  # número máximo de simulações
+vnh = []    # armazena o número de caras
+vsim = []   # armazena o número de simulações
+for ns in np.arange(1, Ns + 1):
+    nh = 0  # número de caras
+    # realiza ns lançamentos
+    for s in range(0, ns):
+        # verifica se sai uma cara
+        if(np.random.uniform() < p):
+            nh = nh + 1
+    # armazena a probabilidade calculada
+    vnh.append(nh / ns)
+    vsim.append(ns)
+# mostra os resultados
+plt.figure(figsize=(10, 6))
+plt.plot(vsim, vnh, '-', color='gray',
+         label='Fração de caras')
+plt.axhline(y=p, color='k', linestyle='--',
+            label='Probabilidade de sair cara')
+plt.xlabel('Número de simulações', fontsize=20)
+plt.ylabel('Fração de caras', fontsize=20)
+plt.legend(fontsize=15)
+plt.savefig('LGN.svg')
+plt.show(True)
+#+end_src
+
+
+O gráfico mostra a fração de caras obtida em função do número de simulações.
+À medida que o número de lançamentos cresce, a fração de caras converge para a probabilidade teórica \(p = 0{,}5\).
+
+** Lei Fraca
+
+*Teorema (Lei Fraca dos Grandes Números):* Sejam \(X_1, X_2, \ldots, X_n\) variáveis aleatórias independentes e identicamente distribuídas com esperança \(E[X_i] = \mu < \infty\), \(i = 1, 2, \ldots, n\).
+Seja \(\varepsilon > 0\). Então,
+\[\lim_{n \to \infty} P(|\bar{X} - \mu| \geq \varepsilon) = 0\]
+onde \(\bar{X} = \sum_{i=1}^{n} X_i / n\) é a média amostral.
+Ou seja:
+\[\lim_{n \to \infty} \frac{\sum_{i=1}^{n} X_i}{n} = \mu = E[X]\]
+
+** Demonstração da Lei Fraca
+
+Para demonstrar esse teorema, vamos considerar a desigualdade de Chebyshev:
+\[P(|\bar{X} - \mu| \geq \varepsilon) \leq \frac{V(\bar{X})}{\varepsilon^2}\]
+No entanto,
+\[V(\bar{X}) = V\!\left(\frac{\sum_{i=1}^{n} X_i}{n}\right) = \frac{\sum_{i=1}^{n} V(X_i)}{n^2} = \frac{\sigma^2}{n}\]
+pois \(X_1, X_2, \ldots, X_n\) são independentes e identicamente distribuídas com variância \(V(X_i) = \sigma^2\).
+Assim, temos
+\[P(|\bar{X} - \mu| \geq \varepsilon) \leq \frac{\sigma^2}{n\varepsilon^2}\]
+Tomando o limite,
+\[\lim_{n \to \infty} P(|\bar{X} - \mu| \geq \varepsilon) \leq \lim_{n \to \infty} \frac{\sigma^2}{n\varepsilon^2} = 0\]
+Com isso, provamos o teorema.
+
+Ou seja, com \(n\to \infty\) a média amostral converge para a média populacional.
+
+** Lei Forte
+
+*Teorema (Lei Forte dos Grandes Números):* Seja \(S_n = \sum_{i=1}^{n} X_i\) a soma de \(n\) variáveis aleatórias independentes e identicamente distribuídas, cada uma com média \(E[X_i] = \mu\), \(i = 1, 2, \ldots, n\).
+Seja ainda \(\bar{X} = S_n/n\). Então,
+\[P\!\left(\lim_{n \to \infty} \bar{X} = \mu\right) = 1\]
+Em resumo, podemos dizer que na Lei Fraca dos Grandes Números, há uma alta probabilidade de que \(\bar{X}_n\) se aproxime de \(E[X] = \mu\) quando \(n\) cresce.
+Essa propriedade é chamada de convergência fraca.
+Já no caso da Lei Forte dos Grandes Números, pode-se afirmar, com certeza, que a média amostral convergirá para a média \(\mu\) quando \(n \to \infty\).
+Esse tipo de convergência é chamada de "convergência quase certa".
+
+A diferença em termos de enunciação é que a probabilidade de \(\bar{x} \to \mu\) é quase certa (\(P = 1\)).
+* Intervalos de confiança
+
+** Primeiras ideias
+
+Usando o código abaixo, obtemos estimativas para a distribuição exponencial.
+
+#+begin_src python
+import numpy as np
+import matplotlib.pyplot as plt
+np.random.seed(2011)
+
+theta = 2 # parâmetro do modelo exponencial
+n = 100 # tamanho da amostra
+ns = 500 # número de amostras
+v_theta_hat = []
+for s in range(0,ns):
+    # sorteia uma amostra de tamanho n
+    x = np.random.exponential(1/theta, n)
+    # usa o estimador da exponencial
+    theta_hat = n/np.sum(x)
+    # armazena o valor estimado
+    v_theta_hat.append(theta_hat)
+
+# mostra os resultados da simulação
+plt.figure(figsize=(10,6))
+plt.hist(x=v_theta_hat, bins=20, color='gray',
+         alpha=0.7, rwidth=0.85, density=True)
+plt.xlabel(r'$\hat{\theta}$', fontsize=20)
+plt.ylabel(r'$P(\hat{\theta})$', fontsize=20)
+plt.axvline(x=theta, color='k', linestyle='--')
+plt.savefig('dist_exp_est.svg')
+plt.show(True)
+#+end_src
+
+
+Distribuição das estimativas.
+
+
+- Essa variação no valor da estimativa também foi observada nas aulas anteriores, como resultado do Teorema Central do Limite, onde mostramos que a distribuição da média amostral tende a uma distribuição normal quando aumentamos o tamanho da amostra.
+- Desse modo, como ocorre essa flutuação estatística de uma amostra para outra, para caracterizarmos um estimador, é mais adequado definirmos um intervalo de confiança do que usar um único valor estimado.
+  - Este problema decorre do estimador depender da amostra
+    - Baseando-se em um valor pontual é pouco explicativo
+- O intervalo de confiança é construído levando-se em consideração a variabilidade dos dados amostrais e o tamanho da amostra. Ele fornece uma faixa de valores plausíveis para o parâmetro populacional com base na amostra coletada.
+  - Assim, dado um nível de confiança é possível dizer se o parâmetro amostral está contido em uma região do espaço paramétrico
+
+
+Pela figura a seguir, fixando um índice de confiança $\gamma = (1 - \alpha)100\%$, temos:
+\[P(-z_{\alpha/2} \leq Z \leq z_{1-\alpha/2}) = \gamma = 1 - \alpha.\]
+No entanto, pela simetria da distribuição normal, temos que $z_{1-\alpha/2} = z_{\alpha/2}$. Logo,
+\[P(-z_{\alpha/2} \leq Z \leq z_{\alpha/2}) = 1 - \alpha.\]
+Incluindo o resultado do Teorema Central do Limite, obtemos:
+\[P(-z_{\alpha/2} \leq Z \leq z_{\alpha/2}) = P\!\left(-z_{\alpha/2} \leq \frac{\bar{X} - \mu}{\sigma/\sqrt{n}} \leq z_{\alpha/2}\right) = 1 - \alpha.\]
+
+
+Como estamos interessados no intervalo de confiança para o parâmetro $\mu$, vamos isolá-lo na equação anterior:
+\[P\!\left(-z_{\alpha/2} \leq \frac{\bar{X} - \mu}{\sigma/\sqrt{n}} \leq z_{\alpha/2}\right) = P\!\left(\bar{X} - z_{\alpha/2}\frac{\sigma}{\sqrt{n}} \leq \mu \leq \bar{X} + z_{\alpha/2}\frac{\sigma}{\sqrt{n}}\right) = 1 - \alpha.\]
+Portanto,
+\[P\!\left(\bar{X} - z_{\alpha/2}\frac{\sigma}{\sqrt{n}} \leq \mu \leq \bar{X} + z_{\alpha/2}\frac{\sigma}{\sqrt{n}}\right) = 1 - \alpha. \tag{1}\]
+
+
+OBS: o IC não fornece de que \(\mu\) esteja no intervalo, mas sim, que o intervalo contenha o parâmetro \(\mu\).
+
+** Definição
+
+*Definição:* O intervalo de confiança de $\gamma = (1 - \alpha)100\%$ para a média populacional $\mu$ de uma população com variância conhecida $\sigma^2$ é dado por:
+\[IC(\mu;\, 1 - \alpha) = \left[\bar{X}_n - z_{\alpha/2}\frac{\sigma}{\sqrt{n}},\ \bar{X}_n + z_{\alpha/2}\frac{\sigma}{\sqrt{n}}\right]. \tag{2}\]
+Notem que o nível de confiança, o tamanho da amostra e a variância da população influenciam no *comprimento do intervalo*.
+Para um nível de confiança fixo, o comprimento do intervalo diminui de acordo com o tamanho da amostra $n$. Em outras palavras, quanto maior a amostra, menor o comprimento do intervalo, o que reduz a *incerteza* nos resultados.
+
+Importante: esse intervalo de confiança é definido para uma variância *conhecida*.
+
+#+begin_src python
+import numpy as np
+import matplotlib.pyplot as plt
+import scipy.stats
+np.random.seed(10)
+
+n = 50 # tamanho da amostra
+Ns = 100 # número de intervalos
+mu = 2 # média populacional
+sigma = 2 # desvio padrão populacional
+confidence = 0.95 # nível de confiança
+# obtem zalpha/2 (tabelado)
+zalpha = abs(scipy.stats.norm.ppf((1 - confidence)/2.))
+c = 0 # conta o número de intervalos que contém a média
+plt.figure(figsize=(14,10))
+for s in range(1, Ns+1):
+    # sorteia uma amostra de tamanho n
+    x = np.random.normal(mu, sigma, n)
+    # calcula o intervalo inferior
+    IC1 = np.mean(x) - zalpha*sigma/np.sqrt(n)
+    # calcula o intervalo superior
+    IC2 = np.mean(x) + zalpha*sigma/np.sqrt(n)
+    if(mu > IC1 and mu < IC2):
+        c = c + 1
+        # mostra o intervalo que contém a media
+        plt.vlines(s, ymin=IC1, ymax=IC2, color='gray')
+        plt.plot(s, np.mean(x), 'o', color='gray', markersize=5)
+    else:
+        # mostra o intervalo que não contem a média
+        plt.vlines(s, ymin=IC1, ymax=IC2,
+                   color='black', linestyles='dashed')
+        plt.plot(s, np.mean(x), 'o', color='black', markersize=5)
+
+print('Nível de confiança:', confidence)
+print('Fração de intervalos que contém a média:', c/Ns)
+# mostra a média populacional
+plt.axhline(y=mu, color='black')
+plt.xlabel('Amostra', fontsize=20)
+plt.xticks(fontsize=15)
+plt.yticks(fontsize=15)
+plt.show()
+#+end_src
+
+Para os casos em que o desvio-padrão populacional é desconhecido, deve-se utilizar o estimador amostral \(s\).
+Sendo este o caso, utiliza-se a estatística \(t\) de student com \(n-1\) graus de liberdade (no lugar de \(Z\)).
+Este é o caso para quando \(n \leq 50\), caso contrário, converge-se assintoticamente para uma distribuição próxima de uma distribuição normal.
+Apesar disso, continua-se usando \(s\) para estimar a variância.
+
+Caso a população é pequena e não se aproxima de uma normal, é preciso utilizar métodos não-paramétricos ou reamostragem.
+Se aproximando de uma normal, pode-se utilizar a t de student.
+
+** Exemplo 0
+
+*Exemplo:* Em uma empresa de venda de alimentos online, verificou-se que o tempo necessário para uma entrega tem distribuição normal com média $\mu = 30$ minutos e desvio padrão igual $\sigma = 10$ minutos. Em uma amostra de $n = 50$ entregadores, observou-se um tempo médio de $\bar{X}_{50} = 25$ minutos. Determine o intervalo de confiança de 95% para a média $\mu$ de todos os entregadores da empresa.
+
+
+*Solução:* Como o nível de confiança é de 95%, isto é, $1 - \alpha = 0{,}95$, então $\alpha = 0{,}05$. Pela tabela da distribuição normal, ou usando o código a seguir, obtemos $z_{0{,}05/2} = 1{,}96$.
+
+#+begin_src python
+import scipy.stats
+confidence = 0.95
+alpha = 1 - confidence
+z = scipy.stats.norm.ppf(1 - alpha/2)
+print(z)
+#+end_src
+
+Assim:
+\[IC(\mu;\, 0{,}95) = \left[\bar{X}_n - z_{\alpha/2}\frac{\sigma}{\sqrt{n}},\ \bar{X}_n + z_{\alpha/2}\frac{\sigma}{\sqrt{n}}\right] = \left[25 - 1{,}96\frac{10}{\sqrt{50}},\ 25 + 1{,}96\frac{10}{\sqrt{50}}\right] = [22{,}22;\, 27{,}77].\]
+Ou seja, com 95% de certeza podemos afirmar que o intervalo $[22{,}22;\, 27{,}77]$ (medido em minutos) contém a média populacional.
+
+
+Observem que nesse exemplo anterior, para calcular o intervalo de confiança, precisamos conhecer o desvio padrão da população. No entanto, na maioria dos problemas de inferência estatística, não temos acesso ao valor desse parâmetro, o que é esperado, já que também não conhecemos a média. Nessas situações, devemos considerar o desvio padrão amostral, que é um estimador não viesado e consistente para o desvio padrão da população. O desvio padrão amostral é definido por:
+\[S_n = \sqrt{\frac{1}{n-1}\sum_{i=1}^{n}(X_i - \bar{X}_n)^2}. \tag{3}\]
+Para calcularmos o intervalo de confiança, substituímos o desvio padrão populacional pelo amostral e usamos o teorema a seguir.
+
+
+*Teorema:* A estatística
+\[T = \frac{\bar{X}_n - \mu}{S_n/\sqrt{n}} \tag{4}\]
+possui distribuição t de Student com $n - 1$ graus de liberdade.
+
+
+Vamos determinar o intervalo de confiança para uma amostra pequena ($n < 50$) e $\sigma$ desconhecido utilizando o resultado na equação (4). Ou seja, pela figura, temos:
+\[P(-t_{\alpha/2,\,n-1} \leq T \leq t_{1-\alpha/2,\,n-1}) = 1 - \alpha.\]
+No entanto, pela simetria da distribuição t de Student, podemos verificar que $t_{1-\alpha/2,\,n-1} = t_{\alpha/2,\,n-1}$. Logo, podemos escrever:
+\[P(-t_{\alpha/2,\,n-1} \leq T \leq t_{\alpha/2,\,n-1}) = 1 - \alpha.\]
+Usando a equação (4), onde definimos $T$, temos:
+\[P\!\left(-t_{\alpha/2,\,n-1} \leq \frac{\bar{X}_n - \mu}{S_n/\sqrt{n}} \leq t_{\alpha/2,\,n-1}\right) = 1 - \alpha.\]
+Isolando $\mu$ na desigualdade, obtemos o seguinte resultado:
+\[P\!\left(\bar{X}_n - t_{\alpha/2,\,n-1}\frac{S_n}{\sqrt{n}} \leq \mu \leq \bar{X}_n + t_{\alpha/2,\,n-1}\frac{S_n}{\sqrt{n}}\right) = 1 - \alpha. \tag{5}\]
+
+
+*Definição:* O intervalo de confiança de $\gamma = (1 - \alpha)100\%$ para a média populacional $\mu$, de uma população com variância desconhecida, é dado por:
+\[IC(\mu;\, 1 - \alpha) = \left[\bar{X}_n - t_{\alpha/2,\,n-1}\frac{S_n}{\sqrt{n}},\ \bar{X}_n + t_{\alpha/2,\,n-1}\frac{S_n}{\sqrt{n}}\right]. \tag{6}\]
+Se o tamanho da população $n$ for grande (usualmente maior do que 50), devemos usar a distribuição normal padronizada e, nesse caso,
+\[IC(\mu;\, 1 - \alpha) = \left[\bar{X}_n - z_{\alpha/2}\frac{S_n}{\sqrt{n}},\ \bar{X}_n + z_{\alpha/2}\frac{S_n}{\sqrt{n}}\right]. \tag{7}\]
+
+** Exemplo 1
+
+*Exemplo:* Em um provedor de vídeos na Internet, verificou-se que para uma amostra de 15 usuários, o tempo médio de exibição é igual a $\bar{X}_{15} = 39{,}3$ minutos e o desvio padrão amostral é igual a $S_{15} = 2{,}6$ minutos. Encontre um intervalo de 90% de confiança para a média populacional $\mu$.
+
+
+*Solução:* O nível de confiança é $(1 - \alpha) = 0{,}90$ e, portanto, pelo código anterior, temos $t_{\alpha/2,\,(n-1)} = t_{0{,}1/2,\,(15-1)} = t_{0{,}05,\,14} = 1{,}761$.
+Assim, o intervalo de confiança:
+\[IC(\mu;\, 0{,}95) = \left[\bar{X}_n - t_{\alpha/2,\,n-1}\frac{S_n}{\sqrt{n}},\ \bar{X}_n + t_{\alpha/2,\,n-1}\frac{S_n}{\sqrt{n}}\right] = \left[39{,}3 - 1{,}761\frac{2{,}6}{\sqrt{15}},\ 39{,}3 + 1{,}761\frac{2{,}6}{\sqrt{15}}\right] = [38{,}12;\, 40{,}48].\]
+Portanto, estamos 90% confiantes de que o intervalo $[38{,}12;\, 40{,}48]$ (medido em minutos) contém a média populacional.
+
+
+Esse problema também pode ser resolvido com o código a seguir, onde obtemos o mesmo resultado.
+
+#+begin_src python
+import scipy.stats
+import numpy as np
+Xs = 39.3 # média amostral
+s = 2.6 # desvio padrão amostral
+n = 15 # tamanho da amostra
+confidence = 0.9 # nível de confiança
+alpha = 1 - confidence
+df = n-1 # graus de liberdade
+talpha = scipy.stats.t.ppf(1-(alpha/2), df)
+IC1 = Xs - talpha*s/np.sqrt(n)
+IC2 = Xs + talpha*s/np.sqrt(n)
+print('IC:[', IC1, ';', IC2, ']')
+#+end_src
+
+
+#+begin_src python
+import scipy.stats
+import numpy as np
+
+def confident_interval(Xs, n, confidence=0.95, sigma=-1, s=-1):
+    alpha = (1 - confidence)/2.
+    zalpha = abs(scipy.stats.norm.ppf(alpha))
+    if(sigma != -1): # se a variância é conhecida
+        IC1 = Xs - zalpha*sigma/np.sqrt(n)
+        IC2 = Xs + zalpha*sigma/np.sqrt(n)
+    else: # se a variância é desconhecida
+        if(n >= 50): # se o tamanho da amostra > 50
+            # Use a distribuição normal
+            IC1 = Xs - zalpha*s/np.sqrt(n)
+            IC2 = Xs + zalpha*s/np.sqrt(n)
+        else: # se o tamanho da amostra é < 50
+            # Use a distribuição t de Student
+            talpha = scipy.stats.t.ppf((1 + confidence) / 2., n-1)
+            IC1 = Xs - talpha*s/np.sqrt(n)
+            IC2 = Xs + talpha*s/np.sqrt(n)
+    # retorna o intervalo de confiança
+    return [IC1, IC2]
+#+end_src
+
+
+Podemos resolver o problema anterior:
+
+#+begin_src python
+Xs = 39.3 # média amostral
+s = 2.6 # desvio padrão amostral
+n = 15 # tamanho da amostra
+confidence = 0.9 # nível de confiança
+# chama a função para calcular o intervalo
+IC = confident_interval(Xs, n, confidence, -1, s)
+print('Confidence interval:', IC)
+#+end_src
+
+
+Para um conjunto de dados:
+
+#+begin_src python
+import scipy.stats
+import numpy as np
+
+def confident_interval_data(X, confidence=0.95, sigma=-1):
+    # função para calcular o desvio padrão amostral
+    def S(X):
+        s = 0
+        # calcula o desvio padrão amostral
+        for i in range(0, len(X)):
+            s = s + (X[i] - np.mean(X))**2
+        s = np.sqrt(s/(len(X)-1))
+        return s
+    n = len(X) # número de elementos na amostra
+    Xs = np.mean(X) # média amostral
+    s = S(X) # desvio padrão amostral
+    zalpha = abs(scipy.stats.norm.ppf((1 - confidence)/2))
+    if(sigma != -1): # se a variância é conhecida
+        IC1 = Xs - zalpha*sigma/np.sqrt(n)
+        IC2 = Xs + zalpha*sigma/np.sqrt(n)
+    else: # se a variância é desconhecida
+        if(n >= 50): # se o tamanho da amostra é > 50
+            # Usa a distribuição normal
+            IC1 = Xs - zalpha*s/np.sqrt(n)
+            IC2 = Xs + zalpha*s/np.sqrt(n)
+        else: # se o tamanho da amostra é < 50
+            # Use a distribuição t de Student
+            talpha = scipy.stats.t.ppf((1 + confidence) / 2., n-1)
+            IC1 = Xs - talpha*s/np.sqrt(n)
+            IC2 = Xs + talpha*s/np.sqrt(n)
+    return [IC1, IC2]
+#+end_src
+
+
+Obtemos o intervalo $[1{,}036;\, 4{,}963]$.
+
+#+begin_src python
+X = [1, 2, 3, 4, 5]
+confidence = 0.95
+IC = confident_interval_data(X, confidence)
+print('IC:', IC)
+#+end_src
+
+Assim, vemos que a função acima pode ser usada em qualquer vetor de dados e fornece o intervalo de confiança de acordo com as entradas especificadas. A escolha das funções t de Student ou normal é feita de forma automática, seguindo o procedimento da figura no slide 19.
+
+** Intervalo de confiança para proporção
+
+Além da média populacional, podemos calcular o intervalo de confiança para uma proporção.
+Nesse caso, vimos que pelo Teorema Central do Limite, que a variável aleatória $Z$ é definida por:
+\[Z = \frac{\hat{p} - p}{\sqrt{p(1-p)/n}} \sim \mathcal{N}(0, 1), \tag{8}\]
+onde $p$ é a proporção de elementos da população que possuem uma certa característica. Seja a variável aleatória $X_i = 1$ se a observação $i$, extraída dessa população, possui uma certa característica, ou $X_i = 0$, caso contrário. Assim, temos que a proporção amostral, para uma amostra de tamanho $n$, é dada por:
+\[\hat{p} = \frac{Y_n}{n}, \tag{9}\]
+onde $Y_n = X_1 + X_2 + \ldots + X_n$ é o número de observações que possuem a característica na amostra. Notem que $Y_n$ tem distribuição binomial.
+
+
+Usando o Teorema Central do Limite, temos:
+\[P\!\left(-z_{\alpha/2} \leq Z \leq z_{\alpha/2}\right) = 1 - \alpha.\]
+Substituindo $Z$, temos:
+\[P\!\left(-z_{\alpha/2} \leq \frac{\hat{p} - p}{\sqrt{p(1-p)/n}} \leq z_{\alpha/2}\right) = 1 - \alpha.\]
+Ou seja,
+\[P\!\left(\hat{p} - z_{\alpha/2}\frac{\sqrt{p(1-p)}}{\sqrt{n}} \leq p \leq \hat{p} + z_{\alpha/2}\frac{\sqrt{p(1-p)}}{\sqrt{n}}\right) = 1 - \alpha = \gamma. \tag{10}\]
+Notem que nessa equação, não conseguimos isolar o parâmetro $p$, sendo necessário usarmos uma aproximação. Uma possibilidade é usar $\hat{p}$ no lugar de $p$, mas essa aproximação é válida principalmente quando temos amostras grandes, isto é,
+\[P\!\left(\hat{p} - z_{\alpha/2}\frac{\sqrt{\hat{p}(1-\hat{p})}}{\sqrt{n}} \leq p \leq \hat{p} + z_{\alpha/2}\frac{\sqrt{\hat{p}(1-\hat{p})}}{\sqrt{n}}\right) = 1 - \alpha = \gamma.\]
+Nesse caso, o intervalo de confiança é definido a seguir, chamado intervalo de confiança de Wald.
+
+
+*Definição:* O intervalo de confiança de $\gamma = (1 - \alpha)100\%$ para a proporção populacional $p$ é dado por:
+\[IC(p;\, 1 - \alpha) = \left[\hat{p} - z_{\alpha/2}\frac{\sqrt{\hat{p}(1-\hat{p})}}{\sqrt{n}};\, \hat{p} + z_{\alpha/2}\frac{\sqrt{\hat{p}(1-\hat{p})}}{\sqrt{n}}\right]. \tag{11}\]
+
+** Exemplo II
+
+*Exemplo:* Em uma pesquisa de opinião com $n = 400$ pessoas entrevistadas, 80 delas dizem votar em um partido político. Calcule o intervalo de confiança para a proporção populacional com 90% de confiança.
+
+
+*Solução:* Para essa amostra, temos que a proporção amostral é $\hat{p} = 80/400 = 0{,}2$. Além disso, $(1 - \alpha) = 0{,}9$ e, portanto, $z_{\alpha/2} = z_{0{,}05} = 1{,}64$. Assim,
+\[IC(p;\, 1 - \alpha) = \left[\hat{p} - z_{\alpha/2}\frac{\sqrt{\hat{p}(1-\hat{p})}}{\sqrt{n}};\, \hat{p} + z_{\alpha/2}\frac{\sqrt{\hat{p}(1-\hat{p})}}{\sqrt{n}}\right] = \left[0{,}2 - 1{,}64\frac{\sqrt{0{,}2(1-0{,}2)}}{\sqrt{400}};\, 0{,}2 + 1{,}64\frac{\sqrt{0{,}2(1-0{,}2)}}{\sqrt{400}}\right] = [0{,}167;\, 0{,}233].\]
+Portanto, podemos afirmar com 90% de confiança que o intervalo $[0{,}167;\, 0{,}233]$ contém a proporção populacional, ou seja, a fração de pessoas que votam no partido político.
+
+
+Uma outra opção para calcularmos o intervalo de confiança para a proporção populacional, é usar o fato de que $p(1-p) \leq 1/4$. Ou seja,
+\[\frac{p(1-p)}{n} \leq \frac{1}{4n}.\]
+\[\frac{\sqrt{p(1-p)}}{\sqrt{n}} \leq \frac{1}{\sqrt{4n}}.\]
+Substituindo esse resultado na definição anterior, podemos calcular o intervalo, chamado conservador, conforme definido a seguir.
+
+OBS: O valor máximo do estimador da variância ocorre quando \(p = 0.5\).
+Essa estratégia pode ser útil quando há incertezas sobre \(\hat{p}\).
+
+*Definição (IC conservador):* O intervalo de confiança de $\gamma = (1 - \alpha)100\%$ para a proporção populacional $p$ é dado por:
+\[IC(p;\, 1 - \alpha) = \left[\hat{p} - \frac{z_{\alpha/2}}{\sqrt{4n}};\, \hat{p} + \frac{z_{\alpha/2}}{\sqrt{4n}}\right]. \tag{12}\]
+
+** Exemplo III
+
+
+*Exemplo:* Considerando os dados do exercício anterior, calcule o intervalo de confiança conservador para $p$.
+
+Vimos que a proporção amostral é igual a $\hat{p} = 80/400 = 0{,}2$ e $z_{\alpha/2} = 1{,}64$. Assim,
+\[IC(p;\, 1 - \alpha) = \left[\hat{p} - \frac{z_{\alpha/2}}{\sqrt{4n}};\, \hat{p} + \frac{z_{\alpha/2}}{\sqrt{4n}}\right] = \left[0{,}2 - \frac{1{,}64}{\sqrt{4 \times 400}};\, 0{,}2 + \frac{1{,}64}{\sqrt{4 \times 400}}\right] = [0{,}159;\, 0{,}241].\]
+Portanto, podemos afirmar com 90% de confiança que o intervalo $[0{,}159;\, 0{,}241]$ contém a proporção populacional, ou seja, a fração de pessoas que devem votar no partido político. Notem que como esse é um intervalo conservador, ele é maior do que o calculado no exercício anterior.
+
+
+
+** Bootstrapping
+
+
+- No caso em que a população não se aproxima de uma distribuição normal, precisamos usar métodos de reamostragem ou não paramétricos.
+- Um método de reamostragem importante é chamado bootstrapping, que foi proposto por Bradley Efron em 1979, usa reamostragem dos dados.
+- A partir dessas amostras, calculamos o intervalo de confiança, que pode ser obtido de diversas maneiras. Se temos $n$ observações coletadas, amostramos $n$ elementos desses dados com reposição.
+- Para cada amostra obtida, calculamos um estimador $\hat{\theta}$, como a média ou desvio padrão amostral. Considerando várias amostras, podemos construir a distribuição de probabilidade do estimador e, assim, estimar o intervalo de confiança para o parâmetro de interesse.
+
+Assim, de maneira geral, para calcularmos o intervalo de confiança com o método bootstrapping usamos os seguintes passos:
+
+- Temos uma amostra aleatória $X$ de tamanho $n$ e objetivamos criar um intervalo de confiança para o estimador $\hat{\theta}$.
+- Repetimos para $10^4$ ou mais vezes:
+  - Selecione $n$ elementos de $X$ com reposição.
+  - Calcule e armazene o valor de $\hat{\theta}$.
+- A partir dos dados armazenados, construa um histograma para $\hat{\theta}$.
+- Se a distribuição obtida é aproximadamente simétrica, construa o intervalo de confiança de $(1 - \alpha)100\%$ encontrando os percentis, de modo que a proporção de observações entre os percentis seja $1 - \alpha$.
+
+
+#+begin_src python
+import numpy as np
+import matplotlib.pyplot as plt
+np.random.seed(2011)
+
+# gera os dados que serão amostrados
+# esses dados podem ser simulados ou
+# lidos de um arquivo
+mu = 10 # média populacional
+sigma = 5 # desvio padrão
+n = 1000 # tamanho da amostra
+X = np.random.normal(mu, sigma, n)
+#X = np.random.exponential(scale=mu, size=n)
+
+# Bootstrapping: sorteia ns amostras
+ns = 10000
+theta_hat = []
+for i in range(0, ns):
+    # amostra n elementos de X
+    s = np.random.choice(X, n, replace=True)
+    theta_hat.append(np.mean(s))
+
+# calcula a mediana
+median = np.percentile(theta_hat, 50)
+# calcula o intervalo de confiança
+confidence = 95
+alpha = 100-confidence
+lower_ci = np.percentile(theta_hat, alpha/2)
+upper_ci = np.percentile(theta_hat, 100-alpha/2)
+print('IC: [', lower_ci, upper_ci, ']')
+# mostra os resultados
+plt.figure(figsize=(10,6))
+plt.hist(x=theta_hat, bins='auto', color='gray', alpha=0.7, rwidth=0.85, density=True)
+plt.axvline(median, 0, 14, linestyle="--", color="black")
+plt.axvline(lower_ci, 0, 14, linestyle="--", color="black")
+plt.axvline(upper_ci, 0, 14, linestyle="--", color="black")
+plt.xlabel(r'$\bar{X}$', fontsize=20)
+plt.ylabel('Frequência', fontsize=20)
+plt.savefig('boostrap.svg')
+plt.show(True)
+#+end_src
+
+
+- O método bootstrapping pode ser usado para estimar qualquer parâmetro da população. Por exemplo, podemos usar esse método para estimar o intervalo de confiança para a variância ou mediana da população, sendo o procedimento análogo ao que apresentamos aqui.
+- A única mudança será no cálculo de $\hat{\theta}$, que usará uma estatística diferente.
+- Esse método também pode ser usado para estimar o intervalo de confiança dos parâmetros de um modelo de regressão, sendo a ideia parecida com a que apresentamos aqui.
+- A partir de cada amostra dos dados originais, construímos um modelo de regressão, armazenando os parâmetros estimados. A partir de várias amostras, podemos construir o intervalo de confiança para cada uma dos parâmetros do modelo.
+
+** Exercício IV
+
+*Exercício:* Em uma escola, acredita-se que as notas dos alunos seguem uma distribuição normal com média $\mu = 7{,}5$ e desvio padrão $\sigma = 1$. Uma amostra de 100 alunos forneceu $\bar{X}_{100} = 8{,}0$. Determine o intervalo de 99% de confiança para a média $\mu$ de todos os alunos da escola.
+
+
+*Solução:* Temos que o desvio padrão $\sigma$ é conhecido e que $(1 - \alpha) = 0{,}99$, de modo que $\alpha = 0{,}01$. Assim, $z_{0{,}01/2} = 2{,}57$.
+Usando a equação (2):
+\[IC(\mu;\, 0{,}99) = \left[\bar{X}_n - z_{\alpha/2}\frac{\sigma}{\sqrt{n}},\ \bar{X}_n + z_{\alpha/2}\frac{\sigma}{\sqrt{n}}\right] = \left[8 - 2{,}57\frac{1}{\sqrt{100}},\ 8 + 2{,}57\frac{1}{\sqrt{100}}\right] = [7{,}74;\, 8{,}25].\]
+Ou seja, com 99% de certeza podemos afirmar que o intervalo $[7{,}74;\, 8{,}25]$ contém a média populacional. Portanto, a média deve ser maior do que 7,5, conforme se acredita.
+
+** Exercício V
+
+*Exercício:* Uma empresa decide verificar se seus funcionários possuem smartphones. Para isso, foram selecionados, com reposição, 500 trabalhadores. Dentre esses, 421 afirmam que possuem o aparelho. Determine um intervalo de confiança de 95% para a proporção de funcionários que têm smartphones. Calcule também o intervalo de confiança conservador.
+
+
+Temos uma amostra de $n = 500$ funcionários, sendo que 421 possuem o smartphones. Assim, $\hat{p} = 421/500 = 0{,}842$. Para um intervalo de 95% de confiança, temos que $(1 - \alpha) = 0{,}95$, sendo, portanto, $\alpha = 0{,}05$. Assim, $z_{\alpha/2} = 1{,}96$. Calculando, temos:
+\[IC(p;\, 1 - \alpha) = \left[\hat{p} - z_{\alpha/2}\frac{\sqrt{\hat{p}(1-\hat{p})}}{\sqrt{n}};\, \hat{p} + z_{\alpha/2}\frac{\sqrt{\hat{p}(1-\hat{p})}}{\sqrt{n}}\right] = \left[0{,}842 - 1{,}96\frac{\sqrt{0{,}842(1-0{,}842)}}{\sqrt{500}};\, 0{,}842 + 1{,}96\frac{\sqrt{0{,}842(1-0{,}842)}}{\sqrt{500}}\right] = [0{,}810;\, 0{,}873].\]
+Para o intervalo de confiança conservador, temos:
+\[IC(p;\, 1 - \alpha) = \left[\hat{p} - \frac{z_{\alpha/2}}{\sqrt{4n}};\, \hat{p} + \frac{z_{\alpha/2}}{\sqrt{4n}}\right] = \left[0{,}842 - \frac{1{,}96}{\sqrt{4 \times 500}};\, 0{,}842 + \frac{1{,}96}{\sqrt{4 \times 500}}\right] = [0{,}798;\, 0{,}885].\]
+Notem que o intervalo conservador possui um comprimento maior do que o calculado anteriormente.

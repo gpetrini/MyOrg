@@ -197,6 +197,9 @@
 - Poucos professores estão cadastrados nos dois programas
 
 ** Procedimentos para contratação
+:PROPERTIES:
+:ID:       4b96e8e9-8653-4815-84c5-2000940ec480
+:END:
 
 - Deve entrar em pauta da contratação no dia 24/04. Se for favorável (provável)
 - Deve ir para a reunião do CADE no dia 02/06
