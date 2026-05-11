@@ -47,7 +47,7 @@ Codetags are case-insensitive full words. Exception: METHODOLOGY uses METHOD.
 | Codetag(s)                    | FISH-5SS section                                  |
 |-------------------------------|---------------------------------------------------|
 | BACKGROUND, Background        | ** Background and motivation                      |
-| SUPPORTING IDEAS, Supporting Ideas | ** Supporting Ideas and hypothesis           |
+| SUPPORT, Support, SUPPORTING IDEAS, Supporting Ideas | ** Supporting Ideas and hypothesis |
 | PURPOSE, Purpose              | ** Purpose, Relevance, and Contribution           |
 | METHOD, Methodology           | ** Methodology                                    |
 | RESULTS, Results              | ** Results                                        |
