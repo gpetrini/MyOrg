@@ -5,10 +5,12 @@ import pytest
 from unittest.mock import patch, Mock
 from scripts.zotero_extract.zotero_client import get_item_key, get_pdf_key, get_annotations
 
-MOCK_ITEMS = [
-    {"key": "ABCD1234", "data": {"key": "ABCD1234", "extra": "Citation Key: minsky_1977_Financial\nDOI: 10.1/x", "itemType": "journalArticle"}},
-    {"key": "ZZZZ9999", "data": {"key": "ZZZZ9999", "extra": "Citation Key: other_2020", "itemType": "journalArticle"}},
-]
+MOCK_BBT_FOUND = {
+    "jsonrpc": "2.0",
+    "result": [{"id": "http://zotero.org/users/4043555/items/ABCD1234", "citation-key": "minsky_1977_Financial"}],
+}
+
+MOCK_BBT_NOT_FOUND = {"jsonrpc": "2.0", "result": []}
 
 MOCK_CHILDREN_PARENT = [
     {"key": "PDF00001", "data": {"key": "PDF00001", "contentType": "application/pdf", "itemType": "attachment"}},
@@ -23,6 +25,14 @@ MOCK_CHILDREN_PDF = [
 ]
 
 
+def make_mock_post(url, json=None, **kwargs):
+    r = Mock()
+    r.raise_for_status = Mock()
+    citekey = (json or {}).get("params", [""])[0]
+    r.json.return_value = MOCK_BBT_FOUND if citekey == "minsky_1977_Financial" else MOCK_BBT_NOT_FOUND
+    return r
+
+
 def make_mock_get(url, params=None, headers=None):
     r = Mock()
     r.raise_for_status = Mock()
@@ -30,17 +40,15 @@ def make_mock_get(url, params=None, headers=None):
         r.json.return_value = MOCK_CHILDREN_PDF
     elif "/children" in url:
         r.json.return_value = MOCK_CHILDREN_PARENT
-    else:
-        r.json.return_value = MOCK_ITEMS
     return r
 
 
-@patch("scripts.zotero_extract.zotero_client.requests.get", side_effect=make_mock_get)
+@patch("scripts.zotero_extract.zotero_client.requests.post", side_effect=make_mock_post)
 def test_get_item_key_finds_by_citekey(_):
     assert get_item_key("minsky_1977_Financial") == "ABCD1234"
 
 
-@patch("scripts.zotero_extract.zotero_client.requests.get", side_effect=make_mock_get)
+@patch("scripts.zotero_extract.zotero_client.requests.post", side_effect=make_mock_post)
 def test_get_item_key_raises_when_not_found(_):
     with pytest.raises(ValueError, match="No Zotero item"):
         get_item_key("missing_2099")

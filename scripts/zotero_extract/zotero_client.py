@@ -4,6 +4,8 @@ sys.path.insert(0, os.path.dirname(__file__))
 import requests
 from config import ZOTERO_BASE, ZOTERO_API_KEY
 
+BBT_RPC = "http://localhost:23119/better-bibtex/json-rpc"
+
 
 def _headers() -> dict:
     if ZOTERO_API_KEY:
@@ -12,17 +14,15 @@ def _headers() -> dict:
 
 
 def get_item_key(citekey: str) -> str:
-    resp = requests.get(
-        f"{ZOTERO_BASE}/items",
-        params={"q": citekey, "format": "json", "limit": 100},
-        headers=_headers(),
+    resp = requests.post(
+        BBT_RPC,
+        json={"jsonrpc": "2.0", "method": "item.search", "params": [citekey]},
     )
     resp.raise_for_status()
-    for item in resp.json():
-        extra = item.get("data", {}).get("extra", "")
-        if f"Citation Key: {citekey}" in extra:
-            return item["key"]
-    raise ValueError(f"No Zotero item found for citekey: {citekey}")
+    result = resp.json()
+    if "error" in result or not result.get("result"):
+        raise ValueError(f"No Zotero item found for citekey: {citekey}")
+    return result["result"][0]["id"].split("/")[-1]
 
 
 def get_pdf_key(item_key: str) -> str:
