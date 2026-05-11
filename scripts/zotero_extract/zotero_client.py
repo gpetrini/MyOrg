@@ -41,12 +41,8 @@ def get_pdf_key(item_key: str) -> str:
 def get_annotations(pdf_key: str) -> list[dict]:
     resp = requests.get(
         f"{ZOTERO_BASE}/items/{pdf_key}/children",
-        params={"format": "json"},
+        params={"format": "json", "itemType": "annotation"},
         headers=_headers(),
     )
     resp.raise_for_status()
-    return [
-        item["data"]
-        for item in resp.json()
-        if item.get("data", {}).get("itemType") == "annotation"
-    ]
+    return [item["data"] for item in resp.json()]

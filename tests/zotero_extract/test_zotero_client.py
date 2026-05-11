@@ -21,7 +21,6 @@ MOCK_CHILDREN_PDF = [
     {"key": "ANN00001", "data": {"key": "ANN00001", "itemType": "annotation", "annotationType": "highlight",
                                   "annotationText": "some text", "annotationComment": "{BACKGROUND}",
                                   "annotationPageLabel": "3", "annotationColor": "#ffd400"}},
-    {"key": "NOTE0002", "data": {"key": "NOTE0002", "itemType": "note"}},
 ]
 
 
