@@ -23,7 +23,7 @@ MOCK_CHILDREN_PDF = [
 ]
 
 
-def make_mock_get(url, params=None):
+def make_mock_get(url, params=None, headers=None):
     r = Mock()
     r.raise_for_status = Mock()
     if "PDF00001/children" in url:
