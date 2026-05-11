@@ -137,6 +137,17 @@ def test_idempotency(tmp_path):
     assert f.read_text().count("[zotero:DD4]") == 1
 
 
+def test_codetag_only_comment_is_skipped(tmp_path):
+    f = tmp_path / "paper.org"
+    f.write_text(ORG_CONTENT)
+    annotations = [
+        {"key": "FF6", "annotationComment": "{BACKGROUND}",
+         "annotationText": "", "annotationPageLabel": "1"}
+    ]
+    insert_annotations(f, annotations)
+    assert "[zotero:FF6]" not in f.read_text()
+
+
 def test_missing_section_goes_to_uncategorized(tmp_path):
     f = tmp_path / "paper.org"
     f.write_text("* FISH-5SS\n\n* Annotations (zotero)\n")

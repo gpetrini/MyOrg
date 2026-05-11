@@ -70,6 +70,8 @@ def insert_annotations(file_path: Path, annotations: list[dict]) -> None:
 
         if comment:
             clean = re.sub(r'[\{\[][^\}\]]+[\}\]]\s*', '', comment).strip()
+            if not clean:
+                continue
             entry = f"- {clean} [zotero:{key}]\n"
             target = route_comment(comment)
             idx = _find_insertion_index(lines, target)
