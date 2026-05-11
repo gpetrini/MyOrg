@@ -42,25 +42,20 @@ Codetags appear in `comment` field, enclosed in `{TAG}` or `[TAG]`.
 Codetag takes priority over color when both are present.
 
 ### Codetag → section mapping (config.py)
-| Codetag(s)              | FISH-5SS section                        |
-|-------------------------|-----------------------------------------|
-| BG, BACKGROUND          | ** Background and motivation            |
-| HYP, SI, IDEA           | ** Supporting Ideas and hypothesis      |
-| PURPOSE, CONTRIB        | ** Purpose, Relevance, and Contribution |
-| METH, METHOD            | ** Methodology                          |
-| RES, RESULT             | ** Results                              |
-| FIND, INT               | ** Interesting findings and not categorized stuff |
-| CRIT, CRITIC            | ** Critics                              |
+Codetags are case-insensitive full words. Exception: METHODOLOGY uses METHOD.
 
-### Color → section fallback (config.py)
-| Zotero color | Hex       | FISH-5SS section                          |
-|--------------|-----------|-------------------------------------------|
-| Yellow       | #ffd400   | ** Interesting findings and not categorized stuff |
-| Red          | #ff6666   | ** Critics                                |
-| Green        | #5fb236   | ** Results                                |
-| Orange       | #f19837   | ** Background and motivation              |
-| Purple       | #a28ae5   | ** Supporting Ideas and hypothesis        |
-| Blue         | #2ea8e5   | * Additional Backlinks                    |
+| Codetag(s)                    | FISH-5SS section                                  |
+|-------------------------------|---------------------------------------------------|
+| BACKGROUND, Background        | ** Background and motivation                      |
+| SUPPORTING IDEAS, Supporting Ideas | ** Supporting Ideas and hypothesis           |
+| PURPOSE, Purpose              | ** Purpose, Relevance, and Contribution           |
+| METHOD, Methodology           | ** Methodology                                    |
+| RESULTS, Results              | ** Results                                        |
+| FINDINGS, Findings            | ** Interesting findings and not categorized stuff |
+| CRITICS, Critics              | ** Critics                                        |
+
+### Color → section fallback
+Deferred — color mapping will be defined once codetag usage is established.
 
 ### Highlighted text
 Always appended to `* Annotations (zotero)`, regardless of color or codetag.
