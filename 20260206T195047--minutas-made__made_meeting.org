@@ -766,16 +766,16 @@ Várias equações em =fun_KS_worker.h= (linhas 21, 47, 136, 277, 293, 392, 424,
     - Seriam contratos que não possuem custos de demissão
     - Esses trabalhadores seriam os que estão mais sujeitos à search on-the-job
   - Discussão associada com labor hoarding
-- Em nível mais geral, não deve-se adotar nenhuma das regras pré-elaboardas no LSD
-  - Me parece ser uma regra (ITA) com rigidez imposta pela duração heterogênea dos contratos
-  - Talvez exista uma regra mais próxima do que a ITA
-- IMPORTANTE: Uma vez desligados os skills, não é tão trivial contratar os trabalhadores que são mais produtivos
-- IDEIA: Contrato tem a duração de um período produtivo e oferecesse a possibilidade de renovação
-- IDEIA: Permitir a coexistência de diferentes regimes de trabalhado
-  - Invés dessa ser um parâmetro global, pode ser um parâmetro associado à cada trabalhador
-    - Como fallback, pode-se incluir default negativo para retornar ao caso global.
-- No limite, a firma arbitra entre contratos de longo e curto prazo
-  - Seria uma uma combinação convexa entre demissão e deslocamento
+  - Em nível mais geral, não deve-se adotar nenhuma das regras pré-elaboardas no LSD
+    - Me parece ser uma regra (ITA) com rigidez imposta pela duração heterogênea dos contratos
+    - Talvez exista uma regra mais próxima do que a ITA
+  - IMPORTANTE: Uma vez desligados os skills, não é tão trivial contratar os trabalhadores que são mais produtivos
+  - IDEIA: Contrato tem a duração de um período produtivo e oferecesse a possibilidade de renovação
+  - IDEIA: Permitir a coexistência de diferentes regimes de trabalhado
+    - Invés dessa ser um parâmetro global, pode ser um parâmetro associado à cada trabalhador
+      - Como fallback, pode-se incluir default negativo para retornar ao caso global.
+  - No limite, a firma arbitra entre contratos de longo e curto prazo
+    - Seria uma uma combinação convexa entre demissão e deslocamento
 
 *** Relação entre produtividade, horas trabalhadas e afastamento
 

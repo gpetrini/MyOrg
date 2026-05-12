@@ -15,23 +15,35 @@
 
 
 ** Background and motivation
+- Indicates how the general topic have gained more relevance on the policy-side: descarbonization as a tool to recover from recessions. [zotero:E8XTSHPR]
+-  [zotero:VJIQ4YIB]
 
 
 ** Supporting Ideas and hypothesis
 
 
 ** Purpose, Relevance, and Contribution
+-  [zotero:WDHUJVLB]
+-  [zotero:JP9AFY8W]
+-  [zotero:RZC2PPC2]
 
 
 ** Methodology
 
 - The social structure follows [cite/t:@rolim_2023_income]
+- Instruments [zotero:UUHHEEVD]
+-  [zotero:962DPS5F]
+-  [zotero:ZZWKXDLT]
 
 
 ** Results
+-  [zotero:U2GXYK4K]
+-  [zotero:GJKKCPD5]
 
 
 ** Interesting findings and not categorized stuff
+- Instruments [zotero:HLD5R2VE]
+- Trilemma in terms of GDP growth, decarbonization, and distribution. [zotero:62CNVM7T]
 
 
 ** Critics
@@ -47,6 +59,44 @@
 * Specific notes
 
 * Annotations (zotero)
+- [p. 44] green innovation emerges as a key driver of  decarbonization, [zotero:U2GXYK4K]
+- [p. 44] Compared to the carbon tax, [zotero:EFB74T9A]
+- [p. 44] wealth tax can be an effective means  of financing the transition to low-carbon economies when combined with other interventions. [zotero:IDNQJXM2]
+- [p. 44] wealth tax coupled with funding for a public  research lab focused on non-patented green R&D, [zotero:GJKKCPD5]
+- [p. 44] wealth tax combined  with a lump-sum research subsidy granted to capital goods firms [zotero:EVKDK6U6]
+- [p. 25] places an induced demand for consumption goods (εYt−1), [zotero:82BTHM5B]
+- [p. 23] Wage setting is firm-specific but uniform across all workers within the same firm. [zotero:QPAV34E8]
+- [p. 23] These roles are category-specific and not fixed to  individual agents. In other words, a household may serve as an indirect worker in  one period and as a direct worker in the next. [zotero:HPZTTBJU]
+- [p. 19] pi,t, [zotero:833ZVIR9]
+- [p. 14] φ(1 − ut−1) is the endogenous workers’ bargaining power set by institutional factors (φ) [zotero:U69W55NT]
+- [p. 12] producing the machine [zotero:9Y4XEAK6]
+- [p. 12] using the machine [zotero:LST8VYLS]
+- [p. 11] These workers are supervised by indirect workers hired as managers [zotero:KUJXCE8X]
+- [p. 9] government is also responsible for implementing decarbonization policies, [zotero:89MKP26K]
+- [p. 9] purchase  of consumption goods [zotero:MIFZN8DM]
+- [p. 9] extends loans to consumption goods firms [zotero:2MCWV8FT]
+- [p. 9] single commercial bank [zotero:FVUXRFKU]
+- [p. 9] Capitalist households own the firms and receive dividends from  their ownership. [zotero:QBG9U9R4]
+- [p. 9] incorporate the households’ social class [zotero:DTER5T5I]
+- [p. 8] and government demand [zotero:Q7RLSZBR]
+- [p. 7] alignment with the field of Ecological Economics (EE) [zotero:7K2S8V46]
+- [p. 7] Their results drew attention to the difficulties in  finding win-win solutions, which tend to reaffirm the trilemma of economic growth,  income inequality and carbon emissions. [zotero:WES7HIIM]
+- [p. 6] a price subsidy for the least polluting firms, a research-support  subsidy to encourage private R&D, non-patented green R&D, and public procurement directed toward the least polluting firms. [zotero:HLD5R2VE]
+- [p. 6] both personal  and functional income inequality [zotero:VFYAINAW]
+- [p. 6] following Rolim et al. (2023). [zotero:QHN9P5XL]
+- [p. 6] wage bargaining process and a tripartite class structure in the household sector [zotero:ZJDIJ792]
+- [p. 5] such functions remain among the most ad hoc components  in IAMs [zotero:QN6ESDVV]
+- [p. 5] does not include climate-economy  feedback loops, [zotero:LKJEWHEJ]
+- [p. 5] We do not specify the source of change [zotero:92C9TZ9A]
+- [p. 4] Not surprisingly, some studies have  pointed to the existence of a trilemma emerging from the aim of combining economic  growth, decarbonization and distributional improvements (D’Alessandro et al., 2020;  Oliveira and Lima, 2022). [zotero:62CNVM7T]
+- [p. 3] many of them incorporated the notion of a “green new deal” [zotero:E8XTSHPR]
+- [p. 2] green public procurement [zotero:UUHHEEVD]
+- [p. 1] (i) price subsidy for the least polluting firms, (ii) public non-patented green R&D, (iii) subsidy for private green R&D, [zotero:962DPS5F]
+- [p. 1] carbon tax or a wealth tax [zotero:ZZWKXDLT]
+- [p. 1] GDP growth, reduced carbon emissions, and lower income inequality simultaneously. [zotero:WDHUJVLB]
+- [p. 1] different tax-financed green policies affect income inequality. [zotero:JP9AFY8W]
+- [p. 1] the impact on income distribution. [zotero:RZC2PPC2]
+- [p. 1] decouple carbon emissions from gross domestic product (GDP) [zotero:VJIQ4YIB]
 
 * Additional Backlinks
 
