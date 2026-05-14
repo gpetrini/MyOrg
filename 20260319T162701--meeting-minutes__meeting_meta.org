@@ -44,6 +44,20 @@
   - Para os dados brasileiros, as séries não são muito longas
   - Dificuldade em encontrar dados da bolsa
 
+*** Atualizações [2026-05-13 Wed]
+
+- Obtenção dos dados: Dados de retorno e preço, mas não de volume (em uma das bases)
+- Ainda com dificuldade de obter dados da B3, mas com possibilidade de parcerias via Unicamp
+- Copom faz o anúncio depois que a B3 está fechada
+  - Isso talvez implique em alguma decisão sobre como normalizar os dados e quais janelas adotar
+- Indiquei alguns pacotes do R e playlist sobre git  e github
+  - Mencionei atenção sobre licenças
+- A Carol pareceu ter um interesse maior em eficácia da política monetária
+  - Talvez não seja tão relevante para a dissertção, mas necessariamente deve ser contemplado
+- Ao final, apontou um artigo que menciona as limitações da abordagem de análise de eventos e que eu sugerir dar mais ênfase a esse ponto
+- Foi discutido que análises empíricas não estão desassociadas de arcabouços teóricos
+  - Então não devem ser lidos no vácuo
+
 ** Thiago Barros :IC:
 
 *** Alinhamento[2026-03-31 Tue]
@@ -154,6 +168,7 @@
 - Pediu ajuda com a descrição da seção de metodologia
 - Proposta de nova versão entre 04 e 08
   - Caso não puder sextas, seria melhor terças ou quintas
+
 
 * Pós-Graduação
 
