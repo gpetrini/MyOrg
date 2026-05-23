@@ -1,0 +1,19 @@
+#+title:      Defenses
+#+date:       [2026-05-22 Fri 07:36]
+#+filetags:   :meta:
+#+identifier: 20260522T073604
+
+* Monografias
+
+#+BEGIN: denote-backlinks :excluded-dirs-regexp nil :sort-by-component nil :reverse-sort nil :id-only nil :this-heading-only nil :include-date nil :regexp "_tcc"
+- [[denote:20260521T091132][Três ensaios sobre a fragilidade financeira: revisitando Minsky a partir das empresas não-financeiras e famílias estadunidenses]]
+#+END:
+* Dissertation
+
+#+BEGIN: denote-backlinks :excluded-dirs-regexp nil :sort-by-component nil :reverse-sort nil :id-only nil :this-heading-only nil :include-date nil :regexp "_masters"
+#+END:
+* Thesis
+
+#+BEGIN: denote-backlinks :excluded-dirs-regexp nil :sort-by-component nil :reverse-sort nil :id-only nil :this-heading-only nil :include-date t :regexp "_thesis"
+- [[denote:20260521T091132][Três ensaios sobre a fragilidade financeira: revisitando Minsky a partir das empresas não-financeiras e famílias estadunidenses (2026-05-21)]]
+#+END:

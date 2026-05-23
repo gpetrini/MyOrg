@@ -2147,6 +2147,9 @@ Esse tipo de convergência é chamada de "convergência quase certa".
 
 A diferença em termos de enunciação é que a probabilidade de \(\bar{x} \to \mu\) é quase certa (\(P = 1\)).
 * Intervalos de confiança
+:PROPERTIES:
+:ID:       a767cea0-bdfb-443c-9370-3b2c5c4f9d17
+:END:
 
 ** Primeiras ideias
 
@@ -2569,3 +2572,629 @@ Temos uma amostra de $n = 500$ funcionários, sendo que 421 possuem o smartphone
 Para o intervalo de confiança conservador, temos:
 \[IC(p;\, 1 - \alpha) = \left[\hat{p} - \frac{z_{\alpha/2}}{\sqrt{4n}};\, \hat{p} + \frac{z_{\alpha/2}}{\sqrt{4n}}\right] = \left[0{,}842 - \frac{1{,}96}{\sqrt{4 \times 500}};\, 0{,}842 + \frac{1{,}96}{\sqrt{4 \times 500}}\right] = [0{,}798;\, 0{,}885].\]
 Notem que o intervalo conservador possui um comprimento maior do que o calculado anteriormente.
+
+* Teste de Hipóteses
+
+** Motivação
+
+Imaginem que um acusado será julgado em um tribunal.
+Inicialmente, antes de coletarmos as evidências, assumimos que o acusado é inocente, sendo essa a hipótese nula, que chamamos de \(H_0\).
+Para provar que o mesmo é culpado, precisamos coletar provas, de modo a rejeitar \(H_0\).
+Essa hipótese alternativa, ou seja, o acusado é culpado, chamamos de \(H_1\) (ou \(H_a\)), que é a hipótese alternativa, contrária à \(H_0\).
+Assim, no teste de hipóteses desse exemplo, vamos ter duas hipóteses:
+- Hipótese nula (\(H_0\)): o acusado é inocente.
+- Hipótese alternativa (\(H_1\)): o acusado é culpado.
+
+Nosso objetivo é sempre rejeitar ou aceitar (na verdade, deixar de rejeitar) a hipótese nula \(H_0\), com base nos dados coletados.
+De uma maneira geral, dizemos que a falha na rejeição da hipótese nula implica a sua aceitação.
+No entanto, essa afirmação não implica que \(H_0\) é verdadeira, mas que há evidência para aceitar essa hipótese com um dado nível de significância.
+Notem que o teste é baseado apenas na amostra coletada, de modo que se coletarmos outra amostra, talvez o resultado do teste mude.
+
+** Formulação
+
+Em inferência estatística, uma hipótese é feita com relação a um parâmetro da população.
+Para testar uma hipótese, extraímos amostras independentes e identicamente distribuídas.
+Analisando essa amostra, podemos chegar a duas possíveis decisões:
+- Falhar na rejeição da hipótese nula (aceitar \(H_0\)).
+- Rejeitar a hipótese nula.
+
+No teste de hipóteses podemos cometer os erros dos tipos I e II, conforme indicado na tabela.
+
+| Decisão / Estado | \(H_0\) é verdadeira   | \(H_0\) é falsa         |
+|------------------+------------------------+-------------------------|
+| Rejeitar \(H_0\) | Erro do tipo I (\(\alpha\)) | Sem erro                |
+| Aceitar \(H_0\)  | Sem erro               | Erro do tipo II (\(\beta\)) |
+
+Assim, podemos definir as probabilidades de cometer os erros no teste de hipóteses:
+\[P(\text{``Erro do tipo I''}) = P(\text{Rejeitar } H_0 \mid H_0 \text{ é verdadeira}) = \alpha\]
+\[P(\text{``Erro do tipo II''}) = P(\text{Aceitar } H_0 \mid H_0 \text{ é falsa}) = \beta\]
+
+Para formular o teste de hipóteses, geralmente definimos \(H_0\) em termos de um parâmetro da população.
+Ou seja, representamos:
+\[H_0 : \theta = \theta_0,\]
+onde afirmamos que o parâmetro \(\theta\) da população é \(\theta_0\).
+Por exemplo, podemos testar se a média do peso das embalagens de café fornecidos por uma máquina é igual a 500 gramas:
+\[H_0 : \mu = 500\,g.\]
+
+A hipótese alternativa \(H_1\), também representada por \(H_a\), pode ter uma das seguintes formas:
+- \(H_1 : \theta > \theta_0\),
+- \(H_1 : \theta < \theta_0\),
+- \(H_1 : \theta \neq \theta_0\).
+
+Em qualquer uma dessas decisões, podemos cometer erros.
+
+** Passos do Teste
+
+Em resumo, podemos realizar o teste de hipóteses considerando os seguintes passos:
+1. Estabelecemos a hipótese nula e a alternativa:
+   - \(H_0 : \theta = \theta_0\)
+   - \(H_1 : \theta < \theta_0\), \(\theta > \theta_0\) ou \(\theta \neq \theta_0\)
+2. Definimos a região crítica com base na hipótese alternativa.
+3. Fixamos o nível de significância \(\alpha\) e encontramos a região crítica.
+4. Obtemos a estimativa \(\hat{\theta}_\text{obs}\) baseada nas observações disponíveis.
+5. Concluímos o teste com base na estimativa e na região crítica.
+
+Esse procedimento vale para qualquer parâmetro da população, tais como a média ou proporção.
+
+** Exemplo: Máquina na Fábrica
+
+*Exemplo:* Em uma fábrica, engenheiros verificaram que o tempo de funcionamento de uma máquina até que ocorra uma falha é normalmente distribuído com média igual a 206 dias, com desvio padrão igual a 12 dias.
+Uma atualização de componentes foi feita em 30 máquinas, de modo a deixá-las mais robustas e aumentar esse tempo de funcionamento.
+Nessa amostra, verificou-se que o tempo médio até falhar foi de 210 dias.
+Ao nível 10%, podemos acreditar que a atualização deixou as máquinas mais robustas?
+
+*Solução:* Como hipótese nula, vamos assumir que a atualização não aumentou o tempo de funcionamento.
+Assim, temos as hipóteses:
+- \(H_0 : \mu = 206\) dias
+- \(H_1 : \mu > 206\) dias
+
+Calculando a probabilidade de erro do tipo I:
+\[\alpha = P(\text{Rejeitar } H_0 \mid H_0 \text{ é verdadeira}) = 0{,}10.\]
+Portanto:
+\[\alpha = P(\bar{X} > \bar{x}_c \mid \mu = 206) = 0{,}10.\]
+
+Como a população tem distribuição normal, as amostras também seguem uma normal, uma vez que são independentes e identicamente distribuídas.
+Vamos transformar \(\bar{X}\) em \(Z\) de modo que possamos usar a distribuição normal padronizada:
+\[\alpha = P\!\left(\frac{\bar{X} - \mu}{\sigma/\sqrt{n}} > \frac{\bar{x}_c - \mu}{\sigma/\sqrt{n}} \,\middle|\, \mu = 206\right) = 0{,}10.\]
+Usando o Teorema Central do Limite,
+\[Z = \frac{\bar{X} - \mu}{\sigma/\sqrt{n}} \sim \mathcal{N}(0, 1),\]
+temos:
+\[\alpha = P\!\left(Z > \frac{\bar{x}_c - 206}{12/\sqrt{30}}\right) = 0{,}10,\]
+onde \(\sigma = 12\) dias é conhecido.
+Temos que \(P(Z > z_\alpha) = 0{,}10\) e o mesmo que \(P(Z < z_\alpha) = 0{,}90\).
+
+Usando a linguagem Python:
+#+begin_src python
+import scipy.stats
+alpha = 0.10
+z = scipy.stats.norm.ppf(1-alpha)
+print('P(Z > %1.2f) = %1.2f' % (z, alpha))
+#+end_src
+
+Assim, obtemos \(P(Z > 1{,}28) = 0{,}10\).
+Desse modo,
+\[\frac{\bar{x}_c - 206}{12/\sqrt{30}} = 1{,}28.\]
+Portanto,
+\[\bar{x}_c = 208{,}8\text{ dias.}\]
+Como esse valor é menor do que o valor observado (\(\bar{x}_\text{obs} = 210\) dias \(> \bar{x}_c\)), rejeitamos a hipótese nula ao nível 10%.
+Logo, há evidências de que a atualização deixou as máquinas mais robustas.
+
+** Distribuição t de Student
+
+Caso o desvio padrão da população não seja conhecido e a amostra seja pequena, devemos considerar a distribuição t de Student, de maneira similar ao cálculo do intervalo de confiança.
+
+** Exemplo: Vídeo Propaganda
+
+*Exemplo:* Uma empresa acredita que o seu novo vídeo com propaganda de produtos em promoção aumenta o interesse de usuários.
+O vídeo anterior era visualizado, em média, por 12 segundos.
+Uma amostra de 5 visualizações do novo vídeo ofereceu os seguintes valores (em segundos): 14,4; 12,9; 15; 13,7; 13,5.
+Qual conclusão a empresa pode chegar ao nível de 1% de significância?
+
+*Solução:* Como a empresa está interessada em verificar se o novo vídeo é mais interessante para o usuário do que o vídeo anterior, estabelecemos as seguintes hipóteses:
+\[H_0 : \mu = 12\text{s}\]
+\[H_1 : \mu > 12\text{s.}\]
+Pois quanto maior o tempo de visualização, melhor é a aceitação do vídeo.
+Calculando a probabilidade de erro do tipo I, isto é, a probabilidade de rejeitar \(H_0\) dado que \(H_0\) é verdadeira:
+\[\alpha = P(\bar{X} > \bar{x}_c \mid \mu = 12) = 0{,}01.\]
+Como o desvio padrão não é conhecido e a amostra é pequena (\(n = 5\)), devemos usar a distribuição t de Student:
+\[P(\bar{X} > \bar{x}_c \mid \mu = 12) = P\!\left(\frac{\bar{X} - \mu}{s/\sqrt{n}} > \frac{\bar{x}_c - \mu}{s/\sqrt{n}} \,\middle|\, \mu = 12\right) = P\!\left(T > \frac{\bar{x}_c - 12}{0{,}82/\sqrt{5}}\right) = 0{,}01,\]
+onde \(s\) é o desvio padrão amostral calculado usando-se a amostra coletada.
+Temos que \(P(T > t_{\alpha,n-1}) = 0{,}01\) equivale \(P(T < t_{\alpha,n-1}) = 0{,}99\).
+Usando o Python, obtemos o valor \(t_{0{,}01;4} = 3{,}747\).
+
+Assim,
+\[\frac{\bar{x}_c - 12}{0{,}82/\sqrt{5}} = t_{0{,}01;4} = 3{,}747.\]
+Resolvendo,
+\[\bar{x}_c = 13{,}4\text{s.}\]
+Calculando a média da amostra observada:
+\[\bar{x}_\text{obs} = \frac{14{,}4 + 12{,}9 + 15 + 13{,}7 + 13{,}5}{5} = 13{,}9\text{s.}\]
+Portanto, como \(\bar{x}_\text{obs} > \bar{x}_c\), rejeitamos \(H_0\) com 99% de confiança.
+Logo, há evidências de que a nova propaganda apresenta um tempo de visualização maior do que a anterior.
+
+** Teste para Proporções
+
+Podemos ainda realizar o teste de hipóteses no caso de variáveis aleatórias binárias.
+Seja \(X_i = 1\) se a observação \(i\) possui uma certa característica, ou \(X_i = 0\), caso contrário.
+As probabilidades são dadas por \(P(X_i = 1) = p\) e \(P(X_i = 0) = 1 - p\), isto é, \(X_i\) tem distribuição de Bernoulli.
+Definimos \(Y_n = X_1 + X_2 + \ldots + X_n\), que representa o número de observações que possuem a característica.
+Então, a proporção de observações com a característica é dada por
+\[\hat{p} = \frac{Y_n}{n}.\]
+Usando o Teorema Central do Limite, temos que
+\[Z = \frac{p - \hat{p}}{\sqrt{p(1-p)/n}} \sim \mathcal{N}(0, 1).\]
+
+** Exemplo: Aprovação do Prefeito
+
+*Exemplo:* Em uma cidade, acredita-se que 60% das pessoas aprovam o atual prefeito.
+Uma pesquisa foi realizada com 200 indivíduos, onde verificou-se que 104 entrevistados disseram que aprovam o atual governo.
+Faça um teste ao nível 5% para determinar se a aprovação do prefeito é realmente igual a 60%.
+
+*Solução:* Vamos considerar que a aprovação máxima do prefeito será igual a 60%, de modo que a mesma pode ser menor.
+Assim, sejam as hipóteses:
+\[H_0 : p = 0{,}6\]
+\[H_1 : p < 0{,}6.\]
+Calculando a probabilidade de erro do tipo I, ou seja, a probabilidade de rejeitar \(H_0\) dado que \(H_0\) é verdadeira:
+\[\alpha = P(\hat{p} < \hat{p}_c \mid p = 0{,}6) = 0{,}05\]
+\[P\!\left(\frac{\hat{p} - p}{\sqrt{p(1-p)/n}} < \frac{\hat{p}_c - p}{\sqrt{p(1-p)/n}} \,\middle|\, p = 0{,}6\right) = 0{,}05\]
+\[P\!\left(Z < \frac{\hat{p}_c - 0{,}6}{\sqrt{0{,}6(1-0{,}6)/200}}\right) = 0{,}05\]
+Usando o código em Python, obtemos \(z_\alpha = -1{,}64\).
+
+Assim,
+\[\frac{\hat{p}_c - 0{,}6}{\sqrt{0{,}6(1-0{,}6)/200}} = -1{,}64.\]
+Resolvendo, vamos obter \(\hat{p}_c = 0{,}54\).
+Calculando a fração observada:
+\[\hat{p}_\text{obs} = \frac{104}{200} = 0{,}52.\]
+Como \(\hat{p}_\text{obs} < \hat{p}_c\), rejeitamos \(H_0\) ao nível de 5%.
+Ou seja, a fração de pessoas que aprovam o atual prefeito deve ser menor do que 60%.
+
+** Valor-p
+
+Nos testes de hipóteses anteriores, consideramos um valor \(\alpha\) para o qual aceitamos ou rejeitamos o teste.
+No entanto, dependendo desse valor, a decisão sobre o teste pode mudar de aceitação para rejeição, e vice-versa.
+Por exemplo, vamos considerar uma população com distribuição uniforme, com média \(\mu = 10\) e desvio padrão \(\sigma = 2\).
+Coletamos uma amostra de tamanho \(n = 50\).
+Vamos considerar as seguintes hipóteses:
+\[H_0 : \mu = 10\]
+\[H_1 : \mu < 10\]
+Suponha que a média da amostra observada é \(\bar{x}_\text{obs} = 9{,}8\).
+
+Vemos que para \(\alpha\) igual a 5%, 10% e 20%, aceitamos \(H_0\).
+Por outro lado, quando \(\alpha\) é igual a 25%, 30% ou 40%, rejeitamos \(H_0\).
+Portanto, a aceitação ou rejeição de \(H_0\) depende do valor \(\alpha\) estabelecido pelo pesquisador.
+Logo, uma pergunta fundamental é: será que conseguimos determinar o valor mínimo de \(\alpha\) para o qual passamos a rejeitar \(H_0\)?
+Ou seja, qual seria esse limiar em que mudamos de aceitação para rejeição de \(H_0\)?
+
+Se variamos \(\alpha\) continuamente, notamos que a região de aceitação da hipótese nula vai mudando de acordo com \(\alpha\).
+Para \(\alpha = 0{,}23\) passamos a rejeitar \(H_0\).
+Esse valor é chamado valor-p.
+
+*Definição:* O valor p é o menor nível de significância \(\alpha\) no qual é possível rejeitar a hipótese nula.
+Podemos ainda interpretar esse valor como a probabilidade de observar os dados se a hipótese nula for verdadeira:
+\[\alpha = P(\text{dados} \mid H_0 \text{ é verdadeira}).\]
+
+Para \(p = 0{,}01\), temos que, em média, em apenas um dentre 100 experimentos, a hipótese nula será aceita.
+Se \(p = 0{,}1\), em 10 de 100 experimentos, e assim sucessivamente.
+Ou seja, quanto menor o valor-p, maior é a evidência contra a aceitação de \(H_0\).
+Geralmente, rejeitamos \(H_0\) quando o valor p é menor ou igual a \(0{,}05\) (\(p \leq 0{,}05\)).
+
+Assim, em resumo, o valor p é igual à probabilidade de observarmos os dados coletados se a hipótese nula é verdadeira.
+No exemplo a seguir, assumimos que a média \(\mu = 100\) e que o desvio padrão é igual a \(\sigma = 20\).
+Se coletarmos uma amostra de tamanho \(n = 20\), a fração de vezes que a média da amostra é maior do que o observado (\(x_\text{obs} = 110\)), para 1000 simulações, é igual a 0,013.
+Esse valor é o valor p estimado.
+
+** Exemplo: Nova Rota
+
+*Exemplo:* O departamento de obras de uma cidade abriu uma nova rota para melhorar o fluxo de carros no centro da cidade.
+Dados anteriores mostram que o tempo para ir do subúrbio ao centro é uma variável aleatória com distribuição normal com média \(\mu = 30\) minutos e desvio padrão \(\sigma = 3\) minutos.
+As 10 primeiras viagens considerando a nova rota resultaram em uma média igual a 28 minutos.
+Esse resultado mostra que nova rota é mais rápida do que a anterior?
+
+*Solução:* A hipótese nula é a que aceitamos sem realizar qualquer experimento.
+Ou seja, assumimos que essa nova rota é igual à anterior, não levando a nenhuma melhora nesse tempo.
+Assim,
+\[H_0 : \mu = 30\text{ minutos}\]
+\[H_1 : \mu < 30\text{ minutos}\]
+Usando a definição do valor-p:
+\[P(\bar{X} < 28 \mid \mu = 30) = P\!\left(\frac{\bar{X} - \mu}{\sigma/\sqrt{n}} < \frac{28 - \mu}{\sigma/\sqrt{n}} \,\middle|\, \mu = 30\right) = P\!\left(Z < \frac{28 - 30}{3/\sqrt{10}}\right) = P(Z < -2{,}11) = 0{,}02.\]
+Logo, como o valor p é igual a 0,02, há uma forte evidência para rejeitarmos \(H_0\), ou seja, há evidências de que a nova rota diminui o tempo do trajeto do subúrbio ao centro da cidade.
+
+** Exemplo: Pressão Arterial
+
+*Exemplo:* Assume-se que pressão arterial humana tem média igual a \(\mu = 120\) mm Hg.
+Em um estudo com um grupo de \(n = 10\) pacientes idosos, observou-se uma pressão média igual a 130,1 mmHg e desvio padrão 21,21 mmHg.
+Esse grupo tem pressão arterial mais alta do que a população em geral?
+
+*Solução:* Vamos considerar as hipóteses:
+\[H_0 : \mu = 120\text{ mmHg}\]
+\[H_1 : \mu > 120\text{ mmHg}\]
+Notem que a variância da população é desconhecida.
+Logo, devemos usar a distribuição t de Student, já que a amostra é pequena.
+Desse modo, calculando o valor-p:
+\[P(\bar{X} > 130{,}1 \mid \mu = 120) = P\!\left(\frac{\bar{X} - \mu}{s/\sqrt{n}} > \frac{130{,}1 - \mu}{s/\sqrt{n}} \,\middle|\, \mu = 120\right) = P\!\left(T > \frac{130{,}1 - 120}{21{,}21/\sqrt{10}}\right) = P(T > 1{,}505) = 1 - P(T < 1{,}505) = 1 - 0{,}92 = 0{,}08.\]
+Logo, como o valor-p é igual a 0,08, há evidências para rejeitarmos \(H_0\), ou seja, para afirmar que a pressão arterial do grupo de idosos é maior do que a da população em geral.
+
+** Exemplo: Notas de Estudantes
+
+*Exemplo:* Estudantes acreditam que a média de todas as turmas em um curso de estatística é igual a 65.
+O professor acredita que a média é maior.
+Para verificar essa hipótese, ele seleciona notas de 10 estudantes, escolhidos de forma aleatória, obtendo os valores 65, 65, 70, 67, 66, 63, 63, 68, 72, 71.
+Calcule o valor p.
+
+*Solução:* Vamos testar as seguintes hipóteses:
+\[H_0 : \mu = 65\]
+\[H_1 : \mu > 65.\]
+Usando os dados, temos que o desvio padrão amostral é igual a \(s = 3{,}19\) e a média da amostra coletada \(\bar{x}_\text{obs} = 67\).
+Vamos calcular o erro do tipo I.
+Como não conhecemos a variância populacional e a amostra é pequena, usamos a distribuição t de Student:
+\[P(\bar{X} > \bar{x}_c \mid \mu = 65) = P\!\left(\frac{\bar{X} - \mu}{s/\sqrt{n}} > \frac{\bar{x}_c - \mu}{s/\sqrt{n}} \,\middle|\, \mu = 65\right) = P\!\left(T > \frac{\bar{x}_c - 65}{3{,}19/\sqrt{10}}\right) = 0{,}05.\]
+Pelo código, obtemos \(t_{0{,}05;9} = -1{,}65\).
+Assim,
+\[\frac{\bar{x}_c - 65}{3{,}19/\sqrt{10}} = -1{,}65.\]
+Resolvendo,
+\[\bar{x}_c = 63{,}33.\]
+Como \(\bar{x}_\text{obs} > \bar{x}_c\), rejeitamos \(H_0\) com 95% de confiança.
+Assim, a amostra nos leva a concluir que o valor médio do teste é maior do que 65, sugerindo que a hipótese do professor não deve ser rejeitada.
+
+Calculando o valor-p:
+\[P(\bar{X} > \bar{x}_\text{obs} \mid \mu = 65) = 1 - \alpha\]
+\[P(\bar{X} > 67 \mid \mu = 65) = 1 - \alpha\]
+\[P\!\left(\frac{\bar{X} - \mu}{s/\sqrt{n}} > \frac{67 - \mu}{s/\sqrt{n}} \,\middle|\, \mu = 65\right) = \alpha\]
+\[P\!\left(T > \frac{67 - 65}{3{,}19/\sqrt{10}}\right) = 1 - \alpha\]
+\[P(T > 1{,}97) = 1 - \alpha.\]
+Portanto, para nove graus de liberdade (\(n = 10\)), temos:
+\[\alpha = 0{,}039.\]
+Portanto, há uma forte evidência para rejeitarmos \(H_0\), indicando que as notas devem ser maior do que 65.
+
+* Teste Qui-quadrado
+
+Imagine os seguintes problemas:
+- Como saber se a classe econômica influencia na escolha do curso vestibular?
+- Como determinar se um medicamento realmente funciona?
+- Coletamos um conjunto de dados. Esses dados seguem uma normal?
+
+** Formulação
+
+O teste qui-quadrado foi proposto pelo matemático inglês Karl Pearson (1857-1936) em 1900.
+Nesse teste, podemos comparar distribuições e verificar se valores obtidos estão de acordo com o esperado.
+Por exemplo, podemos verificar se a saída de um dado, após um grande número de lançamentos, corresponde à saída de um dado justo.
+Para realizar o teste qui-quadrado, precisamos calcular a seguinte métrica:
+\[\chi^2 = \sum_{i=1}^{s} \frac{(O_i - E_i)^2}{E_i},\]
+onde \(O_i\) é o valor observado e \(E_i\) é o valor esperado.
+
+** Exemplo: Dado
+
+*Exemplo:* Suponha que lançamos um dado 60 vezes, obtendo os valores na tabela a seguir.
+Realize um teste de hipóteses para verificar se o dado é justo.
+
+| X                           |  1 |  2 |  3 |  4 |  5 |  6 |
+|-----------------------------+----+----+----+----+----+----|
+| Observado (número de vezes) | 11 |  7 |  9 | 15 | 12 |  6 |
+| Esperado                    | 10 | 10 | 10 | 10 | 10 | 10 |
+
+*Solução:* Considerando os dados na tabela, quando lançamos o dado 60 vezes, o valor 1 saiu 11 vezes, o valor 2, 7 vezes, e assim por diante.
+Se o dado for justo, a probabilidade de sair cara \(P(X = i) = 1/6\), \(i = 1, 2, 3, 4, 5, 6\), onde \(X\) representa o valor na face superior do dado.
+Logo, como lançamos o dado 60 vezes, o número esperado de vezes que saia cada valor na face superior é igual a \(60 \times 1/6 = 10\).
+Vamos definir as seguintes hipóteses:
+\[H_0 : p_i = 1/6, \quad i = 1, 2, \ldots, 6.\]
+\[H_1 : p_i \neq 1/6 \text{ para ao menos um valor } i.\]
+Portanto, assumimos como hipótese nula que o dado é justo.
+Na hipótese alternativa, se ao menos um dos valores da face for mais provável do que os demais, temos que o dado não é honesto.
+
+Usando a métrica \(\chi^2\), temos:
+\[\chi^2 = \frac{(11-10)^2}{10} + \frac{(7-10)^2}{10} + \ldots + \frac{(6-10)^2}{10} = 5{,}6.\]
+É possível mostrar que \(\chi^2\) segue a distribuição qui-quadrado com \(k = s - 1\) graus de liberdade, onde \(s\) é o número de termos no somatório, que é o número de grupos ou categorias.
+Logo, nesse exemplo, \(k = 5\), pois o dado tem seis faces.
+
+** Tabela de Contingência
+
+A tabela de contingência é usada para registrar observações independentes de duas ou mais variáveis aleatórias, normalmente qualitativas.
+Para compararmos dois grupos, realizamos o teste qui-quadrado comparando os valores observados com os valores esperados caso as variáveis fossem independentes.
+Ou seja, a hipótese nula é que não há diferença entre os grupos com relação à variável de interesse.
+
+** Exemplo: Escolaridade por Setor
+
+*Exemplo:* Em um estudo com 395 participantes, pesquisadores coletaram dados sobre escolaridade de funcionários em dois setores de uma empresa de tecnologia.
+Os dados são mostrados na tabela a seguir.
+
+| Setor   | Fundamental | Médio | Técnico | Graduação | Total |
+|---------+-------------+-------+---------+-----------+-------|
+| Setor 1 |          60 |    54 |      46 |        41 |   201 |
+| Setor 2 |          40 |    44 |      53 |        57 |   194 |
+| Total   |         100 |    98 |      99 |        98 |   395 |
+
+Podemos afirmar que há diferença entre o nível educacional nos dois setores da empresa?
+
+*Solução:* A hipótese nula é que não há diferença entre os setores com relação ao nível de escolaridade.
+Assim, o número esperado de funcionários do setor 1 com ensino fundamental é igual a
+\[E = np = 100\left(\frac{201}{395}\right),\]
+pois \(p = 201/395\) é a fração de funcionários que pertencem ao setor 1.
+
+Assim, temos:
+\[\chi^2 = \frac{(60 - 100(201/395))^2}{100(201/395)} + \frac{(54 - 98(201/395))^2}{98(201/395)} + \ldots + \frac{(57 - 98(194/395))^2}{98(194/395)} = 8{,}006.\]
+Usando \(k = s - 1 = 3\) graus de liberdade (pois temos quatro variáveis: fundamental, médio, técnico e graduação), obtemos \(\alpha = 0{,}045\).
+Portanto, como esse valor-p é bastante baixo, podemos rejeitar a hipótese nula.
+Ou seja, o nível de escolaridade depende do setor.
+
+#+begin_src python
+from scipy import stats
+chi2 = 8.006
+k = 3
+alpha = 1 - stats.chi2.cdf(chi2, k)
+print('alpha = ', alpha)
+#+end_src
+
+* Testes Pareados
+
+** Formulação
+
+O teste de hipóteses pode ser usado para comparar a média de duas populações.
+Suponha que temos \(n\) pacientes que vão ser submetidos a um tratamento para diminuir o nível de colesterol.
+Inicialmente, medimos o colesterol antes do tratamento.
+Após tomar a medicação, esperamos um dado período de tempo e fazemos a medição novamente.
+Usando o teste de hipóteses, podemos comparar o colesterol médio, considerando todos os pacientes, antes e depois do tratamento.
+Desse modo, podemos verificar se a medicação é efetiva.
+
+Nesse caso, notem que as amostras antes e depois do tratamento são dependentes.
+Ou seja, as medidas são tomadas em um único indivíduo em dois pontos distintos no tempo.
+Quando temos esse tipo de dado, o teste de hipóteses é chamado teste pareado.
+Notem que se as medidas são feitas em um mesmo indivíduo, uma certa variabilidade biológica é eliminada, uma vez que não temos que nos preocupar com o fato de um indivíduo ser homem ou mulher ou mesmo ser mais jovem do que o outro.
+Com o emparelhamento, podemos fazer uma comparação mais precisa.
+
+** Exemplo: Triglicerídeos
+
+*Exemplo:* Uma empresa farmacêutica desenvolve uma nova droga para reduzir o nível de triglicerídeos no sangue.
+São coletados dados de 10 pacientes, antes e depois da administração da droga, conforme a tabela a seguir.
+
+| Medição |   1 |   2 |   3 |   4 |   5 |   6 |   7 |   8 |   9 |  10 |
+|---------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----|
+| Antes   | 250 | 180 | 200 | 190 | 200 | 210 | 250 | 200 | 200 | 160 |
+| Depois  | 220 | 190 | 160 | 180 | 210 | 180 | 170 | 150 | 150 | 140 |
+
+*Solução:* O valor médio antes do tratamento é igual a \(\bar{x} = 204\) e após, \(\bar{y} = 175\).
+O efeito produzido pela droga no \(i\)-ésimo paciente é dado pela variável aleatória \(D_i = X_i - Y_i\), sendo \(X_i\) e \(Y_i\) a taxa de triglicerídeos antes e depois do tratamento, respectivamente.
+Vamos supor que \(D_i \sim \mathcal{N}(\mu_D, \sigma_D^2)\), \(i = 1, 2, \ldots, n\).
+Assim, queremos testar as hipóteses:
+\[H_0 : \mu_D = 0\]
+\[H_1 : \mu_D > 0.\]
+Sendo \(\mu_D = \mu_X - \mu_Y\), que representa a diferença entre os níveis de triglicerídeos antes e depois do tratamento.
+
+Portanto, a hipótese nula implica que não há diferença entre os níveis médios de triglicerídeos antes e depois da aplicação da droga.
+Na hipótese alternativa, vamos analisar se a droga diminui o nível de triglicerídeos, isto é, \(\mu_D > 0\) implica que \(\mu_X > \mu_Y\), pois \(\mu_D = \mu_X - \mu_Y\).
+O estimador de \(\mu_D\) é dado pela diferença média entre os valores medidos de triglicerídeos:
+\[\bar{D} = \sum_{i=1}^{n} \frac{X_i - Y_i}{n} = \sum_{i=1}^{n} \frac{D_i}{n}.\]
+
+Como não temos informações sobre a variância de \(D\), usamos o estimador:
+\[s_D^2 = \frac{1}{n-1}\sum_{i=1}^{n}(D_i - \bar{D})^2.\]
+Calculando para a amostra, temos \(\bar{d} = 29\) e \(s_D = 39{,}59\).
+A estatística do teste:
+\[T = \frac{\bar{D} - \mu_D}{s_D/\sqrt{n}},\]
+tem distribuição t-Student com \(n - 1\) graus de liberdade.
+Vamos calcular o valor-p:
+\[P(\bar{D} > \bar{d} \mid \mu_D = 0) = P\!\left(\frac{\bar{D} - \mu_D}{s_D/\sqrt{n}} > \frac{\bar{d} - \mu_D}{s_D/\sqrt{n}} \,\middle|\, \mu_D = 0\right) = P\!\left(T > \frac{29}{39{,}59/\sqrt{10}}\right) = P(T > 2{,}31) = 0{,}022.\]
+Logo, como o valor-p é bastante baixo, devemos rejeitar \(H_0\), indicando que a nova droga é eficaz para baixar o nível de triglicerídeos dos pacientes.
+
+* Teste de Kolmogorov-Smirnov
+
+** Formulação
+
+O teste de Kolmogorov-Smirnov (KS) foi proposto por Andrey Kolmogorov (1903-1987) em 1933 e por Nikolai Smirnov (1900-1966) em 1939, de forma independente.
+Sendo um teste estatístico não paramétrico, ele é utilizado para verificar se uma amostra de dados segue uma distribuição teórica conhecida, como a distribuição normal, exponencial ou uniforme, por exemplo.
+
+O teste consiste em calcular a estatística de Kolmogorov-Smirnov (KS), que é a maior diferença absoluta entre as funções de distribuição acumulada empírica e teórica.
+Isto é,
+\[D_n = \max_x |F(x) - F_\text{obs}(x)|,\]
+onde \(F(x) = P(X \leq x)\) é a distribuição acumulada do modelo teórico, enquanto que \(F_\text{obs}(x)\) é calculada a partir do conjunto de dados, sendo dada pela fração de observações menores do que \(x\).
+
+Se ordenarmos as observações, de modo que \(x_{(1)} < x_{(2)} < \ldots < x_{(n)}\), então:
+\[F_\text{obs}(x_{(i)}) = \frac{i}{n}.\]
+O termo \(x_{(i)}\) representa a \(i\)-ésima estatística de ordem, ou seja, o \(i\)-ésimo valor mais baixo em um conjunto de dados ordenados.
+Por exemplo, se tivermos o conjunto de dados \(\{8, 3, 7, 5, 9, 11, 10\}\), a primeira estatística de ordem seria \(x_{(1)} = 3\), a segunda seria \(x_{(2)} = 5\), e assim por diante, até \(x_{(7)} = 11\).
+
+Nosso objetivo no teste KS é comparar a distribuição dos dados com a distribuição associada à hipótese nula.
+Assim:
+- \(H_0\): os dados vieram da distribuição teórica.
+- \(H_1\): os dados não vieram da distribuição teórica.
+
+Para realizar esse teste de hipótese, precisamos calcular o valor p, que pode ser obtido através de simulações de Monte Carlo.
+O processo de simulação consiste em gerar diversas amostras aleatórias com o mesmo tamanho da amostra original a partir da distribuição teórica assumida na hipótese nula.
+Em seguida, é calculada a estatística KS para cada uma dessas amostras geradas.
+O valor p é então estimado como a proporção de vezes que a estatística KS simulada é maior ou igual à estatística observada na amostra original.
+Quanto maior o valor p, mais favorável será a hipótese nula, ou seja, os dados provavelmente vieram do modelo assumido.
+
+** Implementação em Python
+
+Vamos verificar se um conjunto de dados foram gerados por uma distribuição uniforme.
+
+#+begin_src python
+import numpy as np
+from scipy.stats import kstest
+
+data = np.array([0.1, 0.15, 0.25, 0.3, 0.5, 0.7, 0.9])
+dist = 'uniform'
+KS = kstest(data, dist)
+
+print('Estatística de teste:', KS.statistic)
+print('Valor p:', KS.pvalue)
+#+end_src
+
+Como \(p > 0{,}05\), há evidência de que os dados são de uma distribuição uniforme.
+
+Vamos gerar os dados a partir de uma normal e verificar se o valor p será alto, quando comparamos com uma normal.
+
+#+begin_src python
+import numpy as np
+from scipy.stats import norm, kstest
+np.random.seed(42)
+
+mean = 5
+std = 10
+n = 1000
+data = np.random.normal(mean, std, n)
+dist = 'norm'
+KS = kstest(data, dist, args=(mean, std))
+
+print('Estatística de teste:', KS.statistic)
+print('Valor p:', KS.pvalue)
+#+end_src
+
+Podemos ainda comparar duas distribuições de dados e verificar se vieram de um mesmo modelo.
+
+#+begin_src python
+import numpy as np
+from scipy.stats import ks_2samp
+np.random.seed(42)
+
+mean = 5
+std = 10
+n = 100
+data1 = np.random.normal(mean, std, n)
+data2 = np.random.normal(mean, std, n)
+KS = ks_2samp(data1, data2)
+
+print('Estatística de teste:', KS.statistic)
+print('Valor p:', KS.pvalue)
+#+end_src
+
+* Modelos de Regressão
+
+Valor do teste do PISA versus a renda per capita para diversos países (dados de 2012) mostra que a linha reta representa o modelo de regressão ajustado.
+Conhecendo-se a renda per capita (\(x_j\)) de um país \(j\), podemos predizer a sua nota no PISA (\(\hat{y}_j\)) usando o modelo de regressão.
+
+* Método dos Mínimos Quadrados
+
+** Resíduo e RSS
+
+Para ajustarmos o modelo de regressão usando o método dos mínimos quadrados, consideramos os dados coletados, que constituem os pares \([(x_i, y_i),\, i = 1, 2, \ldots, n]\), sendo que \(y_i\) depende de \(x_i\) através de uma relação linear.
+O nosso objetivo é estimar a reta que melhor se ajusta aos dados.
+Esse ajuste é dado por:
+\[\hat{y}_i = \hat{\theta}_0 + \hat{\theta}_1 x_i, \quad i = 1, 2, \ldots, n,\]
+sendo \(\hat{y}_i\) o valor predito e \(\hat{\theta}_0\) e \(\hat{\theta}_1\) os valores a serem ajustados a partir dos dados.
+
+Para encontrar \(\hat{\theta}_0\) e \(\hat{\theta}_1\), precisamos definir um critério que quantifique o quão preciso é um ajuste.
+Para isso, vamos considerar um conceito importante chamado resíduo, que é igual à diferença entre o valor observado (\(y_i\)) e o predito (\(\hat{y}_i\)), isto é
+\[e_i = y_i - \hat{y}_i, \quad i = 1, 2, \ldots, n.\]
+
+O método dos mínimos quadrados objetiva minimizar a soma dos quadrados dos resíduos, ou seja, determinar a reta que melhor se aproxima dos dados.
+Portanto, o conceito de "melhor ajuste" se traduz em encontrar a reta que produz o menor erro, quantificado pelo resíduo.
+A soma dos quadrados dos resíduos (/residual sum of squares/, RSS) é dada por:
+\[\text{RSS} = \sum_{i=1}^{n} e_i^2 = \sum_{i=1}^{n}(y_i - \hat{y}_i)^2 = \sum_{i=1}^{n}(y_i - \hat{\theta}_0 - \hat{\theta}_1 x_i)^2.\]
+
+** Estimadores
+
+Para minimizar esse erro, ou seja, encontrar o mínimo de RSS, derivamos essa equação com relação a \(\hat{\theta}_0\) e \(\hat{\theta}_1\) e igualamos os resultados a zero.
+Assim,
+\[\frac{\partial \text{RSS}}{\partial \hat{\theta}_0} = -2\sum_{i=1}^{n}(y_i - \hat{\theta}_0 - \hat{\theta}_1 x_i) = 0,\]
+\[\frac{\partial \text{RSS}}{\partial \hat{\theta}_1} = -2\sum_{i=1}^{n}(y_i - \hat{\theta}_0 - \hat{\theta}_1 x_i)x_i = 0.\]
+Resolvendo para \(\hat{\theta}_0\) e \(\hat{\theta}_1\), obtemos:
+\[\hat{\theta}_1 = \frac{\sum_{i=1}^{n}(x_i - \bar{x})(y_i - \bar{y})}{\sum_{i=1}^{n}(x_i - \bar{x})^2},\]
+\[\hat{\theta}_0 = \bar{y} - \hat{\theta}_1 \bar{x},\]
+onde \(\bar{y} = \sum_{i=1}^{n} y_i/n\) e \(\bar{x} = \sum_{i=1}^{n} x_i/n\).
+
+** Coeficiente de Determinação
+
+Para quantificar a qualidade do ajuste no método dos mínimos quadrados, podemos utilizar o coeficiente de determinação (\(R^2\)), que é uma medida estatística que avalia a qualidade do ajuste de um modelo de regressão linear.
+\[R^2 = 1 - \frac{\sum_{i=1}^{n}(y_i - \hat{y}_i)^2}{\sum_{i=1}^{n}(y_i - \bar{y})^2},\]
+onde \(0 \leq R^2 \leq 1\).
+
+* Regressão Linear Simples
+
+** Formulação Probabilística
+
+O problema consiste em identificar:
+- Variável resposta (ou dependente): \(Y\),
+- Variável preditora (ou independente): \(X\).
+
+Em outras palavras, buscamos entender como a variável \(Y\) se relaciona com a variável \(X\) por meio de uma equação linear.
+Assim, dado um conjunto de observações de \(X\), nosso objetivo é estimar a função de regressão \(f(x)\), que representa a expectativa condicional de \(Y\) dado que \(X = x\):
+\[f(x) = \mathbb{E}[Y \mid X = x] = \theta_0 + \theta_1 x.\]
+
+O modelo de regressão linear simples é definido por:
+\[Y_i = \theta_0 + \theta_1 x_i + \epsilon_i, \quad i = 1, 2, \ldots, n,\]
+onde assumimos \(\epsilon_i \sim \mathcal{N}(0, \sigma^2)\).
+Os parâmetros \(\theta_1\) e \(\theta_0\) são fixos e desconhecidos.
+
+Como o modelo é linear e \(\epsilon_i\) tem distribuição normal, então \(Y_i\) também segue o modelo normal:
+\[Y_i \sim \mathcal{N}(\theta_0 + \theta_1 x_i,\, \sigma^2).\]
+Assim,
+\[p(y_i \mid x_i, \theta_0, \theta_1) = \frac{1}{\sqrt{2\pi\sigma^2}} \exp\!\left(-\frac{1}{2\sigma^2}(\theta_0 + \theta_1 x_i - y_i)^2\right).\]
+
+** Máxima Verossimilhança
+
+Para inferirmos os valores de \(\theta_0\) e \(\theta_1\), consideramos o problema:
+\[\hat{\theta} = \text{argmax}_\theta\, L(\theta;\, \mathbf{x}),\]
+onde \(\theta^T = [\theta_0, \theta_1]\) e \(\hat{\theta}^T = [\hat{\theta}_0, \hat{\theta}_1]\).
+Ou seja, precisamos encontrar os valores \(\theta_0\) e \(\theta_1\) de forma a maximizar a função de verossimilhança \(L(\theta;\, \mathbf{x})\).
+
+\[L(\theta;\, \mathbf{x}) = \prod_{i=1}^{n} p(y_i \mid x_i, \theta).\]
+\[\log L(\theta;\, \mathbf{x}) = \sum_{i=1}^{n} \log p(y_i \mid x_i, \theta).\]
+\[\log L(\theta;\, \mathbf{x}) = \sum_{i=1}^{n} \log\!\left[\frac{1}{\sqrt{2\pi\sigma^2}} \exp\!\left(-\frac{1}{2\sigma^2}(\theta^T x_i - y_i)^2\right)\right] = -\frac{n}{2}\log(2\pi\sigma^2) - \frac{1}{2\sigma^2}\sum_{i=1}^{n}(\theta^T x_i - y_i)^2.\]
+
+Ignorando os termos que não dependem de \(\theta\), pois não influenciam na maximização da verossimilhança, podemos escrever:
+\[\hat{\theta} = \text{argmax}_\theta \log L(\theta;\, \mathbf{x}) = \text{argmin}_\theta \sum_{i=1}^{n}(\theta_0 + \theta_1 x_i - y_i)^2.\]
+
+Portanto, a estimação por máxima verossimilhança resulta no método dos mínimos quadrados:
+\[\hat{\theta}_1 = \frac{\sum_{i=1}^{n}(x_i - \bar{x})(y_i - \bar{y})}{\sum_{i=1}^{n}(x_i - \bar{x})^2},\]
+\[\hat{\theta}_0 = \bar{y} - \hat{\theta}_1 \bar{x},\]
+onde \(\bar{y} = \sum_{i=1}^{n} y_i/n\) e \(\bar{x} = \sum_{i=1}^{n} x_i/n\).
+
+** Intervalo de Confiança e Teste de Hipóteses
+
+Os intervalos de confiança para os parâmetros são dados por:
+\[IC(\theta_0;\, 1 - \alpha) = \hat{\theta}_0 \pm t_{\alpha/2,\, n-2}\, \frac{S_\epsilon \sqrt{\sum_{i=1}^{n} x_i^2}}{\sqrt{n \sum_{i=1}^{n}(x_i - \bar{x})^2}},\]
+\[IC(\theta_1;\, 1 - \alpha) = \hat{\theta}_1 \pm t_{\alpha/2,\, n-2}\, \frac{S_\epsilon}{\sqrt{\sum_{i=1}^{n}(x_i - \bar{x})^2}}.\]
+
+No caso do teste de hipóteses, geralmente consideramos as seguintes hipóteses para o intercepto:
+\[H_0 : \theta_0 = 0\]
+\[H_1 : \theta_0 \neq 0.\]
+E para o coeficiente de inclinação:
+\[H_0 : \theta_1 = 0\]
+\[H_1 : \theta_1 \neq 0.\]
+Nesse último caso, quando a hipótese nula não é rejeitada, a conclusão é que não há uma relação linear entre \(Y\) e a variável independente \(X\), isto é, \(\theta_1 = 0\).
+
+* Regressão Multivariada
+
+** Formulação
+
+Um modelo de regressão com \(k\) variáveis preditoras \(\{X_1, X_2, \ldots, X_k\}\) e apenas uma saída \(Y_j\) é definido por
+\[Y_j = \theta_0 + \theta_1 x_{j1} + \theta_2 x_{j2} + \ldots + \theta_k x_{jk} + \epsilon_j, \quad j = 1, 2, \ldots, n,\]
+onde a variável \(\epsilon_j\) representa o erro na predição, que geralmente tem distribuição normal com média igual a zero e variância \(\sigma^2\).
+Notem que o modelo é linear com relação aos parâmetros \(\theta_0, \ldots, \theta_k\).
+
+Em notação matricial, \(\mathbf{y} = \mathbf{X}\theta + \epsilon\), onde:
+\[\begin{bmatrix}Y_1\\Y_2\\\vdots\\Y_n\end{bmatrix} = \begin{bmatrix}1 & x_{11} & \cdots & x_{1k}\\1 & x_{21} & \cdots & x_{2k}\\\vdots & \vdots & \ddots & \vdots\\1 & x_{n1} & \cdots & x_{nk}\end{bmatrix} \begin{bmatrix}\theta_0\\\theta_1\\\vdots\\\theta_k\end{bmatrix} + \begin{bmatrix}\epsilon_1\\\epsilon_2\\\vdots\\\epsilon_n\end{bmatrix}.\]
+
+Os termos de erro apresentam as seguintes propriedades:
+- \(E[\epsilon_j] = 0\) para \(j = 1, \ldots, n\),
+- \(\text{Var}(\epsilon_j) = \sigma^2\) para \(j = 1, \ldots, n\),
+- \(\text{Cov}(\epsilon_i, \epsilon_j) = 0\) para \(i, j = 1, \ldots, n\) e \(i \neq j\).
+
+** Estimação por Mínimos Quadrados
+
+No método dos mínimos quadrados, a ideia é minimizar a distância quadrática entre as respostas observadas e os valores estimados, isto é, minimizar a soma dos quadrados dos resíduos.
+Assim,
+\[\text{RSS} = \sum_{i=1}^{n}(y_i - \hat{y}_i)^2 = \sum_{i=1}^{n}\!\left(y_i - \theta_0 - \sum_{j=1}^{k} x_{ij}\hat{\theta}_j\right)^2,\]
+onde \(\hat{\theta}_j\) é o estimador do parâmetro \(\theta_j\), \(j = 1, 2, \ldots, k\).
+Usando notação matricial:
+\[\text{RSS} = (\mathbf{y} - \mathbf{X}\hat{\theta})^T(\mathbf{y} - \mathbf{X}\hat{\theta}).\]
+Diferenciando com relação a \(\hat{\theta} = [\hat{\theta}_0, \hat{\theta}_1, \ldots, \hat{\theta}_k]^T\):
+\[\frac{\partial}{\partial\hat{\theta}}\text{RSS} = -2\mathbf{X}^T(\mathbf{y} - \mathbf{X}\hat{\theta}).\]
+Igualando essa derivada a zero,
+\[\mathbf{X}^T(\mathbf{y} - \mathbf{X}\hat{\theta}) = 0,\]
+obtemos a solução:
+\[\hat{\theta} = (\mathbf{X}^T\mathbf{X})^{-1}\mathbf{X}^T\mathbf{y}.\]
+
+*Teorema:* Os estimadores de mínimos quadrados do modelo de regressão linear são soluções da equação normal:
+\[\hat{\theta} = (\mathbf{X}^T\mathbf{X})^{-1}\mathbf{X}^T\mathbf{y},\]
+onde \(\hat{\theta} = [\hat{\theta}_0, \ldots, \hat{\theta}_k]^T\).
+
+* Regressão Polinomial
+
+De maneira similar à regressão multivariada, podemos realizar a regressão polinomial.
+Nesse caso, o objetivo é ajustar um polinômio ao conjunto de dados.
+Por exemplo, o modelo pode ser dado por:
+\[Y = \theta_0 + \theta_1 x + \theta_2 x^2 + \ldots + \theta_k x^k = \sum_{j=0}^{k} \theta_j x^j.\]
+Notem que se fizermos \(X_j = X^j\) nessa equação, obtemos um modelo similar ao apresentado anteriormente:
+\[Y_j = \theta_0 + \theta_1 x_{1j} + \theta_2 x_{2j} + \ldots + \theta_k x_{kj} + \epsilon_j, \quad j = 1, \ldots, n.\]
+
+* Links
+
+- [[denote:20250206T170658][Teaching and Lectures]]

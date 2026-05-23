@@ -1,0 +1,139 @@
+#+title:       Structural Decomposition
+#+date:       [2026-05-20 Wed 18:20]
+#+filetags:   :meta:symbolic:wip:
+#+identifier: 20260520T182046
+
+
+* Introduction
+
+This meta note is meant to collect references and ideias regarding structural decomposition.
+The final goal is to understand how to create analytical solutions for symbolic macroeconomic models without relying on infinite recursive substitutions.
+This metanote is a working in progress
+
+* Related readings
+
+- [cite:@baader_1998_term]
+- [cite:@dejong_2012_structural]
+- [cite:@chen_2014_linear]
+
+* Related terms (to be explored)
+
+- Structural Macroeconomics
+  - Structural decomposition
+  - Structural operators
+  - Structural transmission mechanisms
+  - Structural propagation
+  - Structural multiplier systems
+  - Structural feedback loops
+  - Structural Jacobians
+  - Reduced-form systems
+  - Canonical representation
+  - Implicit systems
+  - Simultaneous equation systems
+  - Endogenous propagation
+  - Policy transmission channels
+  - Recursive macroeconomic systems
+  - State-space macroeconomics
+- Linear Algebra and Matrix Methods
+  - Jacobian matrices
+  - Reduced Jacobians
+  - Structural matrices
+  - Interaction matrices
+  - Propagation operators
+  - Transfer matrices
+  - Matrix partitioning
+  - Schur complement
+  - Kron reduction
+  - Symbolic matrix factorization
+  - Structural determinants
+  - Spectral decomposition
+  - Sparse elimination methods
+  - Matrix projection operators
+  - Operator factorization
+  - Linear operator theory
+- Dynamical Systems and Control Theory
+  - State-space representation
+  - Model order reduction
+  - Reduced-order modeling
+  - Projection methods
+  - Descriptor-state systems
+  - Dynamic systems reduction
+  - Minimal realization
+  - Controllability
+  - Observability
+  - Feedback systems
+  - Networked dynamical systems
+  - Quasi-steady-state approximation
+  - System-theoretic decomposition
+- Symbolic Computation
+  - Symbolic model reduction
+  - Symbolic elimination
+  - Symbolic factorization
+  - Symbolic propagation
+  - Symbolic projection
+  - Symbolic rewriting
+  - Expression DAGs
+  - Directed acyclic graphs (DAGs)
+  - Common subexpression elimination (CSE)
+  - AST transformations
+  - Tree rewriting systems
+  - Rewrite-rule simplification
+  - Semantic simplification
+  - Structural rewriting
+  - Algebraic rewriting systems
+  - Pattern matching in symbolic systems
+  - Semantic operators
+  - Symbolic graph reduction
+  - Canonical symbolic forms
+  - Expression normalization
+  - Intermediate representations (IR)
+  - Compiler-inspired symbolic optimization
+- Graphs, Networks and Causality
+  - Causal graphs
+  - Dependency graphs
+  - Propagation networks
+  - Directed graphs
+  - Strongly connected components (SCC)
+  - Graph elimination
+  - Network reduction
+  - Structural graph decomposition
+  - Causal propagation networks
+  - Feedback networks
+  - Influence propagation
+  - Network controllability
+  - Network centrality
+  - Sparse graph structures
+  - Graph Laplacians
+  - Computational causal structure
+  - Hierarchical causal systems
+- Computational Macroeconomics
+  - DSGE linearization
+    - Canonical DSGE forms
+  - Perturbation methods
+  - Structural macroeconometrics
+  - Implicit equilibrium systems
+  - Economic transmission networks
+  - Computational policy analysis
+  - Structural sensitivity analysis
+  - Dynamic multiplier analysis
+  - Macroeconomic state reduction
+  - Recursive equilibrium computation
+- Related Mathematical Areas
+  - Elimination theory
+  - Fixed-point operators
+  - Nonlinear system reduction
+  - Differential-algebraic equations (DAE)
+  - Implicit function theorem
+  - Projection-based reduction
+  - Functional decomposition
+  - Multiscale systems
+  - Renormalization and coarse graining
+  - Reduced manifold methods
+  - Structural identifiability
+  - Sensitivity operators
+  - Stability manifolds
+
+* Videos
+
+- [[youtube:3j5IeuvSebQ][Simultaneous equation models - reduced form and structural equations]]
+- [[https://www.youtube.com/watch?v=ZDwSPiBaDco&list=PLD15D38DC7AA3B737&index=14][Econometrics - Mark Thoma]]

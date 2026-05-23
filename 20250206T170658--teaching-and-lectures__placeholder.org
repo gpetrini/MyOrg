@@ -2,3 +2,14 @@
 #+date:       [2025-02-06 qui 17:06]
 #+filetags:   :placeholder:
 #+identifier: 20250206T170658
+
+* Backlinks :noexport:
+
+#+BEGIN: denote-backlinks :excluded-dirs-regexp nil :sort-by-component nil :reverse-sort nil :id-only nil :this-heading-only nil :include-date nil :regexp "_lecture"
+- [[denote:20201202T092036][IEE882: Macroeconomia Financeira]]
+- [[denote:20250203T182256][CE112: Economic Mathematics II]]
+- [[denote:20250210T171943][Estratégias de aprendizagem para a mediação pedagógica na Educação a Distância]]
+- [[denote:20250523T172238][Elaboração de Instrumentos Avaliativos]]
+- [[denote:20251119T102305][1=1  Economia Matemática II]]
+- [[denote:20260406T200142][Fundamentos de Probabilidade e Estatística para Ciência de Dados]]
+#+END:
