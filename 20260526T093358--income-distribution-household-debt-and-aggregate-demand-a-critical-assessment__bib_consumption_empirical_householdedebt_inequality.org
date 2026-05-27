@@ -1,0 +1,300 @@
+#+title:      Income Distribution, Household Debt, and Aggregate Demand: A Critical Assessment
+#+date:       [2026-05-26 Tue 09:33]
+#+filetags:   :bib:consumption:empirical:householdedebt:inequality:
+#+identifier: 20260526T093358
+#+reference:  mason_2018_income
+#+TAGS: context(c) theory(t) hypo(h) contrib(n) method(m) data(d)
+#+TAGS: results(r) discuss(s) critique(k) limits(l) future(f)
+#+TAGS: empirics(e) formal(o) sim(g) policy(p) lit(i)
+#+TAGS: insight(j) misc(x)
+
+
+* FISH-5SS
+
+** 5SS
+
+** Background and motivation
+
+** Supporting Ideas and hypothesis
+
+** Purpose, Relevance, and Contribution
+
+** Methodology
+
+** Results
+
+** Interesting findings and not categorized stuff
+
+** Critics
+
+** Abstract
+
+#+BEGIN_ABSTRACT
+%^{abstract}
+#+END_ABSTRACT
+
+* Specific notes
+
+
+*Extracted Annotations (05/10/2021 11:04:57)*
+
+"I conclude that the distribution-debt-demand story may have some validity if limited to the housing boom period of 2002-07, but does not fit the longer-term rise in household debt since 1980." ([[zotero://open-pdf/library/items/YJ9TJDQH?page=2][Mason 2018:2]])
+
+"Debt-financed asset acquisition may or may not contribute to aggregate demand, but it does not make sense to think of it in terms of tradeoffs between current future consumption or as a substitute for consumption spending financed out of current income." ([[zotero://open-pdf/library/items/YJ9TJDQH?page=4][Mason 2018:4]])
+
+"Changes in household debt-income ratios are driven mainly by the difference between interest and growth rates." ([[zotero://open-pdf/library/items/YJ9TJDQH?page=4][Mason 2018:4]])
+
+"Household consumption spending has been flat since 1980" ([[zotero://open-pdf/library/items/YJ9TJDQH?page=4][Mason 2018:4]])
+
+"but since they do not involve any money outlays by households it is logically impossible for them to affect household balance sheets." ([[zotero://open-pdf/library/items/YJ9TJDQH?page=5][Mason 2018:5]])
+
+"Most debt is owed by households near the top of the income distribution" ([[zotero://open-pdf/library/items/YJ9TJDQH?page=5][Mason 2018:5]])
+
+"the distribution of consumption spending has more or less tracked the distribution of income." ([[zotero://open-pdf/library/items/YJ9TJDQH?page=5][Mason 2018:5]])
+
+"Stagnant incomes in the lower part of the distribution have not been compensated for by increased borrowing, but have simply led to stagnant living standards." ([[zotero://open-pdf/library/items/YJ9TJDQH?page=5][Mason 2018:5]])
+
+"Rising household debt-income ratios are primarily due to the secular increase in interest rates" ([[zotero://open-pdf/library/items/YJ9TJDQH?page=5][Mason 2018:5]])
+
+"And consumption demand has been supported by a mix of higher consumption spending among high-income households, and the increasing volume of social spending classified as private consumption in the national accounts." ([[zotero://open-pdf/library/items/YJ9TJDQH?page=6][Mason 2018:6]])
+
+"For the housing boom period of 2002-07, the distribution-debt-demand story is more plausible." ([[zotero://open-pdf/library/items/YJ9TJDQH?page=6][Mason 2018:6]])
+
+"Incurring debt then is equivalent to negative saving, and accumulating assets is equivalent to positive saving." ([[zotero://open-pdf/library/items/YJ9TJDQH?page=7][Mason 2018:7]])
+
+"debt is mainly incurred to finance assets, not to finance current expenditure." ([[zotero://open-pdf/library/items/YJ9TJDQH?page=7][Mason 2018:7]])
+
+"It finances assets that are strongly linked to the household's reproduction as a social and wage-earning unit." ([[zotero://open-pdf/library/items/YJ9TJDQH?page=7][Mason 2018:7]])
+
+"typically involve a reduction in current consumption." ([[zotero://open-pdf/library/items/YJ9TJDQH?page=8][Mason 2018:8]])
+
+"Since the most important form of household borrowing---the mortgage---involves both acquisition of an asset and a substantial down payment out of current income, higher household debt normally implies higher household saving." ([[zotero://open-pdf/library/items/YJ9TJDQH?page=8][Mason 2018:8]])
+
+/This could be usefull for VEC paper. ([[zotero://open-pdf/library/items/YJ9TJDQH?page=8][note on p.8]])/
+
+"For these reasons, household asset and debt positions normally expand together." ([[zotero://open-pdf/library/items/YJ9TJDQH?page=8][Mason 2018:8]])
+
+"Consumption loans account for only 4 percent of household debt (See table 1)." ([[zotero://open-pdf/library/items/YJ9TJDQH?page=8][Mason 2018:8]])
+
+"This positive relationship between debt and assets is present whether or not one controls for income." ([[zotero://open-pdf/library/items/YJ9TJDQH?page=9][Mason 2018:9]])
+
+"On the contrary, since declining income makes households less able to afford the upfront costs of asset ownership, a fall in income will normally be associated with less borrowing, not more." ([[zotero://open-pdf/library/items/YJ9TJDQH?page=9][Mason 2018:9]])
+
+"In particular, it is often claimed that during the housing boom period of the 2000s households"used their homes as ATMs,” with cash-out refinancings or second mortgages generating funds for other purpose” ([[zotero://open-pdf/library/items/YJ9TJDQH?page=9][Mason 2018:9]])
+
+"So the small fraction of household debt that takes the form of consumption loans is not necessarily informative about the extent to which consumption is financed by debt." ([[zotero://open-pdf/library/items/YJ9TJDQH?page=9][Mason 2018:9]])
+
+/This is usefull for VEC article ([[zotero://open-pdf/library/items/YJ9TJDQH?page=9][note on p.9]])/
+
+"Note that the national accounts class all three of these uses as residential investment by households," ([[zotero://open-pdf/library/items/YJ9TJDQH?page=10][Mason 2018:10]])
+
+"All else equal, this will produce some combination of higher mortgage debt and lower equity, without freeing any funds for consumption." ([[zotero://open-pdf/library/items/YJ9TJDQH?page=10][Mason 2018:10]])
+
+"A closer look suggests that there were two distinct phases to the housing boom (see figure 1). In the first period, 2002-04, the large increase in funds flowing to households through mortgages was mainly due to equity extraction---annual net cash from refinancings, junior liens, and homeequity-based revolving credit balances increased by a total of 2.5 percent of GDP, while new mortgage lending rose by only 1 percent of GDP." ([[zotero://open-pdf/library/items/YJ9TJDQH?page=12][Mason 2018:12]])
+
+"Meanwhile, on the uses side, new housing investment and brokers' fees and commissions, not surprisingly, rose more in the second period." ([[zotero://open-pdf/library/items/YJ9TJDQH?page=12][Mason 2018:12]])
+
+"n this nnarrow sensee, housing crredit has nevver finan ced consump tion. On th e other hand , it is true thhat the net fllow of fundss to househollds throu gh housing ce became substantially more ppositive duriing the earlyy 2000s." ([[zotero://open-pdf/library/items/YJ9TJDQH?page=13][Mason 2018:13]])
+
+"housing credit leads to increased consumption is prima facie plausible for this period" ([[zotero://open-pdf/library/items/YJ9TJDQH?page=14][Mason 2018:14]])
+
+"About half the equity withdrawals in this period were, in effect,
+paying for the costs of the bubble itself---increased interest on past
+loans and transaction costs associated with the faster pace of sales"
+([[zotero://open-pdf/library/items/YJ9TJDQH?page=14][Mason 2018:14]])
+
+"key point here is how exceptional the housing bubble period was. During
+this period, it is true, there was a substantial increase in mortgage
+borrowing, which financed higher residential investment and, perhaps
+higher consumption spending as well. But this is a period of less than
+five years, and it was more than reversed in the years following the end
+of the boom." ([[zotero://open-pdf/library/items/YJ9TJDQH?page=14][Mason
+2018:14]])
+
+"Overall, we can say household borrow ing, it is plausible that during
+the 22000s, some significant ppart of the inncrease in fun ds flowing
+sehold s through housing creddit was availaable to finannce
+consumpption."
+([[zotero://open-pdf/library/items/YJ9TJDQH?page=15][Mason 2018:15]])
+
+"So if the goal is to explain the difference in household debt growth in
+the decades before and after 1980, the answer cannot involve any change
+in borrowing behavior."
+([[zotero://open-pdf/library/items/YJ9TJDQH?page=18][Mason 2018:18]])
+
+"combination of higher interest payments"
+([[zotero://open-pdf/library/items/YJ9TJDQH?page=18][Mason 2018:18]])
+
+"lower inflation"
+([[zotero://open-pdf/library/items/YJ9TJDQH?page=18][Mason 2018:18]])
+
+"The question is not why households borrowed more after 1980; they did
+not. The question is why the operation of the monetary system increased
+the value of already-"
+([[zotero://open-pdf/library/items/YJ9TJDQH?page=18][Mason 2018:18]])
+
+"incurred debt much more rapidly after 1980 than before."
+([[zotero://open-pdf/library/items/YJ9TJDQH?page=19][Mason 2018:19]])
+
+"The main message of the graph is that household borrowing has made no
+contribution to the long-term growth of household debt; if interest
+rates, inflation, and growth had been constant, then the actual pattern
+of household borrowing would have led to roughly stable debt-income
+ratios" ([[zotero://open-pdf/library/items/YJ9TJDQH?page=19][Mason
+2018:19]])
+
+/Not necessarily for vec paper
+([[zotero://open-pdf/library/items/YJ9TJDQH?page=20][note on p.20]])/
+
+"The increase in measured consumption spending as a share of GDP is
+entirely the result of spending by third parties---mainly government,
+but also employers---that is counted as household spending in the
+national accounts."
+([[zotero://open-pdf/library/items/YJ9TJDQH?page=21][Mason 2018:21]])
+
+"The economic saving used in the national accounts is distinct from the
+financial saving that results in changes in the household balance
+sheet." ([[zotero://open-pdf/library/items/YJ9TJDQH?page=27][Mason
+2018:27]])
+
+"Note that while these flows do not involve any monetary outlay by
+households and thus cannot affect household balance sheets or debt, they
+do all contribute to measured household saving."
+([[zotero://open-pdf/library/items/YJ9TJDQH?page=28][Mason 2018:28]])
+
+"The fact that adjustment can take place on the asset as well as the
+liability side is another reason there is no necessary connection
+between saving and debt growth."
+([[zotero://open-pdf/library/items/YJ9TJDQH?page=29][Mason 2018:29]])
+
+"In particular, the growth in recent decades in wealth relative to GDP
+in the US and elsewhere is explained mainly by capital gains on existing
+assets, not by faster accumulation of wealth via saving (Knibbe 2014;
+Naidu 2017)." ([[zotero://open-pdf/library/items/YJ9TJDQH?page=29][Mason
+2018:29]])
+
+"Most stories that link rising debt to increased income inequality imply
+that the largest rises in debt should be found lower down the income
+distribution" ([[zotero://open-pdf/library/items/YJ9TJDQH?page=30][Mason
+2018:30]])
+
+"valuating this claim depends, of course, on where the distribution is
+divided." ([[zotero://open-pdf/library/items/YJ9TJDQH?page=30][Mason
+2018:30]])
+
+/[NOTE] This justify why using ABM model to discuss households
+indebtedness. ([[zotero://open-pdf/library/items/YJ9TJDQH?page=30][note
+on p.30]])/
+
+"Concretely, the rise in housing prices during the boom period tended to
+price lower-income households out of the housing market, offsetting the
+loosening of lending standards."
+([[zotero://open-pdf/library/items/YJ9TJDQH?page=31][Mason 2018:31]])
+
+"This is not surprising, when we recall that debt is mainly incurred to
+finance asset ownership."
+([[zotero://open-pdf/library/items/YJ9TJDQH?page=31][Mason 2018:31]])
+
+/This could be usefull to include in vec paoer.
+([[zotero://open-pdf/library/items/YJ9TJDQH?page=31][note on p.31]])/
+
+"First, household debt is mainly found in the upper-middle part of the
+income distribution. The majority of households in the bottom quintile
+report no debt, and this has been true of every year in the survey."
+([[zotero://open-pdf/library/items/YJ9TJDQH?page=33][Mason 2018:33]])
+
+"This is the natural result of the point stressed in section 2.1, that
+debt is incurred to finance asset ownership, not current expenditure."
+([[zotero://open-pdf/library/items/YJ9TJDQH?page=33][Mason 2018:33]])
+
+"Lack of assets among lower-income households is in part because they
+cannot get credit for these purchases; perhaps more important, all these
+purchases also involve significant out-of-pocket costs (down payments
+and so on)" ([[zotero://open-pdf/library/items/YJ9TJDQH?page=33][Mason
+2018:33]])
+
+"It is a less serious problem for stories like Cynamon and Fazzari
+(2015), which focus on the division between the top few percentiles and
+the bulk of the population."
+([[zotero://open-pdf/library/items/YJ9TJDQH?page=34][Mason 2018:34]])
+
+"Unlike the rest of the 1983-2013 period, this six-year stretch saw both
+a large increase in aggregate household debt and a downward shift in its
+distribution."
+([[zotero://open-pdf/library/items/YJ9TJDQH?page=34][Mason 2018:34]])
+
+"Finally, as discussed in section 3, there was no corresponding increase
+in aggregate demand from the household sector during this period (Mason
+and Jayadev 2015)."
+([[zotero://open-pdf/library/items/YJ9TJDQH?page=34][Mason 2018:34]])
+
+"The natural interpretation of these facts is that the mid-2000s' rise
+in household debt is not directly linked to income distribution but
+rather is explained by the housing bubble. Higher mortgage borrowing was
+both required and enabled by the rise in the prices of existing houses;
+increased mortgage borrowing in turn sustained the price rise (Mian and
+Sufi 2011)" ([[zotero://open-pdf/library/items/YJ9TJDQH?page=34][Mason
+2018:34]])
+
+"central claim in the debt-distribution-demand story is that
+lower-income households borrowed in order to maintain their expected
+standards of consumption, and/or to emulate the consumption of
+higher-income households. This implies that inequality in consumption
+should have increased by less than inequality in incomes."
+([[zotero://open-pdf/library/items/YJ9TJDQH?page=35][Mason 2018:35]])
+
+"Households normally report only cash outlays for consumption goods in
+the current period as consumption."
+([[zotero://open-pdf/library/items/YJ9TJDQH?page=36][Mason 2018:36]])
+
+"Most of these papers have found that changes in the distribution of
+consumption spending across income"
+([[zotero://open-pdf/library/items/YJ9TJDQH?page=36][Mason 2018:36]])
+
+"groups have generally tracked changes in the distribution of income."
+([[zotero://open-pdf/library/items/YJ9TJDQH?page=37][Mason 2018:37]])
+
+"If a mechanism is needed to explain rising consumption demand in the
+face of more unequal income in the period before 2007, it should focus
+on luxury consumption among the rich--- perhaps driven by a wealth
+effect from capital gains---rather than on debt-financed consumption
+among the bottom 95 percent."
+([[zotero://open-pdf/library/items/YJ9TJDQH?page=38][Mason 2018:38]])
+
+"The great majority of household debt is incurred to finance asset
+positions, not current consumption."
+([[zotero://open-pdf/library/items/YJ9TJDQH?page=40][Mason 2018:40]])
+
+"Consumption inequality appears to have increased in line with income
+inequality." ([[zotero://open-pdf/library/items/YJ9TJDQH?page=41][Mason
+2018:41]])
+
+"he debt-distribution-demand story is most plausible if it is limited to
+the 2000s housing boom, and to the top third of the income distribution.
+It is not plausible if applied to the long-term rise in debt, or to the
+income distribution as a whole."
+([[zotero://open-pdf/library/items/YJ9TJDQH?page=41][Mason 2018:41]])
+
+/Main message of the paper.
+([[zotero://open-pdf/library/items/YJ9TJDQH?page=41][note on p.41]])/
+
+"We cannot analyze balance sheet variables as if they simply recorded
+income and expenditure flows. As a corollary to this, we should keep in
+mind that debt is used mainly to finance assets; consumption loans are
+much more important in orthodox theory than in the real world."
+([[zotero://open-pdf/library/items/YJ9TJDQH?page=42][Mason 2018:42]])
+
+"With respect to the long-term rise in household debt: This is a
+monetary phenomenon. Fundamentally, it is the result of higher interest
+rates and lower real income growth and inflation."
+([[zotero://open-pdf/library/items/YJ9TJDQH?page=42][Mason 2018:42]])
+
+"An example of this is Germany, which has both the lowest levels of
+household debt and the lowest levels of household wealth in the euro
+area (European Central Bank 2013)"
+([[zotero://open-pdf/library/items/YJ9TJDQH?page=43][Mason 2018:43]])
+
+/Interesting ([[zotero://open-pdf/library/items/YJ9TJDQH?page=43][note
+on p.43]])/* Additional Backlinks
+
+* References

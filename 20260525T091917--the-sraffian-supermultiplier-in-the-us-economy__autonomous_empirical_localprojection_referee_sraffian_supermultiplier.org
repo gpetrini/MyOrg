@@ -1,0 +1,172 @@
+#+title:      The Sraffian Supermultiplier in the U.S. Economy
+#+date:       [2026-05-25 Mon 09:19]
+#+filetags:   :autonomous:empirical:localprojection:referee:sraffian:supermultiplier:
+#+identifier: 20260525T091917
+#+TAGS: context(c) theory(t) hypo(h) contrib(n) method(m) data(d)
+#+TAGS: results(r) discuss(s) critique(k) limits(l) future(f)
+#+TAGS: empirics(e) formal(o) sim(g) policy(p) lit(i)
+#+TAGS: insight(j) misc(x)
+
+
+* Specific notes
+:PROPERTIES:
+:NOTER_DOCUMENT: /home/gpetrini/Documents/Reviews/ROKE/2026-31/Original_Paper.pdf
+:NOTER_PAGE: 2
+:END:
+
+** Purpose, Relevance, and Contribution :contrib:
+:PROPERTIES:
+:NOTER_PAGE: (1 0.347472399767577 . 0.3037593984962406)
+:END:
+
+
+
+#+begin_quote
+estimates the cumulative Sraffian supermultiplier (p. 1)
+#+end_quote
+
+** Methodology :data:
+:PROPERTIES:
+:NOTER_PAGE: (1 0.3486345148169669 . 0.4443609022556391)
+:END:
+
+
+
+#+begin_quote
+U.S. econ-
+omy over the 1948 Q1–2024 Q4 (p. 1)
+#+end_quote
+
+** Methodology :contrib:method:
+:PROPERTIES:
+:NOTER_PAGE: (1 0.36839047065659497 . 0.3390977443609023)
+:END:
+
+
+
+#+begin_quote
+tests whether it varies with labor
+market conditions. (p. 1)
+#+end_quote
+
+** Methodology :method:
+:PROPERTIES:
+:NOTER_PAGE: (1 0.3805926786751888 . 0.4218045112781955)
+:END:
+
+
+
+#+begin_quote
+the local projection estimator, (p. 1)
+#+end_quote
+
+** Purpose, Relevance, and Contribution :contrib:method:results:
+:PROPERTIES:
+:NOTER_PAGE: (1 0.3829169087739686 . 0.41879699248120306)
+:END:
+
+
+#+begin_quote
+identifies autonomous
+demand shocks and assesses their dynamic effects on aggregate output over
+a five-year forecast horizon. (p. 1)
+#+end_quote
+
+#+BEGIN_QUOTE
+identifies autonomous
+demand shocks and assesses their dynamic effects on aggregate output over
+a five-year forecast horizon.
+#+END_QUOTE
+
+** Results :results:
+:PROPERTIES:
+:NOTER_PAGE: (1 0.4096455549099361 . 0.462406015037594)
+:END:
+
+
+#+begin_quote
+linear supermultiplier is positive and statis-
+tically significant at 3- and 4-year horizons, (p. 1)
+#+end_quote
+
+#+BEGIN_QUOTE
+linear supermultiplier is positive and statis-
+tically significant at 3- and 4-year horizons,
+#+END_QUOTE
+
+** Results :contrib:method:results:
+:PROPERTIES:
+:NOTER_PAGE: (1 0.45613015688553166 . 0.3022556390977444)
+:END:
+
+
+
+#+begin_quote
+State-dependent results reveal substantial
+heterogeneity. (p. 1)
+#+end_quote
+
+** Results :contrib:results:insight:
+:PROPERTIES:
+:NOTER_PAGE: (1 0.4723997675769901 . 0.31353383458646616)
+:END:
+
+
+#+begin_quote
+In periods of labor market slack, the supermultiplier exceeds
+unity and starts above 1.7; in tight labor market conditions, it falls rapidly
+toward zero. (p. 1)
+#+end_quote
+
+
+** Purpose, Relevance, and Contribution :contrib:
+:PROPERTIES:
+:NOTER_PAGE: (1 0.5142359093550262 . 0.21954887218045113)
+:END:
+
+
+#+begin_quote
+These findings provide the first systematic dynamic evidence on the Sraffian
+supermultiplier and connect it to the state-dependent fiscal multiplier literature. (p. 1)
+#+end_quote
+
+
+* Abstract
+
+#+BEGIN_ABSTRACT
+This paper estimates the cumulative Sraffian supermultiplier for the U.S. economy over the 1948 Q1–2024 Q4 period and tests whether it varies with labor market conditions.
+Using the local projection estimator, it identifies autonomous demand shocks and assesses their dynamic effects on aggregate output over a five-year forecast horizon.
+The linear supermultiplier is positive and statistically significant at 3- and 4-year horizons, with a declining profile over the forecast window, consistent with the gradual propagation predicted by the SSM multiplier-accelerator mechanism.
+State-dependent results reveal substantial heterogeneity.
+In periods of labor market slack, the supermultiplier exceeds unity and starts above 1.7; in tight labor market conditions, it falls rapidly toward zero.
+The gap is statistically significant at the 3- and 4-year horizons.
+These findings provide the first systematic dynamic evidence on the Sraffian supermultiplier and connect it to the state-dependent fiscal multiplier literature.
+#+END_ABSTRACT
+
+
+
+* FISH-5SS
+
+** 5SS
+
+** Background and motivation
+
+** Supporting Ideas and hypothesis
+
+** Purpose, Relevance, and Contribution
+
+** Methodology
+
+** Results
+
+** Interesting findings and not categorized stuff
+
+** Critics
+
+* Additional Backlinks
+
+
+- [[denote:20260526T144215][Review of Keynesian Economics]]
+- [[denote:20260526T144422][Journal Peer Reviews]]
+
+* References

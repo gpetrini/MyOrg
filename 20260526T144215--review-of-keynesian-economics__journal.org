@@ -1,0 +1,8 @@
+#+title:       Review of Keynesian Economics
+#+date:       [2026-05-26 Tue 14:42]
+#+filetags:   :journal:
+#+identifier: 20260526T144215
+
+#+BEGIN: denote-backlinks :excluded-dirs-regexp nil :sort-by-component nil :reverse-sort nil :id-only nil :this-heading-only nil :include-date nil :regexp "_journal"
+- [[denote:20260525T091917][The Sraffian Supermultiplier in the U.S. Economy]]
+#+END:

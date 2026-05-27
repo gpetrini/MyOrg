@@ -285,7 +285,7 @@ DADOS DO TOMADOR DE SERVIÇO
       - Ver texto Giba, Mark e Kim
 
 
-* HourInt: avanços e estado da implementação [2026-05-08 Fri]
+* HourInt: avanços e estado da implementação [2026-05-08 Fri] :noexport:
 
 
 ** Recapitulação
@@ -846,3 +846,147 @@ Várias equações em =fun_KS_worker.h= (linhas 21, 47, 136, 277, 293, 392, 424,
       - Trabalhadores que trabalham mais horas enviam menos aplicações (porque depende de horas trabalhadas)
         - Aumenta a probabilidade de permanecerem no mesmo setor
 - Da forma que está, horas não trabalhadas não tem impacto algum no modelo
+
+* HourInt: primeiros resultados [2026-05-27 Wed]
+
+** O que foi feito
+
+
+- Tentei, o máximo possível, tentar ter fallbacks para o modelo de referência (adiante)
+- Estou separando variáveis hora (salários são sempre em hora) e variáveis de jornada são computadas depois
+- Inclusão de variáveis em termos de jornada ao longo de todo o modelo
+  - Existe uma assimetria setorial porque o setor de bens de capital não tem individualização/identificação de trabalhadores.
+- Foram adicionadas novas variáveis para capturar margem extensiva e intensiva
+  - part :: Taxa de participação usual (por cabeça)
+  - partH :: Taxa de participação em termos de horas
+  - partGap :: TODO Document
+- Também serão computadas medidas de desigualdade para salário-hora, salário-jornada e horas
+- Adicionada nova regra de demissão (a ser modificada)
+  - Demite em retração de forma extensiva (sem ajuste no número de horas)
+    - Se um parâmetro for positivo, faz um ajuste endógeno entre todos os funcionários (HELP discutir) com intensidade regulada por este parâmetro
+      - TODO Adicionar regra
+        - Significa um compartilhamento entre os trabalhadores da redução da jornada para que todos se mantenham no emprego (pode ser desligado)
+      - Mecanismo similar aplicado aos salários (chamada regra Alemã)
+  - Pensado para priorizar demissão de temporários, mas essa implementação está incompleta (HELP discutir religada dos skills)
+- Adicionada informação de trabalhadores temporários/permanentes
+  - Atualmente, todos são permanentes (leia-se, não há distinção) com contrato com duração de um período de produção
+  - Sendo assim, não há diferença entre os dois, mas é planejado que exista alguma hierarquia a ser discutida (HELP)
+  - Temporários e permanentes podem ter contratos com duração distinta
+- Adicionados objetos necessários para ordenação em termos de horas e salário-jornada para demissão, contratação (entre trabalhadores e entre firmas)
+  - Precisamos discutir qual ordenação fará mais sentido (HELP)
+  - Atualmente, usar qualquer uma que utilize horas produzirá um ordenamento aleatório
+- Mecanismo de renovação contratual (=_reOffer2=): firma re-oferta contrato (=_HDes2= e =_w2o=, ambos atualizados) a trabalhadores permanentes todo período.
+  - Saída voluntária do trabalhador sem penalidade (hipótese ASSUMPTION); demissão involuntária paga indenização =phiFire × w_prev × H_prev= (acordo anterior à renovação), acumulada em =_fireCost2= via =_fires2=.
+  - Lógica de aceitação do trabalhador (=_acceptOffer2=) adiada para FUTURE[HourBarg]. =phiFire=0= em HourInt (2026-05-14)
+  - Atualmente, não tem efeito algum
+  - Alternativamente, pode-se forçar que o trabalhador inclua a firma que atualmente trabalha na lista a qual irá enviar as aplicações
+- Adicionado período em que a renda total é ao menos preservada (não impede de aumentar) durante a implementação da redução da jornada
+  - O número de períodos que esse piso existe é parametrizado (=10)
+  - Piso de manutenção de renda em =wU= ativo e desacoplado de firmas: =wU= agora aplica piso independente de decisões das firmas
+  - Piso é válido para os dois setores e exclui entrantes (firmas e trabalhadores)
+- Ponderação de variáveis também pondera pelas horas trabalhadas quando pertinente
+  - Isso evita que salários-hora elevados (mas com contratação de horas reduzidas) tenham um peso muito grande nas métricas
+    - Como são utilizadas em outras variáveis, isso poderia gerar um viés
+- Contabilidade SFC da indenização: =fireCost1=/=_fireCost2= adicionados a como salário diferido
+  - Trabalhadores permanentes demitidos recebem indenização (via =W=) + seguro-desemprego (via =G=);
+  - temporários recebem só seguro-desemprego.
+  - Questão em aberto: indenização no custo unitário =_c1=/_c2=? (imagino que não)
+- Novas variáveis de oferta de horas em =Ls=:
+  - =LsPotH=: força de trabalho potencial = horas efetivas dos empregados + horas desejadas dos desempregados (substitui =LsH= como gatilho de crescimento populacional [desativado])
+  - =LsHGap= (potencial de horas extras) - TODO detalhar
+  - =LsHUnder= (brecha de sub-emprego de horas) - TODO detalhar
+    =LsHOver= (horas extras involuntárias acima de =_HDes=)
+  - Todas neutras em HourInt; robusta para HourBarg
+- Atualizei e corrigi os testes SFC
+- =testTrigger= adicionado para detectar picos em desemprego (>5 pp), massa salarial (>10%), crédito (>5×SFCTHRD do PIB nominal) e entrada+saída de firmas (>10% do setor 1 ou 2); força outros testes mais detalhados
+- Preparando código para a situação em que os trabalhadores podem ser alocados em mais de uma vintage
+  - Requer algumas decisões (HELP) em que a volta dos skills pode ajudar
+  - Quem alocar e para onde alocar? Qual vintage é priorizada e em que intensidade?
+  - Todos os trabalhadores trabalham pela jornada decidida pela firma
+    - Horas vão sendo alocadas entre as vintages de forma a esgotar as horas "restantes" de cada trabalhador
+  - Superestima deliberadamente o número de contratações para garantir cobertura da lacuna de capacidade; o excedente é absorvido pela margem intensiva em =__Qvint= (via redução implícita de =_Hemployed=, futuramente via =__HwrkV=); neutro em HourInt (2026-05-19)
+    - Resultado dos arredondamentos pelo número de trabalhadores ser discreto
+  - Permite computar subutilização da vintage também em termos de horas (não apenas em termos de produção)
+- Resultados: =flagSearchModeChg= e =omegaPosChg= neutralizados em todos os configs HourInt/Scen (HourInt1, HourInt1_RefFlags, RefMirror, Scen1–3): valores ajustados de forma que =regChg= em =TregChg= não altera o regime de busca de emprego
+  - =omega= controla o número médio de candidaturas enviadas por trabalhadores *empregados* em firmas pós-mudança; =omegaPosChg=5= ativaria a busca no emprego (on-the-job search) junto com =flagSearchModeChg=0= (busca irrestrita), com efeito significativo sobre o desemprego via competição de trabalhadores já empregados.
+  - A neutralização mantém o regime de busca inalterado (somente desempregados buscam, =flagSearchMode=1=) durante toda a simulação, garantindo que a única diferença entre Scen1/2/3 seja a trajetória de =NormHours=.
+  - Acho interessante reativar search on the job
+- Existem três simulações:
+  - Scen1 :: Sem WTR
+  - Scen2 :: Com WTR abrupta (once-for-all)
+  - Scen3 :: Com WTR gradual (linear, mas curvatura é parametrizada)
+- Importante: Divergências em relação ao modelo de referência
+  - Divergência na casa de 25% da primeira variável (cerca de T=16) com efeitos em cascata depois
+  - Divergência pode ser puramente técnica (dependendo do ordenamento) ou de especificação
+    - Imagino que sejam ambos
+    - Resultado ideial seria divergência próxima de zero antes de WTR
+
+** Para discutirmos
+
+
+- Reativação de habilidades (=_s=, =_sT=, =_sV=): escopo limitado a alocação por vintage
+  (=_alloc2=, =sV2avg=) e ordem de demissão/re-oferta (=_fires2=, =_reOffer2=).
+  - Salários e aceitação de vagas permanecem independentes de habilidades
+  - Ordem por =_sT= bruto ou =_s= composto?
+  - Interação com =isTemp=?
+  - Isso vai ser útil para a firma decidir quem será contratado como temporário ou permanente (adiante)
+- Critério de classificação de trabalhador como temporário:
+  - É necessário definir as regras pelas quais uma nova contratação recebe contrato temporário (=_isTemp=1=, =_Tc=TcTemp=) em vez de permanente.
+    - Candidatos:
+      - discrição da firma com base no tipo de vaga ou gap de capacidade;
+      - limiar de tenure/habilidade do trabalhador;
+      - regra uniforme controlada por =flagHireTemp=.
+      - Razão fixa entre temporário e permanente?
+      - Aumenta temporário só se aumentar tendência da demanda?
+      - Como fazer na demissão?
+        - Mais fácil demitir funcionarios temporários, mas isso pode afetar a combinação (se existir) desejada da firma
+  - A decisão afeta a elegibilidade à reoferta (=_reOffer2=), o custo de demissão (=phiFire= não se aplica a =_isTemp=1=) e a lógica de compartilhamento de horas com =rhoH>0=.
+- Denominador das taxas de desemprego — =LsH= vs. =LsPotH=:
+  - Atualmente =LsH= (soma das horas desejadas de todos os trabalhadores) é o denominador para as taxas de desemprego. Contudo, =LsPotH= (horas efetivas dos empregados + horas desejadas dos desempregados) é mais coerente com a definição de força de trabalho potencial usada no gatilho de crescimento populacional (atualmente desempregado).
+  - Implicações:
+    - (a) com =LsH=, um trabalhador em sub-emprego aparece como parcialmente empregado no denominador e nenhuma brecha de horas no numerador → subestima a taxa;
+    - (b) com =LsPotH=, o denominador já reflete horas efetivas dos empregados, então a taxa de horas vaga mede apenas os desempregados.
+  - Qual denominador é mais adequado para a política de WTR?
+- Decomposição =part= vs =partH= vs =partGap= para análise de WTR:
+  - =part= (margem extensiva: ocupados + buscando emprego / Ls),
+  - =partH= (margem intensiva: horas trabalhadas totais / horas potenciais)
+  - =partGap = part - partH= (diferença extensiva menos intensiva).
+  - Justificativa: uma redução de jornada pode elevar =part= (mais entrantes no mercado) ao mesmo tempo em que reduz =partH= (menos horas por trabalhador ocupado), alargando =partGap=.
+    - A interpretação de =partGap= faz sentido? Se sim, é uma variável comum na literatura?
+    - =LsH= (todas as horas desejadas) é o denominador correto para =partH=, ou deve se restringir apenas a ocupados + buscando (análogo ao denominador de =part=)?
+- Devemos ativar on-the-job search agora ou esperar ter horas heterogêneas?
+  - Busca de emprego com vínculo ativo (on-the-job search) para demissões voluntárias:
+    - Trabalhadores que rejeitam uma reoferta ou recebem condições piores deveriam poder buscar emprego enquanto ainda empregados, em vez de precisar se desligar antes.
+      - Não está decidido se o mesmo mecanismo deve se aplicar de forma simétrica a temporários e permanentes
+    (ex.: trabalhadores temporários podem ter menor vínculo e buscar mais ativamente).
+- Salário de reserva e satisfatório por oferta em HourBarg (=_wR=, =_wRes=, =_wS=, =fun_KS_worker.h=):
+  - Com jornadas heterogêneas, os trabalhadores podem comparar renda por período em vez de salário horário ao avaliar ofertas de emprego.
+    - =_wR= deve ser recalculado por oferta como =_w × _Hemployed / H_offer=?
+    - =_wRes= deve se tornar =wU × NormHours / H_offer= (mínimo horário garantindo renda = benefício)?
+    - =_wS= deve ser calculado por oferta como =renda_acumulada / (Ts × H_offer)=?
+  - Decisão afeta =_appl= e a lógica de ordenação (=flagHireOrder=).
+- Alocação parcial por vintage?
+  - Qual vintage e qual trabalhador devem ser priorizados?
+  - Interação com =isTemp=?
+- Definição de jornada de trabalho para firmas do setor de capital:
+  - Firma deve ter =_HDes1= próprio (análogo a =_HDes2= no setor 2), ou herdar =NormHours= do setor?
+  - Existe uma jornada mínima que garanta a entrega do maquinário (i.e., ≥1 máquina por período)?
+  - Decisão afeta =entry_firm1= e o cálculo de =_c1=, =_RD= e =_L1rd= na entrada.
+- Rastreamento por firma de contratações/demissões no setor 1 (bens de capital):
+  - As variáveis por firma =_hires1H=, =_fires1H=, =_fireCost1= e =_reOffer1= *não são viáveis* na estrutura atual porque os objetos =Wrk1= vivem diretamente sob =Capital= (não sob =Firm1= individual) e =hire_worker()= para sec=1 não armazena ID da firma no objeto trabalhador.
+  - Alternativas:
+    - (a) adicionar campo =Firm1 ID= em =Wrk1= via =hire_worker()=;
+    - (b) redesenho da hierarquia de objetos para colocar =Wrk1= sob =Firm1=.
+  - Adiado para FUTURE[HourBarg].
+- Indenização no custo unitário (não incluído): A indenização por demissão (=fireCost1=, =_fireCost2=) deve entrar no custo unitário de produção?
+  - Atualmente, o custo unitário é apenas custo de mão de obra; a indenização flui pelo lucro (=Pi=) e pela renda das famílias (=W=).
+  - A inclusão no custo unitário seria relevante para cenários de WTR com afastamentos por doença ou transições de jornada reduzida, onde demissões são acionadas por ajuste de demanda.
+- Duração do treinamento público sob WTR (atualmente desativado):
+  - =LtrainH= usa =NormHours= como proxy da jornada de treinamento.
+  - Em HourBarg, o treinamento deve cobrir a jornada desejada (=_HDes=) ou a norma institucional reduzida (=NormHours=)?
+  - Se a WTR reduz =NormHours=, trabalhadores podem demandar treinamento pela jornada preferida — a política de treinamento do governo deve especificar isso explicitamente.
+  - Impacto em =Gtrain= (custo) e equidade entre trabalhadores com jornadas desejadas heterogêneas.
+
+
+
+** O que foi obtido

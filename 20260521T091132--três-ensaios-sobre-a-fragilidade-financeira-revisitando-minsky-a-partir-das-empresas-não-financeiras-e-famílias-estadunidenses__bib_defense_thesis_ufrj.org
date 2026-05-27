@@ -8,14 +8,671 @@
 #+TAGS: empirics(e) formal(o) sim(g) policy(p) lit(i)
 #+TAGS: insight(j) misc(x)
 
-* Capítulo 1: Empresas Ponzi condenadas a perecer? Uma análise para as empresas americanas (1970-2024)
+
+* Introdução Geral e Estrutura da Tese
+
+A tese propõe operacionalizar e testar empiricamente a Hipótese de Instabilidade Financeira (HIF) de Minsky para dois setores da economia estadunidense — empresas não-financeiras e famílias — e investigar a inter-relação entre as posições financeiras desses dois setores institucionais.
+A estrutura teórica é a taxonomia Hedge/Especulativo/Ponzi de Minsky, transposta para dados empíricos por meio de indicadores de fluxo de caixa e serviço da dívida.
+
+A tese possui unidade temática: os três ensaios partem da HIF e da taxonomia de posições financeiras.
+A coerência metodológica entre os ensaios é, contudo, parcial.
+- [ ] Os períodos amostrais diferem entre os ensaios — 1970–2024 (Ensaio I), 1989–2019 (Ensaio II) e 1989–2022 (Ensaio III) — sem justificativa para as diferentes fronteiras temporais.
+- Os Ensaios I e II operam com microdados (firmas e famílias, respectivamente), enquanto o Ensaio III utiliza índices agregados construídos a partir das mesmas bases, sem equacionar os problemas de agregação que essa passagem do micro para o macro implica.
+
+
+
+** Pontos Fortes
+
+A tese apresenta contribuições em três dimensões.
+
+1. Operacionalização sistemática da taxonomia minskyana (Hedge/Especulativo/Ponzi) em duas bases de dados distintas (Compustat/CRSP e SCF), cobrindo um período de três a cinco décadas.
+   - Essa operacionalização constitui uma contribuição metodológica para a literatura empírica que carece de trabalhos com dados estadunidenses nessa escala temporal.
+2. O Ensaio III representa uma tentativa de articulação setorial entre fragilidade financeira das firmas e das famílias, perspectiva sub-explorada na literatura minskyana empírica, que tende a tratar os setores de forma isolada.
+3. O Ensaio I aplica metodologia (logit EF + Heckman) pertinente ao problema de seleção amostral (com justificativa formal por Hausman)
+
+** Fragilidades Centrais
+
+As fragilidades agrupam-se em três dimensões transversais.
+
+*** Metodológica
+
+- A não-significância de D_Ponzi isolado na amostra principal (Ensaio I) compromete o suporte à hipótese central.
+- A ausência de inflação de ativos no Ensaio II é lacuna relevante para a análise da fragilidade das famílias estadunidenses
+# - O case-only design do Ensaio I compromete a representatividade das estimativas.
+# - A interpolação do SCF no Ensaio III invalida os testes de diagnóstico do VAR.
+# - A hipótese de amortização Price no Ensaio II produz classificações distorcidas para produtos de dívida não-convencionais (ARM, IO).
+
+*** Coerência entre ensaios
+
+- A definição de posição Ponzi não é padronizada entre os três ensaios.
+- Os períodos amostrais diferem sem justificativa.
+- A passagem da análise micro (Ensaios I e II) para a análise macro (Ensaio III) não equaciona os problemas de agregação implícitos na transição.
+  - Mas ao menos menciona (tardiamente) a crítica de falácia de composição
+
+*** Inferência :noexport:
+
+- O Ensaio II não quantifica a incerteza amostral das comparações entre estratos.
+- O Ensaio III realiza inferência com graus de liberdade insuficientes para um VAR de 34 observações.
+- O Ensaio I apresenta poder discriminatório próximo ao aleatório na ROC, sem qualificação das afirmações causais.
+- Direção da FIR no Ensaio III: apresentar uma interpretação da FIR na direção oposta à hipotesada e as implicações para a hipótese central da tese.
+
+** Sugestões de Melhoria
+
+*** Ensaio I
+
+- Separar a variável dependente em falência e M&A, estimando-as como desfechos distintos (logit multinomial ou dois modelos binários independentes).
+- Considerar modelos de sobrevivência (Cox) como especificação alternativa, mais adequada ao problema de tempo até mortalidade com censura à direita.
+# - Discutir o problema de endogeneidade de D_Ponzi e sua distinção do problema de seleção amostral tratado pelo Heckman.
+# A inclusão de =holder.eq.ratios= e =liq= como controles é insuficiente para tratar essa endogeneidade.
+
+
+*** Ensaio II
+
+- Adicionar intervalos de confiança bootstrap aos indicadores de posição financeira por decil de renda.
+- Discutir a limitação da periodicidade trianual para a captura da dinâmica da crise de 2008.
+
+
+*** Ensaio III
+
+- Apresentar os resultados do VAR com qualificação dos graus de liberdade.
+- Qualificar a hipótese central à luz da FIR observada.
+- Corrigir a inconsistência editorial na denominação da tabela ("VAR(3)" vs. "VAR(2)").
+
+*** Transversais
+
+- Incluir tabela comparativa das definições operacionais de Ponzi nos três ensaios.
+- Incluir [cite/t:@tymoigne_2011_measuring] como referência metodológica para índices de fragilidade.
+- Incluir [cite/t:@godley_2007_monetary; @godley_1999_seven]  como referência para análise de co-evolução de posições setoriais.
+- Detelhar mais fundamentação para a transposição da HIF de Minsky às famílias (Minsky original reservava o mecanismo para firmas e bancos).
+- Incluir a falácia de composição — [cite:@lavoie_2001_minskys] — como crítica teórica à HIF que a tese menciona apenas no Ensaio III, mas que é pertinente aos três.
+- Qualificar "A última grande crise foi o Subprime de 2008" na introdução — verdadeiro se restrito à crise financeira.
+# - Incluir discussão sobre a distinção entre fragilidade de fluxo e de estoque. (CHECAR)
+
+
+
+
+* Ensaio I: Empresas Ponzi Condenadas a Perecer? (1970–2024)
+
+
+
+** Descompasso entre hipótese testada e variável significativa
+
+A cadeia declarada é a seguinte.
+- Hipótese :: /existe uma relação positiva entre a probabilidade de mortalidade e a situação Ponzi/.
+- Modelo teórico :: a restrição de sobrevivência minskyana implica que a posição Ponzi corresponde ao limite da viabilidade institucional.
+- Conclusão alegada :: /empresas que permanecem Ponzi por dois anos, mesmo com o aumento de sua liquidez, têm maiores chances de saírem do mercado, corroborando assim nossa hipótese inicial/.
+
+A cadeia executada difere da cadeia declarada em três pontos.
+
+1. Na amostra principal, D_Ponzi contemporâneo não é estatisticamente significante.
+   1. A hipótese declarada — relação direta entre posição Ponzi e mortalidade — não encontra suporte no coeficiente da variável de tratamento principal.
+2. Suporte à hipótese é deslocado para a interação D_Ponzi × D_Ponzi_{t-1} × liq, estimada sobre uma amostra restrita (apenas firmas que morreram em algum momento).
+   1. O objeto efetivamente testado nessa especificação não é a relação Ponzi → mortalidade na população, mas a relação persistência-Ponzi × liquidez → mortalidade entre firmas que morreram.
+3. A conclusão equipara mecanicamente "persistência Ponzi com aumento de liquidez ⇒ mortalidade" a "Ponzi ⇒ mortalidade", o que requer dois passos não-justificados: (a) tratar a persistência como equivalente à posição Ponzi isolada; (b) ignorar a restrição amostral.
+
+A cadeia executada:
+
+- A interação D_Ponzi × D_Ponzi_{t-1} é teoricamente mais próxima da definição de empresa zumbi (Ponzi persistente que sobrevive) do que do mecanismo minskyano de mortalidade.
+- A relevância empírica dessa interação, em conjunto com a não-significância de D_Ponzi isolado, é mais compatível com a hipótese contrária à da tese: empresas Ponzi persistentes /sobrevivem/ como zumbis (a literatura citada pelo próprio autor), e a mortalidade decorre de condições conjunturais (liquidez) que afetam mesmo as firmas zumbis.
+
+
+** Avaliação Econométrica
+
+*** Contexto
+
+O Ensaio I utiliza um modelo logit em painel com efeitos fixos (EF) para estimar a probabilidade de mortalidade de empresas não-financeiras listadas em bolsa, condicionada à posição financeira Ponzi.
+O teste de Hausman (χ² = 186,78; p ≈ 0) justifica a preferência pelos efeitos fixos frente a efeitos aleatórios.
+O procedimento de Heckman (dois estágios) é empregado para corrigir seleção amostral, e o coeficiente da Razão Inversa de Mills (IMR) é reportado como não-significativo na amostra completa e negativo e significativo na amostra restrita.
+
+
+- A hipótese é formulada de forma clara na introdução do ensaio.
+- A estratégia empírica é descrita com nível de detalhe razoável.
+- A discussão dos resultados da amostra restrita é insuficiente para justificar as conclusões apresentadas.
+- A inconsistência no coeficiente de liq não é examinada explicitamente no corpo do texto.
+
+
+
+*** [#A] Restrição amostral
+
+Para o modelo com a interação D_Ponzi × liq, o autor restringe a amostra às empresas que morreram em algum momento.
+Essa restrição configura um problema de /selection on the dependent variable/ (case-only design).
+As estimativas produzidas nessa amostra restrita não são representativas da população de empresas.
+
+
+- Condicionar em Y = 1 impede a recuperação da probabilidade incondicional de mortalidade.
+  - A regressão passa a estimar Pr(morte | Y = 1) e não Pr(Y = 1 | Ponzi).
+  - A pergunta respondida é metodologicamente distinta da hipótese original.
+
+
+O problema de viabilidade surge na amostra restrita: restringir a análise às empresas que morreram em algum momento não é defensável como proxy de um estimador de tratamento.
+Uma alternativa mais adequada seria um modelo de sobrevivência (Cox, Weibull) que acomode a censura à direita das empresas sobreviventes, ou um estimador de diferenças-em-diferenças com tratamento pela posição Ponzi.
+
+
+
+*** [#A] Sinal de Ponzi x Liq
+
+A interação =D_Ponzi × liq= no modelo de EF da amostra restrita tem coeficiente =-0,363*=.
+O sinal negativo significa que /o efeito marginal da liquidez sobre a probabilidade de mortalidade é menor para empresas Ponzi do que para não-Ponzi/.
+- Em termos teóricos: liquidez protege mais firmas Ponzi do que firmas Hedge, /reduzindo/ a probabilidade adicional de mortalidade quando a firma é Ponzi.
+- O texto interpreta esse resultado como "empresas que permanecem Ponzi com aumento de liquidez têm maiores chances de saírem do mercado" — interpretação que /inverte/ o que o coeficiente da interação efetivamente indica.
+  - O efeito positivo total decorre exclusivamente do coeficiente errado de =liq= isolado (=+1,253***=) — não da interação.
+
+Bancos ajustam endogenamente a concessão de crédito conforme a fragilidade financeira da firma.
+Firmas frágeis que /não/ recebem refinanciamento morrem; firmas frágeis que /recebem/ refinanciamento sobrevivem como zumbis.
+A inclusão de =holder.eq.ratios= e =liq= como controles é insuficiente para tratar essa endogeneidade.
+
+
+*** [#A] Sinal da liquidez (positivo)
+
+Maior liquidez, na amostra restrita, eleva a probabilidade de mortalidade — resultado que contradiz a teoria e não recebe discussão no texto.
+Duas interpretações são possíveis:
+a) seleção adversa dentro da amostra restrita, na qual empresas com liquidez que morreram constituem um subgrupo não-representativo;
+b) multicolinearidade entre liq e a interação D_Ponzi × liq.
+
+A interpretação central do ensaio repousa sobre a interação, mas os componentes D_Ponzi e liq apresentam sinais que contradizem a teoria quando isolados, o que sinaliza possível problema de especificação.
+
+
+=liq= tem sinal positivo (=+1,253***=) na amostra restrita, contrário à teoria, sem discussão.
+- O sinal esperado é negativo (mais liquidez ⇒ menor probabilidade de mortalidade).
+- O sinal estimado é positivo e altamente significativo em todas as especificações (Pooled, EF, EA).
+  - O texto reconhece a anomalia apenas em uma frase ("as exceções são =holder.eq.ratios=, =D_high_end= e =liq=") mas não a investiga.
+  - Esse é o coeficiente que produz o resultado central do ensaio (via o "264%"), o que faz da anomalia um problema de primeira ordem.
+
+
+*** [#A] Significância da alavancagem
+
+=Lev= não-significativo na amostra principal EF (=-0,089=), contrário à teoria.
+- A alavancagem deveria ser preditora central da mortalidade em uma análise minskyana.
+  - Na amostra principal, =Lev= não é estatisticamente diferente de zero e tem sinal negativo.
+  - Só na amostra restrita o sinal vira positivo (=+0,318***=) — outra anomalia condicionada à restrição amostral.
+
+
+
+*** [#B] Sinal EBITDA
+
+=D_neg_ebitda= tem sinal NEGATIVO (-0,155**) na amostra principal EF, contrário à teoria.
+- Firmas com EBITDA negativo deveriam ser MAIS propensas a morrer, não menos.
+  - O sinal correto aparece apenas na amostra restrita (=+0,212***=).
+  - A inversão do sinal entre amostras não é discutida.
+
+
+*** [#B] Não-monotonicidade nos quartis de tamanho (=D_Sale_q=1=, =q=2=, =q=4=).
+
+Com =q=3= como categoria de referência (presumida), o esperado seria: =q=1= (menores) com maior coeficiente positivo, =q=2= positivo menor, =q=4= negativo.
+- O estimado em EF principal: =D_Sale_q=1 = 0,361*=, =D_Sale_q=2 = 0,470***=, =D_Sale_q=4 = -1,144***=.
+  - Ou seja, o segundo quartil tem /maior/ probabilidade de mortalidade do que o primeiro (menor) quartil — não-monotonicidade que contradiz a literatura sobre demografia de firmas.
+  - O texto não aborda esse padrão.
+
+*** [#B] Várias mudanças simultâneas
+
+O texto afirma (p. 32) que
+
+#+begin_quote
+para um aumento de 1 p.p. no coeficiente de liquidez, estima-se que as empresas que permanecem Ponzi ao longo de dois anos apresentam uma probabilidade 264% maior de mortalidade do que a categoria de referência
+#+end_quote
+
+A categoria de referência é definida como /"não-Ponzi por dois anos consecutivos"/.
+O cálculo do 264% corresponde a =exp(0,138 + 0,094 + 0,172 + 1,253 - 0,363) - 1 ≈ 263%=, que é o efeito combinado de cinco mudanças simultâneas:
+(a) =D_Ponzi(t)= passar de 0 para 1;
+(b) =D_Ponzi(t-1)= passar de 0 para 1;
+(c) ativação da persistência =D_Ponzi(t) × D_Ponzi(t-1)=;
+(d) aumento de uma unidade em =liq=;
+(e) ativação da interação =D_Ponzi × liq=.
+Atribuir esse efeito a uma /única/ mudança de 1 p.p. em liquidez é uma deturpação interpretativa.
+O resultado não representa um efeito marginal isolado da liquidez, mas sim um contraste conjunto entre regimes financeiros distintos condicionado pelas interações do modelo.
+
+Mais importante:
+- Como há interação entre liquidez e posição Ponzi contemporânea, o efeito marginal da liquidez não é constante entre os grupos. Para firmas Ponzi, o impacto marginal da liquidez sobre as probabilidades (log-odds) de mortalidade é menor do que para firmas não-Ponzi.
+  - Isso talvez reflita, novamente, a endegeneidade da concessão de crédito (concede crédito para aquelas que não irão falir e, portanto, não falem)
+
+
+*** [#B] Heterogeneidade da variável dependente
+
+A "mortalidade" empresarial agrega falência, cancelamento de registro e fusão/aquisição (M&A).
+- M&A não é evidência de fragilidade financeira.
+  - Amalgamar M&A com falência na variável dependente introduz heterogeneidade
+  - A inclusão de fusões e aquisições como formas de “mortalidade” institucional parece conceitualmente problemática, sobretudo porque M&A não implica necessariamente fracasso econômico.
+
+
+*** [#B] Não-siginificância de D_Ponzi isolado
+
+Na amostra principal, D_Ponzi contemporâneo não é estatisticamente significante — apenas a interação D_Ponzi × liq e a persistência Ponzi (D_Ponzi × D_Ponzi_{t-1}) o são, e apenas na amostra restrita.
+A hipótese central — relação positiva entre posição Ponzi e mortalidade — não encontra suporte no coeficiente principal.
+O ensaio sustenta a hipótese pelo coeficiente de uma interação estimada sobre uma amostra restrita não-representativa.
+O texto não problematiza essa distinção.
+
+
+*** [#B] Ausência de dummies temporais
+
+- O painel logit com efeitos fixos de firma não inclui efeitos temporais (dummies de ano).
+  - Essa omissão impede controlar para choques macroeconômicos comuns a todas as firmas em cada período — precisamente o componente cíclico que a HIF prediz como determinante da mortalidade.
+  - Mudanças macroeconômicas podem ser o suficiente para fazer com que firmas passem de outras posições para Ponzi
+    - Na ausência de controles temporais, pode misturar se tornar Ponzi por questões à nível da firma por com deteriorações macro
+    - A dummy de recessão não capta, por exemplo, mudanças mais graduais e/ou regulatórias
+      - Mais importante, não captura ciclos de liquidez e de política monetária (que poderiam ser importantes para a HIF)
+      - Dito de outro modo, a hipótese é que os anos não-recessivos são equivalentes
+
+
+*** [#C] Poder discriminatório do modelo
+
+- O pseudo-R² de McFadden é de 0,047, valor que o autor reconhece como reduzido.
+- Um modelo com poder discriminatório próximo ao aleatório, então a evidência se torna enfraquecida (via ROC, não R2)
+  - Não é verdade que é próximo do aleatório (qual a AUC?), mas com baixa capacidade preditiva
+
+
+*** [#C] Endogeneidade de D_Ponzi
+
+A posição Ponzi pode ser resultado, e não causa, de condições que também predispõem à mortalidade — um problema de causalidade reversa.
+- A variável Ponzi pode estar capturando outras variáveis altentes que também causam mortalidade
+  - Var Latente $\Rightarrow$ Ponzi, mas Latente $\Rightarrow$ Mortalidade também
+  - Sendo este o caso, pode ser que ser Ponzi não seja a causa da mortalidade, mas um sintoma
+- Bancos ajustam a concessão de crédito de forma endógena à situação financeira da firma: firmas frágeis que não recebem crédito morrem, mas firmas frágeis que recebem crédito sobrevivem como zumbis.
+  - O procedimento de Heckman corrige seleção amostral na equação de entrada no painel, mas não endogeneidade da variável de tratamento D_Ponzi.
+O texto não distingue esses dois problemas.
+
+
+
+*** [#C] Confusão entre coeficiente logit e marginal effect com unidade.
+
+O texto interpreta os coeficientes do logit como variações percentuais para "1 ponto percentual" (p.p.) das variáveis explicativas (p. XX).
+Para variáveis em base de proporção (e.g., =sale.at=, =share.sale=, =liq=), 1 p.p. corresponde a uma variação absoluta de 0,01.
+A elasticidade reportada (e.g., "probabilidade 99,96% menor para 1 p.p. em =share.sale=") é o exponencial do coeficiente bruto (exp(-10,28) - 1 ≈ -99,997%=), ou seja, o efeito de uma variação de UMA UNIDADE em =share.sale=, não de 1 p.p. Para 1 p.p., o efeito correto é =exp(-10,28 * 0,01) - 1 = exp(-0,103) - 1 ≈ -9,8%=. A magnitude reportada é cerca de 100 vezes maior do que a magnitude correta. O mesmo erro afeta a interpretação de =Lev=, =sale.at=, =D_high_end= e a interação =D_Ponzi × liq=.
+
+*** [#C] Ausência de dummies temporais em EF, com USREC simultaneamente fora do EF.
+
+A tabela mostra =USREC= estimado em Pooled e EA, mas ausente em EF (=USREC= é constante no tempo para todas as firmas em cada ano e seria absorvido pelos efeitos temporais se houvesse).
+Como o EF não inclui dummies de ano explícitas e nem =USREC=, o modelo /não controla pelo ciclo macroeconômico/ — o componente que a HIF prediz como central para a transição Ponzi→mortalidade.
+- A interação =REC × Sale_{q=1}= é mantida, o que cria assimetria: o ciclo afeta apenas pequenas firmas, mas não as demais.
+
+
+** Consistência Lógica e Teórica
+
+*** Hipótese central e qualificação da pergunta
+
+A hipótese central — de que empresas em posição Ponzi têm maior probabilidade de mortalidade — tem suporte na teoria de Minsky.
+A revisão de literatura do próprio ensaio, porém, apresenta evidências de "empresas zumbis" e de reversão da fragilidade financeira, o que implica que a posição Ponzi não necessariamente converge para mortalidade.
+A hipótese deveria ser formulada com maior precisão quanto ao escopo: entre quais tipos de mortalidade (falência vs. M&A) e sob quais condições (liquidez de mercado, ciclo de crédito) a posição Ponzi predispõe à saída do mercado.
+
+A literatura econométrica sobre modelos de sobrevivência (Shumway, 2001; Cox) e análise de duração, metodologicamente pertinente para o problema de pesquisa, não é citada.
+
+*** Variáveis heterogêneas
+
+A agregação de variáveis heterogêneas (falência, M&A) na variável dependente é incompatível com a lógica teórica do argumento minskiano, para o qual a irreversibilidade da deterioração financeira implica insolvência, não necessariamente saída por fusão.
+
+
+*** Ponzi ou Zumbis?
+
+A operacionalização da persistência Ponzi (D_Ponzi × D_Ponzi_{t-1}) como variável central do modelo assemelha-se mais a uma proxy de empresa zumbi do que a um teste da hipótese de mortalidade Ponzi.
+Se a persistência Ponzi descreve firmas que sobrevivem sem honrar compromissos (zumbis), a interação com liquidez pode estar capturando a sobrevivência subsidiada por crédito bancário, não a deterioração financeira que leva à mortalidade.
+Essa reinterpretação, se correta, inverteria a leitura dos resultados: o modelo estaria identificando as condições de sobrevivência de zumbis, não as condições de mortalidade de firmas Ponzi.
+
+
+Esse reconhecimento, porém, não é integrado à hipótese testada: a persistência de empresas Ponzi (zumbis) é evidência contrária à hipótese do ensaio, e o texto não revisita a hipótese à luz dessa tensão.
+
+*** Reversão da posição Ponzi
+
+Os determinantes da reversão da posição Ponzi para posições menos frágeis são tão relevantes para a HIF quanto os determinantes da mortalidade, mas não são explorados no ensaio.
+
+
+
+** Síntese Crítica do Ensaio I
+
+- Os pontos de mérito são: a base de dados (Compustat/CRSP), a operacionalização da taxonomia de Minsky em nível de firma, e a aplicação do teste de Hausman.
+- As fragilidades centrais são: o case-only design na amostra restrita, que torna as estimativas não-representativas; o sinal contraintuitivo de liq sem discussão; a heterogeneidade da variável dependente; e o poder discriminatório próximo ao aleatório na ROC.
+
+
+* Ensaio II: Endividamento das Famílias Americanas (1989–2019)
+
+
+** Descompasso entre análise descritiva e afirmação causal
+
+A cadeia declarada:
+- Hipótese :: /as classes de menor renda seriam as principais responsáveis pelo processo de fragilização/ (no contexto da crise de 2008).
+- Modelo teórico :: taxonomia minskyana Hedge/Especulativa/Ponzi transposta para famílias.
+- Especificação empírica declarada :: análise descritiva de microdados do SCF (1989–2019), com classificação das famílias por decil de renda em cada uma das três posições.
+- Conclusão alegada :: /os resultados apresentados deram suporte à hipótese de que a crise estaria intimamente ligada aos padrões de endividamento das famílias mais pobres, corroborando o antigo consenso/.
+
+Divergências:
+
+- A análise é integralmente descritiva, mas a hipótese e a conclusão têm conteúdo causal ("responsáveis pelo processo de fragilização", "ligada aos padrões de endividamento").
+  - Estatísticas descritivas podem documentar correlações entre estrato de renda e proporção de famílias Ponzi, mas não podem identificar /responsabilidade causal/ no desencadeamento da crise.
+  - A passagem de "famílias de baixa renda têm maior proporção de Ponzi" para "famílias de baixa renda são responsáveis pela crise" é um salto inferencial não suportado pela metodologia.
+- A metodologia adotada — classificação por taxonomia de fluxo de caixa, sem inclusão de inflação de ativos — é capaz de capturar fragilidade das famílias pobres (cujo serviço da dívida excede a renda residual), mas é estruturalmente incapaz de capturar especulação das famílias ricas (cuja fragilidade dependeria de inflação de ativos e de exposição a colaterais imobiliários).
+  - Concluir pelo "antigo consenso" com base em uma metodologia que não pode testar o "novo consenso" configura um problema de identificação: a hipótese alternativa não é falseada, ela é estruturalmente excluída pela escolha metodológica.
+
+
+** Avaliação Empírica
+
+*** Contexto
+
+O Ensaio II é integralmente descritivo.
+A classificação das famílias em posições Hedge, Especulativa e Ponzi é operacionalizada a partir da Survey of Consumer Finances (SCF), com base na relação entre renda disponível, serviço da dívida e gastos não-duráveis.
+O ensaio não realiza nenhum teste de hipótese, nenhuma estimação de parâmetros e não quantifica a incerteza amostral das medidas reportadas.
+
+
+
+*** [#A] Periodicidade dos dados
+
+
+O problema de viabilidade mais relevante é a periodicidade trianual do SCF.
+A crise de 2008 se desenvolve entre os pontos de observação de 2007 e 2010.
+O ensaio não discute essa limitação, que implica que a dinâmica da crise não é capturável com a periodicidade disponível.
+
+Além disso, existe um survey específico para o período da crise que não foi utilizado: /Surveying the Aftermath of the Storm: Changes in Family Finances from 2007 to 2009/.
+Se foi utilizado, não foi devidamente explicitado.
+
+
+*** [#A] Avaliação de edgcases de cada medição
+
+Existem evidências contrastantes sobre qual narrativa é a mais provável de ser verdadeira.
+A alavancagem (que sustenta a nova narrativa) é factual.
+Os índices propostos (que sustentam o velho consenso) são propostos.
+Quais são os vieses e limitações de cada um deles.
+- Existe algo que não seria passível de ser capturado?
+  - Como a existência de inflação de ativos afeta os indicadores propostos?
+  - A conclusão do ensaio aceita apenas o resultado das posições, sem discutir por que os dois métodos produziram conclusões opostas.
+  - Me parece que o método das posições financeiras, ao não considerar a inflação de ativos, não é capaz de falsear a nova narrativa por design
+- Esclarecimento: Aluguel imobiliário deduzido para todas as famílias (rent).
+  - Mas as famílias proprietárias não pagam aluguel (pagam hipoteca, já contabilizada em =AM_hv=).
+  - Esclarecer se =rent= é aplicado apenas a famílias inquilinas, ou se há dupla-contagem do custo da moradia para
+proprietários.
+
+- A estabilidade relativa das posições financeiras ao longo de 1989–2019 dificulta interpretações fortes sobre mudança estrutural.
+  - O primeiro quartil parece ser genuinamente Zumbi, enquanto o segundo parece haver uma quebra estrutural
+  - Curiosamente, não há queda pronunciada das posições Ponzi após a crise, levantando possibilidade de “famílias zumbis”.
+  - Surge dúvida importante sobre possíveis subestimações do comportamento especulativo das famílias ricas: elas podem permanecer Hedge mesmo praticando default estratégico.
+    - Curvas de concentração de imóveis poderiam ajudar a identificar quando cada estrato entrou ou saiu da bolha imobiliária.
+
+# As posições especulativas apresentam proporções reduzidas ao longo de todo o período, o que pode indicar que a operacionalização da fronteira entre Especulativo e Ponzi colapsa situações especulativas em Ponzi por força da hipótese de amortização Price.
+# - A hipótese de amortização Price é uma simplificação operacionalmente conveniente, mas problematicamente distorcida para o período coberto (1989–2019), que inclui a proliferação de produtos de dívida não-convencionais (ARM, IO) nos anos 2000.
+
+*** [#C] Ausência de intervalo de confiança
+
+A análise descritiva é metodologicamente legítima quando as afirmações feitas são estritamente descritivas.
+O problema do ensaio é que o autor faz comparações entre estratos de renda ao longo do tempo sem quantificar a incerteza dessas comparações.
+Para afirmações do tipo "famílias de menor renda são as mais frágeis", seria necessário ao menos intervalos de confiança bootstrap por estrato ou testes de diferenças entre grupos.
+A ausência de quantificação da incerteza amostral nas comparações é o ponto crítico, não a opção pela análise descritiva em si.
+
+- Esclarecimento: Foi utilizado os pesos amostrais e réplica de erros-padrão por bootstrap?
+  - Isso poderia ajudar a construir um intervalo de confiança entre as categorias
+  - Para não recair em classificações determinísticas, seria possível atribuir probabilidade de classificação (via bootstrap)
+
+*** [#C] Inputação entre pesquisas
+
+O proxy de gastos não-duráveis utiliza médias da Consumer Expenditure Survey (CES) imputadas às famílias do SCF por decil de renda.
+O CES e o SCF são pesquisas distintas, com metodologias de amostragem diferentes.
+Esse procedimento de matching entre pesquisas introduz erros de mensuração sistemáticos por estrato, que não são quantificados nem discutidos.
+
+** Consistência Lógica e Teórica
+
+A análise é coerente com a taxonomia de Minsky.
+O problema de consistência é de natureza dinâmica: a HIF é uma teoria sobre a deterioração endógena das posições financeiras ao longo do ciclo, orientada por expectativas.
+A análise cross-sectional trianual captura a fragilidade em nível estático, mas não captura a dinâmica de endividamento progressivo que é o mecanismo central da HIF.
+A evidência apresentada é compatível com a teoria, mas não a testa: mostrar que famílias de menor renda têm maior proporção de posições Ponzi é consistente com Minsky, mas não demonstra que a deterioração financeira segue o mecanismo endógeno hipotesado.
+
+*** HIF e Famílias
+
+A transposição da HIF para o setor das famílias gera algumas tensões:
+- A dimensão de expectativas — central para a distinção entre posições na taxonomia de Minsky — está ausente da operacionalização.
+- A classificação é construída exclusivamente sobre dados de balanço e fluxo de caixa, sem incorporar expectativas de renda futura ou de valorização de ativos.
+- [cite/t:@tymoigne_2011_measuring] é uma referência metodológica relevante para a construção de índices de fragilidade que não é citada.
+
+Um problema de fundamentação teórica mais amplo é que a HIF de Minsky foi formulada para firmas não-financeiras, não para famílias.
+- O próprio Minsky considerava que as famílias não poderiam ser o vetor de iniciação da instabilidade sistêmica, papel reservado para as firmas e para as inovações financeiras dos bancos.
+- A transposição da taxonomia para famílias requer algumas discussões:
+  - Como as hipotecas comportam em relação à dívida das empresas dentro da taxonomia?
+  - Quais são os mecanismos pelos quais a fragilidade das famílias se transmite ao sistema financeiro?
+  - Como expectativas (centrais em Minsky) entram na operacionalização?
+
+*** [#A] Antigo vs Velho consenso
+
+O confronto entre o "antigo consenso" (famílias de baixa renda como as mais frágeis, causalidade bottom-up) e a "nova narrativa" (famílias de alta renda especulando com imóveis, causalidade top-down) é anunciado na revisão de literatura, mas não é conduzido de forma estruturada.
+Os dados finais corroboram o antigo consenso (famílias do primeiro e segundo quartis como as mais frágeis), mas o ensaio não discute sistematicamente por que os indicadores construídos não capturam a nova narrativa, nem avalia as limitações que impediriam capturar o comportamento especulativo do topo da distribuição.
+- A taxonomia adotada (fluxo de caixa / serviço da dívida) é estruturalmente incapaz de capturar esse mecanismo, porque a fragilidade especulativa do novo consenso depende de inflação de ativos e de exposição a colaterais imobiliários — não de razão renda/serviço da dívida.
+  - A "corroboração do antigo consenso" decorre, em parte, de uma escolha metodológica que /exclui o teste do novo consenso/.
+  - Um outro ponto a se considerar é que a revisão da historiografia econômica pode estar associada ao antigo consenso.
+    - Uma vez deflagrada a crise e dada a importância dos subprime, busca-se entender o porquê dessa relevância ao longo do tempo, observando a evolução institucional.
+- Um ponto a favor do velho consenso é que o consumo financiado por dívida parece ter respando empírico ao longo da bolha [cite:@mason_2018_income], mas talvez não antes.
+  - O argumento é que o endividamento é para financiar compra de ativos, não de consumo
+    - O primeiro quintil mal possui dívida (parece que o survey aponta isso)
+      - Q: Como lidou com ausência de dívida nos dados?
+    - A maior concentração da dívida é nas famílias de classe média-alta
+  - Esse padrão talvez não tenha sido observado desde os anos 1980
+
+*** [#A] Inflação de ativos e endividamento
+
+A ausência da dimensão de inflação de ativos é uma lacuna relevante para famílias estadunidenses.
+- A hipoteca é o principal compromisso financeiro das famílias, e o preço dos imóveis determina tanto a capacidade de refinanciamento quanto o acesso a linhas de crédito com garantia real (segunda hipoteca).
+- Se o preço dos imóveis cresce a uma taxa superior à taxa de juros nominal, a posição financeira da família melhora mesmo com endividamento crescente.
+  - Aumenta patrimônio líquido sem aumento sobre o serviço da dívida
+    - Pode ter --- via expectativas --- um efeito riqueza
+  - Além de facilitar o refinanciamento (segunda hipoteca)
+- A ausência dessa dimensão pode distorcer a classificação, especialmente no período 2001–2007, quando a valorização imobiliária foi o principal motor do crédito às famílias.
+
+A discussão sobre o porquê as famílias se endividam e o tipo de endividamento parece estar misturada.
+- Requer uma separação mais explícita ao menos
+- A distinção entre fragilidade de fluxo e fragilidade de estoque — fundamental para operacionalizar posições financeiras de famílias — não é reconhecida, mas não operacionalizada.
+  - Fluxo: Capacidade de pagamento do serviço da dívida (que parece ser o utilizado)
+  - Estoque: Avalia riqueza líquida dado valorização de ativos
+    - Uma famílias pode ser financeiramente frágil em termos de fluxos, mas ter solidez em termos de estoque
+      - Exemplo: famílias com patrimônio alocado em imóveis ao longo de uma bolha enquanto não é capaz de saldar os compromisso financeiros corriqueiros
+        - Em cenário de valorização dos imóveis, esta família seria classificada unicamente como Ponzi?
+          - Entendo que a liquidez não imediata poderia assegurar o porque de ser Ponzi, mas deveria estar mais explícito
+        - Alternativamente, famílias financeiramente estáveis (em termos de fluxo), mas preço dos imóveis caem, como classificar?
+- A revisão da literatura empírica não possui fio condutor: apresenta-se uma sequência de resultados sem costura entre os mecanismos e sem articulação com a hipótese do ensaio.
+  - Modelos DSGE e teorias do ciclo de vida são apresentados, mas sem articulação direta com os indicadores construídos.
+
+
+
+
+
+*** Famílias Zumbis
+
+Por simetria com o Ensaio I, valeria perguntar: existem "famílias zumbis" — famílias persistentemente Ponzi que sobrevivem em vez de ir à insolvência?
+Os dados do SCF mostram primeiro quartil persistentemente Ponzi por todo o período (1989–2019).
+Esse padrão é evidência de famílias zumbis no sentido análogo ao das empresas zumbis.
+O ensaio não explora essa simetria, perdendo uma contribuição teórica natural.
+
+* Ensaio III: Posições Financeiras Comparadas — Empresas e Famílias (1989–2022)
+
+** Inversão de direção e sinal entre hipótese e resultado
+
+A cadeia declarada:
+- Hipótese :: /a fragilidade das famílias sustenta as boas posições financeiras do setor das empresas/.
+- Modelo teórico :: complementaridade setorial pós-keynesiana, em que o endividamento das famílias é contrapartida da poupança/lucros das empresas (não explicitado).
+- Especificação empírica :: VAR(2) bivariado com index_h (estoque de fragilidade das famílias) e g_index_f (taxa de crescimento da fragilidade das empresas).
+- Conclusão :: /o único padrão consistente entre as fragilidades foi o de que períodos persistentes de desfragilização das famílias foram seguidos de aumento na fragilidade das empresas/.
+
+Divergências:
+
+- Direção causal: a hipótese estabelece causalidade H → F (fragilidade das famílias sustenta posições das empresas).
+  - A FIR estatisticamente significativa corre na direção oposta: F → H (variação na fragilidade das empresas explica a fragilidade das famílias).
+  - Na equação de g_index_f, nem index_h(-1) nem index_h(-2) são significativos; portanto, a direção H → F não encontra suporte estatístico.
+- Sinal: a hipótese é de relação /negativa/ entre fragilidade das famílias e fragilidade das empresas (uma sustenta a robustez da outra) [não discutido].
+  - O coeficiente de g_index_f(-2) na equação de index_h é /positivo/ e significativo (0,009**): aumentos na fragilidade das empresas precedem aumentos na fragilidade das famílias.
+  - Mesmo aceitando a inversão de direção, o sinal contradiz a hipótese de complementaridade setorial.
+
+
+** Contexto
+
+O Ensaio III constrói índices de fragilidade para empresas (g_index_f) e famílias (index_h) e estima um modelo VAR(2) para investigar a inter-relação entre as posições financeiras dos dois setores.
+
+
+O modelo Markov-Switching (MS) é empregado para identificar regimes de alavancagem.
+A aplicação é metodologicamente pertinente para detecção de regimes.
+O modelo estima dois regimes (β₁ = +0,055 no regime Minskyan; β₁ = −0,082 no regime Steindliano), com persistência de ~7,6–7,9 trimestres.
+Os interceptos do modelo não são significativos, e as magnitudes dos coeficientes angulares são reduzidas.
+Os resultados corroboram a presença de dois regimes, mas a relevância econômica dos parâmetros é limitada.
+
+A análise de estacionariedade é realizada com ADF e KPSS (Apêndice B).
+O índice das famílias (index_h) é identificado como estacionário I(0).
+O índice das empresas (index_f) apresenta raiz unitária; o autor utiliza a taxa de crescimento do índice (g_index_f), identificada como I(0).
+Essa decisão é metodologicamente defensável para evitar o VAR em variável não-estacionária.
+
+
+A hipótese central é que a fragilidade das famílias sustenta as posições das empresas.
+Os resultados da FIR mostram impacto de g_index_f sobre index_h, mas não o inverso.
+A leitura dos resultados é: ausência de evidência da direção hipotesada, combinada com a presença de evidência da direção oposta — sem possibilidade de inferência forte, dado o tamanho amostral de ~22 graus de liberdade por equação.
+A conclusão do ensaio reconhece o resultado, mas não reformula a hipótese à luz da evidência.
+
+- A metodologia das posições financeiras das famílias (inclusive a hipótese de amortização Price) está repetida textualmente do Ensaio II sem remissão, o que constitui redundância desnecessária em formato de tese por ensaios.
+  - Alguns definições sobre a descrição da HIF poderiam ser mais detalhadas no ensaio I, não no III
+- A revisão da literatura também poderia ser beneficiar de textos mais recentes de uso do Minsky pela literatura mainstream
+  - [cite:@bianchi_2022_belief; @koga_2017_behavioral; @bachmann_2015_firm]
+
+** [#A] Ponderação na criação do indicador
+
+- Se a ponderação considera ativos possuídos, a inflação de ativos (imóveis) pode sobreestimar alguma das categorias?
+  - Como foram ponderadas as famílias que não possuem ativos algum?
+- Há uma inconsistência entre o texto e o gráfico 13 dos índices: o texto afirma que "a fragilidade das famílias possui magnitude consideravelmente superior à das empresas", mas a inspeção do gráfico parece mostrar o oposto em determinados períodos.
+  - Além disso, tem uma dos eixos "Preto" que não é explicado
+  - Essa figura também me levaria à hipótese contrária ao que foi levantada ao longo do ensaio (F-H invés de H-F)
+- A ponderação dos índices de fragilidade utiliza ativos para empresas e dívida para famílias, criando escalas não-comparáveis (checar)
+  - Q: Essa ponderação se dá por conta da interpolação somente ou também foi utilizada para computar o indicador proposto?
+
+
+** [#A] Subindentificação e ausência de mecanismos
+
+A equação das empresas está sub-identificada.
+Na equação de g_index_f, somente a segunda defasagem da própria variável é significativa (ao nível de 10%).
+index_h não é significativo para a equação das empresas em nenhuma defasagem.
+A FIR estatisticamente relevante ocorre apenas na direção g_index_f → index_h — oposta à hipótese central do ensaio.
+- A seção de resultados apresenta os coeficientes e a FIR sem análise substantiva: os resultados são descritos, mas não interpretados à luz da hipótese central.
+- A apresentação da FIR oposta à hipótese, sem reformulação desta, deixa o leitor sem orientação sobre a interpretação da contradição.
+  - O porquê desse resultado ser razoável
+
+A ausência de discussão sobre o mecanismo de transmissão entre os setores (crédito, demanda efetiva, efeitos de riqueza) é uma lacuna teórica: o VAR captura correlações temporais, mas o mecanismo econômico que as gera não é formalizado antes da estimação.
+- A hipótese central — fragilidade das famílias sustenta posições das empresas — requer um mecanismo teórico explícito.
+  - Em uma leitura pós-keynesiana, esse mecanismo seria: famílias endividadas mantêm demanda agregada (consumo financiado por dívida), permitindo às empresas obter receita e reduzir sua própria fragilidade.
+
+
+A ausência de [cite/t:@godley_1999_seven; @godley_2007_monetary] como referência é uma lacuna relevante: a análise das posições financeiras líquidas por setor institucional e sua co-evolução que fornece arcabouço mais estruturado para a hipótese central do Ensaio III do que o VAR sem modelo teórico explícito.
+- A ausência de [cite/t:@tymoigne_2011_measuring]  como referência para índices de fragilidade é relevante.
+
+
+** [#B] Modelo de MS
+
+
+A HIF de Minsky postula relação pró-cíclica entre /nível/ de alavancagem e ciclo econômico.
+O modelo MS estimado usa /primeira diferença/ de alavancagem (=ΔLev_f=), justificada pela presença de raiz unitária em =Lev_f=.
+- A transformação reformula a hipótese implicitamente: passa de "alavancagem é pró-cíclica" para "/variação/ da alavancagem é prócíclica".
+- Essas duas hipóteses não são equivalentes.
+- O ensaio não discute essa reformulação.
+
+
+- β_1= = =+0,055= no regime Minskyan e =-0,082= no regime Steindliano.
+  - Para um aumento de 1 p.p. no =GDP_c=, =ΔLev= variaria em 0,055 p.p. (Minskyan) ou -0,082 p.p. (Steindliano).
+  - Essas magnitudes são pequenas em termos econômicos: o regime Minskyan não implica grande pró-ciclicidade da alavancagem.
+- A "identificação de regimes" é estatisticamente significativa, mas economicamente fraca.
+
+** [#B] Transformações
+
+A transformação, porém, cria uma assimetria conceitual: o VAR é estimado com o nível de fragilidade das famílias (index_h) e a taxa de crescimento da fragilidade das empresas (g_index_f).
+- Essas duas variáveis operam em escalas e interpretações distintas — uma mede estoque e a outra mede variação.
+- A Função Impulso Resposta e os coeficientes do VAR refletem essa assimetria, que não é discutida no texto.
+- A implicação econômica da raiz unitária em index_f — que impede inferência sobre a relação de longo prazo entre os /níveis/ dos dois índices — é o resultado substantivo que o texto não discute: ao transformar index_f em g_index_f, o autor descarta implicitamente a possibilidade de uma relação de equilíbrio de longo prazo entre os índices de fragilidade dos dois setores.
+- Adicionalmente, há uma inconsistência textual: a Tabela de resultados do VAR é intitulada "VAR(3)" no texto, enquanto o modelo é descrito como VAR(2) ao longo de todo o ensaio.
+
+- Esclarecimento: Qual é a especificação do filtro de Hamilton?
+  - A escolha desse valor pode afetar a definição/detecção do ciclo (normalmente 8, para dados trimestrais)
+
+** [#B] Interpolação dos dados
+
+O SCF é trianual; o VAR exige periodicidade anual.
+- Dados interpolados não são dados observados: seguem a tendência imposta pelo método de interpolação, o que é particularmente problemático para capturar descontinuidades como a crise de 2008.
+- Qualquer método de interpolação determinística (linear, cúbica, Denton) introduz autocorrelação serial nos resíduos.
+  - Os testes de ausência de autocorrelação reportados como satisfatórios não são confiáveis na presença de dados interpolados, porque a autocorrelação introduzida pela interpolação pode cancelar a autocorrelação residual dos dados.
+
+** [#C] Graus de liberdade
+
+O problema de graus de liberdade é o mais grave do ensaio.
+O critério de informação indicou 6 lags como configuração com melhor ajuste para um painel de 34 observações.
+O VAR(2) foi adotado como alternativa parcimoniosa.
+Com 34 observações, 2 variáveis endógenas, 2 lags e 1 constante por equação, o modelo consome 5 parâmetros por equação, resultando em ~22 graus de liberdade por equação.
+Esse número é insuficiente para inferência confiável, em particular para a FIR.
+
+
+
+
+
+
+
+
+* Revisão Sistemática de Coerência Econométrica e Lógica Interna
+
+
+
+- No Ensaio I, a revisão de literatura apresenta a existência de empresas zumbis — Ponzi persistentes que sobrevivem — como característica estrutural do mercado contemporâneo.
+  - A hipótese central do ensaio (Ponzi → mortalidade) é incompatível com a existência sistemática de zumbis.
+  - O ensaio não articula como a coexistência de Ponzi mortais e Ponzi zumbis seria observacionalmente equivalente sob a especificação adotada.
+- No Ensaio III, a revisão de literatura sobre HIF agregada reconhece que /a maior parte dos trabalhos não corrobora essa relação essencial/ (pró-ciclicidade da fragilidade), mesmo reconhecendo a coexistência dos dois regimes.
+  - A hipótese do ensaio depende exatamente do mecanismo cíclico da HIF entre os dois setores.
+  - A tensão entre a revisão (que não corrobora HIF) e a hipótese (que pressupõe HIF) não é tratada.
+- O Ensaio II conclui pelo antigo consenso (famílias pobres como vetor da crise);; O Ensaio III conclui pela complementaridade setorial entre famílias e empresas.
+  - Os dois ensaios não articulam a relação entre essas duas conclusões: se as famílias pobres são o vetor da crise (Ensaio II), o canal de transmissão para as empresas (Ensaio III) deveria ser explicitado.
+  - A tese não apresenta esse canal.
+- A conclusão geral da tese invoca explicitamente Lakatos para sustentar a validade de Minsky mesmo diante de resultados que /não corroboram suas previsões específicas/
+  - O recurso ao "núcleo firme" lakatosiano transforma a tese em um argumento sobre validade conceitual, não sobre validade empírica.
+    - Os três ensaios foram estruturados com hipóteses empiricamente testáveis e estimações econométricas.
+    - Quando os resultados não confirmam as hipóteses formuladas, a tese reorienta o critério de validação para um plano conceitual mais geral, no qual nenhum resultado empírico específico pode falsificá-la.
+  - A "proposição essencial" identificada pela conclusão ("a estabilidade conduz à instabilidade", "aumento cumulativo da fragilidade") não foi testada pelos três ensaios.
+  - Nenhum dos três testa a proposição lakatosiana invocada na conclusão.
+  - A estratégia mais consistente com os resultados obtidos seria reformular as hipóteses originais à luz dos achados:
+    - Ponzi não converge para mortalidade — converge para sobrevivência zumbi sob certas condições;
+    - A taxonomia minskyana, transposta para famílias, captura fragilidade de baixa renda mas não captura especulação de alta renda;
+    - A relação setorial é F → H positiva, oposta à complementaridade hipotesada.
+    - Cada uma dessas reformulações seria uma contribuição empírica genuína à literatura minskyana
+- Pontencial nova pergunta:
+  - Será que a fragilidade financeira dos quartis inferiores sustenta a estabilidade financeira do topo da distribuição?
+    - A ideia seria aplicar a ideia do Ensaio III aos dados do Ensaio II
+
+
+
+
+
+
+
+* Outros pontos
+
+** Ensaio I
+
+- Falta incorporar literatura crítica à HIF e usos recentes da hipótese na literatura mainstream, especialmente em abordagens comportamentais.
+- A revisão de fatos estilizados é bastante curta para sustentar empiricamente o argumento central.
+- A revisão sobre firmas zumbis menciona vários países, mas não deixa claro o caso específico dos EUA.
+- A medida de market-share é condicionada à amostra de empresas abertas e não representa participação efetiva no mercado agregado.
+- O tratamento metodológico das variáveis relacionadas a M&A parece inconsistente: em um momento sugere-se inclusão; em outro, exclusão.
+
+
+** Ensaio II
+
+
+- Seria interessante incluir medidas de concentração de imóveis por estrato patrimonial para avaliar empiricamente a “nova narrativa”.
+- A discussão do paradoxo da dívida permanece vaga, sobretudo quanto à relação entre expansão do crédito e redução posterior do endividamento.
+- O texto deveria tomar mais cuidado ao classificar autores entre “mainstream” e “heterodoxos”, pois essas fronteiras são mais ambíguas do que a exposição sugere.
+  - Minsky poderia ser considerado mainstream a depender de como você define
+- A situação verdadeiramente “Ponzi” das famílias parece mais próxima do endividamento para gastos recorrentes do que da aquisição de ativos reais.
+- A menção genérica a “análise econométrica” é insuficiente; o método empregado deveria ser explicitado.
+- Excluir imóveis secundários pode dificultar a identificação da especulação imobiliária associada à “nova narrativa”.
+- O capítulo mistura explicações para o endividamento das famílias com explicações causais da crise de 2008, embora essas dimensões não sejam equivalentes.
+- Há indícios de que famílias muito ricas adquirem imóveis sem depender de crédito, o que complica interpretações baseadas apenas em endividamento.
+- A especulação imobiliária antecedendo a crise não deveria ser descartada apenas porque não coincide temporalmente com o colapso financeiro.
+- A Tabela 3 é considerada pouco inteligível.
+- Os gráficos poderiam ter escalas padronizadas para facilitar comparabilidade visual.
+- Algumas figuras do apêndice parecem suficientemente relevantes para integrar o texto principal.
+
+
+** Ensaio III
+
+* Anotações no documento
+
+** Capítulo 1: Empresas Ponzi condenadas a perecer? Uma análise para as empresas americanas (1970-2024)
 :PROPERTIES:
 :NOTER_DOCUMENT: /HDD/PDFs/Defesas/Rosa - 2026 - Três ensaios sobre a fragilidade financeira revisitando Minsky a partir das empresas não-financeira.pdf
 :NOTER_AUTO_SAVE_LAST_LOCATION: nil
 :END:
 
 
-*** Contribuição do ensaio :contrib:
+**** Contribuição do ensaio :contrib:
 :PROPERTIES:
 :NOTER_PAGE: (20 0.5288149350649352 . 0.2074579831932773)
 :HIGHLIGHT: #s(pdf-highlight 20 (20 (0.2074579831932773 0.5288149350649352 0.8587184873949579 0.5320616883116883)))
@@ -25,7 +682,7 @@
 um trabalho tenha investigado sistematicamente sua relação com a saída do mercado.
 #+END_QUOTE
 
-*** Dúvida
+**** Dúvida
 :PROPERTIES:
 :NOTER_PAGE: (20 0.5868506493506493 . 0.3277310924369748)
 :HIGHLIGHT: #s(pdf-highlight 20 (20 (0.3277310924369748 0.5905032467532468 0.6165966386554621 0.5868506493506493)))
@@ -33,7 +690,7 @@ um trabalho tenha investigado sistematicamente sua relação com a saída do mer
 
 ``“mortalidade” enquanto ente institucional,''
 
-*** Hipótese de trabalho do ensaio :hypo:
+**** Hipótese de trabalho do ensaio :hypo:
 :PROPERTIES:
 :NOTER_PAGE: (20 0.6737012987012988 . 0.46691176470588236)
 :HIGHLIGHT: #s(pdf-highlight 20 (20 (0.46691176470588236 0.6737012987012988 0.5052521008403361 0.6984577922077922)))
@@ -44,7 +701,7 @@ A hipótese é que exista uma relação positiva entre a
 probabilidade de mortalidade e a situação Ponzi.
 #+END_QUOTE
 
-*** Minsky e crise :context:discuss:
+**** Minsky e crise :context:discuss:
 :PROPERTIES:
 :NOTER_PAGE: (22 0.1627435064935065 . 0.40808823529411764)
 :HIGHLIGHT: #s(pdf-highlight 22 (22 (0.40808823529411764 0.1627435064935065 0.5183823529411764 0.19034090909090912)))
@@ -55,7 +712,7 @@ dentro de um arcabouço que busca implicações mais gerais
 para a dinâmica econômica (DELLI GATTI, 2012)
 #+END_QUOTE
 
-*** Contrafactual interessante :discuss:insight:
+**** Contrafactual interessante :discuss:insight:
 :PROPERTIES:
 :NOTER_PAGE: (22 0.5016233766233766 . 0.321953781512605)
 :HIGHLIGHT: #s(pdf-highlight 22 (22 (0.321953781512605 0.5016233766233766 0.5010504201680672 0.5503246753246753)))
@@ -67,7 +724,7 @@ a persistência prolongada de empresas em situação financeira precária em dif
 desenvolvidas (BANERJEE; HOFMANN, 2018).
 #+END_QUOTE
 
-*** Questionamento :discuss:critique:
+**** Questionamento :discuss:critique:
 :PROPERTIES:
 :NOTER_PAGE: (22 0.7276785714285715 . 0.20535714285714285)
 :HIGHLIGHT: #s(pdf-highlight 22 (22 (0.20535714285714285 0.7276785714285715 0.21323529411764705 0.7455357142857143)))
@@ -78,7 +735,7 @@ desenvolvidas (BANERJEE; HOFMANN, 2018).
 institucional.
 #+END_QUOTE
 
-*** Período :data:
+**** Período :data:
 :PROPERTIES:
 :NOTER_PAGE: (22 0.7938311688311689 . 0.759453781512605)
 :HIGHLIGHT: #s(pdf-highlight 22 (22 (0.759453781512605 0.7938311688311689 0.8466386554621849 0.796672077922078)))
@@ -86,7 +743,7 @@ institucional.
 
 ``1970 e 2024.''
 
-*** Fatos Estilizados :discuss:
+**** Fatos Estilizados :discuss:
 :PROPERTIES:
 :NOTER_PAGE: (23 0.6095779220779222 . 0.11607142857142856)
 :HIGHLIGHT: #s(pdf-highlight 23 (23 (0.11607142857142856 0.6095779220779222 0.24842436974789914 0.6286525974025975)))
@@ -97,7 +754,7 @@ haver algum grau de descasamento de maturidades entre os ganhos e os compromisso
 (MINSKY, 1986).
 #+END_QUOTE
 
-*** Discussão sobre capitalistas :discuss:misc:
+**** Discussão sobre capitalistas :discuss:misc:
 :PROPERTIES:
 :NOTER_PAGE: (23 0.7893668831168832 . 0.6092436974789915)
 :HIGHLIGHT: #s(pdf-highlight 23 (23 (0.6092436974789915 0.7893668831168832 0.8009453781512604 0.8051948051948052)))
@@ -111,7 +768,7 @@ da empresa (TORRES FILHO; MARTINS, 2022; TORRES FILHO; MONTANI, 2026).
 Uma coisa que me ocorreu é que por mais que uma firma vá à falência, o mesmo não é válido para o capitalista.
 Existe uma separação institucional entre as classes sociais que talvez seja relevante para essa discussão.
 
-*** Sobreviência e lucros :discuss:
+**** Sobreviência e lucros :discuss:
 :PROPERTIES:
 :NOTER_PAGE: (23 0.8372564935064936 . 0.483718487394958)
 :HIGHLIGHT: #s(pdf-highlight 23 (23 (0.483718487394958 0.8380681818181819 0.6517857142857143 0.8372564935064936)))
@@ -122,7 +779,7 @@ Existe uma separação institucional entre as classes sociais que talvez seja re
 Lembrar que é sobrevivência condicionada à capacidade de gerar lucros.
 Isso é relevante para explicar o porquê corre-se aos riscos de não sobreviver, porque não tomar risco também implica --- via concorrência --- em perecer.
 
-*** Não me parece ser state-dependent :misc:
+**** Não me parece ser state-dependent :misc:
 :PROPERTIES:
 :NOTER_PAGE: (23 0.8648538961038962 . 0.14600840336134452)
 :HIGHLIGHT: #s(pdf-highlight 23 (23 (0.14600840336134452 0.8648538961038962 0.7478991596638656 0.8823051948051949)))
@@ -133,7 +790,7 @@ Nesse momento, diferentes tipos de ativos, acrescidos por aqueles criados pelas 
 assumir a função de quase-moedas em um ambiente de baixa aversão ao risco (MINSKY, 1986).
 #+END_QUOTE
 
-*** Discussão da seção :critique:lit:
+**** Discussão da seção :critique:lit:
 :PROPERTIES:
 :NOTER_PAGE: (24 0.3445616883116883 . 0.11502100840336134)
 :HIGHLIGHT: #s(pdf-highlight 24 (24 (0.11502100840336134 0.3445616883116883 0.4847689075630252 0.3465909090909091)))
@@ -144,7 +801,7 @@ assumir a função de quase-moedas em um ambiente de baixa aversão ao risco (MI
 Aqui não está claro se é uma apresentação das ideias de Minsky ou uma revisão com a visão do autor.
 Em ambos os casos, acho que falta alguma literatura sobre as críticas à HIF e como a literatura mainstream tem reutilizado de forma mais recente (sobretudo comportamental).
 
-*** Hipótese implícita :critique:lit:
+**** Hipótese implícita :critique:lit:
 :PROPERTIES:
 :NOTER_PAGE: (24 0.4038149350649351 . 0.1717436974789916)
 :HIGHLIGHT: #s(pdf-highlight 24 (24 (0.2752100840336134 0.4038149350649351 0.1717436974789916 0.4265422077922078)))
@@ -158,7 +815,7 @@ e crise.
 
 Assume-se, portanto, que alavancagem e endividamento são pró-cíclicos?
 
-*** Discussão :critique:limits:lit:
+**** Discussão :critique:limits:lit:
 :PROPERTIES:
 :NOTER_PAGE: (24 0.4910714285714286 . 0.6407563025210083)
 :HIGHLIGHT: #s(pdf-highlight 24 (24 (0.6407563025210083 0.4910714285714286 0.9138655462184874 0.5243506493506493)))
@@ -172,7 +829,7 @@ posições até patamares em que a sustentação de seus compromissos financeiro
 
 Seria interessante também considerar os aspectos de falácia de composição do Minsky [cite:@lavoie_2001_minskys]
 
-*** Definição de margens de segurança
+**** Definição de margens de segurança
 :PROPERTIES:
 :NOTER_PAGE: (24 0.5608766233766234 . 0.17069327731092437)
 :HIGHLIGHT: #s(pdf-highlight 24 (24 (0.17069327731092437 0.5608766233766234 0.36607142857142855 0.5852272727272728)))
@@ -183,7 +840,7 @@ margens de segurança, que constituem um conjunto de salvaguardas que uma empres
 possuiria diante de situações adversas
 #+END_QUOTE
 
-*** Discussão :critique:lit:
+**** Discussão :critique:lit:
 :PROPERTIES:
 :NOTER_PAGE: (24 0.7877435064935066 . 0.11659663865546217)
 :HIGHLIGHT: #s(pdf-highlight 24 (24 (0.11659663865546217 0.7877435064935066 0.726890756302521 0.7995129870129871)))
@@ -193,7 +850,7 @@ possuiria diante de situações adversas
 
 Será que isso equivale à uma medida de fragilidade financeira macroeconômica? [cite:@pedrosa_2021_what] me levam a crer que a distribuição das posições financeiras pode ter um efeito relevante.
 
-*** Falácia de composição :critique:lit:
+**** Falácia de composição :critique:lit:
 :PROPERTIES:
 :NOTER_PAGE: (25 0.375 . 0.29254201680672265)
 :HIGHLIGHT: #s(pdf-highlight 25 (25 (0.29254201680672265 0.375 0.5561974789915967 0.41599025974025977)))
@@ -207,7 +864,7 @@ de curto prazo, dado o diferencial entre as taxas de juros.
 
 Dá a entender que a discussão de falácia de composição foi omitida. O investimento de uma firma é a venda de outra.
 
-*** Minsky e memória :lit:
+**** Minsky e memória :lit:
 :PROPERTIES:
 :NOTER_PAGE: (25 0.4598214285714286 . 0.6880252100840336)
 :HIGHLIGHT: #s(pdf-highlight 25 (25 (0.7195378151260504 0.4598214285714286 0.6880252100840336 0.5085227272727273)))
@@ -221,7 +878,7 @@ conduzindo uma parcela significativa das unidades a arranjos especulativos
 
 Um debate mais recente sobre a impororação do Minsky pela literatura mainstream é a hipótese de viés cognitivo em que os agentes tem percepções diferentes sobre o boom e o burst [cite:@bianchi_2022_belief; @koga_2017_behavioral; @bachmann_2015_firm]
 
-*** Revisão de fatos estilizados bastante curta :context:critique:
+**** Revisão de fatos estilizados bastante curta :context:critique:
 :PROPERTIES:
 :NOTER_PAGE: (26 0.13271103896103897 . 0.12027310924369747)
 :HIGHLIGHT: #s(pdf-highlight 26 (26 (0.12027310924369747 0.13433441558441558 0.14758403361344538 0.13271103896103897)))
@@ -229,7 +886,7 @@ Um debate mais recente sobre a impororação do Minsky pela literatura mainstrea
 
 ``1.2.1''
 
-*** Empresas pequenas são as que mais falem :results:lit:
+**** Empresas pequenas são as que mais falem :results:lit:
 :PROPERTIES:
 :NOTER_PAGE: (26 0.3035714285714286 . 0.21376050420168066)
 :HIGHLIGHT: #s(pdf-highlight 26 (26 (0.39705882352941174 0.3035714285714286 0.21376050420168066 0.3449675324675325)))
@@ -241,7 +898,7 @@ de pequeno porte, assim como às recém-chegadas ao mercado (entrantes), sendo e
 interatuantes
 #+END_QUOTE
 
-*** Saída é state-dependent :insight:
+**** Saída é state-dependent :insight:
 :PROPERTIES:
 :NOTER_PAGE: (26 0.7118506493506493 . 0.12027310924369747)
 :HIGHLIGHT: #s(pdf-highlight 26 (26 (0.12027310924369747 0.7118506493506493 0.1685924369747899 0.7313311688311689)))
@@ -252,7 +909,7 @@ Quanto à saída do mercado, ela torna-se mais frequente no momento da reversão
 2010).
 #+END_QUOTE
 
-*** Variável importante para análise :discuss:
+**** Variável importante para análise :discuss:
 :PROPERTIES:
 :NOTER_PAGE: (27 0.17694805194805197 . 0.31512605042016806)
 :HIGHLIGHT: #s(pdf-highlight 27 (27 (0.31512605042016806 0.17694805194805197 0.43907563025210083 0.1960227272727273)))
@@ -265,7 +922,7 @@ da fragilidade, mesmo para os casos Ponzi
 
 Uma compreensão dos determinantes da reversão parecem ser tão relevantes quanto os determinantes da saída das firmas
 
-*** Porque? :critique:limits:
+**** Porque? :critique:limits:
 :PROPERTIES:
 :NOTER_PAGE: (27 0.2471590909090909 . 0.2620798319327731)
 :HIGHLIGHT: #s(pdf-highlight 27 (27 (0.2620798319327731 0.2491883116883117 0.8398109243697479 0.2471590909090909)))
@@ -277,7 +934,7 @@ atividades não-manufatureiras tendem a ser mais robustas do que as manufatureir
 
 Seria interessante elaborar um pouco melhor
 
-*** Tratamento metodológico :method:insight:
+**** Tratamento metodológico :method:insight:
 :PROPERTIES:
 :NOTER_PAGE: (27 0.31615259740259744 . 0.5987394957983193)
 :HIGHLIGHT: #s(pdf-highlight 27 (27 (0.5987394957983193 0.31615259740259744 0.7058823529411764 0.33644480519480524)))
@@ -292,7 +949,7 @@ Imagino que esse seja um aspecto empírico importante a ser considerado (eventua
 A se pensar.
 No entanto, esse é um dado que não parece estar disponível
 
-*** Falência e bancos :discuss:
+**** Falência e bancos :discuss:
 :PROPERTIES:
 :NOTER_PAGE: (27 0.6655844155844156 . 0.5614495798319328)
 :HIGHLIGHT: #s(pdf-highlight 27 (27 (0.6129201680672268 0.6655844155844156 0.5614495798319328 0.6879058441558442)))
@@ -307,7 +964,7 @@ Uma discussão que seria relevante para a existência de zumbies é que uma empr
 Então, seria interessante manter essa empresa aberta com a expectativa de que ao menos parte dos passivos sejam liquidados em algum momento.
 Além disso, a concessão de crédito considera, em alguma medida, uma taxa de inadimplência, então isso não deve ser tão inesperado da perspectiva dos bancos.
 
-*** Escopo do fenômeno :misc:
+**** Escopo do fenômeno :misc:
 :PROPERTIES:
 :NOTER_PAGE: (28 0.10105519480519481 . 0.33403361344537813)
 :HIGHLIGHT: #s(pdf-highlight 28 (28 (0.6917016806722689 0.10105519480519481 0.33403361344537813 0.14772727272727273)))
@@ -321,7 +978,7 @@ e Upadhyay e Baag (2024)).
 
 Menciona que é observado para um conjunto de países desenvolvidos, mas não menciona EUA explicitamente.
 
-*** Restrição de crédito e medidas anticíclicas :discuss:
+**** Restrição de crédito e medidas anticíclicas :discuss:
 :PROPERTIES:
 :NOTER_PAGE: (28 0.32670454545454547 . 0.5572478991596639)
 :HIGHLIGHT: #s(pdf-highlight 28 (28 (0.7977941176470588 0.32670454545454547 0.5572478991596639 0.3944805194805195)))
@@ -338,7 +995,7 @@ Exato, existe algum grau de endogeneidade.
 Os bancos ajustam a concesão de crédito para firmas financeiramente mais frágeis de forma endógena.
 O mesmo vale para planos para salvar as firmas.
 
-*** Presença de zumbis :data:critique:limits:
+**** Presença de zumbis :data:critique:limits:
 :PROPERTIES:
 :NOTER_PAGE: (28 0.5783279220779222 . 0.6076680672268907)
 :HIGHLIGHT: #s(pdf-highlight 28 (28 (0.6076680672268907 0.6209415584415585 0.6365546218487395 0.5783279220779222)))
@@ -353,7 +1010,7 @@ sendo caracterizadas como empresas de pequeno e médio porte.
 Fica pouco evidênte a existência de Zumbis nos EUA dada essa revisão. Alguma representação gráfica daria mais informações.
 Como as Zumbis são Ponzi que sobrevivem, esse seria um ponto importante para se ter.
 
-*** Ponzi arrastadas :discuss:critique:
+**** Ponzi arrastadas :discuss:critique:
 :PROPERTIES:
 :NOTER_PAGE: (29 0.14610389610389612 . 0.24002100840336132)
 :HIGHLIGHT: #s(pdf-highlight 29 (29 (0.24002100840336132 0.14610389610389612 0.5530462184873949 0.17532467532467533)))
@@ -366,7 +1023,7 @@ uma parcela significativa corresponde a empresas zumbis.
 
 A impressão que a revisão da literatura dá é que a correlação entre Ponzi e saída de mercado é mais fraca do que Minsky fez crer.
 
-*** Ciclicidade :limits:
+**** Ciclicidade :limits:
 :PROPERTIES:
 :NOTER_PAGE: (29 0.40543831168831174 . 0.4385504201680672)
 :HIGHLIGHT: #s(pdf-highlight 29 (29 (0.4385504201680672 0.4103084415584416 0.5808823529411764 0.40543831168831174)))
@@ -377,7 +1034,7 @@ A impressão que a revisão da literatura dá é que a correlação entre Ponzi 
 Então não será possível captar elementos de prociclicidade.
 Também não será possível pegar o momento em que a firma se tornou Ponzi (será uma média do período)
 
-*** Apenas capital aberto :limits:
+**** Apenas capital aberto :limits:
 :PROPERTIES:
 :NOTER_PAGE: (29 0.5913149350649352 . 0.7132352941176471)
 :HIGHLIGHT: #s(pdf-highlight 29 (29 (0.7289915966386554 0.5913149350649352 0.7132352941176471 0.6112012987012987)))
@@ -388,7 +1045,7 @@ Dessa forma, serão
 consideradas somente as empresas de capital aberto contidas no Compustat.
 #+END_QUOTE
 
-*** Falência || M&A :critique:limits:
+**** Falência || M&A :critique:limits:
 :PROPERTIES:
 :NOTER_PAGE: (29 0.8478084415584416 . 0.14653361344537816)
 :HIGHLIGHT: #s(pdf-highlight 29 (29 (0.14653361344537816 0.8478084415584416 0.58140756302521 0.8676948051948052)))
@@ -401,7 +1058,7 @@ referem-se ao encerramento das atividades (liquidation) (CRPS, 2026).
 
 Acho que seria interessante tomar mais cuidado do porquê incluir M&A junto de mortalidade.
 
-*** Ponzi & M&A :discuss:
+**** Ponzi & M&A :discuss:
 :PROPERTIES:
 :NOTER_PAGE: (30 0.12905844155844157 . 0.23319327731092435)
 :HIGHLIGHT: #s(pdf-highlight 30 (30 (0.23319327731092435 0.12905844155844157 0.275735294117647 0.14245129870129872)))
@@ -415,7 +1072,7 @@ de seu fluxo de caixa.
 
 Só faz sentido incluir M&A junto de falência se as firmas forem Ponzi, caso contrário, não (necessariamente).
 
-*** Dúvida :limits:empirics:
+**** Dúvida :limits:empirics:
 :PROPERTIES:
 :NOTER_PAGE: (30 0.16680194805194806 . 0.42909663865546216)
 :HIGHLIGHT: #s(pdf-highlight 30 (30 (0.42909663865546216 0.16680194805194806 0.7615546218487395 0.1895292207792208)))
@@ -429,7 +1086,7 @@ de persistência da situação Ponzi ao longo de dois períodos (𝐷 𝑃𝑜�
 
 Seria essa uma medida de Zumbi?
 
-*** Revisão da literatura :limits:lit:
+**** Revisão da literatura :limits:lit:
 :PROPERTIES:
 :NOTER_PAGE: (30 0.25811688311688313 . 0.604516806722689)
 :HIGHLIGHT: #s(pdf-highlight 30 (30 (0.6785714285714285 0.25811688311688313 0.604516806722689 0.27435064935064934)))
@@ -444,7 +1101,7 @@ Grice e Dugan (2001) e Bellovary, Giacomino e Akers (2006))
 Esses modelos de previsão de falência não parecem terem sido devidamente discutidos.
 Se foram, a referência foi usada em bloco de modo que não foi possível de destinguí-los.
 
-*** Zumbi e dummy :discuss:
+**** Zumbi e dummy :discuss:
 :PROPERTIES:
 :NOTER_PAGE: (30 0.39772727272727276 . 0.4527310924369748)
 :HIGHLIGHT: #s(pdf-highlight 30 (30 (0.7841386554621849 0.39772727272727276 0.4527310924369748 0.4350649350649351)))
@@ -459,7 +1116,7 @@ uma empresa para manter suas operações.
 Da discussão, Zumbis parecem ser firmas Ponzi sobreviventes, ou persistentemente Ponzi.
 A medida de persistência Ponzi me parece mais adequada para capturar esse efeito.
 
-*** Discussão :limits:
+**** Discussão :limits:
 :PROPERTIES:
 :NOTER_PAGE: (30 0.510551948051948 . 0.24579831932773108)
 :HIGHLIGHT: #s(pdf-highlight 30 (30 (0.7626050420168067 0.510551948051948 0.24579831932773108 0.5300324675324676)))
@@ -474,7 +1131,7 @@ Dado que trata-se somente de empresas de capital aberto, esse não é o market-s
 Caso exista uma empresa de capital fechado que seja grande, pode mascarar essas outras empresas como sendo maiores que são de fato.
 Alternativamente, pode inputar um nível de homogeneidade forçado
 
-*** Inconsistência :limits:lit:
+**** Inconsistência :limits:lit:
 :PROPERTIES:
 :NOTER_PAGE: (30 0.6465097402597403 . 0.4002100840336134)
 :HIGHLIGHT: #s(pdf-highlight 30 (30 (0.4002100840336134 0.6473214285714286 0.75 0.6465097402597403)))
@@ -485,7 +1142,7 @@ Alternativamente, pode inputar um nível de homogeneidade forçado
 A revisão da literatura não abarcou todos esses sinais esperados.
 Além disso, não foi feita nenhuma menção ao nível tecnológico (apenas produtividade).
 
-*** M&A :method:critique:
+**** M&A :method:critique:
 :PROPERTIES:
 :NOTER_PAGE: (30 0.7958603896103896 . 0.17121848739495799)
 :HIGHLIGHT: #s(pdf-highlight 30 (30 (0.17121848739495799 0.7991071428571429 0.6754201680672268 0.7958603896103896)))
@@ -495,7 +1152,7 @@ Além disso, não foi feita nenhuma menção ao nível tecnológico (apenas prod
 
 Antes, dada a entender que seriam incluídas. Confuso.
 
-*** Revisão incompleta :critique:lit:
+**** Revisão incompleta :critique:lit:
 :PROPERTIES:
 :NOTER_PAGE: (31 0.43547077922077926 . 0.2652310924369748)
 :HIGHLIGHT: #s(pdf-highlight 31 (31 (0.2652310924369748 0.43547077922077926 0.49054621848739494 0.47443181818181823)))
@@ -510,7 +1167,7 @@ responde a um determinado conjunto de variáveis
 Isso não apareceu na revisão da literatura.
 Talvez fosse interessante que fosse discutido com mais calma
 
-*** Desconexo :method:limits:lit:
+**** Desconexo :method:limits:lit:
 :PROPERTIES:
 :NOTER_PAGE: (31 0.47849025974025977 . 0.5320378151260504)
 :HIGHLIGHT: #s(pdf-highlight 31 (31 (0.5399159663865546 0.47849025974025977 0.5320378151260504 0.5430194805194806)))
@@ -525,7 +1182,7 @@ como regressor no painel para evitar o possível viés.
 
 Essa frase é bem pouco explicativa sobre o que será feito e o porquê.
 
-*** Modelo a ser adotado :results:
+**** Modelo a ser adotado :results:
 :PROPERTIES:
 :NOTER_PAGE: (31 0.6919642857142858 . 0.38550420168067223)
 :HIGHLIGHT: #s(pdf-highlight 31 (31 (0.38550420168067223 0.6919642857142858 0.5425420168067226 0.7138798701298702)))
@@ -538,7 +1195,7 @@ maior coeficiente de ajustamento (𝑝𝑠𝑒𝑢𝑑𝑜-𝑅 2 = 0,047)
 
 Nota-se um R ajustado bastante baixo.
 
-*** Questão de pesquisa :method:data:
+**** Questão de pesquisa :method:data:
 :PROPERTIES:
 :NOTER_PAGE: (32 0.12053571428571429 . 0.38707983193277307)
 :HIGHLIGHT: #s(pdf-highlight 32 (32 (0.38707983193277307 0.12053571428571429 0.4774159663865546 0.14610389610389612)))
@@ -551,7 +1208,7 @@ posição Ponzi aumentou essa probabilidade?
 
 Parece um recorte mais acabado, mas dado o lugar da pergunta, parece que foi feita emergencialmente.
 
-*** Problemático :data:results:critique:empirics:
+**** Problemático :data:results:critique:empirics:
 :PROPERTIES:
 :NOTER_PAGE: (32 0.16964285714285715 . 0.13497899159663865)
 :HIGHLIGHT: #s(pdf-highlight 32 (32 (0.13497899159663865 0.17735389610389612 0.18960084033613445 0.16964285714285715)))
@@ -563,7 +1220,7 @@ Não foi feita uma análise dos resultados além de dizer que obteve-se os resul
 Não analisou-se quais as covariadas que são estatisticamente significantes.
 Também existem efeitos de interações presentes na estimação que não foram justificados.
 
-*** Análise dos coeficientes :results:discuss:
+**** Análise dos coeficientes :results:discuss:
 :PROPERTIES:
 :NOTER_PAGE: (32 0.8624188311688312 . 0.11659663865546217)
 :HIGHLIGHT: #s(pdf-highlight 32 (32 (0.11659663865546217 0.8624188311688312 0.5063025210084033 0.9050324675324676)))
@@ -578,7 +1235,7 @@ Ademais, à exceção de 𝐷 𝑃𝑜𝑛𝑧𝑖 e ℎ𝑜𝑙𝑑𝑒𝑟.�
 Aqui sim são mencionados o sinal dos resultados.
 Porém, o fato de D_Ponzi contemporânio não ser estatisticamente significante sugere que a hipótese de trabalho não é validada?
 
-*** Interpretação :results:discuss:misc:
+**** Interpretação :results:discuss:misc:
 :PROPERTIES:
 :NOTER_PAGE: (33 0.1002435064935065 . 0.11659663865546217)
 :HIGHLIGHT: #s(pdf-highlight 33 (33 (0.11659663865546217 0.10064935064935066 0.759453781512605 0.1002435064935065)))
@@ -592,7 +1249,7 @@ A interelação entre REC e SALE(q=1) é interessante.
 Sugere que a crise afeta as firmas de forma desigual.
 Uma pergunta interessante seria avaliar se isso se aplica somente à base restrita ou não.
 
-*** Resultados e zombies :results:discuss:
+**** Resultados e zombies :results:discuss:
 :PROPERTIES:
 :NOTER_PAGE: (33 0.2309253246753247 . 0.21218487394957983)
 :HIGHLIGHT: #s(pdf-highlight 33 (33 (0.21218487394957983 0.23863636363636365 0.45483193277310924 0.2309253246753247)))
@@ -606,7 +1263,7 @@ Interessante que a interação entre Ponzi*Ponzi tem sinais alternados a depende
 Mas apenas na amostra restrita isso foi estatisticamente significante (com o sinal esperado.)
 Nota-se também que a persistência de Ponzi é mais relevante do que ser Ponzi em um período (o que parece corroborar com Zumbi)
 
-*** Qual? :misc:
+**** Qual? :misc:
 :PROPERTIES:
 :NOTER_PAGE: (33 0.29870129870129875 . 0.4611344537815126)
 :HIGHLIGHT: #s(pdf-highlight 33 (33 (0.4611344537815126 0.3047889610389611 0.7226890756302521 0.29870129870129875)))
@@ -617,7 +1274,7 @@ Nota-se também que a persistência de Ponzi é mais relevante do que ser Ponzi 
 Deveria indicar se está se referindo à base restrita ou não.
 Entende-se que é a base restrita, mas poderia estar mais claro
 
-*** Efeito de liquidez :results:
+**** Efeito de liquidez :results:
 :PROPERTIES:
 :NOTER_PAGE: (33 0.507711038961039 . 0.17436974789915966)
 :HIGHLIGHT: #s(pdf-highlight 33 (33 (0.17436974789915966 0.507711038961039 0.21428571428571427 0.5974025974025975)))
@@ -636,7 +1293,7 @@ Condicionado à Ponzi, faz sentido.
 Mas não seria esperado que o aumento de liquidez pudesse contrabalançar?
 Essa discussão deveria ser feita com mais calma.
 
-*** Limitações :limits:
+**** Limitações :limits:
 :PROPERTIES:
 :NOTER_PAGE: (33 0.7739448051948052 . 0.384453781512605)
 :HIGHLIGHT: #s(pdf-highlight 33 (33 (0.7258403361344538 0.7739448051948052 0.384453781512605 0.7938311688311689)))
@@ -647,7 +1304,7 @@ e momento do ciclo econômico.''
 
 Vale lembrar que nenhuma dessas duas são captadas pelo modelo atual
 
-*** Base restrita :limits:empirics:
+**** Base restrita :limits:empirics:
 :PROPERTIES:
 :NOTER_PAGE: (33 0.8847402597402598 . 0.47163865546218486)
 :HIGHLIGHT: #s(pdf-highlight 33 (33 (0.47163865546218486 0.8847402597402598 0.5330882352941176 0.9030032467532468)))
@@ -662,7 +1319,7 @@ Não parecem existir Dummies temporais.
 
 A categoria de referência corresponde a uma firma não-Ponzi nos períodos t e t−1, com EBITDA não negativo, pertencente às categorias omitidas das demais dummies e avaliada nos valores de referência das variáveis contínuas.
 
-*** Resultados :results:discuss:
+**** Resultados :results:discuss:
 :PROPERTIES:
 :NOTER_PAGE: (34 0.21266233766233766 . 0.7069327731092436)
 :HIGHLIGHT: #s(pdf-highlight 34 (34 (0.7069327731092436 0.21266233766233766 0.7752100840336135 0.25162337662337664)))
@@ -677,14 +1334,14 @@ maiores chances de saírem do mercado, conempresando assim nossa hipótese inici
 Essa interação, que me parece medir Zumbis, é tido como o salva-vidas dos resultados.
 Além disso, foi pouco discutido como liquidez seria esperado ter um efeito positivo sobre a probabilidade de mortalidade.
 
-* Capítulo 2: Uma Análise Minskyana da Evolução do Endividamento das Famílias Americanas (1989-2019)
+** Capítulo 2: Uma Análise Minskyana da Evolução do Endividamento das Famílias Americanas (1989-2019)
 :PROPERTIES:
 :NOTER_DOCUMENT: /HDD/PDFs/Defesas/Rosa - 2026 - Três ensaios sobre a fragilidade financeira revisitando Minsky a partir das empresas não-financeira.pdf
 :NOTER_PAGE: 67
 :END:
 
 
-** Questão teórica que deve ser discutida :theory:hypo:discuss:
+*** Questão teórica que deve ser discutida :theory:hypo:discuss:
 :PROPERTIES:
 :NOTER_PAGE: (35 0.6347402597402598 . 0.16334033613445378)
 :HIGHLIGHT: #s(pdf-highlight 35 (35 (0.16334033613445378 0.6347402597402598 0.6769957983193277 0.6367694805194806)))
@@ -695,7 +1352,7 @@ Além disso, foi pouco discutido como liquidez seria esperado ter um efeito posi
 Se não for incluída inflação de ativos, essa história pode estar incompleta.
 Além disso, outra discussão é se as famílias se endividam para consumo ou para adquirir ativos (ver [cite:@mason_2018_income])
 
-** Causalidade e precedência :discuss:limits:
+*** Causalidade e precedência :discuss:limits:
 :PROPERTIES:
 :NOTER_PAGE: (35 0.6980519480519481 . 0.33560924369747897)
 :HIGHLIGHT: #s(pdf-highlight 35 (35 (0.33560924369747897 0.6980519480519481 0.7815126050420168 0.7041396103896105)))
@@ -706,7 +1363,7 @@ Além disso, outra discussão é se as famílias se endividam para consumo ou pa
 Essa não é uma afirmação simples de ser feita (seja para confrontar ou aceitar a nova narrativa)
 
 
-** Qualificação sobre o endividamento das famílias :context:discuss:
+*** Qualificação sobre o endividamento das famílias :context:discuss:
 :PROPERTIES:
 :NOTER_PAGE: (37 0.2515979081929111 . 0.262406015037594)
 :END:
@@ -720,7 +1377,7 @@ algo disseminado ao longo de diversos países (PETRINI; TEIXEIRA, 2021). (p. 37)
 
 É verdade que o endividamento das famílias aumentou, mas também é verdade que ele é majoritariamente associado à aquisição de imóveis.
 
-** Background and motivation :context:
+*** Background and motivation :context:
 :PROPERTIES:
 :NOTER_PAGE: (37 0.3631609529343405 . 0.2406015037593985)
 :END:
@@ -731,7 +1388,7 @@ rompendo com a postura anterior que relegava as investigações sobre esse assun
 a um plano secundário (BROCHIER; SILVA, 2017; ĆORIĆ, 2011). (p. 37)
 #+end_quote
 
-** Mencionada importância de inflação de ativos :context:hypo:
+*** Mencionada importância de inflação de ativos :context:hypo:
 :PROPERTIES:
 :NOTER_PAGE: (37 0.546775130737943 . 0.3330827067669173)
 :END:
@@ -745,7 +1402,7 @@ dos imóveis (BORIO, 2014). (p. 37)
 
 No entanto, não parece ter um peso tão relevante para a discussão até agora.
 
-** Com a diferença que imóvel se valoriza :hypo:critique:
+*** Com a diferença que imóvel se valoriza :hypo:critique:
 :PROPERTIES:
 :NOTER_PAGE: (38 0.09819872167344566 . 0.21654135338345865)
 :END:
@@ -759,7 +1416,7 @@ imóveis residenciais os elementos mais visados (p. 38)
 Isso é importante para contrastar essa discussão com a do consumo financiado por crédito.
 Além disso, nos EUA é possível ter uma segunda hipoteca sem precisar vender o imóvel [cite:@green_2014_international].
 
-** Background and motivation :context:
+*** Background and motivation :context:
 :PROPERTIES:
 :NOTER_PAGE: (38 0.2829750145264381 . 0.6015037593984963)
 :END:
@@ -773,7 +1430,7 @@ participação em portfólio (ADELINO; SCHOAR; SEVERINO, 2017). (p. 38)
 
 Contextualizando a nova narrativa.
 
-** Endividamento para consumo é questionável :discuss:critique:
+*** Endividamento para consumo é questionável :discuss:critique:
 :PROPERTIES:
 :NOTER_PAGE: (38 0.37187681580476467 . 0.5225563909774437)
 :END:
@@ -787,7 +1444,7 @@ posse imobiliária e o endividamento para consumo29 (p. 38)
 [cite:@mason_2018_income] discute que as famílias se endividam para comprar ativos, não bens de consumo.
 Então seria interessante qualificar se a co-movimentação entre endividamento e consumo implica em endividamento para consumo.
 
-** Como será utilizado o investimento das famílias :hypo:discuss:
+*** Como será utilizado o investimento das famílias :hypo:discuss:
 :PROPERTIES:
 :NOTER_PAGE: (38 0.6641487507263218 . 0.35939849624060155)
 :END:
@@ -802,7 +1459,7 @@ uma proxy da fragilidade do setor institucional como um todo. (p. 38)
 Isso porque Minsky avalia a necessidade de financiamento do investimento.
 Para as famílias, uma vez quitado um imóvel, esse fluxo não se faz tão relevante a longo prazo (preciso pensar mais)
 
-** Endividamento descolado de inflação de ativos :hypo:critique:
+*** Endividamento descolado de inflação de ativos :hypo:critique:
 :PROPERTIES:
 :NOTER_PAGE: (39 0.14177803602556652 . 0.16466165413533834)
 :END:
@@ -819,7 +1476,7 @@ O endividamento das famílias parece incompleto sem essa dimessão.
 Se as famílias assumem um compromisso financeiro à uma certa taxa de juros nominal, mas a taxa de inflação imobiliária é maior, as famílias estão melhorando seu posicionamento financeiro.
 Isso se torna mais relevante no caso como os EUA que não é necessário vender o imóvel para ter acesso à crédito (Segunda hipoteca).
 
-** Curva de concentração de imóveis :insight:misc:
+*** Curva de concentração de imóveis :insight:misc:
 :PROPERTIES:
 :NOTER_PAGE: (39 0.3294596165020337 . 0.4285714285714286)
 :END:
@@ -834,7 +1491,7 @@ lizados para a construção da taxonomia minskyana. (p. 39)
 Uma discussão que seria interessante é incluir uma curva de concentração de imóveis, ordenando pelo patrimônio líquido das famílias.
 Uma forma de testar a nova narrativa é checar se é cauda superior da distribuição obteve mais imóveis secundário (e de fato concentrou mais).
 
-** Discussão sobre crescimento e não sobre HIF :discuss:
+*** Discussão sobre crescimento e não sobre HIF :discuss:
 :PROPERTIES:
 :NOTER_PAGE: (39 0.4962231260894828 . 0.2796992481203008)
 :END:
@@ -847,7 +1504,7 @@ relações financeiras das famílias com o crescimento econômico. (p. 39)
 
 Dado o objeto do capítulo, a relação entre endividamento e crescimento parece ser menos relevante do que entre endividamento e estabilidade financeira macroeconômica.
 
-** Background and motivation :context:
+*** Background and motivation :context:
 :PROPERTIES:
 :NOTER_PAGE: (39 0.5421266705403834 . 0.11503759398496241)
 :END:
@@ -860,15 +1517,14 @@ tentam formar o consenso sobre a constituição da Crise de 2008. (p. 39)
 
 Ok, agora focou mais sobre a crise e não sobre crescimento.
 
-** Literature dialogue :discuss:
+*** Literature dialogue :discuss:
 :PROPERTIES:
 :NOTER_PAGE: (40 0.14700755374782104 . 0.14661654135338348)
 :END:
 
 
 #+begin_quote
-Segundo Minsky (1986), a economia evolui endogenamente de posições estáveis para in-
-stáveis. Isso ocorre em razão da dinâmica pró-cíclica do endividamento dos agentes, sustentada pela
+Segundo Minsky (1986), a economia evolui endogenamente de posições estáveis para instáveis. Isso ocorre em razão da dinâmica pró-cíclica do endividamento dos agentes, sustentada pela
 percepção de risco dos bancos, frequentemente obscurecida por expectativas otimistas. Quando
 um subconjunto de unidades não consegue cumprir seus compromissos financeiros, isso pode des-
 encadear uma anomalia na sustentação das relações financeiras da economia, resultando em uma
@@ -877,7 +1533,7 @@ crise. (p. 40)
 
 Insistindo, o próprio Minsky achava que as famílias não poderiam ser o gatilho deste processo (procurar citação).
 
-** Oferta de crédito e inflação de ativos :discuss:critique:
+*** Oferta de crédito e inflação de ativos :discuss:critique:
 :PROPERTIES:
 :NOTER_PAGE: (40 0.30447414294015107 . 0.18345864661654138)
 :END:
@@ -891,7 +1547,7 @@ o crédito, desencadeando uma série de efeitos negativos. (p. 40)
 Isso reforça o porque é importante incluir inflação de ativos.
 Nessa questão em específico, se as famílias dão calote e devolvem as casas (institucionalmente isso é o suficiente para saldar a dívida nos EUA), o banco possui uma estrutura financeira mais fragilizada que, por sua vez, restringe a concessão de crédito --- via Basileia --- independentemente das expectativas dos bancos.
 
-** Literature dialogue :discuss:misc:
+*** Literature dialogue :discuss:misc:
 :PROPERTIES:
 :NOTER_PAGE: (40 0.4648460197559558 . 0.21654135338345865)
 :END:
@@ -906,7 +1562,7 @@ ser estabelecidos (SILIPO, 2011). (p. 40)
 Não só não dão a importância, mas achava-se que não era relevante.
 Não é uma mera desatenção, mas uma desatenção proposital.
 
-** Revisão da literatura muito rasa :lit:
+*** Revisão da literatura muito rasa :lit:
 :PROPERTIES:
 :NOTER_PAGE: (40 0.7821034282393957 . 0.2406015037593985)
 :END:
@@ -920,7 +1576,7 @@ familiar como mecanismo central para a explicação dos ciclos econômicos. (p. 
 Da forma que foi anunciado, achei que viria uma seção sobre isso, mas são apenas dois parágrafos.
 A revisão da literatura poderia ser mais aprofundada.
 
-** Literature dialogue :lit:
+*** Literature dialogue :lit:
 :PROPERTIES:
 :NOTER_PAGE: (41 0.1231841952353283 . 0.5684210526315789)
 :END:
@@ -934,7 +1590,7 @@ seriam ambíguos (e.g., Kim, Setterfield e Mei (2014) e Kapeller e Schütz (2015
 
 Exemplo, não foi mencionado se quer quais são os mecanismos relevantes para ter esses resultados.
 
-** Paradoxo da dívida :critique:lit:
+*** Paradoxo da dívida :critique:lit:
 :PROPERTIES:
 :NOTER_PAGE: (41 0.21615339918651946 . 0.5406015037593985)
 :END:
@@ -951,7 +1607,7 @@ taxa exógena de gastos não-criadores de capacidade. (p. 41)
 
 Aqui, por exemplo, a descrição está bastante vaga para tratar do paradoxo da dívida (aumento do fator gerador de dívida implica redução do nível de endividamento)
 
-** Escassez literatura :theory:critique:lit:
+*** Escassez literatura :theory:critique:lit:
 :PROPERTIES:
 :NOTER_PAGE: (41 0.5851249273678094 . 0.1774436090225564)
 :END:
@@ -969,7 +1625,7 @@ guiados por uma dinâmica exógena (SUFI; TAYLOR, 2021). (p. 41)
 Aqui, por exemplo, seria interessante traçar alguns paralelos mais recentes da abordagem mainstream que incorpora as ideias do Minsky e descolam da HER.
 É verdade que HER continuam sendo muito influentes e que as variáveis financeiras desempenham um papel menor, mas me parece mais um espantalho.
 
-** Mainstream vs heterodoxia :misc:
+*** Mainstream vs heterodoxia :misc:
 :PROPERTIES:
 :NOTER_PAGE: (42 0.10110400929692039 . 0.11879699248120301)
 :END:
@@ -988,7 +1644,7 @@ Ao passo que alguém poderia categorizar o Minsky como neoclássico por utilizar
 Outro ponto interessante a se destacar é que o Keep up with Joneses também pode ter similaridades com ciclo de vida.
 Invés de ser uma comparação intertemporal, é uma comparação horizontal entre os pares.
 
-** E qual a diferença disso para ciclo de vida? :discuss:
+*** E qual a diferença disso para ciclo de vida? :discuss:
 :PROPERTIES:
 :NOTER_PAGE: (42 0.17024985473561882 . 0.17518796992481203)
 :END:
@@ -1001,7 +1657,7 @@ relação à sua tendência de longo prazo. (p. 42)
 
 Preciso ter isso bem claro
 
-** Nem todo endividamento é igual :discuss:
+*** Nem todo endividamento é igual :discuss:
 :PROPERTIES:
 :NOTER_PAGE: (43 0.10110400929692039 . 0.15639097744360902)
 :END:
@@ -1016,7 +1672,7 @@ e imóveis ocorre geralmente por meio do uso de crédito, cuja disponibilidade e
 Não é exagero dizer que os efeitos podem ser bastante distintos se as famílias se endividam para consumo de bens duráveis/casas para gastos rotineiros.
 Essa última situação seria a de famílias Ponzi.
 
-** Imóveis vs Investimento residencial :hypo:discuss:
+*** Imóveis vs Investimento residencial :hypo:discuss:
 :PROPERTIES:
 :NOTER_PAGE: (43 0.19000581057524693 . 0.11503759398496241)
 :END:
@@ -1030,7 +1686,7 @@ um aumento no preço dos imóveis e demais ativos reais (p. 43)
 Uma qualificação importante é que os determinantes do preços dos imóveis é diferente do que o determinante do preços de novas casas.
 Dito de outro modo, o estoque de casas é muito maior do que o fluxo de investimento, então deve-se tomar cuidado quando avalia o impacto do juros sobre o preço dos imóveis (e qual medida de preço está sendo considerada).
 
-** Separar tipos de endividamento :empirics:
+*** Separar tipos de endividamento :empirics:
 :PROPERTIES:
 :NOTER_PAGE: (44 0.2812318419523533 . 0.37443609022556396)
 :END:
@@ -1045,7 +1701,7 @@ gastos com hipotecas estavam alavancados em três vezes a sua renda. (p. 44)
 
 Seria bom tentar separar o que é endividamento hipotecário (depende do preços dos imóvies) do crédito bancário de cartão.
 
-** Análise econométrica diz muito pouco :limits:
+*** Análise econométrica diz muito pouco :limits:
 :PROPERTIES:
 :NOTER_PAGE: (45 0.09877977919814061 . 0.4421052631578948)
 :END:
@@ -1058,7 +1714,7 @@ Por meio de análise econométrica, (p. 45)
 
 Precisa ser mais descritivo. Séries temporais? Painel?
 
-** Endividamento e emulação condicionados à hipotecas :insight:misc:
+*** Endividamento e emulação condicionados à hipotecas :insight:misc:
 :PROPERTIES:
 :NOTER_PAGE: (45 0.19581638582219638 . 0.3097744360902256)
 :END:
@@ -1071,7 +1727,7 @@ pela existência das propriedades imobiliárias (p. 45)
 
 Isso indica o porquê inflação de ativos é relevante.
 
-** Taxa prórpia de juros :discuss:limits:
+*** Taxa prórpia de juros :discuss:limits:
 :PROPERTIES:
 :NOTER_PAGE: (45 0.578733294596165 . 0.1766917293233083)
 :END:
@@ -1086,7 +1742,7 @@ tempo (BARTSCHER et al., 2020). (p. 45)
 No entanto, se o preço dos imóveis cresceu mais que a taxa de juros, as famílias estaria se endividando?
 O aumento do nível de consumo deveria ser ainda maior para implicar em maior endividamento, não?
 
-** Inclusão de imóveis secundários :discuss:
+*** Inclusão de imóveis secundários :discuss:
 :PROPERTIES:
 :NOTER_PAGE: (45 0.8762347472399767 . 0.14887218045112782)
 :END:
@@ -1100,7 +1756,7 @@ ocupados pelo proprietário. (p. 45)
 No entanto, a inclusão de imóveis secundários não poderia trazer evidências sobre a nova narrativa?
 Quem especula, não irá especular necessariamente com a sua própria casa.
 
-** Não definido anteriormente :misc:
+*** Não definido anteriormente :misc:
 :PROPERTIES:
 :NOTER_PAGE: (46 0.6821615339918652 . 0.3406015037593985)
 :END:
@@ -1113,7 +1769,7 @@ HCV, (p. 46)
 
 Infere-se Hipótese do Ciclo de vida.
 
-** Sem fio condutor :discuss:
+*** Sem fio condutor :discuss:
 :PROPERTIES:
 :NOTER_PAGE: (47 0.10110400929692039 . 0.181203007518797)
 :END:
@@ -1127,7 +1783,7 @@ Ademais, (p. 47)
 De modo geral, o fio condutor da revisão da litratura empírica está pouco fluida.
 Não se tem uma revisão com propósito, apenas uma sequência de resultados com pouca costura entre eles.
 
-** Mistura de temas :hypo:discuss:
+*** Mistura de temas :hypo:discuss:
 :PROPERTIES:
 :NOTER_PAGE: (47 0.23590935502614757 . 0.1766917293233083)
 :END:
@@ -1141,7 +1797,7 @@ possuem, (p. 47)
 Está misturando uma discussão sobre causas do endividamento das famílias com a causa da crise.
 É bem provável que ambos estejam correlacionados, mas essa relação, por si só, não é simples de ser avaliada.
 
-** Purpose, Relevance, and Contribution :hypo:
+*** Purpose, Relevance, and Contribution :hypo:
 :PROPERTIES:
 :NOTER_PAGE: (47 0.36955258570598487 . 0.2398496240601504)
 :END:
@@ -1155,7 +1811,7 @@ econômica do período? (p. 47)
 Mergulha na discussão institucional
 
 
-** Literature dialogue :context:
+*** Literature dialogue :context:
 :PROPERTIES:
 :NOTER_PAGE: (48 0.5299244625217896 . 0.6458646616541354)
 :END:
@@ -1170,7 +1826,7 @@ sendo posteriormente generalizado para todo o setor nos anos seguintes. (p. 48)
 Antes disso, não estava associado ao endividamento das famílias, apenas à evolução da institucionalidade bancária e como isso facilitou o acesso ao crédito.
 Caso essa seção dê mais foco ao acesso ao crédito, não parece ter respondido à pergunta que antecedeu a seção.
 
-** O spread aumentou, não? :discuss:empirics:
+*** O spread aumentou, não? :discuss:empirics:
 :PROPERTIES:
 :NOTER_PAGE: (49 0.19291109819872165 . 0.23007518796992482)
 :END:
@@ -1181,7 +1837,7 @@ Mesmo com uma queda tendencial dos juros básicos, não houve possibilidade de
 ampliação do spread (Gráfico 1), (p. 49)
 #+end_quote
 
-** Como captar nova narrativa? :context:hypo:discuss:
+*** Como captar nova narrativa? :context:hypo:discuss:
 :PROPERTIES:
 :NOTER_PAGE: (49 0.7669959325973271 . 0.1729323308270677)
 :END:
@@ -1197,7 +1853,7 @@ O que está sendo dito sobre a parte inferior da distribuição é factual, mas 
 
 Além disso, me ocorreu que existe alguma evidência que os muito ricos compram casa com dinheiro, não com crédito.
 
-** Separação de tipos de crédito :discuss:limits:
+*** Separação de tipos de crédito :discuss:limits:
 :PROPERTIES:
 :NOTER_PAGE: (50 0.3945380592678675 . 0.18947368421052632)
 :END:
@@ -1213,7 +1869,7 @@ Dad que está sendo discutida a relação entre endividamento e consumo, é impo
 Da forma como essa seção é construída, não fica claro se está se referindo à endividamento para consumo e para aquisição de ativos.
 Imagino que a restrição dos dados torne essa separação mais turva, mas é algo que precisa estar claro em termos de análise.
 
-** Instituições e nova narrativa :critique:limits:
+*** Instituições e nova narrativa :critique:limits:
 :PROPERTIES:
 :NOTER_PAGE: (51 0.1871005229517722 . 0.3691729323308271)
 :END:
@@ -1232,7 +1888,7 @@ Isso deve ser tomado com mais cuidado.
 No limite, existe um anacronismo institucional?
 
 
-** O que a seção fez :limits:
+*** O que a seção fez :limits:
 :PROPERTIES:
 :NOTER_PAGE: (52 0.6879721092388146 . 0.17518796992481203)
 :END:
@@ -1246,7 +1902,7 @@ cia que atravessa o período discutido (p. 52)
 Parece que esta seção descreveu como os bancos caminharam para esse tipo de comportamento (foco em hipotecas, juros mais baixos, crédito para as famílias) e, por consequência, como subprime se tornou relevante.
 De forma mais secundária, foi a explicação do endividamento (para quê) das famílias que, por sua vez, é o centro do capítulo.
 
-** Antecedência :limits:
+*** Antecedência :limits:
 :PROPERTIES:
 :NOTER_PAGE: (53 0.305055200464846 . 0.11879699248120301)
 :END:
@@ -1270,7 +1926,7 @@ No entanto, o que foi relatado aqui é que essas mudanças institucionais tivera
 
 
 
-** Efeito amplificador do preço dos imóveis sobre o crédito :discuss:
+*** Efeito amplificador do preço dos imóveis sobre o crédito :discuss:
 :PROPERTIES:
 :NOTER_PAGE: (54 0.18768158047646716 . 0.3984962406015038)
 :END:
@@ -1285,7 +1941,7 @@ ser observado na realização de empréstimos subprime a despeito do score de cr
 
 Se, por um lado, a queda do preço dos imóveis inibe a concessão de crédito; a inflação de ativo intensifica.
 
-** Recorte temporal :data:limits:
+*** Recorte temporal :data:limits:
 :PROPERTIES:
 :NOTER_PAGE: (55 0.4427658338175479 . 0.1180451127819549)
 :END:
@@ -1298,7 +1954,7 @@ anteriores à crise fitossanitária do Covid-19, cuja análise requer um horizon
 
 Se a ideia é avaliar a crise, porque estender até 2019?
 
-** Dados utilizados :data:limits:
+*** Dados utilizados :data:limits:
 :PROPERTIES:
 :NOTER_PAGE: (55 0.557815223707147 . 0.18646616541353384)
 :END:
@@ -1311,7 +1967,7 @@ utilizadas apresentadas na Tabela 3. (p. 55)
 
 A tabela é incompreensível.
 
-** Qual método? :data:limits:empirics:
+*** Qual método? :data:limits:empirics:
 :PROPERTIES:
 :NOTER_PAGE: (55 0.6827425915165601 . 0.1766917293233083)
 :END:
@@ -1324,7 +1980,7 @@ Contudo, os dados do SCF apresentam limitações (p. 55)
 
 Até agora não foi mencionado qual é o método utilizado.
 
-** Faz sentido descontar consumo de não duráveis e alugueis? :data:discuss:limits:
+*** Faz sentido descontar consumo de não duráveis e alugueis? :data:discuss:limits:
 :PROPERTIES:
 :NOTER_PAGE: (56 0.7484020918070888 . 0.1774436090225564)
 :END:
@@ -1339,7 +1995,7 @@ aluguel imobiliário, bens de consumo não duráveis, serviços públicos e de c
 Se o preço dos imóveis aumenta, o aluguel não aumentaria também?
 Se a hipótese é ver endividamento e consumo, descontar consumo corriqueiro é adequado? (Dúvida mesmo)
 
-** Não há separação dos tipos de dívida :data:limits:empirics:
+*** Não há separação dos tipos de dívida :data:limits:empirics:
 :PROPERTIES:
 :NOTER_PAGE: (57 0.6990122022080185 . 0.1736842105263158)
 :END:
@@ -1352,7 +2008,7 @@ o montante dos juros a serem pagos para cada dívida. (p. 57)
 
 Essa parece ser uma restrição bastante relevante para a pesquisa.
 
-** Pensar melhor :method:discuss:
+*** Pensar melhor :method:discuss:
 :PROPERTIES:
 :NOTER_PAGE: (58 0.16850668216153397 . 0.22781954887218048)
 :END:
@@ -1369,7 +2025,7 @@ cuidados pessoais e públicos (𝑠𝑒𝑟𝑣), aluguel imobiliário (𝑟𝑒
 
 Preciso pensar nessa definição com mais calma.
 
-** Investimento residensial :discuss:critique:limits:
+*** Investimento residensial :discuss:critique:limits:
 :PROPERTIES:
 :NOTER_PAGE: (58 0.3637420104590354 . 0.26015037593984963)
 :END:
@@ -1382,7 +2038,7 @@ estoque de riqueza (p. 58)
 
 Investimento residencial não é um tipo de gasto análogo? Ele é passível de valorização e, em caso de investidores, de diversificação (esse é mais forçado)
 
-** Segmentação da dívida :method:
+*** Segmentação da dívida :method:
 :PROPERTIES:
 :NOTER_PAGE: (58 0.5020337013364323 . 0.40902255639097745)
 :END:
@@ -1397,7 +2053,7 @@ empréstimo estudantil, cartão de crédito, etc.). (p. 58)
 
 É uma segmentação interessante, mas seria bom ter explícito se possui construção de casas (investimento residencial) ou aprimoramentos menores
 
-** Ou ganhos de capital? :data:
+*** Ou ganhos de capital? :data:
 :PROPERTIES:
 :NOTER_PAGE: (59 0.20278907611853572 . 0.4571428571428572)
 :END:
@@ -1410,7 +2066,7 @@ ora os ganhos com ativos de capital. (p. 59)
 
 Isso é importante para saber se está se referindo à valorização de imóveis (se contém) ou à atividade ligadas às firmas.
 
-** Interessante :contrib:
+*** Interessante :contrib:
 :PROPERTIES:
 :NOTER_PAGE: (59 0.2452062754212667 . 0.10902255639097745)
 :END:
@@ -1420,7 +2076,7 @@ Isso é importante para saber se está se referindo à valorização de imóveis
 a importância relativa de cada fonte de rendimento para a sustentação do estoque da dívida. (p. 59)
 #+end_quote
 
-** Gap bastante interessante :contrib:results:
+*** Gap bastante interessante :contrib:results:
 :PROPERTIES:
 :NOTER_PAGE: (59 0.389308541545613 . 0.20075187969924813)
 :END:
@@ -1431,7 +2087,7 @@ a importância relativa de cada fonte de rendimento para a sustentação do esto
 Figura 2: (p. 59)
 #+end_quote
 
-** Descasamento temporal :data:discuss:insight:
+*** Descasamento temporal :data:discuss:insight:
 :PROPERTIES:
 :NOTER_PAGE: (60 0.23939570017431724 . 0.10977443609022557)
 :END:
@@ -1453,7 +2109,7 @@ Não é fácil perceber qual cresceu mais assim.
 
 TODO: Entender melhor o que é esse gap.
 
-** Isso não é evidência da nova narrativa? :data:limits:
+*** Isso não é evidência da nova narrativa? :data:limits:
 :PROPERTIES:
 :NOTER_PAGE: (60 0.8012783265543288 . 0.37518796992481207)
 :END:
@@ -1465,7 +2121,7 @@ compromissos financeiros, com maior participação nos grupos do topo da distrib
 em torno de 80% e chegando a 91% no último decil em 2007. (p. 60)
 #+end_quote
 
-** QUal é o ganho com o novo indicador? :critique:
+*** QUal é o ganho com o novo indicador? :critique:
 :PROPERTIES:
 :NOTER_PAGE: (61 0.19000581057524693 . 0.4398496240601504)
 :END:
@@ -1481,7 +2137,7 @@ Estava esperando ter algum dado de composição de famílias Ponzi, Hedge, etc, 
 
 Além disso, os gráficos não mostram isso de forma tão clara.
 
-** Evidência novo consenso :discuss:
+*** Evidência novo consenso :discuss:
 :PROPERTIES:
 :NOTER_PAGE: (61 0.4404416037187681 . 0.1766917293233083)
 :END:
@@ -1496,7 +2152,7 @@ e o maior crescimento da alavancagem. (p. 61)
 
 É o que me pareceu também, mas o texto dava a entender que chegaria à conclusão oposota.
 
-** Agora evidenciou que vai por ai :method:
+*** Agora evidenciou que vai por ai :method:
 :PROPERTIES:
 :NOTER_PAGE: (61 0.5072632190586868 . 0.21654135338345865)
 :END:
@@ -1512,7 +2168,7 @@ Seria bom tem uma estrutura da seção. Não estava claro quando as posições f
 
 OBS: A estrutura existe, só não está anunciada.
 
-** Como separar ambas na ausência de investimento? :critique:limits:
+*** Como separar ambas na ausência de investimento? :critique:limits:
 :PROPERTIES:
 :NOTER_PAGE: (61 0.9041255084253341 . 0.11578947368421054)
 :END:
@@ -1523,7 +2179,7 @@ OBS: A estrutura existe, só não está anunciada.
 Ponzi, com expressão muito pequena das posições especulativas. (p. 61)
 #+end_quote
 
-** Dados relativamente estáveis :results:discuss:
+*** Dados relativamente estáveis :results:discuss:
 :PROPERTIES:
 :NOTER_PAGE: (62 0.09936083672283556 . 0.41127819548872185)
 :END:
@@ -1540,7 +2196,7 @@ Curiosamente, não há uma queda de Ponzi pós crise.
 
 Uma pergunta para se pensar: famílias Zumbis?
 
-** Interpretação :discuss:
+*** Interpretação :discuss:
 :PROPERTIES:
 :NOTER_PAGE: (62 0.6932016269610691 . 0.1766917293233083)
 :END:
@@ -1570,7 +2226,7 @@ corrobora o antigo consenso.
 
 Cheguei a conclusões parecidas pelo gráfico.
 
-** Interessante :results:discuss:
+*** Interessante :results:discuss:
 :PROPERTIES:
 :NOTER_PAGE: (63 0.09587449157466589 . 0.11578947368421054)
 :END:
@@ -1592,7 +2248,7 @@ Questão para se pensar:
 Os mais ricos ficariam Ponzi mesmo declarando Default? Como categorizar Ponzi quando a especulação talvez não seja a principal fonte de renda? (talvez renda adicional)
 Existe alguma subcaptação?
 
-** Hipótese muito forte :hypo:critique:limits:
+*** Hipótese muito forte :hypo:critique:limits:
 :PROPERTIES:
 :NOTER_PAGE: (63 0.5461940732132481 . 0.48496240601503765)
 :END:
@@ -1622,7 +2278,7 @@ No limite, não me parece conflitante que as famílias mais pobres tenham uma po
 Acho que aqui reforça a importância de ter as curvas de concentração.
 Entender quando cada quartil entrou e saiu da bolha pode ser relevante para entender essa resposta.
 
-** Qualificar :discuss:
+*** Qualificar :discuss:
 :PROPERTIES:
 :NOTER_PAGE: (63 0.8349796629866356 . 0.262406015037594)
 :END:
@@ -1640,7 +2296,7 @@ Dado que elas são Ponzi, é mais provável que tenha uma posição financeira m
 Dizer que isso implica na fragilidade financeira macroeconômica é mais difícil de afirmar.
 Não sei dizer qual é a versão que me contenta mais, mas sei que a comprovação de nenhuma delas é simples.
 
-** Ausência de dados importante :discuss:limits:
+*** Ausência de dados importante :discuss:limits:
 :PROPERTIES:
 :NOTER_PAGE: (63 0.9058686809994189 . 0.1586466165413534)
 :END:
@@ -1655,7 +2311,7 @@ Não sei dizer qual é a versão que me contenta mais, mas sei que a comprovaç�
 
 Como não tem esses dados, difícil dizer qual foi o quartil que mais declarou default.
 
-** O que está sendo chamado de gasto? :limits:
+*** O que está sendo chamado de gasto? :limits:
 :PROPERTIES:
 :NOTER_PAGE: (64 0.12550842533410808 . 0.17593984962406017)
 :END:
@@ -1672,7 +2328,7 @@ Acho que o ponto é imóveis concentrados na mão do topo (sobretudo mais de um 
 Outro ponto é que o gasto com o imóvel deve acompanhar o preço.
 Então se o preço do imóvel aumentou e o gasto foi relativamente o mesmo, deve ter algum efeito redistribuição.
 
-** Principal divergência :critique:limits:
+*** Principal divergência :critique:limits:
 :PROPERTIES:
 :NOTER_PAGE: (64 0.5078442765833817 . 0.22781954887218048)
 :END:
@@ -1688,7 +2344,7 @@ indiretamente, pela valorização do preço dos imóveis (p. 64)
 Acho que aqui é a principal divergência.
 Valorização do preço dos imóveis tem efeito sobre a concessão de crédito dos mais pobres, então não diria que é simples isolar os dois efeitos.
 
-** Conclusão do capítulo :results:
+*** Conclusão do capítulo :results:
 :PROPERTIES:
 :NOTER_PAGE: (65 0.5990703079604881 . 0.19473684210526318)
 :END:
@@ -1700,7 +2356,7 @@ ligada aos padrões de endividamento das famílias mais pobres, corroborando o a
 #+end_quote
 
 
-** Hipoteca secundária :discuss:
+*** Hipoteca secundária :discuss:
 :PROPERTIES:
 :NOTER_PAGE: (66 0.11969785008715862 . 0.7195488721804512)
 :END:
@@ -1716,7 +2372,7 @@ Por isso os EUA são muito particulares.
 O proprietário nem precisa vender a propriedade para realizar o ganho de capital.
 Se a casa se valorizar, é possível ter acesso à novas linhas de crédito.
 
-** Interessantes :discuss:
+*** Interessantes :discuss:
 :PROPERTIES:
 :NOTER_PAGE: (122 0.09761766414875073 . 0.11503759398496241)
 :END:
@@ -1729,12 +2385,12 @@ Figura 17: (p. 122)
 #+end_quote
 
 
-* Capítulo 3: Posições Financeiras Comparadas – Uma análise setorial para as Empresas Não-Financeiras e Famílias dos Estados Unidos (1989 - 2022)
+** Capítulo 3: Posições Financeiras Comparadas – Uma análise setorial para as Empresas Não-Financeiras e Famílias dos Estados Unidos (1989 - 2022)
 :PROPERTIES:
 :NOTER_DOCUMENT: /HDD/PDFs/Defesas/Rosa - 2026 - Três ensaios sobre a fragilidade financeira revisitando Minsky a partir das empresas não-financeira.pdf
 :NOTER_PAGE: 123
 :END:
-** Texto pouco claro :limits:
+*** Texto pouco claro :limits:
 :PROPERTIES:
 :NOTER_PAGE: (67 0.4479953515398024 . 0.16015037593984963)
 :END:
@@ -1749,7 +2405,7 @@ produtivas e financeiras, por meio da taxonomia das posições financeiras. (p. 
 #+end_quote
 
 Essa parte do resumo parece dizer pouco.
-** Godley :discuss:lit:
+*** Godley :discuss:lit:
 :PROPERTIES:
 :NOTER_PAGE: (67 0.6397443346891342 . 0.3706766917293233)
 :END:
@@ -1763,7 +2419,7 @@ empresas ao longo do tempo; (p. 67)
 
 Para essa discussão, esperaria uma ponte com a discussão do Godley que faz traços parecidos em termos de posições financeiras líquidas e não em termos de Minsky.
 Godley avalia essa co-movimentação.
-** VEC? :method:
+*** VEC? :method:
 :PROPERTIES:
 :NOTER_PAGE: (67 0.7030796048808832 . 0.32781954887218046)
 :END:
@@ -1775,7 +2431,7 @@ essa última será empregada em um modelo de VAR. (p. 67)
 #+end_quote
 
 Se a hipótese é que elas co-movem, testaria a existência de um VEC.
-** Supporting Ideas and hypothesis :hypo:
+*** Supporting Ideas and hypothesis :hypo:
 :PROPERTIES:
 :NOTER_PAGE: (67 0.726321905868681 . 0.2037593984962406)
 :END:
@@ -1786,7 +2442,7 @@ fragilidade das famílias sustente as boas posições financeiras do setor das e
 #+end_quote
 
 Em termos de comparação com Godley, estaria desagregando as famílias.
-** Results :results:
+*** Results :results:
 :PROPERTIES:
 :NOTER_PAGE: (67 0.7460778617083091 . 0.16390977443609023)
 :END:
@@ -1798,7 +2454,7 @@ se deteriora com a persistente desfragilização das famílias. Enquanto que os 
 delo apresentam estimativas confiáveis para a relação entre o índice de fragilidade das famílias
 respondendo a taxas de crescimento do índice das empresas. (p. 67)
 #+end_quote
-** Autônoma porque depende de poder de compra, não de renda :discuss:lit:
+*** Autônoma porque depende de poder de compra, não de renda :discuss:lit:
 :PROPERTIES:
 :NOTER_PAGE: (69 0.7948866937826845 . 0.5766917293233083)
 :END:
@@ -1808,7 +2464,7 @@ respondendo a taxas de crescimento do índice das empresas. (p. 67)
 #+begin_quote
 decisão de gasto é autônoma(POSSAS, (p. 69)
 #+end_quote
-** Fragilidade de outros setors? :discuss:
+*** Fragilidade de outros setors? :discuss:
 :PROPERTIES:
 :NOTER_PAGE: (70 0.2545031958163858 . 0.1887218045112782)
 :END:
@@ -1821,7 +2477,7 @@ empresas. (p. 70)
 #+end_quote
 
 Acho que o déficit the outros setores sustenta a posição financeira boa das firmas (exemplo: governo).
-** Parece mais adequado em outros capítulos :critique:limits:
+*** Parece mais adequado em outros capítulos :critique:limits:
 :PROPERTIES:
 :NOTER_PAGE: (70 0.6780941313190005 . 0.11578947368421054)
 :END:
@@ -1835,7 +2491,7 @@ A Hipótese da Instabilidade Financeira (p. 70)
 
 Sequencialmente, faria mais sentido ter essa dicussão em capítulos anteriores.
 Como ensaios independentes, tem menos problema.
-** Falácia de composição :discuss:limits:lit:
+*** Falácia de composição :discuss:limits:lit:
 :PROPERTIES:
 :NOTER_PAGE: (71 0.26263800116211505 . 0.5135338345864662)
 :END:
@@ -1848,7 +2504,7 @@ de capitais de terceiros para viabilizar o investimento desejado. (p. 71)
 #+end_quote
 
 Insisto que seria importante ter menção à essa crítica.
-** Seria interessante tentar capturar essa ciclicidade :method:discuss:
+*** Seria interessante tentar capturar essa ciclicidade :method:discuss:
 :PROPERTIES:
 :NOTER_PAGE: (72 0.3701336432306798 . 0.6669172932330828)
 :END:
@@ -1864,7 +2520,7 @@ migração decisiva para as posições mais frágeis, como a especulativa82 (p. 
 Os dados estão à mão.
 Seria interessante ver se existe uma certa ciclicidade na distribuição das posições financeiras.
 Eventualmente filtrando.
-** Taxa de juros endógena? :critique:
+*** Taxa de juros endógena? :critique:
 :PROPERTIES:
 :NOTER_PAGE: (72 0.5764090644973853 . 0.1398496240601504)
 :END:
@@ -1874,7 +2530,7 @@ Eventualmente filtrando.
 #+begin_quote
 oferta de recursos (aumento das taxas de juros, liquidação de dívidas, etc.), (p. 72)
 #+end_quote
-** Consistência ao longo da tese :discuss:
+*** Consistência ao longo da tese :discuss:
 :PROPERTIES:
 :NOTER_PAGE: (72 0.5944218477629285 . 0.2473684210526316)
 :END:
@@ -1886,7 +2542,7 @@ A partir daí, a crise se instalaria83 (p. 72)
 #+end_quote
 
 Mas vale pontuar que a própria tese destacou a existência de firmas Zumbis.
-** Ok, inclui a crítica de falácia de composição :context:lit:
+*** Ok, inclui a crítica de falácia de composição :context:lit:
 :PROPERTIES:
 :NOTER_PAGE: (73 0.20976176641487507 . 0.3360902255639098)
 :END:
@@ -1896,7 +2552,7 @@ Mas vale pontuar que a própria tese destacou a existência de firmas Zumbis.
 #+begin_quote
 Uma das críticas centrais partiu de Lavoie e Seccareccia (2001), (p. 73)
 #+end_quote
-** Data parece errada :critique:
+*** Data parece errada :critique:
 :PROPERTIES:
 :NOTER_PAGE: (73 0.48169668797210924 . 0.5127819548872181)
 :END:
@@ -1906,7 +2562,7 @@ Uma das críticas centrais partiu de Lavoie e Seccareccia (2001), (p. 73)
 Um dos trabalhos precursores89 foi o de Niggle
 (1898) para seis ciclos de negócios nos EUA entre 1953 e 1982, (p. 73)
 #+end_quote
-** Eles também falam da inflação de ativos :lit:
+*** Eles também falam da inflação de ativos :lit:
 :PROPERTIES:
 :NOTER_PAGE: (74 0.19233004067402673 . 0.5353383458646617)
 :END:
@@ -1916,7 +2572,7 @@ Um dos trabalhos precursores89 foi o de Niggle
 #+begin_quote
 de Stockhammer, Calvert Jump et al. (2019) (p. 74)
 #+end_quote
-** E qual a conclusão? :limits:
+*** E qual a conclusão? :limits:
 :PROPERTIES:
 :NOTER_PAGE: (74 0.32655432887855895 . 0.543609022556391)
 :END:
@@ -1927,7 +2583,7 @@ estimou a pró-ciclicidade do endividamento-
 produto e do PNB real, tanto para o período global quanto para dois subperíodos: o pré-Segunda
 Guerra (1890–1939) e parte do período neoliberal (1973–2014). (p. 74)
 #+end_quote
-** Esse é um resultado importante de mais para passar batido :limits:
+*** Esse é um resultado importante de mais para passar batido :limits:
 :PROPERTIES:
 :NOTER_PAGE: (74 0.6687972109238814 . 0.6571428571428571)
 :END:
@@ -1938,7 +2594,7 @@ Guerra (1890–1939) e parte do período neoliberal (1973–2014). (p. 74)
 não
 encontraram uma relação entre endividamento das famílias e o ciclo90 (p. 74)
 #+end_quote
-** Ok, essa seria uma discussão que seria interessante de se fazer :misc:
+*** Ok, essa seria uma discussão que seria interessante de se fazer :misc:
 :PROPERTIES:
 :NOTER_PAGE: (75 0.20859965136548517 . 0.4030075187969925)
 :END:
@@ -1948,7 +2604,7 @@ encontraram uma relação entre endividamento das famílias e o ciclo90 (p. 74)
 #+begin_quote
 Ciclo e na Tendência (p. 75)
 #+end_quote
-** Notes for page 77 V: 19% H: 29%
+*** Notes for page 77 V: 19% H: 29%
 :PROPERTIES:
 :NOTER_PAGE: (78 0.19291109819872165 . 0.2894736842105263)
 :END:
@@ -1959,7 +2615,7 @@ o efeito-contágio das empresas Ponzi, mostrando que as chances de aumento da fr
 diretamente ligadas à maior dificuldade em redefinir seus parceiros comerciais (i.e., em função de
 sua competitividade).
 #+END_QUOTE
-** Mudou de país sem avisar :limits:
+*** Mudou de país sem avisar :limits:
 :PROPERTIES:
 :NOTER_PAGE: (78 0.19581638582219638 . 0.29323308270676696)
 :END:
@@ -1978,7 +2634,7 @@ o efeito-contágio das empresas Ponzi, mostrando que as chances de aumento da fr
 diretamente ligadas à maior dificuldade em redefinir seus parceiros comerciais (i.e., em função de
 sua competitividade).
 #+END_QUOTE
-** Até aqui, não discutiu ciclo e tendência :critique:limits:
+*** Até aqui, não discutiu ciclo e tendência :critique:limits:
 :PROPERTIES:
 :NOTER_PAGE: (78 0.6600813480534573 . 0.17894736842105263)
 :END:
@@ -1991,7 +2647,7 @@ Quanto ao setor das famílias, (p. 78)
 
 Ciclo e tendência estão implícitos aqui, mas não discutidos tal como enunciado.
 Discute-se existência de regimes minskianos, mas a ciclicidade estão pouco explícita.
-** Qual modelo? Quais variáveis? :limits:
+*** Qual modelo? Quais variáveis? :limits:
 :PROPERTIES:
 :NOTER_PAGE: (78 0.8489250435793143 . 0.481203007518797)
 :END:
@@ -2005,7 +2661,7 @@ por meio de uma análise econométrica; (p. 78)
 Isso aparece na tabela, mas não no texto.
 
 Corrigindo, é o outro texto de Mulligan que está na tabela.
-** Aqui sim discute tendência :discuss:
+*** Aqui sim discute tendência :discuss:
 :PROPERTIES:
 :NOTER_PAGE: (79 0.1481696687972109 . 0.1924812030075188)
 :END:
@@ -2018,7 +2674,7 @@ ativos], as posições financeiras são relativamente estáveis. (p. 79)
 #+end_quote
 
 Além de discutir tendência, aponta para um resultado que contradiz a hipótese de que Minksy é relevante.
-** Zumbis? :critique:limits:
+*** Zumbis? :critique:limits:
 :PROPERTIES:
 :NOTER_PAGE: (79 0.2347472399767577 . 0.6481203007518798)
 :END:
@@ -2032,7 +2688,7 @@ permissividade em relação à abertura de capital por empresas Ponzi. (p. 79)
 
 Como contrastar isso com zumbis?
 Além disso, a evidência parece ser algo sobre demografia de empresas (pequenas morrem) do que HIF afetando as empresas.
-** Demografia de firmas :discuss:
+*** Demografia de firmas :discuss:
 :PROPERTIES:
 :NOTER_PAGE: (79 0.39744334689134225 . 0.7045112781954888)
 :END:
@@ -2045,7 +2701,7 @@ empresas Ponzi, normalmente de menor tamanho e de baixa alavancagem. (p. 79)
 #+end_quote
 
 Outra evidência sobre demografia de firmas.
-** Demografia, novamente :critique:limits:
+*** Demografia, novamente :critique:limits:
 :PROPERTIES:
 :NOTER_PAGE: (79 0.6635676932016269 . 0.3879699248120301)
 :END:
@@ -2057,7 +2713,7 @@ Ponzi típicas das pequenas empresas, (p. 79)
 #+end_quote
 
 Será que não conviria uma discussão à la Kalecki em termos de ter acesso ao capital na medida que cresce?
-** Interessante :insight:
+*** Interessante :insight:
 :PROPERTIES:
 :NOTER_PAGE: (79 0.7600232423009877 . 0.40902255639097745)
 :END:
@@ -2068,7 +2724,7 @@ No que tange à HIF, em termos do aumento da fragilidade
 financeira ao longo do ciclo de negócios, a maior parte dos trabalhos não corrobora essa relação
 essencial. As evidências empíricas apontaram um padrão de fragilização compatível com flutuações (p. 79)
 #+end_quote
-** Decomposição ciclica :misc:
+*** Decomposição ciclica :misc:
 :PROPERTIES:
 :NOTER_PAGE: (80 0.1464264962231261 . 0.630827067669173)
 :END:
@@ -2080,7 +2736,7 @@ que os ciclos financeiros possuem durações que extrapolam os ciclos de negóci
 #+end_quote
 
 Por isso seria interessante ter alguma decomposição cíclica uma vez que os dados estão à mão.
-** Esperado que ciclo não tenha raíz unitária :misc:
+*** Esperado que ciclo não tenha raíz unitária :misc:
 :PROPERTIES:
 :NOTER_PAGE: (81 0.20395119116792562 . 0.31203007518796994)
 :END:
@@ -2090,7 +2746,7 @@ Por isso seria interessante ter alguma decomposição cíclica uma vez que os da
 Ao analisarmos essas séries em termos de raiz unitária, podemos perceber
 que 𝐺 𝐷𝑃𝑐 não acusa sua presença em nenhum dos testes empregados (Anexo B), (p. 81)
 #+end_quote
-** O inverso foi testado? :critique:limits:
+*** O inverso foi testado? :critique:limits:
 :PROPERTIES:
 :NOTER_PAGE: (81 0.3590935502614759 . 0.5285714285714286)
 :END:
@@ -2102,7 +2758,7 @@ O modelo segue a seguinte forma: (p. 81)
 #+end_quote
 
 Diga-se GDP explicado pela alavancagem?
-** Minskiano próximo de 5% :misc:
+*** Minskiano próximo de 5% :misc:
 :PROPERTIES:
 :NOTER_PAGE: (81 0.5490993608367228 . 0.21578947368421053)
 :END:
@@ -2113,7 +2769,7 @@ O coeficiente com sinal positivo indicaria um regime
 minskyano (alavancagem pró-cíclica) e o com sinal negativo um regime steindliano (desalavancagem
 pró-cíclica). (p. 81)
 #+end_quote
-** Inconsistente com o objetivo :discuss:
+*** Inconsistente com o objetivo :discuss:
 :PROPERTIES:
 :NOTER_PAGE: (82 0.09703660662405578 . 0.17518796992481203)
 :END:
@@ -2128,7 +2784,7 @@ Ao interpretarmos os resultados (p. 82)
 Só lembrar que esse não é o objetivo do capítulo.
 Ok enquanto diagnóstico prévio.
 
-** Interessante :results:insight:
+*** Interessante :results:insight:
 :PROPERTIES:
 :NOTER_PAGE: (82 0.16792562463683905 . 0.18947368421052632)
 :END:
@@ -2144,7 +2800,7 @@ Isso também dialogaria com Zumbis?
 
 
 
-** Faltou discutir melhor o gráfico :critique:
+*** Faltou discutir melhor o gráfico :critique:
 :PROPERTIES:
 :NOTER_PAGE: (83 0.21324811156304474 . 0.11353383458646617)
 :END:
@@ -2155,7 +2811,7 @@ Isso também dialogaria com Zumbis?
 Figura 8: (p. 83)
 #+end_quote
 
-** Notes for page 82 V: 67% H: 84%
+*** Notes for page 82 V: 67% H: 84%
 :PROPERTIES:
 :NOTER_PAGE: (83 0.6711214410226612 . 0.8398496240601504)
 :END:
@@ -2166,7 +2822,7 @@ a importância do financiamento imobiliário no estoque da dívida, majoritariam
 parcelas fixas (Anexo A), considerou-se para todas as dívidas o regime de amortização Price.
 #+END_QUOTE
 
-** Já não foi feito no capítulo anterior? :discuss:
+*** Já não foi feito no capítulo anterior? :discuss:
 :PROPERTIES:
 :NOTER_PAGE: (83 0.6769320162696106 . 0.8466165413533835)
 :END:
@@ -2181,7 +2837,7 @@ parcelas fixas (Anexo A), considerou-se para todas as dívidas o regime de amort
 Se não, destacar o que é diferente.
 Se sim, apontar invés de se repetir.
 
-** Realmente está repetido :discuss:
+*** Realmente está repetido :discuss:
 :PROPERTIES:
 :NOTER_PAGE: (84 0.651946542707728 . 0.17443609022556392)
 :END:
@@ -2192,7 +2848,7 @@ Assim, os indicadores de fragilidade financeira serão adaptados da formalizaç�
 (2003) – originalmente aplicável às empresas não-financeiras. (p. 84)
 #+end_quote
 
-** Pensar melhor :discuss:
+*** Pensar melhor :discuss:
 :PROPERTIES:
 :NOTER_PAGE: (85 0.7286461359674608 . 0.5992481203007519)
 :END:
@@ -2204,7 +2860,7 @@ Tenho que pensar o que esta implícito nesse indicador de posição Hedge.
 como indicador para a posição Hedge. (p. 85)
 #+end_quote
 
-** Extensão do trabalho :discuss:
+*** Extensão do trabalho :discuss:
 :PROPERTIES:
 :NOTER_PAGE: (86 0.09703660662405578 . 0.11503759398496241)
 :END:
@@ -2223,7 +2879,7 @@ Alavancagem sim parece ter uma quebra estrutural.
 
 Com os dados em mãos, seria possível verificar isso.
 
-** Antes também era análise dos dados. :discuss:
+*** Antes também era análise dos dados. :discuss:
 :PROPERTIES:
 :NOTER_PAGE: (86 0.7733875653689715 . 0.1398496240601504)
 :END:
@@ -2236,7 +2892,7 @@ ANÁLISE (p. 86)
 
 Por que não estimou nenhum modelo econométrico aqui tal como fez para as firmas?
 
-** Para quem? :discuss:limits:
+*** Para quem? :discuss:limits:
 :PROPERTIES:
 :NOTER_PAGE: (88 0.4979662986635677 . 0.20827067669172933)
 :END:
@@ -2250,7 +2906,7 @@ minskyano. (p. 88)
 
 Dá a entender que os setores não precisam estar simultaneamente no regime minskiano. Firmas podem estar enquanto as famílias não.
 
-** Cointegração? :discuss:
+*** Cointegração? :discuss:
 :PROPERTIES:
 :NOTER_PAGE: (88 0.6397443346891342 . 0.44060150375939855)
 :END:
@@ -2263,7 +2919,7 @@ nenhum padrão claro para todo o período. (p. 88)
 
 Seria possível testar existência de cointegração.
 
-** Foi o que o Ítalo fez? :discuss:
+*** Foi o que o Ítalo fez? :discuss:
 :PROPERTIES:
 :NOTER_PAGE: (89 0.09703660662405578 . 0.28646616541353387)
 :END:
@@ -2274,7 +2930,7 @@ As posições serão traduzidas em valores: 0 para Hedge, 0,5 para especulativa
 e 1 para Ponzi; o critério de ponderação será o valor dos ativos possuídos. (p. 89)
 #+end_quote
 
-** Inflação de ativos? :critique:limits:
+*** Inflação de ativos? :critique:limits:
 :PROPERTIES:
 :NOTER_PAGE: (89 0.14991284137129576 . 0.5631578947368422)
 :END:
@@ -2290,7 +2946,7 @@ A existência de inflação de ativos poderia estar sobre estimando alguma posi�
 Pelo gráfico, as empresas (e não as famílias) possuem maior fragilidade financeira, não?
 O texto atesta o inverso.
 
-** Correlação cruzada? :insight:misc:
+*** Correlação cruzada? :insight:misc:
 :PROPERTIES:
 :NOTER_PAGE: (89 0.2126670540383498 . 0.6112781954887219)
 :END:
@@ -2303,7 +2959,7 @@ embora não totalmente consistente, (p. 89)
 
 Seria interessante ver se movem na mesma direção a partir de alguma estatística.
 
-** Estacionariedade :discuss:critique:
+*** Estacionariedade :discuss:critique:
 :PROPERTIES:
 :NOTER_PAGE: (90 0.16560139453805925 . 0.3759398496240602)
 :END:
@@ -2321,7 +2977,7 @@ Esse resultado deveria ser melhor explorado.
 Além disso, apesar do indicador das famílias ser estacionário, talvez ter os dois em taxas de crescimento tornaria a interpretação mais direta.
 Precisaria pensar na implicação econométrica.
 
-** Título errado :misc:
+*** Título errado :misc:
 :PROPERTIES:
 :NOTER_PAGE: (90 0.40441603718768154 . 0.6240601503759399)
 :END:
@@ -2334,7 +2990,7 @@ VAR(3) (p. 90)
 
 Não compatível com o que está no texto.
 
-** Qual a implicação? :discuss:
+*** Qual a implicação? :discuss:
 :PROPERTIES:
 :NOTER_PAGE: (90 0.8373038930854154 . 0.1774436090225564)
 :END:
@@ -2351,7 +3007,7 @@ O contrário, firmas-> famílias, ocorre.
 
 Esperaria que isso fosse melhor discutido.
 
-** Ambos muito próximos de zero, não? :discuss:limits:
+*** Ambos muito próximos de zero, não? :discuss:limits:
 :PROPERTIES:
 :NOTER_PAGE: (91 0.10517141196978501 . 0.1142857142857143)
 :END:
@@ -2363,7 +3019,7 @@ Esperaria que isso fosse melhor discutido.
 𝑔𝑖𝑛𝑑𝑒𝑥 𝑓 sobre 𝑖𝑛𝑑𝑒𝑥 ℎ (p. 91)
 #+end_quote
 
-** Análise? :discuss:
+*** Análise? :discuss:
 :PROPERTIES:
 :NOTER_PAGE: (91 0.14991284137129576 . 0.31954887218045114)
 :END:
@@ -2379,7 +3035,7 @@ Esse comportamento do IRF é esperado dado os coeficientes.
 
 Ao mesmo tempo, não parece ser muito significante para as famílias também.
 
-** Hipótese implícita :hypo:discuss:
+*** Hipótese implícita :hypo:discuss:
 :PROPERTIES:
 :NOTER_PAGE: (91 0.47821034282393954 . 0.1992481203007519)
 :END:
@@ -2392,7 +3048,7 @@ relação inversa entre a fragilidade das famílias e a das empresas. (p. 91)
 
 Me ocorreu agora que essa hipótese foi adotada sem explicar muito o porquê.
 
-** Sugestões futuras :discuss:insight:
+*** Sugestões futuras :discuss:insight:
 :PROPERTIES:
 :NOTER_PAGE: (91 0.7739686228936664 . 0.17218045112781957)
 :END:
@@ -2406,9 +3062,9 @@ Como proposta para pesquisas futuras, (p. 91)
 Como sugestão, diria para tentar caputar o efeito de inflação de ativos.
 
 Outra sugestão seria ver se a fragilidade financeira dos mais pobres sustenta a estabilidade financeira do topo da distribuição.
-* Considerações gerais sobre a tese
+** Considerações gerais sobre a tese
 
-*** Escopo :context:
+**** Escopo :context:
 :PROPERTIES:
 :NOTER_PAGE: (9 0.1627435064935065 . 0.27258403361344535)
 :HIGHLIGHT: #s(pdf-highlight 9 (9 (0.569327731092437 0.1627435064935065 0.27258403361344535 0.17857142857142858)))
@@ -2416,14 +3072,14 @@ Outra sugestão seria ver se a fragilidade financeira dos mais pobres sustenta a
 
 ``examinar a teoria de Minsky no contexto
 dos Estados Unidos,''
-*** Método :method:
+**** Método :method:
 :PROPERTIES:
 :NOTER_PAGE: 9
 :HIGHLIGHT: #s(pdf-highlight 9 (9 (0.5341386554621849 0.4123376623376624 0.6586134453781513 0.40665584415584416)))
 :END:
 
 ``dados em painel,''
-*** Resultado :results:
+**** Resultado :results:
 :PROPERTIES:
 :NOTER_PAGE: 9
 :HIGHLIGHT: #s(pdf-highlight 9 (9 (0.2820378151260504 0.4338474025974026 0.34191176470588236 0.45819805194805197)))
@@ -2433,14 +3089,14 @@ dos Estados Unidos,''
 confirmaram a relação entre a posição Ponzi e a probabilidade de mortalidade
 das empresas não financeiras.
 #+END_QUOTE
-*** Dá a entender que aceita-se a possibilidade de Minsky estar errado :misc:
+**** Dá a entender que aceita-se a possibilidade de Minsky estar errado :misc:
 :PROPERTIES:
 :NOTER_PAGE: (9 0.2061688311688312 . 0.11764705882352941)
 :HIGHLIGHT: #s(pdf-highlight 9 (9 (0.11764705882352941 0.2061688311688312 0.6050420168067226 0.21266233766233766)))
 :END:
 
 ``ainda permitem sustentar a validade das formulações minskyanas.''
-*** Hipótese de trabalho :hypo:
+**** Hipótese de trabalho :hypo:
 :PROPERTIES:
 :NOTER_PAGE: (9 0.20860389610389612 . 0.4264705882352941)
 :HIGHLIGHT: #s(pdf-highlight 9 (9 (0.6370798319327731 0.20860389610389612 0.4264705882352941 0.2528409090909091)))
@@ -2451,14 +3107,14 @@ A hipótese defendida é que essa
 teoria ainda conservaria sua validade, na medida em que incorpora contribuições oriundas de suas
 críticas e de outras abordagens teóricas.
 #+END_QUOTE
-*** Ideia do ensaio I: Ponzi sai do mercado :context:
+**** Ideia do ensaio I: Ponzi sai do mercado :context:
 :PROPERTIES:
 :NOTER_PAGE: (9 0.3189935064935065 . 0.509453781512605)
 :HIGHLIGHT: #s(pdf-highlight 9 (9 (0.509453781512605 0.3189935064935065 0.7578781512605042 0.3238636363636364)))
 :END:
 
 ``levaria à sua saída do mercado,''
-*** Contraproposta da saida de Ponzis :lit:insight:
+**** Contraproposta da saida de Ponzis :lit:insight:
 :PROPERTIES:
 :NOTER_PAGE: (9 0.33969155844155846 . 0.2342436974789916)
 :HIGHLIGHT: #s(pdf-highlight 9 (9 (0.2342436974789916 0.33969155844155846 0.2652310924369748 0.41314935064935066)))
@@ -2470,21 +3126,21 @@ possibilidade de reversão dessa fragilidade, mesmo em casos extremos, bem como 
 sobre empresas zumbis, que indica a possibilidade de convivência prolongada com uma situação
 financeira precária.
 #+END_QUOTE
-*** Segundo ensaio muda ênfase para as famílias :context:
+**** Segundo ensaio muda ênfase para as famílias :context:
 :PROPERTIES:
 :NOTER_PAGE: (9 0.47970779220779225 . 0.38182773109243695)
 :HIGHLIGHT: #s(pdf-highlight 9 (9 (0.38182773109243695 0.48051948051948057 0.6853991596638656 0.47970779220779225)))
 :END:
 
 ``famílias americanas entre 1989 e 2019.''
-*** A ideia é tentar entender a crise :context:
+**** A ideia é tentar entender a crise :context:
 :PROPERTIES:
 :NOTER_PAGE: (9 0.523538961038961 . 0.3209033613445378)
 :HIGHLIGHT: #s(pdf-highlight 9 (9 (0.3209033613445378 0.523538961038961 0.7253151260504201 0.5251623376623377)))
 :END:
 
 ``mais relevantes para o desencadeamento da Crise de 2008.''
-*** Resultado :results:
+**** Resultado :results:
 :PROPERTIES:
 :NOTER_PAGE: (9 0.6578733766233766 . 0.3125)
 :HIGHLIGHT: #s(pdf-highlight 9 (9 (0.36186974789915966 0.6578733766233766 0.3125 0.6830357142857143)))
@@ -2494,7 +3150,7 @@ financeira precária.
 configurando-se como portadoras das relações de dívida mais inti-
 mamente ligadas à crise.
 #+END_QUOTE
-*** O terceiro ensaio foca na coevolução entre os setores :context:
+**** O terceiro ensaio foca na coevolução entre os setores :context:
 :PROPERTIES:
 :NOTER_PAGE: (9 0.7248376623376623 . 0.6370798319327731)
 :HIGHLIGHT: #s(pdf-highlight 9 (9 (0.6370798319327731 0.7248376623376623 0.8067226890756303 0.7674512987012988)))
@@ -2505,7 +3161,7 @@ Busca-se identificar um padrão
 de coevolução entre essas variáveis, particularmente no que se refere à possibilidade de as relações
 de endividamento e gasto das famílias sustentarem posições mais robustas das empresas.
 #+END_QUOTE
-*** Curiosamente, o Minsky sempre acho que as famílias não poderiam desencadear esse processo :discuss:critique:limits:misc:
+**** Curiosamente, o Minsky sempre acho que as famílias não poderiam desencadear esse processo :discuss:critique:limits:misc:
 :PROPERTIES:
 :NOTER_PAGE: (9 0.8396915584415585 . 0.4894957983193277)
 :HIGHLIGHT: #s(pdf-highlight 9 (9 (0.7352941176470588 0.8396915584415585 0.4894957983193277 0.8612012987012988)))
@@ -2513,7 +3169,7 @@ de endividamento e gasto das famílias sustentarem posições mais robustas das 
 
 ``A conclusão final é
 que a teoria minskyana ainda se mantém válida.''
-*** Contextualização ontológica :misc:
+**** Contextualização ontológica :misc:
 :PROPERTIES:
 :NOTER_PAGE: 17
 :HIGHLIGHT: #s(pdf-highlight 17 (17 (0.23214285714285712 0.27069805194805197 0.17069327731092437 0.2982954545454546)))
@@ -2523,7 +3179,7 @@ que a teoria minskyana ainda se mantém válida.''
 Lakatos (1978) quanto à convivência de diferentes programas de pesquisa (DEANE,
 1980).
 #+END_QUOTE
-*** Discussão ontológica sobre economia :misc:
+**** Discussão ontológica sobre economia :misc:
 :PROPERTIES:
 :NOTER_PAGE: (17 0.34334415584415584 . 0.46428571428571425)
 :HIGHLIGHT: #s(pdf-highlight 17 (17 (0.46428571428571425 0.34334415584415584 0.5598739495798319 0.4074675324675325)))
@@ -2535,7 +3191,7 @@ está associada à possibilidade de uma previsão perfeita dos estados futuros d
 no conjunto de informações disponíveis, ao passo que a não ergodicidade exprime a impossibilidade
 de qualquer previsão acertada sobre resultados futuros.
 #+END_QUOTE
-*** Talvez desatualizado :misc:
+**** Talvez desatualizado :misc:
 :PROPERTIES:
 :NOTER_PAGE: (17 0.7491883116883118 . 0.6890756302521008)
 :HIGHLIGHT: #s(pdf-highlight 17 (17 (0.7563025210084033 0.7491883116883118 0.6890756302521008 0.7751623376623377)))
@@ -2545,7 +3201,7 @@ de qualquer previsão acertada sobre resultados futuros.
 A última crise de
 grandes proporções foi a Crise do Subprime nos Estados Unidos em 2008.
 #+END_QUOTE
-*** Gancho com Minsky como esperado :discuss:
+**** Gancho com Minsky como esperado :discuss:
 :PROPERTIES:
 :NOTER_PAGE: (17 0.8396915584415585 . 0.11502100840336134)
 :HIGHLIGHT: #s(pdf-highlight 17 (17 (0.11502100840336134 0.8396915584415585 0.6680672268907563 0.8664772727272728)))
@@ -2555,7 +3211,7 @@ grandes proporções foi a Crise do Subprime nos Estados Unidos em 2008.
 houve a recuperação de diversas ideias do campo heterodoxo, tendo Minsky ganho maior projeção
 com sua Hipótese da Instabilidade Financeira (HIF) (GHANI, 2011).
 #+END_QUOTE
-*** Seria bom fazer alguma discussão sobre falácia de composição :theory:discuss:
+**** Seria bom fazer alguma discussão sobre falácia de composição :theory:discuss:
 :PROPERTIES:
 :NOTER_PAGE: 18
 :HIGHLIGHT: #s(pdf-highlight 18 (18 (0.1134453781512605 0.16720779220779222 0.16649159663865545 0.21469155844155846)))
@@ -2566,14 +3222,14 @@ fundamentalmente na integração das relações micro-macro, interpretando as re
 como uma teia complexa de balanços financeiros que exprimem as relações de gasto e endivida-
 mento.
 #+END_QUOTE
-*** Pergunta de pesquisa :contrib:
+**** Pergunta de pesquisa :contrib:
 :PROPERTIES:
 :NOTER_PAGE: (18 0.6209415584415585 . 0.11607142857142856)
 :HIGHLIGHT: #s(pdf-highlight 18 (18 (0.11607142857142856 0.6237824675324676 0.7090336134453781 0.6209415584415585)))
 :END:
 
 ``a teoria de Minsky se mantém válida para interpretar a realidade americana?''
-*** Hipótese de trabalho implícita :hypo:contrib:
+**** Hipótese de trabalho implícita :hypo:contrib:
 :PROPERTIES:
 :NOTER_PAGE: (18 0.6473214285714286 . 0.3592436974789916)
 :HIGHLIGHT: #s(pdf-highlight 18 (18 (0.3597689075630252 0.6473214285714286 0.3592436974789916 0.6672077922077922)))
@@ -2583,14 +3239,14 @@ mento.
 na medida em que incorpora contribuições oriundas de suas críticas
 e de outras abordagens teóricas.
 #+END_QUOTE
-*** Dar uma olhada sobre paper de empresas Zumbis (acho que Paloma) :lit:
+**** Dar uma olhada sobre paper de empresas Zumbis (acho que Paloma) :lit:
 :PROPERTIES:
 :NOTER_PAGE: (18 0.869724025974026 . 0.17016806722689076)
 :HIGHLIGHT: #s(pdf-highlight 18 (18 (0.17016806722689076 0.8733766233766235 0.548844537815126 0.869724025974026)))
 :END:
 
 ``assim como pela literatura sobre empresas zumbis,''
-*** Esse é um ponto mais complicado de discutir :hypo:contrib:discuss:
+**** Esse é um ponto mais complicado de discutir :hypo:contrib:discuss:
 :PROPERTIES:
 :NOTER_PAGE: (19 0.2353896103896104 . 0.43960084033613445)
 :HIGHLIGHT: #s(pdf-highlight 19 (19 (0.43960084033613445 0.2353896103896104 0.720063025210084 0.25608766233766234)))
@@ -2600,7 +3256,7 @@ e de outras abordagens teóricas.
 O objetivo é determinar qual grupo de renda detinha as
 relações de dívida mais relevantes no desencadeamento da Crise de 2008.
 #+END_QUOTE
-*** E também dos bancos :discuss:
+**** E também dos bancos :discuss:
 :PROPERTIES:
 :NOTER_PAGE: (19 0.42086038961038963 . 0.3529411764705882)
 :HIGHLIGHT: #s(pdf-highlight 19 (19 (0.523109243697479 0.42086038961038963 0.3529411764705882 0.4370941558441559)))
@@ -2608,7 +3264,7 @@ relações de dívida mais relevantes no desencadeamento da Crise de 2008.
 
 ``comportamento especulativo imobiliário das
 famílias de classe média e alta.''
-*** Erros de texto
+**** Erros de texto
 
 - Sem concordância nominal quando utiliza citações
 
