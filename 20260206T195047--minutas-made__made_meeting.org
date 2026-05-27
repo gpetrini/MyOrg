@@ -1026,4 +1026,37 @@ Várias equações em =fun_KS_worker.h= (linhas 21, 47, 136, 277, 293, 392, 424,
 - Tenure menor
 - Taxa de crescimento em patamares mais razoáveis que K+S (3%+ por tri)
 
+
+#+begin_src latex
+\begin{table}
+
+\caption{Relative deviation from BAU (\%, t = 301--500, n = 40): HourInt-wrt09-alpha-test}
+\centering
+\begin{tabular}[t]{lrr}
+\toprule
+  & Single Shock & Linear Ramp\\
+\midrule
+GDPreal & -46.5115 & -50.1708\\
+dGDP & -8.9346 & -11.7683\\
+CPI & -6.6460 & -6.5440\\
+U & 978.0646 & 906.6797\\
+UH & 978.0646 & 906.6797\\
+\addlinespace
+part & -0.8927 & -0.9944\\
+partH & -19.1570 & -17.7588\\
+NormHours & -10.0000 & -10.0000\\
+HAvg & -10.0000 & -10.0000\\
+wAvgReal & -22.1164 & -28.1185\\
+\addlinespace
+wU & -27.6292 & -32.9619\\
+W & -47.0474 & -50.6016\\
+Ls & 0.0000 & 0.0000\\
+L1 & -20.1517 & -20.1077\\
+L2 & -18.9411 & -17.2489\\
+\bottomrule
+\end{tabular}
+\end{table}
+#+end_src
+
+
 ** Deliberações e ideias
