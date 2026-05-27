@@ -859,12 +859,12 @@ Várias equações em =fun_KS_worker.h= (linhas 21, 47, 136, 277, 293, 392, 424,
 - Foram adicionadas novas variáveis para capturar margem extensiva e intensiva
   - part :: Taxa de participação usual (por cabeça)
   - partH :: Taxa de participação em termos de horas
-  - partGap :: TODO Document
+  - partGap :: Diferença entre os dois (abaixo)
 - Também serão computadas medidas de desigualdade para salário-hora, salário-jornada e horas
 - Adicionada nova regra de demissão (a ser modificada)
   - Demite em retração de forma extensiva (sem ajuste no número de horas)
     - Se um parâmetro for positivo, faz um ajuste endógeno entre todos os funcionários (HELP discutir) com intensidade regulada por este parâmetro
-      - TODO Adicionar regra
+      - Regra: Hora = Hora * (1 + rhoH * dQ2d / Q2e(-1))
         - Significa um compartilhamento entre os trabalhadores da redução da jornada para que todos se mantenham no emprego (pode ser desligado)
       - Mecanismo similar aplicado aos salários (chamada regra Alemã)
   - Pensado para priorizar demissão de temporários, mas essa implementação está incompleta (HELP discutir religada dos skills)
@@ -893,8 +893,8 @@ Várias equações em =fun_KS_worker.h= (linhas 21, 47, 136, 277, 293, 392, 424,
   - Questão em aberto: indenização no custo unitário =_c1=/_c2=? (imagino que não)
 - Novas variáveis de oferta de horas em =Ls=:
   - =LsPotH=: força de trabalho potencial = horas efetivas dos empregados + horas desejadas dos desempregados (substitui =LsH= como gatilho de crescimento populacional [desativado])
-  - =LsHGap= (potencial de horas extras) - TODO detalhar
-  - =LsHUnder= (brecha de sub-emprego de horas) - TODO detalhar
+  - =LsHGap= (potencial de horas extras)
+  - =LsHUnder= (brecha de sub-emprego de horas)
     =LsHOver= (horas extras involuntárias acima de =_HDes=)
   - Todas neutras em HourInt; robusta para HourBarg
 - Atualizei e corrigi os testes SFC
@@ -1025,3 +1025,5 @@ Várias equações em =fun_KS_worker.h= (linhas 21, 47, 136, 277, 293, 392, 424,
 - Aumento de defaults (similar entre cenários WTR)
 - Tenure menor
 - Taxa de crescimento em patamares mais razoáveis que K+S (3%+ por tri)
+
+** Deliberações e ideias
