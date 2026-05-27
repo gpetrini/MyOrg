@@ -990,3 +990,38 @@ Várias equações em =fun_KS_worker.h= (linhas 21, 47, 136, 277, 293, 392, 424,
 
 
 ** O que foi obtido
+
+- Efeito negativo sobre o PIB, mas de pequena intensidade (ao menos menor do que o esperado)
+- Maior efeito parece ser sobre os gastos do governo
+  - Como consequência, sobre o nível de endividamento (em relação ao PIB)
+- Tem um erro no gráfico sobre oferta de crédito (linha sempre no zero, não está assim no LSD)
+- Queda na demanda por crédito (possível efeito demanda) seguindo de um aumento após um período (possível efeito custo)
+- Taxa de desemprego tem um efeito considerável
+  - O que explica os gastos do governo
+  - Vacância parece ter uma quebra estrutural também
+- Subemprego está zerado: checar se é um erro de implementação
+  - Hour gap talvez esteja sobreposto pelo desemprego usual
+- Taxa de participação tem um efeito considerável
+  - Mas principalmente considerando a medição em termos de hora
+- Efeito negligenciável sobre salário real
+  - Puxado principalmente pela produtividade (intocada)
+- Efeito positivo sobre wage-share
+  - Depende bastante do replicador
+  - Interessante como existe uma defasagem entre os cenários
+- Efeito positivo sobre o Gini, mas pode estar amplificado pelo efeito escala (Gini absurdamente baixo)
+  - Gini baixo explicado pela ausência de heterogeneidade (originada por skill)
+- Nenhum efeito sobre taxa de sucesso de imitação/inovação (esperado)
+- Efeito sobre produtividade nulo
+  - Marcações por tipo de firma é código defasado (irei corrigir)
+- Efeito positivo sobre market-share
+  - Isso deve explicar o efeito positivo sobre o wage-share
+  - Efeito não tão marcado pela concentração de mercado
+- Markup tem uma queda considerável e estabiliza
+- Taxa de crescimento menor, mas talvez estatistamente idênticas
+- PIB mais volátil com maior chance de crises
+- Grau de utilização da capacidade reduzido, mas ainda alto (calibragem)
+- Inflação quase nula em todos os cenários
+  - Característica deflacionária do K+S
+- Aumento de defaults (similar entre cenários WTR)
+- Tenure menor
+- Taxa de crescimento em patamares mais razoáveis que K+S (3%+ por tri)
