@@ -1060,3 +1060,109 @@ L2 & -18.9411 & -17.2489\\
 
 
 ** Deliberações e ideias
+
+- Uma forma de fazer com que WTR tenha efeito sobre a demanda é ter crédito para consumo
+  - Em virtude da propensão marginal a consumir ser unitária
+  - Levar em consideração, mas não impelmentar agora
+- Outro mecanismo para se considerar é as firmas intensionalmente investirem em inovação quando houver aumento do custo unitário
+  - Inovação intensional da firma (associada a este aumento) para compensar aumento do custo unitário do trabalho
+  - Um caminho possível seria um aumento sobre os gastos com P&D quando este custo estiver acima de uma referência
+  - Levar em consideração, mas não impelmentar agora
+- Aumento do custo unitário explica aumento do wage-share
+  - Entender melhor o porquê
+- Pensar se a firma tem algum comportamento antecipatório sobre a redução da jornada
+  - Da forma que está agora, é um choque surpresa
+  - Uma alternativa seria ter um horizonte de fim de implementação e firmas adotam probabilisticamente
+    - Esta probabilidade aumenta com firmas que adotaram
+      - Similar à mudança de regime
+    - No entanto, faz sentido a firma adiar essa implementação para ter uma vantagem de custo frente aos concorrentes
+    - Novos entrantes utilizam a nova regra incondicionalmente
+  - Este cenário deve ser acompanhado do prêmio de produtividade (adiante)
+    - Levar em consideração, mas não implementar, que a probabilidade pode ser distinta por setores
+- No limite, o modelo proposto é um modelo em termos de salário-eficincia
+  - A ponte com mercado de trabalho neo-clássica pode facilitar o discurso
+  - Essa é apenas uma observação
+- Computar parcela salarial por setor
+  - Com isso, seria possível observar qual é o setor que mais contribuiu para o aumento do wage-share
+    - Espera-se que o efeito custo seja maior sobre o setor bens de capital
+- Testar, mas não implementar enquanto cenário uma WTR temporária
+  - A ideia seria testar a existência de histerese
+  - Sendo este o caso, permite discutir state-dependence de um jeito mais simples
+- Pensar em como seria possível introduzir a noção de horas-livres
+  - Mapeado efeito sobre produtividade (descanso) e sobre consumo (talvez via crédito (aumento de gastos além do usual))
+- Contraste entre formal e informal não será implementado agora
+  - Mercado informal poderia levar à exaustão e não estaria sujeito à regulação
+  - Levar em consideração, mas não impelmentar agora
+- Decisão sobre a separação entre contratos permanentes e temporários foi adiada
+  - Requer decisões não triviais
+  - Levar em consideração, mas não impelmentar agora
+- Setor de bens de capital não terá mão de obra heterogênea (em termos de salário)
+  - Requer decisões não triviais
+  - Levar em consideração, mas não impelmentar agora
+- Afastou-se a problemática das firmas utilizarem sempre a jornada máxima
+  - A firma tem interesse em minimizar o custo unitário do trabalho dado o nível de esforço
+  - A preocupação da firma é maximizar a jornada x produtividade por hora
+  - Essa é apenas uma observação
+  - Existe uma discussão mais geral sobre esse ponto
+    - A existência de uma jornada sugere que existiu algum movimento trabalhista para regulamentar as relações do trabalho
+    - Também sugere a existência de algum nível de solidariedade entre trabalhadores
+- Pergunta mais geral de fundo:
+  - Qual a relação entre jornada e poder de barganha dos trabalhadores?
+    - Uma jornada menor aumenta o poder de barganha?
+    - Dada heterogeneidade das horas de trabalho, sob quais condições a jornada máxima emerge?
+- Ativação de skill adiada por enquanto
+  - Alternativa via prêmio de produtividade (adiante)
+  - Cabe mencionar que um trabalhador com skill alta pode ser altamente especializado e, por conta disso, pode ser contratado a um salário alto e por uma jornada mais curta
+    - Resolve um problema específico
+- Implementação de prêmio de produtividade (mais importante)
+  - Dado que a produtividade da máquina não depende da jornada
+  - O trabalhador (em um cenário BAU) extrai a produtividade usual da máquina
+  - Uma vez implementada a WTR, a produtividade efetiva (similar à skill) é (1 + delta)
+    - delta é o prêmio de produtividade heterogêneo entre trabalhadores e homogêneo ao longo do tempo
+    - Tem efeito sobre a produtividade somente a partir de WTR
+    - É uma característica idiosincrática do trabalhador e não observada pela firma
+    - Quando um trabalhador aplica para vagas (independente de WTR), leva em consideração seu próprio delta
+    - A firma contrata somente em termos de salário (ordenamento)
+    - Para a demissão, salário e delta são levados em consideração (similar à regra de payback, mas para ordenamento e não quantidade)
+      - Quantidade continua sendo dada pela demanda
+      - Assume-se que a produtividade do trabalhador não é bem monitorável
+      - Firma não tem memória sobre esse delta
+    - Trabalhador tem memória sobre o salário recente
+      - Experiência disciplina se o delta é desmedido ou não, mas continua usando o delta no salário reserva
+  - delta é inicializado com uma distribuição aleatória
+    - Decidir qual
+      - Normal, power-law, pareto, etc
+      - Ideia é ter mais trabalhadores com delta baixo e poucos com delta alto
+    - Precisa definir um suporte (0.01-0.05?)
+      - Pode-se testar vários suportes
+    - Definido de modo a poder reverter cenários atuais com delta zerado
+    - Parâmetro fixo de cada trabalhador
+      - Precisa ser definido ao renascer um trabalhador
+  - Nesse estágio, não há heterogeneidade em termos de jornada
+  - Firma não leva em consideração delta para contratar
+- Cenários (com novas flags, TregChg afetando apenas associado à jornada)
+  - BAU
+  - Decaimento linear
+    - Abandona-se decaimento instantâneo
+  - Decaimento linear + productivity premium
+  - Mudança probabilística firma + productivity premium (prioridade menor)
+    - Talvez reciclar significado do tipo de firma (pode ser útil para ser mais fácil de identificar quem esta com nova regra)
+    - Reciclar também para os outros cenários
+  - Novas flags
+    - Religar search on the job
+    - Ordenamento de demissão com payback (ajustado ao novo objetivo se necessário)
+- Point releases
+  - HourInt
+    - Limpar divergências com referência
+    - Corrigir gráficos do script R
+    - Fazer com que PDFs sejam salvos já renomeados no script R (script de download apenas baixa)
+    - Script R aggregates já gera arquivos de tabelas comparativas (em termos relativos)
+    - Garantir que os relatórios sejam criados com labels únicos e com significado (não apenas hashs)
+    - Arquivar configurações atuais e escrever follow ups
+    - Liberar release e avisar Samuel
+      - Samuel deve mudar parâmetros iota e aqueles do Barde
+      - Ensinar/instruir como usar shell (talvez numa próxima reunião)
+  - HourProd
+    - Limpar máximo de stale fixmes e promover HourPord para novo FIXME
+    - Adiar HourBarg no pipeline de milestones
+    - Incorporar produtivity premium, flags, gerar cenários e relatórios
