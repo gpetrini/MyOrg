@@ -1166,3 +1166,72 @@ L2 & -18.9411 & -17.2489\\
     - Limpar máximo de stale fixmes e promover HourPord para novo FIXME
     - Adiar HourBarg no pipeline de milestones
     - Incorporar produtivity premium, flags, gerar cenários e relatórios
+
+* Reunião de Equipe [2026-05-29 Fri]
+
+** Dados de uso do tempo (escala 7x0)
+
+*** Introdução de uso de dados
+
+- Permite visualizar o trabalho de cuidado, mensurar e produzir a conta satélite (não contabilizado no PIB)
+  - Pobreza de tempo
+  - Medidas de Bem-estar
+  - Políticas de cuidado
+  - Política de transporte
+  - Conta satélite: mensuração monetária das horas não remunerada
+- No Brasil, parecem estar subestimados (10% PIB, aquém dos outros países)
+- Pobreza de tempo dos homes só se equivale à das mulheres quanto eles trabalham bastante
+- Metodologia de coleta
+  - Perguntas estilizadas (ICATUS, CNAE de atividades)
+  - Diário (melhor, entrevista com cronograma)
+    - Completo
+    - Light (baseado em agregados da ICATUS)
+      - Menos custoso
+    - Diário montado de acordo com blocos de tempo
+- Dados no Brasil (PNAD)
+  - Afazeres domésticos
+  - Cuidado de pessoas
+  - Perguntas binárias (fez ou não)
+  - Pergunta final sobre qual é o total de horas utilizada para cada grupo
+  - Dados bastante subestimados
+  - Quando incluídos dados sobre reparor do lar, as horas dos homens disparou (provavelmente sobrestimado)
+  - Hipótese: dificuldade das mulheres dimensionar o tempo de cuidado dos filhos
+    - Parte de entendimento como dia a dia ou como trabalho não remunerado
+  - Dado mais compatível com que espera-se dos dados (partindo da Colômbia)
+  - Separação entre tempo de cuidado direto e indireto
+  - Há uma distinção entre mulheres casadas e solteiras
+    - Parece que mulheres casadas tendem a reportar menos horas por supor uma contrapartida do parceiro
+
+*** A escala 7x0
+
+- Medir jornada real de homens e mulheres considerando esses dois trabalhos
+  - Dupla e tripla jornada
+    - Cuidado doméstico, cuidado de pessoas e cuidado comunitário
+      - Cuidado sempre dentro do próprio domicílio (avó cuidando de neto em outra casa não é contabilizado)
+  - Pobreza de tempo
+    - Quando tempo e dinheiro são insuficientes
+  - Crise dos cuidados
+    - Envelhecimento populacional, escassez de serviços públicos de cuidado, precarização do trabalho
+- Incomptibilidade entre trabalho, retorno financeiro e reprodução da vida
+- Homens são os que estão mais na escala 6x1 (trabalho remunerado)
+- População está envelhecendo
+  - Isso implica necessidade de mais cuidado
+  - Soma-se o desmonte do estado de bem-estar social
+- Objetivo é tentar qualificar o tamanho da dupla e tripla jornada
+  - Padronização indireta modificada
+- Mulheres trabalham mais quando considera-se trabalho direto e indireto
+  - Mulheres com menor jornada remunerada, compensa-se com jornada não-remunerada
+  - Para os homens, o número de horas para cuidado não se altera (independete se trabalhando ou não)
+  - Uma mulher na força de trabalho, executa menos trabalho não-remunerado do que uma mulher fora da força de trabalho; mas não a ponto de compensar
+  - Seria algo próximo de 7 dias trabalhados por 8 horas
+- Ao separar por decil de renda, diminui-se mais para as mulheres e para os homens fica igual
+- Reduzir a jornada remunerada não é suficiente por si só
+  - Corresponsabilidade e redistribuição do tempo e do trabalho
+- Não há infomrção sobre raça
+- Não tem dado de tempo de transporte
+  - Tempo de deslocamento para o trabalho, no caso
+  - Transporte associado ao cuidado existe
+- Essa discussão poderia dar insights sobre como usar o tempo de uma perspectiva econômica (para ABM)
+
+*** Calculadora do cuidado
+

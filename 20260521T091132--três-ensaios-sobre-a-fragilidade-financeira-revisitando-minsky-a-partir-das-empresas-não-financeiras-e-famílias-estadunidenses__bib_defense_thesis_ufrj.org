@@ -11,18 +11,10 @@
 
 * Introdução Geral e Estrutura da Tese
 
-A tese propõe operacionalizar e testar empiricamente a Hipótese de Instabilidade Financeira (HIF) de Minsky para dois setores da economia estadunidense — empresas não-financeiras e famílias — e investigar a inter-relação entre as posições financeiras desses dois setores institucionais.
-A estrutura teórica é a taxonomia Hedge/Especulativo/Ponzi de Minsky, transposta para dados empíricos por meio de indicadores de fluxo de caixa e serviço da dívida.
+# A tese propõe operacionalizar e testar empiricamente a Hipótese de Instabilidade Financeira (HIF) de Minsky para dois setores da economia estadunidense — empresas não-financeiras e famílias — e investigar a inter-relação entre as posições financeiras desses dois setores institucionais.
+# A estrutura teórica é a taxonomia Hedge/Especulativo/Ponzi de Minsky, transposta para dados empíricos por meio de indicadores de fluxo de caixa e serviço da dívida.
 
 A tese possui unidade temática: os três ensaios partem da HIF e da taxonomia de posições financeiras.
-A coerência metodológica entre os ensaios é, contudo, parcial.
-- [ ] Os períodos amostrais diferem entre os ensaios — 1970–2024 (Ensaio I), 1989–2019 (Ensaio II) e 1989–2022 (Ensaio III) — sem justificativa para as diferentes fronteiras temporais.
-- Os Ensaios I e II operam com microdados (firmas e famílias, respectivamente), enquanto o Ensaio III utiliza índices agregados construídos a partir das mesmas bases, sem equacionar os problemas de agregação que essa passagem do micro para o macro implica.
-
-
-
-** Pontos Fortes
-
 A tese apresenta contribuições em três dimensões.
 
 1. Operacionalização sistemática da taxonomia minskyana (Hedge/Especulativo/Ponzi) em duas bases de dados distintas (Compustat/CRSP e SCF), cobrindo um período de três a cinco décadas.
@@ -30,11 +22,16 @@ A tese apresenta contribuições em três dimensões.
 2. O Ensaio III representa uma tentativa de articulação setorial entre fragilidade financeira das firmas e das famílias, perspectiva sub-explorada na literatura minskyana empírica, que tende a tratar os setores de forma isolada.
 3. O Ensaio I aplica metodologia (logit EF + Heckman) pertinente ao problema de seleção amostral (com justificativa formal por Hausman)
 
-** Fragilidades Centrais
+
+A coerência metodológica entre os ensaios é, contudo, parcial.
+- [ ] Os períodos amostrais diferem entre os ensaios — 1970–2024 (Ensaio I), 1989–2019 (Ensaio II) e 1989–2022 (Ensaio III) — sem justificativa para as diferentes fronteiras temporais.
+- Os Ensaios I e II operam com microdados (firmas e famílias, respectivamente), enquanto o Ensaio III utiliza índices agregados construídos a partir das mesmas bases, sem equacionar os problemas de agregação que essa passagem do micro para o macro implica.
+
+** Fragilidades Centrais :noexport:
 
 As fragilidades agrupam-se em três dimensões transversais.
 
-*** Metodológica
+*** Metodológica :noexport:
 
 - A não-significância de D_Ponzi isolado na amostra principal (Ensaio I) compromete o suporte à hipótese central.
 - A ausência de inflação de ativos no Ensaio II é lacuna relevante para a análise da fragilidade das famílias estadunidenses
@@ -42,9 +39,8 @@ As fragilidades agrupam-se em três dimensões transversais.
 # - A interpolação do SCF no Ensaio III invalida os testes de diagnóstico do VAR.
 # - A hipótese de amortização Price no Ensaio II produz classificações distorcidas para produtos de dívida não-convencionais (ARM, IO).
 
-*** Coerência entre ensaios
+*** Coerência entre ensaios :noexport:
 
-- A definição de posição Ponzi não é padronizada entre os três ensaios.
 - Os períodos amostrais diferem sem justificativa.
 - A passagem da análise micro (Ensaios I e II) para a análise macro (Ensaio III) não equaciona os problemas de agregação implícitos na transição.
   - Mas ao menos menciona (tardiamente) a crítica de falácia de composição
@@ -56,44 +52,14 @@ As fragilidades agrupam-se em três dimensões transversais.
 - O Ensaio I apresenta poder discriminatório próximo ao aleatório na ROC, sem qualificação das afirmações causais.
 - Direção da FIR no Ensaio III: apresentar uma interpretação da FIR na direção oposta à hipotesada e as implicações para a hipótese central da tese.
 
-** Sugestões de Melhoria
-
-*** Ensaio I
-
-- Separar a variável dependente em falência e M&A, estimando-as como desfechos distintos (logit multinomial ou dois modelos binários independentes).
-- Considerar modelos de sobrevivência (Cox) como especificação alternativa, mais adequada ao problema de tempo até mortalidade com censura à direita.
-# - Discutir o problema de endogeneidade de D_Ponzi e sua distinção do problema de seleção amostral tratado pelo Heckman.
-# A inclusão de =holder.eq.ratios= e =liq= como controles é insuficiente para tratar essa endogeneidade.
-
-
-*** Ensaio II
-
-- Adicionar intervalos de confiança bootstrap aos indicadores de posição financeira por decil de renda.
-- Discutir a limitação da periodicidade trianual para a captura da dinâmica da crise de 2008.
-
-
-*** Ensaio III
-
-- Apresentar os resultados do VAR com qualificação dos graus de liberdade.
-- Qualificar a hipótese central à luz da FIR observada.
-- Corrigir a inconsistência editorial na denominação da tabela ("VAR(3)" vs. "VAR(2)").
-
-*** Transversais
-
-- Incluir tabela comparativa das definições operacionais de Ponzi nos três ensaios.
-- Incluir [cite/t:@tymoigne_2011_measuring] como referência metodológica para índices de fragilidade.
-- Incluir [cite/t:@godley_2007_monetary; @godley_1999_seven]  como referência para análise de co-evolução de posições setoriais.
-- Detelhar mais fundamentação para a transposição da HIF de Minsky às famílias (Minsky original reservava o mecanismo para firmas e bancos).
-- Incluir a falácia de composição — [cite:@lavoie_2001_minskys] — como crítica teórica à HIF que a tese menciona apenas no Ensaio III, mas que é pertinente aos três.
-- Qualificar "A última grande crise foi o Subprime de 2008" na introdução — verdadeiro se restrito à crise financeira.
-# - Incluir discussão sobre a distinção entre fragilidade de fluxo e de estoque. (CHECAR)
-
-
-
 
 * Ensaio I: Empresas Ponzi Condenadas a Perecer? (1970–2024)
 
 
+- A hipótese é formulada de forma clara na introdução do ensaio.
+- A estratégia empírica é descrita com nível de detalhe razoável.
+- A inconsistência no coeficiente de liq não é examinada explicitamente no corpo do texto.
+- A discussão dos resultados da amostra restrita é insuficiente para justificar as conclusões apresentadas.
 
 ** Descompasso entre hipótese testada e variável significativa
 
@@ -113,63 +79,27 @@ A cadeia executada difere da cadeia declarada em três pontos.
 A cadeia executada:
 
 - A interação D_Ponzi × D_Ponzi_{t-1} é teoricamente mais próxima da definição de empresa zumbi (Ponzi persistente que sobrevive) do que do mecanismo minskyano de mortalidade.
+  - Sendo honesto, está em um meio termo
 - A relevância empírica dessa interação, em conjunto com a não-significância de D_Ponzi isolado, é mais compatível com a hipótese contrária à da tese: empresas Ponzi persistentes /sobrevivem/ como zumbis (a literatura citada pelo próprio autor), e a mortalidade decorre de condições conjunturais (liquidez) que afetam mesmo as firmas zumbis.
 
 
 ** Avaliação Econométrica
 
-*** Contexto
-
-O Ensaio I utiliza um modelo logit em painel com efeitos fixos (EF) para estimar a probabilidade de mortalidade de empresas não-financeiras listadas em bolsa, condicionada à posição financeira Ponzi.
-O teste de Hausman (χ² = 186,78; p ≈ 0) justifica a preferência pelos efeitos fixos frente a efeitos aleatórios.
-O procedimento de Heckman (dois estágios) é empregado para corrigir seleção amostral, e o coeficiente da Razão Inversa de Mills (IMR) é reportado como não-significativo na amostra completa e negativo e significativo na amostra restrita.
-
-
-- A hipótese é formulada de forma clara na introdução do ensaio.
-- A estratégia empírica é descrita com nível de detalhe razoável.
-- A discussão dos resultados da amostra restrita é insuficiente para justificar as conclusões apresentadas.
-- A inconsistência no coeficiente de liq não é examinada explicitamente no corpo do texto.
-
-
-
-*** [#A] Restrição amostral
-
-Para o modelo com a interação D_Ponzi × liq, o autor restringe a amostra às empresas que morreram em algum momento.
-Essa restrição configura um problema de /selection on the dependent variable/ (case-only design).
-As estimativas produzidas nessa amostra restrita não são representativas da população de empresas.
-
-
-- Condicionar em Y = 1 impede a recuperação da probabilidade incondicional de mortalidade.
-  - A regressão passa a estimar Pr(morte | Y = 1) e não Pr(Y = 1 | Ponzi).
-  - A pergunta respondida é metodologicamente distinta da hipótese original.
-
-
-O problema de viabilidade surge na amostra restrita: restringir a análise às empresas que morreram em algum momento não é defensável como proxy de um estimador de tratamento.
-Uma alternativa mais adequada seria um modelo de sobrevivência (Cox, Weibull) que acomode a censura à direita das empresas sobreviventes, ou um estimador de diferenças-em-diferenças com tratamento pela posição Ponzi.
-
-
-
-*** [#A] Sinal de Ponzi x Liq
-
-A interação =D_Ponzi × liq= no modelo de EF da amostra restrita tem coeficiente =-0,363*=.
-O sinal negativo significa que /o efeito marginal da liquidez sobre a probabilidade de mortalidade é menor para empresas Ponzi do que para não-Ponzi/.
-- Em termos teóricos: liquidez protege mais firmas Ponzi do que firmas Hedge, /reduzindo/ a probabilidade adicional de mortalidade quando a firma é Ponzi.
-- O texto interpreta esse resultado como "empresas que permanecem Ponzi com aumento de liquidez têm maiores chances de saírem do mercado" — interpretação que /inverte/ o que o coeficiente da interação efetivamente indica.
-  - O efeito positivo total decorre exclusivamente do coeficiente errado de =liq= isolado (=+1,253***=) — não da interação.
-
-Bancos ajustam endogenamente a concessão de crédito conforme a fragilidade financeira da firma.
-Firmas frágeis que /não/ recebem refinanciamento morrem; firmas frágeis que /recebem/ refinanciamento sobrevivem como zumbis.
-A inclusão de =holder.eq.ratios= e =liq= como controles é insuficiente para tratar essa endogeneidade.
-
 
 *** [#A] Sinal da liquidez (positivo)
 
 Maior liquidez, na amostra restrita, eleva a probabilidade de mortalidade — resultado que contradiz a teoria e não recebe discussão no texto.
+- Reconhecido na apresentação
+
 Duas interpretações são possíveis:
 a) seleção adversa dentro da amostra restrita, na qual empresas com liquidez que morreram constituem um subgrupo não-representativo;
 b) multicolinearidade entre liq e a interação D_Ponzi × liq.
 
 A interpretação central do ensaio repousa sobre a interação, mas os componentes D_Ponzi e liq apresentam sinais que contradizem a teoria quando isolados, o que sinaliza possível problema de especificação.
+
+- Q: Foram feitos testes para testar problemas de especificação?
+
+
 
 
 =liq= tem sinal positivo (=+1,253***=) na amostra restrita, contrário à teoria, sem discussão.
@@ -188,22 +118,7 @@ A interpretação central do ensaio repousa sobre a interação, mas os componen
 
 
 
-*** [#B] Sinal EBITDA
-
-=D_neg_ebitda= tem sinal NEGATIVO (-0,155**) na amostra principal EF, contrário à teoria.
-- Firmas com EBITDA negativo deveriam ser MAIS propensas a morrer, não menos.
-  - O sinal correto aparece apenas na amostra restrita (=+0,212***=).
-  - A inversão do sinal entre amostras não é discutida.
-
-
-*** [#B] Não-monotonicidade nos quartis de tamanho (=D_Sale_q=1=, =q=2=, =q=4=).
-
-Com =q=3= como categoria de referência (presumida), o esperado seria: =q=1= (menores) com maior coeficiente positivo, =q=2= positivo menor, =q=4= negativo.
-- O estimado em EF principal: =D_Sale_q=1 = 0,361*=, =D_Sale_q=2 = 0,470***=, =D_Sale_q=4 = -1,144***=.
-  - Ou seja, o segundo quartil tem /maior/ probabilidade de mortalidade do que o primeiro (menor) quartil — não-monotonicidade que contradiz a literatura sobre demografia de firmas.
-  - O texto não aborda esse padrão.
-
-*** [#B] Várias mudanças simultâneas
+*** [#A] Várias mudanças simultâneas
 
 O texto afirma (p. 32) que
 
@@ -225,6 +140,36 @@ Mais importante:
 - Como há interação entre liquidez e posição Ponzi contemporânea, o efeito marginal da liquidez não é constante entre os grupos. Para firmas Ponzi, o impacto marginal da liquidez sobre as probabilidades (log-odds) de mortalidade é menor do que para firmas não-Ponzi.
   - Isso talvez reflita, novamente, a endegeneidade da concessão de crédito (concede crédito para aquelas que não irão falir e, portanto, não falem)
 
+Bancos ajustam endogenamente a concessão de crédito conforme a fragilidade financeira da firma.
+Firmas frágeis que /não/ recebem refinanciamento morrem; firmas frágeis que /recebem/ refinanciamento sobrevivem como zumbis.
+A inclusão de =holder.eq.ratios= e =liq= como controles é insuficiente para tratar essa endogeneidade.
+- Q: Essa possível endogeneidade foi levada em consideração?
+
+*** [#A] Ausência de dummies temporais
+
+- O painel logit com efeitos fixos de firma não inclui efeitos temporais (dummies de ano) (omitidas, usual na literatura)
+  - Essa omissão impede controlar para choques macroeconômicos comuns a todas as firmas em cada período — precisamente o componente cíclico que a HIF prediz como determinante da mortalidade.
+  - Mudanças macroeconômicas podem ser o suficiente para fazer com que firmas passem de outras posições para Ponzi
+    - Na ausência de controles temporais, pode misturar se tornar Ponzi por questões à nível da firma por com deteriorações macro
+    - A dummy de recessão não capta, por exemplo, mudanças mais graduais e/ou regulatórias
+      - Mais importante, não captura ciclos de liquidez e de política monetária (que poderiam ser importantes para a HIF)
+      - Dito de outro modo, a hipótese é que os anos não-recessivos são equivalentes
+- Q: Por que não haveria necessidade de dummies temporais?
+- A interação =REC × Sale_{q=1}= é mantida, o que cria assimetria: o ciclo afeta apenas pequenas firmas, mas não as demais?
+
+
+*** [#B] Endogeneidade de D_Ponzi
+
+A posição Ponzi pode ser resultado, e não causa, de condições que também predispõem à mortalidade — um problema de causalidade reversa.
+- A variável Ponzi pode estar capturando outras variáveis latentes que também causam mortalidade
+  - Var Latente $\Rightarrow$ Ponzi, mas Latente $\Rightarrow$ Mortalidade também
+  - Sendo este o caso, pode ser que ser Ponzi não seja a causa da mortalidade, mas um sintoma
+  - Essas variáveis latentes podem estar associadas com a demografia das firmas destacas na revisão dos fatos estilizados
+- Bancos ajustam a concessão de crédito de forma endógena à situação financeira da firma: firmas frágeis que não recebem crédito morrem, mas firmas frágeis que recebem crédito sobrevivem como zumbis.
+  - O procedimento de Heckman corrige seleção amostral na equação de entrada no painel, mas não endogeneidade da variável de tratamento D_Ponzi.
+O texto não distingue esses dois problemas.
+
+
 
 *** [#B] Heterogeneidade da variável dependente
 
@@ -232,62 +177,78 @@ A "mortalidade" empresarial agrega falência, cancelamento de registro e fusão/
 - M&A não é evidência de fragilidade financeira.
   - Amalgamar M&A com falência na variável dependente introduz heterogeneidade
   - A inclusão de fusões e aquisições como formas de “mortalidade” institucional parece conceitualmente problemática, sobretudo porque M&A não implica necessariamente fracasso econômico.
+- Q (Esclarecimento): Mortalidade inclui M&A?
+  - M&A faz sentido em termos de morte institucional, mas não morte financeira
 
 
-*** [#B] Não-siginificância de D_Ponzi isolado
 
-Na amostra principal, D_Ponzi contemporâneo não é estatisticamente significante — apenas a interação D_Ponzi × liq e a persistência Ponzi (D_Ponzi × D_Ponzi_{t-1}) o são, e apenas na amostra restrita.
-A hipótese central — relação positiva entre posição Ponzi e mortalidade — não encontra suporte no coeficiente principal.
-O ensaio sustenta a hipótese pelo coeficiente de uma interação estimada sobre uma amostra restrita não-representativa.
-O texto não problematiza essa distinção.
+*** [#B] Sinal EBITDA
 
-
-*** [#B] Ausência de dummies temporais
-
-- O painel logit com efeitos fixos de firma não inclui efeitos temporais (dummies de ano).
-  - Essa omissão impede controlar para choques macroeconômicos comuns a todas as firmas em cada período — precisamente o componente cíclico que a HIF prediz como determinante da mortalidade.
-  - Mudanças macroeconômicas podem ser o suficiente para fazer com que firmas passem de outras posições para Ponzi
-    - Na ausência de controles temporais, pode misturar se tornar Ponzi por questões à nível da firma por com deteriorações macro
-    - A dummy de recessão não capta, por exemplo, mudanças mais graduais e/ou regulatórias
-      - Mais importante, não captura ciclos de liquidez e de política monetária (que poderiam ser importantes para a HIF)
-      - Dito de outro modo, a hipótese é que os anos não-recessivos são equivalentes
+=D_neg_ebitda= tem sinal NEGATIVO (-0,155**) na amostra principal EF, contrário à teoria.
+- Firmas com EBITDA negativo deveriam ser MAIS propensas a morrer, não menos.
+  - O sinal correto aparece apenas na amostra restrita (=+0,212***=).
+  - A inversão do sinal entre amostras não é discutida.
 
 
-*** [#C] Poder discriminatório do modelo
+*** [#C] Não-monotonicidade nos quartis de tamanho (=D_Sale_q=1=, =q=2=, =q=4=).
+
+Com =q=3= como categoria de referência (presumida), o esperado seria: =q=1= (menores) com maior coeficiente positivo, =q=2= positivo menor, =q=4= negativo.
+- O estimado em EF principal: =D_Sale_q=1 = 0,361*=, =D_Sale_q=2 = 0,470***=, =D_Sale_q=4 = -1,144***=.
+  - Ou seja, o segundo quartil tem /maior/ probabilidade de mortalidade do que o primeiro (menor) quartil — não-monotonicidade que contradiz a literatura sobre demografia de firmas.
+  - O texto não aborda esse padrão.
+- A monotonicidade é observada na amostra restrita, mas seria enteressante tentar explicar o porquê que é observado apenas na restrita
+
+*** [#C] Poder discriminatório do modelo :noexport:
 
 - O pseudo-R² de McFadden é de 0,047, valor que o autor reconhece como reduzido.
 - Um modelo com poder discriminatório próximo ao aleatório, então a evidência se torna enfraquecida (via ROC, não R2)
   - Não é verdade que é próximo do aleatório (qual a AUC?), mas com baixa capacidade preditiva
 
 
-*** [#C] Endogeneidade de D_Ponzi
-
-A posição Ponzi pode ser resultado, e não causa, de condições que também predispõem à mortalidade — um problema de causalidade reversa.
-- A variável Ponzi pode estar capturando outras variáveis altentes que também causam mortalidade
-  - Var Latente $\Rightarrow$ Ponzi, mas Latente $\Rightarrow$ Mortalidade também
-  - Sendo este o caso, pode ser que ser Ponzi não seja a causa da mortalidade, mas um sintoma
-- Bancos ajustam a concessão de crédito de forma endógena à situação financeira da firma: firmas frágeis que não recebem crédito morrem, mas firmas frágeis que recebem crédito sobrevivem como zumbis.
-  - O procedimento de Heckman corrige seleção amostral na equação de entrada no painel, mas não endogeneidade da variável de tratamento D_Ponzi.
-O texto não distingue esses dois problemas.
+*** [#C] Sinal de Ponzi x Liq :noexport:
 
 
+A interação =D_Ponzi × liq= no modelo de EF da amostra restrita tem coeficiente =-0,363*=.
+O sinal negativo significa que /o efeito marginal da liquidez sobre a probabilidade de mortalidade é menor para empresas Ponzi do que para não-Ponzi/.
+- Em termos teóricos: liquidez protege mais firmas Ponzi do que firmas Hedge, /reduzindo/ a probabilidade adicional de mortalidade quando a firma é Ponzi.
+- O texto interpreta esse resultado como "empresas que permanecem Ponzi com aumento de liquidez têm maiores chances de saírem do mercado" — interpretação que /inverte/ o que o coeficiente da interação efetivamente indica.
+  - O efeito positivo total decorre exclusivamente do coeficiente errado de =liq= isolado (=+1,253***=) — não da interação.
 
-*** [#C] Confusão entre coeficiente logit e marginal effect com unidade.
+
+*** [#C] Confusão entre coeficiente logit e marginal effect com unidade
+
+Resumo: potencial erro entre mudança em ponto percentual e unidade (de variáveis que são razões).
 
 O texto interpreta os coeficientes do logit como variações percentuais para "1 ponto percentual" (p.p.) das variáveis explicativas (p. XX).
 Para variáveis em base de proporção (e.g., =sale.at=, =share.sale=, =liq=), 1 p.p. corresponde a uma variação absoluta de 0,01.
 A elasticidade reportada (e.g., "probabilidade 99,96% menor para 1 p.p. em =share.sale=") é o exponencial do coeficiente bruto (exp(-10,28) - 1 ≈ -99,997%=), ou seja, o efeito de uma variação de UMA UNIDADE em =share.sale=, não de 1 p.p. Para 1 p.p., o efeito correto é =exp(-10,28 * 0,01) - 1 = exp(-0,103) - 1 ≈ -9,8%=. A magnitude reportada é cerca de 100 vezes maior do que a magnitude correta. O mesmo erro afeta a interpretação de =Lev=, =sale.at=, =D_high_end= e a interação =D_Ponzi × liq=.
 
-*** [#C] Ausência de dummies temporais em EF, com USREC simultaneamente fora do EF.
+*** [#C] Ausência de dummies temporais em EF, com USREC simultaneamente fora do EF. :noexport:
 
 A tabela mostra =USREC= estimado em Pooled e EA, mas ausente em EF (=USREC= é constante no tempo para todas as firmas em cada ano e seria absorvido pelos efeitos temporais se houvesse).
 Como o EF não inclui dummies de ano explícitas e nem =USREC=, o modelo /não controla pelo ciclo macroeconômico/ — o componente que a HIF prediz como central para a transição Ponzi→mortalidade.
-- A interação =REC × Sale_{q=1}= é mantida, o que cria assimetria: o ciclo afeta apenas pequenas firmas, mas não as demais.
+
+
+*** Restrição amostral
+
+Para o modelo com a interação D_Ponzi × liq, o autor restringe a amostra às empresas que morreram em algum momento.
+Essa restrição configura um problema de /selection on the dependent variable/ (case-only design).
+As estimativas produzidas nessa amostra restrita não são representativas da população de empresas.
+
+
+- Condicionar em Y = 1 impede a recuperação da probabilidade incondicional de mortalidade.
+  - A regressão passa a estimar Pr(morte | Y = 1) e não Pr(Y = 1 | Ponzi).
+  - A pergunta respondida é metodologicamente distinta da hipótese original.
+
+
+O problema de viabilidade surge na amostra restrita: restringir a análise às empresas que morreram em algum momento não é defensável como proxy de um estimador de tratamento.
+Uma alternativa mais adequada seria um modelo de sobrevivência (Cox, Weibull) que acomode a censura à direita das empresas sobreviventes, ou um estimador de diferenças-em-diferenças com tratamento pela posição Ponzi.
+
 
 
 ** Consistência Lógica e Teórica
 
-*** Hipótese central e qualificação da pergunta
+*** Hipótese central e qualificação da pergunta :noexport:
 
 A hipótese central — de que empresas em posição Ponzi têm maior probabilidade de mortalidade — tem suporte na teoria de Minsky.
 A revisão de literatura do próprio ensaio, porém, apresenta evidências de "empresas zumbis" e de reversão da fragilidade financeira, o que implica que a posição Ponzi não necessariamente converge para mortalidade.
@@ -295,30 +256,34 @@ A hipótese deveria ser formulada com maior precisão quanto ao escopo: entre qu
 
 A literatura econométrica sobre modelos de sobrevivência (Shumway, 2001; Cox) e análise de duração, metodologicamente pertinente para o problema de pesquisa, não é citada.
 
-*** Variáveis heterogêneas
+*** Variáveis heterogêneas :noexport:
 
 A agregação de variáveis heterogêneas (falência, M&A) na variável dependente é incompatível com a lógica teórica do argumento minskiano, para o qual a irreversibilidade da deterioração financeira implica insolvência, não necessariamente saída por fusão.
 
 
-*** Ponzi ou Zumbis?
+*** [#A] Ponzi ou Zumbis?
 
 A operacionalização da persistência Ponzi (D_Ponzi × D_Ponzi_{t-1}) como variável central do modelo assemelha-se mais a uma proxy de empresa zumbi do que a um teste da hipótese de mortalidade Ponzi.
-Se a persistência Ponzi descreve firmas que sobrevivem sem honrar compromissos (zumbis), a interação com liquidez pode estar capturando a sobrevivência subsidiada por crédito bancário, não a deterioração financeira que leva à mortalidade.
+Se a persistência Ponzi descreve firmas que sobrevivem sem a capacidade honrar compromissos (zumbis), a interação com liquidez pode estar capturando a sobrevivência subsidiada por crédito bancário, não a deterioração financeira que leva à mortalidade.
 Essa reinterpretação, se correta, inverteria a leitura dos resultados: o modelo estaria identificando as condições de sobrevivência de zumbis, não as condições de mortalidade de firmas Ponzi.
 
 
 Esse reconhecimento, porém, não é integrado à hipótese testada: a persistência de empresas Ponzi (zumbis) é evidência contrária à hipótese do ensaio, e o texto não revisita a hipótese à luz dessa tensão.
 
-*** Reversão da posição Ponzi
+*** [#C] Reversão da posição Ponzi
 
 Os determinantes da reversão da posição Ponzi para posições menos frágeis são tão relevantes para a HIF quanto os determinantes da mortalidade, mas não são explorados no ensaio.
 
 
 
-** Síntese Crítica do Ensaio I
 
-- Os pontos de mérito são: a base de dados (Compustat/CRSP), a operacionalização da taxonomia de Minsky em nível de firma, e a aplicação do teste de Hausman.
-- As fragilidades centrais são: o case-only design na amostra restrita, que torna as estimativas não-representativas; o sinal contraintuitivo de liq sem discussão; a heterogeneidade da variável dependente; e o poder discriminatório próximo ao aleatório na ROC.
+** Sugestões de melhoria :noexport:
+
+
+- Separar a variável dependente em falência e M&A, estimando-as como desfechos distintos (logit multinomial ou dois modelos binários independentes).
+- Considerar modelos de sobrevivência (Cox) como especificação alternativa, mais adequada ao problema de tempo até mortalidade com censura à direita.
+# - Discutir o problema de endogeneidade de D_Ponzi e sua distinção do problema de seleção amostral tratado pelo Heckman.
+# A inclusão de =holder.eq.ratios= e =liq= como controles é insuficiente para tratar essa endogeneidade.
 
 
 * Ensaio II: Endividamento das Famílias Americanas (1989–2019)
@@ -343,7 +308,7 @@ Divergências:
 
 ** Avaliação Empírica
 
-*** Contexto
+*** Contexto :noexport:
 
 O Ensaio II é integralmente descritivo.
 A classificação das famílias em posições Hedge, Especulativa e Ponzi é operacionalizada a partir da Survey of Consumer Finances (SCF), com base na relação entre renda disponível, serviço da dívida e gastos não-duráveis.
@@ -360,6 +325,8 @@ O ensaio não discute essa limitação, que implica que a dinâmica da crise nã
 
 Além disso, existe um survey específico para o período da crise que não foi utilizado: /Surveying the Aftermath of the Storm: Changes in Family Finances from 2007 to 2009/.
 Se foi utilizado, não foi devidamente explicitado.
+- Q: Existiu alguma razão específica para não incluir este survey?
+  - Na apresentação você mencionou este survey, então conviria ter essa mesma observação na tese tambem
 
 
 *** [#A] Avaliação de edgcases de cada medição
@@ -372,16 +339,15 @@ Quais são os vieses e limitações de cada um deles.
   - Como a existência de inflação de ativos afeta os indicadores propostos?
   - A conclusão do ensaio aceita apenas o resultado das posições, sem discutir por que os dois métodos produziram conclusões opostas.
   - Me parece que o método das posições financeiras, ao não considerar a inflação de ativos, não é capaz de falsear a nova narrativa por design
-- Esclarecimento: Aluguel imobiliário deduzido para todas as famílias (rent).
-  - Mas as famílias proprietárias não pagam aluguel (pagam hipoteca, já contabilizada em =AM_hv=).
-  - Esclarecer se =rent= é aplicado apenas a famílias inquilinas, ou se há dupla-contagem do custo da moradia para
-proprietários.
+- Outra questão: como foi lidou com famílias sem dívida no ponderação?
+  - Inputar peso zero pode introduzir algum viés?
 
-- A estabilidade relativa das posições financeiras ao longo de 1989–2019 dificulta interpretações fortes sobre mudança estrutural.
+- A estabilidade relativa das posições financeiras ao longo de 1989–2019 dificulta interpretações fortes sobre mudança estrutural (figuras 4 e 5).
   - O primeiro quartil parece ser genuinamente Zumbi, enquanto o segundo parece haver uma quebra estrutural
-  - Curiosamente, não há queda pronunciada das posições Ponzi após a crise, levantando possibilidade de “famílias zumbis”.
   - Surge dúvida importante sobre possíveis subestimações do comportamento especulativo das famílias ricas: elas podem permanecer Hedge mesmo praticando default estratégico.
     - Curvas de concentração de imóveis poderiam ajudar a identificar quando cada estrato entrou ou saiu da bolha imobiliária.
+    - Questão teórica: O que precisaria acontecer para que as famílias mais ricas se tornassem Ponzi? Responder essa pergunta pode ajudar a pensar o porquê o novo concensso talvez não tenha sido testado por essa métrica.
+      - Usando essa medida, nada ocorreu com esses quartis, sendo esse o caso, como a hipótese desse novo consenso surgiria?
 
 # As posições especulativas apresentam proporções reduzidas ao longo de todo o período, o que pode indicar que a operacionalização da fronteira entre Especulativo e Ponzi colapsa situações especulativas em Ponzi por força da hipótese de amortização Price.
 # - A hipótese de amortização Price é uma simplificação operacionalmente conveniente, mas problematicamente distorcida para o período coberto (1989–2019), que inclui a proliferação de produtos de dívida não-convencionais (ARM, IO) nos anos 2000.
@@ -390,12 +356,13 @@ proprietários.
 
 A análise descritiva é metodologicamente legítima quando as afirmações feitas são estritamente descritivas.
 O problema do ensaio é que o autor faz comparações entre estratos de renda ao longo do tempo sem quantificar a incerteza dessas comparações.
-Para afirmações do tipo "famílias de menor renda são as mais frágeis", seria necessário ao menos intervalos de confiança bootstrap por estrato ou testes de diferenças entre grupos.
+Para afirmações do tipo "famílias de menor renda são as mais frágeis", seria necessário ao menos intervalos de confiança bootstrap por estrato ou testes de diferenças entre grupos (figura 5 com sobreposições, por exemplo).
 A ausência de quantificação da incerteza amostral nas comparações é o ponto crítico, não a opção pela análise descritiva em si.
 
-- Esclarecimento: Foi utilizado os pesos amostrais e réplica de erros-padrão por bootstrap?
+- Q Esclarecimento: Foi utilizado os pesos amostrais e réplica de erros-padrão por bootstrap?
   - Isso poderia ajudar a construir um intervalo de confiança entre as categorias
   - Para não recair em classificações determinísticas, seria possível atribuir probabilidade de classificação (via bootstrap)
+  - Me parece que já fornece o peso de replicação para bootstrap
 
 *** [#C] Inputação entre pesquisas
 
@@ -405,24 +372,6 @@ Esse procedimento de matching entre pesquisas introduz erros de mensuração sis
 
 ** Consistência Lógica e Teórica
 
-A análise é coerente com a taxonomia de Minsky.
-O problema de consistência é de natureza dinâmica: a HIF é uma teoria sobre a deterioração endógena das posições financeiras ao longo do ciclo, orientada por expectativas.
-A análise cross-sectional trianual captura a fragilidade em nível estático, mas não captura a dinâmica de endividamento progressivo que é o mecanismo central da HIF.
-A evidência apresentada é compatível com a teoria, mas não a testa: mostrar que famílias de menor renda têm maior proporção de posições Ponzi é consistente com Minsky, mas não demonstra que a deterioração financeira segue o mecanismo endógeno hipotesado.
-
-*** HIF e Famílias
-
-A transposição da HIF para o setor das famílias gera algumas tensões:
-- A dimensão de expectativas — central para a distinção entre posições na taxonomia de Minsky — está ausente da operacionalização.
-- A classificação é construída exclusivamente sobre dados de balanço e fluxo de caixa, sem incorporar expectativas de renda futura ou de valorização de ativos.
-- [cite/t:@tymoigne_2011_measuring] é uma referência metodológica relevante para a construção de índices de fragilidade que não é citada.
-
-Um problema de fundamentação teórica mais amplo é que a HIF de Minsky foi formulada para firmas não-financeiras, não para famílias.
-- O próprio Minsky considerava que as famílias não poderiam ser o vetor de iniciação da instabilidade sistêmica, papel reservado para as firmas e para as inovações financeiras dos bancos.
-- A transposição da taxonomia para famílias requer algumas discussões:
-  - Como as hipotecas comportam em relação à dívida das empresas dentro da taxonomia?
-  - Quais são os mecanismos pelos quais a fragilidade das famílias se transmite ao sistema financeiro?
-  - Como expectativas (centrais em Minsky) entram na operacionalização?
 
 *** [#A] Antigo vs Velho consenso
 
@@ -432,7 +381,8 @@ Os dados finais corroboram o antigo consenso (famílias do primeiro e segundo qu
   - A "corroboração do antigo consenso" decorre, em parte, de uma escolha metodológica que /exclui o teste do novo consenso/.
   - Um outro ponto a se considerar é que a revisão da historiografia econômica pode estar associada ao antigo consenso.
     - Uma vez deflagrada a crise e dada a importância dos subprime, busca-se entender o porquê dessa relevância ao longo do tempo, observando a evolução institucional.
-- Um ponto a favor do velho consenso é que o consumo financiado por dívida parece ter respando empírico ao longo da bolha [cite:@mason_2018_income], mas talvez não antes.
+- Um ponto a favor do velho consenso é que o consumo financiado por dívida parece ter respando empírico ao longo da bolha [cite:@mason_2018_income], mas talvez não antes (Sugestão de referência).
+  - Sobre superioridade da hipótese da renda relativa
   - O argumento é que o endividamento é para financiar compra de ativos, não de consumo
     - O primeiro quintil mal possui dívida (parece que o survey aponta isso)
       - Q: Como lidou com ausência de dívida nos dados?
@@ -458,20 +408,41 @@ A discussão sobre o porquê as famílias se endividam e o tipo de endividamento
       - Exemplo: famílias com patrimônio alocado em imóveis ao longo de uma bolha enquanto não é capaz de saldar os compromisso financeiros corriqueiros
         - Em cenário de valorização dos imóveis, esta família seria classificada unicamente como Ponzi?
           - Entendo que a liquidez não imediata poderia assegurar o porque de ser Ponzi, mas deveria estar mais explícito
-        - Alternativamente, famílias financeiramente estáveis (em termos de fluxo), mas preço dos imóveis caem, como classificar?
-- A revisão da literatura empírica não possui fio condutor: apresenta-se uma sequência de resultados sem costura entre os mecanismos e sem articulação com a hipótese do ensaio.
-  - Modelos DSGE e teorias do ciclo de vida são apresentados, mas sem articulação direta com os indicadores construídos.
+  - Alternativamente, famílias financeiramente estáveis (em termos de fluxo), mas preço dos imóveis caem, como classificar?
+# - A revisão da literatura empírica não possui fio condutor: apresenta-se uma sequência de resultados sem costura entre os mecanismos e sem articulação com a hipótese do ensaio.
+#   - Modelos DSGE e teorias do ciclo de vida são apresentados, mas sem articulação direta com os indicadores construídos.
 
 
 
 
 
-*** Famílias Zumbis
+*** HIF e Famílias
+
+A transposição da HIF para o setor das famílias gera algumas tensões:
+- A dimensão de expectativas — central para a distinção entre posições na taxonomia de Minsky — está ausente da operacionalização.
+- A classificação é construída exclusivamente sobre dados de balanço e fluxo de caixa, sem incorporar expectativas de renda futura ou de valorização de ativos.
+- [cite/t:@tymoigne_2011_measuring] é uma referência metodológica relevante para a construção de índices de fragilidade que não é citada.
+
+Um problema de fundamentação teórica mais amplo é que a HIF de Minsky foi formulada para firmas não-financeiras, não para famílias.
+- O próprio Minsky considerava que as famílias não poderiam ser o vetor de iniciação da instabilidade sistêmica, papel reservado para as firmas e para as inovações financeiras dos bancos.
+- A transposição da taxonomia para famílias requer algumas discussões:
+  - Como as hipotecas comportam em relação à dívida das empresas dentro da taxonomia?
+  - Quais são os mecanismos pelos quais a fragilidade das famílias se transmite ao sistema financeiro?
+  - Como expectativas (centrais em Minsky) entram na operacionalização?
+
+*** Famílias Zumbis :noexport:
 
 Por simetria com o Ensaio I, valeria perguntar: existem "famílias zumbis" — famílias persistentemente Ponzi que sobrevivem em vez de ir à insolvência?
 Os dados do SCF mostram primeiro quartil persistentemente Ponzi por todo o período (1989–2019).
 Esse padrão é evidência de famílias zumbis no sentido análogo ao das empresas zumbis.
 O ensaio não explora essa simetria, perdendo uma contribuição teórica natural.
+
+
+** Sugestões de melhoria :noexport:
+
+
+- Adicionar intervalos de confiança bootstrap aos indicadores de posição financeira por decil de renda.
+- Discutir a limitação da periodicidade trianual para a captura da dinâmica da crise de 2008.
 
 * Ensaio III: Posições Financeiras Comparadas — Empresas e Famílias (1989–2022)
 
@@ -489,11 +460,11 @@ Divergências:
   - A FIR estatisticamente significativa corre na direção oposta: F → H (variação na fragilidade das empresas explica a fragilidade das famílias).
   - Na equação de g_index_f, nem index_h(-1) nem index_h(-2) são significativos; portanto, a direção H → F não encontra suporte estatístico.
 - Sinal: a hipótese é de relação /negativa/ entre fragilidade das famílias e fragilidade das empresas (uma sustenta a robustez da outra) [não discutido].
-  - O coeficiente de g_index_f(-2) na equação de index_h é /positivo/ e significativo (0,009**): aumentos na fragilidade das empresas precedem aumentos na fragilidade das famílias.
-  - Mesmo aceitando a inversão de direção, o sinal contradiz a hipótese de complementaridade setorial.
+  - Dito de outro modo, senti falta de uma discussão dos mecamnismos do porquê da fragilidade das famílias afetam as firmas
+    - Consigo imaginar os porquês, mas deveria estar mais explícito
 
 
-** Contexto
+** Contexto :noexport:
 
 O Ensaio III constrói índices de fragilidade para empresas (g_index_f) e famílias (index_h) e estima um modelo VAR(2) para investigar a inter-relação entre as posições financeiras dos dois setores.
 
@@ -522,24 +493,26 @@ A conclusão do ensaio reconhece o resultado, mas não reformula a hipótese à 
 
 ** [#A] Ponderação na criação do indicador
 
-- Se a ponderação considera ativos possuídos, a inflação de ativos (imóveis) pode sobreestimar alguma das categorias?
-  - Como foram ponderadas as famílias que não possuem ativos algum?
-- Há uma inconsistência entre o texto e o gráfico 13 dos índices: o texto afirma que "a fragilidade das famílias possui magnitude consideravelmente superior à das empresas", mas a inspeção do gráfico parece mostrar o oposto em determinados períodos.
+- Q: Se a ponderação considera ativos possuídos, a inflação de ativos (imóveis) pode sobreestimar alguma das categorias?
+  - Q: Como foram ponderadas as famílias que não possuem ativos algum?
+- Há uma inconsistência entre o texto e o gráfico 13 dos índices: o texto afirma que "a fragilidade das famílias possui magnitude consideravelmente superior à das empresas" (88), mas a inspeção do gráfico parece mostrar o oposto em determinados períodos.
   - Além disso, tem uma dos eixos "Preto" que não é explicado
-  - Essa figura também me levaria à hipótese contrária ao que foi levantada ao longo do ensaio (F-H invés de H-F)
-- A ponderação dos índices de fragilidade utiliza ativos para empresas e dívida para famílias, criando escalas não-comparáveis (checar)
-  - Q: Essa ponderação se dá por conta da interpolação somente ou também foi utilizada para computar o indicador proposto?
+  - Importante: Essa figura também me levaria à hipótese contrária ao que foi levantada ao longo do ensaio (F-H invés de H-F)
+  - Talvez o texto estivesse se referindo à figura 12, mas se refere à 13
+    - Figura antes dos resultados do VAR
+# - A ponderação dos índices de fragilidade utiliza ativos para empresas e dívida para famílias, criando escalas não-comparáveis (checar)
+#   - Q: Essa ponderação se dá por conta da interpolação somente ou também foi utilizada para computar o indicador proposto?
 
 
 ** [#A] Subindentificação e ausência de mecanismos
 
-A equação das empresas está sub-identificada.
-Na equação de g_index_f, somente a segunda defasagem da própria variável é significativa (ao nível de 10%).
-index_h não é significativo para a equação das empresas em nenhuma defasagem.
-A FIR estatisticamente relevante ocorre apenas na direção g_index_f → index_h — oposta à hipótese central do ensaio.
-- A seção de resultados apresenta os coeficientes e a FIR sem análise substantiva: os resultados são descritos, mas não interpretados à luz da hipótese central.
-- A apresentação da FIR oposta à hipótese, sem reformulação desta, deixa o leitor sem orientação sobre a interpretação da contradição.
-  - O porquê desse resultado ser razoável
+Q: A equação das empresas está sub-identificada?.
+- Na equação de g_index_f, somente a segunda defasagem da própria variável é significativa (ao nível de 10%).
+- index_h não é significativo para a equação das empresas em nenhuma defasagem.
+# A FIR estatisticamente relevante ocorre apenas na direção g_index_f → index_h — oposta à hipótese central do ensaio.
+# - A seção de resultados apresenta os coeficientes e a FIR sem análise substantiva: os resultados são descritos, mas não interpretados à luz da hipótese central.
+# - A apresentação da FIR oposta à hipótese, sem reformulação desta, deixa o leitor sem orientação sobre a interpretação da contradição.
+#   - O porquê desse resultado ser razoável
 
 A ausência de discussão sobre o mecanismo de transmissão entre os setores (crédito, demanda efetiva, efeitos de riqueza) é uma lacuna teórica: o VAR captura correlações temporais, mas o mecanismo econômico que as gera não é formalizado antes da estimação.
 - A hipótese central — fragilidade das famílias sustenta posições das empresas — requer um mecanismo teórico explícito.
@@ -556,14 +529,15 @@ A ausência de [cite/t:@godley_1999_seven; @godley_2007_monetary] como referênc
 A HIF de Minsky postula relação pró-cíclica entre /nível/ de alavancagem e ciclo econômico.
 O modelo MS estimado usa /primeira diferença/ de alavancagem (=ΔLev_f=), justificada pela presença de raiz unitária em =Lev_f=.
 - A transformação reformula a hipótese implicitamente: passa de "alavancagem é pró-cíclica" para "/variação/ da alavancagem é prócíclica".
-- Essas duas hipóteses não são equivalentes.
+- Essas duas hipóteses não são equivalentes, apesar de provavelmente irem para a mesma direção.
 - O ensaio não discute essa reformulação.
+- Falou menos durante a apresentação (imagino que foi por questões de tempo), mas achei interessante (só ressaltando)
 
 
-- β_1= = =+0,055= no regime Minskyan e =-0,082= no regime Steindliano.
-  - Para um aumento de 1 p.p. no =GDP_c=, =ΔLev= variaria em 0,055 p.p. (Minskyan) ou -0,082 p.p. (Steindliano).
-  - Essas magnitudes são pequenas em termos econômicos: o regime Minskyan não implica grande pró-ciclicidade da alavancagem.
-- A "identificação de regimes" é estatisticamente significativa, mas economicamente fraca.
+# - β_1= = =+0,055= no regime Minskyan e =-0,082= no regime Steindliano.
+#   - Para um aumento de 1 p.p. no =GDP_c=, =ΔLev= variaria em 0,055 p.p. (Minskyan) ou -0,082 p.p. (Steindliano).
+#   - Essas magnitudes são pequenas em termos econômicos: o regime Minskyan não implica grande pró-ciclicidade da alavancagem.
+# - A "identificação de regimes" é estatisticamente significativa, mas economicamente fraca.
 
 ** [#B] Transformações
 
@@ -573,17 +547,18 @@ A transformação, porém, cria uma assimetria conceitual: o VAR é estimado com
 - A implicação econômica da raiz unitária em index_f — que impede inferência sobre a relação de longo prazo entre os /níveis/ dos dois índices — é o resultado substantivo que o texto não discute: ao transformar index_f em g_index_f, o autor descarta implicitamente a possibilidade de uma relação de equilíbrio de longo prazo entre os índices de fragilidade dos dois setores.
 - Adicionalmente, há uma inconsistência textual: a Tabela de resultados do VAR é intitulada "VAR(3)" no texto, enquanto o modelo é descrito como VAR(2) ao longo de todo o ensaio.
 
-- Esclarecimento: Qual é a especificação do filtro de Hamilton?
-  - A escolha desse valor pode afetar a definição/detecção do ciclo (normalmente 8, para dados trimestrais)
+- Q Esclarecimento: Qual é a especificação do filtro de Hamilton?
+  - Razão: A escolha desse valor pode afetar a definição/detecção do ciclo (normalmente 8, para dados trimestrais)
 
 ** [#B] Interpolação dos dados
 
 O SCF é trianual; o VAR exige periodicidade anual.
 - Dados interpolados não são dados observados: seguem a tendência imposta pelo método de interpolação, o que é particularmente problemático para capturar descontinuidades como a crise de 2008.
-- Qualquer método de interpolação determinística (linear, cúbica, Denton) introduz autocorrelação serial nos resíduos.
-  - Os testes de ausência de autocorrelação reportados como satisfatórios não são confiáveis na presença de dados interpolados, porque a autocorrelação introduzida pela interpolação pode cancelar a autocorrelação residual dos dados.
+- Talvez seja o caso de adicionar uma observação a respeito
+# - Qualquer método de interpolação determinística (linear, cúbica, Denton) introduz autocorrelação serial nos resíduos.
+#   - Os testes de ausência de autocorrelação reportados como satisfatórios não são confiáveis na presença de dados interpolados, porque a autocorrelação introduzida pela interpolação pode cancelar a autocorrelação residual dos dados.
 
-** [#C] Graus de liberdade
+** [#C] Graus de liberdade :noexport:
 
 O problema de graus de liberdade é o mais grave do ensaio.
 O critério de informação indicou 6 lags como configuração com melhor ajuste para um painel de 34 observações.
@@ -598,6 +573,14 @@ Esse número é insuficiente para inferência confiável, em particular para a F
 
 
 
+
+** Sugestões de melhoria :noexport:
+
+
+- Apresentar os resultados do VAR com qualificação dos graus de liberdade.
+- Qualificar a hipótese central à luz da FIR observada.
+- Corrigir a inconsistência editorial na denominação da tabela ("VAR(3)" vs. "VAR(2)").
+
 * Revisão Sistemática de Coerência Econométrica e Lógica Interna
 
 
@@ -605,12 +588,15 @@ Esse número é insuficiente para inferência confiável, em particular para a F
 - No Ensaio I, a revisão de literatura apresenta a existência de empresas zumbis — Ponzi persistentes que sobrevivem — como característica estrutural do mercado contemporâneo.
   - A hipótese central do ensaio (Ponzi → mortalidade) é incompatível com a existência sistemática de zumbis.
   - O ensaio não articula como a coexistência de Ponzi mortais e Ponzi zumbis seria observacionalmente equivalente sob a especificação adotada.
-- No Ensaio III, a revisão de literatura sobre HIF agregada reconhece que /a maior parte dos trabalhos não corrobora essa relação essencial/ (pró-ciclicidade da fragilidade), mesmo reconhecendo a coexistência dos dois regimes.
-  - A hipótese do ensaio depende exatamente do mecanismo cíclico da HIF entre os dois setores.
-  - A tensão entre a revisão (que não corrobora HIF) e a hipótese (que pressupõe HIF) não é tratada.
 - O Ensaio II conclui pelo antigo consenso (famílias pobres como vetor da crise);; O Ensaio III conclui pela complementaridade setorial entre famílias e empresas.
   - Os dois ensaios não articulam a relação entre essas duas conclusões: se as famílias pobres são o vetor da crise (Ensaio II), o canal de transmissão para as empresas (Ensaio III) deveria ser explicitado.
   - A tese não apresenta esse canal.
+- Pontencial nova pergunta:
+  - Será que a fragilidade financeira dos quartis inferiores sustenta a estabilidade financeira do topo da distribuição?
+    - A ideia seria aplicar a ideia do Ensaio III aos dados do Ensaio II
+- No Ensaio III, a revisão de literatura sobre HIF agregada reconhece que /a maior parte dos trabalhos não corrobora essa relação essencial/ (pró-ciclicidade da fragilidade), mesmo reconhecendo a coexistência dos dois regimes.
+  - A hipótese do ensaio depende exatamente do mecanismo cíclico da HIF entre os dois setores.
+  - A tensão entre a revisão (que não corrobora HIF) e a hipótese (que pressupõe HIF) não é tratada.
 - A conclusão geral da tese invoca explicitamente Lakatos para sustentar a validade de Minsky mesmo diante de resultados que /não corroboram suas previsões específicas/
   - O recurso ao "núcleo firme" lakatosiano transforma a tese em um argumento sobre validade conceitual, não sobre validade empírica.
     - Os três ensaios foram estruturados com hipóteses empiricamente testáveis e estimações econométricas.
@@ -622,17 +608,25 @@ Esse número é insuficiente para inferência confiável, em particular para a F
     - A taxonomia minskyana, transposta para famílias, captura fragilidade de baixa renda mas não captura especulação de alta renda;
     - A relação setorial é F → H positiva, oposta à complementaridade hipotesada.
     - Cada uma dessas reformulações seria uma contribuição empírica genuína à literatura minskyana
-- Pontencial nova pergunta:
-  - Será que a fragilidade financeira dos quartis inferiores sustenta a estabilidade financeira do topo da distribuição?
-    - A ideia seria aplicar a ideia do Ensaio III aos dados do Ensaio II
+- Uma tensão que a apresentação deixou mais evidente é: existem questionamentos sobre a validade do Minsky
+  - Isso apareceu mais no capítulo 3, mas acho que as críticas (sobretudo sobre a falácia de composição) poderiam ter sido antecipadas para explicitar esse tensão
 
 
 
 
+** Sugestões de melhoria
+
+
+- Incluir [cite/t:@tymoigne_2011_measuring] como referência metodológica para índices de fragilidade.
+- Incluir a falácia de composição — [cite:@lavoie_2001_minskys] — como crítica teórica à HIF que a tese menciona apenas no Ensaio III, mas que é pertinente aos três.
+- Incluir [cite/t:@godley_2007_monetary; @godley_1999_seven]  como referência para análise de co-evolução de posições setoriais.
+- Detelhar mais fundamentação para a transposição da HIF de Minsky às famílias (Minsky original reservava o mecanismo para firmas e bancos).
+# - Qualificar "A última grande crise foi o Subprime de 2008" na introdução — verdadeiro se restrito à crise financeira.
+# - Incluir discussão sobre a distinção entre fragilidade de fluxo e de estoque. (CHECAR)
 
 
 
-* Outros pontos
+* Outros pontos :noexport:
 
 ** Ensaio I
 
@@ -661,7 +655,6 @@ Esse número é insuficiente para inferência confiável, em particular para a F
 - Algumas figuras do apêndice parecem suficientemente relevantes para integrar o texto principal.
 
 
-** Ensaio III
 
 * Anotações no documento
 
