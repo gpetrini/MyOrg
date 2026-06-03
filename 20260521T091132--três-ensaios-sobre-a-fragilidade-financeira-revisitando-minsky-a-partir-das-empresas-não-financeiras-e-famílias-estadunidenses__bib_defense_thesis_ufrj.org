@@ -1,13 +1,33 @@
 #+title:      Três ensaios sobre a fragilidade financeira: revisitando Minsky a partir das empresas não-financeiras e famílias estadunidenses
+#+subtitle: Comentários sobre a tese
 #+date:       [2026-05-21 Thu 09:11]
 #+filetags:   :bib:defense:thesis:ufrj:
 #+identifier: 20260521T091132
 #+reference:  rosa_2026_tres
+#+language: pt_Br
+#+options: toc:nil
+#+bibliography: ~/Org/zotero_refs.bib
 #+TAGS: context(c) theory(t) hypo(h) contrib(n) method(m) data(d)
 #+TAGS: results(r) discuss(s) critique(k) limits(l) future(f)
 #+TAGS: empirics(e) formal(o) sim(g) policy(p) lit(i)
 #+TAGS: insight(j) misc(x)
+#+latex_header: \usepackage[utf8]{inputenc}
+#+latex_header: \DeclareUnicodeCharacter{21D2}{\ensuremath{\Rightarrow}}
+#+latex_header: \DeclareUnicodeCharacter{2248}{\ensuremath{\approx}}
+#+latex_header: \DeclareUnicodeCharacter{0394}{\ensuremath{\Delta}}
 
+#+latex_header:\usepackage{enumitem}
+#+latex_header:\setlistdepth{9}
+#+latex_header:\renewlist{itemize}{itemize}{9}
+#+latex_header:\setlist[itemize,1]{label=\textbullet}
+#+latex_header:\setlist[itemize,2]{label=\textendash}
+#+latex_header:\setlist[itemize,3]{label=*}
+#+latex_header:\setlist[itemize,4]{label=\textbullet}
+#+latex_header:\setlist[itemize,5]{label=\textendash}
+#+latex_header:\setlist[itemize,6]{label=*}
+#+latex_header:\setlist[itemize,7]{label=\textbullet}
+#+latex_header:\setlist[itemize,8]{label=\textendash}
+#+latex_header:\setlist[itemize,9]{label=*}
 
 * Introdução Geral e Estrutura da Tese
 
@@ -27,11 +47,11 @@ A coerência metodológica entre os ensaios é, contudo, parcial.
 - [ ] Os períodos amostrais diferem entre os ensaios — 1970–2024 (Ensaio I), 1989–2019 (Ensaio II) e 1989–2022 (Ensaio III) — sem justificativa para as diferentes fronteiras temporais.
 - Os Ensaios I e II operam com microdados (firmas e famílias, respectivamente), enquanto o Ensaio III utiliza índices agregados construídos a partir das mesmas bases, sem equacionar os problemas de agregação que essa passagem do micro para o macro implica.
 
-** Fragilidades Centrais :noexport:
+** Fragilidades Gerais
 
 As fragilidades agrupam-se em três dimensões transversais.
 
-*** Metodológica :noexport:
+*** Metodológica
 
 - A não-significância de D_Ponzi isolado na amostra principal (Ensaio I) compromete o suporte à hipótese central.
 - A ausência de inflação de ativos no Ensaio II é lacuna relevante para a análise da fragilidade das famílias estadunidenses
@@ -39,13 +59,13 @@ As fragilidades agrupam-se em três dimensões transversais.
 # - A interpolação do SCF no Ensaio III invalida os testes de diagnóstico do VAR.
 # - A hipótese de amortização Price no Ensaio II produz classificações distorcidas para produtos de dívida não-convencionais (ARM, IO).
 
-*** Coerência entre ensaios :noexport:
+*** Coerência entre ensaios
 
 - Os períodos amostrais diferem sem justificativa.
 - A passagem da análise micro (Ensaios I e II) para a análise macro (Ensaio III) não equaciona os problemas de agregação implícitos na transição.
   - Mas ao menos menciona (tardiamente) a crítica de falácia de composição
 
-*** Inferência :noexport:
+*** Inferência
 
 - O Ensaio II não quantifica a incerteza amostral das comparações entre estratos.
 - O Ensaio III realiza inferência com graus de liberdade insuficientes para um VAR de 34 observações.
@@ -205,7 +225,7 @@ Com =q=3= como categoria de referência (presumida), o esperado seria: =q=1= (me
   - Não é verdade que é próximo do aleatório (qual a AUC?), mas com baixa capacidade preditiva
 
 
-*** [#C] Sinal de Ponzi x Liq :noexport:
+*** [#C] Sinal de Ponzi x Liq
 
 
 A interação =D_Ponzi × liq= no modelo de EF da amostra restrita tem coeficiente =-0,363*=.
@@ -241,22 +261,22 @@ As estimativas produzidas nessa amostra restrita não são representativas da po
   - A pergunta respondida é metodologicamente distinta da hipótese original.
 
 
-O problema de viabilidade surge na amostra restrita: restringir a análise às empresas que morreram em algum momento não é defensável como proxy de um estimador de tratamento.
-Uma alternativa mais adequada seria um modelo de sobrevivência (Cox, Weibull) que acomode a censura à direita das empresas sobreviventes, ou um estimador de diferenças-em-diferenças com tratamento pela posição Ponzi.
+# O problema de viabilidade surge na amostra restrita: restringir a análise às empresas que morreram em algum momento não é defensável como proxy de um estimador de tratamento.
+# Uma alternativa mais adequada seria um modelo de sobrevivência (Cox, Weibull) que acomode a censura à direita das empresas sobreviventes, ou um estimador de diferenças-em-diferenças com tratamento pela posição Ponzi.
 
 
 
 ** Consistência Lógica e Teórica
 
-*** Hipótese central e qualificação da pergunta :noexport:
+*** Hipótese central e qualificação da pergunta
 
 A hipótese central — de que empresas em posição Ponzi têm maior probabilidade de mortalidade — tem suporte na teoria de Minsky.
 A revisão de literatura do próprio ensaio, porém, apresenta evidências de "empresas zumbis" e de reversão da fragilidade financeira, o que implica que a posição Ponzi não necessariamente converge para mortalidade.
 A hipótese deveria ser formulada com maior precisão quanto ao escopo: entre quais tipos de mortalidade (falência vs. M&A) e sob quais condições (liquidez de mercado, ciclo de crédito) a posição Ponzi predispõe à saída do mercado.
 
-A literatura econométrica sobre modelos de sobrevivência (Shumway, 2001; Cox) e análise de duração, metodologicamente pertinente para o problema de pesquisa, não é citada.
+# A literatura econométrica sobre modelos de sobrevivência (Shumway, 2001; Cox) e análise de duração, metodologicamente pertinente para o problema de pesquisa, não é citada.
 
-*** Variáveis heterogêneas :noexport:
+*** Variáveis heterogêneas
 
 A agregação de variáveis heterogêneas (falência, M&A) na variável dependente é incompatível com a lógica teórica do argumento minskiano, para o qual a irreversibilidade da deterioração financeira implica insolvência, não necessariamente saída por fusão.
 
@@ -560,11 +580,11 @@ O SCF é trianual; o VAR exige periodicidade anual.
 
 ** [#C] Graus de liberdade :noexport:
 
-O problema de graus de liberdade é o mais grave do ensaio.
-O critério de informação indicou 6 lags como configuração com melhor ajuste para um painel de 34 observações.
+Talvez exista algum problema de graus de liberdade no ensaio (checar).
+O critério de informação indicou 6 lags como configuração com melhor ajuste para 34 observações.
 O VAR(2) foi adotado como alternativa parcimoniosa.
 Com 34 observações, 2 variáveis endógenas, 2 lags e 1 constante por equação, o modelo consome 5 parâmetros por equação, resultando em ~22 graus de liberdade por equação.
-Esse número é insuficiente para inferência confiável, em particular para a FIR.
+Esse número é insuficiente para inferência confiável? em particular para a FIR.
 
 
 
@@ -621,8 +641,8 @@ Esse número é insuficiente para inferência confiável, em particular para a F
 - Incluir a falácia de composição — [cite:@lavoie_2001_minskys] — como crítica teórica à HIF que a tese menciona apenas no Ensaio III, mas que é pertinente aos três.
 - Incluir [cite/t:@godley_2007_monetary; @godley_1999_seven]  como referência para análise de co-evolução de posições setoriais.
 - Detelhar mais fundamentação para a transposição da HIF de Minsky às famílias (Minsky original reservava o mecanismo para firmas e bancos).
-# - Qualificar "A última grande crise foi o Subprime de 2008" na introdução — verdadeiro se restrito à crise financeira.
-# - Incluir discussão sobre a distinção entre fragilidade de fluxo e de estoque. (CHECAR)
+- Qualificar "A última grande crise foi o Subprime de 2008" na introdução — verdadeiro se restrito à crise financeira.
+- Incluir discussão sobre a distinção entre fragilidade de fluxo e de estoque
 
 
 
@@ -656,7 +676,7 @@ Esse número é insuficiente para inferência confiável, em particular para a F
 
 
 
-* Anotações no documento
+* Anotações no documento :noexport:
 
 ** Capítulo 1: Empresas Ponzi condenadas a perecer? Uma análise para as empresas americanas (1970-2024)
 :PROPERTIES:
@@ -3261,8 +3281,10 @@ famílias de classe média e alta.''
 
 - Sem concordância nominal quando utiliza citações
 
-* Additional Backlinks
+* Additional Backlinks :noexport:
 
 - [[denote:20260522T073604][Defenses]]
 
-* References
+* References :ignore:
+
+#+print_bibliography:
