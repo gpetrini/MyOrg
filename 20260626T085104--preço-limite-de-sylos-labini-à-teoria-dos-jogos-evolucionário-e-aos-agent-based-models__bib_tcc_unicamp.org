@@ -1,0 +1,347 @@
+#+title:      Preço-Limite: De Sylos-Labini à Teoria Dos Jogos Evolucionário e Aos Agent Based Models
+#+date:       [2026-06-26 sex 08:51]
+#+filetags:   :bib:tcc:unicamp:
+#+identifier: 20260626T085104
+#+reference:  nigro_2026_precolimite
+
+
+
+* Metadata
+
+* Takeaway
+
+* Related Notes
+
+* Reading
+:PROPERTIES:
+:NOTER_DOCUMENT: /HDD/PDFs/Defesas/Nigro - 2026 - Preço-limite de Sylos-Labini à Teoria dos Jogos Evolucionário e aos Agent Based Models.pdf
+:END:
+
+
+** Síntese do trabalho
+
+A monografia propõe-se a três objetivos articulados: (i) realizar uma revisão da literatura sobre preço-limite desde Bain (1949) e Sylos-Labini (1956 [1986]) até os modelos derivados de Milgrom e Roberts (1982); (ii) sintetizar um modelo evolucionário de jogo de entrada com preço-limite, baseando-se primordialmente em Soytas e Becker (2003) e Toxvaerd (2017); e (iii) executar uma simulação por /agent based model/ (ABM) para o referido jogo.
+O trabalho ancora-se, metodologicamente, na Teoria dos Jogos Evolucionários (TJE) e utiliza a /replicator dynamics/ como dinâmica de equilíbrio.
+A hipótese subjacente é a de que o arcabouço evolucionário — em substituição à racionalidade plena e ao jogo estático bayesiano — pode contribuir para a análise do preço-limite em nível agregado e populacional.
+
+** Coesão interna dos argumentos e hipóteses
+
+*** Aspectos positivos
+
+A articulação entre a primeira geração de modelos (Sylos-Labini, Bain, Modigliani) e a segunda geração (Milgrom e Roberts, 1982) é conduzida com clareza.
+A motivação para a conversão do modelo estático bayesiano em um jogo populacional é logicamente justificada: a repetição do jogo e a ausência de racionalidade plena dos agentes são premissas coerentes com o arcabouço da TJE.
+A distinção em relação a Soytas e Becker (2003) — não estabelecer como hipótese que os retornos sob preço-limite são necessariamente inferiores aos do duopólio de Cournot — é explicitada e constitui uma contribuição metodológica relevante, ainda que modesta.
+
+*** Problemas de coesão
+
+*Hipótese lakatosiana descartada no corpo do texto.*
+As Considerações Finais (p. 68) apresentam "como hipótese exploratória a existência de um programa de pesquisa científico lakatosiano" para o campo do preço-limite.
+Esta hipótese não recebe tratamento analítico no corpo do trabalho.
+A menção a Lakatos (1970 [1979]), Latsis (1976) e Backhouse (1998) nas referências sugere uma intenção metodológica que nunca se concretiza, gerando uma inconsistência entre o programa anunciado e o que foi efetivamente executado.
+Esta hipótese ou deveria ser desenvolvida em uma seção específica ou deveria ser suprimida do escopo declarado.
+
+*Tratamento do preço-limite como parâmetro exógeno.*
+O preço-limite $p^l = 4{,}5$ é definido arbitrariamente e igual para incumbentes de alto e baixo custo ($p^l_H = p^l_L = p^l$, p. 43).
+Esta hipótese, embora necessária para viabilizar o equilíbrio /pooling/, não recebe discussão sistemática sobre suas implicações para os resultados.
+A ausência de qualquer análise de sensibilidade em relação a este parâmetro fragiliza as conclusões, uma vez que os equilíbrios identificados dependem diretamente dos retornos que derivam dessa escolha.
+
+*Capítulo 2 sem articulação analítica ao longo do trabalho.*
+O capítulo metodológico discute sistemas complexos (Miller e Page, 2007) e TJE como blocos expositivos independentes.
+A noção de homomorfismo entre modelo e realidade, central na argumentação de Miller e Page (2007), não reaparece como critério de avaliação do ABM construído.
+O conceito de sistemas adaptativos complexos serve apenas para justificar o uso do ABM, sem criar um fio condutor analítico que permeie os capítulos subsequentes.
+
+*Descontinuidade entre a análise analítica e o ABM.*
+O capítulo 4 analisa equilíbrios em estratégias puras e conclui pela ausência de ESS determinável.
+O capítulo 5 sugere a existência de equilíbrios interiores a partir da simulação.
+A ponte conceitual entre as duas abordagens — por que o ABM revelaria o que o modelo analítico não pode — não é suficientemente desenvolvida além da referência genérica às vantagens dos modelos computacionais.
+
+** Uso da literatura
+
+*** Aspectos positivos
+
+A revisão da literatura sobre preço-limite é sólida para os fins de uma monografia de graduação.
+Os textos fundamentais (Bain, 1949; Sylos-Labini, 1956 [1986]; Modigliani, 1958; Dixit, 1979; Milgrom e Roberts, 1982; Tirole, 1988 [1994]; Toxvaerd, 2017) são adequadamente mobilizados e suas contribuições são bem delimitadas.
+A organização cronológica e por geração de modelos (p. 33) é uma escolha estruturante acertada.
+Para a TJE, as referências a Weilbull (1995), Vega-Redondo (2003) e Sandholm (2020) são canônicas e bem utilizadas.
+A incorporação de literatura empírica recente (Goolsbee e Syverson, 2008; Aguirregabiria, Collard-Wexter e Ryan, 2021) na introdução demonstra familiaridade com o debate aplicado.
+
+*** Lacunas e problemas
+
+*Literatura sobre ABM em organização industrial.*
+O trabalho não dialoga com a literatura estabelecida de ABMs em economia industrial.
+O único artigo de simulação efetivamente mobilizado para o ABM é Cooper et al. (1997), que é um artigo experimental e não um ABM no sentido técnico contemporâneo.
+Miller e Page (2007) fornece a justificativa geral, mas não a metodologia específica para construção e validação de ABMs.
+Esta lacuna enfraquece a fundamentação metodológica do capítulo 5.
+
+*Literatura sobre TJE aplicada a organização industrial.*
+Além de Soytas e Becker (2003), há uma literatura sobre dinâmicas evolucionárias em duopólios (e.g., De Giovanni e Lamantia, 2017, presente nas referências mas não mobilizado na análise) que poderia ter enriquecido a discussão sobre a convergência do modelo.
+A referência a Norman (2010) para a explicação dos ciclos observados no ABM é adequada, mas o artigo é citado de passagem sem discussão de suas condições formais.
+
+*Ausência de literatura sobre endogeneização do preço-limite.*
+Dado que $p^l$ é tratado como parâmetro exógeno, seria esperada alguma discussão sobre modelos que endogenizam o preço-limite, o que afeta diretamente a validade externa do modelo proposto.
+
+** Análise dos resultados
+
+*** Modelo analítico (Capítulo 4)
+
+A análise dos 32 casos de equilíbrio em estratégias puras é metodologicamente correta.
+A utilização da matriz Jacobiana e a verificação dos sinais dos autovalores como critério de estabilidade assintótica estão em conformidade com o referencial de Simon e Blume (1994 [2004]) e Soytas e Becker (2003).
+A identificação dos casos 6 e 28 como candidatos a ESS e sua interpretação econômica são as contribuições mais rigorosas do trabalho: o caso 6 corresponde a um equilíbrio /separating/ sem preço-limite e o caso 28 a um equilíbrio /pooling/ com preço-limite, replicando qualitativamente os resultados de Milgrom e Roberts (1982) no arcabouço evolucionário.
+
+Há, contudo, um problema metodológico não discutido: a presença de ao menos um autovalor nulo em todos os 32 casos não é explicada ao leitor de forma sistemática.
+Este autovalor nulo é estrutural ao modelo — decorre das restrições de soma dos estados populacionais — e sua implicação para a análise de estabilidade deveria ser explicitada formalmente.
+A afirmação de que "não foi possível determinar a existência de um ESS" (p. 68) é honesta, mas a razão técnica subjacente permanece opaca para o leitor.
+
+Além disso, a decisão de não analisar equilíbrios interiores — explicitamente declarada em nota de rodapé (p. 56) — é relevante: é precisamente nesses equilíbrios que os resultados do ABM sugerem a existência de estados estacionários.
+A descontinuidade entre o que o modelo analítico não investiga e o que o ABM encontra constitui uma lacuna que fragiliza a articulação entre os dois instrumentos.
+
+*** Simulação ABM (Capítulo 5)
+
+A análise é exclusivamente gráfica — fato admitido pelo próprio autor (p. 58) — e essa limitação afeta a solidez das conclusões apresentadas.
+
+A inferência sobre a existência de um equilíbrio interior a partir de médias móveis é metodologicamente insuficiente.
+A afirmação de que os estados populacionais apresentam "trajetória quase estacionária" em torno de 0,5 para $\mu = 0{,}273$ requer, no mínimo, testes de estacionariedade (e.g., testes ADF ou KPSS sobre as séries simuladas), análise de autocorrelação para caracterizar os ciclos observados e intervalos de confiança sobre as médias móveis calculadas.
+Sem esses instrumentos, a sugestão de equilíbrio interior permanece especulativa.
+
+O número de simulações por estrutura de $\mu$ — apenas cinco — é reduzido para um modelo estocástico com 300 agentes por população e 300 períodos.
+A variabilidade entre as cinco trajetórias é visível nos gráficos (em especial nas Figuras 10 e A.1), o que sugere que cinco repetições são insuficientes para conclusões sobre o comportamento médio do sistema.
+
+A ausência de análise de sensibilidade paramétrica é uma omissão relevante.
+Os parâmetros $\alpha = 10$, $\beta = 1$, $c_H = 2$, $c_L = 0{,}5$, $c_E = 1{,}5$, $K = 7$ e $\delta = 1$ são herdados de Milgrom e Roberts (1982) ou definidos arbitrariamente, sem que se discuta como variações nesses valores afetariam os estados populacionais e os retornos médios.
+Em particular, $\delta = 1$ implica ausência de desconto temporal, um pressuposto restritivo para um modelo dinâmico que não recebe justificativa.
+
+A interpretação dos resultados para $\mu = 0{,}9$ é problemática: afirma-se que "a estratégia de preço-limite não aparenta proporcionar um efeito de inibição do ingresso no mercado" (p. 61), mas esta conclusão é derivada exclusivamente de inspeção visual dos gráficos, sem que se formalize o que constituiria evidência de inibição no contexto do ABM.
+
+** Cumprimento dos objetivos propostos
+
+| Objetivo                                        | Avaliação                                                                                                   |
+|-------------------------------------------------+-------------------------------------------------------------------------------------------------------------|
+| Revisão da literatura sobre preço-limite        | Cumprido. A revisão é adequada para o nível de uma monografia de graduação.                                 |
+| Síntese do modelo evolucionário                 | Cumprido parcialmente. O modelo é sintetizado, mas não se determina conclusivamente a existência de ESS.    |
+| Discussão dos equilíbrios em estratégias puras  | Cumprido. Os 32 casos são analisados com rigor metodológico adequado.                                       |
+| Simulação ABM                                   | Cumprido parcialmente. Realizada, mas com análise exclusivamente gráfica e sem testes estatísticos.         |
+| Hipótese lakatosiana exploratória               | Não cumprido. A hipótese é anunciada mas não recebe tratamento analítico.                                   |
+
+** Pontos de falha e sugestões de melhoria
+
+*** Falhas substantivas
+
+1. O preço-limite exógeno e arbitrário ($p^l = 4{,}5$) é o parâmetro mais sensível do modelo, pois determina diretamente todos os retornos e, portanto, os equilíbrios identificados.
+   A ausência de análise de sensibilidade sobre este parâmetro é uma falha metodológica que compromete a generalidade dos resultados.
+
+2. A análise do ABM carece de instrumentos estatísticos mínimos para sustentar as conclusões sobre equilíbrio interior e comportamento cíclico.
+   A sugestão de que os estados populacionais oscilam de forma interdependente — assemelhando-se a ciclos — é plausível, mas requer análise espectral ou de correlação cruzada para ser afirmada com rigor.
+
+3. A presença estrutural de autovalores nulos na Jacobiana não é explicada ao leitor.
+   Esta omissão impede que o leitor avalie de forma independente a validade da conclusão sobre a indeterminabilidade do ESS.
+
+4. A hipótese $p^l_H = p^l_L = p^l$ impõe um equilíbrio /pooling/ por construção no modelo analítico.
+   As implicações desta hipótese para o resultado de que a incumbente de baixo custo não tem incentivo para desviar do preço-limite não são suficientemente discutidas — trata-se de uma restrição que favorece os resultados, e não de uma consequência deles.
+
+*** Sugestões de melhoria
+
+1. Incorporar análise econométrica básica dos resultados do ABM: testes de estacionariedade, análise de correlação cruzada entre estados populacionais e análise espectral para caracterização dos ciclos.
+
+2. Aumentar o número de simulações por estrutura de $\mu$ para ao menos 30, de modo a construir distribuições empíricas dos estados populacionais nos períodos finais e produzir estatísticas descritivas robustas.
+
+3. Introduzir análise de sensibilidade para os parâmetros centrais: $p^l$, $\delta$ e $K$.
+
+4. Discutir formalmente por que os equilíbrios interiores não foram investigados no modelo analítico e em que condições a metodologia da Jacobiana se torna inaplicável para equilíbrios em estratégias mistas.
+
+5. Desenvolver substantivamente a hipótese lakatosiana ou suprimí-la do escopo declarado da pesquisa.
+
+6. Ampliar o diálogo com a literatura de ABMs em organização industrial, em especial com trabalhos que discutem critérios de validação de modelos baseados em agentes.
+
+** Consideração final
+
+A monografia apresenta uma contribuição ao articular o arcabouço da Teoria dos Jogos Evolucionários com a problemática do preço-limite em organização industrial, tema que permanece pouco explorado na literatura.
+A revisão bibliográfica é sólida e bem estruturada.
+O modelo teórico é rigoroso dentro dos seus limites declarados.
+As principais fragilidades concentram-se na análise dos resultados da simulação, que requer ferramental estatístico mais elaborado para sustentar as inferências apresentadas, e na presença de uma hipótese exploratória — a lakatosiana — que não recebe desenvolvimento analítico.
+O trabalho é aprovável, com recomendação de que as insuficiências da análise do ABM sejam endereçadas explicitamente na arguição ou em revisão posterior destinada a publicação.
+
+** Correções ao parecer original
+
+*** Contradição em δ não registrada (acréscimo)
+
+O modelo estabelece como pressuposto $0 < \delta < 1$ (p. 44).
+A Tabela 1 (p. 49) e toda a simulação adotam $\delta = 1$.
+O valor empregado está fora do domínio declarado pelo próprio modelo, anulando o fator de desconto temporal.
+O parecer original tratou $\delta = 1$ apenas como pressuposto não justificado; trata-se, na verdade, de incoerência interna entre a definição do modelo e sua parametrização.
+Este ponto reforça a seção de coesão interna e deveria ser realocado para lá.
+
+*** Afirmação sobre o autovalor nulo (retração)
+
+O parecer atribuiu o autovalor nulo presente nos 32 casos às "restrições de soma dos estados populacionais".
+A inspeção da Jacobiana (4.11) e das funções $F_4 = (1-\mu)(-0{,}75)(1-x_L^l)$ e $F_5 = \mu \cdot 2 \cdot (1-x_H^l)$ indica que os autovalores nulos decorrem do anulamento desses termos em vértices específicos, não de uma restrição de soma genérica.
+A explicação oferecida no parecer é conjectural e provavelmente incorreta.
+Mantém-se a observação de que a monografia não explica a origem do autovalor nulo; retira-se a causa atribuída.
+
+*** Imprecisão sobre a literatura de simulação (ajuste)
+
+O parecer afirmou que Cooper et al. (1997) é o único artigo de simulação mobilizado.
+Müller, Spiegel e Yehezkel (2009), também de natureza laboratorial/simulação, é discutido na revisão (p. 40).
+A formulação correta: a construção do ABM carece de ancoragem em literatura dedicada a modelos baseados em agentes; Cooper et al. (1997) e Müller et al. (2009) figuram na revisão, porém não operam como referências metodológicas de construção ou validação do ABM.
+A caracterização de Cooper et al. (1997) como "experimental" é imprecisa: trata-se de aprendizado adaptativo com base experimental.
+
+*** Calibração das exigências (qualificação)
+
+As exigências de testes ADF/KPSS, análise espectral e número de simulações $\geq 30$ situam-se em padrão de mestrado.
+São pertinentes como direções de aprimoramento, não como deficiências incapacitantes para o requisito de graduação.
+O parecer já concluiu pela aprovação e remeteu parte ao trabalho futuro; a qualificação deve ser explícita.
+
+*** Sensibilidade paramétrica (precisão)
+
+A monografia varia $\mu$ em três valores (0,1; 0,273; 0,9) e examina a Jacobiana em $\mu = 0{,}2727$ e $0{,}2731$, configurando sensibilidade sobre a variável central.
+A crítica correta incide sobre os demais parâmetros ($p^l$, $\delta$, $K$, custos), mantidos fixos.
+
+*** Dimensões omitidas pelo parecer
+
+O parecer não avaliou correção formal e linguística, componente do exame de uma monografia.
+Ocorrências: grafia recorrente "Weilbull" por Weibull; "estrada" por "entrada" (p. 25); numeração duplicada de tabela ("Tabela 5" em p. 54 e p. 58, com defasagem de uma unidade em relação à Lista de Tabelas); legibilidade da Figura 1 e dos eixos das Figuras 3–8.
+
+
+* FISH-5SS
+
+
+
+** Background
+
+A monografia situa o preço-limite na trajetória que vai de Bain (1949) e Sylos-Labini (1956 [1986]) a Milgrom e Roberts (1982), e propõe sua leitura sob Teoria dos Jogos Evolucionários e ABM.
+O parecer reproduziu esse enquadramento com fidelidade.
+Observação não registrada no parecer: a obra articula uma tradição estruturalista de organização industrial (Possas, 1985; Silva, 2004; Kupfer e Hasenclever, 2013) com o instrumental de teoria dos jogos mainstream, sem tematizar essa junção.
+
+** Arguments
+
+Argumento central: o arcabouço evolucionário permite analisar o preço-limite em nível populacional, dispensando racionalidade plena.
+O parecer avaliou a coerência desse argumento e a julgou sustentada na transição do jogo bayesiano para o jogo populacional.
+A avaliação permanece válida após a releitura.
+
+** Contribution
+
+Contribuição declarada: síntese de um modelo evolucionário de preço-limite e simulação ABM correspondente.
+O parecer a classificou como genuína e modesta.
+Após auditoria, a classificação se sustenta; a distinção formal frente a Soytas e Becker (2003) — supressão da hipótese $a_3 < a_4$ e $a_9 < a_{10}$ — é o núcleo verificável da contribuição.
+
+** Theoretical
+
+Quadro teórico: ESS/NSS, jogos populacionais e /replicator dynamics/ (Weibull, 1995; Vega-Redondo, 2003; Sandholm, 2020).
+A exposição é correta e suficiente.
+O parecer apontou que o capítulo de sistemas complexos não se conecta analiticamente aos capítulos seguintes; a observação procede e o conceito de homomorfismo (p. 17) não retorna como critério de avaliação do ABM.
+
+** Empirical
+
+A monografia não produz estimação empírica com dados reais.
+A evidência empírica de preço-limite (Goolsbee e Syverson, 2008) é citada como motivação, não como objeto.
+O parecer não exigiu dados reais, o que é adequado ao caráter teórico-computacional do trabalho.
+Ambiguidade: o termo "empírico" não se aplica; o que existe é saída de simulação.
+
+** Model
+
+Modelo de três momentos (preço da incumbente, entrada, duopólio ou monopólio), com $p^l_H = p^l_L = p^l$ fixado em 4,5.
+O parecer registrou a exogeneidade e a arbitrariedade do preço-limite.
+Acréscimo da revisão: $p^l = 4{,}5$ coincide com $p^D_H = 4{,}5$ (Tabela 2); a monografia não comenta a coincidência entre preço-limite e preço de duopólio de alto custo.
+A imposição $p^l_H = p^l_L$ produz o equilíbrio /pooling/ por construção, e não como resultado.
+
+** Data
+
+Não há dados primários ou secundários.
+Os parâmetros de calibração derivam de Milgrom e Roberts (1982, p. 447), com exceção de $c_E = 1{,}5$.
+As séries analisadas são geradas por simulação em GNU Octave e tratadas em R.
+Observação: cinco replicações por estrutura de $\mu$, com 300 agentes e 300 períodos.
+
+** Methodology
+
+Três instrumentos: revisão de literatura, análise analítica de equilíbrio via sinais dos autovalores da Jacobiana e simulação ABM com análise gráfica.
+A ausência de tratamento econométrico é admitida pelo autor (p. 58).
+O parecer a apontou como limitação central da análise do ABM; mantém-se, com a calibração indicada acima.
+
+** Results
+
+Modelo analítico: 32 casos em estratégias puras; casos 6 (/separating/, sem preço-limite) e 28 (/pooling/, com preço-limite) como candidatos a ESS.
+ABM: indícios de equilíbrio interior em torno de 0,5 para $\mu = 0{,}273$ e comportamento com aparência de ciclo (Norman, 2010).
+O parecer reproduziu os resultados sem erro factual.
+A inferência de equilíbrio interior por médias móveis permanece sem suporte estatístico.
+
+** Observations
+
+A monografia replica qualitativamente as relações de Milgrom e Roberts (1982, p. 447) no arcabouço evolucionário.
+O resultado "não foi possível determinar ESS" é honesto e decorre, em parte, do autovalor nulo não explicado.
+A descontinuidade entre o que o modelo analítico não investiga (equilíbrios interiores, p. 56) e o que o ABM sugere encontrar é a principal fratura de articulação.
+
+** Limitations
+
+Da monografia: preço-limite exógeno sem teste de sensibilidade; $\delta = 1$ em contradição com $0 < \delta < 1$; cinco replicações; análise exclusivamente gráfica; hipótese lakatosiana anunciada e não desenvolvida; correção formal e numeração de tabelas.
+Do parecer: atribuição incorreta da causa do autovalor nulo; omissão da contradição em $\delta$; omissão da avaliação de correção formal; exigências em padrão acima do nível de graduação sem qualificação explícita.
+
+** Critique
+
+A crítica de maior peso é a incoerência $\delta = 1$ versus $0 < \delta < 1$, que afeta os retornos da Tabela 3 e todo o exemplo numérico.
+A segunda é a imposição de /pooling/ por $p^l_H = p^l_L$, que torna o caso 28 um produto da hipótese.
+A terceira é a inferência de equilíbrio interior sem instrumento estatístico.
+
+** Policy
+
+A monografia não extrai implicações de política (defesa da concorrência, barreiras à entrada), embora o tema as comporte.
+A discussão de bem-estar aparece apenas via Tirole (1988 [1994]) para /pooling/ e /separating/ (p. 36), sem desdobramento.
+O parecer não tratou desta dimensão; a omissão é aceitável no nível de graduação, registrada como oportunidade.
+
+** Future Work
+
+A monografia sugere tratamento econométrico das oscilações e introdução de segunda população de entrantes (p. 69).
+O parecer propôs sensibilidade paramétrica, ampliação de replicações e testes de estacionariedade.
+As propostas são compatíveis e não conflitam.
+
+** Related Work
+
+Posicionamento explícito frente a Soytas e Becker (2003), Milgrom e Roberts (1982), Tirole (1988 [1994]) e Toxvaerd (2017).
+De Giovanni e Lamantia (2017), dinâmica evolucionária de duopólio, consta nas referências sem mobilização no texto.
+O parecer registrou ambos os pontos corretamente.
+
+** Literature
+
+Revisão de preço-limite adequada ao nível; organização por gerações de modelos (p. 33) acertada.
+Lacuna confirmada: literatura dedicada a ABM em organização industrial e critérios de validação de modelos baseados em agentes.
+Miller e Page (2007) fornece justificativa geral, não método de construção.
+
+** Debate
+
+O debate metodológico latente — programa de pesquisa lakatosiano, epígrafe de Latsis, referências a Backhouse, Blaug, Mäki — não é conduzido no corpo.
+A junção entre organização industrial estruturalista e teoria dos jogos mainstream permanece não tematizada.
+Ambiguidade: não se sabe se o trabalho pretende criticar, integrar ou apenas justapor essas tradições.
+
+** Questions
+
+Questões para a arguição:
+1. Por que $p^l = 4{,}5$ coincide com $p^D_H$ e qual o efeito dessa escolha sobre os casos 6 e 28?
+2. $\delta = 1$ é deliberado, e como se concilia com o pressuposto $0 < \delta < 1$?
+3. Qual a origem formal do autovalor nulo recorrente na Jacobiana?
+4. O equilíbrio /pooling/ do caso 28 sobrevive a $p^l_H \neq p^l_L$?
+5. A hipótese lakatosiana é objeto da pesquisa ou enquadramento retrospectivo?
+
+** Definition
+
+Definições de barreira à entrada, preço-limite, ESS e NSS são apresentadas com fonte (Kupfer e Hasenclever, 2013; Weibull, 1995).
+Ambiguidade na notação dos estados de não-entrada ($x_E^{Nl}$, $x_E^{Nm,L}$, $x_E^{Nm,H}$) e na equação de restrição (p. 50), que mistura estados e suas variações.
+A definição do preço-limite como "preço inferior arbitrário" carece de critério.
+
+** Example
+
+O exemplo numérico (Tabelas 1–3) é internamente consistente sob $\delta = 1$, exceto pela violação do domínio de $\delta$.
+A ordenação dos retornos ($a_6 > a_3 > a_4 > a_1 > \dots$) confere com as relações declaradas no texto.
+O exemplo cumpre função ilustrativa e dá base à análise dos 32 casos.
+
+** Síntese da revisão
+
+O parecer original é, em substância, coerente com o PDF e com o padrão de uma monografia de graduação.
+Requer dois reparos: incluir a contradição em $\delta$ e retirar a causa atribuída ao autovalor nulo.
+Requer três qualificações: precisar a sensibilidade restrita a $\mu$, ajustar a afirmação sobre literatura de simulação e calibrar as exigências ao nível de graduação.
+Requer um acréscimo: avaliação de correção formal, linguística e de numeração.
+
+* Additional Backlinks :noexport:
+
+- [[denote:20260522T073604][Defenses]]
+
+* References :ignore:
+
+#+print_bibliography:

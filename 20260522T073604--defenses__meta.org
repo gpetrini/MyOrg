@@ -5,15 +5,18 @@
 
 * Monografias
 
-#+BEGIN: denote-backlinks :excluded-dirs-regexp nil :sort-by-component nil :reverse-sort nil :id-only nil :this-heading-only nil :include-date nil :regexp "_tcc"
-- [[denote:20260521T091132][Três ensaios sobre a fragilidade financeira: revisitando Minsky a partir das empresas não-financeiras e famílias estadunidenses]]
+#+BEGIN: denote-links :excluded-dirs-regexp nil :sort-by-component t :include-date t :regexp "_tcc"
+- [[denote:20260626T085104][Preço-Limite: De Sylos-Labini à Teoria Dos Jogos Evolucionário e Aos Agent Based Models (2026-06-26)]]
 #+END:
+
 * Dissertation
 
-#+BEGIN: denote-backlinks :excluded-dirs-regexp nil :sort-by-component nil :reverse-sort nil :id-only nil :this-heading-only nil :include-date nil :regexp "_masters"
+#+BEGIN: denote-links :excluded-dirs-regexp nil :sort-by-component nil :reverse-sort nil :id-only nil :this-heading-only nil :include-date nil :regexp "_masters"
 #+END:
+
 * Thesis
 
-#+BEGIN: denote-backlinks :excluded-dirs-regexp nil :sort-by-component nil :reverse-sort nil :id-only nil :this-heading-only nil :include-date t :regexp "_thesis"
+#+BEGIN: denote-links :excluded-dirs-regexp nil :sort-by-component nil :reverse-sort nil :id-only nil :this-heading-only nil :include-date t :regexp "_thesis"
+- [[denote:20251124T090653][Ensaios sobre infraestrutura e desenvolvimento: uma abordagem insumo-produto (2025-11-24)]]
 - [[denote:20260521T091132][Três ensaios sobre a fragilidade financeira: revisitando Minsky a partir das empresas não-financeiras e famílias estadunidenses (2026-05-21)]]
 #+END:
