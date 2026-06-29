@@ -4,6 +4,7 @@
 #+filetags:   :made:meeting:
 #+identifier: 20260206T195047
 #+bibliography: ~/Org/zotero_refs.bib
+#+EXPORT_FILE_NAME: Minutas-Made
 
 * Latex header :ignore:
 
@@ -847,7 +848,7 @@ Várias equações em =fun_KS_worker.h= (linhas 21, 47, 136, 277, 293, 392, 424,
         - Aumenta a probabilidade de permanecerem no mesmo setor
 - Da forma que está, horas não trabalhadas não tem impacto algum no modelo
 
-* HourInt: primeiros resultados [2026-05-27 Wed]
+* HourInt: primeiros resultados [2026-05-27 Wed] :noexport:
 
 ** O que foi feito
 
@@ -1167,7 +1168,7 @@ L2 & -18.9411 & -17.2489\\
     - Adiar HourBarg no pipeline de milestones
     - Incorporar produtivity premium, flags, gerar cenários e relatórios
 
-* Reunião de Equipe [2026-05-29 Fri]
+* Reunião de Equipe [2026-05-29 Fri] :noexport:
 
 ** Dados de uso do tempo (escala 7x0)
 
@@ -1235,3 +1236,223 @@ L2 & -18.9411 & -17.2489\\
 
 *** Calculadora do cuidado
 
+** Multiplicadores fiscais dinâmicos (TVC-VAR) [2026-06-19 Fri]
+
+- Quais componentes do gasto público tem maior impacto
+- Diminuição do papel macroeconômico dos gastos sociais
+  - Escolha metodológica da literatura pode estar mascarando isso
+  - Gastos sociais tem canais de transmissões próprios (não é só o oposto dos impostos)
+- Padrão é que os multiplicadores sociais são maiores que a unidade e superior ao gasto agregado
+  - De modo geral, poucos estudos para Brasil
+  - Há heterogeneidade entre os componentes do gasto público
+    - Avaliar se hierarquia é estável ao longo do tempo
+- Time-varying para estimar uma séries de multiplicadores fiscais
+  - São os coeficientes que variam
+  - Decaimento das bandas são utilizadas para ajustar para minimizar o quadrado dos resíduos
+  - Para cada mês, foi estimado um VAR
+  - IRF é feito para cada um dos meses da amostra
+    - IRF como uma elasticidade (dY/dG), sendo necessário obter o multiplicador em termos de unidade monetária sobre PIB
+      - No entanto, isso implica que é necessário calcular a participação dos gastos no PIB (G/Y) para recuperar o valor do multiplicador
+        - Isso implica decidir se usar essa razão com a média ou G/Y com time-varying
+- Debate:
+  - Fomentar crescimento via gasto social tem um limite porque menos famílias estão dependentes dessas ações
+  - Distribuição de renda muda a magnitude do multiplicador [cite:@carvalho_2016_personal]
+- Questão:
+  - Pensaram em aplicar state-dependent? Isso parece ir na direção da magnitude do multiplicador ser diferente ao longo do tempo
+    - Isso permitiria responder alguma das perguntas: seria maior em recessões?
+      - Mapear suspeitos a partir de outras séries
+      - Uma vantagem da metodologia é que inclui a série toda, enquanto dependência de estado usará parte da amostra apenas
+    - Menciono isso também porque tenho visto bastante esse debate na literatura
+  - D: O choque é feito no primeiro período e a IRF mostra a propagação mês-a-mês ou existe mais de um choque?
+    - Pelo o que eu entendi, para cada ponto no mês é feito uma IRF local de horizonte \(h\)
+  - Q: Qual é a hipótese de vocês sobre uma aparente tendência de queda no multiplicador?
+  - Q: Seria TVC-VAR um caso especial de local-projections?
+
+* HourInt: primeiros resultados de mudanças na produtividade
+
+** Decisões de implementação
+
+- Renumeração dos cenários: BAU; "rampa" (podendo ser degenerado para "instantâneo"/"paulada"); rampa + prêmio de produtividade; adoção probabilística; RJT temporária.
+- Manutenção do salário (total, associado à jornada) desacoplado das firmas
+  - Uma firma deve cumprir a manutenção nominal do salário por jornada (aumentando, por consequência o salário-hora) por um período determinado (parâmetro)
+  - No entanto, um trabalhador pode ser contratado por outra firma (não nos importanto os motivos) e esse novo salário pode ser menor do que o anterior
+    - Não computei, mas poderia ser interessante identificar quantos trabalhadores ficaram em situação melhor/pior ao longo do período de implementação
+
+** Novidades técnicas
+
+- Runner OAT para varreduras de um parâmetro (ex: mu1/nu) integrado ao pipeline MC/R existente ([2026-06-24]).
+- Runner LSD automático para facilitar geração de relatórios (importante para delegar investigações paralelas)
+- Relatório "analítico" dos encadeamentos do modelo por meio de grafos (ainda como protótipo)
+  - Isso vai nos ajudar avaliar efeitos cascatas e formular hipóteses/diagnósticos do modelo
+- Observação:
+  - Todas essas ferramentas já estão prontas para rodar em servidor (ou outro computador por acesso remoto) via SSH
+  - Caso a gente tenha acesso ao cluster por Milão (incerto), o maior problema será a latência e não o processamento
+
+** Ajustes importantes
+
+- Ativação de SoJ
+  - Trabalhadores empregados mandam menos currículos (metade) do que os trabalhadores desempregados
+  - Tem um efeito geral de amplificar os efeitos positivos da WTR
+  - Com busca apenas para desempregados (=flagSearchMode=1=) o efeito da RJT sobre o PIB era negativo; com busca para todos (=flagSearchMode=0=, padrão) torna-se positivo.
+  - O canal operante é realocação -> produtividade: a busca no emprego realoca trabalho para firmas/vintages mais produtivas; sob RJT isso eleva a produtividade =A= e o produto, enquanto um =A= maior reduz a demanda por trabalho (desemprego maior).
+- Reativação de habilidades (=_s=, =_sT=, =_sV=): substituída por =_effPrem= na lógica de payback; =_s= mantido neutro; reativação dos skills propriamente dita adiada indefinidamente (2026-05-29)
+  - =_effPrem= (prêmio de produtividade) introduzido como variável do trabalhador: substitui =_s= na lógica de payback; =_s= mantido neutro (=INISKILL=1=); distribuição Pareto controlada por =flagEffPrem=; parâmetros =alphaPP=, =effPremMin=, =effPremMax= idênticos em todos os configs; =flagEffPrem= varia por cenário (0 em Scen0/1; 1 em Scen2/3) (2026-05-29)
+  - Payback: =_wR / (w2avg × _s × (1+_effPrem)) > 1=
+  - Ideia: uma vez implementada WTR, os trabalhadores não estarão fatigados e poderão ter uma produtividade (líquida?) maior
+    - Sendo assim, efeito condicionado à adoção da jornada de trabalho (importante para o cenário probabilístico)
+    - Cada trabalhador tem um "prêmio" idiossincrático que não muda ao longo do tempo
+    - Esse "prêmio" não é conhecido pela firma no momento da contratação (continua privilegiando trabalhadores com salário reserva menor)
+    - No entanto, por produzir mais em função da WTR, isso deve ser levado em consideração no momento da demissão (regra de payback com skills neutros)
+    - Firmas não retém memória do prêmio do mesmo trabalhador em eventuais contratações futuras
+    - Talvez podemos introduzir uma mudança geracional deste parâmetro (não sei se é interessante, mas achei melhor deixar indicado que podemos)
+  - =_effPrem= em S1 adiado para =FUTURE[HourProd]=: prêmio de produtividade restrito ao Setor 2 por ora (2026-06-18).
+    - Dois impedimentos identificados: (i) ausência de ID de Firma1 nos objetos =Wrk1= (pré-requisito de HourBarg, =FUTURE[HourBarg]=); (ii) em S1 a produtividade é dirigida por inovação (=_Btau=), não por redução de fadiga;
+  - Ordenamento de demissão depende do payback. No cenário em que esse prêmio pelo esforço não está ativo, colapsa para o ordenamento em termos de salário (consistência entre cenários)
+  - Observação importante: não tive tempo de testar outros valores suportes do prêmio de produtividade
+    - No entanto, com ferramenta de OAT, deve ser mais simples e delegável
+- Cenário com adesão voluntária (no setor 2) de WTR
+  - No momento do choque, as firmas do setor 2 podem (voluntariamente) decidir se já adotam a WTR
+    - OBS: O setor de BK adota integralmente no momento do choque
+      - Poderíamos fazer com que o BK adotasse integralmente no fim da janela de transião, mas seriam dois choques
+    - Optei por não ter uma adoção voluntária associada a rampa pois cada período teria que existir uma decisão de aderir à nova jornada ou não
+  - Uma vez terminada a fase de transição, todas as firmas adotam a nova jornada
+  - Ao longo do periodo de transição, a probabilidade de uma firma adotar a nova jornada depende da prática de mercado
+    - Se firmas maiores adotaram (i.e. probabilidade proporcional ao market-share), maior a probabilidade de uma firma adotar
+    - Não há posibilidade de reversão
+  - Novos entrantes ao longo desse período de transição aderem o WTR logo de cara
+  - Primeira forma de horas de trabalho heterogêneas
+- Adicionado cenário de reversão de WTR
+  - Com duração simétria de implementação e reversão
+  - A ideia era testar a existência de histerese
+  - Simulações sugerem que não temos histerese
+    - No entanto, foi testado apenas para o cenário em que não há o efeito direto da redução da jornada sobre a produtividade (me dei conta escrevendo essa minuta)
+  - A ideia é utilizar esse cenário internamente apenas
+- Modelo de Sant'Anna não era SFC
+  - Crédito concedido para firmas de BK era maior do que o demandado (em casos específicos) - freq: média de 40 vezes por simulação (500 períodos)
+  - Os testes SFC feitos por eles (ao menos os testes inferidos pelo código) são bem rasos
+  - A correção desses (e outros) problemas implicaram em mudanças consideráveis no comportamento do modelo
+  - OBS: Nosso modelo é SFC mesmo com choque de WTR, ou seja, não é garantido somente em cenários em que usamos a jornada normalizada
+    - O fato de termos uma jornada menor que a unidade em WTR, implicou em ajustar alguns testes de consistência lógica
+      - Um trabalhador que trabalha menos horas não é demitido, mas tem um impacto similar nas "contas nacionais" se medirmos tudo em termos de horas
+      - Foram necessários vários ajustes nessa direção para evitar dupla contagem e inconsistência lógica
+      - Isso será relevante se tivermos renovação de contrato entre efetivos e temporários
+- Correções inexistentes no modelo de Sant'Anna
+  - Taxa de lucro era calculada utilizando o estoque dew capital real invés de nominal (pouco impacto)
+  - Piores firmas de BK recebiam crédito além do solicitado (impacto grande)
+    - Isso ocorria em situações extremas em que a firma que deveria sair, mas permanecia no mercado, recebia crédito proporcional ao seu produto potencial (medido em termos do patrimônio líquido) e não proporcional ao sua relevância (medido em termos de número de clientes)
+    - Como consequência, muitas firmas eram (não intencionalmente?) resgatadas, tornando o modelo mais estável
+  - Em situações extremas, a última firma (pior, por conta do ordenamento) passava a ter mais trabalhadores (1 a mais, sendo preciso) alocados em P&D do que seria logicamente inconsistente (parece ter pouco impacto, mas tem impacto enorme)
+    - Dentre as implicações, algumas firmas que deveriam sair do mercado (por não terem trabalhadores), permaneciam e, junto do outro BUG, acabavam tendo maior acesso à crédito
+  - Implicação: Modelo muito mais sensível com crises no setor de BK
+    - Uma vez implementado o choque de WTR, havia uma tendência de concentração de mercado que gerava cenários com um monopolista enquanto as outras firmas que tentavam entrar no mercado (número fixo), não conseguiam desbancar;
+    - No entanto, em várias simulações esse monopolista quebrava gerando períodos sem produção de BK
+    - Essa tendência de concentração de mercado é acentuada por WTR (firma que está liderando o mercado tem uma vantagem considerável)
+      - Estou fazendo alguns testes sobre a sensibilidade dos parâmetros em relação à essa concentração de mercado
+- Paridade (de bits) com modelo de referência restaurada: a versão WTR voltou a ser idêntica à referência K+S-labor até T=500 (sementes 1 e 2) (2026-06-15).
+  - Causa: Paridade matemática não implica em paridade computacional
+    - =w1avg= passa a usar =W1/L1H= (em vez de CYCLE direto sobre Wrk1); =w1avgJ= passa a usar =w1avg × NormHours= (em vez de WHTAVE por firma) (2026-06-01)
+    - Por questões de arredondamento na forma que o salário médio do setor de BK era calculado (neutro em termos matemáticos), nosso modelo e o modelo de referência divergiam por conta de ULP
+      - Como o K+S tem "módulos" de trabalhadores (x50), divergências de ULP eram amplificadas
+  - Após investigação, a paridade (esperada analiticamente) foi restaurada
+    - Desvios da paridade irão ocorrer em função das correções que não foram replicadas no modelo de referência
+      - No entanto, mesmo se corrigidos no modelo de referência, não é garantida a paridade computacional no setor de BK
+  - Principal canal de transmissão da WTR é via valorização real do salário mínimo
+    - Como o aumento de produtividade é repassado para o salário mínimo (que constitui uma referência), acaba tendo um "efeito-farol" que possui efeitos cascasta e reforçadores
+
+** Decisões a serem tomadas
+
+- Para qual direção seguimos?
+  - Aprofundamos a análise sobre como desenhar efeitos da redução da jornada sobre a produtividade?
+  - Continuamos no desenvolvimento do modelo na margem intensiva?
+    - Isso terá efeito sobre como o trabalhador é alocado entre as vintages
+  - Ajustamos o setor de BK para ter trabalhadores (e salários) heterogêneos?
+    - Se sim, isso implicaria ter maior cuidado com a calibragem
+- Desenhamos novos cenários para o modelo atual?
+- Devemos mudar o foco para calibragem?
+  - Seguir calibragem de Barde?
+  - Tentar reduzir efeitos de concentração de mercado e falência das firmas de BK?
+- Observação imporante: não chequei se todos os fatos estilizados continuam replicados no modelo
+  - Spoiler: nem mesmo Sant'Anna checa (discutir)
+
+** TODO Resultados
+
+*** Configuração padrão (com problemas)
+
+Em função da maior instabilidade decorrente das correções das inconsistências, adotei uma postura mais conservadora sobre os parâmetros (sobretudo no cenário com efeito de produtividade) para garantir resultados não explosivos.
+Podemos decidir se despachamos mais testes ou uma bateria de análise de sensibilidade.
+Dado esse contexto:
+
+- Redução temporária do PIB seguido de um aumento no longo prazo
+  - Efeito mais demarcado pela rampa linear do que outros cenários
+- Cenário com o prêmio de produtividade gera superávits acompanhado de déficts primários
+  - Outros cenários possuem resultados na mesma direção em termos de primário/total, mas mais acentuados
+  - Efeito é observado na dinâmica da dívida pública
+    - Curiosamente, o cenário com WTR temporário tem explosão da dívida
+      - Explorei menos por ser um cenário de teste/diagnóstico
+    - De modo geral, cenário com a "rampa" linear produz resultados mais factíveis (em termos de ordem de magnitude, não de trajetória)
+- Trajetória da demanda por crédito não tem um descolamento forte do BAU depois do choque
+  - Isso me leva a crer que existe uma estrutura do modelo que é mais forte que o choque
+- De modo geral, há um aumento do desemprego enquanto o efeito sobre a vacância é transitório e descola pouco do BAU
+- Preciso corrigir o gráfico da taxa de emprego extensiva e intensiva
+  - Devo estar sobreescrevendo alguma variável (durante análise, não durante simulação)
+  - O mesmo se aplica ao gráfico de participação
+- Mostrar jornada de trabalho média
+  - Adoção probabilística chega ao novo valor da jornada mais rápido
+    - Em parte porque o setor de BK adota no momento do choque
+- Aumento no wage-share tal como antes
+  - No entanto, o efeito do wage-share do setor de bens de consumo é maior
+    - O setor de BK também é menor (número de firmas fixo)
+  - Cenário do prêmio de produtividade tem um efeito no final da simulação
+- Gini aumenta, mas sem quebra de padrão clara entre os cenários
+- Aumento na concentração de mercado, mas não uma quebra estrutural
+- Markup (setor 2) tem um aumento seguido de uma queda
+  - Ordem de magnitude é pequena
+- Problema: Taxa de lucro setoral (bens de consumo) é persitentemente negativa
+  - Não tenho o gráfico taxa de lucro para o setor de BK (precisaria computar o capital circulante)
+  - Isso também ocorre no K+S (eles não avaliavam)
+  - Momentos de queda na taxa de lucro acentuada em virtude das correções (inclusive no BAU)
+  - Memo: concentração do setor de bens de consumo é baixa
+  - Por alguma razão, a adoção temporária não tem esse padrão (provavelmente aparecerá com maior MC)
+  - Ver OAT
+- Grau de utilização da capacidade permanece alto
+- Inflação quase nula
+
+*** Análise AOT
+
+Fazendo algumas investicações em simulações mais problemáticas (não na média de monte-carlo), me parece que o maior efeito cascata parte da fragilidade financeira so setor de BK.
+Um teste mais rápido (antes de incorrer em análise de sensibilidade) é avaliar os determinantes mais diretos: markup e investimento em P&D.
+O markup tem um efeito direto sobre expulsão de mercado enquanto o gasto com P&D tem um efeito sobre diferenciação/concentração, acentuando o efeito do markup.
+
+Fixando no cenário com a rampa linear (por ser o mais simples com WTR).
+
+**** Propensão marginal à investir em P&D (\(\nu\))
+
+- \(\nu\) tem um efeito muito forte sobre o saldo e dívida do governo (maior, pior), mas não sobre a demanda por crédito (provavelmente pelo tamanho do setor de BK)
+- Efeito moderado sobre desemprego
+- Efeito bem marcado sobre salário nominal
+- Quase nulo sobre wage-share (efeito WTR domina), mas um pouco mais marcado sobre Gini
+- Efeito de nível sobre produtividade (efeito sobre taxa parece pouco)
+- Efeito muito forte sobre concentração de mercado (esperado) e sobre markup do setor de bens de consumo
+- Efeito muito forte sobre a taxa de lucro do setor de bens de consumo
+  - Continua negativa
+- Efeito crescente sobre a volatilidade, mas quase neutro sobre a taxa de crescimento
+- Efeito positivo sobre inovação (esperado), mas não tem repasse tão forte sobre a produtividade (também esperado) e sim sobre o spread da produtividade
+
+**** Markup do setor de BK (\(\mu_{1}\))
+
+- Efeito considerável sobre o nível de renda
+- Efeito forte sobre os resultados do governo (mas não gera inversão de sinal)
+  - Picos de endividamento público
+- Efeito oposto ao esperado sobre o nível de endividamento (provavelmente pelos efeitos negativos na demanda agregada), mas na direção esperada em relação à demanda por crédito
+- Efeito moderado sobre desemprego
+- Efeito bem marcado sobre salário nominal
+- Quase nulo sobre wage-share (efeito WTR domina), mas um pouco mais marcado sobre Gini
+- Efeito de nível e de taxa sobre produtividade
+- Efeito muito forte sobre concentração de mercado (esperado) e sobre markup do setor de bens de consumo
+- Efeito muito forte sobre a taxa de lucro do setor de bens de consumo
+  - Continua negativa
+- Efeito crescente sobre a taxa de crescimento e decrescente sobre a volatilidade e inflação
+- Efeito decrescente sobre falências (esperado)
+- Efeito negativo sobre inovação
+- Efeito sobre produtividade se estabiliza
+- Efeito quase neutro sobre concentração de mercado

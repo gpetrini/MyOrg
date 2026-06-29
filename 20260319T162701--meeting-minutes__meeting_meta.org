@@ -170,6 +170,23 @@
   - Caso não puder sextas, seria melhor terças ou quintas
 
 
+** Flávio Marin Sales :monografia:
+
+*** Apresentação [2026-06-12 Fri]
+
+- Foi discutiva a hipótese: Fatores exógenos são mais relevantes do que os endógenos para explicar risco país
+  - Endógenos sendo essencialmente macroeconômicos
+  - Foi esclarecida a ideia de hipótese de trabalho em que ativos da periferia possuem maior risco por conta da menor liquidez (associada à  [[denote:20260612T150204][Monetary Hierachy]])
+- Foco será em países da [[denote:20260612T150238][Latin America]]
+- Estrutura da monografia
+  - Capítulo 1: Discussão teórica sobre hierarquia de moedas
+  - Capítulo 2: Discussão dos indicadores de risco
+  - Capítulo 3: Econométrico
+- Modelo econométrico
+  - Foi sugerido utilizar um modelo de Análise Fatorial ou PCA
+  - Foi iniciado como um modelo de dados em painel
+  - Método a ser definido, mas não bloqueia a discussão do capítulo 2
+
 * Pós-Graduação
 
 ** HO341 - Métodos Quantitativos aplicados à economia
@@ -228,3 +245,17 @@
   - Exames tem validade de 3 meses
 - Nomeação está prevista para setembro/agosto
   - Cancelamento do CNPJ deve ser antes da nomeação
+
+* Paper decomposição :@writing:@paper:
+
+** Retomada ([2026-06-17 Wed])
+
+- Summa: contar a historinha de motivação e contextualizar a relevância da discussão metodológica do paper. Falar sobre a importância de se medir corretamente as contribuições e a questão das importações serem tratadas como variável de oferta ou de demanda. O paper está com um número baixo de palavras, então, se quiser, dá até para fazer uma seção apenas sobre isso.
+- André e Gabriel: rever a base de dados e verificar se, de fato, é impossível calcular as taxas de crescimento do PIB que de fato ocorreram em cada país.
+- Lucas: rever as equações de interpolação do André; reordenar a exposição metodológica. Reescrever equações em termos de conteúdo doméstico em vez de conteúdo importado. Reordenar a seção metodológica.
+- Todos: decidir quais países usar. Pensar em países interessantes para atrair público ao paper, que façam parte do debate e tenham relevância para evidenciar as diferenças entre os métodos. A princípio: EUA, Alemanha, China e Japão. Ficar de olho na Holanda, México e Dinamarca.
+- Próxima reunião: discutir os resultados que já temos para decidir quais países usar e quais resultados mostrar.
+
+* Project Horizon
+
+** Onboarding [2026-06-22 Mon]

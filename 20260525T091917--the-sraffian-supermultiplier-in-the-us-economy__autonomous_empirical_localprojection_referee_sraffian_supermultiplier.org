@@ -11,7 +11,7 @@
 * Specific notes
 :PROPERTIES:
 :NOTER_DOCUMENT: /home/gpetrini/Documents/Reviews/ROKE/2026-31/Original_Paper.pdf
-:NOTER_PAGE: 2
+:NOTER_PAGE: 19
 :END:
 
 ** Purpose, Relevance, and Contribution :contrib:
@@ -130,7 +130,495 @@ These findings provide the first systematic dynamic evidence on the Sraffian
 supermultiplier and connect it to the state-dependent fiscal multiplier literature. (p. 1)
 #+end_quote
 
+** To the private sector :discuss:
+:PROPERTIES:
+:NOTER_PAGE: (2 0.24346310284718187 . 0.28646616541353387)
+:END:
 
+
+
+#+begin_quote
+Autonomous spending does not create additional capacity (p. 2)
+#+end_quote
+
+** Observations :discuss:
+:PROPERTIES:
+:NOTER_PAGE: (2 0.2748402091807089 . 0.3293233082706767)
+:END:
+
+
+
+#+begin_quote
+linked to current output and creates productive capacity. (p. 2)
+#+end_quote
+
+Induced might create capacity too.
+
+** Debate :discuss:lit:
+:PROPERTIES:
+:NOTER_PAGE: (2 0.48343986054619403 . 0.17894736842105263)
+:END:
+
+
+#+begin_quote
+The empirical literature on the supermultiplier has mainly focused on cointegration. (p. 2)
+#+end_quote
+
+Not necessarily true. Some works have focussed on estimation of the supermultiplier or on the importance of autonomous expenditures for economic growth.
+
+** Why not testing for other state variables? :discuss:
+:PROPERTIES:
+:NOTER_PAGE: (2 0.7187681580476467 . 0.39699248120300756)
+:END:
+
+
+#+begin_quote
+splitting the sample into periods of labor market slack
+and tightness using the civilian unemployment rate as the state variable. (p. 2)
+#+end_quote
+
+Why not, for instance, to use the capacity utilization rate, leverage, etc?
+
+** Results :results:
+:PROPERTIES:
+:NOTER_PAGE: (3 0.2585705984892504 . 0.3556390977443609)
+:END:
+
+
+#+begin_quote
+This pattern reflects the gradual and incomplete
+propagation of the autonomous demand impulse predicted by the SSM multiplier-
+accelerator mechanism. (p. 3)
+#+end_quote
+
+Interresting findings.
+
+** True, but there are some logical jumps :discuss:critique:
+:PROPERTIES:
+:NOTER_PAGE: (4 0.26902963393375945 . 0.27669172932330827)
+:END:
+
+
+#+begin_quote
+Consequently, ID increases the productive capacity of the economy,
+while Z does not (Serrano, 1995). (p. 4)
+#+end_quote
+
+While this is true, it is not mandatory (in logical terms) that induced components create productive capacity.
+
+** Lack of announcement of hypothesis :critique:
+:PROPERTIES:
+:NOTER_PAGE: (4 0.3166763509587449 . 0.17593984962406017)
+:END:
+
+
+
+
+#+begin_quote
+Induced demand has two components: (p. 4)
+#+end_quote
+
+There is no induced imports, for example.
+
+** Capacity for the public sector :discuss:critique:
+:PROPERTIES:
+:NOTER_PAGE: (4 0.8146426496223126 . 0.2030075187969925)
+:END:
+
+
+#+begin_quote
+I use government consumption expenditures rather than total government spending. Govern-
+ment investment creates productive capacity and therefore resembles induced demand. Including
+it in Z would conflate autonomous demand with capacity-creating expenditures, distorting the
+supermultiplier estimate and its theoretical interpretation. (p. 4)
+#+end_quote
+
+Including public investment does not contradicts with the Z in the SSM.
+The ideia is to produce productivity capacity for the private sector.
+
+** Literature :context:
+:PROPERTIES:
+:NOTER_PAGE: (5 0.33004067402672865 . 0.17518796992481203)
+:END:
+
+
+#+begin_quote
+Third, Φ is positive and stable in the long run. In empirical terms, this prediction
+implies a cointegrating relationship between Y and Z. Estimating this long-run
+linkage has been the most common econometric application in the SSM literature. (p. 5)
+#+end_quote
+
+
+** Literature :context:
+:PROPERTIES:
+:NOTER_PAGE: (5 0.47704822777454964 . 0.17593984962406017)
+:END:
+
+
+#+begin_quote
+Fourth, SSM theory is consistent with a state-dependent supermultiplier Φ. When
+productive capacity is underutilized, an autonomous demand impulse has a wider
+propagation range into output. (p. 5)
+#+end_quote
+
+
+** Check if there is any limitations for LP :discuss:limits:empirics:
+:PROPERTIES:
+:NOTER_PAGE: (6 0.4166182452062754 . 0.6751879699248121)
+:END:
+
+
+#+begin_quote
+Unlike
+VAR-based methods, LPs impose no parametric restrictions on the shape of the
+impulse-response function and offer robust inference across lag-augmented models,
+long forecast horizons, and nonlinear data-generating processes (p. 6)
+#+end_quote
+
+
+** Need of normalization not explained :discuss:limits:
+:PROPERTIES:
+:NOTER_PAGE: (6 0.7542126670540383 . 0.2879699248120301)
+:END:
+
+
+#+begin_quote
+yn,t ≡ yt /ȳt is real
+output normalized by its trend ȳt , and zn,t ≡ zt /ȳt is autonomous demand normalized
+by output trend. (p. 6)
+#+end_quote
+
+I assume that this is due to the stationarity of the series.
+
+** HP filter :limits:
+:PROPERTIES:
+:NOTER_PAGE: (6 0.8442765833817547 . 0.2135338345864662)
+:END:
+
+
+
+
+#+begin_quote
+HP-filtered denominator ȳ (p. 6)
+#+end_quote
+
+** Antecipate :discuss:
+:PROPERTIES:
+:NOTER_PAGE: (7 0.1946542707728065 . 0.23909774436090228)
+:END:
+
+
+#+begin_quote
+Taking first differences isolates the quarter-to-quarter impulse in autonomous
+demand, which is the relevant variable for tracing supermultiplier responses. Finally,
+expressing both variables as shares of trend output makes impulse-response func-
+tions interpretable on a dollar-for-dollar basis (Ramey and Zubairy, 2018; Haug and
+Sznajderska, 2024).7 (p. 7)
+#+end_quote
+
+
+This should be antecipated.
+
+Also, does it implies that Z cannot change the trend of Y?
+
+** Methodology :method:misc:
+:PROPERTIES:
+:NOTER_PAGE: (7 0.2916908773968623 . 0.6902255639097745)
+:END:
+
+
+#+begin_quote
+The scalar β̂y,h
+measures the response of aggregate output at horizon h to a one-dollar shock
+in autonomous demand at time t, conditional on the history of both variables.
+Analogously, β̂z,h captures the persistence of the autonomous demand shock itself—
+i.e., how much of the initial impulse to Z remains h quarters later. (p. 7)
+#+end_quote
+
+
+How to interpret the coefficients.
+
+** How predictable and unanticipated? :discuss:
+:PROPERTIES:
+:NOTER_PAGE: (7 0.7594421847762928 . 0.41654135338345866)
+:END:
+
+
+
+
+#+begin_quote
+combines predictable and unanticipated (p. 7)
+#+end_quote
+
+** This can be rephrased as the autonomous share on GDP decreases as GDP grows faster than Z for a while :discuss:insight:
+:PROPERTIES:
+:NOTER_PAGE: (8 0.21615339918651946 . 0.7323308270676692)
+:END:
+
+
+#+begin_quote
+High current
+output levels predict lower autonomous demand in subsequent quarters, consistent
+with counter-cyclical stabilizers and mean-reverting business cycle dynamics. (p. 8)
+#+end_quote
+
+
+** Attention :discuss:limits:empirics:
+:PROPERTIES:
+:NOTER_PAGE: (8 0.6321905868680999 . 0.5082706766917293)
+:END:
+
+
+
+
+#+begin_quote
+encapsulating
+the concept of the Sraffian supermultiplier. (p. 8)
+#+end_quote
+
+** Why not capacity utilization? :discuss:limits:
+:PROPERTIES:
+:NOTER_PAGE: (8 0.7611853573503776 . 0.2105263157894737)
+:END:
+
+
+#+begin_quote
+When unemployment is high, productive capacity is underutilized, and an
+autonomous demand impulse has a wider scope to propagate into larger output
+gains. (p. 8)
+#+end_quote
+
+
+Capacity utilization data is available.
+It is recognizable as an important mechanism.
+Why using unemployment instead?
+I agree that the effects should be similar, but this should be stated explicitly.
+
+** Used as error term before :limits:
+:PROPERTIES:
+:NOTER_PAGE: (9 0.3346891342242882 . 0.47518796992481205)
+:END:
+
+
+
+
+#+begin_quote
+where ut is the civilian unemployment rate. (p. 9)
+#+end_quote
+
+** C used as consumption before? :limits:misc:
+:PROPERTIES:
+:NOTER_PAGE: (9 0.631609529343405 . 0.6774436090225564)
+:END:
+
+
+
+
+#+begin_quote
+Ch wt (p. 9)
+#+end_quote
+
+** So far, unclear on how the parameter is computed :discuss:limits:empirics:
+:PROPERTIES:
+:NOTER_PAGE: (10 0.3015688553166763 . 0.1766917293233083)
+:END:
+
+
+
+
+#+begin_quote
+hyperparameter γ controls the speed of transition (p. 10)
+#+end_quote
+
+** Ordering is strange :discuss:limits:
+:PROPERTIES:
+:NOTER_PAGE: (11 0.20220801859384077 . 0.1766917293233083)
+:END:
+
+
+
+
+#+begin_quote
+To test Hypothesis 3 (see subsection 3.6 below), (p. 11)
+#+end_quote
+
+First present the hypothesis, and them the inference part.
+
+** This might be antecipated :discuss:
+:PROPERTIES:
+:NOTER_PAGE: (11 0.8326554328878558 . 0.20526315789473684)
+:END:
+
+
+#+begin_quote
+A finite-horizon estimate below unity does not contradict the theoretical prediction of Φ > 1
+mentioned in Section 2. At medium-run horizons, the adjustment is still in progress, and Φ̂H
+measures a transitional phase of the propagation, not the fully-adjusted long-run multiplier. (p. 11)
+#+end_quote
+
+
+** Does the pandemic has an impact on it? :discuss:empirics:
+:PROPERTIES:
+:NOTER_PAGE: (12 0.24230098779779197 . 0.29398496240601507)
+:END:
+
+
+
+
+#+begin_quote
+1948 Q1–2024 Q4 (p. 12)
+#+end_quote
+
+** How to interpret the negative value? :discuss:
+:PROPERTIES:
+:NOTER_PAGE: (12 0.5746658919233004 . 0.3766917293233083)
+:END:
+
+
+#+begin_quote
+responses decline and become negative by the end of the
+second year, remaining below zero through the last quarter. After the third year,
+output responses reach their most negative value significantly below zero, at -$0.58. (p. 12)
+#+end_quote
+
+
+** Might be estimating the fraction as well :misc:
+:PROPERTIES:
+:NOTER_PAGE: (13 0.21499128413712956 . 0.3097744360902256)
+:END:
+
+
+#+begin_quote
+This linear specification shows that the longer the forecast horizon,
+the more autonomous demand persistence dominates output adjustment, resulting
+in a declining supermultiplier. (p. 13)
+#+end_quote
+
+
+** Results :results:insight:
+:PROPERTIES:
+:NOTER_PAGE: (14 0.7147007553747821 . 0.34436090225563915)
+:END:
+
+
+#+begin_quote
+In the slack state, the linear estimate understates the state-
+dependent supermultiplier, while the two measures are closer in the tight state. This
+indicates that the linear average supermultiplier is driven primarily by the tight labor
+market regime, which accounts for 64.5% of the sample. (p. 14)
+#+end_quote
+
+
+** Arguments :results:empirics:misc:
+:PROPERTIES:
+:NOTER_PAGE: (16 0.6385822196397443 . 0.2699248120300752)
+:END:
+
+
+#+begin_quote
+at five years, the initial demand impulse has likely come to an end, and
+the denominator shrinks toward zero. As smaller values in a near-zero denominator
+increase, the ratio and the resulting supermultiplier estimates become unstable. (p. 16)
+#+end_quote
+
+
+** Necessary? :discuss:
+:PROPERTIES:
+:NOTER_PAGE: (17 0.6461359674607786 . 0.636842105263158)
+:END:
+
+
+#+begin_quote
+This AR(3) model has
+an in-sample coefficient of determination (R2 ) of 0.99, confirming that normalized
+autonomous demand is highly persistent, with a residual standard deviation of 0.0036,
+approximately one-quarter the standard deviation of ∆zn,t . (p. 17)
+#+end_quote
+
+Check if this test is necessary.
+
+** Observations :misc:
+:PROPERTIES:
+:NOTER_PAGE: (17 0.7902382335851249 . 0.32781954887218046)
+:END:
+
+
+
+
+#+begin_quote
+predictable variation that may inflate estimated responses. (p. 17)
+#+end_quote
+
+** Decision on how to define state variables :results:insight:
+:PROPERTIES:
+:NOTER_PAGE: (19 0.14235909355026147 . 0.29248120300751884)
+:END:
+
+
+#+begin_quote
+Switching to output growth as the state variable stabi-
+lizes the denominator, but the cumulative output response in the low-growth state
+reverses sign at medium and long horizons, producing negative slack supermultipliers
+and a state-dependent pattern opposite to the main result. In short, this instability
+is not a hyperparameter tuning problem. It reflects a limitation of applying the
+continuous weighting scheme to the 2-step ratio estimator in this sample, where
+denominator behavior under smooth transition weighting is less stable than under
+the binary split. (p. 19)
+#+end_quote
+
+
+** Contribution :contrib:insight:
+:PROPERTIES:
+:NOTER_PAGE: (19 0.3933759442184776 . 0.19774436090225564)
+:END:
+
+
+#+begin_quote
+Where cointegration identifies the existence of a shared trend,
+the local projection estimates trace the adjustment path, showing how the effect of
+an autonomous demand shock propagates—and gradually fades—over the medium
+run. (p. 19)
+#+end_quote
+
+
+** Results :results:
+:PROPERTIES:
+:NOTER_PAGE: (20 0.32481115630447416 . 0.3706766917293233)
+:END:
+
+
+#+begin_quote
+These results reveal that labor
+market conditions do not merely rescale the multiplier; instead, they reshape its
+entire dynamic trajectory. (p. 20)
+#+end_quote
+
+** Contribution :contrib:policy:
+:PROPERTIES:
+:NOTER_PAGE: (20 0.4723997675769901 . 0.6924812030075188)
+:END:
+
+
+#+begin_quote
+bridge SSM
+theory to the state-dependent fiscal multiplier literature, showing that the same
+labor market mechanism that amplifies government spending shocks also shapes the
+propagation of a more comprehensive set of demand expenditures, (p. 20)
+#+end_quote
+
+** Future Work :future:
+:PROPERTIES:
+:NOTER_PAGE: (20 0.5560720511330621 . 0.17593984962406017)
+:END:
+
+
+
+#+begin_quote
+The broader implication of this study is straightforward. (p. 20)
+#+end_quote
+
+One ideia that this paper brought is that the autonomous components itself might be state-dependent as well.
+For example, household credit might depend on the financial states of the economy.
 * Abstract
 
 #+BEGIN_ABSTRACT
