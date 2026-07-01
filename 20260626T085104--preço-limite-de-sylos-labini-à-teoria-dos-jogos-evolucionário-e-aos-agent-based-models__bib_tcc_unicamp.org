@@ -13,6 +13,9 @@
 
 * Metadata
 
+- Author: Daniel Campos Nigro
+- Supervisor: Gustavo de Oliveira Aggio
+
 * Takeaway
 
 * Related Notes
@@ -26,9 +29,9 @@
 ** Síntese do trabalho
 
 - A monografia propõe-se a três objetivos articulados:
-  - realizar uma revisão da literatura sobre preço-limite desde Bain (1949) e Sylos-Labini (1956 [1986]) até os modelos derivados de Milgrom e Roberts (1982);
-  - sintetizar um modelo evolucionário de jogo de entrada com preço-limite, ilustrando com um exemplo numérico;
-  - executar uma simulação computacional, denominada pelo autor de /agent based model/ (ABM), para o referido jogo.
+  - Realizar uma revisão da literatura sobre preço-limite desde Bain (1949) e Sylos-Labini (1956 [1986]) até os modelos derivados de Milgrom e Roberts (1982);
+  - Sintetizar um modelo evolucionário de jogo de entrada com preço-limite, ilustrando com um exemplo numérico;
+  - Executar uma simulação computacional, denominada pelo autor de /agent based model/ (ABM), para o referido jogo.
 - O trabalho ancora-se, metodologicamente, na Teoria dos Jogos Evolucionários (TJE) e utiliza a /replicator dynamics/ como dinâmica de equilíbrio.
   - A hipótese subjacente é a de que o arcabouço evolucionário — em substituição à racionalidade plena e ao jogo estático bayesiano — pode contribuir para a análise do preço-limite em nível agregado e populacional.
 - Um aspecto comum a toda a monografia é a articulação de uma tradição estruturalista de organização industrial (Possas, 1985; Silva, 2004; Kupfer e Hasenclever, 2013) com o instrumental de teoria dos jogos mainstream, sem que essa junção seja tematizada enquanto tal.
@@ -36,37 +39,51 @@
 
 *** Cumprimento dos objetivos propostos
 
-| Objetivo                                        | Avaliação                                                                                                   |
-|--------------------------------------------------+--------------------------------------------------------------------------------------------------------------|
-| Revisão da literatura sobre preço-limite        | Cumprido. A revisão é adequada para o nível de uma monografia de graduação.                                 |
-| Síntese do modelo evolucionário                 | Cumprido parcialmente. O modelo é sintetizado, mas não se determina conclusivamente a existência de ESS.    |
-| Discussão dos equilíbrios em estratégias puras  | Cumprido. Os 32 casos são analisados com rigor metodológico adequado.                                       |
-| Simulação ABM                                   | Cumprido parcialmente. Realizada, mas com análise exclusivamente gráfica e sem testes estatísticos.         |
+ - Revisão da literatura sobre preço-limite :: Cumprido.
+   - A revisão é adequada para o nível de uma monografia de graduação.
+ - Síntese do modelo evolucionário :: Cumprido parcialmente.
+   - O modelo é sintetizado, mas não se determina conclusivamente a existência de ESS.
+ - Discussão dos equilíbrios em estratégias puras :: Cumprido.
+   - Os 32 casos são analisados com rigor metodológico adequado.
+ - Simulação ABM :: Cumprido parcialmente.
+   - Realizada, mas com análise exclusivamente gráfica e sem testes estatísticos.
 
-** Estrutura da monografia e hipóteses gerais
+
+*** Considerações gerais - deliberação
+
+- A monografia apresenta uma contribuição ao articular o arcabouço da Teoria dos Jogos Evolucionários com a problemática do preço-limite em organização industrial.
+- A revisão bibliográfica é sólida e bem estruturada, mas mistura elementos de discussão metodológica que poderiam ser mais bem separados ou sequenciados.
+- O modelo teórico é rigoroso dadas as hipóteses adotadas e os seus limites declarados; os casos 6 e 28 constituem o resultado mais bem fundamentado do trabalho.
+- A principal fragilidade concentra-se na análise dos resultados da simulação, que requer ferramental estatístico mais elaborado para sustentar as inferências apresentadas, e na contradição não resolvida quanto ao valor de $\delta$.
+  - As exigências de testes ADF/KPSS, análise espectral e número de simulações $\geq 30$ situam-se em padrão de mestrado.
+  - São pertinentes como direções de aprimoramento, não como deficiências incapacitantes para o requisito de graduação.
+
+
+** Pontos de tensão
 
 - Tratamento do preço-limite como parâmetro exógeno.
   - O preço-limite $p^l = 4{,}5$ é definido arbitrariamente e igual para incumbentes de alto e baixo custo ($p^l_H = p^l_L = p^l$, p. 43).
   - Esta hipótese, embora necessária para viabilizar o equilíbrio /pooling/, não recebe discussão sistemática sobre suas implicações para os resultados.
   - Sendo os dois preços-limite iguais, caberia discutir se o valor comum deveria ser ancorado na estrutura de custo alta ou baixa: do ponto de vista da incumbente, ancorar na pior estrutura de custo (alto custo) auferiria maiores lucros à incumbente de baixo custo, o que não é discutido (p. 44).
-  - A ausência de qualquer análise de sensibilidade em relação a este parâmetro fragiliza as conclusões, uma vez que os equilíbrios identificados dependem diretamente dos retornos que derivam dessa escolha.
 - Capítulo metodológico sem articulação analítica ao longo do trabalho.
   - O capítulo discute sistemas complexos (Miller e Page, 2007) e TJE como blocos expositivos independentes, e fica em um meio do caminho entre revisão da literatura e descrição metodológica.
-  - A caracterização do modelo como sistema adaptativo complexo (p. 18) é apresentada como propriedade do objeto, quando deveria ser tratada explicitamente como hipótese de trabalho, a ser sustentada ou relativizada ao longo dos capítulos seguintes.
-  - A noção de homomorfismo entre modelo e realidade, central na argumentação de Miller e Page (2007), não reaparece como critério de avaliação do ABM construído; caberia ainda qualificar a relação entre o "comportamento do mundo real" e o modelo como uma aproximação por fatos estilizados, e não como captura literal do fenômeno (p. 17).
   - Caberia situar essa discussão em relação à literatura de calibragem e validação de modelos baseados em agentes, ausente do capítulo (p. 17).
+    - A noção de homomorfismo entre modelo e realidade, central na argumentação de Miller e Page (2007), não reaparece como critério de avaliação do ABM construído; caberia ainda qualificar a relação entre o "comportamento do mundo real" e o modelo como uma aproximação por fatos estilizados, e não como captura literal do fenômeno (p. 17).
   - Sugestão de reorganização: apresentar primeiro a revisão da literatura sobre preço-limite e só então a discussão metodológica sobre TJE e sistemas complexos, e, dentro desta última, apresentar os jogos populacionais antes das definições formais de ESS — o que tornaria mais legível o porquê de cada conceito ser introduzido (pp. 18, 21, 23).
   - O capítulo teórico termina sem antecipar o capítulo seguinte, e o peso dado à /replicator dynamics/ na exposição é inferior à importância que ela assume no restante do trabalho; maior ênfase em sua explicação e em exemplos de uso na literatura, em detrimento da definição formal de ESS, tornaria a transição menos abrupta (p. 23).
+    - Essa característica de não atencipar o que virá a seguir (dentro de um capítulo e entre capítulos) persiste ao longo da monografia.
+    - A importância do replicador se dá especialmente por que é leve que faz com que decisões a nível da firma, ao alterar o rendimento médito, tenha efeitos propagados ao longo do da simulação
+    - não é discutido se o modelo pressupõe uma especificação de quase-replicador (estável, comum em ABMs macroeconômicos) em vez do replicador puro (instável), distinção relevante dado o uso posterior em simulação (p. 50).
 - Definições e notação incompletas no capítulo teórico.
-  - Conceitos como "$\bar\epsilon$", "evolucionária neutra" e o conjunto de melhores respostas $\beta^*(x)$ são empregados sem definição clara (p. 20).
-  - A variável de utilidade ($u$) não é explicitamente definida nas equações dos jogos populacionais (p. 21).
-  - Não se explicita que a ponderação dos estados populacionais nos retornos esperados pressupõe que essa informação esteja disponível aos agentes, nem se justifica a opção por restringir a análise a dinâmicas determinísticas — em particular à /replicator dynamics/ — em vez de dinâmicas estocásticas (p. 22).
-  - Falta uma discussão sobre heurísticas simples, sobre eventual heurística de troca (/heuristic switching/) e sobre memória do agente (se um desempenho ruim recente influencia a escolha futura de estratégia), e como isso se relaciona com racionalidade limitada — o que daria suporte conceitual ao protocolo de revisão de estratégia efetivamente empregado mais adiante, baseado apenas na comparação com o retorno médio contemporâneo da população (pp. 19, 48, 59).
+  - Conceitos como "$\bar\epsilon$" e o conjunto de melhores respostas $\beta^*(x)$ são empregados sem definição clara (p. 20).
+    - A variável de utilidade ($u$) não é explicitamente definida nas equações dos jogos populacionais (p. 21).
+- Falta uma discussão sobre heurísticas simples, sobre eventual heurística de troca (/heuristic switching/) e sobre memória do agente (se um desempenho ruim recente influencia a escolha futura de estratégia), e como isso se relaciona com racionalidade limitada — o que daria suporte conceitual ao protocolo de revisão de estratégia efetivamente empregado mais adiante, baseado apenas na comparação com o retorno médio contemporâneo da população (pp. 19, 48, 59).
 - Descontinuidade entre o modelo analítico e o ABM.
   - O capítulo 4 analisa equilíbrios em estratégias puras e conclui pela ausência de ESS determinável.
   - O capítulo 5 sugere a existência de equilíbrios interiores a partir da simulação.
   - A ponte conceitual entre as duas abordagens — por que o ABM revelaria o que o modelo analítico não pode — não é suficientemente desenvolvida além da referência genérica às vantagens dos modelos computacionais (p. 58).
   - Considerando-se a estrutura efetivamente empregada — estocasticidade associada apenas às probabilidades de pareamento e revisão de estratégia, sem heterogeneidade adicional entre agentes — é discutível que se trate de um ABM no sentido propriamente dito da literatura, e não de uma simulação numérica estocástica do mesmo jogo evolucionário (p. 60). Seria mais preciso, e mais defensável perante a banca, chamá-lo de modelo de simulação computacional.
+    - O mais adequado seria um modelo de cadeias de Markov.
 
 ** Uso da literatura e discussões subjacentes
 
@@ -80,7 +97,7 @@
   - Esta lacuna enfraquece a fundamentação metodológica do capítulo 5.
 - Ausência de literatura sobre endogeneização do preço-limite.
   - Dado que $p^l$ é tratado como parâmetro exógeno, seria esperada alguma discussão sobre modelos que o endogenizam, o que afeta diretamente a validade externa do modelo proposto.
-- Oportunidade de aprofundamento histórico não explorada: a tradução do modelo de Sylos-Labini para o instrumental neoclássico por Modigliani (1958) é mencionada de passagem, mas não se discute o que essa tradução preservou e o que foi descartado do argumento original (p. 29) — questão pertinente dado que a própria monografia repete o gesto de tradução, desta vez para a TJE.
+- Oportunidade de aprofundamento de historiografia econômica não explorada: a tradução do modelo de Sylos-Labini para o instrumental neoclássico por Modigliani (1958) é mencionada de passagem, mas não se discute o que essa tradução preservou e o que foi descartado do argumento original (p. 29) — questão pertinente dado que a própria monografia repete o gesto de tradução, desta vez para a TJE.
 
 ** Análise dos resultados
 
@@ -92,115 +109,76 @@
   - A equação da dinâmica populacional do jogo é referida antes de ser apresentada por extenso, e a Jacobiana é empregada antes que seu significado econômico — estabilidade do sistema na ausência de mecanismos de retroalimentação reforçadores — seja discutido (p. 52).
   - O motivo para restringir a análise a estratégias puras (tratabilidade computacional) não é explicitado, embora seja razoável presumi-lo (p. 52).
   - Em pelo menos uma passagem, as conclusões sobre os retornos são antecipadas antes de se descrever como a simulação foi montada, invertendo a ordem expositiva esperada (p. 48).
-  - Os incentivos formais ao preço-limite ($a_3 > a_4$ e $a_9 > a_10$) poderiam ser expressos também em prosa, explicitando o significado econômico, e não apenas como relações entre coeficientes (p. 46); caberia também discutir o que levaria a uma inversão dessas desigualdades e se tal inversão seria economicamente relevante (p. 50).
-  - A relação $a_2 = a_5 < 0 \leq a_8 = a_{11}$ (Eq. 4.5) é apresentada antes de seu significado ser desenvolvido; a exposição ganharia em clareza se essa relação fosse situada depois da Equação 4.5, e não antes dela (p. 45).
-  - Até o ponto em que essas relações são apresentadas (p. 46), o texto ainda não deixou claro em que sentido o jogo é evolucionário e qual o papel das populações na análise, tampouco definiu formalmente o replicador — a exposição antecipa resultados de um aparato (a dinâmica populacional) que só é introduzido depois.
-  - O modelo não assume, ao contrário de Soytas e Becker (2003), que os retornos sob duopólio de Cournot sejam necessariamente superiores aos retornos sob preço-limite; essa divergência em relação à referência adotada merece justificativa própria, já que afeta diretamente as desigualdades $a_3 > a_4$ e $a_9 > a_10$ (p. 44).
-- Simplificação não discutida em relação a Milgrom e Roberts (1982): o modelo considera um único tipo de firma entrante, e não dois tipos diferenciados por custo marginal como na referência original.
-  - Essa escolha faz com que a probabilidade de entrada coincida com a própria probabilidade de a incumbente ser de alto custo, fazendo o modelo convergir para um dos dois cenários de Milgrom e Roberts (1982) em vez de reproduzir sua estrutura completa — uma simplificação que tem consequência direta sobre os resultados e que não é discutida como tal (p. 46).
-- Problema metodológico não discutido: a presença de ao menos um autovalor nulo em todos os 32 casos não é explicada ao leitor de forma sistemática.
-  - Este autovalor nulo é estrutural ao modelo — decorre das restrições de soma dos estados populacionais — e sua implicação para a análise de estabilidade deveria ser explicitada formalmente.
-  - A afirmação de que "não foi possível determinar a existência de um ESS" (p. 68) é honesta, mas a razão técnica subjacente permanece opaca para o leitor; o próprio enunciado dessa conclusão é ambíguo quanto a se a ausência de ESS é geral ou restrita aos casos com preço-limite (p. 68).
-- A condição de equilíbrio — replicator dynamics igual a zero — é apresentada sem que sua intuição econômica seja explicada ao leitor antes de ser empregada (p. 48), no mesmo padrão expositivo problemático já apontado para a Jacobiana.
-- O intervalo crítico de $\mu$ reportado (entre 0,2727 e 0,2731) é extremamente estreito, o que caberia comentar: tratando-se de um ponto de transição de regime, valeria indicar se essa estreiteza é uma propriedade do modelo ou um artefato da parametrização escolhida (p. 52); tampouco se discute como esse valor crítico de $\mu$ é obtido (p. 48).
-- A Tabela com os 32 casos é apresentada por inteiro, sem que se destaquem os casos economicamente relevantes dado o espaço paramétrico adotado; agrupar os casos plausíveis e indicar a proporção do espaço paramétrico que efetivamente importa tornaria a leitura mais direta (p. 53).
+  - Os incentivos formais ao preço-limite ($a_3 > a_4$ e $a_9 > a_10$) poderiam ser expressos também de forma descritiva, explicitando o significado econômico, e não apenas como relações entre coeficientes (p. 46); caberia também discutir o que levaria a uma inversão dessas desigualdades e se tal inversão seria economicamente relevante (p. 50).
+  # - A relação $a_2 = a_5 < 0 \leq a_8 = a_{11}$ (Eq. 4.5) é apresentada antes de seu significado ser desenvolvido; a exposição ganharia em clareza se essa relação fosse situada depois da Equação 4.5, e não antes dela (p. 45).
+- Resultados matemáticos discutidos sem a devida intuição econômica
+  - Problema metodológico não discutido: a presença de ao menos um autovalor nulo em todos os 32 casos não é explicada ao leitor de forma sistemática.
+    - Este autovalor nulo é estrutural ao modelo — decorre das restrições de soma dos estados populacionais — e sua implicação para a análise de estabilidade deveria ser explicitada formalmente.
+    - A afirmação de que "não foi possível determinar a existência de um ESS" (p. 68) é honesta, mas a razão técnica subjacente permanece opaca para o leitor; o próprio enunciado dessa conclusão é ambíguo quanto a se a ausência de ESS é geral ou restrita aos casos com preço-limite (p. 68).
+  - A condição de equilíbrio — replicator dynamics igual a zero — é apresentada sem que sua intuição econômica seja explicada ao leitor antes de ser empregada (p. 48), no mesmo padrão expositivo problemático já apontado para a Jacobiana.
+- O intervalo crítico de $\mu$ reportado (entre 0,2727 e 0,2731) é extremamente estreito, o que caberia comentar: tratando-se de um ponto de transição de regime, valeria indicar se essa estreiteza é uma propriedade do modelo ou um artefato da parametrização escolhida (p. 52);
 - A conclusão de que nenhum dos 32 equilíbrios é assintoticamente estável é obtida por inspeção numérica da tabela; uma avaliação analítica prévia (por exemplo, via álgebra computacional) do quão restritiva é essa condição ajudaria o leitor a situar a robustez do resultado antes da enumeração de casos (p. 55).
+  - Dito de outro modo, volta-se no ponto o quanto isso é um resultado analítico do modelo e o quanto isso é implicação da parametrização.
+  - Me fazendo claro, a proposta não é exigir que o aluno encontre uma solução analítica, mas sim deixar mais reconhecido quais são os limites das conclusões obtidas.
 - Além disso, a decisão de não analisar equilíbrios interiores — explicitamente declarada em nota de rodapé (p. 56) — é relevante: é precisamente nesses equilíbrios que os resultados do ABM sugerem a existência de estados estacionários, e a monografia não esclarece a razão dessa escolha de escopo.
   - No entanto, a transição para o capítulo ABM é um pouco brusca e não explicita quais são os ganhos de se adotar outra metodologia; isso fica claro no decorrer do capítulo seguinte, mas é pouco antecipado.
 - O modelo estabelece como pressuposto $0 < \delta < 1$ (p. 44).
   - A Tabela 1 (p. 49) e toda a simulação adotam $\delta = 1$.
   - O valor empregado está fora do domínio declarado pelo próprio modelo, anulando o fator de desconto temporal, sem que essa contradição seja registrada ou justificada no texto.
-- Pontos pontuais que mereceriam tratamento explícito, mas não comprometem a estrutura central do argumento:
-  - a robustez do resultado ao custo marginal alternativo da entrante (1,5 versus 2,0 em Milgrom e Roberts, 1982) não é testada (p. 48);
-  - não se avaliam os casos-limite $c_E > c_H$ ou $c_E < c_L$, fora do intervalo $0 < c_L < c_E < c_H$ adotado (p. 43);
-  - o efeito do custo de entrada irrecuperável $K$ sobre o preço de reserva da entrante não é discutido em paralelo ao tratamento dado a $K$ no preço-limite (p. 45);
-  - a comparação com o modelo de referência de Toxvaerd (2017) não deixa claro se o modelo da monografia o segue ou dele diverge (p. 45);
-  - não é discutido se o modelo pressupõe uma especificação de quase-replicador (estável, comum em ABMs macroeconômicos) em vez do replicador puro (instável), distinção relevante dado o uso posterior em simulação (p. 50).
 
 *** Simulação ABM (Capítulo 5)
 
 - A análise é exclusivamente gráfica — fato admitido pelo próprio autor (p. 58) — e essa limitação afeta a solidez das conclusões apresentadas.
 - A inferência sobre a existência de um equilíbrio interior a partir de médias móveis é metodologicamente insuficiente.
   - A afirmação de que os estados populacionais apresentam "trajetória quase estacionária" em torno de 0,5 para $\mu = 0{,}273$ requer, no mínimo, testes de estacionariedade (e.g., ADF ou KPSS), análise de autocorrelação para caracterizar os ciclos observados e intervalos de confiança sobre as médias móveis calculadas.
-  - Sem esses instrumentos, a sugestão de equilíbrio interior permanece especulativa; a trajetória descrita como "quase estacionária" é também compatível com uma trajetória quase aleatória em torno do estado estacionário teórico, hipótese não descartada pelo texto (p. 60).
-  - Alguns resultados reportados como achados — por exemplo, o retorno esperado nulo para as entrantes em torno do qual a série oscila, e o crescimento inicial do retorno da população de entrantes — são, na realidade, decorrência direta da construção do modelo (a condição de entrada zero-lucro e o efeito do período de /warmup/, respectivamente), e não evidência empírica independente; essa distinção deveria ser explicitada para não conferir às figuras um peso inferencial que não possuem (p. 63).
-  - O resultado de que a estratégia de preço-limite não aparenta inibir o ingresso no mercado mesmo para $\mu = 0{,}9$, com efeito pouco distinto do observado para $\mu = 0{,}273$, careceria de uma explicação econômica explícita: não fica claro por que um valor de $\mu$ consideravelmente mais alto não produz um efeito qualitativamente diferente do caso intermediário (p. 61).
+    - Me fazendo claro, não acho que seria esperado que a análise fosse feita a partir de outros testes econométricos na monografia, apenas sinalizar melhor as limitações das conclusões.
+- Alguns resultados reportados como achados — por exemplo, o retorno esperado nulo para as entrantes em torno do qual a série oscila, e o crescimento inicial do retorno da população de entrantes — são, na realidade, decorrência direta da construção do modelo (a condição de entrada zero-lucro e o efeito do período de /warmup/, respectivamente), e não evidência empírica independente; essa distinção deveria ser explicitada para não conferir às figuras um peso inferencial que não possuem (p. 63).
+- O resultado de que a estratégia de preço-limite não aparenta inibir o ingresso no mercado mesmo para $\mu = 0{,}9$, com efeito pouco distinto do observado para $\mu = 0{,}273$, careceria de uma explicação econômica explícita: não fica claro por que um valor de $\mu$ consideravelmente mais alto não produz um efeito qualitativamente diferente do caso intermediário (p. 61).
 - O número de simulações por estrutura de $\mu$ — apenas cinco — é reduzido para um modelo estocástico com 300 agentes por população e 300 períodos.
   - A variabilidade entre as cinco trajetórias é visível nos gráficos, o que sugere que cinco repetições são insuficientes para conclusões sobre o comportamento médio do sistema; não fica claro se essas cinco trajetórias compõem um experimento de Monte Carlo e, em caso afirmativo, qual estatística (média, mediana) deveria sintetizá-las (p. 59).
   - Seria metodologicamente mais rigoroso fazer uma análise de Monte Carlo com número maior de repetições.
   - Também vale ressaltar que algumas análises são feitas considerando o período de /warmup/.
     - Rigorosamente, seria melhor (a) partir de um estado estacionário (o que não é trivial obter), ou (b) descartar os períodos iniciais; uma alternativa mais exigente, mas mais conclusiva, seria introduzir um choque de parâmetro após a estabilização do sistema e observar a resposta (p. 62).
-- A ausência de análise de sensibilidade paramétrica é uma omissão relevante.
-  - Os parâmetros $\alpha = 10$, $\beta = 1$, $c_H = 2$, $c_L = 0{,}5$, $c_E = 1{,}5$, $K = 7$ e $\delta = 1$ são herdados de Milgrom e Roberts (1982) ou definidos arbitrariamente, sem que se discuta como variações nesses valores afetariam os estados populacionais e os retornos médios.
-  - Em particular, $\delta = 1$ implica ausência de desconto temporal, um pressuposto restritivo para um modelo dinâmico que não recebe justificativa.
-  - Dado que $\mu \approx 0{,}273$ é obtido endogenamente a partir dos demais parâmetros, uma análise de sensibilidade (ainda que parcial, fixando alguns parâmetros) sobre o que desloca esse valor aproveitaria o esforço já investido na construção do exemplo numérico, sem exigir instrumental adicional além do já empregado (p. 50).
 - Hipóteses comportamentais sobre entrada e saída de firmas não são esclarecidas no texto, embora condicionem diretamente o significado dos estados populacionais simulados.
   - O tamanho de cada população (300 entrantes, 300 incumbentes divididos entre alto e baixo custo) é mantido fixo ao longo de toda a simulação (Tabela 5, p. 58); não há, portanto, entrada ou saída efetiva de firmas — apenas a alternância de estratégia dentro de uma população de tamanho constante.
   - Não fica claro se uma entrante que, em um dado período, é pareada com uma incumbente e decide não ingressar permanece na população e pode tentar novamente em períodos subsequentes, ou se cada pareamento corresponde a uma firma distinta.
   - Tampouco se discute se uma firma incumbente pode sair do mercado (falência ou saída voluntária) em razão de retornos sistematicamente inferiores, hipótese ausente da regra de revisão de estratégia adotada (comparação do retorno individual com o retorno médio da própria população, e não com o de saída do mercado).
   - Essas omissões são relevantes porque o jogo modela, em princípio, decisões de entrada — um fenômeno de composição populacional — por meio de uma dinâmica que afeta apenas a composição de estratégias dentro de populações de tamanho invariante; a ausência de discussão sobre o que justifica essa simplificação enfraquece a interpretação econômica dos estados estacionários reportados.
+  - Além disso, se uma firma entra e se estabelece no mercado, o número de incumbentes deve-se, necessariamente, se alternar. Isso tem algum impacto sobre o modelo?
+    - De todo modo, essa hipótese deveria ser esclarecida no texto.
 
-** Notas de correção e clareza redacional
+** Notas de correção e clareza textual
 
 - Grafia recorrente "Weilbull" por "Weibull"; "estrada" por "entrada" (p. 25).
 - Numeração duplicada de tabela ("Tabela 5" em p. 54 e p. 58, com defasagem de uma unidade em relação à Lista de Tabelas); tabelas introduzidas sem transição textual (pp. 48, 53, 58).
 - Inconsistências de notação a conferir: variável $x_n$ aparece sem o índice $n$ em ocorrência anterior (p. 26); o expoente/coeficiente de $\mu$ em uma das equações não está claramente identificado (p. 51); $\mu$ aparece, em uma passagem, sem ser substituído por seu valor numérico, dando a entender — talvez involuntariamente — que seria exógeno ou variável no tempo (p. 51).
 - Legibilidade da Figura 1 e dos eixos das Figuras 3–8; sugestão adicional de normalizar a leitura dos gráficos de composição populacional para somar 100% por grupo, facilitando a leitura (p. 60).
 - Transições bruscas entre seções e antes de tabelas, recorrentes ao longo do texto (pp. 26, 39, 41, 57, 64), além das já indicadas no Capítulo 4; em particular, falta no Capítulo 3 um parágrafo inicial que situe a estrutura do capítulo antes de iniciar a exposição (p. 26).
-- Conferir pertinência da menção a Sraffa no Capítulo 3 (p. 26).
-- O termo "primeiro período" é ambíguo entre momentos sequenciais do jogo e períodos temporais distintos, e merece esclarecimento (p. 43).
-- A medida $E = (P_L - P_c)/P_c$ (p. 24) deveria ser explicitamente relacionada — ou distinguida — do conceito usual de markup, para evitar ambiguidade terminológica.
 - A condição $\mathbb{E}(\Pi_E^D) = 0$ que define o $\mu$ crítico aparece apenas em nota de rodapé (p. 58) e deveria estar explicitada no corpo do texto, dado seu papel central na calibração das simulações.
-
-*** Outras imprecisões pontuais de redação e referência
-
-- Passagem pouco clara sobre a interação entre agentes e a função de transição do sistema (p. 18).
-- Uso da conjunção "Todavia" sem pontuação adequada na frase (p. 21).
-- Citação a Semler /et al./ (2022) inserida de forma pouco integrada ao parágrafo (p. 39).
-- O parâmetro $\mu$, apesar de central para todo o argumento, não recebe destaque tipográfico ou textual proporcional à sua importância na primeira vez em que é definido (p. 47).
-- Mudança de assunto abrupta, sem conectivo, antes da apresentação da Tabela 1 ("A variação..."; p. 50).
-- A referência aos "casos 6 e 28" não indica explicitamente a qual tabela pertencem (p. 56).
-- A passagem que conclui pela existência de um equilíbrio /separating/ a partir da diferenciação de preços é pouco clara em relação ao restante do texto (p. 56).
-- A expressão "algo verificado nesta pesquisa" não deixa claro a que resultado específico se refere (p. 57).
-- Ao mencionar o "modelo analítico", seria mais preciso indicar que se trata do exemplo numérico que o exemplifica (p. 57).
-- Ao comentar resultados "por população", não fica claro que a passagem se refere a uma simulação com outro valor de $\mu$ (p. 63).
 - A referência à "Figura 8" não explicita no texto que essa figura corresponde a um valor de $\mu$ distinto das anteriores (p. 63).
-- O parágrafo que retoma a discussão de $\mu = 0{,}9$ está posicionado de forma deslocada em relação ao restante da seção (p. 64).
 
 ** Sugestões de melhoria
 
 1. A análise do ABM carece de instrumentos estatísticos mínimos para sustentar as conclusões sobre equilíbrio interior e comportamento cíclico.
-   1. Incorporar análise econométrica básica dos resultados do ABM: testes de estacionariedade, análise de correlação cruzada entre estados populacionais e análise espectral para caracterização dos ciclos — ou, como alternativa de menor exigência compatível com o nível de graduação, reportar médias, desvios-padrão e número de réplicas de forma sistemática.
+   1. Avaliar se o modelo parte de um Steady State (aparentemente não, dado que o capítulo anterior provou não ser fácil de se obter) e avaliar o descarte do warmup.
    2. Aumentar o número de simulações por estrutura de $\mu$ para ao menos 30, de modo a construir distribuições empíricas dos estados populacionais nos períodos finais e produzir estatísticas descritivas robustas.
-   3. Ampliar o diálogo com a literatura de ABMs em organização industrial, em especial com trabalhos que discutem critérios de validação de modelos baseados em agentes, e justificar explicitamente em que sentido a simulação construída é um ABM e não uma simulação estocástica do jogo evolucionário.
 2. Explicar ao leitor a presença estrutural de autovalores nulos na Jacobiana, decorrente das restrições de soma dos estados populacionais.
 3. Discutir explicitamente as implicações da hipótese $p^l_H = p^l_L = p^l$, que impõe um equilíbrio /pooling/ por construção no modelo analítico — trata-se de uma restrição que favorece o resultado, e não de uma consequência dele.
-   - Introduzir análise de sensibilidade para os parâmetros centrais: $p^l$, $\delta$, $\mu$ e $K$.
 4. Corrigir a contradição entre o pressuposto $0 < \delta < 1$ (p. 44) e o valor $\delta = 1$ efetivamente empregado na Tabela 1 e na simulação.
 5. Reorganizar a exposição do Capítulo 2/3 metodológico: apresentar a revisão da literatura sobre preço-limite antes da discussão de sistemas complexos e TJE, e, dentro desta, introduzir os jogos populacionais e o replicador antes das definições formais de ESS.
 6. Revisar a notação ao longo do trabalho (símbolos não definidos, índices inconsistentes, numeração de tabelas) conforme listado nas notas de correção acima.
 
-** Consideração final
-
-- A monografia apresenta uma contribuição ao articular o arcabouço da Teoria dos Jogos Evolucionários com a problemática do preço-limite em organização industrial.
-- A revisão bibliográfica é sólida e bem estruturada, mas mistura elementos de discussão metodológica que poderiam ser mais bem separados ou sequenciados.
-- O modelo teórico é rigoroso dadas as hipóteses adotadas e os seus limites declarados; os casos 6 e 28 constituem o resultado mais bem fundamentado do trabalho.
-- A principal fragilidade concentra-se na análise dos resultados da simulação, que requer ferramental estatístico mais elaborado para sustentar as inferências apresentadas, e na contradição não resolvida quanto ao valor de $\delta$.
-  - As exigências de testes ADF/KPSS, análise espectral e número de simulações $\geq 30$ situam-se em padrão de mestrado.
-  - São pertinentes como direções de aprimoramento, não como deficiências incapacitantes para o requisito de graduação.
-
 * Questões para a arguição
 
 1. Por que $p^l = 4{,}5$ coincide com $p^D_H$ (preço de duopólio de alto custo) e qual o efeito dessa escolha sobre os casos 6 e 28?
-2. $\delta = 1$ na Tabela 1 e na simulação é deliberado, e como se concilia com o pressuposto $0 < \delta < 1$ estabelecido no modelo (p. 44)?
-3. Qual a origem formal do autovalor nulo recorrente na Jacobiana, presente nos 32 casos analisados?
-4. O equilíbrio /pooling/ do caso 28 sobrevive à relaxação da hipótese $p^l_H = p^l_L$? Em caso afirmativo, sob quais condições?
-5. Por que a opção por não investigar os equilíbrios interiores no modelo analítico (nota de rodapé, p. 56), se é justamente aí que a simulação do Capítulo 5 indica a existência de estados estacionários?
-6. Em que sentido a simulação do Capítulo 5 constitui um /agent based model/, e não uma simulação numérica estocástica do mesmo jogo evolucionário? Que elemento do modelo confere heterogeneidade ou comportamento emergente além da aleatoriedade nas probabilidades de pareamento e revisão?
-7. O número de cinco simulações por valor de $\mu$ pretende compor um experimento de Monte Carlo? Que estatística (média, mediana) deveria sintetizá-las?
-8. Dado que $\mu \approx 0{,}273$ é endógeno aos demais parâmetros do exemplo numérico, quais parâmetros mais deslocariam esse valor crítico, e o intervalo entre 0,2727 e 0,2731 é uma propriedade do modelo ou um artefato da parametrização escolhida?
-9. Por que o efeito da estratégia de preço-limite sobre a entrada para $\mu = 0{,}9$ não difere qualitativamente do observado para $\mu = 0{,}273$, e que intuição econômica explicaria essa insensibilidade?
-10. O que levaria a uma inversão das desigualdades $a_3 > a_4$ e $a_9 > a_10$, e essa inversão teria significado econômico relevante para a existência do equilíbrio com preço-limite?
+   1. Como a ancoragem do preço-limite exclusivamente na estrutura de alto custo alteraria a estabilidade do equilíbrio pooling reportado no caso 28?
+2. Por que o efeito da estratégia de preço-limite sobre a entrada para $\mu = 0{,}9$ não difere qualitativamente do observado para $\mu = 0{,}273$, e que intuição econômica explicaria essa insensibilidade?
+3. O que levaria a uma inversão das desigualdades $a_3 > a_4$ e $a_9 > a_10$, e essa inversão teria significado econômico relevante para a existência do equilíbrio com preço-limite?
+4. O equilíbrio /pooling/ do caso 28 sobrevive à relaxamento da hipótese $p^l_H = p^l_L$? Em caso afirmativo, sob quais condições?
+5. Em que sentido a simulação do Capítulo 5 constitui um /agent based model/, e não uma simulação numérica estocástica do mesmo jogo evolucionário? Que elemento do modelo confere heterogeneidade ou comportamento emergente além da aleatoriedade nas probabilidades de pareamento e revisão?
+6. Dado que $\mu \approx 0{,}273$ é endógeno aos demais parâmetros do exemplo numérico, quais parâmetros mais deslocariam esse valor crítico, e o intervalo entre 0,2727 e 0,2731 é uma propriedade do modelo ou um artefato da parametrização escolhida?
+7. A presença de autovalores nulos pode da matriz jacobiana pode ser consequência de se anular o fator de desconto temporal nas simulações?
+8. O modelo avalia a entrada de firmas sem alterar o tamanho absoluto das populações em interação. Como essa hipótese condiciona a interpretação econômica dos estados estacionários encontrados?
 
 * References :ignore:
 
