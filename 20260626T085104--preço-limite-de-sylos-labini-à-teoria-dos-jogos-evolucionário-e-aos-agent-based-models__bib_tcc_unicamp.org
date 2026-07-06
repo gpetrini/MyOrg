@@ -1,3 +1,4 @@
+#+options: toc:nil
 #+title:      Preço-Limite: De Sylos-Labini à Teoria Dos Jogos Evolucionário e Aos Agent Based Models
 #+date:       [2026-06-26 sex 08:51]
 #+filetags:   :bib:tcc:unicamp:
