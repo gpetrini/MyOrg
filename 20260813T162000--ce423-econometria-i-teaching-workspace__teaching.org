@@ -1,0 +1,41 @@
+#+title:      CE423 Econometria I — Teaching Workspace
+#+date:       [2026-08-13 qua 16:20]
+#+filetags:   :teaching:
+#+identifier: 20260813T162000
+#+OPTIONS: num:nil ^:{} toc:nil
+
+Workspace de ensino para CE423 — Econometria I (Unicamp, 2024, Profa. Ballini).
+Gerado pela skill =/teach=. Raiz: [[file:~/Org/teaching/ce423-econometria/][teaching/ce423-econometria/]]
+Assets compartilhados: [[file:~/Org/teaching/assets/][teaching/assets/]] (=../../assets/= nas lições)
+
+* Missão
+
+[[file:~/Org/teaching/ce423-econometria/MISSION.md][MISSION.md]] — Construir repertório didático (explicações alternativas +
+exemplos R + mapa de dependências) para apoiar o ensino como colaborador.
+
+* Gestão
+
+- [[file:~/Org/teaching/ce423-econometria/RESOURCES.md][RESOURCES.md]] — Fontes curadas (Gujarati, Wooldridge, Hanck et al., Ben Lambert)
+- [[file:~/Org/teaching/ce423-econometria/NOTES.md][NOTES.md]] — Mapa de dependências da ementa + estado da sessão
+
+* Registros de aprendizado
+
+- [[file:~/Org/teaching/ce423-econometria/learning-records/0001-ponto-de-partida.md][LR-0001]] — Papel de professor/colaborador (2026-08-13)
+
+* Reference documents
+
+- [[file:~/Org/teaching/ce423-econometria/reference/00-mapa-da-ementa.html][Mapa da ementa]] — Cheat sheet com fluxo de módulos, testes diagnósticos e comandos R
+
+* Lições (9 no total)
+
+| #    | Arquivo                                  | Tópico da ementa                              |
+|------+------------------------------------------+-----------------------------------------------|
+| L-01 | [[file:~/Org/teaching/ce423-econometria/lessons/0001-intuicao-geometrica-mqo.html][0001-intuicao-geometrica-mqo]]             | MQO: projeção ortogonal, X'û=0, geometria     |
+| L-02 | [[file:~/Org/teaching/ce423-econometria/lessons/0002-decomposicao-anova-r2.html][0002-decomposicao-anova-r2]]               | ANOVA, R², IC vs IP                           |
+| L-03 | [[file:~/Org/teaching/ce423-econometria/lessons/0003-regressao-multipla-ceteris-paribus.html][0003-regressao-multipla-ceteris-paribus]]  | Reg. Múltipla, OVB, Frisch-Waugh, R² adj.    |
+| L-04 | [[file:~/Org/teaching/ce423-econometria/lessons/0004-testes-hipoteses-t-f-wald.html][0004-testes-hipoteses-t-f-wald]]           | t-test, F-test, combinações lineares, p-valor |
+| L-05 | [[file:~/Org/teaching/ce423-econometria/lessons/0005-dummies-poligonal-chow.html][0005-dummies-poligonal-chow]]              | Dummies, poligonal, Chow test                 |
+| L-06 | [[file:~/Org/teaching/ce423-econometria/lessons/0006-multicolinearidade.html][0006-multicolinearidade]]                  | Multicolinearidade, VIF, diagnóstico          |
+| L-07 | [[file:~/Org/teaching/ce423-econometria/lessons/0007-especificacao-modelo.html][0007-especificacao-modelo]]                | Especificação, RESET, AIC/BIC                 |
+| L-08 | [[file:~/Org/teaching/ce423-econometria/lessons/0008-heterocedasticidade.html][0008-heterocedasticidade]]                 | Heterocedasticidade, BP, White, MQP, HC       |
+| L-09 | [[file:~/Org/teaching/ce423-econometria/lessons/0009-autocorrelacao-mqg.html][0009-autocorrelacao-mqg]]                  | Autocorrelação, DW, BG, MQG, Newey-West       |

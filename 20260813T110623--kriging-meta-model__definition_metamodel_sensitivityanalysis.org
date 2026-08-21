@@ -1,0 +1,169 @@
+#+title:      Kriging Meta-Model
+#+date:       [2026-08-13 qua 11:06]
+#+SUBTITLE: Definition
+#+filetags:   :definition:metamodel:sensitivityanalysis:wtr_sa:
+#+identifier: 20260813T110623
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil
+
+* O que é Kriging?
+
+Kriging (também chamado de /Gaussian Process Regression/) é um método de
+interpolação estatística originalmente desenvolvido na geoestatística por
+Danie Krige (1951) e formalizado por Georges Matheron.
+
+A ideia central é tratar a função desconhecida $f(\mathbf{x})$ como uma
+realização de um processo gaussiano:
+
+$$f(\mathbf{x}) \sim \mathcal{GP}\bigl(\mu(\mathbf{x}),\; k(\mathbf{x}, \mathbf{x}')\bigr)$$
+
+onde:
+- $\mu(\mathbf{x})$ é a função de tendência (média, polinômio de 1ª ordem, etc.)
+- $k(\mathbf{x}, \mathbf{x}')$ é a função de covariância (kernel), que codifica
+  a suposição de que pontos próximos no espaço de parâmetros têm respostas
+  similares.
+
+** Por que usar Kriging num ABM?
+
+Modelos agent-based como o [[denote:20250203T180327][Keynes meets Schumpeter]] são computacionalmente
+caros: uma única corrida pode levar minutos, e um [[denote:20250206T192046][Design of Experiment]] com
+dezenas de pontos e múltiplos replicates pode levar horas.
+
+Kriging resolve isso construindo um *meta-modelo*: um substituto analítico
+da simulação. Em vez de rodar o ABM com cada configuração de parâmetros
+imaginável, ajusta-se o Kriging sobre um conjunto de design ($N$ pontos
+cuidadosamente escolhidos) e usa-se esse meta-modelo para:
+
+1. Interpolar a superfície de resposta para qualquer combinação de parâmetros.
+2. Calcular índices de [[denote:20260813T110700][Sobol]] sem precisar de novas corridas.
+3. Localizar máximos e mínimos globais da superfície.
+
+No repositório ABM-WTR isso é feito em [[file:~/LSD/Work/Made/ABM-WTR/R/KS-kriging-sobol-SA.R][KS-kriging-sobol-SA.R]] via a
+função =kriging.model.lsd()= do pacote R =LSDsensitivity=.
+
+* Anatomia do Kriging
+
+** Função de tendência (trend model)
+
+Define a média global $\mu(\mathbf{x})$. As opções no script são:
+
+| Código | Modelo     | Equação                               |
+|--------+------------+---------------------------------------|
+|      1 | Constante  | $\mu = \beta_0$                       |
+|      2 | Linear     | $\mu = \beta_0 + \beta_1 x_1 + \ldots$ |
+|      0 | Auto       | Seleção por critério de validação     |
+
+No ABM-WTR, =trendModel <- 0= (automático).
+
+** Função de covariância (kernel)
+
+O kernel $k(\mathbf{x}, \mathbf{x}')$ controla quão suave a superfície
+interpolada será. As opções disponíveis:
+
+| Código | Kernel           | Suavidade        |
+|--------+------------------+------------------|
+|      1 | Matérn 5/2       | $C^2$            |
+|      2 | Matérn 3/2       | $C^1$            |
+|      3 | Gaussiano        | $C^\infty$       |
+|      4 | Exponencial      | $C^0$ (rugoso)   |
+|      5 | Power exp.       | Variável         |
+
+No ABM-WTR, =covModel <- 0= (automático). O script compara todos e escolhe
+pelo critério Q² (leave-one-out cross-validation).
+
+** Predição
+
+Dado um novo ponto $\mathbf{x}^*$, o Kriging fornece a distribuição preditiva:
+
+$$p\bigl(f(\mathbf{x}^*) \mid \mathbf{X}, \mathbf{y}\bigr) = \mathcal{N}\bigl(\hat{\mu}(\mathbf{x}^*),\; \hat{\sigma}^2(\mathbf{x}^*)\bigr)$$
+
+A incerteza $\hat{\sigma}^2$ é máxima onde há poucos pontos de design
+próximos — um indicador interno de onde a superfície é menos confiável.
+
+* Critério de qualidade: Q²
+
+O Q² (leave-one-out cross-validation) é a métrica central para julgar
+se a superfície pode ser lida:
+
+$$Q^2 = 1 - \frac{\sum_i (y_i - \hat{y}_{-i})^2}{\sum_i (y_i - \bar{y})^2}$$
+
+onde $\hat{y}_{-i}$ é a predição para o ponto $i$ com ele retirado do ajuste.
+
+#+begin_quote
+No ABM-WTR (=KS-kriging-sobol-SA.R:655-656=):
+- Q² ≥ 0.9 → *"read"* — quantidades podem ser lidas da superfície
+- 0.7 ≤ Q² < 0.9 → *"rank only"* — apenas ordenação é confiável
+- Q² < 0.7 → *"do not read"*
+#+end_quote
+
+** Diagnóstico de ruído vs. design points
+
+Quando Q² é baixo, há duas causas distintas com remédios opostos
+(ver [[file:~/LSD/Work/Made/ABM-WTR/R/KS-doe-design-diagnostic.R][KS-doe-design-diagnostic.R]]):
+
+$$\text{noise share} = \frac{\mathbb{E}[SD^2] / R}{\text{Var(Mean)}}$$
+
+- *Noise share alto* → o Kriging está interpolando erro de Monte Carlo.
+  Remédio: mais replicatas ($R$).
+- *Noise share baixo* → a resposta tem estrutura que o design não resolve.
+  Remédio: mais pontos de design ou de validação.
+
+* Pipeline no ABM-WTR
+
+#+begin_example
+Scen1.lsd          → doe-config derivada (sem flags de agente)
+       ↓
+NOLH Sampling (LSD GUI) → 33 pontos de design + out-of-sample
+       ↓
+Parallel Monte Carlo batch (múltiplos .res.gz por ponto)
+       ↓
+read.doe.lsd()    → lê e agrega os .res.gz (cache .RData)
+       ↓
+kriging.model.lsd() → ajusta e seleciona meta-modelo
+       ↓
+sobol.decomposition.lsd() → decompõe variância via [[denote:20260813T110700][Sobol]]
+       ↓
+response.surface.lsd() → superfícies 2D e 3D
+#+end_example
+
+** Variáveis de resposta no experimento sa-effprem
+
+O experimento atual analisa como um choque no prêmio de eficiência
+afeta as seguintes variáveis (=outVars= em =KS-kriging-sobol-SA.R:103-108=):
+
+| Variável   | Significado                           |
+|------------+---------------------------------------|
+| =dGDP=     | Crescimento do PIB                    |
+| =dA=       | Crescimento da produtividade          |
+| =dAb=      | dA com clipping ±100% (para salários) |
+| =U=        | Taxa de desemprego                    |
+| =dCPI=     | Inflação                              |
+| =Q2u=      | Capacidade ociosa (setor 2)           |
+| =GDP_sd=   | Volatilidade do PIB (desvio-padrão)   |
+| =cris_llh= | Probabilidade de crise (dGDP < −3%)   |
+
+* Paralelismo
+
+O script implementa um esquema de dois estágios (=KS-kriging-sobol-SA.R:161-211=):
+
+1. *Fase 1*: uma variável, com leitura paralelizada em =nCoresRead= workers,
+   para popular o cache =.RData=.
+2. *Fase 2*: as demais variáveis em paralelo com =nCoresFit= workers,
+   contra o cache quente (cada worker só carrega o cache + ajusta).
+
+Isso é necessário porque leituras concorrentes do cold cache causariam
+race conditions (múltiplos processos tentando escrever o mesmo =.RData=).
+
+* Links relacionados
+
+- [[denote:20260813T110700][Sobol Decomposition]] — decompõe a variância da superfície Kriging
+- [[denote:20250202T114420][Model Validation]] — validação de modelos em geral
+- [[denote:20250206T192046][Design of Experiment]] — como os pontos de design são gerados (NOLH)
+- [[denote:20250203T183931][Sensitivity Analysis]] — análise de sensibilidade em geral
+- [[denote:20250203T181801][Monte Carlo Simulations]] — as corridas que alimentam o meta-modelo
+- [[denote:20250202T114248][Agent Based Models]] — o modelo que está sendo emulado
+- [[denote:20250203T180403][Kriging Meta Model]] — placeholder anterior (pode ser arquivado)
+
+* Referências
+
+#+print_bibliography:

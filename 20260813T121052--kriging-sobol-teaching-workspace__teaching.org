@@ -1,0 +1,31 @@
+#+title:      Kriging & Sobol — Teaching Workspace
+#+date:       [2026-08-13 qua 12:10]
+#+filetags:   :teaching:
+#+identifier: 20260813T121052
+#+OPTIONS: num:nil ^:{} toc:nil
+
+Workspace de ensino sobre Kriging e Sobol no contexto do ABM-WTR.
+Gerado pela skill =/teach=. Raiz: [[file:~/Org/teaching/kriging-sobol/][teaching/kriging-sobol/]]
+
+* Missão
+
+[[file:~/Org/teaching/kriging-sobol/MISSION.md][MISSION.md]] — Ser capaz de interpretar e defender os resultados do pipeline
+=KS-kriging-sobol-SA.R= para orientadores e coautores.
+
+* Gestão
+
+- [[file:~/Org/teaching/kriging-sobol/RESOURCES.md][RESOURCES.md]] — Fontes primárias curadas
+- [[file:~/Org/teaching/kriging-sobol/NOTES.md][NOTES.md]] — Preferências e estado da sessão
+
+* Registros de aprendizado
+
+- [[file:~/Org/teaching/kriging-sobol/learning-records/0001-ponto-de-partida.md][LR-0001]] — Ponto de partida: contexto e background (2026-08-13)
+
+* Lições
+
+- [[file:~/Org/teaching/kriging-sobol/lessons/0001-o-que-e-um-meta-modelo.html][L-0001]] — O que é um meta-modelo? (meta-modelos, Q², pipeline)
+
+* Notas Denote relacionadas
+
+- [[denote:20260813T110623][Kriging Meta-Model]] — definição completa com pipeline ABM-WTR
+- [[denote:20260813T110700][Sobol Decomposition]] — índice total, ANOVA, leitura do barplot

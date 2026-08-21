@@ -5,5 +5,7 @@
 #+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
 #+OPTIONS: num:nil ^:{} toc:nil
 
+→ Nota completa: [[denote:20260813T110623][Kriging Meta-Model (definition)]]
+
 - [[denote:20250202T114420][Model Validation]]
 - [[denote:20250206T192046][Design of Experiment]]

@@ -1456,3 +1456,11 @@ Fixando no cenário com a rampa linear (por ser o mais simples com WTR).
 - Efeito negativo sobre inovação
 - Efeito sobre produtividade se estabiliza
 - Efeito quase neutro sobre concentração de mercado
+
+* Reunião de Equipe [2026-08-07 Fri]
+
+- Made irá cobrir custos com a ANPEC
+- Distribuições de probabilidade do ABM podem variar a depender de gênero
+  - Pensar em como tratar gênero no modelo
+
+** Taxação mínima sobre riqueza: Efeito sobre a arrecação e distribuição de renda

@@ -1,0 +1,156 @@
+#+title:      Sobol Decomposition
+#+date:       [2026-08-13 qua 11:07]
+#+SUBTITLE: Definition
+#+filetags:   :definition:sensitivityanalysis:metamodel:wtr_sa:
+#+identifier: 20260813T110700
+#+BIBLIOGRAPHY: ~/Org/zotero_refs.bib
+#+OPTIONS: num:nil ^:{} toc:nil
+
+* O que é Análise de Sensibilidade de Sobol?
+
+A decomposição de Sobol é um método de *análise de sensibilidade global*
+que atribui a variância da saída do modelo a cada parâmetro de entrada e
+às suas interações.
+
+Diferentemente de análises locais (que variam um parâmetro por vez em torno
+de um ponto fixo), Sobol integra o efeito de cada parâmetro ao longo de
+*todo o espaço de parâmetros* — portanto mede importância global, não local.
+
+* Decomposição ANOVA da variância
+
+Seja $Y = f(\mathbf{x}) = f(x_1, \ldots, x_k)$ a saída do modelo. A
+decomposição ANOVA de Hoeffding-Sobol escreve:
+
+$$\text{Var}(Y) = \sum_i V_i + \sum_{i<j} V_{ij} + \ldots + V_{1\ldots k}$$
+
+onde:
+- $V_i = \text{Var}\bigl(\mathbb{E}[Y \mid x_i]\bigr)$ — efeito de primeira ordem de $x_i$
+- $V_{ij} = \text{Var}\bigl(\mathbb{E}[Y \mid x_i, x_j]\bigr) - V_i - V_j$ — interação pura entre $x_i$ e $x_j$
+
+** Índices de Sobol
+
+Os índices são normalizados pela variância total:
+
+| Índice | Fórmula | Interpretação |
+|--------+---------+---------------|
+| Primeira ordem | $S_i = V_i / \text{Var}(Y)$ | Contribuição direta de $x_i$ |
+| Total | $S_i^T = 1 - \text{Var}(\mathbb{E}[Y \mid \mathbf{x}_{-i}]) / \text{Var}(Y)$ | $x_i$ + todas as suas interações |
+
+A diferença $S_i^T - S_i$ é a contribuição de $x_i$ via interações com
+outros parâmetros.
+
+* Como Sobol e Kriging se conectam?
+
+No ABM-WTR, o Sobol é calculado *sobre a superfície Kriging*, não diretamente
+sobre as corridas de simulação. Isso é possível porque:
+
+1. O [[denote:20260813T110623][Kriging]] fornece uma função analítica $\hat{f}(\mathbf{x})$ que pode ser
+   avaliada milhares de vezes em frações de segundo.
+2. =sobol.decomposition.lsd()= amostra =saSamples = 1000= pontos do
+   meta-modelo para estimar os integrais de Sobol via Monte Carlo.
+
+#+begin_quote
+*Implicação crítica*: os índices de Sobol decompõem a variância da
+*superfície ajustada*, não dos dados. Um meta-modelo com Q² baixo ainda
+produz índices que somam 1 — mas eles descrevem o ruído interpolado,
+não o modelo verdadeiro. A tabela de qualidade Q² deve ser lida antes
+de qualquer índice de Sobol.
+#+end_quote
+
+* O que o índice total mede e por que importa
+
+Sob parametrização não-linear (que é o caso num ABM), a quantidade
+reportável é o *índice total*, não o de primeira ordem (ver comentário em
+=KS-kriging-sobol-SA.R:688-691=):
+
+$$S_i^T = S_i + \sum_{j \neq i} S_{ij} + \ldots$$
+
+O índice total responde à pergunta: "Se eu fixar $x_i$ no seu valor ótimo,
+qual fração da variância residual consigo eliminar?"
+
+A diferença $S_i^T - S_i$ mede a *importância das interações*. Se ela for
+grande, a resposta do modelo a $x_i$ muda dependendo dos valores dos outros
+parâmetros — o que implica que calibrar $x_i$ isoladamente pode ser
+enganoso.
+
+* Implementação no ABM-WTR
+
+No script [[file:~/LSD/Work/Made/ABM-WTR/R/KS-kriging-sobol-SA.R][KS-kriging-sobol-SA.R]], a decomposição é feita por variável de
+resposta:
+
+#+begin_src R
+SA <- sobol.decomposition.lsd(data, model, sa.samp = saSamples)
+#+end_src
+
+O objeto =SA= contém:
+- =SA$sa= — matriz com colunas "main effects" e "interactions" por fator
+- =SA$topEffect= — índices dos 3 fatores com maior efeito total
+- =SA$metamodel$s= — os =saSamples= valores amostrados
+
+** Tabela de saída: o que ler
+
+O script produz uma tabela por variável de resposta:
+
+| Coluna       | O que é                                  |
+|--------------+------------------------------------------|
+| main         | Índice de primeira ordem $S_i$           |
+| interaction  | Contribuição de interação $S_i^T - S_i$  |
+| total        | Índice total $S_i^T$                     |
+
+E um gráfico agregado comparando *índices totais* entre todas as variáveis
+de resposta (=KS-kriging-sobol-SA.R:691-712=) — este é o gráfico que
+permite dizer qual fator mais importa para a resposta ao choque WTR.
+
+* Barra de Sobol total: como interpretar
+
+O gráfico de barras agrupadas (total Sobol index) no PDF do ABM-WTR deve
+ser lido assim:
+
+1. *Altura total da barra* = importância de um fator para aquela variável.
+2. *Parte branca* = efeito direto (sem interação).
+3. *Parte cinza* = importância via interações.
+4. Se barras cinzas dominam: os parâmetros interagem fortemente — modelos
+   lineares de sensibilidade seriam enganosos.
+5. Comparar alturas *entre variáveis*: o mesmo fator pode ser dominante
+   para =dGDP= e irrelevante para =U=.
+
+* Fatores no experimento sa-effprem
+
+O arquivo =.sa= define o "box" — o espaço de parâmetros que o Sobol integra.
+Os fatores são os parâmetros do choque de prêmio de eficiência (=effPrem=)
+e variáveis associadas ao regime WTR. Os índices são interpretáveis apenas
+*dentro desse box*: um fator com $S_i^T = 0.6$ significa que é responsável
+por 60% da variância da superfície *naquela faixa específica*.
+
+#+begin_quote
+Esta é a razão pela qual o arquivo =.sa= viaja junto com os resultados
+no diretório de snapshot: sem ele, os índices são números sem contexto.
+(=KS-kriging-sobol-SA.R:278-284=)
+#+end_quote
+
+* Relação com Elementary Effects (Morris)
+
+O [[file:~/LSD/Work/Made/ABM-WTR/R/KS-elementary-effects-SA.R][KS-elementary-effects-SA.R]] implementa o método de Morris, que é uma
+análise de sensibilidade *screening* mais barata.
+
+| Aspecto        | Morris (Elementary Effects) | Sobol          |
+|----------------+-----------------------------+----------------|
+| Custo          | $r(k+1)$ corridas           | Requer meta-modelo |
+| Resultado      | Ranking de importância      | Decomposição exata |
+| Interações     | Indicadas (μ* vs σ)         | Quantificadas  |
+| Uso típico     | Triagem inicial             | Análise final  |
+
+No ABM-WTR o fluxo é: Morris primeiro (triagem barata) → Sobol via Kriging
+(análise completa após confirmação).
+
+* Links relacionados
+
+- [[denote:20260813T110623][Kriging Meta-Model]] — o meta-modelo sobre o qual Sobol é calculado
+- [[denote:20250206T192046][Design of Experiment]] — o design NOLH que alimenta o Kriging
+- [[denote:20250203T183931][Sensitivity Analysis]] — sensibilidade em geral
+- [[denote:20250203T181801][Monte Carlo Simulations]] — corridas que geram os dados do meta-modelo
+- [[denote:20250202T114420][Model Validation]] — validação da qualidade do meta-modelo (Q²)
+
+* Referências
+
+#+print_bibliography:

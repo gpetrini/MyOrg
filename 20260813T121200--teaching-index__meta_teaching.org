@@ -1,0 +1,27 @@
+#+title:      Teaching Index
+#+date:       [2026-08-13 qua 12:12]
+#+filetags:   :meta:teaching:
+#+identifier: 20260813T121200
+#+OPTIONS: num:nil ^:{} toc:nil
+
+Índice geral de todos os workspaces de ensino criados pela skill =/teach=.
+O dblock abaixo se atualiza automaticamente com =C-u C-c C-x C-u=
+(=org-dblock-update= com prefixo) sempre que um novo workspace for adicionado.
+
+*Convenção:* cada workspace de teaching deve ter um arquivo-índice em =~/Org/=
+com a tag =:teaching:= no =#+filetags=. Ele aparece aqui automaticamente na
+próxima atualização do dblock.
+
+* Workspaces ativos
+
+#+BEGIN: denote-links :regexp "workspace__teaching" :sort-by-component title :reverse-sort nil :id-only nil :include-date t
+#+END:
+
+* Como adicionar um novo workspace
+
+1. Crie o workspace em =~/Org/teaching/<tópico>/= com a skill =/teach=.
+2. Crie um arquivo-índice em =~/Org/= com:
+   - Nome no formato Denote: =TIMESTAMP--titulo__teaching.org=
+   - =#+filetags: :teaching:= no cabeçalho
+3. Abra este arquivo no Emacs e pressione =C-u C-c C-x C-u= para
+   regenerar o dblock acima.
