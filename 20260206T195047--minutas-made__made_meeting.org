@@ -1,6 +1,5 @@
 #+options: toc:nil
 #+title:      Minutas MADE
-#+date:       [2026-02-06 Fri 19:50]
 #+filetags:   :made:meeting:
 #+identifier: 20260206T195047
 #+bibliography: ~/Org/zotero_refs.bib
@@ -1268,7 +1267,7 @@ L2 & -18.9411 & -17.2489\\
   - Q: Qual é a hipótese de vocês sobre uma aparente tendência de queda no multiplicador?
   - Q: Seria TVC-VAR um caso especial de local-projections?
 
-* HourInt: primeiros resultados de mudanças na produtividade
+* HourInt: primeiros resultados de mudanças na produtividade :noexport:
 
 ** Decisões de implementação
 
@@ -1457,10 +1456,207 @@ Fixando no cenário com a rampa linear (por ser o mais simples com WTR).
 - Efeito sobre produtividade se estabiliza
 - Efeito quase neutro sobre concentração de mercado
 
-* Reunião de Equipe [2026-08-07 Fri]
+* Reunião de Equipe [2026-08-07 Fri] :noexport:
 
 - Made irá cobrir custos com a ANPEC
 - Distribuições de probabilidade do ABM podem variar a depender de gênero
   - Pensar em como tratar gênero no modelo
 
 ** Taxação mínima sobre riqueza: Efeito sobre a arrecação e distribuição de renda
+
+* HourInt/LSD9: quebra de resultados [2026-08-26 Wed 14:00-16:00]
+
+** O que foi feito
+
+
+*** Mudanças de especificação
+
+- Substituída a função de probabilidade do eforço (precisamos dar outro nome) por uma mais genérica
+  - Aceita 2 parâmetros (média e desvio-padrão) e os suportes
+  - É uma derivação da distribuição beta
+    - Não reproduz exatamente a distribuição de Pareto, mas é suficientemente próxima para nossos objetivos
+    - O prêmio pode ser negativo, mas a produtividade efetiva não.
+    - Cobre uniforme, unimodal de cada lado do zero, monótona (a exponencial do exemplo) e bimodal, sem trocar de família entre as configurações.
+    - Especificação e derivação completas em [[file:~/LSD9/Work/Made/ABM-WTR/docs/Equations.org::*Current specification: the affine Beta][docs/Equations.org, seção "Current specification: the affine Beta"]], compilada em [[file:~/LSD9/Work/Made/ABM-WTR/docs/Equations.pdf][docs/Equations.pdf]].
+      - Gráficos das diferentes configurações: [[file:~/LSD9/Work/Made/ABM-WTR/docs/figs/beta-premium-shapes.pdf][classes de forma]], [[file:~/LSD9/Work/Made/ABM-WTR/docs/figs/beta-premium-location-scale.pdf][média e dispersão]] e [[file:./pdfs/effprem_densities.pdf][efeito dos suportes]].
+    - A especificação é uma Beta afim: sorteia-se $X \sim \text{Beta}(a,b)$ no intervalo unitário e mapeia-se para o suporte desejado,
+      \[
+      \text{effPrem} = \text{effPremLo} + (\text{effPremHi} - \text{effPremLo})\, X .
+      \]
+      Com a parametrização média-precisão $a = \mu\kappa$, $b = (1-\mu)\kappa$, tem-se
+      \[
+      \mathbb{E}[X] = \mu, \qquad \operatorname{Var}[X] = \frac{\mu(1-\mu)}{\kappa + 1},
+      \]
+      e portanto $\mathbb{E}[\text{effPrem}] = \text{effPremLo} + (\text{effPremHi} - \text{effPremLo})\,\mu$.
+      O prêmio pode ser negativo quando $\text{effPremLo} < 0$, mas a produtividade efetiva $(1 + \text{effPrem})$ permanece positiva desde que $\text{effPremLo} > -1$.
+    - A Beta é parametrizada por $a = \mu\kappa$ e $b = (1-\mu)\kappa$, e não por $(a,b)$, porque variar $a$ sozinho muda média, variância e classe de forma ao mesmo tempo.
+      - Implicação para o desenho do NOLH: sob $(a,b)$ os fatores não são separadamente interpretáveis, porque mover uma coordenada desloca ao mesmo tempo a média, a dispersão e a classe de forma, e nenhuma resposta da superfície pode ser atribuída a um fator isolado. Sob $(\mu,\kappa)$ eles voltam a ser fatores genuínos, com $\mu$ movendo só a média e $\kappa$ só a dispersão a média fixa, e a classe de forma passa a ser função conhecida dos dois através das fronteiras $a>1$, $b>1$.
+      - Consequência prática, dado que a sensibilidade mostrou que os suportes importam mais que a massa: o desenho deve gastar mais níveis em $(\text{effPremLo}, \text{effPremHi})$ e menos em $(\mu,\kappa)$, e não o contrário. Um NOLH que trate os quatro como igualmente informativos desperdiça corridas nos dois fatores que menos movem a resposta.
+- Feito teste de sensibilidade sobre a função de distribuição
+  - De modo geral, os suportes das ditribuições são mais relevantes do que a média e dispersão da massa
+    - Isso é bom uma vez que não temos evidência ainda sobre como essa distribuição é na realidade, mas podemos encontrar evidência de algumas estatísticas pontuais e usar isso como informação dos extremos
+  - Análise de sensibilidade da duração e intensidade da redução da jornada não foram muito conclusivas
+    - Superfície de resposta entre taxa de crescimento do PIB (e da produtividade) quase sempre planos
+    - De todo modo, esses resultados foram depreciados com a migração para o LSD9
+
+*** Novidades técnicas
+
+- Distribuído a release equivalente ao modelo com jornada de horas
+  - Está no github privado e irei migrar para o github público do Made.
+  - Como isso quebra alguns scripts meus, deixei para depois
+- Criado suite de comparação entre cenários/configurações: [[file:pdfs/mc98-wtrvsbau-after.pdf][Exemplo]]
+  - Agora conseguimos avaliar (semente a semente) diferentes configurações (ou diferentes cenários) e conseguir caracterizar as diferenças de forma mais rápida e estatísticamente robusta
+  - Isso está facilitando alguns testes para saber quando alguma mudança não surte efeito, quando tem efeito ou se são necessárias mais repetições de Monte Carlo
+  - ADD link para o exercício de comparação
+  - Inclusive, alguns dos testes que estou fazendo agora foram facilitados por essa ferramenta
+- Migração para o LSD9
+  - Com a maioria dos resultados a mão, parti para a migração para o LSD9
+    - Para além de algumas mudanças mais técnicas, o principal efeito para o modelo é que todas as funções que eram escritas em C++ puro passaram a ser controladas pelo scheduler do LSD
+    - Isso teve efeito principalmente para as funções que são chamadas mais de uma vez por um mesmo agente dentro de um mesmo timestep (este era o caso do =move_worker=)
+    - Como consequência, os resultados que nós tinhamos em relação à WTR eram artifícios computacionais (explico na seção seguinte) e não canais econômicos
+      - Resumindo, não temos mais efeito de WTR sobre a economia e este resultado faz mais sentido com o fechamento do modelo
+  - Correções sincronizadas ao upstream
+    - O pessoal de Sant'Anna também fez uma série de correções ao modelo que eu não tinha percebido
+      - O ordenamento para demissão de um trabalhador passa a considerar o trabalho efetivamente pago com defasagem invés do salário pretendido corrente
+        - Isso é mais coerente com uma heurística simples e não teve efeito significativo sobre o modelo
+** Estado dos resultados
+
+*** Canal de efeito artificial (computacional e não econômico)
+
+- O que estava ocorrendo no LSD8: [[file:pdfs/20260813T185756--ordrand-fireorder-asran-mc-mean__aggr.pdf][Resultados anteriores]]
+  - No modelo, as informações dos trabalhadores do setor de bens de consumo são atualizadas por uma função (antes) em =C++= que atualizava *somente* quando esses trabalhadores eram movidos de uma vintage para outra.
+  - Esse efeito se dava por conta dessa função não estar sendo gerenciada pelo scheduler do LSD. Sendo assim, mesmo que uma informação do trabalhador fosse alterada (exemplo, número de horas trabalhadas), essa informação só era atualizada se esse trabalhador fosse movido para outra vintage. Caso fosse mantido na mesma vintage, a informação continuava defasada.
+    - A informação de horas trabalhadas que estava com defeito era as horas trabalhadas na vintage, afetando, portanto, a quantidade produzida. O salário recebido (e pago) para este trabalhador era consistente com a duração da jornada.
+    - Por existir um período de transição, existia um tempo até que essas defasagens fossem sincronizadas corretamente e isso deixasse de ser um defeito do modelo.
+    - No entanto, esse erro transitório gerava efeitos persistentes sobre o modelo e era isso que explicava o impacto da WTR.
+  - Mecanismo: coexistência de firmas do setor de bens de consumo (bens de capital não tinham esse problema) cujas vintages estavam operando com jornadas distintas.
+    - Isso gerava uma heterogeneidade não intensional no modelo (podemos tirar alguma inspiração disso adiante) que, por sua vez, gerava alguma vantagem comparativa
+      - Firmas cujas vintages estavam operando com a jornada antiga (i.e. mais longa) possuiam uma vantagem produtiva, produzindo mais, aumentando receita, investindo mais em P&D e inovando mais.
+      - Ao mesmo tempo, as firmas que estavam utilizando as vintages com jornadas consistentes com o desenho do modelo acabavam sendo expulsas do mercado (e essas eram parte das firmas zumbis, não a totalidade). Em substituição, uma nova entrante poderia entrar com uma probabilidade de ter uma produtividade maior.
+      - Em conjunto, esses dois efeitos geravam um impacto negativo no curto prazo, mas que implicavam em um aumento da produtividade no longo prazo (junto de uma maior concentração de mercado)
+  - Herança: Esse mesmo erro é observado nos modelos de Sant'Anna antes da atualização para o LSD9. A exceção era o modelo em que os skills eram ativados e utilizados como critério para alocação de trabalhadores entre vintages (uma configuração específica) que, como conseguência, sincronizava a atualização dos dados com a alocação dos trabalhadores entre vintages (coincidência, não intencional)
+- Importante: A ausência do efeito de WTR não é questão de parametrização (testada com NOLH), mas sim de especificação
+
+*** Caracterização atual do modelo
+
+- Caracterização do modelo em sua versão atual: [[file:pdfs/20260820T175229--scen-lsd9-absorb-mean__aggr.pdf][Resultados mais recentes]]
+  - WTR não tem efeito permantente no modelo (estatisticamente indistinguível de BAU)
+  - Prêmio pelo esforço gera um efeito nível não um efeito taxa
+    - Para ser um efeito taxa, esse esforço deveria crescer e, ao mesmo tempo, afetar a inovação
+    - Um multiplicador idiossincrático de produtividade do trabalhador, sorteado de uma Beta afim em \([\text{effPremLo}, \text{effPremHi}]\), fixado no nascimento e redesenhado no renascimento.
+    - Ele entra na produção como \(Q = s \cdot (1 + \text{effPrem}) \cdot A_{\text{vint}} \cdot H\) (=fun_KS_worker.h:21=) e em =__Qvint=.
+  - Prêmio não afeta \(A^{\tau}\): entra na produção efetiva do trabalhador, nunca na tecnologia do setor de bens de capital, portanto não desloca a fronteira e não pode mover a taxa de crescimento de longo prazo.
+    - O que ele produz é um deslocamento de nível de \(A\) e \(A_2\), de aproximadamente \((1 + E[\text{effPrem}])\), após a adoção.
+  - Prêmio nunca entra em salário nem em contratação (por design); entra na ordem de demissão, via \(Q\) e =__Qvint= (ADR-0012), o que fecha o canal de espiral salarial.
+  - Prêmio não é função de horas; tamanho da dose do "tratamento" não tem efeito algum da forma que foi especificado.
+  - Por que o prêmio de esforço não afetaria o setor de bens de capital na direção de um efeito positivo da WTR:
+    - A causa comum é a regra de orçamento de P&D, \(RD = \nu\,S_1\). O orçamento é uma parcela da receita; preço depende do custo unitário, que é salário sobre produtividade. Portanto tudo que barateia a produção do setor 1 reduz na mesma proporção o financiamento da pesquisa (reduzindo o custo unitário, reduz-se o preço e a receita).
+    - Nota: não existe prêmio de esforço no setor de bens de capital hoje. O que segue é a condição que qualquer especificação desse tipo teria de satisfazer, e é o motivo pelo qual ela ainda não foi implementada.
+    - Um multiplicador de eficiência aplicado de forma uniforme ao setor 1 se anula em primeira ordem: ele eleva o insumo de pesquisa por um fator e reduz o orçamento pelo inverso do mesmo fator, e o produto é um. Só sobrevive o que for diferencial, e há duas formas de sê-lo: entre atividades, se o esforço responder mais na pesquisa do que na produção; ou entre firmas, se esforço ou jornada variarem de uma para outra.
+      - Supor que as duas atividades respondam igual, ou que as firmas sejam idênticas, é supor que o canal não funciona.
+  - Algumas normas SFC ficaram com uma ordem de magnitude mais razoável (variáveis do governo especialmente)
+  - De modo geral, os canais pelos quais WTR afetaria a economia tendem a ser negativos
+    - Em uma frase: a jornada mais curta reduz as horas de operação das máquinas, e como a capacidade é medida em horas de máquina, a economia perde capacidade antes de ganhar qualquer coisa.
+    - O setor de consumo produz o mínimo entre capacidade de máquina e trabalho, e a capacidade é medida em horas de máquina.
+      - Jornada mais curta significa que cada máquina roda menos horas, logo a capacidade cai, o produto cai, e a demanda por trabalho cai mais do que o corte de horas a eleva.
+      - O desemprego sobe.
+    - Implicação: A história de partilha de trabalho que a literatura de RJT invoca, na qual jornada menor espalha o mesmo trabalho por mais pessoas e a demanda sobe, não está operando aqui.
+
+
+
+** O que pode ser feito
+
+*** O que o erro pode ajudar
+
+- Apesar do erro, isso indica um possível caminho pelo qual a WTR pode ter um efeito econômico
+  - Via de regra, o caminho mais garantido é fazer com que WTR tenha um efeito direto sobre a inovação (sugestão do Marcelo) e indireto sobre imitação
+    - O caminho de como isso pode ser feito não é trivial
+    - Uma possibilidade seria ter a jornada como argumento no mapa de decisão de adoção de uma nova tecnologia/imitação
+      - No entanto, me parece ser inócuo enquanto a jornada for heterogênea
+  - O caminho mais frutífero é, aparentemente, ter alguma especificação de jornada heterogênea que induza o modelo a cair em uma situação similar ao do erro de sincronia
+    - Ao gerar alguma vantagem para certas firmas, elas podem inovar mais e isso ter um efeito sobre a taxa de crescimento
+    - Enquanto salário, jornada e margem forem uniformes entre as firmas, eles aparecem como fator comum em toda comparação relativa e se anulam por identidade, não por calibragem.
+      - Portanto, essa heterogeneidade não é refinamento do modelo. É condição de existência de qualquer canal que passe pela decisão de adoção de tecnologia.
+  - No entanto, um caminho para isso seria migrar para a heterogeneidade do setor de BK
+    - Na forma atual, as firmas de BK pagam o mesmo salário para os trabalhadores (média do setor de bens de consumo)
+    - Os trabalhadores desse setor não possuem informação de qual firma pertencem. Eles fazem parte de um pool que depois distribui o *número* de trabalhadores (não os objetos) entre as firmas do setor
+      - Seguir para essa heterogeneização permitiria que o trabalhador conseguisse ter uma ponte com a firma a qual o contrata e, assim, ter alguma heterogeneidade de horas trabalhadas no setor que é o núcleo do modelo
+        - Sob jornada heterogênea WTR muda permanentemente a distribuição de horas, a distribuição alimenta a dispersão de =_L1rd= entre firmas, e =theta_inn= é côncava em =L1rdN=.
+        - Mudança permanente de dispersão é mudança permanente da média de trabalhadores para P&D (para inovação).
+        - Sinal ambíguo por construção: vantagem no nível da firma, positiva, contra perda por concavidade no agregado, negativa.
+      - Talvez, um caminho simples seja ter o setor de BK heterogêneo e um sorteio de jornada das firmas
+        - Se isso surtir algum efeito, depois pensamos em quais mecanismos podem ser explicados por isso e como desenhar o período de transição levando isso em consideração
+        - A justificativa desse sorteio é meramente prototipagem, não argumentação econômica estrita
+      - OBS: WTR corta a oferta de horas em exatamente 10%, que é a própria dose da política. A demanda por horas cai menos, porque o produto cai cerca de 6%.
+        - Uma regra de barganha que dependa da redução de horas gera alta de salário. Uma que depende de desemprego por "cabeça" gera queda.
+  - De modo geral, o que pode ser feito vai no caminho da barganha que inclui horas trabalhadas que, por sua vez, tem efeito sobre a produtividade do setor de BK e isso propaga para o restante da economia
+
+*** Outros canais (mais indiretos/menos interessantes)
+
+- Política de qualificação da mão de obra: Aumento da produtividade dos trabalhadores que ficarem desempregados (acho um caminho ruim do ponto de vista do discurso)
+  - Algo semelhante pode ser feito para uso do tempo livre para capacitação
+  - No entanto, toda base fiscal encolhe e o gasto sobe, o déficit se amplia: qualquer canal que financie pesquisa com recursos desta economia estaria financiando cada vez menos.
+  - A vantagem é que esse canal (que estaria ativado somente sob WTR) não tem chance de competir com o protagonismo da redução da jornada enquanto canais diretos sobre produtividade têm esse risco
+- Incluir número variável de firmas (implementado, mas dormente)
+  - No modelo, se um setor for rentável (Depósitos > Dívidas), entram mais firmas
+    - O oposto também é verdadeiro, ambos sujeitos a um piso e a um teto
+  - Isso pode gerar um efeito indireto sobre a produtividade da firma entrante
+  - Exigiria recalibrar o modelo (acho um efeito muito indireto e incerto, custo relativamente baixo)
+- Efeito positivo sobre a demanda agregada, gerando indiretamente maior orçamento de P&D para frequência de inovação, que é a tese do próprio K+S e não exige mecanismos novos.
+  - Talvez pudesse ser incluído via horas-extras, mas isso implica em uma decisão do ponto de vista das firmas sobre quando contratar horas-extras ou não
+
+** Outras considerações
+
+- Para pensar em uma barganha que considera horas trabalhadas, alguns elementos devem ser considerados
+  - A possibilidade de um efeito substituição implica uma taxa marginal de substituição entre trabalho e lazer
+    - Corremos o risco que incorporar efeitos não desejáveis ao modelo
+  - Imagino se ater a um efeito renda puro, ou seja, trabalhadores definem a jornada com base em uma renda-alvo e um salário oferecido
+- A probabilidade de inovação **não está saturada**: medida nas próprias simulações, \(inn = 0{,}1419\), o que implica \(L_{1rdN} = 1{,}02\) e **elasticidade de \(0{,}925\)**, praticamente unitária.
+
+*** Erros conhecidos
+
+- "Colapso" do setor produtor de BK persiste (única firma cancela produção)
+  - A rigor não é problema, mas seguirei investigando
+- Firmas zumbis, decaída da competitividade ainda são questões abertas após a migração para o LSD9, mas em menor magnitude
+- Um erro novo, mas de magnitude desprezível é que algumas horas são contratadas pelo setor 2, mas não são alocadas (algo na casa de 3 trabalhadores no máximo)
+  - Provavelmente é questão de algum arredondamento por inteiro
+
+** Deliberações
+
+- Uma forma de introduzir heterogeneidade de jornadas é apresentar uma seleção discreta para as firmas
+  - Firmas fazem um sorteio aleatório discreto entre jornadas predefinidas
+  - A escolha da jornada deve, preferencialmente, dependenr de outras métricas, como lucratividade média ou algo do gênero
+  - Alternativamente, pensar em uma forma de Brock and Hommes para seleção discreta
+- A prototipagem de um sorteio aleatório da duração das jornadas não foi descartado, mas aceito somente como forma de medir o quão frutífero é essa escolha modelística
+- A nível do argumento, a existência de jornadas heterogêneas pode gerar o corolário de que WTR só tem efeito se for acompanhado de uma negociação livre entre firmas e trabalhadores
+  - Em termos de discurso, isso é algo ser considerado com cuidado
+    - Se a livre negociação estiver associada à uma piora na distribuição/desigualdade, mantém-se o argumento de que WTR pode ser benéfico para a economia (a testar), mas possuem uma segunda ordem de efeitos que são indesejados
+      - Isso implica reposicionar a forma de entrar no debate
+      - Isso também implica ter mais medidas de desigualdade na geração dos gráficos agregados
+  - Uma contra-proposta seria introduzir alguma forma de poder de barganha dos trabalhadores
+    - Talvez não existindo heterogeneidade do salário-hora, mas uma desigualdade em virtude da heterogeneidade de jornada
+- Foi resgatada a hipótese de a jornada ter um efeito mais direto sobre inovação e imitação
+  - Inovação/imitação entendida como uma arma das firmas no conflito distributivo para contrapor um efeito indesejado de uma redução da jornada de trabalho via aumento da produtividade
+    - Isso implica em reespecificar o canal principal do modelo
+      - Justificativa defensável, implementável, factível deve ser priorizada sobre o resultado final
+- Não foi discutido em reunião, mas avalio pertinente:
+  - Identificação dos trabalhadores associados ao setor 1
+    - Isso permite tentar outros canais
+  - Pensar em como prototipar alguma forma de sindicalização no modelo (prioridade bem baixa)
+- Ausência de efeito da WTR sobre a economia não é, por si só, algo ruim
+  - Uma forma de refrasear o problema é que existem uma série de objeções contra a adoção da WTR (colapso econômico principalmente)
+    - O fato desse colapso não ocorrer é sinal de que WTR não é uma medida necessariamente ruim
+    - Isso implica refrasear o uso do modelo para além de uma discussão em termos de crescimento
+    - Além disso, pode ser útil como objetivo final desse projeto que é incorporar emissões no modelo
+      - No entanto, WTR é entendido como uma forma de amenisar os efeitos negativos do decrescimento enquanto no modelo atual, WTR é inócua
+  - Uma questão é a nível da contribuição do paper uma vez que a modificação em relação ao modelo de referência é marginal
+    - Isso pode ser contra-argumentado que o modelo prente responder uma pergunta nova e não propor um modelo novo
+- A luz desse entendimento que a ausência de efeito da WTR não é necessariamente ruim, o foco das tarefas migrou de mudanças de especificações para calibragem
+  - Sendo assim, deve-se tentar extrair o máximo possível do modelo em sua especificação atual
+  - A calibragem deve focar dados brasileiros em que as variáveis-alvo e a fonte dos dados não foram definidos ainda
+    - O método de calibragem também não foi definido
+      - Vale pontuar a existência de um paper que calibra o K+S por métodos Bayesianos (Barde)
+      - Nunca foi tentada uma calibragem a partir de métodos dos momentos simulados
+    - Não se sabe o quão informativo um exercício de análise de sensibilidade pode ser
+      - Talvez ajude a detectar quais parâmetros são os mais relevantes para calibrar algumas variáveis-alvo
+- Esperada a proposição de uma nova data de reunião a partir de uma análise preliminar dos custos e possibilidades da calibragem
